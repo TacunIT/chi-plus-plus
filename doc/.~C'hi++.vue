@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.3.0 concept-map (C&apos;hi++.vue) 2018-11-21 -->
+<!-- Tufts VUE 3.3.0 concept-map (C&apos;hi++.vue) 2018-12-02 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Wed Nov 21 19:41:54 CET 2018 by Carlo on platform Mac OS X 10.14 in JVM 1.8.0_25-b17 -->
+<!-- Do Not Remove: Saved date Sun Dec 02 11:25:14 CET 2018 by Carlo on platform Mac OS X 10.14.1 in JVM 1.8.0_25-b17 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="C'hi++.vue"
     created="1267825536130" x="0.0" y="0.0" width="7496.516"
-    height="5043.796" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1542825714297" size="445627"
+    height="4571.839" strokeWidth="0.0" autoSized="false">
+    <resource referenceCreated="1543746314115" size="454125"
         spec="/Users/Carlo/Dropbox/Canaro/C'hi++/doc/C'hi++.vue"
         type="1" xsi:type="URLResource">
         <title>C'hi++.vue</title>
@@ -824,6 +824,26 @@
         <ID2 xsi:type="node">737</ID2>
         <ctrlPoint0 x="-2133.982" y="-129.5772" xsi:type="point"/>
     </child>
+    <child ID="758" label="Memoria dell'Universo" layerID="374"
+        created="1543746011535" x="2310.1777" y="-526.4495"
+        width="203.4" height="63.800003" strokeWidth="2.0"
+        autoSized="false" xsi:type="node">
+        <notes>Ci sono due categorie di sa&#x1e41;sk&#x101;ra; la prima consiste nelle v&#x101;san&#x101;, che sono impressioni lasciate nella mente dagli avvenimenti passati, tracce qui conservate allo stato latente ma pronte a manifestarsi in presenza delle condizioni adatte, cio&#xe8; di situazioni analoghe a quelle che le hanno generate, e che le attiverebbero a causa della loro affinit&#xe0;. Sulla spinta delle v&#x101;san&#x101;, una volta che siano attivate, e degli stati d&#x2019;animo che queste manifestano, l&#x2019;individuo presenta una tendenza inconscia ad agire in un determinato modo, e pi&#xf9; in generale ad avere un certo tipo di comportamento, di sensibilit&#xe0;, di carattere; si tratta di una predisposizione innata che lo induce, nel bene come nel male, ad un comportamento analogo a quello che ha tenuto in passato, creando un circolo vizioso (o virtuoso) che si autoalimenta.%nl;</notes>
+        <fillColor>#E4E6D2</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-italic-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="cosmogonie"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="yoga"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="indu"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="post-it"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="sa&#x1e41;sk&#x101;ra"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="sa&#x1e41;sk&#x101;ra"/>
+        </metadata-list>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e70f5a7c0a82b3202b0df8b5149b459</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
     <child ID="365" label="Il Mondo ha&#xa;la natura dell'arte"
         layerID="378" created="1295765205378" x="-1842.2969"
         y="2332.834" width="158.30002" height="61.299995"
@@ -998,7 +1018,7 @@
         layerID="378" created="1542824648322" x="-2705.9224"
         y="2735.377" width="239.20001" height="68.700005"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
-        <notes>Affermazione di Croce%nl;</notes>
+        <notes>Affermazione di Croce: "L'Arte &#xe8; al disopra della morale, ma l'artista no e deve esercitarla come un sacerdozio"%tab;%nl;%nl;%tab;</notes>
         <fillColor>#E0FFE4</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
@@ -2599,25 +2619,29 @@
     </child>
     <child ID="337" label="Cosmogonie &#xa;gnostiche" layerID="7"
         created="1295049319835" x="350.92453" y="-341.1873"
-        width="157.4" height="48.5" strokeWidth="2.0" autoSized="false" xsi:type="node">
+        width="157.4" height="59.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Questo Universo contempla la sofferenza perch&#xe9; non &#xe8; stato creato da Dio, ma dal Diavolo.&#xa0;%nl;L'Universo creato da Dio (se c'&#xe8;) &#xe8;/era privo di sofferenza: un Uno primigenio di pura energia; tutto &#xe8; andato bene fino a che qualcuno o qualcosa (magari la Discordia di Empedocle) ha causato la disgragazione di quest'Uno, causando quello che noi chiamiamo Big Bang.%nl;L'energia dell'Uno si &#xe8; diffusa allora per lo spazio, dando massa/esistenza agli spazioni e generando l'Universo cos&#xec; come noi lo conosciamo.%nl;Da quel momento in poi, la Gravit&#xe0; (come sostiene Poe) ha cercato di ricostituire l'Uno primigenio, mentre l'Elettricit&#xe0; ha fatto in modo di separarne le parti.%nl;</notes>
         <fillColor>#F4F5E9</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="diavolo"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="elettricit&#xe0;"/>
+        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86f57775c0a8010d00397cea03cf64ef</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="338" layerID="7" created="1295049327254" x="420.0229"
-        y="-293.23682" width="8.514557" height="115.58447"
+    <child ID="338" layerID="7" created="1295049327254" x="420.076"
+        y="-282.7622" width="8.054657" height="105.112305"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86f57775c0a8010d00397cea59398d37</URIString>
-        <point1 x="420.5229" y="-178.15234"/>
-        <point2 x="428.03745" y="-292.73682"/>
+        <point1 x="420.57602" y="-178.1499"/>
+        <point2 x="427.63068" y="-282.2622"/>
         <ID1 xsi:type="node">141</ID1>
         <ID2 xsi:type="node">337</ID2>
     </child>
@@ -5620,6 +5644,100 @@
         <ID1 xsi:type="node">414</ID1>
         <ID2 xsi:type="node">416</ID2>
     </child>
+    <child ID="751" label="Indu" layerID="7" created="1543744756581"
+        x="1780.8793" y="-641.4827" width="176.0" height="41.0"
+        strokeWidth="2.0" autoSized="false" xsi:type="node">
+        <fillColor>#B5B995</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e6006c9c0a82b3202b0df8bec501abe</URIString>
+        <shape xsi:type="rectangle"/>
+    </child>
+    <child ID="753" layerID="7" created="1543744815535" x="1351.691"
+        y="-830.6795" width="467.05615" height="189.69678"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e6006cac0a82b3202b0df8be00f9fb3</URIString>
+        <point1 x="1352.191" y="-830.1795"/>
+        <point2 x="1818.2472" y="-641.4827"/>
+        <ID1 xsi:type="node">290</ID1>
+        <ID2 xsi:type="node">751</ID2>
+    </child>
+    <child ID="754" label="Bhagavad Gita" layerID="7"
+        created="1543744840498" x="2059.846" y="-514.71606"
+        width="120.0" height="44.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
+        <notes>Versione di riferimento: %nl;%nl;9788857543741%nl;%nl;Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul G&#x12b;t&#x101; Bh&#x101;&#x1e63;ya di R&#x101;m&#x101;nuja (Italian Edition) (Kindle Location 6). Mimesis Edizioni. Kindle Edition. </notes>
+        <fillColor>#E4E6D2</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="testi sacri"/>
+        </metadata-list>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e6006cac0a82b3202b0df8b651e21b9</URIString>
+        <shape xsi:type="rectangle"/>
+    </child>
+    <child ID="755" label="Testo" layerID="7" created="1543744899724"
+        x="1908.4895" y="-600.98267" width="168.81104" height="86.76666"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e6006cbc0a82b3202b0df8b10edbf88</URIString>
+        <point1 x="1908.9895" y="-600.4827"/>
+        <point2 x="2076.8005" y="-514.71606"/>
+        <ID1 xsi:type="node">751</ID1>
+        <ID2 xsi:type="node">754</ID2>
+    </child>
+    <child ID="756" label="Enti che generano l'universo" layerID="7"
+        created="1543745078735" x="2007.0962" y="-308.99945"
+        width="224.4" height="66.4" strokeWidth="2.0" autoSized="true" xsi:type="node">
+        <notes>Il S&#x101;&#x1e41;khya, la dottrina su cui si fonda lo Yoga, parla di due principi che, interagendo tra loro, manifestano l&#x2019;intero universo con tutti gli esseri viventi e gli oggetti inanimati che lo popolano: Prak&#x1e5b;ti, il polo materiale e femminile, e Puru&#x1e63;a, quello spirituale e maschile; nell&#x2019;essere umano Prak&#x1e5b;ti costituisce il corpo e la mente, che diventano la dimora dell&#x2019;anima individuale (puru&#x1e63;a). Questi due principi sono rappresentati4, in modo curioso ma efficace, da un cieco che porta sulle spalle uno zoppo, un insieme eterogeneo composto da una persona con le gambe buone ma che non vede il cammino da percorrere, e un&#x2019;altra che, pur vedendo, non &#xe8; in grado di camminare.%nl;</notes>
+        <fillColor>#E4E6D2</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-italic-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="dualismo"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="cosmogonie"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="cosmogonie"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="yoga"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="indu"/>
+        </metadata-list>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e6377c7c0a82b3202b0df8b0abe812c</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="757" label="tesi" layerID="7" created="1543745201953"
+        x="2110.5854" y="-471.1875" width="18.0" height="162.6875"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e6377c7c0a82b3202b0df8b433390c2</URIString>
+        <point1 x="2119.7903" y="-470.6875"/>
+        <point2 x="2119.3804" y="-309.0"/>
+        <ID1 xsi:type="node">754</ID1>
+        <ID2 xsi:type="node">756</ID2>
+    </child>
+    <child ID="759" label="tesi" layerID="7" created="1543746040561"
+        x="2179.346" y="-500.00223" width="131.43457" height="13.0"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e70f5d0c0a82b3202b0df8bee2dcefd</URIString>
+        <point1 x="2179.846" y="-493.09277"/>
+        <point2 x="2310.2805" y="-493.91168"/>
+        <ID1 xsi:type="node">754</ID1>
+        <ID2 xsi:type="node">758</ID2>
+    </child>
     <child ID="60" label="C'hi++" layerID="6" created="1293660267417"
         x="-3102.9172" y="621.9857" width="154.1156" height="56.931152"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
@@ -5854,7 +5972,7 @@
         created="1362258813776" x="-2679.991" y="1077.5723"
         width="96.27806" height="50.901306" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
-        <notes>Con il termine "Post-it" si intende qui la memoria dell'Universo.%nl;Ogni volta che capisci di aver fatto una cosa o bene o male, crei un "Post-it", una sorta di nota a margine che registrer&#xe0; l'esito dell'azione (o della non-azione) affinch&#xe9; nei cicli successivi non si compia lo stesso errore o si faccia una certa cosa che si &#xe8; dimostrata favorevole.%nl;Questo precetto, per&#xf2;, ci causa qualche problema..%nl;%nl;Ragionavo l'altro giorno sul fatto che lo Spazionismo chiede due (non uno) atti di fede: il primo &#xe8; la compressione dell'Universo dopo l'espansione; il secondo sono i Post-it, perch&#xe9; non &#xe8; chiaro, in assenza di elementi metafisici, dove si conservi il ricordo degli errori dei cicli precedenti.%nl;D'altro canto, per&#xf2;, ci sono degli elementi che lasciano ipotizzare la possibilit&#xe0; che i Post-it esistano: i deja-vu, per esempio (che hanno anche il trattino fra le due parole!), o gli strani atti che compiamo precedendo (o pre-vedendo) gli eventi.%nl;%nl;Non mi riferisco a ci&#xf2; che pu&#xf2; essere desunto grazie all'esperienza (tipo: sono in barca, vedo le nuvole all'orizzonte e vado al cesso perch&#xe9; so che fra poco arriver&#xe0; una buriana e, se non vado ora, me la dovr&#xf2; tenere), ma ci&#xf2; che si fa apparentemente senza un motivo e che poi si rivela decisivo per come vanno le cose.%nl;Il fatto che io mi sia messo il loden per uscire con mio fratello, il 24 dicembre del 2005, per esempio, o anche il fatto che, prima dell'11 settembre 2001, io sognassi spesso scene simili a quelle che abbiamo visto in TV (talvota come spettatore, talvolta come passeggero dell'aereo), ma che, dopo di allora, non le abbia pi&#xf9; sognate.%nl;</notes>
+        <notes>0.3.3 - Vedere sa&#x1e41;sk&#x101;ra in BG%nl;%nl;0.2.0%nl;Con il termine "Post-it" si intende qui la memoria dell'Universo.%nl;Ogni volta che capisci di aver fatto una cosa o bene o male, crei un "Post-it", una sorta di nota a margine che registrer&#xe0; l'esito dell'azione (o della non-azione) affinch&#xe9; nei cicli successivi non si compia lo stesso errore o si faccia una certa cosa che si &#xe8; dimostrata favorevole.%nl;Questo precetto, per&#xf2;, ci causa qualche problema..%nl;%nl;Ragionavo l'altro giorno sul fatto che lo Spazionismo chiede due (non uno) atti di fede: il primo &#xe8; la compressione dell'Universo dopo l'espansione; il secondo sono i Post-it, perch&#xe9; non &#xe8; chiaro, in assenza di elementi metafisici, dove si conservi il ricordo degli errori dei cicli precedenti.%nl;D'altro canto, per&#xf2;, ci sono degli elementi che lasciano ipotizzare la possibilit&#xe0; che i Post-it esistano: i deja-vu, per esempio (che hanno anche il trattino fra le due parole!), o gli strani atti che compiamo precedendo (o pre-vedendo) gli eventi.%nl;%nl;Non mi riferisco a ci&#xf2; che pu&#xf2; essere desunto grazie all'esperienza (tipo: sono in barca, vedo le nuvole all'orizzonte e vado al cesso perch&#xe9; so che fra poco arriver&#xe0; una buriana e, se non vado ora, me la dovr&#xf2; tenere), ma ci&#xf2; che si fa apparentemente senza un motivo e che poi si rivela decisivo per come vanno le cose.%nl;Il fatto che io mi sia messo il loden per uscire con mio fratello, il 24 dicembre del 2005, per esempio, o anche il fatto che, prima dell'11 settembre 2001, io sognassi spesso scene simili a quelle che abbiamo visto in TV (talvota come spettatore, talvolta come passeggero dell'aereo), ma che, dopo di allora, non le abbia pi&#xf9; sognate.%nl;</notes>
         <fillColor>#C6E8FF</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
@@ -5898,7 +6016,7 @@
         created="1367965488093" x="-3370.8352" y="1568.2722"
         width="203.6" height="64.600006" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
-        <notes>L'idea aristotelica (SDFO, 191) che tutto volga verso un fine e che le azioni, esatte o errate, possano accelerare o ritardare questo processo &#xe8; condivisibile e coerente con il C'hi++; l'ipotesi che tutto ci&#xf2; sia "buono", nel senso in cui noi intendiamo questo termine, mi sembra un po' meno credibile.%nl;Per quello che ne possiamo sapere, il Fine Ultimo potrebbe essere una Grande Inculata, dal nostro punto di vista.%nl;D'altro canto, ci deve essere un motivo se l'Uno non &#xe8; restato Uno; ci sar&#xe0; un motivo, se l'Immancabile Testa di Pera (cfr. Defecatio) a un certo punto ha deciso per la secessione.%nl;La coincidenza fra il "buono" umano e il "buono" divino mi sembra un errore di impostazione logica.%nl;</notes>
+        <notes>L'idea aristotelica (SDFO, 191) che tutto volga verso un fine e che le azioni, esatte o errate, possano accelerare o ritardare questo processo &#xe8; condivisibile e coerente con il C'hi++; l'ipotesi che tutto ci&#xf2; sia "buono", nel senso in cui noi intendiamo questo termine, mi sembra un po' meno credibile.%nl;Per quello che ne possiamo sapere, il Fine Ultimo potrebbe essere una Grande Inculata, dal nostro punto di vista.%nl;D'altro canto, ci deve essere un motivo se l'Uno non &#xe8; restato Uno; ci sar&#xe0; un motivo, se l'Immancabile Testa di Pera (cfr. Defecatio) a un certo punto ha deciso per la secessione.%nl;La coincidenza fra il "buono" umano e il "buono" divino mi sembra un errore di impostazione logica.%nl;%nl;0.3.3 - L'Universo non ha un fine ultimo; esiste perch&#xe9; non pu&#xf2; fare a meno di farlo. </notes>
         <fillColor>#C6E8FF</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
@@ -6887,17 +7005,43 @@
         <ID1 xsi:type="node">500</ID1>
         <ID2 xsi:type="node">502</ID2>
     </child>
+    <child ID="762" label="Enti creatori" layerID="6"
+        created="1543746230445" x="-2108.1692" y="2.590332"
+        width="131.45032" height="38.47223" strokeWidth="2.0"
+        autoSized="false" xsi:type="node">
+        <notes>0.3.3 - vedere %nl;%nl;Prak&#x1e5b;ti,%nl;%nl;Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul G&#x12b;t&#x101; Bh&#x101;&#x1e63;ya di R&#x101;m&#x101;nuja (Italian Edition) (Kindle Location 100). Mimesis Edizioni. Kindle Edition. </notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e735fb7c0a82b3202b0df8bb951da71</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="763" label="tesi&#xa;" layerID="6"
+        created="1543746230445" x="-2168.3535" y="39.88037"
+        width="109.95581" height="123.86304" strokeWidth="1.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e735fb7c0a82b3202b0df8b55639c10</URIString>
+        <point1 x="-2167.8535" y="163.24341"/>
+        <point2 x="-2058.8977" y="40.38037"/>
+        <ID1 xsi:type="node">97</ID1>
+        <ID2 xsi:type="node">762</ID2>
+    </child>
     <layer ID="374" label="Relazioni" created="1295991642614" x="0.0"
         y="0.0" width="1.4E-45" height="1.4E-45" hidden="true"
         strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/bf23a3a8c0a8010b015e8a8fdc837bba</URIString>
     </layer>
     <layer ID="378" label="Arte" created="1295992283172" x="0.0" y="0.0"
-        width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
+        width="1.4E-45" height="1.4E-45" hidden="true" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca3ac0a8010b00b4cbc51c140d59</URIString>
     </layer>
     <layer ID="1" label="Informatica" created="1267825536136" x="0.0"
-        y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
+        y="0.0" width="1.4E-45" height="1.4E-45" hidden="true"
+        strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/304ae829c0a8010a0179d47fc3c57899</URIString>
     </layer>
     <layer ID="7" label="Filosofia" created="1293657051881" x="0.0"
@@ -6908,8 +7052,8 @@
         width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/3413335cc0a8010b00a5d7f256847768</URIString>
     </layer>
-    <userZoom>0.75</userZoom>
-    <userOrigin x="-6347.417" y="-1272.7047"/>
+    <userZoom>1.25</userZoom>
+    <userOrigin x="-5444.028" y="-1689.4591"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1267825535957"
