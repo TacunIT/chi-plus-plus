@@ -1,3 +1,7 @@
+## 0.4.0 (December 02, 2018)
+  - Rinominato documento del Manifesto
+  - Merge branch 'release/0.3.2' into develop
+
 ## 0.3.2 (November 19, 2018)
   - Allineate le versioni di Git e del Manifesto.
 
