@@ -1,3 +1,7 @@
+## 0.4.0 (December 09, 2018)
+  - Creato progetto Eclipse
+  - Conversione della bozza del Manifesto in formato Markdown
+  - Rivista la struttura delle directory
 
 ## 0.3.2 (November 19, 2018)
   - Allineate le versioni di Git e del Manifesto.
