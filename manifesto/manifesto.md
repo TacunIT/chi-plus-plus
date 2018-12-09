@@ -1,6 +1,6 @@
 __Carlo Simonelli__ 
 
-# C'hi++ - Proposta per una metafisica open-source
+# C'hi++ - Proposta per una metafisica _open-source_
 
 __Versione 0.1 - 28 Novembre 2018__
 
@@ -10,6 +10,7 @@ Finis totius et partis est, removere viventes in hac vita de statu miserie et pe
 </p>
 
 ##Premessa
+
 ###Scopo della religione
 La religione dovrebbe aiutare l'Uomo a vivere meglio.
 
@@ -22,7 +23,7 @@ Tanto per fare un esempio: se vi ponessero queste tre domande, cosa
 rispondereste?
 <ol class="domande">
 <li >Una ragazza è rimasta incinta a séguito di una violenza: può decidere se abortire?
-<li> Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?
+<li><a name="domanda-B"></a> Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?
 <li>Un uomo è gravemente malato e vive grazie a delle macchine: può
     decidere di spegnerle o no?
 </ol>
@@ -48,8 +49,6 @@ possono trovare una risposta razionale certa, le religioni sono
 costrette a dedurre le regole della propria dottrina da una serie di
 *assiomi*.
 
-### Assiomi
-
 Gli assiomi, in quanto tali, non devono essere dimostrati[^1] e i
 seguaci della religione, i quali, non a caso, sono detti: "fedeli" o:
 "credenti", li devono accettare per buoni senza metterli in
@@ -66,8 +65,7 @@ abiurare i principii della loro Fede piuttosto che metterli in
 discussione; questo, però, è un problema degli esseri umani, non delle
 religioni.
 
-Un altro problema delle religioni
----------------------------------
+###Un altro problema delle religioni
 
 Le religioni, per quanto ispirate, sono opera dell'uomo, non di Dio e,
 come tutte le opere dell'uomo, sono soggette a errori e incongruenze.
@@ -75,19 +73,22 @@ come tutte le opere dell'uomo, sono soggette a errori e incongruenze.
 Come esempio, immaginiamo che esista una religione chiamata: *Buonismo*
 i cui dogmi siano:
 
-1.  Dio esiste
-2.  Dio ha solo proprietà positive[^2]
-3.  Dio ha creato l'Universo
+<ol class="dogmi">
+	<li>Dio esiste
+	<li>Dio ha solo proprietà positive 
+	<li>Dio ha creato l'Universo
+</ol>
 
 Partendo da questi assiomi (non dimostrabili) e sapendo che l'Uomo fa
 parte dell'Universo, i Buonisti deducono che:
 
-1.  1.  Dio ha creato l'Uomo
+<ol class="dogmi" start="4">
+	<li> Dio ha creato l'Uomo
+</ol>
 
 Certi che la vita sia un dono di Dio all'Uomo e che Dio ha solo
-proprietà positive, i Buonisti deducono che la vita sia un dono positivo
+proprietà positive (onnipotenza, misericordia, bontà, giustizia, ecc.), i Buonisti deducono che la vita sia un dono positivo
 e come tale vada preservato.
-
 Di conseguenza, se qualcuno gli facesse le domande viste all'inizio, un
 Buonista non avrebbe dubbi e risponderebbe NO in tutti e tre i casi,
 perché la sua religione gli impedisce di rifiutare o sottrarre ad altri
@@ -99,18 +100,19 @@ maniera coerente con il suo Credo.
 
 Se però si domandasse allo stesso individuo:
 
-A.  []{#anchor-3}Se Dio è buono, giusto e misericordioso, perché
-    nell'Universo da lui creato esistono stupratori, omicidi e
-    malattie?
+<ol class="domande" start="4">
+<li ><a name="domanda-D"></a>
+	Se Dio è buono, giusto e misericordioso, perché nell'Universo 
+	da Lui creato esistono stupratori, omicidi e malattie?
+</ol>
 
 il povero Buonista non saprebbe cosa rispondere, perché per farlo
 dovrebbe sconfessare almeno uno degli assiomi su cui basa la sua visione
 dell'esistenza.
-
-Il Buonista dovrà quindi rifugiarsi in una risposta generica, chiamando
+Dovrà quindi rifugiarsi in una risposta generica, chiamando
 in causa l'imponderabilità delle decisioni divine, oppure condannarvi
 al rogo come eretico.
-
+<br /><br />
 Con buona pace di John Lennon, le cose non andrebbero meglio in un Mondo
 senza religioni: se le stesse domande le faceste a un giudice, vi
 risponderebbe che sì, la ragazza può abortire, ma né il condannato né il
@@ -118,33 +120,36 @@ malato possono essere uccisi, perché la Legge lo vieta.
 
 Se però gli domandaste:
 
-A.  Perché si può uccidere qualcuno che non ha fatto nulla di male
+<ol class="domande" start="5">
+<li >
+    Perché si può uccidere qualcuno che non ha fatto nulla di male
     perché ipoteticamente potrebbe rendere infelice la vita di sua
     madre, mentre non si può uccidere chi ha già fatto del male o chi ha
     una vita sicuramente infelice?
+</ol>
 
 Il buon giudice non avrebbe meno difficoltà del Buonista a trovare una
 risposta.
-
 La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe
 comunque di spedirvi in prigione, dove trovereste ad attendervi il
-soggetto della domanda [B](#anchor-2).
+soggetto della domanda [B](#domanda-B).
 
-*Debug* del Buonismo
---------------------
+###*Debug* del Buonismo
+
 
 Abbiamo visto che i tre assiomi del Buonismo:
 
-1.  Dio esiste
-2.  Dio ha solo proprietà positive
-3.  Dio ha creato l'Universo
+<ol class="dogmi">
+	<li>Dio esiste
+	<li>Dio ha solo proprietà positive 
+	<li>Dio ha creato l'Universo
+</ol>
 
 pur nella loro semplicità, diventano incoerenti se li si confronta con
 la natura percepibile dell'Universo e della vita.
 
-Ciò vuol dire che il modello logico/esistenziale del Buonismo, così
-com'è, non funziona; o meglio: che funziona solo in una percentuale di
-casi.
+Ciò vuol dire che il modello logico/esistenziale del Buonismo, così com'è, 
+non funziona; o meglio: che funziona solo in una percentuale limitata di casi.
 
 Un buonista non può ammetterlo, perché diventerebbe un eretico, ma noi
 sì e possiamo anche cercare di capire cos'è che non va in questo schema
@@ -154,7 +159,7 @@ possibile di casi.
 Per prima cosa, proviamo a negare uno per volta i tre assiomi e vediamo
 se le cose migliorano:
 
-### Prima ipotesi: *Dio non esiste*
+#### Prima ipotesi: *Dio non esiste*
 
 Negare il primo assioma equivale a eliminare del tutto la dottrina
 Buonista: se Dio non esiste, non può essere buono e non può aver creato
@@ -162,7 +167,7 @@ l'Universo. Il sistema diventa coerente, ma a caro prezzo.
 
 Vediamo se si può fare di meglio.
 
-### Seconda ipotesi: *Dio non è buono*
+#### Seconda ipotesi: *Dio non è buono*
 
 Negando il secondo assioma, il nostro modello esistenziale diventa
 coerente senza annichilirsi, che è già un bel passo avanti rispetto alla
@@ -172,20 +177,18 @@ malvagio.
 
 Vale la pena di provare ancora.
 
-### Terza ipotesi: l'Universo* non è stato creato da Dio*
+#### Terza ipotesi: *L'Universo non è stato creato da Dio*
 
 Se ipotizziamo che Dio esiste, è buono, ma l'Universo non è opera sua,
 bensì del Diavolo, otteniamo un modello coerente e tutto sommato
 accettabile.
-
 Sì, d'accordo, saremo condannati a vivere in un luogo dove esistono
 dolore e morte, ma solo per i pochi anni che passiamo su questa Terra;
 poi tutto si sistemerà.
-
+<br>  
 Fra le tre, quest'ultima è l'ipotesi più appetibile, ma solo se
 l'uomo è in possesso di un'anima, ovvero di uno spirito che condivida
 parte dell'essenza di Dio e che si riunirà a Lui dopo la morte.
-
 Se l'anima non c'è, ovvero se in noi non alberga una scintilla dello
 Spirito Divino, siamo solo dei pezzi dell'Universo: vivremo nel dolore
 e dopo la morte sarà tutto finito per sempre.
@@ -195,30 +198,34 @@ inaccettabile perché, mancando un Aldilà e una beatitudine condizionata
 al nostro comportamento terreno, ciascuno cercherebbe di ottenere il
 massimo possibile dagli anni che vivrà, pensando solo a sé stesso senza
 alcun rispetto per il suo prossimo[^3].
-
+<br><br>
 Priva del concetto di anima, la religione diventerebbe logicamente
 solida, ma non assolverebbe al suo còmpito primario, che è quello di
 rendere migliore la vita dell'Uomo; quindi, se vogliamo rinnegare il
 terzo dogma del Buonismo senza fare danni, dobbiamo essere certi che
 esista un'anima.
-
 Siccome, di fatto, non possiamo esserne certi, dobbiamo imporre questa
 condizione come dogma:
 
-1.  L'uomo ha un'anima.
-
+<ol class="dogmi" start="4">
+	<li>  L'uomo ha un'anima.
+</ol>
+ 
 Questo piccolo atto di fede ci permette di rispondere senza esitazione
-alla domanda [D](#anchor-3):
+alla domanda [D](#domanda-D):
 
-Dio è buono, giusto e misericordioso. Nell'Universo esistono
-stupratori, omicidi e malattie è perché l'Universo è opera del Diavolo.
+> Dio è buono, giusto e misericordioso. Nell'Universo esistono
+> stupratori, omicidi e malattie è perché l'Universo è opera del Diavolo.
 
 Si tratta però di una vittoria parziale, perché aumentando il numero dei
 precetti abbiamo aumentato la complessità del nostro modello e, di
 conseguenza, la probabilità di generare errori o incongruenze:
 
-A.  Se l'Universo è stato creato dal Diavolo, perché l'Uomo, che fa
+<ol class="domande" start="6">
+<li >
+	Se l'Universo è stato creato dal Diavolo, perché l'Uomo, che fa
     parte dell'Universo, dev'essere stato creato da Dio?
+</ol>
 
 ### A Shanghai esiste un uomo di nome Mario
 
@@ -233,19 +240,20 @@ dire: "A Shanghai esiste un uomo di nome Mario"; se Dio c'è ed è
 buono, ma se non ha alcuna relazione con l'Universo e la nostra
 esistenza, a noi, cosa importa?
 
-Se però eliminiamo il secondo precetto, tutto magicamente si aggiusta:
+Se però eliminiamo il secondo precetto, (*Dio ha solo proprietà positivie*) 
+tutto magicamente si aggiusta:
 Dio esiste, ha creato l'Universo e l'Uomo, ma non è possibile dire se
 sia buono o meno, perché è improprio classificare l'essenza del
 creatore con gli attributi del creato; sarebbe come se i *byte* di un
 computer si chiedessero se il Programmatore valga I o 0.
-
-Senza la premessa conseguente al secondo precetto (*Se Dio è buono,
-giusto e misericordioso*), la famigerata domanda [D](#anchor-3) non è
+<br>  
+Senza la premessa, conseguente al secondo precetto: *Se Dio è buono,
+giusto e misericordioso*, la famigerata domanda [D](#domanda-D) non è
 più contraddittoria: se qualcuno ce la facesse, adesso, risponderemmo:
 
-Nell'Universo creato da Dio esistono stupratori, omicidi e malattie
-perché ciò fa parte del Suo disegno, che noi non siamo in grado di
-comprendere.
+> Nell'Universo creato da Dio esistono stupratori, omicidi e malattie
+> perché ciò fa parte del Suo disegno, che noi non siamo in grado di
+>comprendere.
 
 Per quanto simile all'ipotetica *risposta generica, che chiama in causa
 l'imponderabilità delle decisioni divine* data dal Buonista prima di
@@ -256,10 +264,13 @@ sia, di Dio.
 Soprattutto, noi non affermiamo di sapere cosa sia buono/giusto e cosa
 non lo sia, perché in effetti, non lo possiamo sapere:
 
-Austria, 1889; a séguito di complicazioni post-parto, muore il figlio di
-un doganiere: Dio è stato buono o cattivo?
-
-Il doganiere si chiama Alois Hitler. Dio, è stato buono o cattivo?
+<ul class="domande">
+<li >
+	Austria, 1889; a séguito di complicazioni post-parto, muore il figlio di
+	un doganiere: Dio è stato buono o cattivo?
+<li>  
+	Il doganiere si chiama Alois Hitler. Dio, è stato buono o cattivo?
+</ul>
 
 Dire che Dio esiste e che ha creato l'Universo è ragionevole:
 l'Universo esiste ed esiste necessariamente qualcosa, - se non proprio
