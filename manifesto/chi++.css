@@ -12,16 +12,16 @@
  */
 
 * {
-    font-family: "Gill Sans", Helvetica, arial, sans-serif;
-    font-size: 13pt;
-    line-height: 1.4;
-    background-color: white;
     padding: 0;
     margin: 0
 }
 
 body {
     margin: 0rem 5rem 3rem;
+    font-family: "Gill Sans", Helvetica, arial, sans-serif;
+    font-size: 13pt;
+    line-height: 1.4;
+    background-color: white;
 }
 
 a {
@@ -118,6 +118,11 @@ h3 {
     color: #060;
 }
 
+h4 {
+    counter-reset: h5;
+    color: #666;
+}
+
 h1:before {
 
 }
@@ -159,7 +164,7 @@ li {
 
 ul, ol, blockquote, pre {
     margin: 1rem 0;
-    padding-left: 30px;
+    padding-left: 2rem;
 }
 
 ul :first-child, ol :first-child {
@@ -167,15 +172,29 @@ ul :first-child, ol :first-child {
 }
 
 /** Utilizzato per le domande principali */
-ol.domande {
-    list-style-type: upper-alpha;
-    color: #070;
-    margin-left: 0.5rem;
+.domande {
+    color: #060;
 }
 
-ol.domande LI {
+OL.domande {
+    list-style-type: upper-alpha;
+}
+
+UL.domande {
+    list-style-type: upper-roman;
+}
+
+.domande LI {
     font-style: italic;
-    line-height: 1.5;
+    padding-bottom: 0.5rem
+}
+
+/** Utilizzato per i dogmi */
+ol.dogmi {
+    color: #d6a700;
+}
+ol.dogmi LI {
+    font-variant: small-caps
 }
 
 dl {
@@ -216,9 +235,9 @@ dl dd>:last-child {
 }
 
 blockquote {
-    border-left: 4px solid #dddddd;
     padding: 0 15px;
     color: #777777;
+    font-style: italic;
 }
 
 blockquote>:first-child {
