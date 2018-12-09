@@ -25,9 +25,8 @@ body {
 }
 
 a {
-    font-weight: bold;
     color: #060;
-    font-family: Verdana;
+    font-weight: bold;
 }
 
 a.absent {
@@ -197,6 +196,11 @@ ol.dogmi LI {
     font-variant: small-caps
 }
 
+/** Utilizzato per i dogmi */
+ol.da-fare {
+    list-style-type: upper-roman;
+}
+
 dl {
     padding: 0;
 }
@@ -248,9 +252,20 @@ blockquote>:last-child {
     margin-bottom: 0;
 }
 
+/** Testo di: Sostiene Aristotele */
+DIV.aristotele {
+    color: #555;
+    font-style: italic;
+    padding:1rem;
+    text-align:justify;
+    font-family: "Courier New";
+    font-size: 0.9rem;
+}
+
 table {
     padding: 0;
     border-collapse: collapse;
+    margin: 1rem 0;
 }
 
 table tr {
@@ -453,3 +468,4 @@ kbd {
         word-wrap: break-word;
     }
 }
+
