@@ -252,14 +252,12 @@ blockquote>:last-child {
     margin-bottom: 0;
 }
 
-/** Testo di: Sostiene Aristotele */
-DIV.aristotele {
+/** Citazioni da testi */
+DIV.citazione {
     color: #555;
     font-style: italic;
     padding:1rem;
     text-align:justify;
-    font-family: "Courier New";
-    font-size: 0.9rem;
 }
 
 table {
