@@ -462,11 +462,11 @@ Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero
 :---: | :---: | --- | :--- |
 0.1.0 | 2004 |  Proto-C'hi++         | Domenica 12 settembre 2004, scrivevo sul mio blog: *La mia teoria cosmogonica comprende anche due fattori di primaria importanza, colpevolmente trascurati dalle altre teorie: il Minipimer e il concetto di: Immancabile Testa di Pera.*
 0.1.1 | 2007 |  Sostiene Aristotele  | Primo tentativo di formalizzare la strana teoria che andavo sviluppando. Ci sono già i quattro dogmi del C'hi++, ma non c'è nessun accenno allo Spazionismo.
-0.2.0 | 2009 |  C'hi++               | Iniziata redazione del manuale *C'hi++*. Creata una mappa concettuale per il progetto suddivisa in quattro livelli: *C'hi++, Informatica, Arte, Filosofia.*
-0.3.0 | 2015 |  Iniziato Manifesto   | Iniziata la redazione di questo documento.
+0.2.0 | 2009 |  C'hi++               | Iniziata redazione del manuale *C'hi++*. Definizione iniziale dello Spazionismo.
+0.3.0 | 2015 |  Manifesto   | Iniziata la redazione di questo documento.
 0.3.1 | 2016 |  Adozione git         | Creato acconto per il progetto su GitHub.
 0.3.2 | 2018 |  Allineamento         | Allineamento delle versioni git con quelle del Manifesto.
-0.3.3 | oggi |  Rinominato Manifesto | Modificato il nome di questo documento.
+0.4.0 | oggi |  Manifesto Markdown | Conversione del Manifesto in formato MArkdown
 
 Già da queste poche righe è possibile vedere alcuni benefici
 dell'approccio open-source alla speculazione filosofica.
@@ -623,11 +623,11 @@ Above us only sky<br/>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
 programmazione scritto nello stile dei libri di filosofia giapponesi del
 XVII secolo o, anche, un libro di filosofia nello stile dei classici
-giapponesi del XVII secolo, scritto come un manuale di programmazione.
+giapponesi del XVII secolo, scritto come un manuale di programmazione.  
 Questa ambivalenza è presente anche nel titolo, che è un gioco di parole
 fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il
 linguaggio di programmazione chiamato *C++*.
-
+<br />  
 Il testo riporterà gli insegnamenti che un vecchio maestro tramanda al
 suo giovane allievo sulla programmazione in *C'hi++*, ovvero il
 linguaggio con cui è stata scritta l'applicazione che gestisce
