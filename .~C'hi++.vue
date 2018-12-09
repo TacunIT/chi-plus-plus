@@ -1,14 +1,14 @@
 <!-- Tufts VUE 3.3.0 concept-map (C&apos;hi++.vue) 2018-12-09 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Sun Dec 09 20:18:38 CET 2018 by Carlo on platform Mac OS X 10.14.1 in JVM 1.8.0_25-b17 -->
+<!-- Do Not Remove: Saved date Sun Dec 09 19:39:50 CET 2018 by Carlo on platform Mac OS X 10.14.1 in JVM 1.8.0_25-b17 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="C'hi++.vue"
     created="1267825536130" x="0.0" y="0.0" width="7496.516"
     height="4571.839" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1544383118340" size="456754"
+    <resource referenceCreated="1544380790583" size="454555"
         spec="/Users/Carlo/Dropbox/Canaro/C'hi++/C'hi++.vue" type="1" xsi:type="URLResource">
         <title>C'hi++.vue</title>
         <property key="File" value="/Users/Carlo/Dropbox/Canaro/C'hi++/C'hi++.vue"/>
@@ -3439,7 +3439,6 @@
         <metadata-list>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="da qui"/>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="SDFO"/>
-            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="affinit&#xe0;"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c41b0fe77f00000101cc6a6aa3ebd095</URIString>
         <shape xsi:type="ellipse"/>
@@ -3528,7 +3527,6 @@
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Paura della morte"/>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Scopo della religione"/>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="SDFO"/>
-            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="affinit&#xe0;"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3df3f277f00000101cc6a6a04521b62</URIString>
         <shape xsi:type="ellipse"/>
@@ -7066,7 +7064,7 @@
         <URIString>http://vue.tufts.edu/rdf/resource/3413335cc0a8010b00a5d7f256847768</URIString>
     </layer>
     <userZoom>0.75</userZoom>
-    <userOrigin x="-3890.4167" y="-918.73706"/>
+    <userOrigin x="-3569.9165" y="-918.73706"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1267825535957"
