@@ -1,8 +1,15 @@
-__Carlo Simonelli__ 
-
-# C'hi++ - Proposta per una metafisica _open-source_
-
-__Versione 0.1 - 28 Novembre 2018__
+<section class="pagina cover" >
+<header>
+	<h1>C'hi++</h1>
+	<h2>Proposta per una metafisica _open-source_</h2>
+<header>
+<div class="dati">
+	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
+	<p><label>Versione</label>0.4.2</p>
+	<p><label>Data    </label>10 Dicembre 2018</p>
+</div>
+	![](http://media.canaro.net/imago/seal.png)
+</section>
 
 <p class="citazione">
 Finis totius et partis est, removere viventes in hac vita de statu miserie et perducere ad statum felicitatis.<br/>
@@ -135,8 +142,6 @@ comunque di spedirvi in prigione, dove trovereste ad attendervi il
 soggetto della domanda [B](#domanda-B).
 
 ###*Debug* del Buonismo
-
-
 Abbiamo visto che i tre assiomi del Buonismo:
 
 <ol class="dogmi">
@@ -160,7 +165,6 @@ Per prima cosa, proviamo a negare uno per volta i tre assiomi e vediamo
 se le cose migliorano:
 
 #### Prima ipotesi: *Dio non esiste*
-
 Negare il primo assioma equivale a eliminare del tutto la dottrina
 Buonista: se Dio non esiste, non può essere buono e non può aver creato
 l'Universo. Il sistema diventa coerente, ma a caro prezzo.
@@ -168,7 +172,6 @@ l'Universo. Il sistema diventa coerente, ma a caro prezzo.
 Vediamo se si può fare di meglio.
 
 #### Seconda ipotesi: *Dio non è buono*
-
 Negando il secondo assioma, il nostro modello esistenziale diventa
 coerente senza annichilirsi, che è già un bel passo avanti rispetto alla
 prima ipotesi, ma la nostra condizione non è che migliori molto, perché
@@ -178,7 +181,6 @@ malvagio.
 Vale la pena di provare ancora.
 
 #### Terza ipotesi: *L'Universo non è stato creato da Dio*
-
 Se ipotizziamo che Dio esiste, è buono, ma l'Universo non è opera sua,
 bensì del Diavolo, otteniamo un modello coerente e tutto sommato
 accettabile.
@@ -228,7 +230,6 @@ conseguenza, la probabilità di generare errori o incongruenze:
 </ol>
 
 ### A Shanghai esiste un uomo di nome Mario
-
 Dato che non è possibile rendere coerente il Buonismo modificando i suoi
 precetti, dobbiamo assumere che uno di essi sia errato ed eliminarlo.
 
@@ -297,7 +298,6 @@ mettere in discussione la Sua bontà.
 Il perché, chiedetelo a loro.
 
 ### Buonismo 2.0
-
 Rimuovendo il secondo precetto, siamo riusciti a rendere coerente la
 dottrina Buonista, ma allo stesso tempo abbiamo rimosso la ragion
 d'essere del suo nome; se Dio non è buono, che senso ha, chiamarsi:
@@ -365,7 +365,6 @@ dovrebbe quindi:
 Pur se complesso, tutto questo è possibile.
 
 ## C'hi++
-
 Da circa dieci anni sto sviluppando una metafisica che rispetta le
 condizioni viste sopra e che, soprattutto, è del tutto indipendente
 dall'esistenza di una o più Divinità.
@@ -377,7 +376,6 @@ l'evoluzione della mia teoria così come si gestisce il software; in
 particolare, il software cosiddetto: *open-source.*
 
 ### Software open-source
-
 Contrariamente al software realizzato da un individuo o da una società a
 scopo di lucro, il software *open-source* è il prodotto della
 collaborazione di diversi programmatori che rendono disponibile il
@@ -396,7 +394,6 @@ Il primo è che non si paga, ma questo non ha grossa rilevanza nel caso di una r
     programmatori fa sì che ci sia un maggior controllo degli errori.
 
 ### Versioni
-
 I letterati, gli scultori, i pittori non possono modificare le loro
 opere, una volta che sono state pubblicate. Possono dare un ritocco di
 colore qui, un colpo di scalpello là, ma si tratta sempre di
@@ -454,7 +451,6 @@ La tabella seguente riporta un possibile versionamento delle grandi religioni mo
 2.2.0 | 661        | Sciiti                 |  Modifica alle regole.
 
 ### Versionamento del C'hi++
-
 Il C'hi++ è, in un certo senso, monoteistico, ma non è una religione, quindi deve essere sottoposto a un versionamento autonomo. 
 Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero:
 
@@ -494,9 +490,7 @@ Bibbia - che non può essere messa in discussione perché è la Parola di
 Dio -, ma priveremmo la Chiesa della sua funzione primaria che è quella
 di salvare le anime, appunto, dal Maligno.
 
-Release/0.1.1
--------------
-
+## Release/0.1.1: *Sostiene Aristotele*
 A Giugno del 2007 scrissi un documento dal titolo: *Sostiene Aristotele*
 che possiamo considerare la versione 0.1.1 del C'hi++. 
 Lo riporto di seguito, senza modifiche al testo originale, anche se non sono più d'accordo su alcune affermazioni:
@@ -618,8 +612,7 @@ Above us only sky<br/>
 <p>Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Universo e siamo noi, con le nostre azioni, a decidere in quale dei due vivere.</p>
 </div>
 
-## Release/0.2.0
-
+## Release/0.2.0: *C'hi++*
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
 programmazione scritto nello stile dei libri di filosofia giapponesi del
 XVII secolo o, anche, un libro di filosofia nello stile dei classici
@@ -659,6 +652,7 @@ Alla fine non ne potei più. Esasperato, dissi che ne avevo abbastanza di quella
 Negli ultimi mesi la salute del Maestro è peggiorata e così gli ho chiesto il permesso di trascrivere i suoi insegnamenti per poterli trasmettere a mia volta ad altri discepoli.<br/>
 Con mia grande sorpresa, ha accettato.
 </div>
+
 ### Struttura del testo
 I primi tre capitoli inquadrano "storicamente" il contesto in cui si
 svolge l'azione, un possibile futuro in cui gli informatici sono diventati una casta sacerdotale:
