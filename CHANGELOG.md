@@ -1,3 +1,7 @@
+## 0.4.2 (December 10, 2018)
+  - Aggiunta copertina a Manifesto
+  - Rinominata mappa Vue per evitare problemi con git
+
 ## 0.4.1 (December 10, 2018)
   - Completato paragrafo su C'hi++
   - Completato aggiornamento della versione Markdown del Manifesto
