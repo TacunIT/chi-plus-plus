@@ -1,3 +1,7 @@
+## 0.4.1 (December 10, 2018)
+  - Completato paragrafo su C'hi++
+  - Completato aggiornamento della versione Markdown del Manifesto
+
 ## 0.4.0 (December 09, 2018)
   - Creato progetto Eclipse
   - Conversione della bozza del Manifesto in formato Markdown
