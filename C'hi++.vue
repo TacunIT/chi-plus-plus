@@ -1,49 +1,46 @@
-<!-- Tufts VUE 3.3.0 concept-map (C&apos;hi++.vue) 2018-12-02 -->
+<!-- Tufts VUE 3.3.0 concept-map (C&apos;hi++.vue) 2018-12-09 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Sun Dec 02 12:06:04 CET 2018 by Carlo on platform Mac OS X 10.14.1 in JVM 1.8.0_25-b17 -->
+<!-- Do Not Remove: Saved date Sun Dec 09 23:22:40 CET 2018 by Carlo on platform Mac OS X 10.14.1 in JVM 1.8.0_25-b17 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="C'hi++.vue"
     created="1267825536130" x="0.0" y="0.0" width="7496.516"
     height="4571.839" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1543748764449" size="455610"
-        spec="/Users/Carlo/Dropbox/Canaro/C'hi++/doc/C'hi++.vue"
-        type="1" xsi:type="URLResource">
+    <resource referenceCreated="1544394160658" size="456916"
+        spec="/Users/Carlo/Dropbox/Canaro/C'hi++/C'hi++.vue" type="1" xsi:type="URLResource">
         <title>C'hi++.vue</title>
-        <property key="File" value="/Users/Carlo/Dropbox/Canaro/C'hi++/doc/C'hi++.vue"/>
+        <property key="File" value="/Users/Carlo/Dropbox/Canaro/C'hi++/C'hi++.vue"/>
     </resource>
     <fillColor>#FFFFFF</fillColor>
     <strokeColor>#404040</strokeColor>
     <textColor>#000000</textColor>
     <font>SansSerif-plain-14</font>
     <URIString>http://vue.tufts.edu/rdf/resource/304ae827c0a8010a0179d47fc366704d</URIString>
-    <child ID="555" layerID="374" created="1367875198461" x="-1309.9768"
-        y="-897.96454" width="3746.9827" height="2964.317"
+    <child ID="555" layerID="374" created="1367875198461" x="-1400.5125"
+        y="-932.2516" width="3837.5183" height="2998.604"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7bbbe0467f000001019e80b13fc086f2</URIString>
-        <point1 x="-1308.9768" y="-896.96454"/>
+        <point1 x="-1399.5125" y="-931.2516"/>
         <point2 x="2436.0059" y="2065.3523"/>
-        <ID1 xsi:type="node">556</ID1>
         <ID2 xsi:type="node">551</ID2>
         <ctrlPoint0 x="248.62512" y="4.7571716" xsi:type="point"/>
     </child>
-    <child ID="560" layerID="374" created="1367875444050" x="-1305.7175"
-        y="-899.3138" width="3788.802" height="2875.1423"
+    <child ID="560" layerID="374" created="1367875444050" x="-1396.3508"
+        y="-933.5852" width="3879.4353" height="2909.4136"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-bold-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7bbbe0477f000001019e80b1c33715b5</URIString>
-        <point1 x="-1304.7175" y="-898.3138"/>
+        <point1 x="-1395.3508" y="-932.5852"/>
         <point2 x="2482.0845" y="1974.8285"/>
-        <ID1 xsi:type="node">556</ID1>
         <ID2 xsi:type="node">553</ID2>
         <ctrlPoint0 x="-26.77002" y="-270.05182" xsi:type="point"/>
     </child>
@@ -202,16 +199,16 @@
         <ID2 xsi:type="node">125</ID2>
         <ctrlPoint0 x="-869.2251" y="860.1477" xsi:type="point"/>
     </child>
-    <child ID="413" layerID="374" created="1296081981528" x="-333.0604"
-        y="678.8135" width="158.97916" height="918.2391"
+    <child ID="413" layerID="374" created="1296081981528" x="-333.26105"
+        y="629.48615" width="160.51123" height="967.558"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c4881d82c0a8010b0127669d5ceaa08c</URIString>
-        <point1 x="-175.08124" y="679.8134"/>
-        <point2 x="-332.0604" y="1596.0525"/>
+        <point1 x="-173.74982" y="630.4862"/>
+        <point2 x="-332.26105" y="1596.0442"/>
         <ID1 xsi:type="node">414</ID1>
         <ID2 xsi:type="node">411</ID2>
     </child>
@@ -353,8 +350,8 @@
         <ID2 xsi:type="node">180</ID2>
         <ctrlPoint0 x="608.9416" y="346.7352" xsi:type="point"/>
     </child>
-    <child ID="492" layerID="374" created="1298417746506" x="-1317.3202"
-        y="-896.4163" width="3666.6177" height="3324.2473"
+    <child ID="492" layerID="374" created="1298417746506" x="-1407.6486"
+        y="-930.70715" width="3756.9458" height="3358.5383"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
@@ -362,9 +359,8 @@
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4fbd1c58c0a8010b006d65fd2935c775</URIString>
         <point1 x="2348.2976" y="2426.831"/>
-        <point2 x="-1316.3202" y="-895.4163"/>
+        <point2 x="-1406.6486" y="-929.70715"/>
         <ID1 xsi:type="node">485</ID1>
-        <ID2 xsi:type="node">556</ID2>
         <ctrlPoint0 x="220.7749" y="272.1477" xsi:type="point"/>
     </child>
     <child ID="508" layerID="374" created="1356903642863" x="-732.11"
@@ -437,29 +433,29 @@
         <ID2 xsi:type="node">561</ID2>
         <ctrlPoint0 x="-525.9226" y="-444.4432" xsi:type="point"/>
     </child>
-    <child ID="569" layerID="374" created="1367959210484" x="-1447.4987"
-        y="-849.36945" width="3385.48" height="2716.0403"
+    <child ID="569" layerID="374" created="1367959210484" x="-1380.8381"
+        y="-847.2848" width="3318.8193" height="2713.9556"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80b9aac47f00000101a8c22b91fef956</URIString>
-        <point1 x="-1446.4987" y="-848.36945"/>
+        <point1 x="-1379.8381" y="-846.2848"/>
         <point2 x="1936.9813" y="1865.6709"/>
         <ID1 xsi:type="node">567</ID1>
         <ID2 xsi:type="node">561</ID2>
         <ctrlPoint0 x="-377.71875" y="-207.54492" xsi:type="point"/>
     </child>
-    <child ID="598" layerID="374" created="1367963125791" x="-1529.1068"
-        y="-983.99725" width="3550.6963" height="2579.1104"
+    <child ID="598" layerID="374" created="1367963125791" x="-1341.0277"
+        y="-1013.32465" width="3362.6172" height="2608.4377"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-bold-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80f585637f00000101a8c22bb053361f</URIString>
-        <point1 x="-1528.1068" y="-982.99725"/>
+        <point1 x="-1340.0277" y="-1012.32465"/>
         <point2 x="2020.5895" y="1594.113"/>
         <ID1 xsi:type="node">27</ID1>
         <ID2 xsi:type="node">596</ID2>
@@ -1122,7 +1118,7 @@
         <shape xsi:type="diamond"/>
     </child>
     <child ID="27" label="Ereditariet&#xe0;" layerID="1"
-        created="1293658466919" x="-1638.1937" y="-1025.7568"
+        created="1293658466919" x="-1446.3561" y="-1056.646"
         width="142.0" height="59.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>v. nota da Etica Nicomachea</notes>
         <fillColor>#FDE888</fillColor>
@@ -1142,16 +1138,16 @@
         <URIString>http://vue.tufts.edu/rdf/resource/3413334ec0a8010b00a5d7f2f7e16289</URIString>
         <shape xsi:type="diamond"/>
     </child>
-    <child ID="30" layerID="1" created="1293658671960" x="-1724.8461"
-        y="-1087.4274" width="128.42798" height="74.52075"
+    <child ID="30" layerID="1" created="1293658671960" x="-1672.3772"
+        y="-1089.5544" width="250.26648" height="53.04248"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3413334ec0a8010b00a5d7f23726a60b</URIString>
-        <point1 x="-1724.3461" y="-1086.9274"/>
-        <point2 x="-1596.9181" y="-1013.4066"/>
+        <point1 x="-1671.8772" y="-1089.0544"/>
+        <point2 x="-1422.6107" y="-1037.012"/>
         <ID1 xsi:type="node">20</ID1>
         <ID2 xsi:type="node">27</ID2>
     </child>
@@ -1192,7 +1188,7 @@
     <child ID="36" label="Commenti" layerID="1" created="1293658750050"
         x="-2299.3289" y="-1318.8171" width="133.5" height="57.5"
         strokeWidth="2.0" autoSized="true" xsi:type="node">
-        <notes>I commenti sono la parte pi&#xf9; importante del codice.%nl;%nl;Esistono, dei commenti, nell'Universo?%nl;Qualcosa che ci permetta, da un'escuzione e l'altra, di tenere traccia di ci&#xf2; che &#xe8; successo nelle esecuzioni precedenti?%nl;</notes>
+        <notes>I commenti sono la parte pi&#xf9; importante del codice.%nl; %nl;Esistono, dei commenti, nell'Universo?%nl;Qualcosa che ci permetta, da un'escuzione e l'altra, di tenere traccia di ci&#xf2; che &#xe8; successo nelle esecuzioni precedenti?%nl;</notes>
         <fillColor>#FDE888</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
@@ -1425,15 +1421,15 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="242" label="domanda" layerID="1" created="1294797541698"
-        x="-1514.319" y="-989.4336" width="621.667" height="86.1568"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="2" xsi:type="link">
+        x="-1330.4799" y="-1016.9994" width="442.8227"
+        height="104.664734" strokeWidth="1.0" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7803c783c0a8010d001370ab4ebb6aca</URIString>
-        <point1 x="-1513.819" y="-988.93365"/>
-        <point2 x="-893.152" y="-903.77686"/>
+        <point1 x="-1329.9799" y="-1016.4994"/>
+        <point2 x="-888.15717" y="-912.83466"/>
         <ID1 xsi:type="node">27</ID1>
         <ID2 xsi:type="node">241</ID2>
     </child>
@@ -1932,30 +1928,6 @@
         <ID1 xsi:type="node">125</ID1>
         <ID2 xsi:type="node">548</ID2>
     </child>
-    <child ID="556" label="Classi e istanze" layerID="1"
-        created="1367875232095" x="-1419.2188" y="-947.2981"
-        width="141.6" height="55.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
-        <notes>Per spiegare la differenza fra classe e istanza, possiamo attingere %sp;a piene mani da Aristotele</notes>
-        <fillColor>#FEFEC9</fillColor>
-        <strokeColor>#8C8F72</strokeColor>
-        <textColor>#000000</textColor>
-        <font>Arial-plain-12</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/7bbbdfda7f000001019e80b13995ab39</URIString>
-        <shape xsi:type="ellipse"/>
-    </child>
-    <child ID="558" layerID="1" created="1367875302795" x="-1714.8379"
-        y="-995.4946" width="304.6162" height="63.39331"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="2" xsi:type="link">
-        <strokeColor>#8C8F72</strokeColor>
-        <textColor>#404040</textColor>
-        <font>Arial-plain-11</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/7bbbdfdb7f000001019e80b1e75948cb</URIString>
-        <point1 x="-1714.3379" y="-994.9946"/>
-        <point2 x="-1410.7217" y="-932.6013"/>
-        <ID1 xsi:type="node">24</ID1>
-        <ID2 xsi:type="node">556</ID2>
-    </child>
     <child ID="564" label="Metodi e dati membro" layerID="1"
         created="1367876868740" x="-1636.5188" y="-790.09814"
         width="175.0" height="55.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
@@ -1980,28 +1952,35 @@
         <ID1 xsi:type="node">24</ID1>
         <ID2 xsi:type="node">564</ID2>
     </child>
-    <child ID="567" label="Dichiarazione&#xa;e definizione" layerID="1"
-        created="1367959106381" x="-1558.3954" y="-899.1084"
-        width="146.27661" height="55.0" strokeWidth="2.0"
-        autoSized="false" xsi:type="node">
-        <notes>Aristotele pu&#xf2; essere utile ache per spiegare la differenza fra dichiarazione e definizione della classe</notes>
+    <child ID="567" label="Classi e istanze" layerID="1"
+        created="1367959106381" x="-1494.9913" y="-902.35986"
+        width="149.90001" height="60.9" strokeWidth="2.0"
+        autoSized="true" xsi:type="node">
+        <notes>Per spiegare la differenza fra classe e istanza, possiamo attingere %sp;a piene mani da Aristotele.%nl;Per esempio, la distinzione fra universale e sostanza pu&#xf2; essere utile %sp;per spiegare la differenza fra dichiarazione e definizione della classe</notes>
         <fillColor>#FEFEC9</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="universale"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="sostanza"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="classe"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Aristotele"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="istanza"/>
+        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80b9aa567f00000101a8c22b516941df</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="568" layerID="1" created="1367959106381" x="-1725.6362"
-        y="-989.9181" width="196.59204" height="97.059265"
+    <child ID="568" layerID="1" created="1367959106381" x="-1722.72"
+        y="-991.4242" width="249.43835" height="98.84851"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80b9aa577f00000101a8c22b334aeb06</URIString>
-        <point1 x="-1725.1362" y="-989.418"/>
-        <point2 x="-1529.5442" y="-893.35876"/>
+        <point1 x="-1722.2198" y="-990.9242"/>
+        <point2 x="-1473.7815" y="-893.0757"/>
         <ID1 xsi:type="node">24</ID1>
         <ID2 xsi:type="node">567</ID2>
     </child>
@@ -2062,7 +2041,7 @@
         <ID2 xsi:type="node">601</ID2>
     </child>
     <child ID="603" label="Funzioni friend" layerID="1"
-        created="1367963492390" x="-2089.109" y="-1678.6062"
+        created="1367963492390" x="-2074.477" y="-1628.2083"
         width="135.6" height="55.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>L'utilizzo delle classi "friend" rende pi&#xf9; veloce il codice, ma allo stesso tempo lo rende pi&#xf9; complesso da modificare, perch&#xe9; una modifica alla classe comporter&#xe0; quasi sicuramente anche una modifica alla funzioni a essa collegate.%nl;L'utilizzo delle funzioni friend deve perci&#xf2; essere limitato ai soli casi necessari, come, per esempio, gli operatori di I/O da stream.</notes>
         <fillColor>#FEFEC9</fillColor>
@@ -2073,15 +2052,15 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="605" label="conseguenza" layerID="1"
-        created="1367964048718" x="-2024.8291" y="-1624.4106"
-        width="66.0" height="161.84082" strokeWidth="1.0"
+        created="1367964048718" x="-2017.5013" y="-1574.0078"
+        width="66.0" height="111.433105" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/81096c1c7f00000101a8c22b10ffc1d4</URIString>
-        <point1 x="-1969.7992" y="-1463.0698"/>
-        <point2 x="-2013.859" y="-1623.9106"/>
+        <point1 x="-1969.6444" y="-1463.0747"/>
+        <point2 x="-1999.3583" y="-1573.5078"/>
         <ID1 xsi:type="node">601</ID1>
         <ID2 xsi:type="node">603</ID2>
     </child>
@@ -2281,6 +2260,7 @@
         <font>Arial-plain-12</font>
         <metadata-list>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="SDFO"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="bene"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaaac0a8010b00a5d7f29118c1c9</URIString>
         <shape xsi:type="ellipse"/>
@@ -2647,38 +2627,41 @@
     </child>
     <child ID="351" label="Mazdeismo" layerID="7"
         created="1295640809651" x="1178.7864" y="-1021.24945"
-        width="126.0" height="36.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
+        width="126.0" height="44.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Lo zoroastrismo fu la religione nazionale persiana dal periodo achemenide a quello sassanide, tra il 630 a.C. ed il 750. Persiste ancora oggi, seppur molto ridotta per importanza, essendo stata soppiantata dall'islamismo.%nl;Secondo le narrazioni che hanno riguardato questa importante figura filosofica, il giovane Zoroastro [2], figlio del sacerdote Porushaspa, dovendo seguire le orme del padre, inizi&#xf2; a celebrare i rituali religiosi professati dalla sua trib&#xf9;, consistenti, per mancanza di un luogo sacro, in canti di lode e sacrifici all' aperto. All' et&#xe0; di vent'anni, non soddisfatto di quella vita spirituale, si ritir&#xf2; nel deserto a meditare e venne - in pieno stato di estasi - colto da visioni durante le quali gli apparve il signore della saggezza, lo Ahura Mazda (Ohrmazd in pahlavi), principe del bene, che gli dette l'ordine di combattere contro il principe del male, Ahriman.%nl;L'elemento essenziale del dualismo di Zarathustra &#xe8; la distinzione fra bene e male, una distinzione che non riguarda solo gli uomini, ma il mondo intero. Se all'umano si contrappone l'inumano, allo spirito saggio si contrappone quello malvagio e alla veracit&#xe0; si contrappone la menzogna. Il mondo &#xe8; inteso come diviso fra coppie di antagonisti. Zarathustra concepisce una sola divinit&#xe0; onnipotente e creatrice, Ahura Mazda; ma la concezione monoteistica non &#xe8; certa, visto che &#xe8; affiancata da una dottrina dualistica, che contrappone i due spiriti del bene e del male, fin dall'inizio del mondo e in perenne antitesi tra loro, influenzando l'agire umano. http://it.wikipedia.org/wiki/Zoroastro%nl;%nl;Interessante, ma va non so se sia compatibile con C'hi++ la contrapposizione fra due entit&#xe0; una totalmente benevola, l'altra malvagia (e sono troppo assonnato per analizzare la cosa adesso)%nl;%nl;</notes>
         <fillColor>#E4E6D2</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="affinit&#xe0;"/>
+        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7bbc0a8010d01bf8de1e27cb580</URIString>
         <shape xsi:type="rectangle"/>
     </child>
-    <child ID="352" layerID="7" created="1295640843950" x="1249.3008"
-        y="-985.7495" width="48.76062" height="108.266846"
+    <child ID="352" layerID="7" created="1295640843950" x="1251.3386"
+        y="-977.7495" width="46.3573" height="100.266846"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7bcc0a8010d01bf8de18da6ad61</URIString>
-        <point1 x="1297.5615" y="-877.98267"/>
-        <point2 x="1249.8009" y="-985.2495"/>
+        <point1 x="1297.1959" y="-877.98267"/>
+        <point2 x="1251.8386" y="-977.2495"/>
         <ID1 xsi:type="node">290</ID1>
         <ID2 xsi:type="node">351</ID2>
     </child>
-    <child ID="353" layerID="7" created="1295640845524" x="1169.314"
-        y="-1171.3691" width="65.243774" height="150.61987"
+    <child ID="353" layerID="7" created="1295640845524" x="1169.1545"
+        y="-1171.3645" width="63.88501" height="150.61499"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7bcc0a8010d01bf8de1b635b4e4</URIString>
-        <point1 x="1234.0576" y="-1021.24927"/>
-        <point2 x="1169.8138" y="-1170.8691"/>
+        <point1 x="1232.5396" y="-1021.2495"/>
+        <point2 x="1169.6545" y="-1170.8645"/>
         <ID1 xsi:type="node">351</ID1>
         <ID2 xsi:type="node">293</ID2>
     </child>
@@ -3242,7 +3225,7 @@
     <child ID="251" label="Presocratici" layerID="7"
         created="1294869269562" x="558.6765" y="2701.2798" width="142.5"
         height="58.5" strokeWidth="2.0" autoSized="true" xsi:type="node">
-        <notes>L'atomismo &#xe8; un indirizzo filosofico di carattere ontologico basato sulla pluralit&#xe0; dei costituenti fondamentali della realt&#xe0; fisica. Questa filosofia materialistica &#xe8; nata nella Grecia "ionica" (coste dell'attuale Asia Minore) probabilmente gi&#xe0; intorno alla fine del VII secolo a.C. Essa per&#xf2; si profila in modo netto solo nel secolo successivo grazie a Leucippo, che da Mileto emigra ad Abdera e l&#xec; vi fonda una scuola dove avr&#xe0; come allievo principale Democrito. L'atomismo non si limita ad essere un'ontologia, ma ha sia in Democrito che in Epicuro dei risvolti etici molto importanti.</notes>
+        <notes>.</notes>
         <fillColor>#B5B995</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
@@ -3460,6 +3443,7 @@
         <metadata-list>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="da qui"/>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="SDFO"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="affinit&#xe0;"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c41b0fe77f00000101cc6a6aa3ebd095</URIString>
         <shape xsi:type="ellipse"/>
@@ -3548,6 +3532,7 @@
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Paura della morte"/>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Scopo della religione"/>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="SDFO"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="affinit&#xe0;"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3df3f277f00000101cc6a6a04521b62</URIString>
         <shape xsi:type="ellipse"/>
@@ -4095,6 +4080,7 @@
         <font>Arial-plain-12</font>
         <metadata-list>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="SDFO"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="differenze"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e1c0a8010d005730f8233339a5</URIString>
         <shape xsi:type="ellipse"/>
@@ -4866,12 +4852,16 @@
     </child>
     <child ID="273" label="La sapienza deve &#xa;restare segreta"
         layerID="7" created="1294870324745" x="-194.90381" y="1106.7047"
-        width="157.4" height="48.4" strokeWidth="2.0" autoSized="true" xsi:type="node">
+        width="165.09999" height="62.1" strokeWidth="2.0"
+        autoSized="true" xsi:type="node">
         <notes>"A sua volta, Valentino si offre di iniziare alla sua sapienza coloro che sono maturi, poich&#xe9; non tutti sono in grado di comprenderla"%nl;Pagels, I Vangeli gnostici, p. 85%nl;%nl;Perch&#xe9; la sapienza va tenuta segreta?%nl;Perch&#xe9; chi conosce la Verit&#xe0; la nasconde?%nl;Questo vale anche per i maestri Zen che hanno raggiunto l'Illuminazione: perch&#xe9; tramandano i loro insegnamenti e la loro saggezza solo a pochi eletti?%nl;La Verit&#xe0;, &#xe8; davvero incomprensibile o &#xe8; socialmente pericolosa?%nl;E' un bene, che TUTTI conoscano la verit&#xe0;?%nl;</notes>
         <fillColor>#F4F5E9</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="verit&#xe0;"/>
+        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e4c0a8010d005730f8bf8a1529</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4889,12 +4879,17 @@
     </child>
     <child ID="278" label="I nomi sono un inganno" layerID="7"
         created="1294870458587" x="-450.5703" y="1411.7048"
-        width="186.0" height="38.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
+        width="195.0" height="64.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>Un altro valentiniano, l'autore del Vangelo di Filippo, sottolinea che i nomi: "racchiudono un grande inganno, perch&#xe9; distolgono i cuori da concetti che sono autentici verso concetti che non sono autentici".%nl;Pagels, I Vangeli gnostici, p. 81%nl;%nl;Buono anche per i 10C</notes>
         <fillColor>#F4F5E9</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="nomi"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="classi"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="istanze"/>
+        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e6c0a8010d005730f8c0a2a710</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4924,16 +4919,16 @@
         <ID1 xsi:type="node">267</ID1>
         <ID2 xsi:type="node">271</ID2>
     </child>
-    <child ID="274" layerID="7" created="1294870324755" x="-113.12045"
-        y="1154.4937" width="16.812714" height="107.30078"
+    <child ID="274" layerID="7" created="1294870324755" x="-108.846405"
+        y="1168.1528" width="12.991905" height="93.460205"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e5c0a8010d005730f81c628024</URIString>
-        <point1 x="-96.80774" y="1261.2944"/>
-        <point2 x="-112.62045" y="1154.9937"/>
+        <point1 x="-96.3545" y="1261.113"/>
+        <point2 x="-108.346405" y="1168.6528"/>
         <ID1 xsi:type="node">267</ID1>
         <ID2 xsi:type="node">273</ID2>
     </child>
@@ -4950,16 +4945,16 @@
         <ID1 xsi:type="node">267</ID1>
         <ID2 xsi:type="node">276</ID2>
     </child>
-    <child ID="280" layerID="7" created="1294870471133" x="-325.5725"
-        y="1301.1074" width="204.97226" height="112.35571"
+    <child ID="280" layerID="7" created="1294870471133" x="-307.31042"
+        y="1301.7705" width="188.36624" height="114.42932"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e6c0a8010d005730f8a1217cbd</URIString>
-        <point1 x="-121.10026" y="1301.6074"/>
-        <point2 x="-325.0725" y="1412.9631"/>
+        <point1 x="-119.44418" y="1302.2704"/>
+        <point2 x="-306.81042" y="1415.6997"/>
         <ID1 xsi:type="node">267</ID1>
         <ID2 xsi:type="node">278</ID2>
     </child>
@@ -5044,6 +5039,7 @@
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="spazionismo"/>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="tao"/>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="SDFO"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="affinit&#xe0;"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/775a0278c0a8010d011c34fbbd1546d4</URIString>
         <shape xsi:type="ellipse"/>
@@ -5065,7 +5061,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="440" label="L'eterno fluire" layerID="7"
-        created="1296162309650" x="1229.6443" y="3001.1475"
+        created="1296162309650" x="1264.3109" y="2966.4807"
         width="136.3" height="59.299995" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>Russell sostiene che questa frase sia apocrifa, e che ci&#xf2; che sappiamo di Eraclito lo dobbiamo alle citazioni che ne fanno Platone e Aristotele, allo scopo di confutarlo.%nl;Questo potrebbe spiegare come mai, partendo da dei presupposti altamente spazionistici, Eraclito non si sia reso conto del fatto che, dato un tempo infinito, &#xe8; possibile che uno stesso uomo si bagni due volte nella stessa acqua di uno stesso fiume.%nl;%nl;Sempre a proposito della famosa frase, c'&#xe8; da fare una considerazione su ci&#xf2; che si intende con "stesso uomo".%nl;Le nostre cellule si rinnovano continuamente, quindi, cos&#xec; come non esiste il concetto di "stessa acqua", non pu&#xf2; esistere il concetto di "stesso uomo", a meno che non vogliamo ammettere che le singole cellule non sono importanti, il che, per&#xf2;, &#xe8; applicabile anche al fiume...%nl;%nl;Da un punto di vista spazionistico, questa frase ha poco senso, perch&#xe9; non esiste il concetto di "stesso uomo" o di "stesso fiume": l'uomo e il fiume sono solo spazioni resi reali da un flusso di Energia; quindi, da un certo punto di vista, gli spazioni che per un attimo sono stati "uomo" saranno SEMPRE circondati dagli spazioni che, per un attimo, sono stati "acqua".%nl;L'energia che li ha resi *quell'acqua* %sp;e *quell'uomo* fluisce, ma, in un serto senso, rimane sempre la stessa e, comunque, torner&#xe0; a concentrarsi fra un ciclo e l'altro.%nl;Posto, ovviamente, che lo spazionismo non sia una fracca di fregnacce...%nl;%nl;</notes>
@@ -5076,12 +5072,13 @@
         <metadata-list>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="spazionismo"/>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="allocazione della memoria"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="differenze"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c954e26fc0a8010b008d116e00a25a89</URIString>
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="536" label="Critiche di Platone" layerID="7"
-        created="1366063207789" x="1373.4656" y="3065.0854"
+        created="1366063207789" x="1258.799" y="3089.0854"
         width="165.09999" height="62.1" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>SDFO 163%nl;Nel Teeteto, Platone critica la dottrina di Eraclito.%nl;Da un punto di vista spazionistico, per&#xf2; (e, pare, anche dal punto di vista quantistico) le affermazioni di Eraclito sono corrette, perch&#xe9; un oggetto in movimento non &#xe8; lo stesso oggetto iniziale, perch&#xe9; &#xe8; composto da spazioni differenti.%nl;(Nelle mie note scrivo che anche se resta fermo, muta, perch&#xe9; disperde la propria energia, ma non capisco perch&#xe9;..)</notes>
@@ -5136,29 +5133,29 @@
         <ID1 xsi:type="node">203</ID1>
         <ID2 xsi:type="node">211</ID2>
     </child>
-    <child ID="441" layerID="7" created="1296162315160" x="1143.0952"
-        y="2962.6265" width="107.23865" height="47.62329"
+    <child ID="441" layerID="7" created="1296162315160" x="1158.5798"
+        y="2957.162" width="113.923096" height="26.054443"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c954e26fc0a8010b008d116e5d967414</URIString>
-        <point1 x="1143.5953" y="2963.1262"/>
-        <point2 x="1249.834" y="3009.7495"/>
+        <point1 x="1159.0798" y="2957.662"/>
+        <point2 x="1272.0029" y="2982.7166"/>
         <ID1 xsi:type="node">203</ID1>
         <ID2 xsi:type="node">440</ID2>
     </child>
-    <child ID="537" layerID="7" created="1366063210977" x="1346.617"
-        y="3050.6655" width="54.497925" height="23.092041"
+    <child ID="537" layerID="7" created="1366063210977" x="1334.0795"
+        y="3025.1875" width="5.550049" height="64.48047"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/0fba9536c0a80104005fe56878485a96</URIString>
-        <point1 x="1347.1171" y="3051.1655"/>
-        <point2 x="1400.615" y="3073.2576"/>
+        <point1 x="1334.5795" y="3025.6875"/>
+        <point2 x="1339.1295" y="3089.168"/>
         <ID1 xsi:type="node">440</ID1>
         <ID2 xsi:type="node">536</ID2>
     </child>
@@ -5237,6 +5234,7 @@
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="paradossi"/>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="linguaggi di programmazione"/>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="SDFO"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="matematica"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c928fe2ac0a8010b008d116e1c408f72</URIString>
         <shape xsi:type="ellipse"/>
@@ -5390,6 +5388,9 @@
         <metadata-list>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="spazionismo"/>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="SDFO"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="affinit&#xe0;"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="amore"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="discordia"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/77642314c0a8010d011c34fbf352cd3e</URIString>
         <shape xsi:type="ellipse"/>
@@ -5545,11 +5546,9 @@
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283dec0a8010d005730f87092d384</URIString>
         <shape xsi:type="diamond"/>
     </child>
-    <child ID="414"
-        label="L'acqua &#xe8; &#xa;la migliore &#xa;delle cose"
-        layerID="7" created="1296082280423" x="-228.7752" y="617.00195"
-        width="118.09999" height="63.1" strokeWidth="2.0"
-        autoSized="true" xsi:type="node">
+    <child ID="414" label="L'acqua &#xe8; la migliore&#xa;delle cose"
+        layerID="7" created="1296082280423" x="-258.10855" y="567.6686"
+        width="179.0" height="63.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>SDFO, 45 - Il motto "L'acqua &#xe8; la migliore delle cose" , ricorda Lao Tze, anche se qui il significato &#xe8; un altro, perch&#xe9;, secondo Talete, l'acqua era la sostanza originaria, da cui si sono formate tute le altre.%nl;%nl;Anassimandro &#xe8; pi&#xf9; sensato.%nl;</notes>
         <fillColor>#F4F5E9</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -5575,6 +5574,7 @@
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="spazionismo"/>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="L'Uno"/>
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="SDFO"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="affinit&#xe0;"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c49313b7c0a8010b0127669d65ae1afe</URIString>
         <shape xsi:type="ellipse"/>
@@ -5618,29 +5618,29 @@
         <ID1 xsi:type="node">252</ID1>
         <ID2 xsi:type="node">239</ID2>
     </child>
-    <child ID="415" layerID="7" created="1296082308792" x="-124.574265"
-        y="667.838" width="79.44638" height="35.000244"
+    <child ID="415" layerID="7" created="1296082308792" x="-129.96362"
+        y="626.87024" width="105.057976" height="75.96796"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c4881d7cc0a8010b0127669d33d86c34</URIString>
-        <point1 x="-45.627888" y="702.33826"/>
-        <point2 x="-124.07427" y="668.338"/>
+        <point1 x="-25.40565" y="702.33826"/>
+        <point2 x="-129.46362" y="627.3703"/>
         <ID1 xsi:type="node">239</ID1>
         <ID2 xsi:type="node">414</ID2>
     </child>
-    <child ID="420" layerID="7" created="1296082804444" x="-194.48224"
-        y="678.9524" width="22.978455" height="239.07642"
+    <child ID="420" layerID="7" created="1296082804444" x="-194.7522"
+        y="629.58044" width="24.658798" height="288.4358"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c49313b8c0a8010b0127669df694709c</URIString>
-        <point1 x="-172.50378" y="679.9524"/>
-        <point2 x="-193.48224" y="917.0288"/>
+        <point1 x="-171.0934" y="630.58044"/>
+        <point2 x="-193.7522" y="917.01624"/>
         <ID1 xsi:type="node">414</ID1>
         <ID2 xsi:type="node">416</ID2>
     </child>
@@ -5670,7 +5670,7 @@
     <child ID="754" label="Bhagavad Gita" layerID="7"
         created="1543744840498" x="2059.846" y="-514.71606"
         width="120.0" height="44.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
-        <notes>Versione di riferimento: %nl;%nl;9788857543741%nl;%nl;Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul G&#x12b;t&#x101; Bh&#x101;&#x1e63;ya di R&#x101;m&#x101;nuja (Italian Edition) (Kindle Location 6). Mimesis Edizioni. Kindle Edition. </notes>
+        <notes>Versione di riferimento: %nl;%nl;9788857543741%nl;%nl;Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul G&#x12b;t&#x101; Bh&#x101;&#x1e63;ya di R&#x101;m&#x101;nuja (Italian Edition) (Kindle Location 6). Mimesis Edizioni. Kindle Edition.</notes>
         <fillColor>#E4E6D2</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
@@ -5713,7 +5713,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="757" label="tesi" layerID="7" created="1543745201953"
-        x="2110.5854" y="-471.1875" width="18.0" height="162.6875"
+        x="2111.0854" y="-471.1875" width="17.0" height="162.6875"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
@@ -5725,28 +5725,15 @@
         <ID1 xsi:type="node">754</ID1>
         <ID2 xsi:type="node">756</ID2>
     </child>
-    <child ID="759" label="tesi" layerID="7" created="1543746040561"
-        x="2179.346" y="-500.00223" width="131.43457" height="13.0"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="2" xsi:type="link">
-        <strokeColor>#8C8F72</strokeColor>
-        <textColor>#404040</textColor>
-        <font>Arial-plain-11</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/6e70f5d0c0a82b3202b0df8bee2dcefd</URIString>
-        <point1 x="2179.846" y="-493.09277"/>
-        <point2 x="2310.2805" y="-493.91168"/>
-        <ID1 xsi:type="node">754</ID1>
-        <ID2 xsi:type="node">758</ID2>
-    </child>
     <child ID="60" label="C'hi++" layerID="6" created="1293660267417"
         x="-3102.9172" y="621.9857" width="154.1156" height="56.931152"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
-        <resource referenceCreated="0" size="62055"
+        <resource referenceCreated="0"
             spec="/Users/Carlo/Dropbox/Canaro/C'hi++/doc/Sostiene Aristotele.odt"
             type="1" xsi:type="URLResource">
             <title>Sostiene Aristotele.odt</title>
-            <property key="@file.relative" value="Sostiene%20Aristotele.odt"/>
-            <property key="File" value="Sostiene Aristotele.odt"/>
+            <property key="@file.relative" value="doc/Sostiene%20Aristotele.odt"/>
+            <property key="File" value="doc/Sostiene Aristotele.odt"/>
         </resource>
         <fillColor>#82CDE4</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -6016,7 +6003,7 @@
         created="1367965488093" x="-3370.8352" y="1568.2722"
         width="203.6" height="64.600006" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
-        <notes>L'idea aristotelica (SDFO, 191) che tutto volga verso un fine e che le azioni, esatte o errate, possano accelerare o ritardare questo processo &#xe8; condivisibile e coerente con il C'hi++; l'ipotesi che tutto ci&#xf2; sia "buono", nel senso in cui noi intendiamo questo termine, mi sembra un po' meno credibile.%nl;Per quello che ne possiamo sapere, il Fine Ultimo potrebbe essere una Grande Inculata, dal nostro punto di vista.%nl;D'altro canto, ci deve essere un motivo se l'Uno non &#xe8; restato Uno; ci sar&#xe0; un motivo, se l'Immancabile Testa di Pera (cfr. Defecatio) a un certo punto ha deciso per la secessione.%nl;La coincidenza fra il "buono" umano e il "buono" divino mi sembra un errore di impostazione logica.%nl;%nl;0.3.3 - L'Universo non ha un fine ultimo; esiste perch&#xe9; non pu&#xf2; fare a meno di farlo. </notes>
+        <notes>L'idea aristotelica (SDFO, 191) che tutto volga verso un fine e che le azioni, esatte o errate, possano accelerare o ritardare questo processo &#xe8; condivisibile e coerente con il C'hi++; l'ipotesi che tutto ci&#xf2; sia "buono", nel senso in cui noi intendiamo questo termine, mi sembra un po' meno credibile.%nl;Per quello che ne possiamo sapere, il Fine Ultimo potrebbe essere una Grande Inculata, dal nostro punto di vista.%nl;D'altro canto, ci deve essere un motivo se l'Uno non &#xe8; restato Uno; ci sar&#xe0; un motivo, se l'Immancabile Testa di Pera (cfr. Defecatio) a un certo punto ha deciso per la secessione.%nl;La coincidenza fra il "buono" umano e il "buono" divino mi sembra un errore di impostazione logica.%nl;%nl;0.3.3 - L'Universo non ha un fine ultimo; esiste perch&#xe9; non pu&#xf2; fare a meno di farlo.</notes>
         <fillColor>#C6E8FF</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
@@ -7009,7 +6996,7 @@
         created="1543746230445" x="-2108.1692" y="2.590332"
         width="131.45032" height="38.47223" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
-        <notes>0.3.3 - vedere Prak&#x1e5b;ti e Purusa in BG%nl; </notes>
+        <notes>0.3.3 - vedere Prak&#x1e5b;ti e Purusa in BG%nl;</notes>
         <fillColor>#E6F7FD</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
@@ -7029,6 +7016,38 @@
         <point2 x="-2058.8977" y="40.38037"/>
         <ID1 xsi:type="node">97</ID1>
         <ID2 xsi:type="node">762</ID2>
+    </child>
+    <child ID="1119" label="nota narrativa" layerID="6"
+        created="1544380238786" x="-3859.1123" y="663.538"
+        width="132.63647" height="21.981812" strokeWidth="1.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/9444b78cc0a82b327d7f6bdd156a4318</URIString>
+        <point1 x="-3858.612" y="664.038"/>
+        <point2 x="-3726.9756" y="685.01984"/>
+        <ID1 xsi:type="node">590</ID1>
+        <ID2 xsi:type="node">1120</ID2>
+    </child>
+    <child ID="1120" label="Umorismo&#x9;" layerID="6"
+        created="1544380248202" x="-3732.6587" y="666.1006"
+        width="153.54004" height="60.5" strokeWidth="4.0"
+        autoSized="false" xsi:type="node">
+        <notes>Ashvaghosha, nell'introduzione alla Saundarananda%nl;%nl;Questa composizione sul tema della liberazione &#xe8; stata composta in forma poetica non per procurare piacere, ma per vincere nei lettori la propensione a distrarre la mente; e se ho trattato in esso temi diversi dalla liberazione &#xe8; stato per renderla piacevole, cos&#xec; come una medicina amara si mescola con il miele per renderla bevibile.%nl;%nl;Si pu&#xf2; utilizzare per giustificare il tono non sempre serio del testo.%nl;%nl;Un'altra spiegazione &#xe8; che sono un cazzone, ovviamente. :-)%nl;</notes>
+        <fillColor>#C6E8FF</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="ikebarba"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="spazionismo"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="autoironia"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Ashvaghosha"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Saundarananda"/>
+        </metadata-list>
+        <URIString>http://vue.tufts.edu/rdf/resource/9444b78cc0a82b327d7f6bdd1ccdf532</URIString>
+        <shape xsi:type="ellipse"/>
     </child>
     <layer ID="374" label="Relazioni" created="1295991642614" x="0.0"
         y="0.0" width="1.4E-45" height="1.4E-45" hidden="true"
@@ -7052,8 +7071,8 @@
         width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/3413335cc0a8010b00a5d7f256847768</URIString>
     </layer>
-    <userZoom>1.25</userZoom>
-    <userOrigin x="-5444.028" y="-1689.4591"/>
+    <userZoom>0.8535699603249672</userZoom>
+    <userOrigin x="-3720.6582" y="-1044.2275"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1267825535957"
@@ -7105,6 +7124,6 @@
     </PathwayList>
     <date>2010-03-05</date>
     <modelVersion>6</modelVersion>
-    <saveLocation>/Users/Carlo/Dropbox/Canaro/C'hi++/doc</saveLocation>
-    <saveFile>/Users/Carlo/Dropbox/Canaro/C'hi++/doc/C'hi++.vue</saveFile>
+    <saveLocation>/Users/Carlo/Dropbox/Canaro/C'hi++</saveLocation>
+    <saveFile>/Users/Carlo/Dropbox/Canaro/C'hi++/C'hi++.vue</saveFile>
 </LW-MAP>

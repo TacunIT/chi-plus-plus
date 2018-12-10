@@ -1,4 +1,4 @@
-__Carlo Simonelli__
+__Carlo Simonelli__ 
 
 # C'hi++ - Proposta per una metafisica _open-source_
 
@@ -74,16 +74,16 @@ Come esempio, immaginiamo che esista una religione chiamata: *Buonismo*
 i cui dogmi siano:
 
 <ol class="dogmi">
-    <li>Dio esiste
-    <li>Dio ha solo proprietà positive
-    <li>Dio ha creato l'Universo
+	<li>Dio esiste
+	<li>Dio ha solo proprietà positive 
+	<li>Dio ha creato l'Universo
 </ol>
 
 Partendo da questi assiomi (non dimostrabili) e sapendo che l'Uomo fa
 parte dell'Universo, i Buonisti deducono che:
 
 <ol class="dogmi" start="4">
-    <li> Dio ha creato l'Uomo
+	<li> Dio ha creato l'Uomo
 </ol>
 
 Certi che la vita sia un dono di Dio all'Uomo e che Dio ha solo
@@ -102,8 +102,8 @@ Se però si domandasse allo stesso individuo:
 
 <ol class="domande" start="4">
 <li ><a name="domanda-D"></a>
-    Se Dio è buono, giusto e misericordioso, perché nell'Universo
-    da Lui creato esistono stupratori, omicidi e malattie?
+	Se Dio è buono, giusto e misericordioso, perché nell'Universo 
+	da Lui creato esistono stupratori, omicidi e malattie?
 </ol>
 
 il povero Buonista non saprebbe cosa rispondere, perché per farlo
@@ -140,15 +140,15 @@ soggetto della domanda [B](#domanda-B).
 Abbiamo visto che i tre assiomi del Buonismo:
 
 <ol class="dogmi">
-    <li>Dio esiste
-    <li>Dio ha solo proprietà positive
-    <li>Dio ha creato l'Universo
+	<li>Dio esiste
+	<li>Dio ha solo proprietà positive 
+	<li>Dio ha creato l'Universo
 </ol>
 
 pur nella loro semplicità, diventano incoerenti se li si confronta con
 la natura percepibile dell'Universo e della vita.
 
-Ciò vuol dire che il modello logico/esistenziale del Buonismo, così com'è,
+Ciò vuol dire che il modello logico/esistenziale del Buonismo, così com'è, 
 non funziona; o meglio: che funziona solo in una percentuale limitata di casi.
 
 Un buonista non può ammetterlo, perché diventerebbe un eretico, ma noi
@@ -185,7 +185,7 @@ accettabile.
 Sì, d'accordo, saremo condannati a vivere in un luogo dove esistono
 dolore e morte, ma solo per i pochi anni che passiamo su questa Terra;
 poi tutto si sistemerà.
-<br>
+<br>  
 Fra le tre, quest'ultima è l'ipotesi più appetibile, ma solo se
 l'uomo è in possesso di un'anima, ovvero di uno spirito che condivida
 parte dell'essenza di Dio e che si riunirà a Lui dopo la morte.
@@ -208,9 +208,9 @@ Siccome, di fatto, non possiamo esserne certi, dobbiamo imporre questa
 condizione come dogma:
 
 <ol class="dogmi" start="4">
-    <li>  L'uomo ha un'anima.
+	<li>  L'uomo ha un'anima.
 </ol>
-
+ 
 Questo piccolo atto di fede ci permette di rispondere senza esitazione
 alla domanda [D](#domanda-D):
 
@@ -223,7 +223,7 @@ conseguenza, la probabilità di generare errori o incongruenze:
 
 <ol class="domande" start="6">
 <li >
-    Se l'Universo è stato creato dal Diavolo, perché l'Uomo, che fa
+	Se l'Universo è stato creato dal Diavolo, perché l'Uomo, che fa
     parte dell'Universo, dev'essere stato creato da Dio?
 </ol>
 
@@ -240,13 +240,13 @@ dire: "A Shanghai esiste un uomo di nome Mario"; se Dio c'è ed è
 buono, ma se non ha alcuna relazione con l'Universo e la nostra
 esistenza, a noi, cosa importa?
 
-Se però eliminiamo il secondo precetto, (*Dio ha solo proprietà positivie*)
+Se però eliminiamo il secondo precetto, (*Dio ha solo proprietà positivie*) 
 tutto magicamente si aggiusta:
 Dio esiste, ha creato l'Universo e l'Uomo, ma non è possibile dire se
 sia buono o meno, perché è improprio classificare l'essenza del
 creatore con gli attributi del creato; sarebbe come se i *byte* di un
 computer si chiedessero se il Programmatore valga I o 0.
-<br>
+<br>  
 Senza la premessa, conseguente al secondo precetto: *Se Dio è buono,
 giusto e misericordioso*, la famigerata domanda [D](#domanda-D) non è
 più contraddittoria: se qualcuno ce la facesse, adesso, risponderemmo:
@@ -266,10 +266,10 @@ non lo sia, perché in effetti, non lo possiamo sapere:
 
 <ul class="domande">
 <li >
-    Austria, 1889; a séguito di complicazioni post-parto, muore il figlio di
-    un doganiere: Dio è stato buono o cattivo?
-<li>
-    Il doganiere si chiama Alois Hitler. Dio, è stato buono o cattivo?
+	Austria, 1889; a séguito di complicazioni post-parto, muore il figlio di
+	un doganiere: Dio è stato buono o cattivo?
+<li>  
+	Il doganiere si chiama Alois Hitler. Dio, è stato buono o cattivo?
 </ul>
 
 Dire che Dio esiste e che ha creato l'Universo è ragionevole:
@@ -278,7 +278,7 @@ un signore con la barba bianca, almeno un fenomeno o una funzione - che
 possiamo considerare come suo Principio Creatore. Al contrario, dire che
 questo principio creatore sia «buono» è ipotetico; riflette una nostra
 speranza, che non dev'essere necessariamente vera.
-<br>
+<br>  
 È sbagliato proiettare le proprie speranze o le proprie convinzioni nei
 dogmi di una religione.
 È sbagliato, ma frequentissimo, anche fra i non credenti. Come abbiamo
@@ -306,14 +306,14 @@ Non è solo una questione di carta intestata: dalla presunta bontà di
 Dio, la dottrina buonista deriva l'obbligo per l'Uomo di essere
 altrettanto buono; mancando il precetto decadrebbe anche l'obbligo e si
 aprirebbero le porte all'anarchia.
-<br>
+<br>  
 Stando così le cose, abbiamo due possibili scelte: o agiamo da logici e
 privilegiamo la coerenza del nostro modello, anche a costo di
 giustificare azioni esecrabili da parte di chi non si sente più in
 dovere di essere buono, o agiamo da pastori e privilegiamo la sicurezza
 del nostro gregge, anche a costo di sentirci dire che le nostre
 convinzioni sono contraddittorie.
-<br>
+<br>  
 Se scegliamo la logica, però, saremo costretti a scinderci dai Buonisti;
 la nostra dottrina non sarà un'evoluzione del Buonismo, ma sarà al
 contrario una dottrina a sé stante, che ha dei punti di contatto con il
@@ -322,7 +322,7 @@ I punti di attrito e gli scismi provocano sempre dei conflitti e così,
 il nostro tentativo di rendere migliore la religione Buonista avrà
 ottenuto un risultato diametralmente opposto a quello che ci eravamo
 prefissi.
-<br>
+<br>  
 C'è un modo per evitarlo?
 
 ### Imparare dagli errori
@@ -350,11 +350,11 @@ dovrebbe quindi:
 
 <ol class="da-fare">
 <li>
-    limitare il numero dei dogmi;
+	limitare il numero dei dogmi;
 <li>
-    limitare gli elementi metafisici e le accettazioni per fede;
+	limitare gli elementi metafisici e le accettazioni per fede;
 <li>
-    non proporsi come Unica Verità Incontestabile, ma come
+	non proporsi come Unica Verità Incontestabile, ma come
     un'approssimazione sicuramente incompleta e perfettibile della
     Verità;
 <li>riconoscere le contraddizioni della dottrina e analizzarle
@@ -384,7 +384,7 @@ collaborazione di diversi programmatori che rendono disponibile il
 frutto del loro lavoro a titolo gratuito, pubblicando anche il codice
 sorgente del sistema.
 
-Rispetto al software cosiddetto: *proprietario*, ovvero il software realizzato da una persona o da una società che ne detiene i diritti, il software *open-source* ha diversi lati positivi.
+Rispetto al software cosiddetto: *proprietario*, ovvero il software realizzato da una persona o da una società che ne detiene i diritti, il software *open-source* ha diversi lati positivi. 
 Il primo è che non si paga, ma questo non ha grossa rilevanza nel caso di una religione o di una metafisica. Gli altri lati positivi del paradigma *open-source* che si possono applicare anche nel nostro caso sono:
 
 -   **libertà:** non impone legàmi con uno specifico fornitore o a uno
@@ -405,12 +405,12 @@ dell'opera.
 I Musicisti, i teatranti e, in parte, i cineasti sono un po' più
 fortunati, perché possono apportare più facilmente delle modifiche alle
 loro opere, ma si tratta comunque di eventi che accadono di rado.
-<br>
+<br>  
 Al contrario, la (buona) produzione di software ha il vantaggio di essere in continua evoluzione.
 Un software può essere *stabile*, ovvero non avere difetti noti, ma non è mai finito, completo, *perfetto*; sia perché l'utilizzo potrebbe rivelare dei difetti sfuggiti alla fase di test, sia perché delle variazioni del contesto di utilizzo potrebbero richiedere delle modifiche al sistema.
 
 Il (buon) software viene quindi costantemente aggiornato e le diverse versioni di uno stesso prodotto sono numerate in maniera progressiva con dei codici composti da tre numeri separati da punti (p.es. *1.4.3*) che indicano la versione *major*, la versione *minor e* la *patch*.
-<br>
+<br>  
 La versione *major* viene incrementata ogni volta che si apportano delle
 drastiche modifiche al software, rendendolo incompatibile con le
 versioni precedenti
@@ -421,11 +421,11 @@ compatibile con le versioni precedenti.
 
 Il numero di *patch* è incrementato ogni volta che si apportano delle
 modifiche o delle correzioni anche minime al sistema.
-<br>
+<br>  
 La *major version zero *(0.y.z) è destinata allo sviluppo iniziale,
 quando il software non è ancora stabile e tutto può cambiare in ogni
 momento.
-<br>
+<br>  
 Il versionamento semantico ha anche [altre regole](https://semver.org), ma per quelli che sono
 i nostri scopi possiamo fermarci qui.
 
@@ -455,7 +455,7 @@ La tabella seguente riporta un possibile versionamento delle grandi religioni mo
 
 ### Versionamento del C'hi++
 
-Il C'hi++ è, in un certo senso, monoteistico, ma non è una religione, quindi deve essere sottoposto a un versionamento autonomo.
+Il C'hi++ è, in un certo senso, monoteistico, ma non è una religione, quindi deve essere sottoposto a un versionamento autonomo. 
 Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero:
 
 | n. | anno | descrizione | changelog
@@ -468,13 +468,12 @@ Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero
 0.3.2 | 2018 |  Allineamento         | Allineamento delle versioni git con quelle del Manifesto.
 0.4.0 | oggi |  Manifesto Markdown | Conversione del Manifesto in formato MArkdown
 
-
 Già da queste poche righe è possibile vedere alcuni benefici
 dell'approccio open-source alla speculazione filosofica.
 
 Nella versione 0.1.0 del C'hi++, la figura che definisco: *Immancabile
 Testa di Pera* era un elemento negativo, assimilabile al Diavolo o alla
-Discordia di Empedocle.
+Discordia di Empedocle. 
 Successivamente, però, ho capito che questa
 visione delle cose era la proiezione di un mio desiderio/speranza e sono
 passato a un modello meno giudicante, in cui i due Enti che generano
@@ -499,10 +498,10 @@ Release/0.1.1
 -------------
 
 A Giugno del 2007 scrissi un documento dal titolo: *Sostiene Aristotele*
-che possiamo considerare la versione 0.1.1 del C'hi++.
+che possiamo considerare la versione 0.1.1 del C'hi++. 
 Lo riporto di seguito, senza modifiche al testo originale, anche se non sono più d'accordo su alcune affermazioni:
 
-<div class="aristotele">
+<div class="citazione">
 <p>Sostiene Aristotele (e per fortuna lo sostiene nella sesta pagina de: “La metafisica”, ché se l’avesse sostenuto, che so, a pagina quattrocentosettantadue, chissà se l’avrei mai saputo) che la ricerca della conoscenza, “deve in qualche modo portarci a uno stato contrario a quello nel quale si dà inizio alle ricerche”. </p>
 <p>Ci si meraviglia di qualcosa, se ne indagano le cause e, una volta che le si è scoperte, ciò che prima meravigliava appare come qualcosa di inevitabile.</p>
 <p>L’oggetto di studio, nel caso specifico, è l’Universo.</p>
@@ -515,7 +514,7 @@ Lo riporto di seguito, senza modifiche al testo originale, anche se non sono pi�
 <p>Mi sono chiesto allora se sarebbe stato possibile dare una spiegazione dell’Universo senza introdurre elementi esterni a quelli che conosciamo.</p>
 <p>In altre parole, se era possibile creare una metafisica senza elementi metafisici.</p>
 <p>Era possibile.</p>
-
+ 
 <p>Sostiene Aristotele (sempre nelle prime pagine, per fortuna) che le scienze più rigorose sono quelle che richiedono il numero minore di premesse.</p>
 <p>La cosa mi conforta, perché la mia ipotesi richiede solo tre premesse per funzionare a livello “base”, e quattro per una visione un po’ più appetibile delle cose.</p>
 <p>I tre dogmi principali della mia “religione” sono:</p>
@@ -532,7 +531,7 @@ Lo riporto di seguito, senza modifiche al testo originale, anche se non sono pi�
 <p>Dogma numero due: l’Universo si espande.</p>
 <p>Questo dogma, se non me l’avessero detto, non l’avrei mai potuto sapere, ma va bene lo stesso.</p>
 <p>Allo stato attuale delle nostre conoscenze, tutto lascia supporre che l’Universo fosse, inizialmente, un’unica cosa che, per ragioni non ancora definite(1), è scoppiata disseminando i suoi pezzi in ogni dove.I pezzi si sono raggrumati in stelle e pianeti, permettendoci quindi di formulare il...</p>
-<br />
+<br /> 
 <p>Dogma numero tre: se lasci andare un peso, quello ti finisce su un piede.</p>
 <p>Qui ho un po’ barato, buttandola in caciara, perché questo, dei tre dogmi, è quello meno comprovabile.</p>
 <p>O meglio, a livello locale (che è appunto quello da me utilizzato nella formulazione), è innegabile il fatto che tutto ciò che ci circonda sia sottoposto alla forza di gravità (se lo lasci andare, il martello ti cade sul piede e anche la Terra, o prima o poi, “cadrà” sul Sole), mentre è solo possibile che le diverse parti dell’Universo potranno, o prima o poi, subire l’attrazione l’una dell’altra e ricompattarsi in un Uno.</p>
@@ -567,17 +566,17 @@ Lo riporto di seguito, senza modifiche al testo originale, anche se non sono pi�
 <p>È la differenza, drastica, che passa fra l’agire male e l’agire per il male.</p>
 <p>(Anche qui, devo semplificare, ma ho delle dimostrazioni per tutte queste affermazioni...)</p>
 <p>C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musashi: </p>
-
+ 
 <blockquote>
     Non bisogna interferire nel funzionamento dell’Universo,
     ma prima è necessario capire quale sia,
     il funzionamento dell’Universo
 </blockquote>
-
+ 
 <p>Che somiglia molto a una frase di Jacopone da Todi:</p>
-
+ 
 <blockquote>
-    Prima devi sape' perché stai ar monno<br />
+    Prima devi sape' perché stai ar monno<br /> 
     quanno sai er perché <br />
     te devi impara' a stacce <br />
  </blockquote>
@@ -610,64 +609,177 @@ Lo riporto di seguito, senza modifiche al testo originale, anche se non sono pi�
 <p>Ne faccio un breve riassunto:</p>
 <blockquote>L’Universo è il Paradiso: siamo noi, che lo utilizziamo male, trasformandolo nell'Inferno.</blockquote>
 <p>Questa visione ha il pregio di funzionare anche solo con le quattro dimensioni che conosciamo ed è perfettamente compatibile con tutte le principali religioni, oltre che con Imagine di John Lennon.</p>
-<blockquote>
+<blockquote> 
 Imagine there's no heaven<br/>
 It's easy if you try<br/>
 No hell below us<br/>
 Above us only sky<br/>
-</blockquote>
+</blockquote> 
 <p>Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Universo e siamo noi, con le nostre azioni, a decidere in quale dei due vivere.</p>
 </div>
 
 ## Release/0.2.0
-<<<<<<< HEAD
 
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
 programmazione scritto nello stile dei libri di filosofia giapponesi del
 XVII secolo o, anche, un libro di filosofia nello stile dei classici
-giapponesi del XVII secolo, scritto come un manuale di programmazione.
+giapponesi del XVII secolo, scritto come un manuale di programmazione.  
 Questa ambivalenza è presente anche nel titolo, che è un gioco di parole
 fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il
 linguaggio di programmazione chiamato *C++*.
-<br />
-=======
+<br />  
+Il tono della narrazione è generalmente serio, ma non sempre.  
+Ashvaghosha, nell'introduzione alla *Saundarananda*, afferma:
 
-Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
-programmazione scritto nello stile dei libri di filosofia giapponesi del
-XVII secolo o, anche, un libro di filosofia nello stile dei classici
-giapponesi del XVII secolo, scritto come un manuale di programmazione.
-Questa ambivalenza è presente anche nel titolo, che è un gioco di parole
-fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il
-linguaggio di programmazione chiamato *C++*.
+> Questa composizione sul tema della liberazione è stata composta in forma poetica non per procurare piacere, ma per vincere nei lettori la propensione a distrarre la mente; e se ho trattato in esso temi diversi dalla liberazione è stato per renderla piacevole, così come una medicina amara si mescola con il miele per renderla bevibile.
 
->>>>>>> ba7ff38b6d0862b13a79f10153c2eb11477b2a1f
+Fatte le debite proporzioni, questo vale anche per C'hi++: molte affermazioni del Maestro sono ironiche e lo stesso nome scelto per gli elementi costitutivi dell'Universo (gli _spazioni_) e per la cosmogonia che ne deriva (lo *Spazionismo*) ha chiaramente un intento auto/ironico.  
+Anche i riferimenti alla disciplina estetica della disposizione dei panni sullo stendino, l'*Ikebarba*, hanno lo scopo di stemperare la seriosità del testo, allegerendone la lettura.
+
+### Mitopietica del C'hi++
 Il testo riporterà gli insegnamenti che un vecchio maestro tramanda al
 suo giovane allievo sulla programmazione in *C'hi++*, ovvero il
 linguaggio con cui è stata scritta l'applicazione che gestisce
 l'Universo.
 
-I primi tre capitoli inquadreranno "storicamente" il contesto in cui si
-svolge l'azione. Nei capitoli dal 4 al 12 sarà descritto il linguaggio
-C++, facendo dei paralleli fra i suoi costrutti sintattici e i diversi
-assiomi filosofici (per esempio, la ridefinizione degli operatori logici
-del C++ può essere paragonata alla relatività dei concetti di "vero" e
-"falso", postulata da Hobbes). Il tredicesimo capitolo sarà dedicato al
-*debug*, ovvero alla correzione degli errori del codice. Nel
-quattordicesimo e ultimo capitolo, gli stessi concetti visti in
-precedenza per il C++ saranno applicati al C'hi++ e, di conseguenza,
-all'intero Universo.
+<div class="citazione">
+Non riuscivo a distogliere lo sguardo dallo schermo, ero come ipnotizzato da quello strano codice che potevo capire solo in parte. In quelle sequenze di istruzioni c’era qualcosa che non avevo mai visto prima: un ritmo, una sorta di indefinibile bellezza di cui mi ero innamorato a prima vista. Chiesi al Maestro di insegnarmi il C++.<br/>
+- E perché mai? ci sono linguaggi molto più facili da usare.<br/>
+Gli spiegai che non si trattava di un interesse tecnologico, ma estetico e lui restò in silenzio per qualche secondo, considerando quello che avevo detto.<br/>
+- Qual’è il dovere di un programmatore? chiese poi.<br/>
+Lo pregai di definire meglio la sua domanda.<br/>
+- Torna qui domani, se mi saprai dire qual'è il dovere di un programmatore, ti insegnerò il C++.<br/> 
+Passai tutta la notte a meditare su quella strana domanda e la mattina dopo mi presentai al Maestro. Dissi che secondo me il dovere di un programmatore era quello di scrivere del buon codice. Il Maestro non distolse nemmeno lo sguardo dallo schermo e disse:<br/>
+- Torna qui domani, se mi saprai dire cosa vuol dire scrivere del buon codice, io ti insegnerò il C++. <br/>
+Com'è facile intuire, anche il giorno dopo e per diversi giorni a seguire il Maestro trovò il modo di rimandare l’inizio del mio tirocinio con domande ancora più specifiche che andavano a colpire un’imprevista lacunosità delle mie risposte.
+Analizzai ogni possibile aspetto della produzione del software, dall’utilizzo delle risorse di sistema alle implicazioni sociali dell’incremento dell'occupazione derivante dall’evoluzione dei programmi, ma non ci fu nulla da fare: ogni volta il Maestro riuscì a trovare una scappatoia per venire meno al suo impegno.<br/> 
+Alla fine non ne potei più. Esasperato, dissi che ne avevo abbastanza di quella sua ostinata capziosità: per quanto io potessi essere specifico nelle mie risposte, ci sarebbe sempre stato un margine di indeterminazione. Se voleva insegnarmi il C++ doveva iniziare quel giorno stesso. Il Maestro mi fissò e, sorridendo, spense il suo computer.<br/>
+- No, per oggi basta. Vieni domani per la seconda lezione.<br/>
+<br/>
+Negli ultimi mesi la salute del Maestro è peggiorata e così gli ho chiesto il permesso di trascrivere i suoi insegnamenti per poterli trasmettere a mia volta ad altri discepoli.<br/>
+Con mia grande sorpresa, ha accettato.
+</div>
+### Struttura del testo
+I primi tre capitoli inquadrano "storicamente" il contesto in cui si
+svolge l'azione, un possibile futuro in cui gli informatici sono diventati una casta sacerdotale:
 
+> la società dipendeva ormai totalmente dai computer e i computer dipendevano dagli informatici; se un giorno avessero deciso di coalizzarsi e di scioperare, avrebbero messo il Paese, se non il mondo intero, in ginocchio.  
+> Le psicopatologie tipiche degli informatici, la loro incapacità di gestire, se non addirittura di concepire una vita sociale, rendevano questa ipotesi molto poco probabile, ma era comunque un rischio troppo grosso per essere ignorato.   
+Al contrario, l’indottrinamento degli informatici, la loro segregazione in una casta con forti componenti mistico-religiose, li avrebbero tenuti lontani dalle lusinghe dei sindacati e avrebbero reso l’ipotesi di uno sciopero improbabile quanto l’ipotesi di uno sciopero dei sacerdoti.
 
-## Google Maps
-In questi giorni sto leggendo la *Bhagavad-Gita*[^5].
-Alcuni passi mi hanno ricordano le affermazioni che ho fatto nel
-testo; per esempio, sull'agire "bene":
+Nei capitoli seguenti sarà descritto il linguaggio C++, facendo dei paralleli fra i suoi costrutti sintattici e alcuni concetti filosofici. 
+Riporto di seguito alcuni esempi, anche si tratta ancora di appunti e non di un testo definitivo: 
+<br />  
+####Commenti al codice 
+i *Post-it* di cui parlavo prima, una sorta di memoria storica dell'Universo:
+
+> Esistono, dei commenti, nell'Universo? Qualcosa che ci permetta, da un'escuzione e l'altra, di tenere traccia di ciò che è successo nelle esecuzioni precedenti?
+
+#### Sistemi di numerazione
+Indipendenza del concetto di _quantità_ dal numero con cui viene rappresentata:
+
+> C'è qualcosa, in tutto questo, sulla quale vorrei che tu soffermassi la tua attenzione.
+I numeri descrivono una quantità, non sono una quantità.
+La quantità di fiammiferi che vedi qui sul mio tavolo, rimane la stessa sia che tu la chiami 4, 100 o IV, così come rimarrebbe la stessa se tu la chiamassi five o cinco.
+La quantità esisteva da prima che esistessero i numeri e gli sopravviverà.
+I numeri, li abbiamo inventati noi; la quantità, no. 
+
+#### Linguaggi di programmazione
+Distinzione fra i linguaggi _compiliati_ (che producono software pronto all'elaborazione da parte del computer) e i linguaggi _interpretati_ (che necessitano di un sistema di conversione del proprio codice in linguaggio macchima).  
+Parallelo con i differenti tipi di mediazione delle Chiese nella relazione con Dio; per esempio, Cattolici e Protestanti.
+
+#### Operatori
+Operatore *delete* (che elimina dalla memoria del sistema un dato non più necessario) e accettazione della morte.  
+Lao-Tze, *Tao-Tê-Ching*:
+
+> Infatti gli esseri fioriscono e (poi) ognuno torna alla propria radice. Tornare alla propria radice si chiama la tranquillità; ciò vuol dire deporre il proprio compito. Deporre il proprio compito è una legge costante. Colui che conosce questa legge costante si chiama illuminato. Colui che non conosce questa legge costante agisce da stolto e attira su di sé la disgrazia.  
+
+####Valori booleani
+È una piccola parte del linguaggio, ma una miniera di possibili parallelismi specie sulla relatività dei concetti di *vero* e *falso*:
+
+>  il concetto stesso di Vertià è inconoscibile perché, per essere definito, deve prima essere valutato e non è possibile valutarlo se non so cosa sia "vero".
+<br />  
+> Russell sostiene che la condizione di "vero" o di "falso" è uno stato dell'organismo, determinato da condizioni esterne all'organismo.
+Questo è vero anche per i computer: "vero" e "falso" sono stati possibili per un'istruzione e dipendono per lo più da cause esterne all'istruzione stessa.  
+La cosa interessante, in questo caso, è che "vero" e "falso" sono anche delle convenzioni che esulano del tutto dal contesto specifico del sistema.  
+Per Access, "falso" è -1; per le prime versioni di MySQL è 'f'; per Postgres o Oracle, è 0.  
+Il computer, però, non ha IN SE' il concetto di "vero" o di "falso", ma solo l'associazione del valore booleano "false" a una determinata sequenza di bit.
+Il concetto di "vero" e di "falso", quindi, è un valore simbolico che NOI inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è propio del nostro mondo.  
+Da questo punto di vista, potremmo essere d'accordo con William James, quando dice che: 
+>>    Un'idea è "vera" fintanto che credere in essa è utile per le nostre vite.  
+
+####Classi e istanze
+Il Maestro dirà:
+
+> Se vuoi capire le classi, devi leggere Aristotele.
+
+ed è vero: per parlare delle classi si può attingere a piene mani da Aristotele. 
+Per esempio, può essere utilizzato per spiegare sia il le funzoni virtuali pure (essenza), sia la differenza fra metodi e dati membro di una classe (anima e corpo) sia la differenza fra dichiarazione e istanza di una classe:
+
+> La differenza fra universale e sostanza, in Aristotele è la stessa che c'è fra classe e istanza in C++, ed è corretto dire che un termine universale non possa essere il nome di una sostanza, ma solo il nome della sua classe; non a caso, l'istruzione:
+
+>>class Uomo {};   
+>>Uomo Uomo; 
+
+> dà errore.. :-)  
+
+Per l'ereditarietà delle classi saranno possibili paralleli con l'Etica Nicomachea:
+
+> Un padre può ripudiare suo figlio, se è cattivo, ma un figlio non può ripudiare suo padre perché gli deve più di quanto non sia in grado di pagargli e in particolare gli deve l'esistenza.
+ 
+####Debug 
+Il penultimo capitolo sarà dedicato al *debug*, ovvero alla correzione degli errori del codice.
+La citazione è tratta dal *Breviario di estetica*, di Benedetto Croce:
+
+> Un sistema è una casa che, subito dopo costruita e adornata, ha bisogno (soggetta com’è all’azione corroditrice degli elementi) di un lavorio più o meno energico, ma assiduo, di manutenzione, e che a un certo momento non giova più restaurare e puntellare, e bisogna gettare a terra e ricostruire dalle fondamenta. Ma con siffatta differenza capitale: che, nell’opera del pensiero, la casa perpetuamente nuova e sostenuta perpetuamente dall’antica, la quale, quasi per opera magica, perdura in essa.  
+
+#### C'hi++
+Nell'ultimo capitolo gli stessi concetti visti a proposito del C++ saranno applicati al C'hi++ e di conseguenza all'intero Universo: 
+ 
+> Il C'hi++ è allo stesso tempo un linguaggio di programmazione, un atteggiamento mentale e un modo di vivere. 
+Chi pratica il C'hi++ scrive codice come se stesse vivendo e vive come se stesse scrivendo del codice.
+
+> Vivere è come scendere in canoa lungo un fiume.
+Affannarsi a risalire la corrente è inutile e infruttuoso, perché il fiume è più forte di noi e non si stanca mai.
+Lasciarsi andare alla corrente è pericoloso, perché ci si potrebbe parare davanti un ostacolo e noi non avremmo modo di evitarlo.
+È necessario quindi remare solo quel tanto che ci permette di essere più veloci della corrente e di schivare gli ostacoli che, di volta in volta, si presentano sul nostro cammino.
+
+> Similmente, scrivere del buon codice significa scrivere solo il codice necessario a raggiungere lo scopo che ci si è prefissi. Aggiungere una sola virgola in più è sbagliato, perché rende più difficile il debug e più lento il programma.
+Chi pratica il C'hi++ applica lo stesso principio alla sua vita, e compie solo le azioni necessarie, ignorando tutto ciò che è superfluo.
+Capire quali sono le azioni necessarie è semplice, così com’è semplice, quando si naviga su un fiume, capire qual è la direzione della corrente.
+
+Nell'ultimo capitolo sarà definita anche la cosmogonia del C'hi++, ovvero lo Spazionismo.
+
+### Spazionismo
+Lo Spazionismo è l'evoluzione delle idee abbozzate in *Sostiene Aristotele*.  
+Lì, il fenomeno era descritto a livello macroscopico: 
+
+1. l'Uno Primigenio esplode, generando l'universo; 
+2. l'Universo si espande; 
+3. l'Universo si contrae tornando all'Uno; 
+4. tutto ricomincia.
+
+Lo Spazionismo descrive lo stesso processo, ma a livello più basso.
+Nell'ultimo capitolo del libro, il Maestro spiegherà al suo allievo che l'Universo è costituito da *Spazioni*, elementi infinitesimali dotati di esistenza potenziale.
+Così come lo schermo di un computer è costituito da una matrice bidimensionale di pixel, generalmente spenti, ma capaci di accendersi se colpiti da un raggio di luce, così l'Universo è costituito da una matrice tridimensionale di spazioni, capaci di esistere se ricevono energia.
+<br />  
+La sequenza vista sopra, riletta in chiave spazionista, diventa:  
+
+1. l'Uno Primigenio esplode a causa[^5] di una Forza che ne disperde l'Energia nello spazio;
+2. l'Energia si spande per l'Universo e, conferendo esistenza agli spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi e solidi che noi conosciamo, dall'elio della nebulosa di Wolf–Rayet alla nostra maestra delle Elementari;
+4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante[^6] della Storia, che a sua volta genererà nuove esperienze e nuovi Post-It;
+4. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
+5. tutto ricomincia.
+
+## Una Google Maps mistica
+In questi giorni sto leggendo la *Bhagavad-Gita*[^7].
+Alcuni passi mi hanno ricordano le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire "bene":
 
 > Tu hai diritto all'azione, non ai suoi frutti; non sia mai perciò il
 > frutto dell'azione a spingerti ad agire, e nemmeno devi essere
 > attaccato alla non-azione.
 
-sulla ciclicità dell'Universo:
+sulla natura dell'Universo:
 
 >Alla fine del proprio ciclo d'esistenza, un mondo collassa su se stesso,
 riassorbendo in una massa tenebrosa ogni forma di manifestazione: esseri
@@ -677,6 +789,10 @@ sovrani del caos residuale, ogni potenzialità esce dallo stato virtuale
 precedente per manifestare nel nuovo mondo le proprie caratteristiche e
 per ricoprire qui il ruolo che gli compete, in conformità al dharma
 ripristinato.
+<br />  
+> I cicli cosmici sono periodi temporali chiamati Manvantara, suddivisi al proprio interno in quattro ere o *yuga*, ciascuna caratterizzata da una particolare qualità dell’esistenza. Si tratta di un ritorno periodico a condizioni di vita non uguali ma analoghe, da un punto di vista qualitativo, a quelle dei cicli precedenti, una successione di quattro ere che ricorda, su scala ridotta, l’alternarsi delle quattro stagioni.  
+<br /> 
+> Il Sāṁkhya, la dottrina su cui si fonda lo Yoga, parla di due principi che, interagendo tra loro, manifestano l’intero universo con tutti gli esseri viventi e gli oggetti inanimati che lo popolano: Prakṛti, il polo materiale e femminile, e Puruṣa, quello spirituale e maschile; nell’essere umano Prakṛti costituisce il corpo e la mente, che diventano la dimora dell’anima individuale (puruṣa). 
 
 su quelli che io ho definito i *Post-It*:
 
@@ -693,13 +809,23 @@ una predisposizione innata che lo induce, nel bene come nel male, ad un
 comportamento analogo a quello che ha tenuto in passato, creando un
 circolo vizioso (o virtuoso) che si autoalimenta.
 
-È possibile trovare delle analogie anche nel poema iraniano *Mantiq al-Tayr* [^6].
+Ho trovato delle analogie ai precetti del C'hi++ anche nel poema iraniano *Mantiq al-Tayr*[^8].  
 
 > Tutto è un'unica sostanza in molteplici forme, tutto è un unico discorso in diverse espressioni.
-<br />
+<br />...   
 > Egli sfugge a ogni spiegazione, a qualsiasi attributo. Di Lui soltanto una pallida idea ci è concessa, dare compiuta notizia di Lui è impossibile. Per quanto bene o male si parli di Lui, in realtà d’altri non si parla che di se stessi.
-<br />
+<br />...  
 > O Creatore, tutto il male o il bene che feci, in verità lo feci solo a me stesso.
+
+Cito questi due testi perché non li conoscevo quando ho cominciato a formulare la mia teoria e quindi non è possibile che abbiano influenzato le mie affermazioni, al contrario di testi che conoscevo già, come il *Tao-tê-ching* o *Eureka*, di Poe.  
+Ho trovato altre analogie in frasi di filosofi greci come Eraclito, Zenone o Anassimandro, ma non ho avuto ancora modo di approfondirle.
+<br />  
+Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista.  
+Il Paradiso è l'Uno primigenio, dove i due principii *Prakṛti* (Eva) e *Puruṣa* (Adamo) sono uniti a Dio.
+Quando Prakṛti, con o senza la collaborazione di Puruṣa, altera lo stato di quiete dell'Uno, causandone la disgregazione, l'Energia dell'Uno è proiettata nello spazio, portando con sé Prakṛti e Puruṣa che da quel momento in poi devono affrontare le difficoltà e i dolori proprii del mondo materiale.  
+<br />
+È interessante vedere come un modello teorico, nato da presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
+
 
 
 ## Note
@@ -714,7 +840,14 @@ circolo vizioso (o virtuoso) che si autoalimenta.
 
 [^4]: *Application Program Interface*: l'insieme delle regole per
     l'utilizzo del sistema
+    
+[^5]: E non: *per colpa*, come nella versione 0.1.1
 
-[^5]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni.
+[^6]: L'utilizzo del termine scacchistico è intenzionale.
 
-[^6]: Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
+[^7]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni. 
+ 
+[^8]: Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
+
+[^9]: Alla voce *Diavolo*, il Vocabolario Treccani riporta: s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. «calunniatore» (der. di διαβάλλω «gettare attraverso, calunniare»)* 
+
