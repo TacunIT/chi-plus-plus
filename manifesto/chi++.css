@@ -67,30 +67,29 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-body>*:first-child {
-    color: #900;
-    font-size: 1.5rem;
-    margin-top: 0;
-    padding-top: 0;
-}
-
 h1 {
-    color: #060;
     font-size: 2.5rem;
+    counter-reset: h2;
+    color: #060;
 }
 
 h2 {
-    color: #666;
     font-size: 2rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
+    counter-reset: h3;
+    color: #600;
 }
 
 h3 {
     font-size: 1.2rem;
+    counter-reset: h4;
+    color: #060;
 }
 
 h4 {
     font-size: 1.1rem;
+    counter-reset: h5;
+    color: #666;
 }
 
 h5 {
@@ -100,30 +99,6 @@ h5 {
 h6 {
     color: #777777;
     font-size: 0.9rem;
-}
-
-h1 {
-    counter-reset: h2;
-    color: #060;
-}
-
-h2 {
-    counter-reset: h3;
-    color: #600;
-}
-
-h3 {
-    counter-reset: h4;
-    color: #060;
-}
-
-h4 {
-    counter-reset: h5;
-    color: #666;
-}
-
-h1:before {
-
 }
 
 h2:before {
@@ -145,8 +120,44 @@ p {
     text-align: justify
 }
 
+/**
+ *  Copertina del documento
+ *  Contiene il titolo, l'oggetto e i dati dell'autore
+ */
+SECTION.cover {
+    margin:none;
+    padding: 20% 1rem 0 ;
+    height:200mm;
+    counter-reset: h2;
+}
+
+SECTION.cover H2  {
+    font-size: 1.5rem;
+    padding: 0;
+    color: #060;
+}
+
+SECTION.cover H2:before {
+    content: none;
+}
+
+SECTION.cover DIV.dati {
+    margin:10% 0;
+}
+
+SECTION.cover DIV.dati LABEL {
+    min-width: 6rem;
+    display: inline-block;
+    font-weight: bold;
+}
+
+SECTION.cover DIV.dati LABEL:after {
+    content: ':';
+}
+
+
 /* Citazione in testa */
-P.citazione      { font-style:italic; margin-top:3rem; padding-left:50%; text-align:right }
+P.citazione      { font-style:italic; font-size: 0.9rem; margin:3rem 0; padding-left:40%; text-align:right }
 P.citazione SPAN { font-style:normal }
 
 p.firma {
