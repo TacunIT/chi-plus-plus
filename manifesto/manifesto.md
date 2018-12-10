@@ -628,8 +628,6 @@ Questa ambivalenza è presente anche nel titolo, che è un gioco di parole
 fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il
 linguaggio di programmazione chiamato *C++*.
 <br />  
-[TODO: la divinità è il top di gamma della tecnologia]
-<br />  
 Il tono della narrazione è generalmente serio, ma non sempre.  
 Ashvaghosha, nell'introduzione alla *Saundarananda*, afferma:
 
@@ -684,8 +682,7 @@ Indipendenza del concetto di _quantità_ dal numero con cui viene rappresentata:
 I numeri descrivono una quantità, non sono una quantità.
 La quantità di fiammiferi che vedi qui sul mio tavolo, rimane la stessa sia che tu la chiami 4, 100 o IV, così come rimarrebbe la stessa se tu la chiamassi five o cinco.
 La quantità esisteva da prima che esistessero i numeri e gli sopravviverà.
-I numeri, li abbiamo inventati noi. 
-La quantità, no. 
+I numeri, li abbiamo inventati noi; la quantità, no. 
 
 #### Linguaggi di programmazione
 Distinzione fra i linguaggi _compiliati_ (che producono software pronto all'elaborazione da parte del computer) e i linguaggi _interpretati_ (che necessitano di un sistema di conversione del proprio codice in linguaggio macchima).  
@@ -721,7 +718,8 @@ Per esempio, può essere utilizzato per spiegare sia il le funzoni virtuali pure
 
 > La differenza fra universale e sostanza, in Aristotele è la stessa che c'è fra classe e istanza in C++, ed è corretto dire che un termine universale non possa essere il nome di una sostanza, ma solo il nome della sua classe; non a caso, l'istruzione:
 
->>class Uomo {}; Uomo Uomo; 
+>>class Uomo {};   
+>>Uomo Uomo; 
 
 > dà errore.. :-)  
 
@@ -767,10 +765,11 @@ Così come lo schermo di un computer è costituito da una matrice bidimensionale
 <br />  
 La sequenza vista sopra, riletta in chiave spazionista, diventa:  
 
-1. l'Uno Primigenio esplode a causa[^5] di una Forza che ne disperde l'Energia, _gettandola attraverso_[^6] lo spazio;
+1. l'Uno Primigenio esplode a causa[^5] di una Forza che ne disperde l'Energia nello spazio;
 2. l'Energia si spande per l'Universo e, conferendo esistenza agli spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi e solidi che noi conosciamo, dall'elio della nebulosa di Wolf–Rayet alla nostra maestra delle Elementari;
-3. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
-4. tutto ricomincia.
+4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante[^6] della Storia, che a sua volta genererà nuove esperienze e nuovi Post-It;
+4. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
+5. tutto ricomincia.
 
 ## Una Google Maps mistica
 In questi giorni sto leggendo la *Bhagavad-Gita*[^7].
@@ -780,7 +779,7 @@ Alcuni passi mi hanno ricordano le affermazioni contenute in: *Sostiene Aristote
 > frutto dell'azione a spingerti ad agire, e nemmeno devi essere
 > attaccato alla non-azione.
 
-sulla ciclicità dell'Universo:
+sulla natura dell'Universo:
 
 >Alla fine del proprio ciclo d'esistenza, un mondo collassa su se stesso,
 riassorbendo in una massa tenebrosa ogni forma di manifestazione: esseri
@@ -791,7 +790,9 @@ precedente per manifestare nel nuovo mondo le proprie caratteristiche e
 per ricoprire qui il ruolo che gli compete, in conformità al dharma
 ripristinato.
 <br />  
-> I cicli cosmici sono periodi temporali chiamati Manvantara, suddivisi al proprio interno in quattro ere o *yuga*, ciascuna caratterizzata da una particolare qualità dell’esistenza. Si tratta di un ritorno periodico a condizioni di vita non uguali ma analoghe, da un punto di vista qualitativo, a quelle dei cicli precedenti, una successione di quattro ere che ricorda, su scala ridotta, l’alternarsi delle quattro stagioni.
+> I cicli cosmici sono periodi temporali chiamati Manvantara, suddivisi al proprio interno in quattro ere o *yuga*, ciascuna caratterizzata da una particolare qualità dell’esistenza. Si tratta di un ritorno periodico a condizioni di vita non uguali ma analoghe, da un punto di vista qualitativo, a quelle dei cicli precedenti, una successione di quattro ere che ricorda, su scala ridotta, l’alternarsi delle quattro stagioni.  
+<br /> 
+> Il Sāṁkhya, la dottrina su cui si fonda lo Yoga, parla di due principi che, interagendo tra loro, manifestano l’intero universo con tutti gli esseri viventi e gli oggetti inanimati che lo popolano: Prakṛti, il polo materiale e femminile, e Puruṣa, quello spirituale e maschile; nell’essere umano Prakṛti costituisce il corpo e la mente, che diventano la dimora dell’anima individuale (puruṣa). 
 
 su quelli che io ho definito i *Post-It*:
 
@@ -811,10 +812,19 @@ circolo vizioso (o virtuoso) che si autoalimenta.
 Ho trovato delle analogie ai precetti del C'hi++ anche nel poema iraniano *Mantiq al-Tayr*[^8].  
 
 > Tutto è un'unica sostanza in molteplici forme, tutto è un unico discorso in diverse espressioni.
-<br />   
+<br />...   
 > Egli sfugge a ogni spiegazione, a qualsiasi attributo. Di Lui soltanto una pallida idea ci è concessa, dare compiuta notizia di Lui è impossibile. Per quanto bene o male si parli di Lui, in realtà d’altri non si parla che di se stessi.
-<br />  
+<br />...  
 > O Creatore, tutto il male o il bene che feci, in verità lo feci solo a me stesso.
+
+Cito questi due testi perché non li conoscevo quando ho cominciato a formulare la mia teoria e quindi non è possibile che abbiano influenzato le mie affermazioni, al contrario di testi che conoscevo già, come il *Tao-tê-ching* o *Eureka*, di Poe.  
+Ho trovato altre analogie in frasi di filosofi greci come Eraclito, Zenone o Anassimandro, ma non ho avuto ancora modo di approfondirle.
+<br />  
+Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista.  
+Il Paradiso è l'Uno primigenio, dove i due principii *Prakṛti* (Eva) e *Puruṣa* (Adamo) sono uniti a Dio.
+Quando Prakṛti, con o senza la collaborazione di Puruṣa, altera lo stato di quiete dell'Uno, causandone la disgregazione, l'Energia dell'Uno è proiettata nello spazio, portando con sé Prakṛti e Puruṣa che da quel momento in poi devono affrontare le difficoltà e i dolori proprii del mondo materiale.  
+<br />
+È interessante vedere come un modello teorico, nato da presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
 
 
 
@@ -831,11 +841,13 @@ Ho trovato delle analogie ai precetti del C'hi++ anche nel poema iraniano *Manti
 [^4]: *Application Program Interface*: l'insieme delle regole per
     l'utilizzo del sistema
     
-[^5]: e non: *per colpa*, come nella versione 0.1.1
+[^5]: E non: *per colpa*, come nella versione 0.1.1
 
-[^6]: Alla voce *Diavolo*, il Vocabolario Treccani riporta: s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. «calunniatore» (der. di διαβάλλω «gettare attraverso, calunniare»)* 
+[^6]: L'utilizzo del termine scacchistico è intenzionale.
 
 [^7]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni. 
  
 [^8]: Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
+
+[^9]: Alla voce *Diavolo*, il Vocabolario Treccani riporta: s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. «calunniatore» (der. di διαβάλλω «gettare attraverso, calunniare»)* 
 
