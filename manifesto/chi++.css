@@ -4,10 +4,10 @@
  *
  * Foglio di stile per documenti Markdown
  *
- * @category   CategoryName
+ * @category   Stylesheet
  * @package    C'hi++
  * @author     Carlo Simonelli <r@canaro.net>
- * @version    0.4.0
+ * @version    0.4.x
  * @since      0.4.0
  */
 
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 2.5rem;
     counter-reset: h2;
-    color: #060;
+    color: #600;
 }
 
 h2 {
@@ -458,6 +458,11 @@ kbd {
     box-shadow: inset 0 -1px 0 #bbb
 }
 
+/* Equazione di Einstein  */
+.einstein {
+    padding: 1rem;
+    font-size: 2rem;
+}
 * {
     -webkit-print-color-adjust: exact;
 }
