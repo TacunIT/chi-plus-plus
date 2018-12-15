@@ -1,3 +1,9 @@
+## 0.4.3 (December 15, 2018)
+  - Aggiunta nota su Einstein
+  - Aggiunta nota sul basso accoppiamento a proposito dello Spazionismo
+  - Rinominate tutte le note interne al testo
+  - Rimosse versioni odt del Manifesto e di Aristotele
+
 ## 0.4.2 (December 10, 2018)
   - Aggiunta copertina a Manifesto
   - Rinominata mappa Vue per evitare problemi con git
