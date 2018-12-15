@@ -5,7 +5,7 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.4.2</p>
+	<p><label>Versione</label>0.4.3</p>
 	<p><label>Data    </label>10 Dicembre 2018</p>
 </div>
 	![](http://media.canaro.net/imago/seal.png)
@@ -775,6 +775,8 @@ Al contrario, se gli elementi del sistema sono indipendenti gli uni dagli altri 
 
 
 ## Una Google Maps mistica
+È interessante vedere come un modello teorico, nato da presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
+
 In questi giorni sto leggendo la *Bhagavad-Gita*[^gita].
 Alcuni passi mi hanno ricordano le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire "bene":
 
@@ -827,7 +829,18 @@ Per certi versi anche la stessa Genesi biblica può essere considerata un'allego
 Il Paradiso è l'Uno primigenio, dove i due principii *Prakṛti* (Eva) e *Puruṣa* (Adamo) sono uniti a Dio.
 Quando Prakṛti, con o senza la collaborazione di Puruṣa, altera lo stato di quiete dell'Uno, causandone la disgregazione, l'Energia dell'Uno è proiettata nello spazio, portando con sé Prakṛti e Puruṣa che da quel momento in poi devono affrontare le difficoltà e i dolori proprii del mondo materiale.  
 <br />
-È interessante vedere come un modello teorico, nato da presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
+Se poi diciamo che Dio è l'Energia che ha creato la materia, possiamo parafrasare l'equazione di Einstein:
+<div class="einstein">
+<p>E = mc<sup>2</sup></p>
+</div>
+dicendo che l'Universo (tutta la massa) è Dio (tutta l'enerigia) diviso la velocità della luce al quadrato:
+<div class="einstein">
+<p>m = E/c<sup>2</sup></p>
+</div>
+una affermazione che trovo affascinante perché, per la teoria spazionista, ciò che divide Dio creando l'Universo è un'entità che si può chiamare o Diavolo[^diavolo] o, anche, Lucifero[^lucifero]; in sostanza: *colui che divide* o *colui che porta la luce*.
+
+## Conclusioni
+
 
 
 
@@ -858,5 +871,6 @@ Quando Prakṛti, con o senza la collaborazione di Puruṣa, altera lo stato di 
  
 [^mantiq]: Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
 
-[^diavolo]: Alla voce *Diavolo*, il Vocabolario Treccani riporta: s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. «calunniatore» (der. di διαβάλλω «gettare attraverso, calunniare»)* 
+[^diavolo]: diàvolo s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. «calunniatore» (der. di διαβάλλω «gettare attraverso, calunniare»), adoperato nel gr. crist. per tradurre l’ebr. śāṭān «contraddittore, oppositore»].
 
+[^lucifero]: lucìfero agg. e s. m. [dal lat. lucĭfer -a -um, comp. di lux lucis «luce» e -fer «-fero», calco del gr. ϕωσϕόρος].
