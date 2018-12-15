@@ -24,8 +24,7 @@ La religione dovrebbe aiutare l'Uomo a vivere meglio.
 Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i
 momenti di dolore e definire una scala di valori che ci permetta di
 prendere delle decisioni in quei casi in cui il raziocinio o il semplice
-buon senso non possono esserci d'aiuto.
-
+buon senso non possono esserci d'aiuto.  
 Tanto per fare un esempio: se vi ponessero queste tre domande, cosa
 rispondereste?
 <ol class="domande">
@@ -36,15 +35,14 @@ rispondereste?
 </ol>
 Come vedremo fra poco, la religione può aiutarvi a trovare una risposta
 in questi casi.
-
 Nulla vi assicura che sia la risposta giusta - nulla potrebbe farlo - ma
-almeno è una risposta.
-
+almeno è una risposta.  
 Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio,
 anzi: hanno avuto spesso l'effetto opposto perché sono state prese a
 pretesto per guerre, soprusi e contrasti più o meno violenti, al punto
 che molte persone pensano che si vivrebbe meglio in un Mondo senza
-religioni.
+religioni.  
+È davvero così?
 
 ###Un primo problema delle religioni
 
@@ -54,16 +52,16 @@ legato alla natura stessa delle religioni.
 Dovendo interessarsi di argomenti di carattere universale, che non
 possono trovare una risposta razionale certa, le religioni sono
 costrette a dedurre le regole della propria dottrina da una serie di
-*assiomi*.
+*assiomi* o: *dogmi*
 
-Gli assiomi, in quanto tali, non devono essere dimostrati[^1] e i
+I dogmi, in quanto tali, non devono essere dimostrati[^dogmi] e i
 seguaci della religione, i quali, non a caso, sono detti: "fedeli" o:
 "credenti", li devono accettare per buoni senza metterli in
 discussione.
 
-Gli assiomi, o *dogmi* sono quindi i pilastri su cui si regge
+I dogmi sono i pilastri su cui si regge
 l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se
-fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma
+fosse rimosso, l'edificio rischierebbe di crollare; quindi ogni forma
 di dubbio o di eresia è vista dagli apparati ecclesiastici come un
 potenziale pericolo che va scongiurato a ogni costo.
 
@@ -86,7 +84,7 @@ i cui dogmi siano:
 	<li>Dio ha creato l'Universo
 </ol>
 
-Partendo da questi assiomi (non dimostrabili) e sapendo che l'Uomo fa
+Partendo da questi dogmi (non dimostrabili) e sapendo che l'Uomo fa
 parte dell'Universo, i Buonisti deducono che:
 
 <ol class="dogmi" start="4">
@@ -138,7 +136,7 @@ Se però gli domandaste:
 Il buon giudice non avrebbe meno difficoltà del Buonista a trovare una
 risposta.
 La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe
-comunque di spedirvi in prigione, dove trovereste ad attendervi il
+comunque di spedirvi in prigione, dove trovereste ad attendervi il simpatico
 soggetto della domanda [B](#domanda-B).
 
 ###*Debug* del Buonismo
@@ -199,7 +197,7 @@ Qualunque visione della vita basata su questi presupposti è
 inaccettabile perché, mancando un Aldilà e una beatitudine condizionata
 al nostro comportamento terreno, ciascuno cercherebbe di ottenere il
 massimo possibile dagli anni che vivrà, pensando solo a sé stesso senza
-alcun rispetto per il suo prossimo[^2].
+alcun rispetto per il suo prossimo[^black-friday].
 <br><br>
 Priva del concetto di anima, la religione diventerebbe logicamente
 solida, ma non assolverebbe al suo còmpito primario, che è quello di
@@ -217,7 +215,7 @@ Questo piccolo atto di fede ci permette di rispondere senza esitazione
 alla domanda [D](#domanda-D):
 
 > Dio è buono, giusto e misericordioso. Nell'Universo esistono
-> stupratori, omicidi e malattie è perché l'Universo è opera del Diavolo.
+> stupratori, omicidi e malattie è perché l'Universo è opera del Diavolo [^gnosi](#gnosi).
 
 Si tratta però di una vittoria parziale, perché aumentando il numero dei
 precetti abbiamo aumentato la complessità del nostro modello e, di
@@ -432,14 +430,14 @@ La tabella seguente riporta un possibile versionamento delle grandi religioni mo
 
 | n. | anno | descrizione | changelog
 :---: | :---: | --- | :--- |
-0.1.0 | 3.200 a.C. | Culti egizi            | Riduzione del numero degli Dei; enoteismo e atenismo POC[^3] del monoteismo.
+0.1.0 | 3.200 a.C. | Culti egizi            | Riduzione del numero degli Dei; enoteismo e atenismo POC[^poc] del monoteismo.
 1.0.0 | 2.000 a.C. | Ebraismo               | Dio è uno; tutti gli altri sono deprecati.
 1.0.1 | 1200 a.C.  | 10 Comandamenti Esodo  |  Redazione del manuale utente.
 1.0.2 | 621 a.C.   | Deuteronomio           |  Aggiornamento manuale utente.
 1.0.3 | 500 a.C.   | Levitico               |  Redazione del manuale di amministratore del sistema.
 1.1.0 | 33         | Gesù di Nazareth       |  Evoluzione e *debug* delle regole.
 1.1.1 | 60         | Paolo di Tarso         |  Evoluzione delle nuove regole.
-1.1.2 | 70         | Vangelo di Marco       |  Documentazione API[^4] versione 1.1.
+1.1.2 | 70         | Vangelo di Marco       |  Documentazione API[^api] versione 1.1.
 1.1.3 | 85         | Vangelo di Matteo      |  Documentazione API versione 1.1.
 1.1.4 | 95         | Vangelo di Luca        |  Documentazione API versione 1.1.
 1.2.0 | 787        | Secondo Concilio Nicea |  Miglioramenti all'interfaccia grafica: permesse le immagini sacre.
@@ -759,14 +757,14 @@ Così come lo schermo di un computer è costituito da una matrice bidimensionale
 <br />  
 La sequenza vista sopra, riletta in chiave spazionista, diventa:  
 
-1. l'Uno Primigenio esplode a causa[^5] di una Forza che ne disperde l'Energia nello spazio;
+1. l'Uno Primigenio esplode a causa[^causa] di una Forza che ne disperde l'Energia nello spazio;
 2. l'Energia si spande per l'Universo e, conferendo esistenza agli spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi e solidi che noi conosciamo, dall'elio della nebulosa di Wolf–Rayet alla nostra maestra delle Elementari;
-4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante[^6] della Storia, che a sua volta genererà nuove esperienze e nuovi Post-It;
+4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante[^variante] della Storia, che a sua volta genererà nuove esperienze e nuovi Post-It;
 4. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
 5. tutto ricomincia.
 
 ## Una Google Maps mistica
-In questi giorni sto leggendo la *Bhagavad-Gita*[^7].
+In questi giorni sto leggendo la *Bhagavad-Gita*[^gita].
 Alcuni passi mi hanno ricordano le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire "bene":
 
 > Tu hai diritto all'azione, non ai suoi frutti; non sia mai perciò il
@@ -803,7 +801,7 @@ una predisposizione innata che lo induce, nel bene come nel male, ad un
 comportamento analogo a quello che ha tenuto in passato, creando un
 circolo vizioso (o virtuoso) che si autoalimenta.
 
-Ho trovato delle analogie ai precetti del C'hi++ anche nel poema iraniano *Mantiq al-Tayr*[^8].  
+Ho trovato delle analogie ai precetti del C'hi++ anche nel poema iraniano *Mantiq al-Tayr*[^mantiq].  
 
 > Tutto è un'unica sostanza in molteplici forme, tutto è un unico discorso in diverse espressioni.
 <br />...   
@@ -823,25 +821,27 @@ Quando Prakṛti, con o senza la collaborazione di Puruṣa, altera lo stato di 
 
 
 ## Note
-[^1]: Principalmente perché non è possibile farlo.
+[^dogmi]: Principalmente perché non è possibile farlo.
 
-[^2]: A mo' di esempio si veda un qualunque quotidiano o un filmato
+[^black-friday]: A mo' di esempio si veda un qualunque quotidiano o un filmato
     sugli assalti ai grandi magazzini durante il *Black Friday*
     americano.
 
-[^3]: *Proof Of Concept*: prototipo che serve a di/mostrare le
+[^gnosi]: [Aggiungere riferimento a *Cosmogonie Gnostiche*]
+
+[^poc]: *Proof Of Concept*: prototipo che serve a di/mostrare le
     funzionalità di un nuovo sistema o processo.
 
-[^4]: *Application Program Interface*: l'insieme delle regole per
+[^api]: *Application Program Interface*: l'insieme delle regole per
     l'utilizzo del sistema
     
-[^5]: E non: *per colpa*, come nella versione 0.1.1
+[^causa]: E non: *per colpa*, come nella versione 0.1.1
 
-[^6]: L'utilizzo del termine scacchistico è intenzionale.
+[^^variante]: L'utilizzo del termine scacchistico è intenzionale.
 
-[^7]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni. 
+[^gita]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni. 
  
-[^8]: Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
+[^mantiq]: Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
 
-[^9]: Alla voce *Diavolo*, il Vocabolario Treccani riporta: s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. «calunniatore» (der. di διαβάλλω «gettare attraverso, calunniare»)* 
+[^diavolo]: Alla voce *Diavolo*, il Vocabolario Treccani riporta: s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. «calunniatore» (der. di διαβάλλω «gettare attraverso, calunniare»)* 
 
