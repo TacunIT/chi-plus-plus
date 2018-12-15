@@ -215,7 +215,7 @@ Questo piccolo atto di fede ci permette di rispondere senza esitazione
 alla domanda [D](#domanda-D):
 
 > Dio è buono, giusto e misericordioso. Nell'Universo esistono
-> stupratori, omicidi e malattie è perché l'Universo è opera del Diavolo [^gnosi](#gnosi).
+> stupratori, omicidi e malattie è perché l'Universo è opera del Diavolo [^gnosi].
 
 Si tratta però di una vittoria parziale, perché aumentando il numero dei
 precetti abbiamo aumentato la complessità del nostro modello e, di
@@ -227,7 +227,7 @@ conseguenza, la probabilità di generare errori o incongruenze:
     parte dell'Universo, dev'essere stato creato da Dio?
 </ol>
 
-### A Shanghai esiste un uomo di nome Mario
+### Il Programmatore, vale 1 o 0?
 Dato che non è possibile rendere coerente il Buonismo modificando i suoi
 precetti, dobbiamo assumere che uno di essi sia errato ed eliminarlo.
 
@@ -254,14 +254,13 @@ più contraddittoria: se qualcuno ce la facesse, adesso, risponderemmo:
 > perché ciò fa parte del Suo disegno, che noi non siamo in grado di
 >comprendere.
 
-Per quanto simile all'ipotetica *risposta generica, che chiama in causa
-l'imponderabilità delle decisioni divine* data dal Buonista prima di
+Per quanto simile all'ipotetica: «risposta generica, che chiama in causa
+l'imponderabilità delle decisioni divine», data dal Buonista prima di
 mandarci al rogo, la nostra sarà una risposta coerente (oltre che
-umile), perché non presuppone alcuna qualità, positiva o negativa che
-sia, di Dio.
-
+umile), perché non presuppone alcuna qualità - positiva o negativa che
+sia - di Dio.  
 Soprattutto, noi non affermiamo di sapere cosa sia buono/giusto e cosa
-non lo sia, perché in effetti, non lo possiamo sapere:
+non lo sia, perché in effetti non lo possiamo sapere:
 
 <ul class="domande">
 <li >
@@ -289,17 +288,17 @@ differenti:
 -   dire che non è buono;
 -   dire che non ha creato l'Universo.
 
-Delle tre, la prima è la meno "conveniente", eppure la maggior parte
+Delle tre, la prima è la meno conveniente, eppure la maggior parte
 dei non-credenti preferisce negare l'esistenza di Dio piuttosto che
 mettere in discussione la Sua bontà.
 
 Il perché, chiedetelo a loro.
 
 ### Buonismo 2.0
-Rimuovendo il secondo precetto, siamo riusciti a rendere coerente la
+<a name="buonismo"></a>Rimuovendo il secondo precetto, siamo riusciti a rendere coerente la
 dottrina Buonista, ma allo stesso tempo abbiamo rimosso la ragion
 d'essere del suo nome; se Dio non è buono, che senso ha, chiamarsi:
-*Buonisti*?
+*Buonisti*?  
 Non è solo una questione di carta intestata: dalla presunta bontà di
 Dio, la dottrina buonista deriva l'obbligo per l'Uomo di essere
 altrettanto buono; mancando il precetto decadrebbe anche l'obbligo e si
@@ -320,7 +319,7 @@ I punti di attrito e gli scismi provocano sempre dei conflitti e così,
 il nostro tentativo di rendere migliore la religione Buonista avrà
 ottenuto un risultato diametralmente opposto a quello che ci eravamo
 prefissi.
-<br>  
+
 C'è un modo per evitarlo?
 
 ### Imparare dagli errori
@@ -331,7 +330,7 @@ considerare congeniti a tutte le religioni:
     attaccabili perché non possono essere dimostrati, ma solo accettati
     per fede;
 -   una religione può avere delle difficoltà nel modificare la propria
-    dottrina, anche quando sa che uno dei suoi dogmi non è corretto;
+    dottrina, anche quando è dimostrato che uno dei suoi dogmi non è corretto;
 -   la contestazione di un dogma causa quasi inevitabilmente una
     separazione e le separazioni è probabile che sfocino in conflitti.
 
@@ -380,8 +379,7 @@ collaborazione di diversi programmatori che rendono disponibile il
 frutto del loro lavoro a titolo gratuito, pubblicando anche il codice
 sorgente del sistema.
 
-Rispetto al software cosiddetto: *proprietario*, ovvero il software realizzato da una persona o da una società che ne detiene i diritti, il software *open-source* ha diversi lati positivi. 
-Il primo è che non si paga, ma questo non ha grossa rilevanza nel caso di una religione o di una metafisica. Gli altri lati positivi del paradigma *open-source* che si possono applicare anche nel nostro caso sono:
+Rispetto al software cosiddetto: *proprietario*, ovvero il software realizzato da una persona o da una società che ne detiene i diritti, il software *open-source* ha diversi lati positivi:
 
 -   **libertà:** non impone legàmi con uno specifico fornitore o a uno
     specifico hardware.
@@ -396,7 +394,7 @@ I letterati, gli scultori, i pittori non possono modificare le loro
 opere, una volta che sono state pubblicate. Possono dare un ritocco di
 colore qui, un colpo di scalpello là, ma si tratta sempre di
 aggiustamenti minimi, che non cambiano la struttura stessa
-dell'opera.
+dell'arte-fatto.
 I Musicisti, i teatranti e, in parte, i cineasti sono un po' più
 fortunati, perché possono apportare più facilmente delle modifiche alle
 loro opere, ma si tratta comunque di eventi che accadono di rado.
@@ -417,7 +415,7 @@ compatibile con le versioni precedenti.
 Il numero di *patch* è incrementato ogni volta che si apportano delle
 modifiche o delle correzioni anche minime al sistema.
 <br>  
-La *major version zero *(0.y.z) è destinata allo sviluppo iniziale,
+La *major version zero* (0.y.z) è destinata allo sviluppo iniziale,
 quando il software non è ancora stabile e tutto può cambiare in ogni
 momento.
 <br>  
@@ -434,7 +432,7 @@ La tabella seguente riporta un possibile versionamento delle grandi religioni mo
 1.0.0 | 2.000 a.C. | Ebraismo               | Dio è uno; tutti gli altri sono deprecati.
 1.0.1 | 1200 a.C.  | 10 Comandamenti Esodo  |  Redazione del manuale utente.
 1.0.2 | 621 a.C.   | Deuteronomio           |  Aggiornamento manuale utente.
-1.0.3 | 500 a.C.   | Levitico               |  Redazione del manuale di amministratore del sistema.
+1.0.3 | 500 a.C.   | Levitico               |  Redazione del manuale di amministratore di sistema.
 1.1.0 | 33         | Gesù di Nazareth       |  Evoluzione e *debug* delle regole.
 1.1.1 | 60         | Paolo di Tarso         |  Evoluzione delle nuove regole.
 1.1.2 | 70         | Vangelo di Marco       |  Documentazione API[^api] versione 1.1.
@@ -460,11 +458,11 @@ Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero
 0.3.0 | 2015 |  Manifesto   | Iniziata la redazione di questo documento.
 0.3.1 | 2016 |  Adozione git         | Creato acconto per il progetto su GitHub.
 0.3.2 | 2018 |  Allineamento         | Allineamento delle versioni git con quelle del Manifesto.
-0.4.0 | oggi |  Manifesto Markdown | Conversione del Manifesto in formato MArkdown
+0.4.0 | oggi |  Manifesto Markdown | Conversione del Manifesto in formato Markdown
 
 Già da queste poche righe è possibile vedere alcuni benefici
 dell'approccio open-source alla speculazione filosofica.
-
+<br>  
 Nella versione 0.1.0 del C'hi++, la figura che definisco: *Immancabile
 Testa di Pera* era un elemento negativo, assimilabile al Diavolo o alla
 Discordia di Empedocle. 
@@ -479,7 +477,7 @@ negativa sul resto del modello teorico, *dichiaratamente* fallace in
 quanto ancora in fase evolutiva (*major version* 0); anzi: lo ha reso
 più robusto perché ha premesso di trovare delle affinità con altre
 religioni.
-<br />
+<br />  
 Se avessimo applicato la stessa modifica al Cattolicesimo,
 "riabilitando" la figura del Diavolo, le cose non sarebbero andate
 altrettanto bene perché, se il Diavolo non fosse cattivo, non solo
@@ -624,7 +622,7 @@ Ashvaghosha, nell'introduzione alla *Saundarananda*, afferma:
 
 > Questa composizione sul tema della liberazione è stata composta in forma poetica non per procurare piacere, ma per vincere nei lettori la propensione a distrarre la mente; e se ho trattato in esso temi diversi dalla liberazione è stato per renderla piacevole, così come una medicina amara si mescola con il miele per renderla bevibile.
 
-Fatte le debite proporzioni, questo vale anche per C'hi++: molte affermazioni del Maestro sono ironiche e lo stesso nome scelto per gli elementi costitutivi dell'Universo (gli _spazioni_) e per la cosmogonia che ne deriva (lo *Spazionismo*) ha chiaramente un intento auto/ironico.  
+Fatte le debite proporzioni, questo vale anche per *C'hi++*: molte affermazioni del Maestro sono ironiche e lo stesso nome scelto per gli elementi costitutivi dell'Universo (gli _spazioni_) e per la cosmogonia che ne deriva (lo *Spazionismo*) ha chiaramente un intento auto/ironico.  
 Anche i riferimenti alla disciplina estetica della disposizione dei panni sullo stendino, l'*Ikebarba*, hanno lo scopo di stemperare la seriosità del testo, allegerendone la lettura.
 
 ### Mitopietica del C'hi++
@@ -655,11 +653,11 @@ Con mia grande sorpresa, ha accettato.
 I primi tre capitoli inquadrano "storicamente" il contesto in cui si
 svolge l'azione, un possibile futuro in cui gli informatici sono diventati una casta sacerdotale:
 
-> la società dipendeva ormai totalmente dai computer e i computer dipendevano dagli informatici; se un giorno avessero deciso di coalizzarsi e di scioperare, avrebbero messo il Paese, se non il mondo intero, in ginocchio.  
+> la società dipendeva ormai totalmente dai computer e i computer dipendevano dagli informatici; se un giorno avessero deciso di coalizzarsi e di scioperare, avrebbero messo il Paese, se non il Mondo intero, in ginocchio.  
 > Le psicopatologie tipiche degli informatici, la loro incapacità di gestire, se non addirittura di concepire una vita sociale, rendevano questa ipotesi molto poco probabile, ma era comunque un rischio troppo grosso per essere ignorato.   
 Al contrario, l’indottrinamento degli informatici, la loro segregazione in una casta con forti componenti mistico-religiose, li avrebbero tenuti lontani dalle lusinghe dei sindacati e avrebbero reso l’ipotesi di uno sciopero improbabile quanto l’ipotesi di uno sciopero dei sacerdoti.
 
-Nei capitoli seguenti sarà descritto il linguaggio C++, facendo dei paralleli fra i suoi costrutti sintattici e alcuni concetti filosofici. 
+Nei capitoli seguenti, sarà descritto il linguaggio C++, facendo dei paralleli fra i suoi costrutti sintattici e alcuni concetti filosofici. 
 Riporto di seguito alcuni esempi, anche si tratta ancora di appunti e non di un testo definitivo: 
 <br />  
 ####Commenti al codice 
@@ -675,6 +673,8 @@ I numeri descrivono una quantità, non sono una quantità.
 La quantità di fiammiferi che vedi qui sul mio tavolo, rimane la stessa sia che tu la chiami 4, 100 o IV, così come rimarrebbe la stessa se tu la chiamassi five o cinco.
 La quantità esisteva da prima che esistessero i numeri e gli sopravviverà.
 I numeri, li abbiamo inventati noi; la quantità, no. 
+
+Questo concetto tornerà utile più tardi, quando, a proposito delle classi, si parlerà della differenza fra il simbolo e ciò che rappresenta; o, se preferite, fra il *significato* e il *significante* [^bandinelli].
 
 #### Linguaggi di programmazione
 Distinzione fra i linguaggi _compiliati_ (che producono software pronto all'elaborazione da parte del computer) e i linguaggi _interpretati_ (che necessitano di un sistema di conversione del proprio codice in linguaggio macchima).  
@@ -697,8 +697,9 @@ La cosa interessante, in questo caso, è che "vero" e "falso" sono anche delle c
 Per Access, "falso" è -1; per le prime versioni di MySQL è 'f'; per Postgres o Oracle, è 0.  
 Il computer, però, non ha IN SE' il concetto di "vero" o di "falso", ma solo l'associazione del valore booleano "false" a una determinata sequenza di bit.
 Il concetto di "vero" e di "falso", quindi, è un valore simbolico che NOI inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è propio del nostro mondo.  
-Da questo punto di vista, potremmo essere d'accordo con William James, quando dice che: 
+Da questo punto di vista, potremmo essere d'accordo con William James, quando dice che:
 >>    Un'idea è "vera" fintanto che credere in essa è utile per le nostre vite.  
+
 
 ####Classi e istanze
 Il Maestro dirà:
@@ -706,16 +707,16 @@ Il Maestro dirà:
 > Se vuoi capire le classi, devi leggere Aristotele.
 
 ed è vero: per parlare delle classi si può attingere a piene mani da Aristotele. 
-Per esempio, può essere utilizzato per spiegare sia il le funzoni virtuali pure (essenza), sia la differenza fra metodi e dati membro di una classe (anima e corpo) sia la differenza fra dichiarazione e istanza di una classe:
+Per esempio, il concetto di "essenza" può essere utilizzato per spiegare sia il le *funzioni virtuali pure*; i concetti di "anima" e "corpo" possono illustrare la differenza fra *metodi* e *dati membro* di una classe; i concetti di "universale" e "sostanza" spiegano la differenza fra *dichiarazione* e *istanza* di una classe:
 
-> La differenza fra universale e sostanza, in Aristotele è la stessa che c'è fra classe e istanza in C++, ed è corretto dire che un termine universale non possa essere il nome di una sostanza, ma solo il nome della sua classe; non a caso, l'istruzione:
+> La differenza fra universale e sostanza, in Aristotele è la stessa che c'è fra classe e istanza in C++, ed è corretto dire che un termine universale non possa essere il nome di una sostanza, ma solo il nome della sua classe, perché l'istruzione:
 
 >>class Uomo {};   
 >>Uomo Uomo; 
 
 > dà errore.. :-)  
 
-Per l'ereditarietà delle classi saranno possibili paralleli con l'Etica Nicomachea:
+Per l'ereditarietà delle classi i riferimenti saranno all'Etica Nicomachea:
 
 > Un padre può ripudiare suo figlio, se è cattivo, ma un figlio non può ripudiare suo padre perché gli deve più di quanto non sia in grado di pagargli e in particolare gli deve l'esistenza.
  
@@ -758,10 +759,20 @@ Così come lo schermo di un computer è costituito da una matrice bidimensionale
 La sequenza vista sopra, riletta in chiave spazionista, diventa:  
 
 1. l'Uno Primigenio esplode a causa[^causa] di una Forza che ne disperde l'Energia nello spazio;
-2. l'Energia si spande per l'Universo e, conferendo esistenza agli spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi e solidi che noi conosciamo, dall'elio della nebulosa di Wolf–Rayet alla nostra maestra delle Elementari;
+2. l'Energia si spande per l'Universo e, conferendo massa/esistenza agli spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi e solidi che noi conosciamo, dall'elio della nebulosa di Wolf–Rayet alla nostra maestra delle Elementari;
 4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante[^variante] della Storia, che a sua volta genererà nuove esperienze e nuovi Post-It;
 4. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
 5. tutto ricomincia.
+
+#### Basso accoppiamento
+Lo Spazionismo è la parte più pericolosa di tutta la mia metafisica.
+Non solo perché non ho alcun titolo per parlare di spazio e materia, ma perché il nome stesso della teoria è legato ai suoi postulati: il nome *Spazionismo* deriva dal nome *spazione* e il nome *spazione* deriva dai presunti attributi dell'entità che rappresenta[^spazione].  
+È, questa, la trasposizione astro-fisica del problema meta-fisico visto a proposito del [Buonismo](#buonismo): se alla fine si scopre che Dio non è buono o che comunque non ha senso attribuirgli delle qualità terrene, il nome della religione non ha più senso, indipendentemente dalla solidità dei suoi precetti.
+<br />  
+In informatica, questo rischio si previene adottando il metodo del *basso accoppiamento* o *low coupling*, un termine che non si riferisce alla generale difficoltà degli informatici a instaurare rapporti con persone di sesso opposto, ma alla separazione delle funzioni all'interno di un sistema.  
+Se gli elementi interni di un sistema sono dipendenti gli uni dagli altri, la correzione o la modifica di uno di essi comporterà necessariamente anche la modifica del resto del codice.
+Al contrario, se gli elementi del sistema sono indipendenti gli uni dagli altri e ciasuno di essi svolge solo un compito ben preciso, le modifiche o le correzioni su uno di essi avranno un impatto molto basso o addirittura nullo sul resto del sistema.
+
 
 ## Una Google Maps mistica
 In questi giorni sto leggendo la *Bhagavad-Gita*[^gita].
@@ -804,7 +815,7 @@ circolo vizioso (o virtuoso) che si autoalimenta.
 Ho trovato delle analogie ai precetti del C'hi++ anche nel poema iraniano *Mantiq al-Tayr*[^mantiq].  
 
 > Tutto è un'unica sostanza in molteplici forme, tutto è un unico discorso in diverse espressioni.
-<br />...   
+<br />...    
 > Egli sfugge a ogni spiegazione, a qualsiasi attributo. Di Lui soltanto una pallida idea ci è concessa, dare compiuta notizia di Lui è impossibile. Per quanto bene o male si parli di Lui, in realtà d’altri non si parla che di se stessi.
 <br />...  
 > O Creatore, tutto il male o il bene che feci, in verità lo feci solo a me stesso.
@@ -827,18 +838,22 @@ Quando Prakṛti, con o senza la collaborazione di Puruṣa, altera lo stato di 
     sugli assalti ai grandi magazzini durante il *Black Friday*
     americano.
 
-[^gnosi]: [Aggiungere riferimento a *Cosmogonie Gnostiche*]
+[^gnosi]: [aggiungere riferimento a *Cosmogonie Gnostiche*]
 
 [^poc]: *Proof Of Concept*: prototipo che serve a di/mostrare le
     funzionalità di un nuovo sistema o processo.
 
 [^api]: *Application Program Interface*: l'insieme delle regole per
     l'utilizzo del sistema
+
+[^bandinelli]: [aggiungere il riferimento a Bianchi-Bandinelli]
     
 [^causa]: E non: *per colpa*, come nella versione 0.1.1
 
-[^^variante]: L'utilizzo del termine scacchistico è intenzionale.
+[^variante]: L'utilizzo del termine scacchistico è intenzionale.
 
+[^spazione]: In realtà, il nome *spazione* è anche un riferimento, intenzionalmente auto-ironico, ai: *cosoni*, i baccelli del film *Totò sulla Luna*, parodia nostrana de: *L'invasione degli ultracorpi*.
+ 
 [^gita]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni. 
  
 [^mantiq]: Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
