@@ -1,0 +1,198 @@
+commit e93ee12d95a75a06375eff64fbf571ca4b29f01f
+Merge: f3674cc 9e3989b
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sat Dec 15 19:42:22 2018 +0100
+
+    Merge branch 'release/0.4.3'
+
+commit 9e3989b9417c30eee95b3fa0c2f74e3c43dc39fb
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sat Dec 15 19:41:49 2018 +0100
+
+    Bump version to 0.4.3.
+
+commit 8385f9b13f713ef885f71b4ea0de72e2ffe0c5eb
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sat Dec 15 19:41:24 2018 +0100
+
+    Aggiunta nota su Einstein
+
+commit f1326b20c2fc3b84d0071944e2a4be780c09de71
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sat Dec 15 19:18:18 2018 +0100
+
+    Aggiunta nota sul basso accoppiamento a proposito dello Spazionismo
+
+commit 7b03abefa8c6610b3b100e2c0f26d7500176a96a
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sat Dec 15 17:14:01 2018 +0100
+
+    Rinominate tutte le note interne al testo
+
+commit f3ee3c63cb0bff59427f0635f2086def106201c6
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sat Dec 15 16:49:24 2018 +0100
+
+    Rimosse versioni odt del Manifesto e di Aristotele
+
+commit f3674ccd1486d6ff583a55fa855276cde368db20
+Merge: ac2bda9 2acfff5
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Mon Dec 10 21:58:36 2018 +0100
+
+    Merge branch 'release/0.4.2'
+
+commit 2acfff52d68196c3b5e602d0681b7f282ec3a73b
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Mon Dec 10 21:58:11 2018 +0100
+
+    Bump version to 0.4.2.
+
+commit ec04f5eb441ddf15f50fde5b0d99b70ff064638e
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Mon Dec 10 21:57:34 2018 +0100
+
+    Aggiunta copertina a Manifesto
+
+commit fdbd384bab1ffd8ff44f5839fe206786d5c0fdb6
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Mon Dec 10 01:31:18 2018 +0100
+
+    Rinominata mappa Vue per evitare problemi con git
+
+commit ac2bda9f962508f15b9d788c6bddc01a59b254cf
+Merge: 5816ab7 3714686
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Mon Dec 10 01:30:25 2018 +0100
+
+    Merge branch 'release/0.4.1'
+
+commit 37146866a8ad1e4073b8ce5e71910807b908944d
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Mon Dec 10 01:30:04 2018 +0100
+
+    Bump version to 0.4.1.
+
+commit fcb0d663561e1f4ac05e05a3998d578a14c305bc
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Mon Dec 10 01:28:42 2018 +0100
+
+    Completato paragrafo su C'hi++
+
+commit efc3ef61428e846575cdba4e57d0d2b8a4eb45b9
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 9 23:18:12 2018 +0100
+
+    Completato capitolo su C'hi++
+
+commit 5816ab7cd053f4fc1a4a576af067881db192a028
+Merge: 6e11b7e ba7ff38
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 9 16:49:17 2018 +0100
+
+    Merge branch 'master' of origit.tacun:/srv/git/chi++
+
+commit 6e11b7e1aacc00725c000ecb2720c73f4a5566bf
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 9 16:40:44 2018 +0100
+
+    Bump version to 0.4.0.
+
+commit b70b9978d770a119b651d3cd6e30b4d29386fc4a
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 9 16:40:19 2018 +0100
+
+    Creato progetto Eclipse
+
+commit 8dbff18655cb931e148a77d8f7c524b59e886306
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 9 16:01:53 2018 +0100
+
+    Conversione della bozza del Manifesto in formato Markdown
+
+commit ba7ff38b6d0862b13a79f10153c2eb11477b2a1f
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 9 16:01:53 2018 +0100
+
+    Completato aggiornamento della versione Markdown del Manifesto
+
+commit 62281011f0e922d820dbd3fe49bdfa415f07f66a
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 9 11:46:52 2018 +0100
+
+    Migliorata la grafica del Manifesto
+
+commit 995e6b1ab27263a6da86f35d699b522ffa994798
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 9 10:38:57 2018 +0100
+
+    Rivista la struttura delle directory
+
+commit f24b3147f8fee89f871ddceb171a6fb0a979cac1
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 9 10:30:25 2018 +0100
+
+    Iniziata conversione Manifesto in Markdown
+
+commit d30ed57a0aa594bb58aa101b00355f938691786f
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Mon Dec 3 01:49:22 2018 +0100
+
+    Aggiunte a release/0.1.1 e inizio di release/0.2.0
+
+commit 63bd9ba8e34fa29e0b119c27871ab53253074527
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 2 20:22:18 2018 +0100
+
+    Iniziato capitolo su versione 0.1.1
+
+commit da37c74d683c7f001a3cce842d2c8bc733ec7c36
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 2 12:07:08 2018 +0100
+
+    Redazione Manifesto
+
+commit 8a69efc7a366296458ebdbfb173f87dc0ad2c21f
+Merge: 5f3cd67 84616f6
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 2 10:03:18 2018 +0100
+
+    Merge branch 'release/0.3.3'
+
+commit 84616f6eb35e03a681871739c939b83aff8b64ce
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 2 10:02:04 2018 +0100
+
+    Bump version to 0.4.0.
+
+commit f8174ec6390a07f945c2953eec7aa3323f7df6fd
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 2 10:01:53 2018 +0100
+
+    Rinominato documento del Manifesto
+
+commit 5f3cd679f1e97f9f00ef611b1915c047688ac01e
+Merge: 03cc178 671476f
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Mon Nov 19 12:27:53 2018 +0100
+
+    Merge branch 'release/0.3.2'
+
+commit 256339c23086a6c97f4cac2a27e497b9f0d5b6af
+Merge: 03cc178 671476f
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Mon Nov 19 12:26:16 2018 +0100
+
+    Merge branch 'release/0.3.2' into develop
+
+commit 671476fbb3419dbc878f5772487da447a32485a2
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Mon Nov 19 12:25:47 2018 +0100
+
+    Bump version to 0.3.2.
+
+commit 03cc178ac5bbb6745edbca0ff20400f2be42101f
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Mon Nov 19 12:14:52 2018 +0100
+
+    Ricreato repository git per allineare le versioni con il Manifesto
