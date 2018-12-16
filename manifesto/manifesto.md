@@ -766,19 +766,43 @@ La sequenza vista sopra, riletta in chiave spazionista, diventa:
 
 #### Basso accoppiamento
 Lo Spazionismo è la parte più pericolosa di tutta la mia metafisica.
-Non solo perché non ho alcun titolo per parlare di spazio e materia, ma perché il nome stesso della teoria è legato ai suoi postulati: il nome *Spazionismo* deriva dal nome *spazione* e il nome *spazione* deriva dai presunti attributi dell'entità che rappresenta[^spazione].  
+Non solo perché non ho alcun titolo per parlare di spazio e materia, ma perché il nome stesso della teoria è legato ai suoi postulati: il nome *Spazionismo* deriva dal nome *spazione* e il nome *spazione* deriva dai **presunti** attributi dell'entità che rappresenta[^spazione].  
 È, questa, la trasposizione astro-fisica del problema meta-fisico visto a proposito del [Buonismo](#buonismo): se alla fine si scopre che Dio non è buono o che comunque non ha senso attribuirgli delle qualità terrene, il nome della religione non ha più senso, indipendentemente dalla solidità dei suoi precetti.
 <br />  
 In informatica, questo rischio si previene adottando il metodo del *basso accoppiamento* o *low coupling*, un termine che non si riferisce alla generale difficoltà degli informatici a instaurare rapporti con persone di sesso opposto, ma alla separazione delle funzioni all'interno di un sistema.  
 Se gli elementi interni di un sistema sono dipendenti gli uni dagli altri, la correzione o la modifica di uno di essi comporterà necessariamente anche la modifica del resto del codice.
 Al contrario, se gli elementi del sistema sono indipendenti gli uni dagli altri e ciasuno di essi svolge solo un compito ben preciso, le modifiche o le correzioni su uno di essi avranno un impatto molto basso o addirittura nullo sul resto del sistema.
 
+## Release/0.3.x: Git
 
-## Una Google Maps mistica
+## Release/0.4.x: Markdown
+Come si può vedere dal registro degli eventi di git, il 9 Dicembre di quest'anno ho convertito il testo di questo documento dal formato originale (.odt) in formato Markdown (.md).
+
+```
+commit ba7ff38b6d0862b13a79f10153c2eb11477b2a1f
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 9 16:01:53 2018 +0100
+
+    Completato aggiornamento della versione Markdown del Manifesto
+
+commit 62281011f0e922d820dbd3fe49bdfa415f07f66a
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 9 11:46:52 2018 +0100
+
+    Migliorata la grafica del Manifesto
+
+commit f24b3147f8fee89f871ddceb171a6fb0a979cac1
+Author: Carlo Simonelli <rc@nero-digitale.com>
+Date:   Sun Dec 9 10:30:25 2018 +0100
+
+    Iniziata conversione Manifesto in Markdown
+```
+
+
 È interessante vedere come un modello teorico, nato da presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
-
+<br/>  
 In questi giorni sto leggendo la *Bhagavad-Gita*[^gita].
-Alcuni passi mi hanno ricordano le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire "bene":
+Alcuni passi mi hanno ricordato le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire "bene":
 
 > Tu hai diritto all'azione, non ai suoi frutti; non sia mai perciò il
 > frutto dell'azione a spingerti ad agire, e nemmeno devi essere
@@ -825,19 +849,23 @@ Ho trovato delle analogie ai precetti del C'hi++ anche nel poema iraniano *Manti
 Cito questi due testi perché non li conoscevo quando ho cominciato a formulare la mia teoria e quindi non è possibile che abbiano influenzato le mie affermazioni, al contrario di testi che conoscevo già, come il *Tao-tê-ching* o *Eureka*, di Poe.  
 Ho trovato altre analogie in frasi di filosofi greci come Eraclito, Zenone o Anassimandro, ma non ho avuto ancora modo di approfondirle.
 <br />  
-Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista.  
-Il Paradiso è l'Uno primigenio, dove i due principii *Prakṛti* (Eva) e *Puruṣa* (Adamo) sono uniti a Dio.
-Quando Prakṛti, con o senza la collaborazione di Puruṣa, altera lo stato di quiete dell'Uno, causandone la disgregazione, l'Energia dell'Uno è proiettata nello spazio, portando con sé Prakṛti e Puruṣa che da quel momento in poi devono affrontare le difficoltà e i dolori proprii del mondo materiale.  
-<br />
-Se poi diciamo che Dio è l'Energia che ha creato la materia, possiamo parafrasare l'equazione di Einstein:
+Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista: il Paradiso è l'Uno primigenio, dove i due principii *Prakṛti* (Eva) e *Puruṣa* (Adamo) sono uniti a Dio.
+Quando Prakṛti, con o senza la collaborazione di Puruṣa, altera lo stato di quiete dell'Uno, causandone la disgregazione, l'Energia dell'Uno è proiettata nello spazio, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte[^instagrammer]. 
+<br />  
+Un ultimo esempio, che però è poco più di un gioco di parole, e che riporto qui solo perché io *amo* i giochi di parole, lo otteniamo invertendo i fattori dell'equazione di Einstein:
 <div class="einstein">
 <p>E = mc<sup>2</sup></p>
 </div>
-dicendo che l'Universo (tutta la massa) è Dio (tutta l'enerigia) diviso la velocità della luce al quadrato:
+in:
 <div class="einstein">
 <p>m = E/c<sup>2</sup></p>
 </div>
+In termini spazionistici, questo equivale a dire che l'Universo (tutta la massa) è Dio (tutta l'energia) diviso la velocità della luce al quadrato:
 una affermazione che trovo affascinante perché, per la teoria spazionista, ciò che divide Dio creando l'Universo è un'entità che si può chiamare o Diavolo[^diavolo] o, anche, Lucifero[^lucifero]; in sostanza: *colui che divide* o *colui che porta la luce*.
+
+### Una Google Maps mistica
+
+
 
 ## Conclusioni
 
@@ -870,6 +898,8 @@ una affermazione che trovo affascinante perché, per la teoria spazionista, ciò
 [^gita]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni. 
  
 [^mantiq]: Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
+
+[^instagrammer]: A meno che tu non sia un famoso *instagrammer*, ovviamente.
 
 [^diavolo]: diàvolo s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. «calunniatore» (der. di διαβάλλω «gettare attraverso, calunniare»), adoperato nel gr. crist. per tradurre l’ebr. śāṭān «contraddittore, oppositore»].
 
