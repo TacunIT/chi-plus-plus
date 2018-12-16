@@ -486,7 +486,7 @@ Bibbia - che non può essere messa in discussione perché è la Parola di
 Dio -, ma priveremmo la Chiesa della sua funzione primaria che è quella
 di salvare le anime, appunto, dal Maligno.
 
-## Release/0.1.1: *Sostiene Aristotele*
+## Release/0.1: *Sostiene Aristotele*
 A Giugno del 2007 scrissi un documento dal titolo: *Sostiene Aristotele*
 che possiamo considerare la versione 0.1.1 del C'hi++. 
 Lo riporto di seguito, senza modifiche al testo originale, anche se non sono più d'accordo su alcune affermazioni:
@@ -608,7 +608,7 @@ Above us only sky<br/>
 <p>Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Universo e siamo noi, con le nostre azioni, a decidere in quale dei due vivere.</p>
 </div>
 
-## Release/0.2.0: *C'hi++*
+## Release/0.2: *C'hi++*
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
 programmazione scritto nello stile dei libri di filosofia giapponesi del
 XVII secolo o, anche, un libro di filosofia nello stile dei classici
@@ -773,9 +773,9 @@ In informatica, questo rischio si previene adottando il metodo del *basso accopp
 Se gli elementi interni di un sistema sono dipendenti gli uni dagli altri, la correzione o la modifica di uno di essi comporterà necessariamente anche la modifica del resto del codice.
 Al contrario, se gli elementi del sistema sono indipendenti gli uni dagli altri e ciasuno di essi svolge solo un compito ben preciso, le modifiche o le correzioni su uno di essi avranno un impatto molto basso o addirittura nullo sul resto del sistema.
 
-## Release/0.3.x: Git
+## Release/0.3: Git
 
-## Release/0.4.x: Markdown
+## Release/0.4: Markdown
 Come si può vedere dal registro degli eventi di git, il 9 Dicembre di quest'anno ho convertito il testo di questo documento dal formato originale (.odt) in formato Markdown (.md).
 
 ```
@@ -797,7 +797,12 @@ Date:   Sun Dec 9 10:30:25 2018 +0100
 
     Iniziata conversione Manifesto in Markdown
 ```
+La differenza fra i due formati è che il primo (.odt) non è un formato testuale puro.
+L'inizio di un documento in formato .odt appare così:
 
+>P?üGÜ?2'mimetypeapplication/vnd.oasis.opendocument.textP?G?m????Thumbnails/thumbnail.png?PNG ?Tw?Ü?Y?????7?????? Är?)J?:????޻?-??9?9?9?E9?S?>B??/?T?N˩ü?ʃ?T?N?Ar??? 9ՏSy???ǩ<HN??T$??q*?S?8?ɩü?ʃ?T?N?Ar??? 9ՏSy???ǩ<HN??T$??q*?S?8?ɩü?ʃ?T?N?Ar??? 9ՏSy??H?z?????:?sn'Z;ۇ*?ƨ?????????S??å¢??Oü?>5>F%?uV5????.??7????I??>r?oxÄ??A9?ü??o?ϛ??_?????????U/??+ϼ?g??Z???Wü????/?????z??E???????'?"f??OÜ????r???'????w>?߾??üiu?
+
+Al contrario, l'inizio di questo documento, 
 
 È interessante vedere come un modello teorico, nato da presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
 <br/>  
@@ -894,6 +899,8 @@ una affermazione che trovo affascinante perché, per la teoria spazionista, ciò
 [^variante]: L'utilizzo del termine scacchistico è intenzionale.
 
 [^spazione]: In realtà, il nome *spazione* è anche un riferimento, intenzionalmente auto-ironico, ai: *cosoni*, i baccelli del film *Totò sulla Luna*, parodia nostrana de: *L'invasione degli ultracorpi*.
+
+[^odt]: Una pacchetto di programmi *open-source* per la gestione dei documenti.
  
 [^gita]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni. 
  
