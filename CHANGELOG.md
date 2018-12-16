@@ -1,3 +1,6 @@
+## 0.4.4 (December 16, 2018)
+  - Modifiche minori prima di merge con file di bitbucket
+
 ## 0.4.3 (December 15, 2018)
   - Aggiunta nota su Einstein
   - Aggiunta nota sul basso accoppiamento a proposito dello Spazionismo
