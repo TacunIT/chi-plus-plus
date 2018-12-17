@@ -776,9 +776,10 @@ Al contrario, se gli elementi del sistema sono indipendenti gli uni dagli altri 
 ## Release/0.3: Git
 A Dicembre del 2016 divenne chiaro che anche se avessi potuto dedicare a questo progetto tutto il mio tempo (e non potevo), non sarei mai riuscito a portarlo a termine da solo: avevo bisogno di aiuto.
 Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *open-source* mi sembrò la cosa migliore da fare, così comnciai a scrivere questo Manifesto per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
-<br >  
+
+### Git
 *Git* è un sistema con cui si gestiscono le diverse versioni di un software, ma può essere utilizzato per tenere traccia delle modifiche di qualsiasi documento elettronico.  
-Leggendo il registro degli eventi di git possiamo vedere quali sono state le modifiche apportate al sistema:
+Leggendo il registro degli eventi di Git possiamo vedere quali sono state le modifiche apportate al sistema:
 
 ```
 *   commit fa61cc01a2c1c3aeedc94a8a8a795e932d17f98d (origin/master)
@@ -828,7 +829,7 @@ git clone git@bitbucket.org:canaro/chi-plus-plus.git
 ```
 
 ## Release/0.4: Markdown
-Come si può vedere dal registro degli eventi di git, il 9 Dicembre di quest'anno ho convertito il testo di questo documento dal formato originale (.odt) in formato Markdown (.md).
+Come si può vedere dal registro degli eventi di Git, il 9 Dicembre di quest'anno ho convertito il testo di questo documento dal formato originale (.odt) in formato Markdown (.md).
 
 ```
 commit ba7ff38b6d0862b13a79f10153c2eb11477b2a1f
@@ -849,14 +850,15 @@ Date:   Sun Dec 9 10:30:25 2018 +0100
 
     Iniziata conversione Manifesto in formato Markdown
 ```
-La differenza fra i due formati è che OpenDocument non è un formato testuale puro ed è più complicato da gestire con git. 
-Al contrario, Markdown è un formato *plain-text* che può essere aperto e modificato con un qualunque editor di testi e che è gestito senza problemi da git.
-<BR/>  
-Il passaggio a Markdown non è stato un vezzo, ma un obbligo, perché solo in questo modo è possibile avere un controllo completo sulle modifiche che sono apportate ai testi.
+La differenza fra i due formati è che OpenDocument non è un formato testuale puro ed è più complicato da gestire con Git. 
+Al contrario, Markdown è un formato *plain-text* che può essere aperto e modificato con un qualunque editor di testi e che è gestito senza problemi da Git.
+<br/>  
+Il passaggio a Markdown non è stato un vezzo, ma un obbligo, perché solo in questo modo è possibile avere un controllo completo sulle modifiche che sono apportate ai testi. Un beneficio collaterale dell'adozione di Markdown è la *portabilità* del testo: mentre un testo in formato OpenDocument può essere letto e modificato solo con un programma di desktop-publishing, come *Word* o una delle sue alternative, un testo Markdown può essere letto e modificato con qualunque strumento permetta di aprire e modificare file di testo, da *Notepad* a *vi*.
+
+### Portabilità 
+
 
 ### Portabilità del C'hi++
-È interessante vedere come un modello teorico, nato da presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
-<br/>  
 In questi giorni sto leggendo la *Bhagavad-Gita*[^gita].
 Alcuni passi mi hanno ricordato le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire "bene":
 
@@ -902,11 +904,10 @@ Ho trovato delle analogie ai precetti del C'hi++ anche nel poema iraniano *Manti
 <br />...  
 > O Creatore, tutto il male o il bene che feci, in verità lo feci solo a me stesso.
 
-Cito questi due testi perché non li conoscevo quando ho cominciato a formulare la mia teoria e quindi non è possibile che abbiano influenzato le mie affermazioni, al contrario di testi che conoscevo già, come il *Tao-tê-ching* o *Eureka*, di Poe.  
+Cito questi due testi perché non li conoscevo quando ho cominciato a formulare la mia teoria e quindi non è possibile che abbiano influenzato le mie affermazioni, diversamente da testi che conoscevo già, come il *Tao-tê-ching* o *Eureka*, di Poe.  
 Ho trovato altre analogie in frasi di filosofi greci come Eraclito, Zenone o Anassimandro, ma non ho avuto ancora modo di approfondirle.
 <br />  
-Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista: il Paradiso è l'Uno primigenio, dove i due principii *Prakṛti* (Eva) e *Puruṣa* (Adamo) sono uniti a Dio.
-Quando Prakṛti, con o senza la collaborazione di Puruṣa, altera lo stato di quiete dell'Uno, causandone la disgregazione, l'Energia dell'Uno è proiettata nello spazio, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte[^instagrammer]. 
+Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista: il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono l'Ente che ne causa la disgregazione, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte. 
 <br />  
 Un ultimo esempio, che però è poco più di un gioco di parole, e che riporto qui solo perché io *amo* i giochi di parole, lo otteniamo invertendo i fattori dell'equazione di Einstein:
 <div class="einstein">
@@ -920,7 +921,8 @@ In termini spazionistici, questo equivale a dire che l'Universo (tutta la massa)
 una affermazione che trovo affascinante perché, per la teoria spazionista, ciò che divide Dio creando l'Universo è un'entità che si può chiamare o Diavolo[^diavolo] o, anche, Lucifero[^lucifero]; in sostanza: *colui che divide* o *colui che porta la luce*.
 
 ### Una Google Maps mistica
-
+È interessante vedere come un modello teorico, nato da presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
+<br/>  
 
 
 ## Conclusioni
@@ -956,8 +958,6 @@ una affermazione che trovo affascinante perché, per la teoria spazionista, ciò
 [^gita]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni. 
  
 [^mantiq]: Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
-
-[^instagrammer]: A meno che tu non sia un famoso *instagrammer*, ovviamente.
 
 [^diavolo]: diàvolo s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. «calunniatore» (der. di διαβάλλω «gettare attraverso, calunniare»), adoperato nel gr. crist. per tradurre l’ebr. śāṭān «contraddittore, oppositore»].
 
