@@ -774,6 +774,58 @@ Se gli elementi interni di un sistema sono dipendenti gli uni dagli altri, la co
 Al contrario, se gli elementi del sistema sono indipendenti gli uni dagli altri e ciasuno di essi svolge solo un compito ben preciso, le modifiche o le correzioni su uno di essi avranno un impatto molto basso o addirittura nullo sul resto del sistema.
 
 ## Release/0.3: Git
+A Dicembre del 2016 divenne chiaro che anche se avessi potuto dedicare a questo progetto tutto il mio tempo (e non potevo), non sarei mai riuscito a portarlo a termine da solo: avevo bisogno di aiuto.
+Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *open-source* mi sembrò la cosa migliore da fare, così comnciai a scrivere questo Manifesto per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
+<br >  
+*Git* è un sistema con cui si gestiscono le diverse versioni di un software, ma può essere utilizzato per tenere traccia delle modifiche di qualsiasi documento elettronico.  
+Leggendo il registro degli eventi di git possiamo vedere quali sono state le modifiche apportate al sistema:
+
+```
+*   commit fa61cc01a2c1c3aeedc94a8a8a795e932d17f98d (origin/master)
+|\  Merge: ced4c8f 1746b3c
+| | Author: Carlo Simonelli <rc@nero-digitale.com>
+| | Date:   Sun Dec 16 20:10:08 2018 +0100
+| | 
+| |     Impotato il branch 'release/0.4.4' nel master originale di bitbucket.
+| | 
+| * commit 1746b3cbf73a74507bf39010799fee0390ccdb16 (tag: v0.4.4)
+| | Author: Carlo Simonelli <rc@nero-digitale.com>
+| | Date:   Sun Dec 16 20:08:12 2018 +0100
+| | 
+| |     Bump version to 0.4.4.
+| | 
+| * commit ef642e150a0237675a9c176a8a8f8d3cb34c5cb9
+| | Author: Carlo Simonelli <rc@nero-digitale.com>
+| | Date:   Sun Dec 16 19:51:30 2018 +0100
+| | 
+| |     Prima di merge con bitbucket
+| |   
+| *   commit e93ee12d95a75a06375eff64fbf571ca4b29f01f
+| |\  Merge: f3674cc 9e3989b
+| | | Author: Carlo Simonelli <rc@nero-digitale.com>
+| | | Date:   Sat Dec 15 19:42:22 2018 +0100
+| | | 
+| | |     Merge branch 'release/0.4.3'
+| | | 
+| | * commit 8385f9b13f713ef885f71b4ea0de72e2ffe0c5eb
+| | | Author: Carlo Simonelli <rc@nero-digitale.com>
+| | | Date:   Sat Dec 15 19:41:24 2018 +0100
+| | | 
+| | |     Aggiunta nota su Einstein
+| | | 
+| | * commit f1326b20c2fc3b84d0071944e2a4be780c09de71
+| | | Author: Carlo Simonelli <rc@nero-digitale.com>
+```
+Ciascuno di quei "commit" identificati da una stringa alfanumerica che si vedono nel codice qui sopra, è una "fotografia" del sistema in un determinato momento dello sviluppo.
+Se ci si accorge di aver fatto un errore, si può ritornare indietro, annullando le modifiche fatte e ripristinando la vecchia versione del sistema.
+<br >  
+Git permette inoltre di coordinare le modifiche fatte al codice da utenti diversi all'interno dello stesso gruppo di lavoro: ciascun collaboratore lavora su una copia locale dei file e poi trasmette le modifiche a un *repository* centrale dove tutte le modifiche sono integrate nella copia principale del progetto.
+<br >  
+Per ottenere una copia di tutto il codice e i testi di questo progetto è sufficiente eseguire il comando:
+
+```
+git clone git@bitbucket.org:canaro/chi-plus-plus.git
+```
 
 ## Release/0.4: Markdown
 Come si può vedere dal registro degli eventi di git, il 9 Dicembre di quest'anno ho convertito il testo di questo documento dal formato originale (.odt) in formato Markdown (.md).
@@ -795,15 +847,14 @@ commit f24b3147f8fee89f871ddceb171a6fb0a979cac1
 Author: Carlo Simonelli <rc@nero-digitale.com>
 Date:   Sun Dec 9 10:30:25 2018 +0100
 
-    Iniziata conversione Manifesto in Markdown
+    Iniziata conversione Manifesto in formato Markdown
 ```
-La differenza fra i due formati è che il primo (.odt) non è un formato testuale puro.
-L'inizio di un documento in formato .odt appare così:
+La differenza fra i due formati è che OpenDocument non è un formato testuale puro ed è più complicato da gestire con git. 
+Al contrario, Markdown è un formato *plain-text* che può essere aperto e modificato con un qualunque editor di testi e che è gestito senza problemi da git.
+<BR/>  
+Il passaggio a Markdown non è stato un vezzo, ma un obbligo, perché solo in questo modo è possibile avere un controllo completo sulle modifiche che sono apportate ai testi.
 
->P?üGÜ?2'mimetypeapplication/vnd.oasis.opendocument.textP?G?m????Thumbnails/thumbnail.png?PNG ?Tw?Ü?Y?????7?????? Är?)J?:????޻?-??9?9?9?E9?S?>B??/?T?N˩ü?ʃ?T?N?Ar??? 9ՏSy???ǩ<HN??T$??q*?S?8?ɩü?ʃ?T?N?Ar??? 9ՏSy???ǩ<HN??T$??q*?S?8?ɩü?ʃ?T?N?Ar??? 9ՏSy??H?z?????:?sn'Z;ۇ*?ƨ?????????S??å¢??Oü?>5>F%?uV5????.??7????I??>r?oxÄ??A9?ü??o?ϛ??_?????????U/??+ϼ?g??Z???Wü????/?????z??E???????'?"f??OÜ????r???'????w>?߾??üiu?
-
-Al contrario, l'inizio di questo documento, 
-
+### Portabilità del C'hi++
 È interessante vedere come un modello teorico, nato da presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
 <br/>  
 In questi giorni sto leggendo la *Bhagavad-Gita*[^gita].
@@ -900,7 +951,7 @@ una affermazione che trovo affascinante perché, per la teoria spazionista, ciò
 
 [^spazione]: In realtà, il nome *spazione* è anche un riferimento, intenzionalmente auto-ironico, ai: *cosoni*, i baccelli del film *Totò sulla Luna*, parodia nostrana de: *L'invasione degli ultracorpi*.
 
-[^odt]: Una pacchetto di programmi *open-source* per la gestione dei documenti.
+[^leopardi]: Il gioco di parole è intenzionale.
  
 [^gita]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni. 
  
