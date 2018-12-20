@@ -864,8 +864,12 @@ può funzionare solo su un computer a cui sia stato insegnato come generare quel
 
 Traslando questo concetto in termini letterarii, una vignetta di satira politica  non è *portabile*, perché implica una conoscenza sia del soggetto della vignetta che dell'evento a cui si riferisce; al contrario, una (buona) poesia è *portabile*, perché si riferisce a concetti universali che chiunque è in grado di capire.
 
-
 ### Portabilità del C'hi++
+*C'hi++* si riferisce alla programmazione dei computer, che è un ambito specifico di un settore specifico, quindi ha un bassissimo grado di portabilità.  
+Se fra duecento anni un archeologo ritrovasse i quaderni con i miei appunti, potrebbe non capire a cosa io mi stia riferendo, mentre capirebbe perfettamente cosa simboleggiano l'Oca, l'Usignolo o il Pavone nel poema iraniano *Mantiq al-Tayr*, che è stato scritto nel XII secolo.
+
+#[da-qui]
+
 In questi giorni sto leggendo la *Bhagavad-Gita*[^gita].
 Alcuni passi mi hanno ricordato le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire "bene":
 
@@ -903,7 +907,7 @@ una predisposizione innata che lo induce, nel bene come nel male, ad un
 comportamento analogo a quello che ha tenuto in passato, creando un
 circolo vizioso (o virtuoso) che si autoalimenta.
 
-Ho trovato delle analogie ai precetti del C'hi++ anche nel poema iraniano *Mantiq al-Tayr*[^mantiq].  
+Ho trovato delle analogie ai precetti del C'hi++ anche nel *Mantiq al-Tayr*[^mantiq]:  
 
 > Tutto è un'unica sostanza in molteplici forme, tutto è un unico discorso in diverse espressioni.
 <br />...    
