@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.1.2 concept-map (C&apos;hi++.vue) 2013-05-21 -->
+<!-- Tufts VUE 3.3.0 concept-map (C&apos;hi++.vue) 2018-12-20 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
-<!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Tue May 21 01:20:23 CEST 2013 by Carlo on platform Mac OS X 10.8.3 in JVM 1.6.0_45-b06-451-11M4406 -->
-<!-- Do Not Remove: Saving version @(#)VUE: built March 8 2012 at 1310 by vue on Linux 2.4.21-63.EL i386 JVM 1.5.0_06-b05(bits=32) -->
+<!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
+<!-- Do Not Remove: Saved date Thu Dec 20 09:37:40 CET 2018 by Carlo on platform Mac OS X 10.14.1 in JVM 1.8.0_25-b17 -->
+<!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="C'hi++.vue"
-    created="1267825536130" x="0.0" y="0.0" width="6490.3984"
-    height="2946.9395" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1369092023618" size="674252"
+    created="1267825536130" x="0.0" y="0.0" width="2201.2554"
+    height="1145.2747" strokeWidth="0.0" autoSized="false">
+    <resource referenceCreated="1545295060439" size="675768"
         spec="/Users/Carlo/Dropbox/Canaro/C'hi++/C'hi++.vue" type="1" xsi:type="URLResource">
         <title>C'hi++.vue</title>
         <property key="File" value="/Users/Carlo/Dropbox/Canaro/C'hi++/C'hi++.vue"/>
@@ -17,15 +17,6 @@
     <strokeColor>#404040</strokeColor>
     <textColor>#000000</textColor>
     <font>SansSerif-plain-14</font>
-    <metadata-list category-list-size="1" other-list-size="0"
-        ontology-list-size="0" RCategoryListSize="0">
-        <ontology-list-string></ontology-list-string>
-        <metadata xsi:type="vue-metadata-element">
-            <value></value>
-            <key>http://vue.tufts.edu/vue.rdfs#none</key>
-            <type>1</type>
-        </metadata>
-    </metadata-list>
     <URIString>http://vue.tufts.edu/rdf/resource/304ae827c0a8010a0179d47fc366704d</URIString>
     <child ID="555" layerID="374" created="1367875198461" x="-1309.9768"
         y="-897.96454" width="3746.9827" height="2964.317"
@@ -34,15 +25,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7bbbe0467f000001019e80b13fc086f2</URIString>
         <point1 x="-1308.9768" y="-896.96454"/>
         <point2 x="2436.0059" y="2065.3523"/>
@@ -57,15 +39,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-bold-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7bbbe0477f000001019e80b1c33715b5</URIString>
         <point1 x="-1304.7175" y="-898.3138"/>
         <point2 x="2482.0845" y="1974.8285"/>
@@ -81,15 +54,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/77642314c0a8010d011c34fb16fad81b</URIString>
         <point1 x="-3071.0042" y="49.78241"/>
         <point2 x="409.0947" y="3301.693"/>
@@ -104,15 +68,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c92a5545c0a8010b008d116ea016b005</URIString>
         <point1 x="-3.081259" y="-153.28375"/>
         <point2 x="93.941826" y="3045.6665"/>
@@ -127,15 +82,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283bac0a8010d005730f892aef8f1</URIString>
         <point1 x="288.07782" y="335.27884"/>
         <point2 x="1487.3782" y="668.59534"/>
@@ -150,15 +96,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca3bc0a8010b00b4cbc5047f22c0</URIString>
         <point1 x="-377.5306" y="1724.084"/>
         <point2 x="-2101.0188" y="931.66125"/>
@@ -173,15 +110,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/77642315c0a8010d011c34fbd56dc4ea</URIString>
         <point1 x="-2847.3962" y="1674.0808"/>
         <point2 x="661.85565" y="3293.4143"/>
@@ -197,15 +125,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86db99a6c0a8010d00397ceafaef4cf0</URIString>
         <point1 x="1638.9886" y="2541.5762"/>
         <point2 x="-2637.4968" y="-821.99927"/>
@@ -220,15 +139,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283b8c0a8010d005730f8475b3b31</URIString>
         <point1 x="-2287.424" y="68.66423"/>
         <point2 x="156.66277" y="2371.8257"/>
@@ -243,15 +153,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/87350b3ec0a8010d010ad41960f8180c</URIString>
         <point1 x="1467.3014" y="528.73206"/>
         <point2 x="-1041.7755" y="-1210.4011"/>
@@ -266,15 +167,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c612c95c0a8010d005730f850ab3407</URIString>
         <point1 x="955.5901" y="766.1204"/>
         <point2 x="1492.9178" y="2323.793"/>
@@ -289,15 +181,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/b4d46a90c0a8010b0047fc71f069733b</URIString>
         <point1 x="-2636.6616" y="-1114.4932"/>
         <point2 x="-2530.7375" y="-1002.4983"/>
@@ -311,15 +194,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/bf4cf484c0a8010b00b4cbc57d6e0109</URIString>
         <point1 x="-1745.4191" y="2333.6704"/>
         <point2 x="-1915.1044" y="-933.855"/>
@@ -334,15 +208,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c4881d82c0a8010b0127669d5ceaa08c</URIString>
         <point1 x="-175.08124" y="679.8134"/>
         <point2 x="-332.0604" y="1596.0525"/>
@@ -356,15 +221,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c928fe2bc0a8010b008d116eb140781d</URIString>
         <point1 x="71.0297" y="3045.5183"/>
         <point2 x="-1325.6973" y="-1168.8342"/>
@@ -378,15 +234,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/77642312c0a8010d011c34fb7735134e</URIString>
         <point1 x="852.9987" y="2976.1338"/>
         <point2 x="-2160.644" y="222.47742"/>
@@ -401,15 +248,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0c5ebe74c0a8010b003b6dbd9d9eac9b</URIString>
         <point1 x="-2586.3652" y="-602.35767"/>
         <point2 x="-3121.602" y="35.2063"/>
@@ -424,15 +262,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0c822760c0a8010b003b6dbdbf2d7362</URIString>
         <point1 x="-3095.4321" y="-168.30908"/>
         <point2 x="169.49493" y="2100.0662"/>
@@ -447,15 +276,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0c933af7c0a8010b003b6dbdbc66541f</URIString>
         <point1 x="-3110.683" y="-176.83044"/>
         <point2 x="-2374.3022" y="-1047.5605"/>
@@ -470,15 +290,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/35c00e8fc0a8010b016b4be549c6897d</URIString>
         <point1 x="-3301.9531" y="1286.2598"/>
         <point2 x="-3564.0078" y="1377.758"/>
@@ -492,15 +303,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/4fb7188ec0a8010b006d65fd49229205</URIString>
         <point1 x="-1734.489" y="-984.5879"/>
         <point2 x="1952.8691" y="2785.4907"/>
@@ -515,15 +317,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/4a847d33c0a8010b003256a5692d945c</URIString>
         <point1 x="358.73047" y="-152.87228"/>
         <point2 x="-3648.4426" y="-167.80464"/>
@@ -538,15 +331,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/4a75cf2ac0a8010b003256a5880ba11a</URIString>
         <point1 x="449.49863" y="-174.73601"/>
         <point2 x="1366.4344" y="-85.0061"/>
@@ -561,15 +345,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/4f9f022dc0a8010b006d65fd3aeb9688</URIString>
         <point1 x="1374.8267" y="104.932465"/>
         <point2 x="1965.1118" y="2783.8328"/>
@@ -584,15 +359,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/4fbd1c58c0a8010b006d65fd2935c775</URIString>
         <point1 x="2351.7595" y="2425.6106"/>
         <point2 x="-1316.3202" y="-895.4163"/>
@@ -607,15 +373,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/edd4e8c47f000001016c006e47a22c45</URIString>
         <point1 x="-731.11" y="-864.3707"/>
         <point2 x="903.93695" y="-935.28284"/>
@@ -630,15 +387,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0fa90cdec0a80104005fe568289355a6</URIString>
         <point1 x="-2185.0825" y="2730.3328"/>
         <point2 x="1786.7311" y="2660.3325"/>
@@ -653,15 +401,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0fd9ceb7c0a80104005fe568e69e98dc</URIString>
         <point1 x="-1750.6241" y="-777.32495"/>
         <point2 x="2553.7734" y="1674.3755"/>
@@ -676,15 +415,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7bd391557f000001019e80b1b1522422</URIString>
         <point1 x="-1501.1626" y="-739.613"/>
         <point2 x="1936.7399" y="1865.743"/>
@@ -699,15 +429,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7bd391557f000001019e80b1b1e589a5</URIString>
         <point1 x="-642.2049" y="-986.59814"/>
         <point2 x="1937.8809" y="1865.4025"/>
@@ -722,15 +443,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80b9aac47f00000101a8c22b91fef956</URIString>
         <point1 x="-1446.4987" y="-848.36945"/>
         <point2 x="1936.9813" y="1865.6709"/>
@@ -745,15 +457,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-bold-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80f585637f00000101a8c22bb053361f</URIString>
         <point1 x="-1528.1068" y="-982.99725"/>
         <point2 x="2020.5895" y="1594.113"/>
@@ -768,15 +471,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7749dbd0c0a8010d011c34fb3cde9121</URIString>
         <point1 x="-2885.0728" y="1495.9971"/>
         <point2 x="2044.2622" y="2320.1265"/>
@@ -791,15 +485,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/2d1d68f37f00000100f3c66e0be31cfe</URIString>
         <point1 x="1156.7584" y="2289.4478"/>
         <point2 x="-2133.3735" y="379.93304"/>
@@ -814,15 +499,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80d1e9827f00000101a8c22b02dae070</URIString>
         <point1 x="1918.2596" y="1876.8492"/>
         <point2 x="-2699.406" y="1390.4934"/>
@@ -837,15 +513,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80d880047f00000101a8c22b09e3d537</URIString>
         <point1 x="1972.7676" y="2103.2563"/>
         <point2 x="-3080.4402" y="1401.3301"/>
@@ -860,15 +527,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80e34ded7f00000101a8c22bbea97038</URIString>
         <point1 x="1824.2958" y="1987.1401"/>
         <point2 x="-2427.831" y="1312.6511"/>
@@ -884,15 +542,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/347bc956c0a8010b00a5d7f2361ca977</URIString>
         <point1 x="-2681.7554" y="85.75612"/>
         <point2 x="692.4478" y="-129.3235"/>
@@ -906,15 +555,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/344da042c0a8010b00a5d7f2c85b8bfd</URIString>
         <point1 x="-3204.6804" y="1284.169"/>
         <point2 x="2156.1655" y="2827.5442"/>
@@ -928,15 +568,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7749dbcdc0a8010d011c34fb0e7bdd86</URIString>
         <point1 x="1604.079" y="2549.1165"/>
         <point2 x="-3203.6113" y="1283.2202"/>
@@ -950,15 +581,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/872bdc35c0a8010d00c1c2f1a7b363d7</URIString>
         <point1 x="-2102.9988" y="-700.38477"/>
         <point2 x="-2305.3962" y="2174.0625"/>
@@ -973,15 +595,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7749db97c0a8010d011c34fb06cb712f</URIString>
         <point1 x="1832.726" y="2435.6592"/>
         <point2 x="-2505.4373" y="-766.83887"/>
@@ -995,15 +608,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86e18ccbc0a8010d00397cea33896c30</URIString>
         <point1 x="-2057.3396" y="-707.77264"/>
         <point2 x="470.80685" y="79.73123"/>
@@ -1017,15 +621,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86e815e0c0a8010d00397cea0cea81b4</URIString>
         <point1 x="-2184.3984" y="-656.0183"/>
         <point2 x="-210.15451" y="-288.77606"/>
@@ -1040,15 +635,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/346d4dd2c0a8010b00a5d7f2122a561c</URIString>
         <point1 x="-3649.0264" y="100.572266"/>
         <point2 x="-61.28311" y="-158.32236"/>
@@ -1062,15 +648,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/872bdc35c0a8010d00c1c2f10d441f47</URIString>
         <point1 x="-2202.2632" y="238.71875"/>
         <point2 x="-2513.936" y="2390.2197"/>
@@ -1084,15 +661,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/b1a0a5b5c0a8010d01da1f9910d7d7ab</URIString>
         <point1 x="875.5263" y="480.02283"/>
         <point2 x="-1725.5737" y="2336.6646"/>
@@ -1106,15 +674,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3434ba83c0a8010b00a5d7f218b20b98</URIString>
         <point1 x="-1376.0332" y="-1168.8342"/>
         <point2 x="-3000.0454" y="621.98584"/>
@@ -1128,15 +687,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/862818017f0000010150b06b25245c9e</URIString>
         <point1 x="-1701.0641" y="-1338.5673"/>
         <point2 x="2286.0952" y="2155.0322"/>
@@ -1151,15 +701,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-bold-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/863b33a57f0000010150b06b91d5345e</URIString>
         <point1 x="-3822.0366" y="804.40436"/>
         <point2 x="1557.12" y="-96.96915"/>
@@ -1174,15 +715,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/8b603a0d7f0000010163f47ee545b117</URIString>
         <point1 x="544.3105" y="793.87836"/>
         <point2 x="-2711.045" y="115.66687"/>
@@ -1197,15 +729,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/8b7c257d7f0000010163f47e697c2eb8</URIString>
         <point1 x="73.701775" y="-348.2461"/>
         <point2 x="1260.4482" y="2177.6196"/>
@@ -1220,15 +743,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-bold-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/a010a0b07f0000010021477c8b001d2a</URIString>
         <point1 x="-3829.7651" y="837.7894"/>
         <point2 x="2398.0974" y="1041.5924"/>
@@ -1243,15 +757,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/a010a0b17f0000010021477c60ad05b0</URIString>
         <point1 x="1374.6455" y="-42.963135"/>
         <point2 x="2239.2285" y="773.27747"/>
@@ -1267,15 +772,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-bold-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3df3ec97f00000101cc6a6aff0a307e</URIString>
         <point1 x="-2589.171" y="1114.561"/>
         <point2 x="2996.8071" y="1247.8616"/>
@@ -1290,15 +786,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-bold-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3df3f277f00000101cc6a6a47d869a4</URIString>
         <point1 x="1188.8022" y="-749.21234"/>
         <point2 x="3009.017" y="1015.1699"/>
@@ -1315,15 +802,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c424e3657f00000101cc6a6ac43bbcf9</URIString>
         <point1 x="-3073.674" y="1407.2454"/>
         <point2 x="1803.6935" y="753.5525"/>
@@ -1338,15 +816,6 @@
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c43e65957f000001003fc9b6376a9056</URIString>
         <point1 x="2927.5808" y="1027.6418"/>
         <point2 x="-2422.9365" y="-76.66873"/>
@@ -1363,24 +832,9 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="3" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>natura dell'arte</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value>classi astratte</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="natura dell'arte"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="classi astratte"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/b1a0a5b5c0a8010d01da1f99affd5f53</URIString>
         <shape xsi:type="ellipse"/>
@@ -1394,15 +848,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/872bdc35c0a8010d00c1c2f1e5f36535</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -1413,15 +858,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/872bdc35c0a8010d00c1c2f1f463217f</URIString>
         <point1 x="-2257.2437" y="2444.4023"/>
         <point2 x="-2300.5195" y="2242.335"/>
@@ -1435,15 +871,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca39c0a8010b00b4cbc5c0a9ed4f</URIString>
         <shape xsi:type="rectangle"/>
     </child>
@@ -1454,15 +881,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#FFFFFF</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca39c0a8010b00b4cbc57a3acbd4</URIString>
         <shape xsi:type="hexagon"/>
     </child>
@@ -1473,15 +891,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca3ac0a8010b00b4cbc5c800b492</URIString>
         <point1 x="-2209.301" y="2730.336"/>
         <point2 x="-2211.29" y="2629.9688"/>
@@ -1495,15 +904,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca3ac0a8010b00b4cbc5eb6b4f51</URIString>
         <point1 x="-2310.925" y="2457.5596"/>
         <point2 x="-2445.2217" y="2436.1133"/>
@@ -1517,15 +917,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca3ac0a8010b00b4cbc55835954f</URIString>
         <point1 x="-2176.0095" y="2730.3325"/>
         <point2 x="-1794.744" y="2391.5596"/>
@@ -1540,15 +931,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#FFFFFF</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c940f79cc0a8010b008d116e73188c9b</URIString>
         <shape xsi:type="diamond"/>
     </child>
@@ -1559,15 +941,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c940f79cc0a8010b008d116ef56347c2</URIString>
         <point1 x="-2218.7827" y="2580.1914"/>
         <point2 x="-2245.7432" y="2489.4023"/>
@@ -1584,15 +957,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/872bdc34c0a8010d00c1c2f114688864</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -1604,24 +968,10 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="3" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Duchamp</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Ananda</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Attivit&#xe0; artistica</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Duchamp"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Ananda"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Attivit&#xe0; artistica"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/bf23a3a5c0a8010b015e8a8fe42d9da5</URIString>
         <shape xsi:type="ellipse"/>
@@ -1633,15 +983,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca3ac0a8010b00b4cbc5090db024</URIString>
         <point1 x="-2193.925" y="2481.7705"/>
         <point2 x="-2119.233" y="2500.7544"/>
@@ -1662,100 +1003,55 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34133343c0a8010b00a5d7f2ffb09156</URIString>
         <shape xsi:type="hexagon"/>
     </child>
-    <child ID="13" layerID="1" created="1293658194387" x="-1675.8706"
-        y="-1187.4155" width="244.1659" height="59.98816"
+    <child ID="13" layerID="1" created="1293658194387" x="-1670.0012"
+        y="-1184.1821" width="242.75452" height="71.42151"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34133345c0a8010b00a5d7f20c9c7697</URIString>
-        <point1 x="-1432.2046" y="-1186.9155"/>
-        <point2 x="-1675.3705" y="-1127.9274"/>
+        <point1 x="-1427.7468" y="-1183.6823"/>
+        <point2 x="-1669.5013" y="-1113.2607"/>
         <ID1 xsi:type="node">12</ID1>
         <ID2 xsi:type="node">20</ID2>
     </child>
-    <child ID="16" layerID="1" created="1293658221798" x="-1758.9177"
-        y="-1087.4277" width="5.099121" height="58.578125"
+    <child ID="16" layerID="1" created="1293658221798" x="-1749.35"
+        y="-1072.7607" width="7.1115723" height="44.78711"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34133348c0a8010b00a5d7f296080671</URIString>
-        <point1 x="-1758.4177" y="-1086.9277"/>
-        <point2 x="-1754.3186" y="-1029.3496"/>
+        <point1 x="-1742.7384" y="-1072.2607"/>
+        <point2 x="-1748.85" y="-1028.4736"/>
         <ID1 xsi:type="node">20</ID1>
         <ID2 xsi:type="node">24</ID2>
     </child>
     <child ID="20" label="Linguaggi OO" layerID="1"
-        created="1293658263676" x="-1847.8772" y="-1127.9274"
+        created="1293658263676" x="-1827.8772" y="-1113.2607"
         width="176.0" height="41.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#FFC63B</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34133349c0a8010b00a5d7f2a62ef48b</URIString>
         <shape xsi:type="rectangle"/>
     </child>
     <child ID="21" layerID="1" created="1293658302679" x="-2004.5835"
-        y="-1100.7903" width="157.2063" height="13.668945"
+        y="-1090.593" width="177.2063" height="6.3414307"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3413334ac0a8010b00a5d7f224867f86</URIString>
-        <point1 x="-1847.8772" y="-1100.2903"/>
-        <point2 x="-2004.0835" y="-1087.6213"/>
+        <point1 x="-1827.8772" y="-1090.0931"/>
+        <point2 x="-2004.0835" y="-1084.7517"/>
         <ID1 xsi:type="node">20</ID1>
         <ID2 xsi:type="node">8</ID2>
     </child>
@@ -1767,15 +1063,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3413334bc0a8010b00a5d7f2b4c08370</URIString>
         <shape xsi:type="diamond"/>
     </child>
@@ -1787,15 +1074,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3413334dc0a8010b00a5d7f2e71a5e90</URIString>
         <shape xsi:type="diamond"/>
     </child>
@@ -1806,59 +1084,32 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3413334ec0a8010b00a5d7f2f7e16289</URIString>
         <shape xsi:type="diamond"/>
     </child>
-    <child ID="30" layerID="1" created="1293658671960" x="-1724.8461"
-        y="-1087.4274" width="128.42798" height="74.52075"
+    <child ID="30" layerID="1" created="1293658671960" x="-1703.6947"
+        y="-1072.7607" width="106.72412" height="60.08374"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3413334ec0a8010b00a5d7f23726a60b</URIString>
-        <point1 x="-1724.3461" y="-1086.9274"/>
-        <point2 x="-1596.9181" y="-1013.4066"/>
+        <point1 x="-1703.1947" y="-1072.2607"/>
+        <point2 x="-1597.4706" y="-1013.177"/>
         <ID1 xsi:type="node">20</ID1>
         <ID2 xsi:type="node">27</ID2>
     </child>
-    <child ID="31" layerID="1" created="1293658673520" x="-1746.3423"
-        y="-1208.1421" width="55.575317" height="80.71484"
+    <child ID="31" layerID="1" created="1293658673520" x="-1730.8878"
+        y="-1206.321" width="43.84619" height="93.5603"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3413334fc0a8010b00a5d7f2da098ab1</URIString>
-        <point1 x="-1745.8424" y="-1127.9272"/>
-        <point2 x="-1691.2671" y="-1207.6421"/>
+        <point1 x="-1730.3878" y="-1113.2607"/>
+        <point2 x="-1687.5416" y="-1205.821"/>
         <ID1 xsi:type="node">20</ID1>
         <ID2 xsi:type="node">28</ID2>
     </child>
@@ -1870,15 +1121,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34133350c0a8010b00a5d7f2c5c4dbdb</URIString>
         <shape xsi:type="diamond"/>
     </child>
@@ -1889,15 +1131,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34133351c0a8010b00a5d7f2c320a9b0</URIString>
         <shape xsi:type="diamond"/>
     </child>
@@ -1909,15 +1142,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34133352c0a8010b00a5d7f258049dfc</URIString>
         <shape xsi:type="diamond"/>
     </child>
@@ -1928,15 +1152,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34133358c0a8010b00a5d7f255219349</URIString>
         <shape xsi:type="diamond"/>
     </child>
@@ -1947,15 +1162,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34133359c0a8010b00a5d7f225d09d0f</URIString>
         <point1 x="-2117.0835" y="-1081.1458"/>
         <point2 x="-2324.3547" y="-1074.2002"/>
@@ -1969,15 +1175,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34133359c0a8010b00a5d7f24852d8e8</URIString>
         <point1 x="-2090.0286" y="-1065.0391"/>
         <point2 x="-2319.7131" y="-924.63074"/>
@@ -1991,15 +1188,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3413335ac0a8010b00a5d7f279ab96cd</URIString>
         <point1 x="-2058.8135" y="-1065.041"/>
         <point2 x="-2039.6196" y="-869.8574"/>
@@ -2013,15 +1201,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3413335bc0a8010b00a5d7f222df367f</URIString>
         <point1 x="-2075.5376" y="-1101.0391"/>
         <point2 x="-2214.9883" y="-1268.8938"/>
@@ -2035,15 +1214,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/341f1bd4c0a8010b00a5d7f2a92e8c3f</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -2054,15 +1224,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/341f1bd4c0a8010b00a5d7f2e25c6853</URIString>
         <shape xsi:type="diamond"/>
     </child>
@@ -2074,15 +1235,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/341f1bd4c0a8010b00a5d7f2a606af18</URIString>
         <shape xsi:type="diamond"/>
     </child>
@@ -2093,15 +1245,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/341f1bd5c0a8010b00a5d7f2daced033</URIString>
         <point1 x="-1336.714" y="-1250.1348"/>
         <point2 x="-1326.4387" y="-1420.2422"/>
@@ -2115,15 +1258,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3423b650c0a8010b00a5d7f2596116ab</URIString>
         <point1 x="-2058.805" y="-1101.0391"/>
         <point2 x="-2042.3839" y="-1267.2168"/>
@@ -2137,15 +1271,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3423b651c0a8010b00a5d7f26f9ebce5</URIString>
         <point1 x="-2110.8408" y="-1101.0391"/>
         <point2 x="-2325.848" y="-1178.0454"/>
@@ -2159,15 +1284,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3423b652c0a8010b00a5d7f23cd82ca1</URIString>
         <point1 x="-2071.1018" y="-1065.0391"/>
         <point2 x="-2161.8816" y="-909.687"/>
@@ -2181,15 +1297,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34133342c0a8010b00a5d7f2995cd59e</URIString>
         <shape xsi:type="rectangle"/>
     </child>
@@ -2200,15 +1307,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3463a373c0a8010b00a5d7f29a214b1b</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -2219,15 +1317,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3463a373c0a8010b00a5d7f257a90663</URIString>
         <point1 x="-1788.6213" y="-994.01294"/>
         <point2 x="-1889.6012" y="-969.4321"/>
@@ -2241,15 +1330,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/347bc948c0a8010b00a5d7f2e3abb5fa</URIString>
         <shape xsi:type="diamond"/>
     </child>
@@ -2260,15 +1340,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7749db95c0a8010d011c34fbd958c9ec</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -2279,15 +1350,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7749db96c0a8010d011c34fb1d48c459</URIString>
         <point1 x="-2373.1243" y="-904.59937"/>
         <point2 x="-2472.9922" y="-882.07666"/>
@@ -2304,15 +1366,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7803c782c0a8010d001370ab7ed5b32e</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
@@ -2323,15 +1376,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7803c783c0a8010d001370ab4ebb6aca</URIString>
         <point1 x="-1513.819" y="-988.93365"/>
         <point2 x="-893.152" y="-903.77686"/>
@@ -2346,15 +1390,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86db9810c0a8010d00397cead0b5a970</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -2365,15 +1400,6 @@
         <strokeColor>#5252A8</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86db9810c0a8010d00397ceaffbbcc43</URIString>
         <point1 x="-2540.813" y="-867.6703"/>
         <point2 x="-2604.846" y="-854.8869"/>
@@ -2389,15 +1415,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86e18cc8c0a8010d00397cea50de705b</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -2408,15 +1425,6 @@
         <strokeColor>#5252A8</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86e18cc8c0a8010d00397cea75c9269a</URIString>
         <point1 x="-2329.871" y="-894.8589"/>
         <point2 x="-2271.4045" y="-799.927"/>
@@ -2432,15 +1440,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86e18cc9c0a8010d00397cea77312a51</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -2451,15 +1450,6 @@
         <strokeColor>#5252A8</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86e18ccac0a8010d00397ceaee345cf2</URIString>
         <point1 x="-2219.0852" y="-764.14636"/>
         <point2 x="-2142.8718" y="-736.523"/>
@@ -2476,15 +1466,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-italic-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86e815dfc0a8010d00397cea8c4a1c97</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -2495,15 +1476,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86e815dfc0a8010d00397cead41c713e</URIString>
         <point1 x="-2102.5542" y="-700.3711"/>
         <point2 x="-2108.3223" y="-583.4922"/>
@@ -2517,15 +1489,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86e815e0c0a8010d00397cea84533789</URIString>
         <point1 x="-2138.7703" y="-705.31335"/>
         <point2 x="-2200.817" y="-678.30695"/>
@@ -2540,15 +1503,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86e815e0c0a8010d00397ceab496adcc</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -2561,15 +1515,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86ef7aa4c0a8010d00397cea192b5f36</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -2582,15 +1527,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86ef7aa4c0a8010d00397cea1eb68a21</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
@@ -2601,15 +1537,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86ef7aa4c0a8010d00397cea3fda95fd</URIString>
         <shape xsi:type="rectangle"/>
     </child>
@@ -2620,15 +1547,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86ef7aa4c0a8010d00397cea8be18393</URIString>
         <point1 x="-1260.3729" y="-1176.5881"/>
         <point2 x="-1046.8154" y="-1087.4315"/>
@@ -2642,15 +1560,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86ef7aa5c0a8010d00397cea52aeaba2</URIString>
         <point1 x="-762.8214" y="-1120.5463"/>
         <point2 x="-674.7494" y="-1037.5981"/>
@@ -2664,15 +1573,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86ef7aa5c0a8010d00397ceaed0dd157</URIString>
         <point1 x="-951.51874" y="-1087.4315"/>
         <point2 x="-853.92596" y="-1127.5958"/>
@@ -2686,15 +1586,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/872bdbefc0a8010d00c1c2f121702e8e</URIString>
         <point1 x="-1134.3083" y="-1248.1971"/>
         <point2 x="-1986.4761" y="-1292.7317"/>
@@ -2709,15 +1600,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/b4d46a8dc0a8010b0047fc715d34de24</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
@@ -2728,15 +1610,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/b4d46a8dc0a8010b0047fc71535224b1</URIString>
         <point1 x="-2400.6584" y="-1181.5626"/>
         <point2 x="-2586.7368" y="-1141.4932"/>
@@ -2751,15 +1624,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/b4d46a8ec0a8010b0047fc7130f7d8f3</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
@@ -2770,15 +1634,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/b4d46a8fc0a8010b0047fc71a3b69157</URIString>
         <point1 x="-2365.3225" y="-922.78174"/>
         <point2 x="-2486.848" y="-975.49817"/>
@@ -2792,15 +1647,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/b4d46a91c0a8010b0047fc71deb5381d</URIString>
         <point1 x="-2421.6108" y="-1080.8772"/>
         <point2 x="-2584.1538" y="-1114.4932"/>
@@ -2816,15 +1662,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c4b6f61fc0a8010b00374956b590822b</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -2835,15 +1672,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c4b6f620c0a8010b0037495673b7c51e</URIString>
         <point1 x="-1386.9373" y="-1250.1343"/>
         <point2 x="-1509.2175" y="-1354.1937"/>
@@ -2859,15 +1687,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0c5b34a2c0a8010b003b6dbd7a2cfe6b</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -2878,15 +1697,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0c5b34a3c0a8010b003b6dbdbd4ac661</URIString>
         <point1 x="-2353.1711" y="-895.83203"/>
         <point2 x="-2543.844" y="-654.5442"/>
@@ -2901,15 +1711,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0c5b34a3c0a8010b003b6dbd703688c6</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -2920,15 +1721,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0c5b34a3c0a8010b003b6dbd3c67287c</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -2940,15 +1732,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0c5b34a3c0a8010b003b6dbd8e890be3</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -2959,15 +1742,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0c5b34a4c0a8010b003b6dbd5f250469</URIString>
         <point1 x="-2402.1301" y="-1198.2291"/>
         <point2 x="-2537.6663" y="-1223.7727"/>
@@ -2981,15 +1755,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0c5b34a4c0a8010b003b6dbd18a91697</URIString>
         <point1 x="-2385.265" y="-1207.5503"/>
         <point2 x="-2500.4858" y="-1286.4302"/>
@@ -3003,15 +1768,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0c5b34a4c0a8010b003b6dbdb65c6a16</URIString>
         <point1 x="-2555.2048" y="-1321.2206"/>
         <point2 x="-2605.8171" y="-1351.136"/>
@@ -3034,15 +1790,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/5208aa31c0a8010600b72ce190b7d9e6</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3053,15 +1800,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/5208aa33c0a8010600b72ce106803212</URIString>
         <point1 x="-1290.4165" y="-1250.1343"/>
         <point2 x="-1130.855" y="-1383.176"/>
@@ -3076,15 +1814,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/2d2dc5947f00000100f3c66e5dea2f81</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3095,15 +1824,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/2d2dc5947f00000100f3c66e90318af2</URIString>
         <point1 x="-2359.366" y="-898.55396"/>
         <point2 x="-2504.8323" y="-795.53284"/>
@@ -3117,15 +1837,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0fd9ce64c0a80104005fe568c692d8e2</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3136,15 +1847,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0fd9ce64c0a80104005fe568fcc8ca47</URIString>
         <point1 x="-2364.0618" y="-1219.2695"/>
         <point2 x="-2378.3267" y="-1322.8047"/>
@@ -3159,15 +1861,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0fd9ce65c0a80104005fe568019ca7b0</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3178,15 +1871,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0fd9ce65c0a80104005fe568476c4887</URIString>
         <point1 x="-1909.4609" y="-935.5066"/>
         <point2 x="-1810.7562" y="-820.396"/>
@@ -3201,15 +1885,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7bbbdfda7f000001019e80b13995ab39</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3220,15 +1895,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7bbbdfdb7f000001019e80b1e75948cb</URIString>
         <point1 x="-1714.3379" y="-994.9946"/>
         <point2 x="-1410.7217" y="-932.6013"/>
@@ -3243,15 +1909,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7bd390fc7f000001019e80b1984e8e3a</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3262,15 +1919,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7bd390fd7f000001019e80b1f21e6f82</URIString>
         <point1 x="-1736.2289" y="-983.68933"/>
         <point2 x="-1571.4364" y="-789.07275"/>
@@ -3286,15 +1934,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80b9aa567f00000101a8c22b516941df</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3305,15 +1944,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80b9aa577f00000101a8c22b334aeb06</URIString>
         <point1 x="-1725.1362" y="-989.418"/>
         <point2 x="-1529.5442" y="-893.35876"/>
@@ -3329,14 +1959,8 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>gerarchia delle funzioni</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="gerarchia delle funzioni"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/81096c1a7f00000101a8c22bc2f9f31e</URIString>
         <shape xsi:type="ellipse"/>
@@ -3348,15 +1972,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/81096c1b7f00000101a8c22bf359cdd3</URIString>
         <point1 x="-1889.7551" y="-1409.0125"/>
         <point2 x="-1805.962" y="-1383.1959"/>
@@ -3372,14 +1987,8 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>isolamento funzionale</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="isolamento funzionale"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/81096c1b7f00000101a8c22b546f52dd</URIString>
         <shape xsi:type="ellipse"/>
@@ -3391,15 +2000,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/81096c1b7f00000101a8c22bcdb490b7</URIString>
         <point1 x="-2026.2709" y="-1318.4629"/>
         <point2 x="-1979.4423" y="-1399.1824"/>
@@ -3414,15 +2014,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/81096c1c7f00000101a8c22ba1b7f05a</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3433,15 +2024,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/81096c1c7f00000101a8c22b10ffc1d4</URIString>
         <point1 x="-1969.7992" y="-1463.0698"/>
         <point2 x="-2013.859" y="-1623.9106"/>
@@ -3458,15 +2040,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/872bdc36c0a8010d00c1c2f1d77951b1</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3477,20 +2050,36 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/872bdc36c0a8010d00c1c2f1b225bbb7</URIString>
         <point1 x="-1005.85565" y="-1087.4315"/>
         <point2 x="-1045.3276" y="-1210.2452"/>
         <ID1 xsi:type="node">333</ID1>
         <ID2 xsi:type="node">345</ID2>
+    </child>
+    <child ID="740" label="Portabilit&#xe0;&#x9;" layerID="1"
+        created="1545294817053" x="-1180.9629" y="-841.9563"
+        width="157.4" height="68.700005" strokeWidth="2.0"
+        autoSized="false" xsi:type="node">
+        <notes>Per essere portabilt un software deve fare riferimento a primitive comuni a tutti i sistemi.%nl;Questo vale anche per la filosofia.%nl;Vedi Manifesto.%nl;</notes>
+        <fillColor>#FDE888</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/cac35e63c0a82b3223b0c92a93e83632</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="741" layerID="1" created="1545294825208" x="-1316.2065"
+        y="-1169.8344" width="195.39978" height="330.07483"
+        strokeWidth="2.0" strokeStyle="3" autoSized="false"
+        controlCount="0" arrowState="3" xsi:type="link">
+        <strokeColor>#EA2218</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/cac35e64c0a82b3223b0c92a3b89e502</URIString>
+        <point1 x="-1315.2064" y="-1168.8344"/>
+        <point2 x="-1121.8066" y="-840.7595"/>
+        <ID1 xsi:type="node">12</ID1>
+        <ID2 xsi:type="node">740</ID2>
     </child>
     <child ID="136" label="IV secolo A.C." layerID="7"
         created="1293664481777" x="1115.5414" y="166.46436"
@@ -3500,15 +2089,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/346b1791c0a8010b00a5d7f2e0ee2144</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3519,15 +2099,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/346b1791c0a8010b00a5d7f2c8e4e554</URIString>
         <point1 x="1091.5504" y="27.396118"/>
         <point2 x="1171.2554" y="166.97705"/>
@@ -3542,15 +2113,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/346d4dd2c0a8010b00a5d7f2f0ef049c</URIString>
         <shape xsi:type="triangle"/>
     </child>
@@ -3562,15 +2124,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3472adf9c0a8010b00a5d7f20b1fd9c5</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3581,15 +2134,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3472adf9c0a8010b00a5d7f2184967b0</URIString>
         <point1 x="-8.730109" y="-159.89703"/>
         <point2 x="358.73657" y="-154.58713"/>
@@ -3604,15 +2148,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34780ad8c0a8010b00a5d7f253c8aaa0</URIString>
         <shape xsi:type="diamond"/>
     </child>
@@ -3623,15 +2158,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/347bc955c0a8010b00a5d7f20ceef6e2</URIString>
         <point1 x="1023.1689" y="-22.7482"/>
         <point2 x="786.9088" y="-118.90427"/>
@@ -3645,15 +2171,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/347bc955c0a8010b00a5d7f2206f1a85</URIString>
         <point1 x="478.4061" y="-150.03845"/>
         <point2 x="692.2152" y="-136.81499"/>
@@ -3667,15 +2184,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/347bc955c0a8010b00a5d7f276500557</URIString>
         <point1 x="1013.03125" y="10.920166"/>
         <point2 x="816.4241" y="50.90712"/>
@@ -3689,15 +2197,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaa9c0a8010b00a5d7f2d1f5c42d</URIString>
         <shape xsi:type="rectangle"/>
     </child>
@@ -3708,15 +2207,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaa9c0a8010b00a5d7f279503b5c</URIString>
         <point1 x="1073.7588" y="27.394531"/>
         <point2 x="1044.4308" y="742.584"/>
@@ -3730,15 +2220,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaa9c0a8010b00a5d7f266f189e4</URIString>
         <shape xsi:type="rectangle"/>
     </child>
@@ -3749,15 +2230,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaa9c0a8010b00a5d7f2d4232ece</URIString>
         <point1 x="1018.4381" y="742.5863"/>
         <point2 x="581.12256" y="386.1539"/>
@@ -3772,15 +2244,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaaac0a8010b00a5d7f29118c1c9</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3791,15 +2254,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaaac0a8010b00a5d7f240b2ab11</URIString>
         <point1 x="556.2429" y="350.15356"/>
         <point2 x="520.2388" y="118.28613"/>
@@ -3813,15 +2267,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaaac0a8010b00a5d7f2891a4938</URIString>
         <point1 x="539.576" y="71.66589"/>
         <point2 x="731.08234" y="-112.967224"/>
@@ -3837,15 +2282,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaabc0a8010b00a5d7f2f6e7bb11</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3858,15 +2294,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaabc0a8010b00a5d7f2daf98e85</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3878,15 +2305,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaabc0a8010b00a5d7f21a46c524</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -3897,15 +2315,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaabc0a8010b00a5d7f2adc3d4fa</URIString>
         <point1 x="502.53796" y="381.67755"/>
         <point2 x="355.8518" y="416.78775"/>
@@ -3919,15 +2328,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaacc0a8010b00a5d7f26fd0b2e6</URIString>
         <point1 x="502.53796" y="353.64447"/>
         <point2 x="370.76123" y="319.80365"/>
@@ -3941,15 +2341,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaacc0a8010b00a5d7f232787606</URIString>
         <point1 x="535.7932" y="350.1539"/>
         <point2 x="340.60458" y="199.00568"/>
@@ -3963,15 +2354,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7803c7d4c0a8010d001370ab31d64991</URIString>
         <point1 x="1083.0891" y="-30.742676"/>
         <point2 x="1302.7405" y="-815.3159"/>
@@ -3986,15 +2368,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e6c0a8010d005730f84625602f</URIString>
         <shape xsi:type="rectangle"/>
     </child>
@@ -4005,15 +2378,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e7c0a8010d005730f8deb569ee</URIString>
         <point1 x="990.48444" y="742.5863"/>
         <point2 x="577.0335" y="582.9846"/>
@@ -4027,15 +2391,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e7c0a8010d005730f8ca7c12c7</URIString>
         <shape xsi:type="rectangle"/>
     </child>
@@ -4046,15 +2401,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e7c0a8010d005730f86016dab2</URIString>
         <point1 x="1033.8634" y="742.5863"/>
         <point2 x="909.2841" y="480.02283"/>
@@ -4068,15 +2414,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#FFFFFF</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c69bb8dc0a8010d005730f84cb9da1f</URIString>
         <shape xsi:type="hexagon"/>
     </child>
@@ -4088,15 +2425,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c69bb8dc0a8010d005730f8f46f33bb</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4108,15 +2436,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c71b411c0a8010d005730f8d8465c80</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4127,15 +2446,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c71b411c0a8010d005730f8cf5299ca</URIString>
         <point1 x="1051.8396" y="27.396118"/>
         <point2 x="909.5347" y="206.38806"/>
@@ -4150,15 +2460,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c71b412c0a8010d005730f8910593d6</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4169,15 +2470,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c71b412c0a8010d005730f82a1267cb</URIString>
         <point1 x="1065.9148" y="-30.742676"/>
         <point2 x="997.96564" y="-249.33984"/>
@@ -4191,15 +2483,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c75568dc0a8010d005730f89f828269</URIString>
         <point1 x="1136.9285" y="-14.218292"/>
         <point2 x="1332.3331" y="-53.770294"/>
@@ -4214,15 +2497,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c75568ec0a8010d005730f8cf9ce373</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4233,15 +2507,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c75568ec0a8010d005730f8cfdaea46</URIString>
         <point1 x="1133.0753" y="14.095215"/>
         <point2 x="1370.8492" y="78.6008"/>
@@ -4258,15 +2523,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86e81610c0a8010d00397ceabd38b179</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4277,15 +2533,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86e81610c0a8010d00397ceab52018aa</URIString>
         <point1 x="-47.575768" y="-174.36998"/>
         <point2 x="-118.66574" y="-250.08392"/>
@@ -4301,15 +2548,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86e81611c0a8010d00397ceaca95e642</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4320,15 +2558,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86e81611c0a8010d00397cea4e8dfd8b</URIString>
         <point1 x="-177.1024" y="-301.15265"/>
         <point2 x="-280.28885" y="-376.9339"/>
@@ -4343,15 +2572,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86f57775c0a8010d00397cea03cf64ef</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4362,15 +2582,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/86f57775c0a8010d00397cea59398d37</URIString>
         <point1 x="420.5229" y="-178.15234"/>
         <point2 x="428.03745" y="-292.73682"/>
@@ -4385,15 +2596,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7bbc0a8010d01bf8de1e27cb580</URIString>
         <shape xsi:type="rectangle"/>
     </child>
@@ -4404,15 +2606,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7bcc0a8010d01bf8de18da6ad61</URIString>
         <point1 x="1297.5615" y="-877.98267"/>
         <point2 x="1249.8009" y="-985.2495"/>
@@ -4426,15 +2619,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7bcc0a8010d01bf8de1b635b4e4</URIString>
         <point1 x="1234.0576" y="-1021.24927"/>
         <point2 x="1169.8138" y="-1170.8691"/>
@@ -4450,15 +2634,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7bdc0a8010d01bf8de1c5b86a46</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4469,15 +2644,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7bdc0a8010d01bf8de145ac76a1</URIString>
         <point1 x="1343.3958" y="-818.73303"/>
         <point2 x="1434.9274" y="-738.58936"/>
@@ -4492,15 +2658,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7c0c0a8010d01bf8de10731da81</URIString>
         <shape xsi:type="rectangle"/>
     </child>
@@ -4511,15 +2668,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7c0c0a8010d01bf8de124ca0b0b</URIString>
         <point1 x="1326.6808" y="-877.98267"/>
         <point2 x="1410.0728" y="-1050.2493"/>
@@ -4534,15 +2682,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7c1c0a8010d01bf8de10fd9ce92</URIString>
         <shape xsi:type="rectangle"/>
     </child>
@@ -4553,15 +2692,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7c1c0a8010d01bf8de1cf429d58</URIString>
         <point1 x="1347.9985" y="-868.57574"/>
         <point2 x="1528.834" y="-977.24945"/>
@@ -4576,29 +2706,10 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="4" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>tempo</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value>eternit&#xe0;</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Dio</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="tempo"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="eternit&#xe0;"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Dio"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/bf4cf47fc0a8010b00b4cbc534f3bbb3</URIString>
         <shape xsi:type="ellipse"/>
@@ -4610,15 +2721,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/bf4cf47fc0a8010b00b4cbc53093f79d</URIString>
         <point1 x="895.89484" y="444.02295"/>
         <point2 x="873.1628" y="359.6355"/>
@@ -4634,15 +2736,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/bf70f4e8c0a8010b0083fff934f54ee5</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4653,15 +2746,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/bf70f4e9c0a8010b0083fff96a9e488f</URIString>
         <point1 x="-45.008373" y="-130.66159"/>
         <point2 x="-93.92436" y="5.0082397"/>
@@ -4677,15 +2761,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3aaf6169c0a8010b01f84d0156f290a3</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4696,15 +2771,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3aaf6169c0a8010b01f84d0124f40f31</URIString>
         <point1 x="1414.1583" y="74.03955"/>
         <point2 x="1389.2759" y="-42.766113"/>
@@ -4720,15 +2786,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/edd4e8b47f000001016c006efa4fe86c</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4739,15 +2796,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/edd4e8b47f000001016c006ef7e29008</URIString>
         <point1 x="1268.6006" y="-860.21204"/>
         <point2 x="1016.7697" y="-939.80505"/>
@@ -4762,15 +2810,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/edd4e8b57f000001016c006eb2ebf5d9</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4781,15 +2820,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/edd4e8b67f000001016c006e4981f4be</URIString>
         <point1 x="1045.4791" y="-734.26025"/>
         <point2 x="867.04" y="-682.93604"/>
@@ -4805,15 +2835,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/edd4e8b67f000001016c006e8228cf88</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4824,15 +2845,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/edd4e8b67f000001016c006e01da7b10</URIString>
         <point1 x="1272.0862" y="-828.55005"/>
         <point2 x="1143.7056" y="-769.61475"/>
@@ -4847,15 +2859,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/345ea409c0a8010b00a5d7f299b958e9</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4867,15 +2870,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#FFFFFF</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34780ad8c0a8010b00a5d7f2f2ae4b86</URIString>
         <shape xsi:type="hexagon"/>
     </child>
@@ -4888,15 +2882,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/810d3a957f00000101a8c22b136edeed</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -4907,15 +2892,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/810d3a957f00000101a8c22bdfed2a45</URIString>
         <point1 x="-63.515938" y="-155.70831"/>
         <point2 x="-236.086" y="-128.74995"/>
@@ -4929,15 +2905,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7803c784c0a8010d001370ab7c95101b</URIString>
         <point1 x="1259.0004" y="-847.7179"/>
         <point2 x="-683.15393" y="-887.2344"/>
@@ -4951,15 +2918,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c71b3e5c0a8010d005730f846dbb958</URIString>
         <point1 x="1364.0427" y="-845.60406"/>
         <point2 x="1608.4673" y="-840.74005"/>
@@ -4975,15 +2933,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c71b3e5c0a8010d005730f8c309813a</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
@@ -4996,15 +2945,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/863b33f57f0000010150b06b05d57266</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -5015,15 +2955,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/863b33f57f0000010150b06bb9cbded6</URIString>
         <point1 x="1443.7185" y="-68.746414"/>
         <point2 x="1534.889" y="-75.51212"/>
@@ -5038,15 +2969,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/8b603a657f0000010163f47ec2b2c7a6</URIString>
         <shape xsi:type="shield"/>
     </child>
@@ -5057,15 +2979,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/8b603a657f0000010163f47e14b81695</URIString>
         <point1 x="-36.87906" y="-172.44568"/>
         <point2 x="54.232914" y="-347.57242"/>
@@ -5077,15 +2990,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3c32ab77f00000101cc6a6a72cfa203</URIString>
         <child ID="483" label="L'uno e i molti" created="1298323301401"
             x="429.26392" y="193.51181" width="137.59999" height="59.6"
@@ -5095,19 +2999,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Spazionismo</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Spazionismo"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/4a2ea94bc0a8010b003256a560936c4c</URIString>
             <shape xsi:type="ellipse"/>
@@ -5120,15 +3013,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283dec0a8010d005730f8c835d8f4</URIString>
             <shape xsi:type="diamond"/>
         </child>
@@ -5141,15 +3025,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e1c0a8010d005730f8431ee0d6</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -5161,15 +3036,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e1c0a8010d005730f8233339a5</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -5181,15 +3047,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0c822759c0a8010b003b6dbde29f6535</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -5200,15 +3057,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/4a2ea94bc0a8010b003256a5df10a24d</URIString>
             <point1 x="342.61972" y="224.30666"/>
             <point2 x="429.36624" y="223.75153"/>
@@ -5222,15 +3070,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e0c0a8010d005730f89b5ad5e8</URIString>
             <point1 x="265.60263" y="206.59166"/>
             <point2 x="213.2124" y="157.54553"/>
@@ -5244,15 +3083,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e1c0a8010d005730f8031fa309</URIString>
             <point1 x="270.43542" y="244.99081"/>
             <point2 x="182.0154" y="369.00235"/>
@@ -5266,15 +3096,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0c82275ac0a8010b003b6dbde4e8d333</URIString>
             <point1 x="147.54028" y="99.954315"/>
             <point2 x="96.25596" y="57.728897"/>
@@ -5289,15 +3110,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283ddc0a8010d005730f82c56627b</URIString>
         <point1 x="960.99915" y="1612.8938"/>
         <point2 x="298.94128" y="2210.919"/>
@@ -5312,15 +3124,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628927f00000101cc6a6a53c8df13</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
@@ -5331,15 +3134,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628927f00000101cc6a6aa8cd6929</URIString>
         <point1 x="1042.1095" y="783.58594"/>
         <point2 x="985.1747" y="1571.8936"/>
@@ -5352,15 +3146,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628937f00000101cc6a6af7b95cf2</URIString>
         <child ID="286" label="Orfismo" created="1294871002463"
             x="292.24655" y="56.498535" width="144.16663" height="58.0"
@@ -5370,15 +3155,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c612c94c0a8010d005730f8807ae316</URIString>
             <shape xsi:type="diamond"/>
         </child>
@@ -5391,15 +3167,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/bf8db60bc0a8010b0083fff9ce88dcad</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -5412,15 +3179,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/bf8db60cc0a8010b0083fff9c022f7d6</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -5434,15 +3192,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/bf8db60dc0a8010b0083fff99f330971</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -5455,19 +3204,9 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Wu Wei</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Tao</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Wu Wei"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Tao"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/bf91f849c0a8010b0083fff9fb3ec658</URIString>
             <shape xsi:type="ellipse"/>
@@ -5479,15 +3218,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/bf8db60cc0a8010b0083fff9b386b9e8</URIString>
             <point1 x="318.8348" y="96.19532"/>
             <point2 x="128.15985" y="141.0267"/>
@@ -5501,15 +3231,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/bf8db60cc0a8010b0083fff9da612b3e</URIString>
             <point1 x="383.37323" y="106.83719"/>
             <point2 x="474.26385" y="208.6828"/>
@@ -5523,15 +3244,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/bf8db60dc0a8010b0083fff9e8422dcf</URIString>
             <point1 x="350.06125" y="108.75812"/>
             <point2 x="259.60205" y="256.21762"/>
@@ -5545,15 +3257,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/bf91f849c0a8010b0083fff9470a2032</URIString>
             <point1 x="317.79462" y="75.22025"/>
             <point2 x="170.9022" y="42.775993"/>
@@ -5567,15 +3270,6 @@
             <strokeColor>#EA2218</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/bf8db611c0a8010b0083fff9650c61c8</URIString>
             <point1 x="99.63288" y="177.61871"/>
             <point2 x="204.90152" y="259.21085"/>
@@ -5590,15 +3284,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c612c95c0a8010d005730f87945fc60</URIString>
         <point1 x="895.6941" y="1599.6506"/>
         <point2 x="-23.082653" y="1675.4175"/>
@@ -5611,15 +3296,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628a37f00000101cc6a6a559dadc7</URIString>
         <child ID="194" label="Aristotele" created="1294786155164"
             x="334.0481" y="413.39893" width="113.0" height="36.0"
@@ -5629,15 +3305,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbd2c0a8010d011c34fbd08f5b34</URIString>
             <shape xsi:type="rectangle"/>
         </child>
@@ -5649,15 +3316,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbd2c0a8010d011c34fbd1affec3</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -5670,24 +3328,10 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="3" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>classi</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>istanza</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>comandamenti</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="classi"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="istanza"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="comandamenti"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0fd9ceadc0a80104005fe568ef643a42</URIString>
             <shape xsi:type="ellipse"/>
@@ -5700,14 +3344,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>funzioni virtuali pure</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="funzioni virtuali pure"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0fd9ceadc0a80104005fe56838be2453</URIString>
             <shape xsi:type="ellipse"/>
@@ -5721,39 +3359,11 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="6" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Classi e istanze</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Eureka</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Poe</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Ciclo delle rinascite</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Classi e istanze"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Eureka"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Poe"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Ciclo delle rinascite"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7bbbe03c7f000001019e80b10e2921fa</URIString>
             <shape xsi:type="ellipse"/>
@@ -5767,19 +3377,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Classi e istanze</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Classi e istanze"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7bbbe03d7f000001019e80b1fbeba7f7</URIString>
             <shape xsi:type="ellipse"/>
@@ -5792,24 +3391,10 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="3" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Metodi e dati membro</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Dichiarazione di una classe</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Definizione della classe</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Metodi e dati membro"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Dichiarazione di una classe"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Definizione della classe"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7bd3914a7f000001019e80b102a3bbad</URIString>
             <shape xsi:type="ellipse"/>
@@ -5823,19 +3408,9 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Vita esatta</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Questioni irrisolte</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Vita esatta"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Questioni irrisolte"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/80d1e9827f00000101a8c22b26a995ca</URIString>
             <shape xsi:type="ellipse"/>
@@ -5849,15 +3424,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/80ddb7467f00000101a8c22b3b6318a2</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -5870,14 +3436,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>classi</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="classi"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0fd9ceacc0a80104005fe56869192330</URIString>
             <shape xsi:type="ellipse"/>
@@ -5890,14 +3450,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>ereditariet&#xe0;</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="ereditariet&#xe0;"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/80f585597f00000101a8c22b10c27819</URIString>
             <shape xsi:type="ellipse"/>
@@ -5911,15 +3465,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/8628184f7f0000010150b06b553f432a</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -5932,15 +3477,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#000000</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/863237427f0000010150b06b188be1b2</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
@@ -5953,15 +3489,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#000000</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/863237427f0000010150b06bdc15f8da</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
@@ -5975,19 +3502,9 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>natura</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>sviluppo</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="natura"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="sviluppo"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/864269ad7f0000010150b06bb97c8fdc</URIString>
             <shape xsi:type="ellipse"/>
@@ -5999,15 +3516,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbd3c0a8010d011c34fba5306802</URIString>
             <point1 x="447.0481" y="433.25153"/>
             <point2 x="701.636" y="441.5994"/>
@@ -6021,15 +3529,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0fd9ceacc0a80104005fe568148b6d01</URIString>
             <point1 x="354.67972" y="413.39893"/>
             <point2 x="155.71402" y="313.55096"/>
@@ -6043,15 +3542,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0fd9ceadc0a80104005fe5682858fc56</URIString>
             <point1 x="447.0481" y="418.5086"/>
             <point2 x="700.56537" y="360.66943"/>
@@ -6065,15 +3555,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0fd9ceaec0a80104005fe568908bef01</URIString>
             <point1 x="434.14908" y="413.39893"/>
             <point2 x="789.9536" y="266.5107"/>
@@ -6087,15 +3568,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7bbbe03c7f000001019e80b15eb53356</URIString>
             <point1 x="418.66895" y="449.39893"/>
             <point2 x="670.619" y="610.6709"/>
@@ -6109,15 +3581,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7bbbe03d7f000001019e80b1edc62a89</URIString>
             <point1 x="447.0481" y="448.9387"/>
             <point2 x="700.8008" y="527.71326"/>
@@ -6131,15 +3594,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7bd3914a7f000001019e80b1ea19aefd</URIString>
             <point1 x="334.0481" y="431.92603"/>
             <point2 x="261.83194" y="432.59973"/>
@@ -6153,15 +3607,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/80d1e9827f00000101a8c22b61694bd6</URIString>
             <point1 x="383.03644" y="449.39893"/>
             <point2 x="304.62415" y="637.29755"/>
@@ -6175,15 +3620,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/80f585597f00000101a8c22b628f1c72</URIString>
             <point1 x="384.3356" y="413.39893"/>
             <point2 x="310.82074" y="200.39777"/>
@@ -6197,15 +3633,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/8628184f7f0000010150b06b4cbaae92</URIString>
             <point1 x="400.68393" y="449.39893"/>
             <point2 x="540.82745" y="698.27673"/>
@@ -6219,15 +3646,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/863237427f0000010150b06ba729e286</URIString>
             <point1 x="404.80286" y="413.39893"/>
             <point2 x="586.86755" y="183.49896"/>
@@ -6241,15 +3659,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/863237427f0000010150b06bc7cb2dc2</URIString>
             <point1 x="396.6152" y="413.39893"/>
             <point2 x="518.7661" y="50.999878"/>
@@ -6263,15 +3672,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/864269ad7f0000010150b06bdb64841d</URIString>
             <point1 x="417.7199" y="413.39893"/>
             <point2 x="831.5831" y="139.23535"/>
@@ -6285,15 +3685,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/80ddb7467f00000101a8c22b338cb1b1</URIString>
             <point1 x="187.64345" y="457.85394"/>
             <point2 x="119.97155" y="529.897"/>
@@ -6307,15 +3698,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/8628184f7f0000010150b06b2a708cf7</URIString>
             <point1 x="492.15247" y="705.04004"/>
             <point2 x="377.49017" y="684.49365"/>
@@ -6330,15 +3712,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7749dbd2c0a8010d011c34fba86d0d8c</URIString>
         <point1 x="1063.0698" y="1612.6161"/>
         <point2 x="2086.6797" y="1873.3984"/>
@@ -6351,15 +3724,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c402e39f7f00000101cc6a6a1be5ae79</URIString>
         <child ID="192" label="Socrate" created="1294786059936"
             x="343.37842" y="147.63037" width="113.0" height="36.0"
@@ -6368,15 +3732,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbd1c0a8010d011c34fb8cd018b6</URIString>
             <shape xsi:type="rectangle"/>
         </child>
@@ -6390,14 +3745,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Post-it</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Post-it"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/2d1d68f27f00000100f3c66eb98d2016</URIString>
             <shape xsi:type="ellipse"/>
@@ -6411,24 +3760,9 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="3" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Verit&#xe0;</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>metodo scientifico</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Verit&#xe0;"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="metodo scientifico"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0c6add9a7f000001004333331a1ac5f1</URIString>
             <shape xsi:type="ellipse"/>
@@ -6441,19 +3775,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>anima</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="anima"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/8b7c25cf7f0000010163f47e6c6d3d2b</URIString>
             <shape xsi:type="ellipse"/>
@@ -6465,15 +3788,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/2d1d68f37f00000100f3c66e08dfd07a</URIString>
             <point1 x="343.37842" y="161.27368"/>
             <point2 x="183.78587" y="148.9676"/>
@@ -6487,15 +3801,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0c6add9b7f00000100433333e2d27873</URIString>
             <point1 x="370.25626" y="183.63037"/>
             <point2 x="252.09325" y="255.43251"/>
@@ -6509,15 +3814,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/8b7c25d07f0000010163f47e37bbe721</URIString>
             <point1 x="369.15482" y="147.63039"/>
             <point2 x="213.15726" y="56.23632"/>
@@ -6532,15 +3828,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628a27f00000101cc6a6a2b786e47</URIString>
         <point1 x="997.85004" y="1612.8938"/>
         <point2 x="1488.7496" y="2323.793"/>
@@ -6553,15 +3840,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c402e3a17f00000101cc6a6a525f34d5</URIString>
         <child ID="104" label="Ascesi e Zen di&#xa;ogni istante"
             created="1293662592449" x="566.41113" y="504.92773"
@@ -6572,15 +3850,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/344da042c0a8010b00a5d7f29b45fdc4</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -6592,15 +3861,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbcac0a8010d011c34fb9c0db939</URIString>
             <shape xsi:type="rectangle"/>
         </child>
@@ -6613,14 +3873,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Fedone</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Fedone"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbcbc0a8010d011c34fb31a732a4</URIString>
             <shape xsi:type="ellipse"/>
@@ -6633,19 +3887,9 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>operatore delete</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>costruttori e distruttori</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="operatore delete"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="costruttori e distruttori"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbccc0a8010d011c34fbcb0d1c90</URIString>
             <shape xsi:type="ellipse"/>
@@ -6658,15 +3902,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbcfc0a8010d011c34fbca10aadf</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -6679,19 +3914,9 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Bont&#xe0; di Dio</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Etica</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Bont&#xe0; di Dio"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Etica"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbd0c0a8010d011c34fbfac5104a</URIString>
             <shape xsi:type="ellipse"/>
@@ -6705,15 +3930,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/bf4cf47fc0a8010b00b4cbc5330c33bc</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -6726,15 +3942,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/4a75cf2ac0a8010b003256a5eceb6964</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -6747,15 +3954,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbcec0a8010d011c34fb818a447c</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -6768,15 +3966,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0f9e5401c0a80104005fe568a213109d</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -6789,14 +3978,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>arte</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="arte"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0f9e5402c0a80104005fe5689db071e0</URIString>
             <shape xsi:type="ellipse"/>
@@ -6810,19 +3993,9 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Ciclo delle rinascite</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Riutilizzo della memoria RAM</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Ciclo delle rinascite"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Riutilizzo della memoria RAM"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0fb135bfc0a80104005fe5683199edff</URIString>
             <shape xsi:type="ellipse"/>
@@ -6835,19 +4008,9 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>numeri</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>analisi OO</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="numeri"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="analisi OO"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0fc549a9c0a80104005fe56845aefc2d</URIString>
             <shape xsi:type="ellipse"/>
@@ -6860,15 +4023,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbcec0a8010d011c34fb9fd71285</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -6879,15 +4033,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbcdc0a8010d011c34fb28a1e266</URIString>
             <point1 x="597.216" y="334.74536"/>
             <point2 x="631.2479" y="505.08667"/>
@@ -6901,15 +4046,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbcbc0a8010d011c34fb97544f1a</URIString>
             <point1 x="561.7137" y="298.74536"/>
             <point2 x="350.17862" y="179.407"/>
@@ -6923,15 +4059,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbcec0a8010d011c34fb57dccaa7</URIString>
             <point1 x="575.9016" y="334.74536"/>
             <point2 x="441.52002" y="471.2638"/>
@@ -6945,15 +4072,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbcfc0a8010d011c34fba7c291d8</URIString>
             <point1 x="638.04346" y="298.74536"/>
             <point2 x="944.88324" y="174.41687"/>
@@ -6967,15 +4085,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbd0c0a8010d011c34fbd42b7d14</URIString>
             <point1 x="588.4889" y="298.74536"/>
             <point2 x="516.7209" y="46.97705"/>
@@ -6989,15 +4098,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbd1c0a8010d011c34fb722dbfa2</URIString>
             <point1 x="650.1199" y="307.68304"/>
             <point2 x="921.20746" y="264.20206"/>
@@ -7011,15 +4111,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/bf4cf480c0a8010b00b4cbc569c35e00</URIString>
             <point1 x="612.05" y="334.74536"/>
             <point2 x="772.9001" y="491.84198"/>
@@ -7033,15 +4124,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/4a75cf2ac0a8010b003256a56414c525</URIString>
             <point1 x="613.64935" y="298.74536"/>
             <point2 x="776.5141" y="152.38293"/>
@@ -7055,15 +4137,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0f9e5402c0a80104005fe568d1e11945</URIString>
             <point1 x="649.227" y="334.74536"/>
             <point2 x="899.7144" y="415.828"/>
@@ -7077,15 +4150,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0f9e5402c0a80104005fe568c0dcc235</URIString>
             <point1 x="537.1199" y="327.10144"/>
             <point2 x="364.90082" y="358.6681"/>
@@ -7099,15 +4163,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0fb135bfc0a80104005fe5687ffe8f01</URIString>
             <point1 x="650.1199" y="320.62857"/>
             <point2 x="995.5597" y="344.37036"/>
@@ -7121,15 +4176,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0fc549a9c0a80104005fe568dc0e3f50</URIString>
             <point1 x="600.4624" y="298.74536"/>
             <point2 x="684.0371" y="78.89331"/>
@@ -7143,15 +4189,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7749dbccc0a8010d011c34fb405f8622</URIString>
             <point1 x="250.90945" y="179.51917"/>
             <point2 x="167.15257" y="227.5758"/>
@@ -7166,15 +4203,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7749dbd1c0a8010d011c34fb3b697589</URIString>
         <point1 x="1555.3005" y="2359.793"/>
         <point2 x="1802.8812" y="2442.1348"/>
@@ -7188,15 +4216,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7749dbcbc0a8010d011c34fbce9074d9</URIString>
         <point1 x="1007.0408" y="1612.8938"/>
         <point2 x="2146.057" y="2613.029"/>
@@ -7210,15 +4229,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283dfc0a8010d005730f84d5a744d</URIString>
         <point1 x="977.32196" y="1612.8938"/>
         <point2 x="637.98944" y="2704.5898"/>
@@ -7232,15 +4242,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/9ff1da3d7f0000010021477c8a01416a</URIString>
         <point1 x="1067.4795" y="1573.9559"/>
         <point2 x="2495.7454" y="1259.6505"/>
@@ -7253,15 +4254,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c402e3b17f00000101cc6a6a1378cb8d</URIString>
         <child ID="267" label="Valentiniani" created="1294870048000"
             x="318.167" y="154.09998" width="132.4353" height="53.01761"
@@ -7270,15 +4262,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e2c0a8010d005730f8632eb552</URIString>
             <shape xsi:type="diamond"/>
         </child>
@@ -7291,15 +4274,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e3c0a8010d005730f809d0fa55</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -7313,15 +4287,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e4c0a8010d005730f84501aa9e</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -7333,15 +4298,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e4c0a8010d005730f8bf8a1529</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -7354,15 +4310,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e5c0a8010d005730f8bddff31e</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -7375,15 +4322,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e6c0a8010d005730f8c0a2a710</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -7394,15 +4332,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e3c0a8010d005730f86293931d</URIString>
             <point1 x="358.34644" y="164.52382"/>
             <point2 x="205.267" y="69.95992"/>
@@ -7416,15 +4345,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e4c0a8010d005730f8e867f7ea</URIString>
             <point1 x="382.55554" y="206.38525"/>
             <point2 x="378.05533" y="269.8047"/>
@@ -7438,15 +4358,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e5c0a8010d005730f81c628024</URIString>
             <point1 x="380.66296" y="155.58984"/>
             <point2 x="364.85022" y="49.28882"/>
@@ -7460,15 +4371,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e6c0a8010d005730f831a6e289</URIString>
             <point1 x="319.12915" y="180.22359"/>
             <point2 x="143.57011" y="179.18733"/>
@@ -7482,15 +4384,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283e6c0a8010d005730f8a1217cbd</URIString>
             <point1 x="356.37048" y="195.90268"/>
             <point2 x="152.3981" y="307.25845"/>
@@ -7505,15 +4398,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e3c0a8010d005730f8e3d9b7a6</URIString>
         <point1 x="911.57574" y="1571.8938"/>
         <point2 x="-54.363625" y="1297.3206"/>
@@ -7526,15 +4410,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c402e3b37f00000101cc6a6a0052dced</URIString>
         <child ID="626" label="Menandro" created="1368136795975"
             x="85.60571" y="183.8363" width="142.08911"
@@ -7544,15 +4419,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/8b4fd7c57f0000010163f47e84d1e47f</URIString>
             <shape xsi:type="rectangle"/>
         </child>
@@ -7564,15 +4430,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/8b603a647f0000010163f47ee9d0fc01</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -7583,15 +4440,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/8b603a647f0000010163f47edba020a7</URIString>
             <point1 x="147.64005" y="183.8363"/>
             <point2 x="90.08024" y="37.637375"/>
@@ -7606,15 +4454,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/8b4fd7c57f0000010163f47eb51661be</URIString>
         <point1 x="974.18445" y="1571.8938"/>
         <point2 x="709.3973" y="1001.0902"/>
@@ -7629,19 +4468,8 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="2" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Da approfondire</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Da approfondire"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7766c28ec0a8010d011c34fba037a76b</URIString>
         <shape xsi:type="rectangle"/>
@@ -7654,15 +4482,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283dec0a8010d005730f80dc29b1b</URIString>
         <shape xsi:type="diamond"/>
     </child>
@@ -7672,15 +4491,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c402e3b57f00000101cc6a6ab6fad52e</URIString>
         <child ID="203" label="Eraclito" created="1294787192164"
             x="233.9336" y="88.233154" width="113.0" height="36.0"
@@ -7690,15 +4500,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/775a0276c0a8010d011c34fb918a8400</URIString>
             <shape xsi:type="rectangle"/>
         </child>
@@ -7710,15 +4511,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/775a0277c0a8010d011c34fb806638b5</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -7730,19 +4522,9 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>spazionismo</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>tao</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="spazionismo"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="tao"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/775a0278c0a8010d011c34fbbd1546d4</URIString>
             <shape xsi:type="ellipse"/>
@@ -7756,14 +4538,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>annosa dicotomia</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="annosa dicotomia"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/775a0278c0a8010d011c34fba8a29f08</URIString>
             <shape xsi:type="ellipse"/>
@@ -7776,19 +4552,9 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>spazionismo</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>allocazione della memoria</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="spazionismo"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="allocazione della memoria"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c954e26fc0a8010b008d116e00a25a89</URIString>
             <shape xsi:type="ellipse"/>
@@ -7802,19 +4568,9 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>spazionismo</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>allocazione della memoria</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="spazionismo"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="allocazione della memoria"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0fba9536c0a80104005fe5686b5141c3</URIString>
             <shape xsi:type="ellipse"/>
@@ -7826,15 +4582,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/775a0277c0a8010d011c34fb7c3647b1</URIString>
             <point1 x="326.9717" y="88.233154"/>
             <point2 x="418.11893" y="43.33072"/>
@@ -7848,15 +4595,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/775a0278c0a8010d011c34fb56072747</URIString>
             <point1 x="233.9336" y="120.93257"/>
             <point2 x="123.91528" y="149.55566"/>
@@ -7870,15 +4608,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/775a0279c0a8010d011c34fbeb4d0262</URIString>
             <point1 x="289.62668" y="124.23291"/>
             <point2 x="283.69617" y="256.52637"/>
@@ -7892,15 +4621,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c954e26fc0a8010b008d116e5d967414</URIString>
             <point1 x="331.4492" y="124.23316"/>
             <point2 x="437.6875" y="170.85666"/>
@@ -7914,15 +4634,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0fba9536c0a80104005fe56878485a96</URIString>
             <point1 x="534.9709" y="212.27252"/>
             <point2 x="588.469" y="234.3647"/>
@@ -7937,15 +4648,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7766c28ec0a8010d011c34fb196ead42</URIString>
         <point1 x="598.07837" y="2714.3542"/>
         <point2 x="331.8292" y="2579.1265"/>
@@ -7959,15 +4661,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/775a0277c0a8010d011c34fb49e72009</URIString>
         <point1 x="663.75903" y="2745.8906"/>
         <point2 x="1062.9347" y="2927.1262"/>
@@ -7980,15 +4673,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c402e3b87f00000101cc6a6a3ad46f86</URIString>
         <child ID="235" label="Pitagora" created="1294788435237"
             x="240.95471" y="207.19019" width="105.166626"
@@ -7998,15 +4682,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/776861ebc0a8010d011c34fb1c88ccaa</URIString>
             <shape xsi:type="rectangle"/>
         </child>
@@ -8019,14 +4694,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>buddismo</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="buddismo"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c90e628fc0a8010b008d116ed3a423f8</URIString>
             <shape xsi:type="ellipse"/>
@@ -8040,19 +4709,9 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>cosmogonia</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>buddismo</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="cosmogonia"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="buddismo"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c928fe29c0a8010b008d116ea24e98ff</URIString>
             <shape xsi:type="ellipse"/>
@@ -8067,14 +4726,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>teoria</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="teoria"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c928fe2ac0a8010b008d116ece123346</URIString>
             <shape xsi:type="ellipse"/>
@@ -8088,19 +4741,9 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>paradossi</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>linguaggi di programmazione</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="paradossi"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="linguaggi di programmazione"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c928fe2ac0a8010b008d116e1c408f72</URIString>
             <shape xsi:type="ellipse"/>
@@ -8114,19 +4757,9 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>classi</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>wu wei</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="classi"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="wu wei"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c92ea953c0a8010b008d116ebc4d69d5</URIString>
             <shape xsi:type="ellipse"/>
@@ -8141,14 +4774,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>senso dell'Universo</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="senso dell'Universo"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/0fa90cd4c0a80104005fe5685bd2fc54</URIString>
             <shape xsi:type="ellipse"/>
@@ -8160,15 +4787,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c90e628fc0a8010b008d116e300cd058</URIString>
             <point1 x="257.36572" y="207.19019"/>
             <point2 x="150.81807" y="145.49384"/>
@@ -8182,15 +4800,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c928fe2ac0a8010b008d116ef81e5f02</URIString>
             <point1 x="240.95471" y="240.97934"/>
             <point2 x="115.28557" y="271.6743"/>
@@ -8204,15 +4813,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c928fe2ac0a8010b008d116e598df970</URIString>
             <point1 x="294.20624" y="207.19043"/>
             <point2 x="298.83322" y="62.161133"/>
@@ -8226,15 +4826,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c928fe2ac0a8010b008d116e277ba445</URIString>
             <point1 x="310.75162" y="249.08124"/>
             <point2 x="421.02933" y="383.2672"/>
@@ -8248,15 +4839,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c92ea953c0a8010b008d116e1bb2fc8f</URIString>
             <point1 x="286.05984" y="249.08118"/>
             <point2 x="226.04913" y="417.1631"/>
@@ -8270,15 +4852,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c93e3569c0a8010b008d116eaf0c2ea4</URIString>
             <point1 x="346.12134" y="233.53903"/>
             <point2 x="460.92126" y="245.33553"/>
@@ -8293,15 +4866,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/776861ecc0a8010d011c34fb92f631b8</URIString>
         <point1 x="584.28973" y="2741.0447"/>
         <point2 x="-17.153687" y="2879.6226"/>
@@ -8314,15 +4878,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c402e3bc7f00000101cc6a6a3008e73f</URIString>
         <child ID="216" label="Empedocle" created="1294787644190"
             x="128.86475" y="1.0" width="113.0" height="36.0"
@@ -8332,15 +4887,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/77642313c0a8010d011c34fbd1c19e6e</URIString>
             <shape xsi:type="rectangle"/>
         </child>
@@ -8352,14 +4898,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>bodhisattva</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="bodhisattva"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/77642313c0a8010d011c34fbb285f999</URIString>
             <shape xsi:type="ellipse"/>
@@ -8373,14 +4913,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>spazionismo</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="spazionismo"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/77642314c0a8010d011c34fbf352cd3e</URIString>
             <shape xsi:type="ellipse"/>
@@ -8391,15 +4925,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/77642314c0a8010d011c34fbeba55123</URIString>
             <point1 x="200.90602" y="37.0"/>
             <point2 x="302.19708" y="154.316"/>
@@ -8412,15 +4937,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/77642315c0a8010d011c34fb831c0223</URIString>
             <point1 x="174.59302" y="37.0"/>
             <point2 x="100.9103" y="160.12675"/>
@@ -8435,15 +4951,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/77642313c0a8010d011c34fb87a5464a</URIString>
         <point1 x="623.1411" y="2756.9944"/>
         <point2 x="524.1528" y="3143.067"/>
@@ -8457,15 +4964,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e0c0a8010d005730f8e4572bbe</URIString>
         <point1 x="1003.29895" y="1571.8938"/>
         <point2 x="1565.6593" y="983.8563"/>
@@ -8478,15 +4976,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c40468aa7f00000101cc6a6af1e3b2ca</URIString>
         <child ID="672" label="Timone" created="1369082765641"
             x="142.4021" y="1.0" width="113.0" height="44.0"
@@ -8496,24 +4985,10 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="3" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Tipi di dato</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Verit&#xe0;</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Principii</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Tipi di dato"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Verit&#xe0;"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Principii"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c3c32abb7f00000101cc6a6a34780903</URIString>
             <shape xsi:type="rectangle"/>
@@ -8525,15 +5000,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c3c32abb7f00000101cc6a6a774fda5d</URIString>
             <shape xsi:type="diamond"/>
         </child>
@@ -8545,24 +5011,10 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="3" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Tipi di dato</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Verit&#xe0;</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Oggetti come simboli</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Tipi di dato"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Verit&#xe0;"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Oggetti come simboli"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c3c32abc7f00000101cc6a6a00a018e3</URIString>
             <shape xsi:type="rectangle"/>
@@ -8573,15 +5025,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c3c32abc7f00000101cc6a6a2d3301dd</URIString>
             <point1 x="75.637054" y="258.3532"/>
             <point2 x="187.37971" y="45.0"/>
@@ -8594,15 +5037,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c3c32abc7f00000101cc6a6a7c6ef2b4</URIString>
             <point1 x="212.91302" y="45.0"/>
             <point2 x="336.2923" y="238.73053"/>
@@ -8616,15 +5050,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c3c32abc7f00000101cc6a6ab49dab45</URIString>
             <point1 x="120.26125" y="274.88718"/>
             <point2 x="293.80322" y="264.20752"/>
@@ -8639,15 +5064,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3c32aba7f00000101cc6a6ae2256c77</URIString>
         <point1 x="1027.1979" y="1571.8938"/>
         <point2 x="2133.7686" y="1050.4545"/>
@@ -8660,15 +5076,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c40468ac7f00000101cc6a6ae5eb52fe</URIString>
         <child ID="237" label="Anassimandro" created="1294788516850"
             x="203.71704" y="269.06506" width="126.0" height="36.0"
@@ -8678,15 +5085,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/776f9b08c0a8010d011c34fb73f41665</URIString>
             <shape xsi:type="rectangle"/>
         </child>
@@ -8704,15 +5102,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/776f9b09c0a8010d011c34fb3af2e9e9</URIString>
             <shape xsi:type="rectangle"/>
         </child>
@@ -8724,15 +5113,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283dec0a8010d005730f87092d384</URIString>
             <shape xsi:type="diamond"/>
         </child>
@@ -8746,14 +5126,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Tao</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Tao"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c4881d7cc0a8010b0127669d4ea1dbeb</URIString>
             <shape xsi:type="ellipse"/>
@@ -8766,24 +5140,10 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="3" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>Tao</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>spazionismo</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>L'Uno</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Tao"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="spazionismo"/>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="L'Uno"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c49313b7c0a8010b0127669d65ae1afe</URIString>
             <shape xsi:type="ellipse"/>
@@ -8795,15 +5155,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/776f9b08c0a8010d011c34fb9e7bd876</URIString>
             <point1 x="398.95383" y="254.54573"/>
             <point2 x="329.71704" y="271.57227"/>
@@ -8817,15 +5168,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c49313b8c0a8010b0127669d1f500225</URIString>
             <point1 x="203.71704" y="300.31384"/>
             <point2 x="119.45076" y="318.03488"/>
@@ -8839,15 +5181,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/776f9b09c0a8010d011c34fbcbee496b</URIString>
             <point1 x="421.182" y="220.9805"/>
             <point2 x="294.83432" y="130.33632"/>
@@ -8861,15 +5194,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c4881d7cc0a8010b0127669d33d86c34</URIString>
             <point1 x="213.4098" y="86.3363"/>
             <point2 x="134.96349" y="52.33606"/>
@@ -8883,15 +5207,6 @@
             <strokeColor>#EA2218</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c49313b8c0a8010b0127669df694709c</URIString>
             <point1 x="86.533936" y="63.95038"/>
             <point2 x="65.5555" y="301.02686"/>
@@ -8906,15 +5221,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283dfc0a8010d005730f8cced8847</URIString>
         <point1 x="961.5782" y="1571.8938"/>
         <point2 x="215.77922" y="880.5872"/>
@@ -8928,15 +5234,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283dfc0a8010d005730f8aa985b48</URIString>
         <shape xsi:type="diamond"/>
     </child>
@@ -8947,15 +5244,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7749dbd3c0a8010d011c34fbcab0fe19</URIString>
         <point1 x="1581.1641" y="940.15625"/>
         <point2 x="1567.9342" y="804.45996"/>
@@ -8969,15 +5257,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7749dbd3c0a8010d011c34fb27c33080</URIString>
         <shape xsi:type="rectangle"/>
     </child>
@@ -8989,15 +5268,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/7749dbd4c0a8010d011c34fb4f700e50</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -9009,15 +5279,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/87350b6ac0a8010d010ad419f036b22f</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -9028,15 +5289,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/775a0276c0a8010d011c34fb40acc171</URIString>
         <point1 x="1561.305" y="768.4595"/>
         <point2 x="1538.2344" y="683.2622"/>
@@ -9050,15 +5302,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/87350b6ac0a8010d010ad419faf6c0fa</URIString>
         <point1 x="1531.5034" y="648.79297"/>
         <point2 x="1521.5677" y="566.4092"/>
@@ -9072,15 +5315,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c41b0fe77f00000101cc6a6af62c999c</URIString>
         <point1 x="1617.8553" y="952.86127"/>
         <point2 x="1752.0516" y="904.919"/>
@@ -9095,14 +5329,8 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Approfondimenti</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Approfondimenti"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c41b0fe77f00000101cc6a6a016a669b</URIString>
         <shape xsi:type="rectangle"/>
@@ -9115,14 +5343,8 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>da qui</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="da qui"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c41b0fe77f00000101cc6a6aa3ebd095</URIString>
         <shape xsi:type="ellipse"/>
@@ -9134,15 +5356,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c41b0fe87f00000101cc6a6a41130fbd</URIString>
         <point1 x="1821.2957" y="862.37695"/>
         <point2 x="1866.8442" y="777.05054"/>
@@ -9157,15 +5370,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/9ff1da3d7f0000010021477c49dcc099</URIString>
         <shape xsi:type="diamond"/>
     </child>
@@ -9177,14 +5381,8 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Prudenza</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Prudenza"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/9ff1da3d7f0000010021477c55923d08</URIString>
         <shape xsi:type="rectangle"/>
@@ -9198,15 +5396,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3c32abd7f00000101cc6a6ac6ce7bd8</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -9218,19 +5407,9 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="2" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Metafisica</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Superstizione</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Metafisica"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Superstizione"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3c32abe7f00000101cc6a6a942bee69</URIString>
         <shape xsi:type="ellipse"/>
@@ -9244,24 +5423,10 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="3" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Metafisica</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Paura della morte</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Scopo della religione</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Metafisica"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Paura della morte"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Scopo della religione"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3df3f277f00000101cc6a6a04521b62</URIString>
         <shape xsi:type="ellipse"/>
@@ -9274,14 +5439,8 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Prudenza</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Prudenza"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628917f00000101cc6a6a19759b00</URIString>
         <shape xsi:type="rectangle"/>
@@ -9294,19 +5453,9 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="2" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Citazioni</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Capire la natura del mondo</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Citazioni"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Capire la natura del mondo"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628927f00000101cc6a6a91e1218a</URIString>
         <shape xsi:type="ellipse"/>
@@ -9318,15 +5467,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/9ff1da3d7f0000010021477cfbec83e9</URIString>
         <point1 x="2571.9111" y="1237.2744"/>
         <point2 x="2724.024" y="1178.4958"/>
@@ -9340,15 +5480,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628927f00000101cc6a6afb60baa0</URIString>
         <point1 x="2566.4001" y="1265.7202"/>
         <point2 x="2696.8157" y="1336.8481"/>
@@ -9362,15 +5493,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3c32abe7f00000101cc6a6a7a83ddee</URIString>
         <point1 x="2954.4336" y="1197.3434"/>
         <point2 x="2837.024" y="1169.8795"/>
@@ -9384,15 +5506,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3c32abd7f00000101cc6a6add2ca79e</URIString>
         <point1 x="2761.449" y="1134.6631"/>
         <point2 x="2686.424" y="1048.1333"/>
@@ -9406,15 +5519,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3df3f277f00000101cc6a6aa9950354</URIString>
         <point1 x="2956.2363" y="1076.4836"/>
         <point2 x="2828.7366" y="1134.6633"/>
@@ -9428,15 +5532,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628927f00000101cc6a6a968a5c5a</URIString>
         <point1 x="2864.2515" y="1498.5144"/>
         <point2 x="2757.1736" y="1380.8481"/>
@@ -9446,7 +5541,7 @@
     <child ID="60" label="C'hi++" layerID="6" created="1293660267417"
         x="-3102.9172" y="621.9857" width="154.1156" height="56.931152"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
-        <resource referenceCreated="0" size="20847"
+        <resource referenceCreated="0"
             spec="/Users/Carlo/Dropbox/Canaro/C'hi++/Sostiene Aristotele.odt"
             type="1" xsi:type="URLResource">
             <title>Sostiene Aristotele.odt</title>
@@ -9457,15 +5552,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3434ba84c0a8010b00a5d7f2b9c61a6a</URIString>
         <shape xsi:type="hexagon"/>
     </child>
@@ -9478,15 +5564,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/343b2829c0a8010b00a5d7f212661af7</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
@@ -9497,15 +5574,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/343b282ac0a8010b00a5d7f246767bc1</URIString>
         <point1 x="-3031.6675" y="621.98535"/>
         <point2 x="-3139.7437" y="92.30371"/>
@@ -9520,15 +5588,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0c6bff65c0a8010b003b6dbdcd0d5f2c</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -9539,15 +5598,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/0c6bff66c0a8010b003b6dbd7a3e902b</URIString>
         <point1 x="-3145.5" y="35.25"/>
         <point2 x="-3145.0916" y="-133.375"/>
@@ -9561,15 +5611,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3a9ffd90c0a8010b01f84d01f1d89805</URIString>
         <point1 x="-3102.464" y="650.8223"/>
         <point2 x="-3858.612" y="654.4849"/>
@@ -9582,15 +5623,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c40c1c2d7f00000101cc6a6a805d9fd2</URIString>
         <child ID="66" label="Il Maestro" created="1293660614252"
             x="240.46875" y="293.43088" width="104.60589" height="49.0"
@@ -9599,15 +5631,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/3434ba85c0a8010b00a5d7f2a40f5a50</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -9619,15 +5642,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/3434ba85c0a8010b00a5d7f2cd6e805a</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -9638,15 +5652,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/3434ba85c0a8010b00a5d7f20af91c4a</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -9657,15 +5662,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/3434ba86c0a8010b00a5d7f239fc9be7</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
@@ -9678,15 +5674,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/346b178fc0a8010b00a5d7f2257dc9f0</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -9698,19 +5685,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#000000</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>domanda</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="domanda"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/346b1790c0a8010b00a5d7f2eff8de42</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
@@ -9722,15 +5698,6 @@
             <strokeColor>#5252A8</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/3434ba86c0a8010b00a5d7f27a56f64d</URIString>
             <point1 x="292.4236" y="420.98438"/>
             <point2 x="292.68896" y="342.4297"/>
@@ -9744,15 +5711,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/346b1790c0a8010b00a5d7f2fd81134c</URIString>
             <point1 x="293.0569" y="293.4414"/>
             <point2 x="294.25955" y="190.1543"/>
@@ -9766,15 +5724,6 @@
             <strokeColor>#5252A8</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/3434ba86c0a8010b00a5d7f2f783101c</URIString>
             <point1 x="235.8628" y="440.4191"/>
             <point2 x="106.71" y="443.6775"/>
@@ -9788,15 +5737,6 @@
             <strokeColor>#5252A8</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/3434ba86c0a8010b00a5d7f21aac915c</URIString>
             <point1 x="292.74646" y="456.99512"/>
             <point2 x="294.6668" y="547.09766"/>
@@ -9810,15 +5750,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/346b1790c0a8010b00a5d7f233243ea8</URIString>
             <point1 x="294.56616" y="141.1875"/>
             <point2 x="294.6506" y="45.0"/>
@@ -9833,15 +5764,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3434ba87c0a8010b00a5d7f2c52e27b4</URIString>
         <point1 x="-3061.3064" y="621.98584"/>
         <point2 x="-3683.1113" y="122.649414"/>
@@ -9854,15 +5776,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c40c1c307f00000101cc6a6a04f23ec5</URIString>
         <child ID="460" label="L'Ikebarba" created="1297978609208"
             x="242.00244" y="147.75037" width="134.0" height="57.000004"
@@ -9872,15 +5785,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/35a08372c0a8010b016b4be542461409</URIString>
             <shape xsi:type="diamond"/>
         </child>
@@ -9891,15 +5795,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/35a08373c0a8010b016b4be55ffbdb39</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
@@ -9912,15 +5807,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/35a08374c0a8010b016b4be5bb14984b</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -9933,15 +5819,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/35a08375c0a8010b016b4be5078b7c38</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -9953,15 +5830,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/35bd1b9ec0a8010b016b4be556adec8a</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -9971,15 +5839,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/35a08373c0a8010b016b4be5064b98af</URIString>
             <point1 x="416.65585" y="37.0"/>
             <point2 x="325.583" y="154.80331"/>
@@ -9993,15 +5852,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/35a08374c0a8010b016b4be5f5a8fd62</URIString>
             <point1 x="325.36813" y="197.78885"/>
             <point2 x="433.17642" y="339.67252"/>
@@ -10015,15 +5865,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/35a08375c0a8010b016b4be55f52c198</URIString>
             <point1 x="268.00302" y="165.19041"/>
             <point2 x="156.03935" y="134.98721"/>
@@ -10037,15 +5878,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/35bd1b9ec0a8010b016b4be5ef809b04</URIString>
             <point1 x="289.69687" y="196.5383"/>
             <point2 x="150.58086" y="342.73343"/>
@@ -10060,15 +5892,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/35a08373c0a8010b016b4be5148dc5a3</URIString>
         <point1 x="-3068.762" y="678.4016"/>
         <point2 x="-3614.2305" y="1033.7657"/>
@@ -10082,15 +5905,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3450427dc0a8010b00a5d7f2e78caa16</URIString>
         <point1 x="-3011.7598" y="621.98584"/>
         <point2 x="-2760.968" y="115.66699"/>
@@ -10103,15 +5917,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c40c1c367f00000101cc6a6a7320adf6</URIString>
         <child ID="97" label="Spazionismo" created="1293662178200"
             x="280.0144" y="96.27319" width="168.8" height="94.8"
@@ -10121,14 +5926,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>sviluppare</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="sviluppare"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/344da041c0a8010b00a5d7f215237a15</URIString>
             <shape xsi:type="diamond"/>
@@ -10141,15 +5940,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283b7c0a8010d005730f855f76239</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -10161,15 +5951,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/545f477cc0a8010b017193fc42344ac4</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -10182,24 +5963,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="3" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>debug</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="debug"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/54680200c0a8010b017193fc0dd124b1</URIString>
             <shape xsi:type="ellipse"/>
@@ -10213,19 +5978,8 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="2" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value>debug</value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
+            <metadata-list>
+                <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="debug"/>
             </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/547ef18ec0a8010b017193fce102760e</URIString>
             <shape xsi:type="ellipse"/>
@@ -10237,15 +5991,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c3d5837b7f00000101cc6a6a2890786b</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
@@ -10256,15 +6001,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/344da041c0a8010b00a5d7f24809561c</URIString>
             <point1 x="111.56627" y="210.72011"/>
             <point2 x="307.08344" y="158.87544"/>
@@ -10278,15 +6014,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/7c5283b8c0a8010d005730f8255acfe0</URIString>
             <point1 x="329.52142" y="115.86946"/>
             <point2 x="243.3974" y="47.24318"/>
@@ -10300,15 +6027,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/545f477cc0a8010b017193fce8e56487</URIString>
             <point1 x="419.1493" y="127.01294"/>
             <point2 x="573.2524" y="80.10693"/>
@@ -10322,15 +6040,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/54680200c0a8010b017193fc4e9dc81a</URIString>
             <point1 x="364.395" y="191.0625"/>
             <point2 x="364.35544" y="288.0"/>
@@ -10344,15 +6053,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/547ef18fc0a8010b017193fce029f699</URIString>
             <point1 x="431.64294" y="318.11334"/>
             <point2 x="578.0348" y="318.5933"/>
@@ -10367,15 +6067,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c3d5837c7f00000101cc6a6aa979f903</URIString>
         <point1 x="-2986.0703" y="621.9857"/>
         <point2 x="-2527.988" y="294.26843"/>
@@ -10388,15 +6079,6 @@
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
         <font>SansSerif-plain-14</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c40c1c3b7f00000101cc6a6aec77584b</URIString>
         <child ID="75" label="Metafisica" created="1293660828252"
             x="130.88159" y="193.0202" width="113.0" height="36.0"
@@ -10405,15 +6087,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/3434ba87c0a8010b00a5d7f2f15203e6</URIString>
             <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
         </child>
@@ -10424,15 +6097,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/344da040c0a8010b00a5d7f278f3ffce</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -10445,15 +6109,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/bf8db5dec0a8010b0083fff9fd11d664</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -10467,15 +6122,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/90d72e12c0a80116011492edcf84ac06</URIString>
             <shape xsi:type="diamond"/>
         </child>
@@ -10488,15 +6134,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/90d72e13c0a80116011492ed2ec93d07</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -10508,15 +6145,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#EA2218</textColor>
             <font>Arial-plain-12</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/8b8747ac7f0000010163f47e18ce6926</URIString>
             <shape xsi:type="ellipse"/>
         </child>
@@ -10527,15 +6155,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/344da041c0a8010b00a5d7f27ee7bd3c</URIString>
             <point1 x="187.55968" y="193.01953"/>
             <point2 x="188.92494" y="55.023438"/>
@@ -10549,15 +6168,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/90d72e12c0a80116011492ed1593ccfb</URIString>
             <point1 x="222.59879" y="229.0202"/>
             <point2 x="422.78784" y="331.3396"/>
@@ -10571,15 +6181,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/c3d583797f00000101cc6a6a58259ce8</URIString>
             <point1 x="181.24278" y="229.0202"/>
             <point2 x="147.93637" y="326.68"/>
@@ -10593,15 +6194,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/8b8747ac7f0000010163f47e1fb0d05c</URIString>
             <point1 x="132.14566" y="363.12234"/>
             <point2 x="91.27381" y="440.8327"/>
@@ -10615,15 +6207,6 @@
             <strokeColor>#8C8F72</strokeColor>
             <textColor>#404040</textColor>
             <font>Arial-plain-11</font>
-            <metadata-list category-list-size="1" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-                <metadata xsi:type="vue-metadata-element">
-                    <value></value>
-                    <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                    <type>1</type>
-                </metadata>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/90d72e14c0a80116011492ed6dde7088</URIString>
             <point1 x="530.1439" y="388.84433"/>
             <point2 x="636.6473" y="448.63242"/>
@@ -10638,15 +6221,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3434ba87c0a8010b00a5d7f2e2c9ac39</URIString>
         <point1 x="-2960.6213" y="660.12354"/>
         <point2 x="-2172.117" y="777.0282"/>
@@ -10660,15 +6234,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/2d04edce7f00000100f3c66ee1faec76</URIString>
         <point1 x="-2144.9417" y="803.39417"/>
         <point2 x="-2600.6187" y="1083.8029"/>
@@ -10682,15 +6247,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/2d04edce7f00000100f3c66ea71a5a27</URIString>
         <point1 x="-2617.4978" y="1078.853"/>
         <point2 x="-2213.0654" y="397.86548"/>
@@ -10704,15 +6260,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/343b2829c0a8010b00a5d7f2d9d11000</URIString>
         <point1 x="-3024.408" y="678.91797"/>
         <point2 x="-2998.3489" y="1190.0078"/>
@@ -10727,15 +6274,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/343b2829c0a8010b00a5d7f23c361e8d</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
@@ -10748,15 +6286,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34442d48c0a8010b00a5d7f24f15e720</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -10769,15 +6298,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34442d48c0a8010b00a5d7f2e131f3f9</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -10790,15 +6310,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/776422fcc0a8010d011c34fbef720353</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -10810,15 +6321,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34442d48c0a8010b00a5d7f2f4647956</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -10831,15 +6333,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/2d04edce7f00000100f3c66edbda3c12</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -10851,24 +6344,10 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="3" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Coscienza</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Anima</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Spirito</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Coscienza"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Anima"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Spirito"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80d1e9447f00000101a8c22b06f73855</URIString>
         <shape xsi:type="ellipse"/>
@@ -10881,19 +6360,9 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="2" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Esistenza di Dio</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Fine dell'esistenza</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Esistenza di Dio"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Fine dell'esistenza"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80d1e9457f00000101a8c22bd3ee5002</URIString>
         <shape xsi:type="ellipse"/>
@@ -10907,19 +6376,9 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="2" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Esistenza di Dio</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Fine dell'esistenza</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Esistenza di Dio"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Fine dell'esistenza"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/811dc3f87f00000100650016f5f8ab79</URIString>
         <shape xsi:type="ellipse"/>
@@ -10933,14 +6392,8 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value>Post-it</value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Post-it"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80e1bb477f00000101a8c22b6a41def9</URIString>
         <shape xsi:type="ellipse"/>
@@ -10954,15 +6407,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/344da042c0a8010b00a5d7f2b2261185</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -10973,15 +6417,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34442d48c0a8010b00a5d7f2db5bc787</URIString>
         <point1 x="-2992.9895" y="1226.0088"/>
         <point2 x="-2928.6619" y="1486.7246"/>
@@ -10995,15 +6430,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/34442d49c0a8010b00a5d7f28ec1f703</URIString>
         <point1 x="-3052.286" y="1221.1761"/>
         <point2 x="-3202.5564" y="1257.2461"/>
@@ -11017,15 +6443,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/2d04edca7f00000100f3c66e018a20b1</URIString>
         <point1 x="-2944.1858" y="1192.7183"/>
         <point2 x="-2673.963" y="1115.1162"/>
@@ -11039,15 +6456,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80d1e9457f00000101a8c22beccfbc9a</URIString>
         <point1 x="-3009.3433" y="1226.009"/>
         <point2 x="-3117.499" y="1389.4373"/>
@@ -11061,15 +6469,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80d87fca7f00000101a8c22b1676db05</URIString>
         <point1 x="-2974.5015" y="1226.009"/>
         <point2 x="-2767.148" y="1388.7854"/>
@@ -11083,15 +6482,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80d1e9447f00000101a8c22b6eeab0ac</URIString>
         <point1 x="-2711.354" y="1439.5474"/>
         <point2 x="-2603.7905" y="1554.4834"/>
@@ -11105,15 +6495,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/344da042c0a8010b00a5d7f204f4ec25</URIString>
         <point1 x="-2556.0273" y="1613.5527"/>
         <point2 x="-2482.1538" y="1721.4316"/>
@@ -11127,15 +6508,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/776422fdc0a8010d011c34fbebd2da54</URIString>
         <point1 x="-2919.8147" y="1537.1543"/>
         <point2 x="-2907.5396" y="1654.4395"/>
@@ -11149,15 +6521,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80e1bb0a7f00000101a8c22b6543b060</URIString>
         <point1 x="-2471.0693" y="1313.0581"/>
         <point2 x="-2613.8127" y="1126.5884"/>
@@ -11171,15 +6534,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80e1bb0a7f00000101a8c22b64f2dcef</URIString>
         <point1 x="-2682.1008" y="1400.3442"/>
         <point2 x="-2524.2192" y="1362.3125"/>
@@ -11193,15 +6547,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/811dc3f97f00000100650016529c0353</URIString>
         <point1 x="-3156.917" y="1446.2363"/>
         <point2 x="-3246.2124" y="1569.1558"/>
@@ -11215,15 +6560,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80eac6267f00000101a8c22b590818a1</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
@@ -11236,15 +6572,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80eac6277f00000101a8c22bdb69c4a0</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -11256,15 +6583,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80eac6287f00000101a8c22b41ea17bf</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -11277,15 +6595,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3a9ffd8fc0a8010b01f84d0175c045ed</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -11298,15 +6607,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/863b340d7f0000010150b06b7699ae71</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -11319,15 +6619,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/8b8747ab7f0000010163f47e670d9156</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -11338,15 +6629,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80eac6277f00000101a8c22b1b8c42c9</URIString>
         <point1 x="-3953.3809" y="674.06665"/>
         <point2 x="-4148.1323" y="776.75854"/>
@@ -11360,15 +6642,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80eac6277f00000101a8c22b61333fe0</URIString>
         <point1 x="-3974.9456" y="647.73926"/>
         <point2 x="-4092.3496" y="633.5551"/>
@@ -11382,15 +6655,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/80eac6277f00000101a8c22b4d9aace7</URIString>
         <point1 x="-3931.3162" y="635.4668"/>
         <point2 x="-4021.709" y="515.4624"/>
@@ -11404,15 +6668,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/863b340c7f0000010150b06b3e4dea6f</URIString>
         <point1 x="-3912.64" y="674.0664"/>
         <point2 x="-3886.6123" y="795.4336"/>
@@ -11426,15 +6681,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/8b8747ab7f0000010163f47e1f1dfa8f</URIString>
         <point1 x="-3901.327" y="635.4668"/>
         <point2 x="-3808.9282" y="520.0576"/>
@@ -11449,15 +6695,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3450427cc0a8010b00a5d7f2ab23f3c5</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
@@ -11470,15 +6707,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/8b7540997f0000010163f47e9ae8e331</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -11491,15 +6719,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/8b8747ac7f0000010163f47e87307f08</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -11510,15 +6729,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/8b75409a7f0000010163f47ecf2cd558</URIString>
         <point1 x="-2778.7622" y="64.322754"/>
         <point2 x="-2875.1301" y="-16.76416"/>
@@ -11532,15 +6742,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/8b8747ac7f0000010163f47ef70c4117</URIString>
         <point1 x="-2743.935" y="64.32129"/>
         <point2 x="-2714.202" y="-112.50586"/>
@@ -11555,15 +6756,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c43e66377f000001003fc9b6ac3e12d7</URIString>
         <shape xsi:type="ellipse"/>
     </child>
@@ -11574,15 +6766,6 @@
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
-        <metadata-list category-list-size="1" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-            <metadata xsi:type="vue-metadata-element">
-                <value></value>
-                <key>http://vue.tufts.edu/vue.rdfs#none</key>
-                <type>1</type>
-            </metadata>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c43e66377f000001003fc9b6e6c2d7b1</URIString>
         <point1 x="-2706.7913" y="64.32263"/>
         <point2 x="-2539.3857" y="-39.333374"/>
@@ -11590,47 +6773,29 @@
         <ID2 xsi:type="node">737</ID2>
     </child>
     <layer ID="374" label="Relazioni" created="1295991642614" x="0.0"
-        y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
-        <metadata-list category-list-size="0" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-        </metadata-list>
+        y="0.0" width="1.4E-45" height="1.4E-45" hidden="true"
+        strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/bf23a3a8c0a8010b015e8a8fdc837bba</URIString>
     </layer>
     <layer ID="378" label="Arte" created="1295992283172" x="0.0" y="0.0"
-        width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
-        <metadata-list category-list-size="0" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-        </metadata-list>
+        width="1.4E-45" height="1.4E-45" hidden="true" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca3ac0a8010b00b4cbc51c140d59</URIString>
     </layer>
     <layer ID="1" label="Informatica" created="1267825536136" x="0.0"
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
-        <metadata-list category-list-size="0" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/304ae829c0a8010a0179d47fc3c57899</URIString>
     </layer>
     <layer ID="7" label="Filosofia" created="1293657051881" x="0.0"
-        y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
-        <metadata-list category-list-size="0" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-        </metadata-list>
+        y="0.0" width="1.4E-45" height="1.4E-45" hidden="true"
+        strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/3413335cc0a8010b00a5d7f2d68c857e</URIString>
     </layer>
     <layer ID="6" label="C'hi++" created="1293656974647" x="0.0" y="0.0"
-        width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
-        <metadata-list category-list-size="0" other-list-size="0"
-            ontology-list-size="0" RCategoryListSize="0">
-            <ontology-list-string></ontology-list-string>
-        </metadata-list>
+        width="1.4E-45" height="1.4E-45" hidden="true" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/3413335cc0a8010b00a5d7f256847768</URIString>
     </layer>
-    <userZoom>0.5</userZoom>
-    <userOrigin x="-2775.9775" y="-849.8031"/>
+    <userZoom>0.5901178105267081</userZoom>
+    <userOrigin x="-1641.6925" y="-1034.2421"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1267825535957"
@@ -11639,10 +6804,6 @@
             <strokeColor>#B3993333</strokeColor>
             <textColor>#000000</textColor>
             <font>SansSerif-plain-14</font>
-            <metadata-list category-list-size="0" other-list-size="0"
-                ontology-list-size="0" RCategoryListSize="0">
-                <ontology-list-string></ontology-list-string>
-            </metadata-list>
             <URIString>http://vue.tufts.edu/rdf/resource/304ae82ac0a8010a0179d47f622af617</URIString>
             <masterSlide ID="2" created="1267825536183" x="0.0" y="0.0"
                 width="800.0" height="600.0" locked="true"
@@ -11651,10 +6812,6 @@
                 <strokeColor>#404040</strokeColor>
                 <textColor>#000000</textColor>
                 <font>SansSerif-plain-14</font>
-                <metadata-list category-list-size="0"
-                    other-list-size="0" ontology-list-size="0" RCategoryListSize="0">
-                    <ontology-list-string></ontology-list-string>
-                </metadata-list>
                 <URIString>http://vue.tufts.edu/rdf/resource/304ae82bc0a8010a0179d47fc8e82f2a</URIString>
                 <titleStyle ID="3" label="Header"
                     created="1267825536327" x="341.0" y="175.0"
@@ -11663,10 +6820,6 @@
                     <strokeColor>#404040</strokeColor>
                     <textColor>#FFFFFF</textColor>
                     <font>Gill Sans-plain-36</font>
-                    <metadata-list category-list-size="0"
-                        other-list-size="0" ontology-list-size="0" RCategoryListSize="0">
-                        <ontology-list-string></ontology-list-string>
-                    </metadata-list>
                     <URIString>http://vue.tufts.edu/rdf/resource/304ae82cc0a8010a0179d47fef1d6323</URIString>
                     <shape xsi:type="rectangle"/>
                 </titleStyle>
@@ -11677,10 +6830,6 @@
                     <strokeColor>#404040</strokeColor>
                     <textColor>#FFFFFF</textColor>
                     <font>Gill Sans-plain-22</font>
-                    <metadata-list category-list-size="0"
-                        other-list-size="0" ontology-list-size="0" RCategoryListSize="0">
-                        <ontology-list-string></ontology-list-string>
-                    </metadata-list>
                     <URIString>http://vue.tufts.edu/rdf/resource/304ae82dc0a8010a0179d47f92ef253b</URIString>
                     <shape xsi:type="rectangle"/>
                 </textStyle>
@@ -11690,10 +6839,6 @@
                     <strokeColor>#404040</strokeColor>
                     <textColor>#B3BFE3</textColor>
                     <font>Gill Sans-plain-18</font>
-                    <metadata-list category-list-size="0"
-                        other-list-size="0" ontology-list-size="0" RCategoryListSize="0">
-                        <ontology-list-string></ontology-list-string>
-                    </metadata-list>
                     <URIString>http://vue.tufts.edu/rdf/resource/304ae82ec0a8010a0179d47f21c366a0</URIString>
                     <shape xsi:type="rectangle"/>
                 </linkStyle>
@@ -11701,8 +6846,7 @@
         </pathway>
     </PathwayList>
     <date>2010-03-05</date>
-    <mapFilterModel/>
-    <modelVersion>5</modelVersion>
+    <modelVersion>6</modelVersion>
     <saveLocation>/Users/Carlo/Dropbox/Canaro/C'hi++</saveLocation>
     <saveFile>/Users/Carlo/Dropbox/Canaro/C'hi++/C'hi++.vue</saveFile>
 </LW-MAP>
