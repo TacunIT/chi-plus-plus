@@ -5,7 +5,7 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.4.3</p>
+	<p><label>Versione</label>0.4.4</p>
 	<p><label>Data    </label>10 Dicembre 2018</p>
 </div>
 	![](http://media.canaro.net/imago/seal.png)
@@ -774,7 +774,7 @@ Se gli elementi interni di un sistema sono dipendenti gli uni dagli altri, la co
 Al contrario, se gli elementi del sistema sono indipendenti gli uni dagli altri e ciasuno di essi svolge solo un compito ben preciso, le modifiche o le correzioni su uno di essi avranno un impatto molto basso o addirittura nullo sul resto del sistema.
 
 ## Release/0.3: Git
-A Dicembre del 2016 divenne chiaro che anche se avessi potuto dedicare a questo progetto tutto il mio tempo (e non potevo), non sarei mai riuscito a portarlo a termine da solo: avevo bisogno di aiuto.
+A Dicembre del 2016 divenne chiaro che anche se avessi potuto dedicare a questo progetto tutto il mio tempo (e non potevo), non sarei mai riuscito a portarlo a termine da solo.
 Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *open-source* mi sembrò la cosa migliore da fare, così comnciai a scrivere questo Manifesto per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
 
 ### Git
@@ -808,28 +808,21 @@ Leggendo il registro degli eventi di Git possiamo vedere quali sono state le mod
 | | | 
 | | |     Merge branch 'release/0.4.3'
 | | | 
-| | * commit 8385f9b13f713ef885f71b4ea0de72e2ffe0c5eb
-| | | Author: Carlo Simonelli <rc@nero-digitale.com>
-| | | Date:   Sat Dec 15 19:41:24 2018 +0100
-| | | 
-| | |     Aggiunta nota su Einstein
-| | | 
-| | * commit f1326b20c2fc3b84d0071944e2a4be780c09de71
-| | | Author: Carlo Simonelli <rc@nero-digitale.com>
 ```
 Ciascuno di quei "commit" identificati da una stringa alfanumerica che si vedono nel codice qui sopra, è una "fotografia" del sistema in un determinato momento dello sviluppo.
 Se ci si accorge di aver fatto un errore, si può ritornare indietro, annullando le modifiche fatte e ripristinando la vecchia versione del sistema.
 <br >  
-Git permette inoltre di coordinare le modifiche fatte al codice da utenti diversi all'interno dello stesso gruppo di lavoro: ciascun collaboratore lavora su una copia locale dei file e poi trasmette le modifiche a un *repository* centrale dove tutte le modifiche sono integrate nella copia principale del progetto.
+Oltre a essere una versione informatica della Macchina del Tempo, Git permette di coordinare le modifiche fatte al codice da più utenti all'interno dello stesso gruppo di lavoro: ciascun collaboratore lavora su una copia locale dei file e poi trasmette le modifiche a un *repository* centrale dove tutte le modifiche sono integrate nella copia principale del progetto.
 <br >  
 Per ottenere una copia di tutto il codice e i testi di questo progetto è sufficiente eseguire il comando:
 
 ```
 git clone git@bitbucket.org:canaro/chi-plus-plus.git
 ```
+Mi sono dilungato su Git perché il prossimo paragrafo comincia con la frase..
 
 ## Release/0.4: Markdown
-Come si può vedere dal registro degli eventi di Git, il 9 Dicembre di quest'anno ho convertito il testo di questo documento dal formato originale (.odt) in formato Markdown (.md).
+Come si può vedere dal registro degli eventi di Git, il 9 Dicembre di quest'anno ho convertito il testo di questo documento dal formato originale, *OpenDocument* in formato *Markdown*.
 
 ```
 commit ba7ff38b6d0862b13a79f10153c2eb11477b2a1f
@@ -850,12 +843,26 @@ Date:   Sun Dec 9 10:30:25 2018 +0100
 
     Iniziata conversione Manifesto in formato Markdown
 ```
-La differenza fra i due formati è che OpenDocument non è un formato testuale puro ed è più complicato da gestire con Git. 
-Al contrario, Markdown è un formato *plain-text* che può essere aperto e modificato con un qualunque editor di testi e che è gestito senza problemi da Git.
+La differenza fra i due formati è che OpenDocument non è un formato testuale puro ed è più complicato da gestire con Git; al contrario, Markdown è un formato *plain-text* ed è gestito senza problemi da Git.
 <br/>  
-Il passaggio a Markdown non è stato un vezzo, ma un obbligo, perché solo in questo modo è possibile avere un controllo completo sulle modifiche che sono apportate ai testi. Un beneficio collaterale dell'adozione di Markdown è la *portabilità* del testo: mentre un testo in formato OpenDocument può essere letto e modificato solo con un programma di desktop-publishing, come *Word* o una delle sue alternative, un testo Markdown può essere letto e modificato con qualunque strumento permetta di aprire e modificare file di testo, da *Notepad* a *vi*.
+Il passaggio a Markdown non è stato un vezzo, ma un obbligo, perché solo in questo modo è possibile avere un controllo completo sulle modifiche che sono apportate ai testi. Un beneficio collaterale dell'adozione di Markdown è la *portabilità* del testo: mentre un testo in formato OpenDocument può essere letto e modificato solo con un programma di *desktop-publishing*, come *Word* o una delle sue alternative, un testo Markdown può essere letto e modificato con qualunque strumento permetta di aprire e modificare file di testo, da *Notepad* a *vi*.
 
 ### Portabilità 
+Il termine: *portabilità* indica la possibilità di eseguire uno stesso programma su computer con sistemi operativi di tipo differente. 
+Per essere più precisi, la portabilità è la possibilità di creare copie di uno stesso programma che possano essere eseguite su piattaforme hardware/software differenti.  
+Per poter essere eseguito su sistemi differenti, un software deve richiamare delle istruzioni che siano valide in tutti i sistemi hardware. Per esempio, l'istruzione:
+
+```
+questo testo fammelo in color rosso
+```
+funziona su tutti i sistemi, perché il colore rosso è uno dei tre colori di base della codifica RGB ed è quindi un concetto "noto" a ogni compurer. Al contrario, l'istruzione:
+
+```
+questo testo fammelo in color rosso pompeiano
+```
+può funzionare solo su un computer a cui sia stato insegnato come generare quella specifica sfumatura di colore nota come: *rosso pompeiano*[^rosso-pompeiano].  
+
+Traslando questo concetto in termini letterarii, una vignetta di satira politica  non è *portabile*, perché implica una conoscenza sia del soggetto della vignetta che dell'evento a cui si riferisce; al contrario, una (buona) poesia è *portabile*, perché si riferisce a concetti universali che chiunque è in grado di capire.
 
 
 ### Portabilità del C'hi++
@@ -954,7 +961,9 @@ una affermazione che trovo affascinante perché, per la teoria spazionista, ciò
 [^spazione]: In realtà, il nome *spazione* è anche un riferimento, intenzionalmente auto-ironico, ai: *cosoni*, i baccelli del film *Totò sulla Luna*, parodia nostrana de: *L'invasione degli ultracorpi*.
 
 [^leopardi]: Il gioco di parole è intenzionale.
- 
+
+[^rosso-pompeiano]: Alcune delle possibili codifiche sono: *#cf3054*, *rgb(207, 48, 84)*, *hsl(346, 62%, 50%)*.
+
 [^gita]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni. 
  
 [^mantiq]: Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
