@@ -1,4 +1,4 @@
-<section class="pagina cover" >
+<section class="pagina cover" style="display:none">
 <header>
 	<h1>C'hi++</h1>
 	<h2>Proposta per una metafisica _open-source_</h2>
@@ -706,8 +706,8 @@ Il Maestro dirà:
 
 > Se vuoi capire le classi, devi leggere Aristotele.
 
-ed è vero: per parlare delle classi si può attingere a piene mani da Aristotele. 
-Per esempio, il concetto di "essenza" può essere utilizzato per spiegare sia il le *funzioni virtuali pure*; i concetti di "anima" e "corpo" possono illustrare la differenza fra *metodi* e *dati membro* di una classe; i concetti di "universale" e "sostanza" spiegano la differenza fra *dichiarazione* e *istanza* di una classe:
+ed è vero: per parlare delle classi del C++ si può attingere a piene mani da Aristotele. 
+Per esempio, il concetto di "essenza" può essere utilizzato per spiegare le *funzioni virtuali pure*; i concetti di "anima" e "corpo" possono illustrare la differenza fra *metodi* e *dati membro* di una classe; i concetti di "universale" e "sostanza" spiegano la differenza fra *dichiarazione* e *istanza* di una classe:
 
 > La differenza fra universale e sostanza, in Aristotele è la stessa che c'è fra classe e istanza in C++, ed è corretto dire che un termine universale non possa essere il nome di una sostanza, ma solo il nome della sua classe, perché l'istruzione:
 
@@ -741,7 +741,7 @@ Lasciarsi andare alla corrente è pericoloso, perché ci si potrebbe parare dava
 Chi pratica il C'hi++ applica lo stesso principio alla sua vita, e compie solo le azioni necessarie, ignorando tutto ciò che è superfluo.
 Capire quali sono le azioni necessarie è semplice, così com’è semplice, quando si naviga su un fiume, capire qual è la direzione della corrente.
 
-Nell'ultimo capitolo sarà definita anche la cosmogonia del C'hi++, ovvero lo Spazionismo.
+Nell'ultimo capitolo sarà definita anche la cosmogonia del C'hi++, ovvero lo *Spazionismo*.
 
 ### Spazionismo
 Lo Spazionismo è l'evoluzione delle idee abbozzate in *Sostiene Aristotele*.  
@@ -775,7 +775,7 @@ Al contrario, se gli elementi del sistema sono indipendenti gli uni dagli altri 
 
 ## Release/0.3: Git
 A Dicembre del 2016 divenne chiaro che anche se avessi potuto dedicare a questo progetto tutto il mio tempo (e non potevo), non sarei mai riuscito a portarlo a termine da solo.
-Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *open-source* mi sembrò la cosa migliore da fare, così comnciai a scrivere questo Manifesto per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
+Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *open-source* mi sembrò la cosa migliore da fare, così cominciai a scrivere questo Manifesto per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
 
 ### Git
 *Git* è un sistema con cui si gestiscono le diverse versioni di un software, ma può essere utilizzato per tenere traccia delle modifiche di qualsiasi documento elettronico.  
@@ -814,11 +814,8 @@ Se ci si accorge di aver fatto un errore, si può ritornare indietro, annullando
 <br >  
 Oltre a essere una versione informatica della Macchina del Tempo, Git permette di coordinare le modifiche fatte al codice da più utenti all'interno dello stesso gruppo di lavoro: ciascun collaboratore lavora su una copia locale dei file e poi trasmette le modifiche a un *repository* centrale dove tutte le modifiche sono integrate nella copia principale del progetto.
 <br >  
-Per ottenere una copia di tutto il codice e i testi di questo progetto è sufficiente eseguire il comando:
-
-```
-git clone git@bitbucket.org:canaro/chi-plus-plus.git
-```
+Se qualcuno volesse contribuire a questo progetto
+<br >  
 Mi sono dilungato su Git perché il prossimo paragrafo comincia con la frase..
 
 ## Release/0.4: Markdown
