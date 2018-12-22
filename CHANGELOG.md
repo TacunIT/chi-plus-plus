@@ -1,3 +1,11 @@
+## 0.4.5 (December 22, 2018)
+  - Completato il paragrafo sulla sovrapponibilità del C'hi++ con le religioni ispirate
+  - Completato il paragrafo sulla portabilità del C'hi++
+  - Aggiunte al paragrafo su Git
+  - Rivisto testo su Markdown
+  - Compeletato il paragrafo su Git
+  - Rimossa copia della mappa Vue
+
 ## 0.4.4 (December 16, 2018)
   - Modifiche minori prima di merge con file di bitbucket
 
