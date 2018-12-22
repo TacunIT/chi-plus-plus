@@ -1,3 +1,6 @@
+## 0.5.0 (December 22, 2018)
+  - Rivista impaginazione del Manifesto per stampa
+
 ## 0.4.5 (December 22, 2018)
   - Completato il paragrafo sulla sovrapponibilità del C'hi++ con le religioni ispirate
   - Completato il paragrafo sulla portabilità del C'hi++
