@@ -6,7 +6,7 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.5.1</p>
+	<p><label>Versione</label>0.4.8</p>
 	<p><label>Data    </label>22 Dicembre 2018</p>
 </div>
 	![](http://media.canaro.net/imago/seal.png)
@@ -15,6 +15,11 @@
 <section class="citazione">
 Finis totius et partis est, removere viventes in hac vita de statu miserie et perducere ad statum felicitatis.<br/>
 <span>Dante Alighieri - </span>Epistola XIII a Cangrande della Scala
+<br/>  
+E gli atei? rideva ancora.   
+Quelli mi annoiano perché parlano sempre di Dio. <br/>
+<span>Heinrich Böll</span> - Opinioni di un clown
+
 </section>
 
 ##Premessa
