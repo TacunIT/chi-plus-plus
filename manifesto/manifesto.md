@@ -6,7 +6,7 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.5.0</p>
+	<p><label>Versione</label>0.</p>
 	<p><label>Data    </label>22 Dicembre 2018</p>
 </div>
 	![](http://media.canaro.net/imago/seal.png)
@@ -905,7 +905,9 @@ Ho trovato altre analogie in frasi di filosofi greci come Eraclito, Zenone o Ana
 <br />  
 Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista: il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono l'Ente che ne causa la disgregazione, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte. 
 <br />  
-Un ultimo esempio, che però è poco più di un gioco di parole, e che riporto qui solo perché io amo i giochi di parole, lo otteniamo invertendo i fattori dell'equazione di Einstein:
+Per quanto riguarda le possibili affinità con la Scienza ufficiale, la scorsa settimana, del tutto casualmente, ho ascoltato alla radio parte di un'intervista al fisico Carlo Rovelli, che, da quanto ho potuto capire, sta sviluppando una teoria sulla struttura dello spazio simile allo Spazionismo. 
+Inizialmente ho avuto la tentazione di informarmi meglio, ma poi ho deciso di approfindire l'argomento dopo aver terminato questo testo, per non farmi influenzare.  
+Riporto quindi solo un esempio, che è poco più di un gioco di parole e che si ottiene invertendo i fattori dell'equazione di Einstein:
 <div class="einstein">
 <p>E = mc<sup>2</sup></p>
 </div>
