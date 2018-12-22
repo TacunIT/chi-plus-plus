@@ -1,4 +1,5 @@
-<section class="pagina cover" style="display:none">
+<link rel="stylesheet" href="chi++.css" media="screen" />
+<section class="pagina cover">
 <header>
 	<h1>C'hi++</h1>
 	<h2>Proposta per una metafisica _open-source_</h2>
@@ -814,8 +815,11 @@ Se ci si accorge di aver fatto un errore, si può ritornare indietro, annullando
 <br >  
 Oltre a essere una versione informatica della Macchina del Tempo, Git permette di coordinare le modifiche fatte al codice da più utenti all'interno dello stesso gruppo di lavoro: ciascun collaboratore lavora su una copia locale dei file e poi trasmette le modifiche a un *repository* centrale dove tutte le modifiche sono integrate nella copia principale del progetto.
 <br >  
-Se qualcuno volesse contribuire a questo progetto
-<br >  
+Se qualcuno volesse contribuire a questo progetto, potrebbe ottenere una copia di tutto il codice e i testi di questo progetto eseguendo il comando:
+
+```
+git clone git@bitbucket.org:canaro/chi-plus-plus.git
+```
 Mi sono dilungato su Git perché il prossimo paragrafo comincia con la frase..
 
 ## Release/0.4: Markdown
@@ -859,14 +863,14 @@ questo testo fammelo in color rosso pompeiano
 ```
 può funzionare solo su un computer a cui sia stato insegnato come generare quella specifica sfumatura di colore nota come: *rosso pompeiano*[^rosso-pompeiano].  
 
-Traslando questo concetto in termini letterarii, una vignetta di satira politica  non è *portabile*, perché implica una conoscenza sia del soggetto della vignetta che dell'evento a cui si riferisce; al contrario, una (buona) poesia è *portabile*, perché si riferisce a concetti universali che chiunque è in grado di capire.
+Traslando questo concetto in termini letterarii, possiamo dire che una vignetta di satira politica non è portabile, perché implica una conoscenza sia del soggetto della vignetta che dell'evento a cui si riferisce; al contrario, una (buona) poesia è portabile, perché si riferisce a concetti universali che chiunque è in grado di capire.  
+Nel nostro caso, possiamo dire che la portabilità è la possibilità di rendere accettabile un concetto per persone aventi culture o convinzioni religiose di tipo diverso.
 
 ### Portabilità del C'hi++
-*C'hi++* si riferisce alla programmazione dei computer, che è un ambito specifico di un settore specifico, quindi ha un bassissimo grado di portabilità.  
-Se fra duecento anni un archeologo ritrovasse i quaderni con i miei appunti, potrebbe non capire a cosa io mi stia riferendo, mentre capirebbe perfettamente cosa simboleggiano l'Oca, l'Usignolo o il Pavone nel poema iraniano *Mantiq al-Tayr*, che è stato scritto nel XII secolo.
-
-#[da-qui]
-
+*C'hi++* si riferisce alla programmazione dei computer, che è un ambito specifico di un settore specifico, quindi, da un punto di vista simbolico, ha un bassissimo grado di portabilità.  
+Se fra duecento anni un archeologo ritrovasse i quaderni con i miei appunti e riuscisse a decifrare la mia grafia, potrebbe non capire a cosa io mi stia riferendo, quando parlo di classi, istanze e oggetti, mentre capirebbe perfettamente cosa simboleggiano l'Oca, l'Usignolo o il Pavone nel poema iraniano *Mantiq al-Tayr*, che è stato scritto nel XII secolo.
+In compenso, molti precetti del C'hi++ sono compatibili precetti o idee appartenenti ad altre mistiche o filosofie.
+<br/>  
 In questi giorni sto leggendo la *Bhagavad-Gita*[^gita].
 Alcuni passi mi hanno ricordato le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire "bene":
 
@@ -917,7 +921,7 @@ Ho trovato altre analogie in frasi di filosofi greci come Eraclito, Zenone o Ana
 <br />  
 Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista: il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono l'Ente che ne causa la disgregazione, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte. 
 <br />  
-Un ultimo esempio, che però è poco più di un gioco di parole, e che riporto qui solo perché io *amo* i giochi di parole, lo otteniamo invertendo i fattori dell'equazione di Einstein:
+Un ultimo esempio, che però è poco più di un gioco di parole, e che riporto qui solo perché io amo i giochi di parole, lo otteniamo invertendo i fattori dell'equazione di Einstein:
 <div class="einstein">
 <p>E = mc<sup>2</sup></p>
 </div>
