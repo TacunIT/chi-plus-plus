@@ -6,7 +6,7 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.</p>
+	<p><label>Versione</label>0.5.1</p>
 	<p><label>Data    </label>22 Dicembre 2018</p>
 </div>
 	![](http://media.canaro.net/imago/seal.png)
