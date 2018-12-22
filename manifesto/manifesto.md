@@ -942,8 +942,7 @@ Vista in quest'ottica, la "sovrapponibilità" del C'hi++ con le religioni ispira
 Aristotele aveva ragione.
 
 ## Release/0.5 - TODO
-Terminata la redazione di questo testo, riprenderò la stesura di *C'hi++*.  
-Per prima cosa convertirò il documento attuale in Markdown, poi definirò la struttura dei capitoli mancanti, così come li ho descritti nel paragrafo dedicato al <a href="#chi++">C'hi++</a>.  
+Terminata la redazione di questo testo, riprenderò la stesura di *C'hi++* definendo la struttura dei capitoli relativi al linguaggio C++, così come li ho descritti nel paragrafo dedicato al <a href="#chi++">C'hi++</a>.
 Parallelamente, dovrò riprendere la catalogazione dei miei appunti, trascrivendoli nella mappa Vue del progetto per poi includerli nel testo del manuale. A questo proposito, sarebbe utile, anche se doloroso[^vue], rimpiazzare Vue con uno strumento di *mind-mapping* che produca documenti compatibili con Git o, quanto meno, riuscire a convertire i dati di Vue in un documento di testo semplice.
 <br />  
 Non so quale sarà il destino di C'hi++  
