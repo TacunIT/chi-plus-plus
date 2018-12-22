@@ -1,8 +1,8 @@
 /**
  *
- * chi++.css
+ * chi++print.css
  *
- * Foglio di stile per documenti Markdown
+ * Foglio di stile per la stampa dei documenti Markdown.
  *
  * @category   Stylesheet
  * @package    C'hi++
@@ -15,13 +15,15 @@
     padding: 0;
     margin: 0
 }
-
+html {
+}
 body {
-    margin: 0rem 5rem 3rem;
+    background-color: #fff;
     font-family: "Gill Sans", Helvetica, arial, sans-serif;
     font-size: 13pt;
     line-height: 1.4;
-    background-color: white;
+    margin: 0rem 15mm 30mm 25mm;
+    max-width: 170mm;
 }
 
 a {
@@ -45,7 +47,7 @@ a.anchor {
 }
 
 sup {
-    font-size: 0.80rem;
+    font-size: 0.7em;
     vertical-align: super;
     line-height: 0;
 }
@@ -53,7 +55,7 @@ sup {
 /* Utilizzato per le note */
 SUP A {
     font-family: Verdana, Sans;
-    font-size: 0.80rem;
+    font-size: 0.70rem;
     color: #999;
 }
 
@@ -78,6 +80,11 @@ h2 {
     padding-top: 1.5rem;
     counter-reset: h3;
     color: #600;
+}
+
+/** Utilizzato per le note finali */
+h2.note {
+    page-break-before: always;
 }
 
 h3 {
@@ -157,8 +164,20 @@ SECTION.cover DIV.dati LABEL:after {
 
 
 /* Citazione in testa */
-P.citazione      { font-style:italic; font-size: 0.9rem; margin:3rem 0; padding-left:40%; text-align:right }
-P.citazione SPAN { font-style:normal }
+SECTION.citazione {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    padding-top: 30%;
+    padding-left: 40%;
+    text-align: right;
+    page-break-before: always;
+    page-break-after: always;
+}
+
+SECTION.citazione SPAN {
+    font-style: normal
+}
 
 p.firma {
     padding: 2rem
@@ -275,7 +294,7 @@ table {
     padding: 0;
     border-collapse: collapse;
     margin: 1rem 0;
-    font-size: 0.9rem
+    font-size: 0.85rem
 }
 
 table tr {
@@ -475,7 +494,13 @@ kbd {
     }
 }
 
+@page {
+    orphans: 2;
+    widows: 2;
+}
 @media print {
+    body {
+    }
     table, pre {
         page-break-inside: avoid;
     }
@@ -483,4 +508,5 @@ kbd {
         word-wrap: break-word;
     }
 }
+
 

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="chi++.css" media="screen" />
+<link rel="stylesheet" href="chi++.css"  />
 <section class="pagina cover">
 <header>
 	<h1>C'hi++</h1>
@@ -6,16 +6,16 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.4.5</p>
+	<p><label>Versione</label>0.5.0</p>
 	<p><label>Data    </label>22 Dicembre 2018</p>
 </div>
 	![](http://media.canaro.net/imago/seal.png)
 </section>
 
-<p class="citazione">
+<section class="citazione">
 Finis totius et partis est, removere viventes in hac vita de statu miserie et perducere ad statum felicitatis.<br/>
 <span>Dante Alighieri - </span>Epistola XIII a Cangrande della Scala
-</p>
+</section>
 
 ##Premessa
 
@@ -122,8 +122,7 @@ al rogo come eretico.
 Con buona pace di John Lennon, le cose non andrebbero meglio in un Mondo
 senza religioni: se le stesse domande le faceste a un giudice, vi
 risponderebbe che sì, la ragazza può abortire, ma né il condannato né il
-malato possono essere uccisi, perché la Legge lo vieta.
-
+malato possono essere uccisi, perché la Legge lo vieta.  
 Se però gli domandaste:
 
 <ol class="domande" start="5">
@@ -420,14 +419,13 @@ La *major version zero* (0.y.z) è destinata allo sviluppo iniziale,
 quando il software non è ancora stabile e tutto può cambiare in ogni
 momento.
 <br>  
-Il versionamento semantico ha anche [altre regole](https://semver.org), ma per quelli che sono
-i nostri scopi possiamo fermarci qui.
+Il versionamento semantico ha anche altre regole[^semver], ma per quelli che sono i nostri scopi possiamo fermarci qui.
 
 ### Versionamento delle religioni monoteistiche
 
 La tabella seguente riporta un possibile versionamento delle grandi religioni monoteistiche:
 
-| n. | anno | descrizione | changelog
+| n. | anno | de	scrizione | changelog
 :---: | :---: | --- | :--- |
 0.1.0 | 3.200 a.C. | Culti egizi            | Riduzione del numero degli Dei; enoteismo e atenismo POC[^poc] del monoteismo.
 1.0.0 | 2.000 a.C. | Ebraismo               | Dio è uno; tutti gli altri sono deprecati.
@@ -612,12 +610,10 @@ Above us only sky<br/>
 ## Release/0.2: *C'hi++*
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
 programmazione scritto nello stile dei libri di filosofia giapponesi del
-XVII secolo o, anche, un libro di filosofia nello stile dei classici
-giapponesi del XVII secolo, scritto come un manuale di programmazione.  
+XVII secolo.  
 Questa ambivalenza è presente anche nel titolo, che è un gioco di parole
 fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il
 linguaggio di programmazione chiamato *C++*.
-<br />  
 Il tono della narrazione è generalmente serio, ma non sempre.  
 Ashvaghosha, nell'introduzione alla *Saundarananda*, afferma:
 
@@ -790,12 +786,6 @@ Leggendo il registro degli eventi di Git possiamo vedere quali sono state le mod
 | | 
 | |     Impotato il branch 'release/0.4.4' nel master originale di bitbucket.
 | | 
-| * commit 1746b3cbf73a74507bf39010799fee0390ccdb16 (tag: v0.4.4)
-| | Author: Carlo Simonelli <rc@nero-digitale.com>
-| | Date:   Sun Dec 16 20:08:12 2018 +0100
-| | 
-| |     Bump version to 0.4.4.
-| | 
 | * commit ef642e150a0237675a9c176a8a8f8d3cb34c5cb9
 | | Author: Carlo Simonelli <rc@nero-digitale.com>
 | | Date:   Sun Dec 16 19:51:30 2018 +0100
@@ -831,12 +821,6 @@ Author: Carlo Simonelli <rc@nero-digitale.com>
 Date:   Sun Dec 9 16:01:53 2018 +0100
 
     Completato aggiornamento della versione Markdown del Manifesto
-
-commit 62281011f0e922d820dbd3fe49bdfa415f07f66a
-Author: Carlo Simonelli <rc@nero-digitale.com>
-Date:   Sun Dec 9 11:46:52 2018 +0100
-
-    Migliorata la grafica del Manifesto
 
 commit f24b3147f8fee89f871ddceb171a6fb0a979cac1
 Author: Carlo Simonelli <rc@nero-digitale.com>
@@ -952,8 +936,9 @@ Aristotele aveva ragione.
 
 
 
+		
+<h2 class="note">Note</h2>
 
-## Note
 [^dogmi]: Principalmente perché non è possibile farlo.
 
 [^black-friday]: A mo' di esempio si veda un qualunque quotidiano o un filmato
@@ -961,7 +946,7 @@ Aristotele aveva ragione.
     americano.
 
 [^gnosi]: [aggiungere riferimento a *Cosmogonie Gnostiche*]
-
+[^semver]: https://semver.org
 [^poc]: *Proof Of Concept*: prototipo che serve a di/mostrare le
     funzionalità di un nuovo sistema o processo.
 
