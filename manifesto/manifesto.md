@@ -722,7 +722,7 @@ Per l'ereditarietà delle classi i riferimenti saranno all'Etica Nicomachea:
 
 > Un padre può ripudiare suo figlio, se è cattivo, ma un figlio non può ripudiare suo padre perché gli deve più di quanto non sia in grado di pagargli e in particolare gli deve l'esistenza.
  
-####Debug 
+#### Debug 
 Il penultimo capitolo sarà dedicato al *debug*, ovvero alla correzione degli errori del codice.
 La citazione è tratta dal *Breviario di estetica*, di Benedetto Croce:
 
@@ -766,7 +766,7 @@ La sequenza vista sopra, riletta in chiave spazionista, diventa:
 4. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
 5. tutto ricomincia.
 
-#### Basso accoppiamento
+####<a name="basso-accoppiamento">Basso accoppiamento</a> 
 Lo Spazionismo è la parte più pericolosa di tutta la mia metafisica.
 Non solo perché non ho alcun titolo per parlare di spazio e materia, ma perché il nome stesso della teoria è legato ai suoi postulati: il nome *Spazionismo* deriva dal nome *spazione* e il nome *spazione* deriva dai **presunti** attributi dell'entità che rappresenta[^spazione].  
 È, questa, la trasposizione astro-fisica del problema meta-fisico visto a proposito del [Buonismo](#buonismo): se alla fine si scopre che Dio non è buono o che comunque non ha senso attribuirgli delle qualità terrene, il nome della religione non ha più senso, indipendentemente dalla solidità dei suoi precetti.
@@ -908,9 +908,12 @@ Ho trovato delle analogie ai precetti del C'hi++ anche nel *Mantiq al-Tayr*[^man
 Cito questi due testi perché non li conoscevo quando ho cominciato a formulare la mia teoria e quindi non è possibile che abbiano influenzato le mie affermazioni, diversamente da testi che conoscevo già, come il *Tao-tê-ching* o *Eureka*, di Poe.  
 Ho trovato altre analogie in frasi di filosofi greci come Eraclito, Zenone o Anassimandro, ma non ho avuto ancora modo di approfondirle.
 <br />  
-Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista: il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono l'Ente che ne causa la disgregazione, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte. 
+Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista: il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono l'Ente che ne causa la disgregazione, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte.
 <br />  
-Per quanto riguarda le possibili affinità con la Scienza ufficiale, la scorsa settimana, del tutto casualmente, ho ascoltato alla radio parte di un'intervista al fisico Carlo Rovelli, che sta sviluppando una teoria sulla granularità dello spazio che presenta diverse affinità con lo Spazionismo. Inizialmente ho avuto la tentazione di informarmi meglio[^domande], ma poi ho deciso di approfindire l'argomento dopo aver terminato questo testo, per non farmi influenzare.
+Essendo una metafisica-non-metafisica, però, C'hi++ deve preoccuparsi anche della portabilità scientifica dei suoi precetti.
+Come ho scritto a proposito del <a href="#basso-accoppiamento">basso accoppiamento</a>,  il grosso pericolo dello Spazionismo è che deriva il suo stesso nome da uno dei suoi precetti ed è quindi fondamentale che la teoria spazionista non collida apertamente con quelle che sono le conoscenze scientifiche correnti.  
+Fortunatamente, la scorsa settimana ho scoperto che il fisico Carlo Rovelli[^rovelli] sta sviluppando una teoria sulla granularità dello spazio che presenta diverse affinità con lo Spazionismo. 
+Inizialmente ho avuto la tentazione di informarmi meglio per capire, se non proprio la verosimiglianza, quanto meno l'ammissibilità scientifica di alcune affermazioni che penso di fare nel testo, ma poi ho deciso di approfindire l'argomento dopo aver terminato questo testo, per non farmi influenzare.
 <br />  
 Un ultimo esempio, che è poco più di un gioco di parole e che riporto qui perché io amo i giochi di parole, si ottiene invertendo i fattori dell'equazione di Einstein:
 <div class="einstein">
@@ -938,7 +941,7 @@ Si tratta in entrambi i casi di rappresentazioni incomplete, perché prive di un
 Vista in quest'ottica, la "sovrapponibilità" del C'hi++ con le religioni ispirate non sembra più strana, ma assolutamente normale.
 Aristotele aveva ragione.
 
-## Conclusioni
+## Release/0.5 - TODO
 
 
 
@@ -976,7 +979,7 @@ Aristotele aveva ragione.
  
 [^mantiq]: Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
 
-[^domande]: In particolare, vorrei capire se non proprio la verosimiglianza, quanto meno l'ammissibilità scientifica di alcune affermazioni che penso di fare nel testo.
+[^rovelli]: Autore, per altro, di un libro proprio su Anassimandro.
 
 [^diavolo]: diàvolo s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. «calunniatore» (der. di διαβάλλω «gettare attraverso, calunniare»), adoperato nel gr. crist. per tradurre l’ebr. śāṭān «contraddittore, oppositore»].
 
