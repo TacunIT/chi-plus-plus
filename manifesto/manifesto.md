@@ -612,7 +612,7 @@ Above us only sky<br/>
 <p>Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Universo e siamo noi, con le nostre azioni, a decidere in quale dei due vivere.</p>
 </div>
 
-## Release/0.2: *C'hi++*
+## <a name="chi++">Release/0.2: *C'hi++*</a>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
 programmazione scritto nello stile dei libri di filosofia giapponesi del
 XVII secolo.  
@@ -911,7 +911,7 @@ Ho trovato altre analogie in frasi di filosofi greci come Eraclito, Zenone o Ana
 Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista: il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono l'Ente che ne causa la disgregazione, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte.
 <br />  
 Essendo una metafisica-non-metafisica, però, C'hi++ deve preoccuparsi anche della portabilità scientifica dei suoi precetti.
-Come ho scritto a proposito del <a href="#basso-accoppiamento">basso accoppiamento</a>,  il grosso pericolo dello Spazionismo è che deriva il suo stesso nome da uno dei suoi precetti ed è quindi fondamentale che la teoria spazionista non collida apertamente con quelle che sono le conoscenze scientifiche correnti.  
+Come ho scritto a proposito del <a href="#basso-accoppiamento">basso accoppiamento</a>, il grosso pericolo dello Spazionismo è che deriva il suo stesso nome da uno dei suoi precetti ed è quindi fondamentale che la teoria spazionista non collida apertamente con quelle che sono le conoscenze scientifiche correnti.  
 Fortunatamente, la scorsa settimana ho scoperto che il fisico Carlo Rovelli[^rovelli] sta sviluppando una teoria sulla granularità dello spazio che presenta diverse affinità con lo Spazionismo. 
 Inizialmente ho avuto la tentazione di informarmi meglio per capire, se non proprio la verosimiglianza, quanto meno l'ammissibilità scientifica di alcune affermazioni che penso di fare nel testo, ma poi ho deciso di approfindire l'argomento dopo aver terminato questo testo, per non farmi influenzare.
 <br />  
@@ -932,7 +932,7 @@ Involontariamente compatibile, aggiungerei, perché, come scrissi in: *Sostiene 
 
 > se fosse possibile creare una metafisica senza elementi metafisici.
 
-Credo che il rapporto che c'è fra C'hi++ e le religioni tradizionali sia lo stesso che passa fra l'immagine da satellite di un bosco e la rappresentazione della stessa area in una mappa topografica.
+Credo che il rapporto che c'è fra C'hi++ e le religioni tradizionali sia lo stesso che passa fra l'immagine da satellite di un bosco e la rappresentazione della stessa area in una mappa topografica dell'I.G.M[^igm].
 L'immagine da satellite descrive il bosco così com'è, in tutta la sua bellezza e la sua complessità; la mappa topografica rappresenta quella stessa bellezza con dei simboli, delle convenzioni tipografiche.  
 Chi conosce la zona può orientarsi con l'immagine da satellite, godendo così di tutta la bellezza del luogo; chi invece non conosce la zona o non ha un buon senso dell'orientamento utilizzerà la mappa, che gli fornirà una rappresentazione più fredda, ma più facile da interpretare.  
 
@@ -942,7 +942,21 @@ Vista in quest'ottica, la "sovrapponibilità" del C'hi++ con le religioni ispira
 Aristotele aveva ragione.
 
 ## Release/0.5 - TODO
+Terminata la redazione di questo testo, riprenderò la stesura di *C'hi++*.  
+Per prima cosa convertirò il documento attuale in Markdown, poi definirò la struttura dei capitoli mancanti, così come li ho descritti nel paragrafo dedicato al <a href="#chi++">C'hi++</a>.  
+Parallelamente, dovrò riprendere la catalogazione dei miei appunti, trascrivendoli nella mappa Vue del progetto per poi includerli nel testo del manuale. A questo proposito, sarebbe utile, anche se doloroso[^vue], rimpiazzare Vue con uno strumento di *mind-mapping* che produca documenti compatibili con Git o, quanto meno, riuscire a convertire i dati di Vue in un documento di testo semplice.
+<br />  
+Non so quale sarà il destino di C'hi++  
+Un amico, a cui ho fatto leggere una prima bozza di questo documento sostiene che:
 
+> potrebbe diventare un caso letterario oppure potrebbe far lanciare una Fatwa nei tuoi confronti, o tutte e due le ipotesi insieme
+
+È possibile, ma io credo piuttosto che anche se *C'hi++* diventasse davvero un caso letterario, non avverrà nulla; almeno, non nel breve periodo.  
+...
+<br />  
+C'è solo una cosa che so per certo: fino a che ne avrò la possibilità, io porterò avanti questo progetto.  
+Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano Spazioni, ma Cultur e fossi per ciò costretto a 
+Non per ostinazione, né 
 
 
 
@@ -984,3 +998,8 @@ Aristotele aveva ragione.
 [^diavolo]: diàvolo s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. «calunniatore» (der. di διαβάλλω «gettare attraverso, calunniare»), adoperato nel gr. crist. per tradurre l’ebr. śāṭān «contraddittore, oppositore»].
 
 [^lucifero]: lucìfero agg. e s. m. [dal lat. lucĭfer -a -um, comp. di lux lucis «luce» e -fer «-fero», calco del gr. ϕωσϕόρος].
+
+[^igm]: *Istituto Geografico Militare*.
+
+[^vue]: Sono affezionato a Vue perché la uso da molti anni e ho anche collaborato con i ragazzi della Tufts University per la versione in Italiano del programma, ma lo sviluppo è fermo al 2015 e temo che non riprenderà.
+
