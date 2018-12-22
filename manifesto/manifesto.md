@@ -951,11 +951,15 @@ Un amico, a cui ho fatto leggere una prima bozza di questo documento sostiene ch
 > potrebbe diventare un caso letterario oppure potrebbe far lanciare una Fatwa nei tuoi confronti, o tutte e due le ipotesi insieme
 
 È possibile, ma io credo piuttosto che anche se *C'hi++* diventasse davvero un caso letterario, non avverrà nulla; almeno, non nel breve periodo.  
-...
+Le persone, da sempre, agiscono nel modo che *ritengono* migliore per sé stessi e cambiano solo se qualcosa di ancestrale, come la guerra, la morte o la fame, li constringe a farlo.  
+Sapere di essere in errore non cambia questo stato di cose.
 <br />  
 C'è solo una cosa che so per certo: fino a che ne avrò la possibilità, io porterò avanti questo progetto.  
-Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano Spazioni, ma Cultur e fossi per ciò costretto a 
-Non per ostinazione, né 
+Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di uno la *major-version* del mio progettto e andrò avanti.  
+Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita sopra, funziona: mi aiuta a decidere quale sia la cosa giusta da fare, quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita; mia o altrui che sia.
+<br />
+Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che viene scritta da sempre.
+
 
 
 
@@ -1001,4 +1005,5 @@ Non per ostinazione, né
 [^igm]: *Istituto Geografico Militare*.
 
 [^vue]: Sono affezionato a Vue perché la uso da molti anni e ho anche collaborato con i ragazzi della Tufts University per la versione in Italiano del programma, ma lo sviluppo è fermo al 2015 e temo che non riprenderà.
+
 
