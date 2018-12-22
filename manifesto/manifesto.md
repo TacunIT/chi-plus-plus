@@ -905,9 +905,9 @@ Ho trovato altre analogie in frasi di filosofi greci come Eraclito, Zenone o Ana
 <br />  
 Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista: il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono l'Ente che ne causa la disgregazione, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte. 
 <br />  
-Per quanto riguarda le possibili affinità con la Scienza ufficiale, la scorsa settimana, del tutto casualmente, ho ascoltato alla radio parte di un'intervista al fisico Carlo Rovelli, che, da quanto ho potuto capire, sta sviluppando una teoria sulla struttura dello spazio simile allo Spazionismo. 
-Inizialmente ho avuto la tentazione di informarmi meglio, ma poi ho deciso di approfindire l'argomento dopo aver terminato questo testo, per non farmi influenzare.  
-Riporto quindi solo un esempio, che è poco più di un gioco di parole e che si ottiene invertendo i fattori dell'equazione di Einstein:
+Per quanto riguarda le possibili affinità con la Scienza ufficiale, la scorsa settimana, del tutto casualmente, ho ascoltato alla radio parte di un'intervista al fisico Carlo Rovelli, che sta sviluppando una teoria sulla granularità dello spazio che presenta diverse affinità con lo Spazionismo. Inizialmente ho avuto la tentazione di informarmi meglio[^domande], ma poi ho deciso di approfindire l'argomento dopo aver terminato questo testo, per non farmi influenzare.
+<br />  
+Un ultimo esempio, che è poco più di un gioco di parole e che riporto qui perché io amo i giochi di parole, si ottiene invertendo i fattori dell'equazione di Einstein:
 <div class="einstein">
 <p>E = mc<sup>2</sup></p>
 </div>
@@ -970,6 +970,8 @@ Aristotele aveva ragione.
 [^gita]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni. 
  
 [^mantiq]: Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
+
+[^domande]: In particolare, vorrei capire se non proprio la verosimiglianza, quanto meno l'ammissibilità scientifica di alcune affermazioni che penso di fare nel testo.
 
 [^diavolo]: diàvolo s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. «calunniatore» (der. di διαβάλλω «gettare attraverso, calunniare»), adoperato nel gr. crist. per tradurre l’ebr. śāṭān «contraddittore, oppositore»].
 
