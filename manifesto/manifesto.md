@@ -503,7 +503,7 @@ Lo riporto di seguito, senza modifiche al testo originale, anche se non sono pi�
 <p>Ci sono risposte canoniche a queste domande, ma possono soddisfare giusto l’ascoltatore medio di Radio Maria, io cercavo qualcosa di meglio.</p>
 <p>Inoltre, la maggior parte delle religioni richiedono una certa dose di fede in qualche luogo (Paradiso) o condizione (Nirvana) soprannaturale e inconoscibile fino al momento successivo alla morte, e questo mi suonava un po’ di fregatura.</p>
 <p>Mi sono chiesto allora se sarebbe stato possibile dare una spiegazione dell’Universo senza introdurre elementi esterni a quelli che conosciamo.</p>
-<p>In altre parole, se era possibile creare una metafisica senza elementi metafisici.</p>
+<p>In altre parole, se fosse possibile creare una metafisica senza elementi metafisici.</p>
 <p>Era possibile.</p>
  
 <p>Sostiene Aristotele (sempre nelle prime pagine, per fortuna) che le scienze più rigorose sono quelle che richiedono il numero minore di premesse.</p>
@@ -932,12 +932,23 @@ in:
 In termini spazionistici, questo equivale a dire che l'Universo (tutta la massa) è Dio (tutta l'energia) diviso la velocità della luce al quadrato:
 una affermazione che trovo affascinante perché, per la teoria spazionista, ciò che divide Dio creando l'Universo è un'entità che si può chiamare o Diavolo[^diavolo] o, anche, Lucifero[^lucifero]; in sostanza: *colui che divide* o *colui che porta la luce*.
 
-### Una Google Maps mistica
+### Istituto Geografico Mistico
 È interessante vedere come un modello teorico, nato da presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
-<br/>  
+Involontariamente compatibile, aggiungerei, perché, come scrissi in: *Sostiene Aristotele*, quando ho cominciato a sviluppare questa teoria volevo solo vedere: 
 
+> se fosse possibile creare una metafisica senza elementi metafisici.
+
+Credo che il rapporto che c'è fra C'hi++ e le religioni tradizionali sia lo stesso che passa fra l'immagine da satellite di un bosco e la rappresentazione della stessa area in una mappa topografica.
+L'immagine da satellite descrive il bosco così com'è, in tutta la sua bellezza e la sua complessità; la mappa topografica rappresenta quella stessa bellezza con dei simboli, delle convenzioni tipografiche.  
+Chi conosce la zona può orientarsi con l'immagine da satellite, godendo così di tutta la bellezza del luogo; chi invece non conosce la zona o non ha un buon senso dell'orientamento utilizzerà la mappa, che gli fornirà una rappresentazione più fredda, ma più facile da interpretare.  
+
+Si tratta in entrambi i casi di rappresentazioni incomplete, perché prive di una delle dimensioni del modello a cui si riferiscono, ma se dobbiamo utilizzarle per ritrovare la strada di casa in mezzo alla vegetazione questo è un bene, perché ci permette di avere una visione sintetica di qualcosa che sarebbe impossibile descrivere dettagliatamente.
+<br />  
+Vista in quest'ottica, la "sovrapponibilità" del C'hi++ con le religioni ispirate non sembra più strana, ma assolutamente normale.
+Aristotele aveva ragione.
 
 ## Conclusioni
+
 
 
 
