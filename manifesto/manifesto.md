@@ -913,7 +913,7 @@ Per certi versi anche la stessa Genesi biblica può essere considerata un'allego
 Essendo una metafisica-non-metafisica, però, C'hi++ deve preoccuparsi anche della portabilità scientifica dei suoi precetti.
 Come ho scritto a proposito del <a href="#basso-accoppiamento">basso accoppiamento</a>, il grosso pericolo dello Spazionismo è che deriva il suo stesso nome da uno dei suoi precetti ed è quindi fondamentale che la teoria spazionista non collida apertamente con quelle che sono le conoscenze scientifiche correnti.  
 Fortunatamente, la scorsa settimana ho scoperto che il fisico Carlo Rovelli[^rovelli] sta sviluppando una teoria sulla granularità dello spazio che presenta diverse affinità con lo Spazionismo. 
-Inizialmente ho avuto la tentazione di informarmi meglio per capire, se non proprio la verosimiglianza, quanto meno l'ammissibilità scientifica di alcune affermazioni che penso di fare nel testo, ma poi ho deciso di approfindire l'argomento dopo aver terminato questo testo, per non farmi influenzare.
+Inizialmente ho avuto la tentazione di informarmi meglio per capire, se non proprio la verosimiglianza, quanto meno l'ammissibilità scientifica di alcune affermazioni che penso di fare nel racconto, ma poi ho deciso di approfondire l'argomento dopo aver terminato questo testo, per non farmi influenzare e per non procrastinarne la pubblicazione di altri due anni.
 <br />  
 Un ultimo esempio, che è poco più di un gioco di parole e che riporto qui perché io amo i giochi di parole, si ottiene invertendo i fattori dell'equazione di Einstein:
 <div class="einstein">
@@ -927,12 +927,12 @@ In termini spazionistici, questo equivale a dire che l'Universo (tutta la massa)
 una affermazione che trovo affascinante perché, per la teoria spazionista, ciò che divide Dio creando l'Universo è un'entità che si può chiamare o Diavolo[^diavolo] o, anche, Lucifero[^lucifero]; in sostanza: *colui che divide* o *colui che porta la luce*.
 
 ### Istituto Geografico Mistico
-È interessante vedere come un modello teorico, nato da presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
+È interessante vedere come un modello teorico, basato su presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
 Involontariamente compatibile, aggiungerei, perché, come scrissi in: *Sostiene Aristotele*, quando ho cominciato a sviluppare questa teoria volevo solo vedere: 
 
 > se fosse possibile creare una metafisica senza elementi metafisici.
 
-Credo che il rapporto che c'è fra C'hi++ e le religioni tradizionali sia lo stesso che passa fra l'immagine da satellite di un bosco e la rappresentazione della stessa area in una mappa topografica dell'I.G.M[^igm].
+Credo che il rapporto che c'è fra C'hi++ e le religioni rivelate sia lo stesso che passa fra l'immagine da satellite di un bosco e la rappresentazione della stessa area in una mappa topografica dell'I.G.M[^igm].
 L'immagine da satellite descrive il bosco così com'è, in tutta la sua bellezza e la sua complessità; la mappa topografica rappresenta quella stessa bellezza con dei simboli, delle convenzioni tipografiche.  
 Chi conosce la zona può orientarsi con l'immagine da satellite, godendo così di tutta la bellezza del luogo; chi invece non conosce la zona o non ha un buon senso dell'orientamento utilizzerà la mappa, che gli fornirà una rappresentazione più fredda, ma più facile da interpretare.  
 
@@ -942,23 +942,29 @@ Vista in quest'ottica, la "sovrapponibilità" del C'hi++ con le religioni ispira
 Aristotele aveva ragione.
 
 ## Release/0.5 - TODO
-Terminata la redazione di questo testo, riprenderò la stesura di *C'hi++* definendo la struttura dei capitoli relativi al linguaggio C++, così come li ho descritti nel paragrafo dedicato al <a href="#chi++">C'hi++</a>.
+Terminata la redazione di questo testo, riprenderò la stesura di *C'hi++* definendo la struttura dei capitoli relativi al linguaggio C++, così come li ho descritti <a href="#chi++">sopra</a>.
 Parallelamente, dovrò riprendere la catalogazione dei miei appunti, trascrivendoli nella mappa Vue del progetto per poi includerli nel testo del manuale. A questo proposito, sarebbe utile, anche se doloroso[^vue], rimpiazzare Vue con uno strumento di *mind-mapping* che produca documenti compatibili con Git o, quanto meno, riuscire a convertire i dati di Vue in un documento di testo semplice.
+Dovrò poi verificare l'ammissibilità scientifica dei precetti dello Spazionismo, modificandoli se non fossero corretti, per poi includerli nel capitolo finale del libro.   
+Infine, dovrò trovare un editore.
 <br />  
-Non so quale sarà il destino di C'hi++  
-Un amico, a cui ho fatto leggere una prima bozza di questo documento sostiene che:
+Non so quale sarà il destino di *C'hi++*; non so dire nemmeno se questo Manifesto mi procurerà aiuto o sberleffi. 
+Un amico, a cui ne ho fatto leggere una prima bozza, sostiene che:
 
 > potrebbe diventare un caso letterario oppure potrebbe far lanciare una Fatwa nei tuoi confronti, o tutte e due le ipotesi insieme
 
 È possibile, ma io credo piuttosto che anche se *C'hi++* diventasse davvero un caso letterario, non avverrà nulla; almeno, non nel breve periodo.  
-Le persone, da sempre, agiscono nel modo che *ritengono* migliore per sé stessi e cambiano solo se qualcosa di ancestrale, come la guerra, la morte o la fame, li constringe a farlo.  
-Sapere di essere in errore non cambia questo stato di cose.
+Le maggior parte delle persone, da sempre, agisce nel modo che ritiene migliore per sé e non per l'interesse collettivo[^latino]. 
+Le persone cambiano solo se qualcosa di ancestrale, come la guerra, la morte o la fame, li costringe a farlo.
 <br />  
-C'è solo una cosa che so per certo: fino a che ne avrò la possibilità, io porterò avanti questo progetto.  
-Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di uno la *major-version* del mio progettto e andrò avanti.  
-Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita sopra, funziona: mi aiuta a decidere quale sia la cosa giusta da fare, quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita; mia o altrui che sia.
-<br />
-Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che viene scritta da sempre.
+Conosco solo due persone che abbiano cambiato il loro modo di vivere dopo aver letto un libro: una sono io e l'altra era Wayne Martini, un architetto americano con cui collaborai negli anni '90 e che mi regalò: *Lo Zen e l'arte della manutenzione della motocicletta*, dicendo: "Read it, it changed my life"; io pensai: "Sempre esagerati 'sti americani!", ma poi scoprii che aveva ragione.  
+Mi piacerebbe pensare che gli altri sei milioni di persone che, dal 1974, hanno acquistato il libro di Pirsig abbiano avuto la nostra stessa fortuna, ma temo proprio che non sia così.
+<br />  
+C'è solo una cosa che so per certo: fino a che ne avrò la possibilità, io porterò avanti questo progetto.
+Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di un'unità la *major-version* del mio progettto e andrò avanti.
+Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita; mia o altrui che sia.
+<br />  
+Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
+Mi sembra un motivo sufficiente.
 
 
 
@@ -1005,5 +1011,7 @@ Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la 
 [^igm]: *Istituto Geografico Militare*.
 
 [^vue]: Sono affezionato a Vue perché la uso da molti anni e ho anche collaborato con i ragazzi della Tufts University per la versione in Italiano del programma, ma lo sviluppo è fermo al 2015 e temo che non riprenderà.
+
+[^latino]: La prova più evidente di ciò è che le frasi: *Mala tempora currunt* e: *O tempora, o mores!*, sono in Latino.
 
 
