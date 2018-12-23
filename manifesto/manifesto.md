@@ -964,10 +964,7 @@ Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo no
 Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita; mia o altrui che sia.
 <br />  
 Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
-Mi sembra un motivo sufficiente.
-
-
-
+Mi sembra un motivo più che sufficiente.
 
 		
 <h2 class="note">Note</h2>

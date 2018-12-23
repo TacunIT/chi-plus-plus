@@ -1,8 +1,8 @@
-## 0.5.1 (December 22, 2018)
+## 0.4.7 (December 22, 2018)
   - Modifiche minori al Manifesto. Reso pubblico il repository su Bitbucket.
   - Aggiunta citazione di Rovelli
 
-## 0.5.0 (December 22, 2018)
+## 0.4.6 (December 22, 2018)
   - Rivista impaginazione del Manifesto per stampa
 
 ## 0.4.5 (December 22, 2018)
