@@ -340,124 +340,124 @@ che possiamo considerare la versione 0.1.1 del C'hi++.
 Lo riporto di seguito, senza modifiche al testo originale, anche se non sono più d'accordo su alcune affermazioni:
 
 <div class="citazione">
-<p>Sostiene Aristotele (e per fortuna lo sostiene nella sesta pagina de: “La metafisica”, ché se l’avesse sostenuto, che so, a pagina quattrocentosettantadue, chissà se l’avrei mai saputo) che la ricerca della conoscenza, “deve in qualche modo portarci a uno stato contrario a quello nel quale si dà inizio alle ricerche”. </p>
-<p>Ci si meraviglia di qualcosa, se ne indagano le cause e, una volta che le si è scoperte, ciò che prima meravigliava appare come qualcosa di inevitabile.</p>
-<p>L’oggetto di studio, nel caso specifico, è l’Universo.</p>
-<p>Dopo anni di ragionamenti, di letture balzane e di teorie ancora più balzane, sono riuscito a formulare una visione delle cose (mi spiace, ma mi rifiuto di scrivere Weltanschauung) che sembra funzionare piuttosto bene e che, soprattutto, è del tutto indipendente dall’esistenza di una o più Divinità.</p>
-<p>Perché io ci credo davvero che Dio è la compattificazione di Alexandroff dell’Universo, ovvero un elemento soprannaturale che si introduce nelle “spiegazioni” quando non si sa come rendere conto di qualcosa.</p>
-<p>Sfortunatamente però, rattoppare una cosmogonia zoppicante introducendo il concetto di Dio, porta inevitabilmente a dei paradossi, tipo: se Dio è buono, perché permette il male? Che Dio è, uno che prima mi dice di non ammazzare e poi fa morire di fame o di sete o di stenti centinaia di bambini ogni giorno?</p>
-<p>Le cose sono due: o il male esiste perché Dio non può evitarlo (e allora perché diciamo che è onnipotente?); oppure il male esiste perché Dio non vuole evitarlo (e allora perché diciamo che è buono?).</p>
-<p>Ci sono risposte canoniche a queste domande, ma possono soddisfare giusto l’ascoltatore medio di Radio Maria, io cercavo qualcosa di meglio.</p>
-<p>Inoltre, la maggior parte delle religioni richiedono una certa dose di fede in qualche luogo (Paradiso) o condizione (Nirvana) soprannaturale e inconoscibile fino al momento successivo alla morte, e questo mi suonava un po’ di fregatura.</p>
-<p>Mi sono chiesto allora se sarebbe stato possibile dare una spiegazione dell’Universo senza introdurre elementi esterni a quelli che conosciamo.</p>
-<p>In altre parole, se fosse possibile creare una metafisica senza elementi metafisici.</p>
-<p>Era possibile.</p>
- 
-<p>Sostiene Aristotele (sempre nelle prime pagine, per fortuna) che le scienze più rigorose sono quelle che richiedono il numero minore di premesse.</p>
-<p>La cosa mi conforta, perché la mia ipotesi richiede solo tre premesse per funzionare a livello “base”, e quattro per una visione un po’ più appetibile delle cose.</p>
-<p>I tre dogmi principali della mia “religione” sono:</p>
+Sostiene Aristotele (e per fortuna lo sostiene nella sesta pagina de: “La metafisica”, ché se l’avesse sostenuto, che so, a pagina quattrocentosettantadue, chissà se l’avrei mai saputo) che la ricerca della conoscenza, “deve in qualche modo portarci a uno stato contrario a quello nel quale si dà inizio alle ricerche”. 
+Ci si meraviglia di qualcosa, se ne indagano le cause e, una volta che le si è scoperte, ciò che prima meravigliava appare come qualcosa di inevitabile.<br/>
+L’oggetto di studio, nel caso specifico, è l’Universo.
+Dopo anni di ragionamenti, di letture balzane e di teorie ancora più balzane, sono riuscito a formulare una visione delle cose (mi spiace, ma mi rifiuto di scrivere Weltanschauung) che sembra funzionare piuttosto bene e che, soprattutto, è del tutto indipendente dall’esistenza di una o più Divinità.<br/>
+Perché io ci credo davvero che Dio è la compattificazione di Alexandroff dell’Universo, ovvero un elemento soprannaturale che si introduce nelle “spiegazioni” quando non si sa come rendere conto di qualcosa.
+Sfortunatamente però, rattoppare una cosmogonia zoppicante introducendo il concetto di Dio, porta inevitabilmente a dei paradossi, tipo: se Dio è buono, perché permette il male? Che Dio è, uno che prima mi dice di non ammazzare e poi fa morire di fame o di sete o di stenti centinaia di bambini ogni giorno?
+Le cose sono due: o il male esiste perché Dio non può evitarlo (e allora perché diciamo che è onnipotente?); oppure il male esiste perché Dio non vuole evitarlo (e allora perché diciamo che è buono?).<br/>
+Ci sono risposte canoniche a queste domande, ma possono soddisfare giusto l’ascoltatore medio di Radio Maria, io cercavo qualcosa di meglio.
+Inoltre, la maggior parte delle religioni richiedono una certa dose di fede in qualche luogo (Paradiso) o condizione (Nirvana) soprannaturale e inconoscibile fino al momento successivo alla morte, e questo mi suonava un po’ di fregatura.
+Mi sono chiesto allora se sarebbe stato possibile dare una spiegazione dell’Universo senza introdurre elementi esterni a quelli che conosciamo.
+In altre parole, se fosse possibile creare una metafisica senza elementi metafisici.
+Era possibile.<br/> 
+Sostiene Aristotele (sempre nelle prime pagine, per fortuna) che le scienze più rigorose sono quelle che richiedono il numero minore di premesse.
+La cosa mi conforta, perché la mia ipotesi richiede solo tre premesse per funzionare a livello “base”, e quattro per una visione un po’ più appetibile delle cose.
+I tre dogmi principali della mia “religione” sono:
 <ol>
 <li>le cose possono esistere</li>
 <li>l’Universo si espande</li>
 <li>se lasci andare un peso, quello ti finisce su un piede</li>
 </ol>
-<p>Del quarto dogma parleremo dopo, per ora concentriamoci su questi tre:</p>
+Del quarto dogma parleremo dopo, per ora concentriamoci su questi tre:<br />
+<br/>
+Dogma numero uno: le cose possono esistere.
+Questo è stato il dogma più facile da formulare, ma è fondamentale, perché se le cose non potessero esistere, tutto il resto non avrebbe senso.<br/>
 <br />
-<p>Dogma numero uno: le cose possono esistere.</p>
-<p>Questo è stato il dogma più facile da formulare, ma è fondamentale, perché se le cose non potessero esistere, tutto il resto non avrebbe senso.</p>
-<br />
-<p>Dogma numero due: l’Universo si espande.</p>
-<p>Questo dogma, se non me l’avessero detto, non l’avrei mai potuto sapere, ma va bene lo stesso.</p>
-<p>Allo stato attuale delle nostre conoscenze, tutto lascia supporre che l’Universo fosse, inizialmente, un’unica cosa che, per ragioni non ancora definite(1), è scoppiata disseminando i suoi pezzi in ogni dove.I pezzi si sono raggrumati in stelle e pianeti, permettendoci quindi di formulare il...</p>
+Dogma numero due: l’Universo si espande.
+Questo dogma, se non me l’avessero detto, non l’avrei mai potuto sapere, ma va bene lo stesso. Allo stato attuale delle nostre conoscenze, tutto lascia supporre che l’Universo fosse, inizialmente, un’unica cosa che, per ragioni non ancora definite(1), è scoppiata disseminando i suoi pezzi in ogni dove.I pezzi si sono raggrumati in stelle e pianeti, permettendoci quindi di formulare il...<br/>
 <br /> 
-<p>Dogma numero tre: se lasci andare un peso, quello ti finisce su un piede.</p>
-<p>Qui ho un po’ barato, buttandola in caciara, perché questo, dei tre dogmi, è quello meno comprovabile.</p>
-<p>O meglio, a livello locale (che è appunto quello da me utilizzato nella formulazione), è innegabile il fatto che tutto ciò che ci circonda sia sottoposto alla forza di gravità (se lo lasci andare, il martello ti cade sul piede e anche la Terra, o prima o poi, “cadrà” sul Sole), mentre è solo possibile che le diverse parti dell’Universo potranno, o prima o poi, subire l’attrazione l’una dell’altra e ricompattarsi in un Uno.</p>
-<p>Poe, in “Eureka”, dice un sacco di fregnacce, ma sostiene una teoria affascinante, ovvero che la forza di gravità non sia altro che la tendenza innata (e metafisica) degli atomi a ritornare all’Uno.</p>
-<p>Io lo cito perché l’idea è molto elegante, ma, per quelli che sono i miei scopi, mi limito qui a dare per buona, anche in assenza di prove a suffragio, la tesi secondo cui l’Universo prima o poi collasserà nell’Uno Primigenio.</p>
+Dogma numero tre: se lasci andare un peso, quello ti finisce su un piede.
+Qui ho un po’ barato, buttandola in caciara, perché questo, dei tre dogmi, è quello meno comprovabile.
+O meglio, a livello locale (che è appunto quello da me utilizzato nella formulazione), è innegabile il fatto che tutto ciò che ci circonda sia sottoposto alla forza di gravità (se lo lasci andare, il martello ti cade sul piede e anche la Terra, o prima o poi, “cadrà” sul Sole), mentre è solo possibile che le diverse parti dell’Universo potranno, o prima o poi, subire l’attrazione l’una dell’altra e ricompattarsi in un Uno.<br/>
+Poe, in “Eureka”, dice un sacco di fregnacce, ma sostiene una teoria affascinante, ovvero che la forza di gravità non sia altro che la tendenza innata (e metafisica) degli atomi a ritornare all’Uno.
+Io lo cito perché l’idea è molto elegante, ma, per quelli che sono i miei scopi, mi limito qui a dare per buona, anche in assenza di prove a suffragio, la tesi secondo cui l’Universo prima o poi collasserà nell’Uno Primigenio.<br/>
 <br />
-<p>Riassumendo, se affermo che l’Universo esiste, inizialmente era Uno, adesso si sta espandendo, ma poi tornerà a essere Uno, credo che l’unica cosa che mi si può contestare è quel: “tornerà” in vece di: “potrebbe tornare”.</p>
-<p>Bene.</p>
+Riassumendo, se affermo che l’Universo esiste, inizialmente era Uno, adesso si sta espandendo, ma poi tornerà a essere Uno, credo che l’unica cosa che mi si può contestare è quel: “tornerà” in vece di: “potrebbe tornare”.<br/>
+Una volta che l’Universo sarà nuovamente collassato nell’Uno, i casi saranno due: resterà Uno per il resto del Tempo oppure esploderà di nuovo, dando vita a un nuovo Universo.
+La prima ipotesi è perfettamente lecita, ma è noiosa e contrasta con la tendenza generale delle cose ad avvenire per cicli (le stagioni, per esempio), quindi ce ne disinteresseremo, chiedendoci invece cosa potrebbe succedere se si verificasse un nuovo Big Bang.<br/>
+Anche qui, le ipotesi sono due.
+Una è: potrebbe essere che un Big Bang avvenga solo in determinate condizioni e che quelle condizioni portino necessariamente a un Universo identico a quello come noi lo conosciamo adesso; quindi, se l’Uno esploderà di nuovo, ricomincerà tutto da capo.
+La seconda ipotesi è che ogni Big Bang avviene in circostanze e con modalità specifiche e quindi, se l’Uno esploderà di nuovo, nascerà un nuovo Universo, che potrà avere pochi o nessun punto di contatto con quello corrente.<br/>
+La prima ipotesi è possibile, ma poco probabile, quindi diamo per scontato che sia la seconda, quella corretta; tanto non cambia niente, perché il tempo che noi abbiamo a disposizione per far esplodere e implodere l’Universo è infinito e per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali, in un lasso di tempo infinito è  impossibile che la cosa prima o poi non avvenga.<br/>
+In base allo stesso principio, dato per scontato che - o prima o poi - questo Universo tornerà a manifestarsi, è lecito pensare, non per fede, ma in base a un banale calcolo probabilistico, che anche ciò che c’è in esso possa o prima o poi tornare a essere. Noi compresi.
+Magari non la prima volta che questo Universo si ripeterà, magari non la seconda, ma se la sequenza esplosione/collasso andrà avanti per sempre, è lecito pensare che in uno dei cicli futuri noi compariremo di nuovo su questa Terra.
+Anzi, estendendo retroattivamente gli stessi principi è altrettanto lecito pensare che questa non sia la prima volta che noi siamo qui a dire le nostre battute: per quello che ne possiamo sapere, questa potrebbe essere una commedia che ha avuto più repliche di Cats e di The Rocky Horror Picture Show messi insieme...<br/>
 <br />
-<p>Una volta che l’Universo sarà nuovamente collassato nell’Uno, i casi saranno due: resterà Uno per il resto del Tempo oppure esploderà di nuovo, dando vita a un nuovo Universo.</p>
-<p>La prima ipotesi è perfettamente lecita, ma è noiosa e contrasta con la tendenza generale delle cose ad avvenire per cicli (le stagioni, per esempio), quindi ce ne disinteresseremo, chiedendoci invece cosa potrebbe succedere se si verificasse un nuovo Big Bang.</p>
-<p>Anche qui, le ipotesi sono due.</p>
-<p>Una è: potrebbe essere che un Big Bang avvenga solo in determinate condizioni e che quelle condizioni portino necessariamente a un Universo identico a quello come noi lo conosciamo adesso; quindi, se l’Uno esploderà di nuovo, ricomincerà tutto da capo.</p>
-<p>La seconda ipotesi è che ogni Big Bang avviene in circostanze e con modalità specifiche e quindi, se l’Uno esploderà di nuovo, nascerà un nuovo Universo, che potrà avere pochi o nessun punto di contatto con quello corrente.</p>
-<p>La prima ipotesi è possibile, ma poco probabile, quindi diamo per scontato che sia la seconda, quella corretta; tanto non cambia niente, perché il tempo che noi abbiamo a disposizione per far esplodere e implodere l’Universo è infinito e per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali, in un lasso di tempo infinito è  impossibile che la cosa prima o poi non avvenga.</p>
-<p>In base allo stesso principio, dato per scontato che - o prima o poi - questo Universo tornerà a manifestarsi, è lecito pensare, non per fede, ma in base a un banale calcolo probabilistico, che anche ciò che c’è in esso possa o prima o poi tornare a essere. Noi compresi.</p>
-<p>Magari non la prima volta che questo Universo si ripeterà, magari non la seconda, ma se la sequenza esplosione/collasso andrà avanti per sempre, è lecito pensare che in uno dei cicli futuri noi compariremo di nuovo su questa Terra.</p>
-<p>Anzi, estendendo retroattivamente gli stessi principi è altrettanto lecito pensare che questa non sia la prima volta che noi siamo qui a dire le nostre battute: per quello che ne possiamo sapere, questa potrebbe essere una commedia che ha avuto più repliche di Cats e di The Rocky Horror Picture Show messi insieme...</p>
-<br />
-<p>Ma chi siamo, “noi”?</p>
-<p>Mi piacerebbe pensare che esiste qualcosa di bizzarro come l’anima, ma come ho detto, questa è una cosmogonia che prescinde da elementi metafisici e quindi ne dovrò fare a meno.</p>
-<p>L’idea è che l’anima non esiste e che ciò che noi chiamiamo “anima” altro non sia che una particolare conformazione del circuito sinaptico del cervello.</p>
-<p>In altre parole, l’anima è il modo in cui i neuroni del nostro cervello sono collegati gli uni agli altri.</p>
-<p>D’altro canto, se non fosse così, se esistesse davvero un’anima che determina il nostro modo di comportarci, non si spiegherebbero gli effetti dell’elettroshock o della lobotomia...</p>
-<p>Attenzione, però: dire che l’anima non esiste è pericoloso, perché (semplifico) se l’anima non c’è, allora non posso andare all’Inferno e se non rischio di andare all’Inferno, chi me lo fa fare di comportarmi bene, facendomi un culo così tutta la vita per due soldi? Se davvero l’anima non c’è, mi metto a spacciare droga o a peculare sulle commesse statali e faccio la bella vita.</p>
-<p>È questo che ha fatto la fortuna della Chiesa Cattolica: sostenendo l’esistenza dell’anima e propugnando un sistema che prevedeva una pena eterna per peccati risibili, ha prodotto duemila anni di pigoristica accettazione delle iniquità dei potenti ai danni dei deboli (ari-semplifico, i dettagli in: Chi++).</p>
-<p>Ma, se le cose stanno come penso io, il fatto che l’anima non esista non ci autorizza a fare il porco comodo nostro, anzi...</p>
-<p>Se davvero siamo tutti degli epifenomeni, possiamo manifestarci ora qui ora lì, a seconda dei casi e se io oggi (in questo ciclo dell’Universo) mi manifesto all’interno di Raimondo Canaro, evasore fiscale e filosofo d’accatto, un domani (in un altro ciclo di questa particolare specie di Universo) potrei manifestarmi in Pierluigi Mancuso, ufficiale della Guardia di Finanza.</p>
-<p>Similmente, se io oggi (sempre nel senso di: in questo ciclo dell’Universo) mi metto a spacciare droga fregandomene delle persone che ammazzo e delle famiglie che rovino, domani (sempre nel senso...), potrei benissimo ritrovarmi in uno di quei drogati o di quei familiari e subirei le conseguenze delle mie stesse azioni.</p>
-<p>È quindi decisamente meglio che io mi comporti bene e che cerchi, per quanto mi è possibile, di convincere anche gli altri a comportarsi bene.</p>
-<p>Ora, il concetto di “bene”, a prescindere da una Divinità e da un corpo di regole predefinito non è che funzioni granché (come dimostra, senza volerlo, il libro Un’etica senza Dio di Lecaldano), ma nel nostro caso possiamo definire “bene” quel comportamento che non lede, almeno intenzionalmente, nessuno.</p>
-<p>È la differenza, drastica, che passa fra l’agire male e l’agire per il male.</p>
-<p>(Anche qui, devo semplificare, ma ho delle dimostrazioni per tutte queste affermazioni...)</p>
-<p>C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musashi: </p>
+Ma chi siamo, “noi”?
+Mi piacerebbe pensare che esiste qualcosa di bizzarro come l’anima, ma come ho detto, questa è una cosmogonia che prescinde da elementi metafisici e quindi ne dovrò fare a meno.
+L’idea è che l’anima non esiste e che ciò che noi chiamiamo “anima” altro non sia che una particolare conformazione del circuito sinaptico del cervello.
+In altre parole, l’anima è il modo in cui i neuroni del nostro cervello sono collegati gli uni agli altri.
+D’altro canto, se non fosse così, se esistesse davvero un’anima che determina il nostro modo di comportarci, non si spiegherebbero gli effetti dell’elettroshock o della lobotomia...
+Attenzione, però: dire che l’anima non esiste è pericoloso, perché (semplifico) se l’anima non c’è, allora non posso andare all’Inferno e se non rischio di andare all’Inferno, chi me lo fa fare di comportarmi bene, facendomi un culo così tutta la vita per due soldi? Se davvero l’anima non c’è, mi metto a spacciare droga o a peculare sulle commesse statali e faccio la bella vita.<br/>
+È questo che ha fatto la fortuna della Chiesa Cattolica: sostenendo l’esistenza dell’anima e propugnando un sistema che prevedeva una pena eterna per peccati risibili, ha prodotto duemila anni di pigoristica accettazione delle iniquità dei potenti ai danni dei deboli (ari-semplifico, i dettagli in: Chi++).
+Ma, se le cose stanno come penso io, il fatto che l’anima non esista non ci autorizza a fare il porco comodo nostro, anzi...
+Se davvero siamo tutti degli epifenomeni, possiamo manifestarci ora qui ora lì, a seconda dei casi e se io oggi (in questo ciclo dell’Universo) mi manifesto all’interno di Raimondo Canaro, evasore fiscale e filosofo d’accatto, un domani (in un altro ciclo di questa particolare specie di Universo) potrei manifestarmi in Pierluigi Mancuso, ufficiale della Guardia di Finanza.
+Similmente, se io oggi (sempre nel senso di: in questo ciclo dell’Universo) mi metto a spacciare droga fregandomene delle persone che ammazzo e delle famiglie che rovino, domani (sempre nel senso...), potrei benissimo ritrovarmi in uno di quei drogati o di quei familiari e subirei le conseguenze delle mie stesse azioni.
+È quindi decisamente meglio che io mi comporti bene e che cerchi, per quanto mi è possibile, di convincere anche gli altri a comportarsi bene.<br/>
+<br/>
+Ora, il concetto di “bene”, a prescindere da una Divinità e da un corpo di regole predefinito non è che funzioni granché (come dimostra, senza volerlo, il libro: "Un’etica senza Dio" di Lecaldano), ma nel nostro caso possiamo definire “bene” quel comportamento che non lede, almeno intenzionalmente, nessuno.
+È la differenza, drastica, che passa fra l’agire male e l’agire per il male.
+(Anche qui, devo semplificare, ma ho delle dimostrazioni per tutte queste affermazioni...)
+C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musashi: 
  <blockquote>
     Non bisogna interferire nel funzionamento dell’Universo,
     ma prima è necessario capire quale sia,
     il funzionamento dell’Universo
 </blockquote>
- <p>Che somiglia molto a una frase di Jacopone da Todi:</p>
+ Che somiglia molto a una frase di Jacopone da Todi:
  <blockquote>
     Prima devi sape' perché stai ar monno<br /> 
     quanno sai er perché <br />
     te devi impara' a stacce <br />
 </blockquote>
-<p>È (la prima frase) una forma estesa del Wu Wei taoista, ma come possiamo capire se stiamo interferendo nel funzionamento dell’Universo?</p>
-<p>È facile: se stiamo agendo in risposta a un’esigenza esterna alla nostra persona, è probabile che siamo sulla strada giusta; se stiamo agendo per soddisfare una nostra personalissima esigenza, è probabile che siamo sulla strada sbagliata. Un po’ la differenza che passa fra lo sparare a un alce per mangiarselo e sparargli per appendersi in casa la sua testa.</p>
-<p>Ciascuno di noi è perfettamente in grado di capire se si sta comportando bene oppure male: deve solo chiederselo e darsi una risposta sincera.</p>
-<p>Qualche volta non serve nemmeno chiederselo.</p>
-<p>Ed è qui che entra in gioco il quarto dogma.</p>
+È (la prima frase) una forma estesa del Wu Wei taoista, ma come possiamo capire se stiamo interferendo nel funzionamento dell’Universo?
+È facile: se stiamo agendo in risposta a un’esigenza esterna alla nostra persona, è probabile che siamo sulla strada giusta; se stiamo agendo per soddisfare una nostra personalissima esigenza, è probabile che siamo sulla strada sbagliata. Un po’ la differenza che passa fra lo sparare a un alce per mangiarselo e sparargli per appendersi in casa la sua testa.<br/>
+Ciascuno di noi è in grado di capire se si sta comportando bene oppure male: deve solo chiederselo e darsi una risposta sincera.
+Qualche volta non serve nemmeno chiederselo.
+Ed è qui che entra in gioco il quarto dogma.<br/>
 <br />
-<p>Il quarto dogma si discosta dai tre dogmi principali perché è l’unico che richiede una certa dose di fede.</p>
-<p>Il quarto dogma si discosta anche dai dogmi ordinari, perché invece di imporre in maniera ricattatoria un’affermazione che sarebbe altrimenti piuttosto difficile da credere - Dio è uno e trino, la Madonna era vergine, il Papa è infallibile ecc. - prova a rendere coerenti (all’interno del sistema, ovviamente) dei fatti che non lo sono. Faccio degli esempi:</p>
+Il quarto dogma si discosta dai tre dogmi principali perché è l’unico che richiede una certa dose di fede.
+Il quarto dogma si discosta anche dai dogmi ordinari, perché invece di imporre in maniera ricattatoria un’affermazione che sarebbe altrimenti piuttosto difficile da credere - Dio è uno e trino, la Madonna era vergine, il Papa è infallibile ecc. - prova a rendere coerenti (all’interno del sistema, ovviamente) dei fatti che non lo sono. Faccio degli esempi:
 <blockquote>
 “how does a duck knows what direction South is?”, come diceva la canzone dei Crash Test Dummies;</br>
 </br>perché, alle volte, agiamo come se sapessimo cosa sta per succedere?</br>
 </br>perché, il 24 dicembre del 2004 io, prima di uscire a ubriacarmi con mio fratello, per celebrare l’anniversario della morte del nostro cane, mi sono vestito da bravo ragazzo, con il cardigan e il loden?
 </blockquote>
- <p>In parole povere: cos’è quello che comunemente chiamiamo: “istinto” e che Jung, se non ho capito male (probabile) definisce: “inconscio collettivo”?</p>
-<p>Non ho una risposta certa a questa domanda, ma solo un’ipotesi: Post-it.</p>
-<p>Promemoria che noi, nel corso delle nostre precedenti esistenze, abbiamo appiccicato da qualche parte, per ricordarci di fare o di non fare qualcosa.</p>
-<p>Una sorta di memoria persistente, esterna, o comunque non soggetta ai cicli di rinascita dell’Universo.</p>
-<p>Se l’Universo fosse un computer, potremmo pensare a tutto ciò che esiste come a un programma che “gira” in memoria e all’istinto (o all’immaginario collettivo) come a qualcosa scritto invece sul disco rigido.</p>
-<p>Ogni volta che il computer viene spento, la memoria si svuota e tutto quello che conteneva si perde, mentre ciò che è scritto sul disco rigido rimane lì, in attesa della prossima “accensione”.</p>
-<p>Insomma, il dogma numero quattro è: lo sai, perché ci sei già passato.</p>
-<p>Non vale per qualunque evento della nostra esistenza, ovviamente, ma solo per quelli importanti: quelli che, nelle nostre precedenti esistenze, hanno prodotto effetti che ci interessa o ri-produrre o evitare.</p>
-<p>Non ho ancora capito come facciamo a scrivere questi promemoria, posto che esistano davvero; magari è sufficiente essere molto contenti o molto addolorati per qualcosa, ma so in che maniera possiamo leggerli: evitando di non leggerli.</p>
-<p>Evitando di ignorare i segnali che riceviamo, riconoscendo ed accettando la direzione in cui ci porta la corrente anche quando non è quella in cui vorremmo o preferiremmo andare.</p>
-<p>Non sto dicendo che sia facile.</p>
+ In parole povere: cos’è quello che comunemente chiamiamo: “istinto” e che Jung, se non ho capito male (probabile) definisce: “inconscio collettivo”?<br/>
+Non ho una risposta certa a questa domanda, ma solo un’ipotesi: Post-it.
+Promemoria che noi, nel corso delle nostre precedenti esistenze, abbiamo appiccicato da qualche parte, per ricordarci di fare o di non fare qualcosa.
+Una sorta di memoria persistente, esterna, o comunque non soggetta ai cicli di rinascita dell’Universo.
+Se l’Universo fosse un computer, potremmo pensare a tutto ciò che esiste come a un programma che “gira” in memoria e all’istinto (o all’immaginario collettivo) come a qualcosa scritto invece sul disco rigido.
+Ogni volta che il computer viene spento, la memoria si svuota e tutto quello che conteneva si perde, mentre ciò che è scritto sul disco rigido rimane lì, in attesa della prossima “accensione”.
+Insomma, il dogma numero quattro è: lo sai, perché ci sei già passato.<br/>
+Non vale per qualunque evento della nostra esistenza, ovviamente, ma solo per quelli importanti: quelli che, nelle nostre precedenti esistenze, hanno prodotto effetti che ci interessa o ri-produrre o evitare.
+Non ho ancora capito come facciamo a scrivere questi promemoria, posto che esistano davvero; magari è sufficiente essere molto contenti o molto addolorati per qualcosa, ma so in che maniera possiamo leggerli: evitando di non leggerli.
+Evitando di ignorare i segnali che riceviamo, riconoscendo ed accettando la direzione in cui ci porta la corrente anche quando non è quella in cui vorremmo o preferiremmo andare.
+Non sto dicendo che sia facile.
 <br />
-<p>La mia teoria ha un corollario metafisico, ma non ce la farei mai a farlo entrare tutto in queste poche pagine. È il libro che sto scrivendo.</p>
-<p>Ne faccio un breve riassunto:</p>
+La mia teoria ha un corollario metafisico, ma non ce la farei mai a farlo entrare tutto in queste poche pagine. È il libro che sto scrivendo.
+Ne faccio un breve riassunto:
 <blockquote>L’Universo è il Paradiso: siamo noi, che lo utilizziamo male, trasformandolo nell'Inferno.</blockquote>
-<p>Questa visione ha il pregio di funzionare anche solo con le quattro dimensioni che conosciamo ed è perfettamente compatibile con tutte le principali religioni, oltre che con Imagine di John Lennon.</p>
+Questa visione ha il pregio di funzionare anche solo con le quattro dimensioni che conosciamo ed è perfettamente compatibile con tutte le principali religioni, oltre che con Imagine di John Lennon.
 <blockquote> 
 Imagine there's no heaven<br/>
 It's easy if you try<br/>
 No hell below us<br/>
 Above us only sky<br/>
 </blockquote> 
-<p>Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Universo e siamo noi, con le nostre azioni, a decidere in quale dei due vivere.</p>
+Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Universo e siamo noi, con le nostre azioni, a decidere in quale dei due vivere.
 </div>
+
+Pur se in embrione, gli elementi principali del C'hi++ ci sono tutti: la rarefazione degli elementi metafisici, la ciclicità dell'Universo, la memoria degli eventi passati, l'auto-lesionismo delle scelte egoistiche e la visone dell'esistenza come un processo di miglioramento continuo.
+Tutti questi temi costituiscono il "corollario metafisico" a cui si accenna nel testo e saranno approfonditi nel manuale di programmazione: *C'hi++*.s
 
 ##Release/0.2: *C'hi++*<a name="chi++"></a>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
-programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.  
+programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.
 Questa ambivalenza è presente anche nel titolo, che è un gioco di parole fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato *C++*.
-Il tono della narrazione è generalmente serio, ma non sempre.  
+Il tono della narrazione è generalmente serio, ma non sempre.
 Ashvaghosha, nell'introduzione alla *Saundarananda*, afferma:
 
 > Questa composizione sul tema della liberazione è stata composta in forma poetica non per procurare piacere, ma per vincere nei lettori la propensione a distrarre la mente; e se ho trattato in esso temi diversi dalla liberazione è stato per renderla piacevole, così come una medicina amara si mescola con il miele per renderla bevibile.
@@ -534,7 +534,7 @@ Lao-Tze, *Tao-Tê-Ching*:
 
 > Infatti gli esseri fioriscono e (poi) ognuno torna alla propria radice. Tornare alla propria radice si chiama la tranquillità; ciò vuol dire deporre il proprio compito. Deporre il proprio compito è una legge costante. Colui che conosce questa legge costante si chiama illuminato. Colui che non conosce questa legge costante agisce da stolto e attira su di sé la disgrazia.  
 
-####Valori booleani
+#### Valori booleani
 È una piccola parte del linguaggio, ma una miniera di possibili parallelismi specie sulla relatività dei concetti di *vero* e *falso*:
 
 >  il concetto stesso di Vertià è inconoscibile perché, per essere definito, deve prima essere valutato e non è possibile valutarlo se non si sa cosa sia "vero".
@@ -548,8 +548,7 @@ Il concetto di "vero" e di "falso", quindi, è un valore simbolico che NOI inser
 Da questo punto di vista, potremmo essere d'accordo con William James, quando dice che:
 >>    Un'idea è "vera" fintanto che credere in essa è utile per le nostre vite.  
 
-
-####Classi e istanze
+#### Classi e istanze
 Il Maestro dirà:
 
 > Se vuoi capire le classi, devi leggere Aristotele.
@@ -601,8 +600,7 @@ Lo Spazionismo è l'evoluzione delle idee abbozzate in *Sostiene Aristotele*, do
 
 Lo Spazionismo descrive lo stesso processo, ma a livello più basso.
 Nell'ultimo capitolo del libro, il Maestro spiegherà al suo allievo che l'Universo è costituito da *Spazioni*, elementi infinitesimali dotati di esistenza potenziale.
-Così come lo schermo di un computer è costituito da una matrice bidimensionale di pixel, generalmente spenti, ma capaci di accendersi se colpiti da un raggio di luce, così l'Universo è costituito da una matrice tridimensionale di spazioni, capaci di esistere se ricevono energia.
-<br />  
+Così come lo schermo di un computer è costituito da una matrice bidimensionale di pixel, generalmente spenti, ma capaci di accendersi se colpiti da un raggio di luce, così l'Universo è costituito da una matrice tridimensionale di spazioni, capaci di esistere se ricevono energia.  
 La sequenza vista sopra, riletta in chiave spazionista, diventa:  
 
 1. l'Uno Primigenio esplode a causa[^causa] di una Forza che ne disperde l'Energia nello spazio;
@@ -616,12 +614,10 @@ Lo Spazionismo è la parte più pericolosa di tutta la mia metafisica.
 Non solo perché non ho alcun titolo per parlare di spazio e materia, ma perché il nome stesso della teoria è legato ai suoi postulati: il nome *Spazionismo* deriva dal nome *spazione* e il nome *spazione* deriva dai **presunti** attributi dell'entità che rappresenta[^spazione].  
 È, questa, la trasposizione astro-fisica del problema meta-fisico visto a proposito del [Buonismo](#buonismo): se alla fine si scopre che Dio non è buono o che comunque non ha senso attribuirgli delle qualità terrene, il nome della religione non ha più senso, indipendentemente dalla solidità dei suoi precetti.
 <br />  
-In informatica, questo rischio si previene adottando il metodo del *basso accoppiamento* o *low coupling*, un termine che non si riferisce alla generale difficoltà degli informatici a instaurare rapporti con persone di sesso opposto, ma alla separazione delle funzioni all'interno di un sistema.  
+In informatica, questo rischio si previene adottando il metodo del *basso accoppiamento* o *low coupling*, un termine che non si riferisce alla generale difficoltà degli informatici a instaurare rapporti con persone di sesso opposto, ma alla separazione delle funzioni all'interno di un sistema.
 Se gli elementi interni di un sistema sono dipendenti gli uni dagli altri, la correzione o la modifica di uno di essi comporterà necessariamente anche la modifica del resto del codice.
-Al contrario, se gli elementi del sistema sono indipendenti gli uni dagli altri e ciasuno di essi svolge solo un compito ben preciso, le modifiche o le correzioni su uno di essi avranno un impatto molto basso o addirittura nullo sul resto del sistema.
-<br />  
+Al contrario, se gli elementi del sistema sono indipendenti gli uni dagli altri e ciasuno di essi svolge solo un compito ben preciso, le modifiche o le correzioni su uno di essi avranno un impatto molto basso o addirittura nullo sul resto del sistema.  
 Sfortunatamente, quando ho pensato a tutto ciò, il nome Spazionismo era già stato assegnato e mi divertiva troppo per sostituirlo.
-
 
 ## Release/0.3: Git
 A Dicembre del 2016 divenne chiaro che anche se avessi potuto dedicare a questo progetto tutto il mio tempo (e non potevo), non sarei mai riuscito a portarlo a termine da solo.
@@ -636,7 +632,7 @@ Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *op
 | | Author: Carlo Simonelli <rc@nero-digitale.com>
 | | Date:   Sun Dec 16 20:10:08 2018 +0100
 | | 
-| |     Impotato il branch 'release/0.4.4' nel master originale di bitbucket.
+| |     Impotato il branch 'release/0.4.4'.
 | | 
 | * commit ef642e150a0237675a9c176a8a8f8d3cb34c5cb9
 | | Author: Carlo Simonelli <rc@nero-digitale.com>
@@ -650,7 +646,6 @@ Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *op
 | | | Date:   Sat Dec 15 19:42:22 2018 +0100
 | | | 
 | | |     Merge branch 'release/0.4.3'
-| | | 
 ```
 Ciascuno di quei "commit" identificati da una stringa alfanumerica che si vedono nel codice qui sopra, è una "fotografia" del sistema in un determinato momento dello sviluppo.
 Se ci si accorge di aver fatto un errore, si può ritornare indietro, annullando le modifiche fatte e ripristinando la vecchia versione del sistema.
@@ -791,25 +786,23 @@ Aristotele aveva ragione.
 ## Release/0.5 - TODO
 Terminata la redazione di questo testo, riprenderò la stesura di *C'hi++* definendo la struttura dei capitoli relativi al linguaggio C++, così come li ho descritti <a href="#chi++">sopra</a>.
 Parallelamente, dovrò riprendere la catalogazione dei miei appunti, trascrivendoli nella mappa Vue del progetto per poi includerli nel testo del manuale. A questo proposito, sarebbe utile, anche se doloroso[^vue], rimpiazzare Vue con uno strumento di *mind-mapping* che produca documenti compatibili con Git o, quanto meno, riuscire a convertire i dati di Vue in un documento di testo semplice.
-Dovrò poi verificare l'ammissibilità scientifica dei precetti dello Spazionismo, modificandoli se non fossero corretti, per poi includerli nel capitolo finale del libro.   
-Infine, dovrò trovare un editore.
+Dovrò poi verificare l'ammissibilità scientifica dei precetti dello Spazionismo, modificandoli se non fossero corretti, per poi includerli nel capitolo finale del libro. Infine, dovrò trovare un editore.
 <br />  
 Non so quale sarà il destino di *C'hi++*; non so dire nemmeno se questo Manifesto mi procurerà aiuto o sberleffi. 
 Un amico, a cui ne ho fatto leggere una prima bozza, sostiene che:
 
 > potrebbe diventare un caso letterario oppure potrebbe far lanciare una Fatwa nei tuoi confronti, o tutte e due le ipotesi insieme
 
-È possibile, ma io credo piuttosto che anche se *C'hi++* diventasse davvero un caso letterario, non avverrà nulla; almeno, non nel breve periodo.  
-Le maggior parte delle persone, da sempre, agisce nel modo che ritiene migliore per sé e non per l'interesse collettivo[^latino]. 
-Le persone cambiano solo se qualcosa di ancestrale, come la guerra, la morte o la fame, li costringe a farlo.
+È possibile, ma io credo piuttosto che anche se *C'hi++* diventasse davvero un caso letterario, non avverrà nulla; almeno, non nel breve periodo, perché le idee che saranno proposte nel libro sono in netto contrasto con le idee e con il modo di vivere correnti.
+Per la maggior parte delle persone, accettare le idee del C'hi++ quivarrebbe a mettere in discussione la propia vita.  
+Inoltre, la maggior parte delle persone, da sempre, agisce nel modo che ritiene migliore per sé e non per l'interesse collettivo[^latino]; cambiano atteggiamento solo se qualcosa di ancestrale, come la guerra, la morte o la fame, li costringe a farlo.
 <br />  
 Conosco solo due persone che abbiano cambiato il loro modo di vivere dopo aver letto un libro: una sono io e l'altra era Wayne Martini, un architetto americano con cui collaborai negli anni '90 e che mi regalò: *Lo Zen e l'arte della manutenzione della motocicletta*, dicendo: "Read it, it changed my life"; io pensai: "Sempre esagerati 'sti americani!", ma poi scoprii che aveva ragione.  
-Mi piacerebbe pensare che gli altri sei milioni di persone che, dal 1974, hanno acquistato il libro di Pirsig abbiano avuto la nostra stessa fortuna, ma temo proprio che non sia così.
+Mi piacerebbe pensare che gli altri sei milioni di persone che, dal 1974, hanno acquistato il libro di Pirsig abbiano avuto la nostra stessa epifania, ma temo proprio che non sia così.
 <br />  
 C'è solo una cosa che so per certo: fino a che ne avrò la possibilità, io porterò avanti questo progetto.
 Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di un'unità la *major-version* del mio progettto e andrò avanti.
-Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita; mia o altrui che sia.
-Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
+Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita; mia o altrui che sia. Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
 Mi sembra un motivo più che sufficiente.
 
 
