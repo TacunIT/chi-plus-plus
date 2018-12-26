@@ -1,16 +1,18 @@
+<!--
 <link rel="stylesheet" href="chi++.css"  />
 <section class="pagina cover">
 <header>
 	<h1>C'hi++</h1>
-	<h2>Proposta per una metafisica _open-source_</h2>
+	<h2>Ipotesi per una metafisica _open-source_</h2>
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.4.8</p>
-	<p><label>Data    </label>22 Dicembre 2018</p>
+	<p><label>Versione</label>1.0.0.rc.2</p>
+	<p><label>Data    </label>23 Dicembre 2018</p>
 </div>
 	![](http://media.canaro.net/imago/seal.png)
 </section>
+-->
 
 <section class="citazione">
 Finis totius et partis est, removere viventes in hac vita de statu miserie et perducere ad statum felicitatis.<br/>
@@ -19,7 +21,6 @@ Finis totius et partis est, removere viventes in hac vita de statu miserie et pe
 E gli atei? rideva ancora.   
 Quelli mi annoiano perché parlano sempre di Dio. <br/>
 <span>Heinrich Böll</span> - Opinioni di un clown
-
 </section>
 
 ##Premessa
@@ -30,7 +31,7 @@ La religione dovrebbe aiutare l'Uomo a vivere meglio.
 Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i
 momenti di dolore e definire una scala di valori che ci permetta di
 prendere delle decisioni in quei casi in cui il raziocinio o il semplice
-buon senso non possono esserci d'aiuto.  
+buon senso non possono esserci d'aiuto.
 Tanto per fare un esempio: se vi ponessero queste tre domande, cosa
 rispondereste?
 <ol class="domande">
@@ -40,37 +41,18 @@ rispondereste?
     decidere di spegnerle o no?
 </ol>
 Come vedremo fra poco, la religione può aiutarvi a trovare una risposta
-in questi casi.
-Nulla vi assicura che sia la risposta giusta - nulla potrebbe farlo - ma
-almeno è una risposta.  
-Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio,
-anzi: hanno avuto spesso l'effetto opposto perché sono state prese a
-pretesto per guerre, soprusi e contrasti più o meno violenti, al punto
-che molte persone pensano che si vivrebbe meglio in un Mondo senza
-religioni.  
+in questi casi. 
+Nulla vi assicura che sia la risposta giusta - nulla potrebbe farlo - ma almeno è una risposta. 
+Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti, al punto che molte persone pensano che si vivrebbe meglio in un Mondo senza religioni.
 È davvero così?
 
 ###Un primo problema delle religioni
 
 La tendenza a produrre effetti opposti a quelli auspicati è un problema
-legato alla natura stessa delle religioni.
-
-Dovendo interessarsi di argomenti di carattere universale, che non
-possono trovare una risposta razionale certa, le religioni sono
-costrette a dedurre le regole della propria dottrina da una serie di
-*assiomi* o: *dogmi*
-
-I dogmi, in quanto tali, non devono essere dimostrati[^dogmi] e i
-seguaci della religione, i quali, non a caso, sono detti: "fedeli" o:
-"credenti", li devono accettare per buoni senza metterli in
-discussione.
-
-I dogmi sono i pilastri su cui si regge
-l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se
-fosse rimosso, l'edificio rischierebbe di crollare; quindi ogni forma
-di dubbio o di eresia è vista dagli apparati ecclesiastici come un
-potenziale pericolo che va scongiurato a ogni costo.
-
+legato alla natura stessa delle religioni. Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di *assiomi* o: *dogmi*.
+I dogmi, in quanto tali, non devono essere dimostrati[^dogmi] e i seguaci della religione, i quali, non a caso, sono detti: "fedeli" o: "credenti", li devono accettare per buoni senza metterli in discussione.
+I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare; quindi ogni forma di dubbio o di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato a ogni costo.
+<br />  
 La storia, anche recente, ci insegna che molti fedeli preferiscono
 abiurare i principii della loro Fede piuttosto che metterli in
 discussione; questo, però, è un problema degli esseri umani, non delle
@@ -78,11 +60,8 @@ religioni.
 
 ###Un altro problema delle religioni
 
-Le religioni, per quanto ispirate, sono opera dell'uomo, non di Dio e,
-come tutte le opere dell'uomo, sono soggette a errori e incongruenze.
-
-Come esempio, immaginiamo che esista una religione chiamata: *Buonismo*
-i cui dogmi siano:
+Le religioni, per quanto ispirate, sono opera dell'uomo, non di Dio e, come tutte le opere dell'uomo, sono soggette a errori e incongruenze.
+Come esempio, immaginiamo che esista una religione chiamata: *Buonismo* i cui dogmi siano:
 
 <ol class="dogmi">
 	<li>Dio esiste
@@ -90,26 +69,16 @@ i cui dogmi siano:
 	<li>Dio ha creato l'Universo
 </ol>
 
-Partendo da questi dogmi (non dimostrabili) e sapendo che l'Uomo fa
-parte dell'Universo, i Buonisti deducono che:
+Partendo da questi dogmi (non dimostrabili) e sapendo che l'Uomo fa parte dell'Universo, i Buonisti deducono che:
 
 <ol class="dogmi" start="4">
 	<li> Dio ha creato l'Uomo
 </ol>
 
-Certi che la vita sia un dono di Dio all'Uomo e che Dio ha solo
-proprietà positive (onnipotenza, misericordia, bontà, giustizia, ecc.), i Buonisti deducono che la vita sia un dono positivo
-e come tale vada preservato.
-Di conseguenza, se qualcuno gli facesse le domande viste all'inizio, un
-Buonista non avrebbe dubbi e risponderebbe NO in tutti e tre i casi,
-perché la sua religione gli impedisce di rifiutare o sottrarre ad altri
-un dono divino.
-
+Certi che la vita sia un dono di Dio all'Uomo e che Dio ha solo proprietà positive (onnipotenza, misericordia, bontà, giustizia, ecc.), i Buonisti deducono che la vita sia un dono positivo e come tale vada preservato.
+Di conseguenza, se qualcuno gli facesse le domande viste all'inizio, un Buonista non avrebbe dubbi e risponderebbe NO in tutti e tre i casi, perché la sua religione gli impedisce di rifiutare o sottrarre ad altri un dono divino.
 Molti potrebbero non essere d'accordo con questa posizione (io, per
-esempio), ma nessuno potrebbe criticare il buonista, che decide in
-maniera coerente con il suo Credo.
-
-Se però si domandasse allo stesso individuo:
+esempio), ma nessuno potrebbe criticare il buonista, che decide in maniera coerente con il suo Credo. Se però si domandasse allo stesso individuo:
 
 <ol class="domande" start="4">
 <li ><a name="domanda-D"></a>
@@ -117,18 +86,10 @@ Se però si domandasse allo stesso individuo:
 	da Lui creato esistono stupratori, omicidi e malattie?
 </ol>
 
-il povero Buonista non saprebbe cosa rispondere, perché per farlo
-dovrebbe sconfessare almeno uno degli assiomi su cui basa la sua visione
-dell'esistenza.
-Dovrà quindi rifugiarsi in una risposta generica, chiamando
-in causa l'imponderabilità delle decisioni divine, oppure condannarvi
-al rogo come eretico.
-<br /><br />
-Con buona pace di John Lennon, le cose non andrebbero meglio in un Mondo
-senza religioni: se le stesse domande le faceste a un giudice, vi
-risponderebbe che sì, la ragazza può abortire, ma né il condannato né il
-malato possono essere uccisi, perché la Legge lo vieta.  
-Se però gli domandaste:
+il povero Buonista non saprebbe cosa rispondere, perché per farlo dovrebbe sconfessare almeno uno degli assiomi su cui basa la sua visione dell'esistenza.
+Dovrà quindi rifugiarsi in una risposta generica, chiamando in causa l'imponderabilità delle decisioni divine, oppure condannarvi al rogo come eretico.
+<br />  
+Con buona pace di John Lennon, le cose non andrebbero meglio in un Mondo senza religioni: se le stesse domande le faceste a un giudice, vi risponderebbe che sì, la ragazza può abortire, ma né il condannato né il malato possono essere uccisi, perché la Legge lo vieta. Se però gli domandaste:
 
 <ol class="domande" start="5">
 <li >
@@ -138,11 +99,8 @@ Se però gli domandaste:
     una vita sicuramente infelice?
 </ol>
 
-Il buon giudice non avrebbe meno difficoltà del Buonista a trovare una
-risposta.
-La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe
-comunque di spedirvi in prigione, dove trovereste ad attendervi il simpatico
-soggetto della domanda [B](#domanda-B).
+il buon giudice non avrebbe meno difficoltà del Buonista a trovare una risposta.
+La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe comunque di spedirvi in prigione, dove trovereste ad attendervi il simpatico soggetto della domanda [B](#domanda-B).
 
 ###*Debug* del Buonismo
 Abbiamo visto che i tre assiomi del Buonismo:
@@ -153,78 +111,39 @@ Abbiamo visto che i tre assiomi del Buonismo:
 	<li>Dio ha creato l'Universo
 </ol>
 
-pur nella loro semplicità, diventano incoerenti se li si confronta con
-la natura percepibile dell'Universo e della vita.
-
-Ciò vuol dire che il modello logico/esistenziale del Buonismo, così com'è, 
-non funziona; o meglio: che funziona solo in una percentuale limitata di casi.
-
-Un buonista non può ammetterlo, perché diventerebbe un eretico, ma noi
-sì e possiamo anche cercare di capire cos'è che non va in questo schema
-per provare a migliorarlo in modo che funzioni nel maggior numero
-possibile di casi.
-
+pur nella loro semplicità, diventano incoerenti se li si confronta con la natura percepibile dell'Universo e della vita.
+Ciò vuol dire che il modello logico/esistenziale del Buonismo, così com'è, non funziona; o meglio: che funziona solo in una percentuale limitata di casi.
+Un buonista non può ammetterlo, perché diventerebbe un eretico, ma noi sì e possiamo anche cercare di capire cos'è che non va in questo schema per provare a migliorarlo in modo che funzioni nel maggior numero possibile di casi.
 Per prima cosa, proviamo a negare uno per volta i tre assiomi e vediamo
 se le cose migliorano:
 
 #### Prima ipotesi: *Dio non esiste*
-Negare il primo assioma equivale a eliminare del tutto la dottrina
-Buonista: se Dio non esiste, non può essere buono e non può aver creato
-l'Universo. Il sistema diventa coerente, ma a caro prezzo.
-
+Negare il primo assioma equivale a eliminare del tutto la dottrina Buonista: se Dio non esiste, non può essere buono e non può aver creato l'Universo. 
+Il sistema diventa coerente, ma a caro prezzo. 
 Vediamo se si può fare di meglio.
 
 #### Seconda ipotesi: *Dio non è buono*
-Negando il secondo assioma, il nostro modello esistenziale diventa
-coerente senza annichilirsi, che è già un bel passo avanti rispetto alla
-prima ipotesi, ma la nostra condizione non è che migliori molto, perché
-ci troviamo abbandonati in un Universo cattivo in balìa di un Dio
-malvagio.
-
-Vale la pena di provare ancora.
+Negando il secondo assioma, il nostro modello esistenziale diventa coerente senza annichilirsi, che è già un bel passo avanti rispetto alla prima ipotesi, ma la nostra condizione non è che migliori molto, perché ci troviamo abbandonati in un Universo cattivo in balìa di un Dio malvagio. Vale la pena di provare ancora.
 
 #### Terza ipotesi: *L'Universo non è stato creato da Dio*
-Se ipotizziamo che Dio esiste, è buono, ma l'Universo non è opera sua,
-bensì del Diavolo, otteniamo un modello coerente e tutto sommato
-accettabile.
-Sì, d'accordo, saremo condannati a vivere in un luogo dove esistono
-dolore e morte, ma solo per i pochi anni che passiamo su questa Terra;
-poi tutto si sistemerà.
+Se ipotizziamo che Dio esiste, è buono, ma l'Universo non è opera sua, bensì del Diavolo, otteniamo un modello coerente e tutto sommato accettabile.
+Sì, d'accordo, saremo condannati a vivere in un luogo dove esistono dolore e morte, ma solo per i pochi anni che passiamo su questa Terra; poi, tutto si sistemerà.
 <br>  
-Fra le tre, quest'ultima è l'ipotesi più appetibile, ma solo se
-l'uomo è in possesso di un'anima, ovvero di uno spirito che condivida
-parte dell'essenza di Dio e che si riunirà a Lui dopo la morte.
-Se l'anima non c'è, ovvero se in noi non alberga una scintilla dello
-Spirito Divino, siamo solo dei pezzi dell'Universo: vivremo nel dolore
-e dopo la morte sarà tutto finito per sempre.
-
-Qualunque visione della vita basata su questi presupposti è
-inaccettabile perché, mancando un Aldilà e una beatitudine condizionata
-al nostro comportamento terreno, ciascuno cercherebbe di ottenere il
-massimo possibile dagli anni che vivrà, pensando solo a sé stesso senza
-alcun rispetto per il suo prossimo[^black-friday].
-<br><br>
-Priva del concetto di anima, la religione diventerebbe logicamente
-solida, ma non assolverebbe al suo còmpito primario, che è quello di
-rendere migliore la vita dell'Uomo; quindi, se vogliamo rinnegare il
-terzo dogma del Buonismo senza fare danni, dobbiamo essere certi che
-esista un'anima.
-Siccome, di fatto, non possiamo esserne certi, dobbiamo imporre questa
-condizione come dogma:
+Delle tre, quest'ultima è l'ipotesi più appetibile, ma solo se l'uomo è in possesso di un'anima, ovvero di uno spirito che condivida parte dell'essenza di Dio e che si riunirà a Lui dopo la morte.
+Se l'anima non c'è, ovvero se in noi non alberga una scintilla dello Spirito Divino, siamo solo dei pezzi dell'Universo: vivremo nel dolore e dopo la morte sarà tutto finito per sempre.  
+Qualunque visione della vita basata su questi presupposti è inaccettabile perché, mancando un Aldilà e una beatitudine condizionata al nostro comportamento terreno, ciascuno cercherebbe di ottenere il massimo possibile dagli anni che vivrà, pensando solo a sé stesso senza alcun rispetto per il suo prossimo[^black-friday].
+Priva del concetto di anima, la religione diventerebbe logicamente solida, ma non assolverebbe al suo còmpito primario, che è quello di rendere migliore la vita dell'Uomo; quindi, se vogliamo rinnegare il terzo dogma del Buonismo senza fare danni, dobbiamo essere certi che esista un'anima.
+Siccome, di fatto, non possiamo esserne certi, dobbiamo imporre questa condizione come dogma:
 
 <ol class="dogmi" start="4">
 	<li>  L'uomo ha un'anima.
 </ol>
  
-Questo piccolo atto di fede ci permette di rispondere senza esitazione
-alla domanda [D](#domanda-D):
+Questo piccolo atto di fede ci permette di rispondere senza esitazione alla domanda [D](#domanda-D):
 
-> Dio è buono, giusto e misericordioso. Nell'Universo esistono
-> stupratori, omicidi e malattie è perché l'Universo è opera del Diavolo [^gnosi].
+> Dio è buono, giusto e misericordioso. Nell'Universo esistono stupratori, omicidi e malattie è perché l'Universo è opera del Diavolo [^gnosi].
 
-Si tratta però di una vittoria parziale, perché aumentando il numero dei
-precetti abbiamo aumentato la complessità del nostro modello e, di
-conseguenza, la probabilità di generare errori o incongruenze:
+Si tratta però di una vittoria parziale, perché aumentando il numero dei precetti abbiamo aumentato la complessità del nostro modello e, di conseguenza, la probabilità di generare errori o incongruenze:
 
 <ol class="domande" start="6">
 <li >
@@ -233,37 +152,16 @@ conseguenza, la probabilità di generare errori o incongruenze:
 </ol>
 
 ### Il Programmatore, vale 1 o 0?
-Dato che non è possibile rendere coerente il Buonismo modificando i suoi
-precetti, dobbiamo assumere che uno di essi sia errato ed eliminarlo.
-
-Eliminare il primo precetto (*Dio esiste*) non è possibile, perché gli
-altri due si riferirebbero a un'Entità che non è definita.
-
-Eliminare il terzo precetto (*Dio ha creato l'Universo*) equivale a
-dire: "A Shanghai esiste un uomo di nome Mario"; se Dio c'è ed è
-buono, ma se non ha alcuna relazione con l'Universo e la nostra
-esistenza, a noi, cosa importa?
-
-Se però eliminiamo il secondo precetto, (*Dio ha solo proprietà positivie*) 
-tutto magicamente si aggiusta:
-Dio esiste, ha creato l'Universo e l'Uomo, ma non è possibile dire se
-sia buono o meno, perché è improprio classificare l'essenza del
-creatore con gli attributi del creato; sarebbe come se i *byte* di un
-computer si chiedessero se il Programmatore valga I o 0.
+Dato che non è possibile rendere coerente il Buonismo modificando i suoi precetti, dobbiamo assumere che uno di essi sia errato ed eliminarlo.
+Eliminare il primo precetto (*Dio esiste*) non è possibile, perché gli altri due si riferirebbero a un'Entità che non è definita.
+Eliminare il terzo precetto (*Dio ha creato l'Universo*) equivale a dire: "A Shanghai esiste un uomo di nome Mario"; se Dio c'è ed è buono, ma se non ha alcuna relazione con l'Universo e la nostra esistenza, a noi, cosa importa?
+Se però eliminiamo il secondo precetto, (*Dio ha solo proprietà positivie*)  tutto magicamente si aggiusta: Dio esiste, ha creato l'Universo e l'Uomo, ma non è possibile dire se sia buono o meno, perché è improprio classificare l'essenza del creatore con gli attributi del creato; sarebbe come se i *byte* di un computer si chiedessero se il Programmatore valga I o 0.
 <br>  
-Senza la premessa, conseguente al secondo precetto: *Se Dio è buono,
-giusto e misericordioso*, la famigerata domanda [D](#domanda-D) non è
-più contraddittoria: se qualcuno ce la facesse, adesso, risponderemmo:
+Senza la premessa, conseguente al secondo precetto: *Se Dio è buono, giusto e misericordioso*, la famigerata domanda [D](#domanda-D) non è più contraddittoria: se qualcuno ce la facesse, adesso, potremmo rispondere:
 
-> Nell'Universo creato da Dio esistono stupratori, omicidi e malattie
-> perché ciò fa parte del Suo disegno, che noi non siamo in grado di
->comprendere.
+> Nell'Universo creato da Dio esistono stupratori, omicidi e malattie perché ciò fa parte del Suo disegno, che noi non siamo in grado di comprendere.
 
-Per quanto simile all'ipotetica: «risposta generica, che chiama in causa
-l'imponderabilità delle decisioni divine», data dal Buonista prima di
-mandarci al rogo, la nostra sarà una risposta coerente (oltre che
-umile), perché non presuppone alcuna qualità - positiva o negativa che
-sia - di Dio.  
+Per quanto simile all'ipotetica: «risposta generica, che chiama in causa l'imponderabilità delle decisioni divine», data dal Buonista prima di mandarci al rogo, la nostra sarà una risposta coerente (oltre che umile), perché non presuppone alcuna qualità - positiva o negativa che sia - di Dio.  
 Soprattutto, noi non affermiamo di sapere cosa sia buono/giusto e cosa
 non lo sia, perché in effetti non lo possiamo sapere:
 
@@ -275,61 +173,32 @@ non lo sia, perché in effetti non lo possiamo sapere:
 	Il doganiere si chiama Alois Hitler. Dio, è stato buono o cattivo?
 </ul>
 
-Dire che Dio esiste e che ha creato l'Universo è ragionevole:
-l'Universo esiste e quindi esiste necessariamente qualcosa, - se non proprio
-un signore con la barba bianca, almeno un fenomeno o una funzione - che
-possiamo considerare come suo Principio Creatore. Al contrario, dire che
-questo principio creatore sia «buono» è ipotetico; riflette una nostra
-speranza, che non dev'essere necessariamente vera.
+Dire che Dio esiste e che ha creato l'Universo è ragionevole: l'Universo esiste e quindi esiste necessariamente qualcosa, - se non proprio un signore con la barba bianca, almeno un fenomeno o una funzione - che possiamo considerare come suo Principio Creatore. 
+Al contrario, dire che questo principio creatore sia «buono» è ipotetico; riflette una nostra speranza, che non dev'essere necessariamente vera.
 <br>  
-È sbagliato proiettare le proprie speranze o le proprie convinzioni nei
-dogmi di una religione.
-È sbagliato, ma frequentissimo, anche fra i non credenti. Come abbiamo
-visto, per spiegare l'incongruenza fra l'idea di un Dio buono e la
-non-bontà dell'Universo da Lui creato, abbiamo tre possibilità
-differenti:
+È sbagliato proiettare le proprie speranze o le proprie convinzioni nei dogmi di una religione.
+È sbagliato, ma frequentissimo, anche fra i non credenti. Come abbiamo visto, per spiegare l'incongruenza fra l'idea di un Dio buono e la non-bontà dell'Universo da Lui creato, abbiamo tre possibilità differenti:
 
 -   dire che Dio non esiste;
 -   dire che non è buono;
 -   dire che non ha creato l'Universo.
 
-Delle tre, la prima è la meno conveniente, eppure la maggior parte
-dei non-credenti preferisce negare l'esistenza di Dio piuttosto che
-mettere in discussione la Sua bontà.
-
+Delle tre, la prima è la meno "conveniente", eppure la maggior parte dei non-credenti preferisce negare l'esistenza di Dio piuttosto che mettere in discussione la Sua bontà.
 Il perché, chiedetelo a loro.
 
 ### Buonismo 2.0
-<a name="buonismo"></a>Rimuovendo il secondo precetto, siamo riusciti a rendere coerente la
-dottrina Buonista, ma allo stesso tempo abbiamo rimosso la ragion
-d'essere del suo nome; se Dio non è buono, che senso ha, chiamarsi:
-*Buonisti*?  
-Non è solo una questione di carta intestata: dalla presunta bontà di
-Dio, la dottrina buonista deriva l'obbligo per l'Uomo di essere
-altrettanto buono; mancando il precetto decadrebbe anche l'obbligo e si
-aprirebbero le porte all'anarchia.
+<a name="buonismo"></a>Rimuovendo il secondo precetto, siamo riusciti a rendere coerente la dottrina Buonista, ma allo stesso tempo abbiamo rimosso la ragion d'essere del suo nome; se Dio non è buono, che senso ha, chiamarsi: *Buonisti*?  
+Non è solo una questione di carta intestata: dalla presunta bontà di Dio, la dottrina buonista deriva l'obbligo per l'Uomo di essere altrettanto buono; mancando il precetto decadrebbe anche l'obbligo e si aprirebbero le porte all'anarchia.
 <br>  
-Stando così le cose, abbiamo due possibili scelte: o agiamo da logici e
-privilegiamo la coerenza del nostro modello, anche a costo di
-giustificare azioni esecrabili da parte di chi non si sente più in
-dovere di essere buono, o agiamo da pastori e privilegiamo la sicurezza
-del nostro gregge, anche a costo di sentirci dire che le nostre
-convinzioni sono contraddittorie.
+Stando così le cose, abbiamo due possibili scelte: o agiamo da logici e privilegiamo la coerenza del nostro modello, anche a costo di giustificare azioni esecrabili da parte di chi non si sente più in dovere di essere buono, o agiamo da pastori e privilegiamo la sicurezza del nostro gregge, anche a costo di sentirci dire che le nostre convinzioni sono contraddittorie.
 <br>  
-Se scegliamo la logica, però, saremo costretti a scinderci dai Buonisti;
-la nostra dottrina non sarà un'evoluzione del Buonismo, ma sarà al
-contrario una dottrina a sé stante, che ha dei punti di contatto con il
-Buonismo, ma anche dei punti di attrito.
-I punti di attrito e gli scismi provocano sempre dei conflitti e così,
-il nostro tentativo di rendere migliore la religione Buonista avrà
-ottenuto un risultato diametralmente opposto a quello che ci eravamo
-prefissi.
+Se scegliamo la logica, però, saremo costretti a scinderci dai Buonisti; la nostra dottrina non sarà un'evoluzione del Buonismo, ma sarà al contrario una dottrina a sé stante, che ha dei punti di contatto con il Buonismo, ma anche dei punti di attrito.
+I punti di attrito e gli scismi provocano sempre dei conflitti e così, il nostro tentativo di rendere migliore la religione Buonista avrà ottenuto un risultato diametralmente opposto a quello che ci eravamo prefissi.
 
 C'è un modo per evitarlo?
 
 ### Imparare dagli errori
-L'esempio riportato sopra ha evidenziato dei problemi che possiamo
-considerare congeniti a tutte le religioni:
+L'esempio riportato sopra ha evidenziato dei problemi che possiamo considerare congeniti a tutte le religioni:
 
 -   i dogmi, che sono le fondamenta delle dottrine, sono facilmente
     attaccabili perché non possono essere dimostrati, ma solo accettati
@@ -339,16 +208,14 @@ considerare congeniti a tutte le religioni:
 -   la contestazione di un dogma causa quasi inevitabilmente una
     separazione e le separazioni è probabile che sfocino in conflitti.
 
-Oltre ai problemi tipici delle religioni, abbiamo rilevato alcuni
-problemi tipici degli esseri umani:
+Oltre ai problemi tipici delle religioni, abbiamo rilevato alcuni problemi tipici degli esseri umani:
 
 -   la tendenza a difendere i proprî principî anche con mezzi che
     contrastano con i principî stessi;
 -   la tendenza a influenzare la propria obiettività con le proprie
     speranze.
 
-Per correggere o quanto meno mitigare questi problemi, una religione
-dovrebbe quindi:
+Per correggere o quanto meno mitigare questi problemi, una religione dovrebbe quindi:
 
 <ol class="da-fare">
 <li>
@@ -367,22 +234,12 @@ dovrebbe quindi:
 Pur se complesso, tutto questo è possibile.
 
 ## C'hi++
-Da circa dieci anni sto sviluppando una metafisica che rispetta le
-condizioni viste sopra e che, soprattutto, è del tutto indipendente
-dall'esistenza di una o più Divinità.
-L'ho chiamata *C'hi++*, un gioco di parole fra il termine giapponese
-*C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione
-chiamato *C++*.
-Non è un accostamento casuale: la mia intenzione è quella di gestire
-l'evoluzione della mia teoria così come si gestisce il software; in
-particolare, il software cosiddetto: *open-source.*
+Da circa dieci anni sto sviluppando una metafisica che rispetta le condizioni viste sopra e che, soprattutto, è del tutto indipendente dall'esistenza di una o più Divinità.
+L'ho chiamata *C'hi++*, un gioco di parole fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato *C++*.
+Non è un accostamento casuale: la mia intenzione è quella di gestire l'evoluzione della mia teoria così come si gestisce il software; in particolare, il software cosiddetto: *open-source.*
 
 ### Software open-source
-Contrariamente al software realizzato da un individuo o da una società a
-scopo di lucro, il software *open-source* è il prodotto della
-collaborazione di diversi programmatori che rendono disponibile il
-frutto del loro lavoro a titolo gratuito, pubblicando anche il codice
-sorgente del sistema.
+Contrariamente al software realizzato da un individuo o da una società a scopo di lucro, il software *open-source* è il prodotto della collaborazione di diversi programmatori che rendono disponibile il frutto del loro lavoro a titolo gratuito, pubblicando anche il codice sorgente del sistema.
 
 Rispetto al software cosiddetto: *proprietario*, ovvero il software realizzato da una persona o da una società che ne detiene i diritti, il software *open-source* ha diversi lati positivi:
 
@@ -395,31 +252,20 @@ Rispetto al software cosiddetto: *proprietario*, ovvero il software realizzato d
     programmatori fa sì che ci sia un maggior controllo degli errori.
 
 ### Versioni
-I letterati, gli scultori, i pittori non possono modificare le loro
-opere, una volta che sono state pubblicate. Possono dare un ritocco di
-colore qui, un colpo di scalpello là, ma si tratta sempre di
-aggiustamenti minimi, che non cambiano la struttura stessa
-dell'arte-fatto.
-I Musicisti, i teatranti e, in parte, i cineasti sono un po' più
-fortunati, perché possono apportare più facilmente delle modifiche alle
-loro opere, ma si tratta comunque di eventi che accadono di rado.
-<br>  
+I letterati, gli scultori, i pittori non possono modificare le loro opere, una volta che sono state pubblicate. Possono dare un ritocco di colore qui, un colpo di scalpello là, ma si tratta sempre di aggiustamenti minimi, che non cambiano la struttura stessa dell'arte-fatto.
+I musicisti, i teatranti e, in parte, i cineasti sono un po' più fortunati, perché possono apportare più facilmente delle modifiche alle loro opere, ma si tratta comunque di eventi che accadono di rado.  
 Al contrario, la (buona) produzione di software ha il vantaggio di essere in continua evoluzione.
-Un software può essere *stabile*, ovvero non avere difetti noti, ma non è mai finito, completo, *perfetto*; sia perché l'utilizzo potrebbe rivelare dei difetti sfuggiti alla fase di test, sia perché delle variazioni del contesto di utilizzo potrebbero richiedere delle modifiche al sistema.
-
+Un software può essere *stabile*, ovvero non avere difetti noti, ma non è mai finito, completo, *perfetto*; sia perché l'utilizzo potrebbe rivelare dei difetti sfuggiti alla fase di test, sia perché delle variazioni del contesto di utilizzo potrebbero richiedere delle modifiche al sistema.  
 Il (buon) software viene quindi costantemente aggiornato e le diverse versioni di uno stesso prodotto sono numerate in maniera progressiva con dei codici composti da tre numeri separati da punti (p.es. *1.4.3*) che indicano la versione *major*, la versione *minor e* la *patch*.
 <br>  
 La versione *major* viene incrementata ogni volta che si apportano delle
 drastiche modifiche al software, rendendolo incompatibile con le
 versioni precedenti
-
 La versione *minor* viene incrementata quando si modifica il codice in
 maniera minore, aggiungendo o modificando delle funzionalità in maniera
 compatibile con le versioni precedenti.
-
 Il numero di *patch* è incrementato ogni volta che si apportano delle
 modifiche o delle correzioni anche minime al sistema.
-<br>  
 La *major version zero* (0.y.z) è destinata allo sviluppo iniziale,
 quando il software non è ancora stabile e tutto può cambiare in ogni
 momento.
@@ -447,8 +293,8 @@ La tabella seguente riporta un possibile versionamento delle grandi religioni mo
 1.3.0 | 1054       | Chiesa Ortodossa       |  Modifiche all'architettura del sistema.
 1.4.1 | 1540       | Calvino                |  Modifiche all'interfaccia utente.
 2.0.0 | 610        | Islam                  |  Cambio di m*ajor version*: Dio è sempre uno, ma non è lo stesso di prima.
-2.1.0 | 657        | Sunniti                |  Modifica alle regole.
-2.2.0 | 661        | Sciiti                 |  Modifica alle regole.
+2.1.0 | 657        | Sunniti                |  Rimozione dell'utente amministratore.
+2.2.0 | 661        | Sciiti                 |  Ripristino dell'utente amministratore.
 
 ### Versionamento del C'hi++
 Il C'hi++ è, in un certo senso, monoteistico, ma non è una religione, quindi deve essere sottoposto a un versionamento autonomo. 
@@ -457,7 +303,7 @@ Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero
 | n. | anno | descrizione | changelog
 :---: | :---: | --- | :--- |
 0.1.0 | 2004 |  Proto-C'hi++         | Domenica 12 settembre 2004, scrivevo sul mio blog: *La mia teoria cosmogonica comprende anche due fattori di primaria importanza, colpevolmente trascurati dalle altre teorie: il Minipimer e il concetto di: Immancabile Testa di Pera.*
-0.1.1 | 2007 |  Sostiene Aristotele  | Primo tentativo di formalizzare la strana teoria che andavo sviluppando. Ci sono già i quattro dogmi del C'hi++, ma non c'è nessun accenno allo Spazionismo.
+0.1.1 | 2007 |  Sostiene Aristotele  | Primo tentativo di formalizzare la strana teoria che andavo sviluppando. Ci sono già i quattro dogmi del C'hi++, ma non c'è ancora nessun accenno allo Spazionismo.
 0.2.0 | 2009 |  C'hi++               | Iniziata redazione del manuale *C'hi++*. Definizione iniziale dello Spazionismo.
 0.3.0 | 2015 |  Manifesto   | Iniziata la redazione di questo documento.
 0.3.1 | 2016 |  Adozione git         | Creato acconto per il progetto su GitHub.
@@ -560,20 +406,17 @@ Lo riporto di seguito, senza modifiche al testo originale, anche se non sono pi�
 <p>È la differenza, drastica, che passa fra l’agire male e l’agire per il male.</p>
 <p>(Anche qui, devo semplificare, ma ho delle dimostrazioni per tutte queste affermazioni...)</p>
 <p>C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musashi: </p>
- 
-<blockquote>
+ <blockquote>
     Non bisogna interferire nel funzionamento dell’Universo,
     ma prima è necessario capire quale sia,
     il funzionamento dell’Universo
 </blockquote>
- 
-<p>Che somiglia molto a una frase di Jacopone da Todi:</p>
- 
-<blockquote>
+ <p>Che somiglia molto a una frase di Jacopone da Todi:</p>
+ <blockquote>
     Prima devi sape' perché stai ar monno<br /> 
     quanno sai er perché <br />
     te devi impara' a stacce <br />
- </blockquote>
+</blockquote>
 <p>È (la prima frase) una forma estesa del Wu Wei taoista, ma come possiamo capire se stiamo interferendo nel funzionamento dell’Universo?</p>
 <p>È facile: se stiamo agendo in risposta a un’esigenza esterna alla nostra persona, è probabile che siamo sulla strada giusta; se stiamo agendo per soddisfare una nostra personalissima esigenza, è probabile che siamo sulla strada sbagliata. Un po’ la differenza che passa fra lo sparare a un alce per mangiarselo e sparargli per appendersi in casa la sua testa.</p>
 <p>Ciascuno di noi è perfettamente in grado di capire se si sta comportando bene oppure male: deve solo chiederselo e darsi una risposta sincera.</p>
@@ -614,24 +457,18 @@ Above us only sky<br/>
 
 ## <a name="chi++">Release/0.2: *C'hi++*</a>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
-programmazione scritto nello stile dei libri di filosofia giapponesi del
-XVII secolo.  
-Questa ambivalenza è presente anche nel titolo, che è un gioco di parole
-fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il
-linguaggio di programmazione chiamato *C++*.
+programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.  
+Questa ambivalenza è presente anche nel titolo, che è un gioco di parole fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato *C++*.
 Il tono della narrazione è generalmente serio, ma non sempre.  
 Ashvaghosha, nell'introduzione alla *Saundarananda*, afferma:
 
 > Questa composizione sul tema della liberazione è stata composta in forma poetica non per procurare piacere, ma per vincere nei lettori la propensione a distrarre la mente; e se ho trattato in esso temi diversi dalla liberazione è stato per renderla piacevole, così come una medicina amara si mescola con il miele per renderla bevibile.
 
-Fatte le debite proporzioni, questo vale anche per *C'hi++*: molte affermazioni del Maestro sono ironiche e lo stesso nome scelto per gli elementi costitutivi dell'Universo (gli _spazioni_) e per la cosmogonia che ne deriva (lo *Spazionismo*) ha chiaramente un intento auto/ironico.  
+Fatte le debite proporzioni, questo vale anche per *C'hi++*: molte affermazioni del Maestro sono ironiche e lo stesso nome scelto per gli elementi costitutivi dell'Universo (gli _spazioni_) e per la cosmogonia che ne deriva (lo *Spazionismo*) ha chiaramente un intento auto/ironico.
 Anche i riferimenti alla disciplina estetica della disposizione dei panni sullo stendino, l'*Ikebarba*, hanno lo scopo di stemperare la seriosità del testo, allegerendone la lettura.
 
 ### Mitopietica del C'hi++
-Il testo riporterà gli insegnamenti che un vecchio maestro tramanda al
-suo giovane allievo sulla programmazione in *C'hi++*, ovvero il
-linguaggio con cui è stata scritta l'applicazione che gestisce
-l'Universo.
+Il testo riporterà gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione:
 
 <div class="citazione">
 Non riuscivo a distogliere lo sguardo dallo schermo, ero come ipnotizzato da quello strano codice che potevo capire solo in parte. In quelle sequenze di istruzioni c’era qualcosa che non avevo mai visto prima: un ritmo, una sorta di indefinibile bellezza di cui mi ero innamorato a prima vista. Chiesi al Maestro di insegnarmi il C++.<br/>
@@ -645,15 +482,26 @@ Passai tutta la notte a meditare su quella strana domanda e la mattina dopo mi p
 Com'è facile intuire, anche il giorno dopo e per diversi giorni a seguire il Maestro trovò il modo di rimandare l’inizio del mio tirocinio con domande ancora più specifiche che andavano a colpire un’imprevista lacunosità delle mie risposte.
 Analizzai ogni possibile aspetto della produzione del software, dall’utilizzo delle risorse di sistema alle implicazioni sociali dell’incremento dell'occupazione derivante dall’evoluzione dei programmi, ma non ci fu nulla da fare: ogni volta il Maestro riuscì a trovare una scappatoia per venire meno al suo impegno.<br/> 
 Alla fine non ne potei più. Esasperato, dissi che ne avevo abbastanza di quella sua ostinata capziosità: per quanto io potessi essere specifico nelle mie risposte, ci sarebbe sempre stato un margine di indeterminazione. Se voleva insegnarmi il C++ doveva iniziare quel giorno stesso. Il Maestro mi fissò e, sorridendo, spense il suo computer.<br/>
-- No, per oggi basta. Vieni domani per la seconda lezione.<br/>
-<br/>
-Negli ultimi mesi la salute del Maestro è peggiorata e così gli ho chiesto il permesso di trascrivere i suoi insegnamenti per poterli trasmettere a mia volta ad altri discepoli.<br/>
-Con mia grande sorpresa, ha accettato.
+- No, per oggi basta. Vieni domani per la seconda lezione.
+</div>
+
+Dopo aver insegnato al suo allievo a programmare con il linguaggio C++, il Maestro gli parlerà del *C'hi++*, ovvero il linguaggio con cui è stata scritta l'applicazione che gestisce l'Universo:
+
+<div class="citazione">
+Tu sai che il primo programma che si impara in ogni linguaggio è di solito una semplice riga di codice che scrive: "Hello, World!" sullo schermo:
+
+<pre>
+int main(int argc, char * argv) 
+{
+	cout << "Hello, World!" << endl;
+}
+</pre>
+
+Con il C'hi++ è la stessa cosa, solo che il Mondo lo crei davvero.
 </div>
 
 ### Struttura del testo
-I primi tre capitoli inquadrano "storicamente" il contesto in cui si
-svolge l'azione, un possibile futuro in cui gli informatici sono diventati una casta sacerdotale:
+I primi tre capitoli inquadrano "storicamente" il contesto in cui si svolge l'azione, un possibile futuro in cui gli informatici sono stati trasformati in una casta sacerdotale:
 
 > la società dipendeva ormai totalmente dai computer e i computer dipendevano dagli informatici; se un giorno avessero deciso di coalizzarsi e di scioperare, avrebbero messo il Paese, se non il Mondo intero, in ginocchio.  
 > Le psicopatologie tipiche degli informatici, la loro incapacità di gestire, se non addirittura di concepire una vita sociale, rendevano questa ipotesi molto poco probabile, ma era comunque un rischio troppo grosso per essere ignorato.   
@@ -663,7 +511,7 @@ Nei capitoli seguenti, sarà descritto il linguaggio C++, facendo dei paralleli 
 Riporto di seguito alcuni esempi, anche si tratta ancora di appunti e non di un testo definitivo: 
 <br />  
 ####Commenti al codice 
-i *Post-it* di cui parlavo prima, una sorta di memoria storica dell'Universo:
+Affinità con i *Post-it* di cui parlavo prima, una sorta di memoria storica dell'Universo:
 
 > Esistono, dei commenti, nell'Universo? Qualcosa che ci permetta, da un'escuzione e l'altra, di tenere traccia di ciò che è successo nelle esecuzioni precedenti?
 
@@ -691,7 +539,7 @@ Lao-Tze, *Tao-Tê-Ching*:
 ####Valori booleani
 È una piccola parte del linguaggio, ma una miniera di possibili parallelismi specie sulla relatività dei concetti di *vero* e *falso*:
 
->  il concetto stesso di Vertià è inconoscibile perché, per essere definito, deve prima essere valutato e non è possibile valutarlo se non so cosa sia "vero".
+>  il concetto stesso di Vertià è inconoscibile perché, per essere definito, deve prima essere valutato e non è possibile valutarlo se non si sa cosa sia "vero".
 <br />  
 > Russell sostiene che la condizione di "vero" o di "falso" è uno stato dell'organismo, determinato da condizioni esterne all'organismo.
 Questo è vero anche per i computer: "vero" e "falso" sono stati possibili per un'istruzione e dipendono per lo più da cause esterne all'istruzione stessa.  
@@ -746,8 +594,7 @@ Capire quali sono le azioni necessarie è semplice, così com’è semplice, qua
 Nell'ultimo capitolo sarà definita anche la cosmogonia del C'hi++, ovvero lo *Spazionismo*.
 
 ### Spazionismo
-Lo Spazionismo è l'evoluzione delle idee abbozzate in *Sostiene Aristotele*.  
-Lì, il fenomeno era descritto a livello macroscopico: 
+Lo Spazionismo è l'evoluzione delle idee abbozzate in *Sostiene Aristotele*, dove il la genesi dell'Universo era descritta a livello macroscopico: 
 
 1. l'Uno Primigenio esplode, generando l'universo; 
 2. l'Universo si espande; 
@@ -762,7 +609,7 @@ La sequenza vista sopra, riletta in chiave spazionista, diventa:
 
 1. l'Uno Primigenio esplode a causa[^causa] di una Forza che ne disperde l'Energia nello spazio;
 2. l'Energia si spande per l'Universo e, conferendo massa/esistenza agli spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi e solidi che noi conosciamo, dall'elio della nebulosa di Wolf–Rayet alla nostra maestra delle Elementari;
-4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante[^variante] della Storia, che a sua volta genererà nuove esperienze e nuovi Post-It;
+4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante[^variante] della Storia, che a sua volta genererà nuove esperienze e nuovi *Post-It*;
 4. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
 5. tutto ricomincia.
 
@@ -774,14 +621,16 @@ Non solo perché non ho alcun titolo per parlare di spazio e materia, ma perché
 In informatica, questo rischio si previene adottando il metodo del *basso accoppiamento* o *low coupling*, un termine che non si riferisce alla generale difficoltà degli informatici a instaurare rapporti con persone di sesso opposto, ma alla separazione delle funzioni all'interno di un sistema.  
 Se gli elementi interni di un sistema sono dipendenti gli uni dagli altri, la correzione o la modifica di uno di essi comporterà necessariamente anche la modifica del resto del codice.
 Al contrario, se gli elementi del sistema sono indipendenti gli uni dagli altri e ciasuno di essi svolge solo un compito ben preciso, le modifiche o le correzioni su uno di essi avranno un impatto molto basso o addirittura nullo sul resto del sistema.
+<br />  
+Sfortunatamente, quando ho pensato a tutto ciò, il nome Spazionismo era già stato assegnato e mi divertiva troppo per sostituirlo.
+
 
 ## Release/0.3: Git
 A Dicembre del 2016 divenne chiaro che anche se avessi potuto dedicare a questo progetto tutto il mio tempo (e non potevo), non sarei mai riuscito a portarlo a termine da solo.
-Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *open-source* mi sembrò la cosa migliore da fare, così cominciai a scrivere questo Manifesto per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
+Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *open-source*, coinvlgendo nello "sviluppo" anche altre persone, mi sembrò la cosa migliore da fare, così cominciai a scrivere questo Manifesto per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
 
 ### Git
-*Git* è un sistema con cui si gestiscono le diverse versioni di un software, ma può essere utilizzato per tenere traccia delle modifiche di qualsiasi documento elettronico.  
-Leggendo il registro degli eventi di Git possiamo vedere quali sono state le modifiche apportate al sistema:
+*Git* è un sistema con cui si gestiscono le diverse versioni di un software, ma può essere utilizzato per tenere traccia delle modifiche di qualsiasi documento elettronico. Leggendo il registro degli eventi di Git possiamo vedere quali sono state le modifiche apportate al sistema:
 
 ```
 *   commit fa61cc01a2c1c3aeedc94a8a8a795e932d17f98d (origin/master)
@@ -856,10 +705,10 @@ Traslando questo concetto in termini letterarii, possiamo dire che una vignetta 
 Nel nostro caso, possiamo dire che la portabilità è la possibilità di rendere accettabile un concetto per persone aventi culture o convinzioni religiose di tipo diverso.
 
 ### Portabilità del C'hi++
-*C'hi++* si riferisce alla programmazione dei computer, che è un ambito specifico di un settore specifico, quindi, da un punto di vista simbolico, ha un bassissimo grado di portabilità.  
-Se fra duecento anni un archeologo ritrovasse i quaderni con i miei appunti e riuscisse a decifrare la mia grafia, potrebbe non capire a cosa io mi stia riferendo, quando parlo di classi, istanze e oggetti, mentre capirebbe perfettamente cosa simboleggiano l'Oca, l'Usignolo o il Pavone nel poema iraniano *Mantiq al-Tayr*, che è stato scritto nel XII secolo.
-In compenso, molti precetti del C'hi++ sono compatibili precetti o idee appartenenti ad altre mistiche o filosofie.
+*C'hi++* si riferisce alla programmazione dei computer, che è un ambito specifico di un settore specifico, quindi, da un punto di vista simbolico, ha un bassissimo grado di portabilità.
+Se fra duecento anni un archeologo ritrovasse i quaderni con i miei appunti e riuscisse a decifrare la mia grafia, potrebbe non capire a cosa io mi stia riferendo, quando parlo di *classi*, *istanze* e *oggetti*, mentre capirebbe perfettamente cosa simboleggiano l'Oca, l'Usignolo o il Pavone nel poema iraniano *Mantiq al-Tayr*, che è stato scritto nel XII secolo.  
 <br/>  
+In compenso, molti precetti del C'hi++ sono compatibili precetti o idee appartenenti ad altre mistiche o filosofie.
 In questi giorni sto leggendo la *Bhagavad-Gita*[^gita].
 Alcuni passi mi hanno ricordato le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire "bene":
 
@@ -911,11 +760,11 @@ Ho trovato altre analogie in frasi di filosofi greci come Eraclito, Zenone o Ana
 Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista: il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono l'Ente che ne causa la disgregazione, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte.
 <br />  
 Essendo una metafisica-non-metafisica, però, C'hi++ deve preoccuparsi anche della portabilità scientifica dei suoi precetti.
-Come ho scritto a proposito del <a href="#basso-accoppiamento">basso accoppiamento</a>, il grosso pericolo dello Spazionismo è che deriva il suo stesso nome da uno dei suoi precetti ed è quindi fondamentale che la teoria spazionista non collida apertamente con quelle che sono le conoscenze scientifiche correnti.  
-Fortunatamente, la scorsa settimana ho scoperto che il fisico Carlo Rovelli[^rovelli] sta sviluppando una teoria sulla granularità dello spazio che presenta diverse affinità con lo Spazionismo. 
-Inizialmente ho avuto la tentazione di informarmi meglio per capire, se non proprio la verosimiglianza, quanto meno l'ammissibilità scientifica di alcune affermazioni che penso di fare nel racconto, ma poi ho deciso di approfondire l'argomento dopo aver terminato questo testo, per non farmi influenzare e per non procrastinarne la pubblicazione di altri due anni.
+Come ho scritto a proposito del <a href="#basso-accoppiamento">basso accoppiamento</a>, il grosso pericolo dello Spazionismo è che deriva il suo stesso nome da uno dei suoi precetti ed è quindi fondamentale che la teoria spazionista non collida apertamente con quelle che sono le conoscenze scientifiche correnti.
+Fortunatamente, la scorsa settimana ho scoperto che il fisico Carlo Rovelli[^rovelli] sta sviluppando una teoria sulla granularità dello spazio che presenta diverse affinità con lo Spazionismo.
+Anche se inizialmente ho avuto la tentazione di informarmi meglio per capire, se non proprio la verosimiglianza, quanto meno l'ammissibilità scientifica di alcune affermazioni che penso di fare nel racconto, alla fine ho deciso di approfondire l'argomento solo dopo aver terminato questo testo, per non farmi influenzare e per non procrastinarne la pubblicazione di altri due anni.
 <br />  
-Un ultimo esempio, che è poco più di un gioco di parole e che riporto qui perché io amo i giochi di parole, si ottiene invertendo i fattori dell'equazione di Einstein:
+Un ultimo esempio, che è poco più di un gioco di parole e che riporto qui solo perché io amo i giochi di parole, si ottiene invertendo i fattori dell'equazione di Einstein:
 <div class="einstein">
 <p>E = mc<sup>2</sup></p>
 </div>
@@ -927,13 +776,13 @@ In termini spazionistici, questo equivale a dire che l'Universo (tutta la massa)
 una affermazione che trovo affascinante perché, per la teoria spazionista, ciò che divide Dio creando l'Universo è un'entità che si può chiamare o Diavolo[^diavolo] o, anche, Lucifero[^lucifero]; in sostanza: *colui che divide* o *colui che porta la luce*.
 
 ### Istituto Geografico Mistico
-È interessante vedere come un modello teorico, basato su presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
-Involontariamente compatibile, aggiungerei, perché, come scrissi in: *Sostiene Aristotele*, quando ho cominciato a sviluppare questa teoria volevo solo vedere: 
+È interessante vedere come un modello teorico, basato su presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.  
+*Involontariamente* compatibile, aggiungerei, perché, come scrissi in: *Sostiene Aristotele*, quando ho cominciato a sviluppare questa teoria volevo solo vedere: 
 
 > se fosse possibile creare una metafisica senza elementi metafisici.
 
 Credo che il rapporto che c'è fra C'hi++ e le religioni rivelate sia lo stesso che passa fra l'immagine da satellite di un bosco e la rappresentazione della stessa area in una mappa topografica dell'I.G.M[^igm].
-L'immagine da satellite descrive il bosco così com'è, in tutta la sua bellezza e la sua complessità; la mappa topografica rappresenta quella stessa bellezza con dei simboli, delle convenzioni tipografiche.  
+L'immagine da satellite descrive il bosco così com'è, in tutta la sua bellezza e la sua complessità; la mappa topografica rappresenta quella stessa bellezza con dei simboli, delle convenzioni tipografiche.
 Chi conosce la zona può orientarsi con l'immagine da satellite, godendo così di tutta la bellezza del luogo; chi invece non conosce la zona o non ha un buon senso dell'orientamento utilizzerà la mappa, che gli fornirà una rappresentazione più fredda, ma più facile da interpretare.  
 
 Si tratta in entrambi i casi di rappresentazioni incomplete, perché prive di una delle dimensioni del modello a cui si riferiscono, ma se dobbiamo utilizzarle per ritrovare la strada di casa in mezzo alla vegetazione questo è un bene, perché ci permette di avere una visione sintetica di qualcosa che sarebbe impossibile descrivere dettagliatamente.
@@ -962,9 +811,11 @@ Mi piacerebbe pensare che gli altri sei milioni di persone che, dal 1974, hanno 
 C'è solo una cosa che so per certo: fino a che ne avrò la possibilità, io porterò avanti questo progetto.
 Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di un'unità la *major-version* del mio progettto e andrò avanti.
 Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita; mia o altrui che sia.
-<br />  
 Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
 Mi sembra un motivo più che sufficiente.
+<br />  
+Grazie.
+
 
 		
 <h2 class="note">Note</h2>
