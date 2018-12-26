@@ -1,4 +1,3 @@
-<!--
 <link rel="stylesheet" href="chi++.css"  />
 <section class="pagina cover">
 <header>
@@ -8,11 +7,10 @@
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
 	<p><label>Versione</label>1.0.0.rc.2</p>
-	<p><label>Data    </label>23 Dicembre 2018</p>
+	<p><label>Data    </label>26 Dicembre 2018</p>
 </div>
 	![](http://media.canaro.net/imago/seal.png)
 </section>
--->
 
 <section class="citazione">
 Finis totius et partis est, removere viventes in hac vita de statu miserie et perducere ad statum felicitatis.<br/>
@@ -455,7 +453,7 @@ Above us only sky<br/>
 <p>Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Universo e siamo noi, con le nostre azioni, a decidere in quale dei due vivere.</p>
 </div>
 
-## <a name="chi++">Release/0.2: *C'hi++*</a>
+##Release/0.2: *C'hi++*<a name="chi++"></a>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
 programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.  
 Questa ambivalenza è presente anche nel titolo, che è un gioco di parole fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato *C++*.
@@ -813,8 +811,6 @@ Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo no
 Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita; mia o altrui che sia.
 Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
 Mi sembra un motivo più che sufficiente.
-<br />  
-Grazie.
 
 
 		
