@@ -786,21 +786,16 @@ Aristotele aveva ragione.
 ## Release/0.5 - TODO
 Terminata la redazione di questo testo, riprenderò la stesura di *C'hi++* definendo la struttura dei capitoli relativi al linguaggio C++, così come li ho descritti <a href="#chi++">sopra</a>.
 Parallelamente, dovrò riprendere la catalogazione dei miei appunti, trascrivendoli nella mappa Vue del progetto per poi includerli nel testo del manuale. A questo proposito, sarebbe utile, anche se doloroso[^vue], rimpiazzare Vue con uno strumento di *mind-mapping* che produca documenti compatibili con Git o, quanto meno, riuscire a convertire i dati di Vue in un documento di testo semplice.
-Dovrò poi verificare l'ammissibilità scientifica dei precetti dello Spazionismo, modificandoli se non fossero corretti, per poi includerli nel capitolo finale del libro. Infine, dovrò trovare un editore.
+Dovrò poi verificare l'ammissibilità scientifica dei precetti dello Spazionismo, modificandoli se non fossero corretti, per poi includerli nel capitolo finale del libro. Infine, dovrò trovare un editore. 
 <br />  
 Non so quale sarà il destino di *C'hi++*; non so dire nemmeno se questo Manifesto mi procurerà aiuto o sberleffi. 
 Un amico, a cui ne ho fatto leggere una prima bozza, sostiene che:
 
 > potrebbe diventare un caso letterario oppure potrebbe far lanciare una Fatwa nei tuoi confronti, o tutte e due le ipotesi insieme
 
-È possibile, ma io credo piuttosto che anche se *C'hi++* diventasse davvero un caso letterario, non avverrà nulla; almeno, non nel breve periodo, perché le idee che saranno proposte nel libro sono in netto contrasto con le idee e con il modo di vivere correnti.
-Per la maggior parte delle persone, accettare le idee del C'hi++ quivarrebbe a mettere in discussione la propia vita.  
-Inoltre, la maggior parte delle persone, da sempre, agisce nel modo che ritiene migliore per sé e non per l'interesse collettivo[^latino]; cambiano atteggiamento solo se qualcosa di ancestrale, come la guerra, la morte o la fame, li costringe a farlo.
+È possibile, ma io credo piuttosto che non avverrà nulla; almeno, non nel breve periodo perché temo che, per la maggior parte dei potenziali lettori, accettare le idee del C'hi++ equivarrebbe a mettere in discussione la propia vita e le persone, in genere, non amano mettersi in discussione.
 <br />  
-Conosco solo due persone che abbiano cambiato il loro modo di vivere dopo aver letto un libro: una sono io e l'altra era Wayne Martini, un architetto americano con cui collaborai negli anni '90 e che mi regalò: *Lo Zen e l'arte della manutenzione della motocicletta*, dicendo: "Read it, it changed my life"; io pensai: "Sempre esagerati 'sti americani!", ma poi scoprii che aveva ragione.  
-Mi piacerebbe pensare che gli altri sei milioni di persone che, dal 1974, hanno acquistato il libro di Pirsig abbiano avuto la nostra stessa epifania, ma temo proprio che non sia così.
-<br />  
-C'è solo una cosa che so per certo: fino a che ne avrò la possibilità, io porterò avanti questo progetto.
+Comunque, fino a che ne avrò la possibilità, io porterò avanti questo progetto.
 Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di un'unità la *major-version* del mio progettto e andrò avanti.
 Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita; mia o altrui che sia. Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
 Mi sembra un motivo più che sufficiente.
