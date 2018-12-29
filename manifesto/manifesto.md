@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="chi++.css"  />
+<link rel="stylesheet" type="text/css" href="chi++.css" />
 <section class="pagina cover">
 <header>
 	<h1>C'hi++</h1>
@@ -9,7 +9,7 @@
 	<p><label>Versione</label>1.0.0-rc.3</p>
 	<p><label>Data    </label>27 Dicembre 2018</p>
 </div>
-	![](http://media.canaro.net/imago/seal.png)
+	![](../img/seal.png)
 </section>
 
 <section class="citazione">
@@ -451,7 +451,14 @@ Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Uni
 </div>
 
 Pur se in embrione, gli elementi principali del C'hi++ ci sono tutti: la rarefazione degli elementi metafisici, la ciclicità dell'Universo, la memoria degli eventi passati, l'auto-lesionismo delle scelte egoistiche e la visone dell'esistenza come un processo di miglioramento continuo.
-Tutti questi temi costituiscono il "corollario metafisico" a cui si accenna nel testo e saranno approfonditi nel manuale di programmazione: *C'hi++*.s
+
+### Il senso della vita è il debug
+Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*[^beta-tester] di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali - come il Koan *Mu* o il motivo per cui Nanchuan taglia in due il gatto[^mumon], o chiarire la correlazione fra pentimento e perdòno.
+
+Pentirsi non è solo riconoscere di aver fatto un errore, ma riproporsi di non commetterlo mai più.
+Se vediamo l'esistenza come una sessione di test, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori perché venga corretto nelle successive versioni del programma. 
+In quest'ottica, il perdono per il peccatore/*debugger* non è un'anomalia, ma è una diretta conseguenza della sua presa di coscienza, perché se l'errore viene corretto, il dolore che ha causato in questa esistenza non si ripeterà nelle esistenze successive e l'Universo sarà un po' più Paradiso e un po' meno Inferno.
+
 
 ##Release/0.2: *C'hi++*<a name="chi++"></a>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
@@ -699,7 +706,7 @@ Nel nostro caso, possiamo dire che la portabilità è la possibilità di rendere
 
 ### Portabilità del C'hi++
 *C'hi++* si riferisce alla programmazione dei computer, che è un ambito specifico di un settore specifico, quindi, da un punto di vista simbolico, ha un bassissimo grado di portabilità.
-Se fra duecento anni un archeologo ritrovasse i quaderni con i miei appunti e riuscisse a decifrare la mia grafia, potrebbe non capire a cosa io mi stia riferendo, quando parlo di *classi*, *istanze* e *oggetti*, mentre capirebbe perfettamente cosa simboleggiano l'Oca, l'Usignolo o il Pavone nel poema iraniano *Mantiq al-Tayr*, che è stato scritto nel XII secolo.  
+Se fra duecento anni un archeologo ritrovasse i quaderni con i miei appunti e riuscisse a decifrare la mia grafia, potrebbe non capire a cosa io mi stia riferendo, quando parlo di *classi*, *istanze* e *oggetti*, mentre capirebbe perfettamente cosa simboleggiano l'Oca, l'Usignolo o il Pavone nel poema iraniano *Mantiq al-Tayr*, che è stato scritto nel XII secolo.
 <br/>  
 In compenso, molti precetti del C'hi++ sono compatibili precetti o idee appartenenti ad altre mistiche o filosofie.
 In questi giorni sto leggendo la *Bhagavad-Gita*[^gita].
@@ -817,6 +824,10 @@ Mi sembra un motivo più che sufficiente.
 
 [^api]: *Application Program Interface*: l'insieme delle regole per
     l'utilizzo del sistema
+
+[^beta-tester]: I *beta-tester* sono le persone che provano in anteprima i programmi che stanno per essere rilasciati sul mercato per cercare eventuali errori sfuggiti alla fase di test interno effettuato dell'azienda produttrice. 
+
+[^mumon]: [aggiungere il riferimento a La Porta Senza Porta]
 
 [^bandinelli]: [aggiungere il riferimento a Bianchi-Bandinelli]
     
