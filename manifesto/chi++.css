@@ -57,6 +57,7 @@ SUP A {
     font-family: Verdana, Sans;
     font-size: 0.70rem;
     color: #999;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -479,8 +480,8 @@ kbd {
 }
 
 /* Equazione di Einstein  */
-.einstein {
-    padding: 1rem;
+.einstein P {
+    padding: 0.25rem 1rem;
     font-size: 2rem;
 }
 * {
