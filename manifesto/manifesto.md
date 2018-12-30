@@ -6,8 +6,8 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>1.0.0-rc.3</p>
-	<p><label>Data    </label>27 Dicembre 2018</p>
+	<p><label>Versione</label>1.0.0-rc.4</p>
+	<p><label>Data    </label>30 Dicembre 2018</p>
 </div>
 	![](../img/seal.png)
 </section>
@@ -453,12 +453,10 @@ Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Uni
 Pur se in embrione, gli elementi principali del C'hi++ ci sono tutti: la rarefazione degli elementi metafisici, la ciclicità dell'Universo, la memoria degli eventi passati, l'auto-lesionismo delle scelte egoistiche e la visone dell'esistenza come un processo di miglioramento continuo.
 
 ### Il senso della vita è il debug
-Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*[^beta-tester] di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali - come il Koan *Mu* o il motivo per cui Nanchuan taglia in due il gatto[^mumon], o chiarire la correlazione fra pentimento e perdòno.
-
-Pentirsi non è solo riconoscere di aver fatto un errore, ma riproporsi di non commetterlo mai più.
-Se vediamo l'esistenza come una sessione di test, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori perché venga corretto nelle successive versioni del programma. 
-In quest'ottica, il perdono per il peccatore/*debugger* non è un'anomalia, ma è una diretta conseguenza della sua presa di coscienza, perché se l'errore viene corretto, il dolore che ha causato in questa esistenza non si ripeterà nelle esistenze successive e l'Universo sarà un po' più Paradiso e un po' meno Inferno.
-
+Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*[^beta-tester] di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali, come il *Koan* *Mu* o il motivo per cui Nanchuan taglia in due il gatto[^mumon] ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.  
+Infatti, se paragoniamo l'esistenza a una sessione di test software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori[^vasana] perché venga corretto nelle successive versioni del programma.  
+Visto che, nel nostro caso, beta-tester, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/beta-tester, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.  
+In quest'ottica, il perdono per il peccatore/*debugger* pentito non è un'anomalia, ma è una diretta conseguenza della sua presa di coscienza, perché se l'errore viene corretto, il dolore che ha causato in questa esistenza non si ripeterà nelle esistenze successive e l'Universo sarà un po' più Paradiso e un po' meno Inferno.
 
 ##Release/0.2: *C'hi++*<a name="chi++"></a>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
@@ -828,7 +826,7 @@ Mi sembra un motivo più che sufficiente.
 [^beta-tester]: I *beta-tester* sono le persone che provano in anteprima i programmi che stanno per essere rilasciati sul mercato per cercare eventuali errori sfuggiti alla fase di test interno effettuato dell'azienda produttrice. 
 
 [^mumon]: [aggiungere il riferimento a La Porta Senza Porta]
-
+[^vasana]: Grazie a un "*imprintig* karmico" che io qui chiamo *Post-it* e che per Yoga e Buddismo si chiama Vāsanā.  
 [^bandinelli]: [aggiungere il riferimento a Bianchi-Bandinelli]
     
 [^causa]: E non: *per colpa*, come nella versione 0.1.1
