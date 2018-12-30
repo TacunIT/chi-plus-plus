@@ -6,7 +6,7 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>1.0.0-rc.4</p>
+	<p><label>Versione</label>1.0.0-rc.5</p>
 	<p><label>Data    </label>30 Dicembre 2018</p>
 </div>
 	![](../img/seal.png)
@@ -504,6 +504,15 @@ int main(int argc, char * argv)
 
 Con il C'hi++ è la stessa cosa, solo che il Mondo lo crei davvero.
 </div>
+
+### L'Annosa Dicotomia
+Nel racconto all'inizio del libro comparirà anche quello che poi sarà uno dei temi ricorrenti del C'hi++, ovvero l'annosa dicotomia fra ciò che desideriamo e ciò di cui realmente abbiamo bisogno:
+
+> Una volta di più, mi trovo a dover fronteggiare l’Annosa Dicotomia fra ciò che il cliente desidera e quello di cui realmente ha bisogno e, una volta di più, sarà ingrato compito dell’uomo informatico quello di venire apparentemente meno ai propri doveri al fine di produrre qualcosa di consono alle reali esigenze del committente.
+
+Si tratta di un fenomeno nefasto, simile alla *Maya* dell'Induismo, che ci impedisce di vedere con chiarezza ciò che è bene fare o perseguire.
+[differenza fra l'Arte e il Marketing]
+
 
 ### Struttura del testo
 I primi tre capitoli inquadrano "storicamente" il contesto in cui si svolge l'azione, un possibile futuro in cui gli informatici sono stati trasformati in una casta sacerdotale:
