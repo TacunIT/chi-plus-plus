@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.3.0 concept-map (C&apos;hi++.vue) 2018-12-20 -->
+<!-- Tufts VUE 3.3.0 concept-map (C&apos;hi++.vue) 2018-12-30 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Thu Dec 20 09:37:40 CET 2018 by Carlo on platform Mac OS X 10.14.1 in JVM 1.8.0_25-b17 -->
+<!-- Do Not Remove: Saved date Sun Dec 30 17:31:34 CET 2018 by Carlo on platform Mac OS X 10.14.2 in JVM 1.8.0_25-b17 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="C'hi++.vue"
-    created="1267825536130" x="0.0" y="0.0" width="2201.2554"
-    height="1145.2747" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1545295060439" size="675768"
+    created="1267825536130" x="0.0" y="0.0" width="7428.263"
+    height="5043.796" strokeWidth="0.0" autoSized="false">
+    <resource referenceCreated="1546187494252" size="450114"
         spec="/Users/Carlo/Dropbox/Canaro/C'hi++/C'hi++.vue" type="1" xsi:type="URLResource">
         <title>C'hi++.vue</title>
         <property key="File" value="/Users/Carlo/Dropbox/Canaro/C'hi++/C'hi++.vue"/>
@@ -822,6 +822,18 @@
         <ID1 xsi:type="node">691</ID1>
         <ID2 xsi:type="node">737</ID2>
         <ctrlPoint0 x="-2133.982" y="-129.5772" xsi:type="point"/>
+    </child>
+    <child ID="747" layerID="374" created="1546186696814" x="-3273.1516"
+        y="597.7705" width="1154.7261" height="480.1333"
+        strokeWidth="2.0" strokeStyle="3" autoSized="false"
+        controlCount="0" arrowState="3" xsi:type="link">
+        <strokeColor>#EA2218</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/ffe937cdc0a82b320f6f16f150b16751</URIString>
+        <point1 x="-2119.4255" y="598.7705"/>
+        <point2 x="-3272.1516" y="1076.9038"/>
+        <ID2 xsi:type="node">742</ID2>
     </child>
     <child ID="365" label="Il Mondo ha&#xa;la natura dell'arte"
         layerID="378" created="1295765205378" x="-1842.2969"
@@ -5770,131 +5782,16 @@
         <ID1 xsi:type="node">60</ID1>
         <ID2 xsi:type="node">70</ID2>
     </child>
-    <child ID="726" layerID="6" created="1369088510413" x="-4072.4314"
-        y="1032.7659" width="542.015" height="408.7096"
-        strokeWidth="0.0" autoSized="false" xsi:type="group">
-        <strokeColor>#404040</strokeColor>
-        <textColor>#000000</textColor>
-        <font>SansSerif-plain-14</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/c40c1c307f00000101cc6a6a04f23ec5</URIString>
-        <child ID="460" label="L'Ikebarba" created="1297978609208"
-            x="242.00244" y="147.75037" width="134.0" height="57.000004"
-            strokeWidth="2.0" autoSized="true" xsi:type="node">
-            <notes>Arte della disposizione dei panni sullo stendino.%nl;</notes>
-            <fillColor>#C6E8FF</fillColor>
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#EA2218</textColor>
-            <font>Arial-plain-12</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/35a08372c0a8010b016b4be542461409</URIString>
-            <shape xsi:type="diamond"/>
-        </child>
-        <child ID="465" label="Estetica" created="1297978840126"
-            x="374.07153" y="1.0" width="113.0" height="36.0"
-            strokeWidth="2.0" autoSized="false" xsi:type="node">
-            <fillColor>#83CEFF</fillColor>
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#EA2218</textColor>
-            <font>Arial-plain-12</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/35a08373c0a8010b016b4be55ffbdb39</URIString>
-            <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
-        </child>
-        <child ID="468" label="L'Ikebarba &#xe8; fatta &#xa;per l'uomo"
-            created="1297978934236" x="363.28174" y="339.05786"
-            width="177.73328" height="51.166504" strokeWidth="2.0"
-            autoSized="false" xsi:type="node">
-            <notes>"L'Ikebarba &#xe8; fatta per l'uomo, non l'uomo per l'Ikebarba"%nl;%nl;Perifrasi della frase di Ges&#xf9; sullo shabbat.%nl;L'Ikebarba non deve essere un peso, per l'uomo, ma un obbligo giojoso.%nl;Un'Ikebarba ben fatta gli provveder&#xe0; panni asciutti in minor tempo e render&#xe0; la vista dell'immondo stendino meno fastidiosa.%nl;Rendendo pi&#xf9; rapido l'asciugamento dei panni, inoltre, l'Ikebarba riduce la necessit&#xe0; di energia e quindi l'inquinamento. %nl;%nl;Il principio filosofico che sottende l'Ikebarba &#xe8; che tutto &#xe8; importante e non esistono momenti di serie A, nei quali facciamo le cose che ci piacciono, e momenti di serie B, nei quali facciamo ci&#xf2; che &#xe8; necessario fare.%nl;Anche il momento della stenditura dei panni, se approcciato correttamente, pu&#xf2; essere un passo verso il miglioramento di s&#xe9; e del Mondo.%nl;%nl;Questo per&#xf2; non deve essere espresso in forma diretta.%nl;(v. nota narrativa)%nl;</notes>
-            <fillColor>#E6F7FD</fillColor>
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#EA2218</textColor>
-            <font>Arial-plain-12</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/35a08374c0a8010b016b4be5bb14984b</URIString>
-            <shape xsi:type="ellipse"/>
-        </child>
-        <child ID="470" label="L'Ikebarba comincia&#xa;nel negozio"
-            created="1297979324990" x="1.0" y="82.45508"
-            width="169.80478" height="67.224" strokeWidth="2.0"
-            autoSized="false" xsi:type="node">
-            <notes>Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente.%nl;E' bene quindi acquistare abiti dalle tinte sobrie e, possibilmente, intonati gli uni agli altri, in modo da renderne pi&#xf9; facile e pi&#xf9; elegante la composizione sullo stendino.%nl;%nl;Un guardaroba di tipo militare o maoista, con indumenti identici e dello stesso colore &#xe8;, per&#xf2;, un eccesso da rifuggire, perch&#xe9; rende monotona l'Ikebarba.%nl;Gli indumenti devono essere eterogenei, ma possedere una loro coerenza interna, che possa essere evidenziata dalla composizione sullo stendino.%nl;Solo la biancheria intima pu&#xf2; essere dello stesso colore o fantasia.%nl;%nl;L'Ikebarba non deve essere una giustificazione per fuggire le regole del buon vesire: anche un uomo che prediliga le camicie azzurre, dovr&#xe0; possedere delle camicie bianche da indossare la sera.%nl;</notes>
-            <fillColor>#E6F7FD</fillColor>
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#EA2218</textColor>
-            <font>Arial-plain-12</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/35a08375c0a8010b016b4be5078b7c38</URIString>
-            <shape xsi:type="ellipse"/>
-        </child>
-        <child ID="474" label="Tipi di Ikebarba" created="1297981121046"
-            x="35.833008" y="340.4856" width="169.80478" height="67.224"
-            strokeWidth="2.0" autoSized="false" xsi:type="node">
-            <notes>L'Ikebarba estetica &#xe8; quella che definisce le posizioni sullo stendino in base al colore e alla forma degli indumenti.%nl;%nl;L'Ikebarba funzionale &#xe8; quella che accosta gl indumenti in ragione dei rispettivi tempi di asciugatura, ponendo i capi pi&#xf9; pesanti all'esterno, dove ricevono pi&#xf9; aria, e quelli pi&#xf9; leggeri - o sintetici- all'interno.%nl;%nl;Il primo caso &#xe8; frequente quando si opera su indumenti affini, come per esempio le camicie.%nl;Il secondo caso &#xe8; applicato spesso laddove si debbano stendere degli indumenti sportivi di diversa grammatura.%nl;%nl;Ciascun fedele dovr&#xe0; per&#xf2; tendere all'Ikebana perfetta, che fonde gli aspetti estetici e funzionali in un tutt'uno armonico.%nl;</notes>
-            <fillColor>#E6F7FD</fillColor>
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#EA2218</textColor>
-            <font>Arial-plain-12</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/35bd1b9ec0a8010b016b4be556adec8a</URIString>
-            <shape xsi:type="ellipse"/>
-        </child>
-        <child ID="461" created="1297978614559" x="325.083" y="36.5"
-            width="92.072845" height="118.803314" strokeWidth="1.0"
-            autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#404040</textColor>
-            <font>Arial-plain-11</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/35a08373c0a8010b016b4be5064b98af</URIString>
-            <point1 x="416.65585" y="37.0"/>
-            <point2 x="325.583" y="154.80331"/>
-            <ID1 xsi:type="node">465</ID1>
-            <ID2 xsi:type="node">460</ID2>
-        </child>
-        <child ID="469" created="1297978968849" x="324.86813"
-            y="197.28885" width="108.80829" height="142.88367"
-            strokeWidth="1.0" autoSized="false" controlCount="0"
-            arrowState="2" xsi:type="link">
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#404040</textColor>
-            <font>Arial-plain-11</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/35a08374c0a8010b016b4be5f5a8fd62</URIString>
-            <point1 x="325.36813" y="197.78885"/>
-            <point2 x="433.17642" y="339.67252"/>
-            <ID1 xsi:type="node">460</ID1>
-            <ID2 xsi:type="node">468</ID2>
-        </child>
-        <child ID="471" created="1297979324990" x="155.53934"
-            y="134.48721" width="112.96367" height="31.203201"
-            strokeWidth="1.0" autoSized="false" controlCount="0"
-            arrowState="2" xsi:type="link">
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#404040</textColor>
-            <font>Arial-plain-11</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/35a08375c0a8010b016b4be55f52c198</URIString>
-            <point1 x="268.00302" y="165.19041"/>
-            <point2 x="156.03935" y="134.98721"/>
-            <ID1 xsi:type="node">460</ID1>
-            <ID2 xsi:type="node">470</ID2>
-        </child>
-        <child ID="475" created="1297981125044" x="150.08084"
-            y="196.0383" width="140.11601" height="147.19513"
-            strokeWidth="1.0" autoSized="false" controlCount="0"
-            arrowState="2" xsi:type="link">
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#404040</textColor>
-            <font>Arial-plain-11</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/35bd1b9ec0a8010b016b4be5ef809b04</URIString>
-            <point1 x="289.69687" y="196.5383"/>
-            <point2 x="150.58086" y="342.73343"/>
-            <ID1 xsi:type="node">460</ID1>
-            <ID2 xsi:type="node">474</ID2>
-        </child>
-    </child>
-    <child ID="466" layerID="6" created="1297978845894" x="-3614.7305"
-        y="677.9016" width="546.4685" height="356.36414"
+    <child ID="466" layerID="6" created="1297978845894" x="-3570.2412"
+        y="678.4169" width="507.04126" height="381.66504"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/35a08373c0a8010b016b4be5148dc5a3</URIString>
-        <point1 x="-3068.762" y="678.4016"/>
-        <point2 x="-3614.2305" y="1033.7657"/>
+        <point1 x="-3063.7002" y="678.9169"/>
+        <point2 x="-3569.7415" y="1059.5819"/>
         <ID1 xsi:type="node">60</ID1>
         <ID2 xsi:type="node">465</ID2>
     </child>
@@ -6072,147 +5969,6 @@
         <point2 x="-2527.988" y="294.26843"/>
         <ID1 xsi:type="node">60</ID1>
         <ID2 xsi:type="node">685</ID2>
-    </child>
-    <child ID="729" layerID="6" created="1369088589794" x="-2303.0723"
-        y="574.37384" width="776.2871" height="519.38477"
-        strokeWidth="0.0" autoSized="false" xsi:type="group">
-        <strokeColor>#404040</strokeColor>
-        <textColor>#000000</textColor>
-        <font>SansSerif-plain-14</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/c40c1c3b7f00000101cc6a6aec77584b</URIString>
-        <child ID="75" label="Metafisica" created="1293660828252"
-            x="130.88159" y="193.0202" width="113.0" height="36.0"
-            strokeWidth="2.0" autoSized="false" xsi:type="node">
-            <fillColor>#83CEFF</fillColor>
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#EA2218</textColor>
-            <font>Arial-plain-12</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/3434ba87c0a8010b00a5d7f2f15203e6</URIString>
-            <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
-        </child>
-        <child ID="94" label="Annosa dicotomia" created="1293662084690"
-            x="109.03735" y="1.0" width="160.30957" height="54.031006"
-            strokeWidth="2.0" autoSized="false" xsi:type="node">
-            <fillColor>#E6F7FD</fillColor>
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#EA2218</textColor>
-            <font>Arial-plain-12</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/344da040c0a8010b00a5d7f278f3ffce</URIString>
-            <shape xsi:type="ellipse"/>
-        </child>
-        <child ID="409" label="Ciclo delle rinascite"
-            created="1295998782456" x="59.809326" y="326.53894"
-            width="163.79999" height="36.800003" strokeWidth="2.0"
-            autoSized="true" xsi:type="node">
-            <notes>Legami con il buddismo e l'orfismo</notes>
-            <fillColor>#E6F7FD</fillColor>
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#EA2218</textColor>
-            <font>Arial-plain-12</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/bf8db5dec0a8010b0083fff9fd11d664</URIString>
-            <shape xsi:type="ellipse"/>
-        </child>
-        <child ID="500"
-            label="L'amore &#xe8; un difetto &#xa;di costruzione &#xa;intenzionale"
-            created="1308098594881" x="368.6444" y="302.82867"
-            width="218.2" height="113.2" strokeWidth="2.0"
-            autoSized="true" xsi:type="node">
-            <notes>L'amore &#xe8; una sorta di "difetto di costruzione" che ci porta a desiderare qualcosa pi&#xf9; della nostra stessa esistenza.%nl;Si tratta per&#xf2; di un difetto di costruzione intenzionale, un po' come le tacche sulle manopole delle moto da enduro: si crea una quasi-rottura (e quindi un difetto di costruzione) per far s&#xec; che un'eventuale incidente causi il minor danno possibile.%nl;Nel caso dell'amore, lo scopo &#xe8; di rendere l'organismo sensibile a quegli stimoli (di solito sensuali: l'odore di un partner, il sapore di un cibo) che gli consentiranno di svolgere in maniera appropriata il suo dovere.%nl;Si pu&#xf2; essere particolarmente sensibili a un determinato tipo di viso, perch&#xe9; quello sar&#xe0; il viso della persona con cui dobbiamo accoppiarci o che contribuir&#xe0; alla nostra evoluzione.%nl;Si pu&#xf2; essere sensibili al sapore di un cibo perch&#xe9; quello sar&#xe0; il modo in cui dovremo morire (v. conseguenza).%nl;E' quindi, molto importante fare (o perseguire) ci&#xf2; che amiamo, perch&#xe9; probabilmente quello &#xe8; il nostro destino.%nl;%nl;E' altrettanto importante identificare precisamente ci&#xf2; che amiamo davvero (ovvero ci&#xf2; per cui saremmo disposti a sacrificare la nostra vita), da ci&#xf2; di cui siamo semplicemente innamorati (ovvero, ci&#xf2; che genericamente, "ci piace molto"), perch&#xe9;, se no, rischiamo di spendere la nostra esistenza in una direzione errata. %nl;%nl;</notes>
-            <fillColor>#C6E8FF</fillColor>
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#EA2218</textColor>
-            <font>Arial-plain-12</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/90d72e12c0a80116011492edcf84ac06</URIString>
-            <shape xsi:type="diamond"/>
-        </child>
-        <child ID="502" label="Amiamo ci&#xf2;&#xa;che ci uccider&#xe0;"
-            created="1308098950552" x="605.7871" y="439.38477"
-            width="169.5" height="79.0" strokeWidth="2.0"
-            autoSized="false" xsi:type="node">
-            <notes>(chiosa: Se tutto va bene)%nl;Se nulla interviene a modificare le cose, ci&#xf2; che noi amiamo sar&#xe0; ci&#xf2; che ci condurr&#xe0; alla morte. Per alcuni pu&#xf2; essere il mare, per altri la moto, per altri (o altre), la montagna, ma anche il cibo o il bere o il fumo o le donne.%nl;Se moriamo facendo ci&#xf2; che amiamo, &#xe8; probabile che abbiamo compiuto il nostro dovere.%nl;E' cos&#xec; che il "sistema" fa in modo che noi ci leviamo da mezzo quando non siamo pi&#xf9; funzionali.%nl;%nl;La chiosa significa che possono esserci delle circostanze in cui ci&#xf2; che genera la morte di un individuo non sia (n&#xe9; direttamente n&#xe9; indirettamente) qualcosa che esso amava.%nl;Queste e solo queste sono le vere "disgrazie".%nl;</notes>
-            <fillColor>#E6F7FD</fillColor>
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#EA2218</textColor>
-            <font>Arial-plain-12</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/90d72e13c0a80116011492ed2ec93d07</URIString>
-            <shape xsi:type="ellipse"/>
-        </child>
-        <child ID="643" label="L'ambulanza" created="1368140369834"
-            x="1.0" y="440.42932" width="155.20001" height="49.0"
-            strokeWidth="2.0" autoSized="false" xsi:type="node">
-            <notes>L'unica regola del Codice della Strada che nessuno viola mai &#xe8; la precedenza alle ambulanze.%nl;Ci&#xf2; avviene per egoismo, perch&#xe9; sappiamo che, un giorno, potremmo esserci noi, nell'ambulanza.%nl;Lo stesso deve avvenire nella vita: se pensiamo che in un'esistenza futura il lavavetri al semaoro potremo essere noi, cercheremo di essere gentili con lui.%nl;</notes>
-            <fillColor>#E6F7FD</fillColor>
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#EA2218</textColor>
-            <font>Arial-plain-12</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/8b8747ac7f0000010163f47e18ce6926</URIString>
-            <shape xsi:type="ellipse"/>
-        </child>
-        <child ID="95" created="1293662104897" x="187.05968"
-            y="54.523438" width="2.365265" height="138.9961"
-            strokeWidth="1.0" autoSized="false" controlCount="0"
-            arrowState="2" xsi:type="link">
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#404040</textColor>
-            <font>Arial-plain-11</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/344da041c0a8010b00a5d7f27ee7bd3c</URIString>
-            <point1 x="187.55968" y="193.01953"/>
-            <point2 x="188.92494" y="55.023438"/>
-            <ID1 xsi:type="node">75</ID1>
-            <ID2 xsi:type="node">94</ID2>
-        </child>
-        <child ID="501" created="1308098602588" x="222.09877"
-            y="228.5202" width="201.18906" height="103.3194"
-            strokeWidth="1.0" autoSized="false" controlCount="0"
-            arrowState="2" xsi:type="link">
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#404040</textColor>
-            <font>Arial-plain-11</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/90d72e12c0a80116011492ed1593ccfb</URIString>
-            <point1 x="222.59879" y="229.0202"/>
-            <point2 x="422.78784" y="331.3396"/>
-            <ID1 xsi:type="node">75</ID1>
-            <ID2 xsi:type="node">500</ID2>
-        </child>
-        <child ID="683" created="1369084264023" x="147.43637"
-            y="228.5202" width="34.30641" height="98.65979"
-            strokeWidth="1.0" autoSized="false" controlCount="0"
-            arrowState="2" xsi:type="link">
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#404040</textColor>
-            <font>Arial-plain-11</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/c3d583797f00000101cc6a6a58259ce8</URIString>
-            <point1 x="181.24278" y="229.0202"/>
-            <point2 x="147.93637" y="326.68"/>
-            <ID1 xsi:type="node">75</ID1>
-            <ID2 xsi:type="node">409</ID2>
-        </child>
-        <child ID="644" created="1368140369834" x="90.7738"
-            y="362.62238" width="41.87185" height="78.71036"
-            strokeWidth="1.0" autoSized="false" controlCount="0"
-            arrowState="2" xsi:type="link">
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#404040</textColor>
-            <font>Arial-plain-11</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/8b8747ac7f0000010163f47e1fb0d05c</URIString>
-            <point1 x="132.14566" y="363.12234"/>
-            <point2 x="91.27381" y="440.8327"/>
-            <ID1 xsi:type="node">409</ID1>
-            <ID2 xsi:type="node">643</ID2>
-        </child>
-        <child ID="503" label="conseguenza" created="1308099068547"
-            x="529.6439" y="388.34433" width="107.50336"
-            height="60.788086" strokeWidth="1.0" autoSized="false"
-            controlCount="0" arrowState="2" xsi:type="link">
-            <strokeColor>#8C8F72</strokeColor>
-            <textColor>#404040</textColor>
-            <font>Arial-plain-11</font>
-            <URIString>http://vue.tufts.edu/rdf/resource/90d72e14c0a80116011492ed6dde7088</URIString>
-            <point1 x="530.1439" y="388.84433"/>
-            <point2 x="636.6473" y="448.63242"/>
-            <ID1 xsi:type="node">500</ID1>
-            <ID2 xsi:type="node">502</ID2>
-        </child>
     </child>
     <child ID="76" layerID="6" created="1293660838781" x="-2961.1213"
         y="659.62354" width="789.5044" height="117.90466"
@@ -6772,13 +6528,292 @@
         <ID1 xsi:type="node">107</ID1>
         <ID2 xsi:type="node">737</ID2>
     </child>
+    <child ID="460" label="L'Ikebarba" layerID="6"
+        created="1297978609208" x="-3830.429" y="1180.5162"
+        width="134.0" height="57.000004" strokeWidth="2.0"
+        autoSized="true" xsi:type="node">
+        <notes>Arte della disposizione dei panni sullo stendino.%nl;</notes>
+        <fillColor>#C6E8FF</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/35a08372c0a8010b016b4be542461409</URIString>
+        <shape xsi:type="diamond"/>
+    </child>
+    <child ID="465" label="Estetica" layerID="6" created="1297978840126"
+        x="-3650.17" y="1059.582" width="113.0" height="36.0"
+        strokeWidth="2.0" autoSized="false" xsi:type="node">
+        <fillColor>#83CEFF</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-italic-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/35a08373c0a8010b016b4be55ffbdb39</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="468" label="L'Ikebarba &#xe8; fatta &#xa;per l'uomo"
+        layerID="6" created="1297978934236" x="-3709.1497" y="1371.8237"
+        width="177.73328" height="51.166504" strokeWidth="2.0"
+        autoSized="false" xsi:type="node">
+        <notes>"L'Ikebarba &#xe8; fatta per l'uomo, non l'uomo per l'Ikebarba"%nl;%nl;Perifrasi della frase di Ges&#xf9; sullo shabbat.%nl;L'Ikebarba non deve essere un peso, per l'uomo, ma un obbligo giojoso.%nl;Un'Ikebarba ben fatta gli provveder&#xe0; panni asciutti in minor tempo e render&#xe0; la vista dell'immondo stendino meno fastidiosa.%nl;Rendendo pi&#xf9; rapido l'asciugamento dei panni, inoltre, l'Ikebarba riduce la necessit&#xe0; di energia e quindi l'inquinamento. %nl;%nl;%nl;</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/35a08374c0a8010b016b4be5bb14984b</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="470" label="L'Ikebarba comincia&#xa;nel negozio"
+        layerID="6" created="1297979324990" x="-4071.4314" y="1115.221"
+        width="169.80478" height="67.224" strokeWidth="2.0"
+        autoSized="false" xsi:type="node">
+        <notes>Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente.%nl;E' bene quindi acquistare abiti dalle tinte sobrie e, possibilmente, intonati gli uni agli altri, in modo da renderne pi&#xf9; facile e pi&#xf9; elegante la composizione sullo stendino.%nl;%nl;Un guardaroba di tipo militare o maoista, con indumenti identici e dello stesso colore &#xe8;, per&#xf2;, un eccesso da rifuggire, perch&#xe9; rende monotona l'Ikebarba.%nl;Gli indumenti devono essere eterogenei, ma possedere una loro coerenza interna, che possa essere evidenziata dalla composizione sullo stendino.%nl;Solo la biancheria intima pu&#xf2; essere dello stesso colore o fantasia.%nl;%nl;L'Ikebarba non deve essere una giustificazione per fuggire le regole del buon vesire: anche un uomo che prediliga le camicie azzurre, dovr&#xe0; possedere delle camicie bianche da indossare la sera.%nl;</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/35a08375c0a8010b016b4be5078b7c38</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="474" label="Tipi di Ikebarba" layerID="6"
+        created="1297981121046" x="-4036.5984" y="1373.2515"
+        width="169.80478" height="67.224" strokeWidth="2.0"
+        autoSized="false" xsi:type="node">
+        <notes>L'Ikebarba estetica &#xe8; quella che definisce le posizioni sullo stendino in base al colore e alla forma degli indumenti.%nl;%nl;L'Ikebarba funzionale &#xe8; quella che accosta gl indumenti in ragione dei rispettivi tempi di asciugatura, ponendo i capi pi&#xf9; pesanti all'esterno, dove ricevono pi&#xf9; aria, e quelli pi&#xf9; leggeri - o sintetici- all'interno.%nl;%nl;Il primo caso &#xe8; frequente quando si opera su indumenti affini, come per esempio le camicie.%nl;Il secondo caso &#xe8; applicato spesso laddove si debbano stendere degli indumenti sportivi di diversa grammatura.%nl;%nl;Ciascun fedele dovr&#xe0; per&#xf2; tendere all'Ikebana perfetta, che fonde gli aspetti estetici e funzionali in un tutt'uno armonico.%nl;</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/35bd1b9ec0a8010b016b4be556adec8a</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="461" layerID="6" created="1297978614559" x="-3740.1714"
+        y="1095.082" width="123.752686" height="96.04004"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/35a08373c0a8010b016b4be5064b98af</URIString>
+        <point1 x="-3616.9185" y="1095.582"/>
+        <point2 x="-3739.6711" y="1190.6221"/>
+        <ID1 xsi:type="node">465</ID1>
+        <ID2 xsi:type="node">460</ID2>
+    </child>
+    <child ID="469" layerID="6" created="1297978968849" x="-3747.5632"
+        y="1230.0547" width="108.80859" height="142.88379"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/35a08374c0a8010b016b4be5f5a8fd62</URIString>
+        <point1 x="-3747.0632" y="1230.5547"/>
+        <point2 x="-3639.2546" y="1372.4385"/>
+        <ID1 xsi:type="node">460</ID1>
+        <ID2 xsi:type="node">468</ID2>
+    </child>
+    <child ID="471" layerID="6" created="1297979324990" x="-3916.8916"
+        y="1167.2532" width="112.96411" height="31.203247"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/35a08375c0a8010b016b4be55f52c198</URIString>
+        <point1 x="-3804.4277" y="1197.9563"/>
+        <point2 x="-3916.3918" y="1167.753"/>
+        <ID1 xsi:type="node">460</ID1>
+        <ID2 xsi:type="node">470</ID2>
+    </child>
+    <child ID="475" layerID="6" created="1297981125044" x="-3922.3506"
+        y="1228.8042" width="140.11621" height="147.19507"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/35bd1b9ec0a8010b016b4be5ef809b04</URIString>
+        <point1 x="-3782.7344" y="1229.3042"/>
+        <point2 x="-3921.8506" y="1375.4993"/>
+        <ID1 xsi:type="node">460</ID1>
+        <ID2 xsi:type="node">474</ID2>
+    </child>
+    <child ID="742" label="Categorie" layerID="6"
+        created="1546186314037" x="-3415.5588" y="1067.5587"
+        width="169.80478" height="67.224" strokeWidth="2.0"
+        autoSized="false" xsi:type="node">
+        <notes>Le categoie estetiche del C'hi++ sono tre:%nl;%nl;L'Arte.%nl;D&#xe0; all'uomo ci&#xf2; di cui ha bisogno e, come una buona madre, non soddisfa i suoi capricci, ma si cura del suo benessere anche se ci&#xf2; pu&#xf2; apparire crudele. %nl;%nl;Il Marketing.%nl;D&#xe0; all'uomo ci&#xf2; che desidera e, bramosa di approvazione, soddisfa ogni suo capriccio, incurante degli effetti che questi avranno sulla sua vita.%nl;%nl;La Decorazione. %nl;Sono opere di decorazione tutte quelle idee e qugli artefatti che soddisfano i sensi dell'uomo, ma che non hanno alcuna influenza, positiva o negativa che sia, sulla sua crescita spirituale. &#x21a9;%nl;</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="decorazione"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="estetica"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="arte"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="marketing"/>
+        </metadata-list>
+        <URIString>http://vue.tufts.edu/rdf/resource/ffe72263c0a82b320f6f16f1aecc8b78</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="744" layerID="6" created="1546186352728" x="-3537.67"
+        y="1082.1494" width="124.83838" height="12.106567"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/ffe72263c0a82b320f6f16f13a878342</URIString>
+        <point1 x="-3537.17" y="1082.6493"/>
+        <point2 x="-3413.3315" y="1093.7559"/>
+        <ID1 xsi:type="node">465</ID1>
+        <ID2 xsi:type="node">742</ID2>
+    </child>
+    <child ID="75" label="Metafisica" layerID="6"
+        created="1293660828252" x="-2172.1907" y="767.39404"
+        width="113.0" height="36.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
+        <fillColor>#83CEFF</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/3434ba87c0a8010b00a5d7f2f15203e6</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="94" label="Annosa dicotomia" layerID="6"
+        created="1293662084690" x="-2194.035" y="575.37384"
+        width="162.5" height="61.5" strokeWidth="2.0" autoSized="true" xsi:type="node">
+        <notes>Si tratta di un fenomeno nefasto, simile alla *Maya* dell'Induismo, che ci impedisce di vedere con chiarezza ci&#xf2; che &#xe8; bene fare o perseguire. %sp;%nl;Cos&#xec; come l'illusoriet&#xe0; del mondo sensibile &#xe8; il frutto dell'azione dei tre %sp;*gu&#x1e47;a*: Sattva, Rajas e Tamas, cos&#xec; l'Annosa Dicotomia nasce dallo scontro fra due forze contrapposte: l'Arte e il Marketing (v. Categorie estetiche).</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-italic-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="guna"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Arte"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Marketing"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Maya"/>
+        </metadata-list>
+        <URIString>http://vue.tufts.edu/rdf/resource/344da040c0a8010b00a5d7f278f3ffce</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="409" label="Ciclo delle rinascite" layerID="6"
+        created="1295998782456" x="-2243.263" y="900.9128"
+        width="163.79999" height="36.800003" strokeWidth="2.0"
+        autoSized="true" xsi:type="node">
+        <notes>Legami con il buddismo e l'orfismo</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/bf8db5dec0a8010b0083fff9fd11d664</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="500"
+        label="L'amore &#xe8; un difetto &#xa;di costruzione &#xa;intenzionale"
+        layerID="6" created="1308098594881" x="-1934.4279" y="877.2025"
+        width="218.2" height="113.2" strokeWidth="2.0" autoSized="true" xsi:type="node">
+        <notes>L'amore &#xe8; una sorta di "difetto di costruzione" che ci porta a desiderare qualcosa pi&#xf9; della nostra stessa esistenza.%nl;Si tratta per&#xf2; di un difetto di costruzione intenzionale, un po' come le tacche sulle manopole delle moto da enduro: si crea una quasi-rottura (e quindi un difetto di costruzione) per far s&#xec; che un'eventuale incidente causi il minor danno possibile.%nl;Nel caso dell'amore, lo scopo &#xe8; di rendere l'organismo sensibile a quegli stimoli (di solito sensuali: l'odore di un partner, il sapore di un cibo) che gli consentiranno di svolgere in maniera appropriata il suo dovere.%nl;Si pu&#xf2; essere particolarmente sensibili a un determinato tipo di viso, perch&#xe9; quello sar&#xe0; il viso della persona con cui dobbiamo accoppiarci o che contribuir&#xe0; alla nostra evoluzione.%nl;Si pu&#xf2; essere sensibili al sapore di un cibo perch&#xe9; quello sar&#xe0; il modo in cui dovremo morire (v. conseguenza).%nl;E' quindi, molto importante fare (o perseguire) ci&#xf2; che amiamo, perch&#xe9; probabilmente quello &#xe8; il nostro destino.%nl;%nl;E' altrettanto importante identificare precisamente ci&#xf2; che amiamo davvero (ovvero ci&#xf2; per cui saremmo disposti a sacrificare la nostra vita), da ci&#xf2; di cui siamo semplicemente innamorati (ovvero, ci&#xf2; che genericamente, "ci piace molto"), perch&#xe9;, se no, rischiamo di spendere la nostra esistenza in una direzione errata. %nl;%nl;</notes>
+        <fillColor>#C6E8FF</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/90d72e12c0a80116011492edcf84ac06</URIString>
+        <shape xsi:type="diamond"/>
+    </child>
+    <child ID="502" label="Amiamo ci&#xf2;&#xa;che ci uccider&#xe0;"
+        layerID="6" created="1308098950552" x="-1697.2852" y="1013.7586"
+        width="169.5" height="79.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
+        <notes>(chiosa: Se tutto va bene)%nl;Se nulla interviene a modificare le cose, ci&#xf2; che noi amiamo sar&#xe0; ci&#xf2; che ci condurr&#xe0; alla morte. Per alcuni pu&#xf2; essere il mare, per altri la moto, per altri (o altre), la montagna, ma anche il cibo o il bere o il fumo o le donne.%nl;Se moriamo facendo ci&#xf2; che amiamo, &#xe8; probabile che abbiamo compiuto il nostro dovere.%nl;E' cos&#xec; che il "sistema" fa in modo che noi ci leviamo da mezzo quando non siamo pi&#xf9; funzionali.%nl;%nl;La chiosa significa che possono esserci delle circostanze in cui ci&#xf2; che genera la morte di un individuo non sia (n&#xe9; direttamente n&#xe9; indirettamente) qualcosa che esso amava.%nl;Queste e solo queste sono le vere "disgrazie".%nl;</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/90d72e13c0a80116011492ed2ec93d07</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="643" label="L'ambulanza" layerID="6"
+        created="1368140369834" x="-2302.0723" y="1014.80316"
+        width="155.20001" height="49.0" strokeWidth="2.0"
+        autoSized="false" xsi:type="node">
+        <notes>L'unica regola del Codice della Strada che nessuno viola mai &#xe8; la precedenza alle ambulanze.%nl;Ci&#xf2; avviene per egoismo, perch&#xe9; sappiamo che, un giorno, potremmo esserci noi, nell'ambulanza.%nl;Lo stesso deve avvenire nella vita: se pensiamo che in un'esistenza futura il lavavetri al semaoro potremo essere noi, cercheremo di essere gentili con lui.%nl;</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/8b8747ac7f0000010163f47e18ce6926</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="95" layerID="6" created="1293662104897" x="-2115.899"
+        y="636.35156" width="3.1159668" height="131.53906"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/344da041c0a8010b00a5d7f27ee7bd3c</URIString>
+        <point1 x="-2115.399" y="767.3906"/>
+        <point2 x="-2113.283" y="636.85156"/>
+        <ID1 xsi:type="node">75</ID1>
+        <ID2 xsi:type="node">94</ID2>
+    </child>
+    <child ID="501" layerID="6" created="1308098602588" x="-2080.9734"
+        y="802.89404" width="201.18896" height="103.31946"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/90d72e12c0a80116011492ed1593ccfb</URIString>
+        <point1 x="-2080.4734" y="803.39404"/>
+        <point2 x="-1880.2844" y="905.7135"/>
+        <ID1 xsi:type="node">75</ID1>
+        <ID2 xsi:type="node">500</ID2>
+    </child>
+    <child ID="683" layerID="6" created="1369084264023" x="-2155.6357"
+        y="802.89453" width="34.306152" height="98.65869"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/c3d583797f00000101cc6a6a58259ce8</URIString>
+        <point1 x="-2121.8296" y="803.39453"/>
+        <point2 x="-2155.1357" y="901.0532"/>
+        <ID1 xsi:type="node">75</ID1>
+        <ID2 xsi:type="node">409</ID2>
+    </child>
+    <child ID="644" layerID="6" created="1368140369834" x="-2212.2983"
+        y="936.99634" width="41.871826" height="78.71045"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/8b8747ac7f0000010163f47e1fb0d05c</URIString>
+        <point1 x="-2170.9265" y="937.49634"/>
+        <point2 x="-2211.7983" y="1015.2068"/>
+        <ID1 xsi:type="node">409</ID1>
+        <ID2 xsi:type="node">643</ID2>
+    </child>
+    <child ID="503" label="conseguenza" layerID="6"
+        created="1308099068547" x="-1773.4285" y="962.71814"
+        width="107.503296" height="60.788025" strokeWidth="1.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/90d72e14c0a80116011492ed6dde7088</URIString>
+        <point1 x="-1772.9283" y="963.21814"/>
+        <point2 x="-1666.425" y="1023.00616"/>
+        <ID1 xsi:type="node">500</ID1>
+        <ID2 xsi:type="node">502</ID2>
+    </child>
     <layer ID="374" label="Relazioni" created="1295991642614" x="0.0"
-        y="0.0" width="1.4E-45" height="1.4E-45" hidden="true"
-        strokeWidth="0.0" autoSized="false">
+        y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/bf23a3a8c0a8010b015e8a8fdc837bba</URIString>
     </layer>
     <layer ID="378" label="Arte" created="1295992283172" x="0.0" y="0.0"
-        width="1.4E-45" height="1.4E-45" hidden="true" strokeWidth="0.0" autoSized="false">
+        width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca3ac0a8010b00b4cbc51c140d59</URIString>
     </layer>
     <layer ID="1" label="Informatica" created="1267825536136" x="0.0"
@@ -6786,16 +6821,15 @@
         <URIString>http://vue.tufts.edu/rdf/resource/304ae829c0a8010a0179d47fc3c57899</URIString>
     </layer>
     <layer ID="7" label="Filosofia" created="1293657051881" x="0.0"
-        y="0.0" width="1.4E-45" height="1.4E-45" hidden="true"
-        strokeWidth="0.0" autoSized="false">
+        y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/3413335cc0a8010b00a5d7f2d68c857e</URIString>
     </layer>
     <layer ID="6" label="C'hi++" created="1293656974647" x="0.0" y="0.0"
-        width="1.4E-45" height="1.4E-45" hidden="true" strokeWidth="0.0" autoSized="false">
+        width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/3413335cc0a8010b00a5d7f256847768</URIString>
     </layer>
-    <userZoom>0.5901178105267081</userZoom>
-    <userOrigin x="-1641.6925" y="-1034.2421"/>
+    <userZoom>0.75</userZoom>
+    <userOrigin x="-3245.2266" y="-1272.7047"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1267825535957"
