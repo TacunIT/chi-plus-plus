@@ -268,7 +268,7 @@ La *major version zero* (0.y.z) è destinata allo sviluppo iniziale,
 quando il software non è ancora stabile e tutto può cambiare in ogni
 momento.
 <br>  
-Il versionamento semantico ha anche altre regole[^semver], ma per quelli che sono i nostri scopi possiamo fermarci qui.
+Il versionamento semantico ha anche altre regole, ma per quelli che sono i nostri scopi possiamo fermarci qui.
 
 ### Versionamento delle religioni monoteistiche
 
@@ -457,6 +457,8 @@ Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa
 Infatti, se paragoniamo l'esistenza a una sessione di test software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori[^vasana] perché venga corretto nelle successive versioni del programma.  
 Visto che, nel nostro caso, beta-tester, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/beta-tester, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.  
 In quest'ottica, il perdono per il peccatore/*debugger* pentito non è un'anomalia, ma è una diretta conseguenza della sua presa di coscienza, perché se l'errore viene corretto, il dolore che ha causato in questa esistenza non si ripeterà nelle esistenze successive e l'Universo sarà un po' più Paradiso e un po' meno Inferno.
+Per lo stesso principio visto sopra, se qualcuno fa qualcosa che vi arreca giovamento, è importante che glielo facciate sapere, in modo che possa farlo di nuovo nelle prossime esistenze.
+Questo è facile, oltre che educato, se la persona che ci ha favorito si è comportata bene nei nostri confronti, ma richiede tanta onestà intellettuale e un bel po' di fede se la persona che ci ha favorito si è comportata male.
 
 ##Release/0.2: *C'hi++*<a name="chi++"></a>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
@@ -636,21 +638,19 @@ Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *op
 |\  Merge: ced4c8f 1746b3c
 | | Author: Carlo Simonelli <rc@nero-digitale.com>
 | | Date:   Sun Dec 16 20:10:08 2018 +0100
-| | 
-| |     Impotato il branch 'release/0.4.4'.
+| |     Importato il branch 'release/0.4.4'.
 | | 
 | * commit ef642e150a0237675a9c176a8a8f8d3cb34c5cb9
 | | Author: Carlo Simonelli <rc@nero-digitale.com>
 | | Date:   Sun Dec 16 19:51:30 2018 +0100
-| | 
 | |     Prima di merge con bitbucket
 | |   
 | *   commit e93ee12d95a75a06375eff64fbf571ca4b29f01f
 | |\  Merge: f3674cc 9e3989b
 | | | Author: Carlo Simonelli <rc@nero-digitale.com>
 | | | Date:   Sat Dec 15 19:42:22 2018 +0100
-| | | 
 | | |     Merge branch 'release/0.4.3'
+| | | 
 ```
 Ciascuno di quei "commit" identificati da una stringa alfanumerica che si vedono nel codice qui sopra, è una "fotografia" del sistema in un determinato momento dello sviluppo.
 Se ci si accorge di aver fatto un errore, si può ritornare indietro, annullando le modifiche fatte e ripristinando la vecchia versione del sistema.
@@ -816,7 +816,6 @@ Mi sembra un motivo più che sufficiente.
     americano.
 
 [^gnosi]: [aggiungere riferimento a *Cosmogonie Gnostiche*]
-[^semver]: https://semver.org
 [^poc]: *Proof Of Concept*: prototipo che serve a di/mostrare le
     funzionalità di un nuovo sistema o processo.
 
@@ -826,7 +825,9 @@ Mi sembra un motivo più che sufficiente.
 [^beta-tester]: I *beta-tester* sono le persone che provano in anteprima i programmi che stanno per essere rilasciati sul mercato per cercare eventuali errori sfuggiti alla fase di test interno effettuato dell'azienda produttrice. 
 
 [^mumon]: [aggiungere il riferimento a La Porta Senza Porta]
-[^vasana]: Grazie a un "*imprintig* karmico" che io qui chiamo *Post-it* e che per Yoga e Buddismo si chiama Vāsanā.  
+
+[^vasana]: Grazie a un "*imprintig* karmico" che io qui chiamo *Post-it* e che Yoga e Buddismo chiamano *Vāsanā*.  
+
 [^bandinelli]: [aggiungere il riferimento a Bianchi-Bandinelli]
     
 [^causa]: E non: *per colpa*, come nella versione 0.1.1
@@ -854,5 +855,3 @@ Mi sembra un motivo più che sufficiente.
 [^vue]: Sono affezionato a Vue perché la uso da molti anni e ho anche collaborato con i ragazzi della Tufts University per la versione in Italiano del programma, ma lo sviluppo è fermo al 2015 e temo che non riprenderà.
 
 [^latino]: La prova più evidente di ciò è che le frasi: *Mala tempora currunt* e: *O tempora, o mores!*, sono in Latino.
-
-
