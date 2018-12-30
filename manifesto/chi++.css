@@ -480,8 +480,8 @@ kbd {
 }
 
 /* Equazione di Einstein  */
-.einstein {
-    padding: 1rem;
+.einstein P {
+    padding: 0.25rem 1rem;
     font-size: 2rem;
 }
 * {

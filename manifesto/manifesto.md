@@ -21,9 +21,9 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 <span>Heinrich Böll</span> - Opinioni di un clown
 </section>
 
-##Premessa
+## Premessa
 
-###Scopo della religione
+### Scopo della religione
 La religione dovrebbe aiutare l'Uomo a vivere meglio.
 
 Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i
@@ -137,7 +137,7 @@ Siccome, di fatto, non possiamo esserne certi, dobbiamo imporre questa condizion
 	<li>  L'uomo ha un'anima.
 </ol>
  
-Questo piccolo atto di fede ci permette di rispondere senza esitazione alla domanda [D](#domanda-D):
+Questo atto di fede ci permette di rispondere senza esitazione alla domanda [D](#domanda-D):
 
 > Dio è buono, giusto e misericordioso. Nell'Universo esistono stupratori, omicidi e malattie è perché l'Universo è opera del Diavolo [^gnosi].
 
@@ -188,8 +188,8 @@ Il perché, chiedetelo a loro.
 <a name="buonismo"></a>Rimuovendo il secondo precetto, siamo riusciti a rendere coerente la dottrina Buonista, ma allo stesso tempo abbiamo rimosso la ragion d'essere del suo nome; se Dio non è buono, che senso ha, chiamarsi: *Buonisti*?  
 Non è solo una questione di carta intestata: dalla presunta bontà di Dio, la dottrina buonista deriva l'obbligo per l'Uomo di essere altrettanto buono; mancando il precetto decadrebbe anche l'obbligo e si aprirebbero le porte all'anarchia.
 <br>  
-Stando così le cose, abbiamo due possibili scelte: o agiamo da logici e privilegiamo la coerenza del nostro modello, anche a costo di giustificare azioni esecrabili da parte di chi non si sente più in dovere di essere buono, o agiamo da pastori e privilegiamo la sicurezza del nostro gregge, anche a costo di sentirci dire che le nostre convinzioni sono contraddittorie.
-<br>  
+Stando così le cose, abbiamo due possibili scelte: o agiamo da logici e privilegiamo la coerenza del nostro modello, anche a costo di giustificare azioni esecrabili da parte di chi non si sente più in dovere di essere buono, o agiamo da pastori e privilegiamo la sicurezza del nostro gregge, anche a costo di sentirci dire che le nostre convinzioni sono contraddittorie.  
+
 Se scegliamo la logica, però, saremo costretti a scinderci dai Buonisti; la nostra dottrina non sarà un'evoluzione del Buonismo, ma sarà al contrario una dottrina a sé stante, che ha dei punti di contatto con il Buonismo, ma anche dei punti di attrito.
 I punti di attrito e gli scismi provocano sempre dei conflitti e così, il nostro tentativo di rendere migliore la religione Buonista avrà ottenuto un risultato diametralmente opposto a quello che ci eravamo prefissi.
 
@@ -251,11 +251,11 @@ Rispetto al software cosiddetto: *proprietario*, ovvero il software realizzato d
 
 ### Versioni
 I letterati, gli scultori, i pittori non possono modificare le loro opere, una volta che sono state pubblicate. Possono dare un ritocco di colore qui, un colpo di scalpello là, ma si tratta sempre di aggiustamenti minimi, che non cambiano la struttura stessa dell'arte-fatto.
-I musicisti, i teatranti e, in parte, i cineasti sono un po' più fortunati, perché possono apportare più facilmente delle modifiche alle loro opere, ma si tratta comunque di eventi che accadono di rado.  
+I musicisti, i teatranti e, in parte, i cineasti sono un po' più fortunati, perché possono apportare più facilmente delle modifiche alle loro opere, ma si tratta comunque di eventi che accadono di rado.
+<br />  
 Al contrario, la (buona) produzione di software ha il vantaggio di essere in continua evoluzione.
-Un software può essere *stabile*, ovvero non avere difetti noti, ma non è mai finito, completo, *perfetto*; sia perché l'utilizzo potrebbe rivelare dei difetti sfuggiti alla fase di test, sia perché delle variazioni del contesto di utilizzo potrebbero richiedere delle modifiche al sistema.  
-Il (buon) software viene quindi costantemente aggiornato e le diverse versioni di uno stesso prodotto sono numerate in maniera progressiva con dei codici composti da tre numeri separati da punti (p.es. *1.4.3*) che indicano la versione *major*, la versione *minor e* la *patch*.
-<br>  
+Un software può essere *stabile*, ovvero non avere difetti noti, ma non è mai finito, completo, *perfetto*; sia perché l'utilizzo potrebbe rivelare dei difetti sfuggiti alla fase di test, sia perché delle variazioni del contesto di utilizzo potrebbero richiedere delle modifiche al sistema.
+Il (buon) software viene quindi costantemente aggiornato e le diverse versioni di uno stesso prodotto sono numerate in maniera progressiva con dei codici composti da tre numeri separati da punti (p.es. *1.4.3*) che indicano la versione *major*, la versione *minor e* la *patch*.  
 La versione *major* viene incrementata ogni volta che si apportano delle
 drastiche modifiche al software, rendendolo incompatibile con le
 versioni precedenti
@@ -267,17 +267,16 @@ modifiche o delle correzioni anche minime al sistema.
 La *major version zero* (0.y.z) è destinata allo sviluppo iniziale,
 quando il software non è ancora stabile e tutto può cambiare in ogni
 momento.
-<br>  
 Il versionamento semantico ha anche altre regole, ma per quelli che sono i nostri scopi possiamo fermarci qui.
 
 ### Versionamento delle religioni monoteistiche
 
 La tabella seguente riporta un possibile versionamento delle grandi religioni monoteistiche:
 
-| n. | anno | de	scrizione | changelog
+| n. | anno | descrizione | changelog
 :---: | :---: | --- | :--- |
-0.1.0 | 3.200 a.C. | Culti egizi            | Riduzione del numero degli Dei; enoteismo e atenismo POC[^poc] del monoteismo.
-1.0.0 | 2.000 a.C. | Ebraismo               | Dio è uno; tutti gli altri sono deprecati.
+0.1.0 | 3200 a.C. | Culti egizi            | Riduzione del numero degli Dei; enoteismo e atenismo POC[^poc] del monoteismo.
+1.0.0 | 2000 a.C. | Ebraismo               | Dio è uno; tutti gli altri sono deprecati.
 1.0.1 | 1200 a.C.  | 10 Comandamenti Esodo  |  Redazione del manuale utente.
 1.0.2 | 621 a.C.   | Deuteronomio           |  Aggiornamento manuale utente.
 1.0.3 | 500 a.C.   | Levitico               |  Redazione del manuale di amministratore di sistema.
@@ -286,7 +285,7 @@ La tabella seguente riporta un possibile versionamento delle grandi religioni mo
 1.1.2 | 70         | Vangelo di Marco       |  Documentazione API[^api] versione 1.1.
 1.1.3 | 85         | Vangelo di Matteo      |  Documentazione API versione 1.1.
 1.1.4 | 95         | Vangelo di Luca        |  Documentazione API versione 1.1.
-1.2.0 | 787        | Secondo Concilio Nicea |  Miglioramenti all'interfaccia grafica: permesse le immagini sacre.
+1.2.0 | 787        | II Concilio Nicea |  Miglioramenti all'interfaccia grafica: permesse le immagini sacre.
 1.2.1 | 1284       | Vescovo di Passavia    |  Potenziamento dell'*help-desk* con l'introduzione dei Santi Ausiliatori.
 1.3.0 | 1054       | Chiesa Ortodossa       |  Modifiche all'architettura del sistema.
 1.4.1 | 1540       | Calvino                |  Modifiche all'interfaccia utente.
@@ -309,7 +308,7 @@ Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero
 0.4.0 | oggi |  Manifesto Markdown | Conversione del Manifesto in formato Markdown
 
 Già da queste poche righe è possibile vedere alcuni benefici
-dell'approccio open-source alla speculazione filosofica.
+dell'approccio *open-source* alla speculazione filosofica.
 <br>  
 Nella versione 0.1.0 del C'hi++, la figura che definisco: *Immancabile
 Testa di Pera* era un elemento negativo, assimilabile al Diavolo o alla
@@ -339,19 +338,19 @@ A Giugno del 2007 scrissi un documento dal titolo: *Sostiene Aristotele*
 che possiamo considerare la versione 0.1.1 del C'hi++. 
 Lo riporto di seguito, senza modifiche al testo originale, anche se non sono più d'accordo su alcune affermazioni:
 
-<div class="citazione">
+<div class="citazione" >
 Sostiene Aristotele (e per fortuna lo sostiene nella sesta pagina de: “La metafisica”, ché se l’avesse sostenuto, che so, a pagina quattrocentosettantadue, chissà se l’avrei mai saputo) che la ricerca della conoscenza, “deve in qualche modo portarci a uno stato contrario a quello nel quale si dà inizio alle ricerche”. 
 Ci si meraviglia di qualcosa, se ne indagano le cause e, una volta che le si è scoperte, ciò che prima meravigliava appare come qualcosa di inevitabile.<br/>
 L’oggetto di studio, nel caso specifico, è l’Universo.
 Dopo anni di ragionamenti, di letture balzane e di teorie ancora più balzane, sono riuscito a formulare una visione delle cose (mi spiace, ma mi rifiuto di scrivere Weltanschauung) che sembra funzionare piuttosto bene e che, soprattutto, è del tutto indipendente dall’esistenza di una o più Divinità.<br/>
 Perché io ci credo davvero che Dio è la compattificazione di Alexandroff dell’Universo, ovvero un elemento soprannaturale che si introduce nelle “spiegazioni” quando non si sa come rendere conto di qualcosa.
 Sfortunatamente però, rattoppare una cosmogonia zoppicante introducendo il concetto di Dio, porta inevitabilmente a dei paradossi, tipo: se Dio è buono, perché permette il male? Che Dio è, uno che prima mi dice di non ammazzare e poi fa morire di fame o di sete o di stenti centinaia di bambini ogni giorno?
-Le cose sono due: o il male esiste perché Dio non può evitarlo (e allora perché diciamo che è onnipotente?); oppure il male esiste perché Dio non vuole evitarlo (e allora perché diciamo che è buono?).<br/>
+Le cose sono due: o il male esiste perché Dio non può evitarlo (e allora perché diciamo che è onnipotente?); oppure il male esiste perché Dio non vuole evitarlo (e allora perché diciamo che è buono?).  
 Ci sono risposte canoniche a queste domande, ma possono soddisfare giusto l’ascoltatore medio di Radio Maria, io cercavo qualcosa di meglio.
 Inoltre, la maggior parte delle religioni richiedono una certa dose di fede in qualche luogo (Paradiso) o condizione (Nirvana) soprannaturale e inconoscibile fino al momento successivo alla morte, e questo mi suonava un po’ di fregatura.
 Mi sono chiesto allora se sarebbe stato possibile dare una spiegazione dell’Universo senza introdurre elementi esterni a quelli che conosciamo.
 In altre parole, se fosse possibile creare una metafisica senza elementi metafisici.
-Era possibile.<br/> 
+Era possibile.<br/>
 Sostiene Aristotele (sempre nelle prime pagine, per fortuna) che le scienze più rigorose sono quelle che richiedono il numero minore di premesse.
 La cosa mi conforta, perché la mia ipotesi richiede solo tre premesse per funzionare a livello “base”, e quattro per una visione un po’ più appetibile delle cose.
 I tre dogmi principali della mia “religione” sono:
@@ -453,13 +452,15 @@ Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Uni
 Pur se in embrione, gli elementi principali del C'hi++ ci sono tutti: la rarefazione degli elementi metafisici, la ciclicità dell'Universo, la memoria degli eventi passati, l'auto-lesionismo delle scelte egoistiche e la visone dell'esistenza come un processo di miglioramento continuo.
 
 ### Il senso della vita è il debug
-Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*[^beta-tester] di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali, come il *Koan* *Mu* o il motivo per cui Nanchuan taglia in due il gatto[^mumon] ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.  
+Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*[^beta-tester] di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali, come il *Koan* *Mu* o il motivo per cui Nanchuan taglia in due il gatto[^mumon] ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.
+<br />    
 Infatti, se paragoniamo l'esistenza a una sessione di test software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori[^vasana] perché venga corretto nelle successive versioni del programma.  
-Visto che, nel nostro caso, beta-tester, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/beta-tester, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.  
+Visto che, nel nostro caso, beta-tester, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/beta-tester, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.
+<br />   
 In quest'ottica, il perdono per il peccatore/*debugger* pentito non è un'anomalia, ma è una diretta conseguenza della sua presa di coscienza, perché se l'errore viene corretto, il dolore che ha causato in questa esistenza non si ripeterà nelle esistenze successive e l'Universo sarà un po' più Paradiso e un po' meno Inferno.
 Per lo stesso principio visto sopra, se qualcuno fa qualcosa che vi arreca giovamento, è importante che glielo facciate sapere, in modo che possa farlo di nuovo nelle prossime esistenze.
 Questo è facile, oltre che educato, se la persona che ci ha favorito si è comportata bene nei nostri confronti, ma richiede tanta onestà intellettuale e un bel po' di fede se la persona che ci ha favorito si è comportata male.
-
+<br />   
 ##Release/0.2: *C'hi++*<a name="chi++"></a>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
 programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.
@@ -636,14 +637,14 @@ Lo Spazionismo è l'evoluzione delle idee abbozzate in *Sostiene Aristotele*, do
 
 Lo Spazionismo descrive lo stesso processo, ma a livello più basso.
 Nell'ultimo capitolo del libro, il Maestro spiegherà al suo allievo che l'Universo è costituito da *Spazioni*, elementi infinitesimali dotati di esistenza potenziale.
-Così come lo schermo di un computer è costituito da una matrice bidimensionale di pixel, generalmente spenti, ma capaci di accendersi se colpiti da un raggio di luce, così l'Universo è costituito da una matrice tridimensionale di spazioni, capaci di esistere se ricevono energia.  
+Così come lo schermo di un computer è costituito da una matrice bidimensionale di pixel, generalmente spenti, ma capaci di accendersi se colpiti da un raggio di luce, così l'Universo è costituito da una matrice tridimensionale di spazioni, capaci di esistere se ricevono energia.
 La sequenza vista sopra, riletta in chiave spazionista, diventa:  
 
 1. l'Uno Primigenio esplode a causa[^causa] di una Forza che ne disperde l'Energia nello spazio;
 2. l'Energia si spande per l'Universo e, conferendo massa/esistenza agli spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi e solidi che noi conosciamo, dall'elio della nebulosa di Wolf–Rayet alla nostra maestra delle Elementari;
 4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante[^variante] della Storia, che a sua volta genererà nuove esperienze e nuovi *Post-It*;
 4. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
-5. tutto ricomincia.
+5. tutto ricomincia daccapo.
 
 ####<a name="basso-accoppiamento">Basso accoppiamento</a> 
 Lo Spazionismo è la parte più pericolosa di tutta la mia metafisica.
@@ -684,9 +685,8 @@ Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *op
 Ciascuno di quei "commit" identificati da una stringa alfanumerica che si vedono nel codice qui sopra, è una "fotografia" del sistema in un determinato momento dello sviluppo.
 Se ci si accorge di aver fatto un errore, si può ritornare indietro, annullando le modifiche fatte e ripristinando la vecchia versione del sistema.
 <br >  
-Oltre a essere una versione informatica della Macchina del Tempo, Git permette di coordinare le modifiche fatte al codice da più utenti all'interno dello stesso gruppo di lavoro: ciascun collaboratore lavora su una copia locale dei file e poi trasmette le modifiche a un *repository* centrale dove tutte le modifiche sono integrate nella copia principale del progetto.
-<br >  
-Se qualcuno volesse contribuire a questo progetto, potrebbe ottenere una copia di tutto il codice e i testi di questo progetto eseguendo il comando:
+Oltre a essere una versione informatica della Macchina del Tempo, Git permette di coordinare le modifiche fatte al codice da più utenti all'interno dello stesso gruppo di lavoro: ciascun collaboratore lavora su una copia locale dei file e poi trasmette le modifiche a un *repository* centrale dove tutte le modifiche sono integrate nella copia principale del progetto.  
+Se un domani qualcuno volesse collaborare a C'hi++ potrebbe ottenere una copia di tutto il codice e i testi finora elaborati semplicemente eseguendo il comando:
 
 ```
 git clone git@bitbucket.org:canaro/chi-plus-plus.git
@@ -715,13 +715,14 @@ Il passaggio a Markdown non è stato un vezzo, ma un obbligo, perché solo in qu
 
 ### Portabilità 
 Il termine: *portabilità* indica la possibilità di eseguire uno stesso programma su computer con sistemi operativi di tipo differente. 
-Per essere più precisi, la portabilità è la possibilità di creare copie di uno stesso programma che possano essere eseguite su piattaforme hardware/software differenti.  
-Per poter essere eseguito su sistemi differenti, un software deve richiamare delle istruzioni che siano valide in tutti i sistemi hardware. Per esempio, l'istruzione:
+Per essere più precisi, la portabilità è la possibilità di creare copie di uno stesso programma che possano essere eseguite su piattaforme hardware/software differenti.
+Per poter essere eseguito su sistemi differenti, un software deve richiamare delle istruzioni che siano valide in tutti i sistemi hardware.   
+Per esempio, un'istruzione che chieda in qualche modo:
 
 ```
 questo testo fammelo in color rosso
 ```
-funziona su tutti i sistemi, perché il colore rosso è uno dei tre colori di base della codifica RGB ed è quindi un concetto "noto" a ogni compurer. Al contrario, l'istruzione:
+può funzionare su tutti i sistemi, perché il colore rosso è uno dei tre colori di base della codifica RGB ed è quindi un concetto "noto" a ogni compurer. Al contrario, l'istruzione:
 
 ```
 questo testo fammelo in color rosso pompeiano
@@ -818,9 +819,11 @@ Vista in quest'ottica, la "sovrapponibilità" del C'hi++ con le religioni ispira
 Aristotele aveva ragione.
 
 ## Release/0.5 - TODO
-Terminata la redazione di questo testo, riprenderò la stesura di *C'hi++* definendo la struttura dei capitoli relativi al linguaggio C++, così come li ho descritti <a href="#chi++">sopra</a>.
-Parallelamente, dovrò riprendere la catalogazione dei miei appunti, trascrivendoli nella mappa Vue del progetto per poi includerli nel testo del manuale. A questo proposito, sarebbe utile, anche se doloroso[^vue], rimpiazzare Vue con uno strumento di *mind-mapping* che produca documenti compatibili con Git o, quanto meno, riuscire a convertire i dati di Vue in un documento di testo semplice.
-Dovrò poi verificare l'ammissibilità scientifica dei precetti dello Spazionismo, modificandoli se non fossero corretti, per poi includerli nel capitolo finale del libro. Infine, dovrò trovare un editore. 
+Come tutti i progetti software degni di questo nome, anche C'hi++ ha una sua *roadmap* che definisce la successione dei passi da compere per il completamento del lavoro.  
+Terminata la redazione di questo testo, riprenderò la stesura di *C'hi++* definendo la struttura dei capitoli relativi al linguaggio C++, così come li ho descritti <a href="#chi++">sopra</a>.  
+Parallelamente, dovrò riprendere la catalogazione dei miei appunti, trascrivendoli nella mappa Vue del progetto per poi includerli nel testo del manuale. A questo proposito, sarebbe utile, anche se doloroso[^vue], rimpiazzare Vue con uno strumento di *mind-mapping* che produca documenti compatibili con Git o, quanto meno, riuscire a convertire i dati di Vue in un documento di testo semplice.  
+Dovrò poi verificare l'ammissibilità scientifica dei precetti dello Spazionismo, modificandoli se non fossero corretti, per poi includerli nel capitolo finale del libro.   
+Infine, cercherò di battere il record di Robert Pirsig, che ricevette 121 rifiuti prima che un editore accettasse di pubblicare il suo libro: *Lo Zen e l'Arte della Manutenzione della Motocicletta*. 
 <br />  
 Non so quale sarà il destino di *C'hi++*; non so dire nemmeno se questo Manifesto mi procurerà aiuto o sberleffi. 
 Un amico, a cui ne ho fatto leggere una prima bozza, sostiene che:
@@ -831,7 +834,8 @@ Un amico, a cui ne ho fatto leggere una prima bozza, sostiene che:
 <br />  
 Comunque, fino a che ne avrò la possibilità, io porterò avanti questo progetto.
 Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di un'unità la *major-version* del mio progettto e andrò avanti.
-Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita; mia o altrui che sia. Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
+Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita, mia o altrui che sia, senza accettazioni per fede, ma basandomi solo su considerazioni di ordine logico.
+Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
 Mi sembra un motivo più che sufficiente.
 
 
