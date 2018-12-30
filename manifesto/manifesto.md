@@ -506,12 +506,18 @@ Con il C'hi++ è la stessa cosa, solo che il Mondo lo crei davvero.
 </div>
 
 ### L'Annosa Dicotomia
-Nel racconto all'inizio del libro comparirà anche quello che poi sarà uno dei temi ricorrenti del C'hi++, ovvero l'annosa dicotomia fra ciò che desideriamo e ciò di cui realmente abbiamo bisogno:
+Nel racconto all'inizio del libro comparirà anche quello che poi sarà uno dei temi ricorrenti del C'hi++, ovvero l'Annosa Dicotomia fra ciò che desideriamo e ciò di cui realmente abbiamo bisogno:
 
 > Una volta di più, mi trovo a dover fronteggiare l’Annosa Dicotomia fra ciò che il cliente desidera e quello di cui realmente ha bisogno e, una volta di più, sarà ingrato compito dell’uomo informatico quello di venire apparentemente meno ai propri doveri al fine di produrre qualcosa di consono alle reali esigenze del committente.
 
-Si tratta di un fenomeno nefasto, simile alla *Maya* dell'Induismo, che ci impedisce di vedere con chiarezza ciò che è bene fare o perseguire.
-[differenza fra l'Arte e il Marketing]
+Si tratta di un fenomeno nefasto, simile alla *Maya* dell'Induismo, che ci impedisce di vedere con chiarezza ciò che è bene fare o perseguire.  
+Così come l'illusorietà del mondo sensibile è il frutto dell'azione dei tre  *guṇa*: Sattva, Rajas e Tamas, così l'Annosa Dicotomia nasce dallo scontro fra due forze contrapposte: l'Arte e il Marketing.
+L'Arte dà all'uomo ciò di cui ha bisogno e, come una buona madre, non soddisfa i suoi capricci, ma si cura del suo benessere anche se ciò può apparire crudele.
+Il Marketing, al contrario, dà all'uomo ciò che desidera e, bramosa di approvazione, soddisfa ogni suo capriccio, incurante degli effetti che questi avranno sulla sua vita[^decorazione].
+
+#### L'Ikebarba
+L'applicazione pratica di questi principii si ha nella disciplina artistica dell'*Ikebarba*, che, come accennato prima, definisce i criterii etici ed estetici per la disposizione dei panni sullo stendino.
+
 
 
 ### Struttura del testo
@@ -837,6 +843,8 @@ Mi sembra un motivo più che sufficiente.
 
 [^vasana]: Grazie a un "*imprintig* karmico" che io qui chiamo *Post-it* e che Yoga e Buddismo chiamano *Vāsanā*.  
 
+[^decorazione]: Nell'estetica del C'hi++ a queste due forze se ne aggiunge una terza, intermedia: la *Decorazione*. Sono opere di decorazione tutte quelle idee e qugli artefatti che soddisfano i sensi dell'uomo, ma che non hanno alcuna influenza, positiva o negativa che sia, sulla sua crescita spirituale.
+    
 [^bandinelli]: [aggiungere il riferimento a Bianchi-Bandinelli]
     
 [^causa]: E non: *per colpa*, come nella versione 0.1.1
