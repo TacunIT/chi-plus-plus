@@ -510,15 +510,29 @@ Nel racconto all'inizio del libro comparirà anche quello che poi sarà uno dei 
 
 > Una volta di più, mi trovo a dover fronteggiare l’Annosa Dicotomia fra ciò che il cliente desidera e quello di cui realmente ha bisogno e, una volta di più, sarà ingrato compito dell’uomo informatico quello di venire apparentemente meno ai propri doveri al fine di produrre qualcosa di consono alle reali esigenze del committente.
 
-Si tratta di un fenomeno nefasto, simile alla *Maya* dell'Induismo, che ci impedisce di vedere con chiarezza ciò che è bene fare o perseguire.  
-Così come l'illusorietà del mondo sensibile è il frutto dell'azione dei tre  *guṇa*: Sattva, Rajas e Tamas, così l'Annosa Dicotomia nasce dallo scontro fra due forze contrapposte: l'Arte e il Marketing.
-L'Arte dà all'uomo ciò di cui ha bisogno e, come una buona madre, non soddisfa i suoi capricci, ma si cura del suo benessere anche se ciò può apparire crudele.
-Il Marketing, al contrario, dà all'uomo ciò che desidera e, bramosa di approvazione, soddisfa ogni suo capriccio, incurante degli effetti che questi avranno sulla sua vita[^decorazione].
+L'Annosa Dicotomia è un fenomeno nefasto, simile alla *Maya* dell'Induismo, che ci impedisce di vedere con chiarezza ciò che è bene fare o perseguire.  
+Così come l'illusorietà del mondo sensibile è il frutto dell'azione dei tre  *guṇa*: Sattva, Rajas e Tamas, così l'Annosa Dicotomia nasce dallo scontro fra due forze contrapposte: *Arte* e *Marketing*.
+Arte dà all'uomo ciò di cui ha bisogno e, come una buona madre, non soddisfa i suoi capricci, ma si cura del suo benessere anche se ciò può apparire crudele.
+Marketing, al contrario, dà all'uomo ciò che desidera e, bramoso di approvazione, soddisfa ogni suo capriccio, incurante degli effetti che questi avranno sulla sua vita.
+<br />  
+Nell'estetica del C'hi++ a queste due forze se ne aggiunge una terza, intermedia: *Decorazione*. 
+Sono opere di Decorazione tutte quelle idee e qugli artefatti che soddisfano i sensi dell'uomo, ma che non hanno alcuna influenza diretta, positiva o negativa che sia, sulla sua crescita spirituale.
 
 #### L'Ikebarba
-L'applicazione pratica di questi principii si ha nella disciplina artistica dell'*Ikebarba*, che, come accennato prima, definisce i criterii etici ed estetici per la disposizione dei panni sullo stendino.
+Un'applicazione pratica di questi principii si ha nella disciplina artistica dell'*Ikebarba*, che, come accennato prima, definisce i criterii etici ed estetici per la disposizione dei panni sullo stendino.
+Il principio filosofico che sottende l'Ikebarba è che ogni nostra azione è importante e non esistono momenti di serie A, nei quali facciamo le cose che ci piacciono e momenti di serie B, nei quali facciamo ciò che è necessario fare.
+Anche la stenditura dei panni, se approcciata correttamente, può essere un passo verso il miglioramento di sé e del Mondo.  
+Il primo precetto dell'Ikebarba è una perifrasi della frase di Gesù sullo Shabbat:
 
+> *L'Ikebarba è fatta per l'uomo, non l'uomo per l'Ikebarba*  
 
+L'Ikebarba non deve essere un peso, per l'uomo, ma un obbligo giojoso.
+Un'Ikebarba ben fatta gli provvederà panni asciutti in minor tempo e renderà la vista dello stendino meno fastidiosa.
+Il secondo precetto dell'Ikebarba è:
+
+> L'Ikebarba comincia nel negozio
+
+Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente; è preferibile quindi non farsi sedurre dalle lusinghe del Marketing e acquistare abiti dalle tinte sobrie e possibilmente intonati gli uni agli altri, in modo da renderne più facile e più elegante la composizione sullo stendino[^no-mao].  
 
 ### Struttura del testo
 I primi tre capitoli inquadrano "storicamente" il contesto in cui si svolge l'azione, un possibile futuro in cui gli informatici sono stati trasformati in una casta sacerdotale:
@@ -831,6 +845,7 @@ Mi sembra un motivo più che sufficiente.
     americano.
 
 [^gnosi]: [aggiungere riferimento a *Cosmogonie Gnostiche*]
+
 [^poc]: *Proof Of Concept*: prototipo che serve a di/mostrare le
     funzionalità di un nuovo sistema o processo.
 
@@ -842,9 +857,9 @@ Mi sembra un motivo più che sufficiente.
 [^mumon]: [aggiungere il riferimento a La Porta Senza Porta]
 
 [^vasana]: Grazie a un "*imprintig* karmico" che io qui chiamo *Post-it* e che Yoga e Buddismo chiamano *Vāsanā*.  
-
-[^decorazione]: Nell'estetica del C'hi++ a queste due forze se ne aggiunge una terza, intermedia: la *Decorazione*. Sono opere di decorazione tutte quelle idee e qugli artefatti che soddisfano i sensi dell'uomo, ma che non hanno alcuna influenza, positiva o negativa che sia, sulla sua crescita spirituale.
     
+[^no-mao]: Un guardaroba di tipo militare o maoista, con indumenti identici e dello stesso colore è, però, un eccesso da rifuggire, perché rende monotona l'Ikebarba.
+
 [^bandinelli]: [aggiungere il riferimento a Bianchi-Bandinelli]
     
 [^causa]: E non: *per colpa*, come nella versione 0.1.1
