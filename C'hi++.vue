@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.3.0 concept-map (C&apos;hi++.vue) 2018-12-30 -->
+<!-- Tufts VUE 3.3.0 concept-map (C&apos;hi++.vue) 2019-01-08 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Sun Dec 30 20:01:33 CET 2018 by Carlo on platform Mac OS X 10.14.2 in JVM 1.8.0_25-b17 -->
+<!-- Do Not Remove: Saved date Tue Jan 08 14:43:45 CET 2019 by Carlo on platform Mac OS X 10.14.2 in JVM 1.8.0_25-b17 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="C'hi++.vue"
     created="1267825536130" x="0.0" y="0.0" width="7428.263"
     height="5043.796" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1546196493497" size="449634"
+    <resource referenceCreated="1546955025334" size="450127"
         spec="/Users/Carlo/Dropbox/Canaro/C'hi++/C'hi++.vue" type="1" xsi:type="URLResource">
         <title>C'hi++.vue</title>
         <property key="File" value="/Users/Carlo/Dropbox/Canaro/C'hi++/C'hi++.vue"/>
@@ -601,16 +601,16 @@
         <ID1 xsi:type="node">170</ID1>
         <ID2 xsi:type="node">520</ID2>
     </child>
-    <child ID="316" layerID="374" created="1295047930752" x="-2058.3396"
-        y="-708.77264" width="2530.1465" height="789.5039"
+    <child ID="316" layerID="374" created="1295047930752" x="-2058.4126"
+        y="-708.7405" width="2529.333" height="792.3961"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86e18ccbc0a8010d00397cea33896c30</URIString>
-        <point1 x="-2057.3396" y="-707.77264"/>
-        <point2 x="470.80685" y="79.73123"/>
+        <point1 x="-2057.4126" y="-707.7405"/>
+        <point2 x="469.92053" y="82.655624"/>
         <ID1 xsi:type="node">314</ID1>
         <ID2 xsi:type="node">158</ID2>
     </child>
@@ -2249,39 +2249,46 @@
         <ID2 xsi:type="node">155</ID2>
     </child>
     <child ID="158" label="Bene/male" layerID="7"
-        created="1293666085355" x="460.21024" y="69.452" width="112.5"
-        height="49.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
+        created="1293666085355" x="460.21024" y="69.452"
+        width="119.799995" height="57.799995" strokeWidth="2.0"
+        autoSized="true" xsi:type="node">
         <notes>SDFO, 555: Dio non conosce il male, perch&#xe9; non c'&#xe8; nessun male da conoscere; l'apparenza del male nasce solo dal fatto di considerare le varie parti dell'Universo come se fossero autosufficienti.</notes>
         <fillColor>#F4F5E9</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Dio"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="bont&#xe0;"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="bene"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="male"/>
+        </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaaac0a8010b00a5d7f29118c1c9</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="159" layerID="7" created="1293666108281" x="519.7388"
-        y="117.78613" width="37.00415" height="232.86743"
+    <child ID="159" layerID="7" created="1293666108281" x="523.7509"
+        y="126.55054" width="33.18994" height="224.10327"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaaac0a8010b00a5d7f240b2ab11</URIString>
-        <point1 x="556.2429" y="350.15356"/>
-        <point2 x="520.2388" y="118.28613"/>
+        <point1 x="556.44086" y="350.1538"/>
+        <point2 x="524.2509" y="127.05054"/>
         <ID1 xsi:type="node">155</ID1>
         <ID2 xsi:type="node">158</ID2>
     </child>
     <child ID="160" label="Interpretazione" layerID="7"
-        created="1293666115026" x="539.076" y="-113.467224"
-        width="192.50635" height="185.63312" strokeWidth="1.0"
+        created="1293666115026" x="545.5874" y="-113.25464"
+        width="186.49713" height="186.17468" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaaac0a8010b00a5d7f2891a4938</URIString>
-        <point1 x="539.576" y="71.66589"/>
-        <point2 x="731.08234" y="-112.967224"/>
+        <point1 x="546.08734" y="72.420044"/>
+        <point2 x="731.5845" y="-112.75464"/>
         <ID1 xsi:type="node">158</ID1>
         <ID2 xsi:type="node">147</ID2>
     </child>
@@ -2577,7 +2584,7 @@
         <ID2 xsi:type="node">326</ID2>
     </child>
     <child ID="337" label="Cosmogonie &#xa;gnostiche" layerID="7"
-        created="1295049319835" x="350.92453" y="-341.1873"
+        created="1295049319835" x="438.92453" y="-349.1873"
         width="157.4" height="48.5" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Questo Universo contempla la sofferenza perch&#xe9; non &#xe8; stato creato da Dio, ma dal Diavolo.&#xa0;%nl;L'Universo creato da Dio (se c'&#xe8;) &#xe8;/era privo di sofferenza: un Uno primigenio di pura energia; tutto &#xe8; andato bene fino a che qualcuno o qualcosa (magari la Discordia di Empedocle) ha causato la disgragazione di quest'Uno, causando quello che noi chiamiamo Big Bang.%nl;L'energia dell'Uno si &#xe8; diffusa allora per lo spazio, dando massa/esistenza agli spazioni e generando l'Universo cos&#xec; come noi lo conosciamo.%nl;Da quel momento in poi, la Gravit&#xe0; (come sostiene Poe) ha cercato di ricostituire l'Uno primigenio, mentre l'Elettricit&#xe0; ha fatto in modo di separarne le parti.%nl;</notes>
         <fillColor>#F4F5E9</fillColor>
@@ -2587,16 +2594,16 @@
         <URIString>http://vue.tufts.edu/rdf/resource/86f57775c0a8010d00397cea03cf64ef</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="338" layerID="7" created="1295049327254" x="420.0229"
-        y="-293.23682" width="8.514557" height="115.58447"
+    <child ID="338" layerID="7" created="1295049327254" x="432.14453"
+        y="-301.61395" width="72.24643" height="124.5896"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86f57775c0a8010d00397cea59398d37</URIString>
-        <point1 x="420.5229" y="-178.15234"/>
-        <point2 x="428.03745" y="-292.73682"/>
+        <point1 x="432.64453" y="-177.52435"/>
+        <point2 x="503.89096" y="-301.11395"/>
         <ID1 xsi:type="node">141</ID1>
         <ID2 xsi:type="node">337</ID2>
     </child>
@@ -5550,6 +5557,55 @@
         <ID1 xsi:type="node">697</ID1>
         <ID2 xsi:type="node">695</ID2>
     </child>
+    <child ID="748" label="Bont&#xe0; di Allah" layerID="7"
+        created="1546954671259" x="222.3313" y="-386.8562" width="157.4"
+        height="48.5" strokeWidth="2.0" autoSized="false" xsi:type="node">
+        <notes>In conclusione il Dio del Corano, per riassumere con concetti propri del gergo teologico islamico quanto fin qui accennato, compendia in s&#xe9; aspetti di jam&#x101;l (lett.: &#x201c;bellezza&#x201d;) ossia: bont&#xe0;, grazia, misericordia, clemenza, dolcezza, mitezza, perdono ecc., e aspetti di jal&#x101;l (lett.: &#x201c;gloria/ maest&#xe0;&#x201d;) ovvero: collera, giustizia, potenza numinosa, violenza, costrizione. &#xc8;, in termini a noi pi&#xf9; familiari, un Dio che assomma aspetti fascinosi e aspetti tremendi.%nl;%nl;Saccone, Carlo. Iblis, il Satana del Terzo Testamento. </notes>
+        <fillColor>#F4F5E9</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/2db46cadc0a82b3216b8d250202cc6d9</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="749" label="interpretazione" layerID="7"
+        created="1546954700895" x="313.98132" y="-339.274"
+        width="91.98425" height="162.21576" strokeWidth="1.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/2db46cadc0a82b3216b8d2506092f74b</URIString>
+        <point1 x="405.46558" y="-177.55823"/>
+        <point2 x="314.48132" y="-338.774"/>
+        <ID1 xsi:type="node">141</ID1>
+        <ID2 xsi:type="node">748</ID2>
+    </child>
+    <child ID="750"
+        label="Al-Ash&#x2018;ar&#x12b; e al-Jubb&#x101;&#x2019;&#x12b;:"
+        layerID="7" created="1546954941411" x="209.33124" y="-543.8562"
+        width="181.0" height="48.5" strokeWidth="2.0" autoSized="false" xsi:type="node">
+        <notes>%nl;Al-Ash&#x2018;ar&#x12b; cos&#xec; interrog&#xf2; il suo maestro al-Jubb&#x101;&#x2019;&#x12b;: &#x201c;Tre fratelli muoiono: uno nell&#x2019;obbedienza a Dio, il secondo nella disobbedienza, il terzo prima di aver raggiunto l&#x2019;uso della ragione. Che ne &#xe8; di loro?&#x201d;. Al-Jubb&#x101;&#x2019;&#x12b; rispose: &#x201c;Il primo &#xe8; ricompensato col paradiso, il secondo &#xe8; punito con l&#x2019;inferno, il terzo non &#xe8; n&#xe9; ricompensato n&#xe9; punito&#x201d;. &#x201c;Ma - dice al-Ash&#x2018;ar&#x12b; - se il terzo obbiettasse: &#x2018;O Signore, perch&#xe9; mi hai fatto morire bambino e non mi hai lasciato vivere affinch&#xe9; ti obbedissi ed entrassi in paradiso?&#x2019;, che cosa direbbe il Signore?&#x201d; &#x201c;Dir&#xe0; - replic&#xf2; al-Jubb&#x101;&#x2019;&#x12b; - so che se tu fossi cresciuto, avresti disobbedito e saresti andato all&#x2019;inferno, cos&#xec; &#xe8; stato meglio per te morire bambino&#x2019;.&#x201d; &#x201c;Ma - obietta al-Ash&#x2018;ar&#x12b; - a quel punto insorgerebbe il secondo gridando con tutto il fiato che ha nei polmoni: &#x2018;Signore, perch&#xe9; non mi hai fatto morire bambino? Cos&#xec; non sarei finito all&#x2019;inferno!&#x2019;.%nl;%nl;Saccone, Carlo. Iblis, il Satana del Terzo Testamento. Letture coraniche II (Bactriana. Collana di studi indo-mediterranei Vol. 1)</notes>
+        <fillColor>#F4F5E9</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/2db46caec0a82b3216b8d250c0369280</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="751" label="esempio&#xa;" layerID="7"
+        created="1546954984635" x="279.43127" y="-495.85938"
+        width="42.0" height="109.51172" strokeWidth="1.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/2db46caec0a82b3216b8d2508af03751</URIString>
+        <point1 x="300.846" y="-386.84766"/>
+        <point2 x="300.01657" y="-495.35938"/>
+        <ID1 xsi:type="node">748</ID1>
+        <ID2 xsi:type="node">750</ID2>
+    </child>
     <child ID="60" label="C'hi++" layerID="6" created="1293660267417"
         x="-3102.9172" y="621.9857" width="154.1156" height="56.931152"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
@@ -6809,7 +6865,8 @@
         <ID2 xsi:type="node">502</ID2>
     </child>
     <layer ID="374" label="Relazioni" created="1295991642614" x="0.0"
-        y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
+        y="0.0" width="1.4E-45" height="1.4E-45" hidden="true"
+        strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/bf23a3a8c0a8010b015e8a8fdc837bba</URIString>
     </layer>
     <layer ID="378" label="Arte" created="1295992283172" x="0.0" y="0.0"
@@ -6828,8 +6885,8 @@
         width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/3413335cc0a8010b00a5d7f256847768</URIString>
     </layer>
-    <userZoom>0.75</userZoom>
-    <userOrigin x="-3245.2266" y="-1272.7047"/>
+    <userZoom>1.0</userZoom>
+    <userOrigin x="-4288.9688" y="-1693.6062"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1267825535957"
