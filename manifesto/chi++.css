@@ -28,7 +28,6 @@ body {
 
 a {
     color: #060;
-    font-weight: bold;
 }
 
 a.absent {
@@ -161,6 +160,18 @@ SECTION.cover DIV.dati LABEL {
 
 SECTION.cover DIV.dati LABEL:after {
     content: ':';
+}
+
+/* Dedica */
+SECTION.dedica {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    padding-top: 30%;
+    padding-left: 40%;
+    text-align: right;
+    page-break-before: always;
+    page-break-after: always;
 }
 
 

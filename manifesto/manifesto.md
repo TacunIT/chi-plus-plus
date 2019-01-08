@@ -6,10 +6,14 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>1.0.0-rc.6</p>
-	<p><label>Data    </label>2 Gennaio 2019</p>
+	<p><label>Versione</label>1.0.0-rc.7</p>
+	<p><label>Data    </label>8 Gennaio 2019</p>
 </div>
 	![](../img/seal.png)
+</section>
+
+<section class="dedica">
+0x0D 0x0C 0x0B 0x0A
 </section>
 
 <section class="citazione">
@@ -44,7 +48,7 @@ Nulla vi assicura che sia la risposta giusta - nulla potrebbe farlo - ma almeno 
 Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti, al punto che molte persone pensano che si vivrebbe meglio in un Mondo senza religioni.
 È davvero così?
 
-###Un primo problema delle religioni
+### Un primo problema delle religioni
 
 La tendenza a produrre effetti opposti a quelli auspicati è un problema
 legato alla natura stessa delle religioni. Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di *assiomi* o: *dogmi*.
@@ -53,7 +57,7 @@ I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di ess
 <br />  
 La storia, anche recente, ci insegna che molti fedeli preferiscono abiurare i principii della loro Fede piuttosto che metterli in discussione; questo, però, è un difetto degli esseri umani, non delle religioni.
 
-###Un altro problema delle religioni
+### Un altro problema delle religioni
 
 Le religioni, per quanto ispirate, sono opera dell'uomo, non di Dio e, come tutte le opere dell'uomo, sono soggette a errori e incongruenze.
 Come esempio, immaginiamo che esista una religione chiamata: *Buonismo* i cui dogmi siano:
@@ -794,11 +798,31 @@ Aristotele aveva ragione.
 
 ## Release/0.5 - TODO
 Come tutti i progetti software degni di questo nome, anche C'hi++ ha una sua *roadmap* che definisce la successione dei passi da compere per il completamento del lavoro.  
-Terminata la redazione di questo testo, riprenderò la stesura di *C'hi++* definendo la struttura dei capitoli relativi al linguaggio C++, così come li ho descritti <a href="#chi++">sopra</a>.  
-Parallelamente, dovrò riprendere la catalogazione dei miei appunti, trascrivendoli nella mappa Vue del progetto per poi includerli nel testo del manuale. A questo proposito, sarebbe utile, anche se doloroso[^vue], rimpiazzare Vue con uno strumento di *mind-mapping* che produca documenti compatibili con Git o, quanto meno, riuscire a convertire i dati di Vue in un documento di testo semplice.  
+Terminata la redazione di questo testo, riprenderò la stesura di *C'hi++*, convertendo il testo attuale in formato Markdown e definendo la struttura dei capitoli relativi al linguaggio C++, così come li ho descritti <a href="#chi++">sopra</a>.  
+Parallelamente, dovrò riprendere la catalogazione dei miei appunti, trascrivendoli nella mappa Vue del progetto per poi includerli nel testo del manuale.   
 Dovrò poi verificare l'ammissibilità scientifica dei precetti dello Spazionismo, modificandoli se non fossero corretti, per poi includerli nel capitolo finale del libro.   
-Infine, cercherò di battere il record di Robert Pirsig, che ricevette 121 rifiuti prima che un editore accettasse di pubblicare il suo libro: *Lo Zen e l'Arte della Manutenzione della Motocicletta*. 
+Infine, cercherò di battere il record di Robert Pirsig, che ricevette 121 rifiuti prima che un editore accettasse di pubblicare il suo libro: *Lo Zen e l'Arte della Manutenzione della Motocicletta*.   
+Se mai riuscirò a fare tutto questo, sarò solo all'inizio.
+
+### Kernel e shell
+Il *sistema operativo* è quell'insieme di programmi che gestiscono il funzionamento dei computer, facendo da tramite fra l'hardware del sistema e le richieste dell'utente.  
+Il software dei sistemi operativi può essere suddiviso logicamente in due blocchi: il *kernel* e la *shell*.
+Il *kernel* è quella parte del sistema che “parla” con l'hardware, gestendo la memoria, gli accessi al disco rigido, le comunicazioni di rete e così via.
+La *shell* è invece quella parte del sistema che interagisce con l'utente, traducendo in lettere, immagini e suoni i codici numerici prodotti dal kernel[^shell].
 <br />  
+In quest'ottica, C'hi++ è un kernel, non un “sistema operativo” completo, perché è privo di una vera e propria interfaccia utente.
+Questa mancanza è un requisito di progetto, non un errore, ma lo rende poco adatto all'utilizzo di massa e dato che:
+
+> la maggior parte degli esseri umani alla ricerca del senso della vita ha la tendenza a divenire parte di un gruppo, anche se non ne condivide del tutto le convinzioni, dato che nel gruppo/tribu trova protezione e forza[^shenk]
+
+sarà necessario definire una o più “interfacce utente” che facilitino la fruibilità dei precetti del C'hi++ definendo delle forme rituali e di aggregazione.  
+Ho delle idee in proposito, ma è del tutto prematuro parlarne.
+<br />  
+Un ostacolo alla diffusione di massa che, al contrario, non penso sarà possibile rimuovere è che C'hi++, intenzionalmente, non dà delle risposte definitive, assolute, ma stimola a una ricerca continua.
+Per alcuni, questo può essere un lato positivo, ma si tratta di una minoranza; in questo momento, la maggior parte delle persone è alla ricerca di certezze, non di verità.  
+D'altro canto, il Buddismo Zen utilizza un approccio simile da più di mille anni e anche la religone ebraica, se dobbiamo credere al Katz[^katz], ha prodotto un gran numero di premii Nobel perché spinge i suoi fedeli a mettere in discussione le affermazioni dei testi sacri, rendendoli così più propensi a sviluppare idee originali. 
+
+## Conclusioni
 Non so quale sarà il destino di *C'hi++*; non so dire nemmeno se questo Manifesto mi procurerà aiuto o sberleffi. 
 Un amico, a cui ne ho fatto leggere una prima bozza, sostiene che:
 
@@ -808,7 +832,7 @@ Un amico, a cui ne ho fatto leggere una prima bozza, sostiene che:
 <br />  
 Comunque, fino a che ne avrò la possibilità, io porterò avanti questo progetto.
 Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di un'unità la *major-version* del mio progettto e andrò avanti.
-Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita, mia o altrui che sia, senza accettazioni per fede, ma basandomi solo su considerazioni di ordine logico.
+Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita, mia o altrui che sia, senza accettazioni per fede, ma basandomi solo su considerazioni di ordine logico.  
 Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
 Mi sembra un motivo più che sufficiente.
 
@@ -834,7 +858,7 @@ Mi sembra un motivo più che sufficiente.
 
 [^mumon]: [aggiungere il riferimento a La Porta Senza Porta]
 
-[^vasana]: Grazie a un «*imprintig* karmico» che io qui chiamo *Post-it* e che Yoga e Buddismo chiamano *Vāsanā*.  
+[^vasana]: Grazie a un “*imprintig* karmico” che io qui chiamo *Post-it* e che Yoga e Buddismo chiamano *Vāsanā*.  
     
 [^pentimento]: Attar, Farid al-din - Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
 
@@ -864,6 +888,8 @@ Mi sembra un motivo più che sufficiente.
 
 [^igm]: *Istituto Geografico Militare*.
 
-[^vue]: Sono affezionato a Vue perché la uso da molti anni e ho anche collaborato con i ragazzi della Tufts University per la versione in Italiano del programma, ma lo sviluppo è fermo al 2015 e temo che non riprenderà.
+[^shell]: È una descrizione molto semplicistica, ma sufficiente per quelli che sono gli scòpi di questo documento.
 
-[^latino]: La prova più evidente di ciò è che le frasi: *Mala tempora currunt* e: *O tempora, o mores!*, sono in Latino.
+[^shenk]: E.C. Shenk, citato da Frazer.
+
+[^katz]: Eran Katz - *Jerome diventa un genio* - Barbera Editore, 2006
