@@ -6,8 +6,8 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>1.0.0-rc.5</p>
-	<p><label>Data    </label>30 Dicembre 2018</p>
+	<p><label>Versione</label>1.0.0-rc.6</p>
+	<p><label>Data    </label>2 Gennaio 2019</p>
 </div>
 	![](../img/seal.png)
 </section>
@@ -48,13 +48,10 @@ Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: 
 
 La tendenza a produrre effetti opposti a quelli auspicati è un problema
 legato alla natura stessa delle religioni. Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di *assiomi* o: *dogmi*.
-I dogmi, in quanto tali, non devono essere dimostrati[^dogmi] e i seguaci della religione, i quali, non a caso, sono detti: "fedeli" o: "credenti", li devono accettare per buoni senza metterli in discussione.
-I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare; quindi ogni forma di dubbio o di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato a ogni costo.
+I dogmi, in quanto tali, non devono essere dimostrati[^dogmi] e i seguaci della religione, i quali, non a caso, sono detti: «fedeli» o: «credenti», li devono accettare per buoni senza metterli in discussione.
+I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di dubbio o di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato a ogni costo.
 <br />  
-La storia, anche recente, ci insegna che molti fedeli preferiscono
-abiurare i principii della loro Fede piuttosto che metterli in
-discussione; questo, però, è un problema degli esseri umani, non delle
-religioni.
+La storia, anche recente, ci insegna che molti fedeli preferiscono abiurare i principii della loro Fede piuttosto che metterli in discussione; questo, però, è un difetto degli esseri umani, non delle religioni.
 
 ###Un altro problema delle religioni
 
@@ -152,14 +149,14 @@ Si tratta però di una vittoria parziale, perché aumentando il numero dei prece
 ### Il Programmatore, vale 1 o 0?
 Dato che non è possibile rendere coerente il Buonismo modificando i suoi precetti, dobbiamo assumere che uno di essi sia errato ed eliminarlo.
 Eliminare il primo precetto (*Dio esiste*) non è possibile, perché gli altri due si riferirebbero a un'Entità che non è definita.
-Eliminare il terzo precetto (*Dio ha creato l'Universo*) equivale a dire: "A Shanghai esiste un uomo di nome Mario"; se Dio c'è ed è buono, ma se non ha alcuna relazione con l'Universo e la nostra esistenza, a noi, cosa importa?
+Eliminare il terzo precetto (*Dio ha creato l'Universo*) equivale a dire: «A Shanghai esiste un uomo di nome Mario»; se Dio c'è ed è buono, ma se non ha alcuna relazione con l'Universo e la nostra esistenza, a noi, cosa importa?
 Se però eliminiamo il secondo precetto, (*Dio ha solo proprietà positivie*)  tutto magicamente si aggiusta: Dio esiste, ha creato l'Universo e l'Uomo, ma non è possibile dire se sia buono o meno, perché è improprio classificare l'essenza del creatore con gli attributi del creato; sarebbe come se i *byte* di un computer si chiedessero se il Programmatore valga I o 0.
 <br>  
 Senza la premessa, conseguente al secondo precetto: *Se Dio è buono, giusto e misericordioso*, la famigerata domanda [D](#domanda-D) non è più contraddittoria: se qualcuno ce la facesse, adesso, potremmo rispondere:
 
 > Nell'Universo creato da Dio esistono stupratori, omicidi e malattie perché ciò fa parte del Suo disegno, che noi non siamo in grado di comprendere.
 
-Per quanto simile all'ipotetica: «risposta generica, che chiama in causa l'imponderabilità delle decisioni divine», data dal Buonista prima di mandarci al rogo, la nostra sarà una risposta coerente (oltre che umile), perché non presuppone alcuna qualità - positiva o negativa che sia - di Dio.  
+Per quanto simile all'ipotetica: «risposta generica, che chiama in causa l'imponderabilità delle decisioni divine», data dal Buonista prima di mandarci al rogo, la nostra sarà una risposta coerente (oltre che umile), perché non presuppone alcuna qualità - positiva o negativa che sia - di Dio.
 Soprattutto, noi non affermiamo di sapere cosa sia buono/giusto e cosa
 non lo sia, perché in effetti non lo possiamo sapere:
 
@@ -171,7 +168,7 @@ non lo sia, perché in effetti non lo possiamo sapere:
 	Il doganiere si chiama Alois Hitler. Dio, è stato buono o cattivo?
 </ul>
 
-Dire che Dio esiste e che ha creato l'Universo è ragionevole: l'Universo esiste e quindi esiste necessariamente qualcosa, - se non proprio un signore con la barba bianca, almeno un fenomeno o una funzione - che possiamo considerare come suo Principio Creatore. 
+Dire che Dio esiste e che ha creato l'Universo è ragionevole: l'Universo esiste e quindi esiste necessariamente qualcosa, se non proprio un signore con la barba bianca, almeno un fenomeno o una funzione che possiamo considerare come suo Principio Creatore. 
 Al contrario, dire che questo principio creatore sia «buono» è ipotetico; riflette una nostra speranza, che non dev'essere necessariamente vera.
 <br>  
 È sbagliato proiettare le proprie speranze o le proprie convinzioni nei dogmi di una religione.
@@ -181,11 +178,11 @@ Al contrario, dire che questo principio creatore sia «buono» è ipotetico; rif
 -   dire che non è buono;
 -   dire che non ha creato l'Universo.
 
-Delle tre, la prima è la meno "conveniente", eppure la maggior parte dei non-credenti preferisce negare l'esistenza di Dio piuttosto che mettere in discussione la Sua bontà.
+Delle tre, la prima è la meno *conveniente*, eppure la maggior parte dei non-credenti preferisce negare l'esistenza di Dio piuttosto che mettere in discussione la Sua presunta bontà.
 Il perché, chiedetelo a loro.
 
 ### Buonismo 2.0
-<a name="buonismo"></a>Rimuovendo il secondo precetto, siamo riusciti a rendere coerente la dottrina Buonista, ma allo stesso tempo abbiamo rimosso la ragion d'essere del suo nome; se Dio non è buono, che senso ha, chiamarsi: *Buonisti*?  
+<a name="buonismo"></a>Rimuovendo il secondo precetto, siamo riusciti a rendere coerente la dottrina Buonista, ma allo stesso tempo abbiamo rimosso la ragion d'essere del suo nome; se Dio non è buono, che senso ha, chiamarsi: *Buonisti*?
 Non è solo una questione di carta intestata: dalla presunta bontà di Dio, la dottrina buonista deriva l'obbligo per l'Uomo di essere altrettanto buono; mancando il precetto decadrebbe anche l'obbligo e si aprirebbero le porte all'anarchia.
 <br>  
 Stando così le cose, abbiamo due possibili scelte: o agiamo da logici e privilegiamo la coerenza del nostro modello, anche a costo di giustificare azioni esecrabili da parte di chi non si sente più in dovere di essere buono, o agiamo da pastori e privilegiamo la sicurezza del nostro gregge, anche a costo di sentirci dire che le nostre convinzioni sono contraddittorie.  
@@ -208,8 +205,8 @@ L'esempio riportato sopra ha evidenziato dei problemi che possiamo considerare c
 
 Oltre ai problemi tipici delle religioni, abbiamo rilevato alcuni problemi tipici degli esseri umani:
 
--   la tendenza a difendere i proprî principî anche con mezzi che
-    contrastano con i principî stessi;
+-   la tendenza a difendere i propri principii anche con mezzi che
+    contrastano con i principii stessi;
 -   la tendenza a influenzare la propria obiettività con le proprie
     speranze.
 
@@ -232,8 +229,8 @@ Per correggere o quanto meno mitigare questi problemi, una religione dovrebbe qu
 Pur se complesso, tutto questo è possibile.
 
 ## C'hi++
-Da circa dieci anni sto sviluppando una metafisica che rispetta le condizioni viste sopra e che, soprattutto, è del tutto indipendente dall'esistenza di una o più Divinità.
-L'ho chiamata *C'hi++*, un gioco di parole fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato *C++*.
+Da circa dieci anni sto sviluppando una metafisica che rispetta le condizioni viste sopra e che, soprattutto, è del tutto indipendente dall'esistenza di una o più Divinità.  
+L'ho chiamata *C'hi++*, un gioco di parole fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato: *C++*.
 Non è un accostamento casuale: la mia intenzione è quella di gestire l'evoluzione della mia teoria così come si gestisce il software; in particolare, il software cosiddetto: *open-source.*
 
 ### Software open-source
@@ -256,18 +253,10 @@ I musicisti, i teatranti e, in parte, i cineasti sono un po' più fortunati, per
 Al contrario, la (buona) produzione di software ha il vantaggio di essere in continua evoluzione.
 Un software può essere *stabile*, ovvero non avere difetti noti, ma non è mai finito, completo, *perfetto*; sia perché l'utilizzo potrebbe rivelare dei difetti sfuggiti alla fase di test, sia perché delle variazioni del contesto di utilizzo potrebbero richiedere delle modifiche al sistema.
 Il (buon) software viene quindi costantemente aggiornato e le diverse versioni di uno stesso prodotto sono numerate in maniera progressiva con dei codici composti da tre numeri separati da punti (p.es. *1.4.3*) che indicano la versione *major*, la versione *minor e* la *patch*.  
-La versione *major* viene incrementata ogni volta che si apportano delle
-drastiche modifiche al software, rendendolo incompatibile con le
-versioni precedenti
-La versione *minor* viene incrementata quando si modifica il codice in
-maniera minore, aggiungendo o modificando delle funzionalità in maniera
-compatibile con le versioni precedenti.
-Il numero di *patch* è incrementato ogni volta che si apportano delle
-modifiche o delle correzioni anche minime al sistema.
-La *major version zero* (0.y.z) è destinata allo sviluppo iniziale,
-quando il software non è ancora stabile e tutto può cambiare in ogni
-momento.
-Il versionamento semantico ha anche altre regole, ma per quelli che sono i nostri scopi possiamo fermarci qui.
+La versione *major* viene incrementata ogni volta che si apportano delle drastiche modifiche al software, rendendolo incompatibile con le versioni precedenti.
+La versione *minor* viene incrementata quando si modifica il codice in maniera minore, aggiungendo o modificando delle funzionalità in maniera compatibile con le versioni precedenti.
+Il numero di *patch* è incrementato ogni volta che si apportano delle modifiche o delle correzioni anche minime al sistema.
+La *major version zero* (0.y.z) è destinata allo sviluppo iniziale, quando il software non è ancora stabile e tutto può cambiare in ogni momento. Il versionamento semantico ha anche altre regole, ma per quelli che sono i nostri scopi possiamo fermarci qui.
 
 ### Versionamento delle religioni monoteistiche
 
@@ -307,31 +296,14 @@ Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero
 0.3.2 | 2018 |  Allineamento         | Allineamento delle versioni git con quelle del Manifesto.
 0.4.0 | oggi |  Manifesto Markdown | Conversione del Manifesto in formato Markdown
 
-Già da queste poche righe è possibile vedere alcuni benefici
-dell'approccio *open-source* alla speculazione filosofica.
+Già da queste poche righe è possibile vedere alcuni benefici dell'approccio *open-source* alla speculazione filosofica.
 <br>  
-Nella versione 0.1.0 del C'hi++, la figura che definisco: *Immancabile
-Testa di Pera* era un elemento negativo, assimilabile al Diavolo o alla
-Discordia di Empedocle. 
-Successivamente, però, ho capito che questa
-visione delle cose era la proiezione di un mio desiderio/speranza e sono
-passato a un modello meno giudicante, in cui i due Enti che generano
-l'Universo non sono in contrapposizione, ma cooperano in maniera simile
-allo Yin e allo Yang del Tao o a Prakṛti e Puruṣa dell'Induismo.
+Nella versione 0.1.0 del C'hi++, la figura che definisco: *Immancabile Testa di Pera* era un elemento negativo, assimilabile al Diavolo o alla *Discordia* di Empedocle. 
+Successivamente, però, ho capito che questa visione delle cose era la proiezione di un mio desiderio/speranza e sono passato a un modello meno giudicante, in cui i due Enti che generano l'Universo non sono in contrapposizione, ma cooperano in maniera simile allo Yin e allo Yang del Tao o a Prakṛti e Puruṣa dell'Induismo.
 
-Questa modifica, per quanto radicale, non ha avuto nessuna ripercussione
-negativa sul resto del modello teorico, *dichiaratamente* fallace in
-quanto ancora in fase evolutiva (*major version* 0); anzi: lo ha reso
-più robusto perché ha premesso di trovare delle affinità con altre
-religioni.
+Questa modifica, per quanto radicale, non ha avuto nessuna ripercussione negativa sul resto del modello teorico, *dichiaratamente* fallace in quanto ancora in fase evolutiva (*major version* 0); anzi: lo ha reso più robusto perché ha premesso di trovare delle affinità con altre religioni.
 <br />  
-Se avessimo applicato la stessa modifica al Cattolicesimo,
-"riabilitando" la figura del Diavolo, le cose non sarebbero andate
-altrettanto bene perché, se il Diavolo non fosse cattivo, non solo
-dovremmo mettere in discussione la veridicità di moltissimi passi della
-Bibbia - che non può essere messa in discussione perché è la Parola di
-Dio -, ma priveremmo la Chiesa della sua funzione primaria che è quella
-di salvare le anime, appunto, dal Maligno.
+Se avessimo applicato la stessa modifica al Cattolicesimo, riabilitando la figura del Diavolo, le cose non sarebbero andate altrettanto bene perché, se il Diavolo non fosse cattivo, non solo dovremmo mettere in discussione la veridicità di moltissimi passi della Bibbia - che non può essere messa in discussione perché è la Parola di Dio -, ma priveremmo la Chiesa della sua funzione primaria che è quella di salvare le anime, appunto, dal Maligno.
 
 ## Release/0.1: *Sostiene Aristotele*
 A Giugno del 2007 scrissi un documento dal titolo: *Sostiene Aristotele*
@@ -454,13 +426,16 @@ Pur se in embrione, gli elementi principali del C'hi++ ci sono tutti: la rarefaz
 ### Il senso della vita è il debug
 Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*[^beta-tester] di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali, come il *Koan* *Mu* o il motivo per cui Nanchuan taglia in due il gatto[^mumon] ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.
 <br />    
-Infatti, se paragoniamo l'esistenza a una sessione di test software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori[^vasana] perché venga corretto nelle successive versioni del programma.  
+Infatti, se paragoniamo l'esistenza a una sessione di test software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori[^vasana] perché venga corretto nelle successive versioni del programma.
 Visto che, nel nostro caso, beta-tester, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/beta-tester, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.
-<br />   
-In quest'ottica, il perdono per il peccatore/*debugger* pentito non è un'anomalia, ma è una diretta conseguenza della sua presa di coscienza, perché se l'errore viene corretto, il dolore che ha causato in questa esistenza non si ripeterà nelle esistenze successive e l'Universo sarà un po' più Paradiso e un po' meno Inferno.
+In quest'ottica, la frase:
+>cento Mondi di peccato sono dissipati dalla luce di un solo pentimento[^pentimento]
+
+non è un'anomalia, ma è una diretta conseguenza della sua presa di coscienza, perché se l'errore viene corretto, il dolore che ha causato in questa esistenza non si ripeterà nelle esistenze successive e l'Universo sarà un po' più Paradiso e un po' meno Inferno.
+<br />  
 Per lo stesso principio visto sopra, se qualcuno fa qualcosa che vi arreca giovamento, è importante che glielo facciate sapere, in modo che possa farlo di nuovo nelle prossime esistenze.
 Questo è facile, oltre che educato, se la persona che ci ha favorito si è comportata bene nei nostri confronti, ma richiede tanta onestà intellettuale e un bel po' di fede se la persona che ci ha favorito si è comportata male.
-<br />   
+<br />  
 ##Release/0.2: *C'hi++*<a name="chi++"></a>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
 programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.
@@ -517,7 +492,7 @@ Arte dà all'uomo ciò di cui ha bisogno e, come una buona madre, non soddisfa i
 Marketing, al contrario, dà all'uomo ciò che desidera e, bramoso di approvazione, soddisfa ogni suo capriccio, incurante degli effetti che questi avranno sulla sua vita.
 <br />  
 Nell'estetica del C'hi++ a queste due forze se ne aggiunge una terza, intermedia: *Decorazione*. 
-Sono opere di Decorazione tutte quelle idee e qugli artefatti che soddisfano i sensi dell'uomo, ma che non hanno alcuna influenza diretta, positiva o negativa che sia, sulla sua crescita spirituale.
+Sono opere di Decorazione tutte quelle idee e quegli artefatti che soddisfano i sensi dell'uomo, ma che non hanno alcuna influenza diretta, positiva o negativa che sia, sulla sua crescita spirituale.
 
 #### L'Ikebarba
 Un'applicazione pratica di questi principii si ha nella disciplina artistica dell'*Ikebarba*, che, come accennato prima, definisce i criterii etici ed estetici per la disposizione dei panni sullo stendino.
@@ -536,7 +511,7 @@ Il secondo precetto dell'Ikebarba è:
 Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente; è preferibile quindi non farsi sedurre dalle lusinghe del Marketing e acquistare abiti dalle tinte sobrie e possibilmente intonati gli uni agli altri, in modo da renderne più facile e più elegante la composizione sullo stendino[^no-mao].  
 
 ### Struttura del testo
-I primi tre capitoli inquadrano "storicamente" il contesto in cui si svolge l'azione, un possibile futuro in cui gli informatici sono stati trasformati in una casta sacerdotale:
+I primi tre capitoli inquadrano storicamente il contesto in cui si svolge l'azione, un possibile futuro in cui gli informatici sono stati trasformati in una casta sacerdotale:
 
 > la società dipendeva ormai totalmente dai computer e i computer dipendevano dagli informatici; se un giorno avessero deciso di coalizzarsi e di scioperare, avrebbero messo il Paese, se non il Mondo intero, in ginocchio.  
 > Le psicopatologie tipiche degli informatici, la loro incapacità di gestire, se non addirittura di concepire una vita sociale, rendevano questa ipotesi molto poco probabile, ma era comunque un rischio troppo grosso per essere ignorato.   
@@ -574,14 +549,14 @@ Lao-Tze, *Tao-Tê-Ching*:
 #### Valori booleani
 È una piccola parte del linguaggio, ma una miniera di possibili parallelismi specie sulla relatività dei concetti di *vero* e *falso*:
 
->  il concetto stesso di Vertià è inconoscibile perché, per essere definito, deve prima essere valutato e non è possibile valutarlo se non si sa cosa sia "vero".
+>  il concetto stesso di Vertià è inconoscibile perché, per essere definito, deve prima essere valutato e non è possibile valutarlo se non si sa cosa sia «vero».
 <br />  
-> Russell sostiene che la condizione di "vero" o di "falso" è uno stato dell'organismo, determinato da condizioni esterne all'organismo.
-Questo è vero anche per i computer: "vero" e "falso" sono stati possibili per un'istruzione e dipendono per lo più da cause esterne all'istruzione stessa.  
-La cosa interessante, in questo caso, è che "vero" e "falso" sono anche delle convenzioni che esulano del tutto dal contesto specifico del sistema.  
-Per Access, "falso" è -1; per le prime versioni di MySQL è 'f'; per Postgres o Oracle, è 0.  
-Il computer, però, non ha IN SE' il concetto di "vero" o di "falso", ma solo l'associazione del valore booleano "false" a una determinata sequenza di bit.
-Il concetto di "vero" e di "falso", quindi, è un valore simbolico che NOI inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è propio del nostro mondo.  
+> Russell sostiene che la condizione di «vero» o di «falso» è uno stato dell'organismo, determinato da condizioni esterne all'organismo.
+Questo è vero anche per i computer: «vero» e «falso» sono stati possibili per un'istruzione e dipendono per lo più da cause esterne all'istruzione stessa.  
+La cosa interessante, in questo caso, è che «vero» e «falso» sono anche delle convenzioni che esulano del tutto dal contesto specifico del sistema.  
+Per Access, «falso» è -1; per le prime versioni di MySQL è 'f'; per Postgres o Oracle, è 0.  
+Il computer, però, non ha IN SE' il concetto di «vero» o di «falso», ma solo l'associazione del valore booleano *false* a una determinata sequenza di bit.
+Il concetto di «vero» e di «falso», quindi, è un valore simbolico che NOI inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è propio del nostro mondo.  
 Da questo punto di vista, potremmo essere d'accordo con William James, quando dice che:
 >>    Un'idea è "vera" fintanto che credere in essa è utile per le nostre vite.  
 
@@ -591,7 +566,7 @@ Il Maestro dirà:
 > Se vuoi capire le classi, devi leggere Aristotele.
 
 ed è vero: per parlare delle classi del C++ si può attingere a piene mani da Aristotele. 
-Per esempio, il concetto di "essenza" può essere utilizzato per spiegare le *funzioni virtuali pure*; i concetti di "anima" e "corpo" possono illustrare la differenza fra *metodi* e *dati membro* di una classe; i concetti di "universale" e "sostanza" spiegano la differenza fra *dichiarazione* e *istanza* di una classe:
+Per esempio, il concetto di «essenza» può essere utilizzato per spiegare le *funzioni virtuali pure*; i concetti di «anima» e «corpo» possono illustrare la differenza fra *metodi* e *dati membro* di una classe; i concetti di «universale» e «sostanza» spiegano la differenza fra *dichiarazione* e *istanza* di una classe:
 
 > La differenza fra universale e sostanza, in Aristotele è la stessa che c'è fra classe e istanza in C++, ed è corretto dire che un termine universale non possa essere il nome di una sostanza, ma solo il nome della sua classe, perché l'istruzione:
 
@@ -658,7 +633,7 @@ Sfortunatamente, quando ho pensato a tutto ciò, il nome Spazionismo era già st
 
 ## Release/0.3: Git
 A Dicembre del 2016 divenne chiaro che anche se avessi potuto dedicare a questo progetto tutto il mio tempo (e non potevo), non sarei mai riuscito a portarlo a termine da solo.
-Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *open-source*, coinvlgendo nello "sviluppo" anche altre persone, mi sembrò la cosa migliore da fare, così cominciai a scrivere questo Manifesto per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
+Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *open-source*, coinvlgendo nello «sviluppo» anche altre persone, mi sembrò la cosa migliore da fare, così cominciai a scrivere questo Manifesto per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
 
 ### Git
 *Git* è un sistema con cui si gestiscono le diverse versioni di un software, ma può essere utilizzato per tenere traccia delle modifiche di qualsiasi documento elettronico. Leggendo il registro degli eventi di Git possiamo vedere quali sono state le modifiche apportate al sistema:
@@ -682,7 +657,7 @@ Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *op
 | | |     Merge branch 'release/0.4.3'
 | | | 
 ```
-Ciascuno di quei "commit" identificati da una stringa alfanumerica che si vedono nel codice qui sopra, è una "fotografia" del sistema in un determinato momento dello sviluppo.
+Ciascuno di quei «commit» identificati da una stringa alfanumerica che si vedono nel codice qui sopra, è una sorta di fotografia del sistema in un determinato momento dello sviluppo.
 Se ci si accorge di aver fatto un errore, si può ritornare indietro, annullando le modifiche fatte e ripristinando la vecchia versione del sistema.
 <br >  
 Oltre a essere una versione informatica della Macchina del Tempo, Git permette di coordinare le modifiche fatte al codice da più utenti all'interno dello stesso gruppo di lavoro: ciascun collaboratore lavora su una copia locale dei file e poi trasmette le modifiche a un *repository* centrale dove tutte le modifiche sono integrate nella copia principale del progetto.  
@@ -722,7 +697,7 @@ Per esempio, un'istruzione che chieda in qualche modo:
 ```
 questo testo fammelo in color rosso
 ```
-può funzionare su tutti i sistemi, perché il colore rosso è uno dei tre colori di base della codifica RGB ed è quindi un concetto "noto" a ogni compurer. Al contrario, l'istruzione:
+può funzionare su tutti i sistemi, perché il colore rosso è uno dei tre colori di base della codifica RGB ed è quindi un concetto «noto» a ogni compurer. Al contrario, l'istruzione:
 
 ```
 questo testo fammelo in color rosso pompeiano
@@ -738,7 +713,7 @@ Se fra duecento anni un archeologo ritrovasse i quaderni con i miei appunti e ri
 <br/>  
 In compenso, molti precetti del C'hi++ sono compatibili precetti o idee appartenenti ad altre mistiche o filosofie.
 In questi giorni sto leggendo la *Bhagavad-Gita*[^gita].
-Alcuni passi mi hanno ricordato le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire "bene":
+Alcuni passi mi hanno ricordato le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire «bene»:
 
 > Tu hai diritto all'azione, non ai suoi frutti; non sia mai perciò il
 > frutto dell'azione a spingerti ad agire, e nemmeno devi essere
@@ -800,8 +775,7 @@ in:
 <div class="einstein">
 <p>m = E/c<sup>2</sup></p>
 </div>
-In termini spazionistici, questo equivale a dire che l'Universo (tutta la massa) è Dio (tutta l'energia) diviso la velocità della luce al quadrato:
-una affermazione che trovo affascinante perché, per la teoria spazionista, ciò che divide Dio creando l'Universo è un'entità che si può chiamare o Diavolo[^diavolo] o, anche, Lucifero[^lucifero]; in sostanza: *colui che divide* o *colui che porta la luce*.
+In termini spazionistici, questo equivale a dire che l'Universo (tutta la massa) è Dio (tutta l'energia) diviso la velocità della luce al quadrato: una affermazione che trovo divertente perché, per la teoria spazionista, ciò che divide Dio creando l'Universo è un'entità che si può chiamare o Diavolo[^diavolo] o, anche, Lucifero[^lucifero]; in sostanza: *colui che divide* o *colui che porta la luce*.
 
 ### Istituto Geografico Mistico
 È interessante vedere come un modello teorico, basato su presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.  
@@ -815,7 +789,7 @@ Chi conosce la zona può orientarsi con l'immagine da satellite, godendo così d
 
 Si tratta in entrambi i casi di rappresentazioni incomplete, perché prive di una delle dimensioni del modello a cui si riferiscono, ma se dobbiamo utilizzarle per ritrovare la strada di casa in mezzo alla vegetazione questo è un bene, perché ci permette di avere una visione sintetica di qualcosa che sarebbe impossibile descrivere dettagliatamente.
 <br />  
-Vista in quest'ottica, la "sovrapponibilità" del C'hi++ con le religioni ispirate non sembra più strana, ma assolutamente normale.
+Vista in quest'ottica, la «sovrapponibilità» del C'hi++ con le religioni ispirate non sembra più strana, ma assolutamente normale.
 Aristotele aveva ragione.
 
 ## Release/0.5 - TODO
@@ -860,8 +834,10 @@ Mi sembra un motivo più che sufficiente.
 
 [^mumon]: [aggiungere il riferimento a La Porta Senza Porta]
 
-[^vasana]: Grazie a un "*imprintig* karmico" che io qui chiamo *Post-it* e che Yoga e Buddismo chiamano *Vāsanā*.  
+[^vasana]: Grazie a un «*imprintig* karmico» che io qui chiamo *Post-it* e che Yoga e Buddismo chiamano *Vāsanā*.  
     
+[^pentimento]: Attar, Farid al-din - Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
+
 [^no-mao]: Un guardaroba di tipo militare o maoista, con indumenti identici e dello stesso colore è, però, un eccesso da rifuggire, perché rende monotona l'Ikebarba.
 
 [^bandinelli]: [aggiungere il riferimento a Bianchi-Bandinelli]
@@ -878,7 +854,7 @@ Mi sembra un motivo più che sufficiente.
 
 [^gita]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni. 
  
-[^mantiq]: Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
+[^mantiq]: Attar, Farid al-din - Il verbo degli uccelli - cit.
 
 [^rovelli]: Autore, per altro, di un libro proprio su Anassimandro.
 

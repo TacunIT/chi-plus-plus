@@ -1,14 +1,14 @@
 <!-- Tufts VUE 3.3.0 concept-map (C&apos;hi++.vue) 2018-12-30 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Sun Dec 30 17:31:34 CET 2018 by Carlo on platform Mac OS X 10.14.2 in JVM 1.8.0_25-b17 -->
+<!-- Do Not Remove: Saved date Sun Dec 30 20:01:33 CET 2018 by Carlo on platform Mac OS X 10.14.2 in JVM 1.8.0_25-b17 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="C'hi++.vue"
     created="1267825536130" x="0.0" y="0.0" width="7428.263"
     height="5043.796" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1546187494252" size="450114"
+    <resource referenceCreated="1546196493497" size="449634"
         spec="/Users/Carlo/Dropbox/Canaro/C'hi++/C'hi++.vue" type="1" xsi:type="URLResource">
         <title>C'hi++.vue</title>
         <property key="File" value="/Users/Carlo/Dropbox/Canaro/C'hi++/C'hi++.vue"/>
@@ -6532,7 +6532,7 @@
         created="1297978609208" x="-3830.429" y="1180.5162"
         width="134.0" height="57.000004" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
-        <notes>Arte della disposizione dei panni sullo stendino.%nl;</notes>
+        <notes>&#xc8; l'Arte della disposizione dei panni sullo stendino.%nl;%nl;Il principio filosofico che sottende l'Ikebarba &#xe8; che tutto &#xe8; importante e non esistono momenti di serie A, nei quali facciamo le cose che ci piacciono, e momenti di serie B, nei quali facciamo ci&#xf2; che &#xe8; necessario fare.%nl;Anche il momento della stenditura dei panni, se approcciato correttamente, pu&#xf2; essere un passo verso il miglioramento di s&#xe9; e del Mondo.%nl;%nl;Questo per&#xf2; non deve essere espresso in forma diretta.%nl;(v. nota narrativa)</notes>
         <fillColor>#C6E8FF</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
