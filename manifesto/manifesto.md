@@ -890,6 +890,6 @@ Mi sembra un motivo più che sufficiente.
 
 [^shell]: È una descrizione molto semplicistica, ma sufficiente per quelli che sono gli scòpi di questo documento.
 
-[^shenk]: E.C. Shenk, citato da Frazer.
+[^shenk]: E.C. Schenck, citato da Frazer.
 
 [^katz]: Eran Katz - *Jerome diventa un genio* - Barbera Editore, 2006
