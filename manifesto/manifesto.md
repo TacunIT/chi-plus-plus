@@ -7,7 +7,7 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.5.0</p>
+	<p><label>Versione</label>0.5.1</p>
 	<p><label>Data    </label>13 Gennaio 2019</p>
 </div>
 	![](../img/seal.png)
@@ -28,41 +28,37 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 
 ## Executive summary
 Se continuerete nella lettura di questo Manifesto (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
-Si chiama *C'hi++*, ed è una metafisica priva, o quasi, di elementi metafisici; un Credo per i “tossici della Verità” che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche.  
-Premetto che non ho titoli per scrivere di filosofia e religione (sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer), quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando alcuni difetti delle religioni canoniche e di chi ne fa uso; successivamente, presenterò la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i successivi passi dello sviluppo del sistema.  
+Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; un Credo per i “tossici della Verità” che non riescono ad accettare per fede le affermazioni[^angeli] o le contraddizioni delle religioni canoniche.  
+Premetto che non ho titoli per scrivere di filosofia e religione (sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer), quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando alcuni difetti delle religioni canoniche e dei loro “utenti”; successivamente, presenterò la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.  
 Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologie proprii dell'informatica e ne ho fornito una breve descrizione per coloro che non  abbiano familiarità con le attività di creazione del software. I tecnici mi perdonino le semplificazioni.
 
 ## Requisiti di sistema
 La religione dovrebbe aiutare l'Uomo a vivere meglio.
-Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i
-momenti di dolore e definire una scala di valori che ci permetta di
-prendere delle decisioni in quei casi in cui il raziocinio o il semplice
-buon senso non possono esserci d'aiuto.  
-Per fare un esempio: se vi ponessero queste tre domande, cosa
-rispondereste?
+Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i momenti di dolore e definire una scala di valori che ci permetta di prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso non possono esserci d'aiuto.
+Per fare un esempio: se vi ponessero queste tre domande, cosa rispondereste?
 <ol class="domande">
-<li >Una ragazza è rimasta incinta a séguito di una violenza: può decidere se abortire?
-<li><a name="domanda-B"></a> Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?
+<li >Una ragazza è rimasta incinta a séguito di una violenza: può decidere di abortire?</li>
+<li><a name="domanda-B"></a> Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?</li>
 <li>Un uomo è gravemente malato e vive grazie a delle macchine: può
-    decidere di spegnerle o no?
+    decidere di spegnerle o no?</li>
 </ol>
+
 Come vedremo fra poco, la religione può aiutarvi a trovare una risposta
 in questi casi. 
 Nulla vi assicura che sia la risposta giusta - nulla potrebbe farlo - ma almeno è una risposta.  
-Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti, al punto che molte persone pensano che si vivrebbe meglio in un Mondo senza religioni.  
-Ciò dipende da principalmente da due fattori: la natura umana e alcune caratteristiche intrinseche delle religioni tradizionali che le rendono vulnerabili a incongruenze e incomprensioni.  
+Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti.
+Ciò dipende da principalmente da due fattori: la natura umana e alcune caratteristiche intrinseche delle religioni tradizionali che le rendono vulnerabili a incongruenze e incomprensioni.
 Per il primo problema non c'è molto che si possa fare, ma per il secondo esistono degli accorgimenti che possono arginarne le conseguenze.
 
 ## Situazione corrente
 La tendenza a produrre effetti opposti a quelli auspicati è un problema
-legato alla natura stessa delle religioni. Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di *assiomi* o: *dogmi*.
+legato alla natura stessa delle religioni. Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di *assiomi* o: *dogmi*, non dimostra.
 I dogmi, in quanto tali, non devono essere dimostrati[^dogmi] e i seguaci della religione, i quali, non a caso, sono detti: «fedeli» o: «credenti», li devono accettare per buoni senza metterli in discussione.
-I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di dubbio o di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato a ogni costo.
-<br />  
+I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di dubbio o di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato a ogni costo.  
 La storia, anche recente, ci insegna che molti fedeli preferiscono abiurare i principii della loro Fede piuttosto che metterli in discussione; questo, però, è un difetto degli esseri umani, non delle religioni.
 
 ### Caso d'uso: il Buonismo
-Le religioni, per quanto ispirate, sono opera dell'uomo, non di Dio e, come tutte le opere dell'uomo, sono soggette a errori e incongruenze.  
+Le religioni, per quanto ispirate, sono opera dell'uomo, non di Dio e, come tutte le opere dell'uomo, sono inevitabilmente soggette a errori e incongruenze.
 Come esempio, immaginiamo che esista una religione chiamata: *Buonismo* i cui dogmi siano:
 
 <ol class="dogmi">
@@ -89,8 +85,7 @@ esempio), ma nessuno potrebbe criticare il buonista, che decide in maniera coere
 </ol>
 
 il povero Buonista non saprebbe cosa rispondere, perché per farlo dovrebbe sconfessare almeno uno degli assiomi su cui basa la sua visione dell'esistenza.
-Dovrà quindi rifugiarsi in una risposta generica, chiamando in causa l'imponderabilità delle decisioni divine, oppure condannarvi al rogo come eretico.
-<br />  
+Dovrà quindi rifugiarsi in una risposta generica, chiamando in causa l'imponderabilità delle decisioni divine, oppure condannarvi al rogo come eretico.  
 Con buona pace di John Lennon, le cose non andrebbero meglio in un Mondo senza religioni: se le stesse domande le faceste a un giudice, vi risponderebbe che sì, la ragazza può abortire, ma né il condannato né il malato possono essere uccisi, perché la Legge lo vieta. Se però gli domandaste:
 
 <ol class="domande" start="5">
@@ -842,6 +837,8 @@ Mi sembra un motivo più che sufficiente.
 
 		
 <h2 class="note">Note</h2>
+
+[^angeli]: p.es. “Gli angeli hanno meno idee e usano meno mezzi degli uomini” - Meister Eckhart citato da Coomaraswamy
 
 [^dogmi]: Principalmente perché non è possibile farlo.
 
