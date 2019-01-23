@@ -36,10 +36,14 @@ Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologi
 Se mi guardo indietro, per il mezzo secolo su cui ho visibilità diretta, vedo una lunga serie di fallimenti ideologici.  
 Il Sessantotto ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società, senza darci nulla in cambio, tranne la minigonna.
 La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre l'“edonismo reaganiano” e la “reaganomics“ sono crollati alla fine degli anni '80 insieme al muro di Berlino.
-Le speranze degli anni '90 si sono schiantatate con l'American Airlines 11 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformato, nel tempo, in un sistema di controllo e di dis-informazione di massa.
-Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni da *smart-phone* e *social-network*.
+Le speranze degli anni '90 si sono schiantate con l'American Airlines 11 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformato, nel tempo, in un sistema di controllo e di dis-informazione di massa.
+Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni da *smart-phone* e *social-network*.  
+L'Uomo del terzo millennio, non potendo diventare né capitalista (c'è crisi), né comunista (Stalin e Mao hanno ucciso più persone di Hitler), né cattolico (i preti sono tutti pedofili), né ebreo (guarda gli Israeliani cosa fanno ai Palestinesi), né Musulmano (gli islamici vogliono ucciderci tutti), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali, delle *gonadi* senza finestre[^gonadi] che hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono.  
+[?]
+La mancanza di stimoli esterni ha prodotto un ristagno culturale, un'economia curtense delle idee nella quale letteratura, cinema, televisione e Internet riciclano ciascuna le idee delle altre, in un banchetto coprofago di concetti e storie già visti.
+*Sequel*, *prequel*, *spin-off* e *biopic* vogliono dire tutti una cosa sola: *Abbiamo finito le idee originali*.
 
-
+<br />  
 La religione dovrebbe aiutare l'Uomo a vivere meglio.
 Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i momenti di dolore e definire una scala di valori che ci permetta di prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso non possono esserci d'aiuto.
 Per fare un esempio: se vi ponessero queste tre domande, cosa rispondereste?
@@ -844,7 +848,9 @@ Mi sembra un motivo più che sufficiente.
 		
 <h2 class="note">Note</h2>
 
-[^angeli]: p.es. “Gli angeli hanno meno idee e usano meno mezzi degli uomini” - Meister Eckhart citato da Coomaraswamy
+[^angeli]: p.es. “Gli angeli hanno meno idee e usano meno mezzi degli uomini” - Meister Eckhart citato da Coomaraswamy.
+
+[^gonadi]: il gioco di parole è intenzionale.
 
 [^dogmi]: Principalmente perché non è possibile farlo.
 
