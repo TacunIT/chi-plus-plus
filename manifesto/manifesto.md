@@ -28,7 +28,7 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 
 ## Executive summary
 Se continuerete nella lettura di questo Manifesto (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
-Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; un Credo per i “tossici della Verità” che non riescono ad accettare per fede le affermazioni[^angeli] o le contraddizioni delle religioni canoniche.  
+Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; un Credo per i “tossici della Verità” che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche.  
 Premetto che non ho titoli per scrivere di filosofia e religione (sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer), quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando alcuni difetti delle religioni canoniche e dei loro “utenti”; successivamente, presenterò la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.  
 Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologie proprii dell'informatica e ne ho fornito una breve descrizione per coloro che non  abbiano familiarità con le attività di creazione del software. I tecnici mi perdonino le semplificazioni.
 
@@ -38,10 +38,13 @@ Il Sessantotto ha spazzato via delle parti sicuramente rivedibili, ma fondamenta
 La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre l'“edonismo reaganiano” e la “reaganomics“ sono crollati alla fine degli anni '80 insieme al muro di Berlino.
 Le speranze degli anni '90 si sono schiantate con l'American Airlines 11 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformato, nel tempo, in un sistema di controllo e di dis-informazione di massa.
 Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni da *smart-phone* e *social-network*.  
-L'Uomo del terzo millennio, non potendo diventare né capitalista (c'è crisi), né comunista (Stalin e Mao hanno ucciso più persone di Hitler), né cattolico (i preti sono tutti pedofili), né ebreo (guarda gli Israeliani cosa fanno ai Palestinesi), né Musulmano (gli islamici vogliono ucciderci tutti), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali, delle *gonadi* senza finestre[^gonadi] che hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono.  
-[?]
-La mancanza di stimoli esterni ha prodotto un ristagno culturale, un'economia curtense delle idee nella quale letteratura, cinema, televisione e Internet riciclano ciascuna le idee delle altre, in un banchetto coprofago di concetti e storie già visti.
-*Sequel*, *prequel*, *spin-off* e *biopic* vogliono dire tutti una cosa sola: *Abbiamo finito le idee originali*.
+In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (c'è crisi), né comunista (Stalin e Mao hanno ucciso più persone di Hitler), né cattolico (i preti sono tutti pedofili), né ebreo (guarda gli Israeliani cosa fanno ai Palestinesi), né Musulmano (gli islamici sono degli esaltati che vogliono ucciderci tutti), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali, delle *gonadi* senza finestre che hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con tendenze dittatoriali.  
+C'è modo di invertire questa tendenza o dobbiamo rassegnarci al declino? No.   
+No, non credo sia possibile, almeno nel breve periodo e no, non intendo arrendermi senza avere almeno tentato, ma come?  
+La cultura non può venirci in aiuto perché la mancanza di stimoli esterni ha prodotto un'economia curtense delle idee nella quale letteratura, cinema, televisione e Internet riciclano ciascuna le idee delle altre, in un banchetto coprofago di concetti e storie già visti.
+*Sequel*, *prequel*, *spin-off* e *biopic* vogliono dire tutti una cosa sola: *Abbiamo finito le idee originali*[^idee].
+L'arte potrebbe aiutarci, ma sfortunatamente non ce n'è più e quelle forme di appagamento sensoriale che da lungo tempo ormai vengono spacciate per arte, essendo espressione e quindi esaltazione di un singolo sarebero addirittura controproducenti.  
+La scienza in passato ha fatto molto per migliorare la qualità della nostra vita, ma in questo momento, specie nei settori più all'avanguardia, come la bio-ingegneria o l'inelligenza artificiale, produce innovazione più velocemente di quanto la Società riesca a metabolizzarla e quindi, almeno per il momento, fa più parte del problema che della soluzione.
 
 <br />  
 La religione dovrebbe aiutare l'Uomo a vivere meglio.
@@ -848,9 +851,7 @@ Mi sembra un motivo più che sufficiente.
 		
 <h2 class="note">Note</h2>
 
-[^angeli]: p.es. “Gli angeli hanno meno idee e usano meno mezzi degli uomini” - Meister Eckhart citato da Coomaraswamy.
-
-[^gonadi]: il gioco di parole è intenzionale.
+[^idee]: Più precisamente, vogliono dire: *Le idee originali ci sono, ma farci un film è troppo rischioso, meglio usarle per le serie-TV, che garantiscono un maggior ritorno degli investimenti*.
 
 [^dogmi]: Principalmente perché non è possibile farlo.
 
