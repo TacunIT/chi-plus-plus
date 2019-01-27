@@ -1,4 +1,3 @@
-<!--
 <link rel="stylesheet" type="text/css" href="chi++.css" />
 <section class="pagina cover">
 <header>
@@ -7,7 +6,7 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.5.1</p>
+	<p><label>Versione</label>0.5.0</p>
 	<p><label>Data    </label>13 Gennaio 2019</p>
 </div>
 	![](../img/seal.png)
@@ -16,7 +15,7 @@
 <section class="dedica">
 0x0D 0x0C 0x0B 0x0A
 </section>
--->
+
 <section class="citazione">
 Finis totius et partis est, removere viventes in hac vita de statu miserie et perducere ad statum felicitatis.<br/>
 <span>Dante Alighieri - </span>Epistola XIII a Cangrande della Scala
