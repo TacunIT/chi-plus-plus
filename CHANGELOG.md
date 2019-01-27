@@ -1,3 +1,17 @@
+## 0.5.0 (January 28, 2019)
+  - Accorciata chiusura
+  - Aggiunta citazione da Boll all'inizio
+  - Aggiunta citazione di Rovelli
+  - Aggiunta nota su Ikebarba a mappa
+  - Aggiunta nota su portabilità scientifica dei precetti
+  - Aggiunta nota sulle qualità di Allah a mappa Vue
+  - Aggiunte note su Decorazione a mappa Vue
+  - Aggiunto paragrafo su kernel e shell
+  - Aggiunto paragrafo sull'utilità del ringraziare
+  - Completata prima versione del capitolo: Analisi del sistema attualmente in esercizio
+  - Completato paragrafo su Dicotomia e Ikebarba
+  - Creata versione Markdown di: Sostiene Aristotele
+
 ## 0.4.7 (December 22, 2018)
   - Modifiche minori al Manifesto. Reso pubblico il repository su Bitbucket.
   - Aggiunta citazione di Rovelli
