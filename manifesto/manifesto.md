@@ -1,4 +1,4 @@
-
+<!--
 <link rel="stylesheet" type="text/css" href="chi++.css" />
 <section class="pagina cover">
 <header>
@@ -7,7 +7,7 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.5.0</p>
+	<p><label>Versione</label>0.5.1</p>
 	<p><label>Data    </label>13 Gennaio 2019</p>
 </div>
 	![](../img/seal.png)
@@ -16,7 +16,7 @@
 <section class="dedica">
 0x0D 0x0C 0x0B 0x0A
 </section>
-
+-->
 <section class="citazione">
 Finis totius et partis est, removere viventes in hac vita de statu miserie et perducere ad statum felicitatis.<br/>
 <span>Dante Alighieri - </span>Epistola XIII a Cangrande della Scala
@@ -28,41 +28,54 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 
 ## Executive summary
 Se continuerete nella lettura di questo Manifesto (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
-Si chiama *C'hi++*, ed è una metafisica priva, o quasi, di elementi metafisici; un Credo per i “tossici della Verità” che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche.  
-Premetto che non ho titoli per scrivere di filosofia e religione (sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer), quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando alcuni difetti delle religioni canoniche e di chi ne fa uso; successivamente, presenterò la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i successivi passi dello sviluppo del sistema.  
-Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologie proprii dell'informatica e ne ho fornito una breve descrizione per coloro che non  abbiano familiarità con le attività di creazione del software. I tecnici mi perdonino le semplificazioni.
+Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; un Credo per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.  
+Premetto che non ho titoli per scrivere di filosofia e religione (sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer), quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando alcuni difetti delle religioni canoniche e dei loro “utenti”; successivamente, presenterò la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.  
+Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologie proprii dell'informatica e ne ho fornito una breve descrizione per coloro che non  abbiano familiarità con le attività di creazione del software; i tecnici mi perdonino le semplificazioni.
+Ho dovuto anche, per brevità, fare delle affermazioni senza comprovarle; i logici mi perdonino l'apodissi. 
 
-## Requisiti di sistema
+## Analisi del sistema attualmente in esercizio
+Se mi guardo indietro, per il mezzo secolo su cui ho visibilità diretta, vedo una lunga serie di fallimenti ideologici.  
+Il Sessantotto ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società, senza darci nulla in cambio, tranne la minigonna.
+La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre l'“edonismo reaganiano” e la “reaganomics“ sono crollati alla fine degli anni '80 insieme al muro di Berlino.
+Le speranze degli anni '90 si sono schiantate l'11 Settembre 2001 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformato, nel tempo, in un sistema di controllo e di dis-informazione di massa.
+Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni da *smart-phone* e *social-network*.  
+In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (c'è crisi), né comunista (Stalin e Mao hanno ucciso più persone di Hitler), né cattolico (i preti sono tutti pedofili), né ebreo (guarda gli Israeliani cosa fanno ai Palestinesi), né Musulmano (gli islamici sono degli esaltati che vogliono ucciderci tutti), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali, delle *gonadi* senza finestre che non leggono, ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.  
+C'è modo di invertire questa tendenza o dobbiamo rassegnarci al declino? No.    
+*No*, non credo che qualcosa cambierà, almeno nel breve periodo, a meno che qualche evento esterno non costringa la nostra specie a modificare il suo comportamento[^eventi]; e *No*, non intendo arrendermi senza avere almeno tentato, perché queste sono le persone che determinano la qualità del nostro presente con il loro voto e con cui dovremo affrontare dei problemi da cui dipenderà il nostro futuro, come la sovrappopolazione, la scarsezza di risorse e l'accumulo di plastica negli oceani.  
+È indubbio che bisogna fare qualcosa, ma come?  
+La (buona) politica sarebbe la soluzione ideale, se i (buoni) politici avessero il potere di prendere delle decisioni impopolari, cosa che non è: gli elettori sono dei bambini obesi che, dovendo scegliere fra un dietologo e un gelataio, non faranno mai la scelta corretta per la loro salute.  
+La cultura non può venirci in aiuto perché la mancanza di stimoli esterni ha prodotto un'economia curtense delle idee nella quale letteratura, cinema, televisione e Internet riciclano ciascuna le idee delle altre, in un banchetto coprofago di concetti e storie già visti.  
+L'arte potrebbe aiutarci, ma sfortunatamente non ce n'è più e quelle forme di appagamento sensoriale che da lungo tempo ormai ci vengono spacciate per arte, essendo espressione e quindi esaltazione di un singolo sarebbero addirittura controproducenti.  
+La scienza, che in passato ha fatto molto per migliorare la qualità della nostra vita, in questo momento, specie in alcuni settori all'avanguardia come la bio-ingegneria o l'intelligenza artificiale, produce innovazione con più rapidità di quanto la Società riesca a metabolizzarla e, almeno per ora, fa più parte del problema che della soluzione.  
+Scartati politica, cultura, arte e scienza, non di rimane che la religione.
+Per quelli che sono i nostri scopi, ovvero convincere la gente a non pensare in termini individuali, ma di gruppo, la religione è uno strumento perfetto: è gratuita, è adatta a tutte le età e non richiede una specifica preparazione o attitudine; di contro, la religione ha due grossi difetti: il primo è che ampie fasce della popolazone hanno un'istintiva diffidenza nei suoi confronti perché le attribuiscono colpe che in realtà andrebero imputate al clero e ai fedeli; il secondo difetto è che le ampie fasce di cui sopra hanno le loro buone ragioni di diffidare, perché la cattiva interpretazione o applicazione dei principii delle religioni ha di solito effetti devastanti.  
+Possiamo attenuare il primo problema parlando di *metafisica*, in vece che di *religione* ; ma per risolvere il secondo, dobbiamo capire quali siano le cause dell'instabilità delle religioni e cercare di attenuarle.
+
+##Bug noti delle religioni
 La religione dovrebbe aiutare l'Uomo a vivere meglio.
-Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i
-momenti di dolore e definire una scala di valori che ci permetta di
-prendere delle decisioni in quei casi in cui il raziocinio o il semplice
-buon senso non possono esserci d'aiuto.  
-Per fare un esempio: se vi ponessero queste tre domande, cosa
-rispondereste?
+Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i momenti di dolore e definire una scala di valori che ci permetta di prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso non possono esserci d'aiuto.
+Per fare un esempio: se vi ponessero queste tre domande, cosa rispondereste?
 <ol class="domande">
-<li >Una ragazza è rimasta incinta a séguito di una violenza: può decidere se abortire?
-<li><a name="domanda-B"></a> Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?
+<li >Una ragazza è rimasta incinta a séguito di una violenza: può decidere di abortire?</li>
+<li><a name="domanda-B"></a> Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?</li>
 <li>Un uomo è gravemente malato e vive grazie a delle macchine: può
-    decidere di spegnerle o no?
+    decidere di spegnerle o no?</li>
 </ol>
+
 Come vedremo fra poco, la religione può aiutarvi a trovare una risposta
 in questi casi. 
 Nulla vi assicura che sia la risposta giusta - nulla potrebbe farlo - ma almeno è una risposta.  
-Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti, al punto che molte persone pensano che si vivrebbe meglio in un Mondo senza religioni.  
-Ciò dipende da principalmente da due fattori: la natura umana e alcune caratteristiche intrinseche delle religioni tradizionali che le rendono vulnerabili a incongruenze e incomprensioni.  
+Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti.
+Ciò dipende da principalmente da due fattori: la natura umana e alcune caratteristiche intrinseche delle religioni tradizionali che le rendono vulnerabili a incongruenze e incomprensioni.
 Per il primo problema non c'è molto che si possa fare, ma per il secondo esistono degli accorgimenti che possono arginarne le conseguenze.
 
-## Situazione corrente
 La tendenza a produrre effetti opposti a quelli auspicati è un problema
-legato alla natura stessa delle religioni. Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di *assiomi* o: *dogmi*.
-I dogmi, in quanto tali, non devono essere dimostrati[^dogmi] e i seguaci della religione, i quali, non a caso, sono detti: «fedeli» o: «credenti», li devono accettare per buoni senza metterli in discussione.
-I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di dubbio o di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato a ogni costo.
-<br />  
+legato alla natura stessa delle religioni. Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di *assiomi* o *dogmi* non dimostrabili, che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.  
+I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di dubbio o di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato a ogni costo.  
 La storia, anche recente, ci insegna che molti fedeli preferiscono abiurare i principii della loro Fede piuttosto che metterli in discussione; questo, però, è un difetto degli esseri umani, non delle religioni.
 
 ### Caso d'uso: il Buonismo
-Le religioni, per quanto ispirate, sono opera dell'uomo, non di Dio e, come tutte le opere dell'uomo, sono soggette a errori e incongruenze.  
+Le religioni, per quanto ispirate, sono opera dell'uomo, non di Dio e, come tutte le opere dell'uomo, sono inevitabilmente soggette a errori e incongruenze.
 Come esempio, immaginiamo che esista una religione chiamata: *Buonismo* i cui dogmi siano:
 
 <ol class="dogmi">
@@ -89,8 +102,7 @@ esempio), ma nessuno potrebbe criticare il buonista, che decide in maniera coere
 </ol>
 
 il povero Buonista non saprebbe cosa rispondere, perché per farlo dovrebbe sconfessare almeno uno degli assiomi su cui basa la sua visione dell'esistenza.
-Dovrà quindi rifugiarsi in una risposta generica, chiamando in causa l'imponderabilità delle decisioni divine, oppure condannarvi al rogo come eretico.
-<br />  
+Dovrà quindi rifugiarsi in una risposta generica, chiamando in causa l'imponderabilità delle decisioni divine, oppure condannarvi al rogo come eretico.  
 Con buona pace di John Lennon, le cose non andrebbero meglio in un Mondo senza religioni: se le stesse domande le faceste a un giudice, vi risponderebbe che sì, la ragazza può abortire, ma né il condannato né il malato possono essere uccisi, perché la Legge lo vieta. Se però gli domandaste:
 
 <ol class="domande" start="5">
@@ -115,9 +127,8 @@ Abbiamo visto che i tre assiomi del Buonismo:
 
 pur nella loro semplicità, diventano incoerenti se li si confronta con la natura percepibile dell'Universo e della vita.
 Ciò vuol dire che il modello logico/esistenziale del Buonismo, così com'è, non funziona; o meglio: che funziona solo in una percentuale limitata di casi.
-Un buonista non può ammetterlo, perché diventerebbe un eretico, ma noi sì e possiamo anche cercare di capire cos'è che non va in questo schema per provare a migliorarlo in modo che funzioni nel maggior numero possibile di casi.
-Per prima cosa, proviamo a negare uno per volta i tre assiomi e vediamo
-se le cose migliorano:
+Un Buonista non può ammetterlo, perché diventerebbe un eretico, ma noi sì e possiamo anche cercare di capire cos'è che non va in questo schema per provare a migliorarlo in modo che funzioni nel maggior numero possibile di casi.  
+Non sapendo quale dei tre precetti sia quello sbagliato, proviamo a negarli uno per volta e vediamo cosa succede:
 
 #### Prima ipotesi: *Dio non esiste*
 Negare il primo assioma equivale a eliminare del tutto la dottrina Buonista: se Dio non esiste, non può essere buono e non può aver creato l'Universo. 
@@ -156,14 +167,14 @@ Si tratta però di una vittoria parziale, perché aumentando il numero dei prece
 ### Il Programmatore, vale 1 o 0?
 Dato che non è possibile rendere coerente il Buonismo modificando i suoi precetti, dobbiamo assumere che uno di essi sia errato ed eliminarlo.
 Eliminare il primo precetto (*Dio esiste*) non è possibile, perché gli altri due si riferirebbero a un'Entità che non è definita.
-Eliminare il terzo precetto (*Dio ha creato l'Universo*) equivale a dire: «A Shanghai esiste un uomo di nome Mario»; se Dio c'è ed è buono, ma se non ha alcuna relazione con l'Universo e la nostra esistenza, a noi, cosa importa?
+Eliminare il terzo precetto (*Dio ha creato l'Universo*) equivale a dire: “A Shanghai esiste un uomo di nome Mario”; se Dio c'è ed è buono, ma se non ha alcuna relazione con l'Universo e la nostra esistenza, a noi, cosa importa?
 Se però eliminiamo il secondo precetto, (*Dio ha solo proprietà positivie*)  tutto magicamente si aggiusta: Dio esiste, ha creato l'Universo e l'Uomo, ma non è possibile dire se sia buono o meno, perché è improprio classificare l'essenza del creatore con gli attributi del creato; sarebbe come se i *byte* di un computer si chiedessero se il Programmatore valga I o 0.
 <br>  
 Senza la premessa, conseguente al secondo precetto: *Se Dio è buono, giusto e misericordioso*, la famigerata domanda [D](#domanda-D) non è più contraddittoria: se qualcuno ce la facesse, adesso, potremmo rispondere:
 
 > Nell'Universo creato da Dio esistono stupratori, omicidi e malattie perché ciò fa parte del Suo disegno, che noi non siamo in grado di comprendere.
 
-Per quanto simile all'ipotetica: «risposta generica, che chiama in causa l'imponderabilità delle decisioni divine», data dal Buonista prima di mandarci al rogo, la nostra sarà una risposta coerente (oltre che umile), perché non presuppone alcuna qualità - positiva o negativa che sia - di Dio.
+Per quanto simile all'ipotetica: “risposta generica, che chiama in causa l'imponderabilità delle decisioni divine”, data dal Buonista prima di mandarci al rogo, la nostra sarà una risposta coerente (oltre che umile), perché non presuppone alcuna qualità - positiva o negativa che sia - di Dio.
 Soprattutto, noi non affermiamo di sapere cosa sia buono/giusto e cosa
 non lo sia, perché in effetti non lo possiamo sapere:
 
@@ -176,7 +187,7 @@ non lo sia, perché in effetti non lo possiamo sapere:
 </ul>
 
 Dire che Dio esiste e che ha creato l'Universo è ragionevole: l'Universo esiste e quindi esiste necessariamente qualcosa, se non proprio un signore con la barba bianca, almeno un fenomeno o una funzione che possiamo considerare come suo Principio Creatore. 
-Al contrario, dire che questo principio creatore sia «buono» è ipotetico; riflette una nostra speranza, che non dev'essere necessariamente vera.
+Al contrario, dire che questo principio creatore sia “buono” è ipotetico; riflette una nostra speranza, che non dev'essere necessariamente vera.
 <br>  
 È sbagliato proiettare le proprie speranze o le proprie convinzioni nei dogmi di una religione.
 È sbagliato, ma frequentissimo, anche fra i non credenti. Come abbiamo visto, per spiegare l'incongruenza fra l'idea di un Dio buono e la non-bontà dell'Universo da Lui creato, abbiamo tre possibilità differenti:
@@ -235,7 +246,7 @@ Per correggere o quanto meno mitigare questi problemi, una religione dovrebbe qu
 
 Pur se complesso, tutto questo è possibile.
 
-## C'hi++
+## Soluzione proposta
 Da circa dieci anni sto sviluppando una metafisica che rispetta le condizioni viste sopra e che, soprattutto, è del tutto indipendente dall'esistenza di una o più Divinità.  
 L'ho chiamata *C'hi++*, un gioco di parole fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato: *C++*.
 Non è un accostamento casuale: la mia intenzione è quella di gestire l'evoluzione della mia teoria così come si gestisce il software; in particolare, il software cosiddetto: *open-source.*
@@ -436,13 +447,14 @@ Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa
 Infatti, se paragoniamo l'esistenza a una sessione di test software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori[^vasana] perché venga corretto nelle successive versioni del programma.
 Visto che, nel nostro caso, beta-tester, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/beta-tester, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.
 In quest'ottica, la frase:
->cento Mondi di peccato sono dissipati dalla luce di un solo pentimento[^pentimento]
 
-non è un'anomalia, ma è una diretta conseguenza della sua presa di coscienza, perché se l'errore viene corretto, il dolore che ha causato in questa esistenza non si ripeterà nelle esistenze successive e l'Universo sarà un po' più Paradiso e un po' meno Inferno.
-<br />  
+>cento Mondi di peccato sono dissipati dalla luce di un solo pentimento[^pentimento] 
+
+non è un'anomalia, ma è una diretta conseguenza della sua presa di coscienza, perché se l'errore viene corretto, il dolore che ha causato in questa esistenza non si ripeterà nelle esistenze successive e l'Universo sarà un po' più Paradiso e un po' meno Inferno.  
+
 Per lo stesso principio visto sopra, se qualcuno fa qualcosa che vi arreca giovamento, è importante che glielo facciate sapere, in modo che possa farlo di nuovo nelle prossime esistenze.
-Questo è facile, oltre che educato, se la persona che ci ha favorito si è comportata bene nei nostri confronti, ma richiede tanta onestà intellettuale e un bel po' di fede se la persona che ci ha favorito si è comportata male.
-<br />  
+Questo è facile, oltre che educato, se la persona che ci ha favorito si è comportata bene nei nostri confronti, ma richiede tanta onestà intellettuale e un bel po' di fede se la persona che ci ha favorito si è comportata male.  
+
 ##Release/0.2: *C'hi++*<a name="chi++"></a>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
 programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.
@@ -556,14 +568,14 @@ Lao-Tze, *Tao-Tê-Ching*:
 #### Valori booleani
 È una piccola parte del linguaggio, ma una miniera di possibili parallelismi specie sulla relatività dei concetti di *vero* e *falso*:
 
->  il concetto stesso di Vertià è inconoscibile perché, per essere definito, deve prima essere valutato e non è possibile valutarlo se non si sa cosa sia «vero».
+>  il concetto stesso di Vertià è inconoscibile perché, per essere definito, deve prima essere valutato e non è possibile valutarlo se non si sa cosa sia “vero”.
 <br />  
-> Russell sostiene che la condizione di «vero» o di «falso» è uno stato dell'organismo, determinato da condizioni esterne all'organismo.
-Questo è vero anche per i computer: «vero» e «falso» sono stati possibili per un'istruzione e dipendono per lo più da cause esterne all'istruzione stessa.  
-La cosa interessante, in questo caso, è che «vero» e «falso» sono anche delle convenzioni che esulano del tutto dal contesto specifico del sistema.  
-Per Access, «falso» è -1; per le prime versioni di MySQL è 'f'; per Postgres o Oracle, è 0.  
-Il computer, però, non ha IN SE' il concetto di «vero» o di «falso», ma solo l'associazione del valore booleano *false* a una determinata sequenza di bit.
-Il concetto di «vero» e di «falso», quindi, è un valore simbolico che NOI inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è propio del nostro mondo.  
+> Russell sostiene che la condizione di “vero” o di “falso” è uno stato dell'organismo, determinato da condizioni esterne all'organismo.
+Questo è vero anche per i computer: “vero” e “falso” sono stati possibili per un'istruzione e dipendono per lo più da cause esterne all'istruzione stessa.  
+La cosa interessante, in questo caso, è che “vero” e “falso” sono anche delle convenzioni che esulano del tutto dal contesto specifico del sistema.  
+Per Access, “falso” è -1; per le prime versioni di MySQL è 'f'; per Postgres o Oracle, è 0.  
+Il computer, però, non ha IN SE' il concetto di “vero” o di “falso”, ma solo l'associazione del valore booleano *false* a una determinata sequenza di bit.
+Il concetto di “vero” e di “falso”, quindi, è un valore simbolico che NOI inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è propio del nostro mondo.  
 Da questo punto di vista, potremmo essere d'accordo con William James, quando dice che:
 >>    Un'idea è "vera" fintanto che credere in essa è utile per le nostre vite.  
 
@@ -573,7 +585,7 @@ Il Maestro dirà:
 > Se vuoi capire le classi, devi leggere Aristotele.
 
 ed è vero: per parlare delle classi del C++ si può attingere a piene mani da Aristotele. 
-Per esempio, il concetto di «essenza» può essere utilizzato per spiegare le *funzioni virtuali pure*; i concetti di «anima» e «corpo» possono illustrare la differenza fra *metodi* e *dati membro* di una classe; i concetti di «universale» e «sostanza» spiegano la differenza fra *dichiarazione* e *istanza* di una classe:
+Per esempio, il concetto di “essenza” può essere utilizzato per spiegare le *funzioni virtuali pure*; i concetti di “anima” e “corpo” possono illustrare la differenza fra *metodi* e *dati membro* di una classe; i concetti di “universale” e “sostanza” spiegano la differenza fra *dichiarazione* e *istanza* di una classe:
 
 > La differenza fra universale e sostanza, in Aristotele è la stessa che c'è fra classe e istanza in C++, ed è corretto dire che un termine universale non possa essere il nome di una sostanza, ma solo il nome della sua classe, perché l'istruzione:
 
@@ -640,7 +652,7 @@ Sfortunatamente, quando ho pensato a tutto ciò, il nome Spazionismo era già st
 
 ## Release/0.3: Git
 A Dicembre del 2016 divenne chiaro che anche se avessi potuto dedicare a questo progetto tutto il mio tempo (e non potevo), non sarei mai riuscito a portarlo a termine da solo.
-Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *open-source*, coinvlgendo nello «sviluppo» anche altre persone, mi sembrò la cosa migliore da fare, così cominciai a scrivere questo Manifesto per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
+Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *open-source*, coinvlgendo nello “sviluppo” anche altre persone, mi sembrò la cosa migliore da fare, così cominciai a scrivere questo Manifesto per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
 
 ### Git
 *Git* è un sistema con cui si gestiscono le diverse versioni di un software, ma può essere utilizzato per tenere traccia delle modifiche di qualsiasi documento elettronico. Leggendo il registro degli eventi di Git possiamo vedere quali sono state le modifiche apportate al sistema:
@@ -664,7 +676,7 @@ Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *op
 | | |     Merge branch 'release/0.4.3'
 | | | 
 ```
-Ciascuno di quei «commit» identificati da una stringa alfanumerica che si vedono nel codice qui sopra, è una sorta di fotografia del sistema in un determinato momento dello sviluppo.
+Ciascuno di quei “commit” identificati da una stringa alfanumerica che si vedono nel codice qui sopra, è una sorta di fotografia del sistema in un determinato momento dello sviluppo.
 Se ci si accorge di aver fatto un errore, si può ritornare indietro, annullando le modifiche fatte e ripristinando la vecchia versione del sistema.
 <br >  
 Oltre a essere una versione informatica della Macchina del Tempo, Git permette di coordinare le modifiche fatte al codice da più utenti all'interno dello stesso gruppo di lavoro: ciascun collaboratore lavora su una copia locale dei file e poi trasmette le modifiche a un *repository* centrale dove tutte le modifiche sono integrate nella copia principale del progetto.  
@@ -704,7 +716,7 @@ Per esempio, un'istruzione che chieda in qualche modo:
 ```
 questo testo fammelo in color rosso
 ```
-può funzionare su tutti i sistemi, perché il colore rosso è uno dei tre colori di base della codifica RGB ed è quindi un concetto «noto» a ogni compurer. Al contrario, l'istruzione:
+può funzionare su tutti i sistemi, perché il colore rosso è uno dei tre colori di base della codifica RGB ed è quindi un concetto “noto” a ogni compurer. Al contrario, l'istruzione:
 
 ```
 questo testo fammelo in color rosso pompeiano
@@ -720,7 +732,7 @@ Se fra duecento anni un archeologo ritrovasse i quaderni con i miei appunti e ri
 <br/>  
 In compenso, molti precetti del C'hi++ sono compatibili precetti o idee appartenenti ad altre mistiche o filosofie.
 In questi giorni sto leggendo la *Bhagavad-Gita*[^gita].
-Alcuni passi mi hanno ricordato le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire «bene»:
+Alcuni passi mi hanno ricordato le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire “bene”:
 
 > Tu hai diritto all'azione, non ai suoi frutti; non sia mai perciò il
 > frutto dell'azione a spingerti ad agire, e nemmeno devi essere
@@ -796,7 +808,7 @@ Chi conosce la zona può orientarsi con l'immagine da satellite, godendo così d
 
 Si tratta in entrambi i casi di rappresentazioni incomplete, perché prive di una delle dimensioni del modello a cui si riferiscono, ma se dobbiamo utilizzarle per ritrovare la strada di casa in mezzo alla vegetazione questo è un bene, perché ci permette di avere una visione sintetica di qualcosa che sarebbe impossibile descrivere dettagliatamente.
 <br />  
-Vista in quest'ottica, la «sovrapponibilità» del C'hi++ con le religioni ispirate non sembra più strana, ma assolutamente normale.
+Vista in quest'ottica, la “sovrapponibilità” del C'hi++ con le religioni ispirate non sembra più strana, ma assolutamente normale.
 Aristotele aveva ragione.
 
 ## Release/0.5 - TODO
@@ -843,6 +855,8 @@ Mi sembra un motivo più che sufficiente.
 		
 <h2 class="note">Note</h2>
 
+[^eventi]: Una crisi, una guerra, una catastrofe naturale, un'invasione aliena o una presa di coscenza collettiva, in ordin
+
 [^dogmi]: Principalmente perché non è possibile farlo.
 
 [^black-friday]: A mo' di esempio si veda un qualunque quotidiano o un filmato
@@ -885,9 +899,9 @@ Mi sembra un motivo più che sufficiente.
 
 [^rovelli]: Autore, per altro, di un libro proprio su Anassimandro.
 
-[^diavolo]: diàvolo s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. «calunniatore» (der. di διαβάλλω «gettare attraverso, calunniare»), adoperato nel gr. crist. per tradurre l’ebr. śāṭān «contraddittore, oppositore»].
+[^diavolo]: diàvolo s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. “calunniatore” (der. di διαβάλλω “gettare attraverso, calunniare”), adoperato nel gr. crist. per tradurre l’ebr. śāṭān “contraddittore, oppositore”].
 
-[^lucifero]: lucìfero agg. e s. m. [dal lat. lucĭfer -a -um, comp. di lux lucis «luce» e -fer «-fero», calco del gr. ϕωσϕόρος].
+[^lucifero]: lucìfero agg. e s. m. [dal lat. lucĭfer -a -um, comp. di lux lucis “luce” e -fer “-fero”, calco del gr. ϕωσϕόρος].
 
 [^igm]: *Istituto Geografico Militare*.
 
