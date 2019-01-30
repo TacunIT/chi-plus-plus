@@ -37,23 +37,26 @@ Se mi guardo indietro, per il mezzo secolo su cui ho visibilità diretta, vedo u
 Il Sessantotto ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società, senza darci nulla in cambio, tranne la minigonna.
 La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre l'“edonismo reaganiano” e la “reaganomics“ sono crollati alla fine degli anni '80 insieme al muro di Berlino.
 Le speranze degli anni '90 si sono schiantate l'11 Settembre 2001 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformato, nel tempo, in un sistema di controllo e di dis-informazione di massa.
-Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni da *smart-phone* e *social-network*.  
-In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (c'è crisi), né comunista (Stalin e Mao hanno ucciso più persone di Hitler), né cattolico (i preti sono tutti pedofili), né ebreo (guarda gli Israeliani cosa fanno ai Palestinesi), né Musulmano (gli islamici sono degli esaltati che vogliono ucciderci tutti), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali, delle *gonadi* senza finestre che non leggono, ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.  
+Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni dagli *smart-phone* e dai *social-network*.  
+In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (c'è crisi), né comunista (Stalin e Mao hanno ucciso più persone di Hitler), né cattolico (i preti sono tutti pedofili), né ebreo (guarda gli Israeliani cosa fanno ai Palestinesi), né Musulmano (gli islamici sono degli esaltati che vogliono ucciderci tutti), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali che non leggono, ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.  
 C'è modo di invertire questa tendenza o dobbiamo rassegnarci al declino? No.    
-*No*, non credo che qualcosa cambierà, almeno nel breve periodo, a meno che qualche evento esterno non costringa la nostra specie a modificare il suo comportamento[^eventi]; e *No*, non intendo arrendermi senza avere almeno tentato, perché queste sono le persone che determinano la qualità del nostro presente con il loro voto e con cui dovremo affrontare dei problemi da cui dipenderà il nostro futuro, come la sovrappopolazione, la scarsezza di risorse e l'accumulo di plastica negli oceani.  
-È indubbio che bisogna fare qualcosa, ma come?  
-La (buona) politica sarebbe la soluzione ideale, se i (buoni) politici avessero il potere di prendere delle decisioni impopolari, cosa che non è: gli elettori sono dei bambini obesi che, dovendo scegliere fra un dietologo e un gelataio, non faranno mai la scelta corretta per la loro salute.  
+*No*, non credo che qualcosa cambierà, almeno nel breve periodo, a meno che qualche evento esterno[^eventi] non costringa la nostra specie a modificare il suo comportamento; e *No*, non intendo arrendermi senza avere almeno tentato, perché queste sono le persone che determinano la qualità del nostro presente con il loro voto e con cui dovremo affrontare dei problemi da cui dipenderà il nostro futuro, come la sovrappopolazione, la scarsezza di risorse e l'accumulo di plastica negli oceani.
+È indubbio che bisogna fare qualcosa, 
+[specificare che va ridefinito uno schema di valori]
+ma come?  
+La (buona) politica sarebbe la soluzione ideale, se i (buoni) politici avessero il potere di prendere delle decisioni impopolari, cosa che non è: gli elettori sono dei bambini obesi che, dovendo scegliere fra un dietologo e un gelataio, non fanno mai la scelta corretta per la loro salute.  
 La cultura non può venirci in aiuto perché la mancanza di stimoli esterni ha prodotto un'economia curtense delle idee nella quale letteratura, cinema, televisione e Internet riciclano ciascuna le idee delle altre, in un banchetto coprofago di concetti e storie già visti.  
 L'arte potrebbe aiutarci, ma sfortunatamente non ce n'è più e quelle forme di appagamento sensoriale che da lungo tempo ormai ci vengono spacciate per arte, essendo espressione e quindi esaltazione di un singolo sarebbero addirittura controproducenti.  
 La scienza, che in passato ha fatto molto per migliorare la qualità della nostra vita, in questo momento, specie in alcuni settori all'avanguardia come la bio-ingegneria o l'intelligenza artificiale, produce innovazione con più rapidità di quanto la Società riesca a metabolizzarla e, almeno per ora, fa più parte del problema che della soluzione.  
-Scartati politica, cultura, arte e scienza, non di rimane che la religione.
+Scartati politica, cultura, arte e scienza, non ci rimane che la religione.
 Per quelli che sono i nostri scopi, ovvero convincere la gente a non pensare in termini individuali, ma di gruppo, la religione è uno strumento perfetto: è gratuita, è adatta a tutte le età e non richiede una specifica preparazione o attitudine; di contro, la religione ha due grossi difetti: il primo è che ampie fasce della popolazone hanno un'istintiva diffidenza nei suoi confronti perché le attribuiscono colpe che in realtà andrebero imputate al clero e ai fedeli; il secondo difetto è che le ampie fasce di cui sopra hanno le loro buone ragioni di diffidare, perché la cattiva interpretazione o applicazione dei principii delle religioni ha di solito effetti devastanti.  
 Possiamo attenuare il primo problema parlando di *metafisica*, in vece che di *religione* ; ma per risolvere il secondo, dobbiamo capire quali siano le cause dell'instabilità delle religioni e cercare di attenuarle.
 
-##Bug noti delle religioni
+## *Bug* noti delle religioni
 La religione dovrebbe aiutare l'Uomo a vivere meglio.
 Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i momenti di dolore e definire una scala di valori che ci permetta di prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso non possono esserci d'aiuto.
 Per fare un esempio: se vi ponessero queste tre domande, cosa rispondereste?
+
 <ol class="domande">
 <li >Una ragazza è rimasta incinta a séguito di una violenza: può decidere di abortire?</li>
 <li><a name="domanda-B"></a> Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?</li>
@@ -65,11 +68,12 @@ Come vedremo fra poco, la religione può aiutarvi a trovare una risposta
 in questi casi. 
 Nulla vi assicura che sia la risposta giusta - nulla potrebbe farlo - ma almeno è una risposta.  
 Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti.
-Ciò dipende da principalmente da due fattori: la natura umana e alcune caratteristiche intrinseche delle religioni tradizionali che le rendono vulnerabili a incongruenze e incomprensioni.
-Per il primo problema non c'è molto che si possa fare, ma per il secondo esistono degli accorgimenti che possono arginarne le conseguenze.
+Ciò dipende da principalmente da due fattori: la natura umana 
+<!--
+e alcune caratteristiche intrinseche delle religioni tradizionali che le rendono vulnerabili a incongruenze e incomprensioni.
+ Per il primo problema non c'è molto che si possa fare, ma per il secondo esistono degli accorgimenti che possono arginarne le conseguenze.-->
 
-La tendenza a produrre effetti opposti a quelli auspicati è un problema
-legato alla natura stessa delle religioni. Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di *assiomi* o *dogmi* non dimostrabili, che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.  
+La tendenza a produrre effetti opposti a quelli auspicati è un problema legato alla natura stessa delle religioni. Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di *assiomi* o *dogmi* non dimostrabili, che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.  
 I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di dubbio o di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato a ogni costo.  
 La storia, anche recente, ci insegna che molti fedeli preferiscono abiurare i principii della loro Fede piuttosto che metterli in discussione; questo, però, è un difetto degli esseri umani, non delle religioni.
 
@@ -854,7 +858,7 @@ Mi sembra un motivo più che sufficiente.
 		
 <h2 class="note">Note</h2>
 
-[^eventi]: Una crisi, una guerra, una catastrofe naturale, un'invasione aliena o una presa di coscenza collettiva, in ordin
+[^eventi]: Una crisi, una guerra, una catastrofe naturale, un'invasione aliena o una presa di coscenza collettiva, in ordine decrescente di probabilità.
 
 [^dogmi]: Principalmente perché non è possibile farlo.
 
