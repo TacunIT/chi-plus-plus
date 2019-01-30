@@ -28,7 +28,8 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 ## Executive summary
 Se continuerete nella lettura di questo Manifesto (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
 Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; un Credo per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.  
-Premetto che non ho titoli per scrivere di filosofia e religione (sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer), quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando alcuni difetti delle religioni canoniche e dei loro “utenti”; successivamente, presenterò la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.  
+Premetto che non ho titoli per scrivere di filosofia e religione (sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer), quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell'esaltazione religiosa; successivamente, descriverò alcune 
+alcune vulnerabilità logiche delle religioni canoniche e definirò delle linee-guida per prevenirle; presenterò poi la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.  
 Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologie proprii dell'informatica e ne ho fornito una breve descrizione per coloro che non  abbiano familiarità con le attività di creazione del software; i tecnici mi perdonino le semplificazioni.
 Ho dovuto anche, per brevità, fare delle affermazioni senza comprovarle; i logici mi perdonino l'apodissi. 
 
@@ -68,11 +69,7 @@ Come vedremo fra poco, la religione può aiutarvi a trovare una risposta
 in questi casi. 
 Nulla vi assicura che sia la risposta giusta - nulla potrebbe farlo - ma almeno è una risposta.  
 Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti.
-Ciò dipende da principalmente da due fattori: la natura umana 
-<!--
-e alcune caratteristiche intrinseche delle religioni tradizionali che le rendono vulnerabili a incongruenze e incomprensioni.
- Per il primo problema non c'è molto che si possa fare, ma per il secondo esistono degli accorgimenti che possono arginarne le conseguenze.-->
-
+Ciò dipende da principalmente da due fattori: la natura umana e alcune caratteristiche intrinseche delle religioni tradizionali che le rendono vulnerabili a incongruenze e incomprensioni.  
 La tendenza a produrre effetti opposti a quelli auspicati è un problema legato alla natura stessa delle religioni. Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di *assiomi* o *dogmi* non dimostrabili, che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.  
 I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di dubbio o di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato a ogni costo.  
 La storia, anche recente, ci insegna che molti fedeli preferiscono abiurare i principii della loro Fede piuttosto che metterli in discussione; questo, però, è un difetto degli esseri umani, non delle religioni.
