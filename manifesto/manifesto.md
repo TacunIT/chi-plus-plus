@@ -6,8 +6,8 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.5.0</p>
-	<p><label>Data    </label>13 Gennaio 2019</p>
+	<p><label>Versione</label>0.5.1</p>
+	<p><label>Data    </label>4 Febbraio 2019</p>
 </div>
 	![](../img/seal.png)
 </section>
@@ -48,8 +48,8 @@ La cultura non può venirci in aiuto perché la mancanza di stimoli esterni ha p
 L'arte potrebbe aiutarci, ma sfortunatamente non ce n'è più e quelle forme di appagamento sensoriale che da lungo tempo ormai ci vengono spacciate per arte, essendo espressione e quindi esaltazione di un singolo sarebbero addirittura controproducenti.  
 La scienza, che in passato ha fatto molto per migliorare la qualità della nostra vita, in questo momento, specie in alcuni settori all'avanguardia come la bio-ingegneria o l'intelligenza artificiale, produce innovazione con più rapidità di quanto la Società riesca a metabolizzarla e, almeno per ora, fa più parte del problema che della soluzione.  
 Scartati politica, cultura, arte e scienza, non ci rimane che la religione.
-Per quelli che sono i nostri scopi, ovvero convincere la gente a non pensare in termini individuali, ma di gruppo, la religione è uno strumento perfetto: è gratuita, è adatta a tutte le età e non richiede una specifica preparazione o attitudine; di contro, la religione ha due grossi difetti: il primo è che ampie fasce della popolazone hanno un'istintiva diffidenza nei suoi confronti perché le attribuiscono colpe che in realtà andrebero imputate al clero e ai fedeli; il secondo difetto è che le ampie fasce di cui sopra hanno le loro buone ragioni di diffidare, perché la cattiva interpretazione o applicazione dei principii delle religioni ha di solito effetti devastanti.  
-Possiamo attenuare il primo problema parlando di *metafisica*, in vece che di *religione* ; ma per risolvere il secondo, dobbiamo capire quali siano le cause dell'instabilità delle religioni e cercare di attenuarle.
+Per quelli che sono i nostri scopi, ovvero convincere la gente a non pensare in termini individuali, ma di gruppo, la religione è uno strumento perfetto: è gratuita, è adatta a tutte le età e non richiede una specifica preparazione o attitudine; di contro, la religione ha due grossi difetti: il primo è che ampie fasce della popolazone hanno un'istintiva diffidenza nei suoi confronti perché le attribuiscono colpe che in realtà andrebero imputate al clero e ai fedeli; il secondo difetto è che le ampie fasce di cui sopra hanno le loro buone ragioni di diffidare, perché la cattiva interpretazione o applicazione dei principii delle religioni ha di solito effetti devastanti[^giurare].  
+Possiamo attenuare il primo problema parlando di *metafisica*, in vece che di *religione*, ma per risolvere il secondo, dobbiamo capire quali siano le cause dell'instabilità delle religioni e cercare di attenuarle.
 
 ## *Bug* noti delle religioni
 La religione dovrebbe aiutare l'Uomo a vivere meglio.
@@ -68,8 +68,8 @@ in questi casi.
 Nulla vi assicura che sia la risposta giusta - nulla potrebbe farlo - ma almeno è una risposta.  
 Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti.
 Ciò dipende da principalmente da due fattori: la natura umana e alcune caratteristiche intrinseche delle religioni tradizionali che le rendono vulnerabili a incongruenze e incomprensioni.  
-La tendenza a produrre effetti opposti a quelli auspicati è un problema legato alla natura stessa delle religioni. Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di *assiomi* o *dogmi* non dimostrabili, che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.  
-I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di dubbio o di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato a ogni costo.  
+La tendenza a produrre effetti opposti a quelli auspicati è un problema legato alla natura stessa delle religioni. Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di dogmi non dimostrabili, che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.  
+I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato a ogni costo.  
 La storia, anche recente, ci insegna che molti fedeli preferiscono abiurare i principii della loro Fede piuttosto che metterli in discussione; questo, però, è un difetto degli esseri umani, non delle religioni.
 
 ### Caso d'uso: il Buonismo
@@ -852,11 +852,12 @@ Mi sembra un motivo più che sufficiente.
 
 		
 <h2 class="note">Note</h2>
+
 [^istat]: https://www.istat.it/it/archivio/213901
 
 [^eventi]: Una crisi, una guerra, una catastrofe naturale, un'invasione aliena o una presa di coscenza collettiva, in ordine decrescente di probabilità.
 
-[^dogmi]: Principalmente perché non è possibile farlo.
+[^giurare]: O grotteschi, come l'abitudine di giurare su un libro che esorta a non giurare (*Mt 5,33-37*)
 
 [^black-friday]: A mo' di esempio si veda un qualunque quotidiano o un filmato
     sugli assalti ai grandi magazzini durante il *Black Friday*
