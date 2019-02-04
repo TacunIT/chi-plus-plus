@@ -1,3 +1,9 @@
+## 0.5.1 (February 04, 2019)
+  - Rivisto il testo dell'introduzione
+  - Revisione dell'Executive summary
+  - Passato documento originale di Sostiene Aristotele in Markdown.
+  - Merge branch 'release/0.5.0'
+
 ## 0.5.0 (January 28, 2019)
   - Accorciata chiusura
   - Aggiunta citazione da Boll all'inizio
