@@ -28,7 +28,7 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 ## Executive summary
 Se continuerete nella lettura di questo Manifesto (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
 Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; un Credo per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.  
-Premetto che non ho titoli per scrivere di filosofia e religione (sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer), quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell'esaltazione religiosa; successivamente, descriverò alcune 
+Premetto che non ho titoli per scrivere di filosofia e religione, perché sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer, quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell'esaltazione religiosa; successivamente, descriverò alcune 
 alcune vulnerabilità logiche delle religioni canoniche e definirò delle linee-guida per prevenirle; presenterò poi la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.  
 Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologie proprii dell'informatica e ne ho fornito una breve descrizione per coloro che non  abbiano familiarità con le attività di creazione del software; i tecnici mi perdonino le semplificazioni.
 Ho dovuto anche, per brevità, fare delle affermazioni senza comprovarle; i logici mi perdonino l'apodissi. 
@@ -42,6 +42,7 @@ Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito
 In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (*c'è crisi*), né comunista (*Stalin e Mao hanno ucciso più persone di Hitler*), né cattolico (*i preti sono tutti pedofili*), né ebreo (*guarda gli Israeliani cosa fanno ai Palestinesi*), né Musulmano (*gli islamici sono degli esaltati che vogliono ucciderci tutti*), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali che non leggono[^istat], ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.  
 C'è modo di invertire questa tendenza o dobbiamo rassegnarci al declino? No.    
 *No*, non credo che qualcosa cambierà, almeno nel breve periodo, a meno che qualche evento esterno[^eventi] non costringa la nostra specie a modificare il suo comportamento; e *No*, non intendo arrendermi senza avere almeno tentato, perché queste sono le persone che determinano la qualità del nostro presente con il loro voto e con cui dovremo affrontare dei problemi da cui dipenderà il nostro futuro, come la sovrappopolazione, la scarsezza di risorse e l'accumulo di plastica negli oceani.
+
 È indubbio che bisogna definire un nuovo schema di valori che non abbia più al suo vertice l'individuo, ma la comunità; il problema è come riuscire a farlo.  
 La (buona) politica sarebbe la soluzione ideale, se i (buoni) politici avessero il potere di prendere delle decisioni impopolari, cosa che non è, perché gli elettori sono dei bambini obesi che, dovendo scegliere fra un dietologo e un gelataio, non fanno mai la scelta corretta per la loro salute.  
 La cultura non può venirci in aiuto perché la mancanza di stimoli esterni ha prodotto un'economia curtense delle idee nella quale letteratura, cinema, televisione e Internet riciclano ciascuna le idee delle altre, in un banchetto coprofago di concetti e storie già visti.  
@@ -49,7 +50,7 @@ L'arte potrebbe aiutarci, ma sfortunatamente non ce n'è più e quelle forme di 
 La scienza, che in passato ha fatto molto per migliorare la qualità della nostra vita, in questo momento, specie in alcuni settori all'avanguardia come la bio-ingegneria o l'intelligenza artificiale, produce innovazione con più rapidità di quanto la Società riesca a metabolizzarla e, almeno per ora, fa più parte del problema che della soluzione.  
 Scartati politica, cultura, arte e scienza, non ci rimane che la religione.
 Per quelli che sono i nostri scopi, ovvero convincere la gente a non pensare in termini individuali, ma di gruppo, la religione è uno strumento perfetto: è gratuita, è adatta a tutte le età e non richiede una specifica preparazione o attitudine; di contro, la religione ha due grossi difetti: il primo è che ampie fasce della popolazone hanno un'istintiva diffidenza nei suoi confronti perché le attribuiscono colpe che in realtà andrebero imputate al clero e ai fedeli; il secondo difetto è che le ampie fasce di cui sopra hanno le loro buone ragioni di diffidare, perché la cattiva interpretazione o applicazione dei principii delle religioni ha di solito effetti devastanti[^giurare].  
-Possiamo attenuare il primo problema parlando di *metafisica*, in vece che di *religione*, ma per risolvere il secondo, dobbiamo capire quali siano le cause dell'instabilità delle religioni e cercare di attenuarle.
+Possiamo attenuare il primo problema parlando di *spiritualità* o di *metafisica*, in vece che di *religione*, ma per risolvere il secondo dobbiamo capire quali siano le cause dell'instabilità delle religioni e cercare di attenuarle.
 
 ## *Bug* noti delle religioni
 La religione dovrebbe aiutare l'Uomo a vivere meglio.
@@ -67,14 +68,14 @@ Come vedremo fra poco, la religione può aiutarvi a trovare una risposta
 in questi casi. 
 Nulla vi assicura che sia la risposta giusta - nulla potrebbe farlo - ma almeno è una risposta.  
 Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti.
-Ciò dipende da principalmente da due fattori: la natura umana e alcune caratteristiche intrinseche delle religioni tradizionali che le rendono vulnerabili a incongruenze e incomprensioni.  
-La tendenza a produrre effetti opposti a quelli auspicati è un problema legato alla natura stessa delle religioni. Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di dogmi non dimostrabili, che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.  
-I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato a ogni costo.  
-La storia, anche recente, ci insegna che molti fedeli preferiscono abiurare i principii della loro Fede piuttosto che metterli in discussione; questo, però, è un difetto degli esseri umani, non delle religioni.
+Ciò dipende da principalmente da due fattori: la natura umana e la mancanza di solidità logica dei loro principii.  
+
+Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di dogmi non dimostrabili, che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.  
+I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato con ogni mezzo, anche a costo di abiurare quegli stessi principii che si cerca di difendere.  
+E qui, come direbbe Amleto, comincia il male, perché i dogmi non sono leggi comprovabili, ma opinioni o speranze e ogni tentativo di renderli più robusti ottiene l'effetto opposto perché si ampliano le dimensioni di una struttura che poggia su basi instabili.  
 
 ### Caso d'uso: il Buonismo
-Le religioni, per quanto ispirate, sono opera dell'uomo, non di Dio e, come tutte le opere dell'uomo, sono inevitabilmente soggette a errori e incongruenze.
-Come esempio, immaginiamo che esista una religione chiamata: *Buonismo* i cui dogmi siano:
+Per dimostrare l'affermazione fatta sopra, immaginiamo che esista una religione chiamata: *Buonismo* i cui dogmi siano:
 
 <ol class="dogmi">
 	<li>Dio esiste
@@ -101,6 +102,8 @@ esempio), ma nessuno potrebbe criticare il buonista, che decide in maniera coere
 
 il povero Buonista non saprebbe cosa rispondere, perché per farlo dovrebbe sconfessare almeno uno degli assiomi su cui basa la sua visione dell'esistenza.
 Dovrà quindi rifugiarsi in una risposta generica, chiamando in causa l'imponderabilità delle decisioni divine, oppure condannarvi al rogo come eretico.  
+
+### Imagine
 Con buona pace di John Lennon, le cose non andrebbero meglio in un Mondo senza religioni: se le stesse domande le faceste a un giudice, vi risponderebbe che sì, la ragazza può abortire, ma né il condannato né il malato possono essere uccisi, perché la Legge lo vieta. Se però gli domandaste:
 
 <ol class="domande" start="5">
@@ -114,7 +117,7 @@ Con buona pace di John Lennon, le cose non andrebbero meglio in un Mondo senza r
 il buon giudice non avrebbe meno difficoltà del Buonista a trovare una risposta.
 La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe comunque di spedirvi in prigione, dove trovereste ad attendervi il simpatico soggetto della domanda [B](#domanda-B).
 
-###*Debug* del Buonismo
+### *Debug* del Buonismo
 Abbiamo visto che i tre assiomi del Buonismo:
 
 <ol class="dogmi">
