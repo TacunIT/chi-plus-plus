@@ -1,3 +1,12 @@
+## 0.5.2 (February 17, 2019)
+  - Completato paragrafo sulla situazione corrente
+  - Completata prima bozza del paragrafo sull'iportanza delle regole
+  - Prima stesura del paragrafo sull'importanza delle regole
+  - Inizio della descrizione del problema
+  - Iniziata revisione secondo paragrafo
+  - Bump version to 0.5.1.
+  - Bump version to 0.5.1.
+
 ## 0.5.1 (February 04, 2019)
   - Rivisto il testo dell'introduzione
   - Revisione dell'Executive summary
