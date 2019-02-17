@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="chi++.css" />
+<!--
 <section class="pagina cover">
 <header>
 	<h1>C'hi++</h1>
@@ -11,7 +12,7 @@
 </div>
 	![](../img/seal.png)
 </section>
-
+-->
 <section class="dedica">
 0x0D 0x0C 0x0B 0x0A
 </section>
@@ -41,26 +42,31 @@ Le speranze degli anni '90 si sono schiantate l'11 Settembre 2001 sulle Torri Ge
 Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni dagli *smart-phone* e dai *social-network*.  
 In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (*c'è crisi*), né comunista (*Stalin e Mao hanno ucciso più persone di Hitler*), né cattolico (*i preti sono tutti pedofili*), né ebreo (*guarda gli Israeliani cosa fanno ai Palestinesi*), né Musulmano (*gli islamici sono degli esaltati che vogliono ucciderci tutti*), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali che non leggono[^istat], ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.  
 C'è modo di invertire questa tendenza o dobbiamo rassegnarci al declino? No.    
-*No*, non credo che qualcosa cambierà, almeno nel breve periodo, a meno che qualche evento esterno[^eventi] non costringa la nostra specie a modificare il suo comportamento; e *No*, non intendo arrendermi senza avere almeno tentato, perché queste sono le persone che determinano la qualità del nostro presente con il loro voto e con cui dovremo affrontare dei problemi da cui dipenderà il nostro futuro, come la sovrappopolazione, la scarsezza di risorse e l'accumulo di plastica negli oceani. 
+*No*, non credo che qualcosa cambierà, almeno nel breve periodo, a meno che qualche evento esterno[^eventi] non costringa la nostra specie a modificare il suo comportamento; e *No*, non intendo arrendermi senza avere almeno tentato, perché queste sono le persone che determinano la qualità del nostro presente con il loro voto e con cui dovremo affrontare dei problemi da cui dipenderà il nostro futuro, come la sovrappopolazione, la scarsezza di risorse e l'accumulo di plastica negli oceani.  
 Ma "tentare", cosa?
-Il declino della nostra Società è un sintomo, non è il male; per frenarlo, dobbiamo identificarne la causa.  
-Anche se ciascuno di questi fallimenti è avvenuto per motivi differenti, esiste un fattore comune alle ideologie degli ultimi cinquant'anni che ne ha accelerato l'obsolescenza e le ha rese incapaci di sopravvivere alla prima sconfitta: il rifiuto più o meno accanito di ogni forma non strumentale di spiritualità.  
-Se si vuole definire uno schema di valori negando allo stesso tempo qualsiasi forma di trascenenza, si è costretti a ricercare i valori e le motivazioni della propria etica all'interno dello schema stesso.
+Il declino della nostra Società è un sintomo, non è il male; per frenarlo, dobbiamo identificarne la causa.
+
+### Il male  
+Esiste un fattore comune alle ideologie degli ultimi cinquant'anni che ne ha accelerato l'obsolescenza e le ha rese incapaci di sopravvivere alla prima sconfitta: il rifiuto più o meno accanito di ogni forma non strumentale di spiritualità.  
+Il problema, se si vuole definire uno schema di valori negando allo stesso tempo qualsiasi forma di trascenenza, è che si è costretti a ricercare i valori e le motivazioni della propria etica all'interno dello schema stesso.
 Si può fare, ma è sbagliato e limitativo.
 È sbagliato da un punto di vista etico, perché le regole che si definiscono sono sempre una conseguenza di esigenze contingenti (guerre, sopraffazioni, disparità sociali), venendo a mancare le quali lo schema logico del sistema perde di significato e si disgrega.
 È sbagliato anche da un punto di vista logico, perché i concetti di vero/falso, giusto/sbagliato devono sempre essere preesistenti allo schema a cui vanno applicati, altrimenti non è possibile sapere se la definizione che se ne dà sia giusta o sbagliata, vera o falsa.
 È limitativo, infine, perché restringe il numero dei possibili obiettivi da perseguire a un insieme finito di azioni o traguardi, raggiunti i quali non esiste più possibilità di migliorare.  
 Pensate al gioco degli Scacchi: non esiste nessun motivo, all'interno della schacchiera, che costringa ciascun pezzo a muoversi solo in una specifica maniera; le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a "L" in ossequio a delle regole esterne sia ai pezzi che alla schacchiera, ma è proprio da quelle limitazioni che deriva il fascino del gioco.
-Al contrario, la Società moderna è una scacchiera in cui ciascun pezzo si muove nella maniera che preferisce, come “un asino privo di briglie” perché, in ossequio a un malinteso senso di libertà, sono state eliminate tutte le regole.
-Le persone di successo che si uccidono o si stordiscono con sostanze più o meno legali sono pedoni che, arrivati alla fine della scacchiera grazie alla loro abilità, hanno scoperto che non esiste alcuna forma di promozione perché insieme alle regole sono stati aboliti anche i giocatori.  
-Detto ciò e fermo restando che la vita su questo Pianeta non potrà mai migliorare davvero fino a quando non riusciremo a fare un uso più responsabile delle nostre gonadi, è ragionevole pensare che un nuovo schema di valori che non abbia più al suo vertice l'individuo, ma la comunità, unito a un recupero non fanatico di spiritualità potrebbe aiutarci a uscire da questa picchiata auto-distruttiva.
- 
-La (buona) politica sarebbe la soluzione ideale, se i (buoni) politici avessero il potere di prendere delle decisioni impopolari, cosa che non è, perché gli elettori sono dei bambini obesi che, dovendo scegliere fra un dietologo e un gelataio, non fanno mai la scelta corretta per la loro salute.  
+Al contrario, la Società moderna è una scacchiera in cui ciascun pezzo si muove nella maniera che preferisce, come “un asino privo di briglie” perché, in ossequio a un malinteso senso di libertà, sono state eliminate tutte le regole.  
+Le persone di successo che si uccidono con sostanze più o meno legali sono pedoni che, arrivati alla fine della scacchiera grazie alla loro abilità, hanno scoperto che non esiste alcuna forma di promozione perché insieme alle regole sono stati aboliti anche i giocatori.  
+
+### La cura
+Fermo restando che la vita su questo Pianeta non potrà mai migliorare realmente fino a quando non riusciremo a fare un uso più responsabile delle nostre gonadi, è ragionevole pensare che un nuovo schema di valori che abbia al suo vertice la comunità e non l'individuo, unito a una dose moderata di spiritualità potrebbe aiutarci a uscire da questa picchiata auto-distruttiva, ma bisogna trovare un modo per diffonderlo.
+
+La (buona) politica sarebbe la soluzione ideale, se i (buoni) politici avessero il potere di prendere delle decisioni impopolari, cosa che non è, perché gli elettori sono dei bambini obesi che, dovendo scegliere fra un dietologo e un gelataio, non faranno mai la scelta corretta per la loro salute.  
 La cultura non può venirci in aiuto perché la mancanza di stimoli esterni ha prodotto un'economia curtense delle idee nella quale letteratura, cinema, televisione e Internet riciclano ciascuna le idee delle altre, in un banchetto coprofago di concetti e storie già visti.  
 L'arte potrebbe aiutarci, ma sfortunatamente non ce n'è più e quelle forme di appagamento sensoriale che da lungo tempo ormai ci vengono spacciate per arte, essendo espressione e quindi esaltazione di un singolo sarebbero addirittura controproducenti.  
 La scienza, che in passato ha fatto molto per migliorare la qualità della nostra vita, in questo momento, specie in alcuni settori all'avanguardia come la bio-ingegneria o l'intelligenza artificiale, produce innovazione con più rapidità di quanto la Società riesca a metabolizzarla e, almeno per ora, fa più parte del problema che della soluzione.  
 Scartati politica, cultura, arte e scienza, non ci rimane che la religione.
-Per quelli che sono i nostri scopi, ovvero convincere la gente a non pensare in termini individuali, ma di gruppo, la religione è uno strumento perfetto: è gratuita, è adatta a tutte le età e non richiede una specifica preparazione o attitudine; di contro, la religione ha due grossi difetti: il primo è che ampie fasce della popolazone hanno un'istintiva diffidenza nei suoi confronti perché le attribuiscono colpe che in realtà andrebero imputate al clero e ai fedeli; il secondo difetto è che le ampie fasce di cui sopra hanno le loro buone ragioni di diffidare, perché la cattiva interpretazione o applicazione dei principii delle religioni ha di solito effetti devastanti.  
+Per quelli che sono i nostri scopi, ovvero convincere la gente a non pensare in termini individuali, ma di gruppo, recuperando allo stesso tempo un certo grado di spiritualità, la religione è uno strumento perfetto: è gratuita, è adatta a tutte le età e non richiede una specifica preparazione o attitudine.
+Di contro, la religione ha due grossi difetti: il primo è che ampie fasce della popolazone hanno un'istintiva diffidenza nei suoi confronti perché le attribuiscono colpe che in realtà andrebero imputate al clero e ai fedeli; il secondo difetto è che le ampie fasce di cui sopra hanno le loro buone ragioni di diffidare, perché la cattiva interpretazione o applicazione dei principii delle religioni ha di solito effetti devastanti.  
 Possiamo attenuare il primo problema parlando di *spiritualità* o di *metafisica*, in vece che di *religione*, ma per risolvere il secondo dobbiamo capire quali siano le cause dell'instabilità delle religioni e cercare di attenuarle.
 
 ## *Bug* noti delle religioni
@@ -79,7 +85,7 @@ Come vedremo fra poco, la religione può aiutarvi a trovare una risposta
 in questi casi. 
 Nulla vi assicura che sia la risposta giusta - nulla potrebbe farlo - ma almeno è una risposta.  
 Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti.
-Ciò dipende da principalmente da due fattori: la natura umana e la mancanza di solidità logica dei loro principii.  
+Ciò dipende da due fattori: la natura umana e la mancanza di solidità logica dei loro principii.  
 
 Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di dogmi non dimostrabili, che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.  
 I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato con ogni mezzo, anche a costo di abiurare quegli stessi principii che si cerca di difendere.  
@@ -94,7 +100,7 @@ Per dimostrare l'affermazione fatta sopra, immaginiamo che esista una religione 
 	<li>Dio ha creato l'Universo
 </ol>
 
-Partendo da questi dogmi (non dimostrabili) e sapendo che l'Uomo fa parte dell'Universo, i Buonisti deducono che:
+Partendo da queste affermazioni non dimostrabili e sapendo che l'Uomo fa parte dell'Universo, i Buonisti deducono che:
 
 <ol class="dogmi" start="4">
 	<li> Dio ha creato l'Uomo
@@ -869,7 +875,7 @@ Mi sembra un motivo più che sufficiente.
 
 [^istat]: https://www.istat.it/it/archivio/213901
 
-[^eventi]: Una crisi, una guerra, una catastrofe naturale, un'invasione aliena o una presa di coscenza collettiva, in ordine decrescente di probabilità.
+[^eventi]: Una crisi, una guerra, una catastrofe naturale, un'invasione aliena o una presa di coscienza collettiva, in ordine decrescente di probabilità.
 
 [^giurare]: O grotteschi, come l'abitudine di giurare su un libro che esorta a non giurare (*Mt 5,33-37*)
 
