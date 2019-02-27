@@ -62,7 +62,7 @@ Fermo restando che la vita su questo Pianeta non potrà mai migliorare realmente
 
 La (buona) politica sarebbe la soluzione ideale, se i (buoni) politici avessero il potere di prendere delle decisioni impopolari, cosa che non è, perché gli elettori sono dei bambini obesi che, dovendo scegliere fra un dietologo e un gelataio, non fanno mai la scelta corretta per la loro salute.  
 La cultura non può venirci in aiuto perché la mancanza di stimoli esterni ha prodotto un'economia curtense delle idee nella quale letteratura, cinema, televisione e Internet riciclano ciascuna le idee delle altre, in un banchetto coprofago di concetti e storie già visti.  
-L'arte potrebbe aiutarci, ma sfortunatamente non ce n'è più e quelle forme di appagamento sensoriale che da lungo tempo ormai ci vengono spacciate per arte, essendo espressione e quindi esaltazione di un singolo sarebbero addirittura controproducenti.  
+L'arte potrebbe aiutarci, ma sfortunatamente non ce n'è più e quelle forme di appagamento sensoriale che da lungo tempo ormai ci vengono spacciate per arte[^arte], essendo espressione e quindi esaltazione di un singolo sarebbero addirittura controproducenti.  
 La scienza, che in passato ha fatto molto per migliorare la qualità della nostra vita, in questo momento, specie in alcuni settori all'avanguardia come la bio-ingegneria o l'intelligenza artificiale, produce innovazione con più rapidità di quanto la Società riesca a metabolizzarla e, almeno per ora, fa più parte del problema che della soluzione.  
 Scartati politica, cultura, arte e scienza, non ci rimane che la religione.
 Per quelli che sono i nostri scopi, ovvero convincere la gente a non pensare in termini individuali, ma di gruppo, recuperando allo stesso tempo un certo grado di spiritualità, la religione è uno strumento perfetto: è gratuita, è adatta a tutte le età e non richiede una specifica preparazione o attitudine.
@@ -85,9 +85,8 @@ Come vedremo fra poco, la religione può aiutarvi a trovare una risposta
 in questi casi. 
 Nulla vi assicura che sia la risposta giusta - nulla potrebbe farlo - ma almeno è una risposta.  
 Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti.
-Ciò dipende da due fattori: la natura umana e la mancanza di solidità logica dei loro principii.  
-
-Dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di dogmi non dimostrabili, che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.  
+Ciò dipende da due fattori: la natura umana e la mancanza di solidità logica dei loro principii.
+Infatti, dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di dogmi non dimostrabili, che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.  
 I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato con ogni mezzo, anche a costo di abiurare quegli stessi principii che si cerca di difendere.  
 E qui, come direbbe Amleto, comincia il male, perché i dogmi non sono leggi comprovabili, ma opinioni o speranze e ogni tentativo di renderli più robusti ottiene l'effetto opposto perché si ampliano le dimensioni di una struttura che poggia su basi instabili.  
 
@@ -873,11 +872,15 @@ Mi sembra un motivo più che sufficiente.
 		
 <h2 class="note">Note</h2>
 
+<!--
+[^giurare]: O grotteschi, come l'abitudine di giurare su un libro che esorta a non giurare (*Mt 5,33-37*)
+-->
+
 [^istat]: https://www.istat.it/it/archivio/213901
 
 [^eventi]: Una crisi, una guerra, una catastrofe naturale, un'invasione aliena o una presa di coscienza collettiva, in ordine decrescente di probabilità.
 
-[^giurare]: O grotteschi, come l'abitudine di giurare su un libro che esorta a non giurare (*Mt 5,33-37*)
+[^arte]: I dettagli di questa affermazione potete trovarli qui: [Amore e Arte](amore-e-arte.pdf)
 
 [^black-friday]: A mo' di esempio si veda un qualunque quotidiano o un filmato
     sugli assalti ai grandi magazzini durante il *Black Friday*
