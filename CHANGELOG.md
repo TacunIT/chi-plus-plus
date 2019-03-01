@@ -1,3 +1,8 @@
+## 0.5.3 (March 01, 2019)
+  - Compltetata nuova versione della parte iniziale
+  - Chiusa revisione dell'introduzione
+  - Aggiunto file PDF di Amore e Arte
+
 ## 0.5.2 (February 17, 2019)
   - Completato paragrafo sulla situazione corrente
   - Completata prima bozza del paragrafo sull'iportanza delle regole
