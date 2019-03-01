@@ -7,7 +7,7 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.5.2</p>
+	<p><label>Versione</label>0.5.3</p>
 	<p><label>Data    </label>16 Febbraio 2019</p>
 </div>
 	![](../img/seal.png)
@@ -39,7 +39,7 @@ Ho dovuto anche, per brevità, fare delle affermazioni senza comprovarle; i logi
 Se mi guardo indietro, per il mezzo secolo su cui ho visibilità diretta, vedo una lunga serie di fallimenti ideologici.  
 Il Sessantotto ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società, senza darci nulla in cambio, tranne la minigonna.
 La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre la *reaganomics* è crollata alla fine degli anni '80 insieme al muro di Berlino.
-Le speranze degli anni '90 si sono schiantate l'11 Settembre 2001 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformato, nel tempo, in un sistema di controllo e di dis-informazione di massa.
+Le speranze degli anni '90 si sono schiantate l'11 Settembre 2001 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformata, nel tempo, in un sistema di controllo e di dis-informazione di massa.
 Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni dagli *smart-phone* e dai *social-network*.  
 In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (*c'è crisi*), né comunista (*Stalin e Mao hanno ucciso più persone di Hitler*), né cattolico (*i preti sono tutti pedofili*), né ebreo (*guarda gli Israeliani cosa fanno ai Palestinesi*), né Musulmano (*gli islamici sono degli esaltati che vogliono ucciderci tutti*), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali che non leggono[^istat], ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.  
 C'è modo di invertire questa tendenza o dobbiamo rassegnarci al declino? No.    
@@ -49,7 +49,7 @@ Il declino della nostra Società è un sintomo, non è il male; per frenarlo, do
 
 ### Il male  
 Esiste un fattore comune alle ideologie degli ultimi cinquant'anni che ne ha accelerato l'obsolescenza e le ha rese incapaci di sopravvivere alla prima sconfitta: il rifiuto più o meno accanito di ogni forma non strumentale di spiritualità.  
-Il problema, se si vuole definire uno schema di valori negando allo stesso tempo qualsiasi forma di trascendenza, è che si è costretti a ricercare i valori e le motivazioni della propria etica all'interno dello schema stesso.
+<a name="il-problema"></a>Il problema, se si vuole definire uno schema di valori negando allo stesso tempo qualsiasi forma di trascendenza, è che si è costretti a ricercare i valori e le motivazioni della propria etica all'interno dello schema stesso.
 Si può fare, ma è sbagliato e limitativo.
 È sbagliato da un punto di vista etico, perché le regole che si definiscono sono sempre una conseguenza di esigenze contingenti (guerre, sopraffazioni, disparità sociali), venendo a mancare le quali lo schema logico del sistema perde di significato e si disgrega.
 È sbagliato anche da un punto di vista logico, perché i concetti di vero/falso, giusto/sbagliato devono sempre essere preesistenti allo schema a cui vanno applicati, altrimenti non è possibile sapere se la definizione che se ne dà sia giusta o sbagliata, vera o falsa.
@@ -63,10 +63,10 @@ Fermo restando che la vita su questo Pianeta non potrà mai migliorare realmente
 La (buona) politica sarebbe la soluzione ideale, se i (buoni) politici avessero il potere di prendere delle decisioni impopolari, cosa che non è, perché gli elettori sono dei bambini obesi che, dovendo scegliere fra un dietologo e un gelataio, non fanno mai la scelta corretta per la loro salute.  
 La cultura non può venirci in aiuto perché la mancanza di stimoli esterni ha prodotto un'economia curtense delle idee nella quale letteratura, cinema, televisione e Internet riciclano ciascuna le idee delle altre, in un banchetto coprofago di concetti e storie già visti.  
 L'arte potrebbe aiutarci, ma sfortunatamente non ce n'è più e quelle forme di appagamento sensoriale che da lungo tempo ormai ci vengono spacciate per arte[^arte], essendo espressione e quindi esaltazione di un singolo sarebbero addirittura controproducenti.  
-La scienza, che in passato ha fatto molto per migliorare la qualità della nostra vita, in questo momento, specie in alcuni settori all'avanguardia come la bio-ingegneria o l'intelligenza artificiale, produce innovazione con più rapidità di quanto la Società riesca a metabolizzarla e, almeno per ora, fa più parte del problema che della soluzione.  
-Scartati politica, cultura, arte e scienza, non ci rimane che la religione.
+La scienza, che in passato ha fatto molto per migliorare la qualità della nostra vita, in questo momento, specie in alcuni settori all'avanguardia come la bio-ingegneria o l'intelligenza artificiale, produce innovazione con più rapidità di quanto la Società riesca a metabolizzarla e, almeno per ora, fa più parte del problema che della soluzione.
+Scartati politica, cultura, arte e scienza, non ci rimane che la religione.  
 Per quelli che sono i nostri scopi, ovvero convincere la gente a non pensare in termini individuali, ma di gruppo, recuperando allo stesso tempo un certo grado di spiritualità, la religione è uno strumento perfetto: è gratuita, è adatta a tutte le età e non richiede una specifica preparazione o attitudine.
-Di contro, la religione ha due grossi difetti: il primo è che ampie fasce della popolazone hanno un'istintiva diffidenza nei suoi confronti perché le attribuiscono colpe che in realtà andrebero imputate al clero e ai fedeli; il secondo difetto è che le ampie fasce di cui sopra hanno le loro buone ragioni di diffidare, perché la cattiva interpretazione o applicazione dei principii delle religioni ha di solito effetti devastanti.  
+Di contro, la religione ha due grossi difetti: il primo è che ampie fasce della popolazone hanno un'istintiva diffidenza nei suoi confronti perché le attribuiscono colpe che in realtà andrebbero imputate al clero e ai fedeli; il secondo difetto è che le ampie fasce di cui sopra hanno le loro buone ragioni di diffidare, perché la cattiva interpretazione o applicazione dei principii delle religioni ha di solito effetti devastanti.  
 Possiamo attenuare il primo problema parlando di *spiritualità* o di *metafisica*, in vece che di *religione*, ma per risolvere il secondo dobbiamo capire quali siano le cause dell'instabilità delle religioni e cercare di attenuarle.
 
 ## *Bug* noti delle religioni
@@ -119,8 +119,9 @@ esempio), ma nessuno potrebbe criticare il buonista, che decide in maniera coere
 il povero Buonista non saprebbe cosa rispondere, perché per farlo dovrebbe sconfessare almeno uno degli assiomi su cui basa la sua visione dell'esistenza.
 Dovrà quindi rifugiarsi in una risposta generica, chiamando in causa l'imponderabilità delle decisioni divine, oppure condannarvi al rogo come eretico.  
 
-### Imagine
-Con buona pace di John Lennon, le cose non andrebbero meglio in un Mondo senza religioni: se le stesse domande le faceste a un giudice, vi risponderebbe che sì, la ragazza può abortire, ma né il condannato né il malato possono essere uccisi, perché la Legge lo vieta. Se però gli domandaste:
+### *Imagine*
+A questo punto, o forse anche da prima, vi starete chiedendo che bisogno ci sia di utilizzare uno strumento instabile come la religione e se non sarebbe meglio adottare, in vece, un approccio laico al problema.  
+Il fatto è che, con buona pace di John Lennon, in un Mondo senza religioni la situazione non migliorerebbe: se le tre domande viste sopra le faceste a un giudice, vi risponderebbe che sì, la ragazza può abortire, ma né il condannato né il malato possono essere uccisi, perché la Legge lo vieta. Se però gli domandaste:
 
 <ol class="domande" start="5">
 <li >
@@ -132,6 +133,16 @@ Con buona pace di John Lennon, le cose non andrebbero meglio in un Mondo senza r
 
 il buon giudice non avrebbe meno difficoltà del Buonista a trovare una risposta.
 La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe comunque di spedirvi in prigione, dove trovereste ad attendervi il simpatico soggetto della domanda [B](#domanda-B).
+
+#### *Bug* noti del laicismo
+Anche i principi&icirc; delle società laiche, al pari dei dogmi delle religioni, non sono leggi comprovabili, ma opinioni o speranze.
+A differenza dei dogmi religiosi, però, i laici non possono rifarsi a valori di ordine superiore e, come abbiamo visto [sopra](#il-problema), devono trovare i fondamenti delle loro affermazioni nella realtà contingente, cosa che non sempre è possibile, quindi le loro regole risultano ancora più inconsistenti di quelle religiose.
+
+Prendete ad esempio i trenta articoli della [Dichiarazione dei Diritti dell'Uomo](http://www.un.org/en/universal-declaration-human-rights/) del 1948: voi e io troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.  
+Perché un signore della guerra centro-africano dovrebbe rispettarle, dato che non sono un insieme di norme giuridiche a cui gli Stati e gli individui debbano attenersi, ma un elenco di quelli che *dovrebbero essere*[^achievements] i diritti di ogni essere umano? 
+Perché, soprattutto, dovrebbe rispettare delle regole volte al mantenimento della pace[^peace], promulgate da un'Organizzazione che ha al suo vertice Paesi che sono i principali produttori di armi del Mondo[^sipri] e che violano costantemente quelle stesse regole da loro promosse?
+<br>  
+Dato che l'approccio laico presenta gli stessi problemi logici di quello religioso, mancando dei corrispondenti lati positivi, non ci resta altra scelta che cercare di far “funzionare” la religione.
 
 ### *Debug* del Buonismo
 Abbiamo visto che i tre assiomi del Buonismo:
@@ -881,6 +892,12 @@ Mi sembra un motivo più che sufficiente.
 [^eventi]: Una crisi, una guerra, una catastrofe naturale, un'invasione aliena o una presa di coscienza collettiva, in ordine decrescente di probabilità.
 
 [^arte]: I dettagli di questa affermazione potete trovarli qui: [Amore e Arte](amore-e-arte.pdf)
+
+[^achievements]: Il testo si definisce: a common standard of achievement for all peoples and all nations, to the end that every individual and every organ of society, keeping this Declaration constantly in mind, shall strive (...)*
+
+[^peace]: *Whereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world*.
+
+[^sipri]: Dati [SIPRI] (www.sipri.org).
 
 [^black-friday]: A mo' di esempio si veda un qualunque quotidiano o un filmato
     sugli assalti ai grandi magazzini durante il *Black Friday*
