@@ -21,7 +21,7 @@ Perché io ci credo davvero che Dio è la compattificazione di Alexandroff dell�
 Sfortunatamente però, rattoppare una cosmogonia zoppicante introducendo il concetto di Dio, porta inevitabilmente a dei paradossi, tipo: se Dio è buono, perché permette il male? Che Dio è, uno che prima mi dice di non ammazzare e poi fa morire di fame o di sete o di stenti centinaia di bambini ogni giorno?
 Le cose sono due: o il male esiste perché Dio non può evitarlo (e allora perché diciamo che è onnipotente?); oppure il male esiste perché Dio non vuole evitarlo (e allora perché diciamo che è buono?).  
 Ci sono risposte canoniche a queste domande, ma possono soddisfare giusto l’ascoltatore medio di Radio Maria, io cercavo qualcosa di meglio.
-Inoltre, la maggior parte delle religioni richiedono una certa dose di fede in qualche luogo (Paradiso) o condizione (Nirvana) soprannaturale e inconoscibile fino al momento successivo alla morte, e questo mi suonava un po’ di fregatura.
+Inoltre, la maggior parte delle religioni richiede una certa dose di fede in qualche luogo (Paradiso) o condizione (Nirvana) soprannaturale e inconoscibile fino al momento successivo alla morte, e questo mi suonava un po’ di fregatura.
 Mi sono chiesto allora se sarebbe stato possibile dare una spiegazione dell’Universo senza introdurre elementi esterni a quelli che conosciamo.
 In altre parole, se fosse possibile creare una metafisica senza elementi metafisici.
 Era possibile.<br/>

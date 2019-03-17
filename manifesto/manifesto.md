@@ -7,8 +7,8 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.5.3</p>
-	<p><label>Data    </label>16 Febbraio 2019</p>
+	<p><label>Versione</label>0.5.4</p>
+	<p><label>Data    </label>Febbraio 2019</p>
 </div>
 	![](../img/seal.png)
 </section>
@@ -28,7 +28,7 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 
 ## Executive summary
 Se continuerete nella lettura di questo Manifesto (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
-Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; un Credo per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.  
+Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.  
 Premetto che non ho titoli per scrivere di filosofia e religione, perché sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer, quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell'esaltazione religiosa; successivamente, descriverò alcune 
 alcune vulnerabilità logiche delle religioni canoniche e definirò delle linee-guida atte a prevenirle; presenterò poi la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.  
   
@@ -55,10 +55,10 @@ Si può fare, ma è sbagliato e limitativo.
 È sbagliato anche da un punto di vista logico, perché i concetti di vero/falso, giusto/sbagliato devono sempre essere preesistenti allo schema a cui vanno applicati, altrimenti non è possibile sapere se la definizione che se ne dà sia giusta o sbagliata, vera o falsa.
 È limitativo, infine, perché restringe il numero dei possibili obiettivi da perseguire a un insieme finito di azioni o traguardi, raggiunti i quali non esiste più possibilità di migliorare.  
 Pensate al gioco degli Scacchi: non esiste nessun motivo, all'interno della schacchiera, che costringa ciascun pezzo a muoversi solo in una specifica maniera; le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a "L" in ossequio a delle regole esterne sia ai pezzi che alla schacchiera, ma è proprio da quelle limitazioni che deriva il fascino del gioco.
-Al contrario, la Società moderna è una scacchiera in cui ciascun pezzo si muove nella maniera che preferisce, come “un asino privo di briglie” perché, in ossequio a un malinteso senso di libertà, sono state eliminate tutte le regole. Le persone di successo che si uccidono con sostanze più o meno legali sono pedoni che, arrivati alla fine della scacchiera grazie alla loro abilità, hanno scoperto che non esiste alcuna forma di promozione perché insieme alle regole sono stati aboliti anche i giocatori.  
+Al contrario, la Società moderna è una scacchiera in cui ciascun pezzo si muove nella maniera che preferisce, come “un asino privo di briglie” perché, in ossequio a un malinteso senso di libertà, sono state eliminate tutte le regole. Le persone di successo che si privano della vita sono pedoni che, arrivati alla fine della scacchiera grazie alla loro abilità, hanno scoperto che non esiste alcuna forma di promozione perché insieme alle regole sono stati aboliti anche i giocatori.  
 
 ### La cura
-Fermo restando che la vita su questo Pianeta non potrà mai migliorare realmente fino a quando non riusciremo a fare un uso più responsabile delle nostre gonadi, è ragionevole pensare che un nuovo schema di valori, che abbia al suo vertice la comunità e non l'individuo, unito a una dose moderata di spiritualità potrebbe aiutarci a uscire da questa picchiata auto-distruttiva, se troviamo un modo efficace per diffonderlo.
+Fermo restando che la vita su questo Pianeta non potrà mai migliorare realmente fino a quando non riusciremo a fare un uso più responsabile delle nostre gonadi, è ragionevole pensare che un nuovo schema di valori, che abbia al suo vertice la comunità e non l'individuo, unito a una moderata dose di spiritualità potrebbe aiutarci a uscire da questa picchiata auto-distruttiva, se troviamo un modo efficace per diffonderlo.
 
 La (buona) politica sarebbe la soluzione ideale, se i (buoni) politici avessero il potere di prendere delle decisioni impopolari, cosa che non è, perché gli elettori sono dei bambini obesi che, dovendo scegliere fra un dietologo e un gelataio, non fanno mai la scelta corretta per la loro salute.  
 La cultura non può venirci in aiuto perché la mancanza di stimoli esterni ha prodotto un'economia curtense delle idee nella quale letteratura, cinema, televisione e Internet riciclano ciascuna le idee delle altre, in un banchetto coprofago di concetti e storie già visti.  
@@ -119,7 +119,7 @@ esempio), ma nessuno potrebbe criticare il buonista, che decide in maniera coere
 il povero Buonista non saprebbe cosa rispondere, perché per farlo dovrebbe sconfessare almeno uno degli assiomi su cui basa la sua visione dell'esistenza.
 Dovrà quindi rifugiarsi in una risposta generica, chiamando in causa l'imponderabilità delle decisioni divine, oppure condannarvi al rogo come eretico.  
 
-### *Imagine*
+### *Bug* noti del laicismo
 A questo punto, o forse anche da prima, vi starete chiedendo che bisogno ci sia di utilizzare uno strumento instabile come la religione e se non sarebbe meglio adottare, in vece, un approccio laico al problema.  
 Il fatto è che, con buona pace di John Lennon, in un Mondo senza religioni la situazione non migliorerebbe: se le tre domande viste sopra le faceste a un giudice, vi risponderebbe che sì, la ragazza può abortire, ma né il condannato né il malato possono essere uccisi, perché la Legge lo vieta. Se però gli domandaste:
 
@@ -132,17 +132,15 @@ Il fatto è che, con buona pace di John Lennon, in un Mondo senza religioni la s
 </ol>
 
 il buon giudice non avrebbe meno difficoltà del Buonista a trovare una risposta.
-La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe comunque di spedirvi in prigione, dove trovereste ad attendervi il simpatico soggetto della domanda [B](#domanda-B).
-
-#### *Bug* noti del laicismo
-Anche i principi&icirc; delle società laiche, al pari dei dogmi delle religioni, non sono leggi comprovabili, ma opinioni o speranze.
+La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe comunque di spedirvi in prigione, dove trovereste ad attendervi il simpatico soggetto della domanda [B](#domanda-B).  
+Questo perché anche i principi&icirc; delle società laiche, al pari dei dogmi delle religioni, non sono verità comprovabili, ma opinioni o speranze.
 A differenza dei dogmi religiosi, però, i laici non possono rifarsi a valori di ordine superiore e, come abbiamo visto [sopra](#il-problema), devono trovare i fondamenti delle loro affermazioni nella realtà contingente, cosa che non sempre è possibile, quindi le loro regole risultano ancora più inconsistenti di quelle religiose.
 
 Prendete ad esempio i trenta articoli della [Dichiarazione dei Diritti dell'Uomo](http://www.un.org/en/universal-declaration-human-rights/) del 1948: voi e io troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.  
 Perché un signore della guerra centro-africano dovrebbe rispettarle, dato che non sono un insieme di norme giuridiche a cui gli Stati e gli individui debbano attenersi, ma un elenco di quelli che *dovrebbero essere*[^achievements] i diritti di ogni essere umano? 
 Perché, soprattutto, dovrebbe rispettare delle regole volte al mantenimento della pace[^peace], promulgate da un'Organizzazione che ha al suo vertice Paesi che sono i principali produttori di armi del Mondo[^sipri] e che violano costantemente quelle stesse regole da loro promosse?
 <br>  
-Dato che l'approccio laico presenta gli stessi problemi logici di quello religioso, mancando dei corrispondenti lati positivi, non ci resta altra scelta che cercare di far “funzionare” la religione.
+Dato che l'approccio laico presenta gli stessi problemi logici di quello religioso, mancando però dei corrispondenti lati positivi, non ci resta altra scelta che cercare di far “funzionare” la religione.
 
 ### *Debug* del Buonismo
 Abbiamo visto che i tre assiomi del Buonismo:
@@ -296,9 +294,9 @@ Rispetto al software cosiddetto: *proprietario*, ovvero il software realizzato d
 I letterati, gli scultori, i pittori non possono modificare le loro opere, una volta che sono state pubblicate. Possono dare un ritocco di colore qui, un colpo di scalpello là, ma si tratta sempre di aggiustamenti minimi, che non cambiano la struttura stessa dell'arte-fatto.
 I musicisti, i teatranti e, in parte, i cineasti sono un po' più fortunati, perché possono apportare più facilmente delle modifiche alle loro opere, ma si tratta comunque di eventi che accadono di rado.
 <br />  
-Al contrario, la (buona) produzione di software ha il vantaggio di essere in continua evoluzione.
+Al contrario, la buona produzione di software ha il vantaggio di essere in continua evoluzione.
 Un software può essere *stabile*, ovvero non avere difetti noti, ma non è mai finito, completo, *perfetto*; sia perché l'utilizzo potrebbe rivelare dei difetti sfuggiti alla fase di test, sia perché delle variazioni del contesto di utilizzo potrebbero richiedere delle modifiche al sistema.
-Il (buon) software viene quindi costantemente aggiornato e le diverse versioni di uno stesso prodotto sono numerate in maniera progressiva con dei codici composti da tre numeri separati da punti (p.es. *1.4.3*) che indicano la versione *major*, la versione *minor e* la *patch*.  
+Il buon software viene quindi costantemente aggiornato e le diverse versioni di uno stesso prodotto sono numerate in maniera progressiva con dei codici composti da tre numeri separati da punti (p.es. *1.4.3*) che indicano la versione *major*, la versione *minor e* la *patch*.  
 La versione *major* viene incrementata ogni volta che si apportano delle drastiche modifiche al software, rendendolo incompatibile con le versioni precedenti.
 La versione *minor* viene incrementata quando si modifica il codice in maniera minore, aggiungendo o modificando delle funzionalità in maniera compatibile con le versioni precedenti.
 Il numero di *patch* è incrementato ogni volta che si apportano delle modifiche o delle correzioni anche minime al sistema.
@@ -306,9 +304,9 @@ La *major version zero* (0.y.z) è destinata allo sviluppo iniziale, quando il s
 
 ### Versionamento delle religioni monoteistiche
 
-La tabella seguente riporta un possibile versionamento delle grandi religioni monoteistiche:
+Se volessimo applicate il versionamento alle grandi religioni monoteistiche, otterremmo una sequenza simile a questa:
 
-| n. | anno | descrizione | changelog
+| ver. | anno | descrizione | modifiche apportate
 :---: | :---: | --- | :--- |
 0.1.0 | 3200 a.C. | Culti egizi            | Riduzione del numero degli Dei; enoteismo e atenismo POC[^poc] del monoteismo.
 1.0.0 | 2000 a.C. | Ebraismo               | Dio è uno; tutti gli altri sono deprecati.
@@ -317,10 +315,10 @@ La tabella seguente riporta un possibile versionamento delle grandi religioni mo
 1.0.3 | 500 a.C.   | Levitico               |  Redazione del manuale di amministratore di sistema.
 1.1.0 | 33         | Gesù di Nazareth       |  Evoluzione e *debug* delle regole.
 1.1.1 | 60         | Paolo di Tarso         |  Evoluzione delle nuove regole.
-1.1.2 | 70         | Vangelo di Marco       |  Documentazione API[^api] versione 1.1.
-1.1.3 | 85         | Vangelo di Matteo      |  Documentazione API versione 1.1.
-1.1.4 | 95         | Vangelo di Luca        |  Documentazione API versione 1.1.
-1.2.0 | 787        | II Concilio Nicea |  Miglioramenti all'interfaccia grafica: permesse le immagini sacre.
+1.1.2 | 70         | Vangelo di Marco       |  Documentazione versione 1.1.
+1.1.3 | 85         | Vangelo di Matteo      |  Documentazione versione 1.1.
+1.1.4 | 95         | Vangelo di Luca        |  Documentazione versione 1.1.
+1.2.0 | 787        | II° Concilio Nicea |  Miglioramenti all'interfaccia grafica: permesse le immagini sacre.
 1.2.1 | 1284       | Vescovo di Passavia    |  Potenziamento dell'*help-desk* con l'introduzione dei Santi Ausiliatori.
 1.3.0 | 1054       | Chiesa Ortodossa       |  Modifiche all'architettura del sistema.
 1.4.1 | 1540       | Calvino                |  Modifiche all'interfaccia utente.
@@ -342,34 +340,20 @@ Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero
 0.3.2 | 2018 |  Allineamento         | Allineamento delle versioni git con quelle del Manifesto.
 0.4.0 | oggi |  Manifesto Markdown | Conversione del Manifesto in formato Markdown
 
-Già da queste poche righe è possibile vedere alcuni benefici dell'approccio *open-source* alla speculazione filosofica.
-<br>  
-Nella versione 0.1.0 del C'hi++, la figura che definisco: *Immancabile Testa di Pera* era un elemento negativo, assimilabile al Diavolo o alla *Discordia* di Empedocle. 
-Successivamente, però, ho capito che questa visione delle cose era la proiezione di un mio desiderio/speranza e sono passato a un modello meno giudicante, in cui i due Enti che generano l'Universo non sono in contrapposizione, ma cooperano in maniera simile allo Yin e allo Yang del Tao o a Prakṛti e Puruṣa dell'Induismo.
-
+Già da queste poche righe è possibile vedere alcuni benefici dell'approccio *open-source* alla speculazione filosofica: nella versione 0.1.0 del C'hi++, la figura che definisco: *Immancabile Testa di Pera* era un elemento negativo, assimilabile al Diavolo o alla *Discordia* di Empedocle. 
+Successivamente, però, ho capito che questa visione delle cose era la proiezione di un mio desiderio/speranza e sono passato a un modello meno giudicante, in cui i due Enti che generano l'Universo non sono in contrapposizione, ma cooperano in maniera simile allo *Yin* e allo *Yang* del Tao o a *Prakṛti* e *Puruṣa* dell'Induismo.
 Questa modifica, per quanto radicale, non ha avuto nessuna ripercussione negativa sul resto del modello teorico, *dichiaratamente* fallace in quanto ancora in fase evolutiva (*major version* 0); anzi: lo ha reso più robusto perché ha premesso di trovare delle affinità con altre religioni.
 <br />  
 Se avessimo applicato la stessa modifica al Cattolicesimo, riabilitando la figura del Diavolo, le cose non sarebbero andate altrettanto bene perché, se il Diavolo non fosse cattivo, non solo dovremmo mettere in discussione la veridicità di moltissimi passi della Bibbia - che non può essere messa in discussione perché è la Parola di Dio -, ma priveremmo la Chiesa della sua funzione primaria che è quella di salvare le anime, appunto, dal Maligno.
 
 ## Release/0.1: *Sostiene Aristotele*
-A Giugno del 2007 scrissi un documento dal titolo: *Sostiene Aristotele*
-che possiamo considerare la versione 0.1.1 del C'hi++. 
-Lo riporto di seguito, senza modifiche al testo originale, anche se non sono più d'accordo su alcune affermazioni:
+A Giugno del 2007 scrissi un documento dal titolo:  [Sostiene Aristotele](sostiene-aristotele.md) che possiamo considerare la versione 0.1.1 del C'hi++. 
+In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione[^soko].
+Nelle fasi di espansione, l'Uno esplodeva, generando l'Universo così come lo conosciamo; nelle fasi di contrazione, l'Universo collassava nell'Uno.  
+Anche se in embrione, gli elementi principali del C'hi++ ci sono tutti; la rarefazione degli elementi metafisici:
 
 <div class="citazione" >
-Sostiene Aristotele (e per fortuna lo sostiene nella sesta pagina de: “La metafisica”, ché se l’avesse sostenuto, che so, a pagina quattrocentosettantadue, chissà se l’avrei mai saputo) che la ricerca della conoscenza, “deve in qualche modo portarci a uno stato contrario a quello nel quale si dà inizio alle ricerche”. 
-Ci si meraviglia di qualcosa, se ne indagano le cause e, una volta che le si è scoperte, ciò che prima meravigliava appare come qualcosa di inevitabile.<br/>
-L’oggetto di studio, nel caso specifico, è l’Universo.
-Dopo anni di ragionamenti, di letture balzane e di teorie ancora più balzane, sono riuscito a formulare una visione delle cose (mi spiace, ma mi rifiuto di scrivere Weltanschauung) che sembra funzionare piuttosto bene e che, soprattutto, è del tutto indipendente dall’esistenza di una o più Divinità.<br/>
-Perché io ci credo davvero che Dio è la compattificazione di Alexandroff dell’Universo, ovvero un elemento soprannaturale che si introduce nelle “spiegazioni” quando non si sa come rendere conto di qualcosa.
-Sfortunatamente però, rattoppare una cosmogonia zoppicante introducendo il concetto di Dio, porta inevitabilmente a dei paradossi, tipo: se Dio è buono, perché permette il male? Che Dio è, uno che prima mi dice di non ammazzare e poi fa morire di fame o di sete o di stenti centinaia di bambini ogni giorno?
-Le cose sono due: o il male esiste perché Dio non può evitarlo (e allora perché diciamo che è onnipotente?); oppure il male esiste perché Dio non vuole evitarlo (e allora perché diciamo che è buono?).  
-Ci sono risposte canoniche a queste domande, ma possono soddisfare giusto l’ascoltatore medio di Radio Maria, io cercavo qualcosa di meglio.
-Inoltre, la maggior parte delle religioni richiedono una certa dose di fede in qualche luogo (Paradiso) o condizione (Nirvana) soprannaturale e inconoscibile fino al momento successivo alla morte, e questo mi suonava un po’ di fregatura.
-Mi sono chiesto allora se sarebbe stato possibile dare una spiegazione dell’Universo senza introdurre elementi esterni a quelli che conosciamo.
-In altre parole, se fosse possibile creare una metafisica senza elementi metafisici.
-Era possibile.<br/>
-Sostiene Aristotele (sempre nelle prime pagine, per fortuna) che le scienze più rigorose sono quelle che richiedono il numero minore di premesse.
+Sostiene Aristotele che le scienze più rigorose sono quelle che richiedono il numero minore di premesse.
 La cosa mi conforta, perché la mia ipotesi richiede solo tre premesse per funzionare a livello “base”, e quattro per una visione un po’ più appetibile delle cose.
 I tre dogmi principali della mia “religione” sono:
 <ol>
@@ -392,28 +376,55 @@ Poe, in “Eureka”, dice un sacco di fregnacce, ma sostiene una teoria affasci
 Io lo cito perché l’idea è molto elegante, ma, per quelli che sono i miei scopi, mi limito qui a dare per buona, anche in assenza di prove a suffragio, la tesi secondo cui l’Universo prima o poi collasserà nell’Uno Primigenio.<br/>
 <br />
 Riassumendo, se affermo che l’Universo esiste, inizialmente era Uno, adesso si sta espandendo, ma poi tornerà a essere Uno, credo che l’unica cosa che mi si può contestare è quel: “tornerà” in vece di: “potrebbe tornare”.<br/>
+</div>
+
+la ciclicità dell'Universo: 
+
+<div class="citazione" >
 Una volta che l’Universo sarà nuovamente collassato nell’Uno, i casi saranno due: resterà Uno per il resto del Tempo oppure esploderà di nuovo, dando vita a un nuovo Universo.
-La prima ipotesi è perfettamente lecita, ma è noiosa e contrasta con la tendenza generale delle cose ad avvenire per cicli (le stagioni, per esempio), quindi ce ne disinteresseremo, chiedendoci invece cosa potrebbe succedere se si verificasse un nuovo Big Bang.<br/>
-Anche qui, le ipotesi sono due.
-Una è: potrebbe essere che un Big Bang avvenga solo in determinate condizioni e che quelle condizioni portino necessariamente a un Universo identico a quello come noi lo conosciamo adesso; quindi, se l’Uno esploderà di nuovo, ricomincerà tutto da capo.
+La prima ipotesi è perfettamente lecita, ma è noiosa e contrasta con la tendenza generale delle cose ad avvenire per cicli (le stagioni, per esempio), quindi ce ne disinteresseremo, chiedendoci invece cosa potrebbe succedere se si verificasse un nuovo Big Bang. 
+Anche qui, le ipotesi sono due. Una è: potrebbe essere che un Big Bang avvenga solo in determinate condizioni e che quelle condizioni portino necessariamente a un Universo identico a quello come noi lo conosciamo adesso; quindi, se l’Uno esploderà di nuovo, ricomincerà tutto da capo.
 La seconda ipotesi è che ogni Big Bang avviene in circostanze e con modalità specifiche e quindi, se l’Uno esploderà di nuovo, nascerà un nuovo Universo, che potrà avere pochi o nessun punto di contatto con quello corrente.<br/>
-La prima ipotesi è possibile, ma poco probabile, quindi diamo per scontato che sia la seconda, quella corretta; tanto non cambia niente, perché il tempo che noi abbiamo a disposizione per far esplodere e implodere l’Universo è infinito e per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali, in un lasso di tempo infinito è  impossibile che la cosa prima o poi non avvenga.<br/>
+La prima ipotesi è possibile, ma poco probabile, quindi diamo per scontato che sia la seconda, quella corretta; tanto non cambia niente, perché il tempo che noi abbiamo a disposizione per far esplodere e implodere l’Universo è infinito e per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali, in un lasso di tempo infinito è  impossibile che la cosa prima o poi non avvenga.
 In base allo stesso principio, dato per scontato che - o prima o poi - questo Universo tornerà a manifestarsi, è lecito pensare, non per fede, ma in base a un banale calcolo probabilistico, che anche ciò che c’è in esso possa o prima o poi tornare a essere. Noi compresi.
 Magari non la prima volta che questo Universo si ripeterà, magari non la seconda, ma se la sequenza esplosione/collasso andrà avanti per sempre, è lecito pensare che in uno dei cicli futuri noi compariremo di nuovo su questa Terra.
-Anzi, estendendo retroattivamente gli stessi principi è altrettanto lecito pensare che questa non sia la prima volta che noi siamo qui a dire le nostre battute: per quello che ne possiamo sapere, questa potrebbe essere una commedia che ha avuto più repliche di Cats e di The Rocky Horror Picture Show messi insieme...<br/>
-<br />
+Anzi, estendendo retroattivamente gli stessi principi è altrettanto lecito pensare che questa non sia la prima volta che noi siamo qui a dire le nostre battute: per quello che ne possiamo sapere, questa potrebbe essere una commedia che ha avuto più repliche di Cats e di The Rocky Horror Picture Show messi insieme...</div>
+
+la memoria degli eventi passati: 
+
+<div class="citazione" >
+Il quarto dogma si discosta dai tre dogmi principali perché è l’unico che richiede una certa dose di fede. (...)
+In parole povere: cos’è quello che comunemente chiamiamo: “istinto” e che Jung, se non ho capito male (probabile) definisce: “inconscio collettivo”?
+Non ho una risposta certa a questa domanda, ma solo un’ipotesi: Post-it.  
+Promemoria che noi, nel corso delle nostre precedenti esistenze, abbiamo appiccicato da qualche parte, per ricordarci di fare o di non fare qualcosa.
+Una sorta di memoria persistente, esterna, o comunque non soggetta ai cicli di rinascita dell’Universo.
+Se l’Universo fosse un computer, potremmo pensare a tutto ciò che esiste come a un programma che “gira” in memoria e all’istinto (o all’immaginario collettivo) come a qualcosa scritto invece sul disco rigido.
+Ogni volta che il computer viene spento, la memoria si svuota e tutto quello che conteneva si perde, mentre ciò che è scritto sul disco rigido rimane lì, in attesa della prossima “accensione”.
+Insomma, il dogma numero quattro è: Lo sai, perché ci sei già passato.<br/>
+Non vale per qualunque evento della nostra esistenza, ovviamente, ma solo per quelli importanti: quelli che, nelle nostre precedenti esistenze, hanno prodotto effetti che ci interessa o ri-produrre o evitare.
+Non ho ancora capito come facciamo a scrivere questi promemoria, posto che esistano davvero; magari è sufficiente essere molto contenti o molto addolorati per qualcosa, ma so in che maniera possiamo leggerli: evitando di non leggerli.
+Evitando di ignorare i segnali che riceviamo, riconoscendo ed accettando la direzione in cui ci porta la corrente anche quando non è quella in cui vorremmo o preferiremmo andare.
+Non sto dicendo che sia facile.
+</div>
+
+l'auto-lesionismo delle scelte egoistiche:
+
+<div class="citazione" >
 Ma chi siamo, “noi”?
 Mi piacerebbe pensare che esiste qualcosa di bizzarro come l’anima, ma come ho detto, questa è una cosmogonia che prescinde da elementi metafisici e quindi ne dovrò fare a meno.
 L’idea è che l’anima non esiste e che ciò che noi chiamiamo “anima” altro non sia che una particolare conformazione del circuito sinaptico del cervello.
 In altre parole, l’anima è il modo in cui i neuroni del nostro cervello sono collegati gli uni agli altri.
 D’altro canto, se non fosse così, se esistesse davvero un’anima che determina il nostro modo di comportarci, non si spiegherebbero gli effetti dell’elettroshock o della lobotomia...
 Attenzione, però: dire che l’anima non esiste è pericoloso, perché (semplifico) se l’anima non c’è, allora non posso andare all’Inferno e se non rischio di andare all’Inferno, chi me lo fa fare di comportarmi bene, facendomi un culo così tutta la vita per due soldi? Se davvero l’anima non c’è, mi metto a spacciare droga o a peculare sulle commesse statali e faccio la bella vita.<br/>
-È questo che ha fatto la fortuna della Chiesa Cattolica: sostenendo l’esistenza dell’anima e propugnando un sistema che prevedeva una pena eterna per peccati risibili, ha prodotto duemila anni di pigoristica accettazione delle iniquità dei potenti ai danni dei deboli (ari-semplifico, i dettagli in: Chi++).
-Ma, se le cose stanno come penso io, il fatto che l’anima non esista non ci autorizza a fare il porco comodo nostro, anzi...
+È questo che ha fatto la fortuna della Chiesa Cattolica: sostenendo l’esistenza dell’anima e propugnando un sistema che prevedeva una pena eterna per peccati risibili, ha prodotto duemila anni di pigoristica accettazione delle iniquità dei potenti ai danni dei deboli, ma, se le cose stanno come penso io, il fatto che l’anima non esista non ci autorizza a fare il porco comodo nostro, anzi...<br />
 Se davvero siamo tutti degli epifenomeni, possiamo manifestarci ora qui ora lì, a seconda dei casi e se io oggi (in questo ciclo dell’Universo) mi manifesto all’interno di Raimondo Canaro, evasore fiscale e filosofo d’accatto, un domani (in un altro ciclo di questa particolare specie di Universo) potrei manifestarmi in Pierluigi Mancuso, ufficiale della Guardia di Finanza.
 Similmente, se io oggi (sempre nel senso di: in questo ciclo dell’Universo) mi metto a spacciare droga fregandomene delle persone che ammazzo e delle famiglie che rovino, domani (sempre nel senso...), potrei benissimo ritrovarmi in uno di quei drogati o di quei familiari e subirei le conseguenze delle mie stesse azioni.
-È quindi decisamente meglio che io mi comporti bene e che cerchi, per quanto mi è possibile, di convincere anche gli altri a comportarsi bene.<br/>
-<br/>
+È quindi decisamente meglio che io mi comporti bene e che cerchi, per quanto mi è possibile, di convincere anche gli altri a comportarsi bene.
+</div>
+
+la visone dell'esistenza come un processo di miglioramento continuo:
+
+<div class="citazione" >
 Ora, il concetto di “bene”, a prescindere da una Divinità e da un corpo di regole predefinito non è che funzioni granché (come dimostra, senza volerlo, il libro: "Un’etica senza Dio" di Lecaldano), ma nel nostro caso possiamo definire “bene” quel comportamento che non lede, almeno intenzionalmente, nessuno.
 È la differenza, drastica, che passa fra l’agire male e l’agire per il male.
 (Anche qui, devo semplificare, ma ho delle dimostrazioni per tutte queste affermazioni...)
@@ -433,47 +444,14 @@ C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musa
 È facile: se stiamo agendo in risposta a un’esigenza esterna alla nostra persona, è probabile che siamo sulla strada giusta; se stiamo agendo per soddisfare una nostra personalissima esigenza, è probabile che siamo sulla strada sbagliata. Un po’ la differenza che passa fra lo sparare a un alce per mangiarselo e sparargli per appendersi in casa la sua testa.<br/>
 Ciascuno di noi è in grado di capire se si sta comportando bene oppure male: deve solo chiederselo e darsi una risposta sincera.
 Qualche volta non serve nemmeno chiederselo.
-Ed è qui che entra in gioco il quarto dogma.<br/>
-<br />
-Il quarto dogma si discosta dai tre dogmi principali perché è l’unico che richiede una certa dose di fede.
-Il quarto dogma si discosta anche dai dogmi ordinari, perché invece di imporre in maniera ricattatoria un’affermazione che sarebbe altrimenti piuttosto difficile da credere - Dio è uno e trino, la Madonna era vergine, il Papa è infallibile ecc. - prova a rendere coerenti (all’interno del sistema, ovviamente) dei fatti che non lo sono. Faccio degli esempi:
-<blockquote>
-“how does a duck knows what direction South is?”, come diceva la canzone dei Crash Test Dummies;</br>
-</br>perché, alle volte, agiamo come se sapessimo cosa sta per succedere?</br>
-</br>perché, il 24 dicembre del 2004 io, prima di uscire a ubriacarmi con mio fratello, per celebrare l’anniversario della morte del nostro cane, mi sono vestito da bravo ragazzo, con il cardigan e il loden?
-</blockquote>
- In parole povere: cos’è quello che comunemente chiamiamo: “istinto” e che Jung, se non ho capito male (probabile) definisce: “inconscio collettivo”?<br/>
-Non ho una risposta certa a questa domanda, ma solo un’ipotesi: Post-it.
-Promemoria che noi, nel corso delle nostre precedenti esistenze, abbiamo appiccicato da qualche parte, per ricordarci di fare o di non fare qualcosa.
-Una sorta di memoria persistente, esterna, o comunque non soggetta ai cicli di rinascita dell’Universo.
-Se l’Universo fosse un computer, potremmo pensare a tutto ciò che esiste come a un programma che “gira” in memoria e all’istinto (o all’immaginario collettivo) come a qualcosa scritto invece sul disco rigido.
-Ogni volta che il computer viene spento, la memoria si svuota e tutto quello che conteneva si perde, mentre ciò che è scritto sul disco rigido rimane lì, in attesa della prossima “accensione”.
-Insomma, il dogma numero quattro è: lo sai, perché ci sei già passato.<br/>
-Non vale per qualunque evento della nostra esistenza, ovviamente, ma solo per quelli importanti: quelli che, nelle nostre precedenti esistenze, hanno prodotto effetti che ci interessa o ri-produrre o evitare.
-Non ho ancora capito come facciamo a scrivere questi promemoria, posto che esistano davvero; magari è sufficiente essere molto contenti o molto addolorati per qualcosa, ma so in che maniera possiamo leggerli: evitando di non leggerli.
-Evitando di ignorare i segnali che riceviamo, riconoscendo ed accettando la direzione in cui ci porta la corrente anche quando non è quella in cui vorremmo o preferiremmo andare.
-Non sto dicendo che sia facile.
-<br />
-La mia teoria ha un corollario metafisico, ma non ce la farei mai a farlo entrare tutto in queste poche pagine. È il libro che sto scrivendo.
-Ne faccio un breve riassunto:
-<blockquote>L’Universo è il Paradiso: siamo noi, che lo utilizziamo male, trasformandolo nell'Inferno.</blockquote>
-Questa visione ha il pregio di funzionare anche solo con le quattro dimensioni che conosciamo ed è perfettamente compatibile con tutte le principali religioni, oltre che con Imagine di John Lennon.
-<blockquote> 
-Imagine there's no heaven<br/>
-It's easy if you try<br/>
-No hell below us<br/>
-Above us only sky<br/>
-</blockquote> 
+(...)
 Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Universo e siamo noi, con le nostre azioni, a decidere in quale dei due vivere.
 </div>
 
-Pur se in embrione, gli elementi principali del C'hi++ ci sono tutti: la rarefazione degli elementi metafisici, la ciclicità dell'Universo, la memoria degli eventi passati, l'auto-lesionismo delle scelte egoistiche e la visone dell'esistenza come un processo di miglioramento continuo.
-
 ### Il senso della vita è il debug
-Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*[^beta-tester] di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali, come il *Koan* *Mu* o il motivo per cui Nanchuan taglia in due il gatto[^mumon] ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.
-<br />    
+Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*[^beta-tester] di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali (come il *Koan Mu* o il motivo per cui Nanchuan taglia in due il gatto[^mumon]) ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.  
 Infatti, se paragoniamo l'esistenza a una sessione di test software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori[^vasana] perché venga corretto nelle successive versioni del programma.
-Visto che, nel nostro caso, beta-tester, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/beta-tester, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.
+Visto che, nel nostro caso, *beta-tester*, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/*beta-tester*, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.
 In quest'ottica, la frase:
 
 >cento Mondi di peccato sono dissipati dalla luce di un solo pentimento[^pentimento] 
@@ -481,7 +459,7 @@ In quest'ottica, la frase:
 non è un'anomalia, ma è una diretta conseguenza della sua presa di coscienza, perché se l'errore viene corretto, il dolore che ha causato in questa esistenza non si ripeterà nelle esistenze successive e l'Universo sarà un po' più Paradiso e un po' meno Inferno.  
 
 Per lo stesso principio visto sopra, se qualcuno fa qualcosa che vi arreca giovamento, è importante che glielo facciate sapere, in modo che possa farlo di nuovo nelle prossime esistenze.
-Questo è facile, oltre che educato, se la persona che ci ha favorito si è comportata bene nei nostri confronti, ma richiede tanta onestà intellettuale e un bel po' di fede se la persona che ci ha favorito si è comportata male.  
+Questo è facile, oltre che educato, se la persona che ci ha favorito si è comportata bene nei nostri confronti, ma richiede tanta onestà intellettuale e un bel po' di fede se la persona ci ha favorito comportandosi male nei nostri confronti.  
 
 ##Release/0.2: *C'hi++*<a name="chi++"></a>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
@@ -910,6 +888,8 @@ Mi sembra un motivo più che sufficiente.
 
 [^api]: *Application Program Interface*: l'insieme delle regole per
     l'utilizzo del sistema
+
+[^soko]: [aggiungere riferimento a poesia funeraria di Gesshū Sōko]
 
 [^beta-tester]: I *beta-tester* sono le persone che provano in anteprima i programmi che stanno per essere rilasciati sul mercato per cercare eventuali errori sfuggiti alla fase di test interno effettuato dell'azienda produttrice. 
 
