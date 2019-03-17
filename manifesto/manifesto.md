@@ -837,6 +837,8 @@ Un ostacolo alla diffusione di massa che, al contrario, non penso sarà possibil
 Per alcuni, questo può essere un lato positivo, ma si tratta di una minoranza; in questo momento, la maggior parte delle persone è alla ricerca di certezze, non di verità.  
 D'altro canto, il Buddismo Zen utilizza un approccio simile da più di mille anni e anche la religone ebraica, se dobbiamo credere al Katz[^katz], ha prodotto un gran numero di premii Nobel perché spinge i suoi fedeli a mettere in discussione le affermazioni dei testi sacri, rendendoli così più propensi a sviluppare idee originali. 
 
+![](../img/vsd.png)
+
 ## Conclusioni
 Non so quale sarà il destino di *C'hi++*; non so dire nemmeno se questo Manifesto mi procurerà aiuto o sberleffi. 
 Un amico, a cui ne ho fatto leggere una prima bozza, sostiene che:
