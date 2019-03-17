@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="chi++.css" />
-<!--
+
 <section class="pagina cover">
 <header>
 	<h1>C'hi++</h1>
@@ -12,7 +12,7 @@
 </div>
 	![](../img/seal.png)
 </section>
--->
+
 <section class="dedica">
 0x0D 0x0C 0x0B 0x0A
 </section>
@@ -512,10 +512,9 @@ Nel racconto all'inizio del libro comparirà anche quello che poi sarà uno dei 
 > Una volta di più, mi trovo a dover fronteggiare l’Annosa Dicotomia fra ciò che il cliente desidera e quello di cui realmente ha bisogno e, una volta di più, sarà ingrato compito dell’uomo informatico quello di venire apparentemente meno ai propri doveri al fine di produrre qualcosa di consono alle reali esigenze del committente.
 
 L'Annosa Dicotomia è un fenomeno nefasto, simile alla *Maya* dell'Induismo, che ci impedisce di vedere con chiarezza ciò che è bene fare o perseguire.  
-Così come l'illusorietà del mondo sensibile è il frutto dell'azione dei tre  *guṇa*: Sattva, Rajas e Tamas, così l'Annosa Dicotomia nasce dallo scontro fra due forze contrapposte: *Arte* e *Marketing*.
+Così come l'illusorietà del mondo sensibile è il frutto dell'azione dei tre  *guna*: *Sattva*, *Rajas* e *Tamas*, così l'Annosa Dicotomia nasce dallo scontro fra due forze contrapposte: *Arte* e *Marketing*.
 Arte dà all'uomo ciò di cui ha bisogno e, come una buona madre, non soddisfa i suoi capricci, ma si cura del suo benessere anche se ciò può apparire crudele.
-Marketing, al contrario, dà all'uomo ciò che desidera e, bramoso di approvazione, soddisfa ogni suo capriccio, incurante degli effetti che questi avranno sulla sua vita.
-<br />  
+Marketing, al contrario, dà all'uomo ciò che desidera e, bramoso di approvazione, soddisfa ogni suo capriccio, incurante degli effetti che questi avranno sulla sua vita.  
 Nell'estetica del C'hi++ a queste due forze se ne aggiunge una terza, intermedia: *Decorazione*. 
 Sono opere di Decorazione tutte quelle idee e quegli artefatti che soddisfano i sensi dell'uomo, ma che non hanno alcuna influenza diretta, positiva o negativa che sia, sulla sua crescita spirituale.
 
@@ -544,7 +543,7 @@ Al contrario, l’indottrinamento degli informatici, la loro segregazione in una
 
 Nei capitoli seguenti, sarà descritto il linguaggio C++, facendo dei paralleli fra i suoi costrutti sintattici e alcuni concetti filosofici. 
 Riporto di seguito alcuni esempi, anche si tratta ancora di appunti e non di un testo definitivo: 
-<br />  
+
 ####Commenti al codice 
 Affinità con i *Post-it* di cui parlavo prima, una sorta di memoria storica dell'Universo:
 
@@ -628,7 +627,7 @@ Capire quali sono le azioni necessarie è semplice, così com’è semplice, qua
 Nell'ultimo capitolo sarà definita anche la cosmogonia del C'hi++, ovvero lo *Spazionismo*.
 
 ### Spazionismo
-Lo Spazionismo è l'evoluzione delle idee abbozzate in *Sostiene Aristotele*, dove il la genesi dell'Universo era descritta a livello macroscopico: 
+Lo Spazionismo è l'evoluzione delle idee abbozzate in *Sostiene Aristotele*, dove la genesi dell'Universo era descritta a livello macroscopico: 
 
 1. l'Uno Primigenio esplode, generando l'universo; 
 2. l'Universo si espande; 
@@ -641,7 +640,7 @@ Così come lo schermo di un computer è costituito da una matrice bidimensionale
 La sequenza vista sopra, riletta in chiave spazionista, diventa:  
 
 1. l'Uno Primigenio esplode a causa[^causa] di una Forza che ne disperde l'Energia nello spazio;
-2. l'Energia si spande per l'Universo e, conferendo massa/esistenza agli spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi e solidi che noi conosciamo, dall'elio della nebulosa di Wolf–Rayet alla nostra maestra delle Elementari;
+2. l'Energia si spande per l'Universo e, conferendo massa/esistenza agli spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi e solidi che noi conosciamo, dall'elio della nebulosa di *Wolf–Rayet* alla nostra maestra delle Elementari;
 4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante[^variante] della Storia, che a sua volta genererà nuove esperienze e nuovi *Post-It*;
 4. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
 5. tutto ricomincia daccapo.
@@ -694,7 +693,7 @@ git clone git@bitbucket.org:canaro/chi-plus-plus.git
 Mi sono dilungato su Git perché il prossimo paragrafo comincia con la frase..
 
 ## Release/0.4: Markdown
-Come si può vedere dal registro degli eventi di Git, il 9 Dicembre di quest'anno ho convertito il testo di questo documento dal formato originale, *OpenDocument* in formato *Markdown*.
+Come si può vedere dal registro degli eventi di Git, il 9 Dicembre di quest'anno ho convertito il testo di questo documento dal formato *OpenDocument* al formato *Markdown*.
 
 ```
 commit ba7ff38b6d0862b13a79f10153c2eb11477b2a1f
@@ -709,12 +708,12 @@ Date:   Sun Dec 9 10:30:25 2018 +0100
 
     Iniziata conversione Manifesto in formato Markdown
 ```
-La differenza fra i due formati è che OpenDocument non è un formato testuale puro ed è più complicato da gestire con Git; al contrario, Markdown è un formato *plain-text* ed è gestito senza problemi da Git.
-<br/>  
-Il passaggio a Markdown non è stato un vezzo, ma un obbligo, perché solo in questo modo è possibile avere un controllo completo sulle modifiche che sono apportate ai testi. Un beneficio collaterale dell'adozione di Markdown è la *portabilità* del testo: mentre un testo in formato OpenDocument può essere letto e modificato solo con un programma di *desktop-publishing*, come *Word* o una delle sue alternative, un testo Markdown può essere letto e modificato con qualunque strumento permetta di aprire e modificare file di testo, da *Notepad* a *vi*.
+La differenza fra i due formati è che OpenDocument non è un formato testuale puro ed è più complicato da gestire con Git; al contrario, Markdown è un formato *plain-text* ed è gestito senza problemi da Git. 
+Il passaggio a Markdown non è stato un vezzo, ma un obbligo, perché solo in questo modo è possibile avere un controllo completo sulle modifiche che sono apportate ai testi.  
+Un beneficio collaterale dell'adozione di Markdown è stato la *portabilità* del testo: mentre un testo in formato OpenDocument può essere letto e modificato solo con un programma di *desktop-publishing*, come *Word* o una delle sue alternative, un testo Markdown può essere letto e modificato con qualunque strumento permetta di aprire e modificare file di testo, da *Notepad* a *vi*. 
 
 ### Portabilità 
-Il termine: *portabilità* indica la possibilità di eseguire uno stesso programma su computer con sistemi operativi di tipo differente. 
+In infomatica, il termine: *portabilità* indica la possibilità di eseguire uno stesso programma su computer con sistemi operativi di tipo differente. 
 Per essere più precisi, la portabilità è la possibilità di creare copie di uno stesso programma che possano essere eseguite su piattaforme hardware/software differenti.
 Per poter essere eseguito su sistemi differenti, un software deve richiamare delle istruzioni che siano valide in tutti i sistemi hardware.   
 Per esempio, un'istruzione che chieda in qualche modo:
@@ -734,9 +733,8 @@ Nel nostro caso, possiamo dire che la portabilità è la possibilità di rendere
 
 ### Portabilità del C'hi++
 *C'hi++* si riferisce alla programmazione dei computer, che è un ambito specifico di un settore specifico, quindi, da un punto di vista simbolico, ha un bassissimo grado di portabilità.
-Se fra duecento anni un archeologo ritrovasse i quaderni con i miei appunti e riuscisse a decifrare la mia grafia, potrebbe non capire a cosa io mi stia riferendo, quando parlo di *classi*, *istanze* e *oggetti*, mentre capirebbe perfettamente cosa simboleggiano l'Oca, l'Usignolo o il Pavone nel poema iraniano *Mantiq al-Tayr*, che è stato scritto nel XII secolo.
-<br/>  
-In compenso, molti precetti del C'hi++ sono compatibili precetti o idee appartenenti ad altre mistiche o filosofie.
+Se fra duecento anni un archeologo ritrovasse i quaderni con i miei appunti e riuscisse a decifrare la mia grafia, potrebbe non capire a cosa io mi stia riferendo, quando parlo di *classi*, *istanze* e *oggetti*, mentre capirebbe perfettamente cosa simboleggiano l'Oca, l'Usignolo o il Pavone nel poema iraniano *Mantiq al-Tayr*, che è stato scritto nel XII secolo.  
+In compenso, molti precetti del C'hi++ sono compatibili con precetti o idee appartenenti ad altre mistiche o filosofie.
 In questi giorni sto leggendo la *Bhagavad-Gita*[^gita].
 Alcuni passi mi hanno ricordato le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire “bene”:
 
@@ -783,8 +781,7 @@ Ho trovato delle analogie ai precetti del C'hi++ anche nel *Mantiq al-Tayr*[^man
 > O Creatore, tutto il male o il bene che feci, in verità lo feci solo a me stesso.
 
 Cito questi due testi perché non li conoscevo quando ho cominciato a formulare la mia teoria e quindi non è possibile che abbiano influenzato le mie affermazioni, diversamente da testi che conoscevo già, come il *Tao-tê-ching* o *Eureka*, di Poe.  
-Ho trovato altre analogie in frasi di filosofi greci come Eraclito, Zenone o Anassimandro, ma non ho avuto ancora modo di approfondirle.
-<br />  
+Ho trovato altre analogie in frasi di Eraclito, Zenone, Anassimandro e Spinoza, ma non ho avuto ancora modo di approfondirle.  
 Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista: il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono l'Ente che ne causa la disgregazione, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte.
 <br />  
 Essendo una metafisica-non-metafisica, però, C'hi++ deve preoccuparsi anche della portabilità scientifica dei suoi precetti.
@@ -812,10 +809,8 @@ Credo che il rapporto che c'è fra C'hi++ e le religioni rivelate sia lo stesso 
 L'immagine da satellite descrive il bosco così com'è, in tutta la sua bellezza e la sua complessità; la mappa topografica rappresenta quella stessa bellezza con dei simboli, delle convenzioni tipografiche.
 Chi conosce la zona può orientarsi con l'immagine da satellite, godendo così di tutta la bellezza del luogo; chi invece non conosce la zona o non ha un buon senso dell'orientamento utilizzerà la mappa, che gli fornirà una rappresentazione più fredda, ma più facile da interpretare.  
 
-Si tratta in entrambi i casi di rappresentazioni incomplete, perché prive di una delle dimensioni del modello a cui si riferiscono, ma se dobbiamo utilizzarle per ritrovare la strada di casa in mezzo alla vegetazione questo è un bene, perché ci permette di avere una visione sintetica di qualcosa che sarebbe impossibile descrivere dettagliatamente.
-<br />  
+Si tratta in entrambi i casi di rappresentazioni incomplete, perché prive di una delle dimensioni del modello a cui si riferiscono, ma se dobbiamo utilizzarle per ritrovare la strada di casa in mezzo alla vegetazione questo è un bene, perché ci permette di avere una visione sintetica di qualcosa che sarebbe impossibile descrivere dettagliatamente.  
 Vista in quest'ottica, la “sovrapponibilità” del C'hi++ con le religioni ispirate non sembra più strana, ma assolutamente normale.
-Aristotele aveva ragione.
 
 ## Release/0.5 - TODO
 Come tutti i progetti software degni di questo nome, anche C'hi++ ha una sua *roadmap* che definisce la successione dei passi da compere per il completamento del lavoro.  
@@ -829,8 +824,7 @@ Se mai riuscirò a fare tutto questo, sarò solo all'inizio.
 Il *sistema operativo* è quell'insieme di programmi che gestiscono il funzionamento dei computer, facendo da tramite fra l'hardware del sistema e le richieste dell'utente.  
 Il software dei sistemi operativi può essere suddiviso logicamente in due blocchi: il *kernel* e la *shell*.
 Il *kernel* è quella parte del sistema che “parla” con l'hardware, gestendo la memoria, gli accessi al disco rigido, le comunicazioni di rete e così via.
-La *shell* è invece quella parte del sistema che interagisce con l'utente, traducendo in lettere, immagini e suoni i codici numerici prodotti dal kernel[^shell].
-<br />  
+La *shell* è invece quella parte del sistema che interagisce con l'utente, traducendo in lettere, immagini e suoni i codici numerici prodotti dal kernel[^shell].  
 In quest'ottica, C'hi++ è un kernel, non un “sistema operativo” completo, perché è privo di una vera e propria interfaccia utente.
 Questa mancanza è un requisito di progetto, non un errore, ma lo rende poco adatto all'utilizzo di massa e dato che:
 
@@ -849,11 +843,10 @@ Un amico, a cui ne ho fatto leggere una prima bozza, sostiene che:
 
 > potrebbe diventare un caso letterario oppure potrebbe far lanciare una Fatwa nei tuoi confronti, o tutte e due le ipotesi insieme
 
-È possibile, ma io credo piuttosto che non avverrà nulla; almeno, non nel breve periodo perché temo che, per la maggior parte dei potenziali lettori, accettare le idee del C'hi++ equivarrebbe a mettere in discussione la propia vita e le persone, in genere, non amano mettersi in discussione.
-<br />  
+È possibile, ma io credo piuttosto che non avverrà nulla; almeno, non nel breve periodo perché temo che, per la maggior parte dei potenziali lettori, accettare le idee del C'hi++ equivarrebbe a mettere in discussione la propia vita e le persone, in genere, non amano mettersi in discussione.  
 Comunque, fino a che ne avrò la possibilità, io porterò avanti questo progetto.
 Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di un'unità la *major-version* del mio progettto e andrò avanti.
-Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita, mia o altrui che sia, senza accettazioni per fede, ma basandomi solo su considerazioni di ordine logico.  
+Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita, mia o altrui che sia, senza accettazioni per fede, ma basandomi solo su considerazioni di ordine logico.
 Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
 Mi sembra un motivo più che sufficiente.
 
@@ -905,7 +898,7 @@ Mi sembra un motivo più che sufficiente.
     
 [^causa]: E non: *per colpa*, come nella versione 0.1.1
 
-[^variante]: L'utilizzo del termine scacchistico è intenzionale.
+[^variante]: L'utilizzo del termine scacchistico è intenzionale, perché non è detto che la nuova successione degli eventi sia migliore di quella precedente.
 
 [^spazione]: In realtà, il nome *spazione* è anche un riferimento, intenzionalmente auto-ironico, ai: *cosoni*, i baccelli del film *Totò sulla Luna*, parodia nostrana de: *L'invasione degli ultracorpi*.
 
@@ -929,4 +922,4 @@ Mi sembra un motivo più che sufficiente.
 
 [^shenk]: E.C. Schenck, citato da Frazer.
 
-[^katz]: Eran Katz - *Jerome diventa un genio* - Barbera Editore, 2006
+[^katz]: Eran Katz - *Jerome diventa un genio* - Barbera Editore, 2006.
