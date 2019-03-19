@@ -1,3 +1,9 @@
+## 0.5.4 (March 19, 2019)
+  - Completata prima stesura del paragrafo finale
+  - Aggiunta immagine Value Sensitive Design
+  - Rivisto tutto il testo, manca solo la parte sulla programmazione etica
+  - Rivisto il paragrafo su Sostiene Aristotele
+
 ## 0.5.3 (March 01, 2019)
   - Compltetata nuova versione della parte iniziale
   - Chiusa revisione dell'introduzione
