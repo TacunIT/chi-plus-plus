@@ -71,7 +71,7 @@ Possiamo attenuare il primo problema parlando di *spiritualità* o di *metafisic
 
 ## *Bug* noti delle religioni
 La religione dovrebbe aiutare l'Uomo a vivere meglio.
-Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i momenti di dolore e definire una scala di valori che ci permetta di prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso non possono esserci d'aiuto.
+Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i momenti di dolore e definire una scala di valori che ci permetta di prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso non possono essere d'aiuto.
 Per fare un esempio: se vi ponessero queste tre domande, cosa rispondereste?
 
 <ol class="domande">
@@ -137,7 +137,7 @@ Questo perché anche i principi&icirc; delle società laiche, al pari dei dogmi 
 A differenza dei dogmi religiosi, però, i laici non possono rifarsi a valori di ordine superiore e, come abbiamo visto [sopra](#il-problema), devono trovare i fondamenti delle loro affermazioni nella realtà contingente, cosa che non sempre è possibile, quindi le loro regole risultano ancora più inconsistenti di quelle religiose.
 
 Prendete ad esempio i trenta articoli della [Dichiarazione dei Diritti dell'Uomo](http://www.un.org/en/universal-declaration-human-rights/) del 1948: voi e io troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.  
-Perché un signore della guerra centro-africano dovrebbe rispettarle, dato che non sono un insieme di norme giuridiche a cui gli Stati e gli individui debbano attenersi, ma un elenco di quelli che *dovrebbero essere*[^achievements] i diritti di ogni essere umano? 
+Perché un Signore della Guerra centro-africano dovrebbe rispettarle, dato che non sono un insieme di norme giuridiche a cui gli Stati e gli individui debbano attenersi, ma un elenco di quelli che *dovrebbero essere*[^achievements] i diritti di ogni essere umano? 
 Perché, soprattutto, dovrebbe rispettare delle regole volte al mantenimento della pace[^peace], promulgate da un'Organizzazione che ha al suo vertice Paesi che sono i principali produttori di armi del Mondo[^sipri] e che violano costantemente quelle stesse regole da loro promosse?
 <br>  
 Dato che l'approccio laico presenta gli stessi problemi logici di quello religioso, mancando però dei corrispondenti lati positivi, non ci resta altra scelta che cercare di far “funzionare” la religione.
@@ -813,31 +813,54 @@ Si tratta in entrambi i casi di rappresentazioni incomplete, perché prive di un
 Vista in quest'ottica, la “sovrapponibilità” del C'hi++ con le religioni ispirate non sembra più strana, ma assolutamente normale.
 
 ## Release/0.5 - TODO
-Come tutti i progetti software degni di questo nome, anche C'hi++ ha una sua *roadmap* che definisce la successione dei passi da compere per il completamento del lavoro.  
-Terminata la redazione di questo testo, riprenderò la stesura di *C'hi++*, convertendo il testo attuale in formato Markdown e definendo la struttura dei capitoli relativi al linguaggio C++, così come li ho descritti <a href="#chi++">sopra</a>.  
-Parallelamente, dovrò riprendere la catalogazione dei miei appunti, trascrivendoli nella mappa Vue del progetto per poi includerli nel testo del manuale.   
-Dovrò poi verificare l'ammissibilità scientifica dei precetti dello Spazionismo, modificandoli se non fossero corretti, per poi includerli nel capitolo finale del libro.   
-Infine, cercherò di battere il record di Robert Pirsig, che ricevette 121 rifiuti prima che un editore accettasse di pubblicare il suo libro: *Lo Zen e l'Arte della Manutenzione della Motocicletta*.   
+Come tutti i progetti software degni di questo nome, anche C'hi++ ha una sua *roadmap* che definisce la successione dei passi da compere per il completamento del lavoro: terminata la redazione di questo testo, riprenderò la stesura di *C'hi++*, convertendo il testo attuale in formato Markdown e definendo la struttura dei capitoli relativi al linguaggio C++, così come li ho descritti <a href="#chi++">sopra</a>;  parallelamente, dovrò riprendere la catalogazione dei miei appunti, trascrivendoli nella mappa Vue del progetto per poi includerli nel testo del manuale; dovrò poi verificare l'ammissibilità scientifica dei precetti dello Spazionismo, modificandoli se non fossero corretti, per poi includerli nel capitolo finale del libro; infine, cercherò di battere il record di Robert Pirsig, che ricevette 121 rifiuti prima che un editore accettasse di pubblicare il suo libro: *Lo Zen e l'Arte della Manutenzione della Motocicletta*.   
 Se mai riuscirò a fare tutto questo, sarò solo all'inizio.
 
 ### Kernel e shell
-Il *sistema operativo* è quell'insieme di programmi che gestiscono il funzionamento dei computer, facendo da tramite fra l'hardware del sistema e le richieste dell'utente.  
+Il *sistema operativo* è quell'insieme di programmi che gestiscono il funzionamento dei computer, facendo da tramite fra l'hardware del sistema e le richieste dell'utente.
 Il software dei sistemi operativi può essere suddiviso logicamente in due blocchi: il *kernel* e la *shell*.
 Il *kernel* è quella parte del sistema che “parla” con l'hardware, gestendo la memoria, gli accessi al disco rigido, le comunicazioni di rete e così via.
 La *shell* è invece quella parte del sistema che interagisce con l'utente, traducendo in lettere, immagini e suoni i codici numerici prodotti dal kernel[^shell].  
-In quest'ottica, C'hi++ è un kernel, non un “sistema operativo” completo, perché è privo di una vera e propria interfaccia utente.
+In quest'ottica, C'hi++ è un kernel, non un sistema operativo completo, perché è privo di una vera e propria interfaccia utente.
 Questa mancanza è un requisito di progetto, non un errore, ma lo rende poco adatto all'utilizzo di massa e dato che:
 
-> la maggior parte degli esseri umani alla ricerca del senso della vita ha la tendenza a divenire parte di un gruppo, anche se non ne condivide del tutto le convinzioni, dato che nel gruppo/tribu trova protezione e forza[^shenk]
+> la maggior parte degli esseri umani alla ricerca del senso della vita ha la tendenza a divenire parte di un gruppo, anche se non ne condivide del tutto le convinzioni, dato che nel gruppo/tribu trova protezione e forza[^shenk] 
 
-sarà necessario definire una o più “interfacce utente” che facilitino la fruibilità dei precetti del C'hi++ definendo delle forme rituali e di aggregazione.  
-Ho delle idee in proposito, ma è del tutto prematuro parlarne.
-<br />  
+sarà necessario definire una o più “interfacce utente” che facilitino la fruibilità dei precetti del C'hi++ definendo delle forme rituali e di aggregazione.    
 Un ostacolo alla diffusione di massa che, al contrario, non penso sarà possibile rimuovere è che C'hi++, intenzionalmente, non dà delle risposte definitive, assolute, ma stimola a una ricerca continua.
-Per alcuni, questo può essere un lato positivo, ma si tratta di una minoranza; in questo momento, la maggior parte delle persone è alla ricerca di certezze, non di verità.  
-D'altro canto, il Buddismo Zen utilizza un approccio simile da più di mille anni e anche la religone ebraica, se dobbiamo credere al Katz[^katz], ha prodotto un gran numero di premii Nobel perché spinge i suoi fedeli a mettere in discussione le affermazioni dei testi sacri, rendendoli così più propensi a sviluppare idee originali. 
+Per alcuni, questo può essere un lato positivo, ma si tratta di una minoranza; in questo momento, la maggior parte delle persone è alla ricerca di certezze, non di verità.
+D'altro canto, il Buddismo Zen utilizza un approccio simile da più di mille anni e anche la religone ebraica, se dobbiamo credere al Katz[^katz], ha prodotto un gran numero di premii Nobel perché spinge i suoi fedeli a mettere in discussione le affermazioni dei testi sacri, rendendoli così più propensi a sviluppare idee originali, quindi preferisco aspettare un po', prima di considerarlo un errore.
+
+### Etica nicomacchinea
+D'altro canto, in questo periodo storico, non sono solo gli umani ad avere bisogno di una nuova etica.
+Qualche tempo fa, stavo cercando un saggio sul *brainjacking*[^ brainjacking] nella piattaforma [???] e nell'elenco degli articoli mi sono apparsi due titoli in sequenza:
 
 ![](../img/vsd.png)
+
+In sostanza, è da vent'anni che si sta lavorando a del software "sensibile ai valori", ma ancora non si è riuscito a decidere *quali* debbano essere questi valori.  
+Per capire cosa ci faccia, una macchina, con dei valori morali, immaginate il caso di un'automobile guidata da un sistema basato su intelligenza artificiale che stia viaggiando, in completa autonomia, con a bordo un facoltoso notaio.
+Quando da dietro un'auto parcheggiata, sbuca un bambino, il computer di bordo elabora i dati su velocità e direzione e scopre che quella storia non ha un lieto fine, perché qualunque cosa faccia, morirà qualcuno: o il bambino o il notaio.
+L'auto, a questo punto, deve decidere quale dei due umani uccidere, come se fosse un software per il gioco degli Scacchi che debba decidere quale di due pezzi in pericolo sacrificare.  
+Ma mentre il programma scacchistico conosce perfettamente sia il valore *assoluto* dei due pezzi in questione (il pedone vale meno di un cavallo, che vale meno di un alfiere, che vale meno di una torre ecc) che il loro valore *relativo* in quel preciso momento della partita (un pedone può valere più della stessa regina, se è in condizione di dare scacco matto all'avversario), l'auto dei due umani non sa nulla.
+Del passeggero conosce i dati anagrafici e biometrici (peso, lunghezza delle gambe, firma vocale ecc.), mentre del bambino conosce solo la posizione e, vagamente, la massa; nulla sa, la povera automobile, della loro caratura morale o di ciò che faranno in futuro, se lei gliene concederà uno.
+Non può quindi decidere in base alla logica, ma deve porli arbitrariamente su una scala e sacrificare quello che si trova sul gradino più basso.  
+Il problema è che di scale non ce n'è una sola.
+Nella scala di valori del bambino o di sua madre, lui è sicuramente al primo posto: è giovane, ha tutta la vita davanti e un sacco di esperienze da fare.
+Anche il notaio è probabilmente in cima alla sua scala di valori, ma potrebbe anche esserci il bambino se, per esempio, questo fosse suo figlio o suo nipote.  
+Nella scala di valori dell'Ufficio marketing della casa automobilistica il bambino viene prima del notaio, perché il titolo:
+
+> Smart-car sacrifica un notaio per salvare un bambino
+
+è più facile da gestire di:
+
+> Smart-car uccide un bambino per salvare un notaio
+
+mentre dal punto di vista dell'Ufficio legale o della società assicurativa, il notaio vale più del bambino, perché è più costoso da ripagare.  
+L'auto non ha il tempo di valutare tutte queste variabili, quindi ha bisogno di una sua scala di valori che le permetta di *prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso[^book] non possono essere d'aiuto*; in altre parole, l'automobile ha bisogno di una Fede.  
+Non può essere una filosofia laica, perché se così fosse, in vent'anni ne avrebbero scelta una e non potrà essere una delle religioni canoniche, perché sarebbe limitante dal punto di vista delle vendite, ma dovrà avere dei principii che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori[^barbelognostica].
+Dovrà essere in condizione di adattarsi senza stravolgimenti al mutare delle fogge e dei costumi della Società e dovrà poter imparare dai suoi errori, correggendoli rapidamente.
+Tanto meglio, poi, se potesse essere gestita facilmente dal software e dagli informatici.  
+Cosa vi fa venire in mente?
 
 ## Conclusioni
 Non so quale sarà il destino di *C'hi++*; non so dire nemmeno se questo Manifesto mi procurerà aiuto o sberleffi. 
@@ -851,8 +874,6 @@ Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo no
 Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita, mia o altrui che sia, senza accettazioni per fede, ma basandomi solo su considerazioni di ordine logico.
 Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
 Mi sembra un motivo più che sufficiente.
-
-
 		
 <h2 class="note">Note</h2>
 
@@ -922,6 +943,12 @@ Mi sembra un motivo più che sufficiente.
 
 [^shell]: È una descrizione molto semplicistica, ma sufficiente per quelli che sono gli scòpi di questo documento.
 
-[^shenk]: E.C. Schenck, citato da Frazer.
+[^shenk]: E.C. Schenck, citata da Frazer.
 
 [^katz]: Eran Katz - *Jerome diventa un genio* - Barbera Editore, 2006.
+
+[^ brainjacking]: L'intromissione malevola nel funzionamento di una protesi cerebrale, per alterare il comportamento del paziente.  
+
+[^book]: Che, nel caso di un'automobile, potrebbe essere una sorta di registro storico delle situazioni indecidibili del passato, simile al *Book* delle partite scacchistiche.
+
+[^barbelognostica]: Un'automobile barbelognostica, per quanto realizzabile, sarebbe molto difficile da difendere in tribunale.
