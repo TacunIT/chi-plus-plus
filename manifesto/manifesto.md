@@ -180,7 +180,7 @@ Siccome, di fatto, non possiamo esserne certi, dobbiamo imporre questa condizion
  
 Questo atto di fede ci permette di rispondere senza esitazione alla domanda [D](#domanda-D):
 
-> Dio è buono, giusto e misericordioso. Nell'Universo esistono stupratori, omicidi e malattie è perché l'Universo è opera del Diavolo [^gnosi].
+> Dio è buono, giusto e misericordioso. Nell'Universo esistono stupratori, omicidi e malattie è perché l'Universo è opera del Diavolo.
 
 Si tratta però di una vittoria parziale, perché aumentando il numero dei precetti abbiamo aumentato la complessità del nostro modello e, di conseguenza, la probabilità di generare errori o incongruenze:
 
@@ -887,10 +887,6 @@ Mi sembra un motivo più che sufficiente.
 		
 <h2 class="note">Note</h2>
 
-<!--
-[^giurare]: O grotteschi, come l'abitudine di giurare su un libro che esorta a non giurare (*Mt 5,33-37*)
--->
-
 [^istat]: https://www.istat.it/it/archivio/213901
 
 [^eventi]: Una crisi, una guerra, una catastrofe naturale, un'invasione aliena o una presa di coscienza collettiva, in ordine decrescente di probabilità.
@@ -901,13 +897,11 @@ Mi sembra un motivo più che sufficiente.
 
 [^peace]: *Whereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world*.
 
-[^sipri]: Dati [SIPRI] (www.sipri.org).
+[^sipri]: Dati SIPRI (www.sipri.org).
 
 [^black-friday]: A mo' di esempio si veda un qualunque quotidiano o un filmato
     sugli assalti ai grandi magazzini durante il *Black Friday*
     americano.
-
-[^gnosi]: [aggiungere riferimento a *Cosmogonie Gnostiche*]
 
 [^poc]: *Proof Of Concept*: prototipo che serve a di/mostrare le
     funzionalità di un nuovo sistema o processo.
@@ -915,15 +909,15 @@ Mi sembra un motivo più che sufficiente.
 [^api]: *Application Program Interface*: l'insieme delle regole per
     l'utilizzo del sistema
 
-[^soko]: [aggiungere riferimento a poesia funeraria di Gesshū Sōko]
+[^soko]: {TODO: aggiungere riferimento a poesia funeraria di Gesshū Sōko}.
 
 [^beta-tester]: I *beta-tester* sono le persone che provano in anteprima i programmi che stanno per essere rilasciati sul mercato per cercare eventuali errori sfuggiti alla fase di test interno effettuato dell'azienda produttrice. 
 
-[^mumon]: [aggiungere il riferimento a La Porta Senza Porta]
+[^mumon]: {TODO: aggiungere il riferimento a La Porta Senza Porta }
 
 [^vasana]: Grazie a un “*imprintig* karmico” che io qui chiamo *Post-it* e che Yoga e Buddismo chiamano *Vāsanā*.  
     
-[^pentimento]: Attar, Farid al-din - Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
+[^pentimento]: Attar, Farid al-din - *Il verbo degli uccelli* (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
 
 [^no-mao]: Un guardaroba di tipo militare o maoista, con indumenti identici e dello stesso colore è, però, un eccesso da rifuggire, perché rende monotona l'Ikebarba.
     
@@ -939,7 +933,7 @@ Mi sembra un motivo più che sufficiente.
 
 [^gita]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni. 
  
-[^mantiq]: Attar, Farid al-din - Il verbo degli uccelli - cit.
+[^mantiq]: Attar, Farid al-din - op. cit.
 
 [^rovelli]: Autore, per altro, di un libro proprio su Anassimandro.
 
