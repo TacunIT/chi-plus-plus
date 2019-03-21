@@ -7,8 +7,8 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.5.4</p>
-	<p><label>Data    </label>Febbraio 2019</p>
+	<p><label>Versione</label>0.5.5</p>
+	<p><label>Data    </label>Marzo 2019</p>
 </div>
 	![](../img/seal.png)
 </section>
@@ -71,7 +71,7 @@ Possiamo attenuare il primo problema parlando di *spiritualità* o di *metafisic
 
 ## *Bug* noti delle religioni
 La religione dovrebbe aiutare l'Uomo a vivere meglio.
-Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i momenti di dolore e definire una scala di valori che ci permetta di prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso non possono essere d'aiuto.
+Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i momenti di dolore e definire una scala di valori che ci permetta di prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso non possono essere d'aiuto.  
 Per fare un esempio: se vi ponessero queste tre domande, cosa rispondereste?
 
 <ol class="domande">
@@ -89,7 +89,7 @@ Ciò dipende da due fattori: la natura umana e la mancanza di solidità logica d
 Infatti, dovendo interessarsi di argomenti di carattere universale, che non possono trovare una risposta razionale certa, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di dogmi non dimostrabili, che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.  
 I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato con ogni mezzo, anche a costo di abiurare quegli stessi principii che si cerca di difendere.  
 E qui, come direbbe Amleto, comincia il male, perché i dogmi non sono leggi comprovabili, ma opinioni o speranze e ogni tentativo di renderli più robusti ottiene l'effetto opposto perché si ampliano le dimensioni di una struttura che poggia su basi instabili.  
-
+<br />
 ### Caso d'uso: il Buonismo
 Per dimostrare l'affermazione fatta sopra, immaginiamo che esista una religione chiamata: *Buonismo* i cui dogmi siano:
 
@@ -318,9 +318,12 @@ Se volessimo applicate il versionamento alle grandi religioni monoteistiche, ott
 1.1.2 | 70         | Vangelo di Marco       |  Documentazione versione 1.1.
 1.1.3 | 85         | Vangelo di Matteo      |  Documentazione versione 1.1.
 1.1.4 | 95         | Vangelo di Luca        |  Documentazione versione 1.1.
+
+| ver. | anno | descrizione | modifiche apportate
+:---: | :---: | --- | :--- |
 1.2.0 | 787        | II° Concilio Nicea |  Miglioramenti all'interfaccia grafica: permesse le immagini sacre.
 1.2.1 | 1284       | Vescovo di Passavia    |  Potenziamento dell'*help-desk* con l'introduzione dei Santi Ausiliatori.
-1.3.0 | 1054       | Chiesa Ortodossa       |  Modifiche all'architettura del sistema.
+1.3.0 | 1054       | Chiesa Ortodossa       |  Modifiche all'architettura del sistema: si passa da un sistema centralizzato a uno distribuito.
 1.4.1 | 1540       | Calvino                |  Modifiche all'interfaccia utente.
 2.0.0 | 610        | Islam                  |  Cambio di m*ajor version*: Dio è sempre uno, ma non è lo stesso di prima.
 2.1.0 | 657        | Sunniti                |  Rimozione dell'utente amministratore.
@@ -450,8 +453,8 @@ Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Uni
 
 ### Il senso della vita è il debug
 Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*[^beta-tester] di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali (come il *Koan Mu* o il motivo per cui Nanchuan taglia in due il gatto[^mumon]) ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.  
-Infatti, se paragoniamo l'esistenza a una sessione di test software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori[^vasana] perché venga corretto nelle successive versioni del programma.
-Visto che, nel nostro caso, *beta-tester*, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/*beta-tester*, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.
+Infatti, se paragoniamo l'esistenza a una sessione di test del software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori[^vasana] perché venga corretto nelle successive versioni del programma.
+Visto che, nel nostro caso, *beta-tester*, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/*beta-tester*, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.  
 In quest'ottica, la frase:
 
 >cento Mondi di peccato sono dissipati dalla luce di un solo pentimento[^pentimento] 
@@ -558,17 +561,22 @@ La quantità di fiammiferi che vedi qui sul mio tavolo, rimane la stessa sia che
 La quantità esisteva da prima che esistessero i numeri e gli sopravviverà.
 I numeri, li abbiamo inventati noi; la quantità, no. 
 
-Questo concetto tornerà utile più tardi, quando, a proposito delle classi, si parlerà della differenza fra il simbolo e ciò che rappresenta; o, se preferite, fra il *significato* e il *significante* [^bandinelli].
+Questo concetto tornerà utile più tardi, quando, a proposito delle classi, si parlerà della differenza fra il simbolo e ciò che rappresenta; o, se preferite, fra il *significato* e il *significante*.
 
 #### Linguaggi di programmazione
 Distinzione fra i linguaggi _compiliati_ (che producono software pronto all'elaborazione da parte del computer) e i linguaggi _interpretati_ (che necessitano di un sistema di conversione del proprio codice in linguaggio macchima).  
 Parallelo con i differenti tipi di mediazione delle Chiese nella relazione con Dio; per esempio, Cattolici e Protestanti.
 
 #### Operatori
-Operatore *delete* (che elimina dalla memoria del sistema un dato non più necessario) e accettazione della morte.  
-Lao-Tze, *Tao-Tê-Ching*:
+Questo capitolo utilizzerà l'operatore *delete*, che elimina dalla memoria del sistema un dato non più necessario, per illustrare il rapporto del *C'hi++* con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon  funzonamento dell'Universo.
+Questo approccio si rirova anche nel precetto:
+
+> Amiamo ciò che ci ucciderà (se tutto va bene)
+
+che sintetizza il brano del *Tao-Tê-Ching*:
 
 > Infatti gli esseri fioriscono e (poi) ognuno torna alla propria radice. Tornare alla propria radice si chiama la tranquillità; ciò vuol dire deporre il proprio compito. Deporre il proprio compito è una legge costante. Colui che conosce questa legge costante si chiama illuminato. Colui che non conosce questa legge costante agisce da stolto e attira su di sé la disgrazia.  
+
 
 #### Valori booleani
 È una piccola parte del linguaggio, ma una miniera di possibili parallelismi specie sulla relatività dei concetti di *vero* e *falso*:
@@ -812,7 +820,7 @@ Chi conosce la zona può orientarsi con l'immagine da satellite, godendo così d
 Si tratta in entrambi i casi di rappresentazioni incomplete, perché prive di una delle dimensioni del modello a cui si riferiscono, ma se dobbiamo utilizzarle per ritrovare la strada di casa in mezzo alla vegetazione questo è un bene, perché ci permette di avere una visione sintetica di qualcosa che sarebbe impossibile descrivere dettagliatamente.  
 Vista in quest'ottica, la “sovrapponibilità” del C'hi++ con le religioni ispirate non sembra più strana, ma assolutamente normale.
 
-## Release/0.5 - TODO
+## TODO
 Come tutti i progetti software degni di questo nome, anche C'hi++ ha una sua *roadmap* che definisce la successione dei passi da compere per il completamento del lavoro: terminata la redazione di questo testo, riprenderò la stesura di *C'hi++*, convertendo il testo attuale in formato Markdown e definendo la struttura dei capitoli relativi al linguaggio C++, così come li ho descritti <a href="#chi++">sopra</a>;  parallelamente, dovrò riprendere la catalogazione dei miei appunti, trascrivendoli nella mappa Vue del progetto per poi includerli nel testo del manuale; dovrò poi verificare l'ammissibilità scientifica dei precetti dello Spazionismo, modificandoli se non fossero corretti, per poi includerli nel capitolo finale del libro; infine, cercherò di battere il record di Robert Pirsig, che ricevette 121 rifiuti prima che un editore accettasse di pubblicare il suo libro: *Lo Zen e l'Arte della Manutenzione della Motocicletta*.   
 Se mai riuscirò a fare tutto questo, sarò solo all'inizio.
 
@@ -829,24 +837,25 @@ Questa mancanza è un requisito di progetto, non un errore, ma lo rende poco ada
 sarà necessario definire una o più “interfacce utente” che facilitino la fruibilità dei precetti del C'hi++ definendo delle forme rituali e di aggregazione.    
 Un ostacolo alla diffusione di massa che, al contrario, non penso sarà possibile rimuovere è che C'hi++, intenzionalmente, non dà delle risposte definitive, assolute, ma stimola a una ricerca continua.
 Per alcuni, questo può essere un lato positivo, ma si tratta di una minoranza; in questo momento, la maggior parte delle persone è alla ricerca di certezze, non di verità.
-D'altro canto, il Buddismo Zen utilizza un approccio simile da più di mille anni e anche la religone ebraica, se dobbiamo credere al Katz[^katz], ha prodotto un gran numero di premii Nobel perché spinge i suoi fedeli a mettere in discussione le affermazioni dei testi sacri, rendendoli così più propensi a sviluppare idee originali, quindi preferisco aspettare un po', prima di considerarlo un errore.
+D'altro canto, il Buddismo Zen utilizza un approccio simile da più di mille anni e anche la religone ebraica, se dobbiamo credere al Katz[^katz], ha prodotto un gran numero di premii Nobel perché spinge i suoi fedeli a mettere in discussione le affermazioni dei testi sacri, rendendoli così più propensi a sviluppare idee originali, quindi preferisco aspettare un po', prima di considerare un errore questa caratteristica.
 
 ### Etica nicomacchinea
-D'altro canto, in questo periodo storico, non sono solo gli umani ad avere bisogno di una nuova etica.
-Qualche tempo fa, stavo cercando un saggio sul *brainjacking*[^ brainjacking] nella piattaforma [???] e nell'elenco degli articoli mi sono apparsi due titoli in sequenza:
+In questo periodo storico, non sono solo gli umani ad avere bisogno di una nuova etica.
+Qualche tempo fa, stavo cercando un saggio sul *brainjacking*[^ brainjacking] su [Springer](https://rd.springer.com) e nell'elenco degli articoli mi sono apparsi due titoli in sequenza:
 
-![](../img/vsd.png)
+![](../img/value-sensitive-design.png)
 
 In sostanza, è da vent'anni che si sta lavorando a del software "sensibile ai valori", ma ancora non si è riuscito a decidere *quali* debbano essere questi valori.  
-Per capire cosa ci faccia, una macchina, con dei valori morali, immaginate il caso di un'automobile guidata da un sistema basato su intelligenza artificiale che stia viaggiando, in completa autonomia, con a bordo un facoltoso notaio.
-Quando da dietro un'auto parcheggiata, sbuca un bambino, il computer di bordo elabora i dati su velocità e direzione e scopre che quella storia non ha un lieto fine, perché qualunque cosa faccia, morirà qualcuno: o il bambino o il notaio.
+Faccio un esempio per spiegare che cosa ci faccia, una macchina, con dei valori morali. Immaginate che ci sia un'automobile guidata da un sistema basato su intelligenza artificiale che sta viaggiando in completa autonomia con a bordo un facoltoso notaio.
+D'improvviso, da dietro un'auto parcheggiata, sbuca un bambino. 
+Il computer di bordo elabora i dati su velocità e direzione e scopre che quella storia non ha un lieto fine, perché qualunque cosa faccia, morirà qualcuno: o il bambino o il notaio.
 L'auto, a questo punto, deve decidere quale dei due umani uccidere, come se fosse un software per il gioco degli Scacchi che debba decidere quale di due pezzi in pericolo sacrificare.  
-Ma mentre il programma scacchistico conosce perfettamente sia il valore *assoluto* dei due pezzi in questione (il pedone vale meno di un cavallo, che vale meno di un alfiere, che vale meno di una torre ecc) che il loro valore *relativo* in quel preciso momento della partita (un pedone può valere più della stessa regina, se è in condizione di dare scacco matto all'avversario), l'auto dei due umani non sa nulla.
+Ma mentre il programma scacchistico conosce perfettamente sia il valore *assoluto* dei due pezzi in questione[^scacchi-1] che il loro valore *relativo* in quel preciso momento della partita[^scacchi-2], l'auto non sa nulla dei due umani.
 Del passeggero conosce i dati anagrafici e biometrici (peso, lunghezza delle gambe, firma vocale ecc.), mentre del bambino conosce solo la posizione e, vagamente, la massa; nulla sa, la povera automobile, della loro caratura morale o di ciò che faranno in futuro, se lei gliene concederà uno.
-Non può quindi decidere in base alla logica, ma deve porli arbitrariamente su una scala e sacrificare quello che si trova sul gradino più basso.  
-Il problema è che di scale non ce n'è una sola.
+Non può quindi decidere in base alla logica, ma deve porli arbitrariamente su una scala e sacrificare quello che si trova sul gradino più basso.
+Il problema è che di scale non ce n'è una sola.  
 Nella scala di valori del bambino o di sua madre, lui è sicuramente al primo posto: è giovane, ha tutta la vita davanti e un sacco di esperienze da fare.
-Anche il notaio è probabilmente in cima alla sua scala di valori, ma potrebbe anche esserci il bambino se, per esempio, questo fosse suo figlio o suo nipote.  
+Anche il notaio è probabilmente in cima alla sua scala di valori, ma al primo posto potrebbe anche esserci il bambino se, per esempio, questo fosse suo figlio o suo nipote.  
 Nella scala di valori dell'Ufficio marketing della casa automobilistica il bambino viene prima del notaio, perché il titolo:
 
 > Smart-car sacrifica un notaio per salvare un bambino
@@ -857,10 +866,11 @@ Nella scala di valori dell'Ufficio marketing della casa automobilistica il bambi
 
 mentre dal punto di vista dell'Ufficio legale o della società assicurativa, il notaio vale più del bambino, perché è più costoso da ripagare.  
 L'auto non ha il tempo di valutare tutte queste variabili, quindi ha bisogno di una sua scala di valori che le permetta di *prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso[^book] non possono essere d'aiuto*; in altre parole, l'automobile ha bisogno di una Fede.  
-Non può essere una filosofia laica, perché se così fosse, in vent'anni ne avrebbero scelta una e non potrà essere una delle religioni canoniche, perché sarebbe limitante dal punto di vista delle vendite, ma dovrà avere dei principii che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori[^barbelognostica].
-Dovrà essere in condizione di adattarsi senza stravolgimenti al mutare delle fogge e dei costumi della Società e dovrà poter imparare dai suoi errori, correggendoli rapidamente.
-Tanto meglio, poi, se potesse essere gestita facilmente dal software e dagli informatici.  
-Cosa vi fa venire in mente?
+Ovviamente non potrà essere una delle religioni canoniche, perché sarebbe limitante dal punto di vista delle vendite e apparentemente non sarà nemmeno una filosofia laica, perché se ce ne fosse una adatta, in vent'anni l'avrebbero trovata.  
+Dovrà quindi essere qualcosa di intermedio, né religioso né laico, con principii che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori[^barbelognostica].  
+Dovrà essere in condizione di adattarsi senza stravolgimenti al *mutare delle fogge e dei costumi* della Società e dovrà poter imparare dai suoi errori, correggendoli rapidamente.  
+Dovrà essere *vendor-independent* e *open-source*, per facilitare l'evidenziazione e la correzione di eventuali errori.  
+Tanto meglio, poi, se potesse essere compresa e gestita facilmente dal software e dagli informatici.  
 
 ## Conclusioni
 Non so quale sarà il destino di *C'hi++*; non so dire nemmeno se questo Manifesto mi procurerà aiuto o sberleffi. 
@@ -916,8 +926,6 @@ Mi sembra un motivo più che sufficiente.
 [^pentimento]: Attar, Farid al-din - Il verbo degli uccelli (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
 
 [^no-mao]: Un guardaroba di tipo militare o maoista, con indumenti identici e dello stesso colore è, però, un eccesso da rifuggire, perché rende monotona l'Ikebarba.
-
-[^bandinelli]: [aggiungere il riferimento a Bianchi-Bandinelli]
     
 [^causa]: E non: *per colpa*, come nella versione 0.1.1
 
@@ -948,6 +956,10 @@ Mi sembra un motivo più che sufficiente.
 [^katz]: Eran Katz - *Jerome diventa un genio* - Barbera Editore, 2006.
 
 [^ brainjacking]: L'intromissione malevola nel funzionamento di una protesi cerebrale, per alterare il comportamento del paziente.  
+
+[^scacchi-1]: Il pedone vale meno di un cavallo, che vale meno di un alfiere, che vale meno di una torre ecc.
+
+[^scacchi-2]: Un pedone può valere più della stessa regina, se è in condizione di dare scacco matto all'avversario.
 
 [^book]: Che, nel caso di un'automobile, potrebbe essere una sorta di registro storico delle situazioni indecidibili del passato, simile al *Book* delle partite scacchistiche.
 
