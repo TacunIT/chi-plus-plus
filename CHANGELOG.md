@@ -1,3 +1,7 @@
+## 0.5.5 (March 21, 2019)
+  - Revisione delle note di chiusura
+  - Rivisto paragrafo finale e aggiornata immagine da Springer
+
 ## 0.5.4 (March 19, 2019)
   - Completata prima stesura del paragrafo finale
   - Aggiunta immagine Value Sensitive Design
