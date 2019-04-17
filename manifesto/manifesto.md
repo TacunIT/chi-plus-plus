@@ -7,7 +7,7 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.5.5</p>
+	<p><label>Versione</label>0.5.6</p>
 	<p><label>Data    </label>Marzo 2019</p>
 </div>
 	![](../img/seal.png)
@@ -26,7 +26,7 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 <span>Heinrich Böll</span> - Opinioni di un clown
 </section>
 
-## Executive summary
+## Executive culo
 Se continuerete nella lettura di questo Manifesto (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
 Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.  
 Premetto che non ho titoli per scrivere di filosofia e religione, perché sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer, quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell'esaltazione religiosa; successivamente, descriverò alcune 
@@ -464,6 +464,12 @@ non è un'anomalia, ma è una diretta conseguenza della sua presa di coscienza, 
 Per lo stesso principio visto sopra, se qualcuno fa qualcosa che vi arreca giovamento, è importante che glielo facciate sapere, in modo che possa farlo di nuovo nelle prossime esistenze.
 Questo è facile, oltre che educato, se la persona che ci ha favorito si è comportata bene nei nostri confronti, ma richiede tanta onestà intellettuale e un bel po' di fede se la persona ci ha favorito comportandosi male nei nostri confronti.  
 
+In sostanza: la definizione che Frazer dà del termine *religione*:
+
+> 	gli sforzi dell’uomo per propiziarsi o conciliarsi potenze superiori che si suppone dirigano e controllino il corso della natura e della vita umana[^frazer].
+
+è valida anche per il C'hi++, solo che le “potenze superiori”, siamo noi stessi.
+
 ##Release/0.2: *C'hi++*<a name="chi++"></a>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
 programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.
@@ -839,7 +845,7 @@ Un ostacolo alla diffusione di massa che, al contrario, non penso sarà possibil
 Per alcuni, questo può essere un lato positivo, ma si tratta di una minoranza; in questo momento, la maggior parte delle persone è alla ricerca di certezze, non di verità.
 D'altro canto, il Buddismo Zen utilizza un approccio simile da più di mille anni e anche la religone ebraica, se dobbiamo credere al Katz[^katz], ha prodotto un gran numero di premii Nobel perché spinge i suoi fedeli a mettere in discussione le affermazioni dei testi sacri, rendendoli così più propensi a sviluppare idee originali, quindi preferisco aspettare un po', prima di considerare un errore questa caratteristica.
 
-### Etica nicomacchinea
+### Un'etica per apparati digitali
 In questo periodo storico, non sono solo gli umani ad avere bisogno di una nuova etica.
 Qualche tempo fa, stavo cercando un saggio sul *brainjacking*[^ brainjacking] su [Springer](https://rd.springer.com) e nell'elenco degli articoli mi sono apparsi due titoli in sequenza:
 
@@ -855,7 +861,7 @@ Del passeggero conosce i dati anagrafici e biometrici (peso, lunghezza delle gam
 Non può quindi decidere in base alla logica, ma deve porli arbitrariamente su una scala e sacrificare quello che si trova sul gradino più basso.
 Il problema è che di scale non ce n'è una sola.  
 Nella scala di valori del bambino o di sua madre, lui è sicuramente al primo posto: è giovane, ha tutta la vita davanti e un sacco di esperienze da fare.
-Anche il notaio è probabilmente in cima alla sua scala di valori, ma al primo posto potrebbe anche esserci il bambino se, per esempio, questo fosse suo figlio o suo nipote.  
+Anche il notaio è probabilmente in cima alla sua scala di valori, ma al primo posto potrebbe anche esserci il bambino se, per esempio, questo fosse suo figlio o suo nipote.
 Nella scala di valori dell'Ufficio marketing della casa automobilistica il bambino viene prima del notaio, perché il titolo:
 
 > Smart-car sacrifica un notaio per salvare un bambino
@@ -881,7 +887,7 @@ Un amico, a cui ne ho fatto leggere una prima bozza, sostiene che:
 È possibile, ma io credo piuttosto che non avverrà nulla; almeno, non nel breve periodo perché temo che, per la maggior parte dei potenziali lettori, accettare le idee del C'hi++ equivarrebbe a mettere in discussione la propia vita e le persone, in genere, non amano mettersi in discussione.  
 Comunque, fino a che ne avrò la possibilità, io porterò avanti questo progetto.
 Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di un'unità la *major-version* del mio progettto e andrò avanti.
-Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita, mia o altrui che sia, senza accettazioni per fede, ma basandomi solo su considerazioni di ordine logico.
+Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita, mia o altrui che sia, senza accettazioni per fede, ma basandomi solo su considerazioni di ordine logico.  
 Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
 Mi sembra un motivo più che sufficiente.
 		
@@ -917,7 +923,9 @@ Mi sembra un motivo più che sufficiente.
 
 [^vasana]: Grazie a un “*imprintig* karmico” che io qui chiamo *Post-it* e che Yoga e Buddismo chiamano *Vāsanā*.  
     
-[^pentimento]: Attar, Farid al-din - *Il verbo degli uccelli* (Mantiq al-Tayr). Kharabat, Collana di letterature orientali
+[^pentimento]: Attar, Farid al-din - *Il verbo degli uccelli* (Mantiq al-Tayr). Edizione elettronica - Kharabat, Collana di letterature orientali
+
+[^frazer]: Frazer, James George - *Il Ramo d'Oro*. Edizione elettronica - Newton Compton 2012. 
 
 [^no-mao]: Un guardaroba di tipo militare o maoista, con indumenti identici e dello stesso colore è, però, un eccesso da rifuggire, perché rende monotona l'Ikebarba.
     
@@ -931,7 +939,7 @@ Mi sembra un motivo più che sufficiente.
 
 [^rosso-pompeiano]: Alcune delle possibili codifiche sono: *#cf3054*, *rgb(207, 48, 84)*, *hsl(346, 62%, 50%)*.
 
-[^gita]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Mimesis Edizioni. 
+[^gita]: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Edizione elettronica - Mimesis Edizioni. 
  
 [^mantiq]: Attar, Farid al-din - op. cit.
 
