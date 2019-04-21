@@ -7,8 +7,8 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.5.6</p>
-	<p><label>Data    </label>Marzo 2019</p>
+	<p><label>Versione</label>0.5.7</p>
+	<p><label>Data    </label>Aprile 2019</p>
 </div>
 	![](../img/seal.png)
 </section>
@@ -26,7 +26,7 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 <span>Heinrich Böll</span> - Opinioni di un clown
 </section>
 
-## Executive culo
+## Executive summary
 Se continuerete nella lettura di questo Manifesto (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
 Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.  
 Premetto che non ho titoli per scrivere di filosofia e religione, perché sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer, quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell'esaltazione religiosa; successivamente, descriverò alcune 
@@ -859,10 +859,10 @@ L'auto, a questo punto, deve decidere quale dei due umani uccidere, come se foss
 Ma mentre il programma scacchistico conosce perfettamente sia il valore *assoluto* dei due pezzi in questione[^scacchi-1] che il loro valore *relativo* in quel preciso momento della partita[^scacchi-2], l'auto non sa nulla dei due umani.
 Del passeggero conosce i dati anagrafici e biometrici (peso, lunghezza delle gambe, firma vocale ecc.), mentre del bambino conosce solo la posizione e, vagamente, la massa; nulla sa, la povera automobile, della loro caratura morale o di ciò che faranno in futuro, se lei gliene concederà uno.
 Non può quindi decidere in base alla logica, ma deve porli arbitrariamente su una scala e sacrificare quello che si trova sul gradino più basso.
-Il problema è che di scale non ce n'è una sola.  
+Il problema è che di scale non ce n'è una sola.
 Nella scala di valori del bambino o di sua madre, lui è sicuramente al primo posto: è giovane, ha tutta la vita davanti e un sacco di esperienze da fare.
 Anche il notaio è probabilmente in cima alla sua scala di valori, ma al primo posto potrebbe anche esserci il bambino se, per esempio, questo fosse suo figlio o suo nipote.
-Nella scala di valori dell'Ufficio marketing della casa automobilistica il bambino viene prima del notaio, perché il titolo:
+Nella scala di valori dell'Ufficio Marketing della casa automobilistica il bambino viene prima del notaio, perché il titolo:
 
 > Smart-car sacrifica un notaio per salvare un bambino
 
@@ -870,13 +870,19 @@ Nella scala di valori dell'Ufficio marketing della casa automobilistica il bambi
 
 > Smart-car uccide un bambino per salvare un notaio
 
-mentre dal punto di vista dell'Ufficio legale o della società assicurativa, il notaio vale più del bambino, perché è più costoso da ripagare.  
-L'auto non ha il tempo di valutare tutte queste variabili, quindi ha bisogno di una sua scala di valori che le permetta di *prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso[^book] non possono essere d'aiuto*; in altre parole, l'automobile ha bisogno di una Fede.  
-Ovviamente non potrà essere una delle religioni canoniche, perché sarebbe limitante dal punto di vista delle vendite e apparentemente non sarà nemmeno una filosofia laica, perché se ce ne fosse una adatta, in vent'anni l'avrebbero trovata.  
-Dovrà quindi essere qualcosa di intermedio, né religioso né laico, con principii che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori[^barbelognostica].  
-Dovrà essere in condizione di adattarsi senza stravolgimenti al *mutare delle fogge e dei costumi* della Società e dovrà poter imparare dai suoi errori, correggendoli rapidamente.  
-Dovrà essere *vendor-independent* e *open-source*, per facilitare l'evidenziazione e la correzione di eventuali errori.  
+mentre dal punto di vista dell'Ufficio Legale o della società assicurativa, il notaio vale più del bambino, perché è più costoso da ripagare.
+L'auto non ha il tempo di valutare tutte queste variabili, quindi ha bisogno di una sua scala di valori che le permetta di *prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso[^book] non possono essere d'aiuto*; in altre parole, l'automobile ha bisogno di una Fede.
+Ovviamente non potrà essere una delle religioni canoniche, perché sarebbe limitante dal punto di vista delle vendite e apparentemente non sarà nemmeno una filosofia laica, perché se ce ne fosse una adatta, in vent'anni l'avrebbero trovata.
+Dovrà quindi essere qualcosa di intermedio, né religioso né laico, con principii che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori[^barbelognostica].
+Dovrà essere in condizione di adattarsi senza stravolgimenti al *mutare delle fogge e dei costumi* della Società e dovrà poter imparare dai suoi errori, correggendoli rapidamente.
+Dovrà essere *vendor-independent* e *open-source*, per facilitare la scoperta e la correzione di eventuali errori.
 Tanto meglio, poi, se potesse essere compresa e gestita facilmente dal software e dagli informatici.  
+Il C'hi++ potrebbe essere tutto questo.
+I principii del C'hi++, anche se ancora in embrione, permettono risolvere il dilemma bambino/notaio in maniera abbastanza semplice perché per C'hi++ non ha importanza chi dei due debba essere sacrificato, basta che la scelta sia preventiva e intenzionale, in modo che possa essere modificata nelle successive vite dell'Universo.
+In pratica, l'utente della *smart-car*, prima di partire, dovrà decidere che tipo di comportamento dovrà adottare il sistema nel caso si presentasse il problema: "o lui o io"; una soluzione che risolve non solo i problemi del sistema di guida, ma anche quelli degli uffici marketing e legale, perché scarica la responsabilità della scelta sull'utente e non sulla casa automobilistica o sul produttore del software.
+In ottica C'hi++ il titolo sul giornale potrebbe essere:
+
+> Notaio uccide bambino con la sua smart-car. Chi vi dice che sia una disgrazia?[^cavallo]
 
 ## Conclusioni
 Non so quale sarà il destino di *C'hi++*; non so dire nemmeno se questo Manifesto mi procurerà aiuto o sberleffi. 
@@ -899,7 +905,7 @@ Mi sembra un motivo più che sufficiente.
 
 [^arte]: I dettagli di questa affermazione potete trovarli qui: [Amore e Arte](amore-e-arte.pdf)
 
-[^achievements]: Il testo si definisce: a common standard of achievement for all peoples and all nations, to the end that every individual and every organ of society, keeping this Declaration constantly in mind, shall strive (...)*
+[^achievements]: Il testo si definisce: *a common standard of achievement for all peoples and all nations, to the end that every individual and every organ of society, keeping this Declaration constantly in mind, shall strive*
 
 [^peace]: *Whereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world*.
 
@@ -966,3 +972,5 @@ Mi sembra un motivo più che sufficiente.
 [^book]: Che, nel caso di un'automobile, potrebbe essere una sorta di registro storico delle situazioni indecidibili del passato, simile al *Book* delle partite scacchistiche.
 
 [^barbelognostica]: Un'automobile barbelognostica, per quanto realizzabile, sarebbe molto difficile da difendere in tribunale.
+
+[^cavallo]: Citazione dal koan Zen *Il cavallo scappato*, ripresa da Calvino nelle sue *Fiabe Italiane*.
