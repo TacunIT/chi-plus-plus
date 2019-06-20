@@ -15,8 +15,10 @@
     padding: 0;
     margin: 0
 }
+
 html {
 }
+
 body {
     background-color: #fff;
     font-family: "Gill Sans", Helvetica, arial, sans-serif;
@@ -191,6 +193,23 @@ SECTION.citazione SPAN {
     font-style: normal
 }
 
+SECTION.citazione BLOCKQUOTE {
+    color: red;
+}
+
+/* Domanda in testa */
+SECTION.prologo {
+    padding-top: 30%;
+    font-style:italic;
+    margin:auto;
+    text-align:justify;
+    width:66%;
+    page-break-before: always;
+    page-break-after: always;
+}
+
+
+
 p.firma {
     padding: 2rem
 }
@@ -284,7 +303,7 @@ blockquote {
     padding: 0 15px;
     color: #777777;
     font-style: italic;
-    font-size: 14pt;
+    font-size: inherit;
 }
 
 blockquote>:first-child {
@@ -299,7 +318,7 @@ blockquote>:last-child {
 DIV.citazione {
     color: #555;
     font-style: italic;
-    padding:1rem;
+    padding:0.5rem 1rem;
     text-align:justify;
 }
 
@@ -352,7 +371,7 @@ span.frame {
     overflow: hidden;
 }
 
-span.frame>span {
+span.frame > span {
     border: 1px solid #dddddd;
     display: block;
     float: left;
@@ -436,10 +455,10 @@ span.float-right>span {
 }
 
 code, tt {
+    font-size: 0.8rem;
     margin: 0 2px;
     padding: 0 5px;
     white-space: nowrap;
-    border: 1px solid #eaeaea;
     background-color: #f8f8f8;
     border-radius: 3px;
 }
@@ -454,8 +473,7 @@ pre code {
 
 .highlight pre {
     background-color: #f8f8f8;
-    border: 1px solid #cccccc;
-    font-size: 13px;
+    font-size: inherit;
     line-height: 19px;
     overflow: auto;
     padding: 6px 10px;
@@ -464,8 +482,7 @@ pre code {
 
 pre {
     background-color: #f8f8f8;
-    border: 1px solid #cccccc;
-    font-size: 13px;
+    font-size: inherit;
     line-height: 19px;
     overflow: auto;
     padding: 1rem;
@@ -485,7 +502,6 @@ kbd {
     color: #555;
     vertical-align: middle;
     background-color: #fcfcfc;
-    border: solid 1px #ccc;
     border-bottom-color: #bbb;
     border-radius: 3px;
     box-shadow: inset 0 -1px 0 #bbb
