@@ -2,12 +2,12 @@
  *
  * chi++.css
  *
- * Foglio di stile per la stampa dei documenti Markdown.
+ * Foglio di stile per la stampa dei documenti di C'hi++.
  *
  * @category   Stylesheet
  * @package    C'hi++
  * @author     Carlo Simonelli <r@canaro.net>
- * @version    0.4.x
+ * @version    0.5.8
  * @since      0.4.0
  */
 
@@ -284,6 +284,7 @@ blockquote {
     padding: 0 15px;
     color: #777777;
     font-style: italic;
+    font-size: 14pt;
 }
 
 blockquote>:first-child {
