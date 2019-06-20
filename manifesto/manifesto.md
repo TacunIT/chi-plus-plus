@@ -7,8 +7,8 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.5.7</p>
-	<p><label>Data    </label>Aprile 2019</p>
+	<p><label>Versione</label>0.5.8</p>
+	<p><label>Data    </label>29 Maggio 2019</p>
 </div>
 	![](../img/seal.png)
 </section>
@@ -41,9 +41,9 @@ Il Sessantotto ha spazzato via delle parti sicuramente rivedibili, ma fondamenta
 La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre la *reaganomics* è crollata alla fine degli anni '80 insieme al muro di Berlino.
 Le speranze degli anni '90 si sono schiantate l'11 Settembre 2001 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformata, nel tempo, in un sistema di controllo e di dis-informazione di massa.
 Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni dagli *smart-phone* e dai *social-network*.  
-In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (*c'è crisi*), né comunista (*Stalin e Mao hanno ucciso più persone di Hitler*), né cattolico (*i preti sono tutti pedofili*), né ebreo (*guarda gli Israeliani cosa fanno ai Palestinesi*), né Musulmano (*gli islamici sono degli esaltati che vogliono ucciderci tutti*), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali che non leggono[^istat], ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.  
+In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (*c'è crisi*), né comunista (*Stalin e Mao hanno ucciso più persone di Hitler*), né cattolico (*i preti sono tutti pedofili*), né ebreo (*guarda gli Israeliani cosa fanno ai Palestinesi*), né Musulmano (*gli islamici sono degli esaltati che vogliono ucciderci tutti*), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali che non leggono[^istat], ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.
 C'è modo di invertire questa tendenza o dobbiamo rassegnarci al declino? No.    
-*No*, non credo che qualcosa cambierà, almeno nel breve periodo, a meno che qualche evento esterno[^eventi] non costringa la nostra specie a modificare il suo comportamento; e *No*, non intendo arrendermi senza avere almeno tentato, perché queste sono le persone che determinano la qualità del nostro presente con il loro voto e con cui dovremo affrontare dei problemi da cui dipenderà il nostro futuro, come la sovrappopolazione, la scarsezza di risorse e l'accumulo di plastica negli oceani.  
+*No*, non credo che qualcosa cambierà, almeno nel breve periodo, a meno che qualche evento esterno[^eventi] non costringa la nostra specie a modificare il suo comportamento; e *No*, non intendo arrendermi senza avere almeno tentato, perché questi zombie sono le persone che determinano la qualità del nostro presente con il loro voto e con cui dovremo affrontare dei problemi da cui dipenderà il nostro futuro, come la sovrappopolazione, la scarsezza di risorse e l'accumulo di plastica negli oceani.  
 Ma "tentare", cosa?
 Il declino della nostra Società è un sintomo, non è il male; per frenarlo, dobbiamo identificarne la causa.
 
@@ -138,7 +138,7 @@ A differenza dei dogmi religiosi, però, i laici non possono rifarsi a valori di
 
 Prendete ad esempio i trenta articoli della [Dichiarazione dei Diritti dell'Uomo](http://www.un.org/en/universal-declaration-human-rights/) del 1948: voi e io troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.  
 Perché un Signore della Guerra centro-africano dovrebbe rispettarle, dato che non sono un insieme di norme giuridiche a cui gli Stati e gli individui debbano attenersi, ma un elenco di quelli che *dovrebbero essere*[^achievements] i diritti di ogni essere umano? 
-Perché, soprattutto, dovrebbe rispettare delle regole volte al mantenimento della pace[^peace], promulgate da un'Organizzazione che ha al suo vertice Paesi che sono i principali produttori di armi del Mondo[^sipri] e che violano costantemente quelle stesse regole da loro promosse?
+Perché, soprattutto, dovrebbe rispettare delle regole volte al mantenimento della pace[^peace], promulgate da un'Organizzazione che ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo[^sipri] e che violano costantemente quelle stesse regole da loro promosse?
 <br>  
 Dato che l'approccio laico presenta gli stessi problemi logici di quello religioso, mancando però dei corrispondenti lati positivi, non ci resta altra scelta che cercare di far “funzionare” la religione.
 
@@ -154,7 +154,7 @@ Abbiamo visto che i tre assiomi del Buonismo:
 pur nella loro semplicità, diventano incoerenti se li si confronta con la natura percepibile dell'Universo e della vita.
 Ciò vuol dire che il modello logico/esistenziale del Buonismo, così com'è, non funziona; o meglio: che funziona solo in una percentuale limitata di casi.
 Un Buonista non può ammetterlo, perché diventerebbe un eretico, ma noi sì e possiamo anche cercare di capire cos'è che non va in questo schema per provare a migliorarlo in modo che funzioni nel maggior numero possibile di casi.  
-Non sapendo quale dei tre precetti sia quello sbagliato, proviamo a negarli uno per volta e vediamo cosa succede:
+Non sapendo quale dei tre precetti sia quello che rende il sistema incoerente, proviamo a negarli uno per volta e vediamo cosa succede:
 
 #### Prima ipotesi: *Dio non esiste*
 Negare il primo assioma equivale a eliminare del tutto la dottrina Buonista: se Dio non esiste, non può essere buono e non può aver creato l'Universo. 
@@ -171,7 +171,7 @@ Sì, d'accordo, saremo condannati a vivere in un luogo dove esistono dolore e mo
 Delle tre, quest'ultima è l'ipotesi più appetibile, ma solo se l'uomo è in possesso di un'anima, ovvero di uno spirito che condivida parte dell'essenza di Dio e che si riunirà a Lui dopo la morte.
 Se l'anima non c'è, ovvero se in noi non alberga una scintilla dello Spirito Divino, siamo solo dei pezzi dell'Universo: vivremo nel dolore e dopo la morte sarà tutto finito per sempre.  
 Qualunque visione della vita basata su questi presupposti è inaccettabile perché, mancando un Aldilà e una beatitudine condizionata al nostro comportamento terreno, ciascuno cercherebbe di ottenere il massimo possibile dagli anni che vivrà, pensando solo a sé stesso senza alcun rispetto per il suo prossimo[^black-friday].
-Priva del concetto di anima, la religione diventerebbe logicamente solida, ma non assolverebbe al suo còmpito primario, che è quello di rendere migliore la vita dell'Uomo; quindi, se vogliamo rinnegare il terzo dogma del Buonismo senza fare danni, dobbiamo essere certi che esista un'anima.
+Priva del concetto di anima, la nostra ipotetica religione diventerebbe logicamente solida, ma non assolverebbe al suo còmpito primario, che è quello di rendere migliore la vita dell'Uomo; quindi, se vogliamo rinnegare il terzo dogma del Buonismo senza fare danni, dobbiamo essere certi che esista un'anima.
 Siccome, di fatto, non possiamo esserne certi, dobbiamo imporre questa condizione come dogma:
 
 <ol class="dogmi" start="4">
@@ -200,7 +200,7 @@ Senza la premessa, conseguente al secondo precetto: *Se Dio è buono, giusto e m
 
 > Nell'Universo creato da Dio esistono stupratori, omicidi e malattie perché ciò fa parte del Suo disegno, che noi non siamo in grado di comprendere.
 
-Per quanto simile all'ipotetica: “risposta generica, che chiama in causa l'imponderabilità delle decisioni divine”, data dal Buonista prima di mandarci al rogo, la nostra sarà una risposta coerente (oltre che umile), perché non presuppone alcuna qualità - positiva o negativa che sia - di Dio.
+Per quanto simile all'ipotetica: “risposta generica, che chiama in causa l'imponderabilità delle decisioni divine”, data dal Buonista prima di mandarci al rogo, la nostra sarà una risposta coerente (oltre che umile), perché non presuppone alcuna qualità, positiva o negativa che sia, di Dio.
 Soprattutto, noi non affermiamo di sapere cosa sia buono/giusto e cosa
 non lo sia, perché in effetti non lo possiamo sapere:
 
@@ -347,7 +347,7 @@ Già da queste poche righe è possibile vedere alcuni benefici dell'approccio *o
 Successivamente, però, ho capito che questa visione delle cose era la proiezione di un mio desiderio/speranza e sono passato a un modello meno giudicante, in cui i due Enti che generano l'Universo non sono in contrapposizione, ma cooperano in maniera simile allo *Yin* e allo *Yang* del Tao o a *Prakṛti* e *Puruṣa* dell'Induismo.
 Questa modifica, per quanto radicale, non ha avuto nessuna ripercussione negativa sul resto del modello teorico, *dichiaratamente* fallace in quanto ancora in fase evolutiva (*major version* 0); anzi: lo ha reso più robusto perché ha premesso di trovare delle affinità con altre religioni.
 <br />  
-Se avessimo applicato la stessa modifica al Cattolicesimo, riabilitando la figura del Diavolo, le cose non sarebbero andate altrettanto bene perché, se il Diavolo non fosse cattivo, non solo dovremmo mettere in discussione la veridicità di moltissimi passi della Bibbia - che non può essere messa in discussione perché è la Parola di Dio -, ma priveremmo la Chiesa della sua funzione primaria che è quella di salvare le anime, appunto, dal Maligno.
+Se avessimo applicato la stessa modifica al Cattolicesimo, riabilitando la figura del Diavolo, le cose non sarebbero andate altrettanto bene perché, se il Diavolo non fosse cattivo, non solo dovremmo mettere in discussione la veridicità di moltissimi passi della Bibbia (che non può essere messa in discussione perché è la Parola di Dio), ma priveremmo la Chiesa della sua funzione primaria che è quella di salvare le anime, appunto, dal Maligno.
 
 ## Release/0.1: *Sostiene Aristotele*
 A Giugno del 2007 scrissi un documento dal titolo:  [Sostiene Aristotele](sostiene-aristotele.md) che possiamo considerare la versione 0.1.1 del C'hi++. 
@@ -452,7 +452,7 @@ Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Uni
 </div>
 
 ### Il senso della vita è il debug
-Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*[^beta-tester] di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali (come il *Koan Mu* o il motivo per cui Nanchuan taglia in due il gatto[^mumon]) ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.  
+Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*[^beta-tester] di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali (come il *Koan Mu* o il motivo per cui Nansen taglia in due il gatto[^mumon]) ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.  
 Infatti, se paragoniamo l'esistenza a una sessione di test del software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori[^vasana] perché venga corretto nelle successive versioni del programma.
 Visto che, nel nostro caso, *beta-tester*, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/*beta-tester*, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.  
 In quest'ottica, la frase:
@@ -911,21 +911,17 @@ Mi sembra un motivo più che sufficiente.
 
 [^sipri]: Dati SIPRI (www.sipri.org).
 
-[^black-friday]: A mo' di esempio si veda un qualunque quotidiano o un filmato
-    sugli assalti ai grandi magazzini durante il *Black Friday*
-    americano.
+[^black-friday]: A mo' di esempio si veda un qualunque quotidiano o un filmato sugli assalti ai grandi magazzini durante il *Black Friday* americano.
 
-[^poc]: *Proof Of Concept*: prototipo che serve a di/mostrare le
-    funzionalità di un nuovo sistema o processo.
+[^poc]: *Proof Of Concept*: prototipo che serve a di/mostrare le funzionalità di un nuovo sistema o processo.
 
-[^api]: *Application Program Interface*: l'insieme delle regole per
-    l'utilizzo del sistema
+[^api]: *Application Program Interface*: l'insieme delle regole per l'utilizzo del sistema
 
-[^soko]: {TODO: aggiungere riferimento a poesia funeraria di Gesshū Sōko}.
+[^soko]: Di cui potrebbe essere un'eco l': *“inspirare, espirare”* all'inizio della poesia funeraria del monaco Gesshū Sōko.
 
 [^beta-tester]: I *beta-tester* sono le persone che provano in anteprima i programmi che stanno per essere rilasciati sul mercato per cercare eventuali errori sfuggiti alla fase di test interno effettuato dell'azienda produttrice. 
 
-[^mumon]: {TODO: aggiungere il riferimento a La Porta Senza Porta }
+[^mumon]: Mumon, *La Porta Senza Porta*. Adelphi, 1987.
 
 [^vasana]: Grazie a un “*imprintig* karmico” che io qui chiamo *Post-it* e che Yoga e Buddismo chiamano *Vāsanā*.  
     
@@ -951,9 +947,9 @@ Mi sembra un motivo più che sufficiente.
 
 [^rovelli]: Autore, per altro, di un libro proprio su Anassimandro.
 
-[^diavolo]: diàvolo s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. “calunniatore” (der. di διαβάλλω “gettare attraverso, calunniare”), adoperato nel gr. crist. per tradurre l’ebr. śāṭān “contraddittore, oppositore”].
+[^diavolo]: *diàvolo* s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. “calunniatore” (der. di διαβάλλω “gettare attraverso, calunniare”), adoperato nel gr. crist. per tradurre l’ebr. śāṭān “contraddittore, oppositore”].
 
-[^lucifero]: lucìfero agg. e s. m. [dal lat. lucĭfer -a -um, comp. di lux lucis “luce” e -fer “-fero”, calco del gr. ϕωσϕόρος].
+[^lucifero]: *lucìfero* agg. e s. m. [dal lat. lucĭfer -a -um, comp. di lux lucis “luce” e -fer “-fero”, calco del gr. ϕωσϕόρος].
 
 [^igm]: *Istituto Geografico Militare*.
 
