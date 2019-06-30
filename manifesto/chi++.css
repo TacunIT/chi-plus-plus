@@ -47,6 +47,10 @@ a.anchor {
     bottom: 0;
 }
 
+I {
+    font-size: inherit;
+}
+
 sup {
     font-size: 0.7em;
     vertical-align: super;
@@ -131,13 +135,15 @@ p {
 
 /**
  *  Copertina del documento
- *  Contiene il titolo, l'oggetto e i dati dell'autore
+ *  Contiene il titolo, l'oggetto, i dati dell'autore e il finto
+ *  indorvinello della Settimana Enigmistica
  */
 SECTION.cover {
     margin:none;
-    padding: 20% 1rem 0 ;
+    padding: 10% 1rem 0 ;
     height:200mm;
     counter-reset: h2;
+    text-align:center;
 }
 
 SECTION.cover H2  {
@@ -151,7 +157,8 @@ SECTION.cover H2:before {
 }
 
 SECTION.cover DIV.dati {
-    margin:10% 0;
+    display:inline-block;
+    margin:10% auto;
 }
 
 SECTION.cover DIV.dati LABEL {
@@ -196,19 +203,6 @@ SECTION.citazione SPAN {
 SECTION.citazione BLOCKQUOTE {
     color: red;
 }
-
-/* Domanda in testa */
-SECTION.prologo {
-    padding-top: 30%;
-    font-style:italic;
-    margin:auto;
-    text-align:justify;
-    width:66%;
-    page-break-before: always;
-    page-break-after: always;
-}
-
-
 
 p.firma {
     padding: 2rem

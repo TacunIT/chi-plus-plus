@@ -7,10 +7,12 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.6.0</p>
-	<p><label>Data    </label>20 Giugno 2019</p>
+	<p><label>Versione</label>0.7.0</p>
+	<p><label>Data    </label>30 Giugno 2019</p>
 </div>
-	![](../img/seal.png)
+<div class="quiz">
+	![](../img/copertina.png)
+</div>	
 </section>
 
 <section class="dedica">
@@ -26,10 +28,6 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 <span>Heinrich Böll</span> - Opinioni di un clown
 </section>
 
-<section class="prologo" >
-Un'automobile guidata da un sistema basato su intelligenza artificiale sta viaggiando in completa autonomia con a bordo un facoltoso notaio. D'improvviso, da dietro un'auto parcheggiata, sbuca un bambino. Il computer di bordo elabora i dati su velocità e direzione e scopre che quella storia non ha un lieto fine, perché qualunque cosa faccia, morirà qualcuno: o il bambino o il notaio. L'auto, a questo punto, deve decidere quale dei due umani uccidere, come se fosse un software per il gioco degli Scacchi che debba decidere quale di due pezzi in pericolo sacrificare.<br />
-In base a quali princìpi decide?
-</section>
 
 ## Executive summary
 Se continuerete nella lettura di questo Manifesto (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
@@ -148,7 +146,7 @@ Perché, soprattutto, dovrebbe rispettare delle regole volte al mantenimento del
 <br>  
 Dato che l'approccio laico presenta gli stessi problemi logici di quello religioso, mancando però dei corrispondenti lati positivi, non ci resta altra scelta che cercare di far “funzionare” la religione.
 
-### *Debug* del Buonismo
+### Debug del Buonismo
 Abbiamo visto che i tre assiomi del Buonismo:
 
 <ol class="dogmi">
@@ -159,8 +157,9 @@ Abbiamo visto che i tre assiomi del Buonismo:
 
 pur nella loro semplicità, diventano incoerenti se li si confronta con la natura percepibile dell'Universo e della vita.
 Ciò vuol dire che il modello logico/esistenziale del Buonismo, così com'è, non funziona; o meglio: che funziona solo in una percentuale limitata di casi.
-Un Buonista non può ammetterlo, perché diventerebbe un eretico, ma noi sì e possiamo anche cercare di capire cos'è che non va in questo schema per provare a migliorarlo in modo che funzioni nel maggior numero possibile di casi.  
-Non sapendo quale dei tre precetti sia quello che rende il sistema incoerente, proviamo a negarli uno per volta e vediamo cosa succede:
+Un Buonista non può ammetterlo, perché diventerebbe un eretico, ma noi sì e possiamo anche cercare di capire cos'è che non va in questo schema per provare a migliorarlo in modo che funzioni nel maggior numero possibile di casi.
+Visto che il nostro sistema consta unicamente di tre precetti, dev'essere per forza uno di essi a creare problemi. 
+Proviamo a negarli uno per volta e vediamo cosa succede:
 
 #### Prima ipotesi: *Dio non esiste*
 Negare il primo assioma equivale a eliminare del tutto la dottrina Buonista: se Dio non esiste, non può essere buono e non può aver creato l'Universo. 
@@ -478,7 +477,7 @@ gli sforzi dell’uomo per propiziarsi o conciliarsi potenze superiori che si su
 
 è valida anche per il C'hi++, solo che le “potenze superiori”, siamo noi stessi.
 
-##Release/0.2: *C'hi++*<a name="chi++"></a>
+##Release/0.2: C'hi++<a name="chi++"></a>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
 programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.
 Questa ambivalenza è presente anche nel titolo, che è un gioco di parole fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato *C++*.
