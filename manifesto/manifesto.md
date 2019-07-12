@@ -7,8 +7,8 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.7.0</p>
-	<p><label>Data    </label>30 Giugno 2019</p>
+	<p><label>Versione</label>0.5.6</p>
+	<p><label>Data    </label>12 Luglio 2019</p>
 </div>
 <div class="quiz">
 	![](../img/copertina.png)
@@ -40,7 +40,7 @@ Ho dovuto anche, per brevità, fare delle affermazioni senza comprovarle; i logi
 
 ## Analisi del sistema attualmente in esercizio
 Se mi guardo indietro, per il mezzo secolo su cui ho visibilità diretta, vedo una lunga serie di fallimenti ideologici.  
-Il Sessantotto ha spazzato via delle parti sicuramente rivedibili ma fondamentali della nostra Società, senza darci nulla in cambio, tranne la minigonna.
+Il Sessantotto ha spazzato via delle parti sicuramente rivedibili ma fondamentali della nostra Società senza darci nulla in cambio, tranne la minigonna.
 La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre la *reaganomics* è crollata alla fine degli anni '80 insieme al muro di Berlino.
 Le speranze degli anni '90 si sono schiantate l'11 Settembre 2001 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformata, nel tempo, in un sistema di controllo e di dis-informazione di massa.
 Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni dagli *smart-phone* e dai *social-network*.  
@@ -57,7 +57,7 @@ Si può fare, ma è sbagliato e limitativo.
 È sbagliato da un punto di vista etico, perché le regole che si definiscono sono sempre una conseguenza di esigenze contingenti (guerre, sopraffazioni, disparità sociali), venendo a mancare le quali lo schema logico del sistema perde di significato e si disgrega.
 È sbagliato anche da un punto di vista logico, perché i concetti di vero/falso, giusto/sbagliato devono sempre essere preesistenti allo schema a cui vanno applicati, altrimenti non è possibile sapere se la definizione che se ne dà sia giusta o sbagliata, vera o falsa.
 È limitativo, infine, perché restringe il numero dei possibili obiettivi da perseguire a un insieme finito di azioni o traguardi, raggiunti i quali non esiste più possibilità di migliorare.  
-Pensate al gioco degli Scacchi: non esiste nessun motivo, all'interno della schacchiera, che costringa ciascun pezzo a muoversi solo in una specifica maniera; le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a "L" in ossequio a delle regole /** @todo: non mi piace, trovare un termine più specifico */ esterne sia ai pezzi che alla schacchiera, ma è proprio da queste limitazioni che deriva il fascino del gioco.
+Pensate al gioco degli Scacchi: non esiste nessun motivo, all'interno della schacchiera, che costringa ciascun pezzo a muoversi solo in una specifica maniera; le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a "L" in ossequio a delle regole definte al di fuori della schacchiera, ma è proprio da queste limitazioni che deriva il fascino del gioco.<br />
 Al contrario, la Società moderna è una scacchiera in cui ciascun pezzo si muove nella maniera che preferisce, come “un asino privo di briglie” perché, in ossequio a un malinteso senso di libertà, sono state eliminate tutte le regole. Le persone di successo che si privano della vita sono pedoni che, arrivati alla fine della scacchiera grazie alla loro abilità, hanno scoperto che non esiste alcuna forma di promozione, perché insieme alle regole sono stati aboliti anche i giocatori.  
 <br />  
 
@@ -67,10 +67,10 @@ Fermo restando che la vita su questo Pianeta non potrà mai migliorare realmente
 La (buona) politica sarebbe la soluzione ideale, se i (buoni) politici avessero il potere di prendere delle decisioni impopolari, cosa che non è, perché gli elettori sono dei bambini obesi che, dovendo scegliere fra un dietologo e un gelataio, non fanno mai la scelta corretta per la loro salute.  
 La cultura non può venirci in aiuto perché la mancanza di stimoli esterni ha prodotto un'economia curtense delle idee nella quale letteratura, cinema, televisione e Internet riciclano ciascuna le idee delle altre, in un banchetto coprofago di concetti e storie già visti.  
 L'arte potrebbe aiutarci, ma sfortunatamente non ce n'è più e quelle forme di appagamento sensoriale che da lungo tempo ormai ci vengono spacciate per arte[^arte], essendo espressione e quindi esaltazione di un singolo sarebbero addirittura controproducenti.  
-La scienza, che in passato ha fatto molto per migliorare la qualità della nostra vita, in questo momento, specie in alcuni settori all'avanguardia come la bio-ingegneria o l'intelligenza artificiale, produce innovazione con più rapidità di quanto la Società riesca a metabolizzarla e, almeno per ora, fa più parte del problema che della soluzione.
+La scienza, che in passato ha fatto molto per migliorare la qualità della nostra vita, in questo momento, specie in alcuni settori all'avanguardia come la bio-ingegneria o l'intelligenza artificiale, produce innovazione con più rapidità di quanto la Società riesca a metabolizzarla e, almeno per ora, fa più parte del problema che della soluzione.  
 Scartati politica, cultura, arte e scienza, non ci rimane che la religione.  
 Per quelli che sono i nostri scopi, ovvero convincere la gente a non pensare in termini individuali, ma di gruppo, recuperando allo stesso tempo un certo grado di spiritualità, la religione è uno strumento perfetto: è gratuita, è adatta a tutte le età e non richiede una specifica preparazione o attitudine.
-Di contro, la religione ha due grossi difetti: il primo è che ampie fasce della popolazone hanno un'istintiva diffidenza nei suoi confronti perché le attribuiscono colpe che in realtà andrebbero imputate al Clero e ai fedeli; il secondo difetto è che le ampie fasce di cui sopra hanno le loro buone ragioni di diffidare, perché la cattiva interpretazione o applicazione dei princìpi delle religioni ha di solito effetti devastanti.  
+Di contro, la religione ha due grossi difetti: il primo è che ampie fasce della popolazone hanno un'istintiva diffidenza nei suoi confronti perché le attribuiscono colpe che in realtà andrebbero imputate al clero e ai fedeli; il secondo difetto è che le ampie fasce di cui sopra hanno le loro buone ragioni di diffidare, perché la cattiva interpretazione o applicazione dei princìpi delle religioni ha di solito effetti devastanti.  
 Possiamo attenuare il primo problema parlando di *spiritualità* o di *metafisica*, in vece che di *religione*, ma per risolvere il secondo dobbiamo capire quali siano le cause dell'instabilità delle religioni e cercare di attenuarle.
 
 ## Bug noti delle religioni
@@ -112,7 +112,8 @@ Partendo da queste affermazioni non dimostrabili e sapendo che l'Uomo fa parte d
 Certi che la vita sia un dono di Dio all'Uomo e che Dio ha solo proprietà positive (onnipotenza, misericordia, bontà, giustizia, ecc.), i Buonisti deducono che la vita sia un dono positivo e come tale vada preservato.
 Di conseguenza, se qualcuno gli facesse le domande viste all'inizio, un Buonista non avrebbe dubbi e risponderebbe NO in tutti e tre i casi, perché la sua religione gli impedisce di rifiutare o sottrarre ad altri un dono divino.
 Molti potrebbero non essere d'accordo con questa posizione (io, per
-esempio), ma nessuno potrebbe criticare il buonista, che decide in maniera coerente con il suo Credo. Se però si domandasse allo stesso individuo:
+esempio), ma nessuno potrebbe criticare il buonista, che decide in maniera coerente con il suo Credo.  
+Se però si domandasse allo stesso individuo:
 
 <ol class="domande" start="4">
 <li ><a name="domanda-D"></a>
@@ -227,7 +228,7 @@ Al contrario, dire che questo principio creatore sia “buono” è ipotetico; r
 -   dire che non è buono;
 -   dire che non ha creato l'Universo.
 
-Delle tre, la prima è la meno *conveniente*, eppure la maggior parte dei non-credenti preferisce negare l'esistenza di Dio piuttosto che mettere in discussione la Sua presunta bontà.
+Delle tre, la prima è la meno *conveniente*, eppure la maggior parte dei non-credenti preferisce negare l'esistenza di Dio piuttosto che mettere in discussione la sua presunta bontà.
 Il perché, chiedetelo a loro.
 
 ### Buonismo 2.0
