@@ -7,8 +7,8 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.5.6</p>
-	<p><label>Data    </label>12 Luglio 2019</p>
+	<p><label>Versione</label>0.6.0</p>
+	<p><label>Data    </label>10 Ottobre 2019</p>
 </div>
 <div class="quiz">
 	![](../img/copertina.png)
@@ -32,6 +32,7 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 ## Executive summary
 Se continuerete nella lettura di questo Manifesto (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
 Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.  
+Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e principii etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come quello riportato in copertina.  
 Premetto che non ho titoli per scrivere di filosofia e religione, perché sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer, quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell'esaltazione religiosa; successivamente, descriverò alcune 
 alcune vulnerabilità logiche delle religioni canoniche e definirò delle linee-guida atte a prevenirle; presenterò poi la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.  
   

@@ -30,6 +30,7 @@ body {
 
 a {
     color: #060;
+    font-weight: normal;
 }
 
 a.absent {
