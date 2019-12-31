@@ -6,9 +6,9 @@
 	<h2>Ipotesi per una metafisica open-source</h2>
 <header>
 <div class="dati">
-	<p><label>Autore  </label>Carlo Simonelli <r@canaro.net></p>
-	<p><label>Versione</label>0.6.0</p>
-	<p><label>Data    </label>10 Ottobre 2019</p>
+	<p><label>Autore  </label>Carlo Simonelli <chi@canaro.net></p>
+	<p><label>Versione</label>0.6.1</p>
+	<p><label>Data    </label>31 Dicembre 2019</p>
 </div>
 <div class="quiz">
 	![](../img/copertina.png)
@@ -356,7 +356,7 @@ Questa modifica, per quanto radicale, non ha avuto nessuna ripercussione negativ
 <br />  
 Se avessimo applicato la stessa modifica al Cattolicesimo, riabilitando la figura del Diavolo, le cose non sarebbero andate altrettanto bene perché, se il Diavolo non fosse cattivo, non solo dovremmo mettere in discussione la veridicità di moltissimi passi della Bibbia (che non può essere messa in discussione perché è la Parola di Dio), ma priveremmo la Chiesa della sua funzione primaria che è quella di salvare le anime, appunto, dal Maligno.
 
-## Release/0.1: Sostiene Aristotele
+## Release 0.1: Sostiene Aristotele
 A Giugno del 2007 scrissi un documento dal titolo:  [Sostiene Aristotele](sostiene-aristotele.md) che possiamo considerare la versione 0.1.1 del C'hi++. 
 In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione[^soko].
 Nelle fasi di espansione, l'Uno esplodeva, generando l'Universo così come lo conosciamo; nelle fasi di contrazione, l'Universo collassava nell'Uno.  
@@ -479,7 +479,7 @@ gli sforzi dell’uomo per propiziarsi o conciliarsi potenze superiori che si su
 
 è valida anche per il C'hi++, solo che le “potenze superiori”, siamo noi stessi.
 
-##Release/0.2: C'hi++<a name="chi++"></a>
+##Release 0.2: C'hi++<a name="chi++"></a>
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
 programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.
 Questa ambivalenza è presente anche nel titolo, che è un gioco di parole fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato *C++*.
@@ -700,7 +700,7 @@ Se gli elementi interni di un sistema sono dipendenti gli uni dagli altri, la co
 Al contrario, se gli elementi del sistema sono indipendenti gli uni dagli altri e ciasuno di essi svolge solo un compito ben preciso, le modifiche o le correzioni su uno di essi avranno un impatto molto basso o addirittura nullo sul resto del sistema.  
 Sfortunatamente, quando ho pensato a tutto ciò, il nome Spazionismo era già stato assegnato e mi divertiva troppo per sostituirlo.
 
-## Release/0.3: Git
+## Release 0.3: Git
 A Dicembre del 2016 divenne chiaro che anche se avessi potuto dedicare a questo progetto tutto il mio tempo (e non potevo), non sarei mai riuscito a portarlo a termine da solo.
 Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *open-source*, coinvlgendo nello “sviluppo” anche altre persone, mi sembrò la cosa migliore da fare, così cominciai a scrivere questo Manifesto per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
 
@@ -710,20 +710,20 @@ Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *op
 ```
 *   commit fa61cc01a2c1c3aeedc94a8a8a795e932d17f98d (origin/master)
 |\  Merge: ced4c8f 1746b3c
-| | Author: Carlo Simonelli <cs@nero-digitale.com>
+| | Author: Carlo Simonelli <chi@canaro.net>
 | | Date:   Sun Dec 16 20:10:08 2018 +0100
-| |     Importato il branch 'release/0.4.4'.
+| |     Importato il branch 'release 0.4.4'.
 | | 
 | * commit ef642e150a0237675a9c176a8a8f8d3cb34c5cb9
-| | Author: Carlo Simonelli <cs@nero-digitale.com>
+| | Author: Carlo Simonelli <chi@canaro.net>
 | | Date:   Sun Dec 16 19:51:30 2018 +0100
 | |     Prima di merge con bitbucket
 | |   
 | *   commit e93ee12d95a75a06375eff64fbf571ca4b29f01f
 | |\  Merge: f3674cc 9e3989b
-| | | Author: Carlo Simonelli <cs@nero-digitale.com>
+| | | Author: Carlo Simonelli <chi@canaro.net>
 | | | Date:   Sat Dec 15 19:42:22 2018 +0100
-| | |     Merge branch 'release/0.4.3'
+| | |     Merge branch 'release 0.4.3'
 | | | 
 ```
 Ciascuno di quei “commit” identificati da una stringa alfanumerica che si vedono nel codice qui sopra, è una sorta di fotografia del sistema in un determinato momento dello sviluppo.
@@ -737,18 +737,18 @@ git clone git@bitbucket.org:canaro/chi-plus-plus.git
 ```
 Mi sono dilungato su Git perché il prossimo paragrafo comincia con la frase..
 
-## Release/0.4: Markdown
+## Release 0.4: Markdown
 Come si può vedere dal registro degli eventi di Git, il 9 Dicembre di quest'anno ho convertito il testo di questo documento dal formato *OpenDocument* al formato *Markdown*.
 
 ```
 commit ba7ff38b6d0862b13a79f10153c2eb11477b2a1f
-Author: Carlo Simonelli <cs@nero-digitale.com>
+Author: Carlo Simonelli <chi@canaro.net>
 Date:   Sun Dec 9 16:01:53 2018 +0100
 
     Completato aggiornamento della versione Markdown del Manifesto
 
 commit f24b3147f8fee89f871ddceb171a6fb0a979cac1
-Author: Carlo Simonelli <cs@nero-digitale.com>
+Author: Carlo Simonelli <chi@canaro.net>
 Date:   Sun Dec 9 10:30:25 2018 +0100
 
     Iniziata conversione Manifesto in formato Markdown
