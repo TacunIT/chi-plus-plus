@@ -60,7 +60,6 @@ Si può fare, ma è sbagliato e limitativo.
 È limitativo, infine, perché restringe il numero dei possibili obiettivi da perseguire a un insieme finito di azioni o traguardi, raggiunti i quali non esiste più possibilità di migliorare.  
 Pensate al gioco degli Scacchi: non esiste nessun motivo, all'interno della schacchiera, che costringa ciascun pezzo a muoversi solo in una specifica maniera; le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a "L" in ossequio a delle regole definte al di fuori della schacchiera, ma è proprio da queste limitazioni che deriva il fascino del gioco.<br />
 Al contrario, la Società moderna è una scacchiera in cui ciascun pezzo si muove nella maniera che preferisce, come “un asino privo di briglie” perché, in ossequio a un malinteso senso di libertà, sono state eliminate tutte le regole. Le persone di successo che si privano della vita sono pedoni che, arrivati alla fine della scacchiera grazie alla loro abilità, hanno scoperto che non esiste alcuna forma di promozione, perché insieme alle regole sono stati aboliti anche i giocatori.  
-<br />  
 
 ### La cura
 Fermo restando che la vita su questo Pianeta non potrà mai migliorare realmente fino a quando non riusciremo a fare un uso più responsabile delle nostre gonadi, è ragionevole pensare che un nuovo schema di valori, che abbia al suo vertice la comunità e non l'individuo, unito a una moderata dose di spiritualità potrebbe aiutarci a uscire da questa picchiata auto-distruttiva, se troviamo un modo efficace per diffonderlo.
