@@ -1,3 +1,15 @@
+## 0.6.0 (January 08, 2020)
+  - Correzioni a presentazione
+  - Completata prima versione dell'articolo sul Manifesto
+  - Correzioni varie
+  - Aggiunta nota iniziale su utilità per AI
+  - Modifiche minori al testo del Manifesto
+  - Aggiunta immagine alla copertina del Manifesto.
+  - Correzioni all'impaginazione
+  - Modifiche al fogli di stile
+  - Completata prima versione del paragrafo 9.2
+  - Modifiche al testo
+
 ## 0.5.5 (March 21, 2019)
   - Revisione delle note di chiusura
   - Rivisto paragrafo finale e aggiornata immagine da Springer

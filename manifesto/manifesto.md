@@ -7,7 +7,7 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <chi@canaro.net></p>
-	<p><label>Versione</label>0.6.1</p>
+	<p><label>Versione</label>0.6.0</p>
 	<p><label>Data    </label>31 Dicembre 2019</p>
 </div>
 <div class="quiz">
