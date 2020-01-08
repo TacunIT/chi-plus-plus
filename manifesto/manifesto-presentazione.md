@@ -31,7 +31,7 @@ DIV.icone DIV P.ok {
 <header>
 <div class="dati">
     <p><label>Autore  </label>Carlo Simonelli</p>
-    <p><label>Versione</label>0.2.0</p>
+    <p><label>Versione</label>0.2.1</p>
     <p><label>Data    </label>7 Gennaio 2020</p>
 </div>
 
@@ -89,7 +89,7 @@ Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, elimina
 Anche se complesso, tutto questo è possibile.
 Ricondotte alle loro caratteristiche essenziali, le diverse ipotesi metafisiche hanno molti punti in comune perché sono tutte, in una maniera o nell'altra, la risposta a uno stesso bisogno: la ricerca di una giustificazione alla nostra esistenza.
 Ma, così come avvenne a Linus Torvaldsen, dopo qualche anno che lavoravo a questo progetto, capii che non era un compito che potevo svogere da solo, così cominciai a scrivere un *Manifesto* per spiegare a dei potenziali collaboratori quali fossero le mie intenzioni. 
-La prima versione del Manifesto era un *dump* destrutturato delle mie idee, del tutto incomprensibile a chiunque non condividesse i miei circuiti sinaptici; la seconda versione, a cui questo articolo fa riferimento, è più strutturata e comprende un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio*[^struttura] nel quale descrivo il problema che mi propongo di affrontare ed esamino le possibili soluzioni.
+Preso atto della mia incapacità di produrre un documento accademico, ho redatto il Manifesto come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivo il problema che mi propongo di affrontare ed esamino le possibili soluzioni.
 Quando l'ho proposta al direttore di PC Magazine, mi ha risposto: *Va bene, ma devi scrivere un testo introduttivo di 5000 battute*.  
 Le ho già superate, perciò, mi fermo qui.
 
@@ -105,4 +105,4 @@ Le ho già superate, perciò, mi fermo qui.
 
 [^coscienza]: Inteso qui come: *coscienza di sè*.
 
-[^struttura]: Preso atto della mia incapacità di produrre un documento accademico, ho redatto il Manifesto come se fosse un progetto informatico.
+
