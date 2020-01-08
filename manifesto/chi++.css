@@ -477,7 +477,7 @@ pre code {
 
 pre {
     background-color: #f8f8f8;
-    font-size: inherit;
+    font-size: 0.9rem;
     line-height: 19px;
     overflow: auto;
     padding: 1rem;
