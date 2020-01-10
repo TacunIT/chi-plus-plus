@@ -241,7 +241,8 @@ Se scegliamo la logica, però, saremo costretti a scinderci dai Buonisti; la nos
 I punti di attrito e gli scismi provocano sempre dei conflitti e, così, il nostro tentativo di rendere migliore la religione Buonista avrà ottenuto un risultato diametralmente opposto a quello che ci eravamo prefissi.
 
 C'è un modo per evitarlo?
-
+<br />  
+<br />  
 ### Imparare dagli errori
 L'esempio riportato sopra ha evidenziato dei problemi che possiamo considerare congeniti a tutte le religioni:
 
@@ -310,7 +311,7 @@ La *major version zero* (_0.y.z_) è destinata allo sviluppo iniziale, quando il
 
 ### Versionamento delle religioni monoteistiche
 
-Se volessimo applicate il versionamento alle grandi religioni monoteistiche, otterremmo una sequenza simile a questa:
+Se volessimo applicate il versionamento alle grandi religioni monoteistiche, otterremmo una sequenza simile a quella della pagina seguente.
 
 | ver. | anno | descrizione | modifiche apportate
 :---: | :---: | --- | :--- |
@@ -327,14 +328,12 @@ Se volessimo applicate il versionamento alle grandi religioni monoteistiche, ott
 1.2.0 | 787        | II° Concilio Nicea |  Miglioramenti all'interfaccia grafica: permesse le immagini sacre.
 1.2.1 | 1284       | Vescovo di Passavia    |  Potenziamento dell'*help-desk* con l'introduzione dei Santi Ausiliatori.
 1.3.0 | 1054       | Chiesa Ortodossa       |  Modifiche all'architettura del sistema: si passa da un sistema centralizzato a uno distribuito.
-
-| ver. | anno | descrizione | modifiche apportate
-:---: | :---: | --- | :--- |
 1.4.1 | 1540       | Calvino                |  Modifiche all'interfaccia utente.
 2.0.0 | 610        | Islam                  |  Cambio di m*ajor version*: Dio è sempre uno, ma non è lo stesso di prima.
 2.1.0 | 657        | Sunniti                |  Rimozione dell'utente amministratore.
 2.2.0 | 661        | Sciiti                 |  Ripristino dell'utente amministratore.
-
+<br />  
+<br />  
 ### Versionamento del C'hi++
 Il C'hi++ è, in un certo senso, monoteistico, ma non è una religione, quindi deve essere sottoposto a un versionamento autonomo. 
 Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero:
