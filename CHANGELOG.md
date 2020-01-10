@@ -1,3 +1,8 @@
+## 0.6.2 (January 10, 2020)
+  - Aggiornata cronologia C'hi++ del Manifesto
+  - Revisione del Manifesto e della presentazione
+  - Correzioni grafiche minori
+
 ## 0.6.0 (January 08, 2020)
   - Correzioni a presentazione
   - Completata prima versione dell'articolo sul Manifesto
