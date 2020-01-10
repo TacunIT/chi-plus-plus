@@ -346,7 +346,9 @@ Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero
 0.3.0 | 2015 |  Manifesto   | Iniziata la redazione di questo documento.
 0.3.1 | 2016 |  Adozione git         | Creato acconto per il progetto su GitHub.
 0.3.2 | 2018 |  Allineamento         | Allineamento delle versioni git con quelle del Manifesto.
-0.4.0 | oggi |  Manifesto Markdown | Conversione del Manifesto in formato Markdown
+0.4.0 | 2018 |  Manifesto Markdown | Conversione del Manifesto in formato Markdown
+0.5.0 | 2019 |  Revisione Manifesto | Revisione Manifesto come preogetto IT
+0.6.0 | 2020 |  Presentazone Manifesto | Articolo presentazione Manifesto
 
 Già da queste poche righe è possibile vedere alcuni benefici dell'approccio *open-source* alla speculazione filosofica: nella versione 0.1.0 del C'hi++, la figura che definisco: *Immancabile Testa di Pera* era un elemento negativo, assimilabile al Diavolo o alla *Discordia* di Empedocle. 
 Successivamente, però, ho capito che questa visione delle cose era la proiezione di un mio desiderio/speranza e sono passato a un modello meno giudicante, in cui i due Enti che generano l'Universo non sono in contrapposizione, ma cooperano in maniera simile allo *Yin* e allo *Yang* del Tao o a *Prakṛti* e *Puruṣa* dell'Induismo.
