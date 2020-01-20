@@ -63,7 +63,7 @@ Se consideriamo la notevole disparità di vedute e convinzioni dei Popoli della 
 sia ambigua perché ciò che è *percepito* come etico da qualcuno potrebbe non esserlo per altri.
 La conseguenza di questa indeterminatezza è che, come dimostrano questi due articoli su [Springer](rd.springer.com), da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancora non si è riuscito a decidere *quali* debbano essere questi valori.  
 
-<img src="value-sensitive-design.png" style="width:100%;padding:1rem 0">
+<img src="./img/value-sensitive-design.png" style="width:100%;padding:1rem 0;border:solid 1px #999">
 
 Quindi, abbiamo solo due possibilità: o scriviamo del codice specializzato per ciascun tipo di etica o definiamo un'etica che sia condivisibile dalla maggior parte degli utenti; una sorta di *dress-code* che sia valido sia a una cena di gala che a un toga party. 
 Dato poi che è sbagliato ricercare i valori e le motivazioni della propria etica all'interno dello schema stesso, negando ogni forma di trascendenza[^spiego], definiremo una metafisica cui fare riferimento, sfruttando le idee che nacquero e si svilupparono nella culla della Civiltà, ovvero gli anni '80.
@@ -74,7 +74,8 @@ Per definire un'etica che sia acccettabile dal maggior numero di persone possibi
 In sostanza, abbiamo bisogno di icone.  
 Il sostantivo inglese *file* può tradursi con: documento, ملف (Arabo), 文件 (Cinese), файл (Russo), ファイル (Giapponese), 파일 (Coreano) oppure, più semplicemente, può essere rappresentato con il simbolo: 
 
-<div class="file"><img src="file.jpg"></div>
+<div class="file"><img src="./img/
+file.jpg"></div>
 
 Così come la pipa di Magritte, il documento del simbolo non è un documento, ma questo non ha importanza perché ciò che conta, qui, è il significato, non il significante.
 Quando l'utente di un sistema di scrittura vede il simbolo *File*, non pensa né che quel documento *sia* quello che vuole scrivere lui né che *non sia* il documento che vuole scrivere lui.
@@ -82,9 +83,9 @@ Quando l'utente di un sistema di scrittura vede il simbolo *File*, non pensa né
 Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, eliminando dai nostri simboli tutto ciò che è superfluo e lasciando solo ciò che serve a denotare l'oggetto a cui si riferiscono.
 
 <div class="icone" >
-<div><img src="zeus.png"  ><p>NO</p></div>
-<div><img src="gesu.png"  ><p>NO</p></div>
-<div><img src="occhio.png"><p class="ok">SI</p></div>
+<div><img src="./img/zeus.png"  ><p>NO</p></div>
+<div><img src="./img/gesu.png"  ><p>NO</p></div>
+<div><img src="./img/occhio.png"><p class="ok">SI</p></div>
 </div>
 
 Anche se complesso, tutto questo è possibile: spogliate degli orpelli voluti dal Clero e ricondotte alle loro caratteristiche essenziali, le diverse ipotesi metafisiche hanno molti punti in comune perché sono tutte, in una maniera o nell'altra, la risposta a uno stesso bisogno: la ricerca di una giustificazione alla nostra esistenza.
