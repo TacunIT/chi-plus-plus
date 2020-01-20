@@ -1,3 +1,7 @@
+## 0.6.3 (January 20, 2020)
+  - Rivisto foglio di stile
+  - Ridotte e razionalizzate directory
+
 ## 0.6.2 (January 10, 2020)
   - Aggiornata cronologia C'hi++ del Manifesto
   - Revisione del Manifesto e della presentazione
