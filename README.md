@@ -1,33 +1,9 @@
-<style>
-DIV.file,
-DIV.icone {
-    text-align:center;
-    padding:1.5rem 0;
-}
-DIV.icone DIV {
-    display: inline-block;
-}
-DIV.icone IMG {
-    height: 100px;
-    border: solid 1px #999;
-    padding: 4px;
-    margin: 0 20px
-    display: block;
-}
-DIV.icone DIV P {
-    text-align:center;
-    color: #900;
-    font-weight: bold;
-}
-DIV.icone DIV P.ok {
-    color: #090
-}
-</style>
+<link rel="stylesheet" type="text/css" href="./css/chi++.css" />
 
-<section class="pagina cover">
+<section class="readme pagina cover">
 <header>
     <h1>C'hi++</h1>
-    <h2>Un'etica *vendor-independent* per l'intelligenza artificiale</h2>
+    <h2>README.md</h2>
 <header>
 <div class="dati">
     <p><label>Autore  </label>Carlo Simonelli</p>
@@ -40,7 +16,7 @@ What does it mean to implement digital and AI ethics? Beyond what is legal or no
 <span style="font-style:normal">- Nicolas Economou</span>
 </section>  
 
-## Cosa
+## Un'etica *vendor-independent* per l'intelligenza artificiale
 Abbiamo bisogno di un'etica.  
 Ne abbiamo bisogno noi e ne ha bisogno il nostro software.
 Il problema è che *etica*, così come *amore* e *arte*, è un termine che tutti utilizzano ma che ciascuno può (legittimamente) interpretare a suo modo.
@@ -68,21 +44,19 @@ La conseguenza di questa indeterminatezza è che, come dimostrano questi due art
 Quindi, abbiamo solo due possibilità: o scriviamo del codice specializzato per ciascun tipo di etica o definiamo un'etica che sia condivisibile dalla maggior parte degli utenti; una sorta di *dress-code* che sia valido sia a una cena di gala che a un toga party. 
 Dato poi che è sbagliato ricercare i valori e le motivazioni della propria etica all'interno dello schema stesso, negando ogni forma di trascendenza[^spiego], definiremo una metafisica cui fare riferimento, sfruttando le idee che nacquero e si svilupparono nella culla della Civiltà, ovvero gli anni '80.
 
-## Come
 Buona parte del software, da adesso in poi, avrà due interfacce utente: una, grafica, dedicata all'interazione con il sistema sensoriale e una metafisica, dedicata all'interazione con la coscienza[^coscienza]. 
 Per definire un'etica che sia acccettabile dal maggior numero di persone possibile, dobbiamo fare ciò che fecero i creatori delle prime interfacce grafiche: creare una libreria di simboli il cui significato sia chiaro e condiviso da tutti gli utenti.
 In sostanza, abbiamo bisogno di icone.  
 Il sostantivo inglese *file* può tradursi con: documento, ملف (Arabo), 文件 (Cinese), файл (Russo), ファイル (Giapponese), 파일 (Coreano) oppure, più semplicemente, può essere rappresentato con il simbolo: 
 
-<div class="file"><img src="./img/
-file.jpg"></div>
+<div class="readme file"><img src="./img/file.jpg"></div>
 
 Così come la pipa di Magritte, il documento del simbolo non è un documento, ma questo non ha importanza perché ciò che conta, qui, è il significato, non il significante.
 Quando l'utente di un sistema di scrittura vede il simbolo *File*, non pensa né che quel documento *sia* quello che vuole scrivere lui né che *non sia* il documento che vuole scrivere lui.
 È questo l'atteggiamento che dobbiamo stimolare nei fruitori della nostra etica.
 Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, eliminando dai nostri simboli tutto ciò che è superfluo e lasciando solo ciò che serve a denotare l'oggetto a cui si riferiscono.
 
-<div class="icone" >
+<div class="readme icone" >
 <div><img src="./img/zeus.png"  ><p>NO</p></div>
 <div><img src="./img/gesu.png"  ><p>NO</p></div>
 <div><img src="./img/occhio.png"><p class="ok">SI</p></div>
