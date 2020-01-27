@@ -1,3 +1,10 @@
+## 0.7.0 (January 27, 2020)
+  - Aggiornato testo Amore e Arte
+  - Aggiunto link a file CSS su carlosimonelli.it
+  - Creata directory lib per fonti esterne
+  - Rimossi file obsoleti
+  - Spostati e rinomimati README e Manifesto nella sezione doc
+
 ## 0.6.3 (January 20, 2020)
   - Rivisto foglio di stile
   - Ridotte e razionalizzate directory
