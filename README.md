@@ -1,22 +1,13 @@
 <link rel="stylesheet" type="text/css" href="./css/chi++.css" />
 
-<section class="readme pagina cover">
-<header>
-    <h1>C'hi++</h1>
-    <h2>README.md</h2>
-<header>
-<div class="dati">
-    <p><label>Autore  </label>Carlo Simonelli</p>
-    <p><label>Versione</label>0.3.0</p>
-    <p><label>Data    </label>10 Gennaio 2020</p>
-</div>
+# README
+
 
 <section class="citazione">
 What does it mean to implement digital and AI ethics? Beyond what is legal or not – and therefore what you must comply with – you need to determine what you stand for as an organization – what are your brand values? These values should exist whether you use AI or not. You can then define your ethical AI code on the basis of what you stand for.
 <span style="font-style:normal">- Nicolas Economou</span>
 </section>  
 
-## Un'etica *vendor-independent* per l'intelligenza artificiale
 Abbiamo bisogno di un'etica.  
 Ne abbiamo bisogno noi e ne ha bisogno il nostro software.
 Il problema è che *etica*, così come *amore* e *arte*, è un termine che tutti utilizzano ma che ciascuno può (legittimamente) interpretare a suo modo.
