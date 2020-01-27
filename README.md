@@ -1,12 +1,6 @@
-<link rel="stylesheet" type="text/css" href="./css/chi++.css" />
-
 # README
 
-
-<section class="citazione">
-What does it mean to implement digital and AI ethics? Beyond what is legal or not – and therefore what you must comply with – you need to determine what you stand for as an organization – what are your brand values? These values should exist whether you use AI or not. You can then define your ethical AI code on the basis of what you stand for.
-<span style="font-style:normal">- Nicolas Economou</span>
-</section>  
+> What does it mean to implement digital and AI ethics? Beyond what is legal or not – and therefore what you must comply with – you need to determine what you stand for as an organization – what are your brand values? These values should exist whether you use AI or not. You can then define your ethical AI code on the basis of what you stand for. - Nicolas Economou
 
 Abbiamo bisogno di un'etica.  
 Ne abbiamo bisogno noi e ne ha bisogno il nostro software.
