@@ -7,11 +7,11 @@
 <header>
 <div class="dati">
 	<p><label>Autore  </label>Carlo Simonelli <chi@canaro.net></p>
-	<p><label>Versione</label>0.6.0</p>
-	<p><label>Data    </label>31 Dicembre 2019</p>
+	<p><label>Versione</label>0.7.0</p>
+	<p><label>Data    </label>27 Gennaio 2019</p>
 </div>
 <div class="quiz">
-	![](./img/copertina.png)
+	![](../img/copertina.png)
 </div>
 </section>
 
