@@ -11,7 +11,7 @@
 	<p><label>Data    </label>27 Gennaio 2019</p>
 </div>
 <div class="quiz">
-	![](../img/copertina.png)
+	![Quiz](../img/quiz.png)
 </div>
 </section>
 
