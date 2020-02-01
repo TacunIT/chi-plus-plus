@@ -10,17 +10,18 @@ Il nome *C'hi++* è un gioco di parole fra il termine giapponese *C'hi* (ovvero:
 
 Le principali caratteristiche del C'hi++ sono:
 
-- **è un'etica [RISC]**(http://www.treccani.it/enciclopedia/risc/), con un numero ristretto di dogmi;
-
-- **non si propone come Unica Verità Incontestabile**, ma come un'approssimazione sicuramente incompleta e perfettibile della verità;
+- __è un'etica [RISC](http://www.treccani.it/enciclopedia/risc/)__, con un numero ristretto di dogmi;
 
 - **è _open-source_** perché ciascuno possa modificarla per adattarla alle sue esigenze. 
 
+- **è _portabile_**: molti precetti del *C'hi++* sono compatibili con precetti o idee appartenenti ad altre mistiche o filosofie;
+
 - **è sottoposta a versionamento**, così come avviene con il software, per poter gestire l'evoluzione della dottrina;
 
-- **ha una sua cosmogonia**, del tutto indipendente dalla presenza o dall'assenza di una Divinità;
+- **non si propone come Unica Verità Incontestabile**, ma come un'approssimazione sicuramente incompleta e perfettibile della verità;
 
-- **ha un suo testo sacro**: è un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.
+- **ha una sua cosmogonia**, del tutto indipendente dalla presenza o dall'assenza di una Divinità.
+
 
 
 
