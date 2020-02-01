@@ -242,7 +242,7 @@ I punti di attrito e gli scismi provocano sempre dei conflitti e, così, il nost
 
 C'è un modo per evitarlo?
 <br />
-<br />
+
 ### Imparare dagli errori
 L'esempio riportato sopra ha evidenziato dei problemi che possiamo considerare congeniti a tutte le religioni:
 
