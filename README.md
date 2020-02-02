@@ -23,7 +23,7 @@ Le principali caratteristiche del C'hi++ sono:
 - **ha una sua cosmogonia**, del tutto indipendente dalla presenza o dall'assenza di una Divinità.
 
 
-
+C'hi++ ha anche un suo testo 
 
 
 
