@@ -16,13 +16,13 @@ Le principali caratteristiche del C'hi++ sono:
 
 - **è _open-source_** perché ciascuno possa modificarla per adattarla alle sue esigenze. 
 
-- **è _portabile_**: molti precetti del *C'hi++* sono compatibili con precetti o idee appartenenti ad altre mistiche o filosofie;
+- **è portabile**: i precetti del *C'hi++* sono compatibili con precetti o idee appartenenti ad altre mistiche o filosofie;
 
 - **è sottoposta a versionamento**, così come avviene con il software, per poter gestire l'evoluzione della dottrina;
 
 - **non si propone come Unica Verità Incontestabile**, ma come un'approssimazione sicuramente incompleta e perfettibile della verità;
 
-- **ha una sua cosmogonia**, del tutto indipendente dalla presenza o dall'assenza di una Divinità.
+- **ha una sua cosmogonia**, del tutto indipendente dalla presenza o dall'assenza di una Divinità. 
 
 ## Documentazione
 
