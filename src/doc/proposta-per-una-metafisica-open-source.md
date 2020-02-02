@@ -480,8 +480,7 @@ gli sforzi dell’uomo per propiziarsi o conciliarsi potenze superiori che si su
 è valida anche per il C'hi++, solo che le “potenze superiori”, siamo noi stessi.
 
 ##Release 0.2: C'hi++<a name="chi++"></a>
-Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di
-programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.
+Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.
 Questa ambivalenza è presente anche nel titolo, che è un gioco di parole fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato *C++*.
 Il tono della narrazione è generalmente serio, ma non sempre.
 Ashvaghosha, nell'introduzione alla *Saundarananda*, afferma:
