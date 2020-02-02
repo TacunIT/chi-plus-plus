@@ -32,7 +32,7 @@ Il *C'hi++* ha tre testi di riferimento:
 
 - [**Sostiene Aristotele**](src/doc/sostiene-aristotele.md): un documento che risale al Giugno del 2007 e che possiamo considerare una versione preliminare del *C'hi++*. In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione[
 
-- [**Ipotesi per una metafisica open-source**](src/doc/proposta-per-una-metafisica-open-source.md): nato inzialmente come Manifesto del progetto, questo testo si è espanso per più di quaranta pagine e ho deciso per ciò di considerarlo un documento a sé stante.
+- [**Ipotesi per una metafisica open-source**](src/doc/ipotesi-per-una-metafisica-open-source.md): nato inzialmente come Manifesto del progetto, questo testo si è espanso per più di quaranta pagine e ho deciso per ciò di considerarlo un documento a sé stante.
 
 *Sostiene Aristotele* e *Ipotesi per una metafisica open-source* sono completati, mentre di *C'hi++* ho scritto solo i primi capitoli. 
 
