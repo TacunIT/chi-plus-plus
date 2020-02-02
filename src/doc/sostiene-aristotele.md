@@ -9,7 +9,7 @@
 	<p><label>Versione</label>1.0.0</p>
 	<p><label>Data    </label>28 Gennaio 2019</p>
 </div>
-	![](../img/seal.png)
+	![](../../img/seal.png)
 </section>
 
 
