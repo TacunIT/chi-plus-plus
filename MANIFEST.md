@@ -14,8 +14,8 @@ Da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancor
 Mancando un'etica *pret-a-porter*, siamo costretti a ordinarne una fatta su misura.
 
 ## Tipi di etica
-I principali produttori di etica, al Mondo, sono i religiosi e i laici[^laici].
-Quale tipo scegliere? <sup>1</sup>
+I principali produttori di etica, al Mondo, sono i religiosi e i laici<sup>1</sup>.
+Quale tipo scegliere? 
 
 **Le etiche religiose** hanno il difetto di basarsi su principî e affermazioni che non possono in acun modo essere dimostrati (p.es. esistono una o più Divinità; hanno determinate caratteristiche; esigono che ci comportiamo in una determinata maniera ecc.). 
 Questi principî si suppongono universali e immutabili; quando qualcosa li modifica, si verificano delle divisioni fra i fedeli che causano scontri spesso cruenti (p.es. Cattolici vs. Valdesi, Sunniti vs. Sciiti, Mahāyāna vs. Kamalaśīla);
@@ -43,4 +43,5 @@ Inoltre sarà bene non definirla *religione*, perché molte persone hanno un'ist
 
 [dire che sono queste le persone a cui è destinato C'hi++: persone intelligenti, calciatori che continuano a giocare rispettando le regole, malgrado tutto] 
 
-[^laici]: Inteso qui nel senso di: *non credenti*. È un'accezione restrittiva, ma scrivere: *non religiosi* avrebbe reso più difficile la lettura.
+## Note
+<sup>1</sup> Inteso qui nel senso di: *non credenti*. È un'accezione restrittiva, ma scrivere: *non religiosi* avrebbe reso più difficile la lettura.
