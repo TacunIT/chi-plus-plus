@@ -15,7 +15,7 @@ Mancando un'etica *pret-a-porter*, siamo costretti a ordinarne una fatta su misu
 
 ## Tipi di etica
 I principali produttori di etica, al Mondo, sono i religiosi e i laici[^laici].
-Quale tipo scegliere? 
+Quale tipo scegliere? <sup>1</sup>
 
 **Le etiche religiose** hanno il difetto di basarsi su principî e affermazioni che non possono in acun modo essere dimostrati (p.es. esistono una o più Divinità; hanno determinate caratteristiche; esigono che ci comportiamo in una determinata maniera ecc.). 
 Questi principî si suppongono universali e immutabili; quando qualcosa li modifica, si verificano delle divisioni fra i fedeli che causano scontri spesso cruenti (p.es. Cattolici vs. Valdesi, Sunniti vs. Sciiti, Mahāyāna vs. Kamalaśīla);
