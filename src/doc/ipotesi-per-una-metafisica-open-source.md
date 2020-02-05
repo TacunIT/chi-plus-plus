@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="https://carlosimonelli.it/chi-plus-plus.css" />
+<link rel="stylesheet" type="text/css" href="../../docs/chi-plus-plus.css" />
 
 <section class="pagina cover">
 <header>
