@@ -1,3 +1,16 @@
+## 0.7.1 (February 08, 2020)
+  - Completata prima stesura del MANIFEST
+  - Modifiche minori a README
+  - Revisione del testo di Aristotele
+  - Aggiunto PDF di Ipotesi per una metafisica open-source
+  - Aggiunto paragrafo sulle convenzioni tipografiche al file README
+  - Completata stesura file README
+  - Rivista struttura delle directory
+  - Convertito il manuale in formato MD con pandoc
+  - Modifiche ai documenti MD
+  - Aggiornata immagine apparato
+  - Pagina index sito GitHub Pages
+
 ## 0.7.0 (January 27, 2020)
   - Aggiornato testo Amore e Arte
   - Aggiunto link a file CSS su carlosimonelli.it
