@@ -102,6 +102,10 @@ Ne è derivato un testo di quarantasei pagine: dettagliato, ma decisamente tropp
 
 L'ho trasformato perciò in [un documento a sé stante](./out/chi-plus-plus-ipotesi-per-una-metafisica-open-source.pdf) e ho cercato di condensare le principali informazioni che conteneva nel file [README](README.md) che compare all'apertura del progetto su GitHub e in questo MANIFEST.
 
+Se volete sapere qualcosa di più su questo progetto, vi suggerisco di leggere [**Ipotesi per una metafisica open-source**](src/doc/ipotesi-per-una-metafisica-open-source.md). 
+
+Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di GitHub. 
+
 
 ## Note
 
