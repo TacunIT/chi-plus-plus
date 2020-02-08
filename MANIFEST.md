@@ -56,13 +56,12 @@ Per fare un paragone che sia comprensibile anche agli adoratori del dio Ronaldo,
 Se la partita è fine a sé stessa e l'unica cosa importante è vincere, non c'è ragione di comportarsi bene.
 Per alcuni, non c'è nemmeno ragione di continuare a giocare.
 
-## Qual'è, il tuo Dio, adesso?
-Stabilito che è meglio adottare dei valori che possono ricollegarsi a una qualche convinzione spirituale, ci restano da risolvere alcuni problemi.
+## La Banda degli Onesti
+Stabilito che è meglio adottare dei valori che possono ricollegarsi a una qualche convinzione spirituale, ci restano da risolvere alcuni problemi.  
 
 Il primo è decidere a quale spiritualità fare riferimento.
 Ovviamente non potrà essere una delle religioni canoniche, perché così facendo allontaneremmo gli appartenenti alle altre Fedi.
 Dovrà essere una nuova filosofia di vita che contrasti il meno possibile con le convinzioni degli altri gruppi religiosi.
-
 Inoltre sarà bene non definirla *religione*, perché molte persone hanno un'istintiva (e non del tutto immotivata) diffidenza nei confronti di questo termine e vedono il *religare* da cui trae origine come un legame restrittivo da cui è bene sottrarsi.
 La chiameremo perciò: *Metafisica*, anche se di metafisico avrà ben poco, per non correre il rischio di allontanare proprio le persone a cui è destinato il C'hi++, quella *Banda degli Onesti* che tutti i giorni fa il proprio dovere al meglio possibile anche se non gli conviene, anche se gli arreca danno.
 
@@ -71,10 +70,36 @@ Chi ha la Fede non ha bisogno di conferme razionali; possono compiacerlo, ma non
 I precetti del loro Credo dicono loro ciò che è giusto e ciò che non è giusto fare.
 
 C'hi++, però, può dare forza a quei calciatori che non si arrendono e continuano a giocare rispettando le regole anche se tutti intorno a loro - pubblico, arbitro, guardalinee e perfino i loro compagni - li istigano a compiere delle scorrettezze.
-
 Può aiutarli a non arrendersi, perché fino a quando loro non si arrenderanno, ci sarà speranza e può insegnare loro che non è importante vincere le partite, ma giocare sempre meglio.
 Riconoscere gli sbagli che si sono fatti, imparare da essi e cercare di non ripeterli più, partita dopo partita, in una ricerca continua del meglio.
 Se si comporteranno così, qualunque sarà il loro lavoro, fosse anche pulire i cessi, sarà comunque Arte.
+
+## Si può fare!
+Riassumendo, abbiamo bisogno di una nuova etica che proponga valori alternativi a quelli in voga attualmente, che si basi su una nuova forma di spiritualità che non dovrà contrastare con quelle esistenti e che sarà bene definire *Metafisica*, anche se non avrà aspetti metafisici.
+Si può fare, ma per riuscirci dobbiamo rifarci alle idee che nacquero e si svilupparono nella Culla della Civiltà, ovvero gli anni '80.
+
+Per definire un *dress-code* etico che sia valido sia a una cena di gala che a un toga party dobbiamo fare ciò che fecero i creatori delle prime interfacce grafiche: creare una libreria di simboli il cui significato sia chiaro e condiviso da tutti gli utenti.
+In sostanza, abbiamo bisogno di icone.  
+
+Il sostantivo inglese *file* può tradursi con: documento, ملف (Arabo), 文件 (Cinese), файл (Russo), ファイル (Giapponese), 파일 (Coreano) oppure, più semplicemente, può essere rappresentato con il simbolo:
+
+<img style="margin:auto;display:block" src="./img/file.jpg">
+
+Così come la pipa di Magritte, il documento del simbolo **non è** un documento, ma questo non ha importanza perché ciò che conta, qui, è il significato, non il significante.
+Quando l'utente di un sistema di scrittura vede il simbolo *File*, non pensa né che quel documento *sia* quello che vuole scrivere lui né che *non sia* il documento che vuole scrivere lui.
+È questo l'atteggiamento che dobbiamo stimolare nei fruitori della nostra etica.
+Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, eliminando dai nostri simboli tutto ciò che è superfluo e lasciando solo ciò che serve a denotare l'oggetto a cui si riferiscono.
+
+<img style="margin:auto;display:block" src="./img/icone.png" >
+
+Pur se complesso, tutto questo è possibile. Spogliate degli orpelli voluti dal Clero e ricondotte alle loro caratteristiche essenziali, le diverse ipotesi metafisiche hanno molti punti in comune perché sono tutte, in una maniera o nell'altra, la risposta a uno stesso bisogno: la ricerca di una giustificazione alla nostra esistenza.
+
+Ma, così come avvenne a Linus Torvaldsen, dopo qualche anno che lavoravo a questo progetto, capii che non era un compito che potevo svogere da solo, così cominciai a scrivere un *Manifesto* per spiegare a dei potenziali collaboratori quali fossero le mie intenzioni.
+Preso atto della mia incapacità di produrre un documento accademico, ho redatto il Manifesto come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivo il problema che mi propongo di affrontare ed esamino le possibili soluzioni.
+Ne è 
+
+
+
 
 
 
