@@ -42,11 +42,7 @@ Quando l'utente di un sistema di scrittura vede il simbolo *File*, non pensa né
 È questo l'atteggiamento che dobbiamo stimolare nei fruitori della nostra etica.
 Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, eliminando dai nostri simboli tutto ciò che è superfluo e lasciando solo ciò che serve a denotare l'oggetto a cui si riferiscono.
 
-<div class="readme icone" >
-<div><img src="../../img/zeus.png"  ><p>NO</p></div>
-<div><img src="../../img/gesu.png"  ><p>NO</p></div>
-<div><img src="../../img/occhio.png"><p class="ok">SI</p></div>
-</div>
+<img style="margin:auto;display:block" src="../../img/icone.png" >
 
 Pur se complesso, tutto questo è possibile. Spogliate degli orpelli voluti dal Clero e ricondotte alle loro caratteristiche essenziali, le diverse ipotesi metafisiche hanno molti punti in comune perché sono tutte, in una maniera o nell'altra, la risposta a uno stesso bisogno: la ricerca di una giustificazione alla nostra esistenza.
 Ma, così come avvenne a Linus Torvaldsen, dopo qualche anno che lavoravo a questo progetto, capii che non era un compito che potevo svogere da solo, così cominciai a scrivere un *Manifesto* per spiegare a dei potenziali collaboratori quali fossero le mie intenzioni.
