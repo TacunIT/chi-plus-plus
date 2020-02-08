@@ -1,3 +1,5 @@
+# MANIFESTO DEL C'HI++
+
 Questo è un tentativo, forse un po' naïf, ma molto ben strutturato, di cambiare il Mondo.  
 In meglio, auspicabilmente.
 
@@ -99,6 +101,7 @@ Preso atto della mia incapacità di produrre un documento accademico, ho redatto
 Ne è derivato un testo di quarantasei pagine: dettagliato, ma decisamente troppo lungo per poter fungere da manifesto del progetto.
 
 L'ho trasformato perciò in [un documento a sé stante](./out/chi-plus-plus-ipotesi-per-una-metafisica-open-source.pdf) e ho cercato di condensare le principali informazioni che conteneva nel file [README](README.md) che compare all'apertura del progetto su GitHub e in questo MANIFEST.
+
 
 ## Note
 
