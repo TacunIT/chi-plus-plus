@@ -75,7 +75,7 @@ Riconoscere gli sbagli che si sono fatti, imparare da essi e cercare di non ripe
 Se si comporteranno così, qualunque sarà il loro lavoro, fosse anche pulire i cessi, sarà comunque Arte.
 
 ## Si può fare!
-Riassumendo, abbiamo bisogno di una nuova etica che proponga valori alternativi a quelli in voga attualmente, che si basi su una nuova forma di spiritualità che non dovrà contrastare con quelle esistenti e che sarà bene definire *Metafisica*, anche se non avrà aspetti metafisici.
+Riassumendo, abbiamo bisogno di una nuova etica che proponga valori alternativi a quelli in voga attualmente, che si basi su una nuova forma di spiritualità compatibile  quelle già esistenti e che sarà bene definire *Metafisica*, anche se non avrà aspetti metafisici.
 Si può fare, ma per riuscirci dobbiamo rifarci alle idee che nacquero e si svilupparono nella Culla della Civiltà, ovvero gli anni '80.
 
 Per definire un *dress-code* etico che sia valido sia a una cena di gala che a un toga party dobbiamo fare ciò che fecero i creatori delle prime interfacce grafiche: creare una libreria di simboli il cui significato sia chiaro e condiviso da tutti gli utenti.
@@ -85,7 +85,7 @@ Il sostantivo inglese *file* può tradursi con: documento, ملف (Arabo), 文�
 
 <p align=center><img src="./img/file.jpg"></p>
 
-Così come la pipa di Magritte, il documento del simbolo **non è** un documento, ma questo non ha importanza perché ciò che conta, qui, è il significato, non il significante.
+Così come la pipa di Magritte, il documento del simbolo **non è un documento**, ma questo non ha importanza perché ciò che conta, qui, è il significato, non il significante.
 Quando l'utente di un sistema di scrittura vede il simbolo *File*, non pensa né che quel documento *sia* quello che vuole scrivere lui né che *non sia* il documento che vuole scrivere lui.
 È questo l'atteggiamento che dobbiamo stimolare nei fruitori della nostra etica.
 Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, eliminando dai nostri simboli tutto ciò che è superfluo e lasciando solo ciò che serve a denotare l'oggetto a cui si riferiscono.
@@ -95,16 +95,10 @@ Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, elimina
 Pur se complesso, tutto questo è possibile. Spogliate degli orpelli voluti dal Clero e ricondotte alle loro caratteristiche essenziali, le diverse ipotesi metafisiche hanno molti punti in comune perché sono tutte, in una maniera o nell'altra, la risposta a uno stesso bisogno: la ricerca di una giustificazione alla nostra esistenza.
 
 Ma, così come avvenne a Linus Torvaldsen con Linux, dopo qualche anno che lavoravo a questo progetto, capii che non era un compito che potevo svogere da solo, così cominciai a scrivere un *Manifesto* per spiegare a dei potenziali collaboratori quali fossero le mie intenzioni.
-Preso atto della mia incapacità di produrre un documento accademico, ho redatto il Manifesto come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivo il problema che mi propongo di affrontare ed esamino le possibili soluzioni.  
+Preso atto della mia incapacità di produrre un documento accademico, ho redatto il Manifesto come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivo il problema che mi propongo di affrontare ed esamino le possibili soluzioni.
 Ne è derivato un testo di quarantasei pagine: dettagliato, ma decisamente troppo lungo per poter fungere da manifesto del progetto.
+
 L'ho trasformato perciò in [un documento a sé stante](./out/chi-plus-plus-ipotesi-per-una-metafisica-open-source.pdf) e ho cercato di condensare le principali informazioni che conteneva nel file [README](README.md) che compare all'apertura del progetto su GitHub e in questo MANIFEST.
-
-
-
-
-
-
-
 
 ## Note
 
