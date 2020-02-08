@@ -1,7 +1,7 @@
-Questo è un tentativo, forse un po' naïf, ma ben strutturato, di cambiare il Mondo.
+Questo è un tentativo, forse un po' naïf, ma molto ben strutturato, di cambiare il Mondo.  
 In meglio, auspicabilmente.
 
-Per cambiare il Mondo non servono né canzoni né guerre né rivoluzioni, ma delle divinità meno irriconoscenti di quelle - prettamente terrene - davanti alle quali ci prostriamo oggi: denaro, successo, fama.
+Per cambiare il Mondo non servono né canzoni né guerre né rivoluzioni, ma delle divinità meno irriconoscenti di quelle - prettamente terrene - davanti alle quali ci prostriamo oggi: denaro, successo, fama.  
 In sostanza: abbiamo bisogno di una nuova etica.
 
 ## Abbiamo bisogno di un'etica
@@ -83,7 +83,7 @@ In sostanza, abbiamo bisogno di icone.
 
 Il sostantivo inglese *file* può tradursi con: documento, ملف (Arabo), 文件 (Cinese), файл (Russo), ファイル (Giapponese), 파일 (Coreano) oppure, più semplicemente, può essere rappresentato con il simbolo:
 
-<img style="margin:auto;display:block" src="./img/file.jpg">
+<div style="text-align:center;display:block"><img src="./img/file.jpg"></div>
 
 Così come la pipa di Magritte, il documento del simbolo **non è** un documento, ma questo non ha importanza perché ciò che conta, qui, è il significato, non il significante.
 Quando l'utente di un sistema di scrittura vede il simbolo *File*, non pensa né che quel documento *sia* quello che vuole scrivere lui né che *non sia* il documento che vuole scrivere lui.
