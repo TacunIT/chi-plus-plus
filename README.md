@@ -26,6 +26,7 @@ Le principali caratteristiche del C'hi++ sono:
 
 - **ha una sua cosmogonia**, del tutto indipendente dalla presenza o dall'assenza di una Divinità. 
 
+
 ## Documentazione
 
 Il testi di riferimento del *C'hi++* sono:
@@ -38,7 +39,7 @@ Il testi di riferimento del *C'hi++* sono:
 
 - [**Il Manifesto del C'hi++**](MANIFEST.md): versione “zippata” del Manifesto originale, è il file MANIFEST.md che vedete nell'elenco qui sopra.
 
-*Sostiene Aristotele* e *Ipotesi per una metafisica open-source* sono completati, mentre di *C'hi++* ho scritto solo i primi capitoli. 
+*Il Manifesto*, *Sostiene Aristotele* e *Ipotesi per una metafisica open-source* sono completati, mentre di *C'hi++* ho scritto solo i primi capitoli. 
 
 Esiste anche una mappa mentale nella quale sto riportando tutti i miei appunti e le mie idee per *C'hi++*. 
 
