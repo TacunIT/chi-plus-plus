@@ -94,9 +94,10 @@ Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, elimina
 
 Pur se complesso, tutto questo è possibile. Spogliate degli orpelli voluti dal Clero e ricondotte alle loro caratteristiche essenziali, le diverse ipotesi metafisiche hanno molti punti in comune perché sono tutte, in una maniera o nell'altra, la risposta a uno stesso bisogno: la ricerca di una giustificazione alla nostra esistenza.
 
-Ma, così come avvenne a Linus Torvaldsen, dopo qualche anno che lavoravo a questo progetto, capii che non era un compito che potevo svogere da solo, così cominciai a scrivere un *Manifesto* per spiegare a dei potenziali collaboratori quali fossero le mie intenzioni.
-Preso atto della mia incapacità di produrre un documento accademico, ho redatto il Manifesto come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivo il problema che mi propongo di affrontare ed esamino le possibili soluzioni.
-Ne è 
+Ma, così come avvenne a Linus Torvaldsen con Linux, dopo qualche anno che lavoravo a questo progetto, capii che non era un compito che potevo svogere da solo, così cominciai a scrivere un *Manifesto* per spiegare a dei potenziali collaboratori quali fossero le mie intenzioni.
+Preso atto della mia incapacità di produrre un documento accademico, ho redatto il Manifesto come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivo il problema che mi propongo di affrontare ed esamino le possibili soluzioni.  
+Ne è derivato un testo di quarantasei pagine: dettagliato, ma decisamente troppo lungo per poter fungere da manifesto del progetto.
+L'ho trasformato perciò in [un documento a sé stante](./out/chi-plus-plus-ipotesi-per-una-metafisica-open-source.pdf) e ho cercato di condensare le principali informazioni che conteneva nel file README che compare all'apertura del progetto su GitHub e in questo MANIFEST.
 
 
 
