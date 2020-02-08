@@ -31,7 +31,7 @@ Se consideriamo la notevole disparità di vedute e convinzioni dei Popoli della 
 
 sia ambigua perché ciò che è percepito come *etico* da qualcuno potrebbe non esserlo per altri.  
 
-La conseguenza di questa indeterminatezza ce la illustrano il primo e l'ultimo di questi articoli su [Springer](rd.springer.com): da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancora non si è riuscito né a decidere quali debbano essere questi valori né come fare per distinguerli dalle *mere stake-holders preferences*.
+La conseguenza di questa indeterminatezza ce la illustrano il primo e l'ultimo degli articoli di [Springer](rd.springer.com) che vedete qui sotto: da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancora non si è riuscito né a decidere quali debbano essere questi valori né come fare per distinguerli dalle *mere stake-holders preferences*.
 
 <img src="./img/value-sensitive-design.png" style="width:100%;padding:1rem 0;border:solid 1px #999">
 
@@ -47,25 +47,36 @@ Un altro problema da considerare, quando si valuta l'adozione di etiche religios
 
 **Le etiche di origine laica**, di contro, hanno il difetto di basarsi su principî e affermazioni che non trovano riscontro nella realtà (p.es. *Liberté, Égalité, Fraternité* ecc.).
 Questi principî, che si suppongono universali e immutabili, variano solo in seguito a guerre o crisi sociali spesso cruente (p.es. Luigi XVI vs. Sanculotti, Lincoln vs. Davis, Segregazionisti vs. Mandela ecc.).
-Un altro problema da considerare, quando si valuta l'adozione di etiche laiche, è che hi le predica agisce molto spesso in un modo che va contro gli ideali professati.
+Un altro problema da considerare, quando si valuta l'adozione di etiche laiche, è che chi le predica agisce molto spesso in un modo che va contro gli ideali professati.
 
-Se le differenze finissero qui, scegliere l'una o l'altra possibilità non farebbe una grossa differenza, ma sfortunatamente le filosofie di origine laica hanno un'altro difetto: negando ogni forma di trascendenza, **sono costrette a ricercare le motivazioni del proprio schema di valori all'interno dello schema stesso**; un'azione del tutto lecita, ma che le rende meno solide degli schemi di valori basati su convinzioni religiose.
+Se le differenze finissero qui, scegliere l'una o l'altra possibilità non farebbe una grossa differenza, ma sfortunatamente le filosofie di origine laica hanno un'altro difetto: negando ogni forma di trascendenza, **devono ricercare le motivazioni del proprio schema di valori all'interno dello schema stesso**; un'azione del tutto lecita, ma che le rende meno solide degli schemi di valori basati su convinzioni religiose.
 
-Per fare un paragone con le squadre di calcio, i religiosi sono calciatori che giocano all'interno di un regolare Campionato, con premio finale al vincitore e punizioni per chi si comporta in modo scorretto; i laici, invece, sono calciatori che giocano lo stesso numero di partite, ma senza premio finale e senza squalifiche per gioco falloso.
+Per fare un paragone che sia comprensibile anche agli adoratori del dio Ronaldo, i religiosi sono calciatori che giocano all'interno di un regolare Campionato, con premio finale al vincitore e punizioni per chi si comporta in modo scorretto; i laici, invece, sono calciatori che giocano lo stesso numero di partite, ma senza premio finale e senza squalifiche per gioco falloso.
 È facile intuire come sia più difficile per questi ultimi, mancando sia le ricompense che le punizioni, mantenere un comportamento corretto sul campo da gioco.
 Se la partita è fine a sé stessa e l'unica cosa importante è vincere, non c'è ragione di comportarsi bene.
 Per alcuni, non c'è nemmeno ragione di continuare a giocare.
 
-## 
+## Qual'è, il tuo Dio, adesso?
 Stabilito che è meglio adottare dei valori che possono ricollegarsi a una qualche convinzione spirituale, ci restano da risolvere alcuni problemi.
 
 Il primo è decidere a quale spiritualità fare riferimento.
 Ovviamente non potrà essere una delle religioni canoniche, perché così facendo allontaneremmo gli appartenenti alle altre Fedi.
-Dovrà quindi inessere una nuova filosofia di vita che contrasti il meno possibile con le convinzioni degli altri gruppi religiosi.
+Dovrà essere una nuova filosofia di vita che contrasti il meno possibile con le convinzioni degli altri gruppi religiosi.
 
 Inoltre sarà bene non definirla *religione*, perché molte persone hanno un'istintiva (e non del tutto immotivata) diffidenza nei confronti di questo termine e vedono il *religare* da cui trae origine come un legame restrittivo da cui è bene sottrarsi.
+La chiameremo perciò: *Metafisica*, anche se di metafisico avrà ben poco, per non correre il rischio di allontanare proprio le persone a cui è destinato il C'hi++, quella *Banda degli Onesti* che tutti i giorni fa il proprio dovere al meglio possibile anche se non gli conviene, anche se gli arreca danno.
 
-[dire che sono queste le persone a cui è destinato C'hi++: persone intelligenti, calciatori che continuano a giocare rispettando le regole, malgrado tutto]
+Per riprendere il paragone calcistico fatto prima, C'hi++ non cercherà calciatori negli altri campionati.
+Chi ha la Fede non ha bisogno di conferme razionali; possono compiacerlo, ma non gli sono necessarie.
+I precetti del loro Credo dicono loro ciò che è giusto e ciò che non è giusto fare.
+
+C'hi++, però, può dare forza a quei calciatori che non si arrendono e continuano a giocare rispettando le regole anche se tutti intorno a loro - pubblico, arbitro, guardalinee e perfino i loro compagni - li istigano a compiere delle scorrettezze.
+
+Può aiutarli a non arrendersi, perché fino a quando loro non si arrenderanno, ci sarà speranza e può insegnare loro che non è importante vincere le partite, ma giocare sempre meglio.
+Riconoscere gli sbagli che si sono fatti, imparare da essi e cercare di non ripeterli più, partita dopo partita, in una ricerca continua del meglio.
+Se si comporteranno così, qualunque sarà il loro lavoro, fosse anche pulire i cessi, sarà comunque Arte.
+
+
 
 
 
@@ -73,5 +84,5 @@ Inoltre sarà bene non definirla *religione*, perché molte persone hanno un'ist
 
 <a id="#capgemini"><sup>1</sup></a> Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
 
-<a id="#laici"><sup>2</sup></a> Inteso qui nel senso di: *non credenti*. È un'accezione restrittiva, ma scrivere: *non religiosi* avrebbe reso più difficile la lettura.
+<a id="#laici"><sup>2</sup></a> Inteso qui nel senso di: *non credenti*. È un'accezione restrittiva, ma semplifica la lettura.
 
