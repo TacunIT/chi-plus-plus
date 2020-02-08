@@ -6,7 +6,9 @@ Il nome *C'hi++* è un gioco di parole fra il termine giapponese *C'hi* (ovvero:
 
 Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e principii etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come questo:  
 
-![Quiz](./img/quiz.png)
+<p align=center>
+<img src="./img/quiz.png">
+</p>
 
 ## Caratteristiche
 
@@ -67,6 +69,6 @@ I file [CHANGELOG](CHANGELOG.md) e VERSION sono utilizzati per il controllo di v
 Il file README.md è quello che state leggendo e contiene una breve descrizione degli scopi e delle caratteristiche del progetto.
 
 ## Convenzioni tipografiche
-Utilizzo intenzionalmente l'apostrofo quando scrivo ”qual'è” perché credo che l'apocope vocalica si debba applicare solo a frasi come: “Si è comportato da birbante qual è” e riduco i punti di sospensione da tre a due perché il terzo è ridondante.
-Tutte le altre variazioni della grammatica o della sintassi sono da considerarsi errori.
+Utilizzo intenzionalmente l'apostrofo quando scrivo ”qual'è” perché credo che l'apocope vocalica si debba applicare solo a frasi come: “Si è comportato da birbante qual è”; riduco i punti di sospensione da tre a due perché il terzo è ridondante e uso sempre l'accento con il pronome *sé*.
+Tutte le altre variazioni della grammatica o della consuetudine sono da considerarsi errori.
 
