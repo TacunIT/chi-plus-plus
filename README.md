@@ -31,14 +31,13 @@ Le principali caratteristiche del C'hi++ sono:
 
 Il testi di riferimento del *C'hi++* sono:
 
-- [**C'hi++**](src/doc/chi-plus-plus.md) Un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo. Il testo riporterà gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione dei computer. Dopo aver insegnato al suo allievo a programmare con il linguaggio C++, il Maestro gli parlerà del *C'hi++*, ovvero il linguaggio con cui è stata scritta l'applicazione che gestisce l'Universo.<br/> <img src="https://img.shields.io/badge/stato-redazione-orange" alt="Stato documento: bozza" height="20">
+- [**C'hi++**](src/doc/chi-plus-plus.md) Un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo. Il testo riporterà gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione dei computer. Dopo aver insegnato al suo allievo a programmare con il linguaggio C++, il Maestro gli parlerà del *C'hi++*, ovvero il linguaggio con cui è stata scritta l'applicazione che gestisce l'Universo.<br/> <img src="https://img.shields.io/badge/stato-redazione-orange" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
 
-- [**Sostiene Aristotele**](src/doc/sostiene-aristotele.md): un documento che risale al Giugno del 2007 e che possiamo considerare una versione preliminare del *C'hi++*. In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<br/>
-<img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20">
+- [**Sostiene Aristotele**](src/doc/sostiene-aristotele.md): un documento che risale al Giugno del 2007 e che possiamo considerare una versione preliminare del *C'hi++*. In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
 
-- [**Ipotesi per una metafisica open-source**](src/doc/ipotesi-per-una-metafisica-open-source.md): nato inzialmente come Manifesto del progetto, questo testo si è espanso per più di quaranta pagine e ho deciso per ciò di considerarlo un documento a sé stante.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20">
+- [**Ipotesi per una metafisica open-source**](src/doc/ipotesi-per-una-metafisica-open-source.md): nato inzialmente come Manifesto del progetto, questo testo si è espanso per più di quaranta pagine e ho deciso per ciò di considerarlo un documento a sé stante.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
 
-- [**Il Manifesto del C'hi++**](MANIFEST.md): versione “zippata” del Manifesto originale, è il file MANIFEST.md che vedete nell'elenco qui sopra.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20">
+- [**Il Manifesto del C'hi++**](MANIFEST.md): versione “zippata” del Manifesto originale, è il file MANIFEST.md che vedete nell'elenco qui sopra.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
 
 Esiste anche una mappa mentale nella quale sto riportando tutti i miei appunti e le mie idee per *C'hi++*. 
 
