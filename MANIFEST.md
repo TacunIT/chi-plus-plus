@@ -1,13 +1,13 @@
 # MANIFESTO DEL C'HI++
 
-Questo è un tentativo, forse un po' naïf, ma molto ben strutturato, di cambiare il Mondo.  
+Questo è un tentativo, forse un po' naïf, ma molto ben strutturato, di cambiare il Mondo.
 In meglio, auspicabilmente.
 
-Per cambiare il Mondo non servono né canzoni né guerre né rivoluzioni, ma delle divinità meno irriconoscenti di quelle - prettamente terrene - davanti alle quali ci prostriamo oggi: denaro, successo, fama.  
+Per cambiare il Mondo non servono né canzoni, né guerre, né rivoluzioni, ma delle divinità meno irriconoscenti di quelle - prettamente terrene - davanti alle quali ci prostriamo oggi: denaro, successo, fama.  
 In sostanza: abbiamo bisogno di una nuova etica.
 
 ## Abbiamo bisogno di un'etica
-Ne abbiamo bisogno noi e ne hanno bisogno anche i sistemi a cui presto dovremo affidare la nostra sicurezza: *smart-house*, *smart-car*, *robot*. 
+Ne abbiamo bisogno noi e ne hanno bisogno anche i sistemi a cui presto dovremo affidare la nostra sicurezza: *smart-house*, *smart-car*, *robot*.
 Il problema è che *etica*, così come *amore* e *arte*, è un termine che tutti utilizzano ma che ciascuno può - legittimamente - interpretare a modo suo.
 
 L'etica è una disciplina filosofica e, per estensione, l'oggetto di studio di quella disciplina: uno schema ordinato di valori e di regole che permettono di determinare cosa sia più o meno giusto fare.
@@ -31,7 +31,7 @@ Se consideriamo la notevole disparità di vedute e convinzioni dei Popoli della 
 
 > AI interactions that consumers and citizens perceive as ethical build trust and satisfaction<a href="#capgemini"><sup>1</sup></a>
 
-sia ambigua perché ciò che è percepito come *etico* da qualcuno potrebbe non esserlo per altri.  
+sia ambigua perché ciò che è percepito come *etico* da qualcuno potrebbe non esserlo per altri.
 
 La conseguenza di questa indeterminatezza ce la illustrano il primo e l'ultimo degli articoli di [Springer](rd.springer.com) che vedete qui sotto: da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancora non si è riuscito né a decidere quali debbano essere questi valori né come fare per distinguerli dalle *mere stake-holders preferences*.
 
@@ -59,7 +59,7 @@ Se la partita è fine a sé stessa e l'unica cosa importante è vincere, non c'�
 Per alcuni, non c'è nemmeno ragione di continuare a giocare.
 
 ## La Banda degli Onesti
-Stabilito che è meglio adottare dei valori che possono ricollegarsi a una qualche convinzione spirituale, ci restano da risolvere alcuni problemi.  
+Stabilito che è meglio adottare dei valori che possono ricollegarsi a una qualche convinzione spirituale, ci restano da risolvere alcuni problemi.
 
 Il primo è decidere a quale spiritualità fare riferimento.
 Ovviamente non potrà essere una delle religioni canoniche, perché così facendo allontaneremmo gli appartenenti alle altre Fedi.
@@ -81,7 +81,7 @@ Riassumendo, abbiamo bisogno di una nuova etica che proponga valori alternativi 
 Si può fare, ma per riuscirci dobbiamo rifarci alle idee che nacquero e si svilupparono nella Culla della Civiltà, ovvero gli anni '80.
 
 Per definire un *dress-code* etico che sia valido sia a una cena di gala che a un toga party dobbiamo fare ciò che fecero i creatori delle prime interfacce grafiche: creare una libreria di simboli il cui significato sia chiaro e condiviso da tutti gli utenti.
-In sostanza, abbiamo bisogno di icone.  
+In sostanza, abbiamo bisogno di icone.
 
 Il sostantivo inglese *file* può tradursi con: documento, ملف (Arabo), 文件 (Cinese), файл (Russo), ファイル (Giapponese), 파일 (Coreano) oppure, più semplicemente, può essere rappresentato con il simbolo:
 
@@ -102,9 +102,9 @@ Ne è derivato un testo di quarantasei pagine: dettagliato, ma decisamente tropp
 
 L'ho trasformato perciò in [un documento a sé stante](./out/chi-plus-plus-ipotesi-per-una-metafisica-open-source.pdf) e ho cercato di condensare le principali informazioni che conteneva nel file [README](README.md) che compare all'apertura del progetto su GitHub e in questo MANIFEST.
 
-Se volete sapere qualcosa di più su questo progetto, vi suggerisco di leggere [**Ipotesi per una metafisica open-source**](src/doc/ipotesi-per-una-metafisica-open-source.md). 
+Se volete sapere qualcosa di più su questo progetto, vi suggerisco di leggere [**Ipotesi per una metafisica open-source**](src/doc/ipotesi-per-una-metafisica-open-source.md).
 
-Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di GitHub. 
+Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di GitHub.
 
 
 ## Note
@@ -112,4 +112,3 @@ Se volete collaborare o anche esporre delle critiche, potere farlo con gli strum
 <a id="#capgemini"><sup>1</sup></a> Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
 
 <a id="#laici"><sup>2</sup></a> Inteso qui nel senso di: *non credenti*. È un'accezione restrittiva, ma semplifica la lettura.
-
