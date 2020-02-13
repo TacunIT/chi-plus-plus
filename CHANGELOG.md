@@ -1,3 +1,10 @@
+## 0.7.2 (February 13, 2020)
+  - Aggiunto script per versionamento
+  - Redazione file TODO
+  - Correzione grafica del README
+  - Aggiunti indicatori di stato a documenti README
+  - Aumentato il corpo del testo dell'immagine quiz
+
 ## 0.7.1 (February 08, 2020)
   - Completata prima stesura del MANIFEST
   - Modifiche minori a README
