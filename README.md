@@ -31,7 +31,7 @@ Le principali caratteristiche del C'hi++ sono:
 
 Il testi di riferimento del *C'hi++* sono:
 
-- [**C'hi++**](man/README.md) Un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo. Il testo riporterà gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione dei computer. Dopo aver insegnato al suo allievo a programmare con il linguaggio C++, il Maestro gli parlerà del *C'hi++*, ovvero il linguaggio con cui è stata scritta l'applicazione che gestisce l'Universo.<br/> <img src="https://img.shields.io/badge/stato-redazione-orange" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
+- [**C'hi++**](man/) Un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo. Il testo riporterà gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione dei computer. Dopo aver insegnato al suo allievo a programmare con il linguaggio C++, il Maestro gli parlerà del *C'hi++*, ovvero il linguaggio con cui è stata scritta l'applicazione che gestisce l'Universo.<br/> <img src="https://img.shields.io/badge/stato-redazione-orange" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
 
 - [**Sostiene Aristotele**](src/doc/sostiene-aristotele.md): un documento che risale al Giugno del 2007 e che possiamo considerare una versione preliminare del *C'hi++*. In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
 
@@ -62,7 +62,7 @@ I file del progetto sono suddivisi nelle seguenti directory:
 |**bin**| programmi eseguibili per la gestione del progetto; al momento, solo lo script per il cambio di versione git.
 | **docs** | file per la pubblicazione del progetto su Github Pages [https://chi.carlosimonelli.it/](https://chi.carlosimonelli.it/).
 | **img** | contiene i file immagine del progetto.
-| **man** | contiene il testo Markdown di [**C'hi++**](man/README.md) 
+| **man** | contiene il testo Markdown di [**C'hi++**](man/) 
 | **out** | file di output del sistema: articoli, saggi ecc.
 | **src** | file "sorgenti" del progetto, siano essi degli script in C++ (*src/cpp*) o i file in formato Markdown dei testi (*src/doc*).
 
