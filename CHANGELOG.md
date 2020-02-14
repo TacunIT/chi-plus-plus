@@ -1,3 +1,10 @@
+## 0.7.3 (February 14, 2020)
+  - Aggiunta immagine copertina a README del Manuale
+  - Aggiunta dedica a Manuale
+  - Suddiviso il testo del Manuale in file .md
+  - Aggiunto riferimento a man nel file README
+  - Aggiunta directory man
+
 ## 0.7.2 (February 13, 2020)
   - Aggiunto script per versionamento
   - Redazione file TODO
