@@ -1,27 +1,5 @@
 ­
 
-C\'hi++
-
-  ------------ -------------------------------------
-  Autore:      
-  Revisione    
-  Data         
-  Indirizzo:   Via dei Polacchi, 42 - 00187 - Roma
-  Telefono:    +39 346.500.8962
-  E-mail:      r.canaro\@canaro.net
-  Sito Web:    http://canaro.net
-  ------------ -------------------------------------
-
-Dedicato a Wayne Martini,
-
-che mi diede il libro e disse:
-
-"Read it, it changed my life."
-
-Io pensai:
-
-"Sempre esagerati, 'sti americani!"
-
 Premessa
 ========
 
