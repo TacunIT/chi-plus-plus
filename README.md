@@ -63,7 +63,6 @@ I file del progetto sono suddivisi nelle seguenti directory:
 | **docs** | file per la pubblicazione del progetto su Github Pages [https://chi.carlosimonelli.it/](https://chi.carlosimonelli.it/).
 | **img** | contiene i file immagine del progetto.
 | **man** | contiene il testo Markdown di [**C'hi++**](man/) 
-| **out** | file di output del sistema: articoli, saggi ecc.
 | **src** | file "sorgenti" del progetto, siano essi degli script in C++ (*src/cpp*) o i file in formato Markdown dei testi (*src/doc*).
 
 I file [CHANGELOG](CHANGELOG.md) e VERSION sono utilizzati per il controllo di versione con Git. 
