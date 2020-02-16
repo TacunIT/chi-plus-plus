@@ -6,9 +6,7 @@
 	<h2>Ipotesi per una metafisica open-source</h2>
 <header>
 <div class="dati">
-	<p><label>Autore  </label>Carlo Simonelli <chi@canaro.net></p>
-	<p><label>Versione</label>0.7.0</p>
-	<p><label>Data    </label>27 Gennaio 2019</p>
+	<p><label>Versione</label>0.7.4</p>
 </div>
 <div class="quiz">
 	![Quiz](../../img/quiz.png)
@@ -145,7 +143,18 @@ Prendete ad esempio i trenta articoli della [Dichiarazione dei Diritti dell'Uomo
 Per quale motivo un Signore della Guerra centro-africano dovrebbe rispettarle, dato che non sono un insieme di norme giuridiche a cui gli Stati e gli individui debbano attenersi, ma un elenco di quelli che *dovrebbero essere*[^achievements] i diritti di ogni essere umano?
 Perché, soprattutto, dovrebbe rispettare delle regole volte al mantenimento della pace[^peace], promulgate da un'Organizzazione che ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo[^sipri] e che violano costantemente quelle stesse regole da loro promosse?
 <br>
-Dato che l'approccio laico presenta gli stessi problemi logici di quello religioso, mancando però dei corrispondenti lati positivi, non ci resta altra scelta che cercare di far “funzionare” la religione.
+La Dichiarazione di Indipendenza americana comincia con queste parole:
+
+> We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
+
+Definire un principio: *self-evident* equivale a dichiarare un dogma: una convinzione che appartiene a chi scrive, ma non si applica necessariamente a tutti gli esseri viventi. L'articolo 1. della *Dichiarazione dei Diritti dell'Uomo e del Cittadino* francese recita:
+
+> Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l’utilité commune.
+
+Questa affermazione è sicuramente condivisibile, ma sfortunatamente non è provata da alcun dato di fatto.
+Al contrario, è smentita dalla presenza di 26 monarchie che regnano su 43 delle 195 nazioni del Mondo[^reami].
+<br>
+Insomma: dato che l'approccio laico presenta gli stessi problemi logici di quello religioso, mancando però dei corrispondenti lati positivi, non ci resta altra scelta che cercare di far “funzionare” la religione.
 
 ### Debug del Buonismo
 Abbiamo visto che i tre assiomi del Buonismo:
@@ -945,6 +954,8 @@ Mi sembra un motivo più che sufficiente.
 [^peace]: *Whereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world*.
 
 [^sipri]: Dati SIPRI (www.sipri.org).
+
+[^reami]: https://www.washingtonpost.com/news/worldviews/wp/2013/07/22/meet-the-worlds-other-25-royal-families
 
 [^black-friday]: A mo' di esempio si veda un qualunque quotidiano o un filmato sugli assalti ai grandi magazzini durante il *Black Friday* americano.
 
