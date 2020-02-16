@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-font-smoothing: antialiased;
     cursor: text;
     position: relative;
+    border:none;
 }
 
 h1 {
@@ -136,6 +137,10 @@ p {
 
 p.firma {
     padding: 2rem
+}
+
+p.newpage {
+  page-break-after: always;
 }
 
 li p.first {
@@ -458,13 +463,17 @@ SECTION.cover H2  {
     color: #060;
 }
 
-SECTION.cover H2:before {
-    content: none;
+SECTION.cover H3  {
+    font-size: 1.2rem;
+    padding: 0;
+    color: #333;
+    margin-bottom: 2rem;
 }
 
-SECTION.cover DIV.dati {
-    display:inline-block;
-    margin:10% auto;
+
+SECTION.cover H2:before ,
+SECTION.cover H3:before {
+    content: none;
 }
 
 SECTION.cover DIV.dati LABEL {
@@ -499,7 +508,6 @@ SECTION.citazione {
     padding-left: 40%;
     padding-bottom: 3rem;
     text-align: right;
-    page-break-before: always;
     page-break-after: always;
 }
 
@@ -575,5 +583,3 @@ DIV.icone DIV P.ok {
     	padding-top: 30%;
 	}
 }
-
-
