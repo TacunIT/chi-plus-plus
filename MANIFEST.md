@@ -48,7 +48,7 @@ Questi principî si suppongono universali e immutabili; quando qualcosa li modif
 Un altro problema da considerare, quando si valuta l'adozione di etiche religiose, è che chi le predica, talvolta, agisce in un modo che va contro gli ideali professati.
 
 **Le etiche di origine laica**, di contro, hanno il difetto di basarsi su principî e affermazioni che non trovano riscontro nella realtà (p.es. *Liberté, Égalité, Fraternité* ecc.).
-Questi principî, che si suppongono universali e immutabili, variano solo in seguito a guerre o crisi sociali spesso cruente (p.es. Luigi XVI vs. Sanculotti, Lincoln vs. Davis, Segregazionisti vs. Mandela ecc.).
+Questi principî, che si suppongono universali e immutabili, variano solo in seguito a guerre o crisi sociali spesso cruente (p.es. Luigi XVI vs. Sanculotti, Lincoln vs. Davis, Segregazionisti vs. Mandela ecc.)<a href="#mill"><sup>3</sup></a>.
 Un altro problema da considerare, quando si valuta l'adozione di etiche laiche, è che chi le predica agisce molto spesso in un modo che va contro gli ideali professati.
 
 Se le differenze finissero qui, scegliere l'una o l'altra possibilità non farebbe una grossa differenza, ma sfortunatamente le filosofie di origine laica hanno un'altro difetto: negando ogni forma di trascendenza, **devono ricercare le motivazioni del proprio schema di valori all'interno dello schema stesso**; un'azione del tutto lecita, ma che le rende meno solide degli schemi di valori basati su convinzioni religiose.
@@ -65,7 +65,11 @@ Il primo è decidere a quale spiritualità fare riferimento.
 Ovviamente non potrà essere una delle religioni canoniche, perché così facendo allontaneremmo gli appartenenti alle altre Fedi.
 Dovrà essere una nuova filosofia di vita che contrasti il meno possibile con le convinzioni degli altri gruppi religiosi.
 Inoltre sarà bene non definirla *religione*, perché molte persone hanno un'istintiva (e non del tutto immotivata) diffidenza nei confronti di questo termine e vedono il *religare* da cui trae origine come un legame restrittivo da cui è bene sottrarsi.
-La chiameremo perciò: *Metafisica*, anche se di metafisico avrà ben poco, per non correre il rischio di allontanare proprio le persone a cui è destinato il C'hi++, quella *Banda degli Onesti* che tutti i giorni fa il proprio dovere al meglio possibile anche se non gli conviene, anche se gli arreca danno.
+La chiameremo perciò: *Metafisica*, anche se di metafisico avrà ben poco, per non correre il rischio di allontanare proprio le persone a cui è destinato il C'hi++:
+
+> quei tanti che ancora credono in tutto ciò in cui più nessuno crede
+
+come li descrisse Longanesi; quella *Banda degli Onesti* che tutti i giorni fa il proprio dovere al meglio possibile anche se non gli conviene, anche se gli arreca danno.
 
 Per riprendere il paragone calcistico fatto prima, C'hi++ non cercherà calciatori negli altri campionati.
 Chi ha la Fede non ha bisogno di conferme razionali; possono compiacerlo, ma non gli sono necessarie.
@@ -112,3 +116,5 @@ Se volete collaborare o anche esporre delle critiche, potere farlo con gli strum
 <a id="#capgemini"><sup>1</sup></a> Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
 
 <a id="#laici"><sup>2</sup></a> Inteso qui nel senso di: *non credenti*. È un'accezione restrittiva, ma semplifica la lettura.
+
+<a id="#mill"><sup>3</sup></a>*Il progresso umano è opera di quanti sono scontenti* - John Stuart Mill 
