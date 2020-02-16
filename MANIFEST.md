@@ -10,30 +10,36 @@ In sostanza: abbiamo bisogno di una nuova etica.
 Ne abbiamo bisogno noi e ne hanno bisogno anche i sistemi a cui presto dovremo affidare la nostra sicurezza: *smart-house*, *smart-car*, *robot*.
 Il problema è che *etica*, così come *amore* e *arte*, è un termine che tutti utilizzano ma che ciascuno può - legittimamente - interpretare a modo suo.
 
-L'etica è una disciplina filosofica e, per estensione, l'oggetto di studio di quella disciplina: uno schema ordinato di valori e di regole che permettono di determinare cosa sia più o meno giusto fare.
-Un esempio di questi insiemi ordinati di valori è la trinità fascista:
+In altre parole, comprensibili anche agli adoratori del dio Ferragnez, l'etica è il *dress-code* delle nostre vite e come tutti i *dress-code*, **una determinata etica ha valore solo in determinate condizioni**.
+Ciò che è eticamente accettabile in alcuni casi - per esempio uccidere un avversario perché indossa una *divisa di un altro colore*, in guerra -, può non esserlo in altri - per esempio, uccidere un avversario perché indossa una divisa di un altro colore, durante una partita di calcio.
+Prendete il primo Articolo della *Déclaration des Droits de l’Homme et du Citoyen* del 1798:
 
-> Dio, Patria, Famiglia
+> Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l’utilité commune.
 
-Le regole che se ne possono derivare sono:
+Questa affermazione, sicuramente condivisibile, non ha prove a conforto e non è valida per chiunque viva in una delle 43 nazioni del Mondo dove vige una monarchia: ovvero una su cinque.
 
-> Credere, Obbedire, Combattere
+Inoltre, **i valori che costituiscono un'etica sono soggettivi**. 
+Questo vale sia per le etiche di natura religiosa che per quelle di natura non religiosa.
+Per esempio, la *Declaration of Independence* del 1776 comincia con queste parole:
 
-Il motto della Repubblica Francese è anch'esso uno schema di valori, ma libero da connotazioni religiose:
+> We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
+
+Definire un principio: *self-evident* equivale a dichiarare un dogma: una convinzione che appartiene a chi scrive, ma non si applica necessariamente a tutti gli esseri viventi. La trinità:
 
 > Liberté, Égalité, Fraternité
 
-In altre parole, comprensibili anche agli adoratori del dio Ferragnez, l'etica è il *dress-code* delle nostre vite e come tutti i *dress-code*, ha valore solo in determinate condizioni.
-Ciò che è *eticamente* accettabile in alcuni casi (p.es. uccidere un avversario perché indossa una *divisa di un altro colore*, in guerra) può non esserlo in altre contingenze (p.es. uccidere un avversario perché indossa una divisa di un altro colore, durante una partita di calcio).
+è dogmatica così come:
 
-Inoltre, sia i valori che costituiscono un'etica sia il loro eventuale ordinamento sono soggettivi: non esiste alcuna prova né dell'esistenza di un Dio né del fatto che sia più importante di Patria e Famiglia; ci devi credere, e ci credi perché qualcosa o qualcuno ti ha convinto a farlo.
+> Dio, Patria, Famiglia
+
+Nulla prova che questi valori siano reali o corretti, ci devi credere; e ci credi perché qualcosa o qualcuno ti ha convinto a farlo.
 Se consideriamo la notevole disparità di vedute e convinzioni dei Popoli della Terra e, talvolta, degli stessi individui all'interno di un Popolo, è facile capire come la frase:
 
-> AI interactions that consumers and citizens perceive as ethical build trust and satisfaction<a href="#capgemini"><sup>1</sup></a>
+> AI interactions that consumers and citizens perceive as ethical build trust and satisfaction[^capgemini]
 
-sia ambigua perché ciò che è percepito come *etico* da qualcuno potrebbe non esserlo per altri.
+sia ambigua perché ciò che è *percepito* come etico da qualcuno potrebbe non esserlo per altri.
 
-La conseguenza di questa indeterminatezza ce la illustrano il primo e l'ultimo degli articoli di [Springer](rd.springer.com) che vedete qui sotto: da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancora non si è riuscito né a decidere quali debbano essere questi valori né come fare per distinguerli dalle *mere stake-holders preferences*.
+La conseguenza di questa indeterminatezza è che, come dimostrano questi due articoli su [Springer](rd.springer.com), da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancora non si è riuscito a decidere *quali* debbano essere questi valori.
 
 <img src="./img/value-sensitive-design.png" style="width:100%;padding:1rem 0;border:solid 1px #999">
 

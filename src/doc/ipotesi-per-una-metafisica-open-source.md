@@ -1,16 +1,10 @@
 <link rel="stylesheet" type="text/css" href="../../docs/chi-plus-plus.css" />
 
 <section class="pagina cover">
-<header>
 	<h1>C'hi++</h1>
 	<h2>Ipotesi per una metafisica open-source</h2>
-<header>
-<div class="dati">
-	<p><label>Versione</label>0.7.4</p>
-</div>
-<div class="quiz">
-	![Quiz](../../img/quiz.png)
-</div>
+	<h3>Versione 0.7.4</h3>
+	<img class="quiz" src="../../img/quiz.png">
 </section>
 
 <section class="dedica">
@@ -36,6 +30,7 @@ alcune vulnerabilità logiche delle religioni canoniche e definirò delle linee-
 
 Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologie proprii dell'informatica e ne ho fornito una breve descrizione per coloro che non  abbiano familiarità con le attività di creazione del software; i tecnici mi perdonino le semplificazioni.
 Ho dovuto anche, per brevità, fare delle affermazioni senza comprovarle; i logici mi perdonino l'apodissi.
+<p class="newpage"></p>
 
 ## Analisi del sistema attualmente in esercizio
 Se mi guardo indietro, per il mezzo secolo su cui ho visibilità diretta, vedo una lunga serie di fallimenti ideologici.
@@ -182,7 +177,6 @@ Negando il secondo assioma, il nostro modello esistenziale diventa coerente senz
 #### Terza ipotesi: *L'Universo non è stato creato da Dio*
 Se ipotizziamo che Dio esiste, è buono, ma l'Universo non è opera sua, bensì del Diavolo, otteniamo un modello coerente e tutto sommato accettabile.
 Sì, d'accordo, saremo condannati a vivere in un luogo dove esistono dolore e morte, ma solo per i pochi anni che passiamo su questa Terra; poi, tutto si sistemerà.
-<br>
 Delle tre, quest'ultima è l'ipotesi più appetibile, ma solo se l'uomo è in possesso di un'anima, ovvero di uno spirito che condivida parte dell'essenza di Dio e che si riunirà a Lui dopo la morte.
 Se l'anima non c'è, ovvero se in noi non alberga una scintilla dello Spirito Divino, siamo solo dei pezzi dell'Universo: vivremo nel dolore e dopo la morte sarà tutto finito per sempre.
 Qualunque visione della vita basata su questi presupposti è inaccettabile perché, mancando un Aldilà e una beatitudine condizionata al nostro comportamento terreno, ciascuno cercherebbe di ottenere il massimo possibile dagli anni che vivrà, pensando solo a sé stesso senza alcun rispetto per il suo prossimo[^black-friday].
@@ -204,6 +198,7 @@ Si tratta però di una vittoria parziale, perché aumentando il numero dei prece
 	Se l'Universo è stato creato dal Diavolo, perché l'Uomo, che fa
     parte dell'Universo, dev'essere stato creato da Dio?
 </ol>
+
 
 ### Il Programmatore, vale 1 o 0?
 Dato che non è possibile rendere coerente il Buonismo modificando i suoi precetti, dobbiamo assumere che uno di essi sia errato ed eliminarlo.
