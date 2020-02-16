@@ -1,6 +1,6 @@
 # C'hi++ - Un'etica *vendor-independent* per l'intellgenza arificiale
 
-> *herefore what you must comply with – you need to determine what you stand for as an organization – what are your brand values? These values should exist whether you use AI or not. You can then define your ethical AI code on the basis of what you stand for.* -
+> *You need to determine what you stand for as an organization – what are your brand values? These values should exist whether you use AI or not. You can then define your ethical AI code on the basis of what you stand for.* -
 <span>Nicolas Economou</span>
 
 Il 28 Febbraio, Brad Smith, presidente di Microsoft e John Kelly III, vice direttore esecutivo di IBM, firmeranno la ***Rome Call for AI Ethics***, un documento di intenti per lo studio e la regolamentazione dell'Intelligenza Artificiale.  
@@ -10,7 +10,7 @@ Il problema è che *etica*, così come *amore* e *arte*, è un termine che tutti
 
 Di fatto, l'etica è una disciplina filosofica, ma per estensione è anche l'oggetto di studio di quella disciplina: uno schema di valori e di regole che permettono di decidere cosa sia più o meno giusto fare.
 In altre parole, comprensibili anche agli adoratori del dio Ferragnez, l'etica è il *dress-code* delle nostre vite e come tutti i *dress-code*, **una determinata etica ha valore solo in determinate condizioni**.
-Ciò che è eticamente accettabile in alcuni casi - per esempio uccidere un avversario perché indossa una *divisa di un altro colore*, in guerra -, può non esserlo in altri - per esempio, uccidere un avversario perché indossa una divisa di un altro colore, durante una partita di calcio.  Ul primo Articolo della *Déclaration des Droits de l’Homme et du Citoyen* del 1798, afferma che:
+Ciò che è eticamente accettabile in alcuni casi - per esempio uccidere un avversario perché indossa una *divisa di un altro colore*, in guerra -, può non esserlo in altri - per esempio, uccidere un avversario perché indossa una divisa di un altro colore, durante una partita di calcio.  Il primo Articolo della *Déclaration des Droits de l’Homme et du Citoyen* del 1798, afferma che:
 
 > Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l’utilité commune.
 
@@ -38,7 +38,7 @@ Se consideriamo la notevole disparità di vedute e convinzioni dei Popoli della 
 sia ambigua perché ciò che è *percepito* come etico da qualcuno potrebbe non esserlo per altri.
 Calvino sostiene che il successo negli affari è una prova del favore divino, San Francesco predica la povertà; chi ha ragione?
 
-La conseguenza di questa indeterminatezza è che, come dimostrano questi due articoli su [Springer](rd.springer.com), da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancora non si è riuscito a decidere *quali* debbano essere questi valori.
+La conseguenza di questa indeterminatezza è che, come dimostrano questi due articoli su [Springer](https://rd.springer.com), da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancora non si è riuscito a decidere *quali* debbano essere questi valori.
 
 <img src="../../img/value-sensitive-design.png" style="width:100%;padding:1rem 0;border:solid 1px #999">
 
@@ -77,7 +77,7 @@ Se volete collaborare o anche esporre delle critiche, potere farlo con gli strum
 
 [^neruda]: L'originale è: *Quiero hacer contigo lo que la primavera hace con los cerezos*.
 
-[^capgemini]: Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
+[^capgemini]: Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*. [https://www.sogeti.com/explore/reports/why-addressing-ethical-questions-in-ai-will-benefit-organizations](https://www.sogeti.com/explore/reports/why-addressing-ethical-questions-in-ai-will-benefit-organizations)
 
-[^github]: La piattaforma con cui si gestisce la maggior parte del software *open-source*.
+[^github]: La piattaforma con cui si gestisce la maggior parte del software *open-source*. 
 
