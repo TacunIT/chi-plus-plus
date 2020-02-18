@@ -1,10 +1,15 @@
 # README
 
-*C'hi++* è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione [siero]positivistica dell'esistenza.  
+*C'hi++* è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione [siero]positivistica dell'esistenza.
+
+
+<p align=center>
+<img src="./img/chi-plus-plus.svg" width="300px">
+</p>
 
 Il nome *C'hi++* è un gioco di parole fra il termine giapponese *C'hi* (ovvero: soffio vitale) e il linguaggio di programmazione chiamato: *C++*. Non è un accostamento casuale: la mia intenzione è quella di gestire l'evoluzione della mia teoria così come si gestisce il software; in particolare, il software *open-source*.
 
-Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e principii etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come questo:  
+Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e principii etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come questo:
 
 <p align=center>
 <img src="./img/quiz.png">
@@ -16,7 +21,7 @@ Le principali caratteristiche del C'hi++ sono:
 
 - __è un'etica [RISC](http://www.treccani.it/enciclopedia/risc/)__, con un numero ristretto di dogmi;
 
-- **è _open-source_** perché ciascuno possa modificarla per adattarla alle sue esigenze. 
+- **è _open-source_** perché ciascuno possa modificarla per adattarla alle sue esigenze.
 
 - **è portabile**: i precetti del *C'hi++* sono compatibili con precetti o idee appartenenti ad altre mistiche o filosofie;
 
@@ -24,7 +29,7 @@ Le principali caratteristiche del C'hi++ sono:
 
 - **non si propone come Unica Verità Incontestabile**, ma come un'approssimazione sicuramente incompleta e perfettibile della verità;
 
-- **ha una sua cosmogonia**, del tutto indipendente dalla presenza o dall'assenza di una Divinità. 
+- **ha una sua cosmogonia**, del tutto indipendente dalla presenza o dall'assenza di una Divinità.
 
 
 ## Documentazione
@@ -39,12 +44,12 @@ Il testi di riferimento del *C'hi++* sono:
 
 - [**Il Manifesto del C'hi++**](MANIFEST.md): versione “zippata” del Manifesto originale, è il file MANIFEST.md che vedete nell'elenco qui sopra.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
 
-Esiste anche una mappa mentale nella quale sto riportando tutti i miei appunti e le mie idee per *C'hi++*. 
+Esiste anche una mappa mentale nella quale sto riportando tutti i miei appunti e le mie idee per *C'hi++*.
 
 Chi volesse approfondire i concetti riportati in questa presentazione può leggere il [Manifesto](MANIFEST.md) e, successivamente, [**Ipotesi per una metafisica open-source**](src/doc/ipotesi-per-una-metafisica-open-source.md).
 
 ## Strumenti
-Tutti i formati utilizzati per i file sono standard pubblici che possono essere creati e letti con strumenti gratuiti: 
+Tutti i formati utilizzati per i file sono standard pubblici che possono essere creati e letti con strumenti gratuiti:
 
 - **Markdown** per i sorgenti dei testi;
 - **PDF** per i file di output come articoli o saggi;
@@ -53,7 +58,7 @@ Tutti i formati utilizzati per i file sono standard pubblici che possono essere 
 Fa eccezione solo la mappa mentale per *C'hi++*, che è stata realizzata con il programma [VUE](https://vue.tufts.edu/) della Tufts University, ma si tratta comunque di un file in formato XML, facilmente leggibile anche nei *diff* di Git.
 Sfortunatamente, lo sviluppo di VUE è fermo dal 20 Giugno del 2017, ma il codice è comunque [disponibile su GitHub](https://github.com/VUE/VUE).
 
- 
+
 ## Struttura delle directory
 I file del progetto sono suddivisi nelle seguenti directory:
 
@@ -62,10 +67,10 @@ I file del progetto sono suddivisi nelle seguenti directory:
 |**bin**| programmi eseguibili per la gestione del progetto; al momento, solo lo script per il cambio di versione git.
 | **docs** | file per la pubblicazione del progetto su Github Pages [https://chi.carlosimonelli.it/](https://chi.carlosimonelli.it/).
 | **img** | contiene i file immagine del progetto.
-| **man** | contiene il testo Markdown di [**C'hi++**](man/) 
+| **man** | contiene il testo Markdown di [**C'hi++**](man/)
 | **src** | file "sorgenti" del progetto, siano essi degli script in C++ (*src/cpp*) o i file in formato Markdown dei testi (*src/doc*).
 
-I file [CHANGELOG](CHANGELOG.md) e VERSION sono utilizzati per il controllo di versione con Git. 
+I file [CHANGELOG](CHANGELOG.md) e VERSION sono utilizzati per il controllo di versione con Git.
 
 Il file README.md è quello che state leggendo e contiene una breve descrizione degli scopi e delle caratteristiche del progetto.
 
