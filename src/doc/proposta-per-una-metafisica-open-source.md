@@ -2,8 +2,8 @@
 
 <section class="pagina cover">
 	<h1>C'hi++</h1>
-	<h2>Ipotesi per una metafisica open-source</h2>
-	<h3>Versione 0.7.4</h3>
+	<h2>Proposta per una metafisica open-source</h2>
+	<h3>Versione 0.7.5</h3>
 	<img style="margin-top:3rem" src="../../img/quiz.png">
 </section>
 

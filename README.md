@@ -4,7 +4,7 @@
 
 
 <p align=center>
-<img src="./img/chi-plus-plus.svg" width="300px">
+<img src="./img/chi-plus-plus.png" width="300px">
 </p>
 
 Il nome *C'hi++* è un gioco di parole fra il termine giapponese *C'hi* (ovvero: soffio vitale) e il linguaggio di programmazione chiamato: *C++*. Non è un accostamento casuale: la mia intenzione è quella di gestire l'evoluzione della mia teoria così come si gestisce il software; in particolare, il software *open-source*.
@@ -40,13 +40,16 @@ Il testi di riferimento del *C'hi++* sono:
 
 - [**Sostiene Aristotele**](src/doc/sostiene-aristotele.md): un documento che risale al Giugno del 2007 e che possiamo considerare una versione preliminare del *C'hi++*. In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
 
-- [**Ipotesi per una metafisica open-source**](src/doc/ipotesi-per-una-metafisica-open-source.md): nato inzialmente come Manifesto del progetto, questo testo si è espanso per più di quaranta pagine e ho deciso per ciò di considerarlo un documento a sé stante.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
+- [**Proposta per una metafisica open-source**](src/doc/proposta-per-una-metafisica-open-source.md): nato inzialmente come Manifesto del progetto, questo testo si è espanso per più di quaranta pagine e ho deciso per ciò di considerarlo un documento a sé stante.
+<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
 
 - [**Il Manifesto del C'hi++**](MANIFEST.md): versione “zippata” del Manifesto originale, è il file MANIFEST.md che vedete nell'elenco qui sopra.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
 
 Esiste anche una mappa mentale nella quale sto riportando tutti i miei appunti e le mie idee per *C'hi++*.
 
-Chi volesse approfondire i concetti riportati in questa presentazione può leggere il [Manifesto](MANIFEST.md) e, successivamente, [**Ipotesi per una metafisica open-source**](src/doc/ipotesi-per-una-metafisica-open-source.md).
+Chi volesse approfondire i concetti riportati in questa presentazione può leggere il [Manifesto](MANIFEST.md) e, successivamente, [**Proposta per una metafisica open-source**](src/doc/proposta-per-una-metafisica-open-source.md).
+
+La risposta al quesito del notaio e del bambino è nel capitolo 9 della [**Proposta per una metafisica open-source**](src/doc/proposta-per-una-metafisica-open-source.md)
 
 ## Strumenti
 Tutti i formati utilizzati per i file sono standard pubblici che possono essere creati e letti con strumenti gratuiti:
@@ -77,4 +80,6 @@ Il file README.md è quello che state leggendo e contiene una breve descrizione 
 ## Convenzioni tipografiche
 Utilizzo intenzionalmente l'apostrofo quando scrivo ”qual'è” perché credo che l'apocope vocalica si debba applicare solo a frasi come: “Si è comportato da birbante qual è”; riduco i punti di sospensione da tre a due perché il terzo è ridondante e uso sempre l'accento con il pronome *sé*.
 Tutte le altre variazioni della grammatica o della consuetudine sono da considerarsi errori.
+
+
 
