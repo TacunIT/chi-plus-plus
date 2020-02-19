@@ -22,7 +22,7 @@ html {
 body {
     background-color: #fff;
     font-family: "Gill Sans", Helvetica, arial, sans-serif;
-    font-size: 14pt;
+    font-size: 13.5pt;
     line-height: 1.4;
     margin: 0rem 15mm 30mm 25mm;
     max-width: 170mm;
@@ -451,7 +451,7 @@ kbd {
  */
 SECTION.cover {
     margin:none;
-    padding: 10% 1rem 0 ;
+    padding: 6.6% 1rem 0 ;
     height:200mm;
     counter-reset: h2;
     text-align:center;

@@ -4,7 +4,7 @@
 	<h1>C'hi++</h1>
 	<h2>Ipotesi per una metafisica open-source</h2>
 	<h3>Versione 0.7.4</h3>
-	<img class="quiz" src="../../img/quiz.png">
+	<img style="margin-top:3rem" src="../../img/quiz.png">
 </section>
 
 <section class="dedica">
@@ -15,7 +15,8 @@
 Finis totius et partis est, removere viventes in hac vita de statu miserie et perducere ad statum felicitatis.<br/>
 <span>Dante Alighieri - </span>Epistola XIII a Cangrande della Scala
 <br/>
-E gli atei? rideva ancora.
+<br/>
+E gli atei? rideva ancora.<br/>
 Quelli mi annoiano perché parlano sempre di Dio. <br/>
 <span>Heinrich Böll</span> - Opinioni di un clown
 </section>
@@ -282,6 +283,7 @@ Per correggere o quanto meno mitigare questi problemi, una religione dovrebbe qu
 </ol>
 
 Pur se complesso, tutto questo è possibile.
+<p class="newpage"></p>
 
 ## Soluzione proposta
 Da circa dieci anni sto sviluppando una metafisica che rispetta le condizioni viste sopra e che, soprattutto, è del tutto indipendente dall'esistenza di una o più Divinità.
@@ -314,7 +316,6 @@ Il numero di *patch* è incrementato ogni volta che si apportano delle modifiche
 La *major version zero* (_0.y.z_) è destinata allo sviluppo iniziale, quando il software non è ancora stabile e tutto può cambiare in ogni momento. Il versionamento semantico ha anche altre regole, ma per quelli che sono i nostri scopi possiamo fermarci qui.
 
 ### Versionamento delle religioni monoteistiche
-
 Se volessimo applicate il versionamento alle grandi religioni monoteistiche, otterremmo una sequenza simile a quella della pagina seguente.
 
 | ver. | anno | descrizione | modifiche apportate
@@ -913,10 +914,10 @@ Ovviamente non potrà essere una delle religioni canoniche, perché sarebbe limi
 Dovrà quindi essere qualcosa di intermedio, né religioso né laico, con princìpi che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori[^barbelognostica].
 Dovrà essere in condizione di adattarsi senza stravolgimenti al *mutare delle fogge e dei costumi* della Società e dovrà poter imparare dai suoi errori, correggendoli rapidamente.
 Dovrà essere *vendor-independent* e *open-source*, per facilitare la scoperta e la correzione di eventuali errori.
-Tanto meglio, poi, se potesse essere compresa e gestita facilmente dal software e dagli informatici.
+Tanto meglio, poi, se potesse essere compresa e gestita facilmente dal software e dagli informatici.  
 Il C'hi++ potrebbe essere tutto questo.
 I princìpi del C'hi++, anche se ancora in embrione, permettono risolvere il dilemma bambino/notaio in maniera abbastanza semplice perché per C'hi++ non ha importanza chi dei due debba essere sacrificato, basta che la scelta sia preventiva e intenzionale, in modo che possa essere modificata nelle successive vite dell'Universo.
-In pratica, l'utente della *smart-car*, prima di partire, dovrà decidere che tipo di comportamento dovrà adottare il sistema nel caso si presentasse il problema: "o lui o io"; una soluzione che risolve non solo i problemi del sistema di guida, ma anche quelli degli uffici marketing e legale, perché scarica la responsabilità della scelta sull'utente e non sulla casa automobilistica o sul produttore del software.
+In pratica, l'utente della *smart-car*, prima di partire, dovrà decidere che tipo di comportamento dovrà adottare il sistema nel caso si presentasse il problema: "o lui o io"; una soluzione che risolve non solo i problemi del sistema di guida, ma anche quelli degli uffici marketing e legale, perché scarica la responsabilità della scelta sull'utente e non sulla casa automobilistica o sul produttore del software.  
 In ottica C'hi++ il titolo sul giornale potrebbe essere:
 
 > Notaio uccide bambino con la sua smart-car. Chi vi dice che sia una disgrazia?[^cavallo]
@@ -933,7 +934,7 @@ potrebbe diventare un caso letterario oppure potrebbe far lanciare una Fatwa nei
 Comunque, fino a che ne avrò la possibilità, io porterò avanti questo progetto.
 Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di un'unità la *major-version* del mio progettto e andrò avanti.
 Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita, mia o altrui che sia, senza accettazioni per fede, ma basandomi solo su considerazioni di ordine logico.
-Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.
+Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
 Mi sembra un motivo più che sufficiente.
 
 <h2 class="note">Note</h2>
