@@ -68,7 +68,7 @@ I file del progetto sono suddivisi nelle seguenti directory:
 | Nome  | Contenuto
 |---|---|
 |**bin**| programmi eseguibili per la gestione del progetto; al momento, solo lo script per il cambio di versione git.
-| **docs** | file per la pubblicazione del progetto su Github Pages [https://chi.carlosimonelli.it/](https://chi.carlosimonelli.it/).
+| **docs** | file per la pubblicazione del progetto su Github Pages [https://chiplusplus.org/](https://chiplusplus.org/).
 | **img** | contiene i file immagine del progetto.
 | **man** | contiene il testo Markdown di [**C'hi++**](man/)
 | **src** | file "sorgenti" del progetto, siano essi degli script in C++ (*src/cpp*) o i file in formato Markdown dei testi (*src/doc*).
@@ -80,6 +80,3 @@ Il file README.md è quello che state leggendo e contiene una breve descrizione 
 ## Convenzioni tipografiche
 Utilizzo intenzionalmente l'apostrofo quando scrivo ”qual'è” perché credo che l'apocope vocalica si debba applicare solo a frasi come: “Si è comportato da birbante qual è”; riduco i punti di sospensione da tre a due perché il terzo è ridondante e uso sempre l'accento con il pronome *sé*.
 Tutte le altre variazioni della grammatica o della consuetudine sono da considerarsi errori.
-
-
-

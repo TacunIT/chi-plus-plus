@@ -41,7 +41,7 @@
 
 ## 0.7.0 (January 27, 2020)
   - Aggiornato testo Amore e Arte
-  - Aggiunto link a file CSS su carlosimonelli.it
+  - Aggiunto link a file CSS
   - Creata directory lib per fonti esterne
   - Rimossi file obsoleti
   - Spostati e rinomimati README e Manifesto nella sezione doc
@@ -166,9 +166,3 @@
 
 ## 0.1.0 (settembre 12, 2004)
   - Accenno a teoria cosmogonica in Defecatio.
-
-
-
-
-
-

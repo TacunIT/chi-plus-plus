@@ -714,18 +714,18 @@ Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *op
 ```
 *   commit fa61cc01a2c1c3aeedc94a8a8a795e932d17f98d (origin/master)
 |\  Merge: ced4c8f 1746b3c
-| | Author: Carlo Simonelli <chi@canaro.net>
+| | Author: Chi++ <git@chiplusplus.org>
 | | Date:   Sun Dec 16 20:10:08 2018 +0100
 | |     Importato il branch 'release 0.4.4'.
 | |
 | * commit ef642e150a0237675a9c176a8a8f8d3cb34c5cb9
-| | Author: Carlo Simonelli <chi@canaro.net>
+| | Author: Chi++ <git@chiplusplus.org>
 | | Date:   Sun Dec 16 19:51:30 2018 +0100
 | |     Prima di merge con bitbucket
 | |
 | *   commit e93ee12d95a75a06375eff64fbf571ca4b29f01f
 | |\  Merge: f3674cc 9e3989b
-| | | Author: Carlo Simonelli <chi@canaro.net>
+| | | Author: Chi++ <git@chiplusplus.org>
 | | | Date:   Sat Dec 15 19:42:22 2018 +0100
 | | |     Merge branch 'release 0.4.3'
 | | |
@@ -737,7 +737,7 @@ Oltre a essere una versione informatica della Macchina del Tempo, Git permette d
 Se un domani qualcuno volesse collaborare a C'hi++ potrebbe ottenere una copia di tutto il codice e i testi finora elaborati semplicemente eseguendo il comando:
 
 ```
-git clone git@bitbucket.org:canaro/chi-plus-plus.git
+git clone https://github.com/chi-plus-plus/chi-plus-plus.git
 ```
 Mi sono dilungato su Git perché il prossimo paragrafo comincia con la frase..
 
@@ -746,13 +746,13 @@ Come si può vedere dal registro degli eventi di Git, il 9 Dicembre di quest'ann
 
 ```
 commit ba7ff38b6d0862b13a79f10153c2eb11477b2a1f
-Author: Carlo Simonelli <chi@canaro.net>
+Author: Chi++ <git@chiplusplus.org>
 Date:   Sun Dec 9 16:01:53 2018 +0100
 
     Completato aggiornamento della versione Markdown del Manifesto
 
 commit f24b3147f8fee89f871ddceb171a6fb0a979cac1
-Author: Carlo Simonelli <chi@canaro.net>
+Author: Chi++ <git@chiplusplus.org>
 Date:   Sun Dec 9 10:30:25 2018 +0100
 
     Iniziata conversione Manifesto in formato Markdown
@@ -914,10 +914,10 @@ Ovviamente non potrà essere una delle religioni canoniche, perché sarebbe limi
 Dovrà quindi essere qualcosa di intermedio, né religioso né laico, con princìpi che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori[^barbelognostica].
 Dovrà essere in condizione di adattarsi senza stravolgimenti al *mutare delle fogge e dei costumi* della Società e dovrà poter imparare dai suoi errori, correggendoli rapidamente.
 Dovrà essere *vendor-independent* e *open-source*, per facilitare la scoperta e la correzione di eventuali errori.
-Tanto meglio, poi, se potesse essere compresa e gestita facilmente dal software e dagli informatici.  
+Tanto meglio, poi, se potesse essere compresa e gestita facilmente dal software e dagli informatici.
 Il C'hi++ potrebbe essere tutto questo.
 I princìpi del C'hi++, anche se ancora in embrione, permettono risolvere il dilemma bambino/notaio in maniera abbastanza semplice perché per C'hi++ non ha importanza chi dei due debba essere sacrificato, basta che la scelta sia preventiva e intenzionale, in modo che possa essere modificata nelle successive vite dell'Universo.
-In pratica, l'utente della *smart-car*, prima di partire, dovrà decidere che tipo di comportamento dovrà adottare il sistema nel caso si presentasse il problema: "o lui o io"; una soluzione che risolve non solo i problemi del sistema di guida, ma anche quelli degli uffici marketing e legale, perché scarica la responsabilità della scelta sull'utente e non sulla casa automobilistica o sul produttore del software.  
+In pratica, l'utente della *smart-car*, prima di partire, dovrà decidere che tipo di comportamento dovrà adottare il sistema nel caso si presentasse il problema: "o lui o io"; una soluzione che risolve non solo i problemi del sistema di guida, ma anche quelli degli uffici marketing e legale, perché scarica la responsabilità della scelta sull'utente e non sulla casa automobilistica o sul produttore del software.
 In ottica C'hi++ il titolo sul giornale potrebbe essere:
 
 > Notaio uccide bambino con la sua smart-car. Chi vi dice che sia una disgrazia?[^cavallo]
@@ -934,7 +934,7 @@ potrebbe diventare un caso letterario oppure potrebbe far lanciare una Fatwa nei
 Comunque, fino a che ne avrò la possibilità, io porterò avanti questo progetto.
 Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di un'unità la *major-version* del mio progettto e andrò avanti.
 Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita, mia o altrui che sia, senza accettazioni per fede, ma basandomi solo su considerazioni di ordine logico.
-Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.  
+Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.
 Mi sembra un motivo più che sufficiente.
 
 <h2 class="note">Note</h2>

@@ -3,8 +3,8 @@
 > *You need to determine what you stand for as an organization – what are your brand values? These values should exist whether you use AI or not. You can then define your ethical AI code on the basis of what you stand for.* -
 <span>Nicolas Economou</span>
 
-Il 28 Febbraio, Brad Smith, presidente di Microsoft e John Kelly III, vice direttore esecutivo di IBM, firmeranno la ***Rome Call for AI Ethics***, un documento di intenti per lo studio e la regolamentazione dell'Intelligenza Artificiale.  
-La firma avverrà nell'ambito dell'incontro dal titolo: [*RenAIssance  A Human-centric Artificial Intelligence*](http://www.academyforlife.va/content/pav/it/notizie/2020/intelligenza-artificiale-2020.html), organizzato dalla Pontificia Accademia per la Vita, al quale parteciperanno anche il presidente del Parlamento Europeo David Sassoli e il direttore generale della Fao Qu Dongyu. 
+Il 28 Febbraio, Brad Smith, presidente di Microsoft e John Kelly III, vice direttore esecutivo di IBM, firmeranno la ***Rome Call for AI Ethics***, un documento di intenti per lo studio e la regolamentazione dell'Intelligenza Artificiale.
+La firma avverrà nell'ambito dell'incontro dal titolo: [*RenAIssance  A Human-centric Artificial Intelligence*](http://www.academyforlife.va/content/pav/it/notizie/2020/intelligenza-artificiale-2020.html), organizzato dalla Pontificia Accademia per la Vita, al quale parteciperanno anche il presidente del Parlamento Europeo David Sassoli e il direttore generale della Fao Qu Dongyu.
 Non è la prima volta che si cerca di definire un'etica dell'Intelligenza Artificiale.
 Il problema è che *etica*, così come *amore* e *arte*, è un termine che tutti utilizzano ma che ciascuno può (legittimamente) interpretare a suo modo.
 
@@ -16,7 +16,7 @@ Ciò che è eticamente accettabile in alcuni casi - per esempio uccidere un avve
 
 Questa affermazione è sicuramente condivisibile, ma non ha prove a conforto e non è valida per chiunque viva in una delle 43 nazioni del Mondo dove vige una monarchia: ovvero una su cinque.
 
-Inoltre, **i valori che costituiscono un'etica sono soggettivi**. 
+Inoltre, **i valori che costituiscono un'etica sono soggettivi**.
 Questo vale sia per le etiche di natura religiosa che per quelle di natura non religiosa.
 Per esempio, la *Declaration of Independence* del 1776 comincia con queste parole:
 
@@ -46,7 +46,7 @@ Stando così le cose, abbiamo solo due possibilità: o scriviamo del codice spec
 Dato poi che è sbagliato ricercare le motivazioni della propria etica all'interno dello schema stesso, negando ogni forma di trascendenza, definiremo una metafisica cui fare riferimento, sfruttando le idee che nacquero e si svilupparono nella culla della Civiltà, ovvero gli anni '80.
 
 Per definire un'etica che sia acccettabile dal maggior numero di persone possibile, dobbiamo fare ciò che fecero i creatori delle prime interfacce grafiche: creare una libreria di simboli il cui significato sia chiaro e condiviso da tutti gli utenti.
-In sostanza, **abbiamo bisogno di icone**.  
+In sostanza, **abbiamo bisogno di icone**.
 Il sostantivo inglese *file* può tradursi con: documento, ملف (Arabo), 文件 (Cinese), файл (Russo), ファイル (Giapponese), 파일 (Coreano) oppure, più semplicemente, può essere rappresentato con il simbolo:
 
 <p align=center><img src="../../img/file.jpg"></div></p>
@@ -59,16 +59,16 @@ Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, elimina
 <p align=center><img style="margin:auto;display:block" src="../../img/icone.png" ></p>
 
 Pur se complesso, tutto questo è possibile. Spogliate degli orpelli voluti dal Clero e ricondotte alle loro caratteristiche essenziali, le diverse ipotesi metafisiche hanno molti punti in comune perché sono tutte, in una maniera o nell'altra, la risposta a uno stesso bisogno: la ricerca di una giustificazione alla nostra esistenza.
-Posso dirlo con buona certezza, perché da più di dieci anni sto lavorando a un libro dal titolo: **C'hi++ - Il senso della vita è il debug**, nel quale intendo definire i principî della mia etica *vendor-independent*, corredandola di una metafisica del tutto indipendente dall’esistenza di una o più Divinità. 
+Posso dirlo con buona certezza, perché da più di dieci anni sto lavorando a un libro dal titolo: **C'hi++ - Il senso della vita è il debug**, nel quale intendo definire i principî della mia etica *vendor-independent*, corredandola di una metafisica del tutto indipendente dall’esistenza di una o più Divinità.
 
 Ma così come avvenne a Linus Torvaldsen con Linux, dopo qualche anno che lavoravo a questo progetto mi resi conto che questo era un compito che non potevo svogere da solo.
-Perciò misi tutti i miei documenti su GitHub[^github] e cominciai a scrivere un *Manifesto* per spiegare a dei potenziali collaboratori quali fossero le mie intenzioni. 
+Perciò misi tutti i miei documenti su GitHub[^github] e cominciai a scrivere un *Manifesto* per spiegare a dei potenziali collaboratori quali fossero le mie intenzioni.
 Preso atto della mia incapacità di produrre un documento accademico, ho redatto il testo come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivo il problema che mi propongo di affrontare, esaminando le possibili soluzioni. Ne è derivato un documento di quarantasei pagine: dettagliato, ma decisamente troppo lungo per poter fungere da manifesto del progetto.
 L'ho trasformato perciò in un documento a sé stante e ho cercato di condensare le principali informazioni che conteneva nel file README che compare all'apertura del progetto su GitHub e nel MANIFEST, da cui è tratta buona parte di questo articolo.
 
-Se volete saperne qualcosa di più, il progetto è qui: 
+Se volete saperne qualcosa di più, il progetto è qui:
 
-[https://github.com/carlosimonelli/chi-plus-plus] (https://github.com/carlosimonelli/chi-plus-plus) 
+[https://github.com/chi-plus-plus/chi-plus-plus] (https://github.com/chi-plus-plus/chi-plus-plus) 
 
 Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di [GitHub] (https://github.com).
 
@@ -79,5 +79,4 @@ Se volete collaborare o anche esporre delle critiche, potere farlo con gli strum
 
 [^capgemini]: Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*. [https://www.sogeti.com/explore/reports/why-addressing-ethical-questions-in-ai-will-benefit-organizations](https://www.sogeti.com/explore/reports/why-addressing-ethical-questions-in-ai-will-benefit-organizations)
 
-[^github]: La piattaforma con cui si gestisce la maggior parte del software *open-source*. 
-
+[^github]: La piattaforma con cui si gestisce la maggior parte del software *open-source*.
