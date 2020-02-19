@@ -1,3 +1,17 @@
+## 0.7.4 (February 19, 2020)
+  - Aggiornato foglio di stile della Proposta
+  - Aggiunti TAG all'HEAD dell'index www
+  - Generati i codici QR per github e sito web
+  - Sostituita immagine apparato con ideogramma C'hi++
+  - Aggiunta pagina iniziale a sito Web
+  - Rivista la struttura delle directory media
+  - Prove per funzionamento GitHub Pages
+  - Rivisto articolo presentazione
+  - Aggiornato il testo dell'articolo di presentazione
+  - Revisione dell'articolo di presentazione e adeguamento degli altri testi
+  - Aggiunta nota su Dichiarazione diritti dell'uomo fancese e americana
+  - Aggiunta citazione di Stuart Mill a MANIFEST
+
 ## 0.7.3 (February 14, 2020)
   - Aggiunta immagine copertina a README del Manuale
   - Aggiunta dedica a Manuale
