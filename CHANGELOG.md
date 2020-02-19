@@ -1,3 +1,9 @@
+## 0.7.5 (February 19, 2020)
+  - Modifiche dopo trasferimento del progetto GitHub
+  - Corretto link a PDF nell'index
+  - Revisione del testo del MANIFEST
+  - Aggiunto link a progetto GitHub nell'index del sito WWW
+
 ## 0.7.4 (February 19, 2020)
   - Aggiornato foglio di stile della Proposta
   - Aggiunti TAG all'HEAD dell'index www
