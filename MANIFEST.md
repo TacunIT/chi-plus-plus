@@ -3,7 +3,7 @@
 Questo è un tentativo, forse un po' naïf, ma molto ben strutturato, di cambiare il Mondo.
 In meglio, auspicabilmente.
 
-Per cambiare il Mondo non servono né canzoni, né guerre, né rivoluzioni, ma delle divinità meno irriconoscenti di quelle - prettamente terrene - davanti alle quali ci prostriamo oggi: denaro, successo, fama.  
+Per cambiare il Mondo non servono né canzoni, né guerre, né rivoluzioni, ma delle divinità meno irriconoscenti di quelle, prettamente terrene, davanti alle quali ci prostriamo oggi: Denaro, Successo, Fama.  
 In sostanza: abbiamo bisogno di una nuova etica.
 
 ## Abbiamo bisogno di un'etica
@@ -35,11 +35,11 @@ Definire un principio: *self-evident* equivale a dichiarare un dogma: una convin
 Nulla prova che questi valori siano reali o corretti, ci devi credere; e ci credi perché qualcosa o qualcuno ti ha convinto a farlo.
 Se consideriamo la notevole disparità di vedute e convinzioni dei Popoli della Terra e, talvolta, degli stessi individui all'interno di un Popolo, è facile capire come la frase:
 
-> AI interactions that consumers and citizens perceive as ethical build trust and satisfaction[^capgemini]
+> AI interactions that consumers and citizens perceive as ethical build trust and satisfaction<a href="#capgemini"><sup>1</sup></a>
 
 sia ambigua perché ciò che è *percepito* come etico da qualcuno potrebbe non esserlo per altri.
 
-La conseguenza di questa indeterminatezza è che, come dimostrano questi due articoli su [Springer](rd.springer.com), da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancora non si è riuscito a decidere *quali* debbano essere questi valori.
+La conseguenza di questa indeterminatezza è che, come dimostrano questi due articoli su [Springer](rd.springer.com), da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancora non si è riuscito a decidere **quali** debbano essere questi valori.
 
 <img src="./img/value-sensitive-design.png" style="width:100%;padding:1rem 0;border:solid 1px #999">
 
@@ -54,7 +54,7 @@ Questi principî si suppongono universali e immutabili; quando qualcosa li modif
 Un altro problema da considerare, quando si valuta l'adozione di etiche religiose, è che chi le predica, talvolta, agisce in un modo che va contro gli ideali professati.
 
 **Le etiche di origine laica**, di contro, hanno il difetto di basarsi su principî e affermazioni che non trovano riscontro nella realtà (p.es. *Liberté, Égalité, Fraternité* ecc.).
-Questi principî, che si suppongono universali e immutabili, variano solo in seguito a guerre o crisi sociali spesso cruente (p.es. Luigi XVI vs. Sanculotti, Lincoln vs. Davis, Segregazionisti vs. Mandela ecc.)<a href="#mill"><sup>3</sup></a>.
+Questi principî, che si suppongono universali e immutabili, variano solo in seguito a guerre o crisi sociali spesso cruente (p.es. Luigi XVI vs. Sanculotti, Lincoln vs. Davis, Segregazionisti vs. Mandela ecc.).
 Un altro problema da considerare, quando si valuta l'adozione di etiche laiche, è che chi le predica agisce molto spesso in un modo che va contro gli ideali professati.
 
 Se le differenze finissero qui, scegliere l'una o l'altra possibilità non farebbe una grossa differenza, ma sfortunatamente le filosofie di origine laica hanno un'altro difetto: negando ogni forma di trascendenza, **devono ricercare le motivazioni del proprio schema di valori all'interno dello schema stesso**; un'azione del tutto lecita, ma che le rende meno solide degli schemi di valori basati su convinzioni religiose.
@@ -65,7 +65,7 @@ Se la partita è fine a sé stessa e l'unica cosa importante è vincere, non c'�
 Per alcuni, non c'è nemmeno ragione di continuare a giocare.
 
 ## La Banda degli Onesti
-Stabilito che è meglio adottare dei valori che possono ricollegarsi a una qualche convinzione spirituale, ci restano da risolvere alcuni problemi.
+Stabilito che abbiamo bisogno di nuovi valori etici che possano ricollegarsi a una qualche convinzione spirituale, ci restano da risolvere alcuni problemi.
 
 Il primo è decidere a quale spiritualità fare riferimento.
 Ovviamente non potrà essere una delle religioni canoniche, perché così facendo allontaneremmo gli appartenenti alle altre Fedi.
@@ -87,18 +87,23 @@ Riconoscere gli sbagli che si sono fatti, imparare da essi e cercare di non ripe
 Se si comporteranno così, qualunque sarà il loro lavoro, fosse anche pulire i cessi, sarà comunque Arte.
 
 ## Si può fare!
-Riassumendo, abbiamo bisogno di una nuova etica che proponga valori alternativi a quelli in voga attualmente, che si basi su una nuova forma di spiritualità compatibile  quelle già esistenti e che sarà bene definire *Metafisica*, anche se non avrà aspetti metafisici.
+Riassumendo, abbiamo bisogno di una nuova etica che: 
+
+- proponga valori alternativi a quelli in voga attualmente;
+- si basi su una nuova forma di spiritualità compatibile  quelle già esistenti 
+- sarà bene definire *Metafisica*, anche se non avrà aspetti metafisici.
+
 Si può fare, ma per riuscirci dobbiamo rifarci alle idee che nacquero e si svilupparono nella Culla della Civiltà, ovvero gli anni '80.
 
 Per definire un *dress-code* etico che sia valido sia a una cena di gala che a un toga party dobbiamo fare ciò che fecero i creatori delle prime interfacce grafiche: creare una libreria di simboli il cui significato sia chiaro e condiviso da tutti gli utenti.
-In sostanza, abbiamo bisogno di icone.
+In sostanza, **abbiamo bisogno di icone**.
 
 Il sostantivo inglese *file* può tradursi con: documento, ملف (Arabo), 文件 (Cinese), файл (Russo), ファイル (Giapponese), 파일 (Coreano) oppure, più semplicemente, può essere rappresentato con il simbolo:
 
 <p align=center><img src="./img/file.jpg"></p>
 
 Così come la pipa di Magritte, il documento del simbolo **non è un documento**, ma questo non ha importanza perché ciò che conta, qui, è il significato, non il significante.
-Quando l'utente di un sistema di scrittura vede il simbolo *File*, non pensa né che quel documento *sia* quello che vuole scrivere lui né che *non sia* il documento che vuole scrivere lui.
+Quando l'utente di un sistema di scrittura vede il simbolo *File*, non pensa né che quel documento **sia** quello che vuole scrivere lui né che **non sia** il documento che vuole scrivere lui.
 È questo l'atteggiamento che dobbiamo stimolare nei fruitori della nostra etica.
 Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, eliminando dai nostri simboli tutto ciò che è superfluo e lasciando solo ciò che serve a denotare l'oggetto a cui si riferiscono.
 
@@ -111,15 +116,14 @@ Preso atto della mia incapacità di produrre un documento accademico, ho redatto
 Ne è derivato un testo di quaranta pagine: dettagliato, ma decisamente troppo lungo per poter fungere da manifesto del progetto.
 L'ho trasformato perciò in [un documento a sé stante](./out/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf) e ho cercato di condensare le principali informazioni che conteneva nel file [README](README.md) che compare all'apertura del progetto su GitHub e in questo MANIFEST.
 
-Se volete sapere qualcosa di più su questo progetto, vi suggerisco di leggere [**Proposta per una metafisica open-source**](src/doc/proposta-per-una-metafisica-open-source.md).
+Se volete sapere qualcosa di più sul *C'hi++*, vi suggerisco di leggere [**Proposta per una metafisica open-source**](src/doc/proposta-per-una-metafisica-open-source.md).
 
 Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di GitHub.
 
 
 ## Note
 
-<a id="#capgemini"><sup>1</sup></a> Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
+<a id="capgemini"><sup>1</sup></a> Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
 
-<a id="#laici"><sup>2</sup></a> Inteso qui nel senso di: *non credenti*. È un'accezione restrittiva, ma semplifica la lettura.
+<a id="laici"><sup>2</sup></a> Inteso qui nel senso di: *non credenti*. È un'accezione restrittiva, ma semplifica la lettura.
 
-<a id="#mill"><sup>3</sup></a>*Il progresso umano è opera di quanti sono scontenti* - John Stuart Mill 

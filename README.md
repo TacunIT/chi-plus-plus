@@ -49,7 +49,7 @@ Esiste anche una mappa mentale nella quale sto riportando tutti i miei appunti e
 
 Chi volesse approfondire i concetti riportati in questa presentazione può leggere il [Manifesto](MANIFEST.md) e, successivamente, [**Proposta per una metafisica open-source**](src/doc/proposta-per-una-metafisica-open-source.md).
 
-La risposta al quesito del notaio e del bambino è nel capitolo 9 della [**Proposta per una metafisica open-source**](src/doc/proposta-per-una-metafisica-open-source.md)
+La risposta al quesito del notaio e del bambino è nel capitolo 9 della [**Proposta**](src/doc/proposta-per-una-metafisica-open-source.md).
 
 ## Strumenti
 Tutti i formati utilizzati per i file sono standard pubblici che possono essere creati e letti con strumenti gratuiti:
