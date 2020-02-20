@@ -19,7 +19,7 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 
 
 ## Executive summary
-Se continuerete nella lettura di questo Manifesto (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
+Se continuerete nella lettura di questo documento (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
 Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.
 Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e principii etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come quello riportato in copertina.
 Premetto che non ho titoli per scrivere di filosofia e religione, perché sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer, quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell'esaltazione religiosa; successivamente, descriverò alcune
@@ -702,7 +702,7 @@ Sfortunatamente, quando ho pensato a tutto ciò, il nome Spazionismo era già st
 
 ## Release 0.3: Git
 A Dicembre del 2016 divenne chiaro che anche se avessi potuto dedicare a questo progetto tutto il mio tempo (e non potevo), non sarei mai riuscito a portarlo a termine da solo.
-Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *open-source*, coinvlgendo nello “sviluppo” anche altre persone, mi sembrò la cosa migliore da fare, così cominciai a scrivere questo Manifesto per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
+Trasformare il mio *studio matto e disparatissimo*[^leopardi] in un progetto *open-source*, coinvlgendo nello “sviluppo” anche altre persone, mi sembrò la cosa migliore da fare, così cominciai a scrivere questo documento per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
 
 ### Git
 *Git* è un sistema con cui si gestiscono le diverse versioni di un software, ma può essere utilizzato per tenere traccia delle modifiche di qualsiasi documento elettronico. Leggendo il registro degli eventi di Git possiamo vedere quali sono state le modifiche apportate al sistema:
@@ -919,7 +919,7 @@ In ottica C'hi++ il titolo sul giornale potrebbe essere:
 > Notaio uccide bambino con la sua smart-car. Chi vi dice che sia una disgrazia?[^cavallo]
 
 ## Conclusioni
-Non so quale sarà il destino di *C'hi++*; non so dire nemmeno se questo Manifesto mi procurerà aiuto o sberleffi.
+Non so quale sarà il destino di *C'hi++*; non so dire nemmeno se questo testo mi procurerà aiuto o sberleffi.
 Un amico, a cui ne ho fatto leggere una prima bozza, sostiene che:
 
 <div class="citazione" >
