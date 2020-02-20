@@ -4,7 +4,7 @@
 	<h1>C'hi++</h1>
 	<h2>Proposta per una metafisica open-source</h2>
 	<h3>Versione 0.7.5</h3>
-	<img style="margin-top:3rem" src="../../img/quiz.png">
+	<img style="margin-top:2rem" src="../../img/quiz.png">
 </section>
 
 <section class="dedica">
@@ -12,10 +12,6 @@
 </section>
 
 <section class="citazione">
-Finis totius et partis est, removere viventes in hac vita de statu miserie et perducere ad statum felicitatis.<br/>
-<span>Dante Alighieri - </span>Epistola XIII a Cangrande della Scala
-<br/>
-<br/>
 E gli atei? rideva ancora.<br/>
 Quelli mi annoiano perché parlano sempre di Dio. <br/>
 <span>Heinrich Böll</span> - Opinioni di un clown
@@ -35,18 +31,18 @@ Ho dovuto anche, per brevità, fare delle affermazioni senza comprovarle; i logi
 
 ## Analisi del sistema attualmente in esercizio
 Se mi guardo indietro, per il mezzo secolo su cui ho visibilità diretta, vedo una lunga serie di fallimenti ideologici.
-Il Sessantotto ha spazzato via delle parti sicuramente rivedibili ma fondamentali della nostra Società senza darci nulla in cambio, tranne la minigonna.
+Il Sessantotto ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società senza darci nulla in cambio, tranne la minigonna.
 La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre la *reaganomics* è crollata alla fine degli anni '80 insieme al muro di Berlino.
 Le speranze degli anni '90 si sono schiantate l'11 Settembre 2001 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformata, nel tempo, in un sistema di controllo e di dis-informazione di massa.
-Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni dagli *smart-phone* e dai *social-network*.
-In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (*c'è crisi*), né comunista (*Stalin e Mao hanno ucciso più persone di Hitler*), né cattolico (*i preti sono tutti pedofili*), né ebreo (*guarda gli Israeliani cosa fanno ai Palestinesi*), né Musulmano (*gli islamici sono degli esaltati che vogliono ucciderci tutti*), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali che non leggono[^istat], ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.
+Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni dagli *smart-phone* e dai *social-network*.  
+In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (*c'è crisi*), né comunista (*Stalin e Mao hanno ucciso più persone di Hitler*), né cattolico (*lo chiedessero allo IOR, l'8 per mille*), né ebreo (*guarda gli Israeliani cosa fanno ai Palestinesi*), né Musulmano (*gli islamici sono degli esaltati che vogliono ucciderci tutti*)[^corsivo], si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali che non leggono[^istat], ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.
 C'è modo di invertire questa tendenza o dobbiamo rassegnarci al declino? No.
 *No*, non credo che qualcosa cambierà, almeno nel breve periodo, a meno che qualche evento esterno[^eventi] non costringa la nostra specie a modificare il suo comportamento; e *No*, non intendo arrendermi senza avere almeno tentato, perché questi zombie sono le persone che determinano la qualità del nostro presente con il loro voto e con cui dovremo affrontare dei problemi da cui dipenderà il nostro futuro, come la sovrappopolazione, la scarsezza di risorse e l'accumulo di plastica negli oceani.
 Ma “tentare”, cosa?
 Il declino della nostra Società è un sintomo, non è il male; per frenarlo, dobbiamo identificarne la causa.
 
 ### Il male
-Esiste un fattore comune alle ideologie degli ultimi cinquant'anni che ne ha accelerato l'obsolescenza e le ha rese incapaci di sopravvivere alla prima sconfitta: il rifiuto più o meno accanito di ogni forma non strumentale di spiritualità.
+Esiste un fattore comune alle ideologie degli ultimi cinquant'anni che ne ha accelerato l'obsolescenza e le ha rese incapaci di sopravvivere alla prima sconfitta: il rifiuto più o meno accanito di ogni forma non strumentale di spiritualità.[^calvino]
 <a name="il-problema"></a>Il problema, se si vuole definire uno schema di valori negando allo stesso tempo qualsiasi forma di trascendenza, è che si è costretti a ricercare i valori e le motivazioni della propria etica all'interno dello schema stesso.
 Si può fare, ma è sbagliato e limitativo.
 È sbagliato da un punto di vista etico, perché le regole che si definiscono sono sempre una conseguenza di esigenze contingenti (guerre, sopraffazioni, disparità sociali), venendo a mancare le quali lo schema logico del sistema perde di significato e si disgrega.
@@ -939,9 +935,13 @@ Mi sembra un motivo più che sufficiente.
 
 <h2 class="note">Note</h2>
 
+[^corsivo]: Le frasi in corsivo sono commenti trovati sui *social-network*.
+
 [^istat]: https://www.istat.it/it/archivio/213901
 
 [^eventi]: Una crisi, una guerra, una catastrofe naturale, un'invasione aliena o una presa di coscienza collettiva, in ordine decrescente di probabilità.
+
+[^calvino]: Il Capitalismo, al contrario, gode di ottima salute perché trova un sua giustificazione spirituale nell'idea calvinista che il successo negli affari sia l'indice di un favore divino.
 
 [^arte]: I dettagli di questa affermazione potete trovarli qui: [Amore e Arte](../lib/amore-e-arte.pdf)
 
