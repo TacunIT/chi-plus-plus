@@ -1,3 +1,11 @@
+## 0.7.6 (February 20, 2020)
+  - Registrazione del dominio cplusplus.org
+  - Rimossa la cartella PDF dalla root. 
+  - Sostituite le ricorrenze di "Manifesto" nella Proposta. 
+  - Rimosso il file di configurazione di Jekill.
+  - Aggiornati i codici QR per sito e GitHub
+  - Aggiornati link nella Proposta
+
 ## 0.7.5 (February 19, 2020)
   - Modifiche dopo trasferimento del progetto GitHub
   - Corretto link a PDF nell'index
