@@ -4,25 +4,23 @@ Questo è un tentativo, forse un po' naïf, ma molto ben strutturato, di cambiar
 In meglio, auspicabilmente.
 
 Per cambiare il Mondo non servono né canzoni, né guerre, né rivoluzioni, ma delle divinità meno irriconoscenti di quelle, prettamente terrene, davanti alle quali ci prostriamo oggi: Denaro, Successo, Fama.
-In sostanza: abbiamo bisogno di una nuova etica.
 
 ## Abbiamo bisogno di un'etica
 Ne abbiamo bisogno noi e ne hanno bisogno anche i sistemi a cui presto dovremo affidare la nostra sicurezza: *smart-house*, *smart-car*, *robot*.
 Il problema è che *etica*, così come *amore* e *arte*, è un termine che tutti utilizzano ma che ciascuno può - legittimamente - interpretare a modo suo.
 
+Di fatto, l’etica è una disciplina filosofica, ma per estensione è anche l’oggetto di studio di quella disciplina: uno schema di valori e di regole che permettono di decidere cosa sia più o meno giusto fare. 
 In altre parole, comprensibili anche agli adoratori del dio Ferragnez, l'etica è il *dress-code* delle nostre vite e come tutti i *dress-code*, **una determinata etica ha valore solo in determinate condizioni**.
+Ciò che è eticamente accettabile in alcuni casi, può non esserlo in altri. 
+Per esempio, uccidere un avversario perché indossa “una divisa di un altro colore” è ammissibile in guerra, ma non durante una partita di calcio.
 
-Ciò che è eticamente accettabile in alcuni casi, può non esserlo in altri: per esempio, uccidere un avversario perché indossa <em>una divisa di un altro colore</em> è ammissibile in guerra, ma non durante una partita di calcio.
-
-Prendete il primo Articolo della *Déclaration des Droits de l’Homme et du Citoyen* del 1798:
+Inoltre, **i valori che costituiscono un'etica sono soggettivi**.
+Prendete ad esempio il primo Articolo della *Déclaration des Droits de l’Homme et du Citoyen* del 1798:
 
 > Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l’utilité commune.
 
 Questa affermazione, sicuramente condivisibile, non ha prove a conforto e non è valida per chiunque viva in una delle 43 nazioni del Mondo dove vige una monarchia: ovvero una su cinque.
-
-Inoltre, **i valori che costituiscono un'etica sono soggettivi**.
-Questo vale sia per le etiche di natura religiosa che per quelle di natura non religiosa.
-Per esempio, la *Declaration of Independence* del 1776 comincia con queste parole:
+Similmente, la *United States Declaration of Independence* del 1776 comincia con l'affermazione:
 
 > We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
 
@@ -39,23 +37,24 @@ Se consideriamo la notevole disparità di vedute e convinzioni dei Popoli della 
 
 > AI interactions that consumers and citizens perceive as ethical build trust and satisfaction<a href="#capgemini"><sup>1</sup></a>
 
-sia ambigua perché ciò che è *percepito* come etico da qualcuno potrebbe non esserlo per altri.
+sia ambigua perché ciò che è *percepito* come “ethical” da qualcuno potrebbe non esserlo per altri.
 
-La conseguenza di questa indeterminatezza è che, come dimostrano questi due articoli su [Springer](rd.springer.com), da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancora non si è riuscito a decidere **quali** debbano essere questi valori.
+La conseguenza di questa indeterminatezza è che, come dimostrano il primo e l'ultimo articolo nell'immagine qui sotto , da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancora non si è riuscito a decidere **quali** debbano essere questi valori.
 
 <img src="./img/value-sensitive-design.png" style="width:100%;padding:1rem 0;border:solid 1px #999">
+(da: [Springer](rd.springer.com))
 
 Mancando un'etica *pret-a-porter*, siamo costretti a ordinarne una fatta su misura.
 
 ## Differenti tipi di etica
-I principali produttori di etica, al Mondo, sono i religiosi e i laici<a href="#laici"><sup>2</sup></a>.
+Le eiche possono essere o di natura religiosa o di natura non religiosa.
 Quale tipo conviene scegliere?
 
 **Le etiche religiose** hanno il difetto di basarsi su principî e affermazioni che non possono in acun modo essere dimostrati (p.es. esistono una o più Divinità; hanno determinate caratteristiche; esigono che ci comportiamo in una determinata maniera ecc.).
 Questi principî si suppongono universali e immutabili; quando qualcosa li modifica, si verificano delle divisioni fra i fedeli che causano scontri spesso cruenti (p.es. Cattolici vs. Valdesi, Sunniti vs. Sciiti, Mahāyāna vs. Kamalaśīla);
 Un altro problema da considerare, quando si valuta l'adozione di etiche religiose, è che chi le predica, talvolta, agisce in un modo che va contro gli ideali professati.
 
-**Le etiche di origine laica**, di contro, hanno il difetto di basarsi su principî e affermazioni che non trovano riscontro nella realtà (p.es. *Liberté, Égalité, Fraternité* ecc.).
+**Le etiche non religiose**, di contro, hanno il difetto di basarsi su principî e affermazioni che non trovano riscontro nella realtà (p.es. *Liberté, Égalité, Fraternité* ecc.).
 Questi principî, che si suppongono universali e immutabili, variano solo in seguito a guerre o crisi sociali spesso cruente (p.es. Luigi XVI vs. Sanculotti, Lincoln vs. Davis, Segregazionisti vs. Mandela ecc.).
 Un altro problema da considerare, quando si valuta l'adozione di etiche laiche, è che chi le predica agisce molto spesso in un modo che va contro gli ideali professati.
 
@@ -72,7 +71,7 @@ Stabilito che abbiamo bisogno di nuovi valori etici che possano ricollegarsi a u
 Il primo è decidere a quale spiritualità fare riferimento.
 Ovviamente non potrà essere una delle religioni canoniche, perché così facendo allontaneremmo gli appartenenti alle altre Fedi.
 Dovrà essere una nuova filosofia di vita che contrasti il meno possibile con le convinzioni degli altri gruppi religiosi.
-Inoltre sarà bene non definirla *religione*, perché molte persone hanno un'istintiva (e non del tutto immotivata) diffidenza nei confronti di questo termine e vedono il *religare* da cui trae origine come un legame restrittivo da cui è bene sottrarsi.
+Inoltre sarà bene non definirla *religione*, perché molte persone hanno un'istintiva (e non del tutto immotivata) diffidenza nei confronti di questo termine perché le attribuiscono colpe che in realtà andrebbero imputate al clero e ai fedeli e vedono il *religare* da cui trae origine come un legame restrittivo da cui è bene sottrarsi.
 La chiameremo perciò: *Metafisica*, anche se di metafisico avrà ben poco, per non correre il rischio di allontanare proprio le persone a cui è destinato il C'hi++:
 
 > quei tanti che ancora credono in tutto ciò in cui più nessuno crede
@@ -126,8 +125,6 @@ Se volete sapere qualcosa di più sul *C'hi++*, vi suggerisco di leggere [**Prop
 Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di GitHub.
 
 
-## Note
 
 <a id="capgemini"><sup>1</sup></a> Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
 
-<a id="laici"><sup>2</sup></a> Inteso qui nel senso di: *non credenti*. È un'accezione restrittiva, ma semplifica la lettura.
