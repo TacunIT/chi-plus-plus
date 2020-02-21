@@ -3,7 +3,7 @@
 Questo è un tentativo, forse un po' naïf, ma molto ben strutturato, di cambiare il Mondo.
 In meglio, auspicabilmente.
 
-Per cambiare il Mondo non servono né canzoni, né guerre, né rivoluzioni, ma delle divinità meno irriconoscenti di quelle, prettamente terrene, davanti alle quali ci prostriamo oggi: Denaro, Successo, Fama.  
+Per cambiare il Mondo non servono né canzoni, né guerre, né rivoluzioni, ma delle divinità meno irriconoscenti di quelle, prettamente terrene, davanti alle quali ci prostriamo oggi: Denaro, Successo, Fama.
 In sostanza: abbiamo bisogno di una nuova etica.
 
 ## Abbiamo bisogno di un'etica
@@ -11,14 +11,16 @@ Ne abbiamo bisogno noi e ne hanno bisogno anche i sistemi a cui presto dovremo a
 Il problema è che *etica*, così come *amore* e *arte*, è un termine che tutti utilizzano ma che ciascuno può - legittimamente - interpretare a modo suo.
 
 In altre parole, comprensibili anche agli adoratori del dio Ferragnez, l'etica è il *dress-code* delle nostre vite e come tutti i *dress-code*, **una determinata etica ha valore solo in determinate condizioni**.
-Ciò che è eticamente accettabile in alcuni casi - per esempio uccidere un avversario perché indossa una *divisa di un altro colore*, in guerra -, può non esserlo in altri - per esempio, uccidere un avversario perché indossa una divisa di un altro colore, durante una partita di calcio.
+
+Ciò che è eticamente accettabile in alcuni casi, può non esserlo in altri: per esempio, uccidere un avversario perché indossa <em>una divisa di un altro colore</em> è ammissibile in guerra, ma non durante una partita di calcio.
+
 Prendete il primo Articolo della *Déclaration des Droits de l’Homme et du Citoyen* del 1798:
 
 > Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l’utilité commune.
 
 Questa affermazione, sicuramente condivisibile, non ha prove a conforto e non è valida per chiunque viva in una delle 43 nazioni del Mondo dove vige una monarchia: ovvero una su cinque.
 
-Inoltre, **i valori che costituiscono un'etica sono soggettivi**. 
+Inoltre, **i valori che costituiscono un'etica sono soggettivi**.
 Questo vale sia per le etiche di natura religiosa che per quelle di natura non religiosa.
 Per esempio, la *Declaration of Independence* del 1776 comincia con queste parole:
 
@@ -87,10 +89,10 @@ Riconoscere gli sbagli che si sono fatti, imparare da essi e cercare di non ripe
 Se si comporteranno così, qualunque sarà il loro lavoro, fosse anche pulire i cessi, sarà comunque Arte.
 
 ## Si può fare!
-Riassumendo, abbiamo bisogno di una nuova etica che: 
+Riassumendo, abbiamo bisogno di una nuova etica che:
 
 - proponga valori alternativi a quelli in voga attualmente;
-- si basi su una nuova forma di spiritualità compatibile  quelle già esistenti 
+- si basi su una nuova forma di spiritualità compatibile  quelle già esistenti
 - sarà bene definire *Metafisica*, anche se non avrà aspetti metafisici.
 
 Si può fare, ma per riuscirci dobbiamo rifarci alle idee che nacquero e si svilupparono nella Culla della Civiltà, ovvero gli anni '80.
@@ -111,12 +113,15 @@ Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, elimina
 
 Pur se complesso, tutto questo è possibile. Spogliate degli orpelli voluti dal Clero e ricondotte alle loro caratteristiche essenziali, le diverse ipotesi metafisiche hanno molti punti in comune perché sono tutte, in una maniera o nell'altra, la risposta a uno stesso bisogno: la ricerca di una giustificazione alla nostra esistenza.
 
-Ma, così come avvenne a Linus Torvaldsen con Linux, dopo qualche anno che lavoravo a questo progetto, capii che non era un compito che potevo svogere da solo, così cominciai a scrivere un *Manifesto* per spiegare a dei potenziali collaboratori quali fossero le mie intenzioni.
+Posso dirlo con buona certezza, perché da più di dieci anni sto lavorando a un libro dal titolo: *C’hi++ – Il senso della vita è il debug*, nel quale definisco i principî di un’etica *RISC*, *vendor-independent* e *open-source*.
+
+Ma, così come avvenne a Linus Torvaldsen con Linux, dopo qualche anno che lavoravo a questo progetto, capii che non era un compito che potevo svogere da solo, così misi tutti i documenti che avevo elaborato fino ad allora su GitHub e cominciai a scrivere un *Manifesto* per spiegare a dei potenziali collaboratori quali fossero le mie intenzioni.
+
 Preso atto della mia incapacità di produrre un documento accademico, ho redatto il Manifesto come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivo il problema che mi propongo di affrontare ed esamino le possibili soluzioni.
 Ne è derivato un testo di quaranta pagine: dettagliato, ma decisamente troppo lungo per poter fungere da manifesto del progetto.
-L'ho trasformato perciò in [un documento a sé stante](./out/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf) e ho cercato di condensare le principali informazioni che conteneva nel file [README](README.md) che compare all'apertura del progetto su GitHub e in questo MANIFEST.
+L'ho trasformato perciò in [un documento a sé stante](http://chiplusplus.org/media/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf) e ho cercato di condensare le principali informazioni che conteneva nel file [README](README.md) che compare all'apertura del progetto su GitHub e in questo MANIFEST.
 
-Se volete sapere qualcosa di più sul *C'hi++*, vi suggerisco di leggere [**Proposta per una metafisica open-source**](src/doc/proposta-per-una-metafisica-open-source.md).
+Se volete sapere qualcosa di più sul *C'hi++*, vi suggerisco di leggere [**Proposta per una metafisica open-source**](http://chiplusplus.org/media/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf).
 
 Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di GitHub.
 
@@ -126,4 +131,3 @@ Se volete collaborare o anche esporre delle critiche, potere farlo con gli strum
 <a id="capgemini"><sup>1</sup></a> Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
 
 <a id="laici"><sup>2</sup></a> Inteso qui nel senso di: *non credenti*. È un'accezione restrittiva, ma semplifica la lettura.
-
