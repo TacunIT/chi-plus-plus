@@ -1,7 +1,11 @@
+## 0.7.7 (February 24, 2020)
+  - Modifiche al testo di MANIFEST e index.html
+  - Aggiunta directory per Jekyll
+
 ## 0.7.6 (February 20, 2020)
   - Registrazione del dominio cplusplus.org
-  - Rimossa la cartella PDF dalla root. 
-  - Sostituite le ricorrenze di "Manifesto" nella Proposta. 
+  - Rimossa la cartella PDF dalla root.
+  - Sostituite le ricorrenze di "Manifesto" nella Proposta.
   - Rimosso il file di configurazione di Jekill.
   - Aggiornati i codici QR per sito e GitHub
   - Aggiornati link nella Proposta
