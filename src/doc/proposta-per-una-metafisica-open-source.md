@@ -232,8 +232,8 @@ Al contrario, dire che questo principio creatore sia “buono” è ipotetico; r
 Delle tre, la prima è la meno *conveniente*, eppure la maggior parte dei non-credenti preferisce negare l'esistenza di Dio piuttosto che mettere in discussione la sua presunta bontà.
 Il perché, chiedetelo a loro.
 
-### Buonismo 2.0
-<a name="buonismo"></a>Rimuovendo il secondo precetto, siamo riusciti a rendere coerente la dottrina Buonista, ma allo stesso tempo abbiamo rimosso la ragion d'essere del suo nome; se Dio non è buono, che senso ha, chiamarsi: *Buonisti*?
+### Buonismo 2.0 <a name="buonismo"></a>
+Rimuovendo il secondo precetto, siamo riusciti a rendere coerente la dottrina Buonista, ma allo stesso tempo abbiamo rimosso la ragion d'essere del suo nome; se Dio non è buono, che senso ha, chiamarsi: *Buonisti*?
 Non è solo una questione di carta intestata: dalla presunta bontà di Dio, la dottrina buonista deriva l'obbligo per l'Uomo di essere altrettanto buono; mancando il precetto decadrebbe anche l'obbligo e si aprirebbero le porte all'anarchia.
 <br>
 Stando così le cose, abbiamo due possibili scelte: o agiamo da logici e privilegiamo la coerenza del nostro modello, anche a costo di giustificare azioni esecrabili da parte di chi non si sente più in dovere di essere buono, o agiamo da pastori e privilegiamo la sicurezza del nostro gregge, anche a costo di sentirci dire che le nostre convinzioni sono contraddittorie.
@@ -943,7 +943,7 @@ Mi sembra un motivo più che sufficiente.
 
 [^calvino]: Il Capitalismo, al contrario, gode di ottima salute perché trova un sua giustificazione spirituale nell'idea calvinista che il successo negli affari sia l'indice di un favore divino.
 
-[^arte]: I dettagli di questa affermazione potete trovarli qui: [Amore e Arte](../lib/amore-e-arte.pdf)
+[^arte]: I dettagli di questa affermazione potete trovarli qui: [Amore e Arte](http://chiplusplus.org/media/pdf/amore-e-arte.pdf)
 
 [^achievements]: Il testo si definisce: *a common standard of achievement for all peoples and all nations, to the end that every individual and every organ of society, keeping this Declaration constantly in mind, shall strive*
 
