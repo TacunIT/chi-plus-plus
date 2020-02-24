@@ -9,9 +9,9 @@ Per cambiare il Mondo non servono né canzoni, né guerre, né rivoluzioni, ma d
 Ne abbiamo bisogno noi e ne hanno bisogno anche i sistemi a cui presto dovremo affidare la nostra sicurezza: *smart-house*, *smart-car*, *robot*.
 Il problema è che *etica*, così come *amore* e *arte*, è un termine che tutti utilizzano ma che ciascuno può - legittimamente - interpretare a modo suo.
 
-Di fatto, l’etica è una disciplina filosofica, ma per estensione è anche l’oggetto di studio di quella disciplina: uno schema di valori e di regole che permettono di decidere cosa sia più o meno giusto fare. 
+Di fatto, l’etica è una disciplina filosofica, ma per estensione è anche l’oggetto di studio di quella disciplina: uno schema di valori e di regole che permettono di decidere cosa sia più o meno giusto fare.
 In altre parole, comprensibili anche agli adoratori del dio Ferragnez, l'etica è il *dress-code* delle nostre vite e come tutti i *dress-code*, **una determinata etica ha valore solo in determinate condizioni**.
-Ciò che è eticamente accettabile in alcuni casi, può non esserlo in altri. 
+Ciò che è eticamente accettabile in alcuni casi, può non esserlo in altri.
 Per esempio, uccidere un avversario perché indossa “una divisa di un altro colore” è ammissibile in guerra, ma non durante una partita di calcio.
 
 Inoltre, **i valori che costituiscono un'etica sono soggettivi**.
@@ -24,7 +24,8 @@ Similmente, la *United States Declaration of Independence* del 1776 comincia con
 
 > We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
 
-Definire un principio: *self-evident* equivale a dichiarare un dogma: una convinzione che appartiene a chi scrive, ma non si applica necessariamente a tutti gli esseri viventi. La trinità:
+Definire un principio: *self-evident* equivale a dichiarare un dogma: una convinzione che appartiene a chi scrive, ma non si applica necessariamente a tutti gli esseri viventi.<a href="#usa"><sup>1</sup></a><br />
+La trinità:
 
 > Liberté, Égalité, Fraternité
 
@@ -35,7 +36,7 @@ Definire un principio: *self-evident* equivale a dichiarare un dogma: una convin
 Nulla prova che questi valori siano reali o corretti, ci devi credere; e ci credi perché qualcosa o qualcuno ti ha convinto a farlo.
 Se consideriamo la notevole disparità di vedute e convinzioni dei Popoli della Terra e, talvolta, degli stessi individui all'interno di un Popolo, è facile capire come la frase:
 
-> AI interactions that consumers and citizens perceive as ethical build trust and satisfaction<a href="#capgemini"><sup>1</sup></a>
+> AI interactions that consumers and citizens perceive as ethical build trust and satisfaction<a href="#cap"><sup>2</sup></a>
 
 sia ambigua perché ciò che è *percepito* come “ethical” da qualcuno potrebbe non esserlo per altri.
 
@@ -125,6 +126,9 @@ Se volete sapere qualcosa di più sul *C'hi++*, vi suggerisco di leggere [**Prop
 Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di GitHub.
 
 
+<h2 class="note">Note</h2>
 
-<a id="capgemini"><sup>1</sup></a> Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
+<a id="usa"><sup>1</sup></a> Gli Stati Uniti, per esempio, hanno dovuto aspettare 188 anni, fino al Giugno del 1964, per ammettere che la segregazione razziale era in conflitto con questo principio.
+
+<a id="cap"><sup>2</sup></a> Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
 
