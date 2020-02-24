@@ -16,6 +16,11 @@
     margin: 0
 }
 
+.grayscale {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
 html {
 }
 
@@ -449,6 +454,12 @@ kbd {
  *	Tutti gli elementi della testata sono visualizzati in maniera
  *  differente per web o stampa, vedi sotto @meda print
  */
+
+SECTION.page {
+ page-break-before: always;
+ page-break-after: always;
+}
+
 SECTION.cover {
     margin:none;
     padding: 6.6% 1rem 0 ;
