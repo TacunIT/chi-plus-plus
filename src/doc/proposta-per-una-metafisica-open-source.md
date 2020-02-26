@@ -943,7 +943,7 @@ Mi sembra un motivo più che sufficiente.
 
 [^calvino]: Il Capitalismo, al contrario, gode di ottima salute perché trova un sua giustificazione spirituale nell'idea calvinista che il successo negli affari sia l'indice di un favore divino.
 
-[^arte]: I dettagli di questa affermazione potete trovarli qui: [Amore e Arte](http://chiplusplus.org/media/pdf/amore-e-arte.pdf)
+[^arte]: I dettagli di questa affermazione potete trovarli qui: [Amore e Arte](http://chiplusplus.org/assets/pdf/amore-e-arte.pdf)
 
 [^achievements]: Il testo si definisce: *a common standard of achievement for all peoples and all nations, to the end that every individual and every organ of society, keeping this Declaration constantly in mind, shall strive*
 

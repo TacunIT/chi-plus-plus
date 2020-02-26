@@ -44,7 +44,7 @@ La conseguenza di questa indeterminatezza è che, come dimostrano il primo e l'u
 
 <p><img src="./img/value-sensitive-design.png" style="width:100%;padding:1rem 0;border:solid 1px #999;"></p>
 
-Mancando un'etica *pret-a-porter*, siamo costretti a ordinarne una fatta su misura.  
+Mancando un'etica *pret-a-porter*, siamo costretti a ordinarne una fatta su misura.
 
 ## Differenti tipi di etica
 Le eiche possono essere o di natura religiosa o di natura non religiosa.
@@ -118,9 +118,9 @@ Ma, così come avvenne a Linus Torvaldsen con Linux, dopo qualche anno che lavor
 
 Preso atto della mia incapacità di produrre un documento accademico, ho redatto il Manifesto come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivo il problema che mi propongo di affrontare ed esamino le possibili soluzioni.
 Ne è derivato un testo di quaranta pagine: dettagliato, ma decisamente troppo lungo per poter fungere da manifesto del progetto.
-L'ho trasformato perciò in [un documento a sé stante](http://chiplusplus.org/media/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf) e ho cercato di condensare le principali informazioni che conteneva nel file [README](README.md) che compare all'apertura del progetto su GitHub e in questo MANIFEST.
+L'ho trasformato perciò in [un documento a sé stante](http://chiplusplus.org/assets/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf) e ho cercato di condensare le principali informazioni che conteneva nel file [README](README.md) che compare all'apertura del progetto su GitHub e in questo MANIFEST.
 
-Se volete sapere qualcosa di più sul *C'hi++*, vi suggerisco di leggere [**Proposta per una metafisica open-source**](http://chiplusplus.org/media/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf).
+Se volete sapere qualcosa di più sul *C'hi++*, vi suggerisco di leggere [**Proposta per una metafisica open-source**](http://chiplusplus.org/assets/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf).
 
 Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di GitHub.
 
