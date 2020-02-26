@@ -5,17 +5,19 @@ body { background: #ffffff; color: #000000; font-family: Simonetta, Calibri, Ari
 
 .fa { margin-left: 0.25rem; }
 
+I { color: #555; }
+
 A { color: #000; font-size: 1.2rem; }
 
-I { color: #555; }
+NAV A { font-variant-caps: petite-caps; font-size: 12pt; font-weight: bold; display: inline-block; padding: 0.5rem 1rem; }
+
+NAV A#spazionismo { display: none; }
 
 BODY.index { text-align: center; padding: 3% 0; }
 
 BODY.index HEADER H2 { font-variant-caps: petite-caps; font-size: 1.5rem; }
 
 BODY.index HEADER img.logo { width: 400px; max-width: 90%; display: inline-block; }
-
-NAV A { font-variant-caps: petite-caps; font-size: 12pt; font-weight: bold; display: inline-block; padding: 0.5rem 1rem; }
 
 DIV.testo { width: 32rem; max-width: 90%; display: inline-block; margin: auto; }
 
