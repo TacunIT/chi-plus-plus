@@ -1,3 +1,7 @@
+## 0.8.1 (February 26, 2020)
+  - Corretto file _config.yml
+  - Aggiornata struttura directory per Jekyll
+
 ## 0.8.0 (February 26, 2020)
   - Modificato testo della pagina index.html
   - Rivista la grafica della pagina index.html
