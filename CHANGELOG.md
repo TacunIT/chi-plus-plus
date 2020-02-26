@@ -1,3 +1,11 @@
+## 0.8.0 (February 26, 2020)
+  - Modificato testo della pagina index.html
+  - Rivista la grafica della pagina index.html
+  - Rivista la struttura delle directory
+  - Aggiunto psd del biglietto da visita con ideogramma e QR code
+  - Correzioni al testo di MANIFEST e Proposta
+  - Iniziato adattamento del testo del Manuale
+
 ## 0.7.7 (February 24, 2020)
   - Modifiche al testo di MANIFEST e index.html
   - Aggiunta directory per Jekyll
