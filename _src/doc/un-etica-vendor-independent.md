@@ -66,9 +66,8 @@ Perciò misi tutti i miei documenti su GitHub[^github] e cominciai a scrivere un
 Preso atto della mia incapacità di produrre un documento accademico, ho redatto il testo come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivo il problema che mi propongo di affrontare, esaminando le possibili soluzioni. Ne è derivato un documento di quarantasei pagine: dettagliato, ma decisamente troppo lungo per poter fungere da manifesto del progetto.
 L'ho trasformato perciò in un documento a sé stante e ho cercato di condensare le principali informazioni che conteneva nel file README che compare all'apertura del progetto su GitHub e nel MANIFEST, da cui è tratta buona parte di questo articolo.
 
-Se volete saperne qualcosa di più, il progetto è qui:
-
-[https://github.com/chi-plus-plus/chi-plus-plus] (https://github.com/chi-plus-plus/chi-plus-plus) 
+Se volete saperne qualcosa di più, C'hi++ è qui:
+[https://chiplusplus.org] (https://chiplusplus.org) 
 
 Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di [GitHub] (https://github.com).
 
