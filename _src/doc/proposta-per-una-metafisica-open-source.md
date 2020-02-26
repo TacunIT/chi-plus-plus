@@ -4,7 +4,7 @@
 	<h1>C'hi++</h1>
 	<h2>Proposta per una metafisica open-source</h2>
 	<h3>@version 0.8.0</h3>
-	<img style="margin-top:2rem" src="../../img/quiz.png">
+	<img style="margin-top:2rem" src="../img/quiz.png">
 </section>
 
 <section class="dedica">
@@ -883,7 +883,7 @@ D'altro canto, il Buddismo Zen utilizza un approccio simile da più di mille ann
 In questo periodo storico, non sono solo gli umani ad avere bisogno di una nuova etica.
 Qualche tempo fa, stavo cercando un saggio sul *brainjacking*[^ brainjacking] su [Springer](https://rd.springer.com) e nell'elenco degli articoli mi sono apparsi due titoli in sequenza:
 
-![](../../img/value-sensitive-design.png)
+![](../img/value-sensitive-design.png)
 
 In sostanza, è da vent'anni che si sta lavorando a del software "sensibile ai valori", ma ancora non si è riuscito a decidere *quali* debbano essere questi valori.
 Faccio un esempio per spiegare che cosa ci faccia, una macchina, con dei valori morali. Immaginate che ci sia un'automobile guidata da un sistema basato su intelligenza artificiale che sta viaggiando in completa autonomia con a bordo un facoltoso notaio.
