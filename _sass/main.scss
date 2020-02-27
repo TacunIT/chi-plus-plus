@@ -91,7 +91,7 @@ BODY.manuale.capitolo HEADER H2 {padding: 4rem 0 }
 
 BODY.manuale.copertina { padding-top: 2rem }
 BODY.manuale.dedica MAIN {margin: 6rem auto}
-BODY.manuale.dedica MAIN P { text-align: center }
+BODY.manuale.dedica MAIN P { text-align: center; max-width: 20rem; margin:auto }
 /**
  *  Stili per mobile
  */
