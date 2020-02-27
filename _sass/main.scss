@@ -65,14 +65,14 @@ NAV A#spazionismo { display: none }
 
 /**
  *
- *  Stili per il testo della pagina.
+ *  Stili per il corpo della pagina.
  *
  */
-SECTION.testo { width: 32rem; max-width: 90%; display: inline-block; margin: auto}
-SECTION.testo P { text-align: justify }
-SECTION.testo P.immagine { margin: 0.5rem auto; text-align: center }
-SECTION.testo P.immagine IMG { border: solid 1px #999;text-align: center;max-width:100%; }
-SECTION.testo BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; margin: 1em; font-style: italic }
+MAIN { width: 32rem; max-width: 90%; display: inline-block; margin: auto}
+MAIN P { text-align: justify }
+MAIN P.immagine { margin: 0.5rem auto; text-align: center }
+MAIN P.immagine IMG { border: solid 1px #999;text-align: center;max-width:100%; }
+MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; margin: 1em; font-style: italic }
 @media only screen and (max-width: 420px) {
     DIV.testo P { text-align: left }
 }
@@ -85,5 +85,6 @@ SECTION.testo BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; margi
 BODY.index HEADER H2 {font-variant-caps: petite-caps;font-size:1.5rem}
 BODY.index HEADER img.logo {width: 300px; max-width:90%; display: inline-block;}
 
+BODY.manuale HEADER { padding-bottom: 2rem }
 BODY.manuale HEADER img.logo {width: 300px; max-width:90%; display: inline-block;}
 
