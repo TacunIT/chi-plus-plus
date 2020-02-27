@@ -27,8 +27,8 @@ merita di essere salvata.
 Non è così.
 
 Credi che se gli autori della Bibbia o dei Vangeli avessero potuto per
-un prodigio pre-vedere le conseguenze ultime delle loro opere, le
-guerre, le morti, le sofferenze, li avrebbero scritti lo stesso?
+un prodigio prevedere le conseguenze ultime delle loro opere &mdash; le
+guerre, le morti, le sofferenze &mdash;, li avrebbero scritti lo stesso?
 
 I libri sacri sono sempre stati strumentalizzati dai potenti, cosa ti fa
 pensare che per il tuo non succederà lo stesso?
