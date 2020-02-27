@@ -1,3 +1,9 @@
+## 0.8.3 (February 27, 2020)
+  - Corretti path/URL delle immagini nei file
+  - Rimosso underscore da directory NON Jekyll
+  - Modificato CSS dedica
+  - Corretti path immagini in README e MANIFEST
+
 ## 0.8.2 (February 27, 2020)
   - Aggiunte i primi due capitoli del Manuale
   - Definita struttura dati pagina manuale
