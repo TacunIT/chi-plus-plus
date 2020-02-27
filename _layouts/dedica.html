@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "it-IT" }}">
 <head>
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>{{ page.h2 }} | {{ page.title }}</title>
     <meta charset="utf-8" />
     <meta name="viewport"     content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <link rel="canonical"            href="https://chiplusplus.org" />
@@ -26,8 +26,8 @@
     </main>
     <footer>
         <nav>
-            <a href="" title="Pagina precedente"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></a>
-            <a href="" title="Pagina seguente"  ><i class="fa fa-forward  fa-2x" aria-hidden="true"></i></a>
+            <a href="{{page.precedente}}" title="Pagina precedente"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></a>
+            <a href="{{page.seguente  }}" title="Pagina seguente"  ><i class="fa fa-forward  fa-2x" aria-hidden="true"></i></a>
         </nav>
     </footer>
 

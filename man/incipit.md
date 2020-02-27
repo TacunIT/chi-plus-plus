@@ -1,5 +1,11 @@
-In C pit
-========
+---
+layout: manuale
+title: C'hi++ - Il senso della Vita è il debug
+h2: In C pit
+class: capitolo
+precedente: premessa.html
+seguente: incipit.html
+---
 
 Quello che stai facendo è inutile.
 

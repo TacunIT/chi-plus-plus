@@ -26,15 +26,16 @@ HEADER { padding: 0 1rem }
 HEADER img.logo {width: 200px; max-width:90%; display: inline-block;}
 
 H1, H2, H3, H4 {
+    margin: auto;
 }
 H1 {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-I {color: #555}
-A {color: #000; font-size: 1.2rem}
-
+I   {color: #555}
+A   {color: #000; font-size: 1.2rem}
+DIV { display: inline-block; }
 /**
  *  Stili dei menu
  */
@@ -80,7 +81,22 @@ BODY.index HEADER img.logo {width: 300px; max-width:90%; display: inline-block;}
 /**
  *  Stili per il manuale
  */
-BODY.manuale HEADER { padding-bottom: 2rem }
+BODY.manuale { padding-top: 1rem }
+BODY.manuale HEADER {  }
 BODY.manuale HEADER img.logo {width: 300px; max-width:90%; display: inline-block;}
+BODY.manuale.capitolo HEADER H1 {display: none  }
+BODY.manuale.capitolo HEADER H2 {padding: 4rem 0 }
 
-BODY.manuale.dedica MAIN {margin: 5% auto}
+BODY.manuale.copertina { padding-top: 2rem }
+BODY.manuale.dedica MAIN {margin: 6rem auto}
+BODY.manuale.dedica MAIN P { text-align: center }
+/**
+ *  Stili per mobile
+ */
+@media only screen and (max-width: 799px) {
+}
+
+@media only screen and (max-width: 420px) {
+    DIV.testo P { text-align: left }
+}
+
