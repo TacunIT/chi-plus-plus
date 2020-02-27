@@ -61,7 +61,7 @@ BODY.manuale.copertina { padding-top: 2rem; }
 
 BODY.manuale.dedica MAIN { margin: 6rem auto; }
 
-BODY.manuale.dedica MAIN P { text-align: center; }
+BODY.manuale.dedica MAIN P { text-align: center; max-width: 20rem; margin: auto; }
 
 /** Stili per mobile */
 @media only screen and (max-width: 420px) { DIV.testo P { text-align: left; } }
