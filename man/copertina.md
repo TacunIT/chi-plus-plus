@@ -1,6 +1,6 @@
 ---
 title: C'hi++ - Il senso della Vita è il debug
-layout: manuale
+layout: cover
 class: cover
 ---
 
