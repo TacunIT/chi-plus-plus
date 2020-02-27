@@ -1,3 +1,12 @@
+## 0.8.2 (February 27, 2020)
+  - Aggiunte i primi due capitoli del Manuale
+  - Definita struttura dati pagina manuale
+  - Corretta struttura directory
+  - Modificato stile menu index
+  - Spostata directory img dentro _src
+  - Aggiunti underscore a directory di servizio
+  - Aggiunta favicon a sito www
+
 ## 0.8.1 (February 26, 2020)
   - Corretto file _config.yml
   - Aggiornata struttura directory per Jekyll
