@@ -42,7 +42,7 @@ sia ambigua perché ciò che è *percepito* come “ethical” da qualcuno potre
 
 La conseguenza di questa indeterminatezza è che, come dimostrano il primo e l'ultimo articolo di [Springer](https://rd.springer.com) nell'immagine qui sotto , da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancora non si è riuscito a decidere **quali** debbano essere questi valori.
 
-<p><img src="./_src/img/value-sensitive-design.png" style="width:100%;padding:1rem 0;border:solid 1px #999;"></p>
+<p><img src="./assets/img/value-sensitive-design.png" style="width:100%;padding:1rem 0;border:solid 1px #999;"></p>
 
 Mancando un'etica *pret-a-porter*, siamo costretti a ordinarne una fatta su misura.
 
@@ -101,14 +101,14 @@ In sostanza, **abbiamo bisogno di icone**.
 
 Il sostantivo inglese *file* può tradursi con: documento, ملف (Arabo), 文件 (Cinese), файл (Russo), ファイル (Giapponese), 파일 (Coreano) oppure, più semplicemente, può essere rappresentato con il simbolo:
 
-<p align=center><img src="./_src/img/file.jpg"></p>
+<p align=center><img src="./assets/img/file.jpg"></p>
 
 Così come la pipa di Magritte, il documento del simbolo **non è un documento**, ma questo non ha importanza perché ciò che conta, qui, è il significato, non il significante.
 Quando l'utente di un sistema di scrittura vede il simbolo *File*, non pensa né che quel documento **sia** quello che vuole scrivere lui né che **non sia** il documento che vuole scrivere lui.
 È questo l'atteggiamento che dobbiamo stimolare nei fruitori della nostra etica.
 Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, eliminando dai nostri simboli tutto ciò che è superfluo e lasciando solo ciò che serve a denotare l'oggetto a cui si riferiscono.
 
-<p align=center><img src="./_src/img/icone.png" ></p>
+<p align=center><img src="./assets/img/icone.png" ></p>
 
 Pur se complesso, tutto questo è possibile. Spogliate degli orpelli e ricondotte alle loro caratteristiche essenziali, le diverse ipotesi metafisiche hanno molti punti in comune perché sono tutte, in una maniera o nell'altra, la risposta a uno stesso bisogno: la ricerca di una giustificazione alla nostra esistenza.
 
