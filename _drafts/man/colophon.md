@@ -1,3 +1,3 @@
 <section class="page colophon">
-    <img src="../img/chi-plus-plus.png">
+    <img src="../assets/img/chi-plus-plus.png">
 </section>
