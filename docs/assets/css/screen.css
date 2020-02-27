@@ -1,34 +1,49 @@
-body { background: #ffffff; color: #000000; font-family: Simonetta, Calibri, Arial, sans-serif; font-size: 15pt; }
+/** Stili comuni. */
+* { margin: 0; padding: 0; }
 
-/** Stili per la pagina index */
-.fa-file-pdf-o { color: #900; }
+BODY { background: #ffffff; color: #000000; font-family: Simonetta, Calibri, Arial, sans-serif; font-size: 15pt; text-align: center; padding: 2rem 0; }
 
-.fa { margin-left: 0.25rem; }
+HEADER { padding: 0 1rem; }
+
+HEADER img.logo { width: 200px; max-width: 90%; display: inline-block; }
+
+H1 { padding-top: 1rem; padding-bottom: 1rem; }
 
 I { color: #555; }
 
 A { color: #000; font-size: 1.2rem; }
 
+/** Stili dei menu */
+NAV { border-top: solid 1px; display: inline-block; border-bottom: solid 1px; margin: 2rem auto; border-color: #990; }
+
 NAV A { font-variant-caps: petite-caps; font-size: 12pt; font-weight: bold; display: inline-block; padding: 0.5rem 1rem; }
 
 NAV A#spazionismo { display: none; }
 
-BODY.index { text-align: center; padding: 3% 0; }
+.fa-file-pdf-o { color: #900; }
 
-BODY.index HEADER H2 { font-variant-caps: petite-caps; font-size: 1.5rem; }
+.fa { margin-left: 0.25rem; }
 
-BODY.index HEADER img.logo { width: 400px; max-width: 90%; display: inline-block; }
+/** Stili per il corpo della pagina. */
+MAIN { width: 32rem; max-width: 90%; display: inline-block; margin: auto; }
 
-SECTION.testo { width: 32rem; max-width: 90%; display: inline-block; margin: auto; }
+MAIN P { text-align: justify; }
 
-SECTION.testo P { text-align: justify; }
+MAIN P.immagine { margin: 0.5rem auto; text-align: center; }
 
-SECTION.testo P.immagine { margin: 0.5rem auto; text-align: center; }
+MAIN P.immagine IMG { border: solid 1px #999; text-align: center; max-width: 100%; }
 
-SECTION.testo P.immagine IMG { border: solid 1px #999; text-align: center; max-width: 100%; }
-
-SECTION.testo BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; margin: 1em; font-style: italic; }
+MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; margin: 1em; font-style: italic; }
 
 @media only screen and (max-width: 420px) { DIV.testo P { text-align: left; } }
+
+/** Stili per la pagina index */
+BODY.index HEADER H2 { font-variant-caps: petite-caps; font-size: 1.5rem; }
+
+BODY.index HEADER img.logo { width: 300px; max-width: 90%; display: inline-block; }
+
+BODY.manuale HEADER { padding-bottom: 2rem; }
+
+BODY.manuale HEADER img.logo { width: 300px; max-width: 90%; display: inline-block; }
 
 /*# sourceMappingURL=screen.css.map */

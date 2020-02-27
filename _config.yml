@@ -2,3 +2,4 @@ url: "https://chiplusplus.org"
 baseurl: "" 
 title: "C'hi++ - Proposta per una metafisica open-source" 
 exclude: [CHANGELOG, CONTRIBUTING.md, MANIFEST.md, README.md, TODO, VERSION]
+destination: docs/
