@@ -1,0 +1,69 @@
+/** Stili comuni. */
+* { margin: 0; padding: 0; }
+
+BODY { background: #ffffff; color: #000000; font-family: Simonetta, Calibri, Arial, sans-serif; font-size: 15pt; text-align: center; padding: 2rem 0; }
+
+HEADER { padding: 0 1rem; }
+
+HEADER img.logo { width: 200px; max-width: 90%; display: inline-block; }
+
+FOOTER { padding-top: 2rem; }
+
+H1, H2, H3, H4 { margin: auto; }
+
+H1 { padding-top: 1rem; padding-bottom: 1rem; }
+
+I { color: #555; }
+
+A { color: #000; font-size: 1.2rem; }
+
+DIV { display: inline-block; }
+
+/** Stili dei menu */
+NAV { border-top: solid 1px; display: inline-block; border-bottom: solid 1px; margin: 2rem auto; border-color: #990; }
+
+NAV A { font-variant-caps: petite-caps; font-size: 12pt; font-weight: bold; display: inline-block; padding: 0.5rem 1rem; }
+
+NAV A#spazionismo { display: none; }
+
+.fa-file-pdf-o { color: #900; }
+
+.fa { margin-left: 0.25rem; }
+
+/** Stili per il corpo della pagina. */
+MAIN { width: 32rem; max-width: 90%; display: inline-block; margin: auto; }
+
+MAIN P { text-align: justify; }
+
+MAIN P.immagine { margin: 0.5rem auto; text-align: center; }
+
+MAIN P.immagine IMG { border: solid 1px #999; text-align: center; max-width: 100%; }
+
+MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; margin: 1em; font-style: italic; }
+
+@media only screen and (max-width: 420px) { DIV.testo P { text-align: left; } }
+
+/** Stili per la pagina index */
+BODY.index HEADER H2 { font-variant-caps: petite-caps; font-size: 1.5rem; }
+
+BODY.index HEADER img.logo { width: 300px; max-width: 90%; display: inline-block; }
+
+/** Stili per il manuale */
+BODY.manuale { padding-top: 1rem; }
+
+BODY.manuale HEADER img.logo { width: 300px; max-width: 90%; display: inline-block; }
+
+BODY.manuale.capitolo HEADER H1 { display: none; }
+
+BODY.manuale.capitolo HEADER H2 { padding: 4rem 0; }
+
+BODY.manuale.copertina { padding-top: 2rem; }
+
+BODY.manuale.dedica MAIN { margin: 6rem auto; }
+
+BODY.manuale.dedica MAIN P { text-align: center; }
+
+/** Stili per mobile */
+@media only screen and (max-width: 420px) { DIV.testo P { text-align: left; } }
+
+/*# sourceMappingURL=styles.css.map */

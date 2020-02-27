@@ -4,7 +4,7 @@
 
 
 <p align=center>
-<img src="./img/chi-plus-plus.png" width="300px">
+<img src="./_src/img/chi-plus-plus.png" width="300px">
 </p>
 
 Il nome *C'hi++* è un gioco di parole fra il termine giapponese *C'hi* (氣, ovvero: soffio vitale)
@@ -14,7 +14,7 @@ e il linguaggio di programmazione chiamato: *C++*. Non è un accostamento casual
 Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e principii etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come questo:
 
 <p align=center>
-<img src="./img/quiz.png">
+<img src="./_src/img/quiz.png">
 </p>
 
 ## Caratteristiche
