@@ -40,7 +40,7 @@ Calvino sostiene che il successo negli affari è una prova del favore divino, Sa
 
 La conseguenza di questa indeterminatezza è che, come dimostrano questi due articoli su [Springer](https://rd.springer.com), da vent'anni si sta lavorando a del software “sensibile ai valori”, ma ancora non si è riuscito a decidere *quali* debbano essere questi valori.
 
-<img src="../img/value-sensitive-design.png" style="width:100%;padding:1rem 0;border:solid 1px #999">
+<img src="../../assets/img/value-sensitive-design.png" style="width:100%;padding:1rem 0;border:solid 1px #999">
 
 Stando così le cose, abbiamo solo due possibilità: o scriviamo del codice specializzato per ciascun tipo di etica o **definiamo un'etica che sia condivisibile dalla maggior parte degli utenti**; una sorta di *dress-code* che sia valido sia a una cena di gala che a un toga party.
 Dato poi che è sbagliato ricercare le motivazioni della propria etica all'interno dello schema stesso, negando ogni forma di trascendenza, definiremo una metafisica cui fare riferimento, sfruttando le idee che nacquero e si svilupparono nella culla della Civiltà, ovvero gli anni '80.
@@ -49,14 +49,14 @@ Per definire un'etica che sia acccettabile dal maggior numero di persone possibi
 In sostanza, **abbiamo bisogno di icone**.
 Il sostantivo inglese *file* può tradursi con: documento, ملف (Arabo), 文件 (Cinese), файл (Russo), ファイル (Giapponese), 파일 (Coreano) oppure, più semplicemente, può essere rappresentato con il simbolo:
 
-<p align=center><img src="../img/file.jpg"></div></p>
+<p align=center><img src="../../assets/img/file.jpg"></div></p>
 
 Così come la pipa di Magritte, il documento del simbolo non è un documento, ma questo non ha importanza perché ciò che conta, qui, è il significato, non il significante.
 Quando l'utente di un sistema di scrittura vede il simbolo *File*, non pensa né che quel documento *sia* quello che vuole scrivere lui né che *non sia* il documento che vuole scrivere lui.
 È questo l'atteggiamento che dobbiamo stimolare nei fruitori della nostra etica.
 Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, eliminando dai nostri simboli tutto ciò che è superfluo e lasciando solo ciò che serve a denotare l'oggetto a cui si riferiscono.
 
-<p align=center><img style="margin:auto;display:block" src="../img/icone.png" ></p>
+<p align=center><img style="margin:auto;display:block" src="../../assets/img/icone.png" ></p>
 
 Pur se complesso, tutto questo è possibile. Spogliate degli orpelli voluti dal Clero e ricondotte alle loro caratteristiche essenziali, le diverse ipotesi metafisiche hanno molti punti in comune perché sono tutte, in una maniera o nell'altra, la risposta a uno stesso bisogno: la ricerca di una giustificazione alla nostra esistenza.
 Posso dirlo con buona certezza, perché da più di dieci anni sto lavorando a un libro dal titolo: **C'hi++ - Il senso della vita è il debug**, nel quale intendo definire i principî della mia etica *vendor-independent*, corredandola di una metafisica del tutto indipendente dall’esistenza di una o più Divinità.
