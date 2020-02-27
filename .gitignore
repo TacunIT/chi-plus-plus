@@ -1,4 +1,5 @@
 .DS_Store
 .~lock*
 .~*
+_site/
 .jekyll-cache/

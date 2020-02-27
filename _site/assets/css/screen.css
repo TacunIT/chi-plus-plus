@@ -14,7 +14,7 @@ I { color: #555; }
 A { color: #000; font-size: 1.2rem; }
 
 /** Stili dei menu */
-NAV.menu { border-top: solid 1px; display: inline-block; border-bottom: solid 1px; margin: 2rem auto; }
+NAV { border-top: solid 1px; display: inline-block; border-bottom: solid 1px; margin: 2rem auto; border-color: #990; }
 
 NAV A { font-variant-caps: petite-caps; font-size: 12pt; font-weight: bold; display: inline-block; padding: 0.5rem 1rem; }
 
@@ -40,6 +40,8 @@ SECTION.testo BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; margi
 /** Stili per la pagina index */
 BODY.index HEADER H2 { font-variant-caps: petite-caps; font-size: 1.5rem; }
 
-BODY.index HEADER img.logo { width: 400px; max-width: 90%; display: inline-block; }
+BODY.index HEADER img.logo { width: 300px; max-width: 90%; display: inline-block; }
+
+BODY.manuale HEADER img.logo { width: 300px; max-width: 90%; display: inline-block; }
 
 /*# sourceMappingURL=screen.css.map */
