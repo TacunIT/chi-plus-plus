@@ -5,9 +5,7 @@ $bodyFontSize: 15pt;
 
 
 /**
- *
  * Stili comuni.
- *
  */
 
 * {
@@ -38,9 +36,7 @@ I {color: #555}
 A {color: #000; font-size: 1.2rem}
 
 /**
- *
  *  Stili dei menu
- *
  */
 NAV {
     border-top: solid 1px;
@@ -64,9 +60,7 @@ NAV A#spazionismo { display: none }
 .fa {margin-left: 0.25rem}
 
 /**
- *
  *  Stili per il corpo della pagina.
- *
  */
 MAIN { width: 32rem; max-width: 90%; display: inline-block; margin: auto}
 MAIN P { text-align: justify }
@@ -78,13 +72,15 @@ MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; margin: 1em; f
 }
 
 /**
- *
  *  Stili per la pagina index
- *
  */
 BODY.index HEADER H2 {font-variant-caps: petite-caps;font-size:1.5rem}
 BODY.index HEADER img.logo {width: 300px; max-width:90%; display: inline-block;}
 
+/**
+ *  Stili per il manuale
+ */
 BODY.manuale HEADER { padding-bottom: 2rem }
 BODY.manuale HEADER img.logo {width: 300px; max-width:90%; display: inline-block;}
 
+BODY.manuale.dedica MAIN {margin: 5% auto}
