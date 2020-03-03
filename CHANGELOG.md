@@ -1,3 +1,8 @@
+## 0.8.4 (March 03, 2020)
+  - Ricreate le pagine statiche
+  - Aggiunto tag Google Analytics
+  - Modificato testo dell'index
+
 ## 0.8.3 (February 27, 2020)
   - Corretti path/URL delle immagini nei file
   - Rimosso underscore da directory NON Jekyll
