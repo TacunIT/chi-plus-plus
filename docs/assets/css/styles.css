@@ -63,9 +63,9 @@ BODY.manuale FOOTER { position: relative; display: block; text-align: center; wi
 
 BODY.manuale IMG.logo { width: 300px; max-width: 90%; display: inline-block; }
 
-BODY.manuale.capitolo HEADER H1 { display: none; }
+BODY.manuale.indice HEADER H1, BODY.manuale.capitolo HEADER H1 { display: none; }
 
-BODY.manuale.capitolo HEADER H2 { padding: 4rem 0; }
+BODY.manuale.indice HEADER H2, BODY.manuale.capitolo HEADER H2 { padding: 4rem 0; }
 
 BODY.manuale.copertina { padding-top: 2rem; }
 

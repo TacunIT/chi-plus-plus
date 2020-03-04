@@ -11,7 +11,9 @@
     {{ content}}
     </main>
 
+    {% if page.class == "capitolo" %}
     {%- include man-footer.html -%}
+    {% endif %}
 
   </body>
 </html>

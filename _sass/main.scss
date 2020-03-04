@@ -93,7 +93,9 @@ BODY.manuale BLOCKQUOTE H3 { font-size: 1.2rem; margin-top: 1rem;}
 BODY.manuale BLOCKQUOTE.motto { text-align: right; padding-bottom: 3rem; padding-left: 30%; }
 BODY.manuale FOOTER { position: relative;  display: block; text-align: center; width: 100% }
 BODY.manuale IMG.logo {width: 300px; max-width:90%; display: inline-block;}
+BODY.manuale.indice HEADER H1,
 BODY.manuale.capitolo HEADER H1 {display: none  }
+BODY.manuale.indice HEADER H2,
 BODY.manuale.capitolo HEADER H2 {padding: 4rem 0 }
 
 BODY.manuale.copertina { padding-top: 2rem }

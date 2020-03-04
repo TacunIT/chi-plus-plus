@@ -3,3 +3,13 @@ url: "https://chiplusplus.org"
 title: "C'hi++ - Proposta per una metafisica open-source" 
 exclude: [bin, src, CHANGELOG, CONTRIBUTING.md, MANIFEST.md, README.md, TODO, VERSION]
 destination: docs/
+collections:
+   manuale:
+      output: true
+      order:
+         - copertina.md
+         - dedica.md
+         - indice.md
+         - premessa.md
+         - incipit.md
+         - mitopoietica.md
