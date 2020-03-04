@@ -5,6 +5,7 @@ h2: Copertina
 class: copertina
 precedente: /index.html
 seguente: dedica.html
+permalink: /manuale/
 ---
 
 
