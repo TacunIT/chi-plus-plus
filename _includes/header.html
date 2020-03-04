@@ -1,7 +1,9 @@
 <header>
     <a id="top"></a>
-    <img class="logo" alt="C'hi++" title="C'hi plus plus"
-        src="assets/img/chi-plus-plus.png">
+    {% if page.class == 'index' %}
+    <img class="logo" alt="C'hi++" title="C'hi plus plus" src="assets/img/chi-plus-plus.png">
+    <h1>C'hi++</h1>
+    {% endif %}
     <h2>Proposta per una metafisica open-source</h2>
     {%- include menu.html -%}
 </header>
