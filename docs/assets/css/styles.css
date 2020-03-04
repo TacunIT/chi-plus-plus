@@ -15,7 +15,7 @@ H1 { padding-top: 1rem; padding-bottom: 1rem; }
 
 I { color: #555; }
 
-A { color: #000; font-size: 1.2rem; }
+A { color: #000; }
 
 DIV { display: inline-block; }
 
@@ -26,16 +26,14 @@ NAV A { font-variant-caps: petite-caps; font-size: 12pt; font-weight: bold; disp
 
 NAV A#spazionismo { display: none; }
 
-.fa-file-pdf-o { color: #900; }
-
-.fa { margin-left: 0.25rem; }
+.fa { margin-left: 0.25rem; color: #888; }
 
 /** Stili per il corpo della pagina. */
-MAIN { width: 32rem; max-width: 90%; display: inline-block; margin: auto; }
+MAIN { width: 32rem; max-width: 90%; display: inline-block; margin: auto; text-align: justify; }
 
-MAIN P { text-align: justify; }
+MAIN P.immagine { margin: 1rem auto; text-align: center; }
 
-MAIN P.immagine { margin: 0.5rem auto; text-align: center; }
+MAIN P.immagine.chi { margin: 0.5rem auto; }
 
 MAIN P.immagine IMG { border: solid 1px #999; text-align: center; max-width: 100%; }
 
