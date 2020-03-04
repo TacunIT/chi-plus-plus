@@ -19,7 +19,7 @@ BODY {
   font-family: $bodyFont;
   font-size: $bodyFontSize;
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0 2rem 0;
   position: relative;
   display: block;
 }
@@ -35,10 +35,15 @@ H1, H2, H3, H4 {
 H1 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    font-size: 2.5rem;
+}
+H2 {
+    font-variant-caps: petite-caps;
+    font-size:1.5rem
 }
 
 I   {color: #555}
-A   {color: #000; }
+A   {color: #333; }
 DIV { display: inline-block; }
 
 /**
@@ -48,7 +53,7 @@ NAV {
     border-top: solid 1px;
     display: inline-block;
     border-bottom: solid 1px;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     border-color: #990;
 }
 
@@ -79,15 +84,27 @@ MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; margin: 1em; f
 /**
  *  Stili per la pagina index
  */
-BODY.index HEADER H2 {font-variant-caps: petite-caps;font-size:1.5rem}
+HEADER DIV#top {
+    width: 100%;
+    max-width: 610px;
+    font-size: 0;
+    position: relative;
+}
+BODY.index HEADER H2 {margin-bottom: 0.5rem}
 BODY.index HEADER img.logo {width: 300px; max-width:90%; display: inline-block;}
+/**
+ *  Stili per la pagina FAQ
+ */
+BODY.faq HEADER H1 {display:none}
+BODY.faq HEADER H2 {display: inline-block;float:right;line-height:80px;padding:0 1rem;}
+BODY.faq HEADER img.logo {height: 80px; width: auto; display: inline-block;}
 
 /**
  *  Stili per il manuale
  */
 BODY.manuale { padding-top: 1rem; height: 90vh; }
 BODY.manuale HEADER {  }
-BODY.manuale MAIN { min-height: 40vh;}
+BODY.manuale MAIN { min-height: 40vh; text-align: center}
 BODY.manuale BLOCKQUOTE { color: #543; text-align: justify; margin: 1.5rem 0; font-size: 1em;}
 BODY.manuale BLOCKQUOTE H3 { font-size: 1.2rem; margin-top: 1rem;}
 BODY.manuale BLOCKQUOTE.motto { text-align: right; padding-bottom: 3rem; padding-left: 30%; }
@@ -97,6 +114,13 @@ BODY.manuale.indice HEADER H1,
 BODY.manuale.capitolo HEADER H1 {display: none  }
 BODY.manuale.indice HEADER H2,
 BODY.manuale.capitolo HEADER H2 {padding: 4rem 0 }
+
+BODY.manuale.indice H3 {
+    margin: 1rem 0;
+}
+BODY.manuale.indice H3.home {
+    margin-top: 3rem;
+}
 
 BODY.manuale.copertina { padding-top: 2rem }
 BODY.manuale.dedica MAIN {margin: 6rem auto; }
