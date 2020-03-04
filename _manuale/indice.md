@@ -8,9 +8,6 @@ seguente: premessa.html
 ---
 
 <section class="indice">
-    <h3>
-        <a href="/" title="Torna alla home-page"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
-    </h3>
     {% for pagina in site.manuale %}
       <h3>
         <a href="{{ pagina.url }}">
@@ -18,4 +15,7 @@ seguente: premessa.html
         </a>
       </h3>
     {% endfor %}
+    <h3 class="home">
+        <a href="/" title="Torna alla home-page"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+    </h3>
 </section>
