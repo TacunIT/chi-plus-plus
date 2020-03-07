@@ -4,9 +4,11 @@ title: C'hi++ - Il senso della Vita è il debug
 h2: Premessa
 class: capitolo
 capitolo: 1
-precedente: dedica.html
-seguente: incipit.html
+permalink: /manuale/premessa
+precedente: indice
+seguente: incipit
 ---
+
 Nacqui da famiglia ricca, ma troppo tardi.
 
 Secondogenito, vidi la florida impresa paterna andare in dote  &mdash; per diritto di nascita, ma anche per naturale inclinazione &mdash; ai miei monozigotici fratelli maggiori e, com'è consuetudine per i figli cadetti, fui avviato alla vita monastica.

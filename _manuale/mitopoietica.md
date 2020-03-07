@@ -3,8 +3,9 @@ layout: manuale
 title: C'hi++ - Il senso della Vita è il debug
 h2: Mitopoietica del C'hi++
 class: capitolo
-precedente: incipit.html
-seguente: il-programmatore.html
+permalink:  /manuale/mitopoietica
+precedente: incipit
+seguente:   il-programmatore
 ---
 
 <blockquote class="motto">

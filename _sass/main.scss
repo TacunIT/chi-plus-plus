@@ -77,7 +77,7 @@ NAV A#spazionismo { display: none }
 /**
  *  Stili per il corpo della pagina.
  */
-MAIN { width: 32rem; max-width: 90%; display: inline-block; margin: auto; text-align: justify}
+MAIN { width: 32rem; max-width: 90%; display: inline-block; margin: auto; text-align: justify }
 MAIN P.immagine { margin: 1rem auto; text-align: center }
 MAIN P.immagine.chi { margin: 0.5rem auto; }
 MAIN P.immagine IMG { border: solid 1px #999;text-align: center;max-width:100%; }
@@ -114,7 +114,7 @@ BODY.faq SECTION {
  */
 BODY.manuale { padding-top: 1rem; height: 90vh; }
 BODY.manuale HEADER {  }
-BODY.manuale MAIN { min-height: 40vh; text-align: center}
+BODY.manuale MAIN { min-height: 20vh; text-align: justify}
 BODY.manuale BLOCKQUOTE { color: #543; text-align: justify; margin: 1.5rem 0; font-size: 1em;}
 BODY.manuale BLOCKQUOTE H3 { }
 BODY.manuale BLOCKQUOTE.motto { text-align: right; padding-bottom: 3rem; padding-left: 30%; }
@@ -128,8 +128,9 @@ BODY.manuale.copertina { padding-top: 2rem }
 BODY.manuale.dedica MAIN {margin: 6rem auto; }
 BODY.manuale.dedica MAIN P { text-align: center; max-width: 20rem; margin:auto }
 BODY.manuale.indice H3 { margin: 1rem 0 }
-BODY.manuale.indice H3.home { margin-top: 3rem; }
+BODY.manuale.indice H3.home { margin-top: 4rem; }
 
+BODY.manuale.indice SECTION.indice { text-align: center;}
 
 /**
  *  Stili per mobile
