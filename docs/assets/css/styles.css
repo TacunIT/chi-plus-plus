@@ -11,9 +11,11 @@ FOOTER { padding-top: 3rem; }
 
 H1, H2, H3, H4 { margin: auto; }
 
-H1 { padding-top: 1rem; padding-bottom: 1rem; font-size: 2.5rem; }
+H1 { padding-top: 1rem; padding-bottom: 1rem; font-size: 2.5rem; text-align: center; }
 
 H2 { font-variant-caps: petite-caps; font-size: 1.5rem; }
+
+H3 { font-size: 1.25rem; margin-top: 1rem; }
 
 I { color: #555; }
 
@@ -22,7 +24,7 @@ A { color: #333; }
 DIV { display: inline-block; }
 
 /** Stili dei menu */
-NAV { border-top: solid 1px; display: inline-block; border-bottom: solid 1px; margin: 1.5rem auto; border-color: #990; }
+NAV { border-top: solid 1px; display: inline-block; border-bottom: solid 1px; margin: 1.5rem auto 1rem auto; border-color: #990; }
 
 NAV A { font-variant-caps: petite-caps; font-size: 12pt; font-weight: bold; display: inline-block; padding: 0.5rem 1rem; }
 
@@ -57,14 +59,14 @@ BODY.faq HEADER H2 { display: inline-block; float: right; line-height: 80px; pad
 
 BODY.faq HEADER img.logo { height: 80px; width: auto; display: inline-block; }
 
+BODY.faq SECTION { padding: 1rem; }
+
 /** Stili per il manuale */
 BODY.manuale { padding-top: 1rem; height: 90vh; }
 
 BODY.manuale MAIN { min-height: 40vh; text-align: center; }
 
 BODY.manuale BLOCKQUOTE { color: #543; text-align: justify; margin: 1.5rem 0; font-size: 1em; }
-
-BODY.manuale BLOCKQUOTE H3 { font-size: 1.2rem; margin-top: 1rem; }
 
 BODY.manuale BLOCKQUOTE.motto { text-align: right; padding-bottom: 3rem; padding-left: 30%; }
 
@@ -76,15 +78,15 @@ BODY.manuale.indice HEADER H1, BODY.manuale.capitolo HEADER H1 { display: none; 
 
 BODY.manuale.indice HEADER H2, BODY.manuale.capitolo HEADER H2 { padding: 4rem 0; }
 
-BODY.manuale.indice H3 { margin: 1rem 0; }
-
-BODY.manuale.indice H3.home { margin-top: 3rem; }
-
 BODY.manuale.copertina { padding-top: 2rem; }
 
 BODY.manuale.dedica MAIN { margin: 6rem auto; }
 
 BODY.manuale.dedica MAIN P { text-align: center; max-width: 20rem; margin: auto; }
+
+BODY.manuale.indice H3 { margin: 1rem 0; }
+
+BODY.manuale.indice H3.home { margin-top: 3rem; }
 
 /** Stili per mobile */
 @media only screen and (max-width: 420px) { DIV.testo P { text-align: left; } }
