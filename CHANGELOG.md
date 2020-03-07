@@ -1,3 +1,9 @@
+## 0.8.7 (March 07, 2020)
+  - Corretta navigazione pagine Manuale
+  - Aggiunte bozze dei capitoli da scrivere
+  - Aggiunto logo a indice manuale
+  - Coretto ordine voci indice
+
 ## 0.8.6 (March 07, 2020)
   - Corretta navigazione manuale. Aggunto Epilogo.
   - Corretto errore CSS in head
