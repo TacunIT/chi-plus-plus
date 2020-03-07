@@ -6,6 +6,6 @@ h2:         I tipi di dato
 permalink:  /manuale/tipi-di-dato
 precedente: commenti
 seguente:   espressioni-e-operatori
+bozza:      true
 ---
 
-[@todo]

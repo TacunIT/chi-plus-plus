@@ -6,6 +6,5 @@ class:      capitolo
 permalink:  /manuale/polimorfismo
 precedente: espressioni-e-operatori
 seguente:   ereditarieta
+bozza:      true
 ---
-
-[@todo]

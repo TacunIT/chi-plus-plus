@@ -5,7 +5,7 @@ h2:         Il buon programmatore
 class:      capitolo
 permalink:  /manuale/il-programmatore
 precedente: mitopoietica
-seguente:   sistemi-di-numerazione.md
+seguente:   sistemi-di-numerazione
+bozza:      true
 ---
 
-[@todo]

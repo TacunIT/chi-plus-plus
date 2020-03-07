@@ -6,6 +6,6 @@ h2:         Le classi
 permalink:  /manuale/classi
 precedente: espressioni-e-operatori
 seguente:   polimorfismo
+bozza:      true
 ---
 
-[@todo]

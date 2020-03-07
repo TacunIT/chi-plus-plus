@@ -6,6 +6,6 @@ h2:         Il C'hi++
 permalink:  /manuale/chi-plus-plus
 precedente: ereditarieta
 seguente:   spazionismo
+bozza:      true
 ---
 
-[@todo]

@@ -6,9 +6,8 @@ class:      capitolo
 permalink:  /manuale/spazionismo
 precedente: chi-plus-plus
 seguente:   ikebarba
+bozza:      true
 ---
-
-[@todo]
 
 Da dove questa creazione sia sorta,
 se lui l’ha fondata oppure no:
