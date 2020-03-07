@@ -4,7 +4,7 @@ title: C'hi++ - Il senso della Vita è il debug
 h2: Epilogo
 class: capitolo
 permalink:  /manuale/epilogo
-precedente:
+precedente: il-programmatore
 seguente:
 ---
 
