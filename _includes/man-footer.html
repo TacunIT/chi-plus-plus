@@ -1,0 +1,13 @@
+<footer>
+    <nav>
+        {% if page.class == 'copertina' %}
+        <a href="{{page.precedente}}" title="Torna alla home-page"><i class="fa fa-home fa-2x"    aria-hidden="true"></i></a>
+        <a href="{{page.seguente  }}" title="Pagina seguente"  ><i class="fa fa-forward  fa-2x" aria-hidden="true"></i></a>
+        {% else %}
+        <a href="copertina.html" title="Va' all'inizio del manuale"><i class="fa fa-fast-backward fa-2x" aria-hidden="true"></i></a>
+        <a href="{{page.precedente}}" title="Pagina precedente"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></a>
+        <a href="{{page.seguente  }}" title="Pagina seguente"  ><i class="fa fa-forward  fa-2x" aria-hidden="true"></i></a>
+        <a href=""                    title="Va' alla fine del manuale"  ><i class="fa fa-fast-forward  fa-2x" aria-hidden="true"></i></a>
+        {% endif %}
+    </nav>
+</footer>

@@ -1,3 +1,19 @@
+## 0.8.5 (March 07, 2020)
+  - Modifiche al testo delle FAQ
+  - Aggiunti permalink a pagine principali.
+  - Modificata grafica HEADER
+  - Semplificato il contenuto di index.html
+  - Aggiornato layout dell'index
+  - Aggiunto capitolo Mitopoiesi
+  - Aggiornato menu navigazione manuale
+  - Separate componenti del manuale in file di include
+  - Separate componenti della pagina in file di include
+
+## 0.8.4 (March 03, 2020)
+  - Ricreate le pagine statiche
+  - Aggiunto tag Google Analytics
+  - Modificato testo dell'index
+
 ## 0.8.3 (February 27, 2020)
   - Corretti path/URL delle immagini nei file
   - Rimosso underscore da directory NON Jekyll

@@ -1,38 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "it-IT" }}">
-<head>
-    <title>{{ page.h2 }} | {{ page.title }}</title>
-    <meta charset="utf-8" />
-    <meta name="viewport"     content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <link rel="canonical"            href="https://chiplusplus.org" />
-    <meta     name="thumbnail"       content="" />
-    <meta     name="keyword"         content="" />
-    <meta     name="description"     content="" />
-    <meta property="og:description"  content="" />
-    <meta property="og:title"        content="" />
-    <meta property="og:type"         content="website" />
-    <meta property="og:image"        content="" />
-    <meta property="og:image:height" content="" />
-    <link rel=icon href=/assets/img/favicon.ico type=image/x-icon>
-    <script src="https://use.fontawesome.com/b4b35c88c8.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Simonetta:400,400i,900,900i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
+
+{%- include head.html -%}
+
 <body class="manuale {{ page.class }}">
-    <header>
-        <h1>{{page.title}}</h1>
-        <h2>{{page.h2}}</h2>
-    </header>
+
+    {%- include man-header.html -%}
+
     <main>
     {{ content}}
     </main>
-    <footer>
-        <nav>
-            <a href="copertina.html" title="Va' all'inizio del manuale"><i class="fa fa-fast-backward fa-2x" aria-hidden="true"></i></a>
-            <a href="{{page.precedente}}" title="Pagina precedente"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></a>
-            <a href="{{page.seguente  }}" title="Pagina seguente"  ><i class="fa fa-forward  fa-2x" aria-hidden="true"></i></a>
-            <a href=""                    title="Va' alla fine del manuale"  ><i class="fa fa-fast-forward  fa-2x" aria-hidden="true"></i></a>
-        </nav>
-    </footer>
+
+    {% if page.class == "capitolo" %}
+    {%- include man-footer.html -%}
+    {% endif %}
+
   </body>
 </html>
