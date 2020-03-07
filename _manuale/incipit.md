@@ -4,8 +4,9 @@ title: C'hi++ - Il senso della Vita è il debug
 h2: In C pit
 class: capitolo
 capitolo: 2
-precedente: premessa.html
-seguente: mitopoietica.html
+permalink:  /manuale/incipit
+precedente: premessa
+seguente:   mitopoietica
 ---
 
 Quello che stai facendo è inutile.

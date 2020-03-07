@@ -3,8 +3,9 @@ layout: dedica
 title: C'hi++ - Il senso della Vita è il debug
 h2: Dedica
 class: dedica
-precedente: copertina.html
-seguente: indice.html
+permalink: /manuale/dedica
+precedente: /manuale/
+seguente:   indice
 ---
 
 Questo libro è dedicato ai miei nipoti.<br />

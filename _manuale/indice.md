@@ -5,6 +5,7 @@ h2: Indice
 class: indice
 precedente: dedica.html
 seguente: premessa.html
+permalink: /manuale/indice
 ---
 
 <section class="indice">
