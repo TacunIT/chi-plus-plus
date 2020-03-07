@@ -1,3 +1,7 @@
+## 0.8.6 (March 07, 2020)
+  - Corretta navigazione manuale. Aggunto Epilogo.
+  - Corretto errore CSS in head
+
 ## 0.8.5 (March 07, 2020)
   - Modifiche al testo delle FAQ
   - Aggiunti permalink a pagine principali.
