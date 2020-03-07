@@ -4,8 +4,9 @@ class:      capitolo
 title:      C'hi++ - Il senso della Vita è il debug
 h2:         Epilogo
 permalink:  /manuale/epilogo
-precedente: il-programmatore
+precedente: ikebarba
 seguente:
+bozza:      true
 ---
 
 [prima di questo, il Maestro, prossimo alla dipartita, ordina al

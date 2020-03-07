@@ -6,6 +6,6 @@ class:      capitolo
 permalink:  /manuale/ikebarba
 precedente: chi-plus-plus
 seguente:   epilogo
+bozza:      true
 ---
 
-[@todo]

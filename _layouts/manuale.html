@@ -3,11 +3,11 @@
 
 {%- include head.html -%}
 
-<body class="manuale {{ page.class }}">
+<body class="manuale {{ page.class }} ">
 
     {%- include man-header.html -%}
 
-    <main>
+    <main {% if page.bozza %}class="bozza"{% endif %}>
     {{ content}}
     </main>
 

@@ -1,6 +1,6 @@
 ---
 layout:     manuale
-class:      capitolo
+class:      indice
 title:      C'hi++ - Il senso della Vita è il debug
 h2:         Indice
 precedente: dedica.html
@@ -11,11 +11,11 @@ no-index:   true
 
 <a class="logo" href="/manuale/"><img class="logo" alt="C'hi++" title="C'hi plus plus" src="/assets/img/chi-plus-plus.png"></a>
 <section class="indice">
-    {% for pagina in site.manuale %}
-        {% if pagina.no-index == null %}
-        <h3>
-            <a href="{{ pagina.url }}">
-                {{ pagina.h2 }}
+    {% for capitolo in site.manuale %}
+        {% if capitolo.no-index == null %}
+        <h3 {% if capitolo.bozza %}class="bozza"{% endif %} >
+            <a href="{{ capitolo.url }}">
+                {{ capitolo.h2 }}
             </a>
         </h3>
         {% endif %}
