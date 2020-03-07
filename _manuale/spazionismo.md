@@ -9,7 +9,9 @@ seguente:   ikebarba
 bozza:      true
 ---
 
+<blockquote>
 Da dove questa creazione sia sorta,
 se lui l’ha fondata oppure no:
 lui che la sorveglia nel più alto dei cieli,
 lui solo lo sa, o forse non lo sa.
+</blockquote>
