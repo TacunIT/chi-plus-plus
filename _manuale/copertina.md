@@ -6,6 +6,7 @@ class: copertina
 permalink: /manuale/
 precedente: /index.html
 seguente: dedica
+no-index: true
 ---
 
 

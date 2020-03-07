@@ -6,6 +6,8 @@ class: dedica
 permalink: /manuale/dedica
 precedente: /manuale/
 seguente:   indice
+no-index: true
+
 ---
 
 Questo libro è dedicato ai miei nipoti.<br />
