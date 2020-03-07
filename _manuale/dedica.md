@@ -1,12 +1,12 @@
 ---
-layout: dedica
-title: C'hi++ - Il senso della Vita è il debug
-h2: Dedica
-class: dedica
-permalink: /manuale/dedica
+layout:     dedica
+class:      dedica
+title:      C'hi++ - Il senso della Vita è il debug
+h2:         Dedica
+permalink:  /manuale/dedica
 precedente: /manuale/
 seguente:   indice
-no-index: true
+no-index:   true
 
 ---
 

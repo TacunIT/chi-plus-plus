@@ -1,8 +1,8 @@
 ---
-layout: manuale
-title: C'hi++ - Il senso della Vita è il debug
-h2: Mitopoietica del C'hi++
-class: capitolo
+layout:     manuale
+class:      capitolo
+title:      C'hi++ - Il senso della Vita è il debug
+h2:         Mitopoietica del C'hi++
 permalink:  /manuale/mitopoietica
 precedente: incipit
 seguente:   il-programmatore

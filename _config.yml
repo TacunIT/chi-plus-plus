@@ -14,5 +14,19 @@ collections:
          - incipit.md
          - mitopoietica.md
          - il-programmatore.md
+         - sistemi-di-numerazione.md
+         - linguaggi-di-programmazione.md
+         - c-plus-plus.md
+         - commenti.md
+         - tipi-di-dato.md
+         - espressioni-e-operatori.md
+         - funzioni.md
+         - classi.md
+         - polimorfismo.md
+         - ereditarieta.md
+         - debug.md
+         - chi-plus-plus.md
+         - spazionismo.md
+         - ikebarba.md
          - epilogo.md
          

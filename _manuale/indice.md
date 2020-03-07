@@ -1,12 +1,12 @@
 ---
-layout: manuale
-title: C'hi++ - Il senso della Vita è il debug
-h2: Indice
-class: indice
+layout:     manuale
+class:      capitolo
+title:      C'hi++ - Il senso della Vita è il debug
+h2:         Indice
 precedente: dedica.html
-seguente: premessa.html
-permalink: /manuale/indice
-no-index: true
+seguente:   premessa.html
+permalink:  /manuale/indice
+no-index:   true
 ---
 
 <a class="logo" href="/manuale/"><img class="logo" alt="C'hi++" title="C'hi plus plus" src="/assets/img/chi-plus-plus.png"></a>

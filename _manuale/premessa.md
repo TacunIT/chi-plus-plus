@@ -1,12 +1,11 @@
 ---
-layout: manuale
-title: C'hi++ - Il senso della Vita è il debug
-h2: Premessa
-class: capitolo
-capitolo: 1
-permalink: /manuale/premessa
+layout:     manuale
+class:      capitolo
+title:      C'hi++ - Il senso della Vita è il debug
+h2:         Premessa
+permalink:  /manuale/premessa
 precedente: indice
-seguente: incipit
+seguente:   incipit
 ---
 
 Nacqui da famiglia ricca, ma troppo tardi.

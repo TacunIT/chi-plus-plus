@@ -1,8 +1,8 @@
 ---
-layout: manuale
-title: C'hi++ - Il senso della Vita è il debug
-h2: Epilogo
-class: capitolo
+layout:     manuale
+class:      capitolo
+title:      C'hi++ - Il senso della Vita è il debug
+h2:         Epilogo
 permalink:  /manuale/epilogo
 precedente: il-programmatore
 seguente:
