@@ -46,7 +46,7 @@ MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; margin: 1em; f
 @media only screen and (max-width: 420px) { DIV.testo P { text-align: left; } }
 
 /** Stili per la pagina index */
-HEADER DIV#top { width: 100%; max-width: 610px; font-size: 0; position: relative; }
+HEADER DIV#top { width: 100%; max-width: 610px; font-size: 0; position: relative; margin: auto; display: block; }
 
 BODY.index HEADER H2 { margin-bottom: 0.5rem; }
 

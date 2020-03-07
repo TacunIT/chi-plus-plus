@@ -94,6 +94,8 @@ HEADER DIV#top {
     max-width: 610px;
     font-size: 0;
     position: relative;
+    margin:auto;
+    display:block;
 }
 BODY.index HEADER H2 {margin-bottom: 0.5rem}
 BODY.index HEADER img.logo {width: 300px; max-width:90%; display: inline-block;}
