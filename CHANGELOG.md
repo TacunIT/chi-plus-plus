@@ -1,3 +1,6 @@
+## 0.8.8 (March 08, 2020)
+  - Aggiunto capitolo sul Buon Programmatore    
+
 ## 0.8.7 (March 07, 2020)
   - Corretta navigazione pagine Manuale
   - Aggiunte bozze dei capitoli da scrivere
