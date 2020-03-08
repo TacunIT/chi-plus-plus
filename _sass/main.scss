@@ -96,7 +96,7 @@ MAIN.bozza::before {
 MAIN P.immagine { margin: 1rem auto; text-align: center }
 MAIN P.immagine.chi { margin: 0.5rem auto; }
 MAIN P.immagine IMG { border: solid 1px #999;text-align: center;max-width:100%; }
-MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; margin: 1em; font-style: italic }
+MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; padding: 1em; font-style: italic }
 @media only screen and (max-width: 420px) {
     DIV.testo P { text-align: left }
 }
@@ -132,11 +132,12 @@ BODY.manuale HEADER {  }
 BODY.manuale HEADER H1 {display: none  }
 BODY.manuale HEADER H2 {padding: 4rem 0; text-transform: capitalize }
 BODY.manuale MAIN { min-height: 20vh; text-align: justify}
-BODY.manuale BLOCKQUOTE { color: #543; text-align: justify; margin: 1.5rem 0; font-size: 1em;}
-BODY.manuale BLOCKQUOTE H3 { }
-BODY.manuale BLOCKQUOTE.motto { text-align: right; padding-bottom: 3rem; padding-left: 30%; }
+BODY.manuale MAIN UL { margin: 1rem 0; padding-left: 2.5rem; }
+BODY.manuale BLOCKQUOTE.incluso { color: #543; text-align: justify; padding: 1rem; background: #e4e6c130; margin: 1rem 0;}
+BODY.manuale BLOCKQUOTE.motto { text-align: right; padding: 2rem 0 5rem 0; font-size: 0.9em }
 BODY.manuale FOOTER { position: relative;  display: block; text-align: center; width: 100% }
 BODY.manuale IMG.logo {width: 300px; max-width:90%; display: inline-block;}
+
 
 BODY.manuale.copertina { padding-top: 2rem }
 BODY.manuale.dedica MAIN { margin: 25vh auto 15vh auto;}
