@@ -9,3 +9,5 @@ seguente:   epilogo
 bozza:      true
 ---
 
+<blockquote class="motto">
+</blockquote>

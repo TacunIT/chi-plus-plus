@@ -9,3 +9,5 @@ seguente:   funzioni
 bozza:      true
 ---
 
+<blockquote class="motto">
+</blockquote>

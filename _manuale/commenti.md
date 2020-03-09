@@ -9,3 +9,6 @@ seguente:   tipi-di-dato
 bozza:      true
 ---
 
+<blockquote class="motto">
+</blockquote>
+

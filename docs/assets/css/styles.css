@@ -25,6 +25,8 @@ A { color: #333; }
 
 DIV { display: inline-block; }
 
+TABLE, TD, TR { border-collapse: collapse; border: solid 1px #999; padding: 0.25rem 0.5rem; }
+
 /** Stili dei menu */
 NAV { border-top: solid 1px; display: inline-block; border-bottom: solid 1px; margin: 1.5rem auto 1rem auto; border-color: #990; }
 
@@ -78,9 +80,11 @@ BODY.manuale MAIN { min-height: 20vh; text-align: justify; }
 
 BODY.manuale MAIN UL { margin: 1rem 0; padding-left: 2.5rem; }
 
-BODY.manuale BLOCKQUOTE.incluso { color: #543; text-align: justify; padding: 1rem; background: #e4e6c130; margin: 1rem 0; }
+BODY.manuale BLOCKQUOTE.incluso { color: #543; text-align: justify; padding: 1rem; background: #e4e6c1; margin: 1rem 0; }
 
 BODY.manuale BLOCKQUOTE.motto { text-align: right; padding: 2rem 0 5rem 0; font-size: 0.9em; }
+
+BODY.manuale CODE { display: block; padding: 1rem; font-size: 1rem; }
 
 BODY.manuale FOOTER { position: relative; display: block; text-align: center; width: 100%; }
 

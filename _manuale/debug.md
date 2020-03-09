@@ -9,3 +9,5 @@ seguente:   chi-plus-plus
 bozza:      true
 ---
 
+<blockquote class="motto">
+</blockquote>

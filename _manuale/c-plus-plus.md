@@ -9,3 +9,5 @@ seguente:   commenti
 bozza:      true
 ---
 
+<blockquote class="motto">
+</blockquote>
