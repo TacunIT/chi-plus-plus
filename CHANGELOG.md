@@ -1,5 +1,8 @@
+## 0.8.9 (March 09, 2020)
+  - Aggiunto capitolo sui sistemi di numerazione
+
 ## 0.8.8 (March 08, 2020)
-  - Aggiunto capitolo sul Buon Programmatore    
+  - Aggiunto capitolo sul Buon Programmatore
 
 ## 0.8.7 (March 07, 2020)
   - Corretta navigazione pagine Manuale
