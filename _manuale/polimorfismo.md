@@ -8,3 +8,6 @@ precedente: espressioni-e-operatori
 seguente:   ereditarieta
 bozza:      true
 ---
+
+<blockquote class="motto">
+</blockquote>

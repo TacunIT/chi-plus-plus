@@ -9,3 +9,5 @@ seguente:   polimorfismo
 bozza:      true
 ---
 
+<blockquote class="motto">
+</blockquote>

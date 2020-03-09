@@ -9,3 +9,5 @@ seguente:   espressioni-e-operatori
 bozza:      true
 ---
 
+<blockquote class="motto">
+</blockquote>

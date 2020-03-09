@@ -1,9 +1,9 @@
-I linguaggi di programmazione
-=============================
 
-Chi vuole capire il computer
 
-deve andare nella terra del computer
+<blockquote class="motto">
+Chi vuole capire il computer<br />
+deve andare nella terra del computer.
+</blockquote>
 
 I linguaggi di programmazione servono a spiegare ai computer com'è fatto
 il mondo reale.

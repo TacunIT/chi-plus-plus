@@ -9,3 +9,5 @@ seguente:   spazionismo
 bozza:      true
 ---
 
+<blockquote class="motto">
+</blockquote>
