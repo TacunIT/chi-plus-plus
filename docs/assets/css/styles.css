@@ -76,7 +76,7 @@ BODY.manuale HEADER H1 { display: none; }
 
 BODY.manuale HEADER H2 { padding: 4rem 0; text-transform: capitalize; }
 
-BODY.manuale MAIN { min-height: 20vh; text-align: justify; }
+BODY.manuale MAIN { text-align: justify; }
 
 BODY.manuale MAIN UL { margin: 1rem 0; padding-left: 2.5rem; }
 
