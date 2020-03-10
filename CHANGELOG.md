@@ -1,3 +1,9 @@
+## 0.8.10 (March 10, 2020)
+  - Iniziata revisione delle note della Proposta
+  - Modifiche all'Index
+  - Corretti link nel README
+  - Corretti errori nel CSS e nell'Index
+
 ## 0.8.9 (March 09, 2020)
   - Aggiunto capitolo sui sistemi di numerazione
 
