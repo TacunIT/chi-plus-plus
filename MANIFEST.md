@@ -15,16 +15,20 @@ Ciò che è eticamente accettabile in alcuni casi, può non esserlo in altri.
 Per esempio, uccidere un avversario perché indossa “una divisa di un altro colore” è ammissibile in guerra, ma non durante una partita di calcio.
 
 Inoltre, **i valori che costituiscono un'etica sono soggettivi**.
-Prendete ad esempio il primo Articolo della *Déclaration des Droits de l’Homme et du Citoyen* del 1798:
 
-> Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l’utilité commune.
-
-Questa affermazione, sicuramente condivisibile, non ha prove a conforto e non è valida per chiunque viva in una delle 43 nazioni del Mondo dove vige una monarchia: ovvero una su cinque.
-Similmente, la *United States Declaration of Independence* del 1776 comincia con l'affermazione:
+La *United States Declaration of Independence* del 1776 comincia con l'affermazione:
 
 > We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
 
-Definire un principio: *self-evident* equivale a dichiarare un dogma: una convinzione che appartiene a chi scrive, ma non si applica necessariamente a tutti gli esseri viventi.<a href="#usa"><sup>1</sup></a><br />
+Definire un principio: *self-evident* equivale a dichiarare un dogma: una convinzione che appartiene a chi scrive, ma non si applica necessariamente a tutti gli esseri viventi.
+È stata necessaria una guerra civile per far accettare agli Stati del Sud l’idea che gli schiavi africani erano esseri umani e dovevano dunque godere della libertà e sono dovuti passare 188 anni, fino al Giugno del 1964, per ammettere che la segregazione razziale era in conflitto con questo principio.
+
+Il primo Articolo della *Déclaration des Droits de l’Homme et du Citoyen* del 1798 non ha le contaminazioni fideistiche della Dichiarazione americana, ma la frase:
+
+> Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l’utilité commune.
+
+pur se condivisibile, non ha prove a conforto e non è valida per chiunque viva in una delle 43 nazioni del Mondo dove vige una monarchia: ovvero una su cinque.
+
 La trinità:
 
 > Liberté, Égalité, Fraternité
@@ -127,6 +131,5 @@ Se volete collaborare o anche esporre delle critiche, potere farlo con gli strum
 
 <h2 class="note">Note</h2>
 
-<a id="usa"><sup>1</sup></a> Gli Stati Uniti, per esempio, hanno dovuto aspettare 188 anni, fino al Giugno del 1964, per ammettere che la segregazione razziale era in conflitto con questo principio.
 
-<a id="cap"><sup>2</sup></a> Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
+<a id="cap"><sup>1</sup></a> Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
