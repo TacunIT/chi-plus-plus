@@ -1,10 +1,9 @@
-<link rel="stylesheet" type="text/css" href="http://chiplusplus.org/chi-plus-plus.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/chi-plus-plus.css" />
 
 <section class="pagina cover">
 	<h1>C'hi++</h1>
 	<h2>Proposta per una metafisica open-source</h2>
-	<h3>@version 0.8.0</h3>
-	<img style="margin-top:2rem" src="../../assets/img/quiz.png">
+	<img style="margin-top:4rem" src="../../assets/img/quiz.png">
 </section>
 
 <section class="dedica">
@@ -36,8 +35,10 @@ La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre la
 Le speranze degli anni '90 si sono schiantate l'11 Settembre 2001 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformata, nel tempo, in un sistema di controllo e di dis-informazione di massa.
 Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni dagli *smart-phone* e dai *social-network*.
 In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (*c'è crisi*), né comunista (*Stalin e Mao hanno ucciso più persone di Hitler*), né cattolico (*lo chiedessero allo IOR, l'8 per mille*), né ebreo (*guarda gli Israeliani cosa fanno ai Palestinesi*), né Musulmano (*gli islamici sono degli esaltati che vogliono ucciderci tutti*)
-<a href="#corsivo" class="nota" name="fn-1">1</a>, si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali che non leggono
-<a href="#istat" class="nota" name="fn-2">2</a>, ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.
+<a href="#corsivo" class="nota" name="fn-1">1</a>,
+si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali che non leggono
+<a href="#istat" class="nota" name="fn-2">2</a>,
+ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.
 C'è modo di invertire questa tendenza o dobbiamo rassegnarci al declino? No.
 *No*, non credo che qualcosa cambierà, almeno nel breve periodo, a meno che qualche evento esterno come una crisi, una guerra, una catastrofe naturale, un'invasione aliena o una presa di coscienza collettiva (in ordine decrescente di probabilità) non costringa la nostra specie a modificare il suo comportamento; e *No*, non intendo arrendermi senza avere almeno tentato, perché questi zombie sono le persone che determinano la qualità del nostro presente con il loro voto e con cui dovremo affrontare dei problemi da cui dipenderà il nostro futuro, come la sovrappopolazione, la scarsezza di risorse e l'accumulo di plastica negli oceani.
 Ma “tentare”, cosa?
@@ -135,8 +136,12 @@ Questo perché anche i princìpi delle società laiche, al pari dei dogmi delle 
 A differenza dei dogmi religiosi, però, i laici non possono rifarsi a valori di ordine superiore e, come abbiamo visto [sopra](#il-problema), devono trovare i fondamenti delle loro affermazioni nella realtà contingente, cosa che non sempre è possibile, quindi le loro regole risultano ancora più inconsistenti di quelle religiose.
 
 Prendete ad esempio i trenta articoli della [Dichiarazione dei Diritti dell'Uomo](http://www.un.org/en/universal-declaration-human-rights/) del 1948: voi e io troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.
-Per quale motivo un Signore della Guerra centro-africano dovrebbe rispettarle, dato che non sono un insieme di norme giuridiche a cui gli Stati e gli individui debbano attenersi, ma un elenco di quelli che *dovrebbero essere*<a href="#achievements" class="nota" name="fn-4">4</a> i diritti di ogni essere umano?
-Perché, soprattutto, dovrebbe rispettare delle regole volte al mantenimento della pace, promulgate da un'Organizzazione che ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="#sipri" class="nota" name="fn-5">5</a> e che violano costantemente quelle stesse regole da loro promosse?
+Per quale motivo un Signore della Guerra centro-africano dovrebbe rispettarle, dato che non sono un insieme di norme giuridiche a cui gli Stati e gli individui debbano attenersi, ma un elenco di quelli che *dovrebbero essere*
+<a href="#achievements" class="nota" name="fn-4">4</a>
+i diritti di ogni essere umano?
+Perché, soprattutto, dovrebbe rispettare delle regole volte al mantenimento della pace, promulgate da un'Organizzazione che ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo
+<a href="#sipri" class="nota" name="fn-5">5</a>
+e che violano costantemente quelle stesse regole da loro promosse?
 <br>
 La Dichiarazione di Indipendenza americana comincia con queste parole:
 
@@ -148,7 +153,8 @@ L'articolo 1. della *Dichiarazione dei Diritti dell'Uomo e del Cittadino* france
 > Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l’utilité commune.
 
 Questa affermazione è sicuramente condivisibile, ma sfortunatamente non è provata da alcun dato di fatto.
-Al contrario, è smentita dalla presenza di 26 monarchie che regnano su 43 delle 195 nazioni del Mondo<a href="#reami" class="nota" name="fn-6">6</a>.
+Al contrario, è smentita dalla presenza di 26 monarchie che regnano su 43 delle 195 nazioni del Mondo.
+<a href="#reami" class="nota" name="fn-6">6</a>
 <br>
 Insomma: dato che l'approccio laico presenta gli stessi problemi logici di quello religioso, mancando però dei corrispondenti lati positivi, non ci resta altra scelta che cercare di far “funzionare” la religione.
 
@@ -364,7 +370,8 @@ Se avessimo applicato la stessa modifica al Cattolicesimo, riabilitando la figur
 
 ## Release 0.1: Sostiene Aristotele
 A Giugno del 2007 scrissi un documento dal titolo:  [Sostiene Aristotele](sostiene-aristotele.md) che possiamo considerare la versione 0.1.1 del C'hi++.
-In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione<a href="#soko" class="nota" name="fn-8">8</a>.
+In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.
+<a href="#soko" class="nota" name="fn-8">8</a>
 Nelle fasi di espansione, l'Uno esplodeva, generando l'Universo così come lo conosciamo; nelle fasi di contrazione, l'Universo collassava nell'Uno.
 Anche se in embrione, gli elementi principali del C'hi++ ci sono tutti; la rarefazione degli elementi metafisici:
 
@@ -466,13 +473,18 @@ Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Uni
 
 ### Il senso della vita è il debug
 Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*
-<a href="#beta-tester" class="nota" name="fn-9">9</a> di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali (come il *Koan Mu* o il motivo per cui Nansen taglia in due il gatto
-<a href="#mumon" class="nota" name="fn-10">10</a>) ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.
-Infatti, se paragoniamo l'esistenza a una sessione di test del software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori<a href="#vasana" class="nota" name="fn-">1</a> perché venga corretto nelle successive versioni del programma.
+<a href="#beta-tester" class="nota" name="fn-9">9</a>
+di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali (come il *Koan Mu* o il motivo per cui Nansen taglia in due il gatto
+<a href="#mumon" class="nota" name="fn-10">10</a>)
+ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.
+Infatti, se paragoniamo l'esistenza a una sessione di test del software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori
+<a href="#vasana" class="nota" name="fn-11">11</a>
+perché venga corretto nelle successive versioni del programma.
 Visto che, nel nostro caso, *beta-tester*, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/*beta-tester*, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.
 In quest'ottica, la frase:
 
->cento Mondi di peccato sono dissipati dalla luce di un solo pentimento<a href="#pentimento" class="nota" name="fn-">1</a>
+>cento Mondi di peccato sono dissipati dalla luce di un solo pentimento
+<a href="#pentimento" class="nota" name="fn-12">12</a>
 
 non è un'anomalia, ma è una diretta conseguenza della sua presa di coscienza, perché se l'errore viene corretto, il dolore che ha causato in questa esistenza non si ripeterà nelle esistenze successive e l'Universo sarà un po' più Paradiso e un po' meno Inferno.
 
@@ -482,7 +494,9 @@ Questo è facile, oltre che educato, se la persona che ci ha favorito si è comp
 In sostanza: la definizione che Frazer dà del termine *religione*:
 
 <div class="citazione" >
-gli sforzi dell’uomo per propiziarsi o conciliarsi potenze superiori che si suppone dirigano e controllino il corso della natura e della vita umana<a href="#frazer" class="nota" name="fn-">1</a>.
+gli sforzi dell’uomo per propiziarsi o conciliarsi potenze superiori che si
+suppone dirigano e controllino il corso della natura e della vita umana.
+<a href="#frazer" class="nota" name="fn-">13</a>
 </div>
 
 è valida anche per il C'hi++, solo che le “potenze superiori”, siamo noi stessi.
@@ -498,7 +512,7 @@ Questa composizione sul tema della liberazione è stata composta in forma poetic
 </div>
 
 Fatte le debite proporzioni, questo vale anche per *C'hi++*: molte affermazioni del Maestro sono ironiche e lo stesso nome scelto per gli elementi costitutivi dell'Universo (gli _spazioni_) e per la cosmogonia che ne deriva (lo *Spazionismo*) ha chiaramente un intento auto/ironico.
-Anche i riferimenti alla disciplina estetica della disposizione dei panni sullo stendino, l'*Ikebarba*, hanno lo scopo di stemperare la seriosità del testo, allegerendone la lettura.
+Anche i riferimenti alla disciplina estetica della disposizione dei panni sullo stendipanni, l'*Ikebarba*, hanno lo scopo di stemperare la seriosità del testo, allegerendone la lettura.
 
 ### Mitopietica del C'hi++
 Il testo riporterà gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione:
@@ -548,7 +562,7 @@ Nell'estetica del C'hi++ a queste due forze se ne aggiunge una terza, intermedia
 Sono opere di Decorazione tutte quelle idee e quegli artefatti che soddisfano i sensi dell'uomo, ma che non hanno alcuna influenza diretta, positiva o negativa che sia, sulla sua crescita spirituale.
 
 #### L'Ikebarba
-Un'applicazione pratica di questi princìpi si ha nella disciplina artistica dell'*Ikebarba*, che, come accennato prima, definisce i criterii etici ed estetici per la disposizione dei panni sullo stendino.
+Un'applicazione pratica di questi princìpi si ha nella disciplina artistica dell'*Ikebarba*, che, come accennato prima, definisce i criterii etici ed estetici per la disposizione dei panni sullo stendipanni.
 Il principio filosofico che sottende l'Ikebarba è che ogni nostra azione è importante e non esistono momenti di serie A, nei quali facciamo le cose che ci piacciono e momenti di serie B, nei quali facciamo ciò che è necessario fare.
 Anche la stenditura dei panni, se approcciata correttamente, può essere un passo verso il miglioramento di sé e del Mondo.
 Il primo precetto dell'Ikebarba è una perifrasi della frase di Gesù sullo Shabbat:
@@ -556,12 +570,13 @@ Il primo precetto dell'Ikebarba è una perifrasi della frase di Gesù sullo Shab
 > *L'Ikebarba è fatta per l'uomo, non l'uomo per l'Ikebarba*
 
 L'Ikebarba non deve essere un peso, per l'uomo, ma un obbligo giojoso.
-Un'Ikebarba ben fatta gli provvederà panni asciutti in minor tempo e renderà la vista dello stendino meno fastidiosa.
+Un'Ikebarba ben fatta gli provvederà panni asciutti in minor tempo e renderà la vista dello stendipanni meno fastidiosa.
 Il secondo precetto dell'Ikebarba è:
 
 > L'Ikebarba comincia nel negozio
 
-Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente; è preferibile quindi non farsi sedurre dalle lusinghe del Marketing e acquistare abiti dalle tinte sobrie e possibilmente intonati gli uni agli altri, in modo da renderne più facile e più elegante la composizione sullo stendino<a href="#no-mao" class="nota" name="fn-">1</a>.
+Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente; è preferibile quindi non farsi sedurre dalle lusinghe del Marketing e acquistare abiti dalle tinte sobrie e possibilmente intonati gli uni agli altri, in modo da renderne più facile e più elegante la composizione sullo stendipanni.
+<a href="#no-mao" class="nota" name="fn-14">14</a>
 
 ### Struttura del testo
 I primi tre capitoli inquadrano storicamente il contesto in cui si svolge l'azione, un possibile futuro in cui gli informatici sono stati trasformati in una casta sacerdotale:
@@ -687,19 +702,32 @@ Lo Spazionismo è l'evoluzione delle idee abbozzate in *Sostiene Aristotele*, do
 4. tutto ricomincia.
 
 Lo Spazionismo descrive lo stesso processo, ma a livello più basso.
-Nell'ultimo capitolo del libro, il Maestro spiegherà al suo allievo che l'Universo è costituito da *Spazioni*, elementi infinitesimali dotati di esistenza potenziale.
-Così come lo schermo di un computer è costituito da una matrice bidimensionale di pixel, generalmente spenti, ma capaci di accendersi se colpiti da un raggio di luce, così l'Universo è costituito da una matrice tridimensionale di spazioni, capaci di esistere se ricevono energia.
+Nell'ultimo capitolo del libro, il Maestro spiegherà al suo allievo che
+l'Universo è costituito da *Spazioni*, elementi infinitesimali dotati di
+esistenza potenziale.
+Così come lo schermo di un computer è costituito da una matrice bidimensionale
+di pixel, generalmente spenti, ma capaci di accendersi se colpiti da un raggio
+di luce, così l'Universo è costituito da una matrice tridimensionale di
+spazioni, capaci di esistere se ricevono energia.
 La sequenza vista sopra, riletta in chiave spazionista, diventa:
 
-1. l'Uno Primigenio esplode a causa<a href="#causa" class="nota" name="fn-">1</a> di una Forza che ne disperde l'Energia nello spazio;
-2. l'Energia si spande per l'Universo e, conferendo massa/esistenza agli spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi e solidi che noi conosciamo, dall'elio della nebulosa di *Wolf–Rayet* alla nostra maestra delle Elementari;
-4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante<a href="#variante" class="nota" name="fn-">1</a> della Storia, che a sua volta genererà nuove esperienze e nuovi *Post-It*;
+1. l'Uno Primigenio esplode a causa
+<a href="#causa" class="nota" name="fn-15">15</a>
+di una Forza che ne disperde l'Energia nello spazio;
+2. l'Energia si spande per l'Universo e, conferendo massa/esistenza agli
+spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi
+e solidi che noi conosciamo, dall'elio della nebulosa di *Wolf–Rayet* alla
+nostra maestra delle Elementari;
+4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante
+<a href="#variante" class="nota" name="fn-16">16</a>
+della Storia, che a sua volta genererà nuove esperienze e nuovi *Post-It*;
 4. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
 5. tutto ricomincia daccapo.
 
-####<a name="basso-accoppiamento">Basso accoppiamento</a>
+####Basso accoppiamento
 Lo Spazionismo è la parte più pericolosa di tutta la mia metafisica.
-Non solo perché non ho alcun titolo per parlare di spazio e materia, ma perché il nome stesso della teoria è legato ai suoi postulati: il nome *Spazionismo* deriva dal nome *spazione* e il nome *spazione* deriva dai presunti attributi dell'entità che rappresenta<a href="#spazione" class="nota" name="fn-">1</a>.
+Non solo perché non ho alcun titolo per parlare di spazio e materia, ma perché il nome stesso della teoria è legato ai suoi postulati: il nome *Spazionismo* deriva dal nome *spazione* e il nome *spazione* deriva dai presunti attributi dell'entità che rappresenta
+<a href="#spazione" class="nota" name="fn-17">17</a>.
 È, questa, la trasposizione astro-fisica del problema meta-fisico visto a proposito del [Buonismo](#buonismo): se alla fine si scopre che Dio non è buono o che comunque non ha senso attribuirgli delle qualità terrene, il nome della religione non ha più senso, indipendentemente dalla solidità dei suoi precetti.
 <br />
 In informatica, questo rischio si previene adottando il metodo del *basso accoppiamento* o *low coupling*, un termine che non si riferisce alla generale difficoltà degli informatici a instaurare rapporti con persone di sesso opposto, ma alla separazione delle funzioni all'interno di un sistema.
@@ -709,7 +737,9 @@ Sfortunatamente, quando ho pensato a tutto ciò, il nome Spazionismo era già st
 
 ## Release 0.3: Git
 A Dicembre del 2016 divenne chiaro che anche se avessi potuto dedicare a questo progetto tutto il mio tempo (e non potevo), non sarei mai riuscito a portarlo a termine da solo.
-Trasformare il mio *studio matto e disparatissimo*<a href="#leopardi" class="nota" name="fn-">1</a> in un progetto *open-source*, coinvlgendo nello “sviluppo” anche altre persone, mi sembrò la cosa migliore da fare, così cominciai a scrivere questo documento per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
+Trasformare il mio *studio matto e disparatissimo*
+<a href="#leopardi" class="nota" name="fn-17">17</a>
+in un progetto *open-source*, coinvlgendo nello “sviluppo” anche altre persone, mi sembrò la cosa migliore da fare, così cominciai a scrivere questo documento per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
 
 ### Git
 *Git* è un sistema con cui si gestiscono le diverse versioni di un software, ma può essere utilizzato per tenere traccia delle modifiche di qualsiasi documento elettronico. Leggendo il registro degli eventi di Git possiamo vedere quali sono state le modifiche apportate al sistema:
@@ -778,7 +808,9 @@ può funzionare su tutti i sistemi, perché il colore rosso è uno dei tre color
 ```
 questo testo fammelo in color rosso pompeiano
 ```
-può funzionare solo su un computer a cui sia stato insegnato come generare quella specifica sfumatura di colore nota come: *rosso pompeiano*<a href="#rosso-pompeiano" class="nota" name="fn-">1</a>.
+può funzionare solo su un computer a cui sia stato insegnato come generare quella
+specifica sfumatura di colore nota come: *rosso pompeiano*.
+<a href="#rosso-pompeiano" class="nota" name="fn-19">19</a>
 
 Traslando questo concetto in termini letterarii, possiamo dire che una vignetta di satira politica non è portabile, perché implica una conoscenza sia del soggetto della vignetta che dell'evento a cui si riferisce; al contrario, una (buona) poesia è portabile, perché si riferisce a concetti universali che chiunque è in grado di capire.
 Nel nostro caso, possiamo dire che la portabilità è la possibilità di rendere accettabile un concetto per persone aventi culture o convinzioni religiose di tipo diverso.
@@ -787,7 +819,8 @@ Nel nostro caso, possiamo dire che la portabilità è la possibilità di rendere
 *C'hi++* si riferisce alla programmazione dei computer, che è un ambito specifico di un settore specifico, quindi, da un punto di vista simbolico, ha un bassissimo grado di portabilità.
 Se fra duecento anni un archeologo ritrovasse i quaderni con i miei appunti e riuscisse a decifrare la mia grafia, potrebbe non capire a cosa io mi stia riferendo, quando parlo di *classi*, *istanze* e *oggetti*, mentre capirebbe perfettamente cosa simboleggiano l'Oca, l'Usignolo o il Pavone nel poema iraniano *Mantiq al-Tayr*, che è stato scritto nel XII secolo.
 In compenso, molti precetti del C'hi++ sono compatibili con precetti o idee appartenenti ad altre mistiche o filosofie.
-In questi giorni sto leggendo la *Bhagavad-Gita*<a href="#gita" class="nota" name="fn-">1</a>.
+In questi giorni sto leggendo la *Bhagavad-Gita*.
+<a href="#gita" class="nota" name="fn-20">20</a>
 Alcuni passi mi hanno ricordato le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire “bene”:
 
 <div class="citazione">
@@ -828,7 +861,8 @@ comportamento analogo a quello che ha tenuto in passato, creando un
 circolo vizioso (o virtuoso) che si autoalimenta.
 </div>
 
-Ho trovato delle analogie ai precetti del C'hi++ anche nel *Mantiq al-Tayr*<a href="#mantiq" class="nota" name="fn-">1</a>:
+Ho trovato delle analogie ai precetti del C'hi++ anche nel *Mantiq al-Tayr*
+<a href="#mantiq" class="nota" name="fn-21">21</a>:
 
 <div class="citazione">
 Tutto è un'unica sostanza in molteplici forme, tutto è un unico discorso in diverse espressioni (...)
@@ -842,8 +876,10 @@ Ho trovato altre analogie in frasi di Eraclito, Zenone, Anassimandro e Spinoza, 
 Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista: il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono l'Ente che ne causa la disgregazione, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte.
 <br />
 Essendo una metafisica-non-metafisica, però, C'hi++ deve preoccuparsi anche della portabilità scientifica dei suoi precetti.
-Come ho scritto a proposito del <a href="#basso-accoppiamento">basso accoppiamento</a>, il grosso pericolo dello Spazionismo è che deriva il suo stesso nome da uno dei suoi precetti ed è quindi fondamentale che la teoria spazionista non collida apertamente con quelle che sono le conoscenze scientifiche correnti.
-Fortunatamente, la scorsa settimana ho scoperto che il fisico Carlo Rovelli<a href="#rovelli" class="nota" name="fn-">1</a> sta sviluppando una teoria sulla granularità dello spazio che presenta diverse affinità con lo Spazionismo.
+Come ho scritto a proposito del basso accoppiamento, il grosso pericolo dello Spazionismo è che deriva il suo stesso nome da uno dei suoi precetti ed è quindi fondamentale che la teoria spazionista non collida apertamente con quelle che sono le conoscenze scientifiche correnti.
+Fortunatamente, la scorsa settimana ho scoperto che il fisico Carlo Rovelli
+<a href="#rovelli" class="nota" name="fn-22">22</a> sta sviluppando una teoria
+sulla granularità dello spazio che presenta diverse affinità con lo Spazionismo.
 Anche se inizialmente ho avuto la tentazione di informarmi meglio per capire, se non proprio la verosimiglianza, quanto meno l'ammissibilità scientifica di alcune affermazioni che penso di fare nel racconto, alla fine ho deciso di approfondire l'argomento solo dopo aver terminato questo testo, per non farmi influenzare e per non procrastinarne la pubblicazione di altri due anni.
 <br />
 Un ultimo esempio, che è poco più di un gioco di parole e che riporto qui solo perché io amo i giochi di parole, si ottiene invertendo i fattori dell'equazione di Einstein:
@@ -854,13 +890,18 @@ in:
 <div class="einstein">
 <p>m = E/c<sup>2</sup></p>
 </div>
-In termini spazionistici, questo equivale a dire che l'Universo (tutta la massa) è Dio (tutta l'energia) diviso la velocità della luce al quadrato: una affermazione che trovo divertente perché, per la teoria spazionista, ciò che divide Dio creando l'Universo è un'entità che si può chiamare o Diavolo<a href="#diavolo" class="nota" name="fn-">1</a> o, anche, Lucifero<a href="#lucifero" class="nota" name="fn-">1</a>; in sostanza: *colui che divide* o *colui che porta la luce*.
+In termini spazionistici, questo equivale a dire che l'Universo (tutta la massa) è Dio (tutta l'energia) diviso la velocità della luce al quadrato: una affermazione che trovo divertente perché, per la teoria spazionista, ciò che divide Dio creando l'Universo è un'entità che si può chiamare o *Diavolo*
+<a href="#diavolo" class="nota" name="fn-23">23</a>
+o, anche, *Lucifero*
+<a href="#lucifero" class="nota" name="fn-24">24</a>;
+in sostanza: *colui che divide* o *colui che porta la luce*.
 
 ### Istituto Geografico Mistico
 È interessante vedere come un modello teorico, basato su presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
 *Involontariamente* compatibile, aggiungerei, perché, come scrissi in: *Sostiene Aristotele*, quando ho cominciato a sviluppare questa teoria volevo solo vedere se fosse possibile creare una metafisica senza elementi metafisici.
 
-Credo che il rapporto che c'è fra C'hi++ e le religioni rivelate sia lo stesso che passa fra l'immagine da satellite di un bosco e la rappresentazione della stessa area in una mappa topografica dell'I.G.M<a href="#igm" class="nota" name="fn-">1</a>.
+Credo che il rapporto che c'è fra C'hi++ e le religioni rivelate sia lo stesso che passa fra l'immagine da satellite di un bosco e la rappresentazione della stessa area in una mappa topografica dell'I.G.M
+<a href="#igm" class="nota" name="fn-25">25</a>.
 L'immagine da satellite descrive il bosco così com'è, in tutta la sua bellezza e la sua complessità; la mappa topografica rappresenta quella stessa bellezza con dei simboli, delle convenzioni tipografiche.
 Chi conosce la zona può orientarsi con l'immagine da satellite, godendo così di tutta la bellezza del luogo; chi invece non conosce la zona o non ha un buon senso dell'orientamento utilizzerà la mappa, che gli fornirà una rappresentazione più fredda, ma più facile da interpretare.
 
@@ -868,27 +909,40 @@ Si tratta in entrambi i casi di rappresentazioni incomplete, perché prive di un
 Vista in quest'ottica, la “sovrapponibilità” del C'hi++ con le religioni ispirate non sembra più strana, ma assolutamente normale.
 
 ## TODO
-Come tutti i progetti software degni di questo nome, anche C'hi++ ha una sua *roadmap* che definisce la successione dei passi da compere per il completamento del lavoro: terminata la redazione di questo testo, riprenderò la stesura di *C'hi++*, convertendo il testo attuale in formato Markdown e definendo la struttura dei capitoli relativi al linguaggio C++, così come li ho descritti <a href="#chi++">sopra</a>;  parallelamente, dovrò riprendere la catalogazione dei miei appunti, trascrivendoli nella mappa Vue del progetto per poi includerli nel testo del manuale; dovrò poi verificare l'ammissibilità scientifica dei precetti dello Spazionismo, modificandoli se non fossero corretti, per poi includerli nel capitolo finale del libro; infine, cercherò di battere il record di Robert Pirsig, che ricevette 121 rifiuti prima che un editore accettasse di pubblicare il suo libro: *Lo Zen e l'Arte della Manutenzione della Motocicletta*.
+Come tutti i progetti software degni di questo nome, anche C'hi++ ha una sua *roadmap* che definisce la successione dei passi da compere per il completamento del lavoro: terminata la redazione di questo testo, riprenderò la stesura di *C'hi++*, convertendo il testo attuale in formato Markdown e definendo la struttura dei capitoli relativi al linguaggio C++, così come li ho descritti sopra;  parallelamente, dovrò riprendere la catalogazione dei miei appunti, trascrivendoli nella mappa Vue del progetto per poi includerli nel testo del manuale; dovrò poi verificare l'ammissibilità scientifica dei precetti dello Spazionismo, modificandoli se non fossero corretti, per poi includerli nel capitolo finale del libro; infine, cercherò di battere il record di Robert Pirsig, che ricevette 121 rifiuti prima che un editore accettasse di pubblicare il suo libro: *Lo Zen e l'Arte della Manutenzione della Motocicletta*.
 Se mai riuscirò a fare tutto questo, sarò solo all'inizio.
 
 ### Kernel e shell
 Il *sistema operativo* è quell'insieme di programmi che gestiscono il funzionamento dei computer, facendo da tramite fra l'hardware del sistema e le richieste dell'utente.
 Il software dei sistemi operativi può essere suddiviso logicamente in due blocchi: il *kernel* e la *shell*.
 Il *kernel* è quella parte del sistema che “parla” con l'hardware, gestendo la memoria, gli accessi al disco rigido, le comunicazioni di rete e così via.
-La *shell* è invece quella parte del sistema che interagisce con l'utente, traducendo in lettere, immagini e suoni i codici numerici prodotti dal kernel<a href="#shell" class="nota" name="fn-">1</a>.
+La *shell* è invece quella parte del sistema che interagisce con l'utente, traducendo in lettere, immagini e suoni i codici numerici prodotti dal kernel.
+<a href="#shell" class="nota" name="fn-26">26</a>
 In quest'ottica, C'hi++ è un kernel, non un sistema operativo completo, perché è privo di una vera e propria interfaccia utente.
 Questa mancanza è un requisito di progetto, non un errore, ma lo rende poco adatto all'utilizzo di massa e dato che:
 
-> la maggior parte degli esseri umani alla ricerca del senso della vita ha la tendenza a divenire parte di un gruppo, anche se non ne condivide del tutto le convinzioni, dato che nel gruppo/tribu trova protezione e forza<a href="#shenk" class="nota" name="fn-">1</a>
+> la maggior parte degli esseri umani alla ricerca del senso della vita ha
+la tendenza a divenire parte di un gruppo, anche se non ne condivide del
+tutto le convinzioni, dato che nel gruppo/tribu trova protezione e forza
+<a href="#shenk" class="nota" name="fn-27">27</a>
 
 sarà necessario definire una o più “interfacce utente” che facilitino la fruibilità dei precetti del C'hi++ definendo delle forme rituali e di aggregazione.
 Un ostacolo alla diffusione di massa che, al contrario, non penso sarà possibile rimuovere è che C'hi++, intenzionalmente, non dà delle risposte definitive, assolute, ma stimola a una ricerca continua.
 Per alcuni, questo può essere un lato positivo, ma si tratta di una minoranza; in questo momento, la maggior parte delle persone è alla ricerca di certezze, non di verità.
-D'altro canto, il Buddismo Zen utilizza un approccio simile da più di mille anni e anche la religone ebraica, se dobbiamo credere al Katz<a href="#katz" class="nota" name="fn-">1</a>, ha prodotto un gran numero di premii Nobel perché spinge i suoi fedeli a mettere in discussione le affermazioni dei testi sacri, rendendoli così più propensi a sviluppare idee originali, quindi preferisco aspettare un po', prima di considerare un errore questa caratteristica.
+D'altro canto, il Buddismo Zen utilizza un approccio simile da più di mille anni
+e anche la religone ebraica, se dobbiamo credere al Katz
+<a href="#katz" class="nota" name="fn-28">28</a>,
+ha prodotto un gran numero di premii Nobel perché spinge i suoi fedeli a mettere
+in discussione le affermazioni dei testi sacri, rendendoli così più propensi a
+sviluppare idee originali, quindi preferisco aspettare un po', prima di
+considerare un errore questa caratteristica.
 
 ### Un'etica per apparati digitali
 In questo periodo storico, non sono solo gli umani ad avere bisogno di una nuova etica.
-Qualche tempo fa, stavo cercando un saggio sul *brainjacking*<a href="# brainjacking" class="nota" name="fn-">1</a> su [Springer](https://rd.springer.com) e nell'elenco degli articoli mi sono apparsi due titoli in sequenza:
+Qualche tempo fa, stavo cercando un saggio sul *brainjacking*
+<a href="# brainjacking" class="nota" name="fn-29">29</a>
+su [Springer](https://rd.springer.com) e nell'elenco degli articoli mi sono
+apparsi due titoli in sequenza:
 
 ![](../../assets/img/value-sensitive-design.png)
 
@@ -897,7 +951,12 @@ Faccio un esempio per spiegare che cosa ci faccia, una macchina, con dei valori 
 D'improvviso, da dietro un'auto parcheggiata, sbuca un bambino.
 Il computer di bordo elabora i dati su velocità e direzione e scopre che quella storia non ha un lieto fine, perché qualunque cosa faccia, morirà qualcuno: o il bambino o il notaio.
 L'auto, a questo punto, deve decidere quale dei due umani uccidere, come se fosse un software per il gioco degli Scacchi che debba decidere quale di due pezzi in pericolo sacrificare.
-Ma mentre il programma scacchistico conosce perfettamente sia il valore *assoluto* dei due pezzi in questione<a href="#scacchi-1" class="nota" name="fn-">1</a> che il loro valore *relativo* in quel preciso momento della partita<a href="#scacchi-2" class="nota" name="fn-">1</a>, l'auto non sa nulla dei due umani.
+Ma mentre il programma scacchistico conosce perfettamente sia il valore
+*assoluto* dei due pezzi in questione
+<a href="#scacchi-1" class="nota" name="fn-30">30</a>
+che il loro valore *relativo* in quel preciso momento della partita
+<a href="#scacchi-2" class="nota" name="fn-31">31</a>,
+l'auto non sa nulla dei due umani.
 Del passeggero conosce i dati anagrafici e biometrici (peso, lunghezza delle gambe, firma vocale ecc.), mentre del bambino conosce solo la posizione e, vagamente, la massa; nulla sa, la povera automobile, della loro caratura morale o di ciò che faranno in futuro, se lei gliene concederà uno.
 Non può quindi decidere in base alla logica, ma deve porli arbitrariamente su una scala e sacrificare quello che si trova sul gradino più basso.
 Il problema è che di scale non ce n'è una sola.
@@ -912,9 +971,12 @@ Nella scala di valori dell'Ufficio Marketing della casa automobilistica il bambi
 > Smart-car uccide un bambino per salvare un notaio
 
 mentre dal punto di vista dell'Ufficio Legale o della società assicurativa, il notaio vale più del bambino, perché è più costoso da ripagare.
-L'auto non ha il tempo di valutare tutte queste variabili, quindi ha bisogno di una sua scala di valori che le permetta di *prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso<a href="#book" class="nota" name="fn-">1</a> non possono essere d'aiuto*; in altre parole, l'automobile ha bisogno di una Fede.
+L'auto non ha il tempo di valutare tutte queste variabili, quindi ha bisogno di una sua scala di valori che le permetta di *prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso
+<a href="#book" class="nota" name="fn-32">32</a>
+non possono essere d'aiuto*; in altre parole, l'automobile ha bisogno di una Fede.
 Ovviamente non potrà essere una delle religioni canoniche, perché sarebbe limitante dal punto di vista delle vendite e apparentemente non sarà nemmeno una filosofia laica, perché se ce ne fosse una adatta, in vent'anni l'avrebbero trovata.
-Dovrà quindi essere qualcosa di intermedio, né religioso né laico, con princìpi che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori<a href="#barbelognostica" class="nota" name="fn-">1</a>.
+Dovrà quindi essere qualcosa di intermedio, né religioso né laico, con princìpi che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori.
+<a href="#barbelognostica" class="nota" name="fn-33">33</a>
 Dovrà essere in condizione di adattarsi senza stravolgimenti al *mutare delle fogge e dei costumi* della Società e dovrà poter imparare dai suoi errori, correggendoli rapidamente.
 Dovrà essere *vendor-independent* e *open-source*, per facilitare la scoperta e la correzione di eventuali errori.
 Tanto meglio, poi, se potesse essere compresa e gestita facilmente dal software e dagli informatici.
@@ -923,7 +985,8 @@ I princìpi del C'hi++, anche se ancora in embrione, permettono risolvere il dil
 In pratica, l'utente della *smart-car*, prima di partire, dovrà decidere che tipo di comportamento dovrà adottare il sistema nel caso si presentasse il problema: "o lui o io"; una soluzione che risolve non solo i problemi del sistema di guida, ma anche quelli degli uffici marketing e legale, perché scarica la responsabilità della scelta sull'utente e non sulla casa automobilistica o sul produttore del software.
 In ottica C'hi++ il titolo sul giornale potrebbe essere:
 
-> Notaio uccide bambino con la sua smart-car. Chi vi dice che sia una disgrazia?<a href="#cavallo" class="nota" name="fn-">1</a>
+> Notaio uccide bambino con la sua smart-car. Chi vi dice che sia una disgrazia?
+<a href="#cavallo" class="nota" name="fn-34">34</a>
 
 ## Conclusioni
 Non so quale sarà il destino di *C'hi++*; non so dire nemmeno se questo testo mi procurerà aiuto o sberleffi.
@@ -945,141 +1008,177 @@ Mi sembra un motivo più che sufficiente.
     <ol>
         <li>
             Le frasi in corsivo sono commenti trovati sui *social-network*.
-            <a href="#fn-1" name="">&#8617;</a>
+            <a href="#fn-1" name="corsivo">&#8617;</a>
         </li>
         <li><a target="note"
             href="https://www.istat.it/it/archivio/213901">
             <i>www.istat.it/it/archivio/213901</i></a>
-            <a href="#fn-2" name="">&#8617;</a>
+            <a href="#fn-2" name="istat">&#8617;</a>
         </li>
         <li>Il Capitalismo, al contrario, gode di ottima salute perché trova la
             sua giustificazione spirituale nell'idea calvinista che il successo
             negli affari sia l'indice di un favore divino.
-            <a href="#fn-3" name="">&#8617;</a>
+            <a href="#fn-3" name="calvino">&#8617;</a>
         </li>
         <li>
             Il testo si definisce: <i>a common standard of achievement for all
             peoples and all nations, to the end that every individual and every
             organ of society, keeping this Declaration constantly in mind,
             shall strive</i>
-            <a href="#fn-4" name="">&#8617;</a>
+            <a href="#fn-4" name="achievements">&#8617;</a>
         </li>
         <li>
             Dati SIPRI (<a target="note" href="http://www.sipri.org">www.sipri.org</a>).
-            <a href="#fn-5" name="">&#8617;</a>
+            <a href="#fn-5" name="sipri">&#8617;</a>
         </li>
         <li>
             <a href="https://www.washingtonpost.com/news/worldviews/wp/2013/07/22/meet-the-worlds-other-25-royal-families"
             target="note">www.washingtonpost.com/news/worldviews/wp/2013/07/22/meet-the-worlds-other-25-royal-families</a>
-            <a href="#fn-6" name="">&#8617;</a>
+            <a href="#fn-6" name="reami">&#8617;</a>
         </li>
         <li>
             *Proof Of Concept*: prototipo che serve a di/mostrare le funzionalità
             di un nuovo sistema o processo.
-            <a href="#fn-7" name="">&#8617;</a>
+            <a href="#fn-7" name="poc">&#8617;</a>
         </li>
         <li>
             Di cui potrebbe essere un'eco l': *“inspirare, espirare”* all'inizio
             della poesia funeraria del monaco Gesshū Sōko.
-            <a href="#fn-8" name="">&#8617;</a>
+            <a href="#fn-8" name="soko">&#8617;</a>
         </li>
         <li>
             I *beta-tester* sono le persone che provano in anteprima i programmi
             che stanno per essere rilasciati sul mercato per cercare eventuali
             errori sfuggiti alla fase di test interno effettuato dell'azienda
             produttrice.
-            <a href="#fn-9" name="">&#8617;</a>
+            <a href="#fn-9" name="beta-tester">&#8617;</a>
         </li>
         <li>
             Mumon, *La Porta Senza Porta*. Adelphi, 1987.
-            <a href="#fn-10" name="">&#8617;</a>
+            <a href="#fn-10" name="mumon">&#8617;</a>
         </li>
         <li>
-           <a href="" target="note"></a>
-            <a href="#fn-11" name="">&#8617;</a>
+           Grazie a un “imprintig karmico” che io qui chiamo *Post-it* e che
+           Yoga e Buddismo chiamano *Vāsanā*.
+            <a href="#fn-11" name="vasana">&#8617;</a>
         </li>
         <li>
-           <a href="" target="note"></a>
-            <a href="#fn-12" name="">&#8617;</a>
+            Attar, Farid al-din - *Il verbo degli uccelli* (Mantiq al-Tayr).
+            Edizione elettronica - Kharabat, Collana di letterature orientali.
+            <a href="#fn-12" name="pentimento">&#8617;</a>
         </li>
         <li>
-           <a href="" target="note"></a>
-            <a href="#fn-13" name="">&#8617;</a>
+            Frazer, James George - *Il Ramo d'Oro*. Edizione elettronica -
+            Newton Compton 2012.
+            <a href="#fn-13" name="frazer">&#8617;</a>
         </li>
         <li>
-           <a href="" target="note"></a>
-            <a href="#fn-14" name="">&#8617;</a>
+           Un guardaroba di tipo militare o maoista, con indumenti identici e
+           dello stesso colore è, però, un eccesso da rifuggire, perché rende
+           monotona l'Ikebarba.
+            <a href="#fn-14" name="no-mao">&#8617;</a>
         </li>
         <li>
-           <a href="" target="note"></a>
-            <a href="#fn-15" name="">&#8617;</a>
+            E non: *per colpa*, come nella versione 0.1.1
+            <a href="#fn-15" name="causa">&#8617;</a>
         </li>
         <li>
-           <a href="" target="note"></a>
-            <a href="#fn-16" name="">&#8617;</a>
+           L'utilizzo del termine scacchistico è intenzionale, perché non è
+           detto che la nuova successione degli eventi sia migliore di
+           quella precedente.
+            <a href="#fn-16" name="variante">&#8617;</a>
         </li>
         <li>
-           <a href="" target="note"></a>
+            Il nome *spazione* è anche un riferimento, intenzionalmente
+            auto-ironico, ai: *cosoni*, i baccelli del film *Totò sulla Luna*,
+            parodia nostrana de: *L'invasione degli ultracorpi*.
             <a href="#fn-17" name="">&#8617;</a>
         </li>
         <li>
-           <a href="" target="note"></a>
-            <a href="#fn-18" name="">&#8617;</a>
+            Il gioco di parole è intenzionale.
+            <a href="#fn-18" name=leopardi"">&#8617;</a>
         </li>
         <li>
-           <a href="" target="note"></a>
-            <a href="#fn-19" name="">&#8617;</a>
+            Alcune delle possibili codifiche sono: *#cf3054*,
+            *rgb(207, 48, 84)*, *hsl(346, 62%, 50%)*.
+            <a href="#fn-19" name="rosso-pompeiano">&#8617;</a>
+        </li>
+        <li>
+            Scarabelli, Piera; Vinti, Massimo.
+            *Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja*.
+            Edizione elettronica - Mimesis Edizioni.
+            <a href="#fn-20" name="gita">&#8617;</a>
+        </li>
+        <li>
+            Attar, Farid al-din - op. cit.
+            <a href="#fn-21" name="mantiq">&#8617;</a>
+        </li>
+        <li>
+            Autore, per altro, di un libro proprio su Anassimandro.
+            <a href="#fn-22" name="rovelli">&#8617;</a>
+        </li>
+        <li>
+            *diàvolo* s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος,
+            propr. “calunniatore” (der. di διαβάλλω “gettare attraverso, calunniare”),
+            adoperato nel gr. crist. per tradurre l’ebr. śāṭān
+            “contraddittore, oppositore”].
+            <a href="#fn-23" name=diavolo">&#8617;</a>
+        </li>
+        <li>
+            *lucìfero* agg. e s. m. [dal lat. lucĭfer -a -um, comp. di lux
+            lucis “luce” e -fer “-fero”, calco del gr. ϕωσϕόρος].
+            <a href="#fn-24" name="lucifero">&#8617;</a>
+        </li>
+        <li>
+            *Istituto Geografico Militare*.
+            <a href="#fn-25" name="igm">&#8617;</a>
+        </li>
+        <li>
+            È una descrizione molto semplicistica, ma sufficiente per quelli
+            che sono gli scòpi di questo documento.
+            <a href="#fn-26" name="shell">&#8617;</a>
+        </li>
+        <li>
+            E.C. Schenck, citata da Frazer.
+            <a href="#fn-27" name="">&#8617;</a>
+        </li>
+        <li>
+            Eran Katz - *Jerome diventa un genio* - Barbera Editore, 2006.
+            <a href="#fn-28" name="katz">&#8617;</a>
+        </li>
+        <li>
+            L'intromissione malevola nel funzionamento di una protesi cerebrale,
+            per alterare il comportamento del paziente.
+            <a href="#fn-29" name="brainjacking">&#8617;</a>
+        </li>
+        <li>
+            Il pedone vale meno di un cavallo, che vale meno di un alfiere,
+            che vale meno di una torre ecc.
+            <a href="#fn-30" name="scacchi-1">&#8617;</a>
+        </li>
+        <li>
+            Un pedone può valere più della stessa regina, se è in condizione
+            di dare scacco matto all'avversario.
+            <a href="#fn-31" name="scacchi-2">&#8617;</a>
+        </li>
+        <li>
+            Che, ne caso di un'automobile, potrebbe essere una sorta di
+            registro storico delle situazioni indecidibili del passato,
+            simile al *Book* delle partite scacchistiche.
+            <a href="#fn-32" name="book">&#8617;</a>
+        </li>
+        <li>
+            Un'automobile barbelognostica, per quanto realizzabile, sarebbe
+            molto difficile da difendere in tribunale.
+            <a href="#fn-33" name="barbelognostica">&#8617;</a>
+        </li>
+        <li>
+            Citazione dal koan Zen *Il cavallo scappato*, ripresa da Calvino
+            nelle sue *Fiabe Italiane*.
+            <a href="#fn-34" name="cavallo">&#8617;</a>
         </li>
     </ol>
 
-
-<a href="#vasana" class="nota" name="fn-">1</a>: Grazie a un “*imprintig* karmico” che io qui chiamo *Post-it* e che Yoga e Buddismo chiamano *Vāsanā*.
-
-<a href="#pentimento" class="nota" name="fn-">1</a>: Attar, Farid al-din - *Il verbo degli uccelli* (Mantiq al-Tayr). Edizione elettronica - Kharabat, Collana di letterature orientali
-
-<a href="#frazer" class="nota" name="fn-">1</a>: Frazer, James George - *Il Ramo d'Oro*. Edizione elettronica - Newton Compton 2012.
-
-<a href="#no-mao" class="nota" name="fn-">1</a>: Un guardaroba di tipo militare o maoista, con indumenti identici e dello stesso colore è, però, un eccesso da rifuggire, perché rende monotona l'Ikebarba.
-
-<a href="#causa" class="nota" name="fn-">1</a>: E non: *per colpa*, come nella versione 0.1.1
-
-<a href="#variante" class="nota" name="fn-">1</a>: L'utilizzo del termine scacchistico è intenzionale, perché non è detto che la nuova successione degli eventi sia migliore di quella precedente.
-
-<a href="#spazione" class="nota" name="fn-">1</a>: In realtà, il nome *spazione* è anche un riferimento, intenzionalmente auto-ironico, ai: *cosoni*, i baccelli del film *Totò sulla Luna*, parodia nostrana de: *L'invasione degli ultracorpi*.
-
-<a href="#leopardi" class="nota" name="fn-">1</a>: Il gioco di parole è intenzionale.
-
-<a href="#rosso-pompeiano" class="nota" name="fn-">1</a>: Alcune delle possibili codifiche sono: *#cf3054*, *rgb(207, 48, 84)*, *hsl(346, 62%, 50%)*.
-
-<a href="#gita" class="nota" name="fn-">1</a>: Scarabelli, Piera; Vinti, Massimo. Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja. Edizione elettronica - Mimesis Edizioni.
-
-<a href="#mantiq" class="nota" name="fn-">1</a>: Attar, Farid al-din - op. cit.
-
-<a href="#rovelli" class="nota" name="fn-">1</a>: Autore, per altro, di un libro proprio su Anassimandro.
-
-<a href="#diavolo" class="nota" name="fn-">1</a>: *diàvolo* s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. “calunniatore” (der. di διαβάλλω “gettare attraverso, calunniare”), adoperato nel gr. crist. per tradurre l’ebr. śāṭān “contraddittore, oppositore”].
-
-<a href="#lucifero" class="nota" name="fn-">1</a>: *lucìfero* agg. e s. m. [dal lat. lucĭfer -a -um, comp. di lux lucis “luce” e -fer “-fero”, calco del gr. ϕωσϕόρος].
-
-<a href="#igm" class="nota" name="fn-">1</a>: *Istituto Geografico Militare*.
-
-<a href="#shell" class="nota" name="fn-">1</a>: È una descrizione molto semplicistica, ma sufficiente per quelli che sono gli scòpi di questo documento.
-
-<a href="#shenk" class="nota" name="fn-">1</a>: E.C. Schenck, citata da Frazer.
-
-<a href="#katz" class="nota" name="fn-">1</a>: Eran Katz - *Jerome diventa un genio* - Barbera Editore, 2006.
-
-<a href="# brainjacking" class="nota" name="fn-">1</a>: L'intromissione malevola nel funzionamento di una protesi cerebrale, per alterare il comportamento del paziente.
-
-<a href="#scacchi-1" class="nota" name="fn-">1</a>: Il pedone vale meno di un cavallo, che vale meno di un alfiere, che vale meno di una torre ecc.
-
-<a href="#scacchi-2" class="nota" name="fn-">1</a>: Un pedone può valere più della stessa regina, se è in condizione di dare scacco matto all'avversario.
-
-<a href="#book" class="nota" name="fn-">1</a>: Che, nel caso di un'automobile, potrebbe essere una sorta di registro storico delle situazioni indecidibili del passato, simile al *Book* delle partite scacchistiche.
-
-<a href="#barbelognostica" class="nota" name="fn-">1</a>: Un'automobile barbelognostica, per quanto realizzabile, sarebbe molto difficile da difendere in tribunale.
-
-<a href="#cavallo" class="nota" name="fn-">1</a>: Citazione dal koan Zen *Il cavallo scappato*, ripresa da Calvino nelle sue *Fiabe Italiane*.
 </section>
 
 
