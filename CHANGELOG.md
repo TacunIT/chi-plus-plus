@@ -1,3 +1,6 @@
+## 0.8.11 (March 11, 2020)
+  - Aggiornato testo della Proposta
+
 ## 0.8.10 (March 10, 2020)
   - Iniziata revisione delle note della Proposta
   - Modifiche all'Index
