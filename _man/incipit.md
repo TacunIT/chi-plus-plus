@@ -3,7 +3,7 @@ layout:     manuale
 class:      capitolo
 title:      C'hi++ - Il senso della Vita è il debug
 h2:         In C pit
-permalink:  /manuale/incipit
+permalink:  /man/incipit
 precedente: premessa
 seguente:   mitopoietica
 ---

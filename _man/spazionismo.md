@@ -3,7 +3,7 @@ layout:     manuale
 title:      C'hi++ - Il senso della Vita è il debug
 h2:         Lo Spazionismo
 class:      capitolo
-permalink:  /manuale/spazionismo
+permalink:  /man/spazionismo
 precedente: chi-plus-plus
 seguente:   ikebarba
 bozza:      true
