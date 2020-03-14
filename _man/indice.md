@@ -11,7 +11,7 @@ no-index:   true
 
 <a class="logo" href="/man/"><img class="logo" alt="C'hi++" title="C'hi plus plus" src="/assets/img/chi-plus-plus.png"></a>
 <section class="indice">
-    {% for capitolo in site.manuale %}
+    {% for capitolo in site.man %}
         {% if capitolo.no-index == null %}
         <h3 {% if capitolo.bozza %}class="bozza"{% endif %} >
             <a href="{{ capitolo.url }}">
