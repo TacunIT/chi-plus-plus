@@ -166,7 +166,6 @@ definizione di un terzo stato che non può essere né sì, né no; né vero,
 né falso; né esistente, né in-esistente.
 Questo terzo stato intermedio può essere definito solo per mezzo di una
 valutazione che non può essere più logica, ma quantitativa.<br />
-<br />
 Mettiamo che su una scheda perforata il valore 0 sia associato
 all\'assenza di fori e il valore 1 sia associato alla presenza di un
 foro; un terzo valore, differente da 0 e da 1, potrebbe essere
@@ -185,5 +184,4 @@ la chiamassi *five* o *cinco*.
 La quantità esisteva da prima che esistessero i numeri e gli
 sopravviverà.
 
-I numeri, li abbiamo inventati noi.
-La quantità, no.
+I numeri, li abbiamo inventati noi, la quantità, no.

@@ -147,7 +147,8 @@ La Dichiarazione di Indipendenza americana comincia con queste parole:
 
 > We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
 
-Definire un principio: *self-evident* equivale a dichiarare un dogma: una convinzione che appartiene a chi scrive, ma non si applica necessariamente a tutti gli esseri viventi, tanto è vero che è stata necessaria una guerra civile per far accettare agli Stati del Sud l’idea che gli schiavi africani erano esseri umani e dovevano dunque godere della libertà e sono dovuti passare 188 anni, fino al Giugno del 1964, per ammettere che la segregazione razziale era in conflitto con questo principio.
+Definire un principio: *self-evident* equivale a dichiarare un dogma: una convinzione che appartiene a chi scrive, ma non si applica necessariamente a tutti gli esseri viventi.
+È stata necessaria una guerra civile per far accettare agli Stati del Sud l’idea che gli schiavi africani erano esseri umani e dovevano dunque godere della libertà e sono dovuti passare 188 anni, fino al Giugno del 1964, per ammettere che la segregazione razziale era in conflitto con questo principio.
 L'articolo 1. della *Dichiarazione dei Diritti dell'Uomo e del Cittadino* francese recita:
 
 > Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l’utilité commune.
