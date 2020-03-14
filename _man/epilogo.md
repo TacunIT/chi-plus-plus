@@ -3,7 +3,7 @@ layout:     manuale
 class:      capitolo
 title:      C'hi++ - Il senso della Vita è il debug
 h2:         Epilogo
-permalink:  /manuale/epilogo
+permalink:  /man/epilogo
 precedente: ikebarba
 seguente:
 bozza:      true

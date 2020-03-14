@@ -5,11 +5,11 @@ title:      C'hi++ - Il senso della Vita è il debug
 h2:         Indice
 precedente: dedica.html
 seguente:   premessa.html
-permalink:  /manuale/indice
+permalink:  /man/indice
 no-index:   true
 ---
 
-<a class="logo" href="/manuale/"><img class="logo" alt="C'hi++" title="C'hi plus plus" src="/assets/img/chi-plus-plus.png"></a>
+<a class="logo" href="/man/"><img class="logo" alt="C'hi++" title="C'hi plus plus" src="/assets/img/chi-plus-plus.png"></a>
 <section class="indice">
     {% for capitolo in site.manuale %}
         {% if capitolo.no-index == null %}

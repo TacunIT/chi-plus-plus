@@ -1,11 +1,11 @@
 ---
 layout:     manuale
 title:      C'hi++ - Il senso della Vita è il debug
-h2:         Espressioni e operatori
+h2:         Il C++
 class:      capitolo
-permalink:  /manuale/espressioni-e-operatori
-precedente: tipi-di-dato
-seguente:   funzioni
+permalink:  /man/c-plus-plus
+precedente: sistemi-di-numerazione
+seguente:   commenti
 bozza:      true
 ---
 

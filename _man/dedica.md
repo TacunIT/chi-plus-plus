@@ -3,8 +3,8 @@ layout:     dedica
 class:      dedica
 title:      C'hi++ - Il senso della Vita è il debug
 h2:         Dedica
-permalink:  /manuale/dedica
-precedente: /manuale/
+permalink:  /man/dedica
+precedente: /man/
 seguente:   indice
 no-index:   true
 

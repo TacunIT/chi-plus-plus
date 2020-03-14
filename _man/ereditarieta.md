@@ -2,10 +2,10 @@
 layout:     manuale
 class:      capitolo
 title:      C'hi++ - Il senso della Vita è il debug
-h2:         I tipi di dato
-permalink:  /manuale/tipi-di-dato
-precedente: commenti
-seguente:   espressioni-e-operatori
+h2:         L'ereditrietà
+permalink:  /man/ereditarieta
+precedente: polimorfismo
+seguente:   debug
 bozza:      true
 ---
 
