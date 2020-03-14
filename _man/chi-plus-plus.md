@@ -10,4 +10,6 @@ bozza:      true
 ---
 
 <blockquote class="motto">
+Chi vuole capire il computer<br />
+deve andare nella terra del computer.
 </blockquote>
