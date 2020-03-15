@@ -135,11 +135,13 @@ BODY.manuale { padding-top: 1rem; height: 90vh; }
 BODY.manuale HEADER {  }
 BODY.manuale HEADER H1 {display: none  }
 BODY.manuale HEADER H2 {padding: 4rem 0; text-transform: capitalize }
-BODY.manuale MAIN { text-align: justify}
+BODY.manuale MAIN { text-align: justify } 
+BODY.manuale MAIN P { margin-bottom: 1rem }
+BODY.manuale MAIN P A { color: #990; }
 BODY.manuale MAIN UL { margin: 1rem 0; padding-left: 2.5rem; }
 BODY.manuale BLOCKQUOTE.incluso { color: #543; text-align: justify; padding: 1rem; background: #e4e6c1; margin: 1rem 0;}
 BODY.manuale BLOCKQUOTE.motto { text-align: right; padding: 2rem 0 5rem 0; font-size: 0.9em }
-BODY.manuale CODE { display: block; padding: 1rem; font-size: 1rem}
+BODY.manuale CODE { display: block; padding: 1rem 1rem 2rem 1rem; font-size: 10pt; background: #f0f0f0; font-family: Monaco}
 BODY.manuale FOOTER { position: relative;  display: block; text-align: center; width: 100% }
 BODY.manuale IMG.logo {width: 300px; max-width:90%; display: inline-block;}
 
@@ -160,4 +162,3 @@ BODY.manuale.indice SECTION.indice { text-align: center;}
 @media only screen and (max-width: 420px) {
     DIV.testo P { text-align: left }
 }
-

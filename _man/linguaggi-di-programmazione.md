@@ -15,24 +15,25 @@ Tutto è byte.
 
 I linguaggi di programmazione servono a chiedere al computer di fare determinate 
 operazioni.  
-Perché il computer possa ubbidirci, deve "capire" che tipo di entità deve gestire
+Perché il computer possa ubbidirci, deve "capire" che tipo di entità deve gestire 
 e che tipo di operazioni deve compiere su di esse.
-Per esempio, se chiedessimo al computer di raddoppiarci lo stipendio, il computer
-dovrebbe sapere almeno a quanto ammonta il nostro stipendio e come funziona una
-moltiplicazione per due.  
+Per esempio, se chiedessimo al computer di raddoppiarci lo stipendio, il computer 
+dovrebbe sapere almeno a quanto ammonta il nostro stipendio e come funziona una 
+moltiplicazione per due.
 
 ```
 long raddoppia(long stipendio)
 {
-	return stipendio * 2;
+    return stipendio * 2;
 }
 ```
 
 Siccome l'unica cosa che il computer conosce sono delle sequenze di 1 e di 0 
 – siano esse su un disco, in memoria o sulla porta di comunicazione della 
 tastiera o del video, – dobbiamo trovare il modo di "spiegargli" i concetti di
-*stipendio* e *moltiplicazione* in forma binaria.  
-I linguaggi di programmazione fanno precisamente questo: traducono le nostre richieste in un linguaggio che il computer può comprendere.  
+*stipendio* e *moltiplicazione* in forma binaria.	
+I linguaggi di programmazione fanno precisamente questo: traducono le nostre 
+richieste in un linguaggio che il computer può comprendere.
 
 Noi percepiamo il mondo reale come un insieme di eventi che coinvolgono
 una o più entità.
@@ -83,8 +84,8 @@ Il maestro Canaro sosteneva che anche scrivere un
 manuale su un linguaggio di programmazione è un buon sistema per
 impararlo.
 
-I linguaggi di programmazione possono essere di due tipi: interpretati o compilati.  
-Immagina di essere in Cina e di dover tornare al tuo albergo in taxi.
+I linguaggi di programmazione possono essere di due tipi: *interpretati* o *compilati*.  
+Posso spiegarti la differenza in questo modo: immagina di essere in Cina e di dover tornare al tuo albergo in taxi.
 Se non parli il Cinese, ha due possibilità: o porti con te un interprete che
 spieghi al tassista dove devi andare o ti fai dare dall'albergo un foglio di
 carta con l'indirizzo e lo fai vedere al guidatore del taxi.
@@ -96,11 +97,13 @@ Il codice dei linguaggi interpretati viene letto da un programma chiamato: *inte
 Il codice dei linguaggi compilati, al contrario, viene letto da un programma chiamato *compilatore*, che lo converte in istruzioni comprensibili dal computer e scrive queste istruzioni in un nuovo file, detto: *eseguibile*.
 
 Anche in questo caso, ciascun metodo ha lati positivi e lati negativi.  
-I linguaggi interpretati sono più lenti, perché il passaggio lettura/conversione/esecuzione si verifica ogni volta che il codice viene elaborato e richiedono più risorse di sistema da destinare all'interprete, ma ogni modifica al codice sorgente viene trasmessa contestualmente anche al programma in esecuzione.  
+I linguaggi interpretati sono più lenti, perché il passaggio lettura/conversione/esecuzione si ripete ogni volta che il codice viene elaborato; inoltre, richiedono delle risorse di sistema in più da destinare all'interprete.
+In compenso, ogni modifica al codice sorgente viene trasmessa contestualmente anche al programma in esecuzione.  
 I linguaggi compilati sono più rapidi e richiedono meno risorse di sistema perché la compilazione avviene solo una volta, dopo di che il programma può essere eseguito autonomamente, ma se si modifica il codice sorgente, il programma dovrà essere ri-compilato per funzionare correttamente.<br />
 <br />
-Anche la religione è un linguaggio di programmazione, perché consente agli umani di dialogare con Dio.
-Anche le religioni possono essere o compilate o interpretate, a seconda che la comunicazione fra il fedele e Dio sia diretta o mediata da uno o più Ordini sacerdotali.  
+Anche la religione è, da un certo punto di vista, un linguaggio di programmazione, perché consente agli umani di dialogare con Dio.
+Il codice, in questo caso, è la preghiera, che i fedeli formulano e inviamo alla Divinità nella speranza che la esegua.
+Anche le religioni possono essere o compilate o interpretate, a seconda che la comunicazione fra il fedele e Dio sia diretta o mediata da un Ordine sacerdotali.  
 
 
 Tutti i linguaggi hanno una sintassi; tutti i linguaggi hanno dei tipi
@@ -127,7 +130,8 @@ Il maestro rispose: "Con quello che utilizzi tutti i giorni".
 Il discepolo chiese allora: "Maestro, questo vuol dire che si può
 utilizzare uno strumento inadatto, purché si raggiunga lo scopo?".
 Il maestro sorrise benevolmente e disse: "Ti prego, vai a meditare
-sull'insensatezza delle tue domande mentre pulisci le latrine comuni."<br />
+sull'insensatezza delle tue domande mentre pulisci le latrine comuni."
+<br />
 Per molto tempo non riuscii a capire il comportamento del maestro
 Canaro. Per un po', credetti che l'errore fosse quel "meglio" nella
 prima domanda e che il maestro avesse dato una risposta volutamente
