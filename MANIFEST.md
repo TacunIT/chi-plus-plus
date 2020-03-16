@@ -29,7 +29,7 @@ Il primo Articolo della *Déclaration des Droits de l’Homme et du Citoyen* del
 
 pur se condivisibile, non ha prove a conforto e non è valida per chiunque viva in una delle 43 nazioni del Mondo dove vige una monarchia: ovvero una su cinque.
 
-La trinità:
+La contraddittoria<a href="#harari" class="nota" name="fn-1">1</a> trinità:
 
 > Liberté, Égalité, Fraternité
 
@@ -40,7 +40,7 @@ La trinità:
 Nulla prova che questi valori siano reali o corretti, ci devi credere; e ci credi perché qualcosa o qualcuno ti ha convinto a farlo.
 Se consideriamo la notevole disparità di vedute e convinzioni dei Popoli della Terra e, talvolta, degli stessi individui all'interno di un Popolo, è facile capire come la frase:
 
-> AI interactions that consumers and citizens perceive as ethical build trust and satisfaction<a href="#cap"><sup>2</sup></a>
+> AI interactions that consumers and citizens perceive as ethical build trust and satisfaction<a href="#cap" class="nota" name="fn-2"><sup>2</sup></a>
 
 sia ambigua perché ciò che è *percepito* come “ethical” da qualcuno potrebbe non esserlo per altri.
 
@@ -131,5 +131,18 @@ Se volete collaborare o anche esporre delle critiche, potere farlo con gli strum
 
 <h2 class="note">Note</h2>
 
-
-<a id="cap"><sup>1</sup></a> Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
+<section class="note">
+    <h2>Note</h2>
+    <ol>
+    <li>
+        “Fin dalla Rivoluzione francese, in ogni parte del mondo si è arrivati gradualmente a considerare valori universali sia l’eguaglianza sia la libertà individuale. Tali valori, però, si contraddicono a vicenda. L’eguaglianza può essere assicurata solo decurtando le libertà di coloro che stanno meglio.” - Harari, Yuval Noah. *Sapiens. Da animali a dèi: Breve storia dell'umanità*. Bompiani, 2019. 
+        <a href="#fn-1" name="harari">&#8617;</a>
+    </li>
+    <li>
+        Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
+        <a target="note"
+            href="https://www.capgemini.com/research/why-addressing-ethical-questions-in-ai-will-benefit-organizations/">
+            <i>www.capgemini.com/research/why-addressing-ethical-questions-in-ai-will-benefit-organizations </i></a>
+        <a href="#fn-2" name="cap">&#8617;</a>
+    </li>
+</section>
