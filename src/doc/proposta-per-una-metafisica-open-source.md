@@ -34,20 +34,15 @@ Il Sessantotto ha spazzato via delle parti sicuramente rivedibili, ma fondamenta
 La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre la *reaganomics* è crollata alla fine degli anni '80 insieme al muro di Berlino.
 Le speranze degli anni '90 si sono schiantate l'11 Settembre 2001 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformata, nel tempo, in un sistema di controllo e di dis-informazione di massa.
 Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni dagli *smart-phone* e dai *social-network*.
-In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (*c'è crisi*), né comunista (*Stalin e Mao hanno ucciso più persone di Hitler*), né cattolico (*lo chiedessero allo IOR, l'8 per mille*), né ebreo (*guarda gli Israeliani cosa fanno ai Palestinesi*), né Musulmano (*gli islamici sono degli esaltati che vogliono ucciderci tutti*)
-<a href="#corsivo" class="nota" name="fn-1">1</a>,
-si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali che non leggono
-<a href="#istat" class="nota" name="fn-2">2</a>,
-ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.
-C'è modo di invertire questa tendenza o dobbiamo rassegnarci al declino? No.
+In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (*c'è crisi*)<a href="#corsivo" class="nota" name="fn-1">1</a>, né comunista (*Stalin e Mao hanno ucciso più persone di Hitler*), né cattolico (*lo chiedessero allo IOR, l'8 per mille*), né ebreo (*guarda gli Israeliani cosa fanno ai Palestinesi*), né Musulmano (*gli islamici sono degli esaltati che vogliono ucciderci tutti*), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali che non leggono<a href="#istat" class="nota" name="fn-2">2</a>, ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.
+C'è modo di invertire questa tendenza o dobbiamo rassegnarci al declino? No.  
 *No*, non credo che qualcosa cambierà, almeno nel breve periodo, a meno che qualche evento esterno come una crisi, una guerra, una catastrofe naturale, un'invasione aliena o una presa di coscienza collettiva (in ordine decrescente di probabilità) non costringa la nostra specie a modificare il suo comportamento; e *No*, non intendo arrendermi senza avere almeno tentato, perché questi zombie sono le persone che determinano la qualità del nostro presente con il loro voto e con cui dovremo affrontare dei problemi da cui dipenderà il nostro futuro, come la sovrappopolazione, la scarsezza di risorse e l'accumulo di plastica negli oceani.
 Ma “tentare”, cosa?
 Il declino della nostra Società è un sintomo, non è il male; per frenarlo, dobbiamo identificarne la causa.
 
 ### Il male
-Esiste un fattore comune alle ideologie degli ultimi cinquant'anni che ne ha accelerato l'obsolescenza e le ha rese incapaci di sopravvivere alla prima sconfitta: il rifiuto più o meno accanito di ogni forma non strumentale di spiritualità.
-<a href="#calvino" class="nota" name="fn-3">3</a>
-<a name="il-problema"></a>Il problema, se si vuole definire uno schema di valori negando allo stesso tempo qualsiasi forma di trascendenza, è che si è costretti a ricercare i valori e le motivazioni della propria etica all'interno dello schema stesso.
+Esiste un fattore comune alle ideologie degli ultimi cinquant'anni che ne ha accelerato l'obsolescenza e le ha rese incapaci di sopravvivere alla prima sconfitta: il rifiuto più o meno accanito di ogni forma non strumentale di spiritualità.<a href="#calvino" class="nota" name="fn-3">3</a>
+Il problema, se si vuole definire uno schema di valori negando allo stesso tempo qualsiasi forma di trascendenza, è che si è costretti a ricercare i valori e le motivazioni della propria etica all'interno dello schema stesso.
 Si può fare, ma è sbagliato e limitativo.
 È sbagliato da un punto di vista etico, perché le regole che si definiscono sono sempre una conseguenza di esigenze contingenti (guerre, sopraffazioni, disparità sociali), venendo a mancare le quali lo schema logico del sistema perde di significato e si disgrega.
 È sbagliato anche da un punto di vista logico, perché i concetti di vero/falso, giusto/sbagliato devono sempre essere preesistenti allo schema a cui vanno applicati, altrimenti non è possibile sapere se la definizione che se ne dà sia giusta o sbagliata, vera o falsa.
@@ -58,10 +53,10 @@ Al contrario, la Società moderna è una scacchiera in cui ciascun pezzo si muov
 ### La cura
 Fermo restando che la vita su questo Pianeta non potrà mai migliorare realmente fino a quando non riusciremo a fare un uso più responsabile delle nostre gonadi, è ragionevole pensare che un nuovo schema di valori, che abbia al suo vertice la comunità e non l'individuo, unito a una moderata dose di spiritualità potrebbe aiutarci a uscire da questa picchiata auto-distruttiva, se troviamo un modo efficace per diffonderlo.
 
-La (buona) politica sarebbe la soluzione ideale, se i (buoni) politici avessero il potere di prendere delle decisioni impopolari, cosa che non è, perché gli elettori sono dei bambini obesi che, dovendo scegliere fra un dietologo e un gelataio, non fanno mai la scelta corretta per la loro salute.
+La (buona) politica sarebbe la soluzione ideale, se i (buoni) politici avessero il potere di prendere delle decisioni impopolari, ma ciò non è, perché gli elettori sono dei bambini che, dovendo scegliere fra un dietologo e un gelataio, non fanno mai la scelta corretta per la loro salute.
 La cultura non può venirci in aiuto perché la mancanza di stimoli esterni ha prodotto un'economia curtense delle idee nella quale letteratura, cinema, televisione e Internet riciclano ciascuna le idee delle altre, in un banchetto coprofago di concetti e storie già visti.
 L'arte potrebbe aiutarci, ma sfortunatamente non ce n'è più e quelle forme di appagamento sensoriale che da lungo tempo ormai ci vengono spacciate per “arte”, essendo espressione e quindi esaltazione di un singolo sarebbero addirittura controproducenti.
-La scienza, che in passato ha fatto molto per migliorare la qualità della nostra vita, in questo momento, specie in alcuni settori all'avanguardia come la bio-ingegneria o l'intelligenza artificiale, produce innovazione con più rapidità di quanto la Società riesca a metabolizzarla e, almeno per ora, fa più parte del problema che della soluzione.
+La scienza, che in passato ha fatto molto per migliorare la qualità della nostra vita, in questo momento, specie in alcuni settori all'avanguardia come la bio-ingegneria o l'intelligenza artificiale, produce innovazione con più rapidità di quanto la Società riesca a metabolizzarla e, almeno per ora, fa più parte del problema che della soluzione.  
 Scartati politica, cultura, arte e scienza, non ci rimane che la religione.
 Per quelli che sono i nostri scopi, ovvero convincere la gente a non pensare in termini individuali, ma di gruppo, recuperando allo stesso tempo un certo grado di spiritualità, la religione è uno strumento perfetto: è gratuita, è adatta a tutte le età e non richiede una specifica preparazione o attitudine.
 Di contro, la religione ha due grossi difetti: il primo è che ampie fasce della popolazone hanno un'istintiva diffidenza nei suoi confronti perché le attribuiscono colpe che in realtà andrebbero imputate al clero e ai fedeli; il secondo difetto è che le ampie fasce di cui sopra hanno le loro buone ragioni di diffidare, perché la cattiva interpretazione o applicazione dei princìpi delle religioni ha di solito effetti devastanti.
@@ -136,11 +131,8 @@ Questo perché anche i princìpi delle società laiche, al pari dei dogmi delle 
 A differenza dei dogmi religiosi, però, i laici non possono rifarsi a valori di ordine superiore e, come abbiamo visto [sopra](#il-problema), devono trovare i fondamenti delle loro affermazioni nella realtà contingente, cosa che non sempre è possibile, quindi le loro regole risultano ancora più inconsistenti di quelle religiose.
 
 Prendete ad esempio i trenta articoli della [Dichiarazione dei Diritti dell'Uomo](http://www.un.org/en/universal-declaration-human-rights/) del 1948: voi e io troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.
-Per quale motivo un Signore della Guerra centro-africano dovrebbe rispettarle, dato che non sono un insieme di norme giuridiche a cui gli Stati e gli individui debbano attenersi, ma un elenco di quelli che *dovrebbero essere*
-<a href="#achievements" class="nota" name="fn-4">4</a>
-i diritti di ogni essere umano?
-Perché, soprattutto, dovrebbe rispettare delle regole volte al mantenimento della pace, promulgate da un'Organizzazione che ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo
-<a href="#sipri" class="nota" name="fn-5">5</a>
+Per quale motivo un Signore della Guerra centro-africano dovrebbe rispettarle, dato che non sono un insieme di norme giuridiche a cui gli Stati e gli individui debbano attenersi, ma un elenco di quelli che *dovrebbero essere*<a href="#achievements" class="nota" name="fn-4">4</a> i diritti di ogni essere umano?
+Perché, soprattutto, dovrebbe rispettare delle regole volte al mantenimento della pace, promulgate da un'Organizzazione che ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="#sipri" class="nota" name="fn-5">5</a>
 e che violano costantemente quelle stesse regole da loro promosse?
 <br>
 La Dichiarazione di Indipendenza americana comincia con queste parole:
@@ -148,14 +140,13 @@ La Dichiarazione di Indipendenza americana comincia con queste parole:
 > We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
 
 Definire un principio: *self-evident* equivale a dichiarare un dogma: una convinzione che appartiene a chi scrive, ma non si applica necessariamente a tutti gli esseri viventi.
-È stata necessaria una guerra civile per far accettare agli Stati del Sud l’idea che gli schiavi africani erano esseri umani e dovevano dunque godere della libertà e sono dovuti passare 188 anni, fino al Giugno del 1964, per ammettere che la segregazione razziale era in conflitto con questo principio.
+È stata necessaria una guerra civile per far accettare agli Stati del Sud l’idea che gli schiavi africani erano esseri umani e dovevano dunque godere della libertà e sono dovuti passare 188 anni, fino al Giugno del 1964, per ammettere che la segregazione razziale era in conflitto con questo principio. Per non parlare dei nativi americani.  
 L'articolo 1. della *Dichiarazione dei Diritti dell'Uomo e del Cittadino* francese recita:
 
 > Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l’utilité commune.
 
 Questa affermazione è sicuramente condivisibile, ma sfortunatamente non è provata da alcun dato di fatto.
-Al contrario, è smentita dalla presenza di 26 monarchie che regnano su 43 delle 195 nazioni del Mondo.
-<a href="#reami" class="nota" name="fn-6">6</a>
+Al contrario, è smentita dalla presenza di 26 monarchie che regnano su 43 delle 195 nazioni del Mondo.<a href="#reami" class="nota" name="fn-6">6</a>
 <br>
 Insomma: dato che l'approccio laico presenta gli stessi problemi logici di quello religioso, mancando però dei corrispondenti lati positivi, non ci resta altra scelta che cercare di far “funzionare” la religione.
 
@@ -291,7 +282,6 @@ Per correggere o quanto meno mitigare questi problemi, una religione dovrebbe qu
 </ol>
 
 Pur se complesso, tutto questo è possibile.
-<p class="newpage"></p>
 
 ## Soluzione proposta
 Da circa dieci anni sto sviluppando una metafisica che rispetta le condizioni viste sopra e che, soprattutto, è del tutto indipendente dall'esistenza di una o più Divinità.
@@ -371,8 +361,7 @@ Se avessimo applicato la stessa modifica al Cattolicesimo, riabilitando la figur
 
 ## Release 0.1: Sostiene Aristotele
 A Giugno del 2007 scrissi un documento dal titolo:  [Sostiene Aristotele](sostiene-aristotele.md) che possiamo considerare la versione 0.1.1 del C'hi++.
-In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.
-<a href="#soko" class="nota" name="fn-8">8</a>
+In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<a href="#soko" class="nota" name="fn-8">8</a>
 Nelle fasi di espansione, l'Uno esplodeva, generando l'Universo così come lo conosciamo; nelle fasi di contrazione, l'Universo collassava nell'Uno.
 Anche se in embrione, gli elementi principali del C'hi++ ci sono tutti; la rarefazione degli elementi metafisici:
 
@@ -473,19 +462,15 @@ Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Uni
 </div>
 
 ### Il senso della vita è il debug
-Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*
-<a href="#beta-tester" class="nota" name="fn-9">9</a>
-di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali (come il *Koan Mu* o il motivo per cui Nansen taglia in due il gatto
-<a href="#mumon" class="nota" name="fn-10">10</a>)
+Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*<a href="#beta-tester" class="nota" name="fn-9">9</a>
+di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali (come il *Koan Mu* o il motivo per cui Nansen taglia in due il gatto<a href="#mumon" class="nota" name="fn-10">10</a>)
 ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.
-Infatti, se paragoniamo l'esistenza a una sessione di test del software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori
-<a href="#vasana" class="nota" name="fn-11">11</a>
+Infatti, se paragoniamo l'esistenza a una sessione di test del software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori<a href="#vasana" class="nota" name="fn-11">11</a>
 perché venga corretto nelle successive versioni del programma.
 Visto che, nel nostro caso, *beta-tester*, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/*beta-tester*, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.
 In quest'ottica, la frase:
 
->cento Mondi di peccato sono dissipati dalla luce di un solo pentimento
-<a href="#pentimento" class="nota" name="fn-12">12</a>
+>cento Mondi di peccato sono dissipati dalla luce di un solo pentimento<a href="#pentimento" class="nota" name="fn-12">12</a>
 
 non è un'anomalia, ma è una diretta conseguenza della sua presa di coscienza, perché se l'errore viene corretto, il dolore che ha causato in questa esistenza non si ripeterà nelle esistenze successive e l'Universo sarà un po' più Paradiso e un po' meno Inferno.
 
@@ -496,8 +481,7 @@ In sostanza: la definizione che Frazer dà del termine *religione*:
 
 <div class="citazione" >
 gli sforzi dell’uomo per propiziarsi o conciliarsi potenze superiori che si
-suppone dirigano e controllino il corso della natura e della vita umana.
-<a href="#frazer" class="nota" name="fn-">13</a>
+suppone dirigano e controllino il corso della natura e della vita umana.<a href="#frazer" class="nota" name="fn-">13</a>
 </div>
 
 è valida anche per il C'hi++, solo che le “potenze superiori”, siamo noi stessi.
@@ -576,8 +560,7 @@ Il secondo precetto dell'Ikebarba è:
 
 > L'Ikebarba comincia nel negozio
 
-Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente; è preferibile quindi non farsi sedurre dalle lusinghe del Marketing e acquistare abiti dalle tinte sobrie e possibilmente intonati gli uni agli altri, in modo da renderne più facile e più elegante la composizione sullo stendipanni.
-<a href="#no-mao" class="nota" name="fn-14">14</a>
+Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente; è preferibile quindi non farsi sedurre dalle lusinghe del Marketing e acquistare abiti dalle tinte sobrie e possibilmente intonati gli uni agli altri, in modo da renderne più facile e più elegante la composizione sullo stendipanni.<a href="#no-mao" class="nota" name="fn-14">14</a>
 
 ### Struttura del testo
 I primi tre capitoli inquadrano storicamente il contesto in cui si svolge l'azione, un possibile futuro in cui gli informatici sono stati trasformati in una casta sacerdotale:
@@ -712,23 +695,20 @@ di luce, così l'Universo è costituito da una matrice tridimensionale di
 spazioni, capaci di esistere se ricevono energia.
 La sequenza vista sopra, riletta in chiave spazionista, diventa:
 
-1. l'Uno Primigenio esplode a causa
-<a href="#causa" class="nota" name="fn-15">15</a>
+1. l'Uno Primigenio esplode a causa<a href="#causa" class="nota" name="fn-15">15</a>
 di una Forza che ne disperde l'Energia nello spazio;
 2. l'Energia si spande per l'Universo e, conferendo massa/esistenza agli
 spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi
 e solidi che noi conosciamo, dall'elio della nebulosa di *Wolf–Rayet* alla
 nostra maestra delle Elementari;
-4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante
-<a href="#variante" class="nota" name="fn-16">16</a>
+4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante<a href="#variante" class="nota" name="fn-16">16</a>
 della Storia, che a sua volta genererà nuove esperienze e nuovi *Post-It*;
 4. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
 5. tutto ricomincia daccapo.
 
 ####Basso accoppiamento
 Lo Spazionismo è la parte più pericolosa di tutta la mia metafisica.
-Non solo perché non ho alcun titolo per parlare di spazio e materia, ma perché il nome stesso della teoria è legato ai suoi postulati: il nome *Spazionismo* deriva dal nome *spazione* e il nome *spazione* deriva dai presunti attributi dell'entità che rappresenta
-<a href="#spazione" class="nota" name="fn-17">17</a>.
+Non solo perché non ho alcun titolo per parlare di spazio e materia, ma perché il nome stesso della teoria è legato ai suoi postulati: il nome *Spazionismo* deriva dal nome *spazione* e il nome *spazione* deriva dai presunti attributi dell'entità che rappresenta<a href="#spazione" class="nota" name="fn-17">17</a>.
 È, questa, la trasposizione astro-fisica del problema meta-fisico visto a proposito del [Buonismo](#buonismo): se alla fine si scopre che Dio non è buono o che comunque non ha senso attribuirgli delle qualità terrene, il nome della religione non ha più senso, indipendentemente dalla solidità dei suoi precetti.
 <br />
 In informatica, questo rischio si previene adottando il metodo del *basso accoppiamento* o *low coupling*, un termine che non si riferisce alla generale difficoltà degli informatici a instaurare rapporti con persone di sesso opposto, ma alla separazione delle funzioni all'interno di un sistema.
@@ -738,8 +718,7 @@ Sfortunatamente, quando ho pensato a tutto ciò, il nome Spazionismo era già st
 
 ## Release 0.3: Git
 A Dicembre del 2016 divenne chiaro che anche se avessi potuto dedicare a questo progetto tutto il mio tempo (e non potevo), non sarei mai riuscito a portarlo a termine da solo.
-Trasformare il mio *studio matto e disparatissimo*
-<a href="#leopardi" class="nota" name="fn-17">17</a>
+Trasformare il mio *studio matto e disparatissimo*<a href="#leopardi" class="nota" name="fn-18">18</a>
 in un progetto *open-source*, coinvlgendo nello “sviluppo” anche altre persone, mi sembrò la cosa migliore da fare, così cominciai a scrivere questo documento per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
 
 ### Git
@@ -810,8 +789,7 @@ può funzionare su tutti i sistemi, perché il colore rosso è uno dei tre color
 questo testo fammelo in color rosso pompeiano
 ```
 può funzionare solo su un computer a cui sia stato insegnato come generare quella
-specifica sfumatura di colore nota come: *rosso pompeiano*.
-<a href="#rosso-pompeiano" class="nota" name="fn-19">19</a>
+specifica sfumatura di colore nota come: *rosso pompeiano*.<a href="#rosso-pompeiano" class="nota" name="fn-19">19</a>
 
 Traslando questo concetto in termini letterarii, possiamo dire che una vignetta di satira politica non è portabile, perché implica una conoscenza sia del soggetto della vignetta che dell'evento a cui si riferisce; al contrario, una (buona) poesia è portabile, perché si riferisce a concetti universali che chiunque è in grado di capire.
 Nel nostro caso, possiamo dire che la portabilità è la possibilità di rendere accettabile un concetto per persone aventi culture o convinzioni religiose di tipo diverso.
@@ -820,8 +798,7 @@ Nel nostro caso, possiamo dire che la portabilità è la possibilità di rendere
 *C'hi++* si riferisce alla programmazione dei computer, che è un ambito specifico di un settore specifico, quindi, da un punto di vista simbolico, ha un bassissimo grado di portabilità.
 Se fra duecento anni un archeologo ritrovasse i quaderni con i miei appunti e riuscisse a decifrare la mia grafia, potrebbe non capire a cosa io mi stia riferendo, quando parlo di *classi*, *istanze* e *oggetti*, mentre capirebbe perfettamente cosa simboleggiano l'Oca, l'Usignolo o il Pavone nel poema iraniano *Mantiq al-Tayr*, che è stato scritto nel XII secolo.
 In compenso, molti precetti del C'hi++ sono compatibili con precetti o idee appartenenti ad altre mistiche o filosofie.
-In questi giorni sto leggendo la *Bhagavad-Gita*.
-<a href="#gita" class="nota" name="fn-20">20</a>
+In questi giorni sto leggendo la *Bhagavad-Gita*.<a href="#gita" class="nota" name="fn-20">20</a>
 Alcuni passi mi hanno ricordato le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire “bene”:
 
 <div class="citazione">
@@ -862,8 +839,7 @@ comportamento analogo a quello che ha tenuto in passato, creando un
 circolo vizioso (o virtuoso) che si autoalimenta.
 </div>
 
-Ho trovato delle analogie ai precetti del C'hi++ anche nel *Mantiq al-Tayr*
-<a href="#mantiq" class="nota" name="fn-21">21</a>:
+Ho trovato delle analogie ai precetti del C'hi++ anche nel *Mantiq al-Tayr*<a href="#mantiq" class="nota" name="fn-21">21</a>:
 
 <div class="citazione">
 Tutto è un'unica sostanza in molteplici forme, tutto è un unico discorso in diverse espressioni (...)
@@ -878,8 +854,7 @@ Per certi versi anche la stessa Genesi biblica può essere considerata un'allego
 <br />
 Essendo una metafisica-non-metafisica, però, C'hi++ deve preoccuparsi anche della portabilità scientifica dei suoi precetti.
 Come ho scritto a proposito del basso accoppiamento, il grosso pericolo dello Spazionismo è che deriva il suo stesso nome da uno dei suoi precetti ed è quindi fondamentale che la teoria spazionista non collida apertamente con quelle che sono le conoscenze scientifiche correnti.
-Fortunatamente, la scorsa settimana ho scoperto che il fisico Carlo Rovelli
-<a href="#rovelli" class="nota" name="fn-22">22</a> sta sviluppando una teoria
+Fortunatamente, la scorsa settimana ho scoperto che il fisico Carlo Rovelli<a href="#rovelli" class="nota" name="fn-22">22</a> sta sviluppando una teoria
 sulla granularità dello spazio che presenta diverse affinità con lo Spazionismo.
 Anche se inizialmente ho avuto la tentazione di informarmi meglio per capire, se non proprio la verosimiglianza, quanto meno l'ammissibilità scientifica di alcune affermazioni che penso di fare nel racconto, alla fine ho deciso di approfondire l'argomento solo dopo aver terminato questo testo, per non farmi influenzare e per non procrastinarne la pubblicazione di altri due anni.
 <br />
@@ -891,18 +866,15 @@ in:
 <div class="einstein">
 <p>m = E/c<sup>2</sup></p>
 </div>
-In termini spazionistici, questo equivale a dire che l'Universo (tutta la massa) è Dio (tutta l'energia) diviso la velocità della luce al quadrato: una affermazione che trovo divertente perché, per la teoria spazionista, ciò che divide Dio creando l'Universo è un'entità che si può chiamare o *Diavolo*
-<a href="#diavolo" class="nota" name="fn-23">23</a>
-o, anche, *Lucifero*
-<a href="#lucifero" class="nota" name="fn-24">24</a>;
+In termini spazionistici, questo equivale a dire che l'Universo (tutta la massa) è Dio (tutta l'energia) diviso la velocità della luce al quadrato: una affermazione che trovo divertente perché, per la teoria spazionista, ciò che divide Dio creando l'Universo è un'entità che si può chiamare o *Diavolo*<a href="#diavolo" class="nota" name="fn-23">23</a>
+o, anche, *Lucifero*<a href="#lucifero" class="nota" name="fn-24">24</a>;
 in sostanza: *colui che divide* o *colui che porta la luce*.
 
 ### Istituto Geografico Mistico
 È interessante vedere come un modello teorico, basato su presupposti intenzionalmente materialistici, possa essere compatibile con religioni e filosofie nate in luoghi e in tempi lontani fra loro.
 *Involontariamente* compatibile, aggiungerei, perché, come scrissi in: *Sostiene Aristotele*, quando ho cominciato a sviluppare questa teoria volevo solo vedere se fosse possibile creare una metafisica senza elementi metafisici.
 
-Credo che il rapporto che c'è fra C'hi++ e le religioni rivelate sia lo stesso che passa fra l'immagine da satellite di un bosco e la rappresentazione della stessa area in una mappa topografica dell'I.G.M
-<a href="#igm" class="nota" name="fn-25">25</a>.
+Credo che il rapporto che c'è fra C'hi++ e le religioni rivelate sia lo stesso che passa fra l'immagine da satellite di un bosco e la rappresentazione della stessa area in una mappa topografica dell'I.G.M<a href="#igm" class="nota" name="fn-25">25</a>.
 L'immagine da satellite descrive il bosco così com'è, in tutta la sua bellezza e la sua complessità; la mappa topografica rappresenta quella stessa bellezza con dei simboli, delle convenzioni tipografiche.
 Chi conosce la zona può orientarsi con l'immagine da satellite, godendo così di tutta la bellezza del luogo; chi invece non conosce la zona o non ha un buon senso dell'orientamento utilizzerà la mappa, che gli fornirà una rappresentazione più fredda, ma più facile da interpretare.
 
@@ -917,22 +889,19 @@ Se mai riuscirò a fare tutto questo, sarò solo all'inizio.
 Il *sistema operativo* è quell'insieme di programmi che gestiscono il funzionamento dei computer, facendo da tramite fra l'hardware del sistema e le richieste dell'utente.
 Il software dei sistemi operativi può essere suddiviso logicamente in due blocchi: il *kernel* e la *shell*.
 Il *kernel* è quella parte del sistema che “parla” con l'hardware, gestendo la memoria, gli accessi al disco rigido, le comunicazioni di rete e così via.
-La *shell* è invece quella parte del sistema che interagisce con l'utente, traducendo in lettere, immagini e suoni i codici numerici prodotti dal kernel.
-<a href="#shell" class="nota" name="fn-26">26</a>
+La *shell* è invece quella parte del sistema che interagisce con l'utente, traducendo in lettere, immagini e suoni i codici numerici prodotti dal kernel.<a href="#shell" class="nota" name="fn-26">26</a>
 In quest'ottica, C'hi++ è un kernel, non un sistema operativo completo, perché è privo di una vera e propria interfaccia utente.
 Questa mancanza è un requisito di progetto, non un errore, ma lo rende poco adatto all'utilizzo di massa e dato che:
 
 > la maggior parte degli esseri umani alla ricerca del senso della vita ha
 la tendenza a divenire parte di un gruppo, anche se non ne condivide del
-tutto le convinzioni, dato che nel gruppo/tribu trova protezione e forza
-<a href="#shenk" class="nota" name="fn-27">27</a>
+tutto le convinzioni, dato che nel gruppo/tribu trova protezione e forza<a href="#shenk" class="nota" name="fn-27">27</a>
 
 sarà necessario definire una o più “interfacce utente” che facilitino la fruibilità dei precetti del C'hi++ definendo delle forme rituali e di aggregazione.
 Un ostacolo alla diffusione di massa che, al contrario, non penso sarà possibile rimuovere è che C'hi++, intenzionalmente, non dà delle risposte definitive, assolute, ma stimola a una ricerca continua.
 Per alcuni, questo può essere un lato positivo, ma si tratta di una minoranza; in questo momento, la maggior parte delle persone è alla ricerca di certezze, non di verità.
 D'altro canto, il Buddismo Zen utilizza un approccio simile da più di mille anni
-e anche la religone ebraica, se dobbiamo credere al Katz
-<a href="#katz" class="nota" name="fn-28">28</a>,
+e anche la religone ebraica, se dobbiamo credere al Katz<a href="#katz" class="nota" name="fn-28">28</a>,
 ha prodotto un gran numero di premii Nobel perché spinge i suoi fedeli a mettere
 in discussione le affermazioni dei testi sacri, rendendoli così più propensi a
 sviluppare idee originali, quindi preferisco aspettare un po', prima di
@@ -940,8 +909,7 @@ considerare un errore questa caratteristica.
 
 ### Un'etica per apparati digitali
 In questo periodo storico, non sono solo gli umani ad avere bisogno di una nuova etica.
-Qualche tempo fa, stavo cercando un saggio sul *brainjacking*
-<a href="# brainjacking" class="nota" name="fn-29">29</a>
+Qualche tempo fa, stavo cercando un saggio sul *brainjacking*<a href="# brainjacking" class="nota" name="fn-29">29</a>
 su [Springer](https://rd.springer.com) e nell'elenco degli articoli mi sono
 apparsi due titoli in sequenza:
 
@@ -953,10 +921,8 @@ D'improvviso, da dietro un'auto parcheggiata, sbuca un bambino.
 Il computer di bordo elabora i dati su velocità e direzione e scopre che quella storia non ha un lieto fine, perché qualunque cosa faccia, morirà qualcuno: o il bambino o il notaio.
 L'auto, a questo punto, deve decidere quale dei due umani uccidere, come se fosse un software per il gioco degli Scacchi che debba decidere quale di due pezzi in pericolo sacrificare.
 Ma mentre il programma scacchistico conosce perfettamente sia il valore
-*assoluto* dei due pezzi in questione
-<a href="#scacchi-1" class="nota" name="fn-30">30</a>
-che il loro valore *relativo* in quel preciso momento della partita
-<a href="#scacchi-2" class="nota" name="fn-31">31</a>,
+*assoluto* dei due pezzi in questione<a href="#scacchi-1" class="nota" name="fn-30">30</a>
+che il loro valore *relativo* in quel preciso momento della partita<a href="#scacchi-2" class="nota" name="fn-31">31</a>,
 l'auto non sa nulla dei due umani.
 Del passeggero conosce i dati anagrafici e biometrici (peso, lunghezza delle gambe, firma vocale ecc.), mentre del bambino conosce solo la posizione e, vagamente, la massa; nulla sa, la povera automobile, della loro caratura morale o di ciò che faranno in futuro, se lei gliene concederà uno.
 Non può quindi decidere in base alla logica, ma deve porli arbitrariamente su una scala e sacrificare quello che si trova sul gradino più basso.
@@ -972,12 +938,10 @@ Nella scala di valori dell'Ufficio Marketing della casa automobilistica il bambi
 > Smart-car uccide un bambino per salvare un notaio
 
 mentre dal punto di vista dell'Ufficio Legale o della società assicurativa, il notaio vale più del bambino, perché è più costoso da ripagare.
-L'auto non ha il tempo di valutare tutte queste variabili, quindi ha bisogno di una sua scala di valori che le permetta di *prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso
-<a href="#book" class="nota" name="fn-32">32</a>
+L'auto non ha il tempo di valutare tutte queste variabili, quindi ha bisogno di una sua scala di valori che le permetta di *prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso<a href="#book" class="nota" name="fn-32">32</a>
 non possono essere d'aiuto*; in altre parole, l'automobile ha bisogno di una Fede.
 Ovviamente non potrà essere una delle religioni canoniche, perché sarebbe limitante dal punto di vista delle vendite e apparentemente non sarà nemmeno una filosofia laica, perché se ce ne fosse una adatta, in vent'anni l'avrebbero trovata.
-Dovrà quindi essere qualcosa di intermedio, né religioso né laico, con princìpi che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori.
-<a href="#barbelognostica" class="nota" name="fn-33">33</a>
+Dovrà quindi essere qualcosa di intermedio, né religioso né laico, con princìpi che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori.<a href="#barbelognostica" class="nota" name="fn-33">33</a>
 Dovrà essere in condizione di adattarsi senza stravolgimenti al *mutare delle fogge e dei costumi* della Società e dovrà poter imparare dai suoi errori, correggendoli rapidamente.
 Dovrà essere *vendor-independent* e *open-source*, per facilitare la scoperta e la correzione di eventuali errori.
 Tanto meglio, poi, se potesse essere compresa e gestita facilmente dal software e dagli informatici.
@@ -986,8 +950,7 @@ I princìpi del C'hi++, anche se ancora in embrione, permettono risolvere il dil
 In pratica, l'utente della *smart-car*, prima di partire, dovrà decidere che tipo di comportamento dovrà adottare il sistema nel caso si presentasse il problema: "o lui o io"; una soluzione che risolve non solo i problemi del sistema di guida, ma anche quelli degli uffici marketing e legale, perché scarica la responsabilità della scelta sull'utente e non sulla casa automobilistica o sul produttore del software.
 In ottica C'hi++ il titolo sul giornale potrebbe essere:
 
-> Notaio uccide bambino con la sua smart-car. Chi vi dice che sia una disgrazia?
-<a href="#cavallo" class="nota" name="fn-34">34</a>
+> Notaio uccide bambino con la sua smart-car. Chi vi dice che sia una disgrazia?<a href="#cavallo" class="nota" name="fn-34">34</a>
 
 ## Conclusioni
 Non so quale sarà il destino di *C'hi++*; non so dire nemmeno se questo testo mi procurerà aiuto o sberleffi.
