@@ -96,14 +96,14 @@ Con i linguaggi di programmazioni avviene la stessa cosa.
 Il codice dei linguaggi interpretati viene letto da un programma chiamato: *interprete*, che traduce le istruzioni scritte dall'umano nel linguaggio del computer e le esegue.
 Il codice dei linguaggi compilati, al contrario, viene letto da un programma chiamato *compilatore*, che lo converte in istruzioni comprensibili dal computer e scrive queste istruzioni in un nuovo file, detto: *eseguibile*.
 
-Anche in questo caso, ciascun metodo ha lati positivi e lati negativi.  
+Anche in questo caso ciascun metodo ha lati positivi e lati negativi.  
 I linguaggi interpretati sono più lenti, perché il passaggio lettura/conversione/esecuzione si ripete ogni volta che il codice viene elaborato; inoltre, richiedono delle risorse di sistema in più da destinare all'interprete.
 In compenso, ogni modifica al codice sorgente viene trasmessa contestualmente anche al programma in esecuzione.  
 I linguaggi compilati sono più rapidi e richiedono meno risorse di sistema perché la compilazione avviene solo una volta, dopo di che il programma può essere eseguito autonomamente, ma se si modifica il codice sorgente, il programma dovrà essere ri-compilato per funzionare correttamente.<br />
 <br />
 Anche la religione è, da un certo punto di vista, un linguaggio di programmazione, perché consente agli umani di dialogare con Dio.
 Il codice, in questo caso, è la preghiera, che i fedeli formulano e inviamo alla Divinità nella speranza che la esegua.
-Anche le religioni possono essere o compilate o interpretate, a seconda che la comunicazione fra il fedele e Dio sia diretta o mediata da un Ordine sacerdotali.  
+Anche le religioni possono essere o compilate o interpretate, a seconda che la comunicazione fra il fedele e Dio sia diretta o mediata da un Ordine sacerdotale.  
 
 
 Tutti i linguaggi hanno una sintassi; tutti i linguaggi hanno dei tipi

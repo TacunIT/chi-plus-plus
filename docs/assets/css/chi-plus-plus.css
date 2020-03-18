@@ -63,14 +63,6 @@ sup {
     line-height: 0;
 }
 
-/* Utilizzato per le note */
-SUP A {
-    font-family: Verdana, Sans;
-    font-size: 0.70rem;
-    color: #999;
-    text-decoration: none;
-}
-
 h1, h2, h3, h4, h5, h6 {
     margin: 1rem 0 0.5rem;
     padding: 0;
@@ -93,11 +85,6 @@ h2 {
     padding-top: 1rem;
     counter-reset: h3;
     color: #600;
-}
-
-/** Utilizzato per le note finali */
-h2.note {
-    page-break-before: always;
 }
 
 h3 {
@@ -456,8 +443,8 @@ kbd {
  */
 
 SECTION.page {
- page-break-before: always;
- page-break-after: always;
+    page-break-before: always;
+    page-break-after: always;
 }
 
 SECTION.cover {
@@ -530,6 +517,41 @@ SECTION.citazione BLOCKQUOTE {
     color: red;
 }
 
+/**
+ *
+ *  Stili per la gestione delle note a piè di pagina
+ *
+ */
+SECTION.note,
+SECTION.bibliografia {
+    page-break-before: always;
+}
+
+A.nota {
+    font-size: 0.80rem;
+    color: #666;
+    text-decoration: underline;
+    vertical-align: super;
+    display: inline-block;
+    margin-left: 0.12rem; 
+}
+
+SECTION.note OL ,
+SECTION.bibliografia UL {
+    font-size: 0.9rem;
+    margin-left: 0;
+}
+SECTION.note LI ,
+SECTION.bibliografia LI {
+    margin-bottom: 0.5rem;
+}
+
+IMG.qr {
+    position: relative;
+    width: 100px;
+    margin-left: 2mm;
+    float: right;
+}
 
 /**
  *  Stili per il file README
