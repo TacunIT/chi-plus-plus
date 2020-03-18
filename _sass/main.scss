@@ -58,7 +58,11 @@ TABLE, TD, TR {
     border-collapse: collapse;
     border: solid 1px #999;
     padding: 0.25rem 0.5rem;
-    }
+}
+OL {
+  padding: 0 2rem;
+  margin: 1rem 0;
+}
 /**
  *  Stili dei menu
  */
@@ -141,10 +145,23 @@ BODY.manuale MAIN P A { color: #990; }
 BODY.manuale MAIN UL { margin: 1rem 0; padding-left: 2.5rem; }
 BODY.manuale BLOCKQUOTE.incluso { color: #543; text-align: justify; padding: 1rem; background: #e4e6c1; margin: 1rem 0;}
 BODY.manuale BLOCKQUOTE.motto { text-align: right; padding: 2rem 0 5rem 0; font-size: 0.9em }
-BODY.manuale CODE { display: block; padding: 1rem 1rem 2rem 1rem; font-size: 10pt; background: #f0f0f0; font-family: Monaco}
+BODY.manuale CODE { max-widh: 90%;display: block; padding: 1rem 1rem 2rem 1rem; font-size: 10pt; background: #f0f0f0; font-family: Monaco}
 BODY.manuale FOOTER { position: relative;  display: block; text-align: center; width: 100% }
 BODY.manuale IMG.logo {width: 300px; max-width:90%; display: inline-block;}
 
+/** Tabella per le aree di memoria */
+TABLE.memoria TR{
+    background: inherit;
+    font-family: Monaco;
+    font-size: 10pt;
+}
+TABLE.memoria TD {
+  width: 20px;
+  height: 20px;
+}
+TABLE.memoria TD.area {
+    background: #aaa;
+}
 
 BODY.manuale.copertina { padding-top: 2rem }
 BODY.manuale.dedica MAIN { margin: 25vh auto 15vh auto;}

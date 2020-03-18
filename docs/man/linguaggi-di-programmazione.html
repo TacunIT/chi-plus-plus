@@ -99,9 +99,9 @@ di utilizzarlo per scrivere programmi.</p>
 
 <p>Il maestro Canaro sosteneva che anche scrivere un
 manuale su un linguaggio di programmazione è un buon sistema per
-impararlo.</p>
-
-<p>I linguaggi di programmazione possono essere di due tipi: <em>interpretati</em> o <em>compilati</em>.<br />
+impararlo.<br />
+<br />
+I linguaggi di programmazione possono essere di due tipi: <em>interpretati</em> o <em>compilati</em>.<br />
 Posso spiegarti la differenza in questo modo: immagina di essere in Cina e di dover tornare al tuo albergo in taxi.
 Se non parli il Cinese, ha due possibilità: o porti con te un interprete che
 spieghi al tassista dove devi andare o ti fai dare dall’albergo un foglio di
@@ -113,32 +113,120 @@ Con i linguaggi di programmazioni avviene la stessa cosa.
 Il codice dei linguaggi interpretati viene letto da un programma chiamato: <em>interprete</em>, che traduce le istruzioni scritte dall’umano nel linguaggio del computer e le esegue.
 Il codice dei linguaggi compilati, al contrario, viene letto da un programma chiamato <em>compilatore</em>, che lo converte in istruzioni comprensibili dal computer e scrive queste istruzioni in un nuovo file, detto: <em>eseguibile</em>.</p>
 
-<p>Anche in questo caso, ciascun metodo ha lati positivi e lati negativi.<br />
+<p>Anche in questo caso ciascun metodo ha lati positivi e lati negativi.<br />
 I linguaggi interpretati sono più lenti, perché il passaggio lettura/conversione/esecuzione si ripete ogni volta che il codice viene elaborato; inoltre, richiedono delle risorse di sistema in più da destinare all’interprete.
 In compenso, ogni modifica al codice sorgente viene trasmessa contestualmente anche al programma in esecuzione.<br />
 I linguaggi compilati sono più rapidi e richiedono meno risorse di sistema perché la compilazione avviene solo una volta, dopo di che il programma può essere eseguito autonomamente, ma se si modifica il codice sorgente, il programma dovrà essere ri-compilato per funzionare correttamente.<br />
 <br />
 Anche la religione è, da un certo punto di vista, un linguaggio di programmazione, perché consente agli umani di dialogare con Dio.
 Il codice, in questo caso, è la preghiera, che i fedeli formulano e inviamo alla Divinità nella speranza che la esegua.
-Anche le religioni possono essere o compilate o interpretate, a seconda che la comunicazione fra il fedele e Dio sia diretta o mediata da un Ordine sacerdotali.</p>
-
-<p>Tutti i linguaggi hanno una sintassi; tutti i linguaggi hanno dei tipi
+Anche le religioni possono essere o compilate o interpretate, a seconda che la comunicazione fra il fedele e Dio sia diretta o mediata da un Ordine sacerdotale.
+<br /><br />
+Tutti i linguaggi hanno una sintassi; tutti i linguaggi hanno dei tipi
 di dato.
-Solo pochissimi linguaggi hanno anche dei principî.</p>
+Solo pochissimi linguaggi hanno anche dei principî.<br />
+I principi sono importanti, perché danno robustezza al linguaggio.<br />
+Il linguaggio C, da cui è derivato il C++, non ha principii: è solo un modo per descrivere gli eventi all’interno di un computer.
+L’istruzione:</p>
 
-<!--
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char b = 23;
+</code></pre></div></div>
+
+<p>è un modo per dire al computer:</p>
+
+<ol>
+  <li>trova un’area di memoria libera larga 1 byte;</li>
+  <li>assegna l’indirizzo di quell’area alla variabile <em>b</em>;</li>
+  <li>inserisci nell’area di memoria il valore <em>23</em>.</li>
+</ol>
+
+<p>Immagina che tu sia il C.
+Il muro della cucina è la memoria del computer e che ciascuna mattonella è un byte.
+Le prime diciassette mattonelle sono occupate, ma dalla diciottesima alla venticinquesima ci sono otto mattonelle libere, così tu prendi un pennarello e, senza farti vedere dal cuoco, scrivi nelle otto mattonelle libere il corrispondente binario del numero 23:</p>
+
+<table class="memoria">
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+	<tr>
+    <td></td>
+    <td class="area prima">0</td>
+    <td class="area">0</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+</table>
+<p><br />
+La variabile <em>b</em>, a questo punto, avrà un <em>indirizzo</em>, ovvero il numero della prima mattonella (18) e un <em>valore</em>, ovvero il numero binario contenuto nelle otto mattonelle (23).<br />
+Se l’istruzione successiva fosse:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char c = b * 2;
+</code></pre></div></div>
+
+<p>tutto quello che dovresti fare è di cercare un’altra serie di otto mattonelle libere in cui scrivere il valore della variabile <em>b</em> spostato verso sinistra di uno 0:</p>
+
+<table class="memoria">
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+	<tr>
+    <td></td>
+    <td class="area prima">0</td>
+    <td class="area">0</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td>
+    <td class="area prima">0</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">0</td>
+    <td></td><td></td><td></td><td></td><td></td>
+  </tr>
+</table>
+<p><br />
+&lt;!–
 @todo: Completare.
-@body: I principi sono importanti, perché danno robustezza al linguaggio.
+@body: 
 Avere dei principi non è limitativo.
 Il C non ha principi, ma i suoi costrutti sono limitati ai tipi di dato
 previsti.
-Al contrario, il C++, che si basa sui principi dell'Object-oriented e
+Al contrario, il C++, che si basa sui principi dell’Object-oriented e
 delle classi, ha una maggior duttilità e può adattare i suoi
 costrutti a qualsiasi contesto.
 Qui si possono riprendere i concetti visti nel Manfesto a proposito delle
-ideologie dell'ultimo cinquantennio.
+ideologie dell’ultimo cinquantennio.</p>
 
--->
+<p>–&gt;</p>
 
 <p>Un giorno un discepolo chiese al maestro Canaro: “Maestro, con quale
 tipo di arco si tira meglio?”.
