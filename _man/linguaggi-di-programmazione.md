@@ -73,7 +73,7 @@ La matematica, inoltre, contiene preposizioni formalmente corrette che sono o fa
 o paradossali, come la radice quadrata di -1.<br />
 Il Maestro Canaro sosteneva che i paradossi sono la crittografia di Dio.
 Se fosse vero, la matematica sarebbe utile non perché quasi sempre è coerente,
-ma perché, di quando in quando, produce dei paradossi.<br />
+ma perché, di quando in quando, produce dei paradossi.  
 <br />
 Bjarne Stroutsup, o forse Brian Kernigan, disse:
 
@@ -82,8 +82,8 @@ di utilizzarlo per scrivere programmi.
 
 Il maestro Canaro sosteneva che anche scrivere un
 manuale su un linguaggio di programmazione è un buon sistema per
-impararlo.
-
+impararlo.  
+<br />
 I linguaggi di programmazione possono essere di due tipi: *interpretati* o *compilati*.  
 Posso spiegarti la differenza in questo modo: immagina di essere in Cina e di dover tornare al tuo albergo in taxi.
 Se non parli il Cinese, ha due possibilità: o porti con te un interprete che
@@ -103,16 +103,103 @@ I linguaggi compilati sono più rapidi e richiedono meno risorse di sistema perc
 <br />
 Anche la religione è, da un certo punto di vista, un linguaggio di programmazione, perché consente agli umani di dialogare con Dio.
 Il codice, in questo caso, è la preghiera, che i fedeli formulano e inviamo alla Divinità nella speranza che la esegua.
-Anche le religioni possono essere o compilate o interpretate, a seconda che la comunicazione fra il fedele e Dio sia diretta o mediata da un Ordine sacerdotale.  
-
-
+Anche le religioni possono essere o compilate o interpretate, a seconda che la comunicazione fra il fedele e Dio sia diretta o mediata da un Ordine sacerdotale.
+<br />  
 Tutti i linguaggi hanno una sintassi; tutti i linguaggi hanno dei tipi
 di dato.
 Solo pochissimi linguaggi hanno anche dei principî.  
+I principi sono importanti, perché danno robustezza al linguaggio.  
+Il linguaggio C, da cui è derivato il C++, non ha principii: è solo un modo per descrivere gli eventi all'interno di un computer.
+L'istruzione:
 
+```
+char b = 23;
+```
+
+è un modo per dire al computer:
+
+1. trova un'area di memoria libera larga 1 byte;
+1. assegna l'indirizzo di quell'area alla variabile *b*;
+1. inserisci nell'area di memoria il valore *23*.
+
+Immagina che tu sia il C.
+Il muro della cucina è la memoria del computer e che ciascuna mattonella è un byte.
+Le prime diciassette mattonelle sono occupate, ma dalla diciottesima alla venticinquesima ci sono otto mattonelle libere, così tu prendi un pennarello e, senza farti vedere dal cuoco, scrivi nelle otto mattonelle libere il corrispondente binario del numero 23:
+
+<table class="memoria">
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+	<tr>
+    <td></td>
+    <td class="area prima">0</td>
+    <td class="area">0</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+</table>  
+<br />
+La variabile *b*, a questo punto, avrà un *indirizzo*, ovvero il numero della prima mattonella (18) e un *valore*, ovvero il numero binario contenuto nelle otto mattonelle (23).  
+Se l'istruzione successiva fosse:
+
+```
+char c = b * 2;
+```
+
+tutto quello che dovresti fare è di cercare un'altra serie di otto mattonelle libere in cui scrivere il valore della variabile *b* spostato verso sinistra di uno 0:
+
+<table class="memoria">
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+	<tr>
+    <td></td>
+    <td class="area prima">0</td>
+    <td class="area">0</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td>
+    <td class="area prima">0</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">0</td>
+    <td></td><td></td><td></td><td></td><td></td>
+  </tr>
+</table>  
+<br />
 <!--
 @todo: Completare.
-@body: I principi sono importanti, perché danno robustezza al linguaggio.
+@body: 
 Avere dei principi non è limitativo.
 Il C non ha principi, ma i suoi costrutti sono limitati ai tipi di dato
 previsti.
