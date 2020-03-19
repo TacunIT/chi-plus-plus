@@ -104,7 +104,7 @@ MAIN.bozza::before {
 MAIN P.immagine { margin: 1rem auto; text-align: center }
 MAIN P.immagine.chi { margin: 0.5rem auto; }
 MAIN P.immagine IMG { border: solid 1px #999;text-align: center;max-width:100%; }
-MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; padding: 1em; font-style: italic }
+MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; padding: 0em 1em 1em 1em; font-style: italic }
 @media only screen and (max-width: 420px) {
     DIV.testo P { text-align: left }
 }
@@ -145,11 +145,14 @@ BODY.manuale MAIN P A { color: #990; }
 BODY.manuale MAIN UL { margin: 1rem 0; padding-left: 2.5rem; }
 BODY.manuale BLOCKQUOTE.incluso { color: #543; text-align: justify; padding: 1rem; background: #e4e6c1; margin: 1rem 0;}
 BODY.manuale BLOCKQUOTE.motto { text-align: right; padding: 2rem 0 5rem 0; font-size: 0.9em }
-BODY.manuale CODE { max-widh: 90%;display: block; padding: 1rem 1rem 2rem 1rem; font-size: 10pt; background: #f0f0f0; font-family: Monaco}
+BODY.manuale CODE { max-widh: 90%;display: block; padding: 0rem 1rem 1rem 1rem; font-size: 10pt; background: #f0f0f0; font-family: Monaco}
 BODY.manuale FOOTER { position: relative;  display: block; text-align: center; width: 100% }
 BODY.manuale IMG.logo {width: 300px; max-width:90%; display: inline-block;}
 
 /** Tabella per le aree di memoria */
+TABLE.memoria {
+    margin-bottom: 1rem;
+}
 TABLE.memoria TR{
     background: inherit;
     font-family: Monaco;
