@@ -123,7 +123,7 @@ char b = 23;
 1. inserisci nell'area di memoria il valore *23*.
 
 Immagina che tu sia il C.
-Il muro della cucina è la memoria del computer e che ciascuna mattonella è un byte.
+Il muro della cucina è la memoria del computer e che ciascuna mattonella è un *bit*.
 Le prime diciassette mattonelle sono occupate, ma dalla diciottesima alla venticinquesima ci sono otto mattonelle libere, così tu prendi un pennarello e, senza farti vedere dal cuoco, scrivi nelle otto mattonelle libere il corrispondente binario del numero 23:
 
 <table class="memoria">
@@ -160,7 +160,7 @@ Se l'istruzione successiva fosse:
 char c = b * 2;
 ```
 
-tutto quello che dovresti fare è di cercare un'altra serie di otto mattonelle libere in cui scrivere il valore della variabile *b* spostato verso sinistra di uno 0:
+tutto quello che dovresti fare è di cercare un'altra serie di otto mattonelle libere in cui scrivere il valore della variabile *b* spostato verso sinistra di una mattonella:
 
 <table class="memoria">
 <tr>
@@ -196,7 +196,34 @@ tutto quello che dovresti fare è di cercare un'altra serie di otto mattonelle l
     <td></td><td></td><td></td><td></td><td></td>
   </tr>
 </table>  
-<br />
+
+Ti vedo stupito, ma è esattamente quello che fai con i numeri decimali. 
+Ripensa a quello che ti ho insegnato ieri.  
+
+Il C è un linguaggio estremamente efficiente per gestire tutte le entità che puoi trovare in un computer – numeri, stringhe, flssi di dati –, ma la sua forza è allo stesso tempo il suo limite, perché non funziona altrettanto bene se devi gestire oggetti più complessi.  
+Anche la gestione delle stringhe di testo, nel C, è rudimentale: se tu provassi a eseguire la somma di cui parla il Maestro Canaro nel suo diario:
+
+```
+int main (int argc, char** argv)
+{
+    char* a = "pippo";
+    char* b = "pluto";
+    printf("\npippo+pluto=%s\n", a+b);
+    return 0;
+}
+```
+
+il compilatore C ti avviserebbe che non può sommare due variabili di tipo char.
+
+```
+pippopluto.c:7:35: error: invalid operands 
+  to binary expression ('char *' and 'char *')
+    printf("\npippo+pluto=%s\n", a+b);
+                                 ~^~
+```
+
+
+
 <!--
 @todo: Completare.
 @body: 
