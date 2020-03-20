@@ -13,6 +13,14 @@ bozza:      true
 Tutto è byte.
 </blockquote>
 
+Bjarne Stroutsup, o forse Brian Kernigan, disse:
+
+> L'unico modo di apprendere un linguaggio di programmazione è quello
+di utilizzarlo per scrivere programmi.
+
+Il maestro Canaro sosteneva che anche scrivere un manuale su un linguaggio di programmazione è un buon sistema per impararlo.  
+<br />
+### Scopo dei linguaggi di programmazione
 I linguaggi di programmazione servono a chiedere al computer di fare determinate 
 operazioni.  
 Perché il computer possa ubbidirci, deve "capire" che tipo di entità deve gestire 
@@ -31,10 +39,42 @@ long raddoppia(long stipendio)
 Siccome l'unica cosa che il computer conosce sono delle sequenze di 1 e di 0 
 – siano esse su un disco, in memoria o sulla porta di comunicazione della 
 tastiera o del video, – dobbiamo trovare il modo di "spiegargli" i concetti di
-*stipendio* e *moltiplicazione* in forma binaria.	
+*stipendio* e *moltiplicazione* in forma binaria.
 I linguaggi di programmazione fanno precisamente questo: traducono le nostre 
 richieste in un linguaggio che il computer può comprendere.
+<br />  
+Un computer è come una nave.  
+L'hardware è in basso, some la sala macchine e la CPU è come il capo macchinista: non vede il mare, non vede il cielo, non sa se la nave stia andando a Nord oppure a Sud.
+Riceve le sue istruzioni dall'interfono e si interessa solo solo della velocità e dei consumi.
+Il sistema operativo è l'equipaggio. È in una posizione intermedia, né in basso né in alto e si prende cura della nave e del carico.Può parlare con il Comandante e con il capo macchinista, ma non parla mai con gli armatori.
+L'interfaccia utente, invece, è il ponte di comando.
+È il punto più alto della nave, da cui si può vedere tutto.
+È in contatto diretto con gli armatori, da cui riceve delle direttive su ciò che deve o non deve fare e con l'equipaggio, che lo informa sullo stato della nave.  
+Così come avviene nel mondo reale, ciascun ambiente ha il suo linguaggio.
+La CPU “ragiona” in linguaggio macchina, una lunga serie di valori decimali che indicano sia le operazioni da compiere che le grandezze coinvolte.
+Il sistema operativo è scritto in C, perché questo è il linguaggio che si adatta meglio a gestire un computer ad alto livello.
+L'interfaccia utente, infine, sfrutta le classi e gli oggetti dei linguggi come il C++ per creare gli elementi grafici che le consentono di interagire con l'utente.
 
+I linguaggi e i costrutti che si applicano a basso livello non funzionano, se si applicano ai livelli più alti.
+L'interfaccia utente conosce molte caratteristiche del programmatore: ne vede il viso nella Webcam, ne ascolta la voce nel microfono; talvolta legge le sue impronte digitali sullo scanner.
+Il sistema operativo non lo può vedere o sentire, ma conosce i suoi dati anagrafici e sa tutto quello che lui scrive ai suoi amici.
+La CPU non sa nulla di lui.
+Gestisce i suoi dati, ma non sa cosa siano.
+Elabora la sequenza di byte:
+
+	01000011 01100001 01101110 01100001 01110010 01101111
+
+ma non sa che è il nome: *Canaro*.
+In effetti, non sa nemmeno cosa sia, la parola: *nome*.
+Per lui è solo la sequenza di byte:
+
+	01001110 01101111 01101101 01100101
+
+Invertendo questi concetti, una volta il Maestro Canaro disse:
+
+> L'Uomo, non può dire se Dio sia buono o meno, perché non si può classificare l'essenza del creatore con gli attributi del creato. Sarebbe come se i *byte* di un computer si chiedessero se il Programmatore valga I o 0.
+
+### Efficacia dei linguaggi di programmazione
 Noi percepiamo il mondo reale come un insieme di eventi che coinvolgono
 una o più entità.
 Ciascuna entità è identificabile per le sue caratteristiche fisiche e ha
@@ -69,20 +109,11 @@ Descrivere i sentimenti con la matematica è come cercare di descrivere
 rigorosamente un sogno: si ottiene sempre una rappresentazione parziale.
 Meglio descriverlo con una musica, lasciando che le suggestioni
 siano implicite.
-La matematica, inoltre, contiene preposizioni formalmente corrette che sono o false
+La matematica, inoltre, contiene preposizioni formalmente corrette che sono o false  
 o paradossali, come la radice quadrata di -1.<br />
 Il Maestro Canaro sosteneva che i paradossi sono la crittografia di Dio.
 Se fosse vero, la matematica sarebbe utile non perché quasi sempre è coerente,
 ma perché, di quando in quando, produce dei paradossi.  
-<br />
-Bjarne Stroutsup, o forse Brian Kernigan, disse:
-
-> L'unico modo di apprendere un linguaggio di programmazione è quello
-di utilizzarlo per scrivere programmi.
-
-Il maestro Canaro sosteneva che anche scrivere un
-manuale su un linguaggio di programmazione è un buon sistema per
-impararlo.  
 <br />
 I linguaggi di programmazione possono essere di due tipi: *interpretati* o *compilati*.  
 Posso spiegarti la differenza in questo modo: immagina di essere in Cina e di dover tornare al tuo albergo in taxi.
@@ -106,9 +137,8 @@ Il codice, in questo caso, è la preghiera, che i fedeli formulano e inviamo all
 Anche le religioni possono essere o compilate o interpretate, a seconda che la comunicazione fra il fedele e Dio sia diretta o mediata da un Ordine sacerdotale.
 <br />  
 Tutti i linguaggi hanno una sintassi; tutti i linguaggi hanno dei tipi
-di dato.
-Solo pochissimi linguaggi hanno anche dei principî.  
-I principi sono importanti, perché danno robustezza al linguaggio.  
+di dato. Pochissimi linguaggi hanno anche dei principî.  
+I principii sono importanti, perché danno robustezza al linguaggio.  
 Il linguaggio C, da cui è derivato il C++, non ha principii: è solo un modo per descrivere gli eventi all'interno di un computer.
 L'istruzione:
 
@@ -123,7 +153,7 @@ char b = 23;
 1. inserisci nell'area di memoria il valore *23*.
 
 Immagina che tu sia il C.
-Il muro della cucina è la memoria del computer e che ciascuna mattonella è un *bit*.
+Il muro della cucina è la memoria del computer es ciascuna mattonella è un *bit*.
 Le prime diciassette mattonelle sono occupate, ma dalla diciottesima alla venticinquesima ci sono otto mattonelle libere, così tu prendi un pennarello e, senza farti vedere dal cuoco, scrivi nelle otto mattonelle libere il corrispondente binario del numero 23:
 
 <table class="memoria">
@@ -197,17 +227,14 @@ tutto quello che dovresti fare è di cercare un'altra serie di otto mattonelle l
   </tr>
 </table>  
 
-Ti vedo stupito, ma è esattamente quello che fai con i numeri decimali. 
-Ripensa a quello che ti ho insegnato ieri.  
-
-Il C è un linguaggio estremamente efficiente per gestire tutte le entità che puoi trovare in un computer – numeri, stringhe, flssi di dati –, ma la sua forza è allo stesso tempo il suo limite, perché non funziona altrettanto bene se devi gestire oggetti più complessi.  
+Il C è un linguaggio estremamente efficiente per gestire tutte le entità che puoi trovare in un computer – numeri, stringhe, flssi di dati –, ma la sua forza è allo stesso tempo il suo limite, perché non funziona altrettanto bene se hai a che fare con oggetti più complessi.  
 Anche la gestione delle stringhe di testo, nel C, è rudimentale: se tu provassi a eseguire la somma di cui parla il Maestro Canaro nel suo diario:
 
 ```
 int main (int argc, char** argv)
 {
-    char* a = "pippo";
-    char* b = "pluto";
+    char a[] = "pippo";
+    char b[] = "pluto";
     printf("\npippo+pluto=%s\n", a+b);
     return 0;
 }
@@ -217,13 +244,16 @@ il compilatore C ti avviserebbe che non può sommare due variabili di tipo char.
 
 ```
 pippopluto.c:7:35: error: invalid operands 
-  to binary expression ('char *' and 'char *')
+  to binary expression ('char []' and 'char []')
     printf("\npippo+pluto=%s\n", a+b);
                                  ~^~
 ```
+In altre parole, il C è un linguaggio che non va oltre l'ambito per cui è stato creato.
+È una convenzione.
+Se domani smettessimo di utilizzare i computer, il C non esisterebbe più, perché tutti i suoi costrutti sono legati al funzionamento degli apparati informatici.
 
-
-
+Al contrario, il C++ e tutti i linguaggi che si basano sul paradigma a oggetti hanno una componente filosofica che trascende l'ambito informatico.
+Se domani smettessimo di utilizzare i computer, i costrutti che il C++ ha ereditato dal C non avrebbero più senso, ma i concetti di *Classe* e di *Oggetto* resterebbero ancora validi.
 <!--
 @todo: Completare.
 @body: 
@@ -233,16 +263,15 @@ previsti.
 Al contrario, il C++, che si basa sui principi dell'Object-oriented e
 delle classi, ha una maggior duttilità e può adattare i suoi
 costrutti a qualsiasi contesto.
-Qui si possono riprendere i concetti visti nel Manfesto a proposito delle
-ideologie dell'ultimo cinquantennio.
-
+Riprendere i concetti visti nel Manfesto a proposito delle
+ideologie dell'ultimo cinquantennio?
 -->
-
+<br />  
 Un giorno un discepolo chiese al maestro Canaro: "Maestro, con quale
 tipo di arco si tira meglio?".
 Il maestro rispose: "Con quello che utilizzi tutti i giorni".
 Il discepolo chiese allora: "Maestro, questo vuol dire che si può
-utilizzare uno strumento inadatto, purché si raggiunga lo scopo?".
+utilizzare uno linguaggio di programmazione inadatto, purché si raggiunga lo scopo?".
 Il maestro sorrise benevolmente e disse: "Ti prego, vai a meditare
 sull'insensatezza delle tue domande mentre pulisci le latrine comuni."
 <br />
