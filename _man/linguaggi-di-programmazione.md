@@ -29,12 +29,12 @@ determinate operazioni.
 Perché il computer possa ubbidirci, deve "capire" che tipo di entità deve gestire e che tipo di operazioni deve compiere su di esse.
 Per esempio, se chiedessimo al computer di raddoppiarci lo stipendio, il computer dovrebbe sapere almeno a quanto ammonta il nostro stipendio e come funziona una moltiplicazione per due.
 
-<code>
+<pre>
 long raddoppia(long stipendio)
 {
     return stipendio * 2;
 }
-</code>
+</pre>
 
 Siccome l'unica cosa che il computer conosce sono delle sequenze di 1 e di 0 
 – siano esse su un disco, in memoria o sulla porta di comunicazione della 
@@ -42,42 +42,59 @@ tastiera o del video, – dobbiamo trovare il modo di "spiegargli" i concetti di
 *stipendio* e *moltiplicazione* in forma binaria.
 I linguaggi di programmazione fanno precisamente questo: traducono le nostre 
 richieste in un linguaggio che il computer può comprendere.
+
+---
   
-### Livello 
 Il linguaggi di programmazione possono essere di *alto livello* o di *basso livello*, a seconda della componente del computer con cui dialogano.
 
 Un computer è come una nave.  
-L'hardware è in basso, some la sala macchine e la CPU è come il capo macchinista: non vede il mare, non vede il cielo, non sa se la nave stia andando a Nord oppure a Sud.
-Riceve le sue istruzioni dall'interfono e si interessa solo solo della velocità e dei consumi.
-Il sistema operativo è l'equipaggio. È in una posizione intermedia, né in basso né in alto e si prende cura della nave e del carico.Può parlare con il Comandante e con il capo macchinista, ma non parla mai con gli armatori.
+L'hardware è in basso, come la sala macchine e la CPU è come il capo macchinista: non vede il mare, non vede il cielo, non sa se la nave stia andando a Nord oppure a Sud. 
+Riceve le sue istruzioni dall'interfono e si interessa solo solo della velocità e dei consumi.  
+Il sistema operativo è l'equipaggio. 
+È in una posizione intermedia, né in basso né in alto e si prende cura della nave e del carico. 
+Può parlare con il Comandante e con il capo macchinista, ma non parla mai con gli armatori.  
 L'interfaccia utente, invece, è il ponte di comando.
-È il punto più alto della nave, da cui si può vedere tutto.
-È in contatto diretto con gli armatori, da cui riceve delle direttive su ciò che deve o non deve fare e con l'equipaggio, che lo informa sullo stato della nave.  
-Così come avviene nel mondo reale, ciascun ambiente ha il suo linguaggio.
-La CPU “ragiona” in linguaggio macchina, una lunga serie di valori decimali che indicano sia le operazioni da compiere che le grandezze coinvolte.
+È il punto più alto della nave, da cui si può vedere tutto. 
+È in contatto diretto con gli armatori, da cui riceve delle direttive su ciò che deve o non deve fare e con l'equipaggio, che lo informa sullo stato della nave.
+
+Così come avviene nel mondo reale, ciascun ambiente ha il suo linguaggio.  
+La CPU di questo computer “ragiona” in quello che si chiama: *linguaggio macchina*, ovvero una lunga serie di valori decimali che indicano sia le operazioni da compiere che le grandezze coinvolte.
 Il sistema operativo è scritto in C, perché questo è il linguaggio che si adatta meglio a gestire un computer ad alto livello.
 L'interfaccia utente, infine, sfrutta le classi e gli oggetti dei linguggi come il C++ per creare gli elementi grafici che le consentono di interagire con l'utente.
 
 I linguaggi e i costrutti che si applicano a basso livello non funzionano, se si applicano ai livelli più alti.
-L'interfaccia utente conosce molte caratteristiche del programmatore: ne vede il viso nella Webcam, ne ascolta la voce nel microfono; talvolta legge le sue impronte digitali sullo scanner.
+L'interfaccia utente conosce molte caratteristiche del programmatore: vede il suo viso nella Webcam, ascolta la sua voce nel microfono, talvolta legge le sue impronte digitali sullo scanner.
 Il sistema operativo non lo può vedere o sentire, ma conosce i suoi dati anagrafici e sa tutto quello che lui scrive ai suoi amici.
 La CPU non sa nulla di lui.
 Gestisce i suoi dati, ma non sa cosa siano.
 Elabora la sequenza di byte:
 
-	01000011 01100001 01101110 01100001 01110010 01101111
+<pre>
+01000011 
+01100001 
+01101110 
+01100001 
+01110010 
+01101111
+</pre>
 
 ma non sa che è il nome: *Canaro*.
 In effetti, non sa nemmeno cosa sia, la parola: *nome*.
 Per lui è solo la sequenza di byte:
 
-	01001110 01101111 01101101 01100101
+<pre>
+01001110 
+01101111 
+01101101 
+01100101
+</pre>
 
 Invertendo questi concetti, una volta il Maestro Canaro disse:
 
 > L'Uomo, non può dire se Dio sia buono o meno, perché non si può classificare l'essenza del creatore con gli attributi del creato. Sarebbe come se i *byte* di un computer si chiedessero se il Programmatore valga I o 0.
 
-<!-- Effiac  -->
+---
+
 Noi percepiamo il mondo reale come un insieme di eventi che coinvolgono
 una o più entità.
 Ciascuna entità è identificabile per le sue caratteristiche fisiche e ha
@@ -146,9 +163,9 @@ I principii sono importanti, perché danno robustezza al linguaggio.
 Il linguaggio C, da cui è derivato il C++, non ha principii: è solo un modo per descrivere gli eventi all'interno di un computer.
 L'istruzione:
 
-```
+<pre>
 char b = 23;
-```
+</pre>
 
 è un modo per dire al computer:
 
@@ -190,9 +207,9 @@ Le prime diciassette mattonelle sono occupate, ma dalla diciottesima alla ventic
 La variabile *b*, a questo punto, avrà un *indirizzo*, ovvero il numero della prima mattonella (18) e un *valore*, ovvero il numero binario contenuto nelle otto mattonelle (23).  
 Se l'istruzione successiva fosse:
 
-```
+<pre>
 char c = b * 2;
-```
+</pre>
 
 tutto quello che dovresti fare è di cercare un'altra serie di otto mattonelle libere in cui scrivere il valore della variabile *b* spostato verso sinistra di una mattonella:
 
@@ -234,7 +251,7 @@ tutto quello che dovresti fare è di cercare un'altra serie di otto mattonelle l
 Il C è un linguaggio estremamente efficiente per gestire tutte le entità che puoi trovare in un computer – numeri, stringhe, flssi di dati –, ma la sua forza è allo stesso tempo il suo limite, perché non funziona altrettanto bene se hai a che fare con oggetti più complessi.  
 Anche la gestione delle stringhe di testo, nel C, è rudimentale: se tu provassi a eseguire la somma di cui parla il Maestro Canaro nel suo diario:
 
-```
+<pre>
 int main (int argc, char** argv)
 {
     char a[] = "pippo";
@@ -242,16 +259,16 @@ int main (int argc, char** argv)
     printf("\npippo+pluto=%s\n", a+b);
     return 0;
 }
-```
+</pre>
 
 il compilatore C ti avviserebbe che non può sommare due variabili di tipo char.
 
-```
-pippopluto.c:7:35: error: invalid operands 
-  to binary expression ('char []' and 'char []')
+<pre>
+pippopluto.c:7:35: error: invalid operands to binary expression ('char []' and 'char []')
     printf("\npippo+pluto=%s\n", a+b);
                                  ~^~
-```
+</pre>
+
 In altre parole, il C è un linguaggio che non va oltre l'ambito per cui è stato creato.
 È una convenzione.
 Se domani smettessimo di utilizzare i computer, il C non esisterebbe più, perché tutti i suoi costrutti sono legati al funzionamento degli apparati informatici.
