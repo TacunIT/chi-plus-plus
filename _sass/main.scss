@@ -131,7 +131,7 @@ MAIN.bozza::before {
 MAIN P.immagine { margin: 1rem auto; text-align: center }
 MAIN P.immagine.chi { margin: 0.5rem auto; }
 MAIN P.immagine IMG { border: solid 1px #999;text-align: center;max-width:100%; }
-MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; padding: 0em 1em 1em 1em; font-style: italic }
+MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; padding: 1em; font-style: italic }
 @media only screen and (max-width: 420px) {
     DIV.testo P { text-align: left }
 }
@@ -173,8 +173,7 @@ padding: 1rem;
 margin: 1rem 0;
 white-space: pre-wrap;
 }
-BODY.manuale MAIN SPAN.iniziale {
-    color: #e4e6c1;
+BODY.manuale SECTION#testo P:first-of-type:first-letter{
     font-weight: bold;
 }
     

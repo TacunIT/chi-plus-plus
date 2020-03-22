@@ -6,11 +6,11 @@ h2:         I linguaggi di programmazione
 permalink:  /man/linguaggi-di-programmazione
 precedente: sistemi-di-numerazione
 seguente:   c-plus-plus
-bozza:      true
+bozza:      false
 quote:      "Tutto è byte"
 ---
 
-<span>B</span>jarne Stroutsup, o forse Brian Kernigan, disse:
+Bjarne Stroutsup, o forse Brian Kernigan, disse:
 
 <blockquote>
 L'unico modo di apprendere un linguaggio di programmazione è quello
@@ -62,9 +62,8 @@ L'interfaccia utente, infine, sfrutta dei linguaggi a oggetti come il C++ per cr
 I linguaggi e i costrutti che si applicano a un livello non funzionano, se si applicano agli altri livelli, perché ciascun livello concepisce e gestisce gli elementi di un programma in maniera diversa.
 L'interfaccia utente conosce molte caratteristiche del programmatore: vede il suo viso nella Webcam, ascolta la sua voce nel microfono, talvolta legge le sue impronte digitali sullo scanner.
 Il sistema operativo non lo può vedere o sentire, ma conosce i suoi dati anagrafici e sa tutto quello che lui scrive ai suoi amici.
-La CPU non sa nulla di lui.
-Gestisce i suoi dati, ma non sa cosa siano.
-Elabora la sequenza di byte:
+La CPU non sa nulla di lui: gestisce i suoi dati, ma non sa cosa siano.
+Può elaborare la sequenza di byte:
 
 <pre>
 01000011 
@@ -126,13 +125,13 @@ Descrivere i sentimenti con la matematica è come cercare di descrivere
 rigorosamente un sogno: si ottiene sempre una rappresentazione parziale.
 Meglio descriverlo con una musica, lasciando che le suggestioni
 siano implicite.
-La matematica, inoltre, contiene preposizioni formalmente corrette che sono o false  
-o paradossali, come la radice quadrata di -1.
+La matematica, inoltre, contiene preposizioni formalmente corrette che sono o false o paradossali, come la radice quadrata di -1.  
 Il Maestro Canaro sosteneva che i paradossi sono la crittografia di Dio.
 Se fosse vero, la matematica sarebbe utile non perché quasi sempre è coerente,
 ma perché, di quando in quando, produce dei paradossi.  
 
-### Interpretato e compilato
+---
+
 I linguaggi di programmazione possono essere di due tipi: *interpretati* o *compilati*.  
 Posso spiegarti la differenza in questo modo: immagina di essere in Cina e di dover tornare al tuo albergo in taxi.
 Se non parli il Cinese, ha due possibilità: o porti con te un interprete che
@@ -147,16 +146,18 @@ Il codice dei linguaggi compilati, al contrario, viene letto da un programma chi
 
 Anche in questo caso ciascun metodo ha lati positivi e lati negativi.  
 I linguaggi interpretati sono più lenti, perché il passaggio lettura/conversione/esecuzione si ripete ogni volta che il codice viene elaborato; inoltre, richiedono delle risorse di sistema in più da destinare all'interprete.
-In compenso, ogni modifica al codice sorgente viene trasmessa contestualmente anche al programma in esecuzione.  
+In compenso, ogni modifica al codice sorgente viene trasmessa immediatamente anche al programma in esecuzione.  
 I linguaggi compilati sono più rapidi e richiedono meno risorse di sistema perché la compilazione avviene solo una volta, dopo di che il programma può essere eseguito autonomamente, ma se si modifica il codice sorgente, il programma dovrà essere ri-compilato per funzionare correttamente.
 
 Anche la religione è, da un certo punto di vista, un linguaggio di programmazione, perché consente agli umani di dialogare con Dio.
 Il codice, in questo caso, è la preghiera, che i fedeli formulano e inviamo alla Divinità nella speranza che la esegua.
 Anche le religioni possono essere o compilate o interpretate, a seconda che la comunicazione fra il fedele e Dio sia diretta o mediata da un Ordine sacerdotale.
-  
+
+---
+
 Tutti i linguaggi hanno una sintassi; tutti i linguaggi hanno dei tipi
-di dato. Pochissimi linguaggi hanno anche dei principî.  
-I principii sono importanti, perché danno robustezza al linguaggio.  
+di dato. Pochissimi linguaggi hanno anche dei principii.  
+I principii sono importanti, perché danno robustezza al linguaggio.
 Il linguaggio C, da cui è derivato il C++, non ha principii: è solo un modo per descrivere gli eventi all'interno di un computer.
 L'istruzione:
 
@@ -171,7 +172,7 @@ char b = 23;
 1. inserisci nell'area di memoria il valore *23*.
 
 Immagina che tu sia il C.
-Il muro della cucina è la memoria del computer es ciascuna mattonella è un *bit*.
+Il muro della cucina è la memoria del computer e ciascuna mattonella è un *bit*.
 Le prime diciassette mattonelle sono occupate, ma dalla diciottesima alla venticinquesima ci sono otto mattonelle libere, così tu prendi un pennarello e, senza farti vedere dal cuoco, scrivi nelle otto mattonelle libere il corrispondente binario del numero 23:
 
 <table class="memoria">
@@ -245,7 +246,7 @@ tutto quello che dovresti fare è di cercare un'altra serie di otto mattonelle l
   </tr>
 </table>  
 
-Il C è un linguaggio estremamente efficiente per gestire tutte le entità che puoi trovare in un computer – numeri, stringhe, flssi di dati –, ma la sua forza è allo stesso tempo il suo limite, perché non funziona altrettanto bene se hai a che fare con oggetti più complessi.  
+Il C è un linguaggio estremamente efficiente per gestire tutte le entità che puoi trovare in un computer – numeri, stringhe, flussi di dati –, ma la sua forza è allo stesso tempo il suo limite, perché non funziona altrettanto bene se hai a che fare con oggetti più complessi.  
 Anche la gestione delle stringhe di testo, nel C, è rudimentale: se tu provassi a eseguire la somma di cui parla il Maestro Canaro nel suo diario:
 
 <pre>
@@ -268,31 +269,26 @@ pippopluto.c:7:35: error: invalid operands to binary expression ('char []' and '
 
 In altre parole, il C è un linguaggio che non va oltre l'ambito per cui è stato creato.
 È una convenzione.
-Se domani smettessimo di utilizzare i computer, il C non esisterebbe più, perché tutti i suoi costrutti sono legati al funzionamento degli apparati informatici.
-
+Se domani smettessimo di utilizzare i computer, il C non esisterebbe più, perché tutti i suoi costrutti sono legati al funzionamento degli apparati informatici.  
 Al contrario, il C++ e tutti i linguaggi che si basano sul paradigma a oggetti hanno una componente filosofica che trascende l'ambito informatico.
 Se domani smettessimo di utilizzare i computer, i costrutti che il C++ ha ereditato dal C non avrebbero più senso, ma i concetti di *Classe* e di *Oggetto* resterebbero ancora validi.
   
 Molti pensano che avere dei principii sia limitativo, ma non è vero. 
 Il C non ha principi e i suoi costrutti sono limitati ai tipi di dato
 previsti.
-Il C++, grazie ai suoi principii, ha una maggior duttilità e può adattare i suoi costrutti a qualsiasi contesto.
+Il C++, grazie ai suoi principii, ha una maggior duttilità e può evolversi, adattando i suoi costrutti a qualsiasi contesto.
 
-<!--
-@todo: Riprendere i concetti visti nel Manfesto a proposito delle
-ideologie dell'ultimo cinquantennio?
--->
+---
   
-Un giorno un discepolo chiese al maestro Canaro: "Maestro, con quale
-tipo di arco si tira meglio?".
-Il maestro rispose: "Con quello che utilizzi tutti i giorni".
-Il discepolo chiese allora: "Maestro, questo vuol dire che si può
-utilizzare uno linguaggio di programmazione inadatto, purché si raggiunga lo scopo?".
-Il maestro sorrise benevolmente e disse: "Ti prego, vai a meditare
-sull'insensatezza delle tue domande mentre pulisci le latrine comuni."
-
+Un giorno un discepolo chiese al maestro Canaro: “Maestro, con quale
+tipo di arco si tira meglio?”.
+Il maestro rispose: “Con quello che utilizzi tutti i giorni”.
+Il discepolo chiese allora: “Maestro, questo vuol dire che si può
+utilizzare uno linguaggio di programmazione inadatto, purché si raggiunga lo scopo?”.
+Il maestro sorrise benevolmente e disse: “Ti prego, vai a meditare
+sull'insensatezza delle tue domande mentre pulisci le latrine comuni.”  
 Per molto tempo non riuscii a capire il comportamento del maestro
-Canaro. Per un po', credetti che l'errore fosse quel "meglio" nella
+Canaro. Per un po', credetti che l'errore fosse quel “meglio” nella
 prima domanda e che il maestro avesse dato una risposta volutamente
 imprecisa allo scopo di portare alle estreme conclusioni un ragionamento
 male impostato, ma mi sbagliavo.
