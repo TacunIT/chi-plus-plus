@@ -6,11 +6,10 @@ h2:         Mitopoietica del C'hi++
 permalink:  /man/mitopoietica
 precedente: incipit
 seguente:   il-programmatore
+quote:      "Il settimo giorno, Dio fece il backup"
 ---
 
-<blockquote class="motto">
-Il settimo giorno, Dio fece il backup
-</blockquote>
+
 
 Su di me ci sono due teorie: qualcuno pensa che io sia impazzito
 cercando di fare il *debug* dell'Universo, altri pensano invece che io

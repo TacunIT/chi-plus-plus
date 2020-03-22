@@ -6,12 +6,11 @@ class:      capitolo
 permalink:  /man/il-programmatore
 precedente: mitopoietica
 seguente:   sistemi-di-numerazione
+quote:      "Non chiederti cosa può fare per te il sistema operativo;<br />
+chiediti invece cosa puoi fare tu, per il sistema operativo"
+
 ---
 
-<blockquote class="motto">
-Non chiederti cosa può fare per te il sistema operativo;
-chiediti invece cosa puoi fare tu, per il sistema operativo
-</blockquote>
 
 
 Le principali discipline dell'informatica sono:

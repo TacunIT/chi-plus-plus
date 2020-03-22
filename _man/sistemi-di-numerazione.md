@@ -6,13 +6,9 @@ h2:         I sistemi di numerazione
 permalink:  /man/sistemi-di-numerazione
 precedente: il-programmatore
 seguente:   linguaggi-di-programmazione
----
+quote:      "Ci sono 10 tipi di persone:<br />quelli che capiscono la numerazione binaria<br />e quelli che non la capiscono."
 
-<blockquote class="motto">
-Ci sono 10 tipi di persone:
-quelli che capiscono la numerazione binaria
-e quelli che non la capiscono.
-</blockquote>
+---
 
 Per dissuadere i pochi ostinati che sono arrivati a leggere fin qui,
 voglio parlarti dei sistemi di numerazione.

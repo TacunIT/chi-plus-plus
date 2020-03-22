@@ -7,13 +7,10 @@ permalink:  /man/linguaggi-di-programmazione
 precedente: sistemi-di-numerazione
 seguente:   c-plus-plus
 bozza:      true
+quote:      "Tutto è byte"
 ---
 
-<blockquote class="motto">
-Tutto è byte.
-</blockquote>
-
-Bjarne Stroutsup, o forse Brian Kernigan, disse:
+<span>B</span>jarne Stroutsup, o forse Brian Kernigan, disse:
 
 <blockquote>
 L'unico modo di apprendere un linguaggio di programmazione è quello
@@ -48,21 +45,21 @@ richieste in un linguaggio che il computer può comprendere.
 Il linguaggi di programmazione possono essere di *alto livello* o di *basso livello*, a seconda della componente del computer con cui dialogano.
 
 Un computer è come una nave.  
-L'hardware è in basso, come la sala macchine e la CPU è come il capo macchinista: non vede il mare, non vede il cielo, non sa se la nave stia andando a Nord oppure a Sud. 
+L'hardware è in basso, come la sala macchine e la CPU è come il capo macchinista: non vede il mare, non vede il cielo, non sa nemmeno se la nave stia andando a Nord oppure a Sud. 
 Riceve le sue istruzioni dall'interfono e si interessa solo solo della velocità e dei consumi.  
 Il sistema operativo è l'equipaggio. 
 È in una posizione intermedia, né in basso né in alto e si prende cura della nave e del carico. 
-Può parlare con il Comandante e con il capo macchinista, ma non parla mai con gli armatori.  
+Può parlare con il Comandante e con il capo macchinista, ma non parla mai con gli armatori.
 L'interfaccia utente, invece, è il ponte di comando.
 È il punto più alto della nave, da cui si può vedere tutto. 
 È in contatto diretto con gli armatori, da cui riceve delle direttive su ciò che deve o non deve fare e con l'equipaggio, che lo informa sullo stato della nave.
 
-Così come avviene nel mondo reale, ciascun ambiente ha il suo linguaggio.  
+Ciascun livello del computer ha il suo linguaggio.  
 La CPU di questo computer “ragiona” in quello che si chiama: *linguaggio macchina*, ovvero una lunga serie di valori decimali che indicano sia le operazioni da compiere che le grandezze coinvolte.
-Il sistema operativo è scritto in C, perché questo è il linguaggio che si adatta meglio a gestire un computer ad alto livello.
-L'interfaccia utente, infine, sfrutta le classi e gli oggetti dei linguggi come il C++ per creare gli elementi grafici che le consentono di interagire con l'utente.
+Il sistema operativo è scritto in C, perché è il linguaggio che si adatta meglio a gestire un computer.
+L'interfaccia utente, infine, sfrutta dei linguaggi a oggetti come il C++ per creare gli elementi grafici che le consentono di interagire con l'utente.
 
-I linguaggi e i costrutti che si applicano a basso livello non funzionano, se si applicano ai livelli più alti.
+I linguaggi e i costrutti che si applicano a un livello non funzionano, se si applicano agli altri livelli, perché ciascun livello concepisce e gestisce gli elementi di un programma in maniera diversa.
 L'interfaccia utente conosce molte caratteristiche del programmatore: vede il suo viso nella Webcam, ascolta la sua voce nel microfono, talvolta legge le sue impronte digitali sullo scanner.
 Il sistema operativo non lo può vedere o sentire, ma conosce i suoi dati anagrafici e sa tutto quello che lui scrive ai suoi amici.
 La CPU non sa nulla di lui.
