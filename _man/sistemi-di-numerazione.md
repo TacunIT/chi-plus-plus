@@ -29,23 +29,23 @@ che le uova sono pari a una volta tutte le sue dita più due. Se
 esprimessimo questa risposta con potenze del numero delle dita delle
 mani del tuo confratello, otterremmo che:
 
-<code>
+<pre>
 1x10<sup>1</sup> + 2x10<sup>0</sup> = 12
-</code>
+</pre>
 
 L\'alieno, abituato a contare in base alle sue dodici dita, direbbe che
 le uova sono:
 
-<code>
+<pre>
 1x12<sup>1</sup> + 0x12<sup>0</sup> = 10
-</code>
+</pre>
 
 Il disgraziato con un dito, che può considerare solo le due possibilità:
 *un dito/nessun dito*, sarebbe costretto a fare un calcolo più lungo:
 
-<code>
+<pre>
 1x2<sup>3</sup> + 1x2<sup>2</sup> + 1x2<sup>2</sup> + 0x2<sup>0</sup> = 1100
-</code>
+</pre>
 
 Questi tre risultati, per quanto differenti, non sono sbagliati, perché
 ciascuno dei tre conta le dodici uova in base al numero delle proprie
@@ -65,32 +65,33 @@ dell\'alfabeto e non cambierebbe nulla:
         <td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td>i</td><td>l</td>
     </tr>
 </table>
-<code style="margin: auto">
-    a + b = b <br />    
-    b + c = d <br />  
-    d * e = bc<br />
-</code>
+<pre>
+a + b = b     
+b + c = d   
+d * e = bc
+</pre>
 
 Il metodo di calcolo resterebbe lo stesso: quando la quantità da
 valutare è maggiore del numero delle cifre disponibili, si riporta la
 differenza a sinistra, nella colonna di ordine superiore.
 Il valore *bc* della moltiplicazione, significa infatti:
 
-<code>
-    b*(numero di cifre)<sup>1</sup> + c*(numero di cifre)<sup>0</sup>
-</code>
+<pre>
+b*(numero di cifre)<sup>1</sup> + 
+c*(numero di cifre)<sup>0</sup>
+</pre>
 
 ovvero, visto che il numero di cifre a nostra disposizione è 10:
 
-<code>
-    b*10 + c*1
-</code>
+<pre>
+b*10 + c*1
+</pre>
 
 Se sostituiamo le lettere con i numeri, otteniamo:
 
-<code>
-    1*10 + 2*1 = 3*4
-</code>
+<pre>
+1*10 + 2*1 = 3*4
+</pre>
 
 ---
 
@@ -98,9 +99,9 @@ Ma non tutti i sistemi di numerazione funzionano allo stesso modo.
 Se tu chiedessi a un antico romano di calcolare il numero delle uova, ti
 risponderebbe:
 
-<code>
-    XII
-</code>
+<pre>
+XII
+</pre>
 
 Anche questo sarebbe un risultato corretto, pur se diverso dai precedenti.
 Il sistema di numerazione romano è un po\' più complicato dei sistemi in
@@ -111,17 +112,17 @@ rapporto alle altre cifre.
 Il Maestro Canaro nacque il 29 febbraio 1964; in cifre romane, questa
 data è:
 
-<code>
-    XXIX II MCMLXIV
-</code>
+<pre>
+XXIX II MCMLXIV
+</pre>
 
 ovvero:
 
-<code>
-    10+10+(10-1)<br/> 
-    1+1<br/>
-    1000+(1000-100)+50+10+(5-1)
-</code>
+<pre>
+10+10+(10-1)<br/> 
+1+1<br/>
+1000+(1000-100)+50+10+(5-1)
+</pre>
 
 I numeri romani possono andar bene per un popolo di conquistatori: sono
 facili da scolpire nel marmo, a memoria di una battaglia vittoriosa e

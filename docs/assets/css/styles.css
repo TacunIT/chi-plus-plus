@@ -20,13 +20,15 @@ H2 { font-variant-caps: petite-caps; font-size: 1.5rem; }
 
 H3 { font-size: 1.2rem; margin-top: 1rem; color: #666; }
 
-HR { border: none; text-align: center; margin-bottom: 1rem; }
+HR { border: none; text-align: center; margin: 0.5rem auto; }
 
 HR:before { content: '氣'; }
 
-P { margin-bottom: 1rem; }
+P { -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
 
-CODE { text-align: left; }
+P + P { margin-top: 1rem; }
+
+CODE, PRE { text-align: left; background-color: #e4e6c1; font-size: 10pt; font-family: Monaco; }
 
 I { color: #555; }
 
@@ -89,6 +91,8 @@ BODY.manuale HEADER H2 { padding: 4rem 0; text-transform: capitalize; }
 
 BODY.manuale MAIN { text-align: justify; }
 
+BODY.manuale MAIN PRE { display: block; padding: 1rem; margin: 1rem 0; white-space: pre-wrap; }
+
 BODY.manuale MAIN P A { color: #990; }
 
 BODY.manuale MAIN UL { margin: 1rem 0; padding-left: 2.5rem; }
@@ -96,8 +100,6 @@ BODY.manuale MAIN UL { margin: 1rem 0; padding-left: 2.5rem; }
 BODY.manuale BLOCKQUOTE.incluso { color: #543; text-align: justify; padding: 1rem; background: #e4e6c1; margin: 1rem 0; }
 
 BODY.manuale BLOCKQUOTE.motto { text-align: right; padding: 2rem 0 5rem 0; font-size: 0.9em; }
-
-BODY.manuale CODE { max-width: 90%; display: block; padding: 1rem; font-size: 10pt; background: #f0f0f0; font-family: Monaco; }
 
 BODY.manuale FOOTER { position: relative; display: block; text-align: center; width: 100%; }
 
