@@ -15,26 +15,26 @@ Tutto è byte.
 
 Bjarne Stroutsup, o forse Brian Kernigan, disse:
 
-> L'unico modo di apprendere un linguaggio di programmazione è quello
+<blockquote>
+L'unico modo di apprendere un linguaggio di programmazione è quello
 di utilizzarlo per scrivere programmi.
+</blockquote>
 
 Il maestro Canaro sosteneva che anche scrivere un manuale su un linguaggio di programmazione è un buon sistema per impararlo.  
-<br />
-### Scopo dei linguaggi di programmazione
-I linguaggi di programmazione servono a chiedere al computer di fare determinate 
-operazioni.  
-Perché il computer possa ubbidirci, deve "capire" che tipo di entità deve gestire 
-e che tipo di operazioni deve compiere su di esse.
-Per esempio, se chiedessimo al computer di raddoppiarci lo stipendio, il computer 
-dovrebbe sapere almeno a quanto ammonta il nostro stipendio e come funziona una 
-moltiplicazione per due.
 
-```
+---
+
+I linguaggi di programmazione servono a chiedere al computer di fare
+determinate operazioni.
+Perché il computer possa ubbidirci, deve "capire" che tipo di entità deve gestire e che tipo di operazioni deve compiere su di esse.
+Per esempio, se chiedessimo al computer di raddoppiarci lo stipendio, il computer dovrebbe sapere almeno a quanto ammonta il nostro stipendio e come funziona una moltiplicazione per due.
+
+<code>
 long raddoppia(long stipendio)
 {
     return stipendio * 2;
 }
-```
+</code>
 
 Siccome l'unica cosa che il computer conosce sono delle sequenze di 1 e di 0 
 – siano esse su un disco, in memoria o sulla porta di comunicazione della 
@@ -42,7 +42,10 @@ tastiera o del video, – dobbiamo trovare il modo di "spiegargli" i concetti di
 *stipendio* e *moltiplicazione* in forma binaria.
 I linguaggi di programmazione fanno precisamente questo: traducono le nostre 
 richieste in un linguaggio che il computer può comprendere.
-<br />  
+  
+### Livello 
+Il linguaggi di programmazione possono essere di *alto livello* o di *basso livello*, a seconda della componente del computer con cui dialogano.
+
 Un computer è come una nave.  
 L'hardware è in basso, some la sala macchine e la CPU è come il capo macchinista: non vede il mare, non vede il cielo, non sa se la nave stia andando a Nord oppure a Sud.
 Riceve le sue istruzioni dall'interfono e si interessa solo solo della velocità e dei consumi.
@@ -74,7 +77,7 @@ Invertendo questi concetti, una volta il Maestro Canaro disse:
 
 > L'Uomo, non può dire se Dio sia buono o meno, perché non si può classificare l'essenza del creatore con gli attributi del creato. Sarebbe come se i *byte* di un computer si chiedessero se il Programmatore valga I o 0.
 
-### Efficacia dei linguaggi di programmazione
+<!-- Effiac  -->
 Noi percepiamo il mondo reale come un insieme di eventi che coinvolgono
 una o più entità.
 Ciascuna entità è identificabile per le sue caratteristiche fisiche e ha
@@ -99,8 +102,8 @@ piegare o gli eventi o il linguaggio o entrambi per ottenere il
 risultato atteso.
 Scegliendo invece un linguaggio i cui tipi di dato e i cui costrutti
 siano più affini alla realtà da descrivere, si risparmiano tempo e
-fatica e si scrive un codice più affidabile.<br />
-<br />
+fatica e si scrive un codice più affidabile.
+
 Pitagora sosteneva che “tutto è numero”, ma non è vero.
 La matematica può descrivere gli eventi che si verificano nell'Universo,
 ma non le loro cause o il loro fine.
@@ -110,11 +113,12 @@ rigorosamente un sogno: si ottiene sempre una rappresentazione parziale.
 Meglio descriverlo con una musica, lasciando che le suggestioni
 siano implicite.
 La matematica, inoltre, contiene preposizioni formalmente corrette che sono o false  
-o paradossali, come la radice quadrata di -1.<br />
+o paradossali, come la radice quadrata di -1.
 Il Maestro Canaro sosteneva che i paradossi sono la crittografia di Dio.
 Se fosse vero, la matematica sarebbe utile non perché quasi sempre è coerente,
 ma perché, di quando in quando, produce dei paradossi.  
-<br />
+
+### Interpretato e compilato
 I linguaggi di programmazione possono essere di due tipi: *interpretati* o *compilati*.  
 Posso spiegarti la differenza in questo modo: immagina di essere in Cina e di dover tornare al tuo albergo in taxi.
 Se non parli il Cinese, ha due possibilità: o porti con te un interprete che
@@ -130,12 +134,12 @@ Il codice dei linguaggi compilati, al contrario, viene letto da un programma chi
 Anche in questo caso ciascun metodo ha lati positivi e lati negativi.  
 I linguaggi interpretati sono più lenti, perché il passaggio lettura/conversione/esecuzione si ripete ogni volta che il codice viene elaborato; inoltre, richiedono delle risorse di sistema in più da destinare all'interprete.
 In compenso, ogni modifica al codice sorgente viene trasmessa contestualmente anche al programma in esecuzione.  
-I linguaggi compilati sono più rapidi e richiedono meno risorse di sistema perché la compilazione avviene solo una volta, dopo di che il programma può essere eseguito autonomamente, ma se si modifica il codice sorgente, il programma dovrà essere ri-compilato per funzionare correttamente.<br />
-<br />
+I linguaggi compilati sono più rapidi e richiedono meno risorse di sistema perché la compilazione avviene solo una volta, dopo di che il programma può essere eseguito autonomamente, ma se si modifica il codice sorgente, il programma dovrà essere ri-compilato per funzionare correttamente.
+
 Anche la religione è, da un certo punto di vista, un linguaggio di programmazione, perché consente agli umani di dialogare con Dio.
 Il codice, in questo caso, è la preghiera, che i fedeli formulano e inviamo alla Divinità nella speranza che la esegua.
 Anche le religioni possono essere o compilate o interpretate, a seconda che la comunicazione fra il fedele e Dio sia diretta o mediata da un Ordine sacerdotale.
-<br />  
+  
 Tutti i linguaggi hanno una sintassi; tutti i linguaggi hanno dei tipi
 di dato. Pochissimi linguaggi hanno anche dei principî.  
 I principii sono importanti, perché danno robustezza al linguaggio.  
@@ -182,7 +186,7 @@ Le prime diciassette mattonelle sono occupate, ma dalla diciottesima alla ventic
     <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
   </tr>
 </table>  
-<br />
+
 La variabile *b*, a questo punto, avrà un *indirizzo*, ovvero il numero della prima mattonella (18) e un *valore*, ovvero il numero binario contenuto nelle otto mattonelle (23).  
 Se l'istruzione successiva fosse:
 
@@ -254,7 +258,7 @@ Se domani smettessimo di utilizzare i computer, il C non esisterebbe più, perch
 
 Al contrario, il C++ e tutti i linguaggi che si basano sul paradigma a oggetti hanno una componente filosofica che trascende l'ambito informatico.
 Se domani smettessimo di utilizzare i computer, i costrutti che il C++ ha ereditato dal C non avrebbero più senso, ma i concetti di *Classe* e di *Oggetto* resterebbero ancora validi.
-<br />  
+  
 Molti pensano che avere dei principii sia limitativo, ma non è vero. 
 Il C non ha principi e i suoi costrutti sono limitati ai tipi di dato
 previsti.
@@ -264,7 +268,7 @@ Il C++, grazie ai suoi principii, ha una maggior duttilità e può adattare i su
 @todo: Riprendere i concetti visti nel Manfesto a proposito delle
 ideologie dell'ultimo cinquantennio?
 -->
-<br />  
+  
 Un giorno un discepolo chiese al maestro Canaro: "Maestro, con quale
 tipo di arco si tira meglio?".
 Il maestro rispose: "Con quello che utilizzi tutti i giorni".
@@ -272,7 +276,7 @@ Il discepolo chiese allora: "Maestro, questo vuol dire che si può
 utilizzare uno linguaggio di programmazione inadatto, purché si raggiunga lo scopo?".
 Il maestro sorrise benevolmente e disse: "Ti prego, vai a meditare
 sull'insensatezza delle tue domande mentre pulisci le latrine comuni."
-<br />
+
 Per molto tempo non riuscii a capire il comportamento del maestro
 Canaro. Per un po', credetti che l'errore fosse quel "meglio" nella
 prima domanda e che il maestro avesse dato una risposta volutamente
