@@ -12,7 +12,7 @@ HEADER img.logo { width: 200px; max-width: 90%; display: inline-block; }
 
 FOOTER { padding-top: 3rem; }
 
-H1, H2, H3, H4 { margin: auto; text-align: left; }
+H1, H2, H3, H4 { margin: auto; }
 
 H1 { padding-top: 1rem; padding-bottom: 1rem; font-size: 2.5rem; text-align: center; }
 
