@@ -1,3 +1,15 @@
+## 0.8.12 (March 22, 2020)
+  - Sostituiti elementi CODE con PRE
+  - Aggiunto HR con ideogramma
+  - Aggiunto stile margin-bottom:1rem a tutti i paragrafi
+  - Aggiunto link Home a menu e a logo testata
+  - Iniziata Redazione linguaggi di programmazione
+  - Corrette le note nella Proposta
+  - Aggiunta nota di Harari su motto francese
+  - Aggiunte note con @todo e installato package su GitHub per gestirli
+  - Corrette ricorrenze del vecchio path
+  - Rinominata directory manuale in man
+
 ## 0.8.11 (March 11, 2020)
   - Aggiornato testo della Proposta
 
