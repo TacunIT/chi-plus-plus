@@ -12,10 +12,9 @@ seguente:   il-programmatore
 Il settimo giorno, Dio fece il backup
 </blockquote>
 
-Su di me ci sono due teorie. Qualcuno pensa che io sia impazzito
+Su di me ci sono due teorie: qualcuno pensa che io sia impazzito
 cercando di fare il *debug* dell'Universo, altri pensano invece che io
-abbia deciso di fare il *debug* dell'Universo perché sono pazzo.<br />
-<br />
+abbia deciso di fare il *debug* dell'Universo perché sono pazzo.
 
 Anche il Maestro Canaro fu accusato di essere pazzo quando disse di
 essere stato incaricato da Dio di fare il *porting* dell'Universo dal
@@ -23,7 +22,7 @@ COBOL al C++, ma non era pazzo.
 Ho conservato questi documenti: sono l'ultima pagina del suo diario e le
 relazioni che furono inviate alla società per cui lui lavorava mentre
 era distaccato dal "Cliente".
-Mettili all'inizio del tuo libro, così tutto ciò che diremo poi, non
+Mettili all'inizio del tuo libro, così tutto ciò che diremo dopo non
 sarà che una ripetizione.
 
 <blockquote class="incluso">
@@ -561,7 +560,6 @@ posta elettronica funzionasse.
 La dottrina del maestro Canaro era semplice: riportare l'informatica in
 una torre d'avorio, accettarne la componente imponderabile ed elevarla
 da attività produttiva ad attività mistica.
-
 Basta con l'improvvisazione, basta con il *time to market*, basta con i
 prodotti inaffidabili: chi voleva scrivere codice doveva entrare in un
 ordine monastico e seguire un lungo percorso di iniziazione, prima di
@@ -575,10 +573,9 @@ posta elettronica avrebbe funzionato e furono felici.
 
 Ci fu anche una componente politica, a favorire il successo della
 dottrina predicata dal maestro Canaro. La società dipendeva ormai
-totalmente dai computer, e i computer dipendevano dagli informatici. Se
+totalmente dai computer e i computer dipendevano dagli informatici. Se
 un giorno avessero deciso di coalizzarsi e di scioperare, avrebbero
-messo il Paese, se non il mondo intero, in ginocchio.
-
+messo il Paese, se non il Mondo intero, in ginocchio.  
 Le psicopatologie tipiche degli informatici, la loro incapacità di
 gestire, se non addirittura di *concepire* una vita sociale, rendevano
 questa ipotesi molto poco probabile, ma era comunque un rischio troppo
@@ -588,33 +585,29 @@ mistico-religiose, li avrebbero tenuti lontani dalle lusinghe dei
 sindacati e avrebbero reso l'ipotesi di uno sciopero improbabile quanto
 l'ipotesi di uno sciopero dei sacerdoti.
 
+---
+
 Gli insegnamenti del maestro Canaro non uscirono mai dall'ambito del
 software, egli non nominò mai l'*hardware*, in nessuno dei suoi
 scritti.
-
 Diceva che se un uomo configura un *firewall* è un informatico, se
 attacca due cavi è un elettricista.
-
 Una volta chiesi al maestro Canaro perché non avesse mai dato delle
-indicazioni sull'affidabilità fisica dei server.
+indicazioni sull'affidabilità fisica dei server.  
+“Se è per questo,” mi rispose “non nemmeno prodotto tabelle per il
+calcolo del cemento armato.” Solo anni dopo capii cosa intendesse dire.
 
-"Se è per questo," mi rispose "non nemmeno prodotto tabelle per il
-calcolo del cemento armato." Solo anni dopo capii cosa intendesse dire.
-
-Malgrado il suo disinteresse per ciò che lui chiamava: "le cose reali",
+Malgrado il suo disinteresse per ciò che lui chiamava: “le cose reali”,
 la rivoluzione culturale provocata dal maestro Canaro ebbe delle
 conseguenze anche per i produttori di computer.
-
 La maggior parte di loro fu lenta a percepire i cambiamenti in atto e
-pagò duramente la sua disattenzione, gli altri prosperarono.
-
+pagò duramente la sua disattenzione, gli altri prosperarono.  
 Anche se il Maestro Canaro non prese mai una posizione definita nella
-disputa che contrappose i sostenitori della dottrina del "grande
-veicolo" (i *mainframe*) e quelli che erano invece favorevoli al
-"piccolo veicolo" (i PC casalinghi), alcuni alti prelati si dichiararono
+disputa che contrappose i sostenitori della dottrina del *Grande
+Veicolo* (i *mainframe*) e quelli che erano invece favorevoli al
+*Piccolo Veicolo* (i PC casalinghi), alcuni alti prelati si dichiararono
 favorevoli al monoteismo dei *mainframe* e, alla fine, i sostenitori del
-politeismo furono sconfitti.
-
+politeismo furono sconfitti.  
 Negli uffici e nelle case, i PC vennero sostituiti da terminali e gli
 edifici ebbero tutti, oltre al garage e al locale caldaie, un'area CED.
 Il territorio fu suddiviso in diocesi, e ciascuna diocesi fu affidata a
@@ -626,7 +619,7 @@ predicazione, sapessimo che era il C++ il suo linguaggio di
 programmazione preferito, il maestro Canaro lasciò che fosse Java a
 diventare il linguaggio ufficiale della comunità, subendo senza
 replicare gli attacchi di coloro che lo accusavano di essersi venduto
-alla Sun([^1]). Le procedure esistenti furono tutte riscritte; gli
+alla Sun. Le procedure esistenti furono tutte riscritte; gli
 ordini monastici che insegnavano il C++ divennero sempre di meno e alla
 fine non ce ne furono più.
 
