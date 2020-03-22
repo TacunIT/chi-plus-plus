@@ -93,6 +93,8 @@ BODY.manuale MAIN { text-align: justify; }
 
 BODY.manuale MAIN PRE { display: block; padding: 1rem; margin: 1rem 0; white-space: pre-wrap; }
 
+BODY.manuale MAIN SPAN.iniziale { color: #e4e6c1; font-weight: bold; }
+
 BODY.manuale MAIN P A { color: #990; }
 
 BODY.manuale MAIN UL { margin: 1rem 0; padding-left: 2.5rem; }
@@ -101,7 +103,7 @@ BODY.manuale BLOCKQUOTE.incluso { color: #543; text-align: justify; padding: 1re
 
 BODY.manuale BLOCKQUOTE.motto { text-align: right; padding: 2rem 0 5rem 0; font-size: 0.9em; }
 
-BODY.manuale FOOTER { position: relative; display: block; text-align: center; width: 100%; }
+BODY.manuale FOOTER { position: relative; display: block; text-align: center; width: 100%; padding-bottom: 3rem; }
 
 BODY.manuale IMG.logo { width: 300px; max-width: 90%; display: inline-block; }
 

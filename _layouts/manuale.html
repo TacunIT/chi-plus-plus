@@ -8,7 +8,10 @@
     {%- include man-header.html -%}
 
     <main {% if page.bozza %}class="bozza"{% endif %}>
-    {{ content}}
+        <blockquote class="motto">{{ page.quote }}</blockquote>
+        <section class="testo">
+            {{ content}}
+        </section>
     </main>
 
     {% if page.class == "capitolo" %}
