@@ -9,5 +9,7 @@ seguente:   funzioni
 bozza:      true
 ---
 
-<blockquote class="motto">
-</blockquote>
+<!--
+@todo: Riprendere i concetti visti nel Manfesto a proposito delle
+ideologie dell'ultimo cinquantennio quando si parla di vero e falso
+-->
