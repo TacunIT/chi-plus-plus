@@ -39,7 +39,7 @@ NAV A#spazionismo { display: none; }
 .fa { margin-left: 0.25rem; color: #888; }
 
 /** Stili per il corpo della pagina. */
-MAIN { width: 32rem; max-width: 90%; display: inline-block; margin: auto; text-align: justify; position: relative; }
+MAIN { width: 32rem; max-width: 90%; display: inline-block; margin: auto; text-align: justify; position: relative; padding-top: 1rem; }
 
 MAIN.bozza { background-color: #f0f0f0; padding: 5rem 1rem; }
 
@@ -80,7 +80,7 @@ BODY.manuale HEADER H2 { padding: 4rem 0; text-transform: capitalize; }
 
 BODY.manuale MAIN { text-align: justify; }
 
-BODY.manuale MAIN P { margin-bottom: 1rem; }
+P { margin-bottom: 1rem; }
 
 BODY.manuale MAIN P A { color: #990; }
 

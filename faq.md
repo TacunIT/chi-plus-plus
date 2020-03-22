@@ -1,9 +1,10 @@
 ---
-layout: default
-title: FAQ
-h2: Domande frequenti
-class: faq
-permalink: /faq/
+layout:     default
+title:      FAQ
+h2:         Domande frequenti
+class:      faq
+permalink:  /faq/
+bozza:      true
 ---
 
 # Domande Frequenti
@@ -21,8 +22,7 @@ ultimi non sono un esempio da seguire.
 Perché l'alternanza del (presunto) bene e del (presunto) male è necessaria.
 Se non esistesse una Forza separatrice, non ci sarebbe né Universo,
 né vita, né esperienza né tanto meno miglioramento, ma solo l'Uno
-Primigenio al centro di un Universo vuoto, come nel *Nasadiya Sukta* dei
-*RigVeda*
+Primigenio al centro di un Universo vuoto, come nell'Inno della Creazione dei *RigVeda*:
 
 <blockquote>
     In quel momento non vi era n&eacute; la morte n&eacute; l&#8217;immortalit&agrave;.<br />

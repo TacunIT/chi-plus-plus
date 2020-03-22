@@ -254,16 +254,14 @@ Se domani smettessimo di utilizzare i computer, il C non esisterebbe più, perch
 
 Al contrario, il C++ e tutti i linguaggi che si basano sul paradigma a oggetti hanno una componente filosofica che trascende l'ambito informatico.
 Se domani smettessimo di utilizzare i computer, i costrutti che il C++ ha ereditato dal C non avrebbero più senso, ma i concetti di *Classe* e di *Oggetto* resterebbero ancora validi.
-<!--
-@todo: Completare.
-@body: 
-Avere dei principi non è limitativo.
-Il C non ha principi, ma i suoi costrutti sono limitati ai tipi di dato
+<br />  
+Molti pensano che avere dei principii sia limitativo, ma non è vero. 
+Il C non ha principi e i suoi costrutti sono limitati ai tipi di dato
 previsti.
-Al contrario, il C++, che si basa sui principi dell'Object-oriented e
-delle classi, ha una maggior duttilità e può adattare i suoi
-costrutti a qualsiasi contesto.
-Riprendere i concetti visti nel Manfesto a proposito delle
+Il C++, grazie ai suoi principii, ha una maggior duttilità e può adattare i suoi costrutti a qualsiasi contesto.
+
+<!--
+@todo: Riprendere i concetti visti nel Manfesto a proposito delle
 ideologie dell'ultimo cinquantennio?
 -->
 <br />  
