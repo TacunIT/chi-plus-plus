@@ -5,7 +5,7 @@ title:      C'hi++ - Il senso della Vita è il debug
 h2:         Epilogo
 permalink:  /man/epilogo
 precedente: ikebarba
-seguente:
+seguente:   
 bozza:      true
 ---
 
