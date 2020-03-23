@@ -1,3 +1,7 @@
+## 0.8.14 (March 23, 2020)
+  - Formattato CSS
+  - Rivista la grafica della pagina
+
 ## 0.8.13 (March 22, 2020)
   - Completato capitolo sui linguaggi di programmazione
   - Tasferita la citazione fra i dati delle pagine del manuale e inserito il testo in una sezione
