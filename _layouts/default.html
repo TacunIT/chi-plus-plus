@@ -5,13 +5,18 @@
 
 <body class="{{ page.class }}">
 
-    {%- include header.html -%}
+    <div id="page">
 
-    <main {% if page.bozza %}class="bozza"{% endif %}>
-        {{ content}}
-    </main>
+        {%- include header.html -%}
 
-    {%- include footer.html -%}
+        <main {% if page.bozza %}class="bozza"{% endif %}>
+            {{ content}}
+        </main>
+
+        {%- include footer.html -%}
+
+    </div>
 
   </body>
+
 </html>
