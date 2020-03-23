@@ -1,5 +1,5 @@
 ---
-layout:     manuale
+layout:     man-indice
 class:      indice
 title:      C'hi++ - Il senso della Vita è il debug
 h2:         Indice

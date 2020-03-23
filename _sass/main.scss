@@ -3,55 +3,53 @@ $bodyColor: #000000;
 $bodyFont: Simonetta, Calibri, Arial, sans-serif;
 $bodyFontSize: 15pt;
 
-.bianconero {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-}
-
-/**
- * Stili comuni.
- */
-
 * {
     margin: 0;
     padding: 0;
 }
 
+.bianconero {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.box {
+    font-size: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.fa {margin-left: 0.25rem; color: #888}
+
+
+/**
+ *
+ *  Stili di base.
+ *
+ */
 BODY {
-  background: $backgroundColor;
+  background-color: #fff;
   color: $bodyColor;
   font-family: $bodyFont;
   font-size: $bodyFontSize;
   text-align: center;
-  padding: 1rem 0 2rem 0;
-  position: relative;
-  display: block;
 }
-
-HEADER { padding: 0 1rem }
-HEADER img.logo {width: 200px; max-width:90%; display: inline-block;}
-
-FOOTER { padding-top: 3rem }
 
 H1, H2, H3, H4 {
     margin: auto;
 }
 H1 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 2.5rem;
-    text-align: center;
+    font-size: 1.5rem;
 }
 H2 {
     font-variant-caps: petite-caps;
-    font-size:1.5rem
+    font-size: 2    rem
 }
 H3 {
     font-size: 1.2rem;
     margin-top: 1rem;
     color: #666;
 }
-
 HR {
     border: none;
     text-align: center;
@@ -60,7 +58,6 @@ HR {
 HR:before {
     content: '氣';
 }
-
 P { 
   -webkit-hyphens: auto;
      -moz-hyphens: auto;
@@ -69,17 +66,21 @@ P {
 P + P {
     margin-top: 1rem;
 }
-
 CODE, PRE { 
     text-align: left; 
     background-color: #e4e6c1;
     font-size: 10pt; 
     font-family: Monaco;
 }
-
-I   {color: #555}
-A   {color: #333; }
-DIV { display: inline-block; }
+I   {
+    color: #555;
+}
+A   {
+    color: #333; 
+}
+DIV { 
+    display: inline-block; 
+}
 TABLE, TD, TR {
     border-collapse: collapse;
     border: solid 1px #999;
@@ -91,31 +92,71 @@ OL {
 }
 
 /**
- *  Stili dei menu
- */
-NAV {
-    border-top: solid 1px;
-    display: inline-block;
-    border-bottom: solid 1px;
-    margin: 1.5rem auto 1rem auto;
-    border-color: #990;
-}
-
-NAV A {
-    font-variant-caps: petite-caps;
-    font-size: 12pt;
-    font-weight: bold;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-}
-NAV A#spazionismo { display: none }
-
-
-.fa {margin-left: 0.25rem; color: #888}
-
-/**
+ *
  *  Stili per il corpo della pagina.
+ *
  */
+
+DIV#page {
+    padding: 1rem 0 2rem 0;
+    position: relative;
+    display: block;
+    max-width: 40rem;
+    margin: auto;
+}
+
+BODY HEADER { display: block; padding: 0 1rem; }
+BODY FOOTER { padding-top: 3rem }
+
+BODY HEADER DIV.box.intestazione {
+    height: 80px;
+    width: 100%;
+    text-align: left;
+}
+
+BODY HEADER DIV.box.titoli {
+    height: 100%;
+    width: auto;
+}
+
+BODY HEADER H1 {
+display: none;
+}
+BODY HEADER H2 {
+ display: inline-block;
+ float:right;
+ line-height:80px;
+ padding:0 1rem;
+}
+BODY HEADER img.logo {
+ height: 80px; 
+ width: auto; 
+ display: inline-block; 
+ float: left;
+ padding: 0 1rem;
+}
+
+ /**
+  *  Stili dei menu
+  */
+ NAV {
+     border-top: solid 1px;
+     display: inline-block;
+     border-bottom: solid 1px;
+     margin: 1.5rem auto 1rem auto;
+     border-color: #990;
+     width: 100%;
+ }
+
+ NAV A {
+     font-variant-caps: petite-caps;
+     font-size: 12pt;
+     font-weight: bold;
+     display: inline-block;
+     padding: 0.5rem 0.75rem;
+ }
+ NAV A#spazionismo { display: none }
+
 MAIN { width: 32rem; max-width: 90%; display: inline-block; margin: auto; text-align: justify; position: relative; padding-top: 1rem}
 MAIN.bozza { background-color: #f0f0f0; padding: 5rem 1rem;}
 
@@ -137,24 +178,43 @@ MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; padding: 1em; 
 }
 
 /**
- *  Stili per la pagina index
- */
-HEADER DIV#top {
-    width: 100%;
-    max-width: 610px;
-    font-size: 0;
-    position: relative;
-    margin:auto;
-    display:block;
+ *
+ *  Stili per la pagina index e per la copertina del manuale
+ *
+ */ 
+ BODY.index HEADER DIV.box.intestazione,
+ BODY.manuale.copertina HEADER DIV.box.intestazione {
+    height: auto;
+    text-align: center;
+ }
+
+ BODY.index HEADER H1 ,
+ BODY.manuale.copertina HEADER H1 {
+    font-size: 2.5rem;
+    padding: 1rem 0 ;
+    text-align: center;
+    display: block;
 }
-BODY.index HEADER H2 {margin-bottom: 0.5rem}
-BODY.index HEADER img.logo {width: 300px; max-width:90%; display: inline-block;}
+
+BODY.index HEADER H2 ,
+BODY.manuale.copertina HEADER H2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: unset;
+    float: none;
+}
+
+BODY.index HEADER img.logo ,
+BODY.manuale.copertina HEADER img.logo {
+    width: 240px; 
+    height: auto;
+    max-width:90%; 
+    float: none;
+}
+
 /**
  *  Stili per la pagina FAQ
  */
-BODY.faq HEADER H1 {display:none}
-BODY.faq HEADER H2 {display: inline-block;float:right;line-height:80px;padding:0 1rem;}
-BODY.faq HEADER img.logo {height: 80px; width: auto; display: inline-block;}
 BODY.faq SECTION {
     padding: 1rem;
 }
@@ -164,8 +224,8 @@ BODY.faq SECTION {
  */
 BODY.manuale { padding-top: 1rem; height: 90vh; }
 BODY.manuale HEADER {  }
-BODY.manuale HEADER H1 {display: none  }
-BODY.manuale HEADER H2 {padding: 4rem 0; text-transform: capitalize }
+BODY.manuale HEADER H1 {}
+BODY.manuale HEADER H2 { float: unset }
 BODY.manuale MAIN { text-align: justify } 
 BODY.manuale MAIN PRE {
 display: block; 
@@ -176,12 +236,27 @@ white-space: pre-wrap;
 BODY.manuale SECTION#testo P:first-of-type:first-letter{
     font-weight: bold;
 }
-    
+BODY.manuale FOOTER { 
+    position: relative;  
+    display: block; 
+    text-align: center; 
+    width: 100%;
+    padding-bottom: 1rem; 
+}
+BODY.manuale FOOTER NAV {width: auto}
+BODY.manuale.copertina { padding-top: 2rem }
+BODY.manuale.dedica MAIN { margin: 25vh auto 15vh auto;}
+BODY.manuale.dedica MAIN P { text-align: center; max-width: 20rem; margin:auto }
+BODY.manuale.indice H3.bozza A { color: #999 }
+BODY.manuale.indice H3 { margin: 1rem 0 }
+BODY.manuale.indice H3.home { margin-top: 4rem; }
+BODY.manuale.indice MAIN {width: auto; text-align: center}
+BODY.manuale.indice IMG.logo {width: 100px; margin: auto}
+BODY.manuale.indice SECTION.indice { text-align: center;}    
 BODY.manuale MAIN P A { color: #990; }
 BODY.manuale MAIN UL { margin: 1rem 0; padding-left: 2.5rem; }
 BODY.manuale BLOCKQUOTE.incluso { color: #543; text-align: justify; padding: 1rem; background: #e4e6c1; margin: 1rem 0;}
 BODY.manuale BLOCKQUOTE.motto { text-align: right; padding: 2rem 0 5rem 0; font-size: 0.9em }
-BODY.manuale FOOTER { position: relative;  display: block; text-align: center; width: 100%;padding-bottom: 3rem; }
 BODY.manuale IMG.logo {width: 300px; max-width:90%; display: inline-block;}
 
 /** Tabella per le aree di memoria */
@@ -200,16 +275,6 @@ TABLE.memoria TD {
 TABLE.memoria TD.area {
     background: #aaa;
 }
-
-BODY.manuale.copertina { padding-top: 2rem }
-BODY.manuale.dedica MAIN { margin: 25vh auto 15vh auto;}
-BODY.manuale.dedica MAIN P { text-align: center; max-width: 20rem; margin:auto }
-BODY.manuale.indice H3.bozza A { color: #999 }
-BODY.manuale.indice H3 { margin: 1rem 0 }
-BODY.manuale.indice H3.home { margin-top: 4rem; }
-BODY.manuale.indice MAIN {width: auto; text-align: center}
-BODY.manuale.indice IMG.logo {width: 100px; margin: auto}
-BODY.manuale.indice SECTION.indice { text-align: center;}
 
 /**
  *  Stili per mobile
