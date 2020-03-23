@@ -4,14 +4,18 @@
     {%- include head.html -%}
 
 <body class="manuale {{ page.class }}">
-    <header>
-    </header>
 
-    <main>
-    {{ content}}
-    </main>
+    <div id="page">
+        
+        <header>
+        </header>
 
-    {%- include man-footer.html -%}
+        <main>
+        {{ content}}
+        </main>
+
+        {%- include man-footer.html -%}
 
   </body>
+
 </html>
