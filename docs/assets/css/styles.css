@@ -140,6 +140,8 @@ TABLE.memoria TD { width: 20px; height: 20px; }
 
 TABLE.memoria TD.area { background: #aaa; }
 
+IFRAME.pdf { width: 100%; height: 780px; }
+
 /** Stili per mobile */
 @media only screen and (max-width: 420px) { H1 { font-size: 1.75rem; }
   H2 { font-size: 1.2rem; }
