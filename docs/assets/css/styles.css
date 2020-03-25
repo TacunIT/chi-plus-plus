@@ -1,5 +1,5 @@
 @charset "UTF-8";
-* { margin: 0; padding: 0; }
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0; margin: 0; }
 
 .bianconero { -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */ filter: grayscale(100%); }
 
@@ -12,9 +12,9 @@ BODY { background-color: #fff; color: #000000; font-family: Simonetta, Calibri, 
 
 H1, H2, H3, H4 { margin: auto; }
 
-H1 { font-size: 1.5rem; }
+H1 { font-size: 2rem; }
 
-H2 { font-variant-caps: petite-caps; font-size: 2 rem; }
+H2 { font-variant-caps: petite-caps; font-size: 1.5rem; }
 
 H3 { font-size: 1.2rem; margin-top: 1rem; color: #666; }
 
@@ -47,20 +47,18 @@ BODY FOOTER { padding-top: 3rem; }
 
 BODY HEADER DIV.box.intestazione { height: 80px; width: 100%; text-align: left; }
 
-BODY HEADER DIV.box.titoli { height: 100%; width: auto; }
+BODY HEADER img.logo { height: 80px; width: 130px; display: inline-block; float: left; padding: 0 1rem; }
 
-BODY HEADER H1 { display: none; }
-
-BODY HEADER H2 { display: inline-block; float: right; line-height: 80px; padding: 0 1rem; }
-
-BODY HEADER img.logo { height: 80px; width: auto; display: inline-block; float: left; padding: 0 1rem; }
+BODY HEADER DIV.box.titoli { padding-top: 0.5rem; width: calc(100% - 130px); }
 
 /** Stili dei menu */
-NAV { border-top: solid 1px; display: inline-block; border-bottom: solid 1px; margin: 1.5rem auto 1rem auto; border-color: #990; width: 100%; }
+NAV { border-top: solid 1px; display: inline-block; border-bottom: solid 1px; border-color: #990; width: 100%; }
 
 NAV A { font-variant-caps: petite-caps; font-size: 12pt; font-weight: bold; display: inline-block; padding: 0.5rem 0.75rem; }
 
 NAV A#spazionismo { display: none; }
+
+NAV.menu-top { margin: 1rem auto 1rem auto; }
 
 MAIN { width: 32rem; max-width: 90%; display: inline-block; margin: auto; text-align: justify; position: relative; padding-top: 1rem; }
 
@@ -81,9 +79,9 @@ MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; padding: 1em; 
 /** Stili per la pagina index e per la copertina del manuale */
 BODY.index HEADER DIV.box.intestazione, BODY.manuale.copertina HEADER DIV.box.intestazione { height: auto; text-align: center; }
 
-BODY.index HEADER H1, BODY.manuale.copertina HEADER H1 { font-size: 2.5rem; padding: 1rem 0; text-align: center; display: block; }
+BODY.index HEADER H1, BODY.manuale.copertina HEADER H1 { padding: 1rem 0; text-align: center; display: block; }
 
-BODY.index HEADER H2, BODY.manuale.copertina HEADER H2 { font-size: 1.5rem; margin-bottom: 0.5rem; line-height: unset; float: none; }
+BODY.index HEADER H2, BODY.manuale.copertina HEADER H2 { margin-bottom: 0.5rem; line-height: unset; float: none; }
 
 BODY.index HEADER img.logo, BODY.manuale.copertina HEADER img.logo { width: 240px; height: auto; max-width: 90%; float: none; }
 
@@ -143,6 +141,11 @@ TABLE.memoria TD { width: 20px; height: 20px; }
 TABLE.memoria TD.area { background: #aaa; }
 
 /** Stili per mobile */
-@media only screen and (max-width: 420px) { DIV.testo P { text-align: left; } }
+@media only screen and (max-width: 420px) { H1 { font-size: 1.75rem; }
+  H2 { font-size: 1.2rem; }
+  BODY.index HEADER DIV.box.titoli, BODY.manuale.copertina HEADER DIV.box.titoli { width: auto; }
+  BODY.index HEADER H1, BODY.manuale.copertina HEADER H1 { padding: 0; }
+  BODY.index HEADER img.logo, BODY.manuale.copertina HEADER img.logo { width: 200px; height: auto; }
+  DIV.testo P { text-align: left; } }
 
 /*# sourceMappingURL=styles.css.map */
