@@ -4,8 +4,11 @@ $bodyFont: Simonetta, Calibri, Arial, sans-serif ;
 $bodyFontSize: 15pt ;
 
 * {
- margin: 0;
- padding: 0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0;
+    margin:0
 }
 
 .bianconero {
@@ -42,12 +45,12 @@ H1, H2, H3, H4 {
 }
 
 H1 {
- font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 H2 {
- font-variant-caps: petite-caps;
- font-size: 2 rem
+    font-variant-caps: petite-caps;
+    font-size: 1.5rem
 }
 
 H3 {
@@ -134,40 +137,29 @@ BODY HEADER DIV.box.intestazione {
  text-align: left;
 }
 
-BODY HEADER DIV.box.titoli {
- height: 100%;
- width: auto;
-}
-
-BODY HEADER H1 {
- display: none;
-}
-
-BODY HEADER H2 {
- display: inline-block;
- float: right;
- line-height: 80px;
- padding: 0 1rem;
-}
-
 BODY HEADER img.logo {
- height: 80px;
- width: auto;
- display: inline-block;
- float: left;
- padding: 0 1rem;
+    height: 80px;
+    width: 130px;
+    display: inline-block;
+    float: left;
+    padding: 0 1rem;
 }
+
+BODY HEADER DIV.box.titoli {
+    padding-top: 0.5rem;
+    width: calc(100% - 130px);
+}
+
 
 /**
   *  Stili dei menu
   */
 NAV {
- border-top: solid 1px;
- display: inline-block;
- border-bottom: solid 1px;
- margin: 1.5rem auto 1rem auto;
- border-color: #990;
- width: 100%;
+     border-top: solid 1px;
+     display: inline-block;
+     border-bottom: solid 1px;
+     border-color: #990;
+     width: 100%;
 }
 
 NAV A {
@@ -180,6 +172,10 @@ NAV A {
 
 NAV A#spazionismo {
  display: none
+}
+
+NAV.menu-top {
+    margin: 1rem auto 1rem auto;
 }
 
 MAIN {
@@ -248,14 +244,12 @@ BODY.index HEADER DIV.box.intestazione, BODY.manuale.copertina HEADER DIV.box.in
 }
 
 BODY.index HEADER H1, BODY.manuale.copertina HEADER H1 {
- font-size: 2.5rem;
- padding: 1rem 0;
- text-align: center;
- display: block;
+    padding: 1rem 0;
+    text-align: center;
+    display: block;
 }
 
 BODY.index HEADER H2, BODY.manuale.copertina HEADER H2 {
- font-size: 1.5rem;
  margin-bottom: 0.5rem;
  line-height: unset;
  float: none;
@@ -407,7 +401,24 @@ TABLE.memoria TD.area {
  *  Stili per mobile
  */
 @media only screen and (max-width: 420px) {
- DIV.testo P {
-  text-align: left
- }
+
+    H1 {
+        font-size: 1.75rem;
+    }
+    H2 {
+        font-size: 1.2rem
+    }
+    BODY.index HEADER DIV.box.titoli, BODY.manuale.copertina HEADER DIV.box.titoli,{
+        width: auto;    
+    }
+    BODY.index HEADER H1, BODY.manuale.copertina HEADER H1 {
+        padding: 0;
+    }
+    BODY.index HEADER img.logo, BODY.manuale.copertina HEADER img.logo {
+        width: 200px;
+        height: auto;
+    }
+    DIV.testo P {
+        text-align: left
+    }
 }
