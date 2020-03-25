@@ -2,7 +2,7 @@
 layout:     default
 title:      FAQ
 h2:         Domande frequenti
-class:      faq
+class:      pagina
 permalink:  /faq/
 bozza:      true
 ---

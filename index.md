@@ -3,6 +3,7 @@ layout: default
 title: C'hi++
 h2: Proposta per una metafisica open-source
 class: index
+footer: true
 ---
 
 <b>C'hi++</b> è un tentativo di spiegare il significato
@@ -195,4 +196,3 @@ conseguenza, le nostre esistenze.<br />
 Riassumendo, il Paradiso e l'Inferno non sono altrove: sono solo due
 stati possibili dell'Universo e siamo noi, con le nostre azioni e le
 nostre intenzioni, a decidere in quale dei due vivere.
-
