@@ -1,3 +1,7 @@
+## 0.8.15 (March 25, 2020)
+  - Aggiunta pagina separata per Manifesto
+  - Rivista impostazione grafica testata
+
 ## 0.8.14 (March 23, 2020)
   - Formattato CSS
   - Rivista la grafica della pagina
