@@ -36,6 +36,8 @@ DIV { display: inline-block; }
 
 TABLE, TD, TR { border-collapse: collapse; border: solid 1px #999; padding: 0.25rem 0.5rem; }
 
+UL { list-style-type: square; }
+
 OL { padding: 0 2rem; margin: 1rem 0; }
 
 /** Stili per il corpo della pagina. */

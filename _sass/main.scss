@@ -70,13 +70,13 @@ HR:before {
 }
 
 P {
- -webkit-hyphens: auto;
- -moz-hyphens: auto;
- hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 
 P+P {
- margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 CODE, PRE {
@@ -104,6 +104,9 @@ TABLE, TD, TR {
  padding: 0.25rem 0.5rem;
 }
 
+UL {
+list-style-type: square;
+}
 OL {
  padding: 0 2rem;
  margin: 1rem 0;
