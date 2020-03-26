@@ -8,7 +8,11 @@ bozza:      false
 footer:     true
 ---
 
-<link rel="stylesheet" type="text/css" href="../../assets/css/chi-plus-plus.css" />
+<p style="font-size:1rem;padding: 1rem 0;text-align:right">
+    <a type="application/pdf" title="Scarica il file PDF" href="/assets/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf">Scarica il PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+</a></p>
+
+<link rel="stylesheet" type="text/css" href="../../assets/css/proposta.css" />
 
 <section class="pagina cover">
 	<h1>C'hi++</h1>
@@ -78,10 +82,16 @@ Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i momenti di 
 Per fare un esempio: se vi ponessero queste tre domande, cosa rispondereste?
 
 <ol class="domande">
-<li >Una ragazza è rimasta incinta a séguito di una violenza: può decidere di abortire?</li>
-<li><a name="domanda-B"></a> Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?</li>
-<li>Un uomo è gravemente malato e vive grazie a delle macchine: può
-    decidere di spegnerle o no?</li>
+    <li >
+        Una ragazza è rimasta incinta a séguito di una violenza: può decidere di abortire?
+    </li>
+    <li>
+        Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?
+    </li>
+    <li>
+        Un uomo è gravemente malato e vive grazie a delle macchine: può
+        decidere di spegnerle o no?
+    </li>
 </ol>
 
 Come vedremo fra poco, la religione può aiutarvi a trovare una risposta
@@ -92,7 +102,7 @@ Ciò dipende da due fattori: la natura umana e la mancanza di solidità logica d
 Infatti, dovendo interessarsi di argomenti che non possono essere sottoposti a un'analisi razionale, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di dogmi non dimostrabili che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.
 I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato con ogni mezzo, anche a costo di abiurare quegli stessi princìpi che si cerca di difendere.
 E qui, come direbbe Amleto, comincia il male, perché i dogmi non sono leggi comprovabili, ma opinioni o speranze e ogni tentativo di renderli più robusti ottiene l'effetto opposto perché si ampliano le dimensioni di una struttura che poggia su basi instabili.
-<br />
+
 ### Caso d'uso: il Buonismo
 Per dimostrare l'affermazione fatta sopra, immaginiamo che esista una religione chiamata: *Buonismo* i cui dogmi siano:
 
@@ -115,9 +125,10 @@ esempio), ma nessuno potrebbe criticare il buonista, che decide in maniera coere
 Se però si domandasse allo stesso individuo:
 
 <ol class="domande" start="4">
-<li ><a name="domanda-D"></a>
-	Se Dio è buono, giusto e misericordioso, perché nell'Universo
-	da Lui creato esistono stupratori, omicidi e malattie?
+    <li >
+    	Se Dio è buono, giusto e misericordioso, perché nell'Universo
+    	da Lui creato esistono stupratori, omicidi e malattie?
+    </li>
 </ol>
 
 il povero Buonista non saprebbe cosa rispondere, perché per farlo dovrebbe sconfessare almeno uno degli assiomi su cui basa la sua visione dell'esistenza.
@@ -128,15 +139,16 @@ A questo punto, o forse anche da prima, vi starete chiedendo che bisogno ci sia 
 Il fatto è che, con buona pace di John Lennon, in un Mondo senza religioni la situazione non migliorerebbe: se le tre domande viste sopra le faceste a un giudice, vi risponderebbe che sì, la ragazza può abortire, ma né il condannato né il malato possono essere uccisi, perché la Legge lo vieta. Se però gli domandaste:
 
 <ol class="domande" start="5">
-<li >
-    Perché si può uccidere qualcuno che non ha fatto nulla di male
-    perché ipoteticamente potrebbe rendere infelice la vita di sua
-    madre, mentre non si può uccidere chi ha già fatto del male o chi ha
-    una vita sicuramente infelice?
+    <li >
+        Perché si può uccidere qualcuno che non ha fatto nulla di male
+        perché ipoteticamente potrebbe rendere infelice la vita di sua
+        madre, mentre non si può uccidere chi ha già fatto del male o chi ha
+        una vita sicuramente infelice?
+    </li>
 </ol>
 
 il buon giudice non avrebbe meno difficoltà del Buonista a trovare una risposta.
-La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe comunque di spedirvi in prigione, dove trovereste ad attendervi il simpatico soggetto della domanda [B](#domanda-B).
+La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe comunque di spedirvi in prigione, dove trovereste ad attendervi il simpatico soggetto della domanda *B*.
 Questo perché anche i princìpi delle società laiche, al pari dei dogmi delle religioni, non sono verità comprovabili, ma opinioni o speranze.
 A differenza dei dogmi religiosi, però, i laici non possono rifarsi a valori di ordine superiore e, come abbiamo visto [sopra](#il-problema), devono trovare i fondamenti delle loro affermazioni nella realtà contingente, cosa che non sempre è possibile, quindi le loro regole risultano ancora più inconsistenti di quelle religiose.
 
@@ -197,16 +209,17 @@ Siccome, di fatto, non possiamo esserne certi, dobbiamo imporre questa condizion
 	<li>  L'uomo ha un'anima.</li>
 </ol>
 
-Questo atto di fede ci permette di rispondere senza esitazione alla domanda [D](#domanda-D):
+Questo atto di fede ci permette di rispondere senza esitazione alla domanda *D*:
 
 > Dio è buono, giusto e misericordioso. Nell'Universo esistono stupratori, omicidi e malattie è perché l'Universo è opera del Diavolo.
 
 Si tratta però di una vittoria parziale, perché aumentando il numero dei precetti abbiamo aumentato la complessità del nostro modello e, di conseguenza, la probabilità di generare errori o incongruenze:
 
 <ol class="domande" start="6">
-<li >
-	Se l'Universo è stato creato dal Diavolo, perché l'Uomo, che fa
-    parte dell'Universo, dev'essere stato creato da Dio?
+    <li >
+    	Se l'Universo è stato creato dal Diavolo, perché l'Uomo, che fa
+        parte dell'Universo, dev'essere stato creato da Dio?
+    </li>
 </ol>
 
 
@@ -254,10 +267,8 @@ Non è solo una questione di carta intestata: dalla presunta bontà di Dio, la d
 Stando così le cose, abbiamo due possibili scelte: o agiamo da logici e privilegiamo la coerenza del nostro modello, anche a costo di giustificare azioni esecrabili da parte di chi non si sente più in dovere di essere buono, o agiamo da pastori e privilegiamo la sicurezza del nostro gregge, anche a costo di sentirci dire che le nostre convinzioni sono contraddittorie.
 
 Se scegliamo la logica, però, saremo costretti a scinderci dai Buonisti; la nostra dottrina non sarà un'evoluzione del Buonismo, ma sarà al contrario una dottrina a sé stante, che ha dei punti di contatto con il Buonismo, ma anche dei punti di attrito.
-I punti di attrito e gli scismi provocano sempre dei conflitti e, così, il nostro tentativo di rendere migliore la religione Buonista avrà ottenuto un risultato diametralmente opposto a quello che ci eravamo prefissi.
-
+I punti di attrito e gli scismi provocano sempre dei conflitti e, così, il nostro tentativo di rendere migliore la religione Buonista avrà ottenuto un risultato diametralmente opposto a quello che ci eravamo prefissi.  
 C'è un modo per evitarlo?
-<br />
 
 ### Imparare dagli errori
 L'esempio riportato sopra ha evidenziato dei problemi che possiamo considerare congeniti a tutte le religioni:
@@ -299,7 +310,7 @@ Per correggere o quanto meno mitigare questi problemi, una religione dovrebbe qu
 
 Pur se complesso, tutto questo è possibile.
 
-## Soluzione proposta
+## Soluzione proposta
 Da circa dieci anni sto sviluppando una metafisica che rispetta le condizioni viste sopra e che, soprattutto, è del tutto indipendente dall'esistenza di una o più Divinità.
 L'ho chiamata *C'hi++*, un gioco di parole fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato: *C++*.
 Non è un accostamento casuale: la mia intenzione è quella di gestire l'evoluzione della mia teoria così come si gestisce il software; in particolare, il software cosiddetto: *open-source.*
@@ -330,29 +341,29 @@ Il numero di *patch* è incrementato ogni volta che si apportano delle modifiche
 La *major version zero* (_0.y.z_) è destinata allo sviluppo iniziale, quando il software non è ancora stabile e tutto può cambiare in ogni momento. Il versionamento semantico ha anche altre regole, ma per quelli che sono i nostri scopi possiamo fermarci qui.
 
 ### Versionamento delle religioni monoteistiche
-Se volessimo applicate il versionamento alle grandi religioni monoteistiche, otterremmo una sequenza simile a quella della pagina seguente.
+Se volessimo applicate il versionamento alle grandi religioni monoteistiche, otterremmo una sequenza simile a quella della tabella seguente.
 
-| ver. | anno | descrizione | modifiche apportate
-:---: | :---: | --- | :--- |
-0.1.0 | 3200 a.C. | Culti egizi            | Riduzione del numero degli Dei; enoteismo e atenismo POC<a href="#poc" class="nota" name="fn-7">7</a> del monoteismo.
-1.0.0 | 2000 a.C. | Ebraismo               | Dio è uno; tutti gli altri sono deprecati.
-1.0.1 | 1200 a.C.  | 10 Comandamenti Esodo  |  Redazione del manuale utente.
-1.0.2 | 621 a.C.   | Deuteronomio           |  Aggiornamento manuale utente.
-1.0.3 | 500 a.C.   | Levitico               |  Redazione del manuale di amministratore di sistema.
-1.1.0 | 33         | Gesù di Nazareth       |  Evoluzione e *debug* delle regole.
-1.1.1 | 60         | Paolo di Tarso         |  Evoluzione delle nuove regole.
-1.1.2 | 70         | Vangelo di Marco       |  Documentazione versione 1.1.
-1.1.3 | 85         | Vangelo di Matteo      |  Documentazione versione 1.1.
-1.1.4 | 95         | Vangelo di Luca        |  Documentazione versione 1.1.
-1.2.0 | 787        | II° Concilio Nicea |  Miglioramenti all'interfaccia grafica: permesse le immagini sacre.
-1.2.1 | 1284       | Vescovo di Passavia    |  Potenziamento dell'*help-desk* con l'introduzione dei Santi Ausiliatori.
-1.3.0 | 1054       | Chiesa Ortodossa       |  Modifiche all'architettura del sistema: si passa da un sistema centralizzato a uno distribuito.
-1.4.1 | 1540       | Calvino                |  Modifiche all'interfaccia utente.
-2.0.0 | 610        | Islam                  |  Cambio di m*ajor version*: Dio è sempre uno, ma non è lo stesso di prima.
-2.1.0 | 657        | Sunniti                |  Rimozione dell'utente amministratore.
-2.2.0 | 661        | Sciiti                 |  Ripristino dell'utente amministratore.
-<br />
-<br />
+| ver. | anno | descrizione | modifiche apportate |
+|:-:|:-:|:-:|---|
+| 0.1.0 | 3200 a.C. | Culti egizi | Riduzione del numero degli Dei; enoteismo e atenismo POC<a href="#poc" class="nota" name="fn-7">7</a> del monoteismo.
+| 1.0.0 | 2000 a.C. | Ebraismo               | Dio è uno; tutti gli altri sono deprecati.
+| 1.0.1 | 1200 a.C.  | 10 Comandamenti Esodo  |  Redazione del manuale utente.
+| 1.0.2 | 621 a.C.   | Deuteronomio           |  Aggiornamento manuale utente.
+| 1.0.3 | 500 a.C.   | Levitico               |  Redazione del manuale di amministratore di sistema.
+| 1.1.0 | 33         | Gesù di Nazareth       |  Evoluzione e *debug* delle regole.
+| 1.1.1 | 60         | Paolo di Tarso         |  Evoluzione delle nuove regole.
+| 1.1.2 | 70         | Vangelo di Marco       |  Documentazione versione 1.1.
+| 1.1.3 | 85         | Vangelo di Matteo      |  Documentazione versione 1.1.
+| 1.1.4 | 95         | Vangelo di Luca        |  Documentazione versione 1.1.
+|1.2.0 | 787        | II° Concilio Nicea |  Miglioramenti all'interfaccia grafica: permesse le immagini sacre.
+| 1.2.1 | 1284       | Vescovo di Passavia    |  Potenziamento dell'*help-desk* con l'introduzione dei Santi Ausiliatori.
+| 1.3.0 | 1054       | Chiesa Ortodossa       |  Modifiche all'architettura del sistema: si passa da un sistema centralizzato a uno distribuito.
+| 1.4.1 | 1540       | Calvino                |  Modifiche all'interfaccia utente.
+| 2.0.0 | 610        | Islam                  |  Cambio di m*ajor version*: Dio è sempre uno, ma non è lo stesso di prima.
+| 2.1.0 | 657        | Sunniti                |  Rimozione dell'utente amministratore.
+| 2.2.0 | 661        | Sciiti                 |  Ripristino dell'utente amministratore.
+
+
 ### Versionamento del C'hi++
 Il C'hi++ è, in un certo senso, monoteistico, ma non è una religione, quindi deve essere sottoposto a un versionamento autonomo.
 Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero:
