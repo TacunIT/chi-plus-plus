@@ -215,6 +215,7 @@ DIV.citazione {
     padding:1rem;
     text-align:justify;
     line-height: 1;
+    max-width: 100%;
 }
 
 
