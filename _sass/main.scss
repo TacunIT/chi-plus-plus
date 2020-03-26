@@ -33,15 +33,15 @@ $bodyFontSize: 15pt ;
  *
  */
 BODY {
- background-color: #fff;
- color: $bodyColor;
- font-family: $bodyFont;
- font-size: $bodyFontSize;
- text-align: center;
+    background-color: #fff;
+    color: $bodyColor;
+    font-family: $bodyFont;
+    font-size: $bodyFontSize;
+    text-align: center;
 }
 
 H1, H2, H3, H4 {
- margin: auto;
+    margin: auto;
 }
 
 H1 {
@@ -65,9 +65,9 @@ H4 {
 }
 
 HR {
- border: none;
- text-align: center;
- margin: 0.5rem auto;
+    border: none;
+    text-align: center;
+    margin: 0.5rem auto;
 }
 
 HR:before {
@@ -82,6 +82,10 @@ P {
 
 P+P {
     margin-top: 1rem;
+}
+
+P.newpage {
+  page-break-after: always;
 }
 
 CODE, PRE {
@@ -245,29 +249,38 @@ MAIN BLOCKQUOTE {
  *  Stili per la pagina index e per la copertina del manuale
  *
  */
-BODY.index HEADER DIV.box.intestazione, BODY.manuale.copertina HEADER DIV.box.intestazione
- {
- height: auto;
- text-align: center;
+BODY.index HEADER DIV.box.intestazione, 
+BODY.manuale.copertina HEADER DIV.box.intestazione {
+    height: auto;
+    text-align: center;
 }
 
-BODY.index HEADER H1, BODY.manuale.copertina HEADER H1 {
+BODY.index HEADER H1, 
+BODY.manuale.copertina HEADER H1 {
     padding: 1rem 0;
     text-align: center;
     display: block;
 }
 
-BODY.index HEADER H2, BODY.manuale.copertina HEADER H2 {
- margin-bottom: 0.5rem;
- line-height: unset;
- float: none;
+BODY.index HEADER H2, 
+BODY.manuale.copertina HEADER H2 {
+    margin-bottom: 0.5rem;
+    line-height: unset;
+    float: none;
 }
 
-BODY.index HEADER img.logo, BODY.manuale.copertina HEADER img.logo {
- width: 240px;
- height: auto;
- max-width: 90%;
- float: none;
+BODY.index HEADER img.logo, 
+BODY.manuale.copertina HEADER img.logo {
+    width: 240px;
+    height: auto;
+    max-width: 90%;
+    float: none;
+}
+
+BODY.pagina HEADER H2 {
+    margin-top: 0;
+    padding-bottom: 0;
+    font-size: 1.4rem
 }
 
 /**
@@ -420,13 +433,22 @@ IFRAME.pdf {
     H2 {
         font-size: 1.2rem
     }
-    BODY.index HEADER DIV.box.titoli, BODY.manuale.copertina HEADER DIV.box.titoli,{
+    BODY.pagina HEADER H1 {
+        font-size: 1.5rem;
+    }
+    BODY.pagina HEADER H2 {
+        font-size: 1rem;
+    }
+    BODY.index HEADER DIV.box.titoli, 
+    BODY.manuale.copertina HEADER DIV.box.titoli {
         width: auto;    
     }
-    BODY.index HEADER H1, BODY.manuale.copertina HEADER H1 {
+    BODY.index HEADER H1, 
+    BODY.manuale.copertina HEADER H1 {
         padding: 0;
     }
-    BODY.index HEADER img.logo, BODY.manuale.copertina HEADER img.logo {
+    BODY.index HEADER img.logo, 
+    BODY.manuale.copertina HEADER img.logo {
         width: 200px;
         height: auto;
     }
