@@ -10,27 +10,12 @@
  * @version    0.7.7
  * @since      0.4.0
  */
-
+/*
 * {
     padding: 0;
     margin: 0
 }
-
-.grayscale {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-}
-
-html {
-}
-
-body {
-    background-color: #fff;
-}
-
-a.absent {
-    color: #cc0000;
-}
+*/
 
 a.anchor {
     display: block;
@@ -42,17 +27,13 @@ a.anchor {
     left: 0;
     bottom: 0;
 }
-
-I {
-    font-size: inherit;
-}
-
+/*
 sup {
     font-size: 0.7em;
     vertical-align: super;
     line-height: 0;
 }
-
+*/
 /**
  *
  *  Gli stili non devono applicarsi ai titoli della pagina
@@ -92,13 +73,6 @@ MAIN h4:before {
     content: counter(h2) "." counter(h3) "." counter(h4) ". "
 }
 
-p {
-    text-align: justify
-}
-
-MAIN P+P {
-    margin-top: 1rem;
-}
 
 p.firma {
     padding: 2rem
@@ -111,12 +85,12 @@ li p.first {
 li {
     margin: 0;
 }
-
+/*
 ul, ol, pre {
     margin: 1rem 0;
     padding-left: 2rem;
 }
-
+*/
 ul :first-child, ol :first-child {
     margin-top: 0;
 }
@@ -499,6 +473,9 @@ SECTION.bibliografia UL {
 SECTION.note LI ,
 SECTION.bibliografia LI {
     margin-bottom: 0.5rem;
+}
+SECTION.note OL LI A {
+    word-break: break-all;
 }
 
 IMG.qr {

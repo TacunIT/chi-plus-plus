@@ -1,6 +1,8 @@
 @charset "UTF-8";
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0; margin: 0; }
 
+.grayscale { -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */ filter: grayscale(100%); }
+
 .bianconero { -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */ filter: grayscale(100%); }
 
 .box { font-size: 0; position: relative; display: inline-block; }
@@ -28,9 +30,11 @@ P.newpage { page-break-after: always; }
 
 CODE, PRE { text-align: left; background-color: #e4e6c1; font-size: 10pt; font-family: Monaco; }
 
-I { color: #555; }
+I { color: #555; font-size: inherit; }
 
 A { color: #333; }
+
+SUP { font-size: 0.7em; vertical-align: super; line-height: 0; }
 
 DIV { display: inline-block; }
 
@@ -166,11 +170,13 @@ IFRAME.pdf { width: 100%; height: 780px; }
 @media only screen and (max-width: 420px) { DIV#page { padding: 0rem 0.5rem; }
   H1 { font-size: 1.75rem; }
   H2 { font-size: 1.2rem; }
+  UL, OL { padding: 0 1rem 0 1.5rem; }
   BODY.pagina HEADER titolo-1 { font-size: 1.5rem; }
   BODY.pagina HEADER titolo-2 { font-size: 1rem; }
   BODY.index HEADER DIV.box.titoli, BODY.manuale.copertina HEADER DIV.box.titoli { width: auto; }
   BODY.index HEADER titolo-1, BODY.manuale.copertina HEADER titolo-1 { padding: 0; }
   BODY.index HEADER img.logo, BODY.manuale.copertina HEADER img.logo { width: 200px; height: auto; }
+  BODY.pagina MAIN OL { text-align: left; }
   NAV.menu-top { padding: 0 1rem; }
   NAV.menu-top A { font-size: 14pt; }
   DIV.testo P { text-align: left; } }
