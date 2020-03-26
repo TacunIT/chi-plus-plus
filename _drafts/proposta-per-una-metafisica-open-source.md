@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="../../assets/css/chi-plus-plus.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/proposta.css" />
 
 <section class="pagina cover">
 	<h1>C'hi++</h1>
