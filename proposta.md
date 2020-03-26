@@ -1,9 +1,9 @@
 ---
 layout:     default
-title:      Manifesto
-h2:         Leggi il manifesto
+title:      Proposta per una metafisica open-source
+h2:         
 class:      pagina
-permalink:  /manifesto/
+permalink:  /proposta/
 bozza:      false
 footer:     true
 ---
