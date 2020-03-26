@@ -14,7 +14,7 @@ footer:     true
 
 <link rel="stylesheet" type="text/css" href="../../assets/css/proposta.css" />
 
-<section class="pagina cover">
+<section class="copertina">
 	<h1>C'hi++</h1>
 	<h2>Proposta per una metafisica open-source</h2>
 	<img style="margin-top:4rem" src="../../assets/img/quiz.png">
@@ -61,7 +61,7 @@ Si può fare, ma è sbagliato e limitativo.
 È sbagliato da un punto di vista etico, perché le regole che si definiscono sono sempre una conseguenza di esigenze contingenti (guerre, sopraffazioni, disparità sociali), venendo a mancare le quali lo schema logico del sistema perde di significato e si disgrega.
 È sbagliato anche da un punto di vista logico, perché i concetti di vero/falso, giusto/sbagliato devono sempre essere preesistenti allo schema a cui vanno applicati, altrimenti non è possibile sapere se la definizione che se ne dà sia giusta o sbagliata, vera o falsa.
 È limitativo, infine, perché restringe il numero dei possibili obiettivi da perseguire a un insieme finito di azioni o traguardi, raggiunti i quali non esiste più possibilità di migliorare.
-Pensate al gioco degli Scacchi: non esiste nessun motivo, all'interno della schacchiera, che costringa ciascun pezzo a muoversi solo in una specifica maniera; le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a "L" in ossequio a delle regole definte al di fuori della schacchiera, ma è proprio da queste limitazioni che deriva il fascino del gioco.<br />
+Pensate al gioco degli Scacchi: non esiste nessun motivo, all'interno della schacchiera, che costringa ciascun pezzo a muoversi solo in una specifica maniera; le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a "L" in ossequio a delle regole definte al di fuori della schacchiera, ma è proprio da queste limitazioni che deriva il fascino del gioco.  
 Al contrario, la Società moderna è una scacchiera in cui ciascun pezzo si muove nella maniera che preferisce, come “un asino privo di briglie” perché, in ossequio a un malinteso senso di libertà, sono state eliminate tutte le regole. Le persone di successo che si privano della vita sono pedoni che, arrivati alla fine della scacchiera grazie alla loro abilità, hanno scoperto che non esiste alcuna forma di promozione, perché insieme alle regole sono stati aboliti anche i giocatori.
 
 ### La cura
@@ -331,7 +331,7 @@ Rispetto al software cosiddetto: *proprietario*, ovvero il software realizzato d
 ### Versioni
 I letterati, gli scultori, i pittori non possono modificare le loro opere, una volta che sono state pubblicate. Possono dare un ritocco di colore qui, un colpo di scalpello là, ma si tratta sempre di aggiustamenti minimi, che non cambiano la struttura stessa dell'arte-fatto.
 I musicisti, i teatranti e, in parte, i cineasti sono un po' più fortunati, perché possono apportare più facilmente delle modifiche alle loro opere, ma si tratta comunque di eventi che accadono di rado.
-<br />
+
 Al contrario, la buona produzione di software ha il vantaggio di essere in continua evoluzione.
 Un software può essere *stabile*, ovvero non avere difetti noti, ma non è mai finito, completo, *perfetto*; sia perché l'utilizzo potrebbe rivelare dei difetti sfuggiti alla fase di test, sia perché delle variazioni del contesto di utilizzo potrebbero richiedere delle modifiche al sistema.
 Il buon software viene quindi costantemente aggiornato e le diverse versioni di uno stesso prodotto sono numerate in maniera progressiva con dei codici composti da tre numeri separati da punti (p.es. *1.4.3*) che indicano, rispettivamente, la versione *major*, la versione *minor e* la *patch*.
@@ -380,27 +380,36 @@ Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero
 0.5.0 | 2019 |  Revisione Manifesto | Revisione Manifesto come preogetto IT
 0.6.0 | 2020 |  Presentazone Manifesto | Articolo presentazione Manifesto
 
+<!-- @todo aggiungere versioni 0.7 e 0.8 -->
+
 Già da queste poche righe è possibile vedere alcuni benefici dell'approccio *open-source* alla speculazione filosofica: nella versione 0.1.0 del C'hi++, la figura che definisco: *Immancabile Testa di Pera* era un elemento negativo, assimilabile al Diavolo o alla *Discordia* di Empedocle.
 Successivamente, però, ho capito che questa visione delle cose era la proiezione di un mio desiderio/speranza e sono passato a un modello meno giudicante, in cui i due Enti che generano l'Universo non sono in contrapposizione, ma cooperano in maniera simile allo *Yin* e allo *Yang* del Tao o a *Prakṛti* e *Puruṣa* dell'Induismo.
 Questa modifica, per quanto radicale, non ha avuto nessuna ripercussione negativa sul resto del modello teorico, *dichiaratamente* fallace in quanto ancora in fase evolutiva (*major version* 0); anzi: lo ha reso più robusto perché ha premesso di trovare delle affinità con altre religioni.
-<br />
+
 Se avessimo applicato la stessa modifica al Cattolicesimo, riabilitando la figura del Diavolo, le cose non sarebbero andate altrettanto bene perché, se il Diavolo non fosse cattivo, non solo dovremmo mettere in discussione la veridicità di moltissimi passi della Bibbia (che non può essere messa in discussione perché è la Parola di Dio), ma priveremmo la Chiesa della sua funzione primaria che è quella di salvare le anime, appunto, dal Maligno.
 
+<!-- 
+    @todo aggiungere link a documento
+    [Sostiene Aristotele](/sostiene-aristotele.md) 
+-->
+
 ## Release 0.1: Sostiene Aristotele
-A Giugno del 2007 scrissi un documento dal titolo:  [Sostiene Aristotele](sostiene-aristotele.md) che possiamo considerare la versione 0.1.1 del C'hi++.
+A Giugno del 2007 scrissi un documento dal titolo: *Sostiene Aristotele* che possiamo considerare la versione 0.1.1 del C'hi++.
 In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<a href="#soko" class="nota" name="fn-8">8</a>
 Nelle fasi di espansione, l'Uno esplodeva, generando l'Universo così come lo conosciamo; nelle fasi di contrazione, l'Universo collassava nell'Uno.
 Anche se in embrione, gli elementi principali del C'hi++ ci sono tutti; la rarefazione degli elementi metafisici:
 
-<div class="citazione" >
+<div class="citazione">
 Sostiene Aristotele che le scienze più rigorose sono quelle che richiedono il numero minore di premesse.
 La cosa mi conforta, perché la mia ipotesi richiede solo tre premesse per funzionare a livello “base”, e quattro per una visione un po’ più appetibile delle cose.
 I tre dogmi principali della mia “religione” sono:
+
 <ol>
 	<li>le cose possono esistere</li>
 	<li>l’Universo si espande</li>
 	<li>se lasci andare un peso, quello ti finisce su un piede</li>
 </ol>
+
 Del quarto dogma parleremo dopo, per ora concentriamoci su questi tre:<br />
 <br/>
 Dogma numero uno: le cose possono esistere.
@@ -469,12 +478,15 @@ Ora, il concetto di “bene”, a prescindere da una Divinità e da un corpo di 
 È la differenza, drastica, che passa fra l’agire male e l’agire per il male.
 (Anche qui, devo semplificare, ma ho delle dimostrazioni per tutte queste affermazioni...)
 C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musashi:
+
  <blockquote>
     Non bisogna interferire nel funzionamento dell’Universo,
     ma prima è necessario capire quale sia,
     il funzionamento dell’Universo
 </blockquote>
+
  Che somiglia molto a una frase di Jacopone da Todi:
+
  <blockquote>
     Prima devi sape' perché stai ar monno<br />
     quanno sai er perché <br />
@@ -511,9 +523,9 @@ gli sforzi dell’uomo per propiziarsi o conciliarsi potenze superiori che si
 suppone dirigano e controllino il corso della natura e della vita umana.<a href="#frazer" class="nota" name="fn-">13</a>
 </div>
 
-è valida anche per il C'hi++, solo che le “potenze superiori”, siamo noi stessi.
+è valida anche per il C'hi++, solo che le “potenze superiori”, siamo noi stessi. 
 
-##Release 0.2: C'hi++<a name="chi++"></a>
+## Release 0.2: C'hi++
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.
 Questa ambivalenza è presente anche nel titolo, che è un gioco di parole fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato *C++*.
 Il tono della narrazione è generalmente serio, ma non sempre.
@@ -599,9 +611,9 @@ Al contrario, l’indottrinamento degli informatici, la loro segregazione in una
 </div>
 
 Nei capitoli seguenti, sarà descritto il linguaggio C++, facendo dei paralleli fra i suoi costrutti sintattici e alcuni concetti filosofici.
-Riporto di seguito alcuni esempi, anche si tratta ancora di appunti e non di un testo definitivo:
+Riporto di seguito alcuni esempi, anche si tratta ancora di appunti e non di un testo definitivo: 
 
-####Commenti al codice
+#### Commenti al codice
 Affinità con i *Post-it* di cui parlavo prima, una sorta di memoria storica dell'Universo:
 
 <div class="citazione">
@@ -733,7 +745,7 @@ della Storia, che a sua volta genererà nuove esperienze e nuovi *Post-It*;
 4. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
 5. tutto ricomincia daccapo.
 
-####Basso accoppiamento
+#### Basso accoppiamento
 Lo Spazionismo è la parte più pericolosa di tutta la mia metafisica.
 Non solo perché non ho alcun titolo per parlare di spazio e materia, ma perché il nome stesso della teoria è legato ai suoi postulati: il nome *Spazionismo* deriva dal nome *spazione* e il nome *spazione* deriva dai presunti attributi dell'entità che rappresenta<a href="#spazione" class="nota" name="fn-17">17</a>.
 È, questa, la trasposizione astro-fisica del problema meta-fisico visto a proposito del [Buonismo](#buonismo): se alla fine si scopre che Dio non è buono o che comunque non ha senso attribuirgli delle qualità terrene, il nome della religione non ha più senso, indipendentemente dalla solidità dei suoi precetti.
@@ -751,7 +763,7 @@ in un progetto *open-source*, coinvlgendo nello “sviluppo” anche altre perso
 ### Git
 *Git* è un sistema con cui si gestiscono le diverse versioni di un software, ma può essere utilizzato per tenere traccia delle modifiche di qualsiasi documento elettronico. Leggendo il registro degli eventi di Git possiamo vedere quali sono state le modifiche apportate al sistema:
 
-```
+<pre>
 *   commit fa61cc01a2c1c3aeedc94a8a8a795e932d17f98d (origin/master)
 |\  Merge: ced4c8f 1746b3c
 | | Author: Chi++ <git@chiplusplus.org>
@@ -769,7 +781,9 @@ in un progetto *open-source*, coinvlgendo nello “sviluppo” anche altre perso
 | | | Date:   Sat Dec 15 19:42:22 2018 +0100
 | | |     Merge branch 'release 0.4.3'
 | | |
-```
+</pre>
+
+
 Ciascuno di quei “commit” identificati da una stringa alfanumerica che si vedono nel codice qui sopra, è una sorta di fotografia del sistema in un determinato momento dello sviluppo.
 Se ci si accorge di aver fatto un errore, si può ritornare indietro, annullando le modifiche fatte e ripristinando la vecchia versione del sistema.
 <br >
@@ -784,7 +798,7 @@ Mi sono dilungato su Git perché il prossimo paragrafo comincia con la frase..
 ## Release 0.4: Markdown
 Come si può vedere dal registro degli eventi di Git, il 9 Dicembre di quest'anno ho convertito il testo di questo documento dal formato *OpenDocument* al formato *Markdown*.
 
-```
+<pre>
 commit ba7ff38b6d0862b13a79f10153c2eb11477b2a1f
 Author: Chi++ <git@chiplusplus.org>
 Date:   Sun Dec 9 16:01:53 2018 +0100
@@ -796,7 +810,8 @@ Author: Chi++ <git@chiplusplus.org>
 Date:   Sun Dec 9 10:30:25 2018 +0100
 
     Iniziata conversione Manifesto in formato Markdown
-```
+</pre>
+
 La differenza fra i due formati è che OpenDocument non è un formato testuale puro ed è più complicato da gestire con Git; al contrario, Markdown è un formato *plain-text* ed è gestito senza problemi da Git.
 Il passaggio a Markdown non è stato un vezzo, ma un obbligo, perché solo in questo modo è possibile avere un controllo completo sulle modifiche che sono apportate ai testi.
 Un beneficio collaterale dell'adozione di Markdown è stato la *portabilità* del testo: mentre un testo in formato OpenDocument può essere letto e modificato solo con un programma di *desktop-publishing*, come *Word* o una delle sue alternative, un testo Markdown può essere letto e modificato con qualunque strumento permetta di aprire e modificare file di testo, da *Notepad* a *vi*.
