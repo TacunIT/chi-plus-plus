@@ -104,10 +104,6 @@ p.firma {
     padding: 2rem
 }
 
-p.newpage {
-  page-break-after: always;
-}
-
 li p.first {
     display: inline-block;
 }
@@ -258,7 +254,7 @@ table tr th :last-child, table tr td :last-child {
     margin-bottom: 0;
 }
 
-img {
+MAIN IMG {
     max-width: 100%;
     margin: 1rem 0rem
 }
