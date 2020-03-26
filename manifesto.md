@@ -14,17 +14,17 @@ footer:     true
 
 <link rel="stylesheet" type="text/css" href="../../assets/css/proposta.css" />
 
-<section class="copertina">
+<section class="copertina pagina">
 	<h1>C'hi++</h1>
 	<h2>Proposta per una metafisica open-source</h2>
 	<img style="margin-top:4rem" src="../../assets/img/quiz.png">
 </section>
 
-<section class="dedica">
+<section class="dedica pagina">
 0x0D 0x0C 0x0B 0x0A
 </section>
 
-<section class="citazione">
+<section class="citazione pagina">
 E gli atei? rideva ancora.<br/>
 Quelli mi annoiano perché parlano sempre di Dio. <br/>
 <span>Heinrich Böll</span> - Opinioni di un clown
@@ -150,9 +150,9 @@ Il fatto è che, con buona pace di John Lennon, in un Mondo senza religioni la s
 il buon giudice non avrebbe meno difficoltà del Buonista a trovare una risposta.
 La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe comunque di spedirvi in prigione, dove trovereste ad attendervi il simpatico soggetto della domanda *B*.
 Questo perché anche i princìpi delle società laiche, al pari dei dogmi delle religioni, non sono verità comprovabili, ma opinioni o speranze.
-A differenza dei dogmi religiosi, però, i laici non possono rifarsi a valori di ordine superiore e, come abbiamo visto [sopra](#il-problema), devono trovare i fondamenti delle loro affermazioni nella realtà contingente, cosa che non sempre è possibile, quindi le loro regole risultano ancora più inconsistenti di quelle religiose.
+A differenza dei dogmi religiosi, però, i laici non possono rifarsi a valori di ordine superiore e, come abbiamo visto sopra, devono trovare i fondamenti delle loro affermazioni nella realtà contingente, cosa che non sempre è possibile, quindi le loro regole risultano ancora più inconsistenti di quelle religiose.
 
-Prendete ad esempio i trenta articoli della [Dichiarazione dei Diritti dell'Uomo](http://www.un.org/en/universal-declaration-human-rights/) del 1948: voi e io troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.
+Prendete ad esempio i trenta articoli della <a href="http://www.un.org/en/universal-declaration-human-rights/" target="un" >Dichiarazione dei Diritti dell'Uomo</a> del 1948: voi e io troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.
 Per quale motivo un Signore della Guerra centro-africano dovrebbe rispettarle, dato che non sono un insieme di norme giuridiche a cui gli Stati e gli individui debbano attenersi, ma un elenco di quelli che *dovrebbero essere*<a href="#achievements" class="nota" name="fn-4">4</a> i diritti di ogni essere umano?
 Perché, soprattutto, dovrebbe rispettare delle regole volte al mantenimento della pace, promulgate da un'Organizzazione che ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="#sipri" class="nota" name="fn-5">5</a>
 e che violano costantemente quelle stesse regole da loro promosse?
@@ -229,7 +229,7 @@ Eliminare il primo precetto (*Dio esiste*) non è possibile, perché gli altri d
 Eliminare il terzo precetto (*Dio ha creato l'Universo*) equivale a dire: “A Shanghai esiste un uomo di nome Mario”; se Dio c'è ed è buono, ma se non ha alcuna relazione con l'Universo e la nostra esistenza, a noi, cosa importa?
 Se però eliminiamo il secondo precetto, (*Dio ha solo proprietà positivie*)  tutto magicamente si aggiusta: Dio esiste, ha creato l'Universo e l'Uomo, ma non è possibile dire se sia buono o meno, perché è improprio classificare l'essenza del creatore con gli attributi del creato; sarebbe come se i *byte* di un computer si chiedessero se il Programmatore valga I o 0.
 <br>
-Senza la premessa, conseguente al secondo precetto (*Se Dio è buono, giusto e misericordioso*), la famigerata domanda [D](#domanda-D) non è più contraddittoria: se qualcuno ce la facesse, adesso, potremmo rispondere:
+Senza la premessa, conseguente al secondo precetto (*Se Dio è buono, giusto e misericordioso*), la famigerata domanda **D** non è più contraddittoria: se qualcuno ce la facesse, adesso, potremmo rispondere:
 
 > Nell'Universo creato da Dio esistono stupratori, omicidi e malattie perché ciò fa parte del Suo disegno, che noi non siamo in grado di comprendere.
 
@@ -748,7 +748,7 @@ della Storia, che a sua volta genererà nuove esperienze e nuovi *Post-It*;
 #### Basso accoppiamento
 Lo Spazionismo è la parte più pericolosa di tutta la mia metafisica.
 Non solo perché non ho alcun titolo per parlare di spazio e materia, ma perché il nome stesso della teoria è legato ai suoi postulati: il nome *Spazionismo* deriva dal nome *spazione* e il nome *spazione* deriva dai presunti attributi dell'entità che rappresenta<a href="#spazione" class="nota" name="fn-17">17</a>.
-È, questa, la trasposizione astro-fisica del problema meta-fisico visto a proposito del [Buonismo](#buonismo): se alla fine si scopre che Dio non è buono o che comunque non ha senso attribuirgli delle qualità terrene, il nome della religione non ha più senso, indipendentemente dalla solidità dei suoi precetti.
+È, questa, la trasposizione astro-fisica del problema meta-fisico visto a proposito del Buonismo: se alla fine si scopre che Dio non è buono o che comunque non ha senso attribuirgli delle qualità terrene, il nome della religione non ha più senso, indipendentemente dalla solidità dei suoi precetti.
 <br />
 In informatica, questo rischio si previene adottando il metodo del *basso accoppiamento* o *low coupling*, un termine che non si riferisce alla generale difficoltà degli informatici a instaurare rapporti con persone di sesso opposto, ma alla separazione delle funzioni all'interno di un sistema.
 Se gli elementi interni di un sistema sono dipendenti gli uni dagli altri, la correzione o la modifica di uno di essi comporterà necessariamente anche la modifica del resto del codice.
@@ -952,7 +952,7 @@ considerare un errore questa caratteristica.
 ### Un'etica per apparati digitali
 In questo periodo storico, non sono solo gli umani ad avere bisogno di una nuova etica.
 Qualche tempo fa, stavo cercando un saggio sul *brainjacking*<a href="# brainjacking" class="nota" name="fn-29">29</a>
-su [Springer](https://rd.springer.com) e nell'elenco degli articoli mi sono
+su <a href="https://rd.springer.com" target="springer">Springer</a> e nell'elenco degli articoli mi sono
 apparsi due titoli in sequenza:
 
 ![](../../assets/img/value-sensitive-design.png)
@@ -1013,7 +1013,7 @@ Mi sembra un motivo più che sufficiente.
     <h2>Note</h2>
     <ol>
         <li>
-            Le frasi in corsivo sono commenti trovati sui *social-network*.
+            Le frasi in corsivo sono commenti trovati sui social-network.
             <a href="#fn-1" name="corsivo">&#8617;</a>
         </li>
         <li><a target="note"
@@ -1043,38 +1043,37 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-6" name="reami">&#8617;</a>
         </li>
         <li>
-            *Proof Of Concept*: prototipo che serve a di/mostrare le funzionalità
+            <i>Proof Of Concept</i>: prototipo che serve a di/mostrare le funzionalità
             di un nuovo sistema o processo.
             <a href="#fn-7" name="poc">&#8617;</a>
         </li>
         <li>
-            Di cui potrebbe essere un'eco l': *“inspirare, espirare”* all'inizio
+            Di cui potrebbe essere un'eco l': “inspirare, espirare” all'inizio
             della poesia funeraria del monaco Gesshū Sōko.
             <a href="#fn-8" name="soko">&#8617;</a>
         </li>
         <li>
-            I *beta-tester* sono le persone che provano in anteprima i programmi
+            I <i>beta-tester</i> sono le persone che provano in anteprima i programmi
             che stanno per essere rilasciati sul mercato per cercare eventuali
             errori sfuggiti alla fase di test interno effettuato dell'azienda
             produttrice.
             <a href="#fn-9" name="beta-tester">&#8617;</a>
         </li>
         <li>
-            Mumon, *La Porta Senza Porta*. Adelphi, 1987.
+            Mumon, <i>La Porta Senza Porta</i>. Adelphi, 1987.
             <a href="#fn-10" name="mumon">&#8617;</a>
         </li>
         <li>
-           Grazie a un “imprintig karmico” che io qui chiamo *Post-it* e che
-           Yoga e Buddismo chiamano *Vāsanā*.
+           Grazie a un “imprintig karmico” che io qui chiamo <i>Post-it</i> e che Yoga e Buddismo chiamano <i>Vāsanā</i>.
             <a href="#fn-11" name="vasana">&#8617;</a>
         </li>
         <li>
-            Attar, Farid al-din - *Il verbo degli uccelli* (Mantiq al-Tayr).
+            Attar, Farid al-din - <i>Il verbo degli uccelli</i> (Mantiq al-Tayr).
             Edizione elettronica - Kharabat, Collana di letterature orientali.
             <a href="#fn-12" name="pentimento">&#8617;</a>
         </li>
         <li>
-            Frazer, James George - *Il Ramo d'Oro*. Edizione elettronica -
+            Frazer, James George - <i>Il Ramo d'Oro</i>. Edizione elettronica -
             Newton Compton 2012.
             <a href="#fn-13" name="frazer">&#8617;</a>
         </li>
@@ -1085,7 +1084,7 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-14" name="no-mao">&#8617;</a>
         </li>
         <li>
-            E non: *per colpa*, come nella versione 0.1.1
+            E non: <i>per colpa</i>, come nella versione 0.1.1
             <a href="#fn-15" name="causa">&#8617;</a>
         </li>
         <li>
@@ -1095,9 +1094,8 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-16" name="variante">&#8617;</a>
         </li>
         <li>
-            Il nome *spazione* è anche un riferimento, intenzionalmente
-            auto-ironico, ai: *cosoni*, i baccelli del film *Totò sulla Luna*,
-            parodia nostrana de: *L'invasione degli ultracorpi*.
+            Il nome <i>spazione</i> è anche un riferimento, intenzionalmente
+            auto-ironico, ai: <i>cosoni</i>, i baccelli del film <i>Totò sulla Luna</i>, parodia nostrana de: <i>L'invasione degli ultracorpi</i>.
             <a href="#fn-17" name="">&#8617;</a>
         </li>
         <li>
@@ -1105,13 +1103,13 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-18" name=leopardi"">&#8617;</a>
         </li>
         <li>
-            Alcune delle possibili codifiche sono: *#cf3054*,
-            *rgb(207, 48, 84)*, *hsl(346, 62%, 50%)*.
+            Alcune delle possibili codifiche sono: <i>#cf3054</i>,
+            <i>rgb(207, 48, 84)</i>, <i>hsl(346, 62%, 50%)</i>.
             <a href="#fn-19" name="rosso-pompeiano">&#8617;</a>
         </li>
         <li>
             Scarabelli, Piera; Vinti, Massimo.
-            *Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja*.
+            <i>Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja</i>.
             Edizione elettronica - Mimesis Edizioni.
             <a href="#fn-20" name="gita">&#8617;</a>
         </li>
@@ -1124,19 +1122,18 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-22" name="rovelli">&#8617;</a>
         </li>
         <li>
-            *diàvolo* s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος,
-            propr. “calunniatore” (der. di διαβάλλω “gettare attraverso, calunniare”),
+            <i>diàvolo</i> s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. “calunniatore” (der. di διαβάλλω “gettare attraverso, calunniare”),
             adoperato nel gr. crist. per tradurre l’ebr. śāṭān
             “contraddittore, oppositore”].
             <a href="#fn-23" name=diavolo">&#8617;</a>
         </li>
         <li>
-            *lucìfero* agg. e s. m. [dal lat. lucĭfer -a -um, comp. di lux
+            <i>lucìfero</i> agg. e s. m. [dal lat. lucĭfer -a -um, comp. di lux
             lucis “luce” e -fer “-fero”, calco del gr. ϕωσϕόρος].
             <a href="#fn-24" name="lucifero">&#8617;</a>
         </li>
         <li>
-            *Istituto Geografico Militare*.
+            <i>Istituto Geografico Militare</i>.
             <a href="#fn-25" name="igm">&#8617;</a>
         </li>
         <li>
@@ -1149,7 +1146,7 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-27" name="">&#8617;</a>
         </li>
         <li>
-            Eran Katz - *Jerome diventa un genio* - Barbera Editore, 2006.
+            Eran Katz - <i>Jerome diventa un genio</i> - Barbera Editore, 2006.
             <a href="#fn-28" name="katz">&#8617;</a>
         </li>
         <li>
@@ -1170,7 +1167,7 @@ Mi sembra un motivo più che sufficiente.
         <li>
             Che, ne caso di un'automobile, potrebbe essere una sorta di
             registro storico delle situazioni indecidibili del passato,
-            simile al *Book* delle partite scacchistiche.
+            simile al <i>Book</i> delle partite scacchistiche.
             <a href="#fn-32" name="book">&#8617;</a>
         </li>
         <li>
@@ -1179,8 +1176,7 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-33" name="barbelognostica">&#8617;</a>
         </li>
         <li>
-            Citazione dal koan Zen *Il cavallo scappato*, ripresa da Calvino
-            nelle sue *Fiabe Italiane*.
+            Citazione dal koan Zen <i>Il cavallo scappato</i>, ripresa da Calvino nelle sue <i>Fiabe Italiane</i>.
             <a href="#fn-34" name="cavallo">&#8617;</a>
         </li>
     </ol>

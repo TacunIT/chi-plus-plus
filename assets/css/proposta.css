@@ -409,6 +409,11 @@ kbd {
     font-size: 2rem;
 }
 
+/** Classe per le pagine singole */
+SECTION.pagina {
+    page-break-after: always;
+}
+
 /**
  *  Copertina del documento
  *  Contiene il titolo, l'oggetto, i dati dell'autore e il finto
@@ -416,14 +421,12 @@ kbd {
  *	Tutti gli elementi della testata sono visualizzati in maniera
  *  differente per web o stampa, vedi sotto @meda print
  */
-
 SECTION.copertina {
     margin:none;
     padding: 6.6% 1rem 0 ;
     height:200mm;
     counter-reset: h2;
     text-align:center;
-    page-break-after: always;
 }
 
 SECTION.copertina H2  {
@@ -454,27 +457,15 @@ SECTION.copertina DIV.dati LABEL:after {
     content: ':';
 }
 
-/**  Dedica del documento principale */
-SECTION.dedica {
-    font-style: italic;
-    font-size: 0.9rem;
-    margin: 0 auto;
-    padding-top: 30%;
-    padding-left: 40%;
-    text-align: right;
-    page-break-before: always;
-    page-break-after: always;
-}
-
-
-/** Citazione in testa */
+/**  Dedica e citazione in testa */
+SECTION.dedica,
 SECTION.citazione {
     font-style: italic;
     font-size: 0.9rem;
     margin: 0 auto;
-    padding-top: 3rem;
+    padding-top: 5rem;
     padding-left: 40%;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
     text-align: right;
     page-break-after: always;
 }
@@ -489,9 +480,9 @@ SECTION.citazione SPAN {
  *  Stili per la gestione delle note a piè di pagina
  *
  */
-SECTION.note,
-SECTION.bibliografia {
+SECTION.note {
     page-break-before: always;
+    padding-bottom: 3rem;
 }
 
 A.nota {
@@ -519,36 +510,6 @@ IMG.qr {
     margin-left: 2mm;
     float: right;
 }
-
-/**
- *  Stili per il file README
-SECTION.readme.copertina {
-	text-align: left;
-}
-DIV.file,
-DIV.icone {
-    text-align:center;
-    padding:1.5rem 0;
-}
-DIV.icone DIV {
-    display: inline-block;
-}
-DIV.icone IMG {
-    height: 100px;
-    border: solid 1px #999;
-    padding: 4px;
-    margin: 0 20px
-    display: block;
-}
-DIV.icone DIV P {
-    text-align:center;
-    color: #900;
-    font-weight: bold;
-}
-DIV.icone DIV P.ok {
-    color: #090
-}
-*/
 
 
 @media screen and (min-width: 914px) {
@@ -582,7 +543,6 @@ DIV.icone DIV P.ok {
         border:none;
     }
 
-
     h1 {
         font-size: 2.5rem;
         color: #600;
@@ -595,21 +555,17 @@ DIV.icone DIV P.ok {
     SECTION.copertina H2  {
         color: #060;
     }
-
     h3 {
         font-size: 1.2rem;
         color: #060;
     }
-
     h4 {
         font-size: 1.1rem;
         color: #666;
     }
-
     h5 {
         font-size: 1rem;
     }
-
     h6 {
         color: #777777;
         font-size: 0.9rem;
@@ -618,8 +574,6 @@ DIV.icone DIV P.ok {
         color: #060;
         font-weight: normal;
     }
-
-
     table, pre {
         page-break-inside: avoid;
     }
