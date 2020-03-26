@@ -7,10 +7,25 @@
 
     <div id="page">
 
-        {%- include man-header.html -%}
+        <header>
 
+            {% if page.class == "copertina" %}
+            <div class="box titoli">
+                <span class="titolo-1">{{ page.title }}</span>
+                <span class="titolo-2">{{ page.h2    }}</span>
+            </div>
+            {% endif %}
+
+            {%- include man-menu.html -%}
+
+        </header>
+
+
+        
         <main {% if page.bozza %}class="bozza"{% endif %}>
+            {% if page.class == "capitolo" %}
             <blockquote class="motto">{{ page.quote }}</blockquote>
+            {% endif %}
             <section id="testo">
                 {{ content}}
             </section>

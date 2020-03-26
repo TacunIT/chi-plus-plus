@@ -1,8 +1,8 @@
 ---
 layout: default
-title: C'hi++
-h2: Proposta per una metafisica open-source
-class: index
+title:  C'hi++
+h2:     Proposta per una metafisica open-source
+class:  index
 footer: true
 ---
 

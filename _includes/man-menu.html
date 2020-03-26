@@ -1,0 +1,16 @@
+<footer>
+    <nav>
+        <a href="{{page.precedente}}" title="Pagina precedente">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="/" title="Torna alla home-page">
+            <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+        </a>
+
+        {% if page.seguente %}
+        <a href="{{page.seguente  }}" title="Pagina seguente"  >
+                <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+        {% endif %}
+    </nav>
+</footer>
