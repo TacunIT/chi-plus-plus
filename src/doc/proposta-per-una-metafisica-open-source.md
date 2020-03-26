@@ -87,15 +87,15 @@ E qui, come direbbe Amleto, comincia il male, perché i dogmi non sono leggi com
 Per dimostrare l'affermazione fatta sopra, immaginiamo che esista una religione chiamata: *Buonismo* i cui dogmi siano:
 
 <ol class="dogmi">
-	<li>Dio esiste
-	<li>Dio ha solo proprietà positive
-	<li>Dio ha creato l'Universo
+	<li>Dio esiste</li>
+	<li>Dio ha solo proprietà positive</li>
+	<li>Dio ha creato l'Universo</li>
 </ol>
 
 Partendo da queste affermazioni non dimostrabili e sapendo che l'Uomo fa parte dell'Universo, i Buonisti deducono che:
 
 <ol class="dogmi" start="4">
-	<li> Dio ha creato l'Uomo
+	<li> Dio ha creato l'Uomo</li>
 </ol>
 
 Certi che la vita sia un dono di Dio all'Uomo e che Dio ha solo proprietà positive (onnipotenza, misericordia, bontà, giustizia, ecc.), i Buonisti deducono che la vita sia un dono positivo e come tale vada preservato.
@@ -154,9 +154,9 @@ Insomma: dato che l'approccio laico presenta gli stessi problemi logici di quell
 Abbiamo visto che i tre assiomi del Buonismo:
 
 <ol class="dogmi">
-	<li>Dio esiste
-	<li>Dio ha solo proprietà positive
-	<li>Dio ha creato l'Universo
+	<li>Dio esiste</li>
+	<li>Dio ha solo proprietà positive</li>
+	<li>Dio ha creato l'Universo</li>
 </ol>
 
 pur nella loro semplicità, diventano incoerenti se li si confronta con la natura percepibile dell'Universo e della vita.
@@ -184,7 +184,7 @@ Priva del concetto di anima, la nostra ipotetica religione diventerebbe logicame
 Siccome, di fatto, non possiamo esserne certi, dobbiamo imporre questa condizione come dogma:
 
 <ol class="dogmi" start="4">
-	<li>  L'uomo ha un'anima.
+	<li>  L'uomo ha un'anima.</li>
 </ol>
 
 Questo atto di fede ci permette di rispondere senza esitazione alla domanda [D](#domanda-D):
@@ -218,8 +218,10 @@ non lo sia, perché in effetti non lo possiamo sapere:
 <li >
 	Austria, 1889; a séguito di complicazioni post-parto, muore il figlio di
 	un doganiere: Dio è stato buono o cattivo?
+</li>
 <li>
 	Il doganiere si chiama Alois Hitler. Dio, è stato buono o cattivo?
+</li>
 </ul>
 
 Dire che Dio esiste e che ha creato l'Universo è ragionevole: l'Universo esiste e quindi esiste necessariamente qualcosa, se non proprio un signore con la barba bianca, almeno un fenomeno o una funzione che possiamo considerare come suo Principio Creatore.
@@ -268,17 +270,21 @@ Oltre ai problemi tipici delle religioni, abbiamo rilevato alcuni problemi tipic
 Per correggere o quanto meno mitigare questi problemi, una religione dovrebbe quindi:
 
 <ol class="da-fare">
-<li>
-	limitare il numero dei dogmi;
-<li>
-	limitare gli elementi metafisici e le accettazioni per fede;
-<li>
-	non proporsi come Unica Verità Incontestabile, ma come
-    un'approssimazione sicuramente incompleta e perfettibile della
-    Verità;
-<li>riconoscere le contraddizioni della dottrina e analizzarle
-    obiettivamente, anche se ciò porterà a modificare la dottrina
-    stessa.
+	<li>
+		limitare il numero dei dogmi;
+	</li>
+	<li>
+		limitare gli elementi metafisici e le accettazioni per fede;
+	</li>
+	<li>
+		non proporsi come Unica Verità Incontestabile, ma come
+	    un'approssimazione sicuramente incompleta e perfettibile della
+	    Verità;
+	</li>
+	<li>riconoscere le contraddizioni della dottrina e analizzarle
+	    obiettivamente, anche se ciò porterà a modificare la dottrina
+	    stessa.
+	</li>
 </ol>
 
 Pur se complesso, tutto questo è possibile.
@@ -370,9 +376,9 @@ Sostiene Aristotele che le scienze più rigorose sono quelle che richiedono il n
 La cosa mi conforta, perché la mia ipotesi richiede solo tre premesse per funzionare a livello “base”, e quattro per una visione un po’ più appetibile delle cose.
 I tre dogmi principali della mia “religione” sono:
 <ol>
-<li>le cose possono esistere</li>
-<li>l’Universo si espande</li>
-<li>se lasci andare un peso, quello ti finisce su un piede</li>
+	<li>le cose possono esistere</li>
+	<li>l’Universo si espande</li>
+	<li>se lasci andare un peso, quello ti finisce su un piede</li>
 </ol>
 Del quarto dogma parleremo dopo, per ora concentriamoci su questi tre:<br />
 <br/>
@@ -1144,5 +1150,3 @@ Mi sembra un motivo più che sufficiente.
     </ol>
 
 </section>
-
-
