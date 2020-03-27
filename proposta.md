@@ -388,13 +388,9 @@ Questa modifica, per quanto radicale, non ha avuto nessuna ripercussione negativ
 
 Se avessimo applicato la stessa modifica al Cattolicesimo, riabilitando la figura del Diavolo, le cose non sarebbero andate altrettanto bene perché, se il Diavolo non fosse cattivo, non solo dovremmo mettere in discussione la veridicità di moltissimi passi della Bibbia (che non può essere messa in discussione perché è la Parola di Dio), ma priveremmo la Chiesa della sua funzione primaria che è quella di salvare le anime, appunto, dal Maligno.
 
-<!-- 
-    @todo aggiungere link a documento
-    [Sostiene Aristotele](/sostiene-aristotele.md) 
--->
-
 ## Release 0.1: Sostiene Aristotele
-A Giugno del 2007 scrissi un documento dal titolo: *Sostiene Aristotele* che possiamo considerare la versione 0.1.1 del C'hi++.
+A Giugno del 2007 scrissi un documento dal titolo: 
+[Sostiene Aristotele](/sostiene-aristotele/) che possiamo considerare la versione 0.1.1 del C'hi++.
 In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<a href="#soko" class="nota" name="fn-8">8</a>
 Nelle fasi di espansione, l'Uno esplodeva, generando l'Universo così come lo conosciamo; nelle fasi di contrazione, l'Universo collassava nell'Uno.
 Anche se in embrione, gli elementi principali del C'hi++ ci sono tutti; la rarefazione degli elementi metafisici:
