@@ -1,3 +1,7 @@
+## 0.8.17 (March 27, 2020)
+  - Aggiunto link a Sostiene Aristotele nella Proposta
+  - Corretti errori di visualizzazione
+
 ## 0.8.16 (March 27, 2020)
   - Aggiunte versioni 0.7 e 0.8 alla Proposta
   - Rivista struttura pagine Manuale
