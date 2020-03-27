@@ -9,31 +9,34 @@
 
         <header>
 
-            {% if page.class == "copertina" %}
+            <!--
+            {% if page.class != "copertina" %}
             <div class="box titoli">
-                <span class="titolo-1">{{ page.title }}</span>
-                <span class="titolo-2">{{ page.h2    }}</span>
+                {{ page.title }}&nbsp;-&nbsp;{{ page.h2 }}
             </div>
             {% endif %}
-
+            -->
+            
             {%- include man-menu.html -%}
-
+    
         </header>
 
-
-        
         <main {% if page.bozza %}class="bozza"{% endif %}>
-            {% if page.class == "capitolo" %}
+            
+        {% if page.class == "capitolo" %}
             <blockquote class="motto">{{ page.quote }}</blockquote>
-            {% endif %}
             <section id="testo">
                 {{ content}}
             </section>
-        </main>
-
-        {% if page.class == "capitolo" %}
-        {%- include man-footer.html -%}
+            
+        {% else %}
+            
+            {{ content}}
+            
         {% endif %}
+
+        
+        </main>
 
     </div>
 

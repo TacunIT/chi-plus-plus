@@ -1,5 +1,5 @@
 ---
-layout:     dedica
+layout:     manuale
 class:      dedica
 title:      C'hi++ - Il senso della Vita è il debug
 h2:         Dedica

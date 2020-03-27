@@ -32,6 +32,14 @@ $bodyFontSize: 15pt ;
  color: #888
 }
 
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
 /**
  *
  *  Stili di base.
@@ -308,55 +316,43 @@ BODY.index HEADER img.logo {
 
 
 /**
+ *
  *  Stili per il manuale
+ *
  */
- BODY.manuale.copertina HEADER img.logo {
-     margin-top: 5vh;
- }
-
- 
- BODY.manuale.copertina HEADER DIV.box.intestazione {
-     height: auto;
-     text-align: center;
- }
- BODY.manuale.copertina HEADER titolo-1 {
-     padding: 1rem 0;
-     text-align: center;
-     display: block;
- }
-
- BODY.manuale.copertina HEADER titolo-2 {
-     margin-bottom: 0.5rem;
-     line-height: unset;
-     float: none;
- }
-
- BODY.manuale.copertina HEADER img.logo {
-     width: 240px;
-     height: auto;
-     max-width: 90%;
-     float: none;
-     margin-top: 2rem;
- }
-
- BODY.manuale.copertina HEADER img.logo {
-     margin-top: 5vh;
- }
- 
-BODY.manuale {
-/*
-    padding-top: 1rem;
-    */
-    height: 90vh;
+BODY.manuale DIV#page{
+    min-height: 90vh;
 }
 
 BODY.manuale HEADER titolo-2 {
     float: unset
 }
 
+BODY.manuale HEADER DIV.box.titoli {
+    width: 100%;    
+}
+
+BODY.manuale HEADER DIV.box.titoli SPAN {
+    font-size: 10pt;
+    color: #999;
+}
+
+BODY.manuale HEADER NAV.menu-top {
+    border: none;
+}
+
 BODY.manuale.copertina MAIN {
     text-align: center;
 }
+
+BODY.manuale.copertina MAIN IMG {
+    padding: 3rem 0;
+}
+
+BODY.manuale.copertina MAIN H2 {
+    padding: 0;
+}
+
 
 BODY.manuale MAIN PRE {
     display: block;
@@ -379,12 +375,6 @@ BODY.manuale FOOTER {
 
 BODY.manuale FOOTER NAV {
     width: auto
-}
-
-BODY.manuale.copertina {
-/*
-    padding-top: 2rem
-*/
 }
 
 BODY.manuale.dedica MAIN {
@@ -415,8 +405,8 @@ BODY.manuale.indice MAIN {
 }
 
 BODY.manuale.indice IMG.logo {
- width: 100px;
- margin: auto
+    width: 100px;
+    margin: auto
 }
 
 BODY.manuale.indice SECTION.indice {
@@ -476,6 +466,7 @@ IFRAME.pdf {
     width: 100%;
     height: 780px;
 }
+
 /**
  *  Stili per mobile
  */
