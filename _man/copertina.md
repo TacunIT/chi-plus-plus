@@ -1,13 +1,20 @@
 ---
-layout:     copertina
+layout:     manuale
 class:      copertina
-title:      C'hi++ - Il senso della Vita è il debug
-h2:         Copertina
+title:      Copertina
+H1:         C'hi++
+h2 :        Il senso della Vita è il debug
 permalink:  /man/
-precedente: /index.html
+precedente: /
 seguente:   dedica
 no-index:   true
 ---
 
-
-
+<img class="logo" 
+    alt="C'hi++" 
+    title="C'hi plus plus" 
+    src="/assets/img/chi-plus-plus.png">
+<div class="box titoli">
+    <h1>{{ page.h1 }}</h1>
+    <h2>{{ page.h2 }}</h2>        
+</div>

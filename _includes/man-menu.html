@@ -1,0 +1,19 @@
+<nav class="menu-top">
+    
+    {% if page.precedente %}
+    <a href="{{page.precedente}}" title="Pagina precedente" class="left">
+        <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+    {% endif %}
+    
+    <a href="/" title="Torna alla home-page">
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+
+    {% if page.seguente %}
+    <a href="{{page.seguente  }}" title="Pagina seguente" class="right" >
+            <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+    </a>
+    {% endif %}
+    
+</nav>

@@ -1,12 +1,12 @@
 ---
 layout:     manuale
 class:      capitolo
-title:      C'hi++ - Il senso della Vita è il debug
-h2:         Epilogo
+title:      Epilogo
 permalink:  /man/epilogo
 precedente: ikebarba
 seguente:   
 bozza:      true
+quote:      "???"
 ---
 
 [prima di questo, il Maestro, prossimo alla dipartita, ordina al
@@ -28,4 +28,3 @@ A qualunque cosa si fossero legate, nella loro esistenza precedente,
 adesso erano di nuovo acqua, ed erano pronte per un altro ciclo di vita.
 Il calore del sole le aveva portate in alto, ora la gravità le riportava
 in basso, verso il mare.
-

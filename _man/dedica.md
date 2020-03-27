@@ -1,8 +1,9 @@
 ---
-layout:     dedica
+layout:     manuale
 class:      dedica
-title:      C'hi++ - Il senso della Vita è il debug
-h2:         Dedica
+title:      Dedica
+h1:         Dedica
+h2:         
 permalink:  /man/dedica
 precedente: /man/
 seguente:   indice

@@ -7,18 +7,34 @@
 
     <div id="page">
 
-        {%- include man-header.html -%}
+        <header>
+            
+            {%- include man-menu.html -%}
+    
+        </header>
 
         <main {% if page.bozza %}class="bozza"{% endif %}>
-            <blockquote class="motto">{{ page.quote }}</blockquote>
-            <section id="testo">
-                {{ content}}
-            </section>
-        </main>
-
+            
         {% if page.class == "capitolo" %}
-        {%- include man-footer.html -%}
+
+            <h1>{{ page.h1 }}</h1>
+
+            <blockquote class="motto">{{ page.quote }}</blockquote>
+
+            <section id="testo">
+
+                {{ content}}
+
+            </section>
+            
+        {% else %}
+            
+            {{ content}}
+            
         {% endif %}
+
+        
+        </main>
 
     </div>
 
