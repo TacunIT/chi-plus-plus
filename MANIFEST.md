@@ -29,7 +29,7 @@ Il primo Articolo della *Déclaration des Droits de l’Homme et du Citoyen* del
 
 pur se condivisibile, non ha prove a conforto e non è valida per chiunque viva in una delle 43 nazioni del Mondo dove vige una monarchia: ovvero una su cinque.
 
-La contraddittoria<a href="#harari" class="nota" name="fn-1">1</a> trinità:
+La contraddittoria<a href="#harari" class="nota" name="fn-1"><sup>1</sup></a> trinità:
 
 > Liberté, Égalité, Fraternité
 
@@ -76,7 +76,7 @@ Il primo è decidere a quale spiritualità fare riferimento.
 Ovviamente non potrà essere una delle religioni canoniche, perché così facendo allontaneremmo gli appartenenti alle altre Fedi.
 Dovrà essere una nuova filosofia di vita che contrasti il meno possibile con le convinzioni degli altri gruppi religiosi.
 Inoltre sarà bene non definirla *religione*, perché molte persone hanno un'istintiva (e non del tutto immotivata) diffidenza nei confronti di questo termine perché le attribuiscono colpe che in realtà andrebbero imputate al clero e ai fedeli e vedono il *religare* da cui trae origine come un legame restrittivo da cui è bene sottrarsi.
-La chiameremo perciò: *Metafisica*, anche se di metafisico avrà ben poco, per non correre il rischio di allontanare proprio le persone a cui è destinato il C'hi++:
+La chiameremo perciò: *Metafisica*, anche se di metafisico avrà ben poco, per non allontanare..
 
 > quei tanti che ancora credono in tutto ciò in cui più nessuno crede
 
@@ -100,7 +100,7 @@ Riassumendo, abbiamo bisogno di una nuova etica che:
 
 Si può fare, ma per riuscirci dobbiamo rifarci alle idee che nacquero e si svilupparono nella Culla della Civiltà, ovvero gli anni '80.
 
-Per definire un *dress-code* etico che sia valido sia a una cena di gala che a un toga party dobbiamo fare ciò che fecero i creatori delle prime interfacce grafiche: creare una libreria di simboli il cui significato sia chiaro e condiviso da tutti gli utenti.
+Per definire un *dress-code* etico che sia valido tanto a una cena di gala che a un toga party dobbiamo fare ciò che fecero i creatori delle prime interfacce grafiche: creare una libreria di simboli il cui significato sia chiaro e condiviso da tutti gli utenti.
 In sostanza, **abbiamo bisogno di icone**.
 
 Il sostantivo inglese *file* può tradursi con: documento, ملف (Arabo), 文件 (Cinese), файл (Russo), ファイル (Giapponese), 파일 (Coreano) oppure, più semplicemente, può essere rappresentato con il simbolo:
