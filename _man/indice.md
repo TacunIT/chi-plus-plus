@@ -16,7 +16,7 @@ no-index:   true
         {% if capitolo.no-index == null %}
         <h3 {% if capitolo.bozza %}class="bozza"{% endif %} >
             <a href="{{ capitolo.url }}">
-                {{ capitolo.h2 }}
+                {{ capitolo.title }}
             </a>
         </h3>
         {% endif %}

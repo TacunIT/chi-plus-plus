@@ -1,12 +1,12 @@
 ---
 layout:     manuale
 class:      capitolo
-title:      C'hi++ - Il senso della Vita è il debug
-h2:         L'ereditrietà
+title:      L'ereditrietà
 permalink:  /man/ereditarieta
 precedente: polimorfismo
 seguente:   debug
 bozza:      true
+quote:      "???"
 ---
 
 <blockquote class="motto">

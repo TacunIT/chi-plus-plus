@@ -1,7 +1,6 @@
 ---
 layout:     manuale
-title:      C'hi++ - Il senso della Vita è il debug
-h2:         Il buon programmatore
+title:      Il buon programmatore
 class:      capitolo
 permalink:  /man/il-programmatore
 precedente: mitopoietica
