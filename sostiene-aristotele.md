@@ -1,14 +1,11 @@
 ---
 layout:     default
-title:      Sostiene Aristotele
-h2:         
 class:      pagina
+title:      Sostiene Aristotele
 permalink:  /sostiene-aristotele/
 bozza:      false
 footer:     true
 ---
-
-# Sostiene Aristotele 
 
 Sostiene Aristotele (e per fortuna lo sostiene nella sesta pagina de: “La metafisica”, ché se l’avesse sostenuto, che so, a pagina quattrocentosettantadue, chissà se l’avrei mai saputo) che la ricerca della conoscenza, “deve in qualche modo portarci a uno stato contrario a quello nel quale si dà inizio alle ricerche”. 
 Ci si meraviglia di qualcosa, se ne indagano le cause e, una volta che le si è scoperte, ciò che prima meravigliava appare come qualcosa di inevitabile.
