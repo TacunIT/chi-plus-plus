@@ -1,3 +1,13 @@
+## 0.8.16 (March 27, 2020)
+  - Aggiunte versioni 0.7 e 0.8 alla Proposta
+  - Rivista struttura pagine Manuale
+  - Corretta grafica Proposta
+  - Corretta grafica intestazione
+  - Iniziata redazione Aristotele
+  - Rimosso Rouge dalla configurazione.
+  - Revisione testo Proposta
+  - Copiato testo proposta in pagina manifesto
+
 ## 0.8.15 (March 25, 2020)
   - Aggiunta pagina separata per Manifesto
   - Rivista impostazione grafica testata
