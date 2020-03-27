@@ -140,7 +140,7 @@ HTML {
 }
 
 BODY {
-    background-color: #d0d0d0;
+    background-color: $backgroundColor;
     color: $bodyColor;
     font-family: $bodyFont;
     font-size: $bodyFontSize;
@@ -148,7 +148,6 @@ BODY {
 }
 
 DIV#page {
-    background-color: #c1e3e6;
     padding: 1rem 1rem 5rem 1rem;
     position: relative;
     display: block;
@@ -157,7 +156,6 @@ DIV#page {
 }
 
 HEADER {
-    background-color: #d0d0d0;
 }
 
 HEADER DIV.box.intestazione {
@@ -174,8 +172,7 @@ HEADER img.logo {
 }
 
 FOOTER {
-    background-color: #a0a0a0;
-    padding: 0.5rem 0;
+    padding: 3rem 0 0 0;
 }
 
 
@@ -190,16 +187,19 @@ NAV {
      border-bottom: solid 1px;
      border-color: #990;
      width: 100%;
+     font-size: 0;
 }
 
 NAV A {
     font-variant-caps: petite-caps;
-    font-size: 12pt;
+    font-size: 13pt;
     font-weight: bold;
     display: inline-block;
-    padding: 0.5rem 0.75rem;
 }
 
+HEADER NAV.menu-top A {
+    padding: 0.5rem 1rem;
+}
 
 MAIN {
     width: 100%;
@@ -215,7 +215,7 @@ MAIN P+P {
 }
 
 MAIN.bozza {
-    background-color: #f0f0f0;
+    background-color: #c1e3e6;;
     padding: 5rem 1rem;
 }
 
@@ -391,7 +391,7 @@ BODY.manuale.indice SECTION.indice {
 }
 
 BODY.manuale H1 {
-    margin: 2rem 0 3rem 0;
+    margin: 3rem 0 3rem 0;
     text-align: center;
 }
 
@@ -463,9 +463,6 @@ IFRAME.pdf {
 
     BODY {
     }
-    DIV#page {
-        padding: 0rem 0.5rem;
-    }
     H1 {
         font-size: 1.75rem;
     }
@@ -497,12 +494,16 @@ IFRAME.pdf {
     BODY.pagina MAIN OL {
         text-align: left;
     }
-    NAV.menu-top {
-        padding: 0 1rem;
+
+    NAV.menu-top DIV.box {
+        display: block;
     }
+
     NAV.menu-top A {
         font-size: 14pt;
+        padding: 0;
     }
+
     DIV.testo P {
         text-align: left
     }

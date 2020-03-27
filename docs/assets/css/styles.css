@@ -49,28 +49,28 @@ UL { list-style-type: square; }
 OL { padding: 0 2rem; margin: 1rem 0; }
 
 /** Stili per il corpo della pagina. */
-BODY { background-color: #d0d0d0; color: #000000; font-family: Simonetta, Calibri, Arial, sans-serif; font-size: 15pt; text-align: center; }
+BODY { background-color: #ffffff; color: #000000; font-family: Simonetta, Calibri, Arial, sans-serif; font-size: 15pt; text-align: center; }
 
-DIV#page { background-color: #c1e3e6; padding: 1rem 1rem 5rem 1rem; position: relative; display: block; max-width: 36rem; margin: auto; }
-
-HEADER { background-color: #d0d0d0; }
+DIV#page { padding: 1rem 1rem 5rem 1rem; position: relative; display: block; max-width: 36rem; margin: auto; }
 
 HEADER DIV.box.intestazione { width: 100%; text-align: left; }
 
 HEADER img.logo { height: 80px; width: 130px; display: inline-block; float: left; padding: 0 1rem; }
 
-FOOTER { background-color: #a0a0a0; padding: 0.5rem 0; }
+FOOTER { padding: 3rem 0 0 0; }
 
 /** Stili dei menu */
-NAV { border-top: solid 1px; display: inline-block; border-bottom: solid 1px; border-color: #990; width: 100%; }
+NAV { border-top: solid 1px; display: inline-block; border-bottom: solid 1px; border-color: #990; width: 100%; font-size: 0; }
 
-NAV A { font-variant-caps: petite-caps; font-size: 12pt; font-weight: bold; display: inline-block; padding: 0.5rem 0.75rem; }
+NAV A { font-variant-caps: petite-caps; font-size: 13pt; font-weight: bold; display: inline-block; }
+
+HEADER NAV.menu-top A { padding: 0.5rem 1rem; }
 
 MAIN { width: 100%; display: inline-block; margin: auto; text-align: justify; position: relative; padding-top: 1rem; }
 
 MAIN P + P { margin-top: 1rem; }
 
-MAIN.bozza { background-color: #f0f0f0; padding: 5rem 1rem; }
+MAIN.bozza { background-color: #c1e3e6; padding: 5rem 1rem; }
 
 MAIN.bozza::before { content: "BOZZA"; font-size: 1rem; font-weight: bold; position: absolute; top: 2rem; left: 2rem; font-family: Monaco; }
 
@@ -137,7 +137,7 @@ BODY.manuale.indice IMG.logo { width: 100px; margin: auto; }
 
 BODY.manuale.indice SECTION.indice { text-align: center; }
 
-BODY.manuale H1 { margin: 2rem 0 3rem 0; text-align: center; }
+BODY.manuale H1 { margin: 3rem 0 3rem 0; text-align: center; }
 
 BODY.manuale MAIN PRE { display: block; padding: 1rem; margin: 1rem 0; white-space: pre-wrap; }
 
@@ -163,8 +163,7 @@ TABLE.memoria TD.area { background: #aaa; }
 IFRAME.pdf { width: 100%; height: 780px; }
 
 /** Stili per mobile */
-@media only screen and (max-width: 420px) { DIV#page { padding: 0rem 0.5rem; }
-  H1 { font-size: 1.75rem; }
+@media only screen and (max-width: 420px) { H1 { font-size: 1.75rem; }
   H2 { font-size: 1.2rem; }
   UL, OL { padding: 0 1rem 0 1.5rem; }
   BODY.pagina HEADER titolo-1 { font-size: 1.5rem; }
@@ -173,8 +172,8 @@ IFRAME.pdf { width: 100%; height: 780px; }
   BODY.index HEADER titolo-1, BODY.manuale.copertina HEADER titolo-1 { padding: 0; }
   BODY.index HEADER img.logo, BODY.manuale.copertina HEADER img.logo { width: 200px; height: auto; }
   BODY.pagina MAIN OL { text-align: left; }
-  NAV.menu-top { padding: 0 1rem; }
-  NAV.menu-top A { font-size: 14pt; }
+  NAV.menu-top DIV.box { display: block; }
+  NAV.menu-top A { font-size: 14pt; padding: 0; }
   DIV.testo P { text-align: left; } }
 
 /*# sourceMappingURL=styles.css.map */

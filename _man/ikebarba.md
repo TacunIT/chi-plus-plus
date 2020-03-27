@@ -1,12 +1,12 @@
 ---
 layout:     manuale
-title:      C'hi++ - Il senso della Vita è il debug
-h2:         L'Ikebarba
 class:      capitolo
+title:      L'Ikebarba
 permalink:  /man/ikebarba
 precedente: chi-plus-plus
 seguente:   epilogo
 bozza:      true
+quote:      "???"
 ---
 
 <blockquote class="motto">
