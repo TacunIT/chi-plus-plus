@@ -9,9 +9,11 @@ seguente:   dedica
 no-index:   true
 ---
 
-
 <img class="logo" 
-     alt="C'hi++" title="C'hi plus plus" 
-     src="/assets/img/chi-plus-plus.png">
-<p class="titolo-1">{{ page.title }}</p>
-<p class="titolo-2">{{ page.h2 }}</p>
+    alt="C'hi++" 
+    title="C'hi plus plus" 
+    src="/assets/img/chi-plus-plus.png">
+<div class="box titoli">
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.h2    }}</h2>        
+</div>
