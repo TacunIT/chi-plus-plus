@@ -1,8 +1,8 @@
 ---
 layout:     manuale
 class:      capitolo
-title:      C'hi++ - Il senso della Vita è il debug
-h2:         In C pit
+title:      Incipit
+h1:         In C pit
 permalink:  /man/incipit
 precedente: premessa
 seguente:   mitopoietica
