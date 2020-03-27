@@ -1,8 +1,8 @@
 ---
 layout:     manuale
 class:      capitolo
-title:      C'hi++ - Il senso della Vita è il debug
-h2:         Premessa
+title:      Premessa
+h1:         Premessa
 permalink:  /man/premessa
 precedente: indice
 seguente:   incipit

@@ -8,14 +8,6 @@
     <div id="page">
 
         <header>
-
-            <!--
-            {% if page.class != "copertina" %}
-            <div class="box titoli">
-                {{ page.title }}&nbsp;-&nbsp;{{ page.h2 }}
-            </div>
-            {% endif %}
-            -->
             
             {%- include man-menu.html -%}
     
@@ -24,9 +16,15 @@
         <main {% if page.bozza %}class="bozza"{% endif %}>
             
         {% if page.class == "capitolo" %}
+
+            <h1>{{ page.h1 }}</h1>
+
             <blockquote class="motto">{{ page.quote }}</blockquote>
+
             <section id="testo">
+
                 {{ content}}
+
             </section>
             
         {% else %}

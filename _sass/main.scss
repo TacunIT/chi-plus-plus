@@ -86,7 +86,6 @@ P {
     hyphens: auto;
 }
 
-
 P.newpage {
   page-break-after: always;
 }
@@ -118,9 +117,9 @@ DIV {
 }
 
 TABLE, TD, TR {
- border-collapse: collapse;
- border: solid 1px #999;
- padding: 0.25rem 0.5rem;
+    border-collapse: collapse;
+    border: solid 1px #999;
+    padding: 0.25rem 0.5rem;
 }
 
 UL {
@@ -150,7 +149,7 @@ BODY {
 
 DIV#page {
     background-color: #c1e3e6;
-    padding: 1rem 1rem 3rem 1rem;
+    padding: 1rem 1rem 5rem 1rem;
     position: relative;
     display: block;
     max-width: 36rem;
@@ -314,13 +313,12 @@ BODY.index HEADER img.logo {
     float: none;
 }
 
-
 /**
  *
  *  Stili per il manuale
  *
  */
-BODY.manuale DIV#page{
+BODY.manuale DIV#page {
     min-height: 90vh;
 }
 
@@ -341,6 +339,9 @@ BODY.manuale HEADER NAV.menu-top {
     border: none;
 }
 
+BODY.manuale FOOTER {
+}
+
 BODY.manuale.copertina MAIN {
     text-align: center;
 }
@@ -351,30 +352,6 @@ BODY.manuale.copertina MAIN IMG {
 
 BODY.manuale.copertina MAIN H2 {
     padding: 0;
-}
-
-
-BODY.manuale MAIN PRE {
-    display: block;
-    padding: 1rem;
-    margin: 1rem 0;
-    white-space: pre-wrap;
-}
-
-BODY.manuale SECTION#testo P:first-of-type:first-letter {
-    font-weight: bold;
-}
-
-BODY.manuale FOOTER {
-    position: relative;
-    display: block;
-    text-align: center;
-    width: 100%;
-    padding-bottom: 1rem;
-}
-
-BODY.manuale FOOTER NAV {
-    width: auto
 }
 
 BODY.manuale.dedica MAIN {
@@ -413,6 +390,18 @@ BODY.manuale.indice SECTION.indice {
  text-align: center;
 }
 
+BODY.manuale H1 {
+    margin: 2rem 0 3rem 0;
+    text-align: center;
+}
+
+BODY.manuale MAIN PRE {
+    display: block;
+    padding: 1rem;
+    margin: 1rem 0;
+    white-space: pre-wrap;
+}
+
 BODY.manuale MAIN P A {
  color: #990;
 }
@@ -431,9 +420,9 @@ BODY.manuale BLOCKQUOTE.incluso {
 }
 
 BODY.manuale BLOCKQUOTE.motto {
- text-align: right;
- padding: 2rem 0 5rem 0;
- font-size: 0.9em
+    text-align: right;
+    padding: 2rem 0 4rem 0;
+    font-size: 0.9em
 }
 
 BODY.manuale IMG.logo {
