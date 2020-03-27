@@ -38,6 +38,8 @@ I { color: #555; font-size: inherit; }
 
 A { color: #333; }
 
+A.nota { font-size: 0.8rem; color: #990; text-decoration: underline; vertical-align: super; display: inline-block; margin-left: 0.12rem; }
+
 SUP { font-size: 0.7em; vertical-align: super; line-height: 0; }
 
 DIV { display: inline-block; }
