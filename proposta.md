@@ -1,9 +1,9 @@
 ---
 layout:     default
-title:      Manifesto
-h2:         Leggi il manifesto
+title:      Proposta per una metafisica open-source
+h2:         
 class:      pagina
-permalink:  /manifesto/
+permalink:  /proposta/
 bozza:      false
 footer:     true
 ---
@@ -379,8 +379,9 @@ Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero
 0.4.0 | 2018 |  Manifesto Markdown | Conversione del Manifesto in formato Markdown
 0.5.0 | 2019 |  Revisione Manifesto | Revisione Manifesto come preogetto IT
 0.6.0 | 2020 |  Presentazone Manifesto | Articolo presentazione Manifesto
+0.7.0 | 2020 |  Jekyll | Adottato Jekyll per sito Web
+0.8.0 | 2020 |  Manuale | Redazione del Manuale
 
-<!-- @todo aggiungere versioni 0.7 e 0.8 -->
 
 Già da queste poche righe è possibile vedere alcuni benefici dell'approccio *open-source* alla speculazione filosofica: nella versione 0.1.0 del C'hi++, la figura che definisco: *Immancabile Testa di Pera* era un elemento negativo, assimilabile al Diavolo o alla *Discordia* di Empedocle.
 Successivamente, però, ho capito che questa visione delle cose era la proiezione di un mio desiderio/speranza e sono passato a un modello meno giudicante, in cui i due Enti che generano l'Universo non sono in contrapposizione, ma cooperano in maniera simile allo *Yin* e allo *Yang* del Tao o a *Prakṛti* e *Puruṣa* dell'Induismo.

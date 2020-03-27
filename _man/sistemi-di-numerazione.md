@@ -1,8 +1,7 @@
 ---
 layout:     manuale
 class:      capitolo
-title:      C'hi++ - Il senso della Vita è il debug
-h2:         I sistemi di numerazione
+title:      I sistemi di numerazione
 permalink:  /man/sistemi-di-numerazione
 precedente: il-programmatore
 seguente:   linguaggi-di-programmazione

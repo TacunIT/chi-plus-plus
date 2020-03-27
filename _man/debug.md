@@ -1,12 +1,12 @@
 ---
 layout:     manuale
-title:      C'hi++ - Il senso della Vita è il debug
-h2:         Il debug
 class:      capitolo
+title:      Il debug
 permalink:  /man/debug
 precedente: ereditarieta
 seguente:   chi-plus-plus
 bozza:      true
+quote:      "???"
 ---
 
 <blockquote class="motto">
