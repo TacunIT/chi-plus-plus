@@ -1,13 +1,11 @@
 ---
 layout:     default
-title:      FAQ
-h2:         Domande frequenti
 class:      pagina
+title:      Domande frequenti
 permalink:  /faq/
 bozza:      true
 ---
 
-# Domande Frequenti
 
 ### Perché, se Dio è buono, nel Creato esiste il male?
 A parte il fatto che è improprio classificare l'essenza del creatore con gli
@@ -31,10 +29,13 @@ Primigenio al centro di un Universo vuoto, come nell'Inno della Creazione dei *R
     Oltre a quello non vi era nient&#8217;altro.<br />
 </blockquote>
 
+<!--
+@todo Completare
+
 ### Un cane, ha una natura-Buddha?
 
 
 ### Perché Nansen taglia in due il gatto?
 
 <p><img style="float:left; margin: 0.5rem;height:300px" src="/assets/img/nansen-taglia-il-gatto.jpg"></p>
-PE
+-->

@@ -1,8 +1,7 @@
 ---
 layout:     default
+class:      proposta
 title:      Proposta per una metafisica open-source
-h2:         
-class:      pagina
 permalink:  /proposta/
 bozza:      false
 footer:     true

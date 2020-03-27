@@ -151,7 +151,7 @@ DIV#page {
     padding: 1rem 1rem 5rem 1rem;
     position: relative;
     display: block;
-    max-width: 36rem;
+    max-width: 34rem;
     margin: auto;
 }
 
@@ -160,6 +160,12 @@ HEADER {
 
 HEADER DIV.box.intestazione {
     width: 100%;
+    text-align: left;
+}
+
+HEADER DIV.box.intestazione {
+    width: 100%;
+    padding-bottom: 1rem;
     text-align: left;
 }
 
@@ -198,7 +204,7 @@ NAV A {
 }
 
 HEADER NAV.menu-top A {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.2rem;
 }
 
 MAIN {
@@ -254,27 +260,32 @@ MAIN BLOCKQUOTE {
 
 
 .titolo-1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 .titolo-2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
 /**
  *  Stili per le pagine normali
  */
- BODY.pagina HEADER DIV.box.titoli {
+BODY.pagina HEADER DIV.box.titoli {
     padding: 0.5rem 0;
     width: calc(100% - 130px);
- }
+}
 
- BODY.pagina HEADER titolo-2 {
-     margin-top: 0;
-     padding-bottom: 0;
-     font-size: 1.4rem
- }
+BODY.pagina HEADER titolo-2 {
+    margin-top: 0;
+    padding-bottom: 0;
+    font-size: 1.4rem
+}
+
+BODY.pagina H1 {
+    margin: 3rem 0 6rem 0;
+    text-align: center;
+}
 
 BODY.faq SECTION {
     padding: 1rem;
@@ -287,6 +298,7 @@ BODY.faq SECTION {
  */
 BODY.index HEADER DIV.box.intestazione {
     text-align: center;
+    padding: 0;
 }
  
 BODY.index HEADER DIV.box.titoli {
