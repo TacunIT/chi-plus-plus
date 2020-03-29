@@ -443,10 +443,8 @@ Insomma, il dogma numero quattro è: <I>Lo sai, perché ci sei già passato</i>.
 l'auto-lesionismo delle scelte egoistiche:
 
 <div class="citazione" >
-Se davvero siamo tutti degli epifenomeni, possiamo manifestarci ora qui ora lì, a seconda dei casi e se io oggi (in questo ciclo dell’Universo) mi manifesto all’interno di Raimondo Canaro, evasore fiscale e filosofo d’accatto, un domani (in un altro ciclo di questa particolare specie di Universo) potrei manifestarmi in Calogero Mancuso, ufficiale della Guardia di Finanza.
-Similmente, se io oggi (sempre nel senso di: in questo ciclo dell’Universo) mi metto a spacciare droga fregandomene delle persone che ammazzo e delle famiglie che rovino, domani (sempre nel senso...), potrei benissimo ritrovarmi in uno di quei drogati o di quei familiari e subirei le conseguenze delle mie stesse azioni.
-È quindi decisamente meglio che io mi comporti bene e che cerchi, per quanto mi è possibile, di convincere anche gli altri a comportarsi bene.
-</div>
+Se davvero siamo tutti degli epifenomeni, possiamo manifestarci ora qui ora lì, a seconda dei casi e se io oggi (ovvero: <i>in questo ciclo dell’Universo</i>) mi metto a spacciare droga fregandomene delle persone che ammazzo e delle famiglie che rovino, domani (ovvero: <i>in un altro ciclo di questa particolare specie di Universo</i>), potrei benissimo ritrovarmi in uno di quei drogati o di quei familiari e subirei le conseguenze delle mie stesse azioni.
+È quindi decisamente meglio che io mi comporti bene e che cerchi, per quanto mi è possibile, di convincere anche gli altri a comportarsi bene.</div>
 
 la visone dell'esistenza come un processo di miglioramento continuo:
 

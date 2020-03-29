@@ -1,3 +1,9 @@
+## 0.8.18 (March 29, 2020)
+  - Ridotte citazioni di Aristotele nella Proposta
+  - Sfoltiti gli stili CSS per la Proposta.
+  - Spostati CSS nella directory _sass e separati screen da print
+  - Corretti errori nel testo del MANIFEST
+
 ## 0.8.17 (March 27, 2020)
   - Aggiunto link a Sostiene Aristotele nella Proposta
   - Corretti errori di visualizzazione
