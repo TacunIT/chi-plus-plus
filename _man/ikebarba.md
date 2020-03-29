@@ -6,13 +6,8 @@ permalink:  /man/ikebarba
 precedente: chi-plus-plus
 seguente:   epilogo
 bozza:      true
-quote:      "???"
+quote:      "*.* è il migliore"
 ---
-
-<blockquote class="motto">
-*.* è il migliore
-</blockquote>
-
 
 
 Mentre era in un negozio di hardware, Banzan sentì questo dialogo tra il proprietario e un suo cliente:
