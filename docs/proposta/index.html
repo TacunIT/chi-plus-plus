@@ -15,7 +15,11 @@
     <link rel=icon href=/assets/img/favicon.ico type=image/x-icon>
     <script src="https://use.fontawesome.com/b4b35c88c8.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Simonetta:400,400i,900,900i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css"><script>
+    <link rel="stylesheet" href="/assets/css/screen.css" media="screen" >        
+    
+    <link rel="stylesheet" href="/assets/css/proposta.css" />
+    <link rel="stylesheet" href="/assets/css/print.css"  media="print"  >
+    <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -73,8 +77,6 @@
     <a type="application/pdf" title="Scarica il file PDF" href="/assets/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf">Scarica il PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
 </a></p>
 
-<link rel="stylesheet" type="text/css" href="../../assets/css/proposta.css" />
-
 <section class="copertina pagina">
 	<h1>C'hi++</h1>
 	<h2>Proposta per una metafisica open-source</h2>
@@ -93,16 +95,15 @@ Quelli mi annoiano perché parlano sempre di Dio. <br />
 
 <h2 id="executive-summary">Executive summary</h2>
 <p>Se continuerete nella lettura di questo documento (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
-Si chiama <em>C’hi++</em> ed è una metafisica priva, o quasi, di elementi metafisici; una <em>theologia naturalis</em> per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell’esistenza.
-Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e principii etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come quello riportato in copertina.
-Premetto che non ho titoli per scrivere di filosofia e religione, perché sono un Maestro d’Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer, quindi approccerò questo testo e lo stesso C’hi++ come se fosse un progetto informatico: dopo questo <em>Executive Summary</em>, farò un’analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell’esaltazione religiosa; successivamente, descriverò alcune
-alcune vulnerabilità logiche delle religioni canoniche e definirò delle linee-guida atte a prevenirle; presenterò poi la “soluzione proposta”, ovvero il C’hi++, descrivendone le caratteristiche e l’evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.</p>
+Si chiama <em>C’hi++</em> ed è una metafisica priva, o quasi, di elementi metafisici; una <em>theologia naturalis</em> per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell’esistenza.<br />
+Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e principii etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come quello riportato in copertina.<br />
+Non ho titoli per scrivere di filosofia e religione, perché sono un Maestro d’Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer, quindi approccerò questo testo e lo stesso C’hi++ come se fosse un progetto informatico: dopo questo <em>Executive Summary</em>, farò un’analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell’esaltazione religiosa; successivamente, descriverò alcune vulnerabilità logiche delle religioni canoniche e definirò delle linee-guida atte a prevenirle; presenterò poi la “soluzione proposta”, ovvero il C’hi++, descrivendone le caratteristiche e l’evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.</p>
 
 <p>Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologie proprii dell’informatica e ne ho fornito una breve descrizione per coloro che non  abbiano familiarità con le attività di creazione del software; i tecnici mi perdonino le semplificazioni.
 Ho dovuto anche, per brevità, fare delle affermazioni senza comprovarle; i logici mi perdonino l’apodissi.</p>
 <p class="newpage"></p>
 
-<h2 id="analisi-del-sistema-attualmente-in-esercizio">Analisi del sistema attualmente in esercizio</h2>
+<h2 id="analisi-del-sistema-in-esercizio">Analisi del sistema in esercizio</h2>
 <p>Se mi guardo indietro, per il mezzo secolo su cui ho visibilità diretta, vedo una lunga serie di fallimenti ideologici.
 Il Sessantotto ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società senza darci nulla in cambio, tranne la minigonna.
 La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre la <em>reaganomics</em> è crollata alla fine degli anni ‘80 insieme al muro di Berlino.
@@ -543,7 +544,7 @@ Trattandosi di un sistema ancora in evoluzione, ha come <em>major version</em> u
       <th style="text-align: center">n.</th>
       <th style="text-align: center">anno</th>
       <th>descrizione</th>
-      <th style="text-align: left">changelog</th>
+      <th>changelog</th>
     </tr>
   </thead>
   <tbody>
@@ -551,67 +552,67 @@ Trattandosi di un sistema ancora in evoluzione, ha come <em>major version</em> u
       <td style="text-align: center">0.1.0</td>
       <td style="text-align: center">2004</td>
       <td>Proto-C’hi++</td>
-      <td style="text-align: left">Domenica 12 settembre 2004, scrivevo sul mio blog: <em>La mia teoria cosmogonica comprende anche due fattori di primaria importanza, colpevolmente trascurati dalle altre teorie: il Minipimer e il concetto di: Immancabile Testa di Pera.</em></td>
+      <td>Domenica 12 settembre 2004, scrivevo sul mio blog: <em>La mia teoria cosmogonica comprende anche due fattori di primaria importanza, colpevolmente trascurati dalle altre teorie: il Minipimer e il concetto di: Immancabile Testa di Pera.</em></td>
     </tr>
     <tr>
       <td style="text-align: center">0.1.1</td>
       <td style="text-align: center">2007</td>
       <td>Sostiene Aristotele</td>
-      <td style="text-align: left">Primo tentativo di formalizzare la strana teoria che andavo sviluppando. Ci sono già i quattro dogmi del C’hi++, ma non c’è ancora nessun accenno allo Spazionismo.</td>
+      <td>Primo tentativo di formalizzare la strana teoria che andavo sviluppando. Ci sono già i quattro dogmi del C’hi++, ma non c’è ancora nessun accenno allo Spazionismo.</td>
     </tr>
     <tr>
       <td style="text-align: center">0.2.0</td>
       <td style="text-align: center">2009</td>
       <td>C’hi++</td>
-      <td style="text-align: left">Iniziata redazione del manuale <em>C’hi++</em>. Definizione iniziale dello Spazionismo.</td>
+      <td>Iniziata redazione del manuale <em>C’hi++</em>. Definizione iniziale dello Spazionismo.</td>
     </tr>
     <tr>
       <td style="text-align: center">0.3.0</td>
       <td style="text-align: center">2015</td>
       <td>Manifesto</td>
-      <td style="text-align: left">Iniziata la redazione di questo documento.</td>
+      <td>Iniziata la redazione di questo documento.</td>
     </tr>
     <tr>
       <td style="text-align: center">0.3.1</td>
       <td style="text-align: center">2016</td>
       <td>Adozione git</td>
-      <td style="text-align: left">Creato acconto per il progetto su GitHub.</td>
+      <td>Creato acconto per il progetto su GitHub.</td>
     </tr>
     <tr>
       <td style="text-align: center">0.3.2</td>
       <td style="text-align: center">2018</td>
       <td>Allineamento</td>
-      <td style="text-align: left">Allineamento delle versioni git con quelle del Manifesto.</td>
+      <td>Allineamento delle versioni git con quelle del Manifesto.</td>
     </tr>
     <tr>
       <td style="text-align: center">0.4.0</td>
       <td style="text-align: center">2018</td>
       <td>Manifesto Markdown</td>
-      <td style="text-align: left">Conversione del Manifesto in formato Markdown</td>
+      <td>Conversione del Manifesto in formato Markdown</td>
     </tr>
     <tr>
       <td style="text-align: center">0.5.0</td>
       <td style="text-align: center">2019</td>
       <td>Revisione Manifesto</td>
-      <td style="text-align: left">Revisione Manifesto come preogetto IT</td>
+      <td>Revisione Manifesto come preogetto IT</td>
     </tr>
     <tr>
       <td style="text-align: center">0.6.0</td>
       <td style="text-align: center">2020</td>
       <td>Presentazone Manifesto</td>
-      <td style="text-align: left">Articolo presentazione Manifesto</td>
+      <td>Articolo presentazione Manifesto</td>
     </tr>
     <tr>
       <td style="text-align: center">0.7.0</td>
       <td style="text-align: center">2020</td>
       <td>Jekyll</td>
-      <td style="text-align: left">Adottato Jekyll per sito Web</td>
+      <td>Adottato Jekyll per sito Web</td>
     </tr>
     <tr>
       <td style="text-align: center">0.8.0</td>
       <td style="text-align: center">2020</td>
       <td>Manuale</td>
-      <td style="text-align: left">Redazione del Manuale</td>
+      <td>Redazione del Manuale</td>
     </tr>
   </tbody>
 </table>
@@ -679,11 +680,7 @@ Promemoria che noi, nel corso delle nostre precedenti esistenze, abbiamo appicci
 Una sorta di memoria persistente, esterna, o comunque non soggetta ai cicli di rinascita dell’Universo.
 Se l’Universo fosse un computer, potremmo pensare a tutto ciò che esiste come a un programma che “gira” in memoria e all’istinto (o all’immaginario collettivo) come a qualcosa scritto invece sul disco rigido.
 Ogni volta che il computer viene spento, la memoria si svuota e tutto quello che conteneva si perde, mentre ciò che è scritto sul disco rigido rimane lì, in attesa della prossima “accensione”.
-Insomma, il dogma numero quattro è: Lo sai, perché ci sei già passato.<br />
-Non vale per qualunque evento della nostra esistenza, ovviamente, ma solo per quelli importanti: quelli che, nelle nostre precedenti esistenze, hanno prodotto effetti che ci interessa o ri-produrre o evitare.
-Non ho ancora capito come facciamo a scrivere questi promemoria, posto che esistano davvero; magari è sufficiente essere molto contenti o molto addolorati per qualcosa, ma so in che maniera possiamo leggerli: evitando di non leggerli.
-Evitando di ignorare i segnali che riceviamo, riconoscendo ed accettando la direzione in cui ci porta la corrente anche quando non è quella in cui vorremmo o preferiremmo andare.
-Non sto dicendo che sia facile.
+Insomma, il dogma numero quattro è: <i>Lo sai, perché ci sei già passato</i>.<br />
 </div>
 
 <p>l’auto-lesionismo delle scelte egoistiche:</p>

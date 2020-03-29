@@ -1,6 +1,10 @@
 @charset "UTF-8";
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0; margin: 0; }
 
+.titolo-1 { font-size: 1.8rem; font-weight: bold; }
+
+.titolo-2 { font-size: 1.2rem; font-weight: bold; }
+
 .grayscale { -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */ filter: grayscale(100%); }
 
 .bianconero { -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */ filter: grayscale(100%); }
@@ -34,7 +38,7 @@ P.newpage { page-break-after: always; }
 
 CODE, PRE { text-align: left; background-color: #e4e6c1; font-size: 10pt; font-family: Monaco; }
 
-I { color: #555; font-size: inherit; }
+EM, I { color: #555; font-size: inherit; }
 
 A { color: #333; }
 
@@ -44,11 +48,18 @@ SUP { font-size: 0.7em; vertical-align: super; line-height: 0; }
 
 DIV { display: inline-block; }
 
-TABLE, TD, TR { border-collapse: collapse; border: solid 1px #999; padding: 0.25rem 0.5rem; }
-
 UL { list-style-type: square; }
 
 OL { padding: 0 2rem; margin: 1rem 0; }
+
+TABLE, TD, TR, TH { border-collapse: collapse; border: solid 1px #CCC; padding: 0.25rem 0.5rem; margin: 1rem 0; font-size: 11pt; }
+
+TABLE TH { font-weight: bold; text-align: center; }
+
+/** Tabella per le aree di memoria */
+TABLE.memoria TD { font-family: Monaco; font-size: 10pt; width: 20px; height: 20px; }
+
+TABLE.memoria TD.area { background: #aaa; }
 
 /** Stili per il corpo della pagina. */
 BODY { background-color: #ffffff; color: #000000; font-family: Simonetta, Calibri, Arial, sans-serif; font-size: 15pt; text-align: center; }
@@ -70,6 +81,7 @@ NAV A { font-variant-caps: petite-caps; font-size: 13pt; font-weight: bold; disp
 
 HEADER NAV.menu-top A { padding: 0.5rem 1.2rem; }
 
+/** Stili per il corpo della pagina. */
 MAIN { width: 100%; display: inline-block; margin: auto; text-align: justify; position: relative; padding-top: 1rem; }
 
 MAIN P + P { margin-top: 1rem; }
@@ -85,10 +97,6 @@ MAIN P.immagine.chi { margin: 0.5rem auto; }
 MAIN P.immagine IMG { border: solid 1px #999; text-align: center; max-width: 100%; }
 
 MAIN BLOCKQUOTE { color: #444; text-align: left; font-size: 14pt; padding: 1em; font-style: italic; }
-
-.titolo-1 { font-size: 1.8rem; font-weight: bold; }
-
-.titolo-2 { font-size: 1.2rem; font-weight: bold; }
 
 /** Stili per le pagine normali */
 BODY.pagina HEADER DIV.box.titoli { padding: 0.5rem 0; width: calc(100% - 130px); }
@@ -157,15 +165,6 @@ BODY.manuale BLOCKQUOTE.motto { text-align: right; padding: 2rem 0 4rem 0; font-
 
 BODY.manuale IMG.logo { width: 300px; max-width: 90%; display: inline-block; }
 
-/** Tabella per le aree di memoria */
-TABLE.memoria { margin-bottom: 1rem; }
-
-TABLE.memoria TR { background: inherit; font-family: Monaco; font-size: 10pt; }
-
-TABLE.memoria TD { width: 20px; height: 20px; }
-
-TABLE.memoria TD.area { background: #aaa; }
-
 IFRAME.pdf { width: 100%; height: 780px; }
 
 /** Stili per mobile */
@@ -182,4 +181,4 @@ IFRAME.pdf { width: 100%; height: 780px; }
   NAV.menu-top A { font-size: 14pt; padding: 0; }
   DIV.testo P { text-align: left; } }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=screen.css.map */
