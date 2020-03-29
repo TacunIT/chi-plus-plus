@@ -38,7 +38,7 @@ P.newpage { page-break-after: always; }
 
 CODE, PRE { text-align: left; background-color: #e4e6c1; font-size: 10pt; font-family: Monaco; }
 
-I { color: #555; font-size: inherit; }
+EM, I { color: #555; font-size: inherit; }
 
 A { color: #333; }
 

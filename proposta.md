@@ -30,16 +30,15 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 
 ## Executive summary
 Se continuerete nella lettura di questo documento (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
-Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.
-Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e principii etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come quello riportato in copertina.
-Premetto che non ho titoli per scrivere di filosofia e religione, perché sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer, quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell'esaltazione religiosa; successivamente, descriverò alcune
-alcune vulnerabilità logiche delle religioni canoniche e definirò delle linee-guida atte a prevenirle; presenterò poi la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.
+Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.  
+Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e principii etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come quello riportato in copertina.  
+Non ho titoli per scrivere di filosofia e religione, perché sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer, quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell'esaltazione religiosa; successivamente, descriverò alcune vulnerabilità logiche delle religioni canoniche e definirò delle linee-guida atte a prevenirle; presenterò poi la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.
 
 Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologie proprii dell'informatica e ne ho fornito una breve descrizione per coloro che non  abbiano familiarità con le attività di creazione del software; i tecnici mi perdonino le semplificazioni.
 Ho dovuto anche, per brevità, fare delle affermazioni senza comprovarle; i logici mi perdonino l'apodissi.
 <p class="newpage"></p>
 
-## Analisi del sistema attualmente in esercizio
+## Analisi del sistema in esercizio
 Se mi guardo indietro, per il mezzo secolo su cui ho visibilità diretta, vedo una lunga serie di fallimenti ideologici.
 Il Sessantotto ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società senza darci nulla in cambio, tranne la minigonna.
 La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre la *reaganomics* è crollata alla fine degli anni '80 insieme al muro di Berlino.
@@ -443,11 +442,7 @@ Promemoria che noi, nel corso delle nostre precedenti esistenze, abbiamo appicci
 Una sorta di memoria persistente, esterna, o comunque non soggetta ai cicli di rinascita dell’Universo.
 Se l’Universo fosse un computer, potremmo pensare a tutto ciò che esiste come a un programma che “gira” in memoria e all’istinto (o all’immaginario collettivo) come a qualcosa scritto invece sul disco rigido.
 Ogni volta che il computer viene spento, la memoria si svuota e tutto quello che conteneva si perde, mentre ciò che è scritto sul disco rigido rimane lì, in attesa della prossima “accensione”.
-Insomma, il dogma numero quattro è: Lo sai, perché ci sei già passato.<br/>
-Non vale per qualunque evento della nostra esistenza, ovviamente, ma solo per quelli importanti: quelli che, nelle nostre precedenti esistenze, hanno prodotto effetti che ci interessa o ri-produrre o evitare.
-Non ho ancora capito come facciamo a scrivere questi promemoria, posto che esistano davvero; magari è sufficiente essere molto contenti o molto addolorati per qualcosa, ma so in che maniera possiamo leggerli: evitando di non leggerli.
-Evitando di ignorare i segnali che riceviamo, riconoscendo ed accettando la direzione in cui ci porta la corrente anche quando non è quella in cui vorremmo o preferiremmo andare.
-Non sto dicendo che sia facile.
+Insomma, il dogma numero quattro è: <I>Lo sai, perché ci sei già passato</i>.<br/>
 </div>
 
 l'auto-lesionismo delle scelte egoistiche:

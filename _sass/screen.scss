@@ -94,7 +94,7 @@ CODE, PRE {
     font-size: 10pt;
     font-family: Monaco;
 }
-I {
+EM, I {
     color: #555;
     font-size: inherit;
 }
@@ -255,8 +255,8 @@ MAIN.bozza::before {
 }
 
 MAIN P.immagine {
-    margin: 1rem auto;
-    text-align: center
+margin: 1rem auto;
+text-align: center
 }
 
 MAIN P.immagine.chi {
