@@ -414,10 +414,6 @@ Questo dogma, se non me l’avessero detto, non l’avrei mai potuto sapere, ma 
 Dogma numero tre: se lasci andare un peso, quello ti finisce su un piede.
 Qui ho un po’ barato, buttandola in caciara, perché questo, dei tre dogmi, è quello meno comprovabile.
 O meglio, a livello locale (che è appunto quello da me utilizzato nella formulazione), è innegabile il fatto che tutto ciò che ci circonda sia sottoposto alla forza di gravità (se lo lasci andare, il martello ti cade sul piede e anche la Terra, o prima o poi, “cadrà” sul Sole), mentre è solo possibile che le diverse parti dell’Universo potranno, o prima o poi, subire l’attrazione l’una dell’altra e ricompattarsi in un Uno.<br/>
-Poe, in “Eureka”, dice un sacco di fregnacce, ma sostiene una teoria affascinante, ovvero che la forza di gravità non sia altro che la tendenza innata (e metafisica) degli atomi a ritornare all’Uno.
-Io lo cito perché l’idea è molto elegante, ma, per quelli che sono i miei scopi, mi limito qui a dare per buona, anche in assenza di prove a suffragio, la tesi secondo cui l’Universo prima o poi collasserà nell’Uno Primigenio.<br/>
-<br />
-Riassumendo, se affermo che l’Universo esiste, inizialmente era Uno, adesso si sta espandendo, ma poi tornerà a essere Uno, credo che l’unica cosa che mi si può contestare è quel: “tornerà” in vece di: “potrebbe tornare”.<br/>
 </div>
 
 la ciclicità dell'Universo:
@@ -429,8 +425,7 @@ Anche qui, le ipotesi sono due. Una è: potrebbe essere che un Big Bang avvenga 
 La seconda ipotesi è che ogni Big Bang avviene in circostanze e con modalità specifiche e quindi, se l’Uno esploderà di nuovo, nascerà un nuovo Universo, che potrà avere pochi o nessun punto di contatto con quello corrente.<br/>
 La prima ipotesi è possibile, ma poco probabile, quindi diamo per scontato che sia la seconda, quella corretta; tanto non cambia niente, perché il tempo che noi abbiamo a disposizione per far esplodere e implodere l’Universo è infinito e per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali, in un lasso di tempo infinito è  impossibile che la cosa prima o poi non avvenga.
 In base allo stesso principio, dato per scontato che o prima o poi questo Universo tornerà a manifestarsi, è lecito pensare, non per fede, ma in base a un banale calcolo probabilistico, che anche ciò che c’è in esso possa o prima o poi tornare a essere. Noi compresi.
-Magari non la prima volta che questo Universo si ripeterà, magari non la seconda, ma se la sequenza esplosione/collasso andrà avanti per sempre, è lecito pensare che in uno dei cicli futuri noi compariremo di nuovo su questa Terra.
-Anzi, estendendo retroattivamente gli stessi princìpi è altrettanto lecito pensare che questa non sia la prima volta che noi siamo qui a dire le nostre battute: per quello che ne possiamo sapere, questa potrebbe essere una commedia che ha avuto più repliche di Cats e di The Rocky Horror Picture Show messi insieme...</div>
+</div>
 
 la memoria degli eventi passati:
 
@@ -448,14 +443,7 @@ Insomma, il dogma numero quattro è: <I>Lo sai, perché ci sei già passato</i>.
 l'auto-lesionismo delle scelte egoistiche:
 
 <div class="citazione" >
-Ma chi siamo, “noi”?
-Mi piacerebbe pensare che esiste qualcosa di bizzarro come l’anima, ma come ho detto, questa è una cosmogonia che prescinde da elementi metafisici e quindi ne dovrò fare a meno.
-L’idea è che l’anima non esiste e che ciò che noi chiamiamo “anima” altro non sia che una particolare conformazione del circuito sinaptico del cervello.
-In altre parole, l’anima è il modo in cui i neuroni del nostro cervello sono collegati gli uni agli altri.
-D’altro canto, se non fosse così, se esistesse davvero un’anima che determina il nostro modo di comportarci, non si spiegherebbero gli effetti dell’elettroshock o della lobotomia...
-Attenzione, però: dire che l’anima non esiste è pericoloso, perché (semplifico) se l’anima non c’è, allora non posso andare all’Inferno e se non rischio di andare all’Inferno, chi me lo fa fare di comportarmi bene, facendomi un culo così tutta la vita per due soldi? Se davvero l’anima non c’è, mi metto a spacciare droga o a peculare sulle commesse statali e faccio la bella vita.<br/>
-È questo che ha fatto la fortuna della Chiesa Cattolica: sostenendo l’esistenza dell’anima e propugnando un sistema che prevedeva una pena eterna per peccati risibili, ha prodotto duemila anni di pigoristica accettazione delle iniquità dei potenti ai danni dei deboli, ma, se le cose stanno come penso io, il fatto che l’anima non esista non ci autorizza a fare il porco comodo nostro, anzi...<br />
-Se davvero siamo tutti degli epifenomeni, possiamo manifestarci ora qui ora lì, a seconda dei casi e se io oggi (in questo ciclo dell’Universo) mi manifesto all’interno di Raimondo Canaro, evasore fiscale e filosofo d’accatto, un domani (in un altro ciclo di questa particolare specie di Universo) potrei manifestarmi in Pierluigi Mancuso, ufficiale della Guardia di Finanza.
+Se davvero siamo tutti degli epifenomeni, possiamo manifestarci ora qui ora lì, a seconda dei casi e se io oggi (in questo ciclo dell’Universo) mi manifesto all’interno di Raimondo Canaro, evasore fiscale e filosofo d’accatto, un domani (in un altro ciclo di questa particolare specie di Universo) potrei manifestarmi in Calogero Mancuso, ufficiale della Guardia di Finanza.
 Similmente, se io oggi (sempre nel senso di: in questo ciclo dell’Universo) mi metto a spacciare droga fregandomene delle persone che ammazzo e delle famiglie che rovino, domani (sempre nel senso...), potrei benissimo ritrovarmi in uno di quei drogati o di quei familiari e subirei le conseguenze delle mie stesse azioni.
 È quindi decisamente meglio che io mi comporti bene e che cerchi, per quanto mi è possibile, di convincere anche gli altri a comportarsi bene.
 </div>
