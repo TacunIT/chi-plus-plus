@@ -1,3 +1,7 @@
+## 0.8.19 (March 29, 2020)
+  - Aggiunta poesia funeraria
+  - Aggiornato il testo delle bozze del Manuale
+
 ## 0.8.18 (March 29, 2020)
   - Ridotte citazioni di Aristotele nella Proposta
   - Sfoltiti gli stili CSS per la Proposta.
