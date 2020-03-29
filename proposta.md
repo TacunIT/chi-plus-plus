@@ -366,7 +366,7 @@ Il C'hi++ è, in un certo senso, monoteistico, ma non è una religione, quindi d
 Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero:
 
 | n. | anno | descrizione | changelog
-:---: | :---: | --- | :--- |
+:---: | :---: | --- | --- |
 0.1.0 | 2004 |  Proto-C'hi++         | Domenica 12 settembre 2004, scrivevo sul mio blog: *La mia teoria cosmogonica comprende anche due fattori di primaria importanza, colpevolmente trascurati dalle altre teorie: il Minipimer e il concetto di: Immancabile Testa di Pera.*
 0.1.1 | 2007 |  Sostiene Aristotele  | Primo tentativo di formalizzare la strana teoria che andavo sviluppando. Ci sono già i quattro dogmi del C'hi++, ma non c'è ancora nessun accenno allo Spazionismo.
 0.2.0 | 2009 |  C'hi++               | Iniziata redazione del manuale *C'hi++*. Definizione iniziale dello Spazionismo.
