@@ -4,7 +4,7 @@ class:      capitolo
 title:      Epilogo
 permalink:  /man/epilogo
 precedente: ikebarba
-seguente:   
+seguente:   poesia-funeraria
 bozza:      true
 quote:      "???"
 ---

@@ -37,9 +37,12 @@
     <a href="/" title="Torna alla home-page">
         <i class="fa fa-home fa-2x" aria-hidden="true"></i>
     </a>
+    <a href="/man/indice" title="Torna all'indice del Manuale">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
 
     
-    <a href="tipi-di-dato" title="Pagina seguente" class="right" >
+    <a href="tipi-di-dato" title="Pagina successiva" class="right" >
             <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
     </a>
     
@@ -57,8 +60,190 @@
 
             <section id="testo">
 
-                <blockquote class="motto">
+                <p>I commenti sono la cosa più importante, quando si programma.</p>
+
+<p>Un commento è un breve brano di testo che descrive in linguaggio comune
+il funzionamento o lo scopo del codice seguente.</p>
+
+<p>Pur essendo all’interno del codice, il commento viene ignorato in fase
+di compilazione.</p>
+
+<p>È importante commentare bene il proprio codice.</p>
+
+<p>Il buon codice produce programmi che durano nel tempo e, col tempo, si
+tende a dimenticare.</p>
+
+<p>Anche se si ha la fortuna di possedere una buona memoria, bisogna
+considerare la possibilità che il proprio codice sia utilizzato da un
+collega. Non solo non è educato costringerlo ad analizzare ogni singola
+riga di codice per capirne il funzionamento, ma è anche improduttivo.</p>
+
+<p>Così come la penuria, anche l’eccesso di commenti è un errore da
+evitare.</p>
+
+<p>Il programmatore inesperto non commenta il proprio codice perché pensa
+che sia una perdita di tempo. È davvero un atteggiamento poco
+responsabile.</p>
+
+<p>Il neofita zelante riempie il proprio codice di commenti, o perché
+ritiene che chi lo andrà a leggere sarà meno esperto di lui o perché
+vuole in questo modo esaltare le sue poche conoscenze.</p>
+
+<p>Il programmatore esperto commenta solo ciò che non è di per sé evidente
+e indica i possibili punti deboli del suo programma in modo che chi si
+trova a riutilizzarlo o a correggerlo vi presti la dovuta attenzione.</p>
+
+<p>Il programmatore Perfetto non commenta il suo codice, perché non è
+necessario.</p>
+
+<p>Spesso gli opposti coincidono.</p>
+
+<p>È ammissibile che i commenti abbiano una sfumatura umoristica, può
+essere utile per scaricare un po’ della tensione in chi legge, così come
+scambiarsi una battuta mentre si lavora, ma anche in questo non si deve
+esagerare.</p>
+
+<p>È buona norma anteporre a ogni funzione un breve commento che ne
+illustri il funzionamento, ma se si ha cura di scegliere dei nomi
+auto-esplicativi per le funzioni questo può non essere necessario.
+Sarebbe un’inutile ridondanza aggiungere un commento se il nome della
+funzione basta da solo a chiarirne la ragione e l’uso.</p>
+
+<p>Il C++ prevede due modi distinti per commentare il codice: due caratteri
+// affiancati o la sequenza /* */, che il Linguaggio ha mutuato dal
+suo predecessore, il C.</p>
+
+<p>Nel primo caso, il compilatore ignora i caratteri dal simbolo fino alla
+fine della riga; nel secondo caso, ignora tutto ciò che è compreso fra
+le due sequenze di caratteri.</p>
+
+<p>Entrambe le soluzioni hanno dei pro e dei contro che con l'esperienza
+risultano evidenti. Scegliere l'uno o l'altro è spesso una questione
+di convenienza, altre volte una questione di stile, ma se si capisce la
+vera essenza del Linguaggio, è solo una questione di ritmo.</p>
+
+<p>Una volta, il maestro Canaro mostrò ai suoi allievi un brano di codice e
+gli chiese di spiegare che cosa facesse:</p>
+
+<blockquote>
+  <p>/*********************************************************************</p>
 </blockquote>
+
+<blockquote>
+  <p>#include &lt;iostream.h&gt;</p>
+</blockquote>
+
+<blockquote>
+  <p>#define ERR_NOFILE 1</p>
+</blockquote>
+
+<blockquote>
+  <p>int errore( int errore );</p>
+</blockquote>
+
+<blockquote>
+  <p>void leggi_file( char * nomefile );</p>
+</blockquote>
+
+<blockquote>
+  <p>void crea_matrice(void);</p>
+</blockquote>
+
+<blockquote>
+  <p>int inizializza(void);</p>
+</blockquote>
+
+<blockquote>
+  <p>void imposta_probabilita(void);</p>
+</blockquote>
+
+<blockquote>
+  <p>void attrattore(void);</p>
+</blockquote>
+
+<blockquote>
+  <p>int chiudi(void);</p>
+</blockquote>
+
+<blockquote>
+  <p>int main(int argc, char * argv[])</p>
+</blockquote>
+
+<blockquote>
+  <p>{</p>
+</blockquote>
+
+<blockquote>
+  <p>int esito = 0 ;</p>
+</blockquote>
+
+<blockquote>
+  <p>if(argc &lt; 2) {</p>
+</blockquote>
+
+<blockquote>
+  <p>esito = errore(ERR_NOFILE);</p>
+</blockquote>
+
+<blockquote>
+  <p>} else {</p>
+</blockquote>
+
+<blockquote>
+  <p>leggi_file(argv[1]);</p>
+</blockquote>
+
+<blockquote>
+  <p>crea_matrice();</p>
+</blockquote>
+
+<blockquote>
+  <p>if(inizializza()) {</p>
+</blockquote>
+
+<blockquote>
+  <p>const char * valore = imposta_probabilita();</p>
+</blockquote>
+
+<blockquote>
+  <p>attrattore(valore);</p>
+</blockquote>
+
+<blockquote>
+  <p>esito = chiudi();</p>
+</blockquote>
+
+<blockquote>
+  <p>}</p>
+</blockquote>
+
+<blockquote>
+  <p>}</p>
+</blockquote>
+
+<blockquote>
+  <p>return esito ;</p>
+</blockquote>
+
+<blockquote>
+  <p>}</p>
+</blockquote>
+
+<blockquote>
+  <p>*********************************************************************/</p>
+</blockquote>
+
+<p>Gli allievi studiarono gli algoritmi e diedero le loro risposte, ma
+sbagliarono tutti, perché il codice era compreso fra un /* e un */ e,
+di fatto, non faceva nulla.</p>
+
+<p>I commenti sono un po' come la letteratura: se si scrive troppo poco è
+male; se si scrive troppo, dilungandosi in descrizioni inutili, è
+altrettanto sbagliato.</p>
+
+<p>Il paragone vale anche all'inverso: i libri, le opere letterarie, sono
+i commenti al codice della vita. Si scrive ciò che si desidera
+ricordare.</p>
 
 
             </section>
