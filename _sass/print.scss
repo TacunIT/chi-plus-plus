@@ -1,4 +1,10 @@
 @media print {
+
+@page {
+    orphans: 2;
+    widows: 2;
+}
+
 BODY.proposta {
     font-family: "Gill Sans", Helvetica, arial, sans-serif;
     font-size: 13.5pt;
@@ -51,6 +57,10 @@ BODY.proposta table, PRE {
 }
 BODY.proposta PRE {
     word-wrap: break-word;
+}
+
+BODY.proposta SECTION.pagina {
+    page-break-after: always;
 }
 BODY.proposta SECTION.copertina {
     height: 200mm;

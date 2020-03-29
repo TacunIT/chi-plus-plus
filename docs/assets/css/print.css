@@ -1,4 +1,6 @@
-@media print { BODY.proposta { font-family: "Gill Sans", Helvetica, arial, sans-serif; font-size: 13.5pt; line-height: 1.4; margin: 0rem 15mm 30mm 25mm; max-width: 170mm; }
+@media print { @page { orphans: 2;
+    widows: 2; }
+  BODY.proposta { font-family: "Gill Sans", Helvetica, arial, sans-serif; font-size: 13.5pt; line-height: 1.4; margin: 0rem 15mm 30mm 25mm; max-width: 170mm; }
   BODY.proposta h1, h2, h3, h4, h5, h6 { margin: 1rem 0 0.5rem; padding: 0; font-weight: bold; line-height: 1.1; -webkit-font-smoothing: antialiased; cursor: text; position: relative; border: none; }
   BODY.proposta h1 { font-size: 2.5rem; color: #600; }
   BODY.proposta h2 { font-size: 1.5rem; color: #600; }
@@ -10,6 +12,7 @@
   BODY.proposta a { color: #060; font-weight: normal; }
   BODY.proposta table, PRE { page-break-inside: avoid; }
   BODY.proposta PRE { word-wrap: break-word; }
+  BODY.proposta SECTION.pagina { page-break-after: always; }
   BODY.proposta SECTION.copertina { height: 200mm; }
   BODY.proposta SECTION.citazione { padding-top: 30%; } }
 
