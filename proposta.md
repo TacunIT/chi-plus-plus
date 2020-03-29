@@ -11,8 +11,6 @@ footer:     true
     <a type="application/pdf" title="Scarica il file PDF" href="/assets/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf">Scarica il PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
 </a></p>
 
-<link rel="stylesheet" type="text/css" href="../../assets/css/proposta.css" />
-
 <section class="copertina pagina">
 	<h1>C'hi++</h1>
 	<h2>Proposta per una metafisica open-source</h2>
