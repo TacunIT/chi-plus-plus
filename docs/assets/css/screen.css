@@ -161,7 +161,7 @@ BODY.manuale MAIN UL { margin: 1rem 0; padding-left: 2.5rem; }
 
 BODY.manuale BLOCKQUOTE.incluso { color: #543; text-align: justify; padding: 1rem; background: #e4e6c1; margin: 1rem 0; }
 
-BODY.manuale BLOCKQUOTE.motto { text-align: right; padding: 2rem 0 4rem 0; font-size: 0.9em; }
+BODY.manuale BLOCKQUOTE.motto { text-align: right; padding: 2rem 0 4rem 33%; font-size: 0.9em; }
 
 BODY.manuale IMG.logo { width: 300px; max-width: 90%; display: inline-block; }
 

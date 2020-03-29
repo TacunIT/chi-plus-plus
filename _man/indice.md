@@ -19,6 +19,9 @@ no-index:   true
                 {{ capitolo.title }}
             </a>
         </h3>
+        {% if capitolo.title == 'Epilogo' %}
+        <hr>
+        {% endif %}
         {% endif %}
     {% endfor %}
 </section>

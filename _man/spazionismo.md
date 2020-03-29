@@ -6,12 +6,5 @@ permalink:  /man/spazionismo
 precedente: chi-plus-plus
 seguente:   ikebarba
 bozza:      true
-quote:      "???"
+quote:      "Da dove questa applicazione sia sorta,<br/>se lui l’ha fondata oppure no:<br/>lui che la sorveglia nel più alto dei cieli,<br/>lui solo lo sa, o forse non lo sa."
 ---
-
-<blockquote>
-Da dove questa creazione sia sorta,
-se lui l’ha fondata oppure no:
-lui che la sorveglia nel più alto dei cieli,
-lui solo lo sa, o forse non lo sa.
-</blockquote>
