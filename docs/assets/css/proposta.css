@@ -62,16 +62,14 @@ SECTION.dedica, SECTION.citazione { font-style: italic; font-size: 0.9rem; margi
 SECTION.citazione SPAN { font-style: normal; }
 
 /** Stili per la gestione delle note a piè di pagina */
-SECTION.note { page-break-before: always; padding-bottom: 3rem; }
-
 A.nota { font-size: 0.8rem; color: #990; text-decoration: underline; vertical-align: super; display: inline-block; margin-left: 0.12rem; }
+
+SECTION.note { page-break-before: always; padding-bottom: 3rem; }
 
 SECTION.note OL, SECTION.bibliografia UL { font-size: 0.9rem; margin-left: 0; }
 
 SECTION.note LI, SECTION.bibliografia LI { margin-bottom: 0.5rem; }
 
 SECTION.note OL LI A { word-break: break-all; }
-
-IMG.qr { position: relative; width: 100px; margin-left: 2mm; float: right; }
 
 /*# sourceMappingURL=proposta.css.map */
