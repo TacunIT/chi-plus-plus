@@ -19,5 +19,5 @@ Vorwärts gehen, Rückwärts gehen,<br />
 Leben, sterben, kommen, gehen.<br />
 Wie zwei Pfeile, die sich im Flug treffen.<br />
 Mitten im Nichts,<br />
-Eine Straße, direkt zu meinem wirklichen Zuhause führt.
+Eine Straße, die direkt zu meinem wirklichen Zuhause führt.
 </blockquote>
