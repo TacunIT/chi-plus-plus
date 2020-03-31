@@ -1,3 +1,7 @@
+## 0.8.20 (March 31, 2020)
+  - Aggiunto testo a poesia funeraria. 
+  - Rinominata "Premessa" in "Prologo".
+
 ## 0.8.19 (March 29, 2020)
   - Aggiunta poesia funeraria
   - Aggiornato il testo delle bozze del Manuale
