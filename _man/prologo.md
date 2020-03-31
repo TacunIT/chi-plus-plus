@@ -1,9 +1,9 @@
 ---
 layout:     manuale
 class:      capitolo
-title:      Premessa
-h1:         Premessa
-permalink:  /man/premessa
+title:      Prologo 
+h1:         Prologo
+permalink:  /man/prologo
 precedente: indice
 seguente:   incipit
 ---
