@@ -14,6 +14,8 @@ exclude: [
   , TODO
   , VERSION
 ]
+sass:
+  style: compressed
 collections:
    man:
       output: true
@@ -21,7 +23,7 @@ collections:
          - copertina.md
          - dedica.md
          - indice.md
-         - premessa.md
+         - prologo.md
          - incipit.md
          - mitopoietica.md
          - il-programmatore.md

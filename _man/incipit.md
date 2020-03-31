@@ -4,7 +4,7 @@ class:      capitolo
 title:      Incipit
 h1:         In C pit
 permalink:  /man/incipit
-precedente: premessa
+precedente: prologo
 seguente:   mitopoietica
 ---
 
