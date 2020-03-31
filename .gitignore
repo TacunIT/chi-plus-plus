@@ -2,3 +2,4 @@
 .~lock*
 .~*
 .jekyll-cache/
+bin/purge-cache.sh

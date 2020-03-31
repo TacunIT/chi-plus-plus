@@ -1,20 +1,22 @@
+{{ assign description = site.og_desc }}
+
 <head>
     <title>{{ page.title }} | {{ site.title }}</title>
     <meta charset="utf-8" />
     <meta name="viewport"     content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <link rel="canonical"            href="https://chiplusplus.org{{ page.url }}" />
-    <meta     name="thumbnail"       content="" />
-    <meta     name="keyword"         content="" />
-    <meta     name="description"     content="" />
-    <meta property="og:description"  content="" />
+    <link rel="canonical"            href="{{site.url}}{{ page.url }}" />
+    <meta     name="thumbnail"       content="{{site.url}}{{ site.og_img }}" />
+    <meta     name="keyword"         content="{{ site.keyword }}" />
+    <meta     name="description"     content="{{ site.og_desc }}" />
     <meta property="og:title"        content="{{ page.title }}" />
-    <meta property="og:type"         content="website" />
-    <meta property="og:image"        content="" />
-    <meta property="og:image:height" content="" />
+    <meta property="og:type"         content="website" />    
+    <meta property="og:description"  content="{{ site.og_desc }}"" />
+    <meta property="og:image"        content="{{site.url}}{{ site.og_img }}" />
+    <meta property="og:image:width"  content="{{site.og_img_w}}" />
     <link rel=icon href=/assets/img/favicon.ico type=image/x-icon>
     <script src="https://use.fontawesome.com/b4b35c88c8.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Simonetta:400,400i,900,900i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/screen.css" media="screen" >        
+    <link rel="stylesheet" href="/assets/css/screen.css" media="screen">        
     {% if page.class == "proposta" %}
     <link rel="stylesheet" href="/assets/css/proposta.css" />
     <link rel="stylesheet" href="/assets/css/print.css"  media="print"  >
