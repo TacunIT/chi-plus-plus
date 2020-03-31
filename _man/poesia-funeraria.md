@@ -4,7 +4,7 @@ class:      capitolo
 title:      Poesia funeraria del Maestro
 permalink:  /man/poesia-funeraria
 precedente: epilogo
-seguente:   
+seguente:   indice
 bozza:      false
 quote:      ""
 ---
