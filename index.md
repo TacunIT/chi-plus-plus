@@ -25,13 +25,13 @@ Tutti i testi, le immagini e i dati del C'hi++ sono raccolti in un
     target="github"
     href="https://github.com/chi-plus-plus/chi-plus-plus">
     repository su GitHub</a>.
-Se volete altre informazioni su quest progetto, potete trovarle nei file:
+Se volete altre informazioni su questo progetto, potete trovarle lì, nei file:
 <a href="https://github.com/chi-plus-plus/chi-plus-plus" target="github">README</a> e
 <a href="https://github.com/chi-plus-plus/chi-plus-plus/blob/master/MANIFEST.md" target="github">MANIFEST</a>.
 
 <p class="immagine">氣 </p>
 
-La mitologia ha sempre mescolato il soprannaturale con il livello
+La mitologia ha spesso mescolato il soprannaturale con il livello
 più alto dello sviluppo scientifico o tecnologico.
 Anticamente, abbiamo attribuito una controparte divina al lampo
 che generava il fuoco, al moto degli astri, alla meteorologia.
@@ -40,8 +40,7 @@ il frutto dell'azione contrapposta della Gravità, che lui interpreta
 come la tendenza di tutta la materia a tornare all'Uno primigenio e
 dell'Elettricità, che al contrario, tende a dividere.
 All'inizio del Secolo scorso, infine, i Futuristi hanno mitizzato i simboli
-del progresso tecnologico &mdash; velocità, eliche, aeroplani, automobili &mdash;,
-rendendoli l'oggetto della loro arte.
+del progresso tecnologico &mdash; velocità, eliche, aeroplani, automobili &mdash;, rendendoli l'oggetto della loro arte.
 Nulla di strano, quindi, che all'inizio di questo Millennio
 si tenti un paragone fra le regole, note, del software
 e le regole ignote dell'Universo in cui viviamo.<br />
