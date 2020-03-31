@@ -5,7 +5,7 @@ title:      Poesia funeraria del Maestro
 permalink:  /man/poesia-funeraria
 precedente: epilogo
 seguente:   
-bozza:      true
+bozza:      false
 quote:      ""
 ---
 
