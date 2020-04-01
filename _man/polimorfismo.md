@@ -6,7 +6,7 @@ permalink:  /man/polimorfismo
 precedente: espressioni-e-operatori
 seguente:   ereditarieta
 bozza:      true
-quote:      "???"
+quote:      ""
 ---
 
 <!--
