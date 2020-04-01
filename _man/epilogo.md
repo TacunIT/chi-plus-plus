@@ -6,7 +6,7 @@ permalink:  /man/epilogo
 precedente: ikebarba
 seguente:   poesia-funeraria
 bozza:      true
-quote:      "???"
+quote:      "free(Maestro);"
 ---
 
 [prima di questo, il Maestro, prossimo alla dipartita, ordina al

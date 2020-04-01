@@ -9,6 +9,18 @@ bozza:      true
 quote:      "È stata una giornata estenuante: questa mattina ho tolto una virgola dal mio codice e stasera ce l'ho rimessa"
 ---
 
+Bjarne Stroustroup, il creatore del linguaggio C++, lo definì: “Un linguaggio di programmazione per svolgere compiti non banali”. 
+Fà che si possa dire la stessa cosa di te. 
+
+---
+
+<!--
+is a better C
+supports data abstraction
+supports object-oriented programming
+supports generic programming.
+--> 
+
 Il C++ è un linguaggio orientato agli oggetti, questo vuol dire che le
 sue regole interne discendono da dei principî di ordine superiore, il
 cosiddetto paradigma a oggetti.
