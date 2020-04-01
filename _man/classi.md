@@ -6,7 +6,7 @@ permalink:  /man/classi
 precedente: espressioni-e-operatori
 seguente:   polimorfismo
 bozza:      true
-quote:      "Non accetterei mai di far parte di una rete che abbia un server come me fra i suoi nodi"
+quote:      ""
 ---
 
 Funzioni di interfaccia

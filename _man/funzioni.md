@@ -6,7 +6,7 @@ permalink:  /man/funzioni
 precedente: espressioni-e-operatori
 seguente:   classi
 bozza:      true
-quote:      "Dopo di me, il reboot"
+quote:      "Call me reentrant"
 ---
 
 

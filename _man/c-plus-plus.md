@@ -6,7 +6,8 @@ permalink:  /man/c-plus-plus
 precedente: linguaggi-di-programmazione
 seguente:   commenti
 bozza:      true
-quote:      "È stata una giornata estenuante: questa mattina ho tolto una virgola dal mio codice e stasera ce l'ho rimessa"
+quote:      "Non chiederti cosa può fare per te il sistema operativo;
+chiediti invece cosa puoi fare tu, per il sistema operativo"
 ---
 
 Bjarne Stroustroup, il creatore del linguaggio C++, lo definì: “Un linguaggio di programmazione per svolgere compiti non banali”. 

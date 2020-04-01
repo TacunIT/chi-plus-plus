@@ -6,7 +6,7 @@ permalink:  /man/ereditarieta
 precedente: polimorfismo
 seguente:   debug
 bozza:      true
-quote:      "???"
+quote:      ""
 ---
 
 <blockquote class="motto">
