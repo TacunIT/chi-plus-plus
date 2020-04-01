@@ -6,7 +6,7 @@ permalink:  /man/tipi-di-dato
 precedente: commenti
 seguente:   espressioni-e-operatori
 bozza:      true
-quote:      "???"
+quote:      "We few, we happy few<br />We bunch of data."
 ---
 
 Il C++ possiede molti tipi di dato.
