@@ -1,3 +1,9 @@
+## 0.8.21 (April 01, 2020)
+  - Correzioni a INDEX
+  - Aggiunti dei valori di default ai campi dell'HEAD
+  - Rimesso il 'die' nella poesia..
+  - Aggiunto link di ritorno all'indice nella pagina finale del manuale
+
 ## 0.8.20 (March 31, 2020)
   - Aggiunto testo a poesia funeraria. 
   - Rinominata "Premessa" in "Prologo".
