@@ -6,7 +6,7 @@ permalink:  /man/poesia-funeraria
 precedente: epilogo
 seguente:   indice
 bozza:      false
-quote:      "free Maestro;"
+quote:      "free(Maestro);"
 ---
 
 Questa è la poesia funeraria del Maestro.

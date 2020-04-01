@@ -6,12 +6,10 @@ permalink:  /man/chi-plus-plus
 precedente: debug
 seguente:   spazionismo
 bozza:      true
-quote:      "Chi vuole capire il computer<br />deve andare nella terra del computer."
+quote:      "Non è necessario che crediate in Dio, ma dovete credere nel Codice."
 ---
 
-Non è necessario che crediate in Dio,
 
-ma dovete credere nel Codice.
 
 Il C\'hi++ è allo stesso tempo un linguaggio di programmazione, un
 atteggiamento mentale e un modo di vivere.

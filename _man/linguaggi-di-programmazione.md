@@ -6,7 +6,7 @@ permalink:  /man/linguaggi-di-programmazione
 precedente: sistemi-di-numerazione
 seguente:   c-plus-plus
 bozza:      false
-quote:      "Tutto è byte"
+quote:      "Tutto è byte."
 ---
 
 Bjarne Stroutsup, o forse Brian Kernigan, disse:
