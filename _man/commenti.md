@@ -6,7 +6,7 @@ permalink:  /man/commenti
 precedente: c-plus-plus
 seguente:   tipi-di-dato
 bozza:      true
-quote:      ""
+quote:      "Tutto è byte"
 ---
 
 I commenti sono la cosa più importante, quando si programma.
