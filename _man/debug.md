@@ -1,6 +1,7 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      14
 title:      Il debug
 permalink:  /man/debug
 precedente: ereditarieta

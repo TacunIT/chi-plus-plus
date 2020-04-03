@@ -1,6 +1,7 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      7
 title:      Il C++
 permalink:  /man/c-plus-plus
 precedente: linguaggi-di-programmazione
@@ -10,7 +11,28 @@ quote:      "Non chiederti cosa può fare per te il sistema operativo;
 chiediti invece cosa puoi fare tu, per il sistema operativo"
 ---
 
-Bjarne Stroustroup, il creatore del linguaggio C++, lo definì: “Un linguaggio di programmazione per svolgere compiti non banali”. 
+
+C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983.
+Il nome *C++* si riferisce all'operatiore di incremento `++`:
+
+```
+int main(int argc, char** argv)
+{
+    int C = 12;
+    
+    C++
+    
+    cout << C << endl;
+    
+    return 0;
+}    
+```
+
+
+
+C and C++ were invented in the Computer Science Research Center of Bell Labs in Murray Hill a
+
+Bjarne Stroustroup, l linguaggio C++, lo definì: “Un linguaggio di programmazione per svolgere compiti non banali”. 
 Fà che si possa dire la stessa cosa di te. 
 
 ---

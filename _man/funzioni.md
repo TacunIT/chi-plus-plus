@@ -1,6 +1,7 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      10
 title:      Le funzioni
 permalink:  /man/funzioni
 precedente: espressioni-e-operatori

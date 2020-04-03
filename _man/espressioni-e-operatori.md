@@ -1,6 +1,7 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      9
 title:      Espressioni e operatori
 permalink:  /man/espressioni-e-operatori
 precedente: tipi-di-dato

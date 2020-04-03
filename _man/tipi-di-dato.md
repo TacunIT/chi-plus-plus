@@ -1,6 +1,7 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      9
 title:      I tipi di dato
 permalink:  /man/tipi-di-dato
 precedente: commenti
