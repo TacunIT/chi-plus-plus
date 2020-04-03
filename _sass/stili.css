@@ -76,14 +76,6 @@ HR {
 HR:before {
  content: '氣';
 }
-P {
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
-}
-P.newpage {
-  page-break-after: always;
-}
 CODE, PRE {
     text-align: left;
     background-color: #e4e6c1;
@@ -93,6 +85,17 @@ CODE, PRE {
 EM, I {
     color: #555;
     font-size: inherit;
+}
+P {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+P.newpage {
+  page-break-after: always;
+}
+P CODE {
+    padding: 0 0.25rem;
 }
 A {
     color: #333;
@@ -423,12 +426,12 @@ BODY.manuale MAIN PRE {
 }
 
 BODY.manuale MAIN P A {
- color: #990;
+    color: #990;
 }
 
 BODY.manuale MAIN UL {
- margin: 1rem 0;
- padding-left: 2.5rem;
+    margin: 1rem 0;
+    padding-left: 2.5rem;
 }
 
 BODY.manuale BLOCKQUOTE.incluso {

@@ -5,9 +5,7 @@
 
 
 
-**C'hi/Java**
-> I suspect that the root of many of the differences between C/C++ and Java is that AT&T is primarily a user (a consumer) of computers, languages, and tools, whereas Sun is primarily a vendor of such things.
-Bjarne Stroustrup - http://gotw.ca/publications/c_family_interview.htm
+
 
 
 Il diluvio universale era solo il passaggio dalla versione beta alla

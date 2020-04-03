@@ -16,32 +16,34 @@ C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983.
 Il nome *C++* si riferisce all'operatiore di incremento `++`:
 
 ```
-int main(int argc, char** argv)
-{
-    int C = 12;
-    
-    C++
-    
-    cout << C << endl;
-    
-    return 0;
-}    
+{% include_relative src/7.1-operatore-incremento.cpp %}
 ```
 
 
-C and C++ were invented in the Computer Science Research Center of Bell Labs in Murray Hill a
+In uno dei suoi libri, Bjarne Stroustroup definì il C++: 
 
-Bjarne Stroustroup, l linguaggio C++, lo definì: “Un linguaggio di programmazione per svolgere compiti non banali”. 
+> Un linguaggio di programmazione per svolgere compiti non banali. 
+
 Fà che si possa dire la stessa cosa di te. 
 
 ---
 
+
 <!--
+
+Paragonare l'evoluzione C/C++ al rapporto fra ebraismo e cristianesimo.
+Paragonare il rapporto C++/Java al rapporto fra 10 comandamenti ebraici e 10 C cattolici.
+> I suspect that the root of many of the differences between C/C++ and Java is that AT&T is primarily a user (a consumer) of computers, languages, and tools, whereas Sun is primarily a vendor of such things.
+Bjarne Stroustrup - http://gotw.ca/publications/c_family_interview.htm
+
+
+C and C++ were invented in the Computer Science Research Center of Bell Labs in Murray Hill a
+
 is a better C
 supports data abstraction
 supports object-oriented programming
 supports generic programming.
---> 
+
 
 Il C++ è un linguaggio orientato agli oggetti, questo vuol dire che le
 sue regole interne discendono da dei principî di ordine superiore, il
@@ -93,3 +95,5 @@ complessità dalle mie enunciazioni.
 
 Il problema è che ti stai concentrando sull\'effetto e non sulla sua
 causa.
+
+-->
