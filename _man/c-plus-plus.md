@@ -16,16 +16,6 @@ C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983.
 Il nome *C++* si riferisce all'operatiore di incremento `++`:
 
 ```
-int main(int argc, char** argv)
-{
-    int C = 12;
-    
-    C++
-    
-    cout << C << endl;
-    
-    return 0;
-}    
 ```
 
 
