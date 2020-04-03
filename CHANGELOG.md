@@ -1,3 +1,11 @@
+## 0.8.22 (April 03, 2020)
+  - Rivista struttura delle directory per includere direttamente gli script .cpp nel testo del Manuale
+  - Aggiornato file TODO
+  - Aggiunta numerazione dei capitoli del Manuale. 
+  - Aggiunta directory src/out per l'output delle compilazioni.
+  - Aggiunta numerazione dei capitoli del Manuale
+  - Riordinate le citazioni nel Manuale
+
 ## 0.8.21 (April 01, 2020)
   - Correzioni a INDEX
   - Aggiunti dei valori di default ai campi dell'HEAD
