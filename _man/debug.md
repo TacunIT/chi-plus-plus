@@ -1,12 +1,13 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      14
 title:      Il debug
 permalink:  /man/debug
 precedente: ereditarieta
 seguente:   chi-plus-plus
 bozza:      true
-quote:      "question = 2b | ( ! 2b );"
+quote:      "Non accetterei mai di far parte di una rete che abbia un server come me fra i suoi nodi"
 ---
 
 

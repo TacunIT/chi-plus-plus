@@ -1,3 +1,17 @@
+## 0.8.22 (April 03, 2020)
+  - Rivista struttura delle directory per includere direttamente gli script .cpp nel testo del Manuale
+  - Aggiornato file TODO
+  - Aggiunta numerazione dei capitoli del Manuale. 
+  - Aggiunta directory src/out per l'output delle compilazioni.
+  - Aggiunta numerazione dei capitoli del Manuale
+  - Riordinate le citazioni nel Manuale
+
+## 0.8.21 (April 01, 2020)
+  - Correzioni a INDEX
+  - Aggiunti dei valori di default ai campi dell'HEAD
+  - Rimesso il 'die' nella poesia..
+  - Aggiunto link di ritorno all'indice nella pagina finale del manuale
+
 ## 0.8.20 (March 31, 2020)
   - Aggiunto testo a poesia funeraria. 
   - Rinominata "Premessa" in "Prologo".

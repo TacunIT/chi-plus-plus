@@ -1,12 +1,13 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      8
 title:      I commenti
 permalink:  /man/commenti
 precedente: c-plus-plus
 seguente:   tipi-di-dato
 bozza:      true
-quote:      "???"
+quote:      ""
 ---
 
 I commenti sono la cosa più importante, quando si programma.

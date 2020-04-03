@@ -1,6 +1,7 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      3
 title:      Mitopoietica del C'hi++
 permalink:  /man/mitopoietica
 precedente: incipit

@@ -56,13 +56,17 @@
             
         
 
-            <h1>I linguaggi di programmazione</h1>
+            
 
-            <blockquote class="motto">Tutto è byte</blockquote>
+            <h1>
+                I linguaggi di programmazione
+            </h1>
+
+            <blockquote class="motto">Tutto è byte.</blockquote>
 
             <section id="testo">
 
-                <p>Bjarne Stroutsup, o forse Brian Kernigan, disse:</p>
+                <p>Brian Kernigan, disse:</p>
 
 <blockquote>
 L'unico modo di apprendere un linguaggio di programmazione è quello
@@ -305,15 +309,17 @@ char c = b * 2;
 <p>Il C è un linguaggio estremamente efficiente per gestire tutte le entità che puoi trovare in un computer – numeri, stringhe, flussi di dati –, ma la sua forza è allo stesso tempo il suo limite, perché non funziona altrettanto bene se hai a che fare con oggetti più complessi.<br />
 Anche la gestione delle stringhe di testo, nel C, è rudimentale: se tu provassi a eseguire la somma di cui parla il Maestro Canaro nel suo diario:</p>
 
-<pre>
+<pre><code>#include &lt;stdio.h&gt;
+
 int main (int argc, char** argv)
 {
-    char a[] = "pippo";
-    char b[] = "pluto";
+    char* a = "pippo";
+    char* b = "pluto";
     printf("\npippo+pluto=%s\n", a+b);
     return 0;
 }
-</pre>
+
+</code></pre>
 
 <p>il compilatore C ti avviserebbe che non può sommare due variabili di tipo char.</p>
 
@@ -359,6 +365,10 @@ giovane e impetuoso discepolo gliene aveva dato occasione.</p>
 
         
         </main>
+
+        <footer>
+    <nav><a href="#top" class="top">Torna all'inizio</a></nav>
+</footer>
 
     </div>
 
