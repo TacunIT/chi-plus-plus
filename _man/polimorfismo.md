@@ -1,6 +1,7 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      12
 title:      Il polimorfismo
 permalink:  /man/polimorfismo
 precedente: espressioni-e-operatori
@@ -8,6 +9,7 @@ seguente:   ereditarieta
 bozza:      true
 quote:      "Chi vuole capire il computer<br />deve andare nella terra del computer."
 ---
+
 
 <!--
 Noi viviamo prevalentemente sulla terraferma e riteniamo perciò che la

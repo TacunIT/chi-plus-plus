@@ -1,6 +1,7 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      11
 title:      Le classi
 permalink:  /man/classi
 precedente: espressioni-e-operatori
@@ -8,6 +9,8 @@ seguente:   polimorfismo
 bozza:      true
 quote:      ""
 ---
+
+
 
 Funzioni di interfaccia
 -----------------------

@@ -1,6 +1,7 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      1
 title:      Prologo 
 h1:         Prologo
 permalink:  /man/prologo

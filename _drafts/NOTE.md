@@ -1,13 +1,14 @@
-­
+# Note­
+## Appunti da sudividere nei diversi capitoli del Manuale
 
 
 
-ETC
-============
 
 
-\[nota: questi appunti per ora li metto qui, ma poi dovranno essere
-suddivisi per i diversi capitoli\]
+**C'hi/Java**
+> I suspect that the root of many of the differences between C/C++ and Java is that AT&T is primarily a user (a consumer) of computers, languages, and tools, whereas Sun is primarily a vendor of such things.
+Bjarne Stroustrup - http://gotw.ca/publications/c_family_interview.htm
+
 
 Il diluvio universale era solo il passaggio dalla versione beta alla
 1.0. La venuta di Cristo, invece, era un aggiornamento della

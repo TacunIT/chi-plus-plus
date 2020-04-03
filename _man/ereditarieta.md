@@ -1,6 +1,7 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      13
 title:      L'ereditrietà
 permalink:  /man/ereditarieta
 precedente: polimorfismo

@@ -1,6 +1,7 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      6
 title:      I linguaggi di programmazione
 permalink:  /man/linguaggi-di-programmazione
 precedente: sistemi-di-numerazione
@@ -9,7 +10,7 @@ bozza:      false
 quote:      "Tutto è byte."
 ---
 
-Bjarne Stroutsup, o forse Brian Kernigan, disse:
+Brian Kernigan, disse:
 
 <blockquote>
 L'unico modo di apprendere un linguaggio di programmazione è quello

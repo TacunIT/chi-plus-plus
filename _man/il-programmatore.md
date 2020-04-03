@@ -2,14 +2,12 @@
 layout:     manuale
 title:      Il buon programmatore
 class:      capitolo
+index:      4
 permalink:  /man/il-programmatore
 precedente: mitopoietica
 seguente:   sistemi-di-numerazione
 quote:      "È stata una giornata estenuante: questa mattina ho tolto una virgola dal mio codice e stasera ce l'ho rimessa"
-
 ---
-
-
 
 Le principali discipline dell'informatica sono:
 -   la gestione del personale;

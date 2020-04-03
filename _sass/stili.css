@@ -377,17 +377,17 @@ BODY.manuale.copertina MAIN H2 {
 BODY.manuale.dedica MAIN {
     margin: 15vh auto 15vh auto;
 }
-
 BODY.manuale.dedica MAIN P {
     text-align: center;
     max-width: 22rem;
     margin: auto
 }
-
 BODY.manuale.indice H3.bozza A {
     color: #999
 }
-
+BODY.manuale.indice HR {
+    margin: 2rem 0
+}
 BODY.manuale.indice H3 {
     margin: 1rem 0
 }
