@@ -309,15 +309,17 @@ char c = b * 2;
 <p>Il C è un linguaggio estremamente efficiente per gestire tutte le entità che puoi trovare in un computer – numeri, stringhe, flussi di dati –, ma la sua forza è allo stesso tempo il suo limite, perché non funziona altrettanto bene se hai a che fare con oggetti più complessi.<br />
 Anche la gestione delle stringhe di testo, nel C, è rudimentale: se tu provassi a eseguire la somma di cui parla il Maestro Canaro nel suo diario:</p>
 
-<pre>
+<pre><code>#include &lt;stdio.h&gt;
+
 int main (int argc, char** argv)
 {
-    char a[] = "pippo";
-    char b[] = "pluto";
+    char* a = "pippo";
+    char* b = "pluto";
     printf("\npippo+pluto=%s\n", a+b);
     return 0;
 }
-</pre>
+
+</code></pre>
 
 <p>il compilatore C ti avviserebbe che non può sommare due variabili di tipo char.</p>
 
