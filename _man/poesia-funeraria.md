@@ -1,12 +1,13 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      19
 title:      Poesia funeraria del Maestro
 permalink:  /man/poesia-funeraria
 precedente: epilogo
 seguente:   indice
 bozza:      false
-quote:      ""
+quote:      "free(Maestro);"
 ---
 
 Questa è la poesia funeraria del Maestro.

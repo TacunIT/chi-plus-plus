@@ -1,13 +1,13 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      9
 title:      Espressioni e operatori
 permalink:  /man/espressioni-e-operatori
 precedente: tipi-di-dato
 seguente:   funzioni
 bozza:      true
-quote:      "Nel futuro, ognuno sarà famoso per 15 megabytes
-"
+quote:      "question = 2b | ( ! 2b );"
 ---
 
 <!--

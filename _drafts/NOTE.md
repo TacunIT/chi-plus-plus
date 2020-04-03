@@ -1,13 +1,12 @@
-­
+# Note­
+## Appunti da sudividere nei diversi capitoli del Manuale
 
 
 
-ETC
-============
 
 
-\[nota: questi appunti per ora li metto qui, ma poi dovranno essere
-suddivisi per i diversi capitoli\]
+
+
 
 Il diluvio universale era solo il passaggio dalla versione beta alla
 1.0. La venuta di Cristo, invece, era un aggiornamento della

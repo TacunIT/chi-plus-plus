@@ -1,15 +1,16 @@
 ---
 layout:     manuale
 class:      capitolo
+index:      6
 title:      I linguaggi di programmazione
 permalink:  /man/linguaggi-di-programmazione
 precedente: sistemi-di-numerazione
 seguente:   c-plus-plus
 bozza:      false
-quote:      "Tutto è byte"
+quote:      "Tutto è byte."
 ---
 
-Bjarne Stroutsup, o forse Brian Kernigan, disse:
+Brian Kernigan, disse:
 
 <blockquote>
 L'unico modo di apprendere un linguaggio di programmazione è quello
@@ -248,15 +249,9 @@ tutto quello che dovresti fare è di cercare un'altra serie di otto mattonelle l
 Il C è un linguaggio estremamente efficiente per gestire tutte le entità che puoi trovare in un computer – numeri, stringhe, flussi di dati –, ma la sua forza è allo stesso tempo il suo limite, perché non funziona altrettanto bene se hai a che fare con oggetti più complessi.  
 Anche la gestione delle stringhe di testo, nel C, è rudimentale: se tu provassi a eseguire la somma di cui parla il Maestro Canaro nel suo diario:
 
-<pre>
-int main (int argc, char** argv)
-{
-    char a[] = "pippo";
-    char b[] = "pluto";
-    printf("\npippo+pluto=%s\n", a+b);
-    return 0;
-}
-</pre>
+```
+{% include_relative src/6.1-pippopluto.c %}
+```
 
 il compilatore C ti avviserebbe che non può sommare due variabili di tipo char.
 
