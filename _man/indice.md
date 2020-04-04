@@ -21,10 +21,6 @@ permalink:  /man/indice
                 <img src="https://img.shields.io/badge/stato-redazione-orange"  
                      alt="Stato documento: redazione" 
                      class="badge">
-                {% elsif capitolo.bozza %}
-                    <img src="https://img.shields.io/badge/stato-bozza-inactive" 
-                    alt="Stato documento: bozza" 
-                    class="badge">
                 {% endif %}
             </a>
         </h3>
