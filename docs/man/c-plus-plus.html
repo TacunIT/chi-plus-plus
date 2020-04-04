@@ -66,22 +66,7 @@
 
             <section id="testo">
 
-                <p>C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983.
-Il nome <em>C++</em> si riferisce all’operatiore di incremento <code>++</code>:</p>
-
-<pre><code>#include &lt;iostream&gt;
-using namespace std;
-int main(int argc, char** argv)
-{
-    int C = 12;         // dichiara la variabile C 
-    C++;                // incrementa la variabile C
-    cout &lt;&lt; C &lt;&lt; endl;  // stampa il valore di C   
-    return 0;               
-} 
-
-</code></pre>
-
-<p>In uno dei suoi libri, Bjarne Stroustroup definì il C++:</p>
+                <p>In uno dei suoi libri, Bjarne Stroustroup definì il C++:</p>
 
 <blockquote>
   <p>Un linguaggio di programmazione per svolgere compiti non banali.</p>
@@ -90,6 +75,31 @@ int main(int argc, char** argv)
 <p>Fà che si possa dire la stessa cosa di te.</p>
 
 <hr />
+
+<p>C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983.
+Il nome <em>C++</em> si riferisce all’operatiore di incremento <code>++</code>:</p>
+
+<pre><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main(int argc, char** argv)
+{
+    int C = 12;                  
+    cout &lt;&lt; "Valore di C = " &lt;&lt; C &lt;&lt; endl;  
+    C++;                         
+    cout &lt;&lt; "Valore di C = " &lt;&lt; C &lt;&lt; endl; 
+    return 0;               
+} 
+
+</code></pre>
+<p>Se compili ed eseguti questo codice, otterrai:</p>
+
+<pre><code>&gt; g++ 7.1-operatore-incremento.cpp -o ../out/esempio
+&gt; ../out/esempio
+Valore di C = 12
+Valore di C = 13
+</code></pre>
 
 <!--
 

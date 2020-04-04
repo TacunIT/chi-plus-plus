@@ -11,15 +11,6 @@ quote:      "Non chiederti cosa può fare per te il sistema operativo;
 chiediti invece cosa puoi fare tu, per il sistema operativo"
 ---
 
-
-C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983.
-Il nome *C++* si riferisce all'operatiore di incremento `++`:
-
-```
-{% include_relative src/7.1-operatore-incremento.cpp %}
-```
-
-
 In uno dei suoi libri, Bjarne Stroustroup definì il C++: 
 
 > Un linguaggio di programmazione per svolgere compiti non banali. 
@@ -28,6 +19,21 @@ Fà che si possa dire la stessa cosa di te.
 
 ---
 
+
+C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983.
+Il nome *C++* si riferisce all'operatiore di incremento `++`:
+
+```
+{% include_relative src/7.1-operatore-incremento.cpp %}
+```
+Se compili ed eseguti questo codice, otterrai:
+
+```
+> g++ 7.1-operatore-incremento.cpp -o ../out/esempio
+> ../out/esempio
+Valore di C = 12
+Valore di C = 13
+```
 
 <!--
 
