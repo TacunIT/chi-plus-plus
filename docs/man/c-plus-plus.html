@@ -70,19 +70,9 @@
 
             <section id="testo">
 
-                <p>In uno dei suoi libri, Bjarne Stroustroup definì il C++:</p>
-
-<blockquote>
-  <p>Un linguaggio di programmazione per svolgere compiti non banali.</p>
-</blockquote>
-
-<p>Fà che si possa dire la stessa cosa di te.</p>
-
-<hr />
-
-<p>C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983, quando lavorava ai Laboratori Bell della AT&amp;T.
-Dieci anni prima, un suo collega di nome Ritchie aveva creato un linguaggio di programmazione chiamato <em>C</em>. 
-Il C, come ti ho detto, funzionava piuttosto bene se dovevi programmare i computer, ma – così come molti dei tuoi confratelli – non gestiva altrettanto bene le entità della vita reale.</p>
+                <p>C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983, quando lavorava ai Laboratori Bell della AT&amp;T.
+Dieci anni prima, il suo collega Dennis Ritchie aveva creato un linguaggio di programmazione chiamato <em>C</em>. 
+Il C, come ti ho detto, era estremamente efficace se dovevi programmare i computer, ma – così come molti dei tuoi confratelli – non gestiva altrettanto bene le entità della vita reale.  s</p>
 
 <p>Stroustrup, che ai tempi del suo dottorato aveva lavorato con un linguaggio a oggetti chiamato <em>Simula67</em>, pensò che se avesse potuto aggiungere alla velocità di esecuzione del C la possibilità di creare dei nuovi tipi di dato di Simula, avrebbe ottenuto il linguaggio perfetto.
 Aveva ragione.</p>
@@ -112,12 +102,13 @@ Valore di C = 13
 </code></pre>
 
 <p>C++, infatti, non era un nuovo linguaggio: era un C migliorato. 
-Tutto il codice e l’esperienza che erano state fatte fino ad allora sul C potevano essere applicate anche al C++.</p>
+Tutto il codice e l’esperienza che erano state fatte fino ad allora sul C potevano essere applicate anche al C++.
+Questa scelta fece sì che il C++ ebbe quasi da subito un buon successo, diventando il linguaggio object-oriented più utilizzato degli anni ‘90.</p>
 
 <hr />
 
-<p>Le principali caratteristiche aggiunte dal C++ al C sono tre: la programmazone a oggetti, l’astrazone dei dati e la “generic programming”.<br />
-Tranquillo, ché adessso ti spiego tutto.</p>
+<p>Le principali novità aggiunte dal C++ al C sono tre: la programmazone a oggetti, l’astrazone dei dati e la “generic programming”.<br />
+Tranquillo; adessso ti spiego tutto.</p>
 
 <p>I tipi di dato del C sono:</p>
 
@@ -128,7 +119,7 @@ Tranquillo, ché adessso ti spiego tutto.</p>
 
 <p>Perché un linguaggio di programmazione possa gestire con la stessa facilità un flusso di dati, un utente, una linea telefonica o anche un allevamento di conigli, è necessario che oltre ai tipi di dato predefiniti, possa gestire anche delle nuove entità definite dal programmatore.</p>
 
-<p>Questo, il C++ lo ottiene per mezzo delle <em>classi</em>.
+<p>Questa è quella che si chiama <em>data abstraction</em> e il C++ la ottiene per mezzo delle <em>classi</em>.
 Le classi sono la rappresentazione di un’entità o di un concetto all’interno del codice:</p>
 
 <pre><code>class Coniglio {
@@ -136,8 +127,19 @@ private:
     string _razza;
     char   _sesso;
 public:
-    Coniglio(const char* razza, char sesso);
-}    
+    Coniglio();
+};
+
+typedef time_t Data;
+
+class Accoppiamento {
+private:
+    Coniglio _maschio;
+    Coniglio _femmina;
+    Data     _giorno;
+public:
+    Accoppiamento();
+};
 </code></pre>
 
 <!--
@@ -199,6 +201,16 @@ Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l'Ebrai
 
 
 -->
+
+<hr />
+
+<p>In uno dei suoi libri, Bjarne Stroustroup definì il C++:</p>
+
+<blockquote>
+  <p>Un linguaggio di programmazione per svolgere compiti non banali.</p>
+</blockquote>
+
+<p>Fà che si possa dire la stessa cosa di te.</p>
 
 
             </section>

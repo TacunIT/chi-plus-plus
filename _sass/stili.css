@@ -15,24 +15,11 @@
     font-size: 1.2rem;
     font-weight: bold;
 }
-.grayscale {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-}
-.bianconero {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-}
 
 .box {
     font-size: 0;
     position: relative;
     display: inline-block;
-}
-
-.fa {
-    margin-left: 0.25rem;
-    color: #888
 }
 
 .left {
@@ -77,13 +64,13 @@ HR:before {
  content: '氣';
 }
 CODE, PRE {
+    background-color: $codeBackground;
     text-align: left;
-    background-color: #e4e6c1;
     font-size: 10pt;
     font-family: Monaco;
 }
 EM, I {
-    color: #555;
+    color: $colorGold;
     font-size: inherit;
 }
 P {
@@ -98,11 +85,11 @@ P CODE {
     padding: 0 0.25rem;
 }
 A {
-    color: #333;
+    color: $aColor;
 }
 A.nota {
     font-size: 0.8rem;
-    color: #990;
+    color: $colorGold;
     text-decoration: underline;
     vertical-align: super;
     display: inline-block;
@@ -128,7 +115,7 @@ IMG.badge {
 }
 TABLE, TD, TR, TH {
     border-collapse: collapse;
-    border: solid 1px #CCC;
+    border: solid 1px $borderColor;
     padding: 0.25rem 0.5rem;
     margin: 1rem 0;
     font-size: 11pt;   
@@ -147,7 +134,7 @@ TABLE.memoria TD {
     height: 20px;
 }
 TABLE.memoria TD.area {
-    background: #aaa;
+    background: $tdAreaBackground;
 }
 
 
@@ -157,7 +144,7 @@ TABLE.memoria TD.area {
  *
  */
 BODY {
-    background-color: $backgroundColor;
+    background-color: $bodyBackground;
     color: $bodyColor;
     font-family: $bodyFont;
     font-size: $bodyFontSize;
@@ -208,7 +195,7 @@ NAV {
      border-top: solid 1px;
      display: inline-block;
      border-bottom: solid 1px;
-     border-color: #990;
+     border-color: $colorGold;
      width: 100%;
      font-size: 0;
 }
@@ -245,7 +232,7 @@ MAIN P+P {
 }
 
 MAIN.bozza {
-    background-color: #c1e3e6;;
+    background-color: $bozzaBackground;
     padding: 5rem 1rem;
 }
 
@@ -269,13 +256,13 @@ MAIN P.immagine.chi {
 }
 
 MAIN P.immagine IMG {
-    border: solid 1px #999;
+    border: solid 1px $borderColor;
     text-align: center;
     max-width: 100%;
 }
 
 MAIN BLOCKQUOTE {
-    color: #444;
+    color: $blockquoteColor;
     text-align: left;
     font-size: 14pt;
     padding: 1em;
@@ -356,11 +343,6 @@ BODY.manuale HEADER DIV.box.titoli {
     width: 100%;    
 }
 
-BODY.manuale HEADER DIV.box.titoli SPAN {
-    font-size: 10pt;
-    color: #999;
-}
-
 BODY.manuale HEADER NAV.menu-top {
     border: none;
 }
@@ -389,7 +371,7 @@ BODY.manuale.dedica MAIN P {
     margin: auto
 }
 BODY.manuale.indice H3.bozza A {
-    color: #999
+    color: $bozzaAColor;
 }
 BODY.manuale.indice HR {
     margin: 2rem 0
@@ -437,7 +419,7 @@ BODY.manuale MAIN PRE {
 }
 
 BODY.manuale MAIN P A {
-    color: #990;
+    color: $colorGold;
 }
 
 BODY.manuale MAIN UL {
@@ -446,11 +428,11 @@ BODY.manuale MAIN UL {
 }
 
 BODY.manuale BLOCKQUOTE.incluso {
- color: #543;
- text-align: justify;
- padding: 1rem;
- background: #e4e6c1;
- margin: 1rem 0;
+    color: $inclusoColor;
+    text-align: justify;
+    padding: 1rem;
+    background-color: $inclusoBackground;
+    margin: 1rem 0;
 }
 
 BODY.manuale BLOCKQUOTE.motto {
