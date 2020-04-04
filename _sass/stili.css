@@ -123,6 +123,9 @@ OL {
     padding: 0 2rem;
     margin: 1rem 0;
 }
+IMG.badge {
+    height: 1.2rem;
+}
 TABLE, TD, TR, TH {
     border-collapse: collapse;
     border: solid 1px #CCC;
@@ -392,7 +395,8 @@ BODY.manuale.indice HR {
     margin: 2rem 0
 }
 BODY.manuale.indice H3 {
-    margin: 1rem 0
+    margin: 1rem 0;
+    position: relative;
 }
 
 BODY.manuale.indice H3.home {
@@ -407,6 +411,13 @@ BODY.manuale.indice MAIN {
 BODY.manuale.indice IMG.logo {
     width: 100px;
     margin: auto
+}
+
+BODY.manuale.indice IMG.badge
+{
+    position: absolute;
+    top: 0.25rem;
+    margin-left: 1rem;
 }
 
 BODY.manuale.indice SECTION.indice {
