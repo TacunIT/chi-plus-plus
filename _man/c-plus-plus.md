@@ -19,8 +19,14 @@ Fà che si possa dire la stessa cosa di te.
 
 ---
 
+C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983, quando lavorava alla AT&T.
+Dieci anni prima, un suo collega di nome Ritchie aveva creato un linguaggio di programmazione chiamato *C*. 
+Il C, come ti ho detto, funzionava piuttosto bene se dovevi programmare i computer, ma – così come molti dei tuoi confratelli – non gestiva altrettanto bene le entità della vita reale.  
+I tipi di dato del C sono
 
-C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983.
+    char, int, float, double, array, enum, struct, union
+
+
 Il nome *C++* si riferisce all'operatiore di incremento `++`:
 
 ```
