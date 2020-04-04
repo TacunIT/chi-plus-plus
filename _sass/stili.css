@@ -224,7 +224,8 @@ MAIN {
     margin: auto;
     text-align: justify;
     position: relative;
-    padding-top: 1rem
+    padding-top: 1rem;
+    line-height: 1.5;
 }
 
 MAIN P+P {
@@ -247,8 +248,8 @@ MAIN.bozza::before {
 }
 
 MAIN P.immagine {
-margin: 1rem auto;
-text-align: center
+    margin: 1rem auto;
+    text-align: center
 }
 
 MAIN P.immagine.chi {
@@ -266,7 +267,8 @@ MAIN BLOCKQUOTE {
     text-align: left;
     font-size: 14pt;
     padding: 1em;
-    font-style: italic
+    font-style: italic;
+    line-height: 1.5;
 }
 
 /**
@@ -415,7 +417,7 @@ BODY.manuale MAIN PRE {
     display: block;
     padding: 1rem;
     margin: 1rem 0;
-    white-space: pre-wrap;
+    overflow: auto;
 }
 
 BODY.manuale MAIN P A {

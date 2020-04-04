@@ -107,7 +107,7 @@ Questa scelta fece sì che il C++ ebbe quasi da subito un buon successo, diventa
 
 <hr />
 
-<p>Le principali novità aggiunte dal C++ al C sono tre: la programmazone a oggetti, l’astrazone dei dati e la “generic programming”.<br />
+<p>Le principali novità aggiunte dal C++ al C sono tre: l’astrazione dei dati, la programmazone a oggetti e la “generic programming”.<br />
 Tranquillo; adessso ti spiego tutto.</p>
 
 <p>I tipi di dato del C sono:</p>
@@ -142,49 +142,101 @@ public:
 };
 </code></pre>
 
-<!--
+<p>Grazie alle classi, il programmatore può creare dei nuovi tipi di dato e
+utilizzarli all’interno del suo programma nello stesso modo in cui
+utilizzerebbe i tipi di dato primitivi del linguaggio.</p>
 
+<p>Ciascuna classe ha degli <em>attributi</em> e dei <em>metodi</em>.
+Gli <em>attributi</em> sono dei dati che descrivono le caratteristiche della classe, per esempio, la razza o il sesso di un coniglio.
+I <em>metodi</em> sono delle funzioni che definiscono il modo in cui la classe può reagire agli stimoli esterni.
+Nelle classi dell’esempio vedi solo una di queste funzioni: è quella che ha lo stesso nome della classe e si chiama <em>costruttore</em> della classe, perché “spiega” al compilatore come debbano essere creati gli oggetti di questa classe.</p>
 
-Il C++ rappresenta le entità reali per mezzo degli oggetti.
+<p>Le classi, però, sono la ricetta, non sono la pietanza. 
+Per poter essere utilizzate, le classi devono essere <em>istanziate</em> negli oggetti:</p>
 
-Le caratteristiche delle entità sono descritte dagli attributi degli
-oggetti.
+<pre><code>int main()
+{
+    Coniglio jessica("angora", femmina);
+    Coniglio roger("martora", maschio);    
+    Accoppiamento copula(roger, jessica);
+    cout &lt;&lt; copula &lt;&lt; endl;
+    return 0;               
+}
+</code></pre>
 
-Il modo in cui gli oggetti reagiscono agli stimoli esterni è descritto
-dai metodi.
+<p><code>Jessica</code>, <code>Roger</code> e <code>copula</code> sono tre oggetti.
+I primi due sono istanze della classe <em>Coniglio</em>, il terzo è un’istanza della classe <em>Accoppiamento</em>.</p>
 
-Perché un linguaggio di programmazione possa dirsi orientato agli
-oggetti deve possedere tre caratteristiche: le classi, l'ereditarietà e
-il polimorfismo.
+<p>Se aggiungi un po’ di codice alle classi che abbiamo visto prima e compili il programma, otterrai:</p>
 
-Le classi sono i prototipi degli oggetti e ne definiscono le
-caratteristiche distintive. Le caratteristiche fisiche degli oggetti
-sono quantificate dagli attributi della classe; le caratteristiche
-comportamentali sono descritte dai metodi.
+<pre><code>% g++ 7.2-esempio-conigli.cpp -o ../out/esempio 
+% ../out/esempio                
+Data:Sat Apr  4 20:11:59 2020
+MASCHIO: Specie:coniglio, Sesso:m, Razza:martora
+FEMMINA: Specie:coniglio, Sesso:f, Razza:angora
+</code></pre>
 
-Grazie alle classi, il programmatore può creare dei nuovi tipi di dato e
-utilizzarli all\'interno del suo programma nello stesso modo in cui
-utilizzerebbe i tipi di dato primitivi del linguaggio.
+<p>Perché un linguaggio di programmazione possa dirsi orientato agli
+oggetti, però, oltre alle classi deve poter gestire l’<em>ereditarietà</em> e
+il <em>polimorfismo</em>.</p>
 
-L'ereditarietà permette di definire dei nuovi tipi di dato come
-estensione dei tipi di dato esistenti. 
+<p>L’<em>ereditarietà</em> permette di definire dei nuove classi come
+estensione di classi esistenti:</p>
 
-L'ereditarietà può essere o singola o multipla.
+<pre><code>class Animale {
+private:
+    string _razza;
+    string _specie;
+    Sesso  _sesso;
+public:
+    Animale() {}
+    Animale(const char* specie
+           ,const char* razza
+           ,const Sesso sesso) {
+        _specie = specie;
+        _razza  = razza;
+        _sesso  = sesso;
+    }
+};
 
-Quando una nuova classe deriva da un'unica classe base, l'ereditarietà
-viene detta singola; se invece una classe deriva da due o più classi
-base, l'ereditarietà viene detta multipla. 
+class Coniglio : public Animale {
+public:
+    Coniglio() {}
+    Coniglio(const char* razza, const Sesso sesso )
+    : Animale("coniglio", razza, sesso ) { 
+    }
+};
 
-Alcuni linguaggi di programmazione permettono solo l'ereditarietà
-singola; il C++ permette entrambe le tipologie.
+</code></pre>
 
-Per polimorfismo si intende la capacità di una funzione o di un
+<p>Nell’esempio qui sopra, abbiamo prima definito una classe <em>Animale</em>, che ha tre attributi: la <em>specie</em>, lal <em>razza</em> e il <em>sesso</em>; poi abbiamo definito una classe <em>Coniglio</em>, derivandola dalla classe <em>Animale</em>.
+In questo modo, se oltre ai conigli il nostro programma dovesse gestire anche altri animali, non dovremmo ripetere in ciascuna classe le stesse istruzioni, ma potremmo utilizzare quelle della classe base:</p>
+
+<pre><code>class Mucca : public Animale {
+public:
+    Mucca() {}
+    Mucca(const char* razza, const Sesso sesso )
+    : Animale("mucca", razza, sesso ) { 
+    }
+};
+
+class Gallina : public Animale {
+public:
+    Gallina() {}
+    Gallina(const char* razza, const Sesso sesso )
+    : Animale("gallina", razza, sesso ) { 
+    }
+};
+
+</code></pre>
+
+<p>Per <em>polimorfismo</em> si intende la capacità di una funzione o di un
 operatore di svolgere il proprio compito indipendentemente dal tipo di
-dato che deve gestire.
+dato che deve gestire.</p>
 
-Quando il programmatore definisce un nuovo tipo di dato per mezzo di una
-o più classi, può allo stesso tempo istruire le funzioni e gli operatori
-del linguaggio ad utilizzarlo correttamente.
+<p>Vedremo tutto questo in seguito, ora non voglio complicarti troppo le idee.</p>
+
+<!--
 
 Suppongo che a questo punto tu sia un po\' confuso, ma non dipende dalla
 complessità dalle mie enunciazioni.
