@@ -10,14 +10,14 @@ og_img:     "/assets/img/chi-plus-plus.png"
 og_img_w:   "300"
 keyword:    "C'hi, C++, c plus plus, religione, open-source"    
 exclude: [
-    bin
-  , src
-  , CHANGELOG
-  , CONTRIBUTING.md
-  , MANIFEST.md
-  , README.md
-  , TODO
-  , VERSION
+    'bin'
+  , 'src'
+  , 'CHANGELOG'
+  , 'CONTRIBUTING.md'
+  , 'MANIFEST.md'
+  , 'README.md'
+  , 'TODO'
+  , 'VERSION'
 ]
 sass:
   style: compressed

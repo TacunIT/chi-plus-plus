@@ -17,6 +17,11 @@ permalink:  /man/indice
         <h3 {% if capitolo.bozza %}class="bozza"{% endif %} >
             <a href="{{ capitolo.url }}">
                 {{ capitolo.title }}
+                {% if capitolo.redazione %}
+                <img src="https://img.shields.io/badge/stato-redazione-orange"  
+                     alt="Stato documento: redazione" 
+                     class="badge">
+                {% endif %}
             </a>
         </h3>
         {% if capitolo.title == 'Epilogo' %}

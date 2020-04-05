@@ -26,12 +26,12 @@ determinate operazioni.
 Perché il computer possa ubbidirci, deve "capire" che tipo di entità deve gestire e che tipo di operazioni deve compiere su di esse.
 Per esempio, se chiedessimo al computer di raddoppiarci lo stipendio, il computer dovrebbe sapere almeno a quanto ammonta il nostro stipendio e come funziona una moltiplicazione per due.
 
-<pre>
+```
 long raddoppia(long stipendio)
 {
     return stipendio * 2;
 }
-</pre>
+```
 
 Siccome l'unica cosa che il computer conosce sono delle sequenze di 1 e di 0 
 – siano esse su un disco, in memoria o sulla porta di comunicazione della 
@@ -65,25 +65,25 @@ Il sistema operativo non lo può vedere o sentire, ma conosce i suoi dati anagra
 La CPU non sa nulla di lui: gestisce i suoi dati, ma non sa cosa siano.
 Può elaborare la sequenza di byte:
 
-<pre>
+```
 01000011 
 01100001 
 01101110 
 01100001 
 01110010 
 01101111
-</pre>
+```
 
 ma non sa che è il nome: *Canaro*.
 In effetti, non sa nemmeno cosa sia, la parola: *nome*.
 Per lui è solo la sequenza di byte:
 
-<pre>
+```
 01001110 
 01101111 
 01101101 
 01100101
-</pre>
+```
 
 Invertendo questi concetti, una volta il Maestro Canaro disse:
 
@@ -161,9 +161,9 @@ I principii sono importanti, perché danno robustezza al linguaggio.
 Il linguaggio C, da cui è derivato il C++, non ha principii: è solo un modo per descrivere gli eventi all'interno di un computer.
 L'istruzione:
 
-<pre>
+```
 char b = 23;
-</pre>
+```
 
 è un modo per dire al computer:
 
@@ -205,9 +205,9 @@ Le prime diciassette mattonelle sono occupate, ma dalla diciottesima alla ventic
 La variabile *b*, a questo punto, avrà un *indirizzo*, ovvero il numero della prima mattonella (18) e un *valore*, ovvero il numero binario contenuto nelle otto mattonelle (23).  
 Se l'istruzione successiva fosse:
 
-<pre>
+```
 char c = b * 2;
-</pre>
+```
 
 tutto quello che dovresti fare è di cercare un'altra serie di otto mattonelle libere in cui scrivere il valore della variabile *b* spostato verso sinistra di una mattonella:
 
@@ -255,11 +255,14 @@ Anche la gestione delle stringhe di testo, nel C, è rudimentale: se tu provassi
 
 il compilatore C ti avviserebbe che non può sommare due variabili di tipo char.
 
-<pre>
-pippopluto.c:7:35: error: invalid operands to binary expression ('char []' and 'char []')
+```
+% gcc 6.1-pippopluto.c -o ../out/esempio; 
+6.1-pippopluto.c:7:35: error: invalid operands to binary expression ('char *' and 'char *')
     printf("\npippo+pluto=%s\n", a+b);
                                  ~^~
-</pre>
+1 error generated.
+``````
+
 
 In altre parole, il C è un linguaggio che non va oltre l'ambito per cui è stato creato.
 È una convenzione.
