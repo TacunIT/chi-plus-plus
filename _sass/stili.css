@@ -354,6 +354,7 @@ BODY.manuale FOOTER {
 
 BODY.manuale.copertina MAIN {
     text-align: center;
+    margin-top: 10%;
 }
 
 BODY.manuale.copertina MAIN IMG {
@@ -365,7 +366,7 @@ BODY.manuale.copertina MAIN H2 {
 }
 
 BODY.manuale.dedica MAIN {
-    margin: 15vh auto 15vh auto;
+    margin: 20vh auto;
 }
 BODY.manuale.dedica MAIN P {
     text-align: center;
