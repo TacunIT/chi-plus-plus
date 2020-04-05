@@ -69,10 +69,10 @@ I file del progetto sono suddivisi nelle seguenti directory:
 
 | Nome  | Contenuto
 |---|---|
-|**bin**| programmi eseguibili per la gestione del progetto; al momento, solo lo script per il cambio di versione git.
+|**bin**| programmi eseguibili per la gestione del progetto.
 | **docs** | file per la pubblicazione del progetto su Github Pages [https://chiplusplus.org/](https://chiplusplus.org/).
 | **img** | contiene i file immagine del progetto.
-| **man** | contiene il testo Markdown di [**C'hi++**](man/)
+| **_man** | contiene il testo Markdown di [**C'hi++**](_man/)
 | **src** | file "sorgenti" del progetto, siano essi degli script in C++ (*src/cpp*) o i file in formato Markdown dei testi (*src/doc*).
 
 I file [CHANGELOG](CHANGELOG.md) e VERSION sono utilizzati per il controllo di versione con Git.

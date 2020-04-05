@@ -1,3 +1,12 @@
+
+## 0.8.23 (April 05, 2020)
+  - Completata prima stesura capitolo C++
+  - Aggiunta nota a MANIFEST
+  - Corretti stili Proposta
+  - Aggiunte frecce di navigazioe all footer del Manuale
+  - Spostati tutti i colori del CSS nel file screen.scss
+  - Modificato menu Manuale
+
 ## 0.8.22 (April 03, 2020)
   - Rivista struttura delle directory per includere direttamente gli script .cpp nel testo del Manuale
   - Aggiornato file TODO
