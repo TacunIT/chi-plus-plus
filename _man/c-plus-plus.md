@@ -6,10 +6,9 @@ title:      Il C++
 permalink:  /man/c-plus-plus
 precedente: linguaggi-di-programmazione
 seguente:   commenti
-bozza:      true
+bozza:      false
 quote:      "Non chiederti cosa può fare per te il sistema operativo;
 chiediti invece cosa puoi fare tu, per il sistema operativo"
-redazione:  true
 ---
 
 
@@ -120,15 +119,15 @@ Per poter essere utilizzate, le classi devono essere *istanziate* negli oggetti:
 ```
 int main()
 {
-    Cavallo lui("lipizzano", maschio);    
-    Cavallo lei("maremmano", femmina);
-    Monta   monta(lui, lei);
+    Cavallo stallone("lipizzano", maschio);    
+    Cavallo giumenta("maremmano", femmina);
+    Monta   monta(stallone, giumenta);
     cout << monta << endl;
     return 0;               
 }
 ```
 
-`lui`, `lei` e `monta` sono tre oggetti.
+`stallone`, `giumenta` e `monta` sono tre oggetti.
 I primi due sono istanze della classe *Cavallo*, il terzo è un'istanza della classe *Monta*.
 
 Se aggiungi un po' di codice alle classi che abbiamo visto prima e compili il programma, otterrai:
@@ -266,7 +265,7 @@ int main()
     Monta puledro(cavallo, giumenta);
     Monta ciuco(asino, asina);
     Monta mulo(asino, giumenta);
-    Monta bardotto(asina, cavallo);
+    Monta bardotto(cavallo, asina);
 
     cout << "PULEDRO\n"  << puledro  << endl;
     cout << "CIUCO\n"    << ciuco    << endl;
@@ -290,7 +289,7 @@ FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
 CIUCO
 DATA: Sun Apr  5 12:33:45 2020
 MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
-FEMMINA: Specie:Asino	Razza:sardo	Sesso:f
+FEMMINA: Specie:Asino	Razza:sardo	    Sesso:f
 
 MULO
 DATA: Sun Apr  5 12:33:45 2020
@@ -299,14 +298,169 @@ FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
 
 BARDOTTO
 DATA: Sun Apr  5 12:33:45 2020
-MASCHIO: Specie:Asino	Razza:sardo	Sesso:f
+MASCHIO: Specie:Asino	Razza:sardo	    Sesso:f
 FEMMINA: Specie:Cavallo	Razza:lipizzano	Sesso:m
 ```
 
 ---
 
-Queste caratteristche del C++ decretarono il suo successo, facendolo diventare il linguaggio *object-oriented* più utilizzato degli anni '90.  
-L'avvento, alla fine del Secolo, di quell'*altro* linguggio, quello che ha bisogno di un sistema di *garbage collecion* per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un'idea di quello che sarebbe stati il millennio che ci si presentava davanti.  
+Il codice che abbiamo utilizzato per mostrare il risultato degli accoppiamenti:
+
+```
+Monta puledro(cavallo, giumenta);
+Monta ciuco(asino, asina);
+Monta mulo(asino, giumenta);
+Monta bardotto(asina, cavallo);
+
+cout << "PULEDRO\n"  << puledro  << endl;
+cout << "CIUCO\n"    << ciuco    << endl;
+cout << "MULO\n"     << mulo     << endl;
+cout << "BARDOTTO\n" << bardotto << endl;
+```
+
+non è il massimo dell'efficienza, sia perché potremmo sbagliarci ad accoppiare la specie dei genitori con il nome del figlio, sia perché le istruzioni devono essere ripetute per ciascun oggetto. 
+Per risolvere il primo difetto possiamo aggiungere alla classe *Monta* un attributo e un metodo per definire autonomamente che tipo di genia venga prodotta dalla copula:
+
+```
+string   _esito;
+void setEsito() {
+    if(strcmp(_maschio->getSpecie(),"Asino") == 0) {
+        if(strcmp(_femmina->getSpecie(),"Asino") == 0){
+            _esito = "asino";
+        } else {
+            _esito = "mulo";
+        } 
+    } else {        
+        if(strcmp(_femmina->getSpecie(),"Cavallo") == 0) {
+            _esito = "puledro";
+        } else {
+            _esito = "bardotto";
+        } 
+    }
+}
+```
+
+ma anche così dovremo comunque riscrivere quattro righe di codice per modificare l'output del programma: un approccio inaccettabile per i sistemi di produzione, dove le entità da gestire possono essere migliaia.
+
+Possiamo risolvere questo problema grazie alla *generic programming* e al modo in cui viene implementata nel C++:le classi *template*:
+
+```
+template < class T> class list;
+```
+
+La classe *list* è una delle classi *template* del C++ e permette di inserire, rimuovere, spostare, unire, ordinare ed elencare una lista di oggetti di una stessa classe.
+
+La sintassi per creare una lista di oggetti di classe *Monta* è:
+
+```
+list<Monta> monte;
+```
+
+Fatto ciò, possiamo aggiungere elementi alla nostra lista con la funzione *push_back()*:
+
+```
+monte.push_back(Monta(cavallo, giumenta)); 
+monte.push_back(Monta(asino, asina));       
+monte.push_back(Monta(asino, giumenta));     
+monte.push_back(Monta(cavallo, asina));
+```
+
+Per visualizzare il contenuto della lista, indipendentemtente dal numero di elementi, basta l'istruzione:
+
+```
+for (list<Monta>::iterator it=monte.begin(); it!=monte.end(); it++) {
+    cout << *it << endl;
+}
+```
+
+La funzione *main()* del nostro programma sarà quindi:
+
+```
+int main()
+{
+    Animale* cavallo  = new Cavallo("lipizzano", maschio);    
+    Animale* giumenta = new Cavallo("maremmano", femmina);    
+    Animale* asino    = new Asino("amiatino", maschio);
+    Animale* asina    = new Asino("sardo", femmina);
+    list<Monta> monte;
+    monte.push_back(Monta(cavallo, giumenta)); 
+    monte.push_back(Monta (asino, asina));       
+    monte.push_back(Monta (asino, giumenta));     
+    monte.push_back(Monta (cavallo, asina));
+    for (list<Monta>::iterator it=monte.begin(); 
+         it!=monte.end(); it++) {
+        cout << *it << endl;
+    }
+    return 0;               
+}
+```
+
+e l'output che otterremo è:
+
+```
+$ g++ 7.5-esempio-template.cpp -o ../out/esempio
+% ../out/esempio                                
+DATA:    Sun Apr  5 16:19:24 2020
+MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+ESITO:   puledro
+
+DATA:    Sun Apr  5 16:19:24 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Asino	Razza:sardo	Sesso:f
+ESITO:   asino
+
+DATA:    Sun Apr  5 16:19:24 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+ESITO:   mulo
+
+DATA:    Sun Apr  5 16:19:24 2020
+MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FEMMINA: Specie:Asino	Razza:sardo     Sesso:f
+ESITO:   bardotto
+```
+
+Se volessimo per qualche motivo invertire l'ordine degli elementi nella lista, tutto quello che dovremmo dare è di aggiungere prima del ciclo *for* l'istruzione:
+
+
+```
+monte.reverse();
+```
+
+e l'output che otteremmo è:
+
+```
+% g++ 7.5-esempio-template.cpp -o ../out/esempio
+% ../out/esempio                                
+DATA:    Sun Apr  5 17:08:27 2020
+MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FEMMINA: Specie:Asino	Razza:sardo	Sesso:f
+ESITO:   bardotto
+
+DATA:    Sun Apr  5 17:08:27 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+ESITO:   mulo
+
+DATA:    Sun Apr  5 17:08:27 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Asino	Razza:sardo     Sesso:f
+ESITO:   asino
+
+DATA:    Sun Apr  5 17:08:27 2020
+MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+ESITO:   puledro
+
+```
+
+Oltre alle classi predefinite, il C++ permette di definire le proprie classi template, ma di questo parleremo a tempo debito.  
+
+---
+
+Queste caratteristche e soprattutto la compatibilità con il codice scritto in C, fecero di C++ il linguaggio *object-oriented* più utilizzato degli anni '90.  
+L'avvento, alla fine del Secolo, del linguaggio con la "J", quello che ha bisogno di un sistema di *garbage collecion* per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un'idea di quello che sarebbe stato il millennio che ci si presentava davanti.  
 Non a caso, Stroustrsup disse:
 
 > I suspect that the root of many of the differences between C/C++ and Java is that AT&T is primarily a user (a consumer) of computers, languages, and tools, whereas Sun is primarily a vendor of such things.

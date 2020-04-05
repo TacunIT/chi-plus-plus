@@ -69,9 +69,9 @@ public:
 
 int main()
 {
-    Cavallo lui("lipizzano", maschio);    
-    Cavallo lei("maremmano", femmina);
-    Monta monta(lui, lei);
+    Cavallo stallone("lipizzano", maschio);    
+    Cavallo giumenta("maremmano", femmina);
+    Monta monta(stallone, giumenta);
     cout << monta << endl;
     return 0;               
 }
