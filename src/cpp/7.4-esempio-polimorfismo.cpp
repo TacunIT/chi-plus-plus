@@ -15,7 +15,7 @@ private:
     string _razza;
     Sesso  _sesso;
 public:
-    const char* getSpecie() const {
+    virtual const char* getSpecie() const {
         return ""; 
     } 
     const char getSesso() const {        
@@ -32,8 +32,8 @@ public:
 };
 
 ostream& operator << (ostream& os, const Animale& animale) {
-    os  << "Specie:" << animale.getSpecie() << ", "
-        << "Razza:"  << animale.getRazza()  << ", "
+    os  << "Specie:" << animale.getSpecie() << "\t"
+        << "Razza:"  << animale.getRazza()  << "\t"
         << "Sesso:"  << animale.getSesso()  << endl;
     return os;   
 }
@@ -59,19 +59,19 @@ public:
     }
 };
 
-class Accoppiamento {
+class Monta {
 private:
     Animale* _maschio;
     Animale* _femmina;
     Data     _giorno;
 public:
-    Accoppiamento(Animale* maschio, Animale* femmina) {
+    Monta(Animale* maschio, Animale* femmina) {
         _maschio = maschio;
         _femmina = femmina;
         time(&_giorno);
     }
-    friend ostream& operator << (ostream& os, const Accoppiamento& copula) {
-        os << "Data: "    << asctime(localtime(&copula._giorno)) 
+    friend ostream& operator << (ostream& os, const Monta& copula) {
+        os << "DATA: "    << asctime(localtime(&copula._giorno)) 
            << "MASCHIO: " << *copula._maschio 
            << "FEMMINA: " << *copula._femmina;
            return os;   
@@ -80,10 +80,20 @@ public:
 
 int main()
 {
-    Data data;
-    Animale* lui = new Cavallo("lipizzano", maschio);    
-    Animale* lei = new Asino("amiatino", femmina);
-    Accoppiamento copula(lui, lei);
-    cout << copula << endl;
+    Animale* cavallo  = new Cavallo("lipizzano", maschio);    
+    Animale* giumenta = new Cavallo("maremmano", femmina);    
+    Animale* asino    = new Asino("amiatino", maschio);
+    Animale* asina    = new Asino("sardo", femmina);
+
+    Monta puledro(cavallo, giumenta);
+    Monta ciuco(asino, asina);
+    Monta mulo(asino, giumenta);
+    Monta bardotto(asina, cavallo);
+
+    cout << "PULEDRO\n"  << puledro  << endl;
+    cout << "CIUCO\n"    << ciuco    << endl;
+    cout << "MULO\n"     << mulo     << endl;
+    cout << "BARDOTTO\n" << bardotto << endl;
+
     return 0;               
 }

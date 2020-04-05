@@ -43,14 +43,14 @@ Valore di C = 13
 ```
 
 C++, infatti, non era un nuovo linguaggio: era un C migliorato. 
-Tutto il codice e l'esperienza che erano state fatte fino ad allora sul C potevano essere applicate anche al C++.
-Questa scelta fece sì che il C++ ebbe quasi da subito un buon successo,   diventando il linguaggio object-oriented più utilizzato degli anni '90.
-
-L'avvento, alla fine del Secolo, di quell'*altro* linguggio, quello che ha bisogno di un sistema di *garbage collecion* per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un'idea di quello che sarebbe stati il millennio che ci si presentava davanti.
+Tutto il codice e l'esperienza che erano state fatte fino ad allora sul C potevano essere applicate anche al C++.  
+<!--
+Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l'Ebraismo: prese una religione spartana, adatta per un popolo in fuga nel deserto e la  migliorò, rendendola meno autoritaria.
+-->
 
 ---
 
-Le principali novità aggiunte dal C++ al C sono tre: l'astrazione dei dati, la programmazone a oggetti e la “generic programming”.  
+Le principali novità aggiunte dal C++ al C sono: l'*astrazione dei dati*, la *programmazone a oggetti* e la *generic programming*.  
 Adessso ti spiego cosa sono, ma tu non preoccuparti se non capisci: approfondiremo tutti questi concetti in seguito. 
 
 I tipi di dato del C sono:
@@ -90,13 +90,13 @@ public:
 o di un concetto:
 
 ``` 
-class Accoppiamento {
+class Monta {
 private:
     Cavallo _maschio;
     Cavallo _femmina;
     Data     _giorno;
 public:
-    Accoppiamento(Cavallo& maschio, Cavallo& femmina) {
+    Monta(Cavallo& maschio, Cavallo& femmina) {
         _maschio = maschio;
         _femmina = femmina;
         time(&_giorno);
@@ -122,14 +122,14 @@ int main()
 {
     Cavallo lui("lipizzano", maschio);    
     Cavallo lei("maremmano", femmina);
-    Accoppiamento monta(lui, lei);
+    Monta   monta(lui, lei);
     cout << monta << endl;
     return 0;               
 }
 ```
 
 `lui`, `lei` e `monta` sono tre oggetti.
-I primi due sono istanze della classe *Cavallo*, il terzo è un'istanza della classe *Accoppiamento*.
+I primi due sono istanze della classe *Cavallo*, il terzo è un'istanza della classe *Monta*.
 
 Se aggiungi un po' di codice alle classi che abbiamo visto prima e compili il programma, otterrai:
 
@@ -194,29 +194,120 @@ public:
 };
 ```
 
-Per *polimorfismo* si intende la capacità di una funzione o di un
-operatore di svolgere il proprio compito indipendentemente dal tipo di
-dato che deve gestire.
+A questo punto, la tua sagacia dovrebbe averti fatto rilevare un possibile problema (posto che tu sia sveglio, cosa di cui non sono del tutto certo): la classe *Monta* può gestire solo oggetti di tipo *Cavallo*.
 
+Un linguaggio che non gestisca il *polimorfismo* ci costringerebbe a scrivere due nuove classi: una per i muli e una per i bardotti:
 
+```
+class MontaMulo {
+private:
+    Asino   _maschio;
+    Cavallo _femmina;
+    Data     _giorno;
+public:
+    MontaMulo(Asino& maschio, Cavallo& femmina) {
+        _maschio = maschio;
+        _femmina = femmina;
+        time(&_giorno);
+    }
+};
 
-Vedremo tutto questo in seguito, ora non voglio complicarti troppo le idee.
+class MontaBardotto {
+private:
+    Cavallo _maschio;
+    Asino   _femmina;
+    Data     _giorno;
+public:
+    Monta(const Cavallo& maschio, const Asino& femmina) {
+        _maschio = maschio;
+        _femmina = femmina;
+        time(&_giorno);
+    }
+};
+```
 
+Aristotele sostiene che
 
-<!--
+> le scienze che derivano da un numero minore di premesse sono più rigorose delle scienze che ne discendono per mezzo dell’aggiunta di nuove premesse
+<!-- Aristotele. La metafisica (Italian Edition) . UTET. Kindle Edition. -->
 
-Suppongo che a questo punto tu sia un po\' confuso, ma non dipende dalla
-complessità dalle mie enunciazioni.
+Qualcosa di simile vale anche per il software: i programmi con meno righe di codice sono più affidabili e più facili da correggere o da modificare. 
 
-Il problema è che ti stai concentrando sull\'effetto e non sulla sua
-causa.
+Il C++ ci aiuta in questo senso perché permette il *polimorfismo*, ovvero la capacità di una funzione o di un operatore di svolgere il proprio compito indipendentemente dal tipo di dato che deve gestire.
 
-Paragonare l'evoluzione C/C++ al rapporto fra ebraismo e cristianesimo.
-Paragonare il rapporto C++/Java al rapporto fra 10 comandamenti ebraici e 10 C cattolici.
+Se riscriviamo la classe *Monta* usando, al posto dei parametri di tipo *Cavallo*, dei parametri che hanno il tipo della classe base *Animale*:
+
+```
+class Monta {
+private:
+    Animale* _maschio;
+    Animale* _femmina;
+    Data     _giorno;
+public:
+    Monta(Animale* maschio, Animale* femmina) {
+        _maschio = maschio;
+        _femmina = femmina;
+        time(&_giorno);
+    }
+};
+
+```
+
+Potremo creare degli oggetti di classe *Monta* con qualunque classe derivata:
+
+```
+int main()
+{
+    Animale* cavallo  = new Cavallo("lipizzano", maschio);    
+    Animale* giumenta = new Cavallo("maremmano", femmina);    
+    Animale* asino    = new Asino("amiatino", maschio);
+    Animale* asina    = new Asino("sardo", femmina);
+
+    Monta puledro(cavallo, giumenta);
+    Monta ciuco(asino, asina);
+    Monta mulo(asino, giumenta);
+    Monta bardotto(asina, cavallo);
+
+    cout << "PULEDRO\n"  << puledro  << endl;
+    cout << "CIUCO\n"    << ciuco    << endl;
+    cout << "MULO\n"     << mulo     << endl;
+    cout << "BARDOTTO\n" << bardotto << endl;
+
+    return 0;              
+}
+```
+
+Compilando ed esegendo il programma, otterrai:
+
+```
+% g++ 7.4-esempio-polimorfismo.cpp -o ../out/esempio
+% ../out/esempio                                    
+PULEDRO
+DATA: Sun Apr  5 12:33:45 2020
+MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+
+CIUCO
+DATA: Sun Apr  5 12:33:45 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Asino	Razza:sardo	Sesso:f
+
+MULO
+DATA: Sun Apr  5 12:33:45 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+
+BARDOTTO
+DATA: Sun Apr  5 12:33:45 2020
+MASCHIO: Specie:Asino	Razza:sardo	Sesso:f
+FEMMINA: Specie:Cavallo	Razza:lipizzano	Sesso:m
+```
+
+---
+
+Queste caratteristche del C++ decretarono il suo successo, facendolo diventare il linguaggio *object-oriented* più utilizzato degli anni '90.  
+L'avvento, alla fine del Secolo, di quell'*altro* linguggio, quello che ha bisogno di un sistema di *garbage collecion* per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un'idea di quello che sarebbe stati il millennio che ci si presentava davanti.  
+Non a caso, Stroustrsup disse:
+
 > I suspect that the root of many of the differences between C/C++ and Java is that AT&T is primarily a user (a consumer) of computers, languages, and tools, whereas Sun is primarily a vendor of such things.
-Bjarne Stroustrup - http://gotw.ca/publications/c_family_interview.htm
-
-Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l'Ebraismo: prese una religione dura, adatta per un popolo in fuga nel deserto e la  migliorò, rendendola meno autoritaria.
-
-
--->
+<!-- Bjarne Stroustrup - http://gotw.ca/publications/c_family_interview.htm -->

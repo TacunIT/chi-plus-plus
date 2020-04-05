@@ -39,18 +39,18 @@ ostream& operator << (ostream& os, const Cavallo& Cavallo) {
 }
 
 
-class Accoppiamento {
+class Monta {
 private:
     Cavallo _maschio;
     Cavallo _femmina;
     Data     _giorno;
 public:
-    Accoppiamento(Cavallo& maschio, Cavallo& femmina) {
+    Monta(Cavallo& maschio, Cavallo& femmina) {
         _maschio = maschio;
         _femmina = femmina;
         time(&_giorno);
     }
-    friend ostream& operator << (ostream& os, const Accoppiamento& copula) {
+    friend ostream& operator << (ostream& os, const Monta& copula) {
         os << "DATA: "    << asctime(localtime(&copula._giorno)) 
            << "MASCHIO: " << copula._maschio 
            << "FEMMINA: " << copula._femmina 
@@ -63,7 +63,7 @@ int main()
 {
     Cavallo lui("lipizzano", maschio);    
     Cavallo lei("maremmano", femmina);
-    Accoppiamento monta(lui, lei);
+    Monta monta(lui, lei);
     cout << monta << endl;
     return 0;               
 }
