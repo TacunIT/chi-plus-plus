@@ -10,6 +10,10 @@ bozza:      true
 quote:      "Chi vuole capire il computer<br />deve andare nella terra del computer."
 ---
 
+Quando il programmatore definisce un nuovo tipo di dato per mezzo di una
+o più classi, può allo stesso tempo istruire le funzioni e gli operatori
+del linguaggio ad utilizzarlo correttamente.
+
 
 <!--
 Noi viviamo prevalentemente sulla terraferma e riteniamo perciò che la
