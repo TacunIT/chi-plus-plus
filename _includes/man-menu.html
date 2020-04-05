@@ -1,7 +1,9 @@
 <nav class="menu-top">
     
     {% if page.precedente %}
-    <a href="{{page.precedente}}" title="Pagina precedente" class="left">
+    <a href="{{page.precedente}}" 
+       title="Vai a: {{page.precedente}}" 
+       class="left">
         <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
     </a>
     {% endif %}
@@ -14,7 +16,9 @@
     </a>
 
     {% if page.seguente %}
-    <a href="{{page.seguente  }}" title="Pagina successiva" class="right" >
+    <a href="{{page.seguente}}" 
+       title="Vai a: {{page.seguente}}" 
+       class="right" >
             <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
     </a>
     {% endif %}

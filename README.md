@@ -38,14 +38,14 @@ Le principali caratteristiche del C'hi++ sono:
 
 Il testi di riferimento del *C'hi++* sono:
 
-- [**C'hi++**](https://chiplusplus.org/man/) Un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo. Il testo riporterà gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione dei computer. Dopo aver insegnato al suo allievo a programmare con il linguaggio C++, il Maestro gli parlerà del *C'hi++*, ovvero il linguaggio con cui è stata scritta l'applicazione che gestisce l'Universo.<br/> <img src="https://img.shields.io/badge/stato-redazione-orange" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
+- [**C'hi++**](https://chiplusplus.org/man/) Un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo. Il testo riporterà gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione dei computer. Dopo aver insegnato al suo allievo a programmare con il linguaggio C++, il Maestro gli parlerà del *C'hi++*, ovvero il linguaggio con cui è stata scritta l'applicazione che gestisce l'Universo.<br/> <img src="https://img.shields.io/badge/stato-redazione-orange" alt="Stato documento: redazione" height="20" style="padding-top:0.5rem">
 
-- [**Sostiene Aristotele**](src/doc/sostiene-aristotele.md): un documento che risale al Giugno del 2007 e che possiamo considerare una versione preliminare del *C'hi++*. In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
+- [**Sostiene Aristotele**](src/doc/sostiene-aristotele.md): un documento che risale al Giugno del 2007 e che possiamo considerare una versione preliminare del *C'hi++*. In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
 
 - [**Proposta per una metafisica open-source**](https://chiplusplus.org/assets/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf): nato inzialmente come Manifesto del progetto, questo testo si è espanso per più di quaranta pagine e ho deciso per ciò di considerarlo un documento a sé stante.
-<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
+<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
 
-- [**Il Manifesto del C'hi++**](MANIFEST.md): versione “zippata” del Manifesto originale, è il file MANIFEST.md che vedete nell'elenco qui sopra.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: bozza" height="20" style="padding-top:0.5rem">
+- [**Il Manifesto del C'hi++**](MANIFEST.md): versione “zippata” del Manifesto originale, è il file MANIFEST.md che vedete nell'elenco qui sopra.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
 
 Esiste anche una mappa mentale nella quale sto riportando tutti i miei appunti e le mie idee per *C'hi++*.
 
@@ -69,10 +69,10 @@ I file del progetto sono suddivisi nelle seguenti directory:
 
 | Nome  | Contenuto
 |---|---|
-|**bin**| programmi eseguibili per la gestione del progetto; al momento, solo lo script per il cambio di versione git.
+|**bin**| programmi eseguibili per la gestione del progetto.
 | **docs** | file per la pubblicazione del progetto su Github Pages [https://chiplusplus.org/](https://chiplusplus.org/).
 | **img** | contiene i file immagine del progetto.
-| **man** | contiene il testo Markdown di [**C'hi++**](man/)
+| **_man** | contiene il testo Markdown di [**C'hi++**](_man/)
 | **src** | file "sorgenti" del progetto, siano essi degli script in C++ (*src/cpp*) o i file in formato Markdown dei testi (*src/doc*).
 
 I file [CHANGELOG](CHANGELOG.md) e VERSION sono utilizzati per il controllo di versione con Git.

@@ -101,9 +101,8 @@ DIV.citazione {
  *  differente per web o stampa, vedi sotto @meda print
  */
 SECTION.copertina {
-    margin:none;
+    margin:auto;
     padding: 6.6% 1rem 0 ;
-    height:200mm;
     counter-reset: h2;
     text-align:center;
 }
@@ -120,9 +119,8 @@ SECTION.copertina H3  {
     margin-bottom: 2rem;
 }
 
-
-SECTION.copertina H2:before ,
-SECTION.copertina H3:before {
+BODY.proposta SECTION.copertina H2:before ,
+BODY.proposta SECTION.copertina H3:before {
     content: none;
 }
 

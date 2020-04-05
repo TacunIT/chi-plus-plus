@@ -1,3 +1,18 @@
+## 0.8.23 (April 05, 2020)
+  - Merge branch 'capitolo/c-plus-plus'
+  - Completata prima stesura capitolo C++
+  - Introduzione a OO, classi, polimorfismo ed ereditarietà
+  - Sostituita classe Coniglio con Cavallo
+  - Aggiunta nota a MANIFEST
+  - Corretti stili Proposta
+  - Aggiunte frecce di navigazioe all footer del Manuale
+  - Redazione del capitolo sul C++
+  - Spostati tutti i colori del CSS nel file screen.scss
+  - Redazione capitolo C++
+  - Modificato menu Manuale
+  - Rivisto il codice dell'esempio
+  - Merge branch 'ver/0.8.22'
+
 ## 0.8.22 (April 03, 2020)
   - Rivista struttura delle directory per includere direttamente gli script .cpp nel testo del Manuale
   - Aggiornato file TODO
