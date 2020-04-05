@@ -31,7 +31,9 @@
         <header><nav class="menu-top">
     
     
-    <a href="sistemi-di-numerazione" title="Pagina precedente" class="left">
+    <a href="sistemi-di-numerazione" 
+       title="Vai a: sistemi-di-numerazione" 
+       class="left">
         <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
     </a>
     
@@ -44,7 +46,9 @@
     </a>
 
     
-    <a href="c-plus-plus" title="Pagina successiva" class="right" >
+    <a href="c-plus-plus" 
+       title="Vai a: c-plus-plus" 
+       class="right" >
             <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
     </a>
     
@@ -82,12 +86,11 @@ determinate operazioni.
 Perché il computer possa ubbidirci, deve “capire” che tipo di entità deve gestire e che tipo di operazioni deve compiere su di esse.
 Per esempio, se chiedessimo al computer di raddoppiarci lo stipendio, il computer dovrebbe sapere almeno a quanto ammonta il nostro stipendio e come funziona una moltiplicazione per due.</p>
 
-<pre>
-long raddoppia(long stipendio)
+<pre><code>long raddoppia(long stipendio)
 {
     return stipendio * 2;
 }
-</pre>
+</code></pre>
 
 <p>Siccome l’unica cosa che il computer conosce sono delle sequenze di 1 e di 0 
 – siano esse su un disco, in memoria o sulla porta di comunicazione della 
@@ -121,25 +124,23 @@ Il sistema operativo non lo può vedere o sentire, ma conosce i suoi dati anagra
 La CPU non sa nulla di lui: gestisce i suoi dati, ma non sa cosa siano.
 Può elaborare la sequenza di byte:</p>
 
-<pre>
-01000011 
+<pre><code>01000011 
 01100001 
 01101110 
 01100001 
 01110010 
 01101111
-</pre>
+</code></pre>
 
 <p>ma non sa che è il nome: <em>Canaro</em>.
 In effetti, non sa nemmeno cosa sia, la parola: <em>nome</em>.
 Per lui è solo la sequenza di byte:</p>
 
-<pre>
-01001110 
+<pre><code>01001110 
 01101111 
 01101101 
 01100101
-</pre>
+</code></pre>
 
 <p>Invertendo questi concetti, una volta il Maestro Canaro disse:</p>
 
@@ -219,9 +220,8 @@ I principii sono importanti, perché danno robustezza al linguaggio.
 Il linguaggio C, da cui è derivato il C++, non ha principii: è solo un modo per descrivere gli eventi all’interno di un computer.
 L’istruzione:</p>
 
-<pre>
-char b = 23;
-</pre>
+<pre><code>char b = 23;
+</code></pre>
 
 <p>è un modo per dire al computer:</p>
 
@@ -265,9 +265,8 @@ Le prime diciassette mattonelle sono occupate, ma dalla diciottesima alla ventic
 <p>La variabile <em>b</em>, a questo punto, avrà un <em>indirizzo</em>, ovvero il numero della prima mattonella (18) e un <em>valore</em>, ovvero il numero binario contenuto nelle otto mattonelle (23).<br />
 Se l’istruzione successiva fosse:</p>
 
-<pre>
-char c = b * 2;
-</pre>
+<pre><code>char c = b * 2;
+</code></pre>
 
 <p>tutto quello che dovresti fare è di cercare un’altra serie di otto mattonelle libere in cui scrivere il valore della variabile <em>b</em> spostato verso sinistra di una mattonella:</p>
 
@@ -323,11 +322,12 @@ int main (int argc, char** argv)
 
 <p>il compilatore C ti avviserebbe che non può sommare due variabili di tipo char.</p>
 
-<pre>
-pippopluto.c:7:35: error: invalid operands to binary expression ('char []' and 'char []')
+<pre><code>% gcc 6.1-pippopluto.c -o ../out/esempio; 
+6.1-pippopluto.c:7:35: error: invalid operands to binary expression ('char *' and 'char *')
     printf("\npippo+pluto=%s\n", a+b);
                                  ~^~
-</pre>
+1 error generated.
+</code></pre>
 
 <p>In altre parole, il C è un linguaggio che non va oltre l’ambito per cui è stato creato.
 È una convenzione.
@@ -367,8 +367,33 @@ giovane e impetuoso discepolo gliene aveva dato occasione.</p>
         </main>
 
         <footer>
-    <nav><a href="#top" class="top">Torna all'inizio</a></nav>
+    <nav>
+        
+        
+        <a href="sistemi-di-numerazione" 
+           title="Vai a: sistemi-di-numerazione" 
+           class="left">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        
+        
+        <a href="#top" 
+           title="Torna all'inizio" >
+           <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        
+        <a href="c-plus-plus" 
+           title="Vai a: c-plus-plus" 
+           class="right" >
+            <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+        
+        
+    </nav>
+
 </footer>
+
 
     </div>
 

@@ -21,7 +21,7 @@ La *United States Declaration of Independence* del 1776 comincia con l'affermazi
 > We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
 
 Definire un principio: *self-evident* equivale a dichiarare un dogma: una convinzione che appartiene a chi scrive, ma non si applica necessariamente a tutti gli esseri viventi.
-È stata necessaria una guerra civile per far accettare agli Stati del Sud l’idea che gli schiavi africani erano esseri umani e dovevano dunque godere della libertà e sono dovuti passare 188 anni, fino al Giugno del 1964, per ammettere che la segregazione razziale era in conflitto con questo principio.
+È stata necessaria una guerra civile per far accettare agli Stati del Sud l’idea che gli schiavi africani erano esseri umani e dovevano dunque godere della libertà; sono dovuti passare 188 anni, fino al Giugno del 1964, per ammettere che la segregazione razziale era in conflitto con questo principio.
 
 Il primo Articolo della *Déclaration des Droits de l’Homme et du Citoyen* del 1798 non ha le contaminazioni fideistiche della Dichiarazione americana, ma la frase:
 
@@ -37,7 +37,9 @@ La contraddittoria<a href="#harari" class="nota" name="fn-1"><sup>1</sup></a> tr
 
 > Dio, Patria, Famiglia
 
-Nulla prova che questi valori siano reali o corretti, ci devi credere; e ci credi perché qualcosa o qualcuno ti ha convinto a farlo.
+Nulla prova che questi valori siano reali, corretti o immutabili, anzi: il fatto stesso che si debba coniare un motto per propugnare un'idea significa che quel concetto è accessorio e che serve un'opera di convincimento per farlo accettare globalmente.
+Buona parte dei principii e dei concetti che regolano le nostre vite sono frutto della nostra immaginazione (il che non vuol dire che siano falsi).
+Crediamo in essi non perché siano veri ed evidenti, ma perché qualcosa o qualcuno ci ha convinto a farlo.  
 Se consideriamo la notevole disparità di vedute e convinzioni dei Popoli della Terra e, talvolta, degli stessi individui all'interno di un Popolo, è facile capire come la frase:
 
 > AI interactions that consumers and citizens perceive as ethical build trust and satisfaction<a href="#cap" class="nota" name="fn-2"><sup>2</sup></a>
