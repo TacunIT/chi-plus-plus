@@ -346,7 +346,14 @@ BODY.manuale HEADER DIV.box.titoli {
 }
 
 BODY.manuale HEADER NAV.menu-top {
-    border: none;
+    border: none;    
+}
+
+BODY.manuale HEADER NAV.menu-top A {
+    padding: 0.5rem 0;
+}
+BODY.manuale HEADER NAV.menu-top A.center {
+    padding: 0.5rem 1rem;
 }
 
 BODY.manuale FOOTER {
