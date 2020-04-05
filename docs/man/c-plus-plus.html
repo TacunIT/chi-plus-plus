@@ -82,7 +82,7 @@
 
 <p>C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983, quando lavorava ai Laboratori Bell della AT&amp;T.
 Dieci anni prima, il suo collega Dennis Ritchie aveva creato un linguaggio di programmazione chiamato <em>C</em>. 
-Il C, come ti ho detto, era estremamente efficace se dovevi programmare i computer, ma – così come molti dei tuoi confratelli – non gestiva altrettanto bene le entità della vita reale.  s</p>
+Il C, come ti ho detto, era estremamente efficace se dovevi programmare i computer, ma – così come molti dei tuoi confratelli – non gestiva altrettanto bene le entità della vita reale.</p>
 
 <p>Stroustrup, che ai tempi del suo dottorato aveva lavorato con un linguaggio a oggetti chiamato <em>Simula67</em>, pensò che se avesse potuto aggiungere alla velocità di esecuzione del C la possibilità di creare dei nuovi tipi di dato di Simula, avrebbe ottenuto il linguaggio perfetto.
 Aveva ragione.</p>
@@ -113,12 +113,14 @@ Valore di C = 13
 
 <p>C++, infatti, non era un nuovo linguaggio: era un C migliorato. 
 Tutto il codice e l’esperienza che erano state fatte fino ad allora sul C potevano essere applicate anche al C++.
-Questa scelta fece sì che il C++ ebbe quasi da subito un buon successo, diventando il linguaggio object-oriented più utilizzato degli anni ‘90.</p>
+Questa scelta fece sì che il C++ ebbe quasi da subito un buon successo,   diventando il linguaggio object-oriented più utilizzato degli anni ‘90.</p>
+
+<p>L’avvento, alla fine del Secolo, di quell’<em>altro</em> linguggio, quello che ha bisogno di un sistema di <em>garbage collecion</em> per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un’idea di quello che sarebbe stati il millennio che ci si presentava davanti.</p>
 
 <hr />
 
 <p>Le principali novità aggiunte dal C++ al C sono tre: l’astrazione dei dati, la programmazone a oggetti e la “generic programming”.<br />
-Tranquillo; adessso ti spiego tutto.</p>
+Adessso ti spiego cosa sono, ma tu non preoccuparti se non capisci: approfondiremo tutti questi concetti in seguito.</p>
 
 <p>I tipi di dato del C sono:</p>
 
@@ -127,28 +129,46 @@ Tranquillo; adessso ti spiego tutto.</p>
 
 <p>Più che sufficienti per scrivere il <em>kernel</em> di Unix, ma decisamente inadeguati per scrivere un programma che gestisca delle linee telefoniche.</p>
 
-<p>Perché un linguaggio di programmazione possa gestire con la stessa facilità un flusso di dati, un utente, una linea telefonica o anche un allevamento di conigli, è necessario che oltre ai tipi di dato predefiniti, possa gestire anche delle nuove entità definite dal programmatore.</p>
+<p>Perché un linguaggio di programmazione possa gestire con la stessa facilità un flusso di dati, un utente, una linea telefonica o anche un allevamento di cavalli, è necessario che oltre ai tipi di dato predefiniti, possa gestire anche delle nuove entità definite dal programmatore.</p>
 
 <p>Questa è quella che si chiama <em>data abstraction</em> e il C++ la ottiene per mezzo delle <em>classi</em>.
-Le classi sono la rappresentazione di un’entità o di un concetto all’interno del codice:</p>
+Le classi sono la rappresentazione, all’interno del codice, di un’entità:</p>
 
-<pre><code>class Coniglio {
+<pre><code>class Cavallo {
 private:
+    Sesso  _sesso;
     string _razza;
-    char   _sesso;
 public:
-    Coniglio();
+    const char* getSpecie() const {
+        return "cavallo"; 
+    } 
+    const char getSesso() const {        
+        return (char)_sesso;
+    }
+    const char* getRazza() const {
+        return _razza.c_str();
+    }
+    Cavallo() {}
+    Cavallo(const char* razza, Sesso sesso ) {
+        _razza  = razza;
+        _sesso  = sesso;
+    }
 };
+</code></pre>
 
-typedef time_t Data;
+<p>o di un concetto:</p>
 
-class Accoppiamento {
+<pre><code>class Accoppiamento {
 private:
-    Coniglio _maschio;
-    Coniglio _femmina;
+    Cavallo _maschio;
+    Cavallo _femmina;
     Data     _giorno;
 public:
-    Accoppiamento();
+    Accoppiamento(Cavallo&amp; maschio, Cavallo&amp; femmina) {
+        _maschio = maschio;
+        _femmina = femmina;
+        time(&amp;_giorno);
+    }
 };
 </code></pre>
 
@@ -157,33 +177,34 @@ utilizzarli all’interno del suo programma nello stesso modo in cui
 utilizzerebbe i tipi di dato primitivi del linguaggio.</p>
 
 <p>Ciascuna classe ha degli <em>attributi</em> e dei <em>metodi</em>.
-Gli <em>attributi</em> sono dei dati che descrivono le caratteristiche della classe, per esempio, la razza o il sesso di un coniglio.
+Gli <em>attributi</em> sono dei dati che descrivono le caratteristiche della classe, per esempio, la razza o il sesso di un cavallo.
 I <em>metodi</em> sono delle funzioni che definiscono il modo in cui la classe può reagire agli stimoli esterni.
-Nelle classi dell’esempio vedi solo una di queste funzioni: è quella che ha lo stesso nome della classe e si chiama <em>costruttore</em> della classe, perché “spiega” al compilatore come debbano essere creati gli oggetti di questa classe.</p>
+Nelle classi dell’esempio i <em>metodi</em> sono le funzioni che vedi nella sezione <em>public</em> della classe.
+La funzione che ha lo stesso nome della classe si chiama <em>costruttore</em> della classe, perché “spiega” al compilatore come debbano essere creati gli oggetti di questa classe.</p>
 
 <p>Le classi, però, sono la ricetta, non sono la pietanza. 
 Per poter essere utilizzate, le classi devono essere <em>istanziate</em> negli oggetti:</p>
 
 <pre><code>int main()
 {
-    Coniglio jessica("angora", femmina);
-    Coniglio roger("martora", maschio);    
-    Accoppiamento copula(roger, jessica);
-    cout &lt;&lt; copula &lt;&lt; endl;
+    Cavallo lui("lipizzano", maschio);    
+    Cavallo lei("maremmano", femmina);
+    Accoppiamento monta(lui, lei);
+    cout &lt;&lt; monta &lt;&lt; endl;
     return 0;               
 }
 </code></pre>
 
-<p><code>Jessica</code>, <code>Roger</code> e <code>copula</code> sono tre oggetti.
-I primi due sono istanze della classe <em>Coniglio</em>, il terzo è un’istanza della classe <em>Accoppiamento</em>.</p>
+<p><code>lui</code>, <code>lei</code> e <code>monta</code> sono tre oggetti.
+I primi due sono istanze della classe <em>Cavallo</em>, il terzo è un’istanza della classe <em>Accoppiamento</em>.</p>
 
 <p>Se aggiungi un po’ di codice alle classi che abbiamo visto prima e compili il programma, otterrai:</p>
 
-<pre><code>% g++ 7.2-esempio-conigli.cpp -o ../out/esempio 
-% ../out/esempio                
-Data:Sat Apr  4 20:11:59 2020
-MASCHIO: Specie:coniglio, Sesso:m, Razza:martora
-FEMMINA: Specie:coniglio, Sesso:f, Razza:angora
+<pre><code>% g++ 7.2-esempio-classe.cpp -o ../out/esempio 
+% ../out/esempio                               
+DATA: Sun Apr  5 10:38:31 2020
+MASCHIO: Specie:cavallo, Sesso:m, Razza:lipizzano
+FEMMINA: Specie:cavallo, Sesso:f, Razza:maremmano```
 </code></pre>
 
 <p>Perché un linguaggio di programmazione possa dirsi orientato agli
@@ -195,49 +216,46 @@ estensione di classi esistenti:</p>
 
 <pre><code>class Animale {
 private:
-    string _razza;
     string _specie;
+    string _razza;
     Sesso  _sesso;
 public:
+    const char* getSpecie() const {
+        return _specie.c_str(); 
+    } 
+    const char getSesso() const {        
+        return (char)_sesso;
+    } 
+    const char* getRazza() const {
+        return _razza.c_str();
+    }
     Animale() {}
-    Animale(const char* specie
-           ,const char* razza
-           ,const Sesso sesso) {
+    Animale(const char* specie, const char* razza, const Sesso sesso ) {
         _specie = specie;
         _razza  = razza;
         _sesso  = sesso;
     }
 };
 
-class Coniglio : public Animale {
+class Cavallo : public Animale {
 public:
-    Coniglio() {}
-    Coniglio(const char* razza, const Sesso sesso )
-    : Animale("coniglio", razza, sesso ) { 
+    Cavallo() {}
+    Cavallo(const char* razza, const Sesso sesso )
+    : Animale("Cavallo", razza, sesso ) { 
     }
 };
-
 </code></pre>
 
-<p>Nell’esempio qui sopra, abbiamo prima definito una classe <em>Animale</em>, che ha tre attributi: la <em>specie</em>, lal <em>razza</em> e il <em>sesso</em>; poi abbiamo definito una classe <em>Coniglio</em>, derivandola dalla classe <em>Animale</em>.
-In questo modo, se oltre ai conigli il nostro programma dovesse gestire anche altri animali, non dovremmo ripetere in ciascuna classe le stesse istruzioni, ma potremmo utilizzare quelle della classe base:</p>
+<p>Nell’esempio qui sopra, abbiamo prima definito una classe <em>Animale</em>, che ha tre attributi: la <em>specie</em>, lal <em>razza</em> e il <em>sesso</em>; poi abbiamo definito una classe <em>Cavallo</em>, derivandola dalla classe <em>Animale</em>.
+In questo modo, se oltre ai cavalli il nostro programma dovesse gestire anche altri ungulati, non dovremmo ripetere in ciascuna classe le stesse istruzioni, ma potremmo utilizzare quelle della classe base:</p>
 
-<pre><code>class Mucca : public Animale {
+<pre><code>class Asino : public Animale {
 public:
-    Mucca() {}
-    Mucca(const char* razza, const Sesso sesso )
-    : Animale("mucca", razza, sesso ) { 
+    Asino() {}
+    Asino(const char* razza, const Sesso sesso )
+    : Animale("Asino", razza, sesso ) { 
     }
 };
-
-class Gallina : public Animale {
-public:
-    Gallina() {}
-    Gallina(const char* razza, const Sesso sesso )
-    : Animale("gallina", razza, sesso ) { 
-    }
-};
-
 </code></pre>
 
 <p>Per <em>polimorfismo</em> si intende la capacità di una funzione o di un
