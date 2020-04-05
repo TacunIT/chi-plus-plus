@@ -1,0 +1,27 @@
+<footer>
+    <nav>
+        
+        {% if page.precedente %}
+        <a href="{{page.precedente}}" 
+           title="Vai a: {{page.precedente}}" 
+           class="left">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        {% endif %}
+        
+        <a href="#top" 
+           title="Torna all'inizio" >
+           <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        {% if page.seguente %}
+        <a href="{{page.seguente}}" 
+           title="Vai a: {{page.seguente}}" 
+           class="right" >
+            <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+        {% endif %}
+        
+    </nav>
+
+</footer>

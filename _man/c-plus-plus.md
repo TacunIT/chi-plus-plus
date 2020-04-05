@@ -13,6 +13,14 @@ redazione:  true
 ---
 
 
+In uno dei suoi libri, Bjarne Stroustroup definì il C++: 
+
+> Un linguaggio di programmazione per svolgere compiti non banali. 
+
+Fà che si possa dire la stessa cosa di te. 
+
+---
+
 C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983, quando lavorava ai Laboratori Bell della AT&T.
 Dieci anni prima, il suo collega Dennis Ritchie aveva creato un linguaggio di programmazione chiamato *C*. 
 Il C, come ti ho detto, era estremamente efficace se dovevi programmare i computer, ma – così come molti dei tuoi confratelli – non gestiva altrettanto bene le entità della vita reale.  s
@@ -193,11 +201,3 @@ Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l'Ebrai
 
 
 -->
-
----
-
-In uno dei suoi libri, Bjarne Stroustroup definì il C++: 
-
-> Un linguaggio di programmazione per svolgere compiti non banali. 
-
-Fà che si possa dire la stessa cosa di te. 
