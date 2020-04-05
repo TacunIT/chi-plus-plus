@@ -56,7 +56,7 @@
 </nav>
 </header>
 
-        <main class="bozza">
+        <main >
             
         
 
@@ -187,15 +187,15 @@ Per poter essere utilizzate, le classi devono essere <em>istanziate</em> negli o
 
 <pre><code>int main()
 {
-    Cavallo lui("lipizzano", maschio);    
-    Cavallo lei("maremmano", femmina);
-    Monta   monta(lui, lei);
+    Cavallo stallone("lipizzano", maschio);    
+    Cavallo giumenta("maremmano", femmina);
+    Monta   monta(stallone, giumenta);
     cout &lt;&lt; monta &lt;&lt; endl;
     return 0;               
 }
 </code></pre>
 
-<p><code>lui</code>, <code>lei</code> e <code>monta</code> sono tre oggetti.
+<p><code>stallone</code>, <code>giumenta</code> e <code>monta</code> sono tre oggetti.
 I primi due sono istanze della classe <em>Cavallo</em>, il terzo è un’istanza della classe <em>Monta</em>.</p>
 
 <p>Se aggiungi un po’ di codice alle classi che abbiamo visto prima e compili il programma, otterrai:</p>
@@ -329,7 +329,7 @@ public:
     Monta puledro(cavallo, giumenta);
     Monta ciuco(asino, asina);
     Monta mulo(asino, giumenta);
-    Monta bardotto(asina, cavallo);
+    Monta bardotto(cavallo, asina);
 
     cout &lt;&lt; "PULEDRO\n"  &lt;&lt; puledro  &lt;&lt; endl;
     cout &lt;&lt; "CIUCO\n"    &lt;&lt; ciuco    &lt;&lt; endl;
@@ -352,7 +352,7 @@ FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
 CIUCO
 DATA: Sun Apr  5 12:33:45 2020
 MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
-FEMMINA: Specie:Asino	Razza:sardo	Sesso:f
+FEMMINA: Specie:Asino	Razza:sardo	    Sesso:f
 
 MULO
 DATA: Sun Apr  5 12:33:45 2020
@@ -361,14 +361,158 @@ FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
 
 BARDOTTO
 DATA: Sun Apr  5 12:33:45 2020
-MASCHIO: Specie:Asino	Razza:sardo	Sesso:f
+MASCHIO: Specie:Asino	Razza:sardo	    Sesso:f
 FEMMINA: Specie:Cavallo	Razza:lipizzano	Sesso:m
 </code></pre>
 
 <hr />
 
-<p>Queste caratteristche del C++ decretarono il suo successo, facendolo diventare il linguaggio <em>object-oriented</em> più utilizzato degli anni ‘90.<br />
-L’avvento, alla fine del Secolo, di quell’<em>altro</em> linguggio, quello che ha bisogno di un sistema di <em>garbage collecion</em> per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un’idea di quello che sarebbe stati il millennio che ci si presentava davanti.<br />
+<p>Il codice che abbiamo utilizzato per mostrare il risultato degli accoppiamenti:</p>
+
+<pre><code>Monta puledro(cavallo, giumenta);
+Monta ciuco(asino, asina);
+Monta mulo(asino, giumenta);
+Monta bardotto(asina, cavallo);
+
+cout &lt;&lt; "PULEDRO\n"  &lt;&lt; puledro  &lt;&lt; endl;
+cout &lt;&lt; "CIUCO\n"    &lt;&lt; ciuco    &lt;&lt; endl;
+cout &lt;&lt; "MULO\n"     &lt;&lt; mulo     &lt;&lt; endl;
+cout &lt;&lt; "BARDOTTO\n" &lt;&lt; bardotto &lt;&lt; endl;
+</code></pre>
+
+<p>non è il massimo dell’efficienza, sia perché potremmo sbagliarci ad accoppiare la specie dei genitori con il nome del figlio, sia perché le istruzioni devono essere ripetute per ciascun oggetto. 
+Per risolvere il primo difetto possiamo aggiungere alla classe <em>Monta</em> un attributo e un metodo per definire autonomamente che tipo di genia venga prodotta dalla copula:</p>
+
+<pre><code>string   _esito;
+void setEsito() {
+    if(strcmp(_maschio-&gt;getSpecie(),"Asino") == 0) {
+        if(strcmp(_femmina-&gt;getSpecie(),"Asino") == 0){
+            _esito = "asino";
+        } else {
+            _esito = "mulo";
+        } 
+    } else {        
+        if(strcmp(_femmina-&gt;getSpecie(),"Cavallo") == 0) {
+            _esito = "puledro";
+        } else {
+            _esito = "bardotto";
+        } 
+    }
+}
+</code></pre>
+
+<p>ma anche così dovremo comunque riscrivere quattro righe di codice per modificare l’output del programma: un approccio inaccettabile per i sistemi di produzione, dove le entità da gestire possono essere migliaia.</p>
+
+<p>Possiamo risolvere questo problema grazie alla <em>generic programming</em> e al modo in cui viene implementata nel C++:le classi <em>template</em>:</p>
+
+<pre><code>template &lt; class T&gt; class list;
+</code></pre>
+
+<p>La classe <em>list</em> è una delle classi <em>template</em> del C++ e permette di inserire, rimuovere, spostare, unire, ordinare ed elencare una lista di oggetti di una stessa classe.</p>
+
+<p>La sintassi per creare una lista di oggetti di classe <em>Monta</em> è:</p>
+
+<pre><code>list&lt;Monta&gt; monte;
+</code></pre>
+
+<p>Fatto ciò, possiamo aggiungere elementi alla nostra lista con la funzione <em>push_back()</em>:</p>
+
+<pre><code>monte.push_back(Monta(cavallo, giumenta)); 
+monte.push_back(Monta(asino, asina));       
+monte.push_back(Monta(asino, giumenta));     
+monte.push_back(Monta(cavallo, asina));
+</code></pre>
+
+<p>Per visualizzare il contenuto della lista, indipendentemtente dal numero di elementi, basta l’istruzione:</p>
+
+<pre><code>for (list&lt;Monta&gt;::iterator it=monte.begin(); it!=monte.end(); it++) {
+    cout &lt;&lt; *it &lt;&lt; endl;
+}
+</code></pre>
+
+<p>La funzione <em>main()</em> del nostro programma sarà quindi:</p>
+
+<pre><code>int main()
+{
+    Animale* cavallo  = new Cavallo("lipizzano", maschio);    
+    Animale* giumenta = new Cavallo("maremmano", femmina);    
+    Animale* asino    = new Asino("amiatino", maschio);
+    Animale* asina    = new Asino("sardo", femmina);
+    list&lt;Monta&gt; monte;
+    monte.push_back(Monta(cavallo, giumenta)); 
+    monte.push_back(Monta (asino, asina));       
+    monte.push_back(Monta (asino, giumenta));     
+    monte.push_back(Monta (cavallo, asina));
+    for (list&lt;Monta&gt;::iterator it=monte.begin(); 
+         it!=monte.end(); it++) {
+        cout &lt;&lt; *it &lt;&lt; endl;
+    }
+    return 0;               
+}
+</code></pre>
+
+<p>e l’output che otterremo è:</p>
+
+<pre><code>$ g++ 7.5-esempio-template.cpp -o ../out/esempio
+% ../out/esempio                                
+DATA:    Sun Apr  5 16:19:24 2020
+MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+ESITO:   puledro
+
+DATA:    Sun Apr  5 16:19:24 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Asino	Razza:sardo	Sesso:f
+ESITO:   asino
+
+DATA:    Sun Apr  5 16:19:24 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+ESITO:   mulo
+
+DATA:    Sun Apr  5 16:19:24 2020
+MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FEMMINA: Specie:Asino	Razza:sardo     Sesso:f
+ESITO:   bardotto
+</code></pre>
+
+<p>Se volessimo per qualche motivo invertire l’ordine degli elementi nella lista, tutto quello che dovremmo dare è di aggiungere prima del ciclo <em>for</em> l’istruzione:</p>
+
+<pre><code>monte.reverse();
+</code></pre>
+
+<p>e l’output che otteremmo è:</p>
+
+<pre><code>% g++ 7.5-esempio-template.cpp -o ../out/esempio
+% ../out/esempio                                
+DATA:    Sun Apr  5 17:08:27 2020
+MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FEMMINA: Specie:Asino	Razza:sardo	Sesso:f
+ESITO:   bardotto
+
+DATA:    Sun Apr  5 17:08:27 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+ESITO:   mulo
+
+DATA:    Sun Apr  5 17:08:27 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Asino	Razza:sardo     Sesso:f
+ESITO:   asino
+
+DATA:    Sun Apr  5 17:08:27 2020
+MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+ESITO:   puledro
+
+</code></pre>
+
+<p>Oltre alle classi predefinite, il C++ permette di definire le proprie classi template, ma di questo parleremo a tempo debito.</p>
+
+<hr />
+
+<p>Queste caratteristche e soprattutto la compatibilità con il codice scritto in C, fecero di C++ il linguaggio <em>object-oriented</em> più utilizzato degli anni ‘90.<br />
+L’avvento, alla fine del Secolo, del linguaggio con la “J”, quello che ha bisogno di un sistema di <em>garbage collecion</em> per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un’idea di quello che sarebbe stato il millennio che ci si presentava davanti.<br />
 Non a caso, Stroustrsup disse:</p>
 
 <blockquote>
