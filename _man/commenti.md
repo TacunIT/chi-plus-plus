@@ -8,7 +8,6 @@ precedente: c-plus-plus
 seguente:   tipi-di-dato
 bozza:      true
 quote:      ""
-redazione: true;
 ---
 
 I commenti sono la cosa più importante, quando si programma.

@@ -221,13 +221,18 @@ MAIN P+P {
     margin-top: 1rem;
 }
 
+
+MAIN.redazione {
+    padding: 5rem 1rem;    
+    background-color: $bozzaRedazione;
+}
 MAIN.bozza {
     background-color: $bozzaBackground;
-    padding: 5rem 1rem;
+    padding: 5rem 1rem;    
 }
 
-MAIN.bozza::before {
-    content: "BOZZA";
+MAIN.bozza::before ,
+MAIN.redazione::before {
     font-size: 1rem;
     font-weight: bold;
     position: absolute;
@@ -235,6 +240,14 @@ MAIN.bozza::before {
     left: 2rem;
     font-family: Monaco;
 }
+
+MAIN.bozza::before {
+    content: "BOZZA";
+}
+MAIN.redazione::before {
+    content: "REDAZIONE";
+}
+
 
 MAIN P.immagine {
     margin: 1rem auto;
@@ -451,7 +464,7 @@ IFRAME.pdf {
     height: 780px;
 }
 
-/** Tabella per le aree di memoria */
+/** Tabelle nei capitoli */
 BODY.manuale.capitolo #testo TABLE {
     margin: 1rem auto;
 }
@@ -466,6 +479,24 @@ BODY.manuale.capitolo #testo TABLE.memoria TD.area {
     background: $tdAreaBackground;
 }
 
+BODY.manuale.capitolo #testo TABLE.rgb,
+BODY.manuale.capitolo #testo TABLE.rgb TR {
+    border: none;
+}
+BODY.manuale.capitolo #testo TABLE.rgb TD {
+    border: none;
+    font-family: Monaco;
+    font-size: 10pt;
+    width: 30px;
+    height: 30px;    
+}
+
+BODY.manuale.capitolo #testo TABLE.rgb TD:nth-child(1) {
+    border: solid 1px $borderColor;
+}
+BODY.manuale.capitolo #testo TABLE.rgb TD:nth-child(2) {
+    min-width: 10rem;
+}
 
 /**
  *  Stili per mobile
