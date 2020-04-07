@@ -13,7 +13,11 @@
     
         </header>
 
-        <main {% if page.bozza %}class="bozza"{% endif %}>
+        <main 
+        {% if page.bozza %}class="bozza"
+        {% elsif page.redazione %}class="redazione"
+        {% endif %}
+        >
             
         {% if page.class == "capitolo" %}
 

@@ -56,7 +56,10 @@
 </nav>
 </header>
 
-        <main >
+        <main 
+        class="redazione"
+        
+        >
             
         
 
@@ -149,12 +152,7 @@ b*10 + c*1
 1*10 + 2*1 = 3*4
 </pre>
 
-<!--
-@todo aggiungere paragrafo sui numeri esasecimali
--->
-
-<p>È quello che avviene con la numerazione esadecimale, che utilizza le lettere dalla A alla F in aggiunta ai dieci valori della numerazione araba:</p>
-
+<p>La numerazione esadecimale fa proprio questo: utilizza le lettere dalla A alla F in aggiunta ai dieci valori della numerazione araba:</p>
 <table class="esadecimale">
     <tr>
         <td>0</td><td>1</td><td>2</td><td>3</td>
@@ -164,25 +162,11 @@ b*10 + c*1
     </tr>
 </table>
 
-<p>La numerazione esadecimale viene usata nella codifica RGB (<em>Red</em>, <em>Green</em>, <em>Blue</em>) dei colori delle pagine Web.
-Nella codifica RGB, ciascun colore è definito come una combinazione di rosso verde e blu. 
-La quantità di ciascun colore è definita da tre valori di 8 bit ciascuno e può quindi variare da 0 a 255 (2<sup>8</sup>).
-Un colore RGB con tutti i suoi byte</p>
-
-<p>I possibili colori della codifica RGB possono essere calcolati o moltiplicando fra loro i tre valori di R, G e B:</p>
-
-<pre><code>256 * 256 * 256 = 16.777.216
-</code></pre>
-
-<p>oppure considerando i tre byte un unico valore binario di 24 cifre:</p>
-
-<pre>
-2<sup>24</sup> = 16.777.216
-</pre>
+<p>Questo torna molto utile quando hai a che fare con dei byte di otto cifre, come vedremo dopo:</p>
 
 <hr />
 
-<p>Nei sistemi di numerazione <em>posizionali</em> il valore di una cifra dipende dalla sua posizione: le cifre a sinistra hanno più valore delle cifre a destri. 
+<p>Nei sistemi di numerazione <em>posizionali</em> il valore di una cifra dipende dal punto in cui si trova: le cifre a sinistra hanno più valore delle cifre a destri. 
 Ma non tutti i sistemi di numerazione funzionano allo stesso modo.
 Se tu chiedessi a un antico romano di calcolare il numero delle uova, ti
 risponderebbe:</p>
@@ -263,13 +247,98 @@ Il Maestro Canaro pensava che ciò fosse empio.</p>
 
 <hr />
 
+<p>Un esempio di tutto ciò di cui ti ho parlato oggi lo trovi nella codifica RGB dei colori delle pagine Web.
+Nella codifica RGB, ciascun colore è definito come una combinazione di rosso verde e blu – <em>Red</em>, <em>Green</em> e <em>Blue</em>, appunto.<br />
+La quantità di ciascun colore è determinata da tre valori di 8 bit ciascuno e può quindi variare da 0 a 255 (2<sup>8</sup>).<br />
+I possibili colori della codifica RGB possono essere calcolati o moltiplicando fra loro i tre valori di R, G e B:</p>
+
+<pre><code>256 * 256 * 256 = 16.777.216
+</code></pre>
+
+<p>oppure considerando i tre byte un unico valore binario di 24 cifre:</p>
+
+<pre>
+2<sup>24</sup> = 16.777.216
+</pre>
+
+<p>Un colore RGB con tutti e tre i suoi byte a zero è nero; uno con tutti i byte di valore 255 è bianco. 
+Se assegnamo un valore solo a uno dei tre byte, otterremo delle gradazioni di rosso, verde o blu:</p>
+
+<table class="rgb">
+<tr>
+    <td style="background-color:rgb(0,0,0)"></td>
+    <td>RGB(0,0,0)</td>
+</tr>
+<tr>
+    <td style="background-color:rgb(255,255,255)"></td>
+    <td>RGB(255,255,255)</td>
+</tr>
+<tr>
+    <td style="background-color:rgb(234,0,0)"></td>
+    <td>RGB(234,0,0)</td>
+</tr>
+<tr>
+    <td style="background-color:rgb(0,111,0)"></td>
+    <td>RGB(0,111,0)</td>
+</tr>
+<tr>
+    <td style="background-color:rgb(0,0,80)"></td>
+    <td>RGB(0,0,80)</td>
+</tr>
+</table>
+
+<p>Fra questi due estremi ci sono le restanti 16.777.214 possibili combinazioni dei tre valori; per esempio, il colore di sfondo dei brani di codice in questa pagina è:</p>
+
+<table class="rgb">
+<tr>
+    <td style="background-color:rgb(232,232,222)"></td>
+    <td>RGB(232,232,222)</td>
+</tr>
+</table>
+
+<p>Gli stessi valori possono essere espressi, più comodamente, in notazione esadecimale:</p>
+
+<table class="rgb">
+<tr>
+    <td style="background-color:#000000"></td>
+    <td>000000</td>
+</tr>
+<tr>
+    <td style="background-color:#FFFFFF)"></td>
+    <td>FFFFFF</td>
+</tr>
+<tr>
+    <td style="background-color:#ea0000"></td>
+    <td>ea0000</td>
+</tr>
+<tr>
+    <td style="background-color:#006f00"></td>
+    <td>006f00</td>
+</tr>
+<tr>
+    <td style="background-color:#000050"></td>
+    <td>000050</td>
+</tr>
+<tr>
+    <td style="background-color:#e8e8de"></td>
+    <td>e8e8de</td>
+</tr>
+</table>
+
+<!--
+@todo completare il paragrafo
+-->
+
+<hr />
+
 <p>C'è qualcosa, in tutto questo, sulla quale vorrei che tu soffermassi la
 tua attenzione.
 I numeri <em>descrivono</em> una quantità, non <em>sono</em> una quantità.
 La quantità di fiammiferi che vedi qui sul mio tavolo, rimane la stessa
 sia che tu la chiami 4, 100 o IV, così come rimarrebbe la stessa se tu
-la chiamassi <em>five</em> o <em>cinco</em>.
-La quantità esisteva da prima che esistessero i numeri e gli
+la chiamassi <em>five</em> o <em>cinco</em>.</p>
+
+<p>La quantità esisteva da prima che esistessero i numeri e gli
 sopravviverà.</p>
 
 <p>I numeri li abbiamo inventati noi, la quantità, no.</p>
