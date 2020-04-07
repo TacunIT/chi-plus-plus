@@ -89,8 +89,41 @@ Se sostituiamo le lettere con i numeri, otteniamo:
 1*10 + 2*1 = 3*4
 </pre>
 
+<!--
+@todo aggiungere paragrafo sui numeri esasecimali
+-->
+
+È quello che avviene con la numerazione esadecimale, che utilizza le lettere dalla A alla F in aggiunta ai dieci valori della numerazione araba:
+
+<table class="esadecimale">
+    <tr>
+        <td>0</td><td>1</td><td>2</td><td>3</td>
+        <td>4</td><td>5</td><td>6</td><td>7</td>
+        <td>8</td><td>9</td><td>A</td><td>B</td>
+        <td>C</td><td>D</td><td>E</td><td>F</td>
+    </tr>
+</table>
+
+La numerazione esadecimale viene usata nella codifica RGB (*Red*, *Green*, *Blue*) dei colori delle pagine Web.
+Nella codifica RGB, ciascun colore è definito come una combinazione di rosso verde e blu. 
+La quantità di ciascun colore è definita da tre valori di 8 bit ciascuno e può quindi variare da 0 a 255 (2<sup>8</sup>).
+Un colore RGB con tutti i suoi byte
+
+I possibili colori della codifica RGB possono essere calcolati o moltiplicando fra loro i tre valori di R, G e B: 
+
+```
+256 * 256 * 256 = 16.777.216
+```
+
+oppure considerando i tre byte un unico valore binario di 24 cifre:
+
+<pre>
+2<sup>24</sup> = 16.777.216
+</pre>
+
 ---
 
+Nei sistemi di numerazione *posizionali* il valore di una cifra dipende dalla sua posizione: le cifre a sinistra hanno più valore delle cifre a destri. 
 Ma non tutti i sistemi di numerazione funzionano allo stesso modo.
 Se tu chiedessi a un antico romano di calcolare il numero delle uova, ti
 risponderebbe:
