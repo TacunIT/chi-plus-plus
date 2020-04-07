@@ -9,12 +9,7 @@ seguente:   sistemi-di-numerazione
 quote:      "È stata una giornata estenuante: questa mattina ho tolto una virgola dal mio codice e stasera ce l'ho rimessa"
 ---
 
-Le principali discipline dell'informatica sono:
--   la gestione del personale;
--   la gestione dei progetti;
--   la gestione dei sistemi;
--   la programmazione.
-
+Le principali discipline dell'informatica sono: la gestione del personale, la gestione dei progetti, la gestione dei sistemi la programmazione.  
 Un buon maestro deve essere abile in tutte le discipline, ma può
 eccellere solo in una di esse, perché per arrivare all'eccellenza dovrà
 dedicare a quella disciplina tutta la sua vita e nessuno ha più di una
@@ -25,6 +20,15 @@ perché solo conoscendo le problematiche connesse a ciascuna fase e a
 ciascuna disciplina, potrà raggiungere l'eccellenza in una di esse.
 La disciplina più alta é la programmazione, perché non ha a che fare con
 entità reali, ma solo con concetti astratti.
+
+Non c'è differenza fra lo scrivere codice e il gestire un'azienda. È
+come osservare una medesima città su carte di diversa scala. Se il
+rapporto di scala è basso, si avrà una buona visione di insieme, ma
+pochi dettagli; se il rapporto di scala è alto, si avranno molti
+dettagli, ma una visione di insieme limitata. La città, però, sarà
+sempre la stessa.
+
+---
 
 Nella *Bhagavad Gita* si dice:
 
@@ -74,10 +78,6 @@ Il buon programmatore rifugge la ridondanza, perché la ridondanza
 diminuisce l'efficienza del codice.
 Il programmatore è Mercurio, il sistemista è Vulcano.
 
-Una volta chiesi al maestro Canaro: “Maestro, cosa facevano i paranoici
-prima che fosse inventata l'informatica?” il maestro Canaro ci pensò
-un po' su, poi rispose: “Ormeggiavano le barche.”.
-
 ---
 
 Un buon programmatore dovrebbe conoscere più di un linguaggio di
@@ -109,13 +109,9 @@ che passa fra un sessuologo e un pornodivo.
 
 ---
 
-Non c'è differenza fra lo scrivere codice e il gestire un'azienda. È
-come osservare una medesima città su carte di diversa scala. Se il
-rapporto di scala è basso, si avrà una buona visione di insieme, ma
-pochi dettagli; se il rapporto di scala è alto, si avranno molti
-dettagli, ma una visione di insieme limitata. La città, però, sarà
-sempre la stessa.
-
+Una volta chiesi al maestro Canaro: “Maestro, cosa facevano i paranoici
+prima che fosse inventata l'informatica?” il maestro Canaro ci pensò
+un po' su, poi rispose: “Ormeggiavano le barche.”.
 
 <!--
     @todo applicare le categorie caratteriali aristoteliche al SW.
