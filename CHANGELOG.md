@@ -1,3 +1,7 @@
+## 0.8.25 (April 09, 2020)
+  - Corretta la gestione della navigazione nel Manuale
+  - Aggiunta la variabile status ai dati delle pagine del Manuale
+
 ## 0.8.24 (April 09, 2020)
   - Corretto codice helloworld.cpp
   - Unificati gli stili del sito e della proposta. Differenziati solo gli stili per la stampa.
