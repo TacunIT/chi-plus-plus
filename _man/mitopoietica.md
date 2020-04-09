@@ -5,8 +5,6 @@ class:      capitolo
 index:      3
 title:      Mitopoietica del C'hi++
 permalink:  /man/mitopoietica
-precedente: incipit
-seguente:   il-programmatore
 quote:      "Il settimo giorno, Dio fece il backup"
 ---
 

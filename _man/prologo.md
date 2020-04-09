@@ -5,9 +5,7 @@ class:      capitolo
 index:      1
 title:      Prologo 
 h1:         Prologo
-permalink:  /man/prologo
-precedente: indice
-seguente:   incipit
+quote:      "In principio era il BIOS"
 ---
 
 Nacqui da famiglia ricca, ma troppo tardi.  

@@ -5,8 +5,6 @@ class:      indice
 index:      0
 title:      Indice
 h1:         Indice
-precedente: dedica.html
-seguente:   premessa.html
 permalink:  /man/indice
 ---
 

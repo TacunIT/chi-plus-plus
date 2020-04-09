@@ -1,13 +1,11 @@
 ---
+status:     bozza
 layout:     manuale
 class:      capitolo
 index:      13
 title:      L'ereditrietà
 permalink:  /man/ereditarieta
-precedente: polimorfismo
-seguente:   debug
-status:     bozza
-quote:      ""
+quote:      "Non accetterei mai di far parte di una rete che abbia un server come me fra i suoi nodi"
 ---
 
 <blockquote class="motto">

@@ -6,8 +6,6 @@ index:      2
 title:      Incipit
 h1:         In C pit
 permalink:  /man/incipit
-precedente: prologo
-seguente:   mitopoietica
 quote:      "Nel futuro, ognuno sarà famoso per 15 megabyte"
 ---
 

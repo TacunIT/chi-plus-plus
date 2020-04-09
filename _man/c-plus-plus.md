@@ -5,8 +5,6 @@ class:      capitolo
 index:      7
 title:      Il C++
 permalink:  /man/c-plus-plus
-precedente: linguaggi-di-programmazione
-seguente:   commenti
 quote:      "Non chiederti cosa può fare per te il sistema operativo;
 chiediti invece cosa puoi fare tu, per il sistema operativo"
 ---
