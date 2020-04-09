@@ -57,7 +57,6 @@
 </header>
 
         <main 
-        class="redazione"
         
         >
             
@@ -261,8 +260,7 @@ I possibili colori della codifica RGB possono essere calcolati o moltiplicando f
 2<sup>24</sup> = 16.777.216
 </pre>
 
-<p>Un colore RGB con tutti e tre i suoi byte a zero è nero; uno con tutti i byte di valore 255 è bianco. 
-Se assegnamo un valore solo a uno dei tre byte, otterremo delle gradazioni di rosso, verde o blu:</p>
+<p>Un colore RGB con tutti e tre i suoi byte a zero è nero; uno con tutti i byte di valore 255 è bianco.</p>
 
 <table class="rgb">
 <tr>
@@ -273,6 +271,12 @@ Se assegnamo un valore solo a uno dei tre byte, otterremo delle gradazioni di ro
     <td style="background-color:rgb(255,255,255)"></td>
     <td>RGB(255,255,255)</td>
 </tr>
+</table>
+
+<p>Fra questi due estremi ci sono le restanti 16.777.214 possibili combinazioni dei tre valori.
+Se assegnamo un valore solo a uno dei tre byte, otterremo delle gradazioni di rosso, verde o blu:</p>
+
+<table class="rgb">
 <tr>
     <td style="background-color:rgb(234,0,0)"></td>
     <td>RGB(234,0,0)</td>
@@ -287,16 +291,21 @@ Se assegnamo un valore solo a uno dei tre byte, otterremo delle gradazioni di ro
 </tr>
 </table>
 
-<p>Fra questi due estremi ci sono le restanti 16.777.214 possibili combinazioni dei tre valori; per esempio, il colore di sfondo dei brani di codice in questa pagina è:</p>
+<p>Se attribuiamo dei valori a tutti e tre i byte, otterremo dei colori composti.
+Per esempio, il colore di sfondo dei brani di codice o il colore dei link di navigazione:</p>
 
 <table class="rgb">
 <tr>
     <td style="background-color:rgb(232,232,222)"></td>
     <td>RGB(232,232,222)</td>
 </tr>
+<tr>
+    <td style="background-color:rgb(85,85,0)"></td>
+    <td>RGB(85,85,0)</td>
+</tr>
 </table>
 
-<p>Gli stessi valori possono essere espressi, più comodamente, in notazione esadecimale:</p>
+<p>Gli stessi valori possono essere espressi in notazione esadecimale:</p>
 
 <table class="rgb">
 <tr>
@@ -323,25 +332,26 @@ Se assegnamo un valore solo a uno dei tre byte, otterremo delle gradazioni di ro
     <td style="background-color:#e8e8de"></td>
     <td>e8e8de</td>
 </tr>
+<tr>
+    <td style="background-color:#555500"></td>
+    <td>555500</td>
+</tr>
 </table>
 
-<!--
-@todo completare il paragrafo
--->
+<p>L’unica diffferenza è che la numerazione esadecimale è più facile da utilizzare e da memorizzare, perché ciascuna lettera corrisponde a un byte.
+Il valore binario e il colore visualizzato, rimangono gli stessi, indipendentemente dal modo in cui tu li vuoi misurare.</p>
 
 <hr />
 
-<p>C'è qualcosa, in tutto questo, sulla quale vorrei che tu soffermassi la
+<p>C’è qualcosa, in tutto questo, sulla quale vorrei che tu soffermassi la
 tua attenzione.
-I numeri <em>descrivono</em> una quantità, non <em>sono</em> una quantità.
+I numeri <em>descrivono</em> un valore, non <em>sono</em> un valore.
 La quantità di fiammiferi che vedi qui sul mio tavolo, rimane la stessa
 sia che tu la chiami 4, 100 o IV, così come rimarrebbe la stessa se tu
-la chiamassi <em>five</em> o <em>cinco</em>.</p>
-
-<p>La quantità esisteva da prima che esistessero i numeri e gli
-sopravviverà.</p>
-
-<p>I numeri li abbiamo inventati noi, la quantità, no.</p>
+la chiamassi <em>five</em> o <em>cinco</em>.<br />
+I valori esistevano da prima che esistessero i numeri e gli
+sopravviveranno.<br />
+I numeri li abbiamo inventati noi, i valori, no.</p>
 
 
             </section>

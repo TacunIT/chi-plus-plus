@@ -1,6 +1,6 @@
 # TODO
 
-@todo - Aggiornare la struttura delle directory nel file README.md
+@todo - sostituire la variabile bozza/redazione nelle pagine del Manuale con status {bozza, pubblicato, revisione }
 
 @todo - Va verificata l'ammissibilità delle "Leggi" dello Spazionismo.   
 Non è stettamente necessario, perché hanno un valore prevalentemente simbolico, ma visto che sono la base di tutta questa filosofia, se fossero smaccatamente false è meglio saperlo prima che le utilizzi nel testo.  
