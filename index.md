@@ -11,9 +11,8 @@ dell'Esistenza nei termini dell'informatica.<br />
 Questa miscela di spiritualità e tecnologia è evidente già nel nome
 <i>C'hi++</i> &mdash; un gioco di parole fra il termine giapponese
 <i>C'hi</i>, ovvero: <i>soffio vitale</i>, e il linguaggio di
-programmazione chiamato: <i>C++</i> &mdash; e nel modo in cui verrà
-gestita l'evoluzione della disciplina, che è lo stesso che viene
-utilizzato per il software <i>open-source</i>.<br />
+programmazione chiamato: <i>C++</i> &mdash;.
+Un altro richiamo è nel modo in cui verrà gestita l'evoluzione della disciplina: lo stesso che viene utilizzato per il software <i>open-source</i>.<br />
 I precetti del C'hi++ saranno illustrati in un libro dal titolo:
 <i>C'hi++ - Il senso della vita è il debug</i>
 e sono riassunti nel manifesto:
@@ -41,6 +40,7 @@ come la tendenza di tutta la materia a tornare all'Uno primigenio e
 dell'Elettricità, che al contrario, tende a dividere.
 All'inizio del Secolo scorso, infine, i Futuristi hanno mitizzato i simboli
 del progresso tecnologico &mdash; velocità, eliche, aeroplani, automobili &mdash;, rendendoli l'oggetto della loro arte.
+<!-- @todo: aggiungere nota sulla scienza -->
 Nulla di strano, quindi, che all'inizio di questo Millennio
 si tenti un paragone fra le regole, note, del software
 e le regole ignote dell'Universo in cui viviamo.<br />
@@ -57,9 +57,9 @@ anni, posso dire che sì: una spiegazione più semplice esiste ed è anche
 compatibile con molti dei princip&icirc; delle religioni canoniche,
 alle quali C'hi++ non vuole sostituirsi, ma affiancarsi. <br />
 <br />
-Ovviamente, il C'hi++ non è una spiegazione assoluta e definitiva del
-Significato dell'Esistenza, ma soltanto un modello incompleto e perfettibile.
-È per questo motivo, che ha una versione, come il software: perché possa
+Il C'hi++ non si propone come una spiegazione assoluta e definitiva del
+Significato dell'Esistenza, ma come un modello incompleto e perfettibile.
+È per questo motivo che ha una versione, come il software: perché possa
 evolvere col tempo, così come avviene per il software.
 Questa è la prima versione del programma Photoshop, nel 1990:
 <p class="immagine"><img src="assets/img/photoshop-v1.jpg"></p>
@@ -83,7 +83,7 @@ nome: <i>Spazionismo</i>
 (lo so che non è un nome serio, ma quando ho cominciato a formulare questa
 teoria, quindici anni fa, non avrei mai immaginato di renderla pubblica).<br />
 <br />
-Per lo Spazonismo l'Universo è costituito da elementi infinitesimali
+Per lo Spazonismo, l'Universo è costituito da elementi infinitesimali
 dotati di “esistenza potenziale”.
 Così come lo schermo di un computer è costituito da una matrice
 bidimensionale di pixel, generalmente spenti, ma capaci di accendersi
@@ -96,7 +96,7 @@ La vita dell'Universo è vista come un ciclo continuo:<br />
 <b>Fase 1.</b> L'universo è vuoto, tutta l'energia è concentrata in
 un'unico punto, tenuta insieme dalla Gravità.<br />
 <br />
-<b>Fase 2.</b> L'Elettricità (ovvero una forza che causa separazione)
+<b>Fase 2.</b> L'Elettricità (ovvero una Forza che causa separazione)
 sopraffà la Gravità e causa l'esplosione dell'Uno.
 L'energia comincia a espandersi nell'Universo, irradiando gli spazoni
 che quindi assumono massa ed esistenza, generando le stelle e i pianeti
@@ -128,14 +128,10 @@ si afferma qualcosa di piuttosto simile:
 Una volta che l’Universo collassato esploderà nuovamente, i casi possibili
 saranno due:<br />
 <br />
-<b>Caso 1.</b> Potrebbe essere che un <i>Big Bang</i> avvenga solo in determinate
-condizioni e che quelle condizioni portino necessariamente a un Universo
-identico a quello come noi lo conosciamo adesso; quindi, se l’Uno esploderà
-di nuovo, ricomincerà tutto da capo.<br />
+<b>Caso 1.</b> Potrebbe essere che un <i>Big Bang</i> avvenga solo in determinate condizioni e che quelle condizioni portino necessariamente a un Universo identico a quello come noi lo conosciamo adesso; quindi, se l’Uno esploderà di nuovo, ricomincerà tutto da capo.<br />
+<!-- todo: aggiungere nota su processo 68 -->
 <br />
-<b>Caso 2.</b> Se ogni <i>Big Bang</i> avviene in circostanze e con modalità specifiche
-quando l'Uno esploderà di nuovo, nascerà un nuovo Universo, che potrà avere
-pochi o nessun punto di contatto con quello corrente.<br />
+<b>Caso 2.</b> Se ogni <i>Big Bang</i> avviene in circostanze e con modalità specifiche, quando l'Uno esploderà di nuovo, nascerà un nuovo Universo, che potrà avere pochi o nessun punto di contatto con quello corrente.<br />
 <br />
 La prima ipotesi è possibile, ma poco probabile, quindi diamo per scontato
 che quella corretta sia la seconda.
@@ -192,6 +188,6 @@ Per questo motivo, secondo il C'hi++, “<i>il senso della Vita è il debug</i>�
 perché solo analizzando e correggendo i nostri errori, così come si fa
 con il software, potremo migliorare la “forma” dell'Universo e, di
 conseguenza, le nostre esistenze.<br />
-Riassumendo, il Paradiso e l'Inferno non sono altrove: sono solo due
+In alre parole, il Paradiso e l'Inferno non sono altrove: sono solo due
 stati possibili dell'Universo e siamo noi, con le nostre azioni e le
 nostre intenzioni, a decidere in quale dei due vivere.
