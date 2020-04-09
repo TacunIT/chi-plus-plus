@@ -1,9 +1,9 @@
 ---
+status:     pubblicato
 layout:     default
 class:      pagina
 title:      Sostiene Aristotele
 permalink:  /sostiene-aristotele/
-bozza:      false
 footer:     true
 ---
 

@@ -6,7 +6,7 @@ title:      Le classi
 permalink:  /man/classi
 precedente: espressioni-e-operatori
 seguente:   polimorfismo
-bozza:      true
+status:     bozza
 quote:      ""
 ---
 

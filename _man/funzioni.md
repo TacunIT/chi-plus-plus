@@ -6,7 +6,7 @@ title:      Le funzioni
 permalink:  /man/funzioni
 precedente: espressioni-e-operatori
 seguente:   classi
-bozza:      true
+status:     bozza
 quote:      "Call me reentrant"
 ---
 

@@ -1,4 +1,5 @@
 ---
+status:     pubblicato
 layout:     manuale
 class:      capitolo
 index:      7
@@ -6,11 +7,9 @@ title:      Il C++
 permalink:  /man/c-plus-plus
 precedente: linguaggi-di-programmazione
 seguente:   commenti
-bozza:      false
 quote:      "Non chiederti cosa può fare per te il sistema operativo;
 chiediti invece cosa puoi fare tu, per il sistema operativo"
 ---
-
 
 In uno dei suoi libri, Bjarne Stroustroup definì il C++: 
 

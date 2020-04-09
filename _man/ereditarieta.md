@@ -6,7 +6,7 @@ title:      L'ereditrietà
 permalink:  /man/ereditarieta
 precedente: polimorfismo
 seguente:   debug
-bozza:      true
+status:     bozza
 quote:      ""
 ---
 

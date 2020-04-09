@@ -6,7 +6,7 @@ title:      Il C'hi++
 permalink:  /man/chi-plus-plus
 precedente: debug
 seguente:   spazionismo
-bozza:      true
+status:     bozza
 quote:      "Non è necessario che crediate in Dio, ma dovete credere nel Codice."
 ---
 
