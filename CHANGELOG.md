@@ -1,3 +1,9 @@
+## 0.8.24 (April 09, 2020)
+  - Corretto codice helloworld.cpp
+  - Unificati gli stili del sito e della proposta. Differenziati solo gli stili per la stampa.
+  - Modifiche a index.html
+  - Aggiunto paragrafo su numerazione esadecimale al capitolo sui sistemi di numerazione
+  - Corretto allineamento link del menu Manuale
 
 ## 0.8.23 (April 05, 2020)
   - Completata prima stesura capitolo C++
