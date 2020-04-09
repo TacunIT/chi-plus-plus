@@ -13,15 +13,9 @@
     
         </header>
 
-        <main 
-        {% if page.bozza %}class="bozza"
-        {% elsif page.redazione %}class="redazione"
-        {% endif %}
-        >
+        <main class="{{ page.status  }}">
             
         {% if page.class == "capitolo" %}
-
-            
 
             <h1>
                 {{ page.title }}

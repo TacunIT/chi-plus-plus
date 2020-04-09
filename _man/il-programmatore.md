@@ -1,4 +1,5 @@
 ---
+status:     pubblicato
 layout:     manuale
 title:      Il buon programmatore
 class:      capitolo

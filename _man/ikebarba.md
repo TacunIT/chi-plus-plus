@@ -6,7 +6,7 @@ title:      L'Ikebarba
 permalink:  /man/ikebarba
 precedente: chi-plus-plus
 seguente:   epilogo
-bozza:      true
+status:     bozza
 quote:      "*.* è il migliore"
 ---
 

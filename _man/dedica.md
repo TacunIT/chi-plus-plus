@@ -1,4 +1,5 @@
 ---
+status:     pubblicato
 layout:     manuale
 class:      dedica
 index:      0

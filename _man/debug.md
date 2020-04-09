@@ -6,7 +6,7 @@ title:      Il debug
 permalink:  /man/debug
 precedente: ereditarieta
 seguente:   chi-plus-plus
-bozza:      true
+status:     bozza
 quote:      "Non accetterei mai di far parte di una rete che abbia un server come me fra i suoi nodi"
 ---
 

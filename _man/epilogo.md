@@ -6,7 +6,7 @@ title:      Epilogo
 permalink:  /man/epilogo
 precedente: ikebarba
 seguente:   poesia-funeraria
-bozza:      true
+status:     bozza
 quote:      "Dopo di me, il reboot"
 ---
 

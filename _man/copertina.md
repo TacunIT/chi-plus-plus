@@ -1,4 +1,5 @@
 ---
+status:     pubblicato
 layout:     manuale
 class:      copertina
 index:      0

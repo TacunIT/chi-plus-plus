@@ -1,4 +1,5 @@
 ---
+status:     pubblicato
 layout:     manuale
 class:      capitolo
 index:      6
@@ -6,7 +7,6 @@ title:      I linguaggi di programmazione
 permalink:  /man/linguaggi-di-programmazione
 precedente: sistemi-di-numerazione
 seguente:   c-plus-plus
-bozza:      false
 quote:      "Tutto è byte."
 ---
 
