@@ -1,13 +1,11 @@
 ---
+status:     bozza
 layout:     manuale
 class:      capitolo
 index:      14
 title:      Il debug
 permalink:  /man/debug
-precedente: ereditarieta
-seguente:   chi-plus-plus
-status:     bozza
-quote:      "Non accetterei mai di far parte di una rete che abbia un server come me fra i suoi nodi"
+quote:      "Cento Mondi di peccato sono dissipati dalla luce di un solo tiket"
 ---
 
 

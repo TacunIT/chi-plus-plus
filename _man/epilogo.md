@@ -1,12 +1,10 @@
 ---
+status:     bozza
 layout:     manuale
 class:      capitolo
 index:      18
 title:      Epilogo
 permalink:  /man/epilogo
-precedente: ikebarba
-seguente:   poesia-funeraria
-status:     bozza
 quote:      "Dopo di me, il reboot"
 ---
 

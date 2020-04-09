@@ -1,15 +1,12 @@
 ---
+status:     bozza
 layout:     manuale
 class:      capitolo
 index:      10
 title:      Le funzioni
 permalink:  /man/funzioni
-precedente: espressioni-e-operatori
-seguente:   classi
-status:     bozza
-quote:      "Call me reentrant"
+quote:      "Call me: IsNull"
 ---
-
 
 
 Funzioni ricorsive

@@ -7,8 +7,6 @@ title:      Copertina
 H1:         C'hi++
 h2 :        Il senso della Vita è il debug
 permalink:  /man/
-precedente: /
-seguente:   dedica
 ---
 
 <img class="logo" 

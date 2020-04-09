@@ -7,8 +7,6 @@ title:      Dedica
 h1:         Dedica
 h2:         
 permalink:  /man/dedica
-precedente: /man/
-seguente:   indice
 no-index:   true
 ---
 
