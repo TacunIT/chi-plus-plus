@@ -535,7 +535,7 @@ Tu sai che il primo programma che si impara in ogni linguaggio è di solito una 
 <pre>
 int main(int argc, char * argv)
 {
-	cout << "Hello, World!" << endl;
+    cout << "Hello, World!" << endl;
 }
 </pre>
 
@@ -544,6 +544,7 @@ Con il C'hi++ è la stessa cosa, solo che il Mondo lo crei davvero.
 
 ### L'Annosa Dicotomia
 Nel racconto all'inizio del libro comparirà anche quello che poi sarà uno dei temi ricorrenti del C'hi++, ovvero l'Annosa Dicotomia fra ciò che desideriamo e ciò di cui realmente abbiamo bisogno:
+<!-- @todo: completare revisione -->
 
 <div class="citazione">
 Una volta di più, mi trovo a dover fronteggiare l’Annosa Dicotomia fra ciò che il cliente desidera e quello di cui realmente ha bisogno e, una volta di più, sarà ingrato compito dell’uomo informatico quello di venire apparentemente meno ai propri doveri al fine di produrre qualcosa di consono alle reali esigenze del committente.
