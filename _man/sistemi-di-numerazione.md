@@ -7,7 +7,7 @@ permalink:  /man/sistemi-di-numerazione
 precedente: il-programmatore
 seguente:   linguaggi-di-programmazione
 quote:      "Ci sono 10 tipi di persone: quelli che capiscono la numerazione binaria e quelli che non la capiscono."
-redazione: true;
+status:     pubblicata
 ---
 
 Per dissuadere i pochi ostinati che sono arrivati a leggere fin qui,
@@ -200,7 +200,6 @@ oppure considerando i tre byte un unico valore binario di 24 cifre:
 </pre>
 
 Un colore RGB con tutti e tre i suoi byte a zero è nero; uno con tutti i byte di valore 255 è bianco. 
-Se assegnamo un valore solo a uno dei tre byte, otterremo delle gradazioni di rosso, verde o blu: 
 
 <table class="rgb">
 <tr>
@@ -211,6 +210,12 @@ Se assegnamo un valore solo a uno dei tre byte, otterremo delle gradazioni di ro
     <td style="background-color:rgb(255,255,255)"></td>
     <td>RGB(255,255,255)</td>
 </tr>
+</table>
+
+Fra questi due estremi ci sono le restanti 16.777.214 possibili combinazioni dei tre valori.
+Se assegnamo un valore solo a uno dei tre byte, otterremo delle gradazioni di rosso, verde o blu: 
+
+<table class="rgb">
 <tr>
     <td style="background-color:rgb(234,0,0)"></td>
     <td>RGB(234,0,0)</td>
@@ -225,16 +230,21 @@ Se assegnamo un valore solo a uno dei tre byte, otterremo delle gradazioni di ro
 </tr>
 </table>
 
-Fra questi due estremi ci sono le restanti 16.777.214 possibili combinazioni dei tre valori; per esempio, il colore di sfondo dei brani di codice in questa pagina è:
+Se attribuiamo dei valori a tutti e tre i byte, otterremo dei colori composti.
+Per esempio, il colore di sfondo dei brani di codice o il colore dei link di navigazione:
 
 <table class="rgb">
 <tr>
     <td style="background-color:rgb(232,232,222)"></td>
     <td>RGB(232,232,222)</td>
 </tr>
+<tr>
+    <td style="background-color:rgb(85,85,0)"></td>
+    <td>RGB(85,85,0)</td>
+</tr>
 </table>
 
-Gli stessi valori possono essere espressi, più comodamente, in notazione esadecimale:
+Gli stessi valori possono essere espressi in notazione esadecimale:
 
 <table class="rgb">
 <tr>
@@ -261,22 +271,23 @@ Gli stessi valori possono essere espressi, più comodamente, in notazione esadec
     <td style="background-color:#e8e8de"></td>
     <td>e8e8de</td>
 </tr>
+<tr>
+    <td style="background-color:#555500"></td>
+    <td>555500</td>
+</tr>
 </table>
 
-<!--
-@todo completare il paragrafo
--->
+L'unica diffferenza è che la numerazione esadecimale è più facile da utilizzare e da memorizzare, perché ciascuna lettera corrisponde a un byte.
+Il valore binario e il colore visualizzato, rimangono gli stessi, indipendentemente dal modo in cui tu li vuoi misurare.
 
 ---
 
-C\'è qualcosa, in tutto questo, sulla quale vorrei che tu soffermassi la
+C'è qualcosa, in tutto questo, sulla quale vorrei che tu soffermassi la
 tua attenzione.
-I numeri *descrivono* una quantità, non *sono* una quantità.
+I numeri *descrivono* un valore, non *sono* un valore.
 La quantità di fiammiferi che vedi qui sul mio tavolo, rimane la stessa
 sia che tu la chiami 4, 100 o IV, così come rimarrebbe la stessa se tu
-la chiamassi *five* o *cinco*.
-
-La quantità esisteva da prima che esistessero i numeri e gli
-sopravviverà.
-
-I numeri li abbiamo inventati noi, la quantità, no.
+la chiamassi *five* o *cinco*.  
+I valori esistevano da prima che esistessero i numeri e gli
+sopravviveranno.  
+I numeri li abbiamo inventati noi, i valori, no.
