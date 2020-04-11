@@ -2,7 +2,6 @@
 status:     pubblicato
 layout:     manuale
 class:      capitolo
-index:      3
 title:      Mitopoietica del C'hi++
 permalink:  /man/mitopoietica
 quote:      "Il settimo giorno, Dio fece il backup"

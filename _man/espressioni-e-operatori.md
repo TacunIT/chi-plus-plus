@@ -2,7 +2,6 @@
 status:     bozza
 layout:     manuale
 class:      capitolo
-index:      9
 title:      Espressioni e operatori
 permalink:  /man/espressioni-e-operatori
 quote:      "question = 2b | ( ! 2b );"

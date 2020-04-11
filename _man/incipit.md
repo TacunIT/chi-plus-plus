@@ -2,7 +2,6 @@
 status:     pubblicato
 layout:     manuale
 class:      capitolo
-index:      2
 title:      Incipit
 h1:         In C pit
 permalink:  /man/incipit

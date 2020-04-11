@@ -2,7 +2,6 @@
 status:     bozza
 layout:     manuale
 class:      capitolo
-index:      10
 title:      Le funzioni
 permalink:  /man/funzioni
 quote:      "Call me: IsNull"

@@ -2,7 +2,6 @@
 status:     pubblicato
 layout:     manuale
 class:      capitolo
-index:      19
 title:      Poesia funeraria del Maestro
 permalink:  /man/poesia-funeraria
 quote:      "free(Maestro);"

@@ -2,7 +2,6 @@
 status:     pubblicato
 layout:     manuale
 class:      dedica
-index:      0
 title:      Dedica
 h1:         Dedica
 h2:         

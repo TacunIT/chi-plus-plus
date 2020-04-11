@@ -2,7 +2,6 @@
 status:     bozza
 layout:     manuale
 class:      capitolo
-index:      18
 title:      Epilogo
 permalink:  /man/epilogo
 quote:      "Dopo di me, il reboot"

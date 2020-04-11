@@ -255,7 +255,7 @@ Le prime diciassette mattonelle sono occupate, ma dalla diciottesima alla ventic
   </tr>
 </table>
 
-<p>La variabile <em>b</em>, a questo punto, avrà un <em>indirizzo</em>, ovvero il numero della prima mattonella (18) e un <em>valore</em>, ovvero il numero binario contenuto nelle otto mattonelle (23).<br />
+<p>La variabile <em>b</em>, a questo punto, avrà un <em>indirizzo</em>, ovvero il numero della prima mattonella in cui hai scritto (18) e un <em>valore</em>, ovvero il numero binario contenuto nelle otto mattonelle (23).<br />
 Se l’istruzione successiva fosse:</p>
 
 <pre><code>char c = b * 2;
@@ -298,7 +298,22 @@ Se l’istruzione successiva fosse:</p>
   </tr>
 </table>
 
-<p>Il C è un linguaggio estremamente efficiente per gestire tutte le entità che puoi trovare in un computer – numeri, stringhe, flussi di dati –, ma la sua forza è allo stesso tempo il suo limite, perché non funziona altrettanto bene se hai a che fare con oggetti più complessi.<br />
+<p>La moltiplicazione per due, in binario, è l’equivalente della moltiplicazione per dieci nella numerazione decimale.
+Se devi moltiplicare un numero decimale per la base del sistema di numerazione — che è dieci, appunto —, lo sposti a sinistra di un posto e aggiungi uno zero a destra:</p>
+
+<pre><code>    1234 * 10 = 12340
+</code></pre>
+
+<p>Se devi moltiplicare un valore binario per la base del sistema, che in questo caso è due, fai la stessa cosa:</p>
+
+<pre><code>00010111 * 00000010 = 00101110
+</code></pre>
+
+<p>Il valore <code>00101110</code> equivale a 46, che è il doppio di 23.</p>
+
+<hr />
+
+<p>Il C è un linguaggio estremamente efficiente per gestire tutte le entità che puoi trovare in un computer – numeri, stringhe, flussi di dati –, ma la sua forza è allo stesso tempo il suo limite, perché non funziona altrettanto bene se hai a che fare con oggetti più complessi.
 Anche la gestione delle stringhe di testo, nel C, è rudimentale: se tu provassi a eseguire la somma di cui parla il Maestro Canaro nel suo diario:</p>
 
 <pre><code>#include &lt;stdio.h&gt;

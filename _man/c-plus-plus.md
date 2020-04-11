@@ -2,7 +2,6 @@
 status:     pubblicato
 layout:     manuale
 class:      capitolo
-index:      7
 title:      Il C++
 permalink:  /man/c-plus-plus
 quote:      "Non chiederti cosa può fare per te il sistema operativo;
