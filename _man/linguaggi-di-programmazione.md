@@ -15,7 +15,7 @@ L'unico modo di apprendere un linguaggio di programmazione è quello
 di utilizzarlo per scrivere programmi.
 </blockquote>
 
-Il maestro Canaro sosteneva che anche scrivere un manuale su un linguaggio di programmazione è un buon sistema per impararlo.  
+Il maestro Canaro sosteneva che anche scrivere il manuale di un linguaggio di programmazione è un buon sistema per impararlo.  
 
 ---
 
@@ -91,14 +91,9 @@ Invertendo questi concetti, una volta il Maestro Canaro disse:
 
 Noi percepiamo il mondo reale come un insieme di eventi che coinvolgono
 una o più entità.
-Ciascuna entità è identificabile per le sue caratteristiche fisiche e ha
-un suo modo particolare di reagire agli stimoli esterni.  
-Per descrivere le entità, i linguaggi di programmazione hanno i [tipi di
-dato](/man/tipi-di-dato); per descrivere gli eventi,
-hanno [istruzioni e operatori](/man/espressioni-e-operatori).
-Un linguaggio di programmazione è tanto più efficace quanto più i suoi
-tipi di dato e i suoi costrutti sintattici riescono a descrivere le
-entità che il programma dovrà gestire.  
+Ciascuna entità è identificabile per le sue caratteristiche fisiche e ha un suo modo particolare di reagire agli stimoli esterni.  
+Per descrivere le entità, i linguaggi di programmazione hanno i [tipi di dato](/man/tipi-di-dato); per descrivere gli eventi, hanno [istruzioni e operatori](/man/espressioni-e-operatori).
+Un linguaggio di programmazione è tanto più efficace quanto più i suoi tipi di dato e i suoi costrutti sintattici riescono a descrivere le entità che il programma dovrà gestire.  
 
 Ci sono molti linguaggi di programmazione.  
 Ciascun linguaggio sa spiegare bene certe cose e meno bene certe altre.
@@ -118,12 +113,12 @@ fatica e si scrive un codice più affidabile.
 Pitagora sosteneva che “tutto è numero”, ma non è vero.
 La matematica può descrivere gli eventi che si verificano nell'Universo,
 ma non le loro cause o il loro fine.
-In quest'ottica, la matematica è un “linguagggio di programmazone” inadatto.
+In quest'ottica, la matematica è un linguagggio inadatto.
 Descrivere i sentimenti con la matematica è come cercare di descrivere
 rigorosamente un sogno: si ottiene sempre una rappresentazione parziale.
-Meglio descriverlo con una musica, lasciando che le suggestioni
-siano implicite.
-La matematica, inoltre, contiene preposizioni formalmente corrette che sono o false o paradossali, come la radice quadrata di -1.  
+Meglio descriverlo con la musica, lasciando che le suggestioni
+siano implicite.  
+La matematica, inoltre, contiene preposizioni formalmente corrette che sono o false o paradossali, come la radice quadrata di -1.
 Il Maestro Canaro sosteneva che i paradossi sono la crittografia di Dio.
 Se fosse vero, la matematica sarebbe utile non perché quasi sempre è coerente,
 ma perché, di quando in quando, produce dei paradossi.  
@@ -137,11 +132,11 @@ spieghi al tassista dove devi andare o ti fai dare dall'albergo un foglio di
 carta con l'indirizzo e lo fai vedere al guidatore del taxi.
 Entrambe le possibilità hanno lati positivi e negativi.  
 Se scegli di portarti dietro un interprete avrai dei costi in più, ma sarai libero di andare dove vuoi: in albergo, in un ristorante o in un locale notturno.
-Se invece opti per il foglio con l'indirizzo risparmierai i soldi dell'interprete, ma una volta salito in taxi, potrai solo tornare all'albergo.  
-Con i linguaggi di programmazioni avviene la stessa cosa.
-Il codice dei linguaggi interpretati viene letto da un programma chiamato: *interprete*, che traduce le istruzioni scritte dall'umano nel linguaggio del computer e le esegue.
-Il codice dei linguaggi compilati, al contrario, viene letto da un programma chiamato *compilatore*, che lo converte in istruzioni comprensibili dal computer e scrive queste istruzioni in un nuovo file, detto: *eseguibile*.
+Se invece opti per il foglio con l'indirizzo risparmierai i soldi dell'interprete, ma, una volta salito in taxi, potrai solo tornare all'albergo.  
 
+Con i linguaggi di programmazioni avviene la stessa cosa.
+Il codice dei linguaggi interpretati viene letto da un programma chiamato: *interprete* che prima traduce le istruzioni nel linguaggio del computer e poi le esegue.
+Il codice dei linguaggi compilati, al contrario, viene letto da un programma chiamato *compilatore*, che lo converte in istruzioni comprensibili dal computer e scrive queste istruzioni in un nuovo file, detto: *eseguibile*.  
 Anche in questo caso ciascun metodo ha lati positivi e lati negativi.  
 I linguaggi interpretati sono più lenti, perché il passaggio lettura/conversione/esecuzione si ripete ogni volta che il codice viene elaborato; inoltre, richiedono delle risorse di sistema in più da destinare all'interprete.
 In compenso, ogni modifica al codice sorgente viene trasmessa immediatamente anche al programma in esecuzione.  
