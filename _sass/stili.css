@@ -187,6 +187,7 @@ NAV {
      border-color: $colorGold;
      width: 100%;
      font-size: 0;
+     margin: 1rem 0;
 }
 NAV A {
     font-variant-caps: petite-caps;
@@ -199,7 +200,7 @@ HEADER NAV.menu-top A {
     padding: 0.5rem 1.2rem;
 }
 FOOTER NAV {
-    padding: 0.5rem 0;
+    border: none;    
 }
 
 /**
@@ -391,6 +392,7 @@ BODY.manuale.indice HR {
 BODY.manuale.indice H3 {
     margin: 1rem 0;
     position: relative;
+    font-size: 1.3rem;
 }
 
 BODY.manuale.indice H3.home {
