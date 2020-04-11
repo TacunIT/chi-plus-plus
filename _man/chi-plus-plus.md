@@ -2,7 +2,6 @@
 status:     bozza
 layout:     manuale
 class:      capitolo
-index:      15
 title:      Il C'hi++
 permalink:  /man/chi-plus-plus
 quote:      "Non è necessario che crediate in Dio, ma dovete credere nel Codice."

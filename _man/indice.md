@@ -2,7 +2,6 @@
 status:     pubblicato
 layout:     manuale
 class:      indice
-index:      0
 title:      Indice
 h1:         Indice
 permalink:  /man/indice
@@ -12,7 +11,7 @@ permalink:  /man/indice
 
 <section class="indice">
     {% for capitolo in site.man %}
-        {% if capitolo.index > 0 %}
+        {% if capitolo.class == 'capitolo' %}
         <h3 {% if capitolo.status=='bozza' %}class="bozza"{% endif %} >
             <a href="{{ capitolo.url }}">{{ capitolo.title }}</a>
             {% if capitolo.status=='redazione' %}

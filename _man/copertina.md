@@ -2,7 +2,6 @@
 status:     pubblicato
 layout:     manuale
 class:      copertina
-index:      0
 title:      Copertina
 H1:         C'hi++
 h2 :        Il senso della Vita è il debug

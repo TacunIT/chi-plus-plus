@@ -473,9 +473,9 @@ BODY.manuale.capitolo #testo TABLE {
     
 BODY.manuale.capitolo #testo TABLE.memoria TD {
     font-family: Monaco;
-    font-size: 10pt;
-    width: 20px;
-    height: 20px;
+    font-size: 10px;
+    width: 24px;
+    height: 24px;
 }
 BODY.manuale.capitolo #testo TABLE.memoria TD.area {
     background: $tdAreaBackground;

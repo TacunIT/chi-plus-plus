@@ -3,7 +3,6 @@ status:     pubblicato
 layout:     manuale
 title:      Il buon programmatore
 class:      capitolo
-index:      4
 permalink:  /man/il-programmatore
 quote:      "È stata una giornata estenuante: questa mattina ho tolto una virgola dal mio codice e stasera ce l'ho rimessa"
 ---

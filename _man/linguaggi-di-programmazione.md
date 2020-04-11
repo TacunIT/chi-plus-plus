@@ -195,7 +195,7 @@ Le prime diciassette mattonelle sono occupate, ma dalla diciottesima alla ventic
   </tr>
 </table>  
 
-La variabile *b*, a questo punto, avrà un *indirizzo*, ovvero il numero della prima mattonella (18) e un *valore*, ovvero il numero binario contenuto nelle otto mattonelle (23).  
+La variabile *b*, a questo punto, avrà un *indirizzo*, ovvero il numero della prima mattonella in cui hai scritto (18) e un *valore*, ovvero il numero binario contenuto nelle otto mattonelle (23).  
 Se l'istruzione successiva fosse:
 
 ```
@@ -239,7 +239,24 @@ tutto quello che dovresti fare è di cercare un'altra serie di otto mattonelle l
   </tr>
 </table>  
 
-Il C è un linguaggio estremamente efficiente per gestire tutte le entità che puoi trovare in un computer – numeri, stringhe, flussi di dati –, ma la sua forza è allo stesso tempo il suo limite, perché non funziona altrettanto bene se hai a che fare con oggetti più complessi.  
+La moltiplicazione per due, in binario, è l'equivalente della moltiplicazione per dieci nella numerazione decimale.
+Se devi moltiplicare un numero decimale per la base del sistema di numerazione &mdash; che è dieci, appunto &mdash;, lo sposti a sinistra di un posto e aggiungi uno zero a destra:
+
+```
+    1234 * 10 = 12340
+```
+
+Se devi moltiplicare un valore binario per la base del sistema, che in questo caso è due, fai la stessa cosa:
+
+```
+00010111 * 00000010 = 00101110
+```
+
+Il valore `00101110` equivale a 46, che è il doppio di 23.
+
+--- 
+
+Il C è un linguaggio estremamente efficiente per gestire tutte le entità che puoi trovare in un computer – numeri, stringhe, flussi di dati –, ma la sua forza è allo stesso tempo il suo limite, perché non funziona altrettanto bene se hai a che fare con oggetti più complessi.
 Anche la gestione delle stringhe di testo, nel C, è rudimentale: se tu provassi a eseguire la somma di cui parla il Maestro Canaro nel suo diario:
 
 ```

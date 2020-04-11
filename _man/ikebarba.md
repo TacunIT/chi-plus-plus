@@ -2,7 +2,6 @@
 status:     bozza
 layout:     manuale
 class:      capitolo
-index:      17
 title:      L'Ikebarba
 permalink:  /man/ikebarba
 quote:      "*.* è il migliore"

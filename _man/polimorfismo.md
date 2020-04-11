@@ -2,7 +2,6 @@
 status:     bozza
 layout:     manuale
 class:      capitolo
-index:      12
 title:      Il polimorfismo
 permalink:  /man/polimorfismo
 quote:      "Chi vuole capire il computer<br />deve andare nella terra del computer."

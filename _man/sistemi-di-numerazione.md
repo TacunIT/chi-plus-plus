@@ -2,7 +2,6 @@
 status:     pubblicato
 layout:     manuale
 class:      capitolo
-index:      5
 title:      I sistemi di numerazione
 permalink:  /man/sistemi-di-numerazione
 quote:      "Ci sono 10 tipi di persone: quelli che capiscono la numerazione binaria e quelli che non la capiscono."

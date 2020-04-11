@@ -2,7 +2,6 @@
 status:     redazione
 layout:     manuale
 class:      capitolo
-index:      8
 title:      I commenti
 permalink:  /man/commenti
 quote:      ""

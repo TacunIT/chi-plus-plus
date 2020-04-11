@@ -2,7 +2,6 @@
 status:     bozza 
 layout:     manuale
 class:      capitolo
-index:      9
 title:      I tipi di dato
 permalink:  /man/tipi-di-dato
 quote:      "We few, we happy few<br />We bunch of data."

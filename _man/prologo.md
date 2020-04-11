@@ -2,7 +2,6 @@
 status:     pubblicato
 layout:     manuale
 class:      capitolo
-index:      1
 title:      Prologo 
 h1:         Prologo
 quote:      "In principio era il BIOS"
