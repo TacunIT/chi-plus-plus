@@ -278,7 +278,7 @@ In altre parole, il C è un linguaggio che non va oltre l'ambito per cui è stat
 È una convenzione.
 Se domani smettessimo di utilizzare i computer, il C non esisterebbe più, perché tutti i suoi costrutti sono legati al funzionamento degli apparati informatici.  
 Al contrario, il C++ e tutti i linguaggi che si basano sul paradigma a oggetti hanno una componente filosofica che trascende l'ambito informatico.
-Se domani smettessimo di utilizzare i computer, i costrutti che il C++ ha ereditato dal C non avrebbero più senso, ma i concetti di *Classe* e di *Oggetto* resterebbero ancora validi.
+Se domani smettessimo di utilizzare i computer, i costrutti che il C++ ha ereditato dal C non avrebbero più senso, ma i concetti di [classe](/man/classi) e di [oggetto](/man/oggetti) resterebbero ancora validi.
   
 Molti pensano che avere dei principii sia limitativo, ma non è vero. 
 Il C non ha principi e i suoi costrutti sono limitati ai tipi di dato

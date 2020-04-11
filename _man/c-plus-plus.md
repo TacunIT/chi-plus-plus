@@ -18,7 +18,7 @@ Fà che si possa dire la stessa cosa di te.
 
 C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983, quando lavorava ai Laboratori Bell della AT&T.
 Dieci anni prima, il suo collega Dennis Ritchie aveva creato un linguaggio di programmazione chiamato *C*. 
-Il C, come ti ho detto, era estremamente efficace se dovevi programmare i computer, ma – così come molti dei tuoi confratelli – non gestiva altrettanto bene le entità della vita reale.
+Il C, come ti ho detto, era estremamente efficace se dovevi programmare i computer, ma &mdash; così come alcuni dei tuoi confratelli &mdash; non gestiva altrettanto bene le entità della vita reale.
 
 Stroustrup, che ai tempi del suo dottorato aveva lavorato con un linguaggio a oggetti chiamato *Simula67*, pensò che se avesse potuto aggiungere alla velocità di esecuzione del C la possibilità di creare dei nuovi tipi di dato di Simula, avrebbe ottenuto il linguaggio perfetto.
 Aveva ragione.  
@@ -45,17 +45,15 @@ Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l'Ebrai
 
 ---
 
-Le principali novità aggiunte dal C++ al C sono: l'*astrazione dei dati*, la *programmazone a oggetti* e la *generic programming*.  
+Le principali novità aggiunte al C dal C++ sono: l'*astrazione dei dati*, la *programmazone a oggetti* e la *generic programming*.  
 Adessso ti spiego cosa sono, ma tu non preoccuparti se non capisci: approfondiremo tutti questi concetti in seguito. 
 
 I tipi di dato del C sono:
 
     char, int, float, double, array, enum, struct, union
 
-Più che sufficienti per scrivere il *kernel* di Unix, ma decisamente inadeguati per scrivere un programma che gestisca delle linee telefoniche.
-
-Perché un linguaggio di programmazione possa gestire con la stessa facilità un flusso di dati, un utente, una linea telefonica o anche un allevamento di cavalli, è necessario che oltre ai tipi di dato predefiniti, possa gestire anche delle nuove entità definite dal programmatore.
-
+Più che sufficienti per scrivere il *kernel* di Unix, ma decisamente inadeguati per scrivere un programma che gestisca delle linee telefoniche.  
+Perché un linguaggio di programmazione possa gestire con la stessa facilità un flusso di dati, un utente, una linea telefonica o anche un allevamento di cavalli, è necessario che oltre ai tipi di dato predefiniti, possa gestire anche delle nuove entità definite dal programmatore.  
 Questa è quella che si chiama *data abstraction* e il C++ la ottiene per mezzo delle *classi*.
 Le classi sono la rappresentazione, all'interno del codice, di un'entità:
 
@@ -105,8 +103,8 @@ utilizzerebbe i tipi di dato primitivi del linguaggio.
 
 Ciascuna classe ha degli *attributi* e dei *metodi*.
 Gli *attributi* sono dei dati che descrivono le caratteristiche della classe, per esempio, la razza o il sesso di un cavallo.
-I *metodi* sono delle funzioni che definiscono il modo in cui la classe può reagire agli stimoli esterni.
-Nelle classi dell'esempio i *metodi* sono le funzioni che vedi nella sezione *public* della classe.
+I *metodi* sono delle funzioni che definiscono il modo in cui la classe può interagire con gli altri elementi del programma.
+Nelle classi dell'esempio gli *attributi* sono gli elementi che vedi nella sezione `private`, mentre i *metodi* sono le funzioni che vedi nella sezione `public`.
 La funzione che ha lo stesso nome della classe si chiama *costruttore* della classe, perché “spiega” al compilatore come debbano essere creati gli oggetti di questa classe.
 
 Le classi, però, sono la ricetta, non sono la pietanza. 
@@ -136,8 +134,8 @@ MASCHIO: Specie:cavallo, Sesso:m, Razza:lipizzano
 FEMMINA: Specie:cavallo, Sesso:f, Razza:maremmano```
 ```
 
-Perché un linguaggio di programmazione possa dirsi orientato agli
-oggetti, però, oltre alle classi deve poter gestire l'*ereditarietà* e
+Perché un linguaggio di programmazione possa dirsi “orientato agli
+oggetti”, però, oltre alle classi deve poter gestire l'*ereditarietà* e
 il *polimorfismo*.
 
 L'*ereditarietà* permette di definire dei nuove classi come
@@ -229,7 +227,6 @@ Aristotele sostiene che
 Qualcosa di simile vale anche per il software: i programmi con meno righe di codice sono più affidabili e più facili da correggere o da modificare. 
 
 Il C++ ci aiuta in questo senso perché permette il *polimorfismo*, ovvero la capacità di una funzione o di un operatore di svolgere il proprio compito indipendentemente dal tipo di dato che deve gestire.
-
 Se riscriviamo la classe *Monta* usando, al posto dei parametri di tipo *Cavallo*, dei parametri che hanno il tipo della classe base *Animale*:
 
 ```
@@ -300,7 +297,8 @@ FEMMINA: Specie:Cavallo	Razza:lipizzano	Sesso:m
 
 ---
 
-Il codice che abbiamo utilizzato per mostrare il risultato degli accoppiamenti:
+Come ti ho detto, però, un buon programmatore non si accontenta di essere riuscito a produrre il risultato atteso, ma si chiede sempre se ci sia un modo più efficiente per ottenerlo.  
+Nel nostro caso, il codice che abbiamo utilizzato per mostrare il risultato degli accoppiamenti:
 
 ```
 Monta puledro(cavallo, giumenta);
@@ -352,7 +350,7 @@ La sintassi per creare una lista di oggetti di classe *Monta* è:
 list<Monta> monte;
 ```
 
-Fatto ciò, possiamo aggiungere elementi alla nostra lista con la funzione *push_back()*:
+Fatto ciò, possiamo aggiungere elementi alla nostra lista con la funzione *push_back()*, alla quale passeremo direttamente il costruttore della classe:
 
 ```
 monte.push_back(Monta(cavallo, giumenta)); 
@@ -361,6 +359,19 @@ monte.push_back(Monta(asino, giumenta));
 monte.push_back(Monta(cavallo, asina));
 ```
 
+Questo codice è una forma più efficiente di:
+
+```
+Monta m1(cavallo, giumenta); 
+Monta m2(asino, asina);       
+Monta m3(asino, giumenta);     
+Monta m4(cavallo, asina);
+
+monte.push_back(m1);  
+monte.push_back(m2);  
+monte.push_back(m3);
+monte.push_back(m4);
+```
 Per visualizzare il contenuto della lista, indipendentemtente dal numero di elementi, basta l'istruzione:
 
 ```
