@@ -65,9 +65,7 @@ b + c = d
 d * e = bc
 </pre>
 
-Il metodo di calcolo resterebbe lo stesso: quando la quantità da
-valutare è maggiore del numero delle cifre disponibili, si riporta la
-differenza a sinistra, nella colonna di ordine superiore.
+Il metodo di calcolo resta lo stesso: quando la quantità da valutare è maggiore del numero delle cifre disponibili, si riporta la differenza a sinistra, nella colonna di ordine superiore.
 Il valore *bc* della moltiplicazione, significa infatti:
 
 <pre>
@@ -97,12 +95,11 @@ La numerazione esadecimale fa proprio questo: utilizza le lettere dalla A alla F
     </tr>
 </table>
 
-Questo torna molto utile quando hai a che fare con dei byte di otto cifre, come vedremo dopo:
+Questo torna molto utile quando hai a che fare con dei byte di otto cifre, come vedremo dopo.
 
 ---
 
-Nei sistemi di numerazione *posizionali* il valore di una cifra dipende dal punto in cui si trova: le cifre a sinistra hanno più valore delle cifre a destri. 
-Ma non tutti i sistemi di numerazione funzionano allo stesso modo.
+Nei sistemi di numerazione *posizionali* il valore di una cifra dipende dal punto in cui si trova: le cifre a sinistra hanno più valore delle cifre a destra, ma non tutti i sistemi di numerazione funzionano allo stesso modo.
 Se tu chiedessi a un antico romano di calcolare il numero delle uova, ti
 risponderebbe:
 
@@ -183,7 +180,7 @@ Il Maestro Canaro pensava che ciò fosse empio.
 ---
 
 Un esempio di tutto ciò di cui ti ho parlato oggi lo trovi nella codifica RGB dei colori delle pagine Web.
-Nella codifica RGB, ciascun colore è definito come una combinazione di rosso verde e blu – *Red*, *Green* e *Blue*, appunto.  
+Nella codifica RGB, ciascun colore è definito come una combinazione di rosso verde e blu – i colori *Red*, *Green* e *Blue* le cui iniziali costituiscono l'acronimo del sistema.  
 La quantità di ciascun colore è determinata da tre valori di 8 bit ciascuno e può quindi variare da 0 a 255 (2<sup>8</sup>).  
 I possibili colori della codifica RGB possono essere calcolati o moltiplicando fra loro i tre valori di R, G e B: 
 
