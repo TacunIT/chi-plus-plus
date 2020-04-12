@@ -4,8 +4,10 @@ layout:     manuale
 class:      capitolo
 title:      I commenti
 permalink:  /man/commenti
-quote:      ""
+quote:      "Il Compilatore e il Linker non usano carità, tengono i diecimila oggetti per cani di paglia"
 ---
+
+ 
 
 I commenti sono la cosa più importante, quando si programma.
 

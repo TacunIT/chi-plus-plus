@@ -1,802 +1,801 @@
-<!-- Tufts VUE 3.3.0 concept-map (mind-map.vue) 2020-03-14 -->
+<!-- Tufts VUE 3.3.0 concept-map (mind-map.vue) 2020-04-12 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Sat Mar 14 20:23:55 CET 2020 by Carlo on platform Mac OS X 10.15.3 in JVM 13.0.1+9 -->
+<!-- Do Not Remove: Saved date Sun Apr 12 15:57:10 CEST 2020 by Carlo on platform Mac OS X 10.15.3 in JVM 13.0.1+9 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="mind-map.vue"
     created="1267825536130" x="0.0" y="0.0" width="7429.4634"
     height="5044.0957" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1584213835783" size="454864"
-        spec="/Users/Carlo/Developer/Chi++/src/doc/mind-map.vue"
-        type="1" xsi:type="URLResource">
+    <resource referenceCreated="1586699830557" size="465022"
+        spec="/Users/Carlo/Developer/Chi++/_data/mind-map.vue" type="1" xsi:type="URLResource">
         <title>mind-map.vue</title>
-        <property key="File" value="/Users/Carlo/Developer/Chi++/src/doc/mind-map.vue"/>
+        <property key="File" value="/Users/Carlo/Developer/Chi++/_data/mind-map.vue"/>
     </resource>
     <fillColor>#FFFFFF</fillColor>
     <strokeColor>#404040</strokeColor>
     <textColor>#000000</textColor>
     <font>SansSerif-plain-14</font>
     <URIString>http://vue.tufts.edu/rdf/resource/304ae827c0a8010a0179d47fc366704d</URIString>
-    <child ID="555" layerID="374" created="1367875198461" x="-1309.2991"
-        y="-897.91095" width="3746.7573" height="2964.2021"
+    <child ID="555" layerID="374" created="1367875198461" x="-1313.3517"
+        y="-901.8999" width="3746.8066" height="2964.1914"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7bbbe0467f000001019e80b13fc086f2</URIString>
-        <point1 x="-1308.2991" y="-896.91095"/>
-        <point2 x="2436.4583" y="2065.2913"/>
+        <point1 x="-1312.3517" y="-900.8999"/>
+        <point2 x="2432.4548" y="2061.2915"/>
         <ID1 xsi:type="node">556</ID1>
         <ID2 xsi:type="node">551</ID2>
         <ctrlPoint0 x="248.62512" y="4.7571716" xsi:type="point"/>
     </child>
-    <child ID="560" layerID="374" created="1367875444050" x="-1304.9841"
-        y="-899.2384" width="3788.4875" height="2874.9634"
+    <child ID="560" layerID="374" created="1367875444050" x="-1309.0671"
+        y="-903.21216" width="3788.566" height="2874.9385"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-bold-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7bbbe0477f000001019e80b1c33715b5</URIString>
-        <point1 x="-1303.9841" y="-898.2384"/>
-        <point2 x="2482.5034" y="1974.7251"/>
+        <point1 x="-1308.0671" y="-902.21216"/>
+        <point2 x="2478.4988" y="1970.7262"/>
         <ID1 xsi:type="node">556</ID1>
         <ID2 xsi:type="node">553</ID2>
         <ctrlPoint0 x="-26.77002" y="-270.05182" xsi:type="point"/>
     </child>
     <child ID="225" label="affine a" layerID="374"
-        created="1294787944849" x="-3072.0042" y="-3.9347835"
-        width="3482.7048" height="3306.6287" strokeWidth="2.0"
+        created="1294787944849" x="-3111.3374" y="113.82973"
+        width="3518.062" height="3184.863" strokeWidth="2.0"
         strokeStyle="3" autoSized="false" controlCount="1"
         arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/77642314c0a8010d011c34fb16fad81b</URIString>
-        <point1 x="-3071.0042" y="49.78241"/>
-        <point2 x="409.70068" y="3301.6938"/>
+        <point1 x="-3110.3374" y="204.79651"/>
+        <point2 x="405.7247" y="3297.6929"/>
         <ID1 xsi:type="node">84</ID1>
         <ID2 xsi:type="node">222</ID2>
         <ctrlPoint0 x="-561.4822" y="-420.48486" xsi:type="point"/>
     </child>
-    <child ID="432" layerID="374" created="1296160119122" x="-4.081259"
-        y="-154.28375" width="727.88916" height="3200.9502"
+    <child ID="432" layerID="374" created="1296160119122" x="-8.009767"
+        y="-158.20004" width="729.8478" height="3200.8691"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c92a5545c0a8010b008d116ea016b005</URIString>
-        <point1 x="-3.081259" y="-153.28375"/>
-        <point2 x="94.65228" y="3045.6665"/>
+        <point1 x="-7.0097666" y="-157.20004"/>
+        <point2 x="90.70962" y="3041.6692"/>
         <ID1 xsi:type="node">139</ID1>
         <ID2 xsi:type="node">429</ID2>
         <ctrlPoint0 x="1398.0968" y="159.80145" xsi:type="point"/>
     </child>
-    <child ID="281" layerID="374" created="1294870673693" x="247.71864"
-        y="334.29492" width="1240.6595" height="347.39105"
+    <child ID="281" layerID="374" created="1294870673693" x="245.07692"
+        y="330.35486" width="1239.3359" height="348.63617"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283bac0a8010d005730f892aef8f1</URIString>
-        <point1 x="288.62482" y="335.29492"/>
-        <point2 x="1487.3782" y="668.59534"/>
+        <point1 x="285.05008" y="331.35486"/>
+        <point2 x="1483.4128" y="664.7229"/>
         <ID1 xsi:type="node">163</ID1>
         <ID2 xsi:type="node">200</ID2>
         <ctrlPoint0 x="26.28125" y="746.73517" xsi:type="point"/>
     </child>
-    <child ID="384" layerID="374" created="1295992582080" x="-2101.027"
-        y="930.8421" width="1724.4965" height="794.2419"
+    <child ID="384" layerID="374" created="1295992582080" x="-2105.254"
+        y="926.9038" width="1724.9404" height="794.1665"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca3bc0a8010b00b4cbc5047f22c0</URIString>
-        <point1 x="-377.5306" y="1724.084"/>
-        <point2 x="-2100.027" y="931.8421"/>
+        <point1 x="-381.31345" y="1720.0703"/>
+        <point2 x="-2104.254" y="927.9038"/>
         <ID1 xsi:type="node">400</ID1>
         <ID2 xsi:type="node">409</ID2>
         <ctrlPoint0 x="-383.53613" y="1283.114" xsi:type="point"/>
     </child>
-    <child ID="230" layerID="374" created="1294788183425" x="-2847.2527"
-        y="1611.8816" width="3539.1475" height="1682.5315"
+    <child ID="230" layerID="374" created="1294788183425" x="-2851.208"
+        y="1608.9797" width="3539.7322" height="1681.4373"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/77642315c0a8010d011c34fbd56dc4ea</URIString>
-        <point1 x="-2846.2527" y="1674.0261"/>
-        <point2 x="662.5227" y="3293.413"/>
+        <point1 x="-2850.208" y="1670.0869"/>
+        <point2 x="658.5851" y="3289.417"/>
         <ID1 xsi:type="node">228</ID1>
         <ID2 xsi:type="node">218</ID2>
         <ctrlPoint0 x="1008.16846" y="1292.1868" xsi:type="point"/>
     </child>
     <child ID="311" label="affine a" layerID="374"
-        created="1295047399025" x="-2638.5605" y="-823.6448"
-        width="4278.9717" height="3366.2178" strokeWidth="2.0"
+        created="1295047399025" x="-2642.543" y="-827.6472"
+        width="4278.923" height="3366.2253" strokeWidth="2.0"
         strokeStyle="3" autoSized="false" controlCount="1"
         arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86db99a6c0a8010d00397ceafaef4cf0</URIString>
-        <point1 x="1639.411" y="2541.5732"/>
-        <point2 x="-2637.5605" y="-822.6448"/>
+        <point1 x="1635.3795" y="2537.5781"/>
+        <point2 x="-2641.543" y="-826.6472"/>
         <ID1 xsi:type="node">176</ID1>
         <ID2 xsi:type="node">309</ID2>
         <ctrlPoint0 x="-1670.8033" y="554.6109" xsi:type="point"/>
     </child>
-    <child ID="266" layerID="374" created="1294869802335" x="-2288.424"
-        y="32.287743" width="2446.087" height="2340.5378"
+    <child ID="266" layerID="374" created="1294869802335" x="-2154.0476"
+        y="0.5388986" width="2307.7478" height="2368.2852"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283b8c0a8010d005730f8475b3b31</URIString>
-        <point1 x="-2287.424" y="68.66423"/>
-        <point2 x="156.66277" y="2371.8257"/>
+        <point1 x="-2153.0476" y="29.156357"/>
+        <point2 x="152.7001" y="2367.824"/>
         <ID1 xsi:type="node">264</ID1>
         <ID2 xsi:type="node">261</ID2>
         <ctrlPoint0 x="-7.911133" y="-254.33954" xsi:type="point"/>
     </child>
-    <child ID="350" layerID="374" created="1295053456165" x="-1042.7755"
-        y="-1211.4011" width="2511.2354" height="1741.1593"
+    <child ID="350" layerID="374" created="1295053456165" x="-1046.7163"
+        y="-1215.4039" width="2511.0994" height="1741.2191"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/87350b3ec0a8010d010ad41960f8180c</URIString>
-        <point1 x="1467.4595" y="528.7582"/>
-        <point2 x="-1041.7755" y="-1210.4011"/>
+        <point1 x="1463.3834" y="524.8154"/>
+        <point2 x="-1045.7163" y="-1214.4039"/>
         <ID1 xsi:type="node">348</ID1>
         <ID2 xsi:type="node">345</ID2>
         <ctrlPoint0 x="-510.96497" y="29.108932" xsi:type="point"/>
     </child>
-    <child ID="287" layerID="374" created="1294871660397" x="920.2165"
-        y="765.1204" width="573.70135" height="1559.6726"
+    <child ID="287" layerID="374" created="1294871660397" x="917.43616"
+        y="762.52734" width="572.5066" height="1558.2656"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c612c95c0a8010d005730f850ab3407</URIString>
-        <point1 x="955.5901" y="766.1204"/>
-        <point2 x="1492.9178" y="2323.793"/>
+        <point1 x="951.5901" y="763.52734"/>
+        <point2 x="1488.9427" y="2319.793"/>
         <ID1 xsi:type="node">153</ID1>
         <ID2 xsi:type="node">192</ID2>
         <ctrlPoint0 x="780.7749" y="772.1477" xsi:type="point"/>
     </child>
-    <child ID="372" layerID="374" created="1295818590813" x="-2637.1616"
-        y="-1115.4932" width="107.92407" height="113.99487"
+    <child ID="372" layerID="374" created="1295818590813" x="-2641.1616"
+        y="-1119.4932" width="107.92432" height="113.99512"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/b4d46a90c0a8010b0047fc71f069733b</URIString>
-        <point1 x="-2636.1616" y="-1114.4932"/>
-        <point2 x="-2530.2375" y="-1002.4983"/>
+        <point1 x="-2640.1616" y="-1118.4932"/>
+        <point2 x="-2534.2373" y="-1006.49805"/>
         <ID1 xsi:type="node">368</ID1>
         <ID2 xsi:type="node">370</ID2>
     </child>
-    <child ID="389" layerID="374" created="1295993064628" x="-1916.1044"
-        y="-934.855" width="570.9918" height="3269.521"
+    <child ID="389" layerID="374" created="1295993064628" x="-1920.0833"
+        y="-938.85913" width="573.0011" height="3269.539"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/bf4cf484c0a8010b00b4cbc57d6e0109</URIString>
-        <point1 x="-1744.6918" y="2333.666"/>
-        <point2 x="-1915.1044" y="-933.855"/>
+        <point1 x="-1748.573" y="2329.6802"/>
+        <point2 x="-1919.0833" y="-937.85913"/>
         <ID1 xsi:type="node">365</ID1>
         <ID2 xsi:type="node">125</ID2>
         <ctrlPoint0 x="-869.2251" y="860.1477" xsi:type="point"/>
     </child>
-    <child ID="413" layerID="374" created="1296081981528" x="-333.01627"
-        y="679.1127" width="159.53854" height="917.94257"
+    <child ID="413" layerID="374" created="1296081981528" x="-337.0163"
+        y="675.1127" width="159.53854" height="917.9426"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c4881d82c0a8010b0127669d5ceaa08c</URIString>
-        <point1 x="-174.47772" y="680.11273"/>
-        <point2 x="-332.01627" y="1596.0553"/>
+        <point1 x="-178.47772" y="676.1127"/>
+        <point2 x="-336.01627" y="1592.0553"/>
         <ID1 xsi:type="node">414</ID1>
         <ID2 xsi:type="node">411</ID2>
     </child>
-    <child ID="431" layerID="374" created="1296159930696" x="-1325.9974"
-        y="-1169.5339" width="1398.6276" height="4216.0527"
+    <child ID="431" layerID="374" created="1296159930696" x="-1329.9977"
+        y="-1173.5342" width="1398.6278" height="4216.0527"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c928fe2bc0a8010b008d116eb140781d</URIString>
-        <point1 x="71.630135" y="3045.5188"/>
-        <point2 x="-1324.9974" y="-1168.5342"/>
+        <point1 x="67.63014" y="3041.5186"/>
+        <point2 x="-1328.9977" y="-1172.5344"/>
         <ID1 xsi:type="node">429</ID1>
         <ID2 xsi:type="node">12</ID2>
     </child>
-    <child ID="215" layerID="374" created="1294787599818" x="-2160.5803"
-        y="221.99146" width="3015.0657" height="2755.132"
+    <child ID="215" layerID="374" created="1294787599818" x="-2029.218"
+        y="183.46838" width="2879.705" height="2789.6548"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/77642312c0a8010d011c34fb7735134e</URIString>
-        <point1 x="853.4852" y="2976.1233"/>
-        <point2 x="-2159.5803" y="222.99146"/>
+        <point1 x="849.4871" y="2972.123"/>
+        <point2 x="-2028.218" y="184.46838"/>
         <ID1 xsi:type="node">209</ID1>
         <ID2 xsi:type="node">97</ID2>
         <ctrlPoint0 x="-715.47" y="1353.0833" xsi:type="point"/>
     </child>
-    <child ID="453" layerID="374" created="1297287438253" x="-3122.602"
-        y="-603.35767" width="537.2368" height="639.56396"
+    <child ID="453" layerID="374" created="1297287438253" x="-3165.332"
+        y="-606.97876" width="578.7893" height="802.5183"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/0c5ebe74c0a8010b003b6dbd9d9eac9b</URIString>
-        <point1 x="-2586.3652" y="-602.35767"/>
-        <point2 x="-3121.602" y="35.2063"/>
+        <point1 x="-2587.5427" y="-605.97876"/>
+        <point2 x="-3164.332" y="194.53955"/>
         <ID1 xsi:type="node">444</ID1>
         <ID2 xsi:type="node">84</ID2>
     </child>
     <child ID="456" label="affine a" layerID="374"
-        created="1297288532790" x="-3096.4321" y="-263.3363"
-        width="3267.5388" height="2364.4028" strokeWidth="2.0"
+        created="1297288532790" x="-3239.8833" y="-130.37715"
+        width="3407.0256" height="2227.4421" strokeWidth="2.0"
         strokeStyle="3" autoSized="false" controlCount="1"
         arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/0c822760c0a8010b003b6dbdbf2d7362</URIString>
-        <point1 x="-3095.4321" y="-168.30908"/>
-        <point2 x="170.10666" y="2100.0664"/>
+        <point1 x="-3238.8833" y="34.74341"/>
+        <point2 x="166.1423" y="2096.065"/>
         <ID1 xsi:type="node">454</ID1>
         <ID2 xsi:type="node">260</ID2>
         <ctrlPoint0 x="-421.8955" y="-734.0115" xsi:type="point"/>
     </child>
-    <child ID="459" layerID="374" created="1297290511599" x="-3111.683"
-        y="-1048.0605" width="749.2617" height="872.2301"
+    <child ID="459" layerID="374" created="1297290511599" x="-3256.5737"
+        y="-1052.1328" width="889.72217" height="1080.1719"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/0c933af7c0a8010b003b6dbdbc66541f</URIString>
-        <point1 x="-3110.683" y="-176.83044"/>
-        <point2 x="-2373.532" y="-1047.0605"/>
+        <point1 x="-3255.5737" y="27.039062"/>
+        <point2 x="-2377.3755" y="-1051.1328"/>
         <ID1 xsi:type="node">454</ID1>
         <ID2 xsi:type="node">34</ID2>
         <ctrlPoint0 x="-2275.902" y="-638.9819" xsi:type="point"/>
     </child>
-    <child ID="476" layerID="374" created="1297981872448" x="-3564.9482"
-        y="1285.3557" width="264.28638" height="93.416626"
+    <child ID="476" layerID="374" created="1297981872448" x="-3568.9482"
+        y="1281.3557" width="264.28613" height="93.416504"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/35c00e8fc0a8010b016b4be549c6897d</URIString>
-        <point1 x="-3301.6619" y="1286.3556"/>
-        <point2 x="-3563.9482" y="1377.7722"/>
+        <point1 x="-3305.662" y="1282.3557"/>
+        <point2 x="-3567.9482" y="1373.7722"/>
         <ID1 xsi:type="node">88</ID1>
         <ID2 xsi:type="node">468</ID2>
     </child>
-    <child ID="491" layerID="374" created="1298416384848" x="-1735.2131"
-        y="-985.5582" width="3689.0823" height="3772.0488"
+    <child ID="491" layerID="374" created="1298416384848" x="-1739.2124"
+        y="-989.5582" width="3689.0825" height="3772.0488"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4fb7188ec0a8010b006d65fd49229205</URIString>
-        <point1 x="-1734.2131" y="-984.5582"/>
-        <point2 x="1952.8691" y="2785.4907"/>
+        <point1 x="-1738.2124" y="-988.5582"/>
+        <point2 x="1948.8702" y="2781.4907"/>
         <ID1 xsi:type="node">24</ID1>
         <ID2 xsi:type="node">180</ID2>
         <ctrlPoint0 x="-437.71875" y="333.40186" xsi:type="point"/>
     </child>
-    <child ID="489" layerID="374" created="1298330278544" x="-3648.1472"
-        y="-168.79414" width="4007.8818" height="25.548843"
+    <child ID="489" layerID="374" created="1298330278544" x="-3652.1677"
+        y="-172.70476" width="4007.9392" height="27.403915"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4a847d33c0a8010b003256a5692d945c</URIString>
-        <point1 x="358.7346" y="-152.86421"/>
-        <point2 x="-3647.1472" y="-167.79414"/>
+        <point1 x="354.77115" y="-156.71855"/>
+        <point2 x="-3651.1677" y="-171.70476"/>
         <ID1 xsi:type="node">141</ID1>
         <ID2 xsi:type="node">131</ID2>
         <ctrlPoint0 x="-1270.269" y="-129.99823" xsi:type="point"/>
     </child>
-    <child ID="487" layerID="374" created="1298329093653" x="449.14645"
-        y="-334.8781" width="918.28796" height="250.87201"
+    <child ID="487" layerID="374" created="1298329093653" x="445.56323"
+        y="-336.88104" width="917.89" height="248.87286"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4a75cf2ac0a8010b003256a5880ba11a</URIString>
-        <point1 x="450.14645" y="-174.7918"/>
-        <point2 x="1366.4344" y="-85.0061"/>
+        <point1 x="446.56323" y="-178.70097"/>
+        <point2 x="1362.4532" y="-89.00818"/>
         <ID1 xsi:type="node">141</ID1>
         <ID2 xsi:type="node">480</ID2>
         <ctrlPoint0 x="970.60803" y="-532.93146" xsi:type="point"/>
     </child>
-    <child ID="490" layerID="374" created="1298415908120" x="1097.5233"
-        y="104.119995" width="868.5885" height="2680.713"
+    <child ID="490" layerID="374" created="1298415908120" x="1095.5869"
+        y="100.231415" width="866.5471" height="2680.5984"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4f9f022dc0a8010b006d65fd3aeb9688</URIString>
-        <point1 x="1375.1002" y="105.119995"/>
-        <point2 x="1965.1118" y="2783.8328"/>
+        <point1 x="1371.6338" y="101.231415"/>
+        <point2 x="1961.134" y="2779.8298"/>
         <ID1 xsi:type="node">304</ID1>
         <ID2 xsi:type="node">180</ID2>
         <ctrlPoint0 x="608.9416" y="346.7352" xsi:type="point"/>
     </child>
-    <child ID="492" layerID="374" created="1298417746506" x="-1316.6711"
-        y="-896.36975" width="3670.0117" height="3322.9673"
+    <child ID="492" layerID="374" created="1298417746506" x="-1320.6914"
+        y="-900.3655" width="3670.0327" height="3322.9634"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/4fbd1c58c0a8010b006d65fd2935c775</URIString>
-        <point1 x="2352.3408" y="2425.5974"/>
-        <point2 x="-1315.6711" y="-895.36975"/>
+        <point1 x="2348.3413" y="2421.5974"/>
+        <point2 x="-1319.6914" y="-899.3655"/>
         <ID1 xsi:type="node">485</ID1>
         <ID2 xsi:type="node">556</ID2>
         <ctrlPoint0 x="220.7749" y="272.1477" xsi:type="point"/>
     </child>
-    <child ID="508" layerID="374" created="1356903642863" x="-732.11"
-        y="-936.2777" width="1637.5627" height="293.95184"
+    <child ID="508" layerID="374" created="1356903642863" x="-736.3643"
+        y="-940.25195" width="1638.2135" height="295.92395"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/edd4e8c47f000001016c006e47a22c45</URIString>
-        <point1 x="-731.11" y="-864.3707"/>
-        <point2 x="904.45276" y="-935.2777"/>
+        <point1 x="-735.3643" y="-868.3707"/>
+        <point2 x="900.8492" y="-939.25195"/>
         <ID1 xsi:type="node">241</ID1>
         <ID2 xsi:type="node">506</ID2>
         <ctrlPoint0 x="352.9479" y="-389.2648" xsi:type="point"/>
     </child>
-    <child ID="531" layerID="374" created="1366061928600" x="-2186.0825"
-        y="1844.1448" width="3974.3613" height="887.188"
+    <child ID="531" layerID="374" created="1366061928600" x="-2189.9626"
+        y="1842.1434" width="3974.2063" height="885.1891"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/0fa90cdec0a80104005fe568289355a6</URIString>
-        <point1 x="-2185.0825" y="2730.3328"/>
-        <point2 x="1787.2789" y="2660.2324"/>
+        <point1 x="-2188.9626" y="2726.3325"/>
+        <point2 x="1783.2437" y="2656.235"/>
         <ID1 xsi:type="node">379</ID1>
         <ID2 xsi:type="node">529</ID2>
         <ctrlPoint0 x="-774.1404" y="995.53766" xsi:type="point"/>
     </child>
-    <child ID="550" layerID="374" created="1366065478836" x="-1751.6241"
-        y="-778.32495" width="4306.3975" height="2453.7004"
+    <child ID="550" layerID="374" created="1366065478836" x="-1755.6847"
+        y="-782.3033" width="4306.434" height="2453.687"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/0fd9ceb7c0a80104005fe568e69e98dc</URIString>
-        <point1 x="-1750.6241" y="-777.32495"/>
-        <point2 x="2553.7734" y="1674.3755"/>
+        <point1 x="-1754.6847" y="-781.3033"/>
+        <point2 x="2549.7495" y="1670.3838"/>
         <ID1 xsi:type="node">548</ID1>
         <ID2 xsi:type="node">546</ID2>
         <ctrlPoint0 x="-183.05208" y="-22.598145" xsi:type="point"/>
     </child>
-    <child ID="563" layerID="374" created="1367876835884" x="-1501.4957"
-        y="-740.5686" width="3439.688" height="2607.2917"
+    <child ID="563" layerID="374" created="1367876835884" x="-1505.6309"
+        y="-744.5458" width="3439.8188" height="2607.2703"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7bd391557f000001019e80b1b1522422</URIString>
-        <point1 x="-1500.4957" y="-739.5686"/>
-        <point2 x="1937.1923" y="1865.7231"/>
+        <point1 x="-1504.6309" y="-743.5458"/>
+        <point2 x="1933.1879" y="1861.7245"/>
         <ID1 xsi:type="node">564</ID1>
         <ID2 xsi:type="node">561</ID2>
         <ctrlPoint0 x="-421.40082" y="-221.00766" xsi:type="point"/>
     </child>
-    <child ID="566" layerID="374" created="1367877031198" x="-643.2049"
-        y="-987.59814" width="2582.5493" height="2853.9805"
+    <child ID="566" layerID="374" created="1367877031198" x="-647.0647"
+        y="-991.59814" width="2582.4067" height="2853.981"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7bd391557f000001019e80b1b1e589a5</URIString>
-        <point1 x="-642.2049" y="-986.59814"/>
-        <point2 x="1938.3444" y="1865.3823"/>
+        <point1 x="-646.0647" y="-990.59814"/>
+        <point2 x="1934.342" y="1861.3829"/>
         <ID1 xsi:type="node">332</ID1>
         <ID2 xsi:type="node">561</ID2>
         <ctrlPoint0 x="-525.9226" y="-444.4432" xsi:type="point"/>
     </child>
-    <child ID="569" layerID="374" created="1367959210484" x="-1447.4987"
-        y="-849.36945" width="3385.9346" height="2716.0205"
+    <child ID="569" layerID="374" created="1367959210484" x="-1451.5679"
+        y="-853.35516" width="3385.9995" height="2716.0073"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80b9aac47f00000101a8c22b91fef956</URIString>
-        <point1 x="-1446.4987" y="-848.36945"/>
-        <point2 x="1937.4358" y="1865.651"/>
+        <point1 x="-1450.5679" y="-852.35516"/>
+        <point2 x="1933.4318" y="1861.6522"/>
         <ID1 xsi:type="node">567</ID1>
         <ID2 xsi:type="node">561</ID2>
         <ctrlPoint0 x="-377.71875" y="-207.54492" xsi:type="point"/>
     </child>
-    <child ID="598" layerID="374" created="1367963125791" x="-1528.9437"
-        y="-984.2674" width="3550.5332" height="2579.3804"
+    <child ID="598" layerID="374" created="1367963125791" x="-1379.3289"
+        y="-1018.87787" width="3396.9165" height="2609.991"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-bold-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80f585637f00000101a8c22bb053361f</URIString>
-        <point1 x="-1527.9437" y="-983.2674"/>
-        <point2 x="2020.5895" y="1594.113"/>
+        <point1 x="-1378.3289" y="-1017.87787"/>
+        <point2 x="2016.5875" y="1590.1132"/>
         <ID1 xsi:type="node">27</ID1>
         <ID2 xsi:type="node">596</ID2>
         <ctrlPoint0 x="-180.24554" y="-525.7594" xsi:type="point"/>
     </child>
-    <child ID="188" layerID="374" created="1294785548432" x="-2886.0728"
-        y="1271.4666" width="4931.335" height="1049.6599"
+    <child ID="188" layerID="374" created="1294785548432" x="-2889.956"
+        y="1269.2218" width="4931.1855" height="1047.9144"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7749dbd0c0a8010d011c34fb3cde9121</URIString>
-        <point1 x="-2885.0728" y="1495.9971"/>
-        <point2 x="2044.2622" y="2320.1265"/>
+        <point1 x="-2888.956" y="1492.0724"/>
+        <point2 x="2040.2296" y="2316.1362"/>
         <ID1 xsi:type="node">87</ID1>
         <ID2 xsi:type="node">184</ID2>
         <ctrlPoint0 x="-1215.9142" y="788.47833" xsi:type="point"/>
     </child>
-    <child ID="519" layerID="374" created="1362261476628" x="-2134.194"
-        y="378.61072" width="3292.4011" height="1911.8286"
+    <child ID="519" layerID="374" created="1362261476628" x="-2004.0981"
+        y="342.02243" width="3158.2876" height="1944.4202"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/2d1d68f37f00000100f3c66e0be31cfe</URIString>
-        <point1 x="1157.2068" y="2289.4395"/>
-        <point2 x="-2133.194" y="379.61072"/>
+        <point1 x="1153.1896" y="2285.4424"/>
+        <point2 x="-2003.0981" y="343.02243"/>
         <ID1 xsi:type="node">517</ID1>
         <ID2 xsi:type="node">496</ID2>
         <ctrlPoint0 x="-1153.5042" y="549.4019" xsi:type="point"/>
     </child>
-    <child ID="573" layerID="374" created="1367960001737" x="-2700.2952"
-        y="1197.2861" width="4619.7007" height="680.5729"
+    <child ID="573" layerID="374" created="1367960001737" x="-2704.041"
+        y="1195.1371" width="4619.418" height="678.7494"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80d1e9827f00000101a8c22b02dae070</URIString>
-        <point1 x="1918.4045" y="1876.859"/>
-        <point2 x="-2699.2952" y="1390.5684"/>
+        <point1 x="1914.3774" y="1872.8865"/>
+        <point2 x="-2703.041" y="1386.6682"/>
         <ID1 xsi:type="node">561</ID1>
         <ID2 xsi:type="node">570</ID2>
         <ctrlPoint0 x="-1813.7394" y="837.0225" xsi:type="point"/>
     </child>
-    <child ID="582" layerID="374" created="1367961187489" x="-3081.4048"
-        y="1283.4352" width="5055.4307" height="820.8163"
+    <child ID="582" layerID="374" created="1367961187489" x="-3085.1885"
+        y="1281.1222" width="5055.1377" height="819.1593"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80d880047f00000101a8c22b09e3d537</URIString>
-        <point1 x="1973.0259" y="2103.2515"/>
-        <point2 x="-3080.4048" y="1401.0256"/>
+        <point1 x="1968.9496" y="2099.2815"/>
+        <point2 x="-3084.1885" y="1397.156"/>
         <ID1 xsi:type="node">574</ID1>
         <ID2 xsi:type="node">579</ID2>
         <ctrlPoint0 x="-1646.8027" y="975.25543" xsi:type="point"/>
     </child>
-    <child ID="589" layerID="374" created="1367961949231" x="-2428.18"
-        y="799.4509" width="4253.9043" height="1188.6936"
+    <child ID="589" layerID="374" created="1367961949231" x="-2432.035"
+        y="797.3611" width="4253.7363" height="1186.7847"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80e34ded7f00000101a8c22bbea97038</URIString>
-        <point1 x="1824.7247" y="1987.1444"/>
-        <point2 x="-2427.18" y="1312.6455"/>
+        <point1 x="1820.7006" y="1983.1459"/>
+        <point2 x="-2431.035" y="1308.6606"/>
         <ID1 xsi:type="node">583</ID1>
         <ID2 xsi:type="node">585</ID2>
         <ctrlPoint0 x="-1612.437" y="20.588684" xsi:type="point"/>
     </child>
     <child ID="152" label="Interpretazione" layerID="374"
-        created="1293665635832" x="-2682.7554" y="-130.03757"
-        width="3376.3088" height="216.79933" strokeWidth="2.0"
+        created="1293665635832" x="-2628.0886" y="-136.7428"
+        width="3311.2375" height="57.9467" strokeWidth="2.0"
         strokeStyle="3" autoSized="false" controlCount="0"
         arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/347bc956c0a8010b00a5d7f2361ca977</URIString>
-        <point1 x="-2681.7554" y="85.761765"/>
-        <point2 x="692.5535" y="-129.03757"/>
+        <point1 x="-2627.0886" y="-79.7961"/>
+        <point2 x="682.14886" y="-135.7428"/>
         <ID1 xsi:type="node">107</ID1>
         <ID2 xsi:type="node">147</ID2>
     </child>
-    <child ID="105" layerID="374" created="1293662642009" x="-3204.6128"
-        y="1283.2904" width="5362.0205" height="1545.2502"
+    <child ID="105" layerID="374" created="1293662642009" x="-3208.6128"
+        y="1279.2904" width="5362.0205" height="1545.2502"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/344da042c0a8010b00a5d7f2c85b8bfd</URIString>
-        <point1 x="-3203.6128" y="1284.2903"/>
-        <point2 x="2156.4075" y="2827.5405"/>
+        <point1 x="-3207.6128" y="1280.2903"/>
+        <point2 x="2152.4077" y="2823.5405"/>
         <ID1 xsi:type="node">88</ID1>
         <ID2 xsi:type="node">104</ID2>
     </child>
-    <child ID="178" layerID="374" created="1294783920632" x="-3203.5254"
-        y="1282.3364" width="4808.845" height="1267.7838"
+    <child ID="178" layerID="374" created="1294783920632" x="-3207.526"
+        y="1278.3362" width="4808.8457" height="1267.7839"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7749dbcdc0a8010d011c34fb0e7bdd86</URIString>
-        <point1 x="1604.3198" y="2549.12"/>
-        <point2 x="-3202.5254" y="1283.3363"/>
+        <point1 x="1600.32" y="2545.12"/>
+        <point2 x="-3206.5256" y="1279.3362"/>
         <ID1 xsi:type="node">176</ID1>
         <ID2 xsi:type="node">88</ID2>
     </child>
-    <child ID="340" layerID="374" created="1295051156233" x="-2306.3892"
-        y="-701.3867" width="204.98633" height="2876.4492"
+    <child ID="340" layerID="374" created="1295051156233" x="-2222.1792"
+        y="-705.3633" width="117.41943" height="2876.3438"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/872bdc35c0a8010d00c1c2f1a7b363d7</URIString>
-        <point1 x="-2102.4028" y="-700.3867"/>
-        <point2 x="-2305.3892" y="2174.0625"/>
+        <point1 x="-2105.7598" y="-704.3633"/>
+        <point2 x="-2221.1792" y="2169.9805"/>
         <ID1 xsi:type="node">314</ID1>
         <ID2 xsi:type="node">339</ID2>
     </child>
     <child ID="175" label="affine a" layerID="374"
-        created="1294783729148" x="-2505.766" y="-767.78613"
-        width="4339.9473" height="3204.4375" strokeWidth="2.0"
+        created="1294783729148" x="-2509.767" y="-771.78613"
+        width="4339.948" height="3204.4375" strokeWidth="2.0"
         strokeStyle="3" autoSized="false" controlCount="0"
         arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7749db97c0a8010d011c34fb06cb712f</URIString>
-        <point1 x="1833.181" y="2435.6514"/>
-        <point2 x="-2504.7664" y="-766.78613"/>
+        <point1 x="1829.1812" y="2431.6514"/>
+        <point2 x="-2508.7668" y="-770.786"/>
         <ID1 xsi:type="node">170</ID1>
         <ID2 xsi:type="node">520</ID2>
     </child>
-    <child ID="316" layerID="374" created="1295047930752" x="-2057.5525"
-        y="-708.6569" width="2528.6548" height="792.3136"
+    <child ID="316" layerID="374" created="1295047930752" x="-2061.5525"
+        y="-712.6569" width="2528.6548" height="792.31354"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86e18ccbc0a8010d00397cea33896c30</URIString>
-        <point1 x="-2056.5525" y="-707.6569"/>
-        <point2 x="470.10236" y="82.65665"/>
+        <point1 x="-2060.5525" y="-711.6569"/>
+        <point2 x="466.10236" y="78.65663"/>
         <ID1 xsi:type="node">314</ID1>
         <ID2 xsi:type="node">158</ID2>
     </child>
-    <child ID="323" layerID="374" created="1295048365056" x="-2184.3455"
-        y="-656.8363" width="1975.3673" height="368.98465"
+    <child ID="323" layerID="374" created="1295048365056" x="-2188.3452"
+        y="-660.83624" width="1975.3671" height="368.98462"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86e815e0c0a8010d00397cea0cea81b4</URIString>
-        <point1 x="-2183.3455" y="-655.8363"/>
-        <point2 x="-209.97812" y="-288.85165"/>
+        <point1 x="-2187.3452" y="-659.83624"/>
+        <point2 x="-213.97815" y="-292.85162"/>
         <ID1 xsi:type="node">320</ID1>
         <ID2 xsi:type="node">322</ID2>
     </child>
     <child ID="140" label="Personaggio" layerID="374"
-        created="1293664680970" x="-3650.0264" y="-159.32236"
-        width="3589.7432" height="260.89462" strokeWidth="2.0"
+        created="1293664680970" x="-3654.0264" y="-163.32233"
+        width="3589.7432" height="260.8946" strokeWidth="2.0"
         strokeStyle="3" autoSized="false" controlCount="0"
         arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/346d4dd2c0a8010b00a5d7f2122a561c</URIString>
-        <point1 x="-3649.0264" y="100.572266"/>
-        <point2 x="-61.28311" y="-158.32236"/>
+        <point1 x="-3653.0264" y="96.572266"/>
+        <point2 x="-65.28311" y="-162.32234"/>
         <ID1 xsi:type="node">70</ID1>
         <ID2 xsi:type="node">139</ID2>
     </child>
-    <child ID="344" layerID="374" created="1295051547027" x="-2514.923"
-        y="238.29785" width="314.40283" height="2152.9219"
+    <child ID="344" layerID="374" created="1295051547027" x="-2516.9402"
+        y="196.99805" width="448.09912" height="2190.3076"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/872bdc35c0a8010d00c1c2f10d441f47</URIString>
-        <point1 x="-2201.5203" y="239.29785"/>
-        <point2 x="-2513.923" y="2390.2197"/>
+        <point1 x="-2069.841" y="197.99805"/>
+        <point2 x="-2515.9402" y="2386.3057"/>
         <ID1 xsi:type="node">97</ID1>
         <ID2 xsi:type="node">341</ID2>
     </child>
-    <child ID="367" layerID="374" created="1295765242789" x="-1725.7151"
-        y="479.0229" width="2602.7446" height="1858.6393"
+    <child ID="367" layerID="374" created="1295765242789" x="-1729.715"
+        y="475.0229" width="2602.7446" height="1858.6393"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/b1a0a5b5c0a8010d01da1f9910d7d7ab</URIString>
-        <point1 x="876.02954" y="480.02283"/>
-        <point2 x="-1724.7152" y="2336.662"/>
+        <point1 x="872.02966" y="476.02283"/>
+        <point2 x="-1728.7151" y="2332.662"/>
         <ID1 xsi:type="node">284</ID1>
         <ID2 xsi:type="node">365</ID2>
     </child>
-    <child ID="61" layerID="374" created="1293660409149" x="-3000.5332"
-        y="-1169.0343" width="1625.497" height="1791.5199"
+    <child ID="61" layerID="374" created="1293660409149" x="-3004.5334"
+        y="-1173.0343" width="1625.4971" height="1791.5201"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3434ba83c0a8010b00a5d7f218b20b98</URIString>
-        <point1 x="-1375.5363" y="-1168.5343"/>
-        <point2 x="-3000.0332" y="621.9856"/>
+        <point1 x="-1379.5364" y="-1172.5343"/>
+        <point2 x="-3004.0334" y="617.98584"/>
         <ID1 xsi:type="node">12</ID1>
         <ID2 xsi:type="node">60</ID2>
     </child>
-    <child ID="614" layerID="374" created="1368050338838" x="-1701.1758"
-        y="-1339.2673" width="3988.7698" height="3495.3027"
+    <child ID="614" layerID="374" created="1368050338838" x="-1705.2507"
+        y="-1343.2517" width="3988.8445" height="3495.287"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/862818017f0000010150b06b25245c9e</URIString>
-        <point1 x="-1700.1758" y="-1338.2673"/>
-        <point2 x="2286.594" y="2155.0354"/>
+        <point1 x="-1704.2507" y="-1342.2517"/>
+        <point2 x="2282.5938" y="2151.0354"/>
         <ID1 xsi:type="node">599</ID1>
         <ID2 xsi:type="node">610</ID2>
         <ctrlPoint0 x="-571.5091" y="-668.93945" xsi:type="point"/>
     </child>
-    <child ID="621" layerID="374" created="1368051426579" x="-3823.0366"
-        y="-148.38812" width="5381.565" height="953.7925"
+    <child ID="621" layerID="374" created="1368051426579" x="-3826.9353"
+        y="-151.12398" width="5381.1797" height="952.5674"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-bold-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/863b33a57f0000010150b06b91d5345e</URIString>
-        <point1 x="-3822.0366" y="804.40436"/>
-        <point2 x="1557.5283" y="-97.01883"/>
+        <point1 x="-3825.9353" y="800.4434"/>
+        <point2 x="1553.2445" y="-100.95215"/>
         <ID1 xsi:type="node">623</ID1>
         <ID2 xsi:type="node">619</ID2>
         <ctrlPoint0 x="701.6851" y="-366.3438" xsi:type="point"/>
     </child>
-    <child ID="631" layerID="374" created="1368137460572" x="-2712.045"
-        y="114.66687" width="3257.3647" height="687.9444"
+    <child ID="631" layerID="374" created="1368137460572" x="-2665.4397"
+        y="-53.999756" width="3206.8596" height="851.9643"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/8b603a0d7f0000010163f47ee545b117</URIString>
-        <point1 x="544.3198" y="793.9957"/>
-        <point2 x="-2711.045" y="115.66687"/>
+        <point1 x="540.42" y="790.1429"/>
+        <point2 x="-2664.4397" y="-52.999756"/>
         <ID1 xsi:type="node">629</ID1>
         <ID2 xsi:type="node">107</ID2>
         <ctrlPoint0 x="-1612.1213" y="873.8996" xsi:type="point"/>
     </child>
-    <child ID="638" layerID="374" created="1368139747793" x="73.55357"
-        y="-348.80484" width="1188.4757" height="2527.426"
+    <child ID="638" layerID="374" created="1368139747793" x="69.570206"
+        y="-352.82065" width="1188.5099" height="2527.4395"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/8b7c257d7f0000010163f47e697c2eb8</URIString>
-        <point1 x="74.55357" y="-347.80484"/>
-        <point2 x="1261.0293" y="2177.621"/>
+        <point1 x="70.570206" y="-351.82065"/>
+        <point2 x="1257.0801" y="2173.619"/>
         <ID1 xsi:type="node">632</ID1>
         <ID2 xsi:type="node">636</ID2>
         <ctrlPoint0 x="724.0042" y="770.9199" xsi:type="point"/>
     </child>
-    <child ID="662" layerID="374" created="1368483346836" x="-3830.7651"
-        y="836.7894" width="6229.8623" height="713.1554"
+    <child ID="662" layerID="374" created="1368483346836" x="-3834.8228"
+        y="832.80444" width="6230.171" height="715.12585"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-bold-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/a010a0b07f0000010021477c8b001d2a</URIString>
-        <point1 x="-3829.7651" y="837.7894"/>
-        <point2 x="2398.0974" y="1041.5924"/>
+        <point1 x="-3833.8228" y="833.80444"/>
+        <point2 x="2394.348" y="1037.5924"/>
         <ID1 xsi:type="node">623</ID1>
         <ID2 xsi:type="node">673</ID2>
         <ctrlPoint0 x="-71.63916" y="2149.7273" xsi:type="point"/>
     </child>
-    <child ID="663" layerID="374" created="1368483493136" x="1312.6086"
-        y="-43.963135" width="927.6199" height="818.2406"
+    <child ID="663" layerID="374" created="1368483493136" x="1310.0892"
+        y="-47.9563" width="926.1393" height="818.39136"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/a010a0b17f0000010021477c60ad05b0</URIString>
-        <point1 x="1374.6455" y="-42.963135"/>
-        <point2 x="2239.2285" y="773.27747"/>
+        <point1 x="1370.8314" y="-46.9563"/>
+        <point2 x="2235.2285" y="769.43506"/>
         <ID1 xsi:type="node">480</ID1>
         <ID2 xsi:type="node">672</ID2>
         <ctrlPoint0 x="1075.0273" y="596.39386" xsi:type="point"/>
     </child>
     <child ID="693" label="post-it e divinazione" layerID="374"
-        created="1369085673784" x="-2590.171" y="1113.561"
-        width="5588.4053" height="599.8557" strokeWidth="2.0"
+        created="1369085673784" x="-2594.1948" y="1109.5842"
+        width="5588.667" height="601.8479" strokeWidth="2.0"
         strokeStyle="3" autoSized="false" controlCount="1"
         arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-bold-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c3df3ec97f00000101cc6a6aff0a307e</URIString>
-        <point1 x="-2589.171" y="1114.561"/>
-        <point2 x="2997.2341" y="1248.064"/>
+        <point1 x="-2593.1948" y="1110.5842"/>
+        <point2 x="2993.4724" y="1244.1022"/>
         <ID1 xsi:type="node">514</ID1>
         <ID2 xsi:type="node">680</ID2>
         <ctrlPoint0 x="1546.334" y="2232.521" xsi:type="point"/>
     </child>
-    <child ID="694" layerID="374" created="1369085717599" x="1188.0016"
-        y="-750.21063" width="1822.578" height="1766.3806"
+    <child ID="694" layerID="374" created="1369085717599" x="1183.954"
+        y="-753.9747" width="1822.68" height="1766.1436"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-bold-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c3df3f277f00000101cc6a6a47d869a4</URIString>
-        <point1 x="1189.0016" y="-749.21063"/>
-        <point2 x="3009.5796" y="1015.1699"/>
+        <point1 x="1184.954" y="-752.9747"/>
+        <point2 x="3005.634" y="1011.16895"/>
         <ID1 xsi:type="node">511</ID1>
         <ID2 xsi:type="node">691</ID2>
         <ctrlPoint0 x="2537.694" y="-727.6062" xsi:type="point"/>
     </child>
     <child ID="736" label="Esiste una vita esatta?" layerID="374"
-        created="1369089971017" x="-3074.4744" y="752.7472"
-        width="4879.1943" height="655.1467" strokeWidth="2.0"
+        created="1369089971017" x="-3078.41" y="657.2334"
+        width="4851.3315" height="746.75146" strokeWidth="2.0"
         strokeStyle="3" autoSized="false" controlCount="1"
         arrowState="3" xsi:type="link">
         <notes>Se esiste una Vita Esatta dovrebbe esistere un fine cui tendere. cosa che &#xe8; (o mi sembra adesso) in contraddizione con il Taoismo di Dio..%nl;</notes>
@@ -804,28 +803,28 @@
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c424e3657f00000101cc6a6ac43bbcf9</URIString>
-        <point1 x="-3073.4744" y="1406.8939"/>
-        <point2 x="1803.7197" y="753.7472"/>
+        <point1 x="-3077.41" y="1402.9849"/>
+        <point2 x="1771.9218" y="658.2334"/>
         <ID1 xsi:type="node">579</ID1>
         <ID2 xsi:type="node">734</ID2>
         <ctrlPoint0 x="-256.54117" y="926.1467" xsi:type="point"/>
     </child>
-    <child ID="739" layerID="374" created="1369091934438" x="-2423.0903"
-        y="-79.85849" width="5351.8804" height="1108.5117"
+    <child ID="739" layerID="374" created="1369091934438" x="-2315.4465"
+        y="-162.468" width="5240.1426" height="1187.1543"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="1" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c43e65957f000001003fc9b6376a9056</URIString>
-        <point1 x="2927.79" y="1027.6533"/>
-        <point2 x="-2422.0903" y="-76.73773"/>
+        <point1 x="2923.6958" y="1023.68616"/>
+        <point2 x="-2314.4465" y="-161.468"/>
         <ID1 xsi:type="node">691</ID1>
         <ID2 xsi:type="node">737</ID2>
         <ctrlPoint0 x="-2133.982" y="-129.5772" xsi:type="point"/>
     </child>
-    <child ID="747" layerID="374" created="1546186696814" x="-3273.1516"
-        y="597.7705" width="1154.7261" height="480.1333"
+    <child ID="747" layerID="374" created="1546186696814" x="-3276.7817"
+        y="597.7705" width="1158.3562" height="476.2539"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
@@ -833,12 +832,52 @@
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/ffe937cdc0a82b320f6f16f150b16751</URIString>
         <point1 x="-2119.4255" y="598.7705"/>
-        <point2 x="-3272.1516" y="1076.9038"/>
+        <point2 x="-3275.7817" y="1073.0244"/>
         <ID2 xsi:type="node">742</ID2>
     </child>
+    <child ID="767" layerID="374" created="1586696953216" x="-5425.59"
+        y="1433.5173" width="790.5044" height="118.90466"
+        strokeWidth="2.0" strokeStyle="3" autoSized="false"
+        controlCount="0" arrowState="3" xsi:type="link">
+        <strokeColor>#EA2218</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e874374c0a8013c0f79801e8dc8c6b3</URIString>
+        <point1 x="-5424.59" y="1434.5173"/>
+        <point2 x="-4636.0854" y="1551.422"/>
+    </child>
+    <child ID="768" label="affine a" layerID="374"
+        created="1586696989338" x="-3167.8262" y="-599.6208"
+        width="2336.6008" height="2353.7007" strokeWidth="2.0"
+        strokeStyle="3" autoSized="false" controlCount="1"
+        arrowState="3" xsi:type="link">
+        <strokeColor>#EA2218</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e874374c0a8013c0f79801e43e3b763</URIString>
+        <point1 x="-3166.8262" y="194.53955"/>
+        <point2 x="-832.22534" y="1753.0798"/>
+        <ID1 xsi:type="node">84</ID1>
+        <ctrlPoint0 x="-1799.4323" y="-1965.0979" xsi:type="point"/>
+    </child>
+    <child ID="769" label="affine a" layerID="374"
+        created="1586697114828" x="-3175.0886" y="-1361.9135"
+        width="4996.139" height="1982.153" strokeWidth="2.0"
+        strokeStyle="3" autoSized="false" controlCount="1"
+        arrowState="3" xsi:type="link">
+        <strokeColor>#EA2218</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e874374c0a8013c0f79801e3c756146</URIString>
+        <point1 x="-3174.0886" y="194.54004"/>
+        <point2 x="1820.0507" y="619.2395"/>
+        <ID1 xsi:type="node">84</ID1>
+        <ID2 xsi:type="node">734</ID2>
+        <ctrlPoint0 x="-1920.1641" y="-3115.934" xsi:type="point"/>
+    </child>
     <child ID="365" label="Il Mondo ha&#xa;la natura dell'arte"
-        layerID="378" created="1295765205378" x="-1842.2969"
-        y="2332.834" width="159.59999" height="61.6" strokeWidth="2.0"
+        layerID="378" created="1295765205378" x="-1846.2969"
+        y="2328.834" width="159.59999" height="61.6" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>La dottrina del Vedanta, secondo la quale il mondo ha "la natura dell'arte", non &#xe8; una dottrina dell'illusione, bens&#xec; distingue semplicemente la realt&#xe0; relativa del manufatto dalla realt&#xe0; superiore, quella dell'Artefice, dove sussiste il paradigma.%nl;%nl;Ananda K. Coomaraswami, Tempo ed Eternit&#xe0;, pag. 16%nl;</notes>
         <fillColor>#ECFFD4</fillColor>
@@ -853,7 +892,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="341" label="Il movimento&#xa;non esiste" layerID="378"
-        created="1295051380177" x="-2597.5803" y="2390.0005"
+        created="1295051380177" x="-2601.5803" y="2386.0005"
         width="157.4" height="68.700005" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Affermazione di Duchamp, riferita a un brando di "Nuovo Spirito Scientifico" di Gaston Bachelard, riguardo la teoria di Millikan sul movimento (Marcad&#xe9;, 382):%nl;%nl;"Cos'&#xe8;, che chiama movimento, il suo tipo? Se lo definisce in opposizione alla quiete, non funziona: niente &#xe8; in quiete nell'Universo. Allora? Il suo movimento non &#xe8; che un mito"%nl;</notes>
@@ -864,21 +903,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/872bdc35c0a8010d00c1c2f1e5f36535</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="342" layerID="378" created="1295051496095" x="-2301.0195"
-        y="2241.835" width="44.27588" height="203.06738"
+    <child ID="342" layerID="378" created="1295051496095" x="-2251.486"
+        y="2238.0156" width="22.6792" height="110.88574"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/872bdc35c0a8010d00c1c2f1f463217f</URIString>
-        <point1 x="-2257.2437" y="2444.4023"/>
-        <point2 x="-2300.5195" y="2242.335"/>
+        <point1 x="-2250.986" y="2348.4014"/>
+        <point2 x="-2229.307" y="2238.5156"/>
         <ID1 xsi:type="node">377</ID1>
         <ID2 xsi:type="node">339</ID2>
     </child>
     <child ID="377" label="Marcel Duchamp" layerID="378"
-        created="1295992160024" x="-2310.925" y="2444.4019"
+        created="1295992160024" x="-2313.925" y="2348.4019"
         width="117.0" height="45.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#8AEE95</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -888,7 +927,7 @@
         <shape xsi:type="rectangle"/>
     </child>
     <child ID="379" label="Arte" layerID="378" created="1295992387625"
-        x="-2285.6978" y="2730.3325" width="153.94507"
+        x="-2289.6978" y="2726.3325" width="153.94507"
         height="58.138916" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#76AF31</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -897,47 +936,47 @@
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca39c0a8010b00b4cbc57a3acbd4</URIString>
         <shape xsi:type="hexagon"/>
     </child>
-    <child ID="380" layerID="378" created="1295992477703" x="-2211.79"
-        y="2629.4688" width="2.9890137" height="101.36719"
+    <child ID="380" layerID="378" created="1295992477703" x="-2215.7898"
+        y="2625.4766" width="2.9887695" height="101.359375"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca3ac0a8010b00b4cbc5c800b492</URIString>
-        <point1 x="-2209.301" y="2730.336"/>
-        <point2 x="-2211.29" y="2629.9688"/>
+        <point1 x="-2213.301" y="2726.336"/>
+        <point2 x="-2215.2898" y="2625.9766"/>
         <ID1 xsi:type="node">379</ID1>
         <ID2 xsi:type="node">437</ID2>
     </child>
-    <child ID="381" layerID="378" created="1295992479495" x="-2445.7217"
-        y="2435.6133" width="135.29663" height="22.44629"
+    <child ID="381" layerID="378" created="1295992479495" x="-2450.9019"
+        y="2381.2178" width="137.4768" height="26.232422"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca3ac0a8010b00b4cbc5eb6b4f51</URIString>
-        <point1 x="-2310.925" y="2457.5596"/>
-        <point2 x="-2445.2217" y="2436.1133"/>
+        <point1 x="-2313.925" y="2381.7178"/>
+        <point2 x="-2450.4019" y="2406.9502"/>
         <ID1 xsi:type="node">377</ID1>
         <ID2 xsi:type="node">341</ID2>
     </child>
-    <child ID="385" layerID="378" created="1295992696191" x="-2176.4495"
-        y="2391.355" width="382.6333" height="339.47754"
+    <child ID="385" layerID="378" created="1295992696191" x="-2180.4495"
+        y="2387.355" width="382.63354" height="339.47754"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca3ac0a8010b00b4cbc55835954f</URIString>
-        <point1 x="-2175.9495" y="2730.3325"/>
-        <point2 x="-1794.3162" y="2391.855"/>
+        <point1 x="-2179.9495" y="2726.3325"/>
+        <point2 x="-1798.3159" y="2387.855"/>
         <ID1 xsi:type="node">379</ID1>
         <ID2 xsi:type="node">365</ID2>
     </child>
     <child ID="437" label="Artisti" layerID="378"
-        created="1296161525004" x="-2272.2976" y="2577.1323"
+        created="1296161525004" x="-2276.2976" y="2573.1323"
         width="120.972534" height="53.069458" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <fillColor>#76AF31</fillColor>
@@ -947,23 +986,23 @@
         <URIString>http://vue.tufts.edu/rdf/resource/c940f79cc0a8010b008d116e73188c9b</URIString>
         <shape xsi:type="diamond"/>
     </child>
-    <child ID="438" layerID="378" created="1296161594705" x="-2246.2432"
-        y="2488.9023" width="27.96045" height="91.78906"
+    <child ID="438" layerID="378" created="1296161594705" x="-2252.0288"
+        y="2392.9023" width="32.44702" height="182.60352"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c940f79cc0a8010b008d116ef56347c2</URIString>
-        <point1 x="-2218.7827" y="2580.1914"/>
-        <point2 x="-2245.7432" y="2489.4023"/>
+        <point1 x="-2220.0818" y="2575.0059"/>
+        <point2 x="-2251.5288" y="2393.4023"/>
         <ID1 xsi:type="node">437</ID1>
         <ID2 xsi:type="node">377</ID2>
     </child>
     <child ID="339"
-        label="Le dimostrazioni&#xa;scientifiche sono&#xa;delle tautologie"
-        layerID="378" created="1295051097829" x="-2386.5073"
-        y="2173.955" width="157.4" height="68.700005" strokeWidth="2.0"
+        label="Le dimostrazioni scientifiche sono delle tautologie"
+        layerID="378" created="1295051097829" x="-2390.5073"
+        y="2169.955" width="335.9" height="68.700005" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Affermazione di Duchamp (Marcad&#xe9;, 382):%nl;%nl;"Le cosiddette dimostrazioni scientifiche dipendono dalle loro convenzioni. Sono tutte tautologie. Dunque, si torna ai miti. Lo prevedevo Prendete la nozione di causa: la causa e l'effetto distinti e opposti. E' insostenibile. E' un mito da cui si &#xe8; ricavata l'idea di Dio, considerata come modello di ogni causa. Se non si crede in Dio, l'idea di causa non ha pi&#xf9; senso."%nl;</notes>
         <fillColor>#E0FFE4</fillColor>
@@ -974,8 +1013,8 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="375" label="Coefficiente &#xa;artistico&#x9;"
-        layerID="378" created="1295991862968" x="-2125.462"
-        y="2481.1519" width="126.73682" height="68.25" strokeWidth="2.0"
+        layerID="378" created="1295991862968" x="-2129.462"
+        y="2477.1519" width="126.73682" height="68.25" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <fillColor>#E0FFE4</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -989,21 +1028,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/bf23a3a5c0a8010b015e8a8fe42d9da5</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="382" layerID="378" created="1295992527867" x="-2194.4253"
-        y="2481.2705" width="75.69214" height="19.983887"
+    <child ID="382" layerID="378" created="1295992527867" x="-2225.578"
+        y="2392.9019" width="122.84375" height="91.33789"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca3ac0a8010b00b4cbc5090db024</URIString>
-        <point1 x="-2193.925" y="2481.7705"/>
-        <point2 x="-2119.233" y="2500.7544"/>
+        <point1 x="-2225.078" y="2393.4019"/>
+        <point2 x="-2103.2341" y="2483.7397"/>
         <ID1 xsi:type="node">377</ID1>
         <ID2 xsi:type="node">375</ID2>
     </child>
     <child ID="12" label="Linguaggi di programmazione" layerID="1"
-        created="1293658167884" x="-1463.3196" y="-1250.1343"
+        created="1293658167884" x="-1467.3196" y="-1254.1343"
         width="249.6" height="81.600006" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>Devo provare a fare una distinzione fra i linguaggi compliati e i linguaggi interpretati (Java, come lo classifico?), paragonandoli a Cristianesimo e Protestantesimo - posto che sia corretta l'idea che nel primo il messaggio &#xe8; mediato/interpretato dalla Chiesa e nel secondo, al contrario, il messaggio &#xe8; pronto per l'elaborazione da parte dell'host.%nl;A dar retta al link allegato, pare di s&#xec;...</notes>
@@ -1020,34 +1059,34 @@
         <URIString>http://vue.tufts.edu/rdf/resource/34133343c0a8010b00a5d7f2ffb09156</URIString>
         <shape xsi:type="hexagon"/>
     </child>
-    <child ID="13" layerID="1" created="1293658194387" x="-1669.7966"
-        y="-1183.9624" width="242.7013" height="71.20154"
+    <child ID="13" layerID="1" created="1293658194387" x="-1673.7966"
+        y="-1187.9624" width="242.70105" height="71.20154"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/34133345c0a8010b00a5d7f20c9c7697</URIString>
-        <point1 x="-1427.5955" y="-1183.4623"/>
-        <point2 x="-1669.2968" y="-1113.2607"/>
+        <point1 x="-1431.5956" y="-1187.4623"/>
+        <point2 x="-1673.2966" y="-1117.2607"/>
         <ID1 xsi:type="node">12</ID1>
         <ID2 xsi:type="node">20</ID2>
     </child>
-    <child ID="16" layerID="1" created="1293658221798" x="-1749.1656"
-        y="-1072.7607" width="6.984131" height="44.745117"
+    <child ID="16" layerID="1" created="1293658221798" x="-1753.1655"
+        y="-1076.7607" width="6.984009" height="44.74414"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/34133348c0a8010b00a5d7f296080671</URIString>
-        <point1 x="-1742.6815" y="-1072.2607"/>
-        <point2 x="-1748.6656" y="-1028.5156"/>
+        <point1 x="-1746.6815" y="-1076.2607"/>
+        <point2 x="-1752.6655" y="-1032.5166"/>
         <ID1 xsi:type="node">20</ID1>
         <ID2 xsi:type="node">24</ID2>
     </child>
     <child ID="20" label="Linguaggi OO" layerID="1"
-        created="1293658263676" x="-1827.8772" y="-1113.2607"
+        created="1293658263676" x="-1831.8772" y="-1117.2607"
         width="176.0" height="41.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#FFC63B</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -1056,21 +1095,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/34133349c0a8010b00a5d7f2a62ef48b</URIString>
         <shape xsi:type="rectangle"/>
     </child>
-    <child ID="21" layerID="1" created="1293658302679" x="-2004.5835"
-        y="-1090.593" width="177.2063" height="6.3414307"
+    <child ID="21" layerID="1" created="1293658302679" x="-2008.5835"
+        y="-1094.5933" width="177.2063" height="6.3415527"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3413334ac0a8010b00a5d7f224867f86</URIString>
-        <point1 x="-1827.8772" y="-1090.0931"/>
-        <point2 x="-2004.0835" y="-1084.7517"/>
+        <point1 x="-1831.8772" y="-1094.0933"/>
+        <point2 x="-2008.0835" y="-1088.7517"/>
         <ID1 xsi:type="node">20</ID1>
         <ID2 xsi:type="node">8</ID2>
     </child>
     <child ID="24" label="Classi" layerID="1" created="1293658347141"
-        x="-1805.6802" y="-1030.3226" width="107.0" height="55.0"
+        x="-1809.6802" y="-1034.3226" width="107.0" height="55.0"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Se vuoi capire le classi, devi leggere Aristotele.</notes>
         <fillColor>#FDE888</fillColor>
@@ -1081,7 +1120,7 @@
         <shape xsi:type="diamond"/>
     </child>
     <child ID="27" label="Ereditariet&#xe0;" layerID="1"
-        created="1293658466919" x="-1638.1937" y="-1025.7568"
+        created="1293658466919" x="-1485.1937" y="-1061.7568"
         width="142.5" height="58.5" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>v. nota da Etica Nicomachea</notes>
         <fillColor>#FDE888</fillColor>
@@ -1092,7 +1131,7 @@
         <shape xsi:type="diamond"/>
     </child>
     <child ID="28" label="Polimorfismo" layerID="1"
-        created="1293658479804" x="-1733.4111" y="-1255.746"
+        created="1293658479804" x="-1737.4111" y="-1259.746"
         width="114.0" height="55.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#FDE888</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -1101,34 +1140,34 @@
         <URIString>http://vue.tufts.edu/rdf/resource/3413334ec0a8010b00a5d7f2f7e16289</URIString>
         <shape xsi:type="diamond"/>
     </child>
-    <child ID="30" layerID="1" created="1293658671960" x="-1703.5461"
-        y="-1072.7607" width="106.85791" height="59.919983"
+    <child ID="30" layerID="1" created="1293658671960" x="-1656.3772"
+        y="-1080.1229" width="194.60815" height="38.704834"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3413334ec0a8010b00a5d7f23726a60b</URIString>
-        <point1 x="-1703.0461" y="-1072.2607"/>
-        <point2 x="-1597.1882" y="-1013.34076"/>
+        <point1 x="-1655.8772" y="-1079.6229"/>
+        <point2 x="-1462.269" y="-1041.9181"/>
         <ID1 xsi:type="node">20</ID1>
         <ID2 xsi:type="node">27</ID2>
     </child>
-    <child ID="31" layerID="1" created="1293658673520" x="-1730.7742"
-        y="-1206.3152" width="44.355835" height="93.55444"
+    <child ID="31" layerID="1" created="1293658673520" x="-1734.7742"
+        y="-1210.3154" width="44.355957" height="93.55469"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3413334fc0a8010b00a5d7f2da098ab1</URIString>
-        <point1 x="-1730.2742" y="-1113.2607"/>
-        <point2 x="-1686.9183" y="-1205.8152"/>
+        <point1 x="-1734.2742" y="-1117.2607"/>
+        <point2 x="-1690.9182" y="-1209.8154"/>
         <ID1 xsi:type="node">20</ID1>
         <ID2 xsi:type="node">28</ID2>
     </child>
     <child ID="34" label="Costrutti" layerID="1" created="1293658731052"
-        x="-2440.2668" y="-1099.8267" width="121.5" height="55.5"
+        x="-2444.2668" y="-1103.8267" width="121.5" height="55.5"
         strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>Un linguaggio,&#xa0;pu&#xf2; descrivere s&#xe9; stesso senza essere tautologico?%nl;Ovvero: i costrutti di un linguaggio, possono descrivere i costrutti del linguaggio senza dire che sono costrutti del linguaggio?%nl;%nl;Non esistono costrutti che descrivano il programmatore.%nl;Posso creare un SISTEMA che generi software e definire delle classi Programmatore, Software, Linguaggio, ecc., ma si tratter&#xe0; di proiezioni che avranno solo una parte dei caratteri distintivi del loro corrispondente nel mondo reale.%nl;Anche se volessi creare un gioco nel quale ci fosse un personaggio Programmatore (tirando in ballo attributi come il carattere, la razza, l'et&#xe0;, il sesso, che non avrebbero senso considerare in un sistema come Modella!), ci&#xf2; che otterrei sarebbe solo una rappresentazione limitata di un vero programmatore, se non altro perch&#xe9; sarebbe un modello 2D e non 3D.%nl;Potrei allora andare oltre, e agiungere un sistema 3D in cui far muovere i miei personaggi .%nl;Come i sistemi di modellazione, potrebbe essere costituito da una "scatola" piena di elementi atomici che io potrei rendere solidi (e quindi reali) facendoli colpire da due fasci di energia (per un punto dato passano solo due rette).%nl;Nei sistemi di modellazione, la solidit&#xe0; &#xe8; permanente; nel mio sistema potrebbe essere invece transeunte, come la luminosit&#xe0; dei pixel.%nl;Se riuscissi a fare ci&#xf2;, sarebbe interessante chiedere al mio programmatore di creare un sistema che comprenda l'entit&#xe0; "programmatore".%nl;</notes>
         <fillColor>#FDE888</fillColor>
@@ -1139,7 +1178,7 @@
         <shape xsi:type="diamond"/>
     </child>
     <child ID="35" label="Parole chiave" layerID="1"
-        created="1293658748882" x="-2096.078" y="-870.80334"
+        created="1293658748882" x="-2100.078" y="-874.80334"
         width="119.0" height="49.000004" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <fillColor>#FDE888</fillColor>
@@ -1150,7 +1189,7 @@
         <shape xsi:type="diamond"/>
     </child>
     <child ID="36" label="Commenti" layerID="1" created="1293658750050"
-        x="-2299.3289" y="-1318.8171" width="134.0" height="57.000004"
+        x="-2303.3289" y="-1322.8171" width="134.0" height="57.000004"
         strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>I commenti sono la parte pi&#xf9; importante del codice.%nl;%nl;Esistono, dei commenti, nell'Universo?%nl;Qualcosa che ci permetta, da un'escuzione e l'altra, di tenere traccia di ci&#xf2; che &#xe8; successo nelle esecuzioni precedenti?%nl;</notes>
         <fillColor>#FDE888</fillColor>
@@ -1161,7 +1200,7 @@
         <shape xsi:type="diamond"/>
     </child>
     <child ID="37" label="Operatori" layerID="1" created="1293658776833"
-        x="-2389.9136" y="-933.72644" width="99.0" height="43.5"
+        x="-2393.9136" y="-937.72644" width="99.0" height="43.5"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#FDE888</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -1170,60 +1209,60 @@
         <URIString>http://vue.tufts.edu/rdf/resource/34133358c0a8010b00a5d7f255219349</URIString>
         <shape xsi:type="diamond"/>
     </child>
-    <child ID="39" layerID="1" created="1293658820563" x="-2323.518"
-        y="-1081.5972" width="206.93481" height="8.078491"
+    <child ID="39" layerID="1" created="1293658820563" x="-2327.518"
+        y="-1085.597" width="206.93481" height="8.078369"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/34133359c0a8010b00a5d7f225d09d0f</URIString>
-        <point1 x="-2117.0835" y="-1081.097"/>
-        <point2 x="-2323.0183" y="-1074.0186"/>
+        <point1 x="-2121.0835" y="-1085.097"/>
+        <point2 x="-2327.0183" y="-1078.0187"/>
         <ID1 xsi:type="node">8</ID1>
         <ID2 xsi:type="node">34</ID2>
     </child>
-    <child ID="40" layerID="1" created="1293658822515" x="-2320.2131"
-        y="-1065.5391" width="230.68457" height="141.40833"
+    <child ID="40" layerID="1" created="1293658822515" x="-2324.213"
+        y="-1069.5391" width="230.68433" height="141.40808"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/34133359c0a8010b00a5d7f24852d8e8</URIString>
-        <point1 x="-2090.0286" y="-1065.0391"/>
-        <point2 x="-2319.7131" y="-924.63074"/>
+        <point1 x="-2094.0286" y="-1069.0391"/>
+        <point2 x="-2323.713" y="-928.631"/>
         <ID1 xsi:type="node">8</ID1>
         <ID2 xsi:type="node">37</ID2>
     </child>
-    <child ID="41" layerID="1" created="1293658824349" x="-2059.2583"
-        y="-1065.541" width="20.795654" height="196.2207"
+    <child ID="41" layerID="1" created="1293658824349" x="-2063.2583"
+        y="-1069.5391" width="20.795776" height="196.21875"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3413335ac0a8010b00a5d7f279ab96cd</URIString>
-        <point1 x="-2058.7583" y="-1065.041"/>
-        <point2 x="-2038.9626" y="-869.8203"/>
+        <point1 x="-2062.7583" y="-1069.0391"/>
+        <point2 x="-2042.9625" y="-873.8203"/>
         <ID1 xsi:type="node">8</ID1>
         <ID2 xsi:type="node">35</ID2>
     </child>
-    <child ID="42" layerID="1" created="1293658825761" x="-2215.3684"
-        y="-1269.7441" width="140.3706" height="169.20532"
+    <child ID="42" layerID="1" created="1293658825761" x="-2219.3684"
+        y="-1273.7444" width="140.3706" height="169.20532"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3413335bc0a8010b00a5d7f222df367f</URIString>
-        <point1 x="-2075.4978" y="-1101.0388"/>
-        <point2 x="-2214.8684" y="-1269.2441"/>
+        <point1 x="-2079.4978" y="-1105.0391"/>
+        <point2 x="-2218.8684" y="-1273.2444"/>
         <ID1 xsi:type="node">8</ID1>
         <ID2 xsi:type="node">36</ID2>
     </child>
     <child ID="44" label="Il debug" layerID="1" created="1293659295944"
-        x="-1376.175" y="-1475.7446" width="102.819885"
+        x="-1380.175" y="-1479.7446" width="102.819885"
         height="55.592808" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#FDE888</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -1233,7 +1272,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="48" label="Funzioni" layerID="1" created="1293659363413"
-        x="-2098.1738" y="-1325.2166" width="117.17117"
+        x="-2102.1738" y="-1329.2166" width="117.17117"
         height="59.418518" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#FDE888</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -1243,7 +1282,7 @@
         <shape xsi:type="diamond"/>
     </child>
     <child ID="49" label="Tipi di dato" layerID="1"
-        created="1293659364133" x="-2416.4727" y="-1221.474"
+        created="1293659364133" x="-2420.4727" y="-1225.474"
         width="112.803406" height="62.342773" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <fillColor>#FDE888</fillColor>
@@ -1253,60 +1292,60 @@
         <URIString>http://vue.tufts.edu/rdf/resource/341f1bd4c0a8010b00a5d7f2a606af18</URIString>
         <shape xsi:type="diamond"/>
     </child>
-    <child ID="51" layerID="1" created="1293659565376" x="-1336.6677"
-        y="-1420.7363" width="10.805054" height="171.10156"
+    <child ID="51" layerID="1" created="1293659565376" x="-1340.6676"
+        y="-1424.7383" width="10.805176" height="171.10352"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/341f1bd5c0a8010b00a5d7f2daced033</URIString>
-        <point1 x="-1336.1676" y="-1250.1348"/>
-        <point2 x="-1326.3625" y="-1420.2363"/>
+        <point1 x="-1340.1676" y="-1254.1348"/>
+        <point2 x="-1330.3624" y="-1424.2383"/>
         <ID1 xsi:type="node">12</ID1>
         <ID2 xsi:type="node">44</ID2>
     </child>
-    <child ID="55" layerID="1" created="1293659684008" x="-2059.305"
-        y="-1267.7168" width="17.42102" height="167.17773"
+    <child ID="55" layerID="1" created="1293659684008" x="-2063.305"
+        y="-1271.7168" width="17.42102" height="167.17969"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3423b650c0a8010b00a5d7f2596116ab</URIString>
-        <point1 x="-2058.805" y="-1101.0391"/>
-        <point2 x="-2042.3839" y="-1267.2168"/>
+        <point1 x="-2062.805" y="-1105.0371"/>
+        <point2 x="-2046.3839" y="-1271.2168"/>
         <ID1 xsi:type="node">8</ID1>
         <ID2 xsi:type="node">48</ID2>
     </child>
-    <child ID="56" layerID="1" created="1293659713718" x="-2326.3477"
-        y="-1178.5454" width="216.00708" height="78.00635"
+    <child ID="56" layerID="1" created="1293659713718" x="-2330.3477"
+        y="-1182.5454" width="216.00684" height="78.006226"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3423b651c0a8010b00a5d7f26f9ebce5</URIString>
-        <point1 x="-2110.8408" y="-1101.0391"/>
-        <point2 x="-2325.848" y="-1178.0454"/>
+        <point1 x="-2114.8408" y="-1105.0391"/>
+        <point2 x="-2329.8477" y="-1182.0453"/>
         <ID1 xsi:type="node">8</ID1>
         <ID2 xsi:type="node">49</ID2>
     </child>
-    <child ID="58" layerID="1" created="1293659842379" x="-2162.3816"
-        y="-1065.5391" width="91.779785" height="156.35205"
+    <child ID="58" layerID="1" created="1293659842379" x="-2166.3818"
+        y="-1069.5391" width="91.78003" height="156.3518"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3423b652c0a8010b00a5d7f23cd82ca1</URIString>
-        <point1 x="-2071.1018" y="-1065.0391"/>
-        <point2 x="-2161.8816" y="-909.687"/>
+        <point1 x="-2075.1018" y="-1069.0391"/>
+        <point2 x="-2165.8818" y="-913.68726"/>
         <ID1 xsi:type="node">8</ID1>
         <ID2 xsi:type="node">148</ID2>
     </child>
     <child ID="8" label="C++" layerID="1" created="1293658025506"
-        x="-2117.0835" y="-1101.0391" width="113.0" height="36.0"
+        x="-2121.0835" y="-1105.0391" width="113.0" height="36.0"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#FFC63B</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -1316,7 +1355,7 @@
         <shape xsi:type="rectangle"/>
     </child>
     <child ID="125" label="Classi&#xa;astratte" layerID="1"
-        created="1293663979546" x="-1973.5984" y="-987.0742"
+        created="1293663979546" x="-1977.5984" y="-991.0742"
         width="87.0" height="55.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#FEFEC9</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -1325,21 +1364,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/3463a373c0a8010b00a5d7f29a214b1b</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="126" layerID="1" created="1293663996765" x="-1890.0952"
-        y="-994.4933" width="102.09216" height="25.573486"
+    <child ID="126" layerID="1" created="1293663996765" x="-1894.0951"
+        y="-998.4933" width="102.09204" height="25.573486"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3463a373c0a8010b00a5d7f257a90663</URIString>
-        <point1 x="-1788.503" y="-993.9933"/>
-        <point2 x="-1889.5952" y="-969.4198"/>
+        <point1 x="-1792.503" y="-997.9933"/>
+        <point2 x="-1893.5951" y="-973.4198"/>
         <ID1 xsi:type="node">24</ID1>
         <ID2 xsi:type="node">125</ID2>
     </child>
     <child ID="148" label="Struttura" layerID="1"
-        created="1293665506982" x="-2221.5872" y="-914.22253"
+        created="1293665506982" x="-2225.5872" y="-918.22253"
         width="99.0" height="44.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#FDE888</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -1349,7 +1388,7 @@
         <shape xsi:type="diamond"/>
     </child>
     <child ID="173" label="new" layerID="1" created="1294783661084"
-        x="-2544.331" y="-891.02136" width="75.72119" height="32.98996"
+        x="-2548.331" y="-895.02136" width="75.72119" height="32.98996"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#FEFD8C</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -1358,22 +1397,22 @@
         <URIString>http://vue.tufts.edu/rdf/resource/7749db95c0a8010d011c34fbd958c9ec</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="174" layerID="1" created="1294783700960" x="-2473.4922"
-        y="-905.09937" width="100.86792" height="23.522705"
+    <child ID="174" layerID="1" created="1294783700960" x="-2477.4922"
+        y="-909.09937" width="100.86792" height="23.522705"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7749db96c0a8010d011c34fb1d48c459</URIString>
-        <point1 x="-2373.1243" y="-904.59937"/>
-        <point2 x="-2472.9922" y="-882.07666"/>
+        <point1 x="-2377.1243" y="-908.59937"/>
+        <point2 x="-2476.9922" y="-886.07666"/>
         <ID1 xsi:type="node">37</ID1>
         <ID2 xsi:type="node">173</ID2>
     </child>
     <child ID="241"
         label="Le diverse forme religiose, &#xa;sono classi derivate da una &#xa;Mistica iniziale?"
-        layerID="1" created="1294797531638" x="-893.152" y="-914.3707"
+        layerID="1" created="1294797531638" x="-897.152" y="-918.3707"
         width="209.99805" height="50.0" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Le diverse religioni, possono essere delle forme derivate di una stessa mistica iniziale?%nl;Esistono dei "dati membro" e delle funzioni comuni, che siano state ridefinite con il passare del tempo, ma che facciano capo a un corpo di credenze (o di nozioni) iniziale?%nl;Anche solo in questa mappa, se ne trovano diverse (p.es. Empedocle -&gt; Poe).%nl;%nl;Cos&#xec; come le classi di un lunguaggio OO sono ridefinite per adattarsi a uno specifico contesto di utilizzo, cos&#xec; pure la Mistica iniziale potrebbe essere stata "overloaded" per adattarsi a uno specifico luogo o tempo.%nl;Se fosse cos&#xec;, tanto pi&#xf9; si va indietro nel tempo, e quindi nella gerarchia di classi, tanto pi&#xf9; ci si dovrebbe avvicinare alle caratteristiche proprie della Mistica.%nl;%nl;E' possibile definire una gerarchia di classi figlie della classe astratta "credo"?%nl;(semplificando molto, visto che sono le 3 di notte) Budda e Zoroastro influenzano i greci, che influenzano gli ebrei, che a loro volta infulenzano i cristiani, che alla fine producono i Testimoni di Geova...%nl;%nl;Allo stesso modo (sempre semplificando), dal C si &#xe8; evoluto il C++ e dal C++, Java.%nl;Sfortunatamente, per&#xf2;, i (cattivi) programmatori Java hanno fatto alla programmazione quello che i cattolici hanno fatto al cristianesimo.%nl;%nl;</notes>
@@ -1385,20 +1424,20 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="242" label="domanda" layerID="1" created="1294797541698"
-        x="-1514.0769" y="-989.6653" width="621.4249" height="86.35016"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="2" xsi:type="link">
+        x="-1368.3295" y="-1022.688" width="475.4627"
+        height="107.168945" strokeWidth="1.0" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7803c783c0a8010d001370ab4ebb6aca</URIString>
-        <point1 x="-1513.5769" y="-989.16534"/>
-        <point2 x="-893.152" y="-903.8152"/>
+        <point1 x="-1367.8295" y="-1022.188"/>
+        <point2 x="-893.36676" y="-916.01904"/>
         <ID1 xsi:type="node">27</ID1>
         <ID2 xsi:type="node">241</ID2>
     </child>
     <child ID="309" label="allocazione&#xa;della memoria" layerID="1"
-        created="1295047320189" x="-2707.1372" y="-869.5265"
+        created="1295047320189" x="-2711.1372" y="-873.5265"
         width="107.09999" height="48.100002" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <fillColor>#FEFEC9</fillColor>
@@ -1408,21 +1447,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/86db9810c0a8010d00397cead0b5a970</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="310" layerID="1" created="1295047342469" x="-2605.1182"
-        y="-868.23035" width="64.730225" height="13.58429"
+    <child ID="310" layerID="1" created="1295047342469" x="-2609.1177"
+        y="-872.23035" width="64.72998" height="13.5841675"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#5252A8</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86db9810c0a8010d00397ceaffbbcc43</URIString>
-        <point1 x="-2540.8877" y="-867.73035"/>
-        <point2 x="-2604.618" y="-855.14606"/>
+        <point1 x="-2544.8877" y="-871.7303"/>
+        <point2 x="-2608.6177" y="-859.1461"/>
         <ID1 xsi:type="node">173</ID1>
         <ID2 xsi:type="node">309</ID2>
     </child>
     <child ID="312" label="operatori&#xa;booleani" layerID="1"
-        created="1295047796461" x="-2308.4702" y="-800.8264"
+        created="1295047796461" x="-2312.4702" y="-804.8264"
         width="102.09999" height="45.100002" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Locke (SDFO, 586): "Dio non &#xe8; stato cos&#xec; economo, creando gli uomini, da farne semplicemente delle creature a due gambe, lasciando poi ad Aristotele il compito di renderli razionali".%nl;%nl;Il Maestro potrebbe dire la stessa cosa, sostituendo Bool ad Aristotele.%nl;</notes>
@@ -1433,21 +1472,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/86e18cc8c0a8010d00397cea50de705b</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="313" layerID="1" created="1295047810073" x="-2330.3052"
-        y="-895.3872" width="59.940674" height="95.951904"
+    <child ID="313" layerID="1" created="1295047810073" x="-2334.306"
+        y="-899.38745" width="59.940918" height="95.951904"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#5252A8</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86e18cc8c0a8010d00397cea75c9269a</URIString>
-        <point1 x="-2329.8054" y="-894.8872"/>
-        <point2 x="-2270.8647" y="-799.9353"/>
+        <point1 x="-2333.806" y="-898.88745"/>
+        <point2 x="-2274.865" y="-803.93555"/>
         <ID1 xsi:type="node">37</ID1>
         <ID2 xsi:type="node">312</ID2>
     </child>
     <child ID="314" label="vero e falso" layerID="1"
-        created="1295047837468" x="-2160.0098" y="-742.73145"
+        created="1295047837468" x="-2164.0098" y="-746.73145"
         width="118.2" height="42.399994" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Un'affermazione riguardante la Verit&#xe0; pu&#xf2; essere o vera o falsa.%nl;Questo fatto d&#xe0; luogo a una ricorsione, quindi l'affermazione pu&#xf2; essere o tautologica (se la si accetta per buona) o paradossale (se la si nega).%nl;In sostanza, il concetto stesso di Verti&#xe0; &#xe8; inconoscibile perch&#xe9;, per essere definito, deve PRIMA essere valutato e non posso valutarlo perch&#xe9; non so cosa sia "vero".%nl;Da questo punto di vista, potremmo essere d'accordo con William James quando dice che:&#xa0;%nl;%nl;&#xa0;&#xa0;&#xa0;&#xa0;Un'idea &#xe8; "vera" fintanto che credere in essa &#xe8; utile per le nostre vite&#xa0;%nl;%nl;specie in quei casi in cui la coincidenza dell'affermazione non sia del tutto evidente (v. Verit&#xe0; aristoteliche e verit&#xe0; fuzzy)%nl;%nl;Russell sostiene (p. 783) che la condizione di "vero" o di "falso" &#xe8; uno stato dell'organismo, determinato da condizioni esterne all'organismo.%nl;Questo &#xe8; vero anche per i computer: "vero" e "falso" sono stati possibili per un'istruzione e dipendono per lo pi&#xf9; da cause esterne all'istruzione stessa.%nl;La cosa interessante, in questo caso, &#xe8; che "vero" e "falso" sono anche delle convenzioni che esulano del tutto dal contesto specifico del sistema.%nl;Per Access, "falso" &#xe8; -1; per le prime versioni di MySQL &#xe8; 'f'; per Postgres o Oracle, &#xe8; 0.%nl;Il computer, per&#xf2;, non ha IN SE' il concetto di "vero" o di "falso", ma solo l'associazione del valore booleano "false" a una determinata sequenza di bit.%nl;Il concetto di "vero" e di "falso", quindi, &#xe8; un valore simbolico che NOI inseriamo nella logica del computer, "traducendo" nel suo linguaggio un concetto che &#xe8; propio del nostro mondo.%nl;Da questo punto di vista, &#xe8; vera l'affermazione di Peirce (cit. da Russel, 784), secondo cui:%nl;%nl;&#xa0;&#xa0;&#xa0;&#xa0;La verit&#xe0; &#xe8; l'opinione destinata a essere accettata alla fine, da tutti coloro che indagano&#xa0;%nl;</notes>
@@ -1458,22 +1497,22 @@
         <URIString>http://vue.tufts.edu/rdf/resource/86e18cc9c0a8010d00397cea77312a51</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="315" layerID="1" created="1295047861609" x="-2218.6401"
-        y="-764.5349" width="76.684814" height="28.440552"
+    <child ID="315" layerID="1" created="1295047861609" x="-2222.6401"
+        y="-768.5349" width="76.68457" height="28.44043"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#5252A8</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86e18ccac0a8010d00397ceaee345cf2</URIString>
-        <point1 x="-2218.1401" y="-764.0349"/>
-        <point2 x="-2142.4553" y="-736.59436"/>
+        <point1 x="-2222.1401" y="-768.0349"/>
+        <point2 x="-2146.4556" y="-740.5945"/>
         <ID1 xsi:type="node">312</ID1>
         <ID2 xsi:type="node">314</ID2>
     </child>
     <child ID="318"
         label="Verit&#xe0; aristoteliche &#xa;e verit&#xe0; fuzzy"
-        layerID="1" created="1295048098685" x="-2190.1099" y="-583.5315"
+        layerID="1" created="1295048098685" x="-2194.1099" y="-587.5315"
         width="162.4" height="48.4" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>Dire che&#xa0;%nl;%nl;&#xa0;&#xa0;&#xa0;&#xa0;2=2 (ma anche: 1+1=2)%nl;%nl;&#xe8; una verit&#xe0; aristotelica difficile da confutare, vista l'identit&#xe0; dei termini. Al contrario, dire:%nl;%nl;&#xa0;&#xa0;&#xa0;&#xa0;il mio cliente non &#xe8; un pedofilo%nl;%nl;&#xe8; qualcosa di meno definito, perch&#xe8; "cliente" e "pedofilo" non sono termini equivalenti.&#xa0;%nl;%nl;In questo caso, nel dubbio, potremmo dare ragione a W. James e considerarle l'affermazione vera o falso a seconda delle conseguenze che l'una o l'altra scelta comporterebbe.%nl;%nl;Solo nel dubbio, per&#xf2;, perch&#xe9; il concetto di "utile" &#xe8; soggetto agli effetti dell'A.D. ed &#xe8; quindi ancora pi&#xf9; incerto che il concetto di vero o falso.&#xa0;%nl;%nl;%nl;%nl;%nl;%nl;</notes>
         <fillColor>#FEFEC9</fillColor>
@@ -1483,34 +1522,34 @@
         <URIString>http://vue.tufts.edu/rdf/resource/86e815dfc0a8010d00397cea8c4a1c97</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="319" layerID="1" created="1295048137204" x="-2108.218"
-        y="-700.8711" width="6.7646484" height="117.875"
+    <child ID="319" layerID="1" created="1295048137204" x="-2112.218"
+        y="-704.8711" width="6.7646484" height="117.875"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86e815dfc0a8010d00397cead41c713e</URIString>
-        <point1 x="-2101.9534" y="-700.3711"/>
-        <point2 x="-2107.718" y="-583.4961"/>
+        <point1 x="-2105.9534" y="-704.3711"/>
+        <point2 x="-2111.718" y="-587.4961"/>
         <ID1 xsi:type="node">314</ID1>
         <ID2 xsi:type="node">318</ID2>
     </child>
-    <child ID="321" layerID="1" created="1295048284491" x="-2200.5227"
-        y="-705.7344" width="62.736816" height="27.919067"
+    <child ID="321" layerID="1" created="1295048284491" x="-2204.5227"
+        y="-709.7345" width="62.737305" height="27.91925"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86e815e0c0a8010d00397cea84533789</URIString>
-        <point1 x="-2138.286" y="-705.2344"/>
-        <point2 x="-2200.0227" y="-678.3153"/>
+        <point1 x="-2142.2854" y="-709.2345"/>
+        <point2 x="-2204.0227" y="-682.31525"/>
         <ID1 xsi:type="node">314</ID1>
         <ID2 xsi:type="node">320</ID2>
     </child>
     <child ID="320" label="Paradosso" layerID="1"
-        created="1295048278982" x="-2287.8765" y="-681.4314"
+        created="1295048278982" x="-2291.8765" y="-685.4314"
         width="113.399994" height="33.4" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>Le filosofie occidentali cercano di sfuggire il paradosso; lo Zen, al contrario, lo cerca incessantemente.%nl;E' possibile che sia il paradosso, la chiave per arrivare alla Verit&#xe0;?%nl;O anche: &#xe8; possibile che non si possa arrivare alla Verit&#xe0;, se non si accetta il paradosso?%nl;Del resto: perch&#xe9; no?%nl;Perch&#xe9; il mondo di Dio, la sua visione delle cose, non dovrebbe essere paradossale, per noi?%nl;Se mostrassimo a un personaggio bidimensionale di un gioco per computer il nostro mondo tridimensionale, non lo troverebbe paradossale?%nl;E se spiegassimo a PacMan che dobbiamo pagare l'IVA, non lo troverebbe paradossale?%nl;%nl;Altra ipotesi (alcuni mesi dopo): &#xe8; possibile che il paradosso indichi il punto di confine fra il nostro sistema e un sistema di ordine superiore? E' possibile, cio&#xe8;, che nel nostro sistema ci siano degli elementi "di frontiera" (che segnano cio&#xe8; il confine fra il nostro sistema e un altro) che per questa loro ambivalenza non possano essere spiegati compiutamente con gli elementi a nostra disposizione?%nl;Il Tempo non si pu&#xf2; definire senza una tautologia; definire la Verit&#xe0; comporta una ricorsione (v.)... E' la nostra corda, che &#xe8; (ancora) troppo corta, o &#xe8; piuttosto il pozzo, che non ha fondo (almeno in questo Universo)?%nl;%nl;%nl;</notes>
@@ -1522,8 +1561,8 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="331" label="Interfaccia virtuale &#xa;vs. &#xa;reale"
-        layerID="1" created="1295048849602" x="-878.08453"
-        y="-1185.3945" width="166.0" height="68.0" strokeWidth="2.0"
+        layerID="1" created="1295048849602" x="-882.08453"
+        y="-1189.3945" width="166.0" height="68.0" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>Dawkins, GE, p.289%nl;Il fatto che si stia tornando, anche in casa Mac, a sistemi basati su interfaccia a carattere, tipo Mac OSX o Ubuntu, pu&#xf2; essere il sintomo di un'inversione di tendenza?%nl;</notes>
         <fillColor>#FDE888</fillColor>
@@ -1534,7 +1573,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="332" label="L'anima, &#xe8; un'interfaccia?" layerID="1"
-        created="1295048903193" x="-746.67365" y="-1037.5981"
+        created="1295048903193" x="-750.67365" y="-1041.5981"
         width="197.99902" height="51.0" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Dawkins, GE, p.289%nl;II - L'anima &#xe8; un'interfaccia? Se s&#xec;, perch&#xe9;?</notes>
@@ -1546,7 +1585,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="333" label="Il computer" layerID="1"
-        created="1295048910687" x="-1065.008" y="-1087.4315"
+        created="1295048910687" x="-1069.008" y="-1091.4315"
         width="131.0" height="39.5" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#FFC63B</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -1555,60 +1594,60 @@
         <URIString>http://vue.tufts.edu/rdf/resource/86ef7aa4c0a8010d00397cea3fda95fd</URIString>
         <shape xsi:type="rectangle"/>
     </child>
-    <child ID="334" layerID="1" created="1295048917164" x="-1259.8798"
-        y="-1176.7664" width="213.60474" height="89.83484"
+    <child ID="334" layerID="1" created="1295048917164" x="-1263.8799"
+        y="-1180.7665" width="213.60498" height="89.83496"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86ef7aa4c0a8010d00397cea8be18393</URIString>
-        <point1 x="-1259.3798" y="-1176.2664"/>
-        <point2 x="-1046.775" y="-1087.4315"/>
+        <point1 x="-1263.3799" y="-1180.2665"/>
+        <point2 x="-1050.7749" y="-1091.4315"/>
         <ID1 xsi:type="node">12</ID1>
         <ID2 xsi:type="node">333</ID2>
     </child>
-    <child ID="335" layerID="1" created="1295048982878" x="-762.5926"
-        y="-1120.7188" width="88.433105" height="83.62048"
+    <child ID="335" layerID="1" created="1295048982878" x="-766.59265"
+        y="-1124.7188" width="88.433105" height="83.62048"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86ef7aa5c0a8010d00397cea52aeaba2</URIString>
-        <point1 x="-762.0926" y="-1120.2186"/>
-        <point2 x="-674.6595" y="-1037.5981"/>
+        <point1 x="-766.09265" y="-1124.2186"/>
+        <point2 x="-678.65955" y="-1041.5981"/>
         <ID1 xsi:type="node">331</ID1>
         <ID2 xsi:type="node">332</ID2>
     </child>
-    <child ID="336" layerID="1" created="1295048985575" x="-951.7794"
-        y="-1127.8572" width="98.49652" height="40.92566"
+    <child ID="336" layerID="1" created="1295048985575" x="-955.77954"
+        y="-1131.857" width="98.49664" height="40.925537"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86ef7aa5c0a8010d00397ceaed0dd157</URIString>
-        <point1 x="-951.2794" y="-1087.4315"/>
-        <point2 x="-853.7829" y="-1127.3572"/>
+        <point1 x="-955.27954" y="-1091.4315"/>
+        <point2 x="-857.7829" y="-1131.357"/>
         <ID1 xsi:type="node">333</ID1>
         <ID2 xsi:type="node">331</ID2>
     </child>
-    <child ID="347" layerID="1" created="1295052267928" x="-1986.9761"
-        y="-1293.2317" width="853.1677" height="45.534546"
+    <child ID="347" layerID="1" created="1295052267928" x="-1990.9761"
+        y="-1297.2317" width="853.1681" height="45.534546"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/872bdbefc0a8010d00c1c2f121702e8e</URIString>
-        <point1 x="-1134.3083" y="-1248.1971"/>
-        <point2 x="-1986.4761" y="-1292.7317"/>
+        <point1 x="-1138.3081" y="-1252.1971"/>
+        <point2 x="-1990.4762" y="-1296.7317"/>
         <ID1 xsi:type="node">345</ID1>
         <ID2 xsi:type="node">48</ID2>
     </child>
     <child ID="368" label="tipi di dato = aree di memoria" layerID="1"
-        created="1295817995100" x="-2747.93" y="-1141.4932"
+        created="1295817995100" x="-2751.93" y="-1145.4932"
         width="198.0" height="27.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>ciascun tipo di dato non esiste in s&#xe9;, ma &#xe8; solo una convenzione.%nl;un char corrisponde a un byte; un intero a due byte e un double a quattro o pi&#xf9; byte.%nl;%nl;insistere sul fatto che ciascun costrutto del C++ non &#xe8; che un modo di vedere la memoria (v. operatori).%nl;%nl;lo stesso concetto deve essere anticipato nel capitolo dedicato ai sistemi di calcolo, specificando che la notazione ottale o esadecimale sono solo modi diversi di descrivere una stessa quantit&#xe0;.%nl;%nl;qualcosa di simile deve essere detto anche a proposito delle operazioni sui dati.%nl;</notes>
         <fillColor>#FEFD8C</fillColor>
@@ -1618,21 +1657,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/b4d46a8dc0a8010b0047fc715d34de24</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="369" layerID="1" created="1295818020742" x="-2586.846"
-        y="-1182.0518" width="186.70703" height="41.058594"
+    <child ID="369" layerID="1" created="1295818020742" x="-2590.8457"
+        y="-1186.0518" width="186.70679" height="41.058594"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/b4d46a8dc0a8010b0047fc71535224b1</URIString>
-        <point1 x="-2400.639" y="-1181.5518"/>
-        <point2 x="-2586.346" y="-1141.4932"/>
+        <point1 x="-2404.639" y="-1185.5518"/>
+        <point2 x="-2590.3457" y="-1145.4932"/>
         <ID1 xsi:type="node">49</ID1>
         <ID2 xsi:type="node">368</ID2>
     </child>
     <child ID="370" label="gli operatori sono solo simboli" layerID="1"
-        created="1295818376089" x="-2618.9692" y="-1002.49817"
+        created="1295818376089" x="-2622.9692" y="-1006.49817"
         width="203.0" height="27.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>l'addizione, la sottrazione e tutte le operazioni matematiche sono solo delle convenzioni, un modo di identificare un determinato "fenomeno naturale" che era valido milioni di anni prima che gli uomini apparissero sulla Terra e che lo sar&#xe0; anche dopo che saranno scomparsi.%nl;%nl;Fare l'esempio della forza di gravit&#xe0;, che esisteva da prima di Newton e che sopravviver&#xe0; anche al nostro Pianeta.%nl;%nl;Se possibile, utilizzare come esempio le "regole di business" elencate nella mitopojesi (di mamma ce n'&#xe8; una sola, l'acqua va verso il bassso, ecc.) ; leggi decise in fase di analisi, che sono vere indipendentemente dall'implementazione.%nl;%nl;%nl;%nl;</notes>
         <fillColor>#FEFD8C</fillColor>
@@ -1642,34 +1681,34 @@
         <URIString>http://vue.tufts.edu/rdf/resource/b4d46a8ec0a8010b0047fc7130f7d8f3</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="371" layerID="1" created="1295818383192" x="-2486.9355"
-        y="-975.9981" width="122.14819" height="53.70117"
+    <child ID="371" layerID="1" created="1295818383192" x="-2490.9358"
+        y="-979.99817" width="122.14844" height="53.701294"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/b4d46a8fc0a8010b0047fc71a3b69157</URIString>
-        <point1 x="-2365.2874" y="-922.79694"/>
-        <point2 x="-2486.4355" y="-975.4981"/>
+        <point1 x="-2369.2874" y="-926.7969"/>
+        <point2 x="-2490.4358" y="-979.49817"/>
         <ID1 xsi:type="node">37</ID1>
         <ID2 xsi:type="node">370</ID2>
     </child>
-    <child ID="373" layerID="1" created="1295818950450" x="-2584.3853"
-        y="-1114.9932" width="163.59741" height="34.74695"
+    <child ID="373" layerID="1" created="1295818950450" x="-2588.3853"
+        y="-1118.9932" width="163.59741" height="34.74695"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/b4d46a91c0a8010b0047fc71deb5381d</URIString>
-        <point1 x="-2421.2878" y="-1080.7462"/>
-        <point2 x="-2583.8853" y="-1114.4932"/>
+        <point1 x="-2425.2878" y="-1084.7462"/>
+        <point2 x="-2587.8853" y="-1118.4932"/>
         <ID1 xsi:type="node">34</ID1>
         <ID2 xsi:type="node">368</ID2>
     </child>
     <child ID="421" label="Il cattivo&#xa;programmatore" layerID="1"
-        created="1296084352690" x="-1605.06" y="-1399.7004"
+        created="1296084352690" x="-1609.06" y="-1403.7004"
         width="141.4" height="47.4" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>La cattiva programmazione &#xe8; un virus.%nl;Si propaga e si rafforza con il passare del tempo.%nl;%nl;Le cause della cattiva programmazione sono: %nl;. la fretta%nl;. la retribuzione a function-point%nl;. il "time-to-market"%nl;. la mancanza di test%nl;. l'incapacit&#xe0; di eseguire i test.%nl;%nl;Torna la Sindrome da Telecomando: pi&#xf9; passa il tempo, pi&#xf9; la gente si abitua a delegare ad agenti esterni (Tom-tom, librerie di codice, sensori) azioni che fino a poco tempo prima avrebbe compiuto autonomamente.%nl;C'&#xe8; gente che accende il navigatore anche quando torna a casa dall'ufficio.%nl;Sui miei nuovi calzini da corsa, ci sono due lettere: "D" per il destro, "S" per il sinistro.%nl;%nl;Con il codice, &#xe8; lo stesso: ci si affida a codice gi&#xe0; scritto, senza curarsi di COME sia stato scritto e con quali scopi.%nl;Nella migliore delle ipotesi, si tratta di codice inefficiente, che esegue le azioni attese, ma richiede sempre pi&#xf9; risorse di sistema e/o di tempo di esecuzione.%nl;Questo va bene a chi vende l'HW, perch&#xe9; implica un continuo rinnovo del parco HW con sistemi pi&#xf9; potenti.%nl;Non a caso, Java l'ha inventato SUN...%nl;%nl;Nella peggiore delle ipotesi, si tratta di codice fallato, che fa male il suo lavoro (cos&#xec; come chi lo ha scritto) e complica la vita e la gestione del sistema.%nl;Non importa a nessuno: l'unica cosa a cui si presta importanza &#xe8; il rispetto dei tempi di consegna (per paura delle penali), senza tenre conto del fatto che, spesso, l'utilizzo maldestro di software maldestro allunga i tempi di sviluppo, test e correzione.%nl;%nl;In pratica, la programmazione &#xe8; diventata una sorta di roulette russa, in cui la fortuna gioca un ruolo decisivo: se ti dice culo, gli errori non escono durante il collaudo e se ne riparla in assistenza (ma intanto hai incassato il SAL).%nl;Se ti dice male, butti la tua vita cercando di far funzionare uno strumento difettoso, invece di spendere un po' di tempo per realizzarne uno sano.%nl;%nl;La stessa cosa si pu&#xf2; dire delle vite di queste persone.%nl;%nl;</notes>
         <fillColor>#FDE888</fillColor>
@@ -1679,21 +1718,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/c4b6f61fc0a8010b00374956b590822b</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="422" layerID="1" created="1296084365180" x="-1508.9973"
-        y="-1354.4905" width="123.03589" height="104.8562"
+    <child ID="422" layerID="1" created="1296084365180" x="-1512.9971"
+        y="-1358.4902" width="123.03577" height="104.85608"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c4b6f620c0a8010b0037495673b7c51e</URIString>
-        <point1 x="-1386.4614" y="-1250.1343"/>
-        <point2 x="-1508.4973" y="-1353.9905"/>
+        <point1 x="-1390.4614" y="-1254.1343"/>
+        <point2 x="-1512.4972" y="-1357.9904"/>
         <ID1 xsi:type="node">12</ID1>
         <ID2 xsi:type="node">421</ID2>
     </child>
     <child ID="444" label="controllo &#xa;di flusso" layerID="1"
-        created="1297286890832" x="-2628.725" y="-656.14813"
+        created="1297286890832" x="-2632.725" y="-660.14813"
         width="128.39996" height="55.549988" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Ciascun linguaggio ha una sua sintassi per i cicli (C/C++, BASIC, bash ecc.), ma sono solo modi differenti di descrivere uno stesso evento/comportamento.%nl;</notes>
@@ -1704,21 +1743,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/0c5b34a2c0a8010b003b6dbd7a2cfe6b</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="445" layerID="1" created="1297286898968" x="-2544.344"
-        y="-896.33203" width="191.67285" height="242.28784"
+    <child ID="445" layerID="1" created="1297286898968" x="-2548.3442"
+        y="-900.3323" width="191.6731" height="242.28833"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/0c5b34a3c0a8010b003b6dbdbd4ac661</URIString>
-        <point1 x="-2353.1711" y="-895.83203"/>
-        <point2 x="-2543.844" y="-654.5442"/>
+        <point1 x="-2357.1711" y="-899.8323"/>
+        <point2 x="-2547.8442" y="-658.54395"/>
         <ID1 xsi:type="node">37</ID1>
         <ID2 xsi:type="node">444</ID2>
     </child>
     <child ID="446" label="variabili" layerID="1"
-        created="1297287292185" x="-2569.5857" y="-1327.0931"
+        created="1297287292185" x="-2573.5857" y="-1331.0931"
         width="85.860596" height="45.494995" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <fillColor>#FEFD8C</fillColor>
@@ -1729,7 +1768,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="447" label="costanti" layerID="1" created="1297287303481"
-        x="-2634.5857" y="-1251.0931" width="102.860596"
+        x="-2638.5857" y="-1255.0931" width="102.860596"
         height="37.494995" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#FEFD8C</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -1739,7 +1778,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="449" label="visibilit&#xe0;&#xa;delle variabili"
-        layerID="1" created="1297287359799" x="-2688.125" y="-1393.9982"
+        layerID="1" created="1297287359799" x="-2692.125" y="-1397.9982"
         width="101.59999" height="47.600002" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <fillColor>#FEFEC9</fillColor>
@@ -1749,53 +1788,53 @@
         <URIString>http://vue.tufts.edu/rdf/resource/0c5b34a3c0a8010b003b6dbd8e890be3</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="450" layerID="1" created="1297287416914" x="-2538.1663"
-        y="-1224.2727" width="136.53613" height="26.54358"
+    <child ID="450" layerID="1" created="1297287416914" x="-2542.166"
+        y="-1228.2727" width="136.53564" height="26.543457"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/0c5b34a4c0a8010b003b6dbd5f250469</URIString>
-        <point1 x="-2402.1301" y="-1198.2291"/>
-        <point2 x="-2537.6663" y="-1223.7727"/>
+        <point1 x="-2406.1304" y="-1202.2292"/>
+        <point2 x="-2541.666" y="-1227.7727"/>
         <ID1 xsi:type="node">49</ID1>
         <ID2 xsi:type="node">447</ID2>
     </child>
-    <child ID="451" layerID="1" created="1297287419260" x="-2500.9858"
-        y="-1286.9302" width="116.22095" height="79.87988"
+    <child ID="451" layerID="1" created="1297287419260" x="-2504.9858"
+        y="-1290.9302" width="116.22095" height="79.87988"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/0c5b34a4c0a8010b003b6dbd18a91697</URIString>
-        <point1 x="-2385.265" y="-1207.5503"/>
-        <point2 x="-2500.4858" y="-1286.4302"/>
+        <point1 x="-2389.265" y="-1211.5503"/>
+        <point2 x="-2504.4858" y="-1290.4302"/>
         <ID1 xsi:type="node">49</ID1>
         <ID2 xsi:type="node">446</ID2>
     </child>
-    <child ID="452" layerID="1" created="1297287420952" x="-2606.5344"
-        y="-1352.0792" width="51.938965" height="31.310547"
+    <child ID="452" layerID="1" created="1297287420952" x="-2610.5342"
+        y="-1356.0791" width="51.93872" height="31.310425"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/0c5b34a4c0a8010b003b6dbdb65c6a16</URIString>
-        <point1 x="-2555.0955" y="-1321.2687"/>
-        <point2 x="-2606.0344" y="-1351.5792"/>
+        <point1 x="-2559.0955" y="-1325.2687"/>
+        <point2 x="-2610.0342" y="-1355.5791"/>
         <ID1 xsi:type="node">446</ID1>
         <ID2 xsi:type="node">449</ID2>
     </child>
     <child ID="504"
         label="Every [programming] language&#xa;fixes something"
-        layerID="1" created="1315635770414" x="-1211.9521" y="-1448.279"
+        layerID="1" created="1315635770414" x="-1215.9521" y="-1452.279"
         width="239.20001" height="67.2" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>&#xab;Kevin Kelleher suggested an interesting way to compare programming%nl;languages: to describe each in terms of the problem it fixes. The%nl;surprising thing is how many, and how well, languages can be described%nl;this way. Here is a chart of the resulting dependencies.&#xbb;%nl;%nl;%nl;</notes>
-        <resource referenceCreated="0" accessAttempted="1315635866482"
-            accessSuccessful="1315635866486"
+        <resource referenceCreated="0" accessAttempted="1586694456099"
+            accessSuccessful="1586694456115"
             spec="http://www.solipsys.co.uk/new/EveryLanguageFixesSomething.html"
             type="2" xsi:type="URLResource">
             <property key="Content.type" value="text/html"/>
@@ -1808,21 +1847,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/5208aa31c0a8010600b72ce190b7d9e6</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="505" layerID="1" created="1315635774763" x="-1290.1083"
-        y="-1383.4741" width="160.24829" height="133.83997"
+    <child ID="505" layerID="1" created="1315635774763" x="-1294.1085"
+        y="-1387.4741" width="160.24854" height="133.83984"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/5208aa33c0a8010600b72ce106803212</URIString>
-        <point1 x="-1289.6083" y="-1250.1343"/>
-        <point2 x="-1130.36" y="-1382.9742"/>
+        <point1 x="-1293.6085" y="-1254.1343"/>
+        <point2 x="-1134.36" y="-1386.9741"/>
         <ID1 xsi:type="node">12</ID1>
         <ID2 xsi:type="node">504</ID2>
     </child>
     <child ID="520" label="delete" layerID="1" created="1362261918794"
-        x="-2567.579" y="-797.7598" width="86.399994" height="32.98996"
+        x="-2571.579" y="-801.7598" width="86.399994" height="32.98996"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>l'istruzione delete &#xe8;, per il C++ ci&#xf2; che &#xe8; la morte per il C'hi++.%nl;</notes>
         <fillColor>#FEFD8C</fillColor>
@@ -1832,21 +1871,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/2d2dc5947f00000100f3c66e5dea2f81</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="521" layerID="1" created="1362261925384" x="-2504.705"
-        y="-899.03723" width="145.87695" height="103.93823"
+    <child ID="521" layerID="1" created="1362261925384" x="-2508.705"
+        y="-903.03723" width="145.87695" height="103.93823"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/2d2dc5947f00000100f3c66e90318af2</URIString>
-        <point1 x="-2359.3281" y="-898.53723"/>
-        <point2 x="-2504.205" y="-795.599"/>
+        <point1 x="-2363.3281" y="-902.53723"/>
+        <point2 x="-2508.205" y="-799.599"/>
         <ID1 xsi:type="node">37</ID1>
         <ID2 xsi:type="node">520</ID2>
     </child>
     <child ID="540" label="numeri" layerID="1" created="1366064240129"
-        x="-2423.0957" y="-1372.5702" width="82.710205"
+        x="-2427.0957" y="-1376.5702" width="82.710205"
         height="49.972046" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#FEFEC9</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -1855,21 +1894,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/0fd9ce64c0a80104005fe568c692d8e2</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="541" layerID="1" created="1366064240129" x="-2378.8267"
-        y="-1323.3047" width="15.264893" height="104.53516"
+    <child ID="541" layerID="1" created="1366064240129" x="-2382.827"
+        y="-1327.3047" width="15.265137" height="104.53711"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/0fd9ce64c0a80104005fe568fcc8ca47</URIString>
-        <point1 x="-2364.0618" y="-1219.2695"/>
-        <point2 x="-2378.3267" y="-1322.8047"/>
+        <point1 x="-2368.0618" y="-1223.2676"/>
+        <point2 x="-2382.327" y="-1326.8047"/>
         <ID1 xsi:type="node">49</ID1>
         <ID2 xsi:type="node">540</ID2>
     </child>
     <child ID="548" label="Funzioni&#xa;virtuali pure" layerID="1"
-        created="1366065396911" x="-1849.2188" y="-822.09814"
+        created="1366065396911" x="-1853.2188" y="-826.09814"
         width="118.166626" height="51.50003" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <fillColor>#FEFEC9</fillColor>
@@ -1879,21 +1918,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/0fd9ce65c0a80104005fe568019ca7b0</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="549" layerID="1" created="1366065414597" x="-1909.9609"
-        y="-936.0066" width="99.70471" height="116.110596"
+    <child ID="549" layerID="1" created="1366065414597" x="-1913.9609"
+        y="-940.0066" width="99.70459" height="116.11035"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/0fd9ce65c0a80104005fe568476c4887</URIString>
-        <point1 x="-1909.4609" y="-935.5066"/>
-        <point2 x="-1810.7562" y="-820.396"/>
+        <point1 x="-1913.4609" y="-939.5066"/>
+        <point2 x="-1814.7563" y="-824.39624"/>
         <ID1 xsi:type="node">125</ID1>
         <ID2 xsi:type="node">548</ID2>
     </child>
     <child ID="556" label="Classi e istanze" layerID="1"
-        created="1367875232095" x="-1419.2188" y="-947.2981"
+        created="1367875232095" x="-1423.2188" y="-951.2981"
         width="142.79999" height="55.0" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Per spiegare la differenza fra classe e istanza, possiamo attingere %sp;a piene mani da Aristotele</notes>
@@ -1904,21 +1943,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/7bbbdfda7f000001019e80b13995ab39</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="558" layerID="1" created="1367875302795" x="-1714.4508"
-        y="-995.47327" width="304.40747" height="63.296387"
+    <child ID="558" layerID="1" created="1367875302795" x="-1718.4508"
+        y="-999.47327" width="304.40747" height="63.296387"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7bbbdfdb7f000001019e80b1e75948cb</URIString>
-        <point1 x="-1713.9508" y="-994.97327"/>
-        <point2 x="-1410.5433" y="-932.6769"/>
+        <point1 x="-1717.9508" y="-998.97327"/>
+        <point2 x="-1414.5433" y="-936.6769"/>
         <ID1 xsi:type="node">24</ID1>
         <ID2 xsi:type="node">556</ID2>
     </child>
     <child ID="564" label="Metodi e dati membro" layerID="1"
-        created="1367876868740" x="-1636.5188" y="-790.09814"
+        created="1367876868740" x="-1640.5188" y="-794.09814"
         width="176.20001" height="55.0" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Anche qui, come per classe e istanza, possiamo fare dei riferimenti ad Aristotele: metodi e dati membro sono come anima e corpo.</notes>
@@ -1929,21 +1968,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/7bd390fc7f000001019e80b1984e8e3a</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="565" layerID="1" created="1367876879531" x="-1736.4368"
-        y="-984.17236" width="166.0531" height="195.58948"
+    <child ID="565" layerID="1" created="1367876879531" x="-1740.4365"
+        y="-988.17224" width="166.05286" height="195.58911"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7bd390fd7f000001019e80b1f21e6f82</URIString>
-        <point1 x="-1735.9366" y="-983.67236"/>
-        <point2 x="-1570.8835" y="-789.0829"/>
+        <point1 x="-1739.9366" y="-987.67224"/>
+        <point2 x="-1574.8838" y="-793.0831"/>
         <ID1 xsi:type="node">24</ID1>
         <ID2 xsi:type="node">564</ID2>
     </child>
     <child ID="567" label="Dichiarazione&#xa;e definizione" layerID="1"
-        created="1367959106381" x="-1558.3954" y="-899.1084"
+        created="1367959106381" x="-1562.3954" y="-903.1084"
         width="146.27661" height="55.0" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Aristotele pu&#xf2; essere utile ache per spiegare la differenza fra dichiarazione e definizione della classe</notes>
@@ -1954,21 +1993,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/80b9aa567f00000101a8c22b516941df</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="568" layerID="1" created="1367959106381" x="-1725.3334"
-        y="-989.87946" width="196.3147" height="97.01294"
+    <child ID="568" layerID="1" created="1367959106381" x="-1729.3333"
+        y="-993.87946" width="196.31458" height="97.01294"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80b9aa577f00000101a8c22b334aeb06</URIString>
-        <point1 x="-1724.8334" y="-989.37946"/>
-        <point2 x="-1529.5187" y="-893.3665"/>
+        <point1 x="-1728.8333" y="-993.37946"/>
+        <point2 x="-1533.5187" y="-897.3665"/>
         <ID1 xsi:type="node">24</ID1>
         <ID2 xsi:type="node">567</ID2>
     </child>
     <child ID="599" label="La funzione main" layerID="1"
-        created="1367963334028" x="-1823.4475" y="-1394.8472"
+        created="1367963334028" x="-1827.4475" y="-1398.8472"
         width="159.59999" height="61.6" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>Le funzioni devono avere una loro gerarchia: la funzione main &#xe8; al vertice e tutte le altre funzioni sono sue sottoposte.%nl;Nei linguaggi di programmazione non OO, la funzione main &#xe8; un monarca autoritario, che impone il suo volere alle funzioni secondarie; nei linguaggi OO, ls funzione main &#xe8; un sovrano taoista, che lascia liberi i suoi sudditi di comportarsi come vogliono.%nl;%nl;</notes>
@@ -1982,21 +2021,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/81096c1a7f00000101a8c22bc2f9f31e</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="600" layerID="1" created="1367963334028" x="-1890.6736"
-        y="-1409.9482" width="85.57605" height="27.20581"
+    <child ID="600" layerID="1" created="1367963334028" x="-1894.6732"
+        y="-1413.948" width="85.57544" height="27.205688"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/81096c1b7f00000101a8c22bf359cdd3</URIString>
-        <point1 x="-1890.1736" y="-1409.4482"/>
-        <point2 x="-1805.5975" y="-1383.2424"/>
+        <point1 x="-1894.1732" y="-1413.4481"/>
+        <point2 x="-1809.5978" y="-1387.2424"/>
         <ID1 xsi:type="node">601</ID1>
         <ID2 xsi:type="node">599</ID2>
     </child>
     <child ID="601" label="Funzione delle funzioni" layerID="1"
-        created="1367963432567" x="-2058.4045" y="-1463.3643"
+        created="1367963432567" x="-2062.4045" y="-1467.3643"
         width="195.0" height="64.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>Ciascuna funzione deve fare solo ci&#xf2; che &#xe8; necessario e, nei limiti del possibile, non deve impicciarsi degli "affari" altrui.%nl;L'isolamento funzionale permette di variare il codice di una funzione senza dover, per questo, modificare altre parti del codice.%nl;Allo stesso tempo, consente di mantenere immutato il codice di una funzione che operi su una certa classe anche se la struttura interna della classe varia.%nl;</notes>
         <fillColor>#FEFD8C</fillColor>
@@ -2009,21 +2048,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/81096c1b7f00000101a8c22b546f52dd</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="602" layerID="1" created="1367963432567" x="-2026.7881"
-        y="-1400.4658" width="48.19861" height="82.49414"
+    <child ID="602" layerID="1" created="1367963432567" x="-2030.7878"
+        y="-1404.4658" width="48.198364" height="82.49414"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/81096c1b7f00000101a8c22bcdb490b7</URIString>
-        <point1 x="-2026.2881" y="-1318.4717"/>
-        <point2 x="-1979.0895" y="-1399.9658"/>
+        <point1 x="-2030.288" y="-1322.4717"/>
+        <point2 x="-1983.0896" y="-1403.9658"/>
         <ID1 xsi:type="node">48</ID1>
         <ID2 xsi:type="node">601</ID2>
     </child>
     <child ID="603" label="Funzioni friend" layerID="1"
-        created="1367963492390" x="-2089.109" y="-1678.6062"
+        created="1367963492390" x="-2093.109" y="-1682.6062"
         width="136.79999" height="55.0" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>L'utilizzo delle classi "friend" rende pi&#xf9; veloce il codice, ma allo stesso tempo lo rende pi&#xf9; complesso da modificare, perch&#xe9; una modifica alla classe comporter&#xe0; quasi sicuramente anche una modifica alla funzioni a essa collegate.%nl;L'utilizzo delle funzioni friend deve perci&#xf2; essere limitato ai soli casi necessari, come, per esempio, gli operatori di I/O da stream.</notes>
@@ -2035,21 +2074,21 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="605" label="conseguenza" layerID="1"
-        created="1367964048718" x="-2024.9211" y="-1624.4062"
+        created="1367964048718" x="-2028.9209" y="-1628.4062"
         width="67.0" height="161.82764" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/81096c1c7f00000101a8c22b10ffc1d4</URIString>
-        <point1 x="-1969.5359" y="-1463.0786"/>
-        <point2 x="-2013.3063" y="-1623.9062"/>
+        <point1 x="-1973.5358" y="-1467.0786"/>
+        <point2 x="-2017.3062" y="-1627.9062"/>
         <ID1 xsi:type="node">601</ID1>
         <ID2 xsi:type="node">603</ID2>
     </child>
     <child ID="345"
         label="Anarchia e &#xa;compravendita&#xa;nei computer"
-        layerID="1" created="1295051809410" x="-1134.9136" y="-1278.466"
+        layerID="1" created="1295051809410" x="-1138.9136" y="-1282.466"
         width="157.4" height="68.700005" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Affermazione di Duchamp (Marcad&#xe9;, 382):%nl;%nl;"Tutto accade anarchicamente nel mondo. Le leggi servono solo come pretesti. Non si rispettano, si potrebbero tralasciare. Se si sopprimesse i denaro, sono certo che tutto andrebbe altrettanto bene e molto pi&#xf9; facilmente. Il fornaio continuerebbe a fare il pane, perch&#xe9; gli piace farlo e perch&#xe9; si deve avere un'occupazione. Se ne prenderebbero da lui senza pagare una o due forme al giorno, non se ne pu&#xf2; mangiare di pi&#xf9; e sarebbe inutile accumulare pagnotte dato che non si potrebbe venderle."%nl;%nl;Nell'ambito di un programma per computer, la prima affermazione &#xe8; falsa, perch&#xe9; tutto accade in base a delle regole e (anche) a un ordine prestabilito.%nl;La seconda, al contrario. &#xe8; vera, perch&#xe9; ciascun componente fa quello che deve fare senza tornaconto.%nl;Non esiste la compravendita, all'interno di un computer%nl;Ci sono degli scambi (parametro contro valore di ritorno), ma non c'&#xe8; il profitto, almeno, non nel senso di profitto personale: le funzioni fanno ci&#xf2; che fanno non per il proprio tornaconto, ma perch&#xe9; &#xe8; necessario al funzionamento del sistema. Qualcosa di simile alla frase di Marco Aurelio sul bene dell'ape che deve coincidere con il bene dell'alveare.%nl;D'altro canto, l'allocazione dinamica della memoria non permette l'accumulazione permanente di "beni": ci&#xf2; che in un ciclo &#xe8; un double, in un altro potrebbe essere un char, o un intero.%nl;%nl;Per quanto riguarda il mondo reale, vale il contrario: la prima affermazione &#xe8; vera, la seconda &#xe8; falsa: solo pochissime persone fanno un lavoro perch&#xe9; gli piace (gli informatici sono un esempio, ma anche qui la percentuale &#xe8; in dimuzione); la maggior parte lavora perch&#xe9; ha bisogno di soldi per soddisfare falsi bisogni generati dal marketing, sfruttando l'Annosa Dicotomia.%nl;%nl;Penso che l'unico modo in cui si potrebbe far fare alla gente solo ci&#xf2; che &#xe8; preposta a fare (da un disegno superiore, checch&#xe9; ne dica Duchamp) si dovrebbe eliminare il desiderio. In parte, lui l'ha fatto, ma non &#xe8; una cosa alla portata di tutti e, nell'ambito della societ&#xe0; moderna, probabilmente causerebbe degli scompensi economici.%nl;(cfr. 10C)%nl;</notes>
@@ -2060,21 +2099,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/872bdc36c0a8010d00c1c2f1d77951b1</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="346" layerID="1" created="1295052204397" x="-1045.8276"
-        y="-1210.7452" width="40.471985" height="123.81372"
+    <child ID="346" layerID="1" created="1295052204397" x="-1049.8276"
+        y="-1214.7451" width="40.471863" height="123.81348"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/872bdc36c0a8010d00c1c2f1b225bbb7</URIString>
-        <point1 x="-1005.85565" y="-1087.4315"/>
-        <point2 x="-1045.3276" y="-1210.2452"/>
+        <point1 x="-1009.8558" y="-1091.4316"/>
+        <point2 x="-1049.3276" y="-1214.2451"/>
         <ID1 xsi:type="node">333</ID1>
         <ID2 xsi:type="node">345</ID2>
     </child>
     <child ID="740" label="Portabilit&#xe0;&#x9;" layerID="1"
-        created="1545294817053" x="-1180.9629" y="-841.9563"
+        created="1545294817053" x="-1184.9629" y="-845.9563"
         width="157.4" height="68.700005" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Per essere portabilt un software deve fare riferimento a primitive comuni a tutti i sistemi.%nl;Questo vale anche per la filosofia.%nl;Vedi Manifesto.%nl;</notes>
@@ -2085,21 +2124,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/cac35e63c0a82b3223b0c92a93e83632</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="741" layerID="1" created="1545294825208" x="-1315.5249"
-        y="-1169.5342" width="194.76111" height="329.7688"
+    <child ID="741" layerID="1" created="1545294825208" x="-1319.5249"
+        y="-1173.5342" width="194.76135" height="329.76904"
         strokeWidth="2.0" strokeStyle="3" autoSized="false"
         controlCount="0" arrowState="3" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/cac35e64c0a82b3223b0c92a3b89e502</URIString>
-        <point1 x="-1314.5249" y="-1168.5342"/>
-        <point2 x="-1121.7638" y="-840.7654"/>
+        <point1 x="-1318.525" y="-1172.5342"/>
+        <point2 x="-1125.7637" y="-844.76514"/>
         <ID1 xsi:type="node">12</ID1>
         <ID2 xsi:type="node">740</ID2>
     </child>
     <child ID="136" label="IV secolo A.C." layerID="7"
-        created="1293664481777" x="1115.5414" y="166.46436"
+        created="1293664481777" x="1111.5414" y="162.46436"
         width="131.8" height="34.800003" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>In questo periodo succedono un sacco di cose interessanti: oltre ai poemi omerici, nascono la scienza, la filosofia e la matematica greche (SDFO, 33)%nl;e vivono Confucio, Budda e Zoroastro.%nl;%nl;Russell nota comunque che alcune fonti collocano la nascita di Zoroastro intorno al 1000 a.C.</notes>
@@ -2111,20 +2150,20 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="137" label="Approfondimento" layerID="7"
-        created="1293664551751" x="1090.1931" y="26.896118" width="83.0"
-        height="140.58472" strokeWidth="1.0" autoSized="false"
+        created="1293664551751" x="1086.1932" y="22.895996" width="83.0"
+        height="140.58496" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/346b1791c0a8010b00a5d7f2c8e4e554</URIString>
-        <point1 x="1091.6354" y="27.396118"/>
-        <point2 x="1171.751" y="166.98083"/>
+        <point1 x="1087.6354" y="23.395996"/>
+        <point2 x="1167.7511" y="162.98096"/>
         <ID1 xsi:type="node">146</ID1>
         <ID2 xsi:type="node">136</ID2>
     </child>
     <child ID="139" label="Dio" layerID="7" created="1293664635744"
-        x="-84.91001" y="-189.87244" width="101.15184" height="59.21084"
+        x="-88.91001" y="-193.87244" width="101.15184" height="59.21084"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>E' mai stata data una definizione di Dio che prescinda da QUALSIASI premessa?%nl;</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -2135,7 +2174,7 @@
         <shape xsi:type="triangle"/>
     </child>
     <child ID="141" label="Bont&#xe0; di Dio" layerID="7"
-        created="1293664776775" x="358.52045" y="-178.21745"
+        created="1293664776775" x="354.52045" y="-182.21745"
         width="122.0" height="49.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Dio non deve essere necessariamente buono, almeno, non nel senso che noi attribuiamo di solito a questo aggettivo (S.Francesco, per capirsi).%nl;%nl;Dio, se c'&#xe8;, pu&#xf2; essere considerato "buono" solo nel senso di "conforme al giusto", o "all'esatto", non nel senso di "caritatevole o pietoso".%nl;%nl;Se analizziamo questa affermazione da punto di vista di un giornalista, potremmo pensare che Dio (se c'&#xe8;) sia un bel figlio di puttana, perch&#xe9; permette il dolore dei bambini in Africa, dei terremotati in Cina e degli tsunamati nelle Filippine; ma se invece ragioniamo in termini di software, il fatto che una variabile sia eliminata del sistema quando non &#xe8; pi&#xf9; necessaria, ci appare come qualcosa di "giusto" e, anzi, necessario al corretto funzionamento del sistema.%nl;Tanto pi&#xf9; che la variabile non esiste, in realt&#xe0;, ma &#xe8; solo un nome convenzionale per indicare un'area di memoria, che esisteva prima della dichiarazione della variabile stessa e continuer&#xe0; a esistere dopo la sua cancellazione.%nl;%nl;Il cronista, a questo punto, potrebbe prendere l'informatico, mettergli davanti dei bambini morenti e chiedergli come mai, questo ipotetico Dio non sia riuscito a creare un Universo in cui non esista il male: non ne era capace (e quindi non &#xe8; onnipotente) o non voleva (e quindi &#xe8; malvagio)?%nl;L'informatico difficilmente potr&#xe0; dare una risposta a questa domanda, ma noi forse s&#xec;: l'Universo contempla la sofferenza perch&#xe9; non &#xe8; stato Dio (se c'&#xe8;) a crearlo, ma il Diavolo.%nl;%nl;L'Universo creato da Dio (se c'&#xe8;) &#xe8;/era privo di sofferenza: un Uno primigenio di pura energia; tutto &#xe8; andato bene fino a che qualcuno o qualcosa ne ne ha causato la disgregazione: l'evento che noi chiamiamo "Big Bang".%nl;A quel punto, l'Energia dell'Uno si &#xe8; diffusa nello spazio, dando massa e quindi esistenza agli spazioni e generano l'Universo cos&#xec; come lo conosciamo (+o-).%nl;Da quel momento in poi, come sostiene Poe, la Gravit&#xe0; ha cercato di ricostituire l'Uno, mentre l'Elettricit&#xe0; (v. nota sull'utilizzo dei termini in "La Verit&#xe0;") ha cercato di tenerlo separato.%nl;%nl;Le ipotesi classiche sulla bont&#xe0; di Dio sono:%nl;%nl;a) DIO C'E': il "bene" coincide con l' "esatto", che &#xe8; ci&#xf2; che vuole Lui, ma che noi non possiamo n&#xe9; sapere (perch&#xe9; Lui non si &#xe8; mai espresso chiaramente in proposito) n&#xe9;, probabilmente, capire (v. "Logica del Maestro").%nl;%nl;b) DIO NON C'E': l'Universo &#xe8; frutto del Caso, la vita &#xe8; breve, bisogna ottenere il massimo per s&#xe9;, perch&#xe9; poi saremo morti per l'Eternit&#xe0;. %nl;%nl;A queste visioni classiche, ne possiamo affiancare una terza:%nl;%nl;c++) Dio, non ha grossa importanza, se c'&#xe8; o non c'&#xe8;: l'Eternit&#xe0; non &#xe8; che la serie infinita di cicli di esplosioni e contrazioni (respiri) dell'Universo; l'universo &#xe8; un epifenomeno, la projezione dell'Energia sugli spazioni: niente e nessuno esiste in s&#xe9;, ma &#xe8; l'equivalente di una variabile - un nome convenzionale per la memoria RAM. (A differenza degli int e dei char, noi sanguiniamo, ma tant'&#xe8;...); non &#xe8; possibile conoscere il "giusto" o "esatto" che sia (sarebbe comunque impossibile anche negli altri casi), ma si pu&#xf2; evitare di comportarsi in-giustamente se ci si astiene dall'abbandonarsi a desiderii egoistici, tanto pi&#xf9; che, mentre ci&#xf2; che non &#xe8; "esatto", per realizzarsi richiede una forzatura del sistema e quindi un lavor&#xec;o immane, ci&#xf2; che &#xe8; "esatto" si realizza da solo, senza bisogno di alcun aiuto da parte nostra.%nl;In questo, vivere somiglia all'andare in barca a vela: non si pu&#xf2; produrre il vento, lo si pu&#xf2; solo sfruttare per andare in una direzione. Pi&#xf9; si va contro vento, pi&#xf9; il percorso &#xe8; lungo e complicato.%nl;Meglio, se possibile, aspettare che il vento giri - perch&#xe9; girer&#xe0;.%nl;</notes>
         <fillColor>#F4F5E9</fillColor>
@@ -2145,21 +2184,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/3472adf9c0a8010b00a5d7f20b1fd9c5</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="142" layerID="7" created="1293664827342" x="-9.23053"
-        y="-160.39754" width="368.47113" height="6.3029785"
+    <child ID="142" layerID="7" created="1293664827342" x="-13.230545"
+        y="-164.39754" width="368.47113" height="6.3029785"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3472adf9c0a8010b00a5d7f2184967b0</URIString>
-        <point1 x="-8.730533" y="-159.89754"/>
-        <point2 x="358.7406" y="-154.59456"/>
+        <point1 x="-12.730542" y="-163.89754"/>
+        <point2 x="354.7406" y="-158.59456"/>
         <ID1 xsi:type="node">139</ID1>
         <ID2 xsi:type="node">141</ID2>
     </child>
     <child ID="147" label="Bene/male" layerID="7"
-        created="1293665296696" x="683.48376" y="-162.11848"
+        created="1293665296696" x="679.48376" y="-166.11848"
         width="138.5" height="58.5" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>I termini "bene" e "male" sono inappropriati, perch&#xe9; ricordano troppo il piacere o il fastidio personale.%nl;Meglio utilizzare i termini "giusto" e "sbagliato" o, a voler fare i pignoli, "esatto" ed "errato", ricordando il significato di "esatto" (participio passato di esigere).%nl;In quest'ottica, &#xe8; "bene" quando la realt&#xe0; (gli eventi) si conforma all'esatto; "male", quando se ne discosta.%nl;Il fatto che potrebbe essere "bene" un terremoto o uno tsunami che uccide centinaja se non migliaja di persone, ci porta a rivedere il precetto della bont&#xe0; di Dio (v.).%nl;%nl;Per la domanda: "Esiste uno schema pre-definito di giusto e sbagliato?", eistono due risposte classiche:%nl;%nl;a) Dio c'&#xe8;: il bene coincide con l'esatto, che &#xe8; ci&#xf2; che vuole Lui. Cosa sia ci&#xf2; che vuole non &#xe8; dato saperlo, almeno non per certo, perch&#xe9; Lui non si &#xe8; mai espresso in proposito.%nl;%nl;b) Dio non c'&#xe8;: l'Universo &#xe8; un caso; la vita &#xe8; breve; bisogna ottenere il massimo per s&#xe9;, perch&#xe9; poi saremo morti per l'eternit&#xe0;. In altre parole: ha ragione Berlusconi.%nl;%nl;A queste due risposte canoniche ne possiamo affiancare una terza, legata alla Cosmogonia del C'hi++%nl;%nl;</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -2170,46 +2209,46 @@
         <shape xsi:type="diamond"/>
     </child>
     <child ID="149" label="Questioni" layerID="7"
-        created="1293665586041" x="787.494" y="-119.01178"
-        width="236.18207" height="96.75763" strokeWidth="1.0"
+        created="1293665586041" x="783.49396" y="-123.01181"
+        width="236.18213" height="96.75769" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/347bc955c0a8010b00a5d7f20ceef6e2</URIString>
-        <point1 x="1023.1761" y="-22.75415"/>
-        <point2 x="787.994" y="-118.51178"/>
+        <point1 x="1019.1761" y="-26.75412"/>
+        <point2 x="783.99396" y="-122.51181"/>
         <ID1 xsi:type="node">146</ID1>
         <ID2 xsi:type="node">147</ID2>
     </child>
-    <child ID="150" layerID="7" created="1293665588619" x="479.07727"
-        y="-150.45973" width="213.84131" height="14.317352"
+    <child ID="150" layerID="7" created="1293665588619" x="475.07727"
+        y="-154.45975" width="213.84119" height="14.317368"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/347bc955c0a8010b00a5d7f2206f1a85</URIString>
-        <point1 x="479.57727" y="-149.95973"/>
-        <point2 x="692.4186" y="-136.64238"/>
+        <point1 x="475.57727" y="-153.95975"/>
+        <point2 x="688.41846" y="-140.64238"/>
         <ID1 xsi:type="node">141</ID1>
         <ID2 xsi:type="node">147</ID2>
     </child>
-    <child ID="151" layerID="7" created="1293665611694" x="816.91144"
-        y="10.454605" width="196.66089" height="40.929794"
+    <child ID="151" layerID="7" created="1293665611694" x="812.9115"
+        y="6.454605" width="196.66083" height="40.929794"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/347bc955c0a8010b00a5d7f276500557</URIString>
-        <point1 x="1013.0723" y="10.954605"/>
-        <point2 x="817.41144" y="50.8844"/>
+        <point1 x="1009.0723" y="6.954605"/>
+        <point2 x="813.4115" y="46.8844"/>
         <ID1 xsi:type="node">146</ID1>
         <ID2 xsi:type="node">113</ID2>
     </child>
     <child ID="153" label="Filosofi" layerID="7" created="1293665893952"
-        x="955.5901" y="742.5863" width="176.0" height="41.0"
+        x="951.5901" y="738.5863" width="176.0" height="41.0"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#B5B995</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -2218,21 +2257,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaa9c0a8010b00a5d7f2d1f5c42d</URIString>
         <shape xsi:type="rectangle"/>
     </child>
-    <child ID="154" layerID="7" created="1293665952437" x="1043.9307"
-        y="26.894531" width="30.328003" height="716.18945"
+    <child ID="154" layerID="7" created="1293665952437" x="1039.9308"
+        y="22.896484" width="30.32788" height="716.18945"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaa9c0a8010b00a5d7f279503b5c</URIString>
-        <point1 x="1073.7588" y="27.394531"/>
-        <point2 x="1044.4308" y="742.584"/>
+        <point1 x="1069.7587" y="23.396484"/>
+        <point2 x="1040.4308" y="738.58594"/>
         <ID1 xsi:type="node">146</ID1>
         <ID2 xsi:type="node">153</ID2>
     </child>
     <child ID="155" label="Spinoza" layerID="7" created="1293665978678"
-        x="502.53796" y="350.15393" width="113.0" height="36.0"
+        x="498.53796" y="346.15393" width="113.0" height="36.0"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#E4E6D2</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -2241,21 +2280,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaa9c0a8010b00a5d7f266f189e4</URIString>
         <shape xsi:type="rectangle"/>
     </child>
-    <child ID="156" layerID="7" created="1293666023805" x="580.62256"
-        y="385.65393" width="438.31555" height="357.4324"
+    <child ID="156" layerID="7" created="1293666023805" x="576.62256"
+        y="381.65393" width="438.3156" height="357.4324"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaa9c0a8010b00a5d7f2d4232ece</URIString>
-        <point1 x="1018.4381" y="742.5863"/>
-        <point2 x="581.12256" y="386.1539"/>
+        <point1 x="1014.4382" y="738.5863"/>
+        <point2 x="577.12256" y="382.1539"/>
         <ID1 xsi:type="node">153</ID1>
         <ID2 xsi:type="node">155</ID2>
     </child>
     <child ID="158" label="Bene/male" layerID="7"
-        created="1293666085355" x="460.21024" y="69.452"
+        created="1293666085355" x="456.21024" y="65.452"
         width="121.09999" height="58.100002" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>SDFO, 555: Dio non conosce il male, perch&#xe9; non c'&#xe8; nessun male da conoscere; l'apparenza del male nasce solo dal fatto di considerare le varie parti dell'Universo come se fossero autosufficienti.</notes>
@@ -2272,34 +2311,34 @@
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaaac0a8010b00a5d7f29118c1c9</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="159" layerID="7" created="1293666108281" x="524.35583"
-        y="126.85425" width="32.626892" height="223.79932"
+    <child ID="159" layerID="7" created="1293666108281" x="520.35583"
+        y="122.85376" width="32.626953" height="223.80005"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaaac0a8010b00a5d7f240b2ab11</URIString>
-        <point1 x="556.4828" y="350.15356"/>
-        <point2 x="524.8559" y="127.35425"/>
+        <point1 x="552.4828" y="346.1538"/>
+        <point2 x="520.85583" y="123.35376"/>
         <ID1 xsi:type="node">155</ID1>
         <ID2 xsi:type="node">158</ID2>
     </child>
     <child ID="160" label="Interpretazione" layerID="7"
-        created="1293666115026" x="546.4204" y="-112.82037"
-        width="186.21161" height="185.73016" strokeWidth="1.0"
+        created="1293666115026" x="542.42053" y="-116.82025"
+        width="186.21149" height="185.72998" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaaac0a8010b00a5d7f2891a4938</URIString>
-        <point1 x="546.9205" y="72.40979"/>
-        <point2 x="732.1321" y="-112.32037"/>
+        <point1 x="542.92053" y="68.40973"/>
+        <point2 x="728.132" y="-116.32025"/>
         <ID1 xsi:type="node">158</ID1>
         <ID2 xsi:type="node">147</ID2>
     </child>
     <child ID="162" label="Conoscenza&#xa;di Dio" layerID="7"
-        created="1293666186174" x="232.5064" y="402.56183"
+        created="1293666186174" x="228.5064" y="398.56183"
         width="132.17725" height="55.861298" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>(SDFO, 554): "Lo spirito umano ha un'adeguata conoscenza dell'eterna e infinita essenza di Dio", ma le passioni (...) ci distraggono e offuscano la nostra visione intellettuale del Tutto.%nl;Una posizione simile a quella del buddismo e del C'hi++&#xa0;%nl;</notes>
@@ -2311,7 +2350,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="163" label="Predestinazione" layerID="7"
-        created="1293666189422" x="236.05399" y="270.71396"
+        created="1293666189422" x="232.05399" y="266.71396"
         width="145.4" height="66.02374" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>(SDFO, 555):&#xa0;Solo l'ignoranza ci fa pensare che sia possibile alterare il futuro: ci&#xf2; che sar&#xe0;, sar&#xe0; e il futuro &#xe8; fissato altrettando inevitabilmente del passato. Condivisibili gli effetti, non concordo sulle cause (posto che siano riportate fedelmente - verificare).%nl;Il futuro non &#xe8; gi&#xe0; scritto ed &#xe8; giusto pre-occuparsi di prevenire gli errori evitabili.%nl;Sperare o aver paura di ci&#xf2; che &#xe8; fuori dalla nostra influenza (vincite al Lotto, inondazioni, terremoti) &#xe8; sbagliato, perch&#xe9; non ne conosciamo gli effetti finali. Vedi di seguito.%nl;%nl;(cfr. Marco Aurelio)</notes>
@@ -2323,7 +2362,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="164" label="Beatitudine" layerID="7"
-        created="1293666191310" x="255.06546" y="153.10275"
+        created="1293666191310" x="251.06546" y="149.10275"
         width="117.0" height="49.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>(SDFO, 558): non &#xe8; una ricompensa della virt&#xf9;, ma la virt&#xf9; stessa. non ne giojamo in quanto esercitiamo un controllo sui nostri desiderii, bens&#xec; controlliamo i nostri desiderii perch&#xe9; ne gioiamo.</notes>
         <fillColor>#F4F5E9</fillColor>
@@ -2333,60 +2372,60 @@
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaabc0a8010b00a5d7f21a46c524</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="165" layerID="7" created="1293666272748" x="355.3518"
-        y="381.17755" width="147.68616" height="36.1102"
+    <child ID="165" layerID="7" created="1293666272748" x="351.3518"
+        y="377.17755" width="147.68616" height="36.1102"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaabc0a8010b00a5d7f2adc3d4fa</URIString>
-        <point1 x="502.53796" y="381.67755"/>
-        <point2 x="355.8518" y="416.78775"/>
+        <point1 x="498.53796" y="377.67755"/>
+        <point2 x="351.8518" y="412.78775"/>
         <ID1 xsi:type="node">155</ID1>
         <ID2 xsi:type="node">162</ID2>
     </child>
-    <child ID="166" layerID="7" created="1293666274500" x="371.22443"
-        y="319.43567" width="131.81354" height="34.67404"
+    <child ID="166" layerID="7" created="1293666274500" x="367.22437"
+        y="315.43567" width="131.8136" height="34.67404"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaacc0a8010b00a5d7f26fd0b2e6</URIString>
-        <point1 x="502.53796" y="353.6097"/>
-        <point2 x="371.72443" y="319.93567"/>
+        <point1 x="498.53796" y="349.6097"/>
+        <point2 x="367.72437" y="315.93567"/>
         <ID1 xsi:type="node">155</ID1>
         <ID2 xsi:type="node">163</ID2>
     </child>
-    <child ID="167" layerID="7" created="1293666276109" x="340.71735"
-        y="198.56789" width="195.6326" height="152.08603"
+    <child ID="167" layerID="7" created="1293666276109" x="336.7173"
+        y="194.56787" width="195.63266" height="152.08606"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3485eaacc0a8010b00a5d7f232787606</URIString>
-        <point1 x="535.8499" y="350.1539"/>
-        <point2 x="341.21732" y="199.06787"/>
+        <point1 x="531.85" y="346.15393"/>
+        <point2 x="337.21732" y="195.06787"/>
         <ID1 xsi:type="node">155</ID1>
         <ID2 xsi:type="node">164</ID2>
     </child>
-    <child ID="244" layerID="7" created="1294797637666" x="1082.5891"
-        y="-815.8159" width="220.65137" height="785.57324"
+    <child ID="244" layerID="7" created="1294797637666" x="1078.5891"
+        y="-819.8159" width="220.65137" height="785.57324"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7803c7d4c0a8010d001370ab31d64991</URIString>
-        <point1 x="1083.0891" y="-30.742676"/>
-        <point2 x="1302.7405" y="-815.3159"/>
+        <point1 x="1079.0891" y="-34.742676"/>
+        <point2 x="1298.7405" y="-819.3159"/>
         <ID1 xsi:type="node">146</ID1>
         <ID2 xsi:type="node">290</ID2>
     </child>
     <child ID="282" label="Shopenhauer&#x9;" layerID="7"
-        created="1294870804367" x="468.40417" y="546.9846" width="125.0"
+        created="1294870804367" x="464.40417" y="542.9846" width="125.0"
         height="36.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Sia detto per inciso: Shopenhauer era un pessimista. S&#xec;, ma Shopenhauer era anche un coglione...</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -2396,21 +2435,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e6c0a8010d005730f84625602f</URIString>
         <shape xsi:type="rectangle"/>
     </child>
-    <child ID="283" layerID="7" created="1294870812132" x="576.98804"
-        y="582.4846" width="414.04822" height="160.60168"
+    <child ID="283" layerID="7" created="1294870812132" x="572.98804"
+        y="578.4846" width="414.04822" height="160.60168"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e7c0a8010d005730f8deb569ee</URIString>
-        <point1 x="990.53625" y="742.5863"/>
-        <point2 x="577.48804" y="582.9846"/>
+        <point1 x="986.53625" y="738.5863"/>
+        <point2 x="573.48804" y="578.9846"/>
         <ID1 xsi:type="node">153</ID1>
         <ID2 xsi:type="node">282</ID2>
     </child>
     <child ID="284" label="Ananda K.&#xa;Coomaraswamy" layerID="7"
-        created="1294870888179" x="850.74365" y="444.02283"
+        created="1294870888179" x="846.74365" y="440.02283"
         width="101.0" height="36.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <fillColor>#E4E6D2</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -2419,21 +2458,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e7c0a8010d005730f8ca7c12c7</URIString>
         <shape xsi:type="rectangle"/>
     </child>
-    <child ID="285" layerID="7" created="1294870912581" x="909.25415"
-        y="479.52283" width="125.14325" height="263.56348"
+    <child ID="285" layerID="7" created="1294870912581" x="905.2543"
+        y="475.52283" width="125.14319" height="263.56348"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e7c0a8010d005730f86016dab2</URIString>
-        <point1 x="1033.8975" y="742.5863"/>
-        <point2 x="909.7542" y="480.02283"/>
+        <point1 x="1029.8975" y="738.5863"/>
+        <point2 x="905.7543" y="476.02283"/>
         <ID1 xsi:type="node">153</ID1>
         <ID2 xsi:type="node">284</ID2>
     </child>
     <child ID="290" label="Mistica" layerID="7" created="1294872229845"
-        x="1258.1793" y="-877.9827" width="106.666664"
+        x="1254.1793" y="-881.9827" width="106.666664"
         height="62.666668" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#8C8F72</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -2443,7 +2482,7 @@
         <shape xsi:type="hexagon"/>
     </child>
     <child ID="293" label="Zoroastro" layerID="7"
-        created="1294872404120" x="1099.1793" y="-1206.6494"
+        created="1294872404120" x="1095.1793" y="-1210.6494"
         width="126.0" height="36.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Detto anche: Zarathustra%nl;http://it.wikipedia.org/wiki/Zoroastro</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -2454,7 +2493,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="296" label="Fedelt&#xe0;: a chi?" layerID="7"
-        created="1294872791676" x="828.3292" y="205.67535" width="135.6"
+        created="1294872791676" x="824.3292" y="201.67535" width="135.6"
         height="34.6" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>Nella Grecia antica si era fedeli alla citt&#xe0;/Stato%nl;Il Cristianesimo ha chiesto ai suoi seguaci di essere fedeli a Dio/Cristo%nl;Il XX secolo si &#xe8; fedeli alla scienza%nl;L'ultimo passo sembra essere la fedelt&#xe0; a s&#xe9; stessi.%nl;</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -2464,21 +2503,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/7c71b411c0a8010d005730f8d8465c80</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="297" layerID="7" created="1294872798267" x="908.85767"
-        y="26.896118" width="143.45361" height="179.9607"
+    <child ID="297" layerID="7" created="1294872798267" x="904.85767"
+        y="22.896118" width="143.45374" height="179.9607"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c71b411c0a8010d005730f8cf5299ca</URIString>
-        <point1 x="1051.8113" y="27.396118"/>
-        <point2 x="909.35767" y="206.35681"/>
+        <point1 x="1047.8114" y="23.396118"/>
+        <point2 x="905.35767" y="202.35681"/>
         <ID1 xsi:type="node">146</ID1>
         <ID2 xsi:type="node">296</ID2>
     </child>
     <child ID="300" label="Filosofia come la&#xa;analisi del software"
-        layerID="7" created="1294872931133" x="909.3128" y="-297.5161"
+        layerID="7" created="1294872931133" x="905.3128" y="-301.5161"
         width="163.6" height="48.6" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>La filosofia pu&#xf2; essere paragonata all'analisi del software.%nl;Un problema pu&#xf2; avere una sola soluzione, ma non &#xe8; detto che, per ci&#xf2;, ci sia solo un modo per arrivarci.%nl;Allo stesso modo, algoritmi diversi possono produrre il medesimo risultato.%nl;Scegliere l'uno o l'altro dipende o dalle specifiche contingenze o dalle proprie capacit&#xe0;.%nl;%nl;Ciascuna versione del SW corregger&#xe0; alcuni degli errori delle versioni precedenti, ma, allo stesso tempo, ne introdurr&#xe0; di nuovi.&#xa0;%nl;Nessuna versione, perci&#xf2;, potr&#xe0; dirsi perfetta (almeno per un lungo periodo di tempo...) e tutte saranno legate fra loro.%nl;In quest'ottica, posso essere d'accordo con l'affermazione di Dewey.</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -2488,34 +2527,34 @@
         <URIString>http://vue.tufts.edu/rdf/resource/7c71b412c0a8010d005730f8910593d6</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="301" layerID="7" created="1294872973987" x="998.0465"
-        y="-249.63892" width="68.42914" height="219.39624"
+    <child ID="301" layerID="7" created="1294872973987" x="994.0467"
+        y="-253.63867" width="68.42908" height="219.396"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c71b412c0a8010d005730f82a1267cb</URIString>
-        <point1 x="1065.9757" y="-30.742676"/>
-        <point2 x="998.5466" y="-249.13892"/>
+        <point1 x="1061.9757" y="-34.742676"/>
+        <point2 x="994.54663" y="-253.13867"/>
         <ID1 xsi:type="node">146</ID1>
         <ID2 xsi:type="node">300</ID2>
     </child>
-    <child ID="303" layerID="7" created="1294873040884" x="1136.4285"
-        y="-54.270294" width="196.40466" height="40.552002"
+    <child ID="303" layerID="7" created="1294873040884" x="1132.4285"
+        y="-58.27031" width="196.40479" height="40.552032"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c75568dc0a8010d005730f89f828269</URIString>
-        <point1 x="1136.9285" y="-14.218292"/>
-        <point2 x="1332.3331" y="-53.770294"/>
+        <point1 x="1132.9285" y="-18.218277"/>
+        <point2 x="1328.3333" y="-57.77031"/>
         <ID1 xsi:type="node">146</ID1>
         <ID2 xsi:type="node">480</ID2>
     </child>
     <child ID="304" label="La conoscenza" layerID="7"
-        created="1294873082520" x="1348.8461" y="73.85052"
+        created="1294873082520" x="1344.8461" y="69.85052"
         width="139.20001" height="35.2" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>%nl;Secondo Hegel (citato da Russel, p. 781):%nl;%nl;la conoscenza &#xe8; un tutto organico che cresce gradualmente in ogni sua parte, e imperfetto in ogni sua parte, finch&#xe9; no sia perfetto del tutto%nl;%nl;Non sono d'accordo con questa affermazione.%nl;A mio modo di vedere, la Conoscenza non &#xe8; una scultura in creta, che si forma aggiungendo parti a una base originaria, ma &#xe8; una scultura in marmo, che si realizza ELIMINANDO da un blocco preesistente tutto ci&#xf2; che non ha a che fare con la forma che si desidera ottenere.%nl;Nel primo caso, la forma perfetta esiste solo in potenza; nel secondo caso la forma perfetta esiste gi&#xe0; e sta solo allo scultore riuscire a "vederla".%nl;L'esistenza a priori di una "verit&#xe0;" all'interno del "marmo" fa si che anche scultori meno bravi possano metterne in luce una parte - sia essa una mano o solo un'unghia.%nl;(Questo spiega come mai, alle volte, anche i filosofi francesi dicano qualcosa che non &#xe8; una totale cazzata.)%nl;%nl;</notes>
@@ -2526,23 +2565,23 @@
         <URIString>http://vue.tufts.edu/rdf/resource/7c75568ec0a8010d005730f8cf9ce373</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="305" layerID="7" created="1294873088671" x="1132.5847"
-        y="13.587189" width="239.01697" height="65.527985"
+    <child ID="305" layerID="7" created="1294873088671" x="1128.5847"
+        y="9.587158" width="239.01721" height="65.528046"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c75568ec0a8010d005730f8cfdaea46</URIString>
-        <point1 x="1133.0848" y="14.087189"/>
-        <point2 x="1371.1018" y="78.61517"/>
+        <point1 x="1129.0847" y="10.087158"/>
+        <point2 x="1367.1019" y="74.615204"/>
         <ID1 xsi:type="node">146</ID1>
         <ID2 xsi:type="node">304</ID2>
     </child>
     <child ID="322"
         label="Il paradosso &#xe8; la &#xa;crittografia di Dio"
-        layerID="7" created="1295048327964" x="-218.32219"
-        y="-304.27475" width="151.20001" height="55.861298"
+        layerID="7" created="1295048327964" x="-222.32219"
+        y="-308.27475" width="151.20001" height="55.861298"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Un codice crittografico che produca un solo risultato pu&#xf2; essere pi&#xf9; o meno sicuro, ma, una volta de-crittato, non pu&#xf2; fare a &#xa0;meno di rivelare il proprio segreto.%nl;Al contrario, un codice crittografico che possa produrre pi&#xf9; di un risultato credibile, &#xe8; di fatto molto pi&#xf9; sicuro perch&#xe9; il decrittatore non potrebbe mai avere la certezza di essere nel giusto.%nl;Se uno stesso brano crittografato potesse produrre le frasi: "Le navi attaccheranno da est" e "Gli aereo attaccheranno da ovest", anche decrittato, avrebbe comunque il pregio di dividere le forze del decrittatore sui due fronti, uno solo dei quali sar&#xe0; veramente attaccato.%nl;%nl;Dio si comporta allo stesso modo: "cifra" le grandi verit&#xe0; con dei paradossi ambivalenti e distrae cos&#xec;, talvolta per millennii, i filosofi.%nl;</notes>
         <fillColor>#F4F5E9</fillColor>
@@ -2552,21 +2591,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/86e81610c0a8010d00397ceabd38b179</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="325" layerID="7" created="1295048446596" x="-118.66926"
-        y="-250.54941" width="71.62831" height="76.63866"
+    <child ID="325" layerID="7" created="1295048446596" x="-122.669266"
+        y="-254.54942" width="71.62832" height="76.63867"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86e81610c0a8010d00397ceab52018aa</URIString>
-        <point1 x="-47.540943" y="-174.41075"/>
-        <point2 x="-118.16926" y="-250.04941"/>
+        <point1 x="-51.54094" y="-178.41075"/>
+        <point2 x="-122.16926" y="-254.04942"/>
         <ID1 xsi:type="node">139</ID1>
         <ID2 xsi:type="node">322</ID2>
     </child>
     <child ID="326" label="Lo humor come &#xa;il paradosso" layerID="7"
-        created="1295048454182" x="-387.2785" y="-431.2288"
+        created="1295048454182" x="-391.2785" y="-435.2288"
         width="145.20001" height="57.93065" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>"Lo humor, al contrario, non &#xe8; al servizio della societ&#xe0;, ma degli d&#xe8;i: esso si limita a segnalarci l'incontro fra il noto e l'ignoto"%nl;Pawlowsky, "Viaggio al Paese della quarta dimensione"&#xa0;%nl;(andrebbe letto...)%nl;</notes>
@@ -2577,21 +2616,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/86e81611c0a8010d00397ceaca95e642</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="327" layerID="7" created="1295048509125" x="-280.60043"
-        y="-377.4428" width="104.462585" height="76.76309"
+    <child ID="327" layerID="7" created="1295048509125" x="-284.60037"
+        y="-381.44275" width="104.462555" height="76.76306"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86e81611c0a8010d00397cea4e8dfd8b</URIString>
-        <point1 x="-176.63785" y="-301.17972"/>
-        <point2 x="-280.10043" y="-376.9428"/>
+        <point1 x="-180.63782" y="-305.1797"/>
+        <point2 x="-284.10037" y="-380.94275"/>
         <ID1 xsi:type="node">322</ID1>
         <ID2 xsi:type="node">326</ID2>
     </child>
     <child ID="337" label="Cosmogonie &#xa;gnostiche" layerID="7"
-        created="1295049319835" x="438.92453" y="-349.1873"
+        created="1295049319835" x="434.92453" y="-353.1873"
         width="157.4" height="48.5" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Questo Universo contempla la sofferenza perch&#xe9; non &#xe8; stato creato da Dio, ma dal Diavolo.&#xa0;%nl;L'Universo creato da Dio (se c'&#xe8;) &#xe8;/era privo di sofferenza: un Uno primigenio di pura energia; tutto &#xe8; andato bene fino a che qualcuno o qualcosa (magari la Discordia di Empedocle) ha causato la disgragazione di quest'Uno, causando quello che noi chiamiamo Big Bang.%nl;L'energia dell'Uno si &#xe8; diffusa allora per lo spazio, dando massa/esistenza agli spazioni e generando l'Universo cos&#xec; come noi lo conosciamo.%nl;Da quel momento in poi, la Gravit&#xe0; (come sostiene Poe) ha cercato di ricostituire l'Uno primigenio, mentre l'Elettricit&#xe0; ha fatto in modo di separarne le parti.%nl;</notes>
         <fillColor>#F4F5E9</fillColor>
@@ -2601,21 +2640,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/86f57775c0a8010d00397cea03cf64ef</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="338" layerID="7" created="1295049327254" x="432.67572"
-        y="-301.61145" width="71.79721" height="124.56152"
+    <child ID="338" layerID="7" created="1295049327254" x="428.67578"
+        y="-305.61127" width="71.79715" height="124.5614"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/86f57775c0a8010d00397cea59398d37</URIString>
-        <point1 x="433.17575" y="-177.54993"/>
-        <point2 x="503.97296" y="-301.11145"/>
+        <point1 x="429.17575" y="-181.54987"/>
+        <point2 x="499.9729" y="-305.11127"/>
         <ID1 xsi:type="node">141</ID1>
         <ID2 xsi:type="node">337</ID2>
     </child>
     <child ID="351" label="Mazdeismo" layerID="7"
-        created="1295640809651" x="1178.7864" y="-1021.24945"
+        created="1295640809651" x="1174.7864" y="-1025.2495"
         width="126.0" height="36.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Lo zoroastrismo fu la religione nazionale persiana dal periodo achemenide a quello sassanide, tra il 630 a.C. ed il 750. Persiste ancora oggi, seppur molto ridotta per importanza, essendo stata soppiantata dall'islamismo.%nl;Secondo le narrazioni che hanno riguardato questa importante figura filosofica, il giovane Zoroastro [2], figlio del sacerdote Porushaspa, dovendo seguire le orme del padre, inizi&#xf2; a celebrare i rituali religiosi professati dalla sua trib&#xf9;, consistenti, per mancanza di un luogo sacro, in canti di lode e sacrifici all' aperto. All' et&#xe0; di vent'anni, non soddisfatto di quella vita spirituale, si ritir&#xf2; nel deserto a meditare e venne - in pieno stato di estasi - colto da visioni durante le quali gli apparve il signore della saggezza, lo Ahura Mazda (Ohrmazd in pahlavi), principe del bene, che gli dette l'ordine di combattere contro il principe del male, Ahriman.%nl;L'elemento essenziale del dualismo di Zarathustra &#xe8; la distinzione fra bene e male, una distinzione che non riguarda solo gli uomini, ma il mondo intero. Se all'umano si contrappone l'inumano, allo spirito saggio si contrappone quello malvagio e alla veracit&#xe0; si contrappone la menzogna. Il mondo &#xe8; inteso come diviso fra coppie di antagonisti. Zarathustra concepisce una sola divinit&#xe0; onnipotente e creatrice, Ahura Mazda; ma la concezione monoteistica non &#xe8; certa, visto che &#xe8; affiancata da una dottrina dualistica, che contrappone i due spiriti del bene e del male, fin dall'inizio del mondo e in perenne antitesi tra loro, influenzando l'agire umano. http://it.wikipedia.org/wiki/Zoroastro%nl;%nl;Interessante, ma va non so se sia compatibile con C'hi++ la contrapposizione fra due entit&#xe0; una totalmente benevola, l'altra malvagia (e sono troppo assonnato per analizzare la cosa adesso)%nl;%nl;</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -2625,35 +2664,35 @@
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7bbc0a8010d01bf8de1e27cb580</URIString>
         <shape xsi:type="rectangle"/>
     </child>
-    <child ID="352" layerID="7" created="1295640843950" x="1249.3008"
-        y="-985.7495" width="48.76062" height="108.266846"
+    <child ID="352" layerID="7" created="1295640843950" x="1245.3008"
+        y="-989.7495" width="48.76062" height="108.266846"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7bcc0a8010d01bf8de18da6ad61</URIString>
-        <point1 x="1297.5615" y="-877.98267"/>
-        <point2 x="1249.8009" y="-985.2495"/>
+        <point1 x="1293.5615" y="-881.98267"/>
+        <point2 x="1245.8009" y="-989.2495"/>
         <ID1 xsi:type="node">290</ID1>
         <ID2 xsi:type="node">351</ID2>
     </child>
-    <child ID="353" layerID="7" created="1295640845524" x="1169.314"
-        y="-1171.3691" width="65.243774" height="150.61987"
+    <child ID="353" layerID="7" created="1295640845524" x="1165.3138"
+        y="-1175.3691" width="65.24365" height="150.61938"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7bcc0a8010d01bf8de1b635b4e4</URIString>
-        <point1 x="1234.0576" y="-1021.24927"/>
-        <point2 x="1169.8138" y="-1170.8691"/>
+        <point1 x="1230.0575" y="-1025.2498"/>
+        <point2 x="1165.8138" y="-1174.8691"/>
         <ID1 xsi:type="node">351</ID1>
         <ID2 xsi:type="node">293</ID2>
     </child>
     <child ID="354"
         label="Religione come&#xa;culto della fertilit&#xe0;"
-        layerID="7" created="1295640905080" x="1389.1196" y="-740.9162"
+        layerID="7" created="1295640905080" x="1385.1196" y="-744.9162"
         width="152.6" height="57.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>SDFO, 26: Le religioni erano in origine culti della fertilit&#xe0;: la Terra era femmina, il Sole, maschio%nl;%nl;SDFO, 33: La religione, originariamente, ha lo scopo di riunire tutta la trib&#xf9; in uno scopo comune (la fertilit&#xe0; della terra, di solito); quindi &#xe8; tutt'altro che un "oppio" del popolo, anzi, &#xe8; piuttosto "comunista".</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -2663,21 +2702,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7bdc0a8010d01bf8de1c5b86a46</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="356" layerID="7" created="1295640934253" x="1342.946"
-        y="-819.2981" width="92.94177" height="81.188965"
+    <child ID="356" layerID="7" created="1295640934253" x="1338.946"
+        y="-823.2981" width="92.94165" height="81.188965"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7bdc0a8010d01bf8de145ac76a1</URIString>
-        <point1 x="1343.446" y="-818.7981"/>
-        <point2 x="1435.3878" y="-738.60913"/>
+        <point1 x="1339.446" y="-822.7981"/>
+        <point2 x="1431.3877" y="-742.60913"/>
         <ID1 xsi:type="node">290</ID1>
         <ID2 xsi:type="node">354</ID2>
     </child>
     <child ID="359" label="Manicheismo" layerID="7"
-        created="1295641014381" x="1355.7864" y="-1086.2494"
+        created="1295641014381" x="1351.7864" y="-1090.2494"
         width="126.0" height="36.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Il Manicheismo fu la religione fondata dal partico Mani nella seconda met&#xe0; del III secolo frutto di una rivelazione ricevuta dal suo fondatore da parte dello Spirito della luce che si present&#xf2; a lui come suo "gemello" spirituale. Essa si presenta come un sincretismo di tutti i sistemi religiosi allora noti. Univa il cristianesimo, soprattutto di derivazione gnostica e battista, con il dualismo zoroastriano, la cultura babilonese, l'etica buddhista. Poich&#xe9; in questo crogiuolo di idee la teoria di due principi eterni, bene e male, &#xe8; fondante, il Manicheismo &#xe8; classificato come una forma di dualismo religioso. Esso si diffuse con straordinaria rapidit&#xe0; sia ad Oriente che ad Occidente, dove potrebbe essere sopravvissuto in maniera sparsa e periodica (Africa, Spagna, Francia, Italia settentrionale, Balcani) per un millennio. Tuttavia, attecch&#xec; principalmente nella sua terra d'origine (Mesopotamia, Babilonia, Turkestan) e si radic&#xf2; anche pi&#xf9; ad Oriente, in India Settentrionale, Cina Occidentale e Siberia fino all'anno 1000. Ebbe successo in particolar modo presso il popolo degli Uiguri, dai quali venne proclamato "religione di Stato". Il suo credo, dopo aver sub&#xec;to dure persecuzioni nell'Europa cristiana, nell'Asia centrale ed occidentale prima mazdeista e poi musulmana e in Cina, spar&#xec; progressivamente. Le ultime tracce del credo manicheo si registrano, intorno al XV secolo, in Cina. In un certo senso, il manicheismo fu la forma pi&#xf9; perfetta dello gnosticismo poich&#xe9; combin&#xf2;, nella sua forma migliore, il dualismo ed il rifiuto del Vecchio Testamento%nl;%nl;http://it.wikipedia.org/wiki/Manicheismo</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -2687,21 +2726,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7c0c0a8010d01bf8de10731da81</URIString>
         <shape xsi:type="rectangle"/>
     </child>
-    <child ID="360" layerID="7" created="1295641047860" x="1326.1807"
-        y="-1050.7493" width="84.39197" height="173.2666"
+    <child ID="360" layerID="7" created="1295641047860" x="1322.1808"
+        y="-1054.7495" width="84.39209" height="173.26685"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7c0c0a8010d01bf8de124ca0b0b</URIString>
-        <point1 x="1326.6808" y="-877.98267"/>
-        <point2 x="1410.0728" y="-1050.2493"/>
+        <point1 x="1322.6808" y="-881.98267"/>
+        <point2 x="1406.0729" y="-1054.2495"/>
         <ID1 xsi:type="node">290</ID1>
         <ID2 xsi:type="node">359</ID2>
     </child>
     <child ID="361" label="Culti dionisiaci" layerID="7"
-        created="1295641070964" x="1495.7864" y="-1013.24945"
+        created="1295641070964" x="1491.7864" y="-1017.24945"
         width="126.0" height="36.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Il rituale bacchico produceva il cosiddetto "entusiasmo", che etimologicamente significa l'ingresso del dio nel suo adoratore, che quindi crede di diventare una cosa sola con il dio (SDFO, 36)%nl;%nl;A pagina 37 ci sono anche dei parallel con il Cristianesimo per quello che riguarda la vita oltre la morte.%nl;</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -2711,21 +2750,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7c1c0a8010d01bf8de10fd9ce92</URIString>
         <shape xsi:type="rectangle"/>
     </child>
-    <child ID="362" layerID="7" created="1295641111327" x="1347.4985"
-        y="-977.74945" width="181.83545" height="109.673706"
+    <child ID="362" layerID="7" created="1295641111327" x="1343.4985"
+        y="-981.74945" width="181.83545" height="109.673706"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/aa3de7c1c0a8010d01bf8de1cf429d58</URIString>
-        <point1 x="1347.9985" y="-868.57574"/>
-        <point2 x="1528.834" y="-977.24945"/>
+        <point1 x="1343.9985" y="-872.57574"/>
+        <point2 x="1524.834" y="-981.24945"/>
         <ID1 xsi:type="node">290</ID1>
         <ID2 xsi:type="node">361</ID2>
     </child>
     <child ID="391" label="Tempo ed &#xa;eternit&#xe0;" layerID="7"
-        created="1295993719159" x="806.2689" y="302.5094"
+        created="1295993719159" x="802.2689" y="298.5094"
         width="119.799995" height="57.799995" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>La dottrina metafisica contrappoine il tempo, in quanto continuum, all'eternit&#xe0;, che non &#xe8; nel tempo e che non pu&#xf2; essere propriamente chiamata "durata perpetua" perch&#xe9; essa coincide con il presente reale, l'istante, di cui non si pu&#xf2; avere esperienza nel tempo. (...)%nl;Siamo noi a essere in movimento, mentre l'Ora &#xe8; immutabile anche se senbra spostarsi - proprio come il sole sembra levarsi e tramontare a causa della rotazione della Terra.%nl;(Tempo ed eternit&#xe0;, pag. 14)%nl;%nl;La domanda di S. Agostino (che A.K. riporta sempre a pagina 14) "Cosa faceva Dio, prima di creare il Mondo?" non ha senso, in ottica spazionistica, perch&#xe9; Dio coincide con l'Universo.%nl;Questo, se fosse vero, modificherebbe l'affermazione precedente, perch&#xe9; identificando Dio con l'Universo, lo collocherebbe nel tempo e non in un "Ora" metafisico.%nl;D'altro canto, l'affermazione di AK sembra smentire la possibilit&#xe0; di "conoscere" l'Istante se si &#xe8; nel Tempo, il che, dovrebbe essere in contraddizione con l'ascesi buddista...%nl;</notes>
@@ -2741,21 +2780,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/bf4cf47fc0a8010b00b4cbc534f3bbb3</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="393" layerID="7" created="1295993743076" x="873.3297"
-        y="359.43677" width="23.580383" height="85.08618"
+    <child ID="393" layerID="7" created="1295993743076" x="869.3297"
+        y="355.43677" width="23.580383" height="85.08618"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/bf4cf47fc0a8010b00b4cbc53093f79d</URIString>
-        <point1 x="896.41003" y="444.02295"/>
-        <point2 x="873.82965" y="359.93677"/>
+        <point1 x="892.41003" y="440.02295"/>
+        <point2 x="869.82965" y="355.93677"/>
         <ID1 xsi:type="node">284</ID1>
         <ID2 xsi:type="node">391</ID2>
     </child>
     <child ID="396" label="La Legge &#xa;discende da Dio" layerID="7"
-        created="1295996538448" x="-174.93402" y="4.732662"
+        created="1295996538448" x="-178.93402" y="0.7326622"
         width="146.4" height="47.4" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>SDFO, 27 - "Attraverso il loro rapporto con il controllo del potere, gli d&#xe8;i finirono per essere legati al concetto di moralit&#xe0;. %nl;I legislatori ricevevano i loro codici da un Dio; cos&#xec; un'infrazione alla legge diveniva un'empiet&#xe0;."%nl;</notes>
         <fillColor>#F4F5E9</fillColor>
@@ -2765,21 +2804,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/bf70f4e8c0a8010b0083fff934f54ee5</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="397" layerID="7" created="1295996667498" x="-93.86638"
-        y="-131.16159" width="49.4578" height="136.66736"
+    <child ID="397" layerID="7" created="1295996667498" x="-97.86639"
+        y="-135.16159" width="49.457806" height="136.66736"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/bf70f4e9c0a8010b0083fff96a9e488f</URIString>
-        <point1 x="-44.908585" y="-130.66159"/>
-        <point2 x="-93.36639" y="5.005768"/>
+        <point1 x="-48.90858" y="-134.66159"/>
+        <point2 x="-97.36639" y="1.0057678"/>
         <ID1 xsi:type="node">139</ID1>
         <ID2 xsi:type="node">396</ID2>
     </child>
     <child ID="480" label="La Verit&#xe0;" layerID="7"
-        created="1298063805428" x="1324.4082" y="-86.1315"
+        created="1298063805428" x="1320.4082" y="-90.1315"
         width="120.5332" height="43.533356" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Ciascun essere umano, e probabilmente anche gli animali, ha dentro di s&#xe9; la Verit&#xe0;, se non altro perch&#xe9; ne fa parte, cos&#xec; come una classe C++, (che potrebbe pensare di essere ci&#xf2; che simbolegga) ha dentro di s&#xe9; la verit&#xe0;, ovvero che &#xe8; unicamente un insieme di bit all'interno della memoria di un computer.%nl;%nl;Sfortunatamente, per&#xf2;, sia noi che le classi C++, abbiamo delle forti difficolt&#xe0; nel riconoscere la Verit&#xe0;, perch&#xe9;, per poterlo fare, dovremmo abiurare tutte le convinzioni che ci aiutano a vivere.%nl;%nl;Cos&#xec; come una classe C++, inoltre, non siamo dotati (almeno apparentemente) degli strumenti di analisi necessarii a identificare la nostra natura.%nl;%nl;Anche lo fossimo (e non &#xe8; eslcuso), se pure riuscissimo a riconoscere la Verit&#xe0; che &#xe8; dentro di noi, avremmo dei grossi problemi nell'esprimerla, perch&#xe9; &#xe8; probabile che non corrisponda a nulla di ci&#xf2; che conosciamo, cos&#xec; come i bit e la memoria di un computer non sono familiari a una classe C++, che, pure, ne &#xe8; costituita.%nl;%nl;Malgrado ci&#xf2;, &#xe8; inevitabile che ci sia un'eco della Verit&#xe0; nei nostri pensieri.%nl;La maggior parte di noi la ignora, perch&#xe9; non &#xe8; funzionale alle attivit&#xe0; quotidiane (per certi versi, &#xe8; perfino controproducente); gli altri - pochi -, tentano di esprimerla in qualche maniera, dando vita alle diverse forme di arte, o a quello che i giapponesi chiamano "do" (derivato dal cinese: "tao", pare).%nl;%nl;Inevitabilmente, per&#xf2;, queste trasposizioni di una Realt&#xe0; superiore sono incomplete, sia perch&#xe9;, come dicevamo prima, il nostro linguaggio &#xe8; impreparato a descriverle, sia perch&#xe9; noi stessi siamo impreparati a capirle.%nl;%nl;Ciascuno, poi, esprime ci&#xf2; che "sa" (metto le virgolette perch&#xe9; non &#xe8; qualcosa che ha imparato), nel linguaggio che gli &#xe8; proprio, utilizzando i termini e le allegorie che sono pi&#xf9; congeniali a lui stesso e al suo uditorio.%nl;Platone parla di caverne; Ges&#xf9; di pastori e vignajoli; il Maestro Canaro, parla di software e hardware.%nl;%nl;Tutto ci&#xf2;, d&#xe0; a ciascuna trasposizione un certo grado di "provincialismo" (nel senso di: valore limitato a un certo &#xe0;mbito), che pu&#xf2; far credere a chi sia estraneo al contesto in cui e per cui la trasposizione &#xe8; stata pensata, che questa non sia corretta.%nl;Aristotele si fa beffe dell'atomismo di Leucippo (SDFO 86); uno scienziato del XX secolo sorride dell'ignoranza di Aristotele; fra duemila anni, forse, rideranno di noi.%nl;%nl;Esistono per&#xf2; dei punti di contatto fra le diverse credenze/fedi/filsofie, cos&#xec; come esistono dei costrutti comuni a tutti i linguaggi di programmazione, anche se ciascun linguaggio li esprime con le istruzioni e le parole-chiave che gli sono proprie.%nl;%nl;La filo-sofia (o la mistica) deve approfondire questi punti di contatto, evolvendoli o generalizzandoli (approccio bottom-up e top-down, in linguaggio informatico) per cercarne la matrice comune.%nl;Spesso, per&#xf2;, il processo &#xe8; esattamente l'opposto: si cerca l'errore nel ragionamento altrui e lo si utilizza per screditarne i principii, riaffermando i proprii.%nl;%nl;Questo atteggiamento &#xe8; sterile e non porta da nessuna parte.%nl;%nl; %nl;%nl;%nl;%nl;</notes>
@@ -2790,21 +2829,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/3aaf6169c0a8010b01f84d0156f290a3</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="482" layerID="7" created="1298063826792" x="1388.8555"
-        y="-43.269043" width="26.317505" height="117.81152"
+    <child ID="482" layerID="7" created="1298063826792" x="1384.8555"
+        y="-47.268555" width="26.317627" height="117.81152"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3aaf6169c0a8010b01f84d0124f40f31</URIString>
-        <point1 x="1414.673" y="74.04248"/>
-        <point2 x="1389.3555" y="-42.769043"/>
+        <point1 x="1410.6731" y="70.04297"/>
+        <point2 x="1385.3555" y="-46.768555"/>
         <ID1 xsi:type="node">304</ID1>
         <ID2 xsi:type="node">480</ID2>
     </child>
     <child ID="506" label="Estremismo religioso come software chiuso"
-        layerID="7" created="1356903017824" x="786.0813" y="-996.9013"
+        layerID="7" created="1356903017824" x="782.0813" y="-1000.9013"
         width="298.3" height="62.30316" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>La storia seppur breve dell'informatica ha dimostrato che quando un sistema operativo si "apre" all'esterno, prospera; quando invece si chiude, al contrario regredisce e spesso muore. %nl;Se partiamo del presupposto che la religione sia il SO dell'umano e che il suo scopo sia quello di farlo vivere meglio, possiamo dire la stessa cosa?%nl;In altre parole: "chiudere" una religione &#xe8; un bene o un male?%nl;Se fosse un male (e probabilmente lo &#xe8;, perch&#xe9; l'estremismo religioso genera guerre e morti e quindi non aiuta gli uomini a vivere meglio), com'&#xe8; possibile per una religione "aprirsi" alle altre Fedi senza perdere di coerenza?%nl;Esiste un minimo comun denominatore sul quale le diverse religioni possono accordarsi?%nl;</notes>
@@ -2816,20 +2855,20 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="507" label="domanda" layerID="7" created="1356903017824"
-        x="1016.8115" y="-940.2698" width="252.30121" height="80.54175"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="2" xsi:type="link">
+        x="1012.8115" y="-944.26965" width="252.30121"
+        height="80.541565" strokeWidth="1.0" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/edd4e8b47f000001016c006ef7e29008</URIString>
-        <point1 x="1268.6128" y="-860.228"/>
-        <point2 x="1017.3116" y="-939.7698"/>
+        <point1 x="1264.6128" y="-864.22815"/>
+        <point2 x="1013.3116" y="-943.7697"/>
         <ID1 xsi:type="node">290</ID1>
         <ID2 xsi:type="node">506</ID2>
     </child>
     <child ID="509" label="Portatori sani di Fede" layerID="7"
-        created="1356903698646" x="723.438" y="-688.3648"
+        created="1356903698646" x="719.438" y="-692.3648"
         width="173.79999" height="43.533356" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Si pu&#xf2; obiettare che ci sono stati atei che si sono comportati meglio dei credenti.%nl;E' vero, ma la domanda &#xe8;: perch&#xe9;?%nl;Se non credi in un Ordine e ti comporti bene nei confronti dei tuoi simili, sei una brava persona, ma sei incoerente, perch&#xe9;, mancando un Ordine, avrebbe pi&#xf9; senso che tu perseguissi il tuo interesse e non quello collettivo.%nl;Senza un Ordine, siamo epifenomeni; il corrispettivo esistenziale delle One-Time-Password: esistiamo per un breve periodo di tempo e poi scompariamo.%nl;In quest'ottica, soffrire per gli altri &#xe8; idiota, perch&#xe9; non se ne ha nulla in cambio.%nl;Se uno lo fa lo stesso (magari lasciandoci le penne), o &#xe8; perch&#xe9; &#xe8; un idiota con la vocazione al martirio, o perch&#xe9; sente di ottenere qualcosa in cambio.%nl;Dato che ci&#xf2; &#xe8; impossibile, se uno muore, dobbiamo assumere che queste persone siano dei portatori sani di Fede.%nl;Ce l'hanno, ma non se ne accorgono.%nl;%nl;%nl;</notes>
@@ -2841,20 +2880,20 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="510" label="conseguenza" layerID="7"
-        created="1356903698646" x="866.66736" y="-734.75244"
+        created="1356903698646" x="862.66736" y="-738.75244"
         width="179.38464" height="52.308533" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/edd4e8b67f000001016c006e4981f4be</URIString>
-        <point1 x="1045.552" y="-734.25244"/>
-        <point2 x="867.16736" y="-682.9439"/>
+        <point1 x="1041.552" y="-738.25244"/>
+        <point2 x="863.16736" y="-686.9439"/>
         <ID1 xsi:type="node">511</ID1>
         <ID2 xsi:type="node">509</ID2>
     </child>
     <child ID="511" label="Scopo della religione" layerID="7"
-        created="1356904694108" x="1015.48126" y="-772.36487"
+        created="1356904694108" x="1011.48126" y="-776.36487"
         width="173.79999" height="43.533356" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>La religione &#xe8; il SO degli esseri viventi.%nl;Scopo della religione &#xe8; di consentire agli uomini di vivere meglio.%nl;Un uomo senza Fede &#xe8; come un computer senza SO: una scatola vuota.%nl;Non agendo in base a principii trascendenti, ma in base alle esigenze contingenti, l'uomo senza Fede &#xe8; simile alle bestie e non rientra nel novero dei "senzienti" nei confronti dei quali &#xe8; obbligatorio essere benevolenti.%tab;%nl;</notes>
@@ -2866,20 +2905,20 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="512" label="ipotesi" layerID="7" created="1356904702037"
-        x="1143.3013" y="-829.0437" width="129.29004" height="59.921875"
+        x="1139.3013" y="-833.0437" width="129.29004" height="59.921814"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/edd4e8b67f000001016c006e01da7b10</URIString>
-        <point1 x="1272.0913" y="-828.5437"/>
-        <point2 x="1143.8013" y="-769.6218"/>
+        <point1 x="1268.0913" y="-832.5437"/>
+        <point2 x="1139.8013" y="-773.6219"/>
         <ID1 xsi:type="node">290</ID1>
         <ID2 xsi:type="node">511</ID2>
     </child>
     <child ID="113" label="Matematica base&#xa;della teologia"
-        layerID="7" created="1293663471307" x="678.262" y="39.753345"
+        layerID="7" created="1293663471307" x="674.262" y="35.753345"
         width="151.20001" height="48.199997" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>SDFO, 55: La religione individual&#xe8; &#xe8; derivata dall'estasi; la teologia, dalla matematica.%nl;%nl;Non sono d'accordo: la matematica pu&#xf2; descrivere gli eventi che si verificano nell'Universo, ma non le loro cause.%nl;E' uno strumento incompleto, in questo senso.%nl;Come cercare di descrivere rigorosamente un sogno: se ne ottiene una rappresentazione parziale.%nl;Meglio descriverlo con una musica, lasciando che le suggestioni siano implicite.%nl;La matematica, e la deduzione matematica, portano a preposizioni fondamentalmente corrette, ma false o paradossali (tipo la radice quadrata di -2), il che vuol dire che non sono onnipotenti, ma hanno dei limiti.%nl;Che poi, i paradossi e le contraddizioni possano aiutare a raggiungere la Verit&#xe0;, &#xe8; un altro discorso.%nl;La matematica, in quest'ottica, pu&#xf2; essere utile NON perch&#xe9; produce verit&#xe0;, ma perch&#xe9; produce, di quando in quando, dei paradossi.%nl;%nl;Questo, in C'hi++, si pu&#xf2; utilizzare parlando dei linguaggi (di programmazione) pi&#xf9; o meno appropriati a raggiungere uno scopo.%nl;</notes>
@@ -2891,7 +2930,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="146" label="Filosofia" layerID="7"
-        created="1293665235455" x="997.9783" y="-30.742798"
+        created="1293665235455" x="993.9783" y="-34.742798"
         width="153.94507" height="58.138916" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <fillColor>#8C8F72</fillColor>
@@ -2902,7 +2941,7 @@
         <shape xsi:type="hexagon"/>
     </child>
     <child ID="606" label="Il piacere di Dio" layerID="7"
-        created="1367964602680" x="-380.2484" y="-145.87625"
+        created="1367964602680" x="-384.2484" y="-149.87625"
         width="150.0" height="55.861298" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>SDFO - 189%nl;"Dio gode sempre di un solo, semplice piacere".%nl;Nella mia visione delle cose questo pu&#xf2; essere vero, perch&#xe9;, se c'&#xe8; solo Uno, non esistono altre forme di piacere.%nl;Di fatto, &#xe8; il piacere di essere Uno.%nl;</notes>
@@ -2913,47 +2952,47 @@
         <URIString>http://vue.tufts.edu/rdf/resource/810d3a957f00000101a8c22b136edeed</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="607" layerID="7" created="1367964602680" x="-236.586"
-        y="-156.20831" width="173.57007" height="27.958359"
+    <child ID="607" layerID="7" created="1367964602680" x="-240.586"
+        y="-160.20831" width="173.57007" height="27.958374"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/810d3a957f00000101a8c22bdfed2a45</URIString>
-        <point1 x="-63.515938" y="-155.70831"/>
-        <point2 x="-236.086" y="-128.74995"/>
+        <point1 x="-67.51594" y="-159.70831"/>
+        <point2 x="-240.086" y="-132.74994"/>
         <ID1 xsi:type="node">139</ID1>
         <ID2 xsi:type="node">606</ID2>
     </child>
     <child ID="245" label="domanda" layerID="7" created="1294797715967"
-        x="-683.65393" y="-887.7344" width="1943.1543" height="40.51648"
+        x="-687.65393" y="-891.7343" width="1943.1542" height="40.51648"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7803c784c0a8010d001370ab7c95101b</URIString>
-        <point1 x="1259.0004" y="-847.7179"/>
-        <point2 x="-683.15393" y="-887.2344"/>
+        <point1 x="1255.0002" y="-851.71783"/>
+        <point2 x="-687.15393" y="-891.2343"/>
         <ID1 xsi:type="node">290</ID1>
         <ID2 xsi:type="node">241</ID2>
     </child>
     <child ID="295" label="domanda" layerID="7" created="1294872767946"
-        x="1363.5427" y="-849.67206" width="245.42456" height="13.0"
+        x="1359.5427" y="-853.6721" width="245.42456" height="13.0"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c71b3e5c0a8010d005730f846dbb958</URIString>
-        <point1 x="1364.0427" y="-845.60406"/>
-        <point2 x="1608.4673" y="-840.74005"/>
+        <point1 x="1360.0427" y="-849.6041"/>
+        <point2 x="1604.4673" y="-844.74005"/>
         <ID1 xsi:type="node">290</ID1>
         <ID2 xsi:type="node">294</ID2>
     </child>
     <child ID="294" label="Ordine e disordine" layerID="7"
-        created="1294872720179" x="1608.4673" y="-863.6506"
+        created="1294872720179" x="1604.4673" y="-867.6506"
         width="209.99805" height="50.0" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>La Chiesa &#xe8; stata appoggiata dalla classe mercantile (nel Medioevo) perch&#xe9; rappresentava l'ordine invece della "barbarie".%nl;Curioso come, in tempi pi&#xf9; recenti, la classe mercantile abbia favorito l'instabilit&#xe0; e il disordine (medio Oriente, Cina).%nl;Chi beneficia dell'ordine e chi del disordine?%nl;</notes>
@@ -2965,7 +3004,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="619" label="Verit&#xe0; delle teorie" layerID="7"
-        created="1368051149951" x="1532.2242" y="-102.70612"
+        created="1368051149951" x="1528.2242" y="-106.70612"
         width="152.79999" height="43.533356" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>SDFO, 209%nl;Russell parla delle teorie filosofiche e di come spesso siano frutto di una sofisticazione atta a respingere le confutazioni.%nl;"Ma questo (...) dimostretrebbe al massimo che una teoria *pu&#xf2;* essere vera, non che *debba* esserlo"%nl;Va inserito nel Libro, magari fra gli ultimi insegnamenti del Maestro sul letto di morte.</notes>
@@ -2976,21 +3015,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/863b33f57f0000010150b06b05d57266</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="620" layerID="7" created="1368051157421" x="1443.2217"
-        y="-75.98595" width="92.21716" height="7.75103"
+    <child ID="620" layerID="7" created="1368051157421" x="1439.2217"
+        y="-79.98594" width="92.21704" height="7.7510223"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/863b33f57f0000010150b06bb9cbded6</URIString>
-        <point1 x="1443.7217" y="-68.73492"/>
-        <point2 x="1534.9388" y="-75.48595"/>
+        <point1 x="1439.7217" y="-72.73492"/>
+        <point2 x="1530.9387" y="-79.48594"/>
         <ID1 xsi:type="node">480</ID1>
         <ID2 xsi:type="node">619</ID2>
     </child>
     <child ID="632" label="Satana" layerID="7" created="1368137542651"
-        x="7.1148987" y="-392.60556" width="114.5" height="54.5"
+        x="3.1148987" y="-396.60556" width="114.5" height="54.5"
         strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>"Suo regno &#xe8; nel cervello, ed in s&#xe9; stesso%nl;Pu&#xf2; far dell'Ade un Ciel, del Cielo un'Ade"%nl;Milton, cit. SDFO 231%nl;%nl;E' "Colui che divide", l'elettricit&#xe0; di Poe, l'Immancabile Testa di Pera di Defecatio.%nl;Il Creatore dell'Universo, secondo i Barbelognostici; la causa del Big-Bang e della disgregazione dell'Uno.%nl;%nl;Quali sono i suoi scopi?%nl;Se l'Uno &#xe8; perfezione, perch&#xe9; a lui non sta bene?</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -3000,20 +3039,20 @@
         <URIString>http://vue.tufts.edu/rdf/resource/8b603a657f0000010163f47ec2b2c7a6</URIString>
         <shape xsi:type="shield"/>
     </child>
-    <child ID="633" layerID="7" created="1368137600685" x="-37.37906"
-        y="-347.6842" width="92.707184" height="175.73856"
+    <child ID="633" layerID="7" created="1368137600685" x="-41.37906"
+        y="-351.6842" width="92.707184" height="175.73856"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/8b603a657f0000010163f47e14b81695</URIString>
-        <point1 x="-36.87906" y="-172.44568"/>
-        <point2 x="54.82813" y="-347.18423"/>
+        <point1 x="-40.87906" y="-176.44568"/>
+        <point2 x="50.82813" y="-351.18423"/>
         <ID2 xsi:type="node">632</ID2>
     </child>
-    <child ID="668" layerID="7" created="1369082744822" x="-5.7614746"
-        y="2004.1124" width="569.16394" height="421.67203"
+    <child ID="668" layerID="7" created="1369082744822" x="-9.761475"
+        y="2000.1124" width="569.16394" height="421.67203"
         strokeWidth="0.0" autoSized="false" xsi:type="group">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -3131,21 +3170,21 @@
             <ID2 xsi:type="node">457</ID2>
         </child>
     </child>
-    <child ID="248" layerID="7" created="1294869190881" x="299.3791"
-        y="1612.3938" width="662.15295" height="599.0791"
+    <child ID="248" layerID="7" created="1294869190881" x="295.37888"
+        y="1608.3938" width="662.15314" height="599.07935"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283ddc0a8010d005730f82c56627b</URIString>
-        <point1 x="961.03204" y="1612.8938"/>
-        <point2 x="299.87906" y="2210.973"/>
+        <point1 x="957.03204" y="1608.8938"/>
+        <point2 x="295.8789" y="2206.9731"/>
         <ID1 xsi:type="node">699</ID1>
         <ID2 xsi:type="node">249</ID2>
     </child>
     <child ID="699" label="Prima di Cristo" layerID="7"
-        created="1369086317461" x="895.6941" y="1571.8938" width="176.0"
+        created="1369086317461" x="891.6941" y="1567.8938" width="176.0"
         height="41.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Dai Presocratici allo stoicismo</notes>
         <fillColor>#B5B995</fillColor>
@@ -3155,21 +3194,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628927f00000101cc6a6a53c8df13</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="700" layerID="7" created="1369086506529" x="984.6747"
-        y="783.08594" width="57.934814" height="789.3076"
+    <child ID="700" layerID="7" created="1369086506529" x="980.6747"
+        y="779.08594" width="57.934753" height="789.3076"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628927f00000101cc6a6aa8cd6929</URIString>
-        <point1 x="1042.1095" y="783.58594"/>
-        <point2 x="985.1747" y="1571.8936"/>
+        <point1 x="1038.1095" y="779.58594"/>
+        <point2 x="981.17474" y="1567.8936"/>
         <ID1 xsi:type="node">153</ID1>
         <ID2 xsi:type="node">699</ID2>
     </child>
-    <child ID="701" layerID="7" created="1369086541977" x="-447.2339"
-        y="1594.852" width="575.005" height="320.23114"
+    <child ID="701" layerID="7" created="1369086541977" x="-451.2339"
+        y="1590.852" width="575.005" height="320.23114"
         strokeWidth="0.0" autoSized="false" xsi:type="group">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -3305,21 +3344,21 @@
             <ID2 xsi:type="node">405</ID2>
         </child>
     </child>
-    <child ID="288" layerID="7" created="1294871882241" x="-23.582642"
-        y="1599.1506" width="919.77673" height="76.766846"
+    <child ID="288" layerID="7" created="1294871882241" x="-27.582642"
+        y="1595.1509" width="919.77673" height="76.76672"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c612c95c0a8010d005730f87945fc60</URIString>
-        <point1 x="895.6941" y="1599.6506"/>
-        <point2 x="-23.082653" y="1675.4175"/>
+        <point1 x="891.6941" y="1595.6508"/>
+        <point2 x="-27.082615" y="1671.4175"/>
         <ID1 xsi:type="node">699</ID1>
         <ID2 xsi:type="node">286</ID2>
     </child>
-    <child ID="707" layerID="7" created="1369087286844" x="1752.6316"
-        y="1456.3938" width="978.8545" height="734.4" strokeWidth="0.0"
+    <child ID="707" layerID="7" created="1369087286844" x="1748.6316"
+        y="1452.3938" width="978.8545" height="734.4" strokeWidth="0.0"
         autoSized="false" xsi:type="group">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -3733,21 +3772,21 @@
             <ID2 xsi:type="node">574</ID2>
         </child>
     </child>
-    <child ID="195" layerID="7" created="1294786168850" x="1062.5698"
-        y="1612.1162" width="1024.6099" height="261.78235"
+    <child ID="195" layerID="7" created="1294786168850" x="1058.5698"
+        y="1608.1162" width="1024.6099" height="261.78235"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7749dbd2c0a8010d011c34fba86d0d8c</URIString>
-        <point1 x="1063.0698" y="1612.6161"/>
-        <point2 x="2086.6797" y="1873.3984"/>
+        <point1 x="1059.0698" y="1608.6161"/>
+        <point2 x="2082.6797" y="1869.3984"/>
         <ID1 xsi:type="node">699</ID1>
         <ID2 xsi:type="node">194</ID2>
     </child>
-    <child ID="708" layerID="7" created="1369087343470" x="1101.3008"
-        y="2176.1626" width="457.37842" height="317.43915"
+    <child ID="708" layerID="7" created="1369087343470" x="1097.3008"
+        y="2172.1626" width="457.37842" height="317.43915"
         strokeWidth="0.0" autoSized="false" xsi:type="group">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -3848,21 +3887,21 @@
             <ID2 xsi:type="node">636</ID2>
         </child>
     </child>
-    <child ID="704" layerID="7" created="1369087029887" x="997.35"
-        y="1612.3938" width="491.8996" height="711.8992"
+    <child ID="704" layerID="7" created="1369087029887" x="993.3501"
+        y="1608.3938" width="491.89948" height="711.8992"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628a27f00000101cc6a6a2b786e47</URIString>
-        <point1 x="997.85004" y="1612.8938"/>
-        <point2 x="1488.7496" y="2323.793"/>
+        <point1 x="993.85004" y="1608.8938"/>
+        <point2 x="1484.7495" y="2319.793"/>
         <ID1 xsi:type="node">699</ID1>
         <ID2 xsi:type="node">192</ID2>
     </child>
-    <child ID="709" layerID="7" created="1369087358762" x="1572.9365"
-        y="2314.2837" width="1135.6614" height="553.12775"
+    <child ID="709" layerID="7" created="1369087358762" x="1568.9365"
+        y="2310.2837" width="1135.6614" height="553.12775"
         strokeWidth="0.0" autoSized="false" xsi:type="group">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -4223,60 +4262,60 @@
             <ID2 xsi:type="node">176</ID2>
         </child>
     </child>
-    <child ID="193" layerID="7" created="1294786083541" x="1554.8442"
-        y="2359.293" width="248.8009" height="83.34863"
+    <child ID="193" layerID="7" created="1294786083541" x="1550.8441"
+        y="2355.293" width="248.80103" height="83.34863"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7749dbd1c0a8010d011c34fb3b697589</URIString>
-        <point1 x="1555.3442" y="2359.793"/>
-        <point2 x="1803.1451" y="2442.1416"/>
+        <point1 x="1551.3441" y="2355.793"/>
+        <point2 x="1799.1451" y="2438.1416"/>
         <ID1 xsi:type="node">192</ID1>
         <ID2 xsi:type="node">170</ID2>
     </child>
-    <child ID="169" layerID="7" created="1294783515111" x="1006.5408"
-        y="1612.3938" width="1140.0161" height="1001.13525"
+    <child ID="169" layerID="7" created="1294783515111" x="1002.5408"
+        y="1608.3938" width="1140.0161" height="1001.13525"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7749dbcbc0a8010d011c34fbce9074d9</URIString>
-        <point1 x="1007.0408" y="1612.8938"/>
-        <point2 x="2146.057" y="2613.029"/>
+        <point1 x="1003.0407" y="1608.8938"/>
+        <point2 x="2142.057" y="2609.029"/>
         <ID1 xsi:type="node">699</ID1>
         <ID2 xsi:type="node">168</ID2>
     </child>
-    <child ID="254" layerID="7" created="1294869369880" x="638.2933"
-        y="1612.3937" width="339.5437" height="1092.7117"
+    <child ID="254" layerID="7" created="1294869369880" x="634.2933"
+        y="1608.3937" width="339.5437" height="1092.7117"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283dfc0a8010d005730f84d5a744d</URIString>
-        <point1 x="977.337" y="1612.8938"/>
-        <point2 x="638.7933" y="2704.6055"/>
+        <point1 x="973.337" y="1608.8938"/>
+        <point2 x="634.7933" y="2700.6055"/>
         <ID1 xsi:type="node">699</ID1>
         <ID2 xsi:type="node">251</ID2>
     </child>
-    <child ID="648" layerID="7" created="1368481630284" x="1066.9946"
-        y="1259.4246" width="1429.1105" height="315.0415"
+    <child ID="648" layerID="7" created="1368481630284" x="1062.9944"
+        y="1255.4246" width="1429.1106" height="315.0415"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/9ff1da3d7f0000010021477c8a01416a</URIString>
-        <point1 x="1067.4945" y="1573.9661"/>
-        <point2 x="2495.605" y="1259.9246"/>
+        <point1 x="1063.4944" y="1569.9661"/>
+        <point2 x="2491.605" y="1255.9246"/>
         <ID1 xsi:type="node">699</ID1>
         <ID2 xsi:type="node">647</ID2>
     </child>
-    <child ID="717" layerID="7" created="1369088004161" x="-477.4707"
-        y="1105.7047" width="465.33344" height="353.76672"
+    <child ID="717" layerID="7" created="1369088004161" x="-481.4707"
+        y="1101.7047" width="465.33344" height="353.76672"
         strokeWidth="0.0" autoSized="false" xsi:type="group">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -4417,21 +4456,21 @@
             <ID2 xsi:type="node">278</ID2>
         </child>
     </child>
-    <child ID="268" layerID="7" created="1294870090794" x="-54.863647"
-        y="1296.8206" width="966.9394" height="275.57324"
+    <child ID="268" layerID="7" created="1294870090794" x="-58.863525"
+        y="1292.8206" width="966.93945" height="275.57324"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e3c0a8010d005730f8e3d9b7a6</URIString>
-        <point1 x="911.57574" y="1571.8938"/>
-        <point2 x="-54.363625" y="1297.3206"/>
+        <point1 x="907.5759" y="1567.8938"/>
+        <point2 x="-58.363556" y="1293.3206"/>
         <ID1 xsi:type="node">699</ID1>
         <ID2 xsi:type="node">267</ID2>
     </child>
-    <child ID="718" layerID="7" created="1369088016859" x="542.13074"
-        y="771.4829" width="228.69482" height="230.60728"
+    <child ID="718" layerID="7" created="1369088016859" x="538.13074"
+        y="767.4829" width="228.69482" height="230.60728"
         strokeWidth="0.0" autoSized="false" xsi:type="group">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -4473,21 +4512,21 @@
             <ID2 xsi:type="node">629</ID2>
         </child>
     </child>
-    <child ID="627" layerID="7" created="1368136795975" x="708.89734"
-        y="1000.59015" width="265.78717" height="571.8036"
+    <child ID="627" layerID="7" created="1368136795975" x="704.89734"
+        y="996.59015" width="265.78717" height="571.8036"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/8b4fd7c57f0000010163f47eb51661be</URIString>
-        <point1 x="974.18445" y="1571.8938"/>
-        <point2 x="709.3973" y="1001.0902"/>
+        <point1 x="970.18445" y="1567.8938"/>
+        <point2 x="705.3973" y="997.0902"/>
         <ID1 xsi:type="node">699</ID1>
         <ID2 xsi:type="node">626</ID2>
     </child>
     <child ID="233" label="Parmenide" layerID="7"
-        created="1294788336288" x="232.01318" y="2535.1265"
+        created="1294788336288" x="228.01318" y="2531.1265"
         width="113.0" height="44.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Parmenide di Elea (in greco &#x3a0;&#x3b1;&#x3c1;&#x3bc;&#x3b5;&#x3bd;&#x3af;&#x3b4;&#x3b7;&#x3c2;; Elea, 515 a.C. &#x2013; 450 a.C.) &#xe8; stato un filosofo greco antico presocratico.%nl;Russell lo liquida un po' troppo sbrigativamente, dando l'impressione che la sua filosofia si basasse sul linguaggio.%nl;Andrebbe approfondito.</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -4501,7 +4540,7 @@
         <shape xsi:type="rectangle"/>
     </child>
     <child ID="251" label="Presocratici" layerID="7"
-        created="1294869269562" x="558.6765" y="2701.2798" width="144.0"
+        created="1294869269562" x="554.6765" y="2697.2798" width="144.0"
         height="59.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>L'atomismo &#xe8; un indirizzo filosofico di carattere ontologico basato sulla pluralit&#xe0; dei costituenti fondamentali della realt&#xe0; fisica. Questa filosofia materialistica &#xe8; nata nella Grecia "ionica" (coste dell'attuale Asia Minore) probabilmente gi&#xe0; intorno alla fine del VII secolo a.C. Essa per&#xf2; si profila in modo netto solo nel secolo successivo grazie a Leucippo, che da Mileto emigra ad Abdera e l&#xec; vi fonda una scuola dove avr&#xe0; come allievo principale Democrito. L'atomismo non si limita ad essere un'ontologia, ma ha sia in Democrito che in Epicuro dei risvolti etici molto importanti.</notes>
         <fillColor>#B5B995</fillColor>
@@ -4511,8 +4550,8 @@
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283dec0a8010d005730f80dc29b1b</URIString>
         <shape xsi:type="diamond"/>
     </child>
-    <child ID="712" layerID="7" created="1369087635809" x="812.14624"
-        y="2838.893" width="727.9193" height="317.1667"
+    <child ID="712" layerID="7" created="1369087635809" x="808.14624"
+        y="2834.893" width="727.9193" height="317.1667"
         strokeWidth="0.0" autoSized="false" xsi:type="group">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -4667,34 +4706,34 @@
             <ID2 xsi:type="node">536</ID2>
         </child>
     </child>
-    <child ID="234" layerID="7" created="1294788342588" x="331.36145"
-        y="2578.6265" width="267.65326" height="136.33057"
+    <child ID="234" layerID="7" created="1294788342588" x="327.3615"
+        y="2574.6265" width="267.6532" height="136.33057"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7766c28ec0a8010d011c34fb196ead42</URIString>
-        <point1 x="598.5147" y="2714.457"/>
-        <point2 x="331.86145" y="2579.1265"/>
+        <point1 x="594.5147" y="2710.457"/>
+        <point2 x="327.8615" y="2575.1265"/>
         <ID1 xsi:type="node">251</ID1>
         <ID2 xsi:type="node">233</ID2>
     </child>
-    <child ID="204" layerID="7" created="1294787210900" x="664.3224"
-        y="2745.7893" width="399.12897" height="181.83691"
+    <child ID="204" layerID="7" created="1294787210900" x="660.32227"
+        y="2741.7893" width="399.12903" height="181.83691"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/775a0277c0a8010d011c34fb49e72009</URIString>
-        <point1 x="664.8223" y="2746.2893"/>
-        <point2 x="1062.9513" y="2927.1262"/>
+        <point1 x="660.82227" y="2742.2893"/>
+        <point2 x="1058.9513" y="2923.1262"/>
         <ID1 xsi:type="node">251</ID1>
         <ID2 xsi:type="node">203</ID2>
     </child>
-    <child ID="719" layerID="7" created="1369088074121" x="-363.27502"
-        y="2663.6025" width="730.2395" height="477.81607"
+    <child ID="719" layerID="7" created="1369088074121" x="-367.27502"
+        y="2659.6025" width="730.2395" height="477.81607"
         strokeWidth="0.0" autoSized="false" xsi:type="group">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -4885,21 +4924,21 @@
             <ID2 xsi:type="node">532</ID2>
         </child>
     </child>
-    <child ID="236" layerID="7" created="1294788441337" x="-17.653687"
-        y="2740.88" width="602.70233" height="139.27417"
+    <child ID="236" layerID="7" created="1294788441337" x="-21.653687"
+        y="2736.8804" width="602.70233" height="139.27417"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/776861ecc0a8010d011c34fb92f631b8</URIString>
-        <point1 x="584.54865" y="2741.3801"/>
-        <point2 x="-17.153687" y="2879.6543"/>
+        <point1 x="580.54865" y="2737.3804"/>
+        <point2 x="-21.153687" y="2875.6545"/>
         <ID1 xsi:type="node">251</ID1>
         <ID2 xsi:type="node">235</ID2>
     </child>
-    <child ID="720" layerID="7" created="1369088089302" x="334.17285"
-        y="3142.067" width="370.14966" height="222.42276"
+    <child ID="720" layerID="7" created="1369088089302" x="330.17285"
+        y="3138.067" width="370.14966" height="222.42276"
         strokeWidth="0.0" autoSized="false" xsi:type="group">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -4971,33 +5010,33 @@
         </child>
     </child>
     <child ID="217" label="&#xa;" layerID="7" created="1294787727001"
-        x="523.68677" y="2756.9565" width="100.599304" height="386.6101"
+        x="519.68677" y="2752.9565" width="100.59943" height="386.61035"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/77642313c0a8010d011c34fb87a5464a</URIString>
-        <point1 x="623.78613" y="2757.4568"/>
-        <point2 x="524.1868" y="3143.067"/>
+        <point1 x="619.7862" y="2753.4565"/>
+        <point2 x="520.18677" y="3139.067"/>
         <ID1 xsi:type="node">251</ID1>
         <ID2 xsi:type="node">216</ID2>
     </child>
-    <child ID="257" layerID="7" created="1294869395659" x="1002.79895"
-        y="983.35626" width="563.36035" height="589.0375"
+    <child ID="257" layerID="7" created="1294869395659" x="998.69946"
+        y="980.3826" width="559.52594" height="588.0111"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283e0c0a8010d005730f8e4572bbe</URIString>
-        <point1 x="1003.29895" y="1571.8938"/>
-        <point2 x="1565.6593" y="983.8563"/>
+        <point1 x="999.1994" y="1567.8938"/>
+        <point2 x="1557.7253" y="980.8827"/>
         <ID1 xsi:type="node">699</ID1>
         <ID2 xsi:type="node">256</ID2>
     </child>
-    <child ID="722" layerID="7" created="1369088176718" x="2096.8264"
-        y="758.8619" width="407.80322" height="303.06366"
+    <child ID="722" layerID="7" created="1369088176718" x="2092.8264"
+        y="754.8619" width="407.80322" height="303.06366"
         strokeWidth="0.0" autoSized="false" xsi:type="group">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -5084,20 +5123,20 @@
         </child>
     </child>
     <child ID="677" label="label" layerID="7" created="1369082770713"
-        x="1026.6978" y="1049.9543" width="1107.5707" height="522.43933"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="2" xsi:type="link">
+        x="1022.69806" y="1045.9543" width="1107.5702"
+        height="522.43933" strokeWidth="1.0" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c3c32aba7f00000101cc6a6ae2256c77</URIString>
-        <point1 x="1027.1979" y="1571.8938"/>
-        <point2 x="2133.7686" y="1050.4545"/>
+        <point1 x="1023.1981" y="1567.8938"/>
+        <point2 x="2129.7683" y="1046.4545"/>
         <ID1 xsi:type="node">699</ID1>
         <ID2 xsi:type="node">671</ID2>
     </child>
-    <child ID="723" layerID="7" created="1369088220662" x="-259.03772"
-        y="616.00195" width="538.0504" height="360.20636"
+    <child ID="723" layerID="7" created="1369088220662" x="-263.03772"
+        y="612.00195" width="538.0504" height="360.20636"
         strokeWidth="0.0" autoSized="false" xsi:type="group">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -5240,21 +5279,20 @@
             <ID2 xsi:type="node">416</ID2>
         </child>
     </child>
-    <child ID="253" layerID="7" created="1294869366921" x="216.13574"
-        y="880.4463" width="745.95593" height="691.94745"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="2" xsi:type="link">
+    <child ID="253" layerID="7" created="1294869366921" x="212.13577"
+        y="876.4463" width="745.956" height="691.9475" strokeWidth="1.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283dfc0a8010d005730f8cced8847</URIString>
-        <point1 x="961.5917" y="1571.8938"/>
-        <point2 x="216.63576" y="880.94635"/>
+        <point1 x="957.59174" y="1567.8938"/>
+        <point2 x="212.63573" y="876.9463"/>
         <ID1 xsi:type="node">699</ID1>
         <ID2 xsi:type="node">252</ID2>
     </child>
     <child ID="256" label="Stoici" layerID="7" created="1294869395649"
-        x="1518.6794" y="939.18396" width="129.83331" height="51.833313"
+        x="1510.6794" y="936.18396" width="129.83331" height="51.833313"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#B5B995</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -5263,21 +5301,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/7c5283dfc0a8010d005730f8aa985b48</URIString>
         <shape xsi:type="diamond"/>
     </child>
-    <child ID="199" layerID="7" created="1294786368301" x="1567.4341"
-        y="803.95996" width="14.229858" height="136.69629"
+    <child ID="199" layerID="7" created="1294786368301" x="1563.0236"
+        y="799.959" width="11.193115" height="137.47656"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/7749dbd3c0a8010d011c34fbcab0fe19</URIString>
-        <point1 x="1581.1641" y="940.15625"/>
-        <point2 x="1567.9342" y="804.45996"/>
+        <point1 x="1573.7167" y="936.93555"/>
+        <point2 x="1563.5236" y="800.459"/>
         <ID1 xsi:type="node">256</ID1>
         <ID2 xsi:type="node">198</ID2>
     </child>
     <child ID="198" label="Marco Aurelio" layerID="7"
-        created="1294786363054" x="1508.6793" y="768.4595" width="115.0"
+        created="1294786363054" x="1504.6793" y="764.4595" width="115.0"
         height="36.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#E4E6D2</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -5287,7 +5325,7 @@
         <shape xsi:type="rectangle"/>
     </child>
     <child ID="200" label="I Pensieri" layerID="7"
-        created="1294786452693" x="1486.7102" y="648.636"
+        created="1294786452693" x="1482.7102" y="644.636"
         width="93.76666" height="34.975414" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <fillColor>#F4F5E9</fillColor>
@@ -5298,7 +5336,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="348" label="bene dell'ape&#xa;bene dell'aveare"
-        layerID="7" created="1295053364675" x="1458.2358" y="516.8342"
+        layerID="7" created="1295053364675" x="1454.2358" y="512.8342"
         width="122.0" height="50.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <fillColor>#EEEEEE</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -5308,46 +5346,46 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="201" label="opera" layerID="7" created="1294786582532"
-        x="1535.2698" y="682.7622" width="29.0" height="86.197266"
+        x="1531.2698" y="678.7622" width="29.0" height="86.197266"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/775a0276c0a8010d011c34fb40acc171</URIString>
-        <point1 x="1561.305" y="768.4595"/>
-        <point2 x="1538.2344" y="683.2622"/>
+        <point1 x="1557.305" y="764.4595"/>
+        <point2 x="1534.2344" y="679.2622"/>
         <ID1 xsi:type="node">198</ID1>
         <ID2 xsi:type="node">200</ID2>
     </child>
-    <child ID="349" layerID="7" created="1295053384256" x="1521.6101"
-        y="566.2158" width="10.480713" height="83.07129"
+    <child ID="349" layerID="7" created="1295053384256" x="1517.6101"
+        y="562.2158" width="10.480713" height="83.07129"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/87350b6ac0a8010d010ad419faf6c0fa</URIString>
-        <point1 x="1531.5908" y="648.7871"/>
-        <point2 x="1522.1101" y="566.7158"/>
+        <point1 x="1527.5908" y="644.7871"/>
+        <point2 x="1518.1101" y="562.7158"/>
         <ID1 xsi:type="node">200</ID1>
         <ID2 xsi:type="node">348</ID2>
     </child>
-    <child ID="732" layerID="7" created="1369088846024" x="1617.3553"
-        y="904.419" width="135.19629" height="48.94226"
+    <child ID="732" layerID="7" created="1369088846024" x="1600.1785"
+        y="825.5436" width="190.50793" height="121.15405"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c41b0fe77f00000101cc6a6af62c999c</URIString>
-        <point1 x="1617.8553" y="952.86127"/>
-        <point2 x="1752.0516" y="904.919"/>
+        <point1 x="1600.6783" y="946.19763"/>
+        <point2 x="1790.1863" y="826.0436"/>
         <ID1 xsi:type="node">256</ID1>
         <ID2 xsi:type="node">733</ID2>
     </child>
     <child ID="733" label="Zenone" layerID="7" created="1369088846024"
-        x="1752.0516" y="862.37683" width="115.0" height="44.0"
+        x="1767.385" y="782.0435" width="115.0" height="44.0"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Fondatore dello Stoicismo, nel II secolo a.c.%nl;Devo leggere qualcosa in originale perch&#xe9; le affinit&#xe0; con il C'hi++ sono molte e devo approfondirle scremando l'interpretazione di Russell</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -5361,7 +5399,7 @@
         <shape xsi:type="rectangle"/>
     </child>
     <child ID="734" label="Affinit&#xe0; con C'hi++" layerID="7"
-        created="1369089119770" x="1801.6813" y="716.1644"
+        created="1369089119770" x="1767.0146" y="617.16437"
         width="163.80002" height="61.799995" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>SDFO, 258-259%nl;1. Ripetizione all'infinito degli eventi.%nl;Sembra la versione primordiale dello Spazionismo; se ne differenzia per il ruolo della Divinit&#xe0;, che qui &#xe8; fondamentalmente benevola, mentre nel C'hi++ o &#xe8; indifferente o non c'&#xe8;, o meglio, coincide con il tutto, perci&#xf2; il bene di Dio &#xe8; il bene di tutto.%nl;%nl;2. Dio non &#xe8; separato dal mondo: ne &#xe8; l'anima e in ciascuno di noi c'&#xe8; una parte del Fuoco Divino.%nl;Quasi: per il C'hi++, alla faccia di Papa Francesco, Dio E' uno spray, nel senso che &#xe8; tutto ci&#xf2; che esiste, dal profumo delle rose all'acqua di scarico dei depuratori.%nl;Gli esseri senzienti se ne rendono conto; gli animali, gli ultr&#xe0; e buona parte dei contemporanei, no.%nl;%nl;3. La vita &#xe8; buona quando &#xe8; in armonia con la Natura.%nl;Il confronto con le teorie di Zenone evidenzia alcune questioni irrisolte del C'hi++, in particolare l'esistenza di una Via Esatta, che presuppone uno scopo finale cui tendere.%nl;%nl;4. La virt&#xf9; &#xe8; l'unico bene.%nl;Condivisibile, se per "virt&#xf9;" si intende il bene di tutti gli esseri senzienti, cosa che sembra possibile visto che alla fine di pagina 259 Russell dice che gli stoici predicavano l'amore universale.%nl;"Amore", per&#xf2; &#xe8; un termine che pu&#xf2; dare luogo ad anfibologie, quindi &#xe8; meglio che nel Libro si utilizzi sempre "benevolenza", ovvero: non volere "bene", ma volere "il bene" degli esseri senzienti.%nl;%nl;</notes>
@@ -5370,26 +5408,26 @@
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
         <metadata-list>
-            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="da qui"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="spazionismo"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/c41b0fe77f00000101cc6a6aa3ebd095</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="735" layerID="7" created="1369089119770" x="1820.9126"
-        y="776.84375" width="46.84424" height="86.0332"
+    <child ID="735" layerID="7" created="1369089119770" x="1827.7742"
+        y="678.2842" width="16.907959" height="104.259766"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c41b0fe87f00000101cc6a6a41130fbd</URIString>
-        <point1 x="1821.4126" y="862.37695"/>
-        <point2 x="1867.2568" y="777.34375"/>
+        <point1 x="1828.2742" y="782.04395"/>
+        <point2 x="1844.1821" y="678.7842"/>
         <ID1 xsi:type="node">733</ID1>
         <ID2 xsi:type="node">734</ID2>
     </child>
     <child ID="647" label="Epicurei" layerID="7" created="1368481630284"
-        x="2473.9553" y="1222.8171" width="128.406" height="55.5"
+        x="2469.9553" y="1218.8171" width="128.406" height="55.5"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Scuola filosofica contemporanea a quella degli stoici.%nl;Fondata nel 311 a.c. da Epicuro%nl;</notes>
         <fillColor>#B5B995</fillColor>
@@ -5400,7 +5438,7 @@
         <shape xsi:type="diamond"/>
     </child>
     <child ID="650" label="Epicuro" layerID="7" created="1368481630286"
-        x="2724.024" y="1134.6633" width="113.0" height="44.0"
+        x="2720.024" y="1130.6633" width="113.0" height="44.0"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>SDFO, 247%nl;"Il bene pi&#xf9; grande &#xe8; la prudenza".%nl;L'invito ad astenersi dalla vita pubblica e dalla cultura &#xe8; molto simile agli insegnamenti taoisti.%nl;Non %nl;%nl;</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -5414,7 +5452,7 @@
         <shape xsi:type="rectangle"/>
     </child>
     <child ID="678" label="Epitteto su Epicuro" layerID="7"
-        created="1369083091442" x="2591.3872" y="1011.6983"
+        created="1369083091442" x="2587.3872" y="1007.6983"
         width="159.0" height="36.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>SDFO, 246%nl;"Questa &#xe8; la vita che secondo te &#xe8; apprezzabile: mangiare, bere, accoppiarsi, defecare e russare"%nl;Discorsi, libro II, cap. 20%nl;</notes>
         <fillColor>#F4F5E9</fillColor>
@@ -5425,7 +5463,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="680" label="Supersizione e Provvidenza" layerID="7"
-        created="1369083629144" x="2930.2942" y="1184.6614"
+        created="1369083629144" x="2926.2942" y="1180.6614"
         width="223.20001" height="66.2" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>SDFO, 251%nl;L'idea di un Dio - se c'&#xe8; - "Taoista", che non si impicci della gestione dell'Universo &#xe8; molto coerente e interessante.%nl;%nl;La negazione della superstizione &#xe8; condivisibile, ma non possiamo escludere che, se esistono i Post-it, ci possa essere un modo per "leggerli".%nl;</notes>
@@ -5441,7 +5479,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="691" label="Religione come consolazione" layerID="7"
-        created="1369085388965" x="2902.0796" y="1014.9096"
+        created="1369085388965" x="2898.0796" y="1010.9096"
         width="233.0" height="67.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>SDFO, 250%nl;Interessante sotto due punti di vista: la metafisica di Epicuro ricorda molto quella del C'hi++ - gli Dei non interferiscono nelle vicende umane e l'anima perisce con il corpo, ma nasce da un atteggiamento opposto.%nl;Epicuro elabora una metafisica che elimini le cause dei principali timori dell'uomo: la religione e la paura della morte; il C'hi++ cerca di definire una metafisica che richieda il minimo possibile di fede, indipendentemente da ci&#xf2; che si vorrebbe o che non si vorrebbe.%nl;</notes>
         <fillColor>#F4F5E9</fillColor>
@@ -5457,7 +5495,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="695" label="Lucrezio" layerID="7" created="1369085917317"
-        x="2680.6533" y="1336.8481" width="113.0" height="44.0"
+        x="2676.6533" y="1332.8481" width="113.0" height="44.0"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>SDFO, 252%nl;Coevo di giulio Cesare, visse dal 98 al 55 a.c.%nl;</notes>
         <fillColor>#E4E6D2</fillColor>
@@ -5471,7 +5509,7 @@
         <shape xsi:type="rectangle"/>
     </child>
     <child ID="697" label="Ogni uomo fugge da s&#xe9; stesso"
-        layerID="7" created="1369086029405" x="2776.1226" y="1497.3096"
+        layerID="7" created="1369086029405" x="2772.1226" y="1493.3096"
         width="236.6" height="67.600006" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>SDFO, 254%nl;Interessante citazione dal Libro III, pagg. 1068-76%nl;Si potrebbe utilizzare come citazione all'inizio del Libro</notes>
@@ -5486,86 +5524,86 @@
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628927f00000101cc6a6a91e1218a</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="661" layerID="7" created="1368481630284" x="2571.5132"
-        y="1178.0542" width="153.0105" height="59.895874"
+    <child ID="661" layerID="7" created="1368481630284" x="2567.5132"
+        y="1174.0542" width="153.0105" height="59.895874"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/9ff1da3d7f0000010021477cfbec83e9</URIString>
-        <point1 x="2572.0134" y="1237.4501"/>
-        <point2 x="2724.024" y="1178.5542"/>
+        <point1 x="2568.0134" y="1233.4501"/>
+        <point2 x="2720.024" y="1174.5542"/>
         <ID1 xsi:type="node">647</ID1>
         <ID2 xsi:type="node">650</ID2>
     </child>
-    <child ID="696" layerID="7" created="1369085917317" x="2566.08"
-        y="1265.5327" width="131.14258" height="71.81555"
+    <child ID="696" layerID="7" created="1369085917317" x="2562.08"
+        y="1261.5327" width="131.14233" height="71.81555"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628927f00000101cc6a6afb60baa0</URIString>
-        <point1 x="2566.58" y="1266.0326"/>
-        <point2 x="2696.7227" y="1336.8481"/>
+        <point1 x="2562.58" y="1262.0326"/>
+        <point2 x="2692.7224" y="1332.8481"/>
         <ID1 xsi:type="node">647</ID1>
         <ID2 xsi:type="node">695</ID2>
     </child>
-    <child ID="681" layerID="7" created="1369083629144" x="2836.524"
-        y="1169.3708" width="118.59888" height="28.489868"
+    <child ID="681" layerID="7" created="1369083629144" x="2832.524"
+        y="1165.3708" width="118.59912" height="28.48999"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="1" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c3c32abe7f00000101cc6a6a7a83ddee</URIString>
-        <point1 x="2954.6228" y="1197.3607"/>
-        <point2 x="2837.024" y="1169.8708"/>
+        <point1 x="2950.623" y="1193.3608"/>
+        <point2 x="2833.024" y="1165.8708"/>
         <ID1 xsi:type="node">680</ID1>
         <ID2 xsi:type="node">650</ID2>
     </child>
-    <child ID="679" layerID="7" created="1369083091442" x="2685.6301"
-        y="1046.8503" width="76.396484" height="88.31299"
+    <child ID="679" layerID="7" created="1369083091442" x="2681.63"
+        y="1042.8503" width="76.39624" height="88.31299"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="1" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c3c32abd7f00000101cc6a6add2ca79e</URIString>
-        <point1 x="2761.5266" y="1134.6633"/>
-        <point2 x="2686.1301" y="1047.3503"/>
+        <point1 x="2757.5264" y="1130.6633"/>
+        <point2 x="2682.1301" y="1043.3503"/>
         <ID1 xsi:type="node">650</ID1>
         <ID2 xsi:type="node">678</ID2>
     </child>
-    <child ID="692" layerID="7" created="1369085388965" x="2828.4033"
-        y="1076.1589" width="128.55493" height="59.004517"
+    <child ID="692" layerID="7" created="1369085388965" x="2824.4036"
+        y="1072.1589" width="128.55469" height="59.004395"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="1" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c3df3f277f00000101cc6a6aa9950354</URIString>
-        <point1 x="2956.4583" y="1076.6588"/>
-        <point2 x="2828.9033" y="1134.6633"/>
+        <point1 x="2952.4583" y="1072.6589"/>
+        <point2 x="2824.9036" y="1130.6633"/>
         <ID1 xsi:type="node">691</ID1>
         <ID2 xsi:type="node">650</ID2>
     </child>
-    <child ID="698" layerID="7" created="1369086029405" x="2756.7388"
-        y="1380.3481" width="108.43091" height="118.67212"
+    <child ID="698" layerID="7" created="1369086029405" x="2752.7388"
+        y="1376.3481" width="108.43091" height="118.67212"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="1" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c3f628927f00000101cc6a6a968a5c5a</URIString>
-        <point1 x="2864.6694" y="1498.5203"/>
-        <point2 x="2757.2385" y="1380.8481"/>
+        <point1 x="2860.6697" y="1494.5203"/>
+        <point2 x="2753.2388" y="1376.8481"/>
         <ID1 xsi:type="node">697</ID1>
         <ID2 xsi:type="node">695</ID2>
     </child>
     <child ID="748" label="Bont&#xe0; di Allah" layerID="7"
-        created="1546954671259" x="222.3313" y="-386.8562" width="157.4"
+        created="1546954671259" x="218.3313" y="-390.8562" width="157.4"
         height="48.5" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>In conclusione il Dio del Corano, per riassumere con concetti propri del gergo teologico islamico quanto fin qui accennato, compendia in s&#xe9; aspetti di jam&#x101;l (lett.: &#x201c;bellezza&#x201d;) ossia: bont&#xe0;, grazia, misericordia, clemenza, dolcezza, mitezza, perdono ecc., e aspetti di jal&#x101;l (lett.: &#x201c;gloria/ maest&#xe0;&#x201d;) ovvero: collera, giustizia, potenza numinosa, violenza, costrizione. &#xc8;, in termini a noi pi&#xf9; familiari, un Dio che assomma aspetti fascinosi e aspetti tremendi.%nl;%nl;Saccone, Carlo. Iblis, il Satana del Terzo Testamento.</notes>
         <fillColor>#F4F5E9</fillColor>
@@ -5576,21 +5614,21 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="749" label="interpretazione" layerID="7"
-        created="1546954700895" x="314.04865" y="-339.27606"
-        width="92.44415" height="162.2102" strokeWidth="1.0"
+        created="1546954700895" x="310.04858" y="-343.27606"
+        width="92.44418" height="162.2102" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/2db46cadc0a82b3216b8d2506092f74b</URIString>
-        <point1 x="405.9928" y="-177.56586"/>
-        <point2 x="314.54865" y="-338.77606"/>
+        <point1 x="401.9928" y="-181.56586"/>
+        <point2 x="310.5486" y="-342.77606"/>
         <ID1 xsi:type="node">141</ID1>
         <ID2 xsi:type="node">748</ID2>
     </child>
     <child ID="750"
         label="Al-Ash&#x2018;ar&#x12b; e al-Jubb&#x101;&#x2019;&#x12b;:"
-        layerID="7" created="1546954941411" x="209.33124" y="-543.8562"
+        layerID="7" created="1546954941411" x="205.33124" y="-547.8562"
         width="181.20001" height="48.5" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>%nl;Al-Ash&#x2018;ar&#x12b; cos&#xec; interrog&#xf2; il suo maestro al-Jubb&#x101;&#x2019;&#x12b;: &#x201c;Tre fratelli muoiono: uno nell&#x2019;obbedienza a Dio, il secondo nella disobbedienza, il terzo prima di aver raggiunto l&#x2019;uso della ragione. Che ne &#xe8; di loro?&#x201d;. Al-Jubb&#x101;&#x2019;&#x12b; rispose: &#x201c;Il primo &#xe8; ricompensato col paradiso, il secondo &#xe8; punito con l&#x2019;inferno, il terzo non &#xe8; n&#xe9; ricompensato n&#xe9; punito&#x201d;. &#x201c;Ma - dice al-Ash&#x2018;ar&#x12b; - se il terzo obbiettasse: &#x2018;O Signore, perch&#xe9; mi hai fatto morire bambino e non mi hai lasciato vivere affinch&#xe9; ti obbedissi ed entrassi in paradiso?&#x2019;, che cosa direbbe il Signore?&#x201d; &#x201c;Dir&#xe0; - replic&#xf2; al-Jubb&#x101;&#x2019;&#x12b; - so che se tu fossi cresciuto, avresti disobbedito e saresti andato all&#x2019;inferno, cos&#xec; &#xe8; stato meglio per te morire bambino&#x2019;.&#x201d; &#x201c;Ma - obietta al-Ash&#x2018;ar&#x12b; - a quel punto insorgerebbe il secondo gridando con tutto il fiato che ha nei polmoni: &#x2018;Signore, perch&#xe9; non mi hai fatto morire bambino? Cos&#xec; non sarei finito all&#x2019;inferno!&#x2019;.%nl;%nl;Saccone, Carlo. Iblis, il Satana del Terzo Testamento. Letture coraniche II (Bactriana. Collana di studi indo-mediterranei Vol. 1)</notes>
@@ -5602,20 +5640,75 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="751" label="esempio&#xa;" layerID="7"
-        created="1546954984635" x="279.48126" y="-495.85547"
-        width="42.0" height="109.50391" strokeWidth="1.0"
+        created="1546954984635" x="275.48126" y="-499.85938"
+        width="42.0" height="109.50781" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/2db46caec0a82b3216b8d2508af03751</URIString>
-        <point1 x="300.86142" y="-386.85156"/>
-        <point2 x="300.10114" y="-495.35547"/>
+        <point1 x="296.86142" y="-390.85156"/>
+        <point2 x="296.10114" y="-499.35938"/>
         <ID1 xsi:type="node">748</ID1>
         <ID2 xsi:type="node">750</ID2>
     </child>
+    <child ID="757" label="Cosmogonia&#x9;" layerID="7"
+        created="1586696305728" x="1677.4645" y="424.1605"
+        width="144.40001" height="60.4" strokeWidth="2.0"
+        autoSized="true" xsi:type="node">
+        <notes>SDFO, 258-259%nl;%nl;1. Ripetizione all'infinito degli eventi.%nl;Sembra la versione primordiale dello Spazionismo; se ne differenzia per il ruolo della Divinit&#xe0;, che qui &#xe8; fondamentalmente benevola, mentre nel C'hi++ o &#xe8; indifferente o non c'&#xe8;, o meglio, coincide con il tutto, perci&#xf2; il bene di Dio &#xe8; il bene di tutto.%nl;%nl;2. Dio non &#xe8; separato dal mondo: ne &#xe8; l'anima e in ciascuno di noi c'&#xe8; una parte del Fuoco Divino.%nl;Quasi: per il C'hi++, alla faccia di Papa Francesco, Dio E' uno spray, nel senso che &#xe8; tutto ci&#xf2; che esiste, dal profumo delle rose all'acqua di scarico dei depuratori.%nl;Gli esseri senzienti se ne rendono conto; gli animali, gli ultr&#xe0; e buona parte dei contemporanei, no.%nl;%nl;</notes>
+        <fillColor>#EEEEEE</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="spazionismo, cosmogonia, bene e male"/>
+        </metadata-list>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e7e7fcdc0a8013c0f79801eeb34eb0d</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="761" layerID="7" created="1586696487330" x="1764.2861"
+        y="483.37305" width="69.59851" height="134.88184"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e7e7fcec0a8013c0f79801e3614d31c</URIString>
+        <point1 x="1833.3846" y="617.7549"/>
+        <point2 x="1764.7861" y="483.87305"/>
+        <ID1 xsi:type="node">734</ID1>
+        <ID2 xsi:type="node">757</ID2>
+    </child>
+    <child ID="762" layerID="7" created="1586696489138" x="1864.706"
+        y="476.7373" width="76.61719" height="141.54688"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e7e7fcec0a8013c0f79801e2ebfb346</URIString>
+        <point1 x="1865.206" y="617.7842"/>
+        <point2 x="1940.8232" y="477.2373"/>
+        <ID1 xsi:type="node">734</ID1>
+        <ID2 xsi:type="node">770</ID2>
+    </child>
+    <child ID="770" label="Etica" layerID="7" created="1586697216022"
+        x="1889.5103" y="422.08237" width="131.8999" height="55.900024"
+        strokeWidth="2.0" autoSized="false" xsi:type="node">
+        <notes>SDFO, 258-259%nl;La vita &#xe8; buona quando &#xe8; in armonia con la Natura.%nl;Il confronto con le teorie di Zenone evidenzia alcune questioni irrisolte del C'hi++, in particolare l'esistenza di una Via Esatta, che presuppone uno scopo finale cui tendere.%nl;%nl;La virt&#xf9; &#xe8; l'unico bene.%nl;Condivisibile, se per "virt&#xf9;" si intende il bene di tutti gli esseri senzienti, cosa che sembra possibile visto che alla fine di pagina 259 Russell dice che gli stoici predicavano l'amore universale.%nl;"Amore", per&#xf2; &#xe8; un termine che pu&#xf2; dare luogo ad anfibologie, quindi &#xe8; meglio che nel Libro si utilizzi sempre "benevolenza", ovvero: non volere "bene", ma volere "il bene" degli esseri senzienti.%nl;%nl;</notes>
+        <fillColor>#EEEEEE</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="etica, bene, male, amore, benevolenza, virt&#xf9;"/>
+        </metadata-list>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e8743ccc0a8013c0f79801ea71b8d7c</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
     <child ID="60" label="C'hi++" layerID="6" created="1293660267417"
-        x="-3102.9172" y="621.9857" width="154.1156" height="56.931152"
+        x="-3106.9172" y="617.9857" width="154.1156" height="56.931152"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <resource referenceCreated="0"
             spec="/Users/Carlo/Dropbox/Canaro/C'hi++/Sostiene Aristotele.odt"
@@ -5632,7 +5725,7 @@
         <shape xsi:type="hexagon"/>
     </child>
     <child ID="84" label="Affinit&#xe0; con &#xa;altre filosofie"
-        layerID="6" created="1293661266484" x="-3220.1338" y="35.206253"
+        layerID="6" created="1293661266484" x="-3259.467" y="194.53958"
         width="149.12964" height="57.098145" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Ciascuna filosofia, sia essa religiosa o laica esprime le sue regole con il linguaggio che le &#xe8; pi&#xf9; proprio.%nl;Empedocle parlava di Amore e Discordia; Poe diceva le stesse cose, utilizzando i termini, a lui pi&#xf9; affini: Elettricit&#xe0; e Gravit&#xe0;.%nl;Il Maestro Canaro parla di Spazioni ed Energia, ma si tratta solo di nuovi nomi per vecchi concetti.%nl;%nl;Questo concetto pu&#xf2; essere introdotto parlando degli operatori per il controllo di flusso (v.)%nl;%nl;Ci sono molte affint&#xe0; con lo Stoicismo (v.)</notes>
@@ -5643,21 +5736,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/343b2829c0a8010b00a5d7f212661af7</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="85" layerID="6" created="1293661284101" x="-3140.2437"
-        y="91.80371" width="109.07617" height="530.68164"
+    <child ID="85" layerID="6" created="1293661284101" x="-3174.947"
+        y="251.1377" width="135.16309" height="367.34766"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/343b282ac0a8010b00a5d7f246767bc1</URIString>
-        <point1 x="-3031.6675" y="621.98535"/>
-        <point2 x="-3139.7437" y="92.30371"/>
+        <point1 x="-3040.284" y="617.98535"/>
+        <point2 x="-3174.447" y="251.6377"/>
         <ID1 xsi:type="node">60</ID1>
         <ID2 xsi:type="node">84</ID2>
     </child>
     <child ID="454" label="Atomisti" layerID="6" created="1297288381307"
-        x="-3200.1323" y="-182.31404" width="110.200005" height="49.0"
+        x="-3340.7988" y="23.01929" width="110.200005" height="49.0"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Come gli atomisti, il C'hi++ non cerca di spiegare la causa finale dell'Esistenza perch&#xe9; assume che questa, se esiste, non pu&#xf2; essere descritta e nemmeno concepita all'interno di questa realt&#xe0;.%nl;%nl;Inoltre, non ha bisogno di identificare una causa dell'Esistenza, perch&#xe9; la sua cosmogonia, da sola, basta a dimostrare che &#xe8; necessario (o, quanto meno, prudente) comportarsi bene gli %sp;uni nei confronti degli altri.%nl;Se si accetta la ciclicit&#xe0; eterna dell'Esistenza (ed &#xe8; un dogma che richiede meno atti di fede di quanti ne richiedano quelli di altre religioni), si accetta, implicitamente, la possibilit&#xe0; di essere "gli altri" in un ciclo successivo e quindi la sostanziale convenienza egoistica dell'altruismo.%nl;Lo so che &#xe8; un paradosso, ma come dir&#xf2; altrove, i paradossi sono la crittografia di Dio...</notes>
         <fillColor>#C6E8FF</fillColor>
@@ -5667,34 +5760,34 @@
         <URIString>http://vue.tufts.edu/rdf/resource/0c6bff65c0a8010b003b6dbdcd0d5f2c</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="455" layerID="6" created="1297288454817" x="-3146.0"
-        y="-133.875" width="1.4084473" height="169.625"
+    <child ID="455" layerID="6" created="1297288454817" x="-3272.6152"
+        y="70.6792" width="71.822266" height="124.36035"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/0c6bff66c0a8010b003b6dbd7a3e902b</URIString>
-        <point1 x="-3145.5" y="35.25"/>
-        <point2 x="-3145.0916" y="-133.375"/>
+        <point1 x="-3201.293" y="194.53955"/>
+        <point2 x="-3272.1152" y="71.1792"/>
         <ID1 xsi:type="node">84</ID1>
         <ID2 xsi:type="node">454</ID2>
     </child>
-    <child ID="478" layerID="6" created="1298063399946" x="-3859.112"
-        y="650.3223" width="757.14795" height="4.6625977"
+    <child ID="478" layerID="6" created="1298063399946" x="-3863.1123"
+        y="646.3224" width="757.1482" height="4.6625366"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3a9ffd90c0a8010b01f84d01f1d89805</URIString>
-        <point1 x="-3102.464" y="650.8223"/>
-        <point2 x="-3858.612" y="654.4849"/>
+        <point1 x="-3106.4639" y="646.8224"/>
+        <point2 x="-3862.612" y="650.4849"/>
         <ID1 xsi:type="node">60</ID1>
         <ID2 xsi:type="node">590</ID2>
     </child>
-    <child ID="725" layerID="6" created="1369088482178" x="-3997.8892"
-        y="-334.3443" width="351.94458" height="597.07324"
+    <child ID="725" layerID="6" created="1369088482178" x="-4001.8892"
+        y="-338.3443" width="351.94458" height="597.07324"
         strokeWidth="0.0" autoSized="false" xsi:type="group">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -5834,47 +5927,34 @@
             <ID2 xsi:type="node">133</ID2>
         </child>
     </child>
-    <child ID="74" layerID="6" created="1293660811761" x="-3683.6113"
-        y="122.149414" width="622.80493" height="500.33643"
+    <child ID="74" layerID="6" created="1293660811761" x="-3687.6118"
+        y="118.149414" width="622.8054" height="500.33643"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/3434ba87c0a8010b00a5d7f2c52e27b4</URIString>
-        <point1 x="-3061.3064" y="621.98584"/>
-        <point2 x="-3683.1113" y="122.649414"/>
+        <point1 x="-3065.3062" y="617.98584"/>
+        <point2 x="-3687.1116" y="118.649414"/>
         <ID1 xsi:type="node">60</ID1>
         <ID2 xsi:type="node">70</ID2>
     </child>
-    <child ID="466" layerID="6" created="1297978845894" x="-3570.2412"
-        y="678.4169" width="507.04126" height="381.66504"
+    <child ID="466" layerID="6" created="1297978845894" x="-3574.2415"
+        y="674.4169" width="507.04102" height="381.66504"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/35a08373c0a8010b016b4be5148dc5a3</URIString>
-        <point1 x="-3063.7002" y="678.9169"/>
-        <point2 x="-3569.7415" y="1059.5819"/>
+        <point1 x="-3067.7004" y="674.9169"/>
+        <point2 x="-3573.7415" y="1055.5819"/>
         <ID1 xsi:type="node">60</ID1>
         <ID2 xsi:type="node">465</ID2>
     </child>
-    <child ID="110" layerID="6" created="1293662815249" x="-3012.2598"
-        y="115.16699" width="251.79175" height="507.31885"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="2" xsi:type="link">
-        <strokeColor>#8C8F72</strokeColor>
-        <textColor>#404040</textColor>
-        <font>Arial-plain-11</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/3450427dc0a8010b00a5d7f2e78caa16</URIString>
-        <point1 x="-3011.7598" y="621.98584"/>
-        <point2 x="-2760.968" y="115.66699"/>
-        <ID1 xsi:type="node">60</ID1>
-        <ID2 xsi:type="node">107</ID2>
-    </child>
-    <child ID="728" layerID="6" created="1369088560146" x="-2560.3276"
-        y="51.211746" width="744.5985" height="350.41385"
+    <child ID="728" layerID="6" created="1369088560146" x="-2426.3276"
+        y="11.211746" width="744.5985" height="350.41385"
         strokeWidth="0.0" autoSized="false" xsi:type="group">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -6022,73 +6102,60 @@
             <ID2 xsi:type="node">498</ID2>
         </child>
     </child>
-    <child ID="686" layerID="6" created="1369084908405" x="-2986.5703"
-        y="293.76843" width="459.08228" height="328.7173"
+    <child ID="686" layerID="6" created="1369084908405" x="-2986.5337"
+        y="253.76843" width="589.198" height="365.98816"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c3d5837c7f00000101cc6a6aa979f903</URIString>
-        <point1 x="-2986.0703" y="621.9857"/>
-        <point2 x="-2527.988" y="294.26843"/>
+        <point1 x="-2986.0337" y="619.2566"/>
+        <point2 x="-2397.8357" y="254.26843"/>
         <ID1 xsi:type="node">60</ID1>
         <ID2 xsi:type="node">685</ID2>
     </child>
-    <child ID="76" layerID="6" created="1293660838781" x="-2961.1213"
-        y="659.62354" width="789.5044" height="117.90466"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="2" xsi:type="link">
-        <strokeColor>#8C8F72</strokeColor>
-        <textColor>#404040</textColor>
-        <font>Arial-plain-11</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/3434ba87c0a8010b00a5d7f2e2c9ac39</URIString>
-        <point1 x="-2960.6213" y="660.12354"/>
-        <point2 x="-2172.117" y="777.0282"/>
-        <ID1 xsi:type="node">60</ID1>
-        <ID2 xsi:type="node">75</ID2>
-    </child>
-    <child ID="516" layerID="6" created="1362259824929" x="-2601.1187"
-        y="802.89417" width="456.677" height="281.4087"
+    <child ID="516" layerID="6" created="1362259824929" x="-2605.1182"
+        y="798.89404" width="456.677" height="281.4087"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/2d04edce7f00000100f3c66ee1faec76</URIString>
-        <point1 x="-2144.9417" y="803.39417"/>
-        <point2 x="-2600.6187" y="1083.8029"/>
+        <point1 x="-2148.9414" y="799.39404"/>
+        <point2 x="-2604.6184" y="1079.8027"/>
         <ID1 xsi:type="node">75</ID1>
         <ID2 xsi:type="node">514</ID2>
     </child>
     <child ID="515" label="conseguenza" layerID="6"
-        created="1362259587151" x="-2617.9993" y="396.708"
-        width="405.76855" height="682.64453" strokeWidth="1.0"
+        created="1362259587151" x="-2618.7388" y="356.1775"
+        width="536.59546" height="719.7102" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/2d04edce7f00000100f3c66ea71a5a27</URIString>
-        <point1 x="-2617.4993" y="1078.8525"/>
-        <point2 x="-2212.7307" y="397.208"/>
+        <point1 x="-2618.2385" y="1075.3877"/>
+        <point2 x="-2082.643" y="356.6775"/>
         <ID1 xsi:type="node">514</ID1>
         <ID2 xsi:type="node">496</ID2>
     </child>
-    <child ID="82" layerID="6" created="1293661191518" x="-3024.908"
-        y="678.41797" width="27.059082" height="512.08984"
+    <child ID="82" layerID="6" created="1293661191518" x="-3028.9082"
+        y="674.41406" width="27.05957" height="512.09375"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/343b2829c0a8010b00a5d7f2d9d11000</URIString>
-        <point1 x="-3024.408" y="678.91797"/>
-        <point2 x="-2998.3489" y="1190.0078"/>
+        <point1 x="-3028.4082" y="674.91406"/>
+        <point2 x="-3002.3486" y="1186.0078"/>
         <ID1 xsi:type="node">60</ID1>
         <ID2 xsi:type="node">81</ID2>
     </child>
     <child ID="81" label="Questioni&#xa;irrisolte" layerID="6"
-        created="1293661161841" x="-3053.931" y="1190.009" width="113.0"
+        created="1293661161841" x="-3057.931" y="1186.009" width="113.0"
         height="36.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>Le questioni irrisolte sono una delle principali differenze fra il C'hi++ e le altre filosofie/mistiche/religioni.%nl;Usualmente, un filosofo o un mistico cerca di dimostrare che il suo paradigma pu&#xf2; adattarsi a TUTTI i contesti e a tutti i concetti possibili.%nl;Questo spesso porta a forzature che indeboliscono la coerenza interna del sistema, generando paradossi.%nl;(Per un esempio, la bont&#xe0; di Dio, secondo i cristiani: se Dio &#xe8; buono, perch&#xe9; permette il male?) %nl;Il C'hi++, al contrario, accettando il concetto informatico di "known bug" e l'utilizzo di un TODO, lascia aperte le questioni che non &#xe8; possibile risolvere nella "versione" corrente, dichiarandole come tali.%nl;Sar&#xe0; compito degli "sviluppatori" delle versioni successive, cercare di sanare questi "bachi", modificando se necessario il paradigma.%nl;E' rischioso, ma se anche non si operasse cos&#xec;, le incongrenze produrrebbero o delle eresie o degli scismi.</notes>
         <fillColor>#83CEFF</fillColor>
@@ -6099,7 +6166,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="88" label="Lo Zen di &#xa;ogni istante" layerID="6"
-        created="1293661780171" x="-3313.2117" y="1241.5872"
+        created="1293661780171" x="-3317.2117" y="1237.5872"
         width="118.3" height="56.35608" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>C'&#xe8; un Koan Zen in cui il maestro sostiene che quando mangia, mangia; quando dorme, dorme (o qualcosa di simile).%nl;Perch&#xe9; lo Zen di ogni istante &#xe8; cos&#xec; importante per i buddisti?%nl;Russell (SDFO, 147) sostiene che molti filosofi di sua conoscenza quando lavorano si scordano di mangiare e, se lo fanno, nel frattempo leggono un libro.%nl;Cosa c'&#xe8; di male in questo?%nl;Qual'&#xe8; il beneficio che traiamo dalla concentrazione? %nl;E' un benficio fisico (leggere mentre si mangia fa male, cos&#xec; come saltare i pasti) o &#xe8; un beneficio spirituale (viviamo intensamente ogni istante della nostra esistenza)?%nl;%nl;</notes>
@@ -6111,7 +6178,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="89" label="Autocoscienza&#xa;e simulazione" layerID="6"
-        created="1293661817499" x="-2656.5315" y="1552.5076"
+        created="1293661817499" x="-2660.5315" y="1548.5076"
         width="160.0" height="62.205994" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Dawkins, GE, p. 64, nota 4%nl;Perch&#xe9; la capacit&#xe0; di simulare &#xe8; legata alla coscienza di s&#xe9;?%nl;E' vero, tanto per cominciare? Se s&#xec;, dove sta scritto? Come l'hanno stabilito?%nl;Bizzarro come, lato computer, la capacit&#xe0; di simulazione sia strettamente legata a giochi tipo Doom, in cui il protagonista E' all'interno del gioco.%nl;Prima di allora, Mario Bros. o Pac-Man, o Tetris, erano "simbolici" (nel senso di dare una rappresentazione simbolica della realt&#xe0;) e non davano l'illusione di fare parte del gioco, anche se ci si poteva comunque identificare con il Pac-Man o con il Mario di turno.%nl;L'evoluzione della grafica (e quindi della simulazione), &#xe8; venuta con i giochi "sparatutto".%nl;Bisognerebe capire se l'evoluzione del SW sia stata funzionale all'evoluzione dell'HW (e quindi ala sua vendita) o se sia vero il contrario, ovvero che l'HW si &#xe8; evoluto per consentire giochi sempre pi&#xf9; complessi.%nl;Bisognerebbe capire anche se questo abbia dei legami con quello che &#xe8; avvenuto all'Uomo.%nl;%nl;Pensaimoci ancora un po': c'&#xe8; una bella differenza, fra la morte di Super Mario e la morte di un soldato di Call of Duty: nel primo caso, muore qualcosa che non sei tu, ma solo un tuo avatar (utilizzo il termine impropriamente, ma il senso &#xe8; chiaro, almeno per me); nel secondo caso, quello che muore &#xe8; sempre un simbolo, una proiezione, ma &#xe8; pi&#xf9; "vicina" a te di quanto lo fosse il personaggio di Prince of Persia.%nl;Nel mondo reale le cose stanno evolvendo in maniera simile: il "gioco" &#xe8; diventato sempre pi&#xf9; soggettivo e la paura della morte, sempre pi&#xf9; grande.%nl;Dobbiamo ritornare a Pac-Man?</notes>
@@ -6123,7 +6190,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="228" label="Bodhisattva" layerID="6"
-        created="1294788051272" x="-2963.988" y="1654.3247"
+        created="1294788051272" x="-2967.988" y="1650.3247"
         width="119.399994" height="50.901306" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>"Lo Spazionismo non considera l'ipotesi dell'illuminato o Bodhisattva.%nl;Dovrebbe?"%nl;%nl;Questo scrivevo, nella mia vita precedente (un anno fa).%nl;Adesso questa frase mi stupisce, perch&#xe9; mi sembra chiaro che il C'hi++ ha una figura assimilabile al Bodhisattva buddista, ed &#xe8; quello che potremmo chiamare (vedi link) "il desto", ovvero colui che ha compreso la Verit&#xe0; e che quindi &#xe8; uscito dalla "caverna" delle emozioni. %nl;%nl;A titolo personale, per&#xf2;, vorrei dire che l'essermi comportato da "desto" nel corso del devastante autunno 2012 mi ha procurato un grave stato di ipertensione.%nl;Mi chiedo se non sarebbe stato meglio incazzarsi e/o addolorarsi (secondo i casi), in vece che cercare costantemente un equilibrio di giudizio.%nl;%nl;Altra ipotesi, pi&#xf9; credibile, &#xe8; che io non sia del tutto "desto"; la mia illuminazione &#xe8; solo parziale e quindi sono ancora con un piede nella caverna. %nl;</notes>
@@ -6135,7 +6202,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="87" label="La Caverna" layerID="6"
-        created="1293661706153" x="-2970.6025" y="1486.3955"
+        created="1293661706153" x="-2974.6025" y="1482.3955"
         width="96.27806" height="50.901306" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <fillColor>#C6E8FF</fillColor>
@@ -6146,7 +6213,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="514" label="I post-it" layerID="6"
-        created="1362258813776" x="-2679.991" y="1077.5723"
+        created="1362258813776" x="-2683.991" y="1073.5723"
         width="96.27806" height="50.901306" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Con il termine "Post-it" si intende qui la memoria dell'Universo.%nl;Ogni volta che capisci di aver fatto una cosa o bene o male, crei un "Post-it", una sorta di nota a margine che registrer&#xe0; l'esito dell'azione (o della non-azione) affinch&#xe9; nei cicli successivi non si compia lo stesso errore o si faccia una certa cosa che si &#xe8; dimostrata favorevole.%nl;Questo precetto, per&#xf2;, ci causa qualche problema..%nl;%nl;Ragionavo l'altro giorno sul fatto che lo Spazionismo chiede due (non uno) atti di fede: il primo &#xe8; la compressione dell'Universo dopo l'espansione; il secondo sono i Post-it, perch&#xe9; non &#xe8; chiaro, in assenza di elementi metafisici, dove si conservi il ricordo degli errori dei cicli precedenti.%nl;D'altro canto, per&#xf2;, ci sono degli elementi che lasciano ipotizzare la possibilit&#xe0; che i Post-it esistano: i deja-vu, per esempio (che hanno anche il trattino fra le due parole!), o gli strani atti che compiamo precedendo (o pre-vedendo) gli eventi.%nl;%nl;Non mi riferisco a ci&#xf2; che pu&#xf2; essere desunto grazie all'esperienza (tipo: sono in barca, vedo le nuvole all'orizzonte e vado al cesso perch&#xe9; so che fra poco arriver&#xe0; una buriana e, se non vado ora, me la dovr&#xf2; tenere), ma ci&#xf2; che si fa apparentemente senza un motivo e che poi si rivela decisivo per come vanno le cose.%nl;Il fatto che io mi sia messo il loden per uscire con mio fratello, il 24 dicembre del 2005, per esempio, o anche il fatto che, prima dell'11 settembre 2001, io sognassi spesso scene simili a quelle che abbiamo visto in TV (talvota come spettatore, talvolta come passeggero dell'aereo), ma che, dopo di allora, non le abbia pi&#xf9; sognate.%nl;</notes>
@@ -6158,7 +6225,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="570" label="Coscienza" layerID="6"
-        created="1367959521494" x="-2796.5117" y="1384.5566"
+        created="1367959521494" x="-2800.5117" y="1380.5566"
         width="121.2" height="57.799995" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Per quanto riguarda il C'hi++, non si dovr&#xe0; mai parlare di anima, ma di coscienza.%nl;L'anima &#xe8; qualcosa di indefinito (cfr. Aristotele, in particolare p. 180 SDFO), mentre la coscienza &#xe8;, in un certo senso, oggettiva.%nl;L'anima non sappiamo se esista, la coscienza, s&#xec;.%nl;La coscienza pu&#xf2; essere assimilata allo "spirito" aristotelico (v.) e alla "natura Buddha" dello Zen.%nl;Noi umani ce l'abbiamo (che la si usi o no), i cani e gli altri animali, "mu"..%nl;</notes>
@@ -6175,7 +6242,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="579" label="La vita esatta" layerID="6"
-        created="1367960549311" x="-3203.72" y="1388.1023" width="135.0"
+        created="1367960549311" x="-3207.72" y="1384.1023" width="135.0"
         height="59.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>Parlare di vita esatta potrebbe lasciar presupporre %sp;che ci sia un fine ultimo e, soprattutto, un esattore, il che non &#xe8; per niente certo, anche se alcuni indizi lo lascerebbero supporre (p.es. gli orarii multipli di 11).%nl;Per quanto ne sappiamo, potrebbe non esserci una vita esatta, nel senso di "confacente alle intenzioni del Creatore", ma solo una serie infinita di esistenze caratterizzate da un diverso numero e/o variet&#xe0; di errori.%nl;Meglio allora pensare alla vita esatta come a una vita che segue pienamente i precetti del C'hi++, che non sono la volont&#xe0; di Dio, ma solo la migloire approssimazione che riusciamo a produrre.%nl;</notes>
         <fillColor>#C6E8FF</fillColor>
@@ -6190,7 +6257,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="608" label="Fine Ultimo dell'Universo" layerID="6"
-        created="1367965488093" x="-3370.8352" y="1568.2722"
+        created="1367965488093" x="-3374.8352" y="1564.2722"
         width="204.79999" height="64.8" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>L'idea aristotelica (SDFO, 191) che tutto volga verso un fine e che le azioni, esatte o errate, possano accelerare o ritardare questo processo &#xe8; condivisibile e coerente con il C'hi++; l'ipotesi che tutto ci&#xf2; sia "buono", nel senso in cui noi intendiamo questo termine, mi sembra un po' meno credibile.%nl;Per quello che ne possiamo sapere, il Fine Ultimo potrebbe essere una Grande Inculata, dal nostro punto di vista.%nl;D'altro canto, ci deve essere un motivo se l'Uno non &#xe8; restato Uno; ci sar&#xe0; un motivo, se l'Immancabile Testa di Pera (cfr. Defecatio) a un certo punto ha deciso per la secessione.%nl;La coincidenza fra il "buono" umano e il "buono" divino mi sembra un errore di impostazione logica.%nl;</notes>
@@ -6206,7 +6273,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="585" label="Immortallit&#xe0; dell'anima" layerID="6"
-        created="1367961693056" x="-2541.91" y="1311.9341" width="190.0"
+        created="1367961693056" x="-2545.91" y="1307.9341" width="190.0"
         height="64.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>Ci&#xf2; che di noi sopravvive alla morte (se qualcosa sopravvive) &#xe8; impersonale.%nl;L'unico problema introdotto da questa, che mi sembra la soluzione pi&#xf9; coerente &#xe8;: come si mantiene l'esperienza fra un ciclo e l'altro?%nl;Come faccio a "intuire" (non "sapere) ci&#xf2; che sta per succedere?</notes>
         <fillColor>#C6E8FF</fillColor>
@@ -6221,7 +6288,7 @@
     </child>
     <child ID="101"
         label="Possibili cause biologiche &#xa;dell'autocoscienza"
-        layerID="6" created="1293662323146" x="-2567.5537" y="1720.9951"
+        layerID="6" created="1293662323146" x="-2571.5537" y="1716.9951"
         width="206.6" height="51.600006" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>L'autocoscienza &#xe8; una ESS, perch&#xe9; un essere che si distingue dagli altri ha pi&#xf9; stimoli a preservarsi e quindi a trasmettere i suoi genii.%nl;%nl;La capacit&#xe0; di simulazione pu&#xf2; aiutare la coscienza di s&#xe9; perch&#xe9; ci consente di avere uno specchio immaginario (e quindi simulato) in cui riconoscerci.%nl;Se cos&#xec; non fosse, non potremmo vedere noi stessi, ma solo alcune parti del nostro corpo.%nl;%nl;(Da notare come l'uscita da s&#xe9;, sia una strategia vincente anche nelle regate, dove &#xe8; importante saper vedere (e quindi simulare mentalmente) il campo di gara dall'alto e non dal groviglio di alberi e sartie che c'&#xe8; a pelo d'acqua.)%nl;%nl;Se tutto questo fosse vero, per&#xf2;, potrebbe non essere corretta la supposizione che gli animali siano TUTTI macchine parallele.%nl;I grilli forse s&#xec;, ma i lupi?%nl;Come fai a diventare i capo-branco, se non ti distingui dagli altri?%nl;</notes>
@@ -6232,151 +6299,151 @@
         <URIString>http://vue.tufts.edu/rdf/resource/344da042c0a8010b00a5d7f2b2261185</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="90" layerID="6" created="1293662030998" x="-2993.4895"
-        y="1225.5088" width="65.32764" height="261.71582"
+    <child ID="90" layerID="6" created="1293662030998" x="-2997.4897"
+        y="1221.5088" width="65.328125" height="261.71777"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/34442d48c0a8010b00a5d7f2db5bc787</URIString>
-        <point1 x="-2992.9895" y="1226.0088"/>
-        <point2 x="-2928.6619" y="1486.7246"/>
+        <point1 x="-2996.9897" y="1222.0088"/>
+        <point2 x="-2932.6616" y="1482.7266"/>
         <ID1 xsi:type="node">81</ID1>
         <ID2 xsi:type="node">87</ID2>
     </child>
-    <child ID="92" layerID="6" created="1293662034569" x="-3201.98"
-        y="1220.7048" width="150.21362" height="36.906982"
+    <child ID="92" layerID="6" created="1293662034569" x="-3205.9802"
+        y="1216.7046" width="150.21387" height="36.907104"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/34442d49c0a8010b00a5d7f28ec1f703</URIString>
-        <point1 x="-3052.2664" y="1221.2048"/>
-        <point2 x="-3201.48" y="1257.1118"/>
+        <point1 x="-3056.2664" y="1217.2047"/>
+        <point2 x="-3205.4802" y="1253.1118"/>
         <ID1 xsi:type="node">81</ID1>
         <ID2 xsi:type="node">88</ID2>
     </child>
-    <child ID="513" layerID="6" created="1362258813776" x="-2944.6855"
-        y="1114.6162" width="271.2229" height="78.60205"
+    <child ID="513" layerID="6" created="1362258813776" x="-2948.686"
+        y="1110.6162" width="271.22314" height="78.60205"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/2d04edca7f00000100f3c66e018a20b1</URIString>
-        <point1 x="-2944.1858" y="1192.7183"/>
-        <point2 x="-2673.963" y="1115.1162"/>
+        <point1 x="-2948.186" y="1188.7183"/>
+        <point2 x="-2677.963" y="1111.1162"/>
         <ID1 xsi:type="node">81</ID1>
         <ID2 xsi:type="node">514</ID2>
     </child>
-    <child ID="580" layerID="6" created="1367960549311" x="-3118.0386"
-        y="1225.509" width="109.18823" height="164.38135"
+    <child ID="580" layerID="6" created="1367960549311" x="-3122.0386"
+        y="1221.509" width="109.18872" height="164.38184"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80d1e9457f00000101a8c22beccfbc9a</URIString>
-        <point1 x="-3009.35" y="1226.009"/>
-        <point2 x="-3117.5383" y="1389.3904"/>
+        <point1 x="-3013.35" y="1222.009"/>
+        <point2 x="-3121.5388" y="1385.3909"/>
         <ID1 xsi:type="node">81</ID1>
         <ID2 xsi:type="node">579</ID2>
     </child>
-    <child ID="581" layerID="6" created="1367961158009" x="-2975.018"
-        y="1225.509" width="208.2649" height="163.82568"
+    <child ID="581" layerID="6" created="1367961158009" x="-2979.018"
+        y="1221.509" width="208.2649" height="163.82568"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80d87fca7f00000101a8c22b1676db05</URIString>
-        <point1 x="-2974.5183" y="1226.009"/>
-        <point2 x="-2767.2534" y="1388.8347"/>
+        <point1 x="-2978.5183" y="1222.009"/>
+        <point2 x="-2771.2534" y="1384.8347"/>
         <ID1 xsi:type="node">81</ID1>
         <ID2 xsi:type="node">570</ID2>
     </child>
     <child ID="571" label="vedi anche" layerID="6"
-        created="1367959521494" x="-2711.7332" y="1439.3032"
-        width="108.4209" height="115.68286" strokeWidth="1.0"
+        created="1367959521494" x="-2715.7334" y="1435.303"
+        width="108.421875" height="115.683105" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80d1e9447f00000101a8c22b6eeab0ac</URIString>
-        <point1 x="-2711.2332" y="1439.8032"/>
-        <point2 x="-2603.8123" y="1554.4861"/>
+        <point1 x="-2715.2334" y="1435.803"/>
+        <point2 x="-2607.8115" y="1550.4861"/>
         <ID1 xsi:type="node">570</ID1>
         <ID2 xsi:type="node">89</ID2>
     </child>
-    <child ID="102" layerID="6" created="1293662404841" x="-2556.437"
-        y="1613.0422" width="75.23462" height="108.892334"
+    <child ID="102" layerID="6" created="1293662404841" x="-2560.4375"
+        y="1609.0417" width="75.23462" height="108.89282"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/344da042c0a8010b00a5d7f204f4ec25</URIString>
-        <point1 x="-2555.9373" y="1613.5422"/>
-        <point2 x="-2481.7026" y="1721.4346"/>
+        <point1 x="-2559.9375" y="1609.5417"/>
+        <point2 x="-2485.703" y="1717.4346"/>
         <ID1 xsi:type="node">89</ID1>
         <ID2 xsi:type="node">101</ID2>
     </child>
-    <child ID="229" layerID="6" created="1294788060685" x="-2920.2246"
-        y="1536.6523" width="13.694824" height="118.291016"
+    <child ID="229" layerID="6" created="1294788060685" x="-2924.2246"
+        y="1532.6523" width="13.694824" height="118.291016"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/776422fdc0a8010d011c34fbebd2da54</URIString>
-        <point1 x="-2919.7246" y="1537.1523"/>
-        <point2 x="-2907.0298" y="1654.4434"/>
+        <point1 x="-2923.7246" y="1533.1523"/>
+        <point2 x="-2911.0298" y="1650.4434"/>
         <ID1 xsi:type="node">87</ID1>
         <ID2 xsi:type="node">228</ID2>
     </child>
     <child ID="588" label="ipotesi" layerID="6" created="1367961864353"
-        x="-2614.267" y="1126.0806" width="144.1565" height="187.47998"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="2" xsi:type="link">
+        x="-2618.2673" y="1122.0806" width="144.15625"
+        height="187.47998" strokeWidth="1.0" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80e1bb0a7f00000101a8c22b6543b060</URIString>
-        <point1 x="-2470.6108" y="1313.0605"/>
-        <point2 x="-2613.7673" y="1126.5806"/>
+        <point1 x="-2474.611" y="1309.0605"/>
+        <point2 x="-2617.7673" y="1122.5806"/>
         <ID1 xsi:type="node">585</ID1>
         <ID2 xsi:type="node">514</ID2>
     </child>
-    <child ID="587" layerID="6" created="1367961737079" x="-2682.525"
-        y="1361.992" width="158.97119" height="39.00171"
+    <child ID="587" layerID="6" created="1367961737079" x="-2686.5247"
+        y="1357.9918" width="158.97119" height="39.00171"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80e1bb0a7f00000101a8c22b64f2dcef</URIString>
-        <point1 x="-2682.025" y="1400.4937"/>
-        <point2 x="-2524.0537" y="1362.492"/>
+        <point1 x="-2686.0247" y="1396.4935"/>
+        <point2 x="-2528.0535" y="1358.4918"/>
         <ID1 xsi:type="node">570</ID1>
         <ID2 xsi:type="node">585</ID2>
     </child>
-    <child ID="609" layerID="6" created="1367965488093" x="-3246.1624"
-        y="1445.1047" width="90.21875" height="124.53516"
+    <child ID="609" layerID="6" created="1367965488093" x="-3250.1626"
+        y="1441.1052" width="90.21875" height="124.53516"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/811dc3f97f00000100650016529c0353</URIString>
-        <point1 x="-3156.4436" y="1445.6047"/>
-        <point2 x="-3245.6624" y="1569.1399"/>
+        <point1 x="-3160.4438" y="1441.6052"/>
+        <point2 x="-3249.6626" y="1565.1404"/>
         <ID1 xsi:type="node">579</ID1>
         <ID2 xsi:type="node">608</ID2>
     </child>
     <child ID="590" label="Il libro" layerID="6" created="1367962045532"
-        x="-3974.9456" y="635.4667" width="116.333496" height="38.6"
+        x="-3978.9456" y="631.4667" width="116.333496" height="38.6"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#83CEFF</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -6386,7 +6453,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="593" label="Non usare il termine Dio" layerID="6"
-        created="1367962199773" x="-4272.9688" y="598.69904"
+        created="1367962199773" x="-4276.9688" y="594.69904"
         width="191.0" height="49.0" strokeWidth="4.0" autoSized="false" xsi:type="node">
         <notes>Dio non &#xe8; detto che ci sia, si deve sempre parlare dell'Uno, che c'&#xe8; sicuramente, dato che &#xe8; da l&#xec; che viene tutto.%nl;Se si parla di Dio, lo si deve fare nel senso stretto di "significato dell'Esistenza" (v. 10C)%nl;</notes>
         <fillColor>#C6E8FF</fillColor>
@@ -6397,7 +6464,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="595" label="L'utente &#xe8; hardware vivente" layerID="6"
-        created="1367962388988" x="-4144.5415" y="466.8897"
+        created="1367962388988" x="-4148.5415" y="462.8897"
         width="209.6" height="49.0" strokeWidth="4.0" autoSized="false" xsi:type="node">
         <notes>Perifrasi dell'affermazione di Aristotele: Lo schiavo &#xe8; un utensile vivente" %nl;(SDFO, 183)%nl;</notes>
         <fillColor>#C6E8FF</fillColor>
@@ -6408,7 +6475,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="477" label="Non esplicitare" layerID="6"
-        created="1298063399946" x="-4254.958" y="772.52045"
+        created="1298063399946" x="-4258.958" y="768.52045"
         width="138.0" height="49.0" strokeWidth="4.0" autoSized="false" xsi:type="node">
         <notes>Non si devono MAI esplicitare le relazioni fra i precetti del C'hi++ e la vita reale.%nl;Si possono esplicitare le relazioni fra la programmazione e, per esempio, l'Ikebarba, cos&#xec; come il Libro dei Cinque Anelli associa carpentiere e stratega, ma l'ambito di applicazione dei precetti NON deve MAI uscire da ci&#xf2; che &#xe8; strettamente inerente al tema trattato.%nl;%nl;(sia perch&#xe9; ho titoli per parlare di programmazione, ma non di sociologia; sia perch&#xe9; esplicitare banalizza le affermazioni)%nl;%nl;%nl;</notes>
         <fillColor>#C6E8FF</fillColor>
@@ -6419,7 +6486,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="623" label="Non dare mai &#xa;nulla per &quot;vero&quot;"
-        layerID="6" created="1368051466662" x="-3958.164" y="795.2662"
+        layerID="6" created="1368051466662" x="-3962.164" y="791.2662"
         width="153.54004" height="49.0" strokeWidth="4.0"
         autoSized="false" xsi:type="node">
         <notes>Se non te la ricordi, rileggiti la frase di Russell sulla verit&#xe0; delle teorie e la nota a pag. 240 di SDFO riguardo gli scettici.</notes>
@@ -6431,7 +6498,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="640" label="Contesto storico" layerID="6"
-        created="1368140065947" x="-3866.7566" y="471.89917"
+        created="1368140065947" x="-3870.7566" y="467.89917"
         width="153.54004" height="49.0" strokeWidth="4.0"
         autoSized="false" xsi:type="node">
         <notes>Utilizzare la %sp;nota a pagina 233 di SDFO: confusione che genera incertezza, che genera egoismo, che genera scetticissmo.%nl;Utilizzare anche la nota II a pag, 239, riguardo l'esaltazione dell'ignorante.%nl;%nl;Potrebbe essere messo all'inizio del capitolo sul C++, quando si parla di principii, spiegando che i principii, ovvero dei concetti condivisi che si d&#xe0;nno per scontati.%nl;Togli i principii, come fece Timone (v.) e otterrai il caos, perch&#xe9; non sar&#xe0; pi&#xf9; possibile costruire.%nl;</notes>
@@ -6443,156 +6510,72 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="591" label="nota narrativa" layerID="6"
-        created="1367962149015" x="-4147.979" y="673.56665"
-        width="195.17969" height="103.61865" strokeWidth="1.0"
+        created="1367962149015" x="-4151.979" y="669.56665"
+        width="195.17993" height="103.61865" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80eac6277f00000101a8c22b1b8c42c9</URIString>
-        <point1 x="-3953.2993" y="674.06665"/>
-        <point2 x="-4147.479" y="776.6853"/>
+        <point1 x="-3957.299" y="670.06665"/>
+        <point2 x="-4151.479" y="772.6853"/>
         <ID1 xsi:type="node">590</ID1>
         <ID2 xsi:type="node">477</ID2>
     </child>
     <child ID="592" label="nota narrativa" layerID="6"
-        created="1367962199773" x="-4091.8584" y="633.12634"
-        width="117.41284" height="15.096802" strokeWidth="1.0"
+        created="1367962199773" x="-4095.8586" y="629.12634"
+        width="117.413086" height="15.096802" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80eac6277f00000101a8c22b61333fe0</URIString>
-        <point1 x="-3974.9456" y="647.72314"/>
-        <point2 x="-4091.3584" y="633.62634"/>
+        <point1 x="-3978.9456" y="643.72314"/>
+        <point2 x="-4095.3586" y="629.62634"/>
         <ID1 xsi:type="node">590</ID1>
         <ID2 xsi:type="node">593</ID2>
     </child>
     <child ID="594" label="finta citazione" layerID="6"
-        created="1367962388988" x="-4022.1235" y="514.9624"
-        width="91.31909" height="121.004395" strokeWidth="1.0"
+        created="1367962388988" x="-4026.1233" y="510.9624"
+        width="91.31885" height="121.004395" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/80eac6277f00000101a8c22b4d9aace7</URIString>
-        <point1 x="-3931.3044" y="635.4668"/>
-        <point2 x="-4021.6235" y="515.4624"/>
+        <point1 x="-3935.3044" y="631.4668"/>
+        <point2 x="-4025.6233" y="511.4624"/>
         <ID1 xsi:type="node">590</ID1>
         <ID2 xsi:type="node">595</ID2>
     </child>
     <child ID="622" label="nota narrativa" layerID="6"
-        created="1368051466662" x="-3933.626" y="673.5664" width="68.0"
-        height="122.36719" strokeWidth="1.0" autoSized="false"
+        created="1368051466662" x="-3937.626" y="669.5664" width="68.0"
+        height="122.36914" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/863b340c7f0000010150b06b3e4dea6f</URIString>
-        <point1 x="-3912.64" y="674.0664"/>
-        <point2 x="-3886.6123" y="795.4336"/>
+        <point1 x="-3916.64" y="670.0664"/>
+        <point2 x="-3890.612" y="791.43555"/>
         <ID1 xsi:type="node">590</ID1>
         <ID2 xsi:type="node">623</ID2>
     </child>
     <child ID="639" label="nota narrativa" layerID="6"
-        created="1368140065947" x="-3901.8267" y="519.5576"
-        width="93.39868" height="116.40918" strokeWidth="1.0"
+        created="1368140065947" x="-3905.827" y="515.5581"
+        width="93.39844" height="116.40869" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/8b8747ab7f0000010163f47e1f1dfa8f</URIString>
-        <point1 x="-3901.327" y="635.4668"/>
-        <point2 x="-3808.9282" y="520.0576"/>
+        <point1 x="-3905.327" y="631.4668"/>
+        <point2 x="-3812.9285" y="516.0581"/>
         <ID1 xsi:type="node">590</ID1>
         <ID2 xsi:type="node">640</ID2>
     </child>
-    <child ID="107" label="Etica" layerID="6" created="1293662754275"
-        x="-2814.7488" y="64.32265" width="132.99341" height="51.34424"
-        strokeWidth="2.0" autoSized="false" xsi:type="node">
-        <notes>Dio non ha grossa importanza, se c'&#xe8; o non c'&#xe8;: l'eternit&#xe0; non &#xe8; che la serie (infinita) dei cicli di espansione&#xa0;e contrazione (respiri) dell'Universo.%nl;(v. Spazionismo)%nl;%nl;L'Universo non &#xe8; che un epifenomeno, la proiezione dell'Energia sugli spazioni; niente e nessuno esiste in s&#xe9;, ma &#xe8; l'equivalente di una variabile: un nome convenzionale per un'aerea di memoria RAM (a differenza degli int e dei char, noi sanguinamo, ma tant'&#xe8;...).%nl;%nl;Non &#xe8; possibile conoscere il giusto o l'esatto che sia (questo sarebbe impossibile anche nel caso delle altre cosmogonie), ma si pu&#xf2; evitare di comportarsi in-giustamente, abbandonandosi a desiderii egoistici.%nl;%nl;Tanto pi&#xf9; che, mentre ci&#xf2; che non &#xe8; "esatto", per realizzarsi (o essere realizzato) richiede una forzatura del sistema e quindi un lavor&#xec;o immane, ci&#xf2; che &#xe8; esatto si realizza da solo, senza alcun aiuto da parte nostra.%nl;In questo, vivere somiglia all'andare in barca a vela: non si pu&#xf2; produrre il vento, lo si pu&#xf2; solo sfruttare per andare in una direzione.%nl;%nl;Pi&#xf9; si va contro vento, pi&#xf9; il percorso &#xe8; lungo e complicato, e, alle volte (in crociera), piuttosto che ammazzarsi di bordi di bolina, &#xe8; meglio aspettare un giorno che il vento giri (perch&#xe9; alla fine girer&#xe0;).&#xa0;%nl;</notes>
-        <fillColor>#83CEFF</fillColor>
-        <strokeColor>#8C8F72</strokeColor>
-        <textColor>#EA2218</textColor>
-        <font>Arial-plain-12</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/3450427cc0a8010b00a5d7f2ab23f3c5</URIString>
-        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
-    </child>
-    <child ID="634" label="F&#xe0; ci&#xf2; che sai fare" layerID="6"
-        created="1368138884794" x="-2979.9114" y="-64.13513"
-        width="156.4" height="49.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
-        <notes>Ciascuno deve fare ci&#xf2; che sa fare meglio, quello che gli viene naturale: se &#xe8; uno scrittore, scriva; se &#xe8; un pittore, pitti; se &#xe8; un politico, polisca.%nl;Viene da chiedersi: "E se &#xe8; un malfattore"?%nl;Teoricamente, un malfattore dovrebbe mal-fare, se &#xe8; ci&#xf2; che gli viene naturale, ma gli deve venire naturale, non deve organizzare LUI dei piani complicati per avidit&#xe0; o per mettersi in mostra.%nl;Cos&#xec; come il vero pittore &#xe8; colui che dipinge anche se sa che nessuno mai vedr&#xe0; i suoi quadri e il vero scrittore scrive anche se sa che nessuno lo legger&#xe0; mai (appunto..), il vero malfattore, quello che &#xe8; autorizzato a malfare, deve malfare a prescindere dal tornaconto che gliene pu&#xf2; derivare.%nl;Se fa del male per incapacit&#xe0; o per pigrizia, &#xe8; in/un peccato.%nl;</notes>
-        <fillColor>#E6F7FD</fillColor>
-        <strokeColor>#8C8F72</strokeColor>
-        <textColor>#EA2218</textColor>
-        <font>Arial-plain-12</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/8b7540997f0000010163f47e9ae8e331</URIString>
-        <shape xsi:type="ellipse"/>
-    </child>
-    <child ID="641" label="La Fede per combattere il declino"
-        layerID="6" created="1368140236238" x="-2831.496" y="-161.42334"
-        width="244.0" height="49.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
-        <notes>La mancanza di fede caua l'egoismo che causa il degrado.%nl;Se si vuole fermare il degrado, si deve recuperare la fede in un qualsiasi "Dio", nell'accezione di "significato dell'esistenza"%nl;</notes>
-        <fillColor>#E6F7FD</fillColor>
-        <strokeColor>#8C8F72</strokeColor>
-        <textColor>#EA2218</textColor>
-        <font>Arial-plain-12</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/8b8747ac7f0000010163f47e87307f08</URIString>
-        <shape xsi:type="ellipse"/>
-    </child>
-    <child ID="635" layerID="6" created="1368138884794" x="-2875.1033"
-        y="-17.236328" width="96.95996" height="82.05908"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="2" xsi:type="link">
-        <strokeColor>#8C8F72</strokeColor>
-        <textColor>#404040</textColor>
-        <font>Arial-plain-11</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/8b75409a7f0000010163f47ecf2cd558</URIString>
-        <point1 x="-2778.6433" y="64.322754"/>
-        <point2 x="-2874.6033" y="-16.736328"/>
-        <ID1 xsi:type="node">107</ID1>
-        <ID2 xsi:type="node">634</ID2>
-    </child>
-    <child ID="642" layerID="6" created="1368140236238" x="-2744.3672"
-        y="-113.006836" width="31.200928" height="177.8291"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="2" xsi:type="link">
-        <strokeColor>#8C8F72</strokeColor>
-        <textColor>#404040</textColor>
-        <font>Arial-plain-11</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/8b8747ac7f0000010163f47ef70c4117</URIString>
-        <point1 x="-2743.8672" y="64.322266"/>
-        <point2 x="-2713.6663" y="-112.506836"/>
-        <ID1 xsi:type="node">107</ID1>
-        <ID2 xsi:type="node">641</ID2>
-    </child>
-    <child ID="737" label="Non vivere per negazione" layerID="6"
-        created="1369091157087" x="-2602.4658" y="-86.57005"
-        width="200.79999" height="49.0" strokeWidth="2.0"
-        autoSized="false" xsi:type="node">
-        <notes>Si pu&#xf2; vivere per affermazione o per negazione.%nl;Si vive per affermazione quando si agisce per raggungere uno sc&#xf2;po, quale che sia.%nl;Si vive per negazione quando si agisce per EVITARE qualcosa, sia esso un comportamento o un evento.%nl;%nl;La stessa cosa si pu&#xf2; dire per le filosofie: ce ne sono alcune che vogliono raggiungere uno scopo, altre che vogliono evitare ci&#xf2; che si considera male (p.es. l'epicureismo)%nl;%nl;Questo &#xe8; sbagliato, perch&#xe9; implica il fatto che ci&#xf2; che si sfugge sia sempre e comunque un male, il che non solo non &#xe8; detto, ma non &#xe8; nemmeno probabile.%nl;Si deve capire ci&#xf2; che c'&#xe8; di buono nel male e di cattivo nel bene.%nl;Meglio ancora, si deve capire che "bene" e "male" non sono concetti assoluti.%nl;%nl;Uccidere un bambino &#xe8; considerato generalmente un male, ma se quel bambino fosse il figlio di Alois Hitler, la pensereste ancora cos&#xec;?%nl;Ucciderlo, potrebbe essere un bene, perch&#xe9; salverebbe la vita di cinque milioni di ebrei, ma se uno di quegli ebrei (non perch&#xe9; &#xe8; ebreo, ma perch&#xe9; &#xe8; un essere umano), divenuto grande, scatenasse una guerra nucleare annientando il Genere Umano, uccidere il giovane Hitler potrebbe essere un errore..%nl;%nl;L'unico modo per fare il bene, &#xe8; non fare intenzionalmente del male.%nl;</notes>
-        <fillColor>#E6F7FD</fillColor>
-        <strokeColor>#8C8F72</strokeColor>
-        <textColor>#EA2218</textColor>
-        <font>Arial-plain-12</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/c43e66377f000001003fc9b6ac3e12d7</URIString>
-        <shape xsi:type="ellipse"/>
-    </child>
-    <child ID="738" layerID="6" created="1369091157087" x="-2707.19"
-        y="-39.824463" width="168.80005" height="104.647095"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="2" xsi:type="link">
-        <strokeColor>#8C8F72</strokeColor>
-        <textColor>#404040</textColor>
-        <font>Arial-plain-11</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/c43e66377f000001003fc9b6e6c2d7b1</URIString>
-        <point1 x="-2706.69" y="64.32263"/>
-        <point2 x="-2538.89" y="-39.324463"/>
-        <ID1 xsi:type="node">107</ID1>
-        <ID2 xsi:type="node">737</ID2>
-    </child>
     <child ID="460" label="L'Ikebarba" layerID="6"
-        created="1297978609208" x="-3830.429" y="1180.5162"
+        created="1297978609208" x="-3834.429" y="1176.5162"
         width="135.5" height="57.5" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>&#xc8; l'Arte della disposizione dei panni sullo stendino.%nl;%nl;Il principio filosofico che sottende l'Ikebarba &#xe8; che tutto &#xe8; importante e non esistono momenti di serie A, nei quali facciamo le cose che ci piacciono, e momenti di serie B, nei quali facciamo ci&#xf2; che &#xe8; necessario fare.%nl;Anche il momento della stenditura dei panni, se approcciato correttamente, pu&#xf2; essere un passo verso il miglioramento di s&#xe9; e del Mondo.%nl;%nl;Questo per&#xf2; non deve essere espresso in forma diretta.%nl;(v. nota narrativa)</notes>
         <fillColor>#C6E8FF</fillColor>
@@ -6603,7 +6586,7 @@
         <shape xsi:type="diamond"/>
     </child>
     <child ID="465" label="Estetica" layerID="6" created="1297978840126"
-        x="-3650.17" y="1059.582" width="113.0" height="36.0"
+        x="-3654.17" y="1055.582" width="113.0" height="36.0"
         strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#83CEFF</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -6613,7 +6596,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="468" label="L'Ikebarba &#xe8; fatta &#xa;per l'uomo"
-        layerID="6" created="1297978934236" x="-3709.1497" y="1371.8237"
+        layerID="6" created="1297978934236" x="-3713.1497" y="1367.8237"
         width="177.73328" height="51.166504" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>"L'Ikebarba &#xe8; fatta per l'uomo, non l'uomo per l'Ikebarba"%nl;%nl;Perifrasi della frase di Ges&#xf9; sullo shabbat.%nl;L'Ikebarba non deve essere un peso, per l'uomo, ma un obbligo giojoso.%nl;Un'Ikebarba ben fatta gli provveder&#xe0; panni asciutti in minor tempo e render&#xe0; la vista dell'immondo stendino meno fastidiosa.%nl;Rendendo pi&#xf9; rapido l'asciugamento dei panni, inoltre, l'Ikebarba riduce la necessit&#xe0; di energia e quindi l'inquinamento. %nl;%nl;%nl;</notes>
@@ -6625,7 +6608,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="470" label="L'Ikebarba comincia&#xa;nel negozio"
-        layerID="6" created="1297979324990" x="-4071.4314" y="1115.221"
+        layerID="6" created="1297979324990" x="-4075.4314" y="1111.221"
         width="169.80478" height="67.224" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente.%nl;E' bene quindi acquistare abiti dalle tinte sobrie e, possibilmente, intonati gli uni agli altri, in modo da renderne pi&#xf9; facile e pi&#xf9; elegante la composizione sullo stendino.%nl;%nl;Un guardaroba di tipo militare o maoista, con indumenti identici e dello stesso colore &#xe8;, per&#xf2;, un eccesso da rifuggire, perch&#xe9; rende monotona l'Ikebarba.%nl;Gli indumenti devono essere eterogenei, ma possedere una loro coerenza interna, che possa essere evidenziata dalla composizione sullo stendino.%nl;Solo la biancheria intima pu&#xf2; essere dello stesso colore o fantasia.%nl;%nl;L'Ikebarba non deve essere una giustificazione per fuggire le regole del buon vesire: anche un uomo che prediliga le camicie azzurre, dovr&#xe0; possedere delle camicie bianche da indossare la sera.%nl;</notes>
@@ -6637,7 +6620,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="474" label="Tipi di Ikebarba" layerID="6"
-        created="1297981121046" x="-4036.5984" y="1373.2515"
+        created="1297981121046" x="-4040.5984" y="1369.2515"
         width="169.80478" height="67.224" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>L'Ikebarba estetica &#xe8; quella che definisce le posizioni sullo stendino in base al colore e alla forma degli indumenti.%nl;%nl;L'Ikebarba funzionale &#xe8; quella che accosta gl indumenti in ragione dei rispettivi tempi di asciugatura, ponendo i capi pi&#xf9; pesanti all'esterno, dove ricevono pi&#xf9; aria, e quelli pi&#xf9; leggeri - o sintetici- all'interno.%nl;%nl;Il primo caso &#xe8; frequente quando si opera su indumenti affini, come per esempio le camicie.%nl;Il secondo caso &#xe8; applicato spesso laddove si debbano stendere degli indumenti sportivi di diversa grammatura.%nl;%nl;Ciascun fedele dovr&#xe0; per&#xf2; tendere all'Ikebana perfetta, che fonde gli aspetti estetici e funzionali in un tutt'uno armonico.%nl;</notes>
@@ -6648,60 +6631,60 @@
         <URIString>http://vue.tufts.edu/rdf/resource/35bd1b9ec0a8010b016b4be556adec8a</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="461" layerID="6" created="1297978614559" x="-3739.2905"
-        y="1095.082" width="123.01831" height="96.07129"
+    <child ID="461" layerID="6" created="1297978614559" x="-3743.2903"
+        y="1091.082" width="123.018555" height="96.07129"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/35a08373c0a8010b016b4be5064b98af</URIString>
-        <point1 x="-3616.772" y="1095.582"/>
-        <point2 x="-3738.7903" y="1190.6533"/>
+        <point1 x="-3620.7717" y="1091.582"/>
+        <point2 x="-3742.7903" y="1186.6533"/>
         <ID1 xsi:type="node">465</ID1>
         <ID2 xsi:type="node">460</ID2>
     </child>
-    <child ID="469" layerID="6" created="1297978968849" x="-3746.709"
-        y="1230.5273" width="108.023926" height="142.40527"
+    <child ID="469" layerID="6" created="1297978968849" x="-3750.709"
+        y="1226.5269" width="108.023926" height="142.40576"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/35a08374c0a8010b016b4be5f5a8fd62</URIString>
-        <point1 x="-3746.209" y="1231.0273"/>
-        <point2 x="-3639.185" y="1372.4326"/>
+        <point1 x="-3750.209" y="1227.0269"/>
+        <point2 x="-3643.185" y="1368.4326"/>
         <ID1 xsi:type="node">460</ID1>
         <ID2 xsi:type="node">468</ID2>
     </child>
-    <child ID="471" layerID="6" created="1297979324990" x="-3916.912"
-        y="1167.2627" width="113.32617" height="31.32483"
+    <child ID="471" layerID="6" created="1297979324990" x="-3920.912"
+        y="1163.2625" width="113.32593" height="31.325073"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/35a08375c0a8010b016b4be55f52c198</URIString>
-        <point1 x="-3804.086" y="1198.0874"/>
-        <point2 x="-3916.412" y="1167.7626"/>
+        <point1 x="-3808.0862" y="1194.0875"/>
+        <point2 x="-3920.412" y="1163.7625"/>
         <ID1 xsi:type="node">460</ID1>
         <ID2 xsi:type="node">470</ID2>
     </child>
-    <child ID="475" layerID="6" created="1297981125044" x="-3922.2104"
-        y="1229.2156" width="140.46997" height="146.80127"
+    <child ID="475" layerID="6" created="1297981125044" x="-3926.2102"
+        y="1225.2153" width="140.47021" height="146.80103"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/35bd1b9ec0a8010b016b4be5ef809b04</URIString>
-        <point1 x="-3782.2405" y="1229.7156"/>
-        <point2 x="-3921.7104" y="1375.5168"/>
+        <point1 x="-3786.24" y="1225.7153"/>
+        <point2 x="-3925.7102" y="1371.5164"/>
         <ID1 xsi:type="node">460</ID1>
         <ID2 xsi:type="node">474</ID2>
     </child>
     <child ID="742" label="Categorie" layerID="6"
-        created="1546186314037" x="-3415.5588" y="1067.5587"
+        created="1546186314037" x="-3419.5588" y="1063.5587"
         width="169.80478" height="67.224" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>Le categoie estetiche del C'hi++ sono tre:%nl;%nl;L'Arte.%nl;D&#xe0; all'uomo ci&#xf2; di cui ha bisogno e, come una buona madre, non soddisfa i suoi capricci, ma si cura del suo benessere anche se ci&#xf2; pu&#xf2; apparire crudele. %nl;%nl;Il Marketing.%nl;D&#xe0; all'uomo ci&#xf2; che desidera e, bramosa di approvazione, soddisfa ogni suo capriccio, incurante degli effetti che questi avranno sulla sua vita.%nl;%nl;La Decorazione. %nl;Sono opere di decorazione tutte quelle idee e qugli artefatti che soddisfano i sensi dell'uomo, ma che non hanno alcuna influenza, positiva o negativa che sia, sulla sua crescita spirituale. &#x21a9;%nl;</notes>
@@ -6718,21 +6701,21 @@
         <URIString>http://vue.tufts.edu/rdf/resource/ffe72263c0a82b320f6f16f1aecc8b78</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="744" layerID="6" created="1546186352728" x="-3537.67"
-        y="1082.1494" width="124.83838" height="12.106567"
+    <child ID="744" layerID="6" created="1546186352728" x="-3541.67"
+        y="1078.1494" width="124.83838" height="12.106567"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/ffe72263c0a82b320f6f16f13a878342</URIString>
-        <point1 x="-3537.17" y="1082.6493"/>
-        <point2 x="-3413.3315" y="1093.7559"/>
+        <point1 x="-3541.17" y="1078.6493"/>
+        <point2 x="-3417.3315" y="1089.7559"/>
         <ID1 xsi:type="node">465</ID1>
         <ID2 xsi:type="node">742</ID2>
     </child>
     <child ID="75" label="Metafisica" layerID="6"
-        created="1293660828252" x="-2172.1907" y="767.39404"
+        created="1293660828252" x="-2176.1907" y="763.39404"
         width="113.0" height="36.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#83CEFF</fillColor>
         <strokeColor>#8C8F72</strokeColor>
@@ -6742,7 +6725,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="94" label="Annosa dicotomia" layerID="6"
-        created="1293662084690" x="-2194.035" y="575.37384"
+        created="1293662084690" x="-2198.035" y="571.37384"
         width="163.80002" height="61.799995" strokeWidth="2.0"
         autoSized="true" xsi:type="node">
         <notes>Si tratta di un fenomeno nefasto, simile alla *Maya* dell'Induismo, che ci impedisce di vedere con chiarezza ci&#xf2; che &#xe8; bene fare o perseguire. %sp;%nl;Cos&#xec; come l'illusoriet&#xe0; del mondo sensibile &#xe8; il frutto dell'azione dei tre %sp;*gu&#x1e47;a*: Sattva, Rajas e Tamas, cos&#xec; l'Annosa Dicotomia nasce dallo scontro fra due forze contrapposte: l'Arte e il Marketing (v. Categorie estetiche).</notes>
@@ -6760,7 +6743,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="409" label="Ciclo delle rinascite" layerID="6"
-        created="1295998782456" x="-2243.263" y="900.9128" width="165.0"
+        created="1295998782456" x="-2247.263" y="896.9128" width="165.0"
         height="37.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>Legami con il buddismo e l'orfismo</notes>
         <fillColor>#E6F7FD</fillColor>
@@ -6772,7 +6755,7 @@
     </child>
     <child ID="500"
         label="L'amore &#xe8; un difetto &#xa;di costruzione &#xa;intenzionale"
-        layerID="6" created="1308098594881" x="-1934.4279" y="877.2025"
+        layerID="6" created="1308098594881" x="-1938.4279" y="873.2025"
         width="219.8" height="113.8" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <notes>L'amore &#xe8; una sorta di "difetto di costruzione" che ci porta a desiderare qualcosa pi&#xf9; della nostra stessa esistenza.%nl;Si tratta per&#xf2; di un difetto di costruzione intenzionale, un po' come le tacche sulle manopole delle moto da enduro: si crea una quasi-rottura (e quindi un difetto di costruzione) per far s&#xec; che un'eventuale incidente causi il minor danno possibile.%nl;Nel caso dell'amore, lo scopo &#xe8; di rendere l'organismo sensibile a quegli stimoli (di solito sensuali: l'odore di un partner, il sapore di un cibo) che gli consentiranno di svolgere in maniera appropriata il suo dovere.%nl;Si pu&#xf2; essere particolarmente sensibili a un determinato tipo di viso, perch&#xe9; quello sar&#xe0; il viso della persona con cui dobbiamo accoppiarci o che contribuir&#xe0; alla nostra evoluzione.%nl;Si pu&#xf2; essere sensibili al sapore di un cibo perch&#xe9; quello sar&#xe0; il modo in cui dovremo morire (v. conseguenza).%nl;E' quindi, molto importante fare (o perseguire) ci&#xf2; che amiamo, perch&#xe9; probabilmente quello &#xe8; il nostro destino.%nl;%nl;E' altrettanto importante identificare precisamente ci&#xf2; che amiamo davvero (ovvero ci&#xf2; per cui saremmo disposti a sacrificare la nostra vita), da ci&#xf2; di cui siamo semplicemente innamorati (ovvero, ci&#xf2; che genericamente, "ci piace molto"), perch&#xe9;, se no, rischiamo di spendere la nostra esistenza in una direzione errata. %nl;%nl;</notes>
         <fillColor>#C6E8FF</fillColor>
@@ -6783,7 +6766,7 @@
         <shape xsi:type="diamond"/>
     </child>
     <child ID="502" label="Amiamo ci&#xf2;&#xa;che ci uccider&#xe0;"
-        layerID="6" created="1308098950552" x="-1697.2852" y="1013.7586"
+        layerID="6" created="1308098950552" x="-1701.2852" y="1009.7586"
         width="169.5" height="79.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <notes>(chiosa: Se tutto va bene)%nl;Se nulla interviene a modificare le cose, ci&#xf2; che noi amiamo sar&#xe0; ci&#xf2; che ci condurr&#xe0; alla morte. Per alcuni pu&#xf2; essere il mare, per altri la moto, per altri (o altre), la montagna, ma anche il cibo o il bere o il fumo o le donne.%nl;Se moriamo facendo ci&#xf2; che amiamo, &#xe8; probabile che abbiamo compiuto il nostro dovere.%nl;E' cos&#xec; che il "sistema" fa in modo che noi ci leviamo da mezzo quando non siamo pi&#xf9; funzionali.%nl;%nl;La chiosa significa che possono esserci delle circostanze in cui ci&#xf2; che genera la morte di un individuo non sia (n&#xe9; direttamente n&#xe9; indirettamente) qualcosa che esso amava.%nl;Queste e solo queste sono le vere "disgrazie".%nl;</notes>
         <fillColor>#E6F7FD</fillColor>
@@ -6794,7 +6777,7 @@
         <shape xsi:type="ellipse"/>
     </child>
     <child ID="643" label="L'ambulanza" layerID="6"
-        created="1368140369834" x="-2302.0723" y="1014.80316"
+        created="1368140369834" x="-2306.0723" y="1010.80316"
         width="155.20001" height="49.0" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
         <notes>L'unica regola del Codice della Strada che nessuno viola mai &#xe8; la precedenza alle ambulanze.%nl;Ci&#xf2; avviene per egoismo, perch&#xe9; sappiamo che, un giorno, potremmo esserci noi, nell'ambulanza.%nl;Lo stesso deve avvenire nella vita: se pensiamo che in un'esistenza futura il lavavetri al semaoro potremo essere noi, cercheremo di essere gentili con lui.%nl;</notes>
@@ -6805,70 +6788,254 @@
         <URIString>http://vue.tufts.edu/rdf/resource/8b8747ac7f0000010163f47e18ce6926</URIString>
         <shape xsi:type="ellipse"/>
     </child>
-    <child ID="95" layerID="6" created="1293662104897" x="-2115.8333"
-        y="636.64844" width="3.5854492" height="131.24219"
+    <child ID="95" layerID="6" created="1293662104897" x="-2119.8335"
+        y="632.65625" width="3.5854492" height="131.24219"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/344da041c0a8010b00a5d7f27ee7bd3c</URIString>
-        <point1 x="-2115.3333" y="767.3906"/>
-        <point2 x="-2112.7478" y="637.14844"/>
+        <point1 x="-2119.3335" y="763.39844"/>
+        <point2 x="-2116.748" y="633.15625"/>
         <ID1 xsi:type="node">75</ID1>
         <ID2 xsi:type="node">94</ID2>
     </child>
-    <child ID="501" layerID="6" created="1308098602588" x="-2080.9478"
-        y="802.89404" width="201.59583" height="103.45227"
+    <child ID="501" layerID="6" created="1308098602588" x="-2084.9475"
+        y="798.89404" width="201.59546" height="103.45221"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/90d72e12c0a80116011492ed1593ccfb</URIString>
-        <point1 x="-2080.4478" y="803.39404"/>
-        <point2 x="-1879.8519" y="905.8463"/>
+        <point1 x="-2084.4475" y="799.39404"/>
+        <point2 x="-1883.852" y="901.84625"/>
         <ID1 xsi:type="node">75</ID1>
         <ID2 xsi:type="node">500</ID2>
     </child>
-    <child ID="683" layerID="6" created="1369084264023" x="-2155.0881"
-        y="802.89404" width="33.84375" height="98.6582"
+    <child ID="683" layerID="6" created="1369084264023" x="-2159.0881"
+        y="798.89404" width="33.84375" height="98.65869"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/c3d583797f00000101cc6a6a58259ce8</URIString>
-        <point1 x="-2121.7444" y="803.39404"/>
-        <point2 x="-2154.5881" y="901.05225"/>
+        <point1 x="-2125.7444" y="799.39404"/>
+        <point2 x="-2158.5881" y="897.05273"/>
         <ID1 xsi:type="node">75</ID1>
         <ID2 xsi:type="node">409</ID2>
     </child>
-    <child ID="644" layerID="6" created="1368140369834" x="-2212.1694"
-        y="937.1931" width="42.192383" height="78.517334"
+    <child ID="644" layerID="6" created="1368140369834" x="-2216.1694"
+        y="933.1931" width="42.192627" height="78.51782"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/8b8747ac7f0000010163f47e1fb0d05c</URIString>
-        <point1 x="-2170.477" y="937.6931"/>
-        <point2 x="-2211.6694" y="1015.21045"/>
+        <point1 x="-2174.477" y="933.6931"/>
+        <point2 x="-2215.6697" y="1011.21094"/>
         <ID1 xsi:type="node">409</ID1>
         <ID2 xsi:type="node">643</ID2>
     </child>
     <child ID="503" label="conseguenza" layerID="6"
-        created="1308099068547" x="-1772.3339" y="963.2206"
-        width="106.448975" height="60.270325" strokeWidth="1.0"
+        created="1308099068547" x="-1776.3337" y="959.22064"
+        width="106.44885" height="60.27014" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/90d72e14c0a80116011492ed6dde7088</URIString>
-        <point1 x="-1771.8339" y="963.7205"/>
-        <point2 x="-1666.3849" y="1022.99084"/>
+        <point1 x="-1775.8339" y="959.72064"/>
+        <point2 x="-1670.385" y="1018.9908"/>
         <ID1 xsi:type="node">500</ID1>
         <ID2 xsi:type="node">502</ID2>
+    </child>
+    <child ID="110" layerID="6" created="1293662815249" x="-3017.1587"
+        y="-53.5" width="312.16797" height="671.98584" strokeWidth="1.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/3450427dc0a8010b00a5d7f2e78caa16</URIString>
+        <point1 x="-3016.6587" y="617.98584"/>
+        <point2 x="-2705.4907" y="-53.0"/>
+        <ID1 xsi:type="node">60</ID1>
+        <ID2 xsi:type="node">107</ID2>
+    </child>
+    <child ID="107" label="Etica" layerID="6" created="1293662754275"
+        x="-2760.082" y="-104.34401" width="132.99341" height="51.34424"
+        strokeWidth="2.0" autoSized="false" xsi:type="node">
+        <notes>Dio non ha grossa importanza, se c'&#xe8; o non c'&#xe8;: l'eternit&#xe0; non &#xe8; che la serie (infinita) dei cicli di espansione&#xa0;e contrazione (respiri) dell'Universo.%nl;(v. Spazionismo)%nl;%nl;L'Universo non &#xe8; che un epifenomeno, la proiezione dell'Energia sugli spazioni; niente e nessuno esiste in s&#xe9;, ma &#xe8; l'equivalente di una variabile: un nome convenzionale per un'aerea di memoria RAM (a differenza degli int e dei char, noi sanguinamo, ma tant'&#xe8;...).%nl;%nl;Non &#xe8; possibile conoscere il giusto o l'esatto che sia (questo sarebbe impossibile anche nel caso delle altre cosmogonie), ma si pu&#xf2; evitare di comportarsi in-giustamente, abbandonandosi a desiderii egoistici.%nl;%nl;Tanto pi&#xf9; che, mentre ci&#xf2; che non &#xe8; "esatto", per realizzarsi (o essere realizzato) richiede una forzatura del sistema e quindi un lavor&#xec;o immane, ci&#xf2; che &#xe8; esatto si realizza da solo, senza alcun aiuto da parte nostra.%nl;In questo, vivere somiglia all'andare in barca a vela: non si pu&#xf2; produrre il vento, lo si pu&#xf2; solo sfruttare per andare in una direzione.%nl;%nl;Pi&#xf9; si va contro vento, pi&#xf9; il percorso &#xe8; lungo e complicato, e, alle volte (in crociera), piuttosto che ammazzarsi di bordi di bolina, &#xe8; meglio aspettare un giorno che il vento giri (perch&#xe9; alla fine girer&#xe0;).&#xa0;%nl;</notes>
+        <fillColor>#83CEFF</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/3450427cc0a8010b00a5d7f2ab23f3c5</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="634" label="F&#xe0; ci&#xf2; che sai fare" layerID="6"
+        created="1368138884794" x="-2995.6355" y="-11.468456"
+        width="172.66675" height="69.819046" strokeWidth="2.0"
+        autoSized="false" xsi:type="node">
+        <notes>Ciascuno deve fare ci&#xf2; che sa fare meglio, quello che gli viene naturale: se &#xe8; uno scrittore, scriva; se &#xe8; un pittore, pitti; se &#xe8; un politico, polisca.%nl;Anche qui, bisogna sempre fare attenzione all'Annosa Dicotomia e non confondere ci&#xf2; che si DEVE fare con quello che si VUOLE fare.%nl;%nl;</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="etica, bene, male"/>
+        </metadata-list>
+        <URIString>http://vue.tufts.edu/rdf/resource/8b7540997f0000010163f47e9ae8e331</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="641" label="La Fede per combattere il declino"
+        layerID="6" created="1368140236238" x="-2744.8296"
+        y="-316.09003" width="244.0" height="49.0" strokeWidth="2.0"
+        autoSized="false" xsi:type="node">
+        <notes>La mancanza di fede caua l'egoismo che causa il degrado.%nl;Se si vuole fermare il degrado, si deve recuperare la fede in un qualsiasi "Dio", nell'accezione di "significato dell'esistenza"%nl;</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/8b8747ac7f0000010163f47e87307f08</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="737" label="Non vivere per negazione" layerID="6"
+        created="1369091157087" x="-2507.1328" y="-219.23672"
+        width="200.79999" height="82.92064" strokeWidth="2.0"
+        autoSized="false" xsi:type="node">
+        <notes>Si pu&#xf2; vivere per affermazione o per negazione.%nl;Si vive per affermazione quando si agisce per raggungere uno sc&#xf2;po, quale che sia.%nl;Si vive per negazione quando si agisce per EVITARE qualcosa, sia esso un comportamento o un evento.%nl;%nl;La stessa cosa si pu&#xf2; dire per le filosofie: ce ne sono alcune che vogliono raggiungere uno scopo, altre che vogliono evitare ci&#xf2; che si considera male (p.es. l'epicureismo)%nl;%nl;Questo &#xe8; sbagliato, perch&#xe9; implica il fatto che ci&#xf2; che si sfugge sia sempre e comunque un male, il che non solo non &#xe8; detto, ma non &#xe8; nemmeno probabile.%nl;Si deve capire ci&#xf2; che c'&#xe8; di buono nel male e di cattivo nel bene.%nl;Meglio ancora, si deve capire che "bene" e "male" non sono concetti assoluti.%nl;%nl;Uccidere un bambino &#xe8; considerato generalmente un male, ma se quel bambino fosse il figlio di Alois Hitler, la pensereste ancora cos&#xec;?%nl;Ucciderlo, potrebbe essere un bene, perch&#xe9; salverebbe la vita di cinque milioni di ebrei, ma se uno di quegli ebrei (non perch&#xe9; &#xe8; ebreo, ma perch&#xe9; &#xe8; un essere umano), divenuto grande, scatenasse una guerra nucleare annientando il Genere Umano, uccidere il giovane Hitler potrebbe essere un errore..%nl;%nl;L'unico modo per fare il bene, &#xe8; non fare intenzionalmente del male.%nl;</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/c43e66377f000001003fc9b6ac3e12d7</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="635" layerID="6" created="1368138884794" x="-2853.9753"
+        y="-53.499756" width="106.65674" height="51.014282"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/8b75409a7f0000010163f47ecf2cd558</URIString>
+        <point1 x="-2747.8186" y="-52.999756"/>
+        <point2 x="-2853.4753" y="-2.9854736"/>
+        <ID1 xsi:type="node">107</ID1>
+        <ID2 xsi:type="node">634</ID2>
+    </child>
+    <child ID="642" layerID="6" created="1368140236238" x="-2685.5537"
+        y="-267.75342" width="55.136963" height="163.90869"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/8b8747ac7f0000010163f47ef70c4117</URIString>
+        <point1 x="-2685.054" y="-104.34473"/>
+        <point2 x="-2630.917" y="-267.25342"/>
+        <ID1 xsi:type="node">107</ID1>
+        <ID2 xsi:type="node">641</ID2>
+    </child>
+    <child ID="738" layerID="6" created="1369091157087" x="-2630.0903"
+        y="-151.79297" width="147.20264" height="51.511475"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/c43e66377f000001003fc9b6e6c2d7b1</URIString>
+        <point1 x="-2629.5903" y="-100.781494"/>
+        <point2 x="-2483.3877" y="-151.29297"/>
+        <ID1 xsi:type="node">107</ID1>
+        <ID2 xsi:type="node">737</ID2>
+    </child>
+    <child ID="772" label="Il bene &#xe8; l'esatto" layerID="6"
+        created="1586697559764" x="-3014.8784" y="-254.1283"
+        width="172.66675" height="69.819046" strokeWidth="2.0"
+        autoSized="false" xsi:type="node">
+        <notes>Non si deve fare il "bene", ma l' "esatto", quella che in termini scacchistici si definisce: la mossa chiesta dalla scacchiera.%nl;L'esatto non &#xe8; necessariamente "bene", pu&#xf2; apparire - o essere - male.%nl;Questo &#xe8; un punto rischioso, perch&#xe9; pu&#xf2; fornire una giustificazione a coloro che fanno il male, ma non &#xe8; un problema risolvibile perch&#xe9; qualunque affermazione &#xe8; soggetta a fraintendimenti.%nl;%nl;</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="etica, bene, male"/>
+        </metadata-list>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e8ff69cc0a8013c0f79801ea7697190</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="773" layerID="6" created="1586697559764" x="-2880.6963"
+        y="-190.79773" width="144.69312" height="86.953735"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e8ff69cc0a8013c0f79801ed908f9cb</URIString>
+        <point1 x="-2736.503" y="-104.343994"/>
+        <point2 x="-2880.196" y="-190.29773"/>
+        <ID1 xsi:type="node">107</ID1>
+        <ID2 xsi:type="node">772</ID2>
+    </child>
+    <child ID="776" layerID="6" created="1586698397862" x="-2089.488"
+        y="632.39526" width="223.59229" height="131.4989"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e99314dc0a8013c0f79801e2185b389</URIString>
+        <point1 x="-2088.988" y="763.39417"/>
+        <point2 x="-1866.3958" y="632.89526"/>
+        <ID1 xsi:type="node">75</ID1>
+        <ID2 xsi:type="node">777</ID2>
+    </child>
+    <child ID="777" label="La preveggenza &#xe8; ricordo" layerID="6"
+        created="1586698397862" x="-1922.062" y="571.2898" width="209.6"
+        height="65.600006" strokeWidth="2.0" autoSized="true" xsi:type="node">
+        <notes>SDFO, 260%nl;Per C'hi++ la divinazione non &#xe8; preveggenza, ma al contrario, recupero memoriale, ricordo di passate esperienze in Universi simili a quello corrente.%nl;</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="spazionismo, cosmogonia, preveggenza, metafisica"/>
+        </metadata-list>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e99314dc0a8013c0f79801e6fe42b4e</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="778" label="Conseguenze delle azioni" layerID="6"
+        created="1586698581140" x="-2631.347" y="-17.565521"
+        width="212.20001" height="69.819046" strokeWidth="2.0"
+        autoSized="false" xsi:type="node">
+        <notes>Chi agisce per il male ha male in cambio, quanto meno sul lungo periodo.%nl;Chi agisce per il bene, per&#xf2;, non ha necessariamente del bene come ricompensa.%nl;%nl;Un oggetto che abbia svolto bene il suo compito all'interno di un programma o di una funzione pu&#xf2; essere rimosso dalla memoria perch&#xe9; non &#xe8; pi&#xf9; necessario.%nl;%nl;- Questo, - dir&#xe0; il Maestro - dovrebbe farti ragonare sulla tua smania di scrivere il libro. Se quello &#xe8; il tuo sc&#xf2;po, quando l'avrai portato a termine, non sarai pi&#xf9; utile e potresti essere rimosso dal programma. -%nl;%nl;</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="etica, bene, male, oggetti, delete"/>
+        </metadata-list>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e9dc532c0a8013c0f79801e4c6b4bfc</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="779" layerID="6" created="1586698581140" x="-2649.0762"
+        y="-53.499756" width="71.533936" height="41.230713"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6e9dc533c0a8013c0f79801eacea0df2</URIString>
+        <point1 x="-2648.5762" y="-52.999756"/>
+        <point2 x="-2578.0422" y="-12.769043"/>
+        <ID1 xsi:type="node">107</ID1>
+        <ID2 xsi:type="node">778</ID2>
     </child>
     <layer ID="374" label="Relazioni" created="1295991642614" x="0.0"
         y="0.0" width="1.4E-45" height="1.4E-45" hidden="true"
@@ -6876,23 +7043,25 @@
         <URIString>http://vue.tufts.edu/rdf/resource/bf23a3a8c0a8010b015e8a8fdc837bba</URIString>
     </layer>
     <layer ID="378" label="Arte" created="1295992283172" x="0.0" y="0.0"
-        width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
+        width="1.4E-45" height="1.4E-45" hidden="true" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/bf34ca3ac0a8010b00b4cbc51c140d59</URIString>
     </layer>
     <layer ID="1" label="Informatica" created="1267825536136" x="0.0"
-        y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
+        y="0.0" width="1.4E-45" height="1.4E-45" hidden="true"
+        strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/304ae829c0a8010a0179d47fc3c57899</URIString>
     </layer>
     <layer ID="7" label="Filosofia" created="1293657051881" x="0.0"
-        y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
+        y="0.0" width="1.4E-45" height="1.4E-45" hidden="true"
+        strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/3413335cc0a8010b00a5d7f2d68c857e</URIString>
     </layer>
     <layer ID="6" label="C'hi++" created="1293656974647" x="0.0" y="0.0"
         width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/3413335cc0a8010b00a5d7f256847768</URIString>
     </layer>
-    <userZoom>2.738698532543735</userZoom>
-    <userOrigin x="-11728.0" y="-4620.706"/>
+    <userZoom>0.75</userZoom>
+    <userOrigin x="-4756.2266" y="-440.03073"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1267825535957"
@@ -6911,7 +7080,7 @@
                 <font>SansSerif-plain-14</font>
                 <URIString>http://vue.tufts.edu/rdf/resource/304ae82bc0a8010a0179d47fc8e82f2a</URIString>
                 <titleStyle ID="3" label="Header"
-                    created="1267825536327" x="341.0" y="175.0"
+                    created="1267825536327" x="340.5" y="175.0"
                     width="119.0" height="50.0" strokeWidth="0.0"
                     autoSized="true" isStyle="true" xsi:type="node">
                     <strokeColor>#404040</strokeColor>
@@ -6921,7 +7090,7 @@
                     <shape xsi:type="rectangle"/>
                 </titleStyle>
                 <textStyle ID="4" label="Slide Text"
-                    created="1267825536332" x="349.5" y="282.5"
+                    created="1267825536332" x="349.0" y="282.5"
                     width="102.0" height="35.0" strokeWidth="0.0"
                     autoSized="true" isStyle="true" xsi:type="node">
                     <strokeColor>#404040</strokeColor>
@@ -6931,7 +7100,7 @@
                     <shape xsi:type="rectangle"/>
                 </textStyle>
                 <linkStyle ID="5" label="Links" created="1267825536333"
-                    x="375.5" y="385.0" width="50.0" height="30.0"
+                    x="375.0" y="385.0" width="50.0" height="30.0"
                     strokeWidth="0.0" autoSized="true" isStyle="true" xsi:type="node">
                     <strokeColor>#404040</strokeColor>
                     <textColor>#B3BFE3</textColor>
@@ -6944,6 +7113,6 @@
     </PathwayList>
     <date>2010-03-05</date>
     <modelVersion>6</modelVersion>
-    <saveLocation>/Users/Carlo/Developer/Chi++/src/doc</saveLocation>
-    <saveFile>/Users/Carlo/Developer/Chi++/src/doc/mind-map.vue</saveFile>
+    <saveLocation>/Users/Carlo/Developer/Chi++/_data</saveLocation>
+    <saveFile>/Users/Carlo/Developer/Chi++/_data/mind-map.vue</saveFile>
 </LW-MAP>
