@@ -1,14 +1,14 @@
 <!-- Tufts VUE 3.3.0 concept-map (mind-map.vue) 2020-04-12 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Applications/VUE.app/Contents/Resources/Java/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Sun Apr 12 15:57:10 CEST 2020 by Carlo on platform Mac OS X 10.15.3 in JVM 13.0.1+9 -->
+<!-- Do Not Remove: Saved date Sun Apr 12 16:34:26 CEST 2020 by Carlo on platform Mac OS X 10.15.3 in JVM 13.0.1+9 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built October 8 2015 at 1658 by tomadm on Linux 2.6.32-504.23.4.el6.x86_64 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="mind-map.vue"
-    created="1267825536130" x="0.0" y="0.0" width="7429.4634"
-    height="5044.0957" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1586699830557" size="465022"
+    created="1267825536130" x="0.0" y="0.0" width="2748.1836"
+    height="2107.9395" strokeWidth="0.0" autoSized="false">
+    <resource referenceCreated="1586702066441" size="467548"
         spec="/Users/Carlo/Developer/Chi++/_data/mind-map.vue" type="1" xsi:type="URLResource">
         <title>mind-map.vue</title>
         <property key="File" value="/Users/Carlo/Developer/Chi++/_data/mind-map.vue"/>
@@ -6880,13 +6880,13 @@
         created="1368138884794" x="-2995.6355" y="-11.468456"
         width="172.66675" height="69.819046" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
-        <notes>Ciascuno deve fare ci&#xf2; che sa fare meglio, quello che gli viene naturale: se &#xe8; uno scrittore, scriva; se &#xe8; un pittore, pitti; se &#xe8; un politico, polisca.%nl;Anche qui, bisogna sempre fare attenzione all'Annosa Dicotomia e non confondere ci&#xf2; che si DEVE fare con quello che si VUOLE fare.%nl;%nl;</notes>
+        <notes>Ciascuno deve fare ci&#xf2; che sa fare meglio, quello che gli viene naturale: se &#xe8; uno scrittore, scriva; se &#xe8; un pittore, pitti; se &#xe8; un politico, polisca.%nl;Anche qui, bisogna sempre fare attenzione all'Annosa Dicotomia e non confondere ci&#xf2; che si DEVE fare con quello che si VUOLE fare.%nl;%nl;Come affermano Epitteto, Shakespeare ed Elvis, ciascuno di noi &#xe8; attore di un dramma di cui Dio ha assegnato le parti. &#xc8; nostro dovere rappresentare valorosamente la nostra parte, qualunque essa sia. %nl;SDFO - 267</notes>
         <fillColor>#E6F7FD</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
         <font>Arial-plain-12</font>
         <metadata-list>
-            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="etica, bene, male"/>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="etica, bene, male, oggetti"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/8b7540997f0000010163f47e9ae8e331</URIString>
         <shape xsi:type="ellipse"/>
@@ -7013,7 +7013,7 @@
         created="1586698581140" x="-2631.347" y="-17.565521"
         width="212.20001" height="69.819046" strokeWidth="2.0"
         autoSized="false" xsi:type="node">
-        <notes>Chi agisce per il male ha male in cambio, quanto meno sul lungo periodo.%nl;Chi agisce per il bene, per&#xf2;, non ha necessariamente del bene come ricompensa.%nl;%nl;Un oggetto che abbia svolto bene il suo compito all'interno di un programma o di una funzione pu&#xf2; essere rimosso dalla memoria perch&#xe9; non &#xe8; pi&#xf9; necessario.%nl;%nl;- Questo, - dir&#xe0; il Maestro - dovrebbe farti ragonare sulla tua smania di scrivere il libro. Se quello &#xe8; il tuo sc&#xf2;po, quando l'avrai portato a termine, non sarai pi&#xf9; utile e potresti essere rimosso dal programma. -%nl;%nl;</notes>
+        <notes>Chi agisce per il male ha male in cambio, quanto meno sul lungo periodo.%nl;Chi agisce per il bene, per&#xf2;, non ha necessariamente del bene come ricompensa.%nl;%nl;Un oggetto che abbia svolto bene il suo compito all'interno di un programma o di una funzione pu&#xf2; essere rimosso dalla memoria perch&#xe9; non &#xe8; pi&#xf9; necessario, come in Lao Tze:%nl;%nl;V - L'USO DEL VUOTO%nl;Il Cielo e la Terra non usano carit&#xe0;,%nl;tengono le diecimila creature per cani di paglia.%nl;Il santo non usa carit&#xe0;%nl;tiene i cento cognomi per cani di paglia%nl;%nl;- Questo, - dir&#xe0; il Maestro - dovrebbe farti ragonare sulla tua smania di scrivere il libro. Se quello &#xe8; il tuo sc&#xf2;po, quando l'avrai portato a termine, non sarai pi&#xf9; utile e potresti essere rimosso dal programma. -%nl;%nl;</notes>
         <fillColor>#E6F7FD</fillColor>
         <strokeColor>#8C8F72</strokeColor>
         <textColor>#EA2218</textColor>
@@ -7036,6 +7036,34 @@
         <point2 x="-2578.0422" y="-12.769043"/>
         <ID1 xsi:type="node">107</ID1>
         <ID2 xsi:type="node">778</ID2>
+    </child>
+    <child ID="792" label="Libero arvitrio" layerID="6"
+        created="1586701784529" x="-2677.794" y="163.3985"
+        width="172.66675" height="69.819046" strokeWidth="2.0"
+        autoSized="false" xsi:type="node">
+        <notes>SDFO - 270%nl;La contraddizione fra libero arbitrio e predestinazione non esiste per C'hi++, perch&#xe9; l'unica predestinazione che considera &#xe8; l'evoluzione dell'Universo. %nl;Il libero arbitrio e la possibilit&#xe0; di commettere degli errori &#xe8; NECESSARIA per questo sc&#xf2;po.</notes>
+        <fillColor>#E6F7FD</fillColor>
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#EA2218</textColor>
+        <font>Arial-plain-12</font>
+        <metadata-list>
+            <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="etica, bene, male, oggetti, libero arbitrio, contraddizioni"/>
+        </metadata-list>
+        <URIString>http://vue.tufts.edu/rdf/resource/6ed017b9c0a8013c0f79801e4dfde644</URIString>
+        <shape xsi:type="ellipse"/>
+    </child>
+    <child ID="793" layerID="6" created="1586701784529" x="-2684.6199"
+        y="-53.49951" width="80.978516" height="217.91504"
+        strokeWidth="1.0" autoSized="false" controlCount="0"
+        arrowState="2" xsi:type="link">
+        <strokeColor>#8C8F72</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/6ed017b9c0a8013c0f79801ec16e18fc</URIString>
+        <point1 x="-2684.1199" y="-52.99951"/>
+        <point2 x="-2604.1414" y="163.91553"/>
+        <ID1 xsi:type="node">107</ID1>
+        <ID2 xsi:type="node">792</ID2>
     </child>
     <layer ID="374" label="Relazioni" created="1295991642614" x="0.0"
         y="0.0" width="1.4E-45" height="1.4E-45" hidden="true"
