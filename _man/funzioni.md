@@ -8,6 +8,7 @@ quote:      "Call me: IsNull"
 ---
 
 
+<!--
 Funzioni ricorsive
 ------------------
 
@@ -23,3 +24,4 @@ Differenza con i manuali SW (in cui i termini utilizzati sono tutti
 definiti) e le le classi C++
 
 Nota 7 (S.Gregorio++)
+-->
