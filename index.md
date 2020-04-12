@@ -8,16 +8,13 @@ footer: true
 
 <b>C'hi++</b> è un tentativo di spiegare il significato
 dell'Esistenza nei termini dell'informatica.<br />
-Questa miscela di spiritualità e tecnologia è evidente già nel nome
-<i>C'hi++</i> &mdash; un gioco di parole fra il termine giapponese
+Questa miscela di spiritualità e tecnologia è evidente sia nel nome
+<i>C'hi++</i> (un gioco di parole fra il termine giapponese
 <i>C'hi</i>, ovvero: <i>soffio vitale</i>, e il linguaggio di
-programmazione chiamato: <i>C++</i> &mdash;.
-Un altro richiamo è nel modo in cui verrà gestita l'evoluzione della disciplina: lo stesso che viene utilizzato per il software <i>open-source</i>.<br />
+programmazione chiamato: <i>C++</i> &mdash;) sia nel modo in cui verrà gestita l'evoluzione della disciplina: lo stesso che viene utilizzato per il software <i>open-source</i>.<br />
 I precetti del C'hi++ saranno illustrati in un libro dal titolo:
-<i>C'hi++ - Il senso della vita è il debug</i>
-e sono riassunti nel manifesto:
-<i>C'hi++ - Proposta per una metafisica open-source</i>
-che potete scaricare o leggere dal link qui sopra.
+<i>C'hi++ - Il senso della vita è il debug</i> e sono riassunti nel testo:
+<i>C'hi++ - Proposta per una metafisica open-source</i> che potete scaricare o leggere dal link qui sopra.
 <br />
 Tutti i testi, le immagini e i dati del C'hi++ sono raccolti in un
 <a  title="Va' al progetto su GitHub"
