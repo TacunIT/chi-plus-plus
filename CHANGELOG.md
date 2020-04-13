@@ -1,3 +1,11 @@
+## 0.8.26 (April 13, 2020)
+  - Completata prima redazione del capitolo sui commenti
+  - Trasferimento appunti nella mappa VUE
+  - Aggiunti link a Proposta e Manuale all'inizio dell'index.md"
+  - Aggiunto capitolo sugli oggetti e rimosso l'ordinale per l'indice dalle pagine del Manuale".
+  - Modifiche minori al sito
+  - Corretto menu del footer
+
 ## 0.8.25 (April 09, 2020)
   - Corretta la gestione della navigazione nel Manuale
   - Aggiunta la variabile status ai dati delle pagine del Manuale
