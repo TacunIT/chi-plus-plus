@@ -24,3 +24,8 @@ Un *int* è composto da sedici bit e può assumere per ciò
 
 Un *long int* è composto da trentadue bit e può assumere per ciò
 4294976296^\ ^valori.
+
+<!--
+Qui tutto quello che attiene all'etica.
+
+-->
