@@ -1,3 +1,7 @@
+## 0.8.27 (April 16, 2020)
+  - Aggiunte bozze per scienza e religione
+  - Rinominata l'Elettricità in Entropia
+
 ## 0.8.26 (April 13, 2020)
   - Completata prima redazione del capitolo sui commenti
   - Trasferimento appunti nella mappa VUE
