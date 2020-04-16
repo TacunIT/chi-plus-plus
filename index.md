@@ -6,26 +6,24 @@ class:  index
 footer: true
 ---
 
-<b>C'hi++</b> è un tentativo di spiegare il significato dell'Esistenza nei termini dell'informatica.<br />
-Questa miscela di spiritualità e tecnologia è evidente sia nel nome <i>C'hi++</i> (un gioco di parole fra il termine giapponese <i>C'hi</i> e il linguaggio di programmazione chiamato: <i>C++</i>) sia nel modo in cui verrà gestita l'evoluzione della disciplina: lo stesso che viene utilizzato per il software <i>open-source</i>.<br />
+<b>C'hi++</b> è un tentativo di spiegare il significato dell'Esistenza nei termini dell'informatica.
+Questa miscela di spiritualità e tecnologia è evidente sia nel nome <i>C'hi++</i> (un gioco di parole fra il termine giapponese <i>C'hi</i> e il linguaggio di programmazione chiamato: <i>C++</i>) sia nel modo in cui verrà gestita l'evoluzione della disciplina: lo stesso che viene utilizzato per il software <i>open-source</i>.
 I precetti del C'hi++ saranno illustrati in un libro dal titolo:
 [<i>C'hi++ - Il senso della vita è il debug</i>](/man/)
 e sono riassunti nel testo:
 [<i>C'hi++ - Proposta per una metafisica open-source</i>](/proposta/).
-<br />
 Tutti i testi, le immagini e i dati del C'hi++ sono raccolti in un
 <a  title="Va' al progetto su GitHub"
     target="github"
     href="https://github.com/chi-plus-plus/chi-plus-plus">
-    repository su GitHub</a>.
-Se volete altre informazioni su questo progetto, potete trovarle lì, nei file:
+    repository su GitHub</a>; e volete altre informazioni su questo progetto, potete trovarle lì, nei file:
 <a href="https://github.com/chi-plus-plus/chi-plus-plus" target="github">README</a> e
 <a href="https://github.com/chi-plus-plus/chi-plus-plus/blob/master/MANIFEST.md" target="github">MANIFEST</a>.
 
-<p class="immagine">氣 </p>
+---
 
-La mitologia ha spesso mescolato il soprannaturale con il livello
-più alto dello sviluppo scientifico o tecnologico.
+C'hi++ non è né scienza né religione, anche se ogni tanto finge di essere o l'una o l'altra.
+C'hi++ è mito e la mitologia ha spesso mescolato il soprannaturale con il livello più alto dello sviluppo scientifico o tecnologico.
 Anticamente, abbiamo attribuito una controparte divina al lampo
 che generava il fuoco, al moto degli astri, alla meteorologia.
 Più recentemente, Poe, in <i>Eureka</i>, ha ipotizzato che l'Universo sia
@@ -45,13 +43,13 @@ Le religoni, per “funzionare”, richiedono da una a tre
 dimensioni aggiuntive, oltre quelle note; la Scienza, per le sue
 <i>superstringhe</i> ha bisogno almeno di sette dimensioni aggiuntive,
 ovvero il doppio di quelle che servono per un Aldilà non spirituale.
-Esiste una spiegazione più semplice?<br />
+Esiste una spiegazione più semplice?
 Dopo averci ragionato su per una quarantina di
 anni, posso dire che sì: una spiegazione più semplice esiste ed è anche
 compatibile con molti dei princip&icirc; delle religioni canoniche,
 alle quali C'hi++ non vuole sostituirsi, ma affiancarsi. <br />
 <br />
-Il C'hi++ non si propone come una spiegazione assoluta e definitiva del
+C'hi++ non si propone come una spiegazione assoluta e definitiva del
 Significato dell'Esistenza, ma come un modello incompleto e perfettibile.
 È per questo motivo che ha una versione, come il software: perché possa
 evolvere col tempo, così come avviene per il software.
@@ -66,16 +64,14 @@ così il C'hi++ non fornisce una descrizione completa e accurata di ciò che
 è, è stato e sarà, ma può fornire una risposta non fideistica o
 dogmatica ad alcune domande riguardanti la nostra vita.
 
-<p class="immagine">氣 </p>
+---
 
 I princip&icirc; del C'hi++ si basano su una cosmogonia che riprende
 alcune idee di Poe, come il contrasto fra contrazione ed espansione,
 a cui aggiunge
 un maggior livello di dettaglio, definendo gli ipotetici elementi che
 costituiscono l'Universo ovvero, gli: <i>spazioni</i>, da cui il
-nome: <i>Spazionismo</i>
-(lo so che non è un nome serio, ma quando ho cominciato a formulare questa
-teoria, quindici anni fa, non avrei mai immaginato di renderla pubblica).<br />
+nome: <i>Spazionismo</i> (lo so che non è un nome serio, ma quando ho cominciato a formulare questa teoria non avrei mai immaginato di renderla pubblica e comunque è sempre bene non prendersi troppo sul serio).<br />
 <br />
 Per lo Spazonismo, l'Universo è costituito da elementi infinitesimali
 dotati di “esistenza potenziale”.
@@ -90,13 +86,13 @@ La vita dell'Universo è vista come un ciclo continuo:<br />
 <b>Fase 1.</b> L'universo è vuoto, tutta l'energia è concentrata in
 un'unico punto, tenuta insieme dalla Gravità.<br />
 <br />
-<b>Fase 2.</b> L'Elettricità (ovvero una Forza che causa separazione)
+<b>Fase 2.</b> L'Entropia (ovvero una Forza che causa separazione)
 sopraffà la Gravità e causa l'esplosione dell'Uno.
 L'energia comincia a espandersi nell'Universo, irradiando gli spazoni
 che quindi assumono massa ed esistenza, generando le stelle e i pianeti
 così come li conosciamo.<br />
 <br />
-<b>Fase 3.</b> Quando la spinta data dall'Elettricità diminuisce, la
+<b>Fase 3.</b> Quando la spinta data dall'Entropia diminuisce, la
 Gravità inverte il moto dell'energia/materia; l'Universo si contrae
 tornando a concentrarsi nell'Uno.
 Quando tutta l'energia dell'Universo è di nuovo concentrata nell'Uno,

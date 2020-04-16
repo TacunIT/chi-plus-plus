@@ -163,11 +163,11 @@ L\'Universo *è* il Paradiso: siamo noi che lo utilizziamo
 impropriamente.
 
 Ci sono due forze, contrapposte. Come dice Poe, una è la gravità, che
-tende a riunire tutto nell\'Uno; l\'altra è l\'elettricità, che separa e
+tende a riunire tutto nell\'Uno; l\'altra è l\'entropia, che separa e
 disperde.
 
 Servono tutte e due: se ci fosse solo la gravità, ci sarebbe solo
-l\'Uno, se ci fosse solo l\'elettricità, ci sarebbe l\'entropia.
+l\'Uno, se ci fosse solo l\'entropia, ci sarebbe la morte termica
 
 Alla lunga (molto lunga), una condizione simile porterebbe a un Universo
 piuttosto noioso, quindi, devono esserci entrambe, in continua
