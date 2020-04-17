@@ -59,9 +59,17 @@ BODY.proposta MAIN .citazione PRE {
     background-color: transparent;
 }
 
-/** Stili per le domande */
+/** 
+ * Stili per le domande.
+ * Le domande sui dogmi sono OL, mentre quelle su Hitler sono UL.
+ * Le OL hanno le lettere maiuscole come identificativi, 
+ * le UL hanno lettere minuscole
+ */
 OL.domande {
     list-style-type: upper-alpha;
+}
+UL.domande {
+    list-style-type: lower-alpha;
 }
 .domande {
     color: $domandeColor;
@@ -173,6 +181,7 @@ SECTION.note OL ,
 SECTION.bibliografia UL {
     font-size: 0.9rem;
     margin-left: 0;
+    padding: 0 1rem;
 }
 SECTION.note LI ,
 SECTION.bibliografia LI {
