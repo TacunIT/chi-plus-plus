@@ -29,9 +29,8 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 
 
 ## Executive summary
-Se continuerete nella lettura di questo documento (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
-Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.  
-Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e principii etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come quello riportato in copertina.  
+Il *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.
+Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e principii etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come quello riportato in copertina.
 Non ho titoli per scrivere di filosofia e religione, perché sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer, quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell'esaltazione religiosa; successivamente, descriverò alcune vulnerabilità logiche delle religioni canoniche e definirò delle linee-guida atte a prevenirle; presenterò poi la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.
 
 Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologie proprii dell'informatica e ne ho fornito una breve descrizione per coloro che non  abbiano familiarità con le attività di creazione del software; i tecnici mi perdonino le semplificazioni.
@@ -61,8 +60,7 @@ Pensate al gioco degli Scacchi: non esiste nessun motivo, all'interno della scha
 Al contrario, la Società moderna è una scacchiera in cui ciascun pezzo si muove nella maniera che preferisce, come “un asino privo di briglie” perché, in ossequio a un malinteso senso di libertà, sono state eliminate tutte le regole. Le persone di successo che si privano della vita sono pedoni che, arrivati alla fine della scacchiera grazie alla loro abilità, hanno scoperto che non esiste alcuna forma di promozione, perché insieme alle regole sono stati aboliti anche i giocatori.
 
 ### La cura
-Fermo restando che la vita su questo Pianeta non potrà mai migliorare realmente fino a quando non riusciremo a fare un uso più responsabile delle nostre gonadi, è ragionevole pensare che un nuovo schema di valori, che abbia al suo vertice la comunità e non l'individuo, unito a una moderata dose di spiritualità potrebbe aiutarci a uscire da questa picchiata auto-distruttiva, se troviamo un modo efficace per diffonderlo.
-
+Fermo restando che la vita su questo Pianeta non potrà mai migliorare realmente fino a quando non riusciremo a fare un uso più responsabile delle nostre gonadi, è ragionevole pensare che un nuovo schema di valori, che abbia al suo vertice la comunità e non l'individuo, unito a una moderata dose di spiritualità potrebbe aiutarci a uscire da questa picchiata auto-distruttiva, se troviamo un modo efficace per diffonderlo.  
 La (buona) politica sarebbe la soluzione ideale, se i (buoni) politici avessero il potere di prendere delle decisioni impopolari, ma ciò non è, perché gli elettori sono dei bambini che, dovendo scegliere fra un dietologo e un gelataio, non fanno mai la scelta corretta per la loro salute.
 La cultura non può venirci in aiuto perché la mancanza di stimoli esterni ha prodotto un'economia curtense delle idee nella quale letteratura, cinema, televisione e Internet riciclano ciascuna le idee delle altre, in un banchetto coprofago di concetti e storie già visti.
 L'arte potrebbe aiutarci, ma sfortunatamente non ce n'è più e quelle forme di appagamento sensoriale che da lungo tempo ormai ci vengono spacciate per “arte”, essendo espressione e quindi esaltazione di un singolo sarebbero addirittura controproducenti.
@@ -146,8 +144,7 @@ Il fatto è che, con buona pace di John Lennon, in un Mondo senza religioni la s
 il buon giudice non avrebbe meno difficoltà del Buonista a trovare una risposta.
 La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe comunque di spedirvi in prigione, dove trovereste ad attendervi il simpatico soggetto della domanda *B*.
 Questo perché anche i principii delle società laiche, al pari dei dogmi delle religioni, non sono verità comprovabili, ma opinioni o speranze.
-A differenza dei dogmi religiosi, però, i laici non possono rifarsi a valori di ordine superiore e, come abbiamo visto sopra, devono trovare i fondamenti delle loro affermazioni nella realtà contingente, cosa che non sempre è possibile, quindi le loro regole risultano ancora più inconsistenti di quelle religiose.
-
+A differenza dei dogmi religiosi, però, i laici non possono rifarsi a valori di ordine superiore e, come abbiamo visto sopra, devono trovare i fondamenti delle loro affermazioni nella realtà contingente, cosa che non sempre è possibile, quindi le loro regole risultano ancora più inconsistenti di quelle religiose.  
 Prendete ad esempio i trenta articoli della <a href="http://www.un.org/en/universal-declaration-human-rights/" target="un" >Dichiarazione dei Diritti dell'Uomo</a> del 1948: voi e io troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.
 Per quale motivo un Signore della Guerra centro-africano dovrebbe rispettarle, dato che non sono un insieme di norme giuridiche a cui gli Stati e gli individui debbano attenersi, ma un elenco di quelli che *dovrebbero essere*<a href="#achievements" class="nota" name="fn-4">4</a> i diritti di ogni essere umano?
 Perché, soprattutto, dovrebbe rispettare delle regole volte al mantenimento della pace, promulgate da un'Organizzazione che ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="#sipri" class="nota" name="fn-5">5</a>
@@ -311,8 +308,7 @@ L'ho chiamata *C'hi++*, un gioco di parole fra il termine giapponese *C'hi* (ovv
 Non è un accostamento casuale: la mia intenzione è quella di gestire l'evoluzione della mia teoria così come si gestisce il software; in particolare, il software cosiddetto: *open-source.*
 
 ### Software open-source
-Contrariamente al software realizzato da un individuo o da una società a scòpo di lucro, il software *open-source* è il prodotto della collaborazione di diversi programmatori che rendono disponibile il frutto del loro lavoro a titolo gratuito, pubblicando anche il codice sorgente del sistema.
-
+Contrariamente al software realizzato da un individuo o da una società a scòpo di lucro, il software *open-source* è il prodotto della collaborazione di diversi programmatori che rendono disponibile il frutto del loro lavoro a titolo gratuito, pubblicando anche il codice sorgente del sistema.  
 Rispetto al software cosiddetto: *proprietario*, ovvero il software realizzato da una persona o da una società che ne detiene i diritti, il software *open-source* ha diversi lati positivi:
 
 -   **libertà:** non impone legàmi con uno specifico fornitore o a uno
@@ -325,8 +321,7 @@ Rispetto al software cosiddetto: *proprietario*, ovvero il software realizzato d
 
 ### Versioni del software
 I letterati, gli scultori, i pittori non possono modificare le loro opere, una volta che sono state pubblicate. Possono dare un ritocco di colore qui, un colpo di scalpello là, ma si tratta sempre di aggiustamenti minimi, che non cambiano la struttura stessa dell'arte-fatto.
-I musicisti, i teatranti e, in parte, i cineasti sono un po' più fortunati, perché possono apportare più facilmente delle modifiche alle loro opere, ma si tratta comunque di eventi che accadono di rado.
-
+I musicisti, i teatranti e, in parte, i cineasti sono un po' più fortunati, perché possono apportare più facilmente delle modifiche alle loro opere, ma si tratta comunque di eventi che accadono di rado.  
 Al contrario, la buona produzione di software ha il vantaggio di essere in continua evoluzione.
 Un software può essere *stabile*, ovvero non avere difetti noti, ma non è mai finito, completo, *perfetto*; sia perché l'utilizzo potrebbe rivelare dei difetti sfuggiti alla fase di test, sia perché delle variazioni del contesto di utilizzo potrebbero richiedere delle modifiche al sistema.
 Il buon software viene quindi costantemente aggiornato e le diverse versioni di uno stesso prodotto sono numerate in maniera progressiva con dei codici composti da tre numeri separati da punti (p.es. *1.4.3*) che indicano, rispettivamente, la versione *major*, la versione *minor e* la *patch*.
@@ -395,27 +390,12 @@ Anche se in embrione, gli elementi principali del C'hi++ ci sono tutti; la raref
 Sostiene Aristotele che le scienze più rigorose sono quelle che richiedono il numero minore di premesse.
 La cosa mi conforta, perché la mia ipotesi richiede solo tre premesse per funzionare a livello “base”, e quattro per una visione un po’ più appetibile delle cose.
 I tre dogmi principali della mia “religione” sono:
-
 <ol>
 	<li>le cose possono esistere</li>
 	<li>l’Universo si espande</li>
 	<li>se lasci andare un peso, quello ti finisce su un piede</li>
-</ol>
-
-Del quarto dogma parleremo dopo, per ora concentriamoci su questi tre:<br />
-<br/>
-Dogma numero uno: le cose possono esistere.
-Questo è stato il dogma più facile da formulare, ma è fondamentale, perché se le cose non potessero esistere, tutto il resto non avrebbe senso.<br/>
-<br />
-Dogma numero due: l’Universo si espande.
-Questo dogma, se non me l’avessero detto, non l’avrei mai potuto sapere, ma va bene lo stesso. Allo stato attuale delle nostre conoscenze, tutto lascia supporre che l’Universo fosse, inizialmente, un’unica cosa che, per ragioni non ancora definite, è scoppiata disseminando i suoi pezzi in ogni dove.I pezzi si sono raggrumati in stelle e pianeti, permettendoci quindi di formulare il...<br/>
-<br />
-Dogma numero tre: se lasci andare un peso, quello ti finisce su un piede.
-Qui ho un po’ barato, buttandola in caciara, perché questo, dei tre dogmi, è quello meno comprovabile.
-O meglio, a livello locale (che è appunto quello da me utilizzato nella formulazione), è innegabile il fatto che tutto ciò che ci circonda sia sottoposto alla forza di gravità (se lo lasci andare, il martello ti cade sul piede e anche la Terra, o prima o poi, “cadrà” sul Sole), mentre è solo possibile che le diverse parti dell’Universo potranno, o prima o poi, subire l’attrazione l’una dell’altra e ricompattarsi in un Uno.<br/>
-</div>
-
-la ciclicità dell'Universo:
+</ol></div>
+la ciclicità dell'Universo:<br />  
 
 <div class="citazione" >
 Una volta che l’Universo sarà nuovamente collassato nell’Uno, i casi saranno due: resterà Uno per il resto del Tempo oppure esploderà di nuovo, dando vita a un nuovo Universo.
@@ -426,7 +406,7 @@ La prima ipotesi è possibile, ma poco probabile, quindi diamo per scontato che 
 In base allo stesso principio, dato per scontato che o prima o poi questo Universo tornerà a manifestarsi, è lecito pensare, non per fede, ma in base a un banale calcolo probabilistico, che anche ciò che c’è in esso possa o prima o poi tornare a essere. Noi compresi.
 </div>
 
-la memoria degli eventi passati:
+la memoria degli eventi passati:<br />
 
 <div class="citazione" >
 Il quarto dogma si discosta dai tre dogmi principali perché è l’unico che richiede una certa dose di fede. (...)
@@ -439,13 +419,13 @@ Ogni volta che il computer viene spento, la memoria si svuota e tutto quello che
 Insomma, il dogma numero quattro è: <I>Lo sai, perché ci sei già passato</i>.<br/>
 </div>
 
-l'auto-lesionismo delle scelte egoistiche:
+l'auto-lesionismo delle scelte egoistiche:<br />
 
 <div class="citazione" >
 Se davvero siamo tutti degli epifenomeni, possiamo manifestarci ora qui ora lì, a seconda dei casi e se io oggi (ovvero: <i>in questo ciclo dell’Universo</i>) mi metto a spacciare droga fregandomene delle persone che ammazzo e delle famiglie che rovino, domani (ovvero: <i>in un altro ciclo di questa particolare specie di Universo</i>), potrei benissimo ritrovarmi in uno di quei drogati o di quei familiari e subirei le conseguenze delle mie stesse azioni.
 È quindi decisamente meglio che io mi comporti bene e che cerchi, per quanto mi è possibile, di convincere anche gli altri a comportarsi bene.</div>
 
-la visone dell'esistenza come un processo di miglioramento continuo:
+la visone dell'esistenza come un processo di miglioramento continuo:<br />
 
 <div class="citazione" >
 Ora, il concetto di “bene”, a prescindere da una Divinità e da un corpo di regole predefinito non è che funzioni granché (come dimostra, senza volerlo, il libro: "Un’etica senza Dio" di Lecaldano), ma nel nostro caso possiamo definire “bene” quel comportamento che non lede, almeno intenzionalmente, nessuno.

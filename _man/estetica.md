@@ -2,8 +2,8 @@
 status:     bozza
 layout:     manuale
 class:      capitolo
-title:      L'Ikebarba
-permalink:  /man/ikebarba
+title:      Estetica
+permalink:  /man/estetica
 quote:      "*.* è il migliore"
 ---
 

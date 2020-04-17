@@ -8,8 +8,14 @@ quote:      "question = 2b | ( ! 2b );"
 ---
 
 <!--
-@todo: Riprendere i concetti visti nel Manfesto a proposito delle
-ideologie dell'ultimo cinquantennio quando si parla di vero e falso
+
+Utlizzare l'peratore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. Questo approccio si rirova anche nel precetto:
+
+    Amiamo ciò che ci ucciderà (se tutto va bene) 
+
+
+Ho messo intenzionalmente il capitolo sull'algebra booleana DOPO quello sugli operatori per dimostrare come i concetti di vero/falso giusto/sbagliato debbano essere definiti per prima cosa
+
 -->
 
 ## operatori
@@ -19,25 +25,7 @@ ideologie dell'ultimo cinquantennio quando si parla di vero e falso
 \[la negazione e il paradosso come metodo per comprendere ciò che non è
 di per sé evidente\]
 
-### operatori logici
 
-È impossibile definire in maniera assoluta i concetti di *vero* e di
-*falso*.
-
-Possiamo definire "falso" il contrario di "vero", ma non potendo
-definire il concetto di "vero", non possiamo sapere cosa sia il suo
-contrario.
-
-La ragione per cui non possiamo definire il concetto di "vero" è che
-farlo implica una ricorsione: quale che sia la definizione prescelta,
-prima di poterla prendere per buona dovremo poterla considerare vera, ma
-ciò è impossibile perché non sappiamo (ancora) cosa sia, effettivamente,
-"vero".
-
-Tutto ciò non vuol dire che non esistano il vero e il falso, ma solo che
-i nostri strumenti dialettici sono inadeguati a descriverli.
-
-I computer sono più fortunati: nel loro mondo, il vero e il falso sono
 
 Istruzioni condizionali
 -----------------------
