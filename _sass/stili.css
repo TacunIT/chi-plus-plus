@@ -111,6 +111,9 @@ OL {
     padding: 0 2rem;
     margin: 1rem 0;
 }
+LI {
+    text-align: left;
+}
 IMG.badge {
     height: 1.2rem;
 }
