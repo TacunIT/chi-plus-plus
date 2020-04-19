@@ -38,7 +38,7 @@ La contraddittoria<a href="#harari" class="nota" name="fn-1"><sup>1</sup></a> tr
 > Dio, Patria, Famiglia
 
 Nulla prova che questi valori siano reali, corretti o immutabili, anzi: il fatto stesso che si debba coniare un motto per propugnare un'idea significa che quel concetto è accessorio e che serve un'opera di convincimento per farlo accettare globalmente.
-Buona parte dei principii e dei concetti che regolano le nostre vite sono frutto della nostra immaginazione (il che non vuol dire che siano falsi).
+Buona parte dei princip&icirc; e dei concetti che regolano le nostre vite sono frutto della nostra immaginazione (il che non vuol dire che siano falsi).
 Crediamo in essi non perché siano veri ed evidenti, ma perché qualcosa o qualcuno ci ha convinto a farlo.  
 Se consideriamo la notevole disparità di vedute e convinzioni dei Popoli della Terra e, talvolta, degli stessi individui all'interno di un Popolo, è facile capire come la frase:
 
