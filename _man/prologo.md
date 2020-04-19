@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Prologo 
 h1:         Prologo
-quote:      "In principio era il BIOS"
+quote:      "In principio era il logo"
 ---
 
 Nacqui da famiglia ricca, ma troppo tardi.  

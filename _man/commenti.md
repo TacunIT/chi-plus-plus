@@ -12,7 +12,7 @@ quote:      "Il Compilatore e il Linker non usano carità, tengono i diecimila o
 I commenti sono la cosa più importante, quando si programma.
 
 Un commento è un breve brano di testo che descrive in linguaggio comune
-il funzionamento o lo scopo del codice seguente.
+il funzionamento o lo scòpo del codice a cui è riferito:
 
 ```
 /**
@@ -52,7 +52,7 @@ trova a riutilizzarlo o a correggerlo vi presti la dovuta attenzione.
 Il programmatore perfetto non commenta il suo codice, perché il suo codice è auto-esplicativo:
 
 ```
-typedef Importo long;
+typedef Importo unsigned long;
 
 Importo raddoppiaStipendio(Importo stipendioCorrente)
 {
@@ -72,14 +72,14 @@ typedef time_t Data;
 definisce il tipo di dato `Data` come alias del tipo di dato standard `time_t`, mentre l'istruzione:
 
 ```
-typedef Importo long;
+typedef Importo unsigned long;
 ```
 
-definisce il tipo di dato `Importo` come alias del tipo di dato standard `long`.
+definisce il tipo di dato `Importo` come alias del tipo di dato standard `unsigned long`.
 
 La definizione dei proprii tipi di dato non solo rende il codice più leggibile, ma lo rende anche più facile da modificare.
-La funzione originale gestisce dei valori di tipo `long`, dei numeri interi di 32 bit che vanno bene per uno stipendio che non abbia cifre decimali, come quello del Maestro Canaro nel secolo scorso.
-Se dovessimo raddoppiare uno stipendio con delle cifre decimali, dovremmo utilizzare dei tipi di dato come i `float` o i `double` e, nel primo caso, saremmo costretti a modificare sia il valore di ritorno che il tipo di parametro della funzione:
+La funzione originale utilizza dei valori di tipo `unsigned long`, ovvero delle sequenze di 4 byte che permettono di memorizzare numeri interi da 0 a 4.294.967.295 (2<sup>32</sup>).
+Questo tipo di dato può essere utilizzato per uno stipendio che non abbia cifre decimali, come quello del Maestro Canaro nel secolo scorso, ma se dovessimo raddoppiare uno stipendio con delle cifre decimali, dovremmo utilizzare dei tipi di dato come i `float` o i `double` e, senza una `typedef`, saremmo costretti a modificare sia il valore di ritorno che il tipo di parametro della funzione:
 
 ```
 float raddoppia(float stipendio)
@@ -87,7 +87,7 @@ float raddoppia(float stipendio)
     return stipendio * 2;   //  raddoppia il valore 
 }
 ```  
-Nel secondo caso, invece, dovremmo solo modificare l'istruzione `typedef`; tutto il resto potrebbe restare invariato:
+Se invece abbiamo definito un nostro tipo di dato dobbiamo modificare solo l'istruzione `typedef`, lasciando tutto il resto invariato:
 
 
 ```
@@ -152,9 +152,8 @@ gli chiese di spiegare che cosa facesse:
 {% include_relative src/8.1-codice-maestro.cpp %}
 ```
 
-Gli allievi studiarono gli algoritmi e diedero le loro risposte, ma
-sbagliarono tutti, perché il codice era compreso fra un */ \** e un *\*/* e,
-di fatto, non faceva nulla.
+Gli allievi studiarono il codice e diedero le loro risposte, ma
+sbagliarono tutti, perché tutte le istruzioni erano comprese fra un */ \** e un *\*/* e, di fatto, non facevano nulla.
 
 <!--
 I commenti sono un po' come la letteratura: se si scrive troppo poco è
