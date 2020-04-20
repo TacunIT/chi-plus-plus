@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+<head>
+    <title>Istruzioni condizionali | C'hi++</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"     content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="canonical"            href="http://localhost:4000/man/istruzioni-condizionali" />
+    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/chi-plus-plus.png" />
+    <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
+    <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:title"        content="Istruzioni condizionali" />
+    <meta property="og:type"         content="website" />    
+    <meta property="og:description"  content="Chi++ - Proposta per una metafisica open-source"" />
+    <meta property="og:image"        content="http://localhost:4000/assets/img/chi-plus-plus.png" />
+    <meta property="og:image:width"  content="300" />
+    <link rel=icon href=/assets/img/favicon.ico type=image/x-icon>
+    <script src="https://use.fontawesome.com/b4b35c88c8.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Simonetta:400,400i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/screen.css" media="screen">        
+    <link rel="stylesheet" href="/assets/css/print.css"  media="print"  ><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-159394431-1');
+</script></head>
+<body class="manuale capitolo ">
+
+    <div id="page">
+
+        <header><nav class="menu-top">
+    
+    
+    <a href="/man/espressioni-e-operatori" 
+       title="Vai a: Espressioni e operatori" 
+       class="left">
+        <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+    
+    
+    <a href="/" class="center" title="Torna alla home-page">
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a href="/man/indice" class="center" title="Torna all'indice del Manuale">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+
+    
+    <a href="/man/algebra-booleana" 
+       title="Vai a: Algebra booleana" 
+       class="right" >
+            <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+    </a>
+    
+    
+</nav>
+</header>
+
+        <main class="redazione">
+            
+        
+
+            <h1>
+                Istruzioni condizionali
+            </h1>
+
+            <blockquote class="motto"></blockquote>
+
+            <section id="testo">
+
+                <p>Le istruzioni condizionali sono la parte più importante del codice.
+Ogni programma deve saper reagire correttamente al variare delle condizioni di utilizzo; per far ciò, si utilizzano le istruzioni condizionali, che permettono di definire il comportamento del sistema a seconda che una determinata condizione si riveli vera o falsa.
+Il C++ possiede due tipi di istruzione condizionale: le sequenze <code>if-else</code> e l’istruzione <code>switch</code>.</p>
+
+<h3 id="istruzioni-if-else">Istruzioni <code>if-else</code></h3>
+
+<p>La forma generale di questa istruzione è la seguente:</p>
+
+<pre><code>if ( &lt;condizione&gt; ) {
+    // istruzioni da eseguire se la condizione è vera
+} else {
+    // istruzioni da eseguire se la condizione è falsa
+}
+</code></pre>
+
+<p>Se l’espressione condizionale all’inizio del codice è vera, il programma eseguirà il primo blocco di istruzioni; se no, eseguirà il secondo blocco di istruzioni.</p>
+
+<pre><code>if ( a &gt; 8 ) {
+    cout &lt;&lt; "maggiore" &lt;&lt; endl;
+} else {
+    cout &lt;&lt; "minore" &lt;&lt; endl;
+}
+</code></pre>
+
+<p>Se la condizione <em>falso</em> non richiede alcuna azione specifica, il secondo blocco di istruzioni può essere omesso:</p>
+
+<pre><code>typedef Importo unsigned long;
+
+Importo raddoppiaStipendio(Importo stipendioCorrente)
+{
+    if ( stipendioCorrente &gt; 0 )
+    {
+        stipendioCorrente *= 2; 
+    }    
+    return stipendioCorrente;   
+}
+</code></pre>
+
+<p>Similmente, le parentesi graffe possono essere omesse se il blocco istruzioni che racchiudono è costituito da una singola istruzione:</p>
+
+<pre><code>if ( a &gt; 8 ) 
+    cout &lt;&lt; "maggiore" &lt;&lt; endl;
+else
+    cout &lt;&lt; "minore" &lt;&lt; endl;
+</code></pre>
+
+<p>Personalmente, trovo che questa forma sia inelegante e che renda il codice meno chiaro, favorendo quindi gli errori.
+La utilizzo solo nelle istruzioni di gestione degli errori, dove il flusso del programma si interrompe bruscamente, perché l’aspetto sgraziato dell’istruzione evidenzia l’eccezione, rendendo il codie più auto-esplicativo.</p>
+
+<p>Se le condizioni da valutare sono più di due, si possono concatenare più istruzioni condizionali utilizzando l’istruzione <code>else if</code>, che permette di definire una condizione alternativa alla prima e di associarle un blocco di codice.
+Anche in questo caso, si può chiudere la sequenza con un’istruzione <code>else</code>, definendo un blocco di istruzioni da eseguire se non si verifica nessuna delle condizioni previste.</p>
+
+<pre><code>if ( &lt;prima condizione&gt; ) {
+    /*
+     * istruzioni da eseguire se 
+     * la prima condizione è vera
+    */
+} else if ( &lt;seconda condizione&gt; ){
+    /*
+     * istruzioni da eseguire se 
+     * la prima condizione è vera
+     */
+} else {
+    /*
+     * istruzioni da eseguire se nessuna
+     * delle due condizioni è vera
+     */
+}
+</code></pre>
+
+<p>Le istruzioni <code>if-else</code> influenzano la leggibilità del codice; è una cosa di cui il buon programmatore deve sempre tenere conto.
+Il C++ è un linguaggio indipendente dalla formattazione, quindi, una stessa istruzione può essere scritta in molte maniere diverse:</p>
+
+<pre><code>if ( &lt;condizione&gt; )
+{
+    ...
+}
+else
+{
+    ...
+}
+</code></pre>
+
+<p>o, pure:</p>
+
+<pre><code>if ( &lt;condizione&gt; ) {
+    ...
+} else {
+    ...
+}
+</code></pre>
+
+<p>o perfino:</p>
+
+<pre><code>if ( &lt;condizione&gt; ) { ...} else { ... }
+</code></pre>
+
+<p>Se le istruzioni sono poche e semplici, una forma vale l’altra (fatte salve le questioni di stile, ovviamente), ma se il flusso del programma prevede, come di solito avviene, delle condizioni annidate, è necessario fare in modo che la forma dell’istruzione semplifichi tanto la scrittura che la lettura che un’eventuale correzione del codice.<br />
+Immagina un brano di codice che debba fare una verifica all’inizio dell’elaborazione e, a seconda dell’esito, eseguire una sequenza di istruzioni o inviare un messaggio di errore:</p>
+
+<pre><code>if ( &lt;condizione&gt; )
+{
+    /*
+     * righe di codice da
+     * eseguire in caso la
+     * condizione sia vera
+     */
+}
+else
+{
+    /* messaggio di errore */
+}
+</code></pre>
+
+<p>Se le istruzioni da eseguire in caso di buon successo della verifica sono poche e semplici, questa sequenza non darà problemi, ma se, al contrario, le istruzioni fossero tante e complesse, leggendo il codice potresti arrivare all’istruzione <code>else</code> e non ricordarti più a quale condizione fosse associata.<br />
+In questi casi, io preferisco la forma:</p>
+
+<pre><code>if ( &lt;errore&gt; )
+{
+    /* messaggio di errore */
+}
+else
+{
+    /*
+     * righe di codice da
+     * eseguire in caso la
+     * condizione sia vera
+     */
+}
+</code></pre>
+
+<p>Dato che la gestione dell’errore non richiederà mai più di qualche riga di codice, a colpo d’occhio potrai capire tutto il flusso del programma, indipendentemente dalla lunghezza del secondo blocco di istruzioni.</p>
+
+<p>Tutto questo, ovviamente, non vuole essere né un invito né una giustificazione per la scrittura di istruzioni complesse.
+A meno che non sia necessario evitare le chiamate a funzione per garantire un’alta velocità di esecuzione, è sempre meglio scomporre il flusso del programma in una serie di funzioni distinte.
+Renderai il tuo programma un po’ più lento (o, meglio: un po’ meno veloce), ma il codice sarà molto più facile da leggere o da modificare. 
+<!-- @todo parlare delle macro, ma non qui. --></p>
+
+<p>Immagina adesso un brano di codice che richieda molte condizioni <code>if</code> concatenate:</p>
+
+<pre><code>esito = 0;
+
+if ( &lt;condizione 1&gt; ) {
+    esito = 1
+} else if ( &lt;condizione 2&gt; ) {
+    esito = 2
+} else if ( &lt;condizione 3&gt; ) {
+    esito = 3
+} else {
+    esito = 9
+}
+
+return esito
+</code></pre>
+
+<p>Questa forma, per quanto corretta e canonicamente ineccepibile, potrebbe rivelarsi difficile da gestire se le condizioni da considerare fossero molto complesse o numerose.
+Il buon programmatore, allora, può decidere di contravvenire alla (giusta) norma che prescrive di non inserire delle istruzioni <code>return</code> all’interno del codice, e scrivere la sequenza in questo modo:</p>
+
+<pre><code>esito = 0;
+
+if ( &lt;condizione 1&gt; ) {
+    return 1
+}
+if ( &lt;condizione 2&gt; ) {
+    return 2
+} 
+if ( &lt;condizione 3&gt; ) {
+    return 3
+} 
+return 9
+</code></pre>
+
+<p>Non ti sto dicendo che sia giusto scrivere così e vedi da solo che il codice è rozzo e inelegante, ma ci potrebbero essere dei casi in cui sia questa, la forma più efficiente.
+Per esempio, per un sistema che generi del codice in maniera automatica, è molto più semplice gestire delle istruzioni <code>if</code> isolate che delle condizioni <code>if-else</code> concatenate.
+Pensa a una <em>stored-procedure</em> che debba controllare l’integrità referenziale dei parametri ricevuti:</p>
+
+<pre><code>CREATE FUNCTION utente_insert (
+  _id_classe INTEGER
+, _id_gruppo INTEGER
+, _username  VARCHAR(255)
+, _cognome   VARCHAR(80)
+, _nome      VARCHAR(80)
+)
+RETURNS INTEGER DETERMINISTIC
+BEGIN
+    DECLARE _id    INTEGER DEFAULT -1;
+    DECLARE _count INTEGER DEFAULT 0;
+
+    SELECT count(*) INTO _count FROM classe WHERE (id = _id_classe);
+    IF _count = 0 THEN
+        RETURN -2;
+    END IF;
+
+    SELECT count(*) INTO _count FROM gruppo WHERE (id = _id_gruppo);
+    IF _count = 0 THEN
+        RETURN -3;
+    END IF;
+
+    IF (_username IS NULL) OR (_username = '') THEN
+        RETURN -4;
+    END IF;
+    
+    IF (_cognome IS NULL) OR (_cognome = '') THEN
+        RETURN -5;
+    END IF;
+
+    IF (_nome IS NULL) OR (_nome = '') THEN
+        RETURN -6;
+    END IF;
+
+    ...
+
+</code></pre>
+
+<p>Se scrivi il codice in questa maniera, puoi inserire o rimuovere un parametro (e i relativi controlli) senza alterare il resto del codice, cosa che non avverrebbe se tu concatenassi le istruzioni <code>if</code>.</p>
+
+<!--
+Attento, però: mettere in sequenza delle semplici istruzioni `if` è cosa
+ben diversa dal creare una catena di istruzioni `else-if` .
+
+[specificare la differenza e la necessità del return per bloccare i controlli; chiudere con l'aneddoto del Maestro Canaro e il sacerdote buddista]
+-->
+
+<h3 id="istruzione-switch">Istruzione <code>switch</code></h3>
+
+
+            </section>
+            
+        
+
+        
+        </main>
+
+        
+
+    </div>
+
+  </body>
+
+</html>
