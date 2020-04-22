@@ -156,6 +156,8 @@ Gli allievi studiarono il codice e diedero le loro risposte, ma
 sbagliarono tutti, perché tutte le istruzioni erano comprese fra un */ \** e un *\*/* e, di fatto, non facevano nulla.
 
 <!--
+@todo - introdurre il concetto di "post-it"
+
 I commenti sono un po' come la letteratura: se si scrive troppo poco è
 male; se si scrive troppo, dilungandosi in descrizioni inutili, è
 altrettanto sbagliato.

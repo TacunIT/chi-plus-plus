@@ -41,18 +41,15 @@ richieste in un linguaggio che il computer può comprendere.
 ---
   
 Il linguaggi di programmazione possono essere di *alto livello* o di *basso livello*, a seconda della componente del computer con cui dialogano.
-
-Un computer è come una nave.  
-L'hardware è in basso, come la sala macchine e la CPU è come il capo macchinista: non vede il mare, non vede il cielo, non sa nemmeno se la nave stia andando a Nord oppure a Sud. 
-Riceve le sue istruzioni dall'interfono e si interessa solo solo della velocità e dei consumi.  
-Il sistema operativo è l'equipaggio. 
-È in una posizione intermedia, né in basso né in alto e si prende cura della nave e del carico. 
-Può parlare con il Comandante e con il capo macchinista, ma non parla mai con gli armatori.
+Un computer è come una nave. 
+L'hardware è in basso, come la sala macchine e la CPU è il capo-smacchinista: non vede il mare, non vede il cielo, non sa nemmeno se la nave stia andando a Nord oppure a Sud; riceve le sue istruzioni dall'interfono e si interessa solo solo della velocità e dei consumi.
+Il sistema operativo è l'equipaggio.
+È in una posizione intermedia, né in basso né in alto e si prende cura della nave e del carico; può parlare con il Comandante e con il capo macchinista, ma non parla mai con gli armatori.
 L'interfaccia utente, invece, è il ponte di comando.
 È il punto più alto della nave, da cui si può vedere tutto. 
 È in contatto diretto con gli armatori, da cui riceve delle direttive su ciò che deve o non deve fare e con l'equipaggio, che lo informa sullo stato della nave.
 
-Ciascun livello del computer ha il suo linguaggio.  
+Ciascun livello del computer ha il suo linguaggio.
 La CPU di questo computer “ragiona” in quello che si chiama: *linguaggio macchina*, ovvero una lunga serie di valori decimali che indicano sia le operazioni da compiere che le grandezze coinvolte.
 Il sistema operativo è scritto in C, perché è il linguaggio che si adatta meglio a gestire un computer.
 L'interfaccia utente, infine, sfrutta dei linguaggi a oggetti come il C++ per creare gli elementi grafici che le consentono di interagire con l'utente.
@@ -91,14 +88,13 @@ Invertendo questi concetti, una volta il Maestro Canaro disse:
 
 Noi percepiamo il mondo reale come un insieme di eventi che coinvolgono
 una o più entità.
-Ciascuna entità è identificabile per le sue caratteristiche fisiche e ha un suo modo particolare di reagire agli stimoli esterni.  
+Ciascuna entità è identificabile per le sue caratteristiche fisiche e ha un suo modo particolare di reagire agli stimoli esterni.
 Per descrivere le entità, i linguaggi di programmazione hanno i [tipi di dato](/man/tipi-di-dato); per descrivere gli eventi, hanno [istruzioni e operatori](/man/espressioni-e-operatori).
-Un linguaggio di programmazione è tanto più efficace quanto più i suoi tipi di dato e i suoi costrutti sintattici riescono a descrivere le entità che il programma dovrà gestire.  
+Un linguaggio di programmazione è tanto più efficace quanto più i suoi tipi di dato e i suoi costrutti sintattici riescono a rappresentare le entità che il programma dovrà gestire.  
 
-Ci sono molti linguaggi di programmazione.  
+Ci sono molti linguaggi di programmazione.
 Ciascun linguaggio sa spiegare bene certe cose e meno bene certe altre.
-Esistono linguaggi che descrivono bene le transazioni bancarie, ma che sono inadatti a gestire il treffico aereo; altri che funzionano molto bene per creare pagine Web, ma con cui sarebbe masochistico scrivere un sistema operativo.  
-
+Esistono linguaggi che descrivono bene le transazioni bancarie, ma che sono inadatti a gestire il treffico aereo; altri che funzionano molto bene per creare pagine Web, ma con cui sarebbe masochistico scrivere un sistema operativo. 
 Un programmatore che conosce a fondo un certo linguaggio di
 programmazione può utilizzarlo efficacemente per scrivere qualsiasi
 programma, ma a quale prezzo?
@@ -118,19 +114,19 @@ Descrivere i sentimenti con la matematica è come cercare di descrivere
 rigorosamente un sogno: si ottiene sempre una rappresentazione parziale.
 Meglio descriverlo con la musica, lasciando che le suggestioni
 siano implicite.  
-La matematica, inoltre, contiene preposizioni formalmente corrette che sono o false o paradossali, come la radice quadrata di -1.
+La matematica, inoltre, non è del tutto affidabile, perché contiene proposizioni formalmente corrette che sono paradossali, come la radice quadrata di -1  
 Il Maestro Canaro sosteneva che i paradossi sono la crittografia di Dio.
 Se fosse vero, la matematica sarebbe utile non perché quasi sempre è coerente,
 ma perché, di quando in quando, produce dei paradossi.  
 
 ---
 
-I linguaggi di programmazione possono essere di due tipi: *interpretati* o *compilati*.  
+I linguaggi di programmazione possono essere di due tipi: *interpretati* o *compilati*.
 Posso spiegarti la differenza in questo modo: immagina di essere in Cina e di dover tornare al tuo albergo in taxi.
 Se non parli il Cinese, ha due possibilità: o porti con te un interprete che
 spieghi al tassista dove devi andare o ti fai dare dall'albergo un foglio di
 carta con l'indirizzo e lo fai vedere al guidatore del taxi.
-Entrambe le possibilità hanno lati positivi e negativi.  
+Entrambe le possibilità hanno lati positivi e negativi.
 Se scegli di portarti dietro un interprete avrai dei costi in più, ma sarai libero di andare dove vuoi: in albergo, in un ristorante o in un locale notturno.
 Se invece opti per il foglio con l'indirizzo risparmierai i soldi dell'interprete, ma, una volta salito in taxi, potrai solo tornare all'albergo.  
 
@@ -139,19 +135,19 @@ Il codice dei linguaggi interpretati viene letto da un programma chiamato: *inte
 Il codice dei linguaggi compilati, al contrario, viene letto da un programma chiamato *compilatore*, che lo converte in istruzioni comprensibili dal computer e scrive queste istruzioni in un nuovo file, detto: *eseguibile*.  
 Anche in questo caso ciascun metodo ha lati positivi e lati negativi.  
 I linguaggi interpretati sono più lenti, perché il passaggio lettura/conversione/esecuzione si ripete ogni volta che il codice viene elaborato; inoltre, richiedono delle risorse di sistema in più da destinare all'interprete.
-In compenso, ogni modifica al codice sorgente viene trasmessa immediatamente anche al programma in esecuzione.  
+In compenso, ogni modifica al codice sorgente viene trasmessa immediatamente anche al programma in esecuzione.
 I linguaggi compilati sono più rapidi e richiedono meno risorse di sistema perché la compilazione avviene solo una volta, dopo di che il programma può essere eseguito autonomamente, ma se si modifica il codice sorgente, il programma dovrà essere ri-compilato per funzionare correttamente.
 
 Anche la religione è, da un certo punto di vista, un linguaggio di programmazione, perché consente agli umani di dialogare con Dio.
 Il codice, in questo caso, è la preghiera, che i fedeli formulano e inviamo alla Divinità nella speranza che la esegua.
-Anche le religioni possono essere o compilate o interpretate, a seconda che la comunicazione fra il fedele e Dio sia diretta o mediata da un Ordine sacerdotale.
+Anche le religioni, come i linguaggi di programmazione, possono essere o compilate o interpretate, a seconda che la comunicazione fra il fedele e Dio sia diretta o mediata da un Ordine sacerdotale.
 
 ---
 
-Tutti i linguaggi hanno una sintassi; tutti i linguaggi hanno dei tipi
-di dato. Pochissimi linguaggi hanno anche dei principii.  
+Tutti i linguaggi hanno una sintassi, tutti i linguaggi hanno dei tipi
+di dato; pochissimi linguaggi hanno anche dei principii.
 I principii sono importanti, perché danno robustezza al linguaggio.
-Il linguaggio C, da cui è derivato il C++, non ha principii: è solo un modo per descrivere gli eventi all'interno di un computer.
+Il linguaggio C, da cui è derivato il C++, non ha principii: è solo un modo per descrivere gli eventi all'interno di un computer.  
 L'istruzione:
 
 ```
@@ -196,6 +192,9 @@ Le prime diciassette mattonelle sono occupate, ma dalla diciottesima alla ventic
 </table>  
 
 La variabile *b*, a questo punto, avrà un *indirizzo*, ovvero il numero della prima mattonella in cui hai scritto (18) e un *valore*, ovvero il numero binario contenuto nelle otto mattonelle (23).  
+<!-- 
+@todo - approfondire i concetti di rvalue, lvalue e le nuove categorie del C++11
+-->
 Se l'istruzione successiva fosse:
 
 ```
@@ -239,7 +238,7 @@ tutto quello che dovresti fare è di cercare un'altra serie di otto mattonelle l
   </tr>
 </table>  
 
-La moltiplicazione per due, in binario, è l'equivalente della moltiplicazione per dieci nella numerazione decimale.
+Ti vedo perplesso, ma ragiona: la moltiplicazione per due, in binario, è l'equivalente della moltiplicazione per dieci nella numerazione decimale.
 Se devi moltiplicare un numero decimale per la base del sistema di numerazione &mdash; che è dieci, appunto &mdash;, lo sposti a sinistra di un posto e aggiungi uno zero a destra:
 
 ```

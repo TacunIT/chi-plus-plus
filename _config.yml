@@ -28,7 +28,6 @@ collections:
          - copertina.md
          - dedica.md
          - indice.md
-         - prefazione.md
          - prologo.md
          - incipit.md
          - mitopoietica.md
@@ -39,6 +38,8 @@ collections:
          - commenti.md
          - tipi-di-dato.md
          - espressioni-e-operatori.md
+         - istruzioni-condizionali.md
+         - istruzioni-iterative.md
          - algebra-booleana.md
          - funzioni.md
          - classi.md

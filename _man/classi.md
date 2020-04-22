@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Le classi
 permalink:  /man/classi
-quote:      ""
+quote:      "Ceci n'est pas une |"
 ---
 
 Funzioni di interfaccia
