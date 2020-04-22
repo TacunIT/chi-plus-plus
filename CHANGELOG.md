@@ -1,3 +1,9 @@
+## 0.8.28 (April 22, 2020)
+  - Aggiunto un capitolo distinto per le funzioni iterative
+  - Separate le istruzioni condizionali dagli operatori
+  - Modifiche all'ordine dei capitoli del Manuale
+  - Correzioni minori alla Proposta
+
 ## 0.8.27 (April 16, 2020)
   - Aggiunte bozze per scienza e religione
   - Rinominata l'Elettricità in Entropia
