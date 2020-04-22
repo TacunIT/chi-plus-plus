@@ -7,7 +7,8 @@ permalink:  /man/istruzioni-condizionali
 quote:      ""
 ---
 
-Le istruzioni condizionali sono la parte più importante del codice.
+Le istruzioni condizionali sono l'elemento più importante del codice.
+
 Ogni programma deve saper reagire correttamente al variare delle condizioni di utilizzo; per far ciò, si utilizzano le istruzioni condizionali, che permettono di definire il comportamento del sistema a seconda che una determinata condizione si riveli vera o falsa.
 Il C++ possiede due tipi di istruzione condizionale: le sequenze `if-else` e l'istruzione `switch`.
 
@@ -240,7 +241,11 @@ Se scrivi il codice in questa maniera, puoi inserire o rimuovere un parametro (e
 Attento, però: mettere in sequenza delle semplici istruzioni `if` è cosa
 ben diversa dal creare una catena di istruzioni `else-if` .
 
-[specificare la differenza e la necessità del return per bloccare i controlli; chiudere con l'aneddoto del Maestro Canaro e il sacerdote buddista]
+@todo
+- specificare la differenza e la necessità del return per bloccare i controlli;
+- introdurre l'idea delle "variazioni" della storia dell'Universo
+- chiudere con l'aneddoto del Maestro Canaro e il sacerdote buddista.
+
 -->
 
 ### Istruzione `switch`

@@ -45,16 +45,16 @@ Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l'Ebrai
 
 ---
 
-Le principali novità aggiunte al C dal C++ sono: l'*astrazione dei dati*, la *programmazone a oggetti* e la *generic programming*.  
-Adessso ti spiego cosa sono, ma tu non preoccuparti se non capisci: approfondiremo tutti questi concetti in seguito. 
+Le principali novità aggiunte al C dal C++ sono: l'*astrazione dei dati*, la *programmazone a oggetti* e la *generic programming*.
+Ora ti spiego cosa sono, ma tu non preoccuparti se non capisci: approfondiremo tutti questi concetti in seguito. 
 
 I tipi di dato del C sono:
 
     char, int, float, double, array, enum, struct, union
 
-Più che sufficienti per scrivere il *kernel* di Unix, ma decisamente inadeguati per scrivere un programma che gestisca delle linee telefoniche.  
-Perché un linguaggio di programmazione possa gestire con la stessa facilità un flusso di dati, un utente, una linea telefonica o anche un allevamento di cavalli, è necessario che oltre ai tipi di dato predefiniti, possa gestire anche delle nuove entità definite dal programmatore.  
-Questa è quella che si chiama *data abstraction* e il C++ la ottiene per mezzo delle *classi*.
+Più che sufficienti per scrivere il *kernel* di Unix, ma decisamente inadeguati per scrivere un programma che gestisca delle linee telefoniche.
+Perché un linguaggio di programmazione possa gestire con la stessa facilità un flusso di dati, un utente, una linea telefonica o anche un allevamento di cavalli, è necessario che oltre ai tipi di dato predefiniti, possa gestire anche delle nuove entità definite dal programmatore.
+Questa è ciò che si chiama *data abstraction* e il C++ la ottiene per mezzo delle *classi*.
 Le classi sono la rappresentazione, all'interno del codice, di un'entità:
 
 ```
