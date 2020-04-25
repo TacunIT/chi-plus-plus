@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Il polimorfismo
 permalink:  /man/polimorfismo
-quote:      "Chi vuole capire il computer<br />deve andare nella terra del computer."
+quote:      "Wer den Computer will verstehen,<br />Muss in Computers Lande gehen.."
 ---
 
 Il Maestro Canaro era decantato da clienti e colleghi per la purezza della sua vita.  

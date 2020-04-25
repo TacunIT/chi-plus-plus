@@ -5,7 +5,7 @@ class:      capitolo
 index:      6
 title:      I linguaggi di programmazione
 permalink:  /man/linguaggi-di-programmazione
-quote:      "Tutto è byte."
+quote:      "Dio non programma in Assembler con l'Universo."
 ---
 
 Brian Kernigan, disse:
