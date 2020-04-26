@@ -7,7 +7,7 @@ footer: true
 ---
 
 <b>C'hi++</b> è un tentativo di spiegare il significato dell'Esistenza nei termini dell'informatica.
-Questa miscela di spiritualità e tecnologia è presente sia nel nome *C'hi++* (un gioco di parole fra il termine giapponese *C'hi* e il linguaggio di programmazione chiamato: *C++*) sia nel modo in cui verrà gestita l'evoluzione della disciplina: lo stesso che viene utilizzato per il software *open-source*.
+Questa miscela di spiritualità e tecnologia è presente sia nel nome *C'hi++*, che è un gioco di parole fra il termine giapponese *C'hi* e il linguaggio di programmazione chiamato: *C++*, sia nel modo in cui verrà gestita l'evoluzione della disciplina: lo stesso che viene utilizzato per il software *open-source*.
 I precetti del C'hi++ saranno illustrati in un libro dal titolo:
 [*C'hi++ - Il senso della vita è il debug*](/man/)
 e sono riassunti nel testo:
@@ -23,7 +23,7 @@ Tutti i testi, le immagini e i dati relativi al C'hi++ sono raccolti in un
 ---
 
 C'hi++ non è né scienza né religione, anche se ogni tanto finge di essere o l'una o l'altra.
-C'hi++ è favola, mito e la mitologia ha spesso mescolato il soprannaturale con il livello più alto dello sviluppo scientifico o tecnologico.
+C'hi++ è mito e la mitologia ha spesso mescolato il soprannaturale con il livello più alto dello sviluppo scientifico o tecnologico.
 Anticamente, abbiamo attribuito una controparte divina al lampo che generava il fuoco, al moto degli astri, alla meteorologia.
 Più recentemente, Poe, in *Eureka*, ha ipotizzato che l'Universo sia il frutto dell'azione contrapposta della Gravità, che lui interpreta come la tendenza di tutta la materia a tornare all'Uno primigenio e dell'Elettricità, che al contrario, tende a dividere.
 All'inizio del Secolo scorso, infine, i Futuristi hanno mitizzato i simboli del progresso tecnologico &mdash; velocità, eliche, aeroplani, automobili &mdash;, rendendoli l'oggetto della loro arte.
@@ -62,10 +62,7 @@ Quando tutta l'energia dell'Universo è di nuovo concentrata nell'Uno, il ciclo 
 Spazioni a parte, questa ipotesi non è poi così irrealistica; l'unico atto di fede che viene richiesto a chi legge riguarda il fatto che l'Universo tornerà <b>sicuramente</b> a collassare su sé stesso.
 Di questo, a oggi, non c'è prova scientifica, ma nella *Bhagavad-Gita* si afferma qualcosa di piuttosto simile:
 
-<blockquote>
-    Alla fine del proprio ciclo d'esistenza, un mondo collassa su se stesso, riassorbendo in una massa tenebrosa ogni forma di manifestazione: esseri viventi e oggetti inanimati giacciono allo stato latente in una condizione caotica. 
-    In seguito, dopo la vittoria dei *Deva* sugli *Asura*, i sovrani del caos residuale, ogni potenzialità esce dallo stato virtuale precedente per manifestare nel nuovo mondo le proprie caratteristiche e per ricoprire qui il ruolo che gli compete, in conformità al *dharma* ripristinato.
-</blockquote>
+>    Alla fine del proprio ciclo d'esistenza, un mondo collassa su se stesso, riassorbendo in una massa tenebrosa ogni forma di manifestazione: esseri viventi e oggetti inanimati giacciono allo stato latente in una condizione caotica. In seguito, dopo la vittoria dei *Deva* sugli *Asura*, i sovrani del caos residuale, ogni potenzialità esce dallo stato virtuale precedente per manifestare nel nuovo mondo le proprie caratteristiche e per ricoprire qui il ruolo che gli compete, in conformità al *dharma* ripristinato.
 
 Una volta che l’Universo collassato esploderà nuovamente, i casi possibili saranno due:<br />
 <br />
