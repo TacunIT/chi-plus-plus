@@ -1,3 +1,6 @@
+Una volta, il maestro Canaro mostrò ai suoi allievi un brano di codice e gli chiese di spiegare che cosa facesse:
+
+```
 /**********************************************************
  
 #include <iostream.h>
@@ -30,3 +33,6 @@ int main(int argc, char * argv[])
 }
 
 ***********************************************************/
+```
+
+Gli allievi studiarono il codice e diedero le loro risposte, ma sbagliarono tutti, perché tutte le istruzioni erano comprese fra un `/*` e un `*/` e non erano compilate.

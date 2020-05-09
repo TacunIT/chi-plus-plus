@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "it-IT" }}">
+
+{%- include head.html -%}
+
+<body class="{{ page.class }}">
+
+    <div id="page">
+
+        {%- include header.html -%}
+
+        <main {% if page.bozza %}class="bozza"{% endif %}>
+
+            <!--
+            @todo - rigenerare il PDF con stili corretti
+            <p style="font-size:1rem;padding: 1rem 0;text-align:right">
+                <a type="application/pdf" title="Scarica il file PDF" href="/assets/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf">Scarica il PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a></p>
+            -->
+            
+            {{ content}}            
+
+        </main>
+
+        {% if page.footer  %}
+        {%- include footer.html -%}
+        {% endif  %}
+    </div>
+
+  </body>
+
+</html>

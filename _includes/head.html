@@ -1,7 +1,6 @@
-{{ assign description = site.og_desc }}
-
 <head>
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>{{ page.title }} | {% if page.class == 'index' %} {{ site.claim }} {% else  %} {{ site.title }}{% endif  %}
+</title>
     <meta charset="utf-8" />
     <meta name="viewport"     content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <link rel="canonical"            href="{{site.url}}{{ page.url }}" />
@@ -16,7 +15,7 @@
     <link rel=icon href=/assets/img/favicon.ico type=image/x-icon>
     <script src="https://use.fontawesome.com/b4b35c88c8.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Simonetta:400,400i,900,900i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/screen.css" media="screen">        
-    <link rel="stylesheet" href="/assets/css/print.css"  media="print"  >
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/screen.css" >        
     {%- include google-analytics.html -%}
 </head>

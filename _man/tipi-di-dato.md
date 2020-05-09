@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      I tipi di dato
 permalink:  /man/tipi-di-dato
-quote:      "We few, we happy few<br />We bunch of data."
+quote:      "Tutto è byte."
 ---
 
 Il C++ possiede molti tipi di dato.

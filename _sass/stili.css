@@ -67,7 +67,7 @@ CODE, PRE {
     background-color: $codeBackground;
     text-align: left;
     font-size: 10pt;
-    font-family: Monaco;
+    font-family: $codeFont;
 }
 EM, I {
     color: $colorGold;
@@ -243,7 +243,7 @@ MAIN.redazione::before {
     position: absolute;
     top: 2rem;
     left: 2rem;
-    font-family: Monaco;
+    font-family: $codeFont;
 }
 
 MAIN.bozza::before {
@@ -476,7 +476,7 @@ BODY.manuale.capitolo #testo TABLE {
 }
     
 BODY.manuale.capitolo #testo TABLE.memoria TD {
-    font-family: Monaco;
+    font-family: $codeFont;
     font-size: 10px;
     width: 24px;
     height: 24px;
@@ -491,7 +491,7 @@ BODY.manuale.capitolo #testo TABLE.rgb TR {
 }
 BODY.manuale.capitolo #testo TABLE.rgb TD {
     border: none;
-    font-family: Monaco;
+    font-family: $codeFont;
     font-size: 10pt;
     width: 30px;
     height: 30px;    
@@ -502,6 +502,189 @@ BODY.manuale.capitolo #testo TABLE.rgb TD:nth-child(1) {
 }
 BODY.manuale.capitolo #testo TABLE.rgb TD:nth-child(2) {
     min-width: 10rem;
+}
+
+/* Equazione di Einstein  */
+.einstein P {
+    padding: 0.25rem 1rem;
+    font-size: 2rem;
+}
+
+/** Titoli numerati */
+BODY.proposta MAIN h1 {
+    counter-reset: h2;
+}
+BODY.proposta MAIN h2 {
+    counter-reset: h3;
+    padding-top: 1rem;
+}
+BODY.proposta MAIN h3 {
+    counter-reset: h4;
+}
+BODY.proposta MAIN h4 {
+    counter-reset: h5;
+}
+BODY.proposta MAIN h2:before {
+    counter-increment: h2;
+    content: counter(h2) ". "
+}
+BODY.proposta MAIN h3:before {
+    counter-increment: h3;
+    content: counter(h2) "." counter(h3) ". "
+}
+BODY.proposta MAIN h4:before {
+    counter-increment: h4;
+    content: counter(h2) "." counter(h3) "." counter(h4) ". "
+}
+BODY.proposta MAIN IMG {
+    max-width: 100%;
+    margin: 1rem 0rem;
+    border: solid 1px $borderColor;
+}
+BODY.proposta MAIN PRE {
+    display: block;
+    padding: 1rem;
+    margin: 1rem 0;
+    overflow: auto;
+}
+/** Il codice nelle citazioni non deve avere lo sfondo colorato */
+BODY.proposta MAIN .citazione PRE {
+    background-color: transparent;
+}
+
+/** 
+ * Stili per le domande.
+ * Le domande sui dogmi sono OL, mentre quelle su Hitler sono UL.
+ * Le OL hanno le lettere maiuscole come identificativi, 
+ * le UL hanno lettere minuscole
+ */
+OL.domande {
+    list-style-type: upper-alpha;
+}
+UL.domande {
+    list-style-type: lower-alpha;
+}
+.domande {
+    color: $domandeColor;
+}
+.domande LI {
+    font-style: italic;
+    padding-bottom: 0.5rem
+}
+
+/** Sili per i dogmi */
+OL.dogmi {
+    color: $dogmiColor;
+}
+OL.dogmi LI {
+    font-variant: small-caps
+}
+
+/** Numeri romani per le cose da fare */
+OL.da-fare {
+    list-style-type: upper-roman;
+}
+
+/** Citazioni da testi */
+DIV.citazione {
+    color: $blockquoteColor;
+    font-style: italic;
+    padding:1rem;
+    text-align:justify;
+    max-width: 100%;
+}
+
+/**
+ *  Copertina del documento
+ *  Contiene il titolo, l'oggetto, i dati dell'autore e il finto
+ *  indovinello della Settimana Enigmistica.
+ *  Tutti gli elementi della testata sono visualizzati in maniera
+ *  differente per web o stampa, vedi sotto @meda print
+ */
+SECTION.copertina {
+    margin:auto;
+    padding: 6.6% 1rem 0 ;
+    counter-reset: h2;
+    text-align:center;
+}
+
+SECTION.copertina H2  {
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+SECTION.copertina H3  {
+    font-size: 1.2rem;
+    padding: 0;
+    color: $h3CopertinaColor;
+    margin-bottom: 2rem;
+}
+
+BODY.proposta SECTION.copertina H2:before ,
+BODY.proposta SECTION.copertina H3:before {
+    content: none;
+}
+BODY.proposta SECTION.copertina IMG {
+    border: none;
+}
+
+SECTION.copertina DIV.dati LABEL {
+    min-width: 6rem;
+    display: inline-block;
+    font-weight: bold;
+}
+
+SECTION.copertina DIV.dati LABEL:after {
+    content: ':';
+}
+
+/**  Dedica e citazione in testa */
+SECTION.dedica,
+SECTION.citazione {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-left: 40%;
+    padding-bottom: 5rem;
+    text-align: right;
+    page-break-after: always;
+}
+
+SECTION.citazione SPAN {
+    font-style: normal
+}
+
+/**
+ *
+ *  Stili per la gestione delle note a piè di pagina
+ *
+ */
+A.nota {
+    font-size: 0.8rem;
+    color: $aNotaColor;
+    text-decoration: underline;
+    vertical-align: super;
+    display: inline-block;
+    margin-left: 0.12rem; 
+}
+
+SECTION.note {
+    page-break-before: always;
+    padding-bottom: 3rem;
+}
+SECTION.note OL ,
+SECTION.bibliografia UL {
+    font-size: 0.9rem;
+    margin-left: 0;
+    padding: 0 1rem;
+}
+SECTION.note LI ,
+SECTION.bibliografia LI {
+    margin-bottom: 0.5rem;
+}
+SECTION.note OL LI A {
+    word-break: break-all;
 }
 
 /**
