@@ -1,3 +1,10 @@
+## 0.9.0 (May 09, 2020)
+  - Isolati i testi del Manuale relativi al Maestro Canaro in file a sé stanti
+  - Revisione dei testi
+  - Corretti gli stili della Proposta
+  - Isolato il testo della Proposta in un file di include
+  - Modificata la gestione dei CSS
+
 ## 0.8.28 (April 22, 2020)
   - Aggiunto un capitolo distinto per le funzioni iterative
   - Separate le istruzioni condizionali dagli operatori
