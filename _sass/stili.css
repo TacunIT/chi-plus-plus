@@ -67,7 +67,7 @@ CODE, PRE {
     background-color: $codeBackground;
     text-align: left;
     font-size: 10pt;
-    font-family: Monaco;
+    font-family: $codeFont;
 }
 EM, I {
     color: $colorGold;
@@ -243,7 +243,7 @@ MAIN.redazione::before {
     position: absolute;
     top: 2rem;
     left: 2rem;
-    font-family: Monaco;
+    font-family: $codeFont;
 }
 
 MAIN.bozza::before {
@@ -476,7 +476,7 @@ BODY.manuale.capitolo #testo TABLE {
 }
     
 BODY.manuale.capitolo #testo TABLE.memoria TD {
-    font-family: Monaco;
+    font-family: $codeFont;
     font-size: 10px;
     width: 24px;
     height: 24px;
@@ -491,7 +491,7 @@ BODY.manuale.capitolo #testo TABLE.rgb TR {
 }
 BODY.manuale.capitolo #testo TABLE.rgb TD {
     border: none;
-    font-family: Monaco;
+    font-family: $codeFont;
     font-size: 10pt;
     width: 30px;
     height: 30px;    
@@ -538,7 +538,8 @@ BODY.proposta MAIN h4:before {
 }
 BODY.proposta MAIN IMG {
     max-width: 100%;
-    margin: 1rem 0rem
+    margin: 1rem 0rem;
+    border: solid 1px $borderColor;
 }
 BODY.proposta MAIN PRE {
     display: block;
@@ -622,6 +623,9 @@ SECTION.copertina H3  {
 BODY.proposta SECTION.copertina H2:before ,
 BODY.proposta SECTION.copertina H3:before {
     content: none;
+}
+BODY.proposta SECTION.copertina IMG {
+    border: none;
 }
 
 SECTION.copertina DIV.dati LABEL {
