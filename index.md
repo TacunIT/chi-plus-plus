@@ -16,12 +16,16 @@ Tutti i testi, le immagini e i dati relativi al C'hi++ sono raccolti in un
 <a  title="Va' al progetto su GitHub"
     target="github"
     href="https://github.com/chi-plus-plus/chi-plus-plus">
-    repository su GitHub</a>; e volete altre informazioni su questo progetto, potete trovarle lì, nei file:
+    repository su GitHub</a>; se volete altre informazioni su questo progetto, potete trovarle lì, nei file:
 <a href="https://github.com/chi-plus-plus/chi-plus-plus" target="github">README</a> e
 <a href="https://github.com/chi-plus-plus/chi-plus-plus/blob/master/MANIFEST.md" target="github">MANIFEST</a>.
 
 ---
 
+Tutto nasce da una domanda: *È possibile dare una spiegazione dell'esistenza sftuttando solo ciò di cui abbiamo esperienza diretta?*
+Le religioni, per “funzionare”, richiedono da una a tre dimensioni aggiuntive, oltre quelle note; la Scienza, per le sue *superstringhe* ha bisogno almeno di sette dimensioni aggiuntive, ovvero il doppio di quelle che servono per un Aldilà non spirituale. Esiste una spiegazione più semplice?
+Dopo averci ragionato su per una quarantina di anni, posso dire che sì: una spiegazione più semplice esiste ed è anche compatibile con molti dei princip&icirc; delle religioni canoniche, alle quali C'hi++ non vuole sostituirsi, ma affiancarsi.<br /> 
+<br />
 C'hi++ non è né scienza né religione, anche se ogni tanto finge di essere o l'una o l'altra.
 C'hi++ è mito e la mitologia ha spesso mescolato il soprannaturale con il livello più alto dello sviluppo scientifico o tecnologico.
 Anticamente, abbiamo attribuito una controparte divina al lampo che generava il fuoco, al moto degli astri, alla meteorologia.
@@ -29,10 +33,6 @@ Più recentemente, Poe, in *Eureka*, ha ipotizzato che l'Universo sia il frutto 
 All'inizio del Secolo scorso, infine, i Futuristi hanno mitizzato i simboli del progresso tecnologico &mdash; velocità, eliche, aeroplani, automobili &mdash;, rendendoli l'oggetto della loro arte.
 <!-- @todo: aggiungere nota sulla scienza -->
 Nulla di strano, quindi, che all'inizio di questo Millennio si tenti un paragone fra le regole note del software e le regole ignote dell'Universo in cui viviamo.<br />
-<br />
-Tutto nasce da una domanda: *È possibile dare una spiegazione dell'esistenza sftuttando solo ciò di cui abbiamo esperienza diretta?*
-Le religioni, per “funzionare”, richiedono da una a tre dimensioni aggiuntive, oltre quelle note; la Scienza, per le sue *superstringhe* ha bisogno almeno di sette dimensioni aggiuntive, ovvero il doppio di quelle che servono per un Aldilà non spirituale. Esiste una spiegazione più semplice?
-Dopo averci ragionato su per una quarantina di anni, posso dire che sì: una spiegazione più semplice esiste ed è anche compatibile con molti dei princip&icirc; delle religioni canoniche, alle quali C'hi++ non vuole sostituirsi, ma affiancarsi.<br /> 
 <br />
 C'hi++ non si propone come una spiegazione assoluta e definitiva del Significato dell'Esistenza, ma come un modello incompleto e perfettibile.
 È per questo motivo che ha una versione, come il software: perché possa evolvere col tempo, così come avviene per il software.
@@ -70,10 +70,10 @@ Una volta che l’Universo collassato esploderà nuovamente, i casi possibili sa
 <!-- todo: aggiungere nota su processo 68 -->
 <br />
 <b>Caso 2.</b> Se ogni *Big Bang* avviene in circostanze e con modalità specifiche, quando l'Uno esploderà di nuovo, nascerà un nuovo Universo, che potrà avere pochi o nessun punto di contatto con quello corrente.
-<br />
+
 La prima ipotesi è possibile, ma poco probabile, quindi diamo per scontato che quella corretta sia la seconda.
 Per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali, in un lasso di tempo infinito non possiamo escludere che questo Universo tornerà a manifestarsi e che anche ciò che c’è in esso possa tornare a essere, noi compresi.<br />
-<br />
+
 Ma chi siamo, “noi”? Se la materia altro non è che la manifestazione di una unica Energia, ha poco senso distinguerci gli uni dagli altri; dovremmo ragionare invece come il poeta iraniano Saadi di Shiraz:
 
 <blockquote>
