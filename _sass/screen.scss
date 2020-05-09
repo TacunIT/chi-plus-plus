@@ -1,4 +1,5 @@
 $bodyFont:          Simonetta, Calibri, Arial, sans-serif ;
+$codeFont:          'Inconsolata', monospace;
 $bodyBackground:    #ffffff ;
 $bodyColor:         #000000 ;
 $bodyFontSize:      15pt ;
@@ -11,13 +12,12 @@ $tdAreaBackground:  #bbb ;
 $bozzaRedazione:    #e8f2f5;
 $bozzaBackground:   #c1e3e6 ;
 $bozzaAColor:       #999;
-$blockquoteColor:   #555;
+$blockquoteColor:   #550;
 $inclusoColor:      #543;
 $inclusoBackground: #e8e8de;   
 $h3CopertinaColor:  #444 ;
-$dogmiColor:        #a58201 ;
-$domandeColor:      #060 ;
+$dogmiColor:        #550 ;
+$domandeColor:      #550 ;
 
 
 @import "stili";
-@import "proposta";

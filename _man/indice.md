@@ -20,9 +20,6 @@ permalink:  /man/indice
                  class="badge">
             {% endif %}
         </h3>
-        {% if capitolo.title == 'Epilogo' %}
-        <hr>
-        {% endif %}
         {% endif %}
     {% endfor %}
 </section>

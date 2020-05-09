@@ -5,7 +5,7 @@ class:      capitolo
 index:      6
 title:      I linguaggi di programmazione
 permalink:  /man/linguaggi-di-programmazione
-quote:      "Tutto è byte."
+quote:      "Dio non programma in Assembler con l'Universo."
 ---
 
 Brian Kernigan, disse:
@@ -105,21 +105,6 @@ risultato atteso.
 Scegliendo invece un linguaggio i cui tipi di dato e i cui costrutti
 siano più affini alla realtà da descrivere, si risparmiano tempo e
 fatica e si scrive un codice più affidabile.
-
-Pitagora sosteneva che “tutto è numero”, ma non è vero.
-La matematica può descrivere gli eventi che si verificano nell'Universo,
-ma non le loro cause o il loro fine.
-In quest'ottica, la matematica è un linguagggio inadatto.
-Descrivere i sentimenti con la matematica è come cercare di descrivere
-rigorosamente un sogno: si ottiene sempre una rappresentazione parziale.
-Meglio descriverlo con la musica, lasciando che le suggestioni
-siano implicite.  
-La matematica, inoltre, non è del tutto affidabile, perché contiene proposizioni formalmente corrette che sono paradossali, come la radice quadrata di -1  
-Il Maestro Canaro sosteneva che i paradossi sono la crittografia di Dio.
-Se fosse vero, la matematica sarebbe utile non perché quasi sempre è coerente,
-ma perché, di quando in quando, produce dei paradossi.  
-
----
 
 I linguaggi di programmazione possono essere di due tipi: *interpretati* o *compilati*.
 Posso spiegarti la differenza in questo modo: immagina di essere in Cina e di dover tornare al tuo albergo in taxi.
@@ -286,18 +271,4 @@ Il C++, grazie ai suoi principii, ha una maggior duttilità e può evolversi, ad
 
 ---
   
-Un giorno un discepolo chiese al maestro Canaro: “Maestro, con quale
-tipo di arco si tira meglio?”.
-Il maestro rispose: “Con quello che utilizzi tutti i giorni”.
-Il discepolo chiese allora: “Maestro, questo vuol dire che si può
-utilizzare uno linguaggio di programmazione inadatto, purché si raggiunga lo scopo?”.
-Il maestro sorrise benevolmente e disse: “Ti prego, vai a meditare
-sull'insensatezza delle tue domande mentre pulisci le latrine comuni.”  
-Per molto tempo non riuscii a capire il comportamento del maestro
-Canaro. Per un po', credetti che l'errore fosse quel “meglio” nella
-prima domanda e che il maestro avesse dato una risposta volutamente
-imprecisa allo scopo di portare alle estreme conclusioni un ragionamento
-male impostato, ma mi sbagliavo.
-La verità era che il maestro Canaro, come mi confessò lui stesso, stava
-cercando di scaricare su qualcuno il suo turno di pulizia latrine e il
-giovane e impetuoso discepolo gliene aveva dato occasione.
+{% include_relative canaro/scienza-come-il-C.md %}

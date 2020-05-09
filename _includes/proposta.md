@@ -1,44 +1,38 @@
-<link rel="stylesheet" type="text/css" href="../../assets/css/proposta.css" />
-
-<section class="pagina cover">
+<section class="copertina pagina">
 	<h1>C'hi++</h1>
 	<h2>Proposta per una metafisica open-source</h2>
-	<img style="margin-top:4rem" src="../../assets/img/quiz.png">
+	<img style="margin-top:4rem" src="https://chiplusplus.org/assets/img/quiz.png">
 </section>
 
-<section class="dedica">
+<section class="dedica pagina">
 0x0D 0x0C 0x0B 0x0A
 </section>
 
-<section class="citazione">
+<section class="citazione pagina">
 E gli atei? rideva ancora.<br/>
 Quelli mi annoiano perché parlano sempre di Dio. <br/>
 <span>Heinrich Böll</span> - Opinioni di un clown
 </section>
 
-
 ## Executive summary
-Se continuerete nella lettura di questo documento (non è obbligatorio), conoscerete i dettagli di un progetto a cui sto lavorando da una decina di anni.
-Si chiama *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.
-Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e principii etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come quello riportato in copertina.
-Premetto che non ho titoli per scrivere di filosofia e religione, perché sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer, quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell'esaltazione religiosa; successivamente, descriverò alcune
-alcune vulnerabilità logiche delle religioni canoniche e definirò delle linee-guida atte a prevenirle; presenterò poi la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.
+Il *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.
+Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e princip&icirc; etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come quello riportato in copertina.
+Non ho titoli per scrivere di filosofia e religione, perché sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer, quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell'esaltazione religiosa; successivamente, descriverò alcune vulnerabilità logiche delle religioni canoniche e definirò delle linee-guida atte a prevenirle; presenterò poi la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.
 
-Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologie proprii dell'informatica e ne ho fornito una breve descrizione per coloro che non  abbiano familiarità con le attività di creazione del software; i tecnici mi perdonino le semplificazioni.
+Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologie propr&icirc; dell'informatica e ne ho fornito una breve descrizione per coloro che non  abbiano familiarità con le attività di creazione del software; i tecnici mi perdonino le semplificazioni.
 Ho dovuto anche, per brevità, fare delle affermazioni senza comprovarle; i logici mi perdonino l'apodissi.
 <p class="newpage"></p>
 
-## Analisi del sistema attualmente in esercizio
+## Analisi del sistema in esercizio
 Se mi guardo indietro, per il mezzo secolo su cui ho visibilità diretta, vedo una lunga serie di fallimenti ideologici.
 Il Sessantotto ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società senza darci nulla in cambio, tranne la minigonna.
 La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre la *reaganomics* è crollata alla fine degli anni '80 insieme al muro di Berlino.
 Le speranze degli anni '90 si sono schiantate l'11 Settembre 2001 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformata, nel tempo, in un sistema di controllo e di dis-informazione di massa.
 Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito negli ultimi dieci anni dagli *smart-phone* e dai *social-network*.
-In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (*c'è crisi*)<a href="#corsivo" class="nota" name="fn-1">1</a>, né comunista (*Stalin e Mao hanno ucciso più persone di Hitler*), né cattolico (*lo chiedessero allo IOR, l'8 per mille*), né ebreo (*guarda gli Israeliani cosa fanno ai Palestinesi*), né Musulmano (*gli islamici sono degli esaltati che vogliono ucciderci tutti*), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali che non leggono<a href="#istat" class="nota" name="fn-2">2</a>, ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali.
-C'è modo di invertire questa tendenza o dobbiamo rassegnarci al declino? No.  
+In questo scenario apocalittico, l'Uomo del terzo millennio, non potendo diventare né capitalista (*c'è crisi*)<a href="#corsivo" class="nota" name="fn-1">1</a>, né comunista (*Stalin e Mao hanno ucciso più persone di Hitler*), né cattolico (*lo chiedessero allo IOR, l'8 per mille*), né ebreo (*guarda gli Israeliani cosa fanno ai Palestinesi*), né Musulmano (*gli islamici sono degli esaltati che vogliono ucciderci tutti*), si è richiuso in sé stesso così come il Giappone dei Tokugawa; ma mentre il *Sakoku* si accompagnò a un rifiorire delle arti, il vuoto ideologico dei nostri tempi ha generato degli zombie culturali che non leggono<a href="#istat" class="nota" name="fn-2">2</a>, ignorano il passato e hanno rapporti con il Mondo esterno solo attraverso lo schermo del loro telefono: l'elettorato ideale per i demagoghi con aspirazioni dittatoriali. C'è modo di invertire questa tendenza o dobbiamo rassegnarci al declino? No.  
 *No*, non credo che qualcosa cambierà, almeno nel breve periodo, a meno che qualche evento esterno come una crisi, una guerra, una catastrofe naturale, un'invasione aliena o una presa di coscienza collettiva (in ordine decrescente di probabilità) non costringa la nostra specie a modificare il suo comportamento; e *No*, non intendo arrendermi senza avere almeno tentato, perché questi zombie sono le persone che determinano la qualità del nostro presente con il loro voto e con cui dovremo affrontare dei problemi da cui dipenderà il nostro futuro, come la sovrappopolazione, la scarsezza di risorse e l'accumulo di plastica negli oceani.
 Ma “tentare”, cosa?
-Il declino della nostra Società è un sintomo, non è il male; per frenarlo, dobbiamo identificarne la causa.
+Il declino della nostra Società è un sintomo, non è il male; per curarlo, dobbiamo identificarne la causa.
 
 ### Il male
 Esiste un fattore comune alle ideologie degli ultimi cinquant'anni che ne ha accelerato l'obsolescenza e le ha rese incapaci di sopravvivere alla prima sconfitta: il rifiuto più o meno accanito di ogni forma non strumentale di spiritualità.<a href="#calvino" class="nota" name="fn-3">3</a>
@@ -46,43 +40,48 @@ Il problema, se si vuole definire uno schema di valori negando allo stesso tempo
 Si può fare, ma è sbagliato e limitativo.
 È sbagliato da un punto di vista etico, perché le regole che si definiscono sono sempre una conseguenza di esigenze contingenti (guerre, sopraffazioni, disparità sociali), venendo a mancare le quali lo schema logico del sistema perde di significato e si disgrega.
 È sbagliato anche da un punto di vista logico, perché i concetti di vero/falso, giusto/sbagliato devono sempre essere preesistenti allo schema a cui vanno applicati, altrimenti non è possibile sapere se la definizione che se ne dà sia giusta o sbagliata, vera o falsa.
-È limitativo, infine, perché restringe il numero dei possibili obiettivi da perseguire a un insieme finito di azioni o traguardi, raggiunti i quali non esiste più possibilità di migliorare.
-Pensate al gioco degli Scacchi: non esiste nessun motivo, all'interno della schacchiera, che costringa ciascun pezzo a muoversi solo in una specifica maniera; le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a "L" in ossequio a delle regole definte al di fuori della schacchiera, ma è proprio da queste limitazioni che deriva il fascino del gioco.<br />
+È limitativo, infine, perché restringe il numero dei possibili obiettivi da perseguire a un insieme finito di azioni o traguardi, raggiunti i quali non esiste più possibilità di migliorare.  
+Pensate al gioco degli Scacchi: non esiste nessun motivo, all'interno della schacchiera, che costringa ciascun pezzo a muoversi solo in una specifica maniera; le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a "L" in ossequio a delle regole definte al di fuori della schacchiera, ma è proprio da queste limitazioni che deriva il fascino del gioco.
 Al contrario, la Società moderna è una scacchiera in cui ciascun pezzo si muove nella maniera che preferisce, come “un asino privo di briglie” perché, in ossequio a un malinteso senso di libertà, sono state eliminate tutte le regole. Le persone di successo che si privano della vita sono pedoni che, arrivati alla fine della scacchiera grazie alla loro abilità, hanno scoperto che non esiste alcuna forma di promozione, perché insieme alle regole sono stati aboliti anche i giocatori.
 
 ### La cura
-Fermo restando che la vita su questo Pianeta non potrà mai migliorare realmente fino a quando non riusciremo a fare un uso più responsabile delle nostre gonadi, è ragionevole pensare che un nuovo schema di valori, che abbia al suo vertice la comunità e non l'individuo, unito a una moderata dose di spiritualità potrebbe aiutarci a uscire da questa picchiata auto-distruttiva, se troviamo un modo efficace per diffonderlo.
-
+Fermo restando che la vita su questo Pianeta non potrà mai migliorare realmente fino a quando non riusciremo a fare un uso più responsabile delle nostre gonadi, è ragionevole pensare che un nuovo schema di valori, che abbia al suo vertice la comunità e non l'individuo, unito a una moderata dose di spiritualità potrebbe aiutarci a uscire da questa picchiata auto-distruttiva, se troviamo un modo efficace per diffonderlo.  
 La (buona) politica sarebbe la soluzione ideale, se i (buoni) politici avessero il potere di prendere delle decisioni impopolari, ma ciò non è, perché gli elettori sono dei bambini che, dovendo scegliere fra un dietologo e un gelataio, non fanno mai la scelta corretta per la loro salute.
 La cultura non può venirci in aiuto perché la mancanza di stimoli esterni ha prodotto un'economia curtense delle idee nella quale letteratura, cinema, televisione e Internet riciclano ciascuna le idee delle altre, in un banchetto coprofago di concetti e storie già visti.
 L'arte potrebbe aiutarci, ma sfortunatamente non ce n'è più e quelle forme di appagamento sensoriale che da lungo tempo ormai ci vengono spacciate per “arte”, essendo espressione e quindi esaltazione di un singolo sarebbero addirittura controproducenti.
 La scienza, che in passato ha fatto molto per migliorare la qualità della nostra vita, in questo momento, specie in alcuni settori all'avanguardia come la bio-ingegneria o l'intelligenza artificiale, produce innovazione con più rapidità di quanto la Società riesca a metabolizzarla e, almeno per ora, fa più parte del problema che della soluzione.  
 Scartati politica, cultura, arte e scienza, non ci rimane che la religione.
 Per quelli che sono i nostri scopi, ovvero convincere la gente a non pensare in termini individuali, ma di gruppo, recuperando allo stesso tempo un certo grado di spiritualità, la religione è uno strumento perfetto: è gratuita, è adatta a tutte le età e non richiede una specifica preparazione o attitudine.
-Di contro, la religione ha due grossi difetti: il primo è che ampie fasce della popolazone hanno un'istintiva diffidenza nei suoi confronti perché le attribuiscono colpe che in realtà andrebbero imputate al clero e ai fedeli; il secondo difetto è che le ampie fasce di cui sopra hanno le loro buone ragioni di diffidare, perché la cattiva interpretazione o applicazione dei princìpi delle religioni ha di solito effetti devastanti.
+Di contro, la religione ha due grossi difetti: il primo è che ampie fasce della popolazone hanno un'istintiva diffidenza nei suoi confronti perché le attribuiscono colpe che in realtà andrebbero imputate al clero e ai fedeli; il secondo difetto è che le ampie fasce di cui sopra hanno le loro buone ragioni di diffidare, perché la cattiva interpretazione o applicazione dei princip&icirc; delle religioni ha di solito effetti devastanti.
 Possiamo attenuare il primo problema parlando di *spiritualità* o di *metafisica*, in vece che di *religione*, ma per risolvere il secondo dobbiamo capire quali siano le cause dell'instabilità delle religioni e cercare di attenuarle.
 
 ## Bug noti delle religioni
 La religione dovrebbe aiutare l'Uomo a vivere meglio.
-Dovrebbe dare uno scopo alla nostra esistenza, aiutarci a superare i momenti di dolore e definire una scala di valori che ci permetta di prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso non possono essere d'aiuto.
+Dovrebbe dare uno scòpo alla nostra esistenza, aiutarci a superare i momenti di dolore e definire una scala di valori che ci permetta di prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso non possono essere d'aiuto.
 Per fare un esempio: se vi ponessero queste tre domande, cosa rispondereste?
 
 <ol class="domande">
-<li >Una ragazza è rimasta incinta a séguito di una violenza: può decidere di abortire?</li>
-<li><a name="domanda-B"></a> Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?</li>
-<li>Un uomo è gravemente malato e vive grazie a delle macchine: può
-    decidere di spegnerle o no?</li>
+    <li >
+        Una ragazza è rimasta incinta a séguito di una violenza: può decidere di abortire?
+    </li>
+    <li>
+        Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?
+    </li>
+    <li>
+        Un uomo è gravemente malato e vive grazie a delle macchine: può
+        decidere di spegnerle o no?
+    </li>
 </ol>
 
 Come vedremo fra poco, la religione può aiutarvi a trovare una risposta
 a queste domande.
-Nulla vi assicura che sia la risposta giusta - nulla potrebbe farlo - ma almeno è una risposta.
+Nulla vi assicura che sia la risposta giusta &mdash; nulla potrebbe farlo &mdash; ma almeno è una risposta.
 Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti.
-Ciò dipende da due fattori: la natura umana e la mancanza di solidità logica dei loro princìpi.
+Ciò dipende da due fattori: la natura umana e la mancanza di solidità logica dei loro princip&icirc;.
 Infatti, dovendo interessarsi di argomenti che non possono essere sottoposti a un'analisi razionale, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di dogmi non dimostrabili che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.
-I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato con ogni mezzo, anche a costo di abiurare quegli stessi princìpi che si cerca di difendere.
+I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato con ogni mezzo, anche a costo di abiurare quegli stessi princip&icirc; che si cerca di difendere.
 E qui, come direbbe Amleto, comincia il male, perché i dogmi non sono leggi comprovabili, ma opinioni o speranze e ogni tentativo di renderli più robusti ottiene l'effetto opposto perché si ampliano le dimensioni di una struttura che poggia su basi instabili.
-<br />
+
 ### Caso d'uso: il Buonismo
 Per dimostrare l'affermazione fatta sopra, immaginiamo che esista una religione chiamata: *Buonismo* i cui dogmi siano:
 
@@ -105,9 +104,10 @@ esempio), ma nessuno potrebbe criticare il buonista, che decide in maniera coere
 Se però si domandasse allo stesso individuo:
 
 <ol class="domande" start="4">
-<li ><a name="domanda-D"></a>
-	Se Dio è buono, giusto e misericordioso, perché nell'Universo
-	da Lui creato esistono stupratori, omicidi e malattie?
+    <li >
+    	Se Dio è buono, giusto e misericordioso, perché nell'Universo
+    	da Lui creato esistono stupratori, omicidi e malattie?
+    </li>
 </ol>
 
 il povero Buonista non saprebbe cosa rispondere, perché per farlo dovrebbe sconfessare almeno uno degli assiomi su cui basa la sua visione dell'esistenza.
@@ -118,19 +118,19 @@ A questo punto, o forse anche da prima, vi starete chiedendo che bisogno ci sia 
 Il fatto è che, con buona pace di John Lennon, in un Mondo senza religioni la situazione non migliorerebbe: se le tre domande viste sopra le faceste a un giudice, vi risponderebbe che sì, la ragazza può abortire, ma né il condannato né il malato possono essere uccisi, perché la Legge lo vieta. Se però gli domandaste:
 
 <ol class="domande" start="5">
-<li >
-    Perché si può uccidere qualcuno che non ha fatto nulla di male
-    perché ipoteticamente potrebbe rendere infelice la vita di sua
-    madre, mentre non si può uccidere chi ha già fatto del male o chi ha
-    una vita sicuramente infelice?
+    <li >
+        Perché si può uccidere qualcuno che non ha fatto nulla di male
+        perché ipoteticamente potrebbe rendere infelice la vita di sua
+        madre, mentre non si può uccidere chi ha già fatto del male o chi ha
+        una vita sicuramente infelice?
+    </li>
 </ol>
 
 il buon giudice non avrebbe meno difficoltà del Buonista a trovare una risposta.
-La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe comunque di spedirvi in prigione, dove trovereste ad attendervi il simpatico soggetto della domanda [B](#domanda-B).
-Questo perché anche i princìpi delle società laiche, al pari dei dogmi delle religioni, non sono verità comprovabili, ma opinioni o speranze.
-A differenza dei dogmi religiosi, però, i laici non possono rifarsi a valori di ordine superiore e, come abbiamo visto [sopra](#il-problema), devono trovare i fondamenti delle loro affermazioni nella realtà contingente, cosa che non sempre è possibile, quindi le loro regole risultano ancora più inconsistenti di quelle religiose.
-
-Prendete ad esempio i trenta articoli della [Dichiarazione dei Diritti dell'Uomo](http://www.un.org/en/universal-declaration-human-rights/) del 1948: voi e io troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.
+La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe comunque di spedirvi in prigione, dove trovereste ad attendervi il simpatico soggetto della domanda *B*.
+Questo perché anche i princip&icirc; delle società laiche, al pari dei dogmi delle religioni, non sono verità comprovabili, ma opinioni o speranze.
+A differenza dei dogmi religiosi, però, i laici non possono rifarsi a valori di ordine superiore e, come abbiamo visto sopra, devono trovare i fondamenti delle loro affermazioni nella realtà contingente, cosa che non sempre è possibile, quindi le loro regole risultano ancora più inconsistenti di quelle religiose.  
+Prendete ad esempio i trenta articoli della <a href="http://www.un.org/en/universal-declaration-human-rights/" target="un" >Dichiarazione dei Diritti dell'Uomo</a> del 1948: voi e io troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.
 Per quale motivo un Signore della Guerra centro-africano dovrebbe rispettarle, dato che non sono un insieme di norme giuridiche a cui gli Stati e gli individui debbano attenersi, ma un elenco di quelli che *dovrebbero essere*<a href="#achievements" class="nota" name="fn-4">4</a> i diritti di ogni essere umano?
 Perché, soprattutto, dovrebbe rispettare delle regole volte al mantenimento della pace, promulgate da un'Organizzazione che ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="#sipri" class="nota" name="fn-5">5</a>
 e che violano costantemente quelle stesse regole da loro promosse?
@@ -148,9 +148,11 @@ L'articolo 1. della *Dichiarazione dei Diritti dell'Uomo e del Cittadino* france
 Questa affermazione è sicuramente condivisibile, ma sfortunatamente non è provata da alcun dato di fatto.
 Al contrario, è smentita dalla presenza di 26 monarchie che regnano su 43 delle 195 nazioni del Mondo.<a href="#reami" class="nota" name="fn-6">6</a>
 <br>
-Insomma: dato che l'approccio laico presenta gli stessi problemi logici di quello religioso, mancando però dei corrispondenti lati positivi, non ci resta altra scelta che cercare di far “funzionare” la religione.
+Insomma: dato che l'approccio laico presenta gli stessi problemi logici di quello religioso, mancando però dei corrispondenti lati positivi, non ci resta altra scelta che cercare di far “funzionare” la religione, esaminandone e correggendone gli errori.  
+Nel Mondo dell'informatica, questa attività viene detta *debug*.
 
 ### Debug del Buonismo
+
 Abbiamo visto che i tre assiomi del Buonismo:
 
 <ol class="dogmi">
@@ -177,26 +179,27 @@ Negando il secondo assioma, il nostro modello esistenziale diventa coerente senz
 Se ipotizziamo che Dio esiste, è buono, ma l'Universo non è opera sua, bensì del Diavolo, otteniamo un modello coerente e tutto sommato accettabile.
 Sì, d'accordo, saremo condannati a vivere in un luogo dove esistono dolore e morte, ma solo per i pochi anni che passiamo su questa Terra; poi, tutto si sistemerà.
 Delle tre, quest'ultima è l'ipotesi più appetibile, ma solo se l'uomo è in possesso di un'anima, ovvero di uno spirito che condivida parte dell'essenza di Dio e che si riunirà a Lui dopo la morte.
-Se l'anima non c'è, ovvero se in noi non alberga una scintilla dello Spirito Divino, siamo solo dei pezzi dell'Universo: vivremo nel dolore e dopo la morte sarà tutto finito per sempre.
+Se l'anima non c'è, ovvero se in noi non alberga una scintilla dello Spirito Divino, siamo solo dei pezzi dell'Universo: vivremo nel dolore e dopo la morte sarà tutto finito per sempre.  
 Qualunque visione della vita basata su questi presupposti è inaccettabile perché, mancando un Aldilà e una beatitudine condizionata al nostro comportamento terreno, ciascuno cercherebbe di ottenere il massimo possibile dagli anni che vivrà, pensando solo a sé stesso senza alcun rispetto per il suo prossimo.
-Come diceva Voltaire: “Dio non esiste, ma non ditelo al mio domestico, se no di notte viene a uccidermi”.
+Come diceva Voltaire: “Dio non esiste, ma non ditelo al mio domestico, se no di notte viene a uccidermi”.  
 Priva del concetto di anima, la nostra ipotetica religione diventerebbe logicamente solida, ma non assolverebbe al suo còmpito primario, che è quello di rendere migliore la vita dell'Uomo; quindi, se vogliamo rinnegare il terzo dogma del Buonismo senza fare danni, dobbiamo essere certi che esista un'anima.
 Siccome, di fatto, non possiamo esserne certi, dobbiamo imporre questa condizione come dogma:
 
 <ol class="dogmi" start="4">
-	<li>  L'uomo ha un'anima.</li>
+	<li>L'uomo ha un'anima.</li>
 </ol>
 
-Questo atto di fede ci permette di rispondere senza esitazione alla domanda [D](#domanda-D):
+Questo atto di fede ci permette di rispondere senza esitazione alla domanda *D*:
 
 > Dio è buono, giusto e misericordioso. Nell'Universo esistono stupratori, omicidi e malattie è perché l'Universo è opera del Diavolo.
 
-Si tratta però di una vittoria parziale, perché aumentando il numero dei precetti abbiamo aumentato la complessità del nostro modello e, di conseguenza, la probabilità di generare errori o incongruenze:
+La nostra, però, è una vittoria illusoria, perché aumentando il numero dei precetti abbiamo aumentato la complessità del nostro modello e, di conseguenza, la probabilità di generare errori o incongruenze:
 
 <ol class="domande" start="6">
-<li >
-	Se l'Universo è stato creato dal Diavolo, perché l'Uomo, che fa
-    parte dell'Universo, dev'essere stato creato da Dio?
+    <li >
+    	Se l'Universo è stato creato dal Diavolo, perché l'Uomo, che fa
+        parte dell'Universo, dev'essere stato creato da Dio?
+    </li>
 </ol>
 
 
@@ -206,7 +209,7 @@ Eliminare il primo precetto (*Dio esiste*) non è possibile, perché gli altri d
 Eliminare il terzo precetto (*Dio ha creato l'Universo*) equivale a dire: “A Shanghai esiste un uomo di nome Mario”; se Dio c'è ed è buono, ma se non ha alcuna relazione con l'Universo e la nostra esistenza, a noi, cosa importa?
 Se però eliminiamo il secondo precetto, (*Dio ha solo proprietà positivie*)  tutto magicamente si aggiusta: Dio esiste, ha creato l'Universo e l'Uomo, ma non è possibile dire se sia buono o meno, perché è improprio classificare l'essenza del creatore con gli attributi del creato; sarebbe come se i *byte* di un computer si chiedessero se il Programmatore valga I o 0.
 <br>
-Senza la premessa, conseguente al secondo precetto (*Se Dio è buono, giusto e misericordioso*), la famigerata domanda [D](#domanda-D) non è più contraddittoria: se qualcuno ce la facesse, adesso, potremmo rispondere:
+Senza la premessa, conseguente al secondo precetto (*Se Dio è buono, giusto e misericordioso*), la famigerata domanda **D** non è più contraddittoria: se qualcuno ce la facesse, adesso, potremmo rispondere:
 
 > Nell'Universo creato da Dio esistono stupratori, omicidi e malattie perché ciò fa parte del Suo disegno, che noi non siamo in grado di comprendere.
 
@@ -227,27 +230,22 @@ non lo sia, perché in effetti non lo possiamo sapere:
 Dire che Dio esiste e che ha creato l'Universo è ragionevole: l'Universo esiste e quindi esiste necessariamente qualcosa, se non proprio un signore con la barba bianca, almeno un fenomeno o una funzione che possiamo considerare come suo Principio Creatore.
 Al contrario, dire che questo principio creatore sia “buono” è ipotetico; riflette una nostra speranza, che non dev'essere necessariamente vera.
 <br>
-È sbagliato proiettare le proprie speranze o le proprie convinzioni nei dogmi di una religione.
-È sbagliato, ma frequentissimo, anche fra i non credenti. Come abbiamo visto, per spiegare l'incongruenza fra l'idea di un Dio buono e la non-bontà dell'Universo da Lui creato, abbiamo tre possibilità differenti:
+Proiettare le proprie speranze o le proprie convinzioni nei dogmi di una religione è sbagliato, ma frequentissimo, anche fra i non credenti. Come abbiamo visto, per spiegare l'incongruenza fra l'idea di un Dio buono e la non-bontà dell'Universo da Lui creato, abbiamo tre possibilità differenti:
 
 -   dire che Dio non esiste;
 -   dire che non è buono;
 -   dire che non ha creato l'Universo.
 
 Delle tre, la prima è la meno *conveniente*, eppure la maggior parte dei non-credenti preferisce negare l'esistenza di Dio piuttosto che mettere in discussione la sua presunta bontà.
-Il perché, chiedetelo a loro.
 
 ### Buonismo 2.0 <a name="buonismo"></a>
-Rimuovendo il secondo precetto, siamo riusciti a rendere coerente la dottrina Buonista, ma allo stesso tempo abbiamo rimosso la ragion d'essere del suo nome; se Dio non è buono, che senso ha, chiamarsi: *Buonisti*?
+La nostra attività di *debug* ha avuto successo: rimuovendo il secondo precetto, siamo riusciti a rendere coerente la dottrina Buonista, ma allo stesso tempo abbiamo rimosso la ragion d'essere del suo nome; se Dio non è buono, che senso ha, chiamarsi: *Buonisti*?
 Non è solo una questione di carta intestata: dalla presunta bontà di Dio, la dottrina buonista deriva l'obbligo per l'Uomo di essere altrettanto buono; mancando il precetto decadrebbe anche l'obbligo e si aprirebbero le porte all'anarchia.
 <br>
-Stando così le cose, abbiamo due possibili scelte: o agiamo da logici e privilegiamo la coerenza del nostro modello, anche a costo di giustificare azioni esecrabili da parte di chi non si sente più in dovere di essere buono, o agiamo da pastori e privilegiamo la sicurezza del nostro gregge, anche a costo di sentirci dire che le nostre convinzioni sono contraddittorie.
-
+Stando così le cose, abbiamo due possibili scelte: o agiamo da logici e privilegiamo la coerenza del nostro modello, anche a costo di giustificare azioni esecrabili da parte di chi non si sente più in dovere di essere buono, o agiamo da pastori e privilegiamo la sicurezza del nostro gregge, anche a costo di sentirci dire che le nostre convinzioni sono contraddittorie.  
 Se scegliamo la logica, però, saremo costretti a scinderci dai Buonisti; la nostra dottrina non sarà un'evoluzione del Buonismo, ma sarà al contrario una dottrina a sé stante, che ha dei punti di contatto con il Buonismo, ma anche dei punti di attrito.
-I punti di attrito e gli scismi provocano sempre dei conflitti e, così, il nostro tentativo di rendere migliore la religione Buonista avrà ottenuto un risultato diametralmente opposto a quello che ci eravamo prefissi.
-
+I punti di attrito e gli scismi provocano sempre dei conflitti e, così, il nostro tentativo di rendere migliore la religione Buonista avrà ottenuto un risultato diametralmente opposto a quello che ci eravamo prefissi.  
 C'è un modo per evitarlo?
-<br />
 
 ### Imparare dagli errori
 L'esempio riportato sopra ha evidenziato dei problemi che possiamo considerare congeniti a tutte le religioni:
@@ -262,8 +260,8 @@ L'esempio riportato sopra ha evidenziato dei problemi che possiamo considerare c
 
 Oltre ai problemi tipici delle religioni, abbiamo rilevato alcuni problemi tipici degli esseri umani:
 
--   la tendenza a difendere i propri princìpi anche con mezzi che
-    contrastano con i princìpi stessi;
+-   la tendenza a difendere i propri princip&icirc; anche con mezzi che
+    contrastano con i princip&icirc; stessi;
 -   la tendenza a influenzare la propria obiettività con le proprie
     speranze.
 
@@ -289,14 +287,13 @@ Per correggere o quanto meno mitigare questi problemi, una religione dovrebbe qu
 
 Pur se complesso, tutto questo è possibile.
 
-## Soluzione proposta
-Da circa dieci anni sto sviluppando una metafisica che rispetta le condizioni viste sopra e che, soprattutto, è del tutto indipendente dall'esistenza di una o più Divinità.
+## Soluzione proposta
+Da più di dieci anni sto sviluppando una metafisica che rispetta le condizioni viste sopra e che, soprattutto, è del tutto indipendente dall'esistenza di una o più Divinità.
 L'ho chiamata *C'hi++*, un gioco di parole fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato: *C++*.
 Non è un accostamento casuale: la mia intenzione è quella di gestire l'evoluzione della mia teoria così come si gestisce il software; in particolare, il software cosiddetto: *open-source.*
 
 ### Software open-source
-Contrariamente al software realizzato da un individuo o da una società a scopo di lucro, il software *open-source* è il prodotto della collaborazione di diversi programmatori che rendono disponibile il frutto del loro lavoro a titolo gratuito, pubblicando anche il codice sorgente del sistema.
-
+Contrariamente al software realizzato da un individuo o da una società a scòpo di lucro, il software *open-source* è il prodotto della collaborazione di diversi programmatori che rendono disponibile il frutto del loro lavoro a titolo gratuito, pubblicando anche il codice sorgente del sistema.  
 Rispetto al software cosiddetto: *proprietario*, ovvero il software realizzato da una persona o da una società che ne detiene i diritti, il software *open-source* ha diversi lati positivi:
 
 -   **libertà:** non impone legàmi con uno specifico fornitore o a uno
@@ -307,48 +304,48 @@ Rispetto al software cosiddetto: *proprietario*, ovvero il software realizzato d
 -   **sicurezza:** la diffusione del codice sorgente fra la comunità dei
     programmatori fa sì che ci sia un maggior controllo degli errori.
 
-### Versioni
+### Versioni del software
 I letterati, gli scultori, i pittori non possono modificare le loro opere, una volta che sono state pubblicate. Possono dare un ritocco di colore qui, un colpo di scalpello là, ma si tratta sempre di aggiustamenti minimi, che non cambiano la struttura stessa dell'arte-fatto.
-I musicisti, i teatranti e, in parte, i cineasti sono un po' più fortunati, perché possono apportare più facilmente delle modifiche alle loro opere, ma si tratta comunque di eventi che accadono di rado.
-<br />
+I musicisti, i teatranti e, in parte, i cineasti sono un po' più fortunati, perché possono apportare più facilmente delle modifiche alle loro opere, ma si tratta comunque di eventi che accadono di rado.  
 Al contrario, la buona produzione di software ha il vantaggio di essere in continua evoluzione.
 Un software può essere *stabile*, ovvero non avere difetti noti, ma non è mai finito, completo, *perfetto*; sia perché l'utilizzo potrebbe rivelare dei difetti sfuggiti alla fase di test, sia perché delle variazioni del contesto di utilizzo potrebbero richiedere delle modifiche al sistema.
 Il buon software viene quindi costantemente aggiornato e le diverse versioni di uno stesso prodotto sono numerate in maniera progressiva con dei codici composti da tre numeri separati da punti (p.es. *1.4.3*) che indicano, rispettivamente, la versione *major*, la versione *minor e* la *patch*.
 La versione *major* viene incrementata ogni volta che si apportano delle drastiche modifiche al software, rendendolo incompatibile con le versioni precedenti.
 La versione *minor* viene incrementata quando si modifica il codice in maniera minore, aggiungendo o modificando delle funzionalità in maniera compatibile con le versioni precedenti.
 Il numero di *patch* è incrementato ogni volta che si apportano delle modifiche o delle correzioni anche minime al sistema.
-La *major version zero* (_0.y.z_) è destinata allo sviluppo iniziale, quando il software non è ancora stabile e tutto può cambiare in ogni momento. Il versionamento semantico ha anche altre regole, ma per quelli che sono i nostri scopi possiamo fermarci qui.
+La *major version zero* (_0.y.z_) è destinata allo sviluppo iniziale, quando il software non è ancora stabile e tutto può cambiare in ogni momento.  
+Il *versionamento semantico* ha anche altre regole, ma per quelli che sono i nostri scòpi possiamo fermarci qui.
 
 ### Versionamento delle religioni monoteistiche
-Se volessimo applicate il versionamento alle grandi religioni monoteistiche, otterremmo una sequenza simile a quella della pagina seguente.
+Se volessimo sottoporre a versionamento le principali religioni monoteistiche, otterremmo una sequenza simile a quella della tabella seguente.
 
-| ver. | anno | descrizione | modifiche apportate
-:---: | :---: | --- | :--- |
-0.1.0 | 3200 a.C. | Culti egizi            | Riduzione del numero degli Dei; enoteismo e atenismo POC<a href="#poc" class="nota" name="fn-7">7</a> del monoteismo.
-1.0.0 | 2000 a.C. | Ebraismo               | Dio è uno; tutti gli altri sono deprecati.
-1.0.1 | 1200 a.C.  | 10 Comandamenti Esodo  |  Redazione del manuale utente.
-1.0.2 | 621 a.C.   | Deuteronomio           |  Aggiornamento manuale utente.
-1.0.3 | 500 a.C.   | Levitico               |  Redazione del manuale di amministratore di sistema.
-1.1.0 | 33         | Gesù di Nazareth       |  Evoluzione e *debug* delle regole.
-1.1.1 | 60         | Paolo di Tarso         |  Evoluzione delle nuove regole.
-1.1.2 | 70         | Vangelo di Marco       |  Documentazione versione 1.1.
-1.1.3 | 85         | Vangelo di Matteo      |  Documentazione versione 1.1.
-1.1.4 | 95         | Vangelo di Luca        |  Documentazione versione 1.1.
-1.2.0 | 787        | II° Concilio Nicea |  Miglioramenti all'interfaccia grafica: permesse le immagini sacre.
-1.2.1 | 1284       | Vescovo di Passavia    |  Potenziamento dell'*help-desk* con l'introduzione dei Santi Ausiliatori.
-1.3.0 | 1054       | Chiesa Ortodossa       |  Modifiche all'architettura del sistema: si passa da un sistema centralizzato a uno distribuito.
-1.4.1 | 1540       | Calvino                |  Modifiche all'interfaccia utente.
-2.0.0 | 610        | Islam                  |  Cambio di m*ajor version*: Dio è sempre uno, ma non è lo stesso di prima.
-2.1.0 | 657        | Sunniti                |  Rimozione dell'utente amministratore.
-2.2.0 | 661        | Sciiti                 |  Ripristino dell'utente amministratore.
-<br />
-<br />
+| ver. | anno | descrizione | modifiche apportate |
+|:-:|:-:|:-:|---|
+| 0.1.0 | 3200 a.C. | Culti egizi | Riduzione del numero degli Dei; enoteismo e atenismo POC<a href="#poc" class="nota" name="fn-7">7</a> del monoteismo.
+| 1.0.0 | 2000 a.C. | Ebraismo               | Dio è uno; tutti gli altri sono deprecati.
+| 1.0.1 | 1200 a.C.  | 10 Comandamenti Esodo  |  Redazione del manuale utente.
+| 1.0.2 | 621 a.C.   | Deuteronomio           |  Aggiornamento manuale utente.
+| 1.0.3 | 500 a.C.   | Levitico               |  Redazione del manuale di amministratore di sistema.
+| 1.1.0 | 33         | Gesù di Nazareth       |  Evoluzione e *debug* delle regole.
+| 1.1.1 | 60         | Paolo di Tarso         |  Evoluzione delle nuove regole.
+| 1.1.2 | 70         | Vangelo di Marco       |  Documentazione versione 1.1.
+| 1.1.3 | 85         | Vangelo di Matteo      |  Documentazione versione 1.1.
+| 1.1.4 | 95         | Vangelo di Luca        |  Documentazione versione 1.1.
+|1.2.0 | 787        | II° Concilio Nicea |  Miglioramenti all'interfaccia grafica: permesse le immagini sacre.
+| 1.2.1 | 1284       | Vescovo di Passavia    |  Potenziamento dell'*help-desk* con l'introduzione dei Santi Ausiliatori.
+| 1.3.0 | 1054       | Chiesa Ortodossa       |  Modifiche all'architettura del sistema: si passa da un sistema centralizzato a uno distribuito.
+| 1.4.1 | 1540       | Calvino                |  Modifiche all'interfaccia utente.
+| 2.0.0 | 610        | Islam                  |  Cambio di m*ajor version*: Dio è sempre uno, ma non è lo stesso di prima.
+| 2.1.0 | 657        | Sunniti                |  Rimozione dell'utente amministratore.
+| 2.2.0 | 661        | Sciiti                 |  Ripristino dell'utente amministratore.
+
+
 ### Versionamento del C'hi++
 Il C'hi++ è, in un certo senso, monoteistico, ma non è una religione, quindi deve essere sottoposto a un versionamento autonomo.
 Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero:
 
 | n. | anno | descrizione | changelog
-:---: | :---: | --- | :--- |
+:---: | :---: | --- | --- |
 0.1.0 | 2004 |  Proto-C'hi++         | Domenica 12 settembre 2004, scrivevo sul mio blog: *La mia teoria cosmogonica comprende anche due fattori di primaria importanza, colpevolmente trascurati dalle altre teorie: il Minipimer e il concetto di: Immancabile Testa di Pera.*
 0.1.1 | 2007 |  Sostiene Aristotele  | Primo tentativo di formalizzare la strana teoria che andavo sviluppando. Ci sono già i quattro dogmi del C'hi++, ma non c'è ancora nessun accenno allo Spazionismo.
 0.2.0 | 2009 |  C'hi++               | Iniziata redazione del manuale *C'hi++*. Definizione iniziale dello Spazionismo.
@@ -357,21 +354,24 @@ Trattandosi di un sistema ancora in evoluzione, ha come *major version* uno zero
 0.3.2 | 2018 |  Allineamento         | Allineamento delle versioni git con quelle del Manifesto.
 0.4.0 | 2018 |  Manifesto Markdown | Conversione del Manifesto in formato Markdown
 0.5.0 | 2019 |  Revisione Manifesto | Revisione Manifesto come preogetto IT
-0.6.0 | 2020 |  Presentazone Manifesto | Articolo presentazione Manifesto
+0.6.0 | 2020 |  Presentazione Manifesto | Articolo presentazione Manifesto
+0.7.0 | 2020 |  Jekyll | Adottato Jekyll per sito Web; l'articolo della versione 0.6.0 diventa il MANIFEST del progetto
+0.8.0 | 2020 |  Manuale | Redazione del Manuale
+
 
 Già da queste poche righe è possibile vedere alcuni benefici dell'approccio *open-source* alla speculazione filosofica: nella versione 0.1.0 del C'hi++, la figura che definisco: *Immancabile Testa di Pera* era un elemento negativo, assimilabile al Diavolo o alla *Discordia* di Empedocle.
 Successivamente, però, ho capito che questa visione delle cose era la proiezione di un mio desiderio/speranza e sono passato a un modello meno giudicante, in cui i due Enti che generano l'Universo non sono in contrapposizione, ma cooperano in maniera simile allo *Yin* e allo *Yang* del Tao o a *Prakṛti* e *Puruṣa* dell'Induismo.
-Questa modifica, per quanto radicale, non ha avuto nessuna ripercussione negativa sul resto del modello teorico, *dichiaratamente* fallace in quanto ancora in fase evolutiva (*major version* 0); anzi: lo ha reso più robusto perché ha premesso di trovare delle affinità con altre religioni.
-<br />
+Questa modifica, per quanto radicale, non ha avuto nessuna ripercussione negativa sul resto del modello teorico, *dichiaratamente* fallace in quanto ancora in fase evolutiva (*major version* 0); anzi: lo ha reso più robusto perché ha premesso di trovare delle affinità con altre religioni.  
 Se avessimo applicato la stessa modifica al Cattolicesimo, riabilitando la figura del Diavolo, le cose non sarebbero andate altrettanto bene perché, se il Diavolo non fosse cattivo, non solo dovremmo mettere in discussione la veridicità di moltissimi passi della Bibbia (che non può essere messa in discussione perché è la Parola di Dio), ma priveremmo la Chiesa della sua funzione primaria che è quella di salvare le anime, appunto, dal Maligno.
 
 ## Release 0.1: Sostiene Aristotele
-A Giugno del 2007 scrissi un documento dal titolo:  [Sostiene Aristotele](sostiene-aristotele.md) che possiamo considerare la versione 0.1.1 del C'hi++.
+A Giugno del 2007 scrissi un documento dal titolo: 
+[Sostiene Aristotele](/sostiene-aristotele/) che possiamo considerare la versione 0.1.1 del C'hi++.
 In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<a href="#soko" class="nota" name="fn-8">8</a>
 Nelle fasi di espansione, l'Uno esplodeva, generando l'Universo così come lo conosciamo; nelle fasi di contrazione, l'Universo collassava nell'Uno.
 Anche se in embrione, gli elementi principali del C'hi++ ci sono tutti; la rarefazione degli elementi metafisici:
 
-<div class="citazione" >
+<div class="citazione">
 Sostiene Aristotele che le scienze più rigorose sono quelle che richiedono il numero minore di premesse.
 La cosa mi conforta, perché la mia ipotesi richiede solo tre premesse per funzionare a livello “base”, e quattro per una visione un po’ più appetibile delle cose.
 I tre dogmi principali della mia “religione” sono:
@@ -379,25 +379,8 @@ I tre dogmi principali della mia “religione” sono:
 	<li>le cose possono esistere</li>
 	<li>l’Universo si espande</li>
 	<li>se lasci andare un peso, quello ti finisce su un piede</li>
-</ol>
-Del quarto dogma parleremo dopo, per ora concentriamoci su questi tre:<br />
-<br/>
-Dogma numero uno: le cose possono esistere.
-Questo è stato il dogma più facile da formulare, ma è fondamentale, perché se le cose non potessero esistere, tutto il resto non avrebbe senso.<br/>
-<br />
-Dogma numero due: l’Universo si espande.
-Questo dogma, se non me l’avessero detto, non l’avrei mai potuto sapere, ma va bene lo stesso. Allo stato attuale delle nostre conoscenze, tutto lascia supporre che l’Universo fosse, inizialmente, un’unica cosa che, per ragioni non ancora definite, è scoppiata disseminando i suoi pezzi in ogni dove.I pezzi si sono raggrumati in stelle e pianeti, permettendoci quindi di formulare il...<br/>
-<br />
-Dogma numero tre: se lasci andare un peso, quello ti finisce su un piede.
-Qui ho un po’ barato, buttandola in caciara, perché questo, dei tre dogmi, è quello meno comprovabile.
-O meglio, a livello locale (che è appunto quello da me utilizzato nella formulazione), è innegabile il fatto che tutto ciò che ci circonda sia sottoposto alla forza di gravità (se lo lasci andare, il martello ti cade sul piede e anche la Terra, o prima o poi, “cadrà” sul Sole), mentre è solo possibile che le diverse parti dell’Universo potranno, o prima o poi, subire l’attrazione l’una dell’altra e ricompattarsi in un Uno.<br/>
-Poe, in “Eureka”, dice un sacco di fregnacce, ma sostiene una teoria affascinante, ovvero che la forza di gravità non sia altro che la tendenza innata (e metafisica) degli atomi a ritornare all’Uno.
-Io lo cito perché l’idea è molto elegante, ma, per quelli che sono i miei scopi, mi limito qui a dare per buona, anche in assenza di prove a suffragio, la tesi secondo cui l’Universo prima o poi collasserà nell’Uno Primigenio.<br/>
-<br />
-Riassumendo, se affermo che l’Universo esiste, inizialmente era Uno, adesso si sta espandendo, ma poi tornerà a essere Uno, credo che l’unica cosa che mi si può contestare è quel: “tornerà” in vece di: “potrebbe tornare”.<br/>
-</div>
-
-la ciclicità dell'Universo:
+</ol></div>
+la ciclicità dell'Universo:<br />  
 
 <div class="citazione" >
 Una volta che l’Universo sarà nuovamente collassato nell’Uno, i casi saranno due: resterà Uno per il resto del Tempo oppure esploderà di nuovo, dando vita a un nuovo Universo.
@@ -406,10 +389,9 @@ Anche qui, le ipotesi sono due. Una è: potrebbe essere che un Big Bang avvenga 
 La seconda ipotesi è che ogni Big Bang avviene in circostanze e con modalità specifiche e quindi, se l’Uno esploderà di nuovo, nascerà un nuovo Universo, che potrà avere pochi o nessun punto di contatto con quello corrente.<br/>
 La prima ipotesi è possibile, ma poco probabile, quindi diamo per scontato che sia la seconda, quella corretta; tanto non cambia niente, perché il tempo che noi abbiamo a disposizione per far esplodere e implodere l’Universo è infinito e per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali, in un lasso di tempo infinito è  impossibile che la cosa prima o poi non avvenga.
 In base allo stesso principio, dato per scontato che o prima o poi questo Universo tornerà a manifestarsi, è lecito pensare, non per fede, ma in base a un banale calcolo probabilistico, che anche ciò che c’è in esso possa o prima o poi tornare a essere. Noi compresi.
-Magari non la prima volta che questo Universo si ripeterà, magari non la seconda, ma se la sequenza esplosione/collasso andrà avanti per sempre, è lecito pensare che in uno dei cicli futuri noi compariremo di nuovo su questa Terra.
-Anzi, estendendo retroattivamente gli stessi princìpi è altrettanto lecito pensare che questa non sia la prima volta che noi siamo qui a dire le nostre battute: per quello che ne possiamo sapere, questa potrebbe essere una commedia che ha avuto più repliche di Cats e di The Rocky Horror Picture Show messi insieme...</div>
+</div>
 
-la memoria degli eventi passati:
+la memoria degli eventi passati:<br />
 
 <div class="citazione" >
 Il quarto dogma si discosta dai tre dogmi principali perché è l’unico che richiede una certa dose di fede. (...)
@@ -419,41 +401,31 @@ Promemoria che noi, nel corso delle nostre precedenti esistenze, abbiamo appicci
 Una sorta di memoria persistente, esterna, o comunque non soggetta ai cicli di rinascita dell’Universo.
 Se l’Universo fosse un computer, potremmo pensare a tutto ciò che esiste come a un programma che “gira” in memoria e all’istinto (o all’immaginario collettivo) come a qualcosa scritto invece sul disco rigido.
 Ogni volta che il computer viene spento, la memoria si svuota e tutto quello che conteneva si perde, mentre ciò che è scritto sul disco rigido rimane lì, in attesa della prossima “accensione”.
-Insomma, il dogma numero quattro è: Lo sai, perché ci sei già passato.<br/>
-Non vale per qualunque evento della nostra esistenza, ovviamente, ma solo per quelli importanti: quelli che, nelle nostre precedenti esistenze, hanno prodotto effetti che ci interessa o ri-produrre o evitare.
-Non ho ancora capito come facciamo a scrivere questi promemoria, posto che esistano davvero; magari è sufficiente essere molto contenti o molto addolorati per qualcosa, ma so in che maniera possiamo leggerli: evitando di non leggerli.
-Evitando di ignorare i segnali che riceviamo, riconoscendo ed accettando la direzione in cui ci porta la corrente anche quando non è quella in cui vorremmo o preferiremmo andare.
-Non sto dicendo che sia facile.
+Insomma, il dogma numero quattro è: <I>Lo sai, perché ci sei già passato</i>.<br/>
 </div>
 
-l'auto-lesionismo delle scelte egoistiche:
+l'auto-lesionismo delle scelte egoistiche:<br />
 
 <div class="citazione" >
-Ma chi siamo, “noi”?
-Mi piacerebbe pensare che esiste qualcosa di bizzarro come l’anima, ma come ho detto, questa è una cosmogonia che prescinde da elementi metafisici e quindi ne dovrò fare a meno.
-L’idea è che l’anima non esiste e che ciò che noi chiamiamo “anima” altro non sia che una particolare conformazione del circuito sinaptico del cervello.
-In altre parole, l’anima è il modo in cui i neuroni del nostro cervello sono collegati gli uni agli altri.
-D’altro canto, se non fosse così, se esistesse davvero un’anima che determina il nostro modo di comportarci, non si spiegherebbero gli effetti dell’elettroshock o della lobotomia...
-Attenzione, però: dire che l’anima non esiste è pericoloso, perché (semplifico) se l’anima non c’è, allora non posso andare all’Inferno e se non rischio di andare all’Inferno, chi me lo fa fare di comportarmi bene, facendomi un culo così tutta la vita per due soldi? Se davvero l’anima non c’è, mi metto a spacciare droga o a peculare sulle commesse statali e faccio la bella vita.<br/>
-È questo che ha fatto la fortuna della Chiesa Cattolica: sostenendo l’esistenza dell’anima e propugnando un sistema che prevedeva una pena eterna per peccati risibili, ha prodotto duemila anni di pigoristica accettazione delle iniquità dei potenti ai danni dei deboli, ma, se le cose stanno come penso io, il fatto che l’anima non esista non ci autorizza a fare il porco comodo nostro, anzi...<br />
-Se davvero siamo tutti degli epifenomeni, possiamo manifestarci ora qui ora lì, a seconda dei casi e se io oggi (in questo ciclo dell’Universo) mi manifesto all’interno di Raimondo Canaro, evasore fiscale e filosofo d’accatto, un domani (in un altro ciclo di questa particolare specie di Universo) potrei manifestarmi in Pierluigi Mancuso, ufficiale della Guardia di Finanza.
-Similmente, se io oggi (sempre nel senso di: in questo ciclo dell’Universo) mi metto a spacciare droga fregandomene delle persone che ammazzo e delle famiglie che rovino, domani (sempre nel senso...), potrei benissimo ritrovarmi in uno di quei drogati o di quei familiari e subirei le conseguenze delle mie stesse azioni.
-È quindi decisamente meglio che io mi comporti bene e che cerchi, per quanto mi è possibile, di convincere anche gli altri a comportarsi bene.
-</div>
+Se davvero siamo tutti degli epifenomeni, possiamo manifestarci ora qui ora lì, a seconda dei casi e se io oggi (ovvero: <i>in questo ciclo dell’Universo</i>) mi metto a spacciare droga fregandomene delle persone che ammazzo e delle famiglie che rovino, domani (ovvero: <i>in un altro ciclo di questa particolare specie di Universo</i>), potrei benissimo ritrovarmi in uno di quei drogati o di quei familiari e subirei le conseguenze delle mie stesse azioni.
+È quindi decisamente meglio che io mi comporti bene e che cerchi, per quanto mi è possibile, di convincere anche gli altri a comportarsi bene.</div>
 
-la visone dell'esistenza come un processo di miglioramento continuo:
+la visone dell'esistenza come un processo di miglioramento continuo:<br />
 
 <div class="citazione" >
 Ora, il concetto di “bene”, a prescindere da una Divinità e da un corpo di regole predefinito non è che funzioni granché (come dimostra, senza volerlo, il libro: "Un’etica senza Dio" di Lecaldano), ma nel nostro caso possiamo definire “bene” quel comportamento che non lede, almeno intenzionalmente, nessuno.
 È la differenza, drastica, che passa fra l’agire male e l’agire per il male.
 (Anche qui, devo semplificare, ma ho delle dimostrazioni per tutte queste affermazioni...)
 C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musashi:
+
  <blockquote>
     Non bisogna interferire nel funzionamento dell’Universo,
     ma prima è necessario capire quale sia,
     il funzionamento dell’Universo
 </blockquote>
+
  Che somiglia molto a una frase di Jacopone da Todi:
+
  <blockquote>
     Prima devi sape' perché stai ar monno<br />
     quanno sai er perché <br />
@@ -469,8 +441,7 @@ Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Uni
 
 ### Il senso della vita è il debug
 Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*<a href="#beta-tester" class="nota" name="fn-9">9</a>
-di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali (come il *Koan Mu* o il motivo per cui Nansen taglia in due il gatto<a href="#mumon" class="nota" name="fn-10">10</a>)
-ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.
+di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali &mdash; come il *Koan Mu* o il motivo per cui Nansen taglia in due il gatto<a href="#mumon" class="nota" name="fn-10">10</a> &mdash; ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.
 Infatti, se paragoniamo l'esistenza a una sessione di test del software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori<a href="#vasana" class="nota" name="fn-11">11</a>
 perché venga corretto nelle successive versioni del programma.
 Visto che, nel nostro caso, *beta-tester*, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/*beta-tester*, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.
@@ -478,11 +449,9 @@ In quest'ottica, la frase:
 
 >cento Mondi di peccato sono dissipati dalla luce di un solo pentimento<a href="#pentimento" class="nota" name="fn-12">12</a>
 
-non è un'anomalia, ma è una diretta conseguenza della sua presa di coscienza, perché se l'errore viene corretto, il dolore che ha causato in questa esistenza non si ripeterà nelle esistenze successive e l'Universo sarà un po' più Paradiso e un po' meno Inferno.
-
+non è un'anomalia, ma è una diretta conseguenza della presa di coscienza del peccatore, perché se l'errore viene corretto, il dolore che ha causato in questa esistenza non si ripeterà nelle esistenze successive e l'Universo sarà un po' più Paradiso e un po' meno Inferno.  
 Per lo stesso principio visto sopra, se qualcuno fa qualcosa che vi arreca giovamento, è importante che glielo facciate sapere, in modo che possa farlo di nuovo nelle prossime esistenze.
-Questo è facile, oltre che educato, se la persona che ci ha favorito si è comportata bene nei nostri confronti, ma richiede tanta onestà intellettuale e un bel po' di fede se la persona ci ha favorito comportandosi male nei nostri confronti.
-
+Questo è facile, oltre che educato, se la persona che ci ha favorito si è comportata bene nei nostri confronti, ma richiede tanta onestà intellettuale e un bel po' di fede se la persona ci ha favorito comportandosi male nei nostri confronti.  
 In sostanza: la definizione che Frazer dà del termine *religione*:
 
 <div class="citazione" >
@@ -490,9 +459,9 @@ gli sforzi dell’uomo per propiziarsi o conciliarsi potenze superiori che si
 suppone dirigano e controllino il corso della natura e della vita umana.<a href="#frazer" class="nota" name="fn-">13</a>
 </div>
 
-è valida anche per il C'hi++, solo che le “potenze superiori”, siamo noi stessi.
+è valida anche per il C'hi++, solo che le “potenze superiori”, siamo noi stessi. 
 
-##Release 0.2: C'hi++<a name="chi++"></a>
+## Release 0.2: C'hi++
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.
 Questa ambivalenza è presente anche nel titolo, che è un gioco di parole fra il termine giapponese *C'hi* (ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato *C++*.
 Il tono della narrazione è generalmente serio, ma non sempre.
@@ -503,7 +472,7 @@ Questa composizione sul tema della liberazione è stata composta in forma poetic
 </div>
 
 Fatte le debite proporzioni, questo vale anche per *C'hi++*: molte affermazioni del Maestro sono ironiche e lo stesso nome scelto per gli elementi costitutivi dell'Universo (gli _spazioni_) e per la cosmogonia che ne deriva (lo *Spazionismo*) ha chiaramente un intento auto/ironico.
-Anche i riferimenti alla disciplina estetica della disposizione dei panni sullo stendipanni, l'*Ikebarba*, hanno lo scopo di stemperare la seriosità del testo, allegerendone la lettura.
+Anche i riferimenti alla disciplina estetica della disposizione dei panni sullo stendipanni, l'*Ikebarba*, hanno lo scòpo di stemperare la seriosità del testo, allegerendone la lettura.
 
 ### Mitopietica del C'hi++
 Il testo riporterà gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione:
@@ -531,7 +500,7 @@ Tu sai che il primo programma che si impara in ogni linguaggio è di solito una 
 <pre>
 int main(int argc, char * argv)
 {
-	cout << "Hello, World!" << endl;
+    cout << "Hello, World!" << endl;
 }
 </pre>
 
@@ -540,6 +509,7 @@ Con il C'hi++ è la stessa cosa, solo che il Mondo lo crei davvero.
 
 ### L'Annosa Dicotomia
 Nel racconto all'inizio del libro comparirà anche quello che poi sarà uno dei temi ricorrenti del C'hi++, ovvero l'Annosa Dicotomia fra ciò che desideriamo e ciò di cui realmente abbiamo bisogno:
+<!-- @todo: completare revisione -->
 
 <div class="citazione">
 Una volta di più, mi trovo a dover fronteggiare l’Annosa Dicotomia fra ciò che il cliente desidera e quello di cui realmente ha bisogno e, una volta di più, sarà ingrato compito dell’uomo informatico quello di venire apparentemente meno ai propri doveri al fine di produrre qualcosa di consono alle reali esigenze del committente.
@@ -553,7 +523,7 @@ Nell'estetica del C'hi++ a queste due forze se ne aggiunge una terza, intermedia
 Sono opere di Decorazione tutte quelle idee e quegli artefatti che soddisfano i sensi dell'uomo, ma che non hanno alcuna influenza diretta, positiva o negativa che sia, sulla sua crescita spirituale.
 
 #### L'Ikebarba
-Un'applicazione pratica di questi princìpi si ha nella disciplina artistica dell'*Ikebarba*, che, come accennato prima, definisce i criterii etici ed estetici per la disposizione dei panni sullo stendipanni.
+Un'applicazione pratica di questi princip&icirc; si ha nella disciplina artistica dell'*Ikebarba*, che, come accennato prima, definisce i criter&icirc; etici ed estetici per la disposizione dei panni sullo stendipanni.
 Il principio filosofico che sottende l'Ikebarba è che ogni nostra azione è importante e non esistono momenti di serie A, nei quali facciamo le cose che ci piacciono e momenti di serie B, nei quali facciamo ciò che è necessario fare.
 Anche la stenditura dei panni, se approcciata correttamente, può essere un passo verso il miglioramento di sé e del Mondo.
 Il primo precetto dell'Ikebarba è una perifrasi della frase di Gesù sullo Shabbat:
@@ -578,9 +548,9 @@ Al contrario, l’indottrinamento degli informatici, la loro segregazione in una
 </div>
 
 Nei capitoli seguenti, sarà descritto il linguaggio C++, facendo dei paralleli fra i suoi costrutti sintattici e alcuni concetti filosofici.
-Riporto di seguito alcuni esempi, anche si tratta ancora di appunti e non di un testo definitivo:
+Riporto di seguito alcuni esempi, anche si tratta ancora di appunti e non di un testo definitivo: 
 
-####Commenti al codice
+#### Commenti al codice
 Affinità con i *Post-it* di cui parlavo prima, una sorta di memoria storica dell'Universo:
 
 <div class="citazione">
@@ -676,7 +646,7 @@ Vivere è come scendere in canoa lungo un fiume.
 Affannarsi a risalire la corrente è inutile e infruttuoso, perché il fiume è più forte di noi e non si stanca mai.
 Lasciarsi andare alla corrente è pericoloso, perché ci si potrebbe parare davanti un ostacolo e noi non avremmo modo di evitarlo.
 È necessario quindi remare solo quel tanto che ci permette di essere più veloci della corrente e di schivare gli ostacoli che, di volta in volta, si presentano sul nostro cammino.
-Similmente, scrivere del buon codice significa scrivere solo il codice necessario a raggiungere lo scopo che ci si è prefissi. Aggiungere una sola virgola in più è sbagliato, perché rende più difficile il debug e più lento il programma.
+Similmente, scrivere del buon codice significa scrivere solo il codice necessario a raggiungere lo scòpo che ci si è prefissi. Aggiungere una sola virgola in più è sbagliato, perché rende più difficile il debug e più lento il programma.
 Chi pratica il C'hi++ applica lo stesso principio alla sua vita, e compie solo le azioni necessarie, ignorando tutto ciò che è superfluo.
 Capire quali sono le azioni necessarie è semplice, così com’è semplice, quando si naviga su un fiume, capire qual è la direzione della corrente.
 </div>
@@ -712,10 +682,10 @@ della Storia, che a sua volta genererà nuove esperienze e nuovi *Post-It*;
 4. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
 5. tutto ricomincia daccapo.
 
-####Basso accoppiamento
+#### Basso accoppiamento
 Lo Spazionismo è la parte più pericolosa di tutta la mia metafisica.
 Non solo perché non ho alcun titolo per parlare di spazio e materia, ma perché il nome stesso della teoria è legato ai suoi postulati: il nome *Spazionismo* deriva dal nome *spazione* e il nome *spazione* deriva dai presunti attributi dell'entità che rappresenta<a href="#spazione" class="nota" name="fn-17">17</a>.
-È, questa, la trasposizione astro-fisica del problema meta-fisico visto a proposito del [Buonismo](#buonismo): se alla fine si scopre che Dio non è buono o che comunque non ha senso attribuirgli delle qualità terrene, il nome della religione non ha più senso, indipendentemente dalla solidità dei suoi precetti.
+È, questa, la trasposizione astro-fisica del problema meta-fisico visto a proposito del Buonismo: se alla fine si scopre che Dio non è buono o che comunque non ha senso attribuirgli delle qualità terrene, il nome della religione non ha più senso, indipendentemente dalla solidità dei suoi precetti.
 <br />
 In informatica, questo rischio si previene adottando il metodo del *basso accoppiamento* o *low coupling*, un termine che non si riferisce alla generale difficoltà degli informatici a instaurare rapporti con persone di sesso opposto, ma alla separazione delle funzioni all'interno di un sistema.
 Se gli elementi interni di un sistema sono dipendenti gli uni dagli altri, la correzione o la modifica di uno di essi comporterà necessariamente anche la modifica del resto del codice.
@@ -730,7 +700,7 @@ in un progetto *open-source*, coinvlgendo nello “sviluppo” anche altre perso
 ### Git
 *Git* è un sistema con cui si gestiscono le diverse versioni di un software, ma può essere utilizzato per tenere traccia delle modifiche di qualsiasi documento elettronico. Leggendo il registro degli eventi di Git possiamo vedere quali sono state le modifiche apportate al sistema:
 
-```
+<pre>
 *   commit fa61cc01a2c1c3aeedc94a8a8a795e932d17f98d (origin/master)
 |\  Merge: ced4c8f 1746b3c
 | | Author: Chi++ <git@chiplusplus.org>
@@ -748,7 +718,9 @@ in un progetto *open-source*, coinvlgendo nello “sviluppo” anche altre perso
 | | | Date:   Sat Dec 15 19:42:22 2018 +0100
 | | |     Merge branch 'release 0.4.3'
 | | |
-```
+</pre>
+
+
 Ciascuno di quei “commit” identificati da una stringa alfanumerica che si vedono nel codice qui sopra, è una sorta di fotografia del sistema in un determinato momento dello sviluppo.
 Se ci si accorge di aver fatto un errore, si può ritornare indietro, annullando le modifiche fatte e ripristinando la vecchia versione del sistema.
 <br >
@@ -763,7 +735,7 @@ Mi sono dilungato su Git perché il prossimo paragrafo comincia con la frase..
 ## Release 0.4: Markdown
 Come si può vedere dal registro degli eventi di Git, il 9 Dicembre di quest'anno ho convertito il testo di questo documento dal formato *OpenDocument* al formato *Markdown*.
 
-```
+<pre>
 commit ba7ff38b6d0862b13a79f10153c2eb11477b2a1f
 Author: Chi++ <git@chiplusplus.org>
 Date:   Sun Dec 9 16:01:53 2018 +0100
@@ -775,7 +747,8 @@ Author: Chi++ <git@chiplusplus.org>
 Date:   Sun Dec 9 10:30:25 2018 +0100
 
     Iniziata conversione Manifesto in formato Markdown
-```
+</pre>
+
 La differenza fra i due formati è che OpenDocument non è un formato testuale puro ed è più complicato da gestire con Git; al contrario, Markdown è un formato *plain-text* ed è gestito senza problemi da Git.
 Il passaggio a Markdown non è stato un vezzo, ma un obbligo, perché solo in questo modo è possibile avere un controllo completo sulle modifiche che sono apportate ai testi.
 Un beneficio collaterale dell'adozione di Markdown è stato la *portabilità* del testo: mentre un testo in formato OpenDocument può essere letto e modificato solo con un programma di *desktop-publishing*, come *Word* o una delle sue alternative, un testo Markdown può essere letto e modificato con qualunque strumento permetta di aprire e modificare file di testo, da *Notepad* a *vi*.
@@ -797,7 +770,7 @@ questo testo fammelo in color rosso pompeiano
 può funzionare solo su un computer a cui sia stato insegnato come generare quella
 specifica sfumatura di colore nota come: *rosso pompeiano*.<a href="#rosso-pompeiano" class="nota" name="fn-19">19</a>
 
-Traslando questo concetto in termini letterarii, possiamo dire che una vignetta di satira politica non è portabile, perché implica una conoscenza sia del soggetto della vignetta che dell'evento a cui si riferisce; al contrario, una (buona) poesia è portabile, perché si riferisce a concetti universali che chiunque è in grado di capire.
+Traslando questo concetto in termini letterar&icirc;, possiamo dire che una vignetta di satira politica non è portabile, perché implica una conoscenza sia del soggetto della vignetta che dell'evento a cui si riferisce; al contrario, una (buona) poesia è portabile, perché si riferisce a concetti universali che chiunque è in grado di capire.
 Nel nostro caso, possiamo dire che la portabilità è la possibilità di rendere accettabile un concetto per persone aventi culture o convinzioni religiose di tipo diverso.
 
 ### Portabilità del C'hi++
@@ -825,7 +798,7 @@ ripristinato.
 <br />
 I cicli cosmici sono periodi temporali chiamati Manvantara, suddivisi al proprio interno in quattro ere o *yuga*, ciascuna caratterizzata da una particolare qualità dell’esistenza. Si tratta di un ritorno periodico a condizioni di vita non uguali ma analoghe, da un punto di vista qualitativo, a quelle dei cicli precedenti, una successione di quattro ere che ricorda, su scala ridotta, l’alternarsi delle quattro stagioni.
 <br />
-Il Sāṁkhya, la dottrina su cui si fonda lo Yoga, parla di due princìpi che, interagendo tra loro, manifestano l’intero universo con tutti gli esseri viventi e gli oggetti inanimati che lo popolano: Prakṛti, il polo materiale e femminile, e Puruṣa, quello spirituale e maschile; nell’essere umano Prakṛti costituisce il corpo e la mente, che diventano la dimora dell’anima individuale (puruṣa).
+Il Sāṁkhya, la dottrina su cui si fonda lo Yoga, parla di due princip&icirc; che, interagendo tra loro, manifestano l’intero universo con tutti gli esseri viventi e gli oggetti inanimati che lo popolano: Prakṛti, il polo materiale e femminile, e Puruṣa, quello spirituale e maschile; nell’essere umano Prakṛti costituisce il corpo e la mente, che diventano la dimora dell’anima individuale (puruṣa).
 </div>
 
 su quelli che io ho definito i *Post-It*:
@@ -908,7 +881,7 @@ Un ostacolo alla diffusione di massa che, al contrario, non penso sarà possibil
 Per alcuni, questo può essere un lato positivo, ma si tratta di una minoranza; in questo momento, la maggior parte delle persone è alla ricerca di certezze, non di verità.
 D'altro canto, il Buddismo Zen utilizza un approccio simile da più di mille anni
 e anche la religone ebraica, se dobbiamo credere al Katz<a href="#katz" class="nota" name="fn-28">28</a>,
-ha prodotto un gran numero di premii Nobel perché spinge i suoi fedeli a mettere
+ha prodotto un gran numero di prem&icirc; Nobel perché spinge i suoi fedeli a mettere
 in discussione le affermazioni dei testi sacri, rendendoli così più propensi a
 sviluppare idee originali, quindi preferisco aspettare un po', prima di
 considerare un errore questa caratteristica.
@@ -916,7 +889,7 @@ considerare un errore questa caratteristica.
 ### Un'etica per apparati digitali
 In questo periodo storico, non sono solo gli umani ad avere bisogno di una nuova etica.
 Qualche tempo fa, stavo cercando un saggio sul *brainjacking*<a href="# brainjacking" class="nota" name="fn-29">29</a>
-su [Springer](https://rd.springer.com) e nell'elenco degli articoli mi sono
+su <a href="https://rd.springer.com" target="springer">Springer</a> e nell'elenco degli articoli mi sono
 apparsi due titoli in sequenza:
 
 ![](../../assets/img/value-sensitive-design.png)
@@ -947,12 +920,12 @@ mentre dal punto di vista dell'Ufficio Legale o della società assicurativa, il 
 L'auto non ha il tempo di valutare tutte queste variabili, quindi ha bisogno di una sua scala di valori che le permetta di *prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso<a href="#book" class="nota" name="fn-32">32</a>
 non possono essere d'aiuto*; in altre parole, l'automobile ha bisogno di una Fede.
 Ovviamente non potrà essere una delle religioni canoniche, perché sarebbe limitante dal punto di vista delle vendite e apparentemente non sarà nemmeno una filosofia laica, perché se ce ne fosse una adatta, in vent'anni l'avrebbero trovata.
-Dovrà quindi essere qualcosa di intermedio, né religioso né laico, con princìpi che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori.<a href="#barbelognostica" class="nota" name="fn-33">33</a>
+Dovrà quindi essere qualcosa di intermedio, né religioso né laico, con princip&icirc; che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori.<a href="#barbelognostica" class="nota" name="fn-33">33</a>
 Dovrà essere in condizione di adattarsi senza stravolgimenti al *mutare delle fogge e dei costumi* della Società e dovrà poter imparare dai suoi errori, correggendoli rapidamente.
 Dovrà essere *vendor-independent* e *open-source*, per facilitare la scoperta e la correzione di eventuali errori.
 Tanto meglio, poi, se potesse essere compresa e gestita facilmente dal software e dagli informatici.
 Il C'hi++ potrebbe essere tutto questo.
-I princìpi del C'hi++, anche se ancora in embrione, permettono risolvere il dilemma bambino/notaio in maniera abbastanza semplice perché per C'hi++ non ha importanza chi dei due debba essere sacrificato, basta che la scelta sia preventiva e intenzionale, in modo che possa essere modificata nelle successive vite dell'Universo.
+I princip&icirc; del C'hi++, anche se ancora in embrione, permettono risolvere il dilemma bambino/notaio in maniera abbastanza semplice perché per C'hi++ non ha importanza chi dei due debba essere sacrificato, basta che la scelta sia preventiva e intenzionale, in modo che possa essere modificata nelle successive vite dell'Universo.
 In pratica, l'utente della *smart-car*, prima di partire, dovrà decidere che tipo di comportamento dovrà adottare il sistema nel caso si presentasse il problema: "o lui o io"; una soluzione che risolve non solo i problemi del sistema di guida, ma anche quelli degli uffici marketing e legale, perché scarica la responsabilità della scelta sull'utente e non sulla casa automobilistica o sul produttore del software.
 In ottica C'hi++ il titolo sul giornale potrebbe essere:
 
@@ -977,7 +950,7 @@ Mi sembra un motivo più che sufficiente.
     <h2>Note</h2>
     <ol>
         <li>
-            Le frasi in corsivo sono commenti trovati sui *social-network*.
+            Le frasi in corsivo sono commenti trovati sui social-network.
             <a href="#fn-1" name="corsivo">&#8617;</a>
         </li>
         <li><a target="note"
@@ -1007,38 +980,37 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-6" name="reami">&#8617;</a>
         </li>
         <li>
-            *Proof Of Concept*: prototipo che serve a di/mostrare le funzionalità
+            <i>Proof Of Concept</i>: prototipo che serve a di/mostrare le funzionalità
             di un nuovo sistema o processo.
             <a href="#fn-7" name="poc">&#8617;</a>
         </li>
         <li>
-            Di cui potrebbe essere un'eco l': *“inspirare, espirare”* all'inizio
+            Di cui potrebbe essere un'eco l': “inspirare, espirare” all'inizio
             della poesia funeraria del monaco Gesshū Sōko.
             <a href="#fn-8" name="soko">&#8617;</a>
         </li>
         <li>
-            I *beta-tester* sono le persone che provano in anteprima i programmi
+            I <i>beta-tester</i> sono le persone che provano in anteprima i programmi
             che stanno per essere rilasciati sul mercato per cercare eventuali
             errori sfuggiti alla fase di test interno effettuato dell'azienda
             produttrice.
             <a href="#fn-9" name="beta-tester">&#8617;</a>
         </li>
         <li>
-            Mumon, *La Porta Senza Porta*. Adelphi, 1987.
+            Mumon, <i>La Porta Senza Porta</i>. Adelphi, 1987.
             <a href="#fn-10" name="mumon">&#8617;</a>
         </li>
         <li>
-           Grazie a un “imprintig karmico” che io qui chiamo *Post-it* e che
-           Yoga e Buddismo chiamano *Vāsanā*.
+           Grazie a un “imprintig karmico” che io qui chiamo <i>Post-it</i> e che Yoga e Buddismo chiamano <i>Vāsanā</i>.
             <a href="#fn-11" name="vasana">&#8617;</a>
         </li>
         <li>
-            Attar, Farid al-din - *Il verbo degli uccelli* (Mantiq al-Tayr).
+            Attar, Farid al-din - <i>Il verbo degli uccelli</i> (Mantiq al-Tayr).
             Edizione elettronica - Kharabat, Collana di letterature orientali.
             <a href="#fn-12" name="pentimento">&#8617;</a>
         </li>
         <li>
-            Frazer, James George - *Il Ramo d'Oro*. Edizione elettronica -
+            Frazer, James George - <i>Il Ramo d'Oro</i>. Edizione elettronica -
             Newton Compton 2012.
             <a href="#fn-13" name="frazer">&#8617;</a>
         </li>
@@ -1049,7 +1021,7 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-14" name="no-mao">&#8617;</a>
         </li>
         <li>
-            E non: *per colpa*, come nella versione 0.1.1
+            E non: <i>per colpa</i>, come nella versione 0.1.1
             <a href="#fn-15" name="causa">&#8617;</a>
         </li>
         <li>
@@ -1059,9 +1031,8 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-16" name="variante">&#8617;</a>
         </li>
         <li>
-            Il nome *spazione* è anche un riferimento, intenzionalmente
-            auto-ironico, ai: *cosoni*, i baccelli del film *Totò sulla Luna*,
-            parodia nostrana de: *L'invasione degli ultracorpi*.
+            Il nome <i>spazione</i> è anche un riferimento, intenzionalmente
+            auto-ironico, ai: <i>cosoni</i>, i baccelli del film <i>Totò sulla Luna</i>, parodia nostrana de: <i>L'invasione degli ultracorpi</i>.
             <a href="#fn-17" name="">&#8617;</a>
         </li>
         <li>
@@ -1069,13 +1040,13 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-18" name=leopardi"">&#8617;</a>
         </li>
         <li>
-            Alcune delle possibili codifiche sono: *#cf3054*,
-            *rgb(207, 48, 84)*, *hsl(346, 62%, 50%)*.
+            Alcune delle possibili codifiche sono: <i>#cf3054</i>,
+            <i>rgb(207, 48, 84)</i>, <i>hsl(346, 62%, 50%)</i>.
             <a href="#fn-19" name="rosso-pompeiano">&#8617;</a>
         </li>
         <li>
             Scarabelli, Piera; Vinti, Massimo.
-            *Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja*.
+            <i>Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja</i>.
             Edizione elettronica - Mimesis Edizioni.
             <a href="#fn-20" name="gita">&#8617;</a>
         </li>
@@ -1088,19 +1059,18 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-22" name="rovelli">&#8617;</a>
         </li>
         <li>
-            *diàvolo* s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος,
-            propr. “calunniatore” (der. di διαβάλλω “gettare attraverso, calunniare”),
+            <i>diàvolo</i> s. m. [dal lat. tardo, eccles., diabŏlus, gr. διάβολος, propr. “calunniatore” (der. di διαβάλλω “gettare attraverso, calunniare”),
             adoperato nel gr. crist. per tradurre l’ebr. śāṭān
             “contraddittore, oppositore”].
             <a href="#fn-23" name=diavolo">&#8617;</a>
         </li>
         <li>
-            *lucìfero* agg. e s. m. [dal lat. lucĭfer -a -um, comp. di lux
+            <i>lucìfero</i> agg. e s. m. [dal lat. lucĭfer -a -um, comp. di lux
             lucis “luce” e -fer “-fero”, calco del gr. ϕωσϕόρος].
             <a href="#fn-24" name="lucifero">&#8617;</a>
         </li>
         <li>
-            *Istituto Geografico Militare*.
+            <i>Istituto Geografico Militare</i>.
             <a href="#fn-25" name="igm">&#8617;</a>
         </li>
         <li>
@@ -1113,7 +1083,7 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-27" name="">&#8617;</a>
         </li>
         <li>
-            Eran Katz - *Jerome diventa un genio* - Barbera Editore, 2006.
+            Eran Katz - <i>Jerome diventa un genio</i> - Barbera Editore, 2006.
             <a href="#fn-28" name="katz">&#8617;</a>
         </li>
         <li>
@@ -1134,7 +1104,7 @@ Mi sembra un motivo più che sufficiente.
         <li>
             Che, ne caso di un'automobile, potrebbe essere una sorta di
             registro storico delle situazioni indecidibili del passato,
-            simile al *Book* delle partite scacchistiche.
+            simile al <i>Book</i> delle partite scacchistiche.
             <a href="#fn-32" name="book">&#8617;</a>
         </li>
         <li>
@@ -1143,8 +1113,7 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-33" name="barbelognostica">&#8617;</a>
         </li>
         <li>
-            Citazione dal koan Zen *Il cavallo scappato*, ripresa da Calvino
-            nelle sue *Fiabe Italiane*.
+            Citazione dal koan Zen <i>Il cavallo scappato</i>, ripresa da Calvino nelle sue <i>Fiabe Italiane</i>.
             <a href="#fn-34" name="cavallo">&#8617;</a>
         </li>
     </ol>

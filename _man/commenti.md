@@ -145,15 +145,8 @@ vera essenza del Linguaggio, è solo una questione di ritmo.
 
 ---
 
-Una volta, il maestro Canaro mostrò ai suoi allievi un brano di codice e
-gli chiese di spiegare che cosa facesse:
+{% include_relative canaro/codice-commentato.md %}
 
-```
-{% include_relative src/8.1-codice-maestro.cpp %}
-```
-
-Gli allievi studiarono il codice e diedero le loro risposte, ma
-sbagliarono tutti, perché tutte le istruzioni erano comprese fra un */ \** e un *\*/* e, di fatto, non facevano nulla.
 
 <!--
 @todo - introdurre il concetto di "post-it"
