@@ -271,3 +271,4 @@ Il C++, grazie ai suoi principii, ha una maggior duttilità e può evolversi, ad
 
 ---
   
+{% include_relative canaro/scienza-come-il-C.md %}

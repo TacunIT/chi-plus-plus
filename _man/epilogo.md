@@ -33,3 +33,7 @@ in basso, verso il mare.
 <!--
 Tornai nella cella del Maestro Canaro per dirgli che avevo capito, ma lui aveva gli occhi ch    
 -->
+
+---
+
+{% include_relative canaro/poesia-funeraria.md %}
