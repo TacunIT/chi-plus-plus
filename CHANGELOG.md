@@ -1,3 +1,8 @@
+## 0.9.1 (May 14, 2020)
+  - Rimossa la directory docs dal repository
+  - Modificato il testo sui linguaggi di alto e basso livello
+  - Merge branch 'rel/0.9.0'
+
 ## 0.9.0 (May 09, 2020)
   - Isolati i testi del Manuale relativi al Maestro Canaro in file a sé stanti
   - Revisione dei testi
