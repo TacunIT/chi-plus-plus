@@ -1,7 +1,7 @@
 .DS_Store
 .~lock*
 .~*
-docs/
+docs/*
 .jekyll-cache/
 bin/purge-cache.sh
 src/out/*  

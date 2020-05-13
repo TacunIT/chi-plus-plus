@@ -19,8 +19,7 @@ Il maestro Canaro sosteneva che anche scrivere il manuale di un linguaggio di pr
 
 ---
 
-I linguaggi di programmazione servono a chiedere al computer di fare
-determinate operazioni.
+I linguaggi di programmazione servono a chiedere al computer di fare determinate operazioni.
 Perché il computer possa ubbidirci, deve "capire" che tipo di entità deve gestire e che tipo di operazioni deve compiere su di esse.
 Per esempio, se chiedessimo al computer di raddoppiarci lo stipendio, il computer dovrebbe sapere almeno a quanto ammonta il nostro stipendio e come funziona una moltiplicazione per due.
 
@@ -31,23 +30,38 @@ long raddoppia(long stipendio)
 }
 ```
 
-Siccome l'unica cosa che il computer conosce sono delle sequenze di 1 e di 0 
-– siano esse su un disco, in memoria o sulla porta di comunicazione della 
-tastiera o del video, – dobbiamo trovare il modo di "spiegargli" i concetti di
-*stipendio* e *moltiplicazione* in forma binaria.
-I linguaggi di programmazione fanno precisamente questo: traducono le nostre 
-richieste in un linguaggio che il computer può comprendere.
+Siccome l'unica cosa che il computer conosce sono delle sequenze di 1 e di 0  – siano esse su un disco, in memoria o sulla porta di comunicazione della tastiera o del video, – dobbiamo trovare il modo di "spiegargli" i concetti di *stipendio* e *moltiplicazione* in forma binaria.
+I linguaggi di programmazione fanno precisamente questo: traducono le nostre richieste in un linguaggio che il computer può comprendere.
+
 
 ---
-  
-Il linguaggi di programmazione possono essere di *alto livello* o di *basso livello*, a seconda della componente del computer con cui dialogano.
+
+Il linguaggi di programmazione possono essere di *alto livello* o di *basso livello*.
+I linguaggi di alto livello, come il *C* o il *C++* hanno dei costrutti simili al linguaggio naturale e non sono legati a una determinata architettura hardware.
+I linguaggi di basso livello, come l'*assembly* hanno dei costrutti simili al codice nativo della macchina e sono, per questo motivo, legati a una specifica architettura hardware. 
+
+La funzione *raddoppia*, che abbiamo visto prima, tradotta in linguaggio *assembly*, diventa:
+
+```
+raddoppia(long):
+        push    rbp
+        mov     rbp, rsp
+        mov     QWORD PTR [rbp-8], rdi
+        mov     rax, QWORD PTR [rbp-8]
+        add     rax, rax
+        pop     rbp
+        ret
+```
+
+I programmi scritti con linguaggi di alto livello, come vedi, sono più facili da scrivere e da correggere, ma sono più lenti da esegure perché il codice deve essere “tradotto” in una forma comprensibile alla CPU.
+I programmi scritti con linguaggi di basso livello sono più complessi da scrivere o da correggere, ma sono molto più veloci da eseguire perché contengono solo le istruzioni strettamente necessarie a svolgere il compito desiderato. 
+
+---
+
 Un computer è come una nave. 
 L'hardware è in basso, come la sala macchine e la CPU è il capo-smacchinista: non vede il mare, non vede il cielo, non sa nemmeno se la nave stia andando a Nord oppure a Sud; riceve le sue istruzioni dall'interfono e si interessa solo solo della velocità e dei consumi.
-Il sistema operativo è l'equipaggio.
-È in una posizione intermedia, né in basso né in alto e si prende cura della nave e del carico; può parlare con il Comandante e con il capo macchinista, ma non parla mai con gli armatori.
-L'interfaccia utente, invece, è il ponte di comando.
-È il punto più alto della nave, da cui si può vedere tutto. 
-È in contatto diretto con gli armatori, da cui riceve delle direttive su ciò che deve o non deve fare e con l'equipaggio, che lo informa sullo stato della nave.
+Il sistema operativo è l'equipaggio: è in una posizione intermedia, né in basso né in alto e si prende cura della nave e del carico; può parlare con il Comandante e con il capo macchinista, ma non parla mai con gli armatori.
+L'interfaccia utente, invece, è il ponte di comando: è il punto più alto della nave, da cui si può vedere tutto; è in contatto diretto con gli armatori, da cui riceve delle direttive su ciò che deve o non deve fare e con l'equipaggio, che lo informa sullo stato della nave.
 
 Ciascun livello del computer ha il suo linguaggio.
 La CPU di questo computer “ragiona” in quello che si chiama: *linguaggio macchina*, ovvero una lunga serie di valori decimali che indicano sia le operazioni da compiere che le grandezze coinvolte.
