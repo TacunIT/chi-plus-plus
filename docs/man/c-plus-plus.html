@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="it-IT"><head>
+    <title>Il C++ |  C'hi++
+</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"     content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="canonical"            href="https://chiplusplus.org/man/c-plus-plus" />
+    <meta     name="thumbnail"       content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
+    <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
+    <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:title"        content="Il C++" />
+    <meta property="og:type"         content="website" />    
+    <meta property="og:description"  content="Chi++ - Proposta per una metafisica open-source"" />
+    <meta property="og:image"        content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
+    <meta property="og:image:width"  content="300" />
+    <link rel=icon href=/assets/img/favicon.ico type=image/x-icon>
+    <script src="https://use.fontawesome.com/b4b35c88c8.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Simonetta:400,400i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/screen.css" ><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-159394431-1');
+</script></head>
+<body class="manuale capitolo ">
+
+    <div id="page">
+
+        <header><nav class="menu-top">
+    
+    
+    <a href="/man/linguaggi-di-programmazione" 
+       title="Vai a: I linguaggi di programmazione" 
+       class="left">
+        <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+    
+    
+    <a href="/" class="center" title="Torna alla home-page">
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a href="/man/indice" class="center" title="Torna all'indice del Manuale">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+
+    
+    <a href="/man/commenti" 
+       title="Vai a: I commenti" 
+       class="right" >
+            <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+    </a>
+    
+    
+</nav>
+</header>
+
+        <main class="pubblicato">
+            
+        
+
+            <h1>
+                Il C++
+            </h1>
+
+            <blockquote class="motto">Non chiederti cosa può fare per te il sistema operativo; chiediti invece cosa puoi fare tu, per il sistema operativo</blockquote>
+
+            <section id="testo">
+
+                <p>In uno dei suoi libri, Bjarne Stroustroup definì il C++:</p>
+
+<blockquote>
+  <p>Un linguaggio di programmazione per svolgere compiti non banali.</p>
+</blockquote>
+
+<p>Fà che si possa dire la stessa cosa di te.</p>
+
+<hr />
+
+<p>C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983, quando lavorava ai Laboratori Bell della AT&amp;T.
+Dieci anni prima, il suo collega Dennis Ritchie aveva creato un linguaggio di programmazione chiamato <em>C</em>. 
+Il C, come ti ho detto, era estremamente efficace se dovevi programmare i computer, ma — così come alcuni dei tuoi confratelli — non gestiva altrettanto bene le entità della vita reale.</p>
+
+<p>Stroustrup, che ai tempi del suo dottorato aveva lavorato con un linguaggio a oggetti chiamato <em>Simula67</em>, pensò che se avesse potuto aggiungere alla velocità di esecuzione del C la possibilità di creare dei nuovi tipi di dato di Simula, avrebbe ottenuto il linguaggio perfetto.
+Aveva ragione.</p>
+
+<p>Il nome <em>C++</em> si riferisce all’operatore <code>++</code>, che serve a incrementare di un’unità il valore di una variabile:</p>
+
+<pre><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+int main(int argc, char** argv)
+{
+    int C = 12;                  
+    cout &lt;&lt; "Valore di C = " &lt;&lt; C &lt;&lt; endl;  
+    C++;                         
+    cout &lt;&lt; "Valore di C = " &lt;&lt; C &lt;&lt; endl; 
+    return 0;               
+} 
+
+</code></pre>
+<p>Se compili ed eseguti questo codice, otterrai:</p>
+
+<pre><code>&gt; g++ 7.1-operatore-incremento.cpp -o ../out/esempio
+&gt; ../out/esempio
+Valore di C = 12
+Valore di C = 13
+</code></pre>
+
+<p>C++, infatti, non era un nuovo linguaggio: era un C migliorato. 
+Tutto il codice e l’esperienza che erano state fatte fino ad allora sul C potevano essere applicate anche al C++.<br />
+<!--
+Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l'Ebraismo: prese una religione spartana, adatta per un popolo in fuga nel deserto e la  migliorò, rendendola meno autoritaria.
+--></p>
+
+<hr />
+
+<p>Le principali novità aggiunte al C dal C++ sono: l’<em>astrazione dei dati</em>, la <em>programmazone a oggetti</em> e la <em>generic programming</em>.
+Ora ti spiego cosa sono, ma tu non preoccuparti se non capisci: approfondiremo tutti questi concetti in seguito.</p>
+
+<p>I tipi di dato del C sono:</p>
+
+<pre><code>char, int, float, double, array, enum, struct, union
+</code></pre>
+
+<p>Più che sufficienti per scrivere il <em>kernel</em> di Unix, ma decisamente inadeguati per scrivere un programma che gestisca delle linee telefoniche.
+Perché un linguaggio di programmazione possa gestire con la stessa facilità un flusso di dati, un utente, una linea telefonica o anche un allevamento di cavalli, è necessario che oltre ai tipi di dato predefiniti, possa gestire anche delle nuove entità definite dal programmatore.
+Questa è ciò che si chiama <em>data abstraction</em> e il C++ la ottiene per mezzo delle <em>classi</em>.
+Le classi sono la rappresentazione, all’interno del codice, di un’entità:</p>
+
+<pre><code>class Cavallo {
+private:
+    Sesso  _sesso;
+    string _razza;
+public:
+    const char* getSpecie() const {
+        return "cavallo"; 
+    } 
+    const char getSesso() const {        
+        return (char)_sesso;
+    }
+    const char* getRazza() const {
+        return _razza.c_str();
+    }
+    Cavallo() {}
+    Cavallo(const char* razza, Sesso sesso ) {
+        _razza  = razza;
+        _sesso  = sesso;
+    }
+};
+</code></pre>
+
+<p>o di un concetto:</p>
+
+<pre><code>class Monta {
+private:
+    Cavallo _maschio;
+    Cavallo _femmina;
+    Data     _giorno;
+public:
+    Monta(Cavallo&amp; maschio, Cavallo&amp; femmina) {
+        _maschio = maschio;
+        _femmina = femmina;
+        time(&amp;_giorno);
+    }
+};
+</code></pre>
+
+<p>Grazie alle classi, il programmatore può creare dei nuovi tipi di dato e
+utilizzarli all’interno del suo programma nello stesso modo in cui
+utilizzerebbe i tipi di dato primitivi del linguaggio.</p>
+
+<p>Ciascuna classe ha degli <em>attributi</em> e dei <em>metodi</em>.
+Gli <em>attributi</em> sono dei dati che descrivono le caratteristiche della classe, per esempio, la razza o il sesso di un cavallo.
+I <em>metodi</em> sono delle funzioni che definiscono il modo in cui la classe può interagire con gli altri elementi del programma.
+Nelle classi dell’esempio gli <em>attributi</em> sono gli elementi che vedi nella sezione <code>private</code>, mentre i <em>metodi</em> sono le funzioni che vedi nella sezione <code>public</code>.
+La funzione che ha lo stesso nome della classe si chiama <em>costruttore</em> della classe, perché “spiega” al compilatore come debbano essere creati gli oggetti di questa classe.</p>
+
+<p>Le classi, però, sono la ricetta, non sono la pietanza. 
+Per poter essere utilizzate, le classi devono essere <em>istanziate</em> negli oggetti:</p>
+
+<pre><code>int main()
+{
+    Cavallo stallone("lipizzano", maschio);    
+    Cavallo giumenta("maremmano", femmina);
+    Monta   monta(stallone, giumenta);
+    cout &lt;&lt; monta &lt;&lt; endl;
+    return 0;               
+}
+</code></pre>
+
+<p><code>stallone</code>, <code>giumenta</code> e <code>monta</code> sono tre oggetti.
+I primi due sono istanze della classe <em>Cavallo</em>, il terzo è un’istanza della classe <em>Monta</em>.</p>
+
+<p>Se aggiungi un po’ di codice alle classi che abbiamo visto prima e compili il programma, otterrai:</p>
+
+<pre><code>% g++ 7.2-esempio-classe.cpp -o ../out/esempio 
+% ../out/esempio                               
+DATA: Sun Apr  5 10:38:31 2020
+MASCHIO: Specie:cavallo, Sesso:m, Razza:lipizzano
+FEMMINA: Specie:cavallo, Sesso:f, Razza:maremmano```
+</code></pre>
+
+<p>Perché un linguaggio di programmazione possa dirsi “orientato agli
+oggetti”, però, oltre alle classi deve poter gestire l’<em>ereditarietà</em> e
+il <em>polimorfismo</em>.</p>
+
+<p>L’<em>ereditarietà</em> permette di definire dei nuove classi come
+estensione di classi esistenti:</p>
+
+<pre><code>class Animale {
+private:
+    string _specie;
+    string _razza;
+    Sesso  _sesso;
+public:
+    const char* getSpecie() const {
+        return _specie.c_str(); 
+    } 
+    const char getSesso() const {        
+        return (char)_sesso;
+    } 
+    const char* getRazza() const {
+        return _razza.c_str();
+    }
+    Animale() {}
+    Animale(const char* specie, const char* razza, const Sesso sesso ) {
+        _specie = specie;
+        _razza  = razza;
+        _sesso  = sesso;
+    }
+};
+
+class Cavallo : public Animale {
+public:
+    Cavallo() {}
+    Cavallo(const char* razza, const Sesso sesso )
+    : Animale("Cavallo", razza, sesso ) { 
+    }
+};
+</code></pre>
+
+<p>Nell’esempio qui sopra, abbiamo prima definito una classe <em>Animale</em>, che ha tre attributi: la <em>specie</em>, lal <em>razza</em> e il <em>sesso</em>; poi abbiamo definito una classe <em>Cavallo</em>, derivandola dalla classe <em>Animale</em>.
+In questo modo, se oltre ai cavalli il nostro programma dovesse gestire anche altri ungulati, non dovremmo ripetere in ciascuna classe le stesse istruzioni, ma potremmo utilizzare quelle della classe base:</p>
+
+<pre><code>class Asino : public Animale {
+public:
+    Asino() {}
+    Asino(const char* razza, const Sesso sesso )
+    : Animale("Asino", razza, sesso ) { 
+    }
+};
+</code></pre>
+
+<p>A questo punto, la tua sagacia dovrebbe averti fatto rilevare un possibile problema (posto che tu sia sveglio, cosa di cui non sono del tutto certo): la classe <em>Monta</em> può gestire solo oggetti di tipo <em>Cavallo</em>.</p>
+
+<p>Un linguaggio che non gestisca il <em>polimorfismo</em> ci costringerebbe a scrivere due nuove classi: una per i muli e una per i bardotti:</p>
+
+<pre><code>class MontaMulo {
+private:
+    Asino   _maschio;
+    Cavallo _femmina;
+    Data     _giorno;
+public:
+    MontaMulo(Asino&amp; maschio, Cavallo&amp; femmina) {
+        _maschio = maschio;
+        _femmina = femmina;
+        time(&amp;_giorno);
+    }
+};
+
+class MontaBardotto {
+private:
+    Cavallo _maschio;
+    Asino   _femmina;
+    Data     _giorno;
+public:
+    Monta(const Cavallo&amp; maschio, const Asino&amp; femmina) {
+        _maschio = maschio;
+        _femmina = femmina;
+        time(&amp;_giorno);
+    }
+};
+</code></pre>
+
+<p>Aristotele sostiene che</p>
+
+<blockquote>
+  <p>le scienze che derivano da un numero minore di premesse sono più rigorose delle scienze che ne discendono per mezzo dell’aggiunta di nuove premesse
+<!-- Aristotele. La metafisica (Italian Edition) . UTET. Kindle Edition. --></p>
+</blockquote>
+
+<p>Qualcosa di simile vale anche per il software: i programmi con meno righe di codice sono più affidabili e più facili da correggere o da modificare.</p>
+
+<p>Il C++ ci aiuta in questo senso perché permette il <em>polimorfismo</em>, ovvero la capacità di una funzione o di un operatore di svolgere il proprio compito indipendentemente dal tipo di dato che deve gestire.
+Se riscriviamo la classe <em>Monta</em> usando, al posto dei parametri di tipo <em>Cavallo</em>, dei parametri che hanno il tipo della classe base <em>Animale</em>:</p>
+
+<pre><code>class Monta {
+private:
+    Animale* _maschio;
+    Animale* _femmina;
+    Data     _giorno;
+public:
+    Monta(Animale* maschio, Animale* femmina) {
+        _maschio = maschio;
+        _femmina = femmina;
+        time(&amp;_giorno);
+    }
+};
+
+</code></pre>
+
+<p>Potremo creare degli oggetti di classe <em>Monta</em> con qualunque classe derivata:</p>
+
+<pre><code>int main()
+{
+    Animale* cavallo  = new Cavallo("lipizzano", maschio);    
+    Animale* giumenta = new Cavallo("maremmano", femmina);    
+    Animale* asino    = new Asino("amiatino", maschio);
+    Animale* asina    = new Asino("sardo", femmina);
+
+    Monta puledro(cavallo, giumenta);
+    Monta ciuco(asino, asina);
+    Monta mulo(asino, giumenta);
+    Monta bardotto(cavallo, asina);
+
+    cout &lt;&lt; "PULEDRO\n"  &lt;&lt; puledro  &lt;&lt; endl;
+    cout &lt;&lt; "CIUCO\n"    &lt;&lt; ciuco    &lt;&lt; endl;
+    cout &lt;&lt; "MULO\n"     &lt;&lt; mulo     &lt;&lt; endl;
+    cout &lt;&lt; "BARDOTTO\n" &lt;&lt; bardotto &lt;&lt; endl;
+
+    return 0;              
+}
+</code></pre>
+
+<p>Compilando ed esegendo il programma, otterrai:</p>
+
+<pre><code>% g++ 7.4-esempio-polimorfismo.cpp -o ../out/esempio
+% ../out/esempio                                    
+PULEDRO
+DATA: Sun Apr  5 12:33:45 2020
+MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+
+CIUCO
+DATA: Sun Apr  5 12:33:45 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Asino	Razza:sardo	    Sesso:f
+
+MULO
+DATA: Sun Apr  5 12:33:45 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+
+BARDOTTO
+DATA: Sun Apr  5 12:33:45 2020
+MASCHIO: Specie:Asino	Razza:sardo	    Sesso:f
+FEMMINA: Specie:Cavallo	Razza:lipizzano	Sesso:m
+</code></pre>
+
+<hr />
+
+<p>Come ti ho detto, però, un buon programmatore non si accontenta di essere riuscito a produrre il risultato atteso, ma si chiede sempre se ci sia un modo più efficiente per ottenerlo.<br />
+Nel nostro caso, il codice che abbiamo utilizzato per mostrare il risultato degli accoppiamenti:</p>
+
+<pre><code>Monta puledro(cavallo, giumenta);
+Monta ciuco(asino, asina);
+Monta mulo(asino, giumenta);
+Monta bardotto(asina, cavallo);
+
+cout &lt;&lt; "PULEDRO\n"  &lt;&lt; puledro  &lt;&lt; endl;
+cout &lt;&lt; "CIUCO\n"    &lt;&lt; ciuco    &lt;&lt; endl;
+cout &lt;&lt; "MULO\n"     &lt;&lt; mulo     &lt;&lt; endl;
+cout &lt;&lt; "BARDOTTO\n" &lt;&lt; bardotto &lt;&lt; endl;
+</code></pre>
+
+<p>non è il massimo dell’efficienza, sia perché potremmo sbagliarci ad accoppiare la specie dei genitori con il nome del figlio, sia perché le istruzioni devono essere ripetute per ciascun oggetto. 
+Per risolvere il primo difetto possiamo aggiungere alla classe <em>Monta</em> un attributo e un metodo per definire autonomamente che tipo di genia venga prodotta dalla copula:</p>
+
+<pre><code>string   _esito;
+void setEsito() {
+    if(strcmp(_maschio-&gt;getSpecie(),"Asino") == 0) {
+        if(strcmp(_femmina-&gt;getSpecie(),"Asino") == 0){
+            _esito = "asino";
+        } else {
+            _esito = "mulo";
+        } 
+    } else {        
+        if(strcmp(_femmina-&gt;getSpecie(),"Cavallo") == 0) {
+            _esito = "puledro";
+        } else {
+            _esito = "bardotto";
+        } 
+    }
+}
+</code></pre>
+
+<p>ma anche così dovremo comunque riscrivere quattro righe di codice per modificare l’output del programma: un approccio inaccettabile per i sistemi di produzione, dove le entità da gestire possono essere migliaia.</p>
+
+<p>Possiamo risolvere questo problema grazie alla <em>generic programming</em> e al modo in cui viene implementata nel C++:le classi <em>template</em>:</p>
+
+<pre><code>template &lt; class T&gt; class list;
+</code></pre>
+
+<p>La classe <em>list</em> è una delle classi <em>template</em> del C++ e permette di inserire, rimuovere, spostare, unire, ordinare ed elencare una lista di oggetti di una stessa classe.</p>
+
+<p>La sintassi per creare una lista di oggetti di classe <em>Monta</em> è:</p>
+
+<pre><code>list&lt;Monta&gt; monte;
+</code></pre>
+
+<p>Fatto ciò, possiamo aggiungere elementi alla nostra lista con la funzione <em>push_back()</em>, alla quale passeremo direttamente il costruttore della classe:</p>
+
+<pre><code>monte.push_back(Monta(cavallo, giumenta)); 
+monte.push_back(Monta(asino, asina));       
+monte.push_back(Monta(asino, giumenta));     
+monte.push_back(Monta(cavallo, asina));
+</code></pre>
+
+<p>Questo codice è una forma più efficiente di:</p>
+
+<pre><code>Monta m1(cavallo, giumenta); 
+Monta m2(asino, asina);       
+Monta m3(asino, giumenta);     
+Monta m4(cavallo, asina);
+
+monte.push_back(m1);  
+monte.push_back(m2);  
+monte.push_back(m3);
+monte.push_back(m4);
+</code></pre>
+<p>Per visualizzare il contenuto della lista, indipendentemtente dal numero di elementi, basta l’istruzione:</p>
+
+<pre><code>for (list&lt;Monta&gt;::iterator it=monte.begin(); it!=monte.end(); it++) {
+    cout &lt;&lt; *it &lt;&lt; endl;
+}
+</code></pre>
+
+<p>La funzione <em>main()</em> del nostro programma sarà quindi:</p>
+
+<pre><code>int main()
+{
+    Animale* cavallo  = new Cavallo("lipizzano", maschio);    
+    Animale* giumenta = new Cavallo("maremmano", femmina);    
+    Animale* asino    = new Asino("amiatino", maschio);
+    Animale* asina    = new Asino("sardo", femmina);
+    list&lt;Monta&gt; monte;
+    monte.push_back(Monta(cavallo, giumenta)); 
+    monte.push_back(Monta (asino, asina));       
+    monte.push_back(Monta (asino, giumenta));     
+    monte.push_back(Monta (cavallo, asina));
+    for (list&lt;Monta&gt;::iterator it=monte.begin(); 
+         it!=monte.end(); it++) {
+        cout &lt;&lt; *it &lt;&lt; endl;
+    }
+    return 0;               
+}
+</code></pre>
+
+<p>e l’output che otterremo è:</p>
+
+<pre><code>$ g++ 7.5-esempio-template.cpp -o ../out/esempio
+% ../out/esempio                                
+DATA:    Sun Apr  5 16:19:24 2020
+MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+ESITO:   puledro
+
+DATA:    Sun Apr  5 16:19:24 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Asino	Razza:sardo	Sesso:f
+ESITO:   asino
+
+DATA:    Sun Apr  5 16:19:24 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+ESITO:   mulo
+
+DATA:    Sun Apr  5 16:19:24 2020
+MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FEMMINA: Specie:Asino	Razza:sardo     Sesso:f
+ESITO:   bardotto
+</code></pre>
+
+<p>Se volessimo per qualche motivo invertire l’ordine degli elementi nella lista, tutto quello che dovremmo dare è di aggiungere prima del ciclo <em>for</em> l’istruzione:</p>
+
+<pre><code>monte.reverse();
+</code></pre>
+
+<p>e l’output che otteremmo è:</p>
+
+<pre><code>% g++ 7.5-esempio-template.cpp -o ../out/esempio
+% ../out/esempio                                
+DATA:    Sun Apr  5 17:08:27 2020
+MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FEMMINA: Specie:Asino	Razza:sardo	Sesso:f
+ESITO:   bardotto
+
+DATA:    Sun Apr  5 17:08:27 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+ESITO:   mulo
+
+DATA:    Sun Apr  5 17:08:27 2020
+MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
+FEMMINA: Specie:Asino	Razza:sardo     Sesso:f
+ESITO:   asino
+
+DATA:    Sun Apr  5 17:08:27 2020
+MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+ESITO:   puledro
+
+</code></pre>
+
+<p>Oltre alle classi template predefinite della <em>Standard Template Library</em>, il C++ permette di definire le proprie classi template, ma di questo parleremo a tempo debito.</p>
+
+<p>Queste caratteristche, unite alla compatibilità con il codice scritto in C, fecero di C++ il linguaggio <em>object-oriented</em> più utilizzato degli anni ‘90.
+L’avvento, alla fine del Secolo, del linguaggio con la “J”, quello che ha bisogno di un sistema di <em>garbage collecion</em> per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un’idea di quello che sarebbe stato il millennio che ci si presentava davanti.
+Non a caso, Stroustrsup disse:</p>
+
+<blockquote>
+  <p>I suspect that the root of many of the differences between C/C++ and Java is that AT&amp;T is primarily a user (a consumer) of computers, languages, and tools, whereas Sun is primarily a vendor of such things.
+<!-- Bjarne Stroustrup - http://gotw.ca/publications/c_family_interview.htm --></p>
+</blockquote>
+
+
+            </section>
+            
+        
+
+        
+        </main>
+
+        <footer>
+    <nav>
+        
+        
+        <a href="/man/linguaggi-di-programmazione" 
+           title="Vai a: I linguaggi di programmazione" 
+           class="left">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        
+        
+        <a href="#top" 
+           title="Torna all'inizio" >
+           <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        
+        <a href="/man/commenti" 
+           title="Vai a: I commenti" 
+           class="right" >
+                <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+                
+
+    </nav>
+
+</footer>
+
+
+    </div>
+
+  </body>
+
+</html>
