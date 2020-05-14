@@ -11,8 +11,7 @@ quote:      "Dio non programma in Assembler con l'Universo."
 Brian Kernigan, disse:
 
 <blockquote>
-L'unico modo di apprendere un linguaggio di programmazione è quello
-di utilizzarlo per scrivere programmi.
+L'unico modo di apprendere un linguaggio di programmazione è quello di utilizzarlo per scrivere programmi.
 </blockquote>
 
 Il maestro Canaro sosteneva che anche scrivere il manuale di un linguaggio di programmazione è un buon sistema per impararlo.  
@@ -272,9 +271,9 @@ il compilatore C ti avviserebbe che non può sommare due variabili di tipo char.
 ``````
 
 
-In altre parole, il C è un linguaggio che non va oltre l'ambito per cui è stato creato.
+Il C è un linguaggio che non va oltre l'ambito per cui è stato creato.
 È una convenzione.
-Se domani smettessimo di utilizzare i computer, il C non esisterebbe più, perché tutti i suoi costrutti sono legati al funzionamento degli apparati informatici.  
+Se domani smettessimo di utilizzare i computer, il C non esisterebbe più, perché tutti i suoi costrutti sono legati al funzionamento degli apparati informatici.
 Al contrario, il C++ e tutti i linguaggi che si basano sul paradigma a oggetti hanno una componente filosofica che trascende l'ambito informatico.
 Se domani smettessimo di utilizzare i computer, i costrutti che il C++ ha ereditato dal C non avrebbero più senso, ma i concetti di [classe](/man/classi) e di [oggetto](/man/oggetti) resterebbero ancora validi.
   
