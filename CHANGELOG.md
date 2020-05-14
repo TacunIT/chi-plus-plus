@@ -1,3 +1,7 @@
+## 0.9.2 (May 15, 2020)
+  - Aggiunto paragrafo sulla scienza al capitolo sui  linguaggi di programmazione
+  - Ripristinata la directory docs, che serve a Github Pages :-)
+
 ## 0.9.1 (May 14, 2020)
   - Rimossa la directory docs dal repository
   - Modificato il testo sui linguaggi di alto e basso livello
