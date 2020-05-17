@@ -12,22 +12,24 @@ La varietà dei tipi di dato disponibili è la caratteristica principale del C++
 Il C++ ha ereditato dal C una vasta gamma di tipi di dato.
 Possiamo dividere questi tipi di dato in due gruppi: i dati **scalari** e i dati *aggregati*.
 
-I dati **scalari** sono i tipi di dato primitivi e permettono di gestre numeri, lettere e valori booleani:
+I tipi di dato **scalari** sono: `void`, `bool`, `char`, `wchar_t`, `int`, `float`, `double` e permettono di gestre gli elementi classici di un programma: i numeri interi, i numeri decimali, le lettere e i valori booleani.
 
-| tipo | descrizione |
-|:-:|---|
+I tipi di dato **aggregati** sono gli array, le unioni, gli emumerati, le strutture e le classi e, come dice anche il loro nome, sono costituiti dalla unione di più dati scalari dello stesso tipo o di tipi differenti.
+
+Questo brano di codice mostra i principali tipi di dato del C++.
+
+```
+{% include_relative src/tipi-di-dato-principali.cpp %}
+```
+Attenzione, però: nessuno di questi signori è in realtà quello che afferma di essere.
+
+
 | `void` | utilizzato solo per funzioni o puntatori |  
 | `bool` | valori booleani `true` e `false`|
 | `char` | caratteri semplici |
 | `wchar_t` | caratteri estesi |
 | `int` | valori interi |
 | `float`, `double` | valori decimali
-
-
-I dati **aggregati** sono tipi di dato costituiti dalla unione di più dati scalari dello stesso tipo o di tipi differenti:
-
-| tipo | descrizione |
-|:-:|---|
 | array      | insiemi di dati dello stesso tipo |  
 | `class`    | tipi di dato definiti dall'utente |  
 | `enum`     |  |  
