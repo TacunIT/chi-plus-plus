@@ -187,7 +187,17 @@ int main()
     double: 8
 </code></pre>
 
-<p>Dalla dimensione del tipo di dato dipende la quantità di valori che può assumere:</p>
+<p>Dalla dimensione del tipo di dato dipende la quantità di valori che può assumere.
+Un <code>char</code> è composto da otto bit e può assumere per ciò 2<sup>8</sup> valori, quindi: da 0 a 255.
+Un <code>int</code> è composto da sedici bit e può assumere 2<sup>16</sup> valori, ovvero: da 0 a 65.535.
+Un <code>float</code> ha 8 bit per l’esponente e 23 per la mantissa, quindi può assumere valori da 1.175494e-38 a 3.402823e+38 e così via.</p>
+
+<p>Oltre ai tipi di dato, il C++ ha ereditato dal C anche i cosiddetti <em>modificatori</em>, ovvero delle parole-chiave che, se aggiunte al nome di un tipo di dato, ne modificano le caratteristiche.<br />
+I modificatori <code>short</code> e <code>long</code> alterano la dimensione del dato, riducendolo o aumentandolo. <br />
+I modificatori <code>signed</code> e <code>unsigned</code> fanno sì che il primo bit del dato sia considerato il suo segno: positivo se il valore è 0; negativo se il valore è 1.
+Il segno, però, “ruba” un bit alla variabile <em>signed</em> che quindi potrà assumere un numero minore di valori rispetto alla stessa variabile <em>unsigned</em>.</p>
+
+<p>Questo programma mostra come la dimensione e i valori minimi e massimi del tipo di dato <code>int</code> possano variare con l’utilizzo dei modificatori:</p>
 
 <pre><code>#include &lt;iostream&gt;
 #include &lt;iomanip&gt; 
@@ -195,72 +205,55 @@ int main()
 
 using namespace std;
 
+/**
+ * Funzione template che mostra la dimensione e i 
+ * valori minimi e massimi per un tipo di dato.
+ */
+template&lt;typename T&gt;
+void dimensione()
+{
+    cout &lt;&lt; sizeof(T) &lt;&lt; " bytes,"
+         &lt;&lt; setw(4)   &lt;&lt; "da:"   
+         &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::min()
+         &lt;&lt; setw(4)   &lt;&lt; "a:"    
+         &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::max() 
+         &lt;&lt; endl;
+}
+
 int main()
 {    
-    int w = 12;
+    /** Variazione della dimensione e dei valori del tipo int */
+    cout &lt;&lt; setw(16) &lt;&lt; "int: "; 
+    dimensione&lt;int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned int: "; 
+    dimensione&lt;unsigned int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "short int: "; 
+    dimensione&lt;short int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned short: "; 
+    dimensione&lt;unsigned short int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "long int: "; 
+    dimensione&lt;long int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned long: "; 
+    dimensione&lt;unsigned long int&gt;();
     
-    /** Mostra i valori minimi e massimi per tipi di dato */
-    cout &lt;&lt; setw(w) &lt;&lt; "tipo"
-         &lt;&lt; setw(w) &lt;&lt; "minimo"   
-         &lt;&lt; setw(w) &lt;&lt; "massimo"
-         &lt;&lt; endl;      
-    cout &lt;&lt; setw(w) &lt;&lt; "bool: "   
-         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;bool&gt;::min()
-         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;bool&gt;::max() 
-         &lt;&lt; endl;
-    cout &lt;&lt; setw(w) &lt;&lt; "char: "   
-         &lt;&lt; setw(w) &lt;&lt; (unsigned int) numeric_limits&lt;unsigned char&gt;::min()
-         &lt;&lt; setw(w) &lt;&lt; (unsigned int) numeric_limits&lt;unsigned char&gt;::max() 
-         &lt;&lt; endl;
-    cout &lt;&lt; setw(w) &lt;&lt; "int: "   
-         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;unsigned int&gt;::min()
-         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;unsigned int&gt;::max() 
-         &lt;&lt; endl;
-    cout &lt;&lt; setw(w) &lt;&lt; "float: "   
-         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;float&gt;::min()
-         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;float&gt;::max() 
-         &lt;&lt; endl;
-    cout &lt;&lt; setw(w) &lt;&lt; "double: "   
-         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;double&gt;::min()
-         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;double&gt;::max() 
-         &lt;&lt; endl;
     return 0;
 }
 
 </code></pre>
 
-<pre><code>% g++ tipi-di-dato-valori.cpp -o ../out/esempio
+<p>Su questo computer, i valori sono:</p>
+
+<pre><code>% g++ tipi-di-dato-limiti.cpp -o ../out/esempio
 % ../out/esempio                               
-        tipo      minimo     massimo
-      bool:            0           1
-      char:            0         255
-       int:            0  4294967295
-     float:  1.17549e-38 3.40282e+38
-    double: 2.22507e-3081.79769e+308
+           int: 4 bytes, da:          -2147483648  a:           2147483647
+  unsigned int: 4 bytes, da:                    0  a:           4294967295
+     short int: 2 bytes, da:               -32768  a:                32767
+unsigned short: 2 bytes, da:                    0  a:                65535
+      long int: 8 bytes, da: -9223372036854775808  a:  9223372036854775807
+ unsigned long: 8 bytes, da:                    0  a: 18446744073709551615
 </code></pre>
 
-<!--
-
-| `void` | utilizzato solo per funzioni o puntatori |  
-| `bool` | valori booleani `true` e `false`|
-| `char` | caratteri semplici |
-| `wchar_t` | caratteri estesi |
-| `int` | valori interi |
-| `float`, `double` | valori decimali
-| array      | insiemi di dati dello stesso tipo |  
-| `class`    | tipi di dato definiti dall'utente |  
-| `enum`     |  |  
-| `structure |  |  
-| `union`    |  |  
-
-
-
-La dimensione di un dato determina il numero massimo di valori che quel dato può assumere.  
-Un `char` è composto da otto bit e può assumere per ciò 2<sup>8</sup> valori, quindi: da 0 a 255.  
-Un `int` è composto da sedici bit e può assumere 2<sup>16</sup> valori, ovvero: da 0 a 65.535.  
-Un `long int` è composto da trentadue bit e può assumere 2<sup>32</sup> valori, ovvero: da 0 a 4.294.976.295 valori.
-
--->
+<p>–&gt;</p>
 
 
             </section>

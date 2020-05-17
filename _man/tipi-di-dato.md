@@ -48,42 +48,39 @@ Compilando ed eseguendo questo codice, otterrai:
     double: 8
 ```
 
-Dalla dimensione del tipo di dato dipende la quantità di valori che può assumere:
+Dalla dimensione del tipo di dato dipende la quantità di valori che può assumere.
+Un `char` è composto da otto bit e può assumere per ciò 2<sup>8</sup> valori, quindi: da 0 a 255.
+Un `int` è composto da sedici bit e può assumere 2<sup>16</sup> valori, ovvero: da 0 a 65.535.
+Un `float` ha 8 bit per l'esponente e 23 per la mantissa, quindi può assumere valori da 1.175494e-38 a 3.402823e+38 e così via.
+
+Oltre ai tipi di dato, il C++ ha ereditato dal C anche i cosiddetti *modificatori*, ovvero delle parole-chiave che, se aggiunte al nome di un tipo di dato, ne modificano le caratteristiche.  
+I modificatori `short` e `long` alterano la dimensione del dato, riducendolo o aumentandolo.   
+I modificatori `signed` e `unsigned` fanno sì che il primo bit del dato sia considerato il suo segno: positivo se il valore è 0; negativo se il valore è 1.
+Il segno, però, “ruba” un bit alla variabile *signed* che quindi potrà assumere un numero minore di valori rispetto alla stessa variabile *unsigned*.
+
+Questo programma mostra come la dimensione e i valori minimi e massimi del tipo di dato `int` possano variare con l'utilizzo dei modificatori:
 
 ```
-{% include_relative src/tipi-di-dato-valori.cpp %}
+{% include_relative src/tipi-di-dato-limiti.cpp %}
 ```
 
+Su questo computer, i valori sono:
+
 ```
-% g++ tipi-di-dato-valori.cpp -o ../out/esempio
+% g++ tipi-di-dato-limiti.cpp -o ../out/esempio
 % ../out/esempio                               
-        tipo      minimo     massimo
-      bool:            0           1
-      char:            0         255
-       int:            0  4294967295
-     float:  1.17549e-38 3.40282e+38
-    double: 2.22507e-3081.79769e+308
-```
-
-<!--
-
-| `void` | utilizzato solo per funzioni o puntatori |  
-| `bool` | valori booleani `true` e `false`|
-| `char` | caratteri semplici |
-| `wchar_t` | caratteri estesi |
-| `int` | valori interi |
-| `float`, `double` | valori decimali
-| array      | insiemi di dati dello stesso tipo |  
-| `class`    | tipi di dato definiti dall'utente |  
-| `enum`     |  |  
-| `structure |  |  
-| `union`    |  |  
+           int: 4 bytes, da:          -2147483648  a:           2147483647
+  unsigned int: 4 bytes, da:                    0  a:           4294967295
+     short int: 2 bytes, da:               -32768  a:                32767
+unsigned short: 2 bytes, da:                    0  a:                65535
+      long int: 8 bytes, da: -9223372036854775808  a:  9223372036854775807
+ unsigned long: 8 bytes, da:                    0  a: 18446744073709551615
+ ```
 
 
 
-La dimensione di un dato determina il numero massimo di valori che quel dato può assumere.  
-Un `char` è composto da otto bit e può assumere per ciò 2<sup>8</sup> valori, quindi: da 0 a 255.  
-Un `int` è composto da sedici bit e può assumere 2<sup>16</sup> valori, ovvero: da 0 a 65.535.  
-Un `long int` è composto da trentadue bit e può assumere 2<sup>32</sup> valori, ovvero: da 0 a 4.294.976.295 valori.
+
+
+
 
 -->
