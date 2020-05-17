@@ -70,7 +70,7 @@
                 <p>La varietà dei tipi di dato disponibili è la caratteristica principale del C++.</p>
 
 <p>Il C++ ha ereditato dal C una vasta gamma di tipi di dato.
-Possiamo dividere questi tipi di dato in due gruppi: i dati <strong>scalari</strong> e i dati <em>aggregati</em>.</p>
+A seconda della loro natura, possiamo dividere questi tipi di dato in due gruppi: i dati <strong>scalari</strong> e i dati <em>aggregati</em>.</p>
 
 <p>I tipi di dato <strong>scalari</strong> sono: <code>void</code>, <code>bool</code>, <code>char</code>, <code>wchar_t</code>, <code>int</code>, <code>float</code>, <code>double</code> e permettono di gestre gli elementi classici di un programma: i numeri interi, i numeri decimali, le lettere e i valori booleani.</p>
 
@@ -185,6 +185,58 @@ int main()
        int: 4
      float: 4
     double: 8
+</code></pre>
+
+<p>Dalla dimensione del tipo di dato dipende la quantità di valori che può assumere:</p>
+
+<pre><code>#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+#include &lt;limits&gt;
+
+using namespace std;
+
+int main()
+{    
+    int w = 12;
+    
+    /** Mostra i valori minimi e massimi per tipi di dato */
+    cout &lt;&lt; setw(w) &lt;&lt; "tipo"
+         &lt;&lt; setw(w) &lt;&lt; "minimo"   
+         &lt;&lt; setw(w) &lt;&lt; "massimo"
+         &lt;&lt; endl;      
+    cout &lt;&lt; setw(w) &lt;&lt; "bool: "   
+         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;bool&gt;::min()
+         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;bool&gt;::max() 
+         &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "char: "   
+         &lt;&lt; setw(w) &lt;&lt; (unsigned int) numeric_limits&lt;unsigned char&gt;::min()
+         &lt;&lt; setw(w) &lt;&lt; (unsigned int) numeric_limits&lt;unsigned char&gt;::max() 
+         &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "int: "   
+         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;unsigned int&gt;::min()
+         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;unsigned int&gt;::max() 
+         &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "float: "   
+         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;float&gt;::min()
+         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;float&gt;::max() 
+         &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "double: "   
+         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;double&gt;::min()
+         &lt;&lt; setw(w) &lt;&lt; numeric_limits&lt;double&gt;::max() 
+         &lt;&lt; endl;
+    return 0;
+}
+
+</code></pre>
+
+<pre><code>% g++ tipi-di-dato-valori.cpp -o ../out/esempio
+% ../out/esempio                               
+        tipo      minimo     massimo
+      bool:            0           1
+      char:            0         255
+       int:            0  4294967295
+     float:  1.17549e-38 3.40282e+38
+    double: 2.22507e-3081.79769e+308
 </code></pre>
 
 <!--
