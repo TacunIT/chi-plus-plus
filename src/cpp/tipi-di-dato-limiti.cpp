@@ -29,11 +29,11 @@ int main()
     cout << setw(16) << "short int: "; 
     dimensione<short int>();
     cout << setw(16) << "unsigned short: "; 
-    dimensione<unsigned short int>();
+    dimensione<unsigned short>();
     cout << setw(16) << "long int: "; 
     dimensione<long int>();
     cout << setw(16) << "unsigned long: "; 
-    dimensione<unsigned long int>();
+    dimensione<unsigned long>();
     
     return 0;
 }

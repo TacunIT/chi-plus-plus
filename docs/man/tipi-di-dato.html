@@ -101,8 +101,7 @@ public:
     ColoreRGB coloreRgb;        
     void nome_colore() {
         cout &lt;&lt; "coloreRGB:";
-        switch(coloreRgb.valore)
-        {
+        switch(coloreRgb.valore) {
             case red  : cout &lt;&lt; "red"  ;   break;
             case green: cout &lt;&lt; "green"; break;
             case blue : cout &lt;&lt; "blue" ;  break;
@@ -146,11 +145,37 @@ int main()
 
 </code></pre>
 
-<p>Attenzione, però: nessuno di questi signori è in realtà quello che afferma di essere.
+<p>Il tipo di dato <code>void</code> non ha né una dimensione né un valore e può essere assegnato solo a un puntatore o a una funzione che non torna alcun tipo di valore, come la funzione <code>nome_colore</code> della classe <code>Colore</code>.</p>
+
+<p>Il tipo di dato <code>bool</code> è utilizzato per gestire i valori booleani.
+Può assumere solo due valori: <code>true</code> o <code>false</code>, quindi ha la dimensione minima possibile, ovvero un byte.</p>
+
+<p>Il tipo <code>int</code> permette di gestire i numeri interi. 
+Di solito ha una dimensione di quattro byte, che può essere aumentata o diminuita per mezzo di parole-chiave dette: <em>modificatori</em>.</p>
+
+<p>I tipi <code>float</code> e <code>double</code> si utilizzano per gestire i numeri decimali. 
+Hanno una lunghezza di quattro e otto byte rispettivamente e una precisione di sette e quindici cifre decimali.</p>
+
+<p>I tre elementi che compaiono al di fuori della funzione <code>main</code> sono tipi di dato <em>aggregati</em> e permettono di definre dei tipi di dati non standard.</p>
+
+<p>Gli <code>enum</code> permettono di assegnare dei nomi a dei valori, rendendo più facile la programmazione.
+Nell’esempio, l’<em>enum</em> <code>RGB</code>assegna un nome a tre valori della codifica RGB.
+Questo nuovo tipo di dato è utilizzato nella struttura <code>ColoreRGB</code>.</p>
+
+<p>Le <code>struct</code> permettono di creare degli insiemi di dati.
+La variabile <code>ColoreRGB</code> contiene due variabili differenti: un valore di tipo <code>RGB</code> e un puntatore a carattere.
+È presto per spiegarti cos’è; ci torneremo in seguito.</p>
+
+<p>Tutti i tipi di dati che abbiamo visto finora sono un retaggio del linguaggio <em>C</em>.
+La classe <code>Colore</code>, invece, è una delle novità introdotte dal C++ e contiene due elementi: una struttura di tipo <code>ColoreRGB</code> e una funzione che mostra il nome del colore.</p>
+
+<p>Attenzione, però: nessuno di questi signori è in realtà ciò che afferma di essere.
 Nella variabile <code>booleano</code> non c’è il valore <code>true</code> o <code>false</code>, ma un valore binario che il sistema considera tale.
 Allo stesso modo, nella variabile <code>carattere</code>, non c’è la lettera <code>C</code>, ma il valore binario corrispondente alla codifica ASCII della lettera <code>C</code>.
 Ogni tipo di dato non è altro che il nome di una quantità di memoria.
 Ricordatelo, perché questo è la chiave di tutto.</p>
+
+<hr />
 
 <p>La dimensione di memoria associata a ciascun tipo di dato non è fissa, ma può variare a seconda del sistema in cui stai lavorando.
 Il codice qui sotto ti permette di conoscere la dimensione in byte dei tipi di dato scalari:</p>
@@ -189,7 +214,7 @@ int main()
 
 <p>Dalla dimensione del tipo di dato dipende la quantità di valori che può assumere.
 Un <code>char</code> è composto da otto bit e può assumere per ciò 2<sup>8</sup> valori, quindi: da 0 a 255.
-Un <code>int</code> è composto da sedici bit e può assumere 2<sup>16</sup> valori, ovvero: da 0 a 65.535.
+Un <code>int</code> è composto da trentadue bit e può assumere 2<sup>32</sup> valori, ovvero: da 0 a 4.294.967.295.
 Un <code>float</code> ha 8 bit per l’esponente e 23 per la mantissa, quindi può assumere valori da 1.175494e-38 a 3.402823e+38 e così via.</p>
 
 <p>Oltre ai tipi di dato, il C++ ha ereditato dal C anche i cosiddetti <em>modificatori</em>, ovvero delle parole-chiave che, se aggiunte al nome di un tipo di dato, ne modificano le caratteristiche.<br />
@@ -230,18 +255,20 @@ int main()
     cout &lt;&lt; setw(16) &lt;&lt; "short int: "; 
     dimensione&lt;short int&gt;();
     cout &lt;&lt; setw(16) &lt;&lt; "unsigned short: "; 
-    dimensione&lt;unsigned short int&gt;();
+    dimensione&lt;unsigned short&gt;();
     cout &lt;&lt; setw(16) &lt;&lt; "long int: "; 
     dimensione&lt;long int&gt;();
     cout &lt;&lt; setw(16) &lt;&lt; "unsigned long: "; 
-    dimensione&lt;unsigned long int&gt;();
+    dimensione&lt;unsigned long&gt;();
     
     return 0;
 }
 
 </code></pre>
 
-<p>Su questo computer, i valori sono:</p>
+<p>Se esamini con attenzione il codice scoprirai un’altra caratteristica dei modificatori del C++: se sono riferiti a un dato di tipo intero, è possibile accorciare la dichiarazione omettendo la parola-chiave <code>int</code>.</p>
+
+<p>L’output di questo programma, sul mio computer è:</p>
 
 <pre><code>% g++ tipi-di-dato-limiti.cpp -o ../out/esempio
 % ../out/esempio                               

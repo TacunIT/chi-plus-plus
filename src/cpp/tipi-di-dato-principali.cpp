@@ -20,8 +20,7 @@ public:
     ColoreRGB coloreRgb;        
     void nome_colore() {
         cout << "coloreRGB:";
-        switch(coloreRgb.valore)
-        {
+        switch(coloreRgb.valore) {
             case red  : cout << "red"  ;   break;
             case green: cout << "green"; break;
             case blue : cout << "blue" ;  break;
