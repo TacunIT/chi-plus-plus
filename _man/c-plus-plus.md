@@ -26,12 +26,12 @@ Aveva ragione.
 Il nome *C++* si riferisce all'operatore `++`, che serve a incrementare di un'unità il valore di una variabile:
 
 ```
-{% include_relative src/7.1-operatore-incremento.cpp %}
+{% include_relative src/cplusplus-incremento.cpp %}
 ```
 Se compili ed eseguti questo codice, otterrai:
 
 ```
-> g++ 7.1-operatore-incremento.cpp -o ../out/esempio
+> g++ cplusplus-incremento.cpp -o ../out/esempio
 > ../out/esempio
 Valore di C = 12
 Valore di C = 13
@@ -127,7 +127,7 @@ I primi due sono istanze della classe *Cavallo*, il terzo è un'istanza della cl
 Se aggiungi un po' di codice alle classi che abbiamo visto prima e compili il programma, otterrai:
 
 ```
-% g++ 7.2-esempio-classe.cpp -o ../out/esempio 
+% g++ cplusplus-classe.cpp -o ../out/esempio 
 % ../out/esempio                               
 DATA: Sun Apr  5 10:38:31 2020
 MASCHIO: Specie:cavallo, Sesso:m, Razza:lipizzano
@@ -272,7 +272,7 @@ int main()
 Compilando ed esegendo il programma, otterrai:
 
 ```
-% g++ 7.4-esempio-polimorfismo.cpp -o ../out/esempio
+% g++ cplusplus-polimorfismo.cpp -o ../out/esempio
 % ../out/esempio                                    
 PULEDRO
 DATA: Sun Apr  5 12:33:45 2020
@@ -405,7 +405,7 @@ int main()
 e l'output che otterremo è:
 
 ```
-$ g++ 7.5-esempio-template.cpp -o ../out/esempio
+$ g++ cplusplus-template.cpp -o ../out/esempio
 % ../out/esempio                                
 DATA:    Sun Apr  5 16:19:24 2020
 MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
@@ -438,7 +438,7 @@ monte.reverse();
 e l'output che otteremmo è:
 
 ```
-% g++ 7.5-esempio-template.cpp -o ../out/esempio
+% g++ cplusplus-template.cpp -o ../out/esempio
 % ../out/esempio                                
 DATA:    Sun Apr  5 17:08:27 2020
 MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m

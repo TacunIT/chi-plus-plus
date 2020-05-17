@@ -263,7 +263,7 @@ Anche la gestione delle stringhe di testo, nel C, è rudimentale: se tu provassi
 il compilatore C ti avviserebbe che non può sommare due variabili di tipo char.
 
 ```
-% gcc 6.1-pippopluto.c -o ../out/esempio; 
+% gcc linguaggi-programmazione-pippopluto.c -o ../out/esempio; 
 6.1-pippopluto.c:7:35: error: invalid operands to binary expression ('char *' and 'char *')
     printf("\npippo+pluto=%s\n", a+b);
                                  ~^~
