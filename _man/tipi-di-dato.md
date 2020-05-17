@@ -137,5 +137,3 @@ Ogni elemento dell'array è identificato da un indice che va 0 al numero di elem
 Nel caso dell'array qui sopra, la lettera `a` avrà indice 0, la `b` avrà indice 2 e così via, fino alla `z`, che avrà indice 20.
 
 I *puntatori* sono probabilmente l'elemento più temuto del C++.
-
--->
