@@ -11,14 +11,14 @@ struct ColoreRGB {
     const char* nome;        
 };
 
-/** Definisce la classe Colore, che contiene un coloreRGB 
- * e una funzione che mostra il nome del colore.
+/** 
+ * Definisce la classe Colore, che contiene un coloreRGB 
+ * e una funzione che ne mostra il nome.
  */
 class Colore {
 public:
     ColoreRGB coloreRgb;        
-    void nome_colore()
-    {
+    void nome_colore() {
         cout << "coloreRGB:";
         switch(coloreRgb.valore)
         {
@@ -30,12 +30,11 @@ public:
     }        
 };
 
-
 int main()
 {    
     /** Dichiara una serie di variabili */
     bool    booleano = false;
-    char    carattere = 'c';
+    char    carattere = 'C';
     int     intero = 1234567890;
     float   decimale = 3.14;
     char    array[] = "abcdefghilmnopqrstuvz";

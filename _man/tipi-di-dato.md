@@ -16,13 +16,39 @@ I tipi di dato **scalari** sono: `void`, `bool`, `char`, `wchar_t`, `int`, `floa
 
 I tipi di dato **aggregati** sono gli array, le unioni, gli emumerati, le strutture e le classi e, come dice anche il loro nome, sono costituiti dalla unione di più dati scalari dello stesso tipo o di tipi differenti.
 
-Questo brano di codice mostra i principali tipi di dato del C++.
+Questo brano di codice mostra i principali tipi di dato del C++. 
+Contiene molti elementi di cui ancora non ti ho parlato, quindi non preoccuparti se non capisci del tutto ciò che fa.
 
 ```
 {% include_relative src/tipi-di-dato-principali.cpp %}
 ```
-Attenzione, però: nessuno di questi signori è in realtà quello che afferma di essere.
 
+Attenzione, però: nessuno di questi signori è in realtà quello che afferma di essere.
+Nella variabile `booleano` non c'è il valore `true` o `false`, ma un valore binario che il sistema considera tale.
+Allo stesso modo, nella variabile `carattere`, non c'è la lettera `C`, ma il valore binario corrispondente alla codifica ASCII della lettera `C`.
+Ogni tipo di dato non è altro che il nome di una quantità di memoria.
+Ricordatelo, perché questo è la chiave di tutto. 
+
+La dimensione di memoria associata a ciascun tipo di dato non è fissa, ma può variare a seconda del sistema in cui stai lavorando.
+Il codice qui sotto ti permette di conoscere la dimensione in byte dei tipi di dato scalari:
+
+```
+{% include_relative src/tipi-di-dato-dimensione.cpp %}
+```
+
+Compilando ed eseguendo questo codice, otterrai:
+
+```
+% g++ tipi-di-dato-dimensione.cpp -o ../out/esempio
+% ../out/esempio                                   
+      bool: 1
+      char: 1
+       int: 4
+     float: 4
+    double: 8
+```
+
+<!--
 
 | `void` | utilizzato solo per funzioni o puntatori |  
 | `bool` | valori booleani `true` e `false`|
@@ -37,31 +63,10 @@ Attenzione, però: nessuno di questi signori è in realtà quello che afferma di
 | `union`    |  |  
 
 
-Function
-
-Pointer
-Reference
-Abstract or User-Defined Data Types: These data types are defined by user itself. Like, defining a class in C++ or a structure. C++ provides the following user-defined datatypes:
-Class
-
-Union
-Enumeration
-Typedef defined DataType
-
-a cui ha aggiunto la possibilità di creare nuovi tipi di dato grazie alle classi.
-
-
-
-
-Ogni tipo di dato, però, non è altro che il nome di una quantità di memoria.
-Ricordatelo, perché questo è la chiave di tutto. 
 
 La dimensione di un dato determina il numero massimo di valori che quel dato può assumere.  
 Un `char` è composto da otto bit e può assumere per ciò 2<sup>8</sup> valori, quindi: da 0 a 255.  
 Un `int` è composto da sedici bit e può assumere 2<sup>16</sup> valori, ovvero: da 0 a 65.535.  
 Un `long int` è composto da trentadue bit e può assumere 2<sup>32</sup> valori, ovvero: da 0 a 4.294.976.295 valori.
-
-<!--
-Qui tutto quello che attiene all'etica.
 
 -->
