@@ -72,71 +72,125 @@
 <p>Il C++ ha ereditato dal C una vasta gamma di tipi di dato.
 Possiamo dividere questi tipi di dato in due gruppi: i dati <strong>scalari</strong> e i dati <em>aggregati</em>.</p>
 
-<p>I dati <strong>scalari</strong> sono i tipi di dato primitivi e permettono di gestre numeri, lettere e valori booleani:</p>
+<p>I tipi di dato <strong>scalari</strong> sono: <code>void</code>, <code>bool</code>, <code>char</code>, <code>wchar_t</code>, <code>int</code>, <code>float</code>, <code>double</code> e permettono di gestre gli elementi classici di un programma: i numeri interi, i numeri decimali, le lettere e i valori booleani.</p>
+
+<p>I tipi di dato <strong>aggregati</strong> sono gli array, le unioni, gli emumerati, le strutture e le classi e, come dice anche il loro nome, sono costituiti dalla unione di più dati scalari dello stesso tipo o di tipi differenti.</p>
+
+<p>Questo brano di codice mostra i principali tipi di dato del C++.</p>
+
+<pre><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+/** Definisce un tipo di dato enumerato di nome RGB */
+enum RGB { red = 0xFF0000, green = 0x00ff00, blue = 0x0000ff };
+
+/** Definisce una struttura che contiene un colore RGB e un nome */
+struct ColoreRGB {
+    RGB  valore;
+    const char* nome;        
+};
+
+/** Definisce la classe Colore, che contiene un coloreRGB 
+ * e una funzione che mostra il nome del colore.
+ */
+class Colore {
+public:
+    ColoreRGB coloreRgb;        
+    void nome_colore()
+    {
+        cout &lt;&lt; "coloreRGB:";
+        switch(coloreRgb.valore)
+        {
+            case red  : cout &lt;&lt; "red"  ;   break;
+            case green: cout &lt;&lt; "green"; break;
+            case blue : cout &lt;&lt; "blue" ;  break;
+        }
+        cout &lt;&lt; endl;
+    }        
+};
+
+
+int main()
+{    
+    /** Dichiara una serie di variabili */
+    bool    booleano = false;
+    char    carattere = 'c';
+    int     intero = 1234567890;
+    float   decimale = 3.14;
+    char    array[] = "abcdefghilmnopqrstuvz";
+    RGB     enumerato = green;
+    
+    /** Crea un oggetto di tipo Colore */
+    Colore  colore;    
+    
+    /** 
+     * Assegna un valore ai dati della struttura coloreRgb 
+     * all'interno dell'oggetto di tipo Colore.
+     */
+    colore.coloreRgb.valore = enumerato;   
+    colore.coloreRgb.nome = "verde";     
+
+    /** Mostra il valore delle variabili */
+    cout &lt;&lt; "booleano:"    &lt;&lt; booleano   &lt;&lt; endl;
+    cout &lt;&lt; "carattere:"   &lt;&lt; carattere  &lt;&lt; endl;
+    cout &lt;&lt; "intero:"      &lt;&lt; intero     &lt;&lt; endl;
+    cout &lt;&lt; "decimale:"    &lt;&lt; decimale   &lt;&lt; endl;
+    cout &lt;&lt; "array:"       &lt;&lt; array      &lt;&lt; endl;
+    
+    /** Mostra il nome del colore */
+    colore.nome_colore();
+    
+    return 0;
+}
+
+</code></pre>
+<p>Attenzione, però: nessuno di questi signori è in realtà quello che afferma di essere.</p>
 
 <table>
-  <thead>
-    <tr>
-      <th style="text-align: center">tipo</th>
-      <th>descrizione</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td style="text-align: center"><code>void</code></td>
+      <td><code>void</code></td>
       <td>utilizzato solo per funzioni o puntatori</td>
     </tr>
     <tr>
-      <td style="text-align: center"><code>bool</code></td>
+      <td><code>bool</code></td>
       <td>valori booleani <code>true</code> e <code>false</code></td>
     </tr>
     <tr>
-      <td style="text-align: center"><code>char</code></td>
+      <td><code>char</code></td>
       <td>caratteri semplici</td>
     </tr>
     <tr>
-      <td style="text-align: center"><code>wchar_t</code></td>
+      <td><code>wchar_t</code></td>
       <td>caratteri estesi</td>
     </tr>
     <tr>
-      <td style="text-align: center"><code>int</code></td>
+      <td><code>int</code></td>
       <td>valori interi</td>
     </tr>
     <tr>
-      <td style="text-align: center"><code>float</code>, <code>double</code></td>
+      <td><code>float</code>, <code>double</code></td>
       <td>valori decimali</td>
     </tr>
-  </tbody>
-</table>
-
-<p>I dati <strong>aggregati</strong> sono tipi di dato costituiti dalla unione di più dati scalari dello stesso tipo o di tipi differenti:</p>
-
-<table>
-  <thead>
     <tr>
-      <th style="text-align: center">tipo</th>
-      <th>descrizione</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">array</td>
+      <td>array</td>
       <td>insiemi di dati dello stesso tipo</td>
     </tr>
     <tr>
-      <td style="text-align: center"><code>class</code></td>
+      <td><code>class</code></td>
       <td>tipi di dato definiti dall’utente</td>
     </tr>
     <tr>
-      <td style="text-align: center"><code>enum</code></td>
+      <td><code>enum</code></td>
       <td> </td>
     </tr>
     <tr>
-      <td style="text-align: center">`structure</td>
+      <td>`structure</td>
       <td> </td>
     </tr>
     <tr>
-      <td style="text-align: center"><code>union</code></td>
+      <td><code>union</code></td>
       <td> </td>
     </tr>
   </tbody>

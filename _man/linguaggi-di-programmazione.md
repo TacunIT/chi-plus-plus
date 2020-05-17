@@ -257,7 +257,7 @@ Il C è un linguaggio estremamente efficiente per gestire tutte le entità che p
 Anche la gestione delle stringhe di testo, nel C, è rudimentale: se tu provassi a eseguire la somma di cui parla il Maestro Canaro nel suo diario:
 
 ```
-{% include_relative src/6.1-pippopluto.c %}
+{% include_relative src/linguaggi-programmazione-pippopluto.c %}
 ```
 
 il compilatore C ti avviserebbe che non può sommare due variabili di tipo char.
