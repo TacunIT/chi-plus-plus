@@ -4,14 +4,14 @@
 </title>
     <meta charset="utf-8" />
     <meta name="viewport"     content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <link rel="canonical"            href="https://chiplusplus.org/man/tipi-di-dato" />
-    <meta     name="thumbnail"       content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
+    <link rel="canonical"            href="http://localhost:4000/man/tipi-di-dato" />
+    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/chi-plus-plus.png" />
     <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
     <meta property="og:title"        content="I tipi di dato" />
     <meta property="og:type"         content="website" />    
     <meta property="og:description"  content="Chi++ - Proposta per una metafisica open-source"" />
-    <meta property="og:image"        content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
+    <meta property="og:image"        content="http://localhost:4000/assets/img/chi-plus-plus.png" />
     <meta property="og:image:width"  content="300" />
     <link rel=icon href=/assets/img/favicon.ico type=image/x-icon>
     <script src="https://use.fontawesome.com/b4b35c88c8.js"></script>
@@ -55,7 +55,7 @@
 </nav>
 </header>
 
-        <main class="bozza">
+        <main class="redazione">
             
         
 
@@ -67,8 +67,95 @@
 
             <section id="testo">
 
-                <p>Il C++ possiede molti tipi di dato.
-Ogni tipo di dato, però, non è altro che il nome di una quantità di memoria.
+                <p>La varietà dei tipi di dato disponibili è la caratteristica principale del C++.</p>
+
+<p>Il C++ ha ereditato dal C una vasta gamma di tipi di dato.
+Possiamo dividere questi tipi di dato in due gruppi: i dati <strong>scalari</strong> e i dati <em>aggregati</em>.</p>
+
+<p>I dati <strong>scalari</strong> sono i tipi di dato primitivi e permettono di gestre numeri, lettere e valori booleani:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">tipo</th>
+      <th>descrizione</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code>void</code></td>
+      <td>utilizzato solo per funzioni o puntatori</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>bool</code></td>
+      <td>valori booleani <code>true</code> e <code>false</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>char</code></td>
+      <td>caratteri semplici</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>wchar_t</code></td>
+      <td>caratteri estesi</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>int</code></td>
+      <td>valori interi</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>float</code>, <code>double</code></td>
+      <td>valori decimali</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>I dati <strong>aggregati</strong> sono tipi di dato costituiti dalla unione di più dati scalari dello stesso tipo o di tipi differenti:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">tipo</th>
+      <th>descrizione</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">array</td>
+      <td>insiemi di dati dello stesso tipo</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>class</code></td>
+      <td>tipi di dato definiti dall’utente</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>enum</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">`structure</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>union</code></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Function</p>
+
+<p>Pointer
+Reference
+Abstract or User-Defined Data Types: These data types are defined by user itself. Like, defining a class in C++ or a structure. C++ provides the following user-defined datatypes:
+Class</p>
+
+<p>Union
+Enumeration
+Typedef defined DataType</p>
+
+<p>a cui ha aggiunto la possibilità di creare nuovi tipi di dato grazie alle classi.</p>
+
+<p>Ogni tipo di dato, però, non è altro che il nome di una quantità di memoria.
 Ricordatelo, perché questo è la chiave di tutto.</p>
 
 <p>La dimensione di un dato determina il numero massimo di valori che quel dato può assumere.<br />
