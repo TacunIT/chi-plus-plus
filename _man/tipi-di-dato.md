@@ -10,7 +10,7 @@ quote:      "Tutto è byte."
 La varietà dei tipi di dato disponibili è la caratteristica principale del C++.
 
 Il C++ ha ereditato dal C una vasta gamma di tipi di dato.
-Possiamo dividere questi tipi di dato in due gruppi: i dati **scalari** e i dati *aggregati*.
+A seconda della loro natura, possiamo dividere questi tipi di dato in due gruppi: i dati **scalari** e i dati *aggregati*.
 
 I tipi di dato **scalari** sono: `void`, `bool`, `char`, `wchar_t`, `int`, `float`, `double` e permettono di gestre gli elementi classici di un programma: i numeri interi, i numeri decimali, le lettere e i valori booleani.
 
@@ -46,6 +46,23 @@ Compilando ed eseguendo questo codice, otterrai:
        int: 4
      float: 4
     double: 8
+```
+
+Dalla dimensione del tipo di dato dipende la quantità di valori che può assumere:
+
+```
+{% include_relative src/tipi-di-dato-valori.cpp %}
+```
+
+```
+% g++ tipi-di-dato-valori.cpp -o ../out/esempio
+% ../out/esempio                               
+        tipo      minimo     massimo
+      bool:            0           1
+      char:            0         255
+       int:            0  4294967295
+     float:  1.17549e-38 3.40282e+38
+    double: 2.22507e-3081.79769e+308
 ```
 
 <!--
