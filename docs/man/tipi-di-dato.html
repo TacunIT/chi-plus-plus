@@ -76,7 +76,8 @@ Possiamo dividere questi tipi di dato in due gruppi: i dati <strong>scalari</str
 
 <p>I tipi di dato <strong>aggregati</strong> sono gli array, le unioni, gli emumerati, le strutture e le classi e, come dice anche il loro nome, sono costituiti dalla unione di più dati scalari dello stesso tipo o di tipi differenti.</p>
 
-<p>Questo brano di codice mostra i principali tipi di dato del C++.</p>
+<p>Questo brano di codice mostra i principali tipi di dato del C++. 
+Contiene molti elementi di cui ancora non ti ho parlato, quindi non preoccuparti se non capisci del tutto ciò che fa.</p>
 
 <pre><code>#include &lt;iostream&gt;
 
@@ -91,14 +92,14 @@ struct ColoreRGB {
     const char* nome;        
 };
 
-/** Definisce la classe Colore, che contiene un coloreRGB 
- * e una funzione che mostra il nome del colore.
+/** 
+ * Definisce la classe Colore, che contiene un coloreRGB 
+ * e una funzione che ne mostra il nome.
  */
 class Colore {
 public:
     ColoreRGB coloreRgb;        
-    void nome_colore()
-    {
+    void nome_colore() {
         cout &lt;&lt; "coloreRGB:";
         switch(coloreRgb.valore)
         {
@@ -110,12 +111,11 @@ public:
     }        
 };
 
-
 int main()
 {    
     /** Dichiara una serie di variabili */
     bool    booleano = false;
-    char    carattere = 'c';
+    char    carattere = 'C';
     int     intero = 1234567890;
     float   decimale = 3.14;
     char    array[] = "abcdefghilmnopqrstuvz";
@@ -145,80 +145,68 @@ int main()
 }
 
 </code></pre>
-<p>Attenzione, però: nessuno di questi signori è in realtà quello che afferma di essere.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td><code>void</code></td>
-      <td>utilizzato solo per funzioni o puntatori</td>
-    </tr>
-    <tr>
-      <td><code>bool</code></td>
-      <td>valori booleani <code>true</code> e <code>false</code></td>
-    </tr>
-    <tr>
-      <td><code>char</code></td>
-      <td>caratteri semplici</td>
-    </tr>
-    <tr>
-      <td><code>wchar_t</code></td>
-      <td>caratteri estesi</td>
-    </tr>
-    <tr>
-      <td><code>int</code></td>
-      <td>valori interi</td>
-    </tr>
-    <tr>
-      <td><code>float</code>, <code>double</code></td>
-      <td>valori decimali</td>
-    </tr>
-    <tr>
-      <td>array</td>
-      <td>insiemi di dati dello stesso tipo</td>
-    </tr>
-    <tr>
-      <td><code>class</code></td>
-      <td>tipi di dato definiti dall’utente</td>
-    </tr>
-    <tr>
-      <td><code>enum</code></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>`structure</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><code>union</code></td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Function</p>
-
-<p>Pointer
-Reference
-Abstract or User-Defined Data Types: These data types are defined by user itself. Like, defining a class in C++ or a structure. C++ provides the following user-defined datatypes:
-Class</p>
-
-<p>Union
-Enumeration
-Typedef defined DataType</p>
-
-<p>a cui ha aggiunto la possibilità di creare nuovi tipi di dato grazie alle classi.</p>
-
-<p>Ogni tipo di dato, però, non è altro che il nome di una quantità di memoria.
+<p>Attenzione, però: nessuno di questi signori è in realtà quello che afferma di essere.
+Nella variabile <code>booleano</code> non c’è il valore <code>true</code> o <code>false</code>, ma un valore binario che il sistema considera tale.
+Allo stesso modo, nella variabile <code>carattere</code>, non c’è la lettera <code>C</code>, ma il valore binario corrispondente alla codifica ASCII della lettera <code>C</code>.
+Ogni tipo di dato non è altro che il nome di una quantità di memoria.
 Ricordatelo, perché questo è la chiave di tutto.</p>
 
-<p>La dimensione di un dato determina il numero massimo di valori che quel dato può assumere.<br />
-Un <code>char</code> è composto da otto bit e può assumere per ciò 2<sup>8</sup> valori, quindi: da 0 a 255.<br />
-Un <code>int</code> è composto da sedici bit e può assumere 2<sup>16</sup> valori, ovvero: da 0 a 65.535.<br />
-Un <code>long int</code> è composto da trentadue bit e può assumere 2<sup>32</sup> valori, ovvero: da 0 a 4.294.976.295 valori.</p>
+<p>La dimensione di memoria associata a ciascun tipo di dato non è fissa, ma può variare a seconda del sistema in cui stai lavorando.
+Il codice qui sotto ti permette di conoscere la dimensione in byte dei tipi di dato scalari:</p>
+
+<pre><code>#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+
+using namespace std;
+
+int main()
+{    
+    int w = 12;
+    
+    /** Mostra la dimensione dei tipi di dato */
+    cout &lt;&lt; setw(w) &lt;&lt; "bool: "   &lt;&lt; sizeof(bool)   &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "char: "   &lt;&lt; sizeof(char)   &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "int: "    &lt;&lt; sizeof(int)    &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "float: "  &lt;&lt; sizeof(float)  &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "double: " &lt;&lt; sizeof(double) &lt;&lt; endl;
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Compilando ed eseguendo questo codice, otterrai:</p>
+
+<pre><code>% g++ tipi-di-dato-dimensione.cpp -o ../out/esempio
+% ../out/esempio                                   
+      bool: 1
+      char: 1
+       int: 4
+     float: 4
+    double: 8
+</code></pre>
 
 <!--
-Qui tutto quello che attiene all'etica.
+
+| `void` | utilizzato solo per funzioni o puntatori |  
+| `bool` | valori booleani `true` e `false`|
+| `char` | caratteri semplici |
+| `wchar_t` | caratteri estesi |
+| `int` | valori interi |
+| `float`, `double` | valori decimali
+| array      | insiemi di dati dello stesso tipo |  
+| `class`    | tipi di dato definiti dall'utente |  
+| `enum`     |  |  
+| `structure |  |  
+| `union`    |  |  
+
+
+
+La dimensione di un dato determina il numero massimo di valori che quel dato può assumere.  
+Un `char` è composto da otto bit e può assumere per ciò 2<sup>8</sup> valori, quindi: da 0 a 255.  
+Un `int` è composto da sedici bit e può assumere 2<sup>16</sup> valori, ovvero: da 0 a 65.535.  
+Un `long int` è composto da trentadue bit e può assumere 2<sup>32</sup> valori, ovvero: da 0 a 4.294.976.295 valori.
 
 -->
 
