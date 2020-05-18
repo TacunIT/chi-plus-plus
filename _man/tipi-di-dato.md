@@ -108,7 +108,7 @@ unsigned short: 2 bytes, da:                    0  a:                65535
 ---
 
 <a id="puntatori"></a>
-Chiudiamo questa disamina dei tipi di dato del *C++* con i cosiddetti *attributi intermediari*, ovvero: le *funzioni*, gli *array*, i *puntatori* e le *reference*.
+Chiudiamo questa chiacchierata sui tipi di dato del *C++* con i cosiddetti *attributi intermediari*, ovvero: le *funzioni*, gli *array*, i *puntatori* e le *reference*.
 
 Delle *funzioni* parleremo diffusamente [in seguito](/man/funzioni).
 Quello che ci interessa, qui e ora, è che ogni funzione ha un suo tipo di dato.
@@ -121,7 +121,8 @@ La funzione `main`, che è la funzione principale di ogni programma, ha come tip
 La funzione `nome_colore`, all'interno della classe `Colore` è di tipo `void` e infatti non ha valore di ritorno.
 
 Gli *array* sono degli insiemi di dati omogemei e si dichiarano aggiungendo al nome della variabile delle parentesi quadre.
-La dimensione dell'array deve essere definita al momento della sua dichiarazione o in maniera esplicita, inserendo il numero di elementi fra le parentesi quadre:
+La dimensione dell'array deve essere definita al momento della sua dichiarazione.
+Questo può avvenire o in maniera esplicita, inserendo il numero di elementi fra le parentesi quadre:
 
 ```
     char elementi[10];
@@ -136,4 +137,41 @@ o assegnando all'array un valore che ne determinerà la dimensione massima, cos�
 Ogni elemento dell'array è identificato da un indice che va 0 al numero di elementi dell'array meno uno.
 Nel caso dell'array qui sopra, la lettera `a` avrà indice 0, la `b` avrà indice 2 e così via, fino alla `z`, che avrà indice 20.
 
-I *puntatori* sono probabilmente l'elemento più temuto del C++.
+I *puntatori* sono probabilmente l'elemento più temuto del *C* o del *C++*, ma solo perché i programmatori cialtroni agiscono senza sapere quello che stanno facendo.
+Come ti ho detto prima, il *C++* è solo un modo particolare di vedere la memoria del computer.
+Se tu tieni a mente questo, l'artimetica dei puntatori ti sembrerà ovvia.
+Ripensa all'esempio che ti ho fatto l'altro giorno, quello con le mattonelle della cucina e immagina di avere una variabile di tipo `char`, il cui valore è 123, salvata nel quarto byte della memoria, ovvero le mattonelle da 24 a 32:
+
+<table class="memoria">
+<tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td class="area prima">0</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+</table>  
+
+Per poterla ritrovare, hai bisogno di due informazioni: il tipo di dato che stai puntando e il suo indirizzo in memoria:
+
+```
+    char* ptr = 3;
+```
+
+Il valore di `ptr` indica quanti byte separano l'inzio della memoria dalla variabile; il suo tipo (`char*`) ti permette di sapere quanti byte devi leggere.
