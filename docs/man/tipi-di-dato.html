@@ -283,7 +283,7 @@ unsigned short: 2 bytes, da:                    0  a:                65535
 <hr />
 
 <p><a id="puntatori"></a>
-Chiudiamo questa disamina dei tipi di dato del <em>C++</em> con i cosiddetti <em>attributi intermediari</em>, ovvero: le <em>funzioni</em>, gli <em>array</em>, i <em>puntatori</em> e le <em>reference</em>.</p>
+Chiudiamo questa chiacchierata sui tipi di dato del <em>C++</em> con i cosiddetti <em>attributi intermediari</em>, ovvero: le <em>funzioni</em>, gli <em>array</em>, i <em>puntatori</em> e le <em>reference</em>.</p>
 
 <p>Delle <em>funzioni</em> parleremo diffusamente <a href="/man/funzioni">in seguito</a>.
 Quello che ci interessa, qui e ora, è che ogni funzione ha un suo tipo di dato.
@@ -295,7 +295,8 @@ La funzione <code>main</code>, che è la funzione principale di ogni programma, 
 <p>La funzione <code>nome_colore</code>, all’interno della classe <code>Colore</code> è di tipo <code>void</code> e infatti non ha valore di ritorno.</p>
 
 <p>Gli <em>array</em> sono degli insiemi di dati omogemei e si dichiarano aggiungendo al nome della variabile delle parentesi quadre.
-La dimensione dell’array deve essere definita al momento della sua dichiarazione o in maniera esplicita, inserendo il numero di elementi fra le parentesi quadre:</p>
+La dimensione dell’array deve essere definita al momento della sua dichiarazione.
+Questo può avvenire o in maniera esplicita, inserendo il numero di elementi fra le parentesi quadre:</p>
 
 <pre><code>    char elementi[10];
 </code></pre>
@@ -308,9 +309,43 @@ La dimensione dell’array deve essere definita al momento della sua dichiarazio
 <p>Ogni elemento dell’array è identificato da un indice che va 0 al numero di elementi dell’array meno uno.
 Nel caso dell’array qui sopra, la lettera <code>a</code> avrà indice 0, la <code>b</code> avrà indice 2 e così via, fino alla <code>z</code>, che avrà indice 20.</p>
 
-<p>I <em>puntatori</em> sono probabilmente l’elemento più temuto del C++.</p>
+<p>I <em>puntatori</em> sono probabilmente l’elemento più temuto del <em>C</em> o del <em>C++</em>, ma solo perché i programmatori cialtroni agiscono senza sapere quello che stanno facendo.
+Come ti ho detto prima, il <em>C++</em> è solo un modo particolare di vedere la memoria del computer.
+Se tu tieni a mente questo, l’artimetica dei puntatori ti sembrerà ovvia.
+Ripensa all’esempio che ti ho fatto l’altro giorno, quello con le mattonelle della cucina e immagina di avere una variabile di tipo <code>char</code>, il cui valore è 123, salvata nel quarto byte della memoria, ovvero le mattonelle da 24 a 32:</p>
 
-<p>–&gt;</p>
+<table class="memoria">
+<tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td class="area prima">0</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+</table>
+
+<p>Per poterla ritrovare, hai bisogno di due informazioni: il tipo di dato che stai puntando e il suo indirizzo in memoria:</p>
+
+<pre><code>    char* ptr = 3;
+</code></pre>
+
+<p>Il valore di <code>ptr</code> indica quanti byte separano l’inzio della memoria dalla variabile; il suo tipo (<code>char*</code>) ti permette di sapere quanti byte devi leggere.</p>
 
 
             </section>
