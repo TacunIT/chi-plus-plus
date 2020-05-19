@@ -4,7 +4,10 @@
 
 using namespace std;
 
-/** Definisce il tipo di dato byte di otto bit */
+/** 
+ * Definisce due tipi di dato: uno lungo un byte 
+ * e uno lungo due byte 
+ */
 typedef unsigned char byte;
 typedef short int duebyte;
 
@@ -35,8 +38,8 @@ int main()
     };
 
     /** 
-     * Crea un puntatore gli assegna come valore 
-     * lìindirizzo dell'inizio dell'array 
+     * Crea un puntatore con una dimensione di otto bit e gli
+     * assegna come valore l'indirizzo dell'inizio dell'array. 
      */
     byte * p1 = valori;
     
@@ -51,25 +54,31 @@ int main()
              << setw(18) << bitset<8>(*p1) 
              << setw(6)  << (int)*p1 
              << setw(4)  << (char) *p1 << endl;
+             
+        /** Sposta il puntatore al byte successivo. */
         p1++;
     }
     
     cout << endl;
     
+    /**
+     * Crea un nuovo puntatore, stavolta con una
+     * dimensione di sedici bit.
+     */
     duebyte * p2 = (duebyte*)valori;
     
     /** 
-     * Sposta il puntatore per tutta la lunghezza dell'array,
-     * mostrando per ciascun byte il suo valore binario, il
-     * suo valore convertito in decimale e la lettera del      
-     * set ASCII corrispondente a quel valore.
+     * Legge di nuovo i valori dell'array,
      */
     for(int i = 0; i < sizeof(valori) / 2; i++) {
         cout << setw(4)  << i
              << setw(18) << bitset<16>(*p2) 
              << setw(6)  << (short)*p2 
              << setw(4)  << (char) *p2 << endl;
+         
+        /** Sposta il puntatore di due byte. */
         p2++;
     }
+
     return 0;
 }
