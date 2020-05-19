@@ -118,11 +118,10 @@ La funzione `main`, che è la funzione principale di ogni programma, ha come tip
     return 0;
 ```
     
-La funzione `nome_colore`, all'interno della classe `Colore` è di tipo `void` e infatti non ha valore di ritorno.
+La funzione `nome_colore`, all'interno della classe `Colore` è di tipo `void` e, come puoi vedere, non ha valore di ritorno.
 
 Gli *array* sono degli insiemi di dati omogemei e si dichiarano aggiungendo al nome della variabile delle parentesi quadre.
-La dimensione dell'array deve essere definita al momento della sua dichiarazione.
-Questo può avvenire o in maniera esplicita, inserendo il numero di elementi fra le parentesi quadre:
+La dimensione dell'array deve essere definita al momento della sua dichiarazione; questo può avvenire o in maniera esplicita, inserendo il numero di elementi fra le parentesi quadre:
 
 ```
     char elementi[10];
@@ -137,38 +136,73 @@ o assegnando all'array un valore che ne determinerà la dimensione massima, cos�
 Ogni elemento dell'array è identificato da un indice che va 0 al numero di elementi dell'array meno uno.
 Nel caso dell'array qui sopra, la lettera `a` avrà indice 0, la `b` avrà indice 2 e così via, fino alla `z`, che avrà indice 20.
 
-I *puntatori* sono probabilmente l'elemento più temuto del *C* o del *C++*, ma solo perché i programmatori cialtroni agiscono senza sapere quello che stanno facendo.
-Come ti ho detto prima, il *C++* è solo un modo particolare di vedere la memoria del computer.
-Se tu tieni a mente questo, l'artimetica dei puntatori ti sembrerà ovvia.
-Ripensa all'esempio che ti ho fatto l'altro giorno, quello con le mattonelle della cucina e immagina di avere una variabile di tipo `char`, il cui valore è 123, salvata nel quarto byte della memoria, ovvero le mattonelle da 24 a 32:
+I *puntatori* sono come i pitbull: alla maggior parte delle persone fanno paura, ma chi li conosce sa che sono cani dolcissimi, se li sai trattare.
+Quello che devi tenere sempre a mente è che il *C++* è solo un modo particolare di vedere la memoria del computer e nella memoria non ci sono caratteri, non ci sono classi, non ci sono immagini e non ci sono film porno, ma solo una lunga sequenza di 1 e di 0:
 
-<table class="memoria">
-<tr>
-    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-<tr>
-    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-    <td class="area prima">0</td>
-    <td class="area">1</td>
-    <td class="area">1</td>
-    <td class="area">1</td>
-    <td class="area">1</td>
-    <td class="area">0</td>
-    <td class="area">1</td>
-    <td class="area">1</td>
-  </tr>
-  <tr>
-    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-  </tr>
-  <tr>
-    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-  </tr>
-</table>  
+```
+    0100001100100111011010000110000101101110011011100110111100100000
+    0110011001101111011100100111001101100101001000000111010001110101
+    0111010001110100011001010010000001100101001000000110010001110101
+    0110010100100000011011000110000100100000011100110111010001100101
+    0111001101110011011000010010000001100101011101001110000000100000
+    0000101001001010011001010010000001100110011010010110111101110010
+    0110100101110011011000110110010100100000011001000110010101101110
+    0111010001110010011011110010000001100001011011000010000001100011
+    0110111101110010011001010010000000100111011011100010000001101001
+    0110110001101100011101010111001101101001011011110110111001100101
+```
 
-Per poterla ritrovare, hai bisogno di due informazioni: il tipo di dato che stai puntando e il suo indirizzo in memoria:
+L'unico modo per dare un senso a questa catena di valori binarii è di suddividerli in blocchi e assegnare un tipo di dato a ciascun blocco.
+Per esempio, se suddividi la sequenza binaria qui sopra in blocchi di otto bit: 
+
+```
+01000011 00100111 01101000 01100001 01101110 01101110 01101111 00100000
+01100110 01101111 01110010 01110011 01100101 00100000 01110100 01110101
+01110100 01110100 01100101 00100000 01100101 00100000 01100100 01110101
+01100101 00100000 01101100 01100001 00100000 01110011 01110100 01100101
+01110011 01110011 01100001 00100000 01100101 01110100 11100000 00100000
+00001010 01001010 01100101 00100000 01100110 01101001 01101111 01110010
+01101001 01110011 01100011 01100101 00100000 01100100 01100101 01101110
+01110100 01110010 01101111 00100000 01100001 01110010 00100000 01100011
+01101111 01110010 01100101 00100000 00100111 01101110 00100000 01101001
+01101100 01101100 01110101 01110011 01101001 01101111 01101110 01100101 
+```
+e converti ciascun valore nel corrispondente carattere del set ASCII, scopri che una sequenza apparentemente insensata di 1 e di 0 è in realtà l'inizio di una famosa canzone popolare:
+
+```
+01000011 =  67 = C
+00100111 =  39 = '
+01101000 = 104 = h
+01100001 =  97 = a
+01101110 = 110 = n
+01101110 = 110 = n
+01101111 = 111 = o
+00100000 =  32 = 
+```
+Per identificare i valori all'interno della sequenza di bit, hai bisogno di due informazioni: il tipo di dato che stai puntando e il suo indirizzo in memoria.
+I puntatori ti permettono di ottenere queste informazioni: il loro valore definisce l'indirizzo di memoria da cui leggere; il loro tipo definisce la dimensione del valore puntato.
+
+Molti pensano ai puntatori come a delle bandierine che ti permettono di identificare un punto specifico della memoria, ma questo è vero solo per i puntatori `void`, che non hanno un tipo di dato associato. 
+Gli altri puntatori, più che una bandierina, sono una sorta di maschera che può scorrere sulla sequenza di bit, isolando ed evidenziando i singoli valori che la compongono:
+
+<pre><code style="color:#999">01000011 00100111 01101000 01100001 01101110 01101110 01101111 00100000
+<span style="padding:2px;border:solid 1px;color:#000">01100110</span>01101111 01110010 01110011 01100101 00100000 01110100 01110101
+01110100 01110100 01100101 00100000 01100101 00100000 01100100 01110101
+01100101 00100000 01101100 01100001 00100000 01110011 01110100 01100101
+01110011 01110011 01100001 00100000 01100101 01110100 11100000 00100000
+00001010 01001010 01100101 00100000 01100110 01101001 01101111 01110010
+01101001 01110011 01100011 01100101 00100000 01100100 01100101 01101110
+01110100 01110010 01101111 00100000 01100001 01101100 00100000 01100011
+01101111 01110010 01100101 00100000 00100111 01101110 00100000 01101001
+01101100 01101100 01110101 01110011 01101001 01101111 01101110 01100101
+</code></pre>
+
+
+
+
+
+
+
 
 ```
     char* ptr = 3;
