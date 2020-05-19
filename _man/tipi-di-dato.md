@@ -197,6 +197,9 @@ Gli altri puntatori, pi√π che una bandierina, sono una sorta di maschera che pu√
 01101100 01101100 01110101 01110011 01101001 01101111 01101110 01100101
 </code></pre>
 
+```
+{% include_relative src/tipi-di-dato-puntatori.cpp %}
+```
 
 
 
