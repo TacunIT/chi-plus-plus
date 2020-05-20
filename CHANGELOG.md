@@ -1,3 +1,13 @@
+## 0.10.0 (May 20, 2020)
+  - Aggiunte FAQ dinamiche
+  - Modificata dimensione immagine og_
+  - Corrette le URL dell'HEAD
+  - Note sull'aritmetica dei puntatori
+  - Rinominati i file .cpp del manuale
+  - Redazione capitolo sui tipi di dato
+  - Aggiunta citazione da André Weil a note sulla matetmatica
+  - Corrette discrepanze
+
 ## 0.9.2 (May 15, 2020)
   - Aggiunto paragrafo sulla scienza al capitolo sui  linguaggi di programmazione
   - Ripristinata la directory docs, che serve a Github Pages :-)

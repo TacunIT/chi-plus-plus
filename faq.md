@@ -1,16 +1,16 @@
 ---
 layout:     default
-class:      pagina
+class:      [pagina. faq]
 title:      Domande frequenti
 permalink:  /faq/
-bozza:      true
 ---
 
-{% for category in site.categories %}
+<h2>{{ page.title }}</h2>
 {% for post in site.categories.faq %}
+{% if post.status == "pubblicato" %}
 <div class="faq">
 <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-{{ post.excerpt }}
+{{ post.content }}
 </div>
-{% endfor %}
+{% endif %}
 {% endfor %}
