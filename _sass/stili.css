@@ -298,8 +298,21 @@ BODY.pagina H1 {
     text-align: center;
 }
 
-BODY.faq SECTION {
-    padding: 1rem;
+/**
+ *  Stili per le FAQ
+ */
+BODY.faq H1 {
+    font-size: 1.5rem;
+    line-height: normal;
+    margin: 2rem 0;
+}
+
+BODY.faq DIV.faq {
+    padding-bottom: 2rem;
+}
+
+BODY.faq DIV.faq A {
+    text-decoration: none;
 }
 
 /**

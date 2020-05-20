@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "it-IT" }}">
+
+{%- include head.html -%}
+
+<body class="faq">
+
+    <div id="page">
+
+        {%- include header.html -%}
+
+        <main {% if page.bozza %}class="bozza"{% endif %}>
+
+            <h1>{{ page.title }}</h1>
+
+            {{ content}}            
+
+        </main>
+
+        {%- include faq-footer.html -%}
+
+    </div>
+
+  </body>
+
+</html>
