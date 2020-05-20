@@ -1,7 +1,7 @@
 ---
-status:     bozza
-layout:     faq
-class:      pagina
+status:     pubblicato
+layout:     default
+class:      faq
 title:      Perché, se Dio è buono, nel Creato esiste il male?
 categories: [faq]
 tags:       [bontà, Dio]
