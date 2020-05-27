@@ -40,7 +40,6 @@ collections:
          - espressioni-e-operatori.md
          - istruzioni-condizionali.md
          - istruzioni-iterative.md
-         - puntatori.md
          - algebra-booleana.md
          - funzioni.md
          - classi.md

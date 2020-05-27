@@ -334,3 +334,10 @@ Il puntatore `p1` è un `unsigned char`, quindi si sposta di otto bit; il puntat
 Se mi fossi distratto e avessi copiato il codice del primo ciclo di lettura così com'è, senza dividere per due il numero di cicli, il puntatore avrebbe continuato a “camminare” in avanti nella memoria, oltre i confini dell'array e questo, come vedremo in seguito, non è assolutamente bene.
 
 ---
+
+Quello che ti ho appena detto del C++ vale anche per il C'hi++.
+La “realtà” all'interno di un computer altro non è che una sequenza di valori binari che, aggregati fra di loro, costituiscono le entità gestite dal sistema; la realtà in cui noi viviamo altro non è che una manifestazione dell'azione dell'energia dell'Universo sugli elementi primordiali che costituiscono tutto ciò che esiste, ovvero quelli che il Maestro Canaro chiamava gli *spazioni*.
+Puoi pensare all'Universo come a una versione tridimensionale di uno schermo di PC.
+Le immagini che vedi su questo schermo sono costituite da minuscoli puntini colorati, detti *pixel*.
+Quando lo schermo è spento, i pixel sono neri e non mostrano alcuna immagine; quando lo accendi, l'energia del catodo colpisce i pixel e li rende visibili.
+La stessa cosa avviene con gli spazioni.
