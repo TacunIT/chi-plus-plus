@@ -108,7 +108,7 @@ unsigned short: 2 bytes, da:                    0  a:                65535
 ---
 
 <a id="puntatori"></a>
-Chiudiamo questa chiacchierata sui tipi di dato del *C++* con i cosiddetti *attributi intermediari*, ovvero: le *funzioni*, gli *array*, i *puntatori* e le *reference*.
+L'ultima cosa di cui ti devo parlare, a proposito dei tipi di dato del C++ sono i cosiddetti *attributi intermediari*, ovvero: le *funzioni*, gli *array*, i *puntatori* e le *reference*.
 
 Delle *funzioni* parleremo diffusamente [in seguito](/man/funzioni).
 Quello che ci interessa, qui e ora, è che ogni funzione ha un suo tipo di dato.
@@ -200,8 +200,7 @@ Questo programma mostra come la dimensione di un puntatore modifichi il risultat
 {% include_relative src/tipi-di-dato-puntatori.cpp %}
 ```
 
-Quello qui sotto è l'output del programma.
-Voglio proprio vedere come farai a farlo entrare nel tuo libro. 
+Questo è l'output del programma; voglio proprio vedere come farai a farlo entrare nel tuo libro: 
 
 ```
  0          01000011    67   C
@@ -336,8 +335,14 @@ Se mi fossi distratto e avessi copiato il codice del primo ciclo di lettura cos�
 ---
 
 Quello che ti ho appena detto del C++ vale anche per il C'hi++.
-Così come la “realtà” all'interno di un computer altro non è che una sequenza di valori binari che, aggregati fra di loro, costituiscono le entità gestite dal sistema, la realtà in cui noi viviamo altro non è che una manifestazione dell'azione dell'energia dell'Universo sugli elementi primordiali che costituiscono tutto ciò che esiste, ovvero gli *spazioni*.
+Così come la “realtà” all'interno di un computer altro non è che una sequenza di valori binari che, aggregati fra di loro, costituiscono le entità gestite dal sistema, la realtà in cui noi viviamo altro non è che una manifestazione dell'azione dell'energia dell'Universo sulle particelle che costituiscono tutto ciò che esiste, ovvero gli *spazioni*.
+
 Puoi pensare all'Universo come a una versione tridimensionale di uno schermo di PC.
 Le immagini che vedi su questo schermo sono costituite da minuscoli puntini colorati, detti *pixel*.
 Quando lo schermo è spento, i pixel sono neri e non mostrano alcuna immagine; quando lo accendi, l'energia del catodo colpisce i pixel e li rende visibili.
-La stessa cosa avviene con gli spazioni.
+Tutto ciò che vedi, all'interno dello schermo, però, è illusorio.
+O meglio: esiste, ma non è ciò che sembra. 
+Gli elementi delle finestre non sono tridimensionali, anche se hanno delle ombre e quando vedi il puntatore del mouse spostarsi da una finestra all'altra in realtà stai vedendo i pixel dello schermo che cambiano di colore
+È un'illusione auto-indotta e volontaria: vedi quello che ti fa comodo vedere.
+
+La stessa cosa avviene con gli spazioni, solo che invece di essere disposti su una superficie piana, come i pixel dello schermo, gli spazioni sono una matrice tridimensionale e hanno quella che il Maestro Canaro definiva: “esistenza potenziale”; se sono irradiati di energia, acquisiscono massa e quindi esistenza, altrimenti non esistono.
