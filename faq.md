@@ -1,6 +1,6 @@
 ---
 layout:     default
-class:      [pagina. faq]
+class:      [pagina, faq]
 title:      Domande frequenti
 permalink:  /faq/
 ---

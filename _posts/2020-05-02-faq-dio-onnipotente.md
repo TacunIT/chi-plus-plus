@@ -1,7 +1,7 @@
 ---
 status:     pubblicato
 layout:     default
-class:      faq
+class:      post
 title:      Perché, se Dio è onnipotente, non impedisce al Diavolo di nuocere?
 categories: [faq]
 tags:       [bontà, Dio]

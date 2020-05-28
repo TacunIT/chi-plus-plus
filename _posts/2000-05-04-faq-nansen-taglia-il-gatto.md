@@ -1,7 +1,7 @@
 ---
 status:     bozza
 layout:     default
-class:      faq
+class:      post
 title:      Perché Nansen taglia in due il gatto?
 categories: [faq]
 tags:       [bontà, Dio]
