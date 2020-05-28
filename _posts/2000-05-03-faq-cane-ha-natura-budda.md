@@ -1,7 +1,7 @@
 ---
 status:     bozza
 layout:     default
-class:      faq
+class:      post
 title:      Un cane, ha una natura-Buddha?
 categories: [faq]
 tags:       [bontà, Dio]

@@ -336,7 +336,7 @@ Se mi fossi distratto e avessi copiato il codice del primo ciclo di lettura cos�
 ---
 
 Quello che ti ho appena detto del C++ vale anche per il C'hi++.
-La “realtà” all'interno di un computer altro non è che una sequenza di valori binari che, aggregati fra di loro, costituiscono le entità gestite dal sistema; la realtà in cui noi viviamo altro non è che una manifestazione dell'azione dell'energia dell'Universo sugli elementi primordiali che costituiscono tutto ciò che esiste, ovvero quelli che il Maestro Canaro chiamava gli *spazioni*.
+Così come la “realtà” all'interno di un computer altro non è che una sequenza di valori binari che, aggregati fra di loro, costituiscono le entità gestite dal sistema, la realtà in cui noi viviamo altro non è che una manifestazione dell'azione dell'energia dell'Universo sugli elementi primordiali che costituiscono tutto ciò che esiste, ovvero gli *spazioni*.
 Puoi pensare all'Universo come a una versione tridimensionale di uno schermo di PC.
 Le immagini che vedi su questo schermo sono costituite da minuscoli puntini colorati, detti *pixel*.
 Quando lo schermo è spento, i pixel sono neri e non mostrano alcuna immagine; quando lo accendi, l'energia del catodo colpisce i pixel e li rende visibili.
