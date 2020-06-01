@@ -1,3 +1,10 @@
+## 0.11.0 (June 02, 2020)
+  - Completata prima stesura del capitolo sui  tipi di dato
+  - Revisione testi
+  - Rivisti i metadati dei post
+  - Creata pagina del Manuale per i puntatori
+  - Aggiunte FAQ dinamiche
+
 ## 0.10.0 (May 20, 2020)
   - Aggiunte FAQ dinamiche
   - Modificata dimensione immagine og_
