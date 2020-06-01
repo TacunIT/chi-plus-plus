@@ -671,14 +671,10 @@ di luce, così l'Universo è costituito da una matrice tridimensionale di
 spazioni, capaci di esistere se ricevono energia.
 La sequenza vista sopra, riletta in chiave spazionista, diventa:
 
-1. l'Uno Primigenio esplode a causa<a href="#causa" class="nota" name="fn-15">15</a>
-di una Forza che ne disperde l'Energia nello spazio;
-2. l'Energia si spande per l'Universo e, conferendo massa/esistenza agli
-spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi
-e solidi che noi conosciamo, dall'elio della nebulosa di *Wolf–Rayet* alla
+1. l'Uno Primigenio esplode a causa<a href="#causa" class="nota" name="fn-15">15</a> di una Forza che ne disperde l'Energia nello spazio;
+2. l'Energia si spande per l'Universo e, conferendo massa/esistenza agli spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi e solidi che noi conosciamo, dall'elio della nebulosa di *Wolf–Rayet* alla
 nostra maestra delle Elementari;
-4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante<a href="#variante" class="nota" name="fn-16">16</a>
-della Storia, che a sua volta genererà nuove esperienze e nuovi *Post-It*;
+4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante<a href="#variante" class="nota" name="fn-16">16</a> della Storia, che a sua volta genererà nuove esperienze e nuovi *Post-It*;
 4. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
 5. tutto ricomincia daccapo.
 
