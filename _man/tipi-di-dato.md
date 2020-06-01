@@ -343,6 +343,30 @@ Quando lo schermo è spento, i pixel sono neri e non mostrano alcuna immagine; q
 Tutto ciò che vedi, all'interno dello schermo, però, è illusorio.
 O meglio: esiste, ma non è ciò che sembra. 
 Gli elementi delle finestre non sono tridimensionali, anche se hanno delle ombre e quando vedi il puntatore del mouse spostarsi da una finestra all'altra in realtà stai vedendo i pixel dello schermo che cambiano di colore
-È un'illusione auto-indotta e volontaria: vedi quello che ti fa comodo vedere.
+È un'illusione auto-indotta e volontaria: il tuo cervello vede qualcosa, ma finge che sia altro, perché è più comodo così.
 
 La stessa cosa avviene con gli spazioni, solo che invece di essere disposti su una superficie piana, come i pixel dello schermo, gli spazioni sono una matrice tridimensionale e hanno quella che il Maestro Canaro definiva: “esistenza potenziale”; se sono irradiati di energia, acquisiscono massa e quindi esistenza, altrimenti non esistono.
+Quando il *Big Bang* irradia la sua Energia nell'Universo, questa colpisce gli spazioni dando loro una massa e generando tutto ciò che esiste, dagli atomi di elio della nebulosa di *Wolf–Rayet* alla tua maestra delle Elementari.
+
+Così come un `char`, `double` o `class` sono solo dei nomi convenzionali per degli insiemi di bit, anche `elio`, `tungsteno` o `cocomero` sono nomi convenzionali per delle quantità di energia.
+*Energia*, bada bene, non *spazioni*, perché gli spazioni sono fissi; quella che si muove è l'Energia.
+Quando tu sposti il braccio come hai fatto adesso, non stai realmente spostando il braccio, ma trasferendo l'energia che costituiva il tuo braccio da un gruppo di spazioni a un altro.
+E anche se restiamo immobili, qui, in questa stanza, l'energia di cui siamo costituiti continua a trasferirsi nella matrice degli spazioni perché il Pianeta in cui viviamo ruota intorno al suo asse e intorno al Sole; il Sole ruota intorno alla Via Lattea e la Via Lattea si muove a sua volta rispetto alle altre galassie.
+Né io né te siamo, adesso, costituiti dagli stessi spazioni che eravamo pochi secondi fa.
+Siamo un'immagine in movimento, come il puntatore del puntatore del mouse, o come le luci delle decorazioni natalizie.
+
+Gli spazioni definisctono anche i limiti delle nostre grandezze e delle nostre unità di misura.
+Pensa a una retta: teoricamente, è un insieme infinito di punti privi di dimensione.
+Se fosse vero, in ciascuna retta coesisterebbero due forme di infito: quello in atto della lunghezza e quello potenziale della sequenza di punti.
+Non è così.
+La retta è la rappresentazione ideale di un insieme finito di spazioni contigui.
+È molto, molto sottile, ma una dimensione ce l'ha.
+Anche il piano, con buona pace di René Guenon, è costituito da un insieme finito di spazioni contigui e per un singolo punto non passano infinite rette, ma un numero finito, per quanto alto, perché gli spazioni limitano il numero possibile di angolazioni.
+Stesso discorso vale per i numeri naturali: non li si può estendere all'infinito, ma solo fino al numero totale di spazioni attivi nell'Uiverso, perché qualsiasi numero superiore indicherebbe una quantità che non esiste e sarebbe quindi insensato.
+Gli spazioni definiscono anche l'unità minima di tempo, quella che il Maestro Canaro definiva scherzosamente lo “spazone-tempo”, ovvero l'intervallo di tempo necessaria a uno spazione per acquisire tutta l'energia di uno degli  spazoni con cui è a contatto.
+È questo il motivo per cui la velocità luce non può superare i trecento milioni di metri al secondo: perché è limitata dal tempo di traferimento dell'energia fra gli spazioni.
+
+
+
+ 
+Per due punti passa solo una retta e per un punto ne passano infinite.
