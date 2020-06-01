@@ -1,5 +1,5 @@
 ---
-status:     redazione 
+status:     pubblicato 
 layout:     manuale
 class:      capitolo
 title:      I tipi di dato
@@ -354,7 +354,26 @@ Quando tu sposti il braccio come hai fatto adesso, non stai realmente spostando 
 E anche se restiamo immobili, qui, in questa stanza, l'energia di cui siamo costituiti continua a trasferirsi nella matrice degli spazioni perché il Pianeta in cui viviamo ruota intorno al suo asse e intorno al Sole; il Sole ruota intorno alla Via Lattea e la Via Lattea si muove a sua volta rispetto alle altre galassie.
 Né io né te siamo, adesso, costituiti dagli stessi spazioni che eravamo pochi secondi fa.
 Siamo un'immagine in movimento, come il puntatore del puntatore del mouse, o come le luci delle decorazioni natalizie.
-<!-- @todo - parallelo con concetti filosofici -->
+Come disse Sant'Agostino, siamo, allo stesso tempo, reali e illusorii:
+
+> E considerai tutte le cose che sono al di sotto di te e vidi che non si può dire in modo assoluto né che esistono né che non esistono: a loro modo esistono, perché derivano da te, non esistono perché non sono ciò che sei tu: ed esiste veramente ciò che permane immutabile. 
+<!-- Confessioni, VII, 11 -->
+
+Come affermano i *Vedānta*, il Mondo ha la natura dell'Arte perché la realtà dell'arte-fatto è differente dalla realtà dell'arte-fice.
+Questa similitudine, oltre che per Platone, è valida anche per i linguaggi di programmazione. 
+Un oggetto all'interno di un programma non è illusorio: esiste, ma non è realmente ciò che rappresenta.
+Come scrisse Ezra Pound, solo i sogni esistono realmente, perché la loro natura irreale rimane tale anche in una realtà illusoria.
+<!--
+SONG
+Love thou thy dream
+all base love scorning,
+love thou the wind
+and here take warning
+that dreams alone can truly be,
+for ‘tis in dream I come to thee.
+-->
+
+---
 
 Gli spazioni definiscono anche i limiti delle nostre grandezze e delle nostre unità di misura.
 Pensa a una retta: teoricamente, è un insieme infinito di punti che si estende in due direzioni.
@@ -372,3 +391,6 @@ Gli spazioni definiscono anche l'unità minima di tempo, quella che il Maestro C
 È questo il motivo per cui la velocità luce non può superare i trecento milioni di metri al secondo: perché è limitata dal tempo di traferimento dell'energia fra gli spazioni.
 
 ---
+
+Anche il C'hi++ ritiene simili il Mondo e l'Arte, ma non solo per la loro natura.
+Il Mondo e l'Arte sono simili perché il loro scopo è lo stesso.
