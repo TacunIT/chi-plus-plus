@@ -359,9 +359,8 @@ Come disse Sant'Agostino, siamo, allo stesso tempo, reali e illusorii:
 > E considerai tutte le cose che sono al di sotto di te e vidi che non si può dire in modo assoluto né che esistono né che non esistono: a loro modo esistono, perché derivano da te, non esistono perché non sono ciò che sei tu: ed esiste veramente ciò che permane immutabile. 
 <!-- Confessioni, VII, 11 -->
 
-Come affermano i *Vedānta*, il Mondo ha la natura dell'Arte perché la realtà dell'arte-fatto è differente dalla realtà dell'arte-fice.
-Questa similitudine, oltre che per Platone, è valida anche per i linguaggi di programmazione. 
-Un oggetto all'interno di un programma non è illusorio: esiste, ma non è realmente ciò che rappresenta.
+Come affermano i *Vedanta*, il Mondo ha la natura dell'Arte perché la realtà dell'arte-fatto è differente dalla realtà dell'arte-fice.
+Questa similitudine, oltre che per Platone, è valida anche per i linguaggi di programmazione: un oggetto all'interno di un programma esiste, ma non è realmente ciò che rappresenta, anche se a noi fa comodo ritenerlo tale.
 Come scrisse Ezra Pound, solo i sogni esistono realmente, perché la loro natura irreale rimane tale anche in una realtà illusoria.
 <!--
 SONG
