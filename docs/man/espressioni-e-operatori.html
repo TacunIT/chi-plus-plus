@@ -45,8 +45,8 @@
     </a>
 
     
-    <a href="/man/istruzioni-condizionali" 
-       title="Vai a: Istruzioni condizionali" 
+    <a href="/man/preprocessore" 
+       title="Vai a: Il preprocessore" 
        class="right" >
             <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
     </a>
@@ -67,10 +67,108 @@
 
             <section id="testo">
 
-                <p>Il C++, come tutti i linguaggi, ha una sua sintassi che definisce gli elementi del codice e il loro utilizzo all’interno dei programmi.
+                <p>La libertà sintattica e la concisione dei costrutti sono la caratteristica principale del C++.</p>
+
+<p>Il C++, come tutti i linguaggi, ha una sua sintassi che definisce gli elementi del codice e il loro utilizzo all’interno dei programmi.
 Negli esempii che abbiamo visto finora, ho utilizzato alcuni di questi elementi senza spiegarti precisamente quale sia il loro ruolo, perché volevo darti un quadro d’insieme delle caratteristiche del linguaggio.
 Un po’ come quando arrivi a una festa e ti presentano gli altri invitati uno dietro l’altro e alla fine l’unica cosa che ti ricordi è il decolleté delle signore.
-Adesso però,</p>
+Adesso però, dobbiamo fare un passo indietro ed esaminare questi elementi a uno a uno, cominciando da quello che è l’elemento principale di ciascun programma C++, ovvero la funzione <code>main</code>.</p>
+
+<pre><code>int main(int argc, char** argv)
+{    
+    return 0;
+}
+</code></pre>
+
+<p>Quello qui sopra è il più piccolo programma in C++ che tu possa scrivere.
+È anche il più inutile, però, perché non fa nulla.<br />
+L’esempio qui sotto è un po’ più complesso:</p>
+
+<pre><code>#include &lt;iostream&gt;
+
+int main(int argc, char** argv)
+{    
+    std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+    return 0;
+}
+
+</code></pre>
+
+<p>Il suo output, come forse avrai intuito, è:</p>
+
+<pre><code>% g++ espressioni-hello-world.cpp -o ../out/esempio
+% ../out/esempio 
+Hello, World!
+</code></pre>
+
+<p>La prima linea di codice:</p>
+
+<pre><code>#include &lt;iostream&gt;
+</code></pre>
+
+<p>non è un’istruzione, ma una direttiva per il preprocessore. 
+Il preprocessore è un programma che elabora il codice e lo prepara per la compilazione, ne parleremo <a href="/man/preprocessore">in seguito</a>.
+Per il momento, ti basta sapere che questa istruzione fa sì che nel codice venga incluso il file <code>iostream.h</code>, che contiene, fra le altre cose, la dichiarazione dello <em>stream</em> <code>cout</code>, utilizzato nell’unica istruzione del programma.</p>
+
+<p>La seconda linea di codice</p>
+
+<pre><code>int main(int argc, char** argv)
+</code></pre>
+
+<p>dichiara la funzione <code>main</code>, specificando che avrà come valore di ritorno un <code>int</code> e due parametri: un intero e un puntatore a puntatori a <code>char</code>.
+Questi valori servono a gestire i parametri passati da riga di comando: l’intero <code>argc</code> (crasi di: <em>arg</em>ument count<em>), specifica il numero di stringhe presenti nella chiamata, mentre il puntatore <code>argv</code> (</em>argument vector*) è un array che contiene tutte le stringhe presenti nella linea di comando, nome del programma compreso.</p>
+
+<p>Il corpo della funzione è racchiuso in una coppia di parentesi graffe <code>{}</code>.
+L’istruzione:</p>
+
+<pre><code>std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+</code></pre>
+
+<p>scrive la stringa <code>Hello World!</code> sullo <em>stream</em> <code>std::cout</code> (<em>standard character output</em>), che solitamente corrisponde allo schermo del computer.
+Infine, l’istruzione:</p>
+
+<pre><code>return 0;
+</code></pre>
+
+<p>torna il valore <code>0</code> al programma chiamante (di solito, la <em>shell</em> del computer) per indicare l’assenza di errori nell’elaborazione.
+Il programma seguente mette in pratica i concetti visti finora:</p>
+
+<pre><code>#include &lt;iostream&gt;
+
+#define NO_ERRORI     0
+#define NO_PARAMETRI  1
+
+int main(int argc, char** argv)
+{    
+    int errore = NO_ERRORI;
+    
+    /** Se c'è solo il nome del programma, errore */
+    if(argc &lt; 2) {
+        std::cerr &lt;&lt; "Specificare almeno un parametro!" &lt;&lt; std::endl;
+        return NO_PARAMETRI;
+    }
+
+    /** Stampa tutti i parametri ricevuti */
+    for(int p=0; p &lt; argc; p++) {
+        std::cout &lt;&lt; *argv++ &lt;&lt; std::endl;        
+    }
+
+    return 0;
+}
+
+</code></pre>
+
+<pre><code>% g++ ./src/cpp/espressioni-argc-argv.cpp -o src/out/esempio
+% src/out/esempio; echo $?                                  
+Specificare almeno un parametro!
+1
+% src/out/esempio un due tre; echo $?
+src/out/esempio
+un
+due
+tre
+0
+</code></pre>
 
 <!--
 
@@ -124,8 +222,8 @@ mettere qui, perché servono nel codice seguente
         </a>
 
         
-        <a href="/man/istruzioni-condizionali" 
-           title="Vai a: Istruzioni condizionali" 
+        <a href="/man/preprocessore" 
+           title="Vai a: Il preprocessore" 
            class="right" >
                 <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
         </a>
