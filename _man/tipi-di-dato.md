@@ -14,7 +14,7 @@ A seconda della loro natura, possiamo dividere questi tipi di dato in due gruppi
 
 I tipi di dato *scalari* sono: `void`, `bool`, `char`, `wchar_t`, `int`, `float`, `double` e permettono di gestre gli elementi classici di un programma: i numeri interi, i numeri decimali, le lettere e i valori booleani.
 
-I tipi di dato *aggregati* sono gli array, le unioni, gli emumerati, le strutture e le classi e, come dice anche il loro nome, sono costituiti dalla unione di più dati scalari dello stesso tipo o di tipi differenti.
+I tipi di dato *aggregati* sono gli array, le unioni, gli emumerati, le strutture e le classi. Questi, come dice anche il loro nome, sono costituiti dalla unione di più dati scalari dello stesso tipo o di tipi differenti.
 
 Questo brano di codice &mdash; fastidiosamente didascalico, nella sua sostanziale inutilità &mdash; mostra i principali tipi di dato del C++. 
 Contiene molti elementi di cui ancora non ti ho parlato, quindi non preoccuparti se non capisci del tutto ciò che fa.
@@ -353,13 +353,13 @@ Così come un `char`, `double` o `class` sono solo dei nomi convenzionali per de
 Quando tu sposti il braccio come hai fatto adesso, non stai realmente spostando il braccio, ma trasferendo l'energia che costituiva il tuo braccio da un gruppo di spazioni a un altro.
 E anche se restiamo immobili, qui, in questa stanza, l'energia di cui siamo costituiti continua a trasferirsi nella matrice degli spazioni perché il Pianeta in cui viviamo ruota intorno al suo asse e intorno al Sole; il Sole ruota intorno alla Via Lattea e la Via Lattea si muove a sua volta rispetto alle altre galassie.
 Né io né te siamo, adesso, costituiti dagli stessi spazioni che eravamo pochi secondi fa.
-Siamo un'immagine in movimento, come il puntatore del puntatore del mouse, o come le luci delle decorazioni natalizie.
+Siamo un'immagine in movimento, come il puntatore del mouse, o come le luci delle decorazioni natalizie.
 Come disse Sant'Agostino, siamo, allo stesso tempo, reali e illusorii:
 
 > E considerai tutte le cose che sono al di sotto di te e vidi che non si può dire in modo assoluto né che esistono né che non esistono: a loro modo esistono, perché derivano da te, non esistono perché non sono ciò che sei tu: ed esiste veramente ciò che permane immutabile. 
 <!-- Confessioni, VII, 11 -->
 
-Come affermano i *Vedanta*, il Mondo ha la natura dell'Arte perché la realtà dell'arte-fatto è differente dalla realtà dell'arte-fice.
+Pers i *Vedanta*, il Mondo ha la natura dell'Arte perché la realtà dell'arte-fatto è differente dalla realtà dell'arte-fice.
 Questa similitudine, oltre che per Platone, è valida anche per i linguaggi di programmazione: un oggetto all'interno di un programma esiste, ma non è realmente ciò che rappresenta, anche se a noi fa comodo ritenerlo tale.
 Come scrisse Ezra Pound, solo i sogni esistono realmente, perché la loro natura irreale rimane tale anche in una realtà illusoria.
 <!--
@@ -387,7 +387,7 @@ Anche il piano, con buona pace di René Guenon, è costituito da un insieme fini
 Stesso discorso vale per i numeri naturali: non li si può estendere all'infinito, ma solo fino al numero totale di spazioni attivi nell'Universo, perché qualsiasi numero superiore indicherebbe una quantità che non esiste e sarebbe quindi insensato.
 
 Gli spazioni definiscono anche l'unità minima di tempo, quella che il Maestro Canaro definiva scherzosamente lo “spazione-tempo”, ovvero l'intervallo di tempo necessario a uno spazione per acquisire tutta l'energia di uno degli  spazioni con cui è a contatto.
-È questo il motivo per cui la velocità luce non può superare i trecento milioni di metri al secondo: perché è limitata dal tempo di traferimento dell'energia fra gli spazioni.
+È questo il motivo per cui la velocità luce non può superare i trecento milioni di metri al secondo: perché è limitata dal tempo di trasferimento dell'energia fra gli spazioni.
 
 ---
 

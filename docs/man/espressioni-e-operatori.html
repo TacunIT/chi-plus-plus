@@ -82,7 +82,7 @@ Adesso però, dobbiamo fare un passo indietro ed esaminare questi elementi a uno
 
 <p>Quello qui sopra è il più piccolo programma in C++ che tu possa scrivere.
 È anche il più inutile, però, perché non fa nulla.<br />
-L’esempio qui sotto è un po’ più complesso:</p>
+L’esempio qui sotto è altrettanto inutile, ma un po’ più complesso:</p>
 
 <pre><code>#include &lt;iostream&gt;
 
@@ -116,7 +116,7 @@ Per il momento, ti basta sapere che questa istruzione fa sì che nel codice veng
 </code></pre>
 
 <p>dichiara la funzione <code>main</code>, specificando che avrà come valore di ritorno un <code>int</code> e due parametri: un intero e un puntatore a puntatori a <code>char</code>.
-Questi valori servono a gestire i parametri passati da riga di comando: l’intero <code>argc</code> (crasi di: <em>arg</em>ument count<em>), specifica il numero di stringhe presenti nella chiamata, mentre il puntatore <code>argv</code> (</em>argument vector*) è un array che contiene tutte le stringhe presenti nella linea di comando, nome del programma compreso.</p>
+Questi valori servono a gestire i parametri passati da riga di comando: l’intero <code>argc</code> (crasi di: <em>argument count</em>), specifica il numero di stringhe presenti nella chiamata, mentre il puntatore <code>argv</code> (<em>argument vector</em>) è un array che contiene tutte le stringhe presenti nella linea di comando, nome del programma compreso.</p>
 
 <p>Il corpo della funzione è racchiuso in una coppia di parentesi graffe <code>{}</code>.
 L’istruzione:</p>
@@ -158,7 +158,7 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<pre><code>% g++ ./src/cpp/espressioni-argc-argv.cpp -o src/out/esempio
+<pre><code>% g++ espressioni-argc-argv.cpp -o src/out/esempio
 % src/out/esempio; echo $?                                  
 Specificare almeno un parametro!
 1
