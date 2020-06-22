@@ -24,7 +24,7 @@ int main(int argc, char** argv)
 
 Quello qui sopra è il più piccolo programma in C++ che tu possa scrivere.
 È anche il più inutile, però, perché non fa nulla.  
-L'esempio qui sotto è un po' più complesso:
+L'esempio qui sotto è altrettanto inutile, ma un po' più complesso:
 
 ```
 {% include_relative src/espressioni-hello-world.cpp %}
@@ -55,7 +55,7 @@ int main(int argc, char** argv)
 ```
 
 dichiara la funzione `main`, specificando che avrà come valore di ritorno un `int` e due parametri: un intero e un puntatore a puntatori a `char`.
-Questi valori servono a gestire i parametri passati da riga di comando: l'intero `argc` (crasi di: *arg*ument count*), specifica il numero di stringhe presenti nella chiamata, mentre il puntatore `argv` (*argument vector*) è un array che contiene tutte le stringhe presenti nella linea di comando, nome del programma compreso.
+Questi valori servono a gestire i parametri passati da riga di comando: l'intero `argc` (crasi di: *argument count*), specifica il numero di stringhe presenti nella chiamata, mentre il puntatore `argv` (*argument vector*) è un array che contiene tutte le stringhe presenti nella linea di comando, nome del programma compreso.
 
 Il corpo della funzione è racchiuso in una coppia di parentesi graffe `{}`.
 L'istruzione:
@@ -79,7 +79,7 @@ Il programma seguente mette in pratica i concetti visti finora:
 ```
 
 ```
-% g++ ./src/cpp/espressioni-argc-argv.cpp -o src/out/esempio
+% g++ espressioni-argc-argv.cpp -o src/out/esempio
 % src/out/esempio; echo $?                                  
 Specificare almeno un parametro!
 1
