@@ -72,7 +72,7 @@ Mancando un riscontro oggettivo, l'unico modo per determinare l'affidabilità di
 
 - l'ONU, che ha emanato la Dichiarazione del 1948, è un'associazione internazionale con il compito di garantire la pace, ma ha al suo vertice Cina, Francia, Regno Unito, Russia e Stati Uniti, ovvero i cinque principali produttori di armi del Pianeta, tre dei quali compaiono anche negli elenchi degli Stati che utilizzano la tortura;
 
-- i rivoluzionar&icirc; francesi sono riusciti nel non facile intento di correlare fra loro quattro termini apparentemente inconciliabili: *liberté*, *égalité*, *fraternité* e: *guillotine*, quindi non mi sembrano dei *testimonial* attendibili per ideali umanistici;
+- i rivoluzionar&icirc; francesi sono riusciti nel non facile intento di correlare fra loro quattro termini apparentemente inconciliabili: *liberté*, *égalité*, *fraternité* e: *guillotine*<a href="#vitt" class="nota" name="fn-vitt">2</a>, quindi non mi sembrano dei *testimonial* attendibili per ideali umanistici;
 
 - la Costituzione americana è stata promulgata nel 1787, ma la schiavitù è stata abolita nel 1865, dopo una guerra civile; del diritto alla vita, alla libertà e al perseguimento della felicità dei nativi americani si sono perse le tracce.
 
@@ -104,9 +104,9 @@ Vi prego di scusare il tono cameratesco, ma è funzionale all'esempio.
 
 <blockquote>
 Come la spieghi, a un computer, la frase: 
-
-<pre>23, bucio de culo</pre> 
-
+<pre>
+	23, bucio de culo
+</pre> 
 Il computer conosce il numero 23 (come: <code>00010111</code>) e potrebbe gestire le lettere della frase come i corrispondenti numeri della codifica ASCII:
 <pre>
   00110010 00110011 00100000 01100010
@@ -152,6 +152,10 @@ Nel frattempo, però, nulla ci vieta di preparare la base per il nostro primo ba
     <li>
         Harari, Yuval Noah. <i>Sapiens. Da animali a dèi: Breve storia dell'umanità</i>. Nuova edizione riveduta - Bompiani.
         <a href="#fn-harari" name="harari">&#8617;</a>
+    </li>
+    <li>
+O, come scrisse Jacovitti in una sua vignetta: *liberté*, *égalité*, *fraternité* e *décolleté*.s
+        <a href="#fn-vitt" name="vitt">&#8617;</a>
     </li>
 </ol>
 </section>

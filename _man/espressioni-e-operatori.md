@@ -65,6 +65,7 @@ std::cout << "Hello, World!" << std::endl;
 ```
 
 scrive la stringa `Hello World!` sullo *stream* `std::cout` (*standard character output*), che solitamente corrisponde allo schermo del computer.
+L’operatore `<<`, in questo caso, notifica al sistema di inviare in output quanto si trova alla sua destra e torna una *reference* a `basic_ostream` in modo da poter essere ripetuto su una st­essa linea di codice.  
 Infine, l'istruzione:
 
 ```
@@ -78,11 +79,33 @@ Il programma seguente mette in pratica i concetti visti finora:
 {% include_relative src/espressioni-argc-argv.cpp %}
 ```
 
+Come ti ho detto, il C++ è un linguaggio *compilato*, quindi il codice, per poter essere eseguito, deve essere elaborato dal complilatore con il comando:
+
 ```
 % g++ espressioni-argc-argv.cpp -o src/out/esempio
+```
+
+Il parametro `-o`permette di specificare il nome del file di output, in questo caso: `src/out/esempio`.
+Se non si defiisce questo valore, il compilatore genera un file di nome `a.out`.
+
+Il comando:
+
+```
 % src/out/esempio; echo $?                                  
+```
+
+è composto di due istruzioni, separate dal carattere `;`.
+La prima sitruzione esegue il file compilato; la seconda stampa a video il suo valore di ritorno.
+Se eseguiamo il programma senza parametri, otteniamo un messaggio e il codice di errore `1`:
+
+```
 Specificare almeno un parametro!
 1
+```
+
+Se invece eseguiamo il programma passandogli dei parametri, otteniamo questo:
+
+```
 % src/out/esempio un due tre; echo $?
 src/out/esempio
 un

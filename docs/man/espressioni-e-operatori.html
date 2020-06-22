@@ -125,6 +125,7 @@ L’istruzione:</p>
 </code></pre>
 
 <p>scrive la stringa <code>Hello World!</code> sullo <em>stream</em> <code>std::cout</code> (<em>standard character output</em>), che solitamente corrisponde allo schermo del computer.
+L’operatore <code>&lt;&lt;</code>, in questo caso, notifica al sistema di inviare in output quanto si trova alla sua destra e torna una <em>reference</em> a <code>basic_ostream</code> in modo da poter essere ripetuto su una st­essa linea di codice.<br />
 Infine, l’istruzione:</p>
 
 <pre><code>return 0;
@@ -158,11 +159,30 @@ int main(int argc, char** argv)
 
 </code></pre>
 
+<p>Come ti ho detto, il C++ è un linguaggio <em>compilato</em>, quindi il codice, per poter essere eseguito, deve essere elaborato dal complilatore con il comando:</p>
+
 <pre><code>% g++ espressioni-argc-argv.cpp -o src/out/esempio
-% src/out/esempio; echo $?                                  
-Specificare almeno un parametro!
+</code></pre>
+
+<p>Il parametro <code>-o</code>permette di specificare il nome del file di output, in questo caso: <code>src/out/esempio</code>.
+Se non si defiisce questo valore, il compilatore genera un file di nome <code>a.out</code>.</p>
+
+<p>Il comando:</p>
+
+<pre><code>% src/out/esempio; echo $?                                  
+</code></pre>
+
+<p>è composto di due istruzioni, separate dal carattere <code>;</code>.
+La prima sitruzione esegue il file compilato; la seconda stampa a video il suo valore di ritorno.
+Se eseguiamo il programma senza parametri, otteniamo un messaggio e il codice di errore <code>1</code>:</p>
+
+<pre><code>Specificare almeno un parametro!
 1
-% src/out/esempio un due tre; echo $?
+</code></pre>
+
+<p>Se invece eseguiamo il programma passandogli dei parametri, otteniamo questo:</p>
+
+<pre><code>% src/out/esempio un due tre; echo $?
 src/out/esempio
 un
 due
