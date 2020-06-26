@@ -1,16 +1,17 @@
 ---
-layout:     default
-class:      [pagina, faq]
+layout:     faq
+class:      faq
 title:      Domande frequenti
 permalink:  /faq/
 ---
 
-<h2>{{ page.title }}</h2>
-{% for post in site.categories.faq %}
-{% if post.status == "pubblicato" %}
-<div class="faq">
-<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-{{ post.content }}
-</div>
-{% endif %}
-{% endfor %}
+<section class="elenco faq">
+    {% for post in site.categories.faq %}
+    {% if post.status == "pubblicato" %}
+    <div class="faq">
+    <h3>{{ post.title }}</h3>
+    {{ post.content }}
+    </div>
+    {% endif %}
+    {% endfor %}
+</section>
