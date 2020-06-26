@@ -328,9 +328,15 @@ BODY.pagina H1 {
 /**
  *  Stili per le FAQ
  */
-
+BODY.faq H1 {
+    text-align: center;
+}
 BODY.faq DIV.faq {
     padding: 1rem 0;
+}
+
+BODY.faq DIV.faq A {
+    text-decoration: none;
 }
 
 BODY.faq DIV.faq A {
