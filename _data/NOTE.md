@@ -2,27 +2,14 @@
 ## Appunti da sudividere nei diversi capitoli del Manuale
 
 
-
-
-
-
-
-
-Il diluvio universale era solo il passaggio dalla versione beta alla
-1.0. La venuta di Cristo, invece, era un aggiornamento della
-documentazione.
-
 La filosofia é il *reverse engineering* dell\'Universo.
-
 L\'analisi del sistema può avvenire a più livelli, dall\'interfaccia
 utente al codice binario.
-
 Analizzare a livelli bassi è più difficile e porta tutt\'al più alla
 conoscenza delle meccaniche di funzionamento, non delle regole di
 business.
 
-Potere educativo della letteratura in confronto alla filosofia.
-
+@todo Potere educativo della letteratura in confronto alla filosofia. 
 Cfr Simpson, 243 e Nussbaum citato
 
 Gli interventi divini possono avvenire solo in fase di debug, poi il
@@ -36,40 +23,22 @@ Secondo l'etimologia classica, il termine: "religione" deriva dal latino
 numinoso; la derivazione di *religio* da *religare* (legare a qualcosa)
 è dovuta ai Padri della Chiesa.
 
-Come si accettano le mutazioni del destino, si devono saper accettare
-anche le mutazioni dell'amore.
-
-Le persone si aspettano che l'amore sia sempre al massimo, come gli
-atleti, e si sentono offese, derubate o tradite quando l'intensità
-scema.
-
-Le loro reazioni peggiorano la situazione in un escalation che spesso
-porta alla fine del rapporto o dell'amore.
-
-Ma anche qui è tutta una questione di equilibrio fra forze contrapposte:
-fedeltà e devozione, amore e odio, vicinanza e lontananza.
 
 Ti è mai passato per la testa, che tutta questa teoria potrebbe essere
 sbagliata?
-
 Che potrei essere davvero pazzo, come dicono i tuoi confratelli?
-
 Wittgenstein a trent\'anni, definì una filosofia che egli stesso, dieci
 anni dopo, rinnegò a favore di un nuovo credo. Se fosse vissuto per
 altri trent\'anni, avrebbe cambiato ancora idea?
-
 \[le teorie di W., secondo cui la metafisica è un uso pervertito del
 linguaggio, tocca che me la studio\]
 
 La storia dell\'Umanità è costellata di fedi bizzarre, ciascuna con il
 suo bravo seguito di fedeli.
-
 Cosa ti fa pensare, che lo Spazionismo sia diverso?
-
 Il fatto che possa dare una risposta razionale e coerente ad alcuni
 fenomeni che altrimenti sarebbero senza spiegazione non vuol dire
 necessariamente che corrisponda a verità.
-
 \[differenza fra verità epistemica e verità realista in Filosofia di
 House, pag. 100 e seguenti\]
 
@@ -82,9 +51,6 @@ Abbiamo creduto per centinaja di anni che il Sole girasse intorno alla
 terra e anche quella era un\'ipotesi confortata dai fatti, almeno
 apparentemente.
 
-L\'Esistenza potrebbe essere un sistema per smaltire l\'energia
-dell\'Universo (o di quello che ha intorno), così come le perturbazioni
-sono un sistema per smaltire l\'energia dell\'atmosfera?
 
 \[Riguardando il saggio sul Buddismo in Tempo ed Eternità di Ananda K.,
 mi sono venute in mente due cose: la prima è che non è chiaro quali
