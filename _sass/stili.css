@@ -321,16 +321,17 @@ BODY.pagina HEADER titolo-2 {
 }
 
 BODY.pagina H1 {
-    margin: 3rem 0 6rem 0;
+    margin: 1rem 0 3rem 0;
     text-align: center;
+}
+
+BODY.pagina.index H1 {
+    display: none;
 }
 
 /**
  *  Stili per le FAQ
  */
-BODY.faq H1 {
-    text-align: center;
-}
 BODY.faq DIV.faq {
     padding: 1rem 0;
 }

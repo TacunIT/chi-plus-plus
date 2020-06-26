@@ -3,7 +3,7 @@
 
 {%- include head.html -%}
 
-<body class="{{ page.class }}">
+<body class="pagina {{ page.class }}">
 
     <div id="page">
 
@@ -11,9 +11,7 @@
 
         <main {% if page.bozza %}class="bozza"{% endif %}>
 
-            {% if page.class == "pagina" %}
             <h1>{{ page.title }}</h1>
-            {% endif  %}
 
             {{ content}}            
 

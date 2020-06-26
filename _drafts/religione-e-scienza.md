@@ -1,12 +1,15 @@
 ---
-status:     bozza
-layout:     default
-class:      
-title:      Religione e Scienza
-permalink:  /man/religione-e-scienza
+layout:    pagina
+class:     articolo
+title:     Religione e Scienza
+category:  log
+tags:      [log, religione, scienza]
 ---
 
-
+A parte il fatto che è improprio classificare l'essenza del Creatore con gli attributi del creato (sarebbe come se i *byte* di un computer si chiedessero se il Programmatore valga 1 o 0), in un'ottica spazionista, non è Dio che ha creato l'Universo, ma la Forza che tende a separare, *Entropia*, *Iblīs*, *διάβολος* o *Prakṛti* che lo si voglia chiamare.
+Non è un'idea nuova, lo credevano anche i Barbelognostici, anche se questi
+ultimi non sono un esempio da seguire.
+s
 I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale.
 Rifiutano le accettazioni per fede e contestano la non comprovabilità scientifica dei precetti religiosi.
 Fanno bene: dobbiamo sempre mettere in discussione i princip&icirc; sui quali basiamo le nostre convinzioni; purtroppo, però, le leggi che regolano la vita dei non credenti sono dogmatiche e incerte come quelle dei fedeli.

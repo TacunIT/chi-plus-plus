@@ -1,5 +1,5 @@
 ---
-layout:     faq
+layout:     pagina
 class:      faq
 title:      Domande frequenti
 permalink:  /faq/
@@ -9,7 +9,11 @@ permalink:  /faq/
     {% for post in site.categories.faq %}
         <div class="faq">
             <h3>{{ post.title }}</h3>
-            {{ post.content }}
+            {% if post.layout == "" %}
+                {{ post.content }}
+            {% else %}
+                {{ post.excerpt }}
+            {% endif %}
             </div>
     {% endfor %}
 </section>

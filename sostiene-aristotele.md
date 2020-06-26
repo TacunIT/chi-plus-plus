@@ -1,7 +1,6 @@
 ---
-status:     pubblicato
-layout:     default
-class:      pagina
+layout:     pagina
+class:      articolo
 title:      Sostiene Aristotele
 permalink:  /sostiene-aristotele/
 footer:     true

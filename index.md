@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: pagina
 title:  C'hi++
 h2:     Proposta per una metafisica open-source
 class:  index
