@@ -38,6 +38,7 @@ collections:
          - commenti.md
          - tipi-di-dato.md
          - espressioni-e-operatori.md
+         - preprocessore.md
          - istruzioni-condizionali.md
          - istruzioni-iterative.md
          - algebra-booleana.md
