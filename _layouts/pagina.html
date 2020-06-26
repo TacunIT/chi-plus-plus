@@ -1,29 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "it-IT" }}">
-
 {%- include head.html -%}
-
-<body class="{{ page.class }}">
-
+<body class="pagina {{ page.class }}">
     <div id="page">
-
         {%- include header.html -%}
-
         <main {% if page.bozza %}class="bozza"{% endif %}>
-
-            {% if page.class == "pagina" %}
             <h1>{{ page.title }}</h1>
-            {% endif  %}
-
             {{ content}}            
-
         </main>
-
-        {% if page.footer  %}
         {%- include footer.html -%}
-        {% endif  %}
     </div>
-
   </body>
-
 </html>

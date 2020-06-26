@@ -1,10 +1,7 @@
 ---
-status:     pubblicato
-layout:     default
-class:      post
-title:      Perché, se Dio è onnipotente, non impedisce al Diavolo di nuocere?
-categories: [faq]
-tags:       [bontà, Dio]
+title:    Perché, se Dio è onnipotente, non impedisce al Diavolo di nuocere?
+category: faq
+tags:     [faq, bontà, Dio]
 ---
 
 Perché l'alternanza del (presunto) bene e del (presunto) male è necessaria. 
