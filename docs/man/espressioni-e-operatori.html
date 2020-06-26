@@ -159,7 +159,7 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>Come ti ho detto, il C++ è un linguaggio <em>compilato</em>, quindi il codice, per poter essere eseguito, deve essere elaborato dal complilatore con il comando:</p>
+<p>Come ti ho detto, il C++ è un linguaggio <em>compilato</em>, quindi il codice, per poter essere eseguito, deve essere elaborato dal complilatore con il comando della <em>shell</em>:</p>
 
 <pre><code>% g++ espressioni-argc-argv.cpp -o src/out/esempio
 </code></pre>
@@ -167,7 +167,7 @@ int main(int argc, char** argv)
 <p>Il parametro <code>-o</code>permette di specificare il nome del file di output, in questo caso: <code>src/out/esempio</code>.
 Se non si defiisce questo valore, il compilatore genera un file di nome <code>a.out</code>.</p>
 
-<p>Il comando:</p>
+<p>Il comando <em>shell</em>:</p>
 
 <pre><code>% src/out/esempio; echo $?                                  
 </code></pre>
@@ -188,6 +188,30 @@ un
 due
 tre
 0
+</code></pre>
+
+<hr />
+
+<p>La riga di codice:</p>
+
+<pre><code>int errore = NO_ERRORI;
+</code></pre>
+
+<p>è un’<em>istruzione</em>.
+Le istruzioni sono composte da una o più <em>espressioni</em>, composte a loro volta da <em>operatori</em> e <em>operandi</em>.
+Le espressioni possono essere o semplici o composte e producono sempre un valore:</p>
+
+<pre><code>a = 2 
+a + b 
+d = a - b + c 
+a &lt; d
+</code></pre>
+
+<p>La differenza fra istruzioni ed espressioni è che le istruzioni sono sempre terminate dal carattere <code>;</code>:</p>
+
+<pre><code>a = 3; 
+b = a * 3; 
+c = sqrt(b);
 </code></pre>
 
 <!--
