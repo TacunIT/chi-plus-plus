@@ -2,8 +2,8 @@
 status:     redazione
 layout:     manuale
 class:      capitolo
-title:      Espressioni e operatori
-permalink:  /man/espressioni-e-operatori
+title:      Struttura dei programmi C++
+permalink:  /man/struttura-dei-programmi
 quote:      "question = 2b | ( ! 2b );"
 ---
 
@@ -143,6 +143,10 @@ c = sqrt(b);
 
 
 <!--
+
+L\'Esistenza potrebbe essere un sistema per smaltire l\'energia
+dell\'Universo (o di quello che ha intorno), così come le perturbazioni
+sono un sistema per smaltire l\'energia dell\'atmosfera?
 
 Utlizzare l'peratore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. Questo approccio si rirova anche nel precetto:
 

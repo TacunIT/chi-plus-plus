@@ -2,9 +2,9 @@
 layout:     default
 class:      log
 title:      Zibald-1
-permalink:  /zibaldone/
+permalink:  /zibald-1/
 ---
-
+<h1>Zibald 1</h1>
 <section class="elenco post">
     {% for post in site.posts %}
         {% if post.status == "pubblicato" %}
