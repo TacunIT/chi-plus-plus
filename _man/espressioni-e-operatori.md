@@ -79,7 +79,7 @@ Il programma seguente mette in pratica i concetti visti finora:
 {% include_relative src/espressioni-argc-argv.cpp %}
 ```
 
-Come ti ho detto, il C++ è un linguaggio *compilato*, quindi il codice, per poter essere eseguito, deve essere elaborato dal complilatore con il comando:
+Come ti ho detto, il C++ è un linguaggio *compilato*, quindi il codice, per poter essere eseguito, deve essere elaborato dal complilatore con il comando della *shell*:
 
 ```
 % g++ espressioni-argc-argv.cpp -o src/out/esempio
@@ -88,7 +88,7 @@ Come ti ho detto, il C++ è un linguaggio *compilato*, quindi il codice, per pot
 Il parametro `-o`permette di specificare il nome del file di output, in questo caso: `src/out/esempio`.
 Se non si defiisce questo valore, il compilatore genera un file di nome `a.out`.
 
-Il comando:
+Il comando *shell*:
 
 ```
 % src/out/esempio; echo $?                                  
@@ -113,6 +113,34 @@ due
 tre
 0
 ```
+
+---
+
+La riga di codice:
+
+```
+int errore = NO_ERRORI;
+```
+
+è un'*istruzione*.
+Le istruzioni sono composte da una o più *espressioni*, composte a loro volta da *operatori* e *operandi*.
+Le espressioni possono essere o semplici o composte e producono sempre un valore:
+
+```
+a = 2 
+a + b 
+d = a - b + c 
+a < d
+```
+
+La differenza fra istruzioni ed espressioni è che le istruzioni sono sempre terminate dal carattere `;`:
+
+```
+a = 3; 
+b = a * 3; 
+c = sqrt(b);
+```
+
 
 <!--
 
