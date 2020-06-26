@@ -6,21 +6,17 @@ category:  log
 tags:      [log, religione, scienza]
 ---
 
-A parte il fatto che è improprio classificare l'essenza del Creatore con gli attributi del creato (sarebbe come se i *byte* di un computer si chiedessero se il Programmatore valga 1 o 0), in un'ottica spazionista, non è Dio che ha creato l'Universo, ma la Forza che tende a separare, *Entropia*, *Iblīs*, *διάβολος* o *Prakṛti* che lo si voglia chiamare.
-Non è un'idea nuova, lo credevano anche i Barbelognostici, anche se questi
-ultimi non sono un esempio da seguire.
-s
 I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale.
 Rifiutano le accettazioni per fede e contestano la non comprovabilità scientifica dei precetti religiosi.
 Fanno bene: dobbiamo sempre mettere in discussione i princip&icirc; sui quali basiamo le nostre convinzioni; purtroppo, però, le leggi che regolano la vita dei non credenti sono dogmatiche e incerte come quelle dei fedeli.
+
+---
 
 Religione, Scienza e Filosofia sono tre ritratti di una stessa modella: la nostra Esistenza.
 Ciascun pittore la ritrae da un diverso punto di vista e con il proprio stile pittorico, ma tutti e tre vedono la stessa immagine, con le stesse luci e le stesse ombre.
 Tutti e tre cercano di intuire il corpo che *s'anca in curva callipìgia* dietro alle pieghe del drappeggio, ma a nessuno è dato di vederlo nella sua nuda bellezza.
 Inoltre, come ci ha insegnato Magritte, quella che vediamo ritratta nei tre quadri non è la modella, ma una sua riproduzione bidimensionale.
 Più o meno somigliante, ma diversa e inferiore all'originale.  
-
----
 
 In una recente discussione epistolare riguardante questo tema, ho stilato un elenco &mdash; non del tutto serio, ma veritiero e imparziale &mdash; di quelli che, a mio avviso, sono i punti di contatto fra Religione e Scienza.
 La maggior parte di queste similitudini sono applicabili anche alla Filosofia:
@@ -149,15 +145,14 @@ Nel frattempo, però, nulla ci vieta di preparare la base per il nostro primo ba
 
 
 <section class="note">
-<br />
-<br />
+<h2>Note:</h2>
 <ol>
     <li>
         Harari, Yuval Noah. <i>Sapiens. Da animali a dèi: Breve storia dell'umanità</i>. Nuova edizione riveduta - Bompiani.
         <a href="#fn-harari" name="harari">&#8617;</a>
     </li>
     <li>
-O, come scrisse Jacovitti in una sua vignetta: *liberté*, *égalité*, *fraternité* e *décolleté*.s
+O, come scrisse Jacovitti in una sua vignetta: <i>liberté, égalité, fraternité e décolleté</i>.
         <a href="#fn-vitt" name="vitt">&#8617;</a>
     </li>
 </ol>

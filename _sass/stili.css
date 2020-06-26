@@ -123,6 +123,11 @@ A.nota {
     display: inline-block;
     margin-left: 0.12rem; 
 }
+A.more {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: $colorGold;
+}
 SUP {
     font-size: 0.7em;
     vertical-align: super;
@@ -714,11 +719,11 @@ A.nota {
 
 SECTION.note {
     page-break-before: always;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
 }
 SECTION.note OL ,
 SECTION.bibliografia UL {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-left: 0;
     padding: 0 1rem;
 }

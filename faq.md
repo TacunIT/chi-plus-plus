@@ -9,11 +9,7 @@ permalink:  /faq/
     {% for post in site.categories.faq %}
         <div class="faq">
             <h3>{{ post.title }}</h3>
-            {% if post.layout == "" %}
-                {{ post.content }}
-            {% else %}
-                {{ post.excerpt }}
-            {% endif %}
-            </div>
+            {{ post.content }}
+        </div>
     {% endfor %}
 </section>
