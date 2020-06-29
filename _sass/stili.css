@@ -758,7 +758,6 @@ SECTION.elenco.post DIV.log P {
 SECTION.elenco.post DIV.log P.data {
     color: $dataColor;
     font-size: 0.9rem;
-    padding-bottom: 2rem;            
 } 
 
 /**
