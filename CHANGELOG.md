@@ -1,3 +1,12 @@
+## 0.12.0 (June 29, 2020)
+  - Aggiunto elenco note.
+  - Rinominato layout default in pagina
+  - Semplificati i dati dei post
+  - Spostati i documenti nella cartella _data e le bozze in _drafts
+  - Rivista grafica elenco FAQ
+  - Spostati in locale i file dei font e delle icone
+  - Inizio capitolo su espressioni e operatori
+
 ## 0.11.0 (June 02, 2020)
   - Completata prima stesura del capitolo sui  tipi di dato
   - Revisione testi
