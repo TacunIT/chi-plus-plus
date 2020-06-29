@@ -1,14 +1,19 @@
 ---
-layout:    pagina
-class:     articolo
-title:     Religione e Scienza
-category:  log
-tags:      [log, religione, scienza]
+title:    Religione e Scienza
+category: log
+tags:     [note, religione, scienza]
+layout:   log
+class:    articolo
 ---
 
 I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale.
 Rifiutano le accettazioni per fede e contestano la non comprovabilità scientifica dei precetti religiosi.
 Fanno bene: dobbiamo sempre mettere in discussione i princip&icirc; sui quali basiamo le nostre convinzioni; purtroppo, però, le leggi che regolano la vita dei non credenti sono dogmatiche e incerte come quelle dei fedeli.
+
+<!--
+Secondo l'etimologia classica, il termine: "religione" deriva dal latino *relegere*, e denota interesse e riguardosa considerazione per il numinoso; la derivazione di *religio* da *religare* (legare a qualcosa) è dovuta ai Padri della Chiesa.
+
+-->
 
 ---
 
@@ -102,24 +107,28 @@ Provo a chiarire meglio questo concetto con un altro brano della mia disputa epi
 Vi prego di scusare il tono cameratesco, ma è funzionale all'esempio.
 
 <blockquote>
-Come la spieghi, a un computer, la frase: 
-<pre>
-	23, bucio de culo
-</pre> 
+Come la spieghi, a un computer, la frase: “23, bucio de culo”? <br />
 Il computer conosce il numero 23 (come: <code>00010111</code>) e potrebbe gestire le lettere della frase come i corrispondenti numeri della codifica ASCII:
+
 <pre>
+<code>
   00110010 00110011 00100000 01100010
   01110101 01100011 01101001 01101111
   00100000 01100100 01101001 00100000
   01100011 01110101 01101100 01101111
+</code>
 </pre>
 
 ma non ha modo di capire l'associazione fra il numero e la frase.
 Non ha mai giocato a Tombola, non conosce la Smorfia, forse sa cosa sia un culo, ma molto probabilmente non conosce il termine gergale per “buco”.
 Tutto quello che potrebbe imparare è l'associazione pavloviana:
+
 <pre>
-  23 = bucio di culo
+<code>
+    23 = bucio di culo
+</code>
 </pre>
+
 che per lui, però, non avrebbe senso, perché, per il suo modo di vedere le cose, né il valore <code>23</code> né la stringa <code>bucio de culo</code> sono equiparabili.<br />
 Ecco: secondo me, gli scienziati sono dei computer che pensano di poter capire cosa significhi: <code>23, bucio di culo</code>.
 Per prima cosa, hanno riconosciuto il numero 23, che era la parte più facile.
