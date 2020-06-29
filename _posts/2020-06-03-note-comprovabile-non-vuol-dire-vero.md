@@ -2,7 +2,7 @@
 title:    Il C'hi++ e l'Arte del tiro con l'arco
 category: log
 tags:     [note, verità, vero/falso, errori, comprovabilità, metodo scientifico, Wittgenstein]
-layout:   pagina
+layout:   log
 ---
 
 Riguardando il saggio sul Buddismo in Tempo ed Eternità di Ananda K., mi sono venute in mente due cose: la prima è che non è chiaro quali siano le prove a sostegno delle affermazioni riportate: d'accordo, stiamo parlando di testi sacri, o quasi, ma chi ci dice che abbiano ragione?
