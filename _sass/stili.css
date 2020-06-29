@@ -4,6 +4,11 @@
   src: url(/assets/fonts/Inconsolata-Regular.ttf);
 }
 @font-face {
+  font-family: Inconsolata;
+  src: url(/assets/fonts/Inconsolata-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
   font-family: Simonetta;
   src: url(/assets/fonts/Simonetta-Regular.ttf);
 }
@@ -682,7 +687,11 @@ SECTION.copertina DIV.dati LABEL {
     font-weight: bold;
 }
 
-SECTION.copertina DIV.dati LABEL:after {
+LABEL {
+    font-weight: bold;
+}
+
+LABEL:after {
     content: ':';
 }
 
@@ -734,6 +743,47 @@ SECTION.bibliografia LI {
 SECTION.note OL LI A {
     word-break: break-all;
 }
+
+/**
+ *
+ *  Stili per elenco log
+ *
+ */
+SECTION.elenco.post DIV.log {
+    padding-bottom: 2rem;
+} 
+SECTION.elenco.post DIV.log P {
+    margin-top: unset;
+} 
+SECTION.elenco.post DIV.log P.data {
+    color: $dataColor;
+    font-size: 0.9rem;
+} 
+
+/**
+ *
+ *  Stili per pagina con note
+ *
+ */
+BODY.pagina.log MAIN P.category {
+    font-family: Inconsolata;
+    text-align: center;
+} 
+
+BODY.pagina.log MAIN P.tag {
+    font-size: 0.9rem;
+    font-family: Inconsolata;
+    margin: 3rem auto 2rem;    
+    width: 66%;
+    text-align: center;
+}
+
+BODY.pagina.log  P.data {
+    color: $dataColor;
+    font-size: 0.9rem;
+    padding-bottom: 2rem;           
+    text-align: right; 
+} 
 
 /**
  *  Stili per mobile
