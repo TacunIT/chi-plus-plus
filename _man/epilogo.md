@@ -7,7 +7,6 @@ permalink:  /man/epilogo
 quote:      "Dopo di me, il reboot"
 ---
 
-
 <!--
 
     @todo - differenza fra verità epistemica e verità realista in Filosofia di House, pag. 100 e seguenti 

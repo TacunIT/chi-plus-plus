@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "it-IT" }}">
+{%- include head.html -%}
+<body class="pagina log {{ page.class }}">
+    <div id="page">
+        {%- include header.html -%}
+        <main>
+            <h1>{{ page.title }}</h1>
+            <p class="tag">
+            {% if page.tags.size > 0 %}
+                <label>tag</label> {{ page.tags | sort | join: ", " }}
+            {% endif %}                
+            </p>
+            {{ content}}            
+        </main>
+        {%- include footer.html -%}
+    </div>
+  </body>
+</html>

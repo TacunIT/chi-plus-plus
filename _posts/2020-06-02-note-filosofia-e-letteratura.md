@@ -2,7 +2,7 @@
 title:    La filosofia é il reverse engineering dell'Universo.
 category: log
 tags:     [note, filosofia, reverse engineering, analisi]
-layout:   pagina
+layout:   log
 ---
 
 La filosofia é il *reverse engineering* dell'Universo.

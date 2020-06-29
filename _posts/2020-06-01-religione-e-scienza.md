@@ -2,7 +2,7 @@
 title:    Religione e Scienza
 category: log
 tags:     [note, religione, scienza]
-layout:   pagina
+layout:   log
 class:    articolo
 ---
 
