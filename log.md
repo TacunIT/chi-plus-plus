@@ -8,7 +8,9 @@ permalink:  /log/
 <section class="elenco post">
     {% for post in site.categories.log %}
         <div class="log">
-            <h3>{{ post.title }}</h3>
+            <a class="more" href="{{ post.url | absolute_url }}">
+                <h3>{{ post.title }}</h3>
+            </a>
             <p class="data">{{ post.date | date_to_string }}</p>
             {% if post.excerpt != "" %}
                 {{ post.excerpt }}
