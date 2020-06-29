@@ -736,6 +736,21 @@ SECTION.note OL LI A {
 }
 
 /**
+ *
+ *  Stili per elenco log
+ */
+SECTION.elenco.post DIV.log {
+    padding-bottom: 2rem;
+} 
+SECTION.elenco.post DIV.log P {
+    margin-top: unset;
+} 
+SECTION.elenco.post DIV.log P.data {
+    color: $dataColor;
+    font-size: 0.9rem;            
+} 
+
+/**
  *  Stili per mobile
  */
 @media only screen and (max-width: 420px) {

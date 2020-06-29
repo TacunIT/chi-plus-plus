@@ -1,14 +1,19 @@
 ---
-layout:    pagina
-class:     articolo
-title:     Religione e Scienza
-category:  log
-tags:      [log, religione, scienza]
+title:    Religione e Scienza
+category: log
+tags:     [note, religione, scienza]
+layout:   pagina
+class:    articolo
 ---
 
 I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale.
 Rifiutano le accettazioni per fede e contestano la non comprovabilità scientifica dei precetti religiosi.
 Fanno bene: dobbiamo sempre mettere in discussione i princip&icirc; sui quali basiamo le nostre convinzioni; purtroppo, però, le leggi che regolano la vita dei non credenti sono dogmatiche e incerte come quelle dei fedeli.
+
+<!--
+Secondo l'etimologia classica, il termine: "religione" deriva dal latino *relegere*, e denota interesse e riguardosa considerazione per il numinoso; la derivazione di *religio* da *religare* (legare a qualcosa) è dovuta ai Padri della Chiesa.
+
+-->
 
 ---
 
