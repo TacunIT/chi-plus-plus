@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Istruzioni iterative
 permalink:  /man/istruzioni-iterative
-quote:      ""
+quote:      "Dopo di me, il reboot"
 ---
 
 Le istruzioni di ciclo sono una delle componenti fondamentali della programmazione.
