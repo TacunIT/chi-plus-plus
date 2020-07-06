@@ -1,5 +1,5 @@
 Questa è la poesia funeraria del Maestro.
-Una poesia funeraria “ready-made”, come la definiva lui, perché il testo è quello della poesia funeraria del monaco Zen Gesshū Sōko.  
+Una poesia funeraria “ready-made”, come la definiva lui, perché il testo è quello della poesia funeraria del monaco Zen Gesshu; Soko.  
 Il Maestro la tradusse in Tedesco quando scoprì che il verbo *zu Treffen* può significare sia: *icontrarsi* che: *fare centro*.
 
 <blockquote>

@@ -39,6 +39,7 @@ collections:
          - tipi-di-dato.md
          - struttura-dei-programmi.md
          - preprocessore.md
+         - puntatori.md
          - istruzioni-condizionali.md
          - istruzioni-iterative.md
          - algebra-booleana.md

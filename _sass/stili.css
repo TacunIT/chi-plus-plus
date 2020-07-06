@@ -2,6 +2,7 @@
 @font-face {
   font-family: Inconsolata;
   src: url(/assets/fonts/Inconsolata-Regular.ttf);
+  unicode-range: U+0025-00FF; 
 }
 @font-face {
   font-family: Inconsolata;
