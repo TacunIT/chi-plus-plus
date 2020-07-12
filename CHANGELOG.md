@@ -1,3 +1,6 @@
+## 0.13.0 (July 12, 2020)
+  - Completata la prima stesura dell'Epilogo
+
 ## 0.12.0 (June 29, 2020)
   - Aggiunto elenco note.
   - Rinominato layout default in pagina
