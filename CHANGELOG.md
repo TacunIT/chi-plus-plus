@@ -1,3 +1,6 @@
+## 0.13.1 (July 19, 2020)
+
+
 ## 0.13.0 (July 12, 2020)
   - Completata la prima stesura dell'Epilogo
 
