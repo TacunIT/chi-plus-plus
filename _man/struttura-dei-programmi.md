@@ -27,13 +27,13 @@ Quello qui sopra è il più piccolo programma in C++ che tu possa scrivere.
 L'esempio qui sotto è altrettanto inutile, ma un po' più complesso:
 
 ```
-{% include_relative src/espressioni-hello-world.cpp %}
+{% include_relative src/struttura-hello-world.cpp %}
 ```
 
 Il suo output, come forse avrai intuito, è:
 
 ```
-% g++ espressioni-hello-world.cpp -o ../out/esempio
+% g++ struttura-hello-world.cpp -o ../out/esempio
 % ../out/esempio 
 Hello, World!
 ```
@@ -65,7 +65,13 @@ std::cout << "Hello, World!" << std::endl;
 ```
 
 scrive la stringa `Hello World!` sullo *stream* `std::cout` (*standard character output*), che solitamente corrisponde allo schermo del computer.
-L’operatore `<<`, in questo caso, notifica al sistema di inviare in output quanto si trova alla sua destra e torna una *reference* a `basic_ostream` in modo da poter essere ripetuto su una st­essa linea di codice.  
+L’operatore `<<`, in questo caso, notifica al sistema di inviare in output quanto si trova alla sua destra e torna una *reference* allo stream di output, in modo da poter essere ripetuto su una st­essa linea di codice, che è una forma più efficiente ed elegante di:
+
+```
+std::cout << "Hello, World!" ;
+std::cout << std::endl;
+```
+
 Infine, l'istruzione:
 
 ```
@@ -76,13 +82,13 @@ torna il valore `0` al programma chiamante (di solito, la *shell* del computer) 
 Il programma seguente mette in pratica i concetti visti finora:
 
 ```
-{% include_relative src/espressioni-argc-argv.cpp %}
+{% include_relative src/struttura-argc-argv.cpp %}
 ```
 
 Come ti ho detto, il C++ è un linguaggio *compilato*, quindi il codice, per poter essere eseguito, deve essere elaborato dal complilatore con il comando della *shell*:
 
 ```
-% g++ espressioni-argc-argv.cpp -o src/out/esempio
+% g++ struttura-argc-argv.cpp -o src/out/esempio
 ```
 
 Il parametro `-o`permette di specificare il nome del file di output, in questo caso: `src/out/esempio`.
@@ -114,32 +120,13 @@ tre
 0
 ```
 
----
+--
 
-La riga di codice:
-
-```
-int errore = NO_ERRORI;
-```
-
-è un'*istruzione*.
-Le istruzioni sono composte da una o più *espressioni*, composte a loro volta da *operatori* e *operandi*.
-Le espressioni possono essere o semplici o composte e producono sempre un valore:
-
-```
-a = 2 
-a + b 
-d = a - b + c 
-a < d
-```
-
-La differenza fra istruzioni ed espressioni è che le istruzioni sono sempre terminate dal carattere `;`:
-
-```
-a = 3; 
-b = a * 3; 
-c = sqrt(b);
-```
+Nessun programma degno di questo nome ha solo la funzione `main`, ma suddivide il suo lavoro in una serie di funzioni che svolgono compiti precisi e ben definiti.
+In un programma ben scritto, le funzioni presentano due caratteristiche, che gli anglosassoni e gli anglofili definiscono: *low coupling* e *high cohesion*.
+Con il termine *accoppiamento* di due funzioni si intende la quantità di informazioni che la funzione *A* deve avere riguardo la funzione *B* per poterla utlizzare.
+L'accoppiamento è come il colesterlolo: più è basso, meglio è.
+L'interfaccia di una funzione, ovvero i parametri con cui viene chiamata, deve essere il più possibile semplice e costante.
 
 
 <!--
