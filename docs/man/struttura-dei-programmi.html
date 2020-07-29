@@ -94,7 +94,7 @@ int main(int argc, char** argv)
 
 <p>Il suo output, come forse avrai intuito, è:</p>
 
-<pre><code>% g++ espressioni-hello-world.cpp -o ../out/esempio
+<pre><code>% g++ struttura-hello-world.cpp -o ../out/esempio
 % ../out/esempio 
 Hello, World!
 </code></pre>
@@ -123,8 +123,13 @@ L’istruzione:</p>
 </code></pre>
 
 <p>scrive la stringa <code>Hello World!</code> sullo <em>stream</em> <code>std::cout</code> (<em>standard character output</em>), che solitamente corrisponde allo schermo del computer.
-L’operatore <code>&lt;&lt;</code>, in questo caso, notifica al sistema di inviare in output quanto si trova alla sua destra e torna una <em>reference</em> a <code>basic_ostream</code> in modo da poter essere ripetuto su una st­essa linea di codice.<br />
-Infine, l’istruzione:</p>
+L’operatore <code>&lt;&lt;</code>, in questo caso, notifica al sistema di inviare in output quanto si trova alla sua destra e torna una <em>reference</em> allo stream di output, in modo da poter essere ripetuto su una st­essa linea di codice, che è una forma più efficiente ed elegante di:</p>
+
+<pre><code>std::cout &lt;&lt; "Hello, World!" ;
+std::cout &lt;&lt; std::endl;
+</code></pre>
+
+<p>Infine, l’istruzione:</p>
 
 <pre><code>return 0;
 </code></pre>
@@ -159,7 +164,7 @@ int main(int argc, char** argv)
 
 <p>Come ti ho detto, il C++ è un linguaggio <em>compilato</em>, quindi il codice, per poter essere eseguito, deve essere elaborato dal complilatore con il comando della <em>shell</em>:</p>
 
-<pre><code>% g++ espressioni-argc-argv.cpp -o src/out/esempio
+<pre><code>% g++ struttura-argc-argv.cpp -o src/out/esempio
 </code></pre>
 
 <p>Il parametro <code>-o</code>permette di specificare il nome del file di output, in questo caso: <code>src/out/esempio</code>.
@@ -188,29 +193,13 @@ tre
 0
 </code></pre>
 
-<hr />
+<p>–</p>
 
-<p>La riga di codice:</p>
-
-<pre><code>int errore = NO_ERRORI;
-</code></pre>
-
-<p>è un’<em>istruzione</em>.
-Le istruzioni sono composte da una o più <em>espressioni</em>, composte a loro volta da <em>operatori</em> e <em>operandi</em>.
-Le espressioni possono essere o semplici o composte e producono sempre un valore:</p>
-
-<pre><code>a = 2 
-a + b 
-d = a - b + c 
-a &lt; d
-</code></pre>
-
-<p>La differenza fra istruzioni ed espressioni è che le istruzioni sono sempre terminate dal carattere <code>;</code>:</p>
-
-<pre><code>a = 3; 
-b = a * 3; 
-c = sqrt(b);
-</code></pre>
+<p>Nessun programma degno di questo nome ha solo la funzione <code>main</code>, ma suddivide il suo lavoro in una serie di funzioni che svolgono compiti precisi e ben definiti.
+In un programma ben scritto, le funzioni presentano due caratteristiche, che gli anglosassoni e gli anglofili definiscono: <em>low coupling</em> e <em>high cohesion</em>.
+Con il termine <em>accoppiamento</em> di due funzioni si intende la quantità di informazioni che la funzione <em>A</em> deve avere riguardo la funzione <em>B</em> per poterla utlizzare.
+L’accoppiamento è come il colesterlolo: più è basso, meglio è.
+L’interfaccia di una funzione, ovvero i parametri con cui viene chiamata, deve essere il più possibile semplice e costante.</p>
 
 <!--
 
