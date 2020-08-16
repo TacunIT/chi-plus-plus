@@ -54,8 +54,8 @@ La seconda linea di codice
 int main(int argc, char** argv)
 ```
 
-dichiara la funzione `main`, specificando che avrà come valore di ritorno un `int` e due parametri: un intero e un puntatore a puntatori a `char`.
-Questi valori servono a gestire i parametri passati da riga di comando: l'intero `argc` (crasi di: *argument count*), specifica il numero di stringhe presenti nella chiamata, mentre il puntatore `argv` (*argument vector*) è un array che contiene tutte le stringhe presenti nella linea di comando, nome del programma compreso.
+definisce la funzione `main`, specificando che avrà come valore di ritorno un `int` e due parametri: un intero e un puntatore a puntatori a `char`.
+Questi valori servono a gestire i parametri passati da riga di comando: l'intero `argc` (crasi di: *argument count*), specifica il numero di parametri presenti nella chiamata, nome del programma compreso, mentre il parametro `argv` (*argument vector*) è un array di puntatori a tutte le stringhe presenti nella linea di comando.
 
 Il corpo della funzione è racchiuso in una coppia di parentesi graffe `{}`.
 L'istruzione:
@@ -120,12 +120,13 @@ tre
 0
 ```
 
---
+---
 
 Nessun programma degno di questo nome ha solo la funzione `main`, ma suddivide il suo lavoro in una serie di funzioni che svolgono compiti precisi e ben definiti.
-In un programma ben scritto, le funzioni presentano due caratteristiche, che gli anglosassoni e gli anglofili definiscono: *low coupling* e *high cohesion*.
+In un programma ben scritto, le funzioni presentano due caratteristiche, che gli anglosassoni e gli anglofili definiscono: *low coupling* e *high cohesion*.  
 Con il termine *accoppiamento* di due funzioni si intende la quantità di informazioni che la funzione *A* deve avere riguardo la funzione *B* per poterla utlizzare.
-L'accoppiamento è come il colesterlolo: più è basso, meglio è.
+L'accoppiamento è come il colesterlolo: più è basso, meglio è, perché 
+
 L'interfaccia di una funzione, ovvero i parametri con cui viene chiamata, deve essere il più possibile semplice e costante.
 
 
@@ -135,7 +136,7 @@ L\'Esistenza potrebbe essere un sistema per smaltire l\'energia
 dell\'Universo (o di quello che ha intorno), così come le perturbazioni
 sono un sistema per smaltire l\'energia dell\'atmosfera?
 
-Utlizzare l'peratore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. Questo approccio si rirova anche nel precetto:
+Utlizzare l'operatore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. Questo approccio si rirova anche nel precetto:
 
     Amiamo ciò che ci ucciderà (se tutto va bene) 
 
