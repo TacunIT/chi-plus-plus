@@ -125,12 +125,81 @@ tre
 Nessun programma degno di questo nome ha solo la funzione `main`, ma suddivide il suo lavoro in una serie di funzioni che svolgono compiti precisi e ben definiti.
 In un programma ben scritto, le funzioni presentano due caratteristiche, che gli anglosassoni e gli anglofili definiscono: *low coupling* e *high cohesion*.  
 Con il termine *accoppiamento* di due funzioni si intende la quantità di informazioni che la funzione *A* deve avere riguardo la funzione *B* per poterla utlizzare.
-L'accoppiamento è come il colesterlolo: più è basso, meglio è, perché 
+Ciascuna funzione si aspetta di ricevere una serie ben definita di parametri: la funzione `raddoppia`, che abbiamo visto prima, si aspetta di ricevere un solo parametro, di tipo `long`:
 
-L'interfaccia di una funzione, ovvero i parametri con cui viene chiamata, deve essere il più possibile semplice e costante.
+```
+long raddoppia(long stipendio)
+{
+    return stipendio * 2;   
+}
+```
+
+mentre un'ipotetica funzione `scorpora` potrebbe richiederne due; l'importo dello stipendio e l'aliquota IVA:
+
+<!-- @todo: completare il corpo della funzione -->
+```
+long scorpora(long lordo, float iva)
+{
+    ...;   
+}
+```
+
+In entrambi questi casi, tutto ciò di cui ha bisogno una terza funzione per richiamare `raddoppia` o `scorpora` è la la loro *interfaccia*, ovvero il numero, il tipo e l'ordine dei parametri da passare.
+Ora immagina che ci sia un'altra funzione, `facciQualcosa` che possa compiere più azioni distinte, in base ai parametri ricevuti:
+
+```
+float facciQualcosa(long stipendio, int azione)
+{
+    float valore = 0;
+
+    /**
+     *  Differenzia l'azione in base al parametro azione
+     */
+    if(azione == 1) {
+        /** raddoppia lo stipendio */
+    } else if(azione == 2) {
+        /** scorpora l'IVA */
+    }
+    
+    return valore;
+}
+```
+
+Per poter utilizzare questa funzione, non solo dobbiamo conoscere la sua interfaccia, ma dobbiamo anche sapere quali azioni corrispondono ai diversi valori del parametro `azione`.
+Questa è follia, *meshuggah*, perché, se un giorno l'autore la modificasse e decidesse che il valore `1` del parametro `azione` causa lo scorporo dell'IVA mentre il valore `2` causa il raddoppio dello stipendio, noi dovremmo modificare anche *tutte* le funzioni che l'hanno chiamata per adattarle alle nuove regole.
+Non solo perderemmo del tempo, ma se dimenticassimo di aggiornare una o più chiamate otterremmo un programma con un funzionamento errato.
+
+Il *coupling* <!-- uso il termine inglese per evitare anfibologie con l'attività sessuale.. --> è come il colesterlolo: più è basso, meglio è; quindi, per evitare errori, dobbiamo ridurlo, creando un `enum` a cui assegnare i possibili valori del parametro `azione`:
+
+<!-- @todo: verificare il codice -->
+```
+enum Azione { raddoppia, scorpora }; 
+
+float facciQualcosa(long stipendio, Azione azione)
+{
+    float valore = 0;
+
+    /**
+     *  Agisce in base all'etichetta, non al valore
+     */
+    if(azione == raddoppia) {
+        /** raddoppia lo stipendio */
+    } else if(azione == scorpora) {
+        /** scorpora l'IVA */
+    }
+    
+    return valore;
+}
+```
+Come spesso avviene, una singola riga di codice ben scritto ci permette di risparmiare tempo e di ottenere del codice più robusto, perché l'effetto del parametro `azione` sarà indipendente dal suo valore numerico:
+
+```
+float valore = facciQualcosa(2500, raddoppia);
+```
 
 
 <!--
+@todo: riprendere la funzioe facciQualcosa e spiegare che oltre ad avere un alto accoppiamento, è anche sbagliata da un punto di vista progettuale, perché compie più azioni distinte, mentre è preferibile che ciascuna funzione sia atomica. 
 
 L\'Esistenza potrebbe essere un sistema per smaltire l\'energia
 dell\'Universo (o di quello che ha intorno), così come le perturbazioni
