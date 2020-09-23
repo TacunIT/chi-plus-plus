@@ -198,25 +198,18 @@ tre
 <p>Nessun programma degno di questo nome ha solo la funzione <code>main</code>, ma suddivide il suo lavoro in una serie di funzioni che svolgono compiti precisi e ben definiti.
 In un programma ben scritto, le funzioni presentano due caratteristiche, che gli anglosassoni e gli anglofili definiscono: <em>low coupling</em> e <em>high cohesion</em>.<br />
 Con il termine <em>accoppiamento</em> di due funzioni si intende la quantità di informazioni che la funzione <em>A</em> deve avere riguardo la funzione <em>B</em> per poterla utlizzare.
-Ciascuna funzione si aspetta di ricevere una serie ben definita di parametri: la funzione <code>raddoppia</code>, che abbiamo visto prima, si aspetta di ricevere un solo parametro, di tipo <code>long</code>:</p>
+Ciascuna funzione si aspetta di ricevere una serie ben definita di parametri: la funzione <code>raddoppiaStipendio</code>, che abbiamo visto prima, si aspetta di ricevere un solo parametro, di tipo <code>long</code>:</p>
 
-<pre><code>long raddoppia(long stipendio)
-{
-    return stipendio * 2;   
-}
+<pre><code>long raddoppiaStipendio(long stipendio);
 </code></pre>
 
-<p>mentre un’ipotetica funzione <code>scorpora</code> potrebbe richiederne due; l’importo dello stipendio e l’aliquota IVA:</p>
+<p>mentre un’ipotetica funzione <code>scorporaIVA</code> potrebbe richiederne due; l’importo dello stipendio e l’aliquota IVA:</p>
 
-<!-- @todo: completare il corpo della funzione -->
-<pre><code>long scorpora(long lordo, float iva)
-{
-    ...;   
-}
+<pre><code>float scorporaIVA(long stipendio, float aliquota);
 </code></pre>
 
-<p>In entrambi questi casi, tutto ciò di cui ha bisogno una terza funzione per richiamare <code>raddoppia</code> o <code>scorpora</code> è la la loro <em>interfaccia</em>, ovvero il numero, il tipo e l’ordine dei parametri da passare.
-Ora immagina che ci sia un’altra funzione, <code>facciQualcosa</code> che possa compiere più azioni distinte, in base ai parametri ricevuti:</p>
+<p>In entrambi questi casi, tutto ciò di cui ha bisogno una terza funzione per richiamare <code>raddoppiaStipendio</code> o <code>scorporaIVA</code> è la la loro <em>interfaccia</em>, ovvero il numero, il tipo e l’ordine dei parametri da passare.
+Ora immagina che un programmatore maldestro abbia scritto la funzione <code>facciQualcosa</code> che può compiere più azioni distinte, in base ai parametri ricevuti:</p>
 
 <pre><code>float facciQualcosa(long stipendio, int azione, float aliquota = 0)
 {
@@ -262,9 +255,7 @@ float facciQualcosa(long stipendio, Azione azione, float aliquota = 0)
 In un programma ben scritto, ciascuna funzione deve avere solo una.. funzione:</p>
 
 <!-- @todo: verificare il codice -->
-<pre><code>enum Azione { raddoppia, scorpora }; 
-
-inline long raddoppiaStipendio(long stipendio)
+<pre><code>inline long raddoppiaStipendio(long stipendio)
 {
     return stipendio * 2;
 }
