@@ -125,27 +125,20 @@ tre
 Nessun programma degno di questo nome ha solo la funzione `main`, ma suddivide il suo lavoro in una serie di funzioni che svolgono compiti precisi e ben definiti.
 In un programma ben scritto, le funzioni presentano due caratteristiche, che gli anglosassoni e gli anglofili definiscono: *low coupling* e *high cohesion*.  
 Con il termine *accoppiamento* di due funzioni si intende la quantità di informazioni che la funzione *A* deve avere riguardo la funzione *B* per poterla utlizzare.
-Ciascuna funzione si aspetta di ricevere una serie ben definita di parametri: la funzione `raddoppia`, che abbiamo visto prima, si aspetta di ricevere un solo parametro, di tipo `long`:
+Ciascuna funzione si aspetta di ricevere una serie ben definita di parametri: la funzione `raddoppiaStipendio`, che abbiamo visto prima, si aspetta di ricevere un solo parametro, di tipo `long`:
 
 ```
-long raddoppia(long stipendio)
-{
-    return stipendio * 2;   
-}
+long raddoppiaStipendio(long stipendio);
 ```
 
-mentre un'ipotetica funzione `scorpora` potrebbe richiederne due; l'importo dello stipendio e l'aliquota IVA:
+mentre un'ipotetica funzione `scorporaIVA` potrebbe richiederne due; l'importo dello stipendio e l'aliquota IVA:
 
-<!-- @todo: completare il corpo della funzione -->
 ```
-long scorpora(long lordo, float iva)
-{
-    ...;   
-}
+float scorporaIVA(long stipendio, float aliquota);
 ```
 
-In entrambi questi casi, tutto ciò di cui ha bisogno una terza funzione per richiamare `raddoppia` o `scorpora` è la la loro *interfaccia*, ovvero il numero, il tipo e l'ordine dei parametri da passare.
-Ora immagina che ci sia un'altra funzione, `facciQualcosa` che possa compiere più azioni distinte, in base ai parametri ricevuti:
+In entrambi questi casi, tutto ciò di cui ha bisogno una terza funzione per richiamare `raddoppiaStipendio` o `scorporaIVA` è la la loro *interfaccia*, ovvero il numero, il tipo e l'ordine dei parametri da passare.
+Ora immagina che un programmatore maldestro abbia scritto la funzione `facciQualcosa` che può compiere più azioni distinte, in base ai parametri ricevuti:
 
 ```
 float facciQualcosa(long stipendio, int azione, float aliquota = 0)
@@ -195,8 +188,6 @@ In un programma ben scritto, ciascuna funzione deve avere solo una.. funzione:
 
 <!-- @todo: verificare il codice -->
 ```
-enum Azione { raddoppia, scorpora }; 
-
 inline long raddoppiaStipendio(long stipendio)
 {
     return stipendio * 2;
