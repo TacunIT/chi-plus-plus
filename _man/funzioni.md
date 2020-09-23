@@ -7,6 +7,9 @@ permalink:  /man/funzioni
 quote:      "Call me: IsNull"
 ---
 
+<a id="inline" 
+   onclick="history.back()" 
+   title="fare click per tornare alla pagina precedente">funzioni inline</a>
 
 <!--
 Funzioni ricorsive

@@ -218,19 +218,15 @@ Ciascuna funzione si aspetta di ricevere una serie ben definita di parametri: la
 <p>In entrambi questi casi, tutto ciò di cui ha bisogno una terza funzione per richiamare <code>raddoppia</code> o <code>scorpora</code> è la la loro <em>interfaccia</em>, ovvero il numero, il tipo e l’ordine dei parametri da passare.
 Ora immagina che ci sia un’altra funzione, <code>facciQualcosa</code> che possa compiere più azioni distinte, in base ai parametri ricevuti:</p>
 
-<pre><code>float facciQualcosa(long stipendio, int azione)
+<pre><code>float facciQualcosa(long stipendio, int azione, float aliquota = 0)
 {
     float valore = 0;
-
-    /**
-     *  Differenzia l'azione in base al parametro azione
-     */
+    /** Differenzia l'azione in base al valore di azione */
     if(azione == 1) {
-        /** raddoppia lo stipendio */
+        valore = stipendio * 2;
     } else if(azione == 2) {
-        /** scorpora l'IVA */
+        valore = stipendio / ((100 + aliquota) / 100);
     }
-    
     return valore;
 }
 </code></pre>
@@ -241,32 +237,49 @@ Non solo perderemmo del tempo, ma se dimenticassimo di aggiornare una o più chi
 
 <p>Il <em>coupling</em> <!-- uso il termine inglese per evitare anfibologie con l'attività sessuale.. --> è come il colesterlolo: più è basso, meglio è; quindi, per evitare errori, dobbiamo ridurlo, creando un <code>enum</code> a cui assegnare i possibili valori del parametro <code>azione</code>:</p>
 
+<pre><code>enum Azione { raddoppia, scorpora }; 
+</code></pre>
+
+<p>Come spesso avviene, una singola riga di codice ben scritto ci permette di risparmiare tempo e di ottenere del codice più robusto, perché l’effetto del parametro <code>azione</code>, in questo modo, sarà del tutto indipendente dal suo valore numerico:</p>
+
 <!-- @todo: verificare il codice -->
 <pre><code>enum Azione { raddoppia, scorpora }; 
 
-float facciQualcosa(long stipendio, Azione azione)
+float facciQualcosa(long stipendio, Azione azione, float aliquota = 0)
 {
     float valore = 0;
-
-    /**
-     *  Agisce in base all'etichetta, non al valore
-     */
+    /** Agisce in base all'etichetta, non al valore */
     if(azione == raddoppia) {
-        /** raddoppia lo stipendio */
+        valore = stipendio * 2;
     } else if(azione == scorpora) {
-        /** scorpora l'IVA */
-    }
-    
+        valore = stipendio / ((100 + aliquota) / 100);
+    }    
     return valore;
 }
 </code></pre>
-<p>Come spesso avviene, una singola riga di codice ben scritto ci permette di risparmiare tempo e di ottenere del codice più robusto, perché l’effetto del parametro <code>azione</code> sarà indipendente dal suo valore numerico:</p>
 
-<pre><code>float valore = facciQualcosa(2500, raddoppia);
+<p>La funzione <code>facciQualcosa</code> ha anche un altro difetto progettuale, oltre all’alto accoppiamento: manca di coesione interna.
+In un programma ben scritto, ciascuna funzione deve avere solo una.. funzione:</p>
+
+<!-- @todo: verificare il codice -->
+<pre><code>enum Azione { raddoppia, scorpora }; 
+
+inline long raddoppiaStipendio(long stipendio)
+{
+    return stipendio * 2;
+}
+
+inline float scorporaIVA(long stipendio, float aliquota)
+{
+    return (stipendio / ((100 + aliquota) / 100);
+}
 </code></pre>
 
+<p>Anche in un esempio così semplice, vedi bene che differenza ci sia, fra una funzione che può svolgere più azioni eterogenee e una funzione che svolge una singola azione, ben precisa.
+Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di dichiararla come <a href="/man/funzioni#inline"><code>inline</code></a>, aumentando la velocità di esecuzuione del programma.</p>
+
 <!--
-@todo: riprendere la funzioe facciQualcosa e spiegare che oltre ad avere un alto accoppiamento, è anche sbagliata da un punto di vista progettuale, perché compie più azioni distinte, mentre è preferibile che ciascuna funzione sia atomica. 
+
 
 L\'Esistenza potrebbe essere un sistema per smaltire l\'energia
 dell\'Universo (o di quello che ha intorno), così come le perturbazioni
