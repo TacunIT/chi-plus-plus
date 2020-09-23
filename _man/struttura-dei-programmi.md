@@ -148,19 +148,15 @@ In entrambi questi casi, tutto ciò di cui ha bisogno una terza funzione per ric
 Ora immagina che ci sia un'altra funzione, `facciQualcosa` che possa compiere più azioni distinte, in base ai parametri ricevuti:
 
 ```
-float facciQualcosa(long stipendio, int azione)
+float facciQualcosa(long stipendio, int azione, float aliquota = 0)
 {
     float valore = 0;
-
-    /**
-     *  Differenzia l'azione in base al parametro azione
-     */
+    /** Differenzia l'azione in base al valore di azione */
     if(azione == 1) {
-        /** raddoppia lo stipendio */
+        valore = stipendio * 2;
     } else if(azione == 2) {
-        /** scorpora l'IVA */
+        valore = stipendio / ((100 + aliquota) / 100);
     }
-    
     return valore;
 }
 ```
@@ -171,35 +167,52 @@ Non solo perderemmo del tempo, ma se dimenticassimo di aggiornare una o più chi
 
 Il *coupling* <!-- uso il termine inglese per evitare anfibologie con l'attività sessuale.. --> è come il colesterlolo: più è basso, meglio è; quindi, per evitare errori, dobbiamo ridurlo, creando un `enum` a cui assegnare i possibili valori del parametro `azione`:
 
+```
+enum Azione { raddoppia, scorpora }; 
+```
+
+Come spesso avviene, una singola riga di codice ben scritto ci permette di risparmiare tempo e di ottenere del codice più robusto, perché l'effetto del parametro `azione`, in questo modo, sarà del tutto indipendente dal suo valore numerico:
+
 <!-- @todo: verificare il codice -->
 ```
 enum Azione { raddoppia, scorpora }; 
 
-float facciQualcosa(long stipendio, Azione azione)
+float facciQualcosa(long stipendio, Azione azione, float aliquota = 0)
 {
     float valore = 0;
-
-    /**
-     *  Agisce in base all'etichetta, non al valore
-     */
+    /** Agisce in base all'etichetta, non al valore */
     if(azione == raddoppia) {
-        /** raddoppia lo stipendio */
+        valore = stipendio * 2;
     } else if(azione == scorpora) {
-        /** scorpora l'IVA */
-    }
-    
+        valore = stipendio / ((100 + aliquota) / 100);
+    }    
     return valore;
 }
 ```
-Come spesso avviene, una singola riga di codice ben scritto ci permette di risparmiare tempo e di ottenere del codice più robusto, perché l'effetto del parametro `azione` sarà indipendente dal suo valore numerico:
 
+La funzione `facciQualcosa` ha anche un altro difetto progettuale, oltre all'alto accoppiamento: manca di coesione interna.
+In un programma ben scritto, ciascuna funzione deve avere solo una.. funzione:
+
+<!-- @todo: verificare il codice -->
 ```
-float valore = facciQualcosa(2500, raddoppia);
+enum Azione { raddoppia, scorpora }; 
+
+inline long raddoppiaStipendio(long stipendio)
+{
+    return stipendio * 2;
+}
+
+inline float scorporaIVA(long stipendio, float aliquota)
+{
+    return (stipendio / ((100 + aliquota) / 100);
+}
 ```
 
+Anche in un esempio così semplice, vedi bene che differenza ci sia, fra una funzione che può svolgere più azioni eterogenee e una funzione che svolge una singola azione, ben precisa.
+Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di dichiararla come [`inline`](/man/funzioni#inline), aumentando la velocità di esecuzuione del programma.
 
 <!--
-@todo: riprendere la funzioe facciQualcosa e spiegare che oltre ad avere un alto accoppiamento, è anche sbagliata da un punto di vista progettuale, perché compie più azioni distinte, mentre è preferibile che ciascuna funzione sia atomica. 
+
 
 L\'Esistenza potrebbe essere un sistema per smaltire l\'energia
 dell\'Universo (o di quello che ha intorno), così come le perturbazioni
