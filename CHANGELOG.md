@@ -1,4 +1,13 @@
+## 0.13.2 (September 23, 2020)
+  - Paragrafo sulla coesione interna
+  - Completata prima stesura paragrafo su accoppiamento
+  - Corretto errore nella URL del sito
+
 ## 0.13.1 (July 19, 2020)
+- Correzioni minori al testo
+- Modificato il nome dei file sorgenti per capitolo struttura programmi
+- Corretto doppio apice nelle intestazioni della pagina
+- Aggiuto A per Pound
 
 
 ## 0.13.0 (July 12, 2020)
