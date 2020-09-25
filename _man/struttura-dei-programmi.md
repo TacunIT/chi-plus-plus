@@ -202,6 +202,19 @@ inline float scorporaIVA(long stipendio, float aliquota)
 Anche in un esempio così semplice, vedi bene che differenza ci sia, fra una funzione che può svolgere più azioni eterogenee e una funzione che svolge una singola azione, ben precisa.
 Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di dichiararla come [`inline`](/man/funzioni#inline), aumentando la velocità di esecuzuione del programma.
 
+---
+
+La funzione `main`del C'hi++ è il *Big Bang*.
+Così come l'atmosfera è agitata dallo scontro di masse di aria calda e fredda, l'Energia dell'Universo è costantemente sottoposta all'azione contrapposta di due forze: la Gravità, che tende ad accorpare tutta la materia nell'Uno primgenio e l'Entropia, che al contrario, tende a dividere.
+<!-- @todo: trovare un modo di dare credito a Poe per l'idea orginale -->
+La vita dell'Universo è ciclica: quando è preponderante l'Entropia, l'Universo si espande, come in questo momento; quando "vince" la Gravità, l'Universo collassa su sé stesso e torna all'Uno.
+Ciò che evita la stasi in uno dei due punti estremi del ciclo è una terza forza, che il Maestro Canaro chiamava: [*l'annosa dicotomia fra ciò che desideriamo è ciò di cui abbiamo bisogno*](/man/mitopoietica#annosa-dicotomia).
+
+Nell'Uno primigenio è concentrata tutta l'Energia dell'Universo e quindi ogni esistenza potenziale, dalla nebulosa di <em>Wolf–Rayet</em> alla tua maestra delle Elementari.
+La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo.
+
+ 
+
 <!--
 
 

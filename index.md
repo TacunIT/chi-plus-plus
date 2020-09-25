@@ -40,7 +40,7 @@ Questa è la prima versione del programma Photoshop, nel 1990:
 <p class="immagine"><img src="assets/img/photoshop-v1.jpg"></p>
 e questo è Photoshop oggi, trent'anni dopo:
 <p class="immagine"><img src="assets/img/photoshop-2020.png"></p>
-Così come i modelli matematici usati per la meteorologia non rendono tutta la complessità dei movimenti delle masse d'aria dell'atmosfera, ma forniscono comunque delle previsioni attendibili, così il C'hi++ non fornisce una descrizione completa e accurata di ciò che è, è stato e sarà, ma può fornire una risposta non fideistica o dogmatica ad alcune domande riguardanti la nostra vita.
+Così come i modelli matematici usati per la meteorologia non rendono tutta la complessità dei movimenti delle masse d'aria dell'atmosfera, ma forniscono comunque delle previsioni attendibili, così il C'hi++ non fornisce una descrizione completa e accurata di ciò che è, è stato e sarà, ma può fornire una risposta non dogmatica ad alcune domande riguardanti la nostra vita.
 
 ---
 
