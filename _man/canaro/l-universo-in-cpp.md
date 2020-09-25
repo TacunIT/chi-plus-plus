@@ -477,11 +477,7 @@ piedi: mi ha confessato di essere stato proprio lui a infondere simili
 pensieri nella mente dei suoi detrattori nella speranza, frustrata, che
 la gente si trovasse qualcun' altro da bestemmiare.
 <br />
-Una volta di più, mi trovo a dover fronteggiare l'annosa dicotomia fra
-ciò che il cliente desidera e quello di cui realmente ha bisogno e, una
-volta di più, sarà ingrato compito dell'uomo informatico quello di
-venire apparentemente meno ai propri doveri al fine di produrre qualcosa
-di consono alle reali esigenze del committente.
+Una volta di più, mi trovo a dover fronteggiare l'<a id="annosa-dicotomia">annosa dicotomia fra ciò che il cliente desidera e quello di cui realmente ha bisogno</a> e, una volta di più, sarà ingrato compito dell'uomo informatico quello di venire apparentemente meno ai propri doveri al fine di produrre qualcosa di consono alle reali esigenze del committente.
 
 <h3>Fax del Cliente (19 Maggio)</h3>
 
