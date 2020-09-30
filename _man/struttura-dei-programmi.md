@@ -205,7 +205,6 @@ Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di di
 ---
 
 La funzione `main`del C'hi++ è quello che gli scienziati chiamano: *Big Bang*.  
-
 Così come una scatola di mattoncini Lego contiene tutti gli edifici che hai costruito e che costruirai in futuro, nell'Uno primigenio è concentrata tutta l'Energia dell'Universo e quindi ogni essere animato o inanimato che sia mai esistito o che mai esisterà, dalla nebulosa di <em>Wolf–Rayet</em> alla tua maestra delle Elementari.
 La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo, che non può essere misurato perché non esistono eventi in base a cui farlo.
 Non ci sono né morte, né sofferenza, né malattia, né separazione; l'Uno è, di fatto, ciò che la maggior parte degli esseri senzienti descrive e auspica come un Universo perfetto, un Paradiso.  
