@@ -211,8 +211,8 @@ La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo, 
 Non ci sono né morte, né sofferenza, né malattia, né separazione; l'Uno è, di fatto, ciò che la maggior parte degli esseri senzienti descrive e auspica come un Universo perfetto, un Paradiso.  
 L'Energia, inizialmente, è soddisfatta, ma a poco a poco l'appagamento per la raggiunta Unità scema e cresce invece il desiderio di qualcosa di diverso da quella cristallina perfezione.
 Così come di un vecchio amore si ricoda solo ciò che ci fa piacere ricordare, obliando ciò che non andava, l'Energia ripensa a quando l'Universo non era buio e vuoto, ma risplendeva della luce di innumerevoli stelle e si chiede se, in fondo, non sia quella, l'esistenza a cui ambisce, se non sia quello, in effetti, il Paradiso.
-Ha una chiara memoria degli errori e dei dolori delle passate esistenze (è stata lei, incarnata negli spazioni ad averli commessi), ma, come uno scacchista che debba giocare nuovamente una determinata apertura, pensa che stavolta andrà meglio, che non ripeterà gli sbagli fatti in precedenza.
-È il desiderio di un riscatto che genera il *Big Bang*.   
+Ha una chiara memoria degli errori e dei dolori delle passate esistenze (è stata lei, incarnata negli spazioni ad averli commessi), ma, come uno scacchista che debba giocare nuovamente una determinata apertura, pensa che stavolta andrà meglio, che non ripeterà gli sbagli fatti in precedenza.  
+È il desiderio di un riscatto che genera il *Big Bang*.
 L'Energia disintegra l'enorme buco nero in cui si era rannicchiata e si espande di nuovo nell'Universo, dando massa agli spazioni e generando la materia.
 L'Era della Gravità finisce e comincia una nuova Era dell'Entropia.
 
