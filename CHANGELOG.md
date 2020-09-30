@@ -1,3 +1,7 @@
+## 0.13.3 (September 30, 2020)
+  - Iniziato paragrafo su Big Bang
+  - Corretto errore nel codice
+
 ## 0.13.2 (September 23, 2020)
   - Paragrafo sulla coesione interna
   - Completata prima stesura paragrafo su accoppiamento
