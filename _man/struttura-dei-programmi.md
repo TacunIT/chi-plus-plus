@@ -204,14 +204,25 @@ Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di di
 
 ---
 
-La funzione `main`del C'hi++ è il *Big Bang*.
-Così come l'atmosfera è agitata dallo scontro di masse di aria calda e fredda, l'Energia dell'Universo è costantemente sottoposta all'azione contrapposta di due forze: la Gravità, che tende ad accorpare tutta la materia nell'Uno primgenio e l'Entropia, che al contrario, tende a dividere.
+La funzione `main`del C'hi++ è il *Big Bang*.  
+Così come una scatola di mattoncini Lego contiene tutti gli edifici che hai costruito e che costruirai in futuro, nell'Uno primigenio è concentrata tutta l'Energia dell'Universo e quindi ogni essere animato o inanimato che sia mai esistita o che mai esisterà, dalla nebulosa di <em>Wolf–Rayet</em> alla tua maestra delle Elementari.
+La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo, che non può essere misurato perché non esistono eventi in base a cui farlo.
+Non ci sono né morte, né sofferenza, né malattia, né separazione.
+L'Uno è, di fatto, ciò che la maggior parte delle persone descrive e auspica come un Universo perfetto, un Paradiso
+Non c'è alcun motivo per cui le cose cambino.
+A un certo punto, però - attimi o forse eoni, chi può dirlo? - qualcosa cambia e l'Energia comincia a desiderare qualcosa di diverso da ciò che ha, faticosamente, ottenuto.
+Così come di un vecchio amore ricodi solo ciò che ti fa piacere ricordare, obliando ciò che non andava, l'Energia ripensa a quando l'Universo non era buio e vuoto, ma risplendeva della luce di innumerevoli stelle e si chiede se, in fondo, non sia quella, l'esistenza a cui ambisce, se non sia quello, in effetti, il Paradiso.
+Ha memoria degli errori e dei dolori delle passate esistenze, ma, come uno scacchista che debba giocare nuovamente una determinata apertura, pensa che stavolta andrà meglio, che non ripeterà gli errori fatti in precedenza.
+Il desiderio di un riscatto genera il Big Bang.
+L'Energia si espande attravero gli spazioni e genera nuovamente la materia.
+L'Era della Gravità finisce e comincia una nuova Era dell'Entropia.
+
+Così come l'atmosfera è agitata dallo scontro di masse di aria calda e fredda, l'Energia dell'Universo è costantemente sottoposta all'azione contrapposta di due forze: *Gravità*, che tende ad accorpare tutta la materia nell'Uno primgenio ed *Entropia*, che al contrario, tende a dividere.
 <!-- @todo: trovare un modo di dare credito a Poe per l'idea orginale -->
 La vita dell'Universo è ciclica: quando è preponderante l'Entropia, l'Universo si espande, come in questo momento; quando "vince" la Gravità, l'Universo collassa su sé stesso e torna all'Uno.
 Ciò che evita la stasi in uno dei due punti estremi del ciclo è una terza forza, che il Maestro Canaro chiamava: [*l'annosa dicotomia fra ciò che desideriamo è ciò di cui abbiamo bisogno*](/man/mitopoietica#annosa-dicotomia).
 
-Nell'Uno primigenio è concentrata tutta l'Energia dell'Universo e quindi ogni esistenza potenziale, dalla nebulosa di <em>Wolf–Rayet</em> alla tua maestra delle Elementari.
-La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo.
+L'Annosa Dicotomia, così come la gravità, del resto, si applica tanto all'Energia primor
 
  
 
