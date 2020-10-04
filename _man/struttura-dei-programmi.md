@@ -204,22 +204,23 @@ Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di di
 
 ---
 
-La funzione `main`del C'hi++ è quello che gli scienziati chiamano: *Big Bang*.  
+La funzione `main`del C'hi++ è quello che gli scienziati chiamano: *Big Bang*.   
+Così come l'atmosfera è agitata dallo scontro di masse di aria calda e fredda, l'Energia dell'Universo è costantemente sottoposta all'azione contrapposta di due forze: *Gravità*, che tende ad accorpare tutta la materia nell'Uno primgenio ed *Entropia*, che al contrario, tende a dividere.
+Poe lo aveva capito. In: *Eureka*, usa il termine *Elettricità* invece di: *Entropia*, ma la contrapposizione che descrive è corretta.  
+Ciò che non è corretto (e non solo in Poe) è l'idea che l'espansione dell'Universo sia un evento unico.
+La vita dell'Universo è ciclica: quando è preponderante l'Entropia, l'Universo si espande, come in questo momento; quando "vince" la Gravità, l'Universo collassa su sé stesso e torna all'Uno.
+Ciò che evita la stasi in uno dei due punti estremi del ciclo &mdash; l'Uno e la morte termica &mdash; è una terza forza, che il Maestro Canaro chiamava: [*l'annosa dicotomia fra ciò che desideriamo è ciò di cui abbiamo bisogno*](/man/mitopoietica#annosa-dicotomia). 
+
 Così come una scatola di mattoncini Lego contiene tutti gli edifici che hai costruito e che costruirai in futuro, nell'Uno primigenio è concentrata tutta l'Energia dell'Universo e quindi ogni essere animato o inanimato che sia mai esistito o che mai esisterà, dalla nebulosa di <em>Wolf–Rayet</em> alla tua maestra delle Elementari.
 La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo, che non può essere misurato perché non esistono eventi in base a cui farlo.
 Non ci sono né morte, né sofferenza, né malattia, né separazione; l'Uno è, di fatto, ciò che la maggior parte degli esseri senzienti descrive e auspica come un Universo perfetto, un Paradiso.  
 L'Energia, inizialmente, è soddisfatta, ma a poco a poco l'appagamento per la raggiunta Unità scema e cresce invece il desiderio di qualcosa di diverso da quella cristallina perfezione.
-Così come di un vecchio amore si ricoda solo ciò che ci fa piacere ricordare, obliando ciò che non andava, l'Energia ripensa a quando l'Universo non era buio e vuoto, ma risplendeva della luce di innumerevoli stelle e si chiede se, in fondo, non sia quella, l'esistenza a cui ambisce, se non sia quello, in effetti, il Paradiso.
-Ha una chiara memoria degli errori e dei dolori delle passate esistenze (è stata lei, incarnata negli spazioni ad averli commessi), ma, come uno scacchista che debba giocare nuovamente una determinata apertura, pensa che stavolta andrà meglio, che non ripeterà gli sbagli fatti in precedenza.  
-È il desiderio di un riscatto che genera il *Big Bang*.
+Così come di un vecchio amore si ricoda solo ciò che ci fa piacere ricordare, obliando ciò che non andava, l'Energia ripensa a quando l'Universo non era buio e vuoto, ma risplendeva della luce di innumerevoli stelle e si chiede se, in fondo, non sia quella, l'esistenza a cui ambisce, se non sia quello, in effetti, il Paradiso.  
+Ha una chiara memoria degli errori e dei dolori delle passate esistenze (è stata lei, incarnata negli spazioni ad averli commessi), ma, come uno scacchista che debba giocare nuovamente una determinata apertura, pensa che stavolta andrà meglio, che non ripeterà gli sbagli fatti in precedenza e questo desiderio di un riscatto genera il *Big Bang*.
 L'Energia disintegra l'enorme buco nero in cui si era rannicchiata e si espande di nuovo nell'Universo, dando massa agli spazioni e generando la materia.
 L'Era della Gravità finisce e comincia una nuova Era dell'Entropia.
 
-Così come l'atmosfera è agitata dallo scontro di masse di aria calda e fredda, l'Energia dell'Universo è costantemente sottoposta all'azione contrapposta di due forze: *Gravità*, che tende ad accorpare tutta la materia nell'Uno primgenio ed *Entropia*, che al contrario, tende a dividere.
-Poe lo aveva capito. In: *Eureka*, usa il termine *Elettricità* invece di: *Entropia*, ma la contrapposizione che descrive è corretta.
-Ciò che non è corretto (e non solo in Poe) è l'idea che l'espansione dell'Universo sia un evento unico.
-La vita dell'Universo è ciclica: quando è preponderante l'Entropia, l'Universo si espande, come in questo momento; quando "vince" la Gravità, l'Universo collassa su sé stesso e torna all'Uno.
-Ciò che evita la stasi in uno dei due punti estremi del ciclo - l'Uno e la morte termica - è una terza forza, che il Maestro Canaro chiamava: [*l'annosa dicotomia fra ciò che desideriamo è ciò di cui abbiamo bisogno*](/man/mitopoietica#annosa-dicotomia).
+
 
 <!--
 L'Annosa Dicotomia, così come la gravità, del resto, si applica tanto all'Energia primor
