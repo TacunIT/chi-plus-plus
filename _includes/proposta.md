@@ -781,12 +781,8 @@ Tu hai diritto all'azione, non ai suoi frutti; non sia mai perciò il frutto del
 sulla natura dell'Universo:
 
 <div class="citazione">
-Alla fine del proprio ciclo d'esistenza, un mondo collassa su se stesso, riassorbendo in una massa tenebrosa ogni forma di manifestazione: esseri viventi e oggetti inanimati giacciono allo stato latente in una condizione caotica. 
-In seguito, dopo la vittoria dei deva sugli asura, i sovrani del caos residuale, ogni potenzialità esce dallo stato virtuale precedente per manifestare nel nuovo mondo le proprie caratteristiche e per ricoprire qui il ruolo che gli compete, in conformità al Dharma ripristinato.
-<br />
-I cicli cosmici sono periodi temporali chiamati Manvantara, suddivisi al proprio interno in quattro ere o *yuga*, ciascuna caratterizzata da una particolare qualità dell’esistenza. Si tratta di un ritorno periodico a condizioni di vita non uguali ma analoghe, da un punto di vista qualitativo, a quelle dei cicli precedenti, una successione di quattro ere che ricorda, su scala ridotta, l’alternarsi delle quattro stagioni.
-<br />
-Il Sāṁkhya, la dottrina su cui si fonda lo Yoga, parla di due princip&icirc; che, interagendo tra loro, manifestano l’intero universo con tutti gli esseri viventi e gli oggetti inanimati che lo popolano: Prakṛti, il polo materiale e femminile, e Puruṣa, quello spirituale e maschile; nell’essere umano Prakṛti costituisce il corpo e la mente, che diventano la dimora dell’anima individuale (puruṣa).
+<!-- @todo: capire perché le parole con caratteri UTF si visualizzano correttamente se si inserisce un valore sballato come font-family per DIV.citazione -->
+{% include  bhagavad-gita.html %}
 </div>
 
 su quelli che io ho definito i *Post-It*:

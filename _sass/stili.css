@@ -105,6 +105,7 @@ CODE, PRE {
 EM, I {
     color: $colorGold;
     font-size: inherit;
+    font-family: initial;
 }
 P {
     -webkit-hyphens: auto;
