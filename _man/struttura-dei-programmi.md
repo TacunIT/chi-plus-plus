@@ -224,12 +224,18 @@ L'Era della Gravità finisce e comincia una nuova Era dell'Entropia; qualcosa di
 {% include  bhagavad-gita.html %}
 </div>
 
-Anche la Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista: il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono ciò che ne causa la disgregazione, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte.
+Anche la Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista (o viceversa): il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono ciò che ne causa la disgregazione, generando un Universo imperfetto e doloroso, aiutati dal *διάβολος*, ovvero da colui che *separa* o *scaglia attraverso*, altrimenti noto come: *Luci-fero*.  
+In ottica spazionista, la domanda: 
 
+> Perché, se Dio è buono, nell'Universo che ha creato esistono il male e il dolore?
+    
+non ha senso, perché non è Dio ad aver creato l'Universo, ma il Diavolo, così come sostenevano i Barbelognostici.
 
-<br />
 
 <!--
+Spiegare perché Dio non può eliminare il Diavolo - v. Saccone, Iblīs, il Satana del Terzo Testamento 
+
+
 L'Annosa Dicotomia, così come la gravità, del resto, si applica tanto all'Energia primor
 
  
