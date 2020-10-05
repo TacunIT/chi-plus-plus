@@ -1,3 +1,8 @@
+## 0.13.5 (October 05, 2020)
+  - Correzioni minori al testo
+  - Aggiunto anchor 'dottrina'
+  - Rimosso header 'redazione' dal capiotlo sulla struttura dei programmi
+
 ## 0.13.4 (October 05, 2020)
   - Completata prima bozza del capitolo
   - Isolato testo Bhagavad Gita e aggiunto a capitolo su struttura programmi
