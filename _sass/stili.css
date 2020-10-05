@@ -105,6 +105,7 @@ CODE, PRE {
 EM, I {
     color: $colorGold;
     font-size: inherit;
+    font-family: initial;
 }
 P {
     -webkit-hyphens: auto;
@@ -643,6 +644,7 @@ OL.da-fare {
 DIV.citazione {
     color: $blockquoteColor;
     font-style: italic;
+    font-family: initial;
     padding:1rem;
     text-align:justify;
     max-width: 100%;
