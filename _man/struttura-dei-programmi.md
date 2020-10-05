@@ -203,8 +203,9 @@ Anche in un esempio così semplice, vedi bene che differenza ci sia, fra una fun
 Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di dichiararla come [`inline`](/man/funzioni#inline), aumentando la velocità di esecuzuione del programma.
 
 ---
+<a id="dottrina"></a>
 
-La funzione `main`del C'hi++ è quello che gli scienziati chiamano: *Big Bang*.   
+La funzione `main` del C'hi++ è quello che gli scienziati chiamano: *Big Bang*.
 Così come l'atmosfera è agitata dallo scontro di masse di aria calda e fredda, l'Energia dell'Universo è costantemente sottoposta all'azione contrapposta di due forze: *Gravità*, che tende ad accorpare tutta la materia nell'Uno primgenio ed *Entropia*, che al contrario, tende a dividere.
 Poe lo aveva capito. In: *Eureka*, usa il termine *Elettricità* invece di: *Entropia*, ma la contrapposizione che descrive è corretta.  
 Ciò che non è corretto (e non solo in Poe) è l'idea che l'espansione dell'Universo sia un evento unico.
