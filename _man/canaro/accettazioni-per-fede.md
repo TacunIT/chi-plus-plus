@@ -1,0 +1,3 @@
+Una volta, un discepolo chiese al Maestro Canaro come fosse possibile che l'Energia dell'universo avesse dei sentimenti o delle aspirazioni e se questa auto-coscienza non contrastava con l'idea che il C'hi++ sia una metafisica priva di elementi metafisici. 
+Il Maestro Canaro rispose:  ”Hai ragione. A me piace credere che sia così perché sono un vecchio sentimentale, ma tu, se vuoi, puoi pensare che sia solo un artificio retorico, perché la cosmogonia Spazionisma funziona anche senza. 
+L'unica cosa in cui dovete credere, anche in assenza di prove, è che l'Universo alterni fasi di espansione a fasi di contrazione.
