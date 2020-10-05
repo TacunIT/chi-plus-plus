@@ -229,7 +229,13 @@ In ottica spazionista, la domanda:
 
 > Perché, se Dio è buono, nell'Universo che ha creato esistono il male e il dolore?
     
-non ha senso, perché non è Dio ad aver creato l'Universo, ma il Diavolo, così come sostenevano i Barbelognostici.
+non ha senso, perché non è Dio ad aver creato l'Universo, ma il Diavolo, così come sostenevano i Barbelognostici. 
+<!-- @todo - rivedere Cosmogonie gnostiche -->
+
+---
+
+{% include_relative canaro/accettazioni-per-fede.md %}
+
 
 
 <!--
