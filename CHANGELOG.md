@@ -1,3 +1,9 @@
+## 0.13.4 (October 05, 2020)
+  - Completata prima bozza del capitolo
+  - Isolato testo Bhagavad Gita e aggiunto a capitolo su struttura programmi
+  - Corretto errore font nella Proposta
+  - Correzioni minori ai testi
+
 ## 0.13.3 (September 30, 2020)
   - Iniziato paragrafo su Big Bang
   - Corretto errore nel codice

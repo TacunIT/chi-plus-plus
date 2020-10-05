@@ -35,4 +35,4 @@ int main(int argc, char * argv[])
 ***********************************************************/
 ```
 
-Gli allievi studiarono il codice e diedero le loro risposte, ma sbagliarono tutti, perché tutte le istruzioni erano comprese fra un `/*` e un `*/` e non erano compilate.
+Gli allievi studiarono il codice e diedero le loro risposte, ma sbagliarono tutti, perché tutte le istruzioni erano comprese fra un `/*` e un `*/` e non venivano compilate.

@@ -440,10 +440,8 @@ Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Uni
 </div>
 
 ### Il senso della vita è il debug
-Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*<a href="#beta-tester" class="nota" name="fn-9">9</a>
-di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali &mdash; come il *Koan Mu* o il motivo per cui Nansen taglia in due il gatto<a href="#mumon" class="nota" name="fn-10">10</a> &mdash; ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.
-Infatti, se paragoniamo l'esistenza a una sessione di test del software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori<a href="#vasana" class="nota" name="fn-11">11</a>
-perché venga corretto nelle successive versioni del programma.
+Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*<a href="#beta-tester" class="nota" name="fn-9">9</a> di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali &mdash; come il *Koan Mu* o il motivo per cui Nansen taglia in due il gatto<a href="#mumon" class="nota" name="fn-10">10</a> &mdash; ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.
+Infatti, se paragoniamo l'esistenza a una sessione di test del software, pentirsi equivale a identificare un bug del sistema e a segnalarlo agli sviluppatori<a href="#vasana" class="nota" name="fn-11">11</a> perché venga corretto nelle successive versioni del programma.
 Visto che, nel nostro caso, *beta-tester*, sviluppatore e programma sono tutti la stessa cosa, ciò che avverrà è che il peccatore/*beta-tester*, nella successiva esistenza eviterà di ripetere l'errore commesso, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente, e darà il via a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.
 In quest'ottica, la frase:
 
@@ -592,7 +590,7 @@ Infatti gli esseri fioriscono e (poi) ognuno torna alla propria radice. Tornare 
 È una piccola parte del linguaggio, ma una miniera di possibili parallelismi specie sulla relatività dei concetti di *vero* e *falso*:
 
 <div class="citazione">
-il concetto stesso di Vertià è inconoscibile perché, per essere definito, deve prima essere valutato e non è possibile valutarlo se non si sa cosa sia “vero”.
+il concetto stesso di Verità è inconoscibile perché, per essere definito, deve prima essere valutato e non è possibile valutarlo se non si sa cosa sia “vero”.
 <br />
 Russell sostiene che la condizione di “vero” o di “falso” è uno stato dell'organismo, determinato da condizioni esterne all'organismo.
 Questo è vero anche per i computer: “vero” e “falso” sono stati possibili per un'istruzione e dipendono per lo più da cause esterne all'istruzione stessa.
@@ -783,35 +781,15 @@ Tu hai diritto all'azione, non ai suoi frutti; non sia mai perciò il frutto del
 sulla natura dell'Universo:
 
 <div class="citazione">
-Alla fine del proprio ciclo d'esistenza, un mondo collassa su se stesso,
-riassorbendo in una massa tenebrosa ogni forma di manifestazione: esseri
-viventi e oggetti inanimati giacciono allo stato latente in una
-condizione caotica. In seguito, dopo la vittoria dei deva sugli asura, i
-sovrani del caos residuale, ogni potenzialità esce dallo stato virtuale
-precedente per manifestare nel nuovo mondo le proprie caratteristiche e
-per ricoprire qui il ruolo che gli compete, in conformità al dharma
-ripristinato.
-<br />
-I cicli cosmici sono periodi temporali chiamati Manvantara, suddivisi al proprio interno in quattro ere o *yuga*, ciascuna caratterizzata da una particolare qualità dell’esistenza. Si tratta di un ritorno periodico a condizioni di vita non uguali ma analoghe, da un punto di vista qualitativo, a quelle dei cicli precedenti, una successione di quattro ere che ricorda, su scala ridotta, l’alternarsi delle quattro stagioni.
-<br />
-Il Sāṁkhya, la dottrina su cui si fonda lo Yoga, parla di due princip&icirc; che, interagendo tra loro, manifestano l’intero universo con tutti gli esseri viventi e gli oggetti inanimati che lo popolano: Prakṛti, il polo materiale e femminile, e Puruṣa, quello spirituale e maschile; nell’essere umano Prakṛti costituisce il corpo e la mente, che diventano la dimora dell’anima individuale (puruṣa).
+<!-- @todo: capire perché le parole con caratteri UTF si visualizzano correttamente se si inserisce un valore sballato come font-family per DIV.citazione -->
+{% include  bhagavad-gita.html %}
 </div>
 
 su quelli che io ho definito i *Post-It*:
 
 <div class="citazione">
-Ci sono due categorie di saṁskāra; la prima consiste nelle vāsanā, che
-sono impressioni lasciate nella mente dagli avvenimenti passati, tracce
-qui conservate allo stato latente ma pronte a manifestarsi in presenza
-delle condizioni adatte, cioè di situazioni analoghe a quelle che le
-hanno generate, e che le attiverebbero a causa della loro affinità.
-Sulla spinta delle vāsanā, una volta che siano attivate, e degli stati
-d'animo che queste manifestano, l'individuo presenta una tendenza
-inconscia ad agire in un determinato modo, e più in generale ad avere un
-certo tipo di comportamento, di sensibilità, di carattere; si tratta di
-una predisposizione innata che lo induce, nel bene come nel male, ad un
-comportamento analogo a quello che ha tenuto in passato, creando un
-circolo vizioso (o virtuoso) che si autoalimenta.
+Ci sono due categorie di saṁskāra; la prima consiste nelle vāsanā, che sono impressioni lasciate nella mente dagli avvenimenti passati, tracce qui conservate allo stato latente ma pronte a manifestarsi in presenza delle condizioni adatte, cioè di situazioni analoghe a quelle che le hanno generate, e che le attiverebbero a causa della loro affinità.
+Sulla spinta delle vāsanā, una volta che siano attivate, e degli stati d'animo che queste manifestano, l'individuo presenta una tendenza inconscia ad agire in un determinato modo, e più in generale ad avere un certo tipo di comportamento, di sensibilità, di carattere; si tratta di una predisposizione innata che lo induce, nel bene come nel male, ad un comportamento analogo a quello che ha tenuto in passato, creando un circolo vizioso (o virtuoso) che si autoalimenta.
 </div>
 
 Ho trovato delle analogie ai precetti del C'hi++ anche nel *Mantiq al-Tayr*<a href="#mantiq" class="nota" name="fn-21">21</a>:
