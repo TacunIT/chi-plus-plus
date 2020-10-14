@@ -1,5 +1,5 @@
 ---
-status:     in-redazione
+status:     redazione
 layout:     manuale
 class:      capitolo
 title:      Il preprocessore
