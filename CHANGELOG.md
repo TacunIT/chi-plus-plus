@@ -1,3 +1,9 @@
+## 0.14.0 (October 14, 2020)
+  - Iniziato capitolo su preprocessore
+  - Aggiunte note da Attar
+  - Aggiunte note da Dawkins
+  - Merge branch 'capitolo/struttura-programmi'
+
 ## 0.13.5 (October 05, 2020)
   - Correzioni minori al testo
   - Aggiunto anchor 'dottrina'
