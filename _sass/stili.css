@@ -644,6 +644,7 @@ OL.da-fare {
 DIV.citazione {
     color: $blockquoteColor;
     font-style: italic;
+    font-size: 14pt;
     font-family: initial;
     padding:1rem;
     text-align:justify;
