@@ -11,9 +11,13 @@ Negli esempi precedenti abbiamo visto alcune istruzioni particolari, perché han
 
 ``` 
 #include <iostream>
+
+#define NO_ERRORI    0
+#define NO_PARAMETRI 1
+
 ```
 
-Queste istruzioni sono delle *direttive a pre-processore* e possono essere di tre tipi:
+Queste istruzioni sono delle *direttive al pre-processore* e possono essere di tre tipi:
 
 - direttive di inclusione;
 - definizioni e macroistruzioni;
