@@ -26,7 +26,6 @@ Queste istruzioni sono delle *direttive al pre-processore* e possono essere di t
 
 Le direttive di inclusione sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macroistruzioni e dei simboli necessari per la corretta compilazione dei programmi.
 Questi elementi, per comodità, sono isolati all'interno di alcuni file, detti *file di include*.
-
 Quando il preprocessore incontra questa istruzione, la sostituisce con il contenuto del file a cui fa riferimento.
 
 Queste direttive possono essere scritte in due modi:
@@ -36,7 +35,7 @@ Queste direttive possono essere scritte in due modi:
 #include "file.h" 
 ```
 
-La prima forma serve a includere i file di sistema, come, appunto, `iostream.h`, che contiene le definizioni dell  
+La prima forma serve a includere i file di sistema, come, appunto, `iostream.h`, che contiene le definizioni degli *stream* stadard; la seconda forma si utilizza per i file specifici dell'applicazione.
 
 <!--
 La forma sintattica di questa direttiva è quella che abbiamo più volte incontrato nei precedenti esempi:
