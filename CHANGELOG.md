@@ -1,3 +1,8 @@
+## 0.14.1 (October 15, 2020)
+  - Aggiunta codice per direttive condizionali
+  - Aggiunta codice di esempio per include
+  - Spostato il paragrafo sul preprocessore dopo al paragrafo sulle funzioni
+
 ## 0.14.0 (October 14, 2020)
   - Iniziato capitolo su preprocessore
   - Aggiunte note da Attar
