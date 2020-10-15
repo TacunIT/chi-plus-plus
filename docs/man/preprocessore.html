@@ -4,14 +4,14 @@
 </title>
     <meta charset="utf-8" />
     <meta name="viewport"     content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <link rel="canonical"            href="http://localhost:4000" />
-    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/chi-plus-plus.png" />
+    <link rel="canonical"            href="https://chiplusplus.org" />
+    <meta     name="thumbnail"       content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
     <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
     <meta property="og:title"        content="Il preprocessore" />
     <meta property="og:type"         content="website" />    
     <meta property="og:description"  content="Chi++ - Proposta per una metafisica open-source" />
-    <meta property="og:image"        content="http://localhost:4000/assets/img/chi-plus-plus.png" />
+    <meta property="og:image"        content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
     <meta property="og:image:height" content="260" />
     <link rel=icon href=/assets/img/favicon.ico type=image/x-icon>
     <link href="/assets/fa/css/all.css" rel="stylesheet"> 
@@ -28,8 +28,8 @@
         <header><nav class="menu-top">
     
     
-    <a href="/man/struttura-dei-programmi" 
-       title="Vai a: Struttura dei programmi C++" 
+    <a href="/man/funzioni" 
+       title="Vai a: Le funzioni" 
        class="left">
         <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
     </a>
@@ -43,8 +43,8 @@
     </a>
 
     
-    <a href="/man/puntatori" 
-       title="Vai a: I puntatori" 
+    <a href="/man/classi" 
+       title="Vai a: Le classi" 
        class="right" >
             <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
     </a>
@@ -53,7 +53,7 @@
 </nav>
 </header>
 
-        <main class="in-redazione">
+        <main class="redazione">
             
         
 
@@ -65,13 +65,13 @@
 
             <section id="testo">
 
-                <p>Negli esempi precedenti abbiamo visto alcune istruzioni particolari, perché hanno un carattere <code>#</code> all’inizio e non hanno un carattere <code>;</code> alla fine:</p>
+                <p>Le direttive al preprocessore sono la caratteristica principale del C++.<br />
+Negli esempi precedenti abbiamo visto alcune istruzioni particolari, perché hanno un carattere <code>#</code> all’inizio e non hanno un carattere <code>;</code> alla fine:</p>
 
 <pre><code>#include &lt;iostream&gt;
 
 #define NO_ERRORI    0
 #define NO_PARAMETRI 1
-
 </code></pre>
 
 <p>Queste istruzioni sono delle <em>direttive al pre-processore</em> e possono essere di tre tipi:</p>
@@ -82,23 +82,156 @@
   <li>direttive condizionali.</li>
 </ul>
 
+<p>Le <a id="inclusione" onclick="history.back()" title="fare click per tornare alla pagina precedente">direttive di inclusione</a> sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macroistruzioni e dei simboli necessari per la corretta compilazione dei programmi.
+Questi elementi, per comodità, sono isolati all’interno di alcuni file, detti <em>file di include</em>.
+Quando il preprocessore incontra questa istruzione, la sostituisce con il contenuto del file a cui fa riferimento.
+Per esempio, se più di un programma dovesse usare la Classe <code>Colore</code> o la struttura <code>ColoreRGB</code> che abbiamo utilizzato nel programma che visualizza la dimensione dei <a href="/man/tipi-di-dato#principali"> principali tipi di dato del C++</a>, questi dovrebbero essere isolati in un file separato con estensione <code>.h</code>, a indicare che si tratta di un <em>header file</em>:</p>
+
+<pre><code>
+#ifndef _CLASS_COLORE
+#define _CLASS_COLORE 1
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+/** Definisce un tipo di dato enumerato di nome RGB */
+enum RGB { red = 0xFF0000, green = 0x00ff00, blue = 0x0000ff };
+
+/** Definisce una struttura che contiene un colore RGB e un nome */
+struct ColoreRGB {
+    RGB  valore;
+    const char* nome;        
+};
+
+/** 
+ * Definisce la classe Colore, che contiene un coloreRGB 
+ * e una funzione che ne mostra il nome.
+ */
+class Colore {
+public:
+    ColoreRGB coloreRgb;        
+    void nome_colore() {
+        cout &lt;&lt; "coloreRGB:";
+        switch(coloreRgb.valore) {
+            case red  : cout &lt;&lt; "red"  ; break;
+            case green: cout &lt;&lt; "green"; break;
+            case blue : cout &lt;&lt; "blue" ; break;
+        }
+        cout &lt;&lt; endl;
+    }        
+};
+
+#endif /* _CLASS_COLORE */
+
+</code></pre>
+
+<p>Il file verrebbe poi incluso nel codice dei programmi che ne fanno uso con una direttiva <code>include</code>:</p>
+
+<pre><code>#include &lt;iostream&gt;
+#include "colore.h"
+
+using namespace std;
+
+int main()
+{    
+    /** Dichiara una serie di variabili */
+    bool    booleano = false;
+    char    carattere = 'C';
+    int     intero = 1234567890;
+    float   decimale = 3.14;
+    char    array[] = "abcdefghilmnopqrstuvz";
+    RGB     enumerato = green;
+    
+    /** Crea un oggetto di tipo Colore */
+    Colore  colore;    
+    
+    /** 
+     * Assegna un valore ai dati della struttura coloreRgb 
+     * all'interno dell'oggetto di tipo Colore.
+     */
+    colore.coloreRgb.valore = enumerato;   
+    colore.coloreRgb.nome = "verde";     
+
+    /** Mostra il valore delle variabili */
+    cout &lt;&lt; "booleano:"    &lt;&lt; booleano   &lt;&lt; endl;
+    cout &lt;&lt; "carattere:"   &lt;&lt; carattere  &lt;&lt; endl;
+    cout &lt;&lt; "intero:"      &lt;&lt; intero     &lt;&lt; endl;
+    cout &lt;&lt; "decimale:"    &lt;&lt; decimale   &lt;&lt; endl;
+    cout &lt;&lt; "array:"       &lt;&lt; array      &lt;&lt; endl;
+    
+    /** Mostra il nome del colore */
+    colore.nome_colore();
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Questo esempio utilizza due forme distinte per la direttiva <code>include</code>:</p>
+
+<pre><code>#include &lt;iostream&gt;
+#include "colore.h" 
+</code></pre>
+
+<p>La prima forma serve a includere i file di sistema, come, appunto, <code>iostream.h</code>, che contiene le definizioni degli <em>stream</em> stadard; la seconda forma si utilizza per i file specifici dell’applicazione, nel nostro caso, <code>colore.h</code>.
+I file di include possono includere a loro volta altri file.
+Per esempio, <code>colore.h</code> include <code>iostream</code>, perché utilizza lo <em>stream</em> <code>cout</code>.
+Per evitare che uno stesso file includa due vole lo stesso header, si utilizza un altro tipo di diretttiva al preprocessore, le 
+<a id="con" dizionali="" onclick="history.back()" title="fare click per tornare alla pagina precedente">direttive condizionali</a></p>
+
+<pre><code>#ifndef _CLASS_COLORE
+#define _CLASS_COLORE 1
+
+...
+
+#endif /* _CLASS_COLORE */
+</code></pre>
+
+<p>Le direttive condizionali sono:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>direttiva</th>
+      <th>valore</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>#if</code></td>
+      <td>se non zero</td>
+    </tr>
+    <tr>
+      <td><code>#ifdef</code></td>
+      <td>se definito</td>
+    </tr>
+    <tr>
+      <td><code>#ifndef</code></td>
+      <td>se non definito</td>
+    </tr>
+    <tr>
+      <td><code>#else</code></td>
+      <td>altrimenti</td>
+    </tr>
+    <tr>
+      <td><code>#elif</code></td>
+      <td>altrimenti se</td>
+    </tr>
+    <tr>
+      <td><code>#endif</code></td>
+      <td>fine del blocco condizionale</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Quando il preprocessore incontra il codice che abbiamo usato come esempio verifica che sia definito un valore per <code>_CLASS_COLORE</code>.
+Se <code>_CLASS_COLORE</code> non ha un valore associato, il preprocessore esegue l’istruzione successiva, che gli assegna il valore 1, poi inserisce nel file chiamante tutto il codice fino all’istruzione <code>#endif</code>.
+Se invece <code>_CLASS_COLORE</code> ha già un valore associato perché è già stata inclusa da altri file, il preprocessore salta direttamente alla direttiva <code>#endif</code> senza riscrivere le tre dichiarazioni.</p>
+
 <!--
-6.2   DIRETTIVE DI INCLUSIONE
-Le direttive di inclusione sono certamente le più comunemente usate, infatti vengono utilizzate per includere i file con le definizioni delle funzioni di libreria, le definizioni delle macroistruzioni e dei simboli necessari per la corretta compilazione dei programmi.
-La forma sintattica di questa direttiva è quella che abbiamo più volte incontrato nei precedenti esempi:
-#include <file>
-dove per file si intende un qualsiasi file presente nelle directory di include definite con le opzioni del compilatore.
-Alcuni dei file piu comunemente usati sono:
-stdio.h;
-stdlib.h;
-string.h;
-math.h;
-time.h;
-Questi file contengono le definizioni dei tipi di dati ed i prototipi delle funzioni utilizzati rispettivamente per le operazione di I/O standard, funzioni di conversione e gestione dinamica della memoria, funzioni di trattamento delle stringhe, funzioni matematiche, funzioni lettura dell’orologio di sistema.
-Una forma alternativa è la seguente:
-#include "miofile"
-In questo caso il file deve trovarsi nella directory corrente. Questa forma è usata per l’inclusione di porzioni di codice inerenti al programma.
-È possibile nidificare le direttive #include, infatti un file incluso può a sua volta contenere tale direttiva. Il livello di nidificazione è tuttavia dipendente dallo specifico preprocessore e dall’architettura del sistema. 
+
+
 6.3   DEFINIZIONI E MACROISTRUZIONI
 È possibile definire degli identificatori correlati a stringhe di sostituzione che il preprocessore provvederà ad inserire nel codice sorgente in luogo di detti identificatori prima del processo di compilazione. Generalmente, tali stringhe sono costituite da valori costanti o istruzioni, nel primo caso sono chiamate costanti simboliche, nel secondo sono chiamate macroistruzioni o più brevemente macro.
 Alcuni esempi validi di costanti simboliche sono:
@@ -162,18 +295,8 @@ Le direttive condizionali consentono di delimitare una o più istruzioni che ver
 Direttive condizionali
 Direttiva
 Descrizione
-#if
-se non zero
-#ifdef
-se definito
-#ifndef
-se non definito
-#else
-altrimenti
-#elif
-altrimenti se
-#endif
-fine del blocco condizionale
+
+
 Vediamo più chiaramente con un esempio gli effetti delle compilazioni condizionali. Consideriamo il seguente programma:
 PRE2.C- Compilazione condizionale
 /**********************************************************
@@ -234,8 +357,8 @@ Quest’ultima tecnica viene comunemente usata per le compilazioni condizionali 
     <nav>
         
         
-        <a href="/man/struttura-dei-programmi" 
-           title="Vai a: Struttura dei programmi C++" 
+        <a href="/man/funzioni" 
+           title="Vai a: Le funzioni" 
            class="left">
             <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
         </a>
@@ -247,8 +370,8 @@ Quest’ultima tecnica viene comunemente usata per le compilazioni condizionali 
         </a>
 
         
-        <a href="/man/puntatori" 
-           title="Vai a: I puntatori" 
+        <a href="/man/classi" 
+           title="Vai a: Le classi" 
            class="right" >
                 <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
         </a>

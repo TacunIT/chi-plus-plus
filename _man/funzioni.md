@@ -7,6 +7,15 @@ permalink:  /man/funzioni
 quote:      "Call me: IsNull"
 ---
 
+
+<a id="definizione" 
+   onclick="history.back()" 
+   title="fare click per tornare alla pagina precedente">definizione</a>
+
+<a id="dichiarazione" 
+      onclick="history.back()" 
+      title="fare click per tornare alla pagina precedente">dichiarazione</a>
+
 <a id="inline" 
    onclick="history.back()" 
    title="fare click per tornare alla pagina precedente">funzioni inline</a>

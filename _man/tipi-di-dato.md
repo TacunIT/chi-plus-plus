@@ -16,8 +16,12 @@ I tipi di dato *scalari* sono: `void`, `bool`, `char`, `wchar_t`, `int`, `float`
 
 I tipi di dato *aggregati* sono gli array, le unioni, gli emumerati, le strutture e le classi. Questi, come dice anche il loro nome, sono costituiti dalla unione di più dati scalari dello stesso tipo o di tipi differenti.
 
-Questo brano di codice &mdash; fastidiosamente didascalico, nella sua sostanziale inutilità &mdash; mostra i principali tipi di dato del C++. 
+Questo brano di codice &mdash; fastidiosamente didascalico, nella sua sostanziale inutilità &mdash; mostra i 
+<a id="principali" 
+   onclick="history.back()" 
+   title="fare click per tornare alla pagina precedente">principali tipi di dato</a> del C++. 
 Contiene molti elementi di cui ancora non ti ho parlato, quindi non preoccuparti se non capisci del tutto ciò che fa.
+
 
 ```
 {% include_relative src/tipi-di-dato-principali.cpp %}
