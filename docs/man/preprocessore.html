@@ -72,7 +72,6 @@ Negli esempi precedenti abbiamo visto alcune istruzioni particolari, perché han
 
 #define NO_ERRORI    0
 #define NO_PARAMETRI 1
-
 </code></pre>
 
 <p>Queste istruzioni sono delle <em>direttive al pre-processore</em> e possono essere di tre tipi:</p>
@@ -84,17 +83,90 @@ Negli esempi precedenti abbiamo visto alcune istruzioni particolari, perché han
 </ul>
 
 <p>Le direttive di inclusione sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macroistruzioni e dei simboli necessari per la corretta compilazione dei programmi.
-Questi elementi, per comodità, sono isolati all’interno di alcuni file, detti <em>file di include</em>.</p>
+Questi elementi, per comodità, sono isolati all’interno di alcuni file, detti <em>file di include</em>.
+Quando il preprocessore incontra questa istruzione, la sostituisce con il contenuto del file a cui fa riferimento.
+Per esempio, se più di un programma dovesse usare la Classe <code>Colore</code> o la struttura <code>ColoreRGB</code> che abbiamo utilizzato nel programma che visualizza la dimensione dei <a href="/man/tipi-di-dato#principali"> principali tipi di dato del C++</a>, questi dovrebbero essere isolati in un file separato con estensione <code>.h</code>, a indicare che si tratta di un <em>header file</em>:</p>
 
-<p>Quando il preprocessore incontra questa istruzione, la sostituisce con il contenuto del file a cui fa riferimento.</p>
+<pre><code>using namespace std;
 
-<p>Queste direttive possono essere scritte in due modi:</p>
+/** Definisce un tipo di dato enumerato di nome RGB */
+enum RGB { red = 0xFF0000, green = 0x00ff00, blue = 0x0000ff };
 
-<pre><code>#include &lt;iostream&gt;
-#include "file.h" 
+/** Definisce una struttura che contiene un colore RGB e un nome */
+struct ColoreRGB {
+    RGB  valore;
+    const char* nome;        
+};
+
+/** 
+ * Definisce la classe Colore, che contiene un coloreRGB 
+ * e una funzione che ne mostra il nome.
+ */
+class Colore {
+public:
+    ColoreRGB coloreRgb;        
+    void nome_colore() {
+        cout &lt;&lt; "coloreRGB:";
+        switch(coloreRgb.valore) {
+            case red  : cout &lt;&lt; "red"  ; break;
+            case green: cout &lt;&lt; "green"; break;
+            case blue : cout &lt;&lt; "blue" ; break;
+        }
+        cout &lt;&lt; endl;
+    }        
+};
+
 </code></pre>
 
-<p>La prima forma serve a includere i file di sistema, come, appunto, <code>iostream.h</code>, che contiene le definizioni dell</p>
+<p>Il file verrebbe poi incluso nel codice dei programmi che ne fanno uso con una direttiva <code>include</code>:</p>
+
+<pre><code>#include &lt;iostream&gt;
+#include "colore.h"
+
+using namespace std;
+
+int main()
+{    
+    /** Dichiara una serie di variabili */
+    bool    booleano = false;
+    char    carattere = 'C';
+    int     intero = 1234567890;
+    float   decimale = 3.14;
+    char    array[] = "abcdefghilmnopqrstuvz";
+    RGB     enumerato = green;
+    
+    /** Crea un oggetto di tipo Colore */
+    Colore  colore;    
+    
+    /** 
+     * Assegna un valore ai dati della struttura coloreRgb 
+     * all'interno dell'oggetto di tipo Colore.
+     */
+    colore.coloreRgb.valore = enumerato;   
+    colore.coloreRgb.nome = "verde";     
+
+    /** Mostra il valore delle variabili */
+    cout &lt;&lt; "booleano:"    &lt;&lt; booleano   &lt;&lt; endl;
+    cout &lt;&lt; "carattere:"   &lt;&lt; carattere  &lt;&lt; endl;
+    cout &lt;&lt; "intero:"      &lt;&lt; intero     &lt;&lt; endl;
+    cout &lt;&lt; "decimale:"    &lt;&lt; decimale   &lt;&lt; endl;
+    cout &lt;&lt; "array:"       &lt;&lt; array      &lt;&lt; endl;
+    
+    /** Mostra il nome del colore */
+    colore.nome_colore();
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Questo esempio utilizza due forme distinte per la direttiva <code>include</code>:</p>
+
+<pre><code>#include &lt;iostream&gt;
+#include "colore.h" 
+</code></pre>
+
+<p>La prima forma serve a includere i file di sistema, come, appunto, <code>iostream.h</code>, che contiene le definizioni degli <em>stream</em> stadard; la seconda forma si utilizza per i file specifici dell’applicazione, nel nostro caso, <code>colore.h</code>.</p>
 
 <!--
 La forma sintattica di questa direttiva è quella che abbiamo più volte incontrato nei precedenti esempi:

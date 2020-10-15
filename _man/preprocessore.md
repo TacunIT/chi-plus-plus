@@ -15,7 +15,6 @@ Negli esempi precedenti abbiamo visto alcune istruzioni particolari, perché han
 
 #define NO_ERRORI    0
 #define NO_PARAMETRI 1
-
 ```
 
 Queste istruzioni sono delle *direttive al pre-processore* e possono essere di tre tipi:
@@ -27,15 +26,27 @@ Queste istruzioni sono delle *direttive al pre-processore* e possono essere di t
 Le direttive di inclusione sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macroistruzioni e dei simboli necessari per la corretta compilazione dei programmi.
 Questi elementi, per comodità, sono isolati all'interno di alcuni file, detti *file di include*.
 Quando il preprocessore incontra questa istruzione, la sostituisce con il contenuto del file a cui fa riferimento.
+Per esempio, se più di un programma dovesse usare la Classe `Colore` o la struttura `ColoreRGB` che abbiamo utilizzato nel programma che visualizza la dimensione dei <a href="/man/tipi-di-dato#principali"> principali tipi di dato del C++</a>, questi dovrebbero essere isolati in un file separato con estensione `.h`, a indicare che si tratta di un *header file*:
 
-Queste direttive possono essere scritte in due modi:
+```
+{% include_relative src/preprocessore-colore.h %}
+```
+
+Il file verrebbe poi incluso nel codice dei programmi che ne fanno uso con una direttiva `include`:
+
+```
+{% include_relative src/preprocessore-main.cpp %}
+```
+
+Questo esempio utilizza due forme distinte per la direttiva `include`:
 
 ```
 #include <iostream>
-#include "file.h" 
+#include "colore.h" 
 ```
 
-La prima forma serve a includere i file di sistema, come, appunto, `iostream.h`, che contiene le definizioni degli *stream* stadard; la seconda forma si utilizza per i file specifici dell'applicazione.
+La prima forma serve a includere i file di sistema, come, appunto, `iostream.h`, che contiene le definizioni degli *stream* stadard; la seconda forma si utilizza per i file specifici dell'applicazione, nel nostro caso, `colore.h`.
+
 
 <!--
 La forma sintattica di questa direttiva è quella che abbiamo più volte incontrato nei precedenti esempi:
