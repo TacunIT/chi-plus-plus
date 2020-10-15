@@ -23,7 +23,9 @@ Queste istruzioni sono delle *direttive al pre-processore* e possono essere di t
 - definizioni e macroistruzioni;
 - direttive condizionali.
 
-Le direttive di inclusione sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macroistruzioni e dei simboli necessari per la corretta compilazione dei programmi.
+Le <a id="inclusione" 
+   onclick="history.back()" 
+   title="fare click per tornare alla pagina precedente">direttive di inclusione</a> sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macroistruzioni e dei simboli necessari per la corretta compilazione dei programmi.
 Questi elementi, per comodità, sono isolati all'interno di alcuni file, detti *file di include*.
 Quando il preprocessore incontra questa istruzione, la sostituisce con il contenuto del file a cui fa riferimento.
 Per esempio, se più di un programma dovesse usare la Classe `Colore` o la struttura `ColoreRGB` che abbiamo utilizzato nel programma che visualizza la dimensione dei <a href="/man/tipi-di-dato#principali"> principali tipi di dato del C++</a>, questi dovrebbero essere isolati in un file separato con estensione `.h`, a indicare che si tratta di un *header file*:
@@ -46,25 +48,39 @@ Questo esempio utilizza due forme distinte per la direttiva `include`:
 ```
 
 La prima forma serve a includere i file di sistema, come, appunto, `iostream.h`, che contiene le definizioni degli *stream* stadard; la seconda forma si utilizza per i file specifici dell'applicazione, nel nostro caso, `colore.h`.
+I file di include possono includere a loro volta altri file.
+Per esempio, `colore.h` include `iostream`, perché utilizza lo *stream* `cout`.
+Per evitare che uno stesso file includa due vole lo stesso header, si utilizza un altro tipo di diretttiva al preprocessore, le 
+<a id="con" dizionali
+   onclick="history.back()" 
+   title="fare click per tornare alla pagina precedente">direttive condizionali</a>
+   
+```
+#ifndef _CLASS_COLORE
+#define _CLASS_COLORE 1
+
+...
+
+#endif /* _CLASS_COLORE */
+```
+
+Le direttive condizionali sono:
+
+| direttiva | valore |
+|---|---|
+| `#if`     | se non zero
+| `#ifdef`  | se definito
+| `#ifndef` | se non definito
+| `#else`   | altrimenti
+| `#elif`   | altrimenti se
+| `#endif`  | fine del blocco condizionale
+
+Quando il preprocessore incontra il codice che abbiamo usato come esempio verifica che sia definito un valore per `_CLASS_COLORE`.
+Se `_CLASS_COLORE` non ha un valore associato, il preprocessore esegue l'istruzione successiva, che gli assegna il valore 1, poi inserisce nel file chiamante tutto il codice fino all'istruzione `#endif`, che avrebbe ignorato se `_CLASS_COLORE` avesse avuto già un valore associato.  
 
 
 <!--
-La forma sintattica di questa direttiva è quella che abbiamo più volte incontrato nei precedenti esempi:
-#include <file>
-dove per file si intende un qualsiasi file presente nelle directory di include definite con le opzioni del compilatore.
-Alcuni dei file piu comunemente usati sono:
-stdio.h;
-stdlib.h;
-string.h;
-math.h;
-time.h;
-Questi file contengono le definizioni dei tipi di dati ed i prototipi delle funzioni utilizzati rispettivamente per le operazione di I/O standard, funzioni di conversione e gestione dinamica della memoria, funzioni di trattamento delle stringhe, funzioni matematiche, funzioni lettura dell’orologio di sistema.
-Una forma alternativa è la seguente:
-#include "miofile"
-In questo caso il file deve trovarsi nella directory corrente. Questa forma è usata per l’inclusione di porzioni di codice inerenti al programma.
-È possibile nidificare le direttive #include, infatti un file incluso può a sua volta contenere tale direttiva. Il livello di nidificazione è tuttavia dipendente dallo specifico preprocessore e dall’architettura del sistema. 
 
-6.2   DIRETTIVE DI INCLUSIONE
 
 6.3   DEFINIZIONI E MACROISTRUZIONI
 È possibile definire degli identificatori correlati a stringhe di sostituzione che il preprocessore provvederà ad inserire nel codice sorgente in luogo di detti identificatori prima del processo di compilazione. Generalmente, tali stringhe sono costituite da valori costanti o istruzioni, nel primo caso sono chiamate costanti simboliche, nel secondo sono chiamate macroistruzioni o più brevemente macro.
@@ -129,18 +145,8 @@ Le direttive condizionali consentono di delimitare una o più istruzioni che ver
 Direttive condizionali
 Direttiva
 Descrizione
-#if
-se non zero
-#ifdef
-se definito
-#ifndef
-se non definito
-#else
-altrimenti
-#elif
-altrimenti se
-#endif
-fine del blocco condizionale
+
+
 Vediamo più chiaramente con un esempio gli effetti delle compilazioni condizionali. Consideriamo il seguente programma:
 PRE2.C- Compilazione condizionale
 /**********************************************************
