@@ -76,7 +76,8 @@ Le direttive condizionali sono:
 | `#endif`  | fine del blocco condizionale
 
 Quando il preprocessore incontra il codice che abbiamo usato come esempio verifica che sia definito un valore per `_CLASS_COLORE`.
-Se `_CLASS_COLORE` non ha un valore associato, il preprocessore esegue l'istruzione successiva, che gli assegna il valore 1, poi inserisce nel file chiamante tutto il codice fino all'istruzione `#endif`, che avrebbe ignorato se `_CLASS_COLORE` avesse avuto già un valore associato.  
+Se `_CLASS_COLORE` non ha un valore associato, il preprocessore esegue l'istruzione successiva, che gli assegna il valore 1, poi inserisce nel file chiamante tutto il codice fino all'istruzione `#endif`.
+Se invece `_CLASS_COLORE` ha già un valore associato perché è già stata inclusa da altri file, il preprocessore salta direttamente alla direttiva `#endif` senza riscrivere le tre dichiarazioni.
 
 
 <!--

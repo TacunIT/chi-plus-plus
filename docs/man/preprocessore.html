@@ -226,7 +226,8 @@ Per evitare che uno stesso file includa due vole lo stesso header, si utilizza u
 </table>
 
 <p>Quando il preprocessore incontra il codice che abbiamo usato come esempio verifica che sia definito un valore per <code>_CLASS_COLORE</code>.
-Se <code>_CLASS_COLORE</code> non ha un valore associato, il preprocessore esegue l’istruzione successiva, che gli assegna il valore 1, poi inserisce nel file chiamante tutto il codice fino all’istruzione <code>#endif</code>, che avrebbe ignorato se <code>_CLASS_COLORE</code> avesse avuto già un valore associato.</p>
+Se <code>_CLASS_COLORE</code> non ha un valore associato, il preprocessore esegue l’istruzione successiva, che gli assegna il valore 1, poi inserisce nel file chiamante tutto il codice fino all’istruzione <code>#endif</code>.
+Se invece <code>_CLASS_COLORE</code> ha già un valore associato perché è già stata inclusa da altri file, il preprocessore salta direttamente alla direttiva <code>#endif</code> senza riscrivere le tre dichiarazioni.</p>
 
 <!--
 
