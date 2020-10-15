@@ -7,6 +7,7 @@ permalink:  /man/preprocessore
 quote:      ""
 ---
 
+Le direttive al preprocessore sono la caratteristica principale del C++.  
 Negli esempi precedenti abbiamo visto alcune istruzioni particolari, perché hanno un carattere `#` all'inizio e non hanno un carattere `;` alla fine:
 
 ``` 
@@ -23,9 +24,21 @@ Queste istruzioni sono delle *direttive al pre-processore* e possono essere di t
 - definizioni e macroistruzioni;
 - direttive condizionali.
 
+Le direttive di inclusione sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macroistruzioni e dei simboli necessari per la corretta compilazione dei programmi.
+Questi elementi, per comodità, sono isolati all'interno di alcuni file, detti *file di include*.
+
+Quando il preprocessore incontra questa istruzione, la sostituisce con il contenuto del file a cui fa riferimento.
+
+Queste direttive possono essere scritte in due modi:
+
+```
+#include <iostream>
+#include "file.h" 
+```
+
+La prima forma serve a includere i file di sistema, come, appunto, `iostream.h`, che contiene le definizioni dell  
+
 <!--
-6.2   DIRETTIVE DI INCLUSIONE
-Le direttive di inclusione sono certamente le più comunemente usate, infatti vengono utilizzate per includere i file con le definizioni delle funzioni di libreria, le definizioni delle macroistruzioni e dei simboli necessari per la corretta compilazione dei programmi.
 La forma sintattica di questa direttiva è quella che abbiamo più volte incontrato nei precedenti esempi:
 #include <file>
 dove per file si intende un qualsiasi file presente nelle directory di include definite con le opzioni del compilatore.
@@ -40,6 +53,9 @@ Una forma alternativa è la seguente:
 #include "miofile"
 In questo caso il file deve trovarsi nella directory corrente. Questa forma è usata per l’inclusione di porzioni di codice inerenti al programma.
 È possibile nidificare le direttive #include, infatti un file incluso può a sua volta contenere tale direttiva. Il livello di nidificazione è tuttavia dipendente dallo specifico preprocessore e dall’architettura del sistema. 
+
+6.2   DIRETTIVE DI INCLUSIONE
+
 6.3   DEFINIZIONI E MACROISTRUZIONI
 È possibile definire degli identificatori correlati a stringhe di sostituzione che il preprocessore provvederà ad inserire nel codice sorgente in luogo di detti identificatori prima del processo di compilazione. Generalmente, tali stringhe sono costituite da valori costanti o istruzioni, nel primo caso sono chiamate costanti simboliche, nel secondo sono chiamate macroistruzioni o più brevemente macro.
 Alcuni esempi validi di costanti simboliche sono:
