@@ -27,7 +27,7 @@ Le <a id="inclusione"
    onclick="history.back()" 
    title="fare click per tornare alla pagina precedente">direttive di inclusione</a> sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macroistruzioni e dei simboli necessari per la corretta compilazione dei programmi.
 Questi elementi, per comodità, sono isolati all'interno di alcuni file, detti *file di include*.
-Quando il preprocessore incontra questa istruzione, la sostituisce con il contenuto del file a cui fa riferimento.
+Quando il preprocessore incontra una direttiva `include`, la sostituisce con il contenuto del file a cui fa riferimento.
 Per esempio, se più di un programma dovesse usare la Classe `Colore` o la struttura `ColoreRGB` che abbiamo utilizzato nel programma che visualizza la dimensione dei <a href="/man/tipi-di-dato#principali"> principali tipi di dato del C++</a>, questi dovrebbero essere isolati in un file separato con estensione `.h`, a indicare che si tratta di un *header file*:
 
 ```
@@ -47,13 +47,13 @@ Questo esempio utilizza due forme distinte per la direttiva `include`:
 #include "colore.h" 
 ```
 
-La prima forma serve a includere i file di sistema, come, appunto, `iostream.h`, che contiene le definizioni degli *stream* stadard; la seconda forma si utilizza per i file specifici dell'applicazione, nel nostro caso, `colore.h`.
-I file di include possono includere a loro volta altri file.
-Per esempio, `colore.h` include `iostream`, perché utilizza lo *stream* `cout`.
-Per evitare che uno stesso file includa due vole lo stesso header, si utilizza un altro tipo di diretttiva al preprocessore, le 
+La prima forma serve a includere i file di sistema, come, appunto, `iostream`, che contiene le definizioni degli *stream* stadard; la seconda forma si utilizza per i file specifici dell'applicazione, nel nostro caso, `colore.h`.  
+I file di include possono includere a loro volta altri file; per esempio, `colore.h` include `iostream`, perché utilizza lo *stream* `cout`.
+Anche il nostro codice di esempio, però, include `iostream` e questo potrebbe causare un errore di compilazione perché sarebbbe come se dichiarassimo due volte la stessa funzione.
+Per evitare doppie inclusioni si utilizzano un altro tipo di diretttive al preprocessore, le 
 <a id="con" dizionali
    onclick="history.back()" 
-   title="fare click per tornare alla pagina precedente">direttive condizionali</a>
+   title="fare click per tornare alla pagina precedente">direttive condizionali</a>:
    
 ```
 #ifndef _CLASS_COLORE
@@ -75,7 +75,7 @@ Le direttive condizionali sono:
 | `#elif`   | altrimenti se
 | `#endif`  | fine del blocco condizionale
 
-Quando il preprocessore incontra il codice che abbiamo usato come esempio verifica che sia definito un valore per `_CLASS_COLORE`.
+Quando il preprocessore legge la prima direttiva nel file di include, verifica che sia definito un valore per `_CLASS_COLORE`.
 Se `_CLASS_COLORE` non ha un valore associato, il preprocessore esegue l'istruzione successiva, che gli assegna il valore 1, poi inserisce nel file chiamante tutto il codice fino all'istruzione `#endif`.
 Se invece `_CLASS_COLORE` ha già un valore associato perché è già stata inclusa da altri file, il preprocessore salta direttamente alla direttiva `#endif` senza riscrivere le tre dichiarazioni.
 
