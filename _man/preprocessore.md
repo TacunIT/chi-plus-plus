@@ -47,11 +47,11 @@ Questo esempio utilizza due forme distinte per la direttiva `include`:
 #include "colore.h" 
 ```
 
-La prima forma serve a includere i file di sistema, come, appunto, `iostream`, che contiene le definizioni degli *stream* stadard; la seconda forma si utilizza per i file specifici dell'applicazione, nel nostro caso, `colore.h`.  
+La prima forma serve a includere i file di sistema, come, appunto, `iostream`, che contiene le definizioni degli *stream* stadard del C++; la seconda forma si utilizza per i file specifici dell'applicazione; nel nostro caso, `colore.h`.  
 I file di include possono includere a loro volta altri file; per esempio, `colore.h` include `iostream`, perché utilizza lo *stream* `cout`.
-Anche il nostro codice di esempio, però, include `iostream` e questo potrebbe causare un errore di compilazione perché sarebbbe come se dichiarassimo due volte la stessa funzione.
-Per evitare doppie inclusioni si utilizzano un altro tipo di diretttive al preprocessore, le 
-<a id="con" dizionali
+Anche il nostro codice di esempio, però, include `iostream` e questo potrebbe causare un errore di compilazione se il precompilatore effettuasse due volte l'inclusione, perché sarebbbe come se dichiarassimo due volte la stessa funzione.
+Per questo motivo, all'inizio del nostro file di include (ma anche di ìostream`) troviamo un altro tipo di diretttive al preprocessore, le cosiddette: 
+<a id="condizionali"
    onclick="history.back()" 
    title="fare click per tornare alla pagina precedente">direttive condizionali</a>:
    
