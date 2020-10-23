@@ -174,11 +174,11 @@ int main()
 #include "colore.h" 
 </code></pre>
 
-<p>La prima forma serve a includere i file di sistema, come, appunto, <code>iostream</code>, che contiene le definizioni degli <em>stream</em> stadard; la seconda forma si utilizza per i file specifici dell’applicazione, nel nostro caso, <code>colore.h</code>.<br />
+<p>La prima forma serve a includere i file di sistema, come, appunto, <code>iostream</code>, che contiene le definizioni degli <em>stream</em> stadard del C++; la seconda forma si utilizza per i file specifici dell’applicazione; nel nostro caso, <code>colore.h</code>.<br />
 I file di include possono includere a loro volta altri file; per esempio, <code>colore.h</code> include <code>iostream</code>, perché utilizza lo <em>stream</em> <code>cout</code>.
-Anche il nostro codice di esempio, però, include <code>iostream</code> e questo potrebbe causare un errore di compilazione perché sarebbbe come se dichiarassimo due volte la stessa funzione.
-Per evitare doppie inclusioni si utilizzano un altro tipo di diretttive al preprocessore, le 
-<a id="con" dizionali="" onclick="history.back()" title="fare click per tornare alla pagina precedente">direttive condizionali</a>:</p>
+Anche il nostro codice di esempio, però, include <code>iostream</code> e questo potrebbe causare un errore di compilazione se il precompilatore effettuasse due volte l’inclusione, perché sarebbbe come se dichiarassimo due volte la stessa funzione.
+Per questo motivo, all’inizio del nostro file di include (ma anche di ìostream`) troviamo un altro tipo di diretttive al preprocessore, le cosiddette: 
+<a id="condizionali" onclick="history.back()" title="fare click per tornare alla pagina precedente">direttive condizionali</a>:</p>
 
 <pre><code>#ifndef _CLASS_COLORE
 #define _CLASS_COLORE 1
