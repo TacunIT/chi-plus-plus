@@ -6,10 +6,17 @@
 #define  RGB_GREEN  0x00FF00
 #define  RGB_BLUE   0x0000FF
 
-#define  STR_RGB    "coloreRGB"
-#define  STR_RED    "red"
-#define  STR_GREEN  "green"
-#define  STR_BLUE   "blue"
+#ifdef LANG_IT
+    #define  STR_RGB    "colore RGB"
+    #define  STR_RED    "rosso"
+    #define  STR_GREEN  "verde"
+    #define  STR_BLUE   "blu"
+#else 
+    #define  STR_RGB    "RGB color"
+    #define  STR_RED    "red"
+    #define  STR_GREEN  "green"
+    #define  STR_BLUE   "blue"
+#endif
 
 #include <iostream>
 

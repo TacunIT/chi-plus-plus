@@ -1,4 +1,6 @@
 #include <iostream>
+
+#define LANG_IT
 #include "colore.h"
 
 using namespace std;
