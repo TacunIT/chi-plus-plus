@@ -32,11 +32,11 @@ public:
 int main()
 {    
     /** Dichiara una serie di variabili */
-    bool    booleano = false;
+    bool    booleano  = false;
     char    carattere = 'C';
-    int     intero = 1234567890;
-    float   decimale = 3.14;
-    char    array[] = "abcdefghilmnopqrstuvz";
+    int     intero    = 1234567890;
+    float   decimale  = 3.14;
+    char    array[]   = "abcdefghilmnopqrstuvz";
     RGB     enumerato = green;
     
     /** Crea un oggetto di tipo Colore */

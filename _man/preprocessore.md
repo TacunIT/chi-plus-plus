@@ -80,6 +80,139 @@ Quando il preprocessore legge la prima direttiva nel file di include, verifica c
 Se `_CLASS_COLORE` non ha un valore associato, il preprocessore esegue l'istruzione successiva, che gli assegna il valore 1, poi inserisce nel file chiamante tutto il codice fino all'istruzione `#endif`.
 Se invece `_CLASS_COLORE` ha già un valore associato perché è già stata inclusa da altri file, il preprocessore salta direttamente alla direttiva `#endif` senza riscrivere le tre dichiarazioni.
 
+Le istruzioni seguenti definiscono delle costanti numeriche per i colori dell'`enum RGB`:
+
+```
+#define  RGB_RED    0xFF0000
+#define  RGB_GREEN  0x00FF00
+#define  RGB_BLUE   0x0000FF
+```
+
+Le direttvive al preprocessore permettono di definire anche delle costranti stringa:
+
+```
+#define  STR_GREEN  "verde"
+```
+
+Questa è una buona cosa, perché, come imparerai con l'esperienza, avere delle stringhe *hardcoded* all'interno dei programmi causa sempre dei problemi e soprattutto lega il tuo codice a un determinato linguaggio:
+
+```
+colore.coloreRgb.nome = "verde";     
+
+/** Mostra il valore delle variabili */
+cout << "booleano:"    << booleano   << endl;
+cout << "carattere:"   << carattere  << endl;
+cout << "intero:"      << intero     << endl;
+cout << "decimale:"    << decimale   << endl;
+cout << "array:"       << array      << endl;
+```
+
+Questo può essere accettabile in un programma di esempio, ma è una scelta miope per un programma reale, specie se le stringhe si ripetono in contesti diversi:
+
+```
+char stringa[] = "ebete";
+
+...
+
+cout << 6 << "ebete" << endl;
+
+```
+
+perché se la stringa dovesse variare (e stai pur certo che succederà), tu dovrai modificare tutte le righe di codice in cui compare.  
+Al contrario, se definisci delle costranti per tutte le stringhe che utilizzi nel tuo codice, la correzione sarà unica:
+
+```
+#define STR_COME_SEI = "astuto";
+
+char stringa[] = STR_COME_SEI;
+
+...
+
+cout << 6 << STR_COME_SEI << endl;
+
+```
+
+Unite alle direttive condizionali, le definizioni di costranti stringa ti permettono di avere un codice multilingua:
+
+```
+#ifdef LANG_IT
+    #define  STR_RGB    "colore RGB"
+    #define  STR_RED    "rosso"
+    #define  STR_GREEN  "verde"
+    #define  STR_BLUE   "blu"
+#else 
+    #define  STR_RGB    "RGB color"
+    #define  STR_RED    "red"
+    #define  STR_GREEN  "green"
+    #define  STR_BLUE   "blue"
+#endif
+```
+
+La definizione della costante che determina la condizione (in questo caso, `LANG_IT`) può avvenire o nel codice del programma che include il file con definizioni:
+
+```
+#define LANG_IT
+#include "colore.h"
+```
+
+o direttamente da riga di comando, come parametro di compilazione:
+
+```
+% g++ ./cpp/preprocessore-main.cpp -D LANG_IT -o ./out/esempio
+% ./out/esempio                                               
+  booleano: 0
+ carattere: C
+    intero: 1234567890
+  decimale: 3.14
+     array: abcdefghilmnopqrstuvz
+colore RGB: verde
+% g++ ./cpp/preprocessore-main.cpp -D LANG_EN -o ./out/esempio
+% ./out/esempio                                               
+   boolean: 0
+ character: C
+   integer: 1234567890
+   decimal: 3.14
+     array: abcdefghilmnopqrstuvz
+RGB color: green
+```
+
+È possibile eliminare una `#define` precedentemente assegnata per mezzo della direttiva `#undef`:
+
+```
+#define LANG_IT
+#include "preprocessore-colore.h"
+#undef LANG_IT
+
+#ifdef LANG_IT
+    #define  STR_BOOL   "booleano"
+    #define  STR_CHAR   "carattere"
+    #define  STR_INT    "intero"
+    #define  STR_DEC    "decimale"
+    #define  STR_ARRAY  "array"
+    #define  STR_VERDE  "verde"
+#else 
+    #define  STR_BOOL   "boolean"
+    #define  STR_CHAR   "character"
+    #define  STR_INT    "integer"
+    #define  STR_DEC    "decimal"
+    #define  STR_ARRAY  "array"
+    #define  STR_VERDE  "green"
+#endif
+```
+
+L'output di questo codice, sarà:
+
+```
+% g++ src/cpp/preprocessore-main.cpp -D LANG_EN -o src/out/esempio
+% ./src/out/esempio                                               
+   boolean: 0
+ character: C
+   integer: 1234567890
+   decimal: 3.14
+     array: abcdefghilmnopqrstuvz
+colore RGB: verde
+```
+
 <!--
 
 Alcuni esempi validi di costanti simboliche sono:
