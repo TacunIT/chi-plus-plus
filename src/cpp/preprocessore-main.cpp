@@ -2,7 +2,7 @@
 #include<iomanip>
 
 #define LANG_IT
-#include "preprocessore-colore.h"
+#include "colore.h"
 #undef LANG_IT
 
 #ifdef LANG_IT

@@ -213,19 +213,13 @@ L'output di questo codice, sarà:
 colore RGB: verde
 ```
 
-<!--
+---
+<a id="dottrina"></a>
 
-Alcuni esempi validi di costanti simboliche sono:
-#define FALSE 0
-#define TRUE 1
-#define NUMERO 0.2
-#define STRINGA "Stringa di caratteri" 
-Alcuni esempi validi di macroistruzioni sono:
-#define INCREMENTO(x) x * 0.2
-#define CUBO(x) x * x * x 
+Il tuo DNA contiene i geni che hanno fatto permesso a tua madre di innamorarsi di tuo padre. <!-- cfr. Dawkins, Orologiaio cieco -->
+Allo stesso modo, contiene i geni che ti spingeranno a cercare e ad amare una persona in particolare, perché quella persona è importante per la tua vita.  
+Il Maestro Canaro una volta disse:
 
-È inoltre possibile eliminare una #define precedentemente assegnata per mezzo della direttiva #undef.
+> Le donne cercano per tutta la vita il loro uomo ideale. Nel frattempo, si sposano.
 
-le definizioni possono essere in un file separato o anche nei parametri di compilazione
-
--->
+Questo è vero per tutti noi.
