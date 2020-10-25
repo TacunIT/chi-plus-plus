@@ -1,3 +1,7 @@
+## 0.14.2 (October 25, 2020)
+  - Iniziata sezione dottrina
+  - Completato testo sul precompilatore
+
 ## 0.14.1 (October 15, 2020)
   - Aggiunta codice per direttive condizionali
   - Aggiunta codice di esempio per include
