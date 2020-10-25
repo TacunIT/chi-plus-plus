@@ -39,7 +39,7 @@ class Colore {
 public:
     ColoreRGB coloreRgb;        
     void nome_colore() {
-        cout << STR_RGB;
+        cout << STR_RGB << ": ";
         switch(coloreRgb.valore) {
             case red  : cout << STR_RED  ; break;
             case green: cout << STR_GREEN; break;
