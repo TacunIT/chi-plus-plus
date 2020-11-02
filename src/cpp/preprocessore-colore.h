@@ -32,8 +32,8 @@ struct ColoreRGB {
 };
 
 /** 
- * Definisce la classe Colore, che contiene un coloreRGB 
- * e una funzione che ne mostra il nome.
+ * Definisce la classe Colore, che contiene una struct 
+ * coloreRGB e una funzione che ne mostra il nome.
  */
 class Colore {
 public:
