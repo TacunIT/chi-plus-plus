@@ -48,10 +48,10 @@ Questo esempio utilizza due forme distinte per la direttiva `include`:
 #include "colore.h" 
 ```
 
-La prima forma serve a includere i file di sistema, come, appunto, `iostream`, che contiene le definizioni degli *stream* stadard del C++; la seconda forma si utilizza per i file specifici dell'applicazione; nel nostro caso, `colore.h`.  
+La prima forma serve a includere i file di sistema, come, appunto, `iostream`, che contiene le definizioni degli *stream* standard del C++; la seconda forma si utilizza per i file specifici dell'applicazione; nel nostro caso, `colore.h`.  
 I file di include possono includere a loro volta altri file; per esempio, `colore.h` include `iostream`, perché utilizza lo *stream* `cout`.
 Anche il nostro codice di esempio, però, include `iostream` e questo potrebbe causare un errore di compilazione se il precompilatore effettuasse due volte l'inclusione, perché sarebbbe come se dichiarassimo due volte la stessa funzione.
-Per questo motivo, all'inizio del nostro file di include (ma anche di ìostream`) troviamo un altro tipo di diretttive al preprocessore, le cosiddette: 
+Per questo motivo, all'inizio del nostro file di include (ma anche di `iostream`) troviamo un altro tipo di diretttive al preprocessore, le cosiddette: 
 <a id="condizionali"
    onclick="history.back()" 
    title="fare click per tornare alla pagina precedente">direttive condizionali</a>:
@@ -118,8 +118,8 @@ cout << 6 << "ebete" << endl;
 
 ```
 
-perché se la stringa dovesse variare (e stai pur certo che succederà), tu dovrai modificare tutte le righe di codice in cui compare.  
-Al contrario, se definisci delle costranti per tutte le stringhe che utilizzi nel tuo codice, la correzione sarà unica:
+perché se la stringa dovesse variare (e stai pur certo che succederà), tu dovrai modificare tutte le righe di codice in cui compare.
+Al contrario, se definisci delle costanti per tutte le stringhe che utilizzi nel tuo codice, la correzione sarà unica:
 
 ```
 #define STR_COME_SEI = "astuto";
@@ -132,7 +132,7 @@ cout << 6 << STR_COME_SEI << endl;
 
 ```
 
-Unite alle direttive condizionali, le definizioni di costranti stringa ti permettono di avere un codice multilingua:
+Unite alle direttive condizionali, le definizioni di costanti stringa ti permettono di avere un codice multilingua:
 
 ```
 #ifdef LANG_IT

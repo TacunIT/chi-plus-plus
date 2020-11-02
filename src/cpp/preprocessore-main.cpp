@@ -1,5 +1,5 @@
 #include <iostream>
-#include<iomanip>
+#include <iomanip>
 
 #define LANG_IT
 #include "colore.h"
