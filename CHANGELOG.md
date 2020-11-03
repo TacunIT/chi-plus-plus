@@ -1,3 +1,7 @@
+## 0.14.3 (November 03, 2020)
+  - Redazione testo dottrina
+  - Correzioni al testo
+
 ## 0.14.2 (October 25, 2020)
   - Iniziata sezione dottrina
   - Completato testo sul precompilatore
