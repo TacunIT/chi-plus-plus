@@ -215,11 +215,23 @@ colore RGB: verde
 
 ---
 <a id="dottrina"></a>
-
-Il tuo DNA contiene i geni che hanno fatto permesso a tua madre di innamorarsi di tuo padre. <!-- cfr. Dawkins, Orologiaio cieco -->
-Allo stesso modo, contiene i geni che ti spingeranno a cercare e ad amare una persona in particolare, perché quella persona è importante per la tua vita.  
+L'amore è un difetto di fabbrica.  
+Più che un difetto, è una *backdoor* o, meglio: una bomba a tempo che viene inserita di nascosto nel tuo software, per essere certi che farai la cosa giusta quando arriverà il momento.  
+Ti sei mai innamorato?
+No? be' succederà.
+Ci sono due modi, di innamorarsi: o conosci una persona e te ne innamori o conosci una persona e scopri che è lei (o lui) che hai sempre amato.
+Il primo è il caso più comune; il secondo caso, non è un caso.  
 Il Maestro Canaro una volta disse:
 
 > Le donne cercano per tutta la vita il loro uomo ideale. Nel frattempo, si sposano.
 
-Questo è vero per tutti noi.
+Questo è vero per tutti, uomini e donne.
+Il tuo DNA contiene i geni che hanno fatto nascere l'amore fra i tuoi genitori: occhi verdi, spalle larghe, un bel seno o magari un bel sedere.
+<!-- 
+"Se un maschio ha ereditato dal padre una coda lunga, è probabile che abbia ereditato dalla madre anche i geni che l’hanno indotta a scegliere la coda lunga del padre." - Dawkins, L'Orologiaio Cieco, 1986 
+La utilizzo perché mi fa comodo e perché è bello pensare che nel nostro DNA ci sia anche ciò che ha fatto innamorare i nostri genitori, ma personalmente, non concordo con le conclusioni di Dawkins - almeno, nel modo in cui sono esposte nel libro: la scelta del compagno avviene in base a un'analisi delle sue probabilità di essere un buon pasre (nel senso di: "sano") o su fattori genetici? Che esistano dei geni che spingono le femmine a ricercare maschi sani mi sembra una forzatura..
+-->
+Allo stesso modo, dentro di te potrebbe esserci qualcosa che ti spingerà a cercare e ad amare una persona in particolare, perché quella persona è importante per la tua vita.  
+Quando (se) la incontrerai, avrai l'impressione di conoscerla già.
+Capirai che se trovavi particolarmente affascinante una certa attrice era perché le somigliava, anche se in termini temporali o di notorietà è vero il contrario.  
+Sfortunatamente, questo non vuol dire che la vostra storia durerà o che vivrete per sempre felici e contenti, come nelle favole.
