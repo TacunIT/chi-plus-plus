@@ -1,3 +1,7 @@
+## 0.14.4 (November 11, 2020)
+- Revisione del testo
+  - Pubblicato il capitolo sul preprocessore
+
 ## 0.14.3 (November 03, 2020)
   - Redazione testo dottrina
   - Correzioni al testo
