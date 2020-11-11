@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      I tipi di dato
 permalink:  /man/tipi-di-dato
-quote:      "Il software ha la natura dell'Arte"
+quote:      "Tutto è byte"
 ---
 
 La varietà dei tipi di dato disponibili è la caratteristica principale del C++.
