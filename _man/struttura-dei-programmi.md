@@ -202,8 +202,8 @@ inline float scorporaIVA(long stipendio, float aliquota)
 Anche in un esempio così semplice, vedi bene che differenza ci sia, fra una funzione che può svolgere più azioni eterogenee e una funzione che svolge una singola azione, ben precisa.
 Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di dichiararla come [`inline`](/man/funzioni#inline), aumentando la velocità di esecuzuione del programma.
 
-
-<a id="dottrina">---</a>
+---
+<a id="dottrina"></a>
 
 La funzione `main` del C'hi++ è quello che gli scienziati chiamano: *Big Bang*.
 Così come l'atmosfera è agitata dallo scontro di masse di aria calda e fredda, l'Energia dell'Universo è costantemente sottoposta all'azione contrapposta di due forze: *Gravità*, che tende ad accorpare tutta la materia nell'Uno primgenio ed *Entropia*, che al contrario, tende a dividere.
@@ -212,7 +212,7 @@ Ciò che non è corretto (e non solo in Poe) è l'idea che l'espansione dell'Uni
 La vita dell'Universo è ciclica: quando è preponderante l'Entropia, l'Universo si espande, come in questo momento; quando "vince" la Gravità, l'Universo collassa su sé stesso e torna all'Uno.
 Ciò che evita la stasi in uno dei due punti estremi del ciclo &mdash; l'Uno e la morte termica &mdash; è una terza forza, che il Maestro Canaro chiamava: [*l'annosa dicotomia fra ciò che desideriamo è ciò di cui abbiamo bisogno*](/man/mitopoietica#annosa-dicotomia). 
 
-Così come una scatola di mattoncini Lego contiene tutti gli edifici che hai costruito e che costruirai in futuro, nell'Uno primigenio è concentrata tutta l'Energia dell'Universo e quindi ogni essere animato o inanimato che sia mai esistito o che mai esisterà, dalla nebulosa di <em>Wolf–Rayet</em> alla tua maestra delle Elementari.
+Così come una scatola di mattoncini Lego contiene tutti gli edifici che hai costruito e che costruirai in futuro, nell'Uno primigenio è concentrata tutta l'Energia dell'Universo e quindi ogni essere animato o inanimato che sia mai esistito o che mai esisterà.
 La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo, che non può essere misurato perché non esistono eventi in base a cui farlo.
 Non ci sono né morte, né sofferenza, né malattia, né separazione; l'Uno è, di fatto, ciò che la maggior parte degli esseri senzienti descrive e auspica come un Universo perfetto.  
 L'Energia, inizialmente, è soddisfatta, ma a poco a poco l'appagamento per la raggiunta Unità scema e cresce invece il desiderio di qualcosa di diverso da quella cristallina perfezione.
