@@ -213,10 +213,10 @@ L'output di questo codice, sarà:
 colore RGB: verde
 ```
 
----
-<a id="dottrina"></a>
+<hr id="dottrina">
+
 L'amore è un difetto di fabbrica.  
-Più che un difetto, è una bomba a tempo, che viene inserita di nascosto nel tuo software, per essere certi che farai la cosa giusta quando arriverà il momento.  
+Più che un difetto, è una bomba a tempo, che viene inserita di nascosto nel tuo software, per essere certi che farai la cosa giusta quando arriverà il momento.
 Ti sei mai innamorato?
 No? be' succederà.
 Ci sono due modi, di innamorarsi: o conosci una persona e te ne innamori o conosci una persona e scopri che è lei (o lui) che hai sempre amato.

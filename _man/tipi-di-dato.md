@@ -336,7 +336,7 @@ Il puntatore `p1` è un `unsigned char`, quindi si sposta di otto bit; il puntat
 È questo il motivo per cui il secondo ciclo di lettura dura la metà del primo: perché la quantità di bit letta per ogni iterazione è doppia. 
 Se mi fossi distratto e avessi copiato il codice del primo ciclo di lettura così com'è, senza dividere per due il numero di cicli, il puntatore avrebbe continuato a “camminare” in avanti nella memoria, oltre i confini dell'array e questo, come vedremo in seguito, non è assolutamente bene.
 
----
+<hr id="dottrina">
 
 Quello che ti ho appena detto del C++ vale anche per il C'hi++.
 Così come la “realtà” all'interno di un computer altro non è che una sequenza di valori binari che, aggregati fra di loro, costituiscono le entità gestite dal sistema, la realtà in cui noi viviamo altro non è che una manifestazione dell'azione dell'energia dell'Universo sulle particelle che costituiscono tutto ciò che esiste, ovvero gli *spazioni*.

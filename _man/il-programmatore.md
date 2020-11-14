@@ -105,7 +105,7 @@ di codice classico, ma senza alcun apporto creativo.
 Fra questi individui e i veri programmatori c'è la stessa differenza
 che passa fra un sessuologo e un pornodivo.
 
----
+<hr id="dottrina">
 
 {% include_relative canaro/paranoici.md %}
 

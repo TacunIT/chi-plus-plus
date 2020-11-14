@@ -202,8 +202,7 @@ inline float scorporaIVA(long stipendio, float aliquota)
 Anche in un esempio così semplice, vedi bene che differenza ci sia, fra una funzione che può svolgere più azioni eterogenee e una funzione che svolge una singola azione, ben precisa.
 Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di dichiararla come [`inline`](/man/funzioni#inline), aumentando la velocità di esecuzuione del programma.
 
----
-<a id="dottrina"></a>
+<hr id="dottrina">
 
 La funzione `main` del C'hi++ è quello che gli scienziati chiamano: *Big Bang*.
 Così come l'atmosfera è agitata dallo scontro di masse di aria calda e fredda, l'Energia dell'Universo è costantemente sottoposta all'azione contrapposta di due forze: *Gravità*, che tende ad accorpare tutta la materia nell'Uno primgenio ed *Entropia*, che al contrario, tende a dividere.
