@@ -143,7 +143,7 @@ risultano evidenti. Scegliere l'uno o l'altro è spesso una questione
 di convenienza, altre volte una questione di stile, ma se si capisce la
 vera essenza del Linguaggio, è solo una questione di ritmo.
 
----
+<hr id="dottrina">
 
 {% include_relative canaro/codice-commentato.md %}
 

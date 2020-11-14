@@ -282,6 +282,6 @@ Il C non ha principi e i suoi costrutti sono limitati ai tipi di dato
 previsti.
 Il C++, grazie ai suoi principii, ha una maggior duttilità e può evolversi, adattando i suoi costrutti a qualsiasi contesto.
 
----
+<hr id="dottrina">
   
 {% include_relative canaro/scienza-come-il-C.md %}
