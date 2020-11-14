@@ -1,3 +1,8 @@
+## 0.15.0 (November 14, 2020)
+  - Aggiunto HR#dottrina alle pagine del manuale
+  - Rimosso il capitolo sui puntatori
+  - Merge branch 'capitolo/preprocessore'
+
 ## 0.14.4 (November 11, 2020)
 - Revisione del testo
   - Pubblicato il capitolo sul preprocessore
