@@ -390,6 +390,10 @@ BODY.index HEADER img.logo {
     float: none;
 }
 
+BODY.index MAIN SECTION.citazione.pagina {
+    padding-top: 4rem;
+}
+
 /**
  *
  *  Stili per il manuale
