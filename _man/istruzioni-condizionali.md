@@ -1,18 +1,22 @@
 ---
-status:     bozza
+status:     redazione
 layout:     manuale
 class:      capitolo
 title:      Istruzioni condizionali
 permalink:  /man/istruzioni-condizionali
-quote:      ""
+quote:      "Fare qualcosa d’intenzionale implica capire che esistono delle alternative, e sceglierne una; e questi sono attributi dell’intelligenza"
 ---
+
+<!-- 
+La citazione è da: Asimov, Isaac. Civiltà extraterrestri (Italian Edition) . MONDADORI. Kindle Edition. 
+-->
 
 Le istruzioni condizionali sono l'elemento più importante del codice.
 
-Ogni programma deve saper reagire correttamente al variare delle condizioni di utilizzo; per far ciò, si utilizzano le istruzioni condizionali, che permettono di definire il comportamento del sistema a seconda che una determinata condizione si riveli vera o falsa.
+Ogni programma deve saper reagire correttamente al variare delle condizioni di utilizzo; per far ciò, si utilizzano le istruzioni condizionali, che permettono di definire il comportamento del sistema a seconda che una determinata condizione si riveli vera o falsa.  
 Il C++ possiede due tipi di istruzione condizionale: le sequenze `if-else` e l'istruzione `switch`.
 
-### Istruzioni `if-else`
+### Istruzioni if-else
 
 La forma generale di questa istruzione è la seguente:
 
@@ -198,42 +202,7 @@ Per esempio, per un sistema che generi del codice in maniera automatica, è molt
 Pensa a una *stored-procedure* che debba controllare l'integrità referenziale dei parametri ricevuti:
 
 ```
-CREATE FUNCTION utente_insert (
-  _id_classe INTEGER
-, _id_gruppo INTEGER
-, _username  VARCHAR(255)
-, _cognome   VARCHAR(80)
-, _nome      VARCHAR(80)
-)
-RETURNS INTEGER DETERMINISTIC
-BEGIN
-    DECLARE _id    INTEGER DEFAULT -1;
-    DECLARE _count INTEGER DEFAULT 0;
-
-    SELECT count(*) INTO _count FROM classe WHERE (id = _id_classe);
-    IF _count = 0 THEN
-        RETURN -2;
-    END IF;
-
-    SELECT count(*) INTO _count FROM gruppo WHERE (id = _id_gruppo);
-    IF _count = 0 THEN
-        RETURN -3;
-    END IF;
-
-    IF (_username IS NULL) OR (_username = '') THEN
-        RETURN -4;
-    END IF;
-    
-    IF (_cognome IS NULL) OR (_cognome = '') THEN
-        RETURN -5;
-    END IF;
-
-    IF (_nome IS NULL) OR (_nome = '') THEN
-        RETURN -6;
-    END IF;
-
-    ...
-
+{% include_relative src/istruzioni-condizionali-stored-procedure.sql %}
 ```
 
 Se scrivi il codice in questa maniera, puoi inserire o rimuovere un parametro (e i relativi controlli) senza alterare il resto del codice, cosa che non avverrebbe se tu concatenassi le istruzioni `if`.
