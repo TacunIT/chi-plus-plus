@@ -227,24 +227,84 @@ Non avendo un'istruzione `return` il codice della prima verifica non bloccherà 
 
 ### Istruzione switch
 
+L’istruzione `switch` permette di gestire più casi, basandosi sulla valutazione di una espressione:
+
 ```
-{% include_relative src/istruzioni-condizionali-stored-procedure.sql %}
-```
-
-<!--
-
-L’altra istruzione condizionale è istruzione switch che esegue una o più serie di casi basandosi sulla valutazione di una espressione. Il valore risolto di questa espressione deve essere di tipo int, normalmente viene effettuata in modo automatico la conversione di tipo. 
-La forma generale di questa istruzione è:
-
 switch(<espressione>)
 {
-  case costante : istruzioni...
-  case costante : istruzioni...
-  .............................
+  case <costante> : istruzioni... [break];
+  case <costante> : istruzioni... [break];
+  ...
   default: istruzioni...
 }
-Le parole chiave case e default sono label che vengono raggiunte in base alla valutazione dell’espressione.
-Le case possono essere in numero arbitrario mentre la default deve essere unica. Il flusso inizia alla case il cui valore della costante è uguale al valore risolto dell'espressione di switch e prosegue fino ad incontrare una esplicita istruzione di interruzione determinata dalla parola chiave break. Quando nessun valore case è uguale al valore dell’espressione viene raggiunta la label default.
+```
+
+Le parole-chiave `case` e `default` identificano i valori gestiti dall'istruzione `switch`.
+I `case` possono (ed è utile che siano) più di uno, ma le costanti associate a ciascuno di essi devono avere dei valori diversi.
+La condizione `default`, al contrario, deve essere unica.   
+L'esecuzione dell'istruzione inizia al `case` la cui costante è uguale al valore dell'espressione di `switch` e termina alla parola chiave `break`.
+Se l'espressione ha un valore non previsto dai `case`, l'istruzione esegue il codice associato all'etichetta `default`:
+
+
+```
+{% include_relative src/istruzioni-condizionali-switch.cpp %}
+```
+
+Compilando ed eseguendo questo codice, otterrai:
+
+
+```
+% g++ src/cpp/istruzioni-condizionali-switch.cpp -o src/out/esempio
+% src/out/esempio                                                  
+Inserire un valore da: 1 a 9
+% src/out/esempio 4
+Marte
+% src/out/esempio terra
+Valore non valido
+```
+
+Se tu togliessi le interruzioni `break` alla fine di ciascun caso, l'output de programma sarebbe:
+
+```
+% src/out/esempio 4    
+MarteGioveSaturnoUranoNettunoPlutoneInserire un valore da: 1 a 9
+```
+
+Con una `break` alla fine di ciascun caso, l'istruzione `switch` è una forma più elegante (ed efficiente) dell'istruzione `if - else if`:
+
+```
+if(piaeta == POS_ERRORE) {
+   cout << "Valore non valido"; 
+} else if(pianeta == POS_MERCURIO) {
+    cout << "Mercurio"; 
+} else if(pianeta == POS_VENERE) {
+    cout << "Venere";   
+} else if ..         
+```
+
+
+Ricordati sempre che, per dichiarare delle variabili all'interno dei `case`, è necessario aggiungere delle parentesi graffe; altrimenti, avrai un errore in fase di compilazione:
+
+```
+switch( x ) {
+    case 1: 
+        int y = 9;      /** errore di complilazione */
+        cout << x + y; 
+        break;
+    case 2: {
+        int y = 2;      /** corretto */
+        cout << x + y ; 
+        break;
+    }
+    default:
+        cout << "default" << endl; 
+}
+
+```
+
+<hr id="dottrina">
+
+<!--
 
 @todo
 - introdurre l'idea delle "variazioni" della storia dell'Universo
