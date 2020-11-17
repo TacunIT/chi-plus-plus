@@ -1,3 +1,14 @@
+## 0.15.2 (November 17, 2020)
+  - Completata prima stesura istruzione switch
+  - Corretto autore citazione index
+  - Corretto stile citazione index
+
+## 0.15.1 (November 15, 2020)
+  - Completato testo istruzione if
+  - Isolata stored-procedure in un file esterno
+  - Aggiunte note esportate da Kindle
+  - Aggiunta citazione da Asimov all'inizio della pagina index
+
 ## 0.15.0 (November 14, 2020)
   - Aggiunto HR#dottrina alle pagine del manuale
   - Rimosso il capitolo sui puntatori

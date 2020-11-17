@@ -53,7 +53,7 @@
 </nav>
 </header>
 
-        <main class="bozza">
+        <main class="redazione">
             
         
 
@@ -61,16 +61,20 @@
                 Istruzioni condizionali
             </h1>
 
-            <blockquote class="motto"></blockquote>
+            <blockquote class="motto">Fare qualcosa d’intenzionale implica capire che esistono delle alternative, e sceglierne una; e questi sono attributi dell’intelligenza</blockquote>
 
             <section id="testo">
 
-                <p>Le istruzioni condizionali sono l’elemento più importante del codice.</p>
+                <!-- 
+La citazione è da: Asimov, Isaac. Civiltà extraterrestri (Italian Edition) . MONDADORI. Kindle Edition. 
+-->
 
-<p>Ogni programma deve saper reagire correttamente al variare delle condizioni di utilizzo; per far ciò, si utilizzano le istruzioni condizionali, che permettono di definire il comportamento del sistema a seconda che una determinata condizione si riveli vera o falsa.
+<p>Le istruzioni condizionali sono l’elemento più importante del codice.</p>
+
+<p>Ogni programma deve saper reagire correttamente al variare delle condizioni di utilizzo; per far ciò, si utilizzano le cosiddette <em>istruzioni condizionali</em>, che permettono di definire il comportamento del sistema a seconda che una determinata condizione si riveli vera o falsa.<br />
 Il C++ possiede due tipi di istruzione condizionale: le sequenze <code>if-else</code> e l’istruzione <code>switch</code>.</p>
 
-<h3 id="istruzioni-if-else">Istruzioni <code>if-else</code></h3>
+<h3 id="istruzioni-if-else">Istruzioni if-else</h3>
 
 <p>La forma generale di questa istruzione è la seguente:</p>
 
@@ -90,7 +94,7 @@ Il C++ possiede due tipi di istruzione condizionale: le sequenze <code>if-else</
 }
 </code></pre>
 
-<p>Se la condizione <em>falso</em> non richiede alcuna azione specifica, il secondo blocco di istruzioni può essere omesso:</p>
+<p>Se la condizione falsa non richiede alcuna azione specifica, il secondo blocco di istruzioni può essere omesso:</p>
 
 <pre><code>typedef Importo unsigned long;
 
@@ -113,8 +117,11 @@ else
 </code></pre>
 
 <p>Personalmente, trovo che questa forma sia inelegante e che renda il codice meno chiaro, favorendo quindi gli errori.
-La utilizzo solo nelle istruzioni di gestione degli errori, dove il flusso del programma si interrompe bruscamente, perché l’aspetto sgraziato dell’istruzione evidenzia l’eccezione, rendendo il codice più auto-esplicativo.
-<!-- @todo - aggiugere codice di esempio --></p>
+La utilizzo solo nelle istruzioni di gestione degli errori, dove il flusso del programma si interrompe bruscamente, perché l’aspetto sgraziato dell’istruzione evidenzia l’eccezione, rendendo il codice più auto-esplicativo.</p>
+
+<pre><code>if ( divisore == 0 ) 
+    throw std::runtime_error("errore");
+</code></pre>
 
 <p>Se le condizioni da valutare sono più di due, si possono concatenare più istruzioni condizionali utilizzando l’istruzione <code>else if</code>, che permette di definire una condizione alternativa alla prima e di associarle un blocco di codice.
 Anche in questo caso, si può chiudere la sequenza con un’istruzione <code>else</code>, definendo un blocco di istruzioni da eseguire se non si verifica nessuna delle condizioni previste.</p>
@@ -164,32 +171,26 @@ else
 <pre><code>if ( &lt;condizione&gt; ) { ...} else { ... }
 </code></pre>
 
-<p>Se le istruzioni sono poche e semplici, una forma vale l’altra (fatte salve le questioni di stile, ovviamente), ma se il flusso del programma prevede, come di solito avviene, delle condizioni annidate, è necessario fare in modo che la forma dell’istruzione semplifichi tanto la scrittura che la lettura che un’eventuale correzione del codice.<br />
+<p>Se le istruzioni sono poche e semplici, una forma vale l’altra (fatte salve le questioni di stile, ovviamente), ma se il flusso del programma fosse, come di solito avviene, più complesso, è necessario fare in modo che la forma dell’istruzione semplifichi la scrittura, la lettura e un’eventuale correzione del codice.<br />
 Immagina un brano di codice che debba fare una verifica all’inizio dell’elaborazione e, a seconda dell’esito, eseguire una sequenza di istruzioni o inviare un messaggio di errore:</p>
 
-<pre><code>if ( &lt;condizione&gt; )
-{
+<pre><code>if ( &lt;condizione&gt; ){
     /*
      * righe di codice da
      * eseguire in caso la
      * condizione sia vera
      */
-}
-else
-{
-    /* messaggio di errore */
+} else {
+    /* gestione dell'errore */
 }
 </code></pre>
 
 <p>Se le istruzioni da eseguire in caso di buon successo della verifica sono poche e semplici, questa sequenza non darà problemi, ma se, al contrario, le istruzioni fossero tante e complesse, leggendo il codice potresti arrivare all’istruzione <code>else</code> e non ricordarti più a quale condizione fosse associata.<br />
 In questi casi, io preferisco la forma:</p>
 
-<pre><code>if ( &lt;errore&gt; )
-{
-    /* messaggio di errore */
-}
-else
-{
+<pre><code>if ( &lt;errore&gt; ) {
+    /* gestione dell'errore */
+} else {
     /*
      * righe di codice da
      * eseguire in caso la
@@ -198,25 +199,25 @@ else
 }
 </code></pre>
 
-<p>Dato che la gestione dell’errore non richiederà mai più di qualche riga di codice, a colpo d’occhio potrai capire tutto il flusso del programma, indipendentemente dalla lunghezza del secondo blocco di istruzioni.</p>
+<p>Dato che la gestione dell’errore non richiederà mai più di qualche riga di codice, potrai capire a colpo d’occhio tutto il flusso del programma, indipendentemente dalla lunghezza del secondo blocco di istruzioni.</p>
 
 <p>Tutto questo, ovviamente, non vuole essere né un invito né una giustificazione per la scrittura di istruzioni complesse.
-A meno che non sia necessario evitare le chiamate a funzione per garantire un’alta velocità di esecuzione, è sempre meglio scomporre il flusso del programma in una serie di funzioni distinte.
+A meno che non sia necessario limitare le chiamate a funzione per garantire un’alta velocità di esecuzione, è sempre meglio scomporre il flusso del programma in una serie di funzioni distinte e specializzate.
 Renderai il tuo programma un po’ più lento (o, meglio: un po’ meno veloce), ma il codice sarà molto più facile da leggere o da modificare. 
-<!-- @todo parlare delle macro, ma non qui. --></p>
+<!-- @todo parlare del "codice spaghetti". --></p>
 
 <p>Immagina adesso un brano di codice che richieda molte condizioni <code>if</code> concatenate:</p>
 
 <pre><code>esito = 0;
 
 if ( &lt;condizione 1&gt; ) {
-    esito = 1
+    esito = 1;
 } else if ( &lt;condizione 2&gt; ) {
-    esito = 2
+    esito = 2;
 } else if ( &lt;condizione 3&gt; ) {
-    esito = 3
+    esito = 3;
 } else {
-    esito = 9
+    esito = 9;
 }
 
 return esito
@@ -228,18 +229,19 @@ Il buon programmatore, allora, può decidere di contravvenire alla (giusta) norm
 <pre><code>esito = 0;
 
 if ( &lt;condizione 1&gt; ) {
-    return 1
+    return 1;
 }
 if ( &lt;condizione 2&gt; ) {
-    return 2
+    return 2;
 } 
 if ( &lt;condizione 3&gt; ) {
-    return 3
+    return 3;
 } 
+
 return 9
 </code></pre>
 
-<p>Non ti sto dicendo che sia giusto scrivere così e vedi da solo che il codice è rozzo e inelegante, ma ci potrebbero essere dei casi in cui sia questa, la forma più efficiente.
+<p>Non ti sto dicendo che sia giusto scrivere così e vedi da solo che il codice è rozzo e inelegante, ma ci potrebbero essere dei casi in cui sia questa, la forma da preferire.
 Per esempio, per un sistema che generi del codice in maniera automatica, è molto più semplice gestire delle istruzioni <code>if</code> isolate che delle condizioni <code>if-else</code> concatenate.
 Pensa a una <em>stored-procedure</em> che debba controllare l’integrità referenziale dei parametri ricevuti:</p>
 
@@ -281,20 +283,167 @@ BEGIN
 
 </code></pre>
 
-<p>Se scrivi il codice in questa maniera, puoi inserire o rimuovere un parametro (e i relativi controlli) senza alterare il resto del codice, cosa che non avverrebbe se tu concatenassi le istruzioni <code>if</code>.</p>
+<p>Se scrivi il codice in questa maniera, puoi inserire o rimuovere un parametro (e i relativi controlli) senza alterare il resto del codice, cosa che non avverrebbe se tu concatenassi le istruzioni <code>if</code>. 
+Perderai un po’ di velocità di esecuzione, ma il codice sarà molto più facile da scrivere o da modificare.<br />
+Attento, però: mettere in sequenza delle semplici istruzioni <code>if</code> è cosa
+ben diversa dal creare una catena di istruzioni <code>else-if</code> perché, se in caso di errore non blocchi l’elaborazione con un’istruzione <code>return</code>, il programma andrà avanti verificando le condizioni seguenti e l’errore nella prima condizione potrebbe ripercuotersi sul codice successivo:</p>
+
+<pre><code>/** Come direbbe Shakespeare: Qui comincia il male.. **/
+if ( divisore == 0 ) {
+    cout &lt;&lt; "Errore: divisione per zero" &lt;&lt; endl;
+}
+
+/** ..e il peggio lo segue **/
+if ( (dividendo / divisore) &gt; 1 ) {
+    ...
+}
+</code></pre>
+
+<p>Non avendo un’istruzione <code>return</code> il codice della prima verifica non bloccherà l’esecuzione della funzione, che andrà in errore quando proverà a eseguire una divisione per zero.</p>
+
+<h3 id="istruzione-switch">Istruzione switch</h3>
+
+<p>L’istruzione <code>switch</code> permette di gestire più casi, basandosi sulla valutazione di una espressione:</p>
+
+<pre><code>switch(&lt;espressione&gt;)
+{
+  case &lt;costante&gt; : istruzioni... [break];
+  case &lt;costante&gt; : istruzioni... [break];
+  ...
+  default: istruzioni...
+}
+</code></pre>
+
+<p>Le parole-chiave <code>case</code> e <code>default</code> identificano i valori gestiti dall’istruzione <code>switch</code>.
+I <code>case</code> possono (ed è utile che siano) più di uno, ma le costanti associate a ciascuno di essi devono avere dei valori diversi.
+La condizione <code>default</code>, al contrario, deve essere unica. <br />
+L’esecuzione dell’istruzione inizia al <code>case</code> la cui costante è uguale al valore dell’espressione di <code>switch</code> e termina alla parola chiave <code>break</code>.
+Se l’espressione ha un valore non previsto dai <code>case</code>, l’istruzione esegue il codice associato all’etichetta <code>default</code>:</p>
+
+<pre><code>#include &lt;iostream&gt;
+#include &lt;cstdlib&gt;
+
+#define POS_NESSUNO -1
+#define POS_ERRORE   0
+#define POS_MERCURIO 1
+#define POS_VENERE   2
+#define POS_TERRA    3
+#define POS_MARTE    4
+#define POS_GIOVE    5
+#define POS_SATURNO  6
+#define POS_URANO    7
+#define POS_NETTUNO  8
+#define POS_PLUTONE  9
+
+using namespace std;
+
+int main(int argc, char** argv)
+{    
+    int pianeta;
+    
+    /** 
+     * Legge i parametri di input.
+     * Se ce ne sono, prova a convertire il primo parametro 
+     * in un intero. Se il parametro non è un intero, la 
+     * funzione atoi torna 0. 
+     */
+    if(argc &gt; 1) {
+        pianeta = atoi(argv[1]);
+    } else {
+        pianeta = POS_NESSUNO;
+    }
+    
+    /** Gestisce i casi possibili */
+    switch( pianeta ) {
+        case POS_ERRORE:   cout &lt;&lt; "Valore non valido"; 
+            break;
+        case POS_MERCURIO: cout &lt;&lt; "Mercurio";          
+            break;
+        case POS_VENERE:   cout &lt;&lt; "Venere";            
+            break;
+        case POS_TERRA:    cout &lt;&lt; "Terra";             
+            break;
+        case POS_MARTE:    cout &lt;&lt; "Marte";             
+            break;
+        case POS_GIOVE:    cout &lt;&lt; "Giove";             
+            break;
+        case POS_SATURNO:  cout &lt;&lt; "Saturno";           
+            break;
+        case POS_URANO:    cout &lt;&lt; "Urano";             
+            break;          
+        case POS_NETTUNO:  cout &lt;&lt; "Nettuno";           
+            break;          
+        case POS_PLUTONE:  cout &lt;&lt; "Plutone";           
+            break;
+        default:
+            cout &lt;&lt; "Inserire un valore da: " 
+                 &lt;&lt; POS_MERCURIO 
+                 &lt;&lt; " a " 
+                 &lt;&lt; POS_PLUTONE;                    
+    }
+    
+    cout &lt;&lt; endl;
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Compilando ed eseguendo questo codice, otterrai:</p>
+
+<pre><code>% g++ src/cpp/istruzioni-condizionali-switch.cpp -o src/out/esempio
+% src/out/esempio                                                  
+Inserire un valore da: 1 a 9
+% src/out/esempio 4
+Marte
+% src/out/esempio terra
+Valore non valido
+</code></pre>
+
+<p>Se tu togliessi le interruzioni <code>break</code> alla fine di ciascun caso, l’output de programma sarebbe:</p>
+
+<pre><code>% src/out/esempio 4    
+MarteGioveSaturnoUranoNettunoPlutoneInserire un valore da: 1 a 9
+</code></pre>
+
+<p>Con una <code>break</code> alla fine di ciascun caso, l’istruzione <code>switch</code> è una forma più elegante (ed efficiente) dell’istruzione <code>if - else if</code>:</p>
+
+<pre><code>if(piaeta == POS_ERRORE) {
+   cout &lt;&lt; "Valore non valido"; 
+} else if(pianeta == POS_MERCURIO) {
+    cout &lt;&lt; "Mercurio"; 
+} else if(pianeta == POS_VENERE) {
+    cout &lt;&lt; "Venere";   
+} else if ..         
+</code></pre>
+
+<p>Ricordati sempre che, per dichiarare delle variabili all’interno dei <code>case</code>, è necessario aggiungere delle parentesi graffe; altrimenti, avrai un errore in fase di compilazione:</p>
+
+<pre><code>switch( x ) {
+    case 1: 
+        int y = 9;      /** errore di complilazione */
+        cout &lt;&lt; x + y; 
+        break;
+    case 2: {
+        int y = 2;      /** corretto */
+        cout &lt;&lt; x + y ; 
+        break;
+    }
+    default:
+        cout &lt;&lt; "default" &lt;&lt; endl; 
+}
+
+</code></pre>
+
+<hr id="dottrina" />
 
 <!--
-Attento, però: mettere in sequenza delle semplici istruzioni `if` è cosa
-ben diversa dal creare una catena di istruzioni `else-if` .
 
 @todo
-- specificare la differenza e la necessità del return per bloccare i controlli;
 - introdurre l'idea delle "variazioni" della storia dell'Universo
 - chiudere con l'aneddoto del Maestro Canaro e il sacerdote buddista.
 
 -->
-
-<h3 id="istruzione-switch">Istruzione <code>switch</code></h3>
 
 
             </section>
