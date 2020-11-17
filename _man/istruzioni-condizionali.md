@@ -222,13 +222,29 @@ if ( (dividendo / divisore) > 1 ) {
 }
 ```
 
-Non avendo un'istruzione `return` il codice della prima verifica non bloccherà l'esecuzione della funzione, che adndrà in errore quando proverà a eseguire una divisione per zero.
+Non avendo un'istruzione `return` il codice della prima verifica non bloccherà l'esecuzione della funzione, che andrà in errore quando proverà a eseguire una divisione per zero.
 
 
 ### Istruzione switch
 
+```
+{% include_relative src/istruzioni-condizionali-stored-procedure.sql %}
+```
 
 <!--
+
+L’altra istruzione condizionale è istruzione switch che esegue una o più serie di casi basandosi sulla valutazione di una espressione. Il valore risolto di questa espressione deve essere di tipo int, normalmente viene effettuata in modo automatico la conversione di tipo. 
+La forma generale di questa istruzione è:
+
+switch(<espressione>)
+{
+  case costante : istruzioni...
+  case costante : istruzioni...
+  .............................
+  default: istruzioni...
+}
+Le parole chiave case e default sono label che vengono raggiunte in base alla valutazione dell’espressione.
+Le case possono essere in numero arbitrario mentre la default deve essere unica. Il flusso inizia alla case il cui valore della costante è uguale al valore risolto dell'espressione di switch e prosegue fino ad incontrare una esplicita istruzione di interruzione determinata dalla parola chiave break. Quando nessun valore case è uguale al valore dell’espressione viene raggiunta la label default.
 
 @todo
 - introdurre l'idea delle "variazioni" della storia dell'Universo
