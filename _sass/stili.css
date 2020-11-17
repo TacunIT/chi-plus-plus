@@ -390,6 +390,10 @@ BODY.index HEADER img.logo {
     float: none;
 }
 
+BODY.index MAIN SECTION.citazione.pagina {
+    padding-top: 3rem;
+}
+
 /**
  *
  *  Stili per il manuale
@@ -703,7 +707,7 @@ LABEL:after {
 SECTION.dedica,
 SECTION.citazione {
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0 auto;
     padding-top: 5rem;
     padding-left: 40%;

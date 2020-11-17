@@ -1,18 +1,22 @@
 ---
-status:     bozza
+status:     redazione
 layout:     manuale
 class:      capitolo
 title:      Istruzioni condizionali
 permalink:  /man/istruzioni-condizionali
-quote:      ""
+quote:      "Fare qualcosa d’intenzionale implica capire che esistono delle alternative, e sceglierne una; e questi sono attributi dell’intelligenza"
 ---
+
+<!-- 
+La citazione è da: Asimov, Isaac. Civiltà extraterrestri (Italian Edition) . MONDADORI. Kindle Edition. 
+-->
 
 Le istruzioni condizionali sono l'elemento più importante del codice.
 
-Ogni programma deve saper reagire correttamente al variare delle condizioni di utilizzo; per far ciò, si utilizzano le istruzioni condizionali, che permettono di definire il comportamento del sistema a seconda che una determinata condizione si riveli vera o falsa.
+Ogni programma deve saper reagire correttamente al variare delle condizioni di utilizzo; per far ciò, si utilizzano le cosiddette *istruzioni condizionali*, che permettono di definire il comportamento del sistema a seconda che una determinata condizione si riveli vera o falsa.  
 Il C++ possiede due tipi di istruzione condizionale: le sequenze `if-else` e l'istruzione `switch`.
 
-### Istruzioni `if-else`
+### Istruzioni if-else
 
 La forma generale di questa istruzione è la seguente:
 
@@ -34,7 +38,7 @@ if ( a > 8 ) {
 }
 ```
 
-Se la condizione *falso* non richiede alcuna azione specifica, il secondo blocco di istruzioni può essere omesso:
+Se la condizione falsa non richiede alcuna azione specifica, il secondo blocco di istruzioni può essere omesso:
 
 ```
 typedef Importo unsigned long;
@@ -60,7 +64,12 @@ else
 
 Personalmente, trovo che questa forma sia inelegante e che renda il codice meno chiaro, favorendo quindi gli errori.
 La utilizzo solo nelle istruzioni di gestione degli errori, dove il flusso del programma si interrompe bruscamente, perché l'aspetto sgraziato dell'istruzione evidenzia l'eccezione, rendendo il codice più auto-esplicativo.
-<!-- @todo - aggiugere codice di esempio -->
+
+```
+if ( divisore == 0 ) 
+    throw std::runtime_error("errore");
+```
+
 
 Se le condizioni da valutare sono più di due, si possono concatenare più istruzioni condizionali utilizzando l'istruzione `else if`, che permette di definire una condizione alternativa alla prima e di associarle un blocco di codice.
 Anche in questo caso, si può chiudere la sequenza con un'istruzione `else`, definendo un blocco di istruzioni da eseguire se non si verifica nessuna delle condizioni previste.
@@ -114,21 +123,18 @@ o perfino:
 if ( <condizione> ) { ...} else { ... }
 ```
 
-Se le istruzioni sono poche e semplici, una forma vale l'altra (fatte salve le questioni di stile, ovviamente), ma se il flusso del programma prevede, come di solito avviene, delle condizioni annidate, è necessario fare in modo che la forma dell'istruzione semplifichi tanto la scrittura che la lettura che un'eventuale correzione del codice.  
+Se le istruzioni sono poche e semplici, una forma vale l'altra (fatte salve le questioni di stile, ovviamente), ma se il flusso del programma fosse, come di solito avviene, più complesso, è necessario fare in modo che la forma dell'istruzione semplifichi la scrittura, la lettura e un'eventuale correzione del codice.  
 Immagina un brano di codice che debba fare una verifica all'inizio dell'elaborazione e, a seconda dell'esito, eseguire una sequenza di istruzioni o inviare un messaggio di errore:
 
 ```
-if ( <condizione> )
-{
+if ( <condizione> ){
     /*
      * righe di codice da
      * eseguire in caso la
      * condizione sia vera
      */
-}
-else
-{
-    /* messaggio di errore */
+} else {
+    /* gestione dell'errore */
 }
 ```
 
@@ -136,12 +142,9 @@ Se le istruzioni da eseguire in caso di buon successo della verifica sono poche 
 In questi casi, io preferisco la forma:
 
 ```
-if ( <errore> )
-{
-    /* messaggio di errore */
-}
-else
-{
+if ( <errore> ) {
+    /* gestione dell'errore */
+} else {
     /*
      * righe di codice da
      * eseguire in caso la
@@ -150,12 +153,12 @@ else
 }
 ```
 
-Dato che la gestione dell'errore non richiederà mai più di qualche riga di codice, a colpo d'occhio potrai capire tutto il flusso del programma, indipendentemente dalla lunghezza del secondo blocco di istruzioni.
+Dato che la gestione dell'errore non richiederà mai più di qualche riga di codice, potrai capire a colpo d'occhio tutto il flusso del programma, indipendentemente dalla lunghezza del secondo blocco di istruzioni.
 
 Tutto questo, ovviamente, non vuole essere né un invito né una giustificazione per la scrittura di istruzioni complesse.
-A meno che non sia necessario evitare le chiamate a funzione per garantire un'alta velocità di esecuzione, è sempre meglio scomporre il flusso del programma in una serie di funzioni distinte.
+A meno che non sia necessario limitare le chiamate a funzione per garantire un'alta velocità di esecuzione, è sempre meglio scomporre il flusso del programma in una serie di funzioni distinte e specializzate.
 Renderai il tuo programma un po' più lento (o, meglio: un po' meno veloce), ma il codice sarà molto più facile da leggere o da modificare. 
-<!-- @todo parlare delle macro, ma non qui. -->
+<!-- @todo parlare del "codice spaghetti". -->
 
 Immagina adesso un brano di codice che richieda molte condizioni `if` concatenate:
 
@@ -163,13 +166,13 @@ Immagina adesso un brano di codice che richieda molte condizioni `if` concatenat
 esito = 0;
 
 if ( <condizione 1> ) {
-    esito = 1
+    esito = 1;
 } else if ( <condizione 2> ) {
-    esito = 2
+    esito = 2;
 } else if ( <condizione 3> ) {
-    esito = 3
+    esito = 3;
 } else {
-    esito = 9
+    esito = 9;
 }
 
 return esito
@@ -182,71 +185,129 @@ Il buon programmatore, allora, può decidere di contravvenire alla (giusta) norm
 esito = 0;
 
 if ( <condizione 1> ) {
-    return 1
+    return 1;
 }
 if ( <condizione 2> ) {
-    return 2
+    return 2;
 } 
 if ( <condizione 3> ) {
-    return 3
+    return 3;
 } 
+
 return 9
 ```
 
-Non ti sto dicendo che sia giusto scrivere così e vedi da solo che il codice è rozzo e inelegante, ma ci potrebbero essere dei casi in cui sia questa, la forma più efficiente.
+Non ti sto dicendo che sia giusto scrivere così e vedi da solo che il codice è rozzo e inelegante, ma ci potrebbero essere dei casi in cui sia questa, la forma da preferire.
 Per esempio, per un sistema che generi del codice in maniera automatica, è molto più semplice gestire delle istruzioni `if` isolate che delle condizioni `if-else` concatenate.
 Pensa a una *stored-procedure* che debba controllare l'integrità referenziale dei parametri ricevuti:
 
 ```
-CREATE FUNCTION utente_insert (
-  _id_classe INTEGER
-, _id_gruppo INTEGER
-, _username  VARCHAR(255)
-, _cognome   VARCHAR(80)
-, _nome      VARCHAR(80)
-)
-RETURNS INTEGER DETERMINISTIC
-BEGIN
-    DECLARE _id    INTEGER DEFAULT -1;
-    DECLARE _count INTEGER DEFAULT 0;
+{% include_relative src/istruzioni-condizionali-stored-procedure.sql %}
+```
 
-    SELECT count(*) INTO _count FROM classe WHERE (id = _id_classe);
-    IF _count = 0 THEN
-        RETURN -2;
-    END IF;
+Se scrivi il codice in questa maniera, puoi inserire o rimuovere un parametro (e i relativi controlli) senza alterare il resto del codice, cosa che non avverrebbe se tu concatenassi le istruzioni `if`. 
+Perderai un po' di velocità di esecuzione, ma il codice sarà molto più facile da scrivere o da modificare.  
+Attento, però: mettere in sequenza delle semplici istruzioni `if` è cosa
+ben diversa dal creare una catena di istruzioni `else-if` perché, se in caso di errore non blocchi l'elaborazione con un'istruzione `return`, il programma andrà avanti verificando le condizioni seguenti e l'errore nella prima condizione potrebbe ripercuotersi sul codice successivo:
 
-    SELECT count(*) INTO _count FROM gruppo WHERE (id = _id_gruppo);
-    IF _count = 0 THEN
-        RETURN -3;
-    END IF;
+```
+/** Come direbbe Shakespeare: Qui comincia il male.. **/
+if ( divisore == 0 ) {
+    cout << "Errore: divisione per zero" << endl;
+}
 
-    IF (_username IS NULL) OR (_username = '') THEN
-        RETURN -4;
-    END IF;
-    
-    IF (_cognome IS NULL) OR (_cognome = '') THEN
-        RETURN -5;
-    END IF;
-
-    IF (_nome IS NULL) OR (_nome = '') THEN
-        RETURN -6;
-    END IF;
-
+/** ..e il peggio lo segue **/
+if ( (dividendo / divisore) > 1 ) {
     ...
+}
+```
+
+Non avendo un'istruzione `return` il codice della prima verifica non bloccherà l'esecuzione della funzione, che andrà in errore quando proverà a eseguire una divisione per zero.
+
+
+### Istruzione switch
+
+L’istruzione `switch` permette di gestire più casi, basandosi sulla valutazione di una espressione:
+
+```
+switch(<espressione>)
+{
+  case <costante> : istruzioni... [break];
+  case <costante> : istruzioni... [break];
+  ...
+  default: istruzioni...
+}
+```
+
+Le parole-chiave `case` e `default` identificano i valori gestiti dall'istruzione `switch`.
+I `case` possono (ed è utile che siano) più di uno, ma le costanti associate a ciascuno di essi devono avere dei valori diversi.
+La condizione `default`, al contrario, deve essere unica.   
+L'esecuzione dell'istruzione inizia al `case` la cui costante è uguale al valore dell'espressione di `switch` e termina alla parola chiave `break`.
+Se l'espressione ha un valore non previsto dai `case`, l'istruzione esegue il codice associato all'etichetta `default`:
+
+
+```
+{% include_relative src/istruzioni-condizionali-switch.cpp %}
+```
+
+Compilando ed eseguendo questo codice, otterrai:
+
+
+```
+% g++ src/cpp/istruzioni-condizionali-switch.cpp -o src/out/esempio
+% src/out/esempio                                                  
+Inserire un valore da: 1 a 9
+% src/out/esempio 4
+Marte
+% src/out/esempio terra
+Valore non valido
+```
+
+Se tu togliessi le interruzioni `break` alla fine di ciascun caso, l'output de programma sarebbe:
+
+```
+% src/out/esempio 4    
+MarteGioveSaturnoUranoNettunoPlutoneInserire un valore da: 1 a 9
+```
+
+Con una `break` alla fine di ciascun caso, l'istruzione `switch` è una forma più elegante (ed efficiente) dell'istruzione `if - else if`:
+
+```
+if(piaeta == POS_ERRORE) {
+   cout << "Valore non valido"; 
+} else if(pianeta == POS_MERCURIO) {
+    cout << "Mercurio"; 
+} else if(pianeta == POS_VENERE) {
+    cout << "Venere";   
+} else if ..         
+```
+
+
+Ricordati sempre che, per dichiarare delle variabili all'interno dei `case`, è necessario aggiungere delle parentesi graffe; altrimenti, avrai un errore in fase di compilazione:
+
+```
+switch( x ) {
+    case 1: 
+        int y = 9;      /** errore di complilazione */
+        cout << x + y; 
+        break;
+    case 2: {
+        int y = 2;      /** corretto */
+        cout << x + y ; 
+        break;
+    }
+    default:
+        cout << "default" << endl; 
+}
 
 ```
 
-Se scrivi il codice in questa maniera, puoi inserire o rimuovere un parametro (e i relativi controlli) senza alterare il resto del codice, cosa che non avverrebbe se tu concatenassi le istruzioni `if`.
+<hr id="dottrina">
 
 <!--
-Attento, però: mettere in sequenza delle semplici istruzioni `if` è cosa
-ben diversa dal creare una catena di istruzioni `else-if` .
 
 @todo
-- specificare la differenza e la necessità del return per bloccare i controlli;
 - introdurre l'idea delle "variazioni" della storia dell'Universo
 - chiudere con l'aneddoto del Maestro Canaro e il sacerdote buddista.
 
 -->
-
-### Istruzione `switch`

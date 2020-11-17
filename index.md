@@ -7,7 +7,7 @@ footer: true
 ---
 
 <section class="citazione pagina">
-Eliminate tutte le cose meravigliose che l’immaginazione umana ha creato dal nulla , dobbiamo tirar fuori tutto il possibile dalla piatta realtà che sentiamo e vediamo.
+Eliminate tutte le cose meravigliose che l’immaginazione umana ha creato dal nulla , dobbiamo tirar fuori tutto il possibile dalla piatta realtà che sentiamo e vediamo.<br />
 <span>Isaac Asimov</span> - Civiltà extraterrestri
 </section>
 
