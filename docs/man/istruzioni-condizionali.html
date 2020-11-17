@@ -303,58 +303,141 @@ if ( (dividendo / divisore) &gt; 1 ) {
 
 <h3 id="istruzione-switch">Istruzione switch</h3>
 
-<pre><code>CREATE FUNCTION utente_insert (
-  _id_classe INTEGER
-, _id_gruppo INTEGER
-, _username  VARCHAR(255)
-, _cognome   VARCHAR(80)
-, _nome      VARCHAR(80)
-)
-RETURNS INTEGER DETERMINISTIC
-BEGIN
-    DECLARE _id    INTEGER DEFAULT -1;
-    DECLARE _count INTEGER DEFAULT 0;
+<p>L’istruzione <code>switch</code> permette di gestire più casi, basandosi sulla valutazione di una espressione:</p>
 
-    SELECT count(*) INTO _count FROM classe WHERE (id = _id_classe);
-    IF _count = 0 THEN
-        RETURN -2;
-    END IF;
+<pre><code>switch(&lt;espressione&gt;)
+{
+  case &lt;costante&gt; : istruzioni... [break];
+  case &lt;costante&gt; : istruzioni... [break];
+  ...
+  default: istruzioni...
+}
+</code></pre>
 
-    SELECT count(*) INTO _count FROM gruppo WHERE (id = _id_gruppo);
-    IF _count = 0 THEN
-        RETURN -3;
-    END IF;
+<p>Le parole-chiave <code>case</code> e <code>default</code> identificano i valori gestiti dall’istruzione <code>switch</code>.
+I <code>case</code> possono (ed è utile che siano) più di uno, ma le costanti associate a ciascuno di essi devono avere dei valori diversi.
+La condizione <code>default</code>, al contrario, deve essere unica. <br />
+L’esecuzione dell’istruzione inizia al <code>case</code> la cui costante è uguale al valore dell’espressione di <code>switch</code> e termina alla parola chiave <code>break</code>.
+Se l’espressione ha un valore non previsto dai <code>case</code>, l’istruzione esegue il codice associato all’etichetta <code>default</code>:</p>
 
-    IF (_username IS NULL) OR (_username = '') THEN
-        RETURN -4;
-    END IF;
+<pre><code>#include &lt;iostream&gt;
+#include &lt;cstdlib&gt;
+
+#define POS_NESSUNO -1
+#define POS_ERRORE   0
+#define POS_MERCURIO 1
+#define POS_VENERE   2
+#define POS_TERRA    3
+#define POS_MARTE    4
+#define POS_GIOVE    5
+#define POS_SATURNO  6
+#define POS_URANO    7
+#define POS_NETTUNO  8
+#define POS_PLUTONE  9
+
+using namespace std;
+
+int main(int argc, char** argv)
+{    
+    int pianeta;
     
-    IF (_cognome IS NULL) OR (_cognome = '') THEN
-        RETURN -5;
-    END IF;
-
-    IF (_nome IS NULL) OR (_nome = '') THEN
-        RETURN -6;
-    END IF;
-
-    ...
+    /** 
+     * Legge i parametri di input.
+     * Se ce ne sono, prova a convertire il primo parametro 
+     * in un intero. Se il parametro non è un intero, la 
+     * funzione atoi torna 0. 
+     */
+    if(argc &gt; 1) {
+        pianeta = atoi(argv[1]);
+    } else {
+        pianeta = POS_NESSUNO;
+    }
+    
+    /** Gestisce i casi possibili */
+    switch( pianeta ) {
+        case POS_ERRORE:   cout &lt;&lt; "Valore non valido"; 
+            break;
+        case POS_MERCURIO: cout &lt;&lt; "Mercurio";          
+            break;
+        case POS_VENERE:   cout &lt;&lt; "Venere";            
+            break;
+        case POS_TERRA:    cout &lt;&lt; "Terra";             
+            break;
+        case POS_MARTE:    cout &lt;&lt; "Marte";             
+            break;
+        case POS_GIOVE:    cout &lt;&lt; "Giove";             
+            break;
+        case POS_SATURNO:  cout &lt;&lt; "Saturno";           
+            break;
+        case POS_URANO:    cout &lt;&lt; "Urano";             
+            break;          
+        case POS_NETTUNO:  cout &lt;&lt; "Nettuno";           
+            break;          
+        case POS_PLUTONE:  cout &lt;&lt; "Plutone";           
+            break;
+        default:
+            cout &lt;&lt; "Inserire un valore da: " 
+                 &lt;&lt; POS_MERCURIO 
+                 &lt;&lt; " a " 
+                 &lt;&lt; POS_PLUTONE;                    
+    }
+    
+    cout &lt;&lt; endl;
+    
+    return 0;
+}
 
 </code></pre>
 
-<!--
+<p>Compilando ed eseguendo questo codice, otterrai:</p>
 
-L’altra istruzione condizionale è istruzione switch che esegue una o più serie di casi basandosi sulla valutazione di una espressione. Il valore risolto di questa espressione deve essere di tipo int, normalmente viene effettuata in modo automatico la conversione di tipo. 
-La forma generale di questa istruzione è:
+<pre><code>% g++ src/cpp/istruzioni-condizionali-switch.cpp -o src/out/esempio
+% src/out/esempio                                                  
+Inserire un valore da: 1 a 9
+% src/out/esempio 4
+Marte
+% src/out/esempio terra
+Valore non valido
+</code></pre>
 
-switch(<espressione>)
-{
-  case costante : istruzioni...
-  case costante : istruzioni...
-  .............................
-  default: istruzioni...
+<p>Se tu togliessi le interruzioni <code>break</code> alla fine di ciascun caso, l’output de programma sarebbe:</p>
+
+<pre><code>% src/out/esempio 4    
+MarteGioveSaturnoUranoNettunoPlutoneInserire un valore da: 1 a 9
+</code></pre>
+
+<p>Con una <code>break</code> alla fine di ciascun caso, l’istruzione <code>switch</code> è una forma più elegante (ed efficiente) dell’istruzione <code>if - else if</code>:</p>
+
+<pre><code>if(piaeta == POS_ERRORE) {
+   cout &lt;&lt; "Valore non valido"; 
+} else if(pianeta == POS_MERCURIO) {
+    cout &lt;&lt; "Mercurio"; 
+} else if(pianeta == POS_VENERE) {
+    cout &lt;&lt; "Venere";   
+} else if ..         
+</code></pre>
+
+<p>Ricordati sempre che, per dichiarare delle variabili all’interno dei <code>case</code>, è necessario aggiungere delle parentesi graffe; altrimenti, avrai un errore in fase di compilazione:</p>
+
+<pre><code>switch( x ) {
+    case 1: 
+        int y = 9;      /** errore di complilazione */
+        cout &lt;&lt; x + y; 
+        break;
+    case 2: {
+        int y = 2;      /** corretto */
+        cout &lt;&lt; x + y ; 
+        break;
+    }
+    default:
+        cout &lt;&lt; "default" &lt;&lt; endl; 
 }
-Le parole chiave case e default sono label che vengono raggiunte in base alla valutazione dell’espressione.
-Le case possono essere in numero arbitrario mentre la default deve essere unica. Il flusso inizia alla case il cui valore della costante è uguale al valore risolto dell'espressione di switch e prosegue fino ad incontrare una esplicita istruzione di interruzione determinata dalla parola chiave break. Quando nessun valore case è uguale al valore dell’espressione viene raggiunta la label default.
+
+</code></pre>
+
+<hr id="dottrina" />
+
+<!--
 
 @todo
 - introdurre l'idea delle "variazioni" della storia dell'Universo
