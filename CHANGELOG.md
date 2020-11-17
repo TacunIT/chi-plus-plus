@@ -1,3 +1,8 @@
+## 0.15.2 (November 17, 2020)
+  - Completata prima stesura istruzione switch
+  - Corretto autore citazione index
+  - Corretto stile citazione index
+
 ## 0.15.1 (November 15, 2020)
   - Completato testo istruzione if
   - Isolata stored-procedure in un file esterno
