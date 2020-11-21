@@ -60,6 +60,7 @@ La religione dovrebbe aiutare l'Uomo a vivere meglio.
 Dovrebbe dare uno scòpo alla nostra esistenza, aiutarci a superare i momenti di dolore e definire una scala di valori che ci permetta di prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso non possono essere d'aiuto.
 Per fare un esempio: se vi ponessero queste tre domande, cosa rispondereste?
 
+<!-- NOTA: se si modificano queste domande, vanno modificate anche quelle nel testo del Manuale, nel capitolo delle istruzioni condizionali -->
 <ol class="domande">
     <li >
         Una ragazza è rimasta incinta a séguito di una violenza: può decidere di abortire?
