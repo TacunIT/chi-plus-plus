@@ -245,13 +245,11 @@ La condizione `default`, al contrario, deve essere unica.
 L'esecuzione dell'istruzione inizia al `case` la cui costante è uguale al valore dell'espressione di `switch` e termina alla parola chiave `break`.
 Se l'espressione ha un valore non previsto dai `case`, l'istruzione esegue il codice associato all'etichetta `default`:
 
-
 ```
 {% include_relative src/istruzioni-condizionali-switch.cpp %}
 ```
 
 Compilando ed eseguendo questo codice, otterrai:
-
 
 ```
 % g++ src/cpp/istruzioni-condizionali-switch.cpp -o src/out/esempio
@@ -263,14 +261,7 @@ Marte
 Valore non valido
 ```
 
-Se tu togliessi le interruzioni `break` alla fine di ciascun caso, l'output de programma sarebbe:
-
-```
-% src/out/esempio 4    
-MarteGioveSaturnoUranoNettunoPlutoneInserire un valore da: 1 a 9
-```
-
-Con una `break` alla fine di ciascun caso, l'istruzione `switch` è una forma più elegante (ed efficiente) dell'istruzione `if - else if`:
+In sostanza: con una `break` alla fine di ciascun caso, l'istruzione `switch` è una forma più elegante (ed efficiente) dell'istruzione `if - else if`:
 
 ```
 if(piaeta == POS_ERRORE) {
@@ -282,8 +273,16 @@ if(piaeta == POS_ERRORE) {
 } else if ..         
 ```
 
+Se tu togliessi le interruzioni `break` alla fine di ciascun caso, l'output del programma sarebbe:
 
-Ricordati sempre che, per dichiarare delle variabili all'interno dei `case`, è necessario aggiungere delle parentesi graffe; altrimenti, avrai un errore in fase di compilazione:
+```
+% src/out/esempio 4    
+MarteGioveSaturnoUranoNettunoPlutoneInserire un valore da: 1 a 9
+```
+
+che in questo caso non ha senso, ma che può essere la scelta adatta se due casi possibili vanno elaborati nella stessa maniera.
+
+Un'ultima cosa: ricordati sempre che, per dichiarare delle variabili all'interno dei `case`, è necessario aggiungere delle parentesi graffe; altrimenti, avrai un errore in fase di compilazione:
 
 ```
 switch( x ) {
@@ -303,6 +302,47 @@ switch( x ) {
 ```
 
 <hr id="dottrina">
+
+La vita ci chiede spesso di fare delle scelte condizionali. 
+Alle volte si tratta di scelte semplici, come nel caso di Bokuju:
+<!-- @todo: trovare riferimento bibliografico -->
+
+```
+switch( stimolo ) {
+    case fame:  azione = mangio; break;
+    case sonno: azione = dormo ; break;
+    case sete:  azione = bevo  ; break;
+}
+```
+ma altre volte sono scelte più complesse:
+
+> Una ragazza è rimasta incinta a séguito di una violenza: può decidere di abortire?
+
+oppure: 
+
+> Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?
+
+In questi casi, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
+Nel primo caso sarai un vettore di Entropia, mentre nel secondo caso sarai un paladino della Gravità.
+Per il C'hi++ la scelta esatta (inteso come participio passato del verbo *esigere*) è la seconda.
+Tutta la materia non è che la manifestazione di una unica Energia, quindi ha poco senso distinguerci gli uni dagli altri; dobbiamo invece ragionare come Saadi di Shiraz, quando dice:
+
+> Son membra d’un corpo solo i figli di Adamo,
+da un’unica essenza quel giorno creati.
+E se uno tra essi a sventura conduca il destino,
+per le altre membra non resterà riparo.
+
+Cercare il proprio tornaconto personale a discapito degli altri è sbagliato.
+Bisogna comportarsi bene e cercare di convincere anche gli altri a comportarsi bene, perché, come recita il *Mantiq al-Tayr*:
+
+> tutto il male o il bene che feci, in verità lo feci solo a me stesso.
+
+Ma come fai a capire cosa sia *bene*?
+
+Se queste domande le fai a un cattolico, lui &mdash; coerentemente con il suo Credo &mdash; ti risponderà che no, non è possibile né abortire né condannare a morte perché la vita è un dono di Dio e nessuno ce la pu
+Se invece queste domande le poni a un giuduce, avrai risposte diverse a seconda della Nazione a cui appartiene. 
+Mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.
+
 
 <!--
 

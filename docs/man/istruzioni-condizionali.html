@@ -400,13 +400,7 @@ Marte
 Valore non valido
 </code></pre>
 
-<p>Se tu togliessi le interruzioni <code>break</code> alla fine di ciascun caso, l’output de programma sarebbe:</p>
-
-<pre><code>% src/out/esempio 4    
-MarteGioveSaturnoUranoNettunoPlutoneInserire un valore da: 1 a 9
-</code></pre>
-
-<p>Con una <code>break</code> alla fine di ciascun caso, l’istruzione <code>switch</code> è una forma più elegante (ed efficiente) dell’istruzione <code>if - else if</code>:</p>
+<p>In sostanza: con una <code>break</code> alla fine di ciascun caso, l’istruzione <code>switch</code> è una forma più elegante (ed efficiente) dell’istruzione <code>if - else if</code>:</p>
 
 <pre><code>if(piaeta == POS_ERRORE) {
    cout &lt;&lt; "Valore non valido"; 
@@ -417,7 +411,15 @@ MarteGioveSaturnoUranoNettunoPlutoneInserire un valore da: 1 a 9
 } else if ..         
 </code></pre>
 
-<p>Ricordati sempre che, per dichiarare delle variabili all’interno dei <code>case</code>, è necessario aggiungere delle parentesi graffe; altrimenti, avrai un errore in fase di compilazione:</p>
+<p>Se tu togliessi le interruzioni <code>break</code> alla fine di ciascun caso, l’output del programma sarebbe:</p>
+
+<pre><code>% src/out/esempio 4    
+MarteGioveSaturnoUranoNettunoPlutoneInserire un valore da: 1 a 9
+</code></pre>
+
+<p>che in questo caso non ha senso, ma che può essere la scelta adatta se due casi possibili vanno elaborati nella stessa maniera.</p>
+
+<p>Un’ultima cosa: ricordati sempre che, per dichiarare delle variabili all’interno dei <code>case</code>, è necessario aggiungere delle parentesi graffe; altrimenti, avrai un errore in fase di compilazione:</p>
 
 <pre><code>switch( x ) {
     case 1: 
@@ -436,6 +438,53 @@ MarteGioveSaturnoUranoNettunoPlutoneInserire un valore da: 1 a 9
 </code></pre>
 
 <hr id="dottrina" />
+
+<p>La vita ci chiede spesso di fare delle scelte condizionali. 
+Alle volte si tratta di scelte semplici, come nel caso di Bokuju:
+<!-- @todo: trovare riferimento bibliografico --></p>
+
+<pre><code>switch( stimolo ) {
+    case fame:  azione = mangio; break;
+    case sonno: azione = dormo ; break;
+    case sete:  azione = bevo  ; break;
+}
+</code></pre>
+<p>ma altre volte sono scelte più complesse:</p>
+
+<blockquote>
+  <p>Una ragazza è rimasta incinta a séguito di una violenza: può decidere di abortire?</p>
+</blockquote>
+
+<p>oppure:</p>
+
+<blockquote>
+  <p>Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?</p>
+</blockquote>
+
+<p>In questi casi, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
+Nel primo caso sarai un vettore di Entropia, mentre nel secondo caso sarai un paladino della Gravità.
+Per il C’hi++ la scelta esatta (inteso come participio passato del verbo <em>esigere</em>) è la seconda.
+Tutta la materia non è che la manifestazione di una unica Energia, quindi ha poco senso distinguerci gli uni dagli altri; dobbiamo invece ragionare come Saadi di Shiraz, quando dice:</p>
+
+<blockquote>
+  <p>Son membra d’un corpo solo i figli di Adamo,
+da un’unica essenza quel giorno creati.
+E se uno tra essi a sventura conduca il destino,
+per le altre membra non resterà riparo.</p>
+</blockquote>
+
+<p>Cercare il proprio tornaconto personale a discapito degli altri è sbagliato.
+Bisogna comportarsi bene e cercare di convincere anche gli altri a comportarsi bene, perché, come recita il <em>Mantiq al-Tayr</em>:</p>
+
+<blockquote>
+  <p>tutto il male o il bene che feci, in verità lo feci solo a me stesso.</p>
+</blockquote>
+
+<p>Ma come fai a capire cosa sia <em>bene</em>?</p>
+
+<p>Se queste domande le fai a un cattolico, lui — coerentemente con il suo Credo — ti risponderà che no, non è possibile né abortire né condannare a morte perché la vita è un dono di Dio e nessuno ce la pu
+Se invece queste domande le poni a un giuduce, avrai risposte diverse a seconda della Nazione a cui appartiene. 
+Mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.</p>
 
 <!--
 
