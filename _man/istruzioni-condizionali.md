@@ -45,15 +45,14 @@ typedef Importo unsigned long;
 
 Importo raddoppiaStipendio(Importo stipendioCorrente)
 {
-    if ( stipendioCorrente > 0 )
-    {
+    if ( stipendioCorrente > 0 ) {
         stipendioCorrente *= 2; 
     }    
     return stipendioCorrente;   
 }
 ```
 
-Similmente, le parentesi graffe possono essere omesse se il blocco istruzioni che racchiudono è costituito da una singola istruzione:
+Allo stesso modo, le parentesi graffe possono essere omesse se il blocco istruzioni che racchiudono è costituito da una singola istruzione:
 
 ```
 if ( a > 8 ) 
@@ -80,7 +79,7 @@ if ( <prima condizione> ) {
      * istruzioni da eseguire se 
      * la prima condizione è vera
     */
-} else if ( <seconda condizione> ){
+} else if ( <seconda condizione> ) {
     /*
      * istruzioni da eseguire se 
      * la prima condizione è vera

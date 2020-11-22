@@ -100,15 +100,14 @@ Il C++ possiede due tipi di istruzione condizionale: le sequenze <code>if-else</
 
 Importo raddoppiaStipendio(Importo stipendioCorrente)
 {
-    if ( stipendioCorrente &gt; 0 )
-    {
+    if ( stipendioCorrente &gt; 0 ) {
         stipendioCorrente *= 2; 
     }    
     return stipendioCorrente;   
 }
 </code></pre>
 
-<p>Similmente, le parentesi graffe possono essere omesse se il blocco istruzioni che racchiudono è costituito da una singola istruzione:</p>
+<p>Allo stesso modo, le parentesi graffe possono essere omesse se il blocco istruzioni che racchiudono è costituito da una singola istruzione:</p>
 
 <pre><code>if ( a &gt; 8 ) 
     cout &lt;&lt; "maggiore" &lt;&lt; endl;
@@ -131,7 +130,7 @@ Anche in questo caso, si può chiudere la sequenza con un’istruzione <code>els
      * istruzioni da eseguire se 
      * la prima condizione è vera
     */
-} else if ( &lt;seconda condizione&gt; ){
+} else if ( &lt;seconda condizione&gt; ) {
     /*
      * istruzioni da eseguire se 
      * la prima condizione è vera
