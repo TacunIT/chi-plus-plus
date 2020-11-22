@@ -304,7 +304,7 @@ switch( x ) {
 <hr id="dottrina">
 
 La vita ci chiede spesso di fare delle scelte condizionali. 
-Quando ciò avvine, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta che ti sembra più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
+Quando ciò avviene, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta che ti sembra più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
 Nel primo caso sarai un vettore di Entropia, mentre nel secondo caso sarai un paladino della Gravità.
 Per il C'hi++ la scelta esatta (inteso come participio passato del verbo *esigere*) è la seconda: tutta la materia non è che la manifestazione di una unica Energia, quindi ha poco senso distinguerci gli uni dagli altri; dobbiamo invece ragionare come Saadi di Shiraz, quando dice:
 
@@ -343,9 +343,8 @@ oppure:
 
 > Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?
 
-Se queste domande le fai a un cattolico, lui &mdash; coerentemente con il suo Credo &mdash; ti risponderà che no, non è possibile né abortire né condannare a morte perché la vita è un dono di Dio e nessuno ce ne può privare-
-Se però queste domande le poni a un giuduce, avrai risposte diverse a seconda della Nazione a cui appartiene.
-Mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.
+Se queste domande le fai a un cattolico, lui &mdash; coerentemente con il suo Credo &mdash; ti risponderà che no, non è possibile né abortire né condannare a morte perché la vita è un dono di Dio e nessuno ce ne può privare. 
+Se però queste domande le poni a un giuduce, avrai risposte diverse a seconda della Nazione a cui appartiene: mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.
 
 <!--
 
