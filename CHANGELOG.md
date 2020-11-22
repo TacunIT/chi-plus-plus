@@ -1,3 +1,6 @@
+## 0.15.3 (November 22, 2020)
+  - Iniziata redazione della dottrina per istruzioni condizionali
+
 ## 0.15.2 (November 17, 2020)
   - Completata prima stesura istruzione switch
   - Corretto autore citazione index
