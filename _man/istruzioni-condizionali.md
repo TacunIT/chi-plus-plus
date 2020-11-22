@@ -304,17 +304,38 @@ switch( x ) {
 <hr id="dottrina">
 
 La vita ci chiede spesso di fare delle scelte condizionali. 
-Alle volte si tratta di scelte semplici, come nel caso di Bokuju:
-<!-- @todo: trovare riferimento bibliografico -->
+Quando ciò avvine, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta che ti sembra più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
+Nel primo caso sarai un vettore di Entropia, mentre nel secondo caso sarai un paladino della Gravità.
+Per il C'hi++ la scelta esatta (inteso come participio passato del verbo *esigere*) è la seconda: tutta la materia non è che la manifestazione di una unica Energia, quindi ha poco senso distinguerci gli uni dagli altri; dobbiamo invece ragionare come Saadi di Shiraz, quando dice:
+
+> Son membra d’un corpo solo i figli di Adamo,
+da un’unica essenza quel giorno creati.
+E se uno tra essi a sventura conduca il destino,
+per le altre membra non resterà riparo.
+
+Cercare il proprio tornaconto personale a discapito degli altri è sbagliato.
+Bisogna comportarsi bene e cercare di convincere anche gli altri a fare altrettanto, perché, come recita il *Mantiq al-Tayr*:
+
+> tutto il male o il bene che feci, in verità lo feci solo a me stesso.
+
+Ma come si fa a capire cosa sia *bene*?  
+Ci sono casi in cui è facile dare la scelta giusta, come nel caso di Bokuju:
+<!-- @todo: trovare riferimento bibliografico o quanto meno spiegare di cosa si stia parlando -->
 
 ```
 switch( stimolo ) {
-    case fame:  azione = mangio; break;
-    case sonno: azione = dormo ; break;
-    case sete:  azione = bevo  ; break;
+    case fame:  
+        azione = mangio; 
+        break;
+    case sonno: 
+        azione = dormo; 
+        break;
+    case sete:  
+        azione = bevo; 
+        break;
 }
 ```
-ma altre volte sono scelte più complesse:
+ma altre volte ci troviamo di fronte a scelte più complesse:
 
 > Una ragazza è rimasta incinta a séguito di una violenza: può decidere di abortire?
 
@@ -322,31 +343,37 @@ oppure:
 
 > Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?
 
-In questi casi, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
-Nel primo caso sarai un vettore di Entropia, mentre nel secondo caso sarai un paladino della Gravità.
-Per il C'hi++ la scelta esatta (inteso come participio passato del verbo *esigere*) è la seconda.
-Tutta la materia non è che la manifestazione di una unica Energia, quindi ha poco senso distinguerci gli uni dagli altri; dobbiamo invece ragionare come Saadi di Shiraz, quando dice:
-
-> Son membra d’un corpo solo i figli di Adamo,
-da un’unica essenza quel giorno creati.
-E se uno tra essi a sventura conduca il destino,
-per le altre membra non resterà riparo.
-
-Cercare il proprio tornaconto personale a discapito degli altri è sbagliato.
-Bisogna comportarsi bene e cercare di convincere anche gli altri a comportarsi bene, perché, come recita il *Mantiq al-Tayr*:
-
-> tutto il male o il bene che feci, in verità lo feci solo a me stesso.
-
-Ma come fai a capire cosa sia *bene*?
-
-Se queste domande le fai a un cattolico, lui &mdash; coerentemente con il suo Credo &mdash; ti risponderà che no, non è possibile né abortire né condannare a morte perché la vita è un dono di Dio e nessuno ce la pu
-Se invece queste domande le poni a un giuduce, avrai risposte diverse a seconda della Nazione a cui appartiene. 
+Se queste domande le fai a un cattolico, lui &mdash; coerentemente con il suo Credo &mdash; ti risponderà che no, non è possibile né abortire né condannare a morte perché la vita è un dono di Dio e nessuno ce ne può privare-
+Se però queste domande le poni a un giuduce, avrai risposte diverse a seconda della Nazione a cui appartiene.
 Mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.
-
 
 <!--
 
 @todo
+I punti da evidenziare sono;
+
+1. le leggi non sono fatte in base a delle convinzioni preesistenti, ma in base alla suggestione del momento o, meglio, a specifiche convenienze elettorali;
+
+2. se l'elettorato fosse composto di persone illuminate, non ci sarebbe problema, ma l'elettorato è composto da analfabeti funzionali e da egoisti; 
+
+3. la sparuta minoranza di idealisti agisce in base ai propri sentimenti/auspici perché è vittima dell'Annosa Dicotomia, quindi fa delle scelte irrazionali, come uccidere chi non ha fatto del male (il feto) e non permettere la soppressione di chi ne ha già fatto (il condannato)
+
+4. il C'hi++ è nettamente contratrio all'aborto; capiamo il dramma, ma in un Mondo in cui ci sono coppie sterili alla ricerca di adozioni, non ha senso sopprimere un nascituro; 
+
+5. finché si parla di pillola del giorno dopo, è un conto: in fondo, si sta parlando di cellule; ma se qualcosa ha la forma di un bambino, è un bambino, lo sviluppo cerebrale è solo un pretesto;
+
+6. citare l'esempio del notaio in un'auto guidata da un sistema di IA e del sito che cerca di creare un'etica accumulando pareri (non fornire soluzione, per ora?);
+
+7. il problema con il condannato è che si deve decidere se privare lui della vita o rischiare che lui privi della vita un'altra persona. la soluzione migliore sarebbe quella di metterlo in condizione di non nuocere, ma non è sempre possibile farlo. 
+
+8. lo scopo della punizione DEVE sempre puntare al miglioramento: il condannato deve capire che ha fatto è sbagliato e non ripeterlo in altri cicli; se lo ammazzi, non è detto che capisca ed è possibile che ripeta;
+
+9. d'altro canto, chi dimostra di non potere o volere capire non rientra nel novero degli esseri senzienti; come tale, non è funzionale alla crescita dell'Universo e come il gatto di Nansen, può essere soppresso: Caino ha gli stessi diritti di Abele.
+
+
+
+
+
 - introdurre l'idea delle "variazioni" della storia dell'Universo
 - chiudere con l'aneddoto del Maestro Canaro e il sacerdote buddista.
 
