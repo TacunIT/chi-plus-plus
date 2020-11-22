@@ -344,7 +344,7 @@ oppure:
 > Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?
 
 Se queste domande le fai a un cattolico, lui &mdash; coerentemente con il suo Credo &mdash; ti risponderà che no, non è possibile né abortire né condannare a morte perché la vita è un dono di Dio e nessuno ce ne può privare. 
-Se però queste domande le poni a un giuduce, avrai risposte diverse a seconda della Nazione a cui appartiene: mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.
+Se però queste domande le poni a un giuduce, avrai risposte diverse a seconda della Nazione a cui appartiene, perché, curiosamente, mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.
 
 <!--
 
