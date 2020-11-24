@@ -177,7 +177,7 @@ if ( <condizione 1> ) {
 return esito
 ```
 
-Questa forma, per quanto corretta e canonicamente ineccepibile, potrebbe rivelarsi difficile da gestire se le condizioni da considerare fossero molto complesse o numerose.
+Questa forma, per quanto corretta e formalmente ineccepibile, potrebbe rivelarsi difficile da gestire se le condizioni da considerare fossero molto complesse o numerose.
 Il buon programmatore, allora, può decidere di contravvenire alla (giusta) norma che prescrive di non inserire delle istruzioni `return` all'interno del codice, e scrivere la sequenza in questo modo:
 
 ```
@@ -304,7 +304,7 @@ switch( x ) {
 
 La vita ci chiede spesso di fare delle scelte condizionali. 
 Quando ciò avviene, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta che ti sembra più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
-Nel primo caso sarai un vettore di Entropia, mentre nel secondo caso sarai un paladino della Gravità.
+Nel primo caso sarai un vettore di Entropia, mentre nel secondo caso sarai un paladino della Gravità.  
 Per il C'hi++ la scelta esatta (inteso come participio passato del verbo *esigere*) è la seconda: tutta la materia non è che la manifestazione di una unica Energia, quindi ha poco senso distinguerci gli uni dagli altri; dobbiamo invece ragionare come Saadi di Shiraz, quando dice:
 
 > Son membra d’un corpo solo i figli di Adamo,
@@ -318,7 +318,7 @@ Bisogna comportarsi bene e cercare di convincere anche gli altri a fare altretta
 > tutto il male o il bene che feci, in verità lo feci solo a me stesso.
 
 Ma come si fa a capire cosa sia *bene*?  
-Ci sono casi in cui è facile dare la scelta giusta, come nel caso di Bokuju:
+Ci sono casi in cui è facile dare la scelta giusta, come nel caso del maestro Zen Bokuju:
 <!-- @todo: trovare riferimento bibliografico o quanto meno spiegare di cosa si stia parlando -->
 
 ```
@@ -343,19 +343,34 @@ oppure:
 > Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?
 
 Se queste domande le fai a un cattolico, lui &mdash; coerentemente con il suo Credo &mdash; ti risponderà che no, non è possibile né abortire né condannare a morte perché la vita è un dono di Dio e nessuno ce ne può privare. 
-Se però queste domande le poni a un giuduce, avrai risposte diverse a seconda della Nazione a cui appartiene, perché, curiosamente, mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.
-
+Se però queste domande le poni a un Giudice, avrai risposte diverse a seconda della Nazione a cui appartiene.
+Mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.   
+Un tempo, i credenti mettevano al rogo gli scienziati, accusandoli di eresia.
+Il 6 Giugno del 1945, però, la Scienza ha mostrato al Mondo il suo potere ed è diventata di fatto il nuovo Dio per milioni di persone.
+Da allora, le parti si sono invertite e adesso sono gli scienziati a mettere al rogo ogni forma di spiritualità.
+Il problema è che se privi la Legge di una base spirituale, quello che otterrai è una legge *pret-a-porter*, un rimedio temporaneo a un'esigenza contingente.
+Nella migliore delle ipotesi.
+La teocrazia è un errore, ma anche la *a*-teocrazia dev'essere evitata.  
+La Fede è stata la colla che ha tenuto unita la nostra società per quasi duemila anni.
+Forse quella colla era una nostra invenzione, ma lo sono anche gli Stati, il denaro, i diritti umani, le leggi.
+<!-- Sapiens. Da animali a dèi: Breve storia dell'umanità. Nuova edizione riveduta - Harari, Yuval Noah -->
+Nessuno di questi concetti così importanti per la nostra società esiste davvero, sono solo convenzioni, ma le utilizziamo lo stesso perché sono utili al loro scopo. Perché *funzionano*.
+<!-- @todo: rivedere eventuali collegamenti con i Linguaggi di programmazione -->
+Ora che questa colla non c'è più, le scelte dei legislatori non sono più mosse dal perseguimento di un obiettivo comune (corretto o sbagliato che fosse), ma dalla ricerca dell'approvazione dell'elettorato.
+Se gli elettori fossero persone illuminate, questo non sarebbe un problema, perché il loro interesse coinciderebbe con l'interesse comune; purtroppo però, la maggioranza dell'elettorato è composta da analfabeti funzionali e da egoisti che perseguono unicamente il proprio interesse momentaneo.
+Esiste una minoranza di idealisti, ma questi, privi di valori trascendenti, sono costretti ad agire in base ai propri sentimenti o ai propri auspici e subiscono inevitabilmente il malefico influsso dell'Annosa Dicotomia.
+Le loro scelte puntano al bene comune, ma si tratta di un bene comune miope  e temporaneo.
+Come scacchisti mediocri, vedono ciò che è bene qui e ora, ma non riescono a capirne le conseguenze a lungo termine.
+ 
 <!--
 
 @todo
-I punti da evidenziare sono;
 
-1. le leggi non sono fatte in base a delle convinzioni preesistenti, ma in base alla suggestione del momento o, meglio, a specifiche convenienze elettorali;
+perché è vittima dell'Annosa Dicotomia, quindi fa delle scelte irrazionali, come uccidere chi non ha fatto del male (il feto) e non permettere la soppressione di chi ne ha già fatto (il condannato)
 
-2. se l'elettorato fosse composto di persone illuminate, non ci sarebbe problema, ma l'elettorato è composto da analfabeti funzionali e da egoisti; 
 
-3. la sparuta minoranza di idealisti agisce in base ai propri sentimenti/auspici perché è vittima dell'Annosa Dicotomia, quindi fa delle scelte irrazionali, come uccidere chi non ha fatto del male (il feto) e non permettere la soppressione di chi ne ha già fatto (il condannato)
 
+3. l
 4. il C'hi++ è nettamente contratrio all'aborto; capiamo il dramma, ma in un Mondo in cui ci sono coppie sterili alla ricerca di adozioni, non ha senso sopprimere un nascituro; 
 
 5. finché si parla di pillola del giorno dopo, è un conto: in fondo, si sta parlando di cellule; ma se qualcosa ha la forma di un bambino, è un bambino, lo sviluppo cerebrale è solo un pretesto;
