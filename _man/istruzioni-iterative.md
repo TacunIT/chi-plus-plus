@@ -18,5 +18,6 @@ Le istruzioni di ciclo sono una delle componenti fondamentali della programmazio
 <!--
 
 @todo - qui va introdotto il concetto di ciclicità dell'Universo.
+- introdurre l'idea delle "variazioni" della storia dell'Universo
 
 -->

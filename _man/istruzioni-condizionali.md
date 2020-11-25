@@ -303,7 +303,7 @@ switch( x ) {
 <hr id="dottrina">
 
 La vita ci chiede spesso di fare delle scelte condizionali. 
-Quando ciò avviene, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta che ti sembra più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
+Quando ciò avviene, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
 Nel primo caso sarai un vettore di Entropia, mentre nel secondo caso sarai un paladino della Gravità.  
 Per il C'hi++ la scelta esatta (inteso come participio passato del verbo *esigere*) è la seconda: tutta la materia non è che la manifestazione di una unica Energia, quindi ha poco senso distinguerci gli uni dagli altri; dobbiamo invece ragionare come Saadi di Shiraz, quando dice:
 
@@ -343,51 +343,51 @@ oppure:
 > Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?
 
 Se queste domande le fai a un cattolico, lui &mdash; coerentemente con il suo Credo &mdash; ti risponderà che no, non è possibile né abortire né condannare a morte perché la vita è un dono di Dio e nessuno ce ne può privare. 
-Se però queste domande le poni a un Giudice, avrai risposte diverse a seconda della Nazione a cui appartiene.
-Mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.   
-Un tempo, i credenti mettevano al rogo gli scienziati, accusandoli di eresia.
-Il 6 Giugno del 1945, però, la Scienza ha mostrato al Mondo il suo potere ed è diventata di fatto il nuovo Dio per milioni di persone.
+Se invece queste domande le poni a un Giudice, avrai risposte diverse a seconda della Nazione a cui appartiene, perché mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.   
+Un tempo, i credenti mettevano al rogo gli scienziati, accusandoli di eresia; il 6 Giugno del 1945, però, la Scienza ha mostrato al Mondo il suo potere ed è diventata di fatto il nuovo Dio per milioni di persone.
 Da allora, le parti si sono invertite e adesso sono gli scienziati a mettere al rogo ogni forma di spiritualità.
 Il problema è che se privi la Legge di una base spirituale, quello che otterrai è una legge *pret-a-porter*, un rimedio temporaneo a un'esigenza contingente.
 Nella migliore delle ipotesi.
 La teocrazia è un errore, ma anche la *a*-teocrazia dev'essere evitata.  
 La Fede è stata la colla che ha tenuto unita la nostra società per quasi duemila anni.
-Forse quella colla era una nostra invenzione, ma lo sono anche gli Stati, il denaro, i diritti umani, le leggi.
-<!-- Sapiens. Da animali a dèi: Breve storia dell'umanità. Nuova edizione riveduta - Harari, Yuval Noah -->
-Nessuno di questi concetti così importanti per la nostra società esiste davvero, sono solo convenzioni, ma le utilizziamo lo stesso perché sono utili al loro scopo. Perché *funzionano*.
-<!-- @todo: rivedere eventuali collegamenti con i Linguaggi di programmazione -->
+Forse quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, il denaro, i diritti umani, le leggi.
+<!-- 
+    "Nell’universo non esistono dèi , non esistono nazioni né denaro né diritti umani né leggi , e non esiste alcuna giustizia che non sia nell’immaginazione comune degli esseri umani" 
+    Sapiens. Da animali a dèi: Breve storia dell'umanità. 
+    Harari, Yuval Noah 
+-->
+Nessuno di questi concetti così importanti per la nostra società esiste davvero, ma li utilizziamo lo stesso perché, come il linguaggio *C*, pur essendo solo delle convenzioni, sono utili al loro scopo.  
 Ora che questa colla non c'è più, le scelte dei legislatori non sono più mosse dal perseguimento di un obiettivo comune (corretto o sbagliato che fosse), ma dalla ricerca dell'approvazione dell'elettorato.
 Se gli elettori fossero persone illuminate, questo non sarebbe un problema, perché il loro interesse coinciderebbe con l'interesse comune; purtroppo però, la maggioranza dell'elettorato è composta da analfabeti funzionali e da egoisti che perseguono unicamente il proprio interesse momentaneo.
-Esiste una minoranza di idealisti, ma questi, privi di valori trascendenti, sono costretti ad agire in base ai propri sentimenti o ai propri auspici e subiscono inevitabilmente il malefico influsso dell'Annosa Dicotomia.
-Le loro scelte puntano al bene comune, ma si tratta di un bene comune miope  e temporaneo.
-Come scacchisti mediocri, vedono ciò che è bene qui e ora, ma non riescono a capirne le conseguenze a lungo termine.
+Esiste una minoranza di idealisti, ma questi, privi di valori trascendenti, sono costretti ad agire in base ai propri sentimenti o ai propri auspici e subiscono inevitabilmente il malefico influsso dell'Annosa Dicotomia: le loro scelte puntano al bene comune, ma si tratta di un bene comune molto spesso miope e temporaneo.
+Come scacchisti mediocri, vedono ciò che è bene qui e ora, ma non riescono a valutarne le conseguenze a lungo termine.  
+
+---
+
+Pensa a quale potrebbe essere, secondo te, la soluzione giusta alle due domande che ti ho fatto e poi pensa al *perché* quella soluzione ti appare giusta. 
+Perché permettiamo la soppressione di un feto che non ha fatto del male a nessuno, mentre lasciamo in vita chi ne ha già fatto?
+Vogliamo fare la cosa giusta o vogliamo solo sentirci buoni?  
+Il Maestro Canaro si fece molti nemici con la sue idee sull'aborto, anche fra persone che inizialmente lo avevano appoggiato, ma a lui non importava: mi disse che preferiva perdere un milione di seguaci che una vita.  
+Con il condannato, il problema è che si deve decidere se privare lui della vita o rischiare che lui privi della vita un'altra persona. 
+La soluzione migliore sarebbe quella di metterlo in condizione di non nuocere, ma non è sempre possibile farlo. 
+Non dimenticare che lo scopo della punizione deve sempre essere il miglioramento: il condannato deve capire che ha fatto è sbagliato e non ripeterlo in altri cicli; se lo ammazzi, non è detto che capisca ed è possibile che ripeta le sue azioni delittuose.
+D'altro canto, chi dimostra di non potere o di non voler capire non rientra nel novero degli esseri senzienti; come tale, non è funzionale alla crescita dell'Universo e come il gatto di Nansen, può essere soppresso.
+La sua morte, però, non dev'essere vista come una vittoria, ma come la più dolorosa delle sconfitte.
+La ragione per cui alcuni Stati non ammettono la pena di morte è che non vogliono ammettere di essere il proprio fallimento.
  
 <!--
 
 @todo
 
-perché è vittima dell'Annosa Dicotomia, quindi fa delle scelte irrazionali, come uccidere chi non ha fatto del male (il feto) e non permettere la soppressione di chi ne ha già fatto (il condannato)
 
-
-
-3. l
-4. il C'hi++ è nettamente contratrio all'aborto; capiamo il dramma, ma in un Mondo in cui ci sono coppie sterili alla ricerca di adozioni, non ha senso sopprimere un nascituro; 
-
-5. finché si parla di pillola del giorno dopo, è un conto: in fondo, si sta parlando di cellule; ma se qualcosa ha la forma di un bambino, è un bambino, lo sviluppo cerebrale è solo un pretesto;
 
 6. citare l'esempio del notaio in un'auto guidata da un sistema di IA e del sito che cerca di creare un'etica accumulando pareri (non fornire soluzione, per ora?);
 
-7. il problema con il condannato è che si deve decidere se privare lui della vita o rischiare che lui privi della vita un'altra persona. la soluzione migliore sarebbe quella di metterlo in condizione di non nuocere, ma non è sempre possibile farlo. 
-
-8. lo scopo della punizione DEVE sempre puntare al miglioramento: il condannato deve capire che ha fatto è sbagliato e non ripeterlo in altri cicli; se lo ammazzi, non è detto che capisca ed è possibile che ripeta;
-
-9. d'altro canto, chi dimostra di non potere o volere capire non rientra nel novero degli esseri senzienti; come tale, non è funzionale alla crescita dell'Universo e come il gatto di Nansen, può essere soppresso: Caino ha gli stessi diritti di Abele.
 
 
 
 
 
-- introdurre l'idea delle "variazioni" della storia dell'Universo
 - chiudere con l'aneddoto del Maestro Canaro e il sacerdote buddista.
 
 -->
