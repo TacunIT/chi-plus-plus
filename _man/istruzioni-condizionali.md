@@ -368,7 +368,10 @@ Pensa a quale potrebbe essere, secondo te, la soluzione giusta alle due domande 
 Perché permettiamo la soppressione di un feto che non ha fatto del male a nessuno, mentre lasciamo in vita chi ne ha già fatto?
 Vogliamo fare la cosa giusta o vogliamo solo sentirci buoni?  
 Il Maestro Canaro si fece molti nemici con la sue idee sull'aborto, anche fra persone che inizialmente lo avevano appoggiato, ma a lui non importava: mi disse che preferiva perdere un milione di seguaci che una vita.  
-
+Con il condannato, il problema è che si deve decidere se privare lui della vita o rischiare che lui privi della vita un'altra persona. 
+La soluzione migliore sarebbe quella di metterlo in condizione di non nuocere, ma non è sempre possibile farlo. 
+Non dimenticare che lo scopo della punizione deve sempre essere il miglioramento: il condannato deve capire che ha fatto è sbagliato e non ripeterlo in altri cicli; se lo ammazzi, non è detto che capisca ed è possibile che ripeta le sue azioni delittuose.
+ 
 <!--
 
 @todo
