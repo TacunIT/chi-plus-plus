@@ -1,3 +1,6 @@
+## 0.15.4 (November 26, 2020)
+  - Redazione capitolo
+
 ## 0.15.3 (November 22, 2020)
   - Iniziata redazione della dottrina per istruzioni condizionali
 
