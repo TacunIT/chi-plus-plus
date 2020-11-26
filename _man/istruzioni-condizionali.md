@@ -45,15 +45,14 @@ typedef Importo unsigned long;
 
 Importo raddoppiaStipendio(Importo stipendioCorrente)
 {
-    if ( stipendioCorrente > 0 )
-    {
+    if ( stipendioCorrente > 0 ) {
         stipendioCorrente *= 2; 
     }    
     return stipendioCorrente;   
 }
 ```
 
-Similmente, le parentesi graffe possono essere omesse se il blocco istruzioni che racchiudono è costituito da una singola istruzione:
+Allo stesso modo, le parentesi graffe possono essere omesse se il blocco istruzioni che racchiudono è costituito da una singola istruzione:
 
 ```
 if ( a > 8 ) 
@@ -80,7 +79,7 @@ if ( <prima condizione> ) {
      * istruzioni da eseguire se 
      * la prima condizione è vera
     */
-} else if ( <seconda condizione> ){
+} else if ( <seconda condizione> ) {
     /*
      * istruzioni da eseguire se 
      * la prima condizione è vera
@@ -178,7 +177,7 @@ if ( <condizione 1> ) {
 return esito
 ```
 
-Questa forma, per quanto corretta e canonicamente ineccepibile, potrebbe rivelarsi difficile da gestire se le condizioni da considerare fossero molto complesse o numerose.
+Questa forma, per quanto corretta e formalmente ineccepibile, potrebbe rivelarsi difficile da gestire se le condizioni da considerare fossero molto complesse o numerose.
 Il buon programmatore, allora, può decidere di contravvenire alla (giusta) norma che prescrive di non inserire delle istruzioni `return` all'interno del codice, e scrivere la sequenza in questo modo:
 
 ```
@@ -304,9 +303,10 @@ switch( x ) {
 <hr id="dottrina">
 
 La vita ci chiede spesso di fare delle scelte condizionali. 
-Quando ciò avvine, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta che ti sembra più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
-Nel primo caso sarai un vettore di Entropia, mentre nel secondo caso sarai un paladino della Gravità.
-Per il C'hi++ la scelta esatta (inteso come participio passato del verbo *esigere*) è la seconda: tutta la materia non è che la manifestazione di una unica Energia, quindi ha poco senso distinguerci gli uni dagli altri; dobbiamo invece ragionare come Saadi di Shiraz, quando dice:
+Quando ciò avviene, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta che ti sembra più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
+Nel primo caso sarai un vettore di Entropia, mentre nel secondo caso sarai un paladino della Gravità.  
+Come sai, per il C'hi++ la scelta esatta (inteso come participio passato del verbo *esigere*) è la seconda: tutta la materia non è che la manifestazione di una unica Energia, quindi ha poco senso distinguerci gli uni dagli altri;
+ dobbiamo invece ragionare come Saadi di Shiraz, quando dice:
 
 > Son membra d’un corpo solo i figli di Adamo,
 da un’unica essenza quel giorno creati.
@@ -318,8 +318,9 @@ Bisogna comportarsi bene e cercare di convincere anche gli altri a fare altretta
 
 > tutto il male o il bene che feci, in verità lo feci solo a me stesso.
 
-Ma come si fa a capire cosa sia *bene*?  
-Ci sono casi in cui è facile dare la scelta giusta, come nel caso di Bokuju:
+<!-- todo: aggiungere paragone con ambulanza' -->
+Ma come si fa a capire cosa sia *bene*?
+Ci sono casi in cui è facile dare la scelta giusta, come nel caso del maestro Zen Bokuju:
 <!-- @todo: trovare riferimento bibliografico o quanto meno spiegare di cosa si stia parlando -->
 
 ```
@@ -343,38 +344,53 @@ oppure:
 
 > Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?
 
-Se queste domande le fai a un cattolico, lui &mdash; coerentemente con il suo Credo &mdash; ti risponderà che no, non è possibile né abortire né condannare a morte perché la vita è un dono di Dio e nessuno ce ne può privare-
-Se però queste domande le poni a un giuduce, avrai risposte diverse a seconda della Nazione a cui appartiene.
-Mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.
+Se queste domande le fai a un cattolico, lui &mdash; coerentemente con il suo Credo &mdash; ti risponderà che no, non è possibile né abortire né condannare a morte perché la vita è un dono di Dio e nessuno ce ne può privare. 
+Se invece queste domande le poni a un Giudice, avrai risposte diverse a seconda della Nazione a cui appartiene, perché mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.   
+Un tempo, i credenti mettevano al rogo gli scienziati, accusandoli di eresia; il 6 Giugno del 1945, però, la Scienza ha mostrato al Mondo il suo potere ed è diventata di fatto il nuovo Dio per milioni di persone.
+Da allora, le parti si sono invertite e adesso sono gli scienziati a mettere al rogo ogni forma di spiritualità.
+Il problema è che se privi la giurisprudenza di una base spirituale, quello che otterrai sono Leggi *pret-a-porter*, rimedii temporanei a delle esigenze contingenti.
+Nella migliore delle ipotesi.  
+La teocrazia è un errore, ma anche la *a*-teocrazia dev'essere evitata.
+La Fede è stata la colla che ha tenuto unita la nostra società per quasi duemila anni.
+Forse quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, il denaro, i diritti umani, le Leggi.
+<!-- 
+    "Nell’universo non esistono dèi , non esistono nazioni né denaro né diritti umani né leggi , e non esiste alcuna giustizia che non sia nell’immaginazione comune degli esseri umani" 
+    Sapiens. Da animali a dèi: Breve storia dell'umanità. 
+    Harari, Yuval Noah 
+-->
+Nessuno di questi concetti così importanti per la nostra società esiste davvero, ma li utilizziamo lo stesso perché, come il linguaggio *C*, pur essendo solo delle convenzioni, sono utili al loro scopo.  
+Ora che questa colla non c'è più, le scelte dei legislatori non sono più mosse dal perseguimento di un obiettivo comune (corretto o sbagliato che fosse), ma dalla ricerca dell'approvazione di un elettorato composto da zombie culturali <!-- 
+    Il tasso di analfabetismo funzionale, mentre scrivo, è del 41%.
+    I lettori sono sempre di meno: https://www.istat.it/it/archivio/213901
+-->
+e da egoisti che perseguono unicamente il proprio interesse momentaneo: il pascolo ideale per demagoghi con aspirazioni dittatoriali.  
+La minoranza di idealisti e di persone colte, priva di valori trascendenti, non può che agire in base ai propri sentimenti o ai propri auspici e subisce inevitabilmente il malefico influsso dell'Annosa Dicotomia: fanno scelte che puntano al bene comune, ma si tratta di un bene comune molto spesso miope e temporaneo.
+Come scacchisti mediocri, vedono ciò che è bene qui e ora, ma non riescono a valutarne le conseguenze a lungo termine.  
+
+---
+
+Pensa a quale potrebbe essere, secondo te, la soluzione giusta alle due domande che ti ho fatto e poi pensa al *motivo* quella soluzione ti appare giusta. 
+Perché permettiamo la soppressione di un feto che non ha fatto del male a nessuno, mentre lasciamo in vita chi ne ha già fatto?
+Vogliamo fare la cosa giusta o vogliamo solo sentirci buoni?  
+Il Maestro Canaro si fece molti nemici con la sue idee sull'aborto, anche fra persone che inizialmente lo avevano appoggiato, ma a lui non importava: quando gliene parlai, mi disse che preferiva perdere un milione di seguaci che una vita.  
 
 <!--
 
 @todo
-I punti da evidenziare sono;
+Con il condannato, il problema è che si deve decidere se privare lui della vita o rischiare che lui privi della vita un'altra persona. 
+La soluzione migliore sarebbe quella di metterlo in condizione di non nuocere, ma non è sempre possibile farlo. 
+Non dimenticare che lo scopo della punizione deve sempre essere il miglioramento: il condannato deve capire che ha fatto è sbagliato e non ripeterlo in altri cicli; se lo ammazzi, non è detto che capisca ed è possibile che ripeta le sue azioni delittuose.
+ 
 
-1. le leggi non sono fatte in base a delle convinzioni preesistenti, ma in base alla suggestione del momento o, meglio, a specifiche convenienze elettorali;
 
-2. se l'elettorato fosse composto di persone illuminate, non ci sarebbe problema, ma l'elettorato è composto da analfabeti funzionali e da egoisti; 
-
-3. la sparuta minoranza di idealisti agisce in base ai propri sentimenti/auspici perché è vittima dell'Annosa Dicotomia, quindi fa delle scelte irrazionali, come uccidere chi non ha fatto del male (il feto) e non permettere la soppressione di chi ne ha già fatto (il condannato)
-
-4. il C'hi++ è nettamente contratrio all'aborto; capiamo il dramma, ma in un Mondo in cui ci sono coppie sterili alla ricerca di adozioni, non ha senso sopprimere un nascituro; 
-
-5. finché si parla di pillola del giorno dopo, è un conto: in fondo, si sta parlando di cellule; ma se qualcosa ha la forma di un bambino, è un bambino, lo sviluppo cerebrale è solo un pretesto;
 
 6. citare l'esempio del notaio in un'auto guidata da un sistema di IA e del sito che cerca di creare un'etica accumulando pareri (non fornire soluzione, per ora?);
 
-7. il problema con il condannato è che si deve decidere se privare lui della vita o rischiare che lui privi della vita un'altra persona. la soluzione migliore sarebbe quella di metterlo in condizione di non nuocere, ma non è sempre possibile farlo. 
-
-8. lo scopo della punizione DEVE sempre puntare al miglioramento: il condannato deve capire che ha fatto è sbagliato e non ripeterlo in altri cicli; se lo ammazzi, non è detto che capisca ed è possibile che ripeta;
-
-9. d'altro canto, chi dimostra di non potere o volere capire non rientra nel novero degli esseri senzienti; come tale, non è funzionale alla crescita dell'Universo e come il gatto di Nansen, può essere soppresso: Caino ha gli stessi diritti di Abele.
 
 
 
 
 
-- introdurre l'idea delle "variazioni" della storia dell'Universo
 - chiudere con l'aneddoto del Maestro Canaro e il sacerdote buddista.
 
 -->
