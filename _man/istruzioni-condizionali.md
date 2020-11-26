@@ -303,9 +303,10 @@ switch( x ) {
 <hr id="dottrina">
 
 La vita ci chiede spesso di fare delle scelte condizionali. 
-Quando ciò avviene, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
+Quando ciò avviene, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta che ti sembra più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
 Nel primo caso sarai un vettore di Entropia, mentre nel secondo caso sarai un paladino della Gravità.  
-Per il C'hi++ la scelta esatta (inteso come participio passato del verbo *esigere*) è la seconda: tutta la materia non è che la manifestazione di una unica Energia, quindi ha poco senso distinguerci gli uni dagli altri; dobbiamo invece ragionare come Saadi di Shiraz, quando dice:
+Come sai, per il C'hi++ la scelta esatta (inteso come participio passato del verbo *esigere*) è la seconda: tutta la materia non è che la manifestazione di una unica Energia, quindi ha poco senso distinguerci gli uni dagli altri;
+ dobbiamo invece ragionare come Saadi di Shiraz, quando dice:
 
 > Son membra d’un corpo solo i figli di Adamo,
 da un’unica essenza quel giorno creati.
@@ -317,7 +318,8 @@ Bisogna comportarsi bene e cercare di convincere anche gli altri a fare altretta
 
 > tutto il male o il bene che feci, in verità lo feci solo a me stesso.
 
-Ma come si fa a capire cosa sia *bene*?  
+<!-- todo: aggiungere paragone con ambulanza' -->
+Ma come si fa a capire cosa sia *bene*?
 Ci sono casi in cui è facile dare la scelta giusta, come nel caso del maestro Zen Bokuju:
 <!-- @todo: trovare riferimento bibliografico o quanto meno spiegare di cosa si stia parlando -->
 
@@ -346,35 +348,39 @@ Se queste domande le fai a un cattolico, lui &mdash; coerentemente con il suo Cr
 Se invece queste domande le poni a un Giudice, avrai risposte diverse a seconda della Nazione a cui appartiene, perché mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.   
 Un tempo, i credenti mettevano al rogo gli scienziati, accusandoli di eresia; il 6 Giugno del 1945, però, la Scienza ha mostrato al Mondo il suo potere ed è diventata di fatto il nuovo Dio per milioni di persone.
 Da allora, le parti si sono invertite e adesso sono gli scienziati a mettere al rogo ogni forma di spiritualità.
-Il problema è che se privi la Legge di una base spirituale, quello che otterrai è una legge *pret-a-porter*, un rimedio temporaneo a un'esigenza contingente.
-Nella migliore delle ipotesi.
-La teocrazia è un errore, ma anche la *a*-teocrazia dev'essere evitata.  
+Il problema è che se privi la giurisprudenza di una base spirituale, quello che otterrai sono Leggi *pret-a-porter*, rimedii temporanei a delle esigenze contingenti.
+Nella migliore delle ipotesi.  
+La teocrazia è un errore, ma anche la *a*-teocrazia dev'essere evitata.
 La Fede è stata la colla che ha tenuto unita la nostra società per quasi duemila anni.
-Forse quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, il denaro, i diritti umani, le leggi.
+Forse quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, il denaro, i diritti umani, le Leggi.
 <!-- 
     "Nell’universo non esistono dèi , non esistono nazioni né denaro né diritti umani né leggi , e non esiste alcuna giustizia che non sia nell’immaginazione comune degli esseri umani" 
     Sapiens. Da animali a dèi: Breve storia dell'umanità. 
     Harari, Yuval Noah 
 -->
 Nessuno di questi concetti così importanti per la nostra società esiste davvero, ma li utilizziamo lo stesso perché, come il linguaggio *C*, pur essendo solo delle convenzioni, sono utili al loro scopo.  
-Ora che questa colla non c'è più, le scelte dei legislatori non sono più mosse dal perseguimento di un obiettivo comune (corretto o sbagliato che fosse), ma dalla ricerca dell'approvazione dell'elettorato.
-Se gli elettori fossero persone illuminate, questo non sarebbe un problema, perché il loro interesse coinciderebbe con l'interesse comune; purtroppo però, la maggioranza dell'elettorato è composta da analfabeti funzionali e da egoisti che perseguono unicamente il proprio interesse momentaneo.
-Esiste una minoranza di idealisti, ma questi, privi di valori trascendenti, sono costretti ad agire in base ai propri sentimenti o ai propri auspici e subiscono inevitabilmente il malefico influsso dell'Annosa Dicotomia: le loro scelte puntano al bene comune, ma si tratta di un bene comune molto spesso miope e temporaneo.
+Ora che questa colla non c'è più, le scelte dei legislatori non sono più mosse dal perseguimento di un obiettivo comune (corretto o sbagliato che fosse), ma dalla ricerca dell'approvazione di un elettorato composto da zombie culturali <!-- 
+    Il tasso di analfabetismo funzionale, mentre scrivo, è del 41%.
+    I lettori sono sempre di meno: https://www.istat.it/it/archivio/213901
+-->
+e da egoisti che perseguono unicamente il proprio interesse momentaneo: il pascolo ideale per demagoghi con aspirazioni dittatoriali.  
+La minoranza di idealisti e di persone colte, priva di valori trascendenti, non può che agire in base ai propri sentimenti o ai propri auspici e subisce inevitabilmente il malefico influsso dell'Annosa Dicotomia: fanno scelte che puntano al bene comune, ma si tratta di un bene comune molto spesso miope e temporaneo.
 Come scacchisti mediocri, vedono ciò che è bene qui e ora, ma non riescono a valutarne le conseguenze a lungo termine.  
 
 ---
 
-Pensa a quale potrebbe essere, secondo te, la soluzione giusta alle due domande che ti ho fatto e poi pensa al *perché* quella soluzione ti appare giusta. 
+Pensa a quale potrebbe essere, secondo te, la soluzione giusta alle due domande che ti ho fatto e poi pensa al *motivo* quella soluzione ti appare giusta. 
 Perché permettiamo la soppressione di un feto che non ha fatto del male a nessuno, mentre lasciamo in vita chi ne ha già fatto?
 Vogliamo fare la cosa giusta o vogliamo solo sentirci buoni?  
-Il Maestro Canaro si fece molti nemici con la sue idee sull'aborto, anche fra persone che inizialmente lo avevano appoggiato, ma a lui non importava: mi disse che preferiva perdere un milione di seguaci che una vita.  
+Il Maestro Canaro si fece molti nemici con la sue idee sull'aborto, anche fra persone che inizialmente lo avevano appoggiato, ma a lui non importava: quando gliene parlai, mi disse che preferiva perdere un milione di seguaci che una vita.  
+
+<!--
+
+@todo
 Con il condannato, il problema è che si deve decidere se privare lui della vita o rischiare che lui privi della vita un'altra persona. 
 La soluzione migliore sarebbe quella di metterlo in condizione di non nuocere, ma non è sempre possibile farlo. 
 Non dimenticare che lo scopo della punizione deve sempre essere il miglioramento: il condannato deve capire che ha fatto è sbagliato e non ripeterlo in altri cicli; se lo ammazzi, non è detto che capisca ed è possibile che ripeta le sue azioni delittuose.
  
-<!--
-
-@todo
 
 
 
