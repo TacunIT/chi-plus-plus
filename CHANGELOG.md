@@ -1,3 +1,6 @@
+## 0.15.5 (November 28, 2020)
+  - Redazione testo dottrina
+
 ## 0.15.4 (November 26, 2020)
   - Redazione capitolo
 
