@@ -318,7 +318,9 @@ Bisogna comportarsi bene e cercare di convincere anche gli altri a fare altretta
 
 > tutto il male o il bene che feci, in verità lo feci solo a me stesso.
 
-<!-- todo: aggiungere paragone con ambulanza' -->
+<!-- 
+    todo: aggiungere paragone con ambulanza e riferimento al libro
+-->
 Ma come si fa a capire cosa sia *bene*?
 Ci sono casi in cui è facile dare la scelta giusta, come nel caso del maestro Zen Bokuju:
 <!-- @todo: trovare riferimento bibliografico o quanto meno spiegare di cosa si stia parlando -->
@@ -372,17 +374,54 @@ Come scacchisti mediocri, vedono ciò che è bene qui e ora, ma non riescono a v
 Pensa a quale potrebbe essere, secondo te, la soluzione giusta alle due domande che ti ho fatto e poi pensa al *motivo* quella soluzione ti appare giusta. 
 Perché permettiamo la soppressione di un feto che non ha fatto del male a nessuno, mentre lasciamo in vita chi ne ha già fatto?
 Vogliamo fare la cosa giusta o vogliamo solo sentirci buoni?  
-Il Maestro Canaro si fece molti nemici con la sue idee sull'aborto, anche fra persone che inizialmente lo avevano appoggiato, ma a lui non importava: quando gliene parlai, mi disse che preferiva perdere un milione di seguaci che una vita.  
+Il Maestro Canaro si fece molti nemici con la sue idee sull'aborto, anche fra persone che inizialmente lo avevano appoggiato, ma a lui non importava: quando gliene parlai, mi disse che preferiva perdere un milione di seguaci che una vita.    
+
+Rispondere alla domanda sul condannato è più difficile.
+Lo scopo delle tue azioni deve essere, come sempre, il miglioramento: chi sbaglia deve capire che ha fatto un errore e non ripeterlo in altri cicli di esistenza:
+
+```
+int pentimento( azione ){
+
+    bool ripetere;
+    
+    if ( azione == errore ) {
+        ripetere = false;
+    } else {
+        ripetere = true;
+    }
+
+    return ripetere;
+}
+```
+Se il peccatore è davvero pentito, allora è giusto che sia assolto, perché, come dice io Poeta:
+
+> cento Mondi di peccato sono dissipati dalla luce di un solo pentimento
+
+<!-- Il verbo degli uccelli (Mantiq al-Tayr) - Attar, Farid al-din -->
+
+Ma il pentimento dev'essere reale, il peccatore deve detestare il suo errore e scegliere di morire piuttosto che ripeterlo ancora.  
+Tagliare una mano a chi ruba, costringendolo a portare il cibo alla bocca con la stessa mano con cui si pulisce il sedere, è un metodo un po' drastico, ma efficace per costringere qualcuno a meditare sull'insensatezza delle sue azioni passate &mdash; specie in un luogo come il deserto, dove i bidet sono più rari che in Francia.
+La *Lex Talionis* può funzionare per reati minori, perché chi la subisce ha il tempo di riflettere sui suoi errori, ma nel caso di un omicidio non solo è contraria all'obbligo di benevolenza che abbiamo nei confronti degli altri esseri senzienti, ma potrebbe anche essere controproducente, perché se il condannato non capisce il suo errore prima di morire è possibile che ripeta le sue azioni delittuose in altri cicli dell'Universo.  
+D'altro canto, abbiamo un obbligo di benevolenza anche nei confronti degli altri carcerati e delle guardie carcerarie, quindi non possiamo lasciare che il condannato li uccida.
+<!--  Il *Metta Sutta* auspica che tutti gli esseri siano sicuri e felici 
+Sukhino và khemino hontu sabbe sattà bhavantu sukhitattà    
+(May all beings) be happy and secure, may all beings in their hearts be happy!
+https://web.archive.org/web/20100115063601/http://www.ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces/Mettasuttam.htm -->
+La soluzione ideale sarebbe quella di metterlo in condizione di non nuocere a terzi, lasciandolo poi meditare sui suoi errori, ma se questo non fosse possibile, come ci dovremmo comportare?
 
 <!--
 
 @todo
-Con il condannato, il problema è che si deve decidere se privare lui della vita o rischiare che lui privi della vita un'altra persona. 
-La soluzione migliore sarebbe quella di metterlo in condizione di non nuocere, ma non è sempre possibile farlo. 
-Non dimenticare che lo scopo della punizione deve sempre essere il miglioramento: il condannato deve capire che ha fatto è sbagliato e non ripeterlo in altri cicli; se lo ammazzi, non è detto che capisca ed è possibile che ripeta le sue azioni delittuose.
- 
+
+\Se ripete più volte lo stesso atto delittuoso evidentemente non capisce il suo errore.
+Se non capisce non è *senziente*, nel senso di *sensibilità*, quindi non può concorrere al miglioramento dell'Universo.
+Se non è utile al miglioramento, 
 
 
+Il pentimento
+
+
+Il Contrappasso: 
 
 6. citare l'esempio del notaio in un'auto guidata da un sistema di IA e del sito che cerca di creare un'etica accumulando pareri (non fornire soluzione, per ora?);
 
@@ -391,6 +430,7 @@ Non dimenticare che lo scopo della punizione deve sempre essere il miglioramento
 
 
 
-- chiudere con l'aneddoto del Maestro Canaro e il sacerdote buddista.
+- chiudere con l'aneddoto del Maestro Canaro e il sacerdote buddista
+il diverbio, in modo da chiarire in maniera indiretta la fonte, è il concetto di esseri senzienti, che per il seguace di Khamtrul Rinpoche erano tutti gli esseri viventi (respiranti), mentre per il Maestro Canaro erano tutti gli esseri in grado di discernere il bene dal male.
 
 -->
