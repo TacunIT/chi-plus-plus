@@ -1,5 +1,5 @@
 ---
-status:     redazione
+status:     pubblicato
 layout:     manuale
 class:      capitolo
 title:      Istruzioni condizionali
@@ -348,8 +348,7 @@ oppure:
 
 Se queste domande le fai a un cattolico, lui &mdash; coerentemente con il suo Credo &mdash; ti risponderà che no, non è possibile né abortire né condannare a morte perché la vita è un dono di Dio e nessuno ce ne può privare. 
 Se invece queste domande le poni a un Giudice, avrai risposte diverse a seconda della Nazione a cui appartiene, perché mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.   
-Un tempo, i credenti mettevano al rogo gli scienziati, accusandoli di eresia; il 6 Giugno del 1945, però, la Scienza ha mostrato al Mondo il suo potere ed è diventata di fatto il nuovo Dio per milioni di persone.
-Da allora, le parti si sono invertite e adesso sono gli scienziati a mettere al rogo ogni forma di spiritualità.
+Un tempo, i credenti mettevano al rogo gli scienziati, accusandoli di eresia; il 6 Giugno del 1945, però, la Scienza ha mostrato al Mondo il suo potere ed è diventata di fatto il nuovo Dio per milioni di persone; da allora, le parti si sono invertite e adesso sono gli scienziati a mettere al rogo ogni forma di spiritualità.
 Il problema è che se privi la giurisprudenza di una base spirituale, quello che otterrai sono Leggi *pret-a-porter*, rimedii temporanei a delle esigenze contingenti.
 Nella migliore delle ipotesi.  
 La teocrazia è un errore, ma anche la *a*-teocrazia dev'essere evitata.
@@ -360,7 +359,7 @@ Forse quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, i
     Sapiens. Da animali a dèi: Breve storia dell'umanità. 
     Harari, Yuval Noah 
 -->
-Nessuno di questi concetti così importanti per la nostra società esiste davvero, ma li utilizziamo lo stesso perché, come il linguaggio *C*, pur essendo solo delle convenzioni, sono utili al loro scopo.  
+Nessuno di questi concetti così importanti per la nostra Società esiste davvero, ma li utilizziamo lo stesso perché, come il linguaggio *C*, pur essendo solo delle convenzioni, sono utili al loro scopo.  
 Ora che questa colla non c'è più, le scelte dei legislatori non sono più mosse dal perseguimento di un obiettivo comune (corretto o sbagliato che fosse), ma dalla ricerca dell'approvazione di un elettorato composto in buona parte da zombie culturali <!-- 
     Il tasso di analfabetismo funzionale, mentre scrivo, è del 41%.
     I lettori sono sempre di meno: https://www.istat.it/it/archivio/213901
@@ -417,10 +416,10 @@ Se il peccatore è davvero pentito, allora è giusto che sia assolto, perché, c
 
 <!-- Il verbo degli uccelli (Mantiq al-Tayr) - Attar, Farid al-din -->
 
-Ma il pentimento dev'essere reale, il peccatore deve detestare il suo errore e scegliere di morire piuttosto che ripeterlo ancora.  
+Ma il pentimento dev'essere reale: il peccatore deve detestare il suo errore e scegliere di morire piuttosto che ripeterlo ancora.  
 Tagliare una mano a chi ruba, costringendolo a portare il cibo alla bocca con la stessa mano con cui si pulisce il sedere, è un metodo un po' drastico, ma efficace per costringere qualcuno a meditare sull'insensatezza delle sue azioni passate &mdash; specie in un luogo come il deserto, dove i bidet sono più rari che in Francia.
 La *Lex Talionis* può funzionare per reati minori, perché chi la subisce ha il tempo di riflettere sui suoi errori, ma nel caso di un omicidio non solo è contraria all'obbligo di benevolenza che abbiamo nei confronti degli altri esseri senzienti, ma potrebbe anche essere controproducente, perché se il condannato non capisce il suo errore prima di morire è possibile che le sue azioni delittuose vengano ripetute in altri cicli dell'Universo.  
-Inoltre, abbiamo un obbligo di benevolenza anche nei confronti degli altri carcerati e delle guardie carcerarie, quindi non possiamo lasciare che il condannato li uccida.
+D'altro canto, abbiamo un obbligo di benevolenza anche nei confronti degli altri carcerati e delle guardie carcerarie, quindi non possiamo lasciare che il condannato li uccida.
 La soluzione ideale sarebbe quella di metterlo in condizione di non nuocere a terzi, lasciandolo poi meditare sui suoi errori, ma se questo non fosse possibile, come ci dovremmo comportare?
 Se un individuo ripete più volte lo stesso atto delittuoso evidentemente non capisce o non vuole capire il suo errore.
 Se non capisce non è *senziente*, nel senso di *sensibilità*, quindi non può concorrere al miglioramento dell'Universo.
@@ -429,13 +428,12 @@ Se non è utile al miglioramento, possiamo considerarlo alla stessa stregua del 
 > Nansen un giorno vide i monaci delle sale Orientali e Occidentali che litigavano per un gatto.
 Egli sollevò il gatto e disse: “Se mi direte una parola di Zen, salverò il gatto; se no, lo ucciderò”.  
 Nessuno seppe rispondere e Nansen tagliò il gatto in due.  
-La sera, quando Joshu tornò, Nansen gli raccontò dell'incidente allora Joshu si tolse i sandali, se li mise sulla testa e se ne andò via.
-“Se tu fossi stato qui, il gatto sarebbe ancora vivo”, disse Nansen.
 
 <!-- "Nansen Taglia il Gatto in Due", da: “La Porta senza Porta”, Mumon, ed. it. 1987, Adelphi, Milano. -->  
 
-La morte del condannato, però, se mai dovesse rendersi necessaria, non deve essere considerata una vendetta di cui gioire, ma un evento tanto doloroso quanto inevitabile di cui dolersi come di un'amputazione e ciascuno, in quel giorno, dovrebbe chiedersi se, con *pensieri, parole, opere e omissioni*, non abbia contribuito in qualche modo a quella perdita.
-Una Società che esalta l'individualismo, il successo e il denaro non può dirsi innocente se chi non ha i mezzi o la capacità di ottenerli in maniera lecita cerca di procurarseli in altro modo.
+La morte del condannato, però, se mai dovesse rendersi necessaria, non deve essere considerata una vendetta di cui gioire, ma un evento tanto doloroso quanto inevitabile, di cui dolersi come di un'amputazione. 
+Ciascuno, in quel giorno, dovrebbe chiedersi se, con *pensieri, parole, opere e omissioni*, non abbia contribuito in qualche modo a quella perdita.
+Una Società che esalta l'individualismo, il successo e il denaro non può dirsi del tutto innocente se chi non ha i mezzi o la capacità di ottenerli in maniera lecita cerca di procurarseli in altro modo.
 
 ---
 
