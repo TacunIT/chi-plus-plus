@@ -413,7 +413,7 @@ int pentimento( azione ){
 ```
 Se il peccatore è davvero pentito, allora è giusto che sia assolto, perché, come dice Attar:
 
-> cento Mondi di peccato sono dissipati dalla luce di un solo pentimento
+> Cento Mondi di peccato sono dissipati dalla luce di un solo pentimento
 
 <!-- Il verbo degli uccelli (Mantiq al-Tayr) - Attar, Farid al-din -->
 
@@ -437,32 +437,32 @@ La sera, quando Joshu tornò, Nansen gli raccontò dell'incidente allora Joshu s
 La morte del condannato, però, se mai dovesse rendersi necessaria, non deve essere considerata una vendetta di cui gioire, ma un evento tanto doloroso quanto inevitabile di cui dolersi come di un'amputazione e ciascuno, in quel giorno, dovrebbe chiedersi se, con *pensieri, parole, opere e omissioni*, non abbia contribuito in qualche modo a quella perdita.
 Una Società che esalta l'individualismo, il successo e il denaro non può dirsi innocente se chi non ha i mezzi o la capacità di ottenerli in maniera lecita cerca di procurarseli in altro modo.
 
+---
+
+{% include_relative canaro/dharma-combat.md %}
 <!--
 
 @todo
+
 
 Il Metta Sutra predica la benevolenza per tutti gli "esseri che respirano"
 
 > Ye keci pàõa-bhåt' atthi
 
-Ye keci Whatsoever
-pàõa- breathing
-bhåt' (= bhåtà) beings
-atthi there are
+<p class="metta">
+<i>Ye keci</i> Ciascun<br />
+<i>pàõa-</i>   respirante<br />
+<i>bhåt'</i>   essere<br />
+<i>atthi</i>   che esiste<br />
+</p>
+
 
 allora, perché Nansen taglia in due il gatto? e perché i maestri Zen potevano uccidere i loro discepoli?
-
+Ho cercato la definizione di "senziente", ma non mi sembra che ci sia una risposta univoca.
+In attesa di accertare la questione (posto che sia possibile), 
 
 Il Contrappasso: 
 
 6. citare l'esempio del notaio in un'auto guidata da un sistema di IA e del sito che cerca di creare un'etica accumulando pareri (non fornire soluzione, per ora?);
-
-
-
-
-
-
-- chiudere con l'aneddoto del Maestro Canaro e il sacerdote buddista
-il diverbio, in modo da chiarire in maniera indiretta la fonte, è il concetto di esseri senzienti, che per il seguace di Khamtrul Rinpoche erano tutti gli esseri viventi (respiranti), mentre per il Maestro Canaro erano tutti gli esseri in grado di discernere il bene dal male.
 
 -->
