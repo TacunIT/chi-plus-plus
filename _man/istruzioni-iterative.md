@@ -1,5 +1,5 @@
 ---
-status:     bozza
+status:     redazione
 layout:     manuale
 class:      capitolo
 title:      Istruzioni iterative
@@ -14,6 +14,8 @@ Le istruzioni di ciclo sono una delle componenti fondamentali della programmazio
 ### ciclo while
 
 ### ciclo do-while
+
+<hr id="dottrina">
 
 <!--
 
