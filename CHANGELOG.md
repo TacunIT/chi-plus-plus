@@ -1,3 +1,6 @@
+## 0.15.7 (November 29, 2020)
+  - Revisione del testo del capitolo prima della pubblicazione
+
 ## 0.15.6 (November 29, 2020)
   - Completata prima stesura del brano finale
   - Completata prima stesura della dottrina
