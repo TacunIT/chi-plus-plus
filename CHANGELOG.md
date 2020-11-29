@@ -1,3 +1,7 @@
+## 0.15.6 (November 29, 2020)
+  - Completata prima stesura del brano finale
+  - Completata prima stesura della dottrina
+
 ## 0.15.5 (November 28, 2020)
   - Redazione testo dottrina
 
