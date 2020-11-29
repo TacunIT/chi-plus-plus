@@ -318,9 +318,8 @@ Bisogna comportarsi bene e cercare di convincere anche gli altri a fare altretta
 
 > tutto il male o il bene che feci, in verità lo feci solo a me stesso.
 
-<!-- 
-    todo: aggiungere paragone con ambulanza e riferimento al libro
--->
+<!-- Il verbo degli uccelli (Mantiq al-Tayr) - Attar, Farid al-din -->
+
 Ma come si fa a capire cosa sia *bene*?
 Ci sono casi in cui è facile dare la scelta giusta, come nel caso del maestro Zen Bokuju:
 <!-- @todo: trovare riferimento bibliografico o quanto meno spiegare di cosa si stia parlando -->
