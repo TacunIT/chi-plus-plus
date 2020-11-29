@@ -354,27 +354,45 @@ Il problema è che se privi la giurisprudenza di una base spirituale, quello che
 Nella migliore delle ipotesi.  
 La teocrazia è un errore, ma anche la *a*-teocrazia dev'essere evitata.
 La Fede è stata la colla che ha tenuto unita la nostra società per quasi duemila anni.
-Forse quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, il denaro, i diritti umani, le Leggi.
+Forse quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, il denaro, i Diritti Umani, le Leggi.
 <!-- 
     "Nell’universo non esistono dèi , non esistono nazioni né denaro né diritti umani né leggi , e non esiste alcuna giustizia che non sia nell’immaginazione comune degli esseri umani" 
     Sapiens. Da animali a dèi: Breve storia dell'umanità. 
     Harari, Yuval Noah 
 -->
 Nessuno di questi concetti così importanti per la nostra società esiste davvero, ma li utilizziamo lo stesso perché, come il linguaggio *C*, pur essendo solo delle convenzioni, sono utili al loro scopo.  
-Ora che questa colla non c'è più, le scelte dei legislatori non sono più mosse dal perseguimento di un obiettivo comune (corretto o sbagliato che fosse), ma dalla ricerca dell'approvazione di un elettorato composto da zombie culturali <!-- 
+Ora che questa colla non c'è più, le scelte dei legislatori non sono più mosse dal perseguimento di un obiettivo comune (corretto o sbagliato che fosse), ma dalla ricerca dell'approvazione di un elettorato composto in buona parte da zombie culturali <!-- 
     Il tasso di analfabetismo funzionale, mentre scrivo, è del 41%.
     I lettori sono sempre di meno: https://www.istat.it/it/archivio/213901
 -->
 e da egoisti che perseguono unicamente il proprio interesse momentaneo: il pascolo ideale per demagoghi con aspirazioni dittatoriali.  
 La minoranza di idealisti e di persone colte, priva di valori trascendenti, non può che agire in base ai propri sentimenti o ai propri auspici e subisce inevitabilmente il malefico influsso dell'Annosa Dicotomia: fanno scelte che puntano al bene comune, ma si tratta di un bene comune molto spesso miope e temporaneo.
 Come scacchisti mediocri, vedono ciò che è bene qui e ora, ma non riescono a valutarne le conseguenze a lungo termine.  
-
----
-
 Pensa a quale potrebbe essere, secondo te, la soluzione giusta alle due domande che ti ho fatto e poi pensa al *motivo* quella soluzione ti appare giusta. 
 Perché permettiamo la soppressione di un feto che non ha fatto del male a nessuno, mentre lasciamo in vita chi ne ha già fatto?
 Vogliamo fare la cosa giusta o vogliamo solo sentirci buoni?  
-Il Maestro Canaro si fece molti nemici con la sue idee sull'aborto, anche fra persone che inizialmente lo avevano appoggiato, ma a lui non importava: quando gliene parlai, mi disse che preferiva perdere un milione di seguaci che una vita.    
+Il Maestro Canaro si fece molti nemici con la sue idee sull'aborto, anche fra persone che inizialmente lo avevano appoggiato.
+Lo accusarono di cercare l'appoggio della Chiesa Cattolica, mentre stava solo applicando il precetto del *Metta Sutra* che predica la felicità non solo per tutti coloro che sono nati, ma anche per coloro che devono nascere:
+
+> bhåtà và sambhavesã và sabbe sattà bhavantu sukhitattà
+
+<p class="metta">
+<i>bhåtà</i> quelli che sono nati<br />  
+<i>và</i>  o  <br />
+<i>sambhavesã</i> quelli che cercano la nascita  <br />
+<i>và</i> o  <br />
+<i>sabbe</i> tutti  <br />
+<i>sattà</i> gli esseri   <br />
+<i>bhavantu</i> possano essere  <br />
+<i>sukhitattà</i> felici nel loro cuore
+</p>
+<!--  
+    @todo: verificare la traduzione di questo testo e del seguente
+    https://web.archive.org/web/20100115063601/http://www.ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces/Mettasuttam.htm -->
+    
+Tutto questo a lui non importava: quando gliene parlai, mi disse che preferiva perdere un milione di seguaci che una vita.    
+
+---
 
 Rispondere alla domanda sul condannato è più difficile.
 Lo scopo delle tue azioni deve essere, come sempre, il miglioramento: chi sbaglia deve capire che ha fatto un errore e non ripeterlo in altri cicli di esistenza:
@@ -383,7 +401,7 @@ Lo scopo delle tue azioni deve essere, come sempre, il miglioramento: chi sbagli
 int pentimento( azione ){
 
     bool ripetere;
-    
+
     if ( azione == errore ) {
         ripetere = false;
     } else {
@@ -393,7 +411,7 @@ int pentimento( azione ){
     return ripetere;
 }
 ```
-Se il peccatore è davvero pentito, allora è giusto che sia assolto, perché, come dice io Poeta:
+Se il peccatore è davvero pentito, allora è giusto che sia assolto, perché, come dice Attar:
 
 > cento Mondi di peccato sono dissipati dalla luce di un solo pentimento
 
@@ -401,24 +419,38 @@ Se il peccatore è davvero pentito, allora è giusto che sia assolto, perché, c
 
 Ma il pentimento dev'essere reale, il peccatore deve detestare il suo errore e scegliere di morire piuttosto che ripeterlo ancora.  
 Tagliare una mano a chi ruba, costringendolo a portare il cibo alla bocca con la stessa mano con cui si pulisce il sedere, è un metodo un po' drastico, ma efficace per costringere qualcuno a meditare sull'insensatezza delle sue azioni passate &mdash; specie in un luogo come il deserto, dove i bidet sono più rari che in Francia.
-La *Lex Talionis* può funzionare per reati minori, perché chi la subisce ha il tempo di riflettere sui suoi errori, ma nel caso di un omicidio non solo è contraria all'obbligo di benevolenza che abbiamo nei confronti degli altri esseri senzienti, ma potrebbe anche essere controproducente, perché se il condannato non capisce il suo errore prima di morire è possibile che ripeta le sue azioni delittuose in altri cicli dell'Universo.  
-D'altro canto, abbiamo un obbligo di benevolenza anche nei confronti degli altri carcerati e delle guardie carcerarie, quindi non possiamo lasciare che il condannato li uccida.
-<!--  Il *Metta Sutta* auspica che tutti gli esseri siano sicuri e felici 
-Sukhino và khemino hontu sabbe sattà bhavantu sukhitattà    
-(May all beings) be happy and secure, may all beings in their hearts be happy!
-https://web.archive.org/web/20100115063601/http://www.ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces/Mettasuttam.htm -->
+La *Lex Talionis* può funzionare per reati minori, perché chi la subisce ha il tempo di riflettere sui suoi errori, ma nel caso di un omicidio non solo è contraria all'obbligo di benevolenza che abbiamo nei confronti degli altri esseri senzienti, ma potrebbe anche essere controproducente, perché se il condannato non capisce il suo errore prima di morire è possibile che le sue azioni delittuose vengano ripetute in altri cicli dell'Universo.  
+Inoltre, abbiamo un obbligo di benevolenza anche nei confronti degli altri carcerati e delle guardie carcerarie, quindi non possiamo lasciare che il condannato li uccida.
 La soluzione ideale sarebbe quella di metterlo in condizione di non nuocere a terzi, lasciandolo poi meditare sui suoi errori, ma se questo non fosse possibile, come ci dovremmo comportare?
+Se un individuo ripete più volte lo stesso atto delittuoso evidentemente non capisce o non vuole capire il suo errore.
+Se non capisce non è *senziente*, nel senso di *sensibilità*, quindi non può concorrere al miglioramento dell'Universo.
+Se non è utile al miglioramento, possiamo considerarlo alla stessa stregua del gatto di Nansen:
+
+> Nansen un giorno vide i monaci delle sale Orientali e Occidentali che litigavano per un gatto.
+Egli sollevò il gatto e disse: “Se mi direte una parola di Zen, salverò il gatto; se no, lo ucciderò”.  
+Nessuno seppe rispondere e Nansen tagliò il gatto in due.  
+La sera, quando Joshu tornò, Nansen gli raccontò dell'incidente allora Joshu si tolse i sandali, se li mise sulla testa e se ne andò via.
+“Se tu fossi stato qui, il gatto sarebbe ancora vivo”, disse Nansen.
+
+<!-- "Nansen Taglia il Gatto in Due", da: “La Porta senza Porta”, Mumon, ed. it. 1987, Adelphi, Milano. -->  
+
+La morte del condannato, però, se mai dovesse rendersi necessaria, non deve essere considerata una vendetta di cui gioire, ma un evento tanto doloroso quanto inevitabile di cui dolersi come di un'amputazione e ciascuno, in quel giorno, dovrebbe chiedersi se, con *pensieri, parole, opere e omissioni*, non abbia contribuito in qualche modo a quella perdita.
+Una Società che esalta l'individualismo, il successo e il denaro non può dirsi innocente se chi non ha i mezzi o la capacità di ottenerli in maniera lecita cerca di procurarseli in altro modo.
 
 <!--
 
 @todo
 
-\Se ripete più volte lo stesso atto delittuoso evidentemente non capisce il suo errore.
-Se non capisce non è *senziente*, nel senso di *sensibilità*, quindi non può concorrere al miglioramento dell'Universo.
-Se non è utile al miglioramento, 
+Il Metta Sutra predica la benevolenza per tutti gli "esseri che respirano"
 
+> Ye keci pàõa-bhåt' atthi
 
-Il pentimento
+Ye keci Whatsoever
+pàõa- breathing
+bhåt' (= bhåtà) beings
+atthi there are
+
+allora, perché Nansen taglia in due il gatto? e perché i maestri Zen potevano uccidere i loro discepoli?
 
 
 Il Contrappasso: 
