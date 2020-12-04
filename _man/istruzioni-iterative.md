@@ -7,34 +7,116 @@ permalink:  /man/istruzioni-iterative
 quote:      "Dopo di me, il reboot"
 ---
 
-Le istruzioni di ciclo sono una delle componenti fondamentali della programmazione.
-Le istruzioni che determinano l’esecuzione dei cicli rivestono particolare importanza nella 
-programmazione in quanto consentono l’esecuzione ripetitiva di gruppi di istruzioni per un determinato numero di volte o fino al raggiungimento di un determinato risultato, sono queste istruzioni, in definitiva, che consentono principalmente di utilizzare efficacemente la potenza di calcolo degli elaboratori elettronici.
-Il linguaggio C mette a disposizione tre istruzioni di ciclo: il ciclo for, il ciclo while ed il ciclo do while.
-La caratteristica generale delle istruzioni di ciclo è quella di avere un’istruzione di controllo del ciclo ed un corpo del ciclo costituito da una o più istruzioni che vengono ripetute ad ogni iterazione.
-Vediamo ora nel dettaglio le caratteristiche di queste tre istruzioni di controllo dei cicli.
+Le istruzioni di ciclo sono una delle componenti fondamentali della programmazione perché permettono di eseguire ripetutamente una serie di operazioni e quindi ci hanno consentito di delegare ai computer molte attvità noiose e ripetitive.  
+Ci sono tre tipi di istruzioni di ciclo: 
+
+- `for`
+- `while`
+- `do while`.
+
+Queste istruzioni sono composte di due parti: un’istruzione di *controllo del ciclo*, che ne determina la durata e un *corpo del ciclo*, composto dalle istruzioni che vengono ripetute ad ogni iterazione.
+La ripetizione può protrarsi o per un determinato numero di volte o fino a che non sia raggiunta una determinata condizione.
+
 
 ## Il ciclo for
-Questa istruzione viene utilizzata quando vogliamo eseguire il ciclo in numero determinato di volte. La forma generale è la seguente:
+Questa istruzione viene utilizzata quando vogliamo eseguire il ciclo in numero determinato di volte. 
+La forma generale è la seguente:
 
-for(<espressione1> ; <espressione2> ; <espressione3>)
+```
+// controllo del ciclo
+for(<stato iniziale> ; <stato finale> ; <variazione>)
 {
-  ...istruzioni...(corpo del ciclo)
+    // corpo del ciclo
+    <istruzioni>
 }
+```
 
-L’istruzione for valuta le tre espressioni per controllare l’esecuzione delle istruzioni che costituiscono il corpo del ciclo. Le tre espressioni vengono valutate nel modo seguente:
-·	l’espressione1 viene valutata solo una volta precedentemente alla prima iterazione del ciclo, usualmente vengono inizializzate le variabili delle espressioni;
-·	l’espressione2 è un’espressione logica o relazionale che determina se eseguire ulteriormente il ciclo, questa espressione viene valutata all’inizio di ogni iterazione. Se il valore risolto è zero (false) l’esecuzione del ciclo for termina, altrimenti continua.
-·	l’espressione3 viene valutata al termine di ogni iterazione ed usualmente è costituita da un’espressione di incremento delle variabili inizializzate da espressione1.
-Iniziata l’esecuzione essa continua fino a che espressione2 viene risolta in valore 0 (false), oppure viene incontrata una istruzione di interruzione break.
-Un caso particolare di istruzione for viene utilizzato per effettuare cicli con numero indefinito di iterazioni, in questo caso si omettono le tre espressioni di controllo, ma si mantengono le istruzioni null (vedi capitolo 4.1.1); la sintassi è la seguente:
+Le tre condizioni all'interno delle parentesi sono utilizzate dall'istruzione `for` per controllare l'esecuzione delle istruzioni all'interno del corpo del ciclo.  
+La prima espressione è valutata solo una volta all'inizio del ciclo e, solitamente, serve a inizializzare le variabili utilizzate.  
+La seconda espressione è una condizione logica o relazionale che viene valutata all’inizio di ogni iterazione: se torna `0` o `false` l’esecuzione del ciclo termina, altrimenti posegue.  
+La terza espressione viene valutata al termine di ogni iterazione e, di solito, è costituita da un’espressione di incremento delle variabili utilizzate per il controllo del ciclo.
 
+```
+{% include_relative src/istruzioni-iterative-for.cpp %}
+```
+
+La prima istruzione inizializza il valore di `p` a `1` (il valore della costante `POS_MERCURIO`) e prosegue, per incrementi successivi di 1, fino a che il valore di `p`è minore o uguale a `9` (il valore della costante `POS_PLUTONE`).
+A ogni ripetizione il programma mostra il valore della variabile `p`, richiama la funzione `mostraPianeta`, passandole il valore corrente di `p`, poi aggiunge un a capo.  
+L'output di questo programma è: 
+
+```
+% g++ src/cpp/istruzioni-iterative-for.cpp -o src/out/esempio
+% src/out/esempio                                            
+1: Mercurio
+2: Venere
+3: Terra
+4: Marte
+5: Giove
+6: Saturno
+7: Urano
+8: Nettuno
+9: Plutone
+
+```
+
+Si può utilizzare un ciclo `for` anche per effettuare cicli con un numero indefinito di iterazioni, basta omettere le tre espressioni di controllo, mantenendo solo delle *istruzioni nulle*, composte dal solo terminatore `;`:
+
+```
 for( ; ; )
 {
-  ...istruzioni...(corpo del ciclo)
+    // istruzioni
 }
+```
 
+Un ciclo di questo tipo continuerà a ripetersi indefinitamente e, se non viene fermato in qualche maniera, causerà inevitabilmente dei problemi al computer che lo esegue.
+È necessario quindi porre un limite al numero di ripetizioni, utilizzando la stessa parola-chiave `break`che abbiamo usato con le istruzioni `switch`:
 
+```
+int main(int argc, char** argv)
+{    
+    /** Inizializza il valore di p */
+    int p = POS_MERCURIO;
+
+    /** Esegue il ciclo in maniera indefinita */
+    for ( ; ; ) {
+        cout << p << ": "; 
+        /** Se incontra un errore, si ferma */
+        if(!mostraPianeta( p++ )) break; 
+        cout << endl;
+
+    }
+        
+    cout << endl;
+
+    return 0;
+}
+```
+
+L'incremento della variabile `p`, in questo caso, avviene all'interno dell'istruzione:
+<!-- @todo: parlare dell'operatore di incremento -->
+
+```
+if(!mostraPianeta( p++ )) break; 
+```
+
+L'output di questo programma è:
+
+```
+% g++ src/cpp/istruzioni-iterative-for-break.cpp -o src/out/esempio
+% src/out/esempio                                                  
+1: Mercurio
+2: Venere
+3: Terra
+4: Marte
+5: Giove
+6: Saturno
+7: Urano
+8: Nettuno
+9: Plutone
+10: Inserire un valore da: 1 a 9
+```
+
+<!--
 4.3.2   Il ciclo while
 Il ciclo while viene principalmente usato nei casi dove non sia preventivamente determinato il numero di iterazioni da effettuare. Questa istruzione valuta un’espressione e quindi esegue il corpo del ciclo zero o piu` volte fino a che l’espressione è valutata pari a zero (false).
 La forma generale è la seguente: 
