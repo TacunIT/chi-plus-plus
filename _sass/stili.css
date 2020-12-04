@@ -84,6 +84,9 @@ H3 {
     font-size: 1.4rem;
     margin-top: 1rem;
 }
+BLOCKQUOTE H3 {
+    font-size: 1.2rem;
+}
 H4 {
     font-size: 1.2rem;
     margin-top: 1rem;
