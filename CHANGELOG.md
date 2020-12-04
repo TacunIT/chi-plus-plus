@@ -1,3 +1,7 @@
+## 0.16.0 (December 04, 2020)
+- Iniziato il capitolo sulle istruzioni iterative
+  - Completata prima stesura paragrafo cicli for
+
 ## 0.15.7 (November 29, 2020)
   - Revisione del testo del capitolo prima della pubblicazione
 
