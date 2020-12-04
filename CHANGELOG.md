@@ -1,3 +1,6 @@
+## 0.16.1 (December 04, 2020)
+  - Ripristinato capitolo sugli operatori
+
 ## 0.16.0 (December 04, 2020)
 - Iniziato il capitolo sulle istruzioni iterative
   - Completata prima stesura paragrafo cicli for
