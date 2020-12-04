@@ -5,20 +5,10 @@ class:      capitolo
 no-index:   true
 title:      Il debug
 permalink:  /man/debug
-quote:      "Cento Mondi di peccato sono dissipati dalla luce di un solo tiket."
+quote:      "Cento Mondi di peccato sono dissipati dalla luce di un solo ticket."
 ---
 
 
-B. Croce -- Breviario di estetica -- Laterza, Bari 1928 -- p.12
-
-Un sistema è una casa che, subito dopo costruita e adornata, ha bisogno
-(soggetta com'è all'azione corroditrice degli elementi) di un lavorio
-più o meno energico, ma assiduo, di manutenzione, e che a un certo
-momento non giova più restaurare e puntellare, e bisogna gettare a terra
-e ricostruire dalle fondamenta. Ma con siffatta differenza capitale:
-che, nell'opera del pensiero, la casa perpetuamente nuova e sostenuta
-perpetuamente dall'antica, la quale, quasi per opera magica, perdura in
-essa.
 
 Chiediti una cosa: come mai, i manuali di programmazione non parlano mai
 del *debug*?
@@ -117,8 +107,7 @@ deve essere ignorato.
 
 Nessun avviso deve essere ignorato.
 
-Errori di esecuzione
---------------------
+## Errori di esecuzione
 
 Solo un programma formalmente ineccepibile può dare luogo ad errori di
 esecuzione. Se non fosse formalmente ineccepibile, infatti, non sarebbe
@@ -135,3 +124,14 @@ quindi causare grandi problemi.
 Gli errori di esecuzione possono essere di due tipi: quelli che si
 manifestano in maniera deterministica e quelli che si manifestano in
 maniera casuale.
+
+
+<!--
+
+B. Croce -- Breviario di estetica -- Laterza, Bari 1928 -- p.12
+
+Un sistema è una casa che, subito dopo costruita e adornata, ha bisogno (soggetta com'è all'azione corroditrice degli elementi) di un lavorio più o meno energico, ma assiduo, di manutenzione, e che a un certo momento non giova più restaurare e puntellare, e bisogna gettare a terra e ricostruire dalle fondamenta. Ma con siffatta differenza capitale: che, nell'opera del pensiero, la casa perpetuamente nuova e sostenuta perpetuamente dall'antica, la quale, quasi per opera magica, perdura in essa.
+
+riprendere, se utile, gli esempii del ciclo for per illustrare i diversi tipi di errore che ne possono derivare
+
+-->
