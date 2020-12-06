@@ -1,12 +1,6 @@
 <header>
-    <div class="box intestazione">
-        <a title="Và alla pgina iniziale" href="/">
-        <img class="logo" alt="C'hi++" title="C'hi plus plus" src="/assets/img/chi-plus-plus.png"></a>
-        <div class="box titoli">
-            <p class="titolo-1">{{ site.title }}</p>
-            <p class="titolo-2">{{ site.claim }}</p>
-        </div>
-    </div>
+    <img class="logo" alt="C'hi++" title="C'hi plus plus" src="/assets/img/chi-plus-plus.png"></a>
+    <p class="titolo">{{ site.title }} - {{ site.claim }}</p>
     {% if page.class != "copertina" %}
     {%- include menu.html -%}
     {% endif %}

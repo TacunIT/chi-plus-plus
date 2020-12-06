@@ -40,6 +40,11 @@
     margin:0
 }
 
+.titolo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/*
 .titolo-1 {
     font-size: 1.8rem;
     font-weight: bold;
@@ -48,7 +53,7 @@
     font-size: 1.2rem;
     font-weight: bold;
 }
-
+*/
 .box {
     font-size: 0;
     position: relative;
@@ -219,11 +224,9 @@ HEADER DIV.box.intestazione {
 }
 
 HEADER img.logo {
-    height: 80px;
-    width: 130px;
-    display: inline-block;
-    float: left;
-    padding: 0 1rem;
+    width: 180px;
+    height: auto;
+    float: none;
 }
 
 FOOTER {
@@ -333,6 +336,7 @@ MAIN BLOCKQUOTE {
 /**
  *  Stili per le pagine normali
  */
+ /*
 BODY.pagina HEADER DIV.box.titoli {
     padding: 0.5rem 0;
     width: calc(100% - 130px);
@@ -343,7 +347,7 @@ BODY.pagina HEADER titolo-2 {
     padding-bottom: 0;
     font-size: 1.4rem
 }
-
+*/
 BODY.pagina H1 {
     margin: 1rem 0 3rem 0;
     text-align: center;
@@ -352,10 +356,10 @@ BODY.pagina H1 {
 BODY.pagina.index H1 {
     display: none;
 }
-
+/*
 /**
  *  Stili per le FAQ
- */
+ 
 BODY.faq DIV.faq {
     padding: 1rem 0;
 }
@@ -367,12 +371,13 @@ BODY.faq DIV.faq A {
 BODY.faq DIV.faq A {
     text-decoration: none;
 }
-
+*/
 /**
  *
  *  Stili per la pagina index 
  *
  */
+ /*
 BODY.index HEADER DIV.box.intestazione {
     text-align: center;
     padding: 0;
@@ -396,12 +401,11 @@ BODY.index HEADER titolo-2 {
 }
 
 BODY.index HEADER img.logo {
-    width: 240px;
+    width: 180px;
     height: auto;
-    max-width: 90%;
     float: none;
 }
-
+*/
 BODY.index MAIN SECTION.citazione.pagina {
     padding-top: 3rem;
 }
