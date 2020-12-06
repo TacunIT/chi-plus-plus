@@ -1,3 +1,8 @@
+## 0.16.2 (December 07, 2020)
+  - Rivista la grafica delle pagine
+  - Modificato menu principale
+  - Unificata intestazione pagine
+
 ## 0.16.1 (December 04, 2020)
   - Ripristinato capitolo sugli operatori
 
