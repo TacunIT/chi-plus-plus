@@ -69,27 +69,19 @@ for( ; ; )
 ```
 
 Un ciclo di questo tipo continuerà a ripetersi indefinitamente e, se non viene fermato in qualche maniera, causerà inevitabilmente dei problemi al computer che lo esegue.
-È necessario quindi porre un limite al numero di ripetizioni, utilizzando la stessa parola-chiave `break`che abbiamo usato con le istruzioni `switch`:
+È necessario quindi porre un limite al numero di ripetizioni, utilizzando la stessa parola-chiave `break`che abbiamo usato con le istruzioni `switch`.
+Stavolta separeremo le tre componenti del programma precedente in tre file distinti: il file di include `pianeti.h`, che conterrà le dichiarazioni delle costanti e della funzione `mostraPianeta`; il file `pianeti.cpp`, contenente la definizione della funzione `mostraPianeta` e un file separato per la funzione `main`:
 
 ```
-int main(int argc, char** argv)
-{    
-    /** Inizializza il valore di p */
-    int p = POS_MERCURIO;
+{% include_relative src/pianeti.h %}
+```
 
-    /** Esegue il ciclo in maniera indefinita */
-    for ( ; ; ) {
-        cout << p << ": "; 
-        /** Se incontra un errore, si ferma */
-        if(!mostraPianeta( p++ )) break; 
-        cout << endl;
+```
+{% include_relative src/pianeti.cpp %}
+```
 
-    }
-        
-    cout << endl;
-
-    return 0;
-}
+```
+{% include_relative src/istruzioni-iterative-for-break.cpp %}
 ```
 
 L'incremento della variabile `p`, in questo caso, avviene all'interno dell'istruzione:
@@ -99,7 +91,7 @@ L'incremento della variabile `p`, in questo caso, avviene all'interno dell'istru
 if(!mostraPianeta( p++ )) break; 
 ```
 
-L'output di questo programma è:
+Per compilare questo programma dovremo passare al compilatore sia il file contenente la funzione `main`, sia il file `pianeti.cpp`:
 
 ```
 % g++ src/cpp/istruzioni-iterative-for-break.cpp -o src/out/esempio

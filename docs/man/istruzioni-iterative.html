@@ -115,7 +115,7 @@ using namespace std;
  *  mostraPianeta 
  *  Visualizza il nome di un pianeta, data la sua posizione.
  *  @param  int  pianeta Posizione del pianeta.
- *  @return bool esiste  true se il pianeta esiste; false altrimenti.
+ *  @return bool esiste  true se il pianeta esiste.
  */
 bool mostraPianeta(int pianeta )
 {    
@@ -143,6 +143,11 @@ bool mostraPianeta(int pianeta )
     return esiste;
 }
 
+/**
+ *  main
+ *  Funzione principale del programma, richiama la funzione
+ *  mostraPianeti passandole i valori da 1 a 9.
+ */
 int main(int argc, char** argv)
 {    
     int p = POS_NESSUNO;
@@ -186,26 +191,87 @@ L’output di questo programma è:</p>
 </code></pre>
 
 <p>Un ciclo di questo tipo continuerà a ripetersi indefinitamente e, se non viene fermato in qualche maniera, causerà inevitabilmente dei problemi al computer che lo esegue.
-È necessario quindi porre un limite al numero di ripetizioni, utilizzando la stessa parola-chiave <code>break</code>che abbiamo usato con le istruzioni <code>switch</code>:</p>
+È necessario quindi porre un limite al numero di ripetizioni, utilizzando la stessa parola-chiave <code>break</code>che abbiamo usato con le istruzioni <code>switch</code>.
+Stavolta separeremo le tre componenti del programma precedente in tre file distinti: il file di include <code>pianeti.h</code>, che conterrà le dichiarazioni delle costanti e della funzione <code>mostraPianeta</code>; il file <code>pianeti.cpp</code>, contenente la definizione della funzione <code>mostraPianeta</code> e un file separato per la funzione <code>main</code>:</p>
 
-<pre><code>int main(int argc, char** argv)
+<pre><code>#define POS_NESSUNO -1
+#define POS_ERRORE   0
+#define POS_MERCURIO 1
+#define POS_VENERE   2
+#define POS_TERRA    3
+#define POS_MARTE    4
+#define POS_GIOVE    5
+#define POS_SATURNO  6
+#define POS_URANO    7
+#define POS_NETTUNO  8
+#define POS_PLUTONE  9
+
+bool mostraPianeta(int pianeta);
+
+</code></pre>
+
+<pre><code>#include &lt;iostream&gt;
+#include &lt;cstdlib&gt;
+#include "pianeti.h"
+
+using namespace std;
+
+/**
+ *  mostraPianeta 
+ *  Visualizza il nome di un pianeta, data la sua posizione.
+ *  @param  int  pianeta Posizione del pianeta.
+ *  @return bool esiste  true se il pianeta esiste.
+ */
+bool mostraPianeta(int pianeta)
 {    
-    /** Inizializza il valore di p */
+    bool esiste = true;
+    
+    switch( pianeta ) {
+        case POS_ERRORE:   cout &lt;&lt; "Valore non valido"; break;
+        case POS_MERCURIO: cout &lt;&lt; "Mercurio";          break;
+        case POS_VENERE:   cout &lt;&lt; "Venere";            break;
+        case POS_TERRA:    cout &lt;&lt; "Terra";             break;
+        case POS_MARTE:    cout &lt;&lt; "Marte";             break;
+        case POS_GIOVE:    cout &lt;&lt; "Giove";             break;
+        case POS_SATURNO:  cout &lt;&lt; "Saturno";           break;
+        case POS_URANO:    cout &lt;&lt; "Urano";             break;          
+        case POS_NETTUNO:  cout &lt;&lt; "Nettuno";           break;          
+        case POS_PLUTONE:  cout &lt;&lt; "Plutone";           break;
+        default:
+            esiste = false;
+            cout &lt;&lt; "Inserire un valore da: " 
+                 &lt;&lt; POS_MERCURIO 
+                 &lt;&lt; " a " 
+                 &lt;&lt; POS_PLUTONE;                    
+    } 
+    
+    return esiste;
+}
+
+</code></pre>
+
+<pre><code>#include &lt;iostream&gt;
+#include "pianeti.h"
+
+using namespace std;
+
+int main(int argc, char** argv)
+{    
     int p = POS_MERCURIO;
 
-    /** Esegue il ciclo in maniera indefinita */
+    /** Elenca tutti i Pianeti del Sistema Solare */
     for ( ; ; ) {
         cout &lt;&lt; p &lt;&lt; ": "; 
         /** Se incontra un errore, si ferma */
         if(!mostraPianeta( p++ )) break; 
         cout &lt;&lt; endl;
-
     }
         
     cout &lt;&lt; endl;
 
     return 0;
 }
+
 </code></pre>
 
 <p>L’incremento della variabile <code>p</code>, in questo caso, avviene all’interno dell’istruzione:
