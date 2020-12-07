@@ -20,6 +20,6 @@
 #define POS_PLUTONE  9
 
 /** Dichiarazione della funzione */
-bool mostraPianeta(int pianeta);
+//bool mostraPianeta(int pianeta);
 
 #endif /* _PIANETI */
