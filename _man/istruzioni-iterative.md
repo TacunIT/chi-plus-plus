@@ -7,7 +7,7 @@ permalink:  /man/istruzioni-iterative
 quote:      "Dopo di me, il reboot"
 ---
 
-Le istruzioni di ciclo sono una delle componenti fondamentali della programmazione perché permettono di eseguire ripetutamente una serie di operazioni e quindi ci hanno consentito di delegare ai computer molte attvità noiose e ripetitive.  
+Le istruzioni di ciclo sono una delle componenti fondamentali della programmazione.  
 Ci sono tre tipi di istruzioni di ciclo: 
 
 - `for`
@@ -70,7 +70,7 @@ for( ; ; )
 
 Un ciclo di questo tipo continuerà a ripetersi indefinitamente e, se non viene fermato in qualche maniera, causerà inevitabilmente dei problemi al computer che lo esegue.
 È necessario quindi porre un limite al numero di ripetizioni, utilizzando la stessa parola-chiave `break`che abbiamo usato con le istruzioni `switch`.
-Stavolta separeremo le tre componenti del programma precedente in tre file distinti: il file di include `pianeti.h`, che conterrà le dichiarazioni delle costanti e della funzione `mostraPianeta`; il file `pianeti.cpp`, contenente la definizione della funzione `mostraPianeta` e un file separato per la funzione `main`:
+Stavolta, però, cominceremo a fare le cose come vanno fatte e separeremo le tre componenti del programma precedente in tre file distinti: `pianeti.h`, che conterrà le dichiarazioni delle costanti e della funzione `mostraPianeta`; `pianeti.cpp`, contenente la definizione della funzione `mostraPianeta` e `pianeti-main.cpp` per la funzione `main`:
 
 ```
 {% include_relative src/pianeti.h %}
@@ -81,7 +81,7 @@ Stavolta separeremo le tre componenti del programma precedente in tre file disti
 ```
 
 ```
-{% include_relative src/istruzioni-iterative-for-break.cpp %}
+{% include_relative src/pianeti-main.cpp %}
 ```
 
 L'incremento della variabile `p`, in questo caso, avviene all'interno dell'istruzione:
@@ -91,11 +91,13 @@ L'incremento della variabile `p`, in questo caso, avviene all'interno dell'istru
 if(!mostraPianeta( p++ )) break; 
 ```
 
-Per compilare questo programma dovremo passare al compilatore sia il file contenente la funzione `main`, sia il file `pianeti.cpp`:
+Per generare questo programma dovremo passare al compilatore emntrambi i file *.cpp*:
 
 ```
-% g++ src/cpp/istruzioni-iterative-for-break.cpp -o src/out/esempio
-% src/out/esempio                                                  
+% g++ src/cpp/pianeti-main.cpp \
+      src/cpp/pianeti.cpp \
+   -o src/out/esempio
+% src/out/esempio 
 1: Mercurio
 2: Venere
 3: Terra
@@ -107,6 +109,7 @@ Per compilare questo programma dovremo passare al compilatore sia il file conten
 9: Plutone
 10: Inserire un valore da: 1 a 9
 ```
+
 
 <!--
 4.3.2   Il ciclo while

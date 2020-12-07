@@ -1,3 +1,8 @@
+/** 
+ * @file pianeti-while.cpp
+ * Gestione dei Pianeti con istruione while.
+ */
+ 
 #include <iostream>
 #include "pianeti.h"
 
@@ -5,17 +10,15 @@ using namespace std;
 
 int main(int argc, char** argv)
 {    
-    int p = POS_MERCURIO;
+    int  p  = POS_MERCURIO;
+    bool ok = true;
 
     /** Elenca tutti i Pianeti del Sistema Solare */
-    for ( ; ; ) {
-        cout << p << ": "; 
-        /** Se incontra un errore, si ferma */
-        if(!mostraPianeta( p++ )) break; 
+    while (ok) {
+        cout << p++ << ": "; 
+        ok = mostraPianeta(p);
         cout << endl;
     }
         
-    cout << endl;
-
     return 0;
 }

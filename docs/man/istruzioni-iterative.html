@@ -65,7 +65,7 @@
 
             <section id="testo">
 
-                <p>Le istruzioni di ciclo sono una delle componenti fondamentali della programmazione perché permettono di eseguire ripetutamente una serie di operazioni e quindi ci hanno consentito di delegare ai computer molte attvità noiose e ripetitive.<br />
+                <p>Le istruzioni di ciclo sono una delle componenti fondamentali della programmazione.<br />
 Ci sono tre tipi di istruzioni di ciclo:</p>
 
 <ul>
@@ -192,9 +192,18 @@ L’output di questo programma è:</p>
 
 <p>Un ciclo di questo tipo continuerà a ripetersi indefinitamente e, se non viene fermato in qualche maniera, causerà inevitabilmente dei problemi al computer che lo esegue.
 È necessario quindi porre un limite al numero di ripetizioni, utilizzando la stessa parola-chiave <code>break</code>che abbiamo usato con le istruzioni <code>switch</code>.
-Stavolta separeremo le tre componenti del programma precedente in tre file distinti: il file di include <code>pianeti.h</code>, che conterrà le dichiarazioni delle costanti e della funzione <code>mostraPianeta</code>; il file <code>pianeti.cpp</code>, contenente la definizione della funzione <code>mostraPianeta</code> e un file separato per la funzione <code>main</code>:</p>
+Stavolta, però, cominceremo a fare le cose come vanno fatte e separeremo le tre componenti del programma precedente in tre file distinti: <code>pianeti.h</code>, che conterrà le dichiarazioni delle costanti e della funzione <code>mostraPianeta</code>; <code>pianeti.cpp</code>, contenente la definizione della funzione <code>mostraPianeta</code> e <code>pianeti-main.cpp</code> per la funzione <code>main</code>:</p>
 
-<pre><code>#define POS_NESSUNO -1
+<pre><code>/** 
+ * @file pianeti.h
+ * Costanti e funzione per la gestione dei Pianeti.
+ */
+
+#ifndef _PIANETI
+#define _PIANETI 1
+ 
+/** Dichiarazione delle costanti */
+#define POS_NESSUNO -1
 #define POS_ERRORE   0
 #define POS_MERCURIO 1
 #define POS_VENERE   2
@@ -206,12 +215,19 @@ Stavolta separeremo le tre componenti del programma precedente in tre file disti
 #define POS_NETTUNO  8
 #define POS_PLUTONE  9
 
+/** Dichiarazione della funzione */
 bool mostraPianeta(int pianeta);
+
+#endif /* _PIANETI */
 
 </code></pre>
 
-<pre><code>#include &lt;iostream&gt;
-#include &lt;cstdlib&gt;
+<pre><code>/** 
+ * @file pianeti.cpp
+ * Funzione per la gestione dei Pianeti.
+ */
+
+#include &lt;iostream&gt;
 #include "pianeti.h"
 
 using namespace std;
@@ -227,16 +243,36 @@ bool mostraPianeta(int pianeta)
     bool esiste = true;
     
     switch( pianeta ) {
-        case POS_ERRORE:   cout &lt;&lt; "Valore non valido"; break;
-        case POS_MERCURIO: cout &lt;&lt; "Mercurio";          break;
-        case POS_VENERE:   cout &lt;&lt; "Venere";            break;
-        case POS_TERRA:    cout &lt;&lt; "Terra";             break;
-        case POS_MARTE:    cout &lt;&lt; "Marte";             break;
-        case POS_GIOVE:    cout &lt;&lt; "Giove";             break;
-        case POS_SATURNO:  cout &lt;&lt; "Saturno";           break;
-        case POS_URANO:    cout &lt;&lt; "Urano";             break;          
-        case POS_NETTUNO:  cout &lt;&lt; "Nettuno";           break;          
-        case POS_PLUTONE:  cout &lt;&lt; "Plutone";           break;
+        case POS_ERRORE:   
+            cout &lt;&lt; "Valore non valido"; 
+            break;
+        case POS_MERCURIO: 
+            cout &lt;&lt; "Mercurio";          
+            break;
+        case POS_VENERE:   
+            cout &lt;&lt; "Venere";            
+            break;
+        case POS_TERRA:    
+            cout &lt;&lt; "Terra";             
+            break;
+        case POS_MARTE:    
+            cout &lt;&lt; "Marte";             
+            break;
+        case POS_GIOVE:    
+            cout &lt;&lt; "Giove";             
+            break;
+        case POS_SATURNO:  
+            cout &lt;&lt; "Saturno";           
+            break;
+        case POS_URANO:    
+            cout &lt;&lt; "Urano";             
+            break;          
+        case POS_NETTUNO:  
+            cout &lt;&lt; "Nettuno";           
+            break;          
+        case POS_PLUTONE:  
+            cout &lt;&lt; "Plutone";           
+            break;
         default:
             esiste = false;
             cout &lt;&lt; "Inserire un valore da: " 
@@ -250,7 +286,12 @@ bool mostraPianeta(int pianeta)
 
 </code></pre>
 
-<pre><code>#include &lt;iostream&gt;
+<pre><code>/** 
+ * @file pianeti-main.cpp
+ * Funzione princopale per il programma di gestione dei Pianeti.
+ */
+ 
+#include &lt;iostream&gt;
 #include "pianeti.h"
 
 using namespace std;
@@ -280,10 +321,12 @@ int main(int argc, char** argv)
 <pre><code>if(!mostraPianeta( p++ )) break; 
 </code></pre>
 
-<p>L’output di questo programma è:</p>
+<p>Per generare questo programma dovremo passare al compilatore emntrambi i file <em>.cpp</em>:</p>
 
-<pre><code>% g++ src/cpp/istruzioni-iterative-for-break.cpp -o src/out/esempio
-% src/out/esempio                                                  
+<pre><code>% g++ src/cpp/pianeti-main.cpp \
+      src/cpp/pianeti.cpp \
+   -o src/out/esempio
+% src/out/esempio 
 1: Mercurio
 2: Venere
 3: Terra
