@@ -6,6 +6,8 @@
 #ifndef _PIANETI
 #define _PIANETI 1
  
+using namespace std;
+
 /** Dichiarazione delle costanti */
 #define POS_NESSUNO -1
 #define POS_ERRORE   0
@@ -19,7 +21,8 @@
 #define POS_NETTUNO  8
 #define POS_PLUTONE  9
 
-/** Dichiarazione della funzione */
-//bool mostraPianeta(int pianeta);
+/** Dichiarazione delle funzioni */
+bool mostraPianeta(int pianeta);
+string nomePianeta(int posizione);
 
 #endif /* _PIANETI */
