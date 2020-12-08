@@ -9,12 +9,19 @@ quote:      "And what is true, Phaedrus,<br />And what is false<br />Need we ask
 
 
 <!--
+Ho messo intenzionalmente il capitolo sull'algebra booleana DOPO quello sugli operatori per dimostrare come i concetti di vero/falso giusto/sbagliato debbano essere definiti per prima cosa
+
 Mettere qui tutto quello che attiene all'etica.
 @todo: Riprendere i concetti visti nel Manfesto a proposito delle
 ideologie dell'ultimo cinquantennio quando si parla di vero e falso
 
 Operatore == “Io vidi il mio Signore con l'occhio del cuore. Gli chiesi: chi sei? Rispose: Te!”.  
 'Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr) 
+
+### operatore di negazione
+
+la negazione e il paradosso come metodo per comprendere ciò che non è
+di per sé evidente
 
 
 -->
