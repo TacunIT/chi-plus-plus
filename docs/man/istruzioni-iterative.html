@@ -91,7 +91,23 @@ for(&lt;stato iniziale&gt; ; &lt;stato finale&gt; ; &lt;variazione&gt;)
 <p>Le tre condizioni all’interno delle parentesi sono utilizzate dall’istruzione <code>for</code> per controllare l’esecuzione delle istruzioni all’interno del corpo del ciclo.<br />
 La prima espressione è valutata solo una volta all’inizio del ciclo e, solitamente, serve a inizializzare le variabili utilizzate.<br />
 La seconda espressione è una condizione logica o relazionale che viene valutata all’inizio di ogni iterazione: se torna <code>0</code> o <code>false</code> l’esecuzione del ciclo termina, altrimenti posegue.<br />
-La terza espressione viene valutata al termine di ogni iterazione e, di solito, è costituita da un’espressione di incremento delle variabili utilizzate per il controllo del ciclo.</p>
+La terza espressione viene valutata al termine di ogni iterazione e, di solito, è costituita da un’espressione di incremento o decremento delle variabili utilizzate per il controllo del ciclo.
+Per fare ciò, si utilizzano degli operatori unarii (ovvero che operano su una singola variabile) detti: <em>operatori di incremento</em> e <em>operatori di decremento</em>, che possono svolgere la loro funzione o prima o dopo l’utilizzo della variabile, a seconda che vengano posti prima o dopo l’identificatore della variabile:</p>
+
+<pre><code>x++     // valuta x e poi la incrementa di un'unità
+++x     // incrementa x di un'unità e poi la valuta
+x--     // valuta x e poi la riduce di un'unità
+--x     // riduce x di un'unità e poi la valuta
+</code></pre>
+
+<p>Se <code>x</code> è una variabile di tipo intero o in virgola mobile l’incremento è di un’unità aritmetica; se invece <code>x</code> è un puntatore l’incremento equivale alla dimensione della variabile a cui il puntatore riferisce, come ti ho fatto vedere parlando dei tipi di dato.<br />
+<!-- @todo: rimando a esempio nei tipi di dato --> 
+In questo caso, la variabile <code>p</code> è un intero, quindi l’istruzione:</p>
+
+<pre><code>for ( p = POS_MERCURIO; p &lt;= POS_PLUTONE; p++ ) {
+</code></pre>
+
+<p>incrementerà la variabile <code>p</code> di 1.</p>
 
 <pre><code>#include &lt;iostream&gt;
 #include &lt;cstdlib&gt;
@@ -121,16 +137,36 @@ bool mostraPianeta(int pianeta )
     bool esiste = true;
     
     switch( pianeta ) {
-        case POS_ERRORE:   cout &lt;&lt; "Valore non valido"; break;
-        case POS_MERCURIO: cout &lt;&lt; "Mercurio";          break;
-        case POS_VENERE:   cout &lt;&lt; "Venere";            break;
-        case POS_TERRA:    cout &lt;&lt; "Terra";             break;
-        case POS_MARTE:    cout &lt;&lt; "Marte";             break;
-        case POS_GIOVE:    cout &lt;&lt; "Giove";             break;
-        case POS_SATURNO:  cout &lt;&lt; "Saturno";           break;
-        case POS_URANO:    cout &lt;&lt; "Urano";             break;          
-        case POS_NETTUNO:  cout &lt;&lt; "Nettuno";           break;          
-        case POS_PLUTONE:  cout &lt;&lt; "Plutone";           break;
+        case POS_ERRORE:   
+            cout &lt;&lt; "Valore non valido"; 
+            break;
+        case POS_MERCURIO: 
+            cout &lt;&lt; "Mercurio";          
+            break;
+        case POS_VENERE:   
+            cout &lt;&lt; "Venere";            
+            break;
+        case POS_TERRA:    
+            cout &lt;&lt; "Terra";             
+            break;
+        case POS_MARTE:    
+            cout &lt;&lt; "Marte";             
+            break;
+        case POS_GIOVE:    
+            cout &lt;&lt; "Giove";             
+            break;
+        case POS_SATURNO:  
+            cout &lt;&lt; "Saturno";           
+            break;
+        case POS_URANO:    
+            cout &lt;&lt; "Urano";             
+            break;          
+        case POS_NETTUNO:  
+            cout &lt;&lt; "Nettuno";           
+            break;          
+        case POS_PLUTONE:  
+            cout &lt;&lt; "Plutone";           
+            break;
         default:
             esiste = false;
             cout &lt;&lt; "Inserire un valore da: " 
@@ -226,6 +262,7 @@ string nomePianeta(int posizione);
 
 <pre><code>/** 
  * @file pianeti.cpp
+ * @version 1.0
  * Funzione per la gestione dei Pianeti.
  */
 
@@ -284,59 +321,11 @@ bool mostraPianeta(int pianeta)
     return esiste;
 }
 
-/**
- *  nomePianeta 
- *  Torna il nome di un pianeta, data la sua posizione.
- *  @param  int    posizione Posizione del pianeta.
- *  @return string nome      Nome del pianeta o null, se errore.
- */
-string nomePianeta(int posizione)
-{    
-    string nome;
-
-    /** 
-     * Questa funzione gestisce solo i casi esistenti 
-     * e lascia che sia la funzione chiamate a gestire
-     * eventuali errori.
-     */
-    switch( posizione ) {
-        case POS_MERCURIO: 
-            nome = "Mercurio";          
-            break;
-        case POS_VENERE:   
-            nome = "Venere";            
-            break;
-        case POS_TERRA:    
-            nome = "Terra";             
-            break;
-        case POS_MARTE:    
-            nome = "Marte";             
-            break;
-        case POS_GIOVE:    
-            nome = "Giove";             
-            break;
-        case POS_SATURNO:  
-            nome = "Saturno";           
-            break;
-        case POS_URANO:    
-            nome = "Urano";             
-            break;          
-        case POS_NETTUNO:  
-            nome = "Nettuno";           
-            break;          
-        case POS_PLUTONE:  
-            nome = "Plutone";           
-            break;
-    } 
-    
-    return nome;
-}
-
 </code></pre>
 
 <pre><code>/** 
  * @file pianeti-main.cpp
- * Funzione princopale per il programma di gestione dei Pianeti.
+ * Funzione principale per il programma di gestione dei Pianeti.
  */
  
 #include &lt;iostream&gt;
@@ -352,7 +341,7 @@ int main(int argc, char** argv)
     for ( ; ; ) {
         cout &lt;&lt; p &lt;&lt; ": "; 
         /** Se incontra un errore, si ferma */
-        if(!mostraPianeta( p++ )) break; 
+        if(!mostraPianeta( ++p )) break; 
         cout &lt;&lt; endl;
     }
         
@@ -363,13 +352,15 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>L’incremento della variabile <code>p</code>, in questo caso, avviene all’interno dell’istruzione:
-<!-- @todo: parlare dell'operatore di incremento --></p>
+<p>L’incremento della variabile <code>p</code>, in questo caso, avviene all’interno dell’istruzione:</p>
 
 <pre><code>if(!mostraPianeta( p++ )) break; 
 </code></pre>
 
-<p>Per generare questo programma dovremo passare al compilatore emntrambi i file <em>.cpp</em>:</p>
+<p>La parola-chiave <code>break</code> è una delle tre <em>istruzioni di interruzione</em> che il C++ ha ereditato dal C; le altre due sono l’istruzione <code>continue</code>, che riporta l’elaborazione all’inizio del ciclo e l’istruzione <code>return</code>, che termina la funzione, restituendo un eventuale valore di ritorno alla funzione chiamante. 
+<!-- @todo: ampliare con esempi, ma in altre parti del testo, qui è già troppo carico --></p>
+
+<p>Per generare il programma, stavolta, dovremo passare al compilatore entrambi i file <em>.cpp</em>:</p>
 
 <pre><code>% g++ src/cpp/pianeti-main.cpp \
       src/cpp/pianeti.cpp \
@@ -385,6 +376,24 @@ int main(int argc, char** argv)
 8: Nettuno
 9: Plutone
 10: Inserire un valore da: 1 a 9
+</code></pre>
+<p>Se invece avessimo scritto:</p>
+
+<pre><code>if(!mostraPianeta( ++p )) break; 
+</code></pre>
+
+<p>il valore di <code>p</code> in tutte le istruzioni sarebbe stato maggiore di uno rispetto al valore corretto e il programma avrebbe “saltato” Mercurio perché il valore della variabile <code>p</code> sarebbe stato incrementato prima del suo utilizzo da parte della funzione:</p>
+
+<pre><code>% src/out/esempio                                            
+1: Venere
+2: Terra
+3: Marte
+4: Giove
+5: Saturno
+6: Urano
+7: Nettuno
+8: Plutone
+9: Inserire un valore da: 1 a 9
 </code></pre>
 
 <p>Si può utilizzare un ciclo <code>for</code> in questo modo, ma non ha molto senso.
@@ -445,7 +454,16 @@ int main(int argc, char** argv)
 9: Inserire un valore da: 1 a 9
 </code></pre>
 
-<p>Questo codice, però, è sgraziato.
+<p>Il ciclo <code>do-while</code> è uguale al ciclo <code>while</code>con la sola differenza che la condizione <code>while</code> viene valutata alla fine dell’iterazione e quindi il corpo del ciclo viene eseguito almeno per una volta. 
+La forma generale del ciclo <code>do-while</code> è:</p>
+
+<pre><code>do
+{
+    &lt;istruzioni&gt;        // corpo del ciclo
+} while(espressione)    // espressione di controllo
+</code></pre>
+
+<p>Non offenderò la tua intelligenza con un esempio; vorrei piuttosto farti notare una cosa grave: il codice di questi programmi è sgraziato.
 Il problema è che la funzione <code>mostraPianeta</code> fa troppe cose: non solo stabilisce il nome del Pianeta, ma lo stampa anche a video.
 In conseguenza di ciò, nel nostro output abbiamo anche quella brutta stringa di errore relativa alla posizione numero nove.
 Nel primo esempio in cui l’abbiamo utilizzata, questo non era un problema, ma adesso che il nostro programma si sta sviluppando, dobbiamo rendere ciascuna funzione più specialistica, dividendo l’elaborazione dei dati (capire quale sia il pianeta) dall’interfaccia utente (la stampa a video del nome).
@@ -545,45 +563,7 @@ Il corpo del ciclo è passato da tre istruzioni a una e le due operazioni di ela
 Oltre ad aver ottenuto un codice più facile da leggere, da correggere da eseguire e da modificare, ci siamo anche sbarazzati dell’odioso messaggio di errore.
 Direi che ne valeva la pena, no?</p>
 
-<!--
-Anche in questo caso è possibile forzare il numero dei cicli indefinitamente sostituendo l’espressione con una costante nonzero, per esempio:
-
-while(1)
-{
-  ...istruzioni...(corpo del ciclo)
-}
-
-
-## Il ciclo do-while
-Il ciclo do-while si differenzia dal ciclo while che abbiamo visto in precedenza solamente per il fatto di valutare la condizione while alla fine dell’iterazione, questo determina l’esecuzione del corpo del ciclo almeno per una volta. 
-La forma generale è la seguente:
-
-do
-{
-  ...istruzioni...(corpo del ciclo)
-} while(espressione)
-
-Il ciclo viene eseguito una prima volta per effettuare l’assegnazione di un valore ad a e quindi viene ripetuto fino a quando la variabile a assume il valore zero (false).
-
-### Istruzioni di interruzione
-Queste istruzioni sono usate per controllare l’esecuzione di altre istruzioni. Il loro utilizzo più comune è quello di interrompere cicli o, come abbiamo già visto per break, l’istruzione di switch. Le tre istruzioni di interruzione sono:
-
-break;
-continue;
-return.
-
-Istruzione break
-L’istruzione break termina i cicli for, while e do-while, nonché l’istruzione switch che la includono, passando il controllo all’istruzione immediatamente successiva al blocco istruzioni del ciclo (corpo del ciclo) o dello switch.
-
-4.4.2   Istruzione continue
-L’istruzione continue determina il passaggio del controllo alla fine del singolo ciclo di iterazione senza determinare l’uscita dal corpo del ciclo che può riprendere con la successiva iterazione.
-
-4.4.3   Istruzione return
-L’istruzione return consente di terminare l’esecuzione di una funzione e di avere un eventuale valore di ritorno alla funzione chiamante. Vediamone un esempio:
-
-
-
-<hr id="dottrina">
+<hr id="dottrina" />
 
 <!--
 
