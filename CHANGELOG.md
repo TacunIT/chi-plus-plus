@@ -1,3 +1,8 @@
+## 0.16.3 (December 08, 2020)
+  - Rimossi i capitoli obsoleti
+  - Ri-mosso il capitolo sugli operatori, che spalmerò negli altri capitoli
+  - Aggiunto codice per istruzione while
+
 ## 0.16.2 (December 07, 2020)
   - Rivista la grafica delle pagine
   - Modificato menu principale
