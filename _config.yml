@@ -37,7 +37,6 @@ collections:
          - c-plus-plus.md
          - commenti.md
          - tipi-di-dato.md
-         - operatori.md
          - struttura-dei-programmi.md
          - istruzioni-condizionali.md
          - istruzioni-iterative.md
