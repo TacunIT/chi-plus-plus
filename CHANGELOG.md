@@ -1,3 +1,7 @@
+## 0.16.4 (December 08, 2020)
+  - Terminata prima stesdura della parte tecnica del capitolo
+  - Riorganizzata la struttura dei capitoli
+
 ## 0.16.3 (December 08, 2020)
   - Rimossi i capitoli obsoleti
   - Ri-mosso il capitolo sugli operatori, che spalmerò negli altri capitoli
