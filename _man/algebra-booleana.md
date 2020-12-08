@@ -13,6 +13,10 @@ Mettere qui tutto quello che attiene all'etica.
 @todo: Riprendere i concetti visti nel Manfesto a proposito delle
 ideologie dell'ultimo cinquantennio quando si parla di vero e falso
 
+Operatore == “Io vidi il mio Signore con l'occhio del cuore. Gli chiesi: chi sei? Rispose: Te!”.  
+'Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr) 
+
+
 -->
 
 
