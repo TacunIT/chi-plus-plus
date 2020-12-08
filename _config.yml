@@ -41,6 +41,7 @@ collections:
          - istruzioni-condizionali.md
          - istruzioni-iterative.md
          - algebra-booleana.md
+         - memoria-dinamica.md
          - funzioni.md
          - preprocessore.md
          - classi.md
