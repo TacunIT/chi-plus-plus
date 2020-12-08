@@ -1,5 +1,6 @@
 /** 
  * @file pianeti.cpp
+ * @version 1.0
  * Funzione per la gestione dei Pianeti.
  */
 
@@ -56,52 +57,4 @@ bool mostraPianeta(int pianeta)
     } 
     
     return esiste;
-}
-
-/**
- *  nomePianeta 
- *  Torna il nome di un pianeta, data la sua posizione.
- *  @param  int    posizione Posizione del pianeta.
- *  @return string nome      Nome del pianeta o null, se errore.
- */
-string nomePianeta(int posizione)
-{    
-    string nome;
-
-    /** 
-     * Questa funzione gestisce solo i casi esistenti 
-     * e lascia che sia la funzione chiamate a gestire
-     * eventuali errori.
-     */
-    switch( posizione ) {
-        case POS_MERCURIO: 
-            nome = "Mercurio";          
-            break;
-        case POS_VENERE:   
-            nome = "Venere";            
-            break;
-        case POS_TERRA:    
-            nome = "Terra";             
-            break;
-        case POS_MARTE:    
-            nome = "Marte";             
-            break;
-        case POS_GIOVE:    
-            nome = "Giove";             
-            break;
-        case POS_SATURNO:  
-            nome = "Saturno";           
-            break;
-        case POS_URANO:    
-            nome = "Urano";             
-            break;          
-        case POS_NETTUNO:  
-            nome = "Nettuno";           
-            break;          
-        case POS_PLUTONE:  
-            nome = "Plutone";           
-            break;
-    } 
-    
-    return nome;
 }

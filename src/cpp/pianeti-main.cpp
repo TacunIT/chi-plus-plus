@@ -1,6 +1,6 @@
 /** 
  * @file pianeti-main.cpp
- * Funzione princopale per il programma di gestione dei Pianeti.
+ * Funzione principale per il programma di gestione dei Pianeti.
  */
  
 #include <iostream>
@@ -16,7 +16,7 @@ int main(int argc, char** argv)
     for ( ; ; ) {
         cout << p << ": "; 
         /** Se incontra un errore, si ferma */
-        if(!mostraPianeta( p++ )) break; 
+        if(!mostraPianeta( ++p )) break; 
         cout << endl;
     }
         
