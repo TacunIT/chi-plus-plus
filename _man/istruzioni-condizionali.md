@@ -363,14 +363,24 @@ Ora che questa colla non c'è più, le scelte dei legislatori non sono più moss
     Il tasso di analfabetismo funzionale, mentre scrivo, è del 41%.
     I lettori sono sempre di meno: https://www.istat.it/it/archivio/213901
 -->
-e da egoisti che perseguono unicamente il proprio interesse momentaneo: il pascolo ideale per demagoghi con aspirazioni dittatoriali.  
+e da egoisti che perseguono unicamente il proprio interesse momentaneo: il pascolo ideale per demagoghi con aspirazioni dittatoriali.
 La minoranza di idealisti e di persone colte, priva di valori trascendenti, non può che agire in base ai propri sentimenti o ai propri auspici e subisce inevitabilmente il malefico influsso dell'Annosa Dicotomia: fanno scelte che puntano al bene comune, ma si tratta di un bene comune molto spesso miope e temporaneo.
 Come scacchisti mediocri, vedono ciò che è bene qui e ora, ma non riescono a valutarne le conseguenze a lungo termine.  
 Pensa a quale potrebbe essere, secondo te, la soluzione giusta alle due domande che ti ho fatto e poi pensa al *motivo* quella soluzione ti appare giusta. 
 Perché permettiamo la soppressione di un feto che non ha fatto del male a nessuno, mentre lasciamo in vita chi ne ha già fatto?
 Vogliamo fare la cosa giusta o vogliamo solo sentirci buoni?  
-Il Maestro Canaro si fece molti nemici con la sue idee sull'aborto, anche fra persone che inizialmente lo avevano appoggiato.
-Lo accusarono di cercare l'appoggio della Chiesa Cattolica, mentre stava solo applicando il precetto del *Metta Sutra* che predica la felicità non solo per tutti coloro che sono nati, ma anche per coloro che devono nascere:
+Il Maestro Canaro si fece molti nemici con la sue idee sull'aborto.
+<!--
+@todo: valutare la possibilità di aggiungere i punti interessanti della conversazione con Massimo: 
+    a. non sono cattolico, ma ho studiato embriologia e so quando 
+       qualcosa smette di essere un agglomerato di cellule e diventa
+       altro
+    b. quando, un programma diventa un programma?
+    c. l'aborto non può essere un metodo contraccettivo: una volta
+       nella vita, è possibile, ma non tre volte l'anno.
+
+-->
+Anche alcune persone che inizialmente lo avevano appoggiato lo accusarono di cercare l'appoggio della Chiesa Cattolica, mentre stava solo applicando il precetto del *Metta Sutra* che predica la felicità non solo per tutti coloro che sono nati, ma anche per coloro che devono nascere:
 
 > bhåtà và sambhavesã và sabbe sattà bhavantu sukhitattà
 
