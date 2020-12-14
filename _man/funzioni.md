@@ -21,6 +21,11 @@ quote:      "Call me: IsNull"
    title="fare click per tornare alla pagina precedente">funzioni inline</a>
 
 <!--
+Questo capitolo deve seguire il capitolo sulle inclusioni.
+
+Utilizzare la definizione delle funzioni senza dichiarazione come esempio per i dogmi.
+Questo concetto verrà riutilizzato nel capitolo sulle funzioni ricorsive a proposito dei Post-It.
+
 Funzioni ricorsive
 ------------------
 
