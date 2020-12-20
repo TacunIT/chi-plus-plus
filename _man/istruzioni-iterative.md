@@ -269,8 +269,10 @@ I dogmi sono i pilastri su cui si regge l’edificio della dottrina; se uno di e
 Aristotele disse che:
  
 > le scienze che derivano da un numero minore di premesse sono più rigorose delle scienze che ne discendono per mezzo dell’aggiunta di nuove premesse
+ <a href="/note/#aristotele" class="nota"></a>
+
+
 <!-- 
-In effetti, sempre ne *La Metafisica*, dissa anche che tutti gli uomini aspirano per natura alla conoscenza, quindi non è che sia tanto credibile, come fonte..
 -->
  
 In quest'ottica, il C'hi++ è una metafisica abbastanza rigorosa, perché richiede l'accettazione di due sole affermazioni non compovabili e, di queste due, solo una è strettamente necessaria alla coerenza interna della dottrina; l'altra è solo un auspicio.  
