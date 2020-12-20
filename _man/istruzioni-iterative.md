@@ -315,19 +315,16 @@ Il secondo dogma del C'hi++ è l'esistenza di una memoria persistente dell'Unive
 {% include  bhagavad-gita-2.html %}
 </blockquote>
 
-I *Post-It*, come li chiamava il Maestro Canaro, non sono indispensabili per il C'hi++, sono solo un'auspicio, perché la loro esistenza darebbe un senso alla nostra vita.
-Così come avviene per gli esopianeti, noi non li “vediamo”, ma possiamo inferire la loro esistenza dall'effetto che hanno su ciò che li circonda: 
-
-
+I *Post-It*, come li chiamava il Maestro Canaro, non sono indispensabili per il C'hi++, sono solo un'auspicio, perché la loro esistenza dà un senso alla nostra vita.
+Ho detto: *dà* in vece di: *darebbe* perché, così come avviene per gli esopianeti, noi non li “vediamo”, ma possiamo inferire la loro esistenza dall'effetto che hanno su ciò che li circonda: istinto, premonizioni, *deja-vu*.  
+L'esistenza dei *Post-It* rende l'Universo *stateful* e quindi più appetibile per noi, ma anche in un Universo *stateless*, in cui ciascun ciclo di esistenza fa storia a sé, noi non avremmo né motivo né convenienza a comportarci in maniera egoistica.
+In primo luogo perché, come abbiamo già detto, essendo tutti la manifestazione di una stessa Energia, ciò che facciamo agli altri lo facciamo in realtà a noi stessi.
+In secondo luogo perché non è detto che in ciascun ciclo di esistenza il nostro io cosciente si manifesti nella stessa persona e quindi, se in un ciclo siamo Jack the Ripper, in un altro potremmo essere Mary Ann Nichols.
 
 <!--
 
 @todo: 
 
 - introdurre l'idea delle "variazioni" della storia dell'Universo?
-
-- universo sateless o stateful
-- vāsanā e 
-
 
 -->
