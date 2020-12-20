@@ -29,6 +29,15 @@
   font-style: italic, oblique;
   font-weight: bold;
 }
+@font-face {
+  font-family: Garamond;
+  src: url(/assets/fonts/EBGaramond-Regular.ttf);
+}
+@font-face {
+  font-family: Garamond;
+  src: url(/assets/fonts/EBGaramond-Italic.ttf);
+  font-style: italic, oblique;
+}
 
 
 

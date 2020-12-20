@@ -309,9 +309,14 @@ typedef struct {
 } PostIt ;
 ```
 
-L'esistenza di una memoria persistente dell'Universo, in cui resta traccia dell'esito delle scelte fatte in ciascun ciclo non è indispensabile per il C'hi++.
-I *Post-It*, come li chiamava il Maestro Canaro, sono un'auspicio, perché la loro esistenza darebbe un senso alla nostra vita.
-Così come avviene per gli esopianeti, non li vediamo, ma possiamo inferire la loro esistenza dall'effetto che hanno su ciò che li circonda.
+Il secondo dogma del C'hi++ è l'esistenza di una memoria persistente dell'Universo in cui resta traccia dell'esito delle scelte fatte in ciascun ciclo &mdash; simile all'inconscio collettivo di Jung o ai vāsanā dell'Induismo &mdash;:
+
+<blockquote>
+{% include  bhagavad-gita-2.html %}
+</blockquote>
+
+I *Post-It*, come li chiamava il Maestro Canaro, non sono indispensabili per il C'hi++, sono solo un'auspicio, perché la loro esistenza darebbe un senso alla nostra vita.
+Così come avviene per gli esopianeti, noi non li “vediamo”, ma possiamo inferire la loro esistenza dall'effetto che hanno su ciò che li circonda: 
 
 
 
@@ -323,7 +328,6 @@ Così come avviene per gli esopianeti, non li vediamo, ma possiamo inferire la l
 
 - universo sateless o stateful
 - vāsanā e 
-{% include  bhagavad-gita-2.html %}
 
 
 -->

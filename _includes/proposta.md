@@ -784,7 +784,6 @@ sulla natura dell'Universo:
 <div class="citazione">
 {% include  bhagavad-gita-1.html %}
 </div>
-<!-- @todo: capire perché le parole con caratteri UTF si visualizzano correttamente se si inserisce un valore sballato come font-family per DIV.citazione -->
 
 su quelli che io ho definito i *Post-It*:
 
