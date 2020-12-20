@@ -153,13 +153,27 @@ A {
     color: $aColor;
 }
 A.nota {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: $colorGold;
     text-decoration: underline;
     vertical-align: super;
     display: inline-block;
     margin-left: 0.12rem; 
 }
+/**
+ * Note per il Manuale
+ */
+BODY.manuale {
+    counter-reset: note-manuale;  
+}
+BODY.manuale A.nota {   
+    display: none;
+}
+BODY.manuale A.nota::after {   
+    counter-increment: note-manuale; 
+    content: counter(note-manuale);     
+}
+
 A.more {
     font-weight: bold;
     font-size: 0.9rem;
@@ -768,6 +782,13 @@ SECTION.note OL LI A {
     word-break: break-all;
 }
 
+/**
+ *  Stili per le note del Manuale
+ */
+ 
+ BODY.note SECTION.note LI {
+     height: 200px;
+ }
 /**
  *
  *  Stili per elenco log
