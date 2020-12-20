@@ -9,6 +9,8 @@ quote:      "And what is true, Phaedrus,<br />And what is false<br />Need we ask
 
 
 <!--
+“Il pendolo della mente oscilla tra senso e non senso, non tra giusto e sbagliato.” - Carl Jung-
+
 Ho messo intenzionalmente il capitolo sull'algebra booleana DOPO quello sugli operatori per dimostrare come i concetti di vero/falso giusto/sbagliato debbano essere definiti per prima cosa
 
 Mettere qui tutto quello che attiene all'etica.
