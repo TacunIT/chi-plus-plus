@@ -262,9 +262,71 @@ Direi che ne valeva la pena, no?
 
 <hr id="dottrina">
 
+La religione dovrebbe aiutare l’Uomo a vivere meglio. Dovrebbe dare uno scòpo alla nostra esistenza, aiutarci a superare i momenti di dolore e definire una scala di valori che ci permetta di prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso non possono essere d’aiuto. 
+Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti.
+Ciò dipende da due fattori: la natura umana e la mancanza di solidità logica dei loro principî. Infatti, dovendo interessarsi di argomenti che non possono essere sottoposti a un'analisi razionale, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di dogmi non dimostrabili che i seguaci della religione &mdash; i quali, non a caso, sono detti: “fedeli” o: “credenti” &mdash; devono accettare per buoni senza metterli in discussione.  
+I dogmi sono i pilastri su cui si regge l’edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l’edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato con ogni mezzo, anche a costo di abiurare quegli stessi principî che si cerca di difendere. E qui, come direbbe Amleto, comincia il male, perché i dogmi non sono leggi comprovabili, ma opinioni o speranze e ogni tentativo di renderli più robusti ottiene l’effetto opposto perché si ampliano le dimensioni di una struttura che poggia su basi instabili.  
+Aristotele disse che:
+ 
+> le scienze che derivano da un numero minore di premesse sono più rigorose delle scienze che ne discendono per mezzo dell’aggiunta di nuove premesse
+ <a href="/note/#aristotele" class="nota"></a>
+
+
+<!-- 
+-->
+ 
+In quest'ottica, il C'hi++ è una metafisica abbastanza rigorosa, perché richiede l'accettazione di due sole affermazioni non compovabili e, di queste due, solo una è strettamente necessaria alla coerenza interna della dottrina; l'altra è solo un auspicio.  
+Ai fedeli del C'hi++ è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (gli scienziati non sono infallibili: sono gli stessi che avevano visto dei canali su Marte) che ci sarà un momento in cui l'espansione dell'Universo terminerà e che tutto ciò che esiste tornerà a riunirsi nell'Uno primigenio:
+
+```
+void eternita() 
+{
+    while(1) {
+        
+        unoPrimigenio();
+        
+        bigBang();
+        
+        espansione();
+        
+        contrazione();
+        
+        bigCrunch();
+        
+        // if(satori()) break;     
+           
+    }
+}
+```
+
+Se non ci fosse questa ciclicità, ovvero senza un'alternanza fra Entropia e Gravità, fra *Prakṛti* e *Puruṣa*, lo Spazionismo e, di conseguenza,il C'hi++ non avrebbero più senso, così come la nostra esistenza.
+La Vita si rivelerebbe un epifenomeno destinato a esaurirsi nella morte termica dell'Universo e nessun ordine sociale sarebbe più possibile, perché ciascuno cercherebbe di ottenere il massimo possibile dai pochi anni che gli sono concessi, indifferente al costo che questo avrebbe per gli altri. 
+Per intendersi, qualcosa di simile al *Black Friday* in un centro commerciale americano.  
+<!-- http://blackfridaydeathcount.com -->
+
+```
+typedef struct {
+    string evento;
+    bool   esito;
+} PostIt ;
+```
+
+Il secondo dogma del C'hi++ è l'esistenza di una memoria persistente dell'Universo in cui resta traccia dell'esito delle scelte fatte in ciascun ciclo &mdash; simile all'inconscio collettivo di Jung o ai vāsanā dell'Induismo &mdash;:
+
+<blockquote>
+{% include  bhagavad-gita-2.html %}
+</blockquote>
+
+I *Post-It*, come li chiamava il Maestro Canaro, non sono indispensabili per il C'hi++, sono solo un'auspicio, perché la loro esistenza dà un senso alla nostra vita.
+Ho detto: *dà* in vece di: *darebbe* perché, così come avviene per gli esopianeti, noi non li “vediamo”, ma possiamo inferire la loro esistenza dall'effetto che hanno su ciò che li circonda: istinto, premonizioni, *deja-vu*.  
+L'esistenza dei *Post-It* rende l'Universo *stateful* e quindi più appetibile per noi, ma anche in un Universo *stateless*, in cui ciascun ciclo di esistenza fa storia a sé, noi non avremmo né motivo né convenienza a comportarci in maniera egoistica.
+In primo luogo perché, come abbiamo già detto, essendo tutti la manifestazione di una stessa Energia, ciò che facciamo agli altri lo facciamo in realtà a noi stessi.
+In secondo luogo perché non è detto che in ciascun ciclo di esistenza il nostro io cosciente si manifesti nella stessa persona e quindi, se in un ciclo siamo Jack the Ripper, in un altro potremmo essere Mary Ann Nichols.
+
 <!--
 
-@todo - qui va introdotto il concetto di ciclicità dell'Universo.
-- introdurre l'idea delle "variazioni" della storia dell'Universo
+@todo: 
+
+- introdurre l'idea delle "variazioni" della storia dell'Universo?
 
 -->
