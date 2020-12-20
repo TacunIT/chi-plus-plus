@@ -210,7 +210,7 @@ Attento, però: mettere in sequenza delle semplici istruzioni `if` è cosa
 ben diversa dal creare una catena di istruzioni `else-if` perché, se in caso di errore non blocchi l'elaborazione con un'istruzione `return`, il programma andrà avanti verificando le condizioni seguenti e l'errore nella prima condizione potrebbe ripercuotersi sul codice successivo:
 
 ```
-/** Come direbbe Shakespeare: Qui comincia il male.. **/
+/** Come direbbe Amleto: Qui comincia il male.. **/
 if ( divisore == 0 ) {
     cout << "Errore: divisione per zero" << endl;
 }

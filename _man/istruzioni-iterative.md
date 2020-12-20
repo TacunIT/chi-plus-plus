@@ -265,7 +265,8 @@ Direi che ne valeva la pena, no?
 La religione dovrebbe aiutare l’Uomo a vivere meglio. Dovrebbe dare uno scòpo alla nostra esistenza, aiutarci a superare i momenti di dolore e definire una scala di valori che ci permetta di prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso non possono essere d’aiuto. 
 Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti.
 Ciò dipende da due fattori: la natura umana e la mancanza di solidità logica dei loro principî. Infatti, dovendo interessarsi di argomenti che non possono essere sottoposti a un'analisi razionale, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di dogmi non dimostrabili che i seguaci della religione &mdash; i quali, non a caso, sono detti: “fedeli” o: “credenti” &mdash; devono accettare per buoni senza metterli in discussione.  
-I dogmi sono i pilastri su cui si regge l’edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l’edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato con ogni mezzo, anche a costo di abiurare quegli stessi principî che si cerca di difendere. E qui, come direbbe Amleto, comincia il male, perché i dogmi non sono leggi comprovabili, ma opinioni o speranze e ogni tentativo di renderli più robusti ottiene l’effetto opposto perché si ampliano le dimensioni di una struttura che poggia su basi instabili.  
+I dogmi sono i pilastri su cui si regge l’edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l’edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato con ogni mezzo, anche a costo di abiurare quegli stessi principî che si cerca di difendere. 
+Questo, però, non fa che peggiorare le cose, perché i dogmi non sono leggi comprovabili, ma opinioni o speranze e ogni tentativo di renderli più robusti ottiene l’effetto opposto perché si ampliano le dimensioni di una struttura che poggia su basi instabili.  
 Aristotele disse che:
  
 > le scienze che derivano da un numero minore di premesse sono più rigorose delle scienze che ne discendono per mezzo dell’aggiunta di nuove premesse
@@ -293,8 +294,11 @@ void eternita()
         
         bigCrunch();
         
-        // if(satori()) break;     
-           
+        /**
+         * Il fatto che questa istruzione sia a commento è
+         * una delle differenze fra C'hi++ e Buddismo.
+         * if(satori()) break;     
+         */  
     }
 }
 ```
@@ -311,7 +315,7 @@ typedef struct {
 } PostIt ;
 ```
 
-Il secondo dogma del C'hi++ è l'esistenza di una memoria persistente dell'Universo in cui resta traccia dell'esito delle scelte fatte in ciascun ciclo &mdash; simile all'inconscio collettivo di Jung o ai vāsanā dell'Induismo &mdash;:
+Il secondo dogma del C'hi++ è l'esistenza di una memoria persistente dell'Universo in cui resta traccia dell'esito delle scelte fatte in ciascun ciclo; qualcosa di simile all'inconscio collettivo di Jung o ai vāsanā dell'Induismo:
 
 <blockquote>
 {% include  bhagavad-gita-2.html %}
@@ -327,6 +331,7 @@ In secondo luogo perché non è detto che in ciascun ciclo di esistenza il nostr
 
 @todo: 
 
-- introdurre l'idea delle "variazioni" della storia dell'Universo?
+- introdurre l'idea delle "variazioni" della storia dell'Universo
+- spiegare il commento al codice della Satori
 
 -->
