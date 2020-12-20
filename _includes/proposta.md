@@ -380,6 +380,7 @@ I tre dogmi principali della mia “religione” sono:
 	<li>l’Universo si espande</li>
 	<li>se lasci andare un peso, quello ti finisce su un piede</li>
 </ol></div>
+
 la ciclicità dell'Universo:<br />  
 
 <div class="citazione" >
@@ -781,15 +782,14 @@ Tu hai diritto all'azione, non ai suoi frutti; non sia mai perciò il frutto del
 sulla natura dell'Universo:
 
 <div class="citazione">
-<!-- @todo: capire perché le parole con caratteri UTF si visualizzano correttamente se si inserisce un valore sballato come font-family per DIV.citazione -->
-{% include  bhagavad-gita.html %}
+{% include  bhagavad-gita-1.html %}
 </div>
+<!-- @todo: capire perché le parole con caratteri UTF si visualizzano correttamente se si inserisce un valore sballato come font-family per DIV.citazione -->
 
 su quelli che io ho definito i *Post-It*:
 
 <div class="citazione">
-Ci sono due categorie di saṁskāra; la prima consiste nelle vāsanā, che sono impressioni lasciate nella mente dagli avvenimenti passati, tracce qui conservate allo stato latente ma pronte a manifestarsi in presenza delle condizioni adatte, cioè di situazioni analoghe a quelle che le hanno generate, e che le attiverebbero a causa della loro affinità.
-Sulla spinta delle vāsanā, una volta che siano attivate, e degli stati d'animo che queste manifestano, l'individuo presenta una tendenza inconscia ad agire in un determinato modo, e più in generale ad avere un certo tipo di comportamento, di sensibilità, di carattere; si tratta di una predisposizione innata che lo induce, nel bene come nel male, ad un comportamento analogo a quello che ha tenuto in passato, creando un circolo vizioso (o virtuoso) che si autoalimenta.
+    {% include  bhagavad-gita-2.html %}
 </div>
 
 Ho trovato delle analogie ai precetti del C'hi++ anche nel *Mantiq al-Tayr*<a href="#mantiq" class="nota" name="fn-21">21</a>:
