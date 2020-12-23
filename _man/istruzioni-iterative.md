@@ -272,16 +272,16 @@ Aristotele disse che:
 > le scienze che derivano da un numero minore di premesse sono più rigorose delle scienze che ne discendono per mezzo dell’aggiunta di nuove premesse
  <a href="/note/#aristotele" class="nota"></a>
 
-
-<!-- 
--->
- 
-In quest'ottica, il C'hi++ è una metafisica abbastanza rigorosa, perché richiede l'accettazione di due sole affermazioni non compovabili e, di queste due, solo una è strettamente necessaria alla coerenza interna della dottrina; l'altra è solo un auspicio.  
+In quest'ottica, il C'hi++ è una metafisica abbastanza rigorosa, perché richiede l'accettazione di due sole affermazioni non compovabili e, di queste due, solo una è strettamente necessaria alla coerenza interna della dottrina, l'altra è solo un auspicio.  
 Ai fedeli del C'hi++ è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (gli scienziati non sono infallibili: sono gli stessi che avevano visto dei canali su Marte) che ci sarà un momento in cui l'espansione dell'Universo terminerà e che tutto ciò che esiste tornerà a riunirsi nell'Uno primigenio:
 
 ```
 void eternita() 
 {
+    /** 
+     * La condizione è sempre vera, quindi il ciclo si ripete
+     * indefinitamente
+     */
     while(1) {
         
         unoPrimigenio();
@@ -305,8 +305,7 @@ void eternita()
 
 Se non ci fosse questa ciclicità, ovvero senza un'alternanza fra Entropia e Gravità, fra *Prakṛti* e *Puruṣa*, lo Spazionismo e, di conseguenza,il C'hi++ non avrebbero più senso, così come la nostra esistenza.
 La Vita si rivelerebbe un epifenomeno destinato a esaurirsi nella morte termica dell'Universo e nessun ordine sociale sarebbe più possibile, perché ciascuno cercherebbe di ottenere il massimo possibile dai pochi anni che gli sono concessi, indifferente al costo che questo avrebbe per gli altri. 
-Per intendersi, qualcosa di simile al *Black Friday* in un centro commerciale americano.  
-<!-- http://blackfridaydeathcount.com -->
+Qualcosa di simile al *Black Friday* in un centro commerciale americano, per intendersi.. <a href="/note/#blackfriday" class="nota"></a>
 
 ```
 typedef struct {
