@@ -167,7 +167,8 @@ BODY.manuale {
     counter-reset: note-manuale;  
 }
 BODY.manuale A.nota {   
-    display: none;
+    display: none; 
+    display: initial; 
 }
 BODY.manuale A.nota::after {   
     counter-increment: note-manuale; 
@@ -786,8 +787,8 @@ SECTION.note OL LI A {
  *  Stili per le note del Manuale
  */
  
- BODY.note SECTION.note LI {
-     height: 200px;
+ BODY.note SECTION.note OL {
+     margin-bottom: 3rem;
  }
 /**
  *

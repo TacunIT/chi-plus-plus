@@ -6,7 +6,6 @@ permalink:  /man/note/
 ---
 
 <section class="note">
-    <h2>Note</h2>
     <h3>Istruzioni condizionali</h3>
     <ol>
         <li>
@@ -18,6 +17,11 @@ permalink:  /man/note/
     <ol>
         <li>
             In effetti, sempre ne <i>La Metafisica</i>, disse anche che tutti gli uomini aspirano per natura alla conoscenza, quindi non è che sia tanto credibile, come fonte..
+            <a href="Javascript:history.back()" name="aristotele">&#8617;</a>
+        </li>
+        <li>
+            <a href="http://blackfridaydeathcount.com"
+               target="note">http://blackfridaydeathcount.com</a>
             <a href="Javascript:history.back()" name="aristotele">&#8617;</a>
         </li>
     </ol>
