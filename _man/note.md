@@ -42,15 +42,6 @@ permalink:  /man/note/
             questa istruzione.
             <a href="Javascript:history.back()" name="openworm">&#8617;</a>
         </li>
-        <li>
-            Un software può essere stabile, ovvero non avere difetti noti, ma non è mai finito, completo, perfetto; sia perché l'utilizzo potrebbe rivelare dei difetti sfuggiti alla fase di test, sia perché delle variazioni del contesto di utilizzo potrebbero richiedere delle modifiche al sistema.
-            Il buon software viene quindi costantemente aggiornato e le diverse versioni di uno stesso prodotto sono numerate in maniera progressiva con dei codici composti da tre numeri separati da punti (p.es. <i>1.4.3</i>) che indicano, rispettivamente, la versione <i>major</i>, la versione <i>minor</i> e la <i>patch</i>.
-            La versione <i>major</i> viene incrementata ogni volta che si apportano delle drastiche modifiche al software, rendendolo incompatibile con le versioni precedenti.
-            La versione <i>minor</i> viene incrementata quando si modifica il codice in maniera minore, aggiungendo o modificando delle funzionalità in maniera compatibile con le versioni precedenti.
-            Il numero di <i>pathc</i> è incrementato ogni volta che si apportano delle modifiche o delle correzioni anche minime al sistema.
-            La <i>major version zero</i> (_0.y.z_) è destinata allo sviluppo iniziale, quando il software non è ancora stabile e tutto può cambiare in ogni momento. 
-            <a href="Javascript:history.back()" name="versionamento">&#8617;</a>
-        </li>
     </ol>
 </section>
 <!--

@@ -1,3 +1,18 @@
+## 0.16.5 (December 24, 2020)
+  - Redazione del testo
+  - Redazione del testo
+  - Modificata grafica delle note
+  - Revisione del testo
+  - Merge branch 'feature/note'
+  - Aggiunta pagina con note. Reso non visibile contatore in attesa di aggiungere quelle precedenti
+  - Redazione del testo
+  - Corretto errore nella visualizzazione dei caratteri indiani. Il font Simonetta non comprende gli alfabeti asiatici, ma non mi va di cambiarlo sia perché mi piace come font sia per il gioco di parole con il font monospace "Inconsolata".
+  - Aggiunto un nuovo file di include con il testo della Bhagavad-Gita
+  - Modificato testo su aborto e aggiunto todo
+  - Merge branch 'fix/riordino-capitoli'
+  - Modificato ordine dei capitoli, spostando funzioni e preprocessore prima delle istruzioni condizionali
+  - Merge branch 'capitolo/istruzioni-iterative'
+
 ## 0.16.4 (December 08, 2020)
   - Terminata prima stesdura della parte tecnica del capitolo
   - Riorganizzata la struttura dei capitoli
