@@ -372,10 +372,22 @@ Possiamo credere nella loro esistenza, ma dobbiamo farlo per fede, in maniera do
 Il Maestro Canaro rifuggiva i dogmi; diceva che se tu imponi una verità, poi sei legato a essa e non puoi più cambiare idea, anche se ti accorgi di avere sbagliato.
 Prendi il tuo libro, per esempio; quel sottotitolo che hai scelto: *Lo scopo della vita è il debug* ti impone di credere nei Post-It.
 Se il giorno dopo che l'hai pubblicato si scoprisse che non esistono, saresti costretto a ristamparlo o ad accettare il fatto che dice una cosa non vera.
-Il Maestro Canaro non voleva che questo avvenisse al C'hi++; per questo motivo, stabilì che dovesse avere un versionamento<a href="/man/note/#versionamento" class="nota"></a>, come il software: perché potesse evolversi.
+Il Maestro Canaro non voleva che questo avvenisse al C'hi++; per questo motivo, stabilì che dovesse avere un versionamento, come il software: perché potesse evolversi.  
 
 ---
 
+I letterati, gli scultori, i pittori non possono modificare le loro opere, una volta che sono state pubblicate. Possono dare un ritocco di colore qui, un colpo di scalpello là, ma si tratta sempre di aggiustamenti minimi, che non cambiano la struttura stessa dell'arte-fatto.
+I musicisti, i teatranti e, in parte, i cineasti sono un po' più fortunati, perché possono apportare più facilmente delle modifiche alle loro opere, ma si tratta comunque di eventi che accadono di rado.  
+Al contrario, la buona produzione di software ha il vantaggio di essere in continua evoluzione.
+Un software può essere *stabile*, ovvero non avere difetti noti, ma non è mai finito, completo, *perfetto*; sia perché l'utilizzo potrebbe rivelare dei difetti sfuggiti alla fase di test, sia perché delle variazioni del contesto di utilizzo potrebbero richiedere delle modifiche al sistema.
+Il buon software viene quindi costantemente aggiornato e le diverse versioni di uno stesso prodotto sono numerate in maniera progressiva con dei codici composti da tre numeri separati da punti (p.es. *1.4.3*) che indicano, rispettivamente, la versione *major*, la versione *minor e* la *patch*.
+La versione *major* viene incrementata ogni volta che si apportano delle drastiche modifiche al software, rendendolo incompatibile con le versioni precedenti.
+La versione *minor* viene incrementata quando si modifica il codice in maniera minore, aggiungendo o modificando delle funzionalità in maniera compatibile con le versioni precedenti.
+Il numero di *patch* è incrementato ogni volta che si apportano delle modifiche o delle correzioni anche minime al sistema.
+La *major version zero* (_0.y.z_) è destinata allo sviluppo iniziale, quando il software non è ancora stabile e tutto può cambiare in ogni momento.  
+
+Prima ti ho detto che gli scienziati non sono infallibili. 
+Non è una maldicenza: è la verità; gli scienziati sono i primi ad ammetterlo e questa è la loro forza, perché possono permettersi di sbagliare.
 
 
 <!--
