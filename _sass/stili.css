@@ -153,28 +153,13 @@ A {
     color: $aColor;
 }
 A.nota {
-    font-size: 0.9rem;
-    color: $colorGold;
+    font-size: 0.8rem;
+    color: $aNotaColor;
     text-decoration: underline;
     vertical-align: super;
     display: inline-block;
-    margin-left: 0.12rem; 
+    margin-left: 2px; 
 }
-/**
- * Note per il Manuale
- */
-BODY.manuale {
-    counter-reset: note-manuale;  
-}
-BODY.manuale A.nota {   
-    display: none; 
-    display: initial; 
-}
-BODY.manuale A.nota::after {   
-    counter-increment: note-manuale; 
-    content: counter(note-manuale);     
-}
-
 A.more {
     font-weight: bold;
     font-size: 0.9rem;
@@ -443,6 +428,21 @@ BODY.index MAIN SECTION.citazione.pagina {
  *  Stili per il manuale
  *
  */
+
+ /**
+  * Note per il Manuale
+  */
+BODY.manuale {
+    counter-reset: note-manuale;  
+}
+BODY.manuale A.nota {   
+    display: none; 
+    display: initial; 
+}
+BODY.manuale A.nota::after {   
+    counter-increment: note-manuale; 
+    content: counter(note-manuale);     
+}
 BODY.manuale DIV#page {
     min-height: 100vh;
 }
@@ -756,15 +756,6 @@ SECTION.citazione SPAN {
  *  Stili per la gestione delle note a piè di pagina
  *
  */
-A.nota {
-    font-size: 0.8rem;
-    color: $aNotaColor;
-    text-decoration: underline;
-    vertical-align: super;
-    display: inline-block;
-    margin-left: 0.12rem; 
-}
-
 SECTION.note {
     page-break-before: always;
     padding: 3rem 0;
