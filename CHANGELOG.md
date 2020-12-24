@@ -1,3 +1,11 @@
+## 0.16.5 (December 24, 2020)
+  - Modificata grafica delle note
+  - Aggiunta pagina con note. 
+  - Corretto errore nella visualizzazione dei caratteri indiani. 
+  - Aggiunto un nuovo file di include con il testo della Bhagavad-Gita
+  - Modificato testo su aborto e aggiunto todo
+  - Modificato ordine dei capitoli, spostando funzioni e preprocessore prima delle istruzioni condizionali.
+  
 ## 0.16.4 (December 08, 2020)
   - Terminata prima stesdura della parte tecnica del capitolo
   - Riorganizzata la struttura dei capitoli
