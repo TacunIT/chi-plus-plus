@@ -25,6 +25,12 @@ permalink:  /man/note/
             <a href="Javascript:history.back()" name="blackfriday">&#8617;</a>
         </li>
         <li>
+            Scarabelli, Piera; Vinti, Massimo.
+            <i>Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja</i>.
+            Edizione elettronica - Mimesis Edizioni.
+            <a href="Javascript:history.back()" name="vasana">&#8617;</a>
+        </li>
+        <li>
             @todo: aggiungere definizione di connessione stateful
             <a href="Javascript:history.back()" name="stateful">&#8617;</a>
         </li>

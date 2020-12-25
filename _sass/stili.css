@@ -773,6 +773,10 @@ SECTION.bibliografia LI {
 SECTION.note OL LI A {
     word-break: break-all;
 }
+SECTION.note OL LI A:focus {
+    background-color: $colorGold;
+    color: #fff;
+}
 
 /**
  *  Stili per le note del Manuale
