@@ -1,5 +1,5 @@
 ---
-status:     redazione
+status:     pubblicato
 layout:     manuale
 class:      capitolo
 title:      Istruzioni iterative
@@ -314,20 +314,21 @@ typedef struct {
 } PostIt ;
 ```
 
-Il secondo dogma del C'hi++ è l'esistenza di una memoria persistente dell'Universo che mantiene traccia dell'esito delle scelte fatte in ciascun ciclo; qualcosa di simile all'inconscio collettivo di Jung o ai vāsanā dell'Induismo:
+Il secondo dogma del C'hi++ è l'esistenza di una memoria persistente dell'Universo che mantiene traccia dell'esito delle scelte fatte in ciascun ciclo; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo:
 
 <blockquote>
 {% include  bhagavad-gita-2.html %}
+<a href="/man/note/#vasana" class="nota"></a>
 </blockquote>
 
 I *Post-It*, come li chiamava il Maestro Canaro, non sono indispensabili per il C'hi++, sono solo un'auspicio, perché la loro esistenza dà un senso alla nostra vita.
 Ho detto: *dà* in vece di: *darebbe* perché, così come avviene per gli esopianeti, noi non li “vediamo”, ma possiamo inferire la loro esistenza dall'effetto che hanno su ciò che li circonda: istinto, premonizioni, *deja-vu*.  
 L'esistenza dei *Post-It* rende l'Universo *stateful*<a href="/man/note/#stateful" class="nota"></a> e quindi più appetibile per noi, ma anche in un Universo *stateless*<a href="/man/note/#stateful" class="nota"></a>, in cui ciascun ciclo di esistenza fa storia a sé, noi non avremmo né motivo né convenienza a comportarci in maniera egoistica.
-In primo luogo perché, come abbiamo già detto, essendo tutti la manifestazione di una stessa Energia, ciò che facciamo agli altri lo facciamo in realtà a noi stessi; in secondo luogo perché non è detto che in ciascun ciclo di esistenza il nostro io cosciente si manifesti nella stessa persona e quindi, se in un ciclo siamo Jack the Ripper, in un altro potremmo essere Mary Ann Nichols.  
+In primo luogo perché, come abbiamo già detto, essendo tutti la manifestazione di una stessa Energia, ciò che facciamo agli altri lo facciamo in realtà a noi stessi; in secondo luogo perché non è detto che in ciascun ciclo di esistenza il nostro io cosciente si manifesti nella stessa persona e quindi, se in un ciclo siamo *Jack the Ripper*, in un altro potremmo essere Mary Ann Nichols.  
 I *Post-It* furono sempre una spina nel fianco, per il Maestro Canaro, che spese gli ultimi anni della sua vita cercando un modo per ricondurli a qualcosa di reale o di eliminarli dalla dottrina, ma non riuscì a fare nessuna delle due cose. 
-Inizialmente pensò la cosa più ovvia, ovvero che i PostIt fossero nel cervello, che fossero una particolare mappatura delle sinapsi contenente le istruzioni per reagire a determinate condizioni future<a href="/man/note/#openworm" class="nota"></a>.
-Ipotizzò che i sogni avessero la duplice funzione di prepararci a queste condizioni, anticipandocele e tenendo vive le connessioni cerebrali che avremmo dovuto sfruttare per affrontarle.
-Tutto questo, però, era solo una proiezione dei Post-It, una copia in memoria RAM di informazioni preservate altrove, perché, per poter essere persistenti, i Post-It devono trovarsi al di fuori dello *scope* della nostra esistenza, nella ROM o nell'*hard-disk* dell'Universo:
+Inizialmente pensò la cosa più ovvia, ovvero che i Post-It fossero nel cervello, che fossero una particolare mappatura delle sinapsi contenente le istruzioni per reagire a determinate condizioni future<a href="/man/note/#openworm" class="nota"></a>.
+Ipotizzò anche che i sogni avessero la duplice funzione di prepararci a queste condizioni, anticipandocele e tenendo vive le connessioni cerebrali che avremmo dovuto sfruttare per affrontarle.
+Tutto questo, però, poteva essere solo una proiezione dei Post-It, una copia in memoria RAM di informazioni preservate altrove, perché, per poter essere persistenti, i Post-It devono trovarsi al di fuori dello *scope* della nostra esistenza, nella ROM o nell'*hard-disk* dell'Universo:
 
 ```
 
@@ -380,15 +381,23 @@ I letterati, gli scultori, i pittori non possono modificare le loro opere, una v
 I musicisti, i teatranti e, in parte, i cineasti sono un po' più fortunati, perché possono apportare più facilmente delle modifiche alle loro opere, ma si tratta comunque di eventi che accadono di rado.  
 Al contrario, la buona produzione di software ha il vantaggio di essere in continua evoluzione.
 Un software può essere *stabile*, ovvero non avere difetti noti, ma non è mai finito, completo, *perfetto*; sia perché l'utilizzo potrebbe rivelare dei difetti sfuggiti alla fase di test, sia perché delle variazioni del contesto di utilizzo potrebbero richiedere delle modifiche al sistema.
-Il buon software viene quindi costantemente aggiornato e le diverse versioni di uno stesso prodotto sono numerate in maniera progressiva con dei codici composti da tre numeri separati da punti (p.es. *1.4.3*) che indicano, rispettivamente, la versione *major*, la versione *minor e* la *patch*.
+Il buon software viene quindi costantemente aggiornato e le diverse versioni di uno stesso prodotto sono numerate in maniera progressiva con dei codici composti da tre numeri separati da punti che indicano, rispettivamente, la versione *major*, la versione *minor e* la *patch*; per esempio: *1.4.12*.
 La versione *major* viene incrementata ogni volta che si apportano delle drastiche modifiche al software, rendendolo incompatibile con le versioni precedenti.
 La versione *minor* viene incrementata quando si modifica il codice in maniera minore, aggiungendo o modificando delle funzionalità in maniera compatibile con le versioni precedenti.
 Il numero di *patch* è incrementato ogni volta che si apportano delle modifiche o delle correzioni anche minime al sistema.
 La *major version zero* (_0.y.z_) è destinata allo sviluppo iniziale, quando il software non è ancora stabile e tutto può cambiare in ogni momento.  
 
-Prima ti ho detto che gli scienziati non sono infallibili. 
-Non è una maldicenza: è la verità; gli scienziati sono i primi ad ammetterlo e questa è la loro forza, perché possono permettersi di sbagliare.
+---
 
+Prima ti ho detto che gli scienziati non sono infallibili. 
+Non è una maldicenza: è la verità; gli scienziati sono i primi ad ammetterlo e questa è la loro forza, perché possono correggere i loro errori senza perdere di credibilità.  
+Il Maestro Canaro voleva che questo fosse possibile anche per il C'hi+.
+Come scrisse alla fine della sua <a href="/proposta" target="proposta">*Proposta per una metafisica open-source*</a>:
+
+> Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di un'unità la *major-version* del mio progettto e andrò avanti.
+Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita, mia o altrui che sia, senza accettazioni per fede, ma basandomi solo su considerazioni di ordine logico.
+Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.
+Mi sembra un motivo più che sufficiente. 
 
 <!--
 
