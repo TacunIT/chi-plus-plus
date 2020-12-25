@@ -507,7 +507,7 @@
   - Creata mappa concettuale con Vue.
 
 ## 0.1.1 (giugno 12, 2007)
-  - Accenno a teoria cosmogonica in Defecatio.
+  - Accenno a teoria cosmogonica in Sostiene Aristotele.
 
 ## 0.1.0 (settembre 12, 2004)
   - Accenno a teoria cosmogonica in Defecatio.
