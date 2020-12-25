@@ -6,6 +6,18 @@ permalink:  /man/note/
 ---
 
 <section class="note">
+
+    <h3>Il buon programmatore</h3>
+    <ol>
+        <li>
+            Scarabelli, Piera; Vinti, Massimo.
+            <i>Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja</i>.
+            Edizione elettronica - Mimesis Edizioni.
+            <a href="Javascript:history.back()" name="gita">&#8617;</a>
+        </li>
+        </li>
+    </ol>
+
     <h3>Istruzioni condizionali</h3>
     <ol>
         <li>
@@ -13,6 +25,7 @@ permalink:  /man/note/
             <a href="Javascript:history.back()" name="">&#8617;</a>
         </li>
     </ol>
+
     <h3>Istruzioni iterative</h3>
     <ol>
         <li>
@@ -25,9 +38,7 @@ permalink:  /man/note/
             <a href="Javascript:history.back()" name="blackfriday">&#8617;</a>
         </li>
         <li>
-            Scarabelli, Piera; Vinti, Massimo.
-            <i>Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja</i>.
-            Edizione elettronica - Mimesis Edizioni.
+            Scarabelli, Piera; Vinti, Massimo, <i>op.cit.</i>
             <a href="Javascript:history.back()" name="vasana">&#8617;</a>
         </li>
         <li>
@@ -49,6 +60,7 @@ permalink:  /man/note/
             <a href="Javascript:history.back()" name="openworm">&#8617;</a>
         </li>
     </ol>
+
 </section>
 <!--
 <li>
