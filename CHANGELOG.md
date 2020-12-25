@@ -1,3 +1,7 @@
+## 0.16.6 (December 25, 2020)
+  - Completata prima stesura del capitolo
+  - Merge branch 'master' into capitolo/istruzioni-iterative
+
 ## 0.16.5 (December 24, 2020)
   - Modificata grafica delle note
   - Aggiunta pagina con note. 
