@@ -3,7 +3,7 @@ status:     pubblicato
 layout:     manuale
 title:      Il buon programmatore
 class:      capitolo
-permalink:  /man/il-programmatore
+permalink:  /man/programmatore
 quote:      "È stata una giornata estenuante: questa mattina ho tolto una virgola dal mio codice e stasera ce l'ho rimessa"
 ---
 
@@ -57,7 +57,9 @@ Fra questi individui e i veri programmatori c'è la stessa differenza che passa 
 
 <hr id="dottrina">
 
-{% include_relative canaro/paranoici.md %}
+Una volta chiesi al maestro Canaro: “Maestro, cosa facevano i paranoici
+prima che fosse inventata l'informatica?” il maestro Canaro ci pensò
+un po' su, poi rispose: “Ormeggiavano le barche.”.
 
 <!--
     @todo applicare le categorie caratteriali aristoteliche al SW.
