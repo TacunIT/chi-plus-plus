@@ -13,7 +13,7 @@ permalink:  /man/note/
             P. Scarabelli, M. Vinti -
             <i>Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja</i>.
             Edizione elettronica - Mimesis Edizioni.
-            <a href="Javascript:history.back()" name="gita">&#8617;</a>
+            <a href="Javascript:history.back()" name="azione">&#8617;</a>
         </li>
         </li>
     </ol>
@@ -55,6 +55,15 @@ permalink:  /man/note/
             <a href="Javascript:history.back()" name="">&#8617;</a>
         </li>
     </ol>
+
+    <h3>Struttura dei programmi C++</h3>
+    <ol>
+        <li>
+            Scarabelli, Piera; Vinti, Massimo - <i>op.cit.</i>
+            <a href="Javascript:history.back()" name="cicli">&#8617;</a>
+        </li>
+    </ol>
+
 
     <h3>Istruzioni iterative</h3>
     <ol>

@@ -19,7 +19,7 @@ Nella *Bhagavad Gita* si dice:
 <blockquote>
 Tu hai diritto solo all'azione, mai ai suoi frutti: che il tuo movente
 non sia il frutto dell'azione, né vi sia in te attaccamento
-all'inattività. <a href="/man/note/#gita" class="nota"></a>
+all'inattività. <a href="/man/note/#azione" class="nota"></a>
 </blockquote>
 
 È così che opera il buon programmatore: scrive del buon codice, anche se non beneficerà mai dei suoi effetti. Scrive del buon codice perché non può farne a meno.  
@@ -47,7 +47,7 @@ Il programmatore è Mercurio, il sistemista è Vulcano.
 Un buon programmatore dovrebbe conoscere più di un linguaggio di programmazione.
 Che si conosca a fondo solo un particolare linguaggio è ammissibile, ma una visione di insieme è sempre necessaria per operare delle scelte.
 Quelli che al giorno d'oggi si definiscono “programmatori” non sono nient'altro che dei forzati di un determinato linguaggio.
-Allevati in batteria come i polli, conoscono soltanto quello, lo ritengono il migliore e si interessano degli altri linguaggi solo allo scopo di evidenziarne le pecche.
+Allevati in batteria come i polli, conoscono soltanto quello, lo ritengono il migliore e si interessano degli altri linguaggi solo allo scòpo di evidenziarne le pecche.
 Questo è improduttivo e pericoloso perché, quando con il passare del tempo, questi "programmatori" diventeranno analisti, gestiranno i progetti e le persone a loro affidate con la stessa miopia, producendo sistemi instabili, costosi e difficili da mantenere.
 Ciò è immorale.  
 All'estremo opposto stanno coloro i quali dedicano il loro tempo e le loro energie allo studio dei linguaggi e delle metodologie di progettazione del passato.

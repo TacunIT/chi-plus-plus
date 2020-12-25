@@ -46,7 +46,7 @@ Con il passare del tempo, molte di queste convenzioni nate in seguito a
 esigenze contingenti, finiscono inevitabilmente per contrastare con il
 senso comune di giustizia e devono essere o abolite o modificate, solo
 che ciascuna modifica o adattamento invece di renderle più "giuste", le
-allontana ulteriormente dal loro scopo iniziale e le rende soggette a
+allontana ulteriormente dal loro scòpo iniziale e le rende soggette a
 interpretazioni errate o addirittura opposte a quelle che era il loro
 fine primario.
 
