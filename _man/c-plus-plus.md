@@ -18,11 +18,9 @@ Fà che si possa dire la stessa cosa di te.
 
 C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983, quando lavorava ai Laboratori Bell della AT&T.
 Dieci anni prima, il suo collega Dennis Ritchie aveva creato un linguaggio di programmazione chiamato *C*. 
-Il C, come ti ho detto, era estremamente efficace se dovevi programmare i computer, ma &mdash; così come alcuni dei tuoi confratelli &mdash; non gestiva altrettanto bene le entità della vita reale.
-
+Il C, come ti ho detto, era estremamente efficace se dovevi programmare i computer, ma &mdash; così come alcuni dei tuoi confratelli &mdash; non gestiva altrettanto bene le entità della vita reale.  
 Stroustrup, che ai tempi del suo dottorato aveva lavorato con un linguaggio a oggetti chiamato *Simula67*, pensò che se avesse potuto aggiungere alla velocità di esecuzione del C la possibilità di creare dei nuovi tipi di dato di Simula, avrebbe ottenuto il linguaggio perfetto.
-Aveva ragione.  
-
+Aveva ragione.    
 Il nome *C++* si riferisce all'operatore `++`, che serve a incrementare di un'unità il valore di una variabile:
 
 ```
@@ -39,14 +37,12 @@ Valore di C = 13
 
 C++, infatti, non era un nuovo linguaggio: era un C migliorato. 
 Tutto il codice e l'esperienza che erano state fatte fino ad allora sul C potevano essere applicate anche al C++.  
-<!--
 Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l'Ebraismo: prese una religione spartana, adatta per un popolo in fuga nel deserto e la  migliorò, rendendola meno autoritaria.
--->
 
 ---
 
 Le principali novità aggiunte al C dal C++ sono: l'*astrazione dei dati*, la *programmazone a oggetti* e la *generic programming*.
-Ora ti spiego cosa sono, ma tu non preoccuparti se non capisci: approfondiremo tutti questi concetti in seguito. 
+Ora ti spiego cosa sono, ma tu non preoccuparti se non capisci: approfondiremo tutti questi concetti in seguito.
 
 I tipi di dato del C sono:
 
@@ -99,14 +95,12 @@ public:
 
 Grazie alle classi, il programmatore può creare dei nuovi tipi di dato e
 utilizzarli all'interno del suo programma nello stesso modo in cui
-utilizzerebbe i tipi di dato primitivi del linguaggio.
-
+utilizzerebbe i tipi di dato primitivi del linguaggio.  
 Ciascuna classe ha degli *attributi* e dei *metodi*.
 Gli *attributi* sono dei dati che descrivono le caratteristiche della classe, per esempio, la razza o il sesso di un cavallo.
 I *metodi* sono delle funzioni che definiscono il modo in cui la classe può interagire con gli altri elementi del programma.
 Nelle classi dell'esempio gli *attributi* sono gli elementi che vedi nella sezione `private`, mentre i *metodi* sono le funzioni che vedi nella sezione `public`.
-La funzione che ha lo stesso nome della classe si chiama *costruttore* della classe, perché “spiega” al compilatore come debbano essere creati gli oggetti di questa classe.
-
+La funzione che ha lo stesso nome della classe si chiama *costruttore* della classe, perché “spiega” al compilatore come debbano essere creati gli oggetti di questa classe.  
 Le classi, però, sono la ricetta, non sono la pietanza. 
 Per poter essere utilizzate, le classi devono essere *istanziate* negli oggetti:
 
@@ -122,8 +116,7 @@ int main()
 ```
 
 `stallone`, `giumenta` e `monta` sono tre oggetti.
-I primi due sono istanze della classe *Cavallo*, il terzo è un'istanza della classe *Monta*.
-
+I primi due sono istanze della classe `Cavallo`, il terzo è un'istanza della classe `Monta`.  
 Se aggiungi un po' di codice alle classi che abbiamo visto prima e compili il programma, otterrai:
 
 ```
@@ -134,12 +127,8 @@ MASCHIO: Specie:cavallo, Sesso:m, Razza:lipizzano
 FEMMINA: Specie:cavallo, Sesso:f, Razza:maremmano```
 ```
 
-Perché un linguaggio di programmazione possa dirsi “orientato agli
-oggetti”, però, oltre alle classi deve poter gestire l'*ereditarietà* e
-il *polimorfismo*.
-
-L'*ereditarietà* permette di definire dei nuove classi come
-estensione di classi esistenti: 
+Perché un linguaggio di programmazione possa dirsi *orientato agli oggetti*, però, oltre alle classi deve poter gestire l'*ereditarietà* e il *polimorfismo*.
+L'*ereditarietà* permette di definire dei nuove classi come estensione di classi esistenti: 
 
 ```
 class Animale {
@@ -174,7 +163,7 @@ public:
 };
 ```
 
-Nell'esempio qui sopra, abbiamo prima definito una classe *Animale*, che ha tre attributi: la *specie*, lal *razza* e il *sesso*; poi abbiamo definito una classe *Cavallo*, derivandola dalla classe *Animale*.
+Nell'esempio qui sopra, abbiamo prima definito una classe `Animale`, che ha tre attributi: la `specie `, la `razza ` e il `sesso `; poi abbiamo definito una classe `Cavallo`, derivandola dalla classe `Animale`.
 In questo modo, se oltre ai cavalli il nostro programma dovesse gestire anche altri ungulati, non dovremmo ripetere in ciascuna classe le stesse istruzioni, ma potremmo utilizzare quelle della classe base:
 
 ```
@@ -187,9 +176,8 @@ public:
 };
 ```
 
-A questo punto, la tua sagacia dovrebbe averti fatto rilevare un possibile problema (posto che tu sia sveglio, cosa di cui non sono del tutto certo): la classe *Monta* può gestire solo oggetti di tipo *Cavallo*.
-
-Un linguaggio che non gestisca il *polimorfismo* ci costringerebbe a scrivere due nuove classi: una per i muli e una per i bardotti:
+A questo punto, la tua sagacia dovrebbe averti fatto rilevare un possibile problema (posto che tu sia sveglio, cosa di cui non sono del tutto certo): la classe `Monta` può gestire solo oggetti di tipo `Cavallo`.  
+Un linguaggio che non gestisca il polimorfismo ci costringerebbe a scrivere due nuove classi: una per i muli e una per i bardotti:
 
 ```
 class MontaMulo {
@@ -219,15 +207,10 @@ public:
 };
 ```
 
-Aristotele sostiene che
-
-> le scienze che derivano da un numero minore di premesse sono più rigorose delle scienze che ne discendono per mezzo dell’aggiunta di nuove premesse
-<!-- Aristotele. La metafisica (Italian Edition) . UTET. Kindle Edition. -->
-
-Qualcosa di simile vale anche per il software: i programmi con meno righe di codice sono più affidabili e più facili da correggere o da modificare. 
-
+Il problema è che più codice scrivi, più è probabile che farai degli errori e meno facile sarà correggerli.
+Al contrario, i programmi con meno righe di codice sono più affidabili e più facili da correggere o da modificare.   
 Il C++ ci aiuta in questo senso perché permette il *polimorfismo*, ovvero la capacità di una funzione o di un operatore di svolgere il proprio compito indipendentemente dal tipo di dato che deve gestire.
-Se riscriviamo la classe *Monta* usando, al posto dei parametri di tipo *Cavallo*, dei parametri che hanno il tipo della classe base *Animale*:
+Se riscriviamo la classe `Monta` usando, al posto dei parametri di tipo `Cavallo`, dei parametri che hanno il tipo della classe base `Animale`:
 
 ```
 class Monta {
@@ -245,7 +228,7 @@ public:
 
 ```
 
-Potremo creare degli oggetti di classe *Monta* con qualunque classe derivata:
+Potremo creare degli oggetti di classe `Monta` con qualunque classe derivata:
 
 ```
 int main()
@@ -295,9 +278,7 @@ MASCHIO: Specie:Asino	Razza:sardo	    Sesso:f
 FEMMINA: Specie:Cavallo	Razza:lipizzano	Sesso:m
 ```
 
----
-
-Come ti ho detto, però, un buon programmatore non si accontenta di essere riuscito a produrre il risultato atteso, ma si chiede sempre se ci sia un modo più efficiente per ottenerlo.  
+Come ti ho detto, però, un buon programmatore non si accontenta di essere riuscito a produrre il risultato atteso, ma si chiede sempre se ci sia un modo più efficiente per ottenerlo.
 Nel nostro caso, il codice che abbiamo utilizzato per mostrare il risultato degli accoppiamenti:
 
 ```
@@ -313,7 +294,7 @@ cout << "BARDOTTO\n" << bardotto << endl;
 ```
 
 non è il massimo dell'efficienza, sia perché potremmo sbagliarci ad accoppiare la specie dei genitori con il nome del figlio, sia perché le istruzioni devono essere ripetute per ciascun oggetto. 
-Per risolvere il primo difetto possiamo aggiungere alla classe *Monta* un attributo e un metodo per definire autonomamente che tipo di genia venga prodotta dalla copula:
+Per risolvere il primo difetto possiamo aggiungere alla classe `Monta` un attributo e un metodo per definire autonomamente che tipo di genia venga prodotta dalla copula:
 
 ```
 string   _esito;
@@ -335,22 +316,20 @@ void setEsito() {
 ```
 
 ma anche così dovremo comunque riscrivere quattro righe di codice per modificare l'output del programma: un approccio inaccettabile per i sistemi di produzione, dove le entità da gestire possono essere migliaia.
-
 Possiamo risolvere questo problema grazie alla *generic programming* e al modo in cui viene implementata nel C++:le classi *template*:
 
 ```
 template < class T> class list;
 ```
 
-La classe *list* è una delle classi *template* del C++ e permette di inserire, rimuovere, spostare, unire, ordinare ed elencare una lista di oggetti di una stessa classe.
-
-La sintassi per creare una lista di oggetti di classe *Monta* è:
+La classe `list ` è una delle classi *template* del C++ e permette di inserire, rimuovere, spostare, unire, ordinare ed elencare una lista di oggetti di una stessa classe.
+La sintassi per creare una lista di oggetti di classe `Monta` è:
 
 ```
 list<Monta> monte;
 ```
 
-Fatto ciò, possiamo aggiungere elementi alla nostra lista con la funzione *push_back()*, alla quale passeremo direttamente il costruttore della classe:
+Fatto ciò, possiamo aggiungere elementi alla nostra lista con la funzione `push_back()`, alla quale passeremo direttamente il costruttore della classe:
 
 ```
 monte.push_back(Monta(cavallo, giumenta)); 
@@ -372,6 +351,7 @@ monte.push_back(m2);
 monte.push_back(m3);
 monte.push_back(m4);
 ```
+
 Per visualizzare il contenuto della lista, indipendentemtente dal numero di elementi, basta l'istruzione:
 
 ```
@@ -380,7 +360,7 @@ for (list<Monta>::iterator it=monte.begin(); it!=monte.end(); it++) {
 }
 ```
 
-La funzione *main()* del nostro programma sarà quindi:
+La funzione `main()` del nostro programma sarà quindi:
 
 ```
 int main()
@@ -428,7 +408,7 @@ FEMMINA: Specie:Asino	Razza:sardo     Sesso:f
 ESITO:   bardotto
 ```
 
-Se volessimo per qualche motivo invertire l'ordine degli elementi nella lista, tutto quello che dovremmo dare è di aggiungere prima del ciclo *for* l'istruzione:
+Se volessimo per qualche motivo invertire l'ordine degli elementi nella lista, tutto quello che dovremmo dare è di aggiungere prima del ciclo `for` l'istruzione:
 
 
 ```
@@ -469,4 +449,4 @@ L'avvento, alla fine del Secolo, del linguaggio con la "J", quello che ha bisogn
 Non a caso, Stroustrsup disse:
 
 > I suspect that the root of many of the differences between C/C++ and Java is that AT&T is primarily a user (a consumer) of computers, languages, and tools, whereas Sun is primarily a vendor of such things.
-<!-- Bjarne Stroustrup - http://gotw.ca/publications/c_family_interview.htm -->
+<a href="/man/note/#cpp" class="nota"></a>

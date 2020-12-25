@@ -9,7 +9,7 @@ int main(int argc, char** argv)
     
     /** Se c'è solo il nome del programma, errore */
     if(argc < 2) {
-        std::cerr << "Specificare almeno un parametro!" << std::endl;
+        std::cerr << "Specificare un parametro!" << std::endl;
         return NO_PARAMETRI;
     }
 

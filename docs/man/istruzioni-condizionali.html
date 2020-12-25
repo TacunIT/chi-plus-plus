@@ -4,14 +4,14 @@
 </title>
     <meta charset="utf-8" />
     <meta name="viewport"     content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <link rel="canonical"            href="http://localhost:4000" />
-    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/chi-plus-plus.png" />
+    <link rel="canonical"            href="https://chiplusplus.org" />
+    <meta     name="thumbnail"       content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
     <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
     <meta property="og:title"        content="Istruzioni condizionali" />
     <meta property="og:type"         content="website" />    
     <meta property="og:description"  content="Chi++ - Proposta per una metafisica open-source" />
-    <meta property="og:image"        content="http://localhost:4000/assets/img/chi-plus-plus.png" />
+    <meta property="og:image"        content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
     <meta property="og:image:height" content="260" />
     <link rel=icon href=/assets/img/favicon.ico type=image/x-icon>
     <link href="/assets/fa/css/all.css" rel="stylesheet"> 
@@ -72,11 +72,8 @@ La citazione è da: Asimov, Isaac. Civiltà extraterrestri (Italian Edition) . M
 <p>Le istruzioni condizionali sono l’elemento più importante del codice.</p>
 
 <p>Ogni programma deve saper reagire correttamente al variare delle condizioni di utilizzo; per far ciò, si utilizzano le cosiddette <em>istruzioni condizionali</em>, che permettono di definire il comportamento del sistema a seconda che una determinata condizione si riveli vera o falsa.<br />
-Il C++ possiede due tipi di istruzione condizionale: le sequenze <code>if-else</code> e l’istruzione <code>switch</code>.</p>
-
-<h3 id="istruzioni-if-else">Istruzioni if-else</h3>
-
-<p>La forma generale di questa istruzione è la seguente:</p>
+Il C++ possiede due tipi di istruzione condizionale: le sequenze <code>if-else</code> e l’istruzione <code>switch</code>.<br />
+La forma generale delle istruzioni <code>if-else</code> è la seguente:</p>
 
 <pre><code>if ( &lt;condizione&gt; ) {
     // istruzioni da eseguire se la condizione è vera
@@ -184,7 +181,7 @@ Immagina un brano di codice che debba fare una verifica all’inizio dell’elab
 }
 </code></pre>
 
-<p>Se le istruzioni da eseguire in caso di buon successo della verifica sono poche e semplici, questa sequenza non darà problemi, ma se, al contrario, le istruzioni fossero tante e complesse, leggendo il codice potresti arrivare all’istruzione <code>else</code> e non ricordarti più a quale condizione fosse associata.<br />
+<p>Se le istruzioni da eseguire in caso di buon successo della verifica sono poche e semplici, questa sequenza non darà problemi, ma se, al contrario, le istruzioni fossero tante e complesse, leggendo il codice potresti arrivare all’istruzione <code>else</code> e non ricordarti più a quale condizione fosse associata.
 In questi casi, io preferisco la forma:</p>
 
 <pre><code>if ( &lt;errore&gt; ) {
@@ -198,14 +195,12 @@ In questi casi, io preferisco la forma:</p>
 }
 </code></pre>
 
-<p>Dato che la gestione dell’errore non richiederà mai più di qualche riga di codice, potrai capire a colpo d’occhio tutto il flusso del programma, indipendentemente dalla lunghezza del secondo blocco di istruzioni.</p>
-
-<p>Tutto questo, ovviamente, non vuole essere né un invito né una giustificazione per la scrittura di istruzioni complesse.
+<p>Dato che la gestione dell’errore non richiederà mai più di qualche riga di codice, potrai capire a colpo d’occhio tutto il flusso del programma, indipendentemente dalla lunghezza del secondo blocco di istruzioni.<br />
+Tutto questo, ovviamente, non vuole essere né un invito né una giustificazione per la scrittura di istruzioni complesse.
 A meno che non sia necessario limitare le chiamate a funzione per garantire un’alta velocità di esecuzione, è sempre meglio scomporre il flusso del programma in una serie di funzioni distinte e specializzate.
-Renderai il tuo programma un po’ più lento (o, meglio: un po’ meno veloce), ma il codice sarà molto più facile da leggere o da modificare. 
-<!-- @todo parlare del "codice spaghetti". --></p>
-
-<p>Immagina adesso un brano di codice che richieda molte condizioni <code>if</code> concatenate:</p>
+Renderai il tuo programma un po’ più lento (o, meglio: un po’ meno veloce), ma il codice sarà molto più facile da leggere o da modificare.<br />
+<!-- @todo parlare del "codice spaghetti". -->
+Immagina adesso un brano di codice che richieda molte condizioni <code>if</code> concatenate:</p>
 
 <pre><code>esito = 0;
 
@@ -287,7 +282,7 @@ Perderai un po’ di velocità di esecuzione, ma il codice sarà molto più faci
 Attento, però: mettere in sequenza delle semplici istruzioni <code>if</code> è cosa
 ben diversa dal creare una catena di istruzioni <code>else-if</code> perché, se in caso di errore non blocchi l’elaborazione con un’istruzione <code>return</code>, il programma andrà avanti verificando le condizioni seguenti e l’errore nella prima condizione potrebbe ripercuotersi sul codice successivo:</p>
 
-<pre><code>/** Come direbbe Amleto: Qui comincia il male.. **/
+<pre><code>/** Qui comincia il male.. **/
 if ( divisore == 0 ) {
     cout &lt;&lt; "Errore: divisione per zero" &lt;&lt; endl;
 }
@@ -300,16 +295,16 @@ if ( (dividendo / divisore) &gt; 1 ) {
 
 <p>Non avendo un’istruzione <code>return</code> il codice della prima verifica non bloccherà l’esecuzione della funzione, che andrà in errore quando proverà a eseguire una divisione per zero.</p>
 
-<h3 id="istruzione-switch">Istruzione switch</h3>
+<hr />
 
 <p>L’istruzione <code>switch</code> permette di gestire più casi, basandosi sulla valutazione di una espressione:</p>
 
 <pre><code>switch(&lt;espressione&gt;)
 {
-  case &lt;costante&gt; : istruzioni... [break];
-  case &lt;costante&gt; : istruzioni... [break];
-  ...
-  default: istruzioni...
+    case &lt;costante&gt; : istruzioni... [break];
+    case &lt;costante&gt; : istruzioni... [break];
+    ...
+    default: istruzioni...
 }
 </code></pre>
 
@@ -416,9 +411,8 @@ Valore non valido
 MarteGioveSaturnoUranoNettunoPlutoneInserire un valore da: 1 a 9
 </code></pre>
 
-<p>che in questo caso non ha senso, ma che può essere la scelta adatta se due casi possibili vanno elaborati nella stessa maniera.</p>
-
-<p>Un’ultima cosa: ricordati sempre che, per dichiarare delle variabili all’interno dei <code>case</code>, è necessario aggiungere delle parentesi graffe; altrimenti, avrai un errore in fase di compilazione:</p>
+<p>che in questo caso non ha senso, ma che può essere la scelta adatta se due casi possibili vanno elaborati nella stessa maniera.<br />
+Un’ultima cosa: ricordati sempre che, per dichiarare delle variabili all’interno dei <code>case</code>, è necessario aggiungere delle parentesi graffe; altrimenti, avrai un errore in fase di compilazione:</p>
 
 <pre><code>switch( x ) {
     case 1: 
@@ -442,27 +436,25 @@ MarteGioveSaturnoUranoNettunoPlutoneInserire un valore da: 1 a 9
 Quando ciò avviene, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta che ti sembra più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
 Nel primo caso sarai un vettore di Entropia, mentre nel secondo caso sarai un paladino della Gravità.<br />
 Come sai, per il C’hi++ la scelta esatta (inteso come participio passato del verbo <em>esigere</em>) è la seconda: tutta la materia non è che la manifestazione di una unica Energia, quindi ha poco senso distinguerci gli uni dagli altri;
- dobbiamo invece ragionare come Saadi di Shiraz, quando dice:</p>
+ dobbiamo invece ragionare come Saʿdi di Shirāz, quando dice:</p>
 
 <blockquote>
   <p>Son membra d’un corpo solo i figli di Adamo,
 da un’unica essenza quel giorno creati.
 E se uno tra essi a sventura conduca il destino,
-per le altre membra non resterà riparo.</p>
+per le altre membra non resterà riparo.<a href="/man/note#saadi" class="nota"></a></p>
 </blockquote>
 
 <p>Cercare il proprio tornaconto personale a discapito degli altri è sbagliato.
 Bisogna comportarsi bene e cercare di convincere anche gli altri a fare altrettanto, perché, come recita il <em>Mantiq al-Tayr</em>:</p>
 
 <blockquote>
-  <p>tutto il male o il bene che feci, in verità lo feci solo a me stesso.</p>
+  <p>tutto il male o il bene che feci, 
+in verità lo feci solo a me stesso<a href="/man/note#mantiq" class="nota"></a>.</p>
 </blockquote>
 
-<!-- Il verbo degli uccelli (Mantiq al-Tayr) - Attar, Farid al-din -->
-
 <p>Ma come si fa a capire cosa sia <em>bene</em>?
-Ci sono casi in cui è facile dare la scelta giusta, come nel caso del maestro Zen Bokuju:
-<!-- @todo: trovare riferimento bibliografico o quanto meno spiegare di cosa si stia parlando --></p>
+Ci sono casi in cui è facile dare la scelta giusta, come nel caso del maestro Zen Bokuju<a href="/man/note#bokuju" class="nota"></a>:</p>
 
 <pre><code>switch( stimolo ) {
     case fame:  
@@ -495,38 +487,27 @@ Il problema è che se privi la giurisprudenza di una base spirituale, quello che
 Nella migliore delle ipotesi.<br />
 La teocrazia è un errore, ma anche la <em>a</em>-teocrazia dev’essere evitata.
 La Fede è stata la colla che ha tenuto unita la nostra società per quasi duemila anni.
-Forse quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, il denaro, i Diritti Umani, le Leggi.
-<!-- 
-    "Nell’universo non esistono dèi , non esistono nazioni né denaro né diritti umani né leggi , e non esiste alcuna giustizia che non sia nell’immaginazione comune degli esseri umani" 
-    Sapiens. Da animali a dèi: Breve storia dell'umanità. 
-    Harari, Yuval Noah 
--->
-Nessuno di questi concetti così importanti per la nostra Società esiste davvero, ma li utilizziamo lo stesso perché, come il linguaggio <em>C</em>, pur essendo solo delle convenzioni, sono utili al loro scopo.<br />
-Ora che questa colla non c’è più, le scelte dei legislatori non sono più mosse dal perseguimento di un obiettivo comune (corretto o sbagliato che fosse), ma dalla ricerca dell’approvazione di un elettorato composto in buona parte da zombie culturali <!-- 
-    Il tasso di analfabetismo funzionale, mentre scrivo, è del 41%.
-    I lettori sono sempre di meno: https://www.istat.it/it/archivio/213901
--->
-e da egoisti che perseguono unicamente il proprio interesse momentaneo: il pascolo ideale per demagoghi con aspirazioni dittatoriali.
+Forse quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, il denaro, i Diritti Umani, le Leggi<a href="/man/note#sapiens" class="nota"></a>.
+Nessuno di questi concetti così importanti per la nostra Società esiste davvero, ma li utilizziamo lo stesso perché, come il linguaggio <em>C</em>, pur essendo solo delle convenzioni, sono utili al loro scòpo.<br />
+Ora che questa colla non c’è più, le scelte dei legislatori non sono più mosse dal perseguimento di un obiettivo comune (corretto o sbagliato che fosse), ma dalla ricerca dell’approvazione di un elettorato composto in buona parte da zombie culturali<a class="nota" href="/man/note#istat"></a> e da egoisti che perseguono unicamente il proprio interesse momentaneo: il pascolo ideale per demagoghi con aspirazioni dittatoriali.
 La minoranza di idealisti e di persone colte, priva di valori trascendenti, non può che agire in base ai propri sentimenti o ai propri auspici e subisce inevitabilmente il malefico influsso dell’Annosa Dicotomia: fanno scelte che puntano al bene comune, ma si tratta di un bene comune molto spesso miope e temporaneo.
 Come scacchisti mediocri, vedono ciò che è bene qui e ora, ma non riescono a valutarne le conseguenze a lungo termine.<br />
 Pensa a quale potrebbe essere, secondo te, la soluzione giusta alle due domande che ti ho fatto e poi pensa al <em>motivo</em> quella soluzione ti appare giusta. 
 Perché permettiamo la soppressione di un feto che non ha fatto del male a nessuno, mentre lasciamo in vita chi ne ha già fatto?
 Vogliamo fare la cosa giusta o vogliamo solo sentirci buoni?<br />
 Il Maestro Canaro si fece molti nemici con la sue idee sull’aborto.
-&lt;!–
+<!--
 @todo: valutare la possibilità di aggiungere i punti interessanti della conversazione con Massimo: 
     a. non sono cattolico, ma ho studiato embriologia e so quando 
        qualcosa smette di essere un agglomerato di cellule e diventa
        altro
     b. quando, un programma diventa un programma?
-    c. l’aborto non può essere un metodo contraccettivo: una volta
-       nella vita, è possibile, ma non tre volte l’anno.</p>
-
-<p>–&gt;
+    c. l'aborto non può essere un metodo contraccettivo: una volta
+       nella vita, è possibile, ma non tre volte l'anno. -->
 Anche alcune persone che inizialmente lo avevano appoggiato lo accusarono di cercare l’appoggio della Chiesa Cattolica, mentre stava solo applicando il precetto del <em>Metta Sutra</em> che predica la felicità non solo per tutti coloro che sono nati, ma anche per coloro che devono nascere:</p>
 
 <blockquote>
-  <p>bhåtà và sambhavesã và sabbe sattà bhavantu sukhitattà</p>
+  <p>bhåtà và sambhavesã và sabbe sattà bhavantu sukhitattà<a class="nota" href="/man/note#metta"></a></p>
 </blockquote>
 
 <p class="metta">
@@ -539,16 +520,13 @@ Anche alcune persone che inizialmente lo avevano appoggiato lo accusarono di cer
 <i>bhavantu</i> possano essere  <br />
 <i>sukhitattà</i> felici nel loro cuore
 </p>
-<!--  
-    @todo: verificare la traduzione di questo testo e del seguente
-    https://web.archive.org/web/20100115063601/http://www.ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces/Mettasuttam.htm -->
 
 <p>Tutto questo a lui non importava: quando gliene parlai, mi disse che preferiva perdere un milione di seguaci che una vita.</p>
 
 <hr />
 
 <p>Rispondere alla domanda sul condannato è più difficile.
-Lo scopo delle tue azioni deve essere, come sempre, il miglioramento: chi sbaglia deve capire che ha fatto un errore e non ripeterlo in altri cicli di esistenza:</p>
+Lo scòpo delle tue azioni deve essere, come sempre, il miglioramento: chi sbaglia deve capire che ha fatto un errore e non ripeterlo in altri cicli di esistenza:</p>
 
 <pre><code>int pentimento( azione ){
 
@@ -566,10 +544,8 @@ Lo scopo delle tue azioni deve essere, come sempre, il miglioramento: chi sbagli
 <p>Se il peccatore è davvero pentito, allora è giusto che sia assolto, perché, come dice Attar:</p>
 
 <blockquote>
-  <p>Cento Mondi di peccato sono dissipati dalla luce di un solo pentimento</p>
+  <p>Cento Mondi di peccato sono dissipati dalla luce di un solo pentimento<a href="/man/note#attar" class="nota"></a>.</p>
 </blockquote>
-
-<!-- Il verbo degli uccelli (Mantiq al-Tayr) - Attar, Farid al-din -->
 
 <p>Ma il pentimento dev’essere reale: il peccatore deve detestare il suo errore e scegliere di morire piuttosto che ripeterlo ancora.<br />
 Tagliare una mano a chi ruba, costringendolo a portare il cibo alla bocca con la stessa mano con cui si pulisce il sedere, è un metodo un po’ drastico, ma efficace per costringere qualcuno a meditare sull’insensatezza delle sue azioni passate — specie in un luogo come il deserto, dove i bidet sono più rari che in Francia.
@@ -583,10 +559,8 @@ Se non è utile al miglioramento, possiamo considerarlo alla stessa stregua del 
 <blockquote>
   <p>Nansen un giorno vide i monaci delle sale Orientali e Occidentali che litigavano per un gatto.
 Egli sollevò il gatto e disse: “Se mi direte una parola di Zen, salverò il gatto; se no, lo ucciderò”.<br />
-Nessuno seppe rispondere e Nansen tagliò il gatto in due.</p>
+Nessuno seppe rispondere e Nansen tagliò il gatto in due<a class="nota" href="/man/note#nansen"></a>.</p>
 </blockquote>
-
-<!-- "Nansen Taglia il Gatto in Due", da: “La Porta senza Porta”, Mumon, ed. it. 1987, Adelphi, Milano. -->
 
 <p>La morte del condannato, però, se mai dovesse rendersi necessaria, non deve essere considerata una vendetta di cui gioire, ma un evento tanto doloroso quanto inevitabile, di cui dolersi come di un’amputazione. 
 Ciascuno, in quel giorno, dovrebbe chiedersi se, con <em>pensieri, parole, opere e omissioni</em>, non abbia contribuito in qualche modo a quella perdita.
@@ -594,8 +568,8 @@ Una Società che esalta l’individualismo, il successo e il denaro non può dir
 
 <hr />
 
-<p>Un insegnante buddhista, saputo che il Maestro Canaro, nei suoi scritti, sosteneva che non c’è modo di sottrarsi al ciclo delle rinascite, si recò da lui e, deciso a dimostrare che si sbagliava, lo sfidò a un <em>Dharma Combat</em> per chiarire le reciproche posizioni.<br />
-Il Maestro Canaro rispose che non sapeva cosa fosse un <em>Dharma Combat</em>; al che, l’insegnante buddhista spiegò che era un confronto dialettico, per dimostrare la propria conoscenza della dottrina.<br />
+<p>Un insegnante buddhista, saputo che il Maestro Canaro, nei suoi scritti, sosteneva che non c’è modo di sottrarsi al ciclo delle rinascite, si recò da lui e, deciso a dimostrare che si sbagliava, lo sfidò a un <em>Dharma Combat</em> per chiarire le reciproche posizioni.
+Il Maestro Canaro rispose che non sapeva cosa fosse un <em>Dharma Combat</em>; al che, l’insegnante buddhista spiegò che era un confronto dialettico, per dimostrare la propria conoscenza della dottrina.
 Il Maestro Canaro annuì, serio, e disse:
 “Va bene, ma prima che cominciamo, dimmi se tu, questo confronto, lo vuoi vincere o perdere, in modo che io possa accontentarti.”
 Sentendo quelle parole, l’insegnante buddhista si rese conto che le sue intenzioni non erano pure: non voleva quella sfida per arrivare alla verità, ma solo per il piacere della vittoria.
