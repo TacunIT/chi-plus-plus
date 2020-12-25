@@ -11,7 +11,7 @@ quote:      "Nel futuro, ognuno sarà famoso per 15 megabyte"
 Quello che stai facendo è inutile.  
 Voglio che tu lo scriva all'inizio del tuo libro, così la gente non
 perderà tempo a leggerlo.
-Tutto ciò che si fa con uno scopo è inutile.
+Tutto ciò che si fa con uno scòpo è inutile.
 In particolare i libri, perché sono stupidi: non si accorgono di quando sbagliano e anche se se ne accorgessero non ci potrebbero fare nulla: seguiterebbero a dire una cosa sbagliata.
 
 Tu pensi di scrivere una nuova Bibbia: anche fosse, sei sicuro di volerlo fare?

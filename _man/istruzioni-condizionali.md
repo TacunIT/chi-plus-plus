@@ -358,7 +358,7 @@ Forse quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, i
     Sapiens. Da animali a dèi: Breve storia dell'umanità. 
     Harari, Yuval Noah 
 -->
-Nessuno di questi concetti così importanti per la nostra Società esiste davvero, ma li utilizziamo lo stesso perché, come il linguaggio *C*, pur essendo solo delle convenzioni, sono utili al loro scopo.  
+Nessuno di questi concetti così importanti per la nostra Società esiste davvero, ma li utilizziamo lo stesso perché, come il linguaggio *C*, pur essendo solo delle convenzioni, sono utili al loro scòpo.  
 Ora che questa colla non c'è più, le scelte dei legislatori non sono più mosse dal perseguimento di un obiettivo comune (corretto o sbagliato che fosse), ma dalla ricerca dell'approvazione di un elettorato composto in buona parte da zombie culturali <!-- 
     Il tasso di analfabetismo funzionale, mentre scrivo, è del 41%.
     I lettori sono sempre di meno: https://www.istat.it/it/archivio/213901
@@ -403,7 +403,7 @@ Tutto questo a lui non importava: quando gliene parlai, mi disse che preferiva p
 ---
 
 Rispondere alla domanda sul condannato è più difficile.
-Lo scopo delle tue azioni deve essere, come sempre, il miglioramento: chi sbaglia deve capire che ha fatto un errore e non ripeterlo in altri cicli di esistenza:
+Lo scòpo delle tue azioni deve essere, come sempre, il miglioramento: chi sbaglia deve capire che ha fatto un errore e non ripeterlo in altri cicli di esistenza:
 
 ```
 int pentimento( azione ){
