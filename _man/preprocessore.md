@@ -8,6 +8,7 @@ quote:      ""
 ---
 
 Le direttive al preprocessore sono la caratteristica principale del C++.  
+
 Negli esempi precedenti abbiamo visto alcune istruzioni particolari, perché hanno un carattere `#` all'inizio e non hanno un carattere `;` alla fine:
 
 ``` 
@@ -226,10 +227,9 @@ Il Maestro Canaro una volta disse (ma non credo fosse farina del suo sacco):
 > Le donne cercano per tutta la vita il loro uomo ideale; nel frattempo, si sposano.
 
 Questo è vero per tutti, uomini e donne.
-Il tuo DNA contiene i geni che hanno fatto nascere l'amore fra i tuoi genitori: occhi verdi, spalle larghe, un bel seno o magari un bel sedere.
+Il tuo DNA contiene i geni che hanno fatto nascere l'amore fra i tuoi genitori: occhi verdi, spalle larghe, un bel seno o magari un bel sedere<a href="/man/note/#dawkins" class="nota"></a>.
 <!-- 
-"Se un maschio ha ereditato dal padre una coda lunga, è probabile che abbia ereditato dalla madre anche i geni che l’hanno indotta a scegliere la coda lunga del padre." - Dawkins, L'Orologiaio Cieco, 1986 
-La utilizzo perché mi fa comodo e perché è bello pensare che nel nostro DNA ci sia anche ciò che ha fatto innamorare i nostri genitori, ma personalmente, non concordo con le conclusioni di Dawkins - almeno, nel modo in cui sono esposte nel libro: la scelta del compagno avviene in base a un'analisi delle sue probabilità di essere un buon padre (nel senso di: "sano") o su fattori genetici? Che esistano dei geni che spingono le femmine a ricercare maschi sani mi sembra una forzatura..
+Utilizzo questa idea perché mi fa comodo e perché è bello pensare che nel nostro DNA ci sia anche ciò che ha fatto innamorare i nostri genitori, ma personalmente, non concordo con le conclusioni di Dawkins - almeno, nel modo in cui sono esposte nel libro: la scelta del compagno avviene in base a un'analisi delle sue probabilità di essere un buon padre (nel senso di: "sano") o su fattori genetici? Che esistano dei geni che spingono le femmine a ricercare maschi sani mi sembra una forzatura..
 -->
 Allo stesso modo, dentro di te potrebbe esserci qualcosa che ti spingerà a cercare e ad amare una persona in particolare, perché quella persona è importante per la tua vita. 
 Quando (se) la incontrerai, avrai l'impressione di conoscerla da sempre e capirai che tutte le volte che ti sei innamorato, ti sei innamorato di lei, anche se non la conoscevi ancora.
