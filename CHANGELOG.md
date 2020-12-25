@@ -1,3 +1,9 @@
+## 0.16.7 (December 25, 2020)
+  - Completata revisione del testo del manuale
+  - Modificati stili delle note e del codice
+  - Eliminate gli include per la dottrina
+  - Spostato il capitolo sulla memoria dopo quello sul preprocessore
+
 ## 0.16.6 (December 25, 2020)
   - Completata prima stesura del capitolo
   - Merge branch 'master' into capitolo/istruzioni-iterative
