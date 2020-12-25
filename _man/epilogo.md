@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Epilogo
 permalink:  /man/epilogo
-quote:      Amiamo ciò che ci ucciderà (se tutto va bene).
+quote:      "And now, the return is near<br />And so I face the final curtain".
 ---
 
 <!--

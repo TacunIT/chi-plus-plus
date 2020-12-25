@@ -7,7 +7,6 @@ permalink:  /man/commenti
 quote:      "Il Compilatore e il Linker non usano carità, tengono i diecimila oggetti per cani di paglia"
 ---
 
- 
 I commenti sono la cosa più importante, quando si programma.
 
 Un commento è un breve brano di testo che descrive in linguaggio comune il funzionamento o lo scòpo del codice a cui è riferito:
