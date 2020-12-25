@@ -35,7 +35,6 @@ permalink:  /man/note/
             <a href="Javascript:history.back()" name="agostino">&#8617;</a>
         </li>
         <li>
-            E. Pound, <i>Song</i> 
             <blockquote>
             Love thou thy dream<br />
             all base love scorning,<br />
@@ -44,6 +43,7 @@ permalink:  /man/note/
             that dreams alone can truly be,<br />
             for ‘tis in dream I come to thee.
             </blockquote> 
+            E. Pound, <i>Song</i> 
             <a href="Javascript:history.back()" name="pound">&#8617;</a>
         </li>
     </ol>
@@ -61,6 +61,15 @@ permalink:  /man/note/
         <li>
             Scarabelli, Piera; Vinti, Massimo - <i>op.cit.</i>
             <a href="Javascript:history.back()" name="cicli">&#8617;</a>
+        </li>
+    </ol>
+
+    <h3>Il preprocessore</h3>
+    <ol>
+        <li>
+            <i>Se un maschio ha ereditato dal padre una coda lunga, è probabile che abbia ereditato dalla madre anche i geni che l’hanno indotta a scegliere la coda lunga del padre</i> 
+            R. Dawkins, <i>L'Orologiaio Cieco</i>, 1986 
+            <a href="Javascript:history.back()" name="dawkins">&#8617;</a>
         </li>
     </ol>
 
