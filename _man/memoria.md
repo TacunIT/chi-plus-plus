@@ -1,9 +1,9 @@
 ---
-status:     bozza
+status:     redazione
 layout:     manuale
 class:      capitolo
-title:      Memoria dinamica
-permalink:  /man/memoria-dinamica
+title:      Gestione della memoria
+permalink:  /man/memoria
 quote:      "Amiamo ciò che ci ucciderà (se tutto va bene) "
 ---
 

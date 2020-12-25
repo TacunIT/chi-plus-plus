@@ -34,7 +34,7 @@ veloci della corrente e di schivare gli ostacoli che, di volta in volta,
 si presentano sul nostro cammino.
 
 Similmente, scrivere del buon codice significa scrivere solo il codice
-necessario a raggiungere lo scopo che ci si è prefissi. Aggiungere una
+necessario a raggiungere lo scòpo che ci si è prefissi. Aggiungere una
 sola virgola in più è sbagliato, perché rende più difficile il debug e
 più lento il programma.
 

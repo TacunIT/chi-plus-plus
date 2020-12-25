@@ -10,13 +10,11 @@ quote:      "In principio era il logo"
 Nacqui da famiglia ricca, ma troppo tardi.  
 Secondogenito, vidi la florida impresa paterna andare in dote  &mdash; per diritto di nascita, ma anche per naturale inclinazione &mdash; ai miei monozigotici fratelli maggiori e, com'è consuetudine per i figli cadetti, fui avviato alla vita monastica.
 Entrai in seminario all'età di nove anni e presi i voti il giorno del mio sedicesimo compleanno.
-Conobbi il Maestro sei anni dopo.
-
+Conobbi il Maestro sei anni dopo.  
 Fui mandato da lui perché un vecchio programma, dopo quasi un decennio di attività ininterrotta, aveva avuto dei problemi e non c'era nessuno nel monastero che sapesse come porvi rimedio.
 Pur avendo trascorso in quello stesso edificio due terzi della mia vita, non avevo mai incontrato il Maestro, prima di allora.
 Sapevo poco di lui, principalmente che non era bene saperne molto e non l'avevo mai visto né nel refettorio, né in occasione di celebrazioni o emergenze.
-Era, per tutti noi giovani, una sorta di figura mitologica, maligna o benigna a seconda dei racconti che su di lei si ascoltavano.
-
+Era, per tutti noi giovani, una sorta di figura mitologica, maligna o benigna a seconda dei racconti che su di lei si ascoltavano.  
 Bussai alla sua porta con cautela, quasi mi aspettassi terribili rappresaglie per quell'indebita intromissione nella sua vita e con altrettanta cautela accettai il suo invito a entrare.
 L'arredamento delle nostre stanze era semplice ed essenziale, ma in confronto a quello della cella del Maestro, appariva sfarzoso.
 Non c'erano finestre alle pareti e le uniche due fonti di luce erano una piccola lampada e lo schermo di quello che sembrava un vecchio computer risalente alla fine del XX secolo.
@@ -54,6 +52,5 @@ Se voleva insegnarmi il C++ doveva iniziare quel giorno stesso.
 Il Maestro mi fissò e, sorridendo, spense il computer.  
 «No, per oggi basta. Vieni domani per la seconda lezione.»
 
-Negli ultimi mesi la salute del Maestro è peggiorata e così gli ho chiesto il permesso di trascrivere i suoi insegnamenti per poterli trasmettere a mia volta ad altri discepoli.
-
+Negli ultimi mesi la salute del Maestro è peggiorata e così gli ho chiesto il permesso di trascrivere i suoi insegnamenti per poterli trasmettere a mia volta ad altri discepoli.  
 Con mia grande sorpresa, ha accettato.
