@@ -48,14 +48,6 @@ permalink:  /man/note/
         </li>
     </ol>
 
-    <h3>Istruzioni condizionali</h3>
-    <ol>
-        <li>
-            F. Attar <i>Il verbo degli uccelli (Mantiq al-Tayr)</i>
-            <a href="Javascript:history.back()" name="">&#8617;</a>
-        </li>
-    </ol>
-
     <h3>Struttura dei programmi C++</h3>
     <ol>
         <li>
@@ -73,6 +65,47 @@ permalink:  /man/note/
         </li>
     </ol>
 
+    <h3>Istruzioni condizionali</h3>
+    <ol>
+        <li>
+            Saʿdi di Shirāz, poeta persiano vissuto fra il 1200 e il 1291. 
+            La poesia citata è stata posta all'ingresso del Palazzo di Vetro dell'ONU.
+            <a href="Javascript:history.back()" name="saadi">&#8617;</a>
+        </li>
+        <li>
+            F. Attar <i>Il verbo degli uccelli (Mantiq al-Tayr)</i>
+            <a href="Javascript:history.back()" name="mantiq">&#8617;</a>
+        </li>
+        <li>
+            @todo: trovare riferimento bibliografico o quanto meno spiegare di cosa si stia parlando.
+            <a href="Javascript:history.back()" name="bokuju">&#8617;</a>
+        </li>
+        <li>
+            <i>Nell’universo non esistono dèi , non esistono nazioni né denaro né diritti umani né leggi , e non esiste alcuna giustizia che non sia nell’immaginazione comune degli esseri umani</i><br />  
+            Y .N. Harari, <i>Sapiens. Da animali a dèi: Breve storia dell'umanità. </i>  
+            <a href="Javascript:history.back()" name="sapiens">&#8617;</a>
+        </li>
+        <li>
+            Il tasso di analfabetismo funzionale, mentre scrivo, è del 41%.
+            I lettori sono sempre di meno: 
+            <a href="https://www.istat.it/it/archivio/213901" 
+            target="note">www.istat.it/it/archivio/213901</a>
+            <a href="Javascript:history.back()" name="istat">&#8617;</a>
+        </li>
+        <li>
+            <a href="https://web.archive.org/web/20100115063601/http://www.ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces/Mettasuttam.htm" target="note">www.ancient-buddhist-texts.net</a><br />
+            @todo: verificare la traduzione del testo.
+            <a href="Javascript:history.back()" name="metta">&#8617;</a>
+        </li>
+        <li>
+            F. Attar, <i>op.cit.</i>
+            <a href="Javascript:history.back()" name="attar">&#8617;</a>
+        </li>
+        <li>
+            Mumon, <i>Nansen Taglia il Gatto in Due</i>, da: <i>La Porta senza Porta</i>, ed. it. 1987, Adelphi, Milano. 
+            <a href="Javascript:history.back()" name="nansen">&#8617;</a>
+        </li>
+    </ol>    
 
     <h3>Istruzioni iterative</h3>
     <ol>
