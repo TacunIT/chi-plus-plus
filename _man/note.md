@@ -28,6 +28,26 @@ permalink:  /man/note/
         </li>
     </ol>
 
+    <h3>Tipi di dato</h3>
+    <ol>
+        <li>
+            Agostino, <i>Confessioni</i> VII, 11 
+            <a href="Javascript:history.back()" name="agostino">&#8617;</a>
+        </li>
+        <li>
+            E. Pound, <i>Song</i> 
+            <blockquote>
+            Love thou thy dream<br />
+            all base love scorning,<br />
+            love thou the wind<br />
+            and here take warning<br />
+            that dreams alone can truly be,<br />
+            for ‘tis in dream I come to thee.
+            </blockquote> 
+            <a href="Javascript:history.back()" name="pound">&#8617;</a>
+        </li>
+    </ol>
+
     <h3>Istruzioni condizionali</h3>
     <ol>
         <li>
