@@ -8,11 +8,9 @@ quote:      "Il Compilatore e il Linker non usano carità, tengono i diecimila o
 ---
 
  
-
 I commenti sono la cosa più importante, quando si programma.
 
-Un commento è un breve brano di testo che descrive in linguaggio comune
-il funzionamento o lo scòpo del codice a cui è riferito:
+Un commento è un breve brano di testo che descrive in linguaggio comune il funzionamento o lo scòpo del codice a cui è riferito:
 
 ```
 /**
@@ -27,28 +25,16 @@ long raddoppia(long stipendio)
 }
 ```
 
-Pur essendo all'interno del codice, il commento viene ignorato in fase
-di compilazione, perché è un'aggiunta utile solo al programmatore. 
-Al processore non interessa sapere a cosa serve il codice che sta eseguendo: lo esegue e basta, senza farsi distrarre da implicazioni funzionali &mdash; o, peggio, etiche &mdash; che allungherebbero i tempi di risposta.
-
-È importante commentare bene il proprio codice.  
-Il buon codice produce programmi che durano nel tempo e, col tempo, si
-tende a dimenticare.
-Anche se si ha la fortuna di possedere una buona memoria, bisogna
-considerare la possibilità che il proprio codice sia utilizzato da un
-collega. Non solo non è educato costringerlo ad analizzare ogni singola
-riga di codice per capirne il funzionamento, ma è anche improduttivo.
-
+Pur essendo all'interno del codice, il commento viene ignorato in fase di compilazione, perché è un'aggiunta utile solo al programmatore. 
+Al processore non interessa sapere a cosa serve il codice che sta eseguendo: lo esegue e basta, senza farsi distrarre da implicazioni funzionali &mdash; o, peggio, etiche &mdash; che allungherebbero i tempi di risposta.  
+È importante commentare bene il proprio codice.
+Il buon codice produce programmi che durano nel tempo e, col tempo, si tende a dimenticare.
+Anche se si ha la fortuna di possedere una buona memoria, bisogna considerare la possibilità che il proprio codice sia utilizzato da un collega. 
+Non solo non è educato costringerlo ad analizzare ogni singola riga di codice per capirne il funzionamento, ma è anche improduttivo.  
 Così come la penuria, anche l'eccesso di commenti è un errore da evitare.
-Il programmatore inesperto non commenta il proprio codice perché pensa
-che sia una perdita di tempo. È davvero un atteggiamento poco
-responsabile.
-Il neofita zelante riempie il proprio codice di commenti, o perché
-ritiene che chi lo andrà a leggere sarà meno esperto di lui o perché
-vuole in questo modo esaltare le sue poche conoscenze.
-Il programmatore esperto commenta solo ciò che non è di per sé evidente
-e indica i possibili punti deboli del suo programma in modo che chi si
-trova a riutilizzarlo o a correggerlo vi presti la dovuta attenzione.
+Il programmatore inesperto non commenta il proprio codice perché pensa che sia una perdita di tempo. È davvero un atteggiamento poco responsabile.
+Il neofita zelante riempie il proprio codice di commenti, o perché ritiene che chi lo andrà a leggere sarà meno esperto di lui o perché vuole in questo modo esaltare le sue poche conoscenze.
+Il programmatore esperto commenta solo ciò che non è di per sé evidente e indica i possibili punti deboli del suo programma in modo che chi si trova a riutilizzarlo o a correggerlo vi presti la dovuta attenzione.
 Il programmatore perfetto non commenta il suo codice, perché il suo codice è auto-esplicativo:
 
 ```
@@ -61,8 +47,7 @@ Importo raddoppiaStipendio(Importo stipendioCorrente)
 ```
 
 È lo stesso brano di codice che abbiamo visto prima, ma stavolta i commenti non servono, perché gli intenti della funzione sono espressi direttamente nel codice, rendendo espliciti il nome della funzione, del suo parametro e del suo valore di ritorno.
-L'istruzione `typedef`, che hai visto anche negli esempii precedenti, seve a 
-definire dei nuovi tipi di dato, come alias di tipi di dato esistenti.
+L'istruzione `typedef`, che hai visto anche negli esempii precedenti, seve a  definire dei nuovi tipi di dato, come alias di tipi di dato esistenti.
 L'istruzione:
 
 ```
@@ -75,8 +60,7 @@ definisce il tipo di dato `Data` come alias del tipo di dato standard `time_t`,
 typedef Importo unsigned long;
 ```
 
-definisce il tipo di dato `Importo` come alias del tipo di dato standard `unsigned long`.
-
+definisce il tipo di dato `Importo` come alias del tipo di dato standard `unsigned long`.  
 La definizione dei proprii tipi di dato non solo rende il codice più leggibile, ma lo rende anche più facile da modificare.
 La funzione originale utilizza dei valori di tipo `unsigned long`, ovvero delle sequenze di 4 byte che permettono di memorizzare numeri interi da 0 a 4.294.967.295 (2<sup>32</sup>).
 Questo tipo di dato può essere utilizzato per uno stipendio che non abbia cifre decimali, come quello del Maestro Canaro nel secolo scorso, ma se dovessimo raddoppiare uno stipendio con delle cifre decimali, dovremmo utilizzare dei tipi di dato come i `float` o i `double` e, senza una `typedef`, saremmo costretti a modificare sia il valore di ritorno che il tipo di parametro della funzione:
@@ -118,8 +102,6 @@ esagerare.
 }
 ```
 
----
-
 Il C++ prevede due modi distinti per commentare il codice: due caratteri
 `//` affiancati o la sequenza `/*  */`, che il Linguaggio ha mutuato dal
 suo predecessore, il C.
@@ -133,7 +115,7 @@ le due sequenze di caratteri.
  * che si estendono su più di una riga
  */
 for (int i = 0; i < 10; i++) {
-    cout << i << endl; // commenti di una riga
+    cout << i << endl; // questa, per i commenti su una riga
 }
 
 ```
@@ -145,11 +127,48 @@ vera essenza del Linguaggio, è solo una questione di ritmo.
 
 <hr id="dottrina">
 
-{% include_relative canaro/codice-commentato.md %}
+Una volta, il maestro Canaro mostrò ai suoi allievi un brano di codice e gli chiese di spiegare che cosa facesse:
+
+```
+/**********************************************************
+ 
+#include <iostream.h>
+
+#define ERR_NOFILE 1
+
+int errore( int errore );
+void leggi_file( char * nomefile );
+void crea_matrice(void);
+int inizializza(void);
+void imposta_probabilita(void);
+void attrattore(void);
+int chiudi(void);
+
+int main(int argc, char * argv[])
+{
+    int esito = 0 ;
+    if(argc < 2) {
+        esito = errore(ERR_NOFILE);
+    } else {
+        leggi_file(argv[1]);
+        crea_matrice();
+        if(inizializza()) {
+            const char * valore = imposta_probabilita();
+            attrattore(valore);
+            esito = chiudi();
+        }
+    }
+    return esito ;
+}
+
+***********************************************************/
+```
+
+Gli allievi studiarono il codice e diedero le loro risposte, ma sbagliarono tutti, perché tutte le istruzioni erano comprese fra un `/*` e un `*/` e non venivano compilate.
 
 
 <!--
-@todo - introdurre il concetto di "post-it"
+@todo - introdurre qui il concetto di "post-it"?
 
 I commenti sono un po' come la letteratura: se si scrive troppo poco è
 male; se si scrive troppo, dilungandosi in descrizioni inutili, è
