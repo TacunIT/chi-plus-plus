@@ -334,7 +334,7 @@ Il puntatore `p1` è un `unsigned char`, quindi si sposta di otto bit; il puntat
 Se mi fossi distratto e avessi copiato il codice del primo ciclo di lettura così com'è, senza dividere per due il numero di cicli, il puntatore avrebbe continuato a “camminare” in avanti nella memoria, oltre i confini dell'array e questo, come vedremo in seguito, non è assolutamente bene.
 
 ---
-
+<a id="casting"></a>
 Dato che ciascun tipo di dato non è altro che un modo per vedere la memoria, è possibile fare delle conversioni da un tipo all'altro.
 Le conversioni possono essere *implicite* o *esplicite*.
 Le conversioni *implicite* sono quelle che avvengono quando un valore è copiato fra variabili di tipo compatibile:

@@ -87,17 +87,18 @@ Se lo passiamo come parametro all'operatore `<<`, dato che si tratta di un punta
 cout << stringa << endl;
 ```
 
-Per conoscere il suo valore effettivo, dobbiamo convertirlo in un puntatore `void` con un'operazione di *casting*: 
+Per conoscere il suo valore effettivo, dobbiamo convertirlo in un puntatore `void` con un'operazione di <a href="/man/tipi-di-dato#casting">casting</a>: 
 
 ```
 cout << (void*)stringa << endl;
 ```
 
-Il lato negativo dell'allocazione di memoria dinamica è che, mentre un buffer dinamico “vive” quanto il blocco di istruzioni in cui è stato creato, la memoria allocata dinamicamente rimane occupata fino a che non viene liberata con un'istruzione `delete`:
+Il lato negativo dell'allocazione dinamica della memoria è che, mentre un buffer dinamico “vive” quanto il blocco di istruzioni in cui è stato creato, la memoria allocata dinamicamente rimane occupata fino a che non viene liberata con un'istruzione `delete`:
 
 ```
 delete[] stringa;
 ```
+
 Il prossimo esempio dovrebbe aiutarti a capire come funziona la visibilità delle variabili nel C++:
 
 ```
