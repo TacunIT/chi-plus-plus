@@ -24,17 +24,21 @@ int main(int argc, char** argv)
      * carattere terminatore.
      */   
     size_t lunghezza = len1 + len2 + 2; 
-    char* stringa = new char(lunghezza);
+    char* stringa = new char[lunghezza];
 
     /** Copia le stringhe nell'area di memoria */
     sprintf(stringa, "%s %s", argv[1], argv[2]);
 
-    /** Mostra la dimensione dell'area e la stringa */
-    cout << lunghezza << " - " << stringa << endl;
+    /**
+     * Mostra l'indirizzo dell'area di memoria,
+     * la sua dimensione e il suo contenuto
+     */
+    cout << (void*)stringa << endl;
+    cout << lunghezza      << endl; 
+    cout << stringa        << endl;
     
     /** Libera la memoria allocata */
-    delete stringa;
+    delete[] stringa;
     
     return 0;
 }
-       
