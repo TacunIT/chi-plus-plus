@@ -98,8 +98,31 @@ Il lato negativo dell'allocazione di memoria dinamica è che, mentre un buffer d
 ```
 delete[] stringa;
 ```
+Il prossimo esempio dovrebbe aiutarti a capire come funziona la visibilità delle variabili nel C++:
 
+```
+{% include_relative src/memoria-visibilita.cpp %}
+```
 
+Se compili ed esegui questo codice, otterrai:
+
+```
+% g++ src/cpp/memoria-visibilita.cpp -o src/out/esempio
+% src/out/esempio                                      
+blocco: Stringa interna
+funz:   Stringa esterna
+funz:   Stringa globale
+main:   Stringa globale
+```
+
+Come vedi, la stringa definita globalmente è visibile sia nella funzione `main` che nella funzione `funz`; la variabile definita all'inizio della funzione `funz` è visibile all'interno della funzione stessa, ma non nel blocco di codice, dove è visibile la nuova variabile `stringa`.
+L' “aspettativa di vita” di ciascuna variabile dipende dal punto in cui è stata definita: la prima variabile “vivrà” per tutta la durata del programma; la seconda variabile viene creata quando si richiama la funzione `funz` e viene eliminata quando la funzone termina; la variabile all'interno del blocco di codice esiste solo per due istruzioni, poi il blocco di codice finisce e viene eliminata.  
+Al contrario, quando un'area di memoria è allocata dinamicamente, rimane occupata fino a che il programma (o, più precisamente: il programmatore) non la rilascia con un'istruzione `delete`.
+Se il programma fa una sola chiamata, come nel nostro esempio, il fatto che una cinquantina di byte non siano disponibili per qualche minuto non crea grossi problemi (lo so per certo perché, nella prima versione dell'esempio, avevo dimenticato di aggiungere l'istruzione `delete` alla fine e il computer ha continuato a funzionare lo stesso), se però quello stesso programma continuasse a girare sullo stesso computer per lungo tempo, a poco a poco esaurirebbe tutta la memoria disponibile, causandone il blocco.  
+Per questo motivo, il linguaggio con la "J" ha un sistema di *garbage collection* che, come le squadre di pulizia dei Servizi Segreti, provvede a eliminare le prove dell'incompetenza dei suoi programmatori prima che questa arrechi danno ai sistemi. 
+Qualcuno ti dirà che non è vero, che i programmatori "J" sono dei professionisti competenti, ma ragiona: se esiste un sistema di raccolta dei rifiuti, ci dovrà pur essere qualcuno che li produce, no?
+
+---
 
 <!--
 
