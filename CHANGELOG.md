@@ -1,3 +1,6 @@
+## 0.17.2 (December 26, 2020)
+  - Rimossa la sezione delle FAQ
+
 ## 0.17.1 (December 26, 2020)
   - Aggiunto paragrafo su casting a tipi di dato
 
