@@ -1,3 +1,8 @@
+## 0.17.0 (December 26, 2020)
+  - Iniziata redazione del capitolo sulla memoria
+  - Riviste la citazioni all'inizio dei capitoli del manuale
+  - Eliminata la sotto-directory di include canaro
+
 ## 0.16.7 (December 25, 2020)
   - Completata revisione del testo del manuale
   - Modificati stili delle note e del codice
