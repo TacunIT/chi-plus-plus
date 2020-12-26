@@ -1,8 +1,10 @@
 ---
-layout:     pagina
-class:      note
+status:     pubblicato
+layout:     manuale
+class:      capitolo
 title:      Note
-permalink:  /man/note/
+permalink:  /man/note
+quote:      
 ---
 
 <section class="note">
@@ -14,7 +16,6 @@ permalink:  /man/note/
             <i>Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja</i>.
             Edizione elettronica - Mimesis Edizioni.
             <a href="Javascript:history.back()" name="azione">&#8617;</a>
-        </li>
         </li>
     </ol>
 
@@ -35,14 +36,14 @@ permalink:  /man/note/
             <a href="Javascript:history.back()" name="agostino">&#8617;</a>
         </li>
         <li>
-            <blockquote>
+            <i>
             Love thou thy dream<br />
             all base love scorning,<br />
             love thou the wind<br />
             and here take warning<br />
             that dreams alone can truly be,<br />
             for ‘tis in dream I come to thee.
-            </blockquote> 
+            </i><br /> 
             E. Pound, <i>Song</i> 
             <a href="Javascript:history.back()" name="pound">&#8617;</a>
         </li>
