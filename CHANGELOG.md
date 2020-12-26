@@ -1,3 +1,6 @@
+## 0.17.1 (December 26, 2020)
+  - Aggiunto paragrafo su casting a tipi di dato
+
 ## 0.17.0 (December 26, 2020)
   - Iniziata redazione del capitolo sulla memoria
   - Riviste la citazioni all'inizio dei capitoli del manuale
