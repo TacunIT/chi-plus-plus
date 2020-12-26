@@ -45,3 +45,12 @@ dell'altra non sarebbe rettilinea, ma seguirebbe l'andamento del foglio,
 o dei pixel.
 
 Da lontano potrà anche sembrare rettilinea, ma a mano a mano che
+
+<!--
+parlare degli operatori di cast 
+dynamic_cast <new_type> (expression)
+reinterpret_cast <new_type> (expression)
+static_cast <new_type> (expression)
+const_cast <new_type> (expression)
+
+-->

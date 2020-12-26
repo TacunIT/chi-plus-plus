@@ -189,7 +189,7 @@ unsigned char * ptr = valori;
 Molti pensano ai puntatori come a delle bandierine che ti permettono di identificare un punto specifico della memoria, ma questo è vero solo per i puntatori `void`, che non hanno un tipo di dato associato. 
 Gli altri puntatori, più che una bandierina, sono una sorta di maschera che può scorrere sulla sequenza di bit, isolando ed evidenziando i singoli valori che la compongono:
 
-<pre><code style="color:#999;line-height:1.3">01000011 00100111 01101000 01100001 01101110 01101110 01101111 
+<pre><code style="color:#999;line-height:1.5">01000011 00100111 01101000 01100001 01101110 01101110 01101111 
 00100000 01100110<span style="padding:2px;border:solid 1px;color:#000;margin:0 3px;">01101111</span>01110010 01110011 01100101 00100000 
 01110100 01110101 01110100 01110100 01100101 00100000 01100101 
 00100000 01100100 01110101
@@ -332,6 +332,35 @@ Le istruzioni: `p1++` e `p2++` incrementano di un'unità il puntatore, ovvero lo
 Il puntatore `p1` è un `unsigned char`, quindi si sposta di otto bit; il puntatore `p12` è uno `short int`, quindi si sposta di sedici bit.
 È questo il motivo per cui il secondo ciclo di lettura dura la metà del primo: perché la quantità di bit letta per ogni iterazione è doppia. 
 Se mi fossi distratto e avessi copiato il codice del primo ciclo di lettura così com'è, senza dividere per due il numero di cicli, il puntatore avrebbe continuato a “camminare” in avanti nella memoria, oltre i confini dell'array e questo, come vedremo in seguito, non è assolutamente bene.
+
+---
+
+Dato che ciascun tipo di dato non è altro che un modo per vedere la memoria, è possibile fare delle conversioni da un tipo all'altro.
+Le conversioni possono essere *implicite* o *esplicite*.
+Le conversioni *implicite* sono quelle che avvengono quando un valore è copiato fra variabili di tipo compatibile:
+
+```
+int  i = 0;
+char c = i;
+```
+
+In questo caso, assegnamo a una variabile di tipo `char` il valore di una variabile di tipo `int` e il compilatore ce lo lascia fare perché il valore dell'intero può essere salvato senza problemi anche nel singolo byte del `char`.
+Se volessimo rendere esplicita questa conversione, dovremmo utilizzare la sintassi:
+ 
+```
+int  i = 0;
+char c = (char) i;
+char c = char (i);
+```
+Le due forme sono equivalenti. 
+La prima è quella che il C++ ha ereditato dal C; la seconda è chiamata *notazione funzionale*. 
+Nell'esempio precedente, la variabile `valori` è un puntatore a `unsigned char`, ma abbiamo detto al sistema di considerarla un puntatore a `short int` con l'istruzione:
+
+```
+duebyte * p2 = (duebyte*)valori;
+```
+
+Il C++ ha anche altri modi per convertire un tipo di dato in un altro, ma siccome si applicano principalmente alle classi, li vedremo in seguito.
 
 <hr id="dottrina">
 
