@@ -270,6 +270,7 @@ NAV A {
 
 HEADER NAV.menu-top A {
     padding: 0.5rem 1.2rem;
+    width: 8rem;
 }
 FOOTER NAV {
     border: none;    
@@ -369,56 +370,7 @@ BODY.pagina H1 {
 BODY.pagina.index H1 {
     display: none;
 }
-/*
-/**
- *  Stili per le FAQ
- 
-BODY.faq DIV.faq {
-    padding: 1rem 0;
-}
 
-BODY.faq DIV.faq A {
-    text-decoration: none;
-}
-
-BODY.faq DIV.faq A {
-    text-decoration: none;
-}
-*/
-/**
- *
- *  Stili per la pagina index 
- *
- */
- /*
-BODY.index HEADER DIV.box.intestazione {
-    text-align: center;
-    padding: 0;
-}
- 
-BODY.index HEADER DIV.box.titoli {
-    padding: 1rem 0;
-}
-
-BODY.index HEADER titolo-1, 
-BODY.manuale.copertina HEADER titolo-1 {
-    padding: 1rem 0;
-    text-align: center;
-    display: block;
-}
-
-BODY.index HEADER titolo-2 {
-    margin-bottom: 0.5rem;
-    line-height: unset;
-    float: none;
-}
-
-BODY.index HEADER img.logo {
-    width: 180px;
-    height: auto;
-    float: none;
-}
-*/
 BODY.index MAIN SECTION.citazione.pagina {
     padding-top: 3rem;
 }
