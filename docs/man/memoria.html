@@ -4,14 +4,14 @@
 </title>
     <meta charset="utf-8" />
     <meta name="viewport"     content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <link rel="canonical"            href="http://localhost:4000" />
-    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/chi-plus-plus.png" />
+    <link rel="canonical"            href="https://chiplusplus.org" />
+    <meta     name="thumbnail"       content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
     <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
     <meta property="og:title"        content="Gestione della memoria" />
     <meta property="og:type"         content="website" />    
     <meta property="og:description"  content="Chi++ - Proposta per una metafisica open-source" />
-    <meta property="og:image"        content="http://localhost:4000/assets/img/chi-plus-plus.png" />
+    <meta property="og:image"        content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
     <meta property="og:image:height" content="260" />
     <link rel=icon href=/assets/img/favicon.ico type=image/x-icon>
     <link href="/assets/fa/css/all.css" rel="stylesheet"> 
@@ -220,6 +220,93 @@ Se lo passiamo come parametro all’operatore <code>&lt;&lt;</code>, dato che si
 
 <pre><code>delete[] stringa;
 </code></pre>
+<p>Il prossimo esempio dovrebbe aiutarti a capire come funziona la visibilità delle variabili nel C++:</p>
+
+<pre><code>/** 
+ * @file memoria-visibilita.cpp
+ * Visibilità delle variabili.
+ */
+ 
+#include &lt;iostream&gt;
+
+using namespace std;
+
+/** 
+ * Le variabili definite all'esterno delle funzioni
+ * si chiamano "variabili globali" e sono visibili
+ * in tutto il codice. 
+ */
+const char* stringa = "Stringa globale";
+
+void funz() 
+{    
+    /** 
+     * Le variabili definite all'interno di una 
+     * funzione sono visibili solo all'interno
+     * della funzione stessa. 
+     */
+    const char* stringa = "Stringa esterna";
+    
+    /** Blocco di codice generico */
+    {
+        /** 
+         * Le variabili definite all'interno di un 
+         * blocco di codice sono visibili solo 
+         * all'interno del blocco di codice. 
+         */
+        const char* stringa = "Stringa interna";
+        
+        /** Mostra la variabile interna */
+        cout &lt;&lt; "blocco: " &lt;&lt; stringa &lt;&lt; endl;
+    }
+
+    /** 
+     * Qui è visibile la variabile esterna. 
+     */
+    cout &lt;&lt; "funz:   " &lt;&lt; stringa &lt;&lt; endl;
+
+    /** 
+     * L'operatore :: permette di accedere alla 
+     * variabile globale. 
+     */
+    cout &lt;&lt; "funz:   " &lt;&lt; ::stringa &lt;&lt; endl;
+    
+}
+
+int main(int argc, char** argv)
+{    
+    /** Richiama la funzione esterna */
+    funz();
+
+    /** 
+     * La funzione main non definisce una variabile
+     * "stringa", quindi mostra la variabile globale. 
+     */
+    cout &lt;&lt; "main:   " &lt;&lt; stringa &lt;&lt; endl;
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili ed esegui questo codice, otterrai:</p>
+
+<pre><code>% g++ src/cpp/memoria-visibilita.cpp -o src/out/esempio
+% src/out/esempio                                      
+blocco: Stringa interna
+funz:   Stringa esterna
+funz:   Stringa globale
+main:   Stringa globale
+</code></pre>
+
+<p>Come vedi, la stringa definita globalmente è visibile sia nella funzione <code>main</code> che nella funzione <code>funz</code>; la variabile definita all’inizio della funzione <code>funz</code> è visibile all’interno della funzione stessa, ma non nel blocco di codice, dove è visibile la nuova variabile <code>stringa</code>.
+L’ “aspettativa di vita” di ciascuna variabile dipende dal punto in cui è stata definita: la prima variabile “vivrà” per tutta la durata del programma; la seconda variabile viene creata quando si richiama la funzione <code>funz</code> e viene eliminata quando la funzone termina; la variabile all’interno del blocco di codice esiste solo per due istruzioni, poi il blocco di codice finisce e viene eliminata.<br />
+Al contrario, quando un’area di memoria è allocata dinamicamente, rimane occupata fino a che il programma (o, più precisamente: il programmatore) non la rilascia con un’istruzione <code>delete</code>.
+Se il programma fa una sola chiamata, come nel nostro esempio, il fatto che una cinquantina di byte non siano disponibili per qualche minuto non crea grossi problemi (lo so per certo perché, nella prima versione dell’esempio, avevo dimenticato di aggiungere l’istruzione <code>delete</code> alla fine e il computer ha continuato a funzionare lo stesso), se però quello stesso programma continuasse a girare sullo stesso computer per lungo tempo, a poco a poco esaurirebbe tutta la memoria disponibile, causandone il blocco.<br />
+Per questo motivo, il linguaggio con la “J” ha un sistema di <em>garbage collection</em> che, come le squadre di pulizia dei Servizi Segreti, provvede a eliminare le prove dell’incompetenza dei suoi programmatori prima che questa arrechi danno ai sistemi. 
+Qualcuno ti dirà che non è vero, che i programmatori “J” sono dei professionisti competenti, ma ragiona: se esiste un sistema di raccolta dei rifiuti, ci dovrà pur essere qualcuno che li produce, no?</p>
+
+<hr />
 
 <!--
 
