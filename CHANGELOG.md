@@ -1,3 +1,7 @@
+## 0.17.3 (December 26, 2020)
+  - Corretta struttura delle note del Manuale
+  - Rivista impostazione menu Manuale
+
 ## 0.17.2 (December 26, 2020)
   - Rimossa la sezione delle FAQ
 
