@@ -211,15 +211,16 @@ Se lo passiamo come parametro all’operatore <code>&lt;&lt;</code>, dato che si
 <pre><code>cout &lt;&lt; stringa &lt;&lt; endl;
 </code></pre>
 
-<p>Per conoscere il suo valore effettivo, dobbiamo convertirlo in un puntatore <code>void</code> con un’operazione di <em>casting</em>:</p>
+<p>Per conoscere il suo valore effettivo, dobbiamo convertirlo in un puntatore <code>void</code> con un’operazione di <a href="/man/tipi-di-dato#casting">casting</a>:</p>
 
 <pre><code>cout &lt;&lt; (void*)stringa &lt;&lt; endl;
 </code></pre>
 
-<p>Il lato negativo dell’allocazione di memoria dinamica è che, mentre un buffer dinamico “vive” quanto il blocco di istruzioni in cui è stato creato, la memoria allocata dinamicamente rimane occupata fino a che non viene liberata con un’istruzione <code>delete</code>:</p>
+<p>Il lato negativo dell’allocazione dinamica della memoria è che, mentre un buffer dinamico “vive” quanto il blocco di istruzioni in cui è stato creato, la memoria allocata dinamicamente rimane occupata fino a che non viene liberata con un’istruzione <code>delete</code>:</p>
 
 <pre><code>delete[] stringa;
 </code></pre>
+
 <p>Il prossimo esempio dovrebbe aiutarti a capire come funziona la visibilità delle variabili nel C++:</p>
 
 <pre><code>/** 
