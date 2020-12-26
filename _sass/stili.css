@@ -118,7 +118,7 @@ CODE, PRE {
     text-align: left;
     font-size: 11pt;
     font-family: $codeFont;
-    line-height: 1;
+    line-height: 1.25;
 }
 /* utilizzato per istruzioni iterative */
 LI CODE {
