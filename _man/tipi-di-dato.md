@@ -332,12 +332,13 @@ Le istruzioni: `p1++` e `p2++` incrementano di un'unità il puntatore, ovvero lo
 Il puntatore `p1` è un `unsigned char`, quindi si sposta di otto bit; il puntatore `p12` è uno `short int`, quindi si sposta di sedici bit.
 È questo il motivo per cui il secondo ciclo di lettura dura la metà del primo: perché la quantità di bit letta per ogni iterazione è doppia. 
 Se mi fossi distratto e avessi copiato il codice del primo ciclo di lettura così com'è, senza dividere per due il numero di cicli, il puntatore avrebbe continuato a “camminare” in avanti nella memoria, oltre i confini dell'array e questo, come vedremo in seguito, non è assolutamente bene.
+
 <!-- 
 todo: aggiungere paragrafo sul casting
 Dato che ciascun tipo di dato non è altro che un modo per vedere la memoria, è possibile fare delle conversioni da un tipo all'altro:
 
     duebyte * p2 = (duebyte*)valori;
-->
+-->
 
 <hr id="dottrina">
 
