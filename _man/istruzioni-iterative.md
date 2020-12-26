@@ -7,7 +7,7 @@ permalink:  /man/istruzioni-iterative
 quote:      "Dopo di me, il reboot"
 ---
 
-Le istruzioni di ciclo sono una delle componenti fondamentali della programmazione.  
+Le istruzioni di ciclo sono le componenti fondamentali della programmazione.  
 Ci sono tre tipi di istruzioni di ciclo: 
 
 - `for`

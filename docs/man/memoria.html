@@ -65,7 +65,131 @@
 
             <section id="testo">
 
-                <!--
+                <p>La gestione della memoria è la componente più importante della programmazione.</p>
+
+<p>Come ti ho detto, tutti i linguaggi di programmazione sono un modo di vedere la memoria del computer.
+Quando tu <em>dichiari</em> una variabile con un’istruzione come:</p>
+
+<pre><code>int a = 1;
+</code></pre>
+
+<p>in realtà, stai dicendo al compilatore di prendere un’area di memoria di 32 bit (un <code>int</code> è grande 4 bytes, ricordi?), associarle il nome <code>a</code> e scriverci dentro il valore binario:</p>
+
+<pre><code> 00000000000000000000000000000001
+</code></pre>
+
+<p>Allo stesso modo, se dichiari la stringa:</p>
+
+<pre><code> const char* motto = "Amiamo ciò che ci ucciderà";
+</code></pre>
+
+<p>stai chiedendo al compilatore di prendere un’area di memoria di 28 bytes, di associarle il nome <code>motto</code> e scriverci dentro i 27 caratteri della stringa più un ultimo carattere, con valore <code>0</code>, che indica la fine della stringa.<br />
+Tutto questo funziona se tu sai in anticipo quanto saranno grandi le variabili con cui avrai a che fare, ma se invece devi gestire dei valori di grandezza variabile, hai due possibilità: o riservi preventivamente una quantità abbondante di spazio, o la allochi sul momento, in base alle tue necessità.
+L’allocazione statica va bene se devi gestire pochi dati di dimensioni ridotte, ma se devi gestire molte variabili di grande dimensione, l’allocazione dinamica, anche se più complessa da gestire, è più efficiente.<br />
+Il codice seguente è un esempio di gestione statica della memoria:</p>
+
+<pre><code>/** 
+ * @file memoria-statica.cpp
+ * Gestione statica della memoria.
+ */
+ 
+#include &lt;iostream&gt;
+
+/** Definisce la dimensione della stringa */
+#define DIM_STRINGA 200
+
+using namespace std;
+
+int main(int argc, char** argv)
+{    
+    /** Riserva uno spazio di 200 caratteri */
+    char stringa[DIM_STRINGA];
+
+    /** 
+    * Qui dovrebbe controllare che le stringhe ci siano 
+    * e che, sommate, siano più corte di 200 caratteri.. 
+    */
+    
+    /** Copia le stringhe nell'area di memoria */
+    sprintf(stringa, "%s %s", argv[1], argv[2]);
+
+    /** Stampa la stringa a video */
+    cout &lt;&lt; stringa &lt;&lt; endl;
+        
+    return 0;
+}
+       
+
+</code></pre>
+
+<p>Se lo compili e lo esegui, passando due stringhe come parametri, ottieni questo output:</p>
+
+<pre><code>% g++ src/cpp/memoria-statica.cpp -o src/out/esempio                
+% src/out/esempio "Amiamo ciò che ci ucciderà" "(se tutto va bene)"
+Amiamo ciò che ci ucciderà (se tutto va bene)
+</code></pre>
+
+<p>Questo codice funziona se devi gestire solo due stringhe che, sommate, hanno meno di 200 caratteri: una condizione piuttosto restrittiva.
+Puoi aumentare il numero di stringhe e la dimensione dello spazio in memoria, ma otterresti un programma che è o sovra o sotto dimensionato.
+Questa non è buona programmazione.
+Il buon programmatore non deve sprecare risorse; per lui, il proverbiale bicchiere non è né mezzo pieno né mezzo vuoto: è grande il doppio del necessario.</p>
+
+<pre><code>/** 
+ * @file memoria-dinamica.cpp
+ * Gestione dinamica della memoria.
+ */
+ 
+#include &lt;iostream&gt;
+
+
+using namespace std;
+
+int main(int argc, char** argv)
+{    
+    /** 
+    * Qui dovrebbe controllare che le stringhe ci siano.. 
+    */
+   
+    /** Legge la lunghezza delle due stringhe */        
+    size_t len1 = strlen(argv[1]);
+    size_t len2 = strlen(argv[2]);
+
+    /** 
+     * Alloca un'area di memoria grande quanto le due
+     * stringhe più un carattere di spazio e un
+     * carattere terminatore.
+     */   
+    size_t lunghezza = len1 + len2 + 2; 
+    char* stringa = new char(lunghezza);
+
+    /** Copia le stringhe nell'area di memoria */
+    sprintf(stringa, "%s %s", argv[1], argv[2]);
+
+    /** Mostra la dimensione dell'area e la stringa */
+    cout &lt;&lt; lunghezza &lt;&lt; " - " &lt;&lt; stringa &lt;&lt; endl;
+    
+    /** Libera la memoria allocata */
+    delete stringa;
+    
+    return 0;
+}
+       
+
+</code></pre>
+
+<p>L’output di questo programma, molto più parsimonioso della sua versione statica, è il seguente:</p>
+
+<pre><code>% src/out/esempio "Amiamo ciò che ci ucciderà" "(se tutto va bene)"                              
+48 - Amiamo ciò che ci ucciderà (se tutto va bene)
+% src/out/esempio "Amiamo ciò che ci ucciderà" "(se tutto va bene, cosa che non si può mai dire)"
+79 - Amiamo ciò che ci ucciderà (se tutto va bene, cosa che non si può mai dire)
+% src/out/esempio "Amiamo ciò che ci ucciderà" ""            
+30 - Amiamo ciò che ci ucciderà 
+</code></pre>
+
+<!--
+
+@todo: spiegare la differenza fra dichiarazione e definizione; parlare della parola-chiave extern
 
 Utlizzare l'peratore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. 
 Questo approccio si rirova anche nel precetto:
