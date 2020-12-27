@@ -42,8 +42,8 @@ Se lo compili e lo esegui, passando due stringhe come parametri, ottieni questo 
 
 ```
 % g++ src/cpp/memoria-statica.cpp -o src/out/esempio                
-% src/out/esempio "Amiamo ciò che ci ucciderà" "(se tutto va bene)"
-Amiamo ciò che ci ucciderà (se tutto va bene)
+% src/out/esempio "Stringa uno" "Stringa due"
+Stringa uno Stringa due
 ```
 
 Questo codice funziona se devi gestire solo due stringhe che, sommate, hanno meno di 200 caratteri: una condizione piuttosto restrittiva.
@@ -117,15 +117,30 @@ main:   Stringa globale
 ```
 
 Come vedi, la stringa definita globalmente è visibile sia nella funzione `main` che nella funzione `funz`; la variabile definita all'inizio della funzione `funz` è visibile all'interno della funzione stessa, ma non nel blocco di codice, dove è visibile la nuova variabile `stringa`.
-L' “aspettativa di vita” di ciascuna variabile dipende dal punto in cui è stata definita: la prima variabile “vivrà” per tutta la durata del programma; la seconda variabile viene creata quando si richiama la funzione `funz` e viene eliminata quando la funzone termina; la variabile all'interno del blocco di codice esiste solo per due istruzioni, poi il blocco di codice finisce e viene eliminata.  
+L' “aspettativa di vita” di ciascuna variabile dipende dal punto in cui è stata definita: la prima variabile esisterà per tutta la durata del programma; la seconda variabile viene creata quando si richiama la funzione `funz` e viene eliminata quando la funzone termina; la variabile all'interno del blocco di codice esiste solo per due istruzioni, poi il blocco di codice finisce e viene eliminata.  
 Al contrario, quando un'area di memoria è allocata dinamicamente, rimane occupata fino a che il programma (o, più precisamente: il programmatore) non la rilascia con un'istruzione `delete`.
 Se il programma fa una sola chiamata, come nel nostro esempio, il fatto che una cinquantina di byte non siano disponibili per qualche minuto non crea grossi problemi (lo so per certo perché, nella prima versione dell'esempio, avevo dimenticato di aggiungere l'istruzione `delete` alla fine e il computer ha continuato a funzionare lo stesso), se però quello stesso programma continuasse a girare sullo stesso computer per lungo tempo, a poco a poco esaurirebbe tutta la memoria disponibile, causandone il blocco.  
 Per questo motivo, il linguaggio con la "J" ha un sistema di *garbage collection* che, come le squadre di pulizia dei Servizi Segreti, provvede a eliminare le prove dell'incompetenza dei suoi programmatori prima che questa arrechi danno ai sistemi. 
 Qualcuno ti dirà che non è vero, che i programmatori "J" sono dei professionisti competenti, ma ragiona: se esiste un sistema di raccolta dei rifiuti, ci dovrà pur essere qualcuno che li produce, no?
 
 ---
+ 
+Come le variabili del C++, anche gi esseri umani sono chiamati a vivere, svolgono il loro compito e alla fine vengono rimossi dal sistema.
+Le risorse che occupiamo sono un insieme di spazioni, invece che delle sequenze di byte, ma anche ciò che comunemente definiamo: *noi* non è altro che un modo di vedere le trasizioni di energia all'interno del sistema.
+A differenza delle variabili del software, però, gli esseri umani sono capaci di valutare l'esito delle loro scelte o delle loro azioni e possono decidere se ripetere quella scelta o quell'azione in altri cicli di vita dell'Universo.
+Siamo, allo stesso tempo, una parte del programma, i *beta-tester* e gli sviluppatori e, se ci accorgiamo di un'istruzione errata, possiamo modificarla nelle successive "esecuzioni" del programma, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente.
+In questo modo, genereremo a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.  
+Un *Koan* Zen parla dello “Zen di ogni istante”:
+
+> Gli studenti di Zen stanno con i loro maestri almeno dieci anni prima di presumere di poter insegnare a loro volta. Nan-in ricevette la visita di Tenno, che, dopo aver fatto il consueto tirocinio era diventato insegnante.
+Era un giorno piovoso, perciò Tenno portava zoccoli di legno e aveva con sé l’ombrello. 
+Dopo averlo salutato, Nan-in disse: “Immagino che tu abbia lasciato gli zoccoli nell’anticamera. Vorrei sapere se hai messo l’ombrello alla destra o alla
+sinistra degli zoccoli”.
+Tenno, sconcertato, non seppe rispondere subito. Si rese conto che non sapeva portare il suo Zen in ogni istante. 
+Diventò allievo di Nan-in e studiò ancora sei anni per perfezionare il suo Zen di ogni istante.<a href="/man/note#zen" class="nota"></a>
 
 <!--
+
 
 @todo: spiegare la differenza fra dichiarazione e definizione; parlare della parola-chiave extern
 

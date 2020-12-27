@@ -118,7 +118,7 @@ CODE, PRE {
     text-align: left;
     font-size: 11pt;
     font-family: $codeFont;
-    line-height: 1.25;
+    line-height: 1.1;
 }
 /* utilizzato per istruzioni iterative */
 LI CODE {
@@ -377,10 +377,6 @@ BODY.index MAIN SECTION.citazione.pagina {
  *  Stili per il manuale
  *
  */
-
- /**
-  * Note per il Manuale
-  */
 BODY.manuale {
     counter-reset: note-manuale;  
 }
@@ -728,6 +724,9 @@ SECTION.note OL LI A:focus {
 }
 SECTION.note OL LI BLOCKQUOTE {
     font-size: 1rem;
+}
+SECTION.note OL LI SPAN {
+    font-variant-caps: small-caps;
 }
 /**
  *  Stili per le note del Manuale
