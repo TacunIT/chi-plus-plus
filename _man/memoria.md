@@ -123,14 +123,14 @@ Se il programma fa una sola chiamata, come nel nostro esempio, il fatto che una 
 Per questo motivo, il linguaggio con la "J" ha un sistema di *garbage collection* che, come le squadre di pulizia dei Servizi Segreti, provvede a eliminare le prove dell'incompetenza dei suoi programmatori prima che questa arrechi danno ai sistemi. 
 Qualcuno ti dirà che non è vero, che i programmatori "J" sono dei professionisti competenti, ma ragiona: se esiste un sistema di raccolta dei rifiuti, ci dovrà pur essere qualcuno che li produce, no?
 
----
+<hr id="dottrina">
  
 Come le variabili del C++, anche gi esseri umani sono chiamati a vivere, svolgono il loro compito e alla fine vengono rimossi dal sistema.
 Le risorse che occupiamo sono un insieme di spazioni, invece che delle sequenze di byte, ma anche ciò che comunemente definiamo: *noi* non è altro che un modo di vedere le trasizioni di energia all'interno del sistema.
 A differenza delle variabili del software, però, gli esseri umani sono capaci di valutare l'esito delle loro scelte o delle loro azioni e possono decidere se ripetere quella scelta o quell'azione in altri cicli di vita dell'Universo.
 Siamo, allo stesso tempo, una parte del programma, i *beta-tester* e gli sviluppatori e, se ci accorgiamo di un'istruzione errata, possiamo modificarla nelle successive "esecuzioni" del programma, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente.
 In questo modo, genereremo a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.  
-Un *Koan* Zen parla dello “Zen di ogni istante”:
+Un *Koan* molto famoso parla dello “Zen di ogni istante”:
 
 > Gli studenti di Zen stanno con i loro maestri almeno dieci anni prima di presumere di poter insegnare a loro volta. Nan-in ricevette la visita di Tenno, che, dopo aver fatto il consueto tirocinio era diventato insegnante.
 Era un giorno piovoso, perciò Tenno portava zoccoli di legno e aveva con sé l’ombrello. 
@@ -139,7 +139,34 @@ sinistra degli zoccoli”.
 Tenno, sconcertato, non seppe rispondere subito. Si rese conto che non sapeva portare il suo Zen in ogni istante. 
 Diventò allievo di Nan-in e studiò ancora sei anni per perfezionare il suo Zen di ogni istante.<a href="/man/note#zen" class="nota"></a>
 
+Il Maestro Canaro detestava questo *Koan* perché era molto distratto.
+Se Nan-in l'avesse fatta a lui, la domanda, probabilmente l'avrebbe guardato con aria infastidita e gli avrebbe chiesto: “Quali zoccoli?”.
+Malgrado ciò, ne riconosceva l'importanza perché più prestiamo attenzione a tutto ciò che facciamo, più errori riusciremo a identificare e, si spera, a correggere.
+
+---
+
+Un'altra differenza fra gli esseri umani e il codice C++ è il nostro rapporto con l'operatore `delete`.   
+Gli uomini hanno sempre avuto paura della morte e, da Gilgamesh in poi, hanno sempre cercato di sfuggirle o di annulare il suo operato.
+Arte, religione, scienza: potremmo dire che tutto ciò che di buono o quanto meno di notevole abbiamo prodoto come specie nasce dal naturale rifiuto della transitorietà della nostra esistenza.
+La morte è stata la causa, e talvolta il soggetto, dei migliori frutti del nostro ingegno e tutte queste creazioni, nel tempo, hanno creato un bozzolo culturale che, da un lato, ci ha protetto dalla paura e, dall'altro, ci ha dato degli ideali comuni per cui lottare. 
+Non sempre a fin di bene, purtroppo.  
+Nel secolo scorso, però, la Scienza ha squarciato questo bozzolo, dimostrando l'inconsistenza delle credenze di cui era costituito.
+Ha privato gli esseri umani delle loro bugie confortanti, sostituendole con delle certezze inquietanti. Nella migliore delle ipotesi.  
+La dottoressa Kübler Ross, nel 1969, ha elaborato la teoria delle cinque fasi del lutto:
+
+1. negazione;
+2. rabbia;
+3. negoziazione;
+4. depressione;
+5. accettazione.
+
+Messa di fronte all'ineluttabilità della fine, l'Umanità ha seguìto lo stesso percorso.
+
+
 <!--
+ così come reagiscono individualmente
+n maniera coerente con le *cinque fasi del lutto* della dottoressa Kübler Ross:
+
 
 
 @todo: spiegare la differenza fra dichiarazione e definizione; parlare della parola-chiave extern
