@@ -7,7 +7,7 @@ permalink:  /man/memoria
 quote:      "Amiamo ciò che ci ucciderà (se tutto va bene) "
 ---
 
-La gestione della memoria è l'attività più importante della programmazione.
+La gestione della memoria è la parte più importante della programmazione.
 
 Come ti ho detto, tutti i linguaggi di programmazione sono un modo di vedere la memoria del computer.
 Quando tu *dichiari* una variabile con un'istruzione come: 
@@ -29,8 +29,8 @@ in realtà, stai dicendo al compilatore di prendere un'area di memoria di 32 bit
  const char* motto = "Amiamo ciò che ci ucciderà";
  ```
 
-stai chiedendo al compilatore di prendere un'area di memoria di 28 bytes, di associarle il nome `motto` e scriverci dentro i 27 caratteri della frase più un ultimo carattere, con valore `0`, che indica la fine della stringa.  
-Puoi usare questo metodo se sai in anticipo quanto saranno grandi le variabili con cui avrai a che fare, ma se invece devi gestire dei valori di grandezza variabile (come, per esempio, l'input di un utente), hai due possibilità: o riservi preventivamente una quantità abbondante di spazio, o la allochi sul momento, in base alle tue necessità.
+stai chiedendo al compilatore di prendere un'area di memoria di 28 byte, di associarle il nome `motto` e scriverci dentro i 27 caratteri della frase più un ultimo carattere, con valore `0`, che indica la fine della stringa.  
+Puoi usare questo metodo se sai in anticipo quanto saranno grandi le variabili con cui avrai a che fare, ma se invece devi gestire dei valori di grandezza variabile (per esempio, l'input di un utente), hai due possibilità: o riservi preventivamente una quantità abbondante di spazio, o la allochi sul momento, in base alle tue necessità.
 Il primo caso va bene se devi gestire pochi dati di dimensioni ridotte, ma se devi gestire molte variabili di grandi dimensioni, l'allocazione dinamica, anche se più complessa da gestire, è più efficiente.  
 Il codice seguente è un esempio di gestione statica della memoria: 
 
@@ -93,7 +93,7 @@ Per conoscere il suo valore effettivo, dobbiamo convertirlo in un puntatore `voi
 cout << (void*)stringa << endl;
 ```
 
-Il lato negativo dell'allocazione dinamica della memoria è che, mentre un buffer dinamico “vive” quanto il blocco di istruzioni in cui è stato creato, la memoria allocata dinamicamente rimane occupata fino a che non viene liberata con un'istruzione `delete`:
+Il lato negativo dell'allocazione dinamica della memoria è che, mentre un buffer statico “vive” quanto il blocco di istruzioni in cui è stato creato, la memoria allocata dinamicamente rimane occupata fino a che non viene liberata con un'istruzione `delete`:
 
 ```
 delete[] stringa;
@@ -126,7 +126,7 @@ Qualcuno ti dirà che non è vero, che i programmatori "J" sono dei professionis
 <hr id="dottrina">
  
 Come le variabili del C++, anche gi esseri umani sono chiamati a vivere, svolgono il loro compito e alla fine vengono rimossi dal sistema.
-Le risorse che occupiamo sono un insieme di spazioni, invece che delle sequenze di byte, ma anche ciò che comunemente definiamo: *noi* non è altro che un modo di vedere le trasizioni di energia all'interno del sistema.
+Le risorse che occupiamo sono un insieme di spazioni, invece che delle sequenze di byte, ma ciò che comunemente definiamo: *noi* non è altro che un modo di vedere le trasizioni di energia all'interno del sistema.
 A differenza delle variabili del software, però, gli esseri umani sono capaci di valutare l'esito delle loro scelte o delle loro azioni e possono decidere se ripetere quella scelta o quell'azione in altri cicli di vita dell'Universo.
 Siamo, allo stesso tempo, una parte del programma, i *beta-tester* e gli sviluppatori e, se ci accorgiamo di un'istruzione errata, possiamo modificarla nelle successive "esecuzioni" del programma, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente.
 In questo modo, genereremo a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.  
@@ -147,27 +147,40 @@ Malgrado ciò, ne riconosceva l'importanza perché più prestiamo attenzione a t
 
 Un'altra differenza fra gli esseri umani e il codice C++ è il nostro rapporto con l'operatore `delete`.   
 Gli uomini hanno sempre avuto paura della morte e, da Gilgamesh in poi, hanno sempre cercato di sfuggirle o di annulare il suo operato.
-Arte, religione, scienza: potremmo dire che tutto ciò che di buono o quanto meno di notevole abbiamo prodoto come specie nasce dal naturale rifiuto della transitorietà della nostra esistenza.
-La morte è stata la causa, e talvolta il soggetto, dei migliori frutti del nostro ingegno e tutte queste creazioni, nel tempo, hanno creato un bozzolo culturale che, da un lato, ci ha protetto dalla paura e, dall'altro, ci ha dato degli ideali comuni per cui lottare. 
-Non sempre a fin di bene, purtroppo.  
-Nel secolo scorso, però, la Scienza ha squarciato questo bozzolo, dimostrando l'inconsistenza delle credenze di cui era costituito.
-Ha privato gli esseri umani delle loro bugie confortanti, sostituendole con delle certezze inquietanti. Nella migliore delle ipotesi.  
-La dottoressa Kübler Ross, nel 1969, ha elaborato la teoria delle cinque fasi del lutto:
+Arte, religione, scienza: potremmo dire che tutto ciò che di buono o quanto meno di notevole abbiamo prodotto come specie nasce dal naturale rifiuto della transitorietà della nostra esistenza.
+La morte è stata la causa e, talvolta, il soggetto dei migliori frutti del nostro ingegno.
+Tutte queste creazioni, nel tempo, hanno creato un bozzolo culturale che, da un lato, ci ha protetto dalla paura e, dall'altro, ci ha dato degli ideali comuni per cui lottare, anche se non sempre a fin di bene &mdash; ma questo si potrebbe dire anche della musica.
+Negli ultimi due secoli, però, la Scienza ha squarciato questo bozzolo, privando gli esseri umani delle loro bugie confortanti e sostituendole con delle certezze inquietanti, mentre il suo figlio scemo (il Movimento del '68) ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società senza darle nulla in cambio, tranne la minigonna.    
+C'è un aneddoto apocrifo sul Maestro Canaro che parla proprio di questo:
 
-1. negazione;
-2. rabbia;
-3. negoziazione;
-4. depressione;
-5. accettazione.
+<blockquote class="incluso">
+{% include il-computer-della-zia.md %}
+</blockquote>
 
-Messa di fronte all'ineluttabilità della fine, l'Umanità ha seguìto lo stesso percorso.
+L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito come un paziente a cui sia diagnosticato un male incurabile, elaborando il suo dolore secondo le cinque fasi definite dalla dottoressa Kübler Ross<a href="/man/note#kubler" class="nota"></a>:    
 
+<i>Negazione:</i> così come l'Epoca vittoriana aveva il tabù del sesso, la nostra “cultura” ha il tabù della morte: i nostri bis-nonni fingevano di non avere interessi carnali, noi fingiamo che la morte non esista.
+La neghiamo a parole, usando dei giri di parole per non nominarla: “Se n'è andato”, “Non c'è più”, “È scomparso”, neanche si stesse parlando di un evaso. 
+La neghiamo nei fatti, isolando i moribondi nelle corsie d'ospedale, lontani dalle loro case e dai loro cari.
+La neghiamo nei nostri pensieri e nelle nostre azioni, perché altrimenti l'insensatezza delle nostre vite, spese inseguendo il miraggio effimero del successo<a href="/man/note#successo" class="nota"></a> diventerebbe evidente e innegabile.  
 
+<i>Rabbia:</i> anche se rabbia e aggressività sono sempre state presenti nella nostra storia, dalla metà del Secolo scorso, oltre che dall'oppressione e dal disagio, hanno cominciato a fiorire rigogliose anche dal benessere.
+Gli scontri fra *Mods* e *Rockers* negli anni '60, le lotte armate degli anni '70, il *Punk* e, in tempi più recenti, i *foreign fighters* e l'aggressività nei *social-network*: nessuno di questi fenomeni nasce nei ghetti o da uno stato di bisogno, sono tutti degli *hobby* del Ceto medio.  
+
+<i>Negoziazione:</i> nel 1982 Jane Fonda pubblicò una videocassetta nella quale insegnava a fare ginnastica aerobica<a href="/man/note#aerobica" class="nota"></a> nel salotto di casa a chiunque potesse permettersi di spendere sessanta Dollari<a href="/man/note#sessanta" class="nota"></a> per un VHS. 
+Fu una delle videocassette più vendute di tutti i tempi e diede il via a una moda che divenne uno stile di vita per milioni di persone.
+La mania del *fitness*, insieme al rifiorire della spiritualità *New Age*, sono stati il modo in cui i popoli civilizzati hanno cercato di venire a patti con la nuova, terrificante realtà, prendendo atto dei proprii errori e cercando di porvi rimedio cambiando stile di vita.
+Quello che gli pseudo-mistici non hanno mai capito è che recitare il *Sutra del Loto* perché credi che possa aiutarti a realizzare i tuoi desiderii è una contraddizione in termini.
+La religione è come gli antibiotici: non fa effetto se non prendi la dose intera.
+
+<i>Depressione:</i> la sindrome depressiva è la seconda malattia più diffusa al Mondo, dopo i disturbi cardiaci &mdash; segno evidente che la fase di negoziazione non ha sortito gli effetti sperati, né in un senso né in un altro.
+Fallito ogni tentativo di combattere la realtà, l'uomo del terzo Millennio  cerca scampo in una fuga che può essere o fisica o mentale e si è richiude in sé stesso così come il Giappone dei Tokugawa, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a href="/man/note#sakoku" class="nota"></a>.
+La fuga però non dà gli effetti sperati, perché la Realtà non è un predatore, che possiamo sperare di seminare.
+La realtà è ovunque e anche isolandosi l'uomo non riesce a sfuggirla; anzi: l'isolamento genera un *feedback* che amplifica lo stato di malessere e rende ancora più difficile e improbabile il raggiungimento dello stadio successivo.
+
+<i>Accettazione:<i/>
+ 
 <!--
- così come reagiscono individualmente
-n maniera coerente con le *cinque fasi del lutto* della dottoressa Kübler Ross:
-
-
 
 @todo: spiegare la differenza fra dichiarazione e definizione; parlare della parola-chiave extern
 
