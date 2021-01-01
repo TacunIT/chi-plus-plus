@@ -149,7 +149,7 @@ Un'altra differenza fra gli esseri umani e il codice C++ è il nostro rapporto c
 Gli uomini hanno sempre avuto paura della morte e, da Gilgamesh in poi, hanno sempre cercato di sfuggirle o di annulare il suo operato.
 Arte, religione, scienza: potremmo dire che tutto ciò che di buono o quanto meno di notevole abbiamo prodotto come specie nasce dal naturale rifiuto della transitorietà della nostra esistenza.
 La morte è stata la causa e, talvolta, il soggetto dei migliori frutti del nostro ingegno.
-Tutte queste creazioni, nel tempo, hanno creato un bozzolo culturale che, da un lato, ci ha protetto dalla paura e, dall'altro, ci ha dato degli ideali comuni per cui lottare, anche se non sempre a fin di bene.
+Tutte queste creazioni, nel tempo, hanno creato un bozzolo culturale che, da un lato, ci ha protetto dalla paura e, dall'altro, ci ha dato degli ideali comuni per cui lottare, anche se non sempre a fin di bene &mdash; ma questo si potrebbe dire anche della musica.
 Negli ultimi due secoli, però, la Scienza ha squarciato questo bozzolo, privando gli esseri umani delle loro bugie confortanti e sostituendole con delle certezze inquietanti, mentre il suo figlio scemo (il Movimento del '68) ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società senza darle nulla in cambio, tranne la minigonna.    
 C'è un aneddoto apocrifo sul Maestro Canaro che parla proprio di questo:
 
@@ -162,9 +162,9 @@ L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo,
 <i>Negazione:</i> così come l'Epoca vittoriana aveva il tabù del sesso, la nostra “cultura” ha il tabù della morte: i nostri bis-nonni fingevano di non avere interessi carnali, noi fingiamo che la morte non esista.
 La neghiamo a parole, usando dei giri di parole per non nominarla: “Se n'è andato”, “Non c'è più”, “È scomparso”, neanche si stesse parlando di un evaso. 
 La neghiamo nei fatti, isolando i moribondi nelle corsie d'ospedale, lontani dalle loro case e dai loro cari.
-La neghiamo nei nostri pensieri e nelle nostre azioni, perché altrimenti l'insensatezza delle nostre vite, spese inseguendo il miraggio effimero del successo diventerebbe evidente e innegabile.  
+La neghiamo nei nostri pensieri e nelle nostre azioni, perché altrimenti l'insensatezza delle nostre vite, spese inseguendo il miraggio effimero del successo<a href="/man/note#successo" class="nota"></a> diventerebbe evidente e innegabile.  
 
-<i>Rabbia:</i> anche se rabbia e aggressività sono sempre state presenti nella nostra storia, dalla metà del Secolo scorso, oltre che dall'oppressione e dal disagio, hanno cominciato a nascere anche dal benessere.
+<i>Rabbia:</i> anche se rabbia e aggressività sono sempre state presenti nella nostra storia, dalla metà del Secolo scorso, oltre che dall'oppressione e dal disagio, hanno cominciato a fiorire rigogliose anche dal benessere.
 Gli scontri fra *Mods* e *Rockers* negli anni '60, le lotte armate degli anni '70, il *Punk* e, in tempi più recenti, i *foreign fighters* e l'aggressività nei *social-network*: nessuno di questi fenomeni nasce nei ghetti o da uno stato di bisogno, sono tutti degli *hobby* del Ceto medio.  
 
 <i>Negoziazione:</i> nel 1982 Jane Fonda pubblicò una videocassetta nella quale insegnava a fare ginnastica aerobica<a href="/man/note#aerobica" class="nota"></a> nel salotto di casa a chiunque potesse permettersi di spendere sessanta Dollari<a href="/man/note#sessanta" class="nota"></a> per un VHS. 
@@ -173,17 +173,13 @@ La mania del *fitness*, insieme al rifiorire della spiritualità *New Age*, sono
 Quello che gli pseudo-mistici non hanno mai capito è che recitare il *Sutra del Loto* perché credi che possa aiutarti a realizzare i tuoi desiderii è una contraddizione in termini.
 La religione è come gli antibiotici: non fa effetto se non prendi la dose intera.
 
+<i>Depressione:</i> la sindrome depressiva è la seconda malattia più diffusa al Mondo, dopo i disturbi cardiaci &mdash; segno evidente che la fase di negoziazione non ha sortito gli effetti sperati, né in un senso né in un altro.
+Fallito ogni tentativo di combattere la realtà, l'uomo del terzo Millennio  cerca scampo in una fuga che può essere o fisica o mentale e si è richiude in sé stesso così come il Giappone dei Tokugawa, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a href="/man/note#sakoku" class="nota"></a>.
+La fuga però non dà gli effetti sperati, perché la Realtà non è un predatore, che possiamo sperare di seminare.
+La realtà è ovunque e anche isolandosi l'uomo non riesce a sfuggirla; anzi: l'isolamento genera un *feedback* che amplifica lo stato di malessere e rende ancora più difficile e improbabile il raggiungimento dello stadio successivo.
 
-
-
-
-<!--
-Come dice il Corvo: “Non può piovere per sempre“; ma può sicuramente piovere per tutto il tempo che sono fuori in bicicletta..
-<i>Depressione:</i>  
-5. accettazione.  
-
--->
-
+<i>Accettazione:<i/>
+ 
 <!--
 
 @todo: spiegare la differenza fra dichiarazione e definizione; parlare della parola-chiave extern
