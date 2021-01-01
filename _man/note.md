@@ -12,9 +12,9 @@ quote:
     <h3>Il buon programmatore</h3>
     <ol>
         <li>
-            P. Scarabelli, M. Vinti -
+            P. <span>Scarabelli</span>, M. <span>Vinti</span>,
             <i>Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja</i>.
-            Edizione elettronica - Mimesis Edizioni.
+            Edizione elettronica - Mimesis Edizioni, Milano, 2017
             <a href="Javascript:history.back()" name="azione">&#8617;</a>
         </li>
     </ol>
@@ -22,7 +22,7 @@ quote:
     <h3>Il C++</h3>
     <ol>
         <li>
-            B. Stroustrup - 
+            B. <span>Stroustrup</span>, 
             <a href="http://gotw.ca/publications/c_family_interview.htm" 
                target="note">gotw.ca/publications/c_family_interview.htm</a>
             <a href="Javascript:history.back()" name="cpp">&#8617;</a>
@@ -32,7 +32,7 @@ quote:
     <h3>Tipi di dato</h3>
     <ol>
         <li>
-            Agostino, <i>Confessioni</i> VII, 11 
+            <span>Agostino</span>, <i>Confessioni</i> VII, 11 
             <a href="Javascript:history.back()" name="agostino">&#8617;</a>
         </li>
         <li>
@@ -44,7 +44,7 @@ quote:
             that dreams alone can truly be,<br />
             for ‘tis in dream I come to thee.
             </i><br /> 
-            E. Pound, <i>Song</i> 
+            E. <span>Pound</span>, <i>Song</i> 
             <a href="Javascript:history.back()" name="pound">&#8617;</a>
         </li>
     </ol>
@@ -52,7 +52,8 @@ quote:
     <h3>Struttura dei programmi C++</h3>
     <ol>
         <li>
-            Scarabelli, Piera; Vinti, Massimo - <i>op.cit.</i>
+            P. <span>Scarabelli</span>, M. <span>Vinti</span>,
+            <i>op.cit.</i>
             <a href="Javascript:history.back()" name="cicli">&#8617;</a>
         </li>
     </ol>
@@ -60,9 +61,21 @@ quote:
     <h3>Il preprocessore</h3>
     <ol>
         <li>
-            <i>Se un maschio ha ereditato dal padre una coda lunga, è probabile che abbia ereditato dalla madre anche i geni che l’hanno indotta a scegliere la coda lunga del padre</i> 
-            R. Dawkins, <i>L'Orologiaio Cieco</i>, 1986 
+            <i>Se un maschio ha ereditato dal padre una coda lunga, è probabile che abbia ereditato dalla madre anche i geni che l’hanno indotta a scegliere la coda lunga del padre</i><br /> 
+            R. <span>Dawkins</span>, 
+            <i>L'Orologiaio Cieco</i>, 
+            Mondadori, Milano, 2016 
             <a href="Javascript:history.back()" name="dawkins">&#8617;</a>
+        </li>
+    </ol>
+
+    <h3>Gestione della memoria</h3>
+    <ol>
+        <li>
+            N. <span>Senzaki</span>, P. <span>Reps</span>, 
+            <i>101 Storie Zen</i>, 
+            Adelphi, Milano, 1973
+            <a href="Javascript:history.back()" name="zen">&#8617;</a>
         </li>
     </ol>
 
@@ -70,11 +83,13 @@ quote:
     <ol>
         <li>
             Saʿdi di Shirāz, poeta persiano vissuto fra il 1200 e il 1291. 
-            La poesia citata è stata posta all'ingresso del Palazzo di Vetro dell'ONU.
+            La poesia citata compare all'ingresso del Palazzo di Vetro dell'ONU.
             <a href="Javascript:history.back()" name="saadi">&#8617;</a>
         </li>
         <li>
-            F. Attar <i>Il verbo degli uccelli (Mantiq al-Tayr)</i>
+            F. <span>Attar</span>, 
+            <i>Il verbo degli uccelli (Mantiq al-Tayr)</i>, 
+            Centro Essad Bey, Bologna, 2013
             <a href="Javascript:history.back()" name="mantiq">&#8617;</a>
         </li>
         <li>
@@ -83,7 +98,9 @@ quote:
         </li>
         <li>
             <i>Nell’universo non esistono dèi , non esistono nazioni né denaro né diritti umani né leggi , e non esiste alcuna giustizia che non sia nell’immaginazione comune degli esseri umani</i><br />  
-            Y .N. Harari, <i>Sapiens. Da animali a dèi: Breve storia dell'umanità. </i>  
+            Y .N. <span>Harari</span>,
+            <i>Sapiens. Da animali a dèi: Breve storia dell'umanità. </i>  
+            Bompiani, Milano, 2019
             <a href="Javascript:history.back()" name="sapiens">&#8617;</a>
         </li>
         <li>
@@ -99,11 +116,13 @@ quote:
             <a href="Javascript:history.back()" name="metta">&#8617;</a>
         </li>
         <li>
-            F. Attar, <i>op.cit.</i>
+            F. Attar - <i>op.cit.</i>
             <a href="Javascript:history.back()" name="attar">&#8617;</a>
         </li>
         <li>
-            Mumon, <i>Nansen Taglia il Gatto in Due</i>, da: <i>La Porta senza Porta</i>, ed. it. 1987, Adelphi, Milano. 
+            <span>Mumon</span>, <i>Nansen Taglia il Gatto in Due</i>, 
+            da: <i>La Porta senza Porta</i>, 
+            Adelphi, Milano, 1987.
             <a href="Javascript:history.back()" name="nansen">&#8617;</a>
         </li>
     </ol>    
