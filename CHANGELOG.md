@@ -1,3 +1,11 @@
+## 0.17.4 (January 02, 2021)
+  - Aggiunto testo Lettera al Direttore nella directory _data
+  - Completata prima versione del paragrafo sulla depressione
+  - Completata prima versione del paragrafo sulla negoziazione
+  - Corretto errore nel foglio di stile
+  - Rivista la struttura delle note bibliografiche
+  - Redazione capitolo sulla memoria
+
 ## 0.17.3 (December 26, 2020)
   - Corretta struttura delle note del Manuale
   - Rivista impostazione menu Manuale
