@@ -7,7 +7,7 @@ permalink:  /man/memoria
 quote:      "Amiamo ciò che ci ucciderà (se tutto va bene) "
 ---
 
-La gestione della memoria è l'attività più importante della programmazione.
+La gestione della memoria è la parte più importante della programmazione.
 
 Come ti ho detto, tutti i linguaggi di programmazione sono un modo di vedere la memoria del computer.
 Quando tu *dichiari* una variabile con un'istruzione come: 
@@ -29,8 +29,8 @@ in realtà, stai dicendo al compilatore di prendere un'area di memoria di 32 bit
  const char* motto = "Amiamo ciò che ci ucciderà";
  ```
 
-stai chiedendo al compilatore di prendere un'area di memoria di 28 bytes, di associarle il nome `motto` e scriverci dentro i 27 caratteri della frase più un ultimo carattere, con valore `0`, che indica la fine della stringa.  
-Puoi usare questo metodo se sai in anticipo quanto saranno grandi le variabili con cui avrai a che fare, ma se invece devi gestire dei valori di grandezza variabile (come, per esempio, l'input di un utente), hai due possibilità: o riservi preventivamente una quantità abbondante di spazio, o la allochi sul momento, in base alle tue necessità.
+stai chiedendo al compilatore di prendere un'area di memoria di 28 byte, di associarle il nome `motto` e scriverci dentro i 27 caratteri della frase più un ultimo carattere, con valore `0`, che indica la fine della stringa.  
+Puoi usare questo metodo se sai in anticipo quanto saranno grandi le variabili con cui avrai a che fare, ma se invece devi gestire dei valori di grandezza variabile (per esempio, l'input di un utente), hai due possibilità: o riservi preventivamente una quantità abbondante di spazio, o la allochi sul momento, in base alle tue necessità.
 Il primo caso va bene se devi gestire pochi dati di dimensioni ridotte, ma se devi gestire molte variabili di grandi dimensioni, l'allocazione dinamica, anche se più complessa da gestire, è più efficiente.  
 Il codice seguente è un esempio di gestione statica della memoria: 
 
@@ -93,7 +93,7 @@ Per conoscere il suo valore effettivo, dobbiamo convertirlo in un puntatore `voi
 cout << (void*)stringa << endl;
 ```
 
-Il lato negativo dell'allocazione dinamica della memoria è che, mentre un buffer dinamico “vive” quanto il blocco di istruzioni in cui è stato creato, la memoria allocata dinamicamente rimane occupata fino a che non viene liberata con un'istruzione `delete`:
+Il lato negativo dell'allocazione dinamica della memoria è che, mentre un buffer statico “vive” quanto il blocco di istruzioni in cui è stato creato, la memoria allocata dinamicamente rimane occupata fino a che non viene liberata con un'istruzione `delete`:
 
 ```
 delete[] stringa;
@@ -123,10 +123,10 @@ Se il programma fa una sola chiamata, come nel nostro esempio, il fatto che una 
 Per questo motivo, il linguaggio con la "J" ha un sistema di *garbage collection* che, come le squadre di pulizia dei Servizi Segreti, provvede a eliminare le prove dell'incompetenza dei suoi programmatori prima che questa arrechi danno ai sistemi. 
 Qualcuno ti dirà che non è vero, che i programmatori "J" sono dei professionisti competenti, ma ragiona: se esiste un sistema di raccolta dei rifiuti, ci dovrà pur essere qualcuno che li produce, no?
 
-<hr id="dottrina
+<hr id="dottrina">
  
 Come le variabili del C++, anche gi esseri umani sono chiamati a vivere, svolgono il loro compito e alla fine vengono rimossi dal sistema.
-Le risorse che occupiamo sono un insieme di spazioni, invece che delle sequenze di byte, ma anche ciò che comunemente definiamo: *noi* non è altro che un modo di vedere le trasizioni di energia all'interno del sistema.
+Le risorse che occupiamo sono un insieme di spazioni, invece che delle sequenze di byte, ma ciò che comunemente definiamo: *noi* non è altro che un modo di vedere le trasizioni di energia all'interno del sistema.
 A differenza delle variabili del software, però, gli esseri umani sono capaci di valutare l'esito delle loro scelte o delle loro azioni e possono decidere se ripetere quella scelta o quell'azione in altri cicli di vita dell'Universo.
 Siamo, allo stesso tempo, una parte del programma, i *beta-tester* e gli sviluppatori e, se ci accorgiamo di un'istruzione errata, possiamo modificarla nelle successive "esecuzioni" del programma, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente.
 In questo modo, genereremo a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.  
@@ -159,33 +159,32 @@ C'è un aneddoto apocrifo sul Maestro Canaro che parla proprio di questo:
 
 L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito come un paziente a cui sia diagnosticato un male incurabile, elaborando il suo dolore secondo le cinque fasi definite dalla dottoressa Kübler Ross<a href="/man/note#kubler" class="nota"></a>:    
 
-<i>Negazione:</i> così come l'Epoca vittoriana aveva il tabù del sesso, la nostra “cultura” ha il tabù della morte; e così come i nostri bis-nonni fingevano di non avere interessi carnali, noi fingiamo che la morte non esista.
+<i>Negazione:</i> così come l'Epoca vittoriana aveva il tabù del sesso, la nostra “cultura” ha il tabù della morte: i nostri bis-nonni fingevano di non avere interessi carnali, noi fingiamo che la morte non esista.
 La neghiamo a parole, usando dei giri di parole per non nominarla: “Se n'è andato”, “Non c'è più”, “È scomparso”, neanche si stesse parlando di un evaso. 
 La neghiamo nei fatti, isolando i moribondi nelle corsie d'ospedale, lontani dalle loro case e dai loro cari.
 La neghiamo nei nostri pensieri e nelle nostre azioni, perché altrimenti l'insensatezza delle nostre vite, spese inseguendo il miraggio effimero del successo diventerebbe evidente e innegabile.  
 
-<i>Rabbia:</i> anche se rabbia e aggressività sono sempre state presenti nella nostra storia, dalla metà del Secolo scorso, più che dall'oppressione e dal disagio, sembrano nascere dal benessere.
-Gli scontri fra *Mods* e *Rockers* negli anni '60, le lotte armate degli anni '70, il *Punk* e, in tempi più recenti, i *foreign fighters* e l'aggressività nei *social-network*: nessuno di questi fenomeni nasce nei ghetti o da uno stato di bisogno, sono tutti *hobby* del Ceto medio.  
+<i>Rabbia:</i> anche se rabbia e aggressività sono sempre state presenti nella nostra storia, dalla metà del Secolo scorso, oltre che dall'oppressione e dal disagio, hanno cominciato a nascere anche dal benessere.
+Gli scontri fra *Mods* e *Rockers* negli anni '60, le lotte armate degli anni '70, il *Punk* e, in tempi più recenti, i *foreign fighters* e l'aggressività nei *social-network*: nessuno di questi fenomeni nasce nei ghetti o da uno stato di bisogno, sono tutti degli *hobby* del Ceto medio.  
 
-<i>Negoziazione:</i>  
+<i>Negoziazione:</i> nel 1982 Jane Fonda pubblicò una videocassetta nella quale insegnava a fare ginnastica aerobica<a href="/man/note#aerobica" class="nota"></a> nel salotto di casa a chiunque potesse permettersi di spendere sessanta Dollari<a href="/man/note#sessanta" class="nota"></a> per un VHS. 
+Fu una delle videocassette più vendute di tutti i tempi e diede il via a una moda che divenne uno stile di vita per milioni di persone.
+La mania del *fitness*, insieme al rifiorire della spiritualità *New Age*, sono stati il modo in cui i popoli civilizzati hanno cercato di venire a patti con la nuova, terrificante realtà, prendendo atto dei proprii errori e cercando di porvi rimedio cambiando stile di vita.
+Quello che gli pseudo-mistici non hanno mai capito è che recitare il *Sutra del Loto* perché credi che possa aiutarti a realizzare i tuoi desiderii è una contraddizione in termini.
+La religione è come gli antibiotici: non fa effetto se non prendi la dose intera.
+
+
+
+
 
 <!--
 Come dice il Corvo: “Non può piovere per sempre“; ma può sicuramente piovere per tutto il tempo che sono fuori in bicicletta..
 <i>Depressione:</i>  
 5. accettazione.  
 
-a per voi, perché vi costringe a sprecare la vita inseguendo dei miraggi che non raggiungerete mai. E anche laddove riusciste, per tenacia o qualità personali, a conseguire il risultato atteso (diventare una rock-star, vincere alla lotteria, congiungervi carnalmente con questo, quella o entrambi), scoprirete immancabilmente che il gioco non valeva la candela della vostra vita, ormai, quasi del tutto combusta.
-Non mi crede, signor Direttore? allora faccia un po' il conto di quanti uomini e donne di “successo” siano dediti all'alcol, alle droghe o a una qualsiasi altra attività autodistruttiva. Hanno tutto ciò che si suppone debba rendere la vita migliore; pure, non sono felici: perché?
-La realtà è che voi non volete ignorarmi, ma avete bisogno di ignorarmi, perché, altrimenti, l'insensatezza delle vostre vite diventerebbe evidente e innegabile. Chi dedica la propria esistenza ad accumulare fortune che saranno poi sperperate dai suoi discendenti, chi si rinchiude volontariamente nella prigione di un ufficio, chi baratta il suo amor proprio per una firma su un contratto, non deve prendere coscienza della propria transitorietà, perché, se lo facesse, andrebbe contro agli interessi della società.
 -->
 
 <!--
-
-
- così come reagiscono individualmente
-n maniera coerente con le *cinque fasi del lutto* della dottoressa Kübler Ross:
-
-
 
 @todo: spiegare la differenza fra dichiarazione e definizione; parlare della parola-chiave extern
 
