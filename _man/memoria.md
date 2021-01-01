@@ -157,19 +157,31 @@ C'è un aneddoto apocrifo sul Maestro Canaro che parla proprio di questo:
 {% include il-computer-della-zia.md %}
 </blockquote>
 
-L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito  
+L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito come un paziente a cui sia diagnosticato un male incurabile, elaborando il suo dolore secondo le cinque fasi definite dalla dottoressa Kübler Ross<a href="/man/note#kubler" class="nota"></a>:    
 
-La dottoressa Kübler Ross, nel 1969, ha elaborato la teoria delle cinque fasi del lutto:
+<i>Negazione:</i> così come l'Epoca vittoriana aveva il tabù del sesso, la nostra “cultura” ha il tabù della morte; e così come i nostri bis-nonni fingevano di non avere interessi carnali, noi fingiamo che la morte non esista.
+La neghiamo a parole, usando dei giri di parole per non nominarla: “Se n'è andato”, “Non c'è più”, “È scomparso”, neanche si stesse parlando di un evaso. 
+La neghiamo nei fatti, isolando i moribondi nelle corsie d'ospedale, lontani dalle loro case e dai loro cari.
+La neghiamo nei nostri pensieri e nelle nostre azioni, perché altrimenti l'insensatezza delle nostre vite, spese inseguendo il miraggio effimero del successo diventerebbe evidente e innegabile.  
 
-1. negazione;
-2. rabbia;
-3. negoziazione;
-4. depressione;
-5. accettazione.
+<i>Rabbia:</i> anche se rabbia e aggressività sono sempre state presenti nella nostra storia, dalla metà del Secolo scorso, più che dall'oppressione e dal disagio, sembrano nascere dal benessere.
+Gli scontri fra *Mods* e *Rockers* negli anni '60, le lotte armate degli anni '70, il *Punk* e, in tempi più recenti, i *foreign fighters* e l'aggressività nei *social-network*: nessuno di questi fenomeni nasce nei ghetti o da uno stato di bisogno, sono tutti *hobby* del Ceto medio.  
 
-
+<i>Negoziazione:</i>  
 
 <!--
+Come dice il Corvo: “Non può piovere per sempre“; ma può sicuramente piovere per tutto il tempo che sono fuori in bicicletta..
+<i>Depressione:</i>  
+5. accettazione.  
+
+a per voi, perché vi costringe a sprecare la vita inseguendo dei miraggi che non raggiungerete mai. E anche laddove riusciste, per tenacia o qualità personali, a conseguire il risultato atteso (diventare una rock-star, vincere alla lotteria, congiungervi carnalmente con questo, quella o entrambi), scoprirete immancabilmente che il gioco non valeva la candela della vostra vita, ormai, quasi del tutto combusta.
+Non mi crede, signor Direttore? allora faccia un po' il conto di quanti uomini e donne di “successo” siano dediti all'alcol, alle droghe o a una qualsiasi altra attività autodistruttiva. Hanno tutto ciò che si suppone debba rendere la vita migliore; pure, non sono felici: perché?
+La realtà è che voi non volete ignorarmi, ma avete bisogno di ignorarmi, perché, altrimenti, l'insensatezza delle vostre vite diventerebbe evidente e innegabile. Chi dedica la propria esistenza ad accumulare fortune che saranno poi sperperate dai suoi discendenti, chi si rinchiude volontariamente nella prigione di un ufficio, chi baratta il suo amor proprio per una firma su un contratto, non deve prendere coscienza della propria transitorietà, perché, se lo facesse, andrebbe contro agli interessi della società.
+-->
+
+<!--
+
+
  così come reagiscono individualmente
 n maniera coerente con le *cinque fasi del lutto* della dottoressa Kübler Ross:
 
