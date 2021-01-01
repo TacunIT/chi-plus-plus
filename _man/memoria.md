@@ -123,7 +123,7 @@ Se il programma fa una sola chiamata, come nel nostro esempio, il fatto che una 
 Per questo motivo, il linguaggio con la "J" ha un sistema di *garbage collection* che, come le squadre di pulizia dei Servizi Segreti, provvede a eliminare le prove dell'incompetenza dei suoi programmatori prima che questa arrechi danno ai sistemi. 
 Qualcuno ti dirà che non è vero, che i programmatori "J" sono dei professionisti competenti, ma ragiona: se esiste un sistema di raccolta dei rifiuti, ci dovrà pur essere qualcuno che li produce, no?
 
-<hr id="dottrina">
+<hr id="dottrina
  
 Come le variabili del C++, anche gi esseri umani sono chiamati a vivere, svolgono il loro compito e alla fine vengono rimossi dal sistema.
 Le risorse che occupiamo sono un insieme di spazioni, invece che delle sequenze di byte, ma anche ciò che comunemente definiamo: *noi* non è altro che un modo di vedere le trasizioni di energia all'interno del sistema.
@@ -147,11 +147,18 @@ Malgrado ciò, ne riconosceva l'importanza perché più prestiamo attenzione a t
 
 Un'altra differenza fra gli esseri umani e il codice C++ è il nostro rapporto con l'operatore `delete`.   
 Gli uomini hanno sempre avuto paura della morte e, da Gilgamesh in poi, hanno sempre cercato di sfuggirle o di annulare il suo operato.
-Arte, religione, scienza: potremmo dire che tutto ciò che di buono o quanto meno di notevole abbiamo prodoto come specie nasce dal naturale rifiuto della transitorietà della nostra esistenza.
-La morte è stata la causa, e talvolta il soggetto, dei migliori frutti del nostro ingegno e tutte queste creazioni, nel tempo, hanno creato un bozzolo culturale che, da un lato, ci ha protetto dalla paura e, dall'altro, ci ha dato degli ideali comuni per cui lottare. 
-Non sempre a fin di bene, purtroppo.  
-Nel secolo scorso, però, la Scienza ha squarciato questo bozzolo, dimostrando l'inconsistenza delle credenze di cui era costituito.
-Ha privato gli esseri umani delle loro bugie confortanti, sostituendole con delle certezze inquietanti. Nella migliore delle ipotesi.  
+Arte, religione, scienza: potremmo dire che tutto ciò che di buono o quanto meno di notevole abbiamo prodotto come specie nasce dal naturale rifiuto della transitorietà della nostra esistenza.
+La morte è stata la causa e, talvolta, il soggetto dei migliori frutti del nostro ingegno.
+Tutte queste creazioni, nel tempo, hanno creato un bozzolo culturale che, da un lato, ci ha protetto dalla paura e, dall'altro, ci ha dato degli ideali comuni per cui lottare, anche se non sempre a fin di bene.
+Negli ultimi due secoli, però, la Scienza ha squarciato questo bozzolo, privando gli esseri umani delle loro bugie confortanti e sostituendole con delle certezze inquietanti, mentre il suo figlio scemo (il Movimento del '68) ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società senza darle nulla in cambio, tranne la minigonna.    
+C'è un aneddoto apocrifo sul Maestro Canaro che parla proprio di questo:
+
+<blockquote class="incluso">
+{% include il-computer-della-zia.md %}
+</blockquote>
+
+L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito  
+
 La dottoressa Kübler Ross, nel 1969, ha elaborato la teoria delle cinque fasi del lutto:
 
 1. negazione;
@@ -160,7 +167,6 @@ La dottoressa Kübler Ross, nel 1969, ha elaborato la teoria delle cinque fasi d
 4. depressione;
 5. accettazione.
 
-Messa di fronte all'ineluttabilità della fine, l'Umanità ha seguìto lo stesso percorso.
 
 
 <!--
