@@ -160,7 +160,7 @@ C'è un aneddoto apocrifo sul Maestro Canaro che parla proprio di questo:
 L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito come un paziente a cui sia diagnosticato un male incurabile, elaborando il suo dolore secondo le cinque fasi definite dalla dottoressa Kübler Ross<a href="/man/note#kubler" class="nota"></a>:    
 
 <i>Negazione:</i> così come l'Epoca vittoriana aveva il tabù del sesso, la nostra “cultura” ha il tabù della morte: i nostri bis-nonni fingevano di non avere interessi carnali, noi fingiamo che la morte non esista.
-La neghiamo a parole, usando dei giri di parole per non nominarla: “Se n'è andato”, “Non c'è più”, “È scomparso”, neanche si stesse parlando di un evaso. 
+La neghiamo a parole, usando dei giri di parole per non nominarla: “Se n'è andato”, “Non c'è più”, “È scomparso”, neanche si stesse parlando di un evaso o di un illusionista. 
 La neghiamo nei fatti, isolando i moribondi nelle corsie d'ospedale, lontani dalle loro case e dai loro cari.
 La neghiamo nei nostri pensieri e nelle nostre azioni, perché altrimenti l'insensatezza delle nostre vite, spese inseguendo il miraggio effimero del successo<a href="/man/note#successo" class="nota"></a> diventerebbe evidente e innegabile.  
 
@@ -170,15 +170,18 @@ Gli scontri fra *Mods* e *Rockers* negli anni '60, le lotte armate degli anni '7
 <i>Negoziazione:</i> nel 1982 Jane Fonda pubblicò una videocassetta nella quale insegnava a fare ginnastica aerobica<a href="/man/note#aerobica" class="nota"></a> nel salotto di casa a chiunque potesse permettersi di spendere sessanta Dollari<a href="/man/note#sessanta" class="nota"></a> per un VHS. 
 Fu una delle videocassette più vendute di tutti i tempi e diede il via a una moda che divenne uno stile di vita per milioni di persone.
 La mania del *fitness*, insieme al rifiorire della spiritualità *New Age*, sono stati il modo in cui i popoli civilizzati hanno cercato di venire a patti con la nuova, terrificante realtà presentata loro dalla Scienza, prendendo atto dei proprii errori e cercando di porvi rimedio cambiando stile di vita.
-Quello che gli pseudo-mistici non hanno mai capito è che recitare il *Sutra del Loto* perché credi che possa aiutarti a realizzare i tuoi desiderii è una contraddizione in termini.
+Sfortunatamente, però, gli pseudo-mistici non hanno mai capito che recitare il *Sutra del Loto* perché credi che possa aiutarti a realizzare i tuoi desiderii è una contraddizione in termini.
 La religione è come gli antibiotici: non fa effetto se non prendi la dose intera.
 
-<i>Depressione:</i> la sindrome depressiva è la seconda malattia più diffusa al Mondo, dopo i disturbi cardiaci &mdash; segno evidente che la fase di negoziazione non ha sortito gli effetti sperati, né in un senso né in un altro.
-Fallito ogni tentativo di combattere la realtà, l'uomo del terzo Millennio  cerca scampo in una fuga che può essere o fisica o mentale e si è richiude in sé stesso così come il Giappone dei Tokugawa, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a href="/man/note#sakoku" class="nota"></a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
+<i>Depressione:</i> la sindrome depressiva è la seconda malattia più diffusa al Mondo, dopo i disturbi cardiaci, segno evidente che la fase di negoziazione non ha sortito gli effetti sperati.
+Fallito ogni tentativo di combattere la realtà, l'Uomo del terzo Millennio  ha cercato scampo nella fuga.
+Così come il Giappone dei Tokugawa, si è rinchiuso in sé stesso, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a href="/man/note#sakoku" class="nota"></a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
 La realtà è ovunque e anche isolandosi l'uomo non riesce a sfuggirla; anzi: l'isolamento genera un *feedback* che amplifica lo stato di malessere e rende ancora più difficile e improbabile il raggiungimento dello stadio successivo.
 
-<i>Accettazione:<i/>
- 
+<i>Accettazione:</i> il solo modo per salvarsi è rinunciare agli insegnamenti dei cattivi maestri del passato e accettare il fatto di non essere delle gocce d'acqua uniche e insostituibili, ma di far parte del mare.
+Chi vuole, potrà credere che in quel mare ci sia Poseidone; gli altri saranno liberi di pensare che ci siano solo pesci, molluschi e alghe: non ha importanza.
+
+
 <!--
 
 @todo: spiegare la differenza fra dichiarazione e definizione; parlare della parola-chiave extern
@@ -187,8 +190,6 @@ Utlizzare l'peratore `delete` per illustrare il rapporto del C’hi++ con la mor
 Questo approccio si rirova anche nel precetto:
 
     Amiamo ciò che ci ucciderà (se tutto va bene) 
-
-Introdurre il concetto di visibilità delle variabili, che serve in seguito per i PostIt.
 
 Questo è anche il capitolo in cui parlare della posizione di un certo dato in memoria, che può variare in successive esecuzioni del programma.
 Allo stesso modo, l'io cosciente di ciascuno di noi non è detto che si manifesterà nello stesso individuo, ma potrà essere "allocato" in altri esseri
