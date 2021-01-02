@@ -1,3 +1,7 @@
+## 0.17.5 (January 02, 2021)
+  - Redazione del testo
+  - Prima versione del racconto Il computer della zia
+
 ## 0.17.4 (January 02, 2021)
   - Aggiunto testo Lettera al Direttore nella directory _data
   - Completata prima versione del paragrafo sulla depressione
