@@ -99,7 +99,14 @@ quote:
         <li>
             @todo: spiegare cosa sia stato il S.
             <a href="Javascript:history.back()" name="sakoku">&#8617;</a>
-        </li>    </ol>
+        </li>    
+        <li>
+            Citato da A. K. <span>Coomaraswami</span>, 
+            <i>Tempo ed Eternità</i>, p. 22
+            Luni, Milano, 2003
+            <a href="Javascript:history.back()" name="yoga">&#8617;</a>
+        </li>
+    </ol>
 
     <h3>Istruzioni condizionali</h3>
     <ol>

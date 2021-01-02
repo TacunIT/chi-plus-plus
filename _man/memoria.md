@@ -87,7 +87,7 @@ Se lo passiamo come parametro all'operatore `<<`, dato che si tratta di un punta
 cout << stringa << endl;
 ```
 
-Per conoscere il suo valore effettivo, dobbiamo convertirlo in un puntatore `void` con un'operazione di <a href="/man/tipi-di-dato#casting">casting</a>: 
+Per conoscere il suo valore effettivo, dobbiamo convertirlo in un puntatore `void` con un'operazione di <a class="nota" href="/man/tipi-di-dato#casting">casting</a>: 
 
 ```
 cout << (void*)stringa << endl;
@@ -137,7 +137,7 @@ Era un giorno piovoso, perciò Tenno portava zoccoli di legno e aveva con sé l�
 Dopo averlo salutato, Nan-in disse: “Immagino che tu abbia lasciato gli zoccoli nell’anticamera. Vorrei sapere se hai messo l’ombrello alla destra o alla
 sinistra degli zoccoli”.
 Tenno, sconcertato, non seppe rispondere subito. Si rese conto che non sapeva portare il suo Zen in ogni istante. 
-Diventò allievo di Nan-in e studiò ancora sei anni per perfezionare il suo Zen di ogni istante.<a href="/man/note#zen" class="nota"></a>
+Diventò allievo di Nan-in e studiò ancora sei anni per perfezionare il suo Zen di ogni istante.<a class="nota" href="/man/note#zen"></a>
 
 Il Maestro Canaro detestava questo *Koan* perché era molto distratto.
 Se Nan-in l'avesse fatta a lui, la domanda, probabilmente l'avrebbe guardato con aria infastidita e gli avrebbe chiesto: “Quali zoccoli?”.
@@ -157,17 +157,17 @@ C'è un aneddoto apocrifo sul Maestro Canaro che parla proprio di questo:
 {% include il-computer-della-zia.md %}
 </blockquote>
 
-L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito come un paziente a cui sia diagnosticato un male incurabile, elaborando il suo dolore secondo le cinque fasi definite dalla dottoressa Kübler Ross<a href="/man/note#kubler" class="nota"></a>:    
+L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito come un paziente a cui sia diagnosticato un male incurabile, elaborando il suo dolore secondo le cinque fasi definite dalla dottoressa Kübler Ross<a class="nota" href="/man/note#kubler"></a>:    
 
 <i>Negazione:</i> così come l'Epoca vittoriana aveva il tabù del sesso, la nostra “cultura” ha il tabù della morte: i nostri bis-nonni fingevano di non avere interessi carnali, noi fingiamo che la morte non esista.
 La neghiamo a parole, usando dei giri di parole per non nominarla: “Se n'è andato”, “Non c'è più”, “È scomparso”, neanche si stesse parlando di un evaso o di un illusionista. 
 La neghiamo nei fatti, isolando i moribondi nelle corsie d'ospedale, lontani dalle loro case e dai loro cari.
-La neghiamo nei nostri pensieri e nelle nostre azioni, perché altrimenti l'insensatezza delle nostre vite, spese inseguendo il miraggio effimero del successo<a href="/man/note#successo" class="nota"></a> diventerebbe evidente e innegabile.  
+La neghiamo nei nostri pensieri e nelle nostre azioni, perché altrimenti l'insensatezza delle nostre vite, spese inseguendo il miraggio effimero del successo<a class="nota" href="/man/note#successo"></a> diventerebbe evidente e innegabile.  
 
 <i>Rabbia:</i> anche se rabbia e aggressività sono sempre state presenti nella nostra storia, dalla metà del Secolo scorso, oltre che dall'oppressione e dal disagio, hanno cominciato a fiorire rigogliose anche dal benessere.
 Gli scontri fra *Mods* e *Rockers* negli anni '60, le lotte armate degli anni '70, il *Punk* e, in tempi più recenti, i *foreign fighters* e l'aggressività nei *social-network*: nessuno di questi fenomeni nasce nei ghetti o da uno stato di bisogno, sono tutti degli *hobby* del Ceto medio.  
 
-<i>Negoziazione:</i> nel 1982 Jane Fonda pubblicò una videocassetta nella quale insegnava a fare ginnastica aerobica<a href="/man/note#aerobica" class="nota"></a> nel salotto di casa a chiunque potesse permettersi di spendere sessanta Dollari<a href="/man/note#sessanta" class="nota"></a> per un VHS. 
+<i>Negoziazione:</i> nel 1982 Jane Fonda pubblicò una videocassetta nella quale insegnava a fare ginnastica aerobica<a class="nota" href="/man/note#aerobica"></a> nel salotto di casa a chiunque potesse permettersi di spendere sessanta Dollari<a class="nota" href="/man/note#sessanta"></a> per un VHS. 
 Fu una delle videocassette più vendute di tutti i tempi e diede il via a una moda che divenne uno stile di vita per milioni di persone.
 La mania del *fitness*, insieme al rifiorire della spiritualità *New Age*, sono stati il modo in cui i popoli civilizzati hanno cercato di venire a patti con la nuova, terrificante realtà presentata loro dalla Scienza, prendendo atto dei proprii errori e cercando di porvi rimedio cambiando stile di vita.
 Sfortunatamente, però, gli pseudo-mistici non hanno mai capito che recitare il *Sutra del Loto* perché credi che possa aiutarti a realizzare i tuoi desiderii è una contraddizione in termini.
@@ -175,20 +175,24 @@ La religione è come gli antibiotici: non fa effetto se non prendi la dose inter
 
 <i>Depressione:</i> la sindrome depressiva è la seconda malattia più diffusa al Mondo, dopo i disturbi cardiaci, segno evidente che la fase di negoziazione non ha sortito gli effetti sperati.
 Fallito ogni tentativo di combattere la realtà, l'Uomo del terzo Millennio  ha cercato scampo nella fuga.
-Così come il Giappone dei Tokugawa, si è rinchiuso in sé stesso, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a href="/man/note#sakoku" class="nota"></a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
+Così come il Giappone dei Tokugawa, si è rinchiuso in sé stesso, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a class="nota" href="/man/note#sakoku"></a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
 La realtà è ovunque e anche isolandosi l'uomo non riesce a sfuggirla; anzi: l'isolamento genera un *feedback* che amplifica lo stato di malessere e rende ancora più difficile e improbabile il raggiungimento dello stadio successivo.
 
 <i>Accettazione:</i> il solo modo per salvarsi è rinunciare agli insegnamenti dei cattivi maestri del passato e accettare il fatto di non essere delle gocce d'acqua uniche e insostituibili, ma di far parte del mare.
 Chi vuole, potrà credere che in quel mare ci sia Poseidone; gli altri saranno liberi di pensare che ci siano solo pesci, molluschi e alghe: non ha importanza.
 Ciò che conta è riacquistare un senso di appartenenza a qualcosa che va oltre le nostre brevi e limitate esistenze.
 Dobbiamo vincere la nostra battaglia con l'Annosa Dicotomia, cercare una soddisfazione ai nostri bisogni invece che ai nostri desiderii.
-Dobbiamo smettere di confondere la fama con l'importanza ed essere consapevoli del fatto che ciascuno di noi è &mdash; o, meglio: *può essere* &mdash; fondamentale per l'Universo.
+Dobbiamo smettere di inseguire una fama effimera ed essere consapevoli del fatto che ciascuno di noi può modificare l'evoluzione dell'Mondo con le sue azioni.  
+Secondo lo *Yoga Sutra Bhāṣya*<a class="nota" href="/man/note#yoga"></a>:
 
-Secondo lo *Yoga Sutra Bhāṣya* <a href="/man/note#kubler" class="nota"></a>
+> Il Mondo intero subisce una mutazione a ogni istante; così, tutte le qualità esteriori del Mondo dipendono da questo istante presente.
+
+Così come tutti gli istanti sono importanti, per il Mondo, ciascun essere è importante per l'Universo, se svolge il compito che gli è stato assegnato.
 
 <!--
+Il Maestro Canaro raggiunse il primo stato di illuminazione quando vide un arbusto crescere su una parete di roccia a picco sul mare.
 
-Lo *Yoga Sutra Bhāṣya* 
+
 @todo: spiegare la differenza fra dichiarazione e definizione; parlare della parola-chiave extern
 
 Utlizzare l'peratore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. 
