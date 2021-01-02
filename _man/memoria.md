@@ -149,7 +149,7 @@ Un'altra differenza fra gli esseri umani e il codice C++ è il nostro rapporto c
 Gli uomini hanno sempre avuto paura della morte e, da Gilgamesh in poi, hanno sempre cercato di sfuggirle o di annulare il suo operato.
 Arte, religione, scienza: potremmo dire che tutto ciò che di buono o quanto meno di notevole abbiamo prodotto come specie nasce dal naturale rifiuto della transitorietà della nostra esistenza.
 La morte è stata la causa e, talvolta, il soggetto dei migliori frutti del nostro ingegno.
-Tutte queste creazioni, nel tempo, hanno creato un bozzolo culturale che, da un lato, ci ha protetto dalla paura e, dall'altro, ci ha dato degli ideali comuni per cui lottare, anche se non sempre a fin di bene &mdash; ma questo si potrebbe dire anche della musica.
+Tutte queste creazioni, nel tempo, hanno creato un bozzolo culturale che, da un lato, ci ha protetto dalla paura e, dall'altro, ci ha dato degli ideali comuni per cui lottare, anche se non sempre a fin di bene.
 Negli ultimi due secoli, però, la Scienza ha squarciato questo bozzolo, privando gli esseri umani delle loro bugie confortanti e sostituendole con delle certezze inquietanti, mentre il suo figlio scemo (il Movimento del '68) ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società senza darle nulla in cambio, tranne la minigonna.    
 C'è un aneddoto apocrifo sul Maestro Canaro che parla proprio di questo:
 
@@ -169,13 +169,12 @@ Gli scontri fra *Mods* e *Rockers* negli anni '60, le lotte armate degli anni '7
 
 <i>Negoziazione:</i> nel 1982 Jane Fonda pubblicò una videocassetta nella quale insegnava a fare ginnastica aerobica<a href="/man/note#aerobica" class="nota"></a> nel salotto di casa a chiunque potesse permettersi di spendere sessanta Dollari<a href="/man/note#sessanta" class="nota"></a> per un VHS. 
 Fu una delle videocassette più vendute di tutti i tempi e diede il via a una moda che divenne uno stile di vita per milioni di persone.
-La mania del *fitness*, insieme al rifiorire della spiritualità *New Age*, sono stati il modo in cui i popoli civilizzati hanno cercato di venire a patti con la nuova, terrificante realtà, prendendo atto dei proprii errori e cercando di porvi rimedio cambiando stile di vita.
+La mania del *fitness*, insieme al rifiorire della spiritualità *New Age*, sono stati il modo in cui i popoli civilizzati hanno cercato di venire a patti con la nuova, terrificante realtà presentata loro dalla Scienza, prendendo atto dei proprii errori e cercando di porvi rimedio cambiando stile di vita.
 Quello che gli pseudo-mistici non hanno mai capito è che recitare il *Sutra del Loto* perché credi che possa aiutarti a realizzare i tuoi desiderii è una contraddizione in termini.
 La religione è come gli antibiotici: non fa effetto se non prendi la dose intera.
 
 <i>Depressione:</i> la sindrome depressiva è la seconda malattia più diffusa al Mondo, dopo i disturbi cardiaci &mdash; segno evidente che la fase di negoziazione non ha sortito gli effetti sperati, né in un senso né in un altro.
-Fallito ogni tentativo di combattere la realtà, l'uomo del terzo Millennio  cerca scampo in una fuga che può essere o fisica o mentale e si è richiude in sé stesso così come il Giappone dei Tokugawa, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a href="/man/note#sakoku" class="nota"></a>.
-La fuga però non dà gli effetti sperati, perché la Realtà non è un predatore, che possiamo sperare di seminare.
+Fallito ogni tentativo di combattere la realtà, l'uomo del terzo Millennio  cerca scampo in una fuga che può essere o fisica o mentale e si è richiude in sé stesso così come il Giappone dei Tokugawa, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a href="/man/note#sakoku" class="nota"></a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
 La realtà è ovunque e anche isolandosi l'uomo non riesce a sfuggirla; anzi: l'isolamento genera un *feedback* che amplifica lo stato di malessere e rende ancora più difficile e improbabile il raggiungimento dello stadio successivo.
 
 <i>Accettazione:<i/>
