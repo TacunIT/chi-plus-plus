@@ -9,7 +9,8 @@ Sotto lo sguardo sempre più accorato di sua zia, il Maestro Canaro esaminò le 
 «Non funzionava, così l'ho buttato,» rispose il Maestro.<br />
 «Ma non si poteva aggiustare?» chiese la zia, che ancora non riusciva a capacitarsi di ciò che era successo.<br />
 «Forse sì, ma ci sarebbe voluto un sacco di tempo. Meglio buttarlo via.»<br />
-«E io adesso come lavoro, senza computer?» chiese la zia. Il Maestro Canaro si strinse nelle spalle.<br />
+«E io adesso come lavoro, senza computer?» chiese la zia, attonita. Il Maestro Canaro si strinse nelle spalle.<br />
 «Non ne ho idea, ma tanto non avresti potuto lavorare nemmeno con quello, perché era rotto.»<br />
 «Lo so che era rotto!» esclamò la zia. «Ma quando una cosa necessaria è rotta, la si aggiusta, non la si butta via!»<br />
+Lungi dall'apparire contrito, il Maestro Canaro si alzò in piedi e, fissando negli occhi la zia, esclamò: <br/> 
 «E allora, voi, nel Sessantotto?!» 

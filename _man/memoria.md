@@ -180,10 +180,15 @@ La realtà è ovunque e anche isolandosi l'uomo non riesce a sfuggirla; anzi: l'
 
 <i>Accettazione:</i> il solo modo per salvarsi è rinunciare agli insegnamenti dei cattivi maestri del passato e accettare il fatto di non essere delle gocce d'acqua uniche e insostituibili, ma di far parte del mare.
 Chi vuole, potrà credere che in quel mare ci sia Poseidone; gli altri saranno liberi di pensare che ci siano solo pesci, molluschi e alghe: non ha importanza.
+Ciò che conta è riacquistare un senso di appartenenza a qualcosa che va oltre le nostre brevi e limitate esistenze.
+Dobbiamo vincere la nostra battaglia con l'Annosa Dicotomia, cercare una soddisfazione ai nostri bisogni invece che ai nostri desiderii.
+Dobbiamo smettere di confondere la fama con l'importanza ed essere consapevoli del fatto che ciascuno di noi è &mdash; o, meglio: *può essere* &mdash; fondamentale per l'Universo.
 
+Secondo lo *Yoga Sutra Bhāṣya* <a href="/man/note#kubler" class="nota"></a>
 
 <!--
 
+Lo *Yoga Sutra Bhāṣya* 
 @todo: spiegare la differenza fra dichiarazione e definizione; parlare della parola-chiave extern
 
 Utlizzare l'peratore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. 
