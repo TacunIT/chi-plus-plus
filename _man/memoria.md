@@ -176,14 +176,15 @@ La religione è come gli antibiotici: non fa effetto se non prendi la dose inter
 <i>Depressione:</i> la sindrome depressiva è la seconda malattia più diffusa al Mondo, dopo i disturbi cardiaci, segno evidente che la fase di negoziazione non ha sortito gli effetti sperati.
 Fallito ogni tentativo di combattere la realtà, l'Uomo del terzo Millennio  ha cercato scampo nella fuga.
 Così come il Giappone dei Tokugawa, si è rinchiuso in sé stesso, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a class="nota" href="/man/note#sakoku"></a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
-La realtà è ovunque e anche isolandosi l'uomo non riesce a sfuggirla; anzi: l'isolamento genera un *feedback* che amplifica lo stato di malessere e rende ancora più difficile e improbabile il raggiungimento dello stadio successivo.
+La realtà è ovunque e anche isolandoci non possiamo sfuggirle; anzi: la solitudine genera un *feedback* che amplifica lo stato di malessere e rende ancora più difficile e improbabile il raggiungimento dello stadio successivo.
 
 <i>Accettazione:</i> il solo modo per salvarsi è rinunciare agli insegnamenti dei cattivi maestri del passato e accettare il fatto di non essere delle gocce d'acqua uniche e insostituibili, ma di far parte del mare.
-Chi vuole, potrà credere che in quel mare ci sia Poseidone; gli altri saranno liberi di pensare che ci siano solo pesci, molluschi e alghe: non ha importanza.
-Ciò che conta è riacquistare un senso di appartenenza a qualcosa che va oltre le nostre brevi e limitate esistenze.
-Dobbiamo vincere la nostra battaglia con l'Annosa Dicotomia, cercare una soddisfazione ai nostri bisogni invece che ai nostri desiderii.
-Dobbiamo smettere di inseguire una fama effimera ed essere consapevoli del fatto che ciascuno di noi può modificare l'evoluzione dell'Mondo con le sue azioni.  
-Secondo lo *Yoga Sutra Bhāṣya*<a class="nota" href="/man/note#yoga"></a>:
+Chi vuole, potrà credere che in quel mare ci sia Poseidone; gli altri saranno liberi di pensare che ci siano solo pesci, molluschi e alghe: non ha importanza; 
+ciò che conta è sottrarsi all'influenza dell'Entropia
+le nostre brevi e limitate esistenze.
+
+Dobbiamo vincere la nostra battaglia con l'Annosa Dicotomia e cercare una soddisfazione ai nostri bisogni invece che ai nostri desiderii.
+Dobbiamo smettere di inseguire una fama effimera ed essere consapevoli del fatto che ciascuno di noi può modificare l'evoluzione dell'Mondo con le sue azioni. Secondo lo *Yoga Sutra Bhāṣya*<a class="nota" href="/man/note#yoga"></a>:
 
 > Il Mondo intero subisce una mutazione a ogni istante; così, tutte le qualità esteriori del Mondo dipendono da questo istante presente.
 

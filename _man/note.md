@@ -32,18 +32,16 @@ quote:
     <h3>Tipi di dato</h3>
     <ol>
         <li>
-            <span>Agostino</span>, <i>Confessioni</i> VII, 11 
+            <span>Agostino</span>, <i>Confessioni</i> (VII, 11) 
             <a href="Javascript:history.back()" name="agostino">&#8617;</a>
         </li>
         <li>
-            <i>
-            Love thou thy dream<br />
+            <i>“Love thou thy dream<br />
             all base love scorning,<br />
             love thou the wind<br />
             and here take warning<br />
             that dreams alone can truly be,<br />
-            for ‘tis in dream I come to thee.
-            </i><br /> 
+            for ‘tis in dream I come to thee”</i><br /> 
             E. <span>Pound</span>, <i>Song</i> 
             <a href="Javascript:history.back()" name="pound">&#8617;</a>
         </li>
@@ -51,6 +49,11 @@ quote:
 
     <h3>Struttura dei programmi C++</h3>
     <ol>
+        <li>        
+            <i>“Il Brahman ha due aspetti, il tempo e il Non-Tempo. Quello che è prima del sole è il Non-Tempo, senza parti”</i><br />
+            <i>Maitri Upanishad</i> (VI, 15)
+            <a href="Javascript:history.back()" name="non-tempo">&#8617;</a>
+        </li>
         <li>
             P. <span>Scarabelli</span>, M. <span>Vinti</span>,
             <i>op.cit.</i>
@@ -61,7 +64,7 @@ quote:
     <h3>Il preprocessore</h3>
     <ol>
         <li>
-            <i>Se un maschio ha ereditato dal padre una coda lunga, è probabile che abbia ereditato dalla madre anche i geni che l’hanno indotta a scegliere la coda lunga del padre</i><br /> 
+            <i>“Se un maschio ha ereditato dal padre una coda lunga, è probabile che abbia ereditato dalla madre anche i geni che l’hanno indotta a scegliere la coda lunga del padre”</i><br /> 
             R. <span>Dawkins</span>, 
             <i>L'Orologiaio Cieco</i>, 
             Mondadori, Milano, 2016 
@@ -83,8 +86,8 @@ quote:
         </li>
         <li>
             Come disse Karl Kraus:<br />
-            <i>È ben nota la pretesa di avere un posto al sole. 
-            Meno noto è che il sole tramonta appena il posto è raggiunto.</i>
+            <i>“È ben nota la pretesa di avere un posto al sole. 
+            Meno noto è che il sole tramonta appena il posto è raggiunto”.</i>
             <a href="Javascript:history.back()" name="kubler">&#8617;</a>
         </li>
         <li>
@@ -126,7 +129,7 @@ quote:
             <a href="Javascript:history.back()" name="bokuju">&#8617;</a>
         </li>
         <li>
-            <i>Nell’universo non esistono dèi , non esistono nazioni né denaro né diritti umani né leggi , e non esiste alcuna giustizia che non sia nell’immaginazione comune degli esseri umani</i><br />  
+            <i>“Nell’universo non esistono dèi , non esistono nazioni né denaro né diritti umani né leggi , e non esiste alcuna giustizia che non sia nell’immaginazione comune degli esseri umani”</i><br />  
             Y .N. <span>Harari</span>,
             <i>Sapiens. Da animali a dèi: Breve storia dell'umanità. </i>  
             Bompiani, Milano, 2019

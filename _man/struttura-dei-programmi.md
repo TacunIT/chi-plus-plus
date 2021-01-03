@@ -205,7 +205,7 @@ Ciò che non è corretto (e non solo in Poe) è l'idea che l'espansione dell'Uni
 La vita dell'Universo è ciclica: quando è preponderante l'Entropia, l'Universo si espande, come in questo momento; quando "vince" la Gravità, l'Universo collassa su sé stesso e torna all'Uno.
 Ciò che evita la stasi in uno dei due punti estremi del ciclo &mdash; l'Uno e la morte termica &mdash; è una terza forza, che il Maestro Canaro chiamava:  [*l'annosa dicotomia fra ciò che desideriamo è ciò di cui abbiamo bisogno*](/man/mitopoietica#annosa-dicotomia).   
 Così come una scatola di mattoncini Lego contiene tutti gli edifici che hai costruito e che costruirai in futuro, nell'Uno primigenio è concentrata tutta l'Energia dell'Universo e quindi ogni essere animato o inanimato che sia mai esistito o che mai esisterà.
-La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo, che non può essere misurato perché non esistono eventi in base a cui farlo.
+La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo, che non può essere misurato perché non esistono eventi in base a cui farlo.<a class="nota" href="/man/note#non-tempo"></a> 
 Non ci sono né morte, né sofferenza, né malattia, né separazione; l'Uno è, di fatto, ciò che la maggior parte degli esseri senzienti descrive e auspica come un Universo perfetto.  
 L'Energia, inizialmente, è soddisfatta, ma a poco a poco l'appagamento per la raggiunta Unità scema e cresce invece il desiderio di qualcosa di diverso da quella cristallina perfezione.
 Così come di un vecchio amore si ricoda solo ciò che ci fa piacere ricordare, obliando ciò che non andava, l'Energia ripensa a quando l'Universo non era buio e vuoto, ma risplendeva della luce di innumerevoli stelle e si chiede se, in fondo, non sia quella, l'esistenza a cui ambisce, se non sia quello, in effetti, il Paradiso.  
@@ -214,8 +214,7 @@ L'Energia disintegra l'enorme buco nero in cui si era rannicchiata e si espande 
 L'Era della Gravità finisce e comincia una nuova Era dell'Entropia; qualcosa di molto simile a quello che trovi descritto nella *Bhagavad-Gita*:
 
 <div class="citazione">
-{% include  bhagavad-gita-1.html %}
-<a href="/man/note/#cicli" class="nota"></a>
+{% include  bhagavad-gita-1.html %}<a href="/man/note/#cicli" class="nota"></a>
 </div>
 
 Anche la Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista (o viceversa): il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono ciò che ne causa la disgregazione, generando un Universo imperfetto e doloroso, aiutati dal *διάβολος*, ovvero da colui che *separa* o *scaglia attraverso*, altrimenti noto come: *Luci-fero*.  
