@@ -128,6 +128,8 @@ L'ho trasformato perciò in [un documento a sé stante](http://chiplusplus.org/a
 
 Se volete sapere qualcosa di più sul *C'hi++*, vi suggerisco di leggere [**Proposta per una metafisica open-source**](http://chiplusplus.org/assets/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf).
 
+Il sito del C'hi++ è all'indirizzo: [https://chiplusplus.org/](https://chiplusplus.org/man/). 
+
 Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di GitHub.
 
 
