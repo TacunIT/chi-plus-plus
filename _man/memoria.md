@@ -179,20 +179,20 @@ Così come il Giappone dei Tokugawa, si è rinchiuso in sé stesso, ma senza il 
 La realtà è ovunque e anche isolandoci non possiamo sfuggirle; anzi: la solitudine genera un *feedback* che amplifica lo stato di malessere e rende ancora più difficile e improbabile il raggiungimento dello stadio successivo.
 
 <i>Accettazione:</i> il solo modo per salvarsi è rinunciare agli insegnamenti dei cattivi maestri del passato e accettare il fatto di non essere delle gocce d'acqua uniche e insostituibili, ma di far parte del mare.
-Chi vuole, potrà credere che in quel mare ci sia Poseidone; gli altri saranno liberi di pensare che ci siano solo pesci, molluschi e alghe: non ha importanza; 
-ciò che conta è sottrarsi all'influenza dell'Entropia
-le nostre brevi e limitate esistenze.
-
-Dobbiamo vincere la nostra battaglia con l'Annosa Dicotomia e cercare una soddisfazione ai nostri bisogni invece che ai nostri desiderii.
-Dobbiamo smettere di inseguire una fama effimera ed essere consapevoli del fatto che ciascuno di noi può modificare l'evoluzione dell'Mondo con le sue azioni. Secondo lo *Yoga Sutra Bhāṣya*<a class="nota" href="/man/note#yoga"></a>:
+Chi vuole, potrà credere che in quel mare ci sia Poseidone; gli altri saranno liberi di pensare che ci siano solo pesci, molluschi e alghe: non ha importanza; ciò che conta è sottrarsi all'influenza separatrice dell'Entropia e riacquistare un senso di appartenenza a qualcosa che va oltre le nostre brevi e limitate esistenze.
+Solo così, potremo vincere la nostra battaglia contro l'Annosa Dicotomia.
+Solo così, potremo smettere di inseguire una fama transeunte e trovare forza nella consapevolezza del fatto che ciascuno di noi può modificare l'evoluzione dell'Mondo con le sue azioni. Secondo lo *Yoga Sutra Bhāṣya*<a class="nota" href="/man/note#yoga"></a>:
 
 > Il Mondo intero subisce una mutazione a ogni istante; così, tutte le qualità esteriori del Mondo dipendono da questo istante presente.
 
 Così come tutti gli istanti sono importanti, per il Mondo, ciascun essere è importante per l'Universo, se svolge il compito che gli è stato assegnato.
+È noto che il Maestro Canaro raggiunse il primo stato di Illuminazione quando vide un arbusto crescere su una parete di roccia a picco sul mare.
+Un arbusto apparentemente inutile: i suoi semi non avrebbero mai raggiunto una terra dove germogliare e i suoi rami erano troppo esili perché un uccello ci potesse costruire il suo nido; malgrado ciò, la caparbietà con cui quella pianta svolgeva il ruolo che gli era stato assegnato, permise al Maestro Canaro di capire ciò che molti libri non erano riusciti a spiegargli, posando la prima pietra di quello che sarebbe sato poi il suo insegnamento. 
 
 <!--
-Il Maestro Canaro raggiunse il primo stato di illuminazione quando vide un arbusto crescere su una parete di roccia a picco sul mare.
 
+“Fintanto che l'anima non conoscerà tutto ciò che c'è da conoscere, essa non potrà raggiungere il bene sconosciuto”
+Meister Eckart, citato da A.K.Coomaraswami, op. cit.
 
 @todo: spiegare la differenza fra dichiarazione e definizione; parlare della parola-chiave extern
 
