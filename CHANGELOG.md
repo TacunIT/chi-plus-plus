@@ -1,3 +1,8 @@
+## 0.18.0 (January 03, 2021)
+  - Creata la directory /opt, per i testi che non fanno parte del Manuale
+  - Redazione del capitolo sulla memoria
+  - Aggiunta citazione da Maitri Upanishad sul Non-Tempo
+
 ## 0.17.5 (January 02, 2021)
   - Redazione del testo
   - Prima versione del racconto Il computer della zia
