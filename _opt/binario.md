@@ -1,9 +1,9 @@
 ---
-status:     redazione
 layout:     pagina
 class:      racconto
 title:      Binario (triste e solitario)
 permalink:  /opt/binario
+footer:     true
 ---
 
 C’era una volta un computer grande e potente, fedele servitore di una società di ingegneria altrettanto grande e potente. 

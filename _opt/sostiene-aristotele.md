@@ -2,7 +2,7 @@
 layout:     pagina
 class:      articolo
 title:      Sostiene Aristotele
-permalink:  /opt/sostiene-aristotele/
+permalink:  /opt/sostiene-aristotele
 footer:     true
 ---
 
