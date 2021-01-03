@@ -6,6 +6,10 @@ layout:   log
 class:    articolo
 ---
 
+“Fintanto che l'anima non conoscerà tutto ciò che c'è da conoscere, essa non potrà raggiungere il bene sconosciuto”
+Meister Eckart, citato da A.K.Coomaraswami, op. cit.
+
+
 I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale.
 Rifiutano le accettazioni per fede e contestano la non comprovabilità scientifica dei precetti religiosi.
 Fanno bene: dobbiamo sempre mettere in discussione i princip&icirc; sui quali basiamo le nostre convinzioni; purtroppo, però, le leggi che regolano la vita dei non credenti sono dogmatiche e incerte come quelle dei fedeli.

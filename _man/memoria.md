@@ -13,7 +13,7 @@ Come ti ho detto, tutti i linguaggi di programmazione sono un modo di vedere la 
 Quando tu *dichiari* una variabile con un'istruzione come: 
 
 ```
-int a = 1;
+signed int a = 1;
 ```
 
 in realtà, stai dicendo al compilatore di prendere un'area di memoria di 32 bit (un `int` è grande 4 byte, ricordi?), associarle il nome `a` e scriverci dentro il valore binario:
@@ -185,23 +185,51 @@ Solo così, potremo smettere di inseguire una fama transeunte e trovare forza ne
 
 > Il Mondo intero subisce una mutazione a ogni istante; così, tutte le qualità esteriori del Mondo dipendono da questo istante presente.
 
-Così come tutti gli istanti sono importanti, per il Mondo, ciascun essere è importante per l'Universo, se svolge il compito che gli è stato assegnato.
+Così come tutti gli istanti sono importanti, per il Mondo, ciascun essere è importante per l'Universo, se svolge il compito che gli è stato assegnato; anche qualcuno o qualcosa che apparentemente è insignificante.
 È noto che il Maestro Canaro raggiunse il primo stato di Illuminazione quando vide un arbusto crescere su una parete di roccia a picco sul mare.
-Un arbusto apparentemente inutile: i suoi semi non avrebbero mai raggiunto una terra dove germogliare e i suoi rami erano troppo esili perché un uccello ci potesse costruire il suo nido; malgrado ciò, la caparbietà con cui quella pianta svolgeva il ruolo che gli era stato assegnato, permise al Maestro Canaro di capire ciò che molti libri non erano riusciti a spiegargli, posando la prima pietra di quello che sarebbe sato poi il suo insegnamento. 
+Un arbusto apparentemente inutile: i suoi semi non avrebbero mai raggiunto una terra dove germogliare e i suoi rami erano troppo esili perché un uccello ci potesse costruire il suo nido; malgrado ciò, la caparbietà con cui quella pianta svolgeva il ruolo che gli era stato assegnato, permise al Maestro Canaro di capire ciò che molti libri non erano riusciti a spiegargli, posando la prima pietra di quello che sarebbe sato poi il suo insegnamento.  
+Quello che noi percepiamo come il nostro “valore” è relativo. 
+Pensa alla variabile `a` che abbiamo visto all'inizio: 
+
+```
+00000000 00000000 00000000 00000001
+```
+
+Il bit iniziale vale `0`, che è un valore nullo, se lo consideri dal punto di vista del singolo bit, ma se invece lo valuti in funzione della variabile, diventa il valore da cui <a href="/man/tipi-di-dato#modificatori">dipende il segno della variabile</a>.
+Se per un caso il valore di quel bit diventasse `1`, il valore della variabile a cui appartiene diventerebbe negativo, con delle ripercussioni imprevedibili sul programma a cui appartiene.
+Molte, troppe persone sono come quel bit e pensano di valere zero perché considerano il proprio valore solo in termini soggettivi.
+Mesmerizzati dall'Annosa Dicotomia, spendono tutte le loro energie cercando di valere `1`, distraendosi da quello che sarebbe stato il loro destino, con conseguenze molto più gravi di un'alterazione di segno in una variabile.
+
+---
+
+Come ti ho detto in una delle nostre prime conversazioni, il buon programmatore deve sempre controllare che il suo codice non contenga dei difetti.
+Ciò che ti ho appena detto ne ha uno, piuttosto grave: può essere utilizzato come pretesto per creare un sistema di caste che limiti le possibilità di crescita di coloro che effettivamente sono destinati ad aumentare il loro valore.
+La domanda quindi è: come può, un bit o un essere senziente, decidere quale sia il suo valore esatto?
+Sicuramente non può dirglielo un'Autorità costituita né tanto meno una consuetudine.
+La famiglia può dargli dei suggerimenti, ma non può decidere per lui: i genitori hanno sicuramente più esperienza dei figli, ma non sono infallibili.
+La risposta è in una frase di Jacopone da Todi:
+
+> Prima devi sape' perché stai ar monno.   
+ Quanno sai er perché, te devi impara' a stacce .
+
+In queste due frasi è racchiuso il senso della Vita: capire quale sia il proprio ruolo e svolgerlo al meglio delle proprie possibilità.
 
 <!--
 
-“Fintanto che l'anima non conoscerà tutto ciò che c'è da conoscere, essa non potrà raggiungere il bene sconosciuto”
-Meister Eckart, citato da A.K.Coomaraswami, op. cit.
+C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musashi: 
 
-@todo: spiegare la differenza fra dichiarazione e definizione; parlare della parola-chiave extern
+>Non bisogna interferire nel funzionamento dell’Universo,  
+ ma prima è necessario capire quale sia,
+    il funzionamento dell’Universo
 
 Utlizzare l'peratore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. 
 Questo approccio si rirova anche nel precetto:
 
     Amiamo ciò che ci ucciderà (se tutto va bene) 
 
-Questo è anche il capitolo in cui parlare della posizione di un certo dato in memoria, che può variare in successive esecuzioni del programma.
-Allo stesso modo, l'io cosciente di ciascuno di noi non è detto che si manifesterà nello stesso individuo, ma potrà essere "allocato" in altri esseri
+
+@todo: spiegare la differenza fra dichiarazione e definizione; parlare della parola-chiave extern
+
+@todo: decidere se parlare della posizione di un certo dato in memoria, che può variare in successive esecuzioni del programma. Allo stesso modo, l'io cosciente di ciascuno di noi non è detto che si manifesterà nello stesso individuo, ma potrà essere "allocato" in altri esseri
 
 -->
