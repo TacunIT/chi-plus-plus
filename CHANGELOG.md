@@ -1,3 +1,9 @@
+## 0.18.1 (January 03, 2021)
+  - Modificata la grafica delle note del Manuale
+  - Aggiunto link a sito C'hi++ al file MANIFEST
+  - Aggiunto alle bozze il file dei Dieci Comandamenti.
+  - Rimossa directory src/img e aggiornato elenco directory nel file README
+
 ## 0.18.0 (January 03, 2021)
   - Creata la directory /opt, per i testi che non fanno parte del Manuale
   - Redazione del capitolo sulla memoria
