@@ -39,7 +39,6 @@
 }
 
 
-
 * {
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
@@ -717,9 +716,11 @@ SECTION.bibliografia LI {
 SECTION.note OL LI A {
     word-break: break-all;
 }
-SECTION.note OL LI A:focus {
-    background-color: $colorGold;
+SECTION.note OL LI A I {
     color: #fff;
+}
+SECTION.note OL LI A:target I {
+    color: $colorGold;
 }
 SECTION.note OL LI BLOCKQUOTE {
     font-size: 1rem;
