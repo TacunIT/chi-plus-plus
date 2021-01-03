@@ -20,36 +20,40 @@ exclude: [
   , 'VERSION'
 ]
 sass:
-  style: compressed
+    style: compressed
 collections:
-   man:
-      output: true
-      order:
-         - copertina.md
-         - dedica.md
-         - indice.md
-         - prologo.md
-         - incipit.md
-         - mitopoietica.md
-         - programmatore.md
-         - sistemi-di-numerazione.md
-         - linguaggi-di-programmazione.md
-         - c-plus-plus.md
-         - commenti.md
-         - tipi-di-dato.md
-         - struttura-dei-programmi.md
-         - preprocessore.md
-         - memoria.md
-         - funzioni.md
-         - istruzioni-condizionali.md
-         - istruzioni-iterative.md
-         - algebra-booleana.md
-         - classi.md
-         - oggetti.md
-         - polimorfismo.md
-         - ereditarieta.md
-         - debug.md
-         - chi-plus-plus.md
-         - cosmogonia.md
-         - estetica.md
-         - epilogo.md
+    man:
+        output: true
+        order:
+            - copertina.md
+            - dedica.md
+            - indice.md
+            - prologo.md
+            - incipit.md
+            - mitopoietica.md
+            - programmatore.md
+            - sistemi-di-numerazione.md
+            - linguaggi-di-programmazione.md
+            - c-plus-plus.md
+            - commenti.md
+            - tipi-di-dato.md
+            - struttura-dei-programmi.md
+            - preprocessore.md
+            - memoria.md
+            - funzioni.md
+            - istruzioni-condizionali.md
+            - istruzioni-iterative.md
+            - algebra-booleana.md
+            - classi.md
+            - oggetti.md
+            - polimorfismo.md
+            - ereditarieta.md
+            - debug.md
+            - chi-plus-plus.md
+            - cosmogonia.md
+            - estetica.md
+            - epilogo.md
+    opt:
+        output: true
+            - sostiene-aristotele.md
+            - binario.md
