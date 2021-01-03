@@ -1,3 +1,6 @@
+## 0.18.2 (January 04, 2021)
+  - Redazione del testo del capitolo sulla memoria
+
 ## 0.18.1 (January 03, 2021)
   - Modificata la grafica delle note del Manuale
   - Aggiunto link a sito C'hi++ al file MANIFEST
