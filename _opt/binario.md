@@ -1,0 +1,93 @@
+---
+status:     redazione
+layout:     pagina
+class:      racconto
+title:      Binario (triste e solitario)
+permalink:  /opt/binario
+---
+
+C’era una volta un computer grande e potente, fedele servitore di una società di ingegneria altrettanto grande e potente. 
+Non esageriamo dicendo che il computer era di vitale importanza per quella società: tutto il lavoro svolto all’interno del palazzo di dieci piani che ne ospitava gli uffici, dalle complicate relazioni di calcolo alle semplici, ma indispensabili etichette per i pacchi dono natalizii, passava attraverso i suoi circuiti e da essi veniva elaborato, controllato e memorizzato. 
+Vax, il computer, anche se non lo dava mai a vedere, era molto orgoglioso di tutta quella responsabilità, e amava il suo lavoro. Adorava essere svegliato la mattina dalla scrittura lenta e assonnata delle prime segretarie: ogni carattere era come una goccia di pioggia che cadeva sul tetto delle tastiere e lui se ne restava lì, in quella sua mansarda virtuale, ad ascoltare il ticchettio crescere di intensità nel corso della mattinata, spegnersi durante l’ora di pranzo e riprendere poi, con rinnovato vigore, nel pomeriggio fino alla sera. 
+Gli piaceva, quando c’era qualche consegna urgente, fare tardi con gli impiegati che passavano la notte in ufficio per terminare in tempo il lavoro, immaginare l’odore delle sigarette e del caffè sui loro polpastrelli e, la mattina presto, appena dopo l’alba, stampare finalmente tutto, stanchi sì, ma soddisfatti per aver adempiuto al proprio dovere. 
+Era poi buffo notare come la maniera di lavorare potesse essere influenzata dall’arrivo di telefonate personali. Per esempio, se al termine di una telefonata un impiegato riprendeva a lavorare battendo sui tasti con violenza, probabilmente aveva avuto una discussione o con sua moglie o con un vicino di casa che si lamentava per il chiasso fatto dagli invitati al suo party della sera prima. Similmente, se una segretaria, dopo una lunga permanenza al telefono, riprendeva a lavorare lentamente e faceva molti errori, certamente aveva parlato con il fidanzato e, in questi casi, c’era da augurarsi che le cose fra i due andassero bene, perché se una lacrima fosse finita sui contatti elettrici al disotto dei tasti c’era il rischio di un cortocircuito. 
+C’erano solo due categorie di utenti che Vax proprio non poteva sopportare ed erano i raffreddati (che schifo quando starnutivano sulla tastiera o sullo schermo!) e quelli che mangiavano e lavoravano allo stesso tempo. Il peggiore di questi ultimi era un impiegato della contabilità che divorava in continuazione crostatine alla frutta, sporcandosi le dita in maniera indecorosa, tanto che i tasti del suo terminale erano diventati appiccicosi come carta moschicida.
+
+Oltre alle normali attività produttive, Vax svolgeva dei compiti fondamentali di sorveglianza e di controllo: da lui, infatti, dipendeva il corretto funzionamento degli allarmi, dell’impianto di aria condizionata, del telefono e delle porte di accesso automatiche. Controllava poi - e valutava - la produttività dei dipendenti annotando a che ora arrivavano la mattina, quando andavano via la sera e se, durante quelle ore, lavoravano davvero o tenevano solo acceso il terminale. 
+Tutte queste informazioni e molte altre ancora dovevano essere registrate, elaborate e comunicate mensilmente a chi di dovere. Per renderlo capace di fare tutto ciò, i suoi creatori lo avevano dotato di un’infinità di magici congegni dai nomi misteriosi: c’erano le CPU, nelle quali confluivano tutti i dati e che eseguivano i calcoli principali, c’erano altri chip a cui le CPU delegavano operazioni particolari o troppo onerose, e poi c’erano la ROM, la RAM, i bus, i terabyte, i byte e i bit. 
+La base di tutto, il mattone su cui poggiava tutta la complicata architettura del computer e, di conseguenza, della società stessa, era il bit: un piccolo indicatore che poteva valere o uno o zero o, per dirla in altri termini, una specie di interruttore che poteva essere acceso o spento, a seconda dei casi. Aggregati fra loro, i bit costituivano i byte e le word - le parole, appunto - con cui i diversi dispositivi della macchina comunicavano fra loro e con il mondo esterno. I bit vivevano felici nel loro byte, uno accanto all’altro come piselli all’interno di un baccello: qualcuno valeva uno, altri zero e, presi nel loro insieme, definivano il valore e quindi il significato del byte cui appartenevano. Alcuni di loro cambiavano il loro valore nel tempo, altri invece non lo cambiavano mai. 
+Uno di questi ultimi è il protagonista della nostra storia.
+
+Era uno dei bit che componevano la ROM, la parte basilare e invariabile della memoria del computer. In quanto bit non aveva un nome, ma solo un valore: zero, e questo lo rendeva terribilmente infelice. Tutti gli altri bit del suo byte valevano uno, perché lui no? Perché il Destino lo voleva meno importante degli altri? Invidiava i bit della RAM, la memoria di lavoro: quelli cambiavano valore in continuazione e, se per un attimo valevano zero, subito dopo eccoli tornati allo splendore dell’uno, in un turbinio frenetico ben differente dal piattume e dalla noia cui erano condannati loro, nella memoria di base. Beffato doppiamente dalla vita, quindi, che non solo lo aveva fatto finire nella parte più noiosa e monotona di tutto il computer, ma l’aveva anche condannato a non valere niente in un mondo in cui tutti sembravano valere qualcosa. 
+Sognava di riuscire un giorno a diventare come tutti i suoi amici che valevano uno, anche se non riusciva ad immaginare come questo potesse avvenire. Era perfino arrivato a pensare di derubare del suo valore il bit accanto a lui, ma quello valeva uno e lui zero, come poteva sperare di sopraffarlo? Ciò non di meno, continuava a sperare e a pregare e, prega oggi, spera domani, un bel giorno il suo sogno si avverò e il piccolo bit si trovò di colpo tramutato in un uno! Sulle prime non ci credette, pensò ad uno sbalzo di tensione momentaneo, ma poi capì che si trattava di una cosa definitiva e si sentì invadere da una gioia indescrivibile. Era fantastico valere uno, dava un senso nuovo di forza, di energia: non era più un reietto, finalmente gli altri bit lo avrebbero considerato loro pari, finalmente era felice. 
+
+Ma non tutti erano felici in quel momento, infatti, il byte cui il nostro piccolo amico apparteneva, faceva parte di una serie di istruzioni che permettevano al computer di funzionare correttamente e perché ciò potesse avvenire, quel byte doveva essere composto da tutti bit che valevano uno e da un bit che valeva zero, esattamente com’era stato creato. Il fatto che adesso contenesse tutti bit di valore uno ne cambiava il valore ed il significato nell’ambito della serie di istruzioni cui apparteneva e la conseguenza ultima di quella mutazione era che il computer si era fermato.
+Alla gioia del piccolo bit, quindi, come per una legge non scritta di compensazione, si contrappose la disperazione dei tecnici della società, che affannosamente cercavano di capire cosa fosse successo, come mai, di colpo, il computer avesse smesso di funzionare. 
+Legioni di segretarie, orde di progettisti, greggi di contabili: tutti osservavano stupiti quegli schermi paralizzati, mentre i tecnici continuavano a controllare e a verificare senza riuscire a capire dove potesse essere il guasto, senza poterlo sospettare nemmeno. Esaminavano i programmi, i cavi, gli alimentatori e tutta una serie di apparati perfettamente funzionanti, senza sapere che la causa dei loro problemi era un semplice, piccolo, bit. 
+Sì, certo, uno di loro una volta aveva letto in un libro di Robert Pirsig che Buddha risiedeva tanto nei petali di un fiore che nei circuiti di un computer (quella frase gli era piaciuta tanto che se l’era scritta su un foglio e l’aveva attaccata sul fianco del suo terminale), ma la sua mente pragmatica aveva colto solo l’aspetto simbolico di quel pensiero: sarebbe stato assurdo pensare che Buddha in persona se ne andasse realmente in giro per dei circuiti integrati; invece, era proprio così, tant’è vero che Buddha andò dal piccolo bit e gli chiese cosa fosse successo.
+
+- Ma come, non lo sai? - gli rispose il bit - Pensavo che fosse opera tua..<br />
+- Opera mia tutto questo pandemonio? No, no davvero.<br />
+- Quale pandemonio? A me la situazione sembra decisamente migliorata: come stonavo, prima, unico zero in mezzo a tanti uno! Adesso invece siamo tutti uguali, c’è più armonia.<br />
+- Tu dici così perché non puoi vedere oltre i confini di questo tuo byte, - disse Buddha. - Se sapessi quello che sta succedendo qui fuori non credo che la penseresti ancora così. Ti chiedo quindi di voler tornare com’eri prima.<br />
+- Tornare a valere zero? Mai e poi mai! - esclamò il piccolo bit. - Io voglio essere come tutti gli altri, voglio valere qualcosa.<br />
+- Va bene, - rispose paziente Buddha. - Allora vieni con me.
+
+Erano fuori dal computer, ora: tanto piccoli da essere invisibili e galleggiavano nell’aria osservando i tecnici affannarsi intorno al computer.<br />
+- Chi sono queste persone, e cosa stanno facendo? <br />
+- Sono dei tecnici, - rispose Buddha. - Cercano di scoprire cos’è successo al computer.<br />
+- E cos’è successo al computer? - chiese il bit, che ignorava le conseguenze ultime del suo mutamento. Buddha non gli rispose e lo condusse nell’atrio.<br />
+- E quelle persone, cosa stanno facendo? <br />
+- Stanno cercando di aprire le porte. Normalmente le controlla il computer e fa entrare solo quelli che hanno il tesserino di accesso, ma, come ti ho detto, il computer non funziona e allora..<br />
+- E quella donna? - chiese il bit quando furono al piano di sopra. - Perché sta seduta senza fare niente? <br />
+- È una segretaria. Stava scrivendo una lettera di incarico quando il computer si è fermato.<br />
+- Una lettera di incarico?<br />
+- Serve per dire a qualcuno che hai deciso di affidargli un lavoro. Questa in particolare era diretta a un architetto che conosco. Sono contento per lui, gli ci voleva, dopo tutti i guai che ha dovuto passare..<br />
+- Se non possono mandargli una lettera lo avviseranno per telefono, vero?<br />
+- Lo farebbero, se anche il centralino non fosse bloccato.<br />
+- Va bene, ma cosa cambia se gli faranno avere la notizia oggi oppure fra qualche giorno?<br />
+- Eh! non è detto che basterà qualche giorno a rimettere tutto in funzione.. Comunque hai ragione: non cambierà molto. Lui magari si preoccuperà un po’, sai, ha due figli da mantenere, ma in fondo cosa vuoi che sia..<br />
+- Dicevo, infatti..- mormorò, poco convinto, il bit e aggiunse: - Certo che questo caldo è insopportabile!<br />
+- Be’, siamo a luglio, fuori è un forno. Funzionasse l’impianto di condizionamento..<br />
+- Ma anche quello dipende..- cantilenò il bit.<br />
+- Dal computer, sì,- concluse Buddha mentre salivano al piano superiore, poi esclamò: - Oh! guarda che faccia che ha, quel tipo.<br />
+- L’avevo notato. Ha gli occhi rossi e l’aria distrutta. Sembra quasi che stia per mettersi a piangere.<br />
+- L’ha appena fatto. In bagno, dove nessuno poteva vederlo.<br />
+- Ma cos’ha?<br />
+- Boh!.. Gli ingegneri sono strani. Pensa che questo qui è depresso perché pensa di non essere importante.<br />
+- E come mai?<br />
+- Perché gli hanno affidato il progetto di una scuola, mentre lui sperava che gli facessero costruire un viadotto.<br />
+- E cosa cambia? <br />
+- Quello sarebbe stato un progetto da decine e decine di miliardi, mentre questa è solo la scuola di un quartiere popolare.<br />
+- Non mi sembra comunque una buona ragione per sentirsi depressi., - commentò il bit.<br />
+- E infatti non lo è. Anzi, dovrebbe essere contento.<br />
+- Ma come, se tu stesso hai detto che..<br />
+- Cerca di capire, - disse Buddha. - Se tu guardi la cosa dal punto di vista della società, allora è vero che la scuola è meno importante del viadotto, perché quel progetto renderà molti più soldi di questo, ma se tu pensi al fatto in sé, ti accorgerai che il viadotto altro non è che cemento su cui passano automobili e camion, mentre una scuola è il luogo dove si cominceranno a formare le menti e le coscienze di alcuni degli uomini del futuro. Nessuno amerà mai un viadotto, mentre una scuola..<br />
+- Nessuno scolaro ama la sua scuola.<br />
+- Finche resta uno scolaro no, ma quando diventerà adulto e capirà che in quell’edificio ha passato un momento magico e irripetibile della sua vita, la sua scuola l’amerà, eccome! - Buddha fece una pausa, poi riprese a parlare più lentamente. - Comunque, non è solo per questo che ha pianto. In realtà è molto stanco perché ha fatto tutto il lavoro da solo, sgobbando notte e giorno per dei mesi e oggi che è il termine ultimo per finire il progetto, vede tutti i suoi sforzi vanificati da questo blocco del computer. Peccato: era un buon progetto..<br />
+- Non c’è nulla che possiamo fare per lui?<br />
+- No, purtroppo. Sembra che il guasto sia irreversibile.<br />
+- È da prima che mi dici che il computer è rotto, ma non mi spieghi perché..<br />
+- È semplice,- rispose Buddha. - In uno dei byte della ROM è successo qualcosa di strano che l’ha resa priva di senso, inutile. Tu sai com’è importante per il computer la ROM, non è vero?<br />
+- Certo, - disse il bit. - È dalla ROM che il computer riceve le istruzioni che gli servono per poter funzionare. Se la ROM non gli dice cosa deve fare, il computer è solo una scatola piena di roba inutile.<br />
+- Precisamente.<br />
+- Ma ci sarà pure una soluzione a tutto questo, - tentò il bit, che da tempo aveva capito come “tutto questo” fosse colpa sua.<br />
+- Certo che c’è, sciocchino!- disse Buddha, sorridendo. - Basterà sostituire la ROM.
+Il bit, che si era un po’ rincuorato vedendo l’altro sorridere, si fece ora, se possibile, ancora più piccino.<br />
+- Del resto è rotta,- aggiunse Buddha. - Non serve più allo scopo per cui era stata creata. Un po’ come se il nostro amico progettista, sull’onda della delusione per il lavoro mancato, decidesse di fare, che so.. il macellaio, come suo fratello, che guadagna tre volte quello che guadagna lui. Non che abbia niente contro i macellai (a parte, è vero, l’oggetto del loro mercato), ma lui è un ingegnere: tutto nella sua vita, predisposizione, studi, occasioni di lavoro, tutto ha concertato per fare di lui un ingegnere, è il suo Karma. Se ora decide di mollare, forse diventerà ricco, ma..<br />
+- Ma?..<br />
+- Ma se questo tipo di scelta, fatta da un piccolo bit come te, ha delle conseguenze così macroscopiche, pensa a cosa può succedere se la stessa scelta la fa un uomo..<br />
+- E non potresti fare per lui quello che hai fatto per me? Fargli vedere i suoi problemi dall’esterno?<br />
+- Certo,- rispose Buddha, mentre tornavano nella sala che ospitava il computer. - E lo farò, se occorre, ma in questo momento non è per lui che sono preoccupato, ma per te.<br />
+- Per me? Ma io ho ottenuto quello che volevo, ora sono felice..<br />
+- Per ora, ma cosa succederà quando sostituiranno la ROM? Prima o poi capiranno che il guasto è lì e ne ordineranno una nuova..<br />
+- E di questa, che ne faranno?<br />
+- Lo vedi il bidone dell’immondizia, giù in strada? Quando sarai lì, non ci saranno più né zeri né uno, quelli valgono solo se il circuito riceve corrente, se è parte di qualcosa di più grande. Volevi essere come gli altri? Be’, lo sarai: lì nella spazzatura varrete tutti quanti zero.<br />
+- Quindi il mio destino, il mio Karma, come dici tu, è quello di valere comunque zero..<br />
+- Puoi metterla così se vuoi, ma pensa: prima il tuo valere zero aveva un senso, anche se tu non lo sapevi. Anzi, era importantissimo, come hai potuto vedere. Ma se finisci in quel bidone, il tuo zero che valore avrà?
+<br />
+- Venite a vedere, il computer ha ripreso a funzionare da solo! - gridò il tecnico, facendo un salto indietro per la sorpresa. Gli altri accorsero a constatare il prodigio.<br />
+- Lo dici tu: “da solo”! - pensò Buddha, contento comunque che tutto si fosse risolto nel migliore dei modi. 
+C’era solo una piccola nuvola a velare lo splendore della sua soddisfazione, ma in fondo, cosa cambiava nel contesto generale, se l’ingegnere che aveva mostrato al piccolo bit versasse in condizioni pietose per problemi con il suo Karma o perché non aveva dormito la sera prima, andando avanti a bere e a fare festa fino all’alba a casa di un collega? Nessuna, concluse: proprio nessuna.
+
+Certo, pensò Buddha, adagiandosi su un’elegante funzione ricorsiva: i petali di un fiore erano un bel posto per passarci i week-end, carini e tutto il resto, ma nei circuiti di un computer succedevano cose decisamente più interessanti.
