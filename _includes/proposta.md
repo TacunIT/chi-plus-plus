@@ -366,7 +366,7 @@ Se avessimo applicato la stessa modifica al Cattolicesimo, riabilitando la figur
 
 ## Release 0.1: Sostiene Aristotele
 A Giugno del 2007 scrissi un documento dal titolo: 
-[Sostiene Aristotele](/sostiene-aristotele/) che possiamo considerare la versione 0.1.1 del C'hi++.
+[Sostiene Aristotele](/opt/sostiene-aristotele/) che possiamo considerare la versione 0.1.1 del C'hi++.
 In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<a href="#soko" class="nota" name="fn-8">8</a>
 Nelle fasi di espansione, l'Uno esplodeva, generando l'Universo così come lo conosciamo; nelle fasi di contrazione, l'Universo collassava nell'Uno.
 Anche se in embrione, gli elementi principali del C'hi++ ci sono tutti; la rarefazione degli elementi metafisici:
