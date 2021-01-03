@@ -40,7 +40,7 @@ Il testi di riferimento del *C'hi++* sono:
 
 - [**C'hi++**](https://chiplusplus.org/man/) Un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo. Il testo riporterà gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione dei computer. Dopo aver insegnato al suo allievo a programmare con il linguaggio C++, il Maestro gli parlerà del *C'hi++*, ovvero il linguaggio con cui è stata scritta l'applicazione che gestisce l'Universo.<br/> <img src="https://img.shields.io/badge/stato-redazione-orange" alt="Stato documento: redazione" height="20" style="padding-top:0.5rem">
 
-- [**Sostiene Aristotele**](https://chiplusplus.org/opt/sostiene-aristotele.md): un documento che risale al Giugno del 2007 e che possiamo considerare una versione preliminare del *C'hi++*. In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
+- [**Sostiene Aristotele**](https://chiplusplus.org/opt/sostiene-aristotele): un documento che risale al Giugno del 2007 e che possiamo considerare una versione preliminare del *C'hi++*. In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
 
 - [**Proposta per una metafisica open-source**](https://chiplusplus.org/assets/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf): nato inzialmente come Manifesto del progetto, questo testo si è espanso per più di quaranta pagine e ho deciso per ciò di considerarlo un documento a sé stante.
 <br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
@@ -69,11 +69,18 @@ I file del progetto sono suddivisi nelle seguenti directory:
 
 | Nome  | Contenuto
 |---|---|
-|**bin**| programmi eseguibili per la gestione del progetto.
-| **docs** | file per la pubblicazione del progetto su Github Pages [https://chiplusplus.org/](https://chiplusplus.org/).
-| **img** | contiene i file immagine del progetto.
-| **_man** | contiene il testo Markdown di [**C'hi++**](_man/)
-| **src** | file "sorgenti" del progetto, siano essi degli script in C++ (*src/cpp*) o i file in formato Markdown dei testi (*src/doc*).
+|**_data**    | Testi da utilizzare nel manuale: note estratte dagli e-book Kindle, testo di "Dal C al C++"", ecc.
+|**_drafts**  | Bozze dei testi per un eventuale blog.
+|**_includes**| Directory di include standard di Jekyll.
+|**_layouts** | Directory per i layout di Jekyll.
+|**_man**     | Root directory del Manuale.
+|**_opt**     | Directory per i testi che non fanno parte del Manuale, come "I 10 Comandamenti" o "Sostiene Aristotele".
+|**_sass**    | Directory per i fogli di stile di Jekyll.
+|**assets**   | Directory per i contenuti statici di Jekyll.
+|**bin**      | Script di gestione della cache o per il versionamento di Git.
+|**docs**     | Directory di output del Manuale
+| **src**     | File .cpp e .sql degli esempii del Manuale 
+
 
 I file [CHANGELOG](CHANGELOG.md) e VERSION sono utilizzati per il controllo di versione con Git.
 
