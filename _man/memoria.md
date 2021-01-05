@@ -181,7 +181,8 @@ La realtà è ovunque e anche isolandoci non possiamo sfuggirle; anzi: la solitu
 <i>Accettazione:</i> il solo modo per salvarsi è rinunciare agli insegnamenti dei cattivi maestri del passato e accettare il fatto di non essere delle gocce d'acqua uniche e insostituibili, ma di far parte del mare.
 Chi vuole, potrà credere che in quel mare ci sia Poseidone; gli altri saranno liberi di pensare che ci siano solo pesci, molluschi e alghe: non ha importanza; ciò che conta è sottrarsi all'influenza separatrice dell'Entropia e riacquistare un senso di appartenenza a qualcosa che va oltre le nostre brevi e limitate esistenze.
 Solo così, potremo vincere la nostra battaglia contro l'Annosa Dicotomia.
-Solo così, potremo smettere di inseguire una fama transeunte e trovare forza nella consapevolezza del fatto che ciascuno di noi può modificare l'evoluzione dell'Mondo con le sue azioni. Secondo lo *Yoga Sutra Bhāṣya*<a class="nota" href="/man/note#yoga"></a>:
+Solo così, potremo smettere di inseguire una fama transeunte e trovare forza nella consapevolezza del fatto che ciascuno di noi può modificare l'evoluzione dell'Mondo con le sue azioni.  
+Secondo lo *Yoga Sutra Bhāṣya*<a class="nota" href="/man/note#yoga"></a>:
 
 > Il Mondo intero subisce una mutazione a ogni istante; così, tutte le qualità esteriori del Mondo dipendono da questo istante presente.
 
@@ -195,15 +196,14 @@ Pensa alla variabile `a` che abbiamo visto all'inizio:
 00000000 00000000 00000000 00000001
 ```
 
-Il bit iniziale vale `0`, che è un valore nullo, se lo consideri dal punto di vista del singolo bit, ma se invece lo valuti in funzione della variabile, diventa il valore da cui <a href="/man/tipi-di-dato#modificatori">dipende il segno della variabile</a>.
-Se per un caso il valore di quel bit diventasse `1`, il valore della variabile a cui appartiene diventerebbe negativo, con delle ripercussioni imprevedibili sul programma a cui appartiene.
+Il bit iniziale vale `0`, che è un valore nullo, se lo consideri individualmente, ma se invece lo valuti in rapporto ai due byte a cui appartiene, diventa il valore da cui <a href="/man/tipi-di-dato#modificatori">dipende il segno della variabile</a>.
+Se per un caso il valore di quel bit diventasse `1`, il valore della variabile `a` diventerebbe negativo, con delle ripercussioni imprevedibili sul programma.
 Molte, troppe persone sono come quel bit e pensano di valere zero perché considerano il proprio valore solo in termini soggettivi.
-Mesmerizzati dall'Annosa Dicotomia, spendono tutte le loro energie cercando di valere `1`, distraendosi da quello che sarebbe stato il loro destino, con conseguenze molto più gravi di un'alterazione di segno in una variabile.
+Mesmerizzati dall'Annosa Dicotomia, spendono tutte le loro energie cercando di valere `1` e si distraggono così da quello che sarebbe stato il loro destino, con conseguenze molto più gravi di un'alterazione di segno in una variabile.
 
 ---
 
-Come ti ho detto in una delle nostre prime conversazioni, il buon programmatore deve sempre controllare che il suo codice non contenga dei difetti.
-Ciò che ti ho appena detto ne ha uno, piuttosto grave: può essere utilizzato come pretesto per creare un sistema di caste che limiti le possibilità di crescita di coloro che effettivamente sono destinati ad aumentare il loro valore.
+Il buon programmatore deve sempre controllare che il suo codice non contenga dei difetti e ciò che ti ho appena detto ne ha uno, piuttosto grave: può essere utilizzato come pretesto per creare un sistema di caste che limiti le possibilità di crescita di coloro che effettivamente sono destinati ad aumentare il loro valore.
 La domanda quindi è: come può, un bit o un essere senziente, decidere quale sia il suo valore esatto?
 Sicuramente non può dirglielo un'Autorità costituita né tanto meno una consuetudine.
 La famiglia può dargli dei suggerimenti, ma non può decidere per lui: i genitori hanno sicuramente più esperienza dei figli, ma non sono infallibili.
