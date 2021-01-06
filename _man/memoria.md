@@ -212,7 +212,17 @@ La risposta è in una frase di Jacopone da Todi:
 > Prima devi sape' perché stai ar monno.   
  Quanno sai er perché, te devi impara' a stacce .
 
-In queste due frasi è racchiuso il senso della Vita: capire quale sia il proprio ruolo e svolgerlo al meglio delle proprie possibilità.
+In queste due frasi è racchiuso il senso della Vita: capire quale sia il proprio ruolo e svolgerlo al meglio delle proprie possibilità, senza farsi influenzare dalle mode e soprattutto senza cadere vittima dell'Annosa Dicotomia.  
+Il C++ è un linguaggio a tipizzazione forte<a class="nota" href="/man/note#tipizzazione"></a>, perciò, quando si dichiara una variabile, le si deve sempre assegnare un tipo di dato:
+
+```
+bool    booleano  = false;
+char    carattere = 'C';
+int     intero    = 1234567890;
+float   decimale  = 3.14;
+char    array[]   = "abcdefghilmnopqrstuvz";
+```
+
 
 <!--
 

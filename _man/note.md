@@ -109,6 +109,10 @@ quote:
             Luni, Milano, 2003
             <a href="Javascript:history.back()" name="yoga"><i class="fas fa-reply"></i></a>
         </li>
+        <li>
+            @todo: Spiegare cosa sia la tipizzazione forte.
+            <a href="Javascript:history.back()" name="tipizzazione"><i class="fas fa-reply"></i></a>
+        </li>    
     </ol>
 
     <h3>Istruzioni condizionali</h3>
