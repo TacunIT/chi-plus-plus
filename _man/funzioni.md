@@ -21,10 +21,13 @@ quote:      "Call me: IsNull"
    title="fare click per tornare alla pagina precedente">funzioni inline</a>
 
 <!--
-Questo capitolo deve seguire il capitolo sulle inclusioni.
+
+Spiegare COME fare a capire quale sia il proprio ruolo nell'Universo.
+Non posso metterlo nel capitolo sulla memoria che è già stracolmo.
 
 Utilizzare la definizione delle funzioni senza dichiarazione come esempio per i dogmi.
-Questo concetto verrà riutilizzato nel capitolo sulle funzioni ricorsive a proposito dei Post-It.
+?? Questo concetto verrà riutilizzato nel capitolo sulle funzioni ricorsive a proposito dei Post-It.
+
 
 Funzioni ricorsive
 ------------------
