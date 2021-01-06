@@ -9,8 +9,8 @@ quote:      "In principio era il logo"
 
 Nacqui da famiglia ricca, ma troppo tardi.  
 Secondogenito, vidi la florida impresa paterna andare in dote  &mdash; per diritto di nascita, ma anche per naturale inclinazione &mdash; ai miei monozigotici fratelli maggiori e, com'è consuetudine per i figli cadetti, fui avviato alla vita monastica.
-Entrai in seminario all'età di nove anni e presi i voti il giorno del mio sedicesimo compleanno.
-Conobbi il Maestro sei anni dopo.  
+Entrai in seminario all'età di nove anni e presi i voti il giorno del mio diciottesimo compleanno.
+Conobbi il Maestro quattro anni dopo.  
 Fui mandato da lui perché un vecchio programma, dopo quasi un decennio di attività ininterrotta, aveva avuto dei problemi e non c'era nessuno nel monastero che sapesse come porvi rimedio.
 Pur avendo trascorso in quello stesso edificio due terzi della mia vita, non avevo mai incontrato il Maestro, prima di allora.
 Sapevo poco di lui, principalmente che non era bene saperne molto e non l'avevo mai visto né nel refettorio, né in occasione di celebrazioni o emergenze.
