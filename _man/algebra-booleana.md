@@ -25,6 +25,8 @@ Operatore == “Io vidi il mio Signore con l'occhio del cuore. Gli chiesi: chi s
 la negazione e il paradosso come metodo per comprendere ciò che non è
 di per sé evidente
 
+Parlare del male che diventa bene, fare esempio dell'idiota che ha sparat un razzo nel locale  di Ginevra dandogli fuoco, ma causando la composizione di Smoke on the water.
+O della stronza di Ipanema, che ha reso ricco Jobim
 
 -->
 

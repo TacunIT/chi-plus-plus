@@ -113,6 +113,11 @@ quote:
             @todo: Spiegare cosa sia la tipizzazione forte.
             <a href="Javascript:history.back()" name="tipizzazione"><i class="fas fa-reply"></i></a>
         </li>    
+        <li>
+            <a href="https://www.nobelprize.org/prizes/peace/1983/walesa/facts/" 
+           target="note">www.nobelprize.org/prizes/peace/1983/walesa/facts/</a>
+            <a href="Javascript:history.back()" name="walesa"><i class="fas fa-reply"></i></a>
+        </li>    
     </ol>
 
     <h3>Istruzioni condizionali</h3>
