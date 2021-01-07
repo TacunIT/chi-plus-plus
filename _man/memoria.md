@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Gestione della memoria
 permalink:  /man/memoria
-quote:      "var cogito ∴ sum()"
+quote:      "cogito ∴ sum()"
 ---
 
 La gestione della memoria è la parte più importante della programmazione.
@@ -26,10 +26,10 @@ in realtà, stai dicendo al compilatore di prendere un'area di memoria di 32 bit
  Allo stesso modo, se dichiari la stringa:
  
  ```
- const char* motto = "Amiamo ciò che ci ucciderà";
+ const char* motto = "Cogito ergo sum";
  ```
 
-stai chiedendo al compilatore di prendere un'area di memoria di 28 byte, di associarle il nome `motto` e scriverci dentro i 27 caratteri della frase più un ultimo carattere, con valore `0`, che indica la fine della stringa.  
+stai chiedendo al compilatore di prendere un'area di memoria di 16 byte, di associarle il nome `motto` e scriverci dentro i 15 caratteri della frase più un ultimo carattere, con valore `0`, che indica la fine della stringa.  
 Puoi usare questo metodo se sai in anticipo quanto saranno grandi le variabili con cui avrai a che fare, ma se invece devi gestire dei valori di grandezza variabile (per esempio, l'input di un utente), hai due possibilità: o riservi preventivamente una quantità abbondante di spazio, o la allochi sul momento, in base alle tue necessità.
 Il primo caso va bene se devi gestire pochi dati di dimensioni ridotte, ma se devi gestire molte variabili di grandi dimensioni, l'allocazione dinamica, anche se più complessa da gestire, è più efficiente.  
 Il codice seguente è un esempio di gestione statica della memoria: 
@@ -222,33 +222,30 @@ int     intero    = 1234567890;
 float   decimale  = 3.14;
 char    array[]   = "abcdefghilmnopqrstuvz";
 ```
-Allo stesso modo, tutto ciò che esiste ha delle capacità funzionali al suo ruolo nell'Universo.
-Suonare, scrivere, recitare, insegnare, convincere, guidare, amare: a ciascuno di noi l'Universo dà uno strumento e un banco di lavoro, anche se il ruolo che ci verrà assegnato non sempre è evidente fin dalla nascita.
-Prendi Lech Walesa<a class="nota" href="/man/note#walesa"></a>, per esempio (è l'unico Nobel per la Pace che mi viene in mente che non fosse laureato): lui cominciò a lavorare come elettricista navale, ma le sue capacità lo trasformarono in un leader politico.
+Allo stesso modo, tutto ciò che esiste ha delle capacità che sono funzionali al suo ruolo nell'Universo.
+Suonare, scrivere, recitare, insegnare, convincere, guidare, amare: a ciascuno di noi, l'Universo dà uno strumento e un banco di lavoro, anche se il ruolo che ci verrà assegnato non sempre è evidente fin dalla nascita.
+Prendi Lech Walesa, per esempio (è l'unico Nobel per la Pace che mi viene in mente che non fosse laureato): lui cominciò a lavorare come elettricista navale, ma le sue capacità lo trasformarono in un leader politico<a class="nota" href="/man/note#walesa"></a>.
 Oppure, meglio, pensa a te stesso: se avessi voluto, a diciott'anni avresti potuto lasciare l'Ordine, tornare a casa e diventare un *vice-qualcosa* nell'azienda della tua famiglia, invece sei rimasto qui a scrivere il tuo libro.
-È stata la scelta giusta? 
+Sarà stata la scelta giusta? 
 Cosa si aspettava, l'Universo, da te? che, come monaco, rendessi il Mondo un luogo migliore con la tua Bibbia per smanettoni o che, come manager, migliorassi le condizioni di vita dei dipendenti della tua azienda?
-Lo scopriremo solo quando torneremo a essere Uno; fino ad allora, potremo fare solo delle supposizioni.
+Lo scopriremo solo quando torneremo a essere Uno; fino ad allora, potremo solo fare delle supposizioni, oppure chiederci: quale è stato, il motivo della tua scelta?
 Sei rimasto qui per pigrizia o perché avevi paura del Mondo o della tua famiglia? hai fatto un errore.
 Sei rimasto perché non desideri il lusso o il potere? potresti aver fatto la scelta giusta. Forse.
 Sei rimasto, anche se sarebbe stato più facile e comodo tornare in seno alla tua famiglia, perché pensavi che restando qui saresti stato più utile? o sei terribilmente ingenuo o hai fatto la cosa giusta.  
 A ogni modo, bisogna sempre fare bene il proprio mestiere, quale che sia, perché non sappiamo come e quando dovremo renderci utili.
 Una volta, un amico del Maestro Canaro, appena tornato dal Giappone, gli disse:
 
-> La differenza fra noi e i Giapponesi è che se tu, qui, metti uno a pulire i cessi, quello si sente disprezzato e lavora male, mentre un giapponese cerca di diventare il miglior pulitore di cessi di tutto il Giappone.
+> La differenza fra noi e i Giapponesi è che se tu, qui, metti uno a pulire i cessi, quello si sente disprezzato e lavora male, mentre un giapponese cerca di diventare il miglior pulitore di cessi di tutto il Paese.
 
-Altro modo per capire se si è nel giusto è in base all'amore.
+Un altro modo per capire se si è nel giusto è in base all'amore.
+L'amore è la droga perfetta: dà assuefazione come il *crack* e ti fa credere di saper volare, come l'LDS; è il miele con cui la Vita attira le formiche dei nostri pensieri, facendole andare dove vuole lei.
+Quindi, se quello che ti spinge ad agire è una qualche forma di amore &mdash; e non solo amore per qualcuno, ma anche per qualcosa, che sia il mare, la montagna, uno sport, un tipo di arte o un lavoro &mdash; è molto probabile che tu stia facendo ciò che devi.
+
+---
+
+L'amore ha anche un altro utilizzo, ma adesso è tardi e questa lezione è stata fin troppo lunga. Ne parleremo un'altra volta.
 
 <!--
-
-
-L'amore è il modo in cui il Cielo ci costringe a fare cose che altrimenti non faremmo e in cui apparecchia la nostra morte.
-
-Utlizzare l'peratore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. 
-Questo approccio si rirova anche nel precetto:
-
-    Amiamo ciò che ci ucciderà (se tutto va bene) 
-
 
 @todo: spiegare la differenza fra dichiarazione e definizione; parlare della parola-chiave extern
 
