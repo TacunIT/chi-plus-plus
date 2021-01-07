@@ -1,3 +1,6 @@
+## 0.18.4 (January 08, 2021)
+  - Completata prima stesura del capitolo sulla memoria
+
 ## 0.18.3 (January 06, 2021)
   - Redazione del capitolo sulla memoria e revisioni minori ai Prologo
   - Revisione dell'Epilogo: eliminato il brano sullo scopo del C'hi++, che è già presente altrove
