@@ -7,6 +7,7 @@ permalink:  /man/classi
 quote:      "Ceci n'est pas une |"
 ---
 
+<!--
 Funzioni di interfaccia
 -----------------------
 
@@ -45,12 +46,18 @@ dell'altra non sarebbe rettilinea, ma seguirebbe l'andamento del foglio,
 o dei pixel.
 
 Da lontano potrà anche sembrare rettilinea, ma a mano a mano che
-
+-->
 <!--
 parlare degli operatori di cast 
 dynamic_cast <new_type> (expression)
 reinterpret_cast <new_type> (expression)
 static_cast <new_type> (expression)
 const_cast <new_type> (expression)
+
+Utlizzare l'peratore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. 
+Questo approccio si rirova anche nel precetto:
+
+    Amiamo ciò che ci ucciderà (se tutto va bene) 
+
 
 -->
