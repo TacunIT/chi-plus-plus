@@ -51,14 +51,14 @@ Così come i modelli matematici usati per la meteorologia non rendono tutta la c
 
 I princip&icirc; del C'hi++ si basano su una cosmogonia che riprende alcune idee di Poe, come il contrasto fra contrazione ed espansione, a cui aggiunge un maggior livello di dettaglio, definendo gli ipotetici elementi che costituiscono l'Universo ovvero, gli: *spazioni*, da cui il nome: *Spazionismo* (lo so che non è un nome serio, ma quando ho cominciato a formulare questa teoria non avrei mai immaginato di renderla pubblica e comunque è sempre bene non prendersi troppo sul serio).
 
-Per lo Spazonismo, l'Universo è costituito da elementi infinitesimali dotati di “esistenza potenziale”. 
+Per lo Spazionismo, l'Universo è costituito da elementi infinitesimali dotati di “esistenza potenziale”. 
 Così come lo schermo di un computer è costituito da una matrice bidimensionale di pixel, generalmente spenti, ma capaci di accendersi se colpiti da un raggio di luce, così l'Universo è costituito da una matrice tridimensionale di spazioni, capaci di acquisire massa e quindi esistere  se ricevono energia.
 La vita dell'Universo è vista come un ciclo continuo:
 
 <b>Fase 1.</b> L'universo è vuoto, tutta l'energia è concentrata in un'unico punto, tenuta insieme dalla Gravità.
 
 <b>Fase 2.</b> L'Entropia (ovvero una Forza che causa separazione) sopraffà la Gravità e causa l'esplosione dell'Uno.
-L'energia comincia a espandersi nell'Universo, irradiando gli spazoni che quindi assumono massa ed esistenza, generando le stelle e i pianeti così come li conosciamo.
+L'energia comincia a espandersi nell'Universo, irradiando gli spazioni che quindi assumono massa ed esistenza, generando le stelle e i pianeti così come li conosciamo.
 
 <b>Fase 3.</b> Quando la spinta data dall'Entropia diminuisce, la Gravità inverte il moto dell'energia/materia; l'Universo si contrae tornando a concentrarsi nell'Uno.
 Quando tutta l'energia dell'Universo è di nuovo concentrata nell'Uno, il ciclo ricomincia.
@@ -102,4 +102,4 @@ Per il C'hi++, ciascun essere senziente è uno dei neuroni di un cervello (l'Uni
 Se riconosciamo i nostri errori come tali, è possibile che non li ripeteremo in futuro; altrimenti continueremo a commetterli, generando delle forme “dolorose” dell'Universo.
 Per questo motivo, secondo il C'hi++, “*il senso della Vita è il debug*”, perché solo analizzando e correggendo i nostri errori, così come si fa con il software, potremo migliorare la “forma” dell'Universo e, di conseguenza, le nostre esistenze.
 
-In altre parole, il Paradiso e l'Inferno non sono altrove: sono solo due stati possibili dell'Universo e siamo noi, con le nostre azioni e le nostre intenzioni, a decidere in quale dei due vivere.
+In altre parole, il Paradiso e l'Inferno non sono altrove: sono solo due stati possibili dell'Universo e siamo noi, con le nostre azioni e le nostre intenzioni, a decidere in quale dei due vogliamo vivere.
