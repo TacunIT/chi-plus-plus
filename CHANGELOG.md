@@ -1,3 +1,6 @@
+## 0.18.5 (January 08, 2021)
+  - Revisione del testo del capitolo sulla memoria
+
 ## 0.18.4 (January 08, 2021)
   - Completata prima stesura del capitolo sulla memoria
 
