@@ -7,7 +7,7 @@ permalink:  /man/memoria
 quote:      "cogito ∴ sum()"
 ---
 
-La gestione della memoria è la parte più importante della programmazione.
+La gestione della memoria è la caratteristica principale del C++.
 
 Come ti ho detto, tutti i linguaggi di programmazione sono un modo di vedere la memoria del computer.
 Quando tu *dichiari* una variabile con un'istruzione come: 
