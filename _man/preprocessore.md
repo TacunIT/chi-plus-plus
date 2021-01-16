@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Il preprocessore
 permalink:  /man/preprocessore
-quote:      "Tutte le potenze, tranne quella di 1, crescono."
+quote:      Tutte le potenze, tranne quella di 1, crescono
 ---
 
 Le direttive al preprocessore sono la caratteristica principale del C++.  

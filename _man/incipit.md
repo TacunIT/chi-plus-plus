@@ -5,7 +5,7 @@ class:      capitolo
 title:      Incipit
 h1:         In C pit
 permalink:  /man/incipit
-quote:      "Nel futuro, ognuno sarà famoso per 15 megabyte"
+quote:      Nel futuro, ognuno sarà famoso per 15 megabyte
 ---
 
 Quello che stai facendo è inutile.  

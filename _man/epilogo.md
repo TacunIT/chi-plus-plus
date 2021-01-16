@@ -4,12 +4,12 @@ layout:     manuale
 class:      capitolo
 title:      Epilogo
 permalink:  /man/epilogo
-quote:      And now, the return is near<br />And so I face the final curtain.
+quote:      "Wer den Computer will verstehen,<br />Muss in Computers Lande gehen"
 ---
 
 <!--
     @todo - differenza fra verità epistemica e verità realista in Filosofia di House, pag. 100 e seguenti 
-    @todo - le teorie di W., secondo cui la metafisica è un uso pervertito del linguaggio, tocca che me la studio
+    @todo - le teorie di Wittgenstein., secondo cui la metafisica è un uso pervertito del linguaggio, tocca che me la studio
 -->
 
 Fu uno dei confratelli ad avvisarmi.

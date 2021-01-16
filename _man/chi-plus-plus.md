@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Il C'hi++
 permalink:  /man/chi-plus-plus
-quote:      "Non è necessario che crediate in Dio, ma dovete credere nel Codice."
+quote:      Non è necessario che crediate in Dio, ma dovete credere nel Codice
 ---
 
 

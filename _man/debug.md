@@ -5,7 +5,7 @@ class:      capitolo
 no-index:   true
 title:      Il debug
 permalink:  /man/debug
-quote:      "Cento Mondi di peccato sono dissipati dalla luce di un solo ticket."
+quote:      Cento Mondi di peccato sono dissipati dalla luce di un solo ticket
 ---
 
 
