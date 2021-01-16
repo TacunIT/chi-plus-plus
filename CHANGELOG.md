@@ -1,3 +1,8 @@
+## 0.19.0 (January 16, 2021)
+  - Codice di esempio per il capitolo sulle funzioni
+  - Riviste le citazioni all'inzio dei capitoli
+  - Corretto errore nel testo dell'index
+
 ## 0.18.5 (January 08, 2021)
   - Revisione del testo del capitolo sulla memoria
 
