@@ -149,8 +149,24 @@ int main()
 
 </code></pre>
 <p>Ogni volta che nel tuo codice ci sono delle istruzioni che si ripetono, valuta la possibilità di isolarle in una funzione.
-Lo puoi fare anche in questo caso, con le istruzioni <code>cout</code> della funzione <code>main</code>.
-Non l’ho fatto prima perché non volevo complicarti troppo le idee:</p>
+Per esempio, nel brano di codice qui sopra ci sono delle funzioni di output che si ripetono, cosa che complica la lettura del codice, ne rende più lunga e laboriosa la modifica e aumenta la probabilità di fare degli errori, perché sei tu che definisci la stringa con il nome del tipo di dato:</p>
+
+<pre><code>cout &lt;&lt; setw(16) &lt;&lt; "int: "; 
+...
+cout &lt;&lt; setw(16) &lt;&lt; "unsigned int: "; 
+...
+cout &lt;&lt; setw(16) &lt;&lt; "short int: "; 
+...
+cout &lt;&lt; setw(16) &lt;&lt; "unsigned short: "; 
+...
+cout &lt;&lt; setw(16) &lt;&lt; "long int: "; 
+...
+cout &lt;&lt; setw(16) &lt;&lt; "unsigned long: "; 
+</code></pre>
+
+<p>Nel caso specifico, si trattava di una scelta inevitabile perché, essendo uno dei primi esempii che ti ho fatto, non volevo complicarti troppo le idee, ma non è questo il modo corretto di scrivere codice.
+È sbagliato (o, quanto meno, rischioso) mischiare elaborazione dei dati e funzioni di interfaccia, specie in questo caso, dove parte dell’output è già demandato a una funzione specifica.
+Meglio lasciare che sia la funzione <code>dimensione</code> a gestire tutto l’output, mentre la funzione <code>main</code> si limiterà a definire il flusso dell’elaborazione, richiamando la funzione di output per i tipi di dato che ci interessano:</p>
 
 <pre><code>/** 
  * @file funzioni-limiti-modificato.cpp
@@ -165,17 +181,12 @@ Non l’ho fatto prima perché non volevo complicarti troppo le idee:</p>
 
 using namespace std;
 
-/**
- * Funzione template che mostra il nome, la dimensione  
- * e i valori minimi e massimi per un tipo di dato.
- */
 template&lt;typename T&gt;
 void dimensione()
 {
     /** 
-     * L'istruzione: 
-     *   abi::__cxa_demangle(typeid(T).name(), NULL, NULL, NULL) 
-     * mostra il tipo di dato della variabile corrente.
+     * Mostra il nome, la dimensione e i valori minimi 
+     * e massimi per il tipo di dato corrente.
      */
     cout &lt;&lt; setw(14)  
          &lt;&lt; abi::__cxa_demangle(typeid(T).name(), NULL, NULL, NULL) 
@@ -204,7 +215,14 @@ int main()
 
 </code></pre>
 
-<p>L’output di questo codice è identico a quello dell’esempio precedente:</p>
+<p>L’istruzione:</p>
+
+<pre><code>abi::__cxa_demangle(typeid(T).name(), NULL, NULL, NULL);
+</code></pre>
+
+<p>mostra il tipo di dato della variabile corrente.
+Per il momento, accettala in maniera dogmatica; ti spiegherò la funzione dell’operatore <code>::</code> quando parleremo delle classi.<br />
+L’output di questo codice è identico a quello dell’esempio precedente; anzi: è un po’ meglio, perché ho ridotto la spaziatura della prima colonna da 16 a 14 caratteri e l’ho fatto modificando solo un’istruzione <code>setw(14)</code>, contro le sei del codice precedente:</p>
 
 <pre><code>% g++ src/cpp/funzioni-limiti-modificato.cpp -o src/out/esempio
 % src/out/esempio                                              
