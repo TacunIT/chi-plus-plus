@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Il polimorfismo
 permalink:  /man/polimorfismo
-quote:      "Wer den Computer will verstehen,<br />Muss in Computers Lande gehen.."
+quote:      Non puoi immergere i tuoi byte due volte nello stesso stream
 ---
 
 Il Maestro Canaro era decantato da clienti e colleghi per la purezza della sua vita.  

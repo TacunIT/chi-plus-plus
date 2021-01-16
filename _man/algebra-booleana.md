@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Algebra booleana
 permalink:  /man/algebra-booleana
-quote:      "And what is true, Phaedrus,<br />And what is false<br />Need we ask anyone to tell us these things?"
+quote:      "And what is TRUE, Phaedrus,<br />And what is FALSE<br />Need we ask anyone to tell us these things?"
 ---
 
 

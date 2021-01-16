@@ -1,5 +1,5 @@
 ---
-status:     bozza
+status:     redazione
 layout:     manuale
 class:      capitolo
 title:      Le funzioni
@@ -31,9 +31,14 @@ C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musa
  ma prima è necessario capire quale sia,
     il funzionamento dell’Universo
 
-
 Utilizzare la definizione delle funzioni senza dichiarazione come esempio per i dogmi.
 ?? Questo concetto verrà riutilizzato nel capitolo sulle funzioni ricorsive a proposito dei Post-It.
+
+“Non esiste distinzione fra un essere, la sua funzione e il tempo della sua apparizione.
+Gli esseri appaiono dalla non-esistenza, esistono per un istante e poi cessano di esistere.
+La loro esistenza, attività e azione sono un'unica cosa.
+Passato e futuro sono meri nomi.”
+Samyutta Nikaya, citato da Ananda, Tempo ed Eternità, pag. 45
 
 
 Funzioni ricorsive
