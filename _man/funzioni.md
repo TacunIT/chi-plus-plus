@@ -38,12 +38,13 @@ L'output di questo codice è identico a quello dell'esempio precedente:
 ```
 % g++ src/cpp/funzioni-limiti-modificato.cpp -o src/out/esempio
 % src/out/esempio                                              
-             int: 4 bytes, da:          -2147483648  a:           2147483647
-           short: 2 bytes, da:               -32768  a:                32767
-  unsigned short: 2 bytes, da:                    0  a:                65535
-            long: 8 bytes, da: -9223372036854775808  a:  9223372036854775807
-   unsigned long: 8 bytes, da:                    0  a: 18446744073709551615
+           int: 4 bytes, da:          -2147483648  a:           2147483647
+         short: 2 bytes, da:               -32768  a:                32767
+unsigned short: 2 bytes, da:                    0  a:                65535
+          long: 8 bytes, da: -9223372036854775808  a:  9223372036854775807
+ unsigned long: 8 bytes, da:                    0  a: 18446744073709551615
 ```
+
 
 <!--
 
