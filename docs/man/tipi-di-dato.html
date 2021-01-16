@@ -181,7 +181,12 @@ Ricordatelo, perché questo è la chiave di tutto.</p>
 <p>La dimensione di memoria associata a ciascun tipo di dato non è fissa, ma può variare a seconda del sistema in cui stai lavorando.
 Il codice qui sotto ti permette di conoscere la dimensione in byte dei tipi di dato scalari:</p>
 
-<pre><code>#include &lt;iostream&gt;
+<pre><code>/** 
+ * @file tipi-di-dato-dimensione.cpp
+ * Mostra la dimensione dei principali tipi di dato del C++.
+ */
+ 
+#include &lt;iostream&gt;
 #include &lt;iomanip&gt; 
 
 using namespace std;
@@ -190,7 +195,6 @@ int main()
 {    
     int w = 12;
     
-    /** Mostra la dimensione dei tipi di dato */
     cout &lt;&lt; setw(w) &lt;&lt; "bool: "   &lt;&lt; sizeof(bool)   &lt;&lt; endl;
     cout &lt;&lt; setw(w) &lt;&lt; "char: "   &lt;&lt; sizeof(char)   &lt;&lt; endl;
     cout &lt;&lt; setw(w) &lt;&lt; "int: "    &lt;&lt; sizeof(int)    &lt;&lt; endl;
@@ -224,7 +228,12 @@ I modificatori <code>signed</code> e <code>unsigned</code> fanno sì che il prim
 Il segno, però, “ruba” un bit alla variabile <em>signed</em> che quindi potrà assumere un numero minore di valori rispetto alla stessa variabile <em>unsigned</em>.<br />
 Questo programma mostra come la dimensione e i valori minimi e massimi del tipo di dato <code>int</code> possano variare con l’utilizzo dei modificatori:</p>
 
-<pre><code>#include &lt;iostream&gt;
+<pre><code>/** 
+ * @file tipi-di-dato-limiti.cpp
+ * Mostra i valori possibili per i principali tipi di dato del C++.
+ */
+
+#include &lt;iostream&gt;
 #include &lt;iomanip&gt; 
 #include &lt;limits&gt;
 
