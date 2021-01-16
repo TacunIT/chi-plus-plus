@@ -11,17 +11,12 @@
 
 using namespace std;
 
-/**
- * Funzione template che mostra il nome, la dimensione  
- * e i valori minimi e massimi per un tipo di dato.
- */
 template<typename T>
 void dimensione()
 {
     /** 
-     * L'istruzione: 
-     *   abi::__cxa_demangle(typeid(T).name(), NULL, NULL, NULL) 
-     * mostra il tipo di dato della variabile corrente.
+     * Mostra il nome, la dimensione e i valori minimi 
+     * e massimi per il tipo di dato corrente.
      */
     cout << setw(14)  
          << abi::__cxa_demangle(typeid(T).name(), NULL, NULL, NULL) 

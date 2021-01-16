@@ -26,14 +26,39 @@ Al contrario, se isoliamo la funzione di visualizzazione, così come abbiamo fat
 {% include_relative src/tipi-di-dato-limiti.cpp %}
 ```
 Ogni volta che nel tuo codice ci sono delle istruzioni che si ripetono, valuta la possibilità di isolarle in una funzione.
-Lo puoi fare anche in questo caso, con le istruzioni `cout` della funzione `main`.
-Non l'ho fatto prima perché non volevo complicarti troppo le idee:
+Per esempio, nel brano di codice qui sopra ci sono delle funzioni di output che si ripetono, cosa che complica la lettura del codice, ne rende più lunga e laboriosa la modifica e aumenta la probabilità di fare degli errori, perché sei tu che definisci la stringa con il nome del tipo di dato:
+
+```
+cout << setw(16) << "int: "; 
+...
+cout << setw(16) << "unsigned int: "; 
+...
+cout << setw(16) << "short int: "; 
+...
+cout << setw(16) << "unsigned short: "; 
+...
+cout << setw(16) << "long int: "; 
+...
+cout << setw(16) << "unsigned long: "; 
+```
+
+Nel caso specifico, si trattava di una scelta inevitabile perché, essendo uno dei primi esempii che ti ho fatto, non volevo complicarti troppo le idee, ma non è questo il modo corretto di scrivere codice.
+È sbagliato (o, quanto meno, rischioso) mischiare elaborazione dei dati e funzioni di interfaccia, specie in questo caso, dove parte dell'output è già demandato a una funzione specifica.
+Meglio lasciare che sia la funzione `dimensione` a gestire tutto l'output, mentre la funzione `main` si limiterà a definire il flusso dell'elaborazione, richiamando la funzione di output per i tipi di dato che ci interessano:
 
 ```
 {% include_relative src/funzioni-limiti-modificato.cpp %}
 ```
 
-L'output di questo codice è identico a quello dell'esempio precedente:
+L'istruzione: 
+
+``` 
+abi::__cxa_demangle(typeid(T).name(), NULL, NULL, NULL);
+```
+
+mostra il tipo di dato della variabile corrente.
+Per il momento, accettala in maniera dogmatica; ti spiegherò la funzione dell'operatore `::` quando parleremo delle classi.  
+L'output di questo codice è identico a quello dell'esempio precedente; anzi: è un po' meglio, perché ho ridotto la spaziatura della prima colonna da 16 a 14 caratteri e l'ho fatto modificando solo un'istruzione `setw(14)`, contro le sei del codice precedente:
 
 ```
 % g++ src/cpp/funzioni-limiti-modificato.cpp -o src/out/esempio
