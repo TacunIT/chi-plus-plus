@@ -70,6 +70,10 @@ unsigned short: 2 bytes, da:                    0  a:                65535
  unsigned long: 8 bytes, da:                    0  a: 18446744073709551615
 ```
 
+---
+
+Come ti ho detto, le funzioni sono uno dei tipi di dato del C++.
+
 
 <!--
 
