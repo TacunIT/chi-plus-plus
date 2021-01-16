@@ -1,3 +1,6 @@
+## 0.19.1 (January 16, 2021)
+  - Revisione testo capitolo Funzioni
+
 ## 0.19.0 (January 16, 2021)
   - Codice di esempio per il capitolo sulle funzioni
   - Riviste le citazioni all'inzio dei capitoli
