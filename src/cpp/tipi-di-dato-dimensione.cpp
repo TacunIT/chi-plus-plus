@@ -1,3 +1,8 @@
+/** 
+ * @file tipi-di-dato-dimensione.cpp
+ * Mostra la dimensione dei principali tipi di dato del C++.
+ */
+ 
 #include <iostream>
 #include <iomanip> 
 
@@ -7,7 +12,6 @@ int main()
 {    
     int w = 12;
     
-    /** Mostra la dimensione dei tipi di dato */
     cout << setw(w) << "bool: "   << sizeof(bool)   << endl;
     cout << setw(w) << "char: "   << sizeof(char)   << endl;
     cout << setw(w) << "int: "    << sizeof(int)    << endl;

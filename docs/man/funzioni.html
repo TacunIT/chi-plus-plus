@@ -67,11 +67,153 @@
 
             <section id="testo">
 
-                <p><a id="definizione" onclick="history.back()" title="fare click per tornare alla pagina precedente">definizione</a></p>
+                <p>Le funzioni sono la caratteristica principale del C++.</p>
 
-<p><a id="dichiarazione" onclick="history.back()" title="fare click per tornare alla pagina precedente">dichiarazione</a></p>
+<p>Lo scopo delle funzioni è di migliorare la gestione del codice.
+È possibile scrivere un programma che abbia solo la funzione <code>main</code>, ma questo ha un senso solo per programmi molto semplici, come alcuni degli esempii che abbiamo visto finora.
+Il flusso di un programma <em>non banale</em>, come direbbe Stroutsup, sarà sempre suddiviso in più funzioni perché in questo modo il codice sarà più facile da leggere, da correggere e da modificare.</p>
 
-<p><a id="inline" onclick="history.back()" title="fare click per tornare alla pagina precedente">funzioni inline</a></p>
+<pre><code>/** 
+ * @file tipi-di-dato-dimensione.cpp
+ * Mostra la dimensione dei principali tipi di dato del C++.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+
+using namespace std;
+
+int main()
+{    
+    int w = 12;
+    
+    cout &lt;&lt; setw(w) &lt;&lt; "bool: "   &lt;&lt; sizeof(bool)   &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "char: "   &lt;&lt; sizeof(char)   &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "int: "    &lt;&lt; sizeof(int)    &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "float: "  &lt;&lt; sizeof(float)  &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "double: " &lt;&lt; sizeof(double) &lt;&lt; endl;
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Questo è il codice di un esempio che abbiamo visto nel capitolo sui <a href="/man/tipi-di-dato">tipi di dato</a>.
+Se decidessimo di modificare il modo in cui il programma mostra i dati all’utente, dovremmo intervenire su tutte le righe del programma, cosa che sarebbe noiosa e potrebbe generare degli errori.
+Al contrario, se isoliamo la funzione di visualizzazione, così come abbiamo fatto nell’esempio successivo, delle eventuali modifiche o correzioni dovranno essere applicate solo in un punto:</p>
+
+<pre><code>/** 
+ * @file tipi-di-dato-limiti.cpp
+ * Mostra i valori possibili per i principali tipi di dato del C++.
+ */
+
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+#include &lt;limits&gt;
+
+using namespace std;
+
+/**
+ * Funzione template che mostra la dimensione e i 
+ * valori minimi e massimi per un tipo di dato.
+ */
+template&lt;typename T&gt;
+void dimensione()
+{
+    cout &lt;&lt; sizeof(T) &lt;&lt; " bytes,"
+         &lt;&lt; setw(4)   &lt;&lt; "da:"   
+         &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::min()
+         &lt;&lt; setw(4)   &lt;&lt; "a:"    
+         &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::max() 
+         &lt;&lt; endl;
+}
+
+int main()
+{    
+    /** Variazione della dimensione e dei valori del tipo int */
+    cout &lt;&lt; setw(16) &lt;&lt; "int: "; 
+    dimensione&lt;int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned int: "; 
+    dimensione&lt;unsigned int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "short int: "; 
+    dimensione&lt;short int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned short: "; 
+    dimensione&lt;unsigned short&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "long int: "; 
+    dimensione&lt;long int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned long: "; 
+    dimensione&lt;unsigned long&gt;();
+    
+    return 0;
+}
+
+</code></pre>
+<p>Ogni volta che nel tuo codice ci sono delle istruzioni che si ripetono, valuta la possibilità di isolarle in una funzione.
+Lo puoi fare anche in questo caso, con le istruzioni <code>cout</code> della funzione <code>main</code>.
+Non l’ho fatto prima perché non volevo complicarti troppo le idee:</p>
+
+<pre><code>/** 
+ * @file funzioni-limiti-modificato.cpp
+ * Esempio sui limiti del C++ con output in un'unica funzione.
+ */
+
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+#include &lt;limits&gt;
+#include &lt;typeinfo&gt;
+#include &lt;cxxabi.h&gt;
+
+using namespace std;
+
+/**
+ * Funzione template che mostra il nome, la dimensione  
+ * e i valori minimi e massimi per un tipo di dato.
+ */
+template&lt;typename T&gt;
+void dimensione()
+{
+    /** 
+     * L'istruzione: 
+     *   abi::__cxa_demangle(typeid(T).name(), NULL, NULL, NULL) 
+     * mostra il tipo di dato della variabile corrente.
+     */
+    cout &lt;&lt; setw(14)  
+         &lt;&lt; abi::__cxa_demangle(typeid(T).name(), NULL, NULL, NULL) 
+         &lt;&lt; ": "
+         &lt;&lt; sizeof(T) &lt;&lt; " bytes,"
+         &lt;&lt; setw(4)   &lt;&lt; "da:"   
+         &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::min()
+         &lt;&lt; setw(4)   &lt;&lt; "a:"    
+         &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::max() 
+         &lt;&lt; endl;
+}
+
+int main()
+{    
+    /** 
+     * Il nuovo codice della funzione main: più compatto 
+     * e più facile da leggere o modificare.
+     */
+    dimensione&lt;int&gt;();
+    dimensione&lt;short int&gt;();
+    dimensione&lt;unsigned short&gt;();
+    dimensione&lt;long int&gt;();
+    dimensione&lt;unsigned long&gt;();
+    return 0;
+}
+
+</code></pre>
+
+<p>L’output di questo codice è identico a quello dell’esempio precedente:</p>
+
+<pre><code>% g++ src/cpp/funzioni-limiti-modificato.cpp -o src/out/esempio
+% src/out/esempio                                              
+             int: 4 bytes, da:          -2147483648  a:           2147483647
+           short: 2 bytes, da:               -32768  a:                32767
+  unsigned short: 2 bytes, da:                    0  a:                65535
+            long: 8 bytes, da: -9223372036854775808  a:  9223372036854775807
+   unsigned long: 8 bytes, da:                    0  a: 18446744073709551615
+</code></pre>
 
 <!--
 
@@ -92,6 +234,19 @@ Gli esseri appaiono dalla non-esistenza, esistono per un istante e poi cessano d
 La loro esistenza, attività e azione sono un'unica cosa.
 Passato e futuro sono meri nomi.”
 Samyutta Nikaya, citato da Ananda, Tempo ed Eternità, pag. 45
+
+
+<a id="definizione" 
+   onclick="history.back()" 
+   title="fare click per tornare alla pagina precedente">definizione</a>
+
+<a id="dichiarazione" 
+      onclick="history.back()" 
+      title="fare click per tornare alla pagina precedente">dichiarazione</a>
+
+<a id="inline" 
+   onclick="history.back()" 
+   title="fare click per tornare alla pagina precedente">funzioni inline</a>
 
 
 Funzioni ricorsive
