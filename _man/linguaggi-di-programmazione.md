@@ -130,8 +130,8 @@ Se invece opti per il foglio con l'indirizzo risparmierai i soldi dell'interpret
 
 Con i linguaggi di programmazioni avviene la stessa cosa.
 Il codice dei linguaggi interpretati viene letto da un programma chiamato: *interprete* che prima traduce le istruzioni nel linguaggio del computer e poi le esegue.
-Il codice dei linguaggi compilati, al contrario, viene letto da un programma chiamato *compilatore*, che lo converte in istruzioni comprensibili dal computer e scrive queste istruzioni in un nuovo file, detto: *eseguibile*<a class="nota" href="/man/note#compilatore"></a>.  
-Anche in questo caso ciascun metodo ha lati positivi e lati negativi.  
+Il codice dei linguaggi compilati, al contrario, viene letto da un programma chiamato *compilatore*, che lo converte in istruzioni comprensibili dal computer, scrive queste istruzioni in un nuovo file, detto: *object-file* e lo passa a un altro programma, chiamato *linker*, che lo trasforma in un file *eseguibile*.   
+Anche in questo caso, ciascun metodo ha lati positivi e lati negativi.  
 I linguaggi interpretati sono più lenti, perché il passaggio lettura/conversione/esecuzione si ripete ogni volta che il codice viene elaborato; inoltre, richiedono delle risorse di sistema in più da destinare all'interprete.
 In compenso, ogni modifica al codice sorgente viene trasmessa immediatamente anche al programma in esecuzione.
 I linguaggi compilati sono più rapidi e richiedono meno risorse di sistema perché la compilazione avviene solo una volta, dopo di che il programma può essere eseguito autonomamente, ma se si modifica il codice sorgente, il programma dovrà essere ri-compilato per funzionare correttamente.

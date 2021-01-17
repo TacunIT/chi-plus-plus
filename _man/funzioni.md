@@ -73,8 +73,8 @@ unsigned short: 2 bytes, da:                    0  a:                65535
 
 ---
 
-Come ti ho detto, le funzioni sono uno dei tipi di dato del C++ e, come tutti i tipi di dato, possono essere *dichiarate* e *definite*.
-La <a id="dichiarazione">dichiarazione</a> di una funzione definisce il suo tipo di ritorno e i suoi parametri:
+Le funzioni sono uno dei <a href="/man/tipi-di-dato#funzioni">tipi di dato</a> del C++ e, come tutti i tipi di dato, possono essere *dichiarate* e *definite*.  
+La <a id="dichiarazione">dichiarazione</a> di una funzione stabilisce il suo tipo di ritorno e i parametri richiesti in input:
 
 ```
 float scorporaIVA(long stipendio, float aliquota);
@@ -91,14 +91,57 @@ float scorporaIVA(long stipendio, float aliquota)
 }
 ```
 
+Come ti ho detto quando abbiamo parlato dei <a href="/man/linguaggi-di-programmazione">linguaggi di programmazione</a>, la generazione di un file eseguibile avviene in due fasi: per prima cosa il compilatore converte il codice in un *file oggetto*, poi il *linker* trasforma il o <i>i</i> file oggetto (potrebbero essere più d'uno) in un unico eseguibile. 
+Perché questo processo possa funzionare, la *dichiarazione* di una funzione deve essere presente in tutti i brani di codice che la utilizzano, per consentire al compilatore di controllare che l'utilizzo che se ne fa sia corretto; la *definizione*, al contrario, deve comparire solo una volta.  
+
+```
+{% include_relative src/funzioni-stipendio-main.cpp %}
+```
+
+```
+{% include_relative src/funzioni-stipendio-funz.cpp %}
+```
+Se compiliamo separatamente i due file qui sopra aggiungendo il parametro `-c`, che dice al compilatore di generare solo il file oggetto, senza richiamare il linker per la generazione di un eseguibile:
+
+```
+% g++ -c src/cpp/funzioni-stipendio-main.cpp -o src/out/main.o
+% g++ -c src/cpp/funzioni-stipendio-funz.cpp -o src/out/funz.o
+```
+e poi generiamo un file eseguibile utilizzando i due file oggetto:
+
+```
+% g++ -o src/out/esempio src/out/main.o src/out/funz.o        
+```
+otterremo tre file, due *object-file* e il file eseguibile `esempio`, che darà il risultato atteso:
+
+```
+% ls -1 src/out                                               
+esempio
+funz.o
+main.o
+
+% src/out/esempio                                             
+3000
+```
+
+Se non dichiarassimo la funzione `raddoppiaStipendio` nel file che contiene la funzione `main`, il compilatore ci darebbe l'errore:
+
+```
+src/cpp/funzioni-stipendio-main.cpp:19:18: error: use of undeclared identifier 'raddoppiaStipendio'
+    std::cout << raddoppiaStipendio(1500) << std::endl;                     ^
+1 error generated.
+```
+
+<!--
+
+/man/linguaggi-di-programmazione
 
 spiega al compilatore che la funzione `scorporaIVA` ha un valore di ritorno di tipo `float` e che richiede in input un parametro di tipo `long` e uno di tipo `float`.
 
 Grazie a questa informazione, il compilatore potrà accorgersi di eventuali errori nel codice, segnalandoli:
 
-```
-{% include_relative src/funzioni-errore-compilazione.cpp %}
-```
+
+-->
 
 
 <!--
