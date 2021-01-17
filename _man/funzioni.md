@@ -202,6 +202,13 @@ src/cpp/funzioni-limiti-main.cpp:23:25: error: expected '(' for function-style c
 Questo avviene perché i `template` non sono vere funzioni, ma solo degli schemi che il compilatore utilizza per generare la versione corretta del codice.
 La dichiarazione delle funzioni template, quindi deve comprendere anche la loro definizione, per dare modo al compilatore di gestire appropriatamente la chiamata<a class="nota" href="/man/note#template"></a>.
 
+---
+
+<!--
+
+Prima ti ho detto di *valutare* la possibilità di isolare in una funzione le istruzioni che si ripetono all'interno del tuo codice, perché non sempre creare una funzione è la scelta corretta: a volte è meglio avere delle istruzioni duplicate perché questo evita al sistema il sovraccarico di lavoro dovuto alla chiamata di una funzione esterna.  
+Il software, come molte attività umane, è il frutto di una serie di compromessi e tu dovrai fare scelte architetturali differenti a seconda del tipo di programma che devi realizzare.
+
 
 <!-- ------------------------------
 
