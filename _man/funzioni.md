@@ -20,13 +20,14 @@ Il flusso di un programma *non banale*, come direbbe Stroutsup, sarà sempre sud
 
 Questo è il codice di un esempio che abbiamo visto nel capitolo sui <a href="/man/tipi-di-dato">tipi di dato</a>.
 Se decidessimo di modificare il modo in cui il programma mostra i dati all'utente, dovremmo intervenire su tutte le righe del programma, cosa che sarebbe noiosa e potrebbe generare degli errori.
-Al contrario, se isoliamo la funzione di visualizzazione, così come abbiamo fatto nell'esempio successivo, delle eventuali modifiche o correzioni dovranno essere applicate solo in un punto:
+Al contrario, se isoliamo la funzione di visualizzazione, eventuali modifiche o correzioni dovranno essere applicate solo in un punto.
+Il codice qui sotto è un esempio, perfettibile, di questo approccio:
 
 ```
 {% include_relative src/tipi-di-dato-limiti.cpp %}
 ```
 Ogni volta che nel tuo codice ci sono delle istruzioni che si ripetono, valuta la possibilità di isolarle in una funzione.
-Per esempio, nel brano di codice qui sopra ci sono delle funzioni di output che si ripetono, cosa che complica la lettura del codice, ne rende più lunga e laboriosa la modifica e aumenta la probabilità di fare degli errori, perché sei tu che definisci la stringa con il nome del tipo di dato:
+Per esempio, nella funzione `main` del programma qui sopra ci sono delle funzioni di output che si ripetono, cosa che complica la lettura del codice, ne rende più lunga e laboriosa la modifica e aumenta la probabilità di fare degli errori, perché sei tu che definisci la stringa con il nome del tipo di dato e devi fare attenzione a scrivere il valore giusto ogni volta:
 
 ```
 cout << setw(16) << "int: "; 
@@ -57,7 +58,7 @@ abi::__cxa_demangle(typeid(T).name(), NULL, NULL, NULL);
 ```
 
 mostra il tipo di dato della variabile corrente.
-Per il momento, accettala in maniera dogmatica; ti spiegherò la funzione dell'operatore `::` quando parleremo delle classi.  
+Per il momento, accettala in maniera dogmatica; ti spiegherò il comportamento dell'operatore `::` quando parleremo delle classi.  
 L'output di questo codice è identico a quello dell'esempio precedente; anzi: è un po' meglio, perché ho ridotto la spaziatura della prima colonna da 16 a 14 caratteri e l'ho fatto modificando solo un'istruzione `setw(14)`, contro le sei del codice precedente:
 
 ```
@@ -72,7 +73,32 @@ unsigned short: 2 bytes, da:                    0  a:                65535
 
 ---
 
-Come ti ho detto, le funzioni sono uno dei tipi di dato del C++.
+Come ti ho detto, le funzioni sono uno dei tipi di dato del C++ e, come tutti i tipi di dato, possono essere *dichiarate* e *definite*.
+La <a id="dichiarazione">dichiarazione</a> di una funzione definisce il suo tipo di ritorno e i suoi parametri:
+
+```
+float scorporaIVA(long stipendio, float aliquota);
+```
+
+La <a id="definizione">definizione</a> di una funzione, ne stabilisce il comportamento:
+
+```
+float scorporaIVA(long stipendio, float aliquota)
+{
+    float valore;
+    valore = stipendio / ((100 + aliquota) / 100);
+    return valore;
+}
+```
+
+
+spiega al compilatore che la funzione `scorporaIVA` ha un valore di ritorno di tipo `float` e che richiede in input un parametro di tipo `long` e uno di tipo `float`.
+
+Grazie a questa informazione, il compilatore potrà accorgersi di eventuali errori nel codice, segnalandoli:
+
+```
+{% include_relative src/funzioni-errore-compilazione.cpp %}
+```
 
 
 <!--
@@ -96,13 +122,9 @@ Passato e futuro sono meri nomi.”
 Samyutta Nikaya, citato da Ananda, Tempo ed Eternità, pag. 45
 
 
-<a id="definizione" 
-   onclick="history.back()" 
-   title="fare click per tornare alla pagina precedente">definizione</a>
 
-<a id="dichiarazione" 
-      onclick="history.back()" 
-      title="fare click per tornare alla pagina precedente">dichiarazione</a>
+
+
 
 <a id="inline" 
    onclick="history.back()" 
