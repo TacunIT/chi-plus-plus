@@ -103,11 +103,11 @@ quote:
             <a href="Javascript:history.back()" name="aerobica"><i class="fas fa-reply"></i></a>
         </li>
         <li>
-            L'equivalente di 159$ nel 2019.
+            L'equivalente di 160$ nel 2020.
             <a href="Javascript:history.back()" name="dollari"><i class="fas fa-reply"></i></a>
         </li>
         <li>
-            @todo: spiegare cosa sia stato il S.
+            @todo: spiegare cosa sia stato il Sakoku.
             <a href="Javascript:history.back()" name="sakoku"><i class="fas fa-reply"></i></a>
         </li>    
         <li>
@@ -127,6 +127,15 @@ quote:
         </li>    
     </ol>
 
+    <h3>Le funzioni</h3>
+    <ol>
+        <li>
+            <a href="https://isocpp.org/wiki/faq/templates#templates-defn-vs-decl"
+               target="note">https://isocpp.org/wiki/faq/templates#templates-defn-vs-decl</a>
+            <a href="Javascript:history.back()" name="template"><i class="fas fa-reply"></i></a>
+        </li>
+    </ol>
+    
     <h3>Istruzioni condizionali</h3>
     <ol>
         <li>
