@@ -19,6 +19,15 @@ quote:
         </li>
     </ol>
 
+    <h3>I linguaggi di programmazione</h3>
+    <ol>
+        <li>
+            Semplifico: in effetti, il compilatore genera solo i file oggetto, che poi saranno trasformati in un eseguibile dal <i>linker</i>. 
+            Lo preciserò nel capitolo dedicato alle funzioni.
+            <a href="Javascript:history.back()" name="compilatore"><i class="fas fa-reply"></i></a>
+        </li>
+    </ol>
+
     <h3>Il C++</h3>
     <ol>
         <li>

@@ -11,13 +11,13 @@
 
 using namespace std;
 
+/** 
+ * Mostra il nome, la dimensione e i valori minimi 
+ * e massimi per il tipo di dato corrente.
+ */
 template<typename T>
 void dimensione()
 {
-    /** 
-     * Mostra il nome, la dimensione e i valori minimi 
-     * e massimi per il tipo di dato corrente.
-     */
     cout << setw(14)  
          << abi::__cxa_demangle(typeid(T).name(), NULL, NULL, NULL) 
          << ": "
@@ -29,12 +29,12 @@ void dimensione()
          << endl;
 }
 
-int main()
+/** 
+ * Il nuovo codice della funzione main:  più compatto 
+ * e più facile da leggere o modificare.
+ */
+int main(int argc, char** argv)
 {    
-    /** 
-     * Il nuovo codice della funzione main: più compatto 
-     * e più facile da leggere o modificare.
-     */
     dimensione<int>();
     dimensione<short int>();
     dimensione<unsigned short>();

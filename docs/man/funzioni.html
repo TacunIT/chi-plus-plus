@@ -100,7 +100,8 @@ int main()
 
 <p>Questo è il codice di un esempio che abbiamo visto nel capitolo sui <a href="/man/tipi-di-dato">tipi di dato</a>.
 Se decidessimo di modificare il modo in cui il programma mostra i dati all’utente, dovremmo intervenire su tutte le righe del programma, cosa che sarebbe noiosa e potrebbe generare degli errori.
-Al contrario, se isoliamo la funzione di visualizzazione, così come abbiamo fatto nell’esempio successivo, delle eventuali modifiche o correzioni dovranno essere applicate solo in un punto:</p>
+Al contrario, se isoliamo la funzione di visualizzazione, eventuali modifiche o correzioni dovranno essere applicate solo in un punto.
+Il codice qui sotto è un esempio, perfettibile, di questo approccio:</p>
 
 <pre><code>/** 
  * @file tipi-di-dato-limiti.cpp
@@ -149,7 +150,7 @@ int main()
 
 </code></pre>
 <p>Ogni volta che nel tuo codice ci sono delle istruzioni che si ripetono, valuta la possibilità di isolarle in una funzione.
-Per esempio, nel brano di codice qui sopra ci sono delle funzioni di output che si ripetono, cosa che complica la lettura del codice, ne rende più lunga e laboriosa la modifica e aumenta la probabilità di fare degli errori, perché sei tu che definisci la stringa con il nome del tipo di dato:</p>
+Per esempio, nella funzione <code>main</code> del programma qui sopra ci sono delle funzioni di output che si ripetono, cosa che complica la lettura del codice, ne rende più lunga e laboriosa la modifica e aumenta la probabilità di fare degli errori, perché sei tu che definisci la stringa con il nome del tipo di dato e devi fare attenzione a scrivere il valore giusto ogni volta:</p>
 
 <pre><code>cout &lt;&lt; setw(16) &lt;&lt; "int: "; 
 ...
@@ -181,13 +182,13 @@ Meglio lasciare che sia la funzione <code>dimensione</code> a gestire tutto l’
 
 using namespace std;
 
+/** 
+ * Mostra il nome, la dimensione e i valori minimi 
+ * e massimi per il tipo di dato corrente.
+ */
 template&lt;typename T&gt;
 void dimensione()
 {
-    /** 
-     * Mostra il nome, la dimensione e i valori minimi 
-     * e massimi per il tipo di dato corrente.
-     */
     cout &lt;&lt; setw(14)  
          &lt;&lt; abi::__cxa_demangle(typeid(T).name(), NULL, NULL, NULL) 
          &lt;&lt; ": "
@@ -199,12 +200,12 @@ void dimensione()
          &lt;&lt; endl;
 }
 
-int main()
+/** 
+ * Il nuovo codice della funzione main:  più compatto 
+ * e più facile da leggere o modificare.
+ */
+int main(int argc, char** argv)
 {    
-    /** 
-     * Il nuovo codice della funzione main: più compatto 
-     * e più facile da leggere o modificare.
-     */
     dimensione&lt;int&gt;();
     dimensione&lt;short int&gt;();
     dimensione&lt;unsigned short&gt;();
@@ -221,7 +222,7 @@ int main()
 </code></pre>
 
 <p>mostra il tipo di dato della variabile corrente.
-Per il momento, accettala in maniera dogmatica; ti spiegherò la funzione dell’operatore <code>::</code> quando parleremo delle classi.<br />
+Per il momento, accettala in maniera dogmatica; ti spiegherò il comportamento dell’operatore <code>::</code> quando parleremo delle classi.<br />
 L’output di questo codice è identico a quello dell’esempio precedente; anzi: è un po’ meglio, perché ho ridotto la spaziatura della prima colonna da 16 a 14 caratteri e l’ho fatto modificando solo un’istruzione <code>setw(14)</code>, contro le sei del codice precedente:</p>
 
 <pre><code>% g++ src/cpp/funzioni-limiti-modificato.cpp -o src/out/esempio
@@ -235,7 +236,54 @@ unsigned short: 2 bytes, da:                    0  a:                65535
 
 <hr />
 
-<p>Come ti ho detto, le funzioni sono uno dei tipi di dato del C++.</p>
+<p>Come ti ho detto, le funzioni sono uno dei tipi di dato del C++ e, come tutti i tipi di dato, possono essere <em>dichiarate</em> e <em>definite</em>.
+La <a id="dichiarazione">dichiarazione</a> di una funzione definisce il suo tipo di ritorno e i suoi parametri:</p>
+
+<pre><code>float scorporaIVA(long stipendio, float aliquota);
+</code></pre>
+
+<p>La <a id="definizione">definizione</a> di una funzione, ne stabilisce il comportamento:</p>
+
+<pre><code>float scorporaIVA(long stipendio, float aliquota)
+{
+    float valore;
+    valore = stipendio / ((100 + aliquota) / 100);
+    return valore;
+}
+</code></pre>
+
+<p>spiega al compilatore che la funzione <code>scorporaIVA</code> ha un valore di ritorno di tipo <code>float</code> e che richiede in input un parametro di tipo <code>long</code> e uno di tipo <code>float</code>.</p>
+
+<p>Grazie a questa informazione, il compilatore potrà accorgersi di eventuali errori nel codice, segnalandoli:</p>
+
+<pre><code>/** 
+ * @file funzioni-errore-compilazione.cpp
+ * Esempio che genera un errore di compilazione.
+ */
+
+float scorporaIVA(long stipendio, float aliquota)
+{
+    float valore;
+    valore = stipendio / ((100 + aliquota) / 100);
+    return valore;
+}
+
+int main(int argc, char** argv)
+{    
+    /** Utilizzo corretto */
+    long  stipendio_1 = 15000;
+    float aliquota_1  = 22;
+    float iva = scorporaIVA(stipendio_1, aliquota_1);
+
+    /** Utilizzo errato: errore di compilazione */
+    int stipendio_2  = 15000;
+    const char* aliquota_2 = "22";
+    iva = scorporaIVA(stipendio_2, aliquota_2);
+
+    return 0;
+}
+
+</code></pre>
 
 <!--
 
@@ -258,13 +306,9 @@ Passato e futuro sono meri nomi.”
 Samyutta Nikaya, citato da Ananda, Tempo ed Eternità, pag. 45
 
 
-<a id="definizione" 
-   onclick="history.back()" 
-   title="fare click per tornare alla pagina precedente">definizione</a>
 
-<a id="dichiarazione" 
-      onclick="history.back()" 
-      title="fare click per tornare alla pagina precedente">dichiarazione</a>
+
+
 
 <a id="inline" 
    onclick="history.back()" 
