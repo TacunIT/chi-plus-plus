@@ -313,6 +313,15 @@ main.o
 3000
 </code></pre>
 
+<p>Ma siccome io sono pigro, negli esempii che ti farò utilizzerò sempre un comando unico per la compilazione e il <em>linking</em> dei programmi:</p>
+
+<pre><code>g++ src/cpp/funzioni-stipendio-funz.cpp  \                                                       
+    src/cpp/funzioni-stipendio-main.cpp  \
+    -o src/out/esempio
+% src/out/esempio                                                                                 
+3000
+</code></pre>
+
 <p>Se non dichiarassimo la funzione <code>raddoppiaStipendio</code> nel file che contiene la funzione <code>main</code>, il compilatore ci darebbe l’errore:</p>
 
 <pre><code>src/cpp/funzioni-stipendio-main.cpp:19:18: error: use of undeclared identifier 'raddoppiaStipendio'
@@ -320,18 +329,88 @@ main.o
 1 error generated.
 </code></pre>
 
-<!--
+<p>Otterremmo lo stesso errore se definissimo una funzione dopo che un altra parte del programma l’ha richiamata:</p>
 
-/man/linguaggi-di-programmazione
+<pre><code>/** 
+ * @file funzioni-stipendio-errore.cpp
+ * Funzione che genera un errore di compilazione.
+ */
+#include &lt;iostream&gt; 
 
-spiega al compilatore che la funzione `scorporaIVA` ha un valore di ritorno di tipo `float` e che richiede in input un parametro di tipo `long` e uno di tipo `float`.
+/**
+ * La funzione main richiama la funzione raddoppiaStipendio,
+ * ma il compilatore ancora non sa che esiste: errore.
+ */
+int main(int argc, char** argv)
+{        
+    std::cout &lt;&lt; raddoppiaStipendio(1500) &lt;&lt; std::endl;    
+    return 0;
+}
 
-Grazie a questa informazione, il compilatore potrà accorgersi di eventuali errori nel codice, segnalandoli:
+/** 
+ * Definizione della funzione raddoppiaStipendio DOPO
+ * il suo utilizzo da parte della funzione main. 
+ */
+float raddoppiaStipendio(float stipendio)
+{
+    return stipendio * 2;
+}
 
+</code></pre>
 
--->
+<pre><code>g++ -c src/cpp/funzioni-stipendio errore.cpp                                                    
 
-<!--
+src/cpp/funzioni-stipendio-errore.cpp:13:18: error: use of undeclared identifier 'raddoppiaStipendio'
+    std::cout &lt;&lt; raddoppiaStipendio(1500) &lt;&lt; std::endl;    
+                 ^
+1 error generated.
+
+</code></pre>
+
+<p>Quando si scrive un programma in un unico file sorgente, o si definiscono le diverse funzioni prima che vengano utilizzate, mettendo la funzione <code>main</code> in fondo, oppure le si deve dichiarare all’inizio del file. 
+(In realtà, non occorre metterle tutte all’inizio del file, basta che la dichiarazione preceda l’utilizzo, ma è più scomodo: mettile all’inizio.)<br />
+Avresti ottenuto un errore di compilazione anche se avessi provato a separare in due file distinti la funzione <code>main</code> e la funzione <code>dimensione</code> dell’esempio qui sopra, anche se avessi dichiarato <code>dimensione</code> prima del suo utilizzo nella funzione <code>main</code>:</p>
+
+<pre><code>% g++ src/cpp/funzioni-limiti-main.cpp -c -o src/out/main.o         
+src/cpp/funzioni-limiti-main.cpp:19:5: error: use of undeclared identifier 'dimensione'
+    dimensione&lt;int&gt;();
+    ^
+src/cpp/funzioni-limiti-main.cpp:19:19: error: expected '(' for function-style cast or type construction
+    dimensione&lt;int&gt;();
+               ~~~^
+src/cpp/funzioni-limiti-main.cpp:19:21: error: expected expression
+    dimensione&lt;int&gt;();
+                    ^
+src/cpp/funzioni-limiti-main.cpp:20:5: error: use of undeclared identifier 'dimensione'
+    dimensione&lt;short int&gt;();
+    ^
+src/cpp/funzioni-limiti-main.cpp:20:22: error: expected '(' for function-style cast or type construction
+    dimensione&lt;short int&gt;();
+               ~~~~~ ^
+src/cpp/funzioni-limiti-main.cpp:21:5: error: use of undeclared identifier 'dimensione'
+    dimensione&lt;unsigned short&gt;();
+    ^
+src/cpp/funzioni-limiti-main.cpp:21:25: error: expected '(' for function-style cast or type construction
+    dimensione&lt;unsigned short&gt;();
+               ~~~~~~~~ ^
+src/cpp/funzioni-limiti-main.cpp:22:5: error: use of undeclared identifier 'dimensione'
+    dimensione&lt;long int&gt;();
+    ^
+src/cpp/funzioni-limiti-main.cpp:22:21: error: expected '(' for function-style cast or type construction
+    dimensione&lt;long int&gt;();
+               ~~~~ ^
+src/cpp/funzioni-limiti-main.cpp:23:5: error: use of undeclared identifier 'dimensione'
+    dimensione&lt;unsigned long&gt;();
+    ^
+src/cpp/funzioni-limiti-main.cpp:23:25: error: expected '(' for function-style cast or type construction
+    dimensione&lt;unsigned long&gt;();
+               ~~~~~~~~ ^
+</code></pre>
+
+<p>Questo avviene perché i <code>template</code> non sono vere funzioni, ma solo degli schemi che il compilatore utilizza per generare la versione corretta del codice.
+La dichiarazione delle funzioni template, quindi deve comprendere anche la loro definizione, per dare modo al compilatore di gestire appropriatamente la chiamata<a class="nota" href="/man/note#template"></a>.</p>
+
+<!-- ------------------------------
 
 Spiegare COME fare a capire quale sia il proprio ruolo nell'Universo.
 Non posso metterlo nel capitolo sulla memoria che è già stracolmo.

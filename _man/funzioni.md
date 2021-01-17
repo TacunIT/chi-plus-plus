@@ -124,6 +124,16 @@ main.o
 3000
 ```
 
+Ma siccome io sono pigro, negli esempii che ti farò utilizzerò sempre un comando unico per la compilazione e il *linking* dei programmi:
+
+```
+g++ src/cpp/funzioni-stipendio-funz.cpp  \                                                       
+    src/cpp/funzioni-stipendio-main.cpp  \
+    -o src/out/esempio
+% src/out/esempio                                                                                 
+3000
+```
+
 Se non dichiarassimo la funzione `raddoppiaStipendio` nel file che contiene la funzione `main`, il compilatore ci darebbe l'errore:
 
 ```
@@ -132,19 +142,68 @@ src/cpp/funzioni-stipendio-main.cpp:19:18: error: use of undeclared identifier '
 1 error generated.
 ```
 
-<!--
+Otterremmo lo stesso errore se definissimo una funzione dopo che un altra parte del programma l'ha richiamata:
 
-/man/linguaggi-di-programmazione
+```
+{% include_relative src/funzioni-stipendio-errore.cpp %}
+```
 
-spiega al compilatore che la funzione `scorporaIVA` ha un valore di ritorno di tipo `float` e che richiede in input un parametro di tipo `long` e uno di tipo `float`.
+```
+g++ -c src/cpp/funzioni-stipendio errore.cpp                                                    
 
-Grazie a questa informazione, il compilatore potrà accorgersi di eventuali errori nel codice, segnalandoli:
+src/cpp/funzioni-stipendio-errore.cpp:13:18: error: use of undeclared identifier 'raddoppiaStipendio'
+    std::cout << raddoppiaStipendio(1500) << std::endl;    
+                 ^
+1 error generated.
+
+```
+
+Quando si scrive un programma in un unico file sorgente, o si definiscono le diverse funzioni prima che vengano utilizzate, mettendo la funzione `main` in fondo, oppure le si deve dichiarare all'inizio del file. 
+(In realtà, non occorre metterle tutte all'inizio del file, basta che la dichiarazione preceda l'utilizzo, ma è più scomodo: mettile all'inizio.)  
+Avresti ottenuto un errore di compilazione anche se avessi provato a separare in due file distinti la funzione `main` e la funzione `dimensione` dell'esempio qui sopra, anche se avessi dichiarato `dimensione` prima del suo utilizzo nella funzione `main`:
+
+```
+% g++ src/cpp/funzioni-limiti-main.cpp -c -o src/out/main.o         
+src/cpp/funzioni-limiti-main.cpp:19:5: error: use of undeclared identifier 'dimensione'
+    dimensione<int>();
+    ^
+src/cpp/funzioni-limiti-main.cpp:19:19: error: expected '(' for function-style cast or type construction
+    dimensione<int>();
+               ~~~^
+src/cpp/funzioni-limiti-main.cpp:19:21: error: expected expression
+    dimensione<int>();
+                    ^
+src/cpp/funzioni-limiti-main.cpp:20:5: error: use of undeclared identifier 'dimensione'
+    dimensione<short int>();
+    ^
+src/cpp/funzioni-limiti-main.cpp:20:22: error: expected '(' for function-style cast or type construction
+    dimensione<short int>();
+               ~~~~~ ^
+src/cpp/funzioni-limiti-main.cpp:21:5: error: use of undeclared identifier 'dimensione'
+    dimensione<unsigned short>();
+    ^
+src/cpp/funzioni-limiti-main.cpp:21:25: error: expected '(' for function-style cast or type construction
+    dimensione<unsigned short>();
+               ~~~~~~~~ ^
+src/cpp/funzioni-limiti-main.cpp:22:5: error: use of undeclared identifier 'dimensione'
+    dimensione<long int>();
+    ^
+src/cpp/funzioni-limiti-main.cpp:22:21: error: expected '(' for function-style cast or type construction
+    dimensione<long int>();
+               ~~~~ ^
+src/cpp/funzioni-limiti-main.cpp:23:5: error: use of undeclared identifier 'dimensione'
+    dimensione<unsigned long>();
+    ^
+src/cpp/funzioni-limiti-main.cpp:23:25: error: expected '(' for function-style cast or type construction
+    dimensione<unsigned long>();
+               ~~~~~~~~ ^
+```
+
+Questo avviene perché i `template` non sono vere funzioni, ma solo degli schemi che il compilatore utilizza per generare la versione corretta del codice.
+La dichiarazione delle funzioni template, quindi deve comprendere anche la loro definizione, per dare modo al compilatore di gestire appropriatamente la chiamata<a class="nota" href="/man/note#template"></a>.
 
 
--->
-
-
-<!--
+<!-- ------------------------------
 
 Spiegare COME fare a capire quale sia il proprio ruolo nell'Universo.
 Non posso metterlo nel capitolo sulla memoria che è già stracolmo.
