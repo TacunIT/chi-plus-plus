@@ -1,3 +1,9 @@
+## 0.19.2 (January 17, 2021)
+  - Redazione del capitolo
+  - Aggiunta nota su dichiarazione delle funzioni template
+  - Aggiunto codice di esempio per compilazione separata dei file oggetto
+  - Aggiunta nota a capitolo sui linguaggi di programmazione
+
 ## 0.19.1 (January 16, 2021)
   - Revisione testo capitolo Funzioni
 
