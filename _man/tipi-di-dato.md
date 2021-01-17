@@ -106,7 +106,7 @@ unsigned short: 2 bytes, da:                    0  a:                65535
  unsigned long: 8 bytes, da:                    0  a: 18446744073709551615
  ```
 
-<a id="puntatori"></a>
+<a id="funzioni"></a>
 L'ultima cosa di cui ti devo parlare, a proposito dei tipi di dato del C++ sono i cosiddetti *attributi intermediari*, ovvero: le *funzioni*, gli *array*, i *puntatori* e le *reference*.  
 Delle *funzioni* parleremo diffusamente [in seguito](/man/funzioni).
 Quello che ci interessa, qui e ora, è che ogni funzione ha un suo tipo di dato.
@@ -132,7 +132,7 @@ char array[] = "abcdefghilmnopqrstuvz";
 
 Ogni elemento dell'array è identificato da un indice che va 0 al numero di elementi dell'array meno uno.
 Nel caso dell'array qui sopra, la lettera `a` avrà indice 0, la `b` avrà indice 2 e così via, fino alla `z`, che avrà indice 20.  
-I *puntatori* sono come i pitbull: alla maggior parte delle persone fanno paura, ma chi li conosce sa che sono cani dolcissimi, se li sai trattare.
+<a id="puntatori"></a>I *puntatori* sono come i pitbull: alla maggior parte delle persone fanno paura, ma chi li conosce sa che sono cani dolcissimi, se li sai trattare.
 Quello che devi tenere sempre a mente è che il *C++* è solo un modo particolare di vedere la memoria del computer e nella memoria non ci sono caratteri, non ci sono classi, non ci sono immagini e non ci sono film porno, ma solo una lunga sequenza di 1 e di 0:
 
 ```

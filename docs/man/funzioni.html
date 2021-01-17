@@ -236,8 +236,8 @@ unsigned short: 2 bytes, da:                    0  a:                65535
 
 <hr />
 
-<p>Come ti ho detto, le funzioni sono uno dei tipi di dato del C++ e, come tutti i tipi di dato, possono essere <em>dichiarate</em> e <em>definite</em>.
-La <a id="dichiarazione">dichiarazione</a> di una funzione definisce il suo tipo di ritorno e i suoi parametri:</p>
+<p>Le funzioni sono uno dei <a href="/man/tipi-di-dato#funzioni">tipi di dato</a> del C++ e, come tutti i tipi di dato, possono essere <em>dichiarate</em> e <em>definite</em>.<br />
+La <a id="dichiarazione">dichiarazione</a> di una funzione stabilisce il suo tipo di ritorno e i parametri richiesti in input:</p>
 
 <pre><code>float scorporaIVA(long stipendio, float aliquota);
 </code></pre>
@@ -252,38 +252,84 @@ La <a id="dichiarazione">dichiarazione</a> di una funzione definisce il suo tipo
 }
 </code></pre>
 
-<p>spiega al compilatore che la funzione <code>scorporaIVA</code> ha un valore di ritorno di tipo <code>float</code> e che richiede in input un parametro di tipo <code>long</code> e uno di tipo <code>float</code>.</p>
-
-<p>Grazie a questa informazione, il compilatore potrà accorgersi di eventuali errori nel codice, segnalandoli:</p>
+<p>Come ti ho detto quando abbiamo parlato dei <a href="/man/linguaggi-di-programmazione">linguaggi di programmazione</a>, la generazione di un file eseguibile avviene in due fasi: per prima cosa il compilatore converte il codice in un <em>file oggetto</em>, poi il <em>linker</em> trasforma il o <i>i</i> file oggetto (potrebbero essere più d’uno) in un unico eseguibile. 
+Perché questo processo possa funzionare, la <em>dichiarazione</em> di una funzione deve essere presente in tutti i brani di codice che la utilizzano, per consentire al compilatore di controllare che l’utilizzo che se ne fa sia corretto; la <em>definizione</em>, al contrario, deve comparire solo una volta.</p>
 
 <pre><code>/** 
- * @file funzioni-errore-compilazione.cpp
- * Esempio che genera un errore di compilazione.
+ * @file funzioni-stipendio-main.cpp
+ * Funzione main del programma con compilazione separata dei file oggetto.
  */
+#include &lt;iostream&gt; 
 
-float scorporaIVA(long stipendio, float aliquota)
-{
-    float valore;
-    valore = stipendio / ((100 + aliquota) / 100);
-    return valore;
-}
+/** 
+ * Dichiarazione della funzione raddoppiaStipendio. 
+ * Può stare o qui o in un file di include.
+ */
+float raddoppiaStipendio(float stipendio);
 
+/**
+ * La funzione main richiama la funzione raddoppiaStipendio,
+ * che è definita in un altro file sorgente.
+ */
 int main(int argc, char** argv)
-{    
-    /** Utilizzo corretto */
-    long  stipendio_1 = 15000;
-    float aliquota_1  = 22;
-    float iva = scorporaIVA(stipendio_1, aliquota_1);
-
-    /** Utilizzo errato: errore di compilazione */
-    int stipendio_2  = 15000;
-    const char* aliquota_2 = "22";
-    iva = scorporaIVA(stipendio_2, aliquota_2);
-
+{        
+    std::cout &lt;&lt; raddoppiaStipendio(1500) &lt;&lt; std::endl;    
     return 0;
 }
 
 </code></pre>
+
+<pre><code>/** 
+ * @file funzioni-stipendio-funz.cpp
+ * Funzione del programma con compilazione separata dei file oggetto.
+ */
+
+/** 
+ * Definizione della funzione raddoppiaStipendio. 
+ */
+float raddoppiaStipendio(float stipendio)
+{
+    return stipendio * 2;
+}
+
+</code></pre>
+<p>Se compiliamo separatamente i due file qui sopra aggiungendo il parametro <code>-c</code>, che dice al compilatore di generare solo il file oggetto, senza richiamare il linker per la generazione di un eseguibile:</p>
+
+<pre><code>% g++ -c src/cpp/funzioni-stipendio-main.cpp -o src/out/main.o
+% g++ -c src/cpp/funzioni-stipendio-funz.cpp -o src/out/funz.o
+</code></pre>
+<p>e poi generiamo un file eseguibile utilizzando i due file oggetto:</p>
+
+<pre><code>% g++ -o src/out/esempio src/out/main.o src/out/funz.o        
+</code></pre>
+<p>otterremo tre file, due <em>object-file</em> e il file eseguibile <code>esempio</code>, che darà il risultato atteso:</p>
+
+<pre><code>% ls -1 src/out                                               
+esempio
+funz.o
+main.o
+
+% src/out/esempio                                             
+3000
+</code></pre>
+
+<p>Se non dichiarassimo la funzione <code>raddoppiaStipendio</code> nel file che contiene la funzione <code>main</code>, il compilatore ci darebbe l’errore:</p>
+
+<pre><code>src/cpp/funzioni-stipendio-main.cpp:19:18: error: use of undeclared identifier 'raddoppiaStipendio'
+    std::cout &lt;&lt; raddoppiaStipendio(1500) &lt;&lt; std::endl;                     ^
+1 error generated.
+</code></pre>
+
+<!--
+
+/man/linguaggi-di-programmazione
+
+spiega al compilatore che la funzione `scorporaIVA` ha un valore di ritorno di tipo `float` e che richiede in input un parametro di tipo `long` e uno di tipo `float`.
+
+Grazie a questa informazione, il compilatore potrà accorgersi di eventuali errori nel codice, segnalandoli:
+
+
+-->
 
 <!--
 
