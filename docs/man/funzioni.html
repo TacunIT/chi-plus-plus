@@ -413,13 +413,162 @@ La dichiarazione delle funzioni template, quindi deve comprendere anche la loro 
 
 <hr />
 
-<!--
-
-Prima ti ho detto di *valutare* la possibilità di isolare in una funzione le istruzioni che si ripetono all'interno del tuo codice, perché non sempre creare una funzione è la scelta corretta: a volte è meglio avere delle istruzioni duplicate perché questo evita al sistema il sovraccarico di lavoro dovuto alla chiamata di una funzione esterna.  
+<p>Prima ti ho detto di <em>valutare</em> la possibilità di isolare in una funzione le istruzioni che si ripetono all’interno del tuo codice, perché non sempre creare una funzione è la scelta corretta.<br />
 Il software, come molte attività umane, è il frutto di una serie di compromessi e tu dovrai fare scelte architetturali differenti a seconda del tipo di programma che devi realizzare.
+Un buon software, oltre che funzionalmente corretto, dovrebbe essere veloce, facile da modificare e richiedere poche risorse di sistema.
+Alle volte, però, si deve sacrificare una di queste caratteristiche positive per esaltarne un’altra.
+Per esempio, se dovessi scrivere un software particolarmente veloce, potrebbe essere meglio avere delle istruzioni duplicate che delle chiamate a funzione, perché richiamare una funzione rallenta il programma.
+<!-- @todo: spiegare perché; o qui o in una nota -->
+Però, se replichi delle istruzioni, non solo ne aumenti le dimensioni, ma lo rendi anche più difficile da leggere e da modificare e questo è male.<br />
+In questi casi, l’aumento delle dimensioni del codice è inevitabile, ma le <em>funzioni inline</em> ti permettono di mantenere il codice leggibile e modificabile.</p>
 
+<pre><code>/** 
+ * @file funzioni-inline-1.cpp
+ * Esempio di codice con istruzioni ripetute.
+ */
+
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+#include &lt;fstream&gt;
+
+#define S_FILENAME  "src/out/esempio.txt"
+
+using namespace std;
+
+int main(int argc, char** argv)
+{        
+    /** Dichiara il file di output */
+    ofstream doc;
+
+    /** Apre il file di output */
+    doc.open (S_FILENAME);
+    cout &lt;&lt; "ho aperto il file " &lt;&lt; endl;
+
+    /** Scrive sul file di output */
+    doc &lt;&lt; "Testo del documento.\n";
+    cout &lt;&lt; "ho scritto sul file" &lt;&lt; endl;
+
+    /** Chiude il file di output */
+    doc.close();
+    cout &lt;&lt; "ho chiuso il file" &lt;&lt; endl;
+
+    return 0;
+}
+
+</code></pre>
+
+<p>Compilando ed eseguendo il codice qui sopra, ottieni:</p>
+
+<pre><code>% g++ src/cpp/funzioni-inline-1.cpp -o src/out/esempio
+% ./src/out/esempio                                   
+ho aperto il file 
+ho scritto sul file
+ho chiuso il file
+</code></pre>
+
+<pre><code>/** 
+ * @file funzioni-inline-2.cpp
+ * Esempio di funzione inline.
+ */
+
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+#include &lt;fstream&gt; 
+
+#define S_FILENAME  "src/out/esempio.txt"
+
+using namespace std;
+
+/** Funzione di output inline */
+inline void log(const char* messaggio)
+{
+    /** Mostra il messaggio a video */
+    cout &lt;&lt; messaggio &lt;&lt; endl;
+}
+
+int main(int argc, char** argv)
+{        
+    /** Dichiara il file di output */
+    ofstream doc;
+
+    /** Apre il file di output */
+    doc.open (S_FILENAME);
+    log("ho aperto il file");
+
+    /** Scrive sul file di output */
+    doc &lt;&lt; "Testo del documento.\n";
+    log("ho scritto sul file");
+
+    /** Chiude il file di output */
+    doc.close();
+    log("ho scritto il file");
+
+    return 0;
+}
+
+</code></pre>
+
+<p>L’output di questo programma sarà identico a quello precedente, ma se lo compili due volte, con o senza l’istruzione <code>inline</code> davanti al nome della funzione, vedrai che la dimensione del file eseguibile, nella versione <em>inline</em> è maggiore.</p>
 
 <!-- ------------------------------
+
+
+PARAMETRI: formali, attuali e variabili - usare la funzione di log come esempio, aggiungendo il nome del file come parametro
+```
+/** 
+ * @file funzioni-inline.cpp
+ * Esempio di funzione inline.
+ */
+
+#include <iostream>
+#include <iomanip> 
+#include <ifstream> 
+
+#define LOG_DEBUG   1
+#define LOG_AVVISO  2
+#define LOG_ERRORE  3
+
+#define S_DEBUG     "debug"
+#define S_AVVISO    "avviso"
+#define S_ERRORE    "errore"
+
+#define S_FILENAME  "src/out/esempio.txt"
+
+using namespace std;
+
+/** Funzione di output inline */
+inline void log(int livello, const char* messaggio)
+{
+    cerr << setw(7);  
+    switch(livello) {
+        case LOG_DEBUG:  cerr << S_DEBUG ; break;
+        case LOG_AVVISO: cerr << S_AVVISO; break;
+        default:         cerr << S_ERRORE; break;
+    }
+    cerr << ": " << messaggio << endl;
+}
+
+int main(int argc, char** argv)
+{        
+    /** Dichiara il file di output */
+    ofstream doc;
+
+    /** Apre il file di output */
+    doc.open (S_FILENAME);
+    log(LOG_DEBUG, "ho aperto il file", S_FILENAME);
+
+    /** Scrive sul file di output */
+    doc << "Testo del documento.\n";
+    log(S_DEBUG, "ho scritto sul file", S_FILENAME);
+
+    /** Chiude il file di output */
+    doc.close();
+    log(S_AVVISO, "ho chiuso il file", S_FILENAME);
+
+    return 0;
+}
+
+```
 
 Spiegare COME fare a capire quale sia il proprio ruolo nell'Universo.
 Non posso metterlo nel capitolo sulla memoria che è già stracolmo.
@@ -438,15 +587,6 @@ Gli esseri appaiono dalla non-esistenza, esistono per un istante e poi cessano d
 La loro esistenza, attività e azione sono un'unica cosa.
 Passato e futuro sono meri nomi.”
 Samyutta Nikaya, citato da Ananda, Tempo ed Eternità, pag. 45
-
-
-
-
-
-
-<a id="inline" 
-   onclick="history.back()" 
-   title="fare click per tornare alla pagina precedente">funzioni inline</a>
 
 
 Funzioni ricorsive

@@ -204,13 +204,44 @@ La dichiarazione delle funzioni template, quindi deve comprendere anche la loro 
 
 ---
 
-<!--
-
-Prima ti ho detto di *valutare* la possibilità di isolare in una funzione le istruzioni che si ripetono all'interno del tuo codice, perché non sempre creare una funzione è la scelta corretta: a volte è meglio avere delle istruzioni duplicate perché questo evita al sistema il sovraccarico di lavoro dovuto alla chiamata di una funzione esterna.  
+Prima ti ho detto di *valutare* la possibilità di isolare in una funzione le istruzioni che si ripetono all'interno del tuo codice, perché non sempre creare una funzione è la scelta corretta.  
 Il software, come molte attività umane, è il frutto di una serie di compromessi e tu dovrai fare scelte architetturali differenti a seconda del tipo di programma che devi realizzare.
+Un buon software, oltre che funzionalmente corretto, dovrebbe essere veloce, facile da modificare e richiedere poche risorse di sistema.
+Alle volte, però, si deve sacrificare una di queste caratteristiche positive per esaltarne un'altra.
+Per esempio, se dovessi scrivere un software particolarmente veloce, potrebbe essere meglio avere delle istruzioni duplicate che delle chiamate a funzione, perché richiamare una funzione rallenta il programma.
+<!-- @todo: spiegare perché; o qui o in una nota -->
+Però, se replichi delle istruzioni, non solo ne aumenti le dimensioni, ma lo rendi anche più difficile da leggere e da modificare e questo è male.  
+In questi casi, l'aumento delle dimensioni del codice è inevitabile, ma le *funzioni inline* ti permettono di mantenere il codice leggibile e modificabile.
+
+```
+{% include_relative src/funzioni-inline-1.cpp %}
+```
+
+Compilando ed eseguendo il codice qui sopra, ottieni:
+
+```
+% g++ src/cpp/funzioni-inline-1.cpp -o src/out/esempio
+% ./src/out/esempio                                   
+ho aperto il file 
+ho scritto sul file
+ho chiuso il file
+```
+
+```
+{% include_relative src/funzioni-inline-2.cpp %}
+```
+
+L'output di questo programma sarà identico a quello precedente, ma se lo compili due volte, con o senza l'istruzione `inline` davanti al nome della funzione, vedrai che la dimensione del file eseguibile, nella versione *inline* è maggiore.
+
 
 
 <!-- ------------------------------
+
+
+PARAMETRI: formali, attuali e variabili - usare la funzione di log come esempio, aggiungendo il nome del file come parametro
+```
+{% include_relative src/funzioni-inline-3.cpp %}
+```
 
 Spiegare COME fare a capire quale sia il proprio ruolo nell'Universo.
 Non posso metterlo nel capitolo sulla memoria che è già stracolmo.
@@ -229,15 +260,6 @@ Gli esseri appaiono dalla non-esistenza, esistono per un istante e poi cessano d
 La loro esistenza, attività e azione sono un'unica cosa.
 Passato e futuro sono meri nomi.”
 Samyutta Nikaya, citato da Ananda, Tempo ed Eternità, pag. 45
-
-
-
-
-
-
-<a id="inline" 
-   onclick="history.back()" 
-   title="fare click per tornare alla pagina precedente">funzioni inline</a>
 
 
 Funzioni ricorsive
