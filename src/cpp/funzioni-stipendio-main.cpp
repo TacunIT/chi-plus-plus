@@ -6,7 +6,8 @@
 
 /** 
  * Dichiarazione della funzione raddoppiaStipendio. 
- * Può stare o qui o in un file di include.
+ * L'ho messa qui per semplicità: di solito, le dichiarazioni
+ * si trovano in un file di include separato.
  */
 float raddoppiaStipendio(float stipendio);
 

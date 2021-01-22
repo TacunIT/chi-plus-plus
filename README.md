@@ -88,4 +88,5 @@ Il file README.md è quello che state leggendo e contiene una breve descrizione 
 
 ## Convenzioni tipografiche
 Utilizzo intenzionalmente l'apostrofo quando scrivo ”qual'è” perché credo che l'apocope vocalica si debba applicare solo a frasi come: “Si è comportato da birbante qual è”; riduco i punti di sospensione da tre a due perché il terzo è ridondante e uso sempre l'accento con il pronome *sé*.
+Devo decidere quale forma utilizzare per il plurale delle parole che terminano in “io” se l'accento circonflesso (*principî*) o il raddoppio della “i” (*dominii*) e se applicarla sempre o solo nei casi in cui ci sia il rischio di anfibologie. 
 Tutte le altre variazioni della grammatica o della consuetudine sono da considerarsi errori.
