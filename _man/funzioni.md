@@ -20,8 +20,8 @@ Il flusso di un programma *non banale*, come direbbe Stroutsup, sarà sempre sud
 
 Questo è il codice di un esempio che abbiamo visto nel capitolo sui <a href="/man/tipi-di-dato">tipi di dato</a>.
 Se decidessimo di modificare il modo in cui il programma mostra i dati all'utente, dovremmo intervenire su tutte le righe del programma, cosa che sarebbe noiosa e potrebbe generare degli errori.
-Al contrario, se isoliamo la funzione di visualizzazione, eventuali modifiche o correzioni dovranno essere applicate solo in un punto.
-Il codice qui sotto è un esempio, perfettibile, di questo approccio:
+Al contrario, se isoliamo la funzione di visualizzazione, le eventuali modifiche o correzioni dovranno essere applicate solo in un punto.
+Il codice dell'esempio successivo è un esempio, perfettibile, di questo approccio:
 
 ```
 {% include_relative src/tipi-di-dato-limiti.cpp %}
@@ -91,7 +91,7 @@ float scorporaIVA(long stipendio, float aliquota)
 }
 ```
 
-Come ti ho detto quando abbiamo parlato dei <a href="/man/linguaggi-di-programmazione">linguaggi di programmazione</a>, la generazione di un file eseguibile avviene in due fasi: per prima cosa il compilatore converte il codice in un *file oggetto*, poi il *linker* trasforma il o <i>i</i> file oggetto (potrebbero essere più d'uno) in un unico eseguibile. 
+Come ti ho detto quando abbiamo parlato dei <a href="/man/linguaggi-di-programmazione">linguaggi di programmazione</a>, la generazione di un file eseguibile avviene in due fasi: per prima cosa il compilatore converte il codice in un *file oggetto*, poi il *linker* trasforma i file oggetto (potrebbero essere più d'uno) in un unico eseguibile. 
 Perché questo processo possa funzionare, la *dichiarazione* di una funzione deve essere presente in tutti i brani di codice che la utilizzano, per consentire al compilatore di controllare che l'utilizzo che se ne fa sia corretto; la *definizione*, al contrario, deve comparire solo una volta.  
 
 ```
@@ -101,7 +101,7 @@ Perché questo processo possa funzionare, la *dichiarazione* di una funzione dev
 ```
 {% include_relative src/funzioni-stipendio-funz.cpp %}
 ```
-Se compiliamo separatamente i due file qui sopra aggiungendo il parametro `-c`, che dice al compilatore di generare solo il file oggetto, senza richiamare il linker per la generazione di un eseguibile:
+Se compiliamo separatamente i due file qui sopra, aggiungendo il parametro `-c`, che dice al compilatore di generare solo il file oggetto senza richiamare il linker per la generazione di un eseguibile:
 
 ```
 % g++ -c src/cpp/funzioni-stipendio-main.cpp -o src/out/main.o

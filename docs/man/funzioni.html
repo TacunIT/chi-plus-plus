@@ -100,8 +100,8 @@ int main()
 
 <p>Questo è il codice di un esempio che abbiamo visto nel capitolo sui <a href="/man/tipi-di-dato">tipi di dato</a>.
 Se decidessimo di modificare il modo in cui il programma mostra i dati all’utente, dovremmo intervenire su tutte le righe del programma, cosa che sarebbe noiosa e potrebbe generare degli errori.
-Al contrario, se isoliamo la funzione di visualizzazione, eventuali modifiche o correzioni dovranno essere applicate solo in un punto.
-Il codice qui sotto è un esempio, perfettibile, di questo approccio:</p>
+Al contrario, se isoliamo la funzione di visualizzazione, le eventuali modifiche o correzioni dovranno essere applicate solo in un punto.
+Il codice dell’esempio successivo è un esempio, perfettibile, di questo approccio:</p>
 
 <pre><code>/** 
  * @file tipi-di-dato-limiti.cpp
@@ -252,7 +252,7 @@ La <a id="dichiarazione">dichiarazione</a> di una funzione stabilisce il suo tip
 }
 </code></pre>
 
-<p>Come ti ho detto quando abbiamo parlato dei <a href="/man/linguaggi-di-programmazione">linguaggi di programmazione</a>, la generazione di un file eseguibile avviene in due fasi: per prima cosa il compilatore converte il codice in un <em>file oggetto</em>, poi il <em>linker</em> trasforma il o <i>i</i> file oggetto (potrebbero essere più d’uno) in un unico eseguibile. 
+<p>Come ti ho detto quando abbiamo parlato dei <a href="/man/linguaggi-di-programmazione">linguaggi di programmazione</a>, la generazione di un file eseguibile avviene in due fasi: per prima cosa il compilatore converte il codice in un <em>file oggetto</em>, poi il <em>linker</em> trasforma i file oggetto (potrebbero essere più d’uno) in un unico eseguibile. 
 Perché questo processo possa funzionare, la <em>dichiarazione</em> di una funzione deve essere presente in tutti i brani di codice che la utilizzano, per consentire al compilatore di controllare che l’utilizzo che se ne fa sia corretto; la <em>definizione</em>, al contrario, deve comparire solo una volta.</p>
 
 <pre><code>/** 
@@ -263,7 +263,8 @@ Perché questo processo possa funzionare, la <em>dichiarazione</em> di una funzi
 
 /** 
  * Dichiarazione della funzione raddoppiaStipendio. 
- * Può stare o qui o in un file di include.
+ * L'ho messa qui per semplicità: di solito, le dichiarazioni
+ * si trovano in un file di include separato.
  */
 float raddoppiaStipendio(float stipendio);
 
@@ -293,7 +294,7 @@ float raddoppiaStipendio(float stipendio)
 }
 
 </code></pre>
-<p>Se compiliamo separatamente i due file qui sopra aggiungendo il parametro <code>-c</code>, che dice al compilatore di generare solo il file oggetto, senza richiamare il linker per la generazione di un eseguibile:</p>
+<p>Se compiliamo separatamente i due file qui sopra, aggiungendo il parametro <code>-c</code>, che dice al compilatore di generare solo il file oggetto senza richiamare il linker per la generazione di un eseguibile:</p>
 
 <pre><code>% g++ -c src/cpp/funzioni-stipendio-main.cpp -o src/out/main.o
 % g++ -c src/cpp/funzioni-stipendio-funz.cpp -o src/out/funz.o
