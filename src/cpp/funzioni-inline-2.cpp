@@ -11,8 +11,8 @@
 
 using namespace std;
 
-/** Funzione di output inline */
-inline void log(const char* messaggio)
+/** Funzione di output unica */
+void log(const char* messaggio)
 {
     /** Mostra il messaggio a video */
     cout << messaggio << endl;
@@ -20,7 +20,7 @@ inline void log(const char* messaggio)
 
 int main(int argc, char** argv)
 {        
-    /** Dichiara il file di output */
+    /** Crea una variabile per gestire il file di output */
     ofstream doc;
 
     /** Apre il file di output */

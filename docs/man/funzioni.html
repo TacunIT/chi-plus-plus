@@ -415,12 +415,12 @@ La dichiarazione delle funzioni template, quindi deve comprendere anche la loro 
 
 <p>Prima ti ho detto di <em>valutare</em> la possibilità di isolare in una funzione le istruzioni che si ripetono all’interno del tuo codice, perché non sempre creare una funzione è la scelta corretta.<br />
 Il software, come molte attività umane, è il frutto di una serie di compromessi e tu dovrai fare scelte architetturali differenti a seconda del tipo di programma che devi realizzare.
-Un buon software, oltre che funzionalmente corretto, dovrebbe essere veloce, facile da modificare e richiedere poche risorse di sistema.
+Un buon software, oltre che funzionare correttamente, dovrebbe essere veloce, facile da modificare e richiedere poche risorse di sistema.
 Alle volte, però, si deve sacrificare una di queste caratteristiche positive per esaltarne un’altra.
-Per esempio, se dovessi scrivere un software particolarmente veloce, potrebbe essere meglio avere delle istruzioni duplicate che delle chiamate a funzione, perché richiamare una funzione rallenta il programma.
+Per esempio, se dovessi scrivere un software particolarmente veloce, potrebbe essere meglio avere delle istruzioni duplicate che delle chiamate a funzione, perché richiamare una funzione causa inevitabilmente dei rallentamenti.
 <!-- @todo: spiegare perché; o qui o in una nota -->
-Però, se replichi delle istruzioni, non solo ne aumenti le dimensioni, ma lo rendi anche più difficile da leggere e da modificare e questo è male.<br />
-In questi casi, l’aumento delle dimensioni del codice è inevitabile, ma le <em>funzioni inline</em> ti permettono di mantenere il codice leggibile e modificabile.</p>
+Però, se replichi delle istruzioni, non solo aumenti le dimensioni del programma, ma lo rendi anche più difficile da leggere e da modificare, che è male.<br />
+In questi casi, l’aumento delle dimensioni del codice è inevitabile, ma le <em>funzioni inline</em> ti permettono di mantenere il codice leggibile e modificabile:</p>
 
 <pre><code>/** 
  * @file funzioni-inline-1.cpp
@@ -437,7 +437,9 @@ using namespace std;
 
 int main(int argc, char** argv)
 {        
-    /** Dichiara il file di output */
+    /** 
+     * Crea una variabile di classe ofstraeam 
+     * per gestire il file di output  */
     ofstream doc;
 
     /** Apre il file di output */
@@ -456,7 +458,7 @@ int main(int argc, char** argv)
 }
 
 </code></pre>
-
+<!-- @todo: spiegare cosa sia la classe ofstream  -->
 <p>Compilando ed eseguendo il codice qui sopra, ottieni:</p>
 
 <pre><code>% g++ src/cpp/funzioni-inline-1.cpp -o src/out/esempio
@@ -465,6 +467,8 @@ ho aperto il file
 ho scritto sul file
 ho chiuso il file
 </code></pre>
+
+<p>Le istruzioni di output nell’esempio si differenziano solo per il testo da visualizzare e potrebbero benissimo essere isolate in una funzione autonoma.</p>
 
 <pre><code>/** 
  * @file funzioni-inline-2.cpp
@@ -479,8 +483,8 @@ ho chiuso il file
 
 using namespace std;
 
-/** Funzione di output inline */
-inline void log(const char* messaggio)
+/** Funzione di output unica */
+void log(const char* messaggio)
 {
     /** Mostra il messaggio a video */
     cout &lt;&lt; messaggio &lt;&lt; endl;
@@ -488,7 +492,7 @@ inline void log(const char* messaggio)
 
 int main(int argc, char** argv)
 {        
-    /** Dichiara il file di output */
+    /** Crea una variabile per gestire il file di output */
     ofstream doc;
 
     /** Apre il file di output */
@@ -508,7 +512,117 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>L’output di questo programma sarà identico a quello precedente, ma se lo compili due volte, con o senza l’istruzione <code>inline</code> davanti al nome della funzione, vedrai che la dimensione del file eseguibile, nella versione <em>inline</em> è maggiore.</p>
+<p>L’output di questo programma è identico a quello dell’esempio precedente, ma se aggiungi la parola chiave <code>ìnline</code> prima del tipo di ritorno della funzione <code>log</code>:</p>
+
+<pre><code>inline void log(const char* messaggio)
+{
+    /** Mostra il messaggio a video */
+    cout &lt;&lt; messaggio &lt;&lt; endl;
+}
+</code></pre>
+
+<p>e compili nuovamente il programma, vedrai che la dimensione del file eseguibile è aumentata, perché il compilatore ha sostituito tutte le chiamate a funzione con una copia del codice della funzione stessa.
+<!-- @todo: specificare che il compilatore può decidere di non rendere inline la funzione -->
+Anche se le dimensioni dell’eseguibile sono aumentate, il codice è ancora facilmente leggibile e modificabile:</p>
+
+<pre><code>/** 
+ * @file funzioni-inline.cpp
+ * Esempio di funzione inline.
+ */
+
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+#include &lt;fstream&gt; 
+
+#define LOG_DEBUG   1
+#define LOG_AVVISO  2
+#define LOG_ERRORE  3
+
+#define S_DEBUG     "debug"
+#define S_AVVISO    "avviso"
+#define S_ERRORE    "errore"
+
+#define ERR_NO_FILE_NAME  -1
+#define ERR_NO_FILE_OPEN  -2
+
+using namespace std;
+
+/** Funzione di output inline */
+inline void log(int livello, const char* messaggio)
+{
+    /** Definisce la spaziatura del primo campo */
+    cerr &lt;&lt; setw(7);  
+    
+    /** Scrive il livello del messaggio */
+    switch(livello) {
+        case LOG_DEBUG:  cerr &lt;&lt; S_DEBUG ; break;
+        case LOG_AVVISO: cerr &lt;&lt; S_AVVISO; break;
+        default:         cerr &lt;&lt; S_ERRORE; break;
+    }
+    
+    /** Scrive il testo del messaggio */
+    cerr &lt;&lt; ": " &lt;&lt; messaggio &lt;&lt; endl;
+}
+
+int main(int argc, char** argv)
+{        
+    /** Crea una variabile per gestire il file di output */
+    ofstream doc;
+
+    /** Puntatore per il nome del file di output */
+    const char* filename = NULL;
+
+    /** Se manca il nome del file di output, errore */
+    if(argc &lt; 2) {
+        log(LOG_ERRORE, "specificare il path del file");
+        return ERR_NO_FILE_NAME;
+    }
+    
+    /** Legge il nome del file di output */
+    filename = argv[1];
+    
+    /** Prova ad aprire il file di output */    
+    doc.open (argv[1]);
+    
+    /** Se c'è stato un errore, lo segnala ed esce */
+    if(!doc.is_open()) {
+        log(LOG_ERRORE, "impossibile aprire il file");    
+        return ERR_NO_FILE_OPEN;    
+    }
+    
+    /** OK, il file è pronto */
+    log(LOG_AVVISO, "ho aperto il file");
+
+    /** Scrive sul file di output */
+    doc &lt;&lt; "Testo del documento.\n";
+    log(LOG_DEBUG, "ho scritto sul file");
+
+    /** Chiude il file di output */
+    doc.close();
+    log(LOG_AVVISO, "ho chiuso il file");
+
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili il codice e lo esegui, ottieni:</p>
+
+<pre><code>% g++ src/cpp/funzioni-inline-3.cpp -o src/out/esempio
+
+% src/out/esempio                                     
+ errore: specificare il path del file
+
+% src/out/esempio /esempio.txt                        
+ errore: impossibile aprire il file
+
+% src/out/esempio src/out/esempio.txt                 
+ avviso: ho aperto il file
+  debug: ho scritto sul file
+ avviso: ho chiuso il file
+</code></pre>
+
+<p>(Nel secondo caso, il programma fallisce perché l’utente non ha privolegi di scrittura nella <em>root-directory</em>.)</p>
 
 <!-- ------------------------------
 
@@ -522,7 +636,7 @@ PARAMETRI: formali, attuali e variabili - usare la funzione di log come esempio,
 
 #include <iostream>
 #include <iomanip> 
-#include <ifstream> 
+#include <fstream> 
 
 #define LOG_DEBUG   1
 #define LOG_AVVISO  2
@@ -532,38 +646,64 @@ PARAMETRI: formali, attuali e variabili - usare la funzione di log come esempio,
 #define S_AVVISO    "avviso"
 #define S_ERRORE    "errore"
 
-#define S_FILENAME  "src/out/esempio.txt"
+#define ERR_NO_FILE_NAME  -1
+#define ERR_NO_FILE_OPEN  -2
 
 using namespace std;
 
 /** Funzione di output inline */
 inline void log(int livello, const char* messaggio)
 {
+    /** Definisce la spaziatura del primo campo */
     cerr << setw(7);  
+    
+    /** Scrive il livello del messaggio */
     switch(livello) {
         case LOG_DEBUG:  cerr << S_DEBUG ; break;
         case LOG_AVVISO: cerr << S_AVVISO; break;
         default:         cerr << S_ERRORE; break;
     }
+    
+    /** Scrive il testo del messaggio */
     cerr << ": " << messaggio << endl;
 }
 
 int main(int argc, char** argv)
 {        
-    /** Dichiara il file di output */
+    /** Crea una variabile per gestire il file di output */
     ofstream doc;
 
-    /** Apre il file di output */
-    doc.open (S_FILENAME);
-    log(LOG_DEBUG, "ho aperto il file", S_FILENAME);
+    /** Puntatore per il nome del file di output */
+    const char* filename = NULL;
+
+    /** Se manca il nome del file di output, errore */
+    if(argc < 2) {
+        log(LOG_ERRORE, "specificare il path del file");
+        return ERR_NO_FILE_NAME;
+    }
+    
+    /** Legge il nome del file di output */
+    filename = argv[1];
+    
+    /** Prova ad aprire il file di output */    
+    doc.open (argv[1]);
+    
+    /** Se c'è stato un errore, lo segnala ed esce */
+    if(!doc.is_open()) {
+        log(LOG_ERRORE, "impossibile aprire il file");    
+        return ERR_NO_FILE_OPEN;    
+    }
+    
+    /** OK, il file è pronto */
+    log(LOG_AVVISO, "ho aperto il file");
 
     /** Scrive sul file di output */
     doc << "Testo del documento.\n";
-    log(S_DEBUG, "ho scritto sul file", S_FILENAME);
+    log(LOG_DEBUG, "ho scritto sul file");
 
     /** Chiude il file di output */
     doc.close();
-    log(S_AVVISO, "ho chiuso il file", S_FILENAME);
+    log(LOG_AVVISO, "ho chiuso il file");
 
     return 0;
 }

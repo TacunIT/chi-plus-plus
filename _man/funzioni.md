@@ -206,17 +206,17 @@ La dichiarazione delle funzioni template, quindi deve comprendere anche la loro 
 
 Prima ti ho detto di *valutare* la possibilità di isolare in una funzione le istruzioni che si ripetono all'interno del tuo codice, perché non sempre creare una funzione è la scelta corretta.  
 Il software, come molte attività umane, è il frutto di una serie di compromessi e tu dovrai fare scelte architetturali differenti a seconda del tipo di programma che devi realizzare.
-Un buon software, oltre che funzionalmente corretto, dovrebbe essere veloce, facile da modificare e richiedere poche risorse di sistema.
+Un buon software, oltre che funzionare correttamente, dovrebbe essere veloce, facile da modificare e richiedere poche risorse di sistema.
 Alle volte, però, si deve sacrificare una di queste caratteristiche positive per esaltarne un'altra.
-Per esempio, se dovessi scrivere un software particolarmente veloce, potrebbe essere meglio avere delle istruzioni duplicate che delle chiamate a funzione, perché richiamare una funzione rallenta il programma.
+Per esempio, se dovessi scrivere un software particolarmente veloce, potrebbe essere meglio avere delle istruzioni duplicate che delle chiamate a funzione, perché richiamare una funzione causa inevitabilmente dei rallentamenti.
 <!-- @todo: spiegare perché; o qui o in una nota -->
-Però, se replichi delle istruzioni, non solo ne aumenti le dimensioni, ma lo rendi anche più difficile da leggere e da modificare e questo è male.  
-In questi casi, l'aumento delle dimensioni del codice è inevitabile, ma le *funzioni inline* ti permettono di mantenere il codice leggibile e modificabile.
+Però, se replichi delle istruzioni, non solo aumenti le dimensioni del programma, ma lo rendi anche più difficile da leggere e da modificare, che è male.  
+In questi casi, l'aumento delle dimensioni del codice è inevitabile, ma le *funzioni inline* ti permettono di mantenere il codice leggibile e modificabile:
 
 ```
 {% include_relative src/funzioni-inline-1.cpp %}
 ```
-
+<!-- @todo: spiegare cosa sia la classe ofstream  -->
 Compilando ed eseguendo il codice qui sopra, ottieni:
 
 ```
@@ -227,13 +227,50 @@ ho scritto sul file
 ho chiuso il file
 ```
 
+Le istruzioni di output nell'esempio si differenziano solo per il testo da visualizzare e potrebbero benissimo essere isolate in una funzione autonoma.
+
+
 ```
 {% include_relative src/funzioni-inline-2.cpp %}
 ```
 
-L'output di questo programma sarà identico a quello precedente, ma se lo compili due volte, con o senza l'istruzione `inline` davanti al nome della funzione, vedrai che la dimensione del file eseguibile, nella versione *inline* è maggiore.
+L'output di questo programma è identico a quello dell'esempio precedente, ma se aggiungi la parola chiave `ìnline` prima del tipo di ritorno della funzione `log`:
+
+```
+inline void log(const char* messaggio)
+{
+    /** Mostra il messaggio a video */
+    cout << messaggio << endl;
+}
+```
+
+ e compili nuovamente il programma, vedrai che la dimensione del file eseguibile è aumentata, perché il compilatore ha sostituito tutte le chiamate a funzione con una copia del codice della funzione stessa.
+<!-- @todo: specificare che il compilatore può decidere di non rendere inline la funzione -->
+Anche se le dimensioni dell'eseguibile sono aumentate, il codice è ancora facilmente leggibile e modificabile: 
 
 
+```
+{% include_relative src/funzioni-inline-3.cpp %}
+```
+
+Se compili il codice e lo esegui, ottieni:
+
+```
+% g++ src/cpp/funzioni-inline-3.cpp -o src/out/esempio
+
+% src/out/esempio                                     
+ errore: specificare il path del file
+
+% src/out/esempio /esempio.txt                        
+ errore: impossibile aprire il file
+
+% src/out/esempio src/out/esempio.txt                 
+ avviso: ho aperto il file
+  debug: ho scritto sul file
+ avviso: ho chiuso il file
+ ```
+
+(Nel secondo caso, il programma fallisce perché l'utente non ha privolegi di scrittura nella *root-directory*.)
 
 <!-- ------------------------------
 
