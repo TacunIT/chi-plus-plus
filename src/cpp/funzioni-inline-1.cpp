@@ -13,7 +13,9 @@ using namespace std;
 
 int main(int argc, char** argv)
 {        
-    /** Dichiara il file di output */
+    /** 
+     * Crea una variabile di classe ofstraeam 
+     * per gestire il file di output  */
     ofstream doc;
 
     /** Apre il file di output */
