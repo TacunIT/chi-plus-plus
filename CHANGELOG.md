@@ -1,3 +1,7 @@
+## 0.19.3 (January 23, 2021)
+  - Prima stesura del paragrafo sulle funzioni inline
+  - Revisione del testo tecnico
+
 ## 0.19.2 (January 17, 2021)
   - Redazione del capitolo
   - Aggiunta nota su dichiarazione delle funzioni template
