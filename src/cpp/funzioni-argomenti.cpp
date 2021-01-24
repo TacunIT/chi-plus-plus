@@ -68,7 +68,7 @@ int main(int argc, char** argv)
     /**
     *   Passaggio per reference: l'argomento della chiamata
     *   a funzione sono le variabili x e y, ma la funzione 
-    *   utiizzerà il loro indirizzo, non il loro valore:
+    *   utilizzerà dei loro alias, non il loro valore:
     */
     perRiferimento(x,y);
     cout << setw(20) << "perRiferimento: x=" << x << ", y=" << y << endl;
