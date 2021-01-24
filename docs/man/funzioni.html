@@ -622,7 +622,136 @@ int main(int argc, char** argv)
  avviso: ho chiuso il file
 </code></pre>
 
-<p>(Nel secondo caso, il programma fallisce perché l’utente non ha privolegi di scrittura nella <em>root-directory</em>.)</p>
+<p>Per la cronaca: nel secondo caso, il programma fallisce perché l’utente non ha privilegi di scrittura nella <em>root-directory</em>.</p>
+
+<hr />
+
+<p>L’esistenza di una funzione <code>inline</code> ricorda un po’ un passo del <i>Samyutta Nikaya</i>:</p>
+
+<blockquote>
+  <p>Non esiste distinzione fra un essere, la sua funzione e il tempo della sua apparizione. Gli esseri appaiono dalla non-esistenza, esistono per un istante e poi cessano di esistere. La loro esistenza, attività e azione sono un’unica cosa. Passato e futuro sono meri nomi.<a class="nota" href="/man/note#samyutta"></a></p>
+</blockquote>
+
+<p>In generale, comunque, il ciclo di vita di una funzione prevede tre fasi distinte: la <em>dichiarazione</em>, la <em>definizione</em> e il suo successivo utilizzo:</p>
+
+<pre><code>/** Dichiarazione */
+float raddoppiaStipendio(float stipendio);
+
+/** Definizione */
+float raddoppiaStipendio(float stipendio)
+{
+    return stipendio * 2;
+}
+
+/** Chiamata */
+float importo = raddoppiaStipendio(1500);
+
+</code></pre>
+
+<p>Solo la funzione <code>main</code> fa eccezione a questa regola, perché non richiede una dichiarazione e non viene richiamata da altre funzioni.
+<!-- Qui si potrebbe fare un parallelo con gli elementi costitutivi dell'Universo, secondo lo Spazionismo, ma preferisco separare la dottrina dal manuale C++ vero e proprio -->
+La variabile <code>float stipendio</code>, che compare fra parentesi sia nella dichiarazione che nella definizione della funzione, viene detta: <em>parametro</em> della funzione.
+Il valore <code>1500</code> che viene attribuito al parametro nella chiamata a funzione, è detto: <em>argomento</em>.
+Queste variabili sono chiamate anche: <em>parametri formali</em>, nel caso della dichiarazione e della definizione e: <em>parametri attuali</em>, nel caso della chiamata.<br />
+Quando richiami una funzione, le puoi passare gli argomenti in tre modi:</p>
+
+<ul>
+  <li>per valore</li>
+  <li>per riferimento</li>
+  <li>per puntatore</li>
+</ul>
+
+<pre><code>/** 
+ * @file funzioni-argomenti.cpp
+ * Esempio di gestione degli argomenti di una funzione.
+ */
+
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+#include &lt;fstream&gt; 
+
+using namespace std;
+
+/**
+*   Chiamata per valore: tutto quello che succede qui
+*   alle variabili a e b non influenza le variabili 
+*   x e y della funzione chiamante.
+*/
+void perValore(int a, int b)
+{
+    int tmp = a;
+    a = b;
+    b = tmp;
+    return;
+}
+
+/**
+*   Chiamata per reference: tutto quello che succede qui
+*   alle variabili a e b è come se fosse fatto alle variabili
+*   x e y della funzione chiamante.
+*/
+void perRiferimento(int &amp;a, int &amp;b)
+{
+    int tmp = a;
+    a = b;
+    b = tmp;
+    return;
+}
+
+/**
+*   Chiamata per puntatore: anche qui, quello che succede 
+*   alle variabili a e b avviene anche alle variabili x e y 
+*   della funzione chiamante.
+*/
+void perPuntatore(int *a, int *b)
+{
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
+    return;
+}
+
+int main(int argc, char** argv)
+{        
+    int  x = 11; int  y = 22;    
+    cout &lt;&lt; setw(20) &lt;&lt; "Valore iniziale: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
+    
+    /**
+    *   Passaggio per valore: l'argomento della chiamata
+    *   a funzione è il valore delle variabili x e y:
+    */
+    perValore(x,y);
+    cout &lt;&lt; setw(20) &lt;&lt; "perValore: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
+
+    /**
+    *   Passaggio per reference: l'argomento della chiamata
+    *   a funzione sono le variabili x e y, ma la funzione 
+    *   utiizzerà il loro indirizzo, non il loro valore:
+    */
+    perRiferimento(x,y);
+    cout &lt;&lt; setw(20) &lt;&lt; "perRiferimento: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
+
+    /**
+    *   Passaggio per puntatore: l'argomento della chiamata
+    *   è esplicitamente l'indirizzo delle variabili x e y:
+    */
+    perPuntatore(&amp;x,&amp;y);
+    cout &lt;&lt; setw(20) &lt;&lt; "perPuntatore: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>L’output di questo programma è:</p>
+
+<pre><code>% g++ src/cpp/funzioni-argomenti.cpp -o src/out/esempio
+% src/out/esempio                                      
+Valore iniziale: x=11, y=22
+      perValore: x=11, y=22
+ perRiferimento: x=22, y=11
+   perPuntatore: x=11, y=22
+</code></pre>
 
 <!-- ------------------------------
 
@@ -721,12 +850,6 @@ C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musa
 
 Utilizzare la definizione delle funzioni senza dichiarazione come esempio per i dogmi.
 ?? Questo concetto verrà riutilizzato nel capitolo sulle funzioni ricorsive a proposito dei Post-It.
-
-“Non esiste distinzione fra un essere, la sua funzione e il tempo della sua apparizione.
-Gli esseri appaiono dalla non-esistenza, esistono per un istante e poi cessano di esistere.
-La loro esistenza, attività e azione sono un'unica cosa.
-Passato e futuro sono meri nomi.”
-Samyutta Nikaya, citato da Ananda, Tempo ed Eternità, pag. 45
 
 
 Funzioni ricorsive

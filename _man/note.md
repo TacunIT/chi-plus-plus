@@ -134,7 +134,13 @@ quote:
                target="note">https://isocpp.org/wiki/faq/templates#templates-defn-vs-decl</a>
             <a href="Javascript:history.back()" name="template"><i class="fas fa-reply"></i></a>
         </li>
+        <li>
+            <i>Samyutta Nikaya</i>, citato da A.K.Coomaraswamy in: <i>Tempo ed Eternità</i>, pag. 45
+            <a href="Javascript:history.back()" name="saadi"><i class="fas fa-reply"></i></a>
+        </li>
     </ol>
+
+    
     
     <h3>Istruzioni condizionali</h3>
     <ol>

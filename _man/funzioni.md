@@ -248,7 +248,6 @@ inline void log(const char* messaggio)
 <!-- @todo: specificare che il compilatore può decidere di non rendere inline la funzione -->
 Anche se le dimensioni dell'eseguibile sono aumentate, il codice è ancora facilmente leggibile e modificabile: 
 
-
 ```
 {% include_relative src/funzioni-inline-3.cpp %}
 ```
@@ -270,7 +269,58 @@ Se compili il codice e lo esegui, ottieni:
  avviso: ho chiuso il file
  ```
 
-(Nel secondo caso, il programma fallisce perché l'utente non ha privolegi di scrittura nella *root-directory*.)
+Per la cronaca: nel secondo caso, il programma fallisce perché l'utente non ha privilegi di scrittura nella *root-directory*.
+
+---
+
+L'esistenza di una funzione `inline` ricorda un po' un passo del <i>Samyutta Nikaya</i>:
+
+ > Non esiste distinzione fra un essere, la sua funzione e il tempo della sua apparizione. Gli esseri appaiono dalla non-esistenza, esistono per un istante e poi cessano di esistere. La loro esistenza, attività e azione sono un'unica cosa. Passato e futuro sono meri nomi.<a class="nota" href="/man/note#samyutta"></a>
+
+In generale, comunque, il ciclo di vita di una funzione prevede tre fasi distinte: la *dichiarazione*, la *definizione* e il suo successivo utilizzo:
+
+```
+/** Dichiarazione */
+float raddoppiaStipendio(float stipendio);
+
+/** Definizione */
+float raddoppiaStipendio(float stipendio)
+{
+    return stipendio * 2;
+}
+
+/** Chiamata */
+float importo = raddoppiaStipendio(1500);
+
+```
+
+Solo la funzione `main` fa eccezione a questa regola, perché non richiede una dichiarazione e non viene richiamata da altre funzioni.
+<!-- Qui si potrebbe fare un parallelo con gli elementi costitutivi dell'Universo, secondo lo Spazionismo, ma preferisco separare la dottrina dal manuale C++ vero e proprio -->
+La variabile `float stipendio`, che compare fra parentesi sia nella dichiarazione che nella definizione della funzione, viene detta: *parametro* della funzione.
+Il valore `1500` che viene attribuito al parametro nella chiamata a funzione, è detto: *argomento*.
+Queste variabili sono chiamate anche: *parametri formali*, nel caso della dichiarazione e della definizione e: *parametri attuali*, nel caso della chiamata.  
+Quando richiami una funzione, le puoi passare gli argomenti in tre modi:
+
+- per valore
+- per riferimento
+- per puntatore
+
+
+```
+{% include_relative src/funzioni-argomenti.cpp %}
+```
+
+L'output di questo programma è:
+
+```
+% g++ src/cpp/funzioni-argomenti.cpp -o src/out/esempio
+% src/out/esempio                                      
+Valore iniziale: x=11, y=22
+      perValore: x=11, y=22
+ perRiferimento: x=22, y=11
+   perPuntatore: x=11, y=22
+```
+
 
 <!-- ------------------------------
 
@@ -291,12 +341,6 @@ C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musa
 
 Utilizzare la definizione delle funzioni senza dichiarazione come esempio per i dogmi.
 ?? Questo concetto verrà riutilizzato nel capitolo sulle funzioni ricorsive a proposito dei Post-It.
-
-“Non esiste distinzione fra un essere, la sua funzione e il tempo della sua apparizione.
-Gli esseri appaiono dalla non-esistenza, esistono per un istante e poi cessano di esistere.
-La loro esistenza, attività e azione sono un'unica cosa.
-Passato e futuro sono meri nomi.”
-Samyutta Nikaya, citato da Ananda, Tempo ed Eternità, pag. 45
 
 
 Funzioni ricorsive
