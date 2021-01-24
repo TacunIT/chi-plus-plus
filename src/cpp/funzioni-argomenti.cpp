@@ -53,6 +53,11 @@ int main(int argc, char** argv)
     int  x = 11; int  y = 22;    
     cout << setw(20) << "Valore iniziale: x=" << x << ", y=" << y << endl;
     
+    int* p = &x;
+    int& r = x;
+    
+    cout << "p:" << p << ",r=" << r << endl;
+
     /**
     *   Passaggio per valore: l'argomento della chiamata
     *   a funzione è il valore delle variabili x e y:
