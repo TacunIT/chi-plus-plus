@@ -299,12 +299,7 @@ Solo la funzione `main` fa eccezione a questa regola, perché non richiede una d
 La variabile `float stipendio`, che compare fra parentesi sia nella dichiarazione che nella definizione della funzione, viene detta: *parametro* della funzione.
 Il valore `1500` che viene attribuito al parametro nella chiamata a funzione, è detto: *argomento*.
 Queste variabili sono chiamate anche: *parametri formali*, nel caso della dichiarazione e della definizione e: *parametri attuali*, nel caso della chiamata.  
-Quando richiami una funzione, le puoi passare gli argomenti in tre modi:
-
-- per valore
-- per riferimento
-- per puntatore
-
+Quando richiami una funzione, le puoi passare gli argomenti in tre modi: per *valore*, per *riferimento*, per *puntatore*:
 
 ```
 {% include_relative src/funzioni-argomenti.cpp %}
@@ -321,12 +316,14 @@ Valore iniziale: x=11, y=22
    perPuntatore: x=11, y=22
 ```
 
+Passare la *reference* a una variabile come argomento di una funzione equivale a passarle la variabile stessa.
+Questo può essere un bene nel caso di funzioni che richiedano in input oggetti di grosse dimensioni o che abbiano la necessità di modificare direttamente il valore delle variabili passategli come parametri, ma va evitato in qualsiasi altro caso, perché permette al programma di modifi­care il valore di una variabile in una maniera subdola, che può essere molto difficile da scoprire in caso di errori.
+
+---
+
 
 <!-- ------------------------------
 
-: passarlo come parametro ad una funzione equivale a passarle un puntatore all’oggetto stesso. Non c’è nessuna copia di dati e la funzione agisce direttamente sull’area di memoria in cui questo è memorizzato, con tutti i bene­fici ed i rischi che la cosa può comportare.
-Data la sua intrinseca pericolosità, sarebbe il caso di limitare l’utilizzo dei tipi riferimento ai casi di funzioni che richiedano in input oggetti di grosse dimensioni o che abbiano la necessità di modificare direttamente il valore delle variabili passategli come parametri. È invece da evitare praticamente in qualsiasi altro caso, perché permette al programma di modifi­care il valore di una variabile in una maniera subdola, che può essere molto difficile da scoprire in caso di errori, come ci accingiamo a dimostrare:
--->
 
 PARAMETRI: formali, attuali e variabili - usare la funzione di log come esempio, aggiungendo il nome del file come parametro
 ```

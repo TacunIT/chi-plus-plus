@@ -653,13 +653,7 @@ float importo = raddoppiaStipendio(1500);
 La variabile <code>float stipendio</code>, che compare fra parentesi sia nella dichiarazione che nella definizione della funzione, viene detta: <em>parametro</em> della funzione.
 Il valore <code>1500</code> che viene attribuito al parametro nella chiamata a funzione, è detto: <em>argomento</em>.
 Queste variabili sono chiamate anche: <em>parametri formali</em>, nel caso della dichiarazione e della definizione e: <em>parametri attuali</em>, nel caso della chiamata.<br />
-Quando richiami una funzione, le puoi passare gli argomenti in tre modi:</p>
-
-<ul>
-  <li>per valore</li>
-  <li>per riferimento</li>
-  <li>per puntatore</li>
-</ul>
+Quando richiami una funzione, le puoi passare gli argomenti in tre modi: per <em>valore</em>, per <em>riferimento</em>, per <em>puntatore</em>:</p>
 
 <pre><code>/** 
  * @file funzioni-argomenti.cpp
@@ -731,7 +725,7 @@ int main(int argc, char** argv)
     /**
     *   Passaggio per reference: l'argomento della chiamata
     *   a funzione sono le variabili x e y, ma la funzione 
-    *   utiizzerà il loro indirizzo, non il loro valore:
+    *   utilizzerà dei loro alias, non il loro valore:
     */
     perRiferimento(x,y);
     cout &lt;&lt; setw(20) &lt;&lt; "perRiferimento: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
@@ -758,21 +752,24 @@ Valore iniziale: x=11, y=22
    perPuntatore: x=11, y=22
 </code></pre>
 
+<p>Passare la <em>reference</em> a una variabile come argomento di una funzione equivale a passarle la variabile stessa.
+Questo può essere un bene nel caso di funzioni che richiedano in input oggetti di grosse dimensioni o che abbiano la necessità di modificare direttamente il valore delle variabili passategli come parametri, ma va evitato in qualsiasi altro caso, perché permette al programma di modifi­care il valore di una variabile in una maniera subdola, che può essere molto difficile da scoprire in caso di errori.</p>
+
+<hr />
+
 <!-- ------------------------------
 
-: passarlo come parametro ad una funzione equivale a passarle un puntatore all’oggetto stesso. Non c’è nessuna copia di dati e la funzione agisce direttamente sull’area di memoria in cui questo è memorizzato, con tutti i bene­fici ed i rischi che la cosa può comportare.
-Data la sua intrinseca pericolosità, sarebbe il caso di limitare l’utilizzo dei tipi riferimento ai casi di funzioni che richiedano in input oggetti di grosse dimensioni o che abbiano la necessità di modificare direttamente il valore delle variabili passategli come parametri. È invece da evitare praticamente in qualsiasi altro caso, perché permette al programma di modifi­care il valore di una variabile in una maniera subdola, che può essere molto difficile da scoprire in caso di errori, come ci accingiamo a dimostrare:
--->
 
-<p>PARAMETRI: formali, attuali e variabili - usare la funzione di log come esempio, aggiungendo il nome del file come parametro</p>
-<pre><code>/** 
+PARAMETRI: formali, attuali e variabili - usare la funzione di log come esempio, aggiungendo il nome del file come parametro
+```
+/** 
  * @file funzioni-inline.cpp
  * Esempio di funzione inline.
  */
 
-#include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
-#include &lt;fstream&gt; 
+#include <iostream>
+#include <iomanip> 
+#include <fstream> 
 
 #define LOG_DEBUG   1
 #define LOG_AVVISO  2
@@ -791,17 +788,17 @@ using namespace std;
 inline void log(int livello, const char* messaggio)
 {
     /** Definisce la spaziatura del primo campo */
-    cerr &lt;&lt; setw(7);  
+    cerr << setw(7);  
     
     /** Scrive il livello del messaggio */
     switch(livello) {
-        case LOG_DEBUG:  cerr &lt;&lt; S_DEBUG ; break;
-        case LOG_AVVISO: cerr &lt;&lt; S_AVVISO; break;
-        default:         cerr &lt;&lt; S_ERRORE; break;
+        case LOG_DEBUG:  cerr << S_DEBUG ; break;
+        case LOG_AVVISO: cerr << S_AVVISO; break;
+        default:         cerr << S_ERRORE; break;
     }
     
     /** Scrive il testo del messaggio */
-    cerr &lt;&lt; ": " &lt;&lt; messaggio &lt;&lt; endl;
+    cerr << ": " << messaggio << endl;
 }
 
 int main(int argc, char** argv)
@@ -813,7 +810,7 @@ int main(int argc, char** argv)
     const char* filename = NULL;
 
     /** Se manca il nome del file di output, errore */
-    if(argc &lt; 2) {
+    if(argc < 2) {
         log(LOG_ERRORE, "specificare il path del file");
         return ERR_NO_FILE_NAME;
     }
@@ -834,7 +831,7 @@ int main(int argc, char** argv)
     log(LOG_AVVISO, "ho aperto il file");
 
     /** Scrive sul file di output */
-    doc &lt;&lt; "Testo del documento.\n";
+    doc << "Testo del documento.\n";
     log(LOG_DEBUG, "ho scritto sul file");
 
     /** Chiude il file di output */
@@ -844,38 +841,39 @@ int main(int argc, char** argv)
     return 0;
 }
 
-</code></pre>
+```
 
-<p>Spiegare COME fare a capire quale sia il proprio ruolo nell’Universo.
-Non posso metterlo nel capitolo sulla memoria che è già stracolmo.</p>
+Spiegare COME fare a capire quale sia il proprio ruolo nell'Universo.
+Non posso metterlo nel capitolo sulla memoria che è già stracolmo.
 
-<p>C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musashi:</p>
+C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musashi: 
 
-<blockquote>
-  <p>Non bisogna interferire nel funzionamento dell’Universo,<br />
+>Non bisogna interferire nel funzionamento dell’Universo,  
  ma prima è necessario capire quale sia,
-    il funzionamento dell’Universo</p>
-</blockquote>
+    il funzionamento dell’Universo
 
-<p>Utilizzare la definizione delle funzioni senza dichiarazione come esempio per i dogmi.
-?? Questo concetto verrà riutilizzato nel capitolo sulle funzioni ricorsive a proposito dei Post-It.</p>
+Utilizzare la definizione delle funzioni senza dichiarazione come esempio per i dogmi.
+?? Questo concetto verrà riutilizzato nel capitolo sulle funzioni ricorsive a proposito dei Post-It.
 
-<h2 id="funzioni-ricorsive">Funzioni ricorsive</h2>
 
-<p>Nella Lettera agli artisti, Giovanni Paolo II utilizza i termini
-'buono' e 'bello', ma li definisce in maniera ricorsiva, l'uno in
-funzione dell'altro. Stesso discorso per il concetto di 'Arte'</p>
+Funzioni ricorsive
+------------------
 
-<p>Bizzarro, perché la stessa cosa avviene, in condizioni diametralmente
-opposte, in “Un’etica senza Dio” di Lecaldano, dove ci si appella a
-concetti di ‘buono’ e ‘giusto’ senza definirli.</p>
+Nella Lettera agli artisti, Giovanni Paolo II utilizza i termini
+\'buono\' e \'bello\', ma li definisce in maniera ricorsiva, l\'uno in
+funzione dell\'altro. Stesso discorso per il concetto di \'Arte\'
 
-<p>Differenza con i manuali SW (in cui i termini utilizzati sono tutti
-definiti) e le le classi C++</p>
+Bizzarro, perché la stessa cosa avviene, in condizioni diametralmente
+opposte, in "Un'etica senza Dio" di Lecaldano, dove ci si appella a
+concetti di 'buono' e 'giusto' senza definirli.
 
-<p>Nota 7 (S.Gregorio++)</p>
+Differenza con i manuali SW (in cui i termini utilizzati sono tutti
+definiti) e le le classi C++
 
-<p>–&gt;</p>
+Nota 7 (S.Gregorio++)
+
+
+-->
 
 
             </section>
