@@ -716,6 +716,11 @@ int main(int argc, char** argv)
     int  x = 11; int  y = 22;    
     cout &lt;&lt; setw(20) &lt;&lt; "Valore iniziale: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
     
+    int* p = &amp;x;
+    int&amp; r = x;
+    
+    cout &lt;&lt; "p:" &lt;&lt; p &lt;&lt; ",r=" &lt;&lt; r &lt;&lt; endl;
+
     /**
     *   Passaggio per valore: l'argomento della chiamata
     *   a funzione è il valore delle variabili x e y:
@@ -755,17 +760,19 @@ Valore iniziale: x=11, y=22
 
 <!-- ------------------------------
 
+: passarlo come parametro ad una funzione equivale a passarle un puntatore all’oggetto stesso. Non c’è nessuna copia di dati e la funzione agisce direttamente sull’area di memoria in cui questo è memorizzato, con tutti i bene­fici ed i rischi che la cosa può comportare.
+Data la sua intrinseca pericolosità, sarebbe il caso di limitare l’utilizzo dei tipi riferimento ai casi di funzioni che richiedano in input oggetti di grosse dimensioni o che abbiano la necessità di modificare direttamente il valore delle variabili passategli come parametri. È invece da evitare praticamente in qualsiasi altro caso, perché permette al programma di modifi­care il valore di una variabile in una maniera subdola, che può essere molto difficile da scoprire in caso di errori, come ci accingiamo a dimostrare:
+-->
 
-PARAMETRI: formali, attuali e variabili - usare la funzione di log come esempio, aggiungendo il nome del file come parametro
-```
-/** 
+<p>PARAMETRI: formali, attuali e variabili - usare la funzione di log come esempio, aggiungendo il nome del file come parametro</p>
+<pre><code>/** 
  * @file funzioni-inline.cpp
  * Esempio di funzione inline.
  */
 
-#include <iostream>
-#include <iomanip> 
-#include <fstream> 
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+#include &lt;fstream&gt; 
 
 #define LOG_DEBUG   1
 #define LOG_AVVISO  2
@@ -784,17 +791,17 @@ using namespace std;
 inline void log(int livello, const char* messaggio)
 {
     /** Definisce la spaziatura del primo campo */
-    cerr << setw(7);  
+    cerr &lt;&lt; setw(7);  
     
     /** Scrive il livello del messaggio */
     switch(livello) {
-        case LOG_DEBUG:  cerr << S_DEBUG ; break;
-        case LOG_AVVISO: cerr << S_AVVISO; break;
-        default:         cerr << S_ERRORE; break;
+        case LOG_DEBUG:  cerr &lt;&lt; S_DEBUG ; break;
+        case LOG_AVVISO: cerr &lt;&lt; S_AVVISO; break;
+        default:         cerr &lt;&lt; S_ERRORE; break;
     }
     
     /** Scrive il testo del messaggio */
-    cerr << ": " << messaggio << endl;
+    cerr &lt;&lt; ": " &lt;&lt; messaggio &lt;&lt; endl;
 }
 
 int main(int argc, char** argv)
@@ -806,7 +813,7 @@ int main(int argc, char** argv)
     const char* filename = NULL;
 
     /** Se manca il nome del file di output, errore */
-    if(argc < 2) {
+    if(argc &lt; 2) {
         log(LOG_ERRORE, "specificare il path del file");
         return ERR_NO_FILE_NAME;
     }
@@ -827,7 +834,7 @@ int main(int argc, char** argv)
     log(LOG_AVVISO, "ho aperto il file");
 
     /** Scrive sul file di output */
-    doc << "Testo del documento.\n";
+    doc &lt;&lt; "Testo del documento.\n";
     log(LOG_DEBUG, "ho scritto sul file");
 
     /** Chiude il file di output */
@@ -837,39 +844,38 @@ int main(int argc, char** argv)
     return 0;
 }
 
-```
+</code></pre>
 
-Spiegare COME fare a capire quale sia il proprio ruolo nell'Universo.
-Non posso metterlo nel capitolo sulla memoria che è già stracolmo.
+<p>Spiegare COME fare a capire quale sia il proprio ruolo nell’Universo.
+Non posso metterlo nel capitolo sulla memoria che è già stracolmo.</p>
 
-C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musashi: 
+<p>C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musashi:</p>
 
->Non bisogna interferire nel funzionamento dell’Universo,  
+<blockquote>
+  <p>Non bisogna interferire nel funzionamento dell’Universo,<br />
  ma prima è necessario capire quale sia,
-    il funzionamento dell’Universo
+    il funzionamento dell’Universo</p>
+</blockquote>
 
-Utilizzare la definizione delle funzioni senza dichiarazione come esempio per i dogmi.
-?? Questo concetto verrà riutilizzato nel capitolo sulle funzioni ricorsive a proposito dei Post-It.
+<p>Utilizzare la definizione delle funzioni senza dichiarazione come esempio per i dogmi.
+?? Questo concetto verrà riutilizzato nel capitolo sulle funzioni ricorsive a proposito dei Post-It.</p>
 
+<h2 id="funzioni-ricorsive">Funzioni ricorsive</h2>
 
-Funzioni ricorsive
-------------------
+<p>Nella Lettera agli artisti, Giovanni Paolo II utilizza i termini
+'buono' e 'bello', ma li definisce in maniera ricorsiva, l'uno in
+funzione dell'altro. Stesso discorso per il concetto di 'Arte'</p>
 
-Nella Lettera agli artisti, Giovanni Paolo II utilizza i termini
-\'buono\' e \'bello\', ma li definisce in maniera ricorsiva, l\'uno in
-funzione dell\'altro. Stesso discorso per il concetto di \'Arte\'
+<p>Bizzarro, perché la stessa cosa avviene, in condizioni diametralmente
+opposte, in “Un’etica senza Dio” di Lecaldano, dove ci si appella a
+concetti di ‘buono’ e ‘giusto’ senza definirli.</p>
 
-Bizzarro, perché la stessa cosa avviene, in condizioni diametralmente
-opposte, in "Un'etica senza Dio" di Lecaldano, dove ci si appella a
-concetti di 'buono' e 'giusto' senza definirli.
+<p>Differenza con i manuali SW (in cui i termini utilizzati sono tutti
+definiti) e le le classi C++</p>
 
-Differenza con i manuali SW (in cui i termini utilizzati sono tutti
-definiti) e le le classi C++
+<p>Nota 7 (S.Gregorio++)</p>
 
-Nota 7 (S.Gregorio++)
-
-
--->
+<p>–&gt;</p>
 
 
             </section>

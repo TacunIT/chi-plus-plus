@@ -324,6 +324,9 @@ Valore iniziale: x=11, y=22
 
 <!-- ------------------------------
 
+: passarlo come parametro ad una funzione equivale a passarle un puntatore all’oggetto stesso. Non c’è nessuna copia di dati e la funzione agisce direttamente sull’area di memoria in cui questo è memorizzato, con tutti i bene­fici ed i rischi che la cosa può comportare.
+Data la sua intrinseca pericolosità, sarebbe il caso di limitare l’utilizzo dei tipi riferimento ai casi di funzioni che richiedano in input oggetti di grosse dimensioni o che abbiano la necessità di modificare direttamente il valore delle variabili passategli come parametri. È invece da evitare praticamente in qualsiasi altro caso, perché permette al programma di modifi­care il valore di una variabile in una maniera subdola, che può essere molto difficile da scoprire in caso di errori, come ci accingiamo a dimostrare:
+-->
 
 PARAMETRI: formali, attuali e variabili - usare la funzione di log come esempio, aggiungendo il nome del file come parametro
 ```

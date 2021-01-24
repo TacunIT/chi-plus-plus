@@ -331,7 +331,25 @@ Come vedi, i bit sono gli stessi, ma cambiando il tipo di dato associato al punt
 Le istruzioni: `p1++` e `p2++` incrementano di un'unità il puntatore, ovvero lo spostano in avanti nella memoria del numero di byte corrispondenti alla dimensione del tipo di dato a cui è associato.
 Il puntatore `p1` è un `unsigned char`, quindi si sposta di otto bit; il puntatore `p12` è uno `short int`, quindi si sposta di sedici bit.
 È questo il motivo per cui il secondo ciclo di lettura dura la metà del primo: perché la quantità di bit letta per ogni iterazione è doppia. 
-Se mi fossi distratto e avessi copiato il codice del primo ciclo di lettura così com'è, senza dividere per due il numero di cicli, il puntatore avrebbe continuato a “camminare” in avanti nella memoria, oltre i confini dell'array e questo, come vedremo in seguito, non è assolutamente bene.
+Se mi fossi distratto e avessi copiato il codice del primo ciclo di lettura così com'è, senza dividere per due il numero di cicli, il puntatore avrebbe continuato a “camminare” in avanti nella memoria, oltre i confini dell'array e questo, come vedremo in seguito, non è assolutamente bene.  
+Le *reference* sono degli alias delle variabili a cui sono associati.
+Come per i gibboni o i cigni, il legame fra una *reference* e la sua variabile dura tutta la vita.
+Mentre i puntatori possono avere un valore `NULL` e possono essere associati a variabili differenti nel corso dell'elaborazione, le *reference* devono sempre essere associate a una variabile e quell'associazione non può essere modificata successivamente.
+
+```
+{% include_relative src/tipi-di-dato-reference.cpp %}
+```
+
+Compilando ed eseguendo il codice, otterrai:
+
+```
+% g++ src/cpp/tipi-di-dato-reference.cpp -o src/out/esempio
+% src/out/esempio                                          
+valori iniziali: v=10, r=10
+valori finali:   v=20, r=20
+```
+
+Approfondiremo i pro e i contro delle reference quando parleremo delle [funzioni](/man/funzioni).
 
 ---
 <a id="casting"></a>
