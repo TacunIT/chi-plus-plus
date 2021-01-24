@@ -321,6 +321,70 @@ Questo può essere un bene nel caso di funzioni che richiedano in input oggetti 
 
 ---
 
+In una delle nostre [prime chiacchierate](/man/programmatore), ti ho detto che il Buon Programmatore, mentre scrive il codice, si chiede sempre se possa esistere sistema più efficiente di fare ciò che sta facendo.
+Oggi ne hai avuto una dimostrazione: abbiamo migliorato il primo esempio del paragrafo sulle funzioni `inline` unificando la gestione dei messaggi in un'unica funzione e poi l'abbiamo migliorato ancora rendendo quella funzione `inline`.   
+C'è un problema, però: l'output del programma:
+
+```
+% ./src/out/esempio                                   
+ho aperto il file 
+ho scritto sul file
+ho chiuso il file
+```
+
+va bene solo se il file da gestire è uno solo, come nel nostro caso. 
+Se però ci fossero due (o più) file di input o di output, sarebbe utile sapere a *quale* file si riferisca il messaggio.
+Per risolvere il problema, potremmo aumentare il numero di parametri formali della funzione `log`:
+
+```
+void log(int livello, const char* messaggio, const char* file);
+```
+
+ma il nuovo parametro sarebbe inutile nel caso di chiamate come:
+
+```
+log(LOG_ERRORE, "specificare il path del file");
+```
+
+In alternativa, potremmo definire il messaggio all'interno della funzione chiamante:
+
+```
+string s1 = "ho chiuso il file: ";
+string s2 = filename;
+string s3 = s1 + s2;
+log(LOG_AVVISO, s3.c_str());
+```
+
+ma questo renderebbe il codice più pesante, più complicato e più lento; inoltre, trasferirebbe nelle funzioni chiamanti parte delle funzionalità di output che avevamo felicemente isolato nella funzione `log`.    
+No: la soluzione corretta per questo tipo di problemi sono le *funzioni con parametri variabili*.  
+Un esempio tipico di questo tipo di funzioni lo abbiamo visto con la funzione del linguaggio C `printf`, che ha un primo argomento che serve a determinare il tipo e il numero degli argomenti che seguono:
+
+```
+/** Dichiarazione, nel file stdio.h */
+int printf(const char *format, ...) ;
+
+/** Utilizzo */
+printf("stringa: %s; intero: %d", "codice errore", -1);
+
+``` 
+
+Gli argomenti variabili, nella dichiarazione della funzione, sono indicati con tre punti, dopo i parametri fissi:
+
+```
+void log(int livello, int n_parametri, ...);
+```
+
+Nella definizione della funzione, per gestire i parametri, si utilizzano tre marco definite nel file `stdarg.h`:
+
+```
+void va_start(va_list, lastfix);
+type va_arg(va_list ap, type);
+void va_end(va_list ap);
+```
+
+```
+{% include_relative src/funzioni-variabili.cpp %}
+```
 
 <!-- ------------------------------
 
@@ -342,6 +406,7 @@ C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musa
 Utilizzare la definizione delle funzioni senza dichiarazione come esempio per i dogmi.
 ?? Questo concetto verrà riutilizzato nel capitolo sulle funzioni ricorsive a proposito dei Post-It.
 
+Valore di default per i parametri
 
 Funzioni ricorsive
 ------------------

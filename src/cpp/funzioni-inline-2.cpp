@@ -1,6 +1,6 @@
 /** 
  * @file funzioni-inline-2.cpp
- * Esempio di funzione inline.
+ * Esempio di codice con funzione di output unica.
  */
 
 #include <iostream>
