@@ -1,3 +1,7 @@
+## 0.19.4 (January 24, 2021)
+  - Aggiunto paragrafo sulle reference al capitolo sui tipi di dato
+  - Redazione del paragrafo sui parametri delle funzioni
+
 ## 0.19.3 (January 23, 2021)
   - Prima stesura del paragrafo sulle funzioni inline
   - Revisione del testo tecnico
