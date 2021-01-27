@@ -1,6 +1,6 @@
 /** 
  * @file funzioni-stipendio-main.cpp
- * Funzione main del programma con compilazione separata dei file oggetto.
+ * Funzione main del programma con file oggetto separati.
  */
 #include <iostream> 
 
