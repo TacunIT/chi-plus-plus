@@ -1,3 +1,8 @@
+## 0.19.5 (January 27, 2021)
+  - Corretto testo capitolo funzioni
+  - Redazione paragrafo sui parametri variabili
+  - Completato paragrafo sui tipi di parametro
+
 ## 0.19.4 (January 24, 2021)
   - Aggiunto paragrafo sulle reference al capitolo sui tipi di dato
   - Redazione del paragrafo sui parametri delle funzioni
