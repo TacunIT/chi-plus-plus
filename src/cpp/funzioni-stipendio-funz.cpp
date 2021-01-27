@@ -1,6 +1,6 @@
 /** 
  * @file funzioni-stipendio-funz.cpp
- * Funzione del programma con compilazione separata dei file oggetto.
+ * Funzione del programma con file oggetto separati.
  */
 
 /** 

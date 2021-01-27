@@ -368,7 +368,7 @@ printf("stringa: %s; intero: %d", "codice errore", -1);
 
 ``` 
 
-Gli argomenti variabili, nella dichiarazione della funzione, sono indicati con tre punti, dopo i parametri fissi:
+Per indicare degli argomenti variabili, nella dichiarazione di una funzione, si utilizzano tre punti, dopo i parametri fissi:
 
 ```
 void log(int livello, int n_parametri, ...);
@@ -377,14 +377,22 @@ void log(int livello, int n_parametri, ...);
 Nella definizione della funzione, per gestire i parametri, si utilizzano tre marco definite nel file `stdarg.h`:
 
 ```
-void va_start(va_list, lastfix);
+void va_start(va_list ap, lastfix);
 type va_arg(va_list ap, type);
 void va_end(va_list ap);
 ```
 
+`va_start` inizializza il parametro `ap` affinché possa ricevere gli argomenti che seguono l'ultimo argomento fisso della funzione, indicato dal parametro `lastfix`
+
+`va_arg` torna il successivo parametro nella lista `ap`; il parametro `type` indica il tipo di dato del parametro.
+
+`va_end` termina l'elaborazione dei parametri e deve essere sempre chiamata prima che la funzione termini.
+
+
 ```
 {% include_relative src/funzioni-variabili.cpp %}
 ```
+
 
 <!-- ------------------------------
 
