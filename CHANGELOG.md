@@ -1,3 +1,6 @@
+## 0.19.6 (January 31, 2021)
+  - Completata prima stesura del testo tecnico del capitolo.
+
 ## 0.19.5 (January 27, 2021)
   - Corretto testo capitolo funzioni
   - Redazione paragrafo sui parametri variabili
