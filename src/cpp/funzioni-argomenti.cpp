@@ -38,7 +38,7 @@ void perRiferimento(int &a, int &b)
 /**
 *   Chiamata per puntatore: anche qui, quello che succede 
 *   alle variabili a e b avviene anche alle variabili x e y 
-*   della funzione chiamante.
+*   della funzione chiamante, ma il codice è meno chiaro.
 */
 void perPuntatore(int *a, int *b)
 {

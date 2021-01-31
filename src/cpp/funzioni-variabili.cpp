@@ -43,7 +43,10 @@ void log(int livello, int n_parametri, ...)
     /** Dichiara la variabile per la lista dei parametri */    
     va_list lista_parametri;
     
-    /** Inizializza la lista dei parametri */
+    /** 
+     * Inizializza la lista dei parametri e considera
+     * tutti gli argomenti dopo n_parametri come variabili.
+     */
     va_start(lista_parametri, n_parametri);
 
     /** Legge tutti i parametri nella lista e li scrive a video */
