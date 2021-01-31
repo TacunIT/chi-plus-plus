@@ -410,19 +410,22 @@ L'output di questo codice è:
   avviso | ho chiuso il file: src/out/esempio.txt```
 ```
 
+<hr id="dottrina">
 
+In un libro sulla vita dello spadaccino Myamoto Musashi<a href="/man/note/musashi" class="nota"></a> c'è una frase affine a quella di Jacopone da Todi:
 
+>Non bisogna interferire nel funzionamento dell’Universo,  
+ ma prima è necessario capire quale sia,
+    il funzionamento dell’Universo
+    
+ 
 <!-- ------------------------------
 
 
 Spiegare COME fare a capire quale sia il proprio ruolo nell'Universo.
 Non posso metterlo nel capitolo sulla memoria che è già stracolmo.
 
-C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musashi: 
 
->Non bisogna interferire nel funzionamento dell’Universo,  
- ma prima è necessario capire quale sia,
-    il funzionamento dell’Universo
 
 Utilizzare la definizione delle funzioni senza dichiarazione come esempio per i dogmi.
 ?? Questo concetto verrà riutilizzato nel capitolo sulle funzioni ricorsive a proposito dei Post-It.
