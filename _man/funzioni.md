@@ -27,7 +27,7 @@ Il codice dell'esempio successivo è un esempio, perfettibile, di questo approcc
 {% include_relative src/tipi-di-dato-limiti.cpp %}
 ```
 Ogni volta che nel tuo codice ci sono delle istruzioni che si ripetono, valuta la possibilità di isolarle in una funzione.
-Per esempio, nella funzione `main` del programma qui sopra ci sono delle funzioni di output che si ripetono, cosa che complica la lettura del codice, ne rende più lunga e laboriosa la modifica e aumenta la probabilità di fare degli errori, perché sei tu che definisci la stringa con il nome del tipo di dato e devi fare attenzione a scrivere il valore giusto ogni volta:
+Per esempio, nella funzione `main` del programma qui sopra ci sono delle funzioni di output ripetute, cosa che complica la lettura del codice, ne rende laboriosa la modifica e aumenta la probabilità di fare degli errori, perché sei tu che definisci la stringa con il nome del tipo di dato e devi fare attenzione a scrivere il valore giusto ogni volta:
 
 ```
 cout << setw(16) << "int: "; 
@@ -91,7 +91,7 @@ float scorporaIVA(long stipendio, float aliquota)
 }
 ```
 
-Come ti ho detto quando abbiamo parlato dei <a href="/man/linguaggi-di-programmazione">linguaggi di programmazione</a>, la generazione di un file eseguibile avviene in due fasi: per prima cosa il compilatore converte il codice in un *file oggetto*, poi il *linker* trasforma i file oggetto (potrebbero essere più d'uno) in un unico eseguibile. 
+Come ti ho detto quando abbiamo parlato dei <a href="/man/linguaggi-di-programmazione">linguaggi di programmazione</a>, la generazione di un file eseguibile avviene in due fasi: per prima cosa il compilatore converte il codice C++ in un *file oggetto*, poi il *linker* trasforma i file oggetto (potrebbero essere più d'uno) in un unico eseguibile. 
 Perché questo processo possa funzionare, la *dichiarazione* di una funzione deve essere presente in tutti i brani di codice che la utilizzano, per consentire al compilatore di controllare che l'utilizzo che se ne fa sia corretto; la *definizione*, al contrario, deve comparire solo una volta.  
 
 ```
@@ -124,7 +124,7 @@ main.o
 3000
 ```
 
-Ma siccome io sono pigro, negli esempii che ti farò utilizzerò sempre un comando unico per la compilazione e il *linking* dei programmi:
+Ma siccome io sono pigro, negli esempii che ti farò, utilizzerò sempre un comando unico per la compilazione e il *linking* dei programmi:
 
 ```
 g++ src/cpp/funzioni-stipendio-funz.cpp  \                                                       
@@ -208,7 +208,7 @@ Prima ti ho detto di *valutare* la possibilità di isolare in una funzione le is
 Il software, come molte attività umane, è il frutto di una serie di compromessi e tu dovrai fare scelte architetturali differenti a seconda del tipo di programma che devi realizzare.
 Un buon software, oltre che funzionare correttamente, dovrebbe essere veloce, facile da modificare e richiedere poche risorse di sistema.
 Alle volte, però, si deve sacrificare una di queste caratteristiche positive per esaltarne un'altra.
-Per esempio, se dovessi scrivere un software particolarmente veloce, potrebbe essere meglio avere delle istruzioni duplicate che delle chiamate a funzione, perché richiamare una funzione causa inevitabilmente dei rallentamenti.
+Per esempio, se dovessi scrivere un software estremamente veloce, potrebbe essere meglio avere delle istruzioni duplicate che delle chiamate a funzione, perché richiamare una funzione causa inevitabilmente dei rallentamenti.
 <!-- @todo: spiegare perché; o qui o in una nota -->
 Però, se replichi delle istruzioni, non solo aumenti le dimensioni del programma, ma lo rendi anche più difficile da leggere e da modificare, che è male.  
 In questi casi, l'aumento delle dimensioni del codice è inevitabile, ma le *funzioni inline* ti permettono di mantenere il codice leggibile e modificabile:
@@ -234,7 +234,7 @@ Le istruzioni di output nell'esempio si differenziano solo per il testo da visua
 {% include_relative src/funzioni-inline-2.cpp %}
 ```
 
-L'output di questo programma è identico a quello dell'esempio precedente, ma se aggiungi la parola chiave `ìnline` prima del tipo di ritorno della funzione `log`:
+L'output di questo programma è identico a quello dell'esempio precedente, ma se aggiungi la parola chiave `inline` prima del tipo di ritorno della funzione `log`:
 
 ```
 inline void log(const char* messaggio)
@@ -317,12 +317,12 @@ Valore iniziale: x=11, y=22
 ```
 
 Passare la *reference* a una variabile come argomento di una funzione equivale a passarle la variabile stessa.
-Questo può essere un bene nel caso di funzioni che richiedano in input oggetti di grosse dimensioni o che abbiano la necessità di modificare direttamente il valore delle variabili passategli come parametri, ma va evitato in qualsiasi altro caso, perché permette al programma di modifi­care il valore di una variabile in una maniera subdola, che può essere molto difficile da scoprire in caso di errori.
+Questo può essere un bene nel caso di funzioni che richiedano in input oggetti di grosse dimensioni o che abbiano la necessità di modificare direttamente il valore delle variabili passategli come parametri, ma va evitato in qualsiasi altro caso, perché permette al programma di modifi­care il valore di una variabile in maniera subdola, che può essere molto difficile da scoprire in caso di errori.
 
 ---
 
 In una delle nostre [prime chiacchierate](/man/programmatore), ti ho detto che il Buon Programmatore, mentre scrive il codice, si chiede sempre se possa esistere sistema più efficiente di fare ciò che sta facendo.
-Oggi ne hai avuto una dimostrazione: abbiamo migliorato il primo esempio del paragrafo sulle funzioni `inline` unificando la gestione dei messaggi in un'unica funzione e poi l'abbiamo migliorato ancora rendendo quella funzione `inline`.   
+Oggi ne hai avuto una dimostrazione: abbiamo migliorato il primo esempio del paragrafo sulle funzioni `inline` unificando la gestione dei messaggi in un'unica funzione e poi l'abbiamo migliorato ancora rendendo quella funzione `inline`. 
 C'è un problema, però: l'output del programma:
 
 ```
@@ -356,7 +356,7 @@ log(LOG_AVVISO, s3.c_str());
 ```
 
 ma questo renderebbe il codice più pesante, più complicato e più lento; inoltre, trasferirebbe nelle funzioni chiamanti parte delle funzionalità di output che avevamo felicemente isolato nella funzione `log`.    
-No: la soluzione corretta per questo tipo di problemi sono le *funzioni con parametri variabili*.  
+La soluzione corretta per questo tipo di problemi sono le *funzioni con parametri variabili*.  
 Un esempio tipico di questo tipo di funzioni lo abbiamo visto con la funzione del linguaggio C `printf`, che ha un primo argomento che serve a determinare il tipo e il numero degli argomenti che seguono:
 
 ```
@@ -374,7 +374,7 @@ Per indicare degli argomenti variabili, nella dichiarazione di una funzione, si 
 void log(int livello, int n_parametri, ...);
 ```
 
-Nella definizione della funzione, per gestire i parametri, si utilizzano tre marco definite nel file `stdarg.h`:
+Nella definizione della funzione, per gestire i parametri, è necessario creare un ciclo di lettura utilizzando tre marco definite nel file `stdarg.h`:
 
 ```
 void va_start(va_list ap, lastfix);
@@ -382,7 +382,7 @@ type va_arg(va_list ap, type);
 void va_end(va_list ap);
 ```
 
-`va_start` inizializza il parametro `ap` affinché possa ricevere gli argomenti che seguono l'ultimo argomento fisso della funzione, indicato dal parametro `lastfix`
+`va_start` inizializza la lista di variabili `ap` affinché possa ricevere gli argomenti variabili; il parametro `lastfix` specifica quale sia l'ultimo parametro fisso della funzione.
 
 `va_arg` torna il successivo parametro nella lista `ap`; il parametro `type` indica il tipo di dato del parametro.
 
