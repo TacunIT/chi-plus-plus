@@ -862,7 +862,10 @@ void log(int livello, int n_parametri, ...)
     /** Dichiara la variabile per la lista dei parametri */    
     va_list lista_parametri;
     
-    /** Inizializza la lista dei parametri */
+    /** 
+     * Inizializza la lista dei parametri e considera
+     * tutti gli argomenti dopo n_parametri come variabili.
+     */
     va_start(lista_parametri, n_parametri);
 
     /** Legge tutti i parametri nella lista e li scrive a video */
@@ -920,91 +923,24 @@ int main(int argc, char** argv)
 
 </code></pre>
 
+<p>L’output di questo codice è:</p>
+
+<pre><code>% g++ src/cpp/funzioni-variabili.cpp -o src/out/esempio
+
+% src/out/esempio                    
+  errore | specificare il path del file
+
+% src/out/esempio /esempio.txt 
+  errore | impossibile aprire il file:/esempio.txt
+
+% src/out/esempio src/out/esempio.txt
+  avviso | ho aperto il file: src/out/esempio.txt
+   debug | ho scritto sul file: src/out/esempio.txt
+  avviso | ho chiuso il file: src/out/esempio.txt```
+</code></pre>
+
 <!-- ------------------------------
 
-
-PARAMETRI: formali, attuali e variabili - usare la funzione di log come esempio, aggiungendo il nome del file come parametro
-```
-/** 
- * @file funzioni-inline-3.cpp
- * Esempio di funzione inline.
- */
-
-#include <iostream>
-#include <iomanip> 
-#include <fstream> 
-
-#define LOG_DEBUG   1
-#define LOG_AVVISO  2
-#define LOG_ERRORE  3
-
-#define S_DEBUG     "debug"
-#define S_AVVISO    "avviso"
-#define S_ERRORE    "errore"
-
-#define ERR_NO_FILE_NAME  -1
-#define ERR_NO_FILE_OPEN  -2
-
-using namespace std;
-
-/** Funzione di output inline */
-inline void log(int livello, const char* messaggio)
-{
-    /** Definisce la spaziatura del primo campo */
-    cerr << setw(7);  
-    
-    /** Scrive il livello del messaggio */
-    switch(livello) {
-        case LOG_DEBUG:  cerr << S_DEBUG ; break;
-        case LOG_AVVISO: cerr << S_AVVISO; break;
-        default:         cerr << S_ERRORE; break;
-    }
-    
-    /** Scrive il testo del messaggio */
-    cerr << ": " << messaggio << endl;
-}
-
-int main(int argc, char** argv)
-{        
-    /** Crea una variabile per gestire il file di output */
-    ofstream doc;
-
-    /** Puntatore per il nome del file di output */
-    const char* filename = NULL;
-
-    /** Se manca il nome del file di output, errore */
-    if(argc < 2) {
-        log(LOG_ERRORE, "specificare il path del file");
-        return ERR_NO_FILE_NAME;
-    }
-    
-    /** Legge il nome del file di output */
-    filename = argv[1];
-    
-    /** Prova ad aprire il file di output */    
-    doc.open (argv[1]);
-    
-    /** Se c'è stato un errore, lo segnala ed esce */
-    if(!doc.is_open()) {
-        log(LOG_ERRORE, "impossibile aprire il file");    
-        return ERR_NO_FILE_OPEN;    
-    }
-    
-    /** OK, il file è pronto */
-    log(LOG_AVVISO, "ho aperto il file");
-
-    /** Scrive sul file di output */
-    doc << "Testo del documento.\n";
-    log(LOG_DEBUG, "ho scritto sul file");
-
-    /** Chiude il file di output */
-    doc.close();
-    log(LOG_AVVISO, "ho chiuso il file");
-
-    return 0;
-}
-
-```
 
 Spiegare COME fare a capire quale sia il proprio ruolo nell'Universo.
 Non posso metterlo nel capitolo sulla memoria che è già stracolmo.
@@ -1020,21 +956,6 @@ Utilizzare la definizione delle funzioni senza dichiarazione come esempio per i 
 
 Valore di default per i parametri
 
-Funzioni ricorsive
-------------------
-
-Nella Lettera agli artisti, Giovanni Paolo II utilizza i termini
-\'buono\' e \'bello\', ma li definisce in maniera ricorsiva, l\'uno in
-funzione dell\'altro. Stesso discorso per il concetto di \'Arte\'
-
-Bizzarro, perché la stessa cosa avviene, in condizioni diametralmente
-opposte, in "Un'etica senza Dio" di Lecaldano, dove ci si appella a
-concetti di 'buono' e 'giusto' senza definirli.
-
-Differenza con i manuali SW (in cui i termini utilizzati sono tutti
-definiti) e le le classi C++
-
-Nota 7 (S.Gregorio++)
 
 
 -->
