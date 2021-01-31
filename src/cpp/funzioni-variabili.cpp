@@ -18,6 +18,9 @@
 #define ERR_NO_FILE_NAME  -1
 #define ERR_NO_FILE_OPEN  -2
 
+#define S_ERR_NO_FILE_NAME  "specificare il path del file"
+#define S_ERR_NO_FILE_OPEN  "impossibile aprire il file:"
+
 using namespace std;
 
 /** Funzione di output con parametri variabili */
@@ -37,7 +40,7 @@ void log(int livello, int n_parametri, ...)
     /** Scrive il carattere di separazione */
     cerr << " | ";
 
-    /** Dichiara la variabile per gestire la lista dei parametri */    
+    /** Dichiara la variabile per la lista dei parametri */    
     va_list lista_parametri;
     
     /** Inizializza la lista dei parametri */
@@ -66,7 +69,7 @@ int main(int argc, char** argv)
 
     /** Se manca il nome del file di output, errore */
     if(argc < 2) {
-        log(LOG_ERRORE, 1, "specificare il path del file");
+        log(LOG_ERRORE, 1, S_ERR_NO_FILE_NAME);
         return ERR_NO_FILE_NAME;
     }
     
@@ -78,7 +81,7 @@ int main(int argc, char** argv)
     
     /** Se c'è stato un errore, lo segnala ed esce */
     if(!doc.is_open()) {
-        log(LOG_ERRORE, 2, "impossibile aprire il file:", filename);    
+        log(LOG_ERRORE, 2, S_ERR_NO_FILE_OPEN, filename);    
         return ERR_NO_FILE_OPEN;    
     }
     
