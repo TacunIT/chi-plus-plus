@@ -410,27 +410,51 @@ L'output di questo codice è:
   avviso | ho chiuso il file: src/out/esempio.txt```
 ```
 
+<!-- @todo: Valore di default per i parametri -->
+
 <hr id="dottrina">
 
-In un libro sulla vita dello spadaccino Myamoto Musashi<a href="/man/note/musashi" class="nota"></a> c'è una frase affine a quella di Jacopone da Todi:
+In un libro sulla vita dello spadaccino Myamoto Musashi<a href="/man/note/#musashi" class="nota"></a> c'è una frase che è la logica conseguenza del suggerimento di Jacopone da Todi:
 
 >Non bisogna interferire nel funzionamento dell’Universo,  
  ma prima è necessario capire quale sia,
     il funzionamento dell’Universo
     
- 
-<!-- ------------------------------
+Sfortunatamente, i libri che ti dicono *cosa* fare, raramente ti spiegano anche *come* farlo. 
+Non è il caso di Musashi, però, che nei suoi libri spiegò sia cosa è giusto fare che come ottenerlo.
+Nel *Dokkodo*, in particolare, stilò un elenco di precetti da seguire:
 
+>- Non agire in maniera contraria al tuo destino.
+ - Non ricercare una vita facile.
+ - Non avere pregiudizi od ostilità per qualcosa.
+ - Pensa a te stesso con leggerezza e in maniera profonda agli altri.
+ - Sii distaccato dal desiderio.
+ - Non avere rimpianti per ciò che hai fatto. 
+ - Non essere geloso degli altri.
+ - Non avere attaccamento per alcuna cosa.
+ - Non portare rancore.
+ - Non c'è tempo per pensare a una vita amorosa.
+ - Non avere né preferenze né avversioni.
+ - Sii indifferente al luogo in cui vivi.
+ - Non ricercare il cibo gustoso.
+ - Fà che le future generazioni non siano legate ad armi antiche.
+ - Evita le superstizioni e i taboo.
+ - Utilizza solo gli strumenti necessarii e non conservare ciò che è inutile.
+ - Sii preparato a morire.
+ - Quando sei vecchio, ciò che possiedi non ha molta importanza.
+ - Rispetta Buddha e gli Dei, ma non contare sul loro aiuto.
+ - Non abbandonare il tuo onore, anche se ciò significa abbandonare la vita.
+ - Non deviare mai dalla Via.
+
+
+<!-- ------------------------------
 
 Spiegare COME fare a capire quale sia il proprio ruolo nell'Universo.
 Non posso metterlo nel capitolo sulla memoria che è già stracolmo.
 
-
-
 Utilizzare la definizione delle funzioni senza dichiarazione come esempio per i dogmi.
 ?? Questo concetto verrà riutilizzato nel capitolo sulle funzioni ricorsive a proposito dei Post-It.
 
-Valore di default per i parametri
 
 
 
