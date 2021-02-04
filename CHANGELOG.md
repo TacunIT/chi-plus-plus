@@ -1,3 +1,6 @@
+## 0.19.7 (February 04, 2021)
+  - Redazione testo dottrina
+
 ## 0.19.6 (January 31, 2021)
   - Completata prima stesura del testo tecnico del capitolo.
 
