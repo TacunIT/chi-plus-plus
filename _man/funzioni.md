@@ -414,14 +414,25 @@ L'output di questo codice è:
 
 <hr id="dottrina">
 
-In un libro sulla vita dello spadaccino Myamoto Musashi<a href="/man/note/#musashi" class="nota"></a> c'è una frase che è la logica conseguenza del suggerimento di Jacopone da Todi:
+In un romanzo sulla vita dello spadaccino giapponese Myamoto Musashi<a href="/man/note/#musashi" class="nota"></a> c'è una frase che è la logica conseguenza del suggerimento di Jacopone da Todi:
 
 >Non bisogna interferire nel funzionamento dell’Universo,  
  ma prima è necessario capire quale sia,
     il funzionamento dell’Universo
-    
-Sfortunatamente, i libri che ti dicono *cosa* fare, raramente ti spiegano anche *come* farlo. 
-Non è il caso di Musashi, però, che nei suoi libri spiegò sia cosa è giusto fare che come ottenerlo.
+
+Il problema dei romanzi è che ti dicono spesso *cosa* fare, non ti spiegano quasi mai *come* farlo, o perché.  
+Diffida dei maestri che sanno solo insegnare, perché tutto ciò che ti raccontano l'hanno imparato dai libri.
+Un buon maestro deve eccellere in qualcosa, che sia la scherma, il tiro con l'arco, la carpenteria o la manutenzione delle motociclette.
+Può non essere *il* migliore, ma deve essere *fra i* migliori; solo così, saprai che le sue idee sono valide.
+Al contrario, i maestri che non sono mai usciti da una scuola, non hanno mai dovuto mettere le loro idee alla prova dei fatti.
+Ti insegnano ciò che pensano sia giusto, ma ciò che è giusto o vero in una scuola, non sempre è altrettanto vero o giusto nel mondo reale.  
+È facile essere dei santi, in un monastero, fra persone che hanno la tua stessa cultura<!-- qui, in senso letterale --> e i tuoi stessi principii; il difficile è restare dei santi là fuori. 
+Il Buddha Shakyamuni predicò la Benevolenza Universale perché visse in India, duemilaseicento anni fa, ma se fosse rimasto imbottigliato nel traffico di una città, dopo una giornata di lavoro, forse le sue idee sarebbero state più simili a quelle di Nietzsche.
+
+
+
+<!-- 
+Non è il caso di Musashi, quello vero, il Samuraiperò, che nei suoi libri spiegò molto chiaramente sia cosa è giusto fare che come ottenerlo.
 Nel *Dokkodo*, in particolare, stilò un elenco di precetti da seguire:
 
 >- Non agire in maniera contraria al tuo destino.
@@ -433,10 +444,10 @@ Nel *Dokkodo*, in particolare, stilò un elenco di precetti da seguire:
  - Non essere geloso degli altri.
  - Non avere attaccamento per alcuna cosa.
  - Non portare rancore.
- - Non c'è tempo per pensare a una vita amorosa.
+ - Non pensare alla vita sentimentale.
  - Non avere né preferenze né avversioni.
  - Sii indifferente al luogo in cui vivi.
- - Non ricercare il cibo gustoso.
+ - Non ricercare il cibo per il suo gusto.
  - Fà che le future generazioni non siano legate ad armi antiche.
  - Evita le superstizioni e i taboo.
  - Utilizza solo gli strumenti necessarii e non conservare ciò che è inutile.
