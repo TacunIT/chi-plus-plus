@@ -410,7 +410,7 @@ L'output di questo codice è:
   avviso | ho chiuso il file: src/out/esempio.txt```
 ```
 
-<!-- @todo: Valore di default per i parametri -->
+<!-- @todo: Aggiungere un paragrafo sui valori di default per i parametri -->
 
 <hr id="dottrina">
 
@@ -427,13 +427,25 @@ Può non essere *il* migliore, ma deve essere *fra i* migliori; solo così, sapr
 Al contrario, i maestri che non sono mai usciti da una scuola, non hanno mai dovuto mettere le loro idee alla prova dei fatti.
 Ti insegnano ciò che pensano sia giusto, ma ciò che è giusto o vero in una scuola, non sempre è altrettanto vero o giusto nel mondo reale.  
 È facile essere dei santi, in un monastero, fra persone che hanno la tua stessa cultura<!-- qui, in senso letterale --> e i tuoi stessi principii; il difficile è restare dei santi là fuori. 
-Il Buddha Shakyamuni predicò la Benevolenza Universale perché visse in India, duemilaseicento anni fa, ma se fosse rimasto imbottigliato nel traffico di una città, dopo una giornata di lavoro, forse le sue idee sarebbero state più simili a quelle di Nietzsche.
+Il Buddha Shakyamuni predicò la Benevolenza Universale perché visse in India, duemilaseicento anni fa, ma se fosse rimasto imbottigliato nel traffico di una città, dopo una giornata di lavoro, forse le sue idee sarebbero state più simili a quelle di Nietzsche.  
+Per fortuna, Musashi &mdash; quello vero, il Samurai &mdash;, fu sempre molto chiaro sia su ciò che è giusto fare che sul modo di ottenerlo. 
+Nel *Libro dei Cinque Anelli*, diede ai suoi discepoli nove regole di vita:
 
-
+> - Non pensare in maniera disonesta.
+- La Via è nel costante allenamento.
+- Pratica tutte le arti.
+- Conosci la Via di tutti i mestieri.
+- Distingui vantaggi e svantaggi di ogni cosa.
+- Sviluppa una comprensione intuitiva delle cose.
+- Percepisci anche ciò che non può essere visto con gli occhi.
+- Presta attenzione anche alle cose più insignificanti.
+- Non perdere tempo in attività inutili.
 
 <!-- 
-Non è il caso di Musashi, quello vero, il Samuraiperò, che nei suoi libri spiegò molto chiaramente sia cosa è giusto fare che come ottenerlo.
-Nel *Dokkodo*, in particolare, stilò un elenco di precetti da seguire:
+ @todo: verificare la traduzione di questi punti e dei successivi 
+ @nota: uso il nome (Musashi) in vece del cognome (Myamoto), così come direi "Raffaello" o "Michelangelo".
+-->
+Nel *Dokkodo*, scritto una settimana prima della sua morte, fu ancora più specifico:
 
 >- Non agire in maniera contraria al tuo destino.
  - Non ricercare una vita facile.
@@ -457,16 +469,16 @@ Nel *Dokkodo*, in particolare, stilò un elenco di precetti da seguire:
  - Non abbandonare il tuo onore, anche se ciò significa abbandonare la vita.
  - Non deviare mai dalla Via.
 
+Questa *dieta* <!-- in senso stretto: δίαιτα -->permise a Musashi di arrivare alla venerabile età<a href="/man/note/#eta" class="nota"></a> di sessant'anni, dopo essere sopravvissuto vittorioso ad altrettanti combattimenti con tutti i migliori spadaccini del suo tempo.  
+Il precetto: 
 
-<!-- ------------------------------
+> Presta attenzione anche alle cose più insignificanti.
 
-Spiegare COME fare a capire quale sia il proprio ruolo nell'Universo.
-Non posso metterlo nel capitolo sulla memoria che è già stracolmo.
+ricorda lo *Zen di ogni istante*, di cui abbiamo parlato <a href="/man/memoria#istante">ieri</a>, e anche una frase che Wittgenstein scrisse nei suoi *Diari*:
 
-Utilizzare la definizione delle funzioni senza dichiarazione come esempio per i dogmi.
-?? Questo concetto verrà riutilizzato nel capitolo sulle funzioni ricorsive a proposito dei Post-It.
-
-
+>                     Solo una cosa è necessaria: essere capace di osservare tutto ciò che ti accade. Concentrarsi! Dio mi aiuti!
 
 
+<!--
+è solo così, concentrandoti e prestando attenzione anche alle piccole cose, che puoi cercare di capire come funziona l'Universo
 -->

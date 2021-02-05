@@ -130,7 +130,7 @@ Le risorse che occupiamo sono un insieme di spazioni, invece che delle sequenze 
 A differenza delle variabili del software, però, gli esseri umani sono capaci di valutare l'esito delle loro scelte o delle loro azioni e possono decidere se ripetere quella scelta o quell'azione in altri cicli di vita dell'Universo.
 Siamo, allo stesso tempo, una parte del programma, i *beta-tester* e gli sviluppatori e, se ci accorgiamo di un'istruzione errata, possiamo modificarla nelle successive "esecuzioni" del programma, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente.
 In questo modo, genereremo a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.  
-Un *Koan* molto famoso parla dello “Zen di ogni istante”:
+Un *Koan* molto famoso parla dello <i id="istante">Zen di ogni istante</i>:
 
 > Gli studenti di Zen stanno con i loro maestri almeno dieci anni prima di presumere di poter insegnare a loro volta. Nan-in ricevette la visita di Tenno, che, dopo aver fatto il consueto tirocinio era diventato insegnante.
 Era un giorno piovoso, perciò Tenno portava zoccoli di legno e aveva con sé l’ombrello. 
