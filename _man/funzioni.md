@@ -414,13 +414,13 @@ L'output di questo codice è:
 
 <hr id="dottrina">
 
-In un romanzo sulla vita dello spadaccino giapponese Myamoto Musashi<a href="/man/note/#musashi" class="nota"></a> c'è una frase che è la logica conseguenza del suggerimento di Jacopone da Todi:
+In un romanzo sulla vita dello spadaccino giapponese Myamoto Musashi c'è una frase che è la logica conseguenza del suggerimento di Jacopone da Todi:
 
 >Non bisogna interferire nel funzionamento dell’Universo,  
  ma prima è necessario capire quale sia,
-    il funzionamento dell’Universo
+    il funzionamento dell’Universo<a href="/man/note/#musashi" class="nota"></a>
 
-Il problema dei romanzi è che ti dicono spesso *cosa* fare, non ti spiegano quasi mai *come* farlo, o perché.  
+Il problema dei romanzi è che ti dicono spesso *cosa* fare, ma non ti spiegano quasi mai *come* farlo, o perché.  
 Diffida dei maestri che sanno solo insegnare, perché tutto ciò che ti raccontano l'hanno imparato dai libri.
 Un buon maestro deve eccellere in qualcosa, che sia la scherma, il tiro con l'arco, la carpenteria o la manutenzione delle motociclette.
 Può non essere *il* migliore, ma deve essere *fra i* migliori; solo così, saprai che le sue idee sono valide.
