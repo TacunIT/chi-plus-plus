@@ -7,8 +7,6 @@ permalink:  /man/mitopoietica
 quote:      "Il settimo giorno, Dio fece il backup"
 ---
 
-
-
 Su di me ci sono due teorie: qualcuno pensa che io sia impazzito cercando di fare il *debug* dell'Universo, altri pensano invece che io abbia deciso di fare il *debug* dell'Universo perché sono pazzo.
 
 Anche il Maestro Canaro fu accusato di essere pazzo quando disse di essere stato incaricato da Dio di fare il *porting* dell'Universo dal COBOL al C++, ma non era pazzo.
