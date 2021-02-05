@@ -149,6 +149,10 @@ quote:
             <i>Il libro dei cinque anelli (Go rin no sho)</i>,
             <a href="Javascript:history.back()" name="5anelli"><i class="fas fa-reply"></i></a>
         </li>
+        <li>
+            @todo: verificare dato su età media nel Giappone del XVI  Secolo (40 anni)
+            <a href="Javascript:history.back()" name="eta"><i class="fas fa-reply"></i></a>
+        </li>
     </ol>
 
     
