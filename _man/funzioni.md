@@ -458,17 +458,15 @@ L'output di questo codice è:
 
 In un romanzo sulla vita dello spadaccino giapponese Myamoto Musashi c'è una frase che è la logica conseguenza del suggerimento di Jacopone da Todi:
 
->Non bisogna interferire nel funzionamento dell’Universo,  
- ma prima è necessario capire quale sia,
-    il funzionamento dell’Universo<a href="/man/note/#musashi" class="nota"></a>
+>Non bisogna interferire nel funzionamento dell’Universo, ma prima è necessario capire quale sia, il funzionamento dell’Universo<a href="/man/note/#musashi" class="nota"></a>
 
-Il problema dei romanzi è che ti dicono spesso *cosa* fare, ma non ti spiegano quasi mai *come* farlo, o perché.  
+Il problema dei romanzi è che ti dicono spesso cosa fare, ma non ti spiegano quasi mai come farlo, o perché.  
 Diffida dei maestri che sanno solo insegnare, perché tutto ciò che ti raccontano l'hanno imparato dai libri.
 Un buon maestro deve eccellere in qualcosa, che sia la scherma, il tiro con l'arco, la carpenteria o la manutenzione delle motociclette.
 Può non essere *il* migliore, ma deve essere *fra i* migliori; solo così, saprai che le sue idee sono valide.
 Al contrario, i maestri che non sono mai usciti da una scuola, non hanno mai dovuto mettere le loro idee alla prova dei fatti.
 Ti insegnano ciò che pensano sia giusto, ma ciò che è giusto o vero in una scuola, non sempre è altrettanto vero o giusto nel mondo reale.  
-È facile essere dei santi, in un monastero, fra persone che hanno la tua stessa cultura<!-- qui, in senso letterale --> e i tuoi stessi principii; il difficile è restare dei santi là fuori. 
+È facile essere dei santi, in un monastero, fra persone che hanno la tua stessa cultura<!-- qui, in senso letterale --> e i tuoi stessi principii; il difficile è restare dei santi anche fuori. 
 Il Buddha Shakyamuni predicò la Benevolenza Universale perché visse in India, duemilaseicento anni fa, ma se fosse rimasto imbottigliato nel traffico di una città, dopo una giornata di lavoro, forse le sue idee sarebbero state più simili a quelle di Nietzsche.  
 Per fortuna, Musashi &mdash; quello vero, il Samurai &mdash;, fu sempre molto chiaro sia su ciò che è giusto fare che sul modo di ottenerlo. 
 Nel *Libro dei Cinque Anelli*, diede ai suoi discepoli nove regole di vita:
@@ -510,11 +508,23 @@ Nel *Dokkodo*, scritto una settimana prima della sua morte, fu ancora più speci
  - Non abbandonare il tuo onore, anche se ciò significa abbandonare la vita.
  - Non deviare mai dalla Via.
 
-Questa *dieta* <!-- in senso stretto: δίαιτα -->permise a Musashi di arrivare alla venerabile età<a href="/man/note/#eta" class="nota"></a> di sessant'anni, dopo essere sopravvissuto vittorioso ad altrettanti combattimenti con tutti i migliori spadaccini del suo tempo.  
+Queste regole, che hanno permesso a Musashi di arrivare alla venerabile età di sessant'anni<a href="/man/note/#eta" class="nota"></a>, dopo essere sopravvissuto vittorioso ad altrettanti combattimenti con tutti i migliori spadaccini del suo tempo, possono aiutarti a capire quale sia il funzionamento dell'Universo e cosa fare per non perturbarlo.  
+La pratica delle arti, siano esse intelletuali o marziali, e la conoscenza dei mestieri, unite all'attenzione per tutto ciò che ti circonda, aumenteranno il tuo bagaglio di esperienza e ti permetteranno di distinguere i pro e i contro di ogni situazione.
+Questo ti libererà dal demone dell'invidia, perché imparerai che tutte le  condizioni, anche quelle apparentemente idilliache, hanno dei lati negativi.
+Il passo successivo sarà affrancarsi dal desiderio e dall'attaccamento alle cose.
+Così come la funzione `log` ha bisogno di sapere quali siano i parametri fissi e quali siano quelli variabili, tu dovrai imparare a distinguere i tuoi desiderii dalle tue necessità. 
+La Via, con la "V" maiuscola è simile a una via con la "v" minuscola.
+Lungo ogni via ci sono dei cartelli stradali e dei cartelloni pubblicitarii.
+I cartelli stradali ti indicano la direzione in cui procedere, la velocità a cui andare e ti segnalano eventuali pericoli lungo il cammino; i cartelloni pubblicitarii ti segnalano delle attrazioni nelle vicinanze e ti invitano a deviare dal tuo cammino per andarle a visitare.
+Allo stesso modo, lungo la Via, troverai delle necessità dei desiderii.
+Le necessità ti instraderanno verso la tua destinazione; i desiderii, al contrario, ti dis-trarranno dal tuo percorso e ti at-trarranno verso destinazioni alternative.
+Se tu agirai in base alle necessità, saprai sempre che ti stai muovendo nella direzione giusta, anche quando sarai costretto a rallentare o a percorrere strade che non gradisci.
+Se tu agirai in base ai desiderii, invece, andrai di qua e di là, come *un asino privo di briglie*<!-- @todo: cercare la citazione da Attar --> e quando alla fine tornerai sulla strada giusta, potresti non avere più il tempo per arrivare alla tua destinazione.
 
+<!--
 
 Il precetto: 
-
+ 
 > Presta attenzione anche alle cose più insignificanti.
 
 ricorda lo *Zen di ogni istante*, di cui abbiamo parlato <a href="/man/memoria#istante">ieri</a>, e anche una frase che Wittgenstein scrisse nei suoi *Diari*:
@@ -527,7 +537,6 @@ Queste regole ti permettono
 
 è solo evitando di farti influenzare dai tuoi desiderii, dalle tue preferen che potrai sfuggire all'Annosa Dicotomia.  
 
-<!--
 Non devi pensare (e quindi agire) in maniera disonesta, perché il danno che arrecherai al tuo prossimo
 
 -->
