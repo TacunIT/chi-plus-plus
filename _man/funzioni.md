@@ -430,7 +430,10 @@ Ti insegnano ciò che pensano sia giusto, ma ciò che è giusto o vero in una sc
 Il Buddha Shakyamuni predicò la Benevolenza Universale perché visse in India, duemilaseicento anni fa, ma se fosse rimasto imbottigliato nel traffico di una città, dopo una giornata di lavoro, forse le sue idee sarebbero state più simili a quelle di Nietzsche.  
 Per fortuna, Musashi &mdash; quello vero, il Samurai &mdash;, fu sempre molto chiaro sia su ciò che è giusto fare che sul modo di ottenerlo. 
 Nel *Libro dei Cinque Anelli*, diede ai suoi discepoli nove regole di vita:
-
+<!-- 
+ @todo: verificare la traduzione di questi punti e dei successivi 
+ @nota: uso il nome (Musashi) in vece del cognome (Myamoto), così come direi "Raffaello" o "Michelangelo".
+-->
 > - Non pensare in maniera disonesta.
 - La Via è nel costante allenamento.
 - Pratica tutte le arti.
@@ -441,10 +444,6 @@ Nel *Libro dei Cinque Anelli*, diede ai suoi discepoli nove regole di vita:
 - Presta attenzione anche alle cose più insignificanti.
 - Non perdere tempo in attività inutili.
 
-<!-- 
- @todo: verificare la traduzione di questi punti e dei successivi 
- @nota: uso il nome (Musashi) in vece del cognome (Myamoto), così come direi "Raffaello" o "Michelangelo".
--->
 Nel *Dokkodo*, scritto una settimana prima della sua morte, fu ancora più specifico:
 
 >- Non agire in maniera contraria al tuo destino.
@@ -476,9 +475,11 @@ Il precetto:
 
 ricorda lo *Zen di ogni istante*, di cui abbiamo parlato <a href="/man/memoria#istante">ieri</a>, e anche una frase che Wittgenstein scrisse nei suoi *Diari*:
 
->                     Solo una cosa è necessaria: essere capace di osservare tutto ciò che ti accade. Concentrarsi! Dio mi aiuti!
+> Solo una cosa, è necessaria: essere capace di osservare tutto ciò che ti accade. Concentrarsi! Dio mi aiuti!
 
+È solo concentrandoti e prestando attenzione anche alle piccole cose, che puoi cercare di capire come funziona l'Universo; è solo evitando di farti influenzare dai tuoi desiderii che potrai sfuggire all'Annosa Dicotomia.  
 
 <!--
-è solo così, concentrandoti e prestando attenzione anche alle piccole cose, che puoi cercare di capire come funziona l'Universo
+Non devi pensare (e quindi agire) in maniera disonesta, perché il danno che arrecherai al tuo prossimo
+
 -->
