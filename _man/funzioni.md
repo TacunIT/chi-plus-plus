@@ -317,7 +317,49 @@ Valore iniziale: x=11, y=22
 ```
 
 Passare la *reference* a una variabile come argomento di una funzione equivale a passarle la variabile stessa.
-Questo può essere un bene nel caso di funzioni che richiedano in input oggetti di grosse dimensioni o che abbiano la necessità di modificare direttamente il valore delle variabili passategli come parametri, ma va evitato in qualsiasi altro caso, perché permette al programma di modifi­care il valore di una variabile in maniera subdola, che può essere molto difficile da scoprire in caso di errori.
+Questo può essere un bene nel caso di funzioni che richiedano in input oggetti di grosse dimensioni o che abbiano la necessità di modificare direttamente il valore delle variabili passategli come parametri, ma va evitato in qualsiasi altro caso, perché permette al programma di modifi­care il valore di una variabile in maniera subdola, che può essere molto difficile da scoprire in caso di errori.  
+Un'altra cosa da sapere, a proposito dei parametri delle funzioni, è che possono avere dei valori di default:
+
+```
+{% include_relative src/funzioni-parametri-default.cpp %}
+```
+L'output di questo programma sarà:
+
+```
+% g++ src/cpp/funzioni-parametri-default.cpp -o src/out/esempio
+% src/out/esempio 
+Valore: 123
+Valore: 0
+```
+
+Il valore di default del parametro deve essere indicato nella dichiarazione della funzione.
+Ricordati però che, quando si assegna un valore di default a uno dei parametri di una funzione, bisogna fare altrettanto con tutti i parametri che lo seguono, se ce ne sono:
+
+```
+void funz1(float f, void * ptr = NULL);        // OK
+void funz2(double d, int b = 2, char c = 'c'); // OK
+void funz3(int i = 3, int n );                 // ERRORE!
+```
+
+I valori di default si utilizzano quando a uno o più parametri della funzione è assegnato spesso un determinato valore.
+Per esempio, se la funzione `log` che abbiamo visto nell'esempio precedente fosse richiamata prevalentemente con uno stesso valore per il parametro `livello`, glielo si potrebbe assegnare come default:
+
+```
+inline void log(const char* messaggio, int livello = LOG_AVVISO);
+```
+
+rendendo la scrittura del codice più facile e veloce: 
+
+```
+log("ho aperto il file");
+
+doc << "Testo del documento.\n";
+log("ho scritto sul file", LOG_DEBUG);
+
+doc.close();
+log("ho chiuso il file");
+```
+
 
 ---
 
@@ -469,6 +511,8 @@ Nel *Dokkodo*, scritto una settimana prima della sua morte, fu ancora più speci
  - Non deviare mai dalla Via.
 
 Questa *dieta* <!-- in senso stretto: δίαιτα -->permise a Musashi di arrivare alla venerabile età<a href="/man/note/#eta" class="nota"></a> di sessant'anni, dopo essere sopravvissuto vittorioso ad altrettanti combattimenti con tutti i migliori spadaccini del suo tempo.  
+
+
 Il precetto: 
 
 > Presta attenzione anche alle cose più insignificanti.
@@ -477,7 +521,11 @@ ricorda lo *Zen di ogni istante*, di cui abbiamo parlato <a href="/man/memoria#i
 
 > Solo una cosa, è necessaria: essere capace di osservare tutto ciò che ti accade. Concentrarsi! Dio mi aiuti!
 
-È solo concentrandoti e prestando attenzione anche alle piccole cose, che puoi cercare di capire come funziona l'Universo; è solo evitando di farti influenzare dai tuoi desiderii che potrai sfuggire all'Annosa Dicotomia.  
+È solo concentrandoti e prestando attenzione anche alle piccole cose, che puoi cercare di capire come funziona l'Universo; 
+
+Queste regole ti permettono 
+
+è solo evitando di farti influenzare dai tuoi desiderii, dalle tue preferen che potrai sfuggire all'Annosa Dicotomia.  
 
 <!--
 Non devi pensare (e quindi agire) in maniera disonesta, perché il danno che arrecherai al tuo prossimo

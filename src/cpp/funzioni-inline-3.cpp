@@ -21,7 +21,7 @@
 using namespace std;
 
 /** Funzione di output inline */
-inline void log(int livello, const char* messaggio)
+inline void log(const char* messaggio, int livello)
 {
     /** Definisce la spaziatura del primo campo */
     cerr << setw(7);  
@@ -47,7 +47,7 @@ int main(int argc, char** argv)
 
     /** Se manca il nome del file di output, errore */
     if(argc < 2) {
-        log(LOG_ERRORE, "specificare il path del file");
+        log("specificare il path del file", LOG_ERRORE);
         return ERR_NO_FILE_NAME;
     }
     
@@ -59,20 +59,20 @@ int main(int argc, char** argv)
     
     /** Se c'è stato un errore, lo segnala ed esce */
     if(!doc.is_open()) {
-        log(LOG_ERRORE, "impossibile aprire il file");    
+        log("impossibile aprire il file", LOG_ERRORE);    
         return ERR_NO_FILE_OPEN;    
     }
     
     /** OK, il file è pronto */
-    log(LOG_AVVISO, "ho aperto il file");
+    log("ho aperto il file", LOG_AVVISO);
 
     /** Scrive sul file di output */
     doc << "Testo del documento.\n";
-    log(LOG_DEBUG, "ho scritto sul file");
+    log("ho scritto sul file", LOG_DEBUG);
 
     /** Chiude il file di output */
     doc.close();
-    log(LOG_AVVISO, "ho chiuso il file");
+    log("ho chiuso il file", LOG_AVVISO);
 
     return 0;
 }
