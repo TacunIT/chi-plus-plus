@@ -1,3 +1,6 @@
+## 0.19.10 (February 07, 2021)
+  - Completata prima stesura del capitolo sulle funzioni
+
 ## 0.19.9 (February 07, 2021)
   - Redazione del testo della dottrina
   - Aggiunto paragrafo sui valori di default per i parametri
