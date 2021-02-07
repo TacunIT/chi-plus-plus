@@ -1,6 +1,6 @@
+
 ## 0.19.10 (February 07, 2021)
-  - Merge branch 'capitolo/funzioni' into redazione
-  - Redazione del testo della dottrina
+  - Completata prima stesura del capitolo sulle funzioni.
 
 ## 0.19.9 (February 07, 2021)
   - Redazione del testo della dottrina
