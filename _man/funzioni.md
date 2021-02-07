@@ -477,7 +477,7 @@ Nel *Libro dei Cinque Anelli*, diede ai suoi discepoli nove regole di vita:
 > - Non pensare in maniera disonesta.
 - La Via è nel costante allenamento.
 - Pratica tutte le arti.
-- Conosci la Via di tutti i mestieri.
+- Conosci la Via e i modi di tutti i mestieri.
 - Distingui vantaggi e svantaggi di ogni cosa.
 - Sviluppa una comprensione intuitiva delle cose.
 - Percepisci anche ciò che non può essere visto con gli occhi.
@@ -511,32 +511,28 @@ Nel *Dokkodo*, scritto una settimana prima della sua morte, fu ancora più speci
 Queste regole, che hanno permesso a Musashi di arrivare alla venerabile età di sessant'anni<a href="/man/note/#eta" class="nota"></a>, dopo essere sopravvissuto vittorioso ad altrettanti combattimenti con tutti i migliori spadaccini del suo tempo, possono aiutarti a capire quale sia il funzionamento dell'Universo e cosa fare per non perturbarlo.  
 La pratica delle arti, siano esse intelletuali o marziali, e la conoscenza dei mestieri, unite all'attenzione per tutto ciò che ti circonda, aumenteranno il tuo bagaglio di esperienza e ti permetteranno di distinguere i pro e i contro di ogni situazione.
 Questo ti libererà dal demone dell'invidia, perché imparerai che tutte le  condizioni, anche quelle apparentemente idilliache, hanno dei lati negativi.
-Il passo successivo sarà affrancarsi dal desiderio e dall'attaccamento alle cose.
-Così come la funzione `log` ha bisogno di sapere quali siano i parametri fissi e quali siano quelli variabili, tu dovrai imparare a distinguere i tuoi desiderii dalle tue necessità. 
+Il passo successivo sarà affrancarsi dal desiderio e dall'attaccamento alle cose: così come la funzione `log` ha bisogno di sapere quali siano i parametri fissi e quali siano quelli variabili, tu dovrai imparare a distinguere i tuoi desiderii dalle tue necessità, per sfuggire all'influsso dell'Annosa Dicotomia.  
 La Via, con la "V" maiuscola è simile a una via con la "v" minuscola.
-Lungo ogni via ci sono dei cartelli stradali e dei cartelloni pubblicitarii.
-I cartelli stradali ti indicano la direzione in cui procedere, la velocità a cui andare e ti segnalano eventuali pericoli lungo il cammino; i cartelloni pubblicitarii ti segnalano delle attrazioni nelle vicinanze e ti invitano a deviare dal tuo cammino per andarle a visitare.
-Allo stesso modo, lungo la Via, troverai delle necessità dei desiderii.
-Le necessità ti instraderanno verso la tua destinazione; i desiderii, al contrario, ti dis-trarranno dal tuo percorso e ti at-trarranno verso destinazioni alternative.
+Lungo la via, incontri dei cartelli stradali, che ti indicano la direzione in cui procedere o la velocità da tenere, e dei cartelloni pubblicitarii, che ti segnalano delle attrazioni nelle vicinanze e ti invitano a deviare dal tuo cammino per andarle a visitare.
+Allo stesso modo, lungo la Via, troverai delle necessità, che ti instraderanno verso la tua destinazione e dei desiderii, che ti dis-trarranno dal tuo percorso e ti at-trarranno verso destinazioni alternative.
 Se tu agirai in base alle necessità, saprai sempre che ti stai muovendo nella direzione giusta, anche quando sarai costretto a rallentare o a percorrere strade che non gradisci.
-Se tu agirai in base ai desiderii, invece, andrai di qua e di là, come *un asino privo di briglie*<!-- @todo: cercare la citazione da Attar --> e quando alla fine tornerai sulla strada giusta, potresti non avere più il tempo per arrivare alla tua destinazione.
+Se tu, invece, agirai in base ai desiderii andrai di qua e di là, come *un asino privo di briglie*<!-- @todo: cercare la citazione da Attar --> e quando alla fine tornerai sulla strada giusta, potresti non avere più il tempo per arrivare alla tua destinazione.
 
-<!--
+---
 
-Il precetto: 
- 
-> Presta attenzione anche alle cose più insignificanti.
-
-ricorda lo *Zen di ogni istante*, di cui abbiamo parlato <a href="/man/memoria#istante">ieri</a>, e anche una frase che Wittgenstein scrisse nei suoi *Diari*:
+Ti ho parlato delle regole di Musashi non perché siano le uniche disponibili, ma perché sono estremamente personali.
+Attingono ai principii di altre discipline, come il Buddismo, il Bushido o il Tao, ma sono *something else*, come direbbe Eddie Cochran.  
+Tu dovrai fare altrettanto: imparare tutto ciò che puoi, tanto dai buoni quanto dai cattivi maestri, e poi definire le tue regole di vita, che potranno essere uguali, simili o del tutto differenti da quelle che ti sono state insegnate.   
+La Via, così come la Verità, è una modella, che ciascuno di noi ritrae dal suo punto di vista.
+Ritrarla nello stesso modo in cui l'ha fatto un altro sarebbe sbagliato, perché il tuo punto di vista non è uguale al suo, ma guardarla da più punti di vista può aiutarti a capire meglio la sua forma.
+Musashi dice di prestare attenzione anche alle cose insignificanti, Nan-in e Tenno sviluppano il loro Zen di Ogni Istante, Wittgenstein nei suoi *Diari*, scrive:
 
 > Solo una cosa, è necessaria: essere capace di osservare tutto ciò che ti accade. Concentrarsi! Dio mi aiuti!
 
-È solo concentrandoti e prestando attenzione anche alle piccole cose, che puoi cercare di capire come funziona l'Universo; 
+È chiaro che stanno tutti parlando della stessa cosa, anche se ciascuno a suo modo.
+È per questo motivo, che Musashi prescrive di conoscere la Via degli altri mestieri: perché c'è sempre qualcosa da imparare, da chi fa bene il suo lavoro. 
+Questo, per esempio, è un parallelo fra lo stratega e il carpentiere:
 
-Queste regole ti permettono 
-
-è solo evitando di farti influenzare dai tuoi desiderii, dalle tue preferen che potrai sfuggire all'Annosa Dicotomia.  
-
-Non devi pensare (e quindi agire) in maniera disonesta, perché il danno che arrecherai al tuo prossimo
-
--->
+> Per edificare una casa è necessaria un’accurata scelta dei materiali. Per i pilastri esterni si sceglieranno dei tronchi diritti e senza  nodi, mentre per quelli interni si possono usare dei tronchi diritti  con qualche piccolo difetto. Per le soglie, gli architravi, gli infissi e  le porte scorrevoli si useranno i legni migliori per l’aspetto, anche  se non sono troppo robusti, e così via. Per le parti strutturali non è  importante l’aspetto estetico quanto la robustezza. Il legname meno pregiato e con molti nodi viene invece utilizzato per i ponteggi e, alla fine, viene bruciato.<a href="/man/note/#5anelli" class="nota"></a>
+ 
+Ciò che è vero per il carpentiere, cambiando il punto di vista, è vero anche per lo stratega e potrà esserlo anche per te, se ti troverai ai gestire un progetto o un gruppo di lavoro.
