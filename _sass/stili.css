@@ -485,6 +485,11 @@ BODY.manuale MAIN UL {
     margin: 1rem 0;
     padding-left: 2.5rem;
 }
+
+BODY.manuale BLOCKQUOTE UL {
+    margin: 0;
+}
+
 BODY.manuale BLOCKQUOTE.incluso {
     color: $inclusoColor;
     text-align: justify;
