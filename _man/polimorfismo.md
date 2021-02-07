@@ -7,14 +7,6 @@ permalink:  /man/polimorfismo
 quote:      Non puoi immergere i tuoi byte due volte nello stesso stream
 ---
 
-Il Maestro Canaro era decantato da clienti e colleghi per la purezza della sua vita.  
-I proprietari della tavola calda sotto il suo ufficio avevano una figlia molto bella. Un giorno, come un fulmine a ciel sereno, i genitori scoprirono che la ragazza era incinta e andarono su tutte le furie. La ragazza non voleva confessare chi fosse l'uomo, ma quando non ne poté più di tutte quelle insistenze, finì col dire che era stato il Maestro Canaro. I genitori furibondi andarono dal Maestro.   
-«Ah sì?» disse lui come tutta risposta.  
-Quando il bambino nacque, lo portarono dal Maestro Canaro. Ormai lui aveva perso la reputazione, cosa che lo lasciava indifferente, ma si occupò del bambino con grande sollecitudine. Si procurava dai vicini il latte e tutto quello che occorreva al piccolo.
-Dopo un anno la ragazza madre non resistette più. Disse ai genitori la verità: il vero padre del bambino era un giovanotto che lavorava negozio di videogiochi. La madre e il padre della ragazza andarono subito dal Maestro Canaro a chiedergli perdono, a fargli tutte le loro scuse e a riprendersi il bambino.  
-Il Maestro Canaro non fece obiezioni. Nel cedere il bambino, tutto quel che disse fu: «Ah sì?».
-
----
 
 <!--
 
