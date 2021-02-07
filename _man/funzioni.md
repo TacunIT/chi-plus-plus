@@ -1,6 +1,6 @@
 ---
-status:     redazione
-layout:     manuale
+status:     pubblicato
+layout:     manuale 
 class:      capitolo
 title:      Le funzioni
 permalink:  /man/funzioni
