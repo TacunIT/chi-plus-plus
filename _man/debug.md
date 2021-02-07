@@ -10,65 +10,27 @@ quote:      Cento Mondi di peccato sono dissipati dalla luce di un solo ticket
 
 
 
-Chiediti una cosa: come mai, i manuali di programmazione non parlano mai
-del *debug*?
-
-Si sono scritte migliaia di pagine sui diversi linguaggi di
-programmazione; non c\'è primavera che non veda fiorire un nuovo
-paradigma di programmazione - strutturata, object-oriented, agile,
-fuzzy.. - eppure, nessuno si è mai preoccupato di formalizzare il
-processo di correzione del codice.
-
+Chiediti una cosa: come mai, i manuali di programmazione non parlano mai del *debug*?  
+Si sono scritte migliaia di pagine sui diversi linguaggi di programmazione; non c\'è primavera che non veda fiorire un nuovo paradigma di programmazione &mdash; strutturata, *object-oriented*, *agile*, *fuzzy*.. &mdash; eppure, nessuno si è mai preoccupato di formalizzare il processo di correzione del codice.
 O, se lo ha fatto, nessuno se n\'è accorto.
-
-Fare degli errori è inevitabile, ed è importante sapere come porvi
-rimedio.
-
+Fare degli errori è inevitabile, ed è importante sapere come porvi rimedio.
 Ancora più importante, però, è sapersi accorgere degli errori.
-
 Trascurare il debug è come affermare che non si faranno mai errori.
+Dire che un programmatore non farà mai errori è come pensare che un principe e un\'orfanella povera (che è cosa ben peggiore di una povera orfanella) possano sposarsi e vivere per sempre felici e contenti.  
+Non importa quanto sia efficiente il linguaggio di programmazione; non importa quanto sia astuto e vigile il compilatore; non importa nemmeno quanto sia bravo il programmatore: o prima o poi, la stanchezza o un evento esterno permetteranno a un errore di intrufolarsi nel codice.
+Un puntatore utilizzato impropriamente, un ciclo in più o in meno in un\'istruzione `for` o una virgola dimenticata fra i parametri di una `printf`: qualunque cosa sia, se il compilatore non sarà in grado di riconoscerla, finirà nel programma è lì resterà in attesa di produrre i suoi effetti dannosi.
+Magari per anni il programma funzionerà a meraviglia, poi, un bel giorno, di colpo, smetterà di funzionare e a quel punto bisognerà analizzare il codice per trovare l\'errore.
 
-Dire che un programmatore non farà mai errori è come pensare che un
-principe e un\'orfanella povera (che è cosa ben peggiore di una povera
-orfanella) possano sposarsi e vivere per sempre felici e contenti.
+Il codice ha smesso di funzionare bene quando le stampanti laser hanno soppiantato le vecchie stampanti ad aghi.
+Il codice non si può leggere su un A4: a meno che non sia un programma banale, non c\'entrerà né in altezza né in larghezza.
+Il modulo in continuo di una stampante ad aghi a 136 colonne, al contrario, ti permette di stampare tutto il tuo codice e di rileggerlo con calma; correggerlo, se necessario e migliorarlo se possibile.
+E\' così che si facevano, le revisioni di codice, quando ancora c\'era il tempo di fare le revisioni del codice.
 
-Non importa quanto sia efficiente il linguaggio di programmazione; non
-importa quanto sia astuto e vigile il compilatore; non importa nemmeno
-quanto sia bravo il programmatore: o prima o poi, la stanchezza o un
-evento esterno permetteranno a un errore di intrufolarsi nel codice.
+<!--
+Così come l\'Ikebarba inizia nel negozio, il debug comincia nel momento in cui si scrive il codice.
+Il modo migliore per evitare che il codice contenga degli errori è scrivere del buon codice.
 
-Un puntatore utilizzato impropriamente, un ciclo in più o in meno in
-un\'istruzione FOR o una virgola dimenticata fra i parametri di una
-printf: qualunque cosa sia, se il compilatore non sarà in grado di
-riconoscerla, finirà nel programma è lì resterà in attesa di produrre i
-suoi effetti dannosi.
-
-Magari per anni il programma funzionerà a meraviglia, poi, un bel
-giorno, di colpo, smetterà di funzionare e a quel punto bisognerà
-analizzare il codice per trovare l\'errore.
-
-Il codice ha smesso di funzionare bene quando le stampanti laser hanno
-soppiantato le vecchie stampanti ad aghi.
-
-Il codice non si può leggere su un A4: a meno che non sia un programma
-banale, non c\'entrerà né in altezza né in larghezza.
-
-Il modulo in continuo di una stampante ad aghi a 136 colonne, al
-contrario, ti permette di stampare tutto il tuo codice e di rileggerlo
-con calma; correggerlo, se necessario e migliorarlo se possibile.
-
-E\' così che si facevano, le revisioni di codice, quando ancora c\'era
-il tempo di fare le revisioni del codice.
-
-Così come l\'Ikebarba inizia nel negozio, il debug comincia nel momento
-in cui si scrive il codice.
-
-Il modo migliore per evitare che il codice contenga degli errori è
-scrivere del buon codice.
-
-Gli errori possono essere di due tipi: gli errori che si manifestano
-durante la fase di compilazione e gli errori che si manifestano durante
-l'esecuzione del programma.
+Gli errori possono essere di due tipi: gli errori che si manifestano durante la fase di compilazione e gli errori che si manifestano durante l'esecuzione del programma.
 
 Errori di compilazione
 ----------------------
@@ -125,7 +87,7 @@ Gli errori di esecuzione possono essere di due tipi: quelli che si
 manifestano in maniera deterministica e quelli che si manifestano in
 maniera casuale.
 
-
+-->
 <!--
 
 Se non lo si è fatto finora, spiegare che gli esempii del testo sono studiati per essere progressivamente migliorati, per dimostrare come la scrittura di codice sia un'attività in continua evoluzione.
