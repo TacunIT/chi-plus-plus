@@ -7,14 +7,14 @@ permalink:  /man/chi-plus-plus
 quote:      Non è necessario che crediate in Dio, ma dovete credere nel Codice
 ---
 
-
+<!--
 I programmatori junior stanno con i loro maestri almeno cinque anni prima di diventare programmatori senior.
 Il Maestro Canaro ricevette la visita di Tenno, che dopo aver fatto il consueto tirocinio era diventato programmatore senior ed era stato assegnato a un suo progetto.  Era un giorno piovoso, perciò Tenno aveva con sé l’ombrello.
 Dopo averlo salutato, il Maestro Canaro a Tenno: «Immagino che tu abbia lasciato gli zoccoli nell’anticamera. Vorrei sapere se hai messo l’ombrello alla destra o alla sinistra degli zoccoli».
 Tenno, sconcertato, non seppe rispondere subito. Si rese conto che non sapeva portare con sé il suo Zen in ogni istante. Diventò allievo del Maestro Canaro e studiò ancora sei anni per perfezionare il suo Zen di ogni istante.
 
 ---
-
+-->
 Il C\'hi++ è allo stesso tempo un linguaggio di programmazione, un
 atteggiamento mentale e un modo di vivere.
 
