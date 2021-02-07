@@ -476,7 +476,7 @@ Nel *Libro dei Cinque Anelli*, diede ai suoi discepoli nove regole di vita:
 -->
 > - Non pensare in maniera disonesta.
 - La Via è nel costante allenamento.
-- Pratica tutte le arti.
+- Pratica molte arti.
 - Conosci la Via e i modi di tutti i mestieri.
 - Distingui vantaggi e svantaggi di ogni cosa.
 - Sviluppa una comprensione intuitiva delle cose.
@@ -523,16 +523,19 @@ Se tu, invece, agirai in base ai desiderii andrai di qua e di là, come *un asin
 Ti ho parlato delle regole di Musashi non perché siano le uniche disponibili, ma perché sono estremamente personali.
 Attingono ai principii di altre discipline, come il Buddismo, il Bushido o il Tao, ma sono *something else*, come direbbe Eddie Cochran.  
 Tu dovrai fare altrettanto: imparare tutto ciò che puoi, tanto dai buoni quanto dai cattivi maestri, e poi definire le tue regole di vita, che potranno essere uguali, simili o del tutto differenti da quelle che ti sono state insegnate.   
-La Via, così come la Verità, è una modella, che ciascuno di noi ritrae dal suo punto di vista.
+La Via, così come la Verità, è una modella, che ciascuno di noi ritrae dal suo punto di vista, cercando di intuire il corpo che si cela dietro alle pieghe del drappeggio. 
 Ritrarla nello stesso modo in cui l'ha fatto un altro sarebbe sbagliato, perché il tuo punto di vista non è uguale al suo, ma guardarla da più punti di vista può aiutarti a capire meglio la sua forma.
 Musashi dice di prestare attenzione anche alle cose insignificanti, Nan-in e Tenno sviluppano il loro Zen di Ogni Istante, Wittgenstein nei suoi *Diari*, scrive:
 
 > Solo una cosa, è necessaria: essere capace di osservare tutto ciò che ti accade. Concentrarsi! Dio mi aiuti!
 
-È chiaro che stanno tutti parlando della stessa cosa, anche se ciascuno a suo modo.
+È chiaro che stanno tutti dipingendo la stessa immagine, anche se ciascuno lo fa con il suo stile.
 È per questo motivo, che Musashi prescrive di conoscere la Via degli altri mestieri: perché c'è sempre qualcosa da imparare, da chi fa bene il suo lavoro. 
-Questo, per esempio, è un parallelo fra lo stratega e il carpentiere:
+Questo, per esempio, è il parallelo che lui fa fra lo stratega e il carpentiere:
 
 > Per edificare una casa è necessaria un’accurata scelta dei materiali. Per i pilastri esterni si sceglieranno dei tronchi diritti e senza  nodi, mentre per quelli interni si possono usare dei tronchi diritti  con qualche piccolo difetto. Per le soglie, gli architravi, gli infissi e  le porte scorrevoli si useranno i legni migliori per l’aspetto, anche  se non sono troppo robusti, e così via. Per le parti strutturali non è  importante l’aspetto estetico quanto la robustezza. Il legname meno pregiato e con molti nodi viene invece utilizzato per i ponteggi e, alla fine, viene bruciato.<a href="/man/note/#5anelli" class="nota"></a>
  
 Ciò che è vero per il carpentiere, cambiando il punto di vista, è vero anche per lo stratega e potrà esserlo anche per te, se ti troverai ai gestire un progetto o un gruppo di lavoro.
+Anche come programmatore, comunque, dovrai tenerti costantemente aggiornato sulle tecniche e sui linguaggi di programmazione e dovrai conoscere il modo in cui lavora chi si occupa delle basi-dati o dei sistemi.
+Dovrai essere capace di identificare i malfunzionamenti anche se non hanno effetti sull'interfaccia grafica e potrai riuscirci solo se presterai attenzione anche al più piccolo dettaglio.  
+Cambiano i nomi, perché sono passati quattro secoli, ma i problemi restano gli stessi, così come le soluzioni.
