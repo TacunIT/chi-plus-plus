@@ -1,3 +1,9 @@
+## 0.19.9 (February 07, 2021)
+  - Redazione del testo della dottrina
+  - Aggiunto paragrafo sui valori di default per i parametri
+  - Corretto stile degli elenchi puntati nelle citazioni
+  - Aggiunta pagina di ringraziamenti alle bozze
+
 ## 0.19.8 (February 05, 2021)
   - Redazione brano su Musashi
 
