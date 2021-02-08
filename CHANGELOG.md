@@ -1,3 +1,8 @@
+## 0.19.11 (February 08, 2021)
+  - Correzioni minori al testo dei capitoli
+  - Spostate tutte le citazioni nella directory _data, come file yml
+  - Fatta un po' di pulizia nelle bozze dei capitoli
+
 ## 0.19.10 (February 07, 2021)
   - Completata prima stesura del capitolo sulle funzioni
 
