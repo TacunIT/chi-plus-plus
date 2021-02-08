@@ -14,7 +14,7 @@ Ho conservato questi documenti: sono l'ultima pagina del suo diario e le relazio
 Mettili all'inizio del tuo libro, così tutto ciò che diremo dopo non sarà che una ripetizione.
 
 <blockquote class="incluso">
-{% include l-universo-in-cpp.md %}
+{{ site.data.canaro.universo-cpp }}
 </blockquote>
 
 Finito il corso di riqualificazione, il maestro Canaro non fu più lo stesso. 

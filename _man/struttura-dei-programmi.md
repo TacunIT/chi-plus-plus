@@ -214,7 +214,7 @@ L'Energia disintegra l'enorme buco nero in cui si era rannicchiata e si espande 
 L'Era della Gravità finisce e comincia una nuova Era dell'Entropia; qualcosa di molto simile a quello che trovi descritto nella *Bhagavad-Gita*:
 
 <div class="citazione">
-{% include  bhagavad-gita-1.html %}<a href="/man/note/#cicli" class="nota"></a>
+{{ site.data.bhagavad-gita.cicli }}<a href="/man/note/#cicli" class="nota"></a>
 </div>
 
 Anche la Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista (o viceversa): il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono ciò che ne causa la disgregazione, generando un Universo imperfetto e doloroso, aiutati dal *διάβολος*, ovvero da colui che *separa* o *scaglia attraverso*, altrimenti noto come: *Luci-fero*.  

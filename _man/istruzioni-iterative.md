@@ -317,8 +317,7 @@ typedef struct {
 Il secondo dogma del C'hi++ è l'esistenza di una memoria persistente dell'Universo che mantiene traccia dell'esito delle scelte fatte in ciascun ciclo; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo:
 
 <blockquote>
-{% include  bhagavad-gita-2.html %}
-<a href="/man/note/#vasana" class="nota"></a>
+{{ site.data.bhagavad-gita.vasana }}<a href="/man/note/#vasana" class="nota"></a>
 </blockquote>
 
 I *Post-It*, come li chiamava il Maestro Canaro, non sono indispensabili per il C'hi++, sono solo un'auspicio, perché la loro esistenza dà un senso alla nostra vita.
@@ -390,7 +389,7 @@ La *major version zero* (_0.y.z_) è destinata allo sviluppo iniziale, quando il
 ---
 
 Prima ti ho detto che gli scienziati non sono infallibili. 
-Non è una maldicenza: è la verità; gli scienziati sono i primi ad ammetterlo e questa è la loro forza, perché possono correggere i loro errori senza perdere di credibilità.  
+Non è una maldicenza: è la verità; gli scienziati sono i primi ad ammetterlo e questa è la loro forza, perché possono correggere i loro errori senza perdere di credibilità.
 Il Maestro Canaro voleva che questo fosse possibile anche per il C'hi+.
 Come scrisse alla fine della sua <a href="/proposta" target="proposta">*Proposta per una metafisica open-source*</a>:
 

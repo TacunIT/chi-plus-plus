@@ -1,5 +1,5 @@
 ---
-status:     pubblicato
+status:     redazione
 layout:     manuale 
 class:      capitolo
 title:      Le funzioni
@@ -474,39 +474,12 @@ Nel *Libro dei Cinque Anelli*, diede ai suoi discepoli nove regole di vita:
  @todo: verificare la traduzione di questi punti e dei successivi 
  @nota: uso il nome (Musashi) in vece del cognome (Myamoto), così come direi "Raffaello" o "Michelangelo".
 -->
-> - Non pensare in maniera disonesta.
-- La Via è nel costante allenamento.
-- Pratica molte arti.
-- Conosci la Via e i modi di tutti i mestieri.
-- Distingui vantaggi e svantaggi di ogni cosa.
-- Sviluppa una comprensione intuitiva delle cose.
-- Percepisci anche ciò che non può essere visto con gli occhi.
-- Presta attenzione anche alle cose più insignificanti.
-- Non perdere tempo in attività inutili.
+
+> {{ site.data.musashi.cinque-anelli.regole }}
 
 Nel *Dokkodo*, scritto una settimana prima della sua morte, fu ancora più specifico:
 
->- Non agire in maniera contraria al tuo destino.
- - Non ricercare una vita facile.
- - Non avere pregiudizi od ostilità per qualcosa.
- - Pensa a te stesso con leggerezza e in maniera profonda agli altri.
- - Sii distaccato dal desiderio.
- - Non avere rimpianti per ciò che hai fatto. 
- - Non essere geloso degli altri.
- - Non avere attaccamento per alcuna cosa.
- - Non portare rancore.
- - Non pensare alla vita sentimentale.
- - Non avere né preferenze né avversioni.
- - Sii indifferente al luogo in cui vivi.
- - Non ricercare il cibo per il suo gusto.
- - Fà che le future generazioni non siano legate ad armi antiche.
- - Evita le superstizioni e i taboo.
- - Utilizza solo gli strumenti necessarii e non conservare ciò che è inutile.
- - Sii preparato a morire.
- - Quando sei vecchio, ciò che possiedi non ha molta importanza.
- - Rispetta Buddha e gli Dei, ma non contare sul loro aiuto.
- - Non abbandonare il tuo onore, anche se ciò significa abbandonare la vita.
- - Non deviare mai dalla Via.
+> {{ site.data.musashi.dokkodo }}
 
 Queste regole, che hanno permesso a Musashi di arrivare alla venerabile età di sessant'anni<a href="/man/note/#eta" class="nota"></a>, dopo essere sopravvissuto vittorioso ad altrettanti combattimenti con tutti i migliori spadaccini del suo tempo, possono aiutarti a capire quale sia il funzionamento dell'Universo e cosa fare per non perturbarlo.  
 La pratica delle arti, siano esse intelletuali o marziali, e la conoscenza dei mestieri, unite all'attenzione per tutto ciò che ti circonda, aumenteranno il tuo bagaglio di esperienza e ti permetteranno di distinguere i pro e i contro di ogni situazione.
