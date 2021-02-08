@@ -1,5 +1,5 @@
 ---
-status:     pubblicato
+status:     redazione
 layout:     manuale 
 class:      capitolo
 title:      Le funzioni
@@ -360,7 +360,6 @@ doc.close();
 log("ho chiuso il file");
 ```
 
-
 ---
 
 In una delle nostre [prime chiacchierate](/man/programmatore), ti ho detto che il Buon Programmatore, mentre scrive il codice, si chiede sempre se possa esistere sistema più efficiente di fare ciò che sta facendo.
@@ -474,39 +473,12 @@ Nel *Libro dei Cinque Anelli*, diede ai suoi discepoli nove regole di vita:
  @todo: verificare la traduzione di questi punti e dei successivi 
  @nota: uso il nome (Musashi) in vece del cognome (Myamoto), così come direi "Raffaello" o "Michelangelo".
 -->
-> - Non pensare in maniera disonesta.
-- La Via è nel costante allenamento.
-- Pratica molte arti.
-- Conosci la Via e i modi di tutti i mestieri.
-- Distingui vantaggi e svantaggi di ogni cosa.
-- Sviluppa una comprensione intuitiva delle cose.
-- Percepisci anche ciò che non può essere visto con gli occhi.
-- Presta attenzione anche alle cose più insignificanti.
-- Non perdere tempo in attività inutili.
+
+> {{ site.data.musashi.cinque-anelli.regole }}
 
 Nel *Dokkodo*, scritto una settimana prima della sua morte, fu ancora più specifico:
 
->- Non agire in maniera contraria al tuo destino.
- - Non ricercare una vita facile.
- - Non avere pregiudizi od ostilità per qualcosa.
- - Pensa a te stesso con leggerezza e in maniera profonda agli altri.
- - Sii distaccato dal desiderio.
- - Non avere rimpianti per ciò che hai fatto. 
- - Non essere geloso degli altri.
- - Non avere attaccamento per alcuna cosa.
- - Non portare rancore.
- - Non pensare alla vita sentimentale.
- - Non avere né preferenze né avversioni.
- - Sii indifferente al luogo in cui vivi.
- - Non ricercare il cibo per il suo gusto.
- - Fà che le future generazioni non siano legate ad armi antiche.
- - Evita le superstizioni e i taboo.
- - Utilizza solo gli strumenti necessarii e non conservare ciò che è inutile.
- - Sii preparato a morire.
- - Quando sei vecchio, ciò che possiedi non ha molta importanza.
- - Rispetta Buddha e gli Dei, ma non contare sul loro aiuto.
- - Non abbandonare il tuo onore, anche se ciò significa abbandonare la vita.
- - Non deviare mai dalla Via.
+> {{ site.data.musashi.dokkodo }}
 
 Queste regole, che hanno permesso a Musashi di arrivare alla venerabile età di sessant'anni<a href="/man/note/#eta" class="nota"></a>, dopo essere sopravvissuto vittorioso ad altrettanti combattimenti con tutti i migliori spadaccini del suo tempo, possono aiutarti a capire quale sia il funzionamento dell'Universo e cosa fare per non perturbarlo.  
 La pratica delle arti, siano esse intelletuali o marziali, e la conoscenza dei mestieri, unite all'attenzione per tutto ciò che ti circonda, aumenteranno il tuo bagaglio di esperienza e ti permetteranno di distinguere i pro e i contro di ogni situazione.
@@ -523,6 +495,9 @@ Se tu, invece, agirai in base ai desiderii andrai di qua e di là, come *un asin
 Ti ho parlato delle regole di Musashi non perché siano le uniche disponibili, ma perché sono estremamente personali.
 Attingono ai principii di altre discipline, come il Buddismo, il Bushido o il Tao, ma sono *something else*, come direbbe Eddie Cochran.  
 Tu dovrai fare altrettanto: imparare tutto ciò che puoi, tanto dai buoni quanto dai cattivi maestri, e poi definire le tue regole di vita, che potranno essere uguali, simili o del tutto differenti da quelle che ti sono state insegnate.   
+<!-- 
+    @todo: aggiugere testo su Maestro Canaro e 10C 
+-->
 La Via, così come la Verità, è una modella, che ciascuno di noi ritrae dal suo punto di vista, cercando di intuire il corpo che si cela dietro alle pieghe del drappeggio. 
 Ritrarla nello stesso modo in cui l'ha fatto un altro sarebbe sbagliato, perché il tuo punto di vista non è uguale al suo, ma guardarla da più punti di vista può aiutarti a capire meglio la sua forma.
 Musashi dice di prestare attenzione anche alle cose insignificanti, Nan-in e Tenno sviluppano il loro Zen di Ogni Istante, Wittgenstein nei suoi *Diari*, scrive:
@@ -539,3 +514,10 @@ Ciò che è vero per il carpentiere, cambiando il punto di vista, è vero anche 
 Anche come programmatore, comunque, dovrai tenerti costantemente aggiornato sulle tecniche e sui linguaggi di programmazione e dovrai conoscere il modo in cui lavora chi si occupa delle basi-dati o dei sistemi.
 Dovrai essere capace di identificare i malfunzionamenti anche se non hanno effetti sull'interfaccia grafica e potrai riuscirci solo se presterai attenzione anche al più piccolo dettaglio.  
 Cambiano i nomi, perché sono passati quattro secoli, ma i problemi restano gli stessi, così come le soluzioni.
+
+<!-- 
+Fare un esempio di funzione valida per tutti i linguaggi.
+
+Va aggiunto un paragrafo sulle funzioni ricorsive, o qui o nel testo tecnico, sfruttandolo come esempio di dogma autoreferenziale, tipo: "la Bibbia è stata scritta da Dio; è vero perché è scritto nella Bibbia"
+
+-->

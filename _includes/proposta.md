@@ -782,13 +782,13 @@ Tu hai diritto all'azione, non ai suoi frutti; non sia mai perciò il frutto del
 sulla natura dell'Universo:
 
 <div class="citazione">
-{% include  bhagavad-gita-1.html %}
+    {{ site.data.bhagavad-gita.cicli }}<
 </div>
 
 su quelli che io ho definito i *Post-It*:
 
 <div class="citazione">
-    {% include  bhagavad-gita-2.html %}
+    {{ site.data.bhagavad-gita.vasana }}
 </div>
 
 Ho trovato delle analogie ai precetti del C'hi++ anche nel *Mantiq al-Tayr*<a href="#mantiq" class="nota" name="fn-21">21</a>:
