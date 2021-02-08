@@ -360,7 +360,6 @@ doc.close();
 log("ho chiuso il file");
 ```
 
-
 ---
 
 In una delle nostre [prime chiacchierate](/man/programmatore), ti ho detto che il Buon Programmatore, mentre scrive il codice, si chiede sempre se possa esistere sistema più efficiente di fare ciò che sta facendo.
@@ -496,6 +495,9 @@ Se tu, invece, agirai in base ai desiderii andrai di qua e di là, come *un asin
 Ti ho parlato delle regole di Musashi non perché siano le uniche disponibili, ma perché sono estremamente personali.
 Attingono ai principii di altre discipline, come il Buddismo, il Bushido o il Tao, ma sono *something else*, come direbbe Eddie Cochran.  
 Tu dovrai fare altrettanto: imparare tutto ciò che puoi, tanto dai buoni quanto dai cattivi maestri, e poi definire le tue regole di vita, che potranno essere uguali, simili o del tutto differenti da quelle che ti sono state insegnate.   
+<!-- 
+    @todo: aggiugere testo su Maestro Canaro e 10C 
+-->
 La Via, così come la Verità, è una modella, che ciascuno di noi ritrae dal suo punto di vista, cercando di intuire il corpo che si cela dietro alle pieghe del drappeggio. 
 Ritrarla nello stesso modo in cui l'ha fatto un altro sarebbe sbagliato, perché il tuo punto di vista non è uguale al suo, ma guardarla da più punti di vista può aiutarti a capire meglio la sua forma.
 Musashi dice di prestare attenzione anche alle cose insignificanti, Nan-in e Tenno sviluppano il loro Zen di Ogni Istante, Wittgenstein nei suoi *Diari*, scrive:
@@ -512,3 +514,10 @@ Ciò che è vero per il carpentiere, cambiando il punto di vista, è vero anche 
 Anche come programmatore, comunque, dovrai tenerti costantemente aggiornato sulle tecniche e sui linguaggi di programmazione e dovrai conoscere il modo in cui lavora chi si occupa delle basi-dati o dei sistemi.
 Dovrai essere capace di identificare i malfunzionamenti anche se non hanno effetti sull'interfaccia grafica e potrai riuscirci solo se presterai attenzione anche al più piccolo dettaglio.  
 Cambiano i nomi, perché sono passati quattro secoli, ma i problemi restano gli stessi, così come le soluzioni.
+
+<!-- 
+Fare un esempio di funzione valida per tutti i linguaggi.
+
+Va aggiunto un paragrafo sulle funzioni ricorsive, o qui o nel testo tecnico, sfruttandolo come esempio di dogma autoreferenziale, tipo: "la Bibbia è stata scritta da Dio; è vero perché è scritto nella Bibbia"
+
+-->
