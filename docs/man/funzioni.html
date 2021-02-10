@@ -1054,7 +1054,7 @@ Se tu, invece, agirai in base ai desiderii andrai di qua e di là, come <em>un a
 Attingono ai principii di altre discipline, come il Buddismo, il Bushido o il Tao, ma sono <em>something else</em>, come direbbe Eddie Cochran.<br />
 Tu dovrai fare altrettanto: imparare tutto ciò che puoi, tanto dai buoni quanto dai cattivi maestri, e poi definire le tue regole di vita, che potranno essere uguali, simili o del tutto differenti da quelle che ti sono state insegnate. <br />
 <!-- 
-    @todo: aggiugere testo su Maestro Canaro e 10C 
+    @todo: aggiugere testo su Maestro Canaro e 10C     
 -->
 La Via, così come la Verità, è una modella, che ciascuno di noi ritrae dal suo punto di vista, cercando di intuire il corpo che si cela dietro alle pieghe del drappeggio. 
 Ritrarla nello stesso modo in cui l’ha fatto un altro sarebbe sbagliato, perché il tuo punto di vista non è uguale al suo, ma guardarla da più punti di vista può aiutarti a capire meglio la sua forma.
@@ -1074,11 +1074,69 @@ Questo, per esempio, è il parallelo che lui fa fra lo stratega e il carpentiere
 
 <p>Ciò che è vero per il carpentiere, cambiando il punto di vista, è vero anche per lo stratega e potrà esserlo anche per te, se ti troverai ai gestire un progetto o un gruppo di lavoro.
 Anche come programmatore, comunque, dovrai tenerti costantemente aggiornato sulle tecniche e sui linguaggi di programmazione e dovrai conoscere il modo in cui lavora chi si occupa delle basi-dati o dei sistemi.
-Dovrai essere capace di identificare i malfunzionamenti anche se non hanno effetti sull’interfaccia grafica e potrai riuscirci solo se presterai attenzione anche al più piccolo dettaglio.<br />
-Cambiano i nomi, perché sono passati quattro secoli, ma i problemi restano gli stessi, così come le soluzioni.</p>
+Dovrai essere capace di identificare i malfunzionamenti anche se non hanno effetti sull’interfaccia grafica e potrai riuscirci solo se presterai attenzione anche al più piccolo dettaglio.
+Cambiano i nomi, perché sono passati quattro secoli, ma i problemi restano gli stessi, così come le soluzioni.<br />
+Arte, scienza, filosofia e religione sono tutti tentativi di dare una risposta alle stesse domande sulla nostra esistenza. 
+Dato che l’oggetto di studio è lo stesso, è più che normale che, alle volte, le risposte si somiglino, così come l’algoritmo per il calcolo del fattoriale di un numero o del massimo comun divisore di due cifre sarà più o meno lo stesso, indipendentemente dal linguaggio di programmazione.<br />
+A proposito di fattoriali e massimo comun divisore, mi stavo quasi dimenticando delle funzioni ricorsive.</p>
+
+<hr />
+
+<p>Una funzione ricorsiva è una funzione che richiama sé stessa:</p>
+
+<pre><code>/** 
+ * @file /src/funzioni-ricorsiva.cpp
+ * Esempio di funzione ricorsiva.
+ */
+
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+
+using namespace std;
+
+/** Dichiarazione della funzione ricorsiva */
+void ricorsiva(int n);
+
+/** Funzione main prima della definizione */
+int main(int argc, char** argv)
+{   
+    int n = 9;
+    ricorsiva(n);
+    cout &lt;&lt; endl;
+    return 0;
+}
+
+/** Definizione della funzione ricorsiva */
+void ricorsiva(int n)
+{
+    /** Richiama sé stessa pr n volte */
+    if(n &gt; 0) {
+        ricorsiva(n-1);
+        cout &lt;&lt; setw(2) &lt;&lt; n;
+    }
+}
+
+</code></pre>
+<p>Se compili ed esegui questo codice, ottieni:</p>
+
+<pre><code>&gt; g++ src/cpp/funzioni-ricorsiva.cpp -o src/out/esempio
+&gt; src/out/esempio                                      
+ 1 2 3 4 5 6 7 8 9
+</code></pre>
+<!--
+
+Ogni ricorsione è potenzialmente infinita, come l'immagine riflessa da due specchi posti l'uno di fronte all'altro.
+Le funzioni ricorsive 
+
+ vanno utilizzate con parsimonia, perché causano un aggravio di carico sul sistema.
+
+<a href="/man/note/#ricorsione" class="nota"></a>
+n questo caso, come del resto per tutte le ricorsioni in coda è generalmente preferibile utilizzare una iterazione in luogo di una ricorsione.
+Consideriamo che, in linea di principio, una funzione può essere chiamata in ogni punto di un programma, è quindi necessario che venga memorizzato il suo indirizzo di ritorno, tale indirizzo viene registrato in uno stack di tipo LIFO (Last In First Out), ed insieme ad esso vengono registrate anche tutte le variabili locali. Lo stack viene liberato ad ogni uscita dalla funzione, dei dati relativi alla funzione stessa, quindi nel caso della ricorsione la liberazione dello stack avviene solamente al termine della ricorsione stessa e vengono memorizzati contemporaneamente tanti set di dati (indirizzo di ritorno e variabili locali) per quante volte viene chiamata ricorsivamente la funzione.
+Dato che un qualsiasi stack di memoria ha una dimensione limitata, anche se di diverse migliaia di byte, l’esempio precedente potrebbe causare uno stack-overflow se dovessimo leggere una grande quantità di dati, pertanto, in questo caso, è preferibile una versione iterattiva della funzione.
+Nella ricorsione, per evitare di superare le dimensioni dello stack, è necessario tenere presente quella che viene definita la profondità di ricorsione, oggetto del capo successivo.
 
 <!-- 
-Fare un esempio di funzione valida per tutti i linguaggi.
 
 Va aggiunto un paragrafo sulle funzioni ricorsive, o qui o nel testo tecnico, sfruttandolo come esempio di dogma autoreferenziale, tipo: "la Bibbia è stata scritta da Dio; è vero perché è scritto nella Bibbia"
 

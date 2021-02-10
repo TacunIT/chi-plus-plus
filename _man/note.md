@@ -154,8 +154,6 @@ quote:
             <a href="Javascript:history.back()" name="5anelli"><i class="fas fa-reply"></i></a>
         </li>
     </ol>
-
-    
     
     <h3>Istruzioni condizionali</h3>
     <ol>
