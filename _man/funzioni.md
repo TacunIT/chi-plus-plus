@@ -533,8 +533,8 @@ Se compili ed esegui questo codice, ottieni:
  1 2 3 4 5 6 7 8 9
 ```
 
-Attenzione, però: una funzione che richiama sé stessa, se non è scritta bene, può generare una ricorsione infinita, come due specchi posti l'uno di fronte all'altro; ma mentre lo spazio (prospettico) all'interno degli specchi è inesauribile, la memoria dei computer, per quanto estesa, ha i suoi limiti e un numero eccessivo di ricorsioni potrebbe generare uno *stack overflow*.<a href="/man/note/#stack" class="nota"></a>
-Per questo motivo, le funzioni ricorsive vanno sfruttate con parsimonia, attuando sempre dei meccanismi per prevenire un eccessiva profondità di ricorsione. 
+Attenzione, però: una funzione che richiama sé stessa, se non è scritta bene, può generare una ricorsione infinita, come due specchi posti l'uno di fronte all'altro; ma mentre lo spazio prospettico all'interno degli specchi è inesauribile, la memoria dei computer, per quanto estesa, ha i suoi limiti e un numero eccessivo di ricorsioni potrebbe generare uno *stack overflow*.<a href="/man/note/#stack" class="nota"></a> 
+Per questo motivo, bisogna utilizzare la ricorsione solo nei casi in cui è indispensabile, sostituendola, quando possibile, con delle [istruzioni iterative](https://chiplusplus.org/man/istruzioni-iterative).
 
 
 <!-- 
