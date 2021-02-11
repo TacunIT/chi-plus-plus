@@ -1,3 +1,6 @@
+## 0.19.12 (February 11, 2021)
+  - Iniziato il paragrafo sulle funzioni ricorsive
+
 ## 0.19.11 (February 08, 2021)
   - Correzioni minori al testo dei capitoli
   - Spostate tutte le citazioni nella directory _data, come file yml
