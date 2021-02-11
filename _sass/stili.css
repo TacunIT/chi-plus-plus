@@ -463,6 +463,7 @@ BODY.manuale.indice IMG.badge
     position: absolute;
     top: 0.5rem;
     margin-left: 1rem;
+    font-size: 0.9rem;
 }
 BODY.manuale.indice SECTION.indice {
  text-align: center;

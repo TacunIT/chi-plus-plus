@@ -16,7 +16,7 @@ permalink:  /man/indice
             <a href="{{ capitolo.url }}">{{ capitolo.title }}</a>
             {% if capitolo.status=='redazione' %}
             <img src="https://img.shields.io/badge/stato-in_redazione-orange"  
-                 alt="Stato documento: redazione" 
+                 alt="redazione" 
                  class="badge">
             {% endif %}
         </h3>
