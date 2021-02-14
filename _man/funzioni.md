@@ -537,7 +537,34 @@ Attenzione, però: una funzione che richiama sé stessa, se non è scritta bene,
 Lo spazio prospettico all'interno degli specchi è inesauribile, ma la memoria dei computer, per quanto estesa, ha i suoi limiti e un numero eccessivo di ricorsioni potrebbe generare uno *stack overflow*.<a href="/man/note#stack" class="nota"></a> 
 Per questo motivo, bisogna ricorrere alla ricorsione solo nei casi in cui è indispensabile, preferendole, quando possibile, le [istruzioni iterative](https://chiplusplus.org/man/istruzioni-iterative).  
 Un altro tipo di ricorsione di cui diffidare è quella con cui si cerca, alle volte, di dare credibilità a una convinzione priva di fondamenti reali utilizzando un'altra convinzione simile.   
-Se tu chiedi a un cristiano o a un ebreo perché non si debba uccidere un uomo,  ti risponderanno che è vietato dai 10 Comandamenti che Dio ha dato a Mosé; loro sono sicuri che sia così, perché è scritto nella Bibbia, che è la Parola di Dio.
-Se tu invece chiedi a un paladino del laicismo perché non si debba uccidere un altro essere umano, lui ti risponderà che l'omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev'essere vero, perché che applica i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di liberà e uguaglianza della *Dichiarazione dei Diritti dell’Uomo e del Cittadino* francese, che a sua volta si rifaceva alla *Dichiarazione di Indipendenza* americana.
-Se infine lo chiedi a me, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; lo so per certo perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.  
-Nessuna di queste affermazioni è valida di per sé, sono tutte basate su una qualche forma di fede, sia essa in Dio, nei legislatori o nel Maestro Canaro. 
+Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia così   perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.  
+Se in vece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosé; lo sa per certo perché è scritto nella Bibbia, che è la Parola di Dio.
+Se infine lo chiedi a un paladino del laicismo, ti risponderà che l'omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev'essere vero, perché che applica i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di liberà e uguaglianza della *Dichiarazione dei Diritti dell’Uomo e del Cittadino* francese, che a sua volta si rifaceva alla *Dichiarazione di Indipendenza* americana.
+Nessuna di queste affermazioni è valida di per sé: sono tutte fondate su una qualche forma di fede &mdash; religiosa o laica che sia &mdash; in chi ha promulgato la Legge o il principio.  
+Sfortunatamente, però, queste persone sono state anche le prime a non tenerne conto: Mosé, con i Comandamenti ancora freschi di stampa, chiese ai figli di Levi: 
+
+> Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a href="/man/note#levi" class="nota"></a> 
+
+Gli Americani, che credevano *self-evident*:
+
+> that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
+
+commerciavano in schiavi e hanno sterminato i Nativi Americani per rubar loro le terre.
+I Francesi, il cui motto era:
+
+> Liberté, Égalité, Fraternité
+
+hanno applicato questi principii a colpi di ghigliottina.
+L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* e che ha come motto la frase: 
+
+> Peace, dignity and equality on a healthy planet.
+
+ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="/man/note#armi" class="nota"></a>  e che violano costantemente quelle stesse regole da loro promosse.   
+Questo non vuol dire che i principii di pace, uguaglianza e libertà siano sbagliati, ma che non possiamo attribuire loro nessuna veridicità oggettiva.
+Possiamo solo accettarli per fede.
+
+<!-- 
+
+Prendi ad esempio il Maestro Canaro: lui era convinto che il Libro dell'Esodo fosse il resoconto di un esperimento alieno su una popolazione isolata nel deserto per due generazioni; malgrado ciò, basava le sue scelte e le suee azioni su una sua versione laica dei Dieci Comandamenti
+
+-->

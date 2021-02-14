@@ -48,8 +48,10 @@ Parlare del male che diventa bene, fare esempio dell'idiota che ha sparat un raz
 O della stronza di Ipanema, che ha reso ricco Jobim
 
 
-Funzioni ricorsive
-------------------
+
+La Dichiarazione di Indipendenza americana, che è la base  comincia con queste parole:
+
+    We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
 
 Nella Lettera agli artisti, Giovanni Paolo II utilizza i termini
 \'buono\' e \'bello\', ma li definisce in maniera ricorsiva, l\'uno in
