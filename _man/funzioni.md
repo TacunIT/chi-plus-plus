@@ -515,11 +515,11 @@ Anche come programmatore, comunque, dovrai tenerti costantemente aggiornato sull
 Dovrai essere capace di identificare i malfunzionamenti anche se non hanno effetti sull'interfaccia grafica e potrai riuscirci solo se presterai attenzione anche al più piccolo dettaglio.
 Cambiano i nomi, perché sono passati quattro secoli, ma i problemi restano gli stessi, così come le soluzioni.  
 Del resto, arte, scienza, filosofia e religione sono tutti tentativi di dare una risposta alle stesse domande sulla nostra esistenza. 
-Dato che l'oggetto di studio è lo stesso, è più che normale che, alle volte, le risposte si somiglino, allo stesso modo in cui l'algoritmo per il calcolo del fattoriale di un numero o del massimo comun divisore di due cifre sarà più o meno lo stesso, indipendentemente dal linguaggio di programmazione.  
+Dato che l'oggetto di studio è lo stesso, è più che normale che, alle volte, le risposte si somiglino, allo stesso modo in cui l'algoritmo per il calcolo del fattoriale di un numero sarà più o meno lo stesso, indipendentemente dal linguaggio di programmazione.  
+A proposito di fattoriali, mi stavo quasi dimenticando delle funzioni ricorsive.  
 
 ---
 
-A proposito di fattoriali e massimo comun divisore, mi stavo quasi dimenticando delle funzioni ricorsive.  
 Una funzione ricorsiva è una funzione che richiama sé stessa:
 
 ```
@@ -533,12 +533,11 @@ Se compili ed esegui questo codice, ottieni:
  1 2 3 4 5 6 7 8 9
 ```
 
-Attenzione, però: una funzione che richiama sé stessa, se non è scritta bene, può generare una ricorsione infinita, come due specchi posti l'uno di fronte all'altro; ma mentre lo spazio prospettico all'interno degli specchi è inesauribile, la memoria dei computer, per quanto estesa, ha i suoi limiti e un numero eccessivo di ricorsioni potrebbe generare uno *stack overflow*.<a href="/man/note#stack" class="nota"></a> 
-Per questo motivo, bisogna utilizzare la ricorsione solo nei casi in cui è indispensabile, sostituendola, quando possibile, con delle [istruzioni iterative](https://chiplusplus.org/man/istruzioni-iterative).
-
-
-<!-- 
-
-Va aggiunto un paragrafo sulle funzioni ricorsive, o qui o nel testo tecnico, sfruttandolo come esempio di dogma autoreferenziale, tipo: "la Bibbia è stata scritta da Dio; è vero perché è scritto nella Bibbia"
-
--->
+Attenzione, però: una funzione che richiama sé stessa, se non è scritta bene, può generare una ricorsione in[de]finita, come due specchi posti l'uno di fronte all'altro.
+Lo spazio prospettico all'interno degli specchi è inesauribile, ma la memoria dei computer, per quanto estesa, ha i suoi limiti e un numero eccessivo di ricorsioni potrebbe generare uno *stack overflow*.<a href="/man/note#stack" class="nota"></a> 
+Per questo motivo, bisogna ricorrere alla ricorsione solo nei casi in cui è indispensabile, preferendole, quando possibile, le [istruzioni iterative](https://chiplusplus.org/man/istruzioni-iterative).  
+Un altro tipo di ricorsione di cui diffidare è quella con cui si cerca, alle volte, di dare credibilità a una convinzione priva di fondamenti reali utilizzando un'altra convinzione simile.   
+Se tu chiedi a un cristiano o a un ebreo perché non si debba uccidere un uomo,  ti risponderanno che è vietato dai 10 Comandamenti che Dio ha dato a Mosé; loro sono sicuri che sia così, perché è scritto nella Bibbia, che è la Parola di Dio.
+Se tu invece chiedi a un paladino del laicismo perché non si debba uccidere un altro essere umano, lui ti risponderà che l'omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev'essere vero, perché che applica i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di liberà e uguaglianza della *Dichiarazione dei Diritti dell’Uomo e del Cittadino* francese, che a sua volta si rifaceva alla *Dichiarazione di Indipendenza* americana.
+Se infine lo chiedi a me, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; lo so per certo perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.  
+Nessuna di queste affermazioni è valida di per sé, sono tutte basate su una qualche forma di fede, sia essa in Dio, nei legislatori o nel Maestro Canaro. 

@@ -155,9 +155,8 @@ quote:
         </li>
         <li>
             <i>
-            Una funzione può essere richiamata in qualsiasi punto di un programma ed è quindi necessario che venga memorizzato il suo indirizzo di ritorno. Tale indirizzo viene registrato in uno stack di tipo LIFO (Last In First Out) e insieme a esso vengono registrate anche tutte le variabili locali. A ogni uscita dalla funzione, lo stack viene liberato dei dati relativi alla funzione stessa, ma, nel caso della ricorsione, lo stack viene liberato solo al termine della ricorsione stessa e vengono memorizzati contemporaneamente tanti set di dati (indirizzo di ritorno e variabili locali) per quante volte viene chiamata ricorsivamente la funzione.
-            Dato che un qualsiasi stack di memoria ha una dimensione limitata, anche se di diverse migliaia di byte, l’esempio precedente potrebbe causare uno stack-overflow se dovessimo leggere una grande quantità di dati, pertanto, in questi casi, è preferibile una versione iterativa della funzione.
-            </i<br />  
+            Una funzione può essere richiamata in qualsiasi punto di un programma e, per ripristinare lo stato della funzione chiamante, è necessario che il suo indirizzo di ritorno sia memorizzato in uno stack di tipo LIFO (Last In First Out), insieme a tutte le variabili locali. Ogni volta che una funzione termina il suo ciclo di istruzioni, i suoi dati vengono rimossi dallo stack, ma, nel caso della ricorsione, lo stack viene liberato solo al termine della ricorsione stessa e vengono memorizzati contemporaneamente tanti set di dati (indirizzo di ritorno della funzione e variabili locali) quante sono le chiamate ricorsive.
+            </i><br />  
             C. <span>Munisso</span>, C. <span>Simonelli</span>
             <i>Dal C a Windows</i>,
             Logica, Roma, 1995
