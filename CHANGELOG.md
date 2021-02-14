@@ -1,3 +1,7 @@
+## 0.19.13 (February 14, 2021)
+  - Corretto link a note
+  - Redazione testo su ricorsione
+
 ## 0.19.12 (February 11, 2021)
   - Iniziato il paragrafo sulle funzioni ricorsive
 
