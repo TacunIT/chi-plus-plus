@@ -928,7 +928,7 @@ Mi sembra un motivo più che sufficiente.
         </li>
         <li><a target="note"
             href="https://www.istat.it/it/archivio/213901">
-            <i>www.istat.it/it/archivio/213901</i></a>
+            www.istat.it/it/archivio/213901</a>
             <a href="#fn-2" name="istat">&#8617;</a>
         </li>
         <li>Il Capitalismo, al contrario, gode di ottima salute perché trova la
