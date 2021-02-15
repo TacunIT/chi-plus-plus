@@ -1,3 +1,7 @@
+## 0.9.14 (February 15, 2021)
+  - Completato testo su ricorsione
+  - Corretto errore nelle note della Proposta
+
 ## 0.19.13 (February 14, 2021)
   - Corretto link a note
   - Redazione testo su ricorsione
