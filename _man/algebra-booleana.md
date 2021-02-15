@@ -1,5 +1,5 @@
 ---
-status:     bozza
+status:     redazione
 layout:     manuale
 class:      capitolo
 title:      Algebra booleana
