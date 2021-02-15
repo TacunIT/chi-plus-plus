@@ -535,7 +535,7 @@ Se compili ed esegui questo codice, ottieni:
 
 Attenzione, però: una funzione che richiama sé stessa, se non è scritta bene, può generare una ricorsione in[de]finita, come due specchi posti l'uno di fronte all'altro.
 Lo spazio prospettico all'interno degli specchi è inesauribile, ma la memoria dei computer, per quanto estesa, ha i suoi limiti e un numero eccessivo di ricorsioni potrebbe generare uno *stack overflow*.<a href="/man/note#stack" class="nota"></a> 
-Per questo motivo, bisogna ricorrere alla ricorsione solo nei casi in cui è indispensabile, preferendole, quando possibile, le [istruzioni iterative](https://chiplusplus.org/man/istruzioni-iterative).  
+Per questo motivo, bisogna ricorrere alla ricorsione solo nei casi in cui è indispensabile, preferendole, quando possibile, le [istruzioni iterative](https://chiplusplus.org/man/istruzioni-iterative) e applicando sempre dei meccanismi di controllo della profondità di ricorsione che prevengano un sovraccarico dello stack.  
 Un altro tipo di ricorsione di cui diffidare è quella con cui si cerca, alle volte, di dare credibilità a una convinzione priva di fondamenti reali utilizzando un'altra convinzione simile.   
 Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia così   perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.  
 Se in vece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosé; lo sa per certo perché è scritto nella Bibbia, che è la Parola di Dio.
@@ -560,11 +560,4 @@ L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani
 > Peace, dignity and equality on a healthy planet.
 
 ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="/man/note#armi" class="nota"></a>  e che violano costantemente quelle stesse regole da loro promosse.   
-Questo non vuol dire che i principii di pace, uguaglianza e libertà siano sbagliati, ma che non possiamo attribuire loro nessuna veridicità oggettiva.
-Possiamo solo accettarli per fede.
-
-<!-- 
-
-Prendi ad esempio il Maestro Canaro: lui era convinto che il Libro dell'Esodo fosse il resoconto di un esperimento alieno su una popolazione isolata nel deserto per due generazioni; malgrado ciò, basava le sue scelte e le suee azioni su una sua versione laica dei Dieci Comandamenti
-
--->
+Questo non vuol dire che i principii di pace, uguaglianza e libertà siano sbagliati, ma che non possiamo attribuire loro nessuna veridicità oggettiva. Dobbiamo accettarli per fede, così come i dogmi religiosi.
