@@ -124,9 +124,9 @@ Ma, così come avvenne a Linus Torvaldsen con Linux, dopo qualche anno che lavor
 
 Preso atto della mia incapacità di produrre un documento accademico, ho redatto il Manifesto come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivo il problema che mi propongo di affrontare ed esamino le possibili soluzioni.
 Ne è derivato un testo di quaranta pagine: dettagliato, ma decisamente troppo lungo per poter fungere da manifesto del progetto.
-L'ho trasformato perciò in [un documento a sé stante](http://chiplusplus.org/assets/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf) e ho cercato di condensare le principali informazioni che conteneva nel file [README](README.md) che compare all'apertura del progetto su GitHub e in questo MANIFEST.
+L'ho trasformato perciò in [un documento a sé stante](https://chiplusplus.org/proposta/) e ho cercato di condensare le principali informazioni che conteneva nel file [README](README.md) che compare all'apertura del progetto su GitHub e in questo MANIFEST.
 
-Se volete sapere qualcosa di più sul *C'hi++*, vi suggerisco di leggere [**Proposta per una metafisica open-source**](http://chiplusplus.org/assets/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf).
+Se volete sapere qualcosa di più sul *C'hi++*, vi suggerisco di leggere [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta/).
 
 Il testo del manuale è all'indirizzo: [https://chiplusplus.org](https://chiplusplus.org). 
 
@@ -139,11 +139,11 @@ Se volete collaborare o anche esporre delle critiche, potere farlo con gli strum
     <h2>Note</h2>
     <ol>
     <li>
-        “Fin dalla Rivoluzione francese, in ogni parte del mondo si è arrivati gradualmente a considerare valori universali sia l’eguaglianza sia la libertà individuale. Tali valori, però, si contraddicono a vicenda. L’eguaglianza può essere assicurata solo decurtando le libertà di coloro che stanno meglio.” - Harari, Yuval Noah. *Sapiens. Da animali a dèi: Breve storia dell'umanità*. Bompiani, 2019. 
+        “Fin dalla Rivoluzione francese, in ogni parte del mondo si è arrivati gradualmente a considerare valori universali sia l’eguaglianza sia la libertà individuale. Tali valori, però, si contraddicono a vicenda. L’eguaglianza può essere assicurata solo decurtando le libertà di coloro che stanno meglio.” - Harari, Yuval Noah. <i>Sapiens. Da animali a dèi: Breve storia dell'umanità</i>. Bompiani, 2019. 
         <a href="#fn-1" name="harari">&#8617;</a>
     </li>
     <li>
-        Rapporto Capgemini: *Why addressing ethical questions in AI will benefit organizations*.
+        Rapporto Capgemini: <i>Why addressing ethical questions in AI will benefit organizations</i>.
         <a target="note"
             href="https://www.capgemini.com/research/why-addressing-ethical-questions-in-ai-will-benefit-organizations/">
             <i>www.capgemini.com/research/why-addressing-ethical-questions-in-ai-will-benefit-organizations </i></a>

@@ -42,16 +42,16 @@ Il testi di riferimento del *C'hi++* sono:
 
 - [**Sostiene Aristotele**](https://chiplusplus.org/opt/sostiene-aristotele): un documento che risale al Giugno del 2007 e che possiamo considerare una versione preliminare del *C'hi++*. In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
 
-- [**Proposta per una metafisica open-source**](https://chiplusplus.org/assets/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf): nato inzialmente come Manifesto del progetto, questo testo si è espanso per più di quaranta pagine e ho deciso per ciò di considerarlo un documento a sé stante.
+- [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta/): nato inzialmente come Manifesto del progetto, questo testo si è espanso per più di quaranta pagine e ho deciso per ciò di considerarlo un documento a sé stante.
 <br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
 
 - [**Il Manifesto del C'hi++**](MANIFEST.md): versione “zippata” del Manifesto originale, è il file MANIFEST.md che vedete nell'elenco qui sopra.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
 
 Esiste anche una mappa mentale nella quale sto riportando tutti i miei appunti e le mie idee per *C'hi++*.
 
-Chi volesse approfondire i concetti riportati in questa presentazione può leggere il [Manifesto](MANIFEST.md) e, successivamente, [**Proposta per una metafisica open-source**](https://chiplusplus.org/assets/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf).
+Chi volesse approfondire i concetti riportati in questa presentazione può leggere il [Manifesto](MANIFEST.md) e, successivamente, [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta/).
 
-La risposta al quesito del notaio e del bambino è nel capitolo 9 della [**Proposta**](https://chiplusplus.org/assets/pdf/chi-plus-plus-proposta-per-una-metafisica-open-source.pdf).
+La risposta al quesito del notaio e del bambino è nel capitolo 9 della [**Proposta**](https://chiplusplus.org/proposta/).
 
 ## Strumenti
 Tutti i formati utilizzati per i file sono standard pubblici che possono essere creati e letti con strumenti gratuiti:
