@@ -1,5 +1,6 @@
 <section class="copertina pagina">
-	<h1>Manifesto</h1>
+    <h1>C'hi++</h1>
+    <h2>Proposta per una metafisica open-source</h2>
 	<img style="margin-top:4rem" src="https://chiplusplus.org/assets/img/quiz.png">
 </section>
 
