@@ -1,3 +1,7 @@
+## 0.10.0 (February 16, 2021)
+  - Sostituiti i link al PDF della Proposta con link alla pagina Web
+  - Iniziato capitolo su algebra booleana
+
 ## 0.9.14 (February 15, 2021)
   - Completato testo su ricorsione
   - Corretto errore nelle note della Proposta
