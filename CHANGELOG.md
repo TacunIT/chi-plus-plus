@@ -1,3 +1,331 @@
+## 0.10.1 (February 17, 2021)
+  - Rinominato il capitolo Algebra Booleana in Operatori e spostato dopo la struttura dei programmi
+  - Cambiato il titolo della Proposta, da Manifesto a Proposta
+  - Bump version to 0.10.0.
+  - Sostituiti i link al PDF della Proposta con link alla pagina Web
+  - Iniziato capitolo su algebra booleana
+  - Bump version to 0.9.14.
+  - Completato testo su ricorsione
+  - Corretto errore nelle note della Proposta
+  - Bump version to 0.19.13.
+  - Redazione del testo del capitolo
+  - Redazione del testo del capitolo
+  - Corretto link a note
+  - Redazione testo su ricorsione
+  - Bump version to 0.19.12.
+  - Redazione testo su ricorsione
+  - Iniziato il capitolo sulle funzioni ricorsive
+  - Bump version to 0.19.11.
+  - Merge branch 'capitolo/funzioni' into redazione
+  - Correzioni minori al testo dei capitoli
+  - Spostate tutte le citazioni nella directory _data, come file yml
+  - Fatta un po' di pulizia nelle bozze dei capitoli
+  - Bump version to 0.19.10.
+  - Completata prima stesura del capitolo sulle funzioni
+  - Redazione del testo della dottrina
+  - Bump version to 0.19.9.
+  - Merge branch 'capitolo/funzioni' into redazione
+  - Redazione del testo della dottrina
+  - Redazione del testo
+  - Aggiunto paragrafo sui valori di default per i parametri
+  - Corretto stile degli elenchi puntati nelle citazioni
+  - Aggiunta pagina di ringraziamenti alle bozze
+  - Bump version to 0.19.8.
+  - Redazione brano su Musashi
+  - Redazione del testo
+  - Bump version to 0.19.7.
+  - Redazione testo dottrina
+  - Iniziata redazione dottrina per capitolo funzioni
+  - Iniziata redazione dottrina per capitolo funzioni
+  - Bump version to 0.19.6.
+  - Merge branch 'capitolo/funzioni' into redazione
+  - Completata prima stesura del testo tecnico del capitolo.
+  - Revisione del testo e degli esempii
+  - Redazione del capitolo
+  - Bump version to 0.19.5.
+  - Corretto testo capitolo funzioni
+  - Redazione paragrafo sui parametri variabili
+  - Completato paragrafo sui tipi di parametro
+  - Bump version to 0.19.4.
+  - Aggiunto paragrafo sulle reference al capitolo sui tipi di dato
+  - Redazione del paragrafo sui parametri delle funzioni
+  - Bump version to 0.19.3.
+  - Completato il paragrafo sulle funzioni inline
+  - Iniziato il paragrafo sulle funzioni inline
+  - Revisione del testo tecnico
+  - Bump version to 0.19.2.
+  - Redazione del capitolo
+  - Aggiunta nota su dichiarazione delle funzioni template
+  - Aggiunto codice di esempio per compilazione separata dei file oggetto
+  - Aggiunta nota a capitolo sui linguaggi di programmazione
+  - Bump version to 0.19.1.
+  - Revisione testo capitolo Funzioni
+  - Revisione testo capitolo Funzioni
+  - Revisione testo capitolo Funzioni
+  - Bump version to 0.19.0.
+  - Merge branch 'capitolo/funzioni' into redazione
+  - Codice di esempio per il capitolo sulle funzioni
+  - Riviste le citazioni all'inzio dei capitoli
+  - Corretto errore nel testo dell'index
+  - Bump version to 0.18.5.
+  - Revisione del testo del capitolo sulla memoria
+  - Bump version to 0.18.4.
+  - Merge branch 'capitolo/memoria' into redazione
+  - Completata prima stesura del capitolo sulla memoria
+  - Bump version to 0.18.3.
+  - Redazione del capitolo sulla memoria e revisioni minori ai Prologo
+  - Revisione dell'Epilogo: eliminato il brano sullo scopo del C'hi++, che è già presente altrove
+  - Redazione testo
+  - Bump version to 0.18.2.
+  - Redazione del testo
+  - Bump version to 0.18.1.
+  - Merge branch 'icone-note'
+  - Modificata la grafica delle note del Manuale
+  - Corretto il link al sito C'hi++ nel file MANIFEST
+  - Aggiunto link a sito C'hi++ al file MANIFEST
+  - Aggiunto alle bozze il file dei Dieci Comandamenti.
+  - Rimossa directory src/img e aggiornato elenco directory nel file README
+  - Bump version to 0.18.0.
+  - Merge branch 'optional'
+  - Aggiunto testo di Binario
+  - Creata la directory /opt dove mettere tutto quello che non fa strettamente parte del testo, come Sostiene Aristotele, I Dieci Comandamenti o Binario..
+  - Redazione del testo
+  - Aggiunta citazione da Maitri Upanishad sul Non-Tempo
+  - Bump version to 0.17.5.
+  - Merge branch 'capitolo/memoria'
+  - Redazione del testo
+  - Pre-modifiche
+  - Prima versione del racconto Il computer della zia
+  - Revisione testo
+  - Revisione testo
+  - Merge branch 'capitolo/memoria'
+  - Bump version to 0.17.4.
+  - Aggiunto testo Lettera al Direttore nella directory _data
+  - Completata prima versione del paragrafo sulla depressione
+  - paragrafo sulla negoziazione
+  - Redazione testo
+  - Corretto errore nel foglio di stile
+  - Merge branch 'capitolo/memoria'
+  - Iniziato la sezione della dottrina
+  - Rivista la struttura delle note bibliografiche
+  - Merge branch 'master' into capitolo/memoria
+  - Bump version to 0.17.3.
+  - Merge branch 'fix/menu-mobile'
+  - Corretta struttura delle note del Manuale
+  - Rivista impostazione menu Manuale
+  - Merge branch 'master' into capitolo/memoria
+  - Bump version to 0.17.2.
+  - Rimossi stili per le FAQ.
+  - Rimossa la sezione delle FAQ
+  - Redazione capitolo sulla memoria
+  - Bump version to 0.17.1.
+  - Merge branch 'capitolo/tipi-di-dato'
+  - Aggiunto paragrafo su casting a tipi di dato
+  - Revisione capitolo sui tipi di dato
+  - Redazione capitolo
+  - Redazione capitolo
+  - Bump version to 0.17.0.
+  - Merge branch 'capitolo/memoria'
+  - Iniziata redazione del capitolo sulla memoria
+  - Riviste la citazioni all'inizio dei capitoli del manuale
+  - Eliminata la sotto-directory di include canaro
+  - Bump version to 0.16.7.
+  - Merge branch 'revisione'
+  - Completata revisione del testo del manuale
+  - Rivisto capitolo sulle istruzioni condizionali
+  - Merge branch 'capitolo/memoria' into revisione
+  - Rivisto capitolo sul preprocessore
+  - Rivisto capitolo sulla struttura dei programmi C++
+  - Modificati stili delle note e del codice
+  - Eliminate gli include per la dottrina
+  - Revisione dei capitoli iniziali
+  - Redazione del testo
+  - Spostato il capitolo sulla memoria dopo quello sul preprocessore
+  - Bump version to 0.16.6.
+  - Merge branch 'capitolo/istruzioni-iterative'
+  - Completata prima stesura del capitolo
+  - Merge branch 'master' into capitolo/istruzioni-iterative
+  - Bump version to 0.16.5.
+  - Redazione del testo
+  - Redazione del testo
+  - Redazione del testo
+  - Modificata grafica delle note
+  - Revisione del testo
+  - Merge branch 'feature/note'
+  - Aggiunta pagina con note. Reso non visibile contatore in attesa di aggiungere quelle precedenti
+  - Redazione del testo
+  - Corretto errore nella visualizzazione dei caratteri indiani. Il font Simonetta non comprende gli alfabeti asiatici, ma non mi va di cambiarlo sia perché mi piace come font sia per il gioco di parole con il font monospace "Inconsolata".
+  - Aggiunto un nuovo file di include con il testo della Bhagavad-Gita
+  - Modificato testo su aborto e aggiunto todo
+  - Merge branch 'fix/riordino-capitoli'
+  - Modificato ordine dei capitoli, spostando funzioni e preprocessore prima delle istruzioni condizionali
+  - Merge branch 'capitolo/istruzioni-iterative'
+  - Bump version to 0.16.4.
+  - Terminata prima stesdura della parte tecnica del capitolo
+  - Riorganizzata la struttura dei capitoli
+  - Bump version to 0.16.3.
+  - Rimossi i capitoli obsoleti
+  - Merge branch 'master' into capitolo/istruzioni-iterative
+  - Ri-mosso il capitolo sugli operatori, che spalmerò negli altri capitoli
+  - Aggiunto codice per istruzione while
+  - Nuova versione con valore di ritorno string
+  - Aggiunta funzione main con istruzione while
+  - Separato il codice di esempio in tre file
+  - Revisione testo
+  - Bump version to 0.16.2.
+  - Rivista la grafica delle pagine
+  - Modificato menu principale
+  - Unificata intestazione pagine
+  - Modifiche alla grafica
+  - Bump version to 0.16.1.
+  - Ripristinato capitolo sugli operatori
+  - Merge branch 'rel/0.16.0'
+  - Bump version to 0.16.0.
+  - Completata prima stesura paragrafo cicli for
+  - Redazione capitolo
+  - Iniziato il capitolo sulle istruzioni iterative
+  - Merge branch 'rel/0.15.7'
+  - Bump version to 0.15.7.
+  - Revisione del testo del capitolo prima della pubblicazione
+  - Bump version to 0.15.6.
+  - Merge branch 'rel/0.15.6'
+  - Completata prima stesura del brano finale
+  - Completata prima stesura della dottrina
+  - Merge branch 'rel/0.15.5'
+  - Bump version to 0.15.5.
+  - Redazione testo dottrina
+  - Merge branch 'rel/0.15.4'
+  - Bump version to 0.15.4.
+  - Revisione del testo
+  - Revisione del testo  prima della pubblicazione
+  - Rimosso testo temporaneo prima della pubblicazione
+  - Redazione testo dottrina
+  - Redazione dottrina
+  - Correzioni al testo
+  - Redazione capitolo
+  - Correzione del testo
+  - Bump version to 0.15.3.
+  - Redazione dottrina per istruzioni condizionali
+  - Iniziata redazione della dottrina per istruzioni condizionali
+  - Merge branch 'rel/0.15.2'
+  - Bump version to 0.15.2.
+  - Completata prima stesura istruzione switch
+  - Aggiunto codice per istruzione switch
+  - Corretto autore citazione index
+  - Corretto stile citazione index
+  - Bump version to 0.15.1.
+  - Completato testo istruzione if
+  - Isolata stored-procedure in un file esterno
+  - Merge branch 'feature/aggiunta-note'
+  - Aggiunte note esportate da Kindle
+  - Aggiunta citazione da Asimov all'inizio della pagina index
+  - Bump version to 0.15.0.
+  - Aggiunto HR#dottrina alle pagine del manuale
+  - Rimosso il capitolo sui puntatori
+  - Merge branch 'capitolo/preprocessore'
+  - Bump version to 0.14.4.
+  - Pubblicato il capitolo sul preprocessore
+  - Revisione del testo
+  - Redazione testo
+  - Bump version to 0.14.3.
+  - Redazione testo dottrina
+  - Redazione testo dottrina
+  - Correzioni al testo
+  - Bump version to 0.14.2.
+  - Iniziata sezione dottrina
+  - Completato testo sul precompilatore
+  - Modificato codice del file di include
+  - Aggiunte costranti per le stringhe dell'esempio
+  - Redazione capitolo
+  - Redazione capitolo
+  - Merge branch 'capitolo/preprocessore'
+  - Bump version to 0.14.1.
+  - Redazione capitolo
+  - Aggiunta codice per direttive condizionali
+  - Aggiunta codice di esempio per include
+  - Redazione testo capitolo
+  - Spostato il paragrafo sul preprocessore dopo al paragrafo sulle funzioni
+  - Corretto status capitolo
+  - Bump version to 0.14.0.
+  - Redazione testo capitolo
+  - Iniziato capitolo su preprocessore
+  - Aggiunte note da Attar
+  - Aggiunte note da Dawkins
+  - Merge branch 'capitolo/struttura-programmi'
+  - Bump version to 0.13.5.
+  - Merge branch 'master' of https://github.com/chi-plus-plus/chi-plus-plus into capitolo/struttura-programmi
+  - Correzioni minori al testo
+  - Aggiunto anchor 'dottrina'
+  - Rimosso header 'redazione' dal capitolo sulla struttura dei programmi
+  - Rimosso header 'redazione' dal capiotlo sulla struttura dei programmi
+  - Merge branch 'capitolo/struttura-programmi'
+  - Bump version to 0.13.4.
+  - Completata prima bozza del capitolo
+  - Redazone capitolo
+  - Redazione capitolo
+  - Isolato testo Bhagavad Gita e aggiunto a capitolo su struttura programmi
+  - Corretto errore font nella Proposta
+  - Correzioni minori al testo
+  - Modificato a capo
+  - Bump version to 0.13.3.
+  - Inizio della sezione dedicata al Big Bang
+  - Redazione testo
+  - Iniziato paragrafo su Big Bang
+  - Corretto errore nel codice
+  - Bump version to 0.13.2.
+  - Paragrafo sulla coesione interna
+  - Completata prima stesura paragrafo su accoppiamento
+  - Corretto errore nella URL del sito
+  - Correzioni minori al testo
+  - Modifiche varie al testo
+  - Modificato il nome dei file sorgenti per capitolo struttura programmi
+  - Corretto doppio apice nelle intestazioni della pagina
+  - Aggiuto A per Pound
+  - Bump version to 0.13.1.
+  - Bump version to 0.13.0.
+  - Merge branch 'epilogo'
+  - Completata la prima stesura dell'Epilogo
+  - Redazione Epilogo
+  - Redazone epilogo
+  - Merge branch 'release/0.12.0'
+  - Bump version to 0.12.0.
+  - Merge branch 'feature/log' into release/0.12.0
+  - Testi di servizio per le note
+  - Aggiunto font Inconsolata bold
+  - Rivista struttura delle note/log
+  - Merge branch 'feature/blog'
+  - Aggiunto elenco note senz aggiungere il link al menu.
+  - Rinominato layout default in pagina
+  - Semplificati i dati dei post
+  - Spostati i documenti nella cartella _data e le bozze in _drafts
+  - Rivista grafica elenco FAQ
+  - Merge branch 'feture/static-fa-fonts'
+  - Spostati in locale i file dei font e delle icone
+  - Aggiunti font di Google
+  - Aggiunta directory /assets/fonts
+  - Merge branch 'capitolo/operatori'
+  - Redazione del testo
+  - Modificato testo
+  - Redazione testo
+  - Funzione main e valori di ritorno dei programmi
+  - Revisione testo
+  - Inizio capitolo su espressioni e operatori
+  - Merge branch 'master' of https://github.com/chi-plus-plus/chi-plus-plus
+  - Bump version to 0.11.0.
+  - Bump version to 0.11.0.
+  - Completata prima stesura del capitolo sui  tipi di dato
+  - Redazione tipi di dato
+  - La retta
+  - Revisione Tipi di dato
+  - Merge branch 'revisione/blog' into redazione/tipi-di-dato
+  - Revisione testi
+  - Rivisti i metadati dei post
+  - Tipi di dato
+  - Riportato esempio puntatori in Tipi di dato
+  - Creata pagina del Manuale per i puntatori
+  - Merge branch 'master' of https://github.com/chi-plus-plus/chi-plus-plus
+  - Aggiunte FAQ dinamiche
+
 ## 0.10.0 (February 16, 2021)
   - Sostituiti i link al PDF della Proposta con link alla pagina Web
   - Iniziato capitolo su algebra booleana
