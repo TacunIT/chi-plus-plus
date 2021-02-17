@@ -38,12 +38,12 @@ collections:
             - commenti.md
             - tipi-di-dato.md
             - struttura-dei-programmi.md
+            - operatori.md
             - preprocessore.md
             - memoria.md
             - funzioni.md
             - istruzioni-condizionali.md
             - istruzioni-iterative.md
-            - algebra-booleana.md
             - classi.md
             - oggetti.md
             - polimorfismo.md

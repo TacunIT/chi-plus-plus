@@ -195,7 +195,7 @@ TABLE, TD, TR, TH {
 
 TABLE TH {
     font-weight: bold;
-    text-align: center;
+    text-align: center !important;
 }
 
 
