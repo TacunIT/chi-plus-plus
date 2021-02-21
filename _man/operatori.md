@@ -51,11 +51,35 @@ o in base al tipo di operazione che compiono:
 È impossibile definire in maniera assoluta i concetti di *vero* e di *falso*, se non facendo riferimento a sistemi di ordine superiore.
 
 Possiamo definire "falso" il contrario di "vero", ma non potendo definire il concetto di "vero", non possiamo sapere cosa sia il suo contrario.
-La ragione per cui non possiamo definire il concetto di "vero" è che farlo implica una ricorsione: quale che sia la definizione prescelta prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo (ancora) cosa sia, effettivamente, "vero".
+La ragione per cui non possiamo definire il concetto di "vero" è che farlo implica una ricorsione: quale che sia la definizione prescelta prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo (ancora) cosa sia, effettivamente, "vero".  
+Bertrand Russell disse che la condizione di “vero” o di “falso” è uno stato dell'organismo, determinato da condizioni esterne all'organismo. Questo è vero anche per i computer: “vero” e “falso” sono stati possibili per un'istruzione e dipendono per lo più da cause esterne all'istruzione stessa. La cosa interessante, in questo caso, è che “vero” e “falso” sono anche delle convenzioni che esulano del tutto dal contesto specifico del sistema. Per Access, “falso” è -1; per le prime versioni di MySQL è 'f'; per Postgres o Oracle, è 0. Il computer, però, non ha IN SE' il concetto di “vero” o di “falso”, ma solo l'associazione del valore booleano *false* a una determinata sequenza di bit. Il concetto di “vero” e di “falso”, quindi, è un valore simbolico che NOI inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è propio del nostro mondo.   
 
-Tutto ciò non vuol dire che non esistano il vero e il falso, ma solo che i nostri strumenti dialettici sono inadeguati a descriverli.
+Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia così   perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.
+Se in vece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosé; lo sa per certo perché è scritto nella Bibbia, che è la Parola di Dio.
+Se infine lo chiedi a un paladino del laicismo, ti risponderà che l'omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev'essere vero, perché le nostre Leggi applicano i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di liberà e uguaglianza della *Dichiarazione dei Diritti dell’Uomo e del Cittadino* francese, che a sua volta si rifaceva alla *Dichiarazione di Indipendenza* americana.  
+Nessuna di queste affermazioni è valida di per sé: sono tutte fondate su una qualche forma di fede &mdash; religiosa o laica che sia &mdash; in chi ha promulgato la Legge o il principio.
+Sfortunatamente, però, queste persone sono state anche le prime a non tenerne conto: Mosé, con i Comandamenti ancora freschi di stampa, chiese ai figli di Levi: 
 
-Bertrand Russell disse che la condizione di “vero” o di “falso” è uno stato dell'organismo, determinato da condizioni esterne all'organismo. Questo è vero anche per i computer: “vero” e “falso” sono stati possibili per un'istruzione e dipendono per lo più da cause esterne all'istruzione stessa. La cosa interessante, in questo caso, è che “vero” e “falso” sono anche delle convenzioni che esulano del tutto dal contesto specifico del sistema. Per Access, “falso” è -1; per le prime versioni di MySQL è 'f'; per Postgres o Oracle, è 0. Il computer, però, non ha IN SE' il concetto di “vero” o di “falso”, ma solo l'associazione del valore booleano *false* a una determinata sequenza di bit. Il concetto di “vero” e di “falso”, quindi, è un valore simbolico che NOI inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è propio del nostro mondo. 
+> Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a href="/man/note#levi" class="nota"></a> 
+
+Gli Americani, che credevano *self-evident*:
+
+> that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
+
+commerciavano in schiavi e hanno sterminato i Nativi Americani per rubar loro le terre.
+I Francesi, il cui motto era:
+
+> Liberté, Égalité, Fraternité
+
+hanno applicato questi principii a colpi di ghigliottina.
+L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* e che ha come motto la frase: 
+
+> Peace, dignity and equality on a healthy planet.
+
+ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="/man/note#armi" class="nota"></a>  e che violano costantemente quelle stesse regole da loro promosse.   
+Questo non vuol dire che i principii di pace, uguaglianza e libertà siano sbagliati, ma che non possiamo attribuire loro nessuna veridicità oggettiva. Dobbiamo accettarli per fede, così come i dogmi religiosi.
+
+
 
 <!--
 
@@ -100,30 +124,9 @@ Differenza con i manuali SW (in cui i termini utilizzati sono tutti definiti) e 
 
 Nota 7 (S.Gregorio++)
 
+<!--
+Tutto ciò non vuol dire che non esistano il vero e il falso, ma solo che i nostri strumenti dialettici sono inadeguati a descriverli.
+-->
 
-Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia così   perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.  
-Se in vece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosé; lo sa per certo perché è scritto nella Bibbia, che è la Parola di Dio.
-Se infine lo chiedi a un paladino del laicismo, ti risponderà che l'omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev'essere vero, perché che applica i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di liberà e uguaglianza della *Dichiarazione dei Diritti dell’Uomo e del Cittadino* francese, che a sua volta si rifaceva alla *Dichiarazione di Indipendenza* americana.
-Nessuna di queste affermazioni è valida di per sé: sono tutte fondate su una qualche forma di fede &mdash; religiosa o laica che sia &mdash; in chi ha promulgato la Legge o il principio.  
-Sfortunatamente, però, queste persone sono state anche le prime a non tenerne conto: Mosé, con i Comandamenti ancora freschi di stampa, chiese ai figli di Levi: 
-
-> Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a href="/man/note#levi" class="nota"></a> 
-
-Gli Americani, che credevano *self-evident*:
-
-> that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
-
-commerciavano in schiavi e hanno sterminato i Nativi Americani per rubar loro le terre.
-I Francesi, il cui motto era:
-
-> Liberté, Égalité, Fraternité
-
-hanno applicato questi principii a colpi di ghigliottina.
-L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* e che ha come motto la frase: 
-
-> Peace, dignity and equality on a healthy planet.
-
-ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="/man/note#armi" class="nota"></a>  e che violano costantemente quelle stesse regole da loro promosse.   
-Questo non vuol dire che i principii di pace, uguaglianza e libertà siano sbagliati, ma che non possiamo attribuire loro nessuna veridicità oggettiva. Dobbiamo accettarli per fede, così come i dogmi religiosi.
 
 -->
