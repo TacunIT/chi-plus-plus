@@ -159,8 +159,8 @@ A.nota {
     margin-left: 2px; 
 }
 A.nota::after {   
-    counter-increment: note-manuale; 
-    content: counter(note-manuale);     
+    counter-increment: note-pagina; 
+    content: counter(note-pagina);     
 }
 
 A.more {
@@ -215,6 +215,7 @@ BODY {
     font-family: $bodyFont;
     font-size: $bodyFontSize;
     text-align: center;
+    counter-reset: note-pagina;  
 }
 
 DIV#page {
@@ -381,7 +382,6 @@ BODY.index MAIN SECTION.citazione.pagina {
  *
  */
 BODY.manuale {
-    counter-reset: note-manuale;  
 }
 BODY.manuale DIV#page {
     min-height: 100vh;
