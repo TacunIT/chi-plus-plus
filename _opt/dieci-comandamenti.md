@@ -12,7 +12,8 @@ footer:     true
 
 
 
-Devo deludere tutti i cinefili: questo articolo non parlerà delle film<a href="#film" class="nota"></a> di Cecil B. De Mille, ma delle Leggi che Mosè disse di aver ricevuto da Dio sul monte Sinai. Per quelli che sono i miei scópi, è del tutto indifferente se i Comandamenti siano opera di Dio, di Mosè o di un alieno appena sceso da un’astronave, come lascerebbe supporre la descrizione dell’evento riportata nel libro dell’Esodo; ciò che vorrei capire davvero è se queste leggi possano avere un loro valore intrinseco, del tutto indipendente dalle convinzioni religiose dei singoli e, se osservate, possano in qualche modo migliorare la nostra vita e quella delle persone con cui veniamo in contatto.
+Devo deludere tutti i cinefili: questo articolo non parlerà delle film<a href="#film" class="nota"></a> di Cecil B. De Mille, ma delle Leggi che Mosè disse di aver ricevuto da Dio sul monte Sinai.
+Per quelli che sono i miei scópi, è del tutto indifferente se i Comandamenti siano opera di Dio, di Mosè o di un alieno appena sceso da un’astronave, come lascerebbe supporre la descrizione dell’evento riportata nel libro dell’Esodo; ciò che vorrei capire davvero è se queste leggi possano avere un loro valore intrinseco, del tutto indipendente dalle convinzioni religiose dei singoli e, se osservate, possano in qualche modo migliorare la nostra vita e quella delle persone con cui veniamo in contatto.
 
 I Dieci Comandamenti, così come li insegnano al catechismo, sono:
 
@@ -31,8 +32,10 @@ Io sono il Signore Dio tuo:<br />
 </blockquote>
 
 Questo, però, non è il testo originale, così com’è riportato nella Bibbia. 
-Nella Bibbia, i Comandamenti compaiono in due casi: nel Libro dell’Esodo e nel Deuteronomio. Teoricamente<a href="#teoria" class="nota"></a>, i Comandamenti dell’Esodo sono il testo originale delle Tavole della Legge, mentre quelli del Deuteronomio sono la versione aggiornata che Mosè lasciò al suo popolo poco prima di morire. I dieci Comandamenti che ho imparato a memoria da bambino, infine, sono la versione cattolica delle leggi ebraiche. 
-Ciò che ho da dire si applica più o meno indifferentemente a tutte e tre le versioni, ma siccome la versione originale mi sembra quella più coerente, è a quella che farò riferimento.
+Nella Bibbia, i Comandamenti compaiono in due casi: nel Libro dell’Esodo e nel Deuteronomio. 
+Teoricamente<a href="#teoria" class="nota"></a>, i Comandamenti dell’Esodo sono il testo originale delle Tavole della Legge, mentre quelli del Deuteronomio sono la versione aggiornata che Mosè lasciò al suo popolo poco prima di morire. 
+I dieci Comandamenti che ho imparato a memoria da bambino, infine, sono la versione cattolica delle leggi ebraiche. 
+Ciò che ho da dire si applica più o meno indifferentemente a tutte e tre le versioni, ma siccome la versione originale mi sembra quella più coerente, è a quella che faremo riferimento.
 
 Tanto per capirsi, i 10 C dell’Esodo sono:
 
@@ -49,122 +52,170 @@ Tanto per capirsi, i 10 C dell’Esodo sono:
 10. Non desiderare la casa del tuo prossimo; non desiderare sua moglie, né il suo schiavo, né la sua schiava, né il suo bue, né il suo asino, né cosa alcuna cosa che appartenga al tuo prossimo.
 </blockquote>
 
-Le differenze con i 10 C del catechismo cattolico sono poche, ma evidenti. La prima è che l’affermazione: “Io sono il Signore Dio tuo”, che per gli ebrei è il primo comandamento - e quindi, presumibilmente, il più importante - per i cattolici non è che una sorta di premessa. La seconda è che il: “Non commettere adulterio” degli ebrei si trasforma, per i cattolici, in: “Non commettere atti impuri”. L’ultima differenza, derivante dalla prima e affine negli scopi alla seconda, è che i cattolici, per mantenere il numero totale di comandamenti, hanno dovuto trovare un rimpiazzo per il comandamento che avevano escluso e l’hanno fatto dividendo in due il decimo comandamento ebraico, differenziando così il desiderio di possesso carnale dal desiderio di possesso generico. Tutto ciò non fa che confermare la mia diffidenza per la chiesa cattolica, ma lo tralasceremo perché, pur se interessante, non ha nulla a che vedere con ciò di cui vorrei parlare; farò solo qualche accenno laddove sarà funzionale alla definizione delle mie tesi.
+Le differenze con i 10 C del catechismo cattolico sono poche, ma evidenti. 
+La prima è che l’affermazione: “Io sono il Signore Dio tuo”, che per gli ebrei è il primo Comandamento - e quindi, presumibilmente, il più importante - per i cattolici non è che una sorta di premessa. 
+La seconda è che il: “Non commettere adulterio” degli ebrei si trasforma, per i cattolici, in: “Non commettere atti impuri”.
+ L’ultima differenza, derivante dalla prima e affine negli scopi alla seconda, è che i cattolici, per mantenere il numero totale di comandamenti, hanno dovuto trovare un rimpiazzo per il comandamento che avevano escluso e l’hanno fatto dividendo in due il decimo comandamento ebraico, differenziando così il desiderio di possesso carnale dal desiderio di possesso generico. 
+ <!--
+ Analizzare queste differenze esula dagli scopi di questo testo, quindi, pur se interessanti, le ignoreremo, facendo solo qualche accenno dove sarà funzionale alla 
+ Tutto ciò non fa che confermare la mia diffidenza per la chiesa cattolica, ma lo tralasceremo perché, pur se interessante, non ha nulla a che vedere con ciò di cui vorrei parlare; farò solo qualche accenno laddove sarà funzionale alla definizione delle mie tesi.
 Un sorso di Vodka e andiamo a cominciare.
+-->
 
-1 Io sono l’Eterno tuo Dio
-Questo, più di un comandamento, può sembrare un’affermazione, il che può aiutarci a capire come mai i cattolici l’abbiano escluso dalla loro versione dei 10 C. Comunque, anche se fosse solo un'affermazione, sarebbe comunque un’affermazione piuttosto importante, perché spiega a quale titolo, chi parla, si permetta di stabilire delle regole di comportamento per tutto un popolo.
+### 1 Io sono l’Eterno tuo Dio
+
+Questo, più di un comandamento, può sembrare un’affermazione, il che può aiutarci a capire come mai i cattolici l’abbiano escluso dalla loro versione dei 10 C. 
+Comunque, anche se fosse solo un'affermazione, sarebbe comunque un’affermazione piuttosto importante, perché spiega a quale titolo, chi parla, si permetta di stabilire delle regole di comportamento per tutto un popolo.
 Confrontando le due versioni di questa frase, mi ero chiesto come mai in una si dicesse: “l’Eterno” e in un'altra invece: “il Signore”, ma da quello che leggo, mi sembra di capire che “Eterno” e “Signore” siano due appellativi equivalenti con cui gli Ebrei si riferiscono a Dio, ritenendo il Suo nome troppo sacro per essere pronunciato. 
 Altre informazioni interessanti che ho scoperto, riguardo il nome di Dio, sono che:
 
-Nelle lingue germaniche Dio è identificato con il Bene, anche se con il tempo probabilmente è andato perso il senso comune di quest'origine etimologica: infatti, l'inglese God e il tedesco Gott hanno la stessa origine degli aggettivi "good" e "gut" ("buono" e "bene").
+> Nelle lingue germaniche Dio è identificato con il Bene, anche se con il tempo probabilmente è andato perso il senso comune di quest'origine etimologica: infatti, l'inglese “God” e il tedesco ”Gott” hanno la stessa origine degli aggettivi “good” e “gut” (”buono” e “bene”).
+<!-- lasciare le virgolette perché il testo è già corsivo -->
 
 ma soprattutto che:
 
-Dio traduce l'ebraico El (nome anche di una divinità fenicia), Eloah, ed Elohim, grammaticalmente plurale.iv 
+> Il termine: “Dio” traduce l'ebraico “El” (nome anche di una divinità fenicia), “Eloah”, ed “Elohim”, grammaticalmente plurale. 
 
 Il fatto che il termine “Dio” potesse essere plurale, introduce il comandamento successivo.
 		
-2 Non avrai altro Dio che Me
+### 2 Non avrai altro Dio che Me
 Questa frase può essere interpretata in due maniere. La prima interpretazione è quella classica, ovvero:
 
-Io sono Dio, quindi, chiunque altro venga da te e affermi di essere Dio, sta mentendo.
+> Io sono Dio, quindi, chiunque altro venga da te e affermi di essere Dio, sta mentendo.
 
 È un'interpretazione perfettamente lecita, specie se si tiene conto che:
 
-Sembra che originariamente non ci fosse una grande differenza dal punto di vista religioso, tra gli Israeliti e le tribù circostanti. Jahveh era, al principio, soltanto il Dio della tribù, il quale favoriva i figli di Israele, ma non era escluso che ci fossero altri dèi, e i loro adoratori erano numerosi.v
+> Sembra che originariamente non ci fosse una grande differenza dal punto di vista religioso, tra gli Israeliti e le tribù circostanti. Jahveh era, al principio, soltanto il Dio della tribù, il quale favoriva i figli di Israele, ma non era escluso che ci fossero altri dèi, e i loro adoratori erano numerosi.
 
 Esiste, però, anche un'altra possibile interpretazione, ovvero: 
 
-Se, fra le tante divinità, deciderai di onorare me, come tuo Dio, sappi che non ne potrai adorare altre, contemporaneamente.
+> Se, fra le tante divinità, deciderai di onorare me, come tuo Dio, sappi che non ne potrai adorare altre, contemporaneamente.
 
 La questione, qui, è cosa si debba intendere con il termine: “Dio”. 
-Una delle possibili interpretazioni del termine Dio è:  “io sono”, ma non è che mi piaccia molto, se non altro perché, in quest’ottica, il primo Comandamento potrebbe essere tradotto come: “Io sono ciò che sono”, e mi sembra surreale che la prima Legge data da Dio agli uomini sia un verso della canzone che canticchia sempre da Braccio di Ferro e il titolo di un inno gay.  Molto meglio, allora, la traduzione letterale: “Io sono ciò che è” o la traduzione un po’ meno letterale: “Io sono l'essenza dell'essere”. Infatti, se la sostituiamo alla parola: Dio nei primi due Comandamenti, otteniamo una frase piuttosto interessante:
+Una delle possibili interpretazioni del termine Dio è:  “io sono”, ma non è che mi piaccia molto, se non altro perché, in quest’ottica, il primo Comandamento potrebbe essere tradotto come: “Io sono ciò che sono”, e mi sembra surreale che la prima Legge data da Dio agli uomini sia un verso della canzone che canticchia sempre da Braccio di Ferro (e il titolo di un inno gay).  
+Molto meglio, allora, la traduzione letterale: “Io sono ciò che è” o la traduzione un po’ meno letterale: “Io sono l'essenza dell'essere”. 
+Infatti, se la sostituiamo alla parola: Dio nei primi due Comandamenti, otteniamo una frase piuttosto interessante:
 
-Io sono l’essenza dell’essere, e non ne avrai altre che me. 
+> Io sono l’essenza dell’essere, e non ne avrai altre che me. 
 
-In questi termini, il primo comandamento non può più essere scambiato per un’affermazione, ma è chiaramente parte di un precetto: 
+In questi termini, il primo Comandamento non può più essere scambiato per un’affermazione, ma è chiaramente parte di un precetto: 
 
-Non cercare il senso della tua vita nelle cose e nei piaceri terreni, perché le cose e i piaceri terreni sono illusorî e transeunti; cercalo nei valori spirituali, che sono reali ed eterni. 
+> Non cercare il senso della tua vita nelle cose e nei piaceri terreni, perché le cose e i piaceri terreni sono illusorî e transeunti; cercalo nei valori spirituali, che sono reali ed eterni. 
 
 L’ovvio corollario a questo precetto è: 
 
-Non ti farai o adorerai alcuna immagine o figura.
+> Non ti farai o adorerai alcuna immagine o figura.
 
 Non tanto, io credo, perché l’immagine terrena non possa rendere la maestosità del divino, ma perché, alla lunga, c’è il rischio che il fedele identifichi e confonda l’immagine con il soggetto e si convinca, per ciò, che adorando l’immagine stia adorando Dio.
 
-3 Non pronunciare il nome del Signore Dio tuo in vano
-Il vano “è una lingua estinta, diffusa un tempo nella provincia di Temotu, sull'isola di Vanikolo (nei due villaggi di Lale e Lavaka)”vi. Non ostante ciò, non credo che lo scopo di questo Comandamento sia di inibire i discorsi intorno alla Divinità fra gli abitanti delle isole Salomone; credo piuttosto che il senso, qui, sia quello di chiamare in causa Dio solo in occasioni degne del suo coinvolgimento. 
+### 3 Non pronunciare il nome del Signore Dio tuo in vano
+Il Vano è: “una lingua estinta, diffusa un tempo nella provincia di Temotu, sull'isola di Vanikolo”. 
+Ciò non ostante, non credo che lo scopo di questo Comandamento sia di inibire i discorsi intorno alla Divinità fra gli abitanti delle isole Salomone; credo piuttosto che il senso, qui, sia quello di chiamare in causa Dio solo in occasioni degne del suo coinvolgimento. 
 Io trovo che questo precetto sia riconducibile a Matteo 7,21:
 
-Non chiunque mi dice: Signore, Signore, entrerà nel regno dei cieli, ma colui che fa la volontà del Padre mio che è nei cieli.
+> Non chiunque mi dice: Signore, Signore, entrerà nel regno dei cieli, ma colui che fa la volontà del Padre mio che è nei cieli.
+
+<!-- @todo Anche al "non giurare" -->
 
 Visto in questi termini, il Comandamento potrebbe essere un modo per ribadire quanto affermato in precedenza, ovvero:
 
-Non confondermi con niente di terreno, sia essa un’immagine o un nome. Essermi fedeli è un impegno che devi assolvere in ogni istante della tua vita e che non puoi sintetizzare in un salmo o in una genuflessione.
+> Non confondermi con niente di terreno, sia essa un’immagine o un nome. Essermi fedeli è un impegno che devi assolvere in ogni istante della tua vita e che non puoi sintetizzare in un salmo o in una genuflessione.
 
 Se poi ti esenti anche dal paragonarmi a un ungulato domestico, be’: tanto meglio.
 
-4 Onora il giorno del sabato per santificarlo
-Questo Comandamento, i cattolici l’hanno tradotto in: “Ricordati di santificare le feste”; un’affermazione certamente funzionale ai loro interessi, ma che non ha molto a che vedere con la prescrizione originale. Una lettura disattenta di questo comandamento, infatti, può spingerci a credere che, per essere un buon cristiano, sia sufficiente andare a Messa la domenica, a Pasqua e a Natale. Inoltre, quel: “ricordati”, messo lì all’inizio della frase, dà l’impressione che la santificazione delle feste sia un obbligo minore, che può effettivamente passare di mente. Non è così. Come ho imparato leggendo uno strano romanzo scritto da tale Eran Katz (un simpatico israeliano che, durante la presentazione del libro, qui a Roma, ha illustrato dei trucchi di mnemotecnica per ricordare facilmente i nomi delle persone, senza sapere che il suo, comunque, non ce lo saremmo più potuti scordare), il senso di questo Comandamento è:
+### 4 Onora il giorno del sabato per santificarlo
+Questo Comandamento, i cattolici l’hanno tradotto in: “Ricordati di santificare le feste”; un’affermazione certamente funzionale ai loro interessi, ma che non ha molto a che vedere con la prescrizione originale. Una lettura disattenta di questo comandamento, infatti, può spingerci a credere che, per essere un buon cristiano, sia sufficiente andare a Messa la domenica, a Pasqua e a Natale. Inoltre, quel: “ricordati”, messo lì all’inizio della frase, dà l’impressione che la santificazione delle feste sia un obbligo minore, che può effettivamente passare di mente. Non è così. 
+Come ho imparato leggendo uno strano romanzo scritto da tale Eran Katz (un simpatico signore israeliano che, durante la presentazione del libro, qui a Roma, ha illustrato dei trucchi di mnemotecnica per ricordare facilmente i nomi delle persone, senza sapere che il suo, comunque, non ce lo saremmo più potuti scordare), il senso di questo Comandamento è:
 
-D’accordo che per vivere devi mangiare e che per mangiare devi lavorare, ma sii bravo: un giorno alla settimana smettivii di occuparti dei tuoi affari e dedicati a ciò che è sacro.
+> D’accordo che per vivere devi mangiare e che per mangiare devi lavorare, ma sii bravo: un giorno alla settimana smettivii di occuparti dei tuoi affari e dedicati a ciò che è sacro.
 
-Secondo il Vangeloviii, ma anche secondo alcuni commenti ebraici della Bibbiaix:
+Secondo il Vangelo, ma anche secondo alcuni commenti ebraici della Bibbia:
 
-Il sabato è stato fatto per l’uomo e non l’uomo per il sabato!
+> Il sabato è stato fatto per l’uomo e non l’uomo per il sabato!
 
-Ciò vuol dire che il riposo del sabato non è un obbligo per l’uomo, ma un privilegio: gli sono stati dati sei giorni per preoccuparsi del nutrimento del suo corpo e un giorno per dedicarsi al nutrimento del suo spirito. Santificare le feste, quindi, non vuol dire non fare, ma non fare nulla che sia finalizzato all’appagamento di desiderî terreni, dedicandosi unicamente ai bisogni spirituali.
-Come dimostra il Katz (sì, l’ho fatto apposta) e come sa bene chiunque abbia lavorato per più di una settimana di seguito senza interruzioni, questa pausa “sabbatica” non va a detrimento della qualità del lavoro, ma, al contrario, la preserva, consentendo alla mente di rigenerarsi e di affrontare al meglio la nuova sequenza di giorni lavorativi. 
-E se il Katz non vi basta, c’è anche una canzone degli indiani Navaho, nella quale si afferma che la prosperità dello spirito non pregiudica quella materiale:
+Ciò vuol dire che il riposo del sabato non è un obbligo per l’uomo, ma un privilegio: gli sono stati dati sei giorni per preoccuparsi del nutrimento del suo corpo e un giorno per dedicarsi al nutrimento del suo spirito. 
+Santificare le feste, quindi, non vuol dire *non fare*, ma *non fare nulla che sia finalizzato all’appagamento di desiderî terreni, dedicandosi unicamente ai bisogni spirituali*.
+Come dimostra il Katz e come sa bene chiunque abbia lavorato per più di una settimana di seguito senza interruzioni, questa pausa “sabbatica” non va a detrimento della qualità del lavoro, ma, al contrario, la preserva, consentendo alla mente di rigenerarsi e di affrontare al meglio la nuova sequenza di giorni lavorativi. 
+E se questo non vi basta, c’è anche una canzone degli indiani Navaho, nella quale si afferma che la prosperità dello spirito non pregiudica quella materiale:
 
-In modo sacro io vivo. 
+> In modo sacro io vivo. 
 I miei cavalli sono molti.                     
 
 “Io vivo”, non: “io mi ricordo di vivere”.
 
-5 Onora tuo padre e tua madre	
-Io credo che ciascuno di noi possegga una specifica forma di follia, che è la follia nella quale è stato allevato. Ciascun nucleo familiare ha una sua personale devianza, un comportamento considerato normale all’interno, che non è per niente normale se si guardano le cose dall’esterno.  La devianza può essere un qualsiasi comportamento maligno (prepotenza, xenofobia, tifo per la Roma ecc.) o benigno spinto all’eccesso (puntualità, ordine, igiene, ecc.), ma è comunque presente. Se una famiglia ne è priva, è quella stessa normalità la sua devianza: in un mondo di pazzi, la normalità è a-normale. 
-Nati e cresciuti all’interno di questa follia, i figli non la riconoscono come tale fino a che non hanno la possibilità, o la forza, di guardare alla propria vita dall’esterno, con occhi nuovi. Quando, ma soprattutto se riescono riconoscere la propria devianza familiare, i figli devono scegliere quale atteggiamento assumere nei confronti di questa indesiderata eredità. La scelta più comune è il rifiuto: si stigmatizza il comportamento dei genitori e si adotta uno stile di vita diametralmente opposto, come una sorta di affermazione implicita della propria innocenza. Un’altra possibilità è la mancata presa di coscienza. Questa può dipendere o da fattori esterni (non si viene a contatto con realtà differenti da quella in cui si è nati e cresciuti) o dalla voglia di non ammettere le colpe dei propri genitori perché, ammettendole, si sarebbe costretti a vederli come esseri umani. Una scelta meno comune è l’accettazione: si prende atto dell’anormalità del proprio comportamento (quale che sia) e si impara a conviverci serenamente, contrastandolo se negativo e moderandolo se eccessivo, ma riconoscendolo come una parte del proprio bagaglio culturale, del quale non è possibile disfarsi. 
-Io credo sia questo, il diventare adulti, e credo che sia precisamente questo, l’onorare il padre e la madre di cui parla il Comandamento. Non li si deve né accettare incondizionatamente perché li si ritiene dei semidei e non si deve nemmeno rinnegarli perché li si ritiene dei mostri, ma solo accettarli come esseri umani, e, in quanto tali, fallibili.  
+## 5 Onora tuo padre e tua madre	
+Io credo che ciascuno di noi possegga una specifica forma di follia, che è la follia nella quale è stato allevato. Ciascun nucleo familiare ha una sua personale devianza, un comportamento considerato normale all’interno, che non è per niente normale se si guardano le cose dall’esterno.
+  La devianza può essere un qualsiasi comportamento maligno (prepotenza, xenofobia, tifo per la Roma ecc.) o benigno spinto all’eccesso (puntualità, ordine, igiene, ecc.), ma è comunque presente.
+Se una famiglia ne è priva, è quella stessa normalità la sua devianza: in un mondo di pazzi, la normalità è a-normale. 
+Nati e cresciuti all’interno di questa follia, i figli non la riconoscono come tale fino a che non hanno la possibilità, o la forza, di guardare alla propria vita dall’esterno, con occhi nuovi.
+Quando, ma soprattutto se riescono riconoscere la propria devianza familiare, i figli devono scegliere quale atteggiamento assumere nei confronti di questa indesiderata eredità.
+La scelta più comune è il rifiuto: si stigmatizza il comportamento dei genitori e si adotta uno stile di vita diametralmente opposto, come una sorta di affermazione implicita della propria innocenza.
+Un’altra possibilità è la mancata presa di coscienza.
+Questa può dipendere o da fattori esterni (non si viene a contatto con realtà differenti da quella in cui si è nati e cresciuti) o dalla voglia di non ammettere le colpe dei propri genitori perché, ammettendole, si sarebbe costretti a vederli come esseri umani.
+Una scelta meno comune è l’accettazione: si prende atto dell’anormalità del proprio comportamento (quale che sia) e si impara a conviverci serenamente, contrastandolo se negativo e moderandolo se eccessivo, ma riconoscendolo come una parte del proprio bagaglio culturale, del quale non è possibile disfarsi.
+Io credo sia questo, il diventare adulti, e credo che sia precisamente questo, l’onorare il padre e la madre di cui parla il Comandamento.
+Non li si deve né accettare incondizionatamente perché li si ritiene dei semidei e non si deve nemmeno rinnegarli perché li si ritiene dei mostri, ma solo accettarli come esseri umani, e, in quanto tali, fallibili.  
 Detto così, sembra facile.
 
 6 Non uccidere
-Questo Comandamento, apparentemente chiaro nella sua semplicità, è quello che fatico di più a interpretare.  Penso che siamo tutti d’accordo sul fatto che il verbo “uccidere” significhi: “privare della vita”. Penso, altresì, che siamo tutti d’accordo che con “vita” si intenda la possibilità di nascere, opzionalmente riprodursi e morire. Se così è (e non vedo alternative), potremmo riscrivere il Comandamento come:
+Questo Comandamento, apparentemente chiaro nella sua semplicità, è quello che fatico di più a interpretare.
+ Penso che siamo tutti d’accordo sul fatto che il verbo “uccidere” significhi: “privare della vita”.
+Penso, altresì, che siamo tutti d’accordo che con “vita” si intenda la possibilità di nascere, opzionalmente riprodursi e morire.
+Se così è (e non vedo alternative), potremmo riscrivere il Comandamento come:
 
 Non anticipare volontariamente la morte di nessun essere vivente
 
 La frase è la stessa; ho aggiunto solo l’avverbio “volontariamente”, perché nessuno di noi può sapere se una delle sue azioni possa, in ultima analisi, portare alla morte di qualcunox. 
-Ora, ci sono dei casi in cui la violazione della regola è palese (tipo: mi metto d’accordo con due miei amici e massacro a sprangate mio padre e mia madre per accaparrarmi la loro eredità), ma ci sono anche dei casi in cui la distinzione fra esatto ed errato non è così netta. La frase è priva del complemento oggetto, quindi non possiamo essere certi che il divieto sia limitato ai nostri consimili, anzi: dobbiamo assumere che, mancando una specifica su “chi” o “cosa” non debba essere ucciso, sia nostro dovere lasciare in vita ogni essere vivente. Niente caccia, quindi, e niente pesca o macellazione, ma anche, se vogliamo essere onesti, nemmeno insalate o cicoria ripassata, perché anche le piante, così come gli esseri umani, la cacciagione e il bestiame, nascono, si riproducono e muoiono; ergo: sono vive; ergo: se io le taglio o le estirpo ne anticipo volontariamente la morte, violando il C6.
-Dice: ma l’insalata, se la tagli, mica muore. Vero: allora facciamo così, invece di macellare il bestiame, lo mutiliamo. Ci sono uomini che vivono senza arti inferiori, vuoi che non possa farlo un maiale? Ammetto che possa essere crudele, ma che ne sai, che anche la rughetta non soffra, quando lo tagli? E d’altro canto, io, per vivere, devo mangiare; se non mangio, anticipo la mia di morte e, di conseguenza, vìolo il C6. Anche se, per non far del male a nessuno, decidessi di mangiare solo uova e latticini, non potrei ignorare il fatto che le galline si nutrono di vermi e le mucche di erba e che quindi il mio sostentamento comporta comunque l'interruzione forzata di altre vite. Certo: io non ucciderei nessun essere vivente, ma sarei il mandante implicito di una serie innumerevole di morti e mutilazioni; una situazione piuttosto simile al demandare la macellazione del bestiame, o la pesca. E anche se (come ho personalmente ho fatto), risolvessi le implicazioni alimentari del C6 aggiungendogli un: “in vano”, ammettendo così l’uccisione, ma solo se finalizzata al sostentamento, mi troverei di fronte altri implicazioni ancora più complesse di questo Comandamento, come l’atteggiamento da adottare nei confronti dell’eutanasia, della pena di morte o dell’aborto. 
-Riguardo all’aborto la mia posizione è abbastanza definita: sono favorevole, a patto che non lo si possa chiamare né “aborto” né “interruzione di gravidanza”, ma solo: “assassinio del feto”; poi, fate come vi pare. Riguardo alla pena di morte e all’eutanasia, al contrario, non ho le idee molto chiare e se affrontassi ora il problema rischierei di raddoppiare la lunghezza (già eccessiva) di questo testo. Rimando quindi la mia dissertazione tanatoica e cerco invece di riconquistare la vostra attenzione, buttandola sul sesso.
+Ora, ci sono dei casi in cui la violazione della regola è palese (tipo: mi metto d’accordo con due miei amici e massacro a sprangate mio padre e mia madre per accaparrarmi la loro eredità), ma ci sono anche dei casi in cui la distinzione fra esatto ed errato non è così netta.
+La frase è priva del complemento oggetto, quindi non possiamo essere certi che il divieto sia limitato ai nostri consimili, anzi: dobbiamo assumere che, mancando una specifica su “chi” o “cosa” non debba essere ucciso, sia nostro dovere lasciare in vita ogni essere vivente.
+Niente caccia, quindi, e niente pesca o macellazione, ma anche, se vogliamo essere onesti, nemmeno insalate o cicoria ripassata, perché anche le piante, così come gli esseri umani, la cacciagione e il bestiame, nascono, si riproducono e muoiono; ergo: sono vive; ergo: se io le taglio o le estirpo ne anticipo volontariamente la morte, violando il C6.
+Dice: ma l’insalata, se la tagli, mica muore.
+Vero: allora facciamo così, invece di macellare il bestiame, lo mutiliamo.
+Ci sono uomini che vivono senza arti inferiori, vuoi che non possa farlo un maiale? Ammetto che possa essere crudele, ma che ne sai, che anche la rughetta non soffra, quando lo tagli? E d’altro canto, io, per vivere, devo mangiare; se non mangio, anticipo la mia di morte e, di conseguenza, vìolo il C6.
+Anche se, per non far del male a nessuno, decidessi di mangiare solo uova e latticini, non potrei ignorare il fatto che le galline si nutrono di vermi e le mucche di erba e che quindi il mio sostentamento comporta comunque l'interruzione forzata di altre vite.
+Certo: io non ucciderei nessun essere vivente, ma sarei il mandante implicito di una serie innumerevole di morti e mutilazioni; una situazione piuttosto simile al demandare la macellazione del bestiame, o la pesca.
+E anche se (come ho personalmente ho fatto), risolvessi le implicazioni alimentari del C6 aggiungendogli un: “in vano”, ammettendo così l’uccisione, ma solo se finalizzata al sostentamento, mi troverei di fronte altri implicazioni ancora più complesse di questo Comandamento, come l’atteggiamento da adottare nei confronti dell’eutanasia, della pena di morte o dell’aborto. 
+Riguardo all’aborto la mia posizione è abbastanza definita: sono favorevole, a patto che non lo si possa chiamare né “aborto” né “interruzione di gravidanza”, ma solo: “assassinio del feto”; poi, fate come vi pare.
+Riguardo alla pena di morte e all’eutanasia, al contrario, non ho le idee molto chiare e se affrontassi ora il problema rischierei di raddoppiare la lunghezza (già eccessiva) di questo testo.
+Rimando quindi la mia dissertazione tanatoica e cerco invece di riconquistare la vostra attenzione, buttandola sul sesso.
 
 7 Non commettere adulterio
-Conosco una persona che, anni addietro, si innamorò, di una donna sposata. Quando scoprì che anche lei lo amava, si presentò a casa della donna e disse al marito: “Ho un problema: sono innamorato di tua moglie e la voglio sposare. Allo stesso tempo, però, non voglio farti un torto: dimmi tu come dobbiamo comportarci”.xi Il marito della donna, com’è facile intuire, inizialmente non prese bene la cosa, ma riconobbe che il suo antagonista si era comportato con grande dignità e, alla fine, gli fece (a lui) da testimone di nozze. È una storia vera, ma, sfortunatamente, ben poche persone sono corrette come il mio amico o ragionevoli come l’ex marito della donna e molto spesso queste relazioni si risolvono in situazioni meschine, costellate di sospetti e menzogne, nelle quali ciò che unisce gli amanti non è un reciproco affetto, ma lo stesso sotterfugio, la clandestinità; il bisogno di evadere dalla monotonia delle relazioni ufficiali. 
+Conosco una persona che, anni addietro, si innamorò, di una donna sposata. Quando scoprì che anche lei lo amava, si presentò a casa della donna e disse al marito: “Ho un problema: sono innamorato di tua moglie e la voglio sposare. Allo stesso tempo, però, non voglio farti un torto: dimmi tu come dobbiamo comportarci”.xi Il marito della donna, com’è facile intuire, inizialmente non prese bene la cosa, ma riconobbe che il suo antagonista si era comportato con grande dignità e, alla fine, gli fece (a lui) da testimone di nozze.
+È una storia vera, ma, sfortunatamente, ben poche persone sono corrette come il mio amico o ragionevoli come l’ex marito della donna e molto spesso queste relazioni si risolvono in situazioni meschine, costellate di sospetti e menzogne, nelle quali ciò che unisce gli amanti non è un reciproco affetto, ma lo stesso sotterfugio, la clandestinità; il bisogno di evadere dalla monotonia delle relazioni ufficiali. 
 Il bisogno di evadere temporaneamente, però: una notte o un fine settimana al massimo; perché, se la convivenza si protraesse più a lungo, certo diventerebbe insopportabile quanto, se non di più, della relazione legittima - senza considerare il fatto che molti di questi “amori” probabilmente non sarebbero mai nati, se entrambi gli amanti fossero stati liberi da legami affettivi.
-E se è certamente possibile che una “scappatella” possa funzionare come valvola di sfogo per una relazione, rafforzandola, è ancora più probabile che, alla lunga, anche in una relazione iniziata unicamente sulla base di un’attrazione fisica, una delle due parti finisca per innamorarsi dell’altra, e quando in un ménage à trois si intromette l’amore (o ciò che viene reputato tale) è inevitabile che qualcuno finisca per soffrirne. Non importa se sia l’amante (che vede l’oggetto del suo amore rientrare al focolare dopo la copula), l’amato (che si trova così a tradire l’amore di due persone in vece di una) o i nuclei familiari coinvolti: fatto sta che qualcuno si fa male, e che raramente ne valeva la pena.
+E se è certamente possibile che una “scappatella” possa funzionare come valvola di sfogo per una relazione, rafforzandola, è ancora più probabile che, alla lunga, anche in una relazione iniziata unicamente sulla base di un’attrazione fisica, una delle due parti finisca per innamorarsi dell’altra, e quando in un ménage à trois si intromette l’amore (o ciò che viene reputato tale) è inevitabile che qualcuno finisca per soffrirne.
+Non importa se sia l’amante (che vede l’oggetto del suo amore rientrare al focolare dopo la copula), l’amato (che si trova così a tradire l’amore di due persone in vece di una) o i nuclei familiari coinvolti: fatto sta che qualcuno si fa male, e che raramente ne valeva la pena.
 Il settimo Comandamento, quindi, io lo vedo, più che come un’imposizione, come una sorta di consiglio; come dire che l’erba del vicino appare più verde solo se la guardiamo da dietro alla nostra staccionata.
-Nella sua versione cattolica, questo Comandamento vieta, in vece che il solo adulterio, tutti i generici “atti impuri”, garantendo in questo modo la dannazione eterna a tutti i maschi sani in età puberale. Per un’azienda che vende indulgenze e assoluzioni, mi sembra una mossa azzeccata.
+Nella sua versione cattolica, questo Comandamento vieta, in vece che il solo adulterio, tutti i generici “atti impuri”, garantendo in questo modo la dannazione eterna a tutti i maschi sani in età puberale.
+Per un’azienda che vende indulgenze e assoluzioni, mi sembra una mossa azzeccata.
 
 8 Non rubare
-Io credo che siamo tutti d'accordo nel dire che scippare la pensione a una vecchietta sia un'azione esecrabile. Io penso, inoltre, che siamo tutti d'accordo nel dire che svaligiare l'appartamento della famiglia Brambilla mentre la famiglia Brambilla è in vacanza, sia un gesto poco simpatico. Io sono certo, infine, che siamo tutti d'accordo nel dire che colui il quale forzi la serratura di una FIAT Seicento rossa, parcheggiata nei pressi dell'Auditorium a Roma, per rubarne l'autoradio (con lettore CD) marca Pioneer, è un malvivente che merita la galera a vita, se non la pena di morte. 
-Ciò che potrebbe essere meno evidente, però, è la ragione per cui rubare sia peccato. Una possibile risposta è:
+Io credo che siamo tutti d'accordo nel dire che scippare la pensione a una vecchietta sia un'azione esecrabile.
+Io penso, inoltre, che siamo tutti d'accordo nel dire che svaligiare l'appartamento della famiglia Brambilla mentre la famiglia Brambilla è in vacanza, sia un gesto poco simpatico.
+Io sono certo, infine, che siamo tutti d'accordo nel dire che colui il quale forzi la serratura di una FIAT Seicento rossa, parcheggiata nei pressi dell'Auditorium a Roma, per rubarne l'autoradio (con lettore CD) marca Pioneer, è un malvivente che merita la galera a vita, se non la pena di morte. 
+Ciò che potrebbe essere meno evidente, però, è la ragione per cui rubare sia peccato.
+Una possibile risposta è:
 
 Rubare è peccato perché consente a qualcuno di entrare in possesso di beni altrui senza l'altrui consenso.
 
 È, questa, una risposta perfettamente lecita (specie nel caso dei furti di autoradio), ma allora perché Gesù permise ai suoi apostoli di cogliere delle spighe di grano in un campo che non gli apparteneva?
-La prima cosa che mi viene in mente è che il furto sia un'azione errata solo laddove vada a ledere gli interessi del derubato: rubando qualche spiga, gli apostoli non hanno danneggiato il padrone del campo, quindi Gesù li ha lasciati fare; al contrario, se fossero arrivati con una mietitrebbia e gli avessero falciato un paio di ettari, probabilmente li avrebbe fermati e redarguiti, se non altro per l'incongruenza storica. Esiste però un'altra possibile spiegazione, che io credo sia quella corretta: 
+La prima cosa che mi viene in mente è che il furto sia un'azione errata solo laddove vada a ledere gli interessi del derubato: rubando qualche spiga, gli apostoli non hanno danneggiato il padrone del campo, quindi Gesù li ha lasciati fare; al contrario, se fossero arrivati con una mietitrebbia e gli avessero falciato un paio di ettari, probabilmente li avrebbe fermati e redarguiti, se non altro per l'incongruenza storica.
+Esiste però un'altra possibile spiegazione, che io credo sia quella corretta: 
 
 Rubare è sbagliato perché è un'azione in perdita.
 
-Per spiegare questa affermazione, mi rifaccio al caso del furto di autoradio. Immaginiamo che un'autoradio con lettore CD di marca Pioneer costi circa 180 Euro. Il padrone dell'automobile (o il marito della padrona) lo ritene un prezzo congruo e acquista l'autoradio. La situazione, prima del furto è, quindi:
+Per spiegare questa affermazione, mi rifaccio al caso del furto di autoradio. Immaginiamo che un'autoradio con lettore CD di marca Pioneer costi circa 180 Euro.
+Il padrone dell'automobile (o il marito della padrona) lo ritene un prezzo congruo e acquista l'autoradio.
+La situazione, prima del furto è, quindi:
 
 beni
 spesa
 1 autoradio
 180 €
 
-A questo punto, entra in scena il ladro, che forza la serratura dello sportello e sottrae l'autoradio. Il padrone dell'auto (o il marito della padrona) dovrà quindi sborsare altri 180 Euro per ricomprare il bene rubato e, a questo importo, dovranno essere aggiunti i soldi necessarî a riparare la serratura "spadinata": diciamo 50 Euro. Il rapporto costi/beni diventa perciò:
+A questo punto, entra in scena il ladro, che forza la serratura dello sportello e sottrae l'autoradio.
+Il padrone dell'auto (o il marito della padrona) dovrà quindi sborsare altri 180 Euro per ricomprare il bene rubato e, a questo importo, dovranno essere aggiunti i soldi necessarî a riparare la serratura "spadinata": diciamo 50 Euro.
+Il rapporto costi/beni diventa perciò:
 
 beni
 spesa
@@ -172,7 +223,10 @@ spesa
 1 serratura
 410 €
 
-Già così, al proprietario dell'auto (o al marito della padrona) conviene regalare un'autoradio al ladro, piuttosto che farsi derubare, ma l'entropia economica di questa situazione non si ferma qui. Mettiamo infatti che il ladro non abbia sottratto l'autoradio perché ne aveva bisogno, ma per rivenderla e comprarsi un paio di scarpe alla moda. Stando così le cose, il ladro dovrà recarsi da un ricettatore e contrattare un prezzo per la refurtiva e questo prezzo sarà sicuramente minore del reale valore del bene. Per semplificarci i calcoli, ammettiamo che il ladro ottenga il 50% del prezzo dell'autoradio e che questo importo copra il costo delle scarpe (è un'ipotesi decisamente ottimista: il ricettatore deve rivendere l'autoradio al 50% del prezzo, quindi al ladro non andrà più del 10/20% del valore reale). 
+Già così, al proprietario dell'auto (o al marito della padrona) conviene regalare un'autoradio al ladro, piuttosto che farsi derubare, ma l'entropia economica di questa situazione non si ferma qui.
+Mettiamo infatti che il ladro non abbia sottratto l'autoradio perché ne aveva bisogno, ma per rivenderla e comprarsi un paio di scarpe alla moda.
+Stando così le cose, il ladro dovrà recarsi da un ricettatore e contrattare un prezzo per la refurtiva e questo prezzo sarà sicuramente minore del reale valore del bene.
+Per semplificarci i calcoli, ammettiamo che il ladro ottenga il 50% del prezzo dell'autoradio e che questo importo copra il costo delle scarpe (è un'ipotesi decisamente ottimista: il ricettatore deve rivendere l'autoradio al 50% del prezzo, quindi al ladro non andrà più del 10/20% del valore reale). 
 Il bilancio della transazione diventa così:
 
 beni
@@ -182,12 +236,15 @@ spesa
 1 paio di scarpe
 410 €
 
-Anche nel nostro Mondo ideale, dove i ricettatori sono spendaccioni e le scarpe alla moda costano solo 90 Euro, il deficit di questa operazione sarebbe di 140  Euro, a fronte dei 270 che sarebbero stati necessarî per acquistare i due beni desiderati, ovvero l'autoradio e le scarpe. Ne deriva che, in un'ottica globale, il furto è un gesto assurdo, e quindi da evitare.
+Anche nel nostro Mondo ideale, dove i ricettatori sono spendaccioni e le scarpe alla moda costano solo 90 Euro, il deficit di questa operazione sarebbe di 140  Euro, a fronte dei 270 che sarebbero stati necessarî per acquistare i due beni desiderati, ovvero l'autoradio e le scarpe.
+Ne deriva che, in un'ottica globale, il furto è un gesto assurdo, e quindi da evitare.
 Il motivo per cui un ladro dovrebbe perdere tempo a considerare le cose in ottica globale è l'argomento di un libro che ho appena cominciato a scrivere; mentre aspettate che lo finisca e lo pubblichi, potreste ingannare il tempo pensando a una conseguenza di questo Comandamento: ovvero che rubare, non è solo l'impossessarsi dei soldi, dell'argenteria o delle autoradio altrui, ma anche l'appropriarsi di qualunque altra cosa appartenga o spetti ad altri, sia essa il posto in una fila, un parcheggio o un punto in una partita di tennis. 
 Se lo fai, non sei furbo: sei un ladro.
 
 9 Non fare falsa testimonianza contro il tuo prossimo
-La cosa più interessante di questo Comandamento è la differenza fra la versione ebraica e quella cattolica. L'omissione, da parte dei cattolici, del complemento: “contro il tuo prossimo” può sembrare casuale e ininfluente, ma non è né l'una né l'altra cosa. Ve lo dimostro con tre esempî: 
+La cosa più interessante di questo Comandamento è la differenza fra la versione ebraica e quella cattolica.
+L'omissione, da parte dei cattolici, del complemento: “contro il tuo prossimo” può sembrare casuale e ininfluente, ma non è né l'una né l'altra cosa.
+Ve lo dimostro con tre esempî: 
 
 Caso A: vostra moglie ha speso tutto il pomeriggio e una considerevole somma di danaro dal parrucchiere, perché stasera avete una cena importante; torna a casa con una testa che sembra il nido di una cicogna maldestra e vi chiede: “Non trovi che questa acconciatura mi ringiovanisca?” Cosa rispondete?
 
@@ -195,16 +252,20 @@ Caso B: manca poco a Natale; avete nascosto i regali per vostro figlio in armad�
 
 Caso C: siete uno degli apostoli di Gesù; poco dopo il suo arresto, una donna vi si avvicina e vi chiede: “Non sei anche tu uno dei suoi discepoli?” Cosa rispondete? 
 
-Un cattolico, per non peccare, dovrà dire la verità in tutti e tre i casi; un ebreo, al contrario, potrà tranquillamente mentire, posto che la sua risposta non causi danno a qualcuno.  In altre parole, per la Legge ebraica, se io nel caso “C” rispondessi: “Non guardate me, è quello, Simon Pietro”, causando la crocifissione di un ignaro passante, sicuramente starei peccando, ma se in vece mi limitassi a scuotere vigorosamente il capo, affermando di essere appena arrivato da Cipro, darei, sì, una falsa testimonianza, ma non contro qualcuno, quindi, teoricamente, non violerei il C9.
+Un cattolico, per non peccare, dovrà dire la verità in tutti e tre i casi; un ebreo, al contrario, potrà tranquillamente mentire, posto che la sua risposta non causi danno a qualcuno.
+ In altre parole, per la Legge ebraica, se io nel caso “C” rispondessi: “Non guardate me, è quello, Simon Pietro”, causando la crocifissione di un ignaro passante, sicuramente starei peccando, ma se in vece mi limitassi a scuotere vigorosamente il capo, affermando di essere appena arrivato da Cipro, darei, sì, una falsa testimonianza, ma non contro qualcuno, quindi, teoricamente, non violerei il C9.
 La domanda che nasce spontanea, a questo punto, è: perché, la chiesa cattolica ha modificato questo Comandamento in un modo tale che non solo rende impossibile una serena vita familiare, ma che mette nei guai il suo stesso fondatore? D'accordo: ai sacerdoti cattolici non è permesso né di sposarsi né di avere figlixii, quindi è ammissibile che non siano a conoscenza dei sottili meccanismi che regolano la vita coniugale, ma il povero San Pietro, cosa gli aveva fatto, di male? Sì, certo: ha rinnegato il Cristo, ma si è trattato di una debolezza perfettamente umana e comprensibile, che non merita le péne dell'Inferno, specie se consideriamo il fatto che, quando in precedenza aveva provato a reagire all'arresto, si era beccato un cazziatone dal Maestro.  
-Immaginatevi, la scena, con San Pietro che sta lì tranquillo alle porte del Paradiso e a un certo punto arriva un arcangelo e gli dice: “Signor Pietro, si ricorda quella bugia che lei ha detto il venerdì prima di Pasqua del 33? Be', guardi: oggi un suo successore ha deciso che quella bugia era un peccato mortale, quindi dovrebbe essere così cortese da restituirmi le chiavi del portone e andarsene all'inferno. E non in senso figurato.” Non dev'essere stato bello, per lui. 
+Immaginatevi, la scena, con San Pietro che sta lì tranquillo alle porte del Paradiso e a un certo punto arriva un arcangelo e gli dice: “Signor Pietro, si ricorda quella bugia che lei ha detto il venerdì prima di Pasqua del 33? Be', guardi: oggi un suo successore ha deciso che quella bugia era un peccato mortale, quindi dovrebbe essere così cortese da restituirmi le chiavi del portone e andarsene all'inferno.
+E non in senso figurato.” Non dev'essere stato bello, per lui. 
 E allora, di nuovo: perché? Lo so che sono monotono, ma mi viene in mente solo una risposta meschina ed ellittica:
 
 Caso D: dovete finire di costruire la più grande basilica del Mondo, ma la guerra contro la Francia ha prosciugato le vostre risorse finanziarie e il vostro banchiere tedesco vi ha chiesto il rientro dei prestiti finora erogati. Dove trovate i soldi?
 
 
 10 Non desiderare la casa del tuo prossimo; non desiderare sua moglie, né il suo schiavo, né la sua schiava, né il suo bue, né il suo asino, né cosa alcuna cosa che appartenga al tuo prossimo
-Se per qualche motivo dovessi trovare una prova del fatto che le Leggi sono state realmente dettate da Dio a Mosé e non sono, al contrario, farina del suo sacco, io sceglierei il decimo Comandamento, perché solo l'incombenza di un Dio fiammeggiante può spingere un uomo a scolpire nella pietra tutte queste parole, quando, per esprimere il medesimo concetto, sarebbero bastate le prime due e le ultime otto. Ciò non toglie che questo sia un Comandamento anomalo. Fino a questo punto, infatti, le direttive dei 10 C si sono concentrate sul fare o non fare e, se si escludono i primi quattro Comandamenti, che regolano il rapporto dell’umano con lo spirituale, le si potrebbero riassumere in una sola frase:
+Se per qualche motivo dovessi trovare una prova del fatto che le Leggi sono state realmente dettate da Dio a Mosé e non sono, al contrario, farina del suo sacco, io sceglierei il decimo Comandamento, perché solo l'incombenza di un Dio fiammeggiante può spingere un uomo a scolpire nella pietra tutte queste parole, quando, per esprimere il medesimo concetto, sarebbero bastate le prime due e le ultime otto.
+Ciò non toglie che questo sia un Comandamento anomalo.
+Fino a questo punto, infatti, le direttive dei 10 C si sono concentrate sul fare o non fare e, se si escludono i primi quattro Comandamenti, che regolano il rapporto dell’umano con lo spirituale, le si potrebbero riassumere in una sola frase:
 
 Non fare intenzionalmente del male al tuo prossimo
 
@@ -214,19 +275,35 @@ Non ti vendicherai e non serberai rancore contro i figli del tuo popolo, ma amer
 
 O a Giovanni 13,34:
 
-Io vi do un comandamento nuovo: amatevi gli uni gli altri. Amatevi come io vi ho amato!
+Io vi do un comandamento nuovo: amatevi gli uni gli altri.
+Amatevi come io vi ho amato!
 
 Questo nuovo Comandamento, dove il verbo “amare” sta (o dovrebbe stare) per: “anteponete il bene degli altri al vostro stesso bene”, condensa il significato dei Comandamenti da 5 a 9, ma lascia apparentemente fuori il decimo, visto che, se mi limito a desiderare qualcosa che appartiene a un altro senza tentare di sottrarglielo e senza per ciò serbargli rancore, non gli arreco alcun danno.
-Ma non è solo questa, l'anomalia. Come penso abbiate notato, la struttura dei Comandamenti è assimilabile a una piramide: al vertice c'è Dio, unico e solo; al secondo gradino troviamo la coppia Dio/uomo; al terzo c'è la triade figlio/genitori, poi le due coppie implicate nell'adulterio e infine la societàxiii. Arrivati al decimo Comandamento, però, questa struttura piramidale scompare e l'uomo resta solo con sé stesso. La moglie del suo prossimo, i suoi schiavi o il suo bestiame, qui, non sono elementi reali, come quando si parlava di adulterio o furto, ma solo le immagini che lui si è creato nella mente. 
-Potenzialmente, questo è un Comandamento terribile, perché non si applica alle azioni, ma ai pensieri e resistere alla tentazione di fare il male è molto più facile che resistere alla tentazione di pensarlo. I cattolici se ne sono accorti e, con un'astuta mossa commerciale, hanno pensato bene di sdoppiarlo in due comandamenti, uno dedicato alla generica “roba d'altri” e uno specifico per la “donna d'altri”, producendo così una sorta di nassa teologica dalla quale il povero fedele, una volta entrato, non riuscirà più a uscire. 
-Io credo però che il significato del decimo Comandamento sia esattamente l'opposto: non è la maglia finale della rete, quella in cui anche il pesce più piccolo resterà imprigionato, ma, al contrario, è l'unico modo per non cadere nella rete. È dal desiderio, che dobbiamo guardarci, perché il desiderio è la causa di tutte le azioni vietate dai 10 C: se il ladro non avesse desiderato le scarpe alla moda, non avrebbe avuto bisogno di rubare e, se inquisito, di dare falsa testimonianza contro la proprietaria dell'autoradio, che altrimenti avrebbe potuto chiedergli il risarcimento dei danni. 
+Ma non è solo questa, l'anomalia.
+Come penso abbiate notato, la struttura dei Comandamenti è assimilabile a una piramide: al vertice c'è Dio, unico e solo; al secondo gradino troviamo la coppia Dio/uomo; al terzo c'è la triade figlio/genitori, poi le due coppie implicate nell'adulterio e infine la societàxiii.
+Arrivati al decimo Comandamento, però, questa struttura piramidale scompare e l'uomo resta solo con sé stesso.
+La moglie del suo prossimo, i suoi schiavi o il suo bestiame, qui, non sono elementi reali, come quando si parlava di adulterio o furto, ma solo le immagini che lui si è creato nella mente. 
+Potenzialmente, questo è un Comandamento terribile, perché non si applica alle azioni, ma ai pensieri e resistere alla tentazione di fare il male è molto più facile che resistere alla tentazione di pensarlo.
+I cattolici se ne sono accorti e, con un'astuta mossa commerciale, hanno pensato bene di sdoppiarlo in due comandamenti, uno dedicato alla generica “roba d'altri” e uno specifico per la “donna d'altri”, producendo così una sorta di nassa teologica dalla quale il povero fedele, una volta entrato, non riuscirà più a uscire. 
+Io credo però che il significato del decimo Comandamento sia esattamente l'opposto: non è la maglia finale della rete, quella in cui anche il pesce più piccolo resterà imprigionato, ma, al contrario, è l'unico modo per non cadere nella rete.
+È dal desiderio, che dobbiamo guardarci, perché il desiderio è la causa di tutte le azioni vietate dai 10 C: se il ladro non avesse desiderato le scarpe alla moda, non avrebbe avuto bisogno di rubare e, se inquisito, di dare falsa testimonianza contro la proprietaria dell'autoradio, che altrimenti avrebbe potuto chiedergli il risarcimento dei danni. 
 Non nego che esistano dei crimini dovuti ad altre cause, come i raptus omicidi o i furti per fame, ma è anche vero che si tratta di una percentuale esigua del totale: di tanti ladri (anche di autoradio) che ho conosciuto nella mia giovinezza periferica, nessuno rubava per bisogno; rubavano tutti per soddisfare questo o quel desiderio, indotto generalmente dalla moda o dalla pubblicità. 
-Ma non fraintendetemi, il mio non vuole essere un discorso marxistaxiv. Non sono la moda e la pubblicità, il problema, anzi: la moda e la pubblicità sono indispensabili a una società come quella attuale; se non ci fossero, la gente smetterebbe di rubare per desiderio e comincerebbe a rubare per bisogno. Ve lo dimostro con un esempio.
-I telefoni cellulari sono comodi, ma non indispensabili: fino a vent'anni fa ne facevamo tranquillamente a meno. Possiamo quindi dire che il loro possesso non fa parte dei bisogni, ma dei desiderî, indotti e mantenuti vivi da moda e pubblicità. Ciò non ostante, pensate a cosa succederebbe, se domani ne vietassero l'utilizzo. Quanti, dei vostri amici, si troverebbero senza lavoro? Quanti, perderebbero dei clienti? 
-No: moda e pubblicità non sono il problema. Il problema, quello vero, quello di cui, se mai, moda e pubblicità, sono una parziale soluzione, è la necessità di creare lavoro e reddito per una popolazione mondiale in espansione indiscriminata, a fronte di risorse in progressivo calo. Non stupitevi, quindi, se i valori correnti sono in netta contraddizione con le dieci regole qui sopra: non si può fare altrimenti.
+Ma non fraintendetemi, il mio non vuole essere un discorso marxistaxiv.
+Non sono la moda e la pubblicità, il problema, anzi: la moda e la pubblicità sono indispensabili a una società come quella attuale; se non ci fossero, la gente smetterebbe di rubare per desiderio e comincerebbe a rubare per bisogno. Ve lo dimostro con un esempio.
+I telefoni cellulari sono comodi, ma non indispensabili: fino a vent'anni fa ne facevamo tranquillamente a meno.
+Possiamo quindi dire che il loro possesso non fa parte dei bisogni, ma dei desiderî, indotti e mantenuti vivi da moda e pubblicità.
+Ciò non ostante, pensate a cosa succederebbe, se domani ne vietassero l'utilizzo.
+Quanti, dei vostri amici, si troverebbero senza lavoro? Quanti, perderebbero dei clienti? 
+No: moda e pubblicità non sono il problema.
+Il problema, quello vero, quello di cui, se mai, moda e pubblicità, sono una parziale soluzione, è la necessità di creare lavoro e reddito per una popolazione mondiale in espansione indiscriminata, a fronte di risorse in progressivo calo.
+Non stupitevi, quindi, se i valori correnti sono in netta contraddizione con le dieci regole qui sopra: non si può fare altrimenti.
 
-Quando ho cominciato a scrivere questo commento ai 10 C, non sapevo precisamente dove sarei andato a parare. Come ho detto all'inizio, volevo solo provare a dare una lettura delle Leggi che fosse condivisibile non solo da un ebreo, da un cristiano o da un cattolico, ma anche da una qualunque persona per bene, perché ero convinto che i Comandamenti, anche se assunti in dosi omeopatiche, potessero rendere effettivamente migliore la nostra vita. Fino all'inizio di questo paragrafo la pensavo ancora così; adesso, però, non ne sono più tanto sicuro. 
-Il mio modo di vedere i 10 C è cambiato, e ne sono contento, perché ho capito che, più che degli ordini autoritarî, sono dei consigli fondamentalmente benevoli; d'altro canto, però, ho dovuto prendere atto dell'ingenuità delle mie speranze. L'esaltazione del desiderio, in questo momento storico, è l'unico atteggiamento eco-sostenibile (laddove con eco non abbrevio eco-logia, ma eco-nomia) e, se non si può eliminare il desiderio, l'osservanza dei primi nove comandamenti diventa non solo improbabile, ma quasi controproducente. In un Mondo sovrappopolato è quasi un nostro dovere civico lavorare sette giorni a settimana, rubare e uccidere se necessario “al business”xv, ignorare i vincoli familiari e accaparrarci tutto ciò che ci capita a tiro: sia esso un bue, un asino, una schiava o una moglie.
+Quando ho cominciato a scrivere questo commento ai 10 C, non sapevo precisamente dove sarei andato a parare.
+Come ho detto all'inizio, volevo solo provare a dare una lettura delle Leggi che fosse condivisibile non solo da un ebreo, da un cristiano o da un cattolico, ma anche da una qualunque persona per bene, perché ero convinto che i Comandamenti, anche se assunti in dosi omeopatiche, potessero rendere effettivamente migliore la nostra vita.
+Fino all'inizio di questo paragrafo la pensavo ancora così; adesso, però, non ne sono più tanto sicuro. 
+Il mio modo di vedere i 10 C è cambiato, e ne sono contento, perché ho capito che, più che degli ordini autoritarî, sono dei consigli fondamentalmente benevoli; d'altro canto, però, ho dovuto prendere atto dell'ingenuità delle mie speranze.
+L'esaltazione del desiderio, in questo momento storico, è l'unico atteggiamento eco-sostenibile (laddove con eco non abbrevio eco-logia, ma eco-nomia) e, se non si può eliminare il desiderio, l'osservanza dei primi nove comandamenti diventa non solo improbabile, ma quasi controproducente.
+In un Mondo sovrappopolato è quasi un nostro dovere civico lavorare sette giorni a settimana, rubare e uccidere se necessario “al business”xv, ignorare i vincoli familiari e accaparrarci tutto ciò che ci capita a tiro: sia esso un bue, un asino, una schiava o una moglie.
 Così, se davvero vogliamo una rinascita etica e morale – e, a parole, sembrerebbe che la vogliamo tutti – dobbiamo per prima cosa creare i presupposti per la sua attuazione, riducendo il numero di cuccioli attaccati alle mammelle di questo Pianeta: è inutile abbassare del 30% le emissioni di CO2, se poi raddoppiamo il numero degli “emettitori”.
 Avere un figlio è un diritto, se non un dovere; averne due è accettabile, ma superare la soglia di un figlio a testa equivale a rubare risorse che non ci appartengono, negando ad altri la possibilità di crescere i proprî figli, o costringendoli a vivere in una società basata sul desiderio e quindi sulla sopraffazione. 
 In altre parole, avere più di un figlio a testa, equivale a rinnegare i 10 C.
