@@ -100,4 +100,30 @@ Differenza con i manuali SW (in cui i termini utilizzati sono tutti definiti) e 
 
 Nota 7 (S.Gregorio++)
 
+
+Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia così   perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.  
+Se in vece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosé; lo sa per certo perché è scritto nella Bibbia, che è la Parola di Dio.
+Se infine lo chiedi a un paladino del laicismo, ti risponderà che l'omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev'essere vero, perché che applica i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di liberà e uguaglianza della *Dichiarazione dei Diritti dell’Uomo e del Cittadino* francese, che a sua volta si rifaceva alla *Dichiarazione di Indipendenza* americana.
+Nessuna di queste affermazioni è valida di per sé: sono tutte fondate su una qualche forma di fede &mdash; religiosa o laica che sia &mdash; in chi ha promulgato la Legge o il principio.  
+Sfortunatamente, però, queste persone sono state anche le prime a non tenerne conto: Mosé, con i Comandamenti ancora freschi di stampa, chiese ai figli di Levi: 
+
+> Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a href="/man/note#levi" class="nota"></a> 
+
+Gli Americani, che credevano *self-evident*:
+
+> that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
+
+commerciavano in schiavi e hanno sterminato i Nativi Americani per rubar loro le terre.
+I Francesi, il cui motto era:
+
+> Liberté, Égalité, Fraternité
+
+hanno applicato questi principii a colpi di ghigliottina.
+L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* e che ha come motto la frase: 
+
+> Peace, dignity and equality on a healthy planet.
+
+ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="/man/note#armi" class="nota"></a>  e che violano costantemente quelle stesse regole da loro promosse.   
+Questo non vuol dire che i principii di pace, uguaglianza e libertà siano sbagliati, ma che non possiamo attribuire loro nessuna veridicità oggettiva. Dobbiamo accettarli per fede, così come i dogmi religiosi.
+
 -->

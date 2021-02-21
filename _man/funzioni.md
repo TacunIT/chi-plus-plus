@@ -453,6 +453,26 @@ L'output di questo codice è:
 
 <!-- @todo: Aggiungere un paragrafo sui valori di default per i parametri -->
 
+---
+
+A questo punto, non mi resta che parlarti delle funzioni che richiamano sé stesse, ovvero, le *funzioni ricorsive*:
+
+```
+{% include_relative src/funzioni-ricorsiva.cpp %}
+```
+Se compili ed esegui questo codice, ottieni:
+
+```
+> g++ src/cpp/funzioni-ricorsiva.cpp -o src/out/esempio
+> src/out/esempio                                      
+ 1 2 3 4 5 6 7 8 9
+```
+
+Attenzione, però: una funzione che richiama sé stessa, se non è scritta bene, può generare una ricorsione in[de]finita, come due specchi posti l'uno di fronte all'altro.
+Lo spazio prospettico all'interno degli specchi è inesauribile, ma la memoria dei computer, per quanto estesa, ha i suoi limiti e un numero eccessivo di ricorsioni potrebbe generare uno *stack overflow*.<a href="/man/note#stack" class="nota"></a> 
+Per questo motivo, bisogna ricorrere alla ricorsione solo nei casi in cui è indispensabile, preferendole, quando possibile, le [istruzioni iterative](https://chiplusplus.org/man/istruzioni-iterative) e applicando sempre dei meccanismi di controllo della profondità di ricorsione che prevengano un sovraccarico dello stack.  
+Un altro tipo di ricorsione di cui diffidare è quella con cui si cerca, alle volte, di dare credibilità a una convinzione priva di fondamenti reali utilizzando un'altra convinzione simile.   
+
 <hr id="dottrina">
 
 In un romanzo sulla vita dello spadaccino giapponese Myamoto Musashi c'è una frase che è la logica conseguenza del suggerimento di Jacopone da Todi:
@@ -496,7 +516,7 @@ Ti ho parlato delle regole di Musashi non perché siano le uniche disponibili, m
 Attingono ai principii di altre discipline, come il Buddismo, il Bushido o il Tao, ma sono *something else*, come direbbe Eddie Cochran.  
 Tu dovrai fare altrettanto: imparare tutto ciò che puoi, tanto dai buoni quanto dai cattivi maestri, e poi definire le tue regole di vita, che potranno essere uguali, simili o del tutto differenti da quelle che ti sono state insegnate.   
 <!-- 
-    @todo: aggiugere testo su Maestro Canaro e 10C     
+    @todo: valutare aggiunta testo su Maestro Canaro e 10C     
 -->
 La Via, così come la Verità, è una modella, che ciascuno di noi ritrae dal suo punto di vista, cercando di intuire il corpo che si cela dietro alle pieghe del drappeggio. 
 Ritrarla nello stesso modo in cui l'ha fatto un altro sarebbe sbagliato, perché il tuo punto di vista non è uguale al suo, ma guardarla da più punti di vista può aiutarti a capire meglio la sua forma.
@@ -516,48 +536,3 @@ Dovrai essere capace di identificare i malfunzionamenti anche se non hanno effet
 Cambiano i nomi, perché sono passati quattro secoli, ma i problemi restano gli stessi, così come le soluzioni.  
 Del resto, arte, scienza, filosofia e religione sono tutti tentativi di dare una risposta alle stesse domande sulla nostra esistenza. 
 Dato che l'oggetto di studio è lo stesso, è più che normale che, alle volte, le risposte si somiglino, allo stesso modo in cui l'algoritmo per il calcolo del fattoriale di un numero sarà più o meno lo stesso, indipendentemente dal linguaggio di programmazione.  
-A proposito di fattoriali, mi stavo quasi dimenticando delle funzioni ricorsive.  
-
----
-
-Una funzione ricorsiva è una funzione che richiama sé stessa:
-
-```
-{% include_relative src/funzioni-ricorsiva.cpp %}
-```
-Se compili ed esegui questo codice, ottieni:
-
-```
-> g++ src/cpp/funzioni-ricorsiva.cpp -o src/out/esempio
-> src/out/esempio                                      
- 1 2 3 4 5 6 7 8 9
-```
-
-Attenzione, però: una funzione che richiama sé stessa, se non è scritta bene, può generare una ricorsione in[de]finita, come due specchi posti l'uno di fronte all'altro.
-Lo spazio prospettico all'interno degli specchi è inesauribile, ma la memoria dei computer, per quanto estesa, ha i suoi limiti e un numero eccessivo di ricorsioni potrebbe generare uno *stack overflow*.<a href="/man/note#stack" class="nota"></a> 
-Per questo motivo, bisogna ricorrere alla ricorsione solo nei casi in cui è indispensabile, preferendole, quando possibile, le [istruzioni iterative](https://chiplusplus.org/man/istruzioni-iterative) e applicando sempre dei meccanismi di controllo della profondità di ricorsione che prevengano un sovraccarico dello stack.  
-Un altro tipo di ricorsione di cui diffidare è quella con cui si cerca, alle volte, di dare credibilità a una convinzione priva di fondamenti reali utilizzando un'altra convinzione simile.   
-Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia così   perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.  
-Se in vece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosé; lo sa per certo perché è scritto nella Bibbia, che è la Parola di Dio.
-Se infine lo chiedi a un paladino del laicismo, ti risponderà che l'omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev'essere vero, perché che applica i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di liberà e uguaglianza della *Dichiarazione dei Diritti dell’Uomo e del Cittadino* francese, che a sua volta si rifaceva alla *Dichiarazione di Indipendenza* americana.
-Nessuna di queste affermazioni è valida di per sé: sono tutte fondate su una qualche forma di fede &mdash; religiosa o laica che sia &mdash; in chi ha promulgato la Legge o il principio.  
-Sfortunatamente, però, queste persone sono state anche le prime a non tenerne conto: Mosé, con i Comandamenti ancora freschi di stampa, chiese ai figli di Levi: 
-
-> Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a href="/man/note#levi" class="nota"></a> 
-
-Gli Americani, che credevano *self-evident*:
-
-> that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
-
-commerciavano in schiavi e hanno sterminato i Nativi Americani per rubar loro le terre.
-I Francesi, il cui motto era:
-
-> Liberté, Égalité, Fraternité
-
-hanno applicato questi principii a colpi di ghigliottina.
-L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* e che ha come motto la frase: 
-
-> Peace, dignity and equality on a healthy planet.
-
-ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="/man/note#armi" class="nota"></a>  e che violano costantemente quelle stesse regole da loro promosse.   
-Questo non vuol dire che i principii di pace, uguaglianza e libertà siano sbagliati, ma che non possiamo attribuire loro nessuna veridicità oggettiva. Dobbiamo accettarli per fede, così come i dogmi religiosi.
