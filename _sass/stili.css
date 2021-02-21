@@ -158,6 +158,11 @@ A.nota {
     display: inline-block;
     margin-left: 2px; 
 }
+A.nota::after {   
+    counter-increment: note-manuale; 
+    content: counter(note-manuale);     
+}
+
 A.more {
     font-weight: bold;
     font-size: 0.9rem;
@@ -378,14 +383,6 @@ BODY.index MAIN SECTION.citazione.pagina {
 BODY.manuale {
     counter-reset: note-manuale;  
 }
-BODY.manuale A.nota {   
-    display: none; 
-    display: initial; 
-}
-BODY.manuale A.nota::after {   
-    counter-increment: note-manuale; 
-    content: counter(note-manuale);     
-}
 BODY.manuale DIV#page {
     min-height: 100vh;
 }
@@ -498,7 +495,8 @@ BODY.manuale BLOCKQUOTE.incluso {
     background-color: $inclusoBackground;
     margin: 1rem 0;
 }
-BODY.manuale BLOCKQUOTE.motto {
+/** Non specifico il BODY perché iene usato anche nei 10C */
+BLOCKQUOTE.motto {
     text-align: right;
     padding: 2rem 0 4rem 33%;
     font-size: 0.9em
@@ -725,7 +723,7 @@ SECTION.note OL LI A {
 SECTION.note OL LI A I {
     color: #fff;
 }
-SECTION.note OL LI A:target I {
+SECTION.note OL LI:target A I {
     color: $colorGold;
 }
 SECTION.note OL LI BLOCKQUOTE {
@@ -734,13 +732,9 @@ SECTION.note OL LI BLOCKQUOTE {
 SECTION.note OL LI SPAN {
     font-variant-caps: small-caps;
 }
-/**
- *  Stili per le note del Manuale
- */
- 
- BODY.note SECTION.note OL {
+BODY.note SECTION.note OL {
      margin-bottom: 3rem;
- }
+}
 /**
  *
  *  Stili per elenco log

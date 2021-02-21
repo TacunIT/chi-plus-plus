@@ -1,8 +1,17 @@
-I dieci comandamenti
+---
+layout:     pagina
+class:      articolo
+title:      I Dieci Comandamenti
+permalink:  /opt/dieci-comandamenti
+footer:     true
+---
 
 
+<blockquote class="motto">
 Jeder sorgt nur für sich, ist eitel, misstrauet dem andern,
-Und die meister des Staats sorgen nur wieder für sich.i
+Und die meister des Staats sorgen nur wieder für sich.<a href="#goethe" class="nota"></a>
+</blockquote>
+
 
 
 Devo deludere tutti i cinefili: questo articolo non parlerà delleii film di Cecil B. De Mille, ma delle Leggi che Mosè disse di aver ricevuto da Dio sul monte Sinai. Per quelli che sono i miei scópi, è del tutto indifferente se i Comandamenti siano opera di Dio, di Mosè o di un alieno appena sceso da un’astronave, come lascerebbe supporre la descrizione dell’evento riportata nel libro dell’Esodo; ciò che vorrei capire davvero è se queste leggi possano avere un loro valore intrinseco, del tutto indipendente dalle convinzioni religiose dei singoli e, se osservate, possano in qualche modo migliorare la nostra vita e quella delle persone con cui veniamo in contatto.
@@ -223,3 +232,12 @@ Avere un figlio è un diritto, se non un dovere; averne due è accettabile, ma s
 In altre parole, avere più di un figlio a testa, equivale a rinnegare i 10 C.
 
 Invitare la gente a farlo, è anche peggio.
+
+<section class="note">
+    <h2>Note</h2>
+    <ol>
+        <li>
+            <a href="Javascript:history.back()" name="goethe"><i class="fas fa-reply"></i></a>
+        </li>
+    </ol>        
+</section>
