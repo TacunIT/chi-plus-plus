@@ -24,26 +24,115 @@ o in base al tipo di operazione che compiono:
 - bitwise
 - assegnazione
 
- Gli operatori *aritmetici* sono:
+Gli operatori *aritmetici* sono :
  
- | nome  | descrizione  | esempio  |
- |:-:|:-:|:-:|
- | +   | addizione       | x + y |
- | -   | sottrazione     | x - y |
- | \*  | moltiplicazione | x * y |
- | \\  | divisione       | x / y |
- | %   | modulo          | x % y |
- | ++  | incremento      | x++   |
- | --  | decrementi      | y--   |
+| nome  | descrizione  | esempio   |
+|:-:|:-:|:-:|
+| +   | addizione       | x + y | 
+| -   | sottrazione     | x - y | 
+| \*  | moltiplicazione | x * y |  
+| \\  | divisione       | x / y |   
+| %   | modulo          | x % y |   
+| ++  | incremento      | x++   |  
+| --  | decremento      | y--   |   
 
- Gli operatori *logici* sono:
+Gli operatori *logici* sono:
  
- | nome  | descrizione  | esempio  |
- |:-:|:-:|:-:|
- | &&   | AND logico    | x && y |
- | \|\| | OR logico     | x \|\| y |
- | !    | NOT logico    | !(x && y) |
+| nome  | descrizione  | esempio  |
+|:-:|:-:|:-:|
+| &&   | AND logico    | x && y |
+| \|\| | OR logico     | x \|\| y |
+| !    | NOT logico    | !(x && y) |
   
+Gli operatori *di relazione* sono:
+ 
+| nome  | descrizione  | esempio  |
+|:-:|:-:|:-:|
+| == | uguaglianza         | x == x |
+| != | differenza          | x != y |
+| >  | maggiore di         | x > y  |
+| <  | minore di           | x < y  |
+| >= | maggiore o uguale a | x >= y |
+| <= | minore o uguale a   | x <= y |
+
+Gli operatori binarii, o: *bitwise* sono:
+  
+| nome  | descrizione  | esempio  |
+|:-:|:-:|:-:|
+| &  | AND              | x & y  |
+| \| | OR inclusivo     | x \| y |
+| ^  | OR esclusivo     | x ^ y  |
+| ~  | NOT              | x ~ y  |
+| >> | shift a destra   | x >> y |
+| << | shift a sinistra | x << y |
+
+Gli operatori *di assegnazione* sono:
+ 
+| nome  | descrizione  | esempio  |
+|:-:|:-:|:-:|
+| =   | uguaglianza      | x = x   |
+| +=  | somma            | x += y  |
+| -=  | differenza       | x -= y  |
+| *=  | moltiplicazione  | x *= y  |
+| /=  | divisione        | x /= y  |
+| %=  | modulo           | x %= y  |
+| &=  | AND              | x &= y  |
+| \|= | OR inclusivo     | x \|= y |
+| ^=  | OR esclusivo     | x ^= y  |
+| >>= | shift a destra   | x <= y  |
+| <<= | shift a sinistra | x <= y  |
+
+Il prossimo esempio mostra l'utilizzo e il risultato di ciascun operatore:
+
+```
+{% include_relative src/operatori-utilizzo.cpp %}
+```
+
+Se compili ed esegui questo codice, ottieni:
+
+```
+> g++ src/cpp/operatori-utilizzo.cpp -o src/out/esempio
+> src/out/esempio                                      
+Operatori aritmetici
+x + y = 16
+x - y = 8
+x * y = 48
+x / y = 3
+x % y = 0
+x++   = 12
+x--   = 13
+
+Operatori logici
+x && y    = 1
+x || y    = 1
+!(x && y) = 0
+
+Operatori di relazione
+x == y = 0
+x != y = 1
+x > y  = 1
+x < y  = 0
+x >= y = 1
+x <= y = 0
+
+Operatori bitwise
+bit x  = 00001100
+bit y  = 00000100
+x & y  = 00000100
+x | y  = 00001100
+x ^ y  = 00001000
+x ~ y  = 11111011
+x >> y = 00000000
+x << y = 11000000
+
+Operatori di assegnazione
+x += y = 16
+x -= y = 12
+x *= y = 48
+x /= y = 12
+x %= y = 0
+
+```
 
 <hr id="dottrina">
 
