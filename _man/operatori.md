@@ -77,7 +77,10 @@ L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani
 > Peace, dignity and equality on a healthy planet.
 
 ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="/man/note#armi" class="nota"></a>  e che violano costantemente quelle stesse regole da loro promosse.     
-Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi dalle convinzioni<a href="/man/note#self-evident" class="nota"></a> di un gruppo di credenti<a href="/man/note#credenti" class="nota"></a>, non vuol dire siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva. Dobbiamo accettarli per fede, così come i dogmi religiosi.
+Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi dalle convinzioni<a href="/man/note#self-evident" class="nota"></a> di un gruppo di credenti<a href="/man/note#credenti" class="nota"></a>, non vuol dire siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva; possiamo solo accettarli per fede, così come i dogmi religiosi.  
+Il Maestro Canaro, per esempio, era convinto che il Libro dell'Esodo fosse il resoconto di un esperimento alieno su una popolazione isolata nel deserto per due generazioni (“capisci: la circoncisione serviva a identificare i maschi e l'appartenenza al gruppo era stabiita in base alla madre perché era verificabile grazie ai mitocondri”); ciò non ostante, lui regolava la sua vita e le sue decisioni in base ai dieci Comandamenti di Mosé. 
+Quando gli chiesi perché avesse scelto proprio quelle regole, mi rispose: “Se li avessi seguiti anche da giovane, adesso avrei molti rimorsi in meno.” 
+
 
 
 
