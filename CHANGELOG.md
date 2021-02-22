@@ -1,3 +1,11 @@
+## 0.20.3 (February 22, 2021)
+  - Aggiunto codice di esempio per operatori
+  - Rinominata directory _etc in _var
+  - Aggiunto brano su Maestro Canaro e 10C
+  - Rimosso il testo dei 10C perché era troppo aggressivo (anche se motivatamente, vito il momento in cui è stato scritto).
+  - Estesi stili note manuale a tutte le pagine
+  - Aggiornato stile delle note per evidenziare quella corrente
+
 ## 0.20.2 (February 21, 2021)
   - Aggiunte note sulla religione dei Padri Fondatori
   - Spostato il testo sulla ricorsione ideologica nel capitolo sugli operatori
