@@ -13,7 +13,6 @@ Lo scopo delle funzioni è di migliorare la gestione del codice.
 È possibile scrivere un programma che abbia solo la funzione `main`, ma questo ha un senso solo per programmi molto semplici, come alcuni degli esempii che abbiamo visto finora.
 Il flusso di un programma *non banale*, come direbbe Stroutsup, sarà sempre suddiviso in più funzioni perché in questo modo il codice sarà più facile da leggere, da correggere e da modificare.  
 
-
 ```
 {% include_relative src/tipi-di-dato-dimensione.cpp %}
 ```
