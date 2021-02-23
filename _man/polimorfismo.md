@@ -49,6 +49,8 @@ Si vede che era sobrio.
 
 La specializzazione come un male.
 
+"La specializzazione va bene per gli insetti" (dove l'ho letto?)
+
 Un tempo, l'uomo virtuoso sapeva fare molte cose, più o meno bene.
 
 Ora se ne sa fare solo una, benissimo.

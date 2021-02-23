@@ -78,8 +78,7 @@ quote:
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="self-evident">
-            Definire un principio: <i>self-evident</i> equivale a dichiarare un dogma: una convinzione che appartiene a chi scrive, ma non si applica necessariamente a tutti gli esseri viventi. 
-            Aristotele, per esempio, non sarebbe stato d'accordo.
+            Definire un principio: <i>self-evident</i> equivale a dichiarare un dogma: una convinzione che appartiene a chi scrive, ma non si applica necessariamente a tutti gli esseri viventi, tanto è vero che sei Stati del Sud, nelle loro documenti, scrissero: <i>all freemen are equal</i>.
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="credenti">
@@ -274,6 +273,15 @@ quote:
             <a href="https://youtu.be/YWQnzylhgHc" target="note">si gira e 
             torna indietro</a> anche se il programma che lo controlla non contiene 
             questa istruzione.
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>
+    </ol>
+
+    <h3>Le classi</h3>
+    <ol>
+        <li id="selvaggio">
+            Lévy-Bruhl, citato da Coomaraswamy
+            <i>Il Grande Brivido</i>, pag. 227 
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
     </ol>
