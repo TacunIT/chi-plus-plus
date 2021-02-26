@@ -178,36 +178,7 @@ pre-decremento: 5
 post-decremento:8
 </code></pre>
 
-<p>Gli operatori <em>logici</em> sono:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">nome</th>
-      <th style="text-align: center">descrizione</th>
-      <th style="text-align: center">esempio</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">&amp;&amp;</td>
-      <td style="text-align: center">AND logico</td>
-      <td style="text-align: center">x &amp;&amp; y</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">||</td>
-      <td style="text-align: center">OR logico</td>
-      <td style="text-align: center">x || y</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">!</td>
-      <td style="text-align: center">NOT logico</td>
-      <td style="text-align: center">!(x &amp;&amp; y)</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Gli operatori <em>di relazione</em> sono:</p>
+<p>Gli operatori <em>di relazione</em> permettono di verificare il rapporto fra due variabili:</p>
 
 <table>
   <thead>
@@ -251,7 +222,40 @@ post-decremento:8
   </tbody>
 </table>
 
-<p>Gli operatori binarii, o: <em>bitwise</em> sono:</p>
+<p>Questi operatori tornano un valore booleano, vero o falso a seconda che la condizione sia verificata o no.</p>
+
+<p>Gli operatori <em>logici</em> permettono di compiere delle operazioni booleane sulle variabili:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">nome</th>
+      <th style="text-align: center">descrizione</th>
+      <th style="text-align: center">esempio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">&amp;&amp;</td>
+      <td style="text-align: center">AND logico</td>
+      <td style="text-align: center">x &amp;&amp; y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">||</td>
+      <td style="text-align: center">OR logico</td>
+      <td style="text-align: center">x || y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">!</td>
+      <td style="text-align: center">NOT logico</td>
+      <td style="text-align: center">!(x &amp;&amp; y)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>L’operatore <code>&amp;&amp;</code> torna <code>true</code> se entrambe le variabili sono <code>true</code>; l’operatore <code>||</code> torna <code>true</code> se almeno una delle variabili è <code>true</code>; l’operatore <code>!</code> inverte il valore dell’operando: se è <code>true</code>, torna <code>false</code> e viceversa.</p>
+
+<p>Gli operatori binarii, o: <em>bitwise</em> permettono di effettuare delle operazioni sui valori binarii delle variabili:</p>
 
 <table>
   <thead>
@@ -269,12 +273,12 @@ post-decremento:8
     </tr>
     <tr>
       <td style="text-align: center">|</td>
-      <td style="text-align: center">OR inclusivo</td>
+      <td style="text-align: center">OR (inclusivo)</td>
       <td style="text-align: center">x | y</td>
     </tr>
     <tr>
       <td style="text-align: center">^</td>
-      <td style="text-align: center">OR esclusivo</td>
+      <td style="text-align: center">XOR (esclusivo)</td>
       <td style="text-align: center">x ^ y</td>
     </tr>
     <tr>
@@ -295,7 +299,13 @@ post-decremento:8
   </tbody>
 </table>
 
-<p>Gli operatori <em>di assegnazione</em> sono:</p>
+<p>L’operatore <code>&amp;</code> imposta a 1 un bit nel risultato se quel bit è 1 in entrambi gli operandi. 
+L’operatore <code>|</code> imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi. 
+L’operatore <code>^</code> imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi, ma non nell’altro. 
+L’operatore <code>~</code> inverte i bit dell’operando.
+Gli operatori <code>&lt;&lt;</code> e <code>&gt;&gt;</code> spostano rispettivamente a sinistra e a destra i bit dell’operando di destra per il numero di bit specificato dall’operando di destra.</p>
+
+<p>Gli operatori <em>di assegnazione</em> eseguono le operazioni che abbiamo visto finora e, in più, assegnano il valore risultante all’operando di sinistra:</p>
 
 <table>
   <thead>
@@ -363,6 +373,16 @@ post-decremento:8
     </tr>
   </tbody>
 </table>
+
+<p>Per esempio, l’esperessione:</p>
+
+<pre><code>x *= y
+</code></pre>
+
+<p>equivale a:</p>
+
+<pre><code>x = (x * y);
+</code></pre>
 
 <p>Il prossimo esempio mostra l’utilizzo e il risultato di ciascun operatore:</p>
 
@@ -475,6 +495,9 @@ x /= y = 12
 x %= y = 0
 
 </code></pre>
+<p>Adesso dimmi: quanto valgono, le variabili <code>x</code> e <code>y</code>, alla fine del programma?</p>
+
+<hr />
 
 <hr id="dottrina" />
 

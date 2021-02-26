@@ -54,16 +54,8 @@ post-incremento:7
 pre-decremento: 5
 post-decremento:8
 ```
-
-Gli operatori *logici* sono:
- 
-| nome  | descrizione  | esempio  |
-|:-:|:-:|:-:|
-| &&   | AND logico    | x && y |
-| \|\| | OR logico     | x \|\| y |
-| !    | NOT logico    | !(x && y) |
   
-Gli operatori *di relazione* sono:
+Gli operatori *di relazione* permettono di verificare il rapporto fra due variabili:
  
 | nome  | descrizione  | esempio  |
 |:-:|:-:|:-:|
@@ -74,18 +66,36 @@ Gli operatori *di relazione* sono:
 | >= | maggiore o uguale a | x >= y |
 | <= | minore o uguale a   | x <= y |
 
-Gli operatori binarii, o: *bitwise* sono:
+Questi operatori tornano un valore booleano, vero o falso a seconda che la condizione sia verificata o no.
+
+Gli operatori *logici* permettono di compiere delle operazioni booleane sulle variabili:
+ 
+| nome  | descrizione  | esempio  |
+|:-:|:-:|:-:|
+| &&   | AND logico    | x && y |
+| \|\| | OR logico     | x \|\| y |
+| !    | NOT logico    | !(x && y) |
+
+L'operatore `&&` torna `true` se entrambe le variabili sono `true`; l'operatore `||` torna `true` se almeno una delle variabili è `true`; l'operatore `!` inverte il valore dell'operando: se è `true`, torna `false` e viceversa.
+
+Gli operatori binarii, o: *bitwise* permettono di effettuare delle operazioni sui valori binarii delle variabili:
   
 | nome  | descrizione  | esempio  |
 |:-:|:-:|:-:|
 | &  | AND              | x & y  |
-| \| | OR inclusivo     | x \| y |
-| ^  | OR esclusivo     | x ^ y  |
+| \| | OR (inclusivo)   | x \| y |
+| ^  | XOR (esclusivo)  | x ^ y  |
 | ~  | NOT              | x ~ y  |
 | >> | shift a destra   | x >> y |
 | << | shift a sinistra | x << y |
 
-Gli operatori *di assegnazione* sono:
+L'operatore `&` imposta a 1 un bit nel risultato se quel bit è 1 in entrambi gli operandi. 
+L'operatore `|` imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi. 
+L'operatore `^` imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi, ma non nell'altro. 
+L'operatore `~` inverte i bit dell'operando.
+Gli operatori `<<` e `>>` spostano rispettivamente a sinistra e a destra i bit dell'operando di destra per il numero di bit specificato dall'operando di destra.  
+
+Gli operatori *di assegnazione* eseguono le operazioni che abbiamo visto finora e, in più, assegnano il valore risultante all'operando di sinistra:
  
 | nome  | descrizione  | esempio  |
 |:-:|:-:|:-:|
@@ -100,6 +110,18 @@ Gli operatori *di assegnazione* sono:
 | ^=  | OR esclusivo     | x ^= y  |
 | >>= | shift a destra   | x <= y  |
 | <<= | shift a sinistra | x <= y  |
+
+Per esempio, l'esperessione:
+
+```
+x *= y
+```
+
+equivale a:
+
+```
+x = (x * y);
+```
 
 Il prossimo esempio mostra l'utilizzo e il risultato di ciascun operatore:
 
@@ -152,6 +174,9 @@ x /= y = 12
 x %= y = 0
 
 ```
+Adesso dimmi: quanto valgono, le variabili `x` e `y`, alla fine del programma?
+
+---
 
 <hr id="dottrina">
 
