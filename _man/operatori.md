@@ -176,7 +176,17 @@ x %= y = 0
 ```
 Adesso dimmi: quanto valgono, le variabili `x` e `y`, alla fine del programma?
 
----
+<!--
+
+sizeof
+,
+()?:
+.
+->
+()
+&
+*
+-->
 
 <hr id="dottrina">
 
