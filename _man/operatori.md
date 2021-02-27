@@ -94,7 +94,7 @@ L'operatore `|` imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due
 L'operatore `^` imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi, ma non nell'altro. 
 L'operatore `~` inverte i bit dell'operando.
 Gli operatori `<<` e `>>` spostano rispettivamente a sinistra e a destra i bit dell'operando di destra per il numero di bit specificato dall'operando di destra.  
-
+<!-- @todo: spiegare a cosa servano -->
 Gli operatori *di assegnazione* eseguono le operazioni che abbiamo visto finora e, in più, assegnano il valore risultante all'operando di sinistra:
  
 | nome  | descrizione  | esempio  |
@@ -176,17 +176,60 @@ x %= y = 0
 ```
 Adesso dimmi: quanto valgono, le variabili `x` e `y`, alla fine del programma?
 
-<!--
+---
 
-sizeof
-,
-()?:
-.
-->
-()
-&
-*
--->
+Sono degli operatori anche i simboli: `sizeof`,  `,`,  `.`,  `->`,  `&`,  `*`,  `()` e `()?:`.  
+
+L'operatore `sizeof` lo abbiamo già visto parlando della <a href="/man/tipi-di-dato#sizeof">dimensione dei tipi di dato</a>, perché torna, appunto, la dimensione in  della variabile o del tipo di dato che riceve come parametro.  
+L'operatore di *cast* `()` permette di modificare il tipo di una variabile e lo abbiamo già utilizzato nella classe `Animale`, quando abbiamo parlato del <a href="/man/c-plus-plus#cast">polimorfismo</a>:
+
+```
+const char getSesso() const {        
+    return (char)_sesso;
+} 
+```
+
+L'operatore condizionale `()?:` è l'unico operatore ternario del C++ e permette di scegliere fra due espressioni a seconda dell'esito di una condizione.
+La sua sintassi è:
+
+```
+(<condizione>) ? <istruzione vero> : <istruzione falso>
+```
+
+Scrivere:
+
+```
+x = (a > b) ? 4 : 5;
+```
+
+equivale a scrivere:
+
+```
+if(a > b) {
+    x = 4;
+} else {
+    x = 5;
+}
+```
+
+L'operatore virgola `,` serve ad alterare il modo in cui vengono valutate le espressioni. 
+Quando due o più espressioni sono separate dall’operatore virgola, i risultati delle espressioni a sinistra sono ignorati e viene mantenuto solo il risultato dell'espressione più a destra.
+In questa espressione, per esempio, alle variabili `a` e `b` è prima assegnato il valore 1 e poi la variabile `b` è incrementata di 2:
+
+```
+a = b = 1, b = b + 2;                      
+```
+
+il valore finale di `a` e `b` sarà quindi di 1 e 3, mentre nell'espressione qui sotto sarà di 1 e 2:
+
+```
+a = b = 1, b = b + 2, b = b - 1;          
+```
+
+Gli operatori `.` e `->` servono a identificare i membri di una classe o di un altro dato aggregato. 
+Se  ti ricordi (ne dubito), li abbiamo utilizzati parlando del <a href="/man/c-plus-plus#membro">polimorfismo</a> e li utilizzeremo quando ci occuperemo delle classi.  
+Gli operatori `&` e `*`, infine,  
+
 
 <hr id="dottrina">
 

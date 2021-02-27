@@ -5,3 +5,5 @@ Non è stettamente necessario, perché hanno un valore prevalentemente simbolico
 
 @todo - Sarebbe comodo trasformare Vue da applicazione Java in applicazione Web.
 Non è un lavoro particolarmente complesso (per le funzionalità di base), ma bisogna prima studiarsi il codice.
+
+@todo - codice - Uniformare i codice degli esempii, aqqgiungengo intestazione e commenti anche a quelli iniziali.

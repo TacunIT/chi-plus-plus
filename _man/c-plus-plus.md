@@ -129,6 +129,7 @@ FEMMINA: Specie:cavallo, Sesso:f, Razza:maremmano```
 
 Perché un linguaggio di programmazione possa dirsi *orientato agli oggetti*, però, oltre alle classi deve poter gestire l'*ereditarietà* e il *polimorfismo*.
 L'*ereditarietà* permette di definire dei nuove classi come estensione di classi esistenti: 
+<a id="cast"></a>
 
 ```
 class Animale {
@@ -229,27 +230,8 @@ public:
 ```
 
 Potremo creare degli oggetti di classe `Monta` con qualunque classe derivata:
-
 ```
-int main()
-{
-    Animale* cavallo  = new Cavallo("lipizzano", maschio);    
-    Animale* giumenta = new Cavallo("maremmano", femmina);    
-    Animale* asino    = new Asino("amiatino", maschio);
-    Animale* asina    = new Asino("sardo", femmina);
-
-    Monta puledro(cavallo, giumenta);
-    Monta ciuco(asino, asina);
-    Monta mulo(asino, giumenta);
-    Monta bardotto(cavallo, asina);
-
-    cout << "PULEDRO\n"  << puledro  << endl;
-    cout << "CIUCO\n"    << ciuco    << endl;
-    cout << "MULO\n"     << mulo     << endl;
-    cout << "BARDOTTO\n" << bardotto << endl;
-
-    return 0;              
-}
+{% include_relative src/cplusplus-polimorfismo.cpp %}
 ```
 
 Compilando ed esegendo il programma, otterrai:
@@ -295,7 +277,7 @@ cout << "BARDOTTO\n" << bardotto << endl;
 
 non è il massimo dell'efficienza, sia perché potremmo sbagliarci ad accoppiare la specie dei genitori con il nome del figlio, sia perché le istruzioni devono essere ripetute per ciascun oggetto. 
 Per risolvere il primo difetto possiamo aggiungere alla classe `Monta` un attributo e un metodo per definire autonomamente che tipo di genia venga prodotta dalla copula:
-
+<a id="membro"></a>
 ```
 string   _esito;
 void setEsito() {

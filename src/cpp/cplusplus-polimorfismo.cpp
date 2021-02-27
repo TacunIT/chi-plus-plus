@@ -1,3 +1,8 @@
+/** 
+ * @file src/cplusplus-polimorfismo.cpp
+ * Esempio di polimorfismo delle classi.
+ */
+
 #include <iostream>
 #include <ctime>
 
