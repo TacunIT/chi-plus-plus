@@ -303,9 +303,9 @@ post-decremento:8
 L’operatore <code>|</code> imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi. 
 L’operatore <code>^</code> imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi, ma non nell’altro. 
 L’operatore <code>~</code> inverte i bit dell’operando.
-Gli operatori <code>&lt;&lt;</code> e <code>&gt;&gt;</code> spostano rispettivamente a sinistra e a destra i bit dell’operando di destra per il numero di bit specificato dall’operando di destra.</p>
-
-<p>Gli operatori <em>di assegnazione</em> eseguono le operazioni che abbiamo visto finora e, in più, assegnano il valore risultante all’operando di sinistra:</p>
+Gli operatori <code>&lt;&lt;</code> e <code>&gt;&gt;</code> spostano rispettivamente a sinistra e a destra i bit dell’operando di destra per il numero di bit specificato dall’operando di destra.<br />
+<!-- @todo: spiegare a cosa servano -->
+Gli operatori <em>di assegnazione</em> eseguono le operazioni che abbiamo visto finora e, in più, assegnano il valore risultante all’operando di sinistra:</p>
 
 <table>
   <thead>
@@ -497,17 +497,53 @@ x %= y = 0
 </code></pre>
 <p>Adesso dimmi: quanto valgono, le variabili <code>x</code> e <code>y</code>, alla fine del programma?</p>
 
-<!--
+<hr />
 
-sizeof
-,
-()?:
-.
-->
-()
-&
-*
--->
+<p>Sono degli operatori anche i simboli: <code>sizeof</code>,  <code>,</code>,  <code>.</code>,  <code>-&gt;</code>,  <code>&amp;</code>,  <code>*</code>,  <code>()</code> e <code>()?:</code>.</p>
+
+<p>L’operatore <code>sizeof</code> lo abbiamo già visto parlando della <a href="/man/tipi-di-dato#sizeof">dimensione dei tipi di dato</a>, perché torna, appunto, la dimensione in  della variabile o del tipo di dato che riceve come parametro.<br />
+L’operatore di <em>cast</em> <code>()</code> permette di modificare il tipo di una variabile e lo abbiamo già utilizzato nella classe <code>Animale</code>, quando abbiamo parlato del <a href="/man/c-plus-plus#cast">polimorfismo</a>:</p>
+
+<pre><code>const char getSesso() const {        
+    return (char)_sesso;
+} 
+</code></pre>
+
+<p>L’operatore condizionale <code>()?:</code> è l’unico operatore ternario del C++ e permette di scegliere fra due espressioni a seconda dell’esito di una condizione.
+La sua sintassi è:</p>
+
+<pre><code>(&lt;condizione&gt;) ? &lt;istruzione vero&gt; : &lt;istruzione falso&gt;
+</code></pre>
+
+<p>Scrivere:</p>
+
+<pre><code>x = (a &gt; b) ? 4 : 5;
+</code></pre>
+
+<p>equivale a scrivere:</p>
+
+<pre><code>if(a &gt; b) {
+    x = 4;
+} else {
+    x = 5;
+}
+</code></pre>
+
+<p>L’operatore virgola <code>,</code> serve ad alterare il modo in cui vengono valutate le espressioni. 
+Quando due o più espressioni sono separate dall’operatore virgola, i risultati delle espressioni a sinistra sono ignorati e viene mantenuto solo il risultato dell’espressione più a destra.
+In questa espressione, per esempio, alle variabili <code>a</code> e <code>b</code> è prima assegnato il valore 1 e poi la variabile <code>b</code> è incrementata di 2:</p>
+
+<pre><code>a = b = 1, b = b + 2;                      
+</code></pre>
+
+<p>il valore finale di <code>a</code> e <code>b</code> sarà quindi di 1 e 3, mentre nell’espressione qui sotto sarà di 1 e 2:</p>
+
+<pre><code>a = b = 1, b = b + 2, b = b - 1;          
+</code></pre>
+
+<p>Gli operatori <code>.</code> e <code>-&gt;</code> servono a identificare i membri di una classe o di un altro dato aggregato. 
+Se  ti ricordi (ne dubito), li abbiamo utilizzati parlando del <a href="/man/c-plus-plus#membro">polimorfismo</a> e li utilizzeremo quando ci occuperemo delle classi.<br />
+Gli operatori <code>&amp;</code> e <code>*</code>, infine,</p>
 
 <hr id="dottrina" />
 

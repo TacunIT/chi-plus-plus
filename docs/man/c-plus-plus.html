@@ -196,7 +196,8 @@ FEMMINA: Specie:cavallo, Sesso:f, Razza:maremmano```
 </code></pre>
 
 <p>Perché un linguaggio di programmazione possa dirsi <em>orientato agli oggetti</em>, però, oltre alle classi deve poter gestire l’<em>ereditarietà</em> e il <em>polimorfismo</em>.
-L’<em>ereditarietà</em> permette di definire dei nuove classi come estensione di classi esistenti:</p>
+L’<em>ereditarietà</em> permette di definire dei nuove classi come estensione di classi esistenti: 
+<a id="cast"></a></p>
 
 <pre><code>class Animale {
 private:
@@ -293,8 +294,93 @@ public:
 </code></pre>
 
 <p>Potremo creare degli oggetti di classe <code>Monta</code> con qualunque classe derivata:</p>
+<pre><code>/** 
+ * @file src/cplusplus-polimorfismo.cpp
+ * Esempio di polimorfismo delle classi.
+ */
 
-<pre><code>int main()
+#include &lt;iostream&gt;
+#include &lt;ctime&gt;
+
+using namespace std;
+
+typedef time_t Data;
+
+typedef enum _sesso {
+    maschio = 'm',
+    femmina = 'f'
+} Sesso;
+
+class Animale {
+private:
+    string _razza;
+    Sesso  _sesso;
+public:
+    virtual const char* getSpecie() const {
+        return ""; 
+    } 
+    const char getSesso() const {        
+        return (char)_sesso;
+    } 
+    const char* getRazza() const {
+        return _razza.c_str();
+    }
+    Animale() {}
+    Animale(const char* razza, const Sesso sesso ) {
+        _razza  = razza;
+        _sesso  = sesso;
+    }
+};
+
+ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animale&amp; animale) {
+    os  &lt;&lt; "Specie:" &lt;&lt; animale.getSpecie() &lt;&lt; "\t"
+        &lt;&lt; "Razza:"  &lt;&lt; animale.getRazza()  &lt;&lt; "\t"
+        &lt;&lt; "Sesso:"  &lt;&lt; animale.getSesso()  &lt;&lt; endl;
+    return os;   
+}
+
+class Cavallo : public Animale {
+public:
+    const char* getSpecie() const {
+        return "Cavallo"; 
+    }     
+    Cavallo() {}
+    Cavallo(const char* razza, const Sesso sesso )
+    : Animale(razza, sesso ) { 
+    }
+};
+
+class Asino : public Animale {
+public:
+    const char* getSpecie() const {
+        return "Asino"; 
+    }     
+    Asino() {}
+    Asino(const char* razza, const Sesso sesso )
+    : Animale(razza, sesso ) { 
+    }
+};
+
+class Monta {
+private:
+    Animale* _maschio;
+    Animale* _femmina;
+    Data     _giorno;
+public:
+    Monta(Animale* maschio, Animale* femmina) {
+        _maschio = maschio;
+        _femmina = femmina;
+        time(&amp;_giorno);
+    }
+    friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula) {
+        os &lt;&lt; "DATA: "    &lt;&lt; asctime(localtime(&amp;copula._giorno)) 
+           &lt;&lt; "MASCHIO: " &lt;&lt; *copula._maschio 
+           &lt;&lt; "FEMMINA: " &lt;&lt; *copula._femmina;
+           return os;   
+     };
+};
+
+int main()
 {
     Animale* cavallo  = new Cavallo("lipizzano", maschio);    
     Animale* giumenta = new Cavallo("maremmano", femmina);    
@@ -304,15 +390,16 @@ public:
     Monta puledro(cavallo, giumenta);
     Monta ciuco(asino, asina);
     Monta mulo(asino, giumenta);
-    Monta bardotto(cavallo, asina);
+    Monta bardotto(asina, cavallo);
 
     cout &lt;&lt; "PULEDRO\n"  &lt;&lt; puledro  &lt;&lt; endl;
     cout &lt;&lt; "CIUCO\n"    &lt;&lt; ciuco    &lt;&lt; endl;
     cout &lt;&lt; "MULO\n"     &lt;&lt; mulo     &lt;&lt; endl;
     cout &lt;&lt; "BARDOTTO\n" &lt;&lt; bardotto &lt;&lt; endl;
 
-    return 0;              
+    return 0;               
 }
+
 </code></pre>
 
 <p>Compilando ed esegendo il programma, otterrai:</p>
@@ -355,8 +442,8 @@ cout &lt;&lt; "BARDOTTO\n" &lt;&lt; bardotto &lt;&lt; endl;
 </code></pre>
 
 <p>non è il massimo dell’efficienza, sia perché potremmo sbagliarci ad accoppiare la specie dei genitori con il nome del figlio, sia perché le istruzioni devono essere ripetute per ciascun oggetto. 
-Per risolvere il primo difetto possiamo aggiungere alla classe <code>Monta</code> un attributo e un metodo per definire autonomamente che tipo di genia venga prodotta dalla copula:</p>
-
+Per risolvere il primo difetto possiamo aggiungere alla classe <code>Monta</code> un attributo e un metodo per definire autonomamente che tipo di genia venga prodotta dalla copula:
+<a id="membro"></a></p>
 <pre><code>string   _esito;
 void setEsito() {
     if(strcmp(_maschio-&gt;getSpecie(),"Asino") == 0) {

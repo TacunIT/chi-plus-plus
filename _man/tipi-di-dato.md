@@ -59,7 +59,7 @@ Ricordatelo, perché questo è la chiave di tutto.
 ---
 
 La dimensione di memoria associata a ciascun tipo di dato non è fissa, ma può variare a seconda del sistema in cui stai lavorando.
-Il codice qui sotto ti permette di conoscere la dimensione in byte dei tipi di dato scalari:
+Il codice qui sotto ti permette di conoscere la dimensione in byte dei tipi di dato scalari:<a id="sizeof"></a>
 
 ```
 {% include_relative src/tipi-di-dato-dimensione.cpp %}
