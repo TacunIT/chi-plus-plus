@@ -1,3 +1,10 @@
+## 0.20.4 (March 01, 2021)
+  - Completata la sezione sugli operatori
+  - Aggiunta descrizione degli operatori sizeof ecc.
+  - Iniziato paragrafo su operatori non di calcolo
+  - Completato paragrafo iniziale sugli operattori
+  - Redazione paragrafo su operatori aritmetici
+
 ## 0.20.3 (February 22, 2021)
   - Aggiunto codice di esempio per operatori
   - Rinominata directory _etc in _var
