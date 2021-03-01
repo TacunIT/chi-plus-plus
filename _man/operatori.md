@@ -228,16 +228,31 @@ a = b = 1, b = b + 2, b = b - 1;
 
 Gli operatori `.` e `->` servono a identificare i membri di una classe o di un altro dato aggregato. 
 Se  ti ricordi (ne dubito), li abbiamo utilizzati parlando del <a href="/man/c-plus-plus#membro">polimorfismo</a> e li utilizzeremo quando ci occuperemo delle classi.  
-Gli operatori `&` e `*`, infine,  
+Gli operatori `&` e `*`, infine, tornano, rispettivamente, l'indirizzo di memoria di una variabile e un puntatore a una variabile:
 
+```
+{% include_relative src/operatori-altri.cpp %}
+```
+
+Se compili ed esegui questo codice, otterrai:
+
+```
+> g++ src/cpp/operatori-altri.cpp -o src/out/esempio 
+> src/out/esempio                                    
+&a: 0x7ffee65bba5c
+sa: 4
+sp: 8
+t : 9
+c : $
+```
 
 <hr id="dottrina">
 
 
-È impossibile definire in maniera assoluta i concetti di *vero* e di *falso*, se non facendo riferimento a sistemi di ordine superiore.
+All'interno di un sistema, è impossibile definire in maniera assoluta i concetti di *vero* e di *falso*, se non facendo riferimento a sistemi di ordine superiore.
 
 Possiamo definire "falso" il contrario di "vero", ma non potendo definire il concetto di "vero", non possiamo sapere cosa sia il suo contrario.
-La ragione per cui non possiamo definire il concetto di "vero" è che farlo implica una ricorsione: quale che sia la definizione prescelta prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo (ancora) cosa sia, effettivamente, "vero".  
+La ragione per cui non possiamo definire il concetto di "vero" è che farlo implica una ricorsione: quale che sia la definizione prescelta, prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo (ancora) cosa sia, effettivamente, "vero".  
 Bertrand Russell disse che la condizione di “vero” o di “falso” è uno stato dell'organismo, determinato da condizioni esterne all'organismo. Questo è vero anche per i computer: “vero” e “falso” sono stati possibili per un'istruzione e dipendono per lo più da cause esterne all'istruzione stessa. La cosa interessante, in questo caso, è che “vero” e “falso” sono anche delle convenzioni che esulano del tutto dal contesto specifico del sistema. Per Access, “falso” è -1; per le prime versioni di MySQL è 'f'; per Postgres o Oracle, è 0. Il computer, però, non ha IN SE' il concetto di “vero” o di “falso”, ma solo l'associazione del valore booleano *false* a una determinata sequenza di bit. Il concetto di “vero” e di “falso”, quindi, è un valore simbolico che NOI inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è propio del nostro mondo.   
 
 Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia vero perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.
