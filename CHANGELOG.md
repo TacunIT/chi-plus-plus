@@ -1,3 +1,6 @@
+## 0.20.5 (March 05, 2021)
+  - Redazione del testo della dottrina per il capitolo Operatori
+
 ## 0.20.4 (March 01, 2021)
   - Completata la sezione sugli operatori
   - Aggiunta descrizione degli operatori sizeof ecc.
