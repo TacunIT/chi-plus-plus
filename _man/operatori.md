@@ -227,7 +227,7 @@ a = b = 1, b = b + 2, b = b - 1;
 ```
 
 Gli operatori `.` e `->` servono a identificare i membri di una classe o di un altro dato aggregato. 
-Se  ti ricordi (ne dubito), li abbiamo utilizzati parlando del <a href="/man/c-plus-plus#membro">polimorfismo</a> e li utilizzeremo quando ci occuperemo delle classi.  
+Se  ti ricordi (ne dubito), li abbiamo visti per la prima volta parlando del <a href="/man/c-plus-plus#membro">polimorfismo</a> e li utilizzeremo quando ci occuperemo delle classi.  
 Gli operatori `&` e `*`, infine, tornano, rispettivamente, l'indirizzo di memoria di una variabile e un puntatore a una variabile:
 
 ```
@@ -249,11 +249,20 @@ c : $
 <hr id="dottrina">
 
 
-All'interno di un sistema, è impossibile definire in maniera assoluta i concetti di *vero* e di *falso*, se non facendo riferimento a sistemi di ordine superiore.
+La definizione dei concetti di *vero* e di *falso* è sempre frutto di un arbitrio. È inevitabile.
+Possiamo definire *falso* come il contrario di *vero*, ma non possiamo dedurre o inferire il concetto di *vero* perché, quale che sia la definizione prescelta, prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo (ancora) cosa sia, effettivamente, *vero*.    
+Probabilmente, è per questo che Bertrand Russell disse che la condizione di *vero* o di *falso* è uno stato dell'organismo, determinato da condizioni esterne all'organismo<a href="/man/note#russell" class="nota"></a>; un'affermazione vera.. pardon: *valida* anche per i computer: i valori booleani *vero* e *falso* sono due stati possibili per un'istruzione e dipendono per lo più da cause esterne all'istruzione stessa. 
+La cosa interessante, in questo caso, è che *vero* e *falso* sono anche delle convenzioni che esulano del tutto dal contesto specifico del sistema. 
+Prendi per esempio gli RDBMS<a href="/man/note#rdbms" class="nota"></a>: per *Access*, il valore booleano *falso* è `-1`; per le prime versioni di *MySQL* è `f`; per Postgres o Oracle, è `0`. 
+Il computer non ha *in sé* il concetto di *vero* o di *falso*, ma solo l'associazione dei valori booleani *true* e *false* a una determinata sequenza di bit. 
+*Vero* e di *falso*, quindi, sono dei valori simbolici che noi inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è proprio del nostro mondo; un riferimento esogeno che può generare delle apparenti conraddizioni come, per esempio, il fatto che tutti i valori digitali siano basati su grandezze analogiche (la carica magnetica di un nastro, un'infossatura nella superificie di un CD o la tensione all'interno di un circuito), o dei veri e proprii paradossi, come il fatto che, nelle schede perforate, il valore `1` sia associato al vuoto del foro, mentre il valore `0` sia associato alla presenza della carta; di fatto, una negazione logica (operatore `!`) della realtà.  
+Questi paradossi, apparenti o reali che siano, non causano alcun problema al sistema, a patto vengano condivisi da tutti gli attori al suo interno. 
+Il paradosso delle schede perforate (buco = 0, carta = 1) era condiviso sia dalle macchine Hollerit che dalle perforatrici delle schede, perciò, le elaborazioni che ne derivavano erano corrette, indipendentemente dal valore relativo attribuito ai concetti di *vero* e di *falso* all'interno del sistema.
+Da questo punto di vista, potremmo essere d'accordo con William James, quando dice che un'idea è *vera* fintanto che credere in essa è utile per le nostre vite. 
 
-Possiamo definire "falso" il contrario di "vero", ma non potendo definire il concetto di "vero", non possiamo sapere cosa sia il suo contrario.
-La ragione per cui non possiamo definire il concetto di "vero" è che farlo implica una ricorsione: quale che sia la definizione prescelta, prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo (ancora) cosa sia, effettivamente, "vero".  
-Bertrand Russell disse che la condizione di “vero” o di “falso” è uno stato dell'organismo, determinato da condizioni esterne all'organismo. Questo è vero anche per i computer: “vero” e “falso” sono stati possibili per un'istruzione e dipendono per lo più da cause esterne all'istruzione stessa. La cosa interessante, in questo caso, è che “vero” e “falso” sono anche delle convenzioni che esulano del tutto dal contesto specifico del sistema. Per Access, “falso” è -1; per le prime versioni di MySQL è 'f'; per Postgres o Oracle, è 0. Il computer, però, non ha IN SE' il concetto di “vero” o di “falso”, ma solo l'associazione del valore booleano *false* a una determinata sequenza di bit. Il concetto di “vero” e di “falso”, quindi, è un valore simbolico che NOI inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è propio del nostro mondo.   
+---
+
+La condivisione di presupposti errati negli umani, al contrario, non dà quasi mai esiti positivi.
 
 Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia vero perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.
 Se invece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosé; pensa che sia vero perché è scritto nella Bibbia, che è la Parola di Dio.
@@ -284,17 +293,10 @@ Quando gli chiesi perché avesse scelto proprio quelle regole, mi rispose: “Se
 
 <!--
 
-| **aritmetici**   | `+` `-` `*` `/` `%` `++` `--` |
-| **logici**       | `&&` `||` `!`  |
-| **relazione**    | `==` `!=` `<` `>` `<=` `>=` |
-| **bitwise**      | `&` `|` `^` `~` `<<`  `>>` |
-| **assegnazione** | `=` `+=` `-=` `*=` `/=` `%=` `&=` `|=` `^=` `>>=` `<<=`  |
 
-Da questo punto di vista, potremmo essere d'accordo con William James, quando dice che un'idea è "vera" fintanto che credere in essa è utile per le nostre vite. 
 
 “Il pendolo della mente oscilla tra senso e non senso, non tra giusto e sbagliato.” - Carl Jung-
 
-Ho messo intenzionalmente il capitolo sull'algebra booleana DOPO quello sugli operatori per dimostrare come i concetti di vero/falso giusto/sbagliato debbano essere definiti per prima cosa
 
 Mettere qui tutto quello che attiene all'etica.
 

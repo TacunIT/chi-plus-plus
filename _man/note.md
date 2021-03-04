@@ -70,6 +70,17 @@ quote:
 
     <h3>Gli operatori</h3>
     <ol>
+        <li id="russell">
+            <i>Questi esempi indicano un’oggettività nella verità e nella falsità: ciò che è vero (o falso) è uno stato dell’organismo, ma in genere è vero (o falso) a motivo di avvenimenti esterni all’organismo.</i><br/>
+            B. <span>Russell</span>
+            <i>Storia della filosofia occidentale</i>,
+            Longanesi, Milano, 2014
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>
+        <li id="rdbms">
+            RDBMS, acronimo di: <i>Relational Data Base Management System</i>
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>
         <li id="jefferson">
             Anche io valido le mie affermazioni riferendomi a una fonte che si presuppone autorevole:  
             Robert M. S. <span>McDonald</span>. 

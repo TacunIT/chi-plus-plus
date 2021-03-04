@@ -7,6 +7,25 @@ permalink:  /man/polimorfismo
 quote:      Non puoi immergere i tuoi byte due volte nello stesso stream
 ---
 
+Ciascuna forma di vita consociata, per poter sopravvivere, richiede la
+legittimazione di alcune follie biologiche.
+
+Il rispetto di queste follie, essendo in-naturale, richiede
+l'istituzione di un livello superiore di costrizione, ovvero un corpo di
+regole formali ancora più distante del precedente dal comportamento
+biologico degli esseri viventi.
+
+Con il passare del tempo, molte di queste convenzioni nate in seguito a
+esigenze contingenti, finiscono inevitabilmente per contrastare con il
+senso comune di giustizia e devono essere o abolite o modificate, solo
+che ciascuna modifica o adattamento invece di renderle più "giuste", le
+allontana ulteriormente dal loro scòpo iniziale e le rende soggette a
+interpretazioni errate o addirittura opposte a quelle che era il loro
+fine primario.
+
+Sant'Agostino ha detto la stessa cosa, ma molto meglio di quanto stia
+facendo io adesso.
+
 
 <!--
 
