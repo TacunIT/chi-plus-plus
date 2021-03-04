@@ -262,11 +262,10 @@ Da questo punto di vista, potremmo essere d'accordo con William James, quando di
 
 ---
 
-La condivisione di presupposti errati negli umani, al contrario, non dà quasi mai esiti positivi.
-
-Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia vero perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.
-Se invece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosé; pensa che sia vero perché è scritto nella Bibbia, che è la Parola di Dio.
-Se infine lo chiedi a un paladino del laicismo, ti risponderà che l'omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev'essere vero, perché le nostre Leggi applicano i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di liberà e uguaglianza della *Dichiarazione dei Diritti dell’Uomo e del Cittadino* francese, che a sua volta si rifaceva alla *Dichiarazione di Indipendenza* americana, che a sua volta riprendeva le idee di Locke e Montesquieu<a href="/man/note#jefferson" class="nota"></a>.    
+Anche gli esseri umani, come i computer, devono riferire i concetti di *vero* e di *falso* a dei valori preesistenti.  
+Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia vero perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.  
+Se invece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosé; loro pensano che sia vero perché è scritto nella Bibbia, che è la Parola di Dio.
+Se infine lo chiedi a un paladino del laicismo, ti risponderà che l'omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev'essere vero, perché le nostre Leggi applicano i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di libertà e uguaglianza della *Dichiarazione dei Diritti dell’Uomo e del Cittadino* francese, che a sua volta si rifaceva alla *Dichiarazione di Indipendenza* americana, che a sua volta riprendeva le idee di Locke e Montesquieu<a href="/man/note#jefferson" class="nota"></a>.    
 Nessuna di queste affermazioni è valida di per sé: sono tutte fondate su una qualche forma di fede &mdash; religiosa o laica che sia &mdash; in chi ha promulgato la Legge o il principio.
 Sfortunatamente, però, queste persone sono state anche le prime a non tenerne conto: Mosé, con i Comandamenti ancora freschi di stampa, chiese ai figli di Levi: 
 
@@ -311,10 +310,6 @@ la negazione e il paradosso come metodo per comprendere ciò che non è di per s
 
 Parlare del male che diventa bene, fare esempio dell'idiota che ha sparat un razzo nel locale  di Ginevra dandogli fuoco, ma causando la composizione di Smoke on the water.
 O della stronza di Ipanema, che ha reso ricco Jobim
-
-La Dichiarazione di Indipendenza americana, che è la base  comincia con queste parole:
-
-    We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.
 
 Nella Lettera agli artisti, Giovanni Paolo II utilizza i termini \'buono\' e \'bello\', ma li definisce in maniera ricorsiva, l\'uno in funzione dell\'altro. 
 
