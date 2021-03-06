@@ -77,8 +77,7 @@ quote:
             Longanesi, Milano, 2014
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
-        <li id="rdbms">
-            RDBMS, acronimo di: <i>Relational Data Base Management System</i>
+        <li id="">
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="jefferson">
