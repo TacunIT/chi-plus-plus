@@ -405,7 +405,7 @@ BODY.manuale FOOTER {
 }
 BODY.manuale.copertina MAIN {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 15vh;
 }
 BODY.manuale.copertina MAIN IMG.logo {
     width: 300px;
