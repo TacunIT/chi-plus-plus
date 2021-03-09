@@ -1,10 +1,10 @@
 ---
-status:     redazione
+status:     pubblicato
 layout:     manuale
 class:      capitolo
 title:      Gli operatori
 permalink:  /man/operatori
-quote:      "And what is TRUE, Phaedrus,<br />And what is FALSE<br />Need we ask anyone to tell us these things?"
+quote:      "And what is <code>TRUE</code>, Phaedrus,<br />And what is <code>FALSE</code><br />Need we ask anyone to tell us these things?"
 ---
 
 La varietà e soprattutto l'adattabilità degli operatori sono la caratteristica principale del C++.  
@@ -36,7 +36,7 @@ Gli operatori *aritmetici* sono quelli che permettono di eseguire delle comuni o
 | ++  | incremento      | x++   |  
 | --  | decremento      | y--   |   
 
-L'operatore modulo `%` permette di calcolare il resto della divisione fra due interi (15 % 4 = 3) e non può essere utilizzato quindi con numeri in virgola mobile.  
+L'operatore modulo `%` permette di calcolare il resto della divisione fra due interi (per esempio: ```15 % 4 = 3```) e non può essere utilizzato con numeri in virgola mobile.  
 Gli operatori di incremento `++` e decremento `--` permettono di aumentare o di diminuire di un'unità il valore di una variabile.
 Quando questi operatori precedono la variabile, l'incremento o il decremento è calcolato immediatamente; se invece compaiono dopo la variabile, l'operazione di incremento o decremento avviene dopo il suo utilizzo:
 
@@ -66,9 +66,15 @@ Gli operatori *di relazione* permettono di verificare il rapporto fra due variab
 | >= | maggiore o uguale a | x >= y |
 | <= | minore o uguale a   | x <= y |
 
-Questi operatori tornano un valore booleano, vero o falso a seconda che la condizione sia verificata o no.
+Questi operatori tornano un valore booleano, vero o falso a seconda che la condizione sia verificata o no.  
+L'operatore `==` torna `true` se gli operandi sono uguali, come nel verso: 
 
-Gli operatori *logici* permettono di compiere delle operazioni booleane sulle variabili:
+> Io vidi il mio Signore con l'occhio del cuore. 
+Gli chiesi: chi sei? 
+Rispose: Te!
+ 
+L'operatore `!=` torna `true` se gli operandi non sono uguali; gli operatori `>` e `<` tornano `true`, rispettivamente, se l'operatore a sinistra è maggiore o minore dell'operando a destra; gli operatori `>=` e `<=` tornano `true` se l'operando a sinistra è maggiore o uguale oppure minore o uguale a quello a destra.  
+Gli operatori *logici* permettono di compiere delle operazioni di logica booleana sulle variabili:
  
 | nome  | descrizione  | esempio  |
 |:-:|:-:|:-:|
@@ -76,8 +82,7 @@ Gli operatori *logici* permettono di compiere delle operazioni booleane sulle va
 | \|\| | OR logico     | x \|\| y |
 | !    | NOT logico    | !(x && y) |
 
-L'operatore `&&` torna `true` se entrambe le variabili sono `true`; l'operatore `||` torna `true` se almeno una delle variabili è `true`; l'operatore `!` inverte il valore dell'operando: se è `true`, torna `false` e viceversa.
-
+L'operatore `&&` torna `true` se entrambe le variabili sono `true`; l'operatore `||` torna `true` se almeno una delle variabili è `true`; l'operatore `!` inverte il valore dell'operando: se è `true`, torna `false` e viceversa.  
 Gli operatori binarii, o: *bitwise* permettono di effettuare delle operazioni sui valori binarii delle variabili:
   
 | nome  | descrizione  | esempio  |
@@ -94,7 +99,7 @@ L'operatore `|` imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due
 L'operatore `^` imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi, ma non nell'altro. 
 L'operatore `~` inverte i bit dell'operando.
 Gli operatori `<<` e `>>` spostano rispettivamente a sinistra e a destra i bit dell'operando di destra per il numero di bit specificato dall'operando di destra.  
-<!-- @todo: spiegare a cosa servano -->
+<!-- @todo: spiegare a cosa servano e perché siano utili per "rispettare" la memoria del computer -->
 Gli operatori *di assegnazione* eseguono le operazioni che abbiamo visto finora e, in più, assegnano il valore risultante all'operando di sinistra:
  
 | nome  | descrizione  | esempio  |
@@ -178,9 +183,8 @@ Adesso dimmi: quanto valgono, le variabili `x` e `y`, alla fine del programma?
 
 ---
 
-Sono degli operatori anche i simboli: `sizeof`,  `,`,  `.`,  `->`,  `&`,  `*`,  `()` e `()?:`.  
-
-L'operatore `sizeof` lo abbiamo già visto parlando della <a href="/man/tipi-di-dato#sizeof">dimensione dei tipi di dato</a>, perché torna, appunto, la dimensione in  della variabile o del tipo di dato che riceve come parametro.  
+Sono degli operatori anche i simboli: `sizeof`,  `,`,  `.`,  `->`,  `&`,  `*`,  `()` e `()?:`.
+L'operatore `sizeof` lo abbiamo già visto parlando della <a href="/man/tipi-di-dato#sizeof">dimensione dei tipi di dato</a>, perché torna, appunto, la dimensione, in byte, della variabile o del tipo di dato che riceve come parametro.  
 L'operatore di *cast* `()` permette di modificare il tipo di una variabile e lo abbiamo già utilizzato nella classe `Animale`, quando abbiamo parlato del <a href="/man/c-plus-plus#cast">polimorfismo</a>:
 
 ```
@@ -202,7 +206,7 @@ Scrivere:
 x = (a > b) ? 4 : 5;
 ```
 
-equivale a scrivere:
+è un modo elegante di scrivere:
 
 ```
 if(a > b) {
@@ -246,28 +250,43 @@ t : 9
 c : $
 ```
 
+<!-- @todo: aggiungere nota su overload degli operatori -->
+
 <hr id="dottrina">
 
-
 La definizione dei concetti di *vero* e di *falso* è sempre frutto di un arbitrio. È inevitabile.
-Possiamo definire *falso* come il contrario di *vero*, ma non possiamo dedurre o inferire il concetto di *vero* perché, quale che sia la definizione prescelta, prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo (ancora) cosa sia, effettivamente, *vero*.    
-Probabilmente, è per questo che Bertrand Russell disse che la condizione di *vero* o di *falso* è uno stato dell'organismo, determinato da condizioni esterne all'organismo<a href="/man/note#russell" class="nota"></a>; un'affermazione vera.. pardon: *valida* anche per i computer: i valori booleani *vero* e *falso* sono due stati possibili per un'istruzione e dipendono per lo più da cause esterne all'istruzione stessa. 
-La cosa interessante, in questo caso, è che *vero* e *falso* sono anche delle convenzioni che esulano del tutto dal contesto specifico del sistema. 
-Prendi per esempio gli RDBMS<a href="/man/note#rdbms" class="nota"></a>: per *Access*, il valore booleano *falso* è `-1`; per le prime versioni di *MySQL* è `f`; per Postgres o Oracle, è `0`. 
+Possiamo definire *falso* come il contrario di *vero*, ma non possiamo dedurre o inferire il concetto di *vero* perché, quale che sia la definizione prescelta, prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo ancora cosa sia, effettivamente, *vero*.    
+Bertrand Russell disse che la condizione di *vero* o di *falso* è uno stato dell'organismo, determinato da condizioni esterne all'organismo;<a href="/man/note#russell" class="nota"></a> è un'affermazione vera.. o, meglio, *valida* anche per i computer: i valori booleani *vero* e *falso* sono due stati possibili per un'istruzione e spesso dipendono da condizioni esterne all'istruzione stessa, come la presenza di un file o un'azione dell'utente.
+La cosa interessante è che, anche per i computer, i valori che vengono interpretati come *vero* e *falso* sono del tutto arbitrarii e spesso specifici per un dato sistema. 
+Prendi per esempio i programmi che gestiscono le basi di dati: per *Access*, il valore booleano *false* è `-1`; per le prime versioni di *MySQL* è `f`; per Postgres o Oracle, è `0`.  
 Il computer non ha *in sé* il concetto di *vero* o di *falso*, ma solo l'associazione dei valori booleani *true* e *false* a una determinata sequenza di bit. 
-*Vero* e di *falso*, quindi, sono dei valori simbolici che noi inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è proprio del nostro mondo; un riferimento esogeno che può generare delle apparenti conraddizioni come, per esempio, il fatto che tutti i valori digitali siano basati su grandezze analogiche (la carica magnetica di un nastro, un'infossatura nella superificie di un CD o la tensione all'interno di un circuito), o dei veri e proprii paradossi, come il fatto che, nelle schede perforate, il valore `1` sia associato al vuoto del foro, mentre il valore `0` sia associato alla presenza della carta; di fatto, una negazione logica (operatore `!`) della realtà.  
+*Vero* e di *falso*, quindi, sono dei valori simbolici che noi inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è proprio del nostro mondo; un riferimento esogeno che può generare delle apparenti conraddizioni come, per esempio, il fatto che tutti i valori digitali siano basati su grandezze analogiche (la carica magnetica di un nastro, un'infossatura nella superificie di un CD o la tensione all'interno di un circuito), o dei veri e proprii paradossi, come il fatto che, nelle schede perforate, il valore `1` sia associato al vuoto del foro, mentre il valore `0` sia associato alla presenza della carta; di fatto, una negazione logica della realtà.  
 Questi paradossi, apparenti o reali che siano, non causano alcun problema al sistema, a patto vengano condivisi da tutti gli attori al suo interno. 
-Il paradosso delle schede perforate (buco = 0, carta = 1) era condiviso sia dalle macchine Hollerit che dalle perforatrici delle schede, perciò, le elaborazioni che ne derivavano erano corrette, indipendentemente dal valore relativo attribuito ai concetti di *vero* e di *falso* all'interno del sistema.
-Da questo punto di vista, potremmo essere d'accordo con William James, quando dice che un'idea è *vera* fintanto che credere in essa è utile per le nostre vite. 
+Il paradosso delle schede perforate (buco = 0, carta = 1) era condiviso sia dalle macchine Hollerith che dalle perforatrici delle schede, perciò, le elaborazioni che ne derivavano erano corrette, indipendentemente dal valore relativo attribuito ai concetti di *vero* e di *falso* all'interno del sistema.
+Da questo punto di vista, non possiamo che dare ragione a William James, quando dice che un'idea è *vera* fintanto che credere in essa è utile per le nostre vite. 
 
 ---
 
-Anche gli esseri umani, come i computer, devono riferire i concetti di *vero* e di *falso* a dei valori preesistenti.  
-Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia vero perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.  
+Anche gli esseri umani, come i computer, devono riferire le proprie convinzioni a schemi di valori preesistenti perché buona parte dei principii e dei valori su cui modelliamo la nostra e l'altrui esistenza non hanno un riscontro oggettivo nei fatti: sono solo convizioni o convenzioni che abbiamo deciso di adottare, così come il fatto che `true` equivalga al valore binario `000000001` e `false` a `00000000`.  
+Prendi la ricchezza, per esempio: si dice che i soldi non danno la felicità ed è vero; nemmeno essere poveri rende felici, ma questo non lo dice nessuno.
+Comunque, una delle persone più ricche che ho conosciuto non poteva avere figli.
+Possedeva case in diversi Paesi, uno yacht e perfino un aereo personale, ma non poteva avere qualcosa che anche l'uomo più povero della Terra può facilmente ottenere.
+Che senso aveva, la sua ricchezza? Era reale?  
+Si definisce: *prestigio* qualcosa che sembra ciò che non è, come i giochi degli illusionisti, mentre *successo* non è che il participio passato del verbo *succedere*: tutto ciò che è avvenuto in passato è, per definizione, “successo”; malgrado ciò, molte persone dedicano la propria vita alla ricerca o dell'uno o dell'altro o di entrambi.
+La *fama* è altrettanto aleatoria: quante persone sono state famose e ora sono dimenticate? 
+Gli inventori della ruota e del fuoco hanno cambiato per sempre la storia della nostra specie e del mondo con le loro scoperte, ma nessuno sa chi siano stati.
+In tempi più recenti, il pittore Giovanni Baglione fu molto famoso, alla fine del sediccesimo Secolo, ma se ci ricordiamo di lui oggi è solo per via dei suoi rapporti con Caravaggio e, comunque, la loro fama terminerà con la nostra specie, insieme a quella di Shakespeare, Leonardo o Einstein.  
+Non sono inconsistenti solo i valori mondani, come fama successo o denaro, ma anche quelli che consideriamo usualmente “nobili”, come il rispetto della vita altrui.
+Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia vero perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.
 Se invece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosé; loro pensano che sia vero perché è scritto nella Bibbia, che è la Parola di Dio.
-Se infine lo chiedi a un paladino del laicismo, ti risponderà che l'omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev'essere vero, perché le nostre Leggi applicano i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di libertà e uguaglianza della *Dichiarazione dei Diritti dell’Uomo e del Cittadino* francese, che a sua volta si rifaceva alla *Dichiarazione di Indipendenza* americana, che a sua volta riprendeva le idee di Locke e Montesquieu<a href="/man/note#jefferson" class="nota"></a>.    
-Nessuna di queste affermazioni è valida di per sé: sono tutte fondate su una qualche forma di fede &mdash; religiosa o laica che sia &mdash; in chi ha promulgato la Legge o il principio.
-Sfortunatamente, però, queste persone sono state anche le prime a non tenerne conto: Mosé, con i Comandamenti ancora freschi di stampa, chiese ai figli di Levi: 
+Se infine lo chiedi a un paladino del laicismo, ti risponderà che l'omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev'essere vero, perché le nostre Leggi applicano i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di libertà e uguaglianza della *Dichiarazione dei Diritti dell’Uomo e del Cittadino* francese, che a sua volta si rifaceva alla *Dichiarazione di Indipendenza* americana, che a sua volta riprendeva le idee di Locke e Montesquieu.  
+Nessuna di queste affermazioni è valida di per sé: sono tutte fondate su una qualche forma di fede &mdash; religiosa o laica che sia &mdash; in chi ha promulgato la Legge o il Principio.  
+È, applicato all'etica, lo stesso meccanismo che si utilizza per certificare un server Web. 
+Quando tu accedi al sito Web della tua banca, sai che è davvero il server della tua banca perché possiede un certificato digitale che attesta la sua identità, firmato digitalmente da un ente certificatore detto *Certification Authority* (o, più brevemente: *CA*).
+Tu sai che l'ente certificatore è davvero chi dice di essere perché anche lui ha un suo certificato, firmato da un'altro ente certificatore, chiamato: *root CA*.
+La *root CA* garantisce per la CA intermedia che a sua volta garantisce per la tua banca.
+Sfortunatamente, però, né i legislatori né i loro certificatori ideologici sono sottoposti alle regole e ai controlli che deve rispettare una *Certification Authority* e spesso è accaduto che chi ha definito delle regole sia stato anche il primo a non tenerne conto.  
+Mosé, con il sesto Comandamento ancora fresco di stampa, chiese ai figli di Levi: 
 
 > Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a href="/man/note#levi" class="nota"></a> 
 
@@ -281,48 +300,17 @@ I Francesi, il cui motto era:
 > Liberté, Égalité, Fraternité
 
 hanno applicato questi principii a colpi di ghigliottina.
-L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="/man/note#armi" class="nota"></a> e che violano costantemente quelle stesse regole da loro promosse.     
-Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi, dalle convinzioni<a href="/man/note#self-evident" class="nota"></a> di un gruppo di credenti<a href="/man/note#credenti" class="nota"></a>, non vuol dire che siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva; possiamo solo accettarli per fede, così come i dogmi religiosi.  
-Si sceglie un ethos perché rende migliore la nostra vita, non perché ci sta simpatico l'autore.
+L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="/man/note#armi" class="nota"></a> e che violano costantemente quelle stesse regole da loro promosse.  
+Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi, dalle convinzioni<a href="/man/note#self-evident" class="nota"></a> di un gruppo di credenti<a href="/man/note#credenti" class="nota"></a>, non vuol dire che siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva; possiamo solo accettarli per fede, così come i dogmi religiosi.
+*Scegliamo* di credere in uno schema di valori, così come potremmo scegliere di credere negli UFO: non abbiamo convinzioni innate, se non l'egoismo.  
+Le persone per bene hanno una cosa in comune con i malandrini: pensano che il resto del Mondo sia come loro, ma si sbagliano.
+Noi troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.  
+Per gli autori della *Dichiarazione di Indipendenza* era *self-evident* che tutti gli uomini fossero stati creati uguali, ma sei Stati del Sud, nelle loro Costituzioni, precisarono che si stava parlando di uomini liberi, non degli schiavi<a href="/man/note#freemen" class="nota"></a>.  
+I nazisti utilizzarono le macchine Hollerith per censire e sterminare gli ebrei; furono anche aggiunte delle colonne alle schede perforate per poter gestire i dati relativi alla religione<a href="/man/note#black" class="nota"></a>.
+Noi oggi critichiamo sia loro sia chi li aiutò a farlo, ma forse i nostri nipoti criticheranno noi per la tolleranza che abbiamo mostrato nei confronti di chi ci vende il petrolio per le nostre automobili; la stessa tolleranza che loro mostreranno a chi li rifornirà di materie prime per le batterie, o di acqua.
+
+---
+
+Scegliamo un ethos perché rende migliore la nostra vita, non perché ci sta simpatico l'autore.
 Il Maestro Canaro, per esempio, era convinto che il Libro dell'Esodo fosse il resoconto di un esperimento alieno su una popolazione isolata nel deserto per due generazioni (“capisci: la circoncisione serviva a identificare i maschi e l'appartenenza al gruppo era stabilita in base alla madre perché così era verificabile grazie ai mitocondri”); ciò non ostante, regolava la sua vita e le sue decisioni in base ai dieci Comandamenti di Mosé. 
 Quando gli chiesi perché avesse scelto proprio quelle regole, mi rispose: “Se li avessi seguiti anche da giovane, adesso avrei molti rimorsi in meno.” 
-
-
-
-
-<!--
-
-
-
-“Il pendolo della mente oscilla tra senso e non senso, non tra giusto e sbagliato.” - Carl Jung-
-
-
-Mettere qui tutto quello che attiene all'etica.
-
-@todo: Riprendere i concetti visti nel Manfesto a proposito delle ideologie dell'ultimo cinquantennio quando si parla di vero e falso
-
-Operatore == “Io vidi il mio Signore con l'occhio del cuore. Gli chiesi: chi sei? Rispose: Te!”.  
-'Attar, Farid al-din. Il verbo degli uccelli (Mantiq al-Tayr) 
-
-### operatore di negazione
-
-la negazione e il paradosso come metodo per comprendere ciò che non è di per sé evidente
-
-Parlare del male che diventa bene, fare esempio dell'idiota che ha sparat un razzo nel locale  di Ginevra dandogli fuoco, ma causando la composizione di Smoke on the water.
-O della stronza di Ipanema, che ha reso ricco Jobim
-
-Nella Lettera agli artisti, Giovanni Paolo II utilizza i termini \'buono\' e \'bello\', ma li definisce in maniera ricorsiva, l\'uno in funzione dell\'altro. 
-
-> La bellezza è in un certo senso l'espressione visibile del bene, come il bene è la condizione metafisica della bellezza.
-
-Stesso discorso per il concetto di \'Arte\'
-Bizzarro, perché la stessa cosa avviene, in condizioni diametralmente opposte, in "Un'etica senza Dio" di Lecaldano, dove ci si appella a concetti di 'buono' e 'giusto' senza definirli.
-
-Differenza con i manuali SW (in cui i termini utilizzati sono tutti definiti) e le le classi C++
-
-Nota 7 (S.Gregorio++)
-
-Tutto ciò non vuol dire che non esistano il vero e il falso, ma solo che i nostri strumenti dialettici sono inadeguati a descriverli.
-
-
--->
