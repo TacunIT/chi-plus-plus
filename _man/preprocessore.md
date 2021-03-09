@@ -17,7 +17,6 @@ Negli esempi precedenti abbiamo visto alcune istruzioni particolari, perché han
 #define NO_ERRORI    0
 #define NO_PARAMETRI 1
 ```
-<!-- @todo - verificare come mai questo brano di codice non appaia formattato correttamente in Chrome, Opera e Firefox mentre è visualizzato correttamente da Safari. Il font è monospace e l'allineamento del paragrafo è a sinistra -->
 
 Queste istruzioni sono delle *direttive al pre-processore* e possono essere di tre tipi:
 
@@ -216,10 +215,14 @@ colore RGB: verde
 
 <hr id="dottrina">
 
+<!-- 
+    @todo: 
+    ricollegarsi al tema del capitolo precedente, specificando che l'amore è una delle poche cose in cui crediamo che esiste davvero;
+-->
 L'amore è un difetto di fabbrica.  
 Più che un difetto, è una bomba a tempo, che viene inserita di nascosto nel tuo software, per essere certi che farai la cosa giusta quando arriverà il momento.
 Ti sei mai innamorato?
-No? be' succederà.
+No? be', succederà.
 Ci sono due modi, di innamorarsi: o conosci una persona e te ne innamori o conosci una persona e scopri che è lei (o lui) che hai sempre amato.
 Il primo è il caso più comune; il secondo caso, non è un caso.  
 Il Maestro Canaro una volta disse (ma non credo fosse farina del suo sacco):
@@ -234,8 +237,7 @@ Sfortunatamente, questo non vuol dire che la vostra storia durerà o che vivrete
 Il Cielo non è interessato alla tua felicità, ma al miglioramento, che, come ogni forma di crescita, ha il suo prezzo.
 Tutti sanno che il Maestro Canaro risolse il *Koan Mu* in una notte di profondo dolore dopo la morte di un cane di nome Lele.
 Molti, per ciò, ritengono il cane Lele un *Bodhisattva* che diede la vita per generare nel Maestro la prima scintilla dell'Illuminazione.
-Hanno ragione, ma solo in parte.
-La morte del cane Lele fu solo una delle cause dell'amarezza di quella notte.
+Hanno ragione, ma solo in parte, perché la morte del cane Lele fu solo una delle cause dell'amarezza di quella notte.
 Il Maestro Canaro mi disse che buona parte del dolore era stato causato da una donna, che lui amava e dalla quale era stato ferito.
 Il motivo per cui me lo raccontò è lo stesso per cui io lo sto raccontando ora a te: anni dopo, quando il Maestro aveva già definito le basi del C'hi++, lui tornò da quella donna e la ringraziò per il torto che gli aveva fatto, perché lo aveva messo nella condizione d'animo necessaria a capire qualcosa a cui altrimenti avrebbe potuto non arrivare mai.  
 Ringraziare chi ci fa del bene con azioni gentili fa parte dell'educazione; ringraziare chi ci fa del bene attraverso il male non è facile, ma è necessario per far sì che quell'azione venga ripetuta anche nelle prossime esistenze.

@@ -87,7 +87,7 @@ Se lo passiamo come parametro all'operatore `<<`, dato che si tratta di un punta
 cout << stringa << endl;
 ```
 
-Per conoscere il suo valore effettivo, dobbiamo convertirlo in un puntatore `void` con un'operazione di <a class="nota" href="/man/tipi-di-dato#casting">casting</a>: 
+Per conoscere il suo valore effettivo, dobbiamo convertirlo in un puntatore `void` con un'operazione di <a href="/man/tipi-di-dato#casting">casting</a>: 
 
 ```
 cout << (void*)stringa << endl;
@@ -153,7 +153,7 @@ Tutte queste creazioni, nel tempo, hanno creato un bozzolo culturale che, da un 
 Negli ultimi due secoli, però, la Scienza ha squarciato questo bozzolo, privando gli esseri umani delle loro bugie confortanti e sostituendole con delle certezze inquietanti, mentre il suo figlio scemo (il Movimento del '68) ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società senza darle nulla in cambio, tranne la minigonna.    
 C'è un aneddoto apocrifo sul Maestro Canaro che parla proprio di questo:
 
-<blockquote class="incluso">
+<blockquote class="incluso" id="zia">
 {{ site.data.canaro.computer-zia }}
 </blockquote>
 
@@ -175,7 +175,7 @@ La religione è come gli antibiotici: non fa effetto se non prendi la dose inter
 
 <i>Depressione:</i> la sindrome depressiva è la seconda malattia più diffusa al Mondo, dopo i disturbi cardiaci, segno evidente che la fase di negoziazione non ha sortito gli effetti sperati.
 Fallito ogni tentativo di combattere la realtà, l'Uomo del terzo Millennio  ha cercato scampo nella fuga.
-Così come il Giappone dei Tokugawa, si è rinchiuso in sé stesso, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a class="nota" href="/man/note#sakoku"></a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
+Così come il Giappone dei Tokugawa, si è rinchiuso in sé stesso<a class="nota" href="/man/note#isolamento"></a>, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a class="nota" href="/man/note#sakoku"></a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
 La realtà è ovunque e anche isolandoci non possiamo sfuggirle; anzi: la solitudine genera un *feedback* che amplifica lo stato di malessere e rende ancora più difficile e improbabile il raggiungimento dello stadio successivo.
 
 <i>Accettazione:</i> il solo modo per salvarsi è rinunciare agli insegnamenti dei cattivi maestri del passato e accettare il fatto di non essere delle gocce d'acqua uniche e insostituibili, ma di far parte del mare.
