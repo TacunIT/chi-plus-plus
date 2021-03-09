@@ -63,7 +63,7 @@
                 Gli operatori
             </h1>
 
-            <blockquote class="motto">And what is TRUE, Phaedrus,<br />And what is FALSE<br />Need we ask anyone to tell us these things?</blockquote>
+            <blockquote class="motto">And what is <code>TRUE</code>, Phaedrus,<br />And what is <code>FALSE</code><br />Need we ask anyone to tell us these things?</blockquote>
 
             <section id="testo">
 
@@ -507,9 +507,8 @@ x %= y = 0
 
 <hr />
 
-<p>Sono degli operatori anche i simboli: <code>sizeof</code>,  <code>,</code>,  <code>.</code>,  <code>-&gt;</code>,  <code>&amp;</code>,  <code>*</code>,  <code>()</code> e <code>()?:</code>.</p>
-
-<p>L’operatore <code>sizeof</code> lo abbiamo già visto parlando della <a href="/man/tipi-di-dato#sizeof">dimensione dei tipi di dato</a>, perché torna, appunto, la dimensione in  della variabile o del tipo di dato che riceve come parametro.<br />
+<p>Sono degli operatori anche i simboli: <code>sizeof</code>,  <code>,</code>,  <code>.</code>,  <code>-&gt;</code>,  <code>&amp;</code>,  <code>*</code>,  <code>()</code> e <code>()?:</code>.
+L’operatore <code>sizeof</code> lo abbiamo già visto parlando della <a href="/man/tipi-di-dato#sizeof">dimensione dei tipi di dato</a>, perché torna, appunto, la dimensione, in byte, della variabile o del tipo di dato che riceve come parametro.<br />
 L’operatore di <em>cast</em> <code>()</code> permette di modificare il tipo di una variabile e lo abbiamo già utilizzato nella classe <code>Animale</code>, quando abbiamo parlato del <a href="/man/c-plus-plus#cast">polimorfismo</a>:</p>
 
 <pre><code>const char getSesso() const {        
@@ -528,7 +527,7 @@ La sua sintassi è:</p>
 <pre><code>x = (a &gt; b) ? 4 : 5;
 </code></pre>
 
-<p>equivale a scrivere:</p>
+<p>è un modo elegante di scrivere:</p>
 
 <pre><code>if(a &gt; b) {
     x = 4;
@@ -618,15 +617,15 @@ c : $
 <hr id="dottrina" />
 
 <p>La definizione dei concetti di <em>vero</em> e di <em>falso</em> è sempre frutto di un arbitrio. È inevitabile.
-Possiamo definire <em>falso</em> come il contrario di <em>vero</em>, ma non possiamo in alcun modo stabilite quale sia il concetto di <em>vero</em> perché, quale che sia la definizione prescelta, prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo ancora cosa sia, effettivamente, <em>vero</em>.  <br />
-Probabilmente, è per questo che Bertrand Russell disse che la condizione di <em>vero</em> o di <em>falso</em> è uno stato dell’organismo, determinato da condizioni esterne all’organismo<a href="/man/note#russell" class="nota"></a>; un’affermazione vera.. o meglio: <em>valida</em> anche per i computer. 
-I valori booleani <em>vero</em> e <em>falso</em> sono due stati possibili per un’istruzione che specco dipendono da condizioni esterne all’istruzione stessa, come la presenza di un file o un’azione dell’utente.
-La cosa interessante è che i valori che vengono interpretati come <em>vero</em> e <em>falso</em> sono del tutto arbitrarii e spesso specifici per un dato sistema. 
+Possiamo definire <em>falso</em> come il contrario di <em>vero</em>, ma non possiamo dedurre o inferire il concetto di <em>vero</em> perché, quale che sia la definizione prescelta, prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo ancora cosa sia, effettivamente, <em>vero</em>.  <br />
+Probabilmente, è per questo che Bertrand Russell disse che la condizione di <em>vero</em> o di <em>falso</em> è uno stato dell’organismo, determinato da condizioni esterne all’organismo;<a href="/man/note#russell" class="nota"></a> un’affermazione vera.. o meglio: <em>valida</em> anche per i computer. 
+I valori booleani <em>vero</em> e <em>falso</em> sono due stati possibili per un’istruzione che spesso dipendono da condizioni esterne all’istruzione stessa, come la presenza di un file o un’azione dell’utente.
+La cosa interessante è che, anche per i computer, i valori che vengono interpretati come <em>vero</em> e <em>falso</em> sono del tutto arbitrarii e spesso specifici per un dato sistema. 
 Prendi per esempio i programmi che gestiscono le basi di dati: per <em>Access</em>, il valore booleano <em>false</em> è <code>-1</code>; per le prime versioni di <em>MySQL</em> è <code>f</code>; per Postgres o Oracle, è <code>0</code>.<br />
 Il computer non ha <em>in sé</em> il concetto di <em>vero</em> o di <em>falso</em>, ma solo l’associazione dei valori booleani <em>true</em> e <em>false</em> a una determinata sequenza di bit. 
 <em>Vero</em> e di <em>falso</em>, quindi, sono dei valori simbolici che noi inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è proprio del nostro mondo; un riferimento esogeno che può generare delle apparenti conraddizioni come, per esempio, il fatto che tutti i valori digitali siano basati su grandezze analogiche (la carica magnetica di un nastro, un’infossatura nella superificie di un CD o la tensione all’interno di un circuito), o dei veri e proprii paradossi, come il fatto che, nelle schede perforate, il valore <code>1</code> sia associato al vuoto del foro, mentre il valore <code>0</code> sia associato alla presenza della carta; di fatto, una negazione logica della realtà.<br />
 Questi paradossi, apparenti o reali che siano, non causano alcun problema al sistema, a patto vengano condivisi da tutti gli attori al suo interno. 
-Il paradosso delle schede perforate (buco = 0, carta = 1) era condiviso sia dalle macchine Hollerit che dalle perforatrici delle schede, perciò, le elaborazioni che ne derivavano erano corrette, indipendentemente dal valore relativo attribuito ai concetti di <em>vero</em> e di <em>falso</em> all’interno del sistema.
+Il paradosso delle schede perforate (buco = 0, carta = 1) era condiviso sia dalle macchine Hollerith che dalle perforatrici delle schede, perciò, le elaborazioni che ne derivavano erano corrette, indipendentemente dal valore relativo attribuito ai concetti di <em>vero</em> e di <em>falso</em> all’interno del sistema.
 Da questo punto di vista, non possiamo che dare ragione a William James, quando dice che un’idea è <em>vera</em> fintanto che credere in essa è utile per le nostre vite.</p>
 
 <hr />
@@ -639,18 +638,18 @@ Che senso aveva, la sua ricchezza? Era reale?<br />
 Si definisce: <em>prestigio</em> qualcosa che sembra ciò che non è, come i giochi degli illusionisti, mentre <em>successo</em> non è che il participio passato del verbo <em>succedere</em>: tutto ciò che è avvenuto in passato è, per definizione, “successo”; malgrado ciò, molte persone dedicano la propria vita alla ricerca o dell’uno o dell’altro o di entrambi.
 La fama è altrettanto aleatoria: quante persone sono state famose e ora sono dimenticate? 
 Gli inventori della ruota e del fuoco hanno cambiato per sempre la storia della nostra specie e del mondo con le loro scoperte, ma nessuno sa chi siano stati.
-In tempi più recenti, il pittore Giovanni Baglione fu estremamente famoso, alla fine del sediccesimo Secolo, ma se ci ricordiamo di lui oggi è solo per via dei suoi rapporti con Caravaggio e, comunque, la loro fama terminerà con la nostra specie, insieme a quella di Shakespeare, Leonardo o Einstein.<br />
+In tempi più recenti, il pittore Giovanni Baglione fu molto famoso, alla fine del sediccesimo Secolo, ma se ci ricordiamo di lui oggi è solo per via dei suoi rapporti con Caravaggio e, comunque, la loro fama terminerà con la nostra specie, insieme a quella di Shakespeare, Leonardo o Einstein.<br />
 Non sono inconsistenti solo i valori mondani, come fama successo o denaro, ma anche quelli che consideriamo usualmente “nobili”, come il rispetto della vita altrui.
 Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia vero perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell’Universo.
 Se invece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosé; loro pensano che sia vero perché è scritto nella Bibbia, che è la Parola di Dio.
-Se infine lo chiedi a un paladino del laicismo, ti risponderà che l’omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev’essere vero, perché le nostre Leggi applicano i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di libertà e uguaglianza della <em>Dichiarazione dei Diritti dell’Uomo e del Cittadino</em> francese, che a sua volta si rifaceva alla <em>Dichiarazione di Indipendenza</em> americana, che a sua volta riprendeva le idee di Locke e Montesquieu<a href="/man/note#jefferson" class="nota"></a>.<br />
+Se infine lo chiedi a un paladino del laicismo, ti risponderà che l’omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev’essere vero, perché le nostre Leggi applicano i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di libertà e uguaglianza della <em>Dichiarazione dei Diritti dell’Uomo e del Cittadino</em> francese, che a sua volta si rifaceva alla <em>Dichiarazione di Indipendenza</em> americana, che a sua volta riprendeva le idee di Locke e Montesquieu.<br />
 Nessuna di queste affermazioni è valida di per sé: sono tutte fondate su una qualche forma di fede — religiosa o laica che sia — in chi ha promulgato la Legge o il principio.<br />
-È, applicato all’etica, lo stesso meccanismo che si utilizza per certificare un sito Web. 
-Quando tu accedi al server Web della tua banca, sai che è davvero il server della tua banca perché possiede un certificato digitale che attesta la sua identità.
-Questo certificato gli è stato assegnato da un Ente certificatore detto <em>Certification Authority</em> o, più brevemente: <em>CA</em> e tu sai che il certificato è legittimo, perché anche quello, a sua volta, è firmato digitalmente da un’altro Ente certificatore, chiamato: <em>root CA</em>.
+È, applicato all’etica, lo stesso meccanismo che si utilizza per certificare un server Web. 
+Quando tu accedi al sito Web della tua banca, sai che è davvero il server della tua banca perché possiede un certificato digitale che attesta la sua identità, firmato digitalmente da un ente certificatore detto <em>Certification Authority</em> (o, più brevemente: <em>CA</em>).
+Tu sai che l’ente certificatore è davvero chi dice di essere perché anche lui ha un suo certificato, firmato da un’altro ente certificatore, chiamato: <em>root CA</em>.
 La <em>root CA</em> garantisce per la CA intermedia che a sua volta garantisce per la tua banca.
 Sfortunatamente, però, né i legislatori né i loro certificatori ideologici sono sottoposti alle regole e ai controlli che deve rispettare una <em>Certification Authority</em> e spesso è accaduto che chi ha definito delle regole sia stato anche il primo a non tenerne conto.<br />
-Mosé, con i Comandamenti ancora freschi di stampa, chiese ai figli di Levi:</p>
+Mosé, con il sesto Comandamento ancora fresco di stampa, chiese ai figli di Levi:</p>
 
 <blockquote>
   <p>Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a href="/man/note#levi" class="nota"></a></p>
@@ -670,34 +669,20 @@ I Francesi, il cui motto era:</p>
 </blockquote>
 
 <p>hanno applicato questi principii a colpi di ghigliottina.
-L’ONU, che nel 1948 ha pubblicato la <em>Dichiarazione Universale dei Diritti Umani</em> ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="/man/note#armi" class="nota"></a> e che violano costantemente quelle stesse regole da loro promosse.   <br />
-Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi, dalle convinzioni<a href="/man/note#self-evident" class="nota"></a> di un gruppo di credenti<a href="/man/note#credenti" class="nota"></a>, non vuol dire che siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva; possiamo solo accettarli per fede, così come i dogmi religiosi.<br />
-Si sceglie un ethos perché rende migliore la nostra vita, non perché ci sta simpatico l’autore.
+L’ONU, che nel 1948 ha pubblicato la <em>Dichiarazione Universale dei Diritti Umani</em> ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="/man/note#armi" class="nota"></a> e che violano costantemente quelle stesse regole da loro promosse.
+Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi, dalle convinzioni<a href="/man/note#self-evident" class="nota"></a> di un gruppo di credenti<a href="/man/note#credenti" class="nota"></a>, non vuol dire che siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva; possiamo solo accettarli per fede, così come i dogmi religiosi.
+<em>Scegliamo</em> di credere in uno schema di valori, così come potremmo scegliere di credere negli UFO: non abbiamo convinzioni innate.  <br />
+Le persone per bene hanno una cosa in comune con i malandrini: pensano che il resto del Mondo sia come loro, ma si sbagliano.
+Noi troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti <em>in sé</em>.<br />
+Per gli autori della <em>Dichiarazione di Indipendenza</em> era <em>self-evident</em> che tutti gli uomini fossero stati creati uguali, ma sei Stati del Sud, nelle loro Costituzioni, precisarono che si stava parlando di uomini liberi, non degli schiavi<a href="/man/note#freemen" class="nota"></a>.<br />
+I nazisti utilizzarono le macchine Hollerith per censire e sterminare gli ebrei; furono anche aggiunte delle colonne alle schede perforate per poter gestire i dati relativi alla religione<a href="/man/note#black" class="nota"></a>.
+Noi oggi critichiamo loro e chi li aiutò a farlo, ma forse i nostri nipoti criticheranno noi per la tolleranza che abbiamo mostrato nei confronti di chi ci vende il petrolio per le nostre automobili.</p>
+
+<hr />
+
+<p>Scegliamo un ethos perché rende migliore la nostra vita, non perché ci sta simpatico l’autore.
 Il Maestro Canaro, per esempio, era convinto che il Libro dell’Esodo fosse il resoconto di un esperimento alieno su una popolazione isolata nel deserto per due generazioni (“capisci: la circoncisione serviva a identificare i maschi e l’appartenenza al gruppo era stabilita in base alla madre perché così era verificabile grazie ai mitocondri”); ciò non ostante, regolava la sua vita e le sue decisioni in base ai dieci Comandamenti di Mosé. 
 Quando gli chiesi perché avesse scelto proprio quelle regole, mi rispose: “Se li avessi seguiti anche da giovane, adesso avrei molti rimorsi in meno.”</p>
-
-<!--
-
-@todo: aggiungere il paragrafo su amore e arte
-
-Nella Lettera agli artisti, Giovanni Paolo II utilizza i termini \'buono\' e \'bello\', ma li definisce in maniera ricorsiva, l\'uno in funzione dell\'altro. 
-
-> La bellezza è in un certo senso l'espressione visibile del bene, come il bene è la condizione metafisica della bellezza.
-
-Stesso discorso per il concetto di \'Arte\'
-Bizzarro, perché la stessa cosa avviene, in condizioni diametralmente opposte, in "Un'etica senza Dio" di Lecaldano, dove ci si appella a concetti di 'buono' e 'giusto' senza definirli.
-
-
-
-Parlare del male che diventa bene, fare esempio dell'idiota che ha sparato un razzo nel locale  di Ginevra dandogli fuoco, ma causando la composizione di Smoke on the water.
-O della stronza di Ipanema, che ha reso ricco Jobim
-
-
-Differenza con i manuali SW (in cui i termini utilizzati sono tutti definiti) e le le classi C++
-
-Nota 7 (S.Gregorio++)
-
--->
 
 
             </section>
