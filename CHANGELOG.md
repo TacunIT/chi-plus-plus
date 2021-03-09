@@ -1,3 +1,6 @@
+## 0.20.6 (March 09, 2021)
+  - Completata prima stesura del capitolo sugli operatori
+
 ## 0.20.5 (March 05, 2021)
   - Redazione del testo della dottrina per il capitolo Operatori
 
