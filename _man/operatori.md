@@ -1,5 +1,5 @@
 ---
-status:     redazione
+status:     pubblicato
 layout:     manuale
 class:      capitolo
 title:      Gli operatori
@@ -36,7 +36,7 @@ Gli operatori *aritmetici* sono quelli che permettono di eseguire delle comuni o
 | ++  | incremento      | x++   |  
 | --  | decremento      | y--   |   
 
-L'operatore modulo `%` permette di calcolare il resto della divisione fra due interi (15 % 4 = 3) e non può essere utilizzato quindi con numeri in virgola mobile.  
+L'operatore modulo `%` permette di calcolare il resto della divisione fra due interi (per esempio: ```15 % 4 = 3```) e non può essere utilizzato con numeri in virgola mobile.  
 Gli operatori di incremento `++` e decremento `--` permettono di aumentare o di diminuire di un'unità il valore di una variabile.
 Quando questi operatori precedono la variabile, l'incremento o il decremento è calcolato immediatamente; se invece compaiono dopo la variabile, l'operazione di incremento o decremento avviene dopo il suo utilizzo:
 
@@ -67,14 +67,14 @@ Gli operatori *di relazione* permettono di verificare il rapporto fra due variab
 | <= | minore o uguale a   | x <= y |
 
 Questi operatori tornano un valore booleano, vero o falso a seconda che la condizione sia verificata o no.  
-L'operatore `==` torna `true` se gli operandi sono uguali: 
+L'operatore `==` torna `true` se gli operandi sono uguali, come nel verso: 
 
 > Io vidi il mio Signore con l'occhio del cuore. 
 Gli chiesi: chi sei? 
 Rispose: Te!
  
 L'operatore `!=` torna `true` se gli operandi non sono uguali; gli operatori `>` e `<` tornano `true`, rispettivamente, se l'operatore a sinistra è maggiore o minore dell'operando a destra; gli operatori `>=` e `<=` tornano `true` se l'operando a sinistra è maggiore o uguale oppure minore o uguale a quello a destra.  
-Gli operatori *logici* permettono di compiere delle operazioni booleane sulle variabili:
+Gli operatori *logici* permettono di compiere delle operazioni di logica booleana sulle variabili:
  
 | nome  | descrizione  | esempio  |
 |:-:|:-:|:-:|
@@ -83,7 +83,6 @@ Gli operatori *logici* permettono di compiere delle operazioni booleane sulle va
 | !    | NOT logico    | !(x && y) |
 
 L'operatore `&&` torna `true` se entrambe le variabili sono `true`; l'operatore `||` torna `true` se almeno una delle variabili è `true`; l'operatore `!` inverte il valore dell'operando: se è `true`, torna `false` e viceversa.  
-<!-- la negazione e il paradosso come metodo per comprendere ciò che non è di per sé evidente -->
 Gli operatori binarii, o: *bitwise* permettono di effettuare delle operazioni sui valori binarii delle variabili:
   
 | nome  | descrizione  | esempio  |
@@ -257,8 +256,7 @@ c : $
 
 La definizione dei concetti di *vero* e di *falso* è sempre frutto di un arbitrio. È inevitabile.
 Possiamo definire *falso* come il contrario di *vero*, ma non possiamo dedurre o inferire il concetto di *vero* perché, quale che sia la definizione prescelta, prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo ancora cosa sia, effettivamente, *vero*.    
-Probabilmente, è per questo che Bertrand Russell disse che la condizione di *vero* o di *falso* è uno stato dell'organismo, determinato da condizioni esterne all'organismo;<a href="/man/note#russell" class="nota"></a> un'affermazione vera.. o meglio: *valida* anche per i computer. 
-I valori booleani *vero* e *falso* sono due stati possibili per un'istruzione che spesso dipendono da condizioni esterne all'istruzione stessa, come la presenza di un file o un'azione dell'utente.
+Bertrand Russell disse che la condizione di *vero* o di *falso* è uno stato dell'organismo, determinato da condizioni esterne all'organismo;<a href="/man/note#russell" class="nota"></a> è un'affermazione vera.. o, meglio, *valida* anche per i computer: i valori booleani *vero* e *falso* sono due stati possibili per un'istruzione e spesso dipendono da condizioni esterne all'istruzione stessa, come la presenza di un file o un'azione dell'utente.
 La cosa interessante è che, anche per i computer, i valori che vengono interpretati come *vero* e *falso* sono del tutto arbitrarii e spesso specifici per un dato sistema. 
 Prendi per esempio i programmi che gestiscono le basi di dati: per *Access*, il valore booleano *false* è `-1`; per le prime versioni di *MySQL* è `f`; per Postgres o Oracle, è `0`.  
 Il computer non ha *in sé* il concetto di *vero* o di *falso*, ma solo l'associazione dei valori booleani *true* e *false* a una determinata sequenza di bit. 
@@ -275,14 +273,14 @@ Comunque, una delle persone più ricche che ho conosciuto non poteva avere figli
 Possedeva case in diversi Paesi, uno yacht e perfino un aereo personale, ma non poteva avere qualcosa che anche l'uomo più povero della Terra può facilmente ottenere.
 Che senso aveva, la sua ricchezza? Era reale?  
 Si definisce: *prestigio* qualcosa che sembra ciò che non è, come i giochi degli illusionisti, mentre *successo* non è che il participio passato del verbo *succedere*: tutto ciò che è avvenuto in passato è, per definizione, “successo”; malgrado ciò, molte persone dedicano la propria vita alla ricerca o dell'uno o dell'altro o di entrambi.
-La fama è altrettanto aleatoria: quante persone sono state famose e ora sono dimenticate? 
+La *fama* è altrettanto aleatoria: quante persone sono state famose e ora sono dimenticate? 
 Gli inventori della ruota e del fuoco hanno cambiato per sempre la storia della nostra specie e del mondo con le loro scoperte, ma nessuno sa chi siano stati.
 In tempi più recenti, il pittore Giovanni Baglione fu molto famoso, alla fine del sediccesimo Secolo, ma se ci ricordiamo di lui oggi è solo per via dei suoi rapporti con Caravaggio e, comunque, la loro fama terminerà con la nostra specie, insieme a quella di Shakespeare, Leonardo o Einstein.  
 Non sono inconsistenti solo i valori mondani, come fama successo o denaro, ma anche quelli che consideriamo usualmente “nobili”, come il rispetto della vita altrui.
 Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia vero perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.
 Se invece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosé; loro pensano che sia vero perché è scritto nella Bibbia, che è la Parola di Dio.
 Se infine lo chiedi a un paladino del laicismo, ti risponderà che l'omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev'essere vero, perché le nostre Leggi applicano i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di libertà e uguaglianza della *Dichiarazione dei Diritti dell’Uomo e del Cittadino* francese, che a sua volta si rifaceva alla *Dichiarazione di Indipendenza* americana, che a sua volta riprendeva le idee di Locke e Montesquieu.  
-Nessuna di queste affermazioni è valida di per sé: sono tutte fondate su una qualche forma di fede &mdash; religiosa o laica che sia &mdash; in chi ha promulgato la Legge o il principio.  
+Nessuna di queste affermazioni è valida di per sé: sono tutte fondate su una qualche forma di fede &mdash; religiosa o laica che sia &mdash; in chi ha promulgato la Legge o il Principio.  
 È, applicato all'etica, lo stesso meccanismo che si utilizza per certificare un server Web. 
 Quando tu accedi al sito Web della tua banca, sai che è davvero il server della tua banca perché possiede un certificato digitale che attesta la sua identità, firmato digitalmente da un ente certificatore detto *Certification Authority* (o, più brevemente: *CA*).
 Tu sai che l'ente certificatore è davvero chi dice di essere perché anche lui ha un suo certificato, firmato da un'altro ente certificatore, chiamato: *root CA*.
@@ -302,14 +300,14 @@ I Francesi, il cui motto era:
 > Liberté, Égalité, Fraternité
 
 hanno applicato questi principii a colpi di ghigliottina.
-L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="/man/note#armi" class="nota"></a> e che violano costantemente quelle stesse regole da loro promosse.
+L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="/man/note#armi" class="nota"></a> e che violano costantemente quelle stesse regole da loro promosse.  
 Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi, dalle convinzioni<a href="/man/note#self-evident" class="nota"></a> di un gruppo di credenti<a href="/man/note#credenti" class="nota"></a>, non vuol dire che siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva; possiamo solo accettarli per fede, così come i dogmi religiosi.
-*Scegliamo* di credere in uno schema di valori, così come potremmo scegliere di credere negli UFO: non abbiamo convinzioni innate.    
+*Scegliamo* di credere in uno schema di valori, così come potremmo scegliere di credere negli UFO: non abbiamo convinzioni innate, se non l'egoismo.  
 Le persone per bene hanno una cosa in comune con i malandrini: pensano che il resto del Mondo sia come loro, ma si sbagliano.
 Noi troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.  
 Per gli autori della *Dichiarazione di Indipendenza* era *self-evident* che tutti gli uomini fossero stati creati uguali, ma sei Stati del Sud, nelle loro Costituzioni, precisarono che si stava parlando di uomini liberi, non degli schiavi<a href="/man/note#freemen" class="nota"></a>.  
 I nazisti utilizzarono le macchine Hollerith per censire e sterminare gli ebrei; furono anche aggiunte delle colonne alle schede perforate per poter gestire i dati relativi alla religione<a href="/man/note#black" class="nota"></a>.
-Noi oggi critichiamo loro e chi li aiutò a farlo, ma forse i nostri nipoti criticheranno noi per la tolleranza che abbiamo mostrato nei confronti di chi ci vende il petrolio per le nostre automobili.
+Noi oggi critichiamo sia loro sia chi li aiutò a farlo, ma forse i nostri nipoti criticheranno noi per la tolleranza che abbiamo mostrato nei confronti di chi ci vende il petrolio per le nostre automobili; la stessa tolleranza che loro mostreranno a chi li rifornirà di materie prime per le batterie, o di acqua.
 
 ---
 
