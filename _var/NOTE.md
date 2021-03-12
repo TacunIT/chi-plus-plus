@@ -13,3 +13,8 @@ Differenza con i manuali SW (in cui i termini utilizzati sono tutti definiti) e 
 Nota 7 (S.Gregorio++)
 
 <!-- la negazione e il paradosso come metodo per comprendere ciò che non è di per sé evidente -->
+
+<!--
+    @todo - differenza fra verità epistemica e verità realista in Filosofia di House, pag. 100 e seguenti 
+    @todo - le teorie di Wittgenstein., secondo cui la metafisica è un uso pervertito del linguaggio, tocca che me la studio
+-->

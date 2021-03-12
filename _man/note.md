@@ -113,7 +113,21 @@ quote:
 
     <h3>Il preprocessore</h3>
     <ol>
-        <li id="dawkins">
+        <li id="steward">
+            <!-- @todo: rivedere formato della nota -->
+            Jacobellis, 378 U.S. at 197.<br />
+            Citato da P. <span>Gewirtz</span>, 
+            <i>On "I Know It When I See It"</i><br />
+            <a href="https://digitalcommons.law.yale.edu/fss_papers/1706" target="note">digitalcommons.law.yale.edu/fss_papers/1706</a>
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>
+        <li id="selfish">
+            R. <span>Dawkins</span>, 
+            <i>Il Gene Egoista</i>, 
+            Mondadori, Milano, 2010 
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>
+        <li id="orologiaio">
             <i>“Se un maschio ha ereditato dal padre una coda lunga, è probabile che abbia ereditato dalla madre anche i geni che l’hanno indotta a scegliere la coda lunga del padre”</i><br /> 
             R. <span>Dawkins</span>, 
             <i>L'Orologiaio Cieco</i>, 
