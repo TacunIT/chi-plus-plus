@@ -1,3 +1,6 @@
+## 0.21.0 (March 12, 2021)
+  - Revisione del capitolo sul preprocessore.
+
 ## 0.20.6 (March 09, 2021)
   - Completata prima stesura del capitolo sugli operatori
 
