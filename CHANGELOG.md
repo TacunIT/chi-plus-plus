@@ -1,3 +1,7 @@
+## 0.21.1 (March 14, 2021)
+  - Revisione del testo del capitolo Preprocessore.
+  - Aggiunte icone a menu per formati < 540
+
 ## 0.21.0 (March 12, 2021)
   - Revisione del capitolo sul preprocessore.
 
