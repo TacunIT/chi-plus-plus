@@ -280,7 +280,8 @@ HEADER NAV.menu-top A {
 /**
  *  Nasconde le icone nel menu delle pagine
  */
-BODY.pagina HEADER NAV.menu-top A I {
+BODY.pagina HEADER NAV.menu-top A I ,
+BODY.proposta HEADER NAV.menu-top A I {
     display: none;
 }
 
@@ -786,10 +787,12 @@ BODY.pagina.log  P.data {
  */
 @media only screen and (max-width: 540px) {
 
-    BODY.pagina HEADER NAV.menu-top A I {
+    BODY.pagina HEADER NAV.menu-top A I ,
+    BODY.proposta HEADER NAV.menu-top A I {
         display: initial;
     }
-    BODY.pagina HEADER NAV.menu-top A SPAN {
+    BODY.pagina HEADER NAV.menu-top A SPAN ,
+    BODY.proposta HEADER NAV.menu-top A SPAN {
         display: none;
     }
 }
