@@ -12,7 +12,7 @@ Eliminate tutte le cose meravigliose che l’immaginazione umana ha creato dal n
 </section>
 
 <b>C'hi++</b> è un tentativo di spiegare il significato dell'Esistenza nei termini dell'informatica.
-Questa miscela di spiritualità e tecnologia è presente sia nel nome *C'hi++*, che è un gioco di parole fra il termine giapponese *C'hi* e il linguaggio di programmazione chiamato: *C++*, sia nel modo in cui verrà gestita l'evoluzione della disciplina: lo stesso che viene utilizzato per il software *open-source*.
+Questa miscela di spiritualità e tecnologia è presente sia nel nome *C'hi++* &mdash; che è un gioco di parole fra il termine giapponese *C'hi* e il linguaggio di programmazione chiamato *C++* &mdash;, sia nel modo in cui verrà gestita l'evoluzione della disciplina: lo stesso che viene utilizzato per il software *open-source*.
 I precetti del C'hi++ saranno illustrati in un libro dal titolo:
 [*C'hi++ - Il senso della vita è il debug*](/man/)
 e sono riassunti nel testo:

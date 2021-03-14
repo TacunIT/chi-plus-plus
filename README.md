@@ -27,7 +27,7 @@ Le principali caratteristiche del C'hi++ sono:
 
 - **è portabile**: i precetti del *C'hi++* sono compatibili con precetti o idee appartenenti ad altre mistiche o filosofie;
 
-- **è sottoposta a versionamento**, così come avviene con il software, per poter gestire l'evoluzione della dottrina;
+- **è sottoposta a versionamento**, così come avviene con il software, per poter gestire l'evoluzione dei principii;
 
 - **non si propone come Unica Verità Incontestabile**, ma come un'approssimazione sicuramente incompleta e perfettibile della verità;
 
