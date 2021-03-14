@@ -1,3 +1,8 @@
+## 0.21.3 (March 14, 2021)
+  - Revisione delle directory
+  - Revisione del file README
+  - Rivisto testo dell'index
+
 ## 0.21.2 (March 14, 2021)
   - Corretto errore CSS per menu manuale
 
