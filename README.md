@@ -69,18 +69,18 @@ I file del progetto sono suddivisi nelle seguenti directory:
 
 | Nome  | Contenuto
 |---|---|
-|**_data**    | Directory dati standard di Jekyll.
+|**assets**   | Directory per i contenuti statici di Jekyll.
+|**bin**      | Script di gestione della cache o per il versionamento di Git.
+|**_data**    | Directory dati standard di Jekyll. Conteiene i file yml inclusi nel testo.
+|**docs**     | Directory di output del Manuale.
 |**_drafts**  | Bozze dei testi per un eventuale blog.
 |**_includes**| Directory di include standard di Jekyll.
 |**_layouts** | Directory per i layout di Jekyll.
-|**_man**     | Sorgenti del Manuale.
-|**_opt**     | Testi che non sono parte integrante del Manuale, come "Binario" o "Sostiene Aristotele".
+|**_man**     | Testi in formato Markdown del Manuale.
+|**_opt**     | Testi richiamati all'interno del Manuale, come "Binario" o "Sostiene Aristotele".
 |**_sass**    | Directory per i fogli di stile di Jekyll.
-|**_var**     | Testi da utilizzare nel manuale: note estratte dagli e-book Kindle, testo di "Dal C al C++"", ecc.
-|**assets**   | Directory per i contenuti statici di Jekyll.
-|**bin**      | Script di gestione della cache o per il versionamento di Git.
 |**src**      | File .cpp e .sql degli esempii del Manuale 
-|**docs**     | Directory di output del Manuale
+|**_var**     | Testi da utilizzare nel manuale: note estratte dagli e-book Kindle, testo di "Dal C al C++"", ecc.
 
 
 I file [CHANGELOG](CHANGELOG.md) e VERSION sono utilizzati per il controllo di versione con Git.
