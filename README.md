@@ -73,8 +73,8 @@ I file del progetto sono suddivisi nelle seguenti directory:
 |**_drafts**  | Bozze dei testi per un eventuale blog.
 |**_includes**| Directory di include standard di Jekyll.
 |**_layouts** | Directory per i layout di Jekyll.
-|**_man**     | Root directory del Manuale.
-|**_opt**     | Directory per i testi che non fanno parte del Manuale, come "I 10 Comandamenti" o "Sostiene Aristotele".
+|**_man**     | Sorgenti del Manuale.
+|**_opt**     | Testi che non sono parte integrante del Manuale, come "Binario" o "Sostiene Aristotele".
 |**_sass**    | Directory per i fogli di stile di Jekyll.
 |**_var**     | Testi da utilizzare nel manuale: note estratte dagli e-book Kindle, testo di "Dal C al C++"", ecc.
 |**assets**   | Directory per i contenuti statici di Jekyll.
