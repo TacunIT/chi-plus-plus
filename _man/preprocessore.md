@@ -1,5 +1,5 @@
 ---
-status:     redazione
+status:     pubblicato
 layout:     manuale
 class:      capitolo
 title:      Il preprocessore
@@ -218,7 +218,7 @@ colore RGB: verde
 Le tre forze che regolano la vita dell'Universo &mdash; Gravità, Entropia e Annosa Dicotomia &mdash; non influenzano solo la fisica, ma anche l'etica. 
 Esistono valori che potremmo definire: “entropici” e valori “gravitazionali”.
 I valori legati all'Entropia sono quelli che tendono a disgiungere e a esaltare il singolo rispetto alla massa, come la libertà, la ricchezza, il successo o la fama; i valori legati alla Gravità sono quelli che, al contrario, uniscono gli individui, come l'*égalité* e la *fraternité* dei Francesi, ma senza la ghigliottina.  
-Ieri abbiamo visto come i valori legati all'Entropia siano effimeri &mdash;  non potrebbe essere altrimenti, per una forza che tende alla disgregazione &mdash; e di come chi li persegua sia spesso vittima dell'Annosa Dicotomia, ma questo non vuol dire che li si debba ripudiare.
+<a href="/man/operatori#effimeri" class="ref">Ieri</a> abbiamo visto come i valori legati all'Entropia siano effimeri &mdash;  non potrebbe essere altrimenti, per una forza che tende alla disgregazione &mdash; e di come chi li persegua sia spesso vittima dell'Annosa Dicotomia, ma questo non vuol dire che li si debba ripudiare.
 Non fare l'errore di pensare che ci sia una forza buona e una cattiva, come in *Star Wars*: sia la Gravità che l'Entropia sono necessarie per una corretta evoluzione dell'Universo.
 Il Maestro Canaro, che anche in tarda età amava molto andare in bicicletta, una volta mi disse che l'equilibrio dell'Universo è come l'equilibrio di un ciclista che percorra una strada sterrata in salita: non deve tenere il peso troppo in avanti, perché altrimenti la ruota posteriore perderebbe trazione e comincerebbe a slittare, ma non deve nemmeno tenere il peso troppo indietro, perché altrimenti la ruota anteriore si alleggerirebbe e non sarebbe più possibile sterzare.  
 Considerata la rispettabile quantità di cadute e contusioni collezionate dal Maestro Canaro nel corso delle sue escursioni in sella, ti consiglio di valutare solo il valore metaforico di questo insegnamento, ovvero che ci deve essere un bilanciamento fra Gravità ed Entropia, perché senza la Gravità, l'Universo è inutile, ma senza l'Entropia è noioso. 
@@ -228,11 +228,11 @@ Molte persone pensano che amore e arte siano dei concetti vaghi e aleatorii, ma 
 
 > I shall not today attempt further to define the kinds of material I understand to be embraced within that shorthand description; and perhaps I could never succeed in intelligibly doing so. But I know it when I see it, and the motion picture involved in this case is not that.<a href="/man/note/#steward" class="nota"></a>
 
-Questo approccio entropico/soggettivo è chiaramente sbagliato: tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente da chi le ascolta o le utilizza. 
-Così come la parola: *pesce*, per quanto banale, può non avere lo stesso valore per un biologo marino, un ecologista o per un pescatore, anche la parola *arte* può assumere significati diversi per un gallerista, per un artista o per un Papa.
-È altrettanto sbagliata l'interpretazione entropico/romantica che comunemente si attribuisce alle parole: *amore* e *arte*.  
+Questo approccio entropico/soggettivo, per quanto corretto nel caso di *Les Amants*, è chiaramente sbagliato in termini generali: tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente da chi le ascolta o le utilizza. 
+Così come la parola: *pesce*, per quanto banale, può non avere lo stesso valore per un biologo marino, un ecologista o per un pescatore, anche la parola *arte* può assumere significati diversi per un gallerista, per un artista o per un Papa.  
+È altrettanto sbagliata l'interpretazione entropico/romantica che comunemente si attribuisce alle parole: *amore* e *arte*.
 L'amore non è il sentimento vago che ha fatto la fortuna di poeti, musici e letterati, ma uno stato (più o meno persistente) del nostro organismo in cui riteniamo che qualcuno o qualcosa sia più importante di noi stessi.
-Di contro, l'Arte (ti prego di scrivere questo termine con l'iniziale maiuscola, nel tuo libro) non è l'esaltazione della personalità di un singolo, ma è e dev'essere la traccia del nostro cammino alla ricerca del Senso della Vita: Dio, per chi ci crede, o la Perfezione per i non credenti.
+Di contro, l'Arte (ti prego di scrivere questo termine con l'iniziale maiuscola, nel tuo libro) non è l'esaltazione della personalità di un singolo, ma è &mdash; e dev'essere &mdash; la traccia del nostro cammino alla ricerca del Senso della Vita: Dio, per chi ci crede, o la Perfezione per i non credenti.
 Approfondiremo quest'ultimo concetto <a href="/man/estetica" class="ref">in séguito</a>; qui e ora, come direbbe Céline Dion, *let's talk about love*.
 
 --- 
@@ -249,10 +249,10 @@ La maggior parte dei soldati parte controvoglia perché costretta, ma la storia 
 -->
 l'amore per il prossimo, che porta il missionario a sacrificare la sua vita per aiutare i malati o l'amore per una forma di arte, uno sport o un lavoro. 
 La realtà è che l'amore è una *backdoor*, o, meglio: una bomba a tempo, che viene inserita di nascosto nel tuo software, per essere certi che farai la cosa giusta quando arriverà il momento.  
-L'amore è l'unica forza allo stesso tempo gravitazionale, perché unisce gli individui, ed entropica, perché li porta a riprodursi, replicando il loro DNA in qualcos'*altro*.
+L'amore è l'unica forza allo stesso tempo gravitazionale ed entropica.
+Gravitazionale, perché unisce gli individui; entropica, perché li porta a riprodursi, replicando il loro DNA in qualcos'*altro*.
 Ti spinge a restare in casa, davanti a una tela, uno spartito o un foglio bianco o ti fa uscire, su una sella, una pista o con una macchina fotografica in mano.
-Ti porta in cima a una montagna o in una baraccopoli, al Polo o nel deserto; ti getta nel mare, ma non ti viene a salvare, come nella canzone.
-Ti fa lasciare un lavoro sicuro perché non riconosci più la persona che vedi nello specchio la mattina o ti fa restare in un monastero, anche se.  
+Ti porta in cima a una montagna o in una baraccopoli; al Polo o nel deserto; ti getta nel mare, ma non ti viene a salvare, come nella canzone; ti fa lasciare un lavoro sicuro perché non riconosci più la persona che vedi nello specchio la mattina o ti fa restare in un monastero, anche se.  
 E questa è la parte facile; poi c'è l'amore fra gli individui.  
 Ti sei mai innamorato?
 No? be', succederà.
