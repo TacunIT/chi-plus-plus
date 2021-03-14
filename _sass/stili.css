@@ -274,7 +274,11 @@ NAV A {
 
 HEADER NAV.menu-top A {
     padding: 0.5rem 1.2rem;
-    width: 8rem;
+    width:25%;
+}
+
+HEADER NAV.menu-top A I {
+    display: none;
 }
 
 BODY.manuale HEADER NAV.menu-top A {
@@ -777,8 +781,14 @@ BODY.pagina.log  P.data {
 /**
  *  Stili per mobile
  */
-@media only screen and (max-width: 1920px) {
-    
+@media only screen and (max-width: 540px) {
+
+    HEADER NAV.menu-top A I {
+        display: initial;
+    }
+    HEADER NAV.menu-top A SPAN {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -808,7 +818,6 @@ BODY.pagina.log  P.data {
     BODY.manuale.copertina HEADER titolo-1 {
         padding: 0;
     }
-    BODY.index HEADER img.logo, 
     BODY.manuale.copertina HEADER img.logo {
         width: 200px;
         height: auto;
@@ -816,16 +825,6 @@ BODY.pagina.log  P.data {
     BODY.pagina MAIN OL {
         text-align: left;
     }
-
-    NAV.menu-top DIV.box {
-        display: block;
-    }
-
-    NAV.menu-top A {
-        font-size: 14pt;
-        padding: 0;
-    }
-
     DIV.testo P {
         text-align: left
     }
