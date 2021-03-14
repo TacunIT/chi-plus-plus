@@ -1,3 +1,6 @@
+## 0.21.2 (March 14, 2021)
+  - Corretto errore CSS per menu manuale
+
 ## 0.21.1 (March 14, 2021)
   - Revisione del testo del capitolo Preprocessore.
   - Aggiunte icone a menu per formati < 540
