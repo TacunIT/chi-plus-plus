@@ -277,7 +277,10 @@ HEADER NAV.menu-top A {
     width:25%;
 }
 
-HEADER NAV.menu-top A I {
+/**
+ *  Nasconde le icone nel menu delle pagine
+ */
+BODY.pagina HEADER NAV.menu-top A I {
     display: none;
 }
 
@@ -783,10 +786,10 @@ BODY.pagina.log  P.data {
  */
 @media only screen and (max-width: 540px) {
 
-    HEADER NAV.menu-top A I {
+    BODY.pagina HEADER NAV.menu-top A I {
         display: initial;
     }
-    HEADER NAV.menu-top A SPAN {
+    BODY.pagina HEADER NAV.menu-top A SPAN {
         display: none;
     }
 }
