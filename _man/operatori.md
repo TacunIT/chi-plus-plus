@@ -8,6 +8,7 @@ quote:      "And what is <code>TRUE</code>, Phaedrus,<br />And what is <code>FAL
 ---
 
 La varietà e soprattutto l'adattabilità degli operatori sono la caratteristica principale del C++.  
+
 Gli operatori sono degli elementi del linguaggio che permettono, appunto, di *operare* delle azioni sulle variabili o sui valori. 
 Li possiamo classificare o in base al numero di operandi su cui agiscono:
 

@@ -55,7 +55,7 @@
 </nav>
 </header>
 
-        <main class="bozza">
+        <main class="redazione">
             
         
 
@@ -67,15 +67,165 @@
 
             <section id="testo">
 
-                <p>A proposito delle unzioni di interfaccia:</p>
+                <p>La possibilità di definire nuovi tipi di dato grazie alle classi è la caratteristica principale del C++.</p>
 
-<blockquote>
-  <p>Per questa ragione il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a href="/man/note#selvaggio" class="nota"></a>.</p>
-</blockquote>
+<p>I linguaggi di programmazione come il C, il Cobol il Fortran o il Pascal, hanno un insieme limitato di tipi di dato: interi, numeri in virgola mobile, booleani, caratteri e stringhe, insomma, quello che serve a gestire un’anagrafica.
+C e Pascal hanno anche la possibilità di accorpare questi tipi di dato in strutture, enumerati o array, ma questi tipi di dato sono solo dei contenitori privi di logica interna.
+Inoltre, i dati all’interno di una <code>struct</code> sono accessibili a qualunque componente del programma, quindi, se li si modifica, va modificato anche il codice che li utilizza.
+Immagina di definire una struttura per la gestione dell’orario, che contenga tre interi, uno per le ore, uno per i minuti e uno per i secondi:</p>
 
-<p>Le classi de C++, per quanto duttili, non possono descrivere dei concetti astratti come: amore, arte o Dio.</p>
+<pre><code>struct orario {
+    int h;
+    int m;
+    int s;
+};
+</code></pre>
 
-<!--
+<p>Per utilizzare questa struttura è necessario conoscerne il contenuto e il rapporto fra un valore e l’altro; in particolare, è necessario sapere (e ricordarsi):</p>
+
+<ul>
+  <li>che la variabile <code>h</code> può contenere solo valori da 0 a 23;</li>
+  <li>che il valore di <code>m</code> può contenere solo valori da 0 a 59;</li>
+  <li>che il valore di <code>s</code> può contenere solo valori da 0 a 59;</li>
+  <li>che se <code>s</code> supera il valore di 59, <code>m</code> va incrementato di 1;</li>
+  <li>che se <code>m</code> supera il valore di 59, <code>h</code> va incrementato di 1;</li>
+</ul>
+
+<p>Questo è l’opposto del <em>low cupling</em> di cui abbiamo parlato <a href="/man/struttura-dei-programmi#coupling" class="xref">tempo fa</a>, perché lega indissolubilmente una funzione alla struttura del dato che deve gestire.
+Per capirsi: una funzione di aggiornamento dei minuti dovrà essere qualcosa di simile a:</p>
+
+<pre><code>void aggiornaMinuti(struct orario &amp;o, int minuti) 
+{
+    /** Incrementa il numero dei minuti */
+    o.m += minuti;
+    
+    /** Se necessario, incrementa le ore */
+    if(o.m &gt;= 60) {
+
+        o.m -= 60;
+        o.h += 1;
+        
+        /** Se necessario, passa al giorno dopo */
+        if(o.h &gt;= 24) {
+            o.h -= 24;
+        }
+    }
+}
+</code></pre>
+<p>Se un giorno decidessimo di modificare la struttura <code>orario</code>, dovremmo ricordarci di riscrivere anche questa funzione, adeguandola alle nuove caratteristiche della struttura. 
+Servirebbero più ore/uomo di lavoro e aumenterebbe la possibilità di fare degli errori.
+Inoltre, nulla impedirebbe a un programmatore cialtrone di scrivere una funzione che non tiene minimamente conto del rapporto fra i ore, minuti e secondi:</p>
+
+<pre><code>void incrementa_m(struct orario &amp;o, int minuti) 
+{
+    o.m += minuti;
+}
+</code></pre>
+
+<p>Se inseriamo queste due funzioni in un programma, otteniamo:</p>
+
+<pre><code>/** 
+ * @file classi-struttura-ora.cpp
+ * Gestione dei dati membro di una struct.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+
+using namespace std;
+
+/** Dichiarazione di una struttura per gestire un orario */
+struct orario {
+    int h;
+    int m;
+    int s;
+};
+
+/** Funzione per l'incremento dei minuti */
+void aggiornaMinuti(struct orario &amp;o, int minuti) 
+{
+    /** Incrementa il numero dei minuti */
+    o.m += minuti;
+    
+    /** Se necessario, incrementa le ore */
+    if(o.m &gt;= 60) {
+
+        o.m -= 60;
+        o.h += 1;
+        
+        /** Se necessario, passa al giorno dopo */
+        if(o.h &gt;= 24) {
+            o.h -= 24;
+        }
+    }
+}
+
+/*  Funzione cialtrona per l'incremento dei minuti */
+void incrementa_m(struct orario &amp;o, int minuti) 
+{
+    o.m += minuti;
+}
+
+int main()
+{    
+    struct orario ora;
+
+    /** Definisce dei valori iniziali prossimi al cambio di data */
+    ora.h = 23;
+    ora.m = 45;
+    ora.s = 00;
+
+    /** Visualizza i valri iniziali */
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":" 
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":" 
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.s &lt;&lt; endl;
+
+    /** Richiama la funzione di aggiornamento */
+    aggiornaMinuti(ora, 20);
+    
+    /** Visualizza i valori dopo l'aggiornamento */
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":" 
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":" 
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.s &lt;&lt; endl;
+
+    /** Reimposta i valori iniziali */
+    ora.h = 23;
+    ora.m = 45;
+    ora.s = 00;
+
+    /** Richiama la funzione cialtrona */
+    incrementa_m(ora, 20);
+    
+    /** Visualizza i valori dopo l'aggiornamento */
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":" 
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":" 
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.s &lt;&lt; endl;
+
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Compilando ed eseguendo questo codice, ottieni:</p>
+
+<pre><code>&gt; g++ src/cpp/classi-struttura-orario.cpp -o src/out/esempio 
+&gt; ./src/out/esempio                                          
+23:45:00
+00:05:00
+23:65:00
+</code></pre>
+<p>Come puoi vedere, la prima funzione ha aggiornato i dati in maniera corretta, mentre la seconda ha prodotto un valore non valido.</p>
+
+<!-- 
+
+
+A proposito delle unzioni di interfaccia: 
+
+> Per questa ragione il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a href="/man/note#selvaggio" class="nota"></a>.
+
+Le classi del C++, per quanto duttili, non possono descrivere dei concetti astratti come: amore, arte o Dio.
+
 
 Classi astratte
 ---------------
