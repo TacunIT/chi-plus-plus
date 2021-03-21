@@ -1,3 +1,7 @@
+## 0.22.0 (March 22, 2021)
+  - Costruttori e funzioni membro
+  - Redazione della sezione tecnica capitolo Classi.
+
 ## 0.21.3 (March 14, 2021)
   - Revisione delle directory
   - Revisione del file README
