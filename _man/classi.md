@@ -7,9 +7,10 @@ permalink:  /man/classi
 quote:      "Ceci n'est pas une |"
 ---
 
+<!-- Quando ho cominciato a scrivere questo capitolo, si è rotto il tasto "o" del mio Mac. È Domenica e siamo in clausura da COVID, quindi non posso andare in un centro commerciale a comprarne una esterna, temporanea. Perdonate eventuali refusi -->
 La possibilità di definire nuovi tipi di dato grazie alle classi è la caratteristica principale del C++.
 
-I linguaggi di programmazione come il C, il Cobol il Fortran o il Pascal, hanno un insieme limitato di tipi di dato: interi, numeri in virgola mobile, booleani, caratteri e stringhe, insomma, quello che serve a gestire un'anagrafica.
+I linguaggi di programmazione come il C, il Cobol il Fortran o il Pascal, hanno un insieme limitato di tipi di dato: interi, numeri in virgola mobile, booleani, caratteri e stringhe.. giusto quello che serve a gestire una scheda anagrafica o un conto in banca.
 C e Pascal hanno anche la possibilità di accorpare questi tipi di dato in strutture, enumerati o array, ma questi tipi di dato sono solo dei contenitori privi di logica interna.
 Inoltre, i dati all'interno di una `struct` sono accessibili a qualunque componente del programma, quindi, se li si modifica, va modificato anche il codice che li utilizza.
 Immagina di definire una struttura per la gestione dell'orario, che contenga tre interi, uno per le ore, uno per i minuti e uno per i secondi:
@@ -30,7 +31,7 @@ Per utilizzare questa struttura è necessario conoscerne il contenuto e il rappo
 - che se `s` supera il valore di 59, `m` va incrementato di 1;
 - che se `m` supera il valore di 59, `h` va incrementato di 1;
 
-Questo è l'opposto del *low cupling* di cui abbiamo parlato <a href="/man/struttura-dei-programmi#coupling" class="xref">tempo fa</a>, perché lega indissolubilmente una funzione alla struttura del dato che deve gestire.
+Questo è l'opposto del *low coupling* di cui abbiamo parlato <a href="/man/struttura-dei-programmi#coupling" class="xref">tempo fa</a>, perché lega indissolubilmente una funzione alla struttura del dato che deve gestire.
 Per capirsi: una funzione di aggiornamento dei minuti dovrà essere qualcosa di simile a:
 
 ```
@@ -52,8 +53,7 @@ void aggiornaMinuti(struct orario &o, int minuti)
     }
 }
 ```
-Se un giorno decidessimo di modificare la struttura `orario`, dovremmo ricordarci di riscrivere anche questa funzione, adeguandola alle nuove caratteristiche della struttura. 
-Servirebbero più ore/uomo di lavoro e aumenterebbe la possibilità di fare degli errori.
+Se un giorno decidessimo di modificare la struttura `orario`, dovremmo ricordarci di riscrivere anche questa funzione, adeguandola alle nuove caratteristiche della struttura, con un dispendio di tempo e maggiore possibilità di fare degli errori.
 Inoltre, nulla impedirebbe a un programmatore cialtrone di scrivere una funzione che non tiene minimamente conto del rapporto fra i ore, minuti e secondi:
 
 ```
@@ -80,58 +80,137 @@ Compilando ed eseguendo questo codice, ottieni:
 ```
 Come puoi vedere, la prima funzione ha aggiornato i dati in maniera corretta, mentre la seconda ha prodotto un valore non valido.
 
-
-<!-- 
-
-
-A proposito delle unzioni di interfaccia: 
+---
 
 > Per questa ragione il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a href="/man/note#selvaggio" class="nota"></a>.
 
-Le classi del C++, per quanto duttili, non possono descrivere dei concetti astratti come: amore, arte o Dio.
+Questa frase di Lucien Lévy-Bruhl si applica anche alle classi del C++.  
+Le variabili all'interno di una classe, sono dette *dati membro* o *attributi* della classe; le funzioni, invece, sono dette *funzioni membro* o *metodi*.
+Sia gli attributi che i metodi di una classe possono essere protette da letture o modifiche indebite grazie a delle parole-chiave, dette: *modificatori di accesso*.
+I modificatori di accesso sono tre: `private`, `protected` e `public`.
+I metodi o gli attributi dichiarati *private* sono accessibili solo alla classe stessa; quelli dichiarati come *protected* sono accessibili alla classe e a eventuali <a href="/man/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come *public* sono accessibili a qualunque elemento del programma.  
+Se convertiamo in classe la struttura `Orario`, otteniamo:
 
+```
+class Orario {
+protected:
+    int _h;
+    int _m;
+    int _s;
+public:
+    Orario() {
+        _h = 0;
+        _m = 0;
+        _s = 0;
+    }
+};
+```
+Gli attributi `_h`, `_m` e `_s` compaiono dopo la parola-chiave `private` e saranno quindi visibili solo alle funzioni della classe stessa.  
+La funzione `Orario`, che ha lo stesso nome della classe, è detta *costruttore* e viene richiamata ogni volta che si crea una variabile di tipo `Orario`.
+Il suo scopo è di inizializzare le variabili all'interno della classe, in questo caso, impostando tutti e tre i valori a 0.  
+Una stessa classe può avere più costruttori; la classe `Orario`, per esempio, potrebbe avere un costruttore privo di parametri, che inizializzi ore, minuti e secondi a zero e uno che permetta invece di assegnare valori specifici a ciascun attributo:
 
-Classi astratte
----------------
+```
+class Orario {
+protected:
+    int _h;
+    int _m;
+    int _s;
+public:
+    Orario() {
+        _h = 0;
+        _m = 0;
+        _s = 0;
+    }
+    Orario(int h, int m, int s) 
+    : _h(h), _m(m), _s(s){
+    }
+};
+```
+
+La forma: 
+
+```    
+Orario(int h, int m, int s) 
+: _h(h), _m(m), _s(s){
+}
+```
+
+è solo un altro modo per inizializzare i dati membro della classe ed equivale a scrivere:
+
+```
+_h = 0;
+_m = 0;
+_s = 0;
+```
+
+Un modo più succinto di ottenere lo stesso risultato con un unico costruttore è di utilizzare dei valori di default per i parametri:
+
+```
+Orario(int h = 0, int m = 0, int s = 0) 
+: _h(h), _m(m), _s(s) {
+}
+```
+
+Le funzioni membro devono essere dichiarate all'interno della dichiarazione della classe, ma possono essere definite sia dentro che fuori di essa. 
+Se le si definisce esternamente alla dichiarazione della classe, vanno identificate aggiungendo il nome della classe prima di quello della funzione:
+
+```
+{% include_relative src/classi-classe-orario-1.cpp %}
+```
+
+Se compili questo codice, però, ottieni un errore: la funzione `main` può utilizzare il costruttore della classe `Orario` perché è dichiarato `public`, ma non può né leggere né modificare gli attributi `private:
+
+``` 
+> g++ src/cpp/classi-classe-orario-1.cpp -o src/out/esempio
+src/cpp/classi-classe-orario-1.cpp:34:44: error: '_h' is a protected member of 'Orario'
+    cout << setfill('0') << setw(2) << ora._h << ":" 
+                                           ^
+src/cpp/classi-classe-orario-1.cpp:14:9: note: declared protected here
+    int _h;
+        ^
+src/cpp/classi-classe-orario-1.cpp:35:44: error: '_m' is a protected member of 'Orario'
+         << setfill('0') << setw(2) << ora._m << ":" 
+                                           ^
+src/cpp/classi-classe-orario-1.cpp:15:9: note: declared protected here
+    int _m;
+        ^
+src/cpp/classi-classe-orario-1.cpp:36:44: error: '_s' is a protected member of 'Orario'
+         << setfill('0') << setw(2) << ora._s << endl;
+                                           ^
+src/cpp/classi-classe-orario-1.cpp:16:9: note: declared protected here
+    int _s;
+        ^
+3 errors generated.
+```
+
+Per rendere disponibili gli attributi di una classe, si utilizzano delle funzioni dette: *funzioni di interfaccia*, che permettono un accesso controllato ai dati sia in lettura che in modifica. 
+Nel caso della classe `Orario`, ne occorrono tre per la lettura e tre per la scrittura di ciascun dato membro:
+
+```
+/** Funzioni di lettura inline */
+inline int getOre()     { return _h; }
+inline int getMinuti()  { return _m; }
+inline int getSecondi() { return _s; }
+
+/** Funzioni di scrittura inline */
+int setOre(int h)    { return _h = (h % 24); }
+int setMinuti(int m) { return _m = (m % 60); }
+int setSecondi(int s){ return _s = (s % 60); }
+```
+
+<!-- 
 
 \[cfr. *Breve storia dell'infinito*, pagg. 30-40\]
 
 Si può dire che esista qualcosa che non ha dimensioni?
 
-Il punto non ha dimensioni.
 
-La retta è costituita da punti.
-
-La circonferenza è costituita da punti.
-
-Apparentemente, tutta la geometria euclidea è basata sul nulla.
-
-Se una circonferenza fosse costituita da punti privi di dimensione, noi
-non la potremmo vedere.
-
-Per vederla, e quindi per poterla in qualche modo utilizzare, dobbiamo
-dare uno spessore ai punti che la compongono, siano essi dei minuscoli
-residui di grafite o dei pixel.
-
-Allo stesso modo, se disegnassimo con la massima precisione due aree
-contigue e, con la stessa precisione, le colorassimo in maniera
-differente, la linea di demarcazione fra al fine di un'area e l'inizio
-dell'altra non sarebbe rettilinea, ma seguirebbe l'andamento del foglio,
-o dei pixel.
-
-Da lontano potrà anche sembrare rettilinea, ma a mano a mano che
--->
-<!--
 parlare degli operatori di cast 
 dynamic_cast <new_type> (expression)
 reinterpret_cast <new_type> (expression)
 static_cast <new_type> (expression)
 const_cast <new_type> (expression)
-
-
-Come potrebbe essere, una classe Dio?
-Forse come classi astratte
-
 
 
 @todo: parlare della posizione di un certo dato in memoria, che può variare in successive esecuzioni del programma. Allo stesso modo, l'io cosciente di ciascuno di noi non è detto che si manifesterà nello stesso individuo, ma potrà essere "allocato" in altri esseri. In quest'ottica, il: "Cogito ergo sum" di Cartesio è insensato, perché ciò che cogita non è ciò che è. cfr. Ananda, note a capitolo sull'Induismo

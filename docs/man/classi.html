@@ -67,9 +67,10 @@
 
             <section id="testo">
 
-                <p>La possibilità di definire nuovi tipi di dato grazie alle classi è la caratteristica principale del C++.</p>
+                <!-- Quando ho cominciato a scrivere questo capitolo, si è rotto il tasto "o" del mio Mac. È Domenica e siamo in clausura da COVID, quindi non posso andare in un centro commerciale a comprarne una esterna, temporanea. Perdonate eventuali refusi -->
+<p>La possibilità di definire nuovi tipi di dato grazie alle classi è la caratteristica principale del C++.</p>
 
-<p>I linguaggi di programmazione come il C, il Cobol il Fortran o il Pascal, hanno un insieme limitato di tipi di dato: interi, numeri in virgola mobile, booleani, caratteri e stringhe, insomma, quello che serve a gestire un’anagrafica.
+<p>I linguaggi di programmazione come il C, il Cobol il Fortran o il Pascal, hanno un insieme limitato di tipi di dato: interi, numeri in virgola mobile, booleani, caratteri e stringhe.. giusto quello che serve a gestire una scheda anagrafica o un conto in banca.
 C e Pascal hanno anche la possibilità di accorpare questi tipi di dato in strutture, enumerati o array, ma questi tipi di dato sono solo dei contenitori privi di logica interna.
 Inoltre, i dati all’interno di una <code>struct</code> sono accessibili a qualunque componente del programma, quindi, se li si modifica, va modificato anche il codice che li utilizza.
 Immagina di definire una struttura per la gestione dell’orario, che contenga tre interi, uno per le ore, uno per i minuti e uno per i secondi:</p>
@@ -91,7 +92,7 @@ Immagina di definire una struttura per la gestione dell’orario, che contenga t
   <li>che se <code>m</code> supera il valore di 59, <code>h</code> va incrementato di 1;</li>
 </ul>
 
-<p>Questo è l’opposto del <em>low cupling</em> di cui abbiamo parlato <a href="/man/struttura-dei-programmi#coupling" class="xref">tempo fa</a>, perché lega indissolubilmente una funzione alla struttura del dato che deve gestire.
+<p>Questo è l’opposto del <em>low coupling</em> di cui abbiamo parlato <a href="/man/struttura-dei-programmi#coupling" class="xref">tempo fa</a>, perché lega indissolubilmente una funzione alla struttura del dato che deve gestire.
 Per capirsi: una funzione di aggiornamento dei minuti dovrà essere qualcosa di simile a:</p>
 
 <pre><code>void aggiornaMinuti(struct orario &amp;o, int minuti) 
@@ -112,8 +113,7 @@ Per capirsi: una funzione di aggiornamento dei minuti dovrà essere qualcosa di 
     }
 }
 </code></pre>
-<p>Se un giorno decidessimo di modificare la struttura <code>orario</code>, dovremmo ricordarci di riscrivere anche questa funzione, adeguandola alle nuove caratteristiche della struttura. 
-Servirebbero più ore/uomo di lavoro e aumenterebbe la possibilità di fare degli errori.
+<p>Se un giorno decidessimo di modificare la struttura <code>orario</code>, dovremmo ricordarci di riscrivere anche questa funzione, adeguandola alle nuove caratteristiche della struttura, con un dispendio di tempo e maggiore possibilità di fare degli errori.
 Inoltre, nulla impedirebbe a un programmatore cialtrone di scrivere una funzione che non tiene minimamente conto del rapporto fra i ore, minuti e secondi:</p>
 
 <pre><code>void incrementa_m(struct orario &amp;o, int minuti) 
@@ -125,7 +125,7 @@ Inoltre, nulla impedirebbe a un programmatore cialtrone di scrivere una funzione
 <p>Se inseriamo queste due funzioni in un programma, otteniamo:</p>
 
 <pre><code>/** 
- * @file classi-struttura-ora.cpp
+ * @file classi-struttura-orario.cpp
  * Gestione dei dati membro di una struct.
  */
  
@@ -135,14 +135,14 @@ Inoltre, nulla impedirebbe a un programmatore cialtrone di scrivere una funzione
 using namespace std;
 
 /** Dichiarazione di una struttura per gestire un orario */
-struct orario {
+struct Orario {
     int h;
     int m;
     int s;
 };
 
 /** Funzione per l'incremento dei minuti */
-void aggiornaMinuti(struct orario &amp;o, int minuti) 
+void aggiornaMinuti(struct Orario &amp;o, int minuti) 
 {
     /** Incrementa il numero dei minuti */
     o.m += minuti;
@@ -161,14 +161,14 @@ void aggiornaMinuti(struct orario &amp;o, int minuti)
 }
 
 /*  Funzione cialtrona per l'incremento dei minuti */
-void incrementa_m(struct orario &amp;o, int minuti) 
+void incrementa_m(struct Orario &amp;o, int minuti) 
 {
     o.m += minuti;
 }
 
 int main()
 {    
-    struct orario ora;
+    struct Orario ora;
 
     /** Definisce dei valori iniziali prossimi al cambio di data */
     ora.h = 23;
@@ -217,57 +217,169 @@ int main()
 </code></pre>
 <p>Come puoi vedere, la prima funzione ha aggiornato i dati in maniera corretta, mentre la seconda ha prodotto un valore non valido.</p>
 
+<hr />
+
+<blockquote>
+  <p>Per questa ragione il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a href="/man/note#selvaggio" class="nota"></a>.</p>
+</blockquote>
+
+<p>Questa frase di Lucien Lévy-Bruhl si applica anche alle classi del C++.<br />
+Le variabili all’interno di una classe, sono dette <em>dati membro</em> o <em>attributi</em> della classe; le funzioni, invece, sono dette <em>funzioni membro</em> o <em>metodi</em>.
+Sia gli attributi che i metodi di una classe possono essere protette da letture o modifiche indebite grazie a delle parole-chiave, dette: <em>modificatori di accesso</em>.
+I modificatori di accesso sono tre: <code>private</code>, <code>protected</code> e <code>public</code>.
+I metodi o gli attributi dichiarati <em>private</em> sono accessibili solo alla classe stessa; quelli dichiarati come <em>protected</em> sono accessibili alla classe e a eventuali <a href="/man/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come <em>public</em> sono accessibili a qualunque elemento del programma.<br />
+Se convertiamo in classe la struttura <code>Orario</code>, otteniamo:</p>
+
+<pre><code>class Orario {
+protected:
+    int _h;
+    int _m;
+    int _s;
+public:
+    Orario() {
+        _h = 0;
+        _m = 0;
+        _s = 0;
+    }
+};
+</code></pre>
+<p>Gli attributi <code>_h</code>, <code>_m</code> e <code>_s</code> compaiono dopo la parola-chiave <code>private</code> e saranno quindi visibili solo alle funzioni della classe stessa.<br />
+La funzione <code>Orario</code>, che ha lo stesso nome della classe, è detta <em>costruttore</em> e viene richiamata ogni volta che si crea una variabile di tipo <code>Orario</code>.
+Il suo scopo è di inizializzare le variabili all’interno della classe, in questo caso, impostando tutti e tre i valori a 0.<br />
+Una stessa classe può avere più costruttori; la classe <code>Orario</code>, per esempio, potrebbe avere un costruttore privo di parametri, che inizializzi ore, minuti e secondi a zero e uno che permetta invece di assegnare valori specifici a ciascun attributo:</p>
+
+<pre><code>class Orario {
+protected:
+    int _h;
+    int _m;
+    int _s;
+public:
+    Orario() {
+        _h = 0;
+        _m = 0;
+        _s = 0;
+    }
+    Orario(int h, int m, int s) 
+    : _h(h), _m(m), _s(s){
+    }
+};
+</code></pre>
+
+<p>La forma:</p>
+
+<pre><code>Orario(int h, int m, int s) 
+: _h(h), _m(m), _s(s){
+}
+</code></pre>
+
+<p>è solo un altro modo per inizializzare i dati membro della classe ed equivale a scrivere:</p>
+
+<pre><code>_h = 0;
+_m = 0;
+_s = 0;
+</code></pre>
+
+<p>Un modo più succinto di ottenere lo stesso risultato con un unico costruttore è di utilizzare dei valori di default per i parametri:</p>
+
+<pre><code>Orario(int h = 0, int m = 0, int s = 0) 
+: _h(h), _m(m), _s(s) {
+}
+</code></pre>
+
+<p>Le funzioni membro devono essere dichiarate all’interno della dichiarazione della classe, ma possono essere definite sia dentro che fuori di essa. 
+Se le si definisce esternamente alla dichiarazione della classe, vanno identificate aggiungendo il nome della classe prima di quello della funzione:</p>
+
+<pre><code>/** 
+ * @file classi-classe-orario-1.cpp
+ * Gestione dei dati membro di una classe.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+
+using namespace std;
+
+/** Dichiarazione della classe */
+class Orario {
+protected:
+    int _h;
+    int _m;
+    int _s;
+public:
+    Orario(int h = 0, int m = 0, int s = 0);
+};
+
+/** Definizione del costruttore della classe */
+Orario::Orario(int h, int m, int s) 
+: _h(h), _m(m), _s(s) 
+{
+}
+    
+/** La funzione main non fa parte della classe */
+int main()
+{    
+    Orario ora;
+
+    /** Questo codice darà errore */
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._h &lt;&lt; ":" 
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._m &lt;&lt; ":" 
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._s &lt;&lt; endl;
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili questo codice, però, ottieni un errore: la funzione <code>main</code> può utilizzare il costruttore della classe <code>Orario</code> perché è dichiarato <code>public</code>, ma non può né leggere né modificare gli attributi `private:</p>
+
+<pre><code class="language- ">&gt; g++ src/cpp/classi-classe-orario-1.cpp -o src/out/esempio
+src/cpp/classi-classe-orario-1.cpp:34:44: error: '_h' is a protected member of 'Orario'
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._h &lt;&lt; ":" 
+                                           ^
+src/cpp/classi-classe-orario-1.cpp:14:9: note: declared protected here
+    int _h;
+        ^
+src/cpp/classi-classe-orario-1.cpp:35:44: error: '_m' is a protected member of 'Orario'
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._m &lt;&lt; ":" 
+                                           ^
+src/cpp/classi-classe-orario-1.cpp:15:9: note: declared protected here
+    int _m;
+        ^
+src/cpp/classi-classe-orario-1.cpp:36:44: error: '_s' is a protected member of 'Orario'
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._s &lt;&lt; endl;
+                                           ^
+src/cpp/classi-classe-orario-1.cpp:16:9: note: declared protected here
+    int _s;
+        ^
+3 errors generated.
+</code></pre>
+
+<p>Per rendere disponibili gli attributi di una classe, si utilizzano delle funzioni dette: <em>funzioni di interfaccia</em>, che permettono un accesso controllato ai dati sia in lettura che in modifica. 
+Nel caso della classe <code>Orario</code>, ne occorrono tre per la lettura e tre per la scrittura di ciascun dato membro:</p>
+
+<pre><code>/** Funzioni di lettura inline */
+inline int getOre()     { return _h; }
+inline int getMinuti()  { return _m; }
+inline int getSecondi() { return _s; }
+
+/** Funzioni di scrittura inline */
+int setOre(int h)    { return _h = (h % 24); }
+int setMinuti(int m) { return _m = (m % 60); }
+int setSecondi(int s){ return _s = (s % 60); }
+</code></pre>
+
 <!-- 
-
-
-A proposito delle unzioni di interfaccia: 
-
-> Per questa ragione il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a href="/man/note#selvaggio" class="nota"></a>.
-
-Le classi del C++, per quanto duttili, non possono descrivere dei concetti astratti come: amore, arte o Dio.
-
-
-Classi astratte
----------------
 
 \[cfr. *Breve storia dell'infinito*, pagg. 30-40\]
 
 Si può dire che esista qualcosa che non ha dimensioni?
 
-Il punto non ha dimensioni.
 
-La retta è costituita da punti.
-
-La circonferenza è costituita da punti.
-
-Apparentemente, tutta la geometria euclidea è basata sul nulla.
-
-Se una circonferenza fosse costituita da punti privi di dimensione, noi
-non la potremmo vedere.
-
-Per vederla, e quindi per poterla in qualche modo utilizzare, dobbiamo
-dare uno spessore ai punti che la compongono, siano essi dei minuscoli
-residui di grafite o dei pixel.
-
-Allo stesso modo, se disegnassimo con la massima precisione due aree
-contigue e, con la stessa precisione, le colorassimo in maniera
-differente, la linea di demarcazione fra al fine di un'area e l'inizio
-dell'altra non sarebbe rettilinea, ma seguirebbe l'andamento del foglio,
-o dei pixel.
-
-Da lontano potrà anche sembrare rettilinea, ma a mano a mano che
--->
-<!--
 parlare degli operatori di cast 
 dynamic_cast <new_type> (expression)
 reinterpret_cast <new_type> (expression)
 static_cast <new_type> (expression)
 const_cast <new_type> (expression)
-
-
-Come potrebbe essere, una classe Dio?
-Forse come classi astratte
-
 
 
 @todo: parlare della posizione di un certo dato in memoria, che può variare in successive esecuzioni del programma. Allo stesso modo, l'io cosciente di ciascuno di noi non è detto che si manifesterà nello stesso individuo, ma potrà essere "allocato" in altri esseri. In quest'ottica, il: "Cogito ergo sum" di Cartesio è insensato, perché ciò che cogita non è ciò che è. cfr. Ananda, note a capitolo sull'Induismo
