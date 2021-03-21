@@ -117,6 +117,7 @@ tre
 ```
 
 Nessun programma degno di questo nome ha solo la funzione `main`, ma suddivide il suo lavoro in una serie di funzioni che svolgono compiti precisi e ben definiti.
+<a id="coupling"></a>
 In un programma ben scritto, le funzioni presentano due caratteristiche, che gli anglosassoni e gli anglofili definiscono: *low coupling* e *high cohesion*.  
 Con il termine *accoppiamento* di due funzioni si intende la quantità di informazioni che la funzione *A* deve avere riguardo la funzione *B* per poterla utlizzare.
 Ciascuna funzione si aspetta di ricevere una serie ben definita di parametri: la funzione `raddoppiaStipendio`, che abbiamo visto prima, si aspetta di ricevere un solo parametro, di tipo `long`:
