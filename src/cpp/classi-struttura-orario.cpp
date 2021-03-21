@@ -1,5 +1,5 @@
 /** 
- * @file classi-struttura-ora.cpp
+ * @file classi-struttura-orario.cpp
  * Gestione dei dati membro di una struct.
  */
  
@@ -9,14 +9,14 @@
 using namespace std;
 
 /** Dichiarazione di una struttura per gestire un orario */
-struct orario {
+struct Orario {
     int h;
     int m;
     int s;
 };
 
 /** Funzione per l'incremento dei minuti */
-void aggiornaMinuti(struct orario &o, int minuti) 
+void aggiornaMinuti(struct Orario &o, int minuti) 
 {
     /** Incrementa il numero dei minuti */
     o.m += minuti;
@@ -35,14 +35,14 @@ void aggiornaMinuti(struct orario &o, int minuti)
 }
 
 /*  Funzione cialtrona per l'incremento dei minuti */
-void incrementa_m(struct orario &o, int minuti) 
+void incrementa_m(struct Orario &o, int minuti) 
 {
     o.m += minuti;
 }
 
 int main()
 {    
-    struct orario ora;
+    struct Orario ora;
 
     /** Definisce dei valori iniziali prossimi al cambio di data */
     ora.h = 23;
