@@ -23,14 +23,14 @@ public:
     Orario(int h = 0, int m = 0, int s = 0) ;
 
     /** Funzioni di lettura inline */
-    inline int getOre()     { return _h; }
-    inline int getMinuti()  { return _m; }
-    inline int getSecondi() { return _s; }
+    inline int getH() { return _h; }
+    inline int getM() { return _m; }
+    inline int getS() { return _s; }
 
     /** Funzioni di scrittura inline */
-    int setOre(int h)    { return _h = (h % 24); }
-    int setMinuti(int m) { return _m = (m % 60); }
-    int setSecondi(int s){ return _s = (s % 60); }
+    inline int setH(int h) { return _h = (h % 24); }
+    inline int setM(int m) { return _m = (m % 60); }
+    inline int setS(int s) { return _s = (s % 60); }
 
 };
 
@@ -48,18 +48,18 @@ int main()
     Orario ora;
 
     /** Visualizza i valori iniziali dei dati */
-    cout << setfill('0') << setw(2) << ora.getOre()     << ":" 
-         << setfill('0') << setw(2) << ora.getMinuti()  << ":" 
-         << setfill('0') << setw(2) << ora.getSecondi() << endl;
+    cout << setfill('0') << setw(2) << ora.getH() << ":" 
+         << setfill('0') << setw(2) << ora.getM() << ":" 
+         << setfill('0') << setw(2) << ora.getS() << endl;
     
-    ora.setOre(47);
-    ora.setMinuti(105);
-    ora.setSecondi(60);
+    ora.setH(47);
+    ora.setM(105);
+    ora.setS(60);
     
     /** Visualizza i valori dei dati modificati */
-    cout << setfill('0') << setw(2) << ora.getOre()     << ":" 
-         << setfill('0') << setw(2) << ora.getMinuti()  << ":" 
-         << setfill('0') << setw(2) << ora.getSecondi() << endl;
+    cout << setfill('0') << setw(2) << ora.getH() << ":" 
+         << setfill('0') << setw(2) << ora.getM() << ":" 
+         << setfill('0') << setw(2) << ora.getS() << endl;
          
     return 0;
 }

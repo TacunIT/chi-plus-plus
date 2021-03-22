@@ -139,9 +139,9 @@ Orario(int h, int m, int s)
 è solo un altro modo per inizializzare i dati membro della classe ed equivale a scrivere:
 
 ```
-_h = 0;
-_m = 0;
-_s = 0;
+_h = h;
+_m = m;
+_s = s;
 ```
 
 Un modo più succinto di ottenere lo stesso risultato con un unico costruttore è di utilizzare dei valori di default per i parametri:
@@ -185,19 +185,51 @@ src/cpp/classi-classe-orario-1.cpp:16:9: note: declared protected here
 ```
 
 Per rendere disponibili gli attributi di una classe, si utilizzano delle funzioni dette: *funzioni di interfaccia*, che permettono un accesso controllato ai dati sia in lettura che in modifica. 
-Nel caso della classe `Orario`, ne occorrono tre per la lettura e tre per la scrittura di ciascun dato membro:
+Nel caso della classe `Orario`, ne occorrono sei: una la lettura e una per la scrittura di ciascuno dei tre dati membro:
 
 ```
 /** Funzioni di lettura inline */
-inline int getOre()     { return _h; }
-inline int getMinuti()  { return _m; }
-inline int getSecondi() { return _s; }
+inline int getH() { return _h; }
+inline int getM() { return _m; }
+inline int getS() { return _s; }
 
 /** Funzioni di scrittura inline */
-int setOre(int h)    { return _h = (h % 24); }
-int setMinuti(int m) { return _m = (m % 60); }
-int setSecondi(int s){ return _s = (s % 60); }
+inline int setH(int h) { return _h = (h % 24); }
+inline int setM(int m) { return _m = (m % 60); }
+inline int setS(int s) { return _s = (s % 60); }
 ```
+
+Ovviamente, puoi chiamare queste funzioni come preferisci, ma utilizzare i prefissi `get` e `set`, seguiti dal nome del parametro su cui operano rende più facile l'utilizzo della classe da parte di altri programmatori.
+È lo stesso motivo per cui aggiungo il carattere *underscore* davanti al nome dei dati membro delle classi, in modo che li si possa distinguere dai  parametri delle funzioni che abbiano lo stesso nome:
+
+```
+return _h = (h % 24);
+```
+Non nemmeno sei obbligato a dichiarare le funzioni di interfaccia come `inline`; l'ho fatto qui perché erano estremamente semplici, ma valgono sempre le considerazioni fatte <a href="/man/funzioni#inline" class="xref">a suo tempo</a>.  
+Così come abbiamo fatto per il costruttore della classe, potremmo unificare le funzioni di lettura e scrittura, utilizzando un parametro di default che determini il comportamento del programma:
+
+```
+inline int ore(int h = -1) { 
+    return _h = ((h != -1) ? _h = (h % 24) : h); 
+}
+```
+
+Questa sintassi è l'equivalente di:
+
+```
+inline int ore(int h = -1) { 
+    if(h != -1) {
+        _h = (h % 24);
+    }
+    return _h; 
+}
+```
+
+Anche se meno evidente, è più comoda perché permette di tenere il codice su una sola riga e ti dà modo di fare un po' di pratica con gli operatori.  
+Questo tipo di funzioni, però, ha due difetti: limita i valori che puoi assegnare all'attibuto e limita la granularità dei privilegi sulle funzioni.
+Limita il numero di valori che puoi assegnare all'attibuto, perché esclude il valore del parametro di default; cosa che non crea problemi in questo caso, dato che non esiste un'ora `-1`, ma che potrebbe farlo nel caso di una stringa con parametro di default nullo.
+Limita la granularità dei privilegi sulle funzioni, perché ti costringe a rendere pubbliche le funzioni di scrittura dei dati membro e questo, in certi casi potrebbe non essere saggio. 
+Ti consiglio perciò di scrivere sempre due funzioni di interfaccia distinte per la lettura e la scrittura: sul momento ti sembrerà uno spreco di tempo, ma, a meno che il tuo programma non sia particolarmente banale, o prima o poi ti accorgerai di aver fatto la scelta corretta.
 
 <!-- 
 
