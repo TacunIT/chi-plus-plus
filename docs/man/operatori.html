@@ -611,15 +611,47 @@ sp: 8
 t : 9
 c : $
 </code></pre>
+<hr id="risoluzione" />
+
+<p>L’ultimo operatore di cui dobbiamo parlare è anche quella con il nome più lungo: l’operatore di <em>risoluzione del campo d’azione</em> <code>::</code>. 
+Oltre ad altri utilizzi connessi con la gestione dei dati delle classi, di cui parleremo in seguito, questo operatore permette di riferirsi a delle variabili con visibilità globale anche nei casi in cui queste vengano oscurate dalla ridefinizione di variabili locali con lo stesso nome:</p>
+
+<pre><code>/** 
+ * @file _man/src/operatori-risoluzione.cpp
+ * Utilizzo dell'operatore di risoluzione.
+ */
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+const char * Stringa = "Stringa globale" ;
+
+int main(int argc, char** argv)
+{   
+    const char * Stringa = "Stringa locale" ;
+
+    /** Stampa la stringa locale */
+    cout &lt;&lt; Stringa   &lt;&lt; endl ;
+    
+    /** Utilizza l'operatore per riferirsi alla variabile globale */
+    cout &lt;&lt; ::Stringa &lt;&lt; endl ;
+
+    return 0;
+}
+
+</code></pre>
+<p>Compilando ed eseguendo questo codice, ottieni:</p>
+
+<pre><code>&gt; g++ src/cpp/operatori-risoluzione.cpp -o src/out/esempio 
+&gt; ./src/out/esempio                                       
+Stringa locale
+Stringa globale
+</code></pre>
 
 <!-- 
 @todo: aggiungere nota su overload degli operatori 
 
-Un’altra novità da esaminare prima, di iniziare il discorso sulle classi, è anche quella con il nome più lungo: l’operatore di risoluzione del campo d’azione, per gli amici ::. Oltre ad  altri utilizzi connessi con la gestione dei dati delle classi, che verranno esaminati in seguito, questo operatore C++ permette di riferirsi a delle variabili con visibilità globale anche nei casi in cui queste vengano oscurate dalla ridefinizione di variabili locali con lo stesso nome:
-> g++ src/cpp/operatori-risoluzione.cpp -o src/out/esempio 
-> ./src/out/esempio                                       
-Stringa locale
-Stringa globale
 -->
 
 <hr id="dottrina" />

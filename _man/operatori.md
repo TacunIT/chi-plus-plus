@@ -250,16 +250,26 @@ sp: 8
 t : 9
 c : $
 ```
+<hr id="risoluzione">
 
+L'ultimo operatore di cui dobbiamo parlare è anche quella con il nome più lungo: l’operatore di *risoluzione del campo d’azione* `::`. 
+Oltre ad altri utilizzi connessi con la gestione dei dati delle classi, di cui parleremo in seguito, questo operatore permette di riferirsi a delle variabili con visibilità globale anche nei casi in cui queste vengano oscurate dalla ridefinizione di variabili locali con lo stesso nome:
 
-<!-- 
-@todo: aggiungere nota su overload degli operatori 
+```
+{% include_relative src/operatori-risoluzione.cpp %}
+```
+Compilando ed eseguendo questo codice, ottieni:
 
-Un’altra novità da esaminare prima, di iniziare il discorso sulle classi, è anche quella con il nome più lungo: l’operatore di risoluzione del campo d’azione, per gli amici ::. Oltre ad  altri utilizzi connessi con la gestione dei dati delle classi, che verranno esaminati in seguito, questo operatore C++ permette di riferirsi a delle variabili con visibilità globale anche nei casi in cui queste vengano oscurate dalla ridefinizione di variabili locali con lo stesso nome:
+```
 > g++ src/cpp/operatori-risoluzione.cpp -o src/out/esempio 
 > ./src/out/esempio                                       
 Stringa locale
 Stringa globale
+```
+
+<!-- 
+@todo: aggiungere nota su overload degli operatori 
+
 -->
 
 <hr id="dottrina">
