@@ -195,7 +195,7 @@ inline float scorporaIVA(long stipendio, float aliquota)
 ```
 
 Anche in un esempio così semplice, vedi bene che differenza ci sia, fra una funzione che può svolgere più azioni eterogenee e una funzione che svolge una singola azione, ben precisa.
-Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di dichiararla come [`inline`](/man/funzioni#inline), aumentando la velocità di esecuzuione del programma.
+Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di dichiararla come <a href="/man/funzioni#inline" class="xref">inline</a>, aumentando la velocità di esecuzuione del programma.
 
 <hr id="dottrina">
 
