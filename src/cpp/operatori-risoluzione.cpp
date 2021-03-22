@@ -13,8 +13,11 @@ int main(int argc, char** argv)
 {   
     const char * Stringa = "Stringa locale" ;
 
-	cout << Stringa   << endl ;
-	cout << ::Stringa << endl ;
+    /** Stampa la stringa locale */
+    cout << Stringa   << endl ;
+    
+    /** Utilizza l'operatore per riferirsi alla variabile globale */
+    cout << ::Stringa << endl ;
 
     return 0;
 }
