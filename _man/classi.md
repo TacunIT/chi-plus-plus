@@ -169,6 +169,7 @@ La funzione `Orario`, che ha lo stesso nome della classe, è detta *costruttore*
 Il suo scopo è di inizializzare le variabili all'interno della classe, in questo caso, impostando tutti e tre i valori a 0.  
 Quando dichiariamo una variabile di tipo primitivo come `int`, o `double`, il compilatore svolge automaticamente tutta una serie di operazioni atte ad allocare lo spazio di memoria necessario a contenerla e ad inizializzarlo.
 Il compilatore, però, non sa come vada creata e inizializzata una variabile di tipo `Orario` ed è per questo che la classe dovrà definire delle *funzioni di gestione* che spieghino sia come creare una nuova variabile, che come distruggerla, se necessario. 
+Le funzioni di gestione sono di due tipi: i *costruttori* e i *distruttori*.  
 I costruttori hanno alcune peculiarità che le distin­guono dalle altre funzioni membro: 
 
 - devono avere lo stesso nome della classe;
@@ -236,6 +237,66 @@ Orario o2 = o1;
 ```
 
 Il costruttore di copia è un tipo di costruttore molto importante in quanto presiede alla maggior parte delle attività di inizializzazione di oggetti della classe cui appartiene; per questa ragione, nel caso non venga definito dall’utente, è automaticamente generato dal compilatore.
+
+---
+
+Come è facile intuire, mentre il costruttore di una classe presiede alla creazione di nuove variabili, il distruttore si occupa della loro cancellazione. 
+Non sempre è necessario definire un distruttore per una classe.
+Una variabile di tipo `Orario`, che contiene solo tre interi, probabilmente non avrà bisogno di un distruttore, mentre una variabile che faccia uso di memoria dinamica quasi sicuramente sì. 
+Il perché risulta più chiaro se si esamina la cosa dal punto di vista del compilatore.  
+Per creare una variabile di tipo `Orario` il compilatore deve allocare spazio per:
+
+```
+3 * sizeof(int);
+```
+
+Quando arriva il momento di distruggere la variabile, il compilatore non farà altro che liberare i ```3 * sizeof(int) ``` byte successivi all’indirizzo dell’oggetto; un comportamento che in questo caso è corretto, ma che potrebbe dare rivelarsi disastroso con una classe come questa:
+
+```
+class Buffer
+{
+private:
+    char* _dati;
+    int   _size;
+ public:
+    Buffer(int size) 
+    : _size(size) {
+        _dati = new char[_size];
+    }
+};
+```
+
+Per distruggere una variabile di tipo `Buffer`, in mancanza di istruzioni specifiche, il compilatore libererà ```sizeof(char*) + sizeof(int)``` byte dopo il suo indirizzo di memoria, ma così facendo, distruggerà solo l’intero `_size` e il puntatore a char `_dati`, senza liberare l’area di memoria a cui quest’ultimo puntava.
+Questo, come sai, è un grave errore.  
+Come il costruttore, il distruttore di una classe non ha tipo di ritorno, ma mentre ci possono essere più costruttori per una stessa classe, il distrut­tore è sempre unico.
+Non ha mai parametri formali e il suo nome è uguale a quello della classe cui appartiene, preceduto da un carattere tilde `~`:
+
+```
+class Buffer
+{
+private:
+    char* _dati;
+    int   _size;
+ public:
+    Buffer(int size) 
+    : _size(size) {
+        _dati = new char[_size];
+    }
+    Buffer::~Buffer() {
+        delete [] _dati
+    }
+};
+```
+
+I distruttori possono essere chiamati in due modi: 
+
+- *implicitamente*, dal programma, ogni volta che un oggetto esce dal suo campo d’azione o, nel caso di oggetti con visibilità globale, al termine della funzione main();
+
+- *esplicitamente*, specificando il loro nome per intero, per evitare che l’operazione possa venire scambiata con un complemento bit a bit.
+    
+Attenzione, però: se a uscire dal campo d’azione è un puntatore, il ditruttore della classe non viene richiamato automaticamente, perciò gli oggetti creati in maniera dinamica con l'operatore `new` dovranno sempre distrutti per mezzo dell’operatore `delete`.  
+
+
 
 ---
 
