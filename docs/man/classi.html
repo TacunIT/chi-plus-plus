@@ -258,7 +258,7 @@ int main(int argc, char** argv)
 <p>L’etichetta <code>public</code> che vedi all’inizio della dichiarazione della classe è un <em>indicatore di accesso</em> e serve a stabilire quali membri della classe siano accessibili a funzioni esterne e quali invece siano riservati in esclusiva alla classe stessa.</p>
 
 <blockquote>
-  <p>Per questa ragione il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a href="/man/note#selvaggio" class="nota"></a>.</p>
+  <p>il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a href="/man/note#selvaggio" class="nota"></a>.</p>
 </blockquote>
 
 <p>Questa frase di Lucien Lévy-Bruhl si applica anche alle classi del C++. 
@@ -424,7 +424,7 @@ private:
 
 <ul>
   <li>
-    <p><em>implicitamente</em>, dal programma, ogni volta che un oggetto esce dal suo campo d’azione o, nel caso di oggetti con visibilità globale, al termine della funzione main();</p>
+    <p><em>implicitamente</em>, dal programma, ogni volta che un oggetto esce dal suo campo d’azione o, nel caso di oggetti con visibilità globale, al termine della funzione <code>main</code>;</p>
   </li>
   <li>
     <p><em>esplicitamente</em>, specificando il loro nome per intero, per evitare che l’operazione possa venire scambiata con un complemento bit a bit.</p>
@@ -436,7 +436,8 @@ private:
 <hr />
 
 <p>Le funzioni membro devono essere dichiarate all’interno della dichiarazione della classe, ma possono essere definite sia dentro che fuori di essa. 
-Se le si definisce esternamente alla dichiarazione della classe, vanno identificate aggiungendo il nome della classe prima di quello della funzione, seguito dall’<a href="/man/operatori#risoluzione" class="xref">operatore di risoluzione</a>:</p>
+Definirle all’interno della dichiarazione della classe equivale a dichiararle <a href="/man/funzioni#inline" class="xref">inline</a>
+Se invece le si definisce esternamente alla dichiarazione della classe, vanno identificate aggiungendo il nome della classe prima di quello della funzione, seguito dall’<a href="/man/operatori#risoluzione" class="xref">operatore di risoluzione</a>:</p>
 
 <pre><code>/** 
  * @file classi-classe-orario-1.cpp
@@ -526,15 +527,15 @@ public:
     /** Costruttore della classe */
     Orario(int h = 0, int m = 0, int s = 0) ;
 
-    /** Funzioni di lettura inline */
-    inline int getH() { return _h; }
-    inline int getM() { return _m; }
-    inline int getS() { return _s; }
+    /** Funzioni di lettura */
+    int getH() { return _h; }
+    int getM() { return _m; }
+    int getS() { return _s; }
 
-    /** Funzioni di scrittura inline */
-    inline int setH(int h) { return _h = (h % 24); }
-    inline int setM(int m) { return _m = (m % 60); }
-    inline int setS(int s) { return _s = (s % 60); }
+    /** Funzioni di scrittura */
+    int setH(int h) { return _h = (h % 24); }
+    int setM(int m) { return _m = (m % 60); }
+    int setS(int s) { return _s = (s % 60); }
 
     /** Dichiarazione di una funzione e di una classe friend */
     friend int incrementaMinuti(Orario&amp; o, int m);
@@ -548,15 +549,15 @@ Come avviene nella realtà, prima di dare la tua amicizia a qual­cuno verifican
 Un metodo più sicuro consiste nel definire delle funzioni membro pubbliche che consentano un accesso controllato ai dati che si vogliono proteggere. 
 Nel caso della classe <code>Orario</code>, ne occorrono sei: una la lettura e una per la scrittura di ciascuno dei tre dati membro:</p>
 
-<pre><code>/** Funzioni di lettura inline */
-inline int getH() { return _h; }
-inline int getM() { return _m; }
-inline int getS() { return _s; }
+<pre><code>/** Funzioni di lettura */
+int getH() { return _h; }
+int getM() { return _m; }
+int getS() { return _s; }
 
-/** Funzioni di scrittura inline */
-inline int setH(int h) { return _h = (h % 24); }
-inline int setM(int m) { return _m = (m % 60); }
-inline int setS(int s) { return _s = (s % 60); }
+/** Funzioni di scrittura */
+int setH(int h) { return _h = (h % 24); }
+int setM(int m) { return _m = (m % 60); }
+int setS(int s) { return _s = (s % 60); }
 </code></pre>
 
 <p>Ovviamente, puoi chiamare queste funzioni come preferisci, ma utilizzare i prefissi <code>get</code> e <code>set</code>, seguiti dal nome del parametro su cui operano rende più facile l’utilizzo della classe da parte di altri programmatori.
@@ -567,14 +568,14 @@ inline int setS(int s) { return _s = (s % 60); }
 <p>Non sei nemmeno obbligato a dichiarare le funzioni di interfaccia come <code>inline</code>; l’ho fatto qui perché erano estremamente semplici, ma valgono sempre le considerazioni fatte <a href="/man/funzioni#inline" class="xref">a suo tempo</a>.<br />
 Così come abbiamo fatto per il costruttore della classe, potremmo unificare le funzioni di lettura e scrittura, utilizzando un parametro di default che determini il comportamento del programma:</p>
 
-<pre><code>inline int ore(int h = -1) { 
+<pre><code>int ore(int h = -1) { 
     return _h = ((h != -1) ? _h = (h % 24) : h); 
 }
 </code></pre>
 
 <p>Questa sintassi è l’equivalente di:</p>
 
-<pre><code>inline int ore(int h = -1) { 
+<pre><code>int ore(int h = -1) { 
     if(h != -1) {
         _h = (h % 24);
     }

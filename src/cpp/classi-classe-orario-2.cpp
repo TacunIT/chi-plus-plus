@@ -25,15 +25,15 @@ public:
     /** Costruttore di copia */
     Orario(const Orario& o) ;
 
-    /** Funzioni di lettura inline */
-    inline int getH() { return _h; }
-    inline int getM() { return _m; }
-    inline int getS() { return _s; }
+    /** Funzioni di lettura  */
+    int getH() { return _h; }
+    int getM() { return _m; }
+    int getS() { return _s; }
 
-    /** Funzioni di scrittura inline */
-    inline int setH(int h) { return _h = (h % 24); }
-    inline int setM(int m) { return _m = (m % 60); }
-    inline int setS(int s) { return _s = (s % 60); }
+    /** Funzioni di scrittura */
+    int setH(int h) { return _h = (h % 24); }
+    int setM(int m) { return _m = (m % 60); }
+    int setS(int s) { return _s = (s % 60); }
 
 };
 
