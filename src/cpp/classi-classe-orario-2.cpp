@@ -22,6 +22,9 @@ public:
     /** Costruttore della classe */
     Orario(int h = 0, int m = 0, int s = 0) ;
 
+    /** Costruttore di copia */
+    Orario(const Orario& o) ;
+
     /** Funzioni di lettura inline */
     inline int getH() { return _h; }
     inline int getM() { return _m; }
@@ -37,6 +40,11 @@ public:
 /** Definizione del costruttore della classe */
 Orario::Orario(int h, int m, int s) 
 : _h(h), _m(m), _s(s) {
+}
+
+/** Definizione del costruttore di copia */
+Orario::Orario(const Orario& o) 
+: _h(o._h), _m(o._m), _s(o._s) {
 }
 
 /**
@@ -60,6 +68,14 @@ int main()
     cout << setfill('0') << setw(2) << ora.getH() << ":" 
          << setfill('0') << setw(2) << ora.getM() << ":" 
          << setfill('0') << setw(2) << ora.getS() << endl;
+
+    /** Crea una variabile con il costruttore di copia */
+    Orario now = ora;
+
+    /** Visualizza i valori della nuova variabile */
+    cout << setfill('0') << setw(2) << now.getH() << ":" 
+         << setfill('0') << setw(2) << now.getM() << ":" 
+         << setfill('0') << setw(2) << now.getS() << endl;
          
     return 0;
 }
