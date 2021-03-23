@@ -219,16 +219,75 @@ int main()
 
 <hr />
 
+<p>Le variabili all’interno di una classe, sono dette <em>dati membro</em> o <em>attributi</em> della classe; le funzioni, invece, sono dette <em>funzioni membro</em> o <em>metodi</em>.
+I dati e le funzioni membro di una classe sono direttamente accessibili alle funzioni membro della classe, ma per utilizzarli all’interno di funzioni esterne alla classe, si devono utilizzare gli operatori di selezione <code>.</code> e <code>-&gt;</code>. 
+Il primo, detto <em>operatore di selezione diretta</em>, viene utilizzato con istanze della classe; il secondo, detto <em>operatore di selezi­one indiretta</em>, con puntatori ad esse:</p>
+
+<pre><code>class Punto
+{
+public:             
+    
+    /** Dichiara i dati membro della classe */
+    int _x, _y;
+
+    /** 
+     *  Le funzioni interne alla classe accedono ai
+     *  dati membro con la sintassi ordinaria.
+     */  
+    Punto(int x, int y) {
+        _x = x;
+        _y = y;
+    }
+} ;
+
+int main(int argc, char** argv) 
+{
+    Punto p(5,6);       // crea un oggetto di classe Punto
+    Punto *ptr = &amp;p ;   // lo assegna al puntatore ptr
+    
+    /** 
+     *  Le funzioni esterne alla classe accedono ai
+     *  dati membro tramite gli operatori di selezione.
+     */  
+    p._x    = 3 ;       // assegna un valore tramite l'oggetto
+    ptr-&gt;_y = 2 ;       // assegna un valore tramite il puntatore
+    ...
+}
+</code></pre>
+
+<p>L’etichetta <code>public</code> che vedi all’inizio della dichiarazione della classe è un <em>indicatore di accesso</em> e serve a stabilire quali membri della classe siano accessibili a funzioni esterne e quali invece siano riservati in esclusiva alla classe stessa.</p>
+
 <blockquote>
   <p>Per questa ragione il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a href="/man/note#selvaggio" class="nota"></a>.</p>
 </blockquote>
 
-<p>Questa frase di Lucien Lévy-Bruhl si applica anche alle classi del C++.<br />
-Le variabili all’interno di una classe, sono dette <em>dati membro</em> o <em>attributi</em> della classe; le funzioni, invece, sono dette <em>funzioni membro</em> o <em>metodi</em>.
-Sia gli attributi che i metodi di una classe possono essere protette da letture o modifiche indebite grazie a delle parole-chiave, dette: <em>modificatori di accesso</em>.
-I modificatori di accesso sono tre: <code>private</code>, <code>protected</code> e <code>public</code>.
-I metodi o gli attributi dichiarati <em>private</em> sono accessibili solo alla classe stessa; quelli dichiarati come <em>protected</em> sono accessibili alla classe e a eventuali <a href="/man/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come <em>public</em> sono accessibili a qualunque elemento del programma.<br />
-Se convertiamo in classe la struttura <code>Orario</code>, otteniamo:</p>
+<p>Questa frase di Lucien Lévy-Bruhl si applica anche alle classi del C++. 
+Sia gli attributi che i metodi di una classe possono essere protetti da letture o modifiche indebite grazie ai modificatori di accesso <code>private</code>, <code>protected</code> e <code>public</code>.
+I metodi o gli attributi dichiarati <em>private</em> sono accessibili solo alla classe stessa; quelli dichiarati come <em>protected</em> sono accessibili alla classe e a eventuali <a href="/man/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come <em>public</em> sono accessibili a qualunque elemento del programma.
+In mancanza di specifiche, tutti i dati e le funzioni di una classe verranno considerati:</p>
+
+<ul>
+  <li>privati, nel caso di una classe;</li>
+  <li>pubblici, nel caso di <code>struct</code> o <code>union</code>.</li>
+</ul>
+
+<p>Per le <code>struct</code>, la visibilità dei dati membro può essere modificata con gli indicatori di accesso; i dati delle <code>union</code>, invece, possono essere solo pubblici.<br />
+C++ permette di suddividere la dichiarazione di una classe in quante sezioni si desidera e nella sequenza <code>private</code>, <code>public</code>, <code>pro­tected</code> che si preferisce, ma un codice scritto in questo modo è sicuramente più difficile da leggere di uno in cui tutti i membri privati stanno da una parte e tutti quelli pubblici da un’altra.
+Quindi, a meno che tu non abbia delle buone ragioni per fare altrimenti, cerca di raggruppare in tre sole sezioni <code>private</code>, <code>pro­tected</code> e <code>public</code> tutte le funzioni e i dati membro con gli stessi attributi di accesso:</p>
+
+<pre><code>class Persona
+{
+ private
+    ...
+ protected:
+    ...
+ public:
+    ...
+};
+</code></pre>
+
+<p>Questo tipo di ordinamento della dichiarazione, oltre a garantirti una maggiore leggibilità del codice, ti consentirà, se lo desideri, di omettere l’indicatore di accesso <code>private</code> (è la soluzione di default, ricordi?).<br />
+Mettiamo in pratica tutto ciò, convertendo in classe la struttura <code>Orario</code>:</p>
 
 <pre><code>class Orario {
 protected:
@@ -246,7 +305,16 @@ public:
 <p>Gli attributi <code>_h</code>, <code>_m</code> e <code>_s</code> compaiono dopo la parola-chiave <code>private</code> e saranno quindi visibili solo alle funzioni della classe stessa.<br />
 La funzione <code>Orario</code>, che ha lo stesso nome della classe, è detta <em>costruttore</em> e viene richiamata ogni volta che si crea una variabile di tipo <code>Orario</code>.
 Il suo scopo è di inizializzare le variabili all’interno della classe, in questo caso, impostando tutti e tre i valori a 0.<br />
-Una stessa classe può avere più costruttori; la classe <code>Orario</code>, per esempio, potrebbe avere un costruttore privo di parametri, che inizializzi ore, minuti e secondi a zero e uno che permetta invece di assegnare valori specifici a ciascun attributo:</p>
+Quando dichiariamo una variabile di tipo primitivo come <code>int</code>, o <code>double</code>, il compilatore svolge automaticamente tutta una serie di operazioni atte ad allocare lo spazio di memoria necessario a contenerla e ad inizializzarlo.
+Il compilatore, però, non sa come vada creata e inizializzata una variabile di tipo <code>Orario</code> ed è per questo che la classe dovrà definire delle <em>funzioni di gestione</em> che spieghino sia come creare una nuova variabile, che come distruggerla, se necessario. 
+I costruttori hanno alcune peculiarità che le distin­guono dalle altre funzioni membro:</p>
+
+<ul>
+  <li>devono avere lo stesso nome della classe;</li>
+  <li>non hanno un tipo di ritorno perché è implicito che ritornino una variabile   della classe cui appartengono.</li>
+</ul>
+
+<p>Una stessa classe può avere più costruttori; la classe <code>Orario</code>, per esempio, potrebbe avere un costruttore privo di parametri, che inizializzi ore, minuti e secondi a zero e uno che permetta invece di assegnare valori specifici a ciascun attributo:</p>
 
 <pre><code>class Orario {
 protected:
@@ -265,14 +333,12 @@ public:
 };
 </code></pre>
 
-<p>La forma:</p>
+<p>La riga:</p>
 
-<pre><code>Orario(int h, int m, int s) 
-: _h(h), _m(m), _s(s){
-}
+<pre><code>: _h(h), _m(m), _s(s){
 </code></pre>
 
-<p>è solo un altro modo per inizializzare i dati membro della classe ed equivale a scrivere:</p>
+<p>si chiama: <em>lista di inizializzazione</em> e ed equivale a scrivere:</p>
 
 <pre><code>_h = h;
 _m = m;
@@ -286,8 +352,30 @@ _s = s;
 }
 </code></pre>
 
+<p>Alle volte, può essere utile definire un costruttore che crei delle nuove variabili della classe partendo da variabili esis­tenti, operando quindi una sorta di clonazione. 
+Questo tipo di funzioni si chiamano: <em>costruttori di copia</em> o: <em>costruttori di inizializ­zazione</em> e richiedono come argomento un riferimento a una variabile della stessa classe:</p>
+
+<pre><code>/** 
+ * Dichiarazione del costruttore di copia
+ * (all'interno della classe) 
+ */
+Orario::Orario(const Orario&amp; );	
+
+/** Definizione  */
+Orario::Orario(const Orario&amp; o) 
+: _h(o._h), _m(o._m), _s(o._s) {
+}
+
+/** Utilizzo */
+Orario o2 = o1;
+</code></pre>
+
+<p>Il costruttore di copia è un tipo di costruttore molto importante in quanto presiede alla maggior parte delle attività di inizializzazione di oggetti della classe cui appartiene; per questa ragione, nel caso non venga definito dall’utente, è automaticamente generato dal compilatore.</p>
+
+<hr />
+
 <p>Le funzioni membro devono essere dichiarate all’interno della dichiarazione della classe, ma possono essere definite sia dentro che fuori di essa. 
-Se le si definisce esternamente alla dichiarazione della classe, vanno identificate aggiungendo il nome della classe prima di quello della funzione:</p>
+Se le si definisce esternamente alla dichiarazione della classe, vanno identificate aggiungendo il nome della classe prima di quello della funzione, seguito dall’<a href="/man/operatori#risoluzione" class="xref">operatore di risoluzione</a>:</p>
 
 <pre><code>/** 
  * @file classi-classe-orario-1.cpp
@@ -354,7 +442,49 @@ src/cpp/classi-classe-orario-1.cpp:16:9: note: declared protected here
 3 errors generated.
 </code></pre>
 
-<p>Per rendere disponibili gli attributi di una classe, si utilizzano delle funzioni dette: <em>funzioni di interfaccia</em>, che permettono un accesso controllato ai dati sia in lettura che in modifica. 
+<p>Il C++ prevede due modi per rendere disponibili gli attributi di una classe anche alle funzioni esterne alla classe stessa:</p>
+
+<ul>
+  <li>le classi o le funzioni <code>friend</code>.</li>
+  <li>le <em>funzioni di interfaccia</em>;</li>
+</ul>
+
+<p>Il modo più rapido per accedere ai dati privati di una classe attraverso una funzione o una classe esterna è quello di dichiararle come <code>friend</code>.
+In virtù di ciò, la funzione o la classe acquisteranno una visibilità completa sui dati protetti:</p>
+
+<pre><code>class Orario {
+protected:
+
+    /** Dati membro privati */
+    int _h;
+    int _m;
+    int _s;
+
+public:
+    
+    /** Costruttore della classe */
+    Orario(int h = 0, int m = 0, int s = 0) ;
+
+    /** Funzioni di lettura inline */
+    inline int getH() { return _h; }
+    inline int getM() { return _m; }
+    inline int getS() { return _s; }
+
+    /** Funzioni di scrittura inline */
+    inline int setH(int h) { return _h = (h % 24); }
+    inline int setM(int m) { return _m = (m % 60); }
+    inline int setS(int s) { return _s = (s % 60); }
+
+    /** Dichiarazione di una funzione e di una classe friend */
+    friend int incrementaMinuti(Orario&amp; o, int m);
+    friend class Orologio(); 	
+
+};
+</code></pre>
+
+<p>Questa soluzione è molto comoda, ma non ne abusare.
+Come avviene nella realtà, prima di dare la tua amicizia a qual­cuno verificane l’affidabilità: un <code>friend</code> ha la possibilità di fare grossi danni, altrimenti.<br />
+Un metodo più sicuro consiste nel definire delle funzioni membro pubbliche che consentano un accesso controllato ai dati che si vogliono proteggere. 
 Nel caso della classe <code>Orario</code>, ne occorrono sei: una la lettura e una per la scrittura di ciascuno dei tre dati membro:</p>
 
 <pre><code>/** Funzioni di lettura inline */
@@ -373,7 +503,7 @@ inline int setS(int s) { return _s = (s % 60); }
 
 <pre><code>return _h = (h % 24);
 </code></pre>
-<p>Non nemmeno sei obbligato a dichiarare le funzioni di interfaccia come <code>inline</code>; l’ho fatto qui perché erano estremamente semplici, ma valgono sempre le considerazioni fatte <a href="/man/funzioni#inline" class="xref">a suo tempo</a>.<br />
+<p>Non sei nemmeno obbligato a dichiarare le funzioni di interfaccia come <code>inline</code>; l’ho fatto qui perché erano estremamente semplici, ma valgono sempre le considerazioni fatte <a href="/man/funzioni#inline" class="xref">a suo tempo</a>.<br />
 Così come abbiamo fatto per il costruttore della classe, potremmo unificare le funzioni di lettura e scrittura, utilizzando un parametro di default che determini il comportamento del programma:</p>
 
 <pre><code>inline int ore(int h = -1) { 
@@ -395,9 +525,26 @@ Così come abbiamo fatto per il costruttore della classe, potremmo unificare le 
 Questo tipo di funzioni, però, ha due difetti: limita i valori che puoi assegnare all’attibuto e limita la granularità dei privilegi sulle funzioni.
 Limita il numero di valori che puoi assegnare all’attibuto, perché esclude il valore del parametro di default; cosa che non crea problemi in questo caso, dato che non esiste un’ora <code>-1</code>, ma che potrebbe farlo nel caso di una stringa con parametro di default nullo.
 Limita la granularità dei privilegi sulle funzioni, perché ti costringe a rendere pubbliche le funzioni di scrittura dei dati membro e questo, in certi casi potrebbe non essere saggio. 
-Ti consiglio perciò di scrivere sempre due funzioni di interfaccia distinte per la lettura e la scrittura: sul momento ti sembrerà uno spreco di tempo, ma, a meno che il tuo programma non sia particolarmente banale, o prima o poi ti accorgerai di aver fatto la scelta corretta.</p>
+Ti consiglio perciò di scrivere sempre due funzioni di interfaccia distinte per la lettura e la scrittura: sul momento ti sembrerà uno spreco di tempo, ma, a meno che il tuo programma non sia particolarmente banale, o prima o poi ti accorgerai di aver fatto la scelta corretta.<br />
+A ogni modo, questo metodo, garantendo un numero limitato di accessi ai membri della classe, è preferibile a una soluzione in cui tutti i membri dato siano accessibili.</p>
 
-<!-- 
+<hr />
+
+<!--
+
+Oltre a quelli definiti dall’utente, poi, la lista dei membri di una classe comprende sempre anche un clandestino, che viene dichiarato implicitamente. Si chiama this ed è utilizzato, in maniera implicita o esplicita, per riferirsi all’istanza cui appartiene, ovvero, se C è una classe di cui Ist è un’istanza, this di Ist sarà un puntatore a oggetti di tipo C che punta all’indirizzo di Ist o, se preferite:
+X * this = &x ;
+NOTA: 
+Questa istruzione ha unicamente valore di esempio: non è possibile inserire una simile linea di codice in un programma senza ricevere un messaggio da parte del compilatore con l'avviso che this è una parola chiave e non può essere usata come identificatore.
+Non capita molto spesso di dover utilizzare this in maniera esplicita, mentre è sempre passato come membro nascosto nelle funzioni membro, per specificare su quale istanza della classe la funzione debba operare. 
+2.4.1 Dati membro statici
+Le uniche funzioni membro che non possono fare uso di this sono quelle dichiarate come static, che si comportano in maniera molto particolare: 
+·	mentre di tutti gli oggetti non statici della lista dei membri, dati o funzi­oni che siano, viene fatta una copia distinta in ciascuna nuova istanza della classe, i membri dichiarati come static sono unici e vengono per­ciò condivisi dalle diverse istanze;
+·	non è possibile inizializzare membri static all’interno della dichiarazione e si deve quindi farlo altrove nel programma come per un qualsiasi oggetto a visibilità globale;
+·	si può accedere ad essi, oltre che con i normali operatori di selezione, facendo riferimento alla classe stessa.
+Cerchiamo di spiegarci meglio con un esempio. Immaginiamo di voler tenere nota in una variabile del numero di oggetti della classe Punto che sono stati creati: nessun modo migliore per farlo di aggiungere alla nostra classe un membro static:
+
+fare esempio di classe con attributi binarii
 
 \[cfr. *Breve storia dell'infinito*, pagg. 30-40\]
 

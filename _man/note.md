@@ -99,8 +99,8 @@ quote:
         <li id="freemen">
             H. <span>Wiencek</span>,
             <i>The Dark Side of Thomas Jefferson</i>
-            Smithsonian Magazine, Ottobre 2012.<br /> 
-            <a href="https://www.smithsonianmag.com/history/the-dark-side-of-thomas-jefferson-35976004" target="note">www.smithsonianmag.com/history/the-dark-side-of-thomas-jefferson-35976004</a>
+            Smithsonian Magazine, Ottobre 2012. 
+            <a href="https://www.smithsonianmag.com/history/the-dark-side-of-thomas-jefferson-35976004" target="note">(www.smithsonianmag.com/history/the-dark-side-of-thomas-jefferson-35976004)</a>
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="black">
@@ -200,7 +200,10 @@ quote:
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="samyutta">
-            <i>Samyutta Nikaya</i>, citato da A.K.Coomaraswamy in: <i>Tempo ed Eternità</i>, pag. 45
+            <i>Samyutta Nikaya</i>, 
+            Citato da A. K. <span>Coomaraswami</span>, 
+            <i>Tempo ed Eternità</i>, p. 45, 
+            Luni, Milano, 2003
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="musashi">
@@ -275,7 +278,7 @@ quote:
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="attar">
-            F. Attar - <i>op.cit.</i>
+            F. <span>Attar</span> - <i>op.cit.</i>
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="nansen">
@@ -298,7 +301,7 @@ quote:
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="vasana">
-            Scarabelli, Piera; Vinti, Massimo - <i>op.cit.</i>
+            P. <span>Scarabelli</span>, M. <span>Vinti</span> - <i>op.cit.</i>
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="stateful">
@@ -324,7 +327,7 @@ quote:
     <h3>Le classi</h3>
     <ol>
         <li id="selvaggio">
-            Lévy-Bruhl, citato da Coomaraswamy
+            <span>Lévy-Bruhl</span>, citato da Coomaraswamy
             <i>Il Grande Brivido</i>, pag. 227 
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
