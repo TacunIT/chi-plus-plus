@@ -20,7 +20,7 @@ public:
 
 /** Definizione del costruttore della classe */
 Orario::Orario(int h, int m, int s) 
-: _h(h), _m(m), _s(s) 
+: _h(h % 24), _m(m % 60), _s(s % 60) 
 {
 }
     

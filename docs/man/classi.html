@@ -336,28 +336,29 @@ public:
         _s = 0;
     }
     Orario(int h, int m, int s) 
-    : _h(h), _m(m), _s(s){
+    : _h(h % 24), _m(m % 60), _s(s % 60) {
     }
 };
 </code></pre>
 
 <p>La riga:</p>
 
-<pre><code>: _h(h), _m(m), _s(s){
+<pre><code>: _h(h % 24), _m(m % 60), _s(s % 60) 
 </code></pre>
 
 <p>si chiama: <em>lista di inizializzazione</em> e ed equivale a scrivere:</p>
 
-<pre><code>_h = h;
-_m = m;
-_s = s;
+<pre><code>_h = h % 24;
+_m = m % 60;
+_s = s % 60;
 </code></pre>
 
-<p>Quando definisci un costruttore, puoi usare indifferentemente l’una o l’altra sintassi o anche mischiarle, a seconda dei casi.
+<p>L’utilizzo dell’operatore modulo <code>%</code> è indispensabile, in questo caso, per evitare che siano assegnati valori non corretti alle variabili.<br />
+Quando definisci un costruttore, puoi usare indifferentemente l’una o l’altra sintassi o anche mischiarle, a seconda dei casi.
 Un modo più succinto di ottenere lo stesso risultato con un unico costruttore è di utilizzare dei valori di default per i parametri:</p>
 
 <pre><code>Orario(int h = 0, int m = 0, int s = 0) 
-: _h(h), _m(m), _s(s) {
+: _h(h % 24), _m(m % 60), _s(s % 60) {
 }
 </code></pre>
 
@@ -365,13 +366,13 @@ Un modo più succinto di ottenere lo stesso risultato con un unico costruttore �
 Questo tipo di funzioni si chiamano: <em>costruttori di copia</em> o: <em>costruttori di inizializ­zazione</em> e richiedono come argomento un riferimento a una variabile della stessa classe:</p>
 
 <pre><code>/** 
- * Dichiarazione del costruttore di copia
- * (all'interno della classe) 
+ * Dichiarazione del costruttore di copia 
+ * all'interno della classe. 
+ * Possiamo copiare il valore delle variabili 
+ * così com'è perché è già stato verificato 
+ * dal costruttore della variabile o1.  
  */
-Orario::Orario(const Orario&amp; );	
-
-/** Definizione  */
-Orario::Orario(const Orario&amp; o) 
+Orario::Orario(const Orario&amp; )
 : _h(o._h), _m(o._m), _s(o._s) {
 }
 
@@ -460,7 +461,7 @@ using namespace std;
 
 /** Dichiarazione della classe */
 class Orario {
-protected:
+private:
     int _h;
     int _m;
     int _s;
@@ -470,7 +471,7 @@ public:
 
 /** Definizione del costruttore della classe */
 Orario::Orario(int h, int m, int s) 
-: _h(h), _m(m), _s(s) 
+: _h(h % 24), _m(m % 60), _s(s % 60) 
 {
 }
     
@@ -524,7 +525,7 @@ src/cpp/classi-classe-orario-1.cpp:16:9: note: declared protected here
 In virtù di ciò, la funzione o la classe acquisteranno una visibilità completa sui dati protetti:</p>
 
 <pre><code>class Orario {
-protected:
+private:
 
     /** Dati membro privati */
     int _h;
@@ -536,7 +537,14 @@ public:
     /** Costruttore della classe */
     Orario(int h = 0, int m = 0, int s = 0) ;
 
-    /** Funzioni di lettura */
+    /** Costruttore di copia inline */
+    Orario(const Orario&amp; o) {
+        _h = o._h;
+        _m = o._m;
+        _s = o._s;
+    }
+
+    /** Funzioni di lettura  */
     int getH() { return _h; }
     int getM() { return _m; }
     int getS() { return _s; }
@@ -546,7 +554,7 @@ public:
     int setM(int m) { return _m = (m % 60); }
     int setS(int s) { return _s = (s % 60); }
 
-    /** Dichiarazione di una funzione e di una classe friend */
+    /** Dichiarazione di una funzione friend */
     friend int aggiornaMinuti(Orario&amp; o, int m);
     friend class Orologio(); 	
 
@@ -600,9 +608,9 @@ Ti consiglio perciò di scrivere sempre due funzioni di interfaccia distinte per
 
 <hr id="this" />
 
-<p>Oltre a quelli definiti dall’utente, la lista dei membri di una classe comprende sempre anche un “clandestino”, che viene dichiarato implicitamente. Si chiama <code>this</code> ed è un puntatore all’istanza corrente:</p>
-
 <!--
+
+Oltre a quelli definiti dall’utente, la lista dei membri di una classe comprende sempre anche un “clandestino”, che viene dichiarato implicitamente. Si chiama `this` ed è un puntatore all'istanza corrente.
 
 Oltre a quelli definiti dall’utente, poi, la lista dei membri di una classe comprende sempre anche un clandestino, che viene dichiarato implicitamente. Si chiama this ed è utilizzato, in maniera implicita o esplicita, per riferirsi all’istanza cui appartiene, ovvero, se C è una classe di cui Ist è un’istanza, this di Ist sarà un puntatore a oggetti di tipo C che punta all’indirizzo di Ist o, se preferite:
 X * this = &x ;

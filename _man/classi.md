@@ -196,7 +196,7 @@ public:
         _s = 0;
     }
     Orario(int h, int m, int s) 
-    : _h(h), _m(m), _s(s){
+    : _h(h % 24), _m(m % 60), _s(s % 60) {
     }
 };
 ```
@@ -204,23 +204,24 @@ public:
 La riga: 
 
 ```    
-: _h(h), _m(m), _s(s){
+: _h(h % 24), _m(m % 60), _s(s % 60) 
 ```
 
 si chiama: *lista di inizializzazione* e ed equivale a scrivere:
 
 ```
-_h = h;
-_m = m;
-_s = s;
+_h = h % 24;
+_m = m % 60;
+_s = s % 60;
 ```
 
+L'utilizzo dell'operatore modulo `%` è indispensabile, in questo caso, per evitare che siano assegnati valori non corretti alle variabili.  
 Quando definisci un costruttore, puoi usare indifferentemente l'una o l'altra sintassi o anche mischiarle, a seconda dei casi.
 Un modo più succinto di ottenere lo stesso risultato con un unico costruttore è di utilizzare dei valori di default per i parametri:
 
 ```
 Orario(int h = 0, int m = 0, int s = 0) 
-: _h(h), _m(m), _s(s) {
+: _h(h % 24), _m(m % 60), _s(s % 60) {
 }
 ```
 
@@ -229,13 +230,13 @@ Questo tipo di funzioni si chiamano: *costruttori di copia* o: *costruttori di i
 
 ```
 /** 
- * Dichiarazione del costruttore di copia
- * (all'interno della classe) 
+ * Dichiarazione del costruttore di copia 
+ * all'interno della classe. 
+ * Possiamo copiare il valore delle variabili 
+ * così com'è perché è già stato verificato 
+ * dal costruttore della variabile o1.  
  */
-Orario::Orario(const Orario& );	
-
-/** Definizione  */
-Orario::Orario(const Orario& o) 
+Orario::Orario(const Orario& )
 : _h(o._h), _m(o._m), _s(o._s) {
 }
 
@@ -348,7 +349,7 @@ In virtù di ciò, la funzione o la classe acquisteranno una visibilità complet
 
 ```
 class Orario {
-protected:
+private:
 
     /** Dati membro privati */
     int _h;
@@ -360,7 +361,14 @@ public:
     /** Costruttore della classe */
     Orario(int h = 0, int m = 0, int s = 0) ;
 
-    /** Funzioni di lettura */
+    /** Costruttore di copia inline */
+    Orario(const Orario& o) {
+        _h = o._h;
+        _m = o._m;
+        _s = o._s;
+    }
+
+    /** Funzioni di lettura  */
     int getH() { return _h; }
     int getM() { return _m; }
     int getS() { return _s; }
@@ -370,7 +378,7 @@ public:
     int setM(int m) { return _m = (m % 60); }
     int setS(int s) { return _s = (s % 60); }
 
-    /** Dichiarazione di una funzione e di una classe friend */
+    /** Dichiarazione di una funzione friend */
     friend int aggiornaMinuti(Orario& o, int m);
     friend class Orologio(); 	
 
@@ -428,9 +436,10 @@ Ti consiglio perciò di scrivere sempre due funzioni di interfaccia distinte per
 
 <hr id="this">
 
-Oltre a quelli definiti dall’utente, la lista dei membri di una classe comprende sempre anche un “clandestino”, che viene dichiarato implicitamente. Si chiama `this` ed è un puntatore all'istanza corrente:
 
 <!--
+
+Oltre a quelli definiti dall’utente, la lista dei membri di una classe comprende sempre anche un “clandestino”, che viene dichiarato implicitamente. Si chiama `this` ed è un puntatore all'istanza corrente.
 
 Oltre a quelli definiti dall’utente, poi, la lista dei membri di una classe comprende sempre anche un clandestino, che viene dichiarato implicitamente. Si chiama this ed è utilizzato, in maniera implicita o esplicita, per riferirsi all’istanza cui appartiene, ovvero, se C è una classe di cui Ist è un’istanza, this di Ist sarà un puntatore a oggetti di tipo C che punta all’indirizzo di Ist o, se preferite:
 X * this = &x ;
