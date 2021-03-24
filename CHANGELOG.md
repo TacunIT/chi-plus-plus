@@ -1,3 +1,7 @@
+## 0.22.1 (March 24, 2021)
+  - Revisione del testo e degli esempii
+  - Redazione paragrafo su funzioni di interfaccia
+
 ## 0.22.0 (March 22, 2021)
   - Costruttori e funzioni membro
   - Redazione della sezione tecnica capitolo Classi.
