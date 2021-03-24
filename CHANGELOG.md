@@ -1,3 +1,7 @@
+## 0.22.2 (March 24, 2021)
+  - Redazione del  brano su funzioni membro inline
+  - Aggiunto codice di esempio per membri statici
+
 ## 0.22.1 (March 24, 2021)
   - Revisione del testo e degli esempii
   - Redazione paragrafo su funzioni di interfaccia
