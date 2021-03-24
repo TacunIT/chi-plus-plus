@@ -248,7 +248,6 @@ Adesso, però, è tardi e questa lezione è stata fin troppo lunga; ne parleremo
 
 <!--
 
-@todo: spiegare la differenza fra dichiarazione e definizione; parlare della parola-chiave extern
-
+@todo: classi di memorizzazione: extern, static, auto 
 
 -->

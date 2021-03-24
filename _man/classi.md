@@ -409,6 +409,7 @@ Ovviamente, puoi chiamare queste funzioni come preferisci, ma utilizzare i prefi
 return _h = (h % 24);
 ```
 Non sei nemmeno obbligato a dichiarare le funzioni di interfaccia come `inline`; l'ho fatto qui perché erano estremamente semplici, ma valgono sempre le considerazioni fatte <a href="/man/funzioni#inline" class="xref">a suo tempo</a>.  
+<! @todo: https://isocpp.org/wiki/faq/inline-functions#inline-member-fns -->
 Così come abbiamo fatto per il costruttore della classe, potremmo unificare le funzioni di lettura e scrittura, utilizzando un parametro di default che determini il comportamento del programma:
 
 ```
@@ -434,24 +435,48 @@ Limita il numero di valori che puoi assegnare all'attibuto, perché esclude il v
 Limita la granularità dei privilegi sulle funzioni, perché ti costringe a rendere pubbliche le funzioni di scrittura dei dati membro e questo, in certi casi potrebbe non essere saggio. 
 Ti consiglio perciò di scrivere sempre due funzioni di interfaccia distinte per la lettura e la scrittura: sul momento ti sembrerà uno spreco di tempo, ma, a meno che il tuo programma non sia particolarmente banale, o prima o poi ti accorgerai di aver fatto la scelta corretta.  
 
-<hr id="this">
+<hr id="static">
+
+Ogni variabile di una determinata classe possiede delle copie dei dati membro, mentre le funzioni membro sono condivise da tutte le istanze.
+Per consentire al programma di sapere quale sia l'istanza che sta richiamando un determinato metodo, il compilatore aggiuge a ogni chiamata a funzione un parametro nascosto chiamato `this`, che punta all'istanza che ha richiesto la funzione.
+Il parametro `this`, anche se non dichiarato, può essere utilizzato nel corpo delle funzioni membro per riferirsi all'istanza corrente.
+Per esempio, il costruttore di copia della classe `Orario` (così come qualsiasi altra funzione membro della classe) potrebbe essere riscritto così:
+
+```
+Orario(const Orario& o) {
+    this->_h = o._h;
+    this->_m = o._m;
+    this->_s = o._s;
+}
+```
+
+Le uniche funzioni membro che non possono fare uso del puntatore `this` sono quelle dichiarate come `static`.  
+Una classe può avere sia attributi che funzioni membro statiche.
+La particolarità di questi elementi è di non essere legati a una specifica istanza, ma di essere condivisi da tutti gli oggetti; questo fa sì che abbiano un comportamento leggermente diverso da quello dei membri non statici:
+
+- per inizializzarli all’interno della dichiarazione, li si deve dichiarare come `inline static`<a href="/man/note#cpp17" class="nota"></a>, 
+altrimenti, devono essere inizializzati altrove nel programma, come un qualsiasi oggetto a visibilità globale;
+
+- si può accedere ad essi, oltre che con i normali operatori di selezione, facendo riferimento alla classe stessa.
+
+Cerco di chiarirti un po' le idee con un esempio:
+
+```
+{% include_relative src/classi-static.cpp %}
+```
+
+Se compili ed esegui questo codice, otterrai:
+
+```
+> g++ src/cpp/classi-static.cpp -o src/out/esempio
+> src/out/esempio                                 
+Da istanza c1: 1
+Da istanza c2: 3
+Da istanza c3: 3
+Dalla classe : 3```
 
 
 <!--
-
-Oltre a quelli definiti dall’utente, la lista dei membri di una classe comprende sempre anche un “clandestino”, che viene dichiarato implicitamente. Si chiama `this` ed è un puntatore all'istanza corrente.
-
-Oltre a quelli definiti dall’utente, poi, la lista dei membri di una classe comprende sempre anche un clandestino, che viene dichiarato implicitamente. Si chiama this ed è utilizzato, in maniera implicita o esplicita, per riferirsi all’istanza cui appartiene, ovvero, se C è una classe di cui Ist è un’istanza, this di Ist sarà un puntatore a oggetti di tipo C che punta all’indirizzo di Ist o, se preferite:
-X * this = &x ;
-NOTA: 
-Questa istruzione ha unicamente valore di esempio: non è possibile inserire una simile linea di codice in un programma senza ricevere un messaggio da parte del compilatore con l'avviso che this è una parola chiave e non può essere usata come identificatore.
-Non capita molto spesso di dover utilizzare this in maniera esplicita, mentre è sempre passato come membro nascosto nelle funzioni membro, per specificare su quale istanza della classe la funzione debba operare. 
-2.4.1 Dati membro statici
-Le uniche funzioni membro che non possono fare uso di this sono quelle dichiarate come static, che si comportano in maniera molto particolare: 
-·	mentre di tutti gli oggetti non statici della lista dei membri, dati o funzi­oni che siano, viene fatta una copia distinta in ciascuna nuova istanza della classe, i membri dichiarati come static sono unici e vengono per­ciò condivisi dalle diverse istanze;
-·	non è possibile inizializzare membri static all’interno della dichiarazione e si deve quindi farlo altrove nel programma come per un qualsiasi oggetto a visibilità globale;
-·	si può accedere ad essi, oltre che con i normali operatori di selezione, facendo riferimento alla classe stessa.
-Cerchiamo di spiegarci meglio con un esempio. Immaginiamo di voler tenere nota in una variabile del numero di oggetti della classe Punto che sono stati creati: nessun modo migliore per farlo di aggiungere alla nostra classe un membro static:
 
 fare esempio di classe con attributi binarii
 

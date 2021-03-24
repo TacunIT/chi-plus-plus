@@ -327,8 +327,12 @@ quote:
     <h3>Le classi</h3>
     <ol>
         <li id="selvaggio">
-            <span>Lévy-Bruhl</span>, citato da Coomaraswamy
-            <i>Il Grande Brivido</i>, pag. 227 
+            <span>Lévy-Bruhl</span>, citato da Coomaraswamy, <i>Il Grande Brivido</i>, pag. 227 
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>
+        <li id="cpp17">
+            Da C++17; non utilizzo questa sintassi nel testo perché preferisco una forma più portabile - v. <a href="https://en.cppreference.com/w/cpp/language/static"
+            target="note">en.cppreference.com/w/cpp/language/static</a>.
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
     </ol>
@@ -338,5 +342,4 @@ quote:
 <li id="">
     <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
 </li>
-
 -->
