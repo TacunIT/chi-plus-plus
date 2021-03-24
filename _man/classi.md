@@ -311,7 +311,7 @@ Definirle all'interno della dichiarazione della classe equivale a dichiararle <a
 Se invece le si definisce esternamente alla dichiarazione della classe, vanno identificate aggiungendo il nome della classe prima di quello della funzione, seguito dall'<a href="/man/operatori#risoluzione" class="xref">operatore di risoluzione</a>:
 
 ```
-{% include_relative src/classi-classe-orario-1.cpp %}
+{% include_relative src/classi-classe-orario.cpp %}
 ```
 
 Se compili questo codice, però, ottieni un errore: la funzione `main` può utilizzare il costruttore della classe `Orario` perché è dichiarato `public`, ma non può né leggere né modificare gli attributi definiti come `private`:
@@ -408,8 +408,10 @@ Ovviamente, puoi chiamare queste funzioni come preferisci, ma utilizzare i prefi
 ```
 return _h = (h % 24);
 ```
-Non sei nemmeno obbligato a dichiarare le funzioni di interfaccia come `inline`; l'ho fatto qui perché erano estremamente semplici, ma valgono sempre le considerazioni fatte <a href="/man/funzioni#inline" class="xref">a suo tempo</a>.  
-<! @todo: https://isocpp.org/wiki/faq/inline-functions#inline-member-fns -->
+
+Non sei nemmeno obbligato a dichiarare le funzioni di interfaccia come `inline`; l'ho fatto qui perché erano estremamente semplici, ma si dovrebbe evitare di aggiungere il codice delle funzioni all'interno della dichiarazione di una classe già di per sé complessa perché la rende più difficile da leggere.
+C'è anche chi pensa che ciò sia sbagliato perché, se da un lato rende le cose più facili a chi scrive il codice, complica la vita di chi lo legge perché mischia ciò che la classe fa con il modo in cui lo fa<a href="/man/note#inline" class="nota"></a>.
+Io non sono del tutto d'accordo con questa affermazione perché alle volte è più comodo e rapido avere il codice delle funzioni all'interno della dichiarazione della classe, ma essendo un precetto che antepone il bene di tanti (i fruitori del codice) rispetto a quello del singolo (l'autore del codice), mi sono sentito in dovere di riferirla.  
 Così come abbiamo fatto per il costruttore della classe, potremmo unificare le funzioni di lettura e scrittura, utilizzando un parametro di default che determini il comportamento del programma:
 
 ```
@@ -473,8 +475,8 @@ Se compili ed esegui questo codice, otterrai:
 Da istanza c1: 1
 Da istanza c2: 3
 Da istanza c3: 3
-Dalla classe : 3```
-
+Dalla classe : 3
+```
 
 <!--
 
