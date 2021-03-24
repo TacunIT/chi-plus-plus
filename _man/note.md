@@ -196,7 +196,7 @@ quote:
     <ol>
         <li id="template">
             <a href="https://isocpp.org/wiki/faq/templates#templates-defn-vs-decl"
-               target="note">https://isocpp.org/wiki/faq/templates#templates-defn-vs-decl</a>
+               target="note">isocpp.org/wiki/faq/templates#templates-defn-vs-decl</a>
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="samyutta">
@@ -330,9 +330,14 @@ quote:
             <span>Lévy-Bruhl</span>, citato da Coomaraswamy, <i>Il Grande Brivido</i>, pag. 227 
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
+        <li id="inline">
+            <i>However, although it is easier on the person who writes the class, it is harder on all the readers since it mixes what a class does (the external behavior) with how it does it (the implementation). Because of this mixture, you should define all your member functions outside the class body if your class is intended to be highly reused and your class’s documentation is the header file itself</i> - 
+            <a href="https://isocpp.org/wiki/faq/inline-functions#inline-member-fns"
+            target="note">isocpp.org/wiki/faq/inline-functions#inline-member-fns</a>.
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>
         <li id="cpp17">
-            Da C++17; non utilizzo questa sintassi nel testo perché preferisco una forma più portabile - v. <a href="https://en.cppreference.com/w/cpp/language/static"
-            target="note">en.cppreference.com/w/cpp/language/static</a>.
+            Da C++17; non utilizzo questa sintassi nel testo perché preferisco una forma più portabile. 
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
     </ol>

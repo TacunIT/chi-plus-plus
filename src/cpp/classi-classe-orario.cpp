@@ -1,5 +1,5 @@
 /** 
- * @file classi-classe-orario-1.cpp
+ * @file classi-classe-orario.cpp
  * Gestione dei dati membro di una classe.
  */
  

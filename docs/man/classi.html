@@ -450,7 +450,7 @@ Definirle all’interno della dichiarazione della classe equivale a dichiararle 
 Se invece le si definisce esternamente alla dichiarazione della classe, vanno identificate aggiungendo il nome della classe prima di quello della funzione, seguito dall’<a href="/man/operatori#risoluzione" class="xref">operatore di risoluzione</a>:</p>
 
 <pre><code>/** 
- * @file classi-classe-orario-1.cpp
+ * @file classi-classe-orario.cpp
  * Gestione dei dati membro di una classe.
  */
  
@@ -582,8 +582,10 @@ int setS(int s) { return _s = (s % 60); }
 
 <pre><code>return _h = (h % 24);
 </code></pre>
-<p>Non sei nemmeno obbligato a dichiarare le funzioni di interfaccia come <code>inline</code>; l’ho fatto qui perché erano estremamente semplici, ma valgono sempre le considerazioni fatte <a href="/man/funzioni#inline" class="xref">a suo tempo</a>.<br />
-&lt;! @todo: https://isocpp.org/wiki/faq/inline-functions#inline-member-fns –&gt;
+
+<p>Non sei nemmeno obbligato a dichiarare le funzioni di interfaccia come <code>inline</code>; l’ho fatto qui perché erano estremamente semplici, ma si dovrebbe evitare di aggiungere il codice delle funzioni all’interno della dichiarazione di una classe già di per sé complessa perché la rende più difficile da leggere.
+C’è anche chi pensa che ciò sia sbagliato perché, se da un lato rende le cose più facili a chi scrive il codice, complica la vita di chi lo legge perché mischia ciò che la classe fa con il modo in cui lo fa<a href="/man/note#inline" class="nota"></a>.
+Io non sono del tutto d’accordo con questa affermazione perché alle volte è più comodo e rapido avere il codice delle funzioni all’interno della dichiarazione della classe, ma essendo un precetto che antepone il bene di tanti (i fruitori del codice) rispetto a quello del singolo (l’autore del codice), mi sono sentito in dovere di riferirla.<br />
 Così come abbiamo fatto per il costruttore della classe, potremmo unificare le funzioni di lettura e scrittura, utilizzando un parametro di default che determini il comportamento del programma:</p>
 
 <pre><code>int ore(int h = -1) { 
@@ -684,8 +686,8 @@ int main()
      * Richiama la funzione statica dagli oggetti 
      * e direttamente dalla classe
      */
-    cout &lt;&lt; "Da istanza c2: "&lt;&lt; c2.nIstanze() &lt;&lt; endl;
-    cout &lt;&lt; "Da istanza c3: "&lt;&lt; c3.nIstanze() &lt;&lt; endl;
+    cout &lt;&lt; "Da istanza c2: "&lt;&lt; c2.nIstanze()         &lt;&lt; endl;
+    cout &lt;&lt; "Da istanza c3: "&lt;&lt; c3.nIstanze()         &lt;&lt; endl;
     cout &lt;&lt; "Dalla classe : "&lt;&lt; Contatore::nIstanze() &lt;&lt; endl;
     
     return 0;
@@ -695,15 +697,13 @@ int main()
 
 <p>Se compili ed esegui questo codice, otterrai:</p>
 
-<p>```</p>
-<blockquote>
-  <p>g++ src/cpp/classi-static.cpp -o src/out/esempio
-src/out/esempio                               <br />
+<pre><code>&gt; g++ src/cpp/classi-static.cpp -o src/out/esempio
+&gt; src/out/esempio                                 
 Da istanza c1: 1
 Da istanza c2: 3
 Da istanza c3: 3
-Dalla classe : 3```</p>
-</blockquote>
+Dalla classe : 3
+</code></pre>
 
 <!--
 
