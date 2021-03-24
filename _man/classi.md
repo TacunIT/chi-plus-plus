@@ -80,7 +80,7 @@ Compilando ed eseguendo questo codice, ottieni:
 ```
 Come puoi vedere, la prima funzione ha aggiornato i dati in maniera corretta, mentre la seconda ha prodotto un valore non valido senza alcuna possibilità di controllo da parte del programma.
 
----
+<hr id="information-hiding">
 
 Le variabili all'interno di una classe, sono dette *dati membro* o *attributi* della classe; le funzioni, invece, sono dette *funzioni membro* o *metodi*.
 Quando si crea una variabile di classe `C`, si dice che si: *istanzia* un *oggetto* di classe `C` o che si crea una *istanza* della classe.
@@ -172,16 +172,16 @@ Gli attributi `_h`, `_m` e `_s` compaiono dopo la parola-chiave `private` e sara
 La funzione `Orario`, che ha lo stesso nome della classe, è detta *costruttore* e viene richiamata ogni volta che si crea una variabile di tipo `Orario`.
 Il suo scopo è di inizializzare le variabili all'interno della classe, in questo caso, impostando tutti e tre i valori a 0.  
 
-<h3 id="costruttori">Costruttori</h3>
-Quando dichiariamo una variabile di tipo primitivo come `int`, o `double`, il compilatore svolge automaticamente tutta una serie di operazioni atte ad allocare lo spazio di memoria necessario a contenerla e ad inizializzarlo.
+<hr id="costruttori">
+Quando dichiariamo una variabile di tipo primitivo come `int`, o `double`, il compilatore svolge automaticamente tutta una serie di operazioni atte ad allocare lo spazio di memoria necessario a contenerla e a inizializzarlo.
 Il compilatore, però, non sa come vada creata e inizializzata una variabile di tipo `Orario` ed è per questo che la classe dovrà definire delle *funzioni di gestione* che spieghino sia come creare una nuova variabile, che come distruggerla, se necessario. 
 Le funzioni di gestione sono di due tipi: i *costruttori* e i *distruttori*.  
 I costruttori hanno alcune peculiarità che le distin­guono dalle altre funzioni membro: 
 
-- devono avere lo stesso nome della classe;
+- hanno lo stesso nome della classe;
 - non hanno un tipo di ritorno perché è implicito che ritornino una variabile   della classe cui appartengono.
 
-Una stessa classe può avere più costruttori; la classe `Orario`, per esempio, potrebbe avere un costruttore privo di parametri, che inizializzi ore, minuti e secondi a zero e uno che permetta invece di assegnare valori specifici a ciascun attributo:
+Una stessa classe può avere più costruttori; la classe `Orario`, per esempio, potrebbe avere un costruttore privo di parametri, che inizializzi ore, minuti e secondi a zero e un costruttore che permetta invece di assegnare valori specifici a ciascun attributo:
 
 ```
 class Orario {
@@ -215,6 +215,7 @@ _m = m;
 _s = s;
 ```
 
+Quando definisci un costruttore, puoi usare indifferentemente l'una o l'altra sintassi o anche mischiarle, a seconda dei casi.
 Un modo più succinto di ottenere lo stesso risultato con un unico costruttore è di utilizzare dei valori di default per i parametri:
 
 ```
@@ -244,12 +245,11 @@ Orario o2 = o1;
 
 Il costruttore di copia è un tipo di costruttore molto importante in quanto presiede alla maggior parte delle attività di inizializzazione di oggetti della classe cui appartiene; per questa ragione, nel caso non venga definito dall’utente, è automaticamente generato dal compilatore.
 
----
-
+<hr id="distruttori">
 Come è facile intuire, mentre il costruttore di una classe presiede alla creazione di nuove variabili, il distruttore si occupa della loro cancellazione. 
 Non sempre è necessario definire un distruttore per una classe.
 Una variabile di tipo `Orario`, che contiene solo tre interi, probabilmente non avrà bisogno di un distruttore, mentre una variabile che faccia uso di memoria dinamica quasi sicuramente sì. 
-Il perché risulta più chiaro se si esamina la cosa dal punto di vista del compilatore.  
+Il perché risulta più chiaro se si esamina la cosa dal punto di vista del compilatore.
 Per creare una variabile di tipo `Orario` il compilatore deve allocare spazio per:
 
 ```
@@ -269,11 +269,12 @@ private:
     : _size(size) {
         _dati = new char[_size];
     }
+    ...
 };
 ```
 
-Per distruggere una variabile di tipo `Buffer`, in mancanza di istruzioni specifiche, il compilatore libererà ```sizeof(char*) + sizeof(int)``` byte dopo il suo indirizzo di memoria, ma così facendo, distruggerà solo l’intero `_size` e il puntatore a char `_dati`, senza liberare l’area di memoria a cui quest’ultimo puntava.
-Questo, come sai, è un grave errore.  
+In mancanza di istruzioni specifiche, per distruggere una variabile di tipo `Buffer`, il compilatore libererà ```sizeof(char*) + sizeof(int)``` byte dopo il suo indirizzo di memoria, ma così facendo, distruggerà solo l’intero `_size` e il puntatore a char `_dati`, senza liberare l’area di memoria a cui quest’ultimo puntava.
+Questo, come sai, è un grave errore ed è necessario quindi aggiungere alla classe una funzione che lo istruisca in tal senso.   
 Come il costruttore, il distruttore di una classe non ha tipo di ritorno, ma mentre ci possono essere più costruttori per una stessa classe, il distrut­tore è sempre unico.
 Non ha mai parametri formali e il suo nome è uguale a quello della classe cui appartiene, preceduto da un carattere tilde `~`:
 
@@ -288,7 +289,7 @@ private:
     : _size(size) {
         _dati = new char[_size];
     }
-    Buffer::~Buffer() {
+    ~Buffer() {
         delete [] _dati
     }
 };
@@ -298,13 +299,11 @@ I distruttori possono essere chiamati in due modi:
 
 - *implicitamente*, dal programma, ogni volta che un oggetto esce dal suo campo d’azione o, nel caso di oggetti con visibilità globale, al termine della funzione `main`;
 
-- *esplicitamente*, specificando il loro nome per intero, per evitare che l’operazione possa venire scambiata con un complemento bit a bit.
+- *esplicitamente*, ma in questi casi dovrai specificare il loro nome per intero, anteponendo il nome della classe e l'operatore di risoluzione `::`, così come vedremo fra poco.
     
 Attenzione, però: se a uscire dal campo d’azione è un puntatore, il ditruttore della classe non viene richiamato automaticamente, perciò gli oggetti creati in maniera dinamica con l'operatore `new` dovranno sempre distrutti per mezzo dell’operatore `delete`.  
 
-
-
----
+<hr id="funzioni-di-interfaccia">
 
 Le funzioni membro devono essere dichiarate all'interno della dichiarazione della classe, ma possono essere definite sia dentro che fuori di essa. 
 Definirle all'interno della dichiarazione della classe equivale a dichiararle <a href="/man/funzioni#inline" class="xref">inline</a>
@@ -314,7 +313,7 @@ Se invece le si definisce esternamente alla dichiarazione della classe, vanno id
 {% include_relative src/classi-classe-orario-1.cpp %}
 ```
 
-Se compili questo codice, però, ottieni un errore: la funzione `main` può utilizzare il costruttore della classe `Orario` perché è dichiarato `public`, ma non può né leggere né modificare gli attributi `private:
+Se compili questo codice, però, ottieni un errore: la funzione `main` può utilizzare il costruttore della classe `Orario` perché è dichiarato `public`, ma non può né leggere né modificare gli attributi definiti come `private`:
 
 ``` 
 > g++ src/cpp/classi-classe-orario-1.cpp -o src/out/esempio
@@ -372,16 +371,16 @@ public:
     int setS(int s) { return _s = (s % 60); }
 
     /** Dichiarazione di una funzione e di una classe friend */
-    friend int incrementaMinuti(Orario& o, int m);
+    friend int aggiornaMinuti(Orario& o, int m);
     friend class Orologio(); 	
 
 };
 ```
 
 Questa soluzione è molto comoda, ma non ne abusare.
-Come avviene nella realtà, prima di dare la tua amicizia a qual­cuno verificane l’affidabilità: un `friend` ha la possibilità di fare grossi danni, altrimenti.  
+Come avviene nella realtà, prima di dare la tua amicizia a qual­cuno, verificane l’affidabilità: un `friend` ha la possibilità di fare grossi danni, altrimenti.  
 Un metodo più sicuro consiste nel definire delle funzioni membro pubbliche che consentano un accesso controllato ai dati che si vogliono proteggere. 
-Nel caso della classe `Orario`, ne occorrono sei: una la lettura e una per la scrittura di ciascuno dei tre dati membro:
+Nel caso della classe `Orario`, ne occorrono sei: una per la lettura e una per la scrittura di ciascuno dei tre dati membro:
 
 ```
 /** Funzioni di lettura */
@@ -422,13 +421,14 @@ int ore(int h = -1) {
 ```
 
 Anche se meno evidente, è più comoda perché permette di tenere il codice su una sola riga e ti dà modo di fare un po' di pratica con gli operatori.  
-Questo tipo di funzioni, però, ha due difetti: limita i valori che puoi assegnare all'attibuto e limita la granularità dei privilegi sulle funzioni.
-Limita il numero di valori che puoi assegnare all'attibuto, perché esclude il valore del parametro di default; cosa che non crea problemi in questo caso, dato che non esiste un'ora `-1`, ma che potrebbe farlo nel caso di una stringa con parametro di default nullo.
+Questo tipo di funzioni, però, ha due difetti: limita i valori che puoi assegnare all'attibuto e limita la granularità dei privilegi che puoi assegnare a chi utilizza la classe.
+Limita il numero di valori che puoi assegnare all'attibuto, perché esclude il valore del parametro di default &mdash; cosa che non crea problemi in questo caso, dato che non esiste un'ora `-1`, ma che potrebbe farlo nel caso di una stringa con parametro di default nullo.
 Limita la granularità dei privilegi sulle funzioni, perché ti costringe a rendere pubbliche le funzioni di scrittura dei dati membro e questo, in certi casi potrebbe non essere saggio. 
 Ti consiglio perciò di scrivere sempre due funzioni di interfaccia distinte per la lettura e la scrittura: sul momento ti sembrerà uno spreco di tempo, ma, a meno che il tuo programma non sia particolarmente banale, o prima o poi ti accorgerai di aver fatto la scelta corretta.  
-A ogni modo, questo metodo, garantendo un numero limitato di accessi ai membri della classe, è preferibile a una soluzione in cui tutti i membri dato siano accessibili.
 
----
+<hr id="this">
+
+Oltre a quelli definiti dall’utente, la lista dei membri di una classe comprende sempre anche un “clandestino”, che viene dichiarato implicitamente. Si chiama `this` ed è un puntatore all'istanza corrente:
 
 <!--
 

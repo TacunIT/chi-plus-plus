@@ -10,7 +10,7 @@ using namespace std;
 
 /** Dichiarazione della classe */
 class Orario {
-protected:
+private:
     int _h;
     int _m;
     int _s;
