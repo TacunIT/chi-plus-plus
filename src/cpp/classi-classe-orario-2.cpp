@@ -22,8 +22,12 @@ public:
     /** Costruttore della classe */
     Orario(int h = 0, int m = 0, int s = 0) ;
 
-    /** Costruttore di copia */
-    Orario(const Orario& o) ;
+    /** Costruttore di copia inline */
+    Orario(const Orario& o) {
+        _h = o._h;
+        _m = o._m;
+        _s = o._s;
+    }
 
     /** Funzioni di lettura  */
     int getH() { return _h; }
@@ -35,16 +39,36 @@ public:
     int setM(int m) { return _m = (m % 60); }
     int setS(int s) { return _s = (s % 60); }
 
+    /** Dichiarazione di una funzione friend */
+    friend int aggiornaMinuti(Orario& o, int m);
+
 };
 
 /** Definizione del costruttore della classe */
 Orario::Orario(int h, int m, int s) 
-: _h(h), _m(m), _s(s) {
+: _h(h % 24), _m(m % 60), _s(s % 60) {
 }
 
-/** Definizione del costruttore di copia */
-Orario::Orario(const Orario& o) 
-: _h(o._h), _m(o._m), _s(o._s) {
+/** Funzione frend per l'incremento dei minuti */
+int aggiornaMinuti(class Orario &o, int minuti) 
+{
+    /** Incrementa il numero dei minuti */
+    o._m += minuti;
+    
+    /** Se necessario, incrementa le ore */
+    if(o._m >= 60) {
+
+        o._m -= 60;
+        o._h += 1;
+        
+        /** Se necessario, passa al giorno dopo */
+        if(o._h >= 24) {
+            o._h -= 24;
+        }
+    }
+    
+    /** Torna il nuovo valore dei minuti */
+    return o._m;
 }
 
 /**
@@ -53,29 +77,24 @@ Orario::Orario(const Orario& o)
  */
 int main()
 {    
-    Orario ora;
+    /** Crea un'istanza con il costruttre parametrizzato */
+    Orario prima(47, 105, 60);
 
     /** Visualizza i valori iniziali dei dati */
-    cout << setfill('0') << setw(2) << ora.getH() << ":" 
-         << setfill('0') << setw(2) << ora.getM() << ":" 
-         << setfill('0') << setw(2) << ora.getS() << endl;
-    
-    ora.setH(47);
-    ora.setM(105);
-    ora.setS(60);
-    
-    /** Visualizza i valori dei dati modificati */
-    cout << setfill('0') << setw(2) << ora.getH() << ":" 
-         << setfill('0') << setw(2) << ora.getM() << ":" 
-         << setfill('0') << setw(2) << ora.getS() << endl;
+    cout << setfill('0') << setw(2) << prima.getH() << ":" 
+         << setfill('0') << setw(2) << prima.getM() << ":" 
+         << setfill('0') << setw(2) << prima.getS() << endl;
 
     /** Crea una variabile con il costruttore di copia */
-    Orario now = ora;
+    Orario dopo = prima;
+    
+    aggiornaMinuti(dopo, 15);
+    
+    /** Visualizza i valori dei dati modificati */
+    cout << setfill('0') << setw(2) << dopo.getH() << ":" 
+         << setfill('0') << setw(2) << dopo.getM() << ":" 
+         << setfill('0') << setw(2) << dopo.getS() << endl;
 
-    /** Visualizza i valori della nuova variabile */
-    cout << setfill('0') << setw(2) << now.getH() << ":" 
-         << setfill('0') << setw(2) << now.getM() << ":" 
-         << setfill('0') << setw(2) << now.getS() << endl;
          
     return 0;
 }
