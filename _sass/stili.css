@@ -85,22 +85,22 @@ H1, H2, H3, H4 {
     margin: auto;
 }
 H1 {
-    font-size: 2rem;
+    font-size: $fontSizeH1;
 }
 H2 {
-    margin-top: 1rem;
+    font-size: $fontSizeH2;
     font-variant-caps: petite-caps;
-    font-size: 1.6rem
+    margin-top: 1rem;
 }
 H3 {
-    font-size: 1.4rem;
+    font-size:  $fontSizeH3;
     margin-top: 1rem;
 }
 BLOCKQUOTE H3 {
     font-size: 1.2rem;
 }
 H4 {
-    font-size: 1.2rem;
+    font-size: $fontSizeH4;
     margin-top: 1rem;
 }
 HR {
@@ -506,6 +506,19 @@ BLOCKQUOTE.motto {
 IFRAME.pdf {
     width: 100%;
     height: 780px;
+}
+
+/** 
+ * Stile per i titoli delle sezioni dei capitoli. 
+ * Nella versione finale, non dovranno essere visibili, 
+ * ma in fase di redazione sono utili per identificare le parti del testo
+ * e possono anche essere utilizzati come ID per le referenze interne.
+ * Quindi, ho impostato la dimensione del testo come variabile,
+ * in modo da poterla portare a 0 alla fine.
+  * Astuto, eh? :-)
+ */
+BODY.manuale.capitolo #testo H3 {
+    font-size: $fontSizeH3testo;
 }
 
 /** Tabelle nei capitoli */
