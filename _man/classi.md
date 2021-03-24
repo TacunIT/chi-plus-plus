@@ -10,13 +10,13 @@ quote:      "Ceci n'est pas une |"
 <!-- Quando ho cominciato a scrivere questo capitolo, si è rotto il tasto "o" del mio Mac. È Domenica e siamo in clausura da COVID, quindi non posso andare in un centro commerciale a comprarne una esterna, temporanea. Perdonate eventuali refusi -->
 La possibilità di definire nuovi tipi di dato grazie alle classi è la caratteristica principale del C++.
 
-I linguaggi di programmazione come il C, il Cobol il Fortran o il Pascal, hanno un insieme limitato di tipi di dato: interi, numeri in virgola mobile, booleani, caratteri e stringhe.. giusto quello che serve a gestire una scheda anagrafica o un conto in banca.
-C e Pascal hanno anche la possibilità di accorpare questi tipi di dato in strutture, enumerati o array, ma questi tipi di dato sono solo dei contenitori privi di logica interna.
-Inoltre, i dati all'interno di una `struct` sono accessibili a qualunque componente del programma, quindi, se li si modifica, va modificato anche il codice che li utilizza.
+I linguaggi di programmazione “tradizionali”, come il Cobol il Fortran o il Pascal, hanno un insieme limitato di tipi di dato: interi, numeri in virgola mobile, booleani, caratteri e stringhe.. giusto quello che serve a gestire una scheda anagrafica o un conto in banca.
+Il C e il Pascal hanno anche la possibilità di accorpare questi tipi di dato in strutture, enumerati o array, ma questi tipi di dato sono solo dei contenitori privi di logica interna.
+Inoltre, come hai visto, i dati all'interno di una `struct` sono accessibili a qualunque componente del programma, quindi, se li si modifica, va modificato anche il codice che li utilizza.
 Immagina di definire una struttura per la gestione dell'orario, che contenga tre interi, uno per le ore, uno per i minuti e uno per i secondi:
 
 ```
-struct orario {
+struct Orario {
     int h;
     int m;
     int s;
@@ -35,7 +35,7 @@ Questo è l'opposto del *low coupling* di cui abbiamo parlato <a href="/man/stru
 Per capirsi: una funzione di aggiornamento dei minuti dovrà essere qualcosa di simile a:
 
 ```
-void aggiornaMinuti(struct orario &o, int minuti) 
+void aggiornaMinuti(struct Orario &o, int minuti) 
 {
     /** Incrementa il numero dei minuti */
     o.m += minuti;
@@ -53,11 +53,11 @@ void aggiornaMinuti(struct orario &o, int minuti)
     }
 }
 ```
-Se un giorno decidessimo di modificare la struttura `orario`, dovremmo ricordarci di riscrivere anche questa funzione, adeguandola alle nuove caratteristiche della struttura, con un dispendio di tempo e maggiore possibilità di fare degli errori.
-Inoltre, nulla impedirebbe a un programmatore cialtrone di scrivere una funzione che non tiene minimamente conto del rapporto fra i ore, minuti e secondi:
+Se un giorno decidessimo di modificare la struttura `Orario`, dovremmo ricordarci di riscrivere anche questa funzione, adeguandola alle nuove caratteristiche della struttura, con un dispendio di tempo e la possibilità di fare degli errori.
+Inoltre, nulla impedirebbe a un programmatore cialtrone di scrivere una funzione che non tiene minimamente conto del rapporto fra ore, minuti e secondi:
 
 ```
-void incrementa_m(struct orario &o, int minuti) 
+void incrementa_m(struct Orario &o, int minuti) 
 {
     o.m += minuti;
 }
@@ -78,11 +78,12 @@ Compilando ed eseguendo questo codice, ottieni:
 00:05:00
 23:65:00
 ```
-Come puoi vedere, la prima funzione ha aggiornato i dati in maniera corretta, mentre la seconda ha prodotto un valore non valido.
+Come puoi vedere, la prima funzione ha aggiornato i dati in maniera corretta, mentre la seconda ha prodotto un valore non valido senza alcuna possibilità di controllo da parte del programma.
 
 ---
 
 Le variabili all'interno di una classe, sono dette *dati membro* o *attributi* della classe; le funzioni, invece, sono dette *funzioni membro* o *metodi*.
+Quando si crea una variabile di classe `C`, si dice che si: *istanzia* un *oggetto* di classe `C` o che si crea una *istanza* della classe.
 I dati e le funzioni membro di una classe sono direttamente accessibili alle funzioni membro della classe, ma per utilizzarli all'interno di funzioni esterne alla classe, si devono utilizzare gli operatori di selezione `.` e `->`. 
 Il primo, detto *operatore di selezione diretta*, viene utilizzato con istanze della classe; il secondo, detto *operatore di selezi­one indiretta*, con puntatori ad esse:
 
@@ -106,8 +107,11 @@ public:
 
 int main(int argc, char** argv) 
 {
-    Punto p(5,6);       // crea un oggetto di classe Punto
-    Punto *ptr = &p ;   // lo assegna al puntatore ptr
+    /** Crea un oggetto di classe Punto */
+    Punto p(5,6);       
+
+    /** Assegna l'istanza della classe al puntatore ptr */
+    Punto *ptr = &p ;   
     
     /** 
      *  Le funzioni esterne alla classe accedono ai
@@ -128,17 +132,17 @@ Sia gli attributi che i metodi di una classe possono essere protetti da letture 
 I metodi o gli attributi dichiarati *private* sono accessibili solo alla classe stessa; quelli dichiarati come *protected* sono accessibili alla classe e a eventuali <a href="/man/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come *public* sono accessibili a qualunque elemento del programma.
 In mancanza di specifiche, tutti i dati e le funzioni di una classe verranno considerati:
 
--	privati, nel caso di una classe;
--	pubblici, nel caso di `struct` o `union`.
+-	*privati*, nel caso di una classe;
+-	*pubblici*, nel caso di `struct` o `union`.
 
 Per le `struct`, la visibilità dei dati membro può essere modificata con gli indicatori di accesso; i dati delle `union`, invece, possono essere solo pubblici.  
-C++ permette di suddividere la dichiarazione di una classe in quante sezioni si desidera e nella sequenza `private`, `public`, `pro­tected` che si preferisce, ma un codice scritto in questo modo è sicuramente più difficile da leggere di uno in cui tutti i membri privati stanno da una parte e tutti quelli pubblici da un’altra.
-Quindi, a meno che tu non abbia delle buone ragioni per fare altrimenti, cerca di raggruppare in tre sole sezioni `private`, `pro­tected` e `public` tutte le funzioni e i dati membro con gli stessi attributi di accesso:
+Il C++ permette di suddividere la dichiarazione di una classe in quante sezioni si desidera e nella sequenza `private`, `public`, `pro­tected` che si preferisce, ma un codice scritto in questo modo è sicuramente più difficile da leggere di uno in cui tutti i membri privati stanno da una parte e tutti quelli pubblici da un’altra.
+Quindi, a meno che tu non abbia delle buone ragioni per fare altrimenti (e ce ne potrebbero essere, nel caso di classi particolarmente complesse), cerca di raggruppare in tre sole sezioni `private`, `pro­tected` e `public` tutte le funzioni e i dati membro con gli stessi attributi di accesso:
 
 ```
 class Persona
 {
- private
+ private:
     ...
  protected:
     ...
@@ -147,12 +151,12 @@ class Persona
 };
 ```
 
-Questo tipo di ordinamento della dichiarazione, oltre a garantirti una maggiore leggibilità del codice, ti consentirà, se lo desideri, di omettere l’indicatore di accesso `private` (è la soluzione di default, ricordi?).  
+Questo tipo di ordinamento della dichiarazione, oltre a garantirti una maggiore leggibilità del codice, ti consentirà, se lo desideri, di omettere l’indicatore di accesso `private` iniziale (è la soluzione di default, ricordi?).  
 Mettiamo in pratica tutto ciò, convertendo in classe la struttura `Orario`:
 
 ```
 class Orario {
-protected:
+private:
     int _h;
     int _m;
     int _s;
@@ -167,6 +171,8 @@ public:
 Gli attributi `_h`, `_m` e `_s` compaiono dopo la parola-chiave `private` e saranno quindi visibili solo alle funzioni della classe stessa.  
 La funzione `Orario`, che ha lo stesso nome della classe, è detta *costruttore* e viene richiamata ogni volta che si crea una variabile di tipo `Orario`.
 Il suo scopo è di inizializzare le variabili all'interno della classe, in questo caso, impostando tutti e tre i valori a 0.  
+
+<h3 id="costruttori">Costruttori</h3>
 Quando dichiariamo una variabile di tipo primitivo come `int`, o `double`, il compilatore svolge automaticamente tutta una serie di operazioni atte ad allocare lo spazio di memoria necessario a contenerla e ad inizializzarlo.
 Il compilatore, però, non sa come vada creata e inizializzata una variabile di tipo `Orario` ed è per questo che la classe dovrà definire delle *funzioni di gestione* che spieghino sia come creare una nuova variabile, che come distruggerla, se necessario. 
 Le funzioni di gestione sono di due tipi: i *costruttori* e i *distruttori*.  
