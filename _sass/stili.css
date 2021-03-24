@@ -508,19 +508,6 @@ IFRAME.pdf {
     height: 780px;
 }
 
-/** 
- * Stile per i titoli delle sezioni dei capitoli. 
- * Nella versione finale, non dovranno essere visibili, 
- * ma in fase di redazione sono utili per identificare le parti del testo
- * e possono anche essere utilizzati come ID per le referenze interne.
- * Quindi, ho impostato la dimensione del testo come variabile,
- * in modo da poterla portare a 0 alla fine.
-  * Astuto, eh? :-)
- */
-BODY.manuale.capitolo #testo H3 {
-    font-size: $fontSizeH3testo;
-}
-
 /** Tabelle nei capitoli */
 BODY.manuale.capitolo #testo TABLE {
     margin: 1rem auto;
