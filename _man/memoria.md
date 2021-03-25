@@ -143,7 +143,7 @@ Il Maestro Canaro detestava questo *Koan* perché era molto distratto.
 Se Nan-in l'avesse fatta a lui, la domanda, probabilmente l'avrebbe guardato con aria infastidita e gli avrebbe chiesto: “Quali zoccoli?”.
 Malgrado ciò, ne riconosceva l'importanza perché più prestiamo attenzione a tutto ciò che facciamo, più errori riusciremo a identificare e, si spera, a correggere.
 
----
+<hr id="delete">
 
 Un'altra differenza fra gli esseri umani e il codice C++ è il nostro rapporto con l'operatore `delete`.   
 Gli uomini hanno sempre avuto paura della morte e, da Gilgamesh in poi, hanno sempre cercato di sfuggirle o di annulare il suo operato.
