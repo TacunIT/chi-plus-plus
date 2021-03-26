@@ -1,6 +1,6 @@
 /** 
- * @file classi-classe-orario-2.cpp
- * Gestione dei dati membro di una classe.
+ * @file classi-fiend.cpp
+ * Funzione friend di una classe.
  */
  
 #include <iostream>
@@ -8,7 +8,7 @@
 
 using namespace std;
 
-/** Dichiarazione di una classe per gestire gli orarii */
+/** Dichiarazione della classe per gestire gli orarii */
 class Orario {
 private:
 
@@ -23,21 +23,22 @@ public:
     Orario(int h = 0, int m = 0, int s = 0) ;
 
     /** Costruttore di copia inline */
-    Orario(const Orario& o) {
-        _h = o._h;
-        _m = o._m;
-        _s = o._s;
+    Orario(const Orario& o) 
+    : _h(o._h), _m(o._m), _s(o._s) {
     }
 
-    /** Funzioni di lettura  */
+    /** Distruttore della classe */
+    ~Orario();
+
+    /** Funzioni di scrittura */
+    int setH(int h);
+    int setM(int m);
+    int setS(int s);
+
+    /** Funzioni di lettura, inline nella dichiarazione */
     int getH() { return _h; }
     int getM() { return _m; }
     int getS() { return _s; }
-
-    /** Funzioni di scrittura */
-    int setH(int h) { return _h = (h % 24); }
-    int setM(int m) { return _m = (m % 60); }
-    int setS(int s) { return _s = (s % 60); }
 
     /** Dichiarazione di una funzione friend */
     friend int aggiornaMinuti(Orario& o, int m);
@@ -49,7 +50,31 @@ Orario::Orario(int h, int m, int s)
 : _h(h % 24), _m(m % 60), _s(s % 60) {
 }
 
-/** Funzione frend per l'incremento dei minuti */
+/** Definizione del distruttore della classe */
+Orario::~Orario() {
+}
+
+/** 
+ *  Definizione delle funzioni di scrittura, 
+ *  anche loro, inline  
+ */
+inline int Orario::setH(int h) { 
+    return _h = (h % 24); 
+}
+
+inline int Orario::setM(int m) { 
+    return _m = (m % 60); 
+}
+
+inline int Orario::setS(int s) { 
+    return _s = (s % 60); 
+}
+
+
+/** 
+ * La funzione frend accede ai dati della classe 
+ * in maniera diretta.
+ */
 int aggiornaMinuti(class Orario &o, int minuti) 
 {
     /** Incrementa il numero dei minuti */
@@ -72,8 +97,8 @@ int aggiornaMinuti(class Orario &o, int minuti)
 }
 
 /**
- * La funzione main, adesso, non accede più direttamente 
- * ai dati della classe 
+ * La funzione main, accede ai dati della classe tramite
+ * le funzioni di interfaccia.
  */
 int main()
 {    
@@ -88,6 +113,7 @@ int main()
     /** Crea una variabile con il costruttore di copia */
     Orario dopo = prima;
     
+    /** Chiama la funzione friend per aggiornare i minuti */
     aggiornaMinuti(dopo, 15);
     
     /** Visualizza i valori dei dati modificati */

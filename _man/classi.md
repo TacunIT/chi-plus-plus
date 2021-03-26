@@ -11,7 +11,7 @@ quote:      "Ceci n'est pas une |"
 La possibilità di definire nuovi tipi di dato grazie alle classi è la caratteristica principale del C++.
 
 I linguaggi di programmazione “tradizionali”, come il Cobol il Fortran o il Pascal, hanno un insieme limitato di tipi di dato: interi, numeri in virgola mobile, booleani, caratteri e stringhe.. giusto quello che serve a gestire una scheda anagrafica o un conto in banca.
-Il C e il Pascal hanno anche la possibilità di accorpare questi tipi di dato in strutture, enumerati o array, ma questi tipi di dato sono solo dei contenitori privi di logica interna.
+Il C e il Pascal hanno anche la possibilità di accorpare questi dati in strutture, enumerati o array, ma si tratta solo di contenitori, privi di logica interna.
 Inoltre, come hai visto, i dati all'interno di una `struct` sono accessibili a qualunque componente del programma, quindi, se li si modifica, va modificato anche il codice che li utilizza.
 Immagina di definire una struttura per la gestione dell'orario, che contenga tre interi, uno per le ore, uno per i minuti e uno per i secondi:
 
@@ -53,7 +53,7 @@ void aggiornaMinuti(struct Orario &o, int minuti)
     }
 }
 ```
-Se un giorno decidessimo di modificare la struttura `Orario`, dovremmo ricordarci di riscrivere anche questa funzione, adeguandola alle nuove caratteristiche della struttura, con un dispendio di tempo e la possibilità di fare degli errori.
+Se un giorno decidessimo di modificare la struttura `Orario`, dovremmo ricordarci di riscrivere anche questa funzione, adeguandola alle nuove caratteristiche della struttura, con dispendio di tempo e la possibilità di fare degli errori.
 Inoltre, nulla impedirebbe a un programmatore cialtrone di scrivere una funzione che non tiene minimamente conto del rapporto fra ore, minuti e secondi:
 
 ```
@@ -80,10 +80,10 @@ Compilando ed eseguendo questo codice, ottieni:
 ```
 Come puoi vedere, la prima funzione ha aggiornato i dati in maniera corretta, mentre la seconda ha prodotto un valore non valido senza alcuna possibilità di controllo da parte del programma.
 
-<hr id="information-hiding">
+<hr id="attributi-metodi">
 
 Le variabili all'interno di una classe, sono dette *dati membro* o *attributi* della classe; le funzioni, invece, sono dette *funzioni membro* o *metodi*.
-Quando si crea una variabile di classe `C`, si dice che si: *istanzia* un *oggetto* di classe `C` o che si crea una *istanza* della classe.
+Quando si crea una variabile di classe `X`, si dice che si: *istanzia* un *oggetto* di classe `X` o che si crea una *istanza* della classe.
 I dati e le funzioni membro di una classe sono direttamente accessibili alle funzioni membro della classe, ma per utilizzarli all'interno di funzioni esterne alla classe, si devono utilizzare gli operatori di selezione `.` e `->`. 
 Il primo, detto *operatore di selezione diretta*, viene utilizzato con istanze della classe; il secondo, detto *operatore di selezi­one indiretta*, con puntatori ad esse:
 
@@ -128,14 +128,14 @@ L'etichetta `public` che vedi all'inizio della dichiarazione della classe è un 
 > il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a href="/man/note#selvaggio" class="nota"></a>.
 
 Questa frase di Lucien Lévy-Bruhl si applica anche alle classi del C++. 
-Sia gli attributi che i metodi di una classe possono essere protetti da letture o modifiche indebite grazie ai modificatori di accesso `private`, `protected` e `public`.
+Sia gli attributi che i metodi di una classe possono essere protetti da accessi o modifiche indebite grazie ai modificatori di accesso `private`, `protected` e `public`.
 I metodi o gli attributi dichiarati *private* sono accessibili solo alla classe stessa; quelli dichiarati come *protected* sono accessibili alla classe e a eventuali <a href="/man/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come *public* sono accessibili a qualunque elemento del programma.
 In mancanza di specifiche, tutti i dati e le funzioni di una classe verranno considerati:
 
 -	*privati*, nel caso di una classe;
 -	*pubblici*, nel caso di `struct` o `union`.
 
-Per le `struct`, la visibilità dei dati membro può essere modificata con gli indicatori di accesso; i dati delle `union`, invece, possono essere solo pubblici.  
+La visibilità dei dati membro di una  `struct` può essere modificata con gli indicatori di accesso; i dati delle `union`, invece, possono essere solo pubblici.  
 Il C++ permette di suddividere la dichiarazione di una classe in quante sezioni si desidera e nella sequenza `private`, `public`, `pro­tected` che si preferisce, ma un codice scritto in questo modo è sicuramente più difficile da leggere di uno in cui tutti i membri privati stanno da una parte e tutti quelli pubblici da un’altra.
 Quindi, a meno che tu non abbia delle buone ragioni per fare altrimenti (e ce ne potrebbero essere, nel caso di classi particolarmente complesse), cerca di raggruppare in tre sole sezioni `private`, `pro­tected` e `public` tutte le funzioni e i dati membro con gli stessi attributi di accesso:
 
@@ -168,11 +168,20 @@ public:
     }
 };
 ```
+
+La dichiarazione inizia con la parola-chiave `class`, seguìta dal nome della classe.
+Nel blocco di codice fra parentesi graffe che costituisce il corpo della classe, contiene i dati e le funzioni membro, accorpate per visibilità. 
+In questo caso abbiamo messo prima i dati membro privati e poi quelli pubblici, ma avremmo potuto fare anche il contrario.
 Gli attributi `_h`, `_m` e `_s` compaiono dopo la parola-chiave `private` e saranno quindi visibili solo alle funzioni della classe stessa.  
-La funzione `Orario`, che ha lo stesso nome della classe, è detta *costruttore* e viene richiamata ogni volta che si crea una variabile di tipo `Orario`.
-Il suo scopo è di inizializzare le variabili all'interno della classe, in questo caso, impostando tutti e tre i valori a 0.  
+La funzione `Orario` compare dopo l'etichetta `public` e sarà accessibile per ciò a qualsiasi parte del programma.
+Questa funzione, che ha lo stesso nome della classe, è detta *costruttore* e viene richiamata ogni volta che si crea una variabile di tipo `Orario`.
+Il suo scopo è di inizializzare le variabili all'interno della classe, in questo caso, impostando tutti e tre i valori a 0. 
+Ne parleremo fra poco.  
+L'ultima cosa che devi notare, nel codice qui sopra, è la presenza del carattere `;` alla fine del blocco di codice della classe, così come avviene per le `union` e le `struct`.
+
 
 <hr id="costruttori">
+
 Quando dichiariamo una variabile di tipo primitivo come `int`, o `double`, il compilatore svolge automaticamente tutta una serie di operazioni atte ad allocare lo spazio di memoria necessario a contenerla e a inizializzarlo.
 Il compilatore, però, non sa come vada creata e inizializzata una variabile di tipo `Orario` ed è per questo che la classe dovrà definire delle *funzioni di gestione* che spieghino sia come creare una nuova variabile, che come distruggerla, se necessario. 
 Le funzioni di gestione sono di due tipi: i *costruttori* e i *distruttori*.  
@@ -300,13 +309,13 @@ I distruttori possono essere chiamati in due modi:
 
 - *implicitamente*, dal programma, ogni volta che un oggetto esce dal suo campo d’azione o, nel caso di oggetti con visibilità globale, al termine della funzione `main`;
 
-- *esplicitamente*, ma in questi casi dovrai specificare il loro nome per intero, anteponendo il nome della classe e l'operatore di risoluzione `::`, così come vedremo fra poco.
+- *esplicitamente*, dal codice, ma in questi casi dovrai specificare il loro nome per intero, anteponendo il nome della classe e l'operatore di risoluzione `::`, così come vedremo fra poco.
     
 Attenzione, però: se a uscire dal campo d’azione è un puntatore, il ditruttore della classe non viene richiamato automaticamente, perciò gli oggetti creati in maniera dinamica con l'operatore `new` dovranno sempre distrutti per mezzo dell’operatore `delete`.  
 
 <hr id="funzioni-di-interfaccia">
 
-Le funzioni membro devono essere dichiarate all'interno della dichiarazione della classe, ma possono essere definite sia dentro che fuori di essa. 
+Le funzioni membro devono essere dichiarate all'interno della dichiarazione della classe e possono essere definite sia dentro che fuori di essa. 
 Definirle all'interno della dichiarazione della classe equivale a dichiararle <a href="/man/funzioni#inline" class="xref">inline</a>
 Se invece le si definisce esternamente alla dichiarazione della classe, vanno identificate aggiungendo il nome della classe prima di quello della funzione, seguito dall'<a href="/man/operatori#risoluzione" class="xref">operatore di risoluzione</a>:
 
@@ -344,7 +353,7 @@ Il C++ prevede due modi per rendere disponibili gli attributi di una classe anch
 - le classi o le funzioni `friend`.
 - le *funzioni di interfaccia*;
 
-Il modo più rapido per accedere ai dati privati di una classe attraverso una funzione o una classe esterna è quello di dichiararle come `friend`.
+Il modo apparentemente più rapido per accedere ai dati privati di una classe attraverso una funzione o una classe esterna è quello di dichiararle come `friend`.
 In virtù di ciò, la funzione o la classe acquisteranno una visibilità completa sui dati protetti:
 
 ```
@@ -385,9 +394,9 @@ public:
 };
 ```
 
-Questa soluzione è molto comoda, ma non ne abusare.
-Come avviene nella realtà, prima di dare la tua amicizia a qual­cuno, verificane l’affidabilità: un `friend` ha la possibilità di fare grossi danni, altrimenti.  
-Un metodo più sicuro consiste nel definire delle funzioni membro pubbliche che consentano un accesso controllato ai dati che si vogliono proteggere. 
+Come ho detto, questa soluzione è solo apparentemente più rapida, perché tutta la logica di gestione dei dati della classe `Orario` dovrà essere replicata sia nella funzione `aggiornaMinuti` che nella classe `Orologio`.
+Inoltre, se in seguito dovessi apportare delle modifiche alla classe `Orario`, le stesse modifiche andranno riportate anche nelle funzioni delle classi `friend` che la utilizzano.  
+Un metodo più sicuro e più efficiente di gestire gli attributi privati di una classe consiste nel definire delle funzioni membro pubbliche che consentano un accesso controllato ai dati che si vogliono proteggere. 
 Nel caso della classe `Orario`, ne occorrono sei: una per la lettura e una per la scrittura di ciascuno dei tre dati membro:
 
 ```
@@ -409,9 +418,22 @@ Ovviamente, puoi chiamare queste funzioni come preferisci, ma utilizzare i prefi
 return _h = (h % 24);
 ```
 
+L'utilizzo della lista di inzializzazione, all'interno del costruttore, ti permette di utilizzare dei parametri che abbiano lo stesso nome dei dati membro della classe:
+
+```
+class Punto
+{
+    int x, y;
+public:             
+    Punto(int x, int y) 
+    : x(x), y(y) {
+    }
+};
+```
+ma il fatto che qualcosa sia possibile non vuol dire che sia una buona scelta, come penso che tu abbia imparato, nel corso della tua vita.  
 Non sei nemmeno obbligato a dichiarare le funzioni di interfaccia come `inline`; l'ho fatto qui perché erano estremamente semplici, ma si dovrebbe evitare di aggiungere il codice delle funzioni all'interno della dichiarazione di una classe già di per sé complessa perché la rende più difficile da leggere.
 C'è anche chi pensa che ciò sia sbagliato perché, se da un lato rende le cose più facili a chi scrive il codice, complica la vita di chi lo legge perché mischia ciò che la classe fa con il modo in cui lo fa<a href="/man/note#inline" class="nota"></a>.
-Io non sono del tutto d'accordo con questa affermazione perché alle volte è più comodo e rapido avere il codice delle funzioni all'interno della dichiarazione della classe, ma essendo un precetto che antepone il bene di tanti (i fruitori del codice) rispetto a quello del singolo (l'autore del codice), mi sono sentito in dovere di riferirla.  
+Io non sono del tutto d'accordo con questa affermazione perché alle volte è più comodo e rapido avere il codice delle funzioni all'interno della dichiarazione della classe, ma essendo un precetto che antepone il bene di tanti (i fruitori del codice) rispetto a quello del singolo (l'autore del codice), mi sono sentito in dovere di riferirtelo.  
 Così come abbiamo fatto per il costruttore della classe, potremmo unificare le funzioni di lettura e scrittura, utilizzando un parametro di default che determini il comportamento del programma:
 
 ```
@@ -439,7 +461,7 @@ Ti consiglio perciò di scrivere sempre due funzioni di interfaccia distinte per
 
 <hr id="static">
 
-Ogni variabile di una determinata classe possiede delle copie dei dati membro, mentre le funzioni membro sono condivise da tutte le istanze.
+Ogni variabile di una determinata classe possiede delle copie dei dati membro, mentre le funzioni membro di una classe sono condivise da tutte le sue istanze.
 Per consentire al programma di sapere quale sia l'istanza che sta richiamando un determinato metodo, il compilatore aggiuge a ogni chiamata a funzione un parametro nascosto chiamato `this`, che punta all'istanza che ha richiesto la funzione.
 Il parametro `this`, anche se non dichiarato, può essere utilizzato nel corpo delle funzioni membro per riferirsi all'istanza corrente.
 Per esempio, il costruttore di copia della classe `Orario` (così come qualsiasi altra funzione membro della classe) potrebbe essere riscritto così:
@@ -454,7 +476,7 @@ Orario(const Orario& o) {
 
 Le uniche funzioni membro che non possono fare uso del puntatore `this` sono quelle dichiarate come `static`.  
 Una classe può avere sia attributi che funzioni membro statiche.
-La particolarità di questi elementi è di non essere legati a una specifica istanza, ma di essere condivisi da tutti gli oggetti; questo fa sì che abbiano un comportamento leggermente diverso da quello dei membri non statici:
+La particolarità di questi elementi è di non essere legati a una specifica variabile, ma di essere condivisi da tutte le istanze della classe; questo fa sì che abbiano un comportamento leggermente diverso da quello dei membri non statici:
 
 - per inizializzarli all’interno della dichiarazione, li si deve dichiarare come `inline static`<a href="/man/note#cpp17" class="nota"></a>, 
 altrimenti, devono essere inizializzati altrove nel programma, come un qualsiasi oggetto a visibilità globale;
@@ -477,6 +499,29 @@ Da istanza c2: 3
 Da istanza c3: 3
 Dalla classe : 3
 ```
+
+Come vedi, tutte le istanze della classe condividono lo stesso valore per il dato membro `nIstanze` e la funzione di interfaccia, dichiarata come `static`, può essere richiamata anche senza fare riferimento a un'istanza.
+Per questo motivo, se utilizzi il puntatore `this` all'interno di una classe statica:
+
+```
+static int nIstanze() {  
+    return this->_nIstanze;
+}
+```
+
+ottieni l'errore di compilazione:
+
+```
+> g++ src/cpp/classi-static.cpp -o src/out/esempio 
+src/cpp/classi-static.cpp:26:16: error: invalid use of 'this' outside of a non-static member function
+        return this->_nIstanze;
+               ^
+1 error generated.
+```
+
+perché, se la funzione fosse chiamata direttamente dalla classe, `this` non puterebbe ad alcun oggetto.
+
+<hr id="dottrina">
 
 <!--
 
