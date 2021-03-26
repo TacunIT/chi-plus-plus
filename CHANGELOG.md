@@ -1,3 +1,6 @@
+## 0.22.3 (March 26, 2021)
+  - Completata prima stesura della sezione tecnica del capitolo sulle classi.
+
 ## 0.22.2 (March 24, 2021)
   - Redazione del  brano su funzioni membro inline
   - Aggiunto codice di esempio per membri statici
