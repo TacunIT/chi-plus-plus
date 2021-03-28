@@ -523,9 +523,17 @@ perché, se la funzione fosse chiamata direttamente dalla classe, `this` non put
 
 <hr id="dottrina">
 
+Il più grosso problema che il Maestro Canaro dovette affrontare quando provò a fare il *porting* dell'<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a> fu di definire una classe per la figura di Dio. 
+
+```
+{% include_relative src/classi-dio.cpp %}
+```
+
+
 <!--
 
-fare esempio di classe con attributi binarii
+Visibilità delle classi.
+
 
 \[cfr. *Breve storia dell'infinito*, pagg. 30-40\]
 
