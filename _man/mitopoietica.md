@@ -13,7 +13,7 @@ Anche il Maestro Canaro fu accusato di essere pazzo quando disse di essere stato
 Ho conservato questi documenti: sono l'ultima pagina del suo diario e le relazioni che furono inviate alla società per cui lui lavorava mentre era distaccato dal "Cliente".
 Mettili all'inizio del tuo libro, così tutto ciò che diremo dopo non sarà che una ripetizione.
 
-<blockquote class="incluso">
+<blockquote id="universo-in-cpp" class="incluso">
 {{ site.data.canaro.universo-cpp }}
 </blockquote>
 

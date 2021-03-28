@@ -745,9 +745,91 @@ src/cpp/classi-static.cpp:26:16: error: invalid use of 'this' outside of a non-s
 
 <hr id="dottrina" />
 
+<p>Il più grosso problema che il Maestro Canaro dovette affrontare quando provò a fare il <em>porting</em> dell’<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a> fu di definire una classe per la figura di Dio.</p>
+
+<pre><code>/** 
+ * @file classi-dio.cpp
+ * Dichiarazione della classe Dio.
+ */
+ 
+#include &lt;iostream&gt;
+
+using namespace std;
+
+class  {
+public:
+    
+    /**
+     *  Classe astratta da utilizzare come base
+     *  per tutti gli elementi del Creato.
+     */
+    class Creatura {
+        
+        /** Funzione virtuale pura di verifica */
+        virtual bool isGood() = 0;
+    };
+    
+    /**
+     *  Classi derivate per la gestione degli 
+     *  elementi del Creato.
+     */ 
+    class Mare   : public Creatura {};
+    class Uomo   : public Creatura {};
+    class Donna  : public Creatura {};
+    class Padre  : public Uomo {};
+    class Figlio : public Uomo {};
+    class Popolo : public Creatura {};
+    
+private:
+
+    /** 
+     * Funzioni membro per la generazione degli elementi 
+     * del Creato, accessibili solo alla classe. 
+     */
+    Creatura* creaLuce();
+    Creatura* creaStelle();
+    Creatura* creaAcquaTerra();
+    Creatura* creaPiante();
+    Creatura* creaSoleLuna();
+    Creatura* creaAnimali();
+
+    /** Funzioni per la generazione degli umani */
+    Uomo&amp;  creaUomo();
+    Donna&amp; creaDonna(Uomo&amp; adamo);
+
+    /** Interruzione per il settimo giorno */
+    void shabat();
+    
+    /** Funzioni di interfaccia con gli umani */
+    bool scacciaDaEden(Uomo&amp; adamp, Donna&amp; eva);
+    bool printComandamenti(Uomo&amp; mose, ostream&amp; tavole);
+    bool checkFede(Padre&amp; abramo, Figlio&amp; isacco);
+    bool splitAcque(Mare&amp; marRosso, Popolo&amp; ebrei);
+
+private:
+    
+    /** 
+     * Funzioni membro accessibili anche alle 
+     * classi figlio.
+     */
+    bool donaVita(Uomo&amp; lazzaro);
+    
+public:
+
+    /** 
+     * Funzione statica, accessibile tramite la classe.
+     * Torna il numero di preghiere da recitare.
+     */   
+    static int rimettiPeccati(Creatura&amp; fedele);
+                   
+} Dio;
+
+</code></pre>
+
 <!--
 
-fare esempio di classe con attributi binarii
+Visibilità delle classi.
+
 
 \[cfr. *Breve storia dell'infinito*, pagg. 30-40\]
 
