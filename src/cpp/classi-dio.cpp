@@ -53,7 +53,7 @@ private:
     
     /** Funzioni di interfaccia con gli umani */
     bool scacciaDaEden(Uomo& adamp, Donna& eva);
-    bool printComandamenti(Uomo& mose, ostream& tavole);
+    bool printComandamenti(ostream& tavole);
     bool checkFede(Padre& abramo, Figlio& isacco);
     bool splitAcque(Mare& marRosso, Popolo& ebrei);
 
