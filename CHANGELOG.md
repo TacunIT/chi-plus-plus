@@ -1,3 +1,6 @@
+## 0.22.4 (March 28, 2021)
+  - Dichiarazione della classe Dio
+
 ## 0.22.3 (March 26, 2021)
   - Completata prima stesura della sezione tecnica del capitolo sulle classi.
 
