@@ -18,3 +18,7 @@ Nota 7 (S.Gregorio++)
     @todo - differenza fra verità epistemica e verità realista in Filosofia di House, pag. 100 e seguenti 
     @todo - le teorie di Wittgenstein., secondo cui la metafisica è un uso pervertito del linguaggio, tocca che me la studio
 -->
+
+\[cfr. *Breve storia dell'infinito*, pagg. 30-40\]
+
+Si può dire che esista qualcosa che non ha dimensioni?

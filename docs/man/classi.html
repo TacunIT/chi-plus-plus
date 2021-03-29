@@ -735,7 +735,8 @@ Per questo motivo, se utilizzi il puntatore <code>this</code> all’interno di u
 <p>ottieni l’errore di compilazione:</p>
 
 <pre><code>&gt; g++ src/cpp/classi-static.cpp -o src/out/esempio 
-src/cpp/classi-static.cpp:26:16: error: invalid use of 'this' outside of a non-static member function
+src/cpp/classi-static.cpp:26:16: error: invalid use of 'this' 
+ outside of a non-static member function
         return this-&gt;_nIstanze;
                ^
 1 error generated.
@@ -745,7 +746,7 @@ src/cpp/classi-static.cpp:26:16: error: invalid use of 'this' outside of a non-s
 
 <hr id="dottrina" />
 
-<p>Il più grosso problema che il Maestro Canaro dovette affrontare quando provò a fare il <em>porting</em> dell’<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a> fu di definire una classe per la figura di Dio.</p>
+<p>Il più grosso problema che il Maestro Canaro dovette affrontare quando provò a fare il <em>porting</em> dell’<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a> fu di definire una classe per la figura di Dio:</p>
 
 <pre><code>/** 
  * @file classi-dio.cpp
@@ -756,36 +757,33 @@ src/cpp/classi-static.cpp:26:16: error: invalid use of 'this' outside of a non-s
 
 using namespace std;
 
-class  {
+// Classe astratta da utilizzare come base
+// per tutti gli elementi del Creato.
+class Creatura {
 public:
-    
-    /**
-     *  Classe astratta da utilizzare come base
-     *  per tutti gli elementi del Creato.
-     */
-    class Creatura {
-        
-        /** Funzione virtuale pura di verifica */
-        virtual bool isGood() = 0;
-    };
-    
-    /**
-     *  Classi derivate per la gestione degli 
-     *  elementi del Creato.
-     */ 
-    class Mare   : public Creatura {};
-    class Uomo   : public Creatura {};
-    class Donna  : public Creatura {};
-    class Padre  : public Uomo {};
-    class Figlio : public Uomo {};
-    class Popolo : public Creatura {};
-    
+   // Funzione virtuale pura di verifica.
+   virtual bool isGood() = 0;
+   
+};
+
+// Classi derivate per la gestione degli 
+// elementi del Creato.
+class Mare   : public Creatura {
+    bool isGood() { return true; }; 
+};
+class Uomo   : public Creatura { 
+    bool isGood(); 
+};
+class Donna  : public Creatura {};
+class Padre  : public Uomo     {};
+class Figlio : public Uomo     {};
+class Popolo : public Creatura {};
+
+class  {
 private:
 
-    /** 
-     * Funzioni membro per la generazione degli elementi 
-     * del Creato, accessibili solo alla classe. 
-     */
+    // Funzioni membro per la generazione degli elementi 
+    // del Creato, accessibili solo alla classe. 
     Creatura* creaLuce();
     Creatura* creaStelle();
     Creatura* creaAcquaTerra();
@@ -793,14 +791,14 @@ private:
     Creatura* creaSoleLuna();
     Creatura* creaAnimali();
 
-    /** Funzioni per la generazione degli umani */
+    // Funzioni per la generazione degli umani.
     Uomo&amp;  creaUomo();
     Donna&amp; creaDonna(Uomo&amp; adamo);
 
-    /** Interruzione per il settimo giorno */
+    // Interruzione per il settimo giorno.
     void shabat();
     
-    /** Funzioni di interfaccia con gli umani */
+    // Funzioni di interfaccia con gli umani.
     bool scacciaDaEden(Uomo&amp; adamp, Donna&amp; eva);
     bool printComandamenti(ostream&amp; tavole);
     bool checkFede(Padre&amp; abramo, Figlio&amp; isacco);
@@ -808,32 +806,40 @@ private:
 
 private:
     
-    /** 
-     * Funzioni membro accessibili anche alle 
-     * classi figlio.
-     */
+    // Funzione membro accessibile anche alle 
+    // classi figlio.
     bool donaVita(Uomo&amp; lazzaro);
     
 public:
 
-    /** 
-     * Funzione statica, accessibile tramite la classe.
-     * Torna il numero di preghiere da recitare.
-     */   
-    static int rimettiPeccati(Creatura&amp; fedele);
+     // Funzione membro pubblica.
+     // Torna il numero di preghiere da recitare.
+    int rimettiPeccati(Creatura* fedele) { return 0;};
                    
 } Dio;
 
 </code></pre>
+<p>In questo brano di codice, scritto dal Maestro Canaro, ci sono un paio di cose di cui non abbiamo ancora parlato.
+La prima è il tipo di classe utilizzato, ovvero la <em>classe anonima</em>; la seconda è la genealogia di <em>classi derivate</em> dalla classe base <code>Creatura</code>.<br />
+ Le classi anonime sono un tipo particolare di classe che, come dice il nome (perdonami il gioco di parole), non hanno nome e per ciò non possono avere né un construttore né un distruttore e non possono essere utilizzate né come parametri né come valori di ritorno delle funzioni.</p>
 
 <!--
+La:
+
+```
+class {
+public:
+...
+private:
+...
+
+} Dio;
+
+```
+
 
 Visibilità delle classi.
 
-
-\[cfr. *Breve storia dell'infinito*, pagg. 30-40\]
-
-Si può dire che esista qualcosa che non ha dimensioni?
 
 
 parlare degli operatori di cast 
