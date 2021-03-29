@@ -513,7 +513,8 @@ ottieni l'errore di compilazione:
 
 ```
 > g++ src/cpp/classi-static.cpp -o src/out/esempio 
-src/cpp/classi-static.cpp:26:16: error: invalid use of 'this' outside of a non-static member function
+src/cpp/classi-static.cpp:26:16: error: invalid use of 'this' 
+ outside of a non-static member function
         return this->_nIstanze;
                ^
 1 error generated.
@@ -523,21 +524,32 @@ perché, se la funzione fosse chiamata direttamente dalla classe, `this` non put
 
 <hr id="dottrina">
 
-Il più grosso problema che il Maestro Canaro dovette affrontare quando provò a fare il *porting* dell'<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a> fu di definire una classe per la figura di Dio. 
+Il più grosso problema che il Maestro Canaro dovette affrontare quando provò a fare il *porting* dell'<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a> fu di definire una classe per la figura di Dio: 
 
 ```
 {% include_relative src/classi-dio.cpp %}
 ```
-
+In questo brano di codice, scritto dal Maestro Canaro, ci sono un paio di cose di cui non abbiamo ancora parlato.
+La prima è il tipo di classe utilizzato, ovvero la *classe anonima*; la seconda è la genealogia di *classi derivate* dalla classe base `Creatura`.  
+ Le classi anonime sono un tipo particolare di classe che, come dice il nome (perdonami il gioco di parole), non hanno nome e per ciò non possono avere né un construttore né un distruttore e non possono essere utilizzate né come parametri né come valori di ritorno delle funzioni.  
 
 <!--
+La:
+
+```
+class {
+public:
+...
+private:
+...
+
+} Dio;
+
+```
+
 
 Visibilità delle classi.
 
-
-\[cfr. *Breve storia dell'infinito*, pagg. 30-40\]
-
-Si può dire che esista qualcosa che non ha dimensioni?
 
 
 parlare degli operatori di cast 
