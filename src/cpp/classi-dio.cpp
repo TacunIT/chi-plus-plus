@@ -49,12 +49,12 @@ private:
     void shabat();
     
     // Funzioni di interfaccia con gli umani.
-    bool scacciaDaEden(Uomo& adamp, Donna& eva);
+    bool popDaEden(Uomo& adamp, Donna& eva);
     bool printComandamenti(ostream& tavole);
     bool checkFede(Padre& abramo, Figlio& isacco);
     bool splitAcque(Mare& marRosso, Popolo& ebrei);
 
-private:
+protected:
     
     // Funzione membro accessibile anche alle 
     // classi figlio.

@@ -272,7 +272,7 @@ Aristotele disse che:
 > le scienze che derivano da un numero minore di premesse sono più rigorose delle scienze che ne discendono per mezzo dell’aggiunta di nuove premesse
  <a href="/man/note/#aristotele" class="nota"></a>
 
-In quest'ottica, il C'hi++ è una metafisica abbastanza rigorosa, perché richiede l'accettazione di due sole affermazioni non compovabili e, di queste due, solo una è strettamente necessaria alla coerenza interna della dottrina, l'altra è solo un auspicio.  
+In quest'ottica, il C'hi++ è una metafisica abbastanza rigorosa, perché richiede l'accettazione di due sole affermazioni non comprovabili e, di queste, solo una è strettamente necessaria alla coerenza interna della dottrina, l'altra è solo un auspicio.  
 Ai fedeli del C'hi++ è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (gli scienziati non sono infallibili: sono gli stessi che avevano visto dei canali su Marte) che ci sarà un momento in cui l'espansione dell'Universo terminerà e che tutto ciò che esiste tornerà a riunirsi nell'Uno primigenio:
 
 ```
