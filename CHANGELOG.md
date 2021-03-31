@@ -1,3 +1,9 @@
+## 0.22.5 (March 31, 2021)
+  - Redazione del testo del capitolo
+  - Convertite le i con accento circonflesso in ii
+  - Rivisto codice della classe anonima
+  - Rivista funzione printComandamenti
+
 ## 0.22.4 (March 28, 2021)
   - Dichiarazione della classe Dio
 
