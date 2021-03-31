@@ -799,12 +799,12 @@ private:
     void shabat();
     
     // Funzioni di interfaccia con gli umani.
-    bool scacciaDaEden(Uomo&amp; adamp, Donna&amp; eva);
+    bool popDaEden(Uomo&amp; adamp, Donna&amp; eva);
     bool printComandamenti(ostream&amp; tavole);
     bool checkFede(Padre&amp; abramo, Figlio&amp; isacco);
     bool splitAcque(Mare&amp; marRosso, Popolo&amp; ebrei);
 
-private:
+protected:
     
     // Funzione membro accessibile anche alle 
     // classi figlio.
@@ -819,26 +819,34 @@ public:
 } Dio;
 
 </code></pre>
-<p>In questo brano di codice, scritto dal Maestro Canaro, ci sono un paio di cose di cui non abbiamo ancora parlato.
-La prima è il tipo di classe utilizzato, ovvero la <em>classe anonima</em>; la seconda è la genealogia di <em>classi derivate</em> dalla classe base <code>Creatura</code>.<br />
- Le classi anonime sono un tipo particolare di classe che, come dice il nome (perdonami il gioco di parole), non hanno nome e per ciò non possono avere né un construttore né un distruttore e non possono essere utilizzate né come parametri né come valori di ritorno delle funzioni.</p>
+<p>In questo brano di codice, scritto dal Maestro Canaro, ci sono alcune cose di cui non abbiamo ancora parlato.
+La prima è il tipo di classe utilizzato, ovvero la <em>classe anonima</em>; la seconda è la genealogia di <em>classi derivate</em> dalla classe virtuale <code>Creatura</code>.<br />
+Le classi anonime sono un tipo particolare di classe che, come dice il nome (perdonami il gioco di parole), non hanno nome e per ciò non possono avere né un construttore né un distruttore e non possono essere utilizzate né come parametri né come valori di ritorno delle funzioni.
+Il codice:</p>
 
-<!--
-La:
-
-```
-class {
-public:
-...
+<pre><code>class {
 private:
+...
+protected:
+...
+public:
 ...
 
 } Dio;
+</code></pre>
 
-```
+<p>allo stesso tempo, dichiara la classe e la sua unica istanza, la variabile globale <code>Dio</code>.
+Il Maestro Canaro scelse intenzionalmente una classe anonima per la variabile <code>Dio</code>, perché così nessuna funzione avrebbe potuto utilizzarla e nessuna parte del codice avrebbe potuto generarne altre istanze.
+I problemi nacquero dopo, quando si trattò di definire gli attributi e i metodi della classe, perché Dio è eterno, infinito e onnipotente, quindi ha <em>tutti</em> gli attributi immaginabili e ciascuno di essi ha valore infinito.
+Allo stesso modo, deve avere delle funzioni membro per portare a termine <em>tutte</em> le possibili azioni e, come se non bastasse, il valore di ritorno booleano delle funzioni membro non può essere identificato come <code>true</code> o come <code>false</code> se non alla fine dei tempi, quando sarà possibile rilevare l’effetto complessivo di ciascun evento su ciascun essere<a href="/man/note#corano" class="nota"></a>.</p>
 
+<!--
+
+Non potendo dichiarare una classe con queste caratteristiche, si decise che l'amministratore del sistema sarebbe stata un'altra figura, con caratteristiche e poteri inferiori.
 
 Visibilità delle classi.
+
+v. Kant citato da Hertha von Dechend nella prefazione tedesca a Il Mulino di Amleto
 
 
 
