@@ -1,3 +1,6 @@
+## 0.22.6 (April 01, 2021)
+  - Spostato codice classe Dio nella sezione tecnica del capitolo
+
 ## 0.22.5 (March 31, 2021)
   - Redazione del testo del capitolo
   - Convertite le i con accento circonflesso in ii
