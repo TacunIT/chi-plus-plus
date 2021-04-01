@@ -520,48 +520,38 @@ src/cpp/classi-static.cpp:26:16: error: invalid use of 'this'
 1 error generated.
 ```
 
-perché, se la funzione fosse chiamata direttamente dalla classe, `this` non puterebbe ad alcun oggetto.
+perché, se la funzione fosse chiamata direttamente dalla classe, `this` non punterebbe ad alcun oggetto.
 
-<hr id="dottrina">
+<hr id="classi-anonime">
 
-Il più grosso problema che il Maestro Canaro dovette affrontare quando provò a fare il *porting* dell'<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a> fu di definire una classe per la figura di Dio: 
+L'ultima cosa di cui dobbiamo parlare, sono le *classi anonime*, un tipo particolare di classe che, come dice il nome (perdonami il gioco di parole), non hanno nome e per ciò non possono avere né un construttore né un distruttore e non possono essere utilizzate né come parametri né come valori di ritorno delle funzioni.  
+Il codice:
+
+```
+class 
+{
+...
+} obj;
+```
+
+dichiara allo stesso tempo la classe e la sua unica istanza, la variabile globale `obj`.  
+Quando il Maestro Canaro provò a fare il *porting* dell'<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a>, utilizzò una classe anonima per la variabile `Dio`, perché così nessuna funzione avrebbe potuto utilizzarla e nessuna parte del codice avrebbe potuto generarne altre istanze:
 
 ```
 {% include_relative src/classi-dio.cpp %}
 ```
-In questo brano di codice, scritto dal Maestro Canaro, ci sono alcune cose di cui non abbiamo ancora parlato.
-La prima è il tipo di classe utilizzato, ovvero la *classe anonima*; la seconda è la genealogia di *classi derivate* dalla classe virtuale `Creatura`.  
-Le classi anonime sono un tipo particolare di classe che, come dice il nome (perdonami il gioco di parole), non hanno nome e per ciò non possono avere né un construttore né un distruttore e non possono essere utilizzate né come parametri né come valori di ritorno delle funzioni.
-Il codice:
 
-```
-class {
-private:
-...
-protected:
-...
-public:
-...
-
-} Dio;
-```
-
-allo stesso tempo, dichiara la classe e la sua unica istanza, la variabile globale `Dio`.
-Il Maestro Canaro scelse intenzionalmente una classe anonima per la variabile `Dio`, perché così nessuna funzione avrebbe potuto utilizzarla e nessuna parte del codice avrebbe potuto generarne altre istanze.
-I problemi nacquero dopo, quando si trattò di definire gli attributi e i metodi della classe, perché Dio è eterno, infinito e onnipotente, quindi ha *tutti* gli attributi immaginabili e ciascuno di essi ha valore infinito.
+L'idea, in sé, era buona; i problemi nacquero dopo, quando si trattò di definire gli attributi e i metodi della classe, perché Dio ha *tutti* gli attributi immaginabili e ciascuno di essi ha valore infinito.
 Allo stesso modo, deve avere delle funzioni membro per portare a termine *tutte* le possibili azioni e, come se non bastasse, il valore di ritorno booleano delle funzioni membro non può essere identificato come `true` o come `false` se non alla fine dei tempi, quando sarà possibile rilevare l'effetto complessivo di ciascun evento su ciascun essere<a href="/man/note#corano" class="nota"></a>.
+
+<hr id="dottrina">
 
 
 
 <!--
 
-Non potendo dichiarare una classe con queste caratteristiche, si decise che l'amministratore del sistema sarebbe stata un'altra figura, con caratteristiche e poteri inferiori.
 
 Visibilità delle classi.
-
-v. Kant citato da Hertha von Dechend nella prefazione tedesca a Il Mulino di Amleto
-
-
 
 parlare degli operatori di cast 
 dynamic_cast <new_type> (expression)

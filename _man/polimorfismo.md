@@ -23,6 +23,8 @@ Ogni categoria ha una sua implementazione di questa funzione, uno specifico crit
 Per alcuni è il pubblico: il droghiere ti chiede di assaggiare le olive, lo scrittore ti fa leggere ciò che ha scritto, l'attore aspetta la risata o l'applauso alla fine della scena.
 Per i filosofi è `true` tutto ciò che può essere descritto con le parole; per gli scienziati, tutto ciò che può esssere descritto dalla matematica; per gli informatici è `true` tutto quello che può essere descritto dal codice. 
 
+v. Kant citato da Hertha von Dechend nella prefazione tedesca a Il Mulino di Amleto
+
 
 Quando il programmatore definisce un nuovo tipo di dato per mezzo di una o più classi, può allo stesso tempo istruire le funzioni e gli operatori del linguaggio ad utilizzarlo correttamente.
 
