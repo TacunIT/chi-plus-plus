@@ -344,11 +344,16 @@ quote:
             Cfr. brano su Mosé e al-Khidr - Cor. XVIII, 65-82.
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
-    </ol>
 
 </section>
 <!--
 <li id="">
     <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
 </li>
+<li id="vedanta">
+    A. K. <span>Coomaraswami</span>, 
+    <i>Tempo ed Eternità</i>,
+    Luni, Milano, 2003
+    <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+</li>    </ol>
 -->
