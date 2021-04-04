@@ -525,7 +525,7 @@ perché, se la funzione fosse chiamata direttamente dalla classe, `this` non pun
 <hr id="classi-anonime">
 
 L'ultima cosa di cui dobbiamo parlare, sono le *classi anonime*, un tipo particolare di classe che, come dice il nome (perdonami il gioco di parole), non hanno nome e per ciò non possono avere né un construttore né un distruttore e non possono essere utilizzate né come parametri né come valori di ritorno delle funzioni.  
-Il codice:
+L'unico modo per dichiarare un ogetto con classe anonima è di aggiungerlo alla dichiarazione della classe stessa:
 
 ```
 class 
@@ -535,21 +535,36 @@ class
 ```
 
 dichiara allo stesso tempo la classe e la sua unica istanza, la variabile globale `obj`.  
-Quando il Maestro Canaro provò a fare il *porting* dell'<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a>, utilizzò una classe anonima per la variabile `Dio`, perché così nessuna funzione avrebbe potuto utilizzarla e nessuna parte del codice avrebbe potuto generarne altre istanze:
+Quando il Maestro Canaro provò a fare il *porting* dell'<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a>, avrebbe voluto utilizzare una classe anonima per la variabile `Dio`, perché, priva di un costruttore e generata dalla sua stessa classe, quella variabile sarebbe stata visibile in tutto il codice, ma nessuna parte del programma ne avrebbe potuta generare un'altra:
 
 ```
 {% include_relative src/classi-dio.cpp %}
 ```
 
-L'idea, in sé, era buona; i problemi nacquero dopo, quando si trattò di definire gli attributi e i metodi della classe, perché Dio ha *tutti* gli attributi immaginabili e ciascuno di essi ha valore infinito.
-Allo stesso modo, deve avere delle funzioni membro per portare a termine *tutte* le possibili azioni e, come se non bastasse, il valore di ritorno booleano delle funzioni membro non può essere identificato come `true` o come `false` se non alla fine dei tempi, quando sarà possibile rilevare l'effetto complessivo di ciascun evento su ciascun essere<a href="/man/note#corano" class="nota"></a>.
+L'idea, in sé, era buona, ma venne abbandonata quando si trattò di definire gli attributi e i metodi della classe.
+Dio, infatti, ha *tutti* gli attributi immaginabili e ciascuno di essi ha valore infinito.
+Allo stesso modo, deve avere delle funzioni membro per portare a termine *tutte* le possibili azioni e il codice di queste funzioni dev'essere necessariamente definito all'interno della dichiarazione della classe, perché, non avendo un nome, non le si può definire esternamente:
+
+```
+bool ...::checkFede(Padre& abramo, Figlio& isacco)
+{
+
+}
+```
+
+Come se non bastasse, il valore di ritorno booleano delle funzioni membro non può essere identificato come `true` o come `false` se non alla fine dei tempi, quando sarà possibile rilevare l'effetto complessivo di ciascun evento su ciascun essere<a href="/man/note#corano" class="nota"></a>.
 
 <hr id="dottrina">
 
 
 
 <!--
+Uomo*  creaUomo() {
+    return new Uomo();
+};
 
+@todo: Utlizzare l'operatore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. 
+Questo approccio si rirova anche nel precetto:
 
 Visibilità delle classi.
 
@@ -562,8 +577,6 @@ const_cast <new_type> (expression)
 
 @todo: parlare della posizione di un certo dato in memoria, che può variare in successive esecuzioni del programma. Allo stesso modo, l'io cosciente di ciascuno di noi non è detto che si manifesterà nello stesso individuo, ma potrà essere "allocato" in altri esseri. In quest'ottica, il: "Cogito ergo sum" di Cartesio è insensato, perché ciò che cogita non è ciò che è. cfr. Ananda, note a capitolo sull'Induismo
 
-@todo: Utlizzare l'operatore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. 
-Questo approccio si rirova anche nel precetto:
 
     Amiamo ciò che ci ucciderà (se tutto va bene) 
 
