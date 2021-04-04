@@ -1,3 +1,7 @@
+## 0.22.7 (April 04, 2021)
+  - Rivisto il codice della classe Dio e iniziata sezione dottrina
+  - Revisione della chiusura della sezione tecnica
+
 ## 0.22.6 (April 01, 2021)
   - Spostato codice classe Dio nella sezione tecnica del capitolo
 
