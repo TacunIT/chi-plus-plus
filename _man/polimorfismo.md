@@ -25,6 +25,8 @@ Per i filosofi è `true` tutto ciò che può essere descritto con le parole; per
 
 v. Kant citato da Hertha von Dechend nella prefazione tedesca a Il Mulino di Amleto
 
+Le diverse religioni, possono essere delle forme derivate di una stessa mistica iniziale?%nl;Esistono dei "dati membro" e delle funzioni comuni, che siano state ridefinite con il passare del tempo, ma che facciano capo a un corpo di credenze (o di nozioni) iniziale?%nl;Anche solo in questa mappa, se ne trovano diverse (p.es. Empedocle -&gt; Poe).%nl;%nl;Cos&#xec; come le classi di un lunguaggio OO sono ridefinite per adattarsi a uno specifico contesto di utilizzo, cos&#xec; pure la Mistica iniziale potrebbe essere stata "overloaded" per adattarsi a uno specifico luogo o tempo.%nl;Se fosse cos&#xec;, tanto pi&#xf9; si va indietro nel tempo, e quindi nella gerarchia di classi, tanto pi&#xf9; ci si dovrebbe avvicinare alle caratteristiche proprie della Mistica.%nl;%nl;E' possibile definire una gerarchia di classi figlie della classe astratta "credo"?%nl;(semplificando molto, visto che sono le 3 di notte) Budda e Zoroastro influenzano i greci, che influenzano gli ebrei, che a loro volta infulenzano i cristiani, che alla fine producono i Testimoni di Geova...%nl;%nl;Allo stesso modo (sempre semplificando), dal C si &#xe8; evoluto il C++ e dal C++, Java.%nl;Sfortunatamente, per&#xf2;, i (cattivi) programmatori Java hanno fatto alla programmazione quello che i cattolici hanno fatto al cristianesimo.
+V. Corano
 
 Quando il programmatore definisce un nuovo tipo di dato per mezzo di una o più classi, può allo stesso tempo istruire le funzioni e gli operatori del linguaggio ad utilizzarlo correttamente.
 

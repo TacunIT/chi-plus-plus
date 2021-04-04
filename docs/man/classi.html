@@ -832,7 +832,7 @@ public:
 
 <p>L’idea, in sé, era buona, ma venne abbandonata quando si trattò di definire gli attributi e i metodi della classe.
 Dio, infatti, ha <em>tutti</em> gli attributi immaginabili e ciascuno di essi ha valore infinito.
-Allo stesso modo, deve avere delle funzioni membro per portare a termine <em>tutte</em> le possibili azioni e il codice di queste funzioni dev’essere necessariamente definito all’interno della dichiarazione della classe, perché, non avendo un nome, non le si può definire esternamente:</p>
+Allo stesso modo, essendo onnipotente, deve avere delle funzioni membro per portare a termine <em>tutte</em> le possibili azioni e il codice di queste funzioni, utilizzando una classe anonima, avrebbe dovuto essere definito all’interno della dichiarazione della classe, perché, mancando un nome, non lo si sarebbe potuto definire esternamente:</p>
 
 <pre><code>bool ...::checkFede(Padre&amp; abramo, Figlio&amp; isacco)
 {
@@ -844,10 +844,74 @@ Allo stesso modo, deve avere delle funzioni membro per portare a termine <em>tut
 
 <hr id="dottrina" />
 
-<!--
-Uomo*  creaUomo() {
-    return new Uomo();
+<p>È un peccato che Platone non sia vissuto duemilaquattrocentoundici anni, perché avrebbe certamente apprezzato l’affinità delle classi del C++ con le sue teorizzazioni riguardo le <em>idee</em> e le <em>forme</em>.
+In questo codice, la dichiarazione della classe è l’<em>idea</em> del pesce, mentre l’istanza è la forma:</p>
+
+<pre><code>/** 
+ * @file classi-pesce.cpp
+ * Definizione della classe Pesce.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+
+using namespace std;
+
+/**
+ *  Dichiarazione della classe: idea
+ */
+class Pesce {
+private:
+
+    /** Dati membro privati */
+    string _specie;
+    bool   _commestibile;
+    
+public:
+    
+    /** Costruttore della classe inline */
+    Pesce(const char* specie, bool commestibile) 
+    : _specie(specie), _commestibile(commestibile)
+    {
+    }
+    
+    /** Costruttore di copia inline */
+    Pesce(const Pesce&amp; p) {
+        this-&gt;_specie       = p._specie;
+        this-&gt;_commestibile = p._commestibile;
+    }
+
+    /** Distruttore della classe inline */
+    ~Pesce() { 
+    }
+
+    /** Funzioni di interfaccia */
+    const char* getSpecie() { return _specie.c_str(); }
+    bool isCommestibile()   { return _commestibile;   }
+
 };
+
+
+/**
+ *  Istanza della classe: forma
+ */
+int main()
+{             
+    Pesce pesce("spigola", true);
+    
+    cout &lt;&lt; pesce.getSpecie() &lt;&lt; ": "
+         &lt;&lt; (pesce.isCommestibile() ? "sì" : "no")
+         &lt;&lt; endl;
+     
+    return 0;
+}
+
+</code></pre>
+
+<p>Come abbiamo detto nella lezione sul <a href="/man/preprocessore#pesce" class="xref">preprocessore</a>, però, la parola <em>pesce</em> può avere diversi valori, a seconda di chi la utilizza, quindi, la dichiarazione della classe <code>Pesce</code> ptrà variare a seconda dell’utilizzo che se ne deve fare.</p>
+
+<!--
+
 
 @todo: Utlizzare l'operatore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. 
 Questo approccio si rirova anche nel precetto:

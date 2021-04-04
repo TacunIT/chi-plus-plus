@@ -543,7 +543,7 @@ Quando il Maestro Canaro provò a fare il *porting* dell'<a href="/man/mitopoiet
 
 L'idea, in sé, era buona, ma venne abbandonata quando si trattò di definire gli attributi e i metodi della classe.
 Dio, infatti, ha *tutti* gli attributi immaginabili e ciascuno di essi ha valore infinito.
-Allo stesso modo, deve avere delle funzioni membro per portare a termine *tutte* le possibili azioni e il codice di queste funzioni dev'essere necessariamente definito all'interno della dichiarazione della classe, perché, non avendo un nome, non le si può definire esternamente:
+Allo stesso modo, essendo onnipotente, deve avere delle funzioni membro per portare a termine *tutte* le possibili azioni e il codice di queste funzioni, utilizzando una classe anonima, avrebbe dovuto essere definito all'interno della dichiarazione della classe, perché, mancando un nome, non lo si sarebbe potuto definire esternamente:
 
 ```
 bool ...::checkFede(Padre& abramo, Figlio& isacco)
@@ -556,12 +556,17 @@ Come se non bastasse, il valore di ritorno booleano delle funzioni membro non pu
 
 <hr id="dottrina">
 
+È un peccato che Platone non sia vissuto duemilaquattrocentoundici anni, perché avrebbe certamente apprezzato l'affinità delle classi del C++ con le sue teorizzazioni riguardo le *idee* e le *forme*.
+In questo codice, la dichiarazione della classe è l'*idea* del pesce, mentre l'istanza è la forma:
 
+```
+{% include_relative src/classi-pesce.cpp %}
+```
+
+Come abbiamo detto nella lezione sul <a href="/man/preprocessore#pesce" class="xref">preprocessore</a>, però, la parola *pesce* può avere diversi valori, a seconda di chi la utilizza, quindi, la dichiarazione della classe `Pesce` ptrà variare a seconda dell'utilizzo che se ne deve fare. 
 
 <!--
-Uomo*  creaUomo() {
-    return new Uomo();
-};
+
 
 @todo: Utlizzare l'operatore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. 
 Questo approccio si rirova anche nel precetto:
