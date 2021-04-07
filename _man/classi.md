@@ -534,7 +534,7 @@ class
 } obj;
 ```
 
-dichiara allo stesso tempo la classe e la sua unica istanza, la variabile globale `obj`.  
+Questo codice dichiara allo stesso tempo la classe e la sua unica istanza, la variabile globale `obj`.  
 Quando il Maestro Canaro provò a fare il *porting* dell'<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a>, avrebbe voluto utilizzare una classe anonima per la variabile `Dio`, perché, priva di un costruttore e generata dalla sua stessa classe, quella variabile sarebbe stata visibile in tutto il codice, ma nessuna parte del programma ne avrebbe potuta generare un'altra:
 
 ```
@@ -552,21 +552,25 @@ bool ...::checkFede(Padre& abramo, Figlio& isacco)
 }
 ```
 
-Come se non bastasse, il valore di ritorno booleano delle funzioni membro non può essere identificato come `true` o come `false` se non alla fine dei tempi, quando sarà possibile rilevare l'effetto complessivo di ciascun evento su ciascun essere<a href="/man/note#corano" class="nota"></a>.
-
 <hr id="dottrina">
 
 È un peccato che Platone non sia vissuto duemilaquattrocentoundici anni, perché avrebbe certamente apprezzato l'affinità delle classi del C++ con le sue teorizzazioni riguardo le *idee* e le *forme*.
-In questo codice, la dichiarazione della classe è l'*idea* del pesce, mentre l'istanza è la forma:
+In questo codice, la dichiarazione della classe è l'*idea* del pesce, mentre l'istanza è la *forma*:
 
 ```
 {% include_relative src/classi-pesce.cpp %}
 ```
 
-Come abbiamo detto nella lezione sul <a href="/man/preprocessore#pesce" class="xref">preprocessore</a>, però, la parola *pesce* può avere diversi valori, a seconda di chi la utilizza, quindi, la dichiarazione della classe `Pesce` ptrà variare a seconda dell'utilizzo che se ne deve fare. 
+Come abbiamo detto parlando del <a href="/man/preprocessore#pesce" class="xref">preprocessore</a>, però, la parola *pesce* può avere diversi valori, a seconda di chi la utilizza, quindi, la dichiarazione della classe `Pesce` varierà a seconda dell'utilizzo che se ne deve fare.
+Per esempio, sapere se un pesce sia commestibile o no è determinante per un pescatore o per un ecologista, ma potrebbe non esserlo per un biologo marino.
+Al contrario, il tipo di scheletro o il sistema di respirazione, rilevanti per un biologo, sono del tutto irrilevanti per un pescivendolo a cui invece interesseranno sicuramente il prezzo al chilo, la data di cattura e il tipo di conservazione applicato.
+Di questo, comunque, parleremo nella prossima lezione; adesso dobbiamo tornare su una questione che avevamo lasciato in sospeso, ovvero il precetto:
+
+> Amiamo ciò che ci ucciderà (se tutto va bene) 
 
 <!--
 
+@todo: decidere se mettere un riferimento incrociato alla lezione sulla memoria.
 
 @todo: Utlizzare l'operatore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. 
 Questo approccio si rirova anche nel precetto:
@@ -583,7 +587,7 @@ const_cast <new_type> (expression)
 @todo: parlare della posizione di un certo dato in memoria, che può variare in successive esecuzioni del programma. Allo stesso modo, l'io cosciente di ciascuno di noi non è detto che si manifesterà nello stesso individuo, ma potrà essere "allocato" in altri esseri. In quest'ottica, il: "Cogito ergo sum" di Cartesio è insensato, perché ciò che cogita non è ciò che è. cfr. Ananda, note a capitolo sull'Induismo
 
 
-    Amiamo ciò che ci ucciderà (se tutto va bene) 
+   
 
 
 -->
