@@ -413,11 +413,10 @@ BODY.manuale FOOTER {
 }
 BODY.manuale.copertina MAIN {
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 BODY.manuale.copertina MAIN IMG.logo {
-    width: 300px;
-    max-width: 90%;
+    width: 260px;
     display: inline-block;
 }
 BODY.manuale.copertina MAIN H2 {
