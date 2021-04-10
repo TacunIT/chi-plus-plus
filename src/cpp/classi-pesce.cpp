@@ -32,7 +32,7 @@ public:
         this->_commestibile = p._commestibile;
     }
 
-    /** Distruttore della classe inline */
+    /** Distruttore inline */
     ~Pesce() { 
     }
 
