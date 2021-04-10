@@ -843,7 +843,7 @@ Allo stesso modo, essendo onnipotente, deve avere delle funzioni membro per port
 <hr id="dottrina" />
 
 <p>È un peccato che Platone non sia vissuto duemilaquattrocentoundici anni, perché avrebbe certamente apprezzato l’affinità delle classi del C++ con le sue teorizzazioni riguardo le <em>idee</em> e le <em>forme</em>.
-In questo codice, la dichiarazione della classe è l’<em>idea</em> del pesce, mentre l’istanza è la <em>forma</em>:</p>
+In questo codice, possiamo considerare la dichiarazione della classe come l’<em>idea</em> del pesce, mentre l’istanza ne è la <em>forma</em>:</p>
 
 <pre><code>/** 
  * @file classi-pesce.cpp
@@ -879,7 +879,7 @@ public:
         this-&gt;_commestibile = p._commestibile;
     }
 
-    /** Distruttore della classe inline */
+    /** Distruttore inline */
     ~Pesce() { 
     }
 
@@ -914,6 +914,40 @@ Di questo, comunque, parleremo nella prossima lezione; adesso dobbiamo tornare s
 <blockquote>
   <p>Amiamo ciò che ci ucciderà (se tutto va bene)</p>
 </blockquote>
+
+<p>Abbiamo visto che l’amore è l’unica forza allo stesso tempo gravitazionale ed entropica, perché unisce gli individui, ma allo stesso tempo li porta a riprodursi in forme differenti.<br />
+Possiamo considerare l’amore come il “costruttrore” delle nostre istanze, perché genera le condizioni che spingono i nostri genitori a incontrarsi e ad accoppiarsi e soprattutto li spinge a restare insieme dopo l’accoppiamento.
+La monogamia non è una costante, anzi, in natura esistono quattro modi differenti di gestire la prole e John Maynard Smith li ha catalogati in base alla specie animale che le adotta:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Anitra</strong></td>
+      <td>il maschio abbandona, la femmina alleva</td>
+    </tr>
+    <tr>
+      <td><strong>Spinarello</strong></td>
+      <td>la femmina abbandona, il maschio alleva</td>
+    </tr>
+    <tr>
+      <td><strong>Moscerino</strong></td>
+      <td>entrambi i genitori abbandonano</td>
+    </tr>
+    <tr>
+      <td><strong>Gibbone</strong></td>
+      <td>entrambi i genitori allevano</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Noi, per lo più, ci comportiamo come gibboni, ma questo è un comportamento che conviene principalmente alle donne.
+Da un punto di vista strettamente statistico, un maschio avrebbe più probabilità di tramandare il suo DNA se fecondasse più femmine.
+È lo stesso motivo per cui si creano delle copie dei proprii dati in siti diversi (e distanti) da quello originale, in modo che se il sito principale va a fuoco o se viene colpito da un meteorite, i dati non vadano persi.
+L’amore, invece, spinge il webmaster a tenere i suoi dati in una sola server-farm, accudendoli e proteggendoli personalmente, per preservarne il contenuto informativo.<br />
+Ciascuno di noi è l’istanza di una classe che è stata chiamata a vivere per svolgere un determinato compito.
+Veniamo generati e allocati in memoria, assolviamo il nostro dovere e poi, così come gli oggetti di un programma, dobbiamo essere rimossi per non sovraccaricare il sistema.
+Per essere certi che questo avverrà, c’è bisogno di un distruttore che termini la nostra esistenza nel momento opportuno.
+L’amore serve anche a questo:</p>
 
 <!--
 

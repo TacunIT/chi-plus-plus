@@ -555,7 +555,7 @@ bool ...::checkFede(Padre& abramo, Figlio& isacco)
 <hr id="dottrina">
 
 È un peccato che Platone non sia vissuto duemilaquattrocentoundici anni, perché avrebbe certamente apprezzato l'affinità delle classi del C++ con le sue teorizzazioni riguardo le *idee* e le *forme*.
-In questo codice, la dichiarazione della classe è l'*idea* del pesce, mentre l'istanza è la *forma*:
+In questo codice, possiamo considerare la dichiarazione della classe come l'*idea* del pesce, mentre l'istanza ne è la *forma*:
 
 ```
 {% include_relative src/classi-pesce.cpp %}
@@ -567,6 +567,25 @@ Al contrario, il tipo di scheletro o il sistema di respirazione, rilevanti per u
 Di questo, comunque, parleremo nella prossima lezione; adesso dobbiamo tornare su una questione che avevamo lasciato in sospeso, ovvero il precetto:
 
 > Amiamo ciò che ci ucciderà (se tutto va bene) 
+
+Abbiamo visto che l'amore è l'unica forza allo stesso tempo gravitazionale ed entropica, perché unisce gli individui, ma allo stesso tempo li porta a riprodursi in forme differenti.  
+Possiamo considerare l'amore come il “costruttrore” delle nostre istanze, perché genera le condizioni che spingono i nostri genitori a incontrarsi e ad accoppiarsi e soprattutto li spinge a restare insieme dopo l'accoppiamento.
+La monogamia non è una costante, anzi, in natura esistono quattro modi differenti di gestire la prole e John Maynard Smith li ha catalogati in base alla specie animale che le adotta:
+
+|:--:|:--|
+| **Anitra**    | il maschio abbandona, la femmina alleva
+| **Spinarello**| la femmina abbandona, il maschio alleva
+| **Moscerino** | entrambi i genitori abbandonano
+| **Gibbone**   | entrambi i genitori allevano
+   
+Noi, per lo più, ci comportiamo come gibboni, ma questo è un comportamento che conviene principalmente alle donne.
+Da un punto di vista strettamente statistico, un maschio avrebbe più probabilità di tramandare il suo DNA se fecondasse più femmine.
+È lo stesso motivo per cui si creano delle copie dei proprii dati in siti diversi (e distanti) da quello originale, in modo che se il sito principale va a fuoco o se viene colpito da un meteorite, i dati non vadano persi.
+L'amore, invece, spinge il webmaster a tenere i suoi dati in una sola server-farm, accudendoli e proteggendoli personalmente, per preservarne il contenuto informativo.  
+Ciascuno di noi è l'istanza di una classe che è stata chiamata a vivere per svolgere un determinato compito.
+Veniamo generati e allocati in memoria, assolviamo il nostro dovere e poi, così come gli oggetti di un programma, dobbiamo essere rimossi per non sovraccaricare il sistema.
+Per essere certi che questo avverrà, c'è bisogno di un distruttore che termini la nostra esistenza nel momento opportuno.
+L'amore serve anche a questo: 
 
 <!--
 
