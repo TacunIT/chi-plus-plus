@@ -515,7 +515,7 @@ Attingono ai principii di altre discipline, come il Buddismo, il Bushido o il Ta
 Tu dovrai fare altrettanto: imparare tutto ciò che puoi, tanto dai buoni quanto dai cattivi maestri, e poi definire le tue regole di vita, che potranno essere uguali, simili o del tutto differenti da quelle che ti sono state insegnate.   
 La Via, così come la Verità, è una modella, che ciascuno di noi ritrae dal suo punto di vista, cercando di intuire il corpo che si cela dietro alle pieghe del drappeggio. 
 Ritrarla nello stesso modo in cui l'ha fatto un altro sarebbe sbagliato, perché il tuo punto di vista non è uguale al suo, ma guardarla da più punti di vista può aiutarti a capire meglio la sua forma.
-Musashi dice di prestare attenzione anche alle cose insignificanti, Nan-in e Tenno sviluppano il loro Zen di Ogni Istante, Wittgenstein nei suoi *Diari*, scrive:
+Musashi dice di prestare attenzione anche alle cose insignificanti, Nan-in e Tenno sviluppano il loro *Zen di ogni istante*, Wittgenstein nei suoi *Diari*, scrive:
 
 > Solo una cosa, è necessaria: essere capace di osservare tutto ciò che ti accade. Concentrarsi! Dio mi aiuti!
 

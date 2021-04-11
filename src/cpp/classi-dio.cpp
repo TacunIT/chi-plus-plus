@@ -64,6 +64,6 @@ public:
 
      // Funzione membro pubblica.
      // Torna il numero di preghiere da recitare.
-    int rimettiPeccati(Creatura* fedele) { return 0;};
+    int rimettiPeccati(Creatura* fedele);
                    
 } Dio;
