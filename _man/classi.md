@@ -568,9 +568,9 @@ Di questo, comunque, parleremo nella prossima lezione; adesso dobbiamo tornare s
 
 > Amiamo ciò che ci ucciderà (se tutto va bene) 
 
-Abbiamo visto che l'amore è l'unica forza allo stesso tempo gravitazionale ed entropica, perché unisce gli individui, ma allo stesso tempo li porta a riprodursi in forme differenti.  
-Possiamo considerare l'amore come il “costruttrore” delle nostre istanze, perché genera le condizioni che spingono i nostri genitori a incontrarsi e ad accoppiarsi e soprattutto li spinge a restare insieme dopo l'accoppiamento.
-La monogamia non è una costante, anzi, in natura esistono quattro modi differenti di gestire la prole e John Maynard Smith li ha catalogati in base alla specie animale che le adotta:
+Abbiamo visto che l'Amore è l'unica forza allo stesso tempo gravitazionale ed entropica, perché unisce gli individui, ma allo stesso tempo li porta a riprodursi in forme differenti.  
+Possiamo considerare l'Amore come il “costruttrore” delle nostre istanze, perché genera le condizioni che spingono i nostri genitori a incontrarsi e ad accoppiarsi e soprattutto li spinge a restare insieme dopo l'accoppiamento.
+La monogamia non è una costante, anzi, in natura esistono quattro modi differenti di gestire la prole e John Maynard Smith li ha catalogati in base alla specie animale che le adotta<a href="/man/note#maynard" class="nota"></a>:
 
 |:--:|:--|
 | **Anitra**    | il maschio abbandona, la femmina alleva
@@ -578,21 +578,27 @@ La monogamia non è una costante, anzi, in natura esistono quattro modi differen
 | **Moscerino** | entrambi i genitori abbandonano
 | **Gibbone**   | entrambi i genitori allevano
    
-Noi, per lo più, ci comportiamo come gibboni, ma questo è un comportamento che conviene principalmente alle donne.
-Da un punto di vista strettamente statistico, un maschio avrebbe più probabilità di tramandare il suo DNA se fecondasse più femmine.
-È lo stesso motivo per cui si creano delle copie dei proprii dati in siti diversi (e distanti) da quello originale, in modo che se il sito principale va a fuoco o se viene colpito da un meteorite, i dati non vadano persi.
-L'amore, invece, spinge il *webmaster* a tenere i suoi dati in una sola *server-farm*, accudendoli e proteggendoli personalmente, per preservarne il contenuto informativo.  
+Noi, per lo più, ci comportiamo come i gibboni, ma questo è un comportamento che conviene principalmente alle femmine.
+Da un punto di vista strettamente statistico, un maschio avrebbe più probabilità di tramandare il suo DNA se fecondasse più compagne.
+È lo stesso motivo per cui, nel nostro campo, si creano delle copie dei proprii dati in *server-farm* diverse (e distanti) da quella originale, in modo che se il sito principale va a fuoco o se viene colpito da un meteorite, i dati non vadano persi.
+L'Amore, invece, spinge il *webmaster* a tenere i suoi dati in una sola *server-farm*, accudendoli e proteggendoli personalmente, per preservarne il contenuto informativo.  
 Ciascuno di noi è l'istanza di una classe che è stata chiamata a vivere per svolgere un determinato compito.
 Veniamo generati, assolviamo il nostro compito e poi, così come gli oggetti di un programma, dobbiamo essere rimossi per non occupare inutilmente delle risorse del sistema.
 Per essere certi che questo avverrà, c'è bisogno di un distruttore che termini la nostra esistenza nel momento opportuno.
-L'amore serve anche a questo: così come ha generato nei nostri genitori l'interesse necessario a causare la nostra nascita, genera in noi un interesse che pone le condizioni necessarie alla nostra morte.
+L'Amore serve anche a questo: così come ha generato nei nostri genitori l'interesse necessario a causare la nostra nascita, genera in noi un interesse che pone le condizioni necessarie alla nostra morte.
+Questo interesse può applicarsi a qualunque cosa &mdash; una sostanza, un'attività, un luogo, una o più persone &mdash; e deve essere superiore all'interesse che l'individuo ha nei confronti della sua stessa esistenza.  
+Capisci bene che questo è un aspetto potenzialmente rischioso della nostra dottrina, perché potrebbe giustificare delle forme di indulgenza funeste nei confronti di droga o alcol.  
+La morte di Robert Capa, sopravvissuto allo sbarco in Normandia e ucciso, dieci anni dopo, da una mina anti-uomo mentre fotografava dei soldati sul delta del Fiume Rosso, è un esempio inequivocabile di questo precetto, ma come possiamo sapere se la morte di Jimi Hendrix, Janis Joplin o Jim Morrison, sia stata ciò che doveva essere, o non sia stata, al contrario, la conseguenza di una scelta drammaticamente errata?
+Soprattutto, come possiamo evitare che questo precetto non diventi il pretesto per altre scelte errate?  
+Ho scelto le tre "J" &mdash; Jim, Jimi e Janis &mdash; perché il Maestro Canaro pensava che, nel loro caso, la morte fosse ciò a cui erano destinati:
+
+> Capisci, avevano tutti ventisette anni e poi quella "J" che ricorre nel nome.. non credo fosse un caso. 
+“*Muß es sein? Es muß sein!*”, come direbbe Beethoven.
+So cosa stai pensando: che sto cercando di definire un dogma per giustificare una mia speranza, ma non è così, perché la teoria del “27 Club”, anche se include Amy Winehouse e Robert Johnson, lascia dolorosamente fuori il Elvis e Andrea Pazienza<a href="/man/note#pazienza" class="nota"></a>, che io ho amato molto di più.
+
 
 <!--
 
-@todo: decidere se mettere un riferimento incrociato alla lezione sulla memoria.
-
-@todo: Utlizzare l'operatore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. 
-Questo approccio si rirova anche nel precetto:
 
 Visibilità delle classi.
 
