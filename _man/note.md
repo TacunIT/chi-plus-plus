@@ -340,7 +340,16 @@ quote:
             Da C++17; non utilizzo questa sintassi nel testo perché preferisco una forma più portabile. 
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
-
+        <li id="maynard">
+            @todo: aggiungere citazione, credo sia <i>Evolution and the Theory of Games</i>
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>
+        <li id="pazienza">
+            Andrea Pazienza (1956, 1988), illustratore, fumettaro, artista.
+            <a href="http://www.andreapazienza.it/" target="note">www.andreapazienza.it/</a>
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>
+    </ol>
 </section>
 <!--
 <li id="">
