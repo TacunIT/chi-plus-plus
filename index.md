@@ -29,7 +29,7 @@ Tutti i testi, le immagini e i dati relativi al C'hi++ sono raccolti in un
 
 Tutto nasce da una domanda: *È possibile dare una spiegazione dell'esistenza sftuttando solo ciò di cui abbiamo esperienza diretta?*
 Le religioni, per “funzionare”, richiedono da una a tre dimensioni aggiuntive, oltre quelle note; la Scienza, per le sue *superstringhe* ha bisogno almeno di sette dimensioni aggiuntive, ovvero il doppio di quelle che servono per un Aldilà non spirituale. Esiste una spiegazione più semplice?
-Dopo averci ragionato su per una quarantina di anni, posso dire che sì: una spiegazione più semplice esiste ed è anche compatibile con molti dei princip&icirc; delle religioni canoniche, alle quali C'hi++ non vuole sostituirsi, ma affiancarsi. 
+Dopo averci ragionato su per una quarantina di anni, posso dire che sì: una spiegazione più semplice esiste ed è anche compatibile con molti dei principii delle religioni canoniche, alle quali C'hi++ non vuole sostituirsi, ma affiancarsi. 
 
 C'hi++ non è né scienza né religione, anche se ogni tanto finge di essere o l'una o l'altra.
 C'hi++ è mito e la mitologia ha spesso mescolato il soprannaturale con il livello più alto dello sviluppo scientifico o tecnologico.
@@ -49,7 +49,7 @@ Così come i modelli matematici usati per la meteorologia non rendono tutta la c
 
 ---
 
-I princip&icirc; del C'hi++ si basano su una cosmogonia che riprende alcune idee di Poe, come il contrasto fra contrazione ed espansione, a cui aggiunge un maggior livello di dettaglio, definendo gli ipotetici elementi che costituiscono l'Universo ovvero, gli: *spazioni*, da cui il nome: *Spazionismo* (lo so che non è un nome serio, ma quando ho cominciato a formulare questa teoria non avrei mai immaginato di renderla pubblica e comunque è sempre bene non prendersi troppo sul serio).
+I principii del C'hi++ si basano su una cosmogonia che riprende alcune idee di Poe, come il contrasto fra contrazione ed espansione, a cui aggiunge un maggior livello di dettaglio, definendo gli ipotetici elementi che costituiscono l'Universo ovvero, gli: *spazioni*, da cui il nome: *Spazionismo* (lo so che non è un nome serio, ma quando ho cominciato a formulare questa teoria non avrei mai immaginato di renderla pubblica e comunque è sempre bene non prendersi troppo sul serio).
 
 Per lo Spazionismo, l'Universo è costituito da elementi infinitesimali dotati di “esistenza potenziale”. 
 Così come lo schermo di un computer è costituito da una matrice bidimensionale di pixel, generalmente spenti, ma capaci di accendersi se colpiti da un raggio di luce, così l'Universo è costituito da una matrice tridimensionale di spazioni, capaci di acquisire massa e quindi esistere  se ricevono energia.

@@ -581,11 +581,11 @@ La monogamia non è una costante, anzi, in natura esistono quattro modi differen
 Noi, per lo più, ci comportiamo come gibboni, ma questo è un comportamento che conviene principalmente alle donne.
 Da un punto di vista strettamente statistico, un maschio avrebbe più probabilità di tramandare il suo DNA se fecondasse più femmine.
 È lo stesso motivo per cui si creano delle copie dei proprii dati in siti diversi (e distanti) da quello originale, in modo che se il sito principale va a fuoco o se viene colpito da un meteorite, i dati non vadano persi.
-L'amore, invece, spinge il webmaster a tenere i suoi dati in una sola server-farm, accudendoli e proteggendoli personalmente, per preservarne il contenuto informativo.  
+L'amore, invece, spinge il *webmaster* a tenere i suoi dati in una sola *server-farm*, accudendoli e proteggendoli personalmente, per preservarne il contenuto informativo.  
 Ciascuno di noi è l'istanza di una classe che è stata chiamata a vivere per svolgere un determinato compito.
-Veniamo generati e allocati in memoria, assolviamo il nostro dovere e poi, così come gli oggetti di un programma, dobbiamo essere rimossi per non sovraccaricare il sistema.
+Veniamo generati, assolviamo il nostro compito e poi, così come gli oggetti di un programma, dobbiamo essere rimossi per non occupare inutilmente delle risorse del sistema.
 Per essere certi che questo avverrà, c'è bisogno di un distruttore che termini la nostra esistenza nel momento opportuno.
-L'amore serve anche a questo: 
+L'amore serve anche a questo: così come ha generato nei nostri genitori l'interesse necessario a causare la nostra nascita, genera in noi un interesse che pone le condizioni necessarie alla nostra morte.
 
 <!--
 
