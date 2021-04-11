@@ -1,3 +1,7 @@
+## 0.22.9 (April 11, 2021)
+  - Revisione generale del testo
+  - Amore come costruttore e distruttore
+
 ## 0.22.8 (April 07, 2021)
   - Revisione del testo del capitolo
 
