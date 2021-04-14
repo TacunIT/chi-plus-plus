@@ -561,7 +561,7 @@ In questo codice, possiamo considerare la dichiarazione della classe come l'*ide
 {% include_relative src/classi-pesce.cpp %}
 ```
 
-Come abbiamo detto parlando del <a href="/man/preprocessore#pesce" class="xref">preprocessore</a>, però, la parola *pesce* può avere diversi valori, a seconda di chi la utilizza, quindi, la dichiarazione della classe `Pesce` varierà a seconda dell'utilizzo che se ne deve fare.
+Come abbiamo detto parlando del <a href="/man/preprocessore#pesce" class="xref">preprocessore</a>, però, la parola *pesce* può avere diversi valori, a seconda di chi la utilizza, quindi, la dichiarazione/idea della classe `Pesce` varierà a seconda dell'utilizzo che se ne deve fare.
 Per esempio, sapere se un pesce sia commestibile o no è determinante per un pescatore o per un ecologista, ma potrebbe non esserlo per un biologo marino.
 Al contrario, il tipo di scheletro o il sistema di respirazione, rilevanti per un biologo, sono del tutto irrilevanti per un pescivendolo a cui invece interesseranno sicuramente il prezzo al chilo, la data di cattura e il tipo di conservazione applicato.
 Di questo, comunque, parleremo nella prossima lezione; adesso dobbiamo tornare su una questione che avevamo lasciato in sospeso, ovvero il precetto:
@@ -587,7 +587,7 @@ Veniamo generati, assolviamo il nostro compito e poi, così come gli oggetti di 
 Per essere certi che questo avverrà, c'è bisogno di un distruttore che termini la nostra esistenza nel momento opportuno.
 L'Amore serve anche a questo: così come ha generato nei nostri genitori l'interesse necessario a causare la nostra nascita, genera in noi un interesse che pone le condizioni necessarie alla nostra morte.
 Questo interesse può applicarsi a qualunque cosa &mdash; una sostanza, un'attività, un luogo, una o più persone &mdash; e deve essere superiore all'interesse che l'individuo ha nei confronti della sua stessa esistenza.  
-Capisci bene che questo è un aspetto potenzialmente rischioso della nostra dottrina, perché potrebbe giustificare delle forme di indulgenza funeste nei confronti di droga o alcol.  
+Capisci bene che questo è un aspetto potenzialmente rischioso della nostra dottrina, perché potrebbe giustificare delle forme di indulgenza funeste nei confronti di droga o alcol.
 La morte di Robert Capa, sopravvissuto allo sbarco in Normandia e ucciso, dieci anni dopo, da una mina anti-uomo mentre fotografava dei soldati sul delta del Fiume Rosso, è un esempio inequivocabile di questo precetto, ma come possiamo sapere se la morte di Jimi Hendrix, Janis Joplin o Jim Morrison, sia stata ciò che doveva essere, o non sia stata, al contrario, la conseguenza di una scelta drammaticamente errata?
 Soprattutto, come possiamo evitare che questo precetto non diventi il pretesto per altre scelte errate?  
 Ho scelto le tre "J" &mdash; Jim, Jimi e Janis &mdash; perché il Maestro Canaro pensava che, nel loro caso, la morte fosse ciò a cui erano destinati:
@@ -596,6 +596,17 @@ Ho scelto le tre "J" &mdash; Jim, Jimi e Janis &mdash; perché il Maestro Canaro
 “*Muß es sein? Es muß sein!*”, come direbbe Beethoven.
 So cosa stai pensando: che sto cercando di definire un dogma per giustificare una mia speranza, ma non è così, perché la teoria del “27 Club”, anche se include Amy Winehouse e Robert Johnson, lascia dolorosamente fuori il Elvis e Andrea Pazienza<a href="/man/note#pazienza" class="nota"></a>, che io ho amato molto di più.
 
+D'altro canto, non sempre le cose vanno come previsto e può accadere che per una scelta errata o per paura, una “istanza” devii dal suo cammino anticipando o ritardando la propria fine.  
+Il nostro agire è preordinato, ma non è obbligato.
+Siamo programmati per fare bene qualcosa e meno bene quacos'altro, ma siamo liberi di scegliere le nostre azioni.
+Molti si sono chiesti come possano coesistere il libero arbitrio e l'onnipotenza di Dio.
+La risposta è ovvia, se non fai distinzione fra artefatto e artefice.  
+Con buona pace di Einstein, Dio gioca davvero a dadi con l'Universo; lo sbaglio è pensare che il risultato di un tiro di dadi derivi da fattori casuali.  
+Quando si lanciano dei dadi, il risultato finale varia in base a due ordini di fattori, uno facilmente prevedibile e uno difficilmente prevedibile.
+Le possibili combinazioni dei dadi sono facilmente prevedibili, noto il numero delle facce e i valori che vi sono impressi.<!-- @todo: decidere se esplicitare la differenza fra i dadi classici e quelli, per esempio da D&D -->
+La combinazione che verrà effettivamente prodotta da un certo lancio di dadi dipende da fattori molto più complessi, come il tempo per cui li si è agitati, della loro posizione al momento del lancio o l'angolo di impatto con il piano, ma è altrettanto deterministica.
+Così come è impossibile che i dadi del Backgammon producano un valore superiore a dodici, è impossibile che un dato, lanciato con una certa energia in una certa direzione adotti una traiettoria diversa da quella che gli impongono le Leggi della fisica.  
+Allo stesso modo, quando l'Uno primigenio “lancia” la sua energia nell'Universo, è *onnipotente* nel senso che può potenzialmente produrre tutte le possibili permutazioni dell'esistenza dovute all'interazione energia/spazioni, ma non può sapere quale di quelle possibili permutazioni avrà luogo.
 
 <!--
 
