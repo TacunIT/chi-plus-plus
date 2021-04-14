@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      L'ereditarietà
 permalink:  /man/ereditarieta
-quote:      "Non accetterei mai di far parte di una rete che abbia un server come me fra i suoi nodi"
+quote:      "We few, we happy few<br />We bunch of data"
 ---
 
 Le classi del C++, per quanto duttili, non possono descrivere dei concetti astratti come: amore, arte o Dio.

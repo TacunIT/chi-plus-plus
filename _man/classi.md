@@ -2,7 +2,7 @@
 status:     redazione
 layout:     manuale
 class:      capitolo
-title:      Le classi
+title:      Classi e oggetti
 permalink:  /man/classi
 quote:      "Ceci n'est pas une |"
 ---
@@ -605,7 +605,7 @@ Con buona pace di Einstein, Dio gioca davvero a dadi con l'Universo; lo sbaglio 
 Quando si lanciano dei dadi, il risultato finale varia in base a due ordini di fattori, uno facilmente prevedibile e uno difficilmente prevedibile.
 Le possibili combinazioni dei dadi sono facilmente prevedibili, noto il numero delle facce e i valori che vi sono impressi.<!-- @todo: decidere se esplicitare la differenza fra i dadi classici e quelli, per esempio da D&D -->
 La combinazione che verrà effettivamente prodotta da un certo lancio di dadi dipende da fattori molto più complessi, come il tempo per cui li si è agitati, della loro posizione al momento del lancio o l'angolo di impatto con il piano, ma è altrettanto deterministica.
-Così come è impossibile che i dadi del Backgammon producano un valore superiore a dodici, è impossibile che un dato, lanciato con una certa energia in una certa direzione adotti una traiettoria diversa da quella che gli impongono le Leggi della fisica.  
+Così come è impossibile che i dadi del Backgammon producano un valore superiore a dodici, è impossibile che un dato, lanciato con una certa energia in una certa direzione adotti una traiettoria diversa da quella che gli impongono le Leggi della fisica.  in/v
 Allo stesso modo, quando l'Uno primigenio “lancia” la sua energia nell'Universo, è *onnipotente* nel senso che può potenzialmente produrre tutte le possibili permutazioni dell'esistenza dovute all'interazione energia/spazioni, ma non può sapere quale di quelle possibili permutazioni avrà luogo.
 
 <!--
