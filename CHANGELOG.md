@@ -1,3 +1,7 @@
+## 0.22.10 (April 14, 2021)
+  - Onnipotenza e libero arbitrio
+  - Revisione del MANIFEST
+
 ## 0.22.9 (April 11, 2021)
   - Revisione generale del testo
   - Amore come costruttore e distruttore
