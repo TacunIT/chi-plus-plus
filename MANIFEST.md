@@ -78,7 +78,7 @@ Il primo è decidere a quale spiritualità fare riferimento.
 Ovviamente non potrà essere una delle religioni canoniche, perché così facendo allontaneremmo gli appartenenti alle altre Fedi.
 Dovrà essere una nuova filosofia di vita che contrasti il meno possibile con le convinzioni degli altri gruppi religiosi.
 Inoltre sarà bene non definirla *religione*, perché molte persone hanno un'istintiva (e non del tutto immotivata) diffidenza nei confronti di questo termine perché le attribuiscono colpe che in realtà andrebbero imputate al clero e ai fedeli e vedono il *religare* da cui trae origine come un legame restrittivo da cui è bene sottrarsi.
-La chiameremo perciò: *Metafisica*, anche se di metafisico avrà ben poco, per non allontanare..
+La chiameremo perciò: *Metafisica*, anche se di metafisico avrà ben poco, per non rischiare di allontanare..
 
 > quei tanti che ancora credono in tutto ciò in cui più nessuno crede
 
@@ -97,10 +97,10 @@ Se si comporteranno così, qualunque sarà il loro lavoro, fosse anche pulire i 
 Riassumendo, abbiamo bisogno di una nuova etica che:
 
 - proponga valori alternativi a quelli in voga attualmente;
-- si basi su una nuova forma di spiritualità compatibile  quelle già esistenti
-- sarà bene definire *Metafisica*, anche se non avrà aspetti metafisici.
+- si basi su una nuova forma di spiritualità compatibile  quelle già esistenti;
+- sarà bene definire *Metafisica*, anche se avrà ben pochi aspetti metafisici.
 
-Si può fare, ma per riuscirci dobbiamo rifarci alle idee che nacquero e si svilupparono nella Culla della Civiltà, ovvero gli anni '80.
+Come avete letto qui sopra, si può fare, ma per riuscirci dobbiamo rifarci alle idee che nacquero e si svilupparono nella Culla della Civiltà, ovvero gli anni '80.
 
 Per definire un *dress-code* etico che sia valido tanto a una cena di gala che a un toga party dobbiamo fare ciò che fecero i creatori delle prime interfacce grafiche: creare una libreria di simboli il cui significato sia chiaro e condiviso da tutti gli utenti.
 In sostanza, **abbiamo bisogno di icone**.
@@ -128,12 +128,9 @@ L'ho trasformato perciò in [un documento a sé stante](https://chiplusplus.org/
 
 Se volete sapere qualcosa di più sul *C'hi++*, vi suggerisco di leggere [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta/).
 
-Il testo del manuale è all'indirizzo: [https://chiplusplus.org](https://chiplusplus.org). 
+Il testo del manuale è all'indirizzo: <a href="https://chiplusplus.org" target="chi" >chiplusplus.org</a>. 
 
 Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di GitHub.
-
-
-<h2 class="note">Note</h2>
 
 <section class="note">
     <h2>Note</h2>
