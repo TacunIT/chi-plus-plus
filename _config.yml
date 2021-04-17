@@ -44,7 +44,7 @@ collections:
             - funzioni.md
             - istruzioni-condizionali.md
             - istruzioni-iterative.md
-            - classi.md
+            - classi-oggetti.md
             - polimorfismo.md
             - ereditarieta.md
             - debug.md

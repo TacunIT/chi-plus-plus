@@ -3,7 +3,7 @@ status:     redazione
 layout:     manuale
 class:      capitolo
 title:      Classi e oggetti
-permalink:  /man/classi
+permalink:  /man/classi-oggetti
 quote:      "Ceci n'est pas une |"
 ---
 
@@ -585,31 +585,49 @@ L'Amore, invece, spinge il *webmaster* a tenere i suoi dati in una sola *server-
 Ciascuno di noi è l'istanza di una classe che è stata chiamata a vivere per svolgere un determinato compito.
 Veniamo generati, assolviamo il nostro compito e poi, così come gli oggetti di un programma, dobbiamo essere rimossi per non occupare inutilmente delle risorse del sistema.
 Per essere certi che questo avverrà, c'è bisogno di un distruttore che termini la nostra esistenza nel momento opportuno.
-L'Amore serve anche a questo: così come ha generato nei nostri genitori l'interesse necessario a causare la nostra nascita, genera in noi un interesse che pone le condizioni necessarie alla nostra morte.
+L'Amore serve anche a questo: così come ha generato nei nostri genitori l'interesse necessario a causare la nostra nascita, genera in noi un interesse che causa le condizioni necessarie alla nostra morte.
 Questo interesse può applicarsi a qualunque cosa &mdash; una sostanza, un'attività, un luogo, una o più persone &mdash; e deve essere superiore all'interesse che l'individuo ha nei confronti della sua stessa esistenza.  
-Capisci bene che questo è un aspetto potenzialmente rischioso della nostra dottrina, perché potrebbe giustificare delle forme di indulgenza funeste nei confronti di droga o alcol.
+Capisci bene che questo è un aspetto potenzialmente rischioso della nostra dottrina, perché potrebbe giustificare delle forme di auto-indulgenza  nei confronti di sostanze o attività dannose come l'abuso di droga o alcol.
 La morte di Robert Capa, sopravvissuto allo sbarco in Normandia e ucciso, dieci anni dopo, da una mina anti-uomo mentre fotografava dei soldati sul delta del Fiume Rosso, è un esempio inequivocabile di questo precetto, ma come possiamo sapere se la morte di Jimi Hendrix, Janis Joplin o Jim Morrison, sia stata ciò che doveva essere, o non sia stata, al contrario, la conseguenza di una scelta drammaticamente errata?
 Soprattutto, come possiamo evitare che questo precetto non diventi il pretesto per altre scelte errate?  
 Ho scelto le tre "J" &mdash; Jim, Jimi e Janis &mdash; perché il Maestro Canaro pensava che, nel loro caso, la morte fosse ciò a cui erano destinati:
 
 > Capisci, avevano tutti ventisette anni e poi quella "J" che ricorre nel nome.. non credo fosse un caso. 
 “*Muß es sein? Es muß sein!*”, come direbbe Beethoven.
-So cosa stai pensando: che sto cercando di definire un dogma per giustificare una mia speranza, ma non è così, perché la teoria del “27 Club”, anche se include Amy Winehouse e Robert Johnson, lascia dolorosamente fuori il Elvis e Andrea Pazienza<a href="/man/note#pazienza" class="nota"></a>, che io ho amato molto di più.
+So cosa stai pensando: che sto cercando di definire un dogma per giustificare una mia speranza, ma non è così. 
+La teoria del “27 Club”, anche se include Amy Winehouse e Robert Johnson, lascia dolorosamente fuori il Elvis e Andrea Pazienza<a href="/man/note#pazienza" class="nota"></a>, che io ho amato molto di più.
 
 D'altro canto, non sempre le cose vanno come previsto e può accadere che per una scelta errata o per paura, una “istanza” devii dal suo cammino anticipando o ritardando la propria fine.  
 Il nostro agire è preordinato, ma non è obbligato.
 Siamo programmati per fare bene qualcosa e meno bene quacos'altro, ma siamo liberi di scegliere le nostre azioni.
-Molti si sono chiesti come possano coesistere il libero arbitrio e l'onnipotenza di Dio.
+Molti si sono chiesti se le nostre azioni siano predestinate o se esista il libero arbitrio. 
+La risposta è: *Sì*, ma in tempi diversi.
+Riprendendo il paragone con le classi, la predestinazione è nella dichiarazione, mentre il libero arbitrio è proprio delle istanze.
+L'insieme dei tuoi attributi e dei tuoi metodi è predefinito: puoi saltare, ma non puoi volare; puoi nuotare, ma non puoi restare a lungo in immersione; il tuo sangue ha un flusso ben definito e così pure il tuo cibo.
+D'altro canto, quello che deciderai di fare dipende da te.
+Puoi decidere di attenerti ai limiti che ti sono stati imposti o cercare di sorpassarli, creandoti delle ali per volare o dei respiratori per andare sott'acqua. 
+Questo, però, non farà di te né un uccello né un pesce: la capacità di superare i limiti imposti dalla tua classe è uno dei tuoi metodi; la possibiltià di cambiare classe no.
+
+<hr id="dadi"> 
+
+Molti si sono chiesti come conciliare il libero arbitrio con l'onniscenza e l'onnipotenza di Dio.
 La risposta è ovvia, se non fai distinzione fra artefatto e artefice.  
-Con buona pace di Einstein, Dio gioca davvero a dadi con l'Universo; lo sbaglio è pensare che il risultato di un tiro di dadi derivi da fattori casuali.  
+Con buona pace di Einstein, Dio gioca davvero a dadi con l'Universo; lo sbaglio è pensare che il risultato di un tiro di dadi derivi da fattori casuali.
 Quando si lanciano dei dadi, il risultato finale varia in base a due ordini di fattori, uno facilmente prevedibile e uno difficilmente prevedibile.
 Le possibili combinazioni dei dadi sono facilmente prevedibili, noto il numero delle facce e i valori che vi sono impressi.<!-- @todo: decidere se esplicitare la differenza fra i dadi classici e quelli, per esempio da D&D -->
 La combinazione che verrà effettivamente prodotta da un certo lancio di dadi dipende da fattori molto più complessi, come il tempo per cui li si è agitati, della loro posizione al momento del lancio o l'angolo di impatto con il piano, ma è altrettanto deterministica.
-Così come è impossibile che i dadi del Backgammon producano un valore superiore a dodici, è impossibile che un dato, lanciato con una certa energia in una certa direzione adotti una traiettoria diversa da quella che gli impongono le Leggi della fisica.  in/v
-Allo stesso modo, quando l'Uno primigenio “lancia” la sua energia nell'Universo, è *onnipotente* nel senso che può potenzialmente produrre tutte le possibili permutazioni dell'esistenza dovute all'interazione energia/spazioni, ma non può sapere quale di quelle possibili permutazioni avrà luogo.
+Così come è impossibile che un lancio di dadi nel Backgammon produca un valore superiore a dodici, è impossibile che un dado, lanciato con una certa energia in una certa direzione adotti una traiettoria diversa da quella che gli impongono le Leggi della fisica.  
+Allo stesso modo, quando l'Uno primigenio “lancia” la sua energia nell'Universo, 
+è *onniscente*, perché conosce tutto ciò che è stato; 
+è *benevolo*, perché, come un giocatore di Backgammon, spererà di ottenere il miglior risultato possibile;
+è *onnipotente*, perché può potenzialmente produrre tutte le possibili permutazioni dell'esistenza dovute all'interazione energia/spazioni, 
+ma, di fatto, non potrà sapere quale di quelle permutazioni avrà luogo.
 
 <!--
 
+
+Come 
+Le esperienze precedenti gli avranno insegnato cosa sia meglio o peggio fare, ma non saprà
 
 Visibilità delle classi.
 
