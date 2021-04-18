@@ -597,37 +597,45 @@ Ho scelto le tre "J" &mdash; Jim, Jimi e Janis &mdash; perché il Maestro Canaro
 So cosa stai pensando: che sto cercando di definire un dogma per giustificare una mia speranza, ma non è così. 
 La teoria del “27 Club”, anche se include Amy Winehouse e Robert Johnson, lascia dolorosamente fuori il Elvis e Andrea Pazienza<a href="/man/note#pazienza" class="nota"></a>, che io ho amato molto di più.
 
-D'altro canto, non sempre le cose vanno come previsto e può accadere che per una scelta errata o per paura, una “istanza” devii dal suo cammino anticipando o ritardando la propria fine.  
-Il nostro agire è preordinato, ma non è obbligato.
-Siamo programmati per fare bene qualcosa e meno bene quacos'altro, ma siamo liberi di scegliere le nostre azioni.
-Molti si sono chiesti se le nostre azioni siano predestinate o se esista il libero arbitrio. 
-La risposta è: *Sì*, ma in tempi diversi.
+<hr id="libero-arbitrio">
+
+D'altro canto, non sempre le cose vanno come previsto e può accadere che per una scelta errata o per paura, una “istanza” devii dal suo cammino anticipando o ritardando la propria fine.
+Questo perché il nostro agire è preordinato, ma non è obbligato: siamo programmati per fare bene qualcosa e meno bene quacos'altro, ma siamo liberi di scegliere cosa fare.  
+Molti si sono chiesti se le nostre azioni siano predestinate o se esista il libero arbitrio; la risposta è: sì, ma in tempi diversi.
 Riprendendo il paragone con le classi, la predestinazione è nella dichiarazione, mentre il libero arbitrio è proprio delle istanze.
 L'insieme dei tuoi attributi e dei tuoi metodi è predefinito: puoi saltare, ma non puoi volare; puoi nuotare, ma non puoi restare a lungo in immersione; il tuo sangue ha un flusso ben definito e così pure il tuo cibo.
-D'altro canto, quello che deciderai di fare dipende da te.
-Puoi decidere di attenerti ai limiti che ti sono stati imposti o cercare di sorpassarli, creandoti delle ali per volare o dei respiratori per andare sott'acqua. 
-Questo, però, non farà di te né un uccello né un pesce: la capacità di superare i limiti imposti dalla tua classe è uno dei tuoi metodi; la possibiltià di cambiare classe no.
-
-<hr id="dadi"> 
-
-Molti si sono chiesti come conciliare il libero arbitrio con l'onniscenza e l'onnipotenza di Dio.
-La risposta è ovvia, se non fai distinzione fra artefatto e artefice.  
+D'altro canto, quello che deciderai di fare dipende da te: puoi decidere di attenerti ai limiti che ti sono stati imposti o cercare di sorpassarli, creandoti delle ali artificiali per volare o dei respiratori per andare sott'acqua. 
+Attento, però: questo non farà di te né un uccello né un pesce. Puoi superare i limiti imposti dalla tua classe, ma non la puoi cambiare.  
+Non è difficile conciliare il libero arbitrio con l'onniscenza e l'onnipotenza di Dio; la risposta è ovvia, se non fai distinzione fra artefatto e artefice.
 Con buona pace di Einstein, Dio gioca davvero a dadi con l'Universo; lo sbaglio è pensare che il risultato di un tiro di dadi derivi da fattori casuali.
 Quando si lanciano dei dadi, il risultato finale varia in base a due ordini di fattori, uno facilmente prevedibile e uno difficilmente prevedibile.
-Le possibili combinazioni dei dadi sono facilmente prevedibili, noto il numero delle facce e i valori che vi sono impressi.<!-- @todo: decidere se esplicitare la differenza fra i dadi classici e quelli, per esempio da D&D -->
-La combinazione che verrà effettivamente prodotta da un certo lancio di dadi dipende da fattori molto più complessi, come il tempo per cui li si è agitati, della loro posizione al momento del lancio o l'angolo di impatto con il piano, ma è altrettanto deterministica.
-Così come è impossibile che un lancio di dadi nel Backgammon produca un valore superiore a dodici, è impossibile che un dado, lanciato con una certa energia in una certa direzione adotti una traiettoria diversa da quella che gli impongono le Leggi della fisica.  
+Le possibili combinazioni dei dadi sono facilmente prevedibili, noto il numero delle facce e i valori che vi sono impressi.
+La combinazione che verrà effettivamente prodotta da un certo lancio di dadi è altrettanto deterministica, ma dipende da fattori molto più complessi, come il tempo per cui li si è agitati, della loro posizione al momento del lancio o l'angolo di impatto con il piano.
+Così come è impossibile che un lancio di dadi nel Backgammon produca un valore superiore a dodici, è impossibile che un dado, lanciato con una certa energia in una certa direzione adotti una traiettoria diversa da quella che gli impongono le Leggi della fisica.
+Noi non riusciamo a prevederla, ma questo non vuol dire che sia casuale.    
 Allo stesso modo, quando l'Uno primigenio “lancia” la sua energia nell'Universo, 
-è *onniscente*, perché conosce tutto ciò che è stato; 
-è *benevolo*, perché, come un giocatore di Backgammon, spererà di ottenere il miglior risultato possibile;
-è *onnipotente*, perché può potenzialmente produrre tutte le possibili permutazioni dell'esistenza dovute all'interazione energia/spazioni, 
-ma, di fatto, non potrà sapere quale di quelle permutazioni avrà luogo.
+è *onniscente*, perché conosce tutte le scelte che in precedenza si sono rivelate corrette e quelle che invece hanno prodotto del dolore; 
+è *benevolo*, perché spera di ottenere il miglior risultato possibile, evitando di ripetere gli sbagli già fatti;
+è *onnipotente*, perché può potenzialmente produrre tutte le possibili permutazioni <!-- l'allitterazione è intenzionale :-) --> dell'esistenza dovute all'interazione energia/spazioni.
+Malgrado ciò, non sa quale di quelle permutazioni avrà luogo e non lo vuole nemmeno sapere.
+Auspica che il nuovo ciclo di esistenza sia migliore dei precedenti, ma non desidera che avvenga un certo evento o che non avvenga un altro,
+ perché il desiderio lo renderebbe vulnerabile alle lusinghe dell'Annosa Dicotomia.   
+ Un famoso velista<a href="/man/note#straulino" class="nota"></a>, una volta disse:
+
+ > {{ site.data.citazioni.straulino.testo }} 
+
+ L'Uno si comporta in maniera simile: ligio al precetto del *Wu Wei*<a href="/man/note#wu-wei" class="nota"></a> taoista, pone le condizioni necessarie per il ripetersi degli eventi che si sono rivelati benefici, ma non li impone.
+Definisce delle regole, ma lascia le sue istanze libere di trasgredirle, perché sa che l'evoluzione è sempre frutto di un errore venuto male, di qualcosa che non sarebbe dovuto esssere così e invece così è meglio.   
+Le regole che definiscono e quindi limitano la nostra esistenza sono come un edificio che abbia una struttura in cemento armato e dei muri in cartongesso. 
+I muri interni possono essere abbattuti o modificati, se necessario, ma i pilastri e le travi devono essere lasciati al loro posto.
+Similmente, la modifica delle regole può essere benefica, ma deve essere permessa solo a chi le conosce bene <!-- per esempio, Gesù --> perché un carpentiere maldestro portrebbe - per errore o per stupidità - rimuovere uno dei pilastri portanti mettendo in pericolo la solidità dell'edificio. <!-- per esempio, il Movimento del '68 -->  
+Per questi motivi, la modifica delle regole non può essere un'attività ammessa da chi le ha promulgate, anche se ne riconosce l'utilità, ma dev'essere un'attività clandestina, svolta da elementi sacrificabili, che possano fungere da capri espiatorii se qualcosa va male.  
+Non fu per ingenuità, che l'Altissimo concesse a Iblīs una proroga alla sua punizione<a href="/man/note#iblis" class="nota"></a> e non fu un caso se il Maestro Canaro non fu rispedito alla sua società dopo che, vittima dell'Annosa Dicotomia, cercò di contravvenire alle regole definite dall'Analista, ma fu invece aggiunto al gruppo degli angeli caduti.
+Se rifiuti le dissonanze, tutt'al più, puoi suonare il Blues; con le dissonanze, hai il Jazz.
+
+<hr id="regole">
 
 <!--
-
-
-Come 
-Le esperienze precedenti gli avranno insegnato cosa sia meglio o peggio fare, ma non saprà
 
 Visibilità delle classi.
 
@@ -640,8 +648,9 @@ const_cast <new_type> (expression)
 
 @todo: parlare della posizione di un certo dato in memoria, che può variare in successive esecuzioni del programma. Allo stesso modo, l'io cosciente di ciascuno di noi non è detto che si manifesterà nello stesso individuo, ma potrà essere "allocato" in altri esseri. In quest'ottica, il: "Cogito ergo sum" di Cartesio è insensato, perché ciò che cogita non è ciò che è. cfr. Ananda, note a capitolo sull'Induismo
 
+differenza fra la dichiarazione che è unica e costante e l'istanza, che è plurima e variabile (cane Lele poteva essere umano)
 
-   
+ciò che pensiamo (cartesio) è una manifestazione dell'istanza, la dichiarazione è in ciò che facciamo istintivamente.
 
 
 -->
