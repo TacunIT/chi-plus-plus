@@ -331,7 +331,7 @@ quote:
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="inline">
-            <i>However, although it is easier on the person who writes the class, it is harder on all the readers since it mixes what a class does (the external behavior) with how it does it (the implementation). Because of this mixture, you should define all your member functions outside the class body if your class is intended to be highly reused and your class’s documentation is the header file itself</i> - 
+            <i>However, although it is easier on the person who writes the class, it is harder on all the readers since it mixes what a class does (the external behavior) with how it does it (the implementation). Because of this mixture, you should define all your member functions outside the class body if your class is intended to be highly reused and your class’s documentation is the header file itself</i><br />
             <a href="https://isocpp.org/wiki/faq/inline-functions#inline-member-fns"
             target="note">isocpp.org/wiki/faq/inline-functions#inline-member-fns</a>.
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
@@ -345,8 +345,22 @@ quote:
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="pazienza">
-            Andrea Pazienza (1956, 1988), illustratore, fumettaro, artista.
-            <a href="http://www.andreapazienza.it/" target="note">www.andreapazienza.it/</a>
+            Andrea Pazienza (1956, 1988), illustratore, fumettaro, artista.<br />
+            <a href="http://www.andreapazienza.it/" target="note">www.andreapazienza.it</a>
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>
+        <li id="straulino">
+            Agostino Straulino (1914, 2004), velista, Comandante dell'Amerigo Vespucci.<br />
+            <a href="https://www.treccani.it/enciclopedia/agostino-straulino" target="note">www.treccani.it/enciclopedia/agostino-straulino</a>
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>
+        <li id="wu-wei">
+            @todo: aggiungere definizione del termine
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>
+        <li id="iblis">
+            <i>{{ site.data.citazioni.corano.VII-14-18 }} </i> - Cor. VII 14-18<br />
+            Citato da {{ site.data.citazioni.corano.fonte }}
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
     </ol>
