@@ -1,3 +1,7 @@
+## 0.22.11 (April 18, 2021)
+  - Completata prima stesura del capitolo su classi e oggetti
+  - Rimosso il capitolo sugli oggetti.
+
 ## 0.22.10 (April 14, 2021)
   - Onnipotenza e libero arbitrio
   - Revisione del MANIFEST
