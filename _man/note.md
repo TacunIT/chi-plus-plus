@@ -363,6 +363,11 @@ quote:
             Citato da {{ site.data.citazioni.corano.fonte }}
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
+        <li id="cogito">
+            @todo: aggiungere riferimento ad Ananda, note a capitolo sull'Induismo.
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>
+
     </ol>
 </section>
 <!--
