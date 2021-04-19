@@ -7,12 +7,14 @@ permalink:  /man/ereditarieta
 quote:      "We few, we happy few<br />We bunch of data"
 ---
 
-Le classi del C++, per quanto duttili, non possono descrivere dei concetti astratti come: amore, arte o Dio.
-Come potrebbe essere, una classe Dio?
+L'ereditariaretà è il principale punto di forza del C++.
 
 
 <!--
 L'ereditarietà può essere o singola o multipla.
+
+Le classi del C++, per quanto duttili, non possono descrivere dei concetti astratti come: amore, arte o Dio.
+Come potrebbe essere, una classe Dio?
 
 Quando una nuova classe deriva da un'unica classe base, l'ereditarietà
 viene detta singola; se invece una classe deriva da due o più classi
