@@ -264,15 +264,15 @@ Direi che ne valeva la pena, no?
 
 La religione dovrebbe aiutare l’Uomo a vivere meglio. Dovrebbe dare uno scòpo alla nostra esistenza, aiutarci a superare i momenti di dolore e definire una scala di valori che ci permetta di prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso non possono essere d’aiuto. 
 Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti.
-Ciò dipende da due fattori: la natura umana e la mancanza di solidità logica dei loro principî. Infatti, dovendo interessarsi di argomenti che non possono essere sottoposti a un'analisi razionale, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di dogmi non dimostrabili che i seguaci della religione &mdash; i quali, non a caso, sono detti: “fedeli” o: “credenti” &mdash; devono accettare per buoni senza metterli in discussione.  
-I dogmi sono i pilastri su cui si regge l’edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l’edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato con ogni mezzo, anche a costo di abiurare quegli stessi principî che si cerca di difendere. 
+Ciò dipende da due fattori: la natura umana e la mancanza di solidità logica dei loro principii. Infatti, dovendo interessarsi di argomenti che non possono essere sottoposti a un'analisi razionale, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di dogmi non dimostrabili che i seguaci della religione &mdash; i quali, non a caso, sono detti: “fedeli” o: “credenti” &mdash; devono accettare per buoni senza metterli in discussione.  
+I dogmi sono i pilastri su cui si regge l’edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l’edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato con ogni mezzo, anche a costo di abiurare quegli stessi principii che si cerca di difendere. 
 Questo, però, non fa che peggiorare le cose, perché i dogmi non sono leggi comprovabili, ma opinioni o speranze e ogni tentativo di renderli più robusti ottiene l’effetto opposto perché si ampliano le dimensioni di una struttura che poggia su basi instabili.  
 Aristotele disse che:
  
 > le scienze che derivano da un numero minore di premesse sono più rigorose delle scienze che ne discendono per mezzo dell’aggiunta di nuove premesse
  <a href="/man/note/#aristotele" class="nota"></a>
 
-In quest'ottica, il C'hi++ è una metafisica abbastanza rigorosa, perché richiede l'accettazione di due sole affermazioni non compovabili e, di queste due, solo una è strettamente necessaria alla coerenza interna della dottrina, l'altra è solo un auspicio.  
+In quest'ottica, il C'hi++ è una metafisica abbastanza rigorosa, perché richiede l'accettazione di due sole affermazioni non comprovabili e, di queste, solo una è strettamente necessaria alla coerenza interna della dottrina, l'altra è solo un auspicio.  
 Ai fedeli del C'hi++ è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (gli scienziati non sono infallibili: sono gli stessi che avevano visto dei canali su Marte) che ci sarà un momento in cui l'espansione dell'Universo terminerà e che tutto ciò che esiste tornerà a riunirsi nell'Uno primigenio:
 
 ```

@@ -229,7 +229,7 @@ Molte persone pensano che amore e arte siano dei concetti vaghi e aleatorii, ma 
 > I shall not today attempt further to define the kinds of material I understand to be embraced within that shorthand description; and perhaps I could never succeed in intelligibly doing so. But I know it when I see it, and the motion picture involved in this case is not that.<a href="/man/note/#steward" class="nota"></a>
 
 Questo approccio entropico/soggettivo, per quanto corretto nel caso di *Les Amants*, è chiaramente sbagliato in termini generali: tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente da chi le ascolta o le utilizza. 
-Così come la parola: *pesce*, per quanto banale, può non avere lo stesso valore per un biologo marino, un ecologista o per un pescatore, anche la parola *arte* può assumere significati diversi per un gallerista, per un artista o per un Papa.  
+Così come la parola: <i id="pesce">pesce</i>, per quanto banale, può non avere lo stesso valore per un biologo marino, un ecologista o per un pescatore, anche la parola *arte* può assumere significati diversi per un gallerista, per un artista o per un Papa.  
 È altrettanto sbagliata l'interpretazione entropico/romantica che comunemente si attribuisce alle parole: *amore* e *arte*.
 L'amore non è il sentimento vago che ha fatto la fortuna di poeti, musici e letterati, ma uno stato (più o meno persistente) del nostro organismo in cui riteniamo che qualcuno o qualcosa sia più importante di noi stessi.
 Di contro, l'Arte (ti prego di scrivere questo termine con l'iniziale maiuscola, nel tuo libro) non è l'esaltazione della personalità di un singolo, ma è &mdash; e dev'essere &mdash; la traccia del nostro cammino alla ricerca del Senso della Vita: Dio, per chi ci crede, o la Perfezione per i non credenti.
@@ -240,12 +240,12 @@ Approfondiremo quest'ultimo concetto <a href="/man/estetica" class="xref">in sé
 Tutti noi agiamo in base a degli schemi di valori che determinano le nostre scelte. 
 L'istinto di sopravvivenza, solitamente, ci spinge a porre la nostra persona al vertice di questa piramide, ma alle volte può capitarci di eleggere a nostro bene supremo qualcuno o qualcosa diverso da noi stessi.  
 Quel senza Dio di Dawkins
-<!-- Utilizzo questo appellativo in maniera canzonatoria: Dawkins ha cambiato il mio modo di vedere il Mondo o, almeno, parte di esso. Temo solo che faccia un errore di generalizzazione, ritenendo tutti i fedeli dei fanatici e dei bigotti. --> 
+<!-- Utilizzo questo appellativo in maniera affettuosamente canzonatoria: Dawkins ha cambiato il mio modo di vedere il Mondo o, almeno, parte di esso. Credo solo che faccia un errore di generalizzazione, ritenendo tutti i fedeli dei fanatici e dei bigotti. --> 
 ha dimostrato come l'attaccamento che noi proviamo per i nostri parenti sia direttamente proporzionale al numero di cromosomi che condividiamo con essi e che quindi può essere riconducibile al desiderio primordiale di perpetuare il nostro patrimonio genetico<a href="/man/note/#selfish" class="nota"></a>. 
 Questa interpretazione ribonucleica dell'amore funziona molto bene per i rapporti di sangue (padre/figlio, nonno/nipote, zio/nipote ecc.), ma non spiega l'amore fra mamma e papà o fra nonno e nonna &mdash; almeno, nelle famiglie che non ritengono l'incesto una pratica accettabile.  
 L'*egoismo dei geni* non spiega nemmeno altre forme d'amore come l'amor di Patria, che spinge i giovani a sacrificare la propria vita in guerra,
 <!--
-La maggior parte dei soldati parte controvoglia perché costretta, ma la storia - e sfortunatamente anche i cimiteri -, sono pieni di esempii di giovani che si sono arrulati volontariamente. Boccioni ed Hemingway, per esempio.
+La maggior parte dei soldati parte controvoglia perché costretta, ma la storia - e sfortunatamente anche i cimiteri -, sono pieni di esempii di giovani che si sono arrulati volontariamente. Boccioni ed Hemingway, per esempio, ma anche diversi ciclisti.
 -->
 l'amore per il prossimo, che porta il missionario a sacrificare la sua vita per aiutare i malati o l'amore per una forma di arte, uno sport o un lavoro. 
 La realtà è che l'amore è una *backdoor*, o, meglio: una bomba a tempo, che viene inserita di nascosto nel tuo software, per essere certi che farai la cosa giusta quando arriverà il momento.  

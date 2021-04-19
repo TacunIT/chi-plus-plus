@@ -122,7 +122,7 @@ Questo sistema richiede solo la definizione di due simboli: *1* e *0*; due conce
 Qualcuno potrebbe dirti che ci sono sistemi di calcolo migliori del binario.
 Qualcuno, probabilmente uno di quei disgraziati individui che amministrano le basi di dati, potrebbe dirti che il sistema ternario bilanciato funziona molto meglio e semplifica i calcoli.
 Ciò corrisponde al vero.  
-La ragione per cui il Maestro Canaro non approvava i sistemi ternarî era filosofica, non tecnica. I due valori del sistema binario possono essere identificati con i valori logici sì/no, vero/falso; ovvero con le due condizioni di esistenza e non esistenza, per esempio, di un buco in una scheda perforata o di una corrente in un circuito.
+La ragione per cui il Maestro Canaro non approvava i sistemi ternarii era filosofica, non tecnica. I due valori del sistema binario possono essere identificati con i valori logici sì/no, vero/falso; ovvero con le due condizioni di esistenza e non esistenza, per esempio, di un buco in una scheda perforata o di una corrente in un circuito.
 Al contrario, i sistemi con basi superiori a due, richiedono la definizione di un terzo stato che non può essere né sì, né no; né vero, né falso; né esistente, né in-esistente.
 Questo terzo stato intermedio può essere definito solo per mezzo di una valutazione che non è logica, ma quantitativa.
 Mettiamo che su una scheda perforata il valore 0 sia associato all\'assenza di fori e il valore 1 sia associato alla presenza di un foro; un terzo valore, differente da 0 e da 1, potrebbe essere identificato o da un foro di dimensioni differenti o da una concavità.

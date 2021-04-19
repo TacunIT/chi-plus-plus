@@ -1,13 +1,14 @@
 ---
-status:     redazione
+status:     pubblicato
 layout:     manuale
 class:      capitolo
-title:      Le classi
-permalink:  /man/classi
+title:      Classi e oggetti
+permalink:  /man/classi-oggetti
 quote:      "Ceci n'est pas une |"
 ---
 
 <!-- Quando ho cominciato a scrivere questo capitolo, si è rotto il tasto "o" del mio Mac. È Domenica e siamo in clausura da COVID, quindi non posso andare in un centro commerciale a comprarne una esterna, temporanea. Perdonate eventuali refusi -->
+
 La possibilità di definire nuovi tipi di dato grazie alle classi è la caratteristica principale del C++.
 
 I linguaggi di programmazione “tradizionali”, come il Cobol il Fortran o il Pascal, hanno un insieme limitato di tipi di dato: interi, numeri in virgola mobile, booleani, caratteri e stringhe.. giusto quello che serve a gestire una scheda anagrafica o un conto in banca.
@@ -513,38 +514,143 @@ ottieni l'errore di compilazione:
 
 ```
 > g++ src/cpp/classi-static.cpp -o src/out/esempio 
-src/cpp/classi-static.cpp:26:16: error: invalid use of 'this' outside of a non-static member function
+src/cpp/classi-static.cpp:26:16: error: invalid use of 'this' 
+ outside of a non-static member function
         return this->_nIstanze;
                ^
 1 error generated.
 ```
 
-perché, se la funzione fosse chiamata direttamente dalla classe, `this` non puterebbe ad alcun oggetto.
+perché, se la funzione fosse chiamata direttamente dalla classe, `this` non punterebbe ad alcun oggetto.
+
+<hr id="classi-anonime">
+
+L'ultima cosa di cui dobbiamo parlare, sono le *classi anonime*, un tipo particolare di classe che, come dice il nome (perdonami il gioco di parole), non hanno nome e per ciò non possono avere né un construttore né un distruttore e non possono essere utilizzate né come parametri né come valori di ritorno delle funzioni.  
+L'unico modo per dichiarare un ogetto con classe anonima è di aggiungerlo alla dichiarazione della classe stessa:
+
+```
+class 
+{
+...
+} obj;
+```
+
+Questo codice dichiara allo stesso tempo la classe e la sua unica istanza, la variabile globale `obj`.  
+Quando il Maestro Canaro provò a fare il *porting* dell'<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a>, avrebbe voluto utilizzare una classe anonima per la variabile `Dio`, perché, priva di un costruttore e generata dalla sua stessa classe, quella variabile sarebbe stata visibile in tutto il codice, ma nessuna parte del programma ne avrebbe potuta generare un'altra:
+
+```
+{% include_relative src/classi-dio.cpp %}
+```
+
+L'idea, in sé, era buona, ma venne abbandonata quando si trattò di definire gli attributi e i metodi della classe.
+Dio, infatti, ha *tutti* gli attributi immaginabili e ciascuno di essi ha valore infinito.
+Allo stesso modo, essendo onnipotente, deve avere delle funzioni membro per portare a termine *tutte* le possibili azioni e il codice di queste funzioni, utilizzando una classe anonima, avrebbe dovuto essere definito all'interno della dichiarazione della classe, perché, mancando un nome, non lo si sarebbe potuto definire esternamente:
+
+```
+bool ...::checkFede(Padre& abramo, Figlio& isacco)
+{
+
+}
+```
 
 <hr id="dottrina">
 
+È un peccato che Platone non sia vissuto duemilaquattrocentoundici anni, perché avrebbe certamente apprezzato l'affinità delle classi del C++ con le sue teorizzazioni riguardo le *idee* e le *forme*.
+In questo codice, possiamo considerare la dichiarazione della classe come l'*idea* del pesce, mentre l'istanza ne è la *forma*:
+
+```
+{% include_relative src/classi-pesce.cpp %}
+```
+
+Come abbiamo detto parlando del <a href="/man/preprocessore#pesce" class="xref">preprocessore</a>, però, la parola *pesce* può avere diversi valori, a seconda di chi la utilizza, quindi, la dichiarazione/idea della classe `Pesce` varierà a seconda dell'utilizzo che se ne deve fare.
+Per esempio, sapere se un pesce sia commestibile o no è determinante per un pescatore o per un ecologista, ma potrebbe non esserlo per un biologo marino.
+Al contrario, il tipo di scheletro o il sistema di respirazione, rilevanti per un biologo, sono del tutto irrilevanti per un pescivendolo, a cui invece interesseranno sicuramente il prezzo al chilo, la data di cattura e il tipo di conservazione applicato.
+Di questo, parleremo nelle prossime lezioni; adesso dobbiamo tornare su una questione che avevamo lasciato in sospeso, ovvero il precetto:
+
+> Amiamo ciò che ci ucciderà (se tutto va bene) 
+
+Abbiamo visto che l'Amore è una forza allo stesso tempo gravitazionale ed entropica, perché unisce gli individui, ma allo stesso tempo li porta a riprodursi in forme differenti.  
+In un certo senso, possiamo considerare l'Amore come il “costruttrore” delle nostre istanze, perché genera le condizioni che spingono i nostri genitori a incontrarsi e ad accoppiarsi e soprattutto li spinge a restare insieme dopo l'accoppiamento.
+La monogamia non è una costante, anzi, in natura esistono quattro modi differenti di gestire la prole e John Maynard Smith li ha catalogati in base alla specie animale che le adotta<a href="/man/note#maynard" class="nota"></a>:
+
+|:--:|:--|
+| **Anitra**    | il maschio abbandona, la femmina alleva
+| **Spinarello**| la femmina abbandona, il maschio alleva
+| **Moscerino** | entrambi i genitori abbandonano
+| **Gibbone**   | entrambi i genitori allevano
+   
+Noi, per lo più, ci comportiamo come i gibboni, anche se è un comportamento che conviene principalmente alle femmine.
+Da un punto di vista strettamente statistico, un maschio avrebbe più probabilità di tramandare il suo DNA se fecondasse più compagne.
+È lo stesso motivo per cui, nel nostro campo, si creano delle copie dei proprii dati in *server-farm* diverse (e distanti) da quella originale, in modo che se il sito principale va a fuoco o se viene colpito da un meteorite, i dati non vadano persi.
+L'Amore, invece, spinge il *webmaster* a tenere i suoi dati in una sola *server-farm*, accudendoli e proteggendoli personalmente, per preservarne il contenuto informativo.  
+Ciascuno di noi è l'istanza di una classe che è stata chiamata a vivere per svolgere un determinato compito.
+Veniamo generati, assolviamo il nostro compito e poi, così come gli oggetti di un programma, dobbiamo essere rimossi per non occupare inutilmente delle risorse del sistema.
+Per essere certi che questo avverrà, c'è bisogno di un distruttore che termini la nostra esistenza nel momento opportuno.
+L'Amore può servire anche a questo: così come ha generato nei nostri genitori l'interesse necessario a causare la nostra nascita, genera in noi un interesse che causa le condizioni necessarie alla nostra morte.
+Questo interesse può applicarsi a qualunque cosa &mdash; una sostanza, un'attività, un luogo, una o più persone &mdash; e deve essere superiore all'interesse che l'individuo ha nei confronti della sua stessa esistenza.  
+Capisci bene che questo è un aspetto potenzialmente rischioso della nostra dottrina, perché potrebbe giustificare delle forme di auto-indulgenza  nei confronti di sostanze o attività dannose come l'abuso di droga o alcol.
+La morte di Robert Capa, sopravvissuto allo sbarco in Normandia e ucciso, dieci anni dopo, da una mina anti-uomo mentre fotografava dei soldati sul delta del Fiume Rosso, è un esempio inequivocabile di questo precetto, ma come possiamo sapere se la morte di Jimi Hendrix, Janis Joplin o Jim Morrison, sia stata ciò che doveva essere, o non sia stata, al contrario, la conseguenza di una scelta drammaticamente errata?
+Soprattutto, come possiamo evitare che questo precetto non diventi il pretesto per altre scelte errate?  
+Ho scelto le tre "J" &mdash; Jim, Jimi e Janis &mdash; perché il Maestro Canaro pensava che, nel loro caso, la morte fosse ciò a cui erano destinati:
+
+> Capisci, avevano tutti ventisette anni e poi quella "J" che ricorre nel nome.. non credo fosse un caso. 
+“*Muß es sein? Es muß sein!*”, come direbbe Beethoven.
+So cosa stai pensando: che sto cercando di definire un dogma per giustificare una mia speranza, ma non è così. 
+La teoria del “27 Club”, anche se include Amy Winehouse e Robert Johnson, lascia dolorosamente fuori il Elvis e Andrea Pazienza<a href="/man/note#pazienza" class="nota"></a>, che io ho amato molto di più.
+
+<hr id="libero-arbitrio">
+
+D'altro canto, non sempre le cose vanno come previsto e può accadere che per una scelta errata o per paura, una “istanza” devii dal suo cammino anticipando o ritardando la propria fine.
+Questo perché il nostro agire è preordinato, ma non è obbligato: siamo programmati per fare bene qualcosa e meno bene quacos'altro, ma siamo liberi di scegliere cosa fare.  
+Molti si sono chiesti se le nostre azioni siano predestinate o se esista il libero arbitrio; la risposta è: sì, ma in tempi diversi.
+Riprendendo il paragone con le classi, la predestinazione è nella dichiarazione, mentre il libero arbitrio è proprio delle istanze.
+L'insieme dei tuoi attributi e dei tuoi metodi è predefinito: puoi saltare, ma non puoi volare; puoi nuotare, ma non puoi restare a lungo in immersione; il tuo sangue ha un flusso ben definito e così pure il tuo cibo.
+D'altro canto, quello che deciderai di fare dipende da te: puoi decidere di attenerti ai limiti che ti sono stati imposti o cercare di sorpassarli, creandoti delle ali artificiali per volare o dei respiratori per andare sott'acqua. 
+Attento, però: questo non farà di te né un uccello né un pesce. Puoi superare i limiti imposti dalla tua classe, ma non la puoi cambiare.  
+Non è difficile conciliare il libero arbitrio con l'onniscenza e l'onnipotenza di Dio; la risposta è ovvia, se non fai distinzione fra artefatto e artefice.
+Con buona pace di Einstein, Dio gioca davvero a dadi con l'Universo; lo sbaglio è pensare che il risultato di un tiro di dadi derivi da fattori casuali.
+Quando si lanciano dei dadi, il risultato finale varia in base a due ordini di fattori, uno facilmente prevedibile e uno difficilmente prevedibile.
+Le possibili combinazioni dei dadi sono facilmente prevedibili, noto il numero delle facce e i valori che vi sono impressi.
+La combinazione che verrà effettivamente prodotta da un certo lancio di dadi è altrettanto deterministica, ma dipende da fattori molto più complessi, come il tempo per cui li si è agitati, della loro posizione al momento del lancio o l'angolo di impatto con il piano.
+Così come è impossibile che un lancio di dadi nel Backgammon produca un valore superiore a dodici, è impossibile che un dado, lanciato con una certa energia in una certa direzione adotti una traiettoria diversa da quella che gli impongono le Leggi della fisica.
+Anche se non riusciamo a prevederla, non vuol dire che sia casuale.    
+Allo stesso modo, quando l'Uno primigenio “lancia” la sua energia nell'Universo, 
+è *onniscente*, perché conosce tutte le scelte che in precedenza si sono rivelate corrette e quelle che invece hanno prodotto del dolore; 
+è *benevolo*, perché spera di ottenere il miglior risultato possibile, evitando di ripetere gli sbagli già fatti;
+è *onnipotente*, perché può potenzialmente produrre tutte le possibili permutazioni <!-- l'allitterazione è intenzionale :-) --> dell'esistenza dovute all'interazione energia/spazioni.
+Malgrado ciò, non sa quale di quelle permutazioni avrà luogo e non lo vuole nemmeno sapere.
+Auspica che il nuovo ciclo di esistenza sia migliore dei precedenti, ma non desidera che avvenga un certo evento o che non avvenga un altro,
+ perché il desiderio lo renderebbe vulnerabile alle lusinghe dell'Annosa Dicotomia.   
+ Un famoso velista<a href="/man/note#straulino" class="nota"></a>, una volta disse:
+
+ > {{ site.data.citazioni.straulino.testo }} 
+
+ L'Uno si comporta in maniera simile: ligio al precetto del *Wu Wei*<a href="/man/note#wu-wei" class="nota"></a> taoista, pone le condizioni necessarie per il ripetersi degli eventi che si sono rivelati benefici, ma non li impone.
+ Le regole non devono essere una rete che imprigiona e immoblizza, ma una rete che salva e sostiene, così come il “religare” delle religioni non deve essere un legame che impastoia, ma che sorregge.
+Per questo motivo, l'Uno definisce delle regole, ma lascia le sue istanze libere di trasgredirle, perché sa che l'evoluzione è sempre frutto di un errore venuto male, di qualcosa che non sarebbe dovuto esssere così e invece così è meglio.   
+Le regole che definiscono e quindi limitano la nostra esistenza sono come un edificio che abbia una struttura in cemento armato e dei muri in cartongesso. 
+I muri interni possono essere abbattuti o modificati, se necessario, ma i pilastri e le travi devono essere lasciati al loro posto.
+Similmente, la modifica delle regole può essere benefica, ma deve essere permessa solo a chi le conosce bene <!-- per esempio, Gesù --> perché un carpentiere maldestro portrebbe - per errore o per stupidità - rimuovere uno dei pilastri portanti mettendo in pericolo la solidità dell'edificio. <!-- per esempio, il Movimento del '68 -->  
+Per questi motivi, la modifica delle regole non può essere un'attività ammessa da chi le ha promulgate, anche se ne riconosce l'utilità, ma dev'essere un'attività clandestina, svolta da elementi sacrificabili, che possano fungere da capri espiatorii se qualcosa va male.  
+Non fu per ingenuità, che l'Altissimo concesse a Iblīs una proroga alla sua punizione<a href="/man/note#iblis" class="nota"></a> e non fu un caso se il Maestro Canaro venne aggiunto al gruppo degli angeli caduti, dopo che, vittima dell'Annosa Dicotomia, cercò di contravvenire alle regole definite dall'Analista.
+Se rifiuti le dissonanze, tutt'al più, puoi suonare il Blues; con le dissonanze, hai il Jazz.
+
+<hr id="livelli-esistenza">
+
+Così come l'immagine di una stampa litografica o di una serigrafia esiste sia nella matrice che nella copia, ciascuno di noi ha due livelli di esistenza.
+Uno è ideale, simile alla dichiarazione della classe e definisce quale sia il nostro ruolo nell'esistenza: ciò che *possiamo* fare, ciò che *non possiamo* fare e ciò che *dovremmo* fare.
+L'altro livello è la nostra manifestazione reale, dovuta all'interazione dell'energia dell'Uno con gli spazioni.
+Questo livello è assimilabile all'istanza di una classe, che mette in atto ciò che nella dichiarazione era solo potenziale: *the hearts that break, the mess we make*, come dice la canzone<!-- Audition (The Fools Who Dream)</i> - dal film: La La Land -->.  
+La nostra entità ideale è unica e costante, mentre la nostra manifestazione fisica è mutevole: come sai, uno stesso oggetto può essere allocato in aree differenti di memoria, in successive esecuzioni di un programma, così come una stessa stampa può essere riprodotta su supporti diversi.
+In questo ciclo di esistenza, il Maestro Canaro e il cane Lele sono stati un umano e un cane che correvano sulle colline intorno al lago di Bracciano, ma in altre esistenze potrebbero essere &mdash; o essere stati &mdash; altre persone e altri animali, in altri luoghi o addirittura in altri pianeti. 
+Il nostro livello ideale, infatti, non stabilisce cosa dobbiamo essere, ma quale debba essere il nostro contributo all'economia dell'Universo; la forma che assumiamo o il luogo in cui ci manifestiamo sono del tutto incidentali.  
+Per il C'hi++, come per l'Induismo<a href="/man/note#cogito" class="nota"></a>, la frase: “Cogito ergo sum” di Cartesio è insensata, perché ciò che cogita è l'istanza.
+Ciò che siamo realmente, la nostra essenza, si manifesta in ciò che facciamo istintivamente.
+
+
 <!--
 
-fare esempio di classe con attributi binarii
-
-\[cfr. *Breve storia dell'infinito*, pagg. 30-40\]
-
-Si può dire che esista qualcosa che non ha dimensioni?
-
-
-parlare degli operatori di cast 
-dynamic_cast <new_type> (expression)
-reinterpret_cast <new_type> (expression)
-static_cast <new_type> (expression)
-const_cast <new_type> (expression)
-
-
-@todo: parlare della posizione di un certo dato in memoria, che può variare in successive esecuzioni del programma. Allo stesso modo, l'io cosciente di ciascuno di noi non è detto che si manifesterà nello stesso individuo, ma potrà essere "allocato" in altri esseri. In quest'ottica, il: "Cogito ergo sum" di Cartesio è insensato, perché ciò che cogita non è ciò che è. cfr. Ananda, note a capitolo sull'Induismo
-
-@todo: Utlizzare l'operatore `delete` per illustrare il rapporto del C’hi++ con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon funzonamento dell’Universo. 
-Questo approccio si rirova anche nel precetto:
-
-    Amiamo ciò che ci ucciderà (se tutto va bene) 
+Visibilità delle classi.
 
 
 -->

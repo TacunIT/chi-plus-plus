@@ -8,8 +8,6 @@ permalink:  /man/debug
 quote:      Cento Mondi di peccato sono dissipati dalla luce di un solo ticket
 ---
 
-
-
 Chiediti una cosa: come mai, i manuali di programmazione non parlano mai del *debug*?  
 Si sono scritte migliaia di pagine sui diversi linguaggi di programmazione; non c\'è primavera che non veda fiorire un nuovo paradigma di programmazione &mdash; strutturata, *object-oriented*, *agile*, *fuzzy*.. &mdash; eppure, nessuno si è mai preoccupato di formalizzare il processo di correzione del codice.
 O, se lo ha fatto, nessuno se n\'è accorto.
