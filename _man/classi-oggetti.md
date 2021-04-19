@@ -1,5 +1,5 @@
 ---
-status:     redazione
+status:     pubblicato
 layout:     manuale
 class:      capitolo
 title:      Classi e oggetti
@@ -8,6 +8,7 @@ quote:      "Ceci n'est pas une |"
 ---
 
 <!-- Quando ho cominciato a scrivere questo capitolo, si è rotto il tasto "o" del mio Mac. È Domenica e siamo in clausura da COVID, quindi non posso andare in un centro commerciale a comprarne una esterna, temporanea. Perdonate eventuali refusi -->
+
 La possibilità di definire nuovi tipi di dato grazie alle classi è la caratteristica principale del C++.
 
 I linguaggi di programmazione “tradizionali”, come il Cobol il Fortran o il Pascal, hanno un insieme limitato di tipi di dato: interi, numeri in virgola mobile, booleani, caratteri e stringhe.. giusto quello che serve a gestire una scheda anagrafica o un conto in banca.
@@ -563,13 +564,13 @@ In questo codice, possiamo considerare la dichiarazione della classe come l'*ide
 
 Come abbiamo detto parlando del <a href="/man/preprocessore#pesce" class="xref">preprocessore</a>, però, la parola *pesce* può avere diversi valori, a seconda di chi la utilizza, quindi, la dichiarazione/idea della classe `Pesce` varierà a seconda dell'utilizzo che se ne deve fare.
 Per esempio, sapere se un pesce sia commestibile o no è determinante per un pescatore o per un ecologista, ma potrebbe non esserlo per un biologo marino.
-Al contrario, il tipo di scheletro o il sistema di respirazione, rilevanti per un biologo, sono del tutto irrilevanti per un pescivendolo a cui invece interesseranno sicuramente il prezzo al chilo, la data di cattura e il tipo di conservazione applicato.
-Di questo, comunque, parleremo nella prossima lezione; adesso dobbiamo tornare su una questione che avevamo lasciato in sospeso, ovvero il precetto:
+Al contrario, il tipo di scheletro o il sistema di respirazione, rilevanti per un biologo, sono del tutto irrilevanti per un pescivendolo, a cui invece interesseranno sicuramente il prezzo al chilo, la data di cattura e il tipo di conservazione applicato.
+Di questo, parleremo nelle prossime lezioni; adesso dobbiamo tornare su una questione che avevamo lasciato in sospeso, ovvero il precetto:
 
 > Amiamo ciò che ci ucciderà (se tutto va bene) 
 
-Abbiamo visto che l'Amore è l'unica forza allo stesso tempo gravitazionale ed entropica, perché unisce gli individui, ma allo stesso tempo li porta a riprodursi in forme differenti.  
-Possiamo considerare l'Amore come il “costruttrore” delle nostre istanze, perché genera le condizioni che spingono i nostri genitori a incontrarsi e ad accoppiarsi e soprattutto li spinge a restare insieme dopo l'accoppiamento.
+Abbiamo visto che l'Amore è una forza allo stesso tempo gravitazionale ed entropica, perché unisce gli individui, ma allo stesso tempo li porta a riprodursi in forme differenti.  
+In un certo senso, possiamo considerare l'Amore come il “costruttrore” delle nostre istanze, perché genera le condizioni che spingono i nostri genitori a incontrarsi e ad accoppiarsi e soprattutto li spinge a restare insieme dopo l'accoppiamento.
 La monogamia non è una costante, anzi, in natura esistono quattro modi differenti di gestire la prole e John Maynard Smith li ha catalogati in base alla specie animale che le adotta<a href="/man/note#maynard" class="nota"></a>:
 
 |:--:|:--|
@@ -578,14 +579,14 @@ La monogamia non è una costante, anzi, in natura esistono quattro modi differen
 | **Moscerino** | entrambi i genitori abbandonano
 | **Gibbone**   | entrambi i genitori allevano
    
-Noi, per lo più, ci comportiamo come i gibboni, ma questo è un comportamento che conviene principalmente alle femmine.
+Noi, per lo più, ci comportiamo come i gibboni, anche se è un comportamento che conviene principalmente alle femmine.
 Da un punto di vista strettamente statistico, un maschio avrebbe più probabilità di tramandare il suo DNA se fecondasse più compagne.
 È lo stesso motivo per cui, nel nostro campo, si creano delle copie dei proprii dati in *server-farm* diverse (e distanti) da quella originale, in modo che se il sito principale va a fuoco o se viene colpito da un meteorite, i dati non vadano persi.
 L'Amore, invece, spinge il *webmaster* a tenere i suoi dati in una sola *server-farm*, accudendoli e proteggendoli personalmente, per preservarne il contenuto informativo.  
 Ciascuno di noi è l'istanza di una classe che è stata chiamata a vivere per svolgere un determinato compito.
 Veniamo generati, assolviamo il nostro compito e poi, così come gli oggetti di un programma, dobbiamo essere rimossi per non occupare inutilmente delle risorse del sistema.
 Per essere certi che questo avverrà, c'è bisogno di un distruttore che termini la nostra esistenza nel momento opportuno.
-L'Amore serve anche a questo: così come ha generato nei nostri genitori l'interesse necessario a causare la nostra nascita, genera in noi un interesse che causa le condizioni necessarie alla nostra morte.
+L'Amore può servire anche a questo: così come ha generato nei nostri genitori l'interesse necessario a causare la nostra nascita, genera in noi un interesse che causa le condizioni necessarie alla nostra morte.
 Questo interesse può applicarsi a qualunque cosa &mdash; una sostanza, un'attività, un luogo, una o più persone &mdash; e deve essere superiore all'interesse che l'individuo ha nei confronti della sua stessa esistenza.  
 Capisci bene che questo è un aspetto potenzialmente rischioso della nostra dottrina, perché potrebbe giustificare delle forme di auto-indulgenza  nei confronti di sostanze o attività dannose come l'abuso di droga o alcol.
 La morte di Robert Capa, sopravvissuto allo sbarco in Normandia e ucciso, dieci anni dopo, da una mina anti-uomo mentre fotografava dei soldati sul delta del Fiume Rosso, è un esempio inequivocabile di questo precetto, ma come possiamo sapere se la morte di Jimi Hendrix, Janis Joplin o Jim Morrison, sia stata ciò che doveva essere, o non sia stata, al contrario, la conseguenza di una scelta drammaticamente errata?
@@ -612,7 +613,7 @@ Quando si lanciano dei dadi, il risultato finale varia in base a due ordini di f
 Le possibili combinazioni dei dadi sono facilmente prevedibili, noto il numero delle facce e i valori che vi sono impressi.
 La combinazione che verrà effettivamente prodotta da un certo lancio di dadi è altrettanto deterministica, ma dipende da fattori molto più complessi, come il tempo per cui li si è agitati, della loro posizione al momento del lancio o l'angolo di impatto con il piano.
 Così come è impossibile che un lancio di dadi nel Backgammon produca un valore superiore a dodici, è impossibile che un dado, lanciato con una certa energia in una certa direzione adotti una traiettoria diversa da quella che gli impongono le Leggi della fisica.
-Noi non riusciamo a prevederla, ma questo non vuol dire che sia casuale.    
+Anche se non riusciamo a prevederla, non vuol dire che sia casuale.    
 Allo stesso modo, quando l'Uno primigenio “lancia” la sua energia nell'Universo, 
 è *onniscente*, perché conosce tutte le scelte che in precedenza si sono rivelate corrette e quelle che invece hanno prodotto del dolore; 
 è *benevolo*, perché spera di ottenere il miglior risultato possibile, evitando di ripetere gli sbagli già fatti;
@@ -631,7 +632,7 @@ Le regole che definiscono e quindi limitano la nostra esistenza sono come un edi
 I muri interni possono essere abbattuti o modificati, se necessario, ma i pilastri e le travi devono essere lasciati al loro posto.
 Similmente, la modifica delle regole può essere benefica, ma deve essere permessa solo a chi le conosce bene <!-- per esempio, Gesù --> perché un carpentiere maldestro portrebbe - per errore o per stupidità - rimuovere uno dei pilastri portanti mettendo in pericolo la solidità dell'edificio. <!-- per esempio, il Movimento del '68 -->  
 Per questi motivi, la modifica delle regole non può essere un'attività ammessa da chi le ha promulgate, anche se ne riconosce l'utilità, ma dev'essere un'attività clandestina, svolta da elementi sacrificabili, che possano fungere da capri espiatorii se qualcosa va male.  
-Non fu per ingenuità, che l'Altissimo concesse a Iblīs una proroga alla sua punizione<a href="/man/note#iblis" class="nota"></a> e non fu un caso se il Maestro Canaro non fu rispedito alla sua società dopo che, vittima dell'Annosa Dicotomia, cercò di contravvenire alle regole definite dall'Analista, ma fu invece aggiunto al gruppo degli angeli caduti.
+Non fu per ingenuità, che l'Altissimo concesse a Iblīs una proroga alla sua punizione<a href="/man/note#iblis" class="nota"></a> e non fu un caso se il Maestro Canaro venne aggiunto al gruppo degli angeli caduti, dopo che, vittima dell'Annosa Dicotomia, cercò di contravvenire alle regole definite dall'Analista.
 Se rifiuti le dissonanze, tutt'al più, puoi suonare il Blues; con le dissonanze, hai il Jazz.
 
 <hr id="livelli-esistenza">
@@ -640,9 +641,9 @@ Così come l'immagine di una stampa litografica o di una serigrafia esiste sia n
 Uno è ideale, simile alla dichiarazione della classe e definisce quale sia il nostro ruolo nell'esistenza: ciò che *possiamo* fare, ciò che *non possiamo* fare e ciò che *dovremmo* fare.
 L'altro livello è la nostra manifestazione reale, dovuta all'interazione dell'energia dell'Uno con gli spazioni.
 Questo livello è assimilabile all'istanza di una classe, che mette in atto ciò che nella dichiarazione era solo potenziale: *the hearts that break, the mess we make*, come dice la canzone<!-- Audition (The Fools Who Dream)</i> - dal film: La La Land -->.  
-La nostra entità ideale è unica e costante, mentre la nostra manifestazione reale è mutevole: come sai, uno stesso oggetto può essere allocato in aree differenti di memoria, in successive esecuzioni di un programma, così come una stessa stampa può essere riprodotta su supporti diversi.
+La nostra entità ideale è unica e costante, mentre la nostra manifestazione fisica è mutevole: come sai, uno stesso oggetto può essere allocato in aree differenti di memoria, in successive esecuzioni di un programma, così come una stessa stampa può essere riprodotta su supporti diversi.
 In questo ciclo di esistenza, il Maestro Canaro e il cane Lele sono stati un umano e un cane che correvano sulle colline intorno al lago di Bracciano, ma in altre esistenze potrebbero essere &mdash; o essere stati &mdash; altre persone e altri animali, in altri luoghi o addirittura in altri pianeti. 
-Il nostro livello ideale, infatti, non stabilisce *cosa* dobbiamo essere, ma quale debba essere il nostro contributo all'economia dell'Universo; la forma che assumiamo o il luogo in cui ci manifestiamo sono del tutto incidentali.  
+Il nostro livello ideale, infatti, non stabilisce cosa dobbiamo essere, ma quale debba essere il nostro contributo all'economia dell'Universo; la forma che assumiamo o il luogo in cui ci manifestiamo sono del tutto incidentali.  
 Per il C'hi++, come per l'Induismo<a href="/man/note#cogito" class="nota"></a>, la frase: “Cogito ergo sum” di Cartesio è insensata, perché ciò che cogita è l'istanza.
 Ciò che siamo realmente, la nostra essenza, si manifesta in ciò che facciamo istintivamente.
 
@@ -650,14 +651,6 @@ Ciò che siamo realmente, la nostra essenza, si manifesta in ciò che facciamo i
 <!--
 
 Visibilità delle classi.
-
-parlare degli operatori di cast 
-dynamic_cast <new_type> (expression)
-reinterpret_cast <new_type> (expression)
-static_cast <new_type> (expression)
-const_cast <new_type> (expression)
-
-
 
 
 -->
