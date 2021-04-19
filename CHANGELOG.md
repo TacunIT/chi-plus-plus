@@ -1,3 +1,37 @@
+## 0.22.12 (April 19, 2021)
+  - Revisione del testo del capitolo
+
+## 0.22.11 (April 18, 2021)
+  - Completata prima stesura del capitolo su classi e oggetti
+  - Rimosso il capitolo sugli oggetti.
+
+## 0.22.10 (April 14, 2021)
+  - Onnipotenza e libero arbitrio
+  - Revisione del MANIFEST
+
+## 0.22.9 (April 11, 2021)
+  - Revisione generale del testo
+  - Amore come costruttore e distruttore
+
+## 0.22.8 (April 07, 2021)
+  - Revisione del testo del capitolo
+
+## 0.22.7 (April 04, 2021)
+  - Rivisto il codice della classe Dio e iniziata sezione dottrina
+  - Revisione della chiusura della sezione tecnica
+
+## 0.22.6 (April 01, 2021)
+  - Spostato codice classe Dio nella sezione tecnica del capitolo
+
+## 0.22.5 (March 31, 2021)
+  - Redazione del testo del capitolo
+  - Convertite le i con accento circonflesso in ii
+  - Rivisto codice della classe anonima
+  - Rivista funzione printComandamenti
+
+## 0.22.4 (March 28, 2021)
+  - Dichiarazione della classe Dio
+
 ## 0.22.3 (March 26, 2021)
   - Completata prima stesura della sezione tecnica del capitolo sulle classi.
 
