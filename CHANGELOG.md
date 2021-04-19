@@ -1,3 +1,6 @@
+## 0.22.12 (April 19, 2021)
+  - Revisione del testo del capitolo
+
 ## 0.22.11 (April 18, 2021)
   - Completata prima stesura del capitolo su classi e oggetti
   - Rimosso il capitolo sugli oggetti.
