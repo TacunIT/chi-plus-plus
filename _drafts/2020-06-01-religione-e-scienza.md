@@ -14,10 +14,12 @@ I non credenti trattano spesso i fedeli come fratelli minori che credono ancora 
 Rifiutano le accettazioni per fede e contestano la non comprovabilità scientifica dei precetti religiosi.
 Fanno bene: dobbiamo sempre mettere in discussione i princip&icirc; sui quali basiamo le nostre convinzioni; purtroppo, però, le leggi che regolano la vita dei non credenti sono dogmatiche e incerte come quelle dei fedeli.
 
-<!--
-Secondo l'etimologia classica, il termine: "religione" deriva dal latino *relegere*, e denota interesse e riguardosa considerazione per il numinoso; la derivazione di *religio* da *religare* (legare a qualcosa) è dovuta ai Padri della Chiesa.
 
--->
+La filosofia é il *reverse engineering* dell'Universo.
+L'analisi del sistema può avvenire a più livelli, dall'interfaccia utente al codice binario.
+Analizzare a livelli bassi è più difficile e porta tutt'al più alla conoscenza delle meccaniche di funzionamento, non delle regole di business.
+
+@todo Potere educativo della letteratura in confronto alla filosofia. - cfr Simpson, 243 e Nussbaum citato
 
 ---
 
