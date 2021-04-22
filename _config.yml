@@ -45,8 +45,8 @@ collections:
             - istruzioni-condizionali.md
             - istruzioni-iterative.md
             - classi-oggetti.md
-            - polimorfismo.md
             - ereditarieta.md
+            - polimorfismo.md
             - debug.md
             - chi-plus-plus.md
             - cosmogonia.md
