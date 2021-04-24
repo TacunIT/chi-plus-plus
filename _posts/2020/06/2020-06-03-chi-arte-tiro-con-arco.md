@@ -5,7 +5,7 @@ category: log
 tags:     [Spazionismo, Buddismo, Ananda, ]
 ---
 
-Riguardando il saggio sul Buddismo in *Tempo ed Eternità* di Ananda K., la distinzione fra ciò che è temporaneo e mortale e ciò che non lo è; fra chi è *illuminato* e chi non lo è, presuppone due stati diversi di esistenza, ma compenetrati.
+Riguardando il saggio sul Buddismo in *Tempo ed Eternità* di Ananda K., notavo che la distinzione fra ciò che è temporaneo e mortale e ciò che non lo è; fra chi è *illuminato* e chi non lo è, presuppone due stati diversi di esistenza, ma compenetrati.
 
 Per esempio, a pag. 42, quando si dice che la freccia scoccata *diventa* il bersaglio, si assume che una cosa sia la freccia, una cosa sia il bersaglio, sia in termini pratici che metafisici.
 
