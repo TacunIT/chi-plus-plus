@@ -67,17 +67,89 @@
 
             <section id="testo">
 
-                <p>L’ereditariaretà è il principale punto di forza del C++.</p>
+                <p>L’ereditariaretà, ovvero la possibilità di creare delle genealogie di classi, è il principale punto di forza del C++.</p>
+
+<p>Come abbiamo visto nella <a href="/man/classi-oggetti#dottrina" class="xref">lezione precedente</a>, una ipotetica classe <code>Pesce</code> dovrà avere attributi differenti a seconda dell’utilizzo che se ne deve fare.</p>
+
+<pre><code>/** 
+ * @file ereditarieta-pesce-alimentare.cpp
+ * Definizione della classe Pesce per utilizzo alimentare.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;ctime&gt; 
+
+using namespace std;
+
+class Pesce {
+private:
+
+    /** Dati membro privati */
+    bool   _commestibile;
+    string _specie;
+    int    _peso;
+    float  _prezzo;
+    time_t _data_cattura;  
+    string _area_pesca; 
+    
+public:
+    
+    /** Costruttore della classe inline */
+    Pesce(const char* specie, int peso) 
+    : _specie(specie), _peso(peso)
+    {
+        /** Auspicabilmente.. */
+        _commestibile = true;
+    }
+    
+    /** Distruttore inline */
+    ~Pesce() { 
+    }
+
+    /** Funzioni di interfaccia */
+    void setPeso(int peso);
+    void setPrezzo(float prezzo);
+    void setCattura(short anno, short mese, short giorno);
+    void setAreaPesca(const char* area_pesca);
+
+    /** Funzioni di interfaccia inline */
+    const char* getAreaPesca()   { return _area_pesca.c_str(); }
+    const char* getSpecie()      { return _specie.c_str(); }
+    bool        isCommestibile() { return _commestibile; }
+    time_t      getDataCattura() { return _data_cattura; }
+    int         getPeso()        { return _prezzo; }
+    float       getPrezzo()      { return _peso; }
+    
+};
+
+</code></pre>
+
+<p>L’ereditarietà può essere o <em>singola</em> o <em>multipla</em>, a seconda che la nuova classe erediti le caratteristiche da una o più classi preesistenti:</p>
+
+<pre><code>class Figlio : public Mamma
+{
+    /** Ereditarietà singola */
+};
+
+class Figlio : public Mamma, private Papa
+{
+    /** Ereditarietà singola */
+};
+</code></pre>
+
+<p>Non è permesso (né sensato) che una classe erediti due volte dalla stessa classe base:</p>
+
+<pre><code>class Errore : public Mamma : public Mamma
+{
+	...
+};
+</code></pre>
+
+<p>Le classi <code>Mamma</code> e <code>Papa</code> possono essere definite: <em>classi base</em> o <em>sottoclassi</em> o <em>classi fondamentali</em> o <em>sotto-tipi</em>; la classe <code>Figlio</code> può essere chiamata o <em>classe derivata</em> o <em>superclasse</em> o <em>supertipo</em>.</p>
 
 <!--
-L'ereditarietà può essere o singola o multipla.
 
-Le classi del C++, per quanto duttili, non possono descrivere dei concetti astratti come: amore, arte o Dio.
-Come potrebbe essere, una classe Dio?
-
-Quando una nuova classe deriva da un'unica classe base, l'ereditarietà
-viene detta singola; se invece una classe deriva da due o più classi
-base, l'ereditarietà viene detta multipla. 
+Questo vuol dire che se dovessi scrivere un programma *non banale* che gestisca la vendita o lo studio dei pesci, dovrai utilizzare o delle classi `Pesce` con caratteristiche differenti o un'unica classe `Pesce` che abbia più funzioni di quelle che serv
 
 Alcuni linguaggi di programmazione permettono solo l'ereditarietà
 singola; il C++ permette entrambe le tipologie.
