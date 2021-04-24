@@ -7,18 +7,44 @@ permalink:  /man/ereditarieta
 quote:      "We few, we happy few<br />We bunch of data"
 ---
 
-L'ereditariaretà è il principale punto di forza del C++.
+L'ereditariaretà, ovvero la possibilità di creare delle genealogie di classi, è il principale punto di forza del C++.
+
+Come abbiamo visto nella <a href="/man/classi-oggetti#dottrina" class="xref">lezione precedente</a>, una ipotetica classe `Pesce` dovrà avere attributi differenti a seconda dell'utilizzo che se ne deve fare.
+
+```
+{% include_relative src/ereditarieta-pesce-alimentare.cpp %}
+```
+
+L'ereditarietà può essere o *singola* o *multipla*, a seconda che la nuova classe erediti le caratteristiche da una o più classi preesistenti:
+
+```
+class Figlio : public Mamma
+{
+    /** Ereditarietà singola */
+};
+
+class Figlio : public Mamma, private Papa
+{
+    /** Ereditarietà singola */
+};
+```
+
+Non è permesso (né sensato) che una classe erediti due volte dalla stessa classe base:
+
+```
+class Errore : public Mamma : public Mamma
+{
+	...
+};
+```
+
+Le classi `Mamma` e `Papa` possono essere definite: *classi base* o *sottoclassi* o *classi fondamentali* o *sotto-tipi*; la classe `Figlio` può essere chiamata o *classe derivata* o *superclasse* o *supertipo*.
+
 
 
 <!--
-L'ereditarietà può essere o singola o multipla.
 
-Le classi del C++, per quanto duttili, non possono descrivere dei concetti astratti come: amore, arte o Dio.
-Come potrebbe essere, una classe Dio?
-
-Quando una nuova classe deriva da un'unica classe base, l'ereditarietà
-viene detta singola; se invece una classe deriva da due o più classi
-base, l'ereditarietà viene detta multipla. 
+Questo vuol dire che se dovessi scrivere un programma *non banale* che gestisca la vendita o lo studio dei pesci, dovrai utilizzare o delle classi `Pesce` con caratteristiche differenti o un'unica classe `Pesce` che abbia più funzioni di quelle che serv
 
 Alcuni linguaggi di programmazione permettono solo l'ereditarietà
 singola; il C++ permette entrambe le tipologie.
