@@ -52,6 +52,7 @@ collections:
             - cosmogonia.md
             - estetica.md
             - epilogo.md
+            - ringraziamenti.md
     opt:
         output: true
         order:
