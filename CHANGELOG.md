@@ -1,3 +1,11 @@
+## 0.23.0 (April 25, 2021)
+  - Codice di esempio per la classe Pesce
+  - Iniziata redazione capitolo sull'ereditarietà
+  - Configurata la directory _post per gestire il log del sistema
+  - Aggiunta pagina ringraziamenti a manuale. 
+  - Fatta pulizia di file obsoleti.
+  - Invertiti i capitoli su ereditarietà e polimorfismo
+
 ## 0.22.12 (April 19, 2021)
   - Revisione del testo del capitolo
 
