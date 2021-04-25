@@ -69,37 +69,73 @@
 
                 <p>L’ereditariaretà, ovvero la possibilità di creare delle genealogie di classi, è il principale punto di forza del C++.</p>
 
-<p>Come abbiamo visto nella <a href="/man/classi-oggetti#dottrina" class="xref">lezione precedente</a>, una ipotetica classe <code>Pesce</code> dovrà avere attributi differenti a seconda dell’utilizzo che se ne deve fare.</p>
+<p>Come abbiamo visto nella <a href="/man/classi-oggetti#dottrina" class="xref">lezione precedente</a>, una ipotetica classe <code>Pesce</code> dovrà avere attributi differenti a seconda dell’utilizzo che se ne deve fare.
+In un linguaggio come il <em>C</em>, che non permette l’E., quindi, si dovranno prevedere due strutture di dati differenti per ciascun caso:</p>
+
+<pre><code>enum Acqua  { dolce, salata };
+enum Sesso  { maschio, femmina };
+enum Colore { rosso, blu, verde, argento };
+
+struct PesceAlimentare {
+    Sesso  _sesso;
+    char*  _specie;
+    float  _prezzo;
+    time_t _data_cattura;  
+    int    _peso;
+    bool   _commestibile;
+    char*  _area_pesca; 
+    ...
+};
+
+struct  PesceAcquario {
+    Sesso  _sesso;
+    char*  _specie;
+    float  _prezzo;
+    time_t _data_acquisto;  
+    Colore _colore;
+    Acqua  _acqua;
+    ...
+};
+</code></pre>
+<p>e funzioni differenti per la gestione dei dati:</p>
+
+<pre><code>void gestisciPesceAlimentare(struct PesceAlimentare&amp; pesce);
+void gestisciPesceAcquario(struct PesceEcologista&amp; pesce);
+</code></pre>
+
+<p>Questo vuol dire che se hai già scritto (e verificato, corretto e collaudato) un programma di gestione per un pescivendolo, per poterlo trasformare in un programma di gestione per un negozio che vende acquarii, dovrai riscrivere (e ri-verificare, ri-correggere e collaudare) tutto il codice, anche se parte dei dati da considerare sono gli stessi.<br />
+L’E., al contrario, ti permette di isolare in una classe le caratteristiche comuni a tutti e due i contesti e di <em>derivare</em> da questa classe di base due classi specializzate:</p>
 
 <pre><code>/** 
- * @file ereditarieta-pesce-alimentare.cpp
- * Definizione della classe Pesce per utilizzo alimentare.
+ * @file ereditarieta-pesce.cpp
+ * Definizione della classe Pesce e delle sue classi derivate.
  */
  
 #include &lt;iostream&gt;
+#include &lt;string&gt;
 #include &lt;ctime&gt; 
 
 using namespace std;
 
-class Pesce {
-private:
+enum Acqua  { dolce, salata };
+enum Sesso  { maschio, femmina };
+enum Colore { rosso, blu, verde, argento };
 
+class Pesce {
+protected:
+    
     /** Dati membro privati */
-    bool   _commestibile;
-    string _specie;
-    int    _peso;
+    Sesso  _sesso;
     float  _prezzo;
-    time_t _data_cattura;  
-    string _area_pesca; 
-    
+    string _specie;
+    bool   _commestibile;
+
 public:
-    
+
     /** Costruttore della classe inline */
-    Pesce(const char* specie, int peso) 
-    : _specie(specie), _peso(peso)
+    Pesce(Sesso sesso, float prezzo, const char* specie) 
+    : _sesso(sesso), _prezzo(prezzo), _specie(specie)
     {
-        /** Auspicabilmente.. */
-        _commestibile = true;
     }
     
     /** Distruttore inline */
@@ -107,22 +143,65 @@ public:
     }
 
     /** Funzioni di interfaccia */
-    void setPeso(int peso);
+    void setSesso(Sesso sesso);
     void setPrezzo(float prezzo);
-    void setCattura(short anno, short mese, short giorno);
-    void setAreaPesca(const char* area_pesca);
+    void setSpecie(const char* specie);
 
     /** Funzioni di interfaccia inline */
-    const char* getAreaPesca()   { return _area_pesca.c_str(); }
-    const char* getSpecie()      { return _specie.c_str(); }
-    bool        isCommestibile() { return _commestibile; }
-    time_t      getDataCattura() { return _data_cattura; }
-    int         getPeso()        { return _prezzo; }
-    float       getPrezzo()      { return _peso; }
+    string getSpecie() { return _specie.c_str(); }
+    float  getPrezzo() { return _prezzo;  }
+    Sesso  getSesso()  { return _sesso; }
+    bool   getCommestibile() { return _commestibile; }
+    void   setCommestibile(bool commestibile) { 
+        _commestibile = commestibile; 
+    }
+
+};
+
+class PesceAlimentare : public Pesce {
+private:
     
+    /** Dati privati della classe */
+    time_t _data_cattura;  
+    string _area_pesca; 
+
+public:
+
+    /** Costruttore della classe inline */
+    PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
+    : Pesce(sesso, prezzo, specie)
+    {
+        /** Auspicabilmente.. */
+        _commestibile = true;
+    }
+
+    ...
+};
+
+class PesceAcqario : public Pesce {
+private:
+    
+    /** Dati privati della classe */
+    time_t _data_acquisto;  
+    Colore _colore;
+    Acqua  _acqua;
+
+public:
+    
+    /** Costruttore della classe inline */
+    PesceAcqario(Sesso sesso, float prezzo, const char* specie) 
+    : Pesce(sesso, prezzo, specie)
+    {
+    } 
+    
+    ...
 };
 
 </code></pre>
+
+<p>Questo approccio ha due lati positivi: il primo è che non sarà necessario ripetere le fasi di test, debug e collaudo per le funzioni comuni ai due sistemi, perché saranno state già verificate durante lo sviluppo del primo sistema; il secondo è che, riutilizzando parte del codice, sarà possibile identificare e correggere eventuali errori sfuggiti alla prima fase di test o migliorare il comportamento delle funzioni comuni, con benefici per entrambi i sistemi.</p>
+
+<hr id="tipi" />
 
 <p>L’ereditarietà può essere o <em>singola</em> o <em>multipla</em>, a seconda che la nuova classe erediti le caratteristiche da una o più classi preesistenti:</p>
 
