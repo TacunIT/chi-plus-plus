@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Il C'hi++
 permalink:  /man/chi-plus-plus
-quote:      Non è necessario che crediate in Dio, ma dovete credere nel Codice
+quote:      "Da dove questa applicazione sia sorta, se lui l’ha fondata oppure no: lui che la sorveglia nel più alto dei cieli, lui solo lo sa, o forse non lo sa"
 ---
 
 Il C\'hi++ è allo stesso tempo un linguaggio di programmazione, un atteggiamento mentale e un modo di vivere.

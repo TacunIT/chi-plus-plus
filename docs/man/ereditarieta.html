@@ -103,8 +103,8 @@ struct  PesceAcquario {
 void gestisciPesceAcquario(struct PesceEcologista&amp; pesce);
 </code></pre>
 
-<p>Questo vuol dire che se hai già scritto (e verificato, corretto e collaudato) un programma di gestione per un pescivendolo, per poterlo trasformare in un programma di gestione per un negozio che vende acquarii, dovrai riscrivere (e ri-verificare, ri-correggere e collaudare) tutto il codice, anche se parte dei dati da considerare sono gli stessi.<br />
-L’E., al contrario, ti permette di isolare in una classe le caratteristiche comuni a tutti e due i contesti e di <em>derivare</em> da questa classe di base due classi specializzate:</p>
+<p>Questo vuol dire che se hai già scritto (e verificato, corretto e collaudato) un programma di gestione per un pescivendolo, per poterlo trasformare in un programma di gestione per la vendita di pesci da acquario, dovrai riscrivere (e ri-verificare, ri-correggere e collaudare) tutto il codice, anche se parte dei dati da considerare sono gli stessi.<br />
+L’ereditariaretà, al contrario, ti permette di isolare in una classe le caratteristiche comuni a tutti e due i contesti e di <em>derivare</em> da questa classe di base due classi specializzate:</p>
 
 <pre><code>/** 
  * @file ereditarieta-pesce.cpp
@@ -122,6 +122,10 @@ enum Sesso  { maschio, femmina };
 enum Colore { rosso, blu, verde, argento };
 
 class Pesce {
+private:
+            
+    static int _n_pesci;
+                        
 protected:
     
     /** Dati membro privati */
@@ -136,10 +140,12 @@ public:
     Pesce(Sesso sesso, float prezzo, const char* specie) 
     : _sesso(sesso), _prezzo(prezzo), _specie(specie)
     {
+        _n_pesci++;
     }
     
     /** Distruttore inline */
     ~Pesce() { 
+        _n_pesci--;
     }
 
     /** Funzioni di interfaccia */
@@ -158,6 +164,8 @@ public:
 
 };
 
+int Pesce::_n_pesci = 0 ;
+
 class PesceAlimentare : public Pesce {
 private:
     
@@ -175,7 +183,7 @@ public:
         _commestibile = true;
     }
 
-    ...
+    //...
 };
 
 class PesceAcqario : public Pesce {
@@ -194,7 +202,7 @@ public:
     {
     } 
     
-    ...
+    //...
 };
 
 </code></pre>
@@ -203,7 +211,7 @@ public:
 
 <hr id="tipi" />
 
-<p>L’ereditarietà può essere o <em>singola</em> o <em>multipla</em>, a seconda che la nuova classe erediti le caratteristiche da una o più classi preesistenti:</p>
+<p>L’ereditarietà, nel C++, può essere o <em>singola</em> o <em>multipla</em>, a seconda che la nuova classe erediti le caratteristiche da una o più classi preesistenti:</p>
 
 <pre><code>class Figlio : public Mamma
 {
@@ -216,7 +224,7 @@ class Figlio : public Mamma, private Papa
 };
 </code></pre>
 
-<p>Non è permesso (né sensato) che una classe erediti due volte dalla stessa classe base:</p>
+<p>Al contrario, non è permesso (né sensato) che una classe erediti due volte dalla stessa classe base:</p>
 
 <pre><code>class Errore : public Mamma : public Mamma
 {
@@ -228,10 +236,6 @@ class Figlio : public Mamma, private Papa
 
 <!--
 
-Questo vuol dire che se dovessi scrivere un programma *non banale* che gestisca la vendita o lo studio dei pesci, dovrai utilizzare o delle classi `Pesce` con caratteristiche differenti o un'unica classe `Pesce` che abbia più funzioni di quelle che serv
-
-Alcuni linguaggi di programmazione permettono solo l'ereditarietà
-singola; il C++ permette entrambe le tipologie.
 
 Data una classe: `umano` si possono ridefinire gli operatori di relazione per capire se un oggetto sia piò o meno ricco o più o meno giovane di un altro, ma sarebbe estremamente complesso scrivere una funzione che permetta di capire se un oggetto sia più o meno amato da un altro.
 Nel caso di oggetti che hanno una linea genealogica comune, la funzione potrebbe basarsi, come dice Dawkins, sulla percentuale di DNA che i due oggetti condividono, moltiplicata per il tempo passato insieme, tenendo conto anche di com'è stato quel tempo, ma nel caso di due oggetti che appartengono a genealogie differenti, quale sarebbe l'algoritmo?

@@ -14,6 +14,10 @@ enum Sesso  { maschio, femmina };
 enum Colore { rosso, blu, verde, argento };
 
 class Pesce {
+private:
+            
+    static int _n_pesci;
+                        
 protected:
     
     /** Dati membro privati */
@@ -28,10 +32,12 @@ public:
     Pesce(Sesso sesso, float prezzo, const char* specie) 
     : _sesso(sesso), _prezzo(prezzo), _specie(specie)
     {
+        _n_pesci++;
     }
     
     /** Distruttore inline */
     ~Pesce() { 
+        _n_pesci--;
     }
 
     /** Funzioni di interfaccia */
@@ -50,6 +56,8 @@ public:
 
 };
 
+int Pesce::_n_pesci = 0 ;
+
 class PesceAlimentare : public Pesce {
 private:
     
@@ -67,7 +75,7 @@ public:
         _commestibile = true;
     }
 
-    ...
+    //...
 };
 
 class PesceAcqario : public Pesce {
@@ -86,5 +94,5 @@ public:
     {
     } 
     
-    ...
+    //...
 };
