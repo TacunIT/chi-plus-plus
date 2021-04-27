@@ -1,3 +1,6 @@
+## 0.23.1 (April 27, 2021)
+  - Esempio della visibilità delle classi derivate
+
 ## 0.23.0 (April 25, 2021)
   - Codice di esempio per la classe Pesce
   - Iniziata redazione capitolo sull'ereditarietà
