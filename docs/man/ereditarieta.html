@@ -232,9 +232,106 @@ class Figlio : public Mamma, private Papa
 };
 </code></pre>
 
-<p>Le classi <code>Mamma</code> e <code>Papa</code> possono essere definite: <em>classi base</em> o <em>sottoclassi</em> o <em>classi fondamentali</em> o <em>sotto-tipi</em>; la classe <code>Figlio</code> può essere chiamata o <em>classe derivata</em> o <em>superclasse</em> o <em>supertipo</em>.</p>
+<p>Le classi <code>Mamma</code> e <code>Papa</code> possono essere definite: <em>classi base</em> o <em>sottoclassi</em> o <em>classi fondamentali</em> o <em>sotto-tipi</em>; la classe <code>Figlio</code> può essere chiamata o <em>classe derivata</em> o <em>superclasse</em> o <em>supertipo</em>.<br />
+L’istruzione:</p>
+
+<pre><code>class PesceAlimentare : public Pesce {
+    ...
+};
+</code></pre>
+<p>dichiara la classe <code>PesceAlimentare</code> come classe derivata dalla classe <code>Pesce</code>.
+Lo specificatore di accesso fra i nomi delle due classi definisce la visibilità dei dati della classe base all’interno della classe figlia:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code>public</code></td>
+      <td>i membri <code>public</code> e <code>protected</code> della classe base mantengono la loro visibilità anche nella classe derivata</td>
+    </tr>
+    <tr>
+      <td><code>protected</code></td>
+      <td>i membri <code>public</code> e <code>protected</code> della classe base sono ereditati come membri protetti della classe derivata</td>
+    </tr>
+    <tr>
+      <td><code>private</code></td>
+      <td>i membri <code>public</code> e <code>protected</code> della classe base sono ereditati come membri privati della classe derivata</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In tutti i casi, i membri <code>private</code> della classe base non sono visibili alle classi derivate, a meno che queste non siano dichiarate come <code>friend</code>.<br />
+In mancanza di un qualificatore di accesso, il compilatore considera privati tutti i dati di una classe dichiarata con la parola chiave <code>class</code> e pubblici tutti i dati di una classe dichiarata con la parola chiave <code>struct</code>:</p>
+
+<pre><code>/** 
+ * @file ereditarieta-accesso.cpp
+ * Accesso ai membri della classe base dalle classi derivate.
+ */
+ 
+/** Classe base, dati membro pubblici */ 
+struct Mamma { 
+    int a;
+};
+
+/** Classe derivata come struct: dati per default pubblici */
+struct Figlia : Mamma {
+    int b;
+};
+
+/** Classe derivata come class: dati per default privati */
+class Figlio : Mamma {
+    int c;
+};
+
+/** Funzione generica, non friend delle classi */
+void funz(Figlia&amp; figlia, Figlio&amp; figlio)
+{
+    figlia.a++;
+    figlio.a++;    
+}
+
+</code></pre>
+
+<p>Se compili questo codice, ottieni un messaggio di errore:</p>
+
+<pre><code>&gt; g++ src/cpp/ereditarieta-accesso.cpp -c -o src/out/esempio
+src/cpp/ereditarieta-accesso.cpp:25:5: error: cannot cast 'Figlio' to its private base class
+      'Mamma'
+    figlio.a++;    
+    ^
+src/cpp/ereditarieta-accesso.cpp:17:16: note: implicitly declared private here
+class Figlio : Mamma {
+               ^~~~~
+src/cpp/ereditarieta-accesso.cpp:25:12: error: 'a' is a private member of 'Mamma'
+    figlio.a++;    
+           ^
+src/cpp/ereditarieta-accesso.cpp:17:16: note: constrained by implicitly private inheritance here
+class Figlio : Mamma {
+               ^~~~~
+src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared here
+    int a;
+        ^
+2 errors generated.
+</code></pre>
 
 <!--
+
+private:
+    
+    /** Dati privati della classe */
+    time_t _data_cattura;  
+    string _area_pesca; 
+
+public:
+
+    /** Costruttore della classe inline */
+    PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
+    : Pesce(sesso, prezzo, specie)
+    {
+        /** Auspicabilmente.. */
+        _commestibile = true;
+    }
+
+    //...
 
 
 Data una classe: `umano` si possono ridefinire gli operatori di relazione per capire se un oggetto sia piò o meno ricco o più o meno giovane di un altro, ma sarebbe estremamente complesso scrivere una funzione che permetta di capire se un oggetto sia più o meno amato da un altro.
@@ -244,6 +341,10 @@ Forse come classi astratte
 
 Classi astratte, funzioni virtuali e virtuali pure.
 
+
+Le figure mitiche, è vero, nascono e trapassano, ma non proprio come noi mortali. Hanno bisogno di denominazioni caratteristiche, come quella di «Re nel Passato e nel Futuro». Sono esistite in passato? Allora sono esistite ancor prima, o esisteranno ancora, con altri nomi, sotto altri aspetti, proprio come il cielo ci riporta in eterno le sue configurazioni. Se si cercasse di definirle con precisione come persone e cose, sicuramente svanirebbero ai nostri occhi, quanto i frutti di una fantasia malata. Ma se si rispetta la loro vera natura, riveleranno questa natura come funzioni.
+
+de Santillana, Giorgio; von Dechend, Hertha. Il mulino di Amleto (Italian Edition) . Adelphi. Kindle Edition. 
 -->
 
 
