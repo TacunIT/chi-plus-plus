@@ -79,11 +79,71 @@ class Errore : public Mamma : public Mamma
 };
 ```
 
-Le classi `Mamma` e `Papa` possono essere definite: *classi base* o *sottoclassi* o *classi fondamentali* o *sotto-tipi*; la classe `Figlio` può essere chiamata o *classe derivata* o *superclasse* o *supertipo*.
+Le classi `Mamma` e `Papa` possono essere definite: *classi base* o *sottoclassi* o *classi fondamentali* o *sotto-tipi*; la classe `Figlio` può essere chiamata o *classe derivata* o *superclasse* o *supertipo*.  
+L'istruzione:
 
+```
+class PesceAlimentare : public Pesce {
+    ...
+};
+```
+dichiara la classe `PesceAlimentare` come classe derivata dalla classe `Pesce`.
+Lo specificatore di accesso fra i nomi delle due classi definisce la visibilità dei dati della classe base all'interno della classe figlia:
 
+|:--:|:--|
+|`public`| i membri `public` e `protected` della classe base mantengono la loro visibilità anche nella classe derivata |
+|`protected`| i membri `public` e `protected` della classe base sono ereditati come membri protetti della classe derivata |
+|`private`| i membri `public` e `protected` della classe base sono ereditati come membri privati della classe derivata |
+
+In tutti i casi, i membri `private` della classe base non sono visibili alle classi derivate, a meno che queste non siano dichiarate come `friend`.  
+In mancanza di un qualificatore di accesso, il compilatore considera privati tutti i dati di una classe dichiarata con la parola chiave `class` e pubblici tutti i dati di una classe dichiarata con la parola chiave `struct`:
+
+```
+{% include_relative src/ereditarieta-accesso.cpp %}
+```
+
+Se compili questo codice, ottieni un messaggio di errore:
+
+```
+> g++ src/cpp/ereditarieta-accesso.cpp -c -o src/out/esempio
+src/cpp/ereditarieta-accesso.cpp:25:5: error: cannot cast 'Figlio' to its private base class
+      'Mamma'
+    figlio.a++;    
+    ^
+src/cpp/ereditarieta-accesso.cpp:17:16: note: implicitly declared private here
+class Figlio : Mamma {
+               ^~~~~
+src/cpp/ereditarieta-accesso.cpp:25:12: error: 'a' is a private member of 'Mamma'
+    figlio.a++;    
+           ^
+src/cpp/ereditarieta-accesso.cpp:17:16: note: constrained by implicitly private inheritance here
+class Figlio : Mamma {
+               ^~~~~
+src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared here
+    int a;
+        ^
+2 errors generated.
+```
 
 <!--
+
+private:
+    
+    /** Dati privati della classe */
+    time_t _data_cattura;  
+    string _area_pesca; 
+
+public:
+
+    /** Costruttore della classe inline */
+    PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
+    : Pesce(sesso, prezzo, specie)
+    {
+        /** Auspicabilmente.. */
+        _commestibile = true;
+    }
+
+    //...
 
 
 Data una classe: `umano` si possono ridefinire gli operatori di relazione per capire se un oggetto sia piò o meno ricco o più o meno giovane di un altro, ma sarebbe estremamente complesso scrivere una funzione che permetta di capire se un oggetto sia più o meno amato da un altro.
@@ -93,4 +153,8 @@ Forse come classi astratte
 
 Classi astratte, funzioni virtuali e virtuali pure.
 
+
+Le figure mitiche, è vero, nascono e trapassano, ma non proprio come noi mortali. Hanno bisogno di denominazioni caratteristiche, come quella di «Re nel Passato e nel Futuro». Sono esistite in passato? Allora sono esistite ancor prima, o esisteranno ancora, con altri nomi, sotto altri aspetti, proprio come il cielo ci riporta in eterno le sue configurazioni. Se si cercasse di definirle con precisione come persone e cose, sicuramente svanirebbero ai nostri occhi, quanto i frutti di una fantasia malata. Ma se si rispetta la loro vera natura, riveleranno questa natura come funzioni.
+
+de Santillana, Giorgio; von Dechend, Hertha. Il mulino di Amleto (Italian Edition) . Adelphi. Kindle Edition. 
 -->
