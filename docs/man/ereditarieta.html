@@ -240,27 +240,30 @@ L’istruzione:</p>
 };
 </code></pre>
 <p>dichiara la classe <code>PesceAlimentare</code> come classe derivata dalla classe <code>Pesce</code>.
-Lo specificatore di accesso fra i nomi delle due classi definisce la visibilità dei dati della classe base all’interno della classe figlia:</p>
+Lo <a href="/man/classi-oggetti#specificatori-accesso" class="xref">specificatore di accesso</a> fra i nomi delle due classi definisce la visibilità dei dati della classe base all’interno della classe figlia:</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td><code>public</code></td>
-      <td>i membri <code>public</code> e <code>protected</code> della classe base mantengono la loro visibilità anche nella classe derivata</td>
-    </tr>
-    <tr>
-      <td><code>protected</code></td>
-      <td>i membri <code>public</code> e <code>protected</code> della classe base sono ereditati come membri protetti della classe derivata</td>
-    </tr>
-    <tr>
-      <td><code>private</code></td>
-      <td>i membri <code>public</code> e <code>protected</code> della classe base sono ereditati come membri privati della classe derivata</td>
-    </tr>
-  </tbody>
-</table>
+<pre><code>class B : public A
+{
+    // tutti i membri di A mantengono 
+    // in B la loro visibilità originale 
+};
 
-<p>In tutti i casi, i membri <code>private</code> della classe base non sono visibili alle classi derivate, a meno che queste non siano dichiarate come <code>friend</code>.<br />
-In mancanza di un qualificatore di accesso, il compilatore considera privati tutti i dati di una classe dichiarata con la parola chiave <code>class</code> e pubblici tutti i dati di una classe dichiarata con la parola chiave <code>struct</code>:</p>
+class B : protected A
+{
+    // tutti i membri public di A diventano membri 
+    // protected di B; i membri protected e private 
+    // mantengono la loro visibilità originale
+};
+
+class B : private A	
+{
+    // tutti i membri di A, quale che sia la loro 
+    // visibilità, diventano membri private di B;
+};
+
+</code></pre>
+
+<p>In mancanza di un qualificatore di accesso, il compilatore considera privati tutti i dati di una classe dichiarata con la parola chiave <code>class</code> e pubblici tutti i dati di una classe dichiarata con la parola chiave <code>struct</code>:</p>
 
 <pre><code>/** 
  * @file ereditarieta-accesso.cpp
@@ -294,45 +297,48 @@ void funz(Figlia&amp; figlia, Figlio&amp; figlio)
 <p>Se compili questo codice, ottieni un messaggio di errore:</p>
 
 <pre><code>&gt; g++ src/cpp/ereditarieta-accesso.cpp -c -o src/out/esempio
-src/cpp/ereditarieta-accesso.cpp:25:5: error: cannot cast 'Figlio' to its private base class
+src/cpp/ereditarieta-accesso.cpp:25:5: error: cannot cast 'Figlio' 
+    to its private base class
       'Mamma'
     figlio.a++;    
     ^
-src/cpp/ereditarieta-accesso.cpp:17:16: note: implicitly declared private here
+src/cpp/ereditarieta-accesso.cpp:17:16: note: implicitly declared 
+    private here
 class Figlio : Mamma {
                ^~~~~
-src/cpp/ereditarieta-accesso.cpp:25:12: error: 'a' is a private member of 'Mamma'
+src/cpp/ereditarieta-accesso.cpp:25:12: error: 'a' is a private 
+    member of 'Mamma'
     figlio.a++;    
            ^
-src/cpp/ereditarieta-accesso.cpp:17:16: note: constrained by implicitly private inheritance here
+src/cpp/ereditarieta-accesso.cpp:17:16: note: constrained by 
+    implicitly private inheritance here
 class Figlio : Mamma {
                ^~~~~
-src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared here
+src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared 
+    here
     int a;
         ^
 2 errors generated.
 </code></pre>
 
+<hr id="costruttore" />
+
+<p>Questa è la dichiarazione del costruttore della classe derivata <code>PesceAlimentare</code>:</p>
+
+<pre><code>PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
+: Pesce(sesso, prezzo, specie) {
+    _commestibile = true;
+}
+</code></pre>
+
+<p>La seconda linea è la <i id="lista-inizializzazione">lista di inizializzazione</i> della classe e serve a inizializzare i dati della o delle classi base.
+L’utilizzo del costruttore della classe base per l’inizializzazione dei dati comuni permette di ottenere un <a href="/man/struttura-dei-programmi#coupling" class="xref">low coupling</a> fra classe base e classe derivata.
+In questo modo, se  si dovesse modificare l’implementazione interna del costruttore della classe base, non ci sarebbe bisogno di dover modificare il codice delle sue classi de­rivate.<br />
+L’istruzione nel corpo del costruttore serve a inizializzare il membro <code>_commestibile</code>, che nel caso dei pesci destinati a uso alimentare, sarà sempre <code>true</code>, almeno nominalmente.</p>
+
 <!--
 
-private:
-    
-    /** Dati privati della classe */
-    time_t _data_cattura;  
-    string _area_pesca; 
-
-public:
-
-    /** Costruttore della classe inline */
-    PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
-    : Pesce(sesso, prezzo, specie)
-    {
-        /** Auspicabilmente.. */
-        _commestibile = true;
-    }
-
-    //...
-
+esempio con parametri differenti fra base e derivata
 
 Data una classe: `umano` si possono ridefinire gli operatori di relazione per capire se un oggetto sia piò o meno ricco o più o meno giovane di un altro, ma sarebbe estremamente complesso scrivere una funzione che permetta di capire se un oggetto sia più o meno amato da un altro.
 Nel caso di oggetti che hanno una linea genealogica comune, la funzione potrebbe basarsi, come dice Dawkins, sulla percentuale di DNA che i due oggetti condividono, moltiplicata per il tempo passato insieme, tenendo conto anche di com'è stato quel tempo, ma nel caso di due oggetti che appartengono a genealogie differenti, quale sarebbe l'algoritmo?
