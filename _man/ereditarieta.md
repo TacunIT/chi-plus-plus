@@ -88,14 +88,30 @@ class PesceAlimentare : public Pesce {
 };
 ```
 dichiara la classe `PesceAlimentare` come classe derivata dalla classe `Pesce`.
-Lo specificatore di accesso fra i nomi delle due classi definisce la visibilità dei dati della classe base all'interno della classe figlia:
+Lo <a href="/man/classi-oggetti#specificatori-accesso" class="xref">specificatore di accesso</a> fra i nomi delle due classi definisce la visibilità dei dati della classe base all'interno della classe figlia:
 
-|:--:|:--|
-|`public`| i membri `public` e `protected` della classe base mantengono la loro visibilità anche nella classe derivata |
-|`protected`| i membri `public` e `protected` della classe base sono ereditati come membri protetti della classe derivata |
-|`private`| i membri `public` e `protected` della classe base sono ereditati come membri privati della classe derivata |
+```
+class B : public A
+{
+    // tutti i membri di A mantengono 
+    // in B la loro visibilità originale 
+};
 
-In tutti i casi, i membri `private` della classe base non sono visibili alle classi derivate, a meno che queste non siano dichiarate come `friend`.  
+class B : protected A
+{
+    // tutti i membri public di A diventano membri 
+    // protected di B; i membri protected e private 
+    // mantengono la loro visibilità originale
+};
+
+class B : private A	
+{
+    // tutti i membri di A, quale che sia la loro 
+    // visibilità, diventano membri private di B;
+};
+
+```
+
 In mancanza di un qualificatore di accesso, il compilatore considera privati tutti i dati di una classe dichiarata con la parola chiave `class` e pubblici tutti i dati di una classe dichiarata con la parola chiave `struct`:
 
 ```
@@ -106,45 +122,51 @@ Se compili questo codice, ottieni un messaggio di errore:
 
 ```
 > g++ src/cpp/ereditarieta-accesso.cpp -c -o src/out/esempio
-src/cpp/ereditarieta-accesso.cpp:25:5: error: cannot cast 'Figlio' to its private base class
+src/cpp/ereditarieta-accesso.cpp:25:5: error: cannot cast 'Figlio' 
+    to its private base class
       'Mamma'
     figlio.a++;    
     ^
-src/cpp/ereditarieta-accesso.cpp:17:16: note: implicitly declared private here
+src/cpp/ereditarieta-accesso.cpp:17:16: note: implicitly declared 
+    private here
 class Figlio : Mamma {
                ^~~~~
-src/cpp/ereditarieta-accesso.cpp:25:12: error: 'a' is a private member of 'Mamma'
+src/cpp/ereditarieta-accesso.cpp:25:12: error: 'a' is a private 
+    member of 'Mamma'
     figlio.a++;    
            ^
-src/cpp/ereditarieta-accesso.cpp:17:16: note: constrained by implicitly private inheritance here
+src/cpp/ereditarieta-accesso.cpp:17:16: note: constrained by 
+    implicitly private inheritance here
 class Figlio : Mamma {
                ^~~~~
-src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared here
+src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared 
+    here
     int a;
         ^
 2 errors generated.
 ```
 
+
+<hr id="costruttore">
+
+Questa è la dichiarazione del costruttore della classe derivata `PesceAlimentare`:
+
+```
+PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
+: Pesce(sesso, prezzo, specie) {
+    _commestibile = true;
+}
+```
+
+La seconda linea è la <i id="lista-inizializzazione">lista di inizializzazione</i> della classe e serve a inizializzare i dati della o delle classi base.
+L'utilizzo del costruttore della classe base per l'inizializzazione dei dati comuni permette di ottenere un <a href="/man/struttura-dei-programmi#coupling" class="xref">low coupling</a> fra classe base e classe derivata.
+In questo modo, se  si dovesse modificare l’implementazione interna del costruttore della classe base, non ci sarebbe bisogno di dover modificare il codice delle sue classi de­rivate.  
+L'istruzione nel corpo del costruttore serve a inizializzare il membro `_commestibile`, che nel caso dei pesci destinati a uso alimentare, sarà sempre `true`, almeno nominalmente.
+
+
 <!--
 
-private:
-    
-    /** Dati privati della classe */
-    time_t _data_cattura;  
-    string _area_pesca; 
-
-public:
-
-    /** Costruttore della classe inline */
-    PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
-    : Pesce(sesso, prezzo, specie)
-    {
-        /** Auspicabilmente.. */
-        _commestibile = true;
-    }
-
-    //...
-
+esempio con parametri differenti fra base e derivata
 
 Data una classe: `umano` si possono ridefinire gli operatori di relazione per capire se un oggetto sia piò o meno ricco o più o meno giovane di un altro, ma sarebbe estremamente complesso scrivere una funzione che permetta di capire se un oggetto sia più o meno amato da un altro.
 Nel caso di oggetti che hanno una linea genealogica comune, la funzione potrebbe basarsi, come dice Dawkins, sulla percentuale di DNA che i due oggetti condividono, moltiplicata per il tempo passato insieme, tenendo conto anche di com'è stato quel tempo, ma nel caso di due oggetti che appartengono a genealogie differenti, quale sarebbe l'algoritmo?

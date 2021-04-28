@@ -124,13 +124,13 @@ int main(int argc, char** argv)
 }
 ```
 
-L'etichetta `public` che vedi all'inizio della dichiarazione della classe è un *indicatore di accesso* e serve a stabilire quali membri della classe siano accessibili a funzioni esterne e quali invece siano riservati in esclusiva alla classe stessa.
+L'etichetta `public` che vedi all'inizio della dichiarazione della classe è un <i id="specificatori-accesso">specificatore di accesso</i> e serve a stabilire quali membri della classe siano accessibili a funzioni esterne e quali invece siano riservati in esclusiva alla classe stessa.
 
 > il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a href="/man/note#selvaggio" class="nota"></a>.
 
 Questa frase di Lucien Lévy-Bruhl si applica anche alle classi del C++. 
 Sia gli attributi che i metodi di una classe possono essere protetti da accessi o modifiche indebite grazie ai modificatori di accesso `private`, `protected` e `public`.
-I metodi o gli attributi dichiarati *private* sono accessibili solo alla classe stessa; quelli dichiarati come *protected* sono accessibili alla classe e a eventuali <a href="/man/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come *public* sono accessibili a qualunque elemento del programma.
+I metodi o gli attributi dichiarati `private` sono accessibili solo alla classe stessa; quelli dichiarati come `protected` sono accessibili alla classe e a eventuali <a href="/man/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come `public` sono accessibili a qualunque elemento del programma.
 In mancanza di specifiche, tutti i dati e le funzioni di una classe verranno considerati:
 
 -	*privati*, nel caso di una classe;
@@ -152,7 +152,7 @@ class Persona
 };
 ```
 
-Questo tipo di ordinamento della dichiarazione, oltre a garantirti una maggiore leggibilità del codice, ti consentirà, se lo desideri, di omettere l’indicatore di accesso `private` iniziale (è la soluzione di default, ricordi?).  
+Questo tipo di ordinamento della dichiarazione, oltre a garantirti una maggiore leggibilità del codice, ti consentirà, se lo desideri, di omettere lo specificatore di accesso `private` iniziale (è la soluzione di default, ricordi?).  
 Mettiamo in pratica tutto ciò, convertendo in classe la struttura `Orario`:
 
 ```
@@ -650,9 +650,7 @@ Ciò che siamo realmente, la nostra essenza, si manifesta in ciò che facciamo i
 
 <!--
 
-Visibilità delle classi.
-
-Le classi del C++, per quanto duttili, non possono descrivere dei concetti astratti come: amore, arte o Dio.
-Come potrebbe essere, una classe Dio?
+@todo: aggiungere  le specifiche sulla visibilità delle classi 
+@todo: aggiungere specifiche sull'ordine di inizalizzazione nel costruttore
 
 -->
