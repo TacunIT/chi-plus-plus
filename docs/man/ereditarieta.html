@@ -67,10 +67,10 @@
 
             <section id="testo">
 
-                <p>L’ereditariaretà, ovvero la possibilità di creare delle genealogie di classi, è il principale punto di forza del C++.</p>
+                <p>L’ereditariaretà, ovvero la possibilità di creare delle genealogie di classi, è la caratteristica principale del C++.</p>
 
 <p>Come abbiamo visto nella <a href="/man/classi-oggetti#dottrina" class="xref">lezione precedente</a>, una ipotetica classe <code>Pesce</code> dovrà avere attributi differenti a seconda dell’utilizzo che se ne deve fare.
-In un linguaggio come il <em>C</em>, che non permette l’E., quindi, si dovranno prevedere due strutture di dati differenti per ciascun caso:</p>
+In un linguaggio come il <em>C</em>, che non permette l’ereditariaretà, quindi, si dovranno prevedere due strutture di dati differenti per ciascun caso:</p>
 
 <pre><code>enum Acqua  { dolce, salata };
 enum Sesso  { maschio, femmina };
@@ -107,8 +107,8 @@ void gestisciPesceAcquario(struct PesceEcologista&amp; pesce);
 L’ereditariaretà, al contrario, ti permette di isolare in una classe le caratteristiche comuni a tutti e due i contesti e di <em>derivare</em> da questa classe di base due classi specializzate:</p>
 
 <pre><code>/** 
- * @file ereditarieta-pesce.cpp
- * Definizione della classe Pesce e delle sue classi derivate.
+ * @file ereditarieta-singola.cpp
+ * Esempio di ereditarietà singola.
  */
  
 #include &lt;iostream&gt;
@@ -226,7 +226,7 @@ class Figlio : public Mamma, private Papa
 
 <p>Al contrario, non è permesso (né sensato) che una classe erediti due volte dalla stessa classe base:</p>
 
-<pre><code>class Errore : public Mamma : public Mamma
+<pre><code>class Errore : public Mamma, public Mamma
 {
 	...
 };
@@ -331,14 +331,250 @@ src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared
 }
 </code></pre>
 
-<p>La seconda linea è la <i id="lista-inizializzazione">lista di inizializzazione</i> della classe e serve a inizializzare i dati della o delle classi base.
-L’utilizzo del costruttore della classe base per l’inizializzazione dei dati comuni permette di ottenere un <a href="/man/struttura-dei-programmi#coupling" class="xref">low coupling</a> fra classe base e classe derivata.
-In questo modo, se  si dovesse modificare l’implementazione interna del costruttore della classe base, non ci sarebbe bisogno di dover modificare il codice delle sue classi de­rivate.<br />
-L’istruzione nel corpo del costruttore serve a inizializzare il membro <code>_commestibile</code>, che nel caso dei pesci destinati a uso alimentare, sarà sempre <code>true</code>, almeno nominalmente.</p>
+<p>La seconda linea è la <i id="lista-inizializzazione">lista di inizializzazione</i> della classe e contiene i costruttori delle classi base.
+Quando si instanzia un oggetto di classe derivata, il sistema richiama per prima cosa i costruttori delle classi base e poi quello della classe figlia.
+In questo modo, il costruttore della classe derivata ha la certezza di lavorare su dei dati membro correttamente inizializzati.<br />
+L’utilizzo del costruttore delle classi base per l’inizializzazione dei dati comuni è necessario per due motivi: il primo è che parte dei dati delle classe base potrebbero essere <code>private</code> e quindi inaccessibili alla classe derivata; il secondo motivo è che in questo modo si ottiene un <a href="/man/struttura-dei-programmi#coupling" class="xref">low coupling</a> fra classe base e classe derivata e, se  si dovesse modificare l’implementazione interna del costruttore della classe base (mantenendo invariata l’interfaccia), non ci sarebbe bisogno di dover modificare il codice delle sue classi de­rivate.<br />
+L’ordine in cui i costruttori delle classi base sono chiamati durante l’inizializzazione dell’oggetto dipende dall’ordine in cui compaiono nel costruttore della classe figlia.
+Lo vediamo con un altro esempio, un po’ più complesso del precedente, che mostra anche il funzionamento dei dati e delle funzioni membro statiche:</p>
+
+<pre><code>/** 
+ * @file ereditarieta-pesce-articolo.cpp
+ * Esempio di ereditarierà multipla.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;ctime&gt; 
+
+using namespace std;
+
+enum Acqua  { dolce, salata };
+enum Sesso  { maschio, femmina };
+enum Colore { rosso, blu, verde, argento };
+
+/** 
+ * Dichiarazione della classe Articolo 
+ */
+class Articolo {
+private:
+
+    static int _n_articoli;
+                        
+protected:
+    
+    /** Dati membro privati */
+    float  _prezzo;
+
+public:
+
+    /** Costruttore della classe inline */
+    Articolo(float prezzo) 
+    : _prezzo(prezzo)
+    {
+        _n_articoli++;
+        cout &lt;&lt; "costruttore Articolo" &lt;&lt; endl;
+    }
+    
+    /** Distruttore inline */
+    ~Articolo() { 
+        _n_articoli--;
+        cout &lt;&lt; "distruttore Articolo" &lt;&lt; endl;       
+    }
+
+    /** Funzioni di interfaccia */
+    void setPrezzo(float prezzo);
+
+    /** Funzione di interfaccia statica */
+    static int getIstanze() { return _n_articoli; }
+
+    /** Funzioni di interfaccia inline */
+    float getPrezzo()     { return _prezzo;     }
+    const char* getTipo() { return "articolo";  }
+};
+
+/** Inizializza il dato membro statico */            
+int Articolo::_n_articoli = 0 ;
+
+/** 
+ * Dichiarazione della classe Pesce 
+ */
+class Pesce {
+private:
+            
+    static int _n_pesci;
+                        
+protected:
+    
+    /** Dati membro privati */
+    Sesso  _sesso;
+    string _specie;
+    bool   _commestibile;
+
+public:
+
+    /** Costruttore della classe inline */
+    Pesce(Sesso sesso, const char* specie) 
+    : _sesso(sesso), _specie(specie)
+    {
+        _n_pesci++;        
+        cout &lt;&lt; "costruttore Pesce" &lt;&lt; endl;
+    }
+    
+    /** Distruttore inline */
+    ~Pesce() { 
+        _n_pesci--;
+        cout &lt;&lt; "distruttore Pesce" &lt;&lt; endl;
+    }
+
+    /** Funzioni di interfaccia */
+    void setSesso(Sesso sesso);
+    void setSpecie(const char* specie);
+
+    /** Funzione di interfaccia statica */
+    static int getIstanze()      { return _n_pesci; }
+
+    /** Funzioni di interfaccia inline */
+    string getSpecie()       { return _specie.c_str(); }
+    Sesso  getSesso()        { return _sesso; }
+    bool   getCommestibile() { return _commestibile; }
+    void   setCommestibile(bool commestibile) { 
+        _commestibile = commestibile; 
+    }
+};
+
+/** Inizializza il dato membro statico */            
+int Pesce::_n_pesci = 0 ;
+
+/** 
+ * Dichiarazione della classe PesceAlimentare 
+ */
+class PesceAlimentare 
+: public Pesce, public Articolo {
+private:
+    
+    /** Dati privati della classe */
+    time_t _data_cattura;  
+    string _area_pesca; 
+
+public:
+
+    /** Costruttore della classe inline */
+    PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
+    : Articolo(prezzo)
+    , Pesce(sesso, specie)
+    {
+        /** Auspicabilmente.. */
+        _commestibile = true;
+        cout &lt;&lt; "costruttore PesceAlimentare" &lt;&lt; endl;
+    }
+
+    /** Distruttore inline */
+    ~PesceAlimentare() { 
+        cout &lt;&lt; "distruttore PesceAlimentare" &lt;&lt; endl;
+    }
+
+    /** Ridefinizione della funzione della classe base */
+    const char* getTipo() { return "pesce alimentare"; }
+
+    //...
+};
+
+class PesceAcquario 
+: public Articolo, public Pesce {
+private:
+    
+    /** Dati privati della classe */
+    time_t _data_acquisto;  
+    Colore _colore;
+    Acqua  _acqua;
+
+public:
+    
+    /** Costruttore della classe inline */
+    PesceAcquario(Sesso sesso, float prezzo, const char* specie) 
+    : Pesce(sesso, specie)
+    , Articolo(prezzo)
+    {
+        cout &lt;&lt; "costruttore PesceAcquario" &lt;&lt; endl;
+    } 
+
+    /** Distruttore inline */
+    ~PesceAcquario() { 
+        cout &lt;&lt; "distruttore PesceAcquario" &lt;&lt; endl;
+    }
+
+    /** Ridefinizione della funzione della classe base */
+    const char* getTipo() { return "pesce acquario"; }
+    
+    //...
+};
+
+int main(int argc, char** argv) 
+{
+    /** Crea le due istanze delle classi */
+    PesceAlimentare pesce2(femmina, 25.4, "Dicentrarchus labrax");
+    PesceAcquario pesce1(maschio, 2.5, "Paracheiredon");
+
+    /** Richiama le funzioni di interfaccia */
+    cout &lt;&lt;  pesce1.getTipo() &lt;&lt; ": " &lt;&lt; pesce1.getSpecie() 
+         &lt;&lt; endl;
+    cout &lt;&lt;  pesce2.getTipo() &lt;&lt; ": " &lt;&lt; pesce2.getSpecie() 
+         &lt;&lt; endl;
+
+    /** Richiama la funzione della classe base */
+    cout &lt;&lt; "classe base: " &lt;&lt; pesce1.Articolo::getTipo() &lt;&lt; endl;
+
+    /** Richiama le funzioni di interfaccia statiche */
+    cout &lt;&lt;  "articoli creati: " &lt;&lt; Articolo::getIstanze() 
+         &lt;&lt; endl;
+    cout &lt;&lt;  "pesci creati:    " &lt;&lt; Pesce::getIstanze() 
+         &lt;&lt; endl;
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>La differenza con il codice precedente è che in questo caso abbiamo isolato i dati relativi al costo del pesce in una classe separata e che le classi derivate ereditano non più da una classe base, ma da due.<br />
+Se compili ed esegui questo codice, ottieni:</p>
+
+<pre><code>&gt; g++ src/cpp/ereditarieta-multipla.cpp -o src/out/esempio
+&gt; src/out/esempio                                         
+costruttore Pesce
+costruttore Articolo
+costruttore PesceAlimentare
+costruttore Articolo
+costruttore Pesce
+costruttore PesceAcquario
+pesce acquario: Paracheiredon
+pesce alimentare: Dicentrarchus labrax
+classe base: articolo
+articoli creati: 2
+pesci creati:    2
+distruttore PesceAcquario
+distruttore Pesce
+distruttore Articolo
+distruttore PesceAlimentare
+distruttore Articolo
+distruttore Pesce
+</code></pre>
+
+<p>Come vedi, l’ordine di chiamata dei costruttori delle classi base rispecchia quello in cui sono elencate nella lista di inizializzazione, mentre quello dei distruttori è invertito.<br />
+La funzione <code>getTipo</code> è presente sia nella classe base <code>Articolo</code> che nelle due classi derivate <code>PesceAlimentare</code> e <code>PesceAcquario</code>.
+Quando si richiama <code>getTipo</code> da un’istanza delle due classi derivate, come in:</p>
+
+<pre><code>cout &lt;&lt;  pesce1.getTipo() &lt;&lt; ": " &lt;&lt; pesce1.getSpecie() 
+cout &lt;&lt;  pesce2.getTipo() &lt;&lt; ": " &lt;&lt; pesce2.getSpecie() 
+</code></pre>
+
+<p>il valore tornato è quello della funzione della classe figlia.
+Per ottenere il valore della classe base, dobbiamo specificarne il nome nell’istruzione, come in:</p>
+
+<pre><code>cout &lt;&lt; "classe base: " &lt;&lt; pesce1.Articolo::getTipo() &lt;&lt; endl;
+</code></pre>
 
 <!--
-
-esempio con parametri differenti fra base e derivata
 
 Data una classe: `umano` si possono ridefinire gli operatori di relazione per capire se un oggetto sia piò o meno ricco o più o meno giovane di un altro, ma sarebbe estremamente complesso scrivere una funzione che permetta di capire se un oggetto sia più o meno amato da un altro.
 Nel caso di oggetti che hanno una linea genealogica comune, la funzione potrebbe basarsi, come dice Dawkins, sulla percentuale di DNA che i due oggetti condividono, moltiplicata per il tempo passato insieme, tenendo conto anche di com'è stato quel tempo, ma nel caso di due oggetti che appartengono a genealogie differenti, quale sarebbe l'algoritmo?

@@ -7,10 +7,10 @@ permalink:  /man/ereditarieta
 quote:      "We few, we happy few<br />We bunch of data"
 ---
 
-L'ereditariaretà, ovvero la possibilità di creare delle genealogie di classi, è il principale punto di forza del C++.
+L'ereditariaretà, ovvero la possibilità di creare delle genealogie di classi, è la caratteristica principale del C++.
 
 Come abbiamo visto nella <a href="/man/classi-oggetti#dottrina" class="xref">lezione precedente</a>, una ipotetica classe `Pesce` dovrà avere attributi differenti a seconda dell'utilizzo che se ne deve fare.
-In un linguaggio come il *C*, che non permette l'E., quindi, si dovranno prevedere due strutture di dati differenti per ciascun caso:
+In un linguaggio come il *C*, che non permette l'ereditariaretà, quindi, si dovranno prevedere due strutture di dati differenti per ciascun caso:
 
 ```
 enum Acqua  { dolce, salata };
@@ -49,7 +49,7 @@ Questo vuol dire che se hai già scritto (e verificato, corretto e collaudato) u
 L'ereditariaretà, al contrario, ti permette di isolare in una classe le caratteristiche comuni a tutti e due i contesti e di *derivare* da questa classe di base due classi specializzate:
 
 ```
-{% include_relative src/ereditarieta-pesce.cpp %}
+{% include_relative src/ereditarieta-singola.cpp %}
 ```
 
 Questo approccio ha due lati positivi: il primo è che non sarà necessario ripetere le fasi di test, debug e collaudo per le funzioni comuni ai due sistemi, perché saranno state già verificate durante lo sviluppo del primo sistema; il secondo è che, riutilizzando parte del codice, sarà possibile identificare e correggere eventuali errori sfuggiti alla prima fase di test o migliorare il comportamento delle funzioni comuni, con benefici per entrambi i sistemi.
@@ -73,7 +73,7 @@ class Figlio : public Mamma, private Papa
 Al contrario, non è permesso (né sensato) che una classe erediti due volte dalla stessa classe base:
 
 ```
-class Errore : public Mamma : public Mamma
+class Errore : public Mamma, public Mamma
 {
 	...
 };
@@ -158,15 +158,60 @@ PesceAlimentare(Sesso sesso, float prezzo, const char* specie)
 }
 ```
 
-La seconda linea è la <i id="lista-inizializzazione">lista di inizializzazione</i> della classe e serve a inizializzare i dati della o delle classi base.
-L'utilizzo del costruttore della classe base per l'inizializzazione dei dati comuni permette di ottenere un <a href="/man/struttura-dei-programmi#coupling" class="xref">low coupling</a> fra classe base e classe derivata.
-In questo modo, se  si dovesse modificare l’implementazione interna del costruttore della classe base, non ci sarebbe bisogno di dover modificare il codice delle sue classi de­rivate.  
-L'istruzione nel corpo del costruttore serve a inizializzare il membro `_commestibile`, che nel caso dei pesci destinati a uso alimentare, sarà sempre `true`, almeno nominalmente.
+La seconda linea è la <i id="lista-inizializzazione">lista di inizializzazione</i> della classe e contiene i costruttori delle classi base.
+Quando si instanzia un oggetto di classe derivata, il sistema richiama per prima cosa i costruttori delle classi base e poi quello della classe figlia.
+In questo modo, il costruttore della classe derivata ha la certezza di lavorare su dei dati membro correttamente inizializzati.  
+L'utilizzo del costruttore delle classi base per l'inizializzazione dei dati comuni è necessario per due motivi: il primo è che parte dei dati delle classe base potrebbero essere `private` e quindi inaccessibili alla classe derivata; il secondo motivo è che in questo modo si ottiene un <a href="/man/struttura-dei-programmi#coupling" class="xref">low coupling</a> fra classe base e classe derivata e, se  si dovesse modificare l’implementazione interna del costruttore della classe base (mantenendo invariata l'interfaccia), non ci sarebbe bisogno di dover modificare il codice delle sue classi de­rivate.  
+L'ordine in cui i costruttori delle classi base sono chiamati durante l'inizializzazione dell'oggetto dipende dall'ordine in cui compaiono nel costruttore della classe figlia.
+Lo vediamo con un altro esempio, un po' più complesso del precedente, che mostra anche il funzionamento dei dati e delle funzioni membro statiche:
+
+```
+{% include_relative src/ereditarieta-multipla.cpp %}
+```
+
+La differenza con il codice precedente è che in questo caso abbiamo isolato i dati relativi al costo del pesce in una classe separata e che le classi derivate ereditano non più da una classe base, ma da due.  
+Se compili ed esegui questo codice, ottieni:
+
+```
+> g++ src/cpp/ereditarieta-multipla.cpp -o src/out/esempio
+> src/out/esempio                                         
+costruttore Pesce
+costruttore Articolo
+costruttore PesceAlimentare
+costruttore Articolo
+costruttore Pesce
+costruttore PesceAcquario
+pesce acquario: Paracheiredon
+pesce alimentare: Dicentrarchus labrax
+classe base: articolo
+articoli creati: 2
+pesci creati:    2
+distruttore PesceAcquario
+distruttore Pesce
+distruttore Articolo
+distruttore PesceAlimentare
+distruttore Articolo
+distruttore Pesce
+```
+
+Come vedi, l'ordine di chiamata dei costruttori delle classi base rispecchia quello in cui sono elencate nella lista di inizializzazione, mentre quello dei distruttori è invertito.  
+La funzione `getTipo` è presente sia nella classe base `Articolo` che nelle due classi derivate `PesceAlimentare` e `PesceAcquario`.
+Quando si richiama `getTipo` da un'istanza delle due classi derivate, come in:
+
+```
+cout <<  pesce1.getTipo() << ": " << pesce1.getSpecie() 
+cout <<  pesce2.getTipo() << ": " << pesce2.getSpecie() 
+```
+
+il valore tornato è quello della funzione della classe figlia.
+Per ottenere il valore della classe base, dobbiamo specificarne il nome nell'istruzione, come in:
+
+```
+cout << "classe base: " << pesce1.Articolo::getTipo() << endl;
+```
 
 
 <!--
-
-esempio con parametri differenti fra base e derivata
 
 Data una classe: `umano` si possono ridefinire gli operatori di relazione per capire se un oggetto sia piò o meno ricco o più o meno giovane di un altro, ma sarebbe estremamente complesso scrivere una funzione che permetta di capire se un oggetto sia più o meno amato da un altro.
 Nel caso di oggetti che hanno una linea genealogica comune, la funzione potrebbe basarsi, come dice Dawkins, sulla percentuale di DNA che i due oggetti condividono, moltiplicata per il tempo passato insieme, tenendo conto anche di com'è stato quel tempo, ma nel caso di due oggetti che appartengono a genealogie differenti, quale sarebbe l'algoritmo?

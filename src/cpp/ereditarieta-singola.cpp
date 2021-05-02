@@ -1,6 +1,6 @@
 /** 
- * @file ereditarieta-pesce.cpp
- * Definizione della classe Pesce e delle sue classi derivate.
+ * @file ereditarieta-singola.cpp
+ * Esempio di ereditarietà singola.
  */
  
 #include <iostream>
