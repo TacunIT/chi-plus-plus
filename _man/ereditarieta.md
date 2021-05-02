@@ -194,7 +194,26 @@ distruttore Articolo
 distruttore Pesce
 ```
 
-Come vedi, l'ordine di chiamata dei costruttori delle classi base rispecchia quello in cui sono elencate nella lista di inizializzazione, mentre quello dei distruttori è invertito.  
+Come vedi, l'ordine di chiamata dei costruttori delle classi base rispecchia quello in cui sono elencate nella lista di inizializzazione, mentre quello dei distruttori è invertito.
+Se il costruttore della classe derivata non specifica un ordine di chiamata per i costruttori delle classi base, l'ordine di chiamata è dato dall'ordine in cui le classi base compaiono nella dichiarazione della classe figlio:
+
+```
+{% include_relative src/ereditarieta-ordine-costruttori.cpp %}
+```
+
+Se compili ed esegui questo codice, ottieni:
+
+```
+> g++ src/cpp/ereditarieta-ordine-costruttori.cpp -o src/out/esempio
+> src/out/esempio                                                   
+costruttore Babbo
+costruttore Mamma
+costruttore Figlio
+costruttore Mamma
+costruttore Babbo
+costruttore Figlia
+```
+
 La funzione `getTipo` è presente sia nella classe base `Articolo` che nelle due classi derivate `PesceAlimentare` e `PesceAcquario`.
 Quando si richiama `getTipo` da un'istanza delle due classi derivate, come in:
 
