@@ -1,3 +1,8 @@
+## 0.23.2 (May 02, 2021)
+  - Iniziato paragrafo su classi base vituali
+  - Aggiunto codice di esempio per ordine chiamata costruttori
+  - Costruttori classi derivate
+
 ## 0.23.1 (April 27, 2021)
   - Esempio della visibilità delle classi derivate
 
