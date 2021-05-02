@@ -626,8 +626,8 @@ costruttore Babbo
 costruttore Figlia
 </code></pre>
 
-<p>La funzione <code>getTipo</code> è presente sia nella classe base <code>Articolo</code> che nelle due classi derivate <code>PesceAlimentare</code> e <code>PesceAcquario</code>.
-Quando si richiama <code>getTipo</code> da un’istanza delle due classi derivate, come in:</p>
+<p>Un’altra cosa da notare, in questo codice, è che la funzione <code>getTipo</code> è presente sia nella classe base <code>Articolo</code> che nelle due classi derivate <code>PesceAlimentare</code> e <code>PesceAcquario</code>.
+Per questo motivo, quando si richiama <code>getTipo</code> da un’istanza delle due classi derivate, come in:</p>
 
 <pre><code>cout &lt;&lt;  pesce1.getTipo() &lt;&lt; ": " &lt;&lt; pesce1.getSpecie() 
 cout &lt;&lt;  pesce2.getTipo() &lt;&lt; ": " &lt;&lt; pesce2.getSpecie() 
@@ -637,6 +637,47 @@ cout &lt;&lt;  pesce2.getTipo() &lt;&lt; ": " &lt;&lt; pesce2.getSpecie()
 Per ottenere il valore della classe base, dobbiamo specificarne il nome nell’istruzione, come in:</p>
 
 <pre><code>cout &lt;&lt; "classe base: " &lt;&lt; pesce1.Articolo::getTipo() &lt;&lt; endl;
+</code></pre>
+
+<hr id="classi-virtuali" />
+
+<p>Complichiamo un po’ le cose.
+Immagina che una classe <code>Figlio</code> derivi dalle classi <code>Madre</code> e <code>Padre</code>, a loro volta derivate dalla classe <code>Persona</code>. 
+Se chiamassimo una funzione della classe <code>Persona</code> da un oggetto di classe <code>Figlio</code>, quale verrebbe chiamata, quella che ha ereditato da <code>Padre</code> o quella che ha ereditato da <code>Madre</code>?</p>
+
+<pre><code>/** 
+ * @file ereditarieta-classi-base-virtuali.cpp
+ * Gestione delle classi base virtuali.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+using namespace std;
+
+class Persona {
+public:
+    void getClass(){
+        cout &lt;&lt; "Persona" &lt;&lt; endl;
+    }
+};
+
+class Padre : public Persona {
+};
+
+class Madre : public Persona {
+};
+ 
+class Figlo : public Padre, public Madre {
+};
+ 
+int main(int argc, char** argv) 
+{
+    Figlio caino;
+    caino.getClass();
+    return 0;
+}
+
 </code></pre>
 
 <!--

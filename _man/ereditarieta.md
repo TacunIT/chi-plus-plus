@@ -214,8 +214,8 @@ costruttore Babbo
 costruttore Figlia
 ```
 
-La funzione `getTipo` è presente sia nella classe base `Articolo` che nelle due classi derivate `PesceAlimentare` e `PesceAcquario`.
-Quando si richiama `getTipo` da un'istanza delle due classi derivate, come in:
+Un'altra cosa da notare, in questo codice, è che la funzione `getTipo` è presente sia nella classe base `Articolo` che nelle due classi derivate `PesceAlimentare` e `PesceAcquario`.
+Per questo motivo, quando si richiama `getTipo` da un'istanza delle due classi derivate, come in:
 
 ```
 cout <<  pesce1.getTipo() << ": " << pesce1.getSpecie() 
@@ -227,6 +227,16 @@ Per ottenere il valore della classe base, dobbiamo specificarne il nome nell'ist
 
 ```
 cout << "classe base: " << pesce1.Articolo::getTipo() << endl;
+```
+
+<hr id="classi-virtuali">
+
+Complichiamo un po' le cose.
+Immagina che una classe `Figlio` derivi dalle classi `Madre` e `Padre`, a loro volta derivate dalla classe `Persona`. 
+Se chiamassimo una funzione della classe `Persona` da un oggetto di classe `Figlio`, quale verrebbe chiamata, quella che ha ereditato da `Padre` o quella che ha ereditato da `Madre`?
+
+```
+{% include_relative src/ereditarieta-classi-base-virtuali.cpp %}
 ```
 
 
