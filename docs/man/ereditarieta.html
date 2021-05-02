@@ -339,7 +339,7 @@ L’ordine in cui i costruttori delle classi base sono chiamati durante l’iniz
 Lo vediamo con un altro esempio, un po’ più complesso del precedente, che mostra anche il funzionamento dei dati e delle funzioni membro statiche:</p>
 
 <pre><code>/** 
- * @file ereditarieta-pesce-articolo.cpp
+ * @file ereditarieta-multipla.cpp
  * Esempio di ereditarierà multipla.
  */
  
@@ -350,7 +350,7 @@ Lo vediamo con un altro esempio, un po’ più complesso del precedente, che mos
 using namespace std;
 
 enum Acqua  { dolce, salata };
-enum Sesso  { maschio, femmina };
+enum Sesso  { indeterminato, maschio, femmina};
 enum Colore { rosso, blu, verde, argento };
 
 /** 
@@ -369,7 +369,7 @@ protected:
 public:
 
     /** Costruttore della classe inline */
-    Articolo(float prezzo) 
+    Articolo(float prezzo = 0.0) 
     : _prezzo(prezzo)
     {
         _n_articoli++;
@@ -414,7 +414,7 @@ protected:
 public:
 
     /** Costruttore della classe inline */
-    Pesce(Sesso sesso, const char* specie) 
+    Pesce(Sesso sesso = indeterminato, const char* specie = "ignota") 
     : _sesso(sesso), _specie(specie)
     {
         _n_pesci++;        
@@ -509,13 +509,13 @@ public:
     
     //...
 };
-
+ 
 int main(int argc, char** argv) 
 {
     /** Crea le due istanze delle classi */
-    PesceAlimentare pesce2(femmina, 25.4, "Dicentrarchus labrax");
     PesceAcquario pesce1(maschio, 2.5, "Paracheiredon");
-
+    PesceAlimentare pesce2(femmina, 25.4, "Dicentrarchus labrax");
+    
     /** Richiama le funzioni di interfaccia */
     cout &lt;&lt;  pesce1.getTipo() &lt;&lt; ": " &lt;&lt; pesce1.getSpecie() 
          &lt;&lt; endl;
@@ -560,8 +560,73 @@ distruttore Articolo
 distruttore Pesce
 </code></pre>
 
-<p>Come vedi, l’ordine di chiamata dei costruttori delle classi base rispecchia quello in cui sono elencate nella lista di inizializzazione, mentre quello dei distruttori è invertito.<br />
-La funzione <code>getTipo</code> è presente sia nella classe base <code>Articolo</code> che nelle due classi derivate <code>PesceAlimentare</code> e <code>PesceAcquario</code>.
+<p>Come vedi, l’ordine di chiamata dei costruttori delle classi base rispecchia quello in cui sono elencate nella lista di inizializzazione, mentre quello dei distruttori è invertito.
+Se il costruttore della classe derivata non specifica un ordine di chiamata per i costruttori delle classi base, l’ordine di chiamata è dato dall’ordine in cui le classi base compaiono nella dichiarazione della classe figlio:</p>
+
+<pre><code>/** 
+ * @file ereditarieta-ordine-costruttori.cpp
+ * Ordine di chiamata dei costruttori nell'ereditarierà multipla.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;ctime&gt; 
+
+using namespace std;
+
+class Mamma {
+public:
+    Mamma() {
+        cout &lt;&lt; "costruttore Mamma" &lt;&lt; endl;
+    }
+};
+
+class Babbo {
+public:
+    Babbo() {
+        cout &lt;&lt; "costruttore Babbo" &lt;&lt; endl;
+    }
+};
+ 
+class Figlio
+: public Babbo, public Mamma {
+public:
+    Figlio() {
+        cout &lt;&lt; "costruttore Figlio" &lt;&lt; endl;
+    }
+};
+
+class Figlia
+: public Mamma, public Babbo {
+public:
+    Figlia() {
+        cout &lt;&lt; "costruttore Figlia" &lt;&lt; endl;
+    }
+};
+
+ 
+int main(int argc, char** argv) 
+{
+    Figlio Hansel;
+    Figlia Gretel;
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili ed esegui questo codice, ottieni:</p>
+
+<pre><code>&gt; g++ src/cpp/ereditarieta-ordine-costruttori.cpp -o src/out/esempio
+&gt; src/out/esempio                                                   
+costruttore Babbo
+costruttore Mamma
+costruttore Figlio
+costruttore Mamma
+costruttore Babbo
+costruttore Figlia
+</code></pre>
+
+<p>La funzione <code>getTipo</code> è presente sia nella classe base <code>Articolo</code> che nelle due classi derivate <code>PesceAlimentare</code> e <code>PesceAcquario</code>.
 Quando si richiama <code>getTipo</code> da un’istanza delle due classi derivate, come in:</p>
 
 <pre><code>cout &lt;&lt;  pesce1.getTipo() &lt;&lt; ": " &lt;&lt; pesce1.getSpecie() 

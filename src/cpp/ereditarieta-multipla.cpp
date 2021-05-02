@@ -1,5 +1,5 @@
 /** 
- * @file ereditarieta-pesce-articolo.cpp
+ * @file ereditarieta-multipla.cpp
  * Esempio di ereditarierà multipla.
  */
  
@@ -10,7 +10,7 @@
 using namespace std;
 
 enum Acqua  { dolce, salata };
-enum Sesso  { maschio, femmina };
+enum Sesso  { indeterminato, maschio, femmina};
 enum Colore { rosso, blu, verde, argento };
 
 /** 
@@ -29,7 +29,7 @@ protected:
 public:
 
     /** Costruttore della classe inline */
-    Articolo(float prezzo) 
+    Articolo(float prezzo = 0.0) 
     : _prezzo(prezzo)
     {
         _n_articoli++;
@@ -74,7 +74,7 @@ protected:
 public:
 
     /** Costruttore della classe inline */
-    Pesce(Sesso sesso, const char* specie) 
+    Pesce(Sesso sesso = indeterminato, const char* specie = "ignota") 
     : _sesso(sesso), _specie(specie)
     {
         _n_pesci++;        
@@ -169,13 +169,13 @@ public:
     
     //...
 };
-
+ 
 int main(int argc, char** argv) 
 {
     /** Crea le due istanze delle classi */
-    PesceAlimentare pesce2(femmina, 25.4, "Dicentrarchus labrax");
     PesceAcquario pesce1(maschio, 2.5, "Paracheiredon");
-
+    PesceAlimentare pesce2(femmina, 25.4, "Dicentrarchus labrax");
+    
     /** Richiama le funzioni di interfaccia */
     cout <<  pesce1.getTipo() << ": " << pesce1.getSpecie() 
          << endl;
