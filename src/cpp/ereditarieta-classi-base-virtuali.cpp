@@ -15,13 +15,13 @@ public:
     }
 };
 
-class Padre : public Persona {
+class Padre : public virtual Persona {
 };
 
-class Madre : public Persona {
+class Madre : virtual public Persona {
 };
  
-class Figlo : public Padre, public Madre {
+class Figlio : public Padre, public Madre {
 };
  
 int main(int argc, char** argv) 
