@@ -239,8 +239,57 @@ Se chiamassimo una funzione della classe `Persona` da un oggetto di classe `Figl
 {% include_relative src/ereditarieta-classi-base-virtuali.cpp %}
 ```
 
+In realtà, nessuna delle due, perché questo codice genera un errore:
+
+```
+src/cpp/ereditarieta-classi-base-virtuali.cpp:30:11: 
+error: non-static member 'getClass' found in multiple base-class
+      subobjects of type 'Persona':
+    class Figlio -> class Padre -> class Persona
+    class Figlio -> class Madre -> class Persona
+    caino.getClass();
+          ^
+src/cpp/ereditarieta-classi-base-virtuali.cpp:13:10: 
+note: member found by ambiguous name lookup
+    void getClass(){
+         ^
+1 error generated.
+```
+Puoi evitare questo genere di problemi dichiarando la classe `Persona` come classe base *virtuale* delle classi `Madre` e `Padre`:
+
+```
+class Padre : public virtual Persona {
+};
+
+class Madre : virtual public Persona {
+};
+```
+
+In questo modo, la classe `Figlio` erediterà tutti i membri propri delle  classi `Madre` e `Padre`, ma solo una copia dei metodi e degli attributi della classe virtuale `Persona` che entrambi contengono.
+
+<hr id="classi-puntatori">
 
 <!--
+
+definire una nuova classe equivale a definire un nuovo tipo di dato, che sarà considerato dal compilatore alla stessa stregua dei dati primitivi. Questo vuol dire, per esempio, che se vogliamo (e soprattutto con la stessa sintassi utilizzata, ad esempio, per i char), possiamo creare un array di oggetti di un qualsiasi tipo definito dall’utente:
+Pixel traiettoria[10];	// array di oggetti di tipo Pixel
+C’è un problema, però: siccome tutti gli elementi di un array vanno inizializzati, gli oggetti di cui l’array è composto devono appartenere ad una classe che abbia un costrut­tore di default, altrimenti dovremo inizializzarli tutti esplicitamente. La creazione di un array di oggetti di una qualunque classe Pippo, priva di costruttori di default, richiede questa sintassi:
+Pippo buffer[] = { Pippo(1,2), Pippo(3, 4), Pippo(5,6) } ;
+Diverso il discorso, invece, per le classi Punto e Pixel:
+
+Punto spline[3] ; 
+
+possiamo aggiungere ad un array di oggetti della classe base anche degli oggetti appart­enenti alla superclasse:
+Punto spline[3] = { Punto(4,5), Pixel(1,2,3), Punto(7,7) } ;
+Non è possibile invece fare il contrario: oggetti della classe base non possono comparire in array di oggetti della superclasse:
+Pixel curva[3] = { Pixel(1,2,3), Punto(7,7), Pixel(5,6,3) } ;
+La seconda assegnazione darà errore: così come, negli scacchi, la regina può muovere come una torre, ma una torre non può muoversi come una regina, un oggetto di tipo Punto non contiene tutta l’informazione relativa ad un oggetto di tipo Pixel e quindi non può essere usato in sua sostituzione .
+Lo stesso discorso fatto per gli array, vale anche per i puntatori. Ad un puntatore ad un og­getto di tipo Punto può essere assegnato un oggetto di tipo Pixel, mentre l’operazione inversa causerà un errore di compilazione:
+Punto *ptr = new Pixel(1,2,3) ;  // OK
+Pixel *ptrP3 = new Punto(1,2) ;  // ERRORE!
+Il compilatore è quindi in grado di  capire la relazione che c’è fra una classe derivata e la sua classe base e di stabilire un cammino di coercizione dal tipo dell’oggetto a quello del puntatore. 
+Quello che invece la tipizzazione forte non gli permette (giustamente) di fare, è di accedere, tramite un puntatore ad una classe base, ai membri o alle funzioni di una classe derivata:
+
 
 Data una classe: `umano` si possono ridefinire gli operatori di relazione per capire se un oggetto sia piò o meno ricco o più o meno giovane di un altro, ma sarebbe estremamente complesso scrivere una funzione che permetta di capire se un oggetto sia più o meno amato da un altro.
 Nel caso di oggetti che hanno una linea genealogica comune, la funzione potrebbe basarsi, come dice Dawkins, sulla percentuale di DNA che i due oggetti condividono, moltiplicata per il tempo passato insieme, tenendo conto anche di com'è stato quel tempo, ma nel caso di due oggetti che appartengono a genealogie differenti, quale sarebbe l'algoritmo?
