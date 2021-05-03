@@ -1,3 +1,6 @@
+## 0.23.3 (May 03, 2021)
+  - Redatto paragrafo su classi base virtuali
+
 ## 0.23.2 (May 02, 2021)
   - Iniziato paragrafo su classi base vituali
   - Aggiunto codice di esempio per ordine chiamata costruttori
