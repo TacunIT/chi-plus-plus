@@ -16,15 +16,15 @@ public:
     }
 };
 
-class Babbo {
+class Padre {
 public:
-    Babbo() {
-        cout << "costruttore Babbo" << endl;
+    Padre() {
+        cout << "costruttore Padre" << endl;
     }
 };
  
 class Figlio
-: public Babbo, public Mamma {
+: public Padre, public Mamma {
 public:
     Figlio() {
         cout << "costruttore Figlio" << endl;
@@ -32,7 +32,7 @@ public:
 };
 
 class Figlia
-: public Mamma, public Babbo {
+: public Mamma, public Padre {
 public:
     Figlia() {
         cout << "costruttore Figlia" << endl;
@@ -44,5 +44,6 @@ int main(int argc, char** argv)
 {
     Figlio Hansel;
     Figlia Gretel;
+
     return 0;
 }

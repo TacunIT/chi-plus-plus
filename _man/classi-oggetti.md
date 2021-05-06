@@ -89,39 +89,7 @@ I dati e le funzioni membro di una classe sono direttamente accessibili alle fun
 Il primo, detto *operatore di selezione diretta*, viene utilizzato con istanze della classe; il secondo, detto *operatore di selezi­one indiretta*, con puntatori ad esse:
 
 ```
-class Punto
-{
-public:             
-    
-    /** Dichiara i dati membro della classe */
-    int _x, _y;
-
-    /** 
-     *  Le funzioni interne alla classe accedono ai
-     *  dati membro con la sintassi ordinaria.
-     */  
-    Punto(int x, int y) {
-        _x = x;
-        _y = y;
-    }
-} ;
-
-int main(int argc, char** argv) 
-{
-    /** Crea un oggetto di classe Punto */
-    Punto p(5,6);       
-
-    /** Assegna l'istanza della classe al puntatore ptr */
-    Punto *ptr = &p ;   
-    
-    /** 
-     *  Le funzioni esterne alla classe accedono ai
-     *  dati membro tramite gli operatori di selezione.
-     */  
-    p._x    = 3 ;       // assegna un valore tramite l'oggetto
-    ptr->_y = 2 ;       // assegna un valore tramite il puntatore
-    ...
-}
+{% include_relative src/classi-punto.cpp %}
 ```
 
 L'etichetta `public` che vedi all'inizio della dichiarazione della classe è un <i id="specificatori-accesso">specificatore di accesso</i> e serve a stabilire quali membri della classe siano accessibili a funzioni esterne e quali invece siano riservati in esclusiva alla classe stessa.
