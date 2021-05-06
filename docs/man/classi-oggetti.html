@@ -225,7 +225,17 @@ Quando si crea una variabile di classe <code>X</code>, si dice che si: <em>istan
 I dati e le funzioni membro di una classe sono direttamente accessibili alle funzioni membro della classe, ma per utilizzarli all’interno di funzioni esterne alla classe, si devono utilizzare gli operatori di selezione <code>.</code> e <code>-&gt;</code>. 
 Il primo, detto <em>operatore di selezione diretta</em>, viene utilizzato con istanze della classe; il secondo, detto <em>operatore di selezi­one indiretta</em>, con puntatori ad esse:</p>
 
-<pre><code>class Punto
+<pre><code>/** 
+ * @file classi-punto.cpp
+ * Accesso ai dati membro della classe.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+
+using namespace std;
+
+class Punto
 {
 public:             
     
@@ -256,8 +266,10 @@ int main(int argc, char** argv)
      */  
     p._x    = 3 ;       // assegna un valore tramite l'oggetto
     ptr-&gt;_y = 2 ;       // assegna un valore tramite il puntatore
-    ...
+    
+    //...
 }
+
 </code></pre>
 
 <p>L’etichetta <code>public</code> che vedi all’inizio della dichiarazione della classe è un <i id="specificatori-accesso">specificatore di accesso</i> e serve a stabilire quali membri della classe siano accessibili a funzioni esterne e quali invece siano riservati in esclusiva alla classe stessa.</p>

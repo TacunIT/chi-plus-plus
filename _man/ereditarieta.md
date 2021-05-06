@@ -206,11 +206,11 @@ Se compili ed esegui questo codice, ottieni:
 ```
 > g++ src/cpp/ereditarieta-ordine-costruttori.cpp -o src/out/esempio
 > src/out/esempio                                                   
-costruttore Babbo
+costruttore Padre
 costruttore Mamma
 costruttore Figlio
 costruttore Mamma
-costruttore Babbo
+costruttore Padre
 costruttore Figlia
 ```
 
@@ -269,26 +269,92 @@ In questo modo, la classe `Figlio` erediterà tutti i membri propri delle  class
 
 <hr id="classi-puntatori">
 
+Come ti ho detto, definire una nuova classe equivale a definire un nuovo tipo di dato, che sarà considerato dal compilatore alla stessa stregua dei dati primitivi del linguaggio. 
+Questo vuol dire, per esempio, che se vogliamo possiamo creare un array di oggetti di classe `Pesce` così come creeremmo un array di `int` o di `char`:
+
+```
+/** Array di oggetti di classe Pesce */
+Pesce acquario[10];
+```
+
+C'è solo una limitazione: siccome tutti gli elementi di un array devono essere inizializzati al momento della sua creazione, la classe deve avere un costrut­tore di default.
+Se decidessimo di creare un array di oggetti della classe `Punto` che abbiamo visto <a href="/man/classi-oggetti#attributi-metodi" class="xref">nella scorsa lezione</a>, gli elementi dell'array dovranno essere inizializzati esplicitamente:
+
+```
+Punto spline[3] = { Punto(3,5), Punto(0,0), Punto(7,7) } ;
+```
+ 
+Possiamo aggiungere a un array di oggetti di una classe base anche degli oggetti appart­enenti alle sue classi derivate:
+
+```
+Persona famiglia[3] = { Padre(), Madre(), Figlio() } ;
+```
+
+Al contrario, gli oggetti della classe base non possono comparire in array di oggetti della classe derivata e un'istruzione come quella qui sotto darà errore:
+
+```
+Figlio classe[4] = { Figlio(), Figlio(), Persona(), Figlio() } ;
+```
+
+Così come, negli scacchi, la regina può muovere come una torre, ma una torre non può muoversi come una regina, un oggetto di tipo `Persona` non contiene tutta l’informazione relativa ad un oggetto di tipo `Figlio` e quindi non può essere usato in sua sostituzione.  
+Lo stesso discorso fatto per gli array, vale anche per i puntatori. 
+A un puntatore a oggetti di tipo `Persona` può essere assegnato un oggetto di tipo `Figlio`, mentre l’operazione inversa causerà un errore di compilazione:
+
+```
+Persona *ptrP = new Figlio() ;  // OK
+Figlio  *ptrF = new Persona();  // ERRORE!
+```
+
+Il compilatore è in grado di capire la relazione che c’è fra una classe derivata e la sua classe base e può quindi stabilire un cammino di coercizione dal tipo dell’oggetto a quello del puntatore, ma non ha modo di accedere ai membri o alle funzioni di una classe derivata da un oggetto di classe base.
+
+
 <!--
+Questa forma di polimorfismo, che può creare qualche problema se sfuttata per la ges­tione di array, risulta invece molto utile nel caso di code o stack, ma bisogna fare atten­zione, perché la tipizzazione forte del C++ potrebbe farvi qualche simpatico scherzetto:
+CHISONO.CPP - Scherzi del polimorfismo
+/////////////////////////////////////////////////////////////
+//
+//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
+//
+//	CHISONO.CPP - Scherzi del polimorfismo
+//
+/////////////////////////////////////////////////////////////
+#include <iostream.h>
+/////////////////////////////////////////////////////////////
+class A
+{
+ public:
+		A() {} ;
+		void ChiSono()
+			{ cout << "Sono un oggetto di classe A \n" ; }
+} ;
+/////////////////////////////////////////////////////////////
+class B :public A
+{
+ public:
+		B() : A() {} ;
+		void ChiSono() 
+			{ cout << "Sono un oggetto di classe B \n" ; } 
+} ;
+/////////////////////////////////////////////////////////////
+void main()
+{
+ B * ptrB = new B ;						// 001
+ A * ptrA = ptrB ;						// 002
+					
+	ptrB->ChiSono() ;						// 003
+	ptrA->ChiSono() ;						// 004
+} ;
+/////////////////////////////////////////////////////////////
+001  Crea un oggetto di tipo B.
+002  Punta all’oggetto con un puntatore alla sua classe base A.
+003  Accede alla funzione di output tramite il puntatore alla classe.
+004  Accede alla funzione di output tramite il puntatore alla classe base.
+L’output di questo listato è il seguente:
 
-definire una nuova classe equivale a definire un nuovo tipo di dato, che sarà considerato dal compilatore alla stessa stregua dei dati primitivi. Questo vuol dire, per esempio, che se vogliamo (e soprattutto con la stessa sintassi utilizzata, ad esempio, per i char), possiamo creare un array di oggetti di un qualsiasi tipo definito dall’utente:
-Pixel traiettoria[10];	// array di oggetti di tipo Pixel
-C’è un problema, però: siccome tutti gli elementi di un array vanno inizializzati, gli oggetti di cui l’array è composto devono appartenere ad una classe che abbia un costrut­tore di default, altrimenti dovremo inizializzarli tutti esplicitamente. La creazione di un array di oggetti di una qualunque classe Pippo, priva di costruttori di default, richiede questa sintassi:
-Pippo buffer[] = { Pippo(1,2), Pippo(3, 4), Pippo(5,6) } ;
-Diverso il discorso, invece, per le classi Punto e Pixel:
+Sono un oggetto di classe B
+Sono un oggetto di classe A
+Non c’è nessun errore: più semplicemente, la funzione ChiSono() che interviene nella seconda istruzione di output non è, come ci si aspettava, quella della classe derivata B a cui l’oggetto appartiene, bensì quella della classe base, che è l’unica a cui il programma può accedere tramite un puntatore ad oggetti di tipo A.
 
-Punto spline[3] ; 
-
-possiamo aggiungere ad un array di oggetti della classe base anche degli oggetti appart­enenti alla superclasse:
-Punto spline[3] = { Punto(4,5), Pixel(1,2,3), Punto(7,7) } ;
-Non è possibile invece fare il contrario: oggetti della classe base non possono comparire in array di oggetti della superclasse:
-Pixel curva[3] = { Pixel(1,2,3), Punto(7,7), Pixel(5,6,3) } ;
-La seconda assegnazione darà errore: così come, negli scacchi, la regina può muovere come una torre, ma una torre non può muoversi come una regina, un oggetto di tipo Punto non contiene tutta l’informazione relativa ad un oggetto di tipo Pixel e quindi non può essere usato in sua sostituzione .
-Lo stesso discorso fatto per gli array, vale anche per i puntatori. Ad un puntatore ad un og­getto di tipo Punto può essere assegnato un oggetto di tipo Pixel, mentre l’operazione inversa causerà un errore di compilazione:
-Punto *ptr = new Pixel(1,2,3) ;  // OK
-Pixel *ptrP3 = new Punto(1,2) ;  // ERRORE!
-Il compilatore è quindi in grado di  capire la relazione che c’è fra una classe derivata e la sua classe base e di stabilire un cammino di coercizione dal tipo dell’oggetto a quello del puntatore. 
-Quello che invece la tipizzazione forte non gli permette (giustamente) di fare, è di accedere, tramite un puntatore ad una classe base, ai membri o alle funzioni di una classe derivata:
 
 
 Data una classe: `umano` si possono ridefinire gli operatori di relazione per capire se un oggetto sia piò o meno ricco o più o meno giovane di un altro, ma sarebbe estremamente complesso scrivere una funzione che permetta di capire se un oggetto sia più o meno amato da un altro.
