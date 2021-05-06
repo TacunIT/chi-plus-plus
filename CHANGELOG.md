@@ -1,3 +1,6 @@
+## 0.23.4 (May 06, 2021)
+  - Redazione paragrafo su classi e puntatori
+
 ## 0.23.3 (May 03, 2021)
   - Redatto paragrafo su classi base virtuali
 
