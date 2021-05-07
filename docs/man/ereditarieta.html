@@ -740,56 +740,197 @@ A un puntatore a oggetti di tipo <code>Persona</code> può essere assegnato un o
 Figlio  *ptrF = new Persona();  // ERRORE!
 </code></pre>
 
-<p>Il compilatore è in grado di capire la relazione che c’è fra una classe derivata e la sua classe base e può quindi stabilire un cammino di coercizione dal tipo dell’oggetto a quello del puntatore, ma non ha modo di accedere ai membri o alle funzioni di una classe derivata da un oggetto di classe base.</p>
+<p>Il compilatore è in grado di capire la relazione che c’è fra una classe derivata e la sua classe base e può quindi stabilire un cammino di coercizione dal tipo dell’oggetto a quello del puntatore, ma non ha modo di accedere ai membri o alle funzioni di una classe derivata da un oggetto di classe base.<br />
+Lo stesso discorso vale anche per i puntatori:</p>
+
+<pre><code>/** 
+ * @file ereditarieta-puntatori.cpp
+ * Gestione dei puntatori a classi derivate.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+using namespace std;
+
+class Persona {
+public:
+    void getClass(){
+        cout &lt;&lt; "Persona" &lt;&lt; endl;
+    }
+};
+
+class Madre : virtual public Persona {
+public:
+    void getClass(){
+        cout &lt;&lt; "Madre" &lt;&lt; endl;
+    }
+};
+ 
+int main(int argc, char** argv) 
+{
+    Madre   * ptrM = new Madre;
+    Persona * ptrP = ptrM ;
+    ptrM-&gt;getClass() ;
+    ptrP-&gt;getClass() ;
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili ed esegui questo codice, ottieni:</p>
+
+<pre><code>&gt; g++ src/cpp/ereditarieta-puntatori.cpp -o src/out/esempio 
+&gt; src/out/esempio 
+Madre
+Persona
+</code></pre>
+
+<p>Non c’è nessun errore: la funzione <code>getClass()</code> che interviene nella seconda istruzione di output non è, come ci si aspettava, quella della classe <code>Madre</code>, a cui l’oggetto appartiene, bensì quella della classe base, che è l’unica a cui il programma può accedere tramite un puntatore a oggetti di tipo <code>Persona</code>.</p>
+
+<hr id="funzioni-virtuali" />
+
+<p>Per far sì che una funzione membro di una classe derivata possa essere richiamata anche da puntatori a classi base, la si deve dichiarare come <code>virtual</code>.</p>
+
+<pre><code>/** 
+ * @file ereditarieta-funzioni-virtuali.cpp
+ * Gestione delle funzioni virtuali.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+using namespace std;
+
+class Persona {
+public:
+    virtual void getClass(){
+        cout &lt;&lt; "Persona" &lt;&lt; endl;
+    }
+};
+
+class Madre : virtual public Persona {
+public:
+    void getClass(){
+        cout &lt;&lt; "Madre" &lt;&lt; endl;
+    }
+};
+ 
+int main(int argc, char** argv) 
+{
+    Madre   * ptrM = new Madre;
+    Persona * ptrP = ptrM ;
+    ptrM-&gt;getClass() ;
+    ptrP-&gt;getClass() ;
+    return 0;
+}
+
+</code></pre>
+<p>L’output di questo codice è:</p>
+
+<pre><code>&gt; g++ src/cpp/ereditarieta-funzioni-virtuali.cpp \                 
+    -o src/out/esempio
+&gt; src/out/esempio                                 
+Madre
+Madre
+</code></pre>
+
+<p>Le <em>funzioni virtuali</em> sono delle funzioni che vengono richiamate in base alla classe dell’oggetto cui appartengono, indipendentemente dal tipo del riferimento o del puntatore che si utilizza. 
+Ciò è reso possibile da un meccanismo chiamato <em>binding dinamico</em> o <em>late binding</em>, che consiste nel posticipare il <em>linking</em> delle funzioni al momento dell’esecuzione del programma, contrariamente a quanto avviene per le funzioni membro normali, che sono collegate al codice in fase di compilazione — il cosiddetto <em>early binding</em>.<br />
+In pratica, la cosa funziona così: gli indirizzi di tutte le  funzioni dichiarate come <code>virtual</code> vengono memorizzati in una tabella interna e solo quando una di queste funzioni viene richiamata dal programma, il sistema ne cerca l’indirizzo, effettuandone poi il <em>linking</em> in tempo reale.
+Capisci da te che l’utilizzo delle funzioni virtuali, oltre a comportare un leg­gero ritardo nel tempo di esecuzione del programma, visto che l’indirizzo della funzione va ben cercato, impegna anche parte delle risorse del sistema per la memorizzazione della tabella degli indirizzi, quindi è bene non abusarne. <br />
+Le regole che riguardano l’utilizzo delle funzioni virtuali sono:</p>
+
+<ul>
+  <li>
+    <p>le versioni delle funzioni delle classi derivate debbono avere il medesi­mo tipo di ritorno ed i parametri della versione della classe base: se non è così, il compilatore considera differenti le due funzioni e l’effetto “virtuale” si perde;</p>
+  </li>
+  <li>
+    <p>una funzione <code>virtual</code> non può essere anche <code>static</code>: il concetto stesso di funzione virtuale prevede un collegamento fra un oggetto e una funzi­o­ne; le funzioni statiche sono indipendenti dagli oggetti della loro classe, quindi le due cose sono incompatibili;</p>
+  </li>
+  <li>
+    <p>una funzione può essere dichiarata <code>virtual</code> solo nella classe base: non è possibile effettuare la dichiarazione in una classe derivata;</p>
+  </li>
+  <li>
+    <p>si può ripetere la specifica <code>virtual</code> anche nelle classi derivate, ma non è necessario: lo vedi nell’esempio, dove la seconda versione della funzione <code>getClass()</code> non ha la parola chiave <code>virtual</code> davanti;</p>
+  </li>
+  <li>
+    <p>l’utilizzo dell’operatore di risoluzione della portata annulla inevitabilmente l’effetto delle funzioni virtuali;</p>
+  </li>
+</ul>
+
+<p>È possibile dichiarare una funzione virtuale nella classe base senza definirne il comportamento con la sintassi:</p>
+
+<pre><code>virtual &lt;tipo&gt; nomefunzione([argomenti]) = 0 ;
+</code></pre>
+
+<p>Questo tipo di funzioni si chiamano <i id="funzioni-virtuali-pure">funzioni virtuali pure</i> e, come vedremo fra poco, hanno delle conseguenze sulla classe a cui appartengono.</p>
 
 <!--
-Questa forma di polimorfismo, che può creare qualche problema se sfuttata per la ges­tione di array, risulta invece molto utile nel caso di code o stack, ma bisogna fare atten­zione, perché la tipizzazione forte del C++ potrebbe farvi qualche simpatico scherzetto:
-CHISONO.CPP - Scherzi del polimorfismo
-/////////////////////////////////////////////////////////////
-//
-//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
-//
-//	CHISONO.CPP - Scherzi del polimorfismo
-//
-/////////////////////////////////////////////////////////////
-#include <iostream.h>
-/////////////////////////////////////////////////////////////
-class A
+
+4.9   distruttori virtuali
+Nel paragrafo 4.7 abbiamo visto quali rischi si corrono ad accedere a funzioni membro di classi derivate tramite puntatori alle loro classi base. Anche i distruttori sono delle funzi­oni membro, quindi gli stessi rischi valgono anche per loro, con la diferenza che in questo caso l’importanza propria della funzione rende un’eventuale "malinteso" estremaemente più pericoloso. Per avere un’idea di quello che potrebbe succedere, date un’occhiata al prossimo esempio.
+Dichiariamo una classe base...
+
+class Padre
 {
+ private:
+		...
  public:
-		A() {} ;
-		void ChiSono()
-			{ cout << "Sono un oggetto di classe A \n" ; }
+		Padre() ;
+		~Padre() ;
+		...
 } ;
-/////////////////////////////////////////////////////////////
-class B :public A
+... e delle classi derivate:
+
+class Figlio : public Padre 
 {
+ private:
+		...
  public:
-		B() : A() {} ;
-		void ChiSono() 
-			{ cout << "Sono un oggetto di classe B \n" ; } 
+		Figlio() ;
+		~Figlio() ;
 } ;
-/////////////////////////////////////////////////////////////
-void main()
+
+class Nipote : public Figlio
 {
- B * ptrB = new B ;						// 001
- A * ptrA = ptrB ;						// 002
-					
-	ptrB->ChiSono() ;						// 003
-	ptrA->ChiSono() ;						// 004
+ private:
+		...
+ public:
+		Nipote() ;
+		~Nipote() ;
 } ;
-/////////////////////////////////////////////////////////////
-001  Crea un oggetto di tipo B.
-002  Punta all’oggetto con un puntatore alla sua classe base A.
-003  Accede alla funzione di output tramite il puntatore alla classe.
-004  Accede alla funzione di output tramite il puntatore alla classe base.
-L’output di questo listato è il seguente:
+Come abbiamo visto, le tre classi definite sopra possono essere assegnate a puntatori ad oggetti della classe base, quindi creiamo un array di puntatori ad oggetti della classe base ed assegnamogli delle istanze delle tre classi:
 
-Sono un oggetto di classe B
-Sono un oggetto di classe A
-Non c’è nessun errore: più semplicemente, la funzione ChiSono() che interviene nella seconda istruzione di output non è, come ci si aspettava, quella della classe derivata B a cui l’oggetto appartiene, bensì quella della classe base, che è l’unica a cui il programma può accedere tramite un puntatore ad oggetti di tipo A.
+Padre * dinastia[3] ;     // array di puntatori a Padre
 
+dinastia[0]= new Padre ;  // si assegnano i puntatori...
+dinastia[1]= new Figlio ;
+dinastia[2]= new Nipote ;
+Nessun compilatore vi darà mai errore per il codice precedente e, sfortunatamente, nemmeno per quello che segue:
 
+delete dinastia[0] ;  // elimina il padre
+delete dinastia[1] ;  // elimina il figlio
+delete dinastia[2] ;  // elimina il nipote
+Sfortunatamente, perché il distruttore chiamato, in tutti e tre i casi, sarà quello della classe base Padre, che quasi sempre non sarà in grado di eliminare correttamente l’oggetto della classe derivata, con le conseguenze che potete ben immaginare. 
+Per fortuna, come avviene per le funzioni membro ordinarie, anche nel caso dei distrut­tori questo genere di inconvenienti può essere evitato dichiarando il distruttore della classe base come virtuale:
+
+class Padre
+{
+ private:
+		...
+ public:
+		Padre() ;
+		virtual ~Padre() ;
+		...
+} ;
+Questo è tutto ciò che serve fare: come per le funzioni normali, se il distruttore è stato dichiarato virtual nella classe base, non c’è bisogno di ridefinire la cosa anche per le classi derivate. Adesso se andassimo a distruggere l’array dinastia, per ciascun og­getto verrebbe chiamato il distruttore adatto:
+
+Persona * dinastia[] = { Padre(), Figlio(), Nipote() } ;
+
+delete dinastia[0] ;	// chiama il distruttore di Padre
+delete dinastia[1] ;	// chiama il distruttore di Figlio
+delete dinastia[2] ;	// chiama il distruttore di Nipote
 
 Data una classe: `umano` si possono ridefinire gli operatori di relazione per capire se un oggetto sia piò o meno ricco o più o meno giovane di un altro, ma sarebbe estremamente complesso scrivere una funzione che permetta di capire se un oggetto sia più o meno amato da un altro.
 Nel caso di oggetti che hanno una linea genealogica comune, la funzione potrebbe basarsi, come dice Dawkins, sulla percentuale di DNA che i due oggetti condividono, moltiplicata per il tempo passato insieme, tenendo conto anche di com'è stato quel tempo, ma nel caso di due oggetti che appartengono a genealogie differenti, quale sarebbe l'algoritmo?
