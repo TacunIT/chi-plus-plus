@@ -1,3 +1,6 @@
+## 0.23.5 (May 07, 2021)
+  - Redazione del paragrafo sulle funzioni virtuali
+
 ## 0.23.4 (May 06, 2021)
   - Redazione paragrafo su classi e puntatori
 
