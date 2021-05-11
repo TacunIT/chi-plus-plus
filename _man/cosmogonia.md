@@ -4,5 +4,5 @@ layout:     manuale
 class:      capitolo
 title:      Cosmogonia
 permalink:  /man/cosmogonia
-quote:      "Da dove questa applicazione sia sorta, se lui l’ha fondata oppure no: lui che la sorveglia nel più alto dei cieli, lui solo lo sa, o forse non lo sa"
+quote:      "Invero è cosa piuttosto strana a udirsi, ma il nome che noi almeno vi diamo – un nome a cui, per difetto di esperienza in materia, non penserebbe nessuno – è: Spazionismo"
 ---

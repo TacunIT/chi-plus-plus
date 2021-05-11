@@ -89,48 +89,16 @@ I dati e le funzioni membro di una classe sono direttamente accessibili alle fun
 Il primo, detto *operatore di selezione diretta*, viene utilizzato con istanze della classe; il secondo, detto *operatore di selezi­one indiretta*, con puntatori ad esse:
 
 ```
-class Punto
-{
-public:             
-    
-    /** Dichiara i dati membro della classe */
-    int _x, _y;
-
-    /** 
-     *  Le funzioni interne alla classe accedono ai
-     *  dati membro con la sintassi ordinaria.
-     */  
-    Punto(int x, int y) {
-        _x = x;
-        _y = y;
-    }
-} ;
-
-int main(int argc, char** argv) 
-{
-    /** Crea un oggetto di classe Punto */
-    Punto p(5,6);       
-
-    /** Assegna l'istanza della classe al puntatore ptr */
-    Punto *ptr = &p ;   
-    
-    /** 
-     *  Le funzioni esterne alla classe accedono ai
-     *  dati membro tramite gli operatori di selezione.
-     */  
-    p._x    = 3 ;       // assegna un valore tramite l'oggetto
-    ptr->_y = 2 ;       // assegna un valore tramite il puntatore
-    ...
-}
+{% include_relative src/classi-punto.cpp %}
 ```
 
-L'etichetta `public` che vedi all'inizio della dichiarazione della classe è un *indicatore di accesso* e serve a stabilire quali membri della classe siano accessibili a funzioni esterne e quali invece siano riservati in esclusiva alla classe stessa.
+L'etichetta `public` che vedi all'inizio della dichiarazione della classe è un <i id="specificatori-accesso">specificatore di accesso</i> e serve a stabilire quali membri della classe siano accessibili a funzioni esterne e quali invece siano riservati in esclusiva alla classe stessa.
 
 > il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a href="/man/note#selvaggio" class="nota"></a>.
 
 Questa frase di Lucien Lévy-Bruhl si applica anche alle classi del C++. 
 Sia gli attributi che i metodi di una classe possono essere protetti da accessi o modifiche indebite grazie ai modificatori di accesso `private`, `protected` e `public`.
-I metodi o gli attributi dichiarati *private* sono accessibili solo alla classe stessa; quelli dichiarati come *protected* sono accessibili alla classe e a eventuali <a href="/man/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come *public* sono accessibili a qualunque elemento del programma.
+I metodi o gli attributi dichiarati `private` sono accessibili solo alla classe stessa; quelli dichiarati come `protected` sono accessibili alla classe e a eventuali <a href="/man/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come `public` sono accessibili a qualunque elemento del programma.
 In mancanza di specifiche, tutti i dati e le funzioni di una classe verranno considerati:
 
 -	*privati*, nel caso di una classe;
@@ -152,7 +120,7 @@ class Persona
 };
 ```
 
-Questo tipo di ordinamento della dichiarazione, oltre a garantirti una maggiore leggibilità del codice, ti consentirà, se lo desideri, di omettere l’indicatore di accesso `private` iniziale (è la soluzione di default, ricordi?).  
+Questo tipo di ordinamento della dichiarazione, oltre a garantirti una maggiore leggibilità del codice, ti consentirà, se lo desideri, di omettere lo specificatore di accesso `private` iniziale (è la soluzione di default, ricordi?).  
 Mettiamo in pratica tutto ciò, convertendo in classe la struttura `Orario`:
 
 ```
@@ -536,7 +504,7 @@ class
 ```
 
 Questo codice dichiara allo stesso tempo la classe e la sua unica istanza, la variabile globale `obj`.  
-Quando il Maestro Canaro provò a fare il *porting* dell'<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a>, avrebbe voluto utilizzare una classe anonima per la variabile `Dio`, perché, priva di un costruttore e generata dalla sua stessa classe, quella variabile sarebbe stata visibile in tutto il codice, ma nessuna parte del programma ne avrebbe potuta generare un'altra:
+Quando il Maestro Canaro provò a fare il *porting* dell'<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a>, avrebbe voluto utilizzare una classe anonima per la variabile `Dio`, perché, priva di un costruttore e istanziata dalla sua stessa classe, quella variabile sarebbe stata visibile in tutto il codice, ma nessuna parte del programma ne avrebbe potuta generare un'altra:
 
 ```
 {% include_relative src/classi-dio.cpp %}
@@ -626,8 +594,9 @@ Auspica che il nuovo ciclo di esistenza sia migliore dei precedenti, ma non desi
  > {{ site.data.citazioni.straulino.testo }} 
 
  L'Uno si comporta in maniera simile: ligio al precetto del *Wu Wei*<a href="/man/note#wu-wei" class="nota"></a> taoista, pone le condizioni necessarie per il ripetersi degli eventi che si sono rivelati benefici, ma non li impone.
- Le regole non devono essere una rete che imprigiona e immoblizza, ma una rete che salva e sostiene, così come il “religare” delle religioni non deve essere un legame che impastoia, ma che sorregge.
-Per questo motivo, l'Uno definisce delle regole, ma lascia le sue istanze libere di trasgredirle, perché sa che l'evoluzione è sempre frutto di un errore venuto male, di qualcosa che non sarebbe dovuto esssere così e invece così è meglio.   
+Scrive l'analisi del sistema, ma lascia che siano i programmatori a scrivere il codice, anche se sa che faranno certamente degli errori. 
+Definisce delle regole, ma lascia le sue istanze libere di trasgredirle, perché sa che l'evoluzione è sempre frutto di un errore venuto male, di qualcosa che non sarebbe dovuto esssere così e invece così è meglio.   
+Le regole non devono essere una rete che imprigiona e immoblizza, ma una rete che salva e sostiene, così come il “religare” delle religioni non deve essere un legame che impastoia, ma che sorregge.
 Le regole che definiscono e quindi limitano la nostra esistenza sono come un edificio che abbia una struttura in cemento armato e dei muri in cartongesso. 
 I muri interni possono essere abbattuti o modificati, se necessario, ma i pilastri e le travi devono essere lasciati al loro posto.
 Similmente, la modifica delle regole può essere benefica, ma deve essere permessa solo a chi le conosce bene <!-- per esempio, Gesù --> perché un carpentiere maldestro portrebbe - per errore o per stupidità - rimuovere uno dei pilastri portanti mettendo in pericolo la solidità dell'edificio. <!-- per esempio, il Movimento del '68 -->  
@@ -650,7 +619,7 @@ Ciò che siamo realmente, la nostra essenza, si manifesta in ciò che facciamo i
 
 <!--
 
-Visibilità delle classi.
-
+@todo: aggiungere  le specifiche sulla visibilità delle classi 
+@todo: aggiungere specifiche sull'ordine di inizalizzazione nel costruttore
 
 -->
