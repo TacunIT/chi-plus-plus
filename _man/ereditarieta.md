@@ -351,7 +351,7 @@ Madre
 Le *funzioni virtuali* sono delle funzioni che vengono richiamate in base alla classe dell’oggetto cui appartengono, indipendentemente dal tipo del riferimento o del puntatore che si utilizza. 
 Ciò è reso possibile da un meccanismo chiamato *binding dinamico* o *late binding*, che consiste nel posticipare il *linking* delle funzioni al momento dell’esecuzione del programma, contrariamente a quanto avviene per le funzioni membro normali, che sono collegate al codice in fase di compilazione &mdash; il cosiddetto *early binding*.  
 In pratica, la cosa funziona così: gli indirizzi di tutte le  funzioni dichiarate come `virtual` vengono memorizzati in una tabella interna e solo quando una di queste funzioni viene richiamata dal programma, il sistema ne cerca l’indirizzo, effettuandone poi il *linking* in tempo reale.
-Capisci da te che l’utilizzo delle funzioni virtuali, oltre a comportare un leg­gero ritardo nel tempo di esecuzione del programma, visto che l’indirizzo della funzione va ben cercato, impegna anche parte delle risorse del sistema per la memorizzazione della tabella degli indirizzi, quindi è bene non abusarne.   
+Capisci da te che l’utilizzo delle funzioni virtuali, oltre a comportare un leg­gero ritardo nel tempo di esecuzione del programma, visto che l’indirizzo della funzione va ben cercato, impegna anche parte delle risorse del sistema per la memorizzazione della tabella degli indirizzi, quindi, come per tutte le cose, è bene non abusarne.   
 Le regole che riguardano l’utilizzo delle funzioni virtuali sono:
 
 - le versioni delle funzioni delle classi derivate debbono avere il medesi­mo tipo di ritorno ed i parametri della versione della classe base: se non è così, il compilatore considera differenti le due funzioni e l’effetto "virtuale" si perde;
@@ -362,17 +362,71 @@ Le regole che riguardano l’utilizzo delle funzioni virtuali sono:
 
 - si può ripetere la specifica `virtual` anche nelle classi derivate, ma non è necessario: lo vedi nell’esempio, dove la seconda versione della funzione `getClass()` non ha la parola chiave `virtual` davanti;
 
-- l’utilizzo dell’operatore di risoluzione della portata annulla inevitabilmente l’effetto delle funzioni virtuali;
+- l’utilizzo dell’operatore di risoluzione della portata annulla inevitabilmente l’effetto delle funzioni virtuali.
 
-<hr id="funzioni-virtuali-pure">
+<hr id="classi-astratte">
 
-È possibile dichiarare una funzione virtuale nella classe base senza definirne il comportamento con la sintassi:
+È possibile dichiarare una funzione virtuale nella classe base senza definirne il comportamento, se si utilizza la sintassi:
 
 ```
 virtual <tipo> nomefunzione([argomenti]) = 0 ;
 ```    
 
-Questo tipo di funzioni si chiamano <i id="funzioni-virtuali-pure">funzioni virtuali pure</i> e, come vedremo fra poco, hanno delle conseguenze sulla classe a cui appartengono.
+Questo tipo di funzioni si chiamano <i id="funzioni-virtuali-pure">funzioni virtuali pure</i> e rendono la classe a cui appartengono una *classe astratta*.  
+Le classi astratte sono delle classi generiche che possono essere utilizzate come capostipiti per una discendenza di classi specializzate, ma che non possono essere utiliz­zate direttamente.
+Le regole che si applicano alle classi astratte sono:
+
+- viene considerata astratta qualunque classe che abbia almeno una funzi­one virtuale pura;
+- le funzioni virtuali pure sono ereditate come dalle classi derivate come funzioni virtuali pure, quindi, se una classe derivata non ridefinisce una funzione virtuale pura della sua classe base sarà considerata dal compilatore come una classe as­tratta;
+- non si possono utilizzare classi astratte come argomenti o come tipi di ritorno di funzioni;
+- le classi astratte non possono essere il tipo di un oggetto o di una con­versione esplicita.
+
+Data una classe astratta `Mammifero`, le istruzioni seguenti causerebbero degli errori di compilazione:
+
+```
+void funz(Mammifero m);  // non possono essere argomenti..
+Mammifero funz();        // nè valori di ritorno..
+Mammifero pollo;         // nè il tipo di un oggetto()..
+punt = (Mammifero*)ptr;  // nè il tipo di una conversione.
+```
+
+È possibile, però, dichiarare un puntatore o una *reference* ad una classe astratta e utilizzarli per creare degli array o delle code che possano essere utilizzati con istanze di classi diverse: 
+
+```
+{% include_relative src/ereditarieta-classi-astratte.cpp %}
+```
+
+Se compili ed esegui questo codice, otterrai:
+
+```
+> g++ src/cpp/ereditarieta-classi-astratte.cpp -o src/out/esempio
+> src/out/esempio                                                
+cane
+femmina
+Scylla
+cane
+femmina
+```
+
+La classe base `Mammifero` definisce solo un’astrazione, lasciando alle sue classi derivate il compito di definire attributi e metodi specifici per ciascuna specie particolare. 
+Allo stesso modo, la funzione `getSpecie` definisce solo un concetto, non un algoritmo; saranno le singole classi deri­vate a ridefinire il comportamento della funzione, adattandolo alle proprie esigen­ze. 
+È possibile, comunque, definire un comporta­mento anche per le funzioni virtuali pure.
+Per la classe `Mammifero` potrebbe essere qualcosa di simile:
+
+```
+inline void Mammifero::getSpecie() 
+{
+	cout << "nessuna" << endl ;
+
+}
+```
+
+Non potendo esistere oggetti di classe `Mammifero`, la versione base della funzione `getSpecie` può essere richiamata solo facendo uso dell’operatore `::` 
+
+```
+mioCane.Mammifero::getSpecie();
+cane.Mammifero::getSpecie();
+```
 
 <!--
 
