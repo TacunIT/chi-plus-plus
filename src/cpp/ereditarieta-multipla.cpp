@@ -10,7 +10,7 @@
 using namespace std;
 
 enum Acqua  { dolce, salata };
-enum Sesso  { indeterminato, maschio, femmina};
+enum Sesso  { maschio, femmina, boh};
 enum Colore { rosso, blu, verde, argento };
 
 /** 
@@ -74,7 +74,7 @@ protected:
 public:
 
     /** Costruttore della classe inline */
-    Pesce(Sesso sesso = indeterminato, const char* specie = "ignota") 
+    Pesce(Sesso sesso = boh, const char* specie = "ignota") 
     : _sesso(sesso), _specie(specie)
     {
         _n_pesci++;        
