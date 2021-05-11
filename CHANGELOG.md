@@ -1,3 +1,7 @@
+## 0.23.6 (May 11, 2021)
+  - Completata prima stesura della sezione tecnica del capitolo sull'ereditarietà
+  - Aggiunto codice di esempio per distruttori virtuali
+
 ## 0.23.5 (May 07, 2021)
   - Redazione del paragrafo sulle funzioni virtuali
 
