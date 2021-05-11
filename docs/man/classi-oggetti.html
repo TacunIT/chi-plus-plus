@@ -225,7 +225,17 @@ Quando si crea una variabile di classe <code>X</code>, si dice che si: <em>istan
 I dati e le funzioni membro di una classe sono direttamente accessibili alle funzioni membro della classe, ma per utilizzarli all’interno di funzioni esterne alla classe, si devono utilizzare gli operatori di selezione <code>.</code> e <code>-&gt;</code>. 
 Il primo, detto <em>operatore di selezione diretta</em>, viene utilizzato con istanze della classe; il secondo, detto <em>operatore di selezi­one indiretta</em>, con puntatori ad esse:</p>
 
-<pre><code>class Punto
+<pre><code>/** 
+ * @file classi-punto.cpp
+ * Accesso ai dati membro della classe.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+
+using namespace std;
+
+class Punto
 {
 public:             
     
@@ -256,11 +266,13 @@ int main(int argc, char** argv)
      */  
     p._x    = 3 ;       // assegna un valore tramite l'oggetto
     ptr-&gt;_y = 2 ;       // assegna un valore tramite il puntatore
-    ...
+    
+    //...
 }
+
 </code></pre>
 
-<p>L’etichetta <code>public</code> che vedi all’inizio della dichiarazione della classe è un <em>indicatore di accesso</em> e serve a stabilire quali membri della classe siano accessibili a funzioni esterne e quali invece siano riservati in esclusiva alla classe stessa.</p>
+<p>L’etichetta <code>public</code> che vedi all’inizio della dichiarazione della classe è un <i id="specificatori-accesso">specificatore di accesso</i> e serve a stabilire quali membri della classe siano accessibili a funzioni esterne e quali invece siano riservati in esclusiva alla classe stessa.</p>
 
 <blockquote>
   <p>il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a href="/man/note#selvaggio" class="nota"></a>.</p>
@@ -268,7 +280,7 @@ int main(int argc, char** argv)
 
 <p>Questa frase di Lucien Lévy-Bruhl si applica anche alle classi del C++. 
 Sia gli attributi che i metodi di una classe possono essere protetti da accessi o modifiche indebite grazie ai modificatori di accesso <code>private</code>, <code>protected</code> e <code>public</code>.
-I metodi o gli attributi dichiarati <em>private</em> sono accessibili solo alla classe stessa; quelli dichiarati come <em>protected</em> sono accessibili alla classe e a eventuali <a href="/man/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come <em>public</em> sono accessibili a qualunque elemento del programma.
+I metodi o gli attributi dichiarati <code>private</code> sono accessibili solo alla classe stessa; quelli dichiarati come <code>protected</code> sono accessibili alla classe e a eventuali <a href="/man/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come <code>public</code> sono accessibili a qualunque elemento del programma.
 In mancanza di specifiche, tutti i dati e le funzioni di una classe verranno considerati:</p>
 
 <ul>
@@ -291,7 +303,7 @@ Quindi, a meno che tu non abbia delle buone ragioni per fare altrimenti (e ce ne
 };
 </code></pre>
 
-<p>Questo tipo di ordinamento della dichiarazione, oltre a garantirti una maggiore leggibilità del codice, ti consentirà, se lo desideri, di omettere l’indicatore di accesso <code>private</code> iniziale (è la soluzione di default, ricordi?).<br />
+<p>Questo tipo di ordinamento della dichiarazione, oltre a garantirti una maggiore leggibilità del codice, ti consentirà, se lo desideri, di omettere lo specificatore di accesso <code>private</code> iniziale (è la soluzione di default, ricordi?).<br />
 Mettiamo in pratica tutto ciò, convertendo in classe la struttura <code>Orario</code>:</p>
 
 <pre><code>class Orario {
@@ -757,7 +769,7 @@ L’unico modo per dichiarare un ogetto con classe anonima è di aggiungerlo all
 </code></pre>
 
 <p>Questo codice dichiara allo stesso tempo la classe e la sua unica istanza, la variabile globale <code>obj</code>.<br />
-Quando il Maestro Canaro provò a fare il <em>porting</em> dell’<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a>, avrebbe voluto utilizzare una classe anonima per la variabile <code>Dio</code>, perché, priva di un costruttore e generata dalla sua stessa classe, quella variabile sarebbe stata visibile in tutto il codice, ma nessuna parte del programma ne avrebbe potuta generare un’altra:</p>
+Quando il Maestro Canaro provò a fare il <em>porting</em> dell’<a href="/man/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a>, avrebbe voluto utilizzare una classe anonima per la variabile <code>Dio</code>, perché, priva di un costruttore e istanziata dalla sua stessa classe, quella variabile sarebbe stata visibile in tutto il codice, ma nessuna parte del programma ne avrebbe potuta generare un’altra:</p>
 
 <pre><code>/** 
  * @file classi-dio.cpp
@@ -992,8 +1004,9 @@ Auspica che il nuovo ciclo di esistenza sia migliore dei precedenti, ma non desi
 </blockquote>
 
 <p>L’Uno si comporta in maniera simile: ligio al precetto del <em>Wu Wei</em><a href="/man/note#wu-wei" class="nota"></a> taoista, pone le condizioni necessarie per il ripetersi degli eventi che si sono rivelati benefici, ma non li impone.
- Le regole non devono essere una rete che imprigiona e immoblizza, ma una rete che salva e sostiene, così come il “religare” delle religioni non deve essere un legame che impastoia, ma che sorregge.
-Per questo motivo, l’Uno definisce delle regole, ma lascia le sue istanze libere di trasgredirle, perché sa che l’evoluzione è sempre frutto di un errore venuto male, di qualcosa che non sarebbe dovuto esssere così e invece così è meglio. <br />
+Scrive l’analisi del sistema, ma lascia che siano i programmatori a scrivere il codice, anche se sa che faranno certamente degli errori. 
+Definisce delle regole, ma lascia le sue istanze libere di trasgredirle, perché sa che l’evoluzione è sempre frutto di un errore venuto male, di qualcosa che non sarebbe dovuto esssere così e invece così è meglio. <br />
+Le regole non devono essere una rete che imprigiona e immoblizza, ma una rete che salva e sostiene, così come il “religare” delle religioni non deve essere un legame che impastoia, ma che sorregge.
 Le regole che definiscono e quindi limitano la nostra esistenza sono come un edificio che abbia una struttura in cemento armato e dei muri in cartongesso. 
 I muri interni possono essere abbattuti o modificati, se necessario, ma i pilastri e le travi devono essere lasciati al loro posto.
 Similmente, la modifica delle regole può essere benefica, ma deve essere permessa solo a chi le conosce bene <!-- per esempio, Gesù --> perché un carpentiere maldestro portrebbe - per errore o per stupidità - rimuovere uno dei pilastri portanti mettendo in pericolo la solidità dell’edificio. <!-- per esempio, il Movimento del '68 --><br />
@@ -1015,8 +1028,8 @@ Ciò che siamo realmente, la nostra essenza, si manifesta in ciò che facciamo i
 
 <!--
 
-Visibilità delle classi.
-
+@todo: aggiungere  le specifiche sulla visibilità delle classi 
+@todo: aggiungere specifiche sull'ordine di inizalizzazione nel costruttore
 
 -->
 

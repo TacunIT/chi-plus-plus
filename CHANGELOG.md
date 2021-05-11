@@ -1,3 +1,32 @@
+## 0.23.6 (May 11, 2021)
+  - Completata prima stesura della sezione tecnica del capitolo sull'ereditarietà
+  - Aggiunto codice di esempio per distruttori virtuali
+
+## 0.23.5 (May 07, 2021)
+  - Redazione del paragrafo sulle funzioni virtuali
+
+## 0.23.4 (May 06, 2021)
+  - Redazione paragrafo su classi e puntatori
+
+## 0.23.3 (May 03, 2021)
+  - Redatto paragrafo su classi base virtuali
+
+## 0.23.2 (May 02, 2021)
+  - Iniziato paragrafo su classi base vituali
+  - Aggiunto codice di esempio per ordine chiamata costruttori
+  - Costruttori classi derivate
+
+## 0.23.1 (April 27, 2021)
+  - Esempio della visibilità delle classi derivate
+
+## 0.23.0 (April 25, 2021)
+  - Codice di esempio per la classe Pesce
+  - Iniziata redazione capitolo sull'ereditarietà
+  - Configurata la directory _post per gestire il log del sistema
+  - Aggiunta pagina ringraziamenti a manuale. 
+  - Fatta pulizia di file obsoleti.
+  - Invertiti i capitoli su ereditarietà e polimorfismo
+
 ## 0.22.12 (April 19, 2021)
   - Revisione del testo del capitolo
 
