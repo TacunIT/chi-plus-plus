@@ -305,8 +305,9 @@ Persona *ptrP = new Figlio() ;  // OK
 Figlio  *ptrF = new Persona();  // ERRORE!
 ```
 
-Il compilatore è in grado di capire la relazione che c’è fra una classe derivata e la sua classe base e può quindi stabilire un cammino di coercizione dal tipo dell’oggetto a quello del puntatore, ma non ha modo di accedere ai membri o alle funzioni di una classe derivata da un oggetto di classe base.  
-Lo stesso discorso vale anche per i puntatori:
+Il compilatore è in grado di capire la relazione che c’è fra una classe derivata e la sua classe base e può quindi stabilire un cammino di coercizione dal tipo dell’oggetto a quello del puntatore, ma non ha modo di accedere ai membri o alle funzioni di una classe derivata da un oggetto di classe base.   
+Abbiamo detto <a href="/man/tipi-di-dato#puntatori" class="xref">a suo tempo</a> che i puntatori sono come delle maschere che isolano determinate sequenze di bit, la cui dimensione varia a seconda del tipo del puntatore. 
+Lo stesso discorso vale anche per le classi: un puntatore di classe base associato a un oggetto di classe derivata “vedrà” solo i dati e le funzioni della sua classe:
 
 ```
 {% include_relative src/ereditarieta-puntatori.cpp %}
@@ -322,6 +323,13 @@ Persona
 ```
 
 Non c’è nessun errore: la funzione `getClass()` che interviene nella seconda istruzione di output non è, come ci si aspettava, quella della classe `Madre`, a cui l’oggetto appartiene, bensì quella della classe base, che è l’unica a cui il programma può accedere tramite un puntatore a oggetti di tipo `Persona`.  
+Questo comportamento (corretto) del programma diventa particolarmente rischioso se la classe ha un distruttore:
+
+```
+{% include_relative src/ereditarieta-distruttori.cpp %}
+```
+
+Nessun compilatore ti darà mai errore per questo codice, ma il distruttore chiamato, in tutti e tre i casi, sarà quello della classe base `Padre`, con conseguenze che spaziano dal problematico al disastroso. 
 
 <hr id="funzioni-virtuali">
 
@@ -356,6 +364,8 @@ Le regole che riguardano l’utilizzo delle funzioni virtuali sono:
 
 - l’utilizzo dell’operatore di risoluzione della portata annulla inevitabilmente l’effetto delle funzioni virtuali;
 
+<hr id="funzioni-virtuali-pure">
+
 È possibile dichiarare una funzione virtuale nella classe base senza definirne il comportamento con la sintassi:
 
 ```
@@ -366,69 +376,6 @@ Questo tipo di funzioni si chiamano <i id="funzioni-virtuali-pure">funzioni virt
 
 <!--
 
-4.9   distruttori virtuali
-Nel paragrafo 4.7 abbiamo visto quali rischi si corrono ad accedere a funzioni membro di classi derivate tramite puntatori alle loro classi base. Anche i distruttori sono delle funzi­oni membro, quindi gli stessi rischi valgono anche per loro, con la diferenza che in questo caso l’importanza propria della funzione rende un’eventuale "malinteso" estremaemente più pericoloso. Per avere un’idea di quello che potrebbe succedere, date un’occhiata al prossimo esempio.
-Dichiariamo una classe base...
-
-class Padre
-{
- private:
-		...
- public:
-		Padre() ;
-		~Padre() ;
-		...
-} ;
-... e delle classi derivate:
-
-class Figlio : public Padre 
-{
- private:
-		...
- public:
-		Figlio() ;
-		~Figlio() ;
-} ;
-
-class Nipote : public Figlio
-{
- private:
-		...
- public:
-		Nipote() ;
-		~Nipote() ;
-} ;
-Come abbiamo visto, le tre classi definite sopra possono essere assegnate a puntatori ad oggetti della classe base, quindi creiamo un array di puntatori ad oggetti della classe base ed assegnamogli delle istanze delle tre classi:
-
-Padre * dinastia[3] ;     // array di puntatori a Padre
-
-dinastia[0]= new Padre ;  // si assegnano i puntatori...
-dinastia[1]= new Figlio ;
-dinastia[2]= new Nipote ;
-Nessun compilatore vi darà mai errore per il codice precedente e, sfortunatamente, nemmeno per quello che segue:
-
-delete dinastia[0] ;  // elimina il padre
-delete dinastia[1] ;  // elimina il figlio
-delete dinastia[2] ;  // elimina il nipote
-Sfortunatamente, perché il distruttore chiamato, in tutti e tre i casi, sarà quello della classe base Padre, che quasi sempre non sarà in grado di eliminare correttamente l’oggetto della classe derivata, con le conseguenze che potete ben immaginare. 
-Per fortuna, come avviene per le funzioni membro ordinarie, anche nel caso dei distrut­tori questo genere di inconvenienti può essere evitato dichiarando il distruttore della classe base come virtuale:
-
-class Padre
-{
- private:
-		...
- public:
-		Padre() ;
-		virtual ~Padre() ;
-		...
-} ;
-Questo è tutto ciò che serve fare: come per le funzioni normali, se il distruttore è stato dichiarato virtual nella classe base, non c’è bisogno di ridefinire la cosa anche per le classi derivate. Adesso se andassimo a distruggere l’array dinastia, per ciascun og­getto verrebbe chiamato il distruttore adatto:
-
-Persona * dinastia[] = { Padre(), Figlio(), Nipote() } ;
-
-delete dinastia[0] ;	// chiama il distruttore di Padre
-delete dinastia[1] ;	// chiama il distruttore di Figlio
-delete dinastia[2] ;	// chiama il distruttore di Nipote
 
 Data una classe: `umano` si possono ridefinire gli operatori di relazione per capire se un oggetto sia piò o meno ricco o più o meno giovane di un altro, ma sarebbe estremamente complesso scrivere una funzione che permetta di capire se un oggetto sia più o meno amato da un altro.
 Nel caso di oggetti che hanno una linea genealogica comune, la funzione potrebbe basarsi, come dice Dawkins, sulla percentuale di DNA che i due oggetti condividono, moltiplicata per il tempo passato insieme, tenendo conto anche di com'è stato quel tempo, ma nel caso di due oggetti che appartengono a genealogie differenti, quale sarebbe l'algoritmo?
