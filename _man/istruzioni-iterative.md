@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Istruzioni iterative
 permalink:  /man/istruzioni-iterative
-quote:      "Dopo di me, il reboot"
+quote:      "Invero è cosa piuttosto strana a udirsi, ma il nome che noi almeno vi diamo – un nome a cui, per difetto di esperienza in materia, non penserebbe nessuno – è: Spazionismo"
 ---
 
 Le istruzioni di ciclo sono le componenti fondamentali della programmazione.  

@@ -13,7 +13,7 @@ O della stronza di Ipanema, che ha reso ricco Jobim
 Differenza con i manuali SW (in cui i termini utilizzati sono tutti definiti) e le le classi C++
 Nota 7 (S.Gregorio++)
 
-<!-- la negazione e il paradosso come metodo per comprendere ciò che non è di per sé evidente -->
+La negazione e il paradosso come metodo per comprendere ciò che non è di per sé evidente,
 
 <!--
     @todo - differenza fra verità epistemica e verità realista in Filosofia di House, pag. 100 e seguenti 
@@ -23,3 +23,21 @@ Nota 7 (S.Gregorio++)
 \[cfr. *Breve storia dell'infinito*, pagg. 30-40\]
 
 Si può dire che esista qualcosa che non ha dimensioni?
+
+
+quote:      "Dopo di me, il reboot"
+
+
+ESTETICA:
+quote:      "*.* è il migliore"
+Mentre era in un negozio di hardware, il Maestro Canaro sentì questo dialogo tra il proprietario e un suo cliente:
+«Dammi il miglior router Wireless che hai» disse il cliente.
+«Nella mia bottega tutto è il migliore» ribatté il venditore di hardware. «Qui non trovi un router Wireless che non sia il migliore».
+A queste parole, il Maestro Canaro fu illuminato.
+
+Nella Lettera agli artisti, Giovanni Paolo II utilizza i termini \'buono\' e \'bello\', ma li definisce in maniera ricorsiva, l\'uno in funzione dell\'altro. 
+
+> La bellezza è in un certo senso l'espressione visibile del bene, come il bene è la condizione metafisica della bellezza.
+
+Stesso discorso per il concetto di \'Arte\'
+Bizzarro, perché la stessa cosa avviene, in condizioni diametralmente opposte, in "Un'etica senza Dio" di Lecaldano, dove ci si appella a concetti di 'buono' e 'giusto' senza definirli.
