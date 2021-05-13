@@ -431,10 +431,45 @@ cane.Mammifero::getSpecie();
 Ma se si rispetta la loro vera natura, riveleranno questa natura come funzioni.
 <a class="nota" href="/man/note#miti"></a>
 
-<!--
+Buona parte degli esempii e delle cose che ti ho detto in questa lezione le ho prese dal manuale di programmazione in C++ che il Maestro Canaro scrisse nel Secolo scorso, modificandole per adattarle a questo contesto.   
+Per esempio, l'esempio delle funzioni virtuali, era così:
 
+```
+{% include_relative src/ereditarieta-codice-canaro.cpp %}
+```
 
+Essendo un codice scritto per l'ambiente Microsoft del 1995, se provassi a compilarlo adesso, con il compilatore Gnu, otterresti tutta una serie di errori:
 
-Forse come classi astratte
-
--->
+```
+> g++ src/cpp/ereditarieta-codice-canaro.cpp -o src/out/esempio
+src/cpp/ereditarieta-codice-canaro.cpp:8:10: 
+fatal error: 'iostream.h' file not found
+#include <iostream.h>
+         ^~~~~~~~~~~~
+src/cpp/ereditarieta-codice-canaro.cpp:13:8: 
+error: use of undeclared identifier 'cout'; 
+did you mean 'std::cout'?
+        { cout << "Sono un oggetto di classe A \n" ; } 
+          ^~~~
+          std::cout
+/Library/Developer/CommandLineTools/usr/bin/
+../include/c++/v1/iostream:54:33: note: 
+'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+src/cpp/ereditarieta-codice-canaro.cpp:21:8: 
+error: use of undeclared identifier 'cout'; 
+did you mean 'std::cout'?
+        { cout << "Sono un oggetto di classe B \n" ; } 
+          ^~~~
+          std::cout
+/Library/Developer/CommandLineTools/usr/bin/
+../include/c++/v1/iostream:54:33: note: '
+std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+src/cpp/ereditarieta-codice-canaro.cpp:24:1: 
+error: 'main' must return 'int'
+void main()
+^~~~
+```
