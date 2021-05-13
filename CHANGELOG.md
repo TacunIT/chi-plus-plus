@@ -1,3 +1,7 @@
+## 0.24.0 (May 13, 2021)
+  - Rivista assegnazione delle citazioni ai capitoli
+  - Rimossi i capitoli su C'i++, estetica e cosmogonia.
+
 ## 0.23.7 (May 13, 2021)
   - Iniziata sezione dottrina per il capitolo sull'ereditarietà
   - Rinominato il capitolo sulla memoria
