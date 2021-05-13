@@ -1,4 +1,30 @@
 # Note­
+
+./_var/NOTE.md:31:quote:            "Da dove questa applicazione sia sorta, se lui l’ha fondata oppure no: lui che la sorveglia nel più alto dei cieli, lui solo lo sa, o forse non lo sa"
+./_man/istruzioni-condizionali:      "Fare qualcosa d’intenzionale implica capire che esistono delle alternative, e sceglierne una; e questi sono attributi dell’intelligenza"
+./_man/debug.md:8:quote:        Cento Mondi di peccato sono dissipati dalla luce di un solo ticket
+./_man/polimorfismo:            Non puoi immergere i tuoi byte due volte nello stesso stream
+./_man/mitopoietica:            "Il settimo giorno, Dio fece il backup"
+./_man/funzioni:                "Call me: IsNull"
+./_man/memoria:                 "cogito ∴ sum()"
+./_man/preprocessore:           Tutte le potenze, tranne quella di 1, crescono
+./_man/ereditarieta:            "We few, we happy few<br />We bunch of data"
+./_man/commenti:                "Il Compilatore e il Linker non usano carità, tengono i diecimila oggetti per cani di paglia"
+./_man/c-plus-plus:             "Non chiederti cosa può fare per te il sistema operativo;
+./_man/incipit.md:8:quote:      *.* è il migliore
+./_man/istruzioni-iterative:    "Invero è cosa piuttosto strana a udirsi, ma il nome che noi almeno vi diamo – un nome a cui, per difetto di esperienza in materia, non penserebbe nessuno – è: Spazionismo"
+./_man/programmatore:           "È stata una giornata estenuante: questa mattina ho tolto una virgola dal mio codice e stasera ce l'ho rimessa"
+./_man/linguaggi-di-programma:  Dio non programma in Assembler con l'Universo
+./_man/struttura-dei-programmi: 
+./_man/operatori:               
+"And what is <code>TRUE</code>, Phaedrus,<br />And what is <code>FALSE</code><br />Need we ask anyone to tell us these things?"
+./_man/classi-oggetti:          "Ceci n'est pas une |"
+./_man/sistemi-di-numerazione:  "Ci sono 10 tipi di persone: quelli che capiscono la numerazione binaria e quelli che non la capiscono"
+./_man/prologo:                 In principio era il login
+./_man/tipi-di-dato:            "Tutto è byte"
+./_man/epilogo:                 "Dopo di me, il reboot"
+
+
 ## Appunti da sudividere nei diversi capitoli del Manuale
 
 Eudosso scrive che gli Egiziani raccontano di Zeus questa storia. Il dio non poteva camminare, giacché le sue gambe erano sin dalla nascita saldate in un pezzo solo, e per la vergogna passava il suo tempo in solitudine. Fu Iside a tagliare e separare quella strana parte del suo corpo, mettendolo così in grado di camminare con le sue gambe. E il significato della storia è che la mente e la ragione del dio sono di per sé immobili nell’invisibile e nell’insensibile, e prendono la strada della creazione grazie a una spinta motrice.
@@ -25,11 +51,7 @@ La negazione e il paradosso come metodo per comprendere ciò che non è di per s
 Si può dire che esista qualcosa che non ha dimensioni?
 
 
-quote:      "Dopo di me, il reboot"
-
-
 ESTETICA:
-quote:      "*.* è il migliore"
 Mentre era in un negozio di hardware, il Maestro Canaro sentì questo dialogo tra il proprietario e un suo cliente:
 «Dammi il miglior router Wireless che hai» disse il cliente.
 «Nella mia bottega tutto è il migliore» ribatté il venditore di hardware. «Qui non trovi un router Wireless che non sia il migliore».
@@ -41,3 +63,107 @@ Nella Lettera agli artisti, Giovanni Paolo II utilizza i termini \'buono\' e \'b
 
 Stesso discorso per il concetto di \'Arte\'
 Bizzarro, perché la stessa cosa avviene, in condizioni diametralmente opposte, in "Un'etica senza Dio" di Lecaldano, dove ci si appella a concetti di 'buono' e 'giusto' senza definirli.
+
+C'HI++:
+permalink:  /man/chi-plus-plus
+---
+
+Il C\'hi++ è allo stesso tempo un linguaggio di programmazione, un atteggiamento mentale e un modo di vivere.
+Chi pratica il C\'hi++ scrive codice come se stesse vivendo e vive come se stesse scrivendo del codice.  
+Vivere è come scendere in canoa lungo un fiume.
+Affannarsi a risalire la corrente è inutile e infruttuoso, perché il fiume è più forte di noi e non si stanca mai.
+Lasciarsi andare alla corrente è pericoloso, perché ci si potrebbe parare davanti un ostacolo e noi non avremmo modo di evitarlo.
+È necessario quindi remare solo quel tanto che ci permette di essere più veloci della corrente e di schivare gli ostacoli che, di volta in volta, si presentano sul nostro cammino.  
+Similmente, scrivere del buon codice significa scrivere solo il codice necessario a raggiungere lo scòpo che ci si è prefissi. 
+Aggiungere una sola virgola in più è sbagliato, perché rende più difficile il debug e più lento il programma.
+Chi pratica il C\'hi++ applica lo stesso principio alla sua vita e compie solo le azioni necessarie, ignorando tutto ciò che è superfluo.
+Capire quali sono le azioni necessarie è semplice, così com'è semplice capire qual è la direzione della corrente quando navighi su un fiume.
+La cosa difficile è capire di essere su un fiume.  
+ 
+Tutte le cosmogonie che sono state formulate nel corso dei secoli hanno una caratteristica comune: richiedono una certa dose di fede in qualcosa di cui non è possibile provare l'esistenza; uno o più elementi fittizi e sovra-naturali, che si introducono nel sistema per spiegare ciò che non è possibile dimostrare praticamente.
+Credere in queste entità richiede un'abiura più o meno marcata delle nostre capacità cognitive e, spesso, l'accettazione di condizioni più paradossali di quelle che si cercava di spiegare originariamente.
+Ma, come diceva sempre il Maestro Canaro: "la Verità è semplice".
+Qualunque spiegazione che richieda dei parametri correttivi, è inesatta.
+Una volta, poco prima di morire, il Maestro Canaro mi disse che, utilizzando i costrutti tipici del C\'hi++, si poteva scrivere la dimostrazione dell'ultimo teorema di Fermat su una bustina di fiammiferi.
+
+*Chi*, in giapponese, vuol dire "respiro".
+L'Universo è scritto in C\'hi++.
+L'Universo respira.
+Ciò che noi percepiamo come eternità altro non è che un singolo respiro dell'Universo, una delle innumerevoli eternità che si sono succedute dall'inizio dei tempi.
+Ogni respiro dell'Universo comporta una fase di espansione e una fase di contrazione.
+I punti terminali di ciascuna fase prevedono l'annichilimento di ogni forma di vita senziente.
+Al contrario, nei periodi intermedi nascono e muoiono innumerevoli mondi.
+Su ciascuno di questi innumerevoli mondi nascono e muoiono innumerevoli esseri
+Ciascuno di questi innumerevoli esseri, nel corso della sua vita, compie una serie di azioni che influenzano la sua esistenza e quella dei suoi simili.
+Le possibili permutazioni di queste innumerevoli azioni per questi innumerevoli esseri per questi innumerevoli mondi sono quasi illimitate.  
+Quasi.  
+
+Il tempo, al contrario, è illimitato, quindi può capitare che una determinata sequenza di eventi, già avvenuta in un precedente respiro dell'Universo, si ripeta, con condizioni simili, in un respiro successivo.
+Ciò vuol dire che, con buone probabilità, io e te abbiamo già avuto questa conversazione in una o in migliaia delle nostre esistenze precedenti.
+
+Ciò che le religioni non dicono è che non si può andare in Paradiso da soli: o ci andiamo tutti, o non ci va nessuno.
+
+<!--
+Non c\'è nient\'altro da capire.
+
+In Borges, *Finzioni*: lo scrittore che vuole riscrivere Don Chisciotte dice che potrebbe farcela, se solo fosse immortale (v. *Breve storia dell'Infinito*). La stessa cosa vale per l'Universo: avendo a disposizione un tempo infinito, la ripetizione è inevitabile.
+
+Chi pensa che io voglia fare il debug dell'Universo non sa nulla del *C\'hi++*.
+
+Rispetto agli altri linguaggi di programmazione, ha una peculiarità: non consente errori di programmazione, ma solo di esecuzione.
+
+Ciascun ciclo di vita dell'Universo è una sessione di debug.
+
+Il codice è perfetto, siamo noi a fare gli errori.
+
+Paul Erdós sosteneva che Dio possedeva un libro transfinito (più grande dell'infinito) nel quale erano raccolte le migliori dimostrazioni di tutti i teoremi matematici, dimostrazioni eleganti e perfette.
+
+Non esiste l'anima: siamo solo epifenomeni, aggregazioni temporanee di materia.
+
+Come variabili all'interno di un programma, esistiamo solo all'interno del blocco di codice in cui siamo dichiarate.
+
+Nasciamo, svolgiamo il nostro compito e infine scompariamo, liberando la memoria che avevamo allocato.
+
+Infatti gli esseri fioriscono e (poi) ognuno torna alla propria radice. 
+Tornare alla propria radice si chiama la tranquillità; ciò vuol dire deporre il proprio compito. 
+Deporre il proprio compito è una legge costante. 
+Colui che conosce questa legge costante si chiama illuminato. 
+Colui che non conosce questa legge costante agisce da stolto e attira su di sé la disgrazia.
+Tao-Tê-Ching, XVI (J.J.L. Duyvendak, Fabbri Editori
+
+Fintanto che il programma gira, quella stessa memoria sarà utilizzata più e più volte per creare nuove variabili.
+
+Poco importa se saremo di nuovo noi, oppure altre entità, perché il
+programma continuerà a girare per sempre e anche se ci fosse solo una
+probabilità su un miliardo che tornino a verificarsi le condizioni che
+hanno portato alla nostra esistenza, prima o poi quelle stesse
+condizioni si verificheranno ancora, e noi saremo di nuovo qui a vivere
+la nostra vita.
+
+La questione a questo punto è: esiste un disco rigido dell'Universo, o
+gira tutto in memoria RAM?
+
+Coloro che si sforzano, in questa vita, di eseguire i precetti della
+loro religione perché pensano che gliene verrà reso merito dopo la
+morte, sbagliano due volte.
+
+Non esiste il Paradiso e non esiste nessuna vita eterna, ma solo
+un'eternità di vite.
+
+L\'Universo *è* il Paradiso: siamo noi che lo utilizziamo
+impropriamente.
+
+Ci sono due forze, contrapposte. Come dice Poe, una è la gravità, che
+tende a riunire tutto nell\'Uno; l\'altra è l\'entropia, che separa e
+disperde.
+
+Servono tutte e due: se ci fosse solo la gravità, ci sarebbe solo
+l\'Uno, se ci fosse solo l\'entropia, ci sarebbe la morte termica
+
+Alla lunga (molto lunga), una condizione simile porterebbe a un Universo
+piuttosto noioso, quindi, devono esserci entrambe, in continua
+opposizione.
+
+È questo che permette l\'esistenza.
+
+-->

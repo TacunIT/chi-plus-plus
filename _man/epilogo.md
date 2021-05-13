@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Epilogo
 permalink:  /man/epilogo
-quote:      "Wer den Computer will verstehen,<br />Muss in Computers Lande gehen"
+quote:      "Dopo di me, il reboot"
 ---
 
 Fu uno dei confratelli ad avvisarmi.

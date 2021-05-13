@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Gli operatori
 permalink:  /man/operatori
-quote:      "And what is <code>TRUE</code>, Phaedrus,<br />And what is <code>FALSE</code><br />Need we ask anyone to tell us these things?"
+quote:      "question = 2b | ( ! 2b );"
 ---
 
 La varietà e soprattutto l'adattabilità degli operatori sono la caratteristica principale del C++.  
