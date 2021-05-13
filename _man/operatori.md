@@ -70,9 +70,8 @@ Gli operatori *di relazione* permettono di verificare il rapporto fra due variab
 Questi operatori tornano un valore booleano, vero o falso a seconda che la condizione sia verificata o no.  
 L'operatore `==` torna `true` se gli operandi sono uguali, come nel verso: 
 
-> Io vidi il mio Signore con l'occhio del cuore. 
-Gli chiesi: chi sei? 
-Rispose: Te!
+> {{ site.data.citazioni.attar }} <a href="/man/note#attar" class="nota"></a>
+
  
 L'operatore `!=` torna `true` se gli operandi non sono uguali; gli operatori `>` e `<` tornano `true`, rispettivamente, se l'operatore a sinistra è maggiore o minore dell'operando a destra; gli operatori `>=` e `<=` tornano `true` se l'operando a sinistra è maggiore o uguale oppure minore o uguale a quello a destra.  
 Gli operatori *logici* permettono di compiere delle operazioni di logica booleana sulle variabili:

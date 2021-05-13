@@ -17,12 +17,11 @@ Questi, come dice anche il loro nome, sono costituiti dall'aggregazione di più 
 Il prossimo brano di codice &mdash; fastidiosamente didascalico, nella sua sostanziale inutilità &mdash; mostra i principali tipi di dato del C++.
 Contiene molti elementi di cui ancora non ti ho parlato, quindi non preoccuparti se non capisci del tutto ciò che fa.
 
-
 ```
 {% include_relative src/tipi-di-dato-principali.cpp %}
 ```
 
-Compilando ed eseguendo il codice, otterrai:
+Compilando ed eseguendo questo codice, otterrai:
 
 ```
 % g++ src/cpp/tipi-di-dato-principali.cpp -o src/out/esempio
@@ -354,8 +353,8 @@ valori finali:   v=20, r=20
 
 Approfondiremo i pro e i contro delle reference quando parleremo delle [funzioni](/man/funzioni).
 
----
-<a id="casting"></a>
+<hr id="casting">
+
 Dato che ciascun tipo di dato non è altro che un modo per vedere la memoria, è possibile fare delle conversioni da un tipo all'altro.
 Le conversioni possono essere *implicite* o *esplicite*.
 Le conversioni *implicite* sono quelle che avvengono quando un valore è copiato fra variabili di tipo compatibile:
@@ -407,7 +406,7 @@ Né io né te siamo, adesso, costituiti dagli stessi spazioni che eravamo pochi 
 Siamo un'immagine in movimento, come il puntatore del mouse, o come le luci delle decorazioni natalizie.
 Come disse Sant'Agostino, siamo, allo stesso tempo, reali e illusorii:
 
-> E considerai tutte le cose che sono al di sotto di te e vidi che non si può dire in modo assoluto né che esistono né che non esistono: a loro modo esistono, perché derivano da te, non esistono perché non sono ciò che sei tu: ed esiste veramente ciò che permane immutabile. <a href="/man/note/#agostino" class="nota"></a>
+> {{ site.data.citazioni.agostino }} <a href="/man/note/#agostino" class="nota"></a>
 
 Per i *Vedanta*, il Mondo ha la natura dell'Arte perché la realtà dell'arte-fatto è differente dalla realtà dell'arte-fice.
 Questa similitudine, oltre che per Platone, è valida anche per i linguaggi di programmazione: un oggetto all'interno di un programma esiste, ma non è realmente ciò che rappresenta, anche se a noi fa comodo ritenerlo tale.
