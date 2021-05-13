@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Il polimorfismo
 permalink:  /man/polimorfismo
-quote:      Non puoi immergere i tuoi byte due volte nello stesso stream
+quote:      "Non puoi immergere i tuoi byte due volte nello stesso stream"
 ---
 
 Il polimorfismo è la caratteristica principale del C++.

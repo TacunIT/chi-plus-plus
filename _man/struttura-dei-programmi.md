@@ -4,7 +4,7 @@ layout:     manuale
 class:      capitolo
 title:      Struttura dei programmi C++
 permalink:  /man/struttura-dei-programmi
-quote:      "question = 2b | ( ! 2b );"
+quote:      "Wer den Computer will verstehen,<br />Muss in Computers Lande gehen"
 ---
 
 La libertà sintattica e la concisione dei costrutti sono la caratteristica principale del C++.
