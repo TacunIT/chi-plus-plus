@@ -136,7 +136,7 @@ quote:
         </li>
     </ol>
 
-    <h3>Gestione della memoria</h3>
+    <h3>La memoria</h3>
     <ol>
         <li id="zen">
             N. <span>Senzaki</span>, P. <span>Reps</span>, 

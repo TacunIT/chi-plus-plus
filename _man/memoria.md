@@ -29,7 +29,7 @@ in realtà, stai dicendo al compilatore di prendere un'area di memoria di 32 bit
  const char* motto = "Cogito ergo sum";
  ```
 
-stai chiedendo al compilatore di prendere un'area di memoria di 16 byte, di associarle il nome `motto` e scriverci dentro i 15 caratteri della frase più un ultimo carattere, con valore `0`, che indica la fine della stringa.  
+stai chiedendo al compilatore di prendere un'area di memoria di 16 byte, salvarne l'indirizzo iniziale nella variabile `motto` e poi scriverci dentro i 15 caratteri della frase più un ultimo carattere, con valore `0`, che indica la fine della stringa.  
 Puoi usare questo metodo se sai in anticipo quanto saranno grandi le variabili con cui avrai a che fare, ma se invece devi gestire dei valori di grandezza variabile (per esempio, l'input di un utente), hai due possibilità: o riservi preventivamente una quantità abbondante di spazio, o la allochi sul momento, in base alle tue necessità.
 Il primo caso va bene se devi gestire pochi dati di dimensioni ridotte, ma se devi gestire molte variabili di grandi dimensioni, l'allocazione dinamica, anche se più complessa da gestire, è più efficiente.  
 Il codice seguente è un esempio di gestione statica della memoria: 
