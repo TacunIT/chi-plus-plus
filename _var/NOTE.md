@@ -1,5 +1,11 @@
 ## Appunti da sudividere nei diversi capitoli del Manuale
 
+
+{{ site.data.citazioni.agostino }}
+
+ L'Esistenza potrebbe essere un sistema per smaltire l'energia dell'Universo (o di quello che ha intorno), così come le perturbazioni sono un sistema per smaltire l'energia dell'atmosfera?
+
+
 Eudosso scrive che gli Egiziani raccontano di Zeus questa storia. Il dio non poteva camminare, giacché le sue gambe erano sin dalla nascita saldate in un pezzo solo, e per la vergogna passava il suo tempo in solitudine. Fu Iside a tagliare e separare quella strana parte del suo corpo, mettendolo così in grado di camminare con le sue gambe. E il significato della storia è che la mente e la ragione del dio sono di per sé immobili nell’invisibile e nell’insensibile, e prendono la strada della creazione grazie a una spinta motrice.
 Plutarco, citato da Giorgio Santillana, Sirio, Adelphi. 
 
@@ -30,26 +36,26 @@ Mentre era in un negozio di hardware, il Maestro Canaro sentì questo dialogo tr
 «Nella mia bottega tutto è il migliore» ribatté il venditore di hardware. «Qui non trovi un router Wireless che non sia il migliore».
 A queste parole, il Maestro Canaro fu illuminato.
 
-Nella Lettera agli artisti, Giovanni Paolo II utilizza i termini \'buono\' e \'bello\', ma li definisce in maniera ricorsiva, l\'uno in funzione dell\'altro. 
+Nella Lettera agli artisti, Giovanni Paolo II utilizza i termini 'buono' e 'bello', ma li definisce in maniera ricorsiva, l'uno in funzione dell'altro. 
 
 > La bellezza è in un certo senso l'espressione visibile del bene, come il bene è la condizione metafisica della bellezza.
 
-Stesso discorso per il concetto di \'Arte\'
+Stesso discorso per il concetto di 'Arte'
 Bizzarro, perché la stessa cosa avviene, in condizioni diametralmente opposte, in "Un'etica senza Dio" di Lecaldano, dove ci si appella a concetti di 'buono' e 'giusto' senza definirli.
 
 C'HI++:
 permalink:  /man/chi-plus-plus
 ---
 
-Il C\'hi++ è allo stesso tempo un linguaggio di programmazione, un atteggiamento mentale e un modo di vivere.
-Chi pratica il C\'hi++ scrive codice come se stesse vivendo e vive come se stesse scrivendo del codice.  
+Il C'hi++ è allo stesso tempo un linguaggio di programmazione, un atteggiamento mentale e un modo di vivere.
+Chi pratica il C'hi++ scrive codice come se stesse vivendo e vive come se stesse scrivendo del codice.  
 Vivere è come scendere in canoa lungo un fiume.
 Affannarsi a risalire la corrente è inutile e infruttuoso, perché il fiume è più forte di noi e non si stanca mai.
 Lasciarsi andare alla corrente è pericoloso, perché ci si potrebbe parare davanti un ostacolo e noi non avremmo modo di evitarlo.
 È necessario quindi remare solo quel tanto che ci permette di essere più veloci della corrente e di schivare gli ostacoli che, di volta in volta, si presentano sul nostro cammino.  
 Similmente, scrivere del buon codice significa scrivere solo il codice necessario a raggiungere lo scòpo che ci si è prefissi. 
 Aggiungere una sola virgola in più è sbagliato, perché rende più difficile il debug e più lento il programma.
-Chi pratica il C\'hi++ applica lo stesso principio alla sua vita e compie solo le azioni necessarie, ignorando tutto ciò che è superfluo.
+Chi pratica il C'hi++ applica lo stesso principio alla sua vita e compie solo le azioni necessarie, ignorando tutto ciò che è superfluo.
 Capire quali sono le azioni necessarie è semplice, così com'è semplice capire qual è la direzione della corrente quando navighi su un fiume.
 La cosa difficile è capire di essere su un fiume.  
  
@@ -57,10 +63,10 @@ Tutte le cosmogonie che sono state formulate nel corso dei secoli hanno una cara
 Credere in queste entità richiede un'abiura più o meno marcata delle nostre capacità cognitive e, spesso, l'accettazione di condizioni più paradossali di quelle che si cercava di spiegare originariamente.
 Ma, come diceva sempre il Maestro Canaro: "la Verità è semplice".
 Qualunque spiegazione che richieda dei parametri correttivi, è inesatta.
-Una volta, poco prima di morire, il Maestro Canaro mi disse che, utilizzando i costrutti tipici del C\'hi++, si poteva scrivere la dimostrazione dell'ultimo teorema di Fermat su una bustina di fiammiferi.
+Una volta, poco prima di morire, il Maestro Canaro mi disse che, utilizzando i costrutti tipici del C'hi++, si poteva scrivere la dimostrazione dell'ultimo teorema di Fermat su una bustina di fiammiferi.
 
 *Chi*, in giapponese, vuol dire "respiro".
-L'Universo è scritto in C\'hi++.
+L'Universo è scritto in C'hi++.
 L'Universo respira.
 Ciò che noi percepiamo come eternità altro non è che un singolo respiro dell'Universo, una delle innumerevoli eternità che si sono succedute dall'inizio dei tempi.
 Ogni respiro dell'Universo comporta una fase di espansione e una fase di contrazione.
@@ -77,11 +83,11 @@ Ciò vuol dire che, con buone probabilità, io e te abbiamo già avuto questa co
 Ciò che le religioni non dicono è che non si può andare in Paradiso da soli: o ci andiamo tutti, o non ci va nessuno.
 
 <!--
-Non c\'è nient\'altro da capire.
+Non c'è nient'altro da capire.
 
 In Borges, *Finzioni*: lo scrittore che vuole riscrivere Don Chisciotte dice che potrebbe farcela, se solo fosse immortale (v. *Breve storia dell'Infinito*). La stessa cosa vale per l'Universo: avendo a disposizione un tempo infinito, la ripetizione è inevitabile.
 
-Chi pensa che io voglia fare il debug dell'Universo non sa nulla del *C\'hi++*.
+Chi pensa che io voglia fare il debug dell'Universo non sa nulla del *C'hi++*.
 
 Rispetto agli altri linguaggi di programmazione, ha una peculiarità: non consente errori di programmazione, ma solo di esecuzione.
 
@@ -123,20 +129,20 @@ morte, sbagliano due volte.
 Non esiste il Paradiso e non esiste nessuna vita eterna, ma solo
 un'eternità di vite.
 
-L\'Universo *è* il Paradiso: siamo noi che lo utilizziamo
+L'Universo *è* il Paradiso: siamo noi che lo utilizziamo
 impropriamente.
 
 Ci sono due forze, contrapposte. Come dice Poe, una è la gravità, che
-tende a riunire tutto nell\'Uno; l\'altra è l\'entropia, che separa e
+tende a riunire tutto nell'Uno; l'altra è l'entropia, che separa e
 disperde.
 
 Servono tutte e due: se ci fosse solo la gravità, ci sarebbe solo
-l\'Uno, se ci fosse solo l\'entropia, ci sarebbe la morte termica
+l'Uno, se ci fosse solo l'entropia, ci sarebbe la morte termica
 
 Alla lunga (molto lunga), una condizione simile porterebbe a un Universo
 piuttosto noioso, quindi, devono esserci entrambe, in continua
 opposizione.
 
-È questo che permette l\'esistenza.
+È questo che permette l'esistenza.
 
 -->

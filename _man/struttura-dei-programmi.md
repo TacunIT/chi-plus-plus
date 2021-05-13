@@ -116,8 +116,9 @@ tre
 0
 ```
 
+<hr id="coupling">
+
 Nessun programma degno di questo nome ha solo la funzione `main`, ma suddivide il suo lavoro in una serie di funzioni che svolgono compiti precisi e ben definiti.
-<a id="coupling"></a>
 In un programma ben scritto, le funzioni presentano due caratteristiche, che gli anglosassoni e gli anglofili definiscono: *low coupling* e *high cohesion*.  
 Con il termine *accoppiamento* di due funzioni si intende la quantità di informazioni che la funzione *A* deve avere riguardo la funzione *B* per poterla utlizzare.
 Ciascuna funzione si aspetta di ricevere una serie ben definita di parametri: la funzione `raddoppiaStipendio`, che abbiamo visto prima, si aspetta di ricevere un solo parametro, di tipo `long`:
@@ -151,8 +152,7 @@ float facciQualcosa(long stipendio, int azione, float aliquota = 0)
 
 Per poter utilizzare questa funzione, non solo dobbiamo conoscere la sua interfaccia, ma dobbiamo anche sapere quali azioni corrispondono ai diversi valori del parametro `azione`.
 Questa è follia, *meshuggah*, perché, se un giorno l'autore la modificasse e decidesse che il valore `1` del parametro `azione` causa lo scorporo dell'IVA mentre il valore `2` causa il raddoppio dello stipendio, noi dovremmo modificare anche *tutte* le funzioni che l'hanno chiamata per adattarle alle nuove regole.
-Non solo perderemmo del tempo, ma se dimenticassimo di aggiornare una o più chiamate otterremmo un programma con un funzionamento errato.
-
+Non solo perderemmo del tempo, ma se dimenticassimo di aggiornare una o più chiamate otterremmo un programma con un funzionamento errato.  
 Il *coupling* <!-- uso il termine inglese per evitare anfibologie con l'attività sessuale.. --> è come il colesterlolo: più è basso, meglio è; quindi, per evitare errori, dobbiamo ridurlo, creando un `enum` a cui assegnare i possibili valori del parametro `azione`:
 
 ```
@@ -234,25 +234,10 @@ A quel punto, i casi sarebbero stati due: o sarebbe rimasto Uno per il resto del
 Anche in questo caso le ipotesi sarebbero state due.
 La prima è che un Big Bang possa avvenire solo in determinate condizioni e che quelle condizioni portino necessariamente a un Universo identico a quello come noi lo conosciamo adesso; quindi, se l’Uno esploderà di nuovo, ricomincerà tutto da capo. 
 La seconda ipotesi è che ogni *Big Bang* avviene in circostanze e con modalità specifiche e che quindi, se l’Uno esploderà di nuovo, nascerà un nuovo Universo, che potrà avere pochi o nessun punto di contatto con quello corrente.  
-Il Maestro Canaro disse che la prima ipotesi era possibile, ma poco probabile e che quindi avremmo dato per scontato che fosse la seconda, quella corretta: “Tanto, non cambia niente: se il tempo che abbiamo a disposizione per far esplodere e implodere l’Universo è infinito, per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali è  impossibile che la cosa o prima o poi non avvenga.
-Come dice quel senza-Dio di Dawkins: 'Dato un tempo infinito o un numero di opportunità infinite, è possibile qualsiasi cosa'.
-<!-- L'orologiaio cieco: Creazione o evoluzione? - Mondadori, 2020 -->
+Il Maestro Canaro disse che la prima ipotesi era possibile, ma poco probabile e che quindi avremmo dato per scontato che fosse la seconda, quella corretta: «Tanto, non cambia niente: se il tempo che abbiamo a disposizione per far esplodere e implodere l’Universo è infinito, per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali è  impossibile che la cosa o prima o poi non avvenga.
+Come dice quel senza-Dio di Dawkins: 
+
+> {{ site.data.citazioni.dawkins }}<a href="/man/note#dawkins" class="nota"></a>
+
 In base allo stesso principio, dando per scontato che o prima o poi questo Universo tornerà a manifestarsi, è del tutto lecito pensare &mdash; non per fede, ma in base a un banale calcolo probabilistico &mdash; che anche ciò che c’è in esso possa o prima o poi tornare a essere. 
-Noi compresi”.
-
-<!--
-Della necessità di comportarsi bene con tutti perché il tuo Io senziente potrebbe essere ora qui ora lì conviene parlarne nel capitolo dedicato alla memoria RAM
--->
-
-
-
-<!--
-Spiegare perché Dio non può eliminare il Diavolo - v. Saccone, Iblīs, il Satana del Terzo Testamento 
-
-L'Annosa Dicotomia, così come la gravità, del resto, si applica tanto all'Energia primor
-
- L\'Esistenza potrebbe essere un sistema per smaltire l\'energia
-dell\'Universo (o di quello che ha intorno), così come le perturbazioni
-sono un sistema per smaltire l\'energia dell\'atmosfera?
-
--->
+Noi compresi».
