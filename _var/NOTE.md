@@ -1,30 +1,3 @@
-# Note­
-
-./_var/NOTE.md:31:quote:            "Da dove questa applicazione sia sorta, se lui l’ha fondata oppure no: lui che la sorveglia nel più alto dei cieli, lui solo lo sa, o forse non lo sa"
-./_man/istruzioni-condizionali:      "Fare qualcosa d’intenzionale implica capire che esistono delle alternative, e sceglierne una; e questi sono attributi dell’intelligenza"
-./_man/debug.md:8:quote:        Cento Mondi di peccato sono dissipati dalla luce di un solo ticket
-./_man/polimorfismo:            Non puoi immergere i tuoi byte due volte nello stesso stream
-./_man/mitopoietica:            "Il settimo giorno, Dio fece il backup"
-./_man/funzioni:                "Call me: IsNull"
-./_man/memoria:                 "cogito ∴ sum()"
-./_man/preprocessore:           Tutte le potenze, tranne quella di 1, crescono
-./_man/ereditarieta:            "We few, we happy few<br />We bunch of data"
-./_man/commenti:                "Il Compilatore e il Linker non usano carità, tengono i diecimila oggetti per cani di paglia"
-./_man/c-plus-plus:             "Non chiederti cosa può fare per te il sistema operativo;
-./_man/incipit.md:8:quote:      *.* è il migliore
-./_man/istruzioni-iterative:    "Invero è cosa piuttosto strana a udirsi, ma il nome che noi almeno vi diamo – un nome a cui, per difetto di esperienza in materia, non penserebbe nessuno – è: Spazionismo"
-./_man/programmatore:           "È stata una giornata estenuante: questa mattina ho tolto una virgola dal mio codice e stasera ce l'ho rimessa"
-./_man/linguaggi-di-programma:  Dio non programma in Assembler con l'Universo
-./_man/struttura-dei-programmi: 
-./_man/operatori:               
-"And what is <code>TRUE</code>, Phaedrus,<br />And what is <code>FALSE</code><br />Need we ask anyone to tell us these things?"
-./_man/classi-oggetti:          "Ceci n'est pas une |"
-./_man/sistemi-di-numerazione:  "Ci sono 10 tipi di persone: quelli che capiscono la numerazione binaria e quelli che non la capiscono"
-./_man/prologo:                 In principio era il login
-./_man/tipi-di-dato:            "Tutto è byte"
-./_man/epilogo:                 "Dopo di me, il reboot"
-
-
 ## Appunti da sudividere nei diversi capitoli del Manuale
 
 Eudosso scrive che gli Egiziani raccontano di Zeus questa storia. Il dio non poteva camminare, giacché le sue gambe erano sin dalla nascita saldate in un pezzo solo, e per la vergogna passava il suo tempo in solitudine. Fu Iside a tagliare e separare quella strana parte del suo corpo, mettendolo così in grado di camminare con le sue gambe. E il significato della storia è che la mente e la ragione del dio sono di per sé immobili nell’invisibile e nell’insensibile, e prendono la strada della creazione grazie a una spinta motrice.
