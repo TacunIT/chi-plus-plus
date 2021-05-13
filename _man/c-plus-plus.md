@@ -10,7 +10,7 @@ chiediti invece cosa puoi fare tu, per il sistema operativo"
 
 In uno dei suoi libri, Bjarne Stroustroup definì il C++: 
 
-> Un linguaggio di programmazione per svolgere compiti non banali. 
+> {{ site.data.citazioni.stroustroup.cpp }}
 
 Fà che si possa dire la stessa cosa di te. 
 
@@ -42,8 +42,7 @@ Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l'Ebrai
 ---
 
 Le principali novità aggiunte al C dal C++ sono: l'*astrazione dei dati*, la *programmazone a oggetti* e la *generic programming*.
-Ora ti spiego cosa sono, ma tu non preoccuparti se non capisci: approfondiremo tutti questi concetti in seguito.
-
+Ora ti spiego cosa sono, ma tu non preoccuparti se non capisci: approfondiremo tutti questi concetti in seguito.  
 I tipi di dato del C sono:
 
     char, int, float, double, array, enum, struct, union
@@ -425,10 +424,8 @@ ESITO:   puledro
 ```
 
 Oltre alle classi template predefinite della *Standard Template Library*, il C++ permette di definire le proprie classi template, ma di questo parleremo a tempo debito.  
-
 Queste caratteristche, unite alla compatibilità con il codice scritto in C, fecero di C++ il linguaggio *object-oriented* più utilizzato degli anni '90.
 L'avvento, alla fine del Secolo, del linguaggio con la "J", quello che ha bisogno di un sistema di *garbage collecion* per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un'idea di quello che sarebbe stato il millennio che ci si presentava davanti.
 Non a caso, Stroustrsup disse:
 
-> I suspect that the root of many of the differences between C/C++ and Java is that AT&T is primarily a user (a consumer) of computers, languages, and tools, whereas Sun is primarily a vendor of such things.
-<a href="/man/note/#cpp" class="nota"></a>
+> {{ site.data.citazioni.stroustroup.java }} <a href="/man/note/#cpp" class="nota"></a>

@@ -16,11 +16,7 @@ Se il rapporto di scala è basso, si avrà una buona visione di insieme, ma poch
 La città, però, sarà sempre la stessa.  
 Nella *Bhagavad Gita* si dice:
 
-<blockquote>
-Tu hai diritto solo all'azione, mai ai suoi frutti: che il tuo movente
-non sia il frutto dell'azione, né vi sia in te attaccamento
-all'inattività. <a href="/man/note/#azione" class="nota"></a>
-</blockquote>
+> {{ site.data.citazioni.gita.diritto }}<a href="/man/note/#azione" class="nota"></a>
 
 È così che opera il buon programmatore: scrive del buon codice, anche se non beneficerà mai dei suoi effetti. Scrive del buon codice perché non può farne a meno.  
 Scrivere codice non è un mestiere, è una deformazione mentale.
@@ -57,9 +53,7 @@ Fra questi individui e i veri programmatori c'è la stessa differenza che passa 
 
 <hr id="dottrina">
 
-Una volta chiesi al maestro Canaro: “Maestro, cosa facevano i paranoici
-prima che fosse inventata l'informatica?” il maestro Canaro ci pensò
-un po' su, poi rispose: “Ormeggiavano le barche.”.
+{{ site.data.canaro.paranoici }} 
 
 <!--
     @todo applicare le categorie caratteriali aristoteliche al SW.

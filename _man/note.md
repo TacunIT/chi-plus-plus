@@ -18,14 +18,14 @@ quote:
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
     </ol>
-
+<!--
     <h3>I linguaggi di programmazione</h3>
     <ol>
         <li id="">
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
     </ol>
-
+-->
     <h3>Il C++</h3>
     <ol>
         <li id="cpp">

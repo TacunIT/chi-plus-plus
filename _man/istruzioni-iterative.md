@@ -316,9 +316,7 @@ typedef struct {
 
 Il secondo dogma del C'hi++ è l'esistenza di una memoria persistente dell'Universo che mantiene traccia dell'esito delle scelte fatte in ciascun ciclo; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo:
 
-<blockquote>
-{{ site.data.bhagavad-gita.vasana }}<a href="/man/note/#vasana" class="nota"></a>
-</blockquote>
+> {{ site.data.citazioni.gita.vasana }}<a href="/man/note/#vasana" class="nota"></a>
 
 I *Post-It*, come li chiamava il Maestro Canaro, non sono indispensabili per il C'hi++, sono solo un'auspicio, perché la loro esistenza dà un senso alla nostra vita.
 Ho detto: *dà* in vece di: *darebbe* perché, così come avviene per gli esopianeti, noi non li “vediamo”, ma possiamo inferire la loro esistenza dall'effetto che hanno su ciò che li circonda: istinto, premonizioni, *deja-vu*.  
