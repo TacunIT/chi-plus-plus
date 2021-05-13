@@ -296,7 +296,7 @@ Al contrario, gli oggetti della classe base non possono comparire in array di og
 Figlio classe[4] = { Figlio(), Figlio(), Persona(), Figlio() } ;
 ```
 
-Così come, negli scacchi, la regina può muovere come una torre, ma una torre non può muoversi come una regina, un oggetto di tipo `Persona` non contiene tutta l’informazione relativa ad un oggetto di tipo `Figlio` e quindi non può essere usato in sua sostituzione.  
+Così come, negli scacchi, la regina può muovere come una torre, ma una torre non può muoversi come una regina, un oggetto di tipo `Persona` non contiene tutta l’informazione relativa a un oggetto di tipo `Figlio` e quindi non può essere usato in sua sostituzione.  
 Lo stesso discorso fatto per gli array, vale anche per i puntatori. 
 A un puntatore a oggetti di tipo `Persona` può essere assegnato un oggetto di tipo `Figlio`, mentre l’operazione inversa causerà un errore di compilazione:
 
@@ -354,7 +354,7 @@ In pratica, la cosa funziona così: gli indirizzi di tutte le  funzioni dichiara
 Capisci da te che l’utilizzo delle funzioni virtuali, oltre a comportare un leg­gero ritardo nel tempo di esecuzione del programma, visto che l’indirizzo della funzione va ben cercato, impegna anche parte delle risorse del sistema per la memorizzazione della tabella degli indirizzi, quindi, come per tutte le cose, è bene non abusarne.   
 Le regole che riguardano l’utilizzo delle funzioni virtuali sono:
 
-- le versioni delle funzioni delle classi derivate debbono avere il medesi­mo tipo di ritorno ed i parametri della versione della classe base: se non è così, il compilatore considera differenti le due funzioni e l’effetto "virtuale" si perde;
+- le versioni delle funzioni delle classi derivate debbono avere il medesi­mo tipo di ritorno e gli stessi parametri della versione della classe base: se non è così, il compilatore considera differenti le due funzioni e l’effetto “virtuale” si perde;
 
 - una funzione `virtual` non può essere anche `static`: il concetto stesso di funzione virtuale prevede un collegamento fra un oggetto e una funzi­o­ne; le funzioni statiche sono indipendenti dagli oggetti della loro classe, quindi le due cose sono incompatibili;
 
@@ -390,7 +390,7 @@ Mammifero pollo;         // nè il tipo di un oggetto()..
 punt = (Mammifero*)ptr;  // nè il tipo di una conversione.
 ```
 
-È possibile, però, dichiarare un puntatore o una *reference* ad una classe astratta e utilizzarli per creare degli array o delle code che possano essere utilizzati con istanze di classi diverse: 
+È possibile, però, dichiarare un puntatore o una *reference* a una classe astratta e utilizzarli per creare degli array o delle code che possano essere utilizzati con istanze di classi diverse: 
 
 ```
 {% include_relative src/ereditarieta-classi-astratte.cpp %}
@@ -409,37 +409,32 @@ femmina
 ```
 
 La classe base `Mammifero` definisce solo un’astrazione, lasciando alle sue classi derivate il compito di definire attributi e metodi specifici per ciascuna specie particolare. 
-Allo stesso modo, la funzione `getSpecie` definisce solo un concetto, non un algoritmo; saranno le singole classi deri­vate a ridefinire il comportamento della funzione, adattandolo alle proprie esigen­ze. 
-È possibile, comunque, definire un comporta­mento anche per le funzioni virtuali pure.
-Per la classe `Mammifero` potrebbe essere qualcosa di simile:
+Allo stesso modo, la funzione `getSpecie` definisce solo un concetto, non un algoritmo; saranno le singole classi deri­vate a ridefinire il comportamento della funzione, adattandolo alle proprie esigen­ze.  
+È possibile, comunque, definire un comporta­mento anche per le funzioni virtuali pure; per la classe `Mammifero` potrebbe essere qualcosa di simile:
 
 ```
 inline void Mammifero::getSpecie() 
 {
-	cout << "nessuna" << endl ;
-
+    cout << "nessuna" << endl ;
 }
 ```
 
-Non potendo esistere oggetti di classe `Mammifero`, la versione base della funzione `getSpecie` può essere richiamata solo facendo uso dell’operatore `::` 
+Non potendo esistere oggetti di classe `Mammifero`, però, la versione base della funzione `getSpecie` potrebbe essere richiamata solo facendo uso dell’operatore `::` 
 
 ```
 mioCane.Mammifero::getSpecie();
 cane.Mammifero::getSpecie();
 ```
+<hr id="dottrina">
+
+> Le figure mitiche, è vero, nascono e trapassano, ma non proprio come noi mortali. Hanno bisogno di denominazioni caratteristiche, come quella di «Re nel Passato e nel Futuro». Sono esistite in passato? Allora sono esistite ancor prima, o esisteranno ancora, con altri nomi, sotto altri aspetti, proprio come il cielo ci riporta in eterno le sue configurazioni. Se si cercasse di definirle con precisione come persone e cose, sicuramente svanirebbero ai nostri occhi, quanto i frutti di una fantasia malata. 
+Ma se si rispetta la loro vera natura, riveleranno questa natura come funzioni.
+<a class="nota" href="/man/note#miti"></a>
 
 <!--
 
 
-Data una classe: `umano` si possono ridefinire gli operatori di relazione per capire se un oggetto sia piò o meno ricco o più o meno giovane di un altro, ma sarebbe estremamente complesso scrivere una funzione che permetta di capire se un oggetto sia più o meno amato da un altro.
-Nel caso di oggetti che hanno una linea genealogica comune, la funzione potrebbe basarsi, come dice Dawkins, sulla percentuale di DNA che i due oggetti condividono, moltiplicata per il tempo passato insieme, tenendo conto anche di com'è stato quel tempo, ma nel caso di due oggetti che appartengono a genealogie differenti, quale sarebbe l'algoritmo?
 
 Forse come classi astratte
 
-Classi astratte, funzioni virtuali e virtuali pure.
-
-
-Le figure mitiche, è vero, nascono e trapassano, ma non proprio come noi mortali. Hanno bisogno di denominazioni caratteristiche, come quella di «Re nel Passato e nel Futuro». Sono esistite in passato? Allora sono esistite ancor prima, o esisteranno ancora, con altri nomi, sotto altri aspetti, proprio come il cielo ci riporta in eterno le sue configurazioni. Se si cercasse di definirle con precisione come persone e cose, sicuramente svanirebbero ai nostri occhi, quanto i frutti di una fantasia malata. Ma se si rispetta la loro vera natura, riveleranno questa natura come funzioni.
-
-de Santillana, Giorgio; von Dechend, Hertha. Il mulino di Amleto (Italian Edition) . Adelphi. Kindle Edition. 
 -->
