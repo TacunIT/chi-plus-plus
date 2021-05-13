@@ -1,3 +1,8 @@
+## 0.23.7 (May 13, 2021)
+  - Iniziata sezione dottrina per il capitolo sull'ereditarietà
+  - Rinominato il capitolo sulla memoria
+  - Revisione del capitolo sull'ereditarietà
+
 ## 0.23.6 (May 11, 2021)
   - Completata prima stesura della sezione tecnica del capitolo sull'ereditarietà
   - Aggiunto codice di esempio per distruttori virtuali
