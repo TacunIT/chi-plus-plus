@@ -70,7 +70,7 @@
                 <p>Brian Kernigan, disse:</p>
 
 <blockquote>
-L'unico modo di apprendere un linguaggio di programmazione è quello di utilizzarlo per scrivere programmi.
+  <p>L’unico modo di apprendere un linguaggio di programmazione è quello di utilizzarlo per scrivere programmi.</p>
 </blockquote>
 
 <p>Il maestro Canaro sosteneva che anche scrivere il manuale di un linguaggio di programmazione è un buon sistema per impararlo.</p>
@@ -94,9 +94,8 @@ I linguaggi di programmazione fanno precisamente questo: traducono le nostre ric
 
 <p>Il linguaggi di programmazione possono essere di <em>alto livello</em> o di <em>basso livello</em>.
 I linguaggi di alto livello, come il <em>C</em> o il <em>C++</em> hanno dei costrutti simili al linguaggio naturale e non sono legati a una determinata architettura hardware.
-I linguaggi di basso livello, come l’<em>assembly</em> hanno dei costrutti simili al codice nativo della macchina e sono, per questo motivo, legati a una specifica architettura hardware.</p>
-
-<p>La funzione <em>raddoppia</em>, che abbiamo visto prima, tradotta in linguaggio <em>assembly</em>, diventa:</p>
+I linguaggi di basso livello, come l’<em>assembly</em> hanno dei costrutti simili al codice nativo della macchina e sono, per questo motivo, legati a una specifica architettura hardware. <br />
+La funzione <em>raddoppia</em>, che abbiamo visto prima, tradotta in linguaggio <em>assembly</em>, diventa:</p>
 
 <pre><code>raddoppia(long):
         push    rbp
@@ -116,14 +115,12 @@ I programmi scritti con linguaggi di basso livello sono più complessi da scrive
 <p>Un computer è come una nave. 
 L’hardware è in basso, come la sala macchine e la CPU è il capo-smacchinista: non vede il mare, non vede il cielo, non sa nemmeno se la nave stia andando a Nord oppure a Sud; riceve le sue istruzioni dall’interfono e si interessa solo solo della velocità e dei consumi.
 Il sistema operativo è l’equipaggio: è in una posizione intermedia, né in basso né in alto e si prende cura della nave e del carico; può parlare con il Comandante e con il capo macchinista, ma non parla mai con gli armatori.
-L’interfaccia utente, invece, è il ponte di comando: è il punto più alto della nave, da cui si può vedere tutto; è in contatto diretto con gli armatori, da cui riceve delle direttive su ciò che deve o non deve fare e con l’equipaggio, che lo informa sullo stato della nave.</p>
-
-<p>Ciascun livello del computer ha il suo linguaggio.
+L’interfaccia utente, invece, è il ponte di comando: è il punto più alto della nave, da cui si può vedere tutto; è in contatto diretto con gli armatori, da cui riceve delle direttive su ciò che deve o non deve fare e con l’equipaggio, che lo informa sullo stato della nave.<br />
+Ciascun livello del computer ha il suo linguaggio.
 La CPU di questo computer “ragiona” in quello che si chiama: <em>linguaggio macchina</em>, ovvero una lunga serie di valori decimali che indicano sia le operazioni da compiere che le grandezze coinvolte.
 Il sistema operativo è scritto in C, perché è il linguaggio che si adatta meglio a gestire un computer.
-L’interfaccia utente, infine, sfrutta dei linguaggi a oggetti come il C++ per creare gli elementi grafici che le consentono di interagire con l’utente.</p>
-
-<p>I linguaggi e i costrutti che si applicano a un livello non funzionano, se si applicano agli altri livelli, perché ciascun livello concepisce e gestisce gli elementi di un programma in maniera diversa.
+L’interfaccia utente, infine, sfrutta dei linguaggi a oggetti come il C++ per creare gli elementi grafici che le consentono di interagire con l’utente.<br />
+I linguaggi e i costrutti che si applicano a un livello non funzionano, se si applicano agli altri livelli, perché ciascun livello concepisce e gestisce gli elementi di un programma in maniera diversa.
 L’interfaccia utente conosce molte caratteristiche del programmatore: vede il suo viso nella Webcam, ascolta la sua voce nel microfono, talvolta legge le sue impronte digitali sullo scanner.
 Il sistema operativo non lo può vedere o sentire, ma conosce i suoi dati anagrafici e sa tutto quello che lui scrive ai suoi amici.
 La CPU non sa nulla di lui: gestisce i suoi dati, ma non sa cosa siano.
@@ -150,7 +147,7 @@ Per lui è solo la sequenza di byte:</p>
 <p>Invertendo questi concetti, una volta il Maestro Canaro disse:</p>
 
 <blockquote>
-  <p>L’Uomo, non può dire se Dio sia buono o meno, perché non si può classificare l’essenza del creatore con gli attributi del creato. Sarebbe come se i <em>byte</em> di un computer si chiedessero se il Programmatore valga I o 0.</p>
+  <p>L’Uomo non può dire se Dio sia buono o meno, perché non si può classificare l’essenza del Creatore con gli attributi del creato. Sarebbe come se i byte di un computer si chiedessero se il Programmatore valga 1 o 0.</p>
 </blockquote>
 
 <hr />
@@ -159,9 +156,8 @@ Per lui è solo la sequenza di byte:</p>
 una o più entità.
 Ciascuna entità è identificabile per le sue caratteristiche fisiche e ha un suo modo particolare di reagire agli stimoli esterni.
 Per descrivere le entità, i linguaggi di programmazione hanno i <a href="/man/tipi-di-dato">tipi di dato</a>; per descrivere gli eventi, hanno <a href="/man/espressioni-e-operatori">istruzioni e operatori</a>.
-Un linguaggio di programmazione è tanto più efficace quanto più i suoi tipi di dato e i suoi costrutti sintattici riescono a rappresentare le entità che il programma dovrà gestire.</p>
-
-<p>Ci sono molti linguaggi di programmazione.
+Un linguaggio di programmazione è tanto più efficace quanto più i suoi tipi di dato e i suoi costrutti sintattici riescono a rappresentare le entità che il programma dovrà gestire.<br />
+Ci sono molti linguaggi di programmazione.
 Ciascun linguaggio sa spiegare bene certe cose e meno bene certe altre.
 Esistono linguaggi che descrivono bene le transazioni bancarie, ma che sono inadatti a gestire il treffico aereo; altri che funzionano molto bene per creare pagine Web, ma con cui sarebbe masochistico scrivere un sistema operativo. 
 Un programmatore che conosce a fondo un certo linguaggio di
@@ -173,26 +169,23 @@ piegare o gli eventi o il linguaggio o entrambi per ottenere il
 risultato atteso.
 Scegliendo invece un linguaggio i cui tipi di dato e i cui costrutti
 siano più affini alla realtà da descrivere, si risparmiano tempo e
-fatica e si scrive un codice più affidabile.</p>
-
-<p>I linguaggi di programmazione possono essere di due tipi: <em>interpretati</em> o <em>compilati</em>.
+fatica e si scrive un codice più affidabile.<br />
+I linguaggi di programmazione possono essere di due tipi: <em>interpretati</em> o <em>compilati</em>.
 Posso spiegarti la differenza in questo modo: immagina di essere in Cina e di dover tornare al tuo albergo in taxi.
 Se non parli il Cinese, ha due possibilità: o porti con te un interprete che
 spieghi al tassista dove devi andare o ti fai dare dall’albergo un foglio di
 carta con l’indirizzo e lo fai vedere al guidatore del taxi.
 Entrambe le possibilità hanno lati positivi e negativi.
 Se scegli di portarti dietro un interprete avrai dei costi in più, ma sarai libero di andare dove vuoi: in albergo, in un ristorante o in un locale notturno.
-Se invece opti per il foglio con l’indirizzo risparmierai i soldi dell’interprete, ma, una volta salito in taxi, potrai solo tornare all’albergo.</p>
-
-<p>Con i linguaggi di programmazioni avviene la stessa cosa.
+Se invece opti per il foglio con l’indirizzo risparmierai i soldi dell’interprete, ma, una volta salito in taxi, potrai solo tornare all’albergo.<br />
+Con i linguaggi di programmazioni avviene la stessa cosa.
 Il codice dei linguaggi interpretati viene letto da un programma chiamato: <em>interprete</em> che prima traduce le istruzioni nel linguaggio del computer e poi le esegue.
 Il codice dei linguaggi compilati, al contrario, viene letto da un programma chiamato <em>compilatore</em>, che lo converte in istruzioni comprensibili dal computer, scrive queste istruzioni in un nuovo file, detto: <em>object-file</em> e lo passa a un altro programma, chiamato <em>linker</em>, che lo trasforma in un file <em>eseguibile</em>. <br />
 Anche in questo caso, ciascun metodo ha lati positivi e lati negativi.<br />
 I linguaggi interpretati sono più lenti, perché il passaggio lettura/conversione/esecuzione si ripete ogni volta che il codice viene elaborato; inoltre, richiedono delle risorse di sistema in più da destinare all’interprete.
 In compenso, ogni modifica al codice sorgente viene trasmessa immediatamente anche al programma in esecuzione.
-I linguaggi compilati sono più rapidi e richiedono meno risorse di sistema perché la compilazione avviene solo una volta, dopo di che il programma può essere eseguito autonomamente, ma se si modifica il codice sorgente, il programma dovrà essere ri-compilato per funzionare correttamente.</p>
-
-<p>Anche la religione è, da un certo punto di vista, un linguaggio di programmazione, perché consente agli umani di dialogare con Dio.
+I linguaggi compilati sono più rapidi e richiedono meno risorse di sistema perché la compilazione avviene solo una volta, dopo di che il programma può essere eseguito autonomamente, ma se si modifica il codice sorgente, il programma dovrà essere ri-compilato per funzionare correttamente.<br />
+Anche la religione è, da un certo punto di vista, un linguaggio di programmazione, perché consente agli umani di dialogare con Dio.
 Il codice, in questo caso, è la preghiera, che i fedeli formulano e inviamo alla Divinità nella speranza che la esegua.
 Anche le religioni, come i linguaggi di programmazione, possono essere o compilate o interpretate, a seconda che la comunicazione fra il fedele e Dio sia diretta o mediata da un Ordine sacerdotale.</p>
 
@@ -325,7 +318,9 @@ int main (int argc, char** argv)
 <p>il compilatore C ti avviserebbe che non può sommare due variabili di tipo char.</p>
 
 <pre><code>% gcc linguaggi-programmazione-pippopluto.c -o ../out/esempio; 
-6.1-pippopluto.c:7:35: error: invalid operands to binary expression ('char *' and 'char *')
+6.1-pippopluto.c:7:35: 
+error: invalid operands to binary expression 
+('char *' and 'char *')
     printf("\npippo+pluto=%s\n", a+b);
                                  ~^~
 1 error generated.
@@ -335,9 +330,8 @@ int main (int argc, char** argv)
 È una convenzione.
 Se domani smettessimo di utilizzare i computer, il C non esisterebbe più, perché tutti i suoi costrutti sono legati al funzionamento degli apparati informatici.
 Al contrario, il C++ e tutti i linguaggi che si basano sul paradigma a oggetti hanno una componente filosofica che trascende l’ambito informatico.
-Se domani smettessimo di utilizzare i computer, i costrutti che il C++ ha ereditato dal C non avrebbero più senso, ma i concetti di <a href="/man/classi">classe</a> e di <a href="/man/oggetti">oggetto</a> resterebbero ancora validi.</p>
-
-<p>Molti pensano che avere dei principii sia limitativo, ma non è vero. 
+Se domani smettessimo di utilizzare i computer, i costrutti che il C++ ha ereditato dal C non avrebbero più senso, ma i concetti di <a href="/man/classi">classe</a> e di <a href="/man/oggetti">oggetto</a> resterebbero ancora validi.<br />
+Molti pensano che avere dei principii sia limitativo, ma non è vero. 
 Il C non ha principi e i suoi costrutti sono limitati ai tipi di dato
 previsti.
 Il C++, grazie ai suoi principii, ha una maggior duttilità e può evolversi, adattando i suoi costrutti a qualsiasi contesto.</p>
