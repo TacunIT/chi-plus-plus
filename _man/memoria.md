@@ -2,7 +2,7 @@
 status:     pubblicato
 layout:     manuale
 class:      capitolo
-title:      Gestione della memoria
+title:      La memoria
 permalink:  /man/memoria
 quote:      "cogito ∴ sum()"
 ---
