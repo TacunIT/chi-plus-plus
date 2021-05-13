@@ -1052,13 +1052,78 @@ Ma se si rispetta la loro vera natura, riveleranno questa natura come funzioni.
 <a class="nota" href="/man/note#miti"></a></p>
 </blockquote>
 
-<!--
+<p>Buona parte degli esempii e delle cose che ti ho detto in questa lezione le ho prese dal manuale di programmazione in C++ che il Maestro Canaro scrisse nel Secolo scorso, modificandole per adattarle a questo contesto. <br />
+Per esempio, l’esempio delle funzioni virtuali, era così:</p>
 
+<pre><code>/////////////////////////////////////////////////////////////
+//
+//   CHISONOV.CPP - Utilizzo delle funzioni virtuali
+//
+/////////////////////////////////////////////////////////////
+#include &lt;iostream.h&gt;
+/////////////////////////////////////////////////////////////
+class A
+{
+ public:
+    A() {} ;
+    virtual void ChiSono()        	
+    	{ cout &lt;&lt; "Sono un oggetto di classe A \n" ; } 
+} ;
+/////////////////////////////////////////////////////////////
+class B :public A
+{
+ public:
+    B() : A() {} ;
+    void ChiSono() 
+    	{ cout &lt;&lt; "Sono un oggetto di classe B \n" ; } 
+} ;
+/////////////////////////////////////////////////////////////
+void main()
+{
+ B * ptrB = new B ;            	
+ A * ptrA = ptrB ;            	
+        	
+	ptrB-&gt;ChiSono() ;            	
+	ptrA-&gt;ChiSono() ;            	
+} ;
+/////////////////////////////////////////////////////////////
 
+</code></pre>
 
-Forse come classi astratte
+<p>Essendo un codice scritto per l’ambiente Microsoft del 1995, se provassi a compilarlo adesso, con il compilatore Gnu, otterresti tutta una serie di errori:</p>
 
--->
+<pre><code>&gt; g++ src/cpp/ereditarieta-codice-canaro.cpp -o src/out/esempio
+src/cpp/ereditarieta-codice-canaro.cpp:8:10: 
+fatal error: 'iostream.h' file not found
+#include &lt;iostream.h&gt;
+         ^~~~~~~~~~~~
+src/cpp/ereditarieta-codice-canaro.cpp:13:8: 
+error: use of undeclared identifier 'cout'; 
+did you mean 'std::cout'?
+        { cout &lt;&lt; "Sono un oggetto di classe A \n" ; } 
+          ^~~~
+          std::cout
+/Library/Developer/CommandLineTools/usr/bin/
+../include/c++/v1/iostream:54:33: note: 
+'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+src/cpp/ereditarieta-codice-canaro.cpp:21:8: 
+error: use of undeclared identifier 'cout'; 
+did you mean 'std::cout'?
+        { cout &lt;&lt; "Sono un oggetto di classe B \n" ; } 
+          ^~~~
+          std::cout
+/Library/Developer/CommandLineTools/usr/bin/
+../include/c++/v1/iostream:54:33: note: '
+std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+src/cpp/ereditarieta-codice-canaro.cpp:24:1: 
+error: 'main' must return 'int'
+void main()
+^~~~
+</code></pre>
 
 
             </section>

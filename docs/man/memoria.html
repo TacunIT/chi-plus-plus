@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="it-IT"><head>
-    <title>Gestione della memoria |  C'hi++
+    <title>La memoria |  C'hi++
 </title>
     <meta charset="utf-8" />
     <meta name="viewport"     content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
@@ -8,7 +8,7 @@
     <meta     name="thumbnail"       content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
     <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
-    <meta property="og:title"        content="Gestione della memoria" />
+    <meta property="og:title"        content="La memoria" />
     <meta property="og:type"         content="website" />    
     <meta property="og:description"  content="Chi++ - Proposta per una metafisica open-source" />
     <meta property="og:image"        content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
@@ -60,7 +60,7 @@
         
 
             <h1>
-                Gestione della memoria
+                La memoria
             </h1>
 
             <blockquote class="motto">cogito ∴ sum()</blockquote>
@@ -86,7 +86,7 @@ Quando tu <em>dichiari</em> una variabile con un’istruzione come:</p>
 <pre><code> const char* motto = "Cogito ergo sum";
 </code></pre>
 
-<p>stai chiedendo al compilatore di prendere un’area di memoria di 16 byte, di associarle il nome <code>motto</code> e scriverci dentro i 15 caratteri della frase più un ultimo carattere, con valore <code>0</code>, che indica la fine della stringa.<br />
+<p>stai chiedendo al compilatore di prendere un’area di memoria di 16 byte, salvarne l’indirizzo iniziale nella variabile <code>motto</code> e poi scriverci dentro i 15 caratteri della frase più un ultimo carattere, con valore <code>0</code>, che indica la fine della stringa.<br />
 Puoi usare questo metodo se sai in anticipo quanto saranno grandi le variabili con cui avrai a che fare, ma se invece devi gestire dei valori di grandezza variabile (per esempio, l’input di un utente), hai due possibilità: o riservi preventivamente una quantità abbondante di spazio, o la allochi sul momento, in base alle tue necessità.
 Il primo caso va bene se devi gestire pochi dati di dimensioni ridotte, ma se devi gestire molte variabili di grandi dimensioni, l’allocazione dinamica, anche se più complessa da gestire, è più efficiente.<br />
 Il codice seguente è un esempio di gestione statica della memoria:</p>
