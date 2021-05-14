@@ -1,3 +1,9 @@
+## 0.24.1 (May 14, 2021)
+  - Redazione sezione dottrina per capitolo su ereditarietà
+  - Revisione delle citazioni
+  - Spostate le citazioni dalla Bhagavad-Gita con le altre
+  - Aggiunto log per il cambio di struttura del testo.
+
 ## 0.24.0 (May 13, 2021)
   - Rivista assegnazione delle citazioni ai capitoli
   - Rimossi i capitoli su C'i++, estetica e cosmogonia.
