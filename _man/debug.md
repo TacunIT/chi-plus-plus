@@ -25,6 +25,9 @@ Il modulo in continuo di una stampante ad aghi a 136 colonne, al contrario, ti p
 E\' così che si facevano, le revisioni di codice, quando ancora c\'era il tempo di fare le revisioni del codice.
 
 <!--
+
+v. Orologiaio, pos. 3836 
+
 Così come l\'Ikebarba inizia nel negozio, il debug comincia nel momento in cui si scrive il codice.
 Il modo migliore per evitare che il codice contenga degli errori è scrivere del buon codice.
 

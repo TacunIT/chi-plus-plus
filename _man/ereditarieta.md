@@ -385,9 +385,9 @@ Data una classe astratta `Mammifero`, le istruzioni seguenti causerebbero degli 
 
 ```
 void funz(Mammifero m);  // non possono essere argomenti..
-Mammifero funz();        // nè valori di ritorno..
-Mammifero pollo;         // nè il tipo di un oggetto()..
-punt = (Mammifero*)ptr;  // nè il tipo di una conversione.
+Mammifero funz();        // né valori di ritorno..
+punt = (Mammifero*)ptr;  // né il tipo di una conversione.
+Mammifero pollo;         // né il tipo di un oggetto
 ```
 
 È possibile, però, dichiarare un puntatore o una *reference* a una classe astratta e utilizzarli per creare degli array o delle code che possano essere utilizzati con istanze di classi diverse: 
@@ -427,18 +427,14 @@ cane.Mammifero::getSpecie();
 ```
 <hr id="dottrina">
 
-> Le figure mitiche, è vero, nascono e trapassano, ma non proprio come noi mortali. Hanno bisogno di denominazioni caratteristiche, come quella di «Re nel Passato e nel Futuro». Sono esistite in passato? Allora sono esistite ancor prima, o esisteranno ancora, con altri nomi, sotto altri aspetti, proprio come il cielo ci riporta in eterno le sue configurazioni. Se si cercasse di definirle con precisione come persone e cose, sicuramente svanirebbero ai nostri occhi, quanto i frutti di una fantasia malata. 
-Ma se si rispetta la loro vera natura, riveleranno questa natura come funzioni.
-<a class="nota" href="/man/note#miti"></a>
-
 Buona parte degli esempii e delle cose che ti ho detto in questa lezione le ho prese dal manuale di programmazione in C++ che il Maestro Canaro scrisse nel Secolo scorso, modificandole per adattarle a questo contesto.   
-Per esempio, l'esempio delle funzioni virtuali, era così:
+Per esempio, l'esempio originale delle funzioni virtuali, era così:
 
 ```
 {% include_relative src/ereditarieta-codice-canaro.cpp %}
 ```
 
-Essendo un codice scritto per l'ambiente Microsoft del 1995, se provassi a compilarlo adesso, con il compilatore Gnu, otterresti tutta una serie di errori:
+Essendo un codice scritto per l'ambiente Microsoft del 1995, se provassi a compilarlo adesso, con il compilatore GNU, otterresti una lunga serie di errori:
 
 ```
 > g++ src/cpp/ereditarieta-codice-canaro.cpp -o src/out/esempio
@@ -458,7 +454,8 @@ did you mean 'std::cout'?
 extern _LIBCPP_FUNC_VIS ostream cout;
                                 ^
 src/cpp/ereditarieta-codice-canaro.cpp:21:8: 
-error: use of undeclared identifier 'cout'; 
+error: use of undeclared identifier 'cout'
+
 did you mean 'std::cout'?
         { cout << "Sono un oggetto di classe B \n" ; } 
           ^~~~
@@ -473,3 +470,21 @@ error: 'main' must return 'int'
 void main()
 ^~~~
 ```
+
+Il valore didattico di questo codice, però, è immutato.
+Il “Karma” dei due oggetti è determinato dalla dichiarazione delle loro classi, che non lascia loro altra possibilità che fare ciò per cui sono stati creati.
+L'output delle funzioni, lo stile dei commenti o il fatto che in un caso le classi si chiamino `A` e `B`, mentre nell'altro si chiamano `Persona` e `Madre` sono solo differenze formali che non influiscono sul “Dharma” dell'esempio, che è quello di illustrare il comportamento delle funzioni virtuali.
+Se in vece del nuovo codice avessi usato quello originale del Maestro Canaro, tu avresti capito ugualmente; forse anche meglio, perché il nuovo codice sembra migliore a me, ma non è detto che lo sia per te.  
+Lo stesso principio vale anche per l'Universo.
+
+> {{site.data.citazioni.santillana.mito}} <a class="nota" href="/man/note#miti"></a>
+
+Ogni epoca ha i suoi eroi e i suoi demoni; la memoria delle loro battaglie, genera il mito.  
+La Scienza è transeunte: abbiamo poche notizie riguardo le conoscenze scientifiche dei popoli del passato, mentre sappiamo tutto sui loro miti.
+Il mito è immortale; la Scienza no, a meno che non sia assorbita dal mito e trasformata in leggenda o superstizione.
+Il Maestro Canaro era convinto, per esempio, che la superstizione relativa ai numeri 13 e 17 fosse nata dall'osservazione del comportamento delle locuste, <!-- il nome corretto, dice Dawkins, è: “cicale periodiche”, ma, per chiarezza, preferisco utilizzare quello più noto --> che, a seconda della specie, passano o tredici o diciassette anni sotto terra in uno stadio larvale <!-- anche qui, Ricky precisa che il termine tecnico è: “ninfe” -->, poi escono fuori tutte insieme e spendono la loro breve vita devastando le coltivazioni.
+
+<!--
+hanno un periodo di in
+
+-->
