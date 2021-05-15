@@ -1,3 +1,7 @@
+## 0.24.2 (May 15, 2021)
+  - Rivista struttura pagine log
+  - Redazione capitolo.
+
 ## 0.24.1 (May 14, 2021)
   - Redazione sezione dottrina per capitolo su ereditarietà
   - Revisione delle citazioni
