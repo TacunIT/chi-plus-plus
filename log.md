@@ -1,7 +1,7 @@
 ---
 layout:     pagina
 class:      elenco
-title:      Zibald-1
+title:      Log
 permalink:  /log/
 ---
 
