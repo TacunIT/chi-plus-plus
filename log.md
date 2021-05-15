@@ -1,7 +1,7 @@
 ---
 layout:     pagina
 class:      elenco
-title:      Log
+title:      Diario di bordo
 permalink:  /log/
 ---
 
@@ -12,6 +12,7 @@ permalink:  /log/
                 <h3>{{ post.title }}</h3>
             </a>
             <p class="data">{{ post.date | date_to_string }}</p>
+            <p class="tag"><label>tag</label> {{ post.tags | sort | join: ", " }}</p>
             {% if post.excerpt != "" %}
                 {{ post.excerpt }}
                 <a class="more" href="{{ post.url | relative_url}}">leggi tutto</a>

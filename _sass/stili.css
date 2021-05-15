@@ -762,13 +762,15 @@ SECTION.elenco.post DIV.log P.data {
  *
  */
 BODY.pagina.log MAIN P.category {
-    font-family: Inconsolata;
     text-align: center;
+    font-variant-caps: petite-caps;
 } 
 
-BODY.pagina.log MAIN P.tag {
+P.tag {
     font-size: 0.9rem;
     font-family: Inconsolata;
+}
+BODY.pagina.log MAIN P.tag {
     margin: 3rem auto 2rem;    
     width: 66%;
     text-align: center;
