@@ -25,11 +25,8 @@ Mentre scrive il codice, la mente del buon programmatore lavora su tre livelli: 
 I buoni programmatori sono paranoici ed è giusto che sia così.
 Le istruzioni di un programma sono eseguite milioni di volte nel corso
 della loro vita e anche una probabilità minima di errore è
-inammissibile.  
-Ricòrdati: il codice funziona come vuoi tu solo se non gli lasci altra scelta.
-
----
-
+inammissibile.
+Ricòrdati: il codice funziona come vuoi tu solo se non gli lasci altra scelta.  
 Nei tempi andati ci fu chi sostenne una teoria bizzarra secondo la quale i programmi, per essere veramente efficaci, sarebbero dovuti essere rapidi, ridondanti e imprecisi.
 L'idea di fondo era che, essendo impossibile, sopra un certo livello di complessità, produrre del codice privo di errori, sarebbe stato meglio produrre molti programmi mediamente imprecisi e valutare l'insieme dei loro risultati.
 L'unica cosa che posso dire a loro discolpa è che a quei tempi si pensava alla produzione di codice come a un'attività di tipo industriale e non come a una disciplina mistica.  
