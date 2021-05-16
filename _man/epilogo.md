@@ -32,7 +32,7 @@ Lo avevo ucciso io? Davvero? Sentii il cuore pulsarmi nelle orecchie e guardai c
 «Il Cielo non fa favoritismi: per lui, siamo tutti preziosi e inutili allo stesso tempo, come la Regina in una partita di Scacchi. È il pezzo più importante, dopo il Re, ma un buon giocatore non ha problemi a sacrificarlo, se questo gli permette di vincere la partita.»  
 Mi fece cenno di dargli un po' d'acqua; bevve, poi riprese a parlare.  
 «O forse no. Ti è mai passato per la testa, che tutta questa teoria potrebbe essere sbagliata? Che potrei essere davvero pazzo, come dicono i tuoi confratelli? 
-Wittgenstein a trent'anni, definì una filosofia che egli stesso rinnegò dieci anni dopo, a favore di un nuovo credo. Se fosse vissuto per altri dieci'anni, avrebbe cambiato ancora idea?
+Wittgenstein a trent'anni, definì una filosofia che egli stesso rinnegò dieci anni dopo, a favore di un nuovo credo. Se fosse vissuto per altri dieci anni, avrebbe cambiato ancora idea?
 La storia dell'Umanità è costellata di idee bizzarre, ciascuna con il suo bravo seguito di fedeli; cosa ti fa pensare, che il C'hi++ sia diverso?
 Il fatto che possa dare una risposta razionale e coerente ad alcuni fenomeni che altrimenti sarebbero senza spiegazione non vuol dire necessariamente che corrisponda a verità.
 Sì, certo: i suoi assiomi sembrano trovare conferma nella realtà, ma questo cosa conta?
@@ -47,21 +47,13 @@ Bevve un altro sorso di acqua, poi, con gli occhi chiusi, disse:
 «Il tuo maestro sta morendo e tu sei visibilmente addolorato, quindi è un ottimo momento per verificarlo. Va' fuori, guarda in alto e chiediti se quello che ti ho insegnato rende questo momento meno difficile da affrontare.»  
 Replicai che non mi sembrava il caso: pioveva ed ero a piedi nudi, ma era solo parte del problema: in realtà non volevo lasciarlo perché mi sembrava che le sue condizioni stessero rapidamente peggiorando.  
 «È l'ultima cosa che ti chiedo. Davvero me la vuoi negare?»  
-Mi arresi: uscii fuori, sotto la pioggia, e guardai in alto, come mi era stato
-ordinato di fare.
-La luna e le stelle erano nascoste dalle nuvole e comunque la pioggia
-colpiva i miei occhi impedendomi di vedere con chiarezza.
-Ciò non ostante, o forse proprio per questo motivo, non abbassai lo
-sguardo e lasciai che le gocce di pioggia si confondessero con le
-lacrime. Fu così che capii.
-Quelle gocce di acqua che adesso erano pioggia, erano state, prima,
-vapore acqueo e mare e fiume e prima ancora, per quello che ne potevo
-sapere: sangue, sudore, piscio, ghiaccio, vino, muscoli, piante, saliva
-fango, calce o cemento.
-A qualunque cosa si fossero legate, nella loro esistenza precedente,
-adesso erano di nuovo acqua, ed erano pronte per un altro ciclo di vita.
-Il calore del sole le aveva portate in alto, ora la gravità le riportava
-in basso, verso il mare.  
+Mi arresi: uscii fuori, sotto la pioggia, e guardai in alto, come mi era stato ordinato di fare.
+La luna e le stelle erano nascoste dalle nuvole e comunque la pioggia colpiva i miei occhi impedendomi di vedere con chiarezza.
+Ciò non ostante, o forse proprio per questo motivo, non abbassai lo sguardo e lasciai che le gocce di pioggia si confondessero con le lacrime. 
+Fu così che capii.
+Quelle gocce di acqua che adesso erano pioggia, erano state, prima, vapore acqueo e mare e fiume e prima ancora &mdash; per quello che ne potevo sapere &mdash; sangue, sudore, piscio, ghiaccio, vino, muscoli, piante, saliva, fango, calce o cemento.
+A qualunque cosa si fossero legate, nella loro esistenza precedente, adesso erano di nuovo acqua, ed erano pronte per un altro ciclo di vita.
+Il calore del sole le aveva portate in alto, ora la gravità le riportava in basso, verso il mare.  
 Tornai nella cella del Maestro per dirgli che avevo capito, ma la coperta non si muoveva più.  
 “Non importa”, pensai. “Glielo dirò la prossima volta”.
 
@@ -69,7 +61,7 @@ Tornai nella cella del Maestro per dirgli che avevo capito, ma la coperta non si
 
 Questa è la poesia funeraria del Maestro.
 Una poesia funeraria “ready-made”, come la definiva lui, perché il testo è quello della poesia funeraria del monaco Zen Gesshu Soko.
-Il Maestro la tradusse in Tedesco quando scoprì che il verbo *zu Treffen* può significare sia: *icontrarsi* che: *fare centro*.
+Il Maestro la tradusse in Tedesco quando scoprì che il verbo *zu Treffen* può significare sia: *incontrarsi* che: *fare centro*.
 
 <blockquote>
 Einatmen, Ausatmen,<br />
@@ -81,5 +73,5 @@ Eine Straße, die direkt zu meinem wirklichen Zuhause führt.
 </blockquote>
 
 <!--
-Mentre scrivevo questo capitolo, in anticipo rispetto alla sequenza temporale della narrazione, a Bologna moriva il mio amico Giovanni “Zvanen” Ortolani, che, per la sua attività di scultore e insegnante di materie artistiche, noi chiamavamo: “Il Maestro”. 
+Mentre scrivevo questo capitolo, in anticipo rispetto alla sequenza temporale della narrazione, a Bologna, senza che io lo sapessi, moriva il mio amico Giovanni “Zvanen” Ortolani, che, per la sua attività di scultore e insegnante di materie artistiche, noi chiamavamo: “Il Maestro”. 
 -->
