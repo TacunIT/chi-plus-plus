@@ -1,3 +1,9 @@
+## 0.24.3 (May 16, 2021)
+  - Corretto riferimento incrociato nel paragrafo preprocessore
+  - Revisione citazioni della Proposta
+  - Revisione generale del testo
+  - Revisione del testo dell'epilogo
+
 ## 0.24.2 (May 15, 2021)
   - Rivista struttura pagine log
   - Redazione capitolo.
