@@ -238,7 +238,7 @@ Approfondiremo quest'ultimo concetto <a id="arte" href="/man/ereditarieta#arte" 
 <hr id="amore">
 
 Tutti noi agiamo in base a degli schemi di valori che determinano le nostre scelte. 
-L'istinto di sopravvivenza, solitamente, ci spinge a porre la nostra persona al vertice di questa piramide, ma alle volte può capitarci di eleggere a nostro bene supremo qualcuno o qualcosa diverso da noi stessi.  
+L'istinto di sopravvivenza, solitamente, ci spinge a porre la nostra persona al vertice di questa piramide, ma alle volte può capitarci di eleggere a nostro bene supremo qualcuno o qualcosa diverso da noi stessi.
 Quel senza Dio di Dawkins
 <!-- Utilizzo questo appellativo in maniera affettuosamente canzonatoria: Dawkins ha cambiato il mio modo di vedere il Mondo o, almeno, parte di esso. Credo solo che faccia un errore di generalizzazione, ritenendo tutti i fedeli dei fanatici e dei bigotti. --> 
 ha dimostrato come l'attaccamento che noi proviamo per i nostri parenti sia direttamente proporzionale al numero di cromosomi che condividiamo con essi e che quindi può essere riconducibile al desiderio primordiale di perpetuare il nostro patrimonio genetico<a href="/man/note/#selfish" class="nota"></a>.  
