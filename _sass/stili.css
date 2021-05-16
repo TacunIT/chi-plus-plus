@@ -158,11 +158,11 @@ A.nota {
     display: inline-block;
     margin-left: 2px; 
 }
-A.nota::after {   
+/** Numerazione automatica solo nel Manuale */
+BODY.manuale A.nota::after {   
     counter-increment: note-pagina; 
     content: counter(note-pagina);     
 }
-
 A.more {
     font-weight: bold;
     font-size: 0.9rem;
@@ -380,10 +380,6 @@ BODY.pagina.index H1 {
     display: none;
 }
 
-BODY.index MAIN SECTION.citazione.pagina {
-    padding-top: 3rem;
-}
-
 /**
  *
  *  Stili per il manuale
@@ -588,6 +584,10 @@ BODY.proposta MAIN PRE {
 BODY.proposta MAIN .citazione PRE {
     background-color: transparent;
 }
+BODY.index MAIN SECTION.citazione.pagina {
+    padding-top: 3rem;
+}
+
 
 /** 
  * Stili per le domande.
@@ -620,17 +620,6 @@ OL.dogmi LI {
 /** Numeri romani per le cose da fare */
 OL.da-fare {
     list-style-type: upper-roman;
-}
-
-/** Citazioni da testi */
-DIV.citazione {
-    color: $blockquoteColor;
-    font-style: italic;
-    font-size: 14pt;
-    font-family: initial;
-    padding:1rem;
-    text-align:justify;
-    max-width: 100%;
 }
 
 /**
@@ -685,6 +674,8 @@ SECTION.citazione {
     font-size: 1rem;
     margin: 0 auto;
     padding-top: 5rem;
+    
+    
     padding-left: 40%;
     padding-bottom: 5rem;
     text-align: right;

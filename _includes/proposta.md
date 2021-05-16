@@ -268,23 +268,10 @@ Oltre ai problemi tipici delle religioni, abbiamo rilevato alcuni problemi tipic
 
 Per correggere o quanto meno mitigare questi problemi, una religione dovrebbe quindi:
 
-<ol class="da-fare">
-	<li>
-		limitare il numero dei dogmi;
-	</li>
-	<li>
-		limitare gli elementi metafisici e le accettazioni per fede;
-	</li>
-	<li>
-		non proporsi come Unica Verità Incontestabile, ma come
-	    un'approssimazione sicuramente incompleta e perfettibile della
-	    Verità;
-	</li>
-	<li>riconoscere le contraddizioni della dottrina e analizzarle
-	    obiettivamente, anche se ciò porterà a modificare la dottrina
-	    stessa.
-	</li>
-</ol>
+- limitare il numero dei dogmi;
+- limitare gli elementi metafisici e le accettazioni per fede;
+- non proporsi come Unica Verità Incontestabile, ma come un'approssimazione sicuramente incompleta e perfettibile della Verità;
+- riconoscere le contraddizioni della dottrina e analizzarle obiettivamente, anche se ciò porterà a modificare la dottrina stessa.
 
 Pur se complesso, tutto questo è possibile.
 
@@ -372,74 +359,50 @@ In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipo
 Nelle fasi di espansione, l'Uno esplodeva, generando l'Universo così come lo conosciamo; nelle fasi di contrazione, l'Universo collassava nell'Uno.
 Anche se in embrione, gli elementi principali del C'hi++ ci sono tutti; la rarefazione degli elementi metafisici:
 
-<div class="citazione">
-Sostiene Aristotele che le scienze più rigorose sono quelle che richiedono il numero minore di premesse.
+> Sostiene Aristotele che le scienze più rigorose sono quelle che richiedono il numero minore di premesse.
 La cosa mi conforta, perché la mia ipotesi richiede solo tre premesse per funzionare a livello “base”, e quattro per una visione un po’ più appetibile delle cose.
 I tre dogmi principali della mia “religione” sono:
-<ol>
-	<li>le cose possono esistere</li>
-	<li>l’Universo si espande</li>
-	<li>se lasci andare un peso, quello ti finisce su un piede</li>
-</ol></div>
+- le cose possono esistere
+- l’Universo si espande
+- se lasci andare un peso, quello ti finisce su un piede.
 
 la ciclicità dell'Universo:<br />  
 
-<div class="citazione" >
-Una volta che l’Universo sarà nuovamente collassato nell’Uno, i casi saranno due: resterà Uno per il resto del Tempo oppure esploderà di nuovo, dando vita a un nuovo Universo.
+> Una volta che l’Universo sarà nuovamente collassato nell’Uno, i casi saranno due: resterà Uno per il resto del Tempo oppure esploderà di nuovo, dando vita a un nuovo Universo.
 La prima ipotesi è perfettamente lecita, ma è noiosa e contrasta con la tendenza generale delle cose ad avvenire per cicli (le stagioni, per esempio), quindi ce ne disinteresseremo, chiedendoci invece cosa potrebbe succedere se si verificasse un nuovo Big Bang.
 Anche qui, le ipotesi sono due. Una è: potrebbe essere che un Big Bang avvenga solo in determinate condizioni e che quelle condizioni portino necessariamente a un Universo identico a quello come noi lo conosciamo adesso; quindi, se l’Uno esploderà di nuovo, ricomincerà tutto da capo.
 La seconda ipotesi è che ogni Big Bang avviene in circostanze e con modalità specifiche e quindi, se l’Uno esploderà di nuovo, nascerà un nuovo Universo, che potrà avere pochi o nessun punto di contatto con quello corrente.<br/>
 La prima ipotesi è possibile, ma poco probabile, quindi diamo per scontato che sia la seconda, quella corretta; tanto non cambia niente, perché il tempo che noi abbiamo a disposizione per far esplodere e implodere l’Universo è infinito e per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali, in un lasso di tempo infinito è  impossibile che la cosa prima o poi non avvenga.
 In base allo stesso principio, dato per scontato che o prima o poi questo Universo tornerà a manifestarsi, è lecito pensare, non per fede, ma in base a un banale calcolo probabilistico, che anche ciò che c’è in esso possa o prima o poi tornare a essere. Noi compresi.
-</div>
 
 la memoria degli eventi passati:<br />
 
-<div class="citazione" >
-Il quarto dogma si discosta dai tre dogmi principali perché è l’unico che richiede una certa dose di fede. (...)
+> Il quarto dogma si discosta dai tre dogmi principali perché è l’unico che richiede una certa dose di fede. (...)
 In parole povere: cos’è quello che comunemente chiamiamo: “istinto” e che Jung, se non ho capito male (probabile) definisce: “inconscio collettivo”?
 Non ho una risposta certa a questa domanda, ma solo un’ipotesi: Post-it.
 Promemoria che noi, nel corso delle nostre precedenti esistenze, abbiamo appiccicato da qualche parte, per ricordarci di fare o di non fare qualcosa.
 Una sorta di memoria persistente, esterna, o comunque non soggetta ai cicli di rinascita dell’Universo.
 Se l’Universo fosse un computer, potremmo pensare a tutto ciò che esiste come a un programma che “gira” in memoria e all’istinto (o all’immaginario collettivo) come a qualcosa scritto invece sul disco rigido.
 Ogni volta che il computer viene spento, la memoria si svuota e tutto quello che conteneva si perde, mentre ciò che è scritto sul disco rigido rimane lì, in attesa della prossima “accensione”.
-Insomma, il dogma numero quattro è: <I>Lo sai, perché ci sei già passato</i>.<br/>
-</div>
+Insomma, il dogma numero quattro è: *Lo sai, perché ci sei già passato*.
 
 l'auto-lesionismo delle scelte egoistiche:<br />
 
-<div class="citazione" >
-Se davvero siamo tutti degli epifenomeni, possiamo manifestarci ora qui ora lì, a seconda dei casi e se io oggi (ovvero: <i>in questo ciclo dell’Universo</i>) mi metto a spacciare droga fregandomene delle persone che ammazzo e delle famiglie che rovino, domani (ovvero: <i>in un altro ciclo di questa particolare specie di Universo</i>), potrei benissimo ritrovarmi in uno di quei drogati o di quei familiari e subirei le conseguenze delle mie stesse azioni.
-È quindi decisamente meglio che io mi comporti bene e che cerchi, per quanto mi è possibile, di convincere anche gli altri a comportarsi bene.</div>
+> Se davvero siamo tutti degli epifenomeni, possiamo manifestarci ora qui ora lì, a seconda dei casi e se io oggi (ovvero: <i>in questo ciclo dell’Universo</i>) mi metto a spacciare droga fregandomene delle persone che ammazzo e delle famiglie che rovino, domani (ovvero: <i>in un altro ciclo di questa particolare specie di Universo</i>), potrei benissimo ritrovarmi in uno di quei drogati o di quei familiari e subirei le conseguenze delle mie stesse azioni.
+È quindi decisamente meglio che io mi comporti bene e che cerchi, per quanto mi è possibile, di convincere anche gli altri a comportarsi bene.
 
 la visone dell'esistenza come un processo di miglioramento continuo:<br />
 
-<div class="citazione" >
-Ora, il concetto di “bene”, a prescindere da una Divinità e da un corpo di regole predefinito non è che funzioni granché (come dimostra, senza volerlo, il libro: "Un’etica senza Dio" di Lecaldano), ma nel nostro caso possiamo definire “bene” quel comportamento che non lede, almeno intenzionalmente, nessuno.
+> Ora, il concetto di “bene”, a prescindere da una Divinità e da un corpo di regole predefinito non è che funzioni granché (come dimostra, senza volerlo, il libro: "Un’etica senza Dio" di Lecaldano), ma nel nostro caso possiamo definire “bene” quel comportamento che non lede, almeno intenzionalmente, nessuno.
 È la differenza, drastica, che passa fra l’agire male e l’agire per il male.
 (Anche qui, devo semplificare, ma ho delle dimostrazioni per tutte queste affermazioni...)
-C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musashi:
-
- <blockquote>
-    Non bisogna interferire nel funzionamento dell’Universo,
-    ma prima è necessario capire quale sia,
-    il funzionamento dell’Universo
-</blockquote>
-
- Che somiglia molto a una frase di Jacopone da Todi:
-
- <blockquote>
-    Prima devi sape' perché stai ar monno<br />
-    quanno sai er perché <br />
-    te devi impara' a stacce <br />
-</blockquote>
+C’è una frase bellissima in un libro sulla vita dello spadaccino Myamoto Musashi: “Non bisogna interferire nel funzionamento dell’Universo, ma prima è necessario capire quale sia, il funzionamento dell’Universo”, che somiglia molto a una frase di Jacopone da Todi: “Prima devi sape' perché stai ar monno; quanno sai er perché, te devi impara' a stacce”.
 È (la prima frase) una forma estesa del Wu Wei taoista, ma come possiamo capire se stiamo interferendo nel funzionamento dell’Universo?
 È facile: se stiamo agendo in risposta a un’esigenza esterna alla nostra persona, è probabile che siamo sulla strada giusta; se stiamo agendo per soddisfare una nostra personalissima esigenza, è probabile che siamo sulla strada sbagliata. Un po’ la differenza che passa fra lo sparare a un alce per mangiarselo e sparargli per appendersi in casa la sua testa.<br/>
 Ciascuno di noi è in grado di capire se si sta comportando bene oppure male: deve solo chiederselo e darsi una risposta sincera.
 Qualche volta non serve nemmeno chiederselo.
 (...)
 Il Paradiso e l'Inferno non sono altrove, sono solo due stati possibili dell'Universo e siamo noi, con le nostre azioni, a decidere in quale dei due vivere.
-</div>
 
 ### Il senso della vita è il debug
 Considerare l'esistenza come un'eterna sessione di *debug* dell'esistenza stessa e gli esseri senzienti come i *beta-tester*<a href="#beta-tester" class="nota" name="fn-9">9</a> di sé stessi permette di dare un senso a delle questioni che altrimenti sarebbero o irrisolte o paradossali &mdash; come il *Koan Mu* o il motivo per cui Nansen taglia in due il gatto<a href="#mumon" class="nota" name="fn-10">10</a> &mdash; ed evidenzia l'importanza del pentimento, se questo non è solo riconoscere di aver fatto un errore, ma anche riproporsi di non commetterlo mai più.
@@ -454,10 +417,8 @@ Per lo stesso principio visto sopra, se qualcuno fa qualcosa che vi arreca giova
 Questo è facile, oltre che educato, se la persona che ci ha favorito si è comportata bene nei nostri confronti, ma richiede tanta onestà intellettuale e un bel po' di fede se la persona ci ha favorito comportandosi male nei nostri confronti.  
 In sostanza: la definizione che Frazer dà del termine *religione*:
 
-<div class="citazione" >
-gli sforzi dell’uomo per propiziarsi o conciliarsi potenze superiori che si
+> gli sforzi dell’uomo per propiziarsi o conciliarsi potenze superiori che si
 suppone dirigano e controllino il corso della natura e della vita umana.<a href="#frazer" class="nota" name="fn-">13</a>
-</div>
 
 è valida anche per il C'hi++, solo che le “potenze superiori”, siamo noi stessi. 
 
@@ -467,9 +428,7 @@ Questa ambivalenza è presente anche nel titolo, che è un gioco di parole fra i
 Il tono della narrazione è generalmente serio, ma non sempre.
 Ashvaghosha, nell'introduzione alla *Saundarananda*, afferma:
 
-<div class="citazione" >
-Questa composizione sul tema della liberazione è stata composta in forma poetica non per procurare piacere, ma per vincere nei lettori la propensione a distrarre la mente; e se ho trattato in esso temi diversi dalla liberazione è stato per renderla piacevole, così come una medicina amara si mescola con il miele per renderla bevibile.
-</div>
+>Questa composizione sul tema della liberazione è stata composta in forma poetica non per procurare piacere, ma per vincere nei lettori la propensione a distrarre la mente; e se ho trattato in esso temi diversi dalla liberazione è stato per renderla piacevole, così come una medicina amara si mescola con il miele per renderla bevibile.
 
 Fatte le debite proporzioni, questo vale anche per *C'hi++*: molte affermazioni del Maestro sono ironiche e lo stesso nome scelto per gli elementi costitutivi dell'Universo (gli _spazioni_) e per la cosmogonia che ne deriva (lo *Spazionismo*) ha chiaramente un intento auto/ironico.
 Anche i riferimenti alla disciplina estetica della disposizione dei panni sullo stendipanni, l'*Ikebarba*, hanno lo scòpo di stemperare la seriosità del testo, allegerendone la lettura.
@@ -477,43 +436,36 @@ Anche i riferimenti alla disciplina estetica della disposizione dei panni sullo 
 ### Mitopietica del C'hi++
 Il testo riporterà gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione:
 
-<div class="citazione">
+>
 Non riuscivo a distogliere lo sguardo dallo schermo, ero come ipnotizzato da quello strano codice che potevo capire solo in parte. In quelle sequenze di istruzioni c’era qualcosa che non avevo mai visto prima: un ritmo, una sorta di indefinibile bellezza di cui mi ero innamorato a prima vista. Chiesi al Maestro di insegnarmi il C++.<br/>
-- E perché mai? ci sono linguaggi molto più facili da usare.<br/>
+«E perché mai? ci sono linguaggi molto più facili da usare.»<br/>
 Gli spiegai che non si trattava di un interesse tecnologico, ma estetico e lui restò in silenzio per qualche secondo, considerando quello che avevo detto.<br/>
-- Qual’è il dovere di un programmatore? chiese poi.<br/>
+«Qual’è il dovere di un programmatore? chiese poi.»<br/>
 Lo pregai di definire meglio la sua domanda.<br/>
-- Torna qui domani, se mi saprai dire qual'è il dovere di un programmatore, ti insegnerò il C++.<br/>
+«Torna qui domani, se mi saprai dire qual'è il dovere di un programmatore, ti insegnerò il C++.»<br/>
 Passai tutta la notte a meditare su quella strana domanda e la mattina dopo mi presentai al Maestro. Dissi che secondo me il dovere di un programmatore era quello di scrivere del buon codice. Il Maestro non distolse nemmeno lo sguardo dallo schermo e disse:<br/>
-- Torna qui domani, se mi saprai dire cosa vuol dire scrivere del buon codice, io ti insegnerò il C++. <br/>
+«Torna qui domani, se mi saprai dire cosa vuol dire scrivere del buon codice, io ti insegnerò il C++.»<br/>
 Com'è facile intuire, anche il giorno dopo e per diversi giorni a seguire il Maestro trovò il modo di rimandare l’inizio del mio tirocinio con domande ancora più specifiche che andavano a colpire un’imprevista lacunosità delle mie risposte.
 Analizzai ogni possibile aspetto della produzione del software, dall’utilizzo delle risorse di sistema alle implicazioni sociali dell’incremento dell'occupazione derivante dall’evoluzione dei programmi, ma non ci fu nulla da fare: ogni volta il Maestro riuscì a trovare una scappatoia per venire meno al suo impegno.<br/>
 Alla fine non ne potei più. Esasperato, dissi che ne avevo abbastanza di quella sua ostinata capziosità: per quanto io potessi essere specifico nelle mie risposte, ci sarebbe sempre stato un margine di indeterminazione. Se voleva insegnarmi il C++ doveva iniziare quel giorno stesso. Il Maestro mi fissò e, sorridendo, spense il suo computer.<br/>
-- No, per oggi basta. Vieni domani per la seconda lezione.
-</div>
+«No, per oggi basta. Vieni domani per la seconda lezione».
 
 Dopo aver insegnato al suo allievo a programmare con il linguaggio C++, il Maestro gli parlerà del *C'hi++*, ovvero il linguaggio con cui è stata scritta l'applicazione che gestisce l'Universo:
 
-<div class="citazione">
-Tu sai che il primo programma che si impara in ogni linguaggio è di solito una semplice riga di codice che scrive: "Hello, World!" sullo schermo:
-
-<pre>
+> Tu sai che il primo programma che si impara in ogni linguaggio è di solito una semplice riga di codice che scrive: "Hello, World!" sullo schermo:
+```
 int main(int argc, char * argv)
 {
     cout << "Hello, World!" << endl;
 }
-</pre>
-
+```
 Con il C'hi++ è la stessa cosa, solo che il Mondo lo crei davvero.
-</div>
 
 ### L'Annosa Dicotomia
 Nel racconto all'inizio del libro comparirà anche quello che poi sarà uno dei temi ricorrenti del C'hi++, ovvero l'Annosa Dicotomia fra ciò che desideriamo e ciò di cui realmente abbiamo bisogno:
 <!-- @todo: completare revisione -->
 
-<div class="citazione">
-Una volta di più, mi trovo a dover fronteggiare l’Annosa Dicotomia fra ciò che il cliente desidera e quello di cui realmente ha bisogno e, una volta di più, sarà ingrato compito dell’uomo informatico quello di venire apparentemente meno ai propri doveri al fine di produrre qualcosa di consono alle reali esigenze del committente.
-</div>
+> Una volta di più, mi trovo a dover fronteggiare l’Annosa Dicotomia fra ciò che il cliente desidera e quello di cui realmente ha bisogno e, una volta di più, sarà ingrato compito dell’uomo informatico quello di venire apparentemente meno ai propri doveri al fine di produrre qualcosa di consono alle reali esigenze del committente.
 
 L'Annosa Dicotomia è un fenomeno nefasto, simile alla *Maya* dell'Induismo, che ci impedisce di vedere con chiarezza ciò che è bene fare o perseguire.
 Così come l'illusorietà del mondo sensibile è il frutto dell'azione dei tre  *guna*: *Sattva*, *Rajas* e *Tamas*, così l'Annosa Dicotomia nasce dallo scontro fra due forze contrapposte: *Arte* e *Marketing*.
@@ -541,11 +493,9 @@ Gli indumenti di colore diverso o con colori sgargianti sono difficili da accost
 ### Struttura del testo
 I primi tre capitoli inquadrano storicamente il contesto in cui si svolge l'azione, un possibile futuro in cui gli informatici sono stati trasformati in una casta sacerdotale:
 
-<div class="citazione">
-la società dipendeva ormai totalmente dai computer e i computer dipendevano dagli informatici; se un giorno avessero deciso di coalizzarsi e di scioperare, avrebbero messo il Paese, se non il Mondo intero, in ginocchio.
+> la società dipendeva ormai totalmente dai computer e i computer dipendevano dagli informatici; se un giorno avessero deciso di coalizzarsi e di scioperare, avrebbero messo il Paese, se non il Mondo intero, in ginocchio.
 Le psicopatologie tipiche degli informatici, la loro incapacità di gestire, se non addirittura di concepire una vita sociale, rendevano questa ipotesi molto poco probabile, ma era comunque un rischio troppo grosso per essere ignorato.
 Al contrario, l’indottrinamento degli informatici, la loro segregazione in una casta con forti componenti mistico-religiose, li avrebbero tenuti lontani dalle lusinghe dei sindacati e avrebbero reso l’ipotesi di uno sciopero improbabile quanto l’ipotesi di uno sciopero dei sacerdoti.
-</div>
 
 Nei capitoli seguenti, sarà descritto il linguaggio C++, facendo dei paralleli fra i suoi costrutti sintattici e alcuni concetti filosofici.
 Riporto di seguito alcuni esempi, anche si tratta ancora di appunti e non di un testo definitivo: 
@@ -553,20 +503,16 @@ Riporto di seguito alcuni esempi, anche si tratta ancora di appunti e non di un 
 #### Commenti al codice
 Affinità con i *Post-it* di cui parlavo prima, una sorta di memoria storica dell'Universo:
 
-<div class="citazione">
-Esistono, dei commenti, nell'Universo? Qualcosa che ci permetta, da un'escuzione e l'altra, di tenere traccia di ciò che è successo nelle esecuzioni precedenti?
-</div>
+> Esistono, dei commenti, nell'Universo? Qualcosa che ci permetta, da un'escuzione e l'altra, di tenere traccia di ciò che è successo nelle esecuzioni precedenti?
 
 #### Sistemi di numerazione
 Indipendenza del concetto di _quantità_ dal numero con cui viene rappresentata:
 
-<div class="citazione">
-C'è qualcosa, in tutto questo, sulla quale vorrei che tu soffermassi la tua attenzione.
+> C'è qualcosa, in tutto questo, sulla quale vorrei che tu soffermassi la tua attenzione.
 I numeri descrivono una quantità, non sono una quantità.
 La quantità di fiammiferi che vedi qui sul mio tavolo, rimane la stessa sia che tu la chiami 4, 100 o IV, così come rimarrebbe la stessa se tu la chiamassi five o cinco.
 La quantità esisteva da prima che esistessero i numeri e gli sopravviverà.
 I numeri, li abbiamo inventati noi; la quantità, no.
-</div>
 
 Questo concetto tornerà utile più tardi, quando, a proposito delle classi, si parlerà della differenza fra il simbolo e ciò che rappresenta; o, se preferite, fra il *significato* e il *significante*.
 
@@ -578,21 +524,16 @@ Parallelo con i differenti tipi di mediazione delle Chiese nella relazione con D
 Questo capitolo utilizzerà l'operatore *delete*, che elimina dalla memoria del sistema un dato non più necessario, per illustrare il rapporto del *C'hi++* con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon  funzonamento dell'Universo.
 Questo approccio si rirova anche nel precetto:
 
-<div class="citazione" >
-Amiamo ciò che ci ucciderà (se tutto va bene)
-</div>
+> Amiamo ciò che ci ucciderà (se tutto va bene)
 
 che sintetizza il brano del *Tao-Tê-Ching*:
 
-<div class="citazione" >
-Infatti gli esseri fioriscono e (poi) ognuno torna alla propria radice. Tornare alla propria radice si chiama la tranquillità; ciò vuol dire deporre il proprio compito. Deporre il proprio compito è una legge costante. Colui che conosce questa legge costante si chiama illuminato. Colui che non conosce questa legge costante agisce da stolto e attira su di sé la disgrazia.
-</div>
+> Infatti gli esseri fioriscono e (poi) ognuno torna alla propria radice. Tornare alla propria radice si chiama la tranquillità; ciò vuol dire deporre il proprio compito. Deporre il proprio compito è una legge costante. Colui che conosce questa legge costante si chiama illuminato. Colui che non conosce questa legge costante agisce da stolto e attira su di sé la disgrazia.
 
 #### Valori booleani
 È una piccola parte del linguaggio, ma una miniera di possibili parallelismi specie sulla relatività dei concetti di *vero* e *falso*:
 
-<div class="citazione">
-il concetto stesso di Verità è inconoscibile perché, per essere definito, deve prima essere valutato e non è possibile valutarlo se non si sa cosa sia “vero”.
+> il concetto stesso di Verità è inconoscibile perché, per essere definito, deve prima essere valutato e non è possibile valutarlo se non si sa cosa sia “vero”.
 <br />
 Russell sostiene che la condizione di “vero” o di “falso” è uno stato dell'organismo, determinato da condizioni esterne all'organismo.
 Questo è vero anche per i computer: “vero” e “falso” sono stati possibili per un'istruzione e dipendono per lo più da cause esterne all'istruzione stessa.
@@ -601,46 +542,36 @@ Per Access, “falso” è -1; per le prime versioni di MySQL è 'f'; per Postgr
 Il computer, però, non ha IN SE' il concetto di “vero” o di “falso”, ma solo l'associazione del valore booleano *false* a una determinata sequenza di bit.
 Il concetto di “vero” e di “falso”, quindi, è un valore simbolico che NOI inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è propio del nostro mondo.
 Da questo punto di vista, potremmo essere d'accordo con William James, quando dice che un'idea è "vera" fintanto che credere in essa è utile per le nostre vite.
-</div>
 
 #### Classi e istanze
 Il Maestro dirà:
 
-<div class="citazione" >
-	Se vuoi capire le classi, devi leggere Aristotele.
-</div>
+> Se vuoi capire le classi, devi leggere Aristotele.
 
 ed è vero: per parlare delle classi del C++ si può attingere a piene mani da Aristotele.
 Per esempio, il concetto di “essenza” può essere utilizzato per spiegare le *funzioni virtuali pure*; i concetti di “anima” e “corpo” possono illustrare la differenza fra *metodi* e *dati membro* di una classe; i concetti di “universale” e “sostanza” spiegano la differenza fra *dichiarazione* e *istanza* di una classe:
 
-<div class="citazione">
-La differenza fra universale e sostanza, in Aristotele è la stessa che c'è fra classe e istanza in C++, ed è corretto dire che un termine universale non possa essere il nome di una sostanza, ma solo il nome della sua classe, perché l'istruzione:
-<pre>
+> La differenza fra universale e sostanza, in Aristotele è la stessa che c'è fra classe e istanza in C++, ed è corretto dire che un termine universale non possa essere il nome di una sostanza, ma solo il nome della sua classe, perché l'istruzione:
+```
 class Uomo {};
 Uomo Uomo;
-</pre>
+```
 dà errore.. :-)
-</div>
 
 Per l'ereditarietà delle classi i riferimenti saranno all'Etica Nicomachea:
 
-<div class="citazione" >
-Un padre può ripudiare suo figlio, se è cattivo, ma un figlio non può ripudiare suo padre perché gli deve più di quanto non sia in grado di pagargli e in particolare gli deve l'esistenza.
-</div>
+> Un padre può ripudiare suo figlio, se è cattivo, ma un figlio non può ripudiare suo padre perché gli deve più di quanto non sia in grado di pagargli e in particolare gli deve l'esistenza.
 
 #### Debug
 Il penultimo capitolo sarà dedicato al *debug*, ovvero alla correzione degli errori del codice.
 La citazione è tratta dal *Breviario di estetica*, di Benedetto Croce:
 
-<div class="citazione" >
-Un sistema è una casa che, subito dopo costruita e adornata, ha bisogno (soggetta com’è all’azione corroditrice degli elementi) di un lavorio più o meno energico, ma assiduo, di manutenzione, e che a un certo momento non giova più restaurare e puntellare, e bisogna gettare a terra e ricostruire dalle fondamenta. Ma con siffatta differenza capitale: che, nell’opera del pensiero, la casa perpetuamente nuova e sostenuta perpetuamente dall’antica, la quale, quasi per opera magica, perdura in essa.
-</div>
+> Un sistema è una casa che, subito dopo costruita e adornata, ha bisogno (soggetta com’è all’azione corroditrice degli elementi) di un lavorio più o meno energico, ma assiduo, di manutenzione, e che a un certo momento non giova più restaurare e puntellare, e bisogna gettare a terra e ricostruire dalle fondamenta. Ma con siffatta differenza capitale: che, nell’opera del pensiero, la casa perpetuamente nuova e sostenuta perpetuamente dall’antica, la quale, quasi per opera magica, perdura in essa.
 
 #### C'hi++
 Nell'ultimo capitolo gli stessi concetti visti a proposito del C++ saranno applicati al C'hi++ e di conseguenza all'intero Universo:
 
-<div class="citazione">
-Il C'hi++ è allo stesso tempo un linguaggio di programmazione, un atteggiamento mentale e un modo di vivere.
+> Il C'hi++ è allo stesso tempo un linguaggio di programmazione, un atteggiamento mentale e un modo di vivere.
 Chi pratica il C'hi++ scrive codice come se stesse vivendo e vive come se stesse scrivendo del codice.
 Vivere è come scendere in canoa lungo un fiume.
 Affannarsi a risalire la corrente è inutile e infruttuoso, perché il fiume è più forte di noi e non si stanca mai.
@@ -649,7 +580,6 @@ Lasciarsi andare alla corrente è pericoloso, perché ci si potrebbe parare dava
 Similmente, scrivere del buon codice significa scrivere solo il codice necessario a raggiungere lo scòpo che ci si è prefissi. Aggiungere una sola virgola in più è sbagliato, perché rende più difficile il debug e più lento il programma.
 Chi pratica il C'hi++ applica lo stesso principio alla sua vita, e compie solo le azioni necessarie, ignorando tutto ciò che è superfluo.
 Capire quali sono le azioni necessarie è semplice, così com’è semplice, quando si naviga su un fiume, capire qual è la direzione della corrente.
-</div>
 
 Nell'ultimo capitolo sarà definita anche la cosmogonia del C'hi++, ovvero lo *Spazionismo*.
 
@@ -776,30 +706,22 @@ In compenso, molti precetti del C'hi++ sono compatibili con precetti o idee appa
 In questi giorni sto leggendo la *Bhagavad-Gita*.<a href="#gita" class="nota" name="fn-20">20</a>
 Alcuni passi mi hanno ricordato le affermazioni contenute in: *Sostiene Aristotele*; per esempio, sull'agire “bene”:
 
-<div class="citazione">
-Tu hai diritto all'azione, non ai suoi frutti; non sia mai perciò il frutto dell'azione a spingerti ad agire, e nemmeno devi essere attaccato alla non-azione.
-</div>
+> Tu hai diritto all'azione, non ai suoi frutti; non sia mai perciò il frutto dell'azione a spingerti ad agire, e nemmeno devi essere attaccato alla non-azione.
 
 sulla natura dell'Universo:
 
-<div class="citazione">
-    {{ site.data.bhagavad-gita.cicli }}<
-</div>
+> {{ site.data.citazioni.gita.cicli }}
 
 su quelli che io ho definito i *Post-It*:
 
-<div class="citazione">
-    {{ site.data.bhagavad-gita.vasana }}
-</div>
+> {{ site.data.citazioni.gita.vasana }}
 
 Ho trovato delle analogie ai precetti del C'hi++ anche nel *Mantiq al-Tayr*<a href="#mantiq" class="nota" name="fn-21">21</a>:
 
-<div class="citazione">
-Tutto è un'unica sostanza in molteplici forme, tutto è un unico discorso in diverse espressioni (...)
+> Tutto è un'unica sostanza in molteplici forme, tutto è un unico discorso in diverse espressioni (...)
 Egli sfugge a ogni spiegazione, a qualsiasi attributo. Di Lui soltanto una pallida idea ci è concessa, dare compiuta notizia di Lui è impossibile. Per quanto bene o male si parli di Lui, in realtà d’altri non si parla che di se stessi.
 (...)
 O Creatore, tutto il male o il bene che feci, in verità lo feci solo a me stesso.
-</div>
 
 Cito questi due testi perché non li conoscevo quando ho cominciato a formulare la mia teoria e quindi non è possibile che abbiano influenzato le mie affermazioni, diversamente da testi che conoscevo già, come il *Tao-tê-ching* o *Eureka*, di Poe.
 Ho trovato altre analogie in frasi di Eraclito, Zenone, Anassimandro e Spinoza, ma non ho avuto ancora modo di approfondirle.
@@ -909,9 +831,7 @@ In ottica C'hi++ il titolo sul giornale potrebbe essere:
 Non so quale sarà il destino di *C'hi++*; non so dire nemmeno se questo testo mi procurerà aiuto o sberleffi.
 Un amico, a cui ne ho fatto leggere una prima bozza, sostiene che:
 
-<div class="citazione" >
-potrebbe diventare un caso letterario oppure potrebbe far lanciare una Fatwa nei tuoi confronti, o tutte e due le ipotesi insieme
-</div>
+> potrebbe diventare un caso letterario oppure potrebbe far lanciare una Fatwa nei tuoi confronti, o tutte e due le ipotesi insieme
 
 È possibile, ma io credo piuttosto che non avverrà nulla; almeno, non nel breve periodo perché temo che, per la maggior parte dei potenziali lettori, accettare le idee del C'hi++ equivarrebbe a mettere in discussione la propia vita e le persone, in genere, non amano mettersi in discussione.
 Comunque, fino a che ne avrò la possibilità, io porterò avanti questo progetto.

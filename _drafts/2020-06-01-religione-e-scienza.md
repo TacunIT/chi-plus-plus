@@ -6,20 +6,13 @@ layout:   log
 class:    articolo
 ---
 
-“Fintanto che l'anima non conoscerà tutto ciò che c'è da conoscere, essa non potrà raggiungere il bene sconosciuto”
-Meister Eckart, citato da A.K.Coomaraswami, op. cit.
-
+<p class="citazione">Fintanto che l'anima non conoscerà tutto ciò che c'è da conoscere, essa non potrà raggiungere il bene <br />
+Meister Eckart</p>
+<!-- citato da A.K.Coomaraswami, op. cit. -->
 
 I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale.
 Rifiutano le accettazioni per fede e contestano la non comprovabilità scientifica dei precetti religiosi.
 Fanno bene: dobbiamo sempre mettere in discussione i princip&icirc; sui quali basiamo le nostre convinzioni; purtroppo, però, le leggi che regolano la vita dei non credenti sono dogmatiche e incerte come quelle dei fedeli.
-
-
-La filosofia é il *reverse engineering* dell'Universo.
-L'analisi del sistema può avvenire a più livelli, dall'interfaccia utente al codice binario.
-Analizzare a livelli bassi è più difficile e porta tutt'al più alla conoscenza delle meccaniche di funzionamento, non delle regole di business.
-
-@todo Potere educativo della letteratura in confronto alla filosofia. - cfr Simpson, 243 e Nussbaum citato
 
 ---
 
@@ -99,7 +92,7 @@ Il limite della Scienza, di contro, è l'impossibilità di accettare come vera q
 In compenso, però, credo che un'unione di Scienza e Spiritualità sia ciò di cui abbiamo bisogno per migliorare la nostra condizione attuale e il nostro futuro sul medio, sul lungo e sul lunghissimo periodo.
 
 *C'hi++* è precisamente questo: un'unione di mistica, informatica e prodotti della fermentazione dei cereali.  
-I computer sono un ottimo paradigma dell'esistenza, perché generano una realtà illusoria utilizzando delle sequenze di valori binar&icirc; sulla base delle istruzion ricevute dai programmatori.
+I computer sono un ottimo paradigma dell'esistenza, perché generano una realtà illusoria utilizzando delle sequenze di valori binar&icirc; sulla base delle istruzioni ricevute dai programmatori.
 Il testo che state leggendo è una sequenza di 1 e di 0 che il processore trasforma in lettere in base alla codifica ASCII e poi invia allo schermo che, a sua volta, le trasforma in sequenze di pixel di colori diversi.
 La finestra del browser in cui appare il testo è anch'essa una sequenza di bit che il sistema trasforma in una sequenza di pixel. Quando la spostate, in realtà state solo variando l'insieme dei pixel attivi all'interno dello schermo.
 La gestione di tutte queste trasformazioni è regolata del sistema operativo e del software applicativo, che, tramite la CPU, ovvero l'elemento “pensante” all'interno del computer, convertono in sequenze di byte le istruzioni ricevute dal programmatore.  
