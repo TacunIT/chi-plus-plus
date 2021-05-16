@@ -223,7 +223,7 @@ Non fare l'errore di pensare che ci sia una forza buona e una cattiva, come in *
 Il Maestro Canaro, che anche in tarda età amava molto andare in bicicletta, una volta mi disse che l'equilibrio dell'Universo è come l'equilibrio di un ciclista che percorra una strada sterrata in salita: non deve tenere il peso troppo in avanti, perché altrimenti la ruota posteriore perderebbe trazione e comincerebbe a slittare, ma non deve nemmeno tenere il peso troppo indietro, perché altrimenti la ruota anteriore si alleggerirebbe e non sarebbe più possibile sterzare.  
 Considerata la rispettabile quantità di cadute e contusioni collezionate dal Maestro Canaro nel corso delle sue escursioni in sella, ti consiglio di valutare solo il valore metaforico di questo insegnamento, ovvero che ci deve essere un bilanciamento fra Gravità ed Entropia, perché senza la Gravità, l'Universo è inutile, ma senza l'Entropia è noioso. 
 In questo momento, l'Universo è in fase di espansione sotto l'influsso dell'Entropia ed è quindi normale che ci sia una preponderanza di azioni tendenti alla separazione.
-Per mantenere l'equilibirio, quindi, bisogna incentivare le attività e i valori che tendono a riunire, come l'amore o l'arte.  
+Per mantenere l'equilibrio, quindi, bisogna incentivare le attività e i valori che tendono a riunire, come l'amore o l'arte.  
 Molte persone pensano che amore e arte siano dei concetti vaghi e aleatorii, ma solo perché ne fraintendono l'essenza, ritenendoli dei concetti auto-esplicativi, che non occorre definire; qualcosa di simile alla definizione di “*pornografia*” che diede il Giudice Potter Steward, a proposito del film *Les Amants* di Louis Malle:
 
 > I shall not today attempt further to define the kinds of material I understand to be embraced within that shorthand description; and perhaps I could never succeed in intelligibly doing so. But I know it when I see it, and the motion picture involved in this case is not that.<a href="/man/note/#steward" class="nota"></a>
@@ -233,9 +233,9 @@ Così come la parola: <i id="pesce">pesce</i>, per quanto banale, può non avere
 È altrettanto sbagliata l'interpretazione entropico/romantica che comunemente si attribuisce alle parole: *amore* e *arte*.
 L'amore non è il sentimento vago che ha fatto la fortuna di poeti, musici e letterati, ma uno stato (più o meno persistente) del nostro organismo in cui riteniamo che qualcuno o qualcosa sia più importante di noi stessi.
 Di contro, l'Arte (ti prego di scrivere questo termine con l'iniziale maiuscola, nel tuo libro) non è l'esaltazione della personalità di un singolo, ma è &mdash; e dev'essere &mdash; la traccia del nostro cammino alla ricerca del Senso della Vita: Dio, per chi ci crede, o la Perfezione per i non credenti.
-Approfondiremo quest'ultimo concetto <a href="/man/estetica" class="xref">in séguito</a>; qui e ora, come direbbe Céline Dion, *let's talk about love*.
+Approfondiremo quest'ultimo concetto <a id="arte" href="/man/ereditarieta#arte" class="xref">in séguito</a>; qui e ora, come direbbe Céline Dion, *let's talk about love*.
 
---- 
+<hr id="amore">
 
 Tutti noi agiamo in base a degli schemi di valori che determinano le nostre scelte. 
 L'istinto di sopravvivenza, solitamente, ci spinge a porre la nostra persona al vertice di questa piramide, ma alle volte può capitarci di eleggere a nostro bene supremo qualcuno o qualcosa diverso da noi stessi.  
