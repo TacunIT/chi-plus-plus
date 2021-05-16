@@ -83,7 +83,11 @@ Ciò vuol dire che, con buone probabilità, io e te abbiamo già avuto questa co
 Ciò che le religioni non dicono è che non si può andare in Paradiso da soli: o ci andiamo tutti, o non ci va nessuno.
 
 <!--
-Non c'è nient'altro da capire.
+La filosofia é il *reverse engineering* dell'Universo.
+L'analisi del sistema può avvenire a più livelli, dall'interfaccia utente al codice binario.
+Analizzare a livelli bassi è più difficile e porta tutt'al più alla conoscenza delle meccaniche di funzionamento, non delle regole di business.
+
+@todo Potere educativo della letteratura in confronto alla filosofia. - cfr Simpson, 243 e Nussbaum citato
 
 In Borges, *Finzioni*: lo scrittore che vuole riscrivere Don Chisciotte dice che potrebbe farcela, se solo fosse immortale (v. *Breve storia dell'Infinito*). La stessa cosa vale per l'Universo: avendo a disposizione un tempo infinito, la ripetizione è inevitabile.
 
@@ -103,45 +107,25 @@ Come variabili all'interno di un programma, esistiamo solo all'interno del blocc
 
 Nasciamo, svolgiamo il nostro compito e infine scompariamo, liberando la memoria che avevamo allocato.
 
-Infatti gli esseri fioriscono e (poi) ognuno torna alla propria radice. 
-Tornare alla propria radice si chiama la tranquillità; ciò vuol dire deporre il proprio compito. 
-Deporre il proprio compito è una legge costante. 
-Colui che conosce questa legge costante si chiama illuminato. 
-Colui che non conosce questa legge costante agisce da stolto e attira su di sé la disgrazia.
-Tao-Tê-Ching, XVI (J.J.L. Duyvendak, Fabbri Editori
-
 Fintanto che il programma gira, quella stessa memoria sarà utilizzata più e più volte per creare nuove variabili.
 
-Poco importa se saremo di nuovo noi, oppure altre entità, perché il
-programma continuerà a girare per sempre e anche se ci fosse solo una
-probabilità su un miliardo che tornino a verificarsi le condizioni che
-hanno portato alla nostra esistenza, prima o poi quelle stesse
-condizioni si verificheranno ancora, e noi saremo di nuovo qui a vivere
-la nostra vita.
+Poco importa se saremo di nuovo noi, oppure altre entità, perché il programma continuerà a girare per sempre e anche se ci fosse solo una probabilità su un miliardo che tornino a verificarsi le condizioni che hanno portato alla nostra esistenza, prima o poi quelle stesse condizioni si verificheranno ancora, e noi saremo di nuovo qui a vivere la nostra vita.
 
-La questione a questo punto è: esiste un disco rigido dell'Universo, o
-gira tutto in memoria RAM?
+La questione a questo punto è: esiste un disco rigido dell'Universo, o gira tutto in memoria RAM?
 
-Coloro che si sforzano, in questa vita, di eseguire i precetti della
-loro religione perché pensano che gliene verrà reso merito dopo la
-morte, sbagliano due volte.
+Coloro che si sforzano, in questa vita, di eseguire i precetti della loro religione perché pensano che gliene verrà reso merito dopo la morte, sbagliano due volte.
 
-Non esiste il Paradiso e non esiste nessuna vita eterna, ma solo
-un'eternità di vite.
+Non esiste il Paradiso e non esiste nessuna vita eterna, ma solo un'eternità di vite.
 
-L'Universo *è* il Paradiso: siamo noi che lo utilizziamo
-impropriamente.
+L'Universo *è* il Paradiso: siamo noi che lo utilizziamo impropriamente.
 
 Ci sono due forze, contrapposte. Come dice Poe, una è la gravità, che
 tende a riunire tutto nell'Uno; l'altra è l'entropia, che separa e
 disperde.
 
-Servono tutte e due: se ci fosse solo la gravità, ci sarebbe solo
-l'Uno, se ci fosse solo l'entropia, ci sarebbe la morte termica
+Servono tutte e due: se ci fosse solo la gravità, ci sarebbe solo l'Uno, se ci fosse solo l'entropia, ci sarebbe la morte termica.
 
-Alla lunga (molto lunga), una condizione simile porterebbe a un Universo
-piuttosto noioso, quindi, devono esserci entrambe, in continua
-opposizione.
+Alla lunga (molto lunga), una condizione simile porterebbe a un Universo piuttosto noioso, quindi, devono esserci entrambe, in continua opposizione.
 
 È questo che permette l'esistenza.
 

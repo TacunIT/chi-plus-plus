@@ -473,3 +473,24 @@ error: 'main' must return 'int'
 void main()
 ^~~~
 ```
+
+Il valore didattico di questo codice, però, è immutato.
+Il *Karma* dei due oggetti è determinato dalla dichiarazione delle loro classi, che non lascia loro altra possibilità che fare ciò per cui sono stati creati.
+L'output delle funzioni, lo stile dei commenti o il fatto che in un caso le classi si chiamino `A` e `B`, mentre nell'altro si chiamano `Persona` e `Madre` sono solo differenze formali che non influiscono sul *Dharma* dell'esempio, che è quello di illustrare il comportamento delle funzioni virtuali.
+Se in vece del nuovo codice io avessi usato quello originale del Maestro Canaro, tu avresti capito ugualmente; forse anche meglio, perché il nuovo codice sembra migliore a me, ma non è detto che lo sia per te.  
+Lo stesso principio vale anche per l'Universo.
+Ciascuno di noi è un orchestrale a cui è stata assegnata una partitura.
+Possiamo suonarla più o meno bene o non suonarla affatto, nascondendoci nel pieno d'orchestra, ma il nostro valore è solo &mdash; permettimi il gioco di parole &mdash; strumentale, perché ciò che conta non siamo noi: è la musica; e questa, non è né la prima né l'ultima volta che la suoniamo.    
+Io, qui, ora, con il mio naso la mia bocca e i miei capelli, ti sto insegnando ciò che so del C'hi++ e tu, che hai il tuo naso la tua bocca e i tuoi capelli, lo stai scrivendo nel tuo libro, ma la stessa informazione che stiamo trasmettendo e perpetuando la potrebbero trasmettere e perpetuare anche persone diverse in un altro tempo o in un altro Pianeta in un altro ciclo dell'Universo.
+
+> {{site.data.citazioni.santillana.mito}} <a class="nota" href="/man/note#miti"></a>
+
+Ogni epoca ha i suoi eroi e i suoi demoni; la memoria delle loro battaglie, genera il mito.  
+La Scienza è transeunte: abbiamo poche notizie riguardo le conoscenze scientifiche dei popoli del passato<!-- esempi? -->, mentre sappiamo tutto sui loro miti, perché il mito è immortale; la Scienza no, a meno che non sia assorbita dal mito e trasformata in leggenda o superstizione.
+Il Maestro Canaro era convinto, per esempio, che la superstizione relativa ai numeri 13 e 17 fosse nata dall'osservazione del comportamento delle locuste, <!-- il nome corretto, dice Dawkins, è: “cicale periodiche”, ma, per chiarezza, preferisco utilizzare quello più noto --> che, a seconda della specie, passano o tredici o diciassette anni sotto terra in uno stadio larvale <!-- anche qui, Ricky precisa che il termine tecnico è: “ninfe” -->, poi escono fuori tutte insieme e spendono la loro breve vita devastando le coltivazioni.
+La paura dei numeri 13 e 17, secondo lui, era una conoscenza scientifica tramandata nel tempo e nello spazio come superstizione.  
+
+<hr id="arte">
+
+L'arte è l'RNA del mito.
+Si nutre di eventi epici e li genera a sua volta ispirando gli eroi.
