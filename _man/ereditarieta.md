@@ -434,7 +434,7 @@ L'esempio originale delle funzioni virtuali, per dire, era così:
 {% include_relative src/ereditarieta-codice-canaro.cpp %}
 ```
 
-Essendo un codice scritto per l'ambiente Microsoft del 1995, se provassi a compilarlo adesso, con il compilatore GNU, otterresti una lunga serie di errori:
+Essendo un codice scritto per l'ambiente Microsoft del 1995 <!-- con i nomi dei file di otto caratteri al massimo: sembra di parlare della preistoria.. -->, se provassi a compilarlo adesso, con il compilatore GNU, otterresti una lunga serie di errori:
 
 ```
 > g++ src/cpp/ereditarieta-codice-canaro.cpp -o src/out/esempio
@@ -472,11 +472,11 @@ void main()
 ```
 
 Il valore didattico di questo codice, però, è immutato.
-Il *Karma* dei due oggetti è determinato dalla dichiarazione delle loro classi, che non lascia loro altra possibilità che fare ciò per cui sono stati creati.
+Il *Karma* dei due oggetti è determinato dalla dichiarazione delle loro classi, che non gli lascia altra possibilità che fare ciò per cui sono stati creati.
 L'output delle funzioni, lo stile dei commenti o il fatto che in un caso le classi si chiamino `A` e `B`, mentre nell'altro si chiamano `Persona` e `Madre` sono solo differenze formali che non influiscono sul *Dharma* dell'esempio, che è quello di illustrare il comportamento delle funzioni virtuali.
 Se in vece del nuovo codice io avessi usato quello originale del Maestro Canaro, tu avresti capito ugualmente; forse anche meglio, perché il nuovo codice sembra migliore a me, ma non è detto che lo sia per te.  
 Lo stesso principio vale anche per l'Universo.
-Così come gli oggetti all'interno di uno stesso programma possono occupare (e occupano) posizioni diverse in memoria, a seconda del momento in cui il programma viene eseguito, gli esseri senzienti possono manifestarsi in luoghi e tempi differenti nei diversi cicli di esistenza.  
+Così come gli oggetti all'interno di uno stesso programma occupano posizioni diverse in memoria, a seconda del momento in cui il programma viene eseguito, gli esseri senzienti possono manifestarsi in luoghi e tempi differenti nei diversi cicli di esistenza.  
 Ciascuno di noi è un orchestrale a cui è stata assegnata una partitura.
 Possiamo suonarla più o meno bene o non suonarla affatto, nascondendoci nel pieno d'orchestra, ma il nostro valore è solo &mdash; permettimi il gioco di parole &mdash; strumentale, perché ciò che conta non siamo noi: è la musica; e questa, non è né la prima né l'ultima volta che la suoniamo.    
 Io, qui, ora, con il mio naso la mia bocca e i miei capelli, ti sto insegnando ciò che so del C'hi++ e tu, che hai il tuo naso la tua bocca e i tuoi capelli, lo stai scrivendo nel tuo libro, ma la stessa informazione che stiamo trasmettendo e perpetuando la potrebbero trasmettere e perpetuare anche persone diverse in un altro tempo o in un altro Pianeta in un altro ciclo dell'Universo.
@@ -485,10 +485,55 @@ Io, qui, ora, con il mio naso la mia bocca e i miei capelli, ti sto insegnando c
 
 Ogni epoca ha i suoi eroi e i suoi demoni; la memoria delle loro battaglie, genera il mito.  
 La Scienza è transeunte: abbiamo poche notizie riguardo le conoscenze scientifiche dei popoli del passato<!-- esempi? -->, mentre conosciamo bene i loro miti, perché il mito è immortale; la Scienza no, a meno che non sia assorbita dal mito e trasformata in leggenda o superstizione.
-Il Maestro Canaro era convinto, per esempio, che la superstizione relativa ai numeri 13 e 17 fosse nata dall'osservazione del comportamento delle locuste, <!-- il nome corretto, dice Dawkins, è: “cicale periodiche”, ma, per chiarezza, preferisco utilizzare quello più noto --> che, a seconda della specie, passano o tredici o diciassette anni sotto terra in uno stadio larvale <!-- anche qui, Ricky precisa che il termine tecnico è: “ninfe” -->, poi escono fuori tutte insieme e spendono la loro breve vita devastando le coltivazioni.
+Il Maestro Canaro, per esempio, era convinto che la superstizione relativa ai numeri 13 e 17 fosse nata dall'osservazione del comportamento delle locuste, <!-- il nome corretto, dice Dawkins, è: “cicale periodiche”, ma, per chiarezza, preferisco utilizzare quello più noto --> che, a seconda della specie, passano o tredici o diciassette anni sotto terra in uno stadio larvale <!-- anche qui, Ricky precisa che il termine tecnico è: “ninfe” -->, poi escono fuori tutte insieme e spendono la loro breve vita devastando le coltivazioni.
 La paura dei numeri 13 e 17, secondo lui, era una conoscenza scientifica tramandata nel tempo e nello spazio come superstizione dalle culture contadine che, ciclicamente, vedevano devastati loro raccolti.  
 
 <hr id="arte">
 
 L'arte è l'RNA del mito.
 Si nutre di eventi epici e li genera a sua volta ispirando gli eroi a imprese degne di memoria.  
+La parola *arte*, così come: *amore*, del resto, è una di quelle parole che le gente utilizza spesso ma di cui non viene mai data una definizione precisa, perché le si ritiene dei concetti auto-esplicativi che non occorre definire. 
+È sbagliato: come abbiamo visto, tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente.   
+In un suo saggio giovanile su Amore e Arte, il Maestro Canaro scrisse che:
+ 
+ > L'Arte è la traccia del cammino dell'Uomo verso Dio 
+ 
+ specificando poi che, con il termine: "Dio" (altra parola interpretata in maniera differente da ciascuno di noi), intendeva il senso dell'Esistenza.
+Alcuni anni dopo, però, guardando delle foto di crostate realizzate dallo chef Gianluca Fusto<a href="/note/#fusto" class="nota"></a>, capì che la sua definizione era imperfetta, perché non includeva, o quanto meno lasciava a margine, gli arte-fatti che non ricadevano nelle categorie artistiche canoniche. 
+Modificò per ciò la sua definizione di Arte in:
+
+> L'Arte è la traccia del cammino dell'Uomo verso la Perfezione
+
+Non si trattò di una contraddizione, ma di una precisazione, dato che per lui &mdash; così come per noi del resto &mdash; la ricerca della perfezione è, effettivamente, il senso dell'Esistenza.  
+Questo episodio della vita del Maestro Canaro ha la peculiarità di dimostrare i principii stessi che afferma: il primo è che dobbiamo sempre verificare e mettere in discussione le nostre idee, se ci accorgiamo che sono sbagliate o incomplete; il secondo è che, se affrontiamo la vita nel modo giusto, tutto ciò che facciamo sarà Arte, non solo la disposizione dei fiori o la cerimonia del Té.  
+Per dimostrare che non esistono momenti di serie A, in cui facciamo le cose che ci piacciono e momenti di serie B, in cui facciamo ciò che è necessario fare, ma che ogni istante della nostra vita è importante, il Maestro Canaro definì un'estetica per la disposizione del bucato sullo stendi-panni e chiamò questa disciplina: *Ikebarba*.  
+I principii dell'Ikebarba sono:
+
+>  L'Ikebarba è fatta per l'uomo, non l'uomo per l'Ikebarba<a href="/man/note#shabbat" class="nota"></a>.
+
+L'Ikebarba non deve essere un peso per l'uomo, ma un obbligo giojoso.
+I panni devono comunque essere messi ad asciugare; il tempo necessario a farlo in maniera sciatta o consapevole è pressocché lo stesso, ma un'Ikebarba ben fatta provvederà panni asciutti in minor tempo e renderà la vista dello stendipanni meno fastidiosa.  
+Il secondo precetto dell'Ikebarba è:
+
+> L'Ikebarba comincia nel negozio.
+
+Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente; è preferibile quindi non farsi sedurre dalle lusinghe del marketing e acquistare abiti dalle tinte sobrie e possibilmente intonati gli uni agli altri, in modo da renderne più facile e più elegante la composizione sullo stendi-panni.
+Un guardaroba di tipo militare o maoista, con indumenti identici e
+dello stesso colore, d'altro canto, è un eccesso da rifuggire, perché renderebbe
+monotona l'Ikebarba.  
+Esistono tre tipi di Ikebarba:
+
+- *cromatica:* definisce le posizioni sullo stendino in base al colore e alla forma degli indumenti;
+
+- *funzionale:* accosta gli indumenti in ragione dei rispettivi tempi di asciugatura, ponendo i capi pesanti all'esterno, dove ricevono più aria, e quelli più leggeri o sintetici all'interno;
+
+- *perfetta:* quando gli aspetti estetici e funzionali si fondono in un tutt'uno armonico.
+
+
+<!--
+Banzan e Paul Simon ci insegnano che la Verità è ovunque, se la sappiamo cercare, anche sui muri delle metropolitane o nelle botteghe dei mercati.
+
+l'Ikebarba riduce la necessità di energia e quindi l'inquinamento. 
+
+
+-->
