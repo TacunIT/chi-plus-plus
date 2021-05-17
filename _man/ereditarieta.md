@@ -490,10 +490,10 @@ La paura dei numeri 13 e 17, secondo lui, era una conoscenza scientifica tramand
 
 <hr id="arte">
 
-L'arte è l'RNA del mito.
-Si nutre di eventi epici e li genera a sua volta ispirando gli eroi a imprese degne di memoria.  
+L'arte è il motore del mito.
+Un motore che si auto-alimenta, perché si nutre di eventi epici e li genera a sua volta ispirando gli eroi a imprese degne di memoria.  
 La parola *arte*, così come: *amore*, del resto, è una di quelle parole che le gente utilizza spesso ma di cui non viene mai data una definizione precisa, perché le si ritiene dei concetti auto-esplicativi che non occorre definire. 
-È sbagliato: come abbiamo visto, tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente.   
+È sbagliato: come abbiamo visto, tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente.
 In un suo saggio giovanile su Amore e Arte, il Maestro Canaro scrisse che:
  
  > L'Arte è la traccia del cammino dell'Uomo verso Dio 
@@ -504,30 +504,40 @@ Modificò per ciò la sua definizione di Arte in:
 
 > L'Arte è la traccia del cammino dell'Uomo verso la Perfezione
 
-Non si trattò di una contraddizione, ma di una precisazione, dato che per lui &mdash; così come per noi del resto &mdash; la ricerca della perfezione è, effettivamente, il senso dell'Esistenza.  
+Non si trattò di una contraddizione, ma di una precisazione, dato che per lui &mdash; così come per noi del resto &mdash; la ricerca della perfezione era, effettivamente, il senso dell'Esistenza.  
 Questo episodio della vita del Maestro Canaro ha la peculiarità di dimostrare i principii stessi che afferma: il primo è che dobbiamo sempre verificare e mettere in discussione le nostre idee, se ci accorgiamo che sono sbagliate o incomplete; il secondo è che, se affrontiamo la vita nel modo giusto, tutto ciò che facciamo sarà Arte, non solo la disposizione dei fiori o la cerimonia del Té.  
-Per dimostrare che non esistono momenti di serie A, in cui facciamo le cose che ci piacciono e momenti di serie B, in cui facciamo ciò che è necessario fare, ma che ogni istante della nostra vita è importante, il Maestro Canaro definì un'estetica per la disposizione del bucato sullo stendi-panni e chiamò questa disciplina: *Ikebarba*.  
-I principii dell'Ikebarba sono:
+Per dimostrare che nella vita non esistono momenti di serie A, in cui facciamo le cose che ci piacciono e momenti di serie B, in cui facciamo ciò che è necessario fare, ma che ogni istante è importante, il Maestro Canaro definì un'estetica per la disposizione del bucato sullo stendi-panni e, per non correre il rischio di essere preso troppo sul serio, la chiamò *Ikebarba*.  
+I principii dell'Ikebarba, così come li formulò il Maestro Canaro, sono:
 
->  L'Ikebarba è fatta per l'uomo, non l'uomo per l'Ikebarba<a href="/man/note#shabbat" class="nota"></a>.
+**L'Ikebarba è fatta per l'uomo, non l'uomo per l'Ikebarba<a href="/man/note#shabbat" class="nota"></a>.**  
+L'Ikebarba non deve essere un peso per l'uomo (o per la donna), ma un obbligo giojoso.
+I panni devono comunque essere messi ad asciugare; il tempo necessario a farlo in maniera sciatta o consapevole è pressocché lo stesso, ma un'Ikebarba ben fatta provvederà panni asciutti in minor tempo e renderà la vista dello stendipanni meno fastidiosa.
 
-L'Ikebarba non deve essere un peso per l'uomo, ma un obbligo giojoso.
-I panni devono comunque essere messi ad asciugare; il tempo necessario a farlo in maniera sciatta o consapevole è pressocché lo stesso, ma un'Ikebarba ben fatta provvederà panni asciutti in minor tempo e renderà la vista dello stendipanni meno fastidiosa.  
-Il secondo precetto dell'Ikebarba è:
+**L'Ikebarba comincia nel negozio.**  
+Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente; è preferibile quindi acquistare abiti dalle tinte sobrie e possibilmente intonati gli uni agli altri, in modo da renderne più facile e più elegante la composizione sullo stendi-panni.
+Attenzione, però: un guardaroba di tipo militare o maoista, con indumenti identici e dello stesso colore è un eccesso da rifuggire, perché renderebbe
+monotona la composizione (e non solo quella).
 
-> L'Ikebarba comincia nel negozio.
+**L'Ikebarba rifugge le mollette.**  
+Le mollette sono utili come la psicanalisi: è l'equilibrio che deve tenere i panni sui fili, non una forza di coercizione esterna.
+I diversi capi devono essere posti sul filo in modo che il peso di una parte bilanci quello dell'altra.
 
-Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente; è preferibile quindi non farsi sedurre dalle lusinghe del marketing e acquistare abiti dalle tinte sobrie e possibilmente intonati gli uni agli altri, in modo da renderne più facile e più elegante la composizione sullo stendi-panni.
-Un guardaroba di tipo militare o maoista, con indumenti identici e
-dello stesso colore, d'altro canto, è un eccesso da rifuggire, perché renderebbe
-monotona l'Ikebarba.  
 Esistono tre tipi di Ikebarba:
 
-- *cromatica:* definisce le posizioni sullo stendino in base al colore e alla forma degli indumenti;
+- **cromatica:** quando i panni vengono posizionati sullo stendino in base al loro colore;
 
-- *funzionale:* accosta gli indumenti in ragione dei rispettivi tempi di asciugatura, ponendo i capi pesanti all'esterno, dove ricevono più aria, e quelli più leggeri o sintetici all'interno;
+- **funzionale:** quando gli indumenti sono posizionati in funzione dei rispettivi tempi di asciugatura, ponendo i capi pesanti all'esterno, dove ricevono più aria, e quelli più leggeri o sintetici all'interno;
 
-- *perfetta:* quando gli aspetti estetici e funzionali si fondono in un tutt'uno armonico.
+- **perfetta:** quando gli aspetti estetici e funzionali si fondono in un tutt'uno armonico.
+
+Come puoi facilmente intuire, gli intenti del Maestro Canaro erano per buona parte ironici (mi confessò che la prima formulazione della disciplina era nata come un tentativo di dissimulare la sua ossessione per l'ordine), ciò non di meno, l'Ikebarba può davvero comportare dei benefici per chi la pratica.  
+In primo luogo, modera l'effetto nefasto dell'Annosa Dicotomia e dei suoi servitori *Marketing* e *Moda*, che ci spingono ad acquistare indumenti che non ci occorrono e che sfrutteremo solo per breve tempo.
+Riducendo le variazioni cromatiche del bucato, poi, riduce anche il numero di lavaggi settimanali e con esso il fabbisogno di energia elettrica, acqua, prodotti detergenti e plastica.  
+Certamente il fatto che la Regola del nostro Ordine ci imponga camicie bianche non risolve il problema dell'inquinamento, ma, come diceva il Maestro Canaro: 
+
+> La pelliccia è fatta di peli
+
+e finché la nostra specie non imparerà a fare un uso più responsabile delle sue gonadi, non potremo far altro che compensare come possiamo i problemi legati alla sovrappolazione.
 
 
 <!--
