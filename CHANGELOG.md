@@ -1,3 +1,8 @@
+## 0.24.4 (May 17, 2021)
+  - Redazione del paragrafo sull'Ikebarba
+  - Redazione del testo del capitolo Ereritarietà
+  - Corretto errore nel capitolo Preprocessore
+
 ## 0.24.3 (May 16, 2021)
   - Corretto riferimento incrociato nel paragrafo preprocessore
   - Revisione citazioni della Proposta
