@@ -473,7 +473,7 @@ void main()
 
 Il valore didattico di questo codice, però, è immutato.
 Il *Karma* dei due oggetti è determinato dalla dichiarazione delle loro classi, che non gli lascia altra possibilità che fare ciò per cui sono stati creati.
-L'output delle funzioni, lo stile dei commenti o il fatto che in un caso le classi si chiamino `A` e `B`, mentre nell'altro si chiamano `Persona` e `Madre` sono solo differenze formali che non influiscono sul *Dharma* dell'esempio, che è quello di illustrare il comportamento delle funzioni virtuali.
+L'output delle funzioni, lo stile dei commenti o il fatto che in un caso le classi si chiamino `A` e `B`, mentre nell'altro si chiamano `Persona` e `Madre`, sono solo differenze formali che non influiscono sul *Dharma* dell'esempio, che è quello di illustrare il comportamento delle funzioni virtuali.
 Se in vece del nuovo codice io avessi usato quello originale del Maestro Canaro, tu avresti capito ugualmente; forse anche meglio, perché il nuovo codice sembra migliore a me, ma non è detto che lo sia per te.  
 Lo stesso principio vale anche per l'Universo.
 Così come gli oggetti all'interno di uno stesso programma occupano posizioni diverse in memoria, a seconda del momento in cui il programma viene eseguito, gli esseri senzienti possono manifestarsi in luoghi e tempi differenti nei diversi cicli di esistenza.  
@@ -506,11 +506,12 @@ Modificò per ciò la sua definizione di Arte in:
 
 Non si trattò di una contraddizione, ma di una precisazione, dato che per lui &mdash; così come per noi del resto &mdash; la ricerca della perfezione era, effettivamente, il senso dell'Esistenza.  
 Questo episodio della vita del Maestro Canaro ha la peculiarità di dimostrare i principii stessi che afferma: il primo è che dobbiamo sempre verificare e mettere in discussione le nostre idee, se ci accorgiamo che sono sbagliate o incomplete; il secondo è che, se affrontiamo la vita nel modo giusto, tutto ciò che facciamo sarà Arte, non solo la disposizione dei fiori o la cerimonia del Té.  
-Per dimostrare che nella vita non esistono momenti di serie A, in cui facciamo le cose che ci piacciono e momenti di serie B, in cui facciamo ciò che è necessario fare, ma che ogni istante è importante, il Maestro Canaro definì un'estetica per la disposizione del bucato sullo stendi-panni e, per non correre il rischio di essere preso troppo sul serio, la chiamò *Ikebarba*.  
+Nella vita non esistono momenti di serie *A*, in cui facciamo le cose che ci piacciono e momenti di serie *B*, in cui facciamo ciò che è necessario fare: ogni istante è importante.
+Per sottolineare questo precetto, il Maestro Canaro definì un'estetica per la disposizione del bucato sullo stendi-panni; per non correre il rischio di essere preso troppo sul serio, la chiamò <i id="ikebarba">Ikebarba</i>.  
 I principii dell'Ikebarba, così come li formulò il Maestro Canaro, sono:
 
 **L'Ikebarba è fatta per l'uomo, non l'uomo per l'Ikebarba<a href="/man/note#shabbat" class="nota"></a>.**  
-L'Ikebarba non deve essere un peso per l'uomo (o per la donna), ma un obbligo giojoso.
+L'Ikebarba non deve essere un peso per chi la pratica, ma un obbligo giojoso.
 I panni devono comunque essere messi ad asciugare; il tempo necessario a farlo in maniera sciatta o consapevole è pressocché lo stesso, ma un'Ikebarba ben fatta provvederà panni asciutti in minor tempo e renderà la vista dello stendipanni meno fastidiosa.
 
 **L'Ikebarba comincia nel negozio.**  
@@ -530,10 +531,13 @@ Esistono tre tipi di Ikebarba:
 
 - **perfetta:** quando gli aspetti estetici e funzionali si fondono in un tutt'uno armonico.
 
-Come puoi facilmente intuire, gli intenti del Maestro Canaro erano per buona parte ironici (mi confessò che la prima formulazione della disciplina era nata come un tentativo di dissimulare la sua ossessione per l'ordine), ciò non di meno, l'Ikebarba può davvero comportare dei benefici per chi la pratica.  
+Come puoi facilmente intuire, gli intenti del Maestro Canaro erano per buona parte ironici (mi confessò che la prima formulazione della disciplina era nata come un tentativo di dissimulare la sua ossessione per l'ordine) e per lungo tempo fu indeciso se includerla o meno nel corpo della Dottrina.
+Si decise a farlo quando capì che le sue perplessità nascevano proprio da quelle forme di prevenzione che l'Ikebarba doveva contrastare.  
+A ogni modo, l'Ikebarba può davvero comportare dei benefici per chi la pratica.
 In primo luogo, modera l'effetto nefasto dell'Annosa Dicotomia e dei suoi servitori *Marketing* e *Moda*, che ci spingono ad acquistare indumenti che non ci occorrono e che sfrutteremo solo per breve tempo.
-Riducendo le variazioni cromatiche del bucato, poi, riduce anche il numero di lavaggi settimanali e con esso il fabbisogno di energia elettrica, acqua, prodotti detergenti e plastica.  
-Certamente il fatto che la Regola del nostro Ordine ci imponga camicie bianche non risolve il problema dell'inquinamento, ma, come diceva il Maestro Canaro: 
+Riducendo le variazioni cromatiche del bucato, poi, riduce anche il numero di lavaggi settimanali e con esso il fabbisogno di energia elettrica, acqua, prodotti detergenti e plastica.
+Anche il ripudio delle mollette ha una sua valenza funzionale: se i capi sono messi ad asciugare a cavallo dei fili, l'acqua nel tessuto tenderà a scendere da entrambi i lati, riducendo il tempo dell'asciugatura.  
+Indubbiamente, il fatto che la Regola del nostro Ordine ci imponga l'uso di camicie bianche non risolve il problema dell'inquinamento, ma, come diceva il Maestro Canaro: 
 
 > La pelliccia è fatta di peli
 
