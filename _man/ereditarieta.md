@@ -532,7 +532,8 @@ Esistono tre tipi di Ikebarba:
 - **perfetta:** quando gli aspetti estetici e funzionali si fondono in un tutt'uno armonico.
 
 Come puoi facilmente intuire, gli intenti del Maestro Canaro erano per buona parte ironici (mi confessò che la prima formulazione della disciplina era nata come un tentativo di dissimulare la sua ossessione per l'ordine) e per lungo tempo fu indeciso se includerla o meno nel corpo della Dottrina.
-Si decise a farlo quando capì che le sue perplessità nascevano proprio da quelle forme di prevenzione che l'Ikebarba doveva contrastare.  
+Si decise a farlo quando capì che le sue perplessità nascevano proprio da quelle forme di prevenzione che l'Ikebarba doveva contrastare.
+Come ci insegnano Banzan e Paul Simon, la Verità è ovunque, se la sappiamo cercare, anche sui muri delle metropolitane o nelle botteghe dei mercati.  
 A ogni modo, l'Ikebarba può davvero comportare dei benefici per chi la pratica.
 In primo luogo, modera l'effetto nefasto dell'Annosa Dicotomia e dei suoi servitori *Marketing* e *Moda*, che ci spingono ad acquistare indumenti che non ci occorrono e che sfrutteremo solo per breve tempo.
 Riducendo le variazioni cromatiche del bucato, poi, riduce anche il numero di lavaggi settimanali e con esso il fabbisogno di energia elettrica, acqua, prodotti detergenti e plastica.
@@ -542,12 +543,3 @@ Indubbiamente, il fatto che la Regola del nostro Ordine ci imponga l'uso di cami
 > La pelliccia è fatta di peli
 
 e finché la nostra specie non imparerà a fare un uso più responsabile delle sue gonadi, non potremo far altro che compensare come possiamo i problemi legati alla sovrappolazione.
-
-
-<!--
-Banzan e Paul Simon ci insegnano che la Verità è ovunque, se la sappiamo cercare, anche sui muri delle metropolitane o nelle botteghe dei mercati.
-
-l'Ikebarba riduce la necessità di energia e quindi l'inquinamento. 
-
-
--->
