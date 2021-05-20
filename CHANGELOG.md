@@ -1,3 +1,7 @@
+## 0.24.6 (May 20, 2021)
+  - Revisione e pubblicazione del testo del capitolo sull'ereditarietà
+  - Modificato stile citazioni
+
 ## 0.24.5 (May 18, 2021)
   - Redazione del paragrafo sull'Ikebarba
   - Redazione del testo del capitolo Ereritarietà
