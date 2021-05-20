@@ -1,5 +1,5 @@
 ---
-status:     redazione
+status:     pubblicato
 layout:     manuale
 class:      capitolo
 title:      L'ereditarietà
@@ -480,18 +480,20 @@ Così come gli oggetti all'interno di uno stesso programma occupano posizioni di
 Ciascuno di noi è un orchestrale a cui è stata assegnata una partitura.
 Possiamo suonarla più o meno bene o non suonarla affatto, nascondendoci nel pieno d'orchestra, ma il nostro valore è solo &mdash; permettimi il gioco di parole &mdash; strumentale, perché ciò che conta non siamo noi: è la musica; e questa, non è né la prima né l'ultima volta che la suoniamo.    
 Io, qui, ora, con il mio naso la mia bocca e i miei capelli, ti sto insegnando ciò che so del C'hi++ e tu, che hai il tuo naso la tua bocca e i tuoi capelli, lo stai scrivendo nel tuo libro, ma la stessa informazione che stiamo trasmettendo e perpetuando la potrebbero trasmettere e perpetuare anche persone diverse in un altro tempo o in un altro Pianeta in un altro ciclo dell'Universo.
+Molto probabilmente abbiamo già avuto questa conversazione in passato e la faremo ancora in futuro.
+Forse non useremo le stesse parole; forse avremo nomi differenti, forse tu sarai il maestro e io l'allievo, ma la nostra amicizia sarà la stessa, perché quella fa parte della dichiarazione della nostra classe; non può e non deve mutare.
 
 > {{site.data.citazioni.santillana.mito}} <a class="nota" href="/man/note#miti"></a>
 
 Ogni epoca ha i suoi eroi e i suoi demoni; la memoria delle loro battaglie, genera il mito.  
 La Scienza è transeunte: abbiamo poche notizie riguardo le conoscenze scientifiche dei popoli del passato<!-- esempi? -->, mentre conosciamo bene i loro miti, perché il mito è immortale; la Scienza no, a meno che non sia assorbita dal mito e trasformata in leggenda o superstizione.
 Il Maestro Canaro, per esempio, era convinto che la superstizione relativa ai numeri 13 e 17 fosse nata dall'osservazione del comportamento delle locuste, <!-- il nome corretto, dice Dawkins, è: “cicale periodiche”, ma, per chiarezza, preferisco utilizzare quello più noto --> che, a seconda della specie, passano o tredici o diciassette anni sotto terra in uno stadio larvale <!-- anche qui, Ricky precisa che il termine tecnico è: “ninfe” -->, poi escono fuori tutte insieme e spendono la loro breve vita devastando le coltivazioni.
-La paura dei numeri 13 e 17, secondo lui, era una conoscenza scientifica tramandata nel tempo e nello spazio come superstizione dalle culture contadine che, ciclicamente, vedevano devastati loro raccolti.  
+La paura dei numeri 13 e 17, secondo lui, era una conoscenza scientifica tramandata nel tempo e nello spazio come superstizione, dalle culture contadine che, ciclicamente, vedevano devastati loro raccolti.  
 
 <hr id="arte">
 
 L'arte è il motore del mito.
-Un motore che si auto-alimenta, perché si nutre di eventi epici e li genera a sua volta ispirando gli eroi a imprese degne di memoria.  
+Un motore che si auto-alimenta, come il Sole, perché si nutre di eventi epici e li genera a sua volta ispirando gli eroi a imprese degne di memoria.  
 La parola *arte*, così come: *amore*, del resto, è una di quelle parole che le gente utilizza spesso ma di cui non viene mai data una definizione precisa, perché le si ritiene dei concetti auto-esplicativi che non occorre definire. 
 È sbagliato: come abbiamo visto, tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente.
 In un suo saggio giovanile su Amore e Arte, il Maestro Canaro scrisse che:
@@ -504,33 +506,34 @@ Modificò per ciò la sua definizione di Arte in:
 
 > L'Arte è la traccia del cammino dell'Uomo verso la Perfezione
 
-Non si trattò di una contraddizione, ma di una precisazione, dato che per lui &mdash; così come per noi del resto &mdash; la ricerca della perfezione era, effettivamente, il senso dell'Esistenza.  
-Questo episodio della vita del Maestro Canaro ha la peculiarità di dimostrare i principii stessi che afferma: il primo è che dobbiamo sempre verificare e mettere in discussione le nostre idee, se ci accorgiamo che sono sbagliate o incomplete; il secondo è che, se affrontiamo la vita nel modo giusto, tutto ciò che facciamo sarà Arte, non solo la disposizione dei fiori o la cerimonia del Té.  
+Non si trattò di una contraddizione, ma di una precisazione, dato che per lui &mdash; così come per noi del resto &mdash; la ricerca della perfezione era, effettivamente, il senso dell'Esistenza e, quindi, Dio.  
+Questo episodio della vita del Maestro Canaro ha la peculiarità di dimostrare i principii stessi che afferma: il primo è che non dobbiamo avere paura di mettere in discussione le nostre idee, se ci accorgiamo che sono sbagliate o incomplete; il secondo è che, se affrontiamo la vita nel modo giusto, tutto ciò che facciamo sarà Arte, non solo la disposizione dei fiori o la cerimonia del Té.  
 Nella vita non esistono momenti di serie *A*, in cui facciamo le cose che ci piacciono e momenti di serie *B*, in cui facciamo ciò che è necessario fare: ogni istante è importante.
-Per sottolineare questo precetto, il Maestro Canaro definì un'estetica per la disposizione del bucato sullo stendi-panni; per non correre il rischio di essere preso troppo sul serio, la chiamò <i id="ikebarba">Ikebarba</i>.  
+Per sottolineare questo precetto, il Maestro Canaro definì un'estetica per la disposizione del bucato sullo stendi-panni e, per non correre il rischio di essere preso troppo sul serio, la chiamò <i id="ikebarba">Ikebarba</i>.  
 I principii dell'Ikebarba, così come li formulò il Maestro Canaro, sono:
 
-**L'Ikebarba è fatta per l'uomo, non l'uomo per l'Ikebarba<a href="/man/note#shabbat" class="nota"></a>.**  
+<blockquote>
+<p>
+<b>L'Ikebarba è fatta per l'uomo, non l'uomo per l'Ikebarba<a href="/man/note#shabbat" class="nota"></a>.</b>  
 L'Ikebarba non deve essere un peso per chi la pratica, ma un obbligo giojoso.
 I panni devono comunque essere messi ad asciugare; il tempo necessario a farlo in maniera sciatta o consapevole è pressocché lo stesso, ma un'Ikebarba ben fatta provvederà panni asciutti in minor tempo e renderà la vista dello stendipanni meno fastidiosa.
-
-**L'Ikebarba comincia nel negozio.**  
+</p>
+<p>
+<b>L'Ikebarba comincia nel negozio.</b><br />
 Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente; è preferibile quindi acquistare abiti dalle tinte sobrie e possibilmente intonati gli uni agli altri, in modo da renderne più facile e più elegante la composizione sullo stendi-panni.
 Attenzione, però: un guardaroba di tipo militare o maoista, con indumenti identici e dello stesso colore è un eccesso da rifuggire, perché renderebbe
 monotona la composizione (e non solo quella).
-
-**L'Ikebarba rifugge le mollette.**  
+</p>
+<p>
+<b>L'Ikebarba rifugge le mollette.</b>
 Le mollette sono utili come la psicanalisi: è l'equilibrio che deve tenere i panni sui fili, non una forza di coercizione esterna.
-I diversi capi devono essere posti sul filo in modo che il peso di una parte bilanci quello dell'altra.
-
+I diversi capi devono essere posti sul filo in modo che il peso di una parte bilanci quello dell'altra.</p>
+<p style="display:block">
 Esistono tre tipi di Ikebarba:
-
-- **cromatica:** quando i panni vengono posizionati sullo stendino in base al loro colore;
-
-- **funzionale:** quando gli indumenti sono posizionati in funzione dei rispettivi tempi di asciugatura, ponendo i capi pesanti all'esterno, dove ricevono più aria, e quelli più leggeri o sintetici all'interno;
-
-- **perfetta:** quando gli aspetti estetici e funzionali si fondono in un tutt'uno armonico.
-
+<ul style="padding:1rem 1rem 0">
+<li><b>cromatica:</b> quando i panni vengono posizionati sullo stendino in base al loro colore;</li>
+<li><b>funzionale:</b> quando gli indumenti sono posizionati in funzione dei rispettivi tempi di asciugatura, ponendo i capi pesanti all'esterno, dove ricevono più aria, e quelli più leggeri o sintetici all'interno;</li>
+<li><b>perfetta:</b> quando gli aspetti estetici e funzionali si fondono in un tutt'uno armonico.</li></ul></p></blockquote>
 Come puoi facilmente intuire, gli intenti del Maestro Canaro erano per buona parte ironici (mi confessò che la prima formulazione della disciplina era nata come un tentativo di dissimulare la sua ossessione per l'ordine) e per lungo tempo fu indeciso se includerla o meno nel corpo della Dottrina.
 Si decise a farlo quando capì che le sue perplessità nascevano proprio da quelle forme di prevenzione che l'Ikebarba doveva contrastare.
 Come ci insegnano Banzan e Paul Simon, la Verità è ovunque, se la sappiamo cercare, anche sui muri delle metropolitane o nelle botteghe dei mercati.  
