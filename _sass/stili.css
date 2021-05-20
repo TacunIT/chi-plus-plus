@@ -361,14 +361,20 @@ MAIN P.immagine IMG {
     text-align: center;
     max-width: 100%;
 }
-
+/** 
+ * Le citazioni devono essere centrate. 
+ */
 MAIN BLOCKQUOTE {
     color: $blockquoteColor;
-    text-align: left;
     font-size: 14pt;
     padding: 1em;
     font-style: italic;
     line-height: 1.5;
+    text-align: center;
+}
+MAIN BLOCKQUOTE P {
+    text-align: left;
+    display: inline-block;
 }
 
 BODY.pagina H1 {
