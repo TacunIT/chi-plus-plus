@@ -474,7 +474,7 @@ void main()
 Il valore didattico di questo codice, però, è immutato.
 Il *Karma* dei due oggetti è determinato dalla dichiarazione delle loro classi, che non gli lascia altra possibilità che fare ciò per cui sono stati creati.
 L'output delle funzioni, lo stile dei commenti o il fatto che in un caso le classi si chiamino `A` e `B`, mentre nell'altro si chiamano `Persona` e `Madre`, sono solo differenze formali che non influiscono sul *Dharma* dell'esempio, che è quello di illustrare il comportamento delle funzioni virtuali.
-Se in vece del nuovo codice io avessi usato quello originale del Maestro Canaro, tu avresti capito ugualmente; forse anche meglio, perché il nuovo codice sembra migliore a me, ma non è detto che lo sia per te.  
+Se in vece del nuovo codice io avessi usato quello originale del Maestro Canaro, tu avresti capito ugualmente; forse anche meglio, perché il nuovo codice sembra migliore a me, ma non è detto che lo sia anche per te.  
 Lo stesso principio vale anche per l'Universo.
 Così come gli oggetti all'interno di uno stesso programma occupano posizioni diverse in memoria, a seconda del momento in cui il programma viene eseguito, gli esseri senzienti possono manifestarsi in luoghi e tempi differenti nei diversi cicli di esistenza.  
 Ciascuno di noi è un orchestrale a cui è stata assegnata una partitura.
@@ -483,7 +483,7 @@ Io, qui, ora, con il mio naso la mia bocca e i miei capelli, ti sto insegnando c
 Molto probabilmente abbiamo già avuto questa conversazione in passato e la faremo ancora in futuro.
 Forse non useremo le stesse parole; forse avremo nomi differenti, forse tu sarai il maestro e io l'allievo, ma la nostra amicizia sarà la stessa, perché quella fa parte della dichiarazione della nostra classe; non può e non deve mutare.
 
-> {{site.data.citazioni.santillana.mito}} <a class="nota" href="/man/note#miti"></a>
+> {{site.data.citazioni.santillana.mito}} <a class="nota" href="/man note#miti"></a>
 
 Ogni epoca ha i suoi eroi e i suoi demoni; la memoria delle loro battaglie, genera il mito.  
 La Scienza è transeunte: abbiamo poche notizie riguardo le conoscenze scientifiche dei popoli del passato<!-- esempi? -->, mentre conosciamo bene i loro miti, perché il mito è immortale; la Scienza no, a meno che non sia assorbita dal mito e trasformata in leggenda o superstizione.
