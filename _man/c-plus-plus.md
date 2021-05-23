@@ -209,7 +209,7 @@ public:
 
 Il problema è che più codice scrivi, più è probabile che farai degli errori e meno facile sarà correggerli.
 Al contrario, i programmi con meno righe di codice sono più affidabili e più facili da correggere o da modificare.   
-Il C++ ci aiuta in questo senso perché permette il *polimorfismo*, ovvero la capacità di una funzione o di un operatore di svolgere il proprio compito indipendentemente dal tipo di dato che deve gestire.
+Il C++ ci aiuta in questo senso perché permette il <i id="polimorfismo">polimorfismo</i>, ovvero la capacità di una funzione o di un operatore di svolgere il proprio compito indipendentemente dal tipo di dato che deve gestire.
 Se riscriviamo la classe `Monta` usando, al posto dei parametri di tipo `Cavallo`, dei parametri che hanno il tipo della classe base `Animale`:
 
 ```
@@ -229,6 +229,7 @@ public:
 ```
 
 Potremo creare degli oggetti di classe `Monta` con qualunque classe derivata:
+
 ```
 {% include_relative src/cplusplus-polimorfismo.cpp %}
 ```
@@ -297,13 +298,13 @@ void setEsito() {
 ```
 
 ma anche così dovremo comunque riscrivere quattro righe di codice per modificare l'output del programma: un approccio inaccettabile per i sistemi di produzione, dove le entità da gestire possono essere migliaia.
-Possiamo risolvere questo problema grazie alla *generic programming* e al modo in cui viene implementata nel C++:le classi *template*:
+Possiamo risolvere questo problema grazie alla *generic programming* e al modo in cui viene implementata nel C++: le classi *template*:
 
 ```
 template < class T> class list;
 ```
 
-La classe `list ` è una delle classi *template* del C++ e permette di inserire, rimuovere, spostare, unire, ordinare ed elencare una lista di oggetti di una stessa classe.
+La classe `list` è una delle classi *template* del C++ e permette di inserire, rimuovere, spostare, unire, ordinare ed elencare una lista di oggetti di una stessa classe.
 La sintassi per creare una lista di oggetti di classe `Monta` è:
 
 ```
@@ -375,7 +376,7 @@ ESITO:   puledro
 
 DATA:    Sun Apr  5 16:19:24 2020
 MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
-FEMMINA: Specie:Asino	Razza:sardo	Sesso:f
+FEMMINA: Specie:Asino	Razza:sardo	    Sesso:f
 ESITO:   asino
 
 DATA:    Sun Apr  5 16:19:24 2020
@@ -389,8 +390,7 @@ FEMMINA: Specie:Asino	Razza:sardo     Sesso:f
 ESITO:   bardotto
 ```
 
-Se volessimo per qualche motivo invertire l'ordine degli elementi nella lista, tutto quello che dovremmo dare è di aggiungere prima del ciclo `for` l'istruzione:
-
+Se per qualche motivo volessimo invertire l'ordine degli elementi nella lista, tutto quello che dovremmo fare è di aggiungere prima del ciclo `for` l'istruzione:
 
 ```
 monte.reverse();

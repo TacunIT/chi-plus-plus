@@ -5,7 +5,8 @@ agostino:
 attar:
     "Io vidi il mio Signore con l'occhio del cuore.<br />Gli chiesi: Chi sei?<br />Rispose: Te!"
 dawkins:
-    "Dato un tempo infinito o un numero di opportunità infinite, è possibile qualsiasi cosa."
+    tempo: "Dato un tempo infinito o un numero di opportunità infinite, è possibile qualsiasi cosa.<a href=\"/man/note#dawkins-tempo\" class=\"nota\"></a>"
+    analogia: "Uno dei caratteri di una folle stravaganza è un uso troppo entusiasta dell’analogia.<a href=\"/man/note#dawkins-analogia\" class=\"nota\"></a>"
 vedanta:
     testo: "Il fine dichiarato di Kanāda nei Vaiśesika Sūtra, considerati da Dasgupta come pre-buddhisti, è di spiegare il Dharma (la Legge Eterna) come il fondamento, da un lato, della manifestazione (abhyudaya) e, dall’altro, del “Sommo Bene” (nihśreyasam), cioè della Liberazione: la validità dei Veda è stabilita dal fatto che questi sono i loro fini."
     fonte: "A. K. <span>Coomaraswamy</span>, Tempo ed Eternità, Edizioni Mediterranee."

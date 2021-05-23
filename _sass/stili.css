@@ -739,7 +739,7 @@ BODY.note SECTION.note OL {
 }
 /**
  *
- *  Stili per elenco log
+ *  Stili per log
  *
  */
 SECTION.elenco.post DIV.log {
@@ -752,21 +752,20 @@ SECTION.elenco.post DIV.log P.data {
     color: $dataColor;
     font-size: 0.9rem;
 } 
-
-/**
- *
- *  Stili per pagina con note
- *
- */
 BODY.pagina.log MAIN P.category {
     text-align: center;
     font-variant-caps: petite-caps;
 } 
-
 P.tag {
     font-size: 0.9rem;
     font-family: Inconsolata;
 }
+BODY.pagina.log MAIN PRE {
+    margin: 1rem auto;
+    padding: 1rem;
+    overflow: auto;
+}
+
 BODY.pagina.log MAIN P.tag {
     margin: 3rem auto 2rem;    
     width: 66%;

@@ -237,7 +237,7 @@ La seconda ipotesi è che ogni *Big Bang* avviene in circostanze e con modalità
 Il Maestro Canaro disse che la prima ipotesi era possibile, ma poco probabile e che quindi avremmo dato per scontato che fosse la seconda, quella corretta: «Tanto, non cambia niente: se il tempo che abbiamo a disposizione per far esplodere e implodere l’Universo è infinito, per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali è  impossibile che la cosa o prima o poi non avvenga.
 Come dice quel senza-Dio di Dawkins: 
 
-> {{ site.data.citazioni.dawkins }}<a href="/man/note#dawkins" class="nota"></a>
+> {{ site.data.citazioni.dawkins.tempo }}
 
 In base allo stesso principio, dando per scontato che o prima o poi questo Universo tornerà a manifestarsi, è del tutto lecito pensare &mdash; non per fede, ma in base a un banale calcolo probabilistico &mdash; che anche ciò che c’è in esso possa o prima o poi tornare a essere. 
 Noi compresi».
