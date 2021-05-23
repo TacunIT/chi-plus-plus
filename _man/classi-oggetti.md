@@ -600,7 +600,7 @@ Le regole non devono essere una rete che imprigiona e immoblizza, ma una rete ch
 Le regole che definiscono e quindi limitano la nostra esistenza sono come un edificio che abbia una struttura in cemento armato e dei muri in cartongesso. 
 I muri interni possono essere abbattuti o modificati, se necessario, ma i pilastri e le travi devono essere lasciati al loro posto.
 Similmente, la modifica delle regole può essere benefica, ma deve essere permessa solo a chi le conosce bene <!-- per esempio, Gesù --> perché un carpentiere maldestro portrebbe - per errore o per stupidità - rimuovere uno dei pilastri portanti mettendo in pericolo la solidità dell'edificio. <!-- per esempio, il Movimento del '68 -->  
-Per questi motivi, la modifica delle regole non può essere un'attività ammessa da chi le ha promulgate, anche se ne riconosce l'utilità, ma dev'essere un'attività clandestina, svolta da elementi sacrificabili, che possano fungere da capri espiatorii se qualcosa va male.  
+Per questi motivi, la modifica delle regole non può essere un'attività ammessa da chi le ha promulgate, anche se ne riconosce l'utilità, ma dev'essere un'attività apparentemente clandestina, svolta da elementi sacrificabili, che possano fungere da capri espiatorii se qualcosa va male.  
 Non fu per ingenuità, che l'Altissimo concesse a Iblīs una proroga alla sua punizione<a href="/man/note#iblis" class="nota"></a> e non fu un caso se il Maestro Canaro venne aggiunto al gruppo degli angeli caduti, dopo che, vittima dell'Annosa Dicotomia, cercò di contravvenire alle regole definite dall'Analista.
 Se rifiuti le dissonanze, tutt'al più, puoi suonare il Blues; con le dissonanze, hai il Jazz.
 
@@ -612,7 +612,7 @@ L'altro livello è la nostra manifestazione reale, dovuta all'interazione dell'e
 Questo livello è assimilabile all'istanza di una classe, che mette in atto ciò che nella dichiarazione era solo potenziale: *the hearts that break, the mess we make*, come dice la canzone<!-- Audition (The Fools Who Dream)</i> - dal film: La La Land -->.  
 La nostra entità ideale è unica e costante, mentre la nostra manifestazione fisica è mutevole: come sai, uno stesso oggetto può essere allocato in aree differenti di memoria, in successive esecuzioni di un programma, così come una stessa stampa può essere riprodotta su supporti diversi.
 In questo ciclo di esistenza, il Maestro Canaro e il cane Lele sono stati un umano e un cane che correvano sulle colline intorno al lago di Bracciano, ma in altre esistenze potrebbero essere &mdash; o essere stati &mdash; altre persone e altri animali, in altri luoghi o addirittura in altri pianeti. 
-Il nostro livello ideale, infatti, non stabilisce cosa dobbiamo essere, ma quale debba essere il nostro contributo all'economia dell'Universo; la forma che assumiamo o il luogo in cui ci manifestiamo sono del tutto incidentali.  
+Il nostro livello ideale, infatti, non stabilisce cosa dobbiamo essere, ma quale debba essere il nostro contributo all'economia dell'Universo; la forma che assumiamo o il luogo in cui ci manifestiamo sono del tutto incidentali. 
 Per il C'hi++, come per l'Induismo<a href="/man/note#cogito" class="nota"></a>, la frase: “Cogito ergo sum” di Cartesio è insensata, perché ciò che cogita è l'istanza.
 Ciò che siamo realmente, la nostra essenza, si manifesta in ciò che facciamo istintivamente.
 

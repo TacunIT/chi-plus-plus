@@ -82,7 +82,7 @@ La chiameremo perciò: *Metafisica*, anche se di metafisico avrà ben poco, per 
 
 > quei tanti che ancora credono in tutto ciò in cui più nessuno crede
 
-come li descrisse Longanesi; quella *Banda degli Onesti* che tutti i giorni fa il proprio dovere al meglio possibile anche se non gli conviene, anche se gli arreca danno.
+come li descrisse Longanesi; quella *Banda degli Onesti* che tutti i giorni fa il proprio dovere al meglio possibile anche se non gli conviene.
 
 Per riprendere il paragone calcistico fatto prima, C'hi++ non cercherà calciatori negli altri campionati.
 Chi ha la Fede non ha bisogno di conferme razionali; possono compiacerlo, ma non gli sono necessarie.
