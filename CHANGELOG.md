@@ -1,3 +1,6 @@
+## 0.25.0 (May 23, 2021)
+  - Iniziata redazione del capitolo sul polimorfismo
+
 ## 0.24.6 (May 20, 2021)
   - Revisione e pubblicazione del testo del capitolo sull'ereditarietà
   - Modificato stile citazioni
