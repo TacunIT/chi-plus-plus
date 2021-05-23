@@ -69,13 +69,14 @@ public:
 class Asino : public Animale {
 public:
     /** Definizione del costruttore della classe */
+    Asino() {}
     Asino(const char* razza, const Sesso sesso )
     : Animale(razza, sesso ) { 
     }
     /** Ridefinizione della funzione virtuale pura */
     const char* getSpecie() const {
         return "Asino"; 
-    }     Asino() {}
+    }     
 };
 
 /** Definizione della classe Monta */

@@ -26,7 +26,7 @@ ESITO:   puledro
 
 DATA:    Sun May 23 14:42:51 2021
 MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
-FEMMINA: Specie:Asino	Razza:sardo	Sesso:f
+FEMMINA: Specie:Asino	Razza:sardo	    Sesso:f
 ESITO:   asino
 
 DATA:    Sun May 23 14:42:51 2021
@@ -36,20 +36,125 @@ ESITO:   mulo
 
 DATA:    Sun May 23 14:42:51 2021
 MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
-FEMMINA: Specie:Asino	Razza:sardo	Sesso:f
+FEMMINA: Specie:Asino	Razza:sardo	    Sesso:f
 ESITO:   bardotto
 ```
 
+Prima di andare avanti, però, è necessario fare un po' di chiarezza su tre termini legati al polimorfismo: *overload*, *override* e *ridefinizione*.  
+Con il termine: <b id="overload">overload</b> di una funzione si intende la una funzione che abbia lo stesso nome di un'altra, ma dei parametri differenti. 
+Un tipico esempio di *function overload* sono le differenti versioni del costruttore di una classe:
+
+```
+Cavallo() {}
+Cavallo(const char* razza, const Sesso sesso )
+: Animale(razza, sesso ) { 
+}
+```
+Le due funzioni hanno lo stesso nome e il compilatore sceglierà l'una o l'altra in base ai parametri che vengono utilizzati.  
+Una funzione <b id="overridden">overridden</b> è una funzione che ha una definizione diversa da quella di una funzione virtuale di una sua classe-base:
+
+```
+const char* getSpecie() const {
+    return "Asino"; 
+}     
+```
+
+Come abbiamo visto, il compilatore sceglie l'una o l'altra in base al tipo di oggetto utilizzato per la chiamata.  
+Se la funzione della classe base non fosse stata virtuale, questa sarebbe stata una semplice **ridefinizione**:
+
+```
+class Persona {
+public:
+    void getClass(){
+        cout << "Persona" << endl;
+    }
+};
+```
+
+In questi casi, il compilatore non fa un controllo di tipo dinamico, basato sul tipo dell'oggetto al momento dell'esecuzione, ma sceglie la funzione da chiamare in base al tipo di puntatore o riferimento utilizzato, cosa che, come abbiamo visto, può creare dei problemi:
+
+```
+Madre   * ptrM = new Madre;
+Persona * ptrP = ptrM ;
+ptrM->getClass() ;
+ptrP->getClass() ;  // chiama la funzione di Persona - ERRORE
+```
+
+Ora che conosci questa differenza, possiamo correggere i commenti del codice di esempio: 
+
+```
+/** Overload dell'operatore di output su stream  */
+ostream& operator << (ostream& os, const Animale& animale) {
+    os  << "Specie:" << animale.getSpecie() << "\t"
+        << "Razza:"  << animale.getRazza()  << "\t"
+        << "Sesso:"  << animale.getSesso()  
+        << endl;
+    return os;   
+}
+
+/** Override della funzione virtuale pura */
+const char* getSpecie() const {
+    return "Cavallo"; 
+}  
+
+/** Override della funzione virtuale pura */
+const char* getSpecie() const {
+    return "Asino"; 
+}     
+
+/** Overload dell'operatore di output su stream */
+friend ostream& operator << (ostream& os, const Monta& copula) {
+    os << "DATA:    " << asctime(localtime(&copula._giorno)) 
+       << "MASCHIO: " << *copula._maschio 
+       << "FEMMINA: " << *copula._femmina
+       << "ESITO:   " << copula._esito
+       << endl;
+       return os;   
+ };
+```
+
+<hr id="overload-operatori"> 
+
+Nel C++, a ogni operatore corrisponde una funzione, che è possibile richiamare direttamente facendo seguire la parola-chiave `operator` dal simbolo dell’operatore. 
+Per esempio, la struttura della funzione corrispondente all’operatore binario `+=` è:
+
+```
+<tipo>& operator +=  (<tipo>& a, <tipo>& b) ;
+```
+
+laddove `a` e `b` sono i due oggetti che intervengono nell’operazione e `<tipo>` è il tipo delle variabili che intervengono nell'operazione.
+
+<!-- operatori come funzioni di classe -->
+
+```
+{% include_relative src/polimorfismo-operatori.cpp %}
+```
+
+L'output di questo codice è ben noto:
+
+```
+> g++ src/cpp/polimorfismo-operatori.cpp -o src/out/esempio
+> src/out/esempio                                          
+PippoPluto
+```
+
 <!--
-An overloaded function is a function that shares its name with one or more other functions, but which has a different parameter list. The compiler chooses which function is desired based upon the arguments used.
 
-An overridden function is a method in a descendant class that has a different definition than a virtual function in an ancestor class. The compiler chooses which function is desired based upon the type of the object being used to call the function.
+Operatore += per la classe string
 
-A redefined function is a method in a descendant class that has a different definition than a non-virtual function in an ancestor class. Don't do this. Since the method is not virtual, the compiler chooses which function to call based upon the static type of the object reference rather than the actual type of the object.
+#include <iostream>
+#include <string>
 
-    Static type checking means that type checking occurs at compile time. No type information is used at runtime in that case.
+int main ()
+{
+  std::string s1 ("Pippo");
+  std::string s2 ("Pluto");
 
-    Dynamic type checking occurs when type information is used at runtime. C++ uses a mechanism called RTTI (runtime type information) to implement this. The most common example where RTTI is used is the dynamic_cast operator which allows downcasting of polymorphic types:
+  name += s2;
+
+  std::cout << s2 << endl;
+  return 0;
+}
 
 -->
 
@@ -88,119 +193,37 @@ Il C'hi++, però, può dare forza a quelle (tante) persone che *ancora credono i
 <!--
 
 
-3.1 scopo dellA sovrapposizione
-La sovrapposizione, signori, imparatevela bene, perché è una di quelle caratteristiche della programmazione ad oggetti e del C++ che serve principalmente a farvi lavorare di meno e meglio. Prima di parlarne, però, ci tengo a chiarire una cosa ovvero che lo scopo di un qualsiasi linguaggio di programmazione, dall’assembler in su, non è quello di rendere possibile la programmazione (per quello basterebbero il codice macchina e tanta, tanta pazienza) bensì di renderla agevole. Forse era una considerazione ovvia, forse no; adesso comun­que possiamo andare avanti.
-Nella funzione main() del programma di esempio punto.cpp abbiamo visto un primo metodo per l’output dei membri della classe Punto; quello che segue è praticamente la stessa cosa, applicata ai membri di una struttura composta da un intero e da un intero lungo senza segno:
 
-struct 
-{
- signed short int  ssi ;
- unsigned long int uli ;	
-} S ;
-
-cout << "membro short di S = " << S.ssi << "\n" ;	
-cout << "membro long  di S = " << S.uli << "\n" ;	
-in C, per ottenere il medesimo risultato, avremmo dovuto utilizzare un’istruzione del tipo:
-
-printf("membro short di S = %d", p.ssi ) ;
-printf("membro long  di S = %lu", p. uli ) ;
-Utilizzando la sintassi C abbiamo bisogno di due specificatori di formato differenti () per visualizzare lo short int e l’unsigned long int, in C++, invece, per mezzo di una stessa istruzi­one << visualizziamo tutto: stringhe di caratteri, numero intero ritornato dalla funzione membro ValX() e intero lungo senza segno che siano. Come fa il compilatore a sceg­liere il tipo corretto di formattazione per ciascun caso? 
-La risposta è che l’operatore << non ha un unico modus operandi, ma può scegliersi il comportamento più adatto alla situazione, a seconda che alla sua destra abbia una stringa, un double o un int. Questa è una forma di polimorfismo. Una forma ridotta, ovviamente: per essere assoluta, l’operatore dovrebbe essere in grado di comportarsi in maniera corretta quale che sia il tipo di parametro passatogli, mentre qui il suo polimorfismo è ristretto ai tipi di dato per cui abbiamo ridefinito l’operatore.
-La sovrapposizione (o overloading) è il meccanismo che sta alla base del polimorf­ismo e può essere applicata indifferentemente ad operatori o a funzioni. Se di una stessa funzione si definiscono più versioni che abbiano un tipo e/o un numero di parametri differente l’una dall’altra, il compilatore, volta per volta, sceglierà fra tutte quella più adatta alla natura dei dati che deve gestire (capirete ora per quale ragione in C++ il tipo dei dati sia così importante e così accuratamente verificato).
-3.2 sovrapposizione delle funzioni
-Avete avuto un primo assaggio della sovrapposizione delle funzioni in C++ con la de­finizione, per una stessa classe, di più costruttori distinti fra loro dal numero o dal tipo dei parametri: lo stesso meccanismo è applicabile anche a qualsiasi altra funzione.
-MINORE.CPP - Overload di una funzione che ritorna il minore fra due numeri
-/////////////////////////////////////////////////////////////
-//
-//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
-//
-//	MINORE.CPP - Overload di una funzione che ritorna il
-//				minore fra due numeri
-//
-/////////////////////////////////////////////////////////////
-#include "iostream.h"
-/////////////////////////////////////////////////////////////
-//
-//	Versione che confronta due interi
-//
-int minore(int a, int b) 
-{ 
-	return ( a < b ) ? a : b ; 
-}	
-/////////////////////////////////////////////////////////////
-//
-//	Versione di confronto fra float
-//
-float minore(float a, float b) 
-{ 
-	return ( a < b ) ? a : b ;
-}	
-/////////////////////////////////////////////////////////////
-//
-//	Trova il numero più basso in un array di double d[i]
-//
-double minore(double * d, int i) 
-{ 
- double nMin = * d ;
-
-	for( int n = 1 ; n < i ; n++ )
-	{ 
-		if ( nMin > * ++ d ) nMin = * d ;
-	}	
-
- return nMin ;
-}   
-///////////////////////////////////////////////////////////// //
-//	Programma di esempio
-//	
-void main()
-{
- int    i1 = 33 , i2 = -55 ;
- float  f1 = 27034.345, f2 = 9999.371 ;
- double da[] = {6.22, -345.367, 213.01, -4.346, 11.934, 1.2 } ;
-  
- cout << "Versione int    : " 
-			<< minore(i1, i2) << "\n" ;               // 001
- cout << "Versione float  : " 
-			<< minore(f1, f2) << "\n" ;               // 002
- cout << "Versione double : " 
-			<< minore(da, 6)  << "\n" ;               // 003
-}
-///////////////////////////////////////////////////////////// 
-001  Utilizza la versione int.
-002  Utilizza la versione float.
-003  Utilizza la versione double[]. 
-L’output di questo programma è il seguente:
-
-Versione int    : -55
-Versione float  : 9999.37
-Versione double : -345-367
 Se invece di sovrapporre minore() avessimo definito tre funzioni differenti minoreInt(), minoreFloat() e minoreArray(), a breve termine, per noi non sarebbe cambiato nulla: il codice da scrivere ed il tempo necessario a farlo sarebbero stati esattamente gli stessi. Le differenze sarebbero venute fuori alla distanza, nelle fasi suc­cessive della programmazione, quando, invece del compilatore, saremmo stati noi a doverci  occupare del corretto accoppiamento funzione-tipo di dato. 
+
 La sovrapposizione, invece, permette di delegare al compilatore tutta una serie di man­sioni meccaniche e ripetitive che lui potrà svolgere sicuramente in meno tempo e con maggior accuratezza di quanto avremmo potuto fare noi, lasciandoci più tempo da dedi­care a quelle attività creative e di analisi, in cui il compilatore non può per ora (e per for­tuna) sostituirsi a noi. 
+
 3.3 sovrapposizione degli operatori
-Ad ogni operatore in C++ corrisponde una funzione operatore, che viene richiamata facendo seguire la parola riservata operator dal simbolo dell’operatore. 
-Per esempio, la funzione corrispondente all’operatore binario += è:
-<tipo> operator +=  (<tipo> a, <tipo> b) ;
-laddove a e b sono i due oggetti che intervengono nell’operazione e <tipo> varia a sec­onda che l’operatore venga utilizzato per degli int, dei double, dei float ecc.
-<tipo> operator +=  (int a, int b) ;		
-<tipo> operator +=  (double a, double b) ;
-<tipo> operator +=  (float a, float b) ;
+
 Stessa cosa dicasi per gli operatori unari, siano essi prefissi o postfissi. Nel primo caso (operatori unari prefissi), la funzione corrispondente avrà un solo argomento, nel secon­do (operatori unari postfissi), per permettere al compilatore di distinguere le due ver­sioni, si aggiungerà un secondo argomento dummy  :
+
 void operator ++ (<tipo> a) ;		   // versione prefissa
 void operator ++ (<tipo> a, <tipo>) ; // versione postfissa
+
 Anche se è possibile richiamare le funzioni operatore in maniera diretta, è più semplice e veloce utilizzare direttamente gli operatori corrispondenti. Le prossime due istruzioni, una volta compilate, producono il medesimo codice e risultato, comunque, se riuscite a trovare una ragione qualunque per usare la prima sintassi piuttosto che la seconda, fatelo pure:
+
 a = b.operator + (c) ; 	
 a = b + c ;
+
 Il comportamento degli operatori è predefinito per tutti i tipi standard, ma cosa succede quando si introducono in un programma dei tipi di dati definiti dall’utente? Abbiamo detto, più di una volta, che la definizione di una nuova classe è, di fatto, la definizione di un nuovo tipo di dato e che gli oggetti appartenenti alla nuova classe possono essere trat­tati esattamente come gli oggetti di tipo primitivo: questo comporta che anche per le di noi create di volta in volta si possa definire (o ri-definire) il comportamento degli operatori? La risposta è sì: gli unici operatori non sovrapponibili sono: 
+
 ·	. (operatore di selezione) ;
 ·	.* (operatore di risoluzione di indirizzamento dei puntatori a membri della classe);
 ·	:: (operatore di risoluzione del campo d’azione);
 ·	?: (operatore condizionale) ;
 ·	i simboli # e ## che vengono utilizzati dal preprocessore.
+
 3.4	sovrapposizione degli operatori per una classe
+
 La sovrapposizione di un operatore per una determinata classe può essere compiuta in due maniere differenti:
 ·	ridefinendo il comportamento di un operatore globale per quella parti­colare classe.
 ·	definendo una funzione membro non statica per la classe;
+
 Le differenze principali fra l’una e l’altra soluzione sono che una funzione operatore membro ha (generalmente) un argomento in meno della corrispondente funzione globale (il riferimento all’operando di sinistra viene assicurato dall’argomento this che, come sappiamo, viene sempre passato come parametro nelle funzioni), mentre una funzione operatore globale ridefinita non varia la sua sintassi, ma non ha accesso ai dati privati della classe. Questo ci pone di nuovo di fronte ad un bivio: o dichiariamo la funzione come friend oppure facciamo in modo che agisca su funzioni di interfaccia. La prima soluzione è la più efficiente, la seconda sarà probabilmente più lenta in esecuzione ma non necessiterà di riscritture in caso di modifiche alla struttura della classe.
 Scendendo più in dettaglio (e posto che C sia il nome di una classe e Op un qualsiasi op­eratore), se avessimo a che fare con un operatore unario, le alternative saranno quindi o una funzione membro che non richieda parametri:
 C::operator Op () ;	
