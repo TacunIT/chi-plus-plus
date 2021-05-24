@@ -122,9 +122,8 @@ Per esempio, la struttura della funzione corrispondente all’operatore binario 
 <tipo>& operator +=  (<tipo>& a, <tipo>& b) ;
 ```
 
-laddove `a` e `b` sono i due oggetti che intervengono nell’operazione e `<tipo>` è il tipo delle variabili che intervengono nell'operazione.
-
-<!-- operatori come funzioni di classe -->
+laddove `a` e `b` sono i due oggetti che intervengono nell’operazione e `<tipo>` è il tipo delle variabili che intervengono nell'operazione.  
+La classe `string`, della libreria standard del C++, per esempio, ridefinisce, fra le altre cose, il comportamento degli operatori di assegnazione `+=` e `+` e dell'operatore di output su stream `<<` :
 
 ```
 {% include_relative src/polimorfismo-operatori.cpp %}
@@ -138,25 +137,42 @@ L'output di questo codice è ben noto:
 PippoPluto
 ```
 
-<!--
+Lo stesso risultato si poteva ottenere anche con la funzione `append`:
 
-Operatore += per la classe string
+```
+string& append (const string& str)
+```
 
-#include <iostream>
-#include <string>
+ma utilizzare un operatore standard rende il codice più facile da leggere e da scrivere.
 
-int main ()
-{
-  std::string s1 ("Pippo");
-  std::string s2 ("Pluto");
+--
 
-  name += s2;
+Quando si ridefinisce il comportamento di un operatore per una classe, bisogna tenere conto della visibilità dei dati membro che deve utilizzare.
+Se l'operatore, com'è probabile, deve gestire dei dati privati o protetti, le possibilità sono due: o sfruttare le funzioni di interfaccia della classe o  dichiarare l'operatore `friend` della classe.
+Nell'esempio iniziale sono applicate entrambe le possibilità: l'operatore di output su stream per la classe `Animale` utilizza le funzoni di interaccia della classe:
 
-  std::cout << s2 << endl;
-  return 0;
+```
+ostream& operator << (ostream& os, const Animale& animale) {
+    os  << "Specie:" << animale.getSpecie() << "\t"
+        << "Razza:"  << animale.getRazza()  << "\t"
+        << "Sesso:"  << animale.getSesso()  
+        << endl;
+    return os;   
 }
+```
 
--->
+mentre l'operatore di output per la classe `Monta` è dichiarato come `friend` della classe e quindi può accedere ai dati membro direttamente:
+
+```
+friend ostream& operator << (ostream& os, const Monta& copula) {
+    os << "DATA: "    << asctime(localtime(&copula._giorno)) 
+       << "MASCHIO: " << *copula._maschio 
+       << "FEMMINA: " << *copula._femmina;
+       return os;   
+};
+```
+
+
 
 <hr id="dottrina">
 
@@ -194,9 +210,7 @@ Il C'hi++, però, può dare forza a quelle (tante) persone che *ancora credono i
 
 
 
-Se invece di sovrapporre minore() avessimo definito tre funzioni differenti minoreInt(), minoreFloat() e minoreArray(), a breve termine, per noi non sarebbe cambiato nulla: il codice da scrivere ed il tempo necessario a farlo sarebbero stati esattamente gli stessi. Le differenze sarebbero venute fuori alla distanza, nelle fasi suc­cessive della programmazione, quando, invece del compilatore, saremmo stati noi a doverci  occupare del corretto accoppiamento funzione-tipo di dato. 
 
-La sovrapposizione, invece, permette di delegare al compilatore tutta una serie di man­sioni meccaniche e ripetitive che lui potrà svolgere sicuramente in meno tempo e con maggior accuratezza di quanto avremmo potuto fare noi, lasciandoci più tempo da dedi­care a quelle attività creative e di analisi, in cui il compilatore non può per ora (e per for­tuna) sostituirsi a noi. 
 
 3.3 sovrapposizione degli operatori
 

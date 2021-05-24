@@ -24,9 +24,8 @@ int main ()
      */
     s1 += s2;
     s1 += s3;
-    s1 += 'o';
 
-    cout << s1 << endl;
+    cout << (s1 + 'o') << endl;
 
     return 0;
 }
