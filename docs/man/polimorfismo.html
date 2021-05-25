@@ -228,23 +228,23 @@ int main()
 <pre><code>&gt; g++ src/cpp/cplusplus-template.cpp -o src/out/esempio
 &gt; src/out/esempio
 DATA:    Sun May 23 14:42:51 2021
-MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
-FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+MASCHIO: Specie:Cavallo Razza:lipizzano Sesso:m
+FEMMINA: Specie:Cavallo Razza:maremmano Sesso:f
 ESITO:   puledro
 
 DATA:    Sun May 23 14:42:51 2021
-MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
-FEMMINA: Specie:Asino	Razza:sardo	    Sesso:f
+MASCHIO: Specie:Asino Razza:amiatino Sesso:m
+FEMMINA: Specie:Asino Razza:sardo     Sesso:f
 ESITO:   asino
 
 DATA:    Sun May 23 14:42:51 2021
-MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
-FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
+MASCHIO: Specie:Asino Razza:amiatino Sesso:m
+FEMMINA: Specie:Cavallo Razza:maremmano Sesso:f
 ESITO:   mulo
 
 DATA:    Sun May 23 14:42:51 2021
-MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
-FEMMINA: Specie:Asino	Razza:sardo	    Sesso:f
+MASCHIO: Specie:Cavallo Razza:lipizzano Sesso:m
+FEMMINA: Specie:Asino Razza:sardo     Sesso:f
 ESITO:   bardotto
 </code></pre>
 
@@ -318,15 +318,38 @@ friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula)
 
 <hr id="overload-operatori" />
 
-<p>Nel C++, a ogni operatore corrisponde una funzione, che è possibile richiamare direttamente facendo seguire la parola-chiave <code>operator</code> dal simbolo dell’operatore. 
-Per esempio, la struttura della funzione corrispondente all’operatore binario <code>+=</code> è:</p>
+<p>Nel C++, a ogni operatore corrisponde una funzione.
+Quella dell’operatore binario <code>+=</code>, per esempio, è:</p>
 
 <pre><code>&lt;tipo&gt;&amp; operator +=  (&lt;tipo&gt;&amp; a, &lt;tipo&gt;&amp; b) ;
 </code></pre>
 
 <p>laddove <code>a</code> e <code>b</code> sono i due oggetti che intervengono nell’operazione e <code>&lt;tipo&gt;</code> è il tipo delle variabili che intervengono nell’operazione.</p>
 
-<!-- operatori come funzioni di classe -->
+<pre><code>int&amp;    operator +=  (int&amp;    a, int&amp;    b) ;
+float&amp;  operator +=  (float&amp;  a, float&amp;  b) ;
+double&amp; operator +=  (double&amp; a, double&amp; b) ;
+</code></pre>
+
+<p>Gli operatori unari possono essere prefissi o postfissi.
+Per consentire al compilatore di distinguere le funzione corretta da utilizzare, si aggiunge alla funzione dell’operatore postfisso un secondo parametro, non utilizzato:</p>
+
+<pre><code>void operator ++ (&lt;tipo&gt; a) ;           // versione prefissa
+void operator ++ (&lt;tipo&gt; a, &lt;tipo&gt;) ;   // versione postfissa
+
+</code></pre>
+
+<p>Anche se è più semplice e veloce utilizzare direttamente gli operatori corrispondenti, è comunque possibile richiamare le funzioni operatore in maniera diretta.
+Queste due istruzioni, una volta compilate, producono il medesimo codice e lo stesso risultato.
+Se riesci a trovare una ragione qualunque per usare la prima sintassi piuttosto che la seconda, fallo pure:</p>
+
+<pre><code>a = b.operator + (c) ;  
+a = b + c ;
+
+</code></pre>
+
+<p>Il comportamento degli operatori è predefinito per tutti i tipi standard e può essere ridefinito per gestire anche dei tipi di dato aggregati come le strutture o le classi. 
+La classe <code>string</code>, della libreria standard del C++, per esempio, ridefinisce, fra le altre cose, il comportamento degli operatori di assegnazione <code>+=</code> e <code>+</code> e dell’operatore di output su stream <code>&lt;&lt;</code> in modo che si possano compiere delle operazioni sulle stringhe con la stessa sintassi che si utilizza per altri tipi di dato:</p>
 
 <pre><code>/** 
  * @file src/polimorfismo-operatori.cpp
@@ -354,9 +377,8 @@ int main ()
      */
     s1 += s2;
     s1 += s3;
-    s1 += 'o';
 
-    cout &lt;&lt; s1 &lt;&lt; endl;
+    cout &lt;&lt; (s1 + 'o') &lt;&lt; endl;
 
     return 0;
 }
@@ -370,25 +392,46 @@ int main ()
 PippoPluto
 </code></pre>
 
-<!--
+<p>Lo stesso risultato si può ottenere anche con la funzione <code>append</code>:</p>
 
-Operatore += per la classe string
+<pre><code>string&amp; append (const string&amp; str)
+</code></pre>
 
-#include <iostream>
-#include <string>
+<p>ma utilizzare un operatore standard rende il codice più facile da leggere e da scrivere, se non altro perché non ti devi ricordare come si chiama la funziona per unire due stringhe.<br />
+Gli unici operatori che non possono essere ridefiniti da una classe sono:</p>
 
-int main ()
-{
-  std::string s1 ("Pippo");
-  std::string s2 ("Pluto");
+<ul>
+  <li><code>.</code> (operatore di selezione)</li>
+  <li><code>.*</code> (operatore di risoluzione di indirizzamento dei puntatori a membri della classe);</li>
+  <li><code>::</code> (operatore di risoluzione del campo d’azione);</li>
+  <li><code>?:</code> (operatore condizionale) ;</li>
+  <li>i simboli <code># </code> e <code>##</code>, che vengono utilizzati dal preprocessore.</li>
+</ul>
 
-  name += s2;
+<hr id="operatori-classi" />
 
-  std::cout << s2 << endl;
-  return 0;
+<p>Quando si ridefinisce il comportamento di un operatore per una classe, bisogna tenere conto della visibilità dei dati membro che deve utilizzare.
+Se l’operatore, com’è probabile, deve gestire dei dati privati o protetti, le possibilità sono due: o sfruttare le funzioni di interfaccia della classe o  dichiarare l’operatore <code>friend</code> della classe.
+Nell’esempio iniziale sono applicate entrambe le possibilità: l’operatore di output su stream per la classe <code>Animale</code> utilizza le funzioni di interfaccia della classe:</p>
+
+<pre><code>ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animale&amp; animale) {
+    os  &lt;&lt; "Specie:" &lt;&lt; animale.getSpecie() &lt;&lt; "\t"
+        &lt;&lt; "Razza:"  &lt;&lt; animale.getRazza()  &lt;&lt; "\t"
+        &lt;&lt; "Sesso:"  &lt;&lt; animale.getSesso()  
+        &lt;&lt; endl;
+    return os;   
 }
+</code></pre>
 
--->
+<p>mentre l’operatore di output per la classe <code>Monta</code> è dichiarato come <code>friend</code> della classe e quindi può accedere direttamente ai dati membro dell’istanza:</p>
+
+<pre><code>friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula) {
+    os &lt;&lt; "DATA: "    &lt;&lt; asctime(localtime(&amp;copula._giorno)) 
+       &lt;&lt; "MASCHIO: " &lt;&lt; *copula._maschio 
+       &lt;&lt; "FEMMINA: " &lt;&lt; *copula._femmina;
+       return os;   
+};
+</code></pre>
 
 <hr id="dottrina" />
 
@@ -422,43 +465,17 @@ Il C’hi++, però, può dare forza a quelle (tante) persone che <em>ancora cred
 
 <!--
 
-
-
-Se invece di sovrapporre minore() avessimo definito tre funzioni differenti minoreInt(), minoreFloat() e minoreArray(), a breve termine, per noi non sarebbe cambiato nulla: il codice da scrivere ed il tempo necessario a farlo sarebbero stati esattamente gli stessi. Le differenze sarebbero venute fuori alla distanza, nelle fasi suc­cessive della programmazione, quando, invece del compilatore, saremmo stati noi a doverci  occupare del corretto accoppiamento funzione-tipo di dato. 
-
-La sovrapposizione, invece, permette di delegare al compilatore tutta una serie di man­sioni meccaniche e ripetitive che lui potrà svolgere sicuramente in meno tempo e con maggior accuratezza di quanto avremmo potuto fare noi, lasciandoci più tempo da dedi­care a quelle attività creative e di analisi, in cui il compilatore non può per ora (e per for­tuna) sostituirsi a noi. 
-
-3.3 sovrapposizione degli operatori
-
-Stessa cosa dicasi per gli operatori unari, siano essi prefissi o postfissi. Nel primo caso (operatori unari prefissi), la funzione corrispondente avrà un solo argomento, nel secon­do (operatori unari postfissi), per permettere al compilatore di distinguere le due ver­sioni, si aggiungerà un secondo argomento dummy  :
-
-void operator ++ (<tipo> a) ;		   // versione prefissa
-void operator ++ (<tipo> a, <tipo>) ; // versione postfissa
-
-Anche se è possibile richiamare le funzioni operatore in maniera diretta, è più semplice e veloce utilizzare direttamente gli operatori corrispondenti. Le prossime due istruzioni, una volta compilate, producono il medesimo codice e risultato, comunque, se riuscite a trovare una ragione qualunque per usare la prima sintassi piuttosto che la seconda, fatelo pure:
-
-a = b.operator + (c) ; 	
-a = b + c ;
-
-Il comportamento degli operatori è predefinito per tutti i tipi standard, ma cosa succede quando si introducono in un programma dei tipi di dati definiti dall’utente? Abbiamo detto, più di una volta, che la definizione di una nuova classe è, di fatto, la definizione di un nuovo tipo di dato e che gli oggetti appartenenti alla nuova classe possono essere trat­tati esattamente come gli oggetti di tipo primitivo: questo comporta che anche per le di noi create di volta in volta si possa definire (o ri-definire) il comportamento degli operatori? La risposta è sì: gli unici operatori non sovrapponibili sono: 
-
-·	. (operatore di selezione) ;
-·	.* (operatore di risoluzione di indirizzamento dei puntatori a membri della classe);
-·	:: (operatore di risoluzione del campo d’azione);
-·	?: (operatore condizionale) ;
-·	i simboli # e ## che vengono utilizzati dal preprocessore.
-
-3.4	sovrapposizione degli operatori per una classe
+3.4 sovrapposizione degli operatori per una classe
 
 La sovrapposizione di un operatore per una determinata classe può essere compiuta in due maniere differenti:
-·	ridefinendo il comportamento di un operatore globale per quella parti­colare classe.
-·	definendo una funzione membro non statica per la classe;
+· ridefinendo il comportamento di un operatore globale per quella parti­colare classe.
+· definendo una funzione membro non statica per la classe;
 
 Le differenze principali fra l’una e l’altra soluzione sono che una funzione operatore membro ha (generalmente) un argomento in meno della corrispondente funzione globale (il riferimento all’operando di sinistra viene assicurato dall’argomento this che, come sappiamo, viene sempre passato come parametro nelle funzioni), mentre una funzione operatore globale ridefinita non varia la sua sintassi, ma non ha accesso ai dati privati della classe. Questo ci pone di nuovo di fronte ad un bivio: o dichiariamo la funzione come friend oppure facciamo in modo che agisca su funzioni di interfaccia. La prima soluzione è la più efficiente, la seconda sarà probabilmente più lenta in esecuzione ma non necessiterà di riscritture in caso di modifiche alla struttura della classe.
 Scendendo più in dettaglio (e posto che C sia il nome di una classe e Op un qualsiasi op­eratore), se avessimo a che fare con un operatore unario, le alternative saranno quindi o una funzione membro che non richieda parametri:
-C::operator Op () ;	
+C::operator Op () ; 
 o una funzione globale che accetti un argomento del tipo della classe, ovvero :
-operator Op (C)  ;	
+operator Op (C)  ; 
 È possibile invece ridefinire un operatore binario o definendo una funzione membro che accetti un argomento 
 C::operator Op (C) ;
 oppure ridefinendo una funzione globale che accetti due argomenti :
@@ -469,42 +486,42 @@ Vediamo ora come tutte queste regole si possano applicare alla classe Punto:
 class Punto
 {
  private:
-		int X, Y ;				
-		static int PuntiCreati ;	
+  int X, Y ;    
+  static int PuntiCreati ; 
  public:
-		Punto(int x, int y) ; 		
-		~Punto() ;
-	
-		static int Istanze() { return PuntiCreati ; }	
-		int ValX() { return X ; }	
-		int ValY() { return Y ; }
+  Punto(int x, int y) ;   
+  ~Punto() ;
+ 
+  static int Istanze() { return PuntiCreati ; } 
+  int ValX() { return X ; } 
+  int ValY() { return Y ; }
 
-		Punto& operator+ (Punto &p) ;	                  // 001
-		Punto& operator+=(Punto &p) ;	                  // 001
+  Punto& operator+ (Punto &p) ;                   // 001
+  Punto& operator+=(Punto &p) ;                   // 001
 
-	friend Punto& operator-= (Punto &p1, Punto &p2); // 002
+ friend Punto& operator-= (Punto &p1, Punto &p2); // 002
 };
 /////////////////////////////////////////////////////////////
 Punto operator - (Punto &p1, Punto &p2)              // 003
 {
-	return Punto(p1.ValX()-p2.ValX(),p1.ValY()-p2.ValY()) ;
+ return Punto(p1.ValX()-p2.ValX(),p1.ValY()-p2.ValY()) ;
 }
 /////////////////////////////////////////////////////////////
 Punto Punto::operator + (Punto p)
 {
-	return Punto( X + p.X, Y + p.Y ) ;
+ return Punto( X + p.X, Y + p.Y ) ;
 }
 /////////////////////////////////////////////////////////////
 Punto Punto::operator += (Punto p)
 {
-	X = X + p.X ;
-	Y = Y + p.Y ;
+ X = X + p.X ;
+ Y = Y + p.Y ;
 }
 /////////////////////////////////////////////////////////////
 Punto operator -= (Punto &p1, Punto &p2)
 {
-	p1.X = p1.X - p2.X ;
-	p1.Y = p1.Y - p2.Y ;
+ p1.X = p1.X - p2.X ;
+ p1.Y = p1.Y - p2.Y ;
 }
 /////////////////////////////////////////////////////////////
 001  Gli operatori + e +=, sono dichiarati come membri della classe Punto, quindi non hanno problemi di accesso ai dati privati.
@@ -513,40 +530,40 @@ Punto operator -= (Punto &p1, Punto &p2)
 Notate bene che la pletora di approcci utilizzata qui come esempio, pur se corretta da un punto di vista sintattico, sarebbe inaccettabile in un programma reale. La sovrapposizione degli operatori va fatta in maniera coerente per ogni classe, scegliendo un metodo ed applicandolo in tutti i casi. Decidere di fare il contrario non è un errore, ovviamente, ma potrebbe complicare la vita a voi e/o alle per­sone che, dopo di voi, potrebbero aver a che fare con il vostro codice. 
 3.4.1 Limitazioni alla sovrapposizione
 Oltre agli operatori non sovrapponibili elencati al paragrafo 3.3, esistono degli operatori di cui non è consentito ridefinire tramite overload la versione globale. Questi sono:  =, () , [], -> e ->* ,che possono essere solo sovrapposti come funzioni membro non static. Altre regole da ricordare in questi casi sono:
-·	l’operatore unario di assegnamento = per una qualsiasi classe C, se non ridefinito, prevede l’assegnamento membro a membro degli attributi ed ha la sintassi :
+· l’operatore unario di assegnamento = per una qualsiasi classe C, se non ridefinito, prevede l’assegnamento membro a membro degli attributi ed ha la sintassi :
 
 C& C::operator = (const C& origine) ;
-	questo è inoltre l’unico caso di funzione membro che non viene eredi­tata da eventuali classi figlie;
-·	l’operatore binario []permette di implementare vettori di tipo particolare, ma con la sintassi standard ed ha la forma:
+ questo è inoltre l’unico caso di funzione membro che non viene eredi­tata da eventuali classi figlie;
+· l’operatore binario []permette di implementare vettori di tipo particolare, ma con la sintassi standard ed ha la forma:
  
 c.operator [] (n) ;
-	dove c è un oggetto di classe C e l’indice n può essere un qualsiasi tipo di dato ;
-·	per ridefinire l’operatore binario di chiamata a funzione per la solita classe C, va utilizzata una sintassi del tipo: 
+ dove c è un oggetto di classe C e l’indice n può essere un qualsiasi tipo di dato ;
+· per ridefinire l’operatore binario di chiamata a funzione per la solita classe C, va utilizzata una sintassi del tipo: 
 
 c.operator()(p) ;
-	dove c, tanto per cambiare è un oggetto di classe C e p è un elenco anche vuoto, di parametri;
-·	l’operatore unario di accesso ai membri della classe -> viene interpre­tato come:
+ dove c, tanto per cambiare è un oggetto di classe C e p è un elenco anche vuoto, di parametri;
+· l’operatore unario di accesso ai membri della classe -> viene interpre­tato come:
 
 (C.operator -> ())->m ;
-	e ritorna o un oggetto o un puntatore ad un oggetto di classe C.
-3.5	Overload degli operatori new e delete
+ e ritorna o un oggetto o un puntatore ad un oggetto di classe C.
+3.5 Overload degli operatori new e delete
 Ridefinire degli operatori come new e delete, il cui comportamento è strettamente le­gato all’hardware, non sempre è la cosa migliore da fare dal punto di vista della port­abilità del codice, comunque, se si desidera che una classe abbia un modo particolare di gestire la memoria libera dello heap, lo si può fare, ricordandosi però di rispettare alcune regole di base:
-·	l’operatore new deve avere il primo argomento di tipo size_t e resti­tuire un puntatore a void;
-·	l’operatore delete deve essere una funzione di tipo void che abbia un primo argomento di tipo puntatore a void ed un secondo argomento, facoltativo, di tipo size_t;
+· l’operatore new deve avere il primo argomento di tipo size_t e resti­tuire un puntatore a void;
+· l’operatore delete deve essere una funzione di tipo void che abbia un primo argomento di tipo puntatore a void ed un secondo argomento, facoltativo, di tipo size_t;
 in pratica, qualcosa di simile:
 
 class C
 { 
  private:
-		...
+  ...
  public:
-		...
+  ...
 
-		void * operator new(size_t dim)
-					{ return miaAlloc(dim) ; }
+  void * operator new(size_t dim)
+     { return miaAlloc(dim) ; }
 
-		void operator delete(void * p) 	
-					{ miaFree(dim) ; }
+  void operator delete(void * p)  
+     { miaFree(dim) ; }
 } ;
 laddove miaAlloc() e miaFree() sono due funzioni di allocazione e rilascio della memoria definite dall’utente.
 Una chiamata al costruttore di una classe C comporta una chiamata alla funzione opera­tore X::operator new() per l’allocazione della memoria necessaria a contenere la nuova istanza. Quella stessa memoria, in seguito ad una chiamata al distruttore della classe, verrà rilasciata dall’operatore C::operator delete(). In conseguenza di ciò (se new fosse una normale funzione membro, sarebbe impossibile creare la prima istanza della classe ed altri problemi nascerebbero cercando di utilizzare delete per distruggere l’istanza cui appartiene) entrambe queste funzioni, anche se non lo sono state dichiarate esplicitamente, sono membri statici di C e non possono in alcun modo essere implemen­tate come funzioni virtuali.
@@ -555,16 +572,16 @@ La ridefinizione per una classe degli operatori new e delete nasconde gli operat
 void* C::operator new (size_t dim)
 { 
  char* ptr = new char[dim] ;             // new globale
-	...
+ ...
 }
 
 void* C::operator delete (void * ptr)
 { 
-	...
-	delete (void *) ptr ;               // delete globale
+ ...
+ delete (void *) ptr ;               // delete globale
 }
 Per utilizzare gli operatori globali anche con dati appartenenti alla classe si dovrà ricor­rere all’ operatore di risoluzione del campo d’azione.
-3.6	Overload dei cammini di coercizione
+3.6 Overload dei cammini di coercizione
 In C, per trasformare un int in un double si utilizzano gli operatori di cast:
 long int i = 5 ;
 double d = (double) i ;
@@ -584,17 +601,17 @@ Questo metodo però richiede la sovrapposizione di tutti gli operatori per tutti
 class Frazione
 {
  private:
-		int num ;
-		int den ;
+  int num ;
+  int den ;
  public:
-		Frazione(int n, int d = 1) 
-				{ num = n ; den = d ; }              // 001
-		Frazione(double) ;
+  Frazione(int n, int d = 1) 
+    { num = n ; den = d ; }              // 001
+  Frazione(double) ;
 
-		operator int () 
-					{ return num / den ; }         // 002
-		operator double() 
-			{ return (double) num / (double) den ; }   // 003
+  operator int () 
+     { return num / den ; }         // 002
+  operator double() 
+   { return (double) num / (double) den ; }   // 003
 
 friend Frazione operator+ (Frazione f1, Frazione f2); // 004
 friend Frazione operator- (Frazione f1, Frazione f2); // 004
@@ -606,7 +623,7 @@ friend Frazione operator- (Frazione f1, Frazione f2); // 004
 003  Operatori di conversione sovrapposti.
 004  Ridefinizione degli operatori globali di addizione e sottrazione.
 Semplice, no? Basta ridefinire i cammini di coercizione ai/dai tipi primitivi ed una man­ciata di operatori, ed il nostro nuovo tipo Frazione è pronto per essere utilizzato in qualsiasi espressione, delegando al compilatore il compito di trasformare i dati nel tipo appropriato, nel caso di espressioni miste.
-3.7	Template di funzioni
+3.7 Template di funzioni
 La sovrapposizione delle funzioni è una gran bella cosa, ma non sempre è il sistema più efficiente di procedere. Riprendiamo un attimo l’esempio minore.cpp: se avessimo voluto ride­finire la funzione minore() per tutti i tipi di dato, avremmo dovuto scrivere una funzi­one, uguale alle altre, ma con  parametri diversi per ciascun tipo di dato primitivo; un la­voro magari non particolarmente complicato ma decisamente noioso e che avrebbe certamente aumen­tato le dimensioni del codice. 
 Per evitare ciò avremo potuto tentare la strada delle macroistruzioni del precompilatore:
 #define minore(a,b) ( (a < b ) ? a : b )
@@ -617,11 +634,11 @@ purtroppo, però il precompilatore non fa altro che sostituire una serie di istr
 class Dummy
 {
  private:
-		...
+  ...
  public:
-		...
+  ...
 
-		float minore(float, float);  // qui avviene l'errore
+  float minore(float, float);  // qui avviene l'errore
 } ;
 Nel caso stiate pensando che in fondo, usare le macro  stando attenti che questo tipo di inconvenienti non si verifichi è sempre meglio che dover scrivere una serie di funzioni tutte uguali, ho due notizie per voi: una buona ed una cattiva.
 La notizia cattiva è che l’opzione macro è inaccettabile comunque, perché ha il difetto di privarci di tutti i benefici effetti dell’accurato controllo dei tipi operato dal C++. Il precompilatore, infat­ti, non eseguendo nessun tipo di verifica del tipo dei dati, opera senza segnalare nessun tipo di errore anche con oggetti fra loro incompatibili (come potrebbero essere un dou­ble ed una struttura), il che non è affatto ciò che si definisce un comportamento affida­bile. 
@@ -630,22 +647,22 @@ La notizia buona è che in C++ c’è un sistema per venir fuori elegantemente d
 template <class T> 
 T minore(T a, T b)
 {
-	return ( a < b ) ? a : b ;
+ return ( a < b ) ? a : b ;
 }
 dove <class T> è una sorta di parametro aggiuntivo rappresentante il tipo di dati che verranno forniti alla funzione. Abbiamo così definito uno stampo; sarà compito del compi­latore riempirlo di volta in volta con i dati adatti, e questo sia che si tratti di tipi di dato primitivi che, come vedremo nel prossimo esempio, di dati definiti dall’utente. Prima di far questo, però, dobbiamo aggiornare la classe Punto.
 Per prima cosa vanno sovrapposti gli operatori < e > per poter confrontare fra loro le is­tanze della classe; in secondo luogo, bisogna ridefinire gli operatori di output << e >> per poter  visualizzare i dati relativi ad un oggetto di tipo Punto in maniera coerente con quella utilizzata per gli altri tipi di dato. Attenzione, però, perché quest’ultima operazione va fatta in maniera differente per ciascuno dei due operatori. Infatti se l’output dei dati pri­vati della classe Punto non costituisce un problema, essendo garantito dalla funzioni di interfaccia ValX() e ValY(), la modifica degli stessi dati non è consentita che a funzi­oni appartenenti alla classe e qualunque tentativo di accesso a  X e Y da parte dell’operatore >> causerebbe un errore in fase di compilazione. 
 Ci sono tre modi in cui è possibile risolvere questo problema: 
-·	creare delle funzioni di interfaccia anche per la modifica dei dati membro X e Y;
-·	ridefinire l’operatore >> come membro della classe;
-·	dichiarare l’operatore >> friend della classe Punto.
+· creare delle funzioni di interfaccia anche per la modifica dei dati membro X e Y;
+· ridefinire l’operatore >> come membro della classe;
+· dichiarare l’operatore >> friend della classe Punto.
 Quest’ultima è la soluzione adottata. Una piccola novità: anche in vista di quello che ci aspetta nel prossimo capitolo, il codice relativo la classe Punto è stato diviso in due files distinti, come si conviene. 
 Il file punto.h che trovate immediatamente dopo queste righe, contiene la dichiarazione della classe, mentre punto.cpp contiene la definizione (o ride­finizione) delle funzioni membro. punto.cpp va unito in un file di progetto() al file mintempl.cpp, che definisce il template di funzione minore() e la funzione main() per l’esempio.
 PUNTO.H - Dichiarazione della classe Punto
 /////////////////////////////////////////////////////////////
 //
-//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
+// Dal C a Windows - Carlo Simonelli & Claudio Munisso
 //
-//	PUNTO.H - Dichiarazione della classe Punto
+// PUNTO.H - Dichiarazione della classe Punto
 //
 /////////////////////////////////////////////////////////////
 #include <iostream.h>
@@ -653,42 +670,42 @@ PUNTO.H - Dichiarazione della classe Punto
 class Punto
 {
  private:
-		static int PuntiCreati ;
-		int X, Y ;
+  static int PuntiCreati ;
+  int X, Y ;
  public:
-		Punto(int x = -1, int y = -1) ;
-		~Punto() ;
+  Punto(int x = -1, int y = -1) ;
+  ~Punto() ;
 
-		static int Istanze()	{ return PuntiCreati ; }
-		int ValX()		{ return X ; }
-		int ValY()		{ return Y ; }
+  static int Istanze() { return PuntiCreati ; }
+  int ValX()  { return X ; }
+  int ValY()  { return Y ; }
 
-		Punto & operator += (Punto &);
-		Punto & operator -= (Punto &);
-		Punto & operator *= (double);
-		Punto & operator /= (double);
-		Punto operator + ();
-		Punto operator - ();
+  Punto & operator += (Punto &);
+  Punto & operator -= (Punto &);
+  Punto & operator *= (double);
+  Punto & operator /= (double);
+  Punto operator + ();
+  Punto operator - ();
 
-		friend Punto operator +  (Punto &, Punto &);
-		friend Punto operator -  (Punto &, Punto &);
-		friend Punto operator *  (Punto &, double);
-		friend Punto operator *  (double, Punto &);
-		friend Punto operator /  (Punto &, double);
-		friend int   operator == (Punto &, Punto &);
-		friend int   operator != (Punto &, Punto &);
-		friend int   operator >  (Punto &, Punto &) ;
-		friend int   operator <  (Punto &, Punto &) ;
-		friend istream& operator>> (istream& is, Punto& p);
+  friend Punto operator +  (Punto &, Punto &);
+  friend Punto operator -  (Punto &, Punto &);
+  friend Punto operator *  (Punto &, double);
+  friend Punto operator *  (double, Punto &);
+  friend Punto operator /  (Punto &, double);
+  friend int   operator == (Punto &, Punto &);
+  friend int   operator != (Punto &, Punto &);
+  friend int   operator >  (Punto &, Punto &) ;
+  friend int   operator <  (Punto &, Punto &) ;
+  friend istream& operator>> (istream& is, Punto& p);
 } ;
 
 ostream & operator << (ostream & os, Punto & p) ;
 PUNTO.CPP - Definizione della classe Punto
 /////////////////////////////////////////////////////////////
 //
-//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
+// Dal C a Windows - Carlo Simonelli & Claudio Munisso
 //
-//	PUNTO.CPP - Definizione della classe Punto
+// PUNTO.CPP - Definizione della classe Punto
 //
 /////////////////////////////////////////////////////////////
 #include "punto.h"
@@ -698,12 +715,12 @@ int Punto::PuntiCreati = 0 ;
 Punto::Punto(int x, int y)
 : X(x), Y(y)
 {
-	PuntiCreati ++ ;
+ PuntiCreati ++ ;
 }
 /////////////////////////////////////////////////////////////
 Punto::~Punto()
 {
-	PuntiCreati -- ;
+ PuntiCreati -- ;
 }
 /////////////////////////////////////////////////////////////
 Punto Punto::operator + ()
@@ -781,87 +798,87 @@ int operator != (Punto & left, Punto & right)
 /////////////////////////////////////////////////////////////
 int operator < (Punto & left, Punto & right)
 {
-	return (left.X < right.X && left.Y < right.Y ) ;
+ return (left.X < right.X && left.Y < right.Y ) ;
 }
 /////////////////////////////////////////////////////////////
 int operator > (Punto & left, Punto & right)
 {
-	return (left.X > right.X && left.Y > right.Y ) ;
+ return (left.X > right.X && left.Y > right.Y ) ;
 }
 /////////////////////////////////////////////////////////////
 ostream & operator << ( ostream & os, Punto & p)
 {
-	os << '(' << p.ValX() << ',' << p.ValY() << ')' ;
-	return os ;
+ os << '(' << p.ValX() << ',' << p.ValY() << ')' ;
+ return os ;
 }
 /////////////////////////////////////////////////////////////
 istream & operator >> ( istream & is, Punto & p)
 {
-	is >> p.X >> p.Y ;
-	return is ;
+ is >> p.X >> p.Y ;
+ return is ;
 }
 /////////////////////////////////////////////////////////////
 MINTEMPL.CPP - Esempio di funzione template applicata alla classe Punto
 /////////////////////////////////////////////////////////////
 //
-//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
+// Dal C a Windows - Carlo Simonelli & Claudio Munisso
 //
-//	MINTEMPL.CPP - Esempio di funzione template applicata
-//				  alla classe Punto
+// MINTEMPL.CPP - Esempio di funzione template applicata
+//      alla classe Punto
 //
 /////////////////////////////////////////////////////////////
 #include "punto.h"
 /////////////////////////////////////////////////////////////
 template <class T> T minore(T a, T b)
 {
-	return ( a < b ) ? a : b ;
+ return ( a < b ) ? a : b ;
 }
 /////////////////////////////////////////////////////////////
 void main()
 {
-	int    i1, i2 ;
-	float  f1, f2 ;
-	Punto  p1, p2, p3 ;
+ int    i1, i2 ;
+ float  f1, f2 ;
+ Punto  p1, p2, p3 ;
 
-	cout <<"\nInserire i valori per i due interi i1 e i2 :";
-	cin >> i1 >> i2 ;
+ cout <<"\nInserire i valori per i due interi i1 e i2 :";
+ cin >> i1 >> i2 ;
 
-	cout <<"\nInserire i valori per i due float f1 e f2 :" ;
-	cin >> f1 >> f2 ;
+ cout <<"\nInserire i valori per i due float f1 e f2 :" ;
+ cin >> f1 >> f2 ;
 
-	cout <<"\nInserire i valori per il primo punto :" ;
-	cin >>	p1  ;
-	cout <<"\nInserire i valori per il secondo punto :" ;
-	cin >>	p2  ;
-	cout <<"\nInserire i valori per il terzo punto :" ;
-	cin >>	p3  ;
+ cout <<"\nInserire i valori per il primo punto :" ;
+ cin >> p1  ;
+ cout <<"\nInserire i valori per il secondo punto :" ;
+ cin >> p2  ;
+ cout <<"\nInserire i valori per il terzo punto :" ;
+ cin >> p3  ;
 
-	cout << "i1       :" << i1 << "\n" ;
-	cout << "i2       :" << i2 << "\n" ;
-	cout << "f1       :" << f1 << "\n" ;
-	cout << "f2       :" << f2 << "\n" ;
-	cout << "p1       :" << p1 << "\n" ;
-	cout << "p2       :" << p2 << "\n" ;
-	cout << "p2       :" << p3 << "\n" ;
-	cout << "p1 + p2  :" << (p1 + p2) << "\n" ;
-	cout << "p1 - p2  :" << (p1 - p2) << "\n" ;
-	cout << "p1 / i1  :" << (p1 / i1) << "\n" ;
-	cout << "p1 * i2  :" << (p1 * i2) << "\n" ;
-	cout << "p1 += p2 :" << (p1 += p2) << "\n" ;
-	cout << "p1 -= p2 :" << (p1 -= p2) << "\n" ;
-	cout << "p1 /= i1 :" << (p1 /= i1) << "\n" ;
-	cout << "p1 *= i2 :" << (p1 *= i2) << "\n" ;
-	cout << "+(p1)    :" << +(p1) << "\n" ;
-	cout << "-(p1)    :" << -(p1) << "\n" ;
+ cout << "i1       :" << i1 << "\n" ;
+ cout << "i2       :" << i2 << "\n" ;
+ cout << "f1       :" << f1 << "\n" ;
+ cout << "f2       :" << f2 << "\n" ;
+ cout << "p1       :" << p1 << "\n" ;
+ cout << "p2       :" << p2 << "\n" ;
+ cout << "p2       :" << p3 << "\n" ;
+ cout << "p1 + p2  :" << (p1 + p2) << "\n" ;
+ cout << "p1 - p2  :" << (p1 - p2) << "\n" ;
+ cout << "p1 / i1  :" << (p1 / i1) << "\n" ;
+ cout << "p1 * i2  :" << (p1 * i2) << "\n" ;
+ cout << "p1 += p2 :" << (p1 += p2) << "\n" ;
+ cout << "p1 -= p2 :" << (p1 -= p2) << "\n" ;
+ cout << "p1 /= i1 :" << (p1 /= i1) << "\n" ;
+ cout << "p1 *= i2 :" << (p1 *= i2) << "\n" ;
+ cout << "+(p1)    :" << +(p1) << "\n" ;
+ cout << "-(p1)    :" << -(p1) << "\n" ;
 
-	cout << "minore() versione int   :" 
-					<< minore(i1,i2) << "\n" ;
-	cout << "minore() versione float :" 
-					<< minore(f1,f2) << "\n" ;
-	cout << "minore() versione 1     :" 
-					<< minore(p1,p2) << "\n" ;
-	cout << "minore() versione 2     :" 
-					<< minore(p1,p3) << "\n" ;
+ cout << "minore() versione int   :" 
+     << minore(i1,i2) << "\n" ;
+ cout << "minore() versione float :" 
+     << minore(f1,f2) << "\n" ;
+ cout << "minore() versione 1     :" 
+     << minore(p1,p2) << "\n" ;
+ cout << "minore() versione 2     :" 
+     << minore(p1,p3) << "\n" ;
 }
 /////////////////////////////////////////////////////////////
 Se si desidera che una funzione template non sia eseguita per un determinato tipo di dati, basta definire una funzione non template che accetti quel tipo di dato come parametro. 
@@ -869,9 +886,9 @@ Per dare un’esempio di come questo avvenga, ci serviremo della classe Frazione
 NOTEMPL.CPP - Esclusione di funzione template
 /////////////////////////////////////////////////////////////
 //
-//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
+// Dal C a Windows - Carlo Simonelli & Claudio Munisso
 //
-//	NOTEMPL.CPP - Esclusione di funzione template
+// NOTEMPL.CPP - Esclusione di funzione template
 //
 /////////////////////////////////////////////////////////////
 #include <iostream.h>
@@ -879,52 +896,52 @@ NOTEMPL.CPP - Esclusione di funzione template
 class Frazione
 {
  private:
-		int num ;
-		int den ;
+  int num ;
+  int den ;
  public:
 
-	Frazione(int n, int d = 1) { num = n ; den = d ; }	  	Frazione(double) ;
+ Frazione(int n, int d = 1) { num = n ; den = d ; }    Frazione(double) ;
 
-	operator int () 	{ return num / den ; }			
-	operator double()	{ return double(num)/double(den); }	  
+ operator int ()  { return num / den ; }   
+ operator double() { return double(num)/double(den); }   
 
-	friend ostream& operator << (ostream & os, Frazione f) ; 
-	friend istream& operator >> (istream & is, Frazione f) ; 
+ friend ostream& operator << (ostream & os, Frazione f) ; 
+ friend istream& operator >> (istream & is, Frazione f) ; 
 } ;
 /////////////////////////////////////////////////////////////
 ostream & operator << (ostream & os, Frazione f)
 {
-	os << '(' << f.num << ',' << f.den << ')' ;
-	return os ;
+ os << '(' << f.num << ',' << f.den << ')' ;
+ return os ;
 }
 /////////////////////////////////////////////////////////////
 istream & operator >> (istream & is, Frazione f)
 {
-	is >> f.num >> f.den ;				
-	return is ;
+ is >> f.num >> f.den ;    
+ return is ;
 }
 /////////////////////////////////////////////////////////////
 Frazione minore(Frazione & left, Frazione & right)
 {
- int esito = double(left) > double(right) ;		// 001
+ int esito = double(left) > double(right) ;  // 001
 
-	return(esito?Frazione(left):Frazione(right));	// 002
+ return(esito?Frazione(left):Frazione(right)); // 002
 }
 /////////////////////////////////////////////////////////////
 template<class T> T minore(T a, T b)
 {
-	return (a < b ) ? a : b ;
+ return (a < b ) ? a : b ;
 }
 /////////////////////////////////////////////////////////////
 void main()
 {
- int 	i1 = 12, i2 = 57 ;
+ int  i1 = 12, i2 = 57 ;
  char     c1 = 'A', c2 = 'Z' ;
  Frazione f1(3, 6), f2(3, 5) ;
 
-    cout << minore(i1, i2) << "\n" ;	// 003
-    cout << minore(c1, c2) << "\n" ;	// 004
-    cout << minore(f1, f2) << "\n" ;	// 005
+    cout << minore(i1, i2) << "\n" ; // 003
+    cout << minore(c1, c2) << "\n" ; // 004
+    cout << minore(f1, f2) << "\n" ; // 005
 }
 /////////////////////////////////////////////////////////////
 001  Utilizza l’operatore di conversione per determinare la minore delle due frazioni.
@@ -932,14 +949,14 @@ void main()
 003  Richiama minore template con parametri int.
 004  Richiama minore template con parametri char.
 005  Richiama minore(Frazione &, Frazione &).
-3.8	Template di classi
+3.8 Template di classi
 Ciò che si può fare con le funzioni, è possibile farlo con intere classi. Il codice seguente crea una classe Buffer indipendente dal tipo di dato con cui poi verrà riempita:
 CLASTEMP.CPP - Esempio di template di classe
 /////////////////////////////////////////////////////////////
 //
-//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
+// Dal C a Windows - Carlo Simonelli & Claudio Munisso
 //
-//	CLASTEMP.CPP - Esempio di template di classe
+// CLASTEMP.CPP - Esempio di template di classe
 //
 /////////////////////////////////////////////////////////////
 #include <iostream.h>
@@ -948,42 +965,42 @@ template <class T>
 class Buffer
 {
  private:
-		T * Area ;                                      // 001
-		int Dimensione ;                                // 002
+  T * Area ;                                      // 001
+  int Dimensione ;                                // 002
  public:
-		Buffer(int dim =  0) ;                          // 003
-		~Buffer() ;                                     // 004
+  Buffer(int dim =  0) ;                          // 003
+  ~Buffer() ;                                     // 004
 
-		T& operator[] (int n) { return Area[n] ; }	 // 005
+  T& operator[] (int n) { return Area[n] ; }  // 005
 } ;
 /////////////////////////////////////////////////////////////
 template <class T> Buffer<T>::Buffer(int dim)
 {
-	Area = new T[dim] ;                              // 006
-	Dimensione = dim ;                               // 006
+ Area = new T[dim] ;                              // 006
+ Dimensione = dim ;                               // 006
 }
 /////////////////////////////////////////////////////////////
 template <class T> Buffer<T>::~Buffer()
 {
-	delete [] Area ;                                 // 007
+ delete [] Area ;                                 // 007
 }
 /////////////////////////////////////////////////////////////
 void main()
 {
- Buffer<int> b1(5) ;						// 008
- Buffer<double> b2(5) ;						// 009
+ Buffer<int> b1(5) ;      // 008
+ Buffer<double> b2(5) ;      // 009
 
-	for( int n = 0 ; n < 5 ; ++n )                  // 010 
-	{
-		b1[n] = n ;
-		b2[n] = double(n) / 3 ;
-	}
+ for( int n = 0 ; n < 5 ; ++n )                  // 010 
+ {
+  b1[n] = n ;
+  b2[n] = double(n) / 3 ;
+ }
 
-	for( n = 0 ; n < 5 ; n++)                       // 011
-	{
-		cout <<"\nValore di b1[" << n << "]: " << b1[n] ;
-		cout <<"\nValore di b2[" << n << "]: " << b2[n] ;
-	}
+ for( n = 0 ; n < 5 ; n++)                       // 011
+ {
+  cout <<"\nValore di b1[" << n << "]: " << b1[n] ;
+  cout <<"\nValore di b2[" << n << "]: " << b2[n] ;
+ }
 }
 /////////////////////////////////////////////////////////////
 001  Puntatore al tipo di dati del buffer.

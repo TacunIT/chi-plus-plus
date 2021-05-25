@@ -1,5 +1,5 @@
-## 0.25.0 (May 25, 2021)
-
+## 0.25.1 (May 25, 2021)
+  - Redazione del capitolo sul polimorfismo    
 
 ## 0.25.0 (May 23, 2021)
   - Iniziata redazione del capitolo sul polimorfismo
