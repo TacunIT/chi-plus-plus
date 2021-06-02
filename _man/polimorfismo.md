@@ -7,7 +7,7 @@ permalink:  /man/polimorfismo
 quote:      "Non puoi immergere i tuoi byte due volte nello stesso stream"
 ---
 
-Come avrai certamente intuito, da tutto ciò che abbiamo detto finora, la caratteristica principale del C++ è il polimorfismo.  
+Come avrai certamente intuitos da tutto ciò che abbiamo detto finora, la caratteristica principale del C++ è il polimorfismo.  
 Avevamo iniziato a parlarne durante la <a href="/man/c-plus-plus#polimorfismo" class="xref">lezione inroduttiva sul C++</a> e l'avevamo illustrato con un esempio che, a questo punto, non dovrebbe più avere segreti, per te:
 
 ```
@@ -25,18 +25,18 @@ FEMMINA: Specie:Cavallo Razza:maremmano Sesso:f
 ESITO:   puledro
 
 DATA:    Sun May 23 14:42:51 2021
-MASCHIO: Specie:Asino Razza:amiatino Sesso:m
-FEMMINA: Specie:Asino Razza:sardo     Sesso:f
+MASCHIO: Specie:Asino   Razza:amiatino  Sesso:m
+FEMMINA: Specie:Asino   Razza:sardo     Sesso:f
 ESITO:   asino
 
 DATA:    Sun May 23 14:42:51 2021
-MASCHIO: Specie:Asino Razza:amiatino Sesso:m
+MASCHIO: Specie:Asino   Razza:amiatino  Sesso:m
 FEMMINA: Specie:Cavallo Razza:maremmano Sesso:f
 ESITO:   mulo
 
 DATA:    Sun May 23 14:42:51 2021
 MASCHIO: Specie:Cavallo Razza:lipizzano Sesso:m
-FEMMINA: Specie:Asino Razza:sardo     Sesso:f
+FEMMINA: Specie:Asino   Razza:sardo     Sesso:f
 ESITO:   bardotto
 ```
 
@@ -71,7 +71,7 @@ public:
 };
 ```
 
-In questi casi, il compilatore non fa un controllo di tipo dinamico, basato sul tipo dell'oggetto al momento dell'esecuzione, ma sceglie la funzione da chiamare in base al tipo di puntatore o riferimento utilizzato, cosa che, come abbiamo visto, può creare dei problemi:
+Quando gestisce queste funzioni, il compilatore non fa un controllo di tipo dinamico, basato sul tipo dell'oggetto al momento dell'esecuzione, ma sceglie la funzione da chiamare in base al tipo di puntatore o riferimento utilizzato, cosa che, come sai, può creare dei problemi:
 
 ```
 Madre   * ptrM = new Madre;
@@ -80,7 +80,7 @@ ptrM->getClass() ;
 ptrP->getClass() ;  // chiama la funzione di Persona - ERRORE
 ```
 
-Ora che conosci questa differenza, possiamo correggere i commenti del codice di esempio: 
+Alla luce di tutto ciò, possiamo correggere i commenti del codice di esempio: 
 
 ```
 /** Overload dell'operatore di output su stream  */
@@ -130,8 +130,7 @@ float&  operator +=  (float&  a, float&  b) ;
 double& operator +=  (double& a, double& b) ;
 ```
 
-Gli operatori unari possono essere prefissi o postfissi.
-Per consentire al compilatore di distinguere le funzione corretta da utilizzare, si aggiunge alla funzione dell'operatore postfisso un secondo parametro, non utilizzato:
+Dato che gli operatori unari possono essere prefissi o postfissi, per consentire al compilatore di distinguere le funzione corretta da utilizzare, alla funzione dell'operatore postfisso si aggiunge un secondo parametro, non utilizzato:
 
 ```
 void operator ++ (<tipo> a) ;           // versione prefissa
@@ -139,14 +138,13 @@ void operator ++ (<tipo> a, <tipo>) ;   // versione postfissa
 
 ```
 
-Anche se è più semplice e veloce utilizzare direttamente gli operatori corrispondenti, è comunque possibile richiamare le funzioni operatore in maniera diretta.
-Queste due istruzioni, una volta compilate, producono il medesimo codice e lo stesso risultato.
+Il C++ permette di richiamare le funzioni degli operatori *overloaded* in maniera diretta.
+Le due istruzioni qui sotto, una volta compilate, producono il medesimo codice e lo stesso risultato.
 Se riesci a trovare una ragione qualunque per usare la prima sintassi piuttosto che la seconda, fallo pure:
 
 ```
 a = b.operator + (c) ;  
 a = b + c ;
-
 ```
 
 Il comportamento degli operatori è predefinito per tutti i tipi standard e può essere ridefinito per gestire anche dei tipi di dato aggregati come le strutture o le classi. 
@@ -173,10 +171,10 @@ string& append (const string& str)
 ma utilizzare un operatore standard rende il codice più facile da leggere e da scrivere, se non altro perché non ti devi ricordare come si chiama la funzione per unire due stringhe.  
 Gli unici operatori che non possono essere ridefiniti da una classe sono:
 
-- `.` (operatore di selezione) 
-- `.*` (operatore di risoluzione di indirizzamento dei puntatori a membri della classe);
-- `::` (operatore di risoluzione del campo d’azione);
-- `?:` (operatore condizionale) ;
+- l'operatore di selezione `.`;
+- l'operatore di risoluzione di indirizzamento dei puntatori a membri della classe `.*`;
+- l'operatore di risoluzione del campo d’azione `::`;
+- l'operatore condizionale `? :`;
 - i simboli `# ` e `##`, che vengono utilizzati dal preprocessore.
 
 <hr id="operatori-classi">
@@ -206,36 +204,34 @@ friend ostream& operator << (ostream& os, const Monta& copula) {
 };
 ```
 
+La ridefinizione degli operatori `=`, `()`, `[]` e `->` per una classe deve avvenire sempre per mezzo di una funzione membro; gli altri operatori possono essere ridefiniti o come funzione membro o come funzione globale.
 
+```
+{% include_relative src/polimorfismo-in-out.cpp %}
+```
 
-<hr id="dottrina">
+Le differenze principali fra l’una e l’altra soluzione sono che una funzione operatore membro ha (generalmente) un argomento in meno della corrispondente funzione globale (il riferimento all’operando di sinistra viene assicurato dall’argomento this che, come sappiamo, viene sempre passato come parametro nelle funzioni), mentre una funzione operatore globale ridefinita non varia la sua sintassi, ma non ha accesso ai dati privati della classe. 
 
-Fra il C'hi++ e le religioni canoniche c'è la stessa differenza che passa fra una mappa topografica e un'immagine da satellite.  
-Quel senza Dio di Dawkins, ha detto che: 
+Questo ci pone di nuovo di fronte ad un bivio: o dichiariamo la funzione come friend oppure facciamo in modo che agisca su funzioni di interfaccia. 
 
-> {{ site.data.citazioni.dawkins.analogia }}
+La prima soluzione è la più efficiente, la seconda sarà probabilmente più lenta in esecuzione ma non necessiterà di riscritture in caso di modifiche alla struttura della classe.
+Scendendo più in dettaglio (e posto che C sia il nome di una classe e Op un qualsiasi op­eratore), se avessimo a che fare con un operatore unario, le alternative saranno quindi o una funzione membro che non richieda parametri:
 
-Una frase curiosa, da parte di un esponente di una setta che cerca di descrivere tutto ciò che esiste con analogie matematiche e nega l'esistenza di ciò che non riesce a convertire..  
-Entusiasmi a parte, le mappe e le immagini da satellite hanno diverse analogie con le discipline metafisiche.
-Anche le mappe e le immagini, come la metafisica, sono costrette a rappresentare il loro soggetto a un rapporto di scala ridotto e con due sole dimensioni in vece di tre (o di quattro se, oltre alla profondità, vuoi considerare anche il tempo).
-Anche le mappe e le immagini, per questo motivo, devono rappresentare il loro soggetto per mezzo di analogie: le carte topografiche usano delle linee altimetriche e dei simboli; le immagini satellitari usano dei pixel o dei piccoli punti di colore.
-In nessuno dei due casi ciò che noi vediamo è davvero ciò che rappresenta; è il nostro cervello che decide di crederlo tale: nel caso della carta topografica, perché la legenda ci permette di definire una correlazione fra significato e significante; nel caso dell'immagine, perché il nostro occhio riconosce in quelle combinazioni di pixel o di punti di colore degli alberi, mare o case.  
-Un'altra analogia, conseguenza dei due punti precedenti, è che è sbagliato confondere i simboli con ciò che rappresentano: i quadratini scuri delle mappe *non* sono case; i punti colorati delle immagini *non* sono un bosco.
-Mappe e immagini hanno senso solo a un certo livello di lettura; se lo oltrepassiamo, se cerchiamo di ottenere più informazioni o verosimiglianza avvicinando lo sguardo, otteniamo l'effetto opposto, perché i simboli si rivelano per quello che sono: punti colorati o linee su un foglio. 
-Questo però non vuol dire che ciò che rappresentano sia falso, ma che noi non stiamo guardando con *il giusto paio di occhi*, come direbbe Hunter Thompson.  
-Il Maestro Canaro pensava che fosse per questo motivo che alcune religioni sono contrarie alla rappresentazione diretta della Divinità: perché è facile che poi si confonda il simbolo con ciò che rappresenta. 
-<!-- 
-Agli Ebrei è vietato dal secondo Comandamento e anche i Cristiani si attennero a questa regola fino al Concilio di Nicea del 787.
-@todo: verificare regole simili per l'Islam. 
---> 
-Tornando al paragone iniziale, le religioni tradizionali sono delle immagini da satellite, mentre il C'hi++ è una mappa topografica.  
-Mentre i Credi religiosi riescono a riprodurre &mdash; nei limiti imposti dalla nostra condizione &mdash; tutta la bellezza del Creato, il C'hi++ si limita a darne una descrizione schematica, più povera di contenuti e di poesia, ma più facile da accettare per chi non abbia la benedizione della Fede.
-Un'immagine da satellite ha un valore contemplativo: è bella da guardare sullo schermo del tuo computer o anche da appendere al muro, come un quadro, ma 
-se ti sei perso in un bosco o in mezzo ai monti, una mappa topografica, proprio in virtù della sua schematicità, ti permetterà più facilmente di ritrovare la strada di casa.  
-Il C'hi++ non cerca di rubare fedeli alle religioni canoniche.
-Non avrebbe senso: sarebbe come cercare di convincere chi sia già sposato con l'amore della sua vita a fare un matrimonio di interesse: se tu hai la Fede non hai bisogno di conferme razionali; possono compiacerti, ma non ti sono necessarie. 
-Il C'hi++, però, può dare forza a quelle (tante) persone che *ancora credono in tutto ciò in cui più nessuno crede*, come li descrisse Longanesi; quella *Banda degli Onesti*<a href="/man/note#banda-onesti" class="nota"></a> che tutti i giorni fa il proprio dovere al meglio possibile anche se non gli conviene, anche tutto e tutti intorno a loro sembrano spingerli all'egoismo e all'indifferenza.
+C::operator Op () ; 
 
+o una funzione globale che accetti un argomento del tipo della classe, ovvero :
+
+operator Op (C)  ; 
+
+È possibile invece ridefinire un operatore binario o definendo una funzione membro che accetti un argomento 
+
+C::operator Op (C) ;
+
+oppure ridefinendo una funzione globale che accetti due argomenti :
+
+operator Op (C left, C right) ;
+
+Vediamo ora come tutte queste regole si possano applicare alla classe Punto:
 
 
 
@@ -244,20 +240,6 @@ Il C'hi++, però, può dare forza a quelle (tante) persone che *ancora credono i
 
 3.4 sovrapposizione degli operatori per una classe
 
-La sovrapposizione di un operatore per una determinata classe può essere compiuta in due maniere differenti:
-· ridefinendo il comportamento di un operatore globale per quella parti­colare classe.
-· definendo una funzione membro non statica per la classe;
-
-Le differenze principali fra l’una e l’altra soluzione sono che una funzione operatore membro ha (generalmente) un argomento in meno della corrispondente funzione globale (il riferimento all’operando di sinistra viene assicurato dall’argomento this che, come sappiamo, viene sempre passato come parametro nelle funzioni), mentre una funzione operatore globale ridefinita non varia la sua sintassi, ma non ha accesso ai dati privati della classe. Questo ci pone di nuovo di fronte ad un bivio: o dichiariamo la funzione come friend oppure facciamo in modo che agisca su funzioni di interfaccia. La prima soluzione è la più efficiente, la seconda sarà probabilmente più lenta in esecuzione ma non necessiterà di riscritture in caso di modifiche alla struttura della classe.
-Scendendo più in dettaglio (e posto che C sia il nome di una classe e Op un qualsiasi op­eratore), se avessimo a che fare con un operatore unario, le alternative saranno quindi o una funzione membro che non richieda parametri:
-C::operator Op () ; 
-o una funzione globale che accetti un argomento del tipo della classe, ovvero :
-operator Op (C)  ; 
-È possibile invece ridefinire un operatore binario o definendo una funzione membro che accetti un argomento 
-C::operator Op (C) ;
-oppure ridefinendo una funzione globale che accetti due argomenti :
-operator Op (C left, C right) ;
-Vediamo ora come tutte queste regole si possano applicare alla classe Punto:
 
 #include "iostream.h"
 class Punto
@@ -323,6 +305,7 @@ c.operator()(p) ;
 
 (C.operator -> ())->m ;
  e ritorna o un oggetto o un puntatore ad un oggetto di classe C.
+ 
 3.5 Overload degli operatori new e delete
 Ridefinire degli operatori come new e delete, il cui comportamento è strettamente le­gato all’hardware, non sempre è la cosa migliore da fare dal punto di vista della port­abilità del codice, comunque, se si desidera che una classe abbia un modo particolare di gestire la memoria libera dello heap, lo si può fare, ricordandosi però di rispettare alcune regole di base:
 · l’operatore new deve avere il primo argomento di tipo size_t e resti­tuire un puntatore a void;
@@ -793,7 +776,38 @@ void main()
 011  ... e li visualizza.
 Come già visto per le  funzioni, anche in questo caso basta una definizione esplicita della classe per un tipo di dato per evitare gli effetti della classe template.
 class Buffer<float> { ... } ;
+-->
 
+<hr id="dottrina">
+
+Fra il C'hi++ e le religioni canoniche c'è la stessa differenza che passa fra una mappa topografica e un'immagine da satellite.  
+Quel senza Dio di Dawkins, ha detto che: 
+
+> {{ site.data.citazioni.dawkins.analogia }}
+
+Una frase curiosa, da parte di un esponente di una setta che cerca di descrivere tutto ciò che esiste con analogie matematiche e nega l'esistenza di ciò che non riesce a convertire..  
+Entusiasmi a parte, le mappe e le immagini da satellite hanno diverse analogie con le discipline metafisiche.
+Anche le mappe e le immagini, come la metafisica, sono costrette a rappresentare il loro soggetto a un rapporto di scala ridotto e con due sole dimensioni in vece di tre (o di quattro se, oltre alla profondità, vuoi considerare anche il tempo).
+Anche le mappe e le immagini, per questo motivo, devono rappresentare il loro soggetto per mezzo di analogie: le carte topografiche usano delle linee altimetriche e dei simboli; le immagini satellitari usano dei pixel o dei piccoli punti di colore.
+In nessuno dei due casi ciò che noi vediamo è davvero ciò che rappresenta; è il nostro cervello che decide di crederlo tale: nel caso della carta topografica, perché la legenda ci permette di definire una correlazione fra significato e significante; nel caso dell'immagine, perché il nostro occhio riconosce in quelle combinazioni di pixel o di punti di colore degli alberi, mare o case.  
+Un'altra analogia, conseguenza dei due punti precedenti, è che è sbagliato confondere i simboli con ciò che rappresentano: i quadratini scuri delle mappe *non* sono case; i punti colorati delle immagini *non* sono un bosco.
+Mappe e immagini hanno senso solo a un certo livello di lettura; se lo oltrepassiamo, se cerchiamo di ottenere più informazioni o verosimiglianza avvicinando lo sguardo, otteniamo l'effetto opposto, perché i simboli si rivelano per quello che sono: punti colorati o linee su un foglio. 
+Questo però non vuol dire che ciò che rappresentano sia falso, ma che noi non stiamo guardando con *il giusto paio di occhi*, come direbbe Hunter Thompson.  
+Il Maestro Canaro pensava che fosse per questo motivo che alcune religioni sono contrarie alla rappresentazione diretta della Divinità: perché è facile che poi si confonda il simbolo con ciò che rappresenta. 
+<!-- 
+Agli Ebrei è vietato dal secondo Comandamento e anche i Cristiani si attennero a questa regola fino al Concilio di Nicea del 787.
+@todo: verificare regole simili per l'Islam. 
+--> 
+Tornando al paragone iniziale, le religioni tradizionali sono delle immagini da satellite, mentre il C'hi++ è una mappa topografica.  
+Mentre i Credi religiosi riescono a riprodurre &mdash; nei limiti imposti dalla nostra condizione &mdash; tutta la bellezza del Creato, il C'hi++ si limita a darne una descrizione schematica, più povera di contenuti e di poesia, ma più facile da accettare per chi non abbia la benedizione della Fede.
+Un'immagine da satellite ha un valore contemplativo: è bella da guardare sullo schermo del tuo computer o anche da appendere al muro, come un quadro, ma 
+se ti sei perso in un bosco o in mezzo ai monti, una mappa topografica, proprio in virtù della sua schematicità, ti permetterà più facilmente di ritrovare la strada di casa.  
+Il C'hi++ non cerca di rubare fedeli alle religioni canoniche.
+Non avrebbe senso: sarebbe come cercare di convincere chi sia già sposato con l'amore della sua vita a fare un matrimonio di interesse: se tu hai la Fede non hai bisogno di conferme razionali; possono compiacerti, ma non ti sono necessarie. 
+Il C'hi++, però, può dare forza a quelle (tante) persone che *ancora credono in tutto ciò in cui più nessuno crede*, come li descrisse Longanesi; quella *Banda degli Onesti*<a href="/man/note#banda-onesti" class="nota"></a> che tutti i giorni fa il proprio dovere al meglio possibile anche se non gli conviene, anche tutto e tutti intorno a loro sembrano spingerli all'egoismo e all'indifferenza.
+
+
+<!--
 
 Può aiutarli a non arrendersi e può insegnare loro che non è importante vincere le partite, ma giocare sempre meglio.
 Riconoscere gli sbagli che si sono fatti, imparare da essi e cercare di non ripeterli più, partita dopo partita, in una ricerca continua del meglio.
