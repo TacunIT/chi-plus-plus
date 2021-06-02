@@ -1,3 +1,7 @@
+## 0.25.2 (June 02, 2021)
+  - Codice di esempio per overload operatori
+  - Redazione testo capitolo polimorfismo
+
 ## 0.25.1 (May 25, 2021)
   - Redazione del capitolo sul polimorfismo    
 
