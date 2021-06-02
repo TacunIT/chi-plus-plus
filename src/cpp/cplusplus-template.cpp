@@ -142,7 +142,8 @@ int main()
     monte.push_back(Monta (cavallo, asina));
 
     /** Mostra il contenuto della lista */
-    for (list<Monta>::iterator it=monte.begin(); it!=monte.end(); it++) {
+    list<Monta>::iterator it;
+    for (it=monte.begin(); it!=monte.end(); it++) {
         cout << *it << endl;
     }
 
