@@ -149,7 +149,6 @@ a = b + c ;
 
 ```
 
- 
 Il comportamento degli operatori è predefinito per tutti i tipi standard e può essere ridefinito per gestire anche dei tipi di dato aggregati come le strutture o le classi. 
 La classe `string`, della libreria standard del C++, per esempio, ridefinisce, fra le altre cose, il comportamento degli operatori di assegnazione `+=` e `+` e dell'operatore di output su stream `<<` in modo che si possano compiere delle operazioni sulle stringhe con la stessa sintassi che si utilizza per altri tipi di dato:
 
@@ -171,7 +170,7 @@ Lo stesso risultato si può ottenere anche con la funzione `append`:
 string& append (const string& str)
 ```
 
-ma utilizzare un operatore standard rende il codice più facile da leggere e da scrivere, se non altro perché non ti devi ricordare come si chiama la funziona per unire due stringhe.  
+ma utilizzare un operatore standard rende il codice più facile da leggere e da scrivere, se non altro perché non ti devi ricordare come si chiama la funzione per unire due stringhe.  
 Gli unici operatori che non possono essere ridefiniti da una classe sono:
 
 - `.` (operatore di selezione) 
