@@ -21,7 +21,7 @@ struct B
     /** Overload come funzione membro */
     int operator + (const A& a) {
         return _b + a._a;
-    };
+    }
 };
 
 /** Overload come funzione globale */
@@ -31,7 +31,7 @@ int main ()
 {
     struct A a(3);
     struct B b(5);
-                
+    
     cout << (a + (b + a)) << endl;
 
     return 0;

@@ -179,6 +179,12 @@ Gli unici operatori che non possono essere ridefiniti da una classe sono:
 
 <hr id="operatori-classi">
 
+Tranne alcune eccezioni che vedremo fra poco, tutti gli operatori del C++ possono essere ridefiniti o come funzione membro di una classe o come funzione globale:
+
+```
+{% include_relative src/polimorfismo-in-out.cpp %}
+```
+
 Quando si ridefinisce il comportamento di un operatore per una classe, bisogna tenere conto della visibilità dei dati membro che deve utilizzare.
 Se l'operatore, com'è probabile, deve gestire dei dati privati o protetti, le possibilità sono due: o sfruttare le funzioni di interfaccia della classe o  dichiarare l'operatore `friend` della classe.
 Nell'esempio iniziale sono applicate entrambe le possibilità: l'operatore di output su stream per la classe `Animale` utilizza le funzioni di interfaccia della classe:
@@ -204,143 +210,72 @@ friend ostream& operator << (ostream& os, const Monta& copula) {
 };
 ```
 
-La ridefinizione degli operatori `=`, `()`, `[]` e `->` per una classe deve avvenire sempre per mezzo di una funzione membro; gli altri operatori possono essere ridefiniti o come funzione membro o come funzione globale.
+La scelta fra l'una o l'altra possibilità dipende dal tipo di programma che devi scrivere: se punti alla velocità, scegli la seconda, che è più diretta, altrimenti scegli la prima, che sarà probabilmente più lenta in esecuzione, ma non necessiterà di riscritture in caso di modifiche alla struttura della classe.
+In ogni caso, comunque, non è possibile ridefinire la funzione operatore `<<` come funzione membro della classe perché il primo parametro è un riferimento a `ostream` e, nella funzione membro, questo parametro sarebbe sostituito dal parametro implicito `this`, che ha un altro tipo di dato, causando un errore di compilazione.  
+
+<!--
+@todo: verificare
+Se eliminassimo le parentesi nell'istruzione di output finale:
 
 ```
-{% include_relative src/polimorfismo-in-out.cpp %}
+cout << (a + b + a) << endl;
 ```
 
-Le differenze principali fra l’una e l’altra soluzione sono che una funzione operatore membro ha (generalmente) un argomento in meno della corrispondente funzione globale (il riferimento all’operando di sinistra viene assicurato dall’argomento this che, come sappiamo, viene sempre passato come parametro nelle funzioni), mentre una funzione operatore globale ridefinita non varia la sua sintassi, ma non ha accesso ai dati privati della classe. 
+otterremmo un errore di compilazione, perché non esiste un operatore `+` capace di gestire la somma di un `int` (il tipo tornato dalla somma di `a + b`) con un oggetto di classe `A`.
 
-Questo ci pone di nuovo di fronte ad un bivio: o dichiariamo la funzione come friend oppure facciamo in modo che agisca su funzioni di interfaccia. 
+```
+{% include_relative src/polimorfismo-operatore-simmetrico.cpp %}
+```
 
-La prima soluzione è la più efficiente, la seconda sarà probabilmente più lenta in esecuzione ma non necessiterà di riscritture in caso di modifiche alla struttura della classe.
-Scendendo più in dettaglio (e posto che C sia il nome di una classe e Op un qualsiasi op­eratore), se avessimo a che fare con un operatore unario, le alternative saranno quindi o una funzione membro che non richieda parametri:
+-->
 
-C::operator Op () ; 
+Gli operatori `=`, `()`, `[]` e `->` non possono essere ridefiniti come funzioni globali, ma devono sempre essere implementati come funzione membro non statica di una classe
+Le altre regole da ricordare, in questi casi, sono:
 
-o una funzione globale che accetti un argomento del tipo della classe, ovvero :
+- l’operatore unario di assegnamento `=` è l’unico caso di funzione membro che non viene eredi­tata da eventuali classi figlie; se non viene ridefinito, prevede l’assegnamento membro a membro degli attributi e ha la sintassi:
 
-operator Op (C)  ; 
+    ```
+    C& C::operator = (const C& origine) ;
+    ```
 
-È possibile invece ridefinire un operatore binario o definendo una funzione membro che accetti un argomento 
+- l’operatore binario `[]` permette di implementare vettori di tipo particolare, mantenendo una sintassi standard e ha la forma:
+ 
+    ```
+    c.operator [] (n) ;
+    ```
 
-C::operator Op (C) ;
+    dove `c` è un oggetto di classe `C` e l’indice n può essere un qualsiasi tipo di dato ;
 
-oppure ridefinendo una funzione globale che accetti due argomenti :
+- per ridefinire l’operatore binario di chiamata a funzione `()`, va utilizzata la sintassi: 
 
-operator Op (C left, C right) ;
+    ```
+    c.operator()(p) ;
+    ```
 
-Vediamo ora come tutte queste regole si possano applicare alla classe Punto:
+    dove `c` è sempre un oggetto di classe `C` e `p` è un elenco anche vuoto, di parametri;
 
+- l’operatore unario di accesso ai membri della classe `->` viene interpre­tato come:
 
+    ```
+    (C.operator -> ())->m ;
+    ```
+    
+    e ritorna o un oggetto o un puntatore a un oggetto di classe `C`.
+ 
 
+Ridefinire gli operatori `new` e `delete`, il cui comportamento è strettamente le­gato all’hardware, potrebbe non essere una scelta astuta dal punto di vista della port­abilità del codice.
+Detto ciò, se una classe ha bisogno di gestire la memoria in modo particolare, lo si può fare, ricordandosi però di rispettare due regole di base:
+
+- l’operatore `new` deve avere il primo argomento di tipo `size_t` e resti­tuire un puntatore a `void`;
+- l’operatore `delete` deve essere una funzione di tipo `void` che abbia un primo argomento di tipo `void*` e un secondo argomento, facoltativo, di tipo `size_t`.
 
 <!--
 
-3.4 sovrapposizione degli operatori per una classe
 
 
-#include "iostream.h"
-class Punto
-{
- private:
-  int X, Y ;    
-  static int PuntiCreati ; 
- public:
-  Punto(int x, int y) ;   
-  ~Punto() ;
- 
-  static int Istanze() { return PuntiCreati ; } 
-  int ValX() { return X ; } 
-  int ValY() { return Y ; }
-
-  Punto& operator+ (Punto &p) ;                   // 001
-  Punto& operator+=(Punto &p) ;                   // 001
-
- friend Punto& operator-= (Punto &p1, Punto &p2); // 002
-};
-/////////////////////////////////////////////////////////////
-Punto operator - (Punto &p1, Punto &p2)              // 003
-{
- return Punto(p1.ValX()-p2.ValX(),p1.ValY()-p2.ValY()) ;
-}
-/////////////////////////////////////////////////////////////
-Punto Punto::operator + (Punto p)
-{
- return Punto( X + p.X, Y + p.Y ) ;
-}
-/////////////////////////////////////////////////////////////
-Punto Punto::operator += (Punto p)
-{
- X = X + p.X ;
- Y = Y + p.Y ;
-}
-/////////////////////////////////////////////////////////////
-Punto operator -= (Punto &p1, Punto &p2)
-{
- p1.X = p1.X - p2.X ;
- p1.Y = p1.Y - p2.Y ;
-}
-/////////////////////////////////////////////////////////////
-001  Gli operatori + e +=, sono dichiarati come membri della classe Punto, quindi non hanno problemi di accesso ai dati privati.
-002  L’operatore -= è dichiarato friend della classe Punto, e quindi anche lui può accedere ai dati membro privati X e Y in maniera diretta.
-003  L’operatore globale -- accede ai dati privati per mezzo delle funzioni di interfaccia ValX() e ValY().
-Notate bene che la pletora di approcci utilizzata qui come esempio, pur se corretta da un punto di vista sintattico, sarebbe inaccettabile in un programma reale. La sovrapposizione degli operatori va fatta in maniera coerente per ogni classe, scegliendo un metodo ed applicandolo in tutti i casi. Decidere di fare il contrario non è un errore, ovviamente, ma potrebbe complicare la vita a voi e/o alle per­sone che, dopo di voi, potrebbero aver a che fare con il vostro codice. 
-3.4.1 Limitazioni alla sovrapposizione
-Oltre agli operatori non sovrapponibili elencati al paragrafo 3.3, esistono degli operatori di cui non è consentito ridefinire tramite overload la versione globale. Questi sono:  =, () , [], -> e ->* ,che possono essere solo sovrapposti come funzioni membro non static. Altre regole da ricordare in questi casi sono:
-· l’operatore unario di assegnamento = per una qualsiasi classe C, se non ridefinito, prevede l’assegnamento membro a membro degli attributi ed ha la sintassi :
-
-C& C::operator = (const C& origine) ;
- questo è inoltre l’unico caso di funzione membro che non viene eredi­tata da eventuali classi figlie;
-· l’operatore binario []permette di implementare vettori di tipo particolare, ma con la sintassi standard ed ha la forma:
- 
-c.operator [] (n) ;
- dove c è un oggetto di classe C e l’indice n può essere un qualsiasi tipo di dato ;
-· per ridefinire l’operatore binario di chiamata a funzione per la solita classe C, va utilizzata una sintassi del tipo: 
-
-c.operator()(p) ;
- dove c, tanto per cambiare è un oggetto di classe C e p è un elenco anche vuoto, di parametri;
-· l’operatore unario di accesso ai membri della classe -> viene interpre­tato come:
-
-(C.operator -> ())->m ;
- e ritorna o un oggetto o un puntatore ad un oggetto di classe C.
- 
 3.5 Overload degli operatori new e delete
-Ridefinire degli operatori come new e delete, il cui comportamento è strettamente le­gato all’hardware, non sempre è la cosa migliore da fare dal punto di vista della port­abilità del codice, comunque, se si desidera che una classe abbia un modo particolare di gestire la memoria libera dello heap, lo si può fare, ricordandosi però di rispettare alcune regole di base:
-· l’operatore new deve avere il primo argomento di tipo size_t e resti­tuire un puntatore a void;
-· l’operatore delete deve essere una funzione di tipo void che abbia un primo argomento di tipo puntatore a void ed un secondo argomento, facoltativo, di tipo size_t;
-in pratica, qualcosa di simile:
 
-class C
-{ 
- private:
-  ...
- public:
-  ...
 
-  void * operator new(size_t dim)
-     { return miaAlloc(dim) ; }
-
-  void operator delete(void * p)  
-     { miaFree(dim) ; }
-} ;
-laddove miaAlloc() e miaFree() sono due funzioni di allocazione e rilascio della memoria definite dall’utente.
-Una chiamata al costruttore di una classe C comporta una chiamata alla funzione opera­tore X::operator new() per l’allocazione della memoria necessaria a contenere la nuova istanza. Quella stessa memoria, in seguito ad una chiamata al distruttore della classe, verrà rilasciata dall’operatore C::operator delete(). In conseguenza di ciò (se new fosse una normale funzione membro, sarebbe impossibile creare la prima istanza della classe ed altri problemi nascerebbero cercando di utilizzare delete per distruggere l’istanza cui appartiene) entrambe queste funzioni, anche se non lo sono state dichiarate esplicitamente, sono membri statici di C e non possono in alcun modo essere implemen­tate come funzioni virtuali.
-La ridefinizione per una classe degli operatori new e delete nasconde gli operatori globali (ovviamente all’interno del campo d’azione della classe) solo se gli oggetti da creare o distruggere appartengono alla classe o a delle classi da essa derivate, in tutti gli altri casi (tipi di dato primitivi o classi non derivate), l’operatore che interviene è comunque quello globale. 
-
-void* C::operator new (size_t dim)
-{ 
- char* ptr = new char[dim] ;             // new globale
- ...
-}
-
-void* C::operator delete (void * ptr)
-{ 
- ...
- delete (void *) ptr ;               // delete globale
-}
-Per utilizzare gli operatori globali anche con dati appartenenti alla classe si dovrà ricor­rere all’ operatore di risoluzione del campo d’azione.
 3.6 Overload dei cammini di coercizione
 In C, per trasformare un int in un double si utilizzano gli operatori di cast:
 long int i = 5 ;
@@ -383,6 +318,7 @@ friend Frazione operator- (Frazione f1, Frazione f2); // 004
 003  Operatori di conversione sovrapposti.
 004  Ridefinizione degli operatori globali di addizione e sottrazione.
 Semplice, no? Basta ridefinire i cammini di coercizione ai/dai tipi primitivi ed una man­ciata di operatori, ed il nostro nuovo tipo Frazione è pronto per essere utilizzato in qualsiasi espressione, delegando al compilatore il compito di trasformare i dati nel tipo appropriato, nel caso di espressioni miste.
+
 3.7 Template di funzioni
 La sovrapposizione delle funzioni è una gran bella cosa, ma non sempre è il sistema più efficiente di procedere. Riprendiamo un attimo l’esempio minore.cpp: se avessimo voluto ride­finire la funzione minore() per tutti i tipi di dato, avremmo dovuto scrivere una funzi­one, uguale alle altre, ma con  parametri diversi per ciascun tipo di dato primitivo; un la­voro magari non particolarmente complicato ma decisamente noioso e che avrebbe certamente aumen­tato le dimensioni del codice. 
 Per evitare ciò avremo potuto tentare la strada delle macroistruzioni del precompilatore:
