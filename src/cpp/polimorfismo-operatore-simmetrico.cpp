@@ -8,20 +8,12 @@
 
 using namespace std;
 
-/** 
- * La stuct A ridefinisce l'operatore
- * come funzione globale.
- */
 struct A
 {
     int _a;
     A(int a) : _a(a) {}
 };
 
-/** 
- * La stuct B ridefinisce l'operatore
- * come funzione membro.
- */
 struct B
 {
     int _b;
