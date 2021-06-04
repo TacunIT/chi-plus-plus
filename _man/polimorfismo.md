@@ -263,66 +263,72 @@ Le altre regole da ricordare, in questi casi, sono:
     e ritorna o un oggetto o un puntatore a un oggetto di classe `C`.
  
 
-Ridefinire gli operatori `new` e `delete`, il cui comportamento è strettamente le­gato all’hardware, potrebbe non essere una scelta astuta dal punto di vista della port­abilità del codice.
-Detto ciò, se una classe ha bisogno di gestire la memoria in modo particolare, lo si può fare, ricordandosi però di rispettare due regole di base:
+Ridefinire gli operatori `new` e `delete`, il cui comportamento è strettamente le­gato all’hardware, potrebbe non essere una scelta astuta dal punto di vista della port­abilità del codice; detto ciò, se una classe ha bisogno di gestire la memoria in modo particolare, lo può fare, ma deve rispettare due regole:
 
 - l’operatore `new` deve avere il primo argomento di tipo `size_t` e resti­tuire un puntatore a `void`;
 - l’operatore `delete` deve essere una funzione di tipo `void` che abbia un primo argomento di tipo `void*` e un secondo argomento, facoltativo, di tipo `size_t`.
 
-<!--
+<hr id="cast">
 
+<!-- @todo: verificare queste affermazioni per il post-C++11 -->
+In C, per trasformare un `int` in un `double` si utilizzano gli operatori di cast:
 
-
-3.5 Overload degli operatori new e delete
-
-
-3.6 Overload dei cammini di coercizione
-In C, per trasformare un int in un double si utilizzano gli operatori di cast:
+```
 long int i = 5 ;
 double d = (double) i ;
-C++ accetta questa sintassi così come accetta che si usi malloc al posto di new, ma la sua sintassi standard (che ricorda vagamente i costruttori delle classi) prevede che il dato da convertire venga passato come parametro ad una funzione con lo stesso nome del tipo in cui si vuole che avvenga la conversione :
+```
+
+Il C++ accetta questa sintassi, così come accetta che si usi `malloc` al posto di `new`, ma la sua sintassi standard, che ricorda vagamente i costruttori delle classi, prevede che il dato da convertire sia passato come parametro a una funzione con lo stesso nome del tipo in cui si vuole che avvenga la conversione :
+
+```
 long int i = 5 ;
 double d = double(i) ;
-Com’è facilmente intuibile, il compilatore C++ ha la possibilità di convertire un qualunque tipo di dato primitivo in un altro, ma non ha la più pallida idea di come comportarsi in presenza di tipi di dato definiti dall’utente: come era avvenuto già per i costruttori e gli operatori, è nostro compito istruirlo, definendo grazie alla sovrapposizione, nuovi cam­mini di coercizione dal nuovo tipo di dato a quelli primitivi e viceversa.
-Quest’ultima parte del lavoro, la trasformazione dal tipo primitivo a quello definito dall’utente, è la più semplice: di fatto si tratta di definire, laddove non ci sia già, un cos­truttore per la nuova classe che richieda dei parametri di tipo primitivo. Quando invece non esiste un costruttore da estendere, ovvero quando la coercizione è dal tipo definito dall’utente ad un tipo di dato primitivo o fornito in una libreria di cui non si possiede il codice sorgente, si procede sovrapponendo l’operatore di conversione del tipo.
-Immaginate di aver implementato un nuovo tipo di dato chiamato Frazione, per la gestione dei numeri razionali. Per utilizzarlo in espressioni contenenti dati di tipo primi­tivo possiamo estendere ciascun operatore per fargli accettare dei dati di tipo misto:
+```
+
+Il compilatore del C++ ha la possibilità di convertire un qualunque tipo di dato primitivo in un altro, ma non può sapere come comportarsi con i tipi di dato definiti dall’utente. 
+Dobbiamo quindi istruirlo, così come abbiamo fatto con i costruttori e gli operatori, definendo dei cam­mini di coercizione dai tipi di dato primitivi e viceversa.
+Il primo caso, ovvero la trasformazione dal tipo primitivo a quello definito dall’utente, è la più semplice: di fatto si tratta di definire, laddove non ci sia già, un cos­truttore per la nuova classe che richieda dei parametri di tipo primitivo. 
+Quando invece non esiste un costruttore da estendere, ovvero quando la coercizione è dal tipo definito dall’utente ad un tipo di dato primitivo o fornito in una libreria di cui non si possiede il codice sorgente, è necessario ridefinire l’operatore di conversione `()`.  
+Immagina di aver creato un nuovo tipo di dato `Frazione` per la gestione dei numeri razionali. 
+Per poterlo utilizzare in espressioni contenenti dati di tipo primi­tivo dobbiamo ridefinire ciascun operatore per fargli accettare dei dati di tipo misto, sia come primo che come secondo parametro:
+
+```
 Frazione operator + (int i, Frazione f) :
 Frazione operator - (int i, Frazione f) :
 Frazione operator + (double i, Frazione f) :
 Frazione operator - (double i, Frazione f) :
 ...
-Questo metodo però richiede la sovrapposizione di tutti gli operatori per tutti i tipi di dato, una cospicua mole di lavoro che ci possiamo risparmiare ridefinendo solo il com­portamento degli operatori per la nuova classe e fornendo al compilatore dei cammini di conversione dai tipi primitivi al tipo Frazione, da applicare in caso di espressioni miste:
+Frazione operator + (Frazione f, int i) :
+Frazione operator - (Frazione f, int i) :
+Frazione operator + (Frazione f, double i) :
+Frazione operator - (Frazione f, double i) :
 
-class Frazione
-{
- private:
-  int num ;
-  int den ;
- public:
-  Frazione(int n, int d = 1) 
-    { num = n ; den = d ; }              // 001
-  Frazione(double) ;
+```
 
-  operator int () 
-     { return num / den ; }         // 002
-  operator double() 
-   { return (double) num / (double) den ; }   // 003
+Possiamo risparmiarci questa seccatura ridefinendo solo il com­portamento degli operatori per la nuova classe e fornendo al compilatore dei cammini di conversione dai tipi primitivi al nuovo tipo di dato, in modo che possa trasformare i dati nel tipo appropriato, nel caso di espressioni miste:
 
-friend Frazione operator+ (Frazione f1, Frazione f2); // 004
-friend Frazione operator- (Frazione f1, Frazione f2); // 004
+```
+{% include_relative src/polimorfismo-cast.cpp %}
+```
+<hr id="template">
 
-} ;
-/////////////////////////////////////////////////////////////
-001 Costruttore inline (vi ricordate questa sintassi?).
-002  Costruttore che funziona anche da operatore di conversione.
-003  Operatori di conversione sovrapposti.
-004  Ridefinizione degli operatori globali di addizione e sottrazione.
-Semplice, no? Basta ridefinire i cammini di coercizione ai/dai tipi primitivi ed una man­ciata di operatori, ed il nostro nuovo tipo Frazione è pronto per essere utilizzato in qualsiasi espressione, delegando al compilatore il compito di trasformare i dati nel tipo appropriato, nel caso di espressioni miste.
+L'ultima cosa di cui ti devo parlare, a proposito del polimorfismo, sono i *template*.  
+Nella prima <a href="/man/c-plus-plus#template" class="xref">lezione sul C++</a>, avevamo visto un primo esempio di classe template:
+
+```
+list<Monta> monte;
+```
+
+
+<!--
+
 
 3.7 Template di funzioni
 La sovrapposizione delle funzioni è una gran bella cosa, ma non sempre è il sistema più efficiente di procedere. Riprendiamo un attimo l’esempio minore.cpp: se avessimo voluto ride­finire la funzione minore() per tutti i tipi di dato, avremmo dovuto scrivere una funzi­one, uguale alle altre, ma con  parametri diversi per ciascun tipo di dato primitivo; un la­voro magari non particolarmente complicato ma decisamente noioso e che avrebbe certamente aumen­tato le dimensioni del codice. 
 Per evitare ciò avremo potuto tentare la strada delle macroistruzioni del precompilatore:
+
 #define minore(a,b) ( (a < b ) ? a : b )
+
 purtroppo, però il precompilatore non fa altro che sostituire una serie di istruzio­ni con un’altra, senza curarsi minimamente del contesto in cui queste si trovano. In certi casi la sua superficialità non causa nessuna differenza, in altri può causare dei problemi mica da ridere:
 
 # define minore(a,b) ( (a < b ) ? a : b )
@@ -336,6 +342,7 @@ class Dummy
 
   float minore(float, float);  // qui avviene l'errore
 } ;
+
 Nel caso stiate pensando che in fondo, usare le macro  stando attenti che questo tipo di inconvenienti non si verifichi è sempre meglio che dover scrivere una serie di funzioni tutte uguali, ho due notizie per voi: una buona ed una cattiva.
 La notizia cattiva è che l’opzione macro è inaccettabile comunque, perché ha il difetto di privarci di tutti i benefici effetti dell’accurato controllo dei tipi operato dal C++. Il precompilatore, infat­ti, non eseguendo nessun tipo di verifica del tipo dei dati, opera senza segnalare nessun tipo di errore anche con oggetti fra loro incompatibili (come potrebbero essere un dou­ble ed una struttura), il che non è affatto ciò che si definisce un comportamento affida­bile. 
 La notizia buona è che in C++ c’è un sistema per venir fuori elegantemente da questo genere di situazioni: i template di funzioni. Un template di funzione è un po' come un modello in carta per sarti: restituisce la stessa forma indipendentemente dal tipo di stoffa che si utilizza:
@@ -353,6 +360,7 @@ Ci sono tre modi in cui è possibile risolvere questo problema:
 · dichiarare l’operatore >> friend della classe Punto.
 Quest’ultima è la soluzione adottata. Una piccola novità: anche in vista di quello che ci aspetta nel prossimo capitolo, il codice relativo la classe Punto è stato diviso in due files distinti, come si conviene. 
 Il file punto.h che trovate immediatamente dopo queste righe, contiene la dichiarazione della classe, mentre punto.cpp contiene la definizione (o ride­finizione) delle funzioni membro. punto.cpp va unito in un file di progetto() al file mintempl.cpp, che definisce il template di funzione minore() e la funzione main() per l’esempio.
+
 PUNTO.H - Dichiarazione della classe Punto
 /////////////////////////////////////////////////////////////
 //
