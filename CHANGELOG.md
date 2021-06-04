@@ -1,3 +1,7 @@
+## 0.25.3 (June 04, 2021)
+  - Iniziato paragrafo su classi e funzioni template
+  - Redazione del capitolo sul polimorfismo
+
 ## 0.25.2 (June 02, 2021)
   - Codice di esempio per overload operatori
   - Redazione testo capitolo polimorfismo
