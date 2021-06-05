@@ -7,8 +7,8 @@ permalink:  /man/polimorfismo
 quote:      "Non puoi immergere i tuoi byte due volte nello stesso stream"
 ---
 
-Come avrai certamente intuitos da tutto ciò che abbiamo detto finora, la caratteristica principale del C++ è il polimorfismo.  
-Avevamo iniziato a parlarne durante la <a href="/man/c-plus-plus#polimorfismo" class="xref">lezione inroduttiva sul C++</a> e l'avevamo illustrato con un esempio che, a questo punto, non dovrebbe più avere segreti, per te:
+Come avrai certamente intuito da tutto ciò che abbiamo detto finora, la caratteristica principale del C++ è il polimorfismo.  
+Avevamo iniziato a parlarne durante la <a href="/man/c-plus-plus#polimorfismo" class="xref">lezione introduttiva sul C++</a> e l'avevamo illustrato con un esempio che, a questo punto, non dovrebbe più avere segreti, per te:
 
 ```
 {% include_relative src/cplusplus-template.cpp %}
@@ -138,7 +138,7 @@ void operator ++ (<tipo> a, <tipo>) ;   // versione postfissa
 
 ```
 
-Il C++ permette di richiamare le funzioni degli operatori *overloaded* in maniera diretta.
+Le funzioni degli operatori *overloaded* possono essere richiamate in maniera diretta.
 Le due istruzioni qui sotto, una volta compilate, producono il medesimo codice e lo stesso risultato.
 Se riesci a trovare una ragione qualunque per usare la prima sintassi piuttosto che la seconda, fallo pure:
 
@@ -211,24 +211,7 @@ friend ostream& operator << (ostream& os, const Monta& copula) {
 ```
 
 La scelta fra l'una o l'altra possibilità dipende dal tipo di programma che devi scrivere: se punti alla velocità, scegli la seconda, che è più diretta, altrimenti scegli la prima, che sarà probabilmente più lenta in esecuzione, ma non necessiterà di riscritture in caso di modifiche alla struttura della classe.
-In ogni caso, comunque, non è possibile ridefinire la funzione operatore `<<` come funzione membro della classe perché il primo parametro è un riferimento a `ostream` e, nella funzione membro, questo parametro sarebbe sostituito dal parametro implicito `this`, che ha un altro tipo di dato, causando un errore di compilazione.  
-
-<!--
-@todo: verificare
-Se eliminassimo le parentesi nell'istruzione di output finale:
-
-```
-cout << (a + b + a) << endl;
-```
-
-otterremmo un errore di compilazione, perché non esiste un operatore `+` capace di gestire la somma di un `int` (il tipo tornato dalla somma di `a + b`) con un oggetto di classe `A`.
-
-```
-{% include_relative src/polimorfismo-operatore-simmetrico.cpp %}
-```
-
--->
-
+Non è possibile, però, ridefinire come funzione membro di una classe una funzione operatore che abbia come primo parametro una classe di cui non si ha il controllo (come, per esempio, la funzione operatore `<<`  che ha come primo parametro un riferimento a `ostream`) perché nella funzione membro questo parametro sarebbe sostituito dal parametro implicito `this`, che ha un altro tipo di dato, causando un errore di compilazione.  
 Gli operatori `=`, `()`, `[]` e `->` non possono essere ridefiniti come funzioni globali, ma devono sempre essere implementati come funzione membro non statica di una classe
 Le altre regole da ricordare, in questi casi, sono:
 
@@ -285,12 +268,11 @@ long int i = 5 ;
 double d = double(i) ;
 ```
 
-Il compilatore del C++ ha la possibilità di convertire un qualunque tipo di dato primitivo in un altro, ma non può sapere come comportarsi con i tipi di dato definiti dall’utente. 
-Dobbiamo quindi istruirlo, così come abbiamo fatto con i costruttori e gli operatori, definendo dei cam­mini di coercizione dai tipi di dato primitivi e viceversa.
-Il primo caso, ovvero la trasformazione dal tipo primitivo a quello definito dall’utente, è la più semplice: di fatto si tratta di definire, laddove non ci sia già, un cos­truttore per la nuova classe che richieda dei parametri di tipo primitivo. 
-Quando invece non esiste un costruttore da estendere, ovvero quando la coercizione è dal tipo definito dall’utente ad un tipo di dato primitivo o fornito in una libreria di cui non si possiede il codice sorgente, è necessario ridefinire l’operatore di conversione `()`.  
+Il compilatore del C++ ha la possibilità di convertire un qualunque tipo di dato primitivo in un altro, ma non può sapere come comportarsi con i tipi di dato definiti dall’utente; dobbiamo quindi istruirlo, così come abbiamo fatto con i costruttori e gli operatori, definendo dei cam­mini di coercizione dai tipi di dato primitivi e viceversa.
+Il primo caso, ovvero la trasformazione dal tipo primitivo a quello definito dall’utente, è il più semplice: di fatto si tratta di definire, laddove non ci sia già, un cos­truttore per la nuova classe che richieda dei parametri di tipo primitivo. 
+Quando invece non esiste un costruttore da estendere, ovvero quando la coercizione è dal tipo definito dall’utente a un tipo di dato primitivo o fornito in una libreria di cui non si possiede il codice sorgente, è necessario ridefinire l’operatore di conversione `()`.  
 Immagina di aver creato un nuovo tipo di dato `Frazione` per la gestione dei numeri razionali. 
-Per poterlo utilizzare in espressioni contenenti dati di tipo primi­tivo dobbiamo ridefinire ciascun operatore per fargli accettare dei dati di tipo misto, sia come primo che come secondo parametro:
+Per poterlo utilizzare in espressioni contenenti dati di tipo primi­tivo dovresti ridefinire ciascun operatore per fargli accettare dei dati di tipo misto, sia come primo che come secondo parametro:
 
 ```
 Frazione operator + (int i, Frazione f) :
@@ -305,7 +287,7 @@ Frazione operator - (Frazione f, double i) :
 
 ```
 
-Possiamo risparmiarci questa seccatura ridefinendo solo il com­portamento degli operatori per la nuova classe e fornendo al compilatore dei cammini di conversione dai tipi primitivi al nuovo tipo di dato, in modo che possa trasformare i dati nel tipo appropriato, nel caso di espressioni miste:
+Puoi risparmiarti questa seccatura ridefinendo solo il com­portamento degli operatori per la nuova classe e fornendo al compilatore dei cammini di conversione dai tipi primitivi al nuovo tipo di dato, in modo che possa trasformare i dati nel tipo appropriato, nel caso di espressioni miste:
 
 ```
 {% include_relative src/polimorfismo-cast.cpp %}
@@ -313,413 +295,32 @@ Possiamo risparmiarci questa seccatura ridefinendo solo il com­portamento degli
 <hr id="template">
 
 L'ultima cosa di cui ti devo parlare, a proposito del polimorfismo, sono i *template*.  
-Nella prima <a href="/man/c-plus-plus#template" class="xref">lezione sul C++</a>, avevamo visto un primo esempio di classe template:
+Nel codice che ti ho mostrato all'inizio di questa lezione, puoi vedere un esempio di classe template:
 
 ```
 list<Monta> monte;
+```
+
+La classe `list` è una delle classi template della *Standard Template Library* del C++.
+La STL è una libreria di classi e di funzioni che permettono di risolvere dei problemi comuni della programmazione, come la memorizzazione, l'ordinamento o la ricerca di una serie di dati.
+Le componenti della STL sono: 
+
+- una collezione di **algoritmi** che permettono di eseguire delle operazioni di ordinamento e ricerca su insiemi di dati;
+- una libreria di **container** che permettono di immagazzinare oggetti e dati; 
+- degli **iteratori** che consentono di scorrere il contenuto dei container;
+- degli oggetti-funzioni, o: **functors**, che incapsulano una specifica funzione.
+
+La *generic programming* permessa dai template ci consente di utilizzare questi elementi della STL con qualsiasi tipo di dato, anche quelli definiti dall'utente.
+Prima di parlarti della STL, però, devo spiegarti bene cosa siano una funzione o una classe template.
+
+```
+{% include_relative src/polimorfismo-template.cpp %}
 ```
 
 
 <!--
 
 
-3.7 Template di funzioni
-La sovrapposizione delle funzioni è una gran bella cosa, ma non sempre è il sistema più efficiente di procedere. Riprendiamo un attimo l’esempio minore.cpp: se avessimo voluto ride­finire la funzione minore() per tutti i tipi di dato, avremmo dovuto scrivere una funzi­one, uguale alle altre, ma con  parametri diversi per ciascun tipo di dato primitivo; un la­voro magari non particolarmente complicato ma decisamente noioso e che avrebbe certamente aumen­tato le dimensioni del codice. 
-Per evitare ciò avremo potuto tentare la strada delle macroistruzioni del precompilatore:
-
-#define minore(a,b) ( (a < b ) ? a : b )
-
-purtroppo, però il precompilatore non fa altro che sostituire una serie di istruzio­ni con un’altra, senza curarsi minimamente del contesto in cui queste si trovano. In certi casi la sua superficialità non causa nessuna differenza, in altri può causare dei problemi mica da ridere:
-
-# define minore(a,b) ( (a < b ) ? a : b )
-
-class Dummy
-{
- private:
-  ...
- public:
-  ...
-
-  float minore(float, float);  // qui avviene l'errore
-} ;
-
-Nel caso stiate pensando che in fondo, usare le macro  stando attenti che questo tipo di inconvenienti non si verifichi è sempre meglio che dover scrivere una serie di funzioni tutte uguali, ho due notizie per voi: una buona ed una cattiva.
-La notizia cattiva è che l’opzione macro è inaccettabile comunque, perché ha il difetto di privarci di tutti i benefici effetti dell’accurato controllo dei tipi operato dal C++. Il precompilatore, infat­ti, non eseguendo nessun tipo di verifica del tipo dei dati, opera senza segnalare nessun tipo di errore anche con oggetti fra loro incompatibili (come potrebbero essere un dou­ble ed una struttura), il che non è affatto ciò che si definisce un comportamento affida­bile. 
-La notizia buona è che in C++ c’è un sistema per venir fuori elegantemente da questo genere di situazioni: i template di funzioni. Un template di funzione è un po' come un modello in carta per sarti: restituisce la stessa forma indipendentemente dal tipo di stoffa che si utilizza:
-
-template <class T> 
-T minore(T a, T b)
-{
- return ( a < b ) ? a : b ;
-}
-dove <class T> è una sorta di parametro aggiuntivo rappresentante il tipo di dati che verranno forniti alla funzione. Abbiamo così definito uno stampo; sarà compito del compi­latore riempirlo di volta in volta con i dati adatti, e questo sia che si tratti di tipi di dato primitivi che, come vedremo nel prossimo esempio, di dati definiti dall’utente. Prima di far questo, però, dobbiamo aggiornare la classe Punto.
-Per prima cosa vanno sovrapposti gli operatori < e > per poter confrontare fra loro le is­tanze della classe; in secondo luogo, bisogna ridefinire gli operatori di output << e >> per poter  visualizzare i dati relativi ad un oggetto di tipo Punto in maniera coerente con quella utilizzata per gli altri tipi di dato. Attenzione, però, perché quest’ultima operazione va fatta in maniera differente per ciascuno dei due operatori. Infatti se l’output dei dati pri­vati della classe Punto non costituisce un problema, essendo garantito dalla funzioni di interfaccia ValX() e ValY(), la modifica degli stessi dati non è consentita che a funzi­oni appartenenti alla classe e qualunque tentativo di accesso a  X e Y da parte dell’operatore >> causerebbe un errore in fase di compilazione. 
-Ci sono tre modi in cui è possibile risolvere questo problema: 
-· creare delle funzioni di interfaccia anche per la modifica dei dati membro X e Y;
-· ridefinire l’operatore >> come membro della classe;
-· dichiarare l’operatore >> friend della classe Punto.
-Quest’ultima è la soluzione adottata. Una piccola novità: anche in vista di quello che ci aspetta nel prossimo capitolo, il codice relativo la classe Punto è stato diviso in due files distinti, come si conviene. 
-Il file punto.h che trovate immediatamente dopo queste righe, contiene la dichiarazione della classe, mentre punto.cpp contiene la definizione (o ride­finizione) delle funzioni membro. punto.cpp va unito in un file di progetto() al file mintempl.cpp, che definisce il template di funzione minore() e la funzione main() per l’esempio.
-
-PUNTO.H - Dichiarazione della classe Punto
-/////////////////////////////////////////////////////////////
-//
-// Dal C a Windows - Carlo Simonelli & Claudio Munisso
-//
-// PUNTO.H - Dichiarazione della classe Punto
-//
-/////////////////////////////////////////////////////////////
-#include <iostream.h>
-/////////////////////////////////////////////////////////////
-class Punto
-{
- private:
-  static int PuntiCreati ;
-  int X, Y ;
- public:
-  Punto(int x = -1, int y = -1) ;
-  ~Punto() ;
-
-  static int Istanze() { return PuntiCreati ; }
-  int ValX()  { return X ; }
-  int ValY()  { return Y ; }
-
-  Punto & operator += (Punto &);
-  Punto & operator -= (Punto &);
-  Punto & operator *= (double);
-  Punto & operator /= (double);
-  Punto operator + ();
-  Punto operator - ();
-
-  friend Punto operator +  (Punto &, Punto &);
-  friend Punto operator -  (Punto &, Punto &);
-  friend Punto operator *  (Punto &, double);
-  friend Punto operator *  (double, Punto &);
-  friend Punto operator /  (Punto &, double);
-  friend int   operator == (Punto &, Punto &);
-  friend int   operator != (Punto &, Punto &);
-  friend int   operator >  (Punto &, Punto &) ;
-  friend int   operator <  (Punto &, Punto &) ;
-  friend istream& operator>> (istream& is, Punto& p);
-} ;
-
-ostream & operator << (ostream & os, Punto & p) ;
-PUNTO.CPP - Definizione della classe Punto
-/////////////////////////////////////////////////////////////
-//
-// Dal C a Windows - Carlo Simonelli & Claudio Munisso
-//
-// PUNTO.CPP - Definizione della classe Punto
-//
-/////////////////////////////////////////////////////////////
-#include "punto.h"
-/////////////////////////////////////////////////////////////
-int Punto::PuntiCreati = 0 ;
-/////////////////////////////////////////////////////////////
-Punto::Punto(int x, int y)
-: X(x), Y(y)
-{
- PuntiCreati ++ ;
-}
-/////////////////////////////////////////////////////////////
-Punto::~Punto()
-{
- PuntiCreati -- ;
-}
-/////////////////////////////////////////////////////////////
-Punto Punto::operator + ()
-{
-    return *this ;
-}
-/////////////////////////////////////////////////////////////
-Punto  Punto::operator -()
-{
-    return Punto(-X, -Y) ;
-}
-/////////////////////////////////////////////////////////////
-Punto & Punto::operator += (Punto & right)
-{
-    X += right.X ;
-    Y += right.Y ;
-    return *this ;
-}
-/////////////////////////////////////////////////////////////
-Punto & Punto::operator -= (Punto  & right)
-{
-    X -= right.X ;
-    Y -= right.Y ;
-    return *this ;
-}
-/////////////////////////////////////////////////////////////
-Punto & Punto::operator *= (double d)
-{
-    X *= d ;
-    Y *= d ;
-    return *this ;
-}
-/////////////////////////////////////////////////////////////
-Punto & Punto::operator /= (double d)
-{
-    X /= d ;
-    Y /= d ;
-    return *this;
-}
-/////////////////////////////////////////////////////////////
-Punto operator + (Punto & left, Punto & right)
-{
-    return Punto(left.X + right.X, left.Y + right.Y) ;
-}
-/////////////////////////////////////////////////////////////
-Punto operator - (Punto & left, Punto & right)
-{
-    return Punto(left.X - right.X, left.Y - right.Y) ;
-}
-/////////////////////////////////////////////////////////////
-Punto operator * (Punto & left, double d)
-{
-    return Punto(left.X * d, left.Y * d) ;
-}
-/////////////////////////////////////////////////////////////
-Punto operator * (double d, Punto & right)
-{
-    return Punto(right.X * d, right.Y * d) ;
-}
-/////////////////////////////////////////////////////////////
-Punto operator / (Punto & left, double d)
-{
-    return Punto(left.X / d, left.Y / d) ;
-}
-/////////////////////////////////////////////////////////////
-int operator == (Punto & left, Punto & right)
-{
-    return left.X == right.X && left.Y == right.Y ;
-}
-/////////////////////////////////////////////////////////////
-int operator != (Punto & left, Punto & right)
-{
-    return left.X != right.X || left.Y != right.Y ;
-}
-/////////////////////////////////////////////////////////////
-int operator < (Punto & left, Punto & right)
-{
- return (left.X < right.X && left.Y < right.Y ) ;
-}
-/////////////////////////////////////////////////////////////
-int operator > (Punto & left, Punto & right)
-{
- return (left.X > right.X && left.Y > right.Y ) ;
-}
-/////////////////////////////////////////////////////////////
-ostream & operator << ( ostream & os, Punto & p)
-{
- os << '(' << p.ValX() << ',' << p.ValY() << ')' ;
- return os ;
-}
-/////////////////////////////////////////////////////////////
-istream & operator >> ( istream & is, Punto & p)
-{
- is >> p.X >> p.Y ;
- return is ;
-}
-/////////////////////////////////////////////////////////////
-MINTEMPL.CPP - Esempio di funzione template applicata alla classe Punto
-/////////////////////////////////////////////////////////////
-//
-// Dal C a Windows - Carlo Simonelli & Claudio Munisso
-//
-// MINTEMPL.CPP - Esempio di funzione template applicata
-//      alla classe Punto
-//
-/////////////////////////////////////////////////////////////
-#include "punto.h"
-/////////////////////////////////////////////////////////////
-template <class T> T minore(T a, T b)
-{
- return ( a < b ) ? a : b ;
-}
-/////////////////////////////////////////////////////////////
-void main()
-{
- int    i1, i2 ;
- float  f1, f2 ;
- Punto  p1, p2, p3 ;
-
- cout <<"\nInserire i valori per i due interi i1 e i2 :";
- cin >> i1 >> i2 ;
-
- cout <<"\nInserire i valori per i due float f1 e f2 :" ;
- cin >> f1 >> f2 ;
-
- cout <<"\nInserire i valori per il primo punto :" ;
- cin >> p1  ;
- cout <<"\nInserire i valori per il secondo punto :" ;
- cin >> p2  ;
- cout <<"\nInserire i valori per il terzo punto :" ;
- cin >> p3  ;
-
- cout << "i1       :" << i1 << "\n" ;
- cout << "i2       :" << i2 << "\n" ;
- cout << "f1       :" << f1 << "\n" ;
- cout << "f2       :" << f2 << "\n" ;
- cout << "p1       :" << p1 << "\n" ;
- cout << "p2       :" << p2 << "\n" ;
- cout << "p2       :" << p3 << "\n" ;
- cout << "p1 + p2  :" << (p1 + p2) << "\n" ;
- cout << "p1 - p2  :" << (p1 - p2) << "\n" ;
- cout << "p1 / i1  :" << (p1 / i1) << "\n" ;
- cout << "p1 * i2  :" << (p1 * i2) << "\n" ;
- cout << "p1 += p2 :" << (p1 += p2) << "\n" ;
- cout << "p1 -= p2 :" << (p1 -= p2) << "\n" ;
- cout << "p1 /= i1 :" << (p1 /= i1) << "\n" ;
- cout << "p1 *= i2 :" << (p1 *= i2) << "\n" ;
- cout << "+(p1)    :" << +(p1) << "\n" ;
- cout << "-(p1)    :" << -(p1) << "\n" ;
-
- cout << "minore() versione int   :" 
-     << minore(i1,i2) << "\n" ;
- cout << "minore() versione float :" 
-     << minore(f1,f2) << "\n" ;
- cout << "minore() versione 1     :" 
-     << minore(p1,p2) << "\n" ;
- cout << "minore() versione 2     :" 
-     << minore(p1,p3) << "\n" ;
-}
-/////////////////////////////////////////////////////////////
-Se si desidera che una funzione template non sia eseguita per un determinato tipo di dati, basta definire una funzione non template che accetti quel tipo di dato come parametro. 
-Per dare un’esempio di come questo avvenga, ci serviremo della classe Frazione, utilizzata come esempio nel paragrafo 3.6 (notate alla linea 002 l’utilizzo del costruttore di inizializzazione che, anche se non definito esplicitamente per la classe Frazione, è stato creato automaticamente dal compilatore).
-NOTEMPL.CPP - Esclusione di funzione template
-/////////////////////////////////////////////////////////////
-//
-// Dal C a Windows - Carlo Simonelli & Claudio Munisso
-//
-// NOTEMPL.CPP - Esclusione di funzione template
-//
-/////////////////////////////////////////////////////////////
-#include <iostream.h>
-/////////////////////////////////////////////////////////////
-class Frazione
-{
- private:
-  int num ;
-  int den ;
- public:
-
- Frazione(int n, int d = 1) { num = n ; den = d ; }    Frazione(double) ;
-
- operator int ()  { return num / den ; }   
- operator double() { return double(num)/double(den); }   
-
- friend ostream& operator << (ostream & os, Frazione f) ; 
- friend istream& operator >> (istream & is, Frazione f) ; 
-} ;
-/////////////////////////////////////////////////////////////
-ostream & operator << (ostream & os, Frazione f)
-{
- os << '(' << f.num << ',' << f.den << ')' ;
- return os ;
-}
-/////////////////////////////////////////////////////////////
-istream & operator >> (istream & is, Frazione f)
-{
- is >> f.num >> f.den ;    
- return is ;
-}
-/////////////////////////////////////////////////////////////
-Frazione minore(Frazione & left, Frazione & right)
-{
- int esito = double(left) > double(right) ;  // 001
-
- return(esito?Frazione(left):Frazione(right)); // 002
-}
-/////////////////////////////////////////////////////////////
-template<class T> T minore(T a, T b)
-{
- return (a < b ) ? a : b ;
-}
-/////////////////////////////////////////////////////////////
-void main()
-{
- int  i1 = 12, i2 = 57 ;
- char     c1 = 'A', c2 = 'Z' ;
- Frazione f1(3, 6), f2(3, 5) ;
-
-    cout << minore(i1, i2) << "\n" ; // 003
-    cout << minore(c1, c2) << "\n" ; // 004
-    cout << minore(f1, f2) << "\n" ; // 005
-}
-/////////////////////////////////////////////////////////////
-001  Utilizza l’operatore di conversione per determinare la minore delle due frazioni.
-002  Utilizzo del costruttore di inizializzazione.
-003  Richiama minore template con parametri int.
-004  Richiama minore template con parametri char.
-005  Richiama minore(Frazione &, Frazione &).
-3.8 Template di classi
-Ciò che si può fare con le funzioni, è possibile farlo con intere classi. Il codice seguente crea una classe Buffer indipendente dal tipo di dato con cui poi verrà riempita:
-CLASTEMP.CPP - Esempio di template di classe
-/////////////////////////////////////////////////////////////
-//
-// Dal C a Windows - Carlo Simonelli & Claudio Munisso
-//
-// CLASTEMP.CPP - Esempio di template di classe
-//
-/////////////////////////////////////////////////////////////
-#include <iostream.h>
-/////////////////////////////////////////////////////////////
-template <class T>
-class Buffer
-{
- private:
-  T * Area ;                                      // 001
-  int Dimensione ;                                // 002
- public:
-  Buffer(int dim =  0) ;                          // 003
-  ~Buffer() ;                                     // 004
-
-  T& operator[] (int n) { return Area[n] ; }  // 005
-} ;
-/////////////////////////////////////////////////////////////
-template <class T> Buffer<T>::Buffer(int dim)
-{
- Area = new T[dim] ;                              // 006
- Dimensione = dim ;                               // 006
-}
-/////////////////////////////////////////////////////////////
-template <class T> Buffer<T>::~Buffer()
-{
- delete [] Area ;                                 // 007
-}
-/////////////////////////////////////////////////////////////
-void main()
-{
- Buffer<int> b1(5) ;      // 008
- Buffer<double> b2(5) ;      // 009
-
- for( int n = 0 ; n < 5 ; ++n )                  // 010 
- {
-  b1[n] = n ;
-  b2[n] = double(n) / 3 ;
- }
-
- for( n = 0 ; n < 5 ; n++)                       // 011
- {
-  cout <<"\nValore di b1[" << n << "]: " << b1[n] ;
-  cout <<"\nValore di b2[" << n << "]: " << b2[n] ;
- }
-}
-/////////////////////////////////////////////////////////////
-001  Puntatore al tipo di dati del buffer.
-002  Dimensione del buffer.
-003  Costruttore della classe.
-004  Distruttore.
-005  Ridefinizione dell’operatore [].
-006  Il costruttore della classe, per prima alloca spazio per un array di dim oggetti, quindi assegna l’indirizzo dell’area di memoria al puntatore Area.
-007  Viene eliminato l’array di ogetti allocato dal costruttore.
-008  Crea un buffer di int.
-009  Crea un buffer di double.
-010  Assegna dei valori agli elementi dei buffer...
-011  ... e li visualizza.
-Come già visto per le  funzioni, anche in questo caso basta una definizione esplicita della classe per un tipo di dato per evitare gli effetti della classe template.
-class Buffer<float> { ... } ;
 -->
 
 <hr id="dottrina">
@@ -805,5 +406,19 @@ dynamic_cast <new_type> (expression)
 reinterpret_cast <new_type> (expression)
 static_cast <new_type> (expression)
 const_cast <new_type> (expression)
+
+@todo: verificare
+Se eliminassimo le parentesi nell'istruzione di output finale:
+
+```
+cout << (a + b + a) << endl;
+```
+
+otterremmo un errore di compilazione, perché non esiste un operatore `+` capace di gestire la somma di un `int` (il tipo tornato dalla somma di `a + b`) con un oggetto di classe `A`.
+
+```
+{% include_relative src/polimorfismo-operatore-simmetrico.cpp %}
+```
+
 
 -->

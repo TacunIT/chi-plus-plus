@@ -212,6 +212,7 @@ L'output di questo codice, sarà:
      array: abcdefghilmnopqrstuvz
 colore RGB: verde
 ```
+<!-- @todo: aggiungere paragrafo sulle macro -->
 
 <hr id="dottrina">
 
