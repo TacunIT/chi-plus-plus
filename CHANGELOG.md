@@ -1,3 +1,6 @@
+## 0.25.4 (June 05, 2021)
+  - Redazione del paragrafo sulle classi e funzioni template
+
 ## 0.25.3 (June 04, 2021)
   - Iniziato paragrafo su classi e funzioni template
   - Redazione del capitolo sul polimorfismo
