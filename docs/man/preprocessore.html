@@ -390,7 +390,123 @@ RGB color: green
      array: abcdefghilmnopqrstuvz
 colore RGB: verde
 </code></pre>
-<!-- @todo: aggiungere paragrafo sulle macro -->
+<hr id="macro-istruzioni" />
+
+<p>Il preprocessore può essere sfruttato anche per creare delle <em>macro-istruzioni</em> che possano essere utilizzate con tipi diversi di dati.</p>
+
+<pre><code>#define MAGGIORE(a,b) ((a &gt; b) ? a : b) 
+</code></pre>
+
+<p>Quando il precompilatore trova una chiamata alla macro MAGGIORE, all’interno del codice, la sostituisce con l’istruzione corrispondente, rimpiazzando i parametri <code>a</code> e <code>b</code> con le variabili contenute nella chiamata.</p>
+
+<pre><code>/** 
+ * @file src/preprocessore-macro.cpp
+ * Esempio di macro-istruzione del precompilatore.
+ */
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+/**
+*  Definzione di una macro istruzione che
+*  torna il maggiore fra due parametri.
+*/
+#define MAGGIORE(a,b) ((a &gt; b) ? a : b) 
+
+int main ()
+{     
+    /** 
+     *  Il codice di queste istruzioni è sostituito
+     *  con quello associato alla macro:
+     *      
+     *      cout &lt;&lt; ((109 &gt; 122) ? 109 : 122) &lt;&lt; endl;    
+     *      cout &lt;&lt; ((0.4 &gt; 0.7) ? 0.4 : 0.7) &lt;&lt; endl;    
+     *      cout &lt;&lt; (('a' &gt; 'z') ? 'a' : 'z') &lt;&lt; endl;    
+    */
+    cout &lt;&lt; MAGGIORE(209, 122) &lt;&lt; endl;    
+    cout &lt;&lt; MAGGIORE(0.4, 0.7) &lt;&lt; endl;    
+    cout &lt;&lt; MAGGIORE('y', 'z') &lt;&lt; endl;    
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili ed esegui questo codice, ottieni:</p>
+
+<pre><code>&gt; g++ src/cpp/preprocessore-macro.cpp -o src/out/esempio
+&gt; src/out/esempio                                         
+209
+0.7
+z
+</code></pre>
+
+<p>Le macro del precompilatore sono eseguite prima che il codice sia compilato, quindi possono essere sftuttate anche per creare delle funzioni ex-novo.</p>
+
+<pre><code>/** 
+ * @file src/preprocessore-hashtag.cpp
+ * Esempii di macro-istruzioni del precompilatore.
+ */
+
+#include &lt;iostream&gt;
+
+using namespace std;
+ 
+/** Definisce la macro-istruzione */
+#define FUNZIONE(nome, parametro) int fnz_##nome() { return parametro; }
+
+/** 
+*   Durante la precompilazone, questa macro 
+*   sarà sosituita dall'istruzione:
+*       
+*     int fnz_macro(12) { return 12; }
+*/
+FUNZIONE(macro, 12)
+ 
+/** 
+*   Definisce una macro che stampa un testo a video:
+*/
+#define OUTPUT(testo) cout &lt;&lt; testo &lt;&lt; endl;
+ 
+/** 
+*   Definisce una macro che unisce la stringa "Pippo"
+*   al parametro ricevuto in input:
+*/
+#define PIPPO "Pippo"
+#define APPENDI(nome) PIPPO # nome
+ 
+int main()
+{
+    /** 
+    *   La funzione fnz_macro ora non esiste, ma esisterà 
+    *   al termine della pre-compilazione del codice:
+    */
+    cout &lt;&lt; fnz_macro() &lt;&lt; endl;
+ 
+    /** Stampa una stringa a video usando le altre due macro */
+    OUTPUT(APPENDI(Pluto));               
+}
+
+</code></pre>
+<!-- adattamento di: https://en.cppreference.com/w/cpp/preprocessor/replace -->
+
+<p>Questo esempio fa uso di due operatori proprii del preprocessore:</p>
+
+<ul>
+  <li>l’operatore di <em>stringification</em> <code>#</code> (mi rifiuto di tradurre questo termine), che converte il parametro successivo in una stringa, aggiungendogli i doppi apici ed aggiungendo dei <em>backlslash</em> a eventuali doppi apici presenti nel parametro;</li>
+  <li>l’operatore di <em>concatenazione</em> <code>##</code>, che unisce in un’unica stringa il parametro precedente e successivo.<br />
+Se compili ed esegui questo codice, ottieni:</li>
+</ul>
+
+<pre><code>&gt; g++ src/cpp/preprocessore-hashtag.cpp -o src/out/esempio 
+&gt; src/out/esempio                                         
+12
+PippoPluto
+</code></pre>
+
+<p>Le macro-istruzioni del precompilatore sono uno strumento molto potente, ma devono essere utilizzate con oculatezza perché, essendo generate <strong>prima</strong> che dell’avvio della compilazione, non sono sottoposte ad alcun controllo di congruenza per il tipo dei parametri utilizzati.
+Questo, come vedremo <a href="/man/polimorfismo#funzioni-template" class="xref">in seguito</a>, può generare degli errori molto subdoli e difficili da identificare.</p>
 
 <hr id="dottrina" />
 
