@@ -1,3 +1,6 @@
+## 0.25.6 (June 06, 2021)
+  - Aggisunto paragrafo su macro-istruzioni al capitolo sul preprocessore
+
 ## 0.25.5 (June 06, 2021)
   - Redazione del testo su funzioni e classi template
 
