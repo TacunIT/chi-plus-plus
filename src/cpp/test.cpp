@@ -1,71 +1,45 @@
-// C program to convert a real value 
-// to IEEE 754 floating point representaion 
+#include <iostream>
+#include <functional>
 
-#include <stdio.h> 
+using namespace std;
 
-void printBinary(int n, int i) 
-{ 
+template<int d,int t> class Unit
+{
+    double value;
+public:
+    Unit(double n)
+    {
+        value = n;
+    }
+    Unit<d,t> operator+(Unit<d,t> n)
+    {
+        return Unit<d,t>(value + n.value);
+    }
+    Unit<d,t> operator-(Unit<d,t> n)
+    {
+        return Unit<d,t>(value - n.value);
+    }
+    Unit<d,t> operator*(double n)
+    {
+        return Unit<d,t>(value * n);
+    }
+    Unit<d,t> operator/(double n)
+    {
+        return Unit<d,t>(value / n);
+    }
+};
 
-	// Prints the binary representation 
-	// of a number n up to i-bits. 
-	int k; 
-	for (k = i - 1; k >= 0; k--) { 
+#define Distance Unit<1,0>
+#define Time     Unit<0,1>
+#define Second   Time(1.0)
+#define Meter    Distance(1.0)
 
-		if ((n >> k) & 1) 
-			printf("1"); 
-		else
-			printf("0"); 
-	} 
-} 
-
-typedef union { 
-
-	float f; 
-	struct
-	{ 
-
-		// Order is important. 
-		// Here the members of the union data structure 
-		// use the same memory (32 bits). 
-		// The ordering is taken 
-		// from the LSB to the MSB. 
-		unsigned int mantissa : 23; 
-		unsigned int exponent : 8; 
-		unsigned int sign : 1; 
-
-	} raw; 
-} myfloat; 
-
-// Function to convert real value 
-// to IEEE foating point representation 
-void printIEEE(myfloat var) 
-{ 
-
-	// Prints the IEEE 754 representation 
-	// of a float value (32 bits) 
-
-	printf("%d | ", var.raw.sign); 
-	printBinary(var.raw.exponent, 8); 
-	printf(" | "); 
-	printBinary(var.raw.mantissa, 23); 
-	printf("\n"); 
-} 
-
-// Driver Code 
-int main() 
-{ 
-
-	// Instantiate the union 
-	myfloat var; 
-
-	// Get the real value 
-	var.f = -2.25; 
-
-	// Get the IEEE floating point representation 
-	printf("IEEE 754 representation of %f is : \n", 
-		var.f); 
-	printIEEE(var); 
-
-	return 0; 
-} 
-
+void foo()
+{
+   Distance moved1 = 5 * Meter;
+   Distance moved2 = 10 * Meter;
+   Time time1 = 10 * Second;
+   Time time2 = 20 * Second;
+   if ((moved1 / time1) == (moved2 / time2))
+       printf("Same speed!");
+}

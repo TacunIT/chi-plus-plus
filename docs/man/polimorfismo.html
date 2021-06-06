@@ -336,12 +336,11 @@ double&amp; operator +=  (double&amp; a, double&amp; b) ;
 
 <pre><code>void operator ++ (&lt;tipo&gt; a) ;           // versione prefissa
 void operator ++ (&lt;tipo&gt; a, &lt;tipo&gt;) ;   // versione postfissa
-
 </code></pre>
 
 <p>Le funzioni degli operatori <em>overloaded</em> possono essere richiamate in maniera diretta.
 Le due istruzioni qui sotto, una volta compilate, producono il medesimo codice e lo stesso risultato.
-Se riesci a trovare una ragione qualunque per usare la prima sintassi piuttosto che la seconda, fallo pure:</p>
+Se riesci a trovare una qualunque ragione per usare la prima sintassi piuttosto che la seconda, fallo pure:</p>
 
 <pre><code>a = b.operator + (c) ;  
 a = b + c ;
@@ -608,7 +607,7 @@ Nel codice che ti ho mostrato all’inizio di questa lezione, puoi vedere un ese
 <pre><code>list&lt;Monta&gt; monte;
 </code></pre>
 
-<p>La classe <code>list</code> è una delle classi template della <em>Standard Template Library</em> del C++.
+<p>La classe <code>list</code> è una delle classi template della <em>Standard Template Library</em> (o: <em>STL</em>) del C++.
 La STL è una libreria di classi e di funzioni che permettono di risolvere dei problemi comuni della programmazione, come la memorizzazione, l’ordinamento o la ricerca di una serie di dati.
 Le componenti della STL sono:</p>
 
@@ -619,12 +618,67 @@ Le componenti della STL sono:</p>
   <li>degli oggetti-funzioni, o: <strong>functors</strong>, che incapsulano una specifica funzione.</li>
 </ul>
 
-<p>La <em>generic programming</em> permessa dai template ci consente di utilizzare questi elementi della STL con qualsiasi tipo di dato, anche quelli definiti dall’utente.
-Prima di parlarti della STL, però, devo spiegarti bene cosa siano una funzione o una classe template.</p>
+<p>Grazie alla <em>generic programming</em> offerta dai template possiamo utilizzare questi elementi della STL con qualsiasi tipo di dato, anche quelli definiti dall’utente.
+Prima di parlarti della <em>Standard Template Library</em>, però, devo spiegarti bene cosa siano una funzione o una classe template.<br />
+I template, nel C++, sono dei modelli che si utilizzano per definire delle funzioni o delle classi polivalenti.
+Se uno stesso compito può essere eseguito in maniera simile su parametri di tipo differente, invece di scrivere una serie di funzioni o di classi identiche, ma con parametri diversi, si può scrivere una funzione o una classe template che possa essere richiamata con parametri di tipo differente.</p>
+
+<pre><code>int    somma(int    a, int    b) { return a + b; }
+float  somma(float  a, float  b) { return a + b; }
+double somma(double a, double b) { return a + b; }
+
+template &lt;class T&gt; 
+somma(T a Tb) { return a + b; }
+</code></pre>
+
+<p>Quando il compilatore trova nel codice un template, sia esso la dichiarazione di una classe o una chiamata a funzione, la sostituisce con il codice corrispondente, così come avviene per le <a href="/man/preprocessore#macro" class="xref">macro-istruzioni del precompilatore</a>, ma, a differenza di quello che avviene per le macro, il tipo dei parametri del template è sottoposto a controllo così come il resto del codice.<br />
+Il formato per la dichiarazione di una <i id="funzioni-template">funzione template</i> è:</p>
+
+<p class="code">
+<b>template &lt;class</b> <i>identificatore</i><b>&gt;</b> <i>dichiarazione</i>;
+<br />  
+<b>template &lt;typename</b> <i>identificatore</i><b>&gt;</b> <i>dichiarazione</i>;
+</p>
+
+<p>Non c’è nessuna differenza fra la prima e la seconda forma: sia <code>class</code> che <code>typename</code> producono lo stesso effetto.<br />
+<em>identificatore</em> è un simbolo che identifica un determinato tipo di dato o una classe definita dall’utente.
+Per esempio, la sintassi di una funzione template che torna il maggiore di due parametri sarà qualcosa di simile:</p>
+
+<pre><code>template&lt;class T&gt;
+T maggiore (T x, T y) {
+    return (x &gt; y) ? x : y;
+}
+</code></pre>
+
+<p>In questo caso, l’identificativo del tipo è la lettera <code>T</code> che compare sia fra gli apici nella prima riga che fra parentesi nella seconda, ma può essere qualsiasi stringa. 
+I parametri possono essere più di uno:</p>
+
+<pre><code>template&lt;class C1, class C2&gt;
+T funz (C1 x, C2 y) {
+...
+}
+</code></pre>
+
+<p>e possono avere un valore di default:</p>
+
+<pre><code>template&lt;class N = int&gt;
+T funz (N n) {
+...
+}
+</code></pre>
+
+<p>La chiamata delle funzioni template è simile a quella delle funzioni ordinarie; devi solo ricordarti di specificare il tipo dei parametri che dovrà gestire:</p>
+
+<pre><code>cout &lt;&lt; maggiore&lt;int&gt;   (  9,  12) &lt;&lt; endl;    
+cout &lt;&lt; maggiore&lt;double&gt;(0.4, 1.2) &lt;&lt; endl;    
+cout &lt;&lt; maggiore&lt;char&gt;  ('a', 'z') &lt;&lt; endl;    
+</code></pre>
+
+<p>Il prossimo esempio mostra la differenza fra una macro del precompilatore e una funzione template:</p>
 
 <pre><code>/** 
- * @file src/polimorfismo-template.cpp
- * Esempio di funzione template.
+ * @file src/polimorfismo-macro-template.cpp
+ * Funzioni template e macro precompilatore.
  */
 
 #include &lt;iostream&gt;
@@ -648,29 +702,121 @@ T maggiore (T x, T y) {
 }
 
 int main ()
-{    
+{     
+    int    a = 10;
+    short  b = 0;   
+    double d = 3.123456789;
+    
     /** Utilizzo della macro */
     cout &lt;&lt; MAGGIORE(9,12)     &lt;&lt; endl;    
-    cout &lt;&lt; MAGGIORE(0.4, 1.2) &lt;&lt; endl;    
+    cout &lt;&lt; MAGGIORE(0.4, 0.7) &lt;&lt; endl;    
     cout &lt;&lt; MAGGIORE('a', 'z') &lt;&lt; endl;    
 
     /** 
     *  La stessa funzione si può utilizzare 
     *  con tipi di dato diversi:
     */
-    cout &lt;&lt; maggiore(  9,  12) &lt;&lt; endl;    
-    cout &lt;&lt; maggiore(0.4, 1.2) &lt;&lt; endl;    
-    cout &lt;&lt; maggiore('a', 'z') &lt;&lt; endl;    
+    cout &lt;&lt; maggiore&lt;int&gt;   (  9,  12) &lt;&lt; endl;    
+    cout &lt;&lt; maggiore&lt;double&gt;(0.4, 1.2) &lt;&lt; endl;    
+    cout &lt;&lt; maggiore&lt;char&gt;  ('a', 'z') &lt;&lt; endl;    
+   
+    /** Errore: confronta un carattere con un double */
+    cout &lt;&lt; MAGGIORE('a', d) &lt;&lt; endl;    
 
+    /**
+    *   Errore: il compilatore non sa quale
+    *   dei due tipi di dato utilizzare.
+    */
+    cout &lt;&lt; maggiore(a, b) &lt;&lt; endl;    
+    
     return 0;
 }
 
 </code></pre>
 
-<!--
+<p>La macro <code>MAGGIORE</code> e la funzione template <code>maggiore</code> eseguono la stessa operazione: confrontano i due parametri che hanno ricevuto in input e tornano il maggiore dei due.
+La grossa differenza fra questi due approcci<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> è che, mentre il tipo dei parametri del template è verificato dal compilatore, la macro è una banale sostituzione che non fa alcun controllo sulle variabili che utilizza. 
+L’istruzione:</p>
 
+<pre><code>cout &lt;&lt; MAGGIORE('a', b) &lt;&lt; endl; 
+</code></pre>
 
--->
+<p>compara un carattere con un double e, senza dare problemi in compilazione torna il valore <code>97</code>, corrispondente al codice ASCII della lettera <code>a</code>.
+Al contrario, l’istruzione:</p>
+
+<pre><code>int   a = 10;
+short b = 0;
+cout &lt;&lt; maggiore(a, b) &lt;&lt; endl;  
+</code></pre>
+
+<p>causa un errore di compilazione perché i due parametri sono di tipo differente:</p>
+
+<pre><code>&gt; g++ src/cpp/polimorfismo-template.cpp -o src/out/esempio
+src/cpp/polimorfismo-template.cpp:52:13: 
+    error: no matching function for call to 'maggiore'
+    cout &lt;&lt; maggiore(a, b) &lt;&lt; endl;    
+            ^~~~~~~~
+src/cpp/polimorfismo-template.cpp:22:3: 
+    note: candidate template ignored: 
+        deduced conflicting types for parameter 'T'
+      ('int' vs. 'short')
+T maggiore (T x, T y) {
+  ^
+</code></pre>
+
+<p>La dichiarazione di una <i id="classi-template">classe template</i> ha questa forma:</p>
+
+<p class="code">
+<b>template &lt;class</b> <i>identificatore</i><b>&gt;</b> <i>dichiarazione</i>;
+</p>
+
+<p>La lista dei parametri fra i simboli <code>&lt;&gt;</code> può contenere uno o più simboli per i tipi dato gestiti dalla classe.
+Anche l’utilizzo di queste classi è simile a quello delle funzioni template:</p>
+
+<pre><code>/** 
+ * @file src/polimorfismo-classe-template.cpp
+ * Esempio di classe template.
+ */
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+/**
+*   Definisce una classe che gestisce coppie 
+*   di coordinate.
+*/
+template&lt;class T&gt;
+class Coord {
+private:
+    /** Dati membro con tipo variabile */
+    T _x, _y; 
+public:
+    /** Costruttore con tipo di parametri variabile */
+    Coord(const T x, const T y) 
+    : _x(x), _y(y) {        
+    }
+    friend ostream&amp; operator &lt;&lt; (ostream&amp; o, const Coord&amp; c) {
+        o &lt;&lt; c._x &lt;&lt; ',' &lt;&lt; c._y ;
+        return o;
+    }
+};
+
+int main ()
+{         
+    /** Istanza con coordinate geografiche */
+    Coord&lt;double&gt; obelisco(41.903219, 12.458157);
+    
+    /** Istanza con coordinate schermo */
+    Coord&lt;int&gt;    pixel(821, 134);
+    
+    cout &lt;&lt; "Obelisco:" &lt;&lt; obelisco &lt;&lt; endl;    
+    cout &lt;&lt; "Pixel:   " &lt;&lt; pixel    &lt;&lt; endl;    
+    
+    return 0;
+}
+
+</code></pre>
 
 <hr id="dottrina" />
 
