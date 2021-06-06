@@ -371,7 +371,7 @@ cout << maggiore<char>  ('a', 'z') << endl;
 ```
 
 Il prossimo esempio mostra la differenza fra una macro del precompilatore e una funzione template:
-
+<!-- NOTA: se si cambia o si rimuove la macro nel codice, va aggiornato il testo del capitolo sul preprocessore -->
 ```
 {% include_relative src/polimorfismo-macro-template.cpp %}
 ```
