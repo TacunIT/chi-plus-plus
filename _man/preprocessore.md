@@ -212,7 +212,53 @@ L'output di questo codice, sarà:
      array: abcdefghilmnopqrstuvz
 colore RGB: verde
 ```
-<!-- @todo: aggiungere paragrafo sulle macro -->
+<hr id="macro-istruzioni">
+
+Il preprocessore può essere sfruttato anche per creare delle *macro-istruzioni* che possano essere utilizzate con tipi diversi di dati.
+
+```
+#define MAGGIORE(a,b) ((a > b) ? a : b) 
+```
+
+Quando il precompilatore trova una chiamata alla macro MAGGIORE, all'interno del codice, la sostituisce con l'istruzione corrispondente, rimpiazzando i parametri `a` e `b` con le variabili contenute nella chiamata.    
+
+```
+{% include_relative src/preprocessore-macro.cpp %}
+```
+
+Se compili ed esegui questo codice, ottieni:
+
+```
+> g++ src/cpp/preprocessore-macro.cpp -o src/out/esempio
+> src/out/esempio                                         
+209
+0.7
+z
+```
+
+
+Le macro del precompilatore sono eseguite prima che il codice sia compilato, quindi possono essere sftuttate anche per creare delle funzioni ex-novo.
+
+```
+{% include_relative src/preprocessore-hashtag.cpp %}
+```
+<!-- adattamento di: https://en.cppreference.com/w/cpp/preprocessor/replace -->
+
+Questo esempio fa uso di due operatori proprii del preprocessore: 
+
+- l'operatore di *stringification* `#` (mi rifiuto di tradurre questo termine), che converte il parametro successivo in una stringa, aggiungendogli i doppi apici ed aggiungendo dei *backlslash* a eventuali doppi apici presenti nel parametro; 
+- l'operatore di *concatenazione* `##`, che unisce in un'unica stringa il parametro precedente e successivo.  
+Se compili ed esegui questo codice, ottieni:
+
+```
+> g++ src/cpp/preprocessore-hashtag.cpp -o src/out/esempio 
+> src/out/esempio                                         
+12
+PippoPluto
+```
+
+Le macro-istruzioni del precompilatore sono uno strumento molto potente, ma devono essere utilizzate con oculatezza perché, essendo generate **prima** che dell'avvio della compilazione, non sono sottoposte ad alcun controllo di congruenza per il tipo dei parametri utilizzati.
+Questo, come vedremo <a href="/man/polimorfismo#funzioni-template" class="xref">in seguito</a>, può generare degli errori molto subdoli e difficili da identificare.
 
 <hr id="dottrina">
 
