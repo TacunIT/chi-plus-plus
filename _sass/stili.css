@@ -111,7 +111,7 @@ HR {
 HR:before {
  content: '氣';
 }
-CODE, PRE {
+CODE, PRE, P.code {
     background-color: $codeBackground;
     text-align: left;
     font-size: 11pt;
@@ -472,6 +472,7 @@ BODY.manuale H1 {
     margin: 4rem 0 2rem 0;
     text-align: center;
 }
+BODY.manuale MAIN P.code,
 BODY.manuale MAIN PRE {
     display: block;
     padding: 1rem;

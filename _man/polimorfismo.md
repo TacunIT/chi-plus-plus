@@ -135,12 +135,11 @@ Dato che gli operatori unari possono essere prefissi o postfissi, per consentire
 ```
 void operator ++ (<tipo> a) ;           // versione prefissa
 void operator ++ (<tipo> a, <tipo>) ;   // versione postfissa
-
 ```
 
 Le funzioni degli operatori *overloaded* possono essere richiamate in maniera diretta.
 Le due istruzioni qui sotto, una volta compilate, producono il medesimo codice e lo stesso risultato.
-Se riesci a trovare una ragione qualunque per usare la prima sintassi piuttosto che la seconda, fallo pure:
+Se riesci a trovare una qualunque ragione per usare la prima sintassi piuttosto che la seconda, fallo pure:
 
 ```
 a = b.operator + (c) ;  
@@ -301,7 +300,7 @@ Nel codice che ti ho mostrato all'inizio di questa lezione, puoi vedere un esemp
 list<Monta> monte;
 ```
 
-La classe `list` è una delle classi template della *Standard Template Library* del C++.
+La classe `list` è una delle classi template della *Standard Template Library* (o: *STL*) del C++.
 La STL è una libreria di classi e di funzioni che permettono di risolvere dei problemi comuni della programmazione, come la memorizzazione, l'ordinamento o la ricerca di una serie di dati.
 Le componenti della STL sono: 
 
@@ -310,18 +309,118 @@ Le componenti della STL sono:
 - degli **iteratori** che consentono di scorrere il contenuto dei container;
 - degli oggetti-funzioni, o: **functors**, che incapsulano una specifica funzione.
 
-La *generic programming* permessa dai template ci consente di utilizzare questi elementi della STL con qualsiasi tipo di dato, anche quelli definiti dall'utente.
-Prima di parlarti della STL, però, devo spiegarti bene cosa siano una funzione o una classe template.
+Grazie alla *generic programming* offerta dai template possiamo utilizzare questi elementi della STL con qualsiasi tipo di dato, anche quelli definiti dall'utente.
+Prima di parlarti della *Standard Template Library*, però, devo spiegarti bene cosa siano una funzione o una classe template.  
+I template, nel C++, sono dei modelli che si utilizzano per definire delle funzioni o delle classi polivalenti.
+Se uno stesso compito può essere eseguito in maniera simile su parametri di tipo differente, invece di scrivere una serie di funzioni o di classi identiche, ma con parametri diversi, si può scrivere una funzione o una classe template che possa essere richiamata con parametri di tipo differente.
 
 ```
-{% include_relative src/polimorfismo-template.cpp %}
+int    somma(int    a, int    b) { return a + b; }
+float  somma(float  a, float  b) { return a + b; }
+double somma(double a, double b) { return a + b; }
+
+template <class T> 
+somma(T a Tb) { return a + b; }
 ```
 
+Quando il compilatore trova nel codice un template, sia esso la dichiarazione di una classe o una chiamata a funzione, la sostituisce con il codice corrispondente, così come avviene per le <a href="/man/preprocessore#macro" class="xref">macro-istruzioni del precompilatore</a>, ma, a differenza di quello che avviene per le macro, il tipo dei parametri del template è sottoposto a controllo così come il resto del codice.  
+Il formato per la dichiarazione di una <i id="funzioni-template">funzione template</i> è:
 
-<!--
+<p class="code">
+<b>template <class</b> <i>identificatore</i><b>></b> <i>dichiarazione</i>;
+<br />  
+<b>template <typename</b> <i>identificatore</i><b>></b> <i>dichiarazione</i>;
+</p>
 
+Non c'è nessuna differenza fra la prima e la seconda forma: sia `class` che `typename` producono lo stesso effetto.  
+*identificatore* è un simbolo che identifica un determinato tipo di dato o una classe definita dall'utente.
+Per esempio, la sintassi di una funzione template che torna il maggiore di due parametri sarà qualcosa di simile:
 
--->
+```
+template<class T>
+T maggiore (T x, T y) {
+    return (x > y) ? x : y;
+}
+```
+
+In questo caso, l'identificativo del tipo è la lettera `T` che compare sia fra gli apici nella prima riga che fra parentesi nella seconda, ma può essere qualsiasi stringa. 
+I parametri possono essere più di uno:
+
+```
+template<class C1, class C2>
+T funz (C1 x, C2 y) {
+...
+}
+```
+
+e possono avere un valore di default:
+
+```
+template<class N = int>
+T funz (N n) {
+...
+}
+```
+
+La chiamata delle funzioni template è simile a quella delle funzioni ordinarie; devi solo ricordarti di specificare il tipo dei parametri che dovrà gestire:
+
+```
+cout << maggiore<int>   (  9,  12) << endl;    
+cout << maggiore<double>(0.4, 1.2) << endl;    
+cout << maggiore<char>  ('a', 'z') << endl;    
+```
+
+Il prossimo esempio mostra la differenza fra una macro del precompilatore e una funzione template:
+
+```
+{% include_relative src/polimorfismo-macro-template.cpp %}
+```
+
+La macro `MAGGIORE` e la funzione template `maggiore` eseguono la stessa operazione: confrontano i due parametri che hanno ricevuto in input e tornano il maggiore dei due.
+La grossa differenza fra questi due approcci<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> è che, mentre il tipo dei parametri del template è verificato dal compilatore, la macro è una banale sostituzione che non fa alcun controllo sulle variabili che utilizza. 
+L'istruzione:
+
+```
+cout << MAGGIORE('a', b) << endl; 
+```
+
+compara un carattere con un double e, senza dare problemi in compilazione torna il valore `97`, corrispondente al codice ASCII della lettera `a`.
+Al contrario, l'istruzione:
+
+```
+int   a = 10;
+short b = 0;
+cout << maggiore(a, b) << endl;  
+```
+
+causa un errore di compilazione perché i due parametri sono di tipo differente:
+
+```
+> g++ src/cpp/polimorfismo-template.cpp -o src/out/esempio
+src/cpp/polimorfismo-template.cpp:52:13: 
+    error: no matching function for call to 'maggiore'
+    cout << maggiore(a, b) << endl;    
+            ^~~~~~~~
+src/cpp/polimorfismo-template.cpp:22:3: 
+    note: candidate template ignored: 
+        deduced conflicting types for parameter 'T'
+      ('int' vs. 'short')
+T maggiore (T x, T y) {
+  ^
+```
+
+La dichiarazione di una <i id="classi-template">classe template</i> ha questa forma:
+
+<p class="code">
+<b>template <class</b> <i>identificatore</i><b>></b> <i>dichiarazione</i>;
+</p>
+
+La lista dei parametri fra i simboli `<>` può contenere uno o più simboli per i tipi dato gestiti dalla classe.
+Anche l'utilizzo di queste classi è simile a quello delle funzioni template:
+
+```
+{% include_relative src/polimorfismo-classe-template.cpp %}
+```
 
 <hr id="dottrina">
 
