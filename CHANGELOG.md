@@ -1,3 +1,6 @@
+## 0.25.5 (June 06, 2021)
+  - Redazione del testo su funzioni e classi template
+
 ## 0.25.4 (June 05, 2021)
   - Redazione del paragrafo sulle classi e funzioni template
 
