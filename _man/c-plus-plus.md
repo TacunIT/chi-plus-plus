@@ -209,7 +209,7 @@ public:
 
 Il problema è che più codice scrivi, più è probabile che farai degli errori e meno facile sarà correggerli.
 Al contrario, i programmi con meno righe di codice sono più affidabili e più facili da correggere o da modificare.   
-Il C++ ci aiuta in questo senso perché permette il <i id="polimorfismo">polimorfismo</i>, ovvero la capacità di una funzione o di un operatore di svolgere il proprio compito indipendentemente dal tipo di dato che deve gestire.
+Il C++ ci aiuta in questo senso perché permette il <id="polimorfismo">polimorfismo</i>, ovvero la capacità di una funzione o di un operatore di svolgere il proprio compito indipendentemente dal tipo di dato che deve gestire.
 Se riscriviamo la classe `Monta` usando, al posto dei parametri di tipo `Cavallo`, dei parametri che hanno il tipo della classe base `Animale`:
 
 ```
@@ -276,7 +276,7 @@ cout << "BARDOTTO\n" << bardotto << endl;
 ```
 
 non è il massimo dell'efficienza, sia perché potremmo sbagliarci ad accoppiare la specie dei genitori con il nome del figlio, sia perché le istruzioni devono essere ripetute per ciascun oggetto. 
-Per risolvere il primo difetto possiamo aggiungere alla classe `Monta` un attributo e un metodo per definire autonomamente che tipo di genia venga prodotta dalla copula:
+Per risolvere il primo difetto possiamo aggiungere alla classe `Monta` un attributo e un metodo per definire autonomamente che tipo di genìa venga prodotta dalla copula:
 <a id="membro"></a>
 ```
 string   _esito;
@@ -298,7 +298,7 @@ void setEsito() {
 ```
 
 ma anche così dovremo comunque riscrivere quattro righe di codice per modificare l'output del programma: un approccio inaccettabile per i sistemi di produzione, dove le entità da gestire possono essere migliaia.
-Possiamo risolvere questo problema grazie alla *generic programming* e al modo in cui viene implementata nel C++: le classi *template*:
+Possiamo risolvere questo problema grazie al *generic programming* e al modo in cui viene implementato nel C++: le classi <i id="template">template</i>:
 
 ```
 template < class T> class list;
@@ -423,7 +423,7 @@ ESITO:   puledro
 
 ```
 
-Oltre alle classi template predefinite della *Standard Template Library*, il C++ permette di definire le proprie classi template, ma di questo parleremo a tempo debito.  
+Oltre alle classi template predefinite della *Standard Template Library*, il C++ permette di definire le proprie classi template, ma di questo parleremo <a href="/man/polimorfismo#template" class="xref">a tempo debito</a>.  
 Queste caratteristche, unite alla compatibilità con il codice scritto in C, fecero di C++ il linguaggio *object-oriented* più utilizzato degli anni '90.
 L'avvento, alla fine del Secolo, del linguaggio con la "J", quello che ha bisogno di un sistema di *garbage collecion* per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un'idea di quello che sarebbe stato il millennio che ci si presentava davanti.
 Non a caso, Stroustrsup disse:
