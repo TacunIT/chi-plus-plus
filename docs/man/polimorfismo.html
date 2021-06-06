@@ -602,24 +602,6 @@ public:
 <hr id="template" />
 
 <p>L’ultima cosa di cui ti devo parlare, a proposito del polimorfismo, sono i <em>template</em>.<br />
-Nel codice che ti ho mostrato all’inizio di questa lezione, puoi vedere un esempio di classe template:</p>
-
-<pre><code>list&lt;Monta&gt; monte;
-</code></pre>
-
-<p>La classe <code>list</code> è una delle classi template della <em>Standard Template Library</em> (o: <em>STL</em>) del C++.
-La STL è una libreria di classi e di funzioni che permettono di risolvere dei problemi comuni della programmazione, come la memorizzazione, l’ordinamento o la ricerca di una serie di dati.
-Le componenti della STL sono:</p>
-
-<ul>
-  <li>una collezione di <strong>algoritmi</strong> che permettono di eseguire delle operazioni di ordinamento e ricerca su insiemi di dati;</li>
-  <li>una libreria di <strong>container</strong> che permettono di immagazzinare oggetti e dati;</li>
-  <li>degli <strong>iteratori</strong> che consentono di scorrere il contenuto dei container;</li>
-  <li>degli oggetti-funzioni, o: <strong>functors</strong>, che incapsulano una specifica funzione.</li>
-</ul>
-
-<p>Grazie alla <em>generic programming</em> offerta dai template possiamo utilizzare questi elementi della STL con qualsiasi tipo di dato, anche quelli definiti dall’utente.
-Prima di parlarti della <em>Standard Template Library</em>, però, devo spiegarti bene cosa siano una funzione o una classe template.<br />
 I template, nel C++, sono dei modelli che si utilizzano per definire delle funzioni o delle classi polivalenti.
 Se uno stesso compito può essere eseguito in maniera simile su parametri di tipo differente, invece di scrivere una serie di funzioni o di classi identiche, ma con parametri diversi, si può scrivere una funzione o una classe template che possa essere richiamata con parametri di tipo differente.</p>
 
@@ -817,6 +799,25 @@ int main ()
 }
 
 </code></pre>
+
+<!--
+Nel codice che ti ho mostrato all'inizio di questa lezione, puoi vedere un esempio di classe template:
+
+```
+list<Monta> monte;
+```
+
+La classe `list` è una delle classi template della *Standard Template Library* (o: *STL*) del C++.
+La STL è una libreria di classi e di funzioni che permettono di risolvere dei problemi comuni della programmazione, come la memorizzazione, l'ordinamento o la ricerca di una serie di dati.
+Le componenti della STL sono: 
+
+- una collezione di **algoritmi** che permettono di eseguire delle operazioni di ordinamento e ricerca su insiemi di dati;
+- una libreria di **container** che permettono di immagazzinare oggetti e dati; 
+- degli **iteratori** che consentono di scorrere il contenuto dei container;
+- degli oggetti-funzioni, o: **functors**, che incapsulano una specifica funzione.
+
+@todo: usare l'esempio dei cavalli per illustrare array e iteratori, poi fare un esempio di functor
+-->
 
 <hr id="dottrina" />
 
