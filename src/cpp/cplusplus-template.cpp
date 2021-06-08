@@ -86,7 +86,10 @@ private:
     Animale* _femmina;
     Data     _giorno;
     string   _esito;
-    /** Funzione privata per la definizione dell'esito della monta */
+    /** 
+    *   Funzione privata per la definizione 
+    *   dell'esito della monta 
+    */
     void setEsito() {
         if(strcmp(_maschio->getSpecie(),"Asino") == 0) {
             if(strcmp(_femmina->getSpecie(),"Asino") == 0) {
@@ -111,7 +114,7 @@ public:
         setEsito();
     }
     /** Operatore di output, "friend" della classe Monta */
-    friend ostream& operator << (ostream& os, const Monta& copula) {
+    friend ostream& operator<<(ostream& os, const Monta& copula) {
         os << "DATA:    " << asctime(localtime(&copula._giorno)) 
            << "MASCHIO: " << *copula._maschio 
            << "FEMMINA: " << *copula._femmina

@@ -158,7 +158,10 @@ private:
     Animale* _femmina;
     Data     _giorno;
     string   _esito;
-    /** Funzione privata per la definizione dell'esito della monta */
+    /** 
+    *   Funzione privata per la definizione 
+    *   dell'esito della monta 
+    */
     void setEsito() {
         if(strcmp(_maschio-&gt;getSpecie(),"Asino") == 0) {
             if(strcmp(_femmina-&gt;getSpecie(),"Asino") == 0) {
@@ -183,7 +186,7 @@ public:
         setEsito();
     }
     /** Operatore di output, "friend" della classe Monta */
-    friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula) {
+    friend ostream&amp; operator&lt;&lt;(ostream&amp; os, const Monta&amp; copula) {
         os &lt;&lt; "DATA:    " &lt;&lt; asctime(localtime(&amp;copula._giorno)) 
            &lt;&lt; "MASCHIO: " &lt;&lt; *copula._maschio 
            &lt;&lt; "FEMMINA: " &lt;&lt; *copula._femmina
@@ -649,7 +652,7 @@ T funz (N n) {
 }
 </code></pre>
 
-<p>La chiamata delle funzioni template è simile a quella delle funzioni ordinarie; devi solo ricordarti di specificare il tipo dei parametri che dovrà gestire:</p>
+<p>La chiamata delle funzioni template è simile a quella delle funzioni ordinarie, con l’aggiunta del tipo dei parametri che devono essere gestiti:</p>
 
 <pre><code>cout &lt;&lt; maggiore&lt;int&gt;   (  9,  12) &lt;&lt; endl;    
 cout &lt;&lt; maggiore&lt;double&gt;(0.4, 1.2) &lt;&lt; endl;    
@@ -746,14 +749,14 @@ T maggiore (T x, T y) {
   ^
 </code></pre>
 
-<p>La dichiarazione di una <i id="classi-template">classe template</i> ha questa forma:</p>
+<p>La dichiarazione di una <i id="classi-template">classe template</i> ha la forma:</p>
 
 <p class="code">
 <b>template &lt;class</b> <i>identificatore</i><b>&gt;</b> <i>dichiarazione</i>;
 </p>
 
 <p>La lista dei parametri fra i simboli <code>&lt;&gt;</code> può contenere uno o più simboli per i tipi dato gestiti dalla classe.
-Anche l’utilizzo di queste classi è simile a quello delle funzioni template:</p>
+L’utilizzo di queste classi è simile a quello delle funzioni template:</p>
 
 <pre><code>/** 
  * @file src/polimorfismo-classe-template.cpp
@@ -800,23 +803,116 @@ int main ()
 
 </code></pre>
 
+<p>Il codice che ti ho mostrato all’inizio di questa lezione utilizza una classe template:</p>
+
+<pre><code>list&lt;Monta&gt; monte;
+</code></pre>
+
+<p>La classe <code>list</code> è una delle classi della <em>Standard Template Library</em> del C++, una libreria di classi e di funzioni che permettono di risolvere dei problemi comuni della programmazione, come la memorizzazione, l’ordinamento o la ricerca di una serie di dati.
+Le componenti della STL è sono:</p>
+
+<ul>
+  <li>una libreria di <strong>container</strong> che permettono di immagazzinare oggetti e dati;</li>
+  <li>degli <strong>iteratori</strong> che consentono di scorrere il contenuto dei container;</li>
+  <li>una collezione di <strong>algoritmi</strong> che permettono di eseguire delle operazioni di ordinamento e ricerca su insiemi di dati;</li>
+  <li>degli oggetti-funzioni, o: <strong>functors</strong>, che incapsulano una specifica funzione.</li>
+</ul>
+
+<p>La classe <code>list</code> è un esempio di container e rappresenta un elenco di elementi memorizzati in aree non contigue della memoria, al contrario, della classe <code>vector</code>, che implementa un elenco di elementi memorizzati in un’unica area di memoria, così come avviene per gli array del C.<br />
+Tutti i vettori della STL posseggono delle funzioni membro che consentono di gestirne gli elementi; la funzione <code>push_back</code>, per esempio, aggiunge un elemento in coda alla lista:</p>
+
+<pre><code>monte.push_back(Monta(cavallo, giumenta)); 
+monte.push_back(Monta (asino, asina));       
+monte.push_back(Monta (asino, giumenta));     
+monte.push_back(Monta (cavallo, asina));
+</code></pre>
+
+<p>Gli <i id="iteratori-stl">iteratori</i> sono dei costrutti che permettono di scorrere il contenuto di un container, individuandone gli elementi.
+Ne abbiamo utilizzato uno nell’istruzione:</p>
+
+<pre><code>list&lt;Monta&gt;::iterator it;
+for (it=monte.begin(); it!=monte.end(); it++) {
+    cout &lt;&lt; *it &lt;&lt; endl;
+}
+</code></pre>
+
+<p>La prima istruzione del ciclo <code>for</code> assegna all’iteratore <code>it</code> il primo elemento della lista, tornato dalla funzione membro <code>monte.begin</code>.
+La seconda istruzione, verifica che l’iteratore sia differente da <code>monte.end</code>, che punta alla fine della lista.
+La terza istruzione incrementa l’iteratore di una posizione e dimostra come la ridefinizione di un operatore per una classe renda il codice più facile da leggere: anche se tu non hai mai visto una classe template, sai che quella istruzione incrementa il valore di <code>it</code> di un’unità.<br />
+Gli <i id="algoritmi-stl">algoritmi</i> della STL, definiti nell’header <code>&lt;algorithm&gt;</code> sono funzioni template che permettono di individuare, copiare, ordinare, unire o eliminare i dati all’interno di un container.</p>
+
+<!-- @todo: aggiungere commenti -->
+<pre><code>/** 
+ * @file src/polimorfismo-algoritmi.cpp
+ * Esempio di utilizzo degli algoritmi della STL.
+ */
+
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+int main()
+{
+    vector&lt;int&gt; vect;
+    
+    vect.push_back(10);
+    vect.push_back(70);
+    vect.push_back(21);
+    vect.push_back(49);
+    vect.push_back(35);
+
+    cout &lt;&lt; *min_element(vect.begin(), vect.end()) &lt;&lt; endl;
+    cout &lt;&lt; *max_element(vect.begin(), vect.end()) &lt;&lt; endl;
+    
+    vector&lt;int&gt;::iterator i;
+    for(i = vect.begin(); i != vect.end(); i++) {
+        cout &lt;&lt; *i &lt;&lt; " ";
+    }
+    cout &lt;&lt; endl;
+
+    int n = vect.size();
+    sort(vect.begin(), vect.end());
+    for (int i=0; i&lt;n; i++) {
+        cout &lt;&lt; vect[i] &lt;&lt; " ";       
+    }
+    cout &lt;&lt; endl;
+
+    reverse(vect.begin(), vect.end());
+    for (int i=0; i&lt;n; i++) {
+        cout &lt;&lt; vect[i] &lt;&lt; " ";       
+    }
+    cout &lt;&lt; endl;
+
+ 
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili ed esegui questo codice, ottieni:</p>
+
+<pre><code>&gt; g++ src/cpp/polimorfismo-algoritmi.cpp -o src/out/esempio
+&gt; src/out/esempio                                          
+10
+70
+10 70 21 49 35 
+10 21 35 49 70 
+70 49 35 21 10 
+</code></pre>
+
 <!--
-Nel codice che ti ho mostrato all'inizio di questa lezione, puoi vedere un esempio di classe template:
-
-```
-list<Monta> monte;
-```
-
-La classe `list` è una delle classi template della *Standard Template Library* (o: *STL*) del C++.
-La STL è una libreria di classi e di funzioni che permettono di risolvere dei problemi comuni della programmazione, come la memorizzazione, l'ordinamento o la ricerca di una serie di dati.
-Le componenti della STL sono: 
-
-- una collezione di **algoritmi** che permettono di eseguire delle operazioni di ordinamento e ricerca su insiemi di dati;
-- una libreria di **container** che permettono di immagazzinare oggetti e dati; 
-- degli **iteratori** che consentono di scorrere il contenuto dei container;
-- degli oggetti-funzioni, o: **functors**, che incapsulano una specifica funzione.
+Le function-class o: <i id="functors-stl">functors</i>, meritano un discorso a parte..
 
 @todo: usare l'esempio dei cavalli per illustrare array e iteratori, poi fare un esempio di functor
+
+Ne abbiamo già visto un <a href="/man/c-plus-plus#polimorfismo" class="xref">esempio</a> quando abbiamo detto che sarebbe stato possibile invertire l'ordine della lista delle monte con l'istruzione:
+
+```
+monte.reverse();
+```
+
 -->
 
 <hr id="dottrina" />
