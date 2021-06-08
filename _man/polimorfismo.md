@@ -345,7 +345,7 @@ T funz (N n) {
 }
 ```
 
-La chiamata delle funzioni template è simile a quella delle funzioni ordinarie; devi solo ricordarti di specificare il tipo dei parametri che dovrà gestire:
+La chiamata delle funzioni template è simile a quella delle funzioni ordinarie, con l'aggiunta del tipo dei parametri che devono essere gestiti:
 
 ```
 cout << maggiore<int>   (  9,  12) << endl;    
@@ -392,36 +392,86 @@ T maggiore (T x, T y) {
   ^
 ```
 
-La dichiarazione di una <i id="classi-template">classe template</i> ha questa forma:
+La dichiarazione di una <i id="classi-template">classe template</i> ha la forma:
 
 <p class="code">
 <b>template <class</b> <i>identificatore</i><b>></b> <i>dichiarazione</i>;
 </p>
 
 La lista dei parametri fra i simboli `<>` può contenere uno o più simboli per i tipi dato gestiti dalla classe.
-Anche l'utilizzo di queste classi è simile a quello delle funzioni template:
+L'utilizzo di queste classi è simile a quello delle funzioni template:
 
 ```
 {% include_relative src/polimorfismo-classe-template.cpp %}
 ```
 
-<!--
-Nel codice che ti ho mostrato all'inizio di questa lezione, puoi vedere un esempio di classe template:
+Il codice che ti ho mostrato all'inizio di questa lezione utilizza una classe template:
 
 ```
 list<Monta> monte;
 ```
 
-La classe `list` è una delle classi template della *Standard Template Library* (o: *STL*) del C++.
-La STL è una libreria di classi e di funzioni che permettono di risolvere dei problemi comuni della programmazione, come la memorizzazione, l'ordinamento o la ricerca di una serie di dati.
-Le componenti della STL sono: 
+La classe `list` è una delle classi della *Standard Template Library* del C++, una libreria di classi e di funzioni che permettono di risolvere dei problemi comuni della programmazione, come la memorizzazione, l'ordinamento o la ricerca di una serie di dati.
+Le componenti della STL è sono: 
 
-- una collezione di **algoritmi** che permettono di eseguire delle operazioni di ordinamento e ricerca su insiemi di dati;
 - una libreria di **container** che permettono di immagazzinare oggetti e dati; 
 - degli **iteratori** che consentono di scorrere il contenuto dei container;
+- una collezione di **algoritmi** che permettono di eseguire delle operazioni di ordinamento e ricerca su insiemi di dati;
 - degli oggetti-funzioni, o: **functors**, che incapsulano una specifica funzione.
 
+La classe `list` è un esempio di container e rappresenta un elenco di elementi memorizzati in aree non contigue della memoria, al contrario, della classe `vector`, che implementa un elenco di elementi memorizzati in un'unica area di memoria, così come avviene per gli array del C.  
+Tutti i vettori della STL posseggono delle funzioni membro che consentono di gestirne gli elementi; la funzione `push_back`, per esempio, aggiunge un elemento in coda alla lista:
+
+```
+monte.push_back(Monta(cavallo, giumenta)); 
+monte.push_back(Monta (asino, asina));       
+monte.push_back(Monta (asino, giumenta));     
+monte.push_back(Monta (cavallo, asina));
+```
+
+Gli <i id="iteratori-stl">iteratori</i> sono dei costrutti che permettono di scorrere il contenuto di un container, individuandone gli elementi.
+Ne abbiamo utilizzato uno nell'istruzione: 
+
+```
+list<Monta>::iterator it;
+for (it=monte.begin(); it!=monte.end(); it++) {
+    cout << *it << endl;
+}
+```
+
+La prima istruzione del ciclo `for` assegna all'iteratore `it` il primo elemento della lista, tornato dalla funzione membro `monte.begin`.
+La seconda istruzione, verifica che l'iteratore sia differente da `monte.end`, che punta alla fine della lista.
+La terza istruzione incrementa l'iteratore di una posizione e dimostra come la ridefinizione di un operatore per una classe renda il codice più facile da leggere: anche se tu non hai mai visto una classe template, sai che quella istruzione incrementa il valore di `it` di un'unità.  
+Gli <i id="algoritmi-stl">algoritmi</i> della STL, definiti nell'header `<algorithm>` sono funzioni template che permettono di individuare, copiare, ordinare, unire o eliminare i dati all'interno di un container.
+
+<!-- @todo: aggiungere commenti -->
+```
+{% include_relative src/polimorfismo-algoritmi.cpp %}
+```
+
+Se compili ed esegui questo codice, ottieni:
+
+```
+> g++ src/cpp/polimorfismo-algoritmi.cpp -o src/out/esempio
+> src/out/esempio                                          
+10
+70
+10 70 21 49 35 
+10 21 35 49 70 
+70 49 35 21 10 
+```
+
+<!--
+Le function-class o: <i id="functors-stl">functors</i>, meritano un discorso a parte..
+
 @todo: usare l'esempio dei cavalli per illustrare array e iteratori, poi fare un esempio di functor
+
+Ne abbiamo già visto un <a href="/man/c-plus-plus#polimorfismo" class="xref">esempio</a> quando abbiamo detto che sarebbe stato possibile invertire l'ordine della lista delle monte con l'istruzione:
+
+```
+monte.reverse();
+```
+
 -->
 
 <hr id="dottrina">
