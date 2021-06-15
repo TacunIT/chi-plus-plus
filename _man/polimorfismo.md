@@ -295,7 +295,7 @@ Puoi risparmiarti questa seccatura ridefinendo solo il com­portamento degli ope
 
 L'ultima cosa di cui ti devo parlare, a proposito del polimorfismo, sono i *template*.  
 I template, nel C++, sono dei modelli che si utilizzano per definire delle funzioni o delle classi polivalenti.
-Se uno stesso compito può essere eseguito in maniera simile su parametri di tipo differente, invece di scrivere una serie di funzioni o di classi identiche, ma con parametri diversi, si può scrivere una funzione o una classe template che può essere richiamata con parametri di tipo differente.
+Se uno stesso compito può essere eseguito in maniera simile su parametri di tipo differente, invece di scrivere delle funzioni o delle classi identiche per ciascun tipo di parametro, si può scrivere una funzione o una classe template e richiamarla ogni volta con il tipo di parametro appropriato:
 
 ```
 int    somma(int    a, int    b) { return a + b; }
@@ -303,10 +303,10 @@ float  somma(float  a, float  b) { return a + b; }
 double somma(double a, double b) { return a + b; }
 
 template <class T> 
-somma(T a Tb) { return a + b; }
+somma(T a, T b) { return a + b; }
 ```
 
-Quando il compilatore trova nel codice un template, sia esso la dichiarazione di una classe o una chiamata a funzione, la sostituisce con il codice corrispondente, così come avviene per le <a href="/man/preprocessore#macro" class="xref">macro-istruzioni del precompilatore</a>, ma, a differenza di quello che avviene per le macro, il tipo dei parametri del template è sottoposto a controllo così come il resto del codice.  
+Quando il compilatore trova nel codice un template, sia esso la dichiarazione di una classe o una chiamata a funzione, la sostituisce con il codice corrispondente, così come avviene per le <a href="/man/preprocessore#macro" class="xref">macro-istruzioni del precompilatore</a>, ma, a differenza di quello che avviene per le macro, il tipo dei parametri del template è sottoposto a uno stretto controllo, così come il resto del codice.  
 Il formato per la dichiarazione di una <i id="funzioni-template">funzione template</i> è:
 
 <p class="code">
@@ -419,7 +419,8 @@ Le componenti della STL è sono:
 - una collezione di **algoritmi** che permettono di eseguire delle operazioni di ordinamento e ricerca su insiemi di dati;
 - degli oggetti-funzioni, o: **functors**, che incapsulano una specifica funzione.
 
-La classe `list` è un esempio di container e rappresenta un elenco di elementi memorizzati in aree non contigue della memoria, al contrario, della classe `vector`, che implementa un elenco di elementi memorizzati in un'unica area di memoria, così come avviene per gli array del C.  
+La classe `list` è un esempio di container e rappresenta un elenco di elementi memorizzati in aree non contigue della memoria. 
+Al contrario, la classe `vector` implementa un elenco di elementi memorizzati in un'unica area di memoria, così come avviene per gli array del C.  
 Tutti i vettori della STL posseggono delle funzioni membro che consentono di gestirne gli elementi; la funzione `push_back`, per esempio, aggiunge un elemento in coda alla lista:
 
 ```
@@ -441,7 +442,7 @@ for (it=monte.begin(); it!=monte.end(); it++) {
 
 La prima istruzione del ciclo `for` assegna all'iteratore `it` il primo elemento della lista, tornato dalla funzione membro `monte.begin`.
 La seconda istruzione, verifica che l'iteratore sia differente da `monte.end`, che punta alla fine della lista.
-La terza istruzione incrementa l'iteratore di una posizione e dimostra come la ridefinizione di un operatore per una classe renda il codice più facile da leggere: anche se tu non hai mai visto una classe template, sai che quella istruzione incrementa il valore di `it` di un'unità.  
+La terza istruzione incrementa l'iteratore di una posizione e dimostra come la ridefinizione di un operatore per una classe renda il codice più facile da leggere: anche se tu non hai mai visto una classe template, capisci subito che quella istruzione incrementa il valore di `it` di un'unità.  
 Gli <i id="algoritmi-stl">algoritmi</i> della STL, definiti nell'header `<algorithm>` sono funzioni template che permettono di individuare, copiare, ordinare, unire o eliminare i dati all'interno di un container.
 
 <!-- @todo: aggiungere commenti -->
