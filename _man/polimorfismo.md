@@ -295,7 +295,7 @@ Puoi risparmiarti questa seccatura ridefinendo solo il com­portamento degli ope
 
 L'ultima cosa di cui ti devo parlare, a proposito del polimorfismo, sono i *template*.  
 I template, nel C++, sono dei modelli che si utilizzano per definire delle funzioni o delle classi polivalenti.
-Se uno stesso compito può essere eseguito in maniera simile su parametri di tipo differente, invece di scrivere una serie di funzioni o di classi identiche, ma con parametri diversi, si può scrivere una funzione o una classe template che possa essere richiamata con parametri di tipo differente.
+Se uno stesso compito può essere eseguito in maniera simile su parametri di tipo differente, invece di scrivere una serie di funzioni o di classi identiche, ma con parametri diversi, si può scrivere una funzione o una classe template che può essere richiamata con parametri di tipo differente.
 
 ```
 int    somma(int    a, int    b) { return a + b; }
