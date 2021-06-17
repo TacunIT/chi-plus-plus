@@ -1,3 +1,7 @@
+## 0.25.7 (June 17, 2021)
+  - Completata prima stesura della sezione tecnica del capitolo sul Polimorfismo
+  - Aggiunta nota su Git e versionamento
+
 ## 0.25.6 (June 06, 2021)
   - Aggisunto paragrafo su macro-istruzioni al capitolo sul preprocessore
 
