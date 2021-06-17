@@ -470,26 +470,55 @@ Le function-class o: <i id="functors-stl">functors</i> sono delle classi che rid
 Utilizzati così, i *functor* hanno poco senso, ma possono essere (e sono) molto utili quando si utilizzano quelle funzioni della STl che elaborano tutti gli elementi di un container, come per esempio la funzione `transform`:
 
 ```
-{% include_relative src/polimorfismo-transform-rot.cpp %}
+{% include_relative src/polimorfismo-rot13.cpp %}
 ```
 Se compili ed esegui questo programma, otterrai :
 
 ```
-> g++ src/cpp/polimorfismo-transform-rot.cpp -o src/out/esempio     
-> ./src/out/esempio                                                 
+> g++ src/cpp/polimorfismo-rot13.cpp -o src/out/esempio     
+> ./src/out/esempio
 CvccbCyhgb
 PippoPluto
 ```
 
-<!--
-
-Ne abbiamo già visto un <a href="/man/c-plus-plus#polimorfismo" class="xref">esempio</a> quando abbiamo detto che sarebbe stato possibile invertire l'ordine della lista delle monte con l'istruzione:
+Le funzioni ordinarie ti permettono di sfruttare l'algoritmo `transform` per cifrare un testo con un valore fisso, ma non puoi fare la stessa cosa utilizzando una chiave variabile, perché il quarto parametro non accetta funzioni con più di un parametro. 
+Se provassi a utilizzarlo con qualcosa come:
 
 ```
-monte.reverse();
+unsigned char cifra(unsigned char c, int chiave) 
+{ 
+    return c + chiave;
+}
 ```
 
--->
+otterresti l'errore:
+
+```
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/algorithm:1855:34: error: too few arguments to
+      function call, expected 2, have 1
+        *__result = __op(*__first);
+                    ~~~~         ^
+src/cpp/polimorfismo-transform-chiave.cpp:25:5: note: in instantiation of function template specialization
+      'std::__1::transform<std::__1::__wrap_iter<char *>, std::__1::__wrap_iter<char *>, unsigned char
+      (*)(unsigned char, int)>' requested here
+    transform(
+    ^
+```
+
+È in questi casi che tornano utili i *functor*, perché possono essere inizializzati con uno o più valori specifici e poi essere utilizzati come funzioni unarie: 
+
+```
+{% include_relative src/polimorfismo-functor.cpp %}
+```
+
+Compilando ed eseguendo questo programma, ottieni :
+
+```
+> g++ src/cpp/polimorfismo-functor.cpp -o src/out/esempio
+> ./src/out/esempio
+QjqqpQmvup
+```
+che corrisponde ai caratteri della stringa *PippoPluto* incrementati di un'unità.
 
 <hr id="dottrina">
 
