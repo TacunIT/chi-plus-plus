@@ -462,10 +462,26 @@ Se compili ed esegui questo codice, ottieni:
 70 49 35 21 10 
 ```
 
-<!--
-Le function-class o: <i id="functors-stl">functors</i>, meritano un discorso a parte..
+Le function-class o: <i id="functors-stl">functors</i> sono delle classi che ridefiniscono il comportamento dell'operatore `()` e che possono quindi agire come se fossero delle funzioni:
 
-@todo: usare l'esempio dei cavalli per illustrare array e iteratori, poi fare un esempio di functor
+```
+{% include_relative src/polimorfismo-functor-stl.cpp %}
+```
+Utilizzati così, i *functor* hanno poco senso, ma possono essere (e sono) molto utili quando si utilizzano quelle funzioni della STl che elaborano tutti gli elementi di un container, come per esempio la funzione `transform`:
+
+```
+{% include_relative src/polimorfismo-transform-rot.cpp %}
+```
+Se compili ed esegui questo programma, otterrai :
+
+```
+> g++ src/cpp/polimorfismo-transform-rot.cpp -o src/out/esempio     
+> ./src/out/esempio                                                 
+CvccbCyhgb
+PippoPluto
+```
+
+<!--
 
 Ne abbiamo già visto un <a href="/man/c-plus-plus#polimorfismo" class="xref">esempio</a> quando abbiamo detto che sarebbe stato possibile invertire l'ordine della lista delle monte con l'istruzione:
 

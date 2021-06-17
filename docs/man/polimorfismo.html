@@ -903,10 +903,112 @@ int main()
 70 49 35 21 10 
 </code></pre>
 
-<!--
-Le function-class o: <i id="functors-stl">functors</i>, meritano un discorso a parte..
+<p>Le function-class o: <i id="functors-stl">functors</i> sono delle classi che ridefiniscono il comportamento dell’operatore <code>()</code> e che possono quindi agire come se fossero delle funzioni:</p>
 
-@todo: usare l'esempio dei cavalli per illustrare array e iteratori, poi fare un esempio di functor
+<pre><code>/** 
+ * @file src/polimorfismo-functor-stl.cpp
+ * Esempio di function objects della STL.
+ */
+
+#include &lt;iostream&gt;
+#include &lt;functional&gt;
+
+using namespace std;
+
+int main ()
+{
+    int a = 12;
+    int b = 4;
+
+    /** Dichiarazione di oggetti functor */
+    plus&lt;int&gt;       p;
+    minus&lt;int&gt;      m;
+    multiplies&lt;int&gt; x;
+    divides&lt;int&gt;    d;
+    modulus&lt;int&gt;    o;
+
+    /** Utilizzo degli oggetti come fossero delle funzioni */
+    cout &lt;&lt; "plus: "       &lt;&lt; p(a,b) &lt;&lt; endl;
+    cout &lt;&lt; "minus: "      &lt;&lt; m(a,b) &lt;&lt; endl;
+    cout &lt;&lt; "multiplies: " &lt;&lt; x(a,b) &lt;&lt; endl;
+    cout &lt;&lt; "divides: "    &lt;&lt; d(a,b) &lt;&lt; endl;
+    cout &lt;&lt; "modulus: "    &lt;&lt; o(a,b) &lt;&lt; endl;
+
+    /** "esegue"" l'oggetto o con nuovi parametri */
+    cout &lt;&lt; "modulus: "    &lt;&lt; o(a,5) &lt;&lt; endl;
+
+    return 0;
+}
+
+</code></pre>
+<p>Utilizzati così, i <em>functor</em> hanno poco senso, ma possono essere (e sono) molto utili quando si utilizzano quelle funzioni della STl che elaborano tutti gli elementi di un container, come per esempio la funzione <code>transform</code>:</p>
+
+<pre><code>/** 
+ * @file src/polimorfismo-transform-rot.cpp
+ * Trasformazione di una stringa con una funzione.
+ */
+
+#include &lt;string&gt;
+#include &lt;cctype&gt;
+#include &lt;iostream&gt;
+#include &lt;functional&gt;
+
+using namespace std;
+
+/** 
+*   Funzione che converte in rot13  
+*   Il ROT13 è un algoritmo di cifratura piuttosto banale, 
+*   perché incrementa di 13 il valore di ciascun carattere. 
+*   Non è un algoritmo realmente sicuro, però, perché per 
+*   decifrare il testo crittografato basta crittografarlo 
+*   di nuovo.  
+*/
+unsigned char rot13(unsigned char c) 
+{ 
+    unsigned char rot = c;
+    if (isalpha(c)) {
+        rot = ((tolower(c) - 'a') &lt; 14) ? c + 13 : c - 13;
+    }
+    return rot;
+}
+
+int main ()
+{
+    string pp("PippoPluto"); 
+
+    /** Elabora la stringa con la funzione transform */
+    transform(
+               pp.begin()   // inizio del container da modificare
+             , pp.end()     // fine del container da modificare
+             , pp.begin()   // container di output
+             , rot13        // funzione da applicare
+             );
+
+    cout &lt;&lt; pp &lt;&lt; endl; 
+
+    /** Rpetendo l'operazione, il testo torna normale. */
+    transform(
+               pp.begin()   
+             , pp.end()     
+             , pp.begin()   
+             , rot13        
+             );
+
+    cout &lt;&lt; pp &lt;&lt; endl; 
+    
+    return 0;
+}
+
+</code></pre>
+<p>Se compili ed esegui questo programma, otterrai :</p>
+
+<pre><code>&gt; g++ src/cpp/polimorfismo-transform-rot.cpp -o src/out/esempio     
+&gt; ./src/out/esempio                                                 
+CvccbCyhgb
+PippoPluto
+</code></pre>
+
+<!--
 
 Ne abbiamo già visto un <a href="/man/c-plus-plus#polimorfismo" class="xref">esempio</a> quando abbiamo detto che sarebbe stato possibile invertire l'ordine della lista delle monte con l'istruzione:
 
