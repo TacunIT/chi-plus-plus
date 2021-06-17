@@ -1,5 +1,5 @@
 /** 
- * @file src/polimorfismo-functor.cpp
+ * @file src/polimorfismo-functor-stl.cpp
  * Esempio di function objects della STL.
  */
 
@@ -8,29 +8,12 @@
 
 using namespace std;
 
-/** Classe che incapsula la funzione di output */
-class coutput {
-public:
-    /** 
-     * Ridefinizione dell'operatore () 
-     * come funzione template 
-     */
-    template<class T>
-    ostream& operator () (T n) {
-        cout << n << endl;
-        return cout;
-    }
-};
-
 int main ()
 {
     int a = 12;
     int b = 4;
 
-    /** Istanza della classe coutput */
-    coutput c; 
-
-    /** Functor della STL */
+    /** Dichiarazione di oggetti functor */
     plus<int>       p;
     minus<int>      m;
     multiplies<int> x;
@@ -44,12 +27,8 @@ int main ()
     cout << "divides: "    << d(a,b) << endl;
     cout << "modulus: "    << o(a,b) << endl;
 
-    /** Richiama l'oggetto con nuovi parametri */
+    /** "esegue"" l'oggetto o con nuovi parametri */
     cout << "modulus: "    << o(a,5) << endl;
 
-    /** Output con la classe coutput */
-    c(23);
-    c("PippoPluto");
-    
     return 0;
 }
