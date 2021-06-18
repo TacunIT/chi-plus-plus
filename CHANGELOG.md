@@ -1,3 +1,6 @@
+## 0.25.8 (June 18, 2021)
+  - Revisione del testo del capitolo sul polimorfismo
+
 ## 0.25.7 (June 17, 2021)
   - Completata prima stesura della sezione tecnica del capitolo sul Polimorfismo
   - Aggiunta nota su Git e versionamento
