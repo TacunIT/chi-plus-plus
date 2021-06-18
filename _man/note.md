@@ -70,6 +70,7 @@ quote:
             R. <span>Dawkins</span>, 
             <i>L'Orologiaio Cieco</i>, 
             Mondadori, Milano, 2016 
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
 
     </ol>
@@ -381,8 +382,7 @@ quote:
         <li id="miti">
             G. <span>de Santillana</span>, H. <span>von Dechend</span>, 
             <i>Il mulino di Amleto</i>, 
-            Adelphi, Milano, 1983
-            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+            Adelphi, Milano, 1983 <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="fusto">
             <a href="https://gianlucafusto.com/"
@@ -398,7 +398,8 @@ quote:
     <ol>
         <li id="dawkins-analogia">
             R. <span>Dawkins</span>, 
-            <i>Op.cit.</i>,             
+            <i>L'Orologiaio Cieco</i>, 
+            Mondadori, Milano, 2016 
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="banda-onesti">

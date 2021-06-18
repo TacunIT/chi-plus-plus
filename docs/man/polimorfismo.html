@@ -658,7 +658,7 @@ T funz (N n) {
 cout &lt;&lt; maggiore&lt;double&gt;(0.4, 1.2) &lt;&lt; endl;    
 cout &lt;&lt; maggiore&lt;char&gt;  ('a', 'z') &lt;&lt; endl;    
 </code></pre>
-
+<!-- @todo: verificare i casi in cui non c'è specifica del tipo di dato -->
 <p>Il prossimo esempio mostra la differenza fra una macro del precompilatore e una funzione template:
 <!-- NOTA: se si cambia o si rimuove la macro nel codice, va aggiornato il testo del capitolo sul preprocessore --></p>
 <pre><code>/** 
@@ -720,7 +720,7 @@ int main ()
 </code></pre>
 
 <p>La macro <code>MAGGIORE</code> e la funzione template <code>maggiore</code> eseguono la stessa operazione: confrontano i due parametri che hanno ricevuto in input e tornano il maggiore dei due.
-La grossa differenza fra questi due approcci<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> è che, mentre il tipo dei parametri del template è verificato dal compilatore, la macro è una banale sostituzione che non fa alcun controllo sulle variabili che utilizza. 
+La grossa differenza fra questi due approcci<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> è che, mentre il tipo dei parametri del template è verificato dal compilatore, la macro è una banale sostituzione che non fa alcun controllo sulle variabili che utilizza.
 L’istruzione:</p>
 
 <pre><code>cout &lt;&lt; MAGGIORE('a', b) &lt;&lt; endl; 
@@ -802,6 +802,8 @@ int main ()
 }
 
 </code></pre>
+
+<hr id="stl" />
 
 <p>Il codice che ti ho mostrato all’inizio di questa lezione utilizza una classe template:</p>
 
@@ -956,7 +958,7 @@ int main ()
 using namespace std;
 
 /** 
-*   Funzione che converte in rot13  
+*   Funzione che converte i caratteri di una stringa in rot13  
 *   Il ROT13 è un algoritmo di cifratura piuttosto banale, 
 *   perché incrementa di 13 il valore di ciascun carattere. 
 *   Non è un algoritmo realmente sicuro, però, perché per 
@@ -1109,7 +1111,7 @@ Quel senza Dio di Dawkins, ha detto che:</p>
 Entusiasmi a parte, le mappe e le immagini da satellite hanno diverse analogie con le discipline metafisiche.
 Anche le mappe e le immagini, come la metafisica, sono costrette a rappresentare il loro soggetto a un rapporto di scala ridotto e con due sole dimensioni in vece di tre (o di quattro se, oltre alla profondità, vuoi considerare anche il tempo).
 Anche le mappe e le immagini, per questo motivo, devono rappresentare il loro soggetto per mezzo di analogie: le carte topografiche usano delle linee altimetriche e dei simboli; le immagini satellitari usano dei pixel o dei piccoli punti di colore.
-In nessuno dei due casi ciò che noi vediamo è davvero ciò che rappresenta; è il nostro cervello che decide di crederlo tale: nel caso della carta topografica, perché la legenda ci permette di definire una correlazione fra significato e significante; nel caso dell’immagine, perché il nostro occhio riconosce in quelle combinazioni di pixel o di punti di colore degli alberi, mare o case.<br />
+In nessuno dei due casi ciò che noi vediamo è davvero ciò che rappresenta; è il nostro cervello che decide di crederlo tale: nel caso della carta topografica, perché la legenda ci permette di definire una correlazione fra significato e significante; nel caso dell’immagine, perché il nostro occhio riconosce in quelle combinazioni di pixel o di punti di colore degli alberi, il mare o delle case.<br />
 Un’altra analogia, conseguenza dei due punti precedenti, è che è sbagliato confondere i simboli con ciò che rappresentano: i quadratini scuri delle mappe <em>non</em> sono case; i punti colorati delle immagini <em>non</em> sono un bosco.
 Mappe e immagini hanno senso solo a un certo livello di lettura; se lo oltrepassiamo, se cerchiamo di ottenere più informazioni o verosimiglianza avvicinando lo sguardo, otteniamo l’effetto opposto, perché i simboli si rivelano per quello che sono: punti colorati o linee su un foglio. 
 Questo però non vuol dire che ciò che rappresentano sia falso, ma che noi non stiamo guardando con <em>il giusto paio di occhi</em>, come direbbe Hunter Thompson.<br />

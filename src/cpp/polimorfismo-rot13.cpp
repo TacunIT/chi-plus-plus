@@ -11,7 +11,7 @@
 using namespace std;
 
 /** 
-*   Funzione che converte in rot13  
+*   Funzione che converte i caratteri di una stringa in rot13  
 *   Il ROT13 è un algoritmo di cifratura piuttosto banale, 
 *   perché incrementa di 13 il valore di ciascun carattere. 
 *   Non è un algoritmo realmente sicuro, però, perché per 
