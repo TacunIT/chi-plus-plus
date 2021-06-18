@@ -606,17 +606,17 @@ public:
 
 <p>L’ultima cosa di cui ti devo parlare, a proposito del polimorfismo, sono i <em>template</em>.<br />
 I template, nel C++, sono dei modelli che si utilizzano per definire delle funzioni o delle classi polivalenti.
-Se uno stesso compito può essere eseguito in maniera simile su parametri di tipo differente, invece di scrivere una serie di funzioni o di classi identiche, ma con parametri diversi, si può scrivere una funzione o una classe template che può essere richiamata con parametri di tipo differente.</p>
+Se uno stesso compito può essere eseguito in maniera simile su parametri di tipo differente, invece di scrivere delle funzioni o delle classi identiche per ciascun tipo di parametro, si può scrivere una funzione o una classe template e richiamarla ogni volta con il tipo di parametro appropriato:</p>
 
 <pre><code>int    somma(int    a, int    b) { return a + b; }
 float  somma(float  a, float  b) { return a + b; }
 double somma(double a, double b) { return a + b; }
 
 template &lt;class T&gt; 
-somma(T a Tb) { return a + b; }
+somma(T a, T b) { return a + b; }
 </code></pre>
 
-<p>Quando il compilatore trova nel codice un template, sia esso la dichiarazione di una classe o una chiamata a funzione, la sostituisce con il codice corrispondente, così come avviene per le <a href="/man/preprocessore#macro" class="xref">macro-istruzioni del precompilatore</a>, ma, a differenza di quello che avviene per le macro, il tipo dei parametri del template è sottoposto a controllo così come il resto del codice.<br />
+<p>Quando il compilatore trova nel codice un template, sia esso la dichiarazione di una classe o una chiamata a funzione, la sostituisce con il codice corrispondente, così come avviene per le <a href="/man/preprocessore#macro" class="xref">macro-istruzioni del precompilatore</a>, ma, a differenza di quello che avviene per le macro, il tipo dei parametri del template è sottoposto a uno stretto controllo, così come il resto del codice.<br />
 Il formato per la dichiarazione di una <i id="funzioni-template">funzione template</i> è:</p>
 
 <p class="code">
@@ -658,7 +658,7 @@ T funz (N n) {
 cout &lt;&lt; maggiore&lt;double&gt;(0.4, 1.2) &lt;&lt; endl;    
 cout &lt;&lt; maggiore&lt;char&gt;  ('a', 'z') &lt;&lt; endl;    
 </code></pre>
-
+<!-- @todo: verificare i casi in cui non c'è specifica del tipo di dato -->
 <p>Il prossimo esempio mostra la differenza fra una macro del precompilatore e una funzione template:
 <!-- NOTA: se si cambia o si rimuove la macro nel codice, va aggiornato il testo del capitolo sul preprocessore --></p>
 <pre><code>/** 
@@ -720,7 +720,7 @@ int main ()
 </code></pre>
 
 <p>La macro <code>MAGGIORE</code> e la funzione template <code>maggiore</code> eseguono la stessa operazione: confrontano i due parametri che hanno ricevuto in input e tornano il maggiore dei due.
-La grossa differenza fra questi due approcci<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> è che, mentre il tipo dei parametri del template è verificato dal compilatore, la macro è una banale sostituzione che non fa alcun controllo sulle variabili che utilizza. 
+La grossa differenza fra questi due approcci<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> è che, mentre il tipo dei parametri del template è verificato dal compilatore, la macro è una banale sostituzione che non fa alcun controllo sulle variabili che utilizza.
 L’istruzione:</p>
 
 <pre><code>cout &lt;&lt; MAGGIORE('a', b) &lt;&lt; endl; 
@@ -803,6 +803,8 @@ int main ()
 
 </code></pre>
 
+<hr id="stl" />
+
 <p>Il codice che ti ho mostrato all’inizio di questa lezione utilizza una classe template:</p>
 
 <pre><code>list&lt;Monta&gt; monte;
@@ -818,7 +820,8 @@ Le componenti della STL è sono:</p>
   <li>degli oggetti-funzioni, o: <strong>functors</strong>, che incapsulano una specifica funzione.</li>
 </ul>
 
-<p>La classe <code>list</code> è un esempio di container e rappresenta un elenco di elementi memorizzati in aree non contigue della memoria, al contrario, della classe <code>vector</code>, che implementa un elenco di elementi memorizzati in un’unica area di memoria, così come avviene per gli array del C.<br />
+<p>La classe <code>list</code> è un esempio di container e rappresenta un elenco di elementi memorizzati in aree non contigue della memoria. 
+Al contrario, la classe <code>vector</code> implementa un elenco di elementi memorizzati in un’unica area di memoria, così come avviene per gli array del C.<br />
 Tutti i vettori della STL posseggono delle funzioni membro che consentono di gestirne gli elementi; la funzione <code>push_back</code>, per esempio, aggiunge un elemento in coda alla lista:</p>
 
 <pre><code>monte.push_back(Monta(cavallo, giumenta)); 
@@ -838,7 +841,7 @@ for (it=monte.begin(); it!=monte.end(); it++) {
 
 <p>La prima istruzione del ciclo <code>for</code> assegna all’iteratore <code>it</code> il primo elemento della lista, tornato dalla funzione membro <code>monte.begin</code>.
 La seconda istruzione, verifica che l’iteratore sia differente da <code>monte.end</code>, che punta alla fine della lista.
-La terza istruzione incrementa l’iteratore di una posizione e dimostra come la ridefinizione di un operatore per una classe renda il codice più facile da leggere: anche se tu non hai mai visto una classe template, sai che quella istruzione incrementa il valore di <code>it</code> di un’unità.<br />
+La terza istruzione incrementa l’iteratore di una posizione e dimostra come la ridefinizione di un operatore per una classe renda il codice più facile da leggere: anche se tu non hai mai visto una classe template, capisci subito che quella istruzione incrementa il valore di <code>it</code> di un’unità.<br />
 Gli <i id="algoritmi-stl">algoritmi</i> della STL, definiti nell’header <code>&lt;algorithm&gt;</code> sono funzioni template che permettono di individuare, copiare, ordinare, unire o eliminare i dati all’interno di un container.</p>
 
 <!-- @todo: aggiungere commenti -->
@@ -902,18 +905,198 @@ int main()
 70 49 35 21 10 
 </code></pre>
 
-<!--
-Le function-class o: <i id="functors-stl">functors</i>, meritano un discorso a parte..
+<p>Le function-class o: <i id="functors-stl">functors</i> sono delle classi che ridefiniscono il comportamento dell’operatore <code>()</code> e che possono quindi agire come se fossero delle funzioni:</p>
 
-@todo: usare l'esempio dei cavalli per illustrare array e iteratori, poi fare un esempio di functor
+<pre><code>/** 
+ * @file src/polimorfismo-functor-stl.cpp
+ * Esempio di function objects della STL.
+ */
 
-Ne abbiamo già visto un <a href="/man/c-plus-plus#polimorfismo" class="xref">esempio</a> quando abbiamo detto che sarebbe stato possibile invertire l'ordine della lista delle monte con l'istruzione:
+#include &lt;iostream&gt;
+#include &lt;functional&gt;
 
-```
-monte.reverse();
-```
+using namespace std;
 
--->
+int main ()
+{
+    int a = 12;
+    int b = 4;
+
+    /** Dichiarazione di oggetti functor */
+    plus&lt;int&gt;       p;
+    minus&lt;int&gt;      m;
+    multiplies&lt;int&gt; x;
+    divides&lt;int&gt;    d;
+    modulus&lt;int&gt;    o;
+
+    /** Utilizzo degli oggetti come fossero delle funzioni */
+    cout &lt;&lt; "plus: "       &lt;&lt; p(a,b) &lt;&lt; endl;
+    cout &lt;&lt; "minus: "      &lt;&lt; m(a,b) &lt;&lt; endl;
+    cout &lt;&lt; "multiplies: " &lt;&lt; x(a,b) &lt;&lt; endl;
+    cout &lt;&lt; "divides: "    &lt;&lt; d(a,b) &lt;&lt; endl;
+    cout &lt;&lt; "modulus: "    &lt;&lt; o(a,b) &lt;&lt; endl;
+
+    /** "esegue"" l'oggetto o con nuovi parametri */
+    cout &lt;&lt; "modulus: "    &lt;&lt; o(a,5) &lt;&lt; endl;
+
+    return 0;
+}
+
+</code></pre>
+<p>Utilizzati così, i <em>functor</em> hanno poco senso, ma possono essere (e sono) molto utili quando si utilizzano quelle funzioni della STl che elaborano tutti gli elementi di un container, come per esempio la funzione <code>transform</code>:</p>
+
+<pre><code>/** 
+ * @file src/polimorfismo-rot13.cpp
+ * Trasformazione di una stringa con una funzione.
+ */
+
+#include &lt;string&gt;
+#include &lt;cctype&gt;
+#include &lt;iostream&gt;
+#include &lt;functional&gt;
+
+using namespace std;
+
+/** 
+*   Funzione che converte i caratteri di una stringa in rot13  
+*   Il ROT13 è un algoritmo di cifratura piuttosto banale, 
+*   perché incrementa di 13 il valore di ciascun carattere. 
+*   Non è un algoritmo realmente sicuro, però, perché per 
+*   decifrare il testo crittografato basta crittografarlo 
+*   di nuovo.  
+*/
+unsigned char rot13(unsigned char c) 
+{ 
+    unsigned char rot = c;
+    if (isalpha(c)) {
+        rot = ((tolower(c) - 'a') &lt; 14) ? c + 13 : c - 13;
+    }
+    return rot;
+}
+
+int main ()
+{
+    string pp("PippoPluto"); 
+
+    /** Elabora la stringa con la funzione transform */
+    transform(
+               pp.begin()   // inizio del container da modificare
+             , pp.end()     // fine del container da modificare
+             , pp.begin()   // container di output
+             , rot13        // funzione da applicare
+             );
+
+    cout &lt;&lt; pp &lt;&lt; endl; 
+
+    /** Ripetendo l'operazione, il testo torna normale. */
+    transform(
+               pp.begin()   
+             , pp.end()     
+             , pp.begin()   
+             , rot13        
+             );
+
+    cout &lt;&lt; pp &lt;&lt; endl; 
+    
+    return 0;
+}
+
+</code></pre>
+<p>Se compili ed esegui questo programma, otterrai :</p>
+
+<pre><code>&gt; g++ src/cpp/polimorfismo-rot13.cpp -o src/out/esempio     
+&gt; ./src/out/esempio
+CvccbCyhgb
+PippoPluto
+</code></pre>
+
+<p>Le funzioni ordinarie ti permettono di sfruttare l’algoritmo <code>transform</code> per cifrare un testo con un valore fisso, ma non puoi fare la stessa cosa utilizzando una chiave variabile, perché il quarto parametro non accetta funzioni con più di un parametro. 
+Se provassi a utilizzarlo con qualcosa come:</p>
+
+<pre><code>unsigned char cifra(unsigned char c, int chiave) 
+{ 
+    return c + chiave;
+}
+</code></pre>
+
+<p>otterresti l’errore:</p>
+
+<pre><code>/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/algorithm:1855:34: error: too few arguments to
+      function call, expected 2, have 1
+        *__result = __op(*__first);
+                    ~~~~         ^
+src/cpp/polimorfismo-transform-chiave.cpp:25:5: note: in instantiation of function template specialization
+      'std::__1::transform&lt;std::__1::__wrap_iter&lt;char *&gt;, std::__1::__wrap_iter&lt;char *&gt;, unsigned char
+      (*)(unsigned char, int)&gt;' requested here
+    transform(
+    ^
+</code></pre>
+
+<p>È in questi casi che tornano utili i <em>functor</em>, perché possono essere inizializzati con uno o più valori specifici e poi essere utilizzati come funzioni unarie:</p>
+
+<pre><code>/** 
+ * @file src/polimorfismo-functor.cpp
+ * Creazione di una classe functor.
+ */
+
+#include &lt;string&gt;
+#include &lt;cctype&gt;
+#include &lt;iostream&gt;
+#include &lt;functional&gt;
+
+using namespace std;
+
+/** Dichiarazione della classe functor */
+class Cifra
+{
+private:
+
+    int _chiave;
+
+public:
+    
+    /** 
+    *   Il costruttore della classe ha come parametro
+    *   il valore della chiave di cifratura
+    */
+    Cifra(int chiave) : _chiave(chiave) {  }
+  
+    /** Ridefinizione dell'operatore () */
+    unsigned char operator () (unsigned char c) const {
+        return c + _chiave;
+    }
+};
+
+int main ()
+{
+    string pp("PippoPluto"); 
+
+    /** 
+    *   Richiama transform passando come parametro
+    *   un'istanza del functor, inizializzata con 
+    *   la chiave di cifratura.
+    */
+    transform(
+               pp.begin()   
+             , pp.end()     
+             , pp.begin()   
+             , Cifra(1)        
+             );
+
+    cout &lt;&lt; pp &lt;&lt; endl; 
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Compilando ed eseguendo questo programma, ottieni :</p>
+
+<pre><code>&gt; g++ src/cpp/polimorfismo-functor.cpp -o src/out/esempio
+&gt; ./src/out/esempio
+QjqqpQmvup
+</code></pre>
+<p>che corrisponde ai caratteri della stringa <em>PippoPluto</em> incrementati di un’unità.</p>
 
 <hr id="dottrina" />
 
@@ -928,7 +1111,7 @@ Quel senza Dio di Dawkins, ha detto che:</p>
 Entusiasmi a parte, le mappe e le immagini da satellite hanno diverse analogie con le discipline metafisiche.
 Anche le mappe e le immagini, come la metafisica, sono costrette a rappresentare il loro soggetto a un rapporto di scala ridotto e con due sole dimensioni in vece di tre (o di quattro se, oltre alla profondità, vuoi considerare anche il tempo).
 Anche le mappe e le immagini, per questo motivo, devono rappresentare il loro soggetto per mezzo di analogie: le carte topografiche usano delle linee altimetriche e dei simboli; le immagini satellitari usano dei pixel o dei piccoli punti di colore.
-In nessuno dei due casi ciò che noi vediamo è davvero ciò che rappresenta; è il nostro cervello che decide di crederlo tale: nel caso della carta topografica, perché la legenda ci permette di definire una correlazione fra significato e significante; nel caso dell’immagine, perché il nostro occhio riconosce in quelle combinazioni di pixel o di punti di colore degli alberi, mare o case.<br />
+In nessuno dei due casi ciò che noi vediamo è davvero ciò che rappresenta; è il nostro cervello che decide di crederlo tale: nel caso della carta topografica, perché la legenda ci permette di definire una correlazione fra significato e significante; nel caso dell’immagine, perché il nostro occhio riconosce in quelle combinazioni di pixel o di punti di colore degli alberi, il mare o delle case.<br />
 Un’altra analogia, conseguenza dei due punti precedenti, è che è sbagliato confondere i simboli con ciò che rappresentano: i quadratini scuri delle mappe <em>non</em> sono case; i punti colorati delle immagini <em>non</em> sono un bosco.
 Mappe e immagini hanno senso solo a un certo livello di lettura; se lo oltrepassiamo, se cerchiamo di ottenere più informazioni o verosimiglianza avvicinando lo sguardo, otteniamo l’effetto opposto, perché i simboli si rivelano per quello che sono: punti colorati o linee su un foglio. 
 Questo però non vuol dire che ciò che rappresentano sia falso, ma che noi non stiamo guardando con <em>il giusto paio di occhi</em>, come direbbe Hunter Thompson.<br />

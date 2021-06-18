@@ -1,55 +1,53 @@
 /** 
  * @file src/polimorfismo-functor.cpp
- * Esempio di function objects della STL.
+ * Creazione di una classe functor.
  */
 
+#include <string>
+#include <cctype>
 #include <iostream>
 #include <functional>
 
 using namespace std;
 
-/** Classe che incapsula la funzione di output */
-class coutput {
+/** Dichiarazione della classe functor */
+class Cifra
+{
+private:
+
+    int _chiave;
+
 public:
+    
     /** 
-     * Ridefinizione dell'operatore () 
-     * come funzione template 
-     */
-    template<class T>
-    ostream& operator () (T n) {
-        cout << n << endl;
-        return cout;
+    *   Il costruttore della classe ha come parametro
+    *   il valore della chiave di cifratura
+    */
+    Cifra(int chiave) : _chiave(chiave) {  }
+  
+    /** Ridefinizione dell'operatore () */
+    unsigned char operator () (unsigned char c) const {
+        return c + _chiave;
     }
 };
 
 int main ()
 {
-    int a = 12;
-    int b = 4;
+    string pp("PippoPluto"); 
 
-    /** Istanza della classe coutput */
-    coutput c; 
+    /** 
+    *   Richiama transform passando come parametro
+    *   un'istanza del functor, inizializzata con 
+    *   la chiave di cifratura.
+    */
+    transform(
+               pp.begin()   
+             , pp.end()     
+             , pp.begin()   
+             , Cifra(1)        
+             );
 
-    /** Functor della STL */
-    plus<int>       p;
-    minus<int>      m;
-    multiplies<int> x;
-    divides<int>    d;
-    modulus<int>    o;
-
-    /** Utilizzo degli oggetti come fossero delle funzioni */
-    cout << "plus: "       << p(a,b) << endl;
-    cout << "minus: "      << m(a,b) << endl;
-    cout << "multiplies: " << x(a,b) << endl;
-    cout << "divides: "    << d(a,b) << endl;
-    cout << "modulus: "    << o(a,b) << endl;
-
-    /** Richiama l'oggetto con nuovi parametri */
-    cout << "modulus: "    << o(a,5) << endl;
-
-    /** Output con la classe coutput */
-    c(23);
-    c("PippoPluto");
+    cout << pp << endl; 
     
     return 0;
 }

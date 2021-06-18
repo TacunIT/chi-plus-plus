@@ -295,7 +295,7 @@ Puoi risparmiarti questa seccatura ridefinendo solo il com­portamento degli ope
 
 L'ultima cosa di cui ti devo parlare, a proposito del polimorfismo, sono i *template*.  
 I template, nel C++, sono dei modelli che si utilizzano per definire delle funzioni o delle classi polivalenti.
-Se uno stesso compito può essere eseguito in maniera simile su parametri di tipo differente, invece di scrivere una serie di funzioni o di classi identiche, ma con parametri diversi, si può scrivere una funzione o una classe template che può essere richiamata con parametri di tipo differente.
+Se uno stesso compito può essere eseguito in maniera simile su parametri di tipo differente, invece di scrivere delle funzioni o delle classi identiche per ciascun tipo di parametro, si può scrivere una funzione o una classe template e richiamarla ogni volta con il tipo di parametro appropriato:
 
 ```
 int    somma(int    a, int    b) { return a + b; }
@@ -303,10 +303,10 @@ float  somma(float  a, float  b) { return a + b; }
 double somma(double a, double b) { return a + b; }
 
 template <class T> 
-somma(T a Tb) { return a + b; }
+somma(T a, T b) { return a + b; }
 ```
 
-Quando il compilatore trova nel codice un template, sia esso la dichiarazione di una classe o una chiamata a funzione, la sostituisce con il codice corrispondente, così come avviene per le <a href="/man/preprocessore#macro" class="xref">macro-istruzioni del precompilatore</a>, ma, a differenza di quello che avviene per le macro, il tipo dei parametri del template è sottoposto a controllo così come il resto del codice.  
+Quando il compilatore trova nel codice un template, sia esso la dichiarazione di una classe o una chiamata a funzione, la sostituisce con il codice corrispondente, così come avviene per le <a href="/man/preprocessore#macro" class="xref">macro-istruzioni del precompilatore</a>, ma, a differenza di quello che avviene per le macro, il tipo dei parametri del template è sottoposto a uno stretto controllo, così come il resto del codice.  
 Il formato per la dichiarazione di una <i id="funzioni-template">funzione template</i> è:
 
 <p class="code">
@@ -352,7 +352,7 @@ cout << maggiore<int>   (  9,  12) << endl;
 cout << maggiore<double>(0.4, 1.2) << endl;    
 cout << maggiore<char>  ('a', 'z') << endl;    
 ```
-
+<!-- @todo: verificare i casi in cui non c'è specifica del tipo di dato -->
 Il prossimo esempio mostra la differenza fra una macro del precompilatore e una funzione template:
 <!-- NOTA: se si cambia o si rimuove la macro nel codice, va aggiornato il testo del capitolo sul preprocessore -->
 ```
@@ -360,7 +360,7 @@ Il prossimo esempio mostra la differenza fra una macro del precompilatore e una 
 ```
 
 La macro `MAGGIORE` e la funzione template `maggiore` eseguono la stessa operazione: confrontano i due parametri che hanno ricevuto in input e tornano il maggiore dei due.
-La grossa differenza fra questi due approcci<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> è che, mentre il tipo dei parametri del template è verificato dal compilatore, la macro è una banale sostituzione che non fa alcun controllo sulle variabili che utilizza. 
+La grossa differenza fra questi due approcci<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> è che, mentre il tipo dei parametri del template è verificato dal compilatore, la macro è una banale sostituzione che non fa alcun controllo sulle variabili che utilizza.
 L'istruzione:
 
 ```
@@ -405,6 +405,8 @@ L'utilizzo di queste classi è simile a quello delle funzioni template:
 {% include_relative src/polimorfismo-classe-template.cpp %}
 ```
 
+<hr id="stl"> 
+
 Il codice che ti ho mostrato all'inizio di questa lezione utilizza una classe template:
 
 ```
@@ -419,7 +421,8 @@ Le componenti della STL è sono:
 - una collezione di **algoritmi** che permettono di eseguire delle operazioni di ordinamento e ricerca su insiemi di dati;
 - degli oggetti-funzioni, o: **functors**, che incapsulano una specifica funzione.
 
-La classe `list` è un esempio di container e rappresenta un elenco di elementi memorizzati in aree non contigue della memoria, al contrario, della classe `vector`, che implementa un elenco di elementi memorizzati in un'unica area di memoria, così come avviene per gli array del C.  
+La classe `list` è un esempio di container e rappresenta un elenco di elementi memorizzati in aree non contigue della memoria. 
+Al contrario, la classe `vector` implementa un elenco di elementi memorizzati in un'unica area di memoria, così come avviene per gli array del C.  
 Tutti i vettori della STL posseggono delle funzioni membro che consentono di gestirne gli elementi; la funzione `push_back`, per esempio, aggiunge un elemento in coda alla lista:
 
 ```
@@ -441,7 +444,7 @@ for (it=monte.begin(); it!=monte.end(); it++) {
 
 La prima istruzione del ciclo `for` assegna all'iteratore `it` il primo elemento della lista, tornato dalla funzione membro `monte.begin`.
 La seconda istruzione, verifica che l'iteratore sia differente da `monte.end`, che punta alla fine della lista.
-La terza istruzione incrementa l'iteratore di una posizione e dimostra come la ridefinizione di un operatore per una classe renda il codice più facile da leggere: anche se tu non hai mai visto una classe template, sai che quella istruzione incrementa il valore di `it` di un'unità.  
+La terza istruzione incrementa l'iteratore di una posizione e dimostra come la ridefinizione di un operatore per una classe renda il codice più facile da leggere: anche se tu non hai mai visto una classe template, capisci subito che quella istruzione incrementa il valore di `it` di un'unità.  
 Gli <i id="algoritmi-stl">algoritmi</i> della STL, definiti nell'header `<algorithm>` sono funzioni template che permettono di individuare, copiare, ordinare, unire o eliminare i dati all'interno di un container.
 
 <!-- @todo: aggiungere commenti -->
@@ -461,18 +464,63 @@ Se compili ed esegui questo codice, ottieni:
 70 49 35 21 10 
 ```
 
-<!--
-Le function-class o: <i id="functors-stl">functors</i>, meritano un discorso a parte..
-
-@todo: usare l'esempio dei cavalli per illustrare array e iteratori, poi fare un esempio di functor
-
-Ne abbiamo già visto un <a href="/man/c-plus-plus#polimorfismo" class="xref">esempio</a> quando abbiamo detto che sarebbe stato possibile invertire l'ordine della lista delle monte con l'istruzione:
+Le function-class o: <i id="functors-stl">functors</i> sono delle classi che ridefiniscono il comportamento dell'operatore `()` e che possono quindi agire come se fossero delle funzioni:
 
 ```
-monte.reverse();
+{% include_relative src/polimorfismo-functor-stl.cpp %}
+```
+Utilizzati così, i *functor* hanno poco senso, ma possono essere (e sono) molto utili quando si utilizzano quelle funzioni della STl che elaborano tutti gli elementi di un container, come per esempio la funzione `transform`:
+
+```
+{% include_relative src/polimorfismo-rot13.cpp %}
+```
+Se compili ed esegui questo programma, otterrai :
+
+```
+> g++ src/cpp/polimorfismo-rot13.cpp -o src/out/esempio     
+> ./src/out/esempio
+CvccbCyhgb
+PippoPluto
 ```
 
--->
+Le funzioni ordinarie ti permettono di sfruttare l'algoritmo `transform` per cifrare un testo con un valore fisso, ma non puoi fare la stessa cosa utilizzando una chiave variabile, perché il quarto parametro non accetta funzioni con più di un parametro. 
+Se provassi a utilizzarlo con qualcosa come:
+
+```
+unsigned char cifra(unsigned char c, int chiave) 
+{ 
+    return c + chiave;
+}
+```
+
+otterresti l'errore:
+
+```
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/algorithm:1855:34: error: too few arguments to
+      function call, expected 2, have 1
+        *__result = __op(*__first);
+                    ~~~~         ^
+src/cpp/polimorfismo-transform-chiave.cpp:25:5: note: in instantiation of function template specialization
+      'std::__1::transform<std::__1::__wrap_iter<char *>, std::__1::__wrap_iter<char *>, unsigned char
+      (*)(unsigned char, int)>' requested here
+    transform(
+    ^
+```
+
+È in questi casi che tornano utili i *functor*, perché possono essere inizializzati con uno o più valori specifici e poi essere utilizzati come funzioni unarie: 
+
+```
+{% include_relative src/polimorfismo-functor.cpp %}
+```
+
+Compilando ed eseguendo questo programma, ottieni :
+
+```
+> g++ src/cpp/polimorfismo-functor.cpp -o src/out/esempio
+> ./src/out/esempio
+QjqqpQmvup
+```
+che corrisponde ai caratteri della stringa *PippoPluto* incrementati di un'unità.
 
 <hr id="dottrina">
 
@@ -485,7 +533,7 @@ Una frase curiosa, da parte di un esponente di una setta che cerca di descrivere
 Entusiasmi a parte, le mappe e le immagini da satellite hanno diverse analogie con le discipline metafisiche.
 Anche le mappe e le immagini, come la metafisica, sono costrette a rappresentare il loro soggetto a un rapporto di scala ridotto e con due sole dimensioni in vece di tre (o di quattro se, oltre alla profondità, vuoi considerare anche il tempo).
 Anche le mappe e le immagini, per questo motivo, devono rappresentare il loro soggetto per mezzo di analogie: le carte topografiche usano delle linee altimetriche e dei simboli; le immagini satellitari usano dei pixel o dei piccoli punti di colore.
-In nessuno dei due casi ciò che noi vediamo è davvero ciò che rappresenta; è il nostro cervello che decide di crederlo tale: nel caso della carta topografica, perché la legenda ci permette di definire una correlazione fra significato e significante; nel caso dell'immagine, perché il nostro occhio riconosce in quelle combinazioni di pixel o di punti di colore degli alberi, mare o case.  
+In nessuno dei due casi ciò che noi vediamo è davvero ciò che rappresenta; è il nostro cervello che decide di crederlo tale: nel caso della carta topografica, perché la legenda ci permette di definire una correlazione fra significato e significante; nel caso dell'immagine, perché il nostro occhio riconosce in quelle combinazioni di pixel o di punti di colore degli alberi, il mare o delle case.  
 Un'altra analogia, conseguenza dei due punti precedenti, è che è sbagliato confondere i simboli con ciò che rappresentano: i quadratini scuri delle mappe *non* sono case; i punti colorati delle immagini *non* sono un bosco.
 Mappe e immagini hanno senso solo a un certo livello di lettura; se lo oltrepassiamo, se cerchiamo di ottenere più informazioni o verosimiglianza avvicinando lo sguardo, otteniamo l'effetto opposto, perché i simboli si rivelano per quello che sono: punti colorati o linee su un foglio. 
 Questo però non vuol dire che ciò che rappresentano sia falso, ma che noi non stiamo guardando con *il giusto paio di occhi*, come direbbe Hunter Thompson.  
