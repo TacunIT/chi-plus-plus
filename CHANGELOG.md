@@ -1,3 +1,7 @@
+## 0.26.0 (June 18, 2021)
+  - Redazione del capitolo sul debug. 
+  - Aggiunto a opt il testo sul degrado del software.
+
 ## 0.25.8 (June 18, 2021)
   - Revisione del testo del capitolo sul polimorfismo
 
