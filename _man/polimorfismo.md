@@ -352,7 +352,7 @@ cout << maggiore<int>   (  9,  12) << endl;
 cout << maggiore<double>(0.4, 1.2) << endl;    
 cout << maggiore<char>  ('a', 'z') << endl;    
 ```
-
+<!-- @todo: verificare i casi in cui non c'è specifica del tipo di dato -->
 Il prossimo esempio mostra la differenza fra una macro del precompilatore e una funzione template:
 <!-- NOTA: se si cambia o si rimuove la macro nel codice, va aggiornato il testo del capitolo sul preprocessore -->
 ```
@@ -360,7 +360,7 @@ Il prossimo esempio mostra la differenza fra una macro del precompilatore e una 
 ```
 
 La macro `MAGGIORE` e la funzione template `maggiore` eseguono la stessa operazione: confrontano i due parametri che hanno ricevuto in input e tornano il maggiore dei due.
-La grossa differenza fra questi due approcci<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> è che, mentre il tipo dei parametri del template è verificato dal compilatore, la macro è una banale sostituzione che non fa alcun controllo sulle variabili che utilizza. 
+La grossa differenza fra questi due approcci<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> è che, mentre il tipo dei parametri del template è verificato dal compilatore, la macro è una banale sostituzione che non fa alcun controllo sulle variabili che utilizza.
 L'istruzione:
 
 ```
@@ -404,6 +404,8 @@ L'utilizzo di queste classi è simile a quello delle funzioni template:
 ```
 {% include_relative src/polimorfismo-classe-template.cpp %}
 ```
+
+<hr id="stl"> 
 
 Il codice che ti ho mostrato all'inizio di questa lezione utilizza una classe template:
 
@@ -531,7 +533,7 @@ Una frase curiosa, da parte di un esponente di una setta che cerca di descrivere
 Entusiasmi a parte, le mappe e le immagini da satellite hanno diverse analogie con le discipline metafisiche.
 Anche le mappe e le immagini, come la metafisica, sono costrette a rappresentare il loro soggetto a un rapporto di scala ridotto e con due sole dimensioni in vece di tre (o di quattro se, oltre alla profondità, vuoi considerare anche il tempo).
 Anche le mappe e le immagini, per questo motivo, devono rappresentare il loro soggetto per mezzo di analogie: le carte topografiche usano delle linee altimetriche e dei simboli; le immagini satellitari usano dei pixel o dei piccoli punti di colore.
-In nessuno dei due casi ciò che noi vediamo è davvero ciò che rappresenta; è il nostro cervello che decide di crederlo tale: nel caso della carta topografica, perché la legenda ci permette di definire una correlazione fra significato e significante; nel caso dell'immagine, perché il nostro occhio riconosce in quelle combinazioni di pixel o di punti di colore degli alberi, mare o case.  
+In nessuno dei due casi ciò che noi vediamo è davvero ciò che rappresenta; è il nostro cervello che decide di crederlo tale: nel caso della carta topografica, perché la legenda ci permette di definire una correlazione fra significato e significante; nel caso dell'immagine, perché il nostro occhio riconosce in quelle combinazioni di pixel o di punti di colore degli alberi, il mare o delle case.  
 Un'altra analogia, conseguenza dei due punti precedenti, è che è sbagliato confondere i simboli con ciò che rappresentano: i quadratini scuri delle mappe *non* sono case; i punti colorati delle immagini *non* sono un bosco.
 Mappe e immagini hanno senso solo a un certo livello di lettura; se lo oltrepassiamo, se cerchiamo di ottenere più informazioni o verosimiglianza avvicinando lo sguardo, otteniamo l'effetto opposto, perché i simboli si rivelano per quello che sono: punti colorati o linee su un foglio. 
 Questo però non vuol dire che ciò che rappresentano sia falso, ma che noi non stiamo guardando con *il giusto paio di occhi*, come direbbe Hunter Thompson.  
