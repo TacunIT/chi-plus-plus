@@ -8,6 +8,7 @@ quote:      "Non puoi immergere i tuoi byte due volte nello stesso stream"
 ---
 
 Come avrai certamente intuito da tutto ciò che abbiamo detto finora, la caratteristica principale del C++ è il polimorfismo.  
+
 Avevamo iniziato a parlarne durante la <a href="/man/c-plus-plus#polimorfismo" class="xref">lezione introduttiva sul C++</a> e l'avevamo illustrato con un esempio che, a questo punto, non dovrebbe più avere segreti, per te:
 
 ```

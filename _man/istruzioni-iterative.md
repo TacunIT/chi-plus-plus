@@ -8,6 +8,7 @@ quote:      "Invero è cosa piuttosto strana a udirsi, ma il nome che noi almeno
 ---
 
 Le istruzioni di ciclo sono le componenti fondamentali della programmazione.  
+
 Ci sono tre tipi di istruzioni di ciclo: 
 
 - `for`
