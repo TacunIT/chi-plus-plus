@@ -122,9 +122,16 @@ CODE, PRE, P.code {
 LI CODE {
     font-size: initial;
 }
-EM, I {
+B {
+    color: $colorGold;    
+}
+EM, I  {
     color: $colorGold;
     font-size: inherit;
+    /** 
+    *   todo: capire perché c'è questo attributo settato
+    *   e possibilmente rimuoverlo, unendo B al gruppo
+    */
     font-family: initial;
 }
 P {
