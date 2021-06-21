@@ -1,3 +1,6 @@
+## 0.26.1 (June 21, 2021)
+  - Aggiunti esempii per warning
+
 ## 0.26.0 (June 18, 2021)
   - Redazione del capitolo sul debug. 
   - Aggiunto a opt il testo sul degrado del software.
