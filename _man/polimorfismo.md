@@ -1,5 +1,5 @@
 ---
-status:     redazione
+status:     bozza
 layout:     manuale
 class:      capitolo
 title:      Il polimorfismo
@@ -377,6 +377,7 @@ short b = 0;
 cout << maggiore(a, b) << endl;  
 ```
 
+<!-- @todo: correggere questo codice, sia qui che nello script: l'errore si manifesta solo se si omette lo specificatore del tipo per il template -->
 causa un errore di compilazione perché i due parametri sono di tipo differente:
 
 ```
