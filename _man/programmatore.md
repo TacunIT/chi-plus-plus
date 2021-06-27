@@ -20,7 +20,7 @@ Nella *Bhagavad Gita* si dice:
 
 È così che opera il buon programmatore: scrive del buon codice, anche se non beneficerà mai dei suoi effetti. Scrive del buon codice perché non può farne a meno.  
 Scrivere codice non è un mestiere, è una deformazione mentale.
-Il buon programmatore è un disadattato che ha la fortuna di essere retribuito per dare sfogo ai lati peggiori della sua personalità.
+Il <span id="buon-programmatore">buon programmatore</span> è un disadattato che ha la fortuna di essere retribuito per dare sfogo ai lati peggiori della sua personalità.
 Mentre scrive il codice, la mente del buon programmatore lavora su tre livelli: il primo livello decide la sequenza delle istruzioni necessarie a far funzionare il programma; il secondo livello ne controlla costantemente la correttezza sintattica e semantica; il terzo livello verifica se ci sia un sistema più efficiente per fare la stessa cosa.
 I buoni programmatori sono paranoici ed è giusto che sia così.
 Le istruzioni di un programma sono eseguite milioni di volte nel corso

@@ -28,9 +28,7 @@ public:
 
 int main(int argc, char** argv) 
 {
-    C c(10);
-    
+    C c(10);    
     cout << c.area() << endl;
-    
     return 0;
 }
