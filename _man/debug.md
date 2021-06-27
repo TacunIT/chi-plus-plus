@@ -230,43 +230,76 @@ src/cpp/debug-errori-warning.cpp:19:11:
 4 warnings generated.
 ```
 
-Molti programmatori ignorano i warning, pensano che se il programma può essere compilato non ci sia nient'altro di cui preoccuparsi; tu non fare questo errore.
-Nessun avviso deve essere ignorato.
+Molti programmatori ignorano i warning, pensano che se il programma può essere compilato non ci sia nient'altro di cui preoccuparsi.
+Tu ,non fare questo errore: nessun avviso deve essere ignorato.
 
-<!--
+<hr id="">
 
+Solo un programma formalmente ineccepibile può dare luogo a <b id="errori-esecuzione">errori di esecuzione</b>.
+Se non fosse formalmente ineccepibile, infatti, non sarebbe stato compilato e non potrebbe essere eseguito.  
+Gli errori di esecuzione sono tanto più pericolosi quanto più i loro
+effetti sono lievi.
+Un errore che causi il blocco del sistema non passerà mai inosservato; di contro, un leggero errore di calcolo potrebbe passare inosservato e
+quindi causare grandi problemi.  
+Gli errori di esecuzione possono essere di due tipi: quelli che si
+manifestano in maniera deterministica e quelli che si manifestano in
+maniera casuale.  
 
+```
+{% include_relative src/pianeti-while-errore-1.cpp %}
+```
 
-Se li classifichiamo per l'impatto che hanno sul debug, gli errori possono essere: *facili*, *difficili* e *bastardi*. 
+Se dimentichi l'operatore di incremento all'interno di un ciclo `while` produrrai un ciclo infinito, che certamente attirerà la tua attenzione:
 
+```
+> g++ src/cpp/pianeti-while-errore-1.cpp \
+      src/cpp/pianeti-2.0.cpp \
+   -o src/out/esempio
+> src/out/esempio
+
+1: Mercurio
+1: Mercurio
+1: Mercurio
+1: Mercurio
+1: Mercurio
+1: Mercurio
+1: Mercurio
+1: Mercurio
+1: Mercurio
+1: Mercurio
+1: Mercurio
+1: Mercurio
+1: Mercurio
+...
+```
+
+Se invece incrementi la variabile nel modo sbagliato:
+
+```
+{% include_relative src/pianeti-while-errore-2.cpp %}
+```
+causerai un errore che in questo caso è evidente (all'elenco manca Mercurio), ma che in un programma più complesso potrebbe essere più difficile da individuare
+
+```
+> g++ src/cpp/pianeti-while-errore-2.cpp \
+      src/cpp/pianeti-2.0.cpp \
+   -o src/out/esempio
+> src/out/esempio
+Venere
+Terra
+Marte
+Giove
+Saturno
+Urano
+Nettuno
+Plutone
+```
 
 
 
 <!--
 
 v. Orologiaio, pos. 3836 
-
-
-## Errori di esecuzione
-
-Solo un programma formalmente ineccepibile può dare luogo ad errori di
-esecuzione. Se non fosse formalmente ineccepibile, infatti, non sarebbe
-stato compilato e non potrebbe essere eseguito.
-
-Gli errori di esecuzione sono tanto più pericolosi quanto più i loro
-effetti sono lievi.
-
-Un errore che causi il blocco del sistema non passerà mai inosservato.
-
-Di contro, un leggero errore di calcolo potrebbe passare inosservato e
-quindi causare grandi problemi.
-
-Gli errori di esecuzione possono essere di due tipi: quelli che si
-manifestano in maniera deterministica e quelli che si manifestano in
-maniera casuale.
-
--->
-<!--
 
 Il cambiamento inizia quando si intraprende un nuovo sentiero , anche se questo sentiero non è che una traccia lasciata da una capra assetata che ha trovato una sorgente .
 M. Deen - Per antiche strade
