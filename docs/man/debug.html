@@ -70,24 +70,27 @@
                 <p>Il debug potrà non essere il senso della vita, come recita il titolo del tuo libro, ma è indubbiamente l’aspetto più importante della programmazione.</p>
 
 <p>Nella tua carriera di programmatore potrai non utilizzare mai una classe <em>functor</em> o ridefinire l’operatore <code>-&gt;</code>, ma sicuramente farai degli errori e li dovrai correggere.
-Malgrado ciò, i manuali di programmazione non parlano mai del <em>debug</em>.
+Malgrado ciò, i manuali di programmazione non parlano mai del <em>debug</em>.<br />
 Si sono scritte migliaia di pagine sui diversi linguaggi di programmazione; non c’è primavera che non veda fiorire un nuovo paradigma di programmazione — strutturata, <em>object-oriented</em>, <em>agile</em>, <em>fuzzy</em> — eppure, nessuno si è mai preoccupato di formalizzare il processo di correzione del codice.<br />
 Trascurare il debug è come affermare che non si faranno mai errori.
 Non importa quanto sia efficiente il linguaggio di programmazione; non importa quanto sia astuto e vigile il compilatore; non importa nemmeno quanto sia bravo il programmatore: o prima o poi, la distrazione, la stanchezza o un evento esterno permetteranno a un errore di intrufolarsi nel codice.
-Un puntatore utilizzato impropriamente, un ciclo in più o in meno in un’istruzione <code>for</code> o una virgola dimenticata fra i parametri di una <code>printf</code>: qualunque cosa sia, se il compilatore non sarà in grado di riconoscerla, finirà nel programma è lì resterà in attesa di produrre i suoi effetti dannosi.
+Un puntatore utilizzato impropriamente, un ciclo in più o in meno in un’istruzione <code>for</code> o una virgola dimenticata fra i parametri di una <code>printf</code>: qualunque cosa sia, se il compilatore non sarà in grado di riconoscerla, finirà nel programma è resterà lì in attesa di produrre i suoi effetti dannosi.
 Il programma potrà funzionare correttamente per anni, ma poi, un bel giorno, qualcosa non andrà come sarebbe dovuto andare e a quel punto bisognerà analizzare il codice per trovare l’errore.<br />
 Fare degli errori è inevitabile, ed è importante sapere come porvi rimedio.
 Ancora più importante, però, è sapersi accorgere degli errori.
 Così come <a href="/man/ereditarieta#ikebarba" class="xref">l’Ikebarba inizia nel negozio</a>, il debug comincia nel momento in cui si scrive il codice.
 Il modo migliore per evitare che il codice contenga degli errori è scrivere del buon codice.<br />
+Scrivere del buon codice vuol dire fare sempre il meglio che ti è possibile, non accettare compromessi, non salvare mai un file se non sei certo che funzionerà come deve e mentre scrivi il codice cerca sempre di pensare a cos’altro potrebbe fare, oltre a quello che vuoi tu.
+Come di ho detto <a href="/man/programmatore#buon-programmatore" class="xref">in una delle nostre prime chiacchierate</a>, il buon programmatore non si accontenta della strada più rapida, ma cerca sempre quella più efficiente e sicura, perché sa che scrivere del buon codice costa meno che riparare del codice fatto male.
+Non può farne a meno, perché è nella sua natura.<br />
 La decadenza del software è iniziata quando le stampanti laser hanno soppiantato le vecchie stampanti ad aghi.
 Il codice non si può leggere su un foglio A4: a meno che non sia un programma banale, non c’entrerà né in altezza né in larghezza.
 Il modulo in continuo di una stampante ad aghi a 136 colonne, al contrario, ti permette di stampare tutto il tuo codice e di rileggerlo con calma; correggerlo, se necessario e migliorarlo se possibile.
-È così che si facevano, le revisioni di codice, quando ancora c’era il tempo di fare le revisioni di codice.</p>
+È così che si facevano, le revisioni di codice, quando ancora c’erano il tempo e i soldi per fare le revisioni di codice.</p>
 
 <hr id="tipi-errore" />
 
-<p>Gli errori possono essere di tre tipi:</p>
+<p>Gli errori del software possono essere di tre tipi:</p>
 
 <ul>
   <li>gli errori che si manifestano durante la fase di compilazione;</li>
@@ -240,10 +243,8 @@ public:
 
 int main(int argc, char** argv) 
 {
-    C c(10);
-    
+    C c(10);    
     cout &lt;&lt; c.area() &lt;&lt; endl;
-    
     return 0;
 }
 
@@ -315,24 +316,11 @@ src/cpp/debug-errori-warning.cpp:19:11:
 4 warnings generated.
 </code></pre>
 
+<p>Molti programmatori ignorano i warning, pensano che se il programma può essere compilato non ci sia nient’altro di cui preoccuparsi; tu non fare questo errore.
+Nessun avviso deve essere ignorato.</p>
+
 <!--
 
-In questo, i *warning* sono più dannosi degli errori, perché possono essere degli errori potenziali, ma possono venir trascurati.   
-Se compilassi questo codice, otterresti un avviso perché la variabile *buffer* non è utilizzata:
-
-int main() {
-    char *str = "byte occupati inutilmente: ";
-    double buffer[8000];
-    cout << str << (sizeof(double)*8000) << endl;
-    return 0;
-}
-
-Il fatto che *buffer* non sia utilizzata, in sé, non causa alcun
-problema al codice, ma oltre ad essere una sciatteria, causa un'inutile
-occupazione della memoria e può dare luogo a errori, quindi l'avviso non
-deve essere ignorato.
-
-Nessun avviso deve essere ignorato.
 
 
 Se li classifichiamo per l'impatto che hanno sul debug, gli errori possono essere: *facili*, *difficili* e *bastardi*. 
