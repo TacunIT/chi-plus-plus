@@ -36,7 +36,6 @@ La seconda espressione è una condizione logica o relazionale che viene valutata
 La terza espressione viene valutata al termine di ogni iterazione e, di solito, è costituita da un’espressione di incremento o decremento delle variabili utilizzate per il controllo del ciclo.
 Per fare ciò, si utilizzano degli operatori unarii (ovvero che operano su una singola variabile) detti: *operatori di incremento* e *operatori di decremento*, che possono svolgere la loro funzione o prima o dopo l’utilizzo della variabile, a seconda che vengano posti prima o dopo l’identificatore della variabile: 
 
-
 ```
 x++     // valuta x e poi la incrementa di un'unità
 ++x     // incrementa x di un'unità e poi la valuta
@@ -274,7 +273,13 @@ Aristotele disse che:
  <a href="/man/note/#aristotele" class="nota"></a>
 
 In quest'ottica, il C'hi++ è una metafisica abbastanza rigorosa, perché richiede l'accettazione di due sole affermazioni non comprovabili e, di queste, solo una è strettamente necessaria alla coerenza interna della dottrina, l'altra è solo un auspicio.  
-Ai fedeli del C'hi++ è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (gli scienziati non sono infallibili: sono gli stessi che avevano visto dei canali su Marte) che ci sarà un momento in cui l'espansione dell'Universo terminerà e che tutto ciò che esiste tornerà a riunirsi nell'Uno primigenio:
+Ai fedeli del C'hi++ è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (gli scienziati non sono infallibili: sono gli stessi che avevano visto dei canali su Marte) 
+<!-- 
+@todo: valutare utilizzo di questo aneddoto (dopo averlo verificato..)
+Lemaitre fu il primo a formulare la teoria dell’espansione dell’universo, che nel 1949 Fred Hoyle, togato docente di Cambridge, sostenitore della teoria dello stato stazionario, con una punta di sarcasmo, chiamò teoria del Big Bang.
+Gregori, Claudio. Merckx, il Figlio del tuono (VITE INATTESE) (Italian Edition) (Kindle Locations 7169-7172). 66THAND2ND. Kindle Edition. 
+-->
+che ci sarà un momento in cui l'espansione dell'Universo terminerà e che tutto ciò che esiste tornerà a riunirsi nell'Uno primigenio:
 
 ```
 void eternita() 
