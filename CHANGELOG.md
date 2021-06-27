@@ -1,3 +1,7 @@
+## 0.26.2 (June 28, 2021)
+  - Redazione del paragrafo sugli errori di esecuzione
+  - Corrette citazioni nel capitolo Funzioni
+
 ## 0.26.1 (June 21, 2021)
   - Aggiunti esempii per warning
 
