@@ -1,10 +1,10 @@
 ---
-status:     redazione
+status:     bozza
 layout:     manuale
 class:      capitolo
 title:      Il polimorfismo
 permalink:  /man/polimorfismo
-quote:      "Non puoi immergere i tuoi byte due volte nello stesso stream"
+quote:      "When Me they fly, I am the wings<br />I am the doubter and the doubt"
 ---
 
 Come avrai certamente intuito da tutto ciò che abbiamo detto finora, la caratteristica principale del C++ è il polimorfismo.  
