@@ -20,6 +20,10 @@ Non è così.
 Credi che se gli autori della Bibbia o dei Vangeli avessero potuto prevedere le conseguenze ultime delle loro opere &mdash; le guerre, le morti, le sofferenze &mdash;, li avrebbero scritti lo stesso?
 I libri sacri sono sempre stati strumentalizzati dai potenti, cosa ti fa pensare che per il tuo non succederà lo stesso?
 
+Il Maestro Musashi, nel suo *Dokkodo*, scrisse:
+ 
+> Fà che le future generazioni non siano legate ad armi antiche.
+
 Tu proietti su questo linguaggio ormai morto delle aspettative personali, speri che possa far rivivere il tempo passato e ti illudi che il tempo passato sia meglio di quello presente.
 Ti sbagli.
 Il passato, mio giovane amico, è una vecchia amante che col suono della sua voce ci ricorda i piaceri vissuti insieme, ma che bada a restare alle nostre spalle per nasconderci il suo volto rugoso.

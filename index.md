@@ -9,6 +9,8 @@ footer: true
 <section class="citazione pagina">
 Eliminate tutte le cose meravigliose che l’immaginazione umana ha creato dal nulla , dobbiamo tirar fuori tutto il possibile dalla piatta realtà che sentiamo e vediamo.<br />
 <span>Isaac Asimov</span> - Civiltà extraterrestri
+
+{{ project.data.citazioni.mulino-amleto.mulo }}.
 </section>
 
 <b>C'hi++</b> è un tentativo di spiegare il significato dell'Esistenza nei termini dell'informatica.
