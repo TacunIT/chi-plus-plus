@@ -67,8 +67,9 @@
 
             <section id="testo">
 
-                <p>Come avrai certamente intuito da tutto ciò che abbiamo detto finora, la caratteristica principale del C++ è il polimorfismo.<br />
-Avevamo iniziato a parlarne durante la <a href="/man/c-plus-plus#polimorfismo" class="xref">lezione introduttiva sul C++</a> e l’avevamo illustrato con un esempio che, a questo punto, non dovrebbe più avere segreti, per te:</p>
+                <p>Come avrai certamente intuito da tutto ciò che abbiamo detto finora, la caratteristica principale del C++ è il polimorfismo.</p>
+
+<p>Avevamo iniziato a parlarne durante la <a href="/man/c-plus-plus#polimorfismo" class="xref">lezione introduttiva sul C++</a> e l’avevamo illustrato con un esempio che, a questo punto, non dovrebbe più avere segreti, per te:</p>
 
 <pre><code>/** 
  *  @file src/cplusplus-template.cpp
@@ -734,6 +735,7 @@ short b = 0;
 cout &lt;&lt; maggiore(a, b) &lt;&lt; endl;  
 </code></pre>
 
+<!-- @todo: correggere questo codice, sia qui che nello script: l'errore si manifesta solo se si omette lo specificatore del tipo per il template -->
 <p>causa un errore di compilazione perché i due parametri sono di tipo differente:</p>
 
 <pre><code>&gt; g++ src/cpp/polimorfismo-template.cpp -o src/out/esempio

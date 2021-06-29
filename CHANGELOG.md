@@ -1,3 +1,14 @@
+## 0.26.2 (June 28, 2021)
+  - Redazione del paragrafo sugli errori di esecuzione
+  - Corrette citazioni nel capitolo Funzioni
+
+## 0.26.1 (June 21, 2021)
+  - Aggiunti esempii per warning
+
+## 0.26.0 (June 18, 2021)
+  - Redazione del capitolo sul debug. 
+  - Aggiunto a opt il testo sul degrado del software.
+
 ## 0.25.8 (June 18, 2021)
   - Revisione del testo del capitolo sul polimorfismo
 

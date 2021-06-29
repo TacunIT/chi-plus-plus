@@ -8,6 +8,7 @@ quote:      "When Me they fly, I am the wings<br />I am the doubter and the doub
 ---
 
 Come avrai certamente intuito da tutto ciò che abbiamo detto finora, la caratteristica principale del C++ è il polimorfismo.  
+
 Avevamo iniziato a parlarne durante la <a href="/man/c-plus-plus#polimorfismo" class="xref">lezione introduttiva sul C++</a> e l'avevamo illustrato con un esempio che, a questo punto, non dovrebbe più avere segreti, per te:
 
 ```
@@ -376,6 +377,7 @@ short b = 0;
 cout << maggiore(a, b) << endl;  
 ```
 
+<!-- @todo: correggere questo codice, sia qui che nello script: l'errore si manifesta solo se si omette lo specificatore del tipo per il template -->
 causa un errore di compilazione perché i due parametri sono di tipo differente:
 
 ```

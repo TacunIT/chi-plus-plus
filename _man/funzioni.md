@@ -492,11 +492,11 @@ Nel *Libro dei Cinque Anelli*, diede ai suoi discepoli nove regole di vita:
  @nota: uso il nome (Musashi) in vece del cognome (Myamoto), così come direi "Raffaello" o "Michelangelo".
 -->
 
-> {{ site.data.musashi.cinque-anelli.regole }}
+> {{ site.data.citazioni.musashi.cinque-anelli.regole }}
 
 Nel *Dokkodo*, scritto una settimana prima della sua morte, fu ancora più specifico:
 
-> {{ site.data.musashi.dokkodo }}
+> {{ site.data.citazioni.musashi.dokkodo }}
 
 Queste regole, che hanno permesso a Musashi di arrivare alla venerabile età di sessant'anni<a href="/man/note/#eta" class="nota"></a>, dopo essere sopravvissuto vittorioso ad altrettanti combattimenti con tutti i migliori spadaccini del suo tempo, possono aiutarti a capire quale sia il funzionamento dell'Universo e cosa fare per non perturbarlo.  
 La pratica delle arti, siano esse intellettuali o marziali, e la conoscenza dei mestieri, unite all'attenzione per tutto ciò che ti circonda, aumenteranno il tuo bagaglio di esperienza e ti permetteranno di distinguere i pro e i contro di ogni situazione.
@@ -517,13 +517,13 @@ La Via, così come la Verità, è una modella, che ciascuno di noi ritrae dal su
 Ritrarla nello stesso modo in cui l'ha fatto un altro sarebbe sbagliato, perché il tuo punto di vista non è uguale al suo, ma guardarla da più punti di vista può aiutarti a capire meglio la sua forma.
 Musashi dice di prestare attenzione anche alle cose insignificanti, Nan-in e Tenno sviluppano il loro *Zen di ogni istante*, Wittgenstein nei suoi *Diari*, scrive:
 
-> Solo una cosa, è necessaria: essere capace di osservare tutto ciò che ti accade. Concentrarsi! Dio mi aiuti!
+> {{ site.data.citazioni.wittgenstein.diari }}
 
 È chiaro che stanno tutti dipingendo la stessa immagine, anche se ciascuno lo fa con il suo stile.
 È per questo motivo, che Musashi prescrive di conoscere la Via degli altri mestieri: perché c'è sempre qualcosa da imparare, da chi fa bene il suo lavoro. 
 Questo, per esempio, è il parallelo che lui fa fra lo stratega e il carpentiere:
 
-> Per edificare una casa è necessaria un’accurata scelta dei materiali. Per i pilastri esterni si sceglieranno dei tronchi diritti e senza  nodi, mentre per quelli interni si possono usare dei tronchi diritti  con qualche piccolo difetto. Per le soglie, gli architravi, gli infissi e  le porte scorrevoli si useranno i legni migliori per l’aspetto, anche  se non sono troppo robusti, e così via. Per le parti strutturali non è  importante l’aspetto estetico quanto la robustezza. Il legname meno pregiato e con molti nodi viene invece utilizzato per i ponteggi e, alla fine, viene bruciato.<a href="/man/note/#5anelli" class="nota"></a>
+> {{ site.data.citazioni.musashi.cinque-anelli.carpentiere }}<a href="/man/note/#5anelli" class="nota"></a>
  
 Ciò che è vero per il carpentiere, cambiando il punto di vista, è vero anche per lo stratega e potrà esserlo anche per te, se ti troverai ai gestire un progetto o un gruppo di lavoro.
 Anche come programmatore, comunque, dovrai tenerti costantemente aggiornato sulle tecniche e sui linguaggi di programmazione e dovrai conoscere il modo in cui lavora chi si occupa delle basi-dati o dei sistemi.
