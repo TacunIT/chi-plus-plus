@@ -21,9 +21,14 @@ Fare degli errori è inevitabile, ed è importante sapere come porvi rimedio.
 Ancora più importante, però, è sapersi accorgere degli errori.
 Così come <a href="/man/ereditarieta#ikebarba" class="xref">l'Ikebarba inizia nel negozio</a>, il debug comincia nel momento in cui si scrive il codice.
 Il modo migliore per evitare che il codice contenga degli errori è scrivere del buon codice.  
-Scrivere del buon codice vuol dire fare sempre il meglio che ti è possibile, non accettare compromessi, non salvare mai un file se non sei certo che funzionerà come deve e mentre scrivi il codice cerca sempre di pensare a cos'altro potrebbe fare, oltre a quello che vuoi tu.
+Scrivere del buon codice vuol dire fare sempre il meglio che ti è possibile.
+Non salvare mai un file se non sei certo che funzionerà come deve e cerca sempre di pensare a cos'altro potrebbe fare il tuo codice, oltre a quello che vuoi tu.
 Come di ho detto <a href="/man/programmatore#buon-programmatore" class="xref">in una delle nostre prime chiacchierate</a>, il buon programmatore non si accontenta della strada più rapida, ma cerca sempre quella più efficiente e sicura, perché sa che scrivere del buon codice costa meno che riparare del codice fatto male.
-Non può farne a meno, perché è nella sua natura.  
+Il Maestro Canaro, una volta disse:
+
+> {{ site.data.canaro.marinaio }}
+
+Il buon programmatore non può farne a meno, perché è nella sua natura; è questa, la differenza fra chi *fa* il programmatore e chi *è* un programmatore.  
 La decadenza del software è iniziata quando le stampanti laser hanno soppiantato le vecchie stampanti ad aghi.
 Il codice non si può leggere su un foglio A4: a meno che non sia un programma banale, non c'entrerà né in altezza né in larghezza.
 Il modulo in continuo di una stampante ad aghi a 136 colonne, al contrario, ti permette di stampare tutto il tuo codice e di rileggerlo con calma; correggerlo, se necessario e migliorarlo se possibile.
@@ -239,37 +244,30 @@ Solo un programma formalmente ineccepibile può dare luogo a <b id="errori-esecu
 Se non fosse formalmente ineccepibile, infatti, non sarebbe stato compilato e non potrebbe essere eseguito.  
 Gli errori di esecuzione sono tanto più pericolosi quanto più i loro
 effetti sono lievi.
-Un errore che causi il blocco del sistema non passerà mai inosservato; di contro, un leggero errore di calcolo potrebbe passare inosservato e
+Un errore che causi il blocco del sistema sarà certamente rilevato e corretto; al contrario, un leggero errore di calcolo potrebbe passare inosservato e
 quindi causare grandi problemi.  
-Gli errori di esecuzione possono essere di due tipi: quelli che si
-manifestano in maniera deterministica e quelli che si manifestano in
-maniera casuale.  
+Se dimentichi l'operatore di incremento all'interno di un ciclo `while` produrrai un ciclo infinito, che certamente attirerà la tua attenzione:
 
 ```
 {% include_relative src/pianeti-while-errore-1.cpp %}
 ```
-
-Se dimentichi l'operatore di incremento all'interno di un ciclo `while` produrrai un ciclo infinito, che certamente attirerà la tua attenzione:
 
 ```
 > g++ src/cpp/pianeti-while-errore-1.cpp \
       src/cpp/pianeti-2.0.cpp \
    -o src/out/esempio
 > src/out/esempio
-
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
 ...
 ```
 
@@ -278,7 +276,7 @@ Se invece incrementi la variabile nel modo sbagliato:
 ```
 {% include_relative src/pianeti-while-errore-2.cpp %}
 ```
-causerai un errore che in questo caso è evidente (all'elenco manca Mercurio), ma che in un programma più complesso potrebbe essere più difficile da individuare
+causerai un errore che, in questo caso, è evidente (all'elenco manca Mercurio), ma che in un programma più complesso potrebbe essere difficile da individuare:
 
 ```
 > g++ src/cpp/pianeti-while-errore-2.cpp \
@@ -295,7 +293,15 @@ Nettuno
 Plutone
 ```
 
+Gli errori di esecuzione possono essere di due tipi: quelli che si
+manifestano in maniera deterministica e quelli che si manifestano in
+maniera casuale.
+L'errore nell'elenco dei pianeti si manifesterà a ogni esecuzione del programma e sarà quindi (relativamente) facile da individuare.
+Al contrario, questo codice produrrà un errore solo in determinate condizioni:
 
+```
+{% include_relative src/debug-errore-stocastico.cpp %}
+```
 
 <!--
 
