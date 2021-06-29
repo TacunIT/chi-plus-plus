@@ -67,88 +67,465 @@
 
             <section id="testo">
 
-                <p>Chiediti una cosa: come mai, i manuali di programmazione non parlano mai del <em>debug</em>?<br />
-Si sono scritte migliaia di pagine sui diversi linguaggi di programmazione; non c'è primavera che non veda fiorire un nuovo paradigma di programmazione — strutturata, <em>object-oriented</em>, <em>agile</em>, <em>fuzzy</em>.. — eppure, nessuno si è mai preoccupato di formalizzare il processo di correzione del codice.
-O, se lo ha fatto, nessuno se n'è accorto.
+                <p>Il debug potrà non essere il senso della vita, come recita il titolo del tuo libro, ma è indubbiamente l’aspetto più importante della programmazione.</p>
+
+<p>Nella tua carriera di programmatore potrai non utilizzare mai una classe <em>functor</em> o ridefinire l’operatore <code>-&gt;</code>, ma sicuramente farai degli errori e li dovrai correggere.
+Malgrado ciò, i manuali di programmazione non parlano mai del <em>debug</em>.<br />
+Si sono scritte migliaia di pagine sui diversi linguaggi di programmazione; non c’è primavera che non veda fiorire un nuovo paradigma di programmazione — strutturata, <em>object-oriented</em>, <em>agile</em>, <em>fuzzy</em> — eppure, nessuno si è mai preoccupato di formalizzare il processo di correzione del codice.<br />
+Trascurare il debug è come affermare che non si faranno mai errori.
+Non importa quanto sia efficiente il linguaggio di programmazione; non importa quanto sia astuto e vigile il compilatore; non importa nemmeno quanto sia bravo il programmatore: o prima o poi, la distrazione, la stanchezza o un evento esterno permetteranno a un errore di intrufolarsi nel codice.
+Un puntatore utilizzato impropriamente, un ciclo in più o in meno in un’istruzione <code>for</code> o una virgola dimenticata fra i parametri di una <code>printf</code>: qualunque cosa sia, se il compilatore non sarà in grado di riconoscerla, finirà nel programma è resterà lì in attesa di produrre i suoi effetti dannosi.
+Il programma potrà funzionare correttamente per anni, ma poi, un bel giorno, qualcosa non andrà come sarebbe dovuto andare e a quel punto bisognerà analizzare il codice per trovare l’errore.<br />
 Fare degli errori è inevitabile, ed è importante sapere come porvi rimedio.
 Ancora più importante, però, è sapersi accorgere degli errori.
-Trascurare il debug è come affermare che non si faranno mai errori.
-Dire che un programmatore non farà mai errori è come pensare che un principe e un'orfanella povera (che è cosa ben peggiore di una povera orfanella) possano sposarsi e vivere per sempre felici e contenti.<br />
-Non importa quanto sia efficiente il linguaggio di programmazione; non importa quanto sia astuto e vigile il compilatore; non importa nemmeno quanto sia bravo il programmatore: o prima o poi, la stanchezza o un evento esterno permetteranno a un errore di intrufolarsi nel codice.
-Un puntatore utilizzato impropriamente, un ciclo in più o in meno in un'istruzione <code>for</code> o una virgola dimenticata fra i parametri di una <code>printf</code>: qualunque cosa sia, se il compilatore non sarà in grado di riconoscerla, finirà nel programma è lì resterà in attesa di produrre i suoi effetti dannosi.
-Magari per anni il programma funzionerà a meraviglia, poi, un bel giorno, di colpo, smetterà di funzionare e a quel punto bisognerà analizzare il codice per trovare l'errore.</p>
+Così come <a href="/man/ereditarieta#ikebarba" class="xref">l’Ikebarba inizia nel negozio</a>, il debug comincia nel momento in cui si scrive il codice.
+Il modo migliore per evitare che il codice contenga degli errori è scrivere del buon codice.<br />
+Scrivere del buon codice vuol dire fare sempre il meglio che ti è possibile.
+Non salvare mai un file se non sei certo che funzionerà come deve e cerca sempre di pensare a cos’altro potrebbe fare il tuo codice, oltre a quello che vuoi tu.
+Come di ho detto <a href="/man/programmatore#buon-programmatore" class="xref">in una delle nostre prime chiacchierate</a>, il buon programmatore non si accontenta della strada più rapida, ma cerca sempre quella più efficiente e sicura, perché sa che scrivere del buon codice costa meno che riparare del codice fatto male.
+Il Maestro Canaro, una volta disse:</p>
 
-<p>Il codice ha smesso di funzionare bene quando le stampanti laser hanno soppiantato le vecchie stampanti ad aghi.
-Il codice non si può leggere su un A4: a meno che non sia un programma banale, non c'entrerà né in altezza né in larghezza.
+<blockquote>
+  <p>Il buon programmatore è come un marinajo che, prima di un lungo viaggio, verifica tutta la sua attrezzatura di coperta, smontando ogni singolo elemento e sostituendo ciò che potrebbe rompersi, perché non sa cosa succederà una volta che sarà in mare.</p>
+</blockquote>
+
+<p>Il buon programmatore non può farne a meno, perché è nella sua natura; è questa, la differenza fra chi <em>fa</em> il programmatore e chi <em>è</em> un programmatore.<br />
+La decadenza del software è iniziata quando le stampanti laser hanno soppiantato le vecchie stampanti ad aghi.
+Il codice non si può leggere su un foglio A4: a meno che non sia un programma banale, non c’entrerà né in altezza né in larghezza.
 Il modulo in continuo di una stampante ad aghi a 136 colonne, al contrario, ti permette di stampare tutto il tuo codice e di rileggerlo con calma; correggerlo, se necessario e migliorarlo se possibile.
-E' così che si facevano, le revisioni di codice, quando ancora c'era il tempo di fare le revisioni del codice.</p>
+È così che si facevano, le revisioni di codice, quando ancora c’erano il tempo e i soldi per fare le revisioni di codice.</p>
+
+<hr id="tipi-errore" />
+
+<p>Gli errori del software possono essere di tre tipi:</p>
+
+<ul>
+  <li>gli errori che si manifestano durante la fase di compilazione;</li>
+  <li>gli errori che si manifestano durante l’esecuzione del programma;</li>
+  <li>gli errori di analisi.</li>
+</ul>
+
+<p>Gli <b id="errori-compilazione">errori di compilazione</b> sono causati da costrutti incorretti, che bloccano il processo di creazione del programma. 
+Un errore che farai spesso è di dimenticare il punto e virgola alla fine della dichiarazione di una classe:</p>
+
+<pre><code>class C {
+private:
+    float _raggio;
+    float _area;
+public:
+    C (int m) : _raggio(m) {}
+    float getRaggio() { return _raggio; }
+    float area() {
+       Quadrato q;
+       return 3.14159 * q(_raggio);
+    }
+}
+</code></pre>
+
+<p>una banale distrazione che causerà immancabilmente il messaggio:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-errori.cpp  -c -o src/out/esempio 
+src/cpp/debug-errori.cpp:28:2: error: expected ';' after class
+}
+ ^
+ ;
+1 error generated.
+</code></pre>
+
+<p>Gli errori di compilazione sono i più facili da gestire, perché è il compilatore stesso a dirti quale sia il problema e in quale punto del codice si trovi.
+L’unica difficoltà che potresti avere, specie se stai lavorando con la <code>STL</code>, è decifrare i messaggi del compilatore:</p>
+
+<pre><code>In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/iostream:38:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/ios:216:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__locale:15:
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string:2027:19: error: no viable conversion from
+      'const std::__1::basic_string&lt;char&gt;' to 'std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;,
+      std::__1::allocator&lt;char&gt; &gt;::value_type' (aka 'char')
+        push_back(*__first);
+                  ^~~~~~~~
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string:2075:5: note: in instantiation of function
+      template specialization 'std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;
+      &gt;::__init&lt;std::__1::istream_iterator&lt;std::__1::basic_string&lt;char&gt;, char, std::__1::char_traits&lt;char&gt;, long&gt; &gt;'
+      requested here
+    __init(__first, __last);
+    ^
+src/cpp/debug-errori.cpp:43:12: note: in instantiation of function template specialization
+      'std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;
+      &gt;::basic_string&lt;std::__1::istream_iterator&lt;std::__1::basic_string&lt;char&gt;, char, std::__1::char_traits&lt;char&gt;,
+      long&gt; &gt;' requested here
+    string s(begin,end);
+           ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string:876:5: note: candidate function
+    operator __self_view() const _NOEXCEPT { return __self_view(data(), size()); }
+    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string:1055:31: note: passing argument to parameter
+      '__c' here
+    void push_back(value_type __c);
+</code></pre>
+<!-- Grazie, John Berryman https://bit.ly/3vIU4hN -->
+
+<p>Se un costrutto è formalmente corretto, ma <em>potrebbe</em> essere un errore, il compilatore può segnalarlo con un <b id="warning">warning</b>, un messaggio di avviso che non blocca la compilazione, ma richiama l’attenzione del programmatore sull’anomalia.<br />
+Ho usato il condizionale (<em>può segnalarlo</em>) perché la notifica dei <em>warning</em> è un’opzione che deve essere attivata dal programmatore, specificando, fra i parametri di compilazione, quali avvisi vuole ricevere.
+Dato che i tipi di <em>warning</em> sono davvero tanti:</p>
+
+<pre><code>-Waddress   
+-Wbool-compare  
+-Wbool-operation  
+-Wchar-subscripts  
+-Wcomment  
+-Wformat   
+-Wformat-overflow  
+-Wformat-truncation  
+-Wint-in-bool-context  
+-Winit-self  
+-Wlogical-not-parentheses 
+-Wmaybe-uninitialized 
+-Wmemset-elt-size 
+-Wmemset-transposed-args 
+-Wmisleading-indentation 
+-Wmismatched-dealloc 
+-Wmismatched-new-delete 
+-Wmissing-attributes 
+-Wmultistatement-macros  
+-Wnarrowing   
+-Wnonnull  
+-Wnonnull-compare  
+-Wopenmp-simd 
+-Wparentheses  
+-Wpessimizing-move   
+-Wpointer-sign  
+-Wrange-loop-construct   
+-Wreorder   
+-Wrestrict   
+-Wreturn-type  
+-Wsequence-point  
+-Wsign-compare   
+-Wsizeof-array-div 
+-Wsizeof-pointer-div 
+-Wsizeof-pointer-memaccess 
+-Wstrict-aliasing  
+-Wstrict-overflow=1  
+-Wswitch  
+-Wtautological-compare  
+-Wtrigraphs  
+-Wuninitialized  
+-Wunknown-pragmas  
+-Wunused-function  
+-Wunused-label     
+-Wunused-value     
+-Wunused-variable  
+-Wvolatile-register-var  
+-Wzero-length-bounds
+</code></pre>
+
+<p>e che possono essere tutti rilevanti nel processo di creazione del codice, la cosa migliore che puoi fare è di attivarli globalmente, con il parametro: <code>-Wall</code></p>
+
+<pre><code>/** 
+ * @file src/debug-errori-warning.cpp
+ * Tipi di errore e di warning.
+ */
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+class Quadrato
+{
+public:
+    double operator()(double x) { return x * x; }
+};
+
+class C {
+private:
+    float _raggio;
+    float _area;
+public:
+    C (int m) : _raggio(m) {}
+    float getRaggio() { return _raggio; }
+    float area() {
+       Quadrato q;
+       return 3.14159 * q(_raggio);
+    }
+};
+
+int main(int argc, char** argv) 
+{
+    C c(10);    
+    cout &lt;&lt; c.area() &lt;&lt; endl;
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili questo codice senza attivare i <em>warning</em>, il compilatore non ti segnala nulla di anomalo:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -c -o src/out/esempio
+&gt; 
+</code></pre>
+
+<p>Se però aggiungi il parametro <code>-Wall</code> alla riga di comando, scopri che il parametro <code>_area</code> della classe <code>C</code> non viene utilizzato:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -Wall -c -o src/out/esempio
+src/cpp/debug-errori-warning.cpp:19:11: 
+    warning: private field '_area' is not used 
+        [-Wunused-private-field]
+    float _area;
+          ^
+1 warning generated.
+</code></pre>
+
+<p>Il codice è stato compilato, perché questa potrebbe essere una scelta intenzionale, ma il sistema ti notifica comunque l’anomalia, in modo che tu possa decidere se mantenerla o eliminarla.<br />
+Aggiungendo il parametro <code>-Wextra</code>, ottieni un <em>warning</em> aggiuntivo perché i parametri della funzione <code>main</code> non sono utilizzati:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -Wall -Wextra -o src/out/esempio
+src/cpp/debug-errori-warning.cpp:29:14: 
+    warning: unused parameter 'argc' 
+        [-Wunused-parameter]
+int main(int argc, char** argv) 
+             ^
+src/cpp/debug-errori-warning.cpp:29:27: 
+    warning: unused parameter 'argv' 
+        [-Wunused-parameter]
+int main(int argc, char** argv) 
+                          ^
+src/cpp/debug-errori-warning.cpp:19:11: 
+    warning: private field '_area' is not used 
+        [-Wunused-private-field]
+    float _area;
+          ^
+3 warnings generated.
+</code></pre>
+
+<p>Oltre a quelli definiti dai parametri <code>-Wall</code> e <code>-Wextra</code>, il compilatore prevede una lunga lista di <em>warning</em> che possono essere definiti individualmente, a seconda delle esigenze del programma. 
+Per esempio, il parametro <code>-Wdouble-promotion</code> segnala quando una variabile di tipo <code>float</code> è promossa implicitamente a <code>double</code>:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -Wall -Wextra \
+    -Wdouble-promotion -c -o src/out/esempio
+src/cpp/debug-errori-warning.cpp:25:27: 
+    warning: implicit conversion increases 
+        floating-point precision: 'float' to
+      'double' [-Wdouble-promotion]
+       return 3.14159 * q(_raggio);
+                        ~ ^~~~~~~
+src/cpp/debug-errori-warning.cpp:29:14: 
+    warning: unused parameter 'argc' [-Wunused-parameter]
+int main(int argc, char** argv) 
+             ^
+src/cpp/debug-errori-warning.cpp:29:27: 
+    warning: unused parameter 'argv' [-Wunused-parameter]
+int main(int argc, char** argv) 
+                          ^
+src/cpp/debug-errori-warning.cpp:19:11: 
+    warning: private field '_area' is not used 
+        [-Wunused-private-field]
+    float _area;
+          ^
+4 warnings generated.
+</code></pre>
+
+<p>Molti programmatori ignorano i warning, pensano che se il programma può essere compilato non ci sia nient’altro di cui preoccuparsi.
+Tu ,non fare questo errore: nessun avviso deve essere ignorato.</p>
+
+<hr />
+
+<p>Solo un programma formalmente ineccepibile può dare luogo a <b id="errori-esecuzione">errori di esecuzione</b>.
+Se non fosse formalmente ineccepibile, infatti, non sarebbe stato compilato e non potrebbe essere eseguito.<br />
+Gli errori di esecuzione sono tanto più pericolosi quanto più i loro
+effetti sono lievi.
+Un errore che causi il blocco del sistema sarà certamente rilevato e corretto; al contrario, un leggero errore di calcolo potrebbe passare inosservato e
+quindi causare grandi problemi.<br />
+Se dimentichi l’operatore di incremento all’interno di un ciclo <code>while</code> produrrai un ciclo infinito, che certamente attirerà la tua attenzione:</p>
+
+<pre><code>/** 
+ * @file pianeti-while-errore.cpp
+ * Gestione dei Pianeti con errore evidente.
+ */
+ 
+#include &lt;iostream&gt;
+#include "pianeti.h"
+
+using namespace std;
+
+int main(int argc, char** argv)
+{    
+    int    p  = POS_MERCURIO;
+    string nome;
+
+    while (!(nome = nomePianeta(p)).empty()) {
+        cout &lt;&lt; nome &lt;&lt; endl;
+    }
+        
+    return 0;
+}
+
+</code></pre>
+
+<pre><code>&gt; g++ src/cpp/pianeti-while-errore-1.cpp \
+      src/cpp/pianeti-2.0.cpp \
+   -o src/out/esempio
+&gt; src/out/esempio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+...
+</code></pre>
+
+<p>Se invece incrementi la variabile nel modo sbagliato:</p>
+
+<pre><code>/** 
+ * @file pianeti-while-errore.cpp
+ * Gestione dei Pianeti con errore nel ciclo while
+ */
+ 
+#include &lt;iostream&gt;
+#include "pianeti.h"
+
+using namespace std;
+
+int main(int argc, char** argv)
+{    
+    int    p  = POS_MERCURIO;
+    string nome;
+
+    while (!(nome = nomePianeta(++p)).empty()) {
+        cout &lt;&lt; nome &lt;&lt; endl;
+    }
+        
+    return 0;
+}
+
+</code></pre>
+<p>causerai un errore che, in questo caso, è evidente (all’elenco manca Mercurio), ma che in un programma più complesso potrebbe essere difficile da individuare:</p>
+
+<pre><code>&gt; g++ src/cpp/pianeti-while-errore-2.cpp \
+      src/cpp/pianeti-2.0.cpp \
+   -o src/out/esempio
+&gt; src/out/esempio
+Venere
+Terra
+Marte
+Giove
+Saturno
+Urano
+Nettuno
+Plutone
+</code></pre>
+
+<p>Gli errori di esecuzione possono essere di due tipi: quelli che si
+manifestano in maniera deterministica e quelli che si manifestano in
+maniera casuale.
+L’errore nell’elenco dei pianeti si manifesterà a ogni esecuzione del programma e sarà quindi (relativamente) facile da individuare.
+Al contrario, questo codice produrrà un errore solo in determinate condizioni:</p>
+
+<pre><code>/** 
+ * @file debug-errore-stocastico.cpp
+ * Gestione dei Pianeti con errore evidente.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+
+using namespace std;
+
+#define ERR_FILE_NONE       -10
+#define S_ERR_FILE_NONE     "Definire un file di input"
+#define ERR_FILE_OPEN       -20
+#define S_ERR_FILE_OPEN     "Impossibile aprire il file di input"
+#define N_CHAR_MIN          300
+#define N_BANNER_MAX        5
+#define PUNTO               '.'
+
+/**
+ * Aggiunge un banner dopo ogni punto, ogni N_CHAR_MIN caratteri.
+ */
+int banner_testo(ifstream&amp; testo)
+{
+    int  n_banner = 0;
+    int  letti = 0;
+    char c = 0;
+ 
+    /** 
+    *   Verifica che il file sia valido. 
+    *   In questo caso, lo fa anche la funzione chiamante, 
+    *   ma non è detto che sarà sempre così..
+    */
+    while(testo.good()) {
+        
+        /** Legge il file, carattere per carattere */
+        if((c = testo.get()) != EOF) {            
+
+            /** Incrementa il numero di caratteri letti */
+            letti++;
+
+            /** Scrive il carattere letto */
+            cout &lt;&lt; c;            
+
+            /** 
+            *   Se: 
+            *   - il carattere corrente è un punto
+            *   - ha letto almeno N_CHAR_MIN caratteri
+            *   - ha ancora banner da aggiungere 
+            */
+            if(c == PUNTO &amp;&amp; letti &gt;= N_CHAR_MIN &amp;&amp; n_banner &lt;= N_BANNER_MAX) {
+                
+                /** Inserisce il codice del banner nel testo */
+                cout &lt;&lt; endl 
+                     &lt;&lt; "&lt;div id\"" &lt;&lt; n_banner &lt;&lt; "\" &gt;&lt;/div&gt;" 
+                     &lt;&lt; endl;
+
+                /* Incrementa il numero di banner inseriti */ 
+                n_banner++;
+                
+                /** Azzera il numero di caratteri letti */
+                letti = 0;
+            }
+        }       
+    } 
+    
+    cout &lt;&lt; endl;
+    
+    return n_banner;
+} 
+ 
+int main(int argc, char** argv)
+{    
+    ifstream testo;
+    
+    /** Verifica che ci sia il nome del file di input */
+    if(argc &lt; 2) {
+        cerr &lt;&lt; S_ERR_FILE_NONE &lt;&lt; endl;
+        exit(ERR_FILE_NONE);
+    }
+    
+    /** Apre il file in lettura */
+    testo.open(argv[1]);
+    if(!testo.good()) {
+        cerr &lt;&lt; S_ERR_FILE_OPEN &lt;&lt; endl;
+        exit(ERR_FILE_OPEN);
+    }
+
+    /** Elabora il testo */
+    banner_testo(testo);
+    
+    /** Chiude il file */
+    testo.close();
+    
+    return 0;
+}
+
+</code></pre>
 
 <!--
 
 v. Orologiaio, pos. 3836 
-
-Così come l\'Ikebarba inizia nel negozio, il debug comincia nel momento in cui si scrive il codice.
-Il modo migliore per evitare che il codice contenga degli errori è scrivere del buon codice.
-
-Gli errori possono essere di due tipi: gli errori che si manifestano durante la fase di compilazione e gli errori che si manifestano durante l'esecuzione del programma.
-
-Errori di compilazione
-----------------------
-
-Quando si compila del codice non corretto, si possono ottenere o degli
-errori o degli avvisi, o *warning*.
-
-Gli errori sono causati da costrutti incorretti, che bloccano la
-compilazione e impediscono la creazione del programma.
-
-I *warning*, al contrario, sono causati da anomalie che non bloccano la
-compilazione e consentono la generazione dell'eseguibile.
-
-In questo, i *warning* sono più dannosi degli errori, perché possono
-essere degli errori potenziali, ma possono venir trascurati.
-
-Se compilassi questo codice, otterresti un avviso perché la variabile
-*buffer* non è utilizzata:
-
-> int main() {
-
-> char \*str = \"byte occupati inutilmente: \";
-
-> double buffer\[8000\];
-
-> cout \<\< str \<\< (sizeof(double)\*8000) \<\< endl;
-
-> return 0;
-
-> }
-
-Il fatto che *buffer* non sia utilizzata, in sé, non causa alcun
-problema al codice, ma oltre ad essere una sciatteria, causa un'inutile
-occupazione della memoria e può dare luogo a errori, quindi l'avviso non
-deve essere ignorato.
-
-Nessun avviso deve essere ignorato.
-
-## Errori di esecuzione
-
-Solo un programma formalmente ineccepibile può dare luogo ad errori di
-esecuzione. Se non fosse formalmente ineccepibile, infatti, non sarebbe
-stato compilato e non potrebbe essere eseguito.
-
-Gli errori di esecuzione sono tanto più pericolosi quanto più i loro
-effetti sono lievi.
-
-Un errore che causi il blocco del sistema non passerà mai inosservato.
-
-Di contro, un leggero errore di calcolo potrebbe passare inosservato e
-quindi causare grandi problemi.
-
-Gli errori di esecuzione possono essere di due tipi: quelli che si
-manifestano in maniera deterministica e quelli che si manifestano in
-maniera casuale.
-
--->
-<!--
 
 Il cambiamento inizia quando si intraprende un nuovo sentiero , anche se questo sentiero non è che una traccia lasciata da una capra assetata che ha trovato una sorgente .
 M. Deen - Per antiche strade
