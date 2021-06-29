@@ -80,9 +80,16 @@ Fare degli errori è inevitabile, ed è importante sapere come porvi rimedio.
 Ancora più importante, però, è sapersi accorgere degli errori.
 Così come <a href="/man/ereditarieta#ikebarba" class="xref">l’Ikebarba inizia nel negozio</a>, il debug comincia nel momento in cui si scrive il codice.
 Il modo migliore per evitare che il codice contenga degli errori è scrivere del buon codice.<br />
-Scrivere del buon codice vuol dire fare sempre il meglio che ti è possibile, non accettare compromessi, non salvare mai un file se non sei certo che funzionerà come deve e mentre scrivi il codice cerca sempre di pensare a cos’altro potrebbe fare, oltre a quello che vuoi tu.
+Scrivere del buon codice vuol dire fare sempre il meglio che ti è possibile.
+Non salvare mai un file se non sei certo che funzionerà come deve e cerca sempre di pensare a cos’altro potrebbe fare il tuo codice, oltre a quello che vuoi tu.
 Come di ho detto <a href="/man/programmatore#buon-programmatore" class="xref">in una delle nostre prime chiacchierate</a>, il buon programmatore non si accontenta della strada più rapida, ma cerca sempre quella più efficiente e sicura, perché sa che scrivere del buon codice costa meno che riparare del codice fatto male.
-Non può farne a meno, perché è nella sua natura.<br />
+Il Maestro Canaro, una volta disse:</p>
+
+<blockquote>
+  <p>Il buon programmatore è come un marinajo che, prima di un lungo viaggio, verifica tutta la sua attrezzatura di coperta, smontando ogni singolo elemento e sostituendo ciò che potrebbe rompersi, perché non sa cosa succederà una volta che sarà in mare.</p>
+</blockquote>
+
+<p>Il buon programmatore non può farne a meno, perché è nella sua natura; è questa, la differenza fra chi <em>fa</em> il programmatore e chi <em>è</em> un programmatore.<br />
 La decadenza del software è iniziata quando le stampanti laser hanno soppiantato le vecchie stampanti ad aghi.
 Il codice non si può leggere su un foglio A4: a meno che non sia un programma banale, non c’entrerà né in altezza né in larghezza.
 Il modulo in continuo di una stampante ad aghi a 136 colonne, al contrario, ti permette di stampare tutto il tuo codice e di rileggerlo con calma; correggerlo, se necessario e migliorarlo se possibile.
@@ -325,11 +332,9 @@ Tu ,non fare questo errore: nessun avviso deve essere ignorato.</p>
 Se non fosse formalmente ineccepibile, infatti, non sarebbe stato compilato e non potrebbe essere eseguito.<br />
 Gli errori di esecuzione sono tanto più pericolosi quanto più i loro
 effetti sono lievi.
-Un errore che causi il blocco del sistema non passerà mai inosservato; di contro, un leggero errore di calcolo potrebbe passare inosservato e
+Un errore che causi il blocco del sistema sarà certamente rilevato e corretto; al contrario, un leggero errore di calcolo potrebbe passare inosservato e
 quindi causare grandi problemi.<br />
-Gli errori di esecuzione possono essere di due tipi: quelli che si
-manifestano in maniera deterministica e quelli che si manifestano in
-maniera casuale.</p>
+Se dimentichi l’operatore di incremento all’interno di un ciclo <code>while</code> produrrai un ciclo infinito, che certamente attirerà la tua attenzione:</p>
 
 <pre><code>/** 
  * @file pianeti-while-errore.cpp
@@ -355,26 +360,21 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>Se dimentichi l’operatore di incremento all’interno di un ciclo <code>while</code> produrrai un ciclo infinito, che certamente attirerà la tua attenzione:</p>
-
 <pre><code>&gt; g++ src/cpp/pianeti-while-errore-1.cpp \
       src/cpp/pianeti-2.0.cpp \
    -o src/out/esempio
 &gt; src/out/esempio
-
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
-1: Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
 ...
 </code></pre>
 
@@ -403,7 +403,7 @@ int main(int argc, char** argv)
 }
 
 </code></pre>
-<p>causerai un errore che in questo caso è evidente (all’elenco manca Mercurio), ma che in un programma più complesso potrebbe essere più difficile da individuare</p>
+<p>causerai un errore che, in questo caso, è evidente (all’elenco manca Mercurio), ma che in un programma più complesso potrebbe essere difficile da individuare:</p>
 
 <pre><code>&gt; g++ src/cpp/pianeti-while-errore-2.cpp \
       src/cpp/pianeti-2.0.cpp \
@@ -417,6 +417,110 @@ Saturno
 Urano
 Nettuno
 Plutone
+</code></pre>
+
+<p>Gli errori di esecuzione possono essere di due tipi: quelli che si
+manifestano in maniera deterministica e quelli che si manifestano in
+maniera casuale.
+L’errore nell’elenco dei pianeti si manifesterà a ogni esecuzione del programma e sarà quindi (relativamente) facile da individuare.
+Al contrario, questo codice produrrà un errore solo in determinate condizioni:</p>
+
+<pre><code>/** 
+ * @file debug-errore-stocastico.cpp
+ * Gestione dei Pianeti con errore evidente.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+
+using namespace std;
+
+#define ERR_FILE_NONE       -10
+#define S_ERR_FILE_NONE     "Definire un file di input"
+#define ERR_FILE_OPEN       -20
+#define S_ERR_FILE_OPEN     "Impossibile aprire il file di input"
+#define N_CHAR_MIN          300
+#define N_BANNER_MAX        5
+#define PUNTO               '.'
+
+/**
+ * Aggiunge un banner dopo ogni punto, ogni N_CHAR_MIN caratteri.
+ */
+int banner_testo(ifstream&amp; testo)
+{
+    int  n_banner = 0;
+    int  letti = 0;
+    char c = 0;
+ 
+    /** 
+    *   Verifica che il file sia valido. 
+    *   In questo caso, lo fa anche la funzione chiamante, 
+    *   ma non è detto che sarà sempre così..
+    */
+    while(testo.good()) {
+        
+        /** Legge il file, carattere per carattere */
+        if((c = testo.get()) != EOF) {            
+
+            /** Incrementa il numero di caratteri letti */
+            letti++;
+
+            /** Scrive il carattere letto */
+            cout &lt;&lt; c;            
+
+            /** 
+            *   Se: 
+            *   - il carattere corrente è un punto
+            *   - ha letto almeno N_CHAR_MIN caratteri
+            *   - ha ancora banner da aggiungere 
+            */
+            if(c == PUNTO &amp;&amp; letti &gt;= N_CHAR_MIN &amp;&amp; n_banner &lt;= N_BANNER_MAX) {
+                
+                /** Inserisce il codice del banner nel testo */
+                cout &lt;&lt; endl 
+                     &lt;&lt; "&lt;div id\"" &lt;&lt; n_banner &lt;&lt; "\" &gt;&lt;/div&gt;" 
+                     &lt;&lt; endl;
+
+                /* Incrementa il numero di banner inseriti */ 
+                n_banner++;
+                
+                /** Azzera il numero di caratteri letti */
+                letti = 0;
+            }
+        }       
+    } 
+    
+    cout &lt;&lt; endl;
+    
+    return n_banner;
+} 
+ 
+int main(int argc, char** argv)
+{    
+    ifstream testo;
+    
+    /** Verifica che ci sia il nome del file di input */
+    if(argc &lt; 2) {
+        cerr &lt;&lt; S_ERR_FILE_NONE &lt;&lt; endl;
+        exit(ERR_FILE_NONE);
+    }
+    
+    /** Apre il file in lettura */
+    testo.open(argv[1]);
+    if(!testo.good()) {
+        cerr &lt;&lt; S_ERR_FILE_OPEN &lt;&lt; endl;
+        exit(ERR_FILE_OPEN);
+    }
+
+    /** Elabora il testo */
+    banner_testo(testo);
+    
+    /** Chiude il file */
+    testo.close();
+    
+    return 0;
+}
+
 </code></pre>
 
 <!--
