@@ -1,3 +1,9 @@
+## 0.26.3 (June 30, 2021)
+  - Aggiunta seconda citazione a Index
+  - Modificate le citazioni dei capitoli
+  - Aggiunto il capitolo sugli stream
+  - Iniziato esermpio per errore stocastico
+
 ## 0.26.2 (June 28, 2021)
   - Redazione del paragrafo sugli errori di esecuzione
   - Corrette citazioni nel capitolo Funzioni
