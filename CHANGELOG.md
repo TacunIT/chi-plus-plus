@@ -1,3 +1,8 @@
+## 0.26.4 (July 01, 2021)
+  - Redazione del paragrafo sugli errori di esecuzione
+  - Aggiunto output di esempio per errore stocastico
+  - Aggiunto post sulle scelte editoriali odierne
+
 ## 0.26.3 (June 30, 2021)
   - Aggiunta seconda citazione a Index
   - Modificate le citazioni dei capitoli
