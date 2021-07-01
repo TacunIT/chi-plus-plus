@@ -552,6 +552,17 @@ BODY.manuale.capitolo #testo TABLE.rgb TD:nth-child(2) {
     min-width: 10rem;
 }
 
+BODY.manuale.capitolo #testo BLOCKQUOTE.output {
+    text-align: justify;
+}
+BODY.manuale.capitolo #testo BLOCKQUOTE.output DIV[id^="banner"] {
+    display: block;
+    height: 100px;
+    width: 200px;
+    border: solid 1px #999;
+    margin: 1rem auto;
+}
+
 /* Equazione di Einstein  */
 .einstein P {
     padding: 0.25rem 1rem;
@@ -689,7 +700,7 @@ SECTION.citazione {
     font-size: 1rem;
     margin: 0 auto;
     padding-top: 5rem;
-    padding-left: 36%;
+    padding-left: 30%;
     padding-bottom: 5rem;
     text-align: right;
     page-break-after: always;
