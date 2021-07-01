@@ -547,7 +547,38 @@ Cerchi di distrarti guardando la televisione, ma l’ennesimo thriller con Jason
 org"&gt;leggi un po’&lt;/a&gt; e poi cerchi di dormire.
 </blockquote>
 
+<p>Un errore come questo, che dipende dai dati in input, può aspettare anni, prima di venire alla luce. 
+Nel frattempo, il codice sarà stato distribuito agli utenti e chi lo ha scritto ne avrà perso memoria o potrebbe addirittura aver cambiato lavoro.<br />
+La correzione della funzione, se fatta per tempo, richiederebbe solo l’aggiunta di una condizione all’istruzione <code>if</code>, per verificare che il punto si trovi prima di un a capo:</p>
+
+<pre><code>if(c == PUNTO 
+&amp;&amp; letti &gt;= N_CHAR_MIN 
+&amp;&amp; n_banner &lt;= N_BANNER_MAX
+&amp;&amp; testo.peek() == A_CAPO) { 
+    cout &lt;&lt; endl 
+         &lt;&lt; "&lt;div id=\"banner-" &lt;&lt; n_banner &lt;&lt; "\"&gt;"
+         &lt;&lt; "&lt;/div&gt;" 
+         &lt;&lt; endl;
+    n_banner++;
+    letti = 0;
+}
+</code></pre>
+
+<p>La stessa correzione, fatta dopo che il programma sia andato in esercizio, potrebbe richiedere giorni, se non settimane, perché dovrà essere ripetuto tutto il processo di rilascio del sistema:</p>
+
+<ul>
+  <li>debug</li>
+  <li>correzione</li>
+  <li>test funzionale</li>
+  <li>test di carico</li>
+  <li>test di sicurezza</li>
+  <li>collaudo</li>
+  <li>distribuzione</li>
+</ul>
+
 <!--
+
+la fase di debug è quella più complessa, perché si deve trovare chi la faccia e tirare su un ambiente di test
 
 v. Orologiaio, pos. 3836 
 
