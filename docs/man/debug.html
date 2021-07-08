@@ -444,8 +444,9 @@ using namespace std;
 #define PUNTO               '.'
 
 /**
- * Aggiunge un banner dopo ogni punto, ogni N_CHAR_MIN caratteri.
- */
+*   Aggiunge un banner dopo ogni punto, 
+*   ogni N_CHAR_MIN caratteri.
+*/
 int banner_testo(ifstream&amp; testo)
 {
     int  n_banner = 1;
@@ -453,13 +454,14 @@ int banner_testo(ifstream&amp; testo)
     char c = 0;
  
     /** 
-    *   Verifica che il file sia valido. 
-    *   Lo fa anche la funzione chiamante, 
-    *   ma non è detto che sarà sempre così..
+    *  Legge tutto il contenuto del file di input
     */
     while(testo.good()) {
         
-        /** Legge il file, carattere per carattere */
+        /** 
+        *   Legge il cotenuto del file, 
+        *   carattere per carattere 
+        */
         if((c = testo.get()) != EOF) {            
 
             /** Incrementa il numero di caratteri letti */
@@ -478,8 +480,9 @@ int banner_testo(ifstream&amp; testo)
             &amp;&amp; letti &gt;= N_CHAR_MIN 
             &amp;&amp; n_banner &lt;= N_BANNER_MAX) {                
                 cout &lt;&lt; endl 
-                     &lt;&lt; "&lt;div id=\"banner-" &lt;&lt; n_banner &lt;&lt; "\"&gt;"
-                     &lt;&lt; "&lt;/div&gt;" 
+                     &lt;&lt; "&lt;div id=\"banner-" 
+                     &lt;&lt; n_banner 
+                     &lt;&lt; "\"&gt;&lt;/div&gt;" 
                      &lt;&lt; endl;
                 n_banner++;
                 letti = 0;
@@ -535,7 +538,7 @@ Notizia buona: non hai sintomi. Notizia cattiva: hai visto la tua donna di servi
 <div id="banner-3"></div>
  </blockquote>
 
-<p>Il codice della funzione, però, è troppo ottimistico e delle piccole variazioni dell’input, come l’aggiunta di punti di sospensione o di una URL, <em>potrebbero</em> causare degli errori:</p>
+<p>Il codice della funzione <code>banner_testo</code>, però, è troppo ottimistico e delle piccole variazioni nel file di input, come l’aggiunta di punti di sospensione o di una URL, <em>potrebbero</em> causare degli errori:</p>
 
 <blockquote class="output">
 Essere un ossessivo-compulsivo con una leggera tendenza alla paranoia, se ti guadagni da vivere facendo l’esperto di sicurezza, è un bene; le medesime peculiarità caratteriali, al contrario, sono decisamente un male quando alle 21:55 la tua donna di servizio ti scrive: "Ho fatto un molecolare e sono risultata positiva".
@@ -547,9 +550,9 @@ Cerchi di distrarti guardando la televisione, ma l’ennesimo thriller con Jason
 org"&gt;leggi un po’&lt;/a&gt; e poi cerchi di dormire.
 </blockquote>
 
-<p>Un errore come questo, che dipende dai dati in input, può aspettare anni, prima di venire alla luce. 
-Nel frattempo, il codice sarà stato distribuito agli utenti e chi lo ha scritto ne avrà perso memoria o potrebbe addirittura aver cambiato lavoro.<br />
-La correzione della funzione, se fatta per tempo, richiederebbe solo l’aggiunta di una condizione all’istruzione <code>if</code>, per verificare che il punto si trovi prima di un a capo:</p>
+<p>Questo tipo di errori possono aspettare anni, prima di venire alla luce.
+Per esempio, un errore nella valutazione di una data in coincidenza con gli anni bisestili potrebbe aspettare quattro anni prima di manifestarsi; nel frattempo, il codice sarà stato distribuito agli utenti e chi lo ha scritto ne avrà perso memoria o potrebbe addirittura aver cambiato lavoro.<br />
+La correzione dell’errore della funzione <code>banner_testo</code>, se fatta per tempo, richiederebbe solo l’aggiunta di una condizione all’istruzione <code>if</code>, per verificare che il punto si trovi prima di un a capo:</p>
 
 <pre><code>if(c == PUNTO 
 &amp;&amp; letti &gt;= N_CHAR_MIN 
@@ -564,21 +567,67 @@ La correzione della funzione, se fatta per tempo, richiederebbe solo l’aggiunt
 }
 </code></pre>
 
-<p>La stessa correzione, fatta dopo che il programma sia andato in esercizio, potrebbe richiedere giorni, se non settimane, perché dovrà essere ripetuto tutto il processo di rilascio del sistema:</p>
+<p>La stessa correzione, fatta dopo che il programma è andato in esercizio, potrebbe richiedere giorni, se non settimane, perché dovrà essere ripetuto tutto il processo di rilascio del sistema:</p>
 
-<ul>
-  <li>debug</li>
-  <li>correzione</li>
-  <li>test funzionale</li>
-  <li>test di carico</li>
-  <li>test di sicurezza</li>
-  <li>collaudo</li>
-  <li>distribuzione</li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">attività</th>
+      <th style="text-align: center">ore/uomo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">creazione di un ambiente di test</td>
+      <td style="text-align: center">8</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">debug</td>
+      <td style="text-align: center">2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">correzione dell’errore</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">test funzionale</td>
+      <td style="text-align: center">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">test di carico</td>
+      <td style="text-align: center">8</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">test di sicurezza</td>
+      <td style="text-align: center">8</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">collaudo</td>
+      <td style="text-align: center">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">rilascio/distribuzione</td>
+      <td style="text-align: center">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Al costo di queste attività vanno ovviamente aggiunti i possibili danni derivanti dal mancato funzionamento del sistema, che potrebbero facilmente essere pari a un mese se non a un anno di stipendio del programmatore.<br />
+Devi pensare a tutto questo, quando scrivi codice, perché hai una responsabilità sia nei confronti del tuo datore di lavoro che degli utenti del sistema, che potrebbero essere anche i tuoi amici o i tuoi parenti.<br />
+Se lavori male per la Coca-Cola, puoi sempre pensare: “Chi se ne frega, io bevo Pepsi”; non è etico, ma almeno non è auto-lesionista. 
+Se però lavori male per lo Stato, stai peggiorando la tua vita e di tutte le persone che conosci e questo, oltre a non essere etico, è anche stupido.</p>
+
+<hr />
+
+<p>Un programma per il debug può aiutarti a identificare il punto del tuo codice che genera un errore, ma devi prima capire quale sia la funzione da esaminare, perché fare il debug di tutto il codice di un programma, laddove sia possibile, sarebbe estremamente frustrante.<br />
+Il modo in cui hai scritto il codice lo renderà più o meno facile da verificare.
+Immagina che il problema sia il valore della variabile <code>x</code>: se tutto il tuo codice ha la possibilità di modificarne il valore, potresti dover esaminare ogni singola funzione per verificare che non ne faccia un uso improprio. 
+Al contrario, se la variabile <code>x</code> potrà essere modificata solo alcuni punti del codice, la tua sarà una ricerca più mirata e veloce. 
+È per questo motivo, che <a href="/man/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l’elaborazione dei dati dalla gestione dell’interfaccia utente: perché in questo modo, a seconda dell’errore che dovesse verificarsi, sapremmo subito dove andare a guardare.</p>
+
+<p>Alcune caratteristiche del C++ possono esserti di aiuto, in questo: la <a href="/man/note.html#tipizzazione" class="xref">tipizzazione forte</a> del C++ e l’<a href="/man/note.html#incapsulamento" class="xref">incapsulamento</a> delle classi ti permetteranno di tracciare più facilmente la genesi di un errore, ma non sempre saranno sufficienti.</p>
 
 <!--
-
-la fase di debug è quella più complessa, perché si deve trovare chi la faccia e tirare su un ambiente di test
 
 v. Orologiaio, pos. 3836 
 
@@ -586,8 +635,6 @@ Il cambiamento inizia quando si intraprende un nuovo sentiero , anche se questo 
 M. Deen - Per antiche strade
 
 Se non lo si è fatto finora, spiegare che gli esempii del testo sono studiati per essere progressivamente migliorati, per dimostrare come la scrittura di codice sia un'attività in continua evoluzione.
-
-riprendere, se utile, gli esempii del ciclo for per illustrare i diversi tipi di errore che ne possono derivare
 
 -->
 

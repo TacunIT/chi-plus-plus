@@ -554,6 +554,8 @@ BODY.manuale.capitolo #testo TABLE.rgb TD:nth-child(2) {
 
 BODY.manuale.capitolo #testo BLOCKQUOTE.output {
     text-align: justify;
+    background-color: #eee;
+    margin: 1rem auto;
 }
 BODY.manuale.capitolo #testo BLOCKQUOTE.output DIV[id^="banner"] {
     display: block;
@@ -561,6 +563,7 @@ BODY.manuale.capitolo #testo BLOCKQUOTE.output DIV[id^="banner"] {
     width: 200px;
     border: solid 1px #999;
     margin: 1rem auto;
+    background-color: #aaa;
 }
 
 /* Equazione di Einstein  */

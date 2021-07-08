@@ -17,8 +17,9 @@ using namespace std;
 #define PUNTO               '.'
 
 /**
- * Aggiunge un banner dopo ogni punto, ogni N_CHAR_MIN caratteri.
- */
+*   Aggiunge un banner dopo ogni punto, 
+*   ogni N_CHAR_MIN caratteri.
+*/
 int banner_testo(ifstream& testo)
 {
     int  n_banner = 1;
@@ -26,13 +27,14 @@ int banner_testo(ifstream& testo)
     char c = 0;
  
     /** 
-    *   Verifica che il file sia valido. 
-    *   Lo fa anche la funzione chiamante, 
-    *   ma non è detto che sarà sempre così..
+    *  Legge tutto il contenuto del file di input
     */
     while(testo.good()) {
         
-        /** Legge il file, carattere per carattere */
+        /** 
+        *   Legge il cotenuto del file, 
+        *   carattere per carattere 
+        */
         if((c = testo.get()) != EOF) {            
 
             /** Incrementa il numero di caratteri letti */
@@ -51,8 +53,9 @@ int banner_testo(ifstream& testo)
             && letti >= N_CHAR_MIN 
             && n_banner <= N_BANNER_MAX) {                
                 cout << endl 
-                     << "<div id=\"banner-" << n_banner << "\">"
-                     << "</div>" 
+                     << "<div id=\"banner-" 
+                     << n_banner 
+                     << "\"></div>" 
                      << endl;
                 n_banner++;
                 letti = 0;
