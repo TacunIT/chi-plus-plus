@@ -631,7 +631,7 @@ Come abbiamo visto poco fa, se l’errore dipende dai dati in input, prima ancor
 Diversi anni or sono, il Maestro Canaro dovette registrarsi su un sito Web che gli chiese anche la sua data di nascita (che, come sai, fu il 29 Febbraio del 1964).
 <!-- Si trattava di Paypal e questo non è il solo errore che ho rilevato -->
 La maschera di inserimento nuovo utente non gli diede problemi, ma la maschera di modifica dati, evidentemente scritta da un programmatore meno esperto, non gli permise di aggiornarli perché, a suo dire, la data di nascita era sbagliata.
-Ciò vuol dire che il sistema utilizzava due funzioni distinte per il controllo della data di nascita nelle funzioni di inserimento e modifica e che la funzione utilizzata in modifica non era una funzione standard, ma codice scritto <em>ad-hoc</em> &amp;mdash.<br />
+Ciò vuol dire che il sistema utilizzava due funzioni distinte per il controllo della data di nascita nelle funzioni di inserimento e modifica e che la funzione utilizzata in modifica non era una funzione standard, ma codice scritto <em>ad-hoc</em>.<br />
 Entrambe queste scelte sono errori: a una determinata azione sui dati deve corrispondere una singola funzione.
 Fare la stessa operazione con parti di codice distinte è sbagliato, sia perché aumenta la probabilità di commettere degli errori, sia perché rallenta i tempi di identificazione dell’errore in fase di debug.
 È sbagliato anche riscrivere delle funzioni che già esistono: <a href="http://cr.yp.to/djb.html" target="qmail">D. J. Bernstein</a> lo fece, con le funzioni di I/O di qmail, ma le sue funzioni erano migliori e più sicure delle funzioni della libreria standard.   <br />
