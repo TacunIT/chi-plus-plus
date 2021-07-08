@@ -1,3 +1,7 @@
+## 0.26.5 (July 08, 2021)
+  - Redazione del testo del capitolo sul debug
+  - Corrette le ricorrenze della parola 'capitolo' nel testo: per il Maestro, sono lezioni, non capitoli :-)'
+
 ## 0.26.4 (July 01, 2021)
   - Redazione del paragrafo sugli errori di esecuzione
   - Aggiunto output di esempio per errore stocastico
