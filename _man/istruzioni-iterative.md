@@ -174,7 +174,7 @@ L'output sarà uguale a quello della funzione che utilizzava il ciclo `for`:
 9: Inserire un valore da: 1 a 9
 ```
 
-Il ciclo `do-while` è uguale al ciclo `while`con la sola differenza che la condizione `while` viene valutata alla fine dell’iterazione e quindi il corpo del ciclo viene eseguito almeno per una volta. 
+Il ciclo `do-while` è uguale al ciclo `while` con la sola differenza che la condizione `while` viene valutata alla fine dell’iterazione e quindi il corpo del ciclo viene eseguito almeno per una volta. 
 La forma generale del ciclo `do-while` è:
 
 ```
@@ -184,11 +184,13 @@ do
 } while(espressione)    // espressione di controllo
 ```
 
+<hr id="isolamento-funzionale">
+
 Non offenderò la tua intelligenza con un esempio; vorrei piuttosto farti notare una cosa grave: il codice di questi programmi è sgraziato.
-Il problema è che la funzione `mostraPianeta` fa troppe cose: non solo stabilisce il nome del Pianeta, ma lo stampa anche a video.
+Il problema è che la funzione mostraPianeta fa troppe cose: non solo stabilisce il nome del Pianeta, ma lo stampa anche a video.
 In conseguenza di ciò, nel nostro output abbiamo anche quella brutta stringa di errore relativa alla posizione numero nove.
 Nel primo esempio in cui l'abbiamo utilizzata, questo non era un problema, ma adesso che il nostro programma si sta sviluppando, dobbiamo rendere ciascuna funzione più specialistica, dividendo l'elaborazione dei dati (capire quale sia il pianeta) dall'interfaccia utente (la stampa a video del nome).
-Per fare ciò, utilizzermo una nuova funzione che aggiungeremo al file `pianeti.cpp`:
+Per fare ciò, utilizzeremo una nuova funzione che aggiungeremo al file `pianeti.cpp`:
 
 ```
 /**

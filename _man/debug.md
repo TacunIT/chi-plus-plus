@@ -318,7 +318,7 @@ Notizia buona: non hai sintomi. Notizia cattiva: hai visto la tua donna di servi
 <div id="banner-3"></div>
  </blockquote>
 
-Il codice della funzione, però, è troppo ottimistico e delle piccole variazioni dell'input, come l'aggiunta di punti di sospensione o di una URL, *potrebbero* causare degli errori:
+Il codice della funzione `banner_testo`, però, è troppo ottimistico e delle piccole variazioni nel file di input, come l'aggiunta di punti di sospensione o di una URL, *potrebbero* causare degli errori:
 
 <blockquote class="output">
 Essere un ossessivo-compulsivo con una leggera tendenza alla paranoia, se ti guadagni da vivere facendo l’esperto di sicurezza, è un bene; le medesime peculiarità caratteriali, al contrario, sono decisamente un male quando alle 21:55 la tua donna di servizio ti scrive: "Ho fatto un molecolare e sono risultata positiva".
@@ -330,9 +330,9 @@ Cerchi di distrarti guardando la televisione, ma l’ennesimo thriller con Jason
 org">leggi un po’</a> e poi cerchi di dormire.
 </blockquote>
 
-Un errore come questo, che dipende dai dati in input, può aspettare anni, prima di venire alla luce. 
-Nel frattempo, il codice sarà stato distribuito agli utenti e chi lo ha scritto ne avrà perso memoria o potrebbe addirittura aver cambiato lavoro.  
-La correzione della funzione, se fatta per tempo, richiederebbe solo l'aggiunta di una condizione all'istruzione `if`, per verificare che il punto si trovi prima di un a capo:
+Questo tipo di errori possono aspettare anni, prima di venire alla luce.
+Per esempio, un errore nella valutazione di una data in coincidenza con gli anni bisestili potrebbe aspettare quattro anni prima di manifestarsi; nel frattempo, il codice sarà stato distribuito agli utenti e chi lo ha scritto ne avrà perso memoria o potrebbe addirittura aver cambiato lavoro.  
+La correzione dell'errore della funzione `banner_testo`, se fatta per tempo, richiederebbe solo l'aggiunta di una condizione all'istruzione `if`, per verificare che il punto si trovi prima di un a capo:
 
 ```
 if(c == PUNTO 
@@ -348,19 +348,37 @@ if(c == PUNTO
 }
 ```
 
-La stessa correzione, fatta dopo che il programma sia andato in esercizio, potrebbe richiedere giorni, se non settimane, perché dovrà essere ripetuto tutto il processo di rilascio del sistema:
+La stessa correzione, fatta dopo che il programma è andato in esercizio, potrebbe richiedere giorni, se non settimane, perché dovrà essere ripetuto tutto il processo di rilascio del sistema:
 
-- debug
-- correzione
-- test funzionale
-- test di carico
-- test di sicurezza
-- collaudo
-- distribuzione
+| attività | ore/uomo |
+|:--|:-:|
+| creazione di un ambiente di test | 8
+| debug | 2
+| correzione dell'errore | 1
+| test funzionale | 4
+| test di carico | 8
+| test di sicurezza | 8
+| collaudo | 4
+| rilascio/distribuzione | 1
+
+Al costo di queste attività vanno ovviamente aggiunti i possibili danni derivanti dal mancato funzionamento del sistema, che potrebbero facilmente essere pari a un mese se non a un anno di stipendio del programmatore.  
+Devi pensare a tutto questo, quando scrivi codice, perché hai una responsabilità sia nei confronti del tuo datore di lavoro che degli utenti del sistema, che potrebbero essere anche i tuoi amici o i tuoi parenti.  
+Se lavori male per la Coca-Cola, puoi sempre pensare: “Chi se ne frega, io bevo Pepsi”; non è etico, ma almeno non è auto-lesionista. 
+Se però lavori male per lo Stato, stai peggiorando la tua vita e di tutte le persone che conosci e questo, oltre a non essere etico, è anche stupido. 
+
+<hr id="">
+
+Un programma per il debug può aiutarti a identificare il punto del tuo codice che genera un errore, ma devi prima capire quale sia la funzione da esaminare, perché fare il debug di tutto il codice di un programma, laddove sia possibile, sarebbe estremamente frustrante.  
+Il modo in cui hai scritto il codice lo renderà più o meno facile da verificare.
+Immagina che il problema sia il valore della variabile `x`: se tutto il tuo codice ha la possibilità di modificarne il valore, potresti dover esaminare ogni singola funzione per verificare che non ne faccia un uso improprio. 
+Al contrario, se la variabile `x` potrà essere modificata solo alcuni punti del codice, la tua sarà una ricerca più mirata e veloce. 
+È per questo motivo, che <a href="/man/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l'elaborazione dei dati dalla gestione dell'interfaccia utente: perché in questo modo, a seconda dell'errore che dovesse verificarsi, sapremmo subito dove andare a guardare. 
+
+Alcune caratteristiche del C++ possono esserti di aiuto, in questo: la <a href="/man/note.html#tipizzazione" class="xref">tipizzazione forte</a> del C++ e l'<a href="/man/note.html#incapsulamento" class="xref">incapsulamento</a> delle classi ti permetteranno di tracciare più facilmente la genesi di un errore, ma non sempre saranno sufficienti.
+
+
 
 <!--
-
-la fase di debug è quella più complessa, perché si deve trovare chi la faccia e tirare su un ambiente di test
 
 v. Orologiaio, pos. 3836 
 
@@ -368,7 +386,5 @@ Il cambiamento inizia quando si intraprende un nuovo sentiero , anche se questo 
 M. Deen - Per antiche strade
 
 Se non lo si è fatto finora, spiegare che gli esempii del testo sono studiati per essere progressivamente migliorati, per dimostrare come la scrittura di codice sia un'attività in continua evoluzione.
-
-riprendere, se utile, gli esempii del ciclo for per illustrare i diversi tipi di errore che ne possono derivare
 
 -->
