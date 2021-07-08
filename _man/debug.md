@@ -372,11 +372,19 @@ Un programma per il debug può aiutarti a identificare il punto del tuo codice c
 Il modo in cui hai scritto il codice lo renderà più o meno facile da verificare.
 Immagina che il problema sia il valore della variabile `x`: se tutto il tuo codice ha la possibilità di modificarne il valore, potresti dover esaminare ogni singola funzione per verificare che non ne faccia un uso improprio. 
 Al contrario, se la variabile `x` potrà essere modificata solo alcuni punti del codice, la tua sarà una ricerca più mirata e veloce. 
-È per questo motivo, che <a href="/man/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l'elaborazione dei dati dalla gestione dell'interfaccia utente: perché in questo modo, a seconda dell'errore che dovesse verificarsi, sapremmo subito dove andare a guardare. 
-
-Alcune caratteristiche del C++ possono esserti di aiuto, in questo: la <a href="/man/note.html#tipizzazione" class="xref">tipizzazione forte</a> del C++ e l'<a href="/man/note.html#incapsulamento" class="xref">incapsulamento</a> delle classi ti permetteranno di tracciare più facilmente la genesi di un errore, ma non sempre saranno sufficienti.
-
-
+È per questo motivo, che <a href="/man/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l'elaborazione dei dati dalla gestione dell'interfaccia utente: perché in questo modo, a seconda dell'errore che dovesse verificarsi, sapremmo subito dove andare a guardare.  
+Alcune caratteristiche del C++, come la <a href="/man/note.html#tipizzazione" class="xref">tipizzazione forte</a> e l'<a href="/man/note.html#incapsulamento" class="xref">incapsulamento</a> potranno esserti di aiuto, in questo, ma non sempre saranno sufficienti.
+L'errore si manifesterà &mdash; di solito pochi minuti prima che tu debba smettere di lavorare per uscire o fare qualcos'altro &mdash; e tu dovrai identificarne la causa.
+Il primo problema sarà riuscire a riprodurre le condizioni in cui l'errore di manifesta.
+Come abbiamo visto poco fa, se l'errore dipende dai dati in input, prima ancora di identificare il problema, dovrai capire quali siano i dati che lo generano. 
+Diversi anni or sono, il Maestro Canaro dovette registrarsi su un sito Web che gli chiese anche la sua data di nascita (che, come sai, fu il 29 Febbraio del 1964).
+<!-- Si trattava di Paypal e questo non è il solo errore che ho rilevato -->
+La maschera di inserimento nuovo utente non gli diede problemi, ma la maschera di modifica dati, evidentemente scritta da un programmatore meno esperto, non gli permise di aggiornarli perché, a suo dire, la data di nascita era sbagliata.
+Ciò vuol dire che il sistema utilizzava due funzioni distinte per il controllo della data di nascita nelle funzioni di inserimento e modifica e che la funzione utilizzata in modifica non era una funzione standard, ma codice scritto *ad-hoc* &mdash.  
+Entrambe queste scelte sono errori: a una determinata azione sui dati deve corrispondere una singola funzione.
+Fare la stessa operazione con parti di codice distinte è sbagliato, sia perché aumenta la probabilità di commettere degli errori, sia perché rallenta i tempi di identificazione dell'errore in fase di debug.
+È sbagliato anche riscrivere delle funzioni che già esistono: <a href="http://cr.yp.to/djb.html" target="qmail">D. J. Bernstein</a> lo fece, con le funzioni di I/O di qmail, ma le sue funzioni erano migliori e più sicure delle funzioni della libreria standard.     
+A questi due errori di programmazione &mdash; inammissibili, in un sito che gestisce transazioni economiche &mdash; si aggiunge una profonda sciatteria della fase di debug del codice, perché la corretta gestione dei casi particolari, come gli anni bisestili, va sempre verificata.
 
 <!--
 
