@@ -374,8 +374,44 @@ Immagina che il problema sia la variabile `x`: se tutto il tuo codice ha la poss
 Al contrario, se la variabile `x` può essere modificata solo alcuni punti del codice, la tua sarà una ricerca più mirata e veloce. 
 È per questo motivo, che <a href="/man/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l'elaborazione dei dati dalla gestione dell'interfaccia utente: perché in questo modo, a seconda del tipo di errore che dovesse presentarsi &mdash; di calcolo o di output &mdash; sapremo quale funzione andare a guardare.  
 Alcune caratteristiche del C++, come la <a href="/man/note.html#tipizzazione" class="xref">tipizzazione forte</a> e l'<a href="/man/note.html#incapsulamento" class="xref">incapsulamento</a> potranno esserti di aiuto in questo senso, ma non sempre saranno sufficienti a identificare il punto esatto in cui il tuo codice fa qualcosa di errato.
-In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare.
+In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare  
+In questo codice <!-- che è una rielaborazione del codice della <a href="/man/stream.html" class="xref">lezione sugli stream</a> -> una piccola cosa non è stata fatta come si dovrebbe e ne è derivato un errore:
 
+```
+{% include_relative src/debug-gestione-errori.cpp %}
+```
+
+Se compili ed esegui questo codice, passandogli uno dei file utilizzati per l'esempio precedente, ottieni un errore, anche se il file esiste:
+
+```
+> g++ src/cpp/stream-eccezioni.cpp -o src/out/esempio
+> src/out/esempio src/cpp/debug-testo-1.txt          
+-30: Impossibile leggere il file di input
+> 
+> ls  src/cpp/debug-testo-1.txt  
+src/cpp/debug-testo-1.txt
+```
+
+Decidi allora di aggiungere una funzione di *log* a video, che ti dica quale file sta aprendo il programma:
+
+```
+int apri_file(ifstream& testo, const char* path)
+{
+    cout << "Apro il file: " << path << endl;
+    testo.open(path);
+    return ERR_NONE;
+} 
+```
+
+Ricompili il programma, ma quando lo esegui, ottieni un nuovo errore:
+
+```
+> g++ src/cpp/debug-gestione-errori.cpp -o src/out/esempio
+> src/out/esempio src/cpp/debug-testo-1.txt               
+zsh: segmentation fault  src/out/esempio src/cpp/debug-testo-1.txt
+```
+
+--
 
 Quando l'errore si manifesterà &mdash; di solito pochi minuti prima che tu debba smettere di lavorare per uscire o fare qualcos'altro &mdash; e tu dovrai identificarne la causa, il primo problema che avrai sarà di riuscire a riprodurre le condizioni in cui si manifesta.
 Come abbiamo visto poco fa, se l'errore dipende dai dati in input, per identificare il problema, dovrai capire quali sono i dati che lo generano; qualche volta sarà facile, ma in altri casi potrà rivelarsi estremamente complesso.  
@@ -399,6 +435,7 @@ Quindi, se l'input è una data, dovrai verificare che il tuo sistema gestisca co
 
 <!--
 
+importanza dell'impaginazione dei nomi: OPEN, CLOSE, READ / INPUT, DELETE, UPDATE
 v. Orologiaio, pos. 3836 
 
 Il cambiamento inizia quando si intraprende un nuovo sentiero , anche se questo sentiero non è che una traccia lasciata da una capra assetata che ha trovato una sorgente .
