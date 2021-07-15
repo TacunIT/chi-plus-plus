@@ -374,8 +374,13 @@ Immagina che il problema sia la variabile `x`: se tutto il tuo codice ha la poss
 Al contrario, se la variabile `x` può essere modificata solo alcuni punti del codice, la tua sarà una ricerca più mirata e veloce. 
 È per questo motivo, che <a href="/man/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l'elaborazione dei dati dalla gestione dell'interfaccia utente: perché in questo modo, a seconda del tipo di errore che dovesse presentarsi &mdash; di calcolo o di output &mdash; sapremo quale funzione andare a guardare.  
 Alcune caratteristiche del C++, come la <a href="/man/note.html#tipizzazione" class="xref">tipizzazione forte</a> e l'<a href="/man/note.html#incapsulamento" class="xref">incapsulamento</a> potranno esserti di aiuto in questo senso, ma non sempre saranno sufficienti a identificare il punto esatto in cui il tuo codice fa qualcosa di errato.
-In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare  
-In questo codice <!-- che è una rielaborazione del codice della <a href="/man/stream.html" class="xref">lezione sugli stream</a> -> una piccola cosa non è stata fatta come si dovrebbe e ne è derivato un errore:
+In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare.  
+<!--
+
+spiegare come suddividere il codice e come sfruttare le funzioni di log
+
+-->
+In questo codice <!-- che è una rielaborazione del codice della <a href="/man/stream.html" class="xref">lezione sugli stream</a> --> una piccola cosa non è stata fatta come si dovrebbe e ne è derivato un errore:
 
 ```
 {% include_relative src/debug-gestione-errori.cpp %}
@@ -392,23 +397,55 @@ Se compili ed esegui questo codice, passandogli uno dei file utilizzati per l'es
 src/cpp/debug-testo-1.txt
 ```
 
-Decidi allora di aggiungere una funzione di *log* a video, che ti dica quale file sta aprendo il programma:
+Provi allora a ri-compilare il programma definendo la macro `__LOG__` per verificare quale sia il file che il prgramma sta aprendo:
 
 ```
-int apri_file(ifstream& testo, const char* path)
-{
-    cout << "Apro il file: " << path << endl;
-    testo.open(path);
-    return ERR_NONE;
-} 
+#ifdef __LOG__    
+    log(LOG_DEBUG, 2, "Apro il file: ",  path);
+#endif
 ```
 
-Ricompili il programma, ma quando lo esegui, ottieni un nuovo errore:
+Quando esegui i programma, però, ottieni un nuovo errore:
 
 ```
-> g++ src/cpp/debug-gestione-errori.cpp -o src/out/esempio
-> src/out/esempio src/cpp/debug-testo-1.txt               
-zsh: segmentation fault  src/out/esempio src/cpp/debug-testo-1.txt
+> g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio
+> src/out/esempio src/cpp/debug-testo-1.txt
+[DEBUG] Apro il file: zsh: segmentation fault src/out/esempio src/cpp/debug-testo-1.txt
+```
+
+Questo non è il comportamento atteso dalla funzione, ma ci permette lo stesso di capire quale possa essere il problema.
+L'errore: `segmentation fault` vuol dire che il programma sta cercando di accedere a un'area di memoria che non gli appartiene.
+L'area di memoria in questione è quella associata al parametro `path`, che a sua volta è stato inizializzato con il valore della variabile `argv[2]`:
+
+```
+esito = apri_file(testo, argv[2]);
+```
+
+Il *bug* è l'indice `2` nell'array `argv`.
+La stringa di chiamata del programma ha solo due valori: il path del programma e il nome del file di input:
+
+```
+> src/out/esempio src/cpp/debug-testo-1.txt
+```
+
+Il conteggio degli elementi di un array, però, inizia da `0`, quindi l'indirizzo di memoria puntato da `argv[2]` non appartiene al programma.
+Non possiamo utilizzarlo come path per una funzione `open` e non possiamo stamparlo a video.  
+Questo errore di distrazione è stato facilitato dall'utilizzo di una costante numerica per la definizione dell'indice dell'array.
+È sempre meglio gestire questi casi con definendo delle costanti con il precompilatore:
+
+```
+#define PARAM_PATH 1
+...
+esito = apri_file(testo, argv[PARAM_PATH]);
+```
+
+Se applichiamo questa correzione, il programma funziona correttamente:
+
+```
+> g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio
+> src/out/esempio src/cpp/debug-testo-1.txt                          
+[DEBUG] Apro il file: src/cpp/debug-testo-1.txt
+Essere un ossessivo-compulsivo con una leggera tendenza...
 ```
 
 --
