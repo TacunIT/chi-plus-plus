@@ -1,3 +1,7 @@
+## 0.26.6 (July 15, 2021)
+  - Redazione del testo del capitolo sul debug
+  - Aggiunto codice con errore
+
 ## 0.26.5 (July 08, 2021)
   - Redazione del testo del capitolo sul debug
   - Corrette le ricorrenze della parola 'capitolo' nel testo: per il Maestro, sono lezioni, non capitoli :-)'
