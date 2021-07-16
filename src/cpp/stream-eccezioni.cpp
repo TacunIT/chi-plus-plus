@@ -1,6 +1,6 @@
 /** 
- * @file 
- * 
+ * @file src/stream-eccezioni.cpp
+ * Programma di esempio per la gestione delle eccezioni.
  */
  
 #include <iostream>
@@ -9,14 +9,17 @@
 
 using namespace std;
 
-#define ERR_NONE              0
-#define ERR_FILE_NONE       -10
-#define ERR_FILE_OPEN       -20
-#define ERR_FILE_READ       -30
-#define S_ERR_FILE_NONE     "Definire un file di input"
-#define S_ERR_FILE_OPEN     "Impossibile aprire il file di input"
-#define S_ERR_FILE_READ     "Impossibile leggere il file di input"
+/** Codici e stringhe di errore */
+#define ERR_NONE          0
+#define ERR_FILE_NONE   -10
+#define ERR_FILE_OPEN   -20
+#define S_ERR_FILE_NONE "Definire un file di input"
+#define S_ERR_FILE_OPEN "Impossibile aprire il file di input"
 
+/**
+*   Definisce una classe derivata da exception
+*   per la gestione degli errori.
+*/
 class Eccezione: public exception
 {
 private:
@@ -24,96 +27,94 @@ private:
     const char* _errore;
 public:
 
+    /** Costruttore */
     Eccezione(int codice, const char* errore) 
     : _codice(codice), _errore(errore) {        
     }
     
+    /** Funzione virtuale pura: va ridefinita */
     virtual const char* what() const throw() {
         return _errore;
     }
 
+    /** Funzioni di interfaccia */
     int getCodice() { return _codice; }
-    
+    const char* getErrore() { return _errore; }
+
+    /** Ridefinizione dell'operatore di output */
     friend ostream& operator<< (ostream& os, Eccezione e){
-        os << endl << e._codice << ": " << e._errore << endl;
+        os << e._codice << ": " << e._errore << endl;
         return os;
     }
 };
 
-void errore(int codice, bool exit = true)
-{
-    const char* errore = NULL;
-    
-    switch(codice) {
-        case ERR_FILE_NONE: errore = S_ERR_FILE_NONE; break;
-        case ERR_FILE_OPEN: errore = S_ERR_FILE_OPEN; break;                
-        case ERR_FILE_READ: errore = S_ERR_FILE_READ; break;                
-    }
-    if(errore != NULL   ){
-        Eccezione e(codice, errore);
-        throw e;
-    }
-}
-
-int verifica_parametri(int argc, char** argv)
-{
-    return (argc < 2) ? ERR_FILE_NONE : ERR_NONE;
-} 
-
-int apri_file(ifstream& testo, const char* path)
-{
-    // cout << "Apro il file: " << path;
-    testo.open(path);
-    return ERR_NONE;
-} 
-
-int elabora_file(ifstream& testo)
-{
-    int  letti = 0;
-    char c = 0;
-    while(testo.good()) {
-        if((c = testo.get()) != EOF) {            
-            letti++;
-            cout << c;            
-        }       
-    } 
-    return letti;
-} 
-
-void chiudi_file(ifstream& testo)
-{
-    testo.close();
-} 
- 
 int main(int argc, char** argv)
 {    
     ifstream testo;
     testo.exceptions ( std::ifstream::badbit );
 
     try {
+
+        char c     = 0;
+        int  letti = 0;
+                    
+        /** 
+        *   Verifica che ci siano sia il nome del file di input 
+        *   che il numero di caratteri da leggere.
+        */
+        if (argc < 3) 
+            throw Eccezione(ERR_FILE_NONE, S_ERR_FILE_NONE);
+            
+        /** Definisce il numero di caratteri da leggere */
+        int da_leggere = atoi(argv[1]);
         
-        int esito = ERR_NONE;
-        
-        /** Verifica che ci sia il nome del file di input */
-        esito = verifica_parametri(argc, argv);
-        errore(esito);
-        
-        /** Apre il file in lettura */
+        /** 
+        *   Imposta la exception mask dello stream per fare
+        *   sì che un errore di I/O generi un'eccezione,
+        *   poi apre il file in lettura.
+        *   Usa un blocco try/catch per intercettare una
+        *   eventuale eccezione e gestirla in maniera
+        *   omogenea al resto del codice.
+        */
         try {
-            esito = apri_file(testo, argv[2]);            
+            testo.exceptions ( std::ifstream::badbit 
+                             | std::ifstream::failbit );
+            testo.open(argv[2]);            
         } catch(ifstream::failure e) {
-            errore(ERR_FILE_OPEN);            
+            throw Eccezione(ERR_FILE_OPEN, S_ERR_FILE_OPEN);      
         }
-        
-        /** Elabora il testo */
-        if(elabora_file(testo) == 0)
-            errore(ERR_FILE_READ);
-        
-        /** Chiude il file */
-        chiudi_file(testo);
-    
+
+        /**
+        *   Re-imposta la exception mask per evitare
+        *   eccezioni a fine file.
+        */
+        testo.exceptions ( std::ifstream::goodbit);
+
+        /** 
+        *   Legge il testo e lo stampa a video 
+        *   Se è stato definito un numero massimo di 
+        *   caratteri, si ferma lì.
+        */
+        while(testo.good()) {
+            if((c = testo.get()) != EOF) {     
+                letti++;
+                cout << c;
+            } 
+            if((da_leggere != 0) && (letti >= da_leggere)) {
+                cout << endl;
+                break;
+            }
+        } 
+                
+        /** Chiude il file di input */
+        testo.close();
+            
     } catch (Eccezione e) {
+
+        /** Stampa a video l'eccezione */
         cerr << e;
+
+        /** Esce con un codice di errore */
         exit(e.getCodice());
     }
     
