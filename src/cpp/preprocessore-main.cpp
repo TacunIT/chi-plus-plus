@@ -1,3 +1,8 @@
+/** 
+ * @file src/preprocessore-main.cpp
+ * Mostra i valori possibili per i principali tipi di dato del C++.
+ */
+ 
 #include <iostream>
 #include <iomanip>
 
