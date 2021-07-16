@@ -380,7 +380,7 @@ In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in 
 todo@ spiegare come suddividere il codice e come sfruttare le funzioni di log
 -->
 
-In questo codice <!-- che è una rielaborazione del codice della <a href="/man/stream.html" class="xref">lezione sugli stream</a> --> una piccola cosa non è stata fatta come si dovrebbe e ne è derivato un errore:
+In questo codice una piccola cosa non è stata fatta come si dovrebbe e ne è derivato un errore:
 
 ```
 {% include_relative src/debug-gestione-errori.cpp %}
@@ -422,14 +422,13 @@ esito = apri_file(testo, argv[2]);
 ```
 
 Il *bug* è l'indice `2` nell'array `argv`.
-La stringa di chiamata del programma ha solo due valori: il path del programma e il nome del file di input:
+Come certamente avrai notato, il codice di questo programma è una rielaborazione del codice della <a href="/man/stream.html" class="xref">lezione sugli stream</a>, ma stavolta la stringa di chiamata del programma ha solo due valori: il path del programma e il nome del file di input:
 
 ```
 > src/out/esempio src/cpp/debug-testo-1.txt
 ```
 
-Il conteggio degli elementi di un array, però, inizia da `0`, quindi l'indirizzo di memoria puntato da `argv[2]` non appartiene al programma.
-Non possiamo utilizzarlo come path per una funzione `open` e non possiamo stamparlo a video.  
+L'indirizzo di memoria puntato da `argv[2]`, quindi, non appartiene al programma: non possiamo utilizzarlo come path per una funzione `open` e non possiamo stamparlo a video.  
 Questo errore di distrazione è stato facilitato dall'utilizzo di una costante numerica per la definizione dell'indice dell'array.
 È sempre meglio gestire questi casi con definendo delle costanti con il precompilatore:
 
