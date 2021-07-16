@@ -9,3 +9,13 @@ quote:      "Non puoi immergere i tuoi byte due volte nello stesso stream"
 ---
 
 Oggi ti parlerò della componente più importante del C++, ovvero gli *stream*.
+
+```
+{% include_relative src/stream-eccezioni.cpp %}
+```
+
+<!--
+
+@todo: introdurre la gestione delle eccezioni
+
+-->

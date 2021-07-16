@@ -210,7 +210,7 @@ Eliminare il primo precetto (*Dio esiste*) non è possibile, perché gli altri d
 Eliminare il terzo precetto (*Dio ha creato l'Universo*) equivale a dire: “A Shanghai esiste un uomo di nome Mario”; se Dio c'è ed è buono, ma se non ha alcuna relazione con l'Universo e la nostra esistenza, a noi, cosa importa?
 Se però eliminiamo il secondo precetto, (*Dio ha solo proprietà positivie*)  tutto magicamente si aggiusta: Dio esiste, ha creato l'Universo e l'Uomo, ma non è possibile dire se sia buono o meno, perché è improprio classificare l'essenza del creatore con gli attributi del creato; sarebbe come se i *byte* di un computer si chiedessero se il Programmatore valga I o 0.
 <br>
-Senza la premessa, conseguente al secondo precetto (*Se Dio è buono, giusto e misericordioso*), la famigerata domanda **D** non è più contraddittoria: se qualcuno ce la facesse, adesso, potremmo rispondere:
+Senza la premessa, conseguente al secondo precetto (*Se Dio è buono, giusto e misericordioso*), la famigerata domanda *D* non è più contraddittoria: se qualcuno ce la facesse, adesso, potremmo rispondere:
 
 > Nell'Universo creato da Dio esistono stupratori, omicidi e malattie perché ciò fa parte del Suo disegno, che noi non siamo in grado di comprendere.
 
