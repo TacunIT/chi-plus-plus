@@ -16,6 +16,6 @@ Oggi ti parlerò della componente più importante del C++, ovvero gli *stream*.
 
 <!--
 
-@todo: introdurre la gestione delle eccezioni
+Il primo parametro mi serve per giustificare l'errore nell'indice dell'array quando lo stesso codice sarà usato per il capitolo sul debug.
 
 -->

@@ -80,12 +80,17 @@
 
 using namespace std;
 
+/** Codici e stringhe di errore */
 #define ERR_NONE          0
 #define ERR_FILE_NONE   -10
 #define ERR_FILE_OPEN   -20
 #define S_ERR_FILE_NONE "Definire un file di input"
 #define S_ERR_FILE_OPEN "Impossibile aprire il file di input"
 
+/**
+*   Definisce una classe derivata da exception
+*   per la gestione degli errori.
+*/
 class Eccezione: public exception
 {
 private:
@@ -93,16 +98,21 @@ private:
     const char* _errore;
 public:
 
+    /** Costruttore */
     Eccezione(int codice, const char* errore) 
     : _codice(codice), _errore(errore) {        
     }
     
+    /** Funzione virtuale pura: va ridefinita */
     virtual const char* what() const throw() {
         return _errore;
     }
 
+    /** Funzioni di interfaccia */
     int getCodice() { return _codice; }
-    
+    const char* getErrore() { return _errore; }
+
+    /** Ridefinizione dell'operatore di output */
     friend ostream&amp; operator&lt;&lt; (ostream&amp; os, Eccezione e){
         os &lt;&lt; e._codice &lt;&lt; ": " &lt;&lt; e._errore &lt;&lt; endl;
         return os;
@@ -115,16 +125,16 @@ int main(int argc, char** argv)
     testo.exceptions ( std::ifstream::badbit );
 
     try {
-        
+
+        char c     = 0;
+        int  letti = 0;
+                    
         /** 
         *   Verifica che ci siano sia il nome del file di input 
         *   che il numero di caratteri da leggere.
         */
         if (argc &lt; 3) 
             throw Eccezione(ERR_FILE_NONE, S_ERR_FILE_NONE);
-            
-        char c = 0;
-        int  letti = 0;
             
         /** Definisce il numero di caratteri da leggere */
         int da_leggere = atoi(argv[1]);
@@ -151,7 +161,11 @@ int main(int argc, char** argv)
         */
         testo.exceptions ( std::ifstream::goodbit);
 
-        /** Legge il testo e lo stampa a video */
+        /** 
+        *   Legge il testo e lo stampa a video 
+        *   Se è stato definito un numero massimo di 
+        *   caratteri, si ferma lì.
+        */
         while(testo.good()) {
             if((c = testo.get()) != EOF) {     
                 letti++;
@@ -167,7 +181,11 @@ int main(int argc, char** argv)
         testo.close();
             
     } catch (Eccezione e) {
+
+        /** Stampa a video l'eccezione */
         cerr &lt;&lt; e;
+
+        /** Esce con un codice di errore */
         exit(e.getCodice());
     }
     
@@ -178,7 +196,7 @@ int main(int argc, char** argv)
 
 <!--
 
-@todo: introdurre la gestione delle eccezioni
+Il primo parametro mi serve per giustificare l'errore nell'indice dell'array quando lo stesso codice sarà usato per il capitolo sul debug.
 
 -->
 
