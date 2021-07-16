@@ -303,6 +303,173 @@ Al contrario, questo codice produrrà un errore solo in determinate condizioni:
 {% include_relative src/debug-errore-stocastico.cpp %}
 ```
 
+La funzione `banner_testo` inserisce il *tag* HTML di un banner all'interno del testo di una pagina Web.
+I banner devono essere posizionati dopo un punto fermo, a distanza di almeno `N_CHAR_MIN` caratteri l'uno dall'altro.  
+Questo codice funziona correttamente con alcuni tipi di testo:
+
+<blockquote class="output">
+Essere un ossessivo-compulsivo con una leggera tendenza alla paranoia, se ti guadagni da vivere facendo l’esperto di sicurezza, è un bene; le medesime peculiarità caratteriali, al contrario, sono decisamente un male quando alle 21:55 la tua donna di servizio ti scrive: "Ho fatto un molecolare e sono risultata positiva.
+<div id="banner-1"></div>
+Non potrai farti un tampone prima delle 8:00 dell’indomani quindi sai che ti aspettano almeno dieci ore di panico controllato; qualcuna di meno, se riesci ad addormentarti.
+Cerchi di distrarti guardando la televisione, ma l’ennesimo thriller con Jason Statham, intervallato da pubblicità di ansiolitici (un conflitto di interessi che ti riprometti di studiare con più attenzione, se sopravvivi), non fa che aumentare la tua agitazione; così, spegni il televisore, ti prepari una tisana relax, leggi un po’ e poi cerchi di dormire.
+<div id="banner-2"></div>
+Appena chiudi gli occhi, però, il tuo cervello comincia a fare ciò che sa fare meglio, ovvero analizzare ciclicamente tutte le possibili conseguenze di un determinato evento; solo che stavolta, quello che potrebbe essere infetto non è un computer, sei tu.
+Notizia buona: non hai sintomi. Notizia cattiva: hai visto la tua donna di servizio solo quattro giorni prima, quindi i giochi sono ancora aperti.
+<div id="banner-3"></div>
+ </blockquote>
+
+Il codice della funzione `banner_testo`, però, è troppo ottimistico e delle piccole variazioni nel file di input, come l'aggiunta di punti di sospensione o di una URL, *potrebbero* causare degli errori:
+
+<blockquote class="output">
+Essere un ossessivo-compulsivo con una leggera tendenza alla paranoia, se ti guadagni da vivere facendo l’esperto di sicurezza, è un bene; le medesime peculiarità caratteriali, al contrario, sono decisamente un male quando alle 21:55 la tua donna di servizio ti scrive: "Ho fatto un molecolare e sono risultata positiva".
+<div id="banner-1"></div>
+..
+Non potrai farti un tampone prima delle 8:00 dell’indomani quindi sai che ti aspettano almeno dieci ore di panico controllato. Qualcuna di meno, se riesci ad addormentarti.
+Cerchi di distrarti guardando la televisione, ma l’ennesimo thriller con Jason Statham, intervallato da pubblicità di ansiolitici (un conflitto di interessi che ti riprometti di studiare con più attenzione, se sopravvivi), non fa che aumentare la tua agitazione; così, spegni il televisore, ti prepari una tisana relax, <a href="http://cplusplus.
+<div id="banner-2"></div>
+org">leggi un po’</a> e poi cerchi di dormire.
+</blockquote>
+
+Questo tipo di errori possono aspettare anni, prima di venire alla luce.
+Per esempio, un errore nella valutazione di una data in coincidenza con gli anni bisestili potrebbe aspettare quattro anni prima di manifestarsi; nel frattempo, il codice sarà stato distribuito agli utenti e chi lo ha scritto ne avrà perso memoria o potrebbe addirittura aver cambiato lavoro.  
+La correzione dell'errore della funzione `banner_testo`, se fatta per tempo, richiederebbe solo l'aggiunta di una condizione all'istruzione `if`, per verificare che il punto si trovi prima di un a capo:
+
+```
+if(c == PUNTO 
+&& letti >= N_CHAR_MIN 
+&& n_banner <= N_BANNER_MAX
+&& testo.peek() == A_CAPO) { 
+    cout << endl 
+         << "<div id=\"banner-" << n_banner << "\">"
+         << "</div>" 
+         << endl;
+    n_banner++;
+    letti = 0;
+}
+```
+
+La stessa correzione, fatta dopo che il programma è andato in esercizio, potrebbe richiedere giorni, se non settimane, perché dovrà essere ripetuto tutto il processo di rilascio del sistema:
+
+| attività | ore/uomo |
+|:--|:-:|
+| creazione di un ambiente di test | 8
+| debug | 2
+| correzione dell'errore | 1
+| test funzionale | 4
+| test di carico | 8
+| test di sicurezza | 8
+| collaudo | 4
+| rilascio/distribuzione | 1
+
+Al costo di queste attività vanno ovviamente aggiunti i possibili danni derivanti dal mancato funzionamento del sistema, che potrebbero facilmente essere pari a un mese se non a un anno di stipendio del programmatore.  
+Devi pensare a tutto questo, quando scrivi codice, perché hai una responsabilità sia nei confronti del tuo datore di lavoro che degli utenti del sistema, che potrebbero essere anche i tuoi amici o i tuoi parenti.  
+Se lavori male per la Coca-Cola, puoi sempre pensare: “Chi se ne frega, io bevo Pepsi”; non è etico, ma almeno non è auto-lesionista. 
+Se però lavori male per lo Stato, stai peggiorando la tua vita e di tutte le persone che conosci e questo, oltre a non essere etico, è anche stupido. 
+
+<hr id="">
+
+Un programma per il debug può aiutarti a identificare il punto del tuo codice che genera un errore, ma devi prima capire quale sia la funzione da esaminare, perché fare il debug di tutto il codice di un programma, nei casi in cui questo sia possibile, sarebbe lungo ed estremamente frustrante.  
+Il modo in cui è stato scritto il codice lo renderà più o meno facile da verificare.
+Immagina che il problema sia la variabile `x`: se tutto il tuo codice ha la possibilità di modificarne il valore, potresti dover esaminare ogni singola funzione per verificare che non ne faccia un uso improprio. 
+Al contrario, se la variabile `x` può essere modificata solo alcuni punti del codice, la tua sarà una ricerca più mirata e veloce. 
+È per questo motivo, che <a href="/man/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l'elaborazione dei dati dalla gestione dell'interfaccia utente: perché in questo modo, a seconda del tipo di errore che dovesse presentarsi &mdash; di calcolo o di output &mdash; sapremo quale funzione andare a guardare.  
+Alcune caratteristiche del C++, come la <a href="/man/note.html#tipizzazione" class="xref">tipizzazione forte</a> e l'<a href="/man/note.html#incapsulamento" class="xref">incapsulamento</a> potranno esserti di aiuto in questo senso, ma non sempre saranno sufficienti a identificare il punto esatto in cui il tuo codice fa qualcosa di errato.
+In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare.  
+
+<!--
+todo@ spiegare come suddividere il codice e come sfruttare le funzioni di log
+-->
+
+In questo codice <!-- che è una rielaborazione del codice della <a href="/man/stream.html" class="xref">lezione sugli stream</a> --> una piccola cosa non è stata fatta come si dovrebbe e ne è derivato un errore:
+
+```
+{% include_relative src/debug-gestione-errori.cpp %}
+```
+
+Se compili ed esegui questo codice, passandogli uno dei file utilizzati per l'esempio precedente, ottieni un errore, anche se il file esiste:
+
+```
+> g++ src/cpp/stream-eccezioni.cpp -o src/out/esempio
+> src/out/esempio src/cpp/debug-testo-1.txt          
+-30: Impossibile leggere il file di input
+> 
+> ls  src/cpp/debug-testo-1.txt  
+src/cpp/debug-testo-1.txt
+```
+
+Provi allora a ri-compilare il programma definendo la macro `__LOG__` per verificare quale sia il file che il prgramma sta aprendo:
+
+```
+#ifdef __LOG__    
+    log(LOG_DEBUG, 2, "Apro il file: ",  path);
+#endif
+```
+
+Quando esegui i programma, però, ottieni un nuovo errore:
+
+```
+> g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio
+> src/out/esempio src/cpp/debug-testo-1.txt
+[DEBUG] Apro il file: zsh: segmentation fault src/out/esempio src/cpp/debug-testo-1.txt
+```
+
+Questo non è il comportamento atteso dalla funzione, ma ci permette lo stesso di capire quale possa essere il problema.
+L'errore: `segmentation fault` vuol dire che il programma sta cercando di accedere a un'area di memoria che non gli appartiene.
+L'area di memoria in questione è quella associata al parametro `path`, che a sua volta è stato inizializzato con il valore della variabile `argv[2]`:
+
+```
+esito = apri_file(testo, argv[2]);
+```
+
+Il *bug* è l'indice `2` nell'array `argv`.
+La stringa di chiamata del programma ha solo due valori: il path del programma e il nome del file di input:
+
+```
+> src/out/esempio src/cpp/debug-testo-1.txt
+```
+
+Il conteggio degli elementi di un array, però, inizia da `0`, quindi l'indirizzo di memoria puntato da `argv[2]` non appartiene al programma.
+Non possiamo utilizzarlo come path per una funzione `open` e non possiamo stamparlo a video.  
+Questo errore di distrazione è stato facilitato dall'utilizzo di una costante numerica per la definizione dell'indice dell'array.
+È sempre meglio gestire questi casi con definendo delle costanti con il precompilatore:
+
+```
+#define PARAM_PATH 1
+...
+esito = apri_file(testo, argv[PARAM_PATH]);
+```
+
+Se applichiamo questa correzione, il programma funziona correttamente:
+
+```
+> g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio
+> src/out/esempio src/cpp/debug-testo-1.txt                          
+[DEBUG] Apro il file: src/cpp/debug-testo-1.txt
+Essere un ossessivo-compulsivo con una leggera tendenza...
+```
+
+--
+
+Quando l'errore si manifesterà &mdash; di solito pochi minuti prima che tu debba smettere di lavorare per uscire o fare qualcos'altro &mdash; e tu dovrai identificarne la causa, il primo problema che avrai sarà di riuscire a riprodurre le condizioni in cui si manifesta.
+Come abbiamo visto poco fa, se l'errore dipende dai dati in input, per identificare il problema, dovrai capire quali sono i dati che lo generano; qualche volta sarà facile, ma in altri casi potrà rivelarsi estremamente complesso.  
+Diversi anni or sono, il Maestro Canaro dovette registrarsi su un sito Web che gli chiese anche la sua data di nascita &mdash; che, come sai, fu il 29 Febbraio del 1964        .
+<!-- Si trattava di Paypal e questo non è il solo errore che ho rilevato -->
+La maschera di inserimento nuovo utente non gli diede problemi, ma la maschera di modifica dati, evidentemente scritta da un programmatore meno esperto, non gli permise di aggiornarli perché, a suo dire, la data di nascita era sbagliata.
+Ciò vuol dire che il sistema utilizzava due funzioni distinte per il controllo della data di nascita, una nella funzione di inserimento e un'altra nella funzione di modifica, e che almeno la funzione utilizzata in modifica non era una funzione standard, ma codice scritto *ad-hoc*.  
+Entrambe queste scelte sono errori: a una determinata azione sui dati deve corrispondere una singola funzione.
+Fare la stessa operazione con parti di codice distinte è sbagliato, sia perché aumenta la probabilità di commettere degli errori, sia perché rallenta i tempi di identificazione dell'errore in fase di debug.
+È sbagliato anche riscrivere delle funzioni che già esistono: <a href="http://cr.yp.to/djb.html" target="qmail">D. J. Bernstein</a> lo fece, con le funzioni di I/O di qmail, ma le sue funzioni erano migliori e più sicure delle funzioni della libreria standard.     
+A questi due errori di programmazione &mdash; inammissibili, in un sito che gestisca transazioni economiche &mdash; si aggiunge una profonda sciatteria della fase di debug del codice, perché la corretta gestione dei casi particolari, come gli anni bisestili, va sempre verificata.
+Quando verifichi il funzionamento di un programma, non puoi limitarti a controllare che faccia ciò che deve fare, ma devi anche assicurarti che non faccia ciò che non deve fare. 
+In particolare, devi verificare che si comporti correttamente se:
+
+- gli fornisci i dati di input corretti;
+- non gli fornisci alcun dato;
+- gli fornisci dati errati;
+- gli fornisci dati in eccesso.
+
+Quindi, se l'input è una data, dovrai verificare che il tuo sistema gestisca correttamente sia il valore `29-02-1964` che il valore `29-02-1965`; se l'input è una stringa di testo, dovrai accertarti che il sistema gestisca correttamente anche il caso in cui riceva più caratteri del previsto e che elimini eventuali caratteri di spazio all'inizio o alla fine del testo, a meno che questo non sia un requisito funzionale. 
+
 <!--
 
 v. Orologiaio, pos. 3836 
