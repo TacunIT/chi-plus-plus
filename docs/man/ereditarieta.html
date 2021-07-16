@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="it-IT"><head>
+    <title>L'ereditarietà |  C'hi++
+</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"     content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="canonical"            href="https://chiplusplus.org" />
+    <meta     name="thumbnail"       content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
+    <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
+    <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:title"        content="L'ereditarietà" />
+    <meta property="og:type"         content="website" />    
+    <meta property="og:description"  content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:image"        content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
+    <meta property="og:image:height" content="260" />
+    <link rel=icon href=/assets/img/favicon.ico type=image/x-icon>
+    <link href="/assets/fa/css/all.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="/assets/css/screen.css" ><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-159394431-1');
+</script></head>
+<body class="manuale capitolo ">
+
+    <div id="page">
+
+        <header><nav class="menu-top">
+    
+    <a title="Vai a: Classi e oggetti" 
+        
+        href="/man/classi-oggetti" 
+        class="left"
+        
+       >
+       <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+    
+    <a href="/" class="center" title="Torna alla home-page">
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a href="/man/indice" class="center" title="Torna all'indice del Manuale">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+
+    <a title="Vai a: Il polimorfismo" 
+        
+        href="/man/polimorfismo" 
+        
+        class="right" 
+        >
+        <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+    </a>
+    
+</nav>
+</header>
+
+        <main class="pubblicato">
+            
+        
+
+            <h1>
+                L'ereditarietà
+            </h1>
+
+            <blockquote class="motto">We few, we happy few<br />We bunch of data</blockquote>
+
+            <section id="testo">
+
+                <p>L’ereditariaretà, ovvero la possibilità di creare delle genealogie di classi, è la caratteristica principale del C++.</p>
+
+<p>Come abbiamo visto nella <a href="/man/classi-oggetti#dottrina" class="xref">lezione precedente</a>, una ipotetica classe <code>Pesce</code> dovrà avere attributi differenti a seconda dell’utilizzo che se ne deve fare.
+In un linguaggio come il <em>C</em>, che non permette l’ereditariaretà, quindi, si dovranno prevedere due strutture di dati differenti per ciascun caso:</p>
+
+<pre><code>enum Acqua  { dolce, salata };
+enum Sesso  { maschio, femmina };
+enum Colore { rosso, blu, verde, argento };
+
+struct PesceAlimentare {
+    Sesso  _sesso;
+    char*  _specie;
+    float  _prezzo;
+    time_t _data_cattura;  
+    int    _peso;
+    bool   _commestibile;
+    char*  _area_pesca; 
+    ...
+};
+
+struct  PesceAcquario {
+    Sesso  _sesso;
+    char*  _specie;
+    float  _prezzo;
+    time_t _data_acquisto;  
+    Colore _colore;
+    Acqua  _acqua;
+    ...
+};
+</code></pre>
+<p>e funzioni differenti per la gestione dei dati:</p>
+
+<pre><code>void gestisciPesceAlimentare(struct PesceAlimentare&amp; pesce);
+void gestisciPesceAcquario(struct PesceEcologista&amp; pesce);
+</code></pre>
+
+<p>Questo vuol dire che se hai già scritto (e verificato, corretto e collaudato) un programma di gestione per un pescivendolo, per poterlo trasformare in un programma di gestione per la vendita di pesci da acquario, dovrai riscrivere (e ri-verificare, ri-correggere e collaudare) tutto il codice, anche se parte dei dati da considerare sono gli stessi.<br />
+L’ereditariaretà, al contrario, ti permette di isolare in una classe le caratteristiche comuni a tutti e due i contesti e di <em>derivare</em> da questa classe di base due classi specializzate:</p>
+
+<pre><code>/** 
+ * @file ereditarieta-singola.cpp
+ * Esempio di ereditarietà singola.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;ctime&gt; 
+
+using namespace std;
+
+enum Acqua  { dolce, salata };
+enum Sesso  { maschio, femmina };
+enum Colore { rosso, blu, verde, argento };
+
+class Pesce {
+private:
+            
+    static int _n_pesci;
+                        
+protected:
+    
+    /** Dati membro privati */
+    Sesso  _sesso;
+    float  _prezzo;
+    string _specie;
+    bool   _commestibile;
+
+public:
+
+    /** Costruttore della classe inline */
+    Pesce(Sesso sesso, float prezzo, const char* specie) 
+    : _sesso(sesso), _prezzo(prezzo), _specie(specie)
+    {
+        _n_pesci++;
+    }
+    
+    /** Distruttore inline */
+    ~Pesce() { 
+        _n_pesci--;
+    }
+
+    /** Funzioni di interfaccia */
+    void setSesso(Sesso sesso);
+    void setPrezzo(float prezzo);
+    void setSpecie(const char* specie);
+
+    /** Funzioni di interfaccia inline */
+    string getSpecie() { return _specie.c_str(); }
+    float  getPrezzo() { return _prezzo;  }
+    Sesso  getSesso()  { return _sesso; }
+    bool   getCommestibile() { return _commestibile; }
+    void   setCommestibile(bool commestibile) { 
+        _commestibile = commestibile; 
+    }
+
+};
+
+int Pesce::_n_pesci = 0 ;
+
+class PesceAlimentare : public Pesce {
+private:
+    
+    /** Dati privati della classe */
+    time_t _data_cattura;  
+    string _area_pesca; 
+
+public:
+
+    /** Costruttore della classe inline */
+    PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
+    : Pesce(sesso, prezzo, specie)
+    {
+        /** Auspicabilmente.. */
+        _commestibile = true;
+    }
+
+    //...
+};
+
+class PesceAcqario : public Pesce {
+private:
+    
+    /** Dati privati della classe */
+    time_t _data_acquisto;  
+    Colore _colore;
+    Acqua  _acqua;
+
+public:
+    
+    /** Costruttore della classe inline */
+    PesceAcqario(Sesso sesso, float prezzo, const char* specie) 
+    : Pesce(sesso, prezzo, specie)
+    {
+    } 
+    
+    //...
+};
+
+</code></pre>
+
+<p>Questo approccio ha due lati positivi: il primo è che non sarà necessario ripetere le fasi di test, debug e collaudo per le funzioni comuni ai due sistemi, perché saranno state già verificate durante lo sviluppo del primo sistema; il secondo è che, riutilizzando parte del codice, sarà possibile identificare e correggere eventuali errori sfuggiti alla prima fase di test o migliorare il comportamento delle funzioni comuni, con benefici per entrambi i sistemi.</p>
+
+<hr id="tipi" />
+
+<p>L’ereditarietà, nel C++, può essere o <em>singola</em> o <em>multipla</em>, a seconda che la nuova classe erediti le caratteristiche da una o più classi preesistenti:</p>
+
+<pre><code>class Figlio : public Mamma
+{
+    /** Ereditarietà singola */
+};
+
+class Figlio : public Mamma, private Papa
+{
+    /** Ereditarietà singola */
+};
+</code></pre>
+
+<p>Al contrario, non è permesso (né sensato) che una classe erediti due volte dalla stessa classe base:</p>
+
+<pre><code>class Errore : public Mamma, public Mamma
+{
+	...
+};
+</code></pre>
+
+<p>Le classi <code>Mamma</code> e <code>Papa</code> possono essere definite: <em>classi base</em> o <em>sottoclassi</em> o <em>classi fondamentali</em> o <em>sotto-tipi</em>; la classe <code>Figlio</code> può essere chiamata o <em>classe derivata</em> o <em>superclasse</em> o <em>supertipo</em>.<br />
+L’istruzione:</p>
+
+<pre><code>class PesceAlimentare : public Pesce {
+    ...
+};
+</code></pre>
+<p>dichiara la classe <code>PesceAlimentare</code> come classe derivata dalla classe <code>Pesce</code>.
+Lo <a href="/man/classi-oggetti#specificatori-accesso" class="xref">specificatore di accesso</a> fra i nomi delle due classi definisce la visibilità dei dati della classe base all’interno della classe figlia:</p>
+
+<pre><code>class B : public A
+{
+    // tutti i membri di A mantengono 
+    // in B la loro visibilità originale 
+};
+
+class B : protected A
+{
+    // tutti i membri public di A diventano membri 
+    // protected di B; i membri protected e private 
+    // mantengono la loro visibilità originale
+};
+
+class B : private A	
+{
+    // tutti i membri di A, quale che sia la loro 
+    // visibilità, diventano membri private di B;
+};
+
+</code></pre>
+
+<p>In mancanza di un qualificatore di accesso, il compilatore considera privati tutti i dati di una classe dichiarata con la parola chiave <code>class</code> e pubblici tutti i dati di una classe dichiarata con la parola chiave <code>struct</code>:</p>
+
+<pre><code>/** 
+ * @file ereditarieta-accesso.cpp
+ * Accesso ai membri della classe base dalle classi derivate.
+ */
+ 
+/** Classe base, dati membro pubblici */ 
+struct Mamma { 
+    int a;
+};
+
+/** Classe derivata come struct: dati per default pubblici */
+struct Figlia : Mamma {
+    int b;
+};
+
+/** Classe derivata come class: dati per default privati */
+class Figlio : Mamma {
+    int c;
+};
+
+/** Funzione generica, non friend delle classi */
+void funz(Figlia&amp; figlia, Figlio&amp; figlio)
+{
+    figlia.a++;
+    figlio.a++;    
+}
+
+</code></pre>
+
+<p>Se compili questo codice, ottieni un messaggio di errore:</p>
+
+<pre><code>&gt; g++ src/cpp/ereditarieta-accesso.cpp -c -o src/out/esempio
+src/cpp/ereditarieta-accesso.cpp:25:5: error: cannot cast 'Figlio' 
+    to its private base class
+      'Mamma'
+    figlio.a++;    
+    ^
+src/cpp/ereditarieta-accesso.cpp:17:16: note: implicitly declared 
+    private here
+class Figlio : Mamma {
+               ^~~~~
+src/cpp/ereditarieta-accesso.cpp:25:12: error: 'a' is a private 
+    member of 'Mamma'
+    figlio.a++;    
+           ^
+src/cpp/ereditarieta-accesso.cpp:17:16: note: constrained by 
+    implicitly private inheritance here
+class Figlio : Mamma {
+               ^~~~~
+src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared 
+    here
+    int a;
+        ^
+2 errors generated.
+</code></pre>
+
+<hr id="costruttore" />
+
+<p>Questa è la dichiarazione del costruttore della classe derivata <code>PesceAlimentare</code>:</p>
+
+<pre><code>PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
+: Pesce(sesso, prezzo, specie) {
+    _commestibile = true;
+}
+</code></pre>
+
+<p>La seconda linea è la <i id="lista-inizializzazione">lista di inizializzazione</i> della classe e contiene i costruttori delle classi base.
+Quando si instanzia un oggetto di classe derivata, il sistema richiama per prima cosa i costruttori delle classi base e poi quello della classe figlia.
+In questo modo, il costruttore della classe derivata ha la certezza di lavorare su dei dati membro correttamente inizializzati.<br />
+L’utilizzo del costruttore delle classi base per l’inizializzazione dei dati comuni è necessario per due motivi: il primo è che parte dei dati delle classe base potrebbero essere <code>private</code> e quindi inaccessibili alla classe derivata; il secondo motivo è che in questo modo si ottiene un <a href="/man/struttura-dei-programmi#coupling" class="xref">low coupling</a> fra classe base e classe derivata e, se  si dovesse modificare l’implementazione interna del costruttore della classe base (mantenendo invariata l’interfaccia), non ci sarebbe bisogno di dover modificare il codice delle sue classi de­rivate.<br />
+L’ordine in cui i costruttori delle classi base sono chiamati durante l’inizializzazione dell’oggetto dipende dall’ordine in cui compaiono nel costruttore della classe figlia.
+Lo vediamo con un altro esempio, un po’ più complesso del precedente, che mostra anche il funzionamento dei dati e delle funzioni membro statiche:</p>
+
+<pre><code>/** 
+ * @file ereditarieta-multipla.cpp
+ * Esempio di ereditarierà multipla.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;ctime&gt; 
+
+using namespace std;
+
+enum Acqua  { dolce, salata };
+enum Sesso  { maschio, femmina, boh};
+enum Colore { rosso, blu, verde, argento };
+
+/** 
+ * Dichiarazione della classe Articolo 
+ */
+class Articolo {
+private:
+
+    static int _n_articoli;
+                        
+protected:
+    
+    /** Dati membro privati */
+    float  _prezzo;
+
+public:
+
+    /** Costruttore della classe inline */
+    Articolo(float prezzo = 0.0) 
+    : _prezzo(prezzo)
+    {
+        _n_articoli++;
+        cout &lt;&lt; "costruttore Articolo" &lt;&lt; endl;
+    }
+    
+    /** Distruttore inline */
+    ~Articolo() { 
+        _n_articoli--;
+        cout &lt;&lt; "distruttore Articolo" &lt;&lt; endl;       
+    }
+
+    /** Funzioni di interfaccia */
+    void setPrezzo(float prezzo);
+
+    /** Funzione di interfaccia statica */
+    static int getIstanze() { return _n_articoli; }
+
+    /** Funzioni di interfaccia inline */
+    float getPrezzo()     { return _prezzo;     }
+    const char* getTipo() { return "articolo";  }
+};
+
+/** Inizializza il dato membro statico */            
+int Articolo::_n_articoli = 0 ;
+
+/** 
+ * Dichiarazione della classe Pesce 
+ */
+class Pesce {
+private:
+            
+    static int _n_pesci;
+                        
+protected:
+    
+    /** Dati membro privati */
+    Sesso  _sesso;
+    string _specie;
+    bool   _commestibile;
+
+public:
+
+    /** Costruttore della classe inline */
+    Pesce(Sesso sesso = boh, const char* specie = "ignota") 
+    : _sesso(sesso), _specie(specie)
+    {
+        _n_pesci++;        
+        cout &lt;&lt; "costruttore Pesce" &lt;&lt; endl;
+    }
+    
+    /** Distruttore inline */
+    ~Pesce() { 
+        _n_pesci--;
+        cout &lt;&lt; "distruttore Pesce" &lt;&lt; endl;
+    }
+
+    /** Funzioni di interfaccia */
+    void setSesso(Sesso sesso);
+    void setSpecie(const char* specie);
+
+    /** Funzione di interfaccia statica */
+    static int getIstanze()      { return _n_pesci; }
+
+    /** Funzioni di interfaccia inline */
+    string getSpecie()       { return _specie.c_str(); }
+    Sesso  getSesso()        { return _sesso; }
+    bool   getCommestibile() { return _commestibile; }
+    void   setCommestibile(bool commestibile) { 
+        _commestibile = commestibile; 
+    }
+};
+
+/** Inizializza il dato membro statico */            
+int Pesce::_n_pesci = 0 ;
+
+/** 
+ * Dichiarazione della classe PesceAlimentare 
+ */
+class PesceAlimentare 
+: public Pesce, public Articolo {
+private:
+    
+    /** Dati privati della classe */
+    time_t _data_cattura;  
+    string _area_pesca; 
+
+public:
+
+    /** Costruttore della classe inline */
+    PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
+    : Articolo(prezzo)
+    , Pesce(sesso, specie)
+    {
+        /** Auspicabilmente.. */
+        _commestibile = true;
+        cout &lt;&lt; "costruttore PesceAlimentare" &lt;&lt; endl;
+    }
+
+    /** Distruttore inline */
+    ~PesceAlimentare() { 
+        cout &lt;&lt; "distruttore PesceAlimentare" &lt;&lt; endl;
+    }
+
+    /** Ridefinizione della funzione della classe base */
+    const char* getTipo() { return "pesce alimentare"; }
+
+    //...
+};
+
+class PesceAcquario 
+: public Articolo, public Pesce {
+private:
+    
+    /** Dati privati della classe */
+    time_t _data_acquisto;  
+    Colore _colore;
+    Acqua  _acqua;
+
+public:
+    
+    /** Costruttore della classe inline */
+    PesceAcquario(Sesso sesso, float prezzo, const char* specie) 
+    : Pesce(sesso, specie)
+    , Articolo(prezzo)
+    {
+        cout &lt;&lt; "costruttore PesceAcquario" &lt;&lt; endl;
+    } 
+
+    /** Distruttore inline */
+    ~PesceAcquario() { 
+        cout &lt;&lt; "distruttore PesceAcquario" &lt;&lt; endl;
+    }
+
+    /** Ridefinizione della funzione della classe base */
+    const char* getTipo() { return "pesce acquario"; }
+    
+    //...
+};
+ 
+int main(int argc, char** argv) 
+{
+    /** Crea le due istanze delle classi */
+    PesceAcquario pesce1(maschio, 2.5, "Paracheiredon");
+    PesceAlimentare pesce2(femmina, 25.4, "Dicentrarchus labrax");
+    
+    /** Richiama le funzioni di interfaccia */
+    cout &lt;&lt;  pesce1.getTipo() &lt;&lt; ": " &lt;&lt; pesce1.getSpecie() 
+         &lt;&lt; endl;
+    cout &lt;&lt;  pesce2.getTipo() &lt;&lt; ": " &lt;&lt; pesce2.getSpecie() 
+         &lt;&lt; endl;
+
+    /** Richiama la funzione della classe base */
+    cout &lt;&lt; "classe base: " &lt;&lt; pesce1.Articolo::getTipo() &lt;&lt; endl;
+
+    /** Richiama le funzioni di interfaccia statiche */
+    cout &lt;&lt;  "articoli creati: " &lt;&lt; Articolo::getIstanze() 
+         &lt;&lt; endl;
+    cout &lt;&lt;  "pesci creati:    " &lt;&lt; Pesce::getIstanze() 
+         &lt;&lt; endl;
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>La differenza con il codice precedente è che in questo caso abbiamo isolato i dati relativi al costo del pesce in una classe separata e che le classi derivate ereditano non più da una classe base, ma da due.<br />
+Se compili ed esegui questo codice, ottieni:</p>
+
+<pre><code>&gt; g++ src/cpp/ereditarieta-multipla.cpp -o src/out/esempio
+&gt; src/out/esempio                                         
+costruttore Pesce
+costruttore Articolo
+costruttore PesceAlimentare
+costruttore Articolo
+costruttore Pesce
+costruttore PesceAcquario
+pesce acquario: Paracheiredon
+pesce alimentare: Dicentrarchus labrax
+classe base: articolo
+articoli creati: 2
+pesci creati:    2
+distruttore PesceAcquario
+distruttore Pesce
+distruttore Articolo
+distruttore PesceAlimentare
+distruttore Articolo
+distruttore Pesce
+</code></pre>
+
+<p>Come vedi, l’ordine di chiamata dei costruttori delle classi base rispecchia quello in cui sono elencate nella lista di inizializzazione, mentre quello dei distruttori è invertito.
+Se il costruttore della classe derivata non specifica un ordine di chiamata per i costruttori delle classi base, l’ordine di chiamata è dato dall’ordine in cui le classi base compaiono nella dichiarazione della classe figlio:</p>
+
+<pre><code>/** 
+ * @file ereditarieta-ordine-costruttori.cpp
+ * Ordine di chiamata dei costruttori nell'ereditarierà multipla.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;ctime&gt; 
+
+using namespace std;
+
+class Mamma {
+public:
+    Mamma() {
+        cout &lt;&lt; "costruttore Mamma" &lt;&lt; endl;
+    }
+};
+
+class Padre {
+public:
+    Padre() {
+        cout &lt;&lt; "costruttore Padre" &lt;&lt; endl;
+    }
+};
+ 
+class Figlio
+: public Padre, public Mamma {
+public:
+    Figlio() {
+        cout &lt;&lt; "costruttore Figlio" &lt;&lt; endl;
+    }
+};
+
+class Figlia
+: public Mamma, public Padre {
+public:
+    Figlia() {
+        cout &lt;&lt; "costruttore Figlia" &lt;&lt; endl;
+    }
+};
+
+ 
+int main(int argc, char** argv) 
+{
+    Figlio Hansel;
+    Figlia Gretel;
+
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili ed esegui questo codice, ottieni:</p>
+
+<pre><code>&gt; g++ src/cpp/ereditarieta-ordine-costruttori.cpp -o src/out/esempio
+&gt; src/out/esempio                                                   
+costruttore Padre
+costruttore Mamma
+costruttore Figlio
+costruttore Mamma
+costruttore Padre
+costruttore Figlia
+</code></pre>
+
+<p>Un’altra cosa da notare, in questo codice, è che la funzione <code>getTipo</code> è presente sia nella classe base <code>Articolo</code> che nelle due classi derivate <code>PesceAlimentare</code> e <code>PesceAcquario</code>.
+Per questo motivo, quando si richiama <code>getTipo</code> da un’istanza delle due classi derivate, come in:</p>
+
+<pre><code>cout &lt;&lt;  pesce1.getTipo() &lt;&lt; ": " &lt;&lt; pesce1.getSpecie() 
+cout &lt;&lt;  pesce2.getTipo() &lt;&lt; ": " &lt;&lt; pesce2.getSpecie() 
+</code></pre>
+
+<p>il valore tornato è quello della funzione della classe figlia.
+Per ottenere il valore della classe base, dobbiamo specificarne il nome nell’istruzione, come in:</p>
+
+<pre><code>cout &lt;&lt; "classe base: " &lt;&lt; pesce1.Articolo::getTipo() &lt;&lt; endl;
+</code></pre>
+
+<hr id="classi-virtuali" />
+
+<p>Complichiamo un po’ le cose.
+Immagina che una classe <code>Figlio</code> derivi dalle classi <code>Madre</code> e <code>Padre</code>, a loro volta derivate dalla classe <code>Persona</code>. 
+Se chiamassimo una funzione della classe <code>Persona</code> da un oggetto di classe <code>Figlio</code>, quale verrebbe chiamata, quella che ha ereditato da <code>Padre</code> o quella che ha ereditato da <code>Madre</code>?</p>
+
+<pre><code>/** 
+ * @file ereditarieta-classi-base-virtuali.cpp
+ * Gestione delle classi base virtuali.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+using namespace std;
+
+class Persona {
+public:
+    void getClass(){
+        cout &lt;&lt; "Persona" &lt;&lt; endl;
+    }
+};
+
+class Padre : public virtual Persona {
+};
+
+class Madre : virtual public Persona {
+};
+ 
+class Figlio : public Padre, public Madre {
+};
+ 
+int main(int argc, char** argv) 
+{
+    Figlio caino;
+    caino.getClass();
+    return 0;
+}
+
+</code></pre>
+
+<p>In realtà, nessuna delle due, perché questo codice genera un errore:</p>
+
+<pre><code>src/cpp/ereditarieta-classi-base-virtuali.cpp:30:11: 
+error: non-static member 'getClass' found in multiple base-class
+      subobjects of type 'Persona':
+    class Figlio -&gt; class Padre -&gt; class Persona
+    class Figlio -&gt; class Madre -&gt; class Persona
+    caino.getClass();
+          ^
+src/cpp/ereditarieta-classi-base-virtuali.cpp:13:10: 
+note: member found by ambiguous name lookup
+    void getClass(){
+         ^
+1 error generated.
+</code></pre>
+<p>Puoi evitare questo genere di problemi dichiarando la classe <code>Persona</code> come classe base <em>virtuale</em> delle classi <code>Madre</code> e <code>Padre</code>:</p>
+
+<pre><code>class Padre : public virtual Persona {
+};
+
+class Madre : virtual public Persona {
+};
+</code></pre>
+
+<p>In questo modo, la classe <code>Figlio</code> erediterà tutti i membri propri delle  classi <code>Madre</code> e <code>Padre</code>, ma solo una copia dei metodi e degli attributi della classe virtuale <code>Persona</code> che entrambi contengono.</p>
+
+<hr id="classi-puntatori" />
+
+<p>Come ti ho detto, definire una nuova classe equivale a definire un nuovo tipo di dato, che sarà considerato dal compilatore alla stessa stregua dei dati primitivi del linguaggio. 
+Questo vuol dire, per esempio, che se vogliamo possiamo creare un array di oggetti di classe <code>Pesce</code> così come creeremmo un array di <code>int</code> o di <code>char</code>:</p>
+
+<pre><code>/** Array di oggetti di classe Pesce */
+Pesce acquario[10];
+</code></pre>
+
+<p>C’è solo una limitazione: siccome tutti gli elementi di un array devono essere inizializzati al momento della sua creazione, la classe deve avere un costrut­tore di default.
+Se decidessimo di creare un array di oggetti della classe <code>Punto</code> che abbiamo visto <a href="/man/classi-oggetti#attributi-metodi" class="xref">nella scorsa lezione</a>, gli elementi dell’array dovranno essere inizializzati esplicitamente:</p>
+
+<pre><code>Punto spline[3] = { Punto(3,5), Punto(0,0), Punto(7,7) } ;
+</code></pre>
+
+<p>Possiamo aggiungere a un array di oggetti di una classe base anche degli oggetti appart­enenti alle sue classi derivate:</p>
+
+<pre><code>Persona famiglia[3] = { Padre(), Madre(), Figlio() } ;
+</code></pre>
+
+<p>Al contrario, gli oggetti della classe base non possono comparire in array di oggetti della classe derivata e un’istruzione come quella qui sotto darà errore:</p>
+
+<pre><code>Figlio classe[4] = { Figlio(), Figlio(), Persona(), Figlio() } ;
+</code></pre>
+
+<p>Così come, negli scacchi, la regina può muovere come una torre, ma una torre non può muoversi come una regina, un oggetto di tipo <code>Persona</code> non contiene tutta l’informazione relativa a un oggetto di tipo <code>Figlio</code> e quindi non può essere usato in sua sostituzione.<br />
+Lo stesso discorso fatto per gli array, vale anche per i puntatori. 
+A un puntatore a oggetti di tipo <code>Persona</code> può essere assegnato un oggetto di tipo <code>Figlio</code>, mentre l’operazione inversa causerà un errore di compilazione:</p>
+
+<pre><code>Persona *ptrP = new Figlio() ;  // OK
+Figlio  *ptrF = new Persona();  // ERRORE!
+</code></pre>
+
+<p>Il compilatore è in grado di capire la relazione che c’è fra una classe derivata e la sua classe base e può quindi stabilire un cammino di coercizione dal tipo dell’oggetto a quello del puntatore, ma non ha modo di accedere ai membri o alle funzioni di una classe derivata da un oggetto di classe base. <br />
+Abbiamo detto <a href="/man/tipi-di-dato#puntatori" class="xref">a suo tempo</a> che i puntatori sono come delle maschere che isolano determinate sequenze di bit, la cui dimensione varia a seconda del tipo del puntatore. 
+Lo stesso discorso vale anche per le classi: un puntatore di classe base associato a un oggetto di classe derivata “vedrà” solo i dati e le funzioni della sua classe:</p>
+
+<pre><code>/** 
+ * @file ereditarieta-puntatori.cpp
+ * Gestione dei puntatori a classi derivate.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+using namespace std;
+
+class Persona {
+public:
+    void getClass(){
+        cout &lt;&lt; "Persona" &lt;&lt; endl;
+    }
+};
+
+class Madre : virtual public Persona {
+public:
+    void getClass(){
+        cout &lt;&lt; "Madre" &lt;&lt; endl;
+    }
+};
+ 
+int main(int argc, char** argv) 
+{
+    Madre   * ptrM = new Madre;
+    Persona * ptrP = ptrM ;
+    ptrM-&gt;getClass() ;
+    ptrP-&gt;getClass() ;
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili ed esegui questo codice, ottieni:</p>
+
+<pre><code>&gt; g++ src/cpp/ereditarieta-puntatori.cpp -o src/out/esempio 
+&gt; src/out/esempio 
+Madre
+Persona
+</code></pre>
+
+<p>Non c’è nessun errore: la funzione <code>getClass()</code> che interviene nella seconda istruzione di output non è, come ci si aspettava, quella della classe <code>Madre</code>, a cui l’oggetto appartiene, bensì quella della classe base, che è l’unica a cui il programma può accedere tramite un puntatore a oggetti di tipo <code>Persona</code>.<br />
+Questo comportamento (corretto) del programma diventa particolarmente rischioso se la classe ha un distruttore:</p>
+
+<pre><code>/** 
+ * @file ereditarieta-distruttori.cpp
+ * Gestione dei distruttori nelle classi derivate.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+using namespace std;
+
+/** Definiamo una classe base */
+class Padre {
+public:
+    ~Padre() ;
+} ;
+
+/** Definiamo delle classi derivate. */
+class Figlio : public Padre {
+public:
+    ~Figlio() ;
+};
+
+class Nipote : public Figlio {
+public:
+    ~Nipote() ;
+};
+
+int main(int argc, char** argv) 
+{
+    /** Creiamo un array di puntatori di classe base. */
+    Padre * dinastia[3] ;     
+
+    /** Assegnamo delle istanze delle tre classi ai puntatori */
+    dinastia[0]= new Padre  ; 
+    dinastia[1]= new Figlio ;
+    dinastia[2]= new Nipote ;
+
+    /** Facciamo qualcosa con i nostri oggetti.. */
+
+    /** ..e poi li eliminiamo */
+    delete dinastia[0] ; 
+    delete dinastia[1] ;  
+    delete dinastia[2] ;  
+}
+
+</code></pre>
+
+<p>Nessun compilatore ti darà mai errore per questo codice, ma il distruttore chiamato, in tutti e tre i casi, sarà quello della classe base <code>Padre</code>, con conseguenze che spaziano dal problematico al disastroso.</p>
+
+<hr id="funzioni-virtuali" />
+
+<p>Per far sì che una funzione membro di una classe derivata possa essere richiamata anche da puntatori a classi base, la si deve dichiarare come <code>virtual</code>.</p>
+
+<pre><code>/** 
+ * @file ereditarieta-funzioni-virtuali.cpp
+ * Gestione delle funzioni virtuali.
+ */
+ 
+#include &lt;iostream&gt;
+
+using namespace std;
+
+class Persona {
+public:
+    virtual void getClass(){
+        cout &lt;&lt; "Persona" &lt;&lt; endl;
+    }
+};
+
+class Madre : virtual public Persona {
+public:
+    void getClass(){
+        cout &lt;&lt; "Madre" &lt;&lt; endl;
+    }
+};
+ 
+int main(int argc, char** argv) 
+{
+    Madre   * ptrM = new Madre;
+    Persona * ptrP = ptrM ;
+    ptrM-&gt;getClass() ;
+    ptrP-&gt;getClass() ;
+    return 0;
+}
+
+</code></pre>
+<p>L’output di questo codice è:</p>
+
+<pre><code>&gt; g++ src/cpp/ereditarieta-funzioni-virtuali.cpp \                 
+    -o src/out/esempio
+&gt; src/out/esempio                                 
+Madre
+Madre
+</code></pre>
+
+<p>Le <em>funzioni virtuali</em> sono delle funzioni che vengono richiamate in base alla classe dell’oggetto cui appartengono, indipendentemente dal tipo del riferimento o del puntatore che si utilizza. 
+Ciò è reso possibile da un meccanismo chiamato <em>binding dinamico</em> o <em>late binding</em>, che consiste nel posticipare il <em>linking</em> delle funzioni al momento dell’esecuzione del programma, contrariamente a quanto avviene per le funzioni membro normali, che sono collegate al codice in fase di compilazione — il cosiddetto <em>early binding</em>.<br />
+In pratica, la cosa funziona così: gli indirizzi di tutte le  funzioni dichiarate come <code>virtual</code> vengono memorizzati in una tabella interna e solo quando una di queste funzioni viene richiamata dal programma, il sistema ne cerca l’indirizzo, effettuandone poi il <em>linking</em> in tempo reale.
+Capisci da te che l’utilizzo delle funzioni virtuali, oltre a comportare un leg­gero ritardo nel tempo di esecuzione del programma, visto che l’indirizzo della funzione va ben cercato, impegna anche parte delle risorse del sistema per la memorizzazione della tabella degli indirizzi, quindi, come per tutte le cose, è bene non abusarne. <br />
+Le regole che riguardano l’utilizzo delle funzioni virtuali sono:</p>
+
+<ul>
+  <li>
+    <p>le versioni delle funzioni delle classi derivate debbono avere il medesi­mo tipo di ritorno e gli stessi parametri della versione della classe base: se non è così, il compilatore considera differenti le due funzioni e l’effetto “virtuale” si perde;</p>
+  </li>
+  <li>
+    <p>una funzione <code>virtual</code> non può essere anche <code>static</code>: il concetto stesso di funzione virtuale prevede un collegamento fra un oggetto e una funzi­o­ne; le funzioni statiche sono indipendenti dagli oggetti della loro classe, quindi le due cose sono incompatibili;</p>
+  </li>
+  <li>
+    <p>una funzione può essere dichiarata <code>virtual</code> solo nella classe base: non è possibile effettuare la dichiarazione in una classe derivata;</p>
+  </li>
+  <li>
+    <p>si può ripetere la specifica <code>virtual</code> anche nelle classi derivate, ma non è necessario: lo vedi nell’esempio, dove la seconda versione della funzione <code>getClass()</code> non ha la parola chiave <code>virtual</code> davanti;</p>
+  </li>
+  <li>
+    <p>l’utilizzo dell’operatore di risoluzione della portata annulla inevitabilmente l’effetto delle funzioni virtuali.</p>
+  </li>
+</ul>
+
+<hr id="classi-astratte" />
+
+<p>È possibile dichiarare una funzione virtuale nella classe base senza definirne il comportamento, se si utilizza la sintassi:</p>
+
+<pre><code>virtual &lt;tipo&gt; nomefunzione([argomenti]) = 0 ;
+</code></pre>
+
+<p>Questo tipo di funzioni si chiamano <i id="funzioni-virtuali-pure">funzioni virtuali pure</i> e rendono la classe a cui appartengono una <em>classe astratta</em>.<br />
+Le classi astratte sono delle classi generiche che possono essere utilizzate come capostipiti per una discendenza di classi specializzate, ma che non possono essere utiliz­zate direttamente.
+Le regole che si applicano alle classi astratte sono:</p>
+
+<ul>
+  <li>viene considerata astratta qualunque classe che abbia almeno una funzi­one virtuale pura;</li>
+  <li>le funzioni virtuali pure sono ereditate come dalle classi derivate come funzioni virtuali pure, quindi, se una classe derivata non ridefinisce una funzione virtuale pura della sua classe base sarà considerata dal compilatore come una classe as­tratta;</li>
+  <li>non si possono utilizzare classi astratte come argomenti o come tipi di ritorno di funzioni;</li>
+  <li>le classi astratte non possono essere il tipo di un oggetto o di una con­versione esplicita.</li>
+</ul>
+
+<p>Data una classe astratta <code>Mammifero</code>, le istruzioni seguenti causerebbero degli errori di compilazione:</p>
+
+<pre><code>void funz(Mammifero m);  // non possono essere argomenti..
+Mammifero funz();        // né valori di ritorno..
+punt = (Mammifero*)ptr;  // né il tipo di una conversione.
+Mammifero pollo;         // né il tipo di un oggetto
+</code></pre>
+
+<p>È possibile, però, dichiarare un puntatore o una <em>reference</em> a una classe astratta e utilizzarli per creare degli array o delle code che possano essere utilizzati con istanze di classi diverse:</p>
+
+<pre><code>/** 
+ * @file ereditarieta-classi-astratte.cpp
+ * Gestione delle classi astratte.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+using namespace std;
+
+enum Sesso { maschio, femmina, boh};
+const char* Sessi[] = {"maschio", "femmina", "boh" };
+
+class Mammifero
+{
+private:
+
+    Sesso _sesso;
+
+public:
+
+    Mammifero(Sesso sesso = boh) 
+    : _sesso(sesso) {
+    }
+
+    virtual void getSesso() {
+        cout &lt;&lt; Sessi[_sesso] &lt;&lt; endl ;
+    }    
+
+    /** Funzione virtuale pura */
+    virtual void getSpecie() = 0;
+} ;
+
+class Cane : public Mammifero
+{ 
+private:
+
+    string _nome;
+
+public:
+
+    Cane(const char * nome, Sesso sesso) 
+    : Mammifero(sesso), _nome(nome){
+    }
+
+    void getNome() {
+        cout &lt;&lt; _nome &lt;&lt; endl ;
+    }
+
+    /** Definizione della funzione virtuale */
+    virtual void getSpecie() {
+        cout &lt;&lt; "cane" &lt;&lt; endl ;
+    }    
+};
+
+int main()
+{
+    Cane mioCane("Scylla", femmina) ;
+    Mammifero&amp; cane = mioCane; 
+
+    /** 
+     * Accede alle funzioni della classe Cane
+     * dall'istanza della classe.
+     */
+    mioCane.getSpecie();
+    mioCane.getSesso();
+    mioCane.getNome();
+    
+    /** 
+     * Accede alle funzioni della classe Cane
+     * dal puntatore alla classe Mammifero.
+     */
+    cane.getSpecie();
+    cane.getSesso();
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili ed esegui questo codice, otterrai:</p>
+
+<pre><code>&gt; g++ src/cpp/ereditarieta-classi-astratte.cpp -o src/out/esempio
+&gt; src/out/esempio                                                
+cane
+femmina
+Scylla
+cane
+femmina
+</code></pre>
+
+<p>La classe base <code>Mammifero</code> definisce solo un’astrazione, lasciando alle sue classi derivate il compito di definire attributi e metodi specifici per ciascuna specie particolare. 
+Allo stesso modo, la funzione <code>getSpecie</code> definisce solo un concetto, non un algoritmo; saranno le singole classi deri­vate a ridefinire il comportamento della funzione, adattandolo alle proprie esigen­ze.<br />
+È possibile, comunque, definire un comporta­mento anche per le funzioni virtuali pure; per la classe <code>Mammifero</code> potrebbe essere qualcosa di simile:</p>
+
+<pre><code>inline void Mammifero::getSpecie() 
+{
+    cout &lt;&lt; "nessuna" &lt;&lt; endl ;
+}
+</code></pre>
+
+<p>Non potendo esistere oggetti di classe <code>Mammifero</code>, però, la versione base della funzione <code>getSpecie</code> potrebbe essere richiamata solo facendo uso dell’operatore <code>::</code></p>
+
+<pre><code>mioCane.Mammifero::getSpecie();
+cane.Mammifero::getSpecie();
+</code></pre>
+<hr id="dottrina" />
+
+<p>Buona parte degli esempii e delle cose che ti ho detto in questa lezione le ho prese dal manuale di programmazione in C++ che il Maestro Canaro scrisse nel Secolo scorso, modificandoli per adattarli a questo contesto. <br />
+L’esempio originale delle funzioni virtuali, per dire, era così:</p>
+
+<pre><code>/////////////////////////////////////////////////////////////
+//
+//   CHISONOV.CPP - Utilizzo delle funzioni virtuali
+//
+/////////////////////////////////////////////////////////////
+#include &lt;iostream.h&gt;
+/////////////////////////////////////////////////////////////
+class A
+{
+ public:
+    A() {} ;
+    virtual void ChiSono()        	
+    	{ cout &lt;&lt; "Sono un oggetto di classe A \n" ; } 
+} ;
+/////////////////////////////////////////////////////////////
+class B :public A
+{
+ public:
+    B() : A() {} ;
+    void ChiSono() 
+    	{ cout &lt;&lt; "Sono un oggetto di classe B \n" ; } 
+} ;
+/////////////////////////////////////////////////////////////
+void main()
+{
+ B * ptrB = new B ;            	
+ A * ptrA = ptrB ;            	
+        	
+	ptrB-&gt;ChiSono() ;            	
+	ptrA-&gt;ChiSono() ;            	
+} ;
+/////////////////////////////////////////////////////////////
+
+</code></pre>
+
+<p>Essendo un codice scritto per l’ambiente Microsoft del 1995 <!-- con i nomi dei file di otto caratteri al massimo: sembra di parlare della preistoria.. -->, se provassi a compilarlo adesso, con il compilatore GNU, otterresti una lunga serie di errori:</p>
+
+<pre><code>&gt; g++ src/cpp/ereditarieta-codice-canaro.cpp -o src/out/esempio
+src/cpp/ereditarieta-codice-canaro.cpp:8:10: 
+fatal error: 'iostream.h' file not found
+#include &lt;iostream.h&gt;
+         ^~~~~~~~~~~~
+src/cpp/ereditarieta-codice-canaro.cpp:13:8: 
+error: use of undeclared identifier 'cout'; 
+did you mean 'std::cout'?
+        { cout &lt;&lt; "Sono un oggetto di classe A \n" ; } 
+          ^~~~
+          std::cout
+/Library/Developer/CommandLineTools/usr/bin/
+../include/c++/v1/iostream:54:33: note: 
+'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+src/cpp/ereditarieta-codice-canaro.cpp:21:8: 
+error: use of undeclared identifier 'cout'
+
+did you mean 'std::cout'?
+        { cout &lt;&lt; "Sono un oggetto di classe B \n" ; } 
+          ^~~~
+          std::cout
+/Library/Developer/CommandLineTools/usr/bin/
+../include/c++/v1/iostream:54:33: note: '
+std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+src/cpp/ereditarieta-codice-canaro.cpp:24:1: 
+error: 'main' must return 'int'
+void main()
+^~~~
+</code></pre>
+
+<p>Il valore didattico di questo codice, però, è immutato.
+Il <em>Karma</em> dei due oggetti è determinato dalla dichiarazione delle loro classi, che non gli lascia altra possibilità che fare ciò per cui sono stati creati.
+L’output delle funzioni, lo stile dei commenti o il fatto che in un caso le classi si chiamino <code>A</code> e <code>B</code>, mentre nell’altro si chiamano <code>Persona</code> e <code>Madre</code>, sono solo differenze formali che non influiscono sul <em>Dharma</em> dell’esempio, che è quello di illustrare il comportamento delle funzioni virtuali.
+Se in vece del nuovo codice io avessi usato quello originale del Maestro Canaro, tu avresti capito ugualmente; forse anche meglio, perché il nuovo codice sembra migliore a me, ma non è detto che lo sia anche per te.<br />
+Lo stesso principio vale anche per l’Universo.
+Così come gli oggetti all’interno di uno stesso programma occupano posizioni diverse in memoria, a seconda del momento in cui il programma viene eseguito, gli esseri senzienti possono manifestarsi in luoghi e tempi differenti nei diversi cicli di esistenza.<br />
+Ciascuno di noi è un orchestrale a cui è stata assegnata una partitura.
+Possiamo suonarla più o meno bene o non suonarla affatto, nascondendoci nel pieno d’orchestra, ma il nostro valore è solo — permettimi il gioco di parole — strumentale, perché ciò che conta non siamo noi: è la musica; e questa, non è né la prima né l’ultima volta che la suoniamo.  <br />
+Io, qui, ora, con il mio naso la mia bocca e i miei capelli, ti sto insegnando ciò che so del C’hi++ e tu, che hai il tuo naso la tua bocca e i tuoi capelli, lo stai scrivendo nel tuo libro, ma la stessa informazione che stiamo trasmettendo e perpetuando la potrebbero trasmettere e perpetuare anche persone diverse in un altro tempo o in un altro Pianeta in un altro ciclo dell’Universo.
+Molto probabilmente abbiamo già avuto questa conversazione in passato e la faremo ancora in futuro.
+Forse non useremo le stesse parole; forse avremo nomi differenti, forse tu sarai il maestro e io l’allievo, ma la nostra amicizia sarà la stessa, perché quella fa parte della dichiarazione della nostra classe; non può e non deve mutare.</p>
+
+<blockquote>
+  <p>Le figure mitiche, è vero, nascono e trapassano, ma non proprio come noi mortali. Hanno bisogno di denominazioni caratteristiche, come quella di «Re nel Passato e nel Futuro». Sono esistite in passato? Allora sono esistite ancor prima, o esisteranno ancora, con altri nomi, sotto altri aspetti, proprio come il cielo ci riporta in eterno le sue configurazioni. Se si cercasse di definirle con precisione come persone e cose, sicuramente svanirebbero ai nostri occhi, quanto i frutti di una fantasia malata. Ma se si rispetta la loro vera natura, riveleranno questa natura come funzioni. <a class="nota" href="/man note#miti"></a></p>
+</blockquote>
+
+<p>Ogni epoca ha i suoi eroi e i suoi demoni; la memoria delle loro battaglie, genera il mito.<br />
+La Scienza è transeunte: abbiamo poche notizie riguardo le conoscenze scientifiche dei popoli del passato<!-- esempi? -->, mentre conosciamo bene i loro miti, perché il mito è immortale; la Scienza no, a meno che non sia assorbita dal mito e trasformata in leggenda o superstizione.
+Il Maestro Canaro, per esempio, era convinto che la superstizione relativa ai numeri 13 e 17 fosse nata dall’osservazione del comportamento delle locuste, <!-- il nome corretto, dice Dawkins, è: “cicale periodiche”, ma, per chiarezza, preferisco utilizzare quello più noto --> che, a seconda della specie, passano o tredici o diciassette anni sotto terra in uno stadio larvale <!-- anche qui, Ricky precisa che il termine tecnico è: “ninfe” -->, poi escono fuori tutte insieme e spendono la loro breve vita devastando le coltivazioni.
+La paura dei numeri 13 e 17, secondo lui, era una conoscenza scientifica tramandata nel tempo e nello spazio come superstizione, dalle culture contadine che, ciclicamente, vedevano devastati loro raccolti.</p>
+
+<hr id="arte" />
+
+<p>L’arte è il motore del mito.
+Un motore che si auto-alimenta, come il Sole, perché si nutre di eventi epici e li genera a sua volta ispirando gli eroi a imprese degne di memoria.<br />
+La parola <em>arte</em>, così come: <em>amore</em>, del resto, è una di quelle parole che le gente utilizza spesso ma di cui non viene mai data una definizione precisa, perché le si ritiene dei concetti auto-esplicativi che non occorre definire. 
+È sbagliato: come abbiamo visto, tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente.
+In un suo saggio giovanile su Amore e Arte, il Maestro Canaro scrisse che:</p>
+
+<blockquote>
+  <p>L’Arte è la traccia del cammino dell’Uomo verso Dio</p>
+</blockquote>
+
+<p>specificando poi che, con il termine: “Dio” (altra parola interpretata in maniera differente da ciascuno di noi), intendeva il senso dell’Esistenza.
+Alcuni anni dopo, però, guardando delle foto di crostate realizzate dallo chef Gianluca Fusto<a href="/note/#fusto" class="nota"></a>, capì che la sua definizione era imperfetta, perché non includeva, o quanto meno lasciava a margine, gli arte-fatti che non ricadevano nelle categorie artistiche canoniche. 
+Modificò per ciò la sua definizione di Arte in:</p>
+
+<blockquote>
+  <p>L’Arte è la traccia del cammino dell’Uomo verso la Perfezione</p>
+</blockquote>
+
+<p>Non si trattò di una contraddizione, ma di una precisazione, dato che per lui — così come per noi del resto — la ricerca della perfezione era, effettivamente, il senso dell’Esistenza e, quindi, Dio.<br />
+Questo episodio della vita del Maestro Canaro ha la peculiarità di dimostrare i principii stessi che afferma: il primo è che non dobbiamo avere paura di mettere in discussione le nostre idee, se ci accorgiamo che sono sbagliate o incomplete; il secondo è che, se affrontiamo la vita nel modo giusto, tutto ciò che facciamo sarà Arte, non solo la disposizione dei fiori o la cerimonia del Té.<br />
+Nella vita non esistono momenti di serie <em>A</em>, in cui facciamo le cose che ci piacciono e momenti di serie <em>B</em>, in cui facciamo ciò che è necessario fare: ogni istante è importante.
+Per sottolineare questo precetto, il Maestro Canaro definì un’estetica per la disposizione del bucato sullo stendi-panni e, per non correre il rischio di essere preso troppo sul serio, la chiamò <i id="ikebarba">Ikebarba</i>.<br />
+I principii dell’Ikebarba, così come li formulò il Maestro Canaro, sono:</p>
+
+<blockquote>
+<p>
+<b>L'Ikebarba è fatta per l'uomo, non l'uomo per l'Ikebarba<a href="/man/note#shabbat" class="nota"></a>.</b>  
+L'Ikebarba non deve essere un peso per chi la pratica, ma un obbligo giojoso.
+I panni devono comunque essere messi ad asciugare; il tempo necessario a farlo in maniera sciatta o consapevole è pressocché lo stesso, ma un'Ikebarba ben fatta provvederà panni asciutti in minor tempo e renderà la vista dello stendipanni meno fastidiosa.
+</p>
+<p>
+<b>L'Ikebarba comincia nel negozio.</b><br />
+Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente; è preferibile quindi acquistare abiti dalle tinte sobrie e possibilmente intonati gli uni agli altri, in modo da renderne più facile e più elegante la composizione sullo stendi-panni.
+Attenzione, però: un guardaroba di tipo militare o maoista, con indumenti identici e dello stesso colore è un eccesso da rifuggire, perché renderebbe
+monotona la composizione (e non solo quella).
+</p>
+<p>
+<b>L'Ikebarba rifugge le mollette.</b>
+Le mollette sono utili come la psicanalisi: è l'equilibrio che deve tenere i panni sui fili, non una forza di coercizione esterna.
+I diversi capi devono essere posti sul filo in modo che il peso di una parte bilanci quello dell'altra.</p>
+<p style="display:block">
+Esistono tre tipi di Ikebarba:
+<ul style="padding:1rem 1rem 0">
+<li><b>cromatica:</b> quando i panni vengono posizionati sullo stendino in base al loro colore;</li>
+<li><b>funzionale:</b> quando gli indumenti sono posizionati in funzione dei rispettivi tempi di asciugatura, ponendo i capi pesanti all'esterno, dove ricevono più aria, e quelli più leggeri o sintetici all'interno;</li>
+<li><b>perfetta:</b> quando gli aspetti estetici e funzionali si fondono in un tutt'uno armonico.</li></ul></p></blockquote>
+<p>Come puoi facilmente intuire, gli intenti del Maestro Canaro erano per buona parte ironici (mi confessò che la prima formulazione della disciplina era nata come un tentativo di dissimulare la sua ossessione per l’ordine) e per lungo tempo fu indeciso se includerla o meno nel corpo della Dottrina.
+Si decise a farlo quando capì che le sue perplessità nascevano proprio da quelle forme di prevenzione che l’Ikebarba doveva contrastare.
+Come ci insegnano Banzan e Paul Simon, la Verità è ovunque, se la sappiamo cercare, anche sui muri delle metropolitane o nelle botteghe dei mercati.<br />
+A ogni modo, l’Ikebarba può davvero comportare dei benefici per chi la pratica.
+In primo luogo, modera l’effetto nefasto dell’Annosa Dicotomia e dei suoi servitori <em>Marketing</em> e <em>Moda</em>, che ci spingono ad acquistare indumenti che non ci occorrono e che sfrutteremo solo per breve tempo.
+Riducendo le variazioni cromatiche del bucato, poi, riduce anche il numero di lavaggi settimanali e con esso il fabbisogno di energia elettrica, acqua, prodotti detergenti e plastica.
+Anche il ripudio delle mollette ha una sua valenza funzionale: se i capi sono messi ad asciugare a cavallo dei fili, l’acqua nel tessuto tenderà a scendere da entrambi i lati, riducendo il tempo dell’asciugatura.<br />
+Indubbiamente, il fatto che la Regola del nostro Ordine ci imponga l’uso di camicie bianche non risolve il problema dell’inquinamento, ma, come diceva il Maestro Canaro:</p>
+
+<blockquote>
+  <p>La pelliccia è fatta di peli</p>
+</blockquote>
+
+<p>e finché la nostra specie non imparerà a fare un uso più responsabile delle sue gonadi, non potremo far altro che compensare come possiamo i problemi legati alla sovrappolazione.</p>
+
+
+            </section>
+            
+        
+
+        
+        </main>
+
+        <footer>
+    <nav>
+        
+        
+        <a href="/man/classi-oggetti" 
+           title="Vai a: Classi e oggetti" 
+           class="left">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        
+        
+        <a href="#top" 
+           title="Torna all'inizio" >
+           <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        
+        <a href="/man/polimorfismo" 
+           title="Vai a: Il polimorfismo" 
+           class="right" >
+                <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+                
+
+    </nav>
+
+</footer>
+
+
+    </div>
+
+  </body>
+
+</html>
