@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="it-IT"><head>
+    <title>I tipi di dato |  C'hi++
+</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"     content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="canonical"            href="https://chiplusplus.org" />
+    <meta     name="thumbnail"       content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
+    <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
+    <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:title"        content="I tipi di dato" />
+    <meta property="og:type"         content="website" />    
+    <meta property="og:description"  content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:image"        content="https://chiplusplus.org/assets/img/chi-plus-plus.png" />
+    <meta property="og:image:height" content="260" />
+    <link rel=icon href=/assets/img/favicon.ico type=image/x-icon>
+    <link href="/assets/fa/css/all.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="/assets/css/screen.css" ><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-159394431-1');
+</script></head>
+<body class="manuale capitolo ">
+
+    <div id="page">
+
+        <header><nav class="menu-top">
+    
+    <a title="Vai a: I commenti" 
+        
+        href="/man/commenti" 
+        class="left"
+        
+       >
+       <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+    
+    <a href="/" class="center" title="Torna alla home-page">
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a href="/man/indice" class="center" title="Torna all'indice del Manuale">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+
+    <a title="Vai a: Struttura dei programmi C++" 
+        
+        href="/man/struttura-dei-programmi" 
+        
+        class="right" 
+        >
+        <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+    </a>
+    
+</nav>
+</header>
+
+        <main class="pubblicato">
+            
+        
+
+            <h1>
+                I tipi di dato
+            </h1>
+
+            <blockquote class="motto">Tutto è byte</blockquote>
+
+            <section id="testo">
+
+                <p>La varietà dei tipi di dato disponibili è la caratteristica principale del C++.</p>
+
+<p>Il C++ ha ereditato dal C una vasta gamma di tipi di dato.
+A seconda della loro natura, possiamo dividere questi tipi di dato in due gruppi: i dati <em>scalari</em> e i dati <em>aggregati</em>.<br />
+I tipi di dato <em>scalari</em> sono: <code>void</code>, <code>bool</code>, <code>char</code>, <code>wchar_t</code>, <code>int</code>, <code>float</code>, <code>double</code> e permettono di gestre gli elementi classici di un programma: i numeri interi, i numeri decimali, le lettere e i valori booleani.<br />
+I tipi di dato <em>aggregati</em> sono gli <em>array</em>, le <em>unioni</em>, gli <em>emumerati</em>, le <em>strutture</em> e le <em>classi</em>. 
+Questi, come dice anche il loro nome, sono costituiti dall’aggregazione di più dati scalari dello stesso tipo o di tipi differenti.<br />
+Il prossimo brano di codice — fastidiosamente didascalico, nella sua sostanziale inutilità — mostra i principali tipi di dato del C++.
+Contiene molti elementi di cui ancora non ti ho parlato, quindi non preoccuparti se non capisci del tutto ciò che fa.</p>
+
+<pre><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+/** Definisce un tipo di dato enumerato di nome RGB */
+enum RGB { red = 0xFF0000, green = 0x00ff00, blue = 0x0000ff };
+
+/** Definisce una struttura che contiene un colore RGB e un nome */
+struct ColoreRGB {
+    RGB  valore;
+    const char* nome;        
+};
+
+/** 
+ * Definisce la classe Colore, che contiene un coloreRGB 
+ * e una funzione che ne mostra il nome.
+ */
+class Colore {
+public:
+    ColoreRGB coloreRgb;        
+    void nome_colore() {
+        cout &lt;&lt; "coloreRGB:";
+        switch(coloreRgb.valore) {
+            case red  : cout &lt;&lt; "red"  ; break;
+            case green: cout &lt;&lt; "green"; break;
+            case blue : cout &lt;&lt; "blue" ; break;
+        }
+        cout &lt;&lt; endl;
+    }        
+};
+
+int main()
+{    
+    /** Dichiara una serie di variabili */
+    bool    booleano  = false;
+    char    carattere = 'C';
+    int     intero    = 1234567890;
+    float   decimale  = 3.14;
+    char    array[]   = "abcdefghilmnopqrstuvz";
+    RGB     enumerato = green;
+    
+    /** Crea un oggetto di tipo Colore */
+    Colore  colore;    
+    
+    /** 
+     * Assegna un valore ai dati della struttura coloreRgb 
+     * all'interno dell'oggetto di tipo Colore.
+     */
+    colore.coloreRgb.valore = enumerato;   
+    colore.coloreRgb.nome = "verde";     
+
+    /** Mostra il valore delle variabili */
+    cout &lt;&lt; "booleano:"    &lt;&lt; booleano   &lt;&lt; endl;
+    cout &lt;&lt; "carattere:"   &lt;&lt; carattere  &lt;&lt; endl;
+    cout &lt;&lt; "intero:"      &lt;&lt; intero     &lt;&lt; endl;
+    cout &lt;&lt; "decimale:"    &lt;&lt; decimale   &lt;&lt; endl;
+    cout &lt;&lt; "array:"       &lt;&lt; array      &lt;&lt; endl;
+    
+    /** Mostra il nome del colore */
+    colore.nome_colore();
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Compilando ed eseguendo questo codice, otterrai:</p>
+
+<pre><code>% g++ src/cpp/tipi-di-dato-principali.cpp -o src/out/esempio
+% src/out/esempio 
+booleano:0
+carattere:C
+intero:1234567890
+decimale:3.14
+array:abcdefghilmnopqrstuvz
+coloreRGB:green
+</code></pre>
+
+<p>Il tipo di dato <code>void</code> non ha né una dimensione né un valore e può essere assegnato solo a un puntatore o a una funzione che non torna alcun tipo di valore, come la funzione <code>nome_colore</code> della classe <code>Colore</code>.<br />
+Il tipo di dato <code>bool</code> è utilizzato per gestire i valori booleani.
+Può assumere solo due valori: <code>true</code> o <code>false</code>, quindi ha la dimensione minima possibile, ovvero un byte.<br />
+Il tipo <code>int</code> permette di gestire i numeri interi. 
+Di solito ha una dimensione di quattro byte, che può essere aumentata o diminuita per mezzo di parole-chiave dette: <a href="#modificatori">modificatori</a>.<br />
+I tipi <code>float</code> e <code>double</code> si utilizzano per gestire i numeri decimali. 
+Hanno una lunghezza di quattro e otto byte rispettivamente e una precisione di sette e quindici cifre decimali.<br />
+I tre elementi che compaiono al di fuori della funzione <code>main</code> sono tipi di dato <em>aggregati</em> e permettono di definre dei tipi di dati non standard.<br />
+Gli <code>enum</code> permettono di assegnare dei nomi a dei valori, rendendo più facile la programmazione.
+Nell’esempio, l’<em>enum</em> <code>RGB</code>assegna un nome a tre valori della codifica RGB.
+Questo nuovo tipo di dato è utilizzato nella struttura <code>ColoreRGB</code>.<br />
+Le <code>struct</code> permettono di creare degli insiemi di dati eterogenei.
+La variabile <code>ColoreRGB</code> contiene due variabili differenti: un valore di tipo <code>RGB</code> e un <a href="#puntatori">puntatore</a> a carattere.<br />
+Tutti i tipi di dati che abbiamo visto finora sono un retaggio del linguaggio <em>C</em>.
+La classe <code>Colore</code>, invece, è una delle novità introdotte dal C++ e contiene due elementi: una struttura di tipo <code>ColoreRGB</code> e una funzione che mostra il nome del colore.<br />
+Attenzione, però: nessuno di questi signori è in realtà ciò che afferma di essere.
+Nella variabile <code>booleano</code> non c’è il valore <code>true</code> o <code>false</code>, ma un valore binario che il sistema considera tale.
+Allo stesso modo, nella variabile <code>carattere</code>, non c’è la lettera <code>C</code>, ma il valore binario corrispondente alla codifica ASCII della lettera <code>C</code>.
+Ogni tipo di dato non è altro che il nome di una quantità di memoria.
+Ricordatelo, perché questo è la chiave di tutto.</p>
+
+<hr />
+
+<p>La dimensione di memoria associata a ciascun tipo di dato non è fissa, ma può variare a seconda del sistema in cui stai lavorando.
+Il codice qui sotto ti permette di conoscere la dimensione in byte dei tipi di dato scalari:<a id="sizeof"></a></p>
+
+<pre><code>/** 
+ * @file tipi-di-dato-dimensione.cpp
+ * Mostra la dimensione dei principali tipi di dato del C++.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+
+using namespace std;
+
+int main()
+{    
+    int w = 12;
+    
+    cout &lt;&lt; setw(w) &lt;&lt; "bool: "   &lt;&lt; sizeof(bool)   &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "char: "   &lt;&lt; sizeof(char)   &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "int: "    &lt;&lt; sizeof(int)    &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "float: "  &lt;&lt; sizeof(float)  &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "double: " &lt;&lt; sizeof(double) &lt;&lt; endl;
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Compilando ed eseguendo questo codice, otterrai:</p>
+
+<pre><code>% g++ tipi-di-dato-dimensione.cpp -o ../out/esempio
+% ../out/esempio                                   
+      bool: 1
+      char: 1
+       int: 4
+     float: 4
+    double: 8
+</code></pre>
+
+<p>Dalla dimensione del tipo di dato dipende la quantità di valori che può assumere.
+Un <code>char</code> è composto da otto bit e può assumere per ciò 2<sup>8</sup> valori, quindi: da 0 a 255.
+Un <code>int</code> è composto da trentadue bit e può assumere 2<sup>32</sup> valori, ovvero: da 0 a 4.294.967.295.
+Un <code>float</code> ha 8 bit per l’esponente e 23 per la mantissa, quindi può assumere valori da 1.175494e-38 a 3.402823e+38 e così via.<br />
+<a id="modificatori"></a>
+Oltre ai tipi di dato, il C++ ha ereditato dal C anche i cosiddetti <em>modificatori</em>, ovvero delle parole-chiave che, se aggiunte al nome di un tipo di dato, ne modificano le caratteristiche.<br />
+I modificatori <code>short</code> e <code>long</code> alterano la dimensione del dato, riducendolo o aumentandolo. <br />
+I modificatori <code>signed</code> e <code>unsigned</code> fanno sì che il primo bit del dato sia considerato il suo segno: positivo se il valore è 0; negativo se il valore è 1.
+Il segno, però, “ruba” un bit alla variabile <em>signed</em> che quindi potrà assumere un numero minore di valori rispetto alla stessa variabile <em>unsigned</em>.<br />
+Questo programma mostra come la dimensione e i valori minimi e massimi del tipo di dato <code>int</code> possano variare con l’utilizzo dei modificatori:</p>
+
+<pre><code>/** 
+ * @file tipi-di-dato-limiti.cpp
+ * Mostra i valori possibili per i principali tipi di dato del C++.
+ */
+
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+#include &lt;limits&gt;
+
+using namespace std;
+
+/**
+ * Funzione template che mostra la dimensione e i 
+ * valori minimi e massimi per un tipo di dato.
+ */
+template&lt;typename T&gt;
+void dimensione()
+{
+    cout &lt;&lt; sizeof(T) &lt;&lt; " bytes,"
+         &lt;&lt; setw(4)   &lt;&lt; "da:"   
+         &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::min()
+         &lt;&lt; setw(4)   &lt;&lt; "a:"    
+         &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::max() 
+         &lt;&lt; endl;
+}
+
+int main()
+{    
+    /** Variazione della dimensione e dei valori del tipo int */
+    cout &lt;&lt; setw(16) &lt;&lt; "int: "; 
+    dimensione&lt;int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned int: "; 
+    dimensione&lt;unsigned int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "short int: "; 
+    dimensione&lt;short int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned short: "; 
+    dimensione&lt;unsigned short&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "long int: "; 
+    dimensione&lt;long int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned long: "; 
+    dimensione&lt;unsigned long&gt;();
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Se esamini con attenzione il codice scoprirai un’altra caratteristica dei modificatori del C++: se sono riferiti a un dato di tipo intero, è possibile accorciare la dichiarazione omettendo la parola-chiave <code>int</code>.<br />
+L’output di questo programma, sul mio computer è:</p>
+
+<pre><code>% g++ tipi-di-dato-limiti.cpp -o ../out/esempio
+% ../out/esempio                               
+           int: 4 bytes, da:          -2147483648  a:           2147483647
+  unsigned int: 4 bytes, da:                    0  a:           4294967295
+     short int: 2 bytes, da:               -32768  a:                32767
+unsigned short: 2 bytes, da:                    0  a:                65535
+      long int: 8 bytes, da: -9223372036854775808  a:  9223372036854775807
+ unsigned long: 8 bytes, da:                    0  a: 18446744073709551615
+</code></pre>
+
+<p><a id="funzioni"></a>
+L’ultima cosa di cui ti devo parlare, a proposito dei tipi di dato del C++ sono i cosiddetti <em>attributi intermediari</em>, ovvero: le <em>funzioni</em>, gli <em>array</em>, i <em>puntatori</em> e le <em>reference</em>.<br />
+Delle <em>funzioni</em> parleremo diffusamente <a href="/man/funzioni">in seguito</a>.
+Quello che ci interessa, qui e ora, è che ogni funzione ha un suo tipo di dato.
+La funzione <code>main</code>, che è la funzione principale di ogni programma, ha come tipo di dato <code>int</code> e infatti si chiude con l’istruzione:</p>
+
+<pre><code>return 0;
+</code></pre>
+
+<p>La funzione <code>nome_colore</code>, all’interno della classe <code>Colore</code> è di tipo <code>void</code> e, come puoi vedere, non ha valore di ritorno.<br />
+Gli <em>array</em> sono degli insiemi di dati omogemei e si dichiarano aggiungendo al nome della variabile delle parentesi quadre.
+La dimensione dell’array deve essere definita al momento della sua dichiarazione; questo può avvenire o in maniera esplicita, inserendo il numero di elementi fra le parentesi quadre:</p>
+
+<pre><code>char elementi[10];
+</code></pre>
+
+<p>o assegnando all’array un valore che ne determinerà la dimensione massima, così come abbiamo visto nel primo esempio:</p>
+
+<pre><code>char array[] = "abcdefghilmnopqrstuvz";
+</code></pre>
+
+<p>Ogni elemento dell’array è identificato da un indice che va 0 al numero di elementi dell’array meno uno.
+Nel caso dell’array qui sopra, la lettera <code>a</code> avrà indice 0, la <code>b</code> avrà indice 2 e così via, fino alla <code>z</code>, che avrà indice 20.</p>
+
+<hr id="puntatori" />
+
+<p>I <em>puntatori</em> sono come i pitbull: alla maggior parte delle persone fanno paura, ma chi li conosce sa che sono cani dolcissimi, se li sai trattare.
+Quello che devi tenere sempre a mente è che il <em>C++</em> è solo un modo particolare di vedere la memoria del computer e nella memoria non ci sono caratteri, non ci sono classi, non ci sono immagini e non ci sono film porno, ma solo una lunga sequenza di 1 e di 0:</p>
+
+<pre><code>0100001100100111011010000110000101101110011011100110111100100000
+0110011001101111011100100111001101100101001000000111010001110101
+0111010001110100011001010010000001100101001000000110010001110101
+0110010100100000011011000110000100100000011100110111010001100101
+0111001101110011011000010010000001100101011101001110000000100000
+0000101001001010011001010010000001100110011010010110111101110010
+0110100101110011011000110110010100100000011001000110010101101110
+0111010001110010011011110010000001100001011011000010000001100011
+0110111101110010011001010010000000100111011011100010000001101001
+0110110001101100011101010111001101101001011011110110111001100101
+</code></pre>
+
+<p>L’unico modo per dare un senso a questa catena di valori binarii è di suddividerli in blocchi e assegnare un tipo di dato a ciascun blocco.
+Per esempio, se suddividi la sequenza binaria qui sopra in blocchi di otto bit:</p>
+
+<pre><code>01000011 00100111 01101000 01100001 01101110 01101110 01101111 
+00100000 01100110 01101111 01110010 01110011 01100101 00100000 
+01110100 01110101 01110100 01110100 01100101 00100000 01100101 
+00100000 01100100 01110101 01100101 00100000 01101100 01100001 
+00100000 01110011 01110100 01100101 01110011 01110011 01100001 
+00100000 01100101 01110100 11100000 00100000 00001010 01001010 
+01100101 00100000 01100110 01101001 01101111 01110010 01101001 
+01110011 01100011 01100101 00100000 01100100 01100101 01101110 
+01110100 01110010 01101111 00100000 01100001 01110010 00100000 
+01100011 01101111 01110010 01100101 00100000 00100111 01101110 
+00100000 01101001 01101100 01101100 01110101 01110011 01101001 
+01101111 01101110 01100101 
+</code></pre>
+
+<p>e converti ciascun valore nel corrispondente carattere del set ASCII, scopri che una sequenza apparentemente insensata di 1 e di 0 è in realtà l’inizio di una famosa canzone popolare:</p>
+
+<pre><code>01000011 =  67 = C
+00100111 =  39 = '
+01101000 = 104 = h
+01100001 =  97 = a
+01101110 = 110 = n
+01101110 = 110 = n
+01101111 = 111 = o
+00100000 =  32 = 
+</code></pre>
+
+<p>Per identificare i valori all’interno della sequenza di bit, hai bisogno di due informazioni: il tipo di dato che stai puntando e il suo indirizzo in memoria.
+I puntatori ti permettono di ottenere queste informazioni: il loro valore definisce l’indirizzo di memoria da cui leggere; il loro tipo definisce la dimensione del valore puntato.</p>
+
+<pre><code>unsigned char * ptr = valori;
+</code></pre>
+
+<p>Molti pensano ai puntatori come a delle bandierine che ti permettono di identificare un punto specifico della memoria, ma questo è vero solo per i puntatori <code>void</code>, che non hanno un tipo di dato associato. 
+Gli altri puntatori, più che una bandierina, sono una sorta di maschera che può scorrere sulla sequenza di bit, isolando ed evidenziando i singoli valori che la compongono:</p>
+
+<pre><code style="color:#999;line-height:1.5">01000011 00100111 01101000 01100001 01101110 01101110 01101111 
+00100000 01100110<span style="padding:2px;border:solid 1px;color:#000;margin:0 3px;">01101111</span>01110010 01110011 01100101 00100000 
+01110100 01110101 01110100 01110100 01100101 00100000 01100101 
+00100000 01100100 01110101
+</code></pre>
+
+<p>Questo programma mostra come la dimensione di un puntatore modifichi il risultato della lettura dei dati:</p>
+
+<pre><code>#include &lt;iostream&gt;
+#include &lt;bitset&gt;
+#include &lt;iomanip&gt; 
+
+using namespace std;
+
+/** 
+ * Definisce due tipi di dato: uno lungo un byte 
+ * e uno lungo due byte 
+ */
+typedef unsigned char byte;
+typedef short int duebyte;
+
+int main()
+{    
+    /** Crea un array di 80 valori binarii */
+    byte valori[] = { 
+          0b01000011, 0b00100111, 0b01101000, 0b01100001
+        , 0b01101110, 0b01101110, 0b01101111, 0b00100000 
+        , 0b01100110, 0b01101111, 0b01110010, 0b01110011
+        , 0b01100101, 0b00100000, 0b01110100, 0b01110101
+        , 0b01110100, 0b01110100, 0b01100101, 0b00100000
+        , 0b01100101, 0b00100000, 0b01100100, 0b01110101
+        , 0b01100101, 0b00100000, 0b01101100, 0b01100001
+        , 0b00100000, 0b01110011, 0b01110100, 0b01100101
+        , 0b01110011, 0b01110011, 0b01100001, 0b00100000
+        , 0b01100101, 0b01110100, 0b11100000, 0b00100000
+        , 0b00001010, 0b01001010, 0b01100101, 0b00100000
+        , 0b01100110, 0b01101001, 0b01101111, 0b01110010
+        , 0b01101001, 0b01110011, 0b01100011, 0b01100101
+        , 0b00100000, 0b01100100, 0b01100101, 0b01101110
+        , 0b01110100, 0b01110010, 0b01101111, 0b00100000
+        , 0b01100001, 0b01110010, 0b00100000, 0b01100011
+        , 0b01101111, 0b01110010, 0b01100101, 0b00100000
+        , 0b00100111, 0b01101110, 0b00100000, 0b01101001
+        , 0b01101100, 0b01101100, 0b01110101, 0b01110011
+        , 0b01101001, 0b01101111, 0b01101110, 0b01100101 
+    };
+
+    /** 
+     * Crea un puntatore con una dimensione di otto bit e gli
+     * assegna come valore l'indirizzo dell'inizio dell'array. 
+     */
+    byte * p1 = valori;
+    
+    /** 
+     * Sposta il puntatore per tutta la lunghezza dell'array,
+     * mostrando per ciascun byte il suo valore binario, il
+     * suo valore convertito in decimale e la lettera del      
+     * set ASCII corrispondente a quel valore.
+     */
+    for(int i = 0; i &lt; sizeof(valori); i++) {
+        cout &lt;&lt; setw(4)  &lt;&lt; i
+             &lt;&lt; setw(18) &lt;&lt; bitset&lt;8&gt;(*p1) 
+             &lt;&lt; setw(6)  &lt;&lt; (int)*p1 
+             &lt;&lt; setw(4)  &lt;&lt; (char) *p1 &lt;&lt; endl;
+             
+        /** Sposta il puntatore al byte successivo. */
+        p1++;
+    }
+    
+    cout &lt;&lt; endl;
+    
+    /**
+     * Crea un nuovo puntatore, stavolta con una
+     * dimensione di sedici bit.
+     */
+    duebyte * p2 = (duebyte*)valori;
+    
+    /** 
+     * Legge di nuovo i valori dell'array,
+     */
+    for(int i = 0; i &lt; sizeof(valori) / 2; i++) {
+        cout &lt;&lt; setw(4)  &lt;&lt; i
+             &lt;&lt; setw(18) &lt;&lt; bitset&lt;16&gt;(*p2) 
+             &lt;&lt; setw(6)  &lt;&lt; (short)*p2 
+             &lt;&lt; setw(4)  &lt;&lt; (char) *p2 &lt;&lt; endl;
+         
+        /** Sposta il puntatore di due byte. */
+        p2++;
+    }
+
+    return 0;
+}
+
+</code></pre>
+
+<p>Questo è l’output del programma; voglio proprio vedere come farai a farlo entrare nel tuo libro:</p>
+
+<pre><code> 0          01000011    67   C
+ 1          00100111    39   '
+ 2          01101000   104   h
+ 3          01100001    97   a
+ 4          01101110   110   n
+ 5          01101110   110   n
+ 6          01101111   111   o
+ 7          00100000    32    
+ 8          01100110   102   f
+ 9          01101111   111   o
+10          01110010   114   r
+11          01110011   115   s
+12          01100101   101   e
+13          00100000    32    
+14          01110100   116   t
+15          01110101   117   u
+16          01110100   116   t
+17          01110100   116   t
+18          01100101   101   e
+19          00100000    32    
+20          01100101   101   e
+21          00100000    32    
+22          01100100   100   d
+23          01110101   117   u
+24          01100101   101   e
+25          00100000    32    
+26          01101100   108   l
+27          01100001    97   a
+28          00100000    32    
+29          01110011   115   s
+30          01110100   116   t
+31          01100101   101   e
+32          01110011   115   s
+33          01110011   115   s
+34          01100001    97   a
+35          00100000    32    
+36          01100101   101   e
+37          01110100   116   t
+38          11100000   224   ?
+39          00100000    32    
+40          00001010    10   
+41          01001010    74   J
+42          01100101   101   e
+43          00100000    32    
+44          01100110   102   f
+45          01101001   105   i
+46          01101111   111   o
+47          01110010   114   r
+48          01101001   105   i
+49          01110011   115   s
+50          01100011    99   c
+51          01100101   101   e
+52          00100000    32    
+53          01100100   100   d
+54          01100101   101   e
+55          01101110   110   n
+56          01110100   116   t
+57          01110010   114   r
+58          01101111   111   o
+59          00100000    32    
+60          01100001    97   a
+61          01110010   114   r
+62          00100000    32    
+63          01100011    99   c
+64          01101111   111   o
+65          01110010   114   r
+66          01100101   101   e
+67          00100000    32    
+68          00100111    39   '
+69          01101110   110   n
+70          00100000    32    
+71          01101001   105   i
+72          01101100   108   l
+73          01101100   108   l
+74          01110101   117   u
+75          01110011   115   s
+76          01101001   105   i
+77          01101111   111   o
+78          01101110   110   n
+79          01100101   101   e
+
+ 0  0010011101000011 10051   C
+ 1  0110000101101000 24936   h
+ 2  0110111001101110 28270   n
+ 3  0010000001101111  8303   o
+ 4  0110111101100110 28518   f
+ 5  0111001101110010 29554   r
+ 6  0010000001100101  8293   e
+ 7  0111010101110100 30068   t
+ 8  0111010001110100 29812   t
+ 9  0010000001100101  8293   e
+10  0010000001100101  8293   e
+11  0111010101100100 30052   d
+12  0010000001100101  8293   e
+13  0110000101101100 24940   l
+14  0111001100100000 29472    
+15  0110010101110100 25972   t
+16  0111001101110011 29555   s
+17  0010000001100001  8289   a
+18  0111010001100101 29797   e
+19  0010000011100000  8416   ?
+20  0100101000001010 18954   
+21  0010000001100101  8293   e
+22  0110100101100110 26982   f
+23  0111001001101111 29295   o
+24  0111001101101001 29545   i
+25  0110010101100011 25955   c
+26  0110010000100000 25632    
+27  0110111001100101 28261   e
+28  0111001001110100 29300   t
+29  0010000001101111  8303   o
+30  0111001001100001 29281   a
+31  0110001100100000 25376    
+32  0111001001101111 29295   o
+33  0010000001100101  8293   e
+34  0110111000100111 28199   '
+35  0110100100100000 26912    
+36  0110110001101100 27756   l
+37  0111001101110101 29557   u
+38  0110111101101001 28521   i
+39  0110010101101110 25966   n
+</code></pre>
+
+<p>Come vedi, i bit sono gli stessi, ma cambiando il tipo di dato associato al puntatore e quindi la sua dimensione, il valore dei dati diventa un altro e la conversione dei numeri in lettere perde di significato.<br />
+Le istruzioni: <code>p1++</code> e <code>p2++</code> incrementano di un’unità il puntatore, ovvero lo spostano in avanti nella memoria del numero di byte corrispondenti alla dimensione del tipo di dato a cui è associato.
+Il puntatore <code>p1</code> è un <code>unsigned char</code>, quindi si sposta di otto bit; il puntatore <code>p12</code> è uno <code>short int</code>, quindi si sposta di sedici bit.
+È questo il motivo per cui il secondo ciclo di lettura dura la metà del primo: perché la quantità di bit letta per ogni iterazione è doppia. 
+Se mi fossi distratto e avessi copiato il codice del primo ciclo di lettura così com’è, senza dividere per due il numero di cicli, il puntatore avrebbe continuato a “camminare” in avanti nella memoria, oltre i confini dell’array e questo, come vedremo in seguito, non è assolutamente bene.<br />
+Le <em>reference</em> sono degli alias delle variabili a cui sono associati.
+Come per i gibboni o i cigni, il legame fra una <em>reference</em> e la sua variabile dura tutta la vita.
+Mentre i puntatori possono avere un valore <code>NULL</code> e possono essere associati a variabili differenti nel corso dell’elaborazione, le <em>reference</em> devono sempre essere associate a una variabile e quell’associazione non può essere modificata successivamente.</p>
+
+<pre><code>/** 
+ * @file tipi-di-dato-reference.cpp
+ * Utilizzo delle reference.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+
+using namespace std;
+
+int main()
+{    
+    /** Definisce una variabile di tipo int */
+    int  v = 10;     
+
+    /** Definisce una reference alla variabile v */
+    int&amp; r = v;    
+
+    /** I valori di v e r sono identici perché r è un'alias di v */
+    cout &lt;&lt; "valori iniziali: v=" &lt;&lt; v &lt;&lt; ", r=" &lt;&lt; r &lt;&lt; endl;
+
+    /** Modifica il valore della variabile r */
+    r = 20;
+
+    /** Il valore di v sarà modificato di conseguenza */
+    cout &lt;&lt; "valori finali:   v=" &lt;&lt; v &lt;&lt; ", r=" &lt;&lt; r &lt;&lt; endl;
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Compilando ed eseguendo il codice, otterrai:</p>
+
+<pre><code>% g++ src/cpp/tipi-di-dato-reference.cpp -o src/out/esempio
+% src/out/esempio                                          
+valori iniziali: v=10, r=10
+valori finali:   v=20, r=20
+</code></pre>
+
+<p>Approfondiremo i pro e i contro delle reference quando parleremo delle <a href="/man/funzioni">funzioni</a>.</p>
+
+<hr id="casting" />
+
+<p>Dato che ciascun tipo di dato non è altro che un modo per vedere la memoria, è possibile fare delle conversioni da un tipo all’altro.
+Le conversioni possono essere <em>implicite</em> o <em>esplicite</em>.
+Le conversioni <em>implicite</em> sono quelle che avvengono quando un valore è copiato fra variabili di tipo compatibile:</p>
+
+<pre><code>int  i = 0;
+char c = i;
+</code></pre>
+
+<p>In questo caso, assegnamo a una variabile di tipo <code>char</code> il valore di una variabile di tipo <code>int</code> e il compilatore ce lo lascia fare perché il valore dell’intero può essere salvato senza problemi anche nel singolo byte del <code>char</code>.
+Se volessimo rendere esplicita questa conversione, dovremmo utilizzare la sintassi:</p>
+
+<pre><code>int  i = 0;
+char c = (char) i;
+char c = char (i);
+</code></pre>
+<p>Le due forme sono equivalenti. 
+La prima è quella che il C++ ha ereditato dal C; la seconda è chiamata <em>notazione funzionale</em>. 
+Nell’esempio precedente, la variabile <code>valori</code> è un puntatore a <code>unsigned char</code>, ma abbiamo detto al sistema di considerarla un puntatore a <code>short int</code> con l’istruzione:</p>
+
+<pre><code>duebyte * p2 = (duebyte*)valori;
+</code></pre>
+
+<p>Il C++ ha anche altri modi per convertire un tipo di dato in un altro, ma siccome si applicano principalmente alle classi, li vedremo in seguito.</p>
+
+<hr id="dottrina" />
+
+<p>Quello che ti ho appena detto del C++ vale anche per il C’hi++.
+Così come la “realtà” all’interno di un computer altro non è che una sequenza di valori binari che, aggregati fra di loro, costituiscono le entità gestite dal sistema, la realtà in cui noi viviamo altro non è che una manifestazione dell’azione dell’energia dell’Universo sulle particelle che costituiscono tutto ciò che esiste, ovvero gli <em>spazioni</em>.<br />
+Puoi pensare all’Universo come a una versione tridimensionale di uno schermo di PC.
+Le immagini che vedi su questo schermo sono costituite da minuscoli puntini colorati, detti <em>pixel</em>.
+Quando lo schermo è spento, i pixel sono neri e non mostrano alcuna immagine; quando lo accendi, l’energia del catodo colpisce i pixel e li rende visibili.
+Tutto ciò che vedi, all’interno dello schermo, però, è illusorio.
+O meglio: esiste, ma non è ciò che sembra. 
+Gli elementi delle finestre non sono tridimensionali, anche se hanno delle ombre e quando vedi il puntatore del mouse spostarsi da una finestra all’altra in realtà stai vedendo i pixel dello schermo che cambiano di colore
+È un’illusione auto-indotta e volontaria: il tuo cervello vede qualcosa, ma finge che sia altro, perché è più comodo così.<br />
+La stessa cosa avviene con gli spazioni, solo che invece di essere disposti su una superficie piana, come i pixel dello schermo, gli spazioni sono una matrice tridimensionale e hanno quella che il Maestro Canaro definiva: “esistenza potenziale”; se sono irradiati di energia, acquisiscono massa e quindi esistenza, altrimenti non esistono.
+<!--
+Più precisamente, hanno "un'esistenza perpetua e non causata", come gli atomi del Vājasaneyī Saṃhitā (IV,1), citato da Ananda in Tempo ed Eternità.
+-->
+Quando il <em>Big Bang</em> irradia la sua Energia nell’Universo, questa colpisce gli spazioni dando loro una massa e generando tutto ciò che esiste, dagli atomi di elio della nebulosa di <em>Wolf–Rayet</em> alla tua maestra delle Elementari.<br />
+Così come un <code>char</code>, <code>double</code> o <code>class</code> sono solo dei nomi convenzionali per degli insiemi di bit, anche <code>elio</code>, <code>tungsteno</code> o <code>cocomero</code> sono nomi convenzionali per delle quantità di energia.
+<em>Energia</em>, bada bene, non <em>spazioni</em>, perché gli spazioni sono fissi; quella che si muove è l’Energia.
+Quando tu sposti il braccio come hai fatto adesso, non stai realmente spostando il braccio, ma trasferendo l’energia che costituiva il tuo braccio da un gruppo di spazioni a un altro.
+E anche se restiamo immobili, qui, in questa stanza, l’energia di cui siamo costituiti continua a trasferirsi nella matrice degli spazioni perché il Pianeta in cui viviamo ruota intorno al suo asse e intorno al Sole; il Sole ruota intorno alla Via Lattea e la Via Lattea si muove a sua volta rispetto alle altre galassie.
+Né io né te siamo, adesso, costituiti dagli stessi spazioni che eravamo pochi secondi fa.
+Siamo un’immagine in movimento, come il puntatore del mouse, o come le luci delle decorazioni natalizie.
+Come disse Sant’Agostino, siamo, allo stesso tempo, reali e illusorii:</p>
+
+<blockquote>
+  <p>E considerai tutte le cose che sono al di sotto di te e vidi che non si può dire in modo assoluto né che esistono né che non esistono: a loro modo esistono, perché derivano da te, non esistono perché non sono ciò che sei tu: ed esiste veramente ciò che permane immutabile. <a href="/man/note/#agostino" class="nota"></a></p>
+</blockquote>
+
+<p>Per i <em>Vedanta</em>, il Mondo ha la natura dell’Arte perché la realtà dell’arte-fatto è differente dalla realtà dell’arte-fice.
+Questa similitudine, oltre che per Platone, è valida anche per i linguaggi di programmazione: un oggetto all’interno di un programma esiste, ma non è realmente ciò che rappresenta, anche se a noi fa comodo ritenerlo tale.
+Come scrisse Ezra Pound<a id="pound" href="/man/note/#pound" class="nota"></a>, solo i sogni esistono realmente, perché la loro natura irreale rimane tale anche in una realtà illusoria.</p>
+
+<hr />
+
+<p>Gli spazioni definiscono anche i limiti delle nostre grandezze e delle nostre unità di misura.
+Pensa a una retta: teoricamente, è un insieme infinito di punti che si estende in due direzioni.
+I punti, però, sono privi di dimensione, quindi, per fare anche solo un piccolo tratto di retta, ne serve un numero infinito.
+In sostanza, secondo i matematici, in ciascuna retta coesistono due forme di infinito: quello sincategorematico della lunghezza e quello categoriematico della sequenza di punti.
+(O forse il contrario: non mi ricordo mai qual’è l’infinito in atto e quale quello potenziale.)
+Capisci bene che questa è una panzana: l’idea che se moltiplichi all’infinito il nulla tu possa ottenere qualcosa è solo un tentativo dei matematici di giustificare la loro vita sessuale.<br />
+La retta è la rappresentazione ideale di un insieme finito di spazioni contigui.
+È molto, molto sottile, ma una dimensione ce l’ha.
+Anche il piano, con buona pace di René Guenon, è costituito da un insieme finito di spazioni contigui e per un singolo punto non passano infinite rette, ma un numero finito, per quanto alto, perché la granularità degli spazioni limita il numero delle possibili angolazioni.
+Stesso discorso vale per i numeri naturali: non li si può estendere all’infinito, ma solo fino al numero totale di spazioni attivi nell’Universo, perché qualsiasi numero superiore indicherebbe una quantità che non esiste e sarebbe quindi insensato.<br />
+Gli spazioni definiscono anche l’unità minima di tempo, quella che il Maestro Canaro definiva scherzosamente lo “spazione-tempo”, ovvero l’intervallo di tempo necessario a uno spazione per acquisire tutta l’energia di uno degli  spazioni con cui è a contatto.
+È questo il motivo per cui la velocità luce non può superare i trecento milioni di metri al secondo: perché è limitata dal tempo di trasferimento dell’energia fra gli spazioni.</p>
+
+<hr />
+
+<p>Anche il C’hi++ ritiene simili il Mondo e l’Arte, ma non solo per la loro natura.
+Il Mondo e l’Arte sono simili perché il loro scòpo è lo stesso.</p>
+
+
+            </section>
+            
+        
+
+        
+        </main>
+
+        <footer>
+    <nav>
+        
+        
+        <a href="/man/commenti" 
+           title="Vai a: I commenti" 
+           class="left">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        
+        
+        <a href="#top" 
+           title="Torna all'inizio" >
+           <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        
+        <a href="/man/struttura-dei-programmi" 
+           title="Vai a: Struttura dei programmi C++" 
+           class="right" >
+                <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+                
+
+    </nav>
+
+</footer>
+
+
+    </div>
+
+  </body>
+
+</html>
