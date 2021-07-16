@@ -9,30 +9,32 @@
 using namespace std;
 
 #define ERR_FILE_NONE       -10
-#define S_ERR_FILE_NONE     "Definire un file di input"
 #define ERR_FILE_OPEN       -20
+#define S_ERR_FILE_NONE     "Definire un file di input"
 #define S_ERR_FILE_OPEN     "Impossibile aprire il file di input"
 #define N_CHAR_MIN          300
-#define N_BANNER_MAX        5
+#define N_BANNER_MAX        3
 #define PUNTO               '.'
 
 /**
- * Aggiunge un banner dopo ogni punto, ogni N_CHAR_MIN caratteri.
- */
+*   Aggiunge un banner dopo ogni punto, 
+*   ogni N_CHAR_MIN caratteri.
+*/
 int banner_testo(ifstream& testo)
 {
-    int  n_banner = 0;
+    int  n_banner = 1;
     int  letti = 0;
     char c = 0;
  
     /** 
-    *   Verifica che il file sia valido. 
-    *   In questo caso, lo fa anche la funzione chiamante, 
-    *   ma non è detto che sarà sempre così..
+    *  Legge tutto il contenuto del file di input
     */
     while(testo.good()) {
         
-        /** Legge il file, carattere per carattere */
+        /** 
+        *   Legge il cotenuto del file, 
+        *   carattere per carattere 
+        */
         if((c = testo.get()) != EOF) {            
 
             /** Incrementa il numero di caratteri letti */
@@ -42,22 +44,20 @@ int banner_testo(ifstream& testo)
             cout << c;            
 
             /** 
-            *   Se: 
-            *   - il carattere corrente è un punto
-            *   - ha letto almeno N_CHAR_MIN caratteri
-            *   - ha ancora banner da aggiungere 
+            *   Se il carattere corrente è un punto
+            *   e ha letto almeno N_CHAR_MIN caratteri
+            *   e ha ancora banner da aggiungere, 
+            *   inserisce il codice del banner nel testo. 
             */
-            if(c == PUNTO && letti >= N_CHAR_MIN && n_banner <= N_BANNER_MAX) {
-                
-                /** Inserisce il codice del banner nel testo */
+            if(c == PUNTO 
+            && letti >= N_CHAR_MIN 
+            && n_banner <= N_BANNER_MAX) {                
                 cout << endl 
-                     << "<div id\"" << n_banner << "\" ></div>" 
+                     << "<div id=\"banner-" 
+                     << n_banner 
+                     << "\"></div>" 
                      << endl;
-
-                /* Incrementa il numero di banner inseriti */ 
                 n_banner++;
-                
-                /** Azzera il numero di caratteri letti */
                 letti = 0;
             }
         }       
