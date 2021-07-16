@@ -457,7 +457,7 @@ int main(int argc, char** argv)
 9: Inserire un valore da: 1 a 9
 </code></pre>
 
-<p>Il ciclo <code>do-while</code> è uguale al ciclo <code>while</code>con la sola differenza che la condizione <code>while</code> viene valutata alla fine dell’iterazione e quindi il corpo del ciclo viene eseguito almeno per una volta. 
+<p>Il ciclo <code>do-while</code> è uguale al ciclo <code>while</code> con la sola differenza che la condizione <code>while</code> viene valutata alla fine dell’iterazione e quindi il corpo del ciclo viene eseguito almeno per una volta. 
 La forma generale del ciclo <code>do-while</code> è:</p>
 
 <pre><code>do
@@ -466,11 +466,13 @@ La forma generale del ciclo <code>do-while</code> è:</p>
 } while(espressione)    // espressione di controllo
 </code></pre>
 
+<hr id="isolamento-funzionale" />
+
 <p>Non offenderò la tua intelligenza con un esempio; vorrei piuttosto farti notare una cosa grave: il codice di questi programmi è sgraziato.
-Il problema è che la funzione <code>mostraPianeta</code> fa troppe cose: non solo stabilisce il nome del Pianeta, ma lo stampa anche a video.
+Il problema è che la funzione mostraPianeta fa troppe cose: non solo stabilisce il nome del Pianeta, ma lo stampa anche a video.
 In conseguenza di ciò, nel nostro output abbiamo anche quella brutta stringa di errore relativa alla posizione numero nove.
 Nel primo esempio in cui l’abbiamo utilizzata, questo non era un problema, ma adesso che il nostro programma si sta sviluppando, dobbiamo rendere ciascuna funzione più specialistica, dividendo l’elaborazione dei dati (capire quale sia il pianeta) dall’interfaccia utente (la stampa a video del nome).
-Per fare ciò, utilizzermo una nuova funzione che aggiungeremo al file <code>pianeti.cpp</code>:</p>
+Per fare ciò, utilizzeremo una nuova funzione che aggiungeremo al file <code>pianeti.cpp</code>:</p>
 
 <pre><code>/**
  *  nomePianeta 

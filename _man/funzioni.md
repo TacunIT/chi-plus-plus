@@ -17,7 +17,7 @@ Il flusso di un programma *non banale*, come direbbe Stroutsup, sarà sempre sud
 {% include_relative src/tipi-di-dato-dimensione.cpp %}
 ```
 
-Questo è il codice di un esempio che abbiamo visto nel capitolo sui <a href="/man/tipi-di-dato">tipi di dato</a>.
+Questo è il codice di un esempio che abbiamo visto nella lezione sui <a href="/man/tipi-di-dato">tipi di dato</a>.
 Se decidessimo di modificare il modo in cui il programma mostra i dati all'utente, dovremmo intervenire su tutte le righe del programma, cosa che sarebbe noiosa e potrebbe generare degli errori.
 Al contrario, se isoliamo la funzione di visualizzazione, le eventuali modifiche o correzioni dovranno essere applicate solo in un punto.
 Il codice dell'esempio successivo è un esempio, perfettibile, di questo approccio:

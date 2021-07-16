@@ -19,8 +19,8 @@ Un puntatore utilizzato impropriamente, un ciclo in più o in meno in un'istruzi
 Il programma potrà funzionare correttamente per anni, ma poi, un bel giorno, qualcosa non andrà come sarebbe dovuto andare e a quel punto bisognerà analizzare il codice per trovare l'errore.  
 Fare degli errori è inevitabile, ed è importante sapere come porvi rimedio.
 Ancora più importante, però, è sapersi accorgere degli errori.
-Così come <a href="/man/ereditarieta#ikebarba" class="xref">l'Ikebarba inizia nel negozio</a>, il debug comincia nel momento in cui si scrive il codice.
-Il modo migliore per evitare che il codice contenga degli errori è scrivere del buon codice.  
+Così come *l'Ikebarba inizia nel negozio*, il debug comincia nel momento in cui si scrive il codice.
+Il modo migliore per evitare che il codice contenga degli errori è scrivere del buon codice.
 Scrivere del buon codice vuol dire fare sempre il meglio che ti è possibile.
 Non salvare mai un file se non sei certo che funzionerà come deve e cerca sempre di pensare a cos'altro potrebbe fare il tuo codice, oltre a quello che vuoi tu.
 Come di ho detto <a href="/man/programmatore#buon-programmatore" class="xref">in una delle nostre prime chiacchierate</a>, il buon programmatore non si accontenta della strada più rapida, ma cerca sempre quella più efficiente e sicura, perché sa che scrivere del buon codice costa meno che riparare del codice fatto male.
@@ -106,7 +106,7 @@ src/cpp/debug-errori.cpp:43:12: note: in instantiation of function template spec
 
 Se un costrutto è formalmente corretto, ma *potrebbe* essere un errore, il compilatore può segnalarlo con un <b id="warning">warning</b>, un messaggio di avviso che non blocca la compilazione, ma richiama l'attenzione del programmatore sull'anomalia.  
 Ho usato il condizionale (*può segnalarlo*) perché la notifica dei *warning* è un'opzione che deve essere attivata dal programmatore, specificando, fra i parametri di compilazione, quali avvisi vuole ricevere.
-Dato che i tipi di *warning* sono davvero tanti:
+Dato che i parametri per attivare i diversi tipi di *warning* sono davvero tanti:
 
 ```
 -Waddress   
@@ -235,12 +235,12 @@ src/cpp/debug-errori-warning.cpp:19:11:
 4 warnings generated.
 ```
 
-Molti programmatori ignorano i warning, pensano che se il programma può essere compilato non ci sia nient'altro di cui preoccuparsi.
-Tu ,non fare questo errore: nessun avviso deve essere ignorato.
+Molti programmatori ignorano i *warning*, pensano che se il programma può essere compilato non ci sia nient'altro di cui preoccuparsi.
+Tu non fare questo errore: nessun avviso deve essere ignorato.
 
-<hr id="">
+<hr id="errori-esecuzione">
 
-Solo un programma formalmente ineccepibile può dare luogo a <b id="errori-esecuzione">errori di esecuzione</b>.
+Solo un programma formalmente ineccepibile può dare luogo a **errori di esecuzione**.
 Se non fosse formalmente ineccepibile, infatti, non sarebbe stato compilato e non potrebbe essere eseguito.  
 Gli errori di esecuzione sono tanto più pericolosi quanto più i loro
 effetti sono lievi.
@@ -276,7 +276,7 @@ Se invece incrementi la variabile nel modo sbagliato:
 ```
 {% include_relative src/pianeti-while-errore-2.cpp %}
 ```
-causerai un errore che, in questo caso, è evidente (all'elenco manca Mercurio), ma che in un programma più complesso potrebbe essere difficile da individuare:
+causerai un errore che, in questo caso, è evidente, perché all'elenco manca Mercurio, ma che in un programma più complesso potrebbe essere difficile da individuare:
 
 ```
 > g++ src/cpp/pianeti-while-errore-2.cpp \
@@ -472,17 +472,12 @@ Quindi, se l'input è una data, dovrai verificare che il tuo sistema gestisca co
 
 <!--
 
+importanza dell'impaginazione dei nomi: OPEN, CLOSE, READ / INPUT, DELETE, UPDATE
 v. Orologiaio, pos. 3836 
 
 Il cambiamento inizia quando si intraprende un nuovo sentiero , anche se questo sentiero non è che una traccia lasciata da una capra assetata che ha trovato una sorgente .
 M. Deen - Per antiche strade
 
 Se non lo si è fatto finora, spiegare che gli esempii del testo sono studiati per essere progressivamente migliorati, per dimostrare come la scrittura di codice sia un'attività in continua evoluzione.
-
-B. Croce -- Breviario di estetica -- Laterza, Bari 1928 -- p.12
-
-Un sistema è una casa che, subito dopo costruita e adornata, ha bisogno (soggetta com'è all'azione corroditrice degli elementi) di un lavorio più o meno energico, ma assiduo, di manutenzione, e che a un certo momento non giova più restaurare e puntellare, e bisogna gettare a terra e ricostruire dalle fondamenta. Ma con siffatta differenza capitale: che, nell'opera del pensiero, la casa perpetuamente nuova e sostenuta perpetuamente dall'antica, la quale, quasi per opera magica, perdura in essa.
-
-riprendere, se utile, gli esempii del ciclo for per illustrare i diversi tipi di errore che ne possono derivare
 
 -->
