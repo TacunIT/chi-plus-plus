@@ -1,3 +1,6 @@
+## 0.27.0 (July 16, 2021)
+  - Modificato il codice di esempio della gestione delle eccezioni nel capitolo sugli stream.
+
 ## 0.26.6 (July 15, 2021)
   - Redazione del testo del capitolo sul debug
   - Aggiunto codice con errore
