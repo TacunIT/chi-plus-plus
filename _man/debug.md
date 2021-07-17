@@ -366,89 +366,18 @@ Devi pensare a tutto questo, quando scrivi codice, perché hai una responsabilit
 Se lavori male per la Coca-Cola, puoi sempre pensare: “Chi se ne frega, io bevo Pepsi”; non è etico, ma almeno non è auto-lesionista. 
 Se però lavori male per lo Stato, stai peggiorando la tua vita e di tutte le persone che conosci e questo, oltre a non essere etico, è anche stupido. 
 
-<hr id="">
+---
 
-Un programma per il debug può aiutarti a identificare il punto del tuo codice che genera un errore, ma devi prima capire quale sia la funzione da esaminare, perché fare il debug di tutto il codice di un programma, nei casi in cui questo sia possibile, sarebbe lungo ed estremamente frustrante.  
+Parafrasando Iacopone da Todi, un programma per il debug può aiutarti a identificare il punto del tuo codice che genera un errore, ma devi prima capire quale sia la funzione da esaminare, perché fare il debug di tutto il codice di un programma, nei casi in cui questo sia possibile, sarebbe lungo ed estremamente frustrante.  
 Il modo in cui è stato scritto il codice lo renderà più o meno facile da verificare.
 Immagina che il problema sia la variabile `x`: se tutto il tuo codice ha la possibilità di modificarne il valore, potresti dover esaminare ogni singola funzione per verificare che non ne faccia un uso improprio. 
 Al contrario, se la variabile `x` può essere modificata solo alcuni punti del codice, la tua sarà una ricerca più mirata e veloce. 
 È per questo motivo, che <a href="/man/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l'elaborazione dei dati dalla gestione dell'interfaccia utente: perché in questo modo, a seconda del tipo di errore che dovesse presentarsi &mdash; di calcolo o di output &mdash; sapremo quale funzione andare a guardare.  
 Alcune caratteristiche del C++, come la <a href="/man/note.html#tipizzazione" class="xref">tipizzazione forte</a> e l'<a href="/man/note.html#incapsulamento" class="xref">incapsulamento</a> potranno esserti di aiuto in questo senso, ma non sempre saranno sufficienti a identificare il punto esatto in cui il tuo codice fa qualcosa di errato.
 In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare.  
-
 <!--
-todo@ spiegare come suddividere il codice e come sfruttare le funzioni di log
+todo@ spiegare come suddividere il codice e come sfruttare le funzioni di log 
 -->
-
-In questo codice una piccola cosa non è stata fatta come si dovrebbe e ne è derivato un errore:
-
-```
-{% include_relative src/debug-gestione-errori.cpp %}
-```
-
-Se compili ed esegui questo codice, passandogli uno dei file utilizzati per l'esempio precedente, ottieni un errore, anche se il file esiste:
-
-```
-> g++ src/cpp/stream-eccezioni.cpp -o src/out/esempio
-> src/out/esempio src/cpp/debug-testo-1.txt          
--30: Impossibile leggere il file di input
-> 
-> ls  src/cpp/debug-testo-1.txt  
-src/cpp/debug-testo-1.txt
-```
-
-Provi allora a ri-compilare il programma definendo la macro `__LOG__` per verificare quale sia il file che il prgramma sta aprendo:
-
-```
-#ifdef __LOG__    
-    log(LOG_DEBUG, 2, "Apro il file: ",  path);
-#endif
-```
-
-Quando esegui i programma, però, ottieni un nuovo errore:
-
-```
-> g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio
-> src/out/esempio src/cpp/debug-testo-1.txt
-[DEBUG] Apro il file: zsh: segmentation fault src/out/esempio src/cpp/debug-testo-1.txt
-```
-
-Questo non è il comportamento atteso dalla funzione, ma ci permette lo stesso di capire quale possa essere il problema.
-L'errore: `segmentation fault` vuol dire che il programma sta cercando di accedere a un'area di memoria che non gli appartiene.
-L'area di memoria in questione è quella associata al parametro `path`, che a sua volta è stato inizializzato con il valore della variabile `argv[2]`:
-
-```
-esito = apri_file(testo, argv[2]);
-```
-
-Il *bug* è l'indice `2` nell'array `argv`.
-Come certamente avrai notato, il codice di questo programma è una rielaborazione del codice della <a href="/man/stream.html" class="xref">lezione sugli stream</a>, ma stavolta la stringa di chiamata del programma ha solo due valori: il path del programma e il nome del file di input:
-
-```
-> src/out/esempio src/cpp/debug-testo-1.txt
-```
-
-L'indirizzo di memoria puntato da `argv[2]`, quindi, non appartiene al programma: non possiamo utilizzarlo come path per una funzione `open` e non possiamo stamparlo a video.  
-Questo errore di distrazione è stato facilitato dall'utilizzo di una costante numerica per la definizione dell'indice dell'array.
-È sempre meglio gestire questi casi con definendo delle costanti con il precompilatore:
-
-```
-#define PARAM_PATH 1
-...
-esito = apri_file(testo, argv[PARAM_PATH]);
-```
-
-Se applichiamo questa correzione, il programma funziona correttamente:
-
-```
-> g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio
-> src/out/esempio src/cpp/debug-testo-1.txt                          
-[DEBUG] Apro il file: src/cpp/debug-testo-1.txt
-Essere un ossessivo-compulsivo con una leggera tendenza...
-```
-
---
-
 Quando l'errore si manifesterà &mdash; di solito pochi minuti prima che tu debba smettere di lavorare per uscire o fare qualcos'altro &mdash; e tu dovrai identificarne la causa, il primo problema che avrai sarà di riuscire a riprodurre le condizioni in cui si manifesta.
 Come abbiamo visto poco fa, se l'errore dipende dai dati in input, per identificare il problema, dovrai capire quali sono i dati che lo generano; qualche volta sarà facile, ma in altri casi potrà rivelarsi estremamente complesso.  
 Diversi anni or sono, il Maestro Canaro dovette registrarsi su un sito Web che gli chiese anche la sua data di nascita &mdash; che, come sai, fu il 29 Febbraio del 1964        .
@@ -468,6 +397,159 @@ In particolare, devi verificare che si comporti correttamente se:
 - gli fornisci dati in eccesso.
 
 Quindi, se l'input è una data, dovrai verificare che il tuo sistema gestisca correttamente sia il valore `29-02-1964` che il valore `29-02-1965`; se l'input è una stringa di testo, dovrai accertarti che il sistema gestisca correttamente anche il caso in cui riceva più caratteri del previsto e che elimini eventuali caratteri di spazio all'inizio o alla fine del testo, a meno che questo non sia un requisito funzionale. 
+
+---
+
+In questo programma, una piccola cosa non è stata fatta come si dovrebbe e ne è derivato un errore:
+
+```
+{% include_relative src/debug-gestione-errori.cpp %}
+```
+
+In ossequio a quanto abbiamo detto poco fa, per verificare il funzionamento di  questo programma dovremo fare almeno quattro prove:
+
+```
+# dati corretti
+src/out/esempio src/cpp/debug-testo-1.txt 
+
+# nessun dato
+src/out/esempio 
+
+# dati errati
+src/out/esempio src/cpp/file-inesistente 
+
+# dati in eccesso
+src/out/esempio src/cpp/debug-testo-1.txt abcdefghilmenopqrstuvz  
+```
+
+Dobbiamo poi verificare che tutte le condizioni di errore siano gestite correttamente.
+Nel nostro caso, gli errori previsti sono:
+
+```
+#define ERR_FILE_NONE   -10
+#define ERR_FILE_OPEN   -20
+#define ERR_FILE_READ   -30
+```
+
+I primi due errori sono verificati dalle prove standard; il terzo caso lo possiamo verificare passando al programma un file vuoto:
+
+```
+src/out/esempio src/cpp/debug-vuoto.txt 
+```
+
+Sfortunatamente, però, se compili ed esegui questo codice con i dati corretti, ottieni un errore, anche se il file esiste:
+
+```
+> g++ src/cpp/debug-gestione-errori.cpp -o src/out/esempio
+> src/out/esempio src/cpp/debug-testo-1.txt               
+-20: Impossibile aprire il file di input
+> ls src/cpp/debug-testo-1.txt 
+src/cpp/debug-testo-1.txt
+```
+
+Se ri-compili il programma definendo la macro `__LOG__` per verificare quale sia il file che il programma sta aprendo:
+
+```
+#ifdef __LOG__    
+    log(LOG_DEBUG, 2, "Apro il file: ",  path);
+#endif
+```
+
+quando esegui i programma, ottieni un nuovo errore:
+
+```
+> g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio 
+> src/out/esempio src/cpp/debug-testo-1.txt                           
+[DEBUG] Apro il file: zsh: segmentation fault  src/out/esempio src/cpp/debug-testo-1.txt
+```
+
+Questo non è il comportamento atteso dalla funzione, ma ci permette comunque di capire quale possa essere il problema.
+L'errore: `segmentation fault` vuol dire che il programma sta cercando di accedere a un'area di memoria che non gli appartiene.
+L'area di memoria in questione è quella associata al parametro `path`, che a sua volta è stato inizializzato con il valore della variabile `argv[2]`:
+
+```
+esito = apri_file(testo, argv[2]);
+```
+
+Il *bug* è l'indice `2` nell'array `argv`.
+Come certamente avrai notato, il codice di questo programma è una rielaborazione del codice della <a href="/man/stream.html" class="xref">lezione sugli stream</a>, ma stavolta la stringa di chiamata del programma ha solo due valori: il path del programma e il nome del file di input:
+
+```
+> src/out/esempio src/cpp/debug-testo-1.txt
+```
+
+L'indirizzo di memoria puntato da `argv[2]`, quindi, non appartiene al programma: non possiamo utilizzarlo come path per una funzione `open` e non possiamo stamparlo a video.  
+Se correggiamo l'indice, il programma gestisce correttamente tutte le condizioni d'uso:
+
+```
+> g++ src/cpp/debug-gestione-errori.cpp \
+    -D __LOG__ \
+    -o src/out/esempio
+> src/out/esempio
+-10: Definire un file di input
+
+> src/out/esempio src/cpp/file-inesistente
+[DEBUG] Apro il file: src/cpp/file-inesistente
+-20: Impossibile aprire il file di input
+
+> src/out/esempio src/cpp/debug-vuoto.txt
+[DEBUG] Apro il file: src/cpp/debug-vuoto.txt
+-30: Impossibile leggere il file di input
+
+> src/out/esempio src/cpp/debug-testo-1.txt
+[DEBUG] Apro il file: src/cpp/debug-testo-1.txt
+Essere un ossessivo-compulsivo con una leggera tendenza ...
+```
+
+Questo errore di distrazione è stato facilitato dall'utilizzo di una costante numerica per la definizione dell'indice dell'array.
+Scrivere direttamente un numero o una stringa nel codice è sicuramente più rapido e allettante che definire delle costanti per il precompilatore:
+
+```
+#define PARAM_PATH 1
+...
+esito = apri_file(testo, argv[PARAM_PATH]);
+```
+
+ma, sul lungo periodo, è controproducente perché rende il codice più complesso da leggere e da modificare.
+*Più complesso da leggere* perché le costanti aiutano a capire cosa faccia il codice. 
+Se leggi l'istruzione:  
+
+```
+return (argc < 2) ? ERR_FILE_NONE : ERR_NONE;
+```
+
+puoi capire cosa faccia anche se non conosci il codice.
+Se invece leggi la stessa istruzione, ma senza le costanti:
+
+```
+return (argc < 2) ? -10 : 0;
+```
+
+per capire cosa faccia dovrai andare a leggere la documentazione del programma, posto che ce ne sia una.  
+*Più complesso da modificare* perché l'utilizzo di costanti al posto di valori *hard-coded* permette di cambiare il valore di una costante agendo in un solo punto:
+
+```
+#define ERR_NONE  1 
+```
+
+Se non avessimo usato una costante, per ottenere lo stesso risultato avremmo dovuto modificare tre istruzioni distinte:
+
+```
+return (argc < 2) ? ERR_FILE_NONE : ERR_NONE;
+
+...
+
+return ERR_NONE;
+
+...
+
+int esito = ERR_NONE;
+```
+
+In un programma più complesso del nostro esempio, le modifiche sarebbero state sicuramente di più e più difficili da identificare; inoltre, se ce ne fossimo dimenticata una (probabile), avremmo introdotto un errore nel sistema.  
+Le costanti *hard-coded* possono essere utilizzate solo nella prima fase dello sviluppo del programma, quando non sei ancora sicuro che la strada che hai scelto sia quella giusta. 
+In questa fase è ammissibile che tu faccia delle prove inserendo dei valori direttamente nel codice, ma quando l'algoritmo sarà ragionevolmente stabile, dovrai convertire tutti i valori in costanti.
+
 
 <!--
 

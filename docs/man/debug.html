@@ -619,19 +619,41 @@ Se però lavori male per lo Stato, stai peggiorando la tua vita e di tutte le pe
 
 <hr />
 
-<p>Un programma per il debug può aiutarti a identificare il punto del tuo codice che genera un errore, ma devi prima capire quale sia la funzione da esaminare, perché fare il debug di tutto il codice di un programma, nei casi in cui questo sia possibile, sarebbe lungo ed estremamente frustrante.<br />
+<p>Parafrasando Iacopone da Todi, un programma per il debug può aiutarti a identificare il punto del tuo codice che genera un errore, ma devi prima capire quale sia la funzione da esaminare, perché fare il debug di tutto il codice di un programma, nei casi in cui questo sia possibile, sarebbe lungo ed estremamente frustrante.<br />
 Il modo in cui è stato scritto il codice lo renderà più o meno facile da verificare.
 Immagina che il problema sia la variabile <code>x</code>: se tutto il tuo codice ha la possibilità di modificarne il valore, potresti dover esaminare ogni singola funzione per verificare che non ne faccia un uso improprio. 
 Al contrario, se la variabile <code>x</code> può essere modificata solo alcuni punti del codice, la tua sarà una ricerca più mirata e veloce. 
 È per questo motivo, che <a href="/man/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l’elaborazione dei dati dalla gestione dell’interfaccia utente: perché in questo modo, a seconda del tipo di errore che dovesse presentarsi — di calcolo o di output — sapremo quale funzione andare a guardare.<br />
 Alcune caratteristiche del C++, come la <a href="/man/note.html#tipizzazione" class="xref">tipizzazione forte</a> e l’<a href="/man/note.html#incapsulamento" class="xref">incapsulamento</a> potranno esserti di aiuto in questo senso, ma non sempre saranno sufficienti a identificare il punto esatto in cui il tuo codice fa qualcosa di errato.
-In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare.</p>
-
+In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare.<br />
 <!--
-todo@ spiegare come suddividere il codice e come sfruttare le funzioni di log
+todo@ spiegare come suddividere il codice e come sfruttare le funzioni di log 
 -->
+Quando l’errore si manifesterà — di solito pochi minuti prima che tu debba smettere di lavorare per uscire o fare qualcos’altro — e tu dovrai identificarne la causa, il primo problema che avrai sarà di riuscire a riprodurre le condizioni in cui si manifesta.
+Come abbiamo visto poco fa, se l’errore dipende dai dati in input, per identificare il problema, dovrai capire quali sono i dati che lo generano; qualche volta sarà facile, ma in altri casi potrà rivelarsi estremamente complesso.<br />
+Diversi anni or sono, il Maestro Canaro dovette registrarsi su un sito Web che gli chiese anche la sua data di nascita — che, come sai, fu il 29 Febbraio del 1964        .
+<!-- Si trattava di Paypal e questo non è il solo errore che ho rilevato -->
+La maschera di inserimento nuovo utente non gli diede problemi, ma la maschera di modifica dati, evidentemente scritta da un programmatore meno esperto, non gli permise di aggiornarli perché, a suo dire, la data di nascita era sbagliata.
+Ciò vuol dire che il sistema utilizzava due funzioni distinte per il controllo della data di nascita, una nella funzione di inserimento e un’altra nella funzione di modifica, e che almeno la funzione utilizzata in modifica non era una funzione standard, ma codice scritto <em>ad-hoc</em>.<br />
+Entrambe queste scelte sono errori: a una determinata azione sui dati deve corrispondere una singola funzione.
+Fare la stessa operazione con parti di codice distinte è sbagliato, sia perché aumenta la probabilità di commettere degli errori, sia perché rallenta i tempi di identificazione dell’errore in fase di debug.
+È sbagliato anche riscrivere delle funzioni che già esistono: <a href="http://cr.yp.to/djb.html" target="qmail">D. J. Bernstein</a> lo fece, con le funzioni di I/O di qmail, ma le sue funzioni erano migliori e più sicure delle funzioni della libreria standard.   <br />
+A questi due errori di programmazione — inammissibili, in un sito che gestisca transazioni economiche — si aggiunge una profonda sciatteria della fase di debug del codice, perché la corretta gestione dei casi particolari, come gli anni bisestili, va sempre verificata.
+Quando verifichi il funzionamento di un programma, non puoi limitarti a controllare che faccia ciò che deve fare, ma devi anche assicurarti che non faccia ciò che non deve fare. 
+In particolare, devi verificare che si comporti correttamente se:</p>
 
-<p>In questo codice una piccola cosa non è stata fatta come si dovrebbe e ne è derivato un errore:</p>
+<ul>
+  <li>gli fornisci i dati di input corretti;</li>
+  <li>non gli fornisci alcun dato;</li>
+  <li>gli fornisci dati errati;</li>
+  <li>gli fornisci dati in eccesso.</li>
+</ul>
+
+<p>Quindi, se l’input è una data, dovrai verificare che il tuo sistema gestisca correttamente sia il valore <code>29-02-1964</code> che il valore <code>29-02-1965</code>; se l’input è una stringa di testo, dovrai accertarti che il sistema gestisca correttamente anche il caso in cui riceva più caratteri del previsto e che elimini eventuali caratteri di spazio all’inizio o alla fine del testo, a meno che questo non sia un requisito funzionale.</p>
+
+<hr />
+
+<p>In questo programma, una piccola cosa non è stata fatta come si dovrebbe e ne è derivato un errore:</p>
 
 <pre><code>/** 
  * @file src/debug-gestione-errori.cpp
@@ -645,13 +667,13 @@ todo@ spiegare come suddividere il codice e come sfruttare le funzioni di log
 using namespace std;
 
 /** Codici e stringhe di errrore */
+#define LOG_DEBUG         1
+#define LOG_AVVISO        2
+#define LOG_ERRORE        3
 #define ERR_NONE          0
 #define ERR_FILE_NONE   -10
 #define ERR_FILE_OPEN   -20
 #define ERR_FILE_READ   -30
-#define LOG_DEBUG         1
-#define LOG_AVVISO        2
-#define LOG_ERRORE        3
 #define S_DEBUG         "DEBUG"
 #define S_AVVISO        "AVVISO"
 #define S_ERRORE        "ERRORE"
@@ -707,7 +729,7 @@ void errore(int codice, bool exit = true)
     }
 
     /** Se ne trova una, lancia un'eccezione */
-    if(errore != NULL   ){
+    if(errore != NULL){
         Eccezione e(codice, errore);
         throw e;
     }
@@ -839,31 +861,58 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>Se compili ed esegui questo codice, passandogli uno dei file utilizzati per l’esempio precedente, ottieni un errore, anche se il file esiste:</p>
+<p>In ossequio a quanto abbiamo detto poco fa, per verificare il funzionamento di  questo programma dovremo fare almeno quattro prove:</p>
 
-<pre><code>&gt; g++ src/cpp/stream-eccezioni.cpp -o src/out/esempio
-&gt; src/out/esempio src/cpp/debug-testo-1.txt          
--30: Impossibile leggere il file di input
-&gt; 
-&gt; ls  src/cpp/debug-testo-1.txt  
+<pre><code># dati corretti
+src/out/esempio src/cpp/debug-testo-1.txt 
+
+# nessun dato
+src/out/esempio 
+
+# dati errati
+src/out/esempio src/cpp/file-inesistente 
+
+# dati in eccesso
+src/out/esempio src/cpp/debug-testo-1.txt abcdefghilmenopqrstuvz  
+</code></pre>
+
+<p>Dobbiamo poi verificare che tutte le condizioni di errore siano gestite correttamente.
+Nel nostro caso, gli errori previsti sono:</p>
+
+<pre><code>#define ERR_FILE_NONE   -10
+#define ERR_FILE_OPEN   -20
+#define ERR_FILE_READ   -30
+</code></pre>
+
+<p>I primi due errori sono verificati dalle prove standard; il terzo caso lo possiamo verificare passando al programma un file vuoto:</p>
+
+<pre><code>src/out/esempio src/cpp/debug-vuoto.txt 
+</code></pre>
+
+<p>Sfortunatamente, però, se compili ed esegui questo codice con i dati corretti, ottieni un errore, anche se il file esiste:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-gestione-errori.cpp -o src/out/esempio
+&gt; src/out/esempio src/cpp/debug-testo-1.txt               
+-20: Impossibile aprire il file di input
+&gt; ls src/cpp/debug-testo-1.txt 
 src/cpp/debug-testo-1.txt
 </code></pre>
 
-<p>Provi allora a ri-compilare il programma definendo la macro <code>__LOG__</code> per verificare quale sia il file che il prgramma sta aprendo:</p>
+<p>Se ri-compili il programma definendo la macro <code>__LOG__</code> per verificare quale sia il file che il programma sta aprendo:</p>
 
 <pre><code>#ifdef __LOG__    
     log(LOG_DEBUG, 2, "Apro il file: ",  path);
 #endif
 </code></pre>
 
-<p>Quando esegui i programma, però, ottieni un nuovo errore:</p>
+<p>quando esegui i programma, ottieni un nuovo errore:</p>
 
-<pre><code>&gt; g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio
-&gt; src/out/esempio src/cpp/debug-testo-1.txt
-[DEBUG] Apro il file: zsh: segmentation fault src/out/esempio src/cpp/debug-testo-1.txt
+<pre><code>&gt; g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio 
+&gt; src/out/esempio src/cpp/debug-testo-1.txt                           
+[DEBUG] Apro il file: zsh: segmentation fault  src/out/esempio src/cpp/debug-testo-1.txt
 </code></pre>
 
-<p>Questo non è il comportamento atteso dalla funzione, ma ci permette lo stesso di capire quale possa essere il problema.
+<p>Questo non è il comportamento atteso dalla funzione, ma ci permette comunque di capire quale possa essere il problema.
 L’errore: <code>segmentation fault</code> vuol dire che il programma sta cercando di accedere a un’area di memoria che non gli appartiene.
 L’area di memoria in questione è quella associata al parametro <code>path</code>, che a sua volta è stato inizializzato con il valore della variabile <code>argv[2]</code>:</p>
 
@@ -877,45 +926,70 @@ Come certamente avrai notato, il codice di questo programma è una rielaborazion
 </code></pre>
 
 <p>L’indirizzo di memoria puntato da <code>argv[2]</code>, quindi, non appartiene al programma: non possiamo utilizzarlo come path per una funzione <code>open</code> e non possiamo stamparlo a video.<br />
-Questo errore di distrazione è stato facilitato dall’utilizzo di una costante numerica per la definizione dell’indice dell’array.
-È sempre meglio gestire questi casi con definendo delle costanti con il precompilatore:</p>
+Se correggiamo l’indice, il programma gestisce correttamente tutte le condizioni d’uso:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-gestione-errori.cpp \
+    -D __LOG__ \
+    -o src/out/esempio
+&gt; src/out/esempio
+-10: Definire un file di input
+
+&gt; src/out/esempio src/cpp/file-inesistente
+[DEBUG] Apro il file: src/cpp/file-inesistente
+-20: Impossibile aprire il file di input
+
+&gt; src/out/esempio src/cpp/debug-vuoto.txt
+[DEBUG] Apro il file: src/cpp/debug-vuoto.txt
+-30: Impossibile leggere il file di input
+
+&gt; src/out/esempio src/cpp/debug-testo-1.txt
+[DEBUG] Apro il file: src/cpp/debug-testo-1.txt
+Essere un ossessivo-compulsivo con una leggera tendenza ...
+</code></pre>
+
+<p>Questo errore di distrazione è stato facilitato dall’utilizzo di una costante numerica per la definizione dell’indice dell’array.
+Scrivere direttamente un numero o una stringa nel codice è sicuramente più rapido e allettante che definire delle costanti per il precompilatore:</p>
 
 <pre><code>#define PARAM_PATH 1
 ...
 esito = apri_file(testo, argv[PARAM_PATH]);
 </code></pre>
 
-<p>Se applichiamo questa correzione, il programma funziona correttamente:</p>
+<p>ma, sul lungo periodo, è controproducente perché rende il codice più complesso da leggere e da modificare.
+<em>Più complesso da leggere</em> perché le costanti aiutano a capire cosa faccia il codice. 
+Se leggi l’istruzione:</p>
 
-<pre><code>&gt; g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio
-&gt; src/out/esempio src/cpp/debug-testo-1.txt                          
-[DEBUG] Apro il file: src/cpp/debug-testo-1.txt
-Essere un ossessivo-compulsivo con una leggera tendenza...
+<pre><code>return (argc &lt; 2) ? ERR_FILE_NONE : ERR_NONE;
 </code></pre>
 
-<p>–</p>
+<p>puoi capire cosa faccia anche se non conosci il codice.
+Se invece leggi la stessa istruzione, ma senza le costanti:</p>
 
-<p>Quando l’errore si manifesterà — di solito pochi minuti prima che tu debba smettere di lavorare per uscire o fare qualcos’altro — e tu dovrai identificarne la causa, il primo problema che avrai sarà di riuscire a riprodurre le condizioni in cui si manifesta.
-Come abbiamo visto poco fa, se l’errore dipende dai dati in input, per identificare il problema, dovrai capire quali sono i dati che lo generano; qualche volta sarà facile, ma in altri casi potrà rivelarsi estremamente complesso.<br />
-Diversi anni or sono, il Maestro Canaro dovette registrarsi su un sito Web che gli chiese anche la sua data di nascita — che, come sai, fu il 29 Febbraio del 1964        .
-<!-- Si trattava di Paypal e questo non è il solo errore che ho rilevato -->
-La maschera di inserimento nuovo utente non gli diede problemi, ma la maschera di modifica dati, evidentemente scritta da un programmatore meno esperto, non gli permise di aggiornarli perché, a suo dire, la data di nascita era sbagliata.
-Ciò vuol dire che il sistema utilizzava due funzioni distinte per il controllo della data di nascita, una nella funzione di inserimento e un’altra nella funzione di modifica, e che almeno la funzione utilizzata in modifica non era una funzione standard, ma codice scritto <em>ad-hoc</em>.<br />
-Entrambe queste scelte sono errori: a una determinata azione sui dati deve corrispondere una singola funzione.
-Fare la stessa operazione con parti di codice distinte è sbagliato, sia perché aumenta la probabilità di commettere degli errori, sia perché rallenta i tempi di identificazione dell’errore in fase di debug.
-È sbagliato anche riscrivere delle funzioni che già esistono: <a href="http://cr.yp.to/djb.html" target="qmail">D. J. Bernstein</a> lo fece, con le funzioni di I/O di qmail, ma le sue funzioni erano migliori e più sicure delle funzioni della libreria standard.   <br />
-A questi due errori di programmazione — inammissibili, in un sito che gestisca transazioni economiche — si aggiunge una profonda sciatteria della fase di debug del codice, perché la corretta gestione dei casi particolari, come gli anni bisestili, va sempre verificata.
-Quando verifichi il funzionamento di un programma, non puoi limitarti a controllare che faccia ciò che deve fare, ma devi anche assicurarti che non faccia ciò che non deve fare. 
-In particolare, devi verificare che si comporti correttamente se:</p>
+<pre><code>return (argc &lt; 2) ? -10 : 0;
+</code></pre>
 
-<ul>
-  <li>gli fornisci i dati di input corretti;</li>
-  <li>non gli fornisci alcun dato;</li>
-  <li>gli fornisci dati errati;</li>
-  <li>gli fornisci dati in eccesso.</li>
-</ul>
+<p>per capire cosa faccia dovrai andare a leggere la documentazione del programma, posto che ce ne sia una.<br />
+<em>Più complesso da modificare</em> perché l’utilizzo di costanti al posto di valori <em>hard-coded</em> permette di cambiare il valore di una costante agendo in un solo punto:</p>
 
-<p>Quindi, se l’input è una data, dovrai verificare che il tuo sistema gestisca correttamente sia il valore <code>29-02-1964</code> che il valore <code>29-02-1965</code>; se l’input è una stringa di testo, dovrai accertarti che il sistema gestisca correttamente anche il caso in cui riceva più caratteri del previsto e che elimini eventuali caratteri di spazio all’inizio o alla fine del testo, a meno che questo non sia un requisito funzionale.</p>
+<pre><code>#define ERR_NONE  1 
+</code></pre>
+
+<p>Se non avessimo usato una costante, per ottenere lo stesso risultato avremmo dovuto modificare tre istruzioni distinte:</p>
+
+<pre><code>return (argc &lt; 2) ? ERR_FILE_NONE : ERR_NONE;
+
+...
+
+return ERR_NONE;
+
+...
+
+int esito = ERR_NONE;
+</code></pre>
+
+<p>In un programma più complesso del nostro esempio, le modifiche sarebbero state sicuramente di più e più difficili da identificare; inoltre, se ce ne fossimo dimenticata una (probabile), avremmo introdotto un errore nel sistema.<br />
+Le costanti <em>hard-coded</em> possono essere utilizzate solo nella prima fase dello sviluppo del programma, quando non sei ancora sicuro che la strada che hai scelto sia quella giusta. 
+In questa fase è ammissibile che tu faccia delle prove inserendo dei valori direttamente nel codice, ma quando l’algoritmo sarà ragionevolmente stabile, dovrai convertire tutti i valori in costanti.</p>
 
 <!--
 
