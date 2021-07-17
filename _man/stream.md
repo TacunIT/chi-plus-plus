@@ -8,7 +8,12 @@ permalink:  /man/stream
 quote:      "Non puoi immergere i tuoi byte due volte nello stesso stream"
 ---
 
-Oggi ti parlerò della componente più importante del C++, ovvero gli *stream*.
+Oggi ti parlerò degli *stream* che, com'è noto, sono la componente più importante del C++.
+
+Il C++ eredita dal C l’assenza di parole chiave per la gestione dell’I/O.
+Al posto di istruzioni come la `print` del BASIC, utilizza delle librerie di classi e funzioni che permettono di convertire in testo stampabile gli oggetti gestiti dal programma o di convertire degli elementi testuali in oggetti.
+È, questa, una scelta inevitabile: il C++ non deve gestire solo stringhe e numeri, come il BASIC, ma anche interi, numeri in virgola mobile, puntatori e soprattutto i tipi di dato definiti dall’utente, per i quali non sarebbe possibile definire un comportamento standard e che quindi dovrebbero essere trattati in maniera differente dai dati primitivi, con tanti saluti alla coerenza del linguaggio.
+
 
 ```
 {% include_relative src/stream-eccezioni.cpp %}
@@ -16,6 +21,670 @@ Oggi ti parlerò della componente più importante del C++, ovvero gli *stream*.
 
 <!--
 
-Il primo parametro mi serve per giustificare l'errore nell'indice dell'array quando lo stesso codice sarà usato per il capitolo sul debug.
+ Quest’ultima considerazione dovrebbe farvi capire perché, per quanto il C++ possano sfruttare le librerie di funzioni utilizzate dal C (stdlib ecc.), sia stato necessario dotarlo di una propria libreria di I/O, ba­sata sulla gerarchia delle classi stream.
+Le operazioni che si possono eseguire con gli stream sono praticamente le stesse pos­sibili con le funzioni della libreria stdio.lib di C, (ed anche se hanno nomi differenti, gli elementi che intervengono nella gestione dei dati sono sempre dei buffer e dei files) ma con in più la possibilità di estendere l’azione delle funzioni anche ai tipi definiti dall’utente. Un esempio di questa capacità del linguaggio abbiamo avuto modo di vederla quando si è parlato di sovrapposizione degli operatori:
+
+ostream & operator << (ostream & os, Frazione f)
+{
+	os << '(' << f.num << ',' << f.den << ')' ;
+	return os ;
+}
+Questo codice "insegna" all’operatore << come comportarsi per visualizzare un oggetto di tipo Punto. Lo stesso si può fare (e lo si è fatto) per la classe Pixel e per qualsiasi altro tipo definito dall’utente. È la sintassi del linguaggio che si adatta alle esigenze del programmatore, e non viceversa. Il prezzo da pagare per questa duttilità è come sempre (tanto per non smentire quanto affermato nel paragrafo 1.2) un aumento della complessità del linguaggio e di conseguenza, un aumento delle cose da imparare, ma i benefici che se ne possono trarre valgono sicuramente la pena di leggersi qualche pagina in più.
+Anche perché qui non siamo a scuola, con la Maestra che ci interroga per vedere se ab­biamo imparato la lezione a memoria, ma di fronte ad un computer con un help in linea fatto apposta per facilitarci la vita. Se non ci ricordiamo qualcosa () non dobbiamo che spingere il tasto F1 (o shift-F1, o CNTRL-F1, a seconda dei casi e dei compilatori) e chiedere informazioni: l’importante è sapere cosa cercare e dove.
+Alcuni concetti chiave per la comprensione degli stream sono:
+	uno stream rappresenta idealmente un flusso di dati che vanno da una sorgente ad una destinazione;
+	tanto la sorgente che la destinazione possono essere indifferentemente un buffer di memoria, una stringa o un file; 
+	l’output su stream verso una qualsiasi destinazione, viene definito scrit­tura o inserimento e si effettua per mezzo dell’operatore <<; 
+	con lettura o estrazione, invece, si intende l’operazione di input da una sorgente, effettuata dall’operatore >>.
+La libreria iostream di C++ gestisce le operazioni di I/O per mezzo di oggetti derivati da due classi base:
+	streambuf;
+	ios. 
+5.1.1	Classe streambuf
+Gli oggetti della classe streambuf sono il corrispettivo C++ dei buffer C e forniscono metodi per la gestione logica dei dati, fungendo da interfaccia verso i dispositivi fisici. 
+Tutti gli oggetti derivati dalla classe ios posseggono un puntatore ad un oggetto di tipo streambuf, da utilizzare come buffer per eseguire delle operazioni di I/O formattato.
+Lo schema di ereditarietà della classe streambuf è il seguente:
+
+5.1.2	Classe ios
+La classe ios fornisce metodi  per la verifica dello stato interno dello stream e contiene un puntatore all’oggetto di classe streambuf associato. Essendo una classe astratta, ios non può essere utilizzata direttamente per la creazione di oggetti, ma costituisce la base per classi specializzate nelle operazioni di I/O su file. 
+Le prime è più importanti de­rivazioni di ios sono:
+
+La classe istream è specializzata nell’input da file; ostream nell’output mentre la classe iostream, che eredita da entrambe, può gestire sia l’input che l’output.
+class  istream : virtual public ios {...};
+class  ostream : virtual public ios {...};
+class iostream : public istream, public ostream {...};
+Queste sono le dichiarazioni delle prime tre classi derivate da ios; come vedete, tanto nella dichiarazione di istream che in quella di ostream, la classe base viene dichiarata come virtuale, in modo da evitare duplicazione di informazioni nel caso di ereditarietà multiple. 
+5.2	stream c++ standard
+Vi ricordate quand’è stata la prima volta che abbiamo parlato di I/O su stream? Eravamo nel primo capitolo e l’istruzione interessata era:
+cout << "Ciao, mondo!" << "\n" 
+Quel cout, si era detto, era il corrispettivo C++ dello stdout del C. Vero, ma adesso possiamo essere un po’ più precisi. Un programma C, al suo avvio, apre automaticamente cinque stream standard stdin, stdout, stderr, stdaux e stdprn. Anche C++ procede all’apertura di quattro stream standard: uno per l’input, derivato dalla classe istream e tre per l’output, derivati dalla classe ostream:
+Stream standard C e C++
+
+La dichiarazione dei quattro stream sopra elencati non è necessaria (infatti non c’è traccia di dichiarazioni nell’esempio del capitolo 1, che pure funziona senza errori) perché viene effettuata nel file header iostream.h che dev’essere quindi incluso in tutti i programmi che facciano uso di stream.
+5.3	output con le classi stream
+ostream& ostream::operator << (char*) ;
+Questa è la dichiarazione dell’operatore << per la classe ostream che trovate in ios­tream.h. La sintassi stabilisce che l’operatore riceva in input un puntatore ad una stringa di caratteri e restituisca un riferimento ad un oggetto di tipo ostream: vediamo come questo si applichi in un caso ormai noto:
+cout << "Ciao, mondo!" << "\n" 
+  a 	b	      c	 	   d	 e	
+Da sinistra a destra abbiamo :
+a	lo stream di output standard di C++ (un oggetto di tipo ostream);
+b	l’operatore di inserimento;
+c	una stringa di caratteri;
+d	un altro operatore di inserimento;
+e	una stringa di caratteri.
+In questa istruzione, il primo operatore (b) riceve in input una stringa di caratteri (c) e restituisce un riferimento allo stream di output cin, permettendoci, in questo modo, di aggiungergli in cascata una nuova istruzione di inserimento (d) seguita da un’altra stringa di caratteri (e). Se così non fosse, la stessa istruzione dovrebbe essere scritta:
+cout << "Ciao, mondo!" ;
+cout << "\n" ;
+il che, in caso di istruzioni più complesse potrebbe rivelarsi una bella seccatura. Bene: tutto ciò nel caso l’oggetto da inserire nello stream sia una stringa, ma se si trat­tasse di un numero?
+
+#include "iostream.h"
+
+void main()
+{
+ int c = 5 ;
+
+	cout << "Questo è il capitolo n." << c << "\n" ;
+};
+Pregi del polimorfismo: l’output dei diversi tipi di dato avviene con la medesima sintassi; sarà poi, come al solito, compito del compilatore verificare, basandosi sul tipo degli og­getti che volta per volta intervengono nell’istruzione, quale sia la versione della funzione operatore da applicare. Nell’esempio precedente, viene prima utilizzata la versione dell’operatore << per l’inserimanto delle stringhe, poi quella per l’output degli interi, la cui dichiarazione è:
+ostream& ostream::operator << (int) ;
+infine, viene richiamata di nuovo la versione per stringhe per l’output del carattere di newline. È importante ricordare che un singolo operatore può inserire nello stream solo un oggetto, quindi i diversi oggetti che vanno inseriti nello stream debbono essere sepa­rati da altrettanti operatori di inserimento. Un’istruzione come la seguente, per esempio, darebbe luogo ad un errore di compilazione:
+
+cout << "Questo è il capitolo n." c "\n" ;	// ERRORE!
+Inoltre, l’output su stream non prevede che fra un oggetto e l’altro sia inserito nessuno spazio, quindi un simile frammento di codice:
+
+int a = 1, b = 2, c = 3 ;
+
+cout <<a<<b<<c <<"\n" ;
+cout << a << b <<	c << "\n";
+cout <<	a	<<	b	<<	c	<< "\n";
+darebbe luogo al seguente output:
+
+123
+123
+123
+Se volete avere un output separato per le diverse variabili, dovete provvedere personal­mente alla divisione con caratteri di spaziatura, tabulazioni ecc.. 
+Applicata al medesimo set di variabili, l’ istruzione:
+
+cout << a << ", " << b << ", " << c ;
+produce il seguente ouput:
+1, 2, 3
+Le stesse regole e la stessa, identica sintassi possono essere utilizzate per tutti i tipi di dato che la classe ostream di default riconosce e che sono riportati, insieme con il loro formato di output, nella tabella seguente:
+Formattazione di default dell’output
+
+Stesse regole e stessa sintassi, inoltre, possono venir usate per tutti i tipi di dato definiti dall’utente una volta che sia stata definita una sovrapposizione per la classe dell’operatore di output,
+5.4	input con le classi stream
+L’input da stream, o estrazione, avviene per mezzo dell’operatore >>. L’oggetto alla sin­istra dell’operatore deve essere di tipo istream, mentre la tabella qui sotto indica i tipi primitivi che possono comparire alla sua destra:
+Tipi di dato per cui è ridefinito il comportamento dell’operatore >>
+
+Noterete, rispetto alla tabella della classe ostream, che in questo caso non è stato de­finito un comportamento per i puntatori a void, e questo per la semplice ragione che, anche se poteste fornire un puntatore, a cosa punterebbe?
+Una prima annotazione da fare, riguardo l’input per mezzo delle classi stream, è che non è possibile, in questo caso, utilizzare dei suffissi. Quindi, se l è un long che vale 123, un programma che contenga le seguenti istruzioni:
+long l ;
+cin >> l ;
+si aspetta che voi battiate 123 e non 123L. Attenzione, poi ad una caratteristica sinistra degli operatori << e >>: la loro precedenza è minore di quasi tutti gli altri operatori, il che vi consente di scrivere delle istruzioni come questa:
+cout << "Due più due fa: " << 2 + 2 << '\n' ;
+Sfortunatamente, però, gli operatori logici di AND |, di OR inclusivo & e di XOR esclusivo ^, hanno una precedenza minore degli operatori di shift su bit << e >>, e se non vengono isolate tra parentesi, le operazioni che li coinvolgono possono essere causa di errori. Per esempio, in un’istruzione come la seguente, l’ampersand verrebbe interpretato come un riferimento ad un oggetto, con conseguenze tutt’altro che piacevoli:
+cout << "Il valore è: " << 2 & 2 << '\n' ;	// ERRORE! 
+la sintassi corretta è invece:
+cout << "Il valore è: " << (2 & 2) << '\n' ;	// OK
+Altra cosa da dire è che le operazioni di lettura con l’operatore >> si arrestano al primo carattere di spaziatura e perciò l’output del codice:
+
+#include "iostream.h"
+
+void main()
+{
+ char * stringa[30] ;
+	
+	cin >> stringa ;		// legge la stringa 
+	
+	cout << stringa ;		// la visualizza
+};
+non riprodurrà tutta la stringa che voi passerete in input, ma solo i caratteri precedenti uno spazio bianco, ovvero, se per caso la stringa fosse.
+Penso, quindi sono.
+l’output che otterreste sarebbe:
+Penso,
+un po’ poco, purtroppo, ma così vanno le cose con gli operatori standard di inserimento e lettura, il cui comportamento di default prevede anche le seguenti convenzioni di for­mattazione:
+	il formato di conversione della base è decimale. Nel caso questo set­taggio venga modificato, resterà così fino a nuovo ordine;
+	il carattere di riempimento è lo spazio. Come avviene per le modifiche al formato di conversione, anche qui le modifiche sono mantenute fino a che una nuova istruzione non torni a modificarle;
+	la precisione delle cifre a virgola mobile è la stessa utilizzata da print­f(), con arrotondamento della sesta cifra decimale (anche questo set­taggio è permanente);
+	la larghezza del campo ha valore di default 0, il che significa che lo stream di output utilizzerà tutti i caratteri necessari alla visualizzazione dell’intero valore o stringa. La modifica di questo settaggio non è per­manente, quindi ad ogni operazione di output, la larghezza del campo verrà riportata a 0, quale che fosse il suo precedente valore.
+Le gestione standard dell I/O della libreria iostream va bene per la maggior parte dei casi comuni di input ed output, ma si possono verificare delle situazioni particolari (come quella vista precedentemente) in cui potremmo aver bisogno di leggere o scrivere un’intera stringa di caratteri, compresi i caratteri di spaziatura, o di visualizzare un nu­mero in una base o una precisione differenti da quelle di default. Entrambe sono esigenze legittime ed anche abbastanza frequenti, che non possiamo però gestire con gli operatori di estrazione ed inserimento, ma per mezzo di apposite funzioni membro che la libreria iostream fornisce. Di seguito illustreremo i metodi di lettura e scrittura su stream che permettono la gestione di stringhe contenenti caratteri di spaziatura o dati binari, nel prossimo capitolo ci occuperemo invece dei diversi metodi di formattazione dell’input e dell’output.
+5.5	funzioni di i/o a basso livello
+Le funzioni membro della classe ios che permettono una gestione a basso livello delle operazioni di input ed output sono:
+Funzioni per l’I/O di basso livello con gli stream
+
+Il loro funzionamento è il seguente:
+int get () ;
+legge un singolo carattere (indifferentemente binario o di tipo testo) dallo stream di in­put e ne ritorna il valore. Se viene utilizzato con cin, attende la pressione del tasto Return prima di valutare il carattere e, contrariamente a quanto avviene con gli stream associati con files, legge la sequenza di caratteri Control-C come un break di sistema.
+istream &  get (char & ) ;
+istream &  get (unsigned char & ) ;
+Entrambe queste funzioni leggono un carattere di tipo binario o testo dallo stream e lo scrivono all’indirizzo passato come parametro.
+istream &  get (char *, int len, char = '\n') ;
+istream &  get (unsigned char *, int len, char = '\n') ;
+Leggono caratteri dallo stream di input fino a che non si verifica una di queste condizi­oni:
+	sono stati letti (len-1) caratteri;
+	è stato letto il carattere delimitatore (specificato dal terzo parametro);
+	è stato letto il carattere di fine file EOF.
+Nella stringa di output viene sempre aggiunto il carattere NULL finale. 
+istream &  getline (char* , int, char = '\n') ;
+istream &  getline (unsigned char* , int, char = '\n') ;
+Il funzionamento di queste funzioni è simile al precedente solo che in questo caso il carattere terminatore viene letto ed inserito nella stringa prima del carattere NULL finale.
+istream &  read (char * , int len) ;
+istream &  read (unsigned char * , int len) ;
+Similmente alla funzione get(), legge da uno stream len caratteri di testo binari, e li copia in un buffer. Contrariamente a quanto fa la funzione get(), non riconosce nessun carattere terminatore e non aggiunge caratteri NULL al termine del buffer.
+int  peek () ;
+Legge il carattere successivo dello streambuf associato, senza estrarlo. Per quanto riguarda l’utilizzo con stream associati a file, non ci sono problemi, ma consideriamo il seguente esempio:
+PEEKTEST.CPP - Comportamento della funzione Peek()
+/////////////////////////////////////////////////////////////
+//
+//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
+//
+//	PEEKTEST.CPP - Comportamento della funzione Peek()
+//
+/////////////////////////////////////////////////////////////
+#include <iostream.h>
+/////////////////////////////////////////////////////////////
+void main()
+{
+ char c ;	
+
+	cin >> c ;							 //001
+	cout << "Il primo carattere è: " << c  << '\n' ;	 //002
+
+	c = cin.peek() ;						 //003
+	cout << "Il prossimo sarà: " << c  << '\n' ; 	 //004
+}
+/////////////////////////////////////////////////////////////
+001  Legge un carattere dallo stream di input.
+002  Lo visualizza.
+003  Legge il carettere successivo dallo streambuf assegnandolo alla variabile c.
+004  Visualizza il valore di c.
+Vi chiederete (spero) come sia possibile che peek() possa leggere un carattere da cin se l’istruzione 001 prevede l’input di un solo carattere. Il fatto è che qualsiasi operazione di input dallo standard stream cin legge tutti i caratteri inseriti dall’utente prima della pressione del tasto Return, li immagazzina nello streambuf associato per estrarre poi solo i caratteri richiesti. Se in risposta all’istruzione 001 avessimo quindi dato al pro­gramma precedente un input del tipo:
+Test
+nello streambuf associato a cin sarebbero finiti tutti e quattro i caratteri digitati, ma il programma, fedele ai suoi ordini, avrebbe considerato solo il primo, e l’istruzione 002 avrebbe prodotto questo output:
+Il primo carattere è: T
+ovviamente, l’output dell’istruzione 004 sarebbe stato:
+Il prossimo sarà: e
+Come tutte le altre funzioni precedentemente esaminate, anche peek() gestisce indiffer­entemente caratteri di tipo testo o binari, quindi nel caso l’imput fosse stato di un solo carattere, l’istruzione 004 avrebbe letto e visualizzato il carattere di newline '\n'.
+istream &  putback (char) ;
+Questa funzione permette di reinserire un carattere, precedentemente letto, in uno stream. Se invece il carattere lo volete deliberatamente ignorare, allora la prossima funzi­one fa al caso vostro.
+istream &  ignore ( int dim = 1, int = EOF) ;
+Permette di evitare la lettura di dim caratteri. Si interrompe se viene letto il carattere de­finito come terminatore (di default EOF). 
+ostream &  put (char) ;
+È la versione speculare dell’istruzione get(char) e permette di inserire un carattere in uno stream. Gestisce testo o dati binari e si può utilizzare tanto con gli stream standard che con quelli associati a file.
+ostream &  write (const char* , int n) ;
+ostream &  write (const unsigned char* , int n) ;
+Legge n caratteri dal buffer passato come parametro e li scrive nello stream di output. Attenzione perché, come del resto read(), write() non fa nulla di più e se volete un terminatore alla fine del buffer ce lo dovete mettere voi.
+5.6	gestione degli errori con la classe ios
+Abbiamo appena visto che esistono delle funzioni che consentono di leggere o scrivere un numero predeterminato di caratteri in uno stream:
+char buffer[256] ;
+is.read (buffer, 256) ;
+Le ipotesi considerate prima, però, prevedevano situazioni ideali, in cui ciò che una parte richiedeva era esattamente quello che l’altra parte aveva da offrire, ma cosa succederebbe se per una qualsiasi ragione la funzione read() dell’esempio non riuscisse a leggere tutti i 256 caratteri previsti? Più in generale, possiamo sapere se una funzione o un’operazione di inserimento o estrazione ha avuto successo o è fallita? La risposta è sì, lo possiamo fare grazie ad alcune funzioni che ritornano o settano il valore delle variabile di stato dello stream.
+Quando un’operazione di lettura o scrittura su stream fallisce, un bit di un dato membro della classe ios, chiamato ios::state, assume un valore differente da zero quindi, esaminando il valore di state, possiamo risalire al tipo di errore occorso. I valori che state può assumere sono elencati in un’enumerazione propria della classe ios, chiamata ios::io_state:
+
+class ios
+{
+ protected:
+			...
+			int state ;		// variabile di stato
+			...
+ public:
+			...
+
+ enum io_state
+ {
+  goodbit = 0x00 ; // nessun errore
+  eofbit  = 0x01 ; // raggiunta la fine del file
+  failbit = 0x02 ; // l'ultima operazione di I/O è fallita
+  badbit  = 0x04 ; // l'ultima operazione non era valida
+  hardfail = 0x08; // errore irrecuperabile
+ }
+		...
+} ;
+Come vedete da quest’estratto della dichiarazione della classe ios, l’enumerazione io_state è pubblica, e quindi potete avere dei riferimenti ad essa nel vostro codice, mentre la variabile di stato è dichiarata come membro protected della classe, e quindi qualunque tentativo di accedere ad essa direttamente causerà un errore di compilazione:
+int flagEOF  = ios::eofbit ;	// OK, è pubblica
+int varStato = ios::status ;	// ERRORE! È privata
+Questo è un tipico esempio di protezione dei dati membro: dichiarando state come suo membro protected, la classe ios evita che accessi arbitrari possano pregiudicarne l’affidabilità. Eventuali valutazioni e modifiche della variabile sono permesse a funzioni esterne alla classe (o alle sue discendenti) solo attraverso alcune funzioni pubbliche di interfaccia che comprendono anche la sovrapposizione di un operatore ed una funzione di conversione:
+Funzioni di interfaccia per la verifica dello stato dello stream
+
+La ridefinizione dei due operatori di cast a void e di NOT logico sono estremamente utili perché permettono di utilizzare l’identificatore di un oggetto di classe derivata da ios in una istruzione booleana per verificare il corretto svolgimento delle operazioni di inseri­mento o estrazione:
+
+while( is.get(c) )	
+{
+	cout.put( c ) ;						
+}
+Il prossimo esempio mostra le possibilità di verifica e correzione degli errori di I/O con le classi stream:
+IOERROR.CPP - Verifica e correzione degli errori di I/O su stream
+/////////////////////////////////////////////////////////////
+//
+//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
+//
+//	IOERROR.CPP - Verifica e correzione degli errori di I/O
+//
+/////////////////////////////////////////////////////////////
+#include <fstream.h>
+/////////////////////////////////////////////////////////////
+void main()
+{
+ char c ;
+ ifstream is("test.dat") ;                            // 001
+
+	while(is)                                        // 002
+	{
+		is >> c ;                                       // 003
+
+		if( ! is.good() )                               // 004
+		{
+			if( is.eof())
+				cerr << "\nRaggiunta la fine del file" ;	
+
+			if( is.fail())
+				cerr << "\nErrore irrecuperabile" ;
+
+			if( is.bad() )                            // 005
+			{
+				cerr << "\nOperazione non valida" ;
+				is.clear() ;                        // 006
+			}
+		}
+		else	cout << c ;	                              // 007
+	}
+}
+/////////////////////////////////////////////////////////////
+001  Apre in lettura uno stream associandolo al file  test.dat (fidatevi, per ora...).
+002  Ripete il ciclo finché non si verifica un errore.
+003  Legge un carattere dallo stream di input.
+004  Se ci sono problemi, verifica la gravità dell’errore.
+005  Se si tratta di un errore lieve.
+006  Resetta la variabile ios::state a 0.
+007  Se non ci sono errori di input, scrive il carattere sullo standard output.
+TEST.DAT - File per la verifica degli errori di I/O su stream
+123
+1.234
+abcdefg
+Così com’e, il programma non va in errore che a fine file. Sostituendo il tipo della vari­abile c da char a double, va in errore alla terza linea, definendo c come int, l’errore arriva al numero decimale. In tutti e tre i casi l’interruzione del programma è causata dalla linea 002 che, andando a controllare lo stato dello stream, lo troverà alterato dall’operazione fallita.
+5.7	formattazione dei dati con le classi stream
+Abbiamo visto precedentemente che le classi stream operano una formattazione di de­fault sui diversi tipi di dato. Possono esserci dei casi, però, in cui questo comportamento predefinito risulta insufficiente o inadeguato alle nostre necessità. Potremmo voler visu­alizzare un intero in formato esadecimale o un carattere come intero decimale, non ci sarebbe nulla di strano, ma la formattazione standard delle classi stream non ce lo per­metterebbe.
+In compenso, però, la classe ios possiede dei membri dati di tipo protected il cui valore definisce la formattazione delle funzioni di I/O. Modificando il valore di questi dati mem­bro si modifica di conseguenza il comportamento dello stream, adattandolo alle necessità del caso. I dati membro di ios che determinano con il loro valore le caratteristiche dell’ I/O sono:
+	x_fill : intero, definisce il carattere di riempimento per l’output;
+	x_precision: intero, definisce la precisione in virgola mobile per l’output;
+	x_width: intero, definisce la dimensione del campo in input;
+In quanto membri protetti, questi valori non sono modificabili direttamente da un oggetto di classe derivata (ostream, istream ecc.). Qualunque modifica o verifica di stato va fatta per mezzo di una delle apposite funzioni di interfaccia elencate di seguito: 
+Funzioni di interfaccia per la modifica della formattazione
+
+Per mezzo di queste funzioni è possibile modificare il formato di conversione della base, il carattere di riempimento, la precisione delle cifre decimali e la larghezza del campo. Come abbiamo visto, le prime tre modifiche sono permanenti (ovvero, se si modifica il formato di output di uno stream, questo resterà nel nuovo stato fino alla prossima istruzione di modifica), mentre la quarta no: ad ogni operazione di output il valore della lunghezza del campo viene resettato a zero.
+Vediamole all’opera tutte insieme queste funzioni nel prossimo esempio che mostra anche come il settaggio dell’ampiezza del campo non sia permanente:
+FORMOUT.CPP - Modifica della formattazione dell’ouput
+/////////////////////////////////////////////////////////////
+//
+//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
+//
+//	FORMOUT.CPP - Modifica dellla formattazione dell'output
+//
+/////////////////////////////////////////////////////////////
+#include <iostream.h>
+/////////////////////////////////////////////////////////////
+void main()
+{
+ double d = 123.456789 ;
+
+  cout << "\nPrecisione = "<< cout.precision() ; 	// 001
+  cout << "\nRiempimento = '"<< cout.fill() << "'";	// 001
+  cout << "\nLarghezza = " << cout.width() ;		// 001
+
+  cout << "\nVisualizzazione = "<< d ;			// 002
+  cout << "\nCon i nuovi settaggi = " ;			// 003
+  cout.precision(3) ;						// 004
+  cout.fill('#') ;						// 004
+  cout.width(10) ;						// 004
+  cout << d ;							// 005
+
+ cout << "\nVia precision() e fill() = " ;
+ cout.width(10) ;							// 006
+ cout << d ;							// 007
+
+ cout << "\nVia anche width() = " << d ;			// 008
+
+ cout << "\nPrecisione = " << cout.precision() ;	// 009
+ cout << "\nRiempimento = '"<< cout.fill() << "'" ;	// 009
+ cout << "\nLarghezza = " << cout.width() ;		// 009
+};
+/////////////////////////////////////////////////////////////
+001  Visualizza i settaggi di default.
+002  Visualizza la variabile con i settaggi di default.
+003  Vediamo se indovinate perché questa stringa va visualizzata separatamente...
+004  Modifica i settaggi di default.
+005  Visualizza la variabile con i nuovi settaggi.
+006  Ripete solo la modifica della dimensione del campo.
+007  Visualizza la variabile con i nuovi settaggi.
+008  Visualizza la variabile senza effettuare settaggi.
+009  Visualizza il valore delle variabili dopo i settaggi.
+L’ouput di questo esempio è:
+
+Precisione = 6
+Riempimento = ' '
+Larghezza = 0
+Visualizzazione = 123.456789
+Con i nuovi settaggi = ###123.457
+Via precision() e fill() = ###123.457
+Via anche width() = 123.457
+Precisione = 3
+Riempimento = '#'
+Larghezza = 0
+Come potrete vedere, le modifiche apportate con precision() e fill() rimangono at­tive anche dopo una prima operazione di output, mentre quelle conseguenti a width() no. Per questa ragione, le intestazioni delle righe 005 e 007 sono visualizzate prima delle modifiche. Se così non fosse stato, e cioè se la riga 005 fosse stata:
+cout << "\nCon i nuovi settaggi = " << d ;		// 005
+l’operazione di output della stringa avrebbe resettato il valore di x_width e l’output sarebbe quindi stato:
+
+Con i nuovi settaggi = 123.457
+5.8	modifica dei flags di formattazione
+Ma la larghezza del campo, la precisione ed il carattere di riempimento non sono le uniche formattazioni modificabili. Un altro modo di modificare le convenzioni di format­tazione standard è quello di alterare la variabile membro x_flags che contiene i flags per la formattazione. 
+La dichiarazione della variabile è:
+
+class ios
+{
+			...
+ protected:
+			...
+			long x_flags ;
+			...
+Anche la variabile x_flags, come x_state è un membro protected di ios, quindi anche in questo caso non sarà possibile nessuna modifica diretta da parte di funzioni esterne alla classe, ma solo quelle previste e concesse dalle funzio­ni di interfaccia:
+long ios::flags() 
+long ios::flags(long flags)
+long ios::setf(long flags)
+long ios::setf(long group, long bits)
+long ios::unsetf(long flags)
+I flags che vengono utilizzati con queste funzioni sono definiti in un’enumerazione prop­ria della classe ios:
+
+enum    
+{
+ skipws    	= 0x0001, 
+ left      	= 0x0002,
+ right     	= 0x0004,
+ internal  	= 0x0008,
+ dec 		= 0x0010,
+ oct 		= 0x0020,
+ hex 		= 0x0040,
+ showbase  	= 0x0080,
+ showpoint 	= 0x0100,
+ uppercase 	= 0x0200,
+ showpos   	= 0x0400,
+ scientific	= 0x0800,
+ fixed     	= 0x1000,
+ unitbuf   	= 0x2000,
+ stdio     	= 0x4000 
+};
+La tabella seguente mostra il modo in cui riferirsi ai diversi flag nei programmi e le con­seguenze della loro alterazione sul comportamento della classe:
+Funzioni di interfaccia per la modifica della variabile x_flags
+
+Le costanti che invece definiscono i campi di bit su cui operare sono:
+Costanti per la modifica della variabile x_flags
+
+Vediamo ora in dettaglio il funzionamento delle diverse funzioni:
+long ios::flags() 
+long ios::flags(long flags)
+La prima versione della funzione flags() è innocua: semplicemente ritorna il valore della variabile x_flags; un po’ più di attenzione va rivolta invece all’utilizzo della secon­da versione, che sostituisce la variabile con quella passatale come parametro, ritornando il vecchio valore. Se per esempio voleste modificare solo il flag ios::hex senza andare ad intaccare lo stato degli altri flag di formattazione, dovreste scrivere qualcosa di simile:
+FLAGSTST.CPP - Test della funzione ios::flags()
+/////////////////////////////////////////////////////////////
+//
+//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
+//
+//	FLAGSTST.CPP - Test della funzione ios::flags()
+//
+/////////////////////////////////////////////////////////////
+#include <iostream.h>
+/////////////////////////////////////////////////////////////
+void main()
+{
+ ostream os(2) ;							  // 001
+ long flgs = os.flags() ;					  // 002
+
+ os << "flgs  : " << flgs << "\n" ;				  // 003
+ os.flags(flgs ^ ios::dec | ios::hex | ios::showbase); // 004
+ os << "flgs  : " << flgs << "\n" ;				  // 005
+ os << "flags : " << os.flags() << "\n" ;			  // 006
+
+ os.flags(0) ;							  // 007
+ os << "flags : " << os.flags() << "\n" ;			  // 008
+};
+/////////////////////////////////////////////////////////////
+001  Invia l’output a stdout.
+002  Salva il valore iniziale di x_flags.
+003  Visualizza il valore iniziale di x_flags.
+004  Esegue un’operazione di XOR esclusivo sulla variabile per annullare il bit di controllo del formato decimale, quindi, con due operazioni di OR inclusivo, setta i nuovi bit di controllo ed infine passa la variabile alla funzione flags.
+005  Visualizza il valore iniziale di x_flags con i nuovi settaggi.
+006  Visualizza il nuovo valore della variabile x_flags.
+007  Reimposta il formato standard dei flags di formattazione.
+008  Visualizza il nuovo valore della variabile x_flags.
+L’output di questo programma su una macchina MS-DOS è stato:
+
+flgs  : 1
+flgs  : 0x1
+flags : 0xd1
+flags : 0 
+long ios::setf(long flags)
+long ios::setf(long flags, long mask)
+L’utilizzo della funzione setf() è meno problematico di quello della sua collega: la prima versione modifica i bit di formattazione settati ad 1 in flags e ritorna il vecchio valore della variabile; la seconda versione in­vece assegna ai bit di formattazione specificati da mask il valore dei bit corrispondenti in flags, ritornando il vecchio valore della variabile.
+long ios::unsetf(long flags)
+Questa funzione di formattazione azzera i flag di formattazione settati ad 1 in flags e ritorna il valore precedente della variabile. La caratteristica di setf() (in tutte e due le sue ver­sioni) di impedire il settaggio di flag in opposizione, fa sì che il suo uso non sia partico­larmente frequente.
+5.9	manipolatori
+Esiste anche un altro modo per modificare la formattazione dell’I/O delle classi stream e consiste nell’utilizzare particolari funzioni membro, dette manipolatori o gestori e defi­nite nel file iomanip.h. 
+La differenza fra i manipolatori e le funzioni di gestione della formattazione che abbiamo appena esaminato, è che i manipolatori restituiscono un riferimento allo stream sul quale intervengono, quindi possono essere utilizzati in cascata, esattamente come gli operatori di inserimento ed estrazione. Attenzione, però, perché, anche se la loro sintassi è la stessa degli operatori << e >>, i manipolatori non effettuano nessun tipo di operazione di in­serimento o estrazione, bensì alterano le variabili di formattazione dello stream, modifi­candone il comportamento nel modo descritto nella tabella seguente:
+Manipolatori 
+
+Come vedete, esistono sette gestori non parametrizzati e sei che invece prevedono degli argomenti. I primi sono dichiarati nel file header iostream.h e non necessitano quindi di nessun’altra inclusione per poter essere utilizzati. I gestori parametrizzati, invece, hanno una struttura più complessa, dichiarata nel file header iomanip.h che deve essere perciò incluso in qualunque programma ne faccia uso. 
+Nel caso vi stiate chiedendo a cosa mai possa servire un altro metodo di formattazione dell’output, eccovi un breve ma significativo esempio sull’utilizzo dei manipolatori:
+MANIPTST.CPP - Utilizzo dei manipolatori
+/////////////////////////////////////////////////////////////
+//
+//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
+//
+//	MANIPTST.CPP - Utilizzo dei manipolatori
+//
+/////////////////////////////////////////////////////////////
+#include <iostream.h>
+#include <iomanip.h>						// 001
+/////////////////////////////////////////////////////////////
+void main()
+{
+ int num = 29 ;
+
+	cout.fill('#') ;						// 002
+	cout.width(8) ;						// 003
+	cout << num << "\n";					// 004
+
+	cout << setfill('.') << setw(7) << num ;		// 005
+};
+/////////////////////////////////////////////////////////////
+001  Inclusione necessaria per utilizzare le versioni parametrizzate.
+002  Definisce un carattere di riempimento.
+003  Definisce una larghezza di output.
+004  Visualizza il numero.
+005  La stessa cosa, tutta in una linea di codice.
+Come vedete, si ritorna sempre al solito discorso di rendere la vita il più facile possibile al programmatore. E per semplificarvela ancora di più (o complicarvela...), potete scriv­ere voi stessi i vostri manipolatori. 
+Questa è la dichiarazione di un manipolatore che in­serisce nello standard stream di ouput il carattere ASCII 7:
+
+ostream & beep (ostream & os)
+{
+	return os << '\a' ; 	//codice di escape per BELL
+}
+per scoprire a cosa serve, compilate ed eseguite il seguente esempio:
+MANIPDU.CPP - Manipolatori definiti dall’utente
+/////////////////////////////////////////////////////////////
+//
+//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
+//
+//	MANIPDU.CPP - Manipolatori definiti dall'utente
+//
+/////////////////////////////////////////////////////////////
+#include <iostream.h>
+#include <iomanip.h>						
+/////////////////////////////////////////////////////////////
+ostream & beep (ostream & os)
+{
+	return os << '\07' ;
+}
+/////////////////////////////////////////////////////////////
+void main()
+{
+	cout << "\nCosa succede?" << beep ;			
+}
+/////////////////////////////////////////////////////////////
+Crearsi i propri manipolatori personalizzati può essere piuttosto utile e non è un compito particolarmente complesso se si tengono a mente alcune regole di base (ed a patto che ci si ricordi di includere nel codice il file iomanip.h ):
+	i gestori hanno associatività da sinistra a destra, quindi per potere modificare la formattazione di una variabile, debbono precederla nell’istruzione di I/O:
+
+int n = 33 ;
+cout << n << hex ;	// ERRORE! non succede nulla
+cout << hex << n ;	// OK
+	il tipo di ritorno dev’essere un riferimento allo stream su cui si intervi­ene. Se state scrivendo un manipolatore che agisce su oggetti di classi derivate da istream  il tipo di ritorno dev’essere di tipo istream & ;
+	il primo argomento dev’essere un riferimento allo stream che si deve manipolare (valgono le stesse considerazioni fatte sopra) ;
+	oltre al riferimento allo stream, la funzione può avere solo un altro ar­gomento, che dev’essere obbligatoriamente o un int o un long .
+5.10 stream per I/O su file
+Come avevamo detto all’inizio del capitolo, le classi derivate da ios non permettono solo la gestione dell I/O standard da tastiera e su terminale, ma consentono di estendere i benefici dell’approccio orientato agli stream anche alla gestione dei files. 
+Concettualmente, i files possono essere assimilati a degli stream: un file da cui si leggono dei dati è un caso particolare di stream di input, un file sul quale invece i dati vengono scritti è a tutti gli effetti un caso particolare di stream di output. Allo stesso modo, la classe ifstream, che si occupa dell’input da file è una specializzazione di istream, mentre la classe ofstream, che gestisce invece l’output, è derivata da ostream. Entrambe poi ereditano da fstreambase, una classe diretta discendente di ios, che fornisce metodi comuni per la gestione dei files e che, insieme ad iostream, serve da base per fstream. Quest’ultima è una classe che, com’è facilmente prevedibile, dati i natali, permette tanto operazioni di input che di output su file. 
+Detto così è complicato come l’intreccio di una soap opera, ma forse lo schema seguente vi può aiutare un po’:
+
+In quanto derivazioni di istream ed ostream, la maggior parte delle regole che si applicano agli stream di I/O su file sono sostanzialmente le stesse che abbiamo finora esaminato per gli stream di input ed output standard, qualche differenza però c’è. 
+La prima è che, per per poter utilizzare queste classi, è necessario includere nel vostro sorgente il file fstream.h, le altre riguardano invece il modo in cui gli stream vengono dichiarati e collegati ai files. I metodi possibili sono (diamo per scontato che i nostri ven­tisei lettori siano abbastanza astuti da capire che quando ci riferiamo ad oggetti fstream intendiamo una qualunque delle tre classi per la gestione dei files):
+	dichiarare un oggetto fstream senza parametri: in questo modo otten­tete uno stream privo di connessione a file (la connessione verrà fatta in seguito per mezzo della funzione membro open());
+
+fstream unFile ;	// nessuna connessione con files
+	dichiarare un oggetto fstream con un inizializzatore intero: l’intero dev’essere ovviamente una handle ad un file DOS aperto precedente­mente ;
+
+ofstream aVideo(2); // associa lo stream con lo stdout
+	dichiarare un oggetto fstream passando come parametri al costruttore una stringa ed una modalità di apertura: la stringa conterrà il nome del file da aprire, le modalità di apertura è un elemento dell’enumerazione ios::open_mode, che esamineremo tra breve.
+
+ifstream is("a.dat", ios::in); // apre a.dat in lettura
+In quest’ultimo caso, il secondo parametro passato al costruttore dell’oggetto, ios::in, definisce il modo in cui verrà aperto il file da associare allo stream. I valori possibili, così come sono dichiarati all’interno della classe ios, sono:
+
+enum open_mode  
+{
+ in         = 0x01, // apre il file in lettura
+ out        = 0x02, // apre il file in scrittura
+ ate        = 0x04, // apre il file, quindi va alla sua fine
+ app        = 0x08, // apre il file in modalità append
+ trunc      = 0x10, // azzera il file se già esiste
+ nocreate   = 0x20, // apre solo un file già esistente
+ noreplace	= 0x40, // non apre un file esistente
+ binary     = 0x80  // apre il file in modalità binaria
+};
+Le modalità ios::in è quella di default per la classe ifstream; ios::out, è il de­fault per ofstream. Per ottenere delle modalità particolari come, ad esempio, l’apertura di un file in input binario o in input ed output di un file che non dev’essere però sovras­critto se già esistente, si possono combinare fra loro i valori di open_mode con delle operazioni di OR logico:
+fstream fs( "pippo.dat", ios::in | ios::binary);
+fstream fs( "pippo.dat", ios::in | ios::out | ios::nocreate);
+L’ultimo costruttore delle classi fstream ha anche un terzo parametro che defiisce la modalità di protezione per il file. La sua dichiarazione è infatti():
+ifstream(const char* nome, int mode, int prot=ios::openprot);
+Come noterete, però, il parametro prot ha un suo valore di default, ios::openprot, che, almeno per ora, è anche l’unico possibile, quindi potete tranquillamente ignorarlo. 
+Orbene, dopo aver tanto parlato, eccovi un esempio che mostra tutti questi nostri nuovi amici all’opera:
+FSTRTEST.CPP - Utilizzo delle classi fstream
+/////////////////////////////////////////////////////////////
+//
+//  Dal C a Windows - Carlo Simonelli & Claudio Munisso
+//
+//  FSTRTEST.CPP - Utilizzo delle classi fstream
+//
+/////////////////////////////////////////////////////////////
+#include "fstream.h"
+#include "stdlib.h"
+/////////////////////////////////////////////////////////////
+void main()
+{
+ ifstream is ;                                        // 001
+ fstream fs("iofile.dat",
+            ios::out|ios::trunc|ios::binary ) ;       // 002
+
+    if( ! fs )
+	   cerr << "\nErrore in apertura file di output" ;
+
+    is.open("fstrtest.cpp", ios::nocreate ) ;         // 003
+
+    if( ! is )
+        cerr << "\nErrore in apertura file di input" ;
+
+    while(is)                                         // 004
+    {
+	unsigned char c ;
+        
+        is.get(c) ;                                   // 005
+        if( ! is.good() )                             // 006
+        {
+		      if( is.eof())
+			    cerr << "\nRaggiunta la fine del file" ;
+
+			if( is.fail())
+                cerr << "\nErrore irrecuperabile" ;
+
+            if( is.bad() )                           // 007
+            {
+                cerr << "\nOperazione non valida" ;
+	           is.clear() ;                         // 008
+            }
+        }
+        else if( ! fs.put(c) )                       // 009
+        {
+            cerr << "\nErrore in scrittura" ;
+            cerr << " posizione " << fs.tellg() ;
+        }
+}
+/////////////////////////////////////////////////////////////
+001  Apre un file stream di input senza associarlo a nessun file.
+002  Apre un file stream generico in output binario. Se il file già esiste, lo azzera.
+003  Associa l’oggetto ifstream con un file preesistente e lo apre.
+004  Ripete il ciclo finché non ci sono errori.
+005  Legge un carattere dal file di input.
+006  Verifica che non ci siano problemi.
+007  Se si è verificato un errore lieve...
+008  ...resetta la variabile di stato.
+009  Copia il carattere nel file di output.
+Come spero l’esempio abbia chiarito, le funzioni di controllo, i manipolatori e gli opera­tori di inserimento ed estrazione, si possono applicare agli stream di I/O su file esatta­mente come avveniva per gli oggetti di classe iostream o ostream. 
+La funzione open(), utilizzata alla riga 007, è una funzione membro che serve ad aprire un file colle­gandolo con uno stream precedentemente aperto. La sua dichiarazione, che ricorda molto quella del costruttore della classe fstream, è la seguente:
+void open(char const*, int, int = filebuf::openprot) ;
+L’altra funzione membro utilizzata nell’esempio è tellg(), che fstream eredita in secondo grado della classe istream. Ritorna la posizione della prossima operazione di estrazione () e la sua dichiarazione è:
+long tellg() ;
+5.11 POsizionamento negli stream di i/o su file
+Simile alla funzione membro tellg(), è la funzione tellp(), che  fstream eredita da sua "nonna" ostream e che ritorna la posizione della prossima operazione di inseri­mento. Complementari a tellg() e tellp() sono, rispettivamente, seekg() e seekp(), che posizionano nel file ad una posizione relativa o assoluta. La tabella seguente riporta le dichiarazioni delle diverse funzioni:
+Funzioni di posizionamento su stream
+
+Le funzioni seekg(long pos) e seekp(long pos), posizionano la prossima op­erazione sullo stream all’indirizzo assoluto pos. 
+Le versioni seekg(long pos,seek_dir) e seekg(long pos, seek_dir), spostano ad una posizione che è a pos bytes dal punto definito dal secondo argomento della funzione, che è un membro dell’enumerazione  seek_dir, definita, tanto per cambiare, all’interno della classe ios:
+
+enum seek_dir 
+{ 
+	beg=0, 
+	cur=1, 
+	end=2 
+};
+L’effetto dei diversi parametri è il seguente:
+	ios::beg: sposta la prossima operazione a pos bytes dall’inizio del file associato;
+	ios::cur: si sposta a pos bytes dalla posizione corrente;
+	ios::end: si sposta a pos bytes prima della fine del file.
+5.12 SISTEMI DI FUNZIONI ITERATE
+Il prossimo esempio riunisce un po’ tutti gli elementi esaminati in questa parte del manuale. Si tratta di un visualizzatore di sistemi di funzioni iterate (da adesso in poi abbreviato in IFS) che visualizza delle immagini applicando delle trasformazioni casuali alle coordinate di un un punto. Se il valore delle coordinate iniziali è (X, Y) le coordinate Xnew, Ynew del nuovo punto saranno:
+
+Xnew = a*X + b*Y + c 
+Ynew = d*X + e*Y + f
+laddove a, b, c, d, ed f sono i valori che definiscono la trasformazione e variano a seconda del tipo di immagine che si desidera ottenere.
+
+void CreaMatrice(char * filename)
+{
+ ifstream is ;
+ double somma = 0 ;
+
+	is.open(filename) ;
+
+	if( ! is ) Erore("\nErrore in apertura file di input") ;
+	is >> Set ;
+
+	for(int r = 0 ; r < Set.Righe ; r++ )
+	{
+		for(int c = 0 ; c < 7 ; c++)
+ 			  is >> Matrice[r][c]  ;
+
+		Matrice[r][0] += somma ;
+		somma = Matrice[r][0] ;
+	}
+}
+Questa funzione legge da uno stream di input un set di parametri fissi per ogni IFS (numero delle trasformazioni, posizionamento sullo schermo, titolo ecc.), quindi riempie una matrice con i valori delle trasformazioni, che hanno questo formato:
+Set di trasformazioni
+
+I valori contenuti nella prima colonna determinano le probabilità che la trasformazione ha di essere selezionata: in questo caso 1/3 ciascuna, ma i valori possono essere differenti per far sì che una trasformazione venga applicata più frequentemente delle altre. 
+Una volta determinati i valori per le trasformazioni, non resta che applicarle casualmente alle coordinate del punto, visualizzando di volta in volta il pixel corrispondente. Ed è qui che la cosa si fa interessante: per quanto le trasformazioni vengano applicate casualmente ed indipendentemente dalle coordinate iniziali del punto, la figura generata sarà sempre la stessa. Provare per credere:
+IFS.CPP - Programma di visualizzazione per sistemi di funzioni iterate
 
 -->
