@@ -10,13 +10,13 @@
 using namespace std;
 
 /** Codici e stringhe di errrore */
+#define LOG_DEBUG         1
+#define LOG_AVVISO        2
+#define LOG_ERRORE        3
 #define ERR_NONE          0
 #define ERR_FILE_NONE   -10
 #define ERR_FILE_OPEN   -20
 #define ERR_FILE_READ   -30
-#define LOG_DEBUG         1
-#define LOG_AVVISO        2
-#define LOG_ERRORE        3
 #define S_DEBUG         "DEBUG"
 #define S_AVVISO        "AVVISO"
 #define S_ERRORE        "ERRORE"
@@ -72,7 +72,7 @@ void errore(int codice, bool exit = true)
     }
 
     /** Se ne trova una, lancia un'eccezione */
-    if(errore != NULL   ){
+    if(errore != NULL){
         Eccezione e(codice, errore);
         throw e;
     }
