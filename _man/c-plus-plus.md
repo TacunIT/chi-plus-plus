@@ -209,7 +209,7 @@ public:
 
 Il problema è che più codice scrivi, più è probabile che farai degli errori e meno facile sarà correggerli.
 Al contrario, i programmi con meno righe di codice sono più affidabili e più facili da correggere o da modificare.   
-Il C++ ci aiuta in questo senso perché permette il <id="polimorfismo">polimorfismo</i>, ovvero la capacità di una funzione o di un operatore di svolgere il proprio compito indipendentemente dal tipo di dato che deve gestire.
+Il C++ ci aiuta in questo senso perché permette il <i id="polimorfismo">polimorfismo</i>, ovvero la capacità di una funzione o di un operatore di svolgere il proprio compito indipendentemente dal tipo di dato che deve gestire.
 Se riscriviamo la classe `Monta` usando, al posto dei parametri di tipo `Cavallo`, dei parametri che hanno il tipo della classe base `Animale`:
 
 ```
