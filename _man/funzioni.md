@@ -358,7 +358,7 @@ doc.close();
 log("ho chiuso il file");
 ```
 
----
+<hr id="parametri-variabili">
 
 In una delle nostre [prime chiacchierate](/man/programmatore), ti ho detto che il Buon Programmatore, mentre scrive il codice, si chiede sempre se possa esistere sistema più efficiente di fare ciò che sta facendo.
 Oggi ne hai avuto una dimostrazione: abbiamo migliorato il primo esempio del paragrafo sulle funzioni `inline` unificando la gestione dei messaggi in un'unica funzione e poi l'abbiamo migliorato ancora rendendo quella funzione `inline`. 
