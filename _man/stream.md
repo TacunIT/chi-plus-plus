@@ -1,5 +1,5 @@
 ---
-status:     bozza
+status:     redazione
 layout:     manuale
 class:      capitolo
 no-index:   true
@@ -12,36 +12,45 @@ Oggi ti parlerò degli *stream* che, com'è noto, sono la componente più import
 
 Il C++ eredita dal C l’assenza di parole chiave per la gestione dell’I/O.
 Al posto di istruzioni come la `print` del BASIC, utilizza delle librerie di classi e funzioni che permettono di convertire in testo stampabile gli oggetti gestiti dal programma o di convertire degli elementi testuali in oggetti.
-È, questa, una scelta inevitabile: il C++ non deve gestire solo stringhe e numeri, come il BASIC, ma anche interi, numeri in virgola mobile, puntatori e soprattutto i tipi di dato definiti dall’utente, per i quali non sarebbe possibile definire un comportamento standard e che quindi dovrebbero essere trattati in maniera differente dai dati primitivi, con tanti saluti alla coerenza del linguaggio.
+Non potrebbe essere altrimenti: il C++ non deve gestire solo stringhe e numeri, come il BASIC, ma anche interi, numeri in virgola mobile, puntatori e soprattutto i tipi di dato definiti dall’utente, per i quali non sarebbe possibile definire un comportamento standard e che quindi dovrebbero essere trattati in maniera differente dai dati primitivi, con tanti saluti alla coerenza del linguaggio.
+Oltre a poter sfruttare le librerie di funzioni del *C*, il C++ ha una propria libreria di I/O, ba­sata sulla gerarchia delle classi `stream`, che permette di gestire anche i tipi di dato definiti dall'utente.
+Abbiamo visto degli esempii di questa caratteristica quando abbiamo parlato di <a href="/man/c-plus-plus#polimorfismo" class="xref">polimorfismo</a> e di <a href="/man/polimorfismo#overload-operatori" class="xref">overload degli operatori</a>:
 
+
+```
+ostream& operator << (ostream& os, const Animale& animale) {
+    os  << "Specie:" << animale.getSpecie() << "\t"
+        << "Razza:"  << animale.getRazza()  << "\t"
+        << "Sesso:"  << animale.getSesso()  
+        << endl;
+    return os;   
+}
+```
+
+Questo codice “insegna” all’operatore `<<` come comportarsi per visualizzare un oggetto di classe `Animale`. 
+Lo stesso si può fare (e lo si è fatto) per qualsiasi altro tipo definito dall’utente. 
+È la sintassi del linguaggio che si adatta alle esigenze del programmatore, e non viceversa.  
+Alcuni concetti chiave per la comprensione degli stream sono:
+
+- uno stream rappresenta un flusso di dati che vanno da una sorgente ad una destinazione;
+- tanto la sorgente che la destinazione possono essere indifferentemente un buffer di memoria, una stringa o un file; 
+- l’output su stream verso una qualsiasi destinazione, viene definito *scrit­tura* o *inserimento* e si effettua per mezzo dell’operatore `<<`; 
+- con i termini *lettura* o *estrazione*, invece, si intende l’operazione di acquisizione da una sorgente, effettuata dall’operatore `>>`.
+
+---
+
+La libreria `iostream` del C++ gestisce le operazioni di I/O per mezzo di oggetti derivati da due classi base: `streambuf` e `ios`. 
+Gli oggetti della classe <code id="streambuf">streambuf</code> sono il corrispettivo C++ dei buffer del *C* e forniscono metodi per la gestione logica dei dati, fungendo da interfaccia verso i dispositivi fisici.
+Tutti gli oggetti derivati dalla classe `ios` posseggono un puntatore ad un oggetto di tipo `streambuf`, da utilizzare come buffer per eseguire delle operazioni di I/O formattato.  
+La classe <code id="ios">ios</code> fornisce dei metodi per la verifica dello stato interno dello stream e contiene un puntatore all’oggetto di classe `streambuf` associato. 
+Essendo una classe astratta, `ios` non può essere utilizzata direttamente per la creazione di oggetti, ma costituisce la base per classi specializzate nelle operazioni di I/O su file. 
+
+<!--
 
 ```
 {% include_relative src/stream-eccezioni.cpp %}
 ```
 
-<!--
-
- Quest’ultima considerazione dovrebbe farvi capire perché, per quanto il C++ possano sfruttare le librerie di funzioni utilizzate dal C (stdlib ecc.), sia stato necessario dotarlo di una propria libreria di I/O, ba­sata sulla gerarchia delle classi stream.
-Le operazioni che si possono eseguire con gli stream sono praticamente le stesse pos­sibili con le funzioni della libreria stdio.lib di C, (ed anche se hanno nomi differenti, gli elementi che intervengono nella gestione dei dati sono sempre dei buffer e dei files) ma con in più la possibilità di estendere l’azione delle funzioni anche ai tipi definiti dall’utente. Un esempio di questa capacità del linguaggio abbiamo avuto modo di vederla quando si è parlato di sovrapposizione degli operatori:
-
-ostream & operator << (ostream & os, Frazione f)
-{
-	os << '(' << f.num << ',' << f.den << ')' ;
-	return os ;
-}
-Questo codice "insegna" all’operatore << come comportarsi per visualizzare un oggetto di tipo Punto. Lo stesso si può fare (e lo si è fatto) per la classe Pixel e per qualsiasi altro tipo definito dall’utente. È la sintassi del linguaggio che si adatta alle esigenze del programmatore, e non viceversa. Il prezzo da pagare per questa duttilità è come sempre (tanto per non smentire quanto affermato nel paragrafo 1.2) un aumento della complessità del linguaggio e di conseguenza, un aumento delle cose da imparare, ma i benefici che se ne possono trarre valgono sicuramente la pena di leggersi qualche pagina in più.
-Anche perché qui non siamo a scuola, con la Maestra che ci interroga per vedere se ab­biamo imparato la lezione a memoria, ma di fronte ad un computer con un help in linea fatto apposta per facilitarci la vita. Se non ci ricordiamo qualcosa () non dobbiamo che spingere il tasto F1 (o shift-F1, o CNTRL-F1, a seconda dei casi e dei compilatori) e chiedere informazioni: l’importante è sapere cosa cercare e dove.
-Alcuni concetti chiave per la comprensione degli stream sono:
-	uno stream rappresenta idealmente un flusso di dati che vanno da una sorgente ad una destinazione;
-	tanto la sorgente che la destinazione possono essere indifferentemente un buffer di memoria, una stringa o un file; 
-	l’output su stream verso una qualsiasi destinazione, viene definito scrit­tura o inserimento e si effettua per mezzo dell’operatore <<; 
-	con lettura o estrazione, invece, si intende l’operazione di input da una sorgente, effettuata dall’operatore >>.
-La libreria iostream di C++ gestisce le operazioni di I/O per mezzo di oggetti derivati da due classi base:
-	streambuf;
-	ios. 
-5.1.1	Classe streambuf
-Gli oggetti della classe streambuf sono il corrispettivo C++ dei buffer C e forniscono metodi per la gestione logica dei dati, fungendo da interfaccia verso i dispositivi fisici. 
-Tutti gli oggetti derivati dalla classe ios posseggono un puntatore ad un oggetto di tipo streambuf, da utilizzare come buffer per eseguire delle operazioni di I/O formattato.
 Lo schema di ereditarietà della classe streambuf è il seguente:
 
 5.1.2	Classe ios
