@@ -373,7 +373,7 @@ Immagina che il problema sia la variabile `x`: se tutto il tuo codice ha la poss
 Al contrario, se la variabile `x` può essere modificata solo alcuni punti del codice, la tua sarà una ricerca più mirata e veloce. 
 È per questo motivo, che <a href="/man/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l'elaborazione dei dati dalla gestione dell'interfaccia utente: perché in questo modo, a seconda del tipo di errore che dovesse presentarsi &mdash; di calcolo o di output &mdash; sapremo quale funzione andare a guardare.  
 Alcune caratteristiche del C++, come la <a href="/man/note.html#tipizzazione" class="xref">tipizzazione forte</a> e l'<a href="/man/note.html#incapsulamento" class="xref">incapsulamento</a> potranno esserti di aiuto in questo senso, ma non sempre saranno sufficienti a identificare il punto esatto in cui il tuo codice fa qualcosa di errato.
-In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare.  
+In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare.
 Un modo rapido per farlo è di mettere a commento tutte le chiamate nella funzione `main` ripristinandole poi a una a una, fino a che non individuerai quella in cui è contenuto l'errore:
 
 ```
@@ -391,11 +391,32 @@ int main(int argc, char** argv)
 }
 ```
 
-Se la funzione che non funziona è molto complessa ripeterai il processo, mettendo a commento le sue chiamate fino a che la quantità di codice da esaminare sarà ragionevolmente poca.
-Se invece le diverse funzioni del sistema sono strettamente correlate fra di loro e non è possibile scomporre il programma in parti isolate, puoi 
-<!--
-todo@ spiegare come suddividere il codice e come sfruttare le funzioni di log 
--->
+Se la funzione che non funziona è troppo complessa per farne un debug diretto, ripeterai il processo, mettendo a commento le sue chiamate fino a che la quantità di codice da esaminare sarà ragionevolmente poca.  
+Un altro modo in cui puoi semplificare la ricerca degli errori nel codice è l'aggiunta di messaggi che ti permettano di sapere quale operazione sta compiendo il programma:
+
+```
+int apri_file(ifstream& testo, const char* path)
+{
+#ifdef __LOG__    
+    log(LOG_DEBUG, 2, "Apro il file: ",  path);
+#endif
+
+    testo.open(path);
+    return ERR_NONE;
+} 
+```
+
+La funzione `log` è quella che abbiamo visto nella <a href="/man/funzioni.html#parametri-variabili" class="xref">lezione sulle funzioni con parametri variabili</a> e ci permette di conoscere il nome del file che viene aperto durante l'esecuzione del programma.  
+Queste funzioni di tracciatura sono utili nella fase di debug, ma rallentano l'esecuzione del programma perché richiedono l'accesso a un dispositivo esterno, sia esso lo schermo del computer o un file sul disco rigido.
+Per questo motivo, è bene avere la possibilità di disabilitarle nella versione definitiva del programma.
+In questo caso, l'abbiamo fatto inserendo la chiamata in una direttiva `ifdef` del precompilatore, in modo che venga inserita nel codice solo se è definita la costante `__LOG__`.
+
+```
+> g++ sorgente.cpp -D __LOG__ -o eseguibile
+```
+
+---
+
 Quando l'errore si manifesterà &mdash; di solito pochi minuti prima che tu debba smettere di lavorare per uscire o fare qualcos'altro &mdash; e tu dovrai identificarne la causa, il primo problema che avrai sarà di riuscire a riprodurre le condizioni in cui si manifesta.
 Come abbiamo visto poco fa, se l'errore dipende dai dati in input, per identificare il problema, dovrai capire quali sono i dati che lo generano; qualche volta sarà facile, ma in altri casi potrà rivelarsi estremamente complesso.  
 Diversi anni or sono, il Maestro Canaro dovette registrarsi su un sito Web che gli chiese anche la sua data di nascita &mdash; che, come sai, fu il 29 Febbraio del 1964        .
