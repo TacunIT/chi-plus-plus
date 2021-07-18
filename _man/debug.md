@@ -82,7 +82,6 @@ In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++
       'const std::__1::basic_string<char>' to 'std::__1::basic_string<char, std::__1::char_traits<char>,
       std::__1::allocator<char> >::value_type' (aka 'char')
         push_back(*__first);
-                  ^~~~~~~~
 /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string:2075:5: note: in instantiation of function
       template specialization 'std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>
       >::__init<std::__1::istream_iterator<std::__1::basic_string<char>, char, std::__1::char_traits<char>, long> >'
@@ -375,6 +374,25 @@ Al contrario, se la variabile `x` può essere modificata solo alcuni punti del c
 È per questo motivo, che <a href="/man/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l'elaborazione dei dati dalla gestione dell'interfaccia utente: perché in questo modo, a seconda del tipo di errore che dovesse presentarsi &mdash; di calcolo o di output &mdash; sapremo quale funzione andare a guardare.  
 Alcune caratteristiche del C++, come la <a href="/man/note.html#tipizzazione" class="xref">tipizzazione forte</a> e l'<a href="/man/note.html#incapsulamento" class="xref">incapsulamento</a> potranno esserti di aiuto in questo senso, ma non sempre saranno sufficienti a identificare il punto esatto in cui il tuo codice fa qualcosa di errato.
 In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare.  
+Un modo rapido per farlo è di mettere a commento tutte le chiamate nella funzione `main` ripristinandole poi a una a una, fino a che non individuerai quella in cui è contenuto l'errore:
+
+```
+int main(int argc, char** argv)
+{    
+    ifstream testo;        
+        
+    verifica_parametri(argc, argv);
+    apri_file(testo, argv[2]);            
+/*
+    elabora_file(testo);
+    chiudi_file(testo);
+*/    
+    return 0;
+}
+```
+
+Se la funzione che non funziona è molto complessa ripeterai il processo, mettendo a commento le sue chiamate fino a che la quantità di codice da esaminare sarà ragionevolmente poca.
+Se invece le diverse funzioni del sistema sono strettamente correlate fra di loro e non è possibile scomporre il programma in parti isolate, puoi 
 <!--
 todo@ spiegare come suddividere il codice e come sfruttare le funzioni di log 
 -->
