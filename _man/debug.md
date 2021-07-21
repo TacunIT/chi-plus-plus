@@ -367,6 +367,17 @@ Se però lavori male per lo Stato, stai peggiorando la tua vita e di tutte le pe
 
 ---
 
+Gli <b id="errori-analisi">errori di analisi</b> sono una conseguenza dell'Annosa Dicotomia.
+E dell'inesperienza dell'analista, ovviamente.  
+Come tutti gli esseri senzienti, anche i clienti possono essere vittime dell'Annosa Dicotomia fra ciò che desiderano e ciò di cui realmente hanno bisogno.
+Un cliente che espone le sue esigenze è come un bambino che dice alla madre cosa vuole mangiare.
+Lo stimolo è reale &mdash; appetito o fame che sia &mdash;, ma il modo in cui lui vorrebbe placarlo non è necessariamente il più corretto. 
+Anzi: di solito è un'aspirazione dettata da desiderii temporanei.  
+Il cliente ha diritto di comportarsi in questo modo: facciamo lo stesso anche noi quando entriamo in un negozio; come analista, però, tu non devi permettere che i tuoi giudizi siano influenzati dai desiderii del tuo cliente.
+
+
+---
+
 Parafrasando Iacopone da Todi, un programma per il debug può aiutarti a identificare il punto del tuo codice che genera un errore, ma devi prima capire quale sia la funzione da esaminare, perché fare il debug di tutto il codice di un programma, nei casi in cui questo sia possibile, sarebbe lungo ed estremamente frustrante.  
 Il modo in cui è stato scritto il codice lo renderà più o meno facile da verificare.
 Immagina che il problema sia la variabile `x`: se tutto il tuo codice ha la possibilità di modificarne il valore, potresti dover esaminare ogni singola funzione per verificare che non ne faccia un uso improprio. 
@@ -410,6 +421,7 @@ La funzione `log` è quella che abbiamo visto nella <a href="/man/funzioni.html#
 Queste funzioni di tracciatura sono utili nella fase di debug, ma rallentano l'esecuzione del programma perché richiedono l'accesso a un dispositivo esterno, sia esso lo schermo del computer o un file sul disco rigido.
 Per questo motivo, è bene avere la possibilità di disabilitarle nella versione definitiva del programma.
 In questo caso, l'abbiamo fatto inserendo la chiamata in una direttiva `ifdef` del precompilatore, in modo che venga inserita nel codice solo se è definita la costante `__LOG__`.
+Dato che si tratta di una costante che non viene utilizzata dal codice, ma che serve solo per modificare il modo in cui è compilato il programma, possiamo definire `__LOG__` direttamente nella linea di comando del compilatore:
 
 ```
 > g++ sorgente.cpp -D __LOG__ -o eseguibile
