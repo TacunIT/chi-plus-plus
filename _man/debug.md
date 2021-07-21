@@ -32,7 +32,7 @@ Il buon programmatore non può farne a meno, perché è nella sua natura; è que
 La decadenza del software è iniziata quando le stampanti laser hanno soppiantato le vecchie stampanti ad aghi.
 Il codice non si può leggere su un foglio A4: a meno che non sia un programma banale, non c'entrerà né in altezza né in larghezza.
 Il modulo in continuo di una stampante ad aghi a 136 colonne, al contrario, ti permette di stampare tutto il tuo codice e di rileggerlo con calma; correggerlo, se necessario e migliorarlo se possibile.
-È così che si facevano, le revisioni di codice, quando ancora c'erano il tempo e i soldi per fare le revisioni di codice.
+È così che si facevano le revisioni di codice, quando c'erano il tempo e i soldi per fare le revisioni di codice.
 
 <hr id="tipi-errore">
 
