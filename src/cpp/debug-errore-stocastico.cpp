@@ -1,6 +1,6 @@
 /** 
  * @file debug-errore-stocastico.cpp
- * Gestione dei Pianeti con errore evidente.
+ * Errore che si verifica solo in deterinate circostanze.
  */
  
 #include <iostream>
