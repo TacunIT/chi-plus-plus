@@ -370,27 +370,26 @@ Se però lavori male per lo Stato, stai peggiorando la tua vita e di tutte le pe
 Gli <b id="errori-analisi">errori di analisi</b> sono una conseguenza dell'Annosa Dicotomia &mdash; e dell'inesperienza dell'analista, ovviamente.  
 Come tutti gli esseri senzienti, anche i clienti possono essere vittime dell'Annosa Dicotomia fra ciò che desiderano e ciò di cui realmente hanno bisogno.
 Un cliente che espone le sue esigenze è come un bambino che dice alla madre cosa vuole mangiare.
-Lo stimolo è reale &mdash; appetito o fame che sia &mdash;, ma il modo in cui lui vorrebbe placarlo non è necessariamente il più corretto. 
-Anzi, di solito è un'aspirazione dettata da desiderii transeunti indotti dal callido servitore dell'Entropia: il Marketing.  
+Lo stimolo è reale &mdash; appetito o fame che sia &mdash;, ma il modo in cui lui vorrebbe placarlo non è necessariamente il più corretto; anzi: di solito è un desiderio indotto dal callido servitore dell'Entropia: il Marketing.  
 Il cliente ha diritto di comportarsi in questo modo: ciascuno di noi fa la stessa cosa quando entra in un negozio; come analista, però, non devi permettere che i tuoi giudizi siano influenzati dai desiderii del tuo cliente.
-<!-- @todo: se si riesce a trovare la fonte, aggiungere la nota sul Buddha che dà a ciascuno ciò di cui ha bisogno -->
+In questo, l'Analisi è assimilabile a una disciplina mistica: così come il Buddha dà a ciascuna persona con cui viene in contatto ciò di cui ha bisogno
+<!-- @todo: trovare citazione da Buddismo Tientai -->, tu devi annullare te stesso e *diventare* l'altro, pensare come lui, sentire le sue necessità. 
 Da quello che dice e da come lo dice, devi riuscire a distinguere i suoi bisogni dai suoi desiderii, evitando che l'ottenimento di questi ultimi intralci il buon successo del progetto.  
 Ovviamente, dovrai anche evitare che i *tuoi* desiderii intralcino o rallentino il progetto. 
-Così come influisce sul cliente, il Marketing può influire su di te, spingendoti a scegliere una tecnologia di moda, ma inadatta allo scòpo che devi raggiungere.
+Così come influenza le opinioni del tuo cliente, il Marketing può influire su di te, spingendoti a scegliere una tecnologia di moda, ma inadatta allo scòpo che devi raggiungere.
 Fà attenzione che ciò non accada.
 Sorveglia costantemente le tue scelte; così come il <a href="/man/programmatore#buon-programmatore" class="xref">buon programmatore</a>, pensa sempre su più livelli e confrontati con altri colleghi o con il tuo superiore per essere certo di aver fatto le scelte giuste.
 Non vergognarti dei tuoi errori: sono i mattoni su cui edificherai la tua esperienza.  
-Sii anche preparato a dover commettere degli errori.
-O prima o poi, capiterà che un cliente ti chieda di fare una scelta sbagliata.
+Sii anche preparato a essere costretto a commettere degli errori.
+O prima o poi, capiterà che un cliente ti chieda di fare una scelta che tu ritieni sbagliata.
 Quando ciò accadrà, dovrai per prima cosa cercare di convincerlo dell'errore, spiegandogli perché la sua richiesta non sia corretta.
-Se non ci riesci, ripeti la tua opposizione, perché sia chiaro che la tua non è un'ipotesi, ma una certezza, però non insistere oltre, perché questo potrebbe creare degli attriti con il tuo interlocutore. 
-Se non riuscirai a convincere il cliente del suo errore, dovrai fare ciò che ti chiede, ma al contempo dovrai fare in modo che le conseguenze di quella scelta non possano essere attribuite a te in futuro.
+Se non ci riesci, ripeti la tua opposizione, perché sia chiaro che la tua non è un'ipotesi, ma una certezza, però non insistere oltre: sia perché questo potrebbe creare degli attriti con il tuo interlocutore, sia perché alla lunga potresti scoprire che è *lui* ad avere ragione.    
+Se non riuscirai a convincere il cliente di un suo errore, dovrai portare a termine ciò che ti chiede, ma al contempo dovrai fare in modo che le conseguenze di quella scelta non possano essere attribuite a te in futuro.
 Dato che le conseguenze nefaste di un errore architetturale potrebbero manifestarsi dopo mesi o anche anni dalla fase di analisi, non limitarti a *dire* al cliente che si sbaglia, ma scrivilo, in modo che resti traccia della tua opposizione.  
 Il tuo peggior nemico, in questi casi, sarà il tuo orgoglio. 
-<!-- 
-ipotizzare che il cliente abbia ragione
-analisi come attività mistica: diventare qualcun altro
--->
+Una volta, il Maestro Canaro mi disse:
+
+> {{ site.data.canaro.ragione }}
 
 ---
 
