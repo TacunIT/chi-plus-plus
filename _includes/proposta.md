@@ -710,7 +710,12 @@ Alcuni passi mi hanno ricordato le affermazioni contenute in: *Sostiene Aristote
 
 sulla natura dell'Universo:
 
+> {{ site.data.citazioni.gita.caos }}
 > {{ site.data.citazioni.gita.cicli }}
+
+sul dualismo Gravità/Entropia :
+
+> {{ site.data.citazioni.gita.dualismo }}
 
 su quelli che io ho definito i *Post-It*:
 
