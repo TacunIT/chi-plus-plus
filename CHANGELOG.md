@@ -1,3 +1,6 @@
+## 0.27.3 (August 12, 2021)
+  - Revisione dell'index
+
 ## 0.27.2 (August 12, 2021)
   - Redazione del paragrafo sugli errori di analisi
   - Redazione del capitolo sugli stream
