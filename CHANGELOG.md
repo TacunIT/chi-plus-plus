@@ -1,5 +1,8 @@
+## 0.27.2 (August 12, 2021)
+  - Redazione del paragrafo sugli errori di analisi
+  - Redazione del capitolo sugli stream
+
 ## 0.27.1 (July 17, 2021)
-  - Redazione del capitolo sul debug
   - Redazione del capitolo sul debug
 
 ## 0.27.0 (July 16, 2021)
