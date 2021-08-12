@@ -1,3 +1,6 @@
+## 0.27.4 (August 12, 2021)
+  - Revisione delle citazioni nella pagina index
+
 ## 0.27.3 (August 12, 2021)
   - Revisione dell'index
 
