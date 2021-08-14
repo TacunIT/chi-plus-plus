@@ -36,51 +36,85 @@ Alcuni concetti chiave per la comprensione degli stream sono:
 - l’output su stream verso una qualsiasi destinazione, viene definito *scrit­tura* o *inserimento* e si effettua per mezzo dell’operatore `<<`; 
 - con i termini *lettura* o *estrazione*, invece, si intende l’operazione di acquisizione da una sorgente, effettuata dall’operatore `>>`.
 
-La libreria `iostream` del C++ permette di gestire le operazioni di I/O su stream per mezzo di classi template derivate da due classi base: `streambuf` e `iosbase`. 
-Esaminarla, come faremo, è un'attività piuttosto noiosa, ma ci permetterà di vedere applicati tutta una serie di principii di cui abbiamo parlato nelle lezioni precedenti.
-Facciamoci forza e andiamo a incominciare.
-
----
-
+La libreria `iostream` del C++ permette di gestire le operazioni di I/O su stream per mezzo di classi derivate da due classi base: `streambuf` e `iosbase`.
+La libreria ha due diverse “linee genealogiche”: una destinata alla gestione dei caratteri di un byte e una destinata ai caratteri multi-byte.
+Le classi della libreria multi-byte hanno lo stesso nome delle classi ordinarie, con l'aggiunta del prefisso: "w": `wios`, `wistream`, `wostream` ecc.
 Questo è lo schema di ereditarietà delle classi della libreria `iostream`:
 
 ```
-                            streambuf
-                        ________|________
-                       |                 |
-                     filebuf         streambuf
-
-
-                             iosbase
-                                |
-                               ios
-                                |
-            ____________________|___________________       
-           |                                        | 
-           |                                        | 
-        istream                                  ostream
-        /  | |                                    | |  \  
-       /   | |                                    | |   \
-    cin    | |____________________________________| |   cout
-           |                    |                   |   cerr 
-           |                    |                   |   clog
-           |                    |                   |    
-    _______|_________           |          _________|_______       
-   |                 |          |         |                 | 
-ifstream      istringstream     |       ofstream      ostringstream
-                                |
-                             iostream
-                        ________|________
-                       |                 |
-                   fstream         stringstream
+                              iosbase
+                                 |
+                             basic_ios
+                                 |
+               __________________|_________________       
+              |                                    | 
+              |                                    | 
+        basic_istream                         basic_ostream
+             | |                                  | |   
+             | |                                  | |  
+             | |__________________________________| |  
+             |                   |                  |   
+      _______|______             |         _________|_______       
+     |              |            |        |                 | 
+basic_istringstream |            |   basic_ostringstream    |
+                    |            |                          |
+                    |            |                          |
+               basic_ifstream    |                  basic_ofstream
+                                 |
+                            basic_iostream
+                         ________|________
+                        |                 |
+                   basic_fstream     basic_stringstream
           
 ```
+
+A parte `iosbase`, queste sono tutte classi template che sono poi istanziate con parametri differenti per gestire la gestione dei tipi di carattere `char` and `wchar_t`. 
+Per esempio, la classe `ostream` è una specializzazione della classe `basic_ostream`:
+
+```
+typedef basic_ostream<char> ostream;
+```
+
+Il suo corrispettivo multi-byte è la classe `wostream`:
+
+```
+typedef basic_ostream<wchar_t> wostream;
+```
+
+La classe template `basic_ostream`, a sua volta, deriva da `basic_ios`:
+
+```
+template<
+    class CharT,
+    class Traits = std::char_traits<CharT>
+> class basic_ostream 
+: virtual public std::basic_ios<CharT, Traits>
+```
+che, a sua volta, deriva da `ios_base`:
+
+```
+template<
+    class CharT,
+    class Traits = std::char_traits<CharT>
+> class basic_ios 
+: public std::ios_base	
+```
+
+In sostanza: se davanti al nome c'è il prefisso `basic_`, si tratta della classe template; se c'è c'è la lettera “w”, si tratta della versione multi-byte, altrimenti è la classe ordinaria.
+Esaminare le singole classi della libreria `iostream` è un'attività che rivaleggia, in quanto a tedio, con l'epigrafia classica, ma ci permetterà di vedere applicati tutta una serie di principii di cui abbiamo parlato nelle lezioni precedenti, perciò, facciamoci forza e andiamo a incominciare.
+
+---
+
+<!--
+
+
+
+
+
 Gli oggetti della classe <code id="streambuf">streambuf</code> sono il corrispettivo per il C++ dei buffer del *C* e forniscono metodi per la gestione logica dei dati, fungendo da interfaccia verso i dispositivi fisici.
 Tutti gli oggetti derivati dalla classe `ios` posseggono un puntatore ad un oggetto di tipo `streambuf`, da utilizzare come buffer per eseguire delle operazioni di I/O formattato.  
 La classe <code id="ios">ios</code> fornisce dei metodi per la verifica dello stato interno dello stream e contiene un puntatore all’oggetto di classe `streambuf` associato. 
 Essendo una classe astratta, `ios` non può essere utilizzata direttamente per la creazione di oggetti, ma costituisce la base per classi specializzate nelle operazioni di I/O su file. 
-
-<!--
 
 ```
 {% include_relative src/stream-eccezioni.cpp %}
