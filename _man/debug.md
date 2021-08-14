@@ -23,16 +23,12 @@ Così come *l'Ikebarba inizia nel negozio*, il debug comincia nel momento in cui
 Il modo migliore per evitare che il codice contenga degli errori è scrivere del buon codice.
 Scrivere del buon codice vuol dire fare sempre il meglio che ti è possibile.
 Non salvare mai un file se non sei certo che funzionerà come deve e cerca sempre di pensare a cos'altro potrebbe fare il tuo codice, oltre a quello che vuoi tu.
-Come di ho detto <a href="/man/programmatore#buon-programmatore" class="xref">in una delle nostre prime chiacchierate</a>, il buon programmatore non si accontenta della strada più rapida, ma cerca sempre quella più efficiente e sicura, perché sa che scrivere del buon codice costa meno che riparare del codice fatto male.
+Come di ho detto <a href="/man/programmatore#buon-programmatore" class="xref">in una delle nostre prime chiacchierate</a>, il Buon Programmatore non si accontenta della strada più rapida, ma cerca sempre quella più efficiente e sicura, perché sa che scrivere del buon codice costa meno che riparare del codice fatto male.
 Il Maestro Canaro, una volta disse:
 
 > {{ site.data.canaro.marinaio }}
 
-Il buon programmatore non può farne a meno, perché è nella sua natura; è questa, la differenza fra chi *fa* il programmatore e chi *è* un programmatore.  
-La decadenza del software è iniziata quando le stampanti laser hanno soppiantato le vecchie stampanti ad aghi.
-Il codice non si può leggere su un foglio A4: a meno che non sia un programma banale, non c'entrerà né in altezza né in larghezza.
-Il modulo in continuo di una stampante ad aghi a 136 colonne, al contrario, ti permette di stampare tutto il tuo codice e di rileggerlo con calma; correggerlo, se necessario e migliorarlo se possibile.
-È così che si facevano le revisioni di codice, quando c'erano il tempo e i soldi per fare le revisioni di codice.
+Il Buon Programmatore non può farne a meno, perché è nella sua natura; è questa, la differenza fra chi *fa* il programmatore e chi *è* un programmatore.  
 
 <hr id="tipi-errore">
 
@@ -312,19 +308,16 @@ Essere un ossessivo-compulsivo con una leggera tendenza alla paranoia, se ti gua
 Non potrai farti un tampone prima delle 8:00 dell’indomani quindi sai che ti aspettano almeno dieci ore di panico controllato; qualcuna di meno, se riesci ad addormentarti.
 Cerchi di distrarti guardando la televisione, ma l’ennesimo thriller con Jason Statham, intervallato da pubblicità di ansiolitici (un conflitto di interessi che ti riprometti di studiare con più attenzione, se sopravvivi), non fa che aumentare la tua agitazione; così, spegni il televisore, ti prepari una tisana relax, leggi un po’ e poi cerchi di dormire.
 <div id="banner-2"></div>
-Appena chiudi gli occhi, però, il tuo cervello comincia a fare ciò che sa fare meglio, ovvero analizzare ciclicamente tutte le possibili conseguenze di un determinato evento; solo che stavolta, quello che potrebbe essere infetto non è un computer, sei tu.
-Notizia buona: non hai sintomi. Notizia cattiva: hai visto la tua donna di servizio solo quattro giorni prima, quindi i giochi sono ancora aperti.
-<div id="banner-3"></div>
  </blockquote>
 
-Il codice della funzione `banner_testo`, però, è troppo ottimistico e delle piccole variazioni nel file di input, come l'aggiunta di punti di sospensione o di una URL, *potrebbero* causare degli errori:
+Il codice della funzione `banner_testo`, però, è troppo ottimistico e delle piccole variazioni nel file di input, come l'aggiunta di punti di sospensione o di una URL, *potrebbero* causare degli errori nel posizionamento dei banner:
 
 <blockquote class="output">
 Essere un ossessivo-compulsivo con una leggera tendenza alla paranoia, se ti guadagni da vivere facendo l’esperto di sicurezza, è un bene; le medesime peculiarità caratteriali, al contrario, sono decisamente un male quando alle 21:55 la tua donna di servizio ti scrive: "Ho fatto un molecolare e sono risultata positiva".
 <div id="banner-1"></div>
 ..
 Non potrai farti un tampone prima delle 8:00 dell’indomani quindi sai che ti aspettano almeno dieci ore di panico controllato. Qualcuna di meno, se riesci ad addormentarti.
-Cerchi di distrarti guardando la televisione, ma l’ennesimo thriller con Jason Statham, intervallato da pubblicità di ansiolitici (un conflitto di interessi che ti riprometti di studiare con più attenzione, se sopravvivi), non fa che aumentare la tua agitazione; così, spegni il televisore, ti prepari una tisana relax, <a href="http://cplusplus.
+Cerchi di distrarti guardando la televisione, ma l’ennesimo thriller con Jason Statham, intervallato da pubblicità di ansiolitici (un conflitto di interessi che ti riprometti di studiare con più attenzione, se sopravvivi), non fa che aumentare la tua agitazione; così, spegni il televisore, ti prepari una tisana relax, <a href="http://chiplusplus.
 <div id="banner-2"></div>
 org">leggi un po’</a> e poi cerchi di dormire.
 </blockquote>
@@ -372,13 +365,13 @@ Come tutti gli esseri senzienti, anche i clienti possono essere vittime dell'Ann
 Un cliente che espone le sue esigenze è come un bambino che dice alla madre cosa vuole mangiare.
 Lo stimolo è reale &mdash; appetito o fame che sia &mdash;, ma il modo in cui lui vorrebbe placarlo non è necessariamente il più corretto; anzi: di solito è un desiderio indotto dal callido servitore dell'Entropia: il Marketing.  
 Il cliente ha diritto di comportarsi in questo modo: ciascuno di noi fa la stessa cosa quando entra in un negozio; come analista, però, non devi permettere che i tuoi giudizi siano influenzati dai desiderii del tuo cliente.
-In questo, l'Analisi è assimilabile a una disciplina mistica: così come il Buddha dà a ciascuna persona con cui viene in contatto ciò di cui ha bisogno
-<!-- @todo: trovare citazione da Buddismo Tientai -->, tu devi annullare te stesso e *diventare* l'altro, pensare come lui, sentire le sue necessità. 
+In questo, l'Analisi è assimilabile a una disciplina mistica: così come il Buddha dà a ciascuna persona con cui viene in contatto ciò di cui ha bisogno,
+<!-- @todo: trovare citazione da Buddismo Tientai --> tu devi annullare te stesso e *diventare* l'altro, pensare come lui, sentire le sue necessità. 
 Da quello che dice e da come lo dice, devi riuscire a distinguere i suoi bisogni dai suoi desiderii, evitando che l'ottenimento di questi ultimi intralci il buon successo del progetto.  
 Ovviamente, dovrai anche evitare che i *tuoi* desiderii intralcino o rallentino il progetto. 
 Così come influenza le opinioni del tuo cliente, il Marketing può influire su di te, spingendoti a scegliere una tecnologia di moda, ma inadatta allo scòpo che devi raggiungere.
 Fà attenzione che ciò non accada.
-Sorveglia costantemente le tue scelte; così come il <a href="/man/programmatore#buon-programmatore" class="xref">buon programmatore</a>, pensa sempre su più livelli e confrontati con altri colleghi o con il tuo superiore per essere certo di aver fatto le scelte giuste.
+Sorveglia costantemente le tue scelte; così come il Buon Programmatore, pensa sempre su più livelli e confrontati con altri colleghi o con il tuo superiore per essere certo di aver fatto le scelte giuste.
 Non vergognarti dei tuoi errori: sono i mattoni su cui edificherai la tua esperienza.  
 Sii anche preparato a essere costretto a commettere degli errori.
 O prima o poi, capiterà che un cliente ti chieda di fare una scelta che tu ritieni sbagliata.
@@ -417,7 +410,7 @@ int main(int argc, char** argv)
 }
 ```
 
-Se la funzione che non funziona è troppo complessa per farne un debug diretto, ripeterai il processo, mettendo a commento le sue chiamate fino a che la quantità di codice da esaminare sarà ragionevolmente poca.  
+Se la *funzione che non funziona* è troppo complessa per farne un debug diretto, ripeterai il processo, mettendo a commento le sue chiamate fino a che la quantità di codice da esaminare sarà ragionevolmente poca.  
 Un altro modo in cui puoi semplificare la ricerca degli errori nel codice è l'aggiunta di messaggi che ti permettano di sapere quale operazione sta compiendo il programma:
 
 ```
@@ -451,8 +444,9 @@ Diversi anni or sono, il Maestro Canaro dovette registrarsi su un sito Web che g
 La maschera di inserimento nuovo utente non gli diede problemi, ma la maschera di modifica dati, evidentemente scritta da un programmatore meno esperto, non gli permise di aggiornarli perché, a suo dire, la data di nascita era sbagliata.
 Ciò vuol dire che il sistema utilizzava due funzioni distinte per il controllo della data di nascita, una nella funzione di inserimento e un'altra nella funzione di modifica, e che almeno la funzione utilizzata in modifica non era una funzione standard, ma codice scritto *ad-hoc*.  
 Entrambe queste scelte sono errori: a una determinata azione sui dati deve corrispondere una singola funzione.
-Fare la stessa operazione con parti di codice distinte è sbagliato, sia perché aumenta la probabilità di commettere degli errori, sia perché rallenta i tempi di identificazione dell'errore in fase di debug.
-È sbagliato anche riscrivere delle funzioni che già esistono: <a href="http://cr.yp.to/djb.html" target="qmail">D. J. Bernstein</a> lo fece, con le funzioni di I/O di qmail, ma le sue funzioni erano migliori e più sicure delle funzioni della libreria standard.     
+Fare la stessa operazione con parti di codice distinte è sbagliato; sia perché aumenta la probabilità di commettere degli errori, sia perché rallenta i tempi di identificazione dell'errore in fase di debug.
+È sbagliato anche riscrivere delle funzioni che già esistono: D. J. Bernstein lo fece, con le funzioni di I/O di <a href="http://cr.yp.to/djb.html" target="qmail">qmail</a>, ma la sua fu una precisa scelta architetturale perché voleve delle funzioni che fossero migliori e più sicure delle funzioni della libreria standard.  
+<!--- e comunque, fare l'analisi del codice di qmail è un delirio.. -->
 A questi due errori di programmazione &mdash; inammissibili, in un sito che gestisca transazioni economiche &mdash; si aggiunge una profonda sciatteria della fase di debug del codice, perché la corretta gestione dei casi particolari, come gli anni bisestili, va sempre verificata.
 Quando verifichi il funzionamento di un programma, non puoi limitarti a controllare che faccia ciò che deve fare, ma devi anche assicurarti che non faccia ciò che non deve fare. 
 In particolare, devi verificare che si comporti correttamente se:
@@ -538,13 +532,14 @@ esito = apri_file(testo, argv[2]);
 ```
 
 Il *bug* è l'indice `2` nell'array `argv`.
-Come certamente avrai notato, il codice di questo programma è una rielaborazione del codice della <a href="/man/stream.html" class="xref">lezione sugli stream</a>, ma stavolta la stringa di chiamata del programma ha solo due valori: il path del programma e il nome del file di input:
+Come certamente avrai notato, il codice di questo programma è una rielaborazione del codice della <a href="/man/stream.html" class="xref">lezione sugli stream</a>, che doveva gestire tre parametri da riga di comando.
+Stavolta, però, la stringa di chiamata del programma ha solo due valori: il path del programma e il nome del file di input:
 
 ```
 > src/out/esempio src/cpp/debug-testo-1.txt
 ```
 
-L'indirizzo di memoria puntato da `argv[2]`, quindi, non appartiene al programma: non possiamo utilizzarlo come path per una funzione `open` e non possiamo stamparlo a video.  
+Riutilizzare il codice è una cosa buona; scordarsi di modificare il valore dell'indice dell'array `argv` è una cosa sbagliata, perché l'indirizzo di memoria puntato da `argv[2]`, adesso, non appartiene al programma: non possiamo utilizzarlo come path per una funzione `open` e non possiamo stamparlo a video.  
 Se correggiamo l'indice, il programma gestisce correttamente tutte le condizioni d'uso:
 
 ```
@@ -576,7 +571,7 @@ Scrivere direttamente un numero o una stringa nel codice è sicuramente più rap
 esito = apri_file(testo, argv[PARAM_PATH]);
 ```
 
-ma, sul lungo periodo, è controproducente perché rende il codice più complesso da leggere e da modificare.
+ma, sul lungo periodo, è controproducente perché rende il codice più complesso da leggere e da modificare.  
 *Più complesso da leggere* perché le costanti aiutano a capire cosa faccia il codice. 
 Se leggi l'istruzione:  
 
@@ -627,4 +622,8 @@ M. Deen - Per antiche strade
 
 Se non lo si è fatto finora, spiegare che gli esempii del testo sono studiati per essere progressivamente migliorati, per dimostrare come la scrittura di codice sia un'attività in continua evoluzione.
 
+La decadenza del software è iniziata quando le stampanti laser hanno soppiantato le vecchie stampanti ad aghi.
+Il codice non si può leggere su un foglio A4: a meno che non sia un programma banale, non c'entrerà né in altezza né in larghezza.
+Il modulo in continuo di una stampante ad aghi a 136 colonne, al contrario, ti permette di stampare tutto il tuo codice e di rileggerlo con calma; correggerlo, se necessario e migliorarlo se possibile.
+È così che si facevano le revisioni di codice, quando c'erano il tempo e i soldi per fare le revisioni di codice.
 -->
