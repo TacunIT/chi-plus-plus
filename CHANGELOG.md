@@ -1,3 +1,6 @@
+## 0.27.5 (August 14, 2021)
+  - Completata prima stesura della sezione tecnica del capitolo sul debug
+
 ## 0.27.4 (August 12, 2021)
   - Revisione delle citazioni nella pagina index
 
