@@ -1,5 +1,5 @@
 ---
-status:     redazione
+status:     bozza
 layout:     manuale
 class:      capitolo
 no-index:   true
