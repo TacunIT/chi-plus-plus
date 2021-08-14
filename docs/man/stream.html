@@ -100,7 +100,7 @@ La libreria ha due diverse “linee genealogiche”: una destinata alla gestione
 Le classi della libreria multi-byte hanno lo stesso nome delle classi ordinarie, con l’aggiunta del prefisso: “w”.<br />
 Questo è lo schema di ereditarietà delle classi della libreria <code>iostream</code>:</p>
 
-<pre><code>                              iosbase
+<pre><code>                              ios_base
                                  |
                              basic_ios
                                  |
@@ -126,7 +126,7 @@ basic_istringstream |            |   basic_ostringstream    |
           
 </code></pre>
 
-<p>A parte <code>iosbase</code>, queste sono tutte classi template che sono poi istanziate con parametri differenti per gestire la gestione dei tipi di carattere <code>char</code> and <code>wchar_t</code>. 
+<p>A parte <code>ios_base</code>, queste sono tutte classi template che sono poi istanziate con parametri differenti per gestire la gestione dei tipi di carattere <code>char</code> and <code>wchar_t</code>. 
 Per esempio, la classe <code>ostream</code> è una specializzazione della classe <code>basic_ostream</code>:</p>
 
 <pre><code>typedef basic_ostream&lt;char&gt; ostream;
@@ -154,21 +154,37 @@ Per esempio, la classe <code>ostream</code> è una specializzazione della classe
 : public std::ios_base	
 </code></pre>
 
-<p>In sostanza: se davanti al nome c’è il prefisso <code>basic_</code>, si tratta della classe template; se c’è c’è la lettera “w”, si tratta della versione multi-byte, altrimenti è la classe ordinaria.
-Esaminare le singole classi della libreria <code>iostream</code> è un’attività che rivaleggia, in quanto a tedio, con l’epigrafia classica, ma ci permetterà di vedere applicati tutta una serie di principii di cui abbiamo parlato nelle lezioni precedenti, perciò, facciamoci forza e andiamo a incominciare.</p>
+<p>In sostanza: se davanti al nome c’è il prefisso <code>basic_</code>, si tratta della classe template; se c’è c’è la lettera “w”, si tratta della versione multi-byte, altrimenti è la classe ordinaria.<br />
+Oltre alle classi derivate da <code>iosbase</code>, la libreria comprende anche delle classi per la gestione dei buffer di dati:</p>
+
+<pre><code>                       basic_streambuf
+                      ________|________
+                     |                 |
+               basic_stringbuf     basic_filebuf
+</code></pre>
+
+<p>La classe template virtuale <code>basic_streambuf</code> contiene i dati e le funzioni necessarie alla gestione di un buffer di caratteri.
+Le sue classi derivate <code>basic_stringbuf</code> e <code>basic_filebuf</code> sono invece specializzate, rispettivamente, nella gestione di buffer in memoria e su file.
+Anche in questo caso, la libreria comprende due versioni di ciascuna classe, specializzate per la gestione di <code>char</code> and <code>wchar_t</code>.</p>
+
+<pre><code>typedef streambuf  basic_streambuf&lt;char&gt;
+typedef wstreambuf basic_streambuf&lt;wchar_t&gt;
+typedef stringbuf  basic_stringbuf&lt;char&gt;
+typedef wstringbuf basic_stringbuf&lt;wchar_t&gt;
+typedef filebuf    basic_filebuf&lt;char&gt;
+typedef wfilebuf   basic_filebuf&lt;wchar_t&gt;
+</code></pre>
+
+<p>Come forse avrai intuito, esaminare le singole classi della libreria <code>iostream</code> è un’attività che rivaleggia, in quanto a tedio, con l’epigrafia classica, ma ci permetterà di vedere applicati tutta una serie di principii di cui abbiamo parlato nelle lezioni precedenti, perciò, facciamoci forza e andiamo a incominciare.</p>
 
 <hr />
 
+<p>La classe <code id="ios-base">ios_base</code> fornisce le funzioni di base per la gestione degli stream, indipendentemente dal tipo di caratteri gestito e dal fatto che si tratti di stream di input o di output.<br />
+Tramite i metodi della classe è possibile verificare o modificare lo stato interno dello stream, la sua formattazione o definire delle funzioni callback per la gestione dei dati.<br />
+Una peculiarità di <code>ios_base</code> è che non possiede un costruttore pubblico, quindi non è possibile utilizzarla per creare oggetti, ma solo come base per delle classi derivate.</p>
+
 <!--
-
-
-
-
-
-Gli oggetti della classe <code id="streambuf">streambuf</code> sono il corrispettivo per il C++ dei buffer del *C* e forniscono metodi per la gestione logica dei dati, fungendo da interfaccia verso i dispositivi fisici.
-Tutti gli oggetti derivati dalla classe `ios` posseggono un puntatore ad un oggetto di tipo `streambuf`, da utilizzare come buffer per eseguire delle operazioni di I/O formattato.  
-La classe <code id="ios">ios</code> fornisce dei metodi per la verifica dello stato interno dello stream e contiene un puntatore all’oggetto di classe `streambuf` associato. 
-Essendo una classe astratta, `ios` non può essere utilizzata direttamente per la creazione di oggetti, ma costituisce la base per classi specializzate nelle operazioni di I/O su file. 
+La classe <code id="basic-ios">basic_ios</code> fornisce le funzioni di base per 
 
 ```
 /** 
@@ -297,9 +313,7 @@ int main(int argc, char** argv)
 ```
 
 
-5.1.2	Classe ios
-La classe ios fornisce metodi  per la verifica dello stato interno dello stream e contiene un puntatore all’oggetto di classe streambuf associato. Essendo una classe astratta, ios non può essere utilizzata direttamente per la creazione di oggetti, ma costituisce la base per classi specializzate nelle operazioni di I/O su file. 
-Le prime è più importanti de­rivazioni di ios sono:
+Oltre a un puntatore a un oggetto di classe `streambuf` da utilizzare come buffer per le operazioni di I/O formattato,
 
 La classe istream è specializzata nell’input da file; ostream nell’output mentre la classe iostream, che eredita da entrambe, può gestire sia l’input che l’output.
 class  istream : virtual public ios {...};
