@@ -38,7 +38,7 @@ Alcuni concetti chiave per la comprensione degli stream sono:
 
 La libreria `iostream` del C++ permette di gestire le operazioni di I/O su stream per mezzo di classi derivate da due classi base: `streambuf` e `iosbase`.
 La libreria ha due diverse “linee genealogiche”: una destinata alla gestione dei caratteri di un byte e una destinata ai caratteri multi-byte.
-Le classi della libreria multi-byte hanno lo stesso nome delle classi ordinarie, con l'aggiunta del prefisso: "w": `wios`, `wistream`, `wostream` ecc.
+Le classi della libreria multi-byte hanno lo stesso nome delle classi ordinarie, con l'aggiunta del prefisso: "w".  
 Questo è lo schema di ereditarietà delle classi della libreria `iostream`:
 
 ```
