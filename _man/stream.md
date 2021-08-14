@@ -1,5 +1,5 @@
 ---
-status:     bozza
+status:     redazione
 layout:     manuale
 class:      capitolo
 no-index:   true
@@ -12,7 +12,7 @@ Oggi ti parlerò degli *stream* che, com'è noto, sono la componente più import
 
 Il C++ eredita dal C l’assenza di parole chiave per la gestione dell’I/O.
 Al posto di istruzioni come la `print` del BASIC, utilizza delle librerie di classi e funzioni che permettono di convertire in testo stampabile gli oggetti gestiti dal programma o di convertire degli elementi testuali in oggetti.
-Non potrebbe essere altrimenti: il C++ non deve gestire solo stringhe e numeri, come il BASIC, ma anche interi, numeri in virgola mobile, puntatori e soprattutto i tipi di dato definiti dall’utente, per i quali non sarebbe possibile definire un comportamento standard e che quindi dovrebbero essere trattati in maniera differente dai dati primitivi, con tanti saluti alla coerenza del linguaggio.
+Non potrebbe essere altrimenti: il C++ non deve gestire solo stringhe e numeri, come il BASIC, ma anche numeri in virgola mobile, puntatori e soprattutto i tipi di dato definiti dall’utente, per i quali non sarebbe possibile definire un comportamento standard e che quindi dovrebbero essere trattati in maniera differente dai dati primitivi, con tanti saluti alla coerenza del linguaggio.  
 Oltre a poter sfruttare le librerie di funzioni del *C*, il C++ ha una propria libreria di I/O, ba­sata sulla gerarchia delle classi `stream`, che permette di gestire anche i tipi di dato definiti dall'utente.
 Abbiamo visto degli esempii di questa caratteristica quando abbiamo parlato di <a href="/man/c-plus-plus#polimorfismo" class="xref">polimorfismo</a> e di <a href="/man/polimorfismo#overload-operatori" class="xref">overload degli operatori</a>:
 
@@ -28,19 +28,54 @@ ostream& operator << (ostream& os, const Animale& animale) {
 ```
 
 Questo codice “insegna” all’operatore `<<` come comportarsi per visualizzare un oggetto di classe `Animale`. 
-Lo stesso si può fare (e lo si è fatto) per qualsiasi altro tipo definito dall’utente. 
+Lo stesso si può fare (e lo abbiamo fatto) per qualsiasi altro tipo definito dall’utente. 
 È la sintassi del linguaggio che si adatta alle esigenze del programmatore, e non viceversa.  
 Alcuni concetti chiave per la comprensione degli stream sono:
 
-- uno stream rappresenta un flusso di dati che vanno da una sorgente ad una destinazione;
-- tanto la sorgente che la destinazione possono essere indifferentemente un buffer di memoria, una stringa o un file; 
+- uno *stream* è un'astrazione che rappresenta la sorgente o la destinazione di un insieme di dati di lunghezza variabile: l'input da tastiera, l'output su schermo, i buffer di memoria, le stringhe, i file; 
 - l’output su stream verso una qualsiasi destinazione, viene definito *scrit­tura* o *inserimento* e si effettua per mezzo dell’operatore `<<`; 
 - con i termini *lettura* o *estrazione*, invece, si intende l’operazione di acquisizione da una sorgente, effettuata dall’operatore `>>`.
 
+La libreria `iostream` del C++ permette di gestire le operazioni di I/O su stream per mezzo di classi template derivate da due classi base: `streambuf` e `iosbase`. 
+Esaminarla, come faremo, è un'attività piuttosto noiosa, ma ci permetterà di vedere applicati tutta una serie di principii di cui abbiamo parlato nelle lezioni precedenti.
+Facciamoci forza e andiamo a incominciare.
+
 ---
 
-La libreria `iostream` del C++ gestisce le operazioni di I/O per mezzo di oggetti derivati da due classi base: `streambuf` e `ios`. 
-Gli oggetti della classe <code id="streambuf">streambuf</code> sono il corrispettivo C++ dei buffer del *C* e forniscono metodi per la gestione logica dei dati, fungendo da interfaccia verso i dispositivi fisici.
+Questo è lo schema di ereditarietà delle classi della libreria `iostream`:
+
+```
+                            streambuf
+                        ________|________
+                       |                 |
+                     filebuf         streambuf
+
+
+                             iosbase
+                                |
+                               ios
+                                |
+            ____________________|___________________       
+           |                                        | 
+           |                                        | 
+        istream                                  ostream
+        /  | |                                    | |  \  
+       /   | |                                    | |   \
+    cin    | |____________________________________| |   cout
+           |                    |                   |   cerr 
+           |                    |                   |   clog
+           |                    |                   |    
+    _______|_________           |          _________|_______       
+   |                 |          |         |                 | 
+ifstream      istringstream     |       ofstream      ostringstream
+                                |
+                             iostream
+                        ________|________
+                       |                 |
+                   fstream         stringstream
+          
+```
+Gli oggetti della classe <code id="streambuf">streambuf</code> sono il corrispettivo per il C++ dei buffer del *C* e forniscono metodi per la gestione logica dei dati, fungendo da interfaccia verso i dispositivi fisici.
 Tutti gli oggetti derivati dalla classe `ios` posseggono un puntatore ad un oggetto di tipo `streambuf`, da utilizzare come buffer per eseguire delle operazioni di I/O formattato.  
 La classe <code id="ios">ios</code> fornisce dei metodi per la verifica dello stato interno dello stream e contiene un puntatore all’oggetto di classe `streambuf` associato. 
 Essendo una classe astratta, `ios` non può essere utilizzata direttamente per la creazione di oggetti, ma costituisce la base per classi specializzate nelle operazioni di I/O su file. 
@@ -51,7 +86,6 @@ Essendo una classe astratta, `ios` non può essere utilizzata direttamente per l
 {% include_relative src/stream-eccezioni.cpp %}
 ```
 
-Lo schema di ereditarietà della classe streambuf è il seguente:
 
 5.1.2	Classe ios
 La classe ios fornisce metodi  per la verifica dello stato interno dello stream e contiene un puntatore all’oggetto di classe streambuf associato. Essendo una classe astratta, ios non può essere utilizzata direttamente per la creazione di oggetti, ma costituisce la base per classi specializzate nelle operazioni di I/O su file. 
