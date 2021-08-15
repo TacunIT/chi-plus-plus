@@ -122,7 +122,7 @@ basic_istringstream |            |   basic_ostringstream    |
                             basic_iostream
                          ________|________
                         |                 |
-                   basic_fstream     basic_stringstream
+               basic_stringstream    basic_fstream
           
 </code></pre>
 
@@ -193,27 +193,27 @@ Il dato membro <code>openmode</code>, per esempio, definisce il modo in cui debb
 <table>
   <tbody>
     <tr>
-      <td>app</td>
+      <td><em>app</em></td>
       <td>Fa sì che ogni operazione di output avvenga alla fine dello stream.</td>
     </tr>
     <tr>
-      <td>ate</td>
+      <td><em>ate</em></td>
       <td>In apertura dello stream, sposta il punto di inserimento al termine  (<em><strong>at e</strong>nd</em>) del buffer di I/O.</td>
     </tr>
     <tr>
-      <td>binary</td>
+      <td><em>binary</em></td>
       <td>Gestisce il contenuto dello stream come un flusso di dati binario.</td>
     </tr>
     <tr>
-      <td>in</td>
+      <td><em>in</em></td>
       <td>Permette operazioni di input.</td>
     </tr>
     <tr>
-      <td>out</td>
+      <td><em>out</em></td>
       <td>Permette operazioni di output.</td>
     </tr>
     <tr>
-      <td>trunc</td>
+      <td><em>trunc</em></td>
       <td>Azzera il contenuto dello stream all’apertura.</td>
     </tr>
   </tbody>
@@ -224,23 +224,23 @@ Il dato membro <code>openmode</code>, per esempio, definisce il modo in cui debb
 <table>
   <tbody>
     <tr>
-      <td>goodbit</td>
+      <td><em>goodbit</em></td>
       <td>Nessun errore</td>
     </tr>
     <tr>
-      <td>eofbit</td>
+      <td><em>eofbit</em></td>
       <td>È stata raggiunta la fine dello stream.</td>
     </tr>
     <tr>
-      <td>failbit</td>
+      <td><em>failbit</em></td>
       <td>L’ultima operazione di I/O è fallita.</td>
     </tr>
     <tr>
-      <td>badbit</td>
+      <td><em>badbit</em></td>
       <td>L’ultima operazione di I/O non era valida.</td>
     </tr>
     <tr>
-      <td>hardfail</td>
+      <td><em>hardfail</em></td>
       <td>Si è verificato un errore irrecuperabile.</td>
     </tr>
   </tbody>
@@ -254,21 +254,225 @@ L’istruzione seguente, per esempio, apre uno stream su file combinando in <cod
                , ios_base::in | ios_base::out | ios_base::app);
 </code></pre>
 
-<!--
+<p>Dopo <code>basic_ios</code>, le classi della libreria si specializzano nell’input o nell’output: da un lato <code>basic_istream</code>, da cui derivano i due stream standard di input <code>cin</code> e <code>wcin</code>; dall’altro <code>basic_ostream</code>, da cui derivano gli stream standard di output <code>cout</code>, <code>cerr</code>, <code>clog</code> e le loro controparti “wide”: <code>wcout</code>, <code>wcerr</code>, <code>wclog</code>.<br />
+Da queste due classi generiche derivano delle classi template specializzate nell’input o nell’output su file o in memoria:</p>
 
-Dopo `basic_ios`, le classi della libreria si specializzano nell'input o nell'output: da un lato `basic_istream`, da cui derivano i due stream standard di input `cin` e `wcin`; dall'altro `basic_ostream`, da cui derivano gli stream standard di output `cout`, `cerr`, `clog` e le loro controparti "wide": `wcout`, `wcerr`, `wclog`. 
+<pre><code>template 
+&lt;class Elem, class Tr = char_traits&lt;Elem&gt;&gt;
+class basic_ifstream 
+: public basic_istream&lt;Elem, Tr&gt;
 
+template 
+&lt;class Elem, class Tr = char_traits&lt;Elem&gt;, class Alloc = allocator&lt;Elem&gt;&gt;
+class basic_istringstream 
+: public basic_istream&lt;Elem, Tr&gt;
 
+template 
+&lt;class Elem, class Tr = char_traits&lt;Elem&gt;&gt;
+class basic_ofstream 
+: public basic_ostream&lt;Elem, Tr&gt;
 
-```
-/** 
- * @file src/stream-eccezioni.cpp
+template 
+&lt;class Elem, class Tr = char_traits&lt;Elem&gt;, class Alloc = allocator&lt;Elem&gt;&gt;
+class basic_ostringstream 
+: public basic_ostream&lt;Elem, Tr&gt;
+</code></pre>
+
+<p>e una classe capace di gestire entrambe le operazioni:</p>
+
+<pre><code>template 
+&lt;class Elem, class Tr = char_traits&lt;Elem&gt;&gt;
+class basic_iostream 
+: public basic_istream&lt;Elem, Tr&gt;
+, public basic_ostream&lt;Elem, Tr&gt;
+</code></pre>
+
+<p>anche questa, con due specializzazioni per la gestione di file e memoria:</p>
+
+<pre><code>template 
+&lt;class Elem, class Tr = char_traits&lt;Elem&gt;, class Alloc = allocator&lt;Elem&gt;&gt;
+class basic_stringstream 
+: public basic_iostream&lt;Elem, Tr&gt;
+
+template 
+&lt;class Elem, class Tr = char_traits&lt;Elem&gt;&gt;
+class basic_fstream 
+: public basic_iostream&lt;Elem, Tr&gt;
+</code></pre>
+
+<p>Prima che ci assalga un attacco di narcolessia, vorrei mettere in atto tutto questo con un esempio, ma prima devo spiegarti cosa sono le <em>eccezioni</em>.</p>
+
+<hr id="eccezioni" />
+
+<p>Le <em>eccezioni</em> permettono di gestire gli errori che avvengono durante l’esecuzione del programma. 
+Quando succede qualcosa di anormale, il sistema <em>lancia</em> un’eccezione, ovvero trasferisce il controllo del processo dalla funzione corrente a blocchi di istruzioni specifici, chiamati <em>exception handler</em>. 
+Perché tutto questo avvenga, il codice che genera l’errore deve essere racchiuso in un blocco <code>try</code>/<code>catch</code>:</p>
+
+<pre><code>try {
+    
+    // codice che potrebbe dare errore
+    
+} catch (...) {
+
+    //  istruzioni per la gestione dell'errore
+}
+</code></pre>
+
+<p>Le eccezioni possono essere lanciate e gestite sia da codice specifico all’interno del programma, sia dai meccanismi automatici del C++:</p>
+
+<pre><code>/** 
+ * @file src/stream-eccezioni-1.cpp
  * Programma di esempio per la gestione delle eccezioni.
  */
  
-#include <iostream>
-#include <fstream>
-#include <exception>
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+
+using namespace std;
+
+
+int main(int argc, char** argv)
+{    
+    ifstream testo;
+
+    /** 
+    *   Fa sì che, se sia generata un'eccezione 
+    *   in caso di errore nella gestione del file.
+    */
+    testo.exceptions ( ios_base::failbit );
+
+    /** Questa istruzione genererà un'eccezione */
+    testo.open("fileinesistente.txt");
+    
+    testo.close();
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili ed esegui questo codice, causerai un errore che, non essendo gestito dal programma, è gestito dalla funzione standard del C++:</p>
+
+<pre><code>&gt; g++ src/cpp/stream-eccezioni-1.cpp -o src/out/esempio
+&gt; src/out/esempio
+libc++abi: terminating with uncaught exception of type
+std::__1::ios_base::failure: ios_base::clear
+: unspecified iostream_category error
+zsh: abort      src/out/esempio
+</code></pre>
+
+<p>Se però inseriamo il codice che apre il file in un blocco <code>try</code>/<code>catch</code> e definiamo un handler per la gestione degli errori in apertura dei file, il risultato sarà più controllato:</p>
+
+<pre><code>/** 
+ * @file src/stream-eccezioni-2.cpp
+ * Programma di esempio per la gestione delle eccezioni.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+
+using namespace std;
+
+
+int main(int argc, char** argv)
+{    
+    ifstream testo;
+
+    try {
+        
+        testo.exceptions ( ios_base::failbit );
+        testo.open("fileinesistente.txt");        
+        testo.close();
+        
+    } catch(ios_base::failure e) {
+     
+        cerr &lt;&lt; "Errore in esecuzione" &lt;&lt; endl;      
+   
+    }    
+   
+    return 0;
+}
+
+</code></pre>
+
+<pre><code>&gt; g++ src/cpp/stream-eccezioni-2.cpp -o src/out/esempio
+&gt; src/out/esempio                                      
+Errore in esecuzione
+</code></pre>
+
+<p>Possiamo addirittura prevenire gli errori in apertura del file facendo sì che sia lo stesso programma a lanciare un’eccezione se si accorge che manca il nome del file nei parametri di avvio:</p>
+
+<pre><code>/** 
+ * @file src/stream-eccezioni-3.cpp
+ * Programma di esempio per la gestione delle eccezioni.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+
+using namespace std;
+
+
+int main(int argc, char** argv)
+{    
+    ifstream testo;
+
+    try {
+        
+        /** Verifica che esista il nome del file da aprire */
+        if(argc &lt; 2)
+            throw "Nome file mancante";
+            
+        testo.exceptions ( ios_base::failbit );
+        testo.open(argv[1]);        
+        testo.close();
+        
+    } catch(ios_base::failure e) {
+     
+        cerr &lt;&lt; "Errore in esecuzione" &lt;&lt; endl;      
+   
+    } catch(char const* msg) {
+        
+        cerr &lt;&lt; msg &lt;&lt; endl;
+    }
+   
+    return 0;
+}
+
+</code></pre>
+
+<p>In questo modo, il programma è in condizione di gestire tutti i possibili errori di esecuzione:</p>
+
+<pre><code>&gt; g++ src/cpp/stream-eccezioni-3.cpp -o src/out/esempio
+&gt; src/out/esempio                                      
+Nome file mancante
+&gt; src/out/esempio nomefile.txt
+Errore in esecuzione
+</code></pre>
+
+<p>La libreria standard del C++ ha una classe specifica per la gestione delle eccezioni:</p>
+
+<pre><code>class exception {
+public:
+    exception () throw();
+    exception (const exception&amp;) throw();
+    exception&amp; operator= (const exception&amp;) throw();
+    virtual ~exception() throw();
+    virtual const char* what() const throw();
+}
+</code></pre>
+
+<p>Definendo una classe derivata da <code>exception</code> con altri dati membro e una funzione <code>what</code> specializzate, è possibile gestire in maniera più strutturata le segnalazioni di errore.
+È quello che faremo nel prossimo esempio.</p>
+
+<pre><code>/** 
+ * @file src/stream-4.cpp
+ * Programma di esempio per la gestione delle eccezioni.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;exception&gt;
 
 using namespace std;
 
@@ -305,8 +509,8 @@ public:
     const char* getErrore() { return _errore; }
 
     /** Ridefinizione dell'operatore di output */
-    friend ostream& operator<< (ostream& os, Eccezione e){
-        os << e._codice << ": " << e._errore << endl;
+    friend ostream&amp; operator&lt;&lt; (ostream&amp; os, Eccezione e){
+        os &lt;&lt; e._codice &lt;&lt; ": " &lt;&lt; e._errore &lt;&lt; endl;
         return os;
     }
 };
@@ -314,7 +518,7 @@ public:
 int main(int argc, char** argv)
 {    
     ifstream testo;
-    testo.exceptions ( std::ifstream::badbit );
+    testo.exceptions ( ios_base::badbit );
 
     try {
 
@@ -325,7 +529,7 @@ int main(int argc, char** argv)
         *   Verifica che ci siano sia il nome del file di input 
         *   che il numero di caratteri da leggere.
         */
-        if (argc < 3) 
+        if (argc &lt; 3) 
             throw Eccezione(ERR_FILE_NONE, S_ERR_FILE_NONE);
             
         /** Definisce il numero di caratteri da leggere */
@@ -340,8 +544,8 @@ int main(int argc, char** argv)
         *   omogenea al resto del codice.
         */
         try {
-            testo.exceptions ( std::ifstream::badbit 
-                             | std::ifstream::failbit );
+            testo.exceptions ( ios_base::badbit 
+                             | ios_base::failbit );
             testo.open(argv[2]);            
         } catch(ifstream::failure e) {
             throw Eccezione(ERR_FILE_OPEN, S_ERR_FILE_OPEN);      
@@ -351,7 +555,7 @@ int main(int argc, char** argv)
         *   Re-imposta la exception mask per evitare
         *   eccezioni a fine file.
         */
-        testo.exceptions ( std::ifstream::goodbit);
+        testo.exceptions ( ios_base::goodbit);
 
         /** 
         *   Legge il testo e lo stampa a video 
@@ -361,10 +565,10 @@ int main(int argc, char** argv)
         while(testo.good()) {
             if((c = testo.get()) != EOF) {     
                 letti++;
-                cout << c;
+                cout &lt;&lt; c;
             } 
-            if((da_leggere != 0) && (letti >= da_leggere)) {
-                cout << endl;
+            if((da_leggere != 0) &amp;&amp; (letti &gt;= da_leggere)) {
+                cout &lt;&lt; endl;
                 break;
             }
         } 
@@ -375,7 +579,7 @@ int main(int argc, char** argv)
     } catch (Eccezione e) {
 
         /** Stampa a video l'eccezione */
-        cerr << e;
+        cerr &lt;&lt; e;
 
         /** Esce con un codice di errore */
         exit(e.getCodice());
@@ -384,13 +588,11 @@ int main(int argc, char** argv)
     return 0;
 }
 
-```
+</code></pre>
 
-La classe istream è specializzata nell’input da file; ostream nell’output mentre la classe iostream, che eredita da entrambe, può gestire sia l’input che l’output.
-class  istream : virtual public ios {...};
-class  ostream : virtual public ios {...};
-class iostream : public istream, public ostream {...};
-Queste sono le dichiarazioni delle prime tre classi derivate da ios; come vedete, tanto nella dichiarazione di istream che in quella di ostream, la classe base viene dichiarata come virtuale, in modo da evitare duplicazione di informazioni nel caso di ereditarietà multiple. 
+<!--
+
+
 5.2	stream c++ standard
 Vi ricordate quand’è stata la prima volta che abbiamo parlato di I/O su stream? Eravamo nel primo capitolo e l’istruzione interessata era:
 cout << "Ciao, mondo!" << "\n" 
