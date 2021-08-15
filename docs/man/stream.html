@@ -163,7 +163,7 @@ Oltre alle classi derivate da <code>iosbase</code>, la libreria comprende anche 
                basic_stringbuf     basic_filebuf
 </code></pre>
 
-<p>La classe template virtuale <code>basic_streambuf</code> contiene i dati e le funzioni necessarie alla gestione di un buffer di caratteri.
+<p>La classe template virtuale <code>basic_streambuf</code>, che fa parte della libreria, ma non della discendenza da <code>ios_base</code>, contiene i dati e le funzioni necessarie alla gestione di un buffer di caratteri.
 Le sue classi derivate <code>basic_stringbuf</code> e <code>basic_filebuf</code> sono invece specializzate, rispettivamente, nella gestione di buffer in memoria e su file.
 Anche in questo caso, la libreria comprende due versioni di ciascuna classe, specializzate per la gestione di <code>char</code> and <code>wchar_t</code>.</p>
 
@@ -179,12 +179,86 @@ typedef wfilebuf   basic_filebuf&lt;wchar_t&gt;
 
 <hr />
 
-<p>La classe <code id="ios-base">ios_base</code> fornisce le funzioni di base per la gestione degli stream, indipendentemente dal tipo di caratteri gestito e dal fatto che si tratti di stream di input o di output.<br />
-Tramite i metodi della classe è possibile verificare o modificare lo stato interno dello stream, la sua formattazione o definire delle funzioni callback per la gestione dei dati.<br />
-Una peculiarità di <code>ios_base</code> è che non possiede un costruttore pubblico, quindi non è possibile utilizzarla per creare oggetti, ma solo come base per delle classi derivate.</p>
+<p>La classe <code id="ios-base">ios_base</code> e la sua prima discendente <code id="basic-ios">basic_ios</code> sono classi generiche che forniscono le funzioni di base per la gestione degli stream, indipendentemente dal fatto che si tratti di stream di input o di output.<br />
+Una peculiarità di <code>ios_base</code> è che non possiede un costruttore pubblico, quindi non è possibile utilizzarla per creare oggetti, ma solo come base per delle classi derivate.<br />
+Le istanze specializzate di <code>basic_ios</code> sono:</p>
+
+<pre><code>typedef basic_ios&lt;char&gt;    ios;
+typedef basic_ios&lt;wchar_t&gt; wios;
+</code></pre>
+
+<p>Tramite i metodi di queste classi è possibile verificare o modificare lo stato interno dello stream, la sua formattazione o definire delle funzioni callback per la gestione dei dati.<br />
+Il dato membro <code>openmode</code>, per esempio, definisce il modo in cui debba essere aperto lo stream:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>app</td>
+      <td>Fa sì che ogni operazione di output avvenga alla fine dello stream.</td>
+    </tr>
+    <tr>
+      <td>ate</td>
+      <td>In apertura dello stream, sposta il punto di inserimento al termine  (<em><strong>at e</strong>nd</em>) del buffer di I/O.</td>
+    </tr>
+    <tr>
+      <td>binary</td>
+      <td>Gestisce il contenuto dello stream come un flusso di dati binario.</td>
+    </tr>
+    <tr>
+      <td>in</td>
+      <td>Permette operazioni di input.</td>
+    </tr>
+    <tr>
+      <td>out</td>
+      <td>Permette operazioni di output.</td>
+    </tr>
+    <tr>
+      <td>trunc</td>
+      <td>Azzera il contenuto dello stream all’apertura.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Il dato membro <code>iostate</code>, che utilizzeremo in uno dei prossimi esempii, contiene le informazioni sullo stato corrente dello stream:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>goodbit</td>
+      <td>Nessun errore</td>
+    </tr>
+    <tr>
+      <td>eofbit</td>
+      <td>È stata raggiunta la fine dello stream.</td>
+    </tr>
+    <tr>
+      <td>failbit</td>
+      <td>L’ultima operazione di I/O è fallita.</td>
+    </tr>
+    <tr>
+      <td>badbit</td>
+      <td>L’ultima operazione di I/O non era valida.</td>
+    </tr>
+    <tr>
+      <td>hardfail</td>
+      <td>Si è verificato un errore irrecuperabile.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Quando un’operazione di lettura o scrittura su stream fallisce, <code>iostate</code> assume un valore differente da zero; quindi, esaminandone il valore, possiamo risalire al tipo di errore occorso. 
+Entrambi questi dati membro sono delle <a href="/man/note#bitmask" class="xref">bitmask</a>, quindi possono contenere più di un valore.
+L’istruzione seguente, per esempio, apre uno stream su file combinando in <code>OR</code> tre possibili valori per <code>openmode</code>:</p>
+
+<pre><code>fstream file_io("io.txt"
+               , ios_base::in | ios_base::out | ios_base::app);
+</code></pre>
 
 <!--
-La classe <code id="basic-ios">basic_ios</code> fornisce le funzioni di base per 
+
+Dopo `basic_ios`, le classi della libreria si specializzano nell'input o nell'output: da un lato `basic_istream`, da cui derivano i due stream standard di input `cin` e `wcin`; dall'altro `basic_ostream`, da cui derivano gli stream standard di output `cout`, `cerr`, `clog` e le loro controparti "wide": `wcout`, `wcerr`, `wclog`. 
+
+
 
 ```
 /** 
@@ -311,9 +385,6 @@ int main(int argc, char** argv)
 }
 
 ```
-
-
-Oltre a un puntatore a un oggetto di classe `streambuf` da utilizzare come buffer per le operazioni di I/O formattato,
 
 La classe istream è specializzata nell’input da file; ostream nell’output mentre la classe iostream, che eredita da entrambe, può gestire sia l’input che l’output.
 class  istream : virtual public ios {...};
@@ -485,6 +556,7 @@ Abbiamo appena visto che esistono delle funzioni che consentono di leggere o scr
 char buffer[256] ;
 is.read (buffer, 256) ;
 Le ipotesi considerate prima, però, prevedevano situazioni ideali, in cui ciò che una parte richiedeva era esattamente quello che l’altra parte aveva da offrire, ma cosa succederebbe se per una qualsiasi ragione la funzione read() dell’esempio non riuscisse a leggere tutti i 256 caratteri previsti? Più in generale, possiamo sapere se una funzione o un’operazione di inserimento o estrazione ha avuto successo o è fallita? La risposta è sì, lo possiamo fare grazie ad alcune funzioni che ritornano o settano il valore delle variabile di stato dello stream.
+
 Quando un’operazione di lettura o scrittura su stream fallisce, un bit di un dato membro della classe ios, chiamato ios::state, assume un valore differente da zero quindi, esaminando il valore di state, possiamo risalire al tipo di errore occorso. I valori che state può assumere sono elencati in un’enumerazione propria della classe ios, chiamata ios::io_state:
 
 class ios

@@ -414,6 +414,13 @@ quote:
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>    
     </ol>
+    <h3>Il debug</h3>
+    <ol>
+        <li id="bitmask">
+            @todo: Spiegare cosa sia una bitmask.
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>    
+    </ol>
 </section>
 <!--
 <li id="cogito">
