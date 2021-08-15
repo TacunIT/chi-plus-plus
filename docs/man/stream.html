@@ -55,7 +55,7 @@
 </nav>
 </header>
 
-        <main class="bozza">
+        <main class="redazione">
             
         
 
@@ -71,7 +71,7 @@
 
 <p>Il C++ eredita dal C l’assenza di parole chiave per la gestione dell’I/O.
 Al posto di istruzioni come la <code>print</code> del BASIC, utilizza delle librerie di classi e funzioni che permettono di convertire in testo stampabile gli oggetti gestiti dal programma o di convertire degli elementi testuali in oggetti.
-Non potrebbe essere altrimenti: il C++ non deve gestire solo stringhe e numeri, come il BASIC, ma anche interi, numeri in virgola mobile, puntatori e soprattutto i tipi di dato definiti dall’utente, per i quali non sarebbe possibile definire un comportamento standard e che quindi dovrebbero essere trattati in maniera differente dai dati primitivi, con tanti saluti alla coerenza del linguaggio.
+Non potrebbe essere altrimenti: il C++ non deve gestire solo stringhe e numeri, come il BASIC, ma anche numeri in virgola mobile, puntatori e soprattutto i tipi di dato definiti dall’utente, per i quali non sarebbe possibile definire un comportamento standard e che quindi dovrebbero essere trattati in maniera differente dai dati primitivi, con tanti saluti alla coerenza del linguaggio.<br />
 Oltre a poter sfruttare le librerie di funzioni del <em>C</em>, il C++ ha una propria libreria di I/O, ba­sata sulla gerarchia delle classi <code>stream</code>, che permette di gestire anche i tipi di dato definiti dall’utente.
 Abbiamo visto degli esempii di questa caratteristica quando abbiamo parlato di <a href="/man/c-plus-plus#polimorfismo" class="xref">polimorfismo</a> e di <a href="/man/polimorfismo#overload-operatori" class="xref">overload degli operatori</a>:</p>
 
@@ -85,36 +85,394 @@ Abbiamo visto degli esempii di questa caratteristica quando abbiamo parlato di <
 </code></pre>
 
 <p>Questo codice “insegna” all’operatore <code>&lt;&lt;</code> come comportarsi per visualizzare un oggetto di classe <code>Animale</code>. 
-Lo stesso si può fare (e lo si è fatto) per qualsiasi altro tipo definito dall’utente. 
+Lo stesso si può fare (e lo abbiamo fatto) per qualsiasi altro tipo definito dall’utente. 
 È la sintassi del linguaggio che si adatta alle esigenze del programmatore, e non viceversa.<br />
 Alcuni concetti chiave per la comprensione degli stream sono:</p>
 
 <ul>
-  <li>uno stream rappresenta un flusso di dati che vanno da una sorgente ad una destinazione;</li>
-  <li>tanto la sorgente che la destinazione possono essere indifferentemente un buffer di memoria, una stringa o un file;</li>
+  <li>uno <em>stream</em> è un’astrazione che rappresenta la sorgente o la destinazione di un insieme di dati di lunghezza variabile: l’input da tastiera, l’output su schermo, i buffer di memoria, le stringhe, i file;</li>
   <li>l’output su stream verso una qualsiasi destinazione, viene definito <em>scrit­tura</em> o <em>inserimento</em> e si effettua per mezzo dell’operatore <code>&lt;&lt;</code>;</li>
   <li>con i termini <em>lettura</em> o <em>estrazione</em>, invece, si intende l’operazione di acquisizione da una sorgente, effettuata dall’operatore <code>&gt;&gt;</code>.</li>
 </ul>
 
+<p>La libreria <code>iostream</code> del C++ permette di gestire le operazioni di I/O su stream per mezzo di classi derivate da due classi base: <code>streambuf</code> e <code>iosbase</code>.
+La libreria ha due diverse “linee genealogiche”: una destinata alla gestione dei caratteri di un byte e una destinata ai caratteri multi-byte.
+Le classi della libreria multi-byte hanno lo stesso nome delle classi ordinarie, con l’aggiunta del prefisso: “w”.<br />
+Questo è lo schema di ereditarietà delle classi della libreria <code>iostream</code>:</p>
+
+<pre><code>                              ios_base
+                                 |
+                             basic_ios
+                                 |
+               __________________|_________________       
+              |                                    | 
+              |                                    | 
+        basic_istream                         basic_ostream
+             | |                                  | |   
+             | |                                  | |  
+             | |__________________________________| |  
+             |                   |                  |   
+      _______|______             |         _________|_______       
+     |              |            |        |                 | 
+basic_istringstream |            |   basic_ostringstream    |
+                    |            |                          |
+                    |            |                          |
+               basic_ifstream    |                  basic_ofstream
+                                 |
+                            basic_iostream
+                         ________|________
+                        |                 |
+               basic_stringstream    basic_fstream
+          
+</code></pre>
+
+<p>A parte <code>ios_base</code>, queste sono tutte classi template che sono poi istanziate con parametri differenti per gestire la gestione dei tipi di carattere <code>char</code> and <code>wchar_t</code>. 
+Per esempio, la classe <code>ostream</code> è una specializzazione della classe <code>basic_ostream</code>:</p>
+
+<pre><code>typedef basic_ostream&lt;char&gt; ostream;
+</code></pre>
+
+<p>Il suo corrispettivo multi-byte è la classe <code>wostream</code>:</p>
+
+<pre><code>typedef basic_ostream&lt;wchar_t&gt; wostream;
+</code></pre>
+
+<p>La classe template <code>basic_ostream</code>, a sua volta, deriva da <code>basic_ios</code>:</p>
+
+<pre><code>template&lt;
+    class CharT,
+    class Traits = std::char_traits&lt;CharT&gt;
+&gt; class basic_ostream 
+: virtual public std::basic_ios&lt;CharT, Traits&gt;
+</code></pre>
+<p>che, a sua volta, deriva da <code>ios_base</code>:</p>
+
+<pre><code>template&lt;
+    class CharT,
+    class Traits = std::char_traits&lt;CharT&gt;
+&gt; class basic_ios 
+: public std::ios_base	
+</code></pre>
+
+<p>In sostanza: se davanti al nome c’è il prefisso <code>basic_</code>, si tratta della classe template; se c’è c’è la lettera “w”, si tratta della versione multi-byte, altrimenti è la classe ordinaria.<br />
+Oltre alle classi derivate da <code>iosbase</code>, la libreria comprende anche delle classi per la gestione dei buffer di dati:</p>
+
+<pre><code>                       basic_streambuf
+                      ________|________
+                     |                 |
+               basic_stringbuf     basic_filebuf
+</code></pre>
+
+<p>La classe template virtuale <code>basic_streambuf</code>, che fa parte della libreria, ma non della discendenza da <code>ios_base</code>, contiene i dati e le funzioni necessarie alla gestione di un buffer di caratteri.
+Le sue classi derivate <code>basic_stringbuf</code> e <code>basic_filebuf</code> sono invece specializzate, rispettivamente, nella gestione di buffer in memoria e su file.
+Anche in questo caso, la libreria comprende due versioni di ciascuna classe, specializzate per la gestione di <code>char</code> and <code>wchar_t</code>.</p>
+
+<pre><code>typedef streambuf  basic_streambuf&lt;char&gt;
+typedef wstreambuf basic_streambuf&lt;wchar_t&gt;
+typedef stringbuf  basic_stringbuf&lt;char&gt;
+typedef wstringbuf basic_stringbuf&lt;wchar_t&gt;
+typedef filebuf    basic_filebuf&lt;char&gt;
+typedef wfilebuf   basic_filebuf&lt;wchar_t&gt;
+</code></pre>
+
+<p>Come forse avrai intuito, esaminare le singole classi della libreria <code>iostream</code> è un’attività che rivaleggia, in quanto a tedio, con l’epigrafia classica, ma ci permetterà di vedere applicati tutta una serie di principii di cui abbiamo parlato nelle lezioni precedenti, perciò, facciamoci forza e andiamo a incominciare.</p>
+
 <hr />
 
-<p>La libreria <code>iostream</code> del C++ gestisce le operazioni di I/O per mezzo di oggetti derivati da due classi base: <code>streambuf</code> e <code>ios</code>. 
-Gli oggetti della classe <code id="streambuf">streambuf</code> sono il corrispettivo C++ dei buffer del <em>C</em> e forniscono metodi per la gestione logica dei dati, fungendo da interfaccia verso i dispositivi fisici.
-Tutti gli oggetti derivati dalla classe <code>ios</code> posseggono un puntatore ad un oggetto di tipo <code>streambuf</code>, da utilizzare come buffer per eseguire delle operazioni di I/O formattato.<br />
-La classe <code id="ios">ios</code> fornisce dei metodi per la verifica dello stato interno dello stream e contiene un puntatore all’oggetto di classe <code>streambuf</code> associato. 
-Essendo una classe astratta, <code>ios</code> non può essere utilizzata direttamente per la creazione di oggetti, ma costituisce la base per classi specializzate nelle operazioni di I/O su file.</p>
+<p>La classe <code id="ios-base">ios_base</code> e la sua prima discendente <code id="basic-ios">basic_ios</code> sono classi generiche che forniscono le funzioni di base per la gestione degli stream, indipendentemente dal fatto che si tratti di stream di input o di output.<br />
+Una peculiarità di <code>ios_base</code> è che non possiede un costruttore pubblico, quindi non è possibile utilizzarla per creare oggetti, ma solo come base per delle classi derivate.<br />
+Le istanze specializzate di <code>basic_ios</code> sono:</p>
 
-<!--
+<pre><code>typedef basic_ios&lt;char&gt;    ios;
+typedef basic_ios&lt;wchar_t&gt; wios;
+</code></pre>
 
-```
-/** 
- * @file src/stream-eccezioni.cpp
+<p>Tramite i metodi di queste classi è possibile verificare o modificare lo stato interno dello stream, la sua formattazione o definire delle funzioni callback per la gestione dei dati.<br />
+Il dato membro <code>openmode</code>, per esempio, definisce il modo in cui debba essere aperto lo stream:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><em>app</em></td>
+      <td>Fa sì che ogni operazione di output avvenga alla fine dello stream.</td>
+    </tr>
+    <tr>
+      <td><em>ate</em></td>
+      <td>In apertura dello stream, sposta il punto di inserimento al termine  (<em><strong>at e</strong>nd</em>) del buffer di I/O.</td>
+    </tr>
+    <tr>
+      <td><em>binary</em></td>
+      <td>Gestisce il contenuto dello stream come un flusso di dati binario.</td>
+    </tr>
+    <tr>
+      <td><em>in</em></td>
+      <td>Permette operazioni di input.</td>
+    </tr>
+    <tr>
+      <td><em>out</em></td>
+      <td>Permette operazioni di output.</td>
+    </tr>
+    <tr>
+      <td><em>trunc</em></td>
+      <td>Azzera il contenuto dello stream all’apertura.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Il dato membro <code>iostate</code>, che utilizzeremo in uno dei prossimi esempii, contiene le informazioni sullo stato corrente dello stream:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><em>goodbit</em></td>
+      <td>Nessun errore</td>
+    </tr>
+    <tr>
+      <td><em>eofbit</em></td>
+      <td>È stata raggiunta la fine dello stream.</td>
+    </tr>
+    <tr>
+      <td><em>failbit</em></td>
+      <td>L’ultima operazione di I/O è fallita.</td>
+    </tr>
+    <tr>
+      <td><em>badbit</em></td>
+      <td>L’ultima operazione di I/O non era valida.</td>
+    </tr>
+    <tr>
+      <td><em>hardfail</em></td>
+      <td>Si è verificato un errore irrecuperabile.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Quando un’operazione di lettura o scrittura su stream fallisce, <code>iostate</code> assume un valore differente da zero; quindi, esaminandone il valore, possiamo risalire al tipo di errore occorso. 
+Entrambi questi dati membro sono delle <a href="/man/note#bitmask" class="xref">bitmask</a>, quindi possono contenere più di un valore.
+L’istruzione seguente, per esempio, apre uno stream su file combinando in <code>OR</code> tre possibili valori per <code>openmode</code>:</p>
+
+<pre><code>fstream file_io("io.txt"
+               , ios_base::in | ios_base::out | ios_base::app);
+</code></pre>
+
+<p>Dopo <code>basic_ios</code>, le classi della libreria si specializzano nell’input o nell’output: da un lato <code>basic_istream</code>, da cui derivano i due stream standard di input <code>cin</code> e <code>wcin</code>; dall’altro <code>basic_ostream</code>, da cui derivano gli stream standard di output <code>cout</code>, <code>cerr</code>, <code>clog</code> e le loro controparti “wide”: <code>wcout</code>, <code>wcerr</code>, <code>wclog</code>.<br />
+Da queste due classi generiche derivano delle classi template specializzate nell’input o nell’output su file o in memoria:</p>
+
+<pre><code>template 
+&lt;class Elem, class Tr = char_traits&lt;Elem&gt;&gt;
+class basic_ifstream 
+: public basic_istream&lt;Elem, Tr&gt;
+
+template 
+&lt;class Elem, class Tr = char_traits&lt;Elem&gt;, class Alloc = allocator&lt;Elem&gt;&gt;
+class basic_istringstream 
+: public basic_istream&lt;Elem, Tr&gt;
+
+template 
+&lt;class Elem, class Tr = char_traits&lt;Elem&gt;&gt;
+class basic_ofstream 
+: public basic_ostream&lt;Elem, Tr&gt;
+
+template 
+&lt;class Elem, class Tr = char_traits&lt;Elem&gt;, class Alloc = allocator&lt;Elem&gt;&gt;
+class basic_ostringstream 
+: public basic_ostream&lt;Elem, Tr&gt;
+</code></pre>
+
+<p>e una classe capace di gestire entrambe le operazioni:</p>
+
+<pre><code>template 
+&lt;class Elem, class Tr = char_traits&lt;Elem&gt;&gt;
+class basic_iostream 
+: public basic_istream&lt;Elem, Tr&gt;
+, public basic_ostream&lt;Elem, Tr&gt;
+</code></pre>
+
+<p>anche questa, con due specializzazioni per la gestione di file e memoria:</p>
+
+<pre><code>template 
+&lt;class Elem, class Tr = char_traits&lt;Elem&gt;, class Alloc = allocator&lt;Elem&gt;&gt;
+class basic_stringstream 
+: public basic_iostream&lt;Elem, Tr&gt;
+
+template 
+&lt;class Elem, class Tr = char_traits&lt;Elem&gt;&gt;
+class basic_fstream 
+: public basic_iostream&lt;Elem, Tr&gt;
+</code></pre>
+
+<p>Prima che ci assalga un attacco di narcolessia, vorrei mettere in atto tutto questo con un esempio, ma prima devo spiegarti cosa sono le <em>eccezioni</em>.</p>
+
+<hr id="eccezioni" />
+
+<p>Le <em>eccezioni</em> permettono di gestire gli errori che avvengono durante l’esecuzione del programma. 
+Quando succede qualcosa di anormale, il sistema <em>lancia</em> un’eccezione, ovvero trasferisce il controllo del processo dalla funzione corrente a blocchi di istruzioni specifici, chiamati <em>exception handler</em>. 
+Perché tutto questo avvenga, il codice che genera l’errore deve essere racchiuso in un blocco <code>try</code>/<code>catch</code>:</p>
+
+<pre><code>try {
+    
+    // codice che potrebbe dare errore
+    
+} catch (...) {
+
+    //  istruzioni per la gestione dell'errore
+}
+</code></pre>
+
+<p>Le eccezioni possono essere lanciate e gestite sia da codice specifico all’interno del programma, sia dai meccanismi automatici del C++:</p>
+
+<pre><code>/** 
+ * @file src/stream-eccezioni-1.cpp
  * Programma di esempio per la gestione delle eccezioni.
  */
  
-#include <iostream>
-#include <fstream>
-#include <exception>
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+
+using namespace std;
+
+
+int main(int argc, char** argv)
+{    
+    ifstream testo;
+
+    /** 
+    *   Fa sì che, se sia generata un'eccezione 
+    *   in caso di errore nella gestione del file.
+    */
+    testo.exceptions ( ios_base::failbit );
+
+    /** Questa istruzione genererà un'eccezione */
+    testo.open("fileinesistente.txt");
+    
+    testo.close();
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili ed esegui questo codice, causerai un errore che, non essendo gestito dal programma, è gestito dalla funzione standard del C++:</p>
+
+<pre><code>&gt; g++ src/cpp/stream-eccezioni-1.cpp -o src/out/esempio
+&gt; src/out/esempio
+libc++abi: terminating with uncaught exception of type
+std::__1::ios_base::failure: ios_base::clear
+: unspecified iostream_category error
+zsh: abort      src/out/esempio
+</code></pre>
+
+<p>Se però inseriamo il codice che apre il file in un blocco <code>try</code>/<code>catch</code> e definiamo un handler per la gestione degli errori in apertura dei file, il risultato sarà più controllato:</p>
+
+<pre><code>/** 
+ * @file src/stream-eccezioni-2.cpp
+ * Programma di esempio per la gestione delle eccezioni.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+
+using namespace std;
+
+
+int main(int argc, char** argv)
+{    
+    ifstream testo;
+
+    try {
+        
+        testo.exceptions ( ios_base::failbit );
+        testo.open("fileinesistente.txt");        
+        testo.close();
+        
+    } catch(ios_base::failure e) {
+     
+        cerr &lt;&lt; "Errore in esecuzione" &lt;&lt; endl;      
+   
+    }    
+   
+    return 0;
+}
+
+</code></pre>
+
+<pre><code>&gt; g++ src/cpp/stream-eccezioni-2.cpp -o src/out/esempio
+&gt; src/out/esempio                                      
+Errore in esecuzione
+</code></pre>
+
+<p>Possiamo addirittura prevenire gli errori in apertura del file facendo sì che sia lo stesso programma a lanciare un’eccezione se si accorge che manca il nome del file nei parametri di avvio:</p>
+
+<pre><code>/** 
+ * @file src/stream-eccezioni-3.cpp
+ * Programma di esempio per la gestione delle eccezioni.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+
+using namespace std;
+
+
+int main(int argc, char** argv)
+{    
+    ifstream testo;
+
+    try {
+        
+        /** Verifica che esista il nome del file da aprire */
+        if(argc &lt; 2)
+            throw "Nome file mancante";
+            
+        testo.exceptions ( ios_base::failbit );
+        testo.open(argv[1]);        
+        testo.close();
+        
+    } catch(ios_base::failure e) {
+     
+        cerr &lt;&lt; "Errore in esecuzione" &lt;&lt; endl;      
+   
+    } catch(char const* msg) {
+        
+        cerr &lt;&lt; msg &lt;&lt; endl;
+    }
+   
+    return 0;
+}
+
+</code></pre>
+
+<p>In questo modo, il programma è in condizione di gestire tutti i possibili errori di esecuzione:</p>
+
+<pre><code>&gt; g++ src/cpp/stream-eccezioni-3.cpp -o src/out/esempio
+&gt; src/out/esempio                                      
+Nome file mancante
+&gt; src/out/esempio nomefile.txt
+Errore in esecuzione
+</code></pre>
+
+<p>La libreria standard del C++ ha una classe specifica per la gestione delle eccezioni:</p>
+
+<pre><code>class exception {
+public:
+    exception () throw();
+    exception (const exception&amp;) throw();
+    exception&amp; operator= (const exception&amp;) throw();
+    virtual ~exception() throw();
+    virtual const char* what() const throw();
+}
+</code></pre>
+
+<p>Definendo una classe derivata da <code>exception</code> con altri dati membro e una funzione <code>what</code> specializzate, è possibile gestire in maniera più strutturata le segnalazioni di errore.
+È quello che faremo nel prossimo esempio.</p>
+
+<pre><code>/** 
+ * @file src/stream-4.cpp
+ * Programma di esempio per la gestione delle eccezioni.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;exception&gt;
 
 using namespace std;
 
@@ -151,8 +509,8 @@ public:
     const char* getErrore() { return _errore; }
 
     /** Ridefinizione dell'operatore di output */
-    friend ostream& operator<< (ostream& os, Eccezione e){
-        os << e._codice << ": " << e._errore << endl;
+    friend ostream&amp; operator&lt;&lt; (ostream&amp; os, Eccezione e){
+        os &lt;&lt; e._codice &lt;&lt; ": " &lt;&lt; e._errore &lt;&lt; endl;
         return os;
     }
 };
@@ -160,7 +518,7 @@ public:
 int main(int argc, char** argv)
 {    
     ifstream testo;
-    testo.exceptions ( std::ifstream::badbit );
+    testo.exceptions ( ios_base::badbit );
 
     try {
 
@@ -171,7 +529,7 @@ int main(int argc, char** argv)
         *   Verifica che ci siano sia il nome del file di input 
         *   che il numero di caratteri da leggere.
         */
-        if (argc < 3) 
+        if (argc &lt; 3) 
             throw Eccezione(ERR_FILE_NONE, S_ERR_FILE_NONE);
             
         /** Definisce il numero di caratteri da leggere */
@@ -186,8 +544,8 @@ int main(int argc, char** argv)
         *   omogenea al resto del codice.
         */
         try {
-            testo.exceptions ( std::ifstream::badbit 
-                             | std::ifstream::failbit );
+            testo.exceptions ( ios_base::badbit 
+                             | ios_base::failbit );
             testo.open(argv[2]);            
         } catch(ifstream::failure e) {
             throw Eccezione(ERR_FILE_OPEN, S_ERR_FILE_OPEN);      
@@ -197,7 +555,7 @@ int main(int argc, char** argv)
         *   Re-imposta la exception mask per evitare
         *   eccezioni a fine file.
         */
-        testo.exceptions ( std::ifstream::goodbit);
+        testo.exceptions ( ios_base::goodbit);
 
         /** 
         *   Legge il testo e lo stampa a video 
@@ -207,10 +565,10 @@ int main(int argc, char** argv)
         while(testo.good()) {
             if((c = testo.get()) != EOF) {     
                 letti++;
-                cout << c;
+                cout &lt;&lt; c;
             } 
-            if((da_leggere != 0) && (letti >= da_leggere)) {
-                cout << endl;
+            if((da_leggere != 0) &amp;&amp; (letti &gt;= da_leggere)) {
+                cout &lt;&lt; endl;
                 break;
             }
         } 
@@ -221,7 +579,7 @@ int main(int argc, char** argv)
     } catch (Eccezione e) {
 
         /** Stampa a video l'eccezione */
-        cerr << e;
+        cerr &lt;&lt; e;
 
         /** Esce con un codice di errore */
         exit(e.getCodice());
@@ -230,19 +588,11 @@ int main(int argc, char** argv)
     return 0;
 }
 
-```
+</code></pre>
 
-Lo schema di ereditarietà della classe streambuf è il seguente:
+<!--
 
-5.1.2	Classe ios
-La classe ios fornisce metodi  per la verifica dello stato interno dello stream e contiene un puntatore all’oggetto di classe streambuf associato. Essendo una classe astratta, ios non può essere utilizzata direttamente per la creazione di oggetti, ma costituisce la base per classi specializzate nelle operazioni di I/O su file. 
-Le prime è più importanti de­rivazioni di ios sono:
 
-La classe istream è specializzata nell’input da file; ostream nell’output mentre la classe iostream, che eredita da entrambe, può gestire sia l’input che l’output.
-class  istream : virtual public ios {...};
-class  ostream : virtual public ios {...};
-class iostream : public istream, public ostream {...};
-Queste sono le dichiarazioni delle prime tre classi derivate da ios; come vedete, tanto nella dichiarazione di istream che in quella di ostream, la classe base viene dichiarata come virtuale, in modo da evitare duplicazione di informazioni nel caso di ereditarietà multiple. 
 5.2	stream c++ standard
 Vi ricordate quand’è stata la prima volta che abbiamo parlato di I/O su stream? Eravamo nel primo capitolo e l’istruzione interessata era:
 cout << "Ciao, mondo!" << "\n" 
@@ -408,6 +758,7 @@ Abbiamo appena visto che esistono delle funzioni che consentono di leggere o scr
 char buffer[256] ;
 is.read (buffer, 256) ;
 Le ipotesi considerate prima, però, prevedevano situazioni ideali, in cui ciò che una parte richiedeva era esattamente quello che l’altra parte aveva da offrire, ma cosa succederebbe se per una qualsiasi ragione la funzione read() dell’esempio non riuscisse a leggere tutti i 256 caratteri previsti? Più in generale, possiamo sapere se una funzione o un’operazione di inserimento o estrazione ha avuto successo o è fallita? La risposta è sì, lo possiamo fare grazie ad alcune funzioni che ritornano o settano il valore delle variabile di stato dello stream.
+
 Quando un’operazione di lettura o scrittura su stream fallisce, un bit di un dato membro della classe ios, chiamato ios::state, assume un valore differente da zero quindi, esaminando il valore di state, possiamo risalire al tipo di errore occorso. I valori che state può assumere sono elencati in un’enumerazione propria della classe ios, chiamata ios::io_state:
 
 class ios
