@@ -1,5 +1,5 @@
 /** 
- * @file src/stream-eccezioni.cpp
+ * @file src/stream-4.cpp
  * Programma di esempio per la gestione delle eccezioni.
  */
  
@@ -51,7 +51,7 @@ public:
 int main(int argc, char** argv)
 {    
     ifstream testo;
-    testo.exceptions ( std::ifstream::badbit );
+    testo.exceptions ( ios_base::badbit );
 
     try {
 
@@ -77,8 +77,8 @@ int main(int argc, char** argv)
         *   omogenea al resto del codice.
         */
         try {
-            testo.exceptions ( std::ifstream::badbit 
-                             | std::ifstream::failbit );
+            testo.exceptions ( ios_base::badbit 
+                             | ios_base::failbit );
             testo.open(argv[2]);            
         } catch(ifstream::failure e) {
             throw Eccezione(ERR_FILE_OPEN, S_ERR_FILE_OPEN);      
@@ -88,7 +88,7 @@ int main(int argc, char** argv)
         *   Re-imposta la exception mask per evitare
         *   eccezioni a fine file.
         */
-        testo.exceptions ( std::ifstream::goodbit);
+        testo.exceptions ( ios_base::goodbit);
 
         /** 
         *   Legge il testo e lo stampa a video 
