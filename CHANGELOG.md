@@ -1,3 +1,7 @@
+## 0.28.0 (August 15, 2021)
+  - Redazione del capitolo sugli stream - gestione eccezioni
+  - Redazione del capitolo sugli stream - iostate e openmode
+
 ## 0.27.5 (August 14, 2021)
   - Completata prima stesura della sezione tecnica del capitolo sul debug
 
