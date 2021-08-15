@@ -110,7 +110,7 @@ Oltre alle classi derivate da `iosbase`, la libreria comprende anche delle class
                basic_stringbuf     basic_filebuf
 ```
 
-La classe template virtuale `basic_streambuf` contiene i dati e le funzioni necessarie alla gestione di un buffer di caratteri.
+La classe template virtuale `basic_streambuf`, che fa parte della libreria, ma non della discendenza da `ios_base`, contiene i dati e le funzioni necessarie alla gestione di un buffer di caratteri.
 Le sue classi derivate `basic_stringbuf` e `basic_filebuf` sono invece specializzate, rispettivamente, nella gestione di buffer in memoria e su file.
 Anche in questo caso, la libreria comprende due versioni di ciascuna classe, specializzate per la gestione di `char` and `wchar_t`. 
 
@@ -127,19 +127,53 @@ Come forse avrai intuito, esaminare le singole classi della libreria `iostream` 
 
 ---
 
-La classe <code id="ios-base">ios_base</code> fornisce le funzioni di base per la gestione degli stream, indipendentemente dal tipo di caratteri gestito e dal fatto che si tratti di stream di input o di output.  
-Tramite i metodi della classe è possibile verificare o modificare lo stato interno dello stream, la sua formattazione o definire delle funzioni callback per la gestione dei dati.  
+La classe <code id="ios-base">ios_base</code> e la sua prima discendente <code id="basic-ios">basic_ios</code> sono classi generiche che forniscono le funzioni di base per la gestione degli stream, indipendentemente dal fatto che si tratti di stream di input o di output.  
 Una peculiarità di `ios_base` è che non possiede un costruttore pubblico, quindi non è possibile utilizzarla per creare oggetti, ma solo come base per delle classi derivate.  
+Le istanze specializzate di `basic_ios` sono: 
+
+```
+typedef basic_ios<char>    ios;
+typedef basic_ios<wchar_t> wios;
+```
+
+Tramite i metodi di queste classi è possibile verificare o modificare lo stato interno dello stream, la sua formattazione o definire delle funzioni callback per la gestione dei dati.  
+Il dato membro `openmode`, per esempio, definisce il modo in cui debba essere aperto lo stream:
+
+|---|---|
+|app    | Fa sì che ogni operazione di output avvenga alla fine dello stream.
+|ate    | In apertura dello stream, sposta il punto di inserimento al termine  (_**at e**nd_) del buffer di I/O.
+|binary | Gestisce il contenuto dello stream come un flusso di dati binario.
+|in     | Permette operazioni di input.
+|out    | Permette operazioni di output.
+|trunc  | Azzera il contenuto dello stream all'apertura.
+
+Il dato membro `iostate`, che utilizzeremo in uno dei prossimi esempii, contiene le informazioni sullo stato corrente dello stream:
+
+|---|---|
+goodbit  | Nessun errore
+eofbit   | È stata raggiunta la fine dello stream.
+failbit  | L'ultima operazione di I/O è fallita.
+badbit   | L'ultima operazione di I/O non era valida.
+hardfail | Si è verificato un errore irrecuperabile.
+
+Quando un’operazione di lettura o scrittura su stream fallisce, `iostate` assume un valore differente da zero; quindi, esaminandone il valore, possiamo risalire al tipo di errore occorso. 
+Entrambi questi dati membro sono delle <a href="/man/note#bitmask" class="xref">bitmask</a>, quindi possono contenere più di un valore.
+L'istruzione seguente, per esempio, apre uno stream su file combinando in `OR` tre possibili valori per `openmode`:
+
+```
+fstream file_io("io.txt"
+               , ios_base::in | ios_base::out | ios_base::app);
+```
 
 <!--
-La classe <code id="basic-ios">basic_ios</code> fornisce le funzioni di base per 
+
+Dopo `basic_ios`, le classi della libreria si specializzano nell'input o nell'output: da un lato `basic_istream`, da cui derivano i due stream standard di input `cin` e `wcin`; dall'altro `basic_ostream`, da cui derivano gli stream standard di output `cout`, `cerr`, `clog` e le loro controparti "wide": `wcout`, `wcerr`, `wclog`. 
+
+
 
 ```
 {% include_relative src/stream-eccezioni.cpp %}
 ```
-
-
-Oltre a un puntatore a un oggetto di classe `streambuf` da utilizzare come buffer per le operazioni di I/O formattato,
 
 La classe istream è specializzata nell’input da file; ostream nell’output mentre la classe iostream, che eredita da entrambe, può gestire sia l’input che l’output.
 class  istream : virtual public ios {...};
@@ -311,6 +345,7 @@ Abbiamo appena visto che esistono delle funzioni che consentono di leggere o scr
 char buffer[256] ;
 is.read (buffer, 256) ;
 Le ipotesi considerate prima, però, prevedevano situazioni ideali, in cui ciò che una parte richiedeva era esattamente quello che l’altra parte aveva da offrire, ma cosa succederebbe se per una qualsiasi ragione la funzione read() dell’esempio non riuscisse a leggere tutti i 256 caratteri previsti? Più in generale, possiamo sapere se una funzione o un’operazione di inserimento o estrazione ha avuto successo o è fallita? La risposta è sì, lo possiamo fare grazie ad alcune funzioni che ritornano o settano il valore delle variabile di stato dello stream.
+
 Quando un’operazione di lettura o scrittura su stream fallisce, un bit di un dato membro della classe ios, chiamato ios::state, assume un valore differente da zero quindi, esaminando il valore di state, possiamo risalire al tipo di errore occorso. I valori che state può assumere sono elencati in un’enumerazione propria della classe ios, chiamata ios::io_state:
 
 class ios
