@@ -214,7 +214,72 @@ class basic_fstream
 : public basic_iostream<Elem, Tr>
 ```
 
-Prima che ci assalga un attacco di narcolessia, vorrei mettere in atto tutto questo con un esempio, ma prima devo spiegarti cosa sono le *eccezioni*.
+Prima che ci assalga un attacco di narcolessia, vorrei mettere in atto tutto questo con qualche esempio.  
+Abbiamo già visto diversi esempii di output su stream:
+
+```
+cout << "Hello World!"  // stringhe
+     << 12              // interi
+     << 0.35            // float
+     << argv[1]         // puntatori
+     << endl;               
+``` 
+
+Non abbiamo ancora parlato dell'input da stream, che però ha un funzionamento piuttosto simile:
+
+```
+{% include_relative src/stream-input-1.cpp %}
+```
+
+Questo codice legge una stringa dallo standard input e la scrive sullo schermo, ma ci mostra una peculiarità dell'input da stream:
+
+```
+> g++ src/cpp/stream-input-1.cpp -o src/out/esempio
+> src/out/esempio                                
+Inserire una stringa: Penso, quindi sono.
+Penso,
+```
+
+Come vedi, le operazioni di lettura con l’operatore >> si arrestano al primo carattere di spaziatura; perciò, se vogliamo leggere tutta la stringa, dobbiamo modificare il codice:
+
+```
+{% include_relative src/stream-input-2.cpp %}
+```
+
+```
+> g++ src/cpp/stream-input-2.cpp -o src/out/esempio
+> src/out/esempio                                  
+Inserire una stringa: Penso, quindi sono.
+Penso, quindi sono.
+Inserire una stringa: Cogito ergo sum.
+Cogito ergo sum.
+```
+
+Il comportamento di default degli operatori di input da stream prevede anche delle convenzioni di for­mattazione: <!-- @todo:verificare -->
+- **il formato di conversione della base è decimale**;
+- **il carattere di riempimento è lo spazio**;
+- **la precisione delle cifre a virgola mobile è la stessa utilizzata da print­f()**, con arrotondamento della sesta cifra decimale;
+- **la larghezza del campo ha valore di default 0**, il che significa che lo stream di output utilizzerà tutti i caratteri necessari alla visualizzazione dell’intero valore o stringa. 
+
+Le prime tre modifiche sono per­manenti: i nuovi valori saranno validi fino a che una nuova istruzione non torni a modificarli; le modifiche alla larghezza del campo di input, invece, valgono solo per l'istruzione che le richiede.  
+Un'altre caratteristica degli operatori `<<` e `>>` è che la loro precedenza è minore di quasi tutti gli altri operatori, il che vi consente di scrivere delle istruzioni come questa:
+
+```
+cout << "Due più due fa: " << 2 + 2 << '\n' ;
+```
+
+Sfortunatamente, però, gli operatori logici di AND `|`, di OR inclusivo `&` e di XOR esclusivo `^`, hanno una precedenza minore degli operatori `<<` e `>>`  e, se non vengono isolate tra parentesi, le operazioni che li coinvolgono possono essere causa di errori. 
+Per esempio, in un’istruzione come la seguente, l'operatore `&` verrebbe interpretato come un riferimento a un oggetto, con conseguenze tutt’altro che piacevoli:
+
+```
+cout << "Il valore è: " << 2 & 2 << '\n' ;	// ERRORE! 
+```
+
+la sintassi corretta è, invece:
+
+```
+cout << "Il valore è: " << (2 & 2) << '\n' ;	// OK
+```
 
 <hr id="eccezioni"> 
 
@@ -307,30 +372,6 @@ cout << "Il valore è: " << 2 & 2 << '\n' ;	// ERRORE!
 la sintassi corretta è invece:
 cout << "Il valore è: " << (2 & 2) << '\n' ;	// OK
 
-Altra cosa da dire è che le operazioni di lettura con l’operatore >> si arrestano al primo carattere di spaziatura e perciò l’output del codice:
-
-#include "iostream.h"
-
-void main()
-{
- char * stringa[30] ;
-	
-	cin >> stringa ;		// legge la stringa 
-	
-	cout << stringa ;		// la visualizza
-};
-
-non riprodurrà tutta la stringa che voi passerete in input, ma solo i caratteri precedenti uno spazio bianco, ovvero, se per caso la stringa fosse.
-Penso, quindi sono.
-l’output che otterreste sarebbe:
-Penso,
-un po’ poco, purtroppo, ma così vanno le cose con gli operatori standard di inserimento e lettura, il cui comportamento di default prevede anche le seguenti convenzioni di for­mattazione:
-	il formato di conversione della base è decimale. Nel caso questo set­taggio venga modificato, resterà così fino a nuovo ordine;
-	il carattere di riempimento è lo spazio. Come avviene per le modifiche al formato di conversione, anche qui le modifiche sono mantenute fino a che una nuova istruzione non torni a modificarle;
-	la precisione delle cifre a virgola mobile è la stessa utilizzata da print­f(), con arrotondamento della sesta cifra decimale (anche questo set­taggio è permanente);
-	la larghezza del campo ha valore di default 0, il che significa che lo stream di output utilizzerà tutti i caratteri necessari alla visualizzazione dell’intero valore o stringa. La modifica di questo settaggio non è per­manente, quindi ad ogni operazione di output, la larghezza del campo verrà riportata a 0, quale che fosse il suo precedente valore.
-    
-Le gestione standard dell I/O della libreria iostream va bene per la maggior parte dei casi comuni di input ed output, ma si possono verificare delle situazioni particolari (come quella vista precedentemente) in cui potremmo aver bisogno di leggere o scrivere un’intera stringa di caratteri, compresi i caratteri di spaziatura, o di visualizzare un nu­mero in una base o una precisione differenti da quelle di default. Entrambe sono esigenze legittime ed anche abbastanza frequenti, che non possiamo però gestire con gli operatori di estrazione ed inserimento, ma per mezzo di apposite funzioni membro che la libreria iostream fornisce. Di seguito illustreremo i metodi di lettura e scrittura su stream che permettono la gestione di stringhe contenenti caratteri di spaziatura o dati binari, nel prossimo capitolo ci occuperemo invece dei diversi metodi di formattazione dell’input e dell’output.
 
 5.5	funzioni di i/o a basso livello
 Le funzioni membro della classe ios che permettono una gestione a basso livello delle operazioni di input ed output sono:
