@@ -466,7 +466,7 @@ public:
 È quello che faremo nel prossimo esempio.</p>
 
 <pre><code>/** 
- * @file src/stream-4.cpp
+ * @file src/stream-eccezioni-4.cpp
  * Programma di esempio per la gestione delle eccezioni.
  */
  
@@ -592,79 +592,13 @@ int main(int argc, char** argv)
 
 <!--
 
-
-5.2	stream c++ standard
-Vi ricordate quand’è stata la prima volta che abbiamo parlato di I/O su stream? Eravamo nel primo capitolo e l’istruzione interessata era:
-cout << "Ciao, mondo!" << "\n" 
-Quel cout, si era detto, era il corrispettivo C++ dello stdout del C. Vero, ma adesso possiamo essere un po’ più precisi. Un programma C, al suo avvio, apre automaticamente cinque stream standard stdin, stdout, stderr, stdaux e stdprn. Anche C++ procede all’apertura di quattro stream standard: uno per l’input, derivato dalla classe istream e tre per l’output, derivati dalla classe ostream:
-Stream standard C e C++
-
-La dichiarazione dei quattro stream sopra elencati non è necessaria (infatti non c’è traccia di dichiarazioni nell’esempio del capitolo 1, che pure funziona senza errori) perché viene effettuata nel file header iostream.h che dev’essere quindi incluso in tutti i programmi che facciano uso di stream.
-5.3	output con le classi stream
-ostream& ostream::operator << (char*) ;
-Questa è la dichiarazione dell’operatore << per la classe ostream che trovate in ios­tream.h. La sintassi stabilisce che l’operatore riceva in input un puntatore ad una stringa di caratteri e restituisca un riferimento ad un oggetto di tipo ostream: vediamo come questo si applichi in un caso ormai noto:
-cout << "Ciao, mondo!" << "\n" 
-  a 	b	      c	 	   d	 e	
-Da sinistra a destra abbiamo :
-a	lo stream di output standard di C++ (un oggetto di tipo ostream);
-b	l’operatore di inserimento;
-c	una stringa di caratteri;
-d	un altro operatore di inserimento;
-e	una stringa di caratteri.
-In questa istruzione, il primo operatore (b) riceve in input una stringa di caratteri (c) e restituisce un riferimento allo stream di output cin, permettendoci, in questo modo, di aggiungergli in cascata una nuova istruzione di inserimento (d) seguita da un’altra stringa di caratteri (e). Se così non fosse, la stessa istruzione dovrebbe essere scritta:
-cout << "Ciao, mondo!" ;
-cout << "\n" ;
-il che, in caso di istruzioni più complesse potrebbe rivelarsi una bella seccatura. Bene: tutto ciò nel caso l’oggetto da inserire nello stream sia una stringa, ma se si trat­tasse di un numero?
-
-#include "iostream.h"
-
-void main()
-{
- int c = 5 ;
-
-	cout << "Questo è il capitolo n." << c << "\n" ;
-};
-Pregi del polimorfismo: l’output dei diversi tipi di dato avviene con la medesima sintassi; sarà poi, come al solito, compito del compilatore verificare, basandosi sul tipo degli og­getti che volta per volta intervengono nell’istruzione, quale sia la versione della funzione operatore da applicare. Nell’esempio precedente, viene prima utilizzata la versione dell’operatore << per l’inserimanto delle stringhe, poi quella per l’output degli interi, la cui dichiarazione è:
-ostream& ostream::operator << (int) ;
-infine, viene richiamata di nuovo la versione per stringhe per l’output del carattere di newline. È importante ricordare che un singolo operatore può inserire nello stream solo un oggetto, quindi i diversi oggetti che vanno inseriti nello stream debbono essere sepa­rati da altrettanti operatori di inserimento. Un’istruzione come la seguente, per esempio, darebbe luogo ad un errore di compilazione:
-
-cout << "Questo è il capitolo n." c "\n" ;	// ERRORE!
-Inoltre, l’output su stream non prevede che fra un oggetto e l’altro sia inserito nessuno spazio, quindi un simile frammento di codice:
-
-int a = 1, b = 2, c = 3 ;
-
-cout <<a<<b<<c <<"\n" ;
-cout << a << b <<	c << "\n";
-cout <<	a	<<	b	<<	c	<< "\n";
-darebbe luogo al seguente output:
-
-123
-123
-123
-Se volete avere un output separato per le diverse variabili, dovete provvedere personal­mente alla divisione con caratteri di spaziatura, tabulazioni ecc.. 
-Applicata al medesimo set di variabili, l’ istruzione:
-
-cout << a << ", " << b << ", " << c ;
-produce il seguente ouput:
-1, 2, 3
-Le stesse regole e la stessa, identica sintassi possono essere utilizzate per tutti i tipi di dato che la classe ostream di default riconosce e che sono riportati, insieme con il loro formato di output, nella tabella seguente:
-Formattazione di default dell’output
-
-Stesse regole e stessa sintassi, inoltre, possono venir usate per tutti i tipi di dato definiti dall’utente una volta che sia stata definita una sovrapposizione per la classe dell’operatore di output,
-5.4	input con le classi stream
-L’input da stream, o estrazione, avviene per mezzo dell’operatore >>. L’oggetto alla sin­istra dell’operatore deve essere di tipo istream, mentre la tabella qui sotto indica i tipi primitivi che possono comparire alla sua destra:
-Tipi di dato per cui è ridefinito il comportamento dell’operatore >>
-
-Noterete, rispetto alla tabella della classe ostream, che in questo caso non è stato de­finito un comportamento per i puntatori a void, e questo per la semplice ragione che, anche se poteste fornire un puntatore, a cosa punterebbe?
-Una prima annotazione da fare, riguardo l’input per mezzo delle classi stream, è che non è possibile, in questo caso, utilizzare dei suffissi. Quindi, se l è un long che vale 123, un programma che contenga le seguenti istruzioni:
-long l ;
-cin >> l ;
-si aspetta che voi battiate 123 e non 123L. Attenzione, poi ad una caratteristica sinistra degli operatori << e >>: la loro precedenza è minore di quasi tutti gli altri operatori, il che vi consente di scrivere delle istruzioni come questa:
+Attenzione, poi ad una caratteristica sinistra degli operatori << e >>: la loro precedenza è minore di quasi tutti gli altri operatori, il che vi consente di scrivere delle istruzioni come questa:
 cout << "Due più due fa: " << 2 + 2 << '\n' ;
 Sfortunatamente, però, gli operatori logici di AND |, di OR inclusivo & e di XOR esclusivo ^, hanno una precedenza minore degli operatori di shift su bit << e >>, e se non vengono isolate tra parentesi, le operazioni che li coinvolgono possono essere causa di errori. Per esempio, in un’istruzione come la seguente, l’ampersand verrebbe interpretato come un riferimento ad un oggetto, con conseguenze tutt’altro che piacevoli:
 cout << "Il valore è: " << 2 & 2 << '\n' ;	// ERRORE! 
 la sintassi corretta è invece:
 cout << "Il valore è: " << (2 & 2) << '\n' ;	// OK
+
 Altra cosa da dire è che le operazioni di lettura con l’operatore >> si arrestano al primo carattere di spaziatura e perciò l’output del codice:
 
 #include "iostream.h"
@@ -677,6 +611,7 @@ void main()
 	
 	cout << stringa ;		// la visualizza
 };
+
 non riprodurrà tutta la stringa che voi passerete in input, ma solo i caratteri precedenti uno spazio bianco, ovvero, se per caso la stringa fosse.
 Penso, quindi sono.
 l’output che otterreste sarebbe:
@@ -686,9 +621,12 @@ un po’ poco, purtroppo, ma così vanno le cose con gli operatori standard di i
 	il carattere di riempimento è lo spazio. Come avviene per le modifiche al formato di conversione, anche qui le modifiche sono mantenute fino a che una nuova istruzione non torni a modificarle;
 	la precisione delle cifre a virgola mobile è la stessa utilizzata da print­f(), con arrotondamento della sesta cifra decimale (anche questo set­taggio è permanente);
 	la larghezza del campo ha valore di default 0, il che significa che lo stream di output utilizzerà tutti i caratteri necessari alla visualizzazione dell’intero valore o stringa. La modifica di questo settaggio non è per­manente, quindi ad ogni operazione di output, la larghezza del campo verrà riportata a 0, quale che fosse il suo precedente valore.
+    
 Le gestione standard dell I/O della libreria iostream va bene per la maggior parte dei casi comuni di input ed output, ma si possono verificare delle situazioni particolari (come quella vista precedentemente) in cui potremmo aver bisogno di leggere o scrivere un’intera stringa di caratteri, compresi i caratteri di spaziatura, o di visualizzare un nu­mero in una base o una precisione differenti da quelle di default. Entrambe sono esigenze legittime ed anche abbastanza frequenti, che non possiamo però gestire con gli operatori di estrazione ed inserimento, ma per mezzo di apposite funzioni membro che la libreria iostream fornisce. Di seguito illustreremo i metodi di lettura e scrittura su stream che permettono la gestione di stringhe contenenti caratteri di spaziatura o dati binari, nel prossimo capitolo ci occuperemo invece dei diversi metodi di formattazione dell’input e dell’output.
+
 5.5	funzioni di i/o a basso livello
 Le funzioni membro della classe ios che permettono una gestione a basso livello delle operazioni di input ed output sono:
+
 Funzioni per l’I/O di basso livello con gli stream
 
 Il loro funzionamento è il seguente:
@@ -961,8 +899,10 @@ Costanti per la modifica della variabile x_flags
 Vediamo ora in dettaglio il funzionamento delle diverse funzioni:
 long ios::flags() 
 long ios::flags(long flags)
+
 La prima versione della funzione flags() è innocua: semplicemente ritorna il valore della variabile x_flags; un po’ più di attenzione va rivolta invece all’utilizzo della secon­da versione, che sostituisce la variabile con quella passatale come parametro, ritornando il vecchio valore. Se per esempio voleste modificare solo il flag ios::hex senza andare ad intaccare lo stato degli altri flag di formattazione, dovreste scrivere qualcosa di simile:
 FLAGSTST.CPP - Test della funzione ios::flags()
+
 /////////////////////////////////////////////////////////////
 //
 //	Dal C a Windows - Carlo Simonelli & Claudio Munisso
@@ -1012,6 +952,7 @@ Manipolatori
 
 Come vedete, esistono sette gestori non parametrizzati e sei che invece prevedono degli argomenti. I primi sono dichiarati nel file header iostream.h e non necessitano quindi di nessun’altra inclusione per poter essere utilizzati. I gestori parametrizzati, invece, hanno una struttura più complessa, dichiarata nel file header iomanip.h che deve essere perciò incluso in qualunque programma ne faccia uso. 
 Nel caso vi stiate chiedendo a cosa mai possa servire un altro metodo di formattazione dell’output, eccovi un breve ma significativo esempio sull’utilizzo dei manipolatori:
+
 MANIPTST.CPP - Utilizzo dei manipolatori
 /////////////////////////////////////////////////////////////
 //

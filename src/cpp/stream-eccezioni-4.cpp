@@ -1,5 +1,5 @@
 /** 
- * @file src/stream-4.cpp
+ * @file src/stream-eccezioni-4.cpp
  * Programma di esempio per la gestione delle eccezioni.
  */
  
