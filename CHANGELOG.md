@@ -1,3 +1,8 @@
+## 0.28.1 (August 16, 2021)
+  - Modificato stile del testo in grassetto
+  - Redazione del capitolo sugli stream - funzioni di input
+  - Redazione del capitolo sugli stream - gestione eccezioni
+
 ## 0.28.0 (August 15, 2021)
   - Redazione del capitolo sugli stream - gestione eccezioni
   - Redazione del capitolo sugli stream - iostate e openmode
