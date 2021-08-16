@@ -246,8 +246,7 @@ Il dato membro <code>openmode</code>, per esempio, definisce il modo in cui debb
   </tbody>
 </table>
 
-<p>Quando un’operazione di lettura o scrittura su stream fallisce, <code>iostate</code> assume un valore differente da zero; quindi, esaminandone il valore, possiamo risalire al tipo di errore occorso. 
-Entrambi questi dati membro sono delle <a href="/man/note#bitmask" class="xref">bitmask</a>, quindi possono contenere più di un valore.
+<p>Entrambi questi dati membro sono delle <a href="/man/note#bitmask" class="xref">bitmask</a>, quindi possono contenere più di un valore.
 L’istruzione seguente, per esempio, apre uno stream su file combinando in <code>OR</code> tre possibili valori per <code>openmode</code>:</p>
 
 <pre><code>fstream file_io("io.txt"
@@ -417,6 +416,10 @@ Per esempio, in un’istruzione come la seguente, l’operatore <code>&amp;</cod
 
 <pre><code>cout &lt;&lt; "Il valore è: " &lt;&lt; (2 &amp; 2) &lt;&lt; '\n' ;	// OK
 </code></pre>
+
+<!-- 
+Quando un’operazione di lettura o scrittura su stream fallisce, il valore del dato membro `iostate` assume un valore differente da zero; quindi, esaminandone il valore, possiamo risalire al tipo di errore occorso. 
+-->
 
 <hr id="eccezioni" />
 
@@ -708,170 +711,6 @@ int main(int argc, char** argv)
 
 <!--
 
-Attenzione, poi ad una caratteristica sinistra degli operatori << e >>: la loro precedenza è minore di quasi tutti gli altri operatori, il che vi consente di scrivere delle istruzioni come questa:
-cout << "Due più due fa: " << 2 + 2 << '\n' ;
-Sfortunatamente, però, gli operatori logici di AND |, di OR inclusivo & e di XOR esclusivo ^, hanno una precedenza minore degli operatori di shift su bit << e >>, e se non vengono isolate tra parentesi, le operazioni che li coinvolgono possono essere causa di errori. Per esempio, in un’istruzione come la seguente, l’ampersand verrebbe interpretato come un riferimento ad un oggetto, con conseguenze tutt’altro che piacevoli:
-cout << "Il valore è: " << 2 & 2 << '\n' ;	// ERRORE! 
-la sintassi corretta è invece:
-cout << "Il valore è: " << (2 & 2) << '\n' ;	// OK
-
-
-5.5	funzioni di i/o a basso livello
-Le funzioni membro della classe ios che permettono una gestione a basso livello delle operazioni di input ed output sono:
-
-Funzioni per l’I/O di basso livello con gli stream
-
-Il loro funzionamento è il seguente:
-int get () ;
-legge un singolo carattere (indifferentemente binario o di tipo testo) dallo stream di in­put e ne ritorna il valore. Se viene utilizzato con cin, attende la pressione del tasto Return prima di valutare il carattere e, contrariamente a quanto avviene con gli stream associati con files, legge la sequenza di caratteri Control-C come un break di sistema.
-istream &  get (char & ) ;
-istream &  get (unsigned char & ) ;
-Entrambe queste funzioni leggono un carattere di tipo binario o testo dallo stream e lo scrivono all’indirizzo passato come parametro.
-istream &  get (char *, int len, char = '\n') ;
-istream &  get (unsigned char *, int len, char = '\n') ;
-Leggono caratteri dallo stream di input fino a che non si verifica una di queste condizi­oni:
-	sono stati letti (len-1) caratteri;
-	è stato letto il carattere delimitatore (specificato dal terzo parametro);
-	è stato letto il carattere di fine file EOF.
-Nella stringa di output viene sempre aggiunto il carattere NULL finale. 
-istream &  getline (char* , int, char = '\n') ;
-istream &  getline (unsigned char* , int, char = '\n') ;
-Il funzionamento di queste funzioni è simile al precedente solo che in questo caso il carattere terminatore viene letto ed inserito nella stringa prima del carattere NULL finale.
-istream &  read (char * , int len) ;
-istream &  read (unsigned char * , int len) ;
-Similmente alla funzione get(), legge da uno stream len caratteri di testo binari, e li copia in un buffer. Contrariamente a quanto fa la funzione get(), non riconosce nessun carattere terminatore e non aggiunge caratteri NULL al termine del buffer.
-int  peek () ;
-Legge il carattere successivo dello streambuf associato, senza estrarlo. Per quanto riguarda l’utilizzo con stream associati a file, non ci sono problemi, ma consideriamo il seguente esempio:
-PEEKTEST.CPP - Comportamento della funzione Peek()
-/////////////////////////////////////////////////////////////
-//
-//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
-//
-//	PEEKTEST.CPP - Comportamento della funzione Peek()
-//
-/////////////////////////////////////////////////////////////
-#include <iostream.h>
-/////////////////////////////////////////////////////////////
-void main()
-{
- char c ;	
-
-	cin >> c ;							 //001
-	cout << "Il primo carattere è: " << c  << '\n' ;	 //002
-
-	c = cin.peek() ;						 //003
-	cout << "Il prossimo sarà: " << c  << '\n' ; 	 //004
-}
-/////////////////////////////////////////////////////////////
-001  Legge un carattere dallo stream di input.
-002  Lo visualizza.
-003  Legge il carettere successivo dallo streambuf assegnandolo alla variabile c.
-004  Visualizza il valore di c.
-Vi chiederete (spero) come sia possibile che peek() possa leggere un carattere da cin se l’istruzione 001 prevede l’input di un solo carattere. Il fatto è che qualsiasi operazione di input dallo standard stream cin legge tutti i caratteri inseriti dall’utente prima della pressione del tasto Return, li immagazzina nello streambuf associato per estrarre poi solo i caratteri richiesti. Se in risposta all’istruzione 001 avessimo quindi dato al pro­gramma precedente un input del tipo:
-Test
-nello streambuf associato a cin sarebbero finiti tutti e quattro i caratteri digitati, ma il programma, fedele ai suoi ordini, avrebbe considerato solo il primo, e l’istruzione 002 avrebbe prodotto questo output:
-Il primo carattere è: T
-ovviamente, l’output dell’istruzione 004 sarebbe stato:
-Il prossimo sarà: e
-Come tutte le altre funzioni precedentemente esaminate, anche peek() gestisce indiffer­entemente caratteri di tipo testo o binari, quindi nel caso l’imput fosse stato di un solo carattere, l’istruzione 004 avrebbe letto e visualizzato il carattere di newline '\n'.
-istream &  putback (char) ;
-Questa funzione permette di reinserire un carattere, precedentemente letto, in uno stream. Se invece il carattere lo volete deliberatamente ignorare, allora la prossima funzi­one fa al caso vostro.
-istream &  ignore ( int dim = 1, int = EOF) ;
-Permette di evitare la lettura di dim caratteri. Si interrompe se viene letto il carattere de­finito come terminatore (di default EOF). 
-ostream &  put (char) ;
-È la versione speculare dell’istruzione get(char) e permette di inserire un carattere in uno stream. Gestisce testo o dati binari e si può utilizzare tanto con gli stream standard che con quelli associati a file.
-ostream &  write (const char* , int n) ;
-ostream &  write (const unsigned char* , int n) ;
-Legge n caratteri dal buffer passato come parametro e li scrive nello stream di output. Attenzione perché, come del resto read(), write() non fa nulla di più e se volete un terminatore alla fine del buffer ce lo dovete mettere voi.
-5.6	gestione degli errori con la classe ios
-Abbiamo appena visto che esistono delle funzioni che consentono di leggere o scrivere un numero predeterminato di caratteri in uno stream:
-char buffer[256] ;
-is.read (buffer, 256) ;
-Le ipotesi considerate prima, però, prevedevano situazioni ideali, in cui ciò che una parte richiedeva era esattamente quello che l’altra parte aveva da offrire, ma cosa succederebbe se per una qualsiasi ragione la funzione read() dell’esempio non riuscisse a leggere tutti i 256 caratteri previsti? Più in generale, possiamo sapere se una funzione o un’operazione di inserimento o estrazione ha avuto successo o è fallita? La risposta è sì, lo possiamo fare grazie ad alcune funzioni che ritornano o settano il valore delle variabile di stato dello stream.
-
-Quando un’operazione di lettura o scrittura su stream fallisce, un bit di un dato membro della classe ios, chiamato ios::state, assume un valore differente da zero quindi, esaminando il valore di state, possiamo risalire al tipo di errore occorso. I valori che state può assumere sono elencati in un’enumerazione propria della classe ios, chiamata ios::io_state:
-
-class ios
-{
- protected:
-			...
-			int state ;		// variabile di stato
-			...
- public:
-			...
-
- enum io_state
- {
-  goodbit = 0x00 ; // nessun errore
-  eofbit  = 0x01 ; // raggiunta la fine del file
-  failbit = 0x02 ; // l'ultima operazione di I/O è fallita
-  badbit  = 0x04 ; // l'ultima operazione non era valida
-  hardfail = 0x08; // errore irrecuperabile
- }
-		...
-} ;
-Come vedete da quest’estratto della dichiarazione della classe ios, l’enumerazione io_state è pubblica, e quindi potete avere dei riferimenti ad essa nel vostro codice, mentre la variabile di stato è dichiarata come membro protected della classe, e quindi qualunque tentativo di accedere ad essa direttamente causerà un errore di compilazione:
-int flagEOF  = ios::eofbit ;	// OK, è pubblica
-int varStato = ios::status ;	// ERRORE! È privata
-Questo è un tipico esempio di protezione dei dati membro: dichiarando state come suo membro protected, la classe ios evita che accessi arbitrari possano pregiudicarne l’affidabilità. Eventuali valutazioni e modifiche della variabile sono permesse a funzioni esterne alla classe (o alle sue discendenti) solo attraverso alcune funzioni pubbliche di interfaccia che comprendono anche la sovrapposizione di un operatore ed una funzione di conversione:
-Funzioni di interfaccia per la verifica dello stato dello stream
-
-La ridefinizione dei due operatori di cast a void e di NOT logico sono estremamente utili perché permettono di utilizzare l’identificatore di un oggetto di classe derivata da ios in una istruzione booleana per verificare il corretto svolgimento delle operazioni di inseri­mento o estrazione:
-
-while( is.get(c) )	
-{
-	cout.put( c ) ;						
-}
-Il prossimo esempio mostra le possibilità di verifica e correzione degli errori di I/O con le classi stream:
-IOERROR.CPP - Verifica e correzione degli errori di I/O su stream
-/////////////////////////////////////////////////////////////
-//
-//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
-//
-//	IOERROR.CPP - Verifica e correzione degli errori di I/O
-//
-/////////////////////////////////////////////////////////////
-#include <fstream.h>
-/////////////////////////////////////////////////////////////
-void main()
-{
- char c ;
- ifstream is("test.dat") ;                            // 001
-
-	while(is)                                        // 002
-	{
-		is >> c ;                                       // 003
-
-		if( ! is.good() )                               // 004
-		{
-			if( is.eof())
-				cerr << "\nRaggiunta la fine del file" ;	
-
-			if( is.fail())
-				cerr << "\nErrore irrecuperabile" ;
-
-			if( is.bad() )                            // 005
-			{
-				cerr << "\nOperazione non valida" ;
-				is.clear() ;                        // 006
-			}
-		}
-		else	cout << c ;	                              // 007
-	}
-}
-/////////////////////////////////////////////////////////////
-001  Apre in lettura uno stream associandolo al file  test.dat (fidatevi, per ora...).
-002  Ripete il ciclo finché non si verifica un errore.
-003  Legge un carattere dallo stream di input.
-004  Se ci sono problemi, verifica la gravità dell’errore.
-005  Se si tratta di un errore lieve.
-006  Resetta la variabile ios::state a 0.
-007  Se non ci sono errori di input, scrive il carattere sullo standard output.
-TEST.DAT - File per la verifica degli errori di I/O su stream
-123
-1.234
-abcdefg
-Così com’e, il programma non va in errore che a fine file. Sostituendo il tipo della vari­abile c da char a double, va in errore alla terza linea, definendo c come int, l’errore arriva al numero decimale. In tutti e tre i casi l’interruzione del programma è causata dalla linea 002 che, andando a controllare lo stato dello stream, lo troverà alterato dall’operazione fallita.
 5.7	formattazione dei dati con le classi stream
 Abbiamo visto precedentemente che le classi stream operano una formattazione di de­fault sui diversi tipi di dato. Possono esserci dei casi, però, in cui questo comportamento predefinito risulta insufficiente o inadeguato alle nostre necessità. Potremmo voler visu­alizzare un intero in formato esadecimale o un carattere come intero decimale, non ci sarebbe nulla di strano, ma la formattazione standard delle classi stream non ce lo per­metterebbe.
 In compenso, però, la classe ios possiede dei membri dati di tipo protected il cui valore definisce la formattazione delle funzioni di I/O. Modificando il valore di questi dati mem­bro si modifica di conseguenza il comportamento dello stream, adattandolo alle necessità del caso. I dati membro di ios che determinano con il loro valore le caratteristiche dell’ I/O sono:
