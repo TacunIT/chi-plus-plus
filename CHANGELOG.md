@@ -1,3 +1,6 @@
+## 0.28.2 (August 19, 2021)
+  - Redazione del capitolo sugli stream - iostate e eof
+
 ## 0.28.1 (August 16, 2021)
   - Modificato stile del testo in grassetto
   - Redazione del capitolo sugli stream - funzioni di input
