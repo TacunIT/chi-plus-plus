@@ -400,14 +400,14 @@ Cogito ergo sum.
   <li><strong>la larghezza del campo ha valore di default 0</strong>, il che significa che lo stream di output utilizzerà tutti i caratteri necessari alla visualizzazione dell’intero valore o stringa.</li>
 </ul>
 
-<p>Le prime tre modifiche sono per­manenti: i nuovi valori saranno validi fino a che una nuova istruzione non torni a modificarli; le modifiche alla larghezza del campo di input, invece, valgono solo per l’istruzione che le richiede.<br />
-Un’altre caratteristica degli operatori <code>&lt;&lt;</code> e <code>&gt;&gt;</code> è che la loro precedenza è minore di quasi tutti gli altri operatori, il che vi consente di scrivere delle istruzioni come questa:</p>
+<p>Le prime tre modifiche sono per­manenti: una volta impostati, i nuovi valori saranno validi fino a che un’altra istruzione non torni a modificarli; le modifiche alla larghezza del campo di input, invece, valgono solo per l’istruzione che le richiede.<br />
+Un’altra caratteristica degli operatori <code>&lt;&lt;</code> e <code>&gt;&gt;</code> è che la loro precedenza è minore di quasi tutti gli altri operatori, il che vi consente di scrivere delle istruzioni come questa:</p>
 
 <pre><code>cout &lt;&lt; "Due più due fa: " &lt;&lt; 2 + 2 &lt;&lt; '\n' ;
 </code></pre>
 
 <p>Sfortunatamente, però, gli operatori logici di AND <code>|</code>, di OR inclusivo <code>&amp;</code> e di XOR esclusivo <code>^</code>, hanno una precedenza minore degli operatori <code>&lt;&lt;</code> e <code>&gt;&gt;</code>  e, se non vengono isolate tra parentesi, le operazioni che li coinvolgono possono essere causa di errori. 
-Per esempio, in un’istruzione come la seguente, l’operatore <code>&amp;</code> verrebbe interpretato come un riferimento a un oggetto, con conseguenze tutt’altro che piacevoli:</p>
+Per esempio, in un’istruzione come la seguente, l’operatore <code>&amp;</code> verrebbe interpretato come un riferimento a un oggetto, con conseguenze diverse da quelle attese:</p>
 
 <pre><code>cout &lt;&lt; "Il valore è: " &lt;&lt; 2 &amp; 2 &lt;&lt; '\n' ;	// ERRORE! 
 </code></pre>
@@ -417,9 +417,91 @@ Per esempio, in un’istruzione come la seguente, l’operatore <code>&amp;</cod
 <pre><code>cout &lt;&lt; "Il valore è: " &lt;&lt; (2 &amp; 2) &lt;&lt; '\n' ;	// OK
 </code></pre>
 
-<!-- 
-Quando un’operazione di lettura o scrittura su stream fallisce, il valore del dato membro `iostate` assume un valore differente da zero; quindi, esaminandone il valore, possiamo risalire al tipo di errore occorso. 
--->
+<p>Quando un’operazione di lettura o scrittura su stream fallisce, il valore del dato membro <code>iostate</code> assume un valore differente da zero.
+La classe basic_ios ha delle funzioni membro booleane che tornano <code>true</code> o <code>false</code> se il valore <code>iostate</code> indica un determinato evento e la funzione <code>rdstate</code> che torna il valore assoluto di <code>iostate</code>:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>good</td>
+      <td>nessun errore: il valore di <code>iostate</code> è 0</td>
+    </tr>
+    <tr>
+      <td>eof</td>
+      <td>è stata raggiunta la fine del file</td>
+    </tr>
+    <tr>
+      <td>fail</td>
+      <td>c’è stato un errore di I/O non bloccante</td>
+    </tr>
+    <tr>
+      <td>bad</td>
+      <td>c’è stato un errore di I/O bloccante</td>
+    </tr>
+    <tr>
+      <td>rdstate</td>
+      <td>torna il valore corrente di <code>iostate</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Come vedremo dopo, queste funzioni permettono di interrompere la lettura o la scrittura di uno stream quando si verifica un errore o se si è raggiunta la fine del file.
+Una cosa da non fare mai, però, è di utilizzare la funzione <code>eof</code> all’interno di un ciclo <code>while</code> per la lettura di un file:</p>
+
+<pre><code>/** 
+ * @file src/stream-eof.cpp
+ * Gestione dell'I/O su file con gli stream.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+
+using namespace std;
+
+
+int main(int argc, char** argv)
+{    
+    ifstream testo;
+    
+    /** apre il file in lettura */
+    testo.open(argv[1]);
+    
+    /** Verifica che il file sia aperto */
+    if(testo.is_open()) {
+        
+        /** Utilizza eof per gestire il ciclo */
+        while(!testo.eof()) {
+
+            int n;
+
+            /** Legge un numero dal file */
+            testo &gt;&gt; n;
+
+            /** Lo scrive a video */
+            cout &lt;&lt; n &lt;&lt; endl;
+        }
+        
+    }
+        
+    /** Chiude il file di input */
+    testo.close();
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Se fai leggere a questo programma un file che contenga i numeri: 10, 20 e 30, otterrai questo output:</p>
+
+<pre><code>&gt; g++ src/cpp/stream-eof.cpp -o src/out/esempio
+&gt; src/out/esempio src/cpp/stream-eof.txt       
+10
+20
+30
+30
+</code></pre>
+
+<!-- Spiegare perché sia un errore -->
 
 <hr id="eccezioni" />
 
