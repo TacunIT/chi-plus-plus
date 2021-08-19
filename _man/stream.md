@@ -260,15 +260,15 @@ Il comportamento di default degli operatori di input da stream prevede anche del
 - **la precisione delle cifre a virgola mobile è la stessa utilizzata da print­f()**, con arrotondamento della sesta cifra decimale;
 - **la larghezza del campo ha valore di default 0**, il che significa che lo stream di output utilizzerà tutti i caratteri necessari alla visualizzazione dell’intero valore o stringa. 
 
-Le prime tre modifiche sono per­manenti: i nuovi valori saranno validi fino a che una nuova istruzione non torni a modificarli; le modifiche alla larghezza del campo di input, invece, valgono solo per l'istruzione che le richiede.  
-Un'altre caratteristica degli operatori `<<` e `>>` è che la loro precedenza è minore di quasi tutti gli altri operatori, il che vi consente di scrivere delle istruzioni come questa:
+Le prime tre modifiche sono per­manenti: una volta impostati, i nuovi valori saranno validi fino a che un'altra istruzione non torni a modificarli; le modifiche alla larghezza del campo di input, invece, valgono solo per l'istruzione che le richiede.  
+Un'altra caratteristica degli operatori `<<` e `>>` è che la loro precedenza è minore di quasi tutti gli altri operatori, il che vi consente di scrivere delle istruzioni come questa:
 
 ```
 cout << "Due più due fa: " << 2 + 2 << '\n' ;
 ```
 
 Sfortunatamente, però, gli operatori logici di AND `|`, di OR inclusivo `&` e di XOR esclusivo `^`, hanno una precedenza minore degli operatori `<<` e `>>`  e, se non vengono isolate tra parentesi, le operazioni che li coinvolgono possono essere causa di errori. 
-Per esempio, in un’istruzione come la seguente, l'operatore `&` verrebbe interpretato come un riferimento a un oggetto, con conseguenze tutt’altro che piacevoli:
+Per esempio, in un’istruzione come la seguente, l'operatore `&` verrebbe interpretato come un riferimento a un oggetto, con conseguenze diverse da quelle attese:
 
 ```
 cout << "Il valore è: " << 2 & 2 << '\n' ;	// ERRORE! 
@@ -280,9 +280,35 @@ la sintassi corretta è, invece:
 cout << "Il valore è: " << (2 & 2) << '\n' ;	// OK
 ```
 
-<!-- 
-Quando un’operazione di lettura o scrittura su stream fallisce, il valore del dato membro `iostate` assume un valore differente da zero; quindi, esaminandone il valore, possiamo risalire al tipo di errore occorso. 
--->
+Quando un’operazione di lettura o scrittura su stream fallisce, il valore del dato membro `iostate` assume un valore differente da zero.
+La classe basic_ios ha delle funzioni membro booleane che tornano `true` o `false` se il valore `iostate` indica un determinato evento e la funzione `rdstate` che torna il valore assoluto di `iostate`:
+
+|---|---|
+| good    | nessun errore: il valore di `iostate` è 0
+| eof     | è stata raggiunta la fine del file
+| fail    | c'è stato un errore di I/O non bloccante
+| bad     | c'è stato un errore di I/O bloccante
+| rdstate | torna il valore corrente di `iostate`
+
+Come vedremo dopo, queste funzioni permettono di interrompere la lettura o la scrittura di uno stream quando si verifica un errore o se si è raggiunta la fine del file.
+Una cosa da non fare mai, però, è di utilizzare la funzione `eof` all'interno di un ciclo `while` per la lettura di un file:
+
+```
+{% include_relative src/stream-eof.cpp %}
+```
+
+Se fai leggere a questo programma un file che contenga i numeri: 10, 20 e 30, otterrai questo output: 
+
+```
+> g++ src/cpp/stream-eof.cpp -o src/out/esempio
+> src/out/esempio src/cpp/stream-eof.txt       
+10
+20
+30
+30
+```
+
+<!-- Spiegare perché sia un errore -->
 
 <hr id="eccezioni"> 
 
