@@ -12,6 +12,7 @@ using namespace std;
 int main(int argc, char** argv)
 {    
     ifstream testo;
+    int      n;
     
     /** apre il file in lettura */
     testo.open(argv[1]);
@@ -21,8 +22,6 @@ int main(int argc, char** argv)
         
         /** Utilizza eof per gestire il ciclo */
         while(!testo.eof()) {
-
-            int n;
 
             /** Legge un numero dal file */
             testo >> n;

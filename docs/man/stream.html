@@ -445,8 +445,8 @@ La classe basic_ios ha delle funzioni membro booleane che tornano <code>true</co
   </tbody>
 </table>
 
-<p>Come vedremo dopo, queste funzioni permettono di interrompere la lettura o la scrittura di uno stream quando si verifica un errore o se si è raggiunta la fine del file.
-Una cosa da non fare mai, però, è di utilizzare la funzione <code>eof</code> all’interno di un ciclo <code>while</code> per la lettura di un file:</p>
+<p>Queste funzioni permettono di interrompere la lettura o la scrittura di uno stream quando si verifica un errore o se si è raggiunta la fine del file.
+Una cosa che non devi fare mai, però, è di utilizzare la funzione <code>eof</code> all’interno di un ciclo <code>while</code> per la lettura di un file:</p>
 
 <pre><code>/** 
  * @file src/stream-eof.cpp
@@ -462,6 +462,7 @@ using namespace std;
 int main(int argc, char** argv)
 {    
     ifstream testo;
+    int      n;
     
     /** apre il file in lettura */
     testo.open(argv[1]);
@@ -471,8 +472,6 @@ int main(int argc, char** argv)
         
         /** Utilizza eof per gestire il ciclo */
         while(!testo.eof()) {
-
-            int n;
 
             /** Legge un numero dal file */
             testo &gt;&gt; n;
@@ -498,6 +497,60 @@ int main(int argc, char** argv)
 10
 20
 30
+30
+</code></pre>
+
+<p>L’errore si verifica perché il controllo della funzione <code>eof</code> avviene prima della quarta operazione di lettura, quando lo stream è ancora in stato <code>good</code>.
+Un modo migliore di gestire questi casi è di utilizzare la funzione <code>good</code>, che ci permette di verificare anche la corretta apertura del file:</p>
+
+<pre><code>/** 
+ * @file src/stream-good.cpp
+ * Gestione dell'I/O su file con gli stream.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+
+using namespace std;
+
+
+int main(int argc, char** argv)
+{    
+    ifstream testo;
+    int      n;
+    
+    /** apre il file in lettura */
+    testo.open(argv[1]);
+    
+    /** 
+    *   Il ciclo si ripete fino a che non 
+    *   si verifica un errore
+    */
+    while(testo.good()) {
+
+        /** Legge un numero dal file */
+        testo &gt;&gt; n;
+
+        /** Si interrompe se il file è finito */
+        if(testo.eof()) break;
+        
+        /** Altrimenti, scrive il numero */
+        cout &lt;&lt; n &lt;&lt; endl;
+    }
+                
+    /** Chiude il file di input */
+    testo.close();
+    
+    return 0;
+}
+
+</code></pre>
+<p>Se compili ed esegui questo programma, ottieni il risultato corretto:</p>
+
+<pre><code>&gt; g++ src/cpp/stream-good.cpp -o src/out/esempio
+&gt; src/out/esempio src/cpp/stream-eof.txt        
+10
+20
 30
 </code></pre>
 
@@ -531,7 +584,6 @@ Perché tutto questo avvenga, il codice che genera l’errore deve essere racchi
 
 using namespace std;
 
-
 int main(int argc, char** argv)
 {    
     ifstream testo;
@@ -562,7 +614,7 @@ std::__1::ios_base::failure: ios_base::clear
 zsh: abort      src/out/esempio
 </code></pre>
 
-<p>Se però inseriamo il codice che apre il file in un blocco <code>try</code>/<code>catch</code> e definiamo un handler per la gestione degli errori in apertura dei file, il risultato sarà più controllato:</p>
+<p>Se però inseriamo il codice che apre il file in un blocco <code>try</code>/<code>catch</code> e definiamo un <em>handler</em> per la gestione degli errori in apertura dei file, il risultato sarà più controllato:</p>
 
 <pre><code>/** 
  * @file src/stream-eccezioni-2.cpp
@@ -669,6 +721,10 @@ public:
 <pre><code>/** 
  * @file src/stream-eccezioni-4.cpp
  * Programma di esempio per la gestione delle eccezioni.
+ * Richiede, in input, il numero di caratteri da leggere e il path 
+ * del file di input:
+ *
+ *      src/out/esempio &lt;n caratteri da leggere&gt; &lt;file di input&gt;
  */
  
 #include &lt;iostream&gt;
@@ -780,8 +836,8 @@ int main(int argc, char** argv)
     } catch (Eccezione e) {
 
         /** Stampa a video l'eccezione */
-        cerr &lt;&lt; e;
-
+        cerr &lt;&lt; e &lt;&lt; endl;
+        
         /** Esce con un codice di errore */
         exit(e.getCodice());
     }
