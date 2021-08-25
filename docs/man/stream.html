@@ -554,8 +554,6 @@ int main(int argc, char** argv)
 30
 </code></pre>
 
-<!-- Spiegare perché sia un errore -->
-
 <hr id="eccezioni" />
 
 <p>Le <em>eccezioni</em> permettono di gestire gli errori che avvengono durante l’esecuzione del programma. 
@@ -878,81 +876,85 @@ Conobbi il Maestro quattro anni dopo.
 
 <hr id="formattazione-output" />
 
+<p>In alcuni esempii precedenti abbiamo visto che è possibile modificare il formato di output di default di uno stream tramite dei <em>maipolatori</em>:</p>
+
+<pre><code>cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._h &lt;&lt; ":" 
+     &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._m &lt;&lt; ":" 
+     &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._s &lt;&lt; endl;
+</code></pre>
+
+<p>Lo stesso risultato si può ottenere per mezzo di apposite funzioni delle classi <code>ios_base</code> e <code>basic_ios</code>, che permettono di alterare il carattere di riempimento, la precisione delle cifre decimali e la larghezza del campo.
+Le prime due modifiche sono permanenti la quarta no.
+Se si modifica il formato di output di uno stream, questo resterà nel nuovo stato fino alla prossima istruzione di modifica, mentre il valore della lunghezza del campo viene re-impostato a zero dopo ogni operazione di output:</p>
+
+<pre><code>/** 
+ * @file src/stream-format.cpp
+ * Formattazione dell'I/O con gli stream.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+
+using namespace std;
+
+
+int main(int argc, char** argv)
+{    
+    double d = 123.456789 ;
+
+    /** Mostra i valori di default */
+    cout &lt;&lt; endl;
+    cout &lt;&lt; "Valori di default" &lt;&lt; endl;
+    cout &lt;&lt; "  width:     "  &lt;&lt; cout.width()        &lt;&lt; endl;
+    cout &lt;&lt; "  precision: "  &lt;&lt; cout.precision()    &lt;&lt; endl; 	
+    cout &lt;&lt; "  fill:      '" &lt;&lt; cout.fill()  &lt;&lt; "'" &lt;&lt; endl;	
+    cout &lt;&lt; "  output:    "  &lt;&lt; d                   &lt;&lt; endl;
+
+    /** Modifica il formato e mostra il nuovo output */
+    cout &lt;&lt; endl;
+    cout &lt;&lt; "Modifica formato" &lt;&lt; endl;
+    cout &lt;&lt; "  output:    "  ;
+    cout.precision(4) ;
+    cout.fill('#') ;
+    cout.width(10) ;
+    cout &lt;&lt; d &lt;&lt; endl;
+    
+    /** Mostra la persistenza dei valori */
+    cout &lt;&lt; endl;
+    cout &lt;&lt; "Valori correnti" &lt;&lt; endl;
+    cout &lt;&lt; "  width:     "  &lt;&lt; cout.width()        &lt;&lt; endl;
+    cout &lt;&lt; "  precision: "  &lt;&lt; cout.precision()    &lt;&lt; endl; 	
+    cout &lt;&lt; "  fill:      '" &lt;&lt; cout.fill()  &lt;&lt; "'" &lt;&lt; endl;	
+    cout &lt;&lt; "  output:    "  &lt;&lt; d                   &lt;&lt; endl;
+
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili ed esegui questo codice, ottieni:</p>
+
+<pre><code>&gt; src/out/esempio                                 
+
+Valori di default
+  precision: 6
+  fill:      ' '
+  width:     0
+  output:    123.457
+
+Valori modificati
+  output:    #####123.5
+
+Valori correnti
+  precision: 4
+  fill:      '#'
+  width:     0
+  output:    123.5
+</code></pre>
+
 <!--
 
-5.7	formattazione dei dati con le classi stream
-Abbiamo visto precedentemente che le classi stream operano una formattazione di de­fault sui diversi tipi di dato. Possono esserci dei casi, però, in cui questo comportamento predefinito risulta insufficiente o inadeguato alle nostre necessità. Potremmo voler visu­alizzare un intero in formato esadecimale o un carattere come intero decimale, non ci sarebbe nulla di strano, ma la formattazione standard delle classi stream non ce lo per­metterebbe.
-In compenso, però, la classe ios possiede dei membri dati di tipo protected il cui valore definisce la formattazione delle funzioni di I/O. Modificando il valore di questi dati mem­bro si modifica di conseguenza il comportamento dello stream, adattandolo alle necessità del caso. I dati membro di ios che determinano con il loro valore le caratteristiche dell’ I/O sono:
-	x_fill : intero, definisce il carattere di riempimento per l’output;
-	x_precision: intero, definisce la precisione in virgola mobile per l’output;
-	x_width: intero, definisce la dimensione del campo in input;
-In quanto membri protetti, questi valori non sono modificabili direttamente da un oggetto di classe derivata (ostream, istream ecc.). Qualunque modifica o verifica di stato va fatta per mezzo di una delle apposite funzioni di interfaccia elencate di seguito: 
-Funzioni di interfaccia per la modifica della formattazione
 
-Per mezzo di queste funzioni è possibile modificare il formato di conversione della base, il carattere di riempimento, la precisione delle cifre decimali e la larghezza del campo. Come abbiamo visto, le prime tre modifiche sono permanenti (ovvero, se si modifica il formato di output di uno stream, questo resterà nel nuovo stato fino alla prossima istruzione di modifica), mentre la quarta no: ad ogni operazione di output il valore della lunghezza del campo viene resettato a zero.
-Vediamole all’opera tutte insieme queste funzioni nel prossimo esempio che mostra anche come il settaggio dell’ampiezza del campo non sia permanente:
-FORMOUT.CPP - Modifica della formattazione dell’ouput
-/////////////////////////////////////////////////////////////
-//
-//	Dal C a Windows - Carlo Simonelli & Claudio Munisso
-//
-//	FORMOUT.CPP - Modifica dellla formattazione dell'output
-//
-/////////////////////////////////////////////////////////////
-#include <iostream.h>
-/////////////////////////////////////////////////////////////
-void main()
-{
- double d = 123.456789 ;
-
-  cout << "\nPrecisione = "<< cout.precision() ; 	// 001
-  cout << "\nRiempimento = '"<< cout.fill() << "'";	// 001
-  cout << "\nLarghezza = " << cout.width() ;		// 001
-
-  cout << "\nVisualizzazione = "<< d ;			// 002
-  cout << "\nCon i nuovi settaggi = " ;			// 003
-  cout.precision(3) ;						// 004
-  cout.fill('#') ;						// 004
-  cout.width(10) ;						// 004
-  cout << d ;							// 005
-
- cout << "\nVia precision() e fill() = " ;
- cout.width(10) ;							// 006
- cout << d ;							// 007
-
- cout << "\nVia anche width() = " << d ;			// 008
-
- cout << "\nPrecisione = " << cout.precision() ;	// 009
- cout << "\nRiempimento = '"<< cout.fill() << "'" ;	// 009
- cout << "\nLarghezza = " << cout.width() ;		// 009
-};
-/////////////////////////////////////////////////////////////
-001  Visualizza i settaggi di default.
-002  Visualizza la variabile con i settaggi di default.
-003  Vediamo se indovinate perché questa stringa va visualizzata separatamente...
-004  Modifica i settaggi di default.
-005  Visualizza la variabile con i nuovi settaggi.
-006  Ripete solo la modifica della dimensione del campo.
-007  Visualizza la variabile con i nuovi settaggi.
-008  Visualizza la variabile senza effettuare settaggi.
-009  Visualizza il valore delle variabili dopo i settaggi.
-L’ouput di questo esempio è:
-
-Precisione = 6
-Riempimento = ' '
-Larghezza = 0
-Visualizzazione = 123.456789
-Con i nuovi settaggi = ###123.457
-Via precision() e fill() = ###123.457
-Via anche width() = 123.457
-Precisione = 3
-Riempimento = '#'
-Larghezza = 0
-Come potrete vedere, le modifiche apportate con precision() e fill() rimangono at­tive anche dopo una prima operazione di output, mentre quelle conseguenti a width() no. Per questa ragione, le intestazioni delle righe 005 e 007 sono visualizzate prima delle modifiche. Se così non fosse stato, e cioè se la riga 005 fosse stata:
-cout << "\nCon i nuovi settaggi = " << d ;		// 005
-l’operazione di output della stringa avrebbe resettato il valore di x_width e l’output sarebbe quindi stato:
-
-Con i nuovi settaggi = 123.457
 5.8	modifica dei flags di formattazione
 Ma la larghezza del campo, la precisione ed il carattere di riempimento non sono le uniche formattazioni modificabili. Un altro modo di modificare le convenzioni di format­tazione standard è quello di alterare la variabile membro x_flags che contiene i flags per la formattazione. 
 La dichiarazione della variabile è:
