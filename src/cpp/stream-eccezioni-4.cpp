@@ -1,6 +1,10 @@
 /** 
  * @file src/stream-eccezioni-4.cpp
  * Programma di esempio per la gestione delle eccezioni.
+ * Richiede, in input, il numero di caratteri da leggere 
+ * e il path del file di input:
+ *
+ *    src/out/esempio <n caratteri da leggere> <file di input>
  */
  
 #include <iostream>
@@ -112,8 +116,8 @@ int main(int argc, char** argv)
     } catch (Eccezione e) {
 
         /** Stampa a video l'eccezione */
-        cerr << e;
-
+        cerr << e << endl;
+        
         /** Esce con un codice di errore */
         exit(e.getCodice());
     }

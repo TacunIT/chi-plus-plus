@@ -290,8 +290,8 @@ La classe basic_ios ha delle funzioni membro booleane che tornano `true` o `fals
 | bad     | c'è stato un errore di I/O bloccante
 | rdstate | torna il valore corrente di `iostate`
 
-Come vedremo dopo, queste funzioni permettono di interrompere la lettura o la scrittura di uno stream quando si verifica un errore o se si è raggiunta la fine del file.
-Una cosa da non fare mai, però, è di utilizzare la funzione `eof` all'interno di un ciclo `while` per la lettura di un file:
+Queste funzioni permettono di interrompere la lettura o la scrittura di uno stream quando si verifica un errore o se si è raggiunta la fine del file.
+Una cosa che non devi fare mai, però, è di utilizzare la funzione `eof` all'interno di un ciclo `while` per la lettura di un file:
 
 ```
 {% include_relative src/stream-eof.cpp %}
@@ -305,6 +305,22 @@ Se fai leggere a questo programma un file che contenga i numeri: 10, 20 e 30, ot
 10
 20
 30
+30
+```
+
+L'errore si verifica perché il controllo della funzione `eof` avviene prima della quarta operazione di lettura, quando lo stream è ancora in stato `good`.
+Un modo migliore di gestire questi casi è di utilizzare la funzione `good`, che ci permette di verificare anche la corretta apertura del file:
+
+```
+{% include_relative src/stream-good.cpp %}
+```
+Se compili ed esegui questo programma, ottieni il risultato corretto:
+
+```
+> g++ src/cpp/stream-good.cpp -o src/out/esempio
+> src/out/esempio src/cpp/stream-eof.txt        
+10
+20
 30
 ```
 
@@ -344,7 +360,7 @@ std::__1::ios_base::failure: ios_base::clear
 zsh: abort      src/out/esempio
 ```
 
-Se però inseriamo il codice che apre il file in un blocco `try`/`catch` e definiamo un handler per la gestione degli errori in apertura dei file, il risultato sarà più controllato:
+Se però inseriamo il codice che apre il file in un blocco `try`/`catch` e definiamo un *handler* per la gestione degli errori in apertura dei file, il risultato sarà più controllato:
 
 ```
 {% include_relative src/stream-eccezioni-2.cpp %}
