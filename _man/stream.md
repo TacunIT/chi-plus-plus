@@ -408,6 +408,34 @@ Definendo una classe derivata da `exception` con altri dati membro e una funzion
 {% include_relative src/stream-eccezioni-4.cpp %}
 ```
 
+Se compili ed esegui questo codice, otterrai il seguente output, a seconda dei parametri forniti:
+
+```
+> g++ src/cpp/stream-eccezioni-4.cpp -o src/out/esempio
+> src/out/esempio                                      
+-10: Errore nei parametri di input.
+USO: esempio <n caratteri> <path file>
+
+> src/out/esempio 41                                   
+-10: Errore nei parametri di input.
+USO: esempio <n caratteri> <path file>
+
+> src/out/esempio 41 src/cpp/stream-input.txt          
+Nacqui da famiglia ricca, ma troppo tardi
+
+> src/out/esempio 0 src/cpp/stream-input.txt 
+Nacqui da famiglia ricca, ma troppo tardi.  
+Secondogenito, vidi la florida impresa paterna andare in dote  
+per diritto di nascita, ma anche per naturale inclinazione
+ai miei monozigotici fratelli maggiori e, com'è consuetudine 
+per i figli cadetti, fui avviato alla vita monastica.
+Entrai in seminario all'età di nove anni e presi i voti il 
+giorno del mio diciottesimo compleanno.
+Conobbi il Maestro quattro anni dopo.  
+```
+
+<hr id="formattazione-output"> 
+
 <!--
 
 5.7	formattazione dei dati con le classi stream
@@ -618,6 +646,7 @@ ostream & beep (ostream & os)
 	return os << '\a' ; 	//codice di escape per BELL
 }
 per scoprire a cosa serve, compilate ed eseguite il seguente esempio:
+
 MANIPDU.CPP - Manipolatori definiti dall’utente
 /////////////////////////////////////////////////////////////
 //
@@ -683,6 +712,7 @@ fstream fs( "pippo.dat", ios::in | ios::out | ios::nocreate);
 L’ultimo costruttore delle classi fstream ha anche un terzo parametro che defiisce la modalità di protezione per il file. La sua dichiarazione è infatti():
 ifstream(const char* nome, int mode, int prot=ios::openprot);
 Come noterete, però, il parametro prot ha un suo valore di default, ios::openprot, che, almeno per ora, è anche l’unico possibile, quindi potete tranquillamente ignorarlo. 
+
 Orbene, dopo aver tanto parlato, eccovi un esempio che mostra tutti questi nostri nuovi amici all’opera:
 FSTRTEST.CPP - Utilizzo delle classi fstream
 /////////////////////////////////////////////////////////////
@@ -744,11 +774,15 @@ void main()
 007  Se si è verificato un errore lieve...
 008  ...resetta la variabile di stato.
 009  Copia il carattere nel file di output.
+
 Come spero l’esempio abbia chiarito, le funzioni di controllo, i manipolatori e gli opera­tori di inserimento ed estrazione, si possono applicare agli stream di I/O su file esatta­mente come avveniva per gli oggetti di classe iostream o ostream. 
+
 La funzione open(), utilizzata alla riga 007, è una funzione membro che serve ad aprire un file colle­gandolo con uno stream precedentemente aperto. La sua dichiarazione, che ricorda molto quella del costruttore della classe fstream, è la seguente:
 void open(char const*, int, int = filebuf::openprot) ;
+
 L’altra funzione membro utilizzata nell’esempio è tellg(), che fstream eredita in secondo grado della classe istream. Ritorna la posizione della prossima operazione di estrazione () e la sua dichiarazione è:
 long tellg() ;
+
 5.11 POsizionamento negli stream di i/o su file
 Simile alla funzione membro tellg(), è la funzione tellp(), che  fstream eredita da sua "nonna" ostream e che ritorna la posizione della prossima operazione di inseri­mento. Complementari a tellg() e tellp() sono, rispettivamente, seekg() e seekp(), che posizionano nel file ad una posizione relativa o assoluta. La tabella seguente riporta le dichiarazioni delle diverse funzioni:
 Funzioni di posizionamento su stream
@@ -766,37 +800,5 @@ L’effetto dei diversi parametri è il seguente:
 	ios::beg: sposta la prossima operazione a pos bytes dall’inizio del file associato;
 	ios::cur: si sposta a pos bytes dalla posizione corrente;
 	ios::end: si sposta a pos bytes prima della fine del file.
-5.12 SISTEMI DI FUNZIONI ITERATE
-Il prossimo esempio riunisce un po’ tutti gli elementi esaminati in questa parte del manuale. Si tratta di un visualizzatore di sistemi di funzioni iterate (da adesso in poi abbreviato in IFS) che visualizza delle immagini applicando delle trasformazioni casuali alle coordinate di un un punto. Se il valore delle coordinate iniziali è (X, Y) le coordinate Xnew, Ynew del nuovo punto saranno:
-
-Xnew = a*X + b*Y + c 
-Ynew = d*X + e*Y + f
-laddove a, b, c, d, ed f sono i valori che definiscono la trasformazione e variano a seconda del tipo di immagine che si desidera ottenere.
-
-void CreaMatrice(char * filename)
-{
- ifstream is ;
- double somma = 0 ;
-
-	is.open(filename) ;
-
-	if( ! is ) Erore("\nErrore in apertura file di input") ;
-	is >> Set ;
-
-	for(int r = 0 ; r < Set.Righe ; r++ )
-	{
-		for(int c = 0 ; c < 7 ; c++)
- 			  is >> Matrice[r][c]  ;
-
-		Matrice[r][0] += somma ;
-		somma = Matrice[r][0] ;
-	}
-}
-Questa funzione legge da uno stream di input un set di parametri fissi per ogni IFS (numero delle trasformazioni, posizionamento sullo schermo, titolo ecc.), quindi riempie una matrice con i valori delle trasformazioni, che hanno questo formato:
-Set di trasformazioni
-
-I valori contenuti nella prima colonna determinano le probabilità che la trasformazione ha di essere selezionata: in questo caso 1/3 ciascuna, ma i valori possono essere differenti per far sì che una trasformazione venga applicata più frequentemente delle altre. 
-Una volta determinati i valori per le trasformazioni, non resta che applicarle casualmente alle coordinate del punto, visualizzando di volta in volta il pixel corrispondente. Ed è qui che la cosa si fa interessante: per quanto le trasformazioni vengano applicate casualmente ed indipendentemente dalle coordinate iniziali del punto, la figura generata sarà sempre la stessa. Provare per credere:
-IFS.CPP - Programma di visualizzazione per sistemi di funzioni iterate
 
 -->

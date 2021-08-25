@@ -15,9 +15,10 @@ using namespace std;
 
 /** Codici e stringhe di errore */
 #define ERR_NONE          0
-#define ERR_FILE_NONE   -10
+#define ERR_PARAMETRI   -10
 #define ERR_FILE_OPEN   -20
-#define S_ERR_FILE_NONE "Definire un file di input"
+#define S_SINTASSI      "USO: esempio <n caratteri> <path file>"
+#define S_ERR_PARAMETRI "Errore nei parametri di input."
 #define S_ERR_FILE_OPEN "Impossibile aprire il file di input"
 
 /**
@@ -67,7 +68,7 @@ int main(int argc, char** argv)
         *   che il numero di caratteri da leggere.
         */
         if (argc < 3) 
-            throw Eccezione(ERR_FILE_NONE, S_ERR_FILE_NONE);
+            throw Eccezione(ERR_PARAMETRI, S_ERR_PARAMETRI);
             
         /** Definisce il numero di caratteri da leggere */
         int da_leggere = atoi(argv[1]);
@@ -117,6 +118,9 @@ int main(int argc, char** argv)
 
         /** Stampa a video l'eccezione */
         cerr << e << endl;
+
+        /** Mostra la sintassi di chiamata **/
+        cerr << S_SINTASSI << endl;
         
         /** Esce con un codice di errore */
         exit(e.getCodice());
