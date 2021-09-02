@@ -1,3 +1,6 @@
+## 0.28.5 (September 02, 2021)
+  - Completata prima stesura del capitolo sugli stream
+
 ## 0.28.4 (August 25, 2021)
   - Redazione capitolo stream - precision, fill, width
   - Redazione capitolo stream - Output esempio eccezioni
