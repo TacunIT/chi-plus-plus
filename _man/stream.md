@@ -1,5 +1,5 @@
 ---
-status:     redazione
+status:     pubblicato
 layout:     manuale
 class:      capitolo
 no-index:   true
@@ -117,8 +117,6 @@ Anche in questo caso, la libreria comprende due versioni di ciascuna classe, spe
 ```
 typedef streambuf  basic_streambuf<char>
 typedef wstreambuf basic_streambuf<wchar_t>
-typedef stringbuf  basic_stringbuf<char>
-typedef wstringbuf basic_stringbuf<wchar_t>
 typedef filebuf    basic_filebuf<char>
 typedef wfilebuf   basic_filebuf<wchar_t>
 ```
@@ -471,7 +469,7 @@ Conobbi il Maestro quattro anni dopo.
 
 <hr id="dottrina"> 
 
-Il Maestro Canaro diceva che una filosofia, per spingere i suoi seguaci a comportarsi in maniera corretta, deve avere due caratteristiche: *trascendenza* e *permanenza*.  
+Il Maestro Canaro diceva che una filosofia, per spingere i suoi seguaci a comportarsi in maniera corretta, deve possedere due caratteristiche: *trascendenza* e *permanenza*.  
 Se, per un caso o per volere del Cielo, gli esempii che ti ho fatto finora prendessero coscienza di sé, senza però sapere di far parte di una serie di lezioni, probabilmente si sentirebbero inutili e sciocchi.
 Perfino l'ultimo esempio che abbiamo visto, che è il più complesso di tutti, non potrebbe fare a meno di chiedersi quale sia il senso della sua esistenza, dato che lo stesso risultato si può ottenere con una semplice istruzione da riga di comando:
 
@@ -481,25 +479,41 @@ head -c 41 src/cpp/stream-input.txt
 
 Qualche esempio riuscirebbe comunque a fare il proprio dovere, ma ce ne sarebbero altri che reagirebbero male a questa epifania: i più deboli si deprimerebbero, mentre i più ambiziosi cercherebbero una compensazione nell'accumulo eccessivo di risorse di sistema: RAM, spazio disco o cicli CPU.  
 Al contrario, se gli esempii sapessero di essere parte integrante di una serie di lezioni, tutto ciò che altrimenti appare insensato o inutile, dai commenti pleonastici fino al parametro numerico dell'ultimo esempio, acquisterebbe il giusto significato e ciascun esempio saprebbe di essere non solo utile, ma necessario.  
+Se c'è una cosa che sappiamo per certa dell'Universo in cui viviamo è che si sta espandendo. 
+Se nulla interverrà a mutare questo stato di cose, tutto ciò che esiste, dagli esseri viventi alle stelle, è destinato o prima o poi a spegnersi nella vittoria di Pirro dell'Entropia come un computer portatile a cui si scarichi la batteria.  
+Al contrario, se la Gravità riuscirà a invertire il moto delle galassie, tutto ciò che esiste, dalle stelle agli esseri viventi, è destinato o prima o poi ad annichilirsi nell'Uno in attesa di un nuovo ciclo di esistenza.  
+Questo, però, non basterà da solo a dare un senso alle nostre esistenze, perché, senza persistenza, le nostre azioni saranno come degli oggetti di classe `streambuf`: una volta spento il computer, non esisteranno più e tutto ciò che abbiamo fatto, giusto o sbagliato che sia, non avrà alcuna influenza su ciò che accadrà successivamente.  
+L'unica cosa che può salvarci dall'oblio e dall'insensatezza sono i `Post-It`, la persistenza.  
+Per dare un senso alla nostra esistenza abbiamo bisogno di un *hard-disk* su cui salvare gli stream delle nostre vite, in modo che ogni ciclo di esistenza possa fare tesoro delle esperienze passate.
+Senza di esso, Hitler varrà quanto Ghandi e Albert Schweitzer quanto Ted Bundy.
+Dovrà essere però un *hard-disk* meta-fisico, per sfuggire al *Big Crunch*, e questo ci riporta all'importanza della trascendenza.  
+Se mi guardo indietro, per il mezzo secolo su cui ho visibilità diretta, vedo una lunga serie di fallimenti ideologici.
+Il Sessantotto ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società senza darci nulla in cambio, tranne la minigonna.
+La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre la *reaganomics* è crollata alla fine degli anni '80 insieme al muro di Berlino.
+Le speranze degli anni '90 si sono schiantate l'11 Settembre 2001 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformata, nel tempo, in un sistema di controllo e di dis-informazione di massa.  
+Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito dagli *smart-phone* e dai *social-network*.  
+Esiste un fattore comune alle ideologie degli ultimi cinquant’anni che ne ha accelerato l’obsolescenza e le ha rese incapaci di sopravvivere alla prima sconfitta: il rifiuto più o meno accanito di ogni forma non strumentale di spiritualità.  
 Se si definisce uno schema di valori negando allo stesso tempo qualsiasi forma di trascendenza, si è costretti a ricercare i valori e le motivazioni della propria etica all’interno dello schema stesso. 
 Si può fare, ma è sbagliato e limitativo. 
 È sbagliato, perché le regole che si definiscono sono sempre una conseguenza di esigenze contingenti (guerre, sopraffazioni, disparità sociali), venendo a mancare le quali lo schema logico del sistema perde di significato e si disgrega.
-È limitativo, perché restringe il numero dei possibili obiettivi da perseguire a un insieme finito di azioni o traguardi, raggiunti i quali non esiste più possibilità di migliorare.
+È limitativo, perché restringe il numero dei possibili obiettivi da perseguire a un insieme finito di azioni o traguardi, raggiunti i quali non esiste più possibilità di migliorare.  
 Pensa al gioco degli Scacchi: non esiste nessun motivo, all’interno della scacchiera, che costringa ciascun pezzo a muoversi solo in una specifica maniera.
 Le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a “L” in ossequio a delle regole definite al di fuori della scacchiera, ma è proprio da queste limitazioni che deriva il fascino del gioco. 
 Al contrario, la Società moderna è una scacchiera in cui ciascun pezzo si muove nella maniera che preferisce perché, in ossequio a un malinteso senso di libertà, sono state eliminate tutte le regole. 
 Le persone di successo che si privano della vita sono pedoni che, arrivati alla fine della scacchiera grazie alla loro abilità, hanno scoperto che non esiste alcuna forma di promozione, perché insieme alle regole sono stati aboliti anche i giocatori.
 
-<!--
+<hr id="canaro">
 
-
-Esiste un fattore comune alle ideologie degli ultimi cinquant’anni che ne ha accelerato l’obsolescenza e le ha rese incapaci di sopravvivere alla prima sconfitta: il rifiuto più o meno accanito di ogni forma non strumentale di spiritualità.3 
-
-
-
+Il Maestro Canaro una volta mi disse:
 
 > {{ site.data.canaro.lennon }}
 
-Non credeva alla storia della conversione, secondo lui l'omicidio era stato il gesto estremo di un uomo sconosciuto per far conoscere al Mondo la sua esistenza.
+<!--
+come nacque il gioco degli scacchi: due principi indiani, Gav e Talhend, si contendevano il regno, nonostante la loro madre li pregasse di condividerlo come bravi fratelli. I due non ci riuscirono e una loro lite si trasformò in una sanguinosa guerra, che venne infine vinta da Gav, e nella quale Talhend perse la vita. La madre, disperata, chiese al figlio superstite di raccontarle per filo e per segno come si fosse svolta la battaglia tra i due, e per spiegarle tutto quanto in modo dettagliato, Gav creò una scacchiera e fece intagliare nel legno le figurine di torri, cavalli e soldati, creando così le basi del gioco degli scacchi.
+Fois, Mila. Miti Persiani: Zoroastro e il Libro dei Re (Meet Myths) (Italian Edition) (pp. 131-132). Kindle Edition. 
+
+
+
+
 
 -->
