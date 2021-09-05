@@ -612,6 +612,8 @@ In questa fase è ammissibile che tu faccia delle prove inserendo dei valori dir
 
 <hr id="dottrina">
 
+> {{ site.data.citazioni.croce.testo }}<a href="/man/note#croce" class="nota"></a>
+
 O prima o poi, la tua vita andrà in errore, come il software.  
 Non importa quanto tu sia stato prudente o quale sia il tuo *Karma*: a un certo punto la terra sotto i tuoi piedi comincerà a franare e tu cadrai giù, lungo la montagna che stavi scalando, ritrovandoti al punto di partenza. 
 Quello che farai in quel momento deciderà del resto della tua vita e ti farà capire che tipo di uomo sei &mdash; o che donna, visto che queste cose non succedono solo ai maschietti.  
@@ -622,27 +624,37 @@ Allo stesso modo, se non ti fidi di te stesso, è difficile capire se le scelte 
 La paura o la prudenza potrebbero spingerti a non fare la scelta giusta, quindi, per prima cosa, dovrai fare il *debug* della tua vita per capire se e in quale misura devi biasimarti per ciò che è avvenuto; fatto ciò, dovrai identificare i tuoi errori e trovare un modo per non ripeterli.  
 L'approccio più comune è di guardarsi indietro e cercare di capire quali siano state le proprie colpe, considerando queste degli eventi isolati in un'esistenza fatta prevalentemente di scelte corrette. 
 Dato però che ciascuno di noi tende &mdash; più o meno inconsciamente &mdash;, a cercare cause esogene alle sue sventure inventandosi complotti o trasferendo le proprie responsabilità a terzi, la cosa migliore, in questi casi, è di adottare l'atteggiamento opposto e partire dal presupposto che *tutto* ciò che è successo di male nella tua vita sia una tua colpa, per poi individuare i casi in cui ciò che è successo, in effetti, non è dipeso da te.
-Questo approccio <a href="/man/note#bottom-down" class="xref">bottom-down</a> ha due pregi: il primo  è che, analizzando gli eventi passati potresti scoprire che alcune colpe che ti attribuivi non erano reali; il secondo è che sarà più difficile mentire a te stesso: ciascuno di noi ha una parte di responsabilità in ciò che gli succede, anche negli eventi che non genera direttamente.
+Questo approccio *bottom-down*<a href="/man/note#bottom-down" class="nota"></a> ha due pregi: il primo  è che, analizzando gli eventi passati potresti scoprire che alcune colpe che ti attribuivi non erano reali; il secondo è che sarà più difficile mentire a te stesso.
+Ciascuno di noi ha una parte di responsabilità in ciò che gli succede, anche negli eventi che non genera direttamente.
 Assumersi a priori la colpa di tutto il male che ci è successo rende più difficile mentirci e ci permette di identificare tutte le nostre colpe, per piccole che siano.  
 Attenzione, però: non devi pensare alle tue colpe come se fossi un inquisitore del tredicesimo Secolo, ma come se fossero dei *bug* nel programma della tua vita. 
-Qualcuna generà degli errori, altre solo dei *warning* e il tuo dovere è quello di identificarne il più possibile, per poi correggerle e migliorare il funzionamento del sistema.
+Qualcuna genererà degli errori, altre solo dei *warning* e il tuo dovere è quello di identificarne il più possibile, per poi cercare di correggerle per migliorare il funzionamento del sistema.
 
+> {{ site.data.citazioni.deen.testo }}<a href="/man/note#deen" class="nota"></a>
 
-
-
+Contrariamente a quello che avviene con il software, non sempre è possibile correggere i *bug* della nostra esistenza.
+Si può modificare un aspetto deteriore del nostro carattere, ma non è detto che sia possibile rimediare ai danni che questo ha causato a noi o a terzi.
+Per fare un paragone con il debug del software, i difetti caratteriali sono errori di compilazione, mentre gli effetti dei nostri sbagli sono errori di esecuzione; i primi li possiamo correggere, gli errori di esecuzione, no: ormai è andata. 
+Quello che possiamo e che dobbiamo fare, però, è di <a href="/man/istruzioni-condizionali#pentimento" class="xref">pentircene sinceramente</a>; riconoscerli come errori, in modo da evitare di ripeterli nei prossimi cicli di esistenza.  
+Anche se non possiamo cancellare gli effetti di un nostro errore, possiamo comunque chiedere perdòno a coloro i quali abbiamo arrecato danno.
+Non basterà schiedere scusa: chiedi scusa quando ciò che hai fatto non dipende da te, come quando qualcuno di urta e tu versi il tuo vino sul vestito del vicino.
+Se invece il vino glielo hai tirato addosso intenzionalmente, dovrai chiedere *perdòno*, cercare per quanto possibile di riparare all'errore fatto e non commetterlo mai più, né con lui (o lei) né con altri.  
 
 <!--
+/man/istruzioni-condizionali#pentimento
 
-Chiedere scusa o, meglio, perdono
+Chiedere scusa o, meglio, perdòno
+
+
+1. le donne sono incubatrici parlanti;
+2. gli uomini sono dispenser di sperma;
+3. ogni eccesso nasconde un eccesso di natura opposta e pari entità.
 
 importanza dell'impaginazione dei nomi: OPEN, CLOSE, READ / INPUT, DELETE, UPDATE
 v. Orologiaio, pos. 3836 
 
-Il cambiamento inizia quando si intraprende un nuovo sentiero , anche se questo sentiero non è che una traccia lasciata da una capra assetata che ha trovato una sorgente .
-M. Deen - Per antiche strade
 
-Quelli invece che siano incorsi in colpe espiabili sì ma gravi, come chi, per esempio, in un impeto di collera, abbia fatto violenza al padre o alla madre e poi se ne sia pentito e abbia vissuto così il resto di sua vita; o chi sia divenuto omicida per altro motivo simile e allo stesso modo se ne sia pentito; costoro debbono sì, necessariamente, precipitare nel Tartaro, ma poi, trascorso laggiù un anno dalla loro caduta ecco che la marea li ricaccia fuori, gli omicidi lungo il Cocìto, i percotitori del padre e della madre lungo il Piriflegetonte; e quando, trasportati da queste fiumane, giungono a livello della palude Acherusiade, quivi allora gridano e invocano, gli uni quelli che uccisero, gli altri quelli cui fecero violenza, e, chiamandoli a nome, pregano e supplicano che li lascino uscir fuori nella palude e che li accolgano; e, se riescono a persuaderli, escono fuori e così hanno pace dai loro mali; se no, sono riportati via un’altra volta nel Tartaro, e dal Tartaro sono ributtati un’altra volta nei fiumi, e mai cessano di patire quest’alterna vicenda se prima non hanno persuaso coloro a cui fecero offesa: perché questa è la pena che da quei giudici fu loro inflitta.
-Platone - Fedone
+
 
 
 

@@ -427,6 +427,16 @@ quote:
             @todo: Spiegare la differenza fra approccio <i>bottom-up</i> e <i>bottom-down</i>.
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>    
+        <li id="croce">
+            {{ site.data.citazioni.croce.fonte }}
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>        
+        <!--
+        <li id="deen">
+            {{ site.data.citazioni.deen.fonte }}
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>        
+        -->
     </ol>
 </section>
 <!--
