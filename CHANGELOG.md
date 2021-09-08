@@ -1,3 +1,6 @@
+## 0.29.1 (September 08, 2021)
+  - Redazione del capitolo sul debug
+
 ## 0.29.0 (September 05, 2021)
   - Redazione del testo del capitolo sul debug. 
   - Revisione delle note e delle citazioni.
