@@ -420,7 +420,13 @@ quote:
             @todo: Spiegare cosa sia una bitmask.
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>    
+        <li id="scacchi">
+            {{ site.data.citazioni.scacchi.testo }}<br />            
+            {{ site.data.citazioni.scacchi.fonte }}
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>        
     </ol>
+
     <h3>Il debug</h3>
     <ol>
         <li id="bottom-down">
