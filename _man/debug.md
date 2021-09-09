@@ -1,5 +1,5 @@
 ---
-status:     bozza
+status:     redazione
 layout:     manuale
 class:      capitolo
 no-index:   true
@@ -9,9 +9,8 @@ quote:      "Cento Mondi di peccato sono dissipati dalla luce di un solo ticket"
 ---
 
 Il debug potrà non essere il senso della vita, come recita il titolo del tuo libro, ma è indubbiamente l'aspetto più importante della programmazione.  
-
 Nella tua carriera di programmatore potrai non utilizzare mai una classe *functor* o ridefinire l'operatore `->`, ma sicuramente farai degli errori e li dovrai correggere.
-Malgrado ciò, i manuali di programmazione non parlano mai del *debug*.  
+Malgrado ciò, i manuali di programmazione non parlano mai del *debug*.
 Si sono scritte migliaia di pagine sui diversi linguaggi di programmazione; non c'è primavera che non veda fiorire un nuovo paradigma di programmazione &mdash; strutturata, *object-oriented*, *agile*, *fuzzy* &mdash; eppure, nessuno si è mai preoccupato di formalizzare il processo di correzione del codice.  
 Trascurare il debug è come affermare che non si faranno mai errori.
 Non importa quanto sia efficiente il linguaggio di programmazione; non importa quanto sia astuto e vigile il compilatore; non importa nemmeno quanto sia bravo il programmatore: o prima o poi, la distrazione, la stanchezza o un evento esterno permetteranno a un errore di intrufolarsi nel codice.
@@ -373,10 +372,10 @@ Così come influenza le opinioni del tuo cliente, il Marketing può influire su 
 Fà attenzione che ciò non accada.
 Sorveglia costantemente le tue scelte; così come il Buon Programmatore, pensa sempre su più livelli e confrontati con altri colleghi o con il tuo superiore per essere certo di aver fatto le scelte giuste.
 Non vergognarti dei tuoi errori: sono i mattoni su cui edificherai la tua esperienza.  
-Sii anche preparato a essere costretto a commettere degli errori.
+Sii anche preparato a dover fare degli errori.
 O prima o poi, capiterà che un cliente ti chieda di fare una scelta che tu ritieni sbagliata.
 Quando ciò accadrà, dovrai per prima cosa cercare di convincerlo dell'errore, spiegandogli perché la sua richiesta non sia corretta.
-Se non ci riesci, ripeti la tua opposizione, perché sia chiaro che la tua non è un'ipotesi, ma una certezza, però non insistere oltre: sia perché questo potrebbe creare degli attriti con il tuo interlocutore, sia perché alla lunga potresti scoprire che è *lui* ad avere ragione.    
+Se non ci riesci, ripeti la tua opposizione, perché sia chiaro che la tua non è un'ipotesi, ma una certezza, però non insistere oltre: sia perché questo potrebbe creare degli attriti con il tuo interlocutore, sia perché alla lunga potresti scoprire che è lui ad avere ragione.    
 Se non riuscirai a convincere il cliente di un suo errore, dovrai portare a termine ciò che ti chiede, ma al contempo dovrai fare in modo che le conseguenze di quella scelta non possano essere attribuite a te in futuro.
 Dato che le conseguenze nefaste di un errore architetturale potrebbero manifestarsi dopo mesi o anche anni dalla fase di analisi, non limitarti a *dire* al cliente che si sbaglia, ma scrivilo, in modo che resti traccia della tua opposizione.  
 Il tuo peggior nemico, in questi casi, sarà il tuo orgoglio. 
@@ -611,19 +610,65 @@ In un programma più complesso del nostro esempio, le modifiche sarebbero state 
 Le costanti *hard-coded* possono essere utilizzate solo nella prima fase dello sviluppo del programma, quando non sei ancora sicuro che la strada che hai scelto sia quella giusta. 
 In questa fase è ammissibile che tu faccia delle prove inserendo dei valori direttamente nel codice, ma quando l'algoritmo sarà ragionevolmente stabile, dovrai convertire tutti i valori in costanti.
 
+<hr id="dottrina">
+
+> {{ site.data.citazioni.croce.testo }}<a href="/man/note#croce" class="nota"></a>
+
+O prima o poi, la tua vita andrà in errore, come il software.  
+Non importa quanto tu sia stato prudente o quale sia il tuo *Karma*: a un certo punto la terra sotto i tuoi piedi comincerà a franare e tu cadrai giù, lungo la montagna che stavi scalando, ritrovandoti al punto di partenza. 
+Quello che farai in quel momento deciderà del resto della tua vita e ti farà capire che tipo di uomo sei &mdash; o che donna, visto che queste cose non succedono solo ai maschietti.  
+Comincia a prepararti da adesso a quel momento, perché, quando avverrà (*quando*, non: *se*), probabilmente sarai solo e prendere delle decisioni sarà molto difficile perché avrai perso ogni fiducia in te stesso.
+Se ti rompi una gamba, o un braccio, il tuo cervello ti può dire se stanno guarendo o peggiorando, ma se batti la testa non è facile capire come stai, perché l'organo in esame e l'organo esaminatore coincidono.
+<!-- @todo - decidere se aggiungere aneddoto su Maestro Canaro e solitario -->
+Allo stesso modo, se non ti fidi di te stesso, è difficile capire se le scelte che fai sono corrette. 
+La paura o la prudenza potrebbero spingerti a non fare la scelta giusta, quindi, per prima cosa, dovrai fare il *debug* della tua vita per capire se e in quale misura devi biasimarti per ciò che è avvenuto; fatto ciò, dovrai identificare i tuoi errori e trovare un modo per non ripeterli.  
+L'approccio più comune è di guardarsi indietro e cercare di capire quali siano state le proprie colpe, considerando queste degli eventi isolati in un'esistenza fatta prevalentemente di scelte corrette. 
+Dato però che ciascuno di noi tende &mdash; più o meno inconsciamente &mdash;, a cercare cause esogene alle sue sventure inventandosi complotti o trasferendo le proprie responsabilità a terzi, la cosa migliore, in questi casi, è di adottare l'atteggiamento opposto e partire dal presupposto che *tutto* ciò che è successo di male nella tua vita sia una tua colpa, per poi individuare i casi in cui ciò che è successo, in effetti, non è dipeso da te.
+Questo approccio *bottom-down*<a href="/man/note#bottom-down" class="nota"></a> ha due pregi: il primo  è che, analizzando gli eventi passati potresti scoprire che alcune colpe che ti attribuivi non erano reali; il secondo è che sarà più difficile mentire a te stesso.
+Ciascuno di noi ha una parte di responsabilità in ciò che gli succede, anche negli eventi che non genera direttamente.
+Assumersi a priori la colpa di tutto il male che ci è successo rende più difficile mentirci e ci permette di identificare tutte le nostre colpe, per piccole che siano.  
+Attenzione, però: non devi pensare alle tue colpe come se fossi un inquisitore del tredicesimo Secolo, ma come se fossero dei *bug* nel programma della tua vita. 
+Qualcuna genererà degli errori, altre solo dei *warning* e il tuo dovere è quello di identificarne il più possibile, per poi cercare di correggerle per migliorare il funzionamento del sistema.
+
+> {{ site.data.citazioni.deen.testo }}<a href="/man/note#deen" class="nota"></a>
+
+Contrariamente a quello che avviene con il software, non sempre è possibile correggere i *bug* della nostra esistenza.
+Si può modificare un aspetto deteriore del nostro carattere, ma non è detto che sia possibile rimediare ai danni che questo ha causato a noi o a terzi.
+Per fare un paragone con il debug del software, i difetti caratteriali sono errori di compilazione, mentre gli effetti dei nostri sbagli sono errori di esecuzione; i primi li possiamo correggere, gli errori di esecuzione, no: ormai è andata. 
+Quello che possiamo e che dobbiamo fare, però, è di <a href="/man/istruzioni-condizionali#pentimento" class="xref">pentircene sinceramente</a>, ovvero riconoscerli come errori, in modo da evitare di ripeterli nei prossimi cicli di esistenza.  
+Anche se non possiamo cancellare gli effetti di un nostro errore, possiamo comunque chiedere perdòno a coloro i quali abbiamo arrecato danno.
+Non basterà chiedere scusa: si chiede scusa quando ciò che hai fatto non dipende da te, come quando qualcuno di urta e tu versi il tuo vino sul vestito del vicino; se invece il vino glielo hai tirato addosso intenzionalmente, dovrai chiedere *perdòno*, cercare per quanto possibile di riparare all'errore fatto e non commetterlo mai più, né con lui (o lei) né con altri.  
+Non sottovalutare il potere terapeutico del perdono, anche se ci saranno dei casi in cui non lo otterrai.
+Se è vero che non si può cambiare il passato per qualcuno che abbiamo ferito, è altrettanto vero che si può provare a compensare il danno fatto rendendogli migliore il presente o il futuro. 
+Le persone a cui facciamo del male sono spesso quelle a cui siamo più legati; far sapere loro che che non li abbiamo dimenticati e che ciò che è successo ci addolora, può servire a ricucire delle ferite; dall'una e dall'altra parte. 
+
+<hr id="come-capire">
+
+Quando ripenserai a ciò che ti è avvenuto in passato, come un buon analista, dovrai cercare di immedesimarti nelle persone con cui hai avuto a che fare, capire le loro ragioni al di là di eventuali rancori o recriminazioni.
+Per fare ciò, dovrai tenere a mente alcuni fattori che influenzano il comportamento di tutti noi. 
+Il primo, ovviamente, è l'Annosa Dicotomia, che, per mano del suo lacché il Marketing, spinge le persone a soddisfare i proprii desiderii invece che i proprii bisogni, creando degli schemi di valori fallaci.
+<!-- todo: dettagliare le conseguenze di ciò -->
+Il secondo fattore, utile per derimere le questioni relative ai rapporti di coppia, è l'antropologia. 
+Come diceva il Maestro Canaro:
+
+> {{ site.data.canaro.femminismo }}
+
+Secondo lui, qualsiasi comportamento anomalo nell'ambito di una coppia poteva essere spiegato tenendo a mente tre principii:
+
+1. le donne sono incubatrici parlanti;<br />
+2. gli uomini sono dispenser di sperma;<br />
+3. ogni eccesso nasconde un eccesso di natura opposta e pari entità.<br />
+
+<!-- todo: dettagliare  -->
+
+Il terzo fattore, ovviamente, è la natura umana:
+
+> {{ site.data.canaro.malizia }}
+
+
 
 <!--
 
 importanza dell'impaginazione dei nomi: OPEN, CLOSE, READ / INPUT, DELETE, UPDATE
-v. Orologiaio, pos. 3836 
 
-Il cambiamento inizia quando si intraprende un nuovo sentiero , anche se questo sentiero non è che una traccia lasciata da una capra assetata che ha trovato una sorgente .
-M. Deen - Per antiche strade
-
-Se non lo si è fatto finora, spiegare che gli esempii del testo sono studiati per essere progressivamente migliorati, per dimostrare come la scrittura di codice sia un'attività in continua evoluzione.
-
-La decadenza del software è iniziata quando le stampanti laser hanno soppiantato le vecchie stampanti ad aghi.
-Il codice non si può leggere su un foglio A4: a meno che non sia un programma banale, non c'entrerà né in altezza né in larghezza.
-Il modulo in continuo di una stampante ad aghi a 136 colonne, al contrario, ti permette di stampare tutto il tuo codice e di rileggerlo con calma; correggerlo, se necessario e migliorarlo se possibile.
-È così che si facevano le revisioni di codice, quando c'erano il tempo e i soldi per fare le revisioni di codice.
 -->
