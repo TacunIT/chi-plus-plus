@@ -498,7 +498,7 @@ Si può fare, ma è sbagliato e limitativo.
 È sbagliato, perché le regole che si definiscono sono sempre una conseguenza di esigenze contingenti (guerre, sopraffazioni, disparità sociali), venendo a mancare le quali lo schema logico del sistema perde di significato e si disgrega.
 È limitativo, perché restringe il numero dei possibili obiettivi da perseguire a un insieme finito di azioni o traguardi, raggiunti i quali non esiste più possibilità di migliorare.  
 Pensa al gioco degli Scacchi: non esiste nessun motivo, all’interno della scacchiera, che costringa ciascun pezzo a muoversi solo in una specifica maniera.
-Le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a “L” in ossequio a delle regole definite al di fuori della scacchiera, ma è proprio da queste limitazioni che deriva il fascino del gioco. 
+Le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a “L” in ossequio a delle regole definite al di fuori della scacchiera<a href="/man/note#scacchi" class="nota"></a>, ma è proprio da queste limitazioni che deriva il fascino del gioco. 
 Al contrario, la Società moderna è una scacchiera in cui ciascun pezzo si muove nella maniera che preferisce perché, in ossequio a un malinteso senso di libertà, sono state eliminate tutte le regole. 
 Le persone di successo che si privano della vita sono pedoni che, arrivati alla fine della scacchiera grazie alla loro abilità, hanno scoperto che non esiste alcuna forma di promozione, perché insieme alle regole sono stati aboliti anche i giocatori.
 
@@ -509,9 +509,6 @@ Il Maestro Canaro una volta mi disse:
 > {{ site.data.canaro.lennon }}
 
 <!--
-come nacque il gioco degli scacchi: due principi indiani, Gav e Talhend, si contendevano il regno, nonostante la loro madre li pregasse di condividerlo come bravi fratelli. I due non ci riuscirono e una loro lite si trasformò in una sanguinosa guerra, che venne infine vinta da Gav, e nella quale Talhend perse la vita. La madre, disperata, chiese al figlio superstite di raccontarle per filo e per segno come si fosse svolta la battaglia tra i due, e per spiegarle tutto quanto in modo dettagliato, Gav creò una scacchiera e fece intagliare nel legno le figurine di torri, cavalli e soldati, creando così le basi del gioco degli scacchi.
-Fois, Mila. Miti Persiani: Zoroastro e il Libro dei Re (Meet Myths) (Italian Edition) (pp. 131-132). Kindle Edition. 
-
 
 @todo: decidere se spiegare che gli esempii del testo sono studiati per essere progressivamente migliorati, per dimostrare come la scrittura di codice sia un'attività in continua evoluzione.
 
