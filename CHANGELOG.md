@@ -1,3 +1,8 @@
+## 0.29.2 (September 10, 2021)
+  - Redazione del capitolo sul debug
+  - Aggiunto testo Penetration
+  - Aggiunta nota su nascita del gioco degli Scacchi
+
 ## 0.29.1 (September 08, 2021)
   - Redazione del capitolo sul debug
 
