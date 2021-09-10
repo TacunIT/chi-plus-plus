@@ -437,12 +437,14 @@ quote:
             {{ site.data.citazioni.croce.fonte }}
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>        
-        <!--
         <li id="deen">
             {{ site.data.citazioni.deen.fonte }}
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>        
-        -->
+        <li id="firmware">
+            @todo: Spiegare cosa sia il firmware e la differenza con il software.
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>     
     </ol>
 </section>
 <!--

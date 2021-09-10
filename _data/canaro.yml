@@ -36,7 +36,7 @@ decadenza-software:
     "La decadenza del software è iniziata quando le stampanti laser hanno soppiantato le vecchie stampanti ad aghi. Il codice non si può leggere su un foglio A4: a meno che non sia un programma banale, non c'entrerà né in altezza né in larghezza. Il modulo in continuo di una stampante ad aghi a 136 colonne, al contrario, ti permette di stampare tutto il tuo codice e di rileggerlo con calma; correggerlo, se necessario e migliorarlo se possibile. È così che si facevano le revisioni di codice, quando c'erano il tempo e i soldi per fare le revisioni di codice."
 
 femminismo:
-    "Cento anni di femminismo non possono battere centomila anni di evoluzione"
+    "Cento anni di femminismo non possono battere centomila anni di evoluzione."
 
 malizia:
     "Non cercare di spiegare con la malizia quello che può essere spiegato con la stupidità."
@@ -63,7 +63,7 @@ universo-cpp:
     <br />-&nbsp;Canaro, non sono il tuo collega, sono davvero Dio. Devi aiutarmi a fare il porting dell'universo in C++.
     <br />Non posso fare a meno di sorridere.
     <br />-&nbsp;Carina. E anche il sintetizzatore vocale mi sembra che funzioni
-    piuttosto bene. Senti, finisco questa relazione e ti offro un caffé, ma
+    piuttosto bene. Senti, finisco questa relazione e ti offro un caffè, ma
     adesso lasciami lavorare.
     <br />Riattacco di nuovo e di nuovo il malefico oggetto fa sentire la sua voce. È un'esterna, non posso rischiare: potrebbe essere un cliente, ma so già che..
     <br />-&nbsp;Canaro, ascoltami una buona volta: sono davvero Dio e ho bisogno che tu mi risolva un problema.
@@ -150,15 +150,10 @@ universo-cpp:
     che non si tratta di un tipo di dato numerico, ma si può definire una
     classe \"Stringa\" che, se sottoposta ad addizione, faccia qualcosa di
     sensato.
-
     <br />-&nbsp;Del tipo?
-
     <br />-&nbsp;Poniamo che tu abbia una stringa A qualsiasi.
-
     <br />-&nbsp;\"Pippo\" va bene?
-
     <br />-&nbsp;Originale. E che tu voglia unirla ad un'altra stringa B.
-
     <br />-&nbsp;\"Pluto\".
 
     <br />-&nbsp;Anche questa bella originale. Comunque, tu scriverai l'istruzione: C
