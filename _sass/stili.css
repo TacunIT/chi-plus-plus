@@ -204,7 +204,7 @@ TABLE, TD, TR, TH {
     border-collapse: collapse;
     border: solid 1px $borderColor;
     padding: 0.25rem 0.5rem;
-    margin: 1rem 0;
+    margin: 1rem auto;
     font-size: 11pt;   
 }
 
@@ -521,11 +521,7 @@ IFRAME.pdf {
     height: 780px;
 }
 
-/** Tabelle nei capitoli */
-BODY.manuale.capitolo #testo TABLE {
-    margin: 1rem auto;
-}
-    
+/** Tabelle nel testo */    
 BODY.manuale.capitolo #testo TABLE.memoria TD {
     font-family: $codeFont;
     font-size: 10px;
