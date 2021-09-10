@@ -646,7 +646,7 @@ Le persone a cui facciamo del male sono spesso quelle a cui siamo più legati; f
 
 Quando ripenserai a ciò che ti è avvenuto in passato, come un buon analista, dovrai cercare di immedesimarti nelle persone con cui hai avuto a che fare, capire le loro ragioni al di là di eventuali rancori o recriminazioni.
 Per fare ciò, dovrai tenere a mente alcuni fattori che influenzano il comportamento di tutti noi. 
-Il primo, ovviamente, è l'influenza dell'Annosa Dicotomia, che, per mano del suo lacché il Marketing, spinge le persone a soddisfare i proprii desiderii invece che i proprii bisogni, creando degli schemi di valori fallaci.  
+Il primo, ovviamente, è l'influenza dell'Annosa Dicotomia, che, per mano del suo lacché il Marketing, spinge le persone a soddisfare i proprii desiderii invece che i proprii bisogni, creando degli schemi di valori fallaci e spingendoli a dimenticare che esistono per tutti la vecchiaia e la morte.   
 Per derimere le questioni relative ai rapporti di coppia, invece, l'approccio più sicuro è quello antropologico.
 Come diceva il Maestro Canaro:
 
@@ -656,16 +656,17 @@ Secondo lui, qualsiasi comportamento anomalo nell'ambito di una coppia poteva es
 
 1. le donne sono incubatrici parlanti;<br />
 2. gli uomini sono dispenser di sperma;<br />
-3. ogni eccesso nasconde un eccesso di natura opposta e pari entità.<br />
+3. ogni eccesso nasconde un eccesso di natura opposta e pari entità.
 
 Parafrasando quel senza Dio di Dawkins, noi siamo l'*hard-disk* dei nostri geni, la memoria di massa che garantisce loro una persistenza.
 Il nostro software può variare, ma il <a href="/man/note#firmware" class="xref">firmware</a> che definisce il nostro comportamento a basso livello è immutato da migliaia di anni e ci spinge a fare ciò per cui siamo stati creati, ovvero riprodurci.  
 Né le sovrastrutture culturali che abbiamo inventato, né gli idoli ai cui piedi ci prostriamo e nemmeno l'Annosa Dicotomia possono modificare la nostra ROM.
-Ignorare o, peggio, ribellarsi a questo stato di fatto è il primo passo verso la rovina o l'infelicità o entrambe le cose.
-
+Ignorare o, peggio, ribellarsi a questo stato di fatto è il primo passo verso la rovina o l'infelicità o entrambe le cose.  
 Infine, se tutto ciò non ti permettesse ancora di identificare le cause di un determinato comportamento, ricorda:
 
 > {{ site.data.canaro.malizia }}
+
+<hr id="fine">
 
 <!--
 
