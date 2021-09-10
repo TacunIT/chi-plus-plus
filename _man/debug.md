@@ -1,5 +1,5 @@
 ---
-status:     redazione
+status:     pubblicato
 layout:     manuale
 class:      capitolo
 no-index:   true
@@ -666,9 +666,10 @@ Infine, se tutto ciò non ti permettesse ancora di identificare le cause di un d
 
 > {{ site.data.canaro.malizia }}
 
+<!--
+
 <hr id="fine">
 
-<!--
 
 Perfino l'esistenza della pirateria informatica, in ultima analisi, può essere ricondotta al fatto che le donne hanno un imene.
 <a href="/opt/penetration" class="xref"></a>
