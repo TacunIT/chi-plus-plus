@@ -529,7 +529,7 @@ che corrisponde ai caratteri della stringa *PippoPluto* incrementati di un'unit�
 Da migliaia di anni, gli uomini cercano di capire quale sia il significato dell'Esistenza.  
 Le risposte che si sono dati variano a seconda del periodo storico e del territorio in cui il profeta o il filosofo ha vissuto, ma hanno tutte una particolarità: richiedono ai loro seguaci l'accettazione di postulati non dimostrabili, come l'esistenza di una o più divinità o di stati di esistenza diversi da quello che conosciamo. 
 Anche la Scienza ha provato a dare delle risposte agli stessi interrogativi, ma la sua indagine si è limitata agli aspetti pratici del problema: ha prodotto delle interessanti teorie sulla genesi dell'Universo e sugli eventi che hanno portato alla nostra esistenza, ma non si è mai pronunciata su quello che potrebbe essere il nostro ruolo in tutto ciò. 
-Entrambe le possibilità erano insuficienti per il Maestro Canaro, che non riusciva ad accettare per fede i dogmi delle religioni tradizionali e, d'altro canto, non accettava lo scollamento fra uomo e Universo prodotto dalle ipotesi scientifiche.
+Entrambe le possibilità erano insufficienti per il Maestro Canaro, che non riusciva né ad accettare per fede i dogmi delle religioni tradizionali né lo scollamento fra uomo e Universo prodotto dalle ipotesi scientifiche.
 Si pose quindi una domanda:
 
 > È possibile dare una spiegazione dell’esistenza sfruttando solo ciò di cui abbiamo esperienza diretta? 
@@ -541,12 +541,11 @@ Il Maestro Canaro applicò alla sua dottrina lo stesso approccio che adottava qu
 Ci sono due modi diversi di progettare un software: il primo consiste nell'analizzare tutti i sistemi che svolgono azioni simili, prendere il meglio di ciascuno e metterlo nel nuovo sistema; in alternativa, si può progettare il sistema da zero e solo quando se ne è definita per grandi linee la struttura, studiare le soluzioni adottate dagli altri, integrandole nel proprio programma, se lo si ritiene utile.  
 Il primo approccio è più rapido e sicuro, ma ripetitivo; il secondo approccio è più complesso, sia in termini di analisi che di implementazione, ma facilita l'innovazione perché l'immaginazione dell'analista non è condizionata da ciò che ha visto.  
 Il Maestro Canaro era un sostenitore del secondo metodo e lo applicò anche al C'hi++.  
-Partì da un presupposto semplice:
+<!--
 
-> È possibile dare una spiegazione dell’esistenza sfruttando solo ciò di cui abbiamo esperienza diretta? 
- 
+Scoprì così che non solo era possibile ipotizzare una cosmogonia priva di elementi metafisici che però attribuisse un ruolo fattivo agli esseri umani, ma che i precetti di questa dottrina erano compatibili con molti dei principii delle religioni canoniche,
 
-
+-->
 Fra il C'hi++ e le religioni canoniche c'è la stessa differenza che passa fra una mappa topografica e un'immagine da satellite.  
 Quel senza Dio di Dawkins, ha detto che: 
 
@@ -578,9 +577,13 @@ Se si comporteranno così, qualunque sarà il loro lavoro, fosse anche pulire i 
 
 <!--
 
-Da migliaia di anni, gli uomini cercano di capire quale sia il significato dell'Esistenza.  
-Le risposte che si sono dati variano a seconda del periodo storico e del territorio in cui il profeta o il filosofo ha vissuto.
-
+Le diverse religioni, possono essere delle forme derivate di una stessa mistica iniziale?
+Esistono dei "dati membro" e delle funzioni comuni, che siano state ridefinite con il passare del tempo, ma che facciano capo a un corpo di credenze (o di nozioni) iniziale?
+Anche solo in questa mappa, se ne trovano diverse (p.es. Empedocle -&gt; Poe).
+Così come le classi di un lunguaggio OO sono ridefinite per adattarsi a uno specifico contesto di utilizzo, così pure la Mistica iniziale potrebbe essere stata "overloaded" per adattarsi a uno specifico luogo o tempo.
+Se fosse così, tanto più si va indietro nel tempo, e quindi nella gerarchia di classi, tanto più ci si dovrebbe avvicinare alle caratteristiche proprie della Mistica.
+E' possibile definire una gerarchia di classi figlie della classe astratta "credo"?(semplificando molto, visto che sono le 3 di notte) Budda e Zoroastro influenzano i greci, che influenzano gli ebrei, che a loro volta infulenzano i cristiani, che alla fine producono i Testimoni di Geova...
+Allo stesso modo (sempre semplificando), dal C si è evoluto il C++ e dal C++, Java.Sfortunatamente, però, i (cattivi) programmatori Java hanno fatto alla programmazione quello che i cattivi cattolici hanno fatto al cristianesimo.
 
 Data una classe: `umano` si possono ridefinire gli operatori di relazione per capire se un oggetto sia piò o meno ricco o più o meno giovane di un altro, ma sarebbe estremamente complesso scrivere una funzione che permetta di capire se un oggetto sia più o meno amato da un altro.
 Nel caso di oggetti che hanno una linea genealogica comune, la funzione potrebbe basarsi, come dice Dawkins, sulla percentuale di DNA che i due oggetti condividono, moltiplicata per il tempo passato insieme, tenendo conto anche di com'è stato quel tempo, ma nel caso di due oggetti che appartengono a genealogie differenti, quale sarebbe l'algoritmo?
@@ -592,14 +595,6 @@ Per i filosofi è `true` tutto ciò che può essere descritto con le parole; per
 
 v. Kant citato da Hertha von Dechend nella prefazione tedesca a Il Mulino di Amleto
 
-Le diverse religioni, possono essere delle forme derivate di una stessa mistica iniziale?
-Esistono dei "dati membro" e delle funzioni comuni, che siano state ridefinite con il passare del tempo, ma che facciano capo a un corpo di credenze (o di nozioni) iniziale?
-Anche solo in questa mappa, se ne trovano diverse (p.es. Empedocle -&gt; Poe).
-Così come le classi di un lunguaggio OO sono ridefinite per adattarsi a uno specifico contesto di utilizzo, così pure la Mistica iniziale potrebbe essere stata "overloaded" per adattarsi a uno specifico luogo o tempo.
-Se fosse così, tanto più si va indietro nel tempo, e quindi nella gerarchia di classi, tanto più ci si dovrebbe avvicinare alle caratteristiche proprie della Mistica.
-E' possibile definire una gerarchia di classi figlie della classe astratta "credo"?(semplificando molto, visto che sono le 3 di notte) Budda e Zoroastro influenzano i greci, che influenzano gli ebrei, che a loro volta infulenzano i cristiani, che alla fine producono i Testimoni di Geova...
-Allo stesso modo (sempre semplificando), dal C si è evoluto il C++ e dal C++, Java.Sfortunatamente, però, i (cattivi) programmatori Java hanno fatto alla programmazione quello che i cattolici hanno fatto al cristianesimo.
-V. Corano
 
 Quando il programmatore definisce un nuovo tipo di dato per mezzo di una o più classi, può allo stesso tempo istruire le funzioni e gli operatori del linguaggio ad utilizzarlo correttamente.
 
