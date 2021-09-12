@@ -15,7 +15,6 @@ La generazione dei numeri casuali è un'attività troppo importante per essere l
 Parlare del male che diventa bene, fare esempio dell'idiota che ha sparato un razzo nel locale  di Ginevra dandogli fuoco, ma causando la composizione di Smoke on the water.
 O della stronza di Ipanema, che ha reso ricco Jobim
 Differenza con i manuali SW (in cui i termini utilizzati sono tutti definiti) e le le classi C++
-Nota 7 (S.Gregorio++)
 
 <!--
     @todo - differenza fra verità epistemica e verità realista in Filosofia di House, pag. 100 e seguenti 
@@ -25,57 +24,6 @@ Nota 7 (S.Gregorio++)
 \[cfr. *Breve storia dell'infinito*, pagg. 30-40\]
 
 
-ESTETICA:
-Mentre era in un negozio di hardware, il Maestro Canaro sentì questo dialogo tra il proprietario e un suo cliente:
-«Dammi il miglior router Wireless che hai» disse il cliente.
-«Nella mia bottega tutto è il migliore» ribatté il venditore di hardware. «Qui non trovi un router Wireless che non sia il migliore».
-A queste parole, il Maestro Canaro fu illuminato.
-
-Nella Lettera agli artisti, Giovanni Paolo II utilizza i termini 'buono' e 'bello', ma li definisce in maniera ricorsiva, l'uno in funzione dell'altro. 
-
-> La bellezza è in un certo senso l'espressione visibile del bene, come il bene è la condizione metafisica della bellezza.
-
-Stesso discorso per il concetto di 'Arte'
-Bizzarro, perché la stessa cosa avviene, in condizioni diametralmente opposte, in "Un'etica senza Dio" di Lecaldano, dove ci si appella a concetti di 'buono' e 'giusto' senza definirli.
-
-C'HI++:
-permalink:  /man/chi-plus-plus
----
-
-Il C'hi++ è allo stesso tempo un linguaggio di programmazione, un atteggiamento mentale e un modo di vivere.
-Chi pratica il C'hi++ scrive codice come se stesse vivendo e vive come se stesse scrivendo del codice.  
-Vivere è come scendere in canoa lungo un fiume.
-Affannarsi a risalire la corrente è inutile e infruttuoso, perché il fiume è più forte di noi e non si stanca mai.
-Lasciarsi andare alla corrente è pericoloso, perché ci si potrebbe parare davanti un ostacolo e noi non avremmo modo di evitarlo.
-È necessario quindi remare solo quel tanto che ci permette di essere più veloci della corrente e di schivare gli ostacoli che, di volta in volta, si presentano sul nostro cammino.  
-Similmente, scrivere del buon codice significa scrivere solo il codice necessario a raggiungere lo scòpo che ci si è prefissi. 
-Aggiungere una sola virgola in più è sbagliato, perché rende più difficile il debug e più lento il programma.
-Chi pratica il C'hi++ applica lo stesso principio alla sua vita e compie solo le azioni necessarie, ignorando tutto ciò che è superfluo.
-Capire quali sono le azioni necessarie è semplice, così com'è semplice capire qual è la direzione della corrente quando navighi su un fiume.
-La cosa difficile è capire di essere su un fiume.  
- 
-Tutte le cosmogonie che sono state formulate nel corso dei secoli hanno una caratteristica comune: richiedono una certa dose di fede in qualcosa di cui non è possibile provare l'esistenza; uno o più elementi fittizi e sovra-naturali, che si introducono nel sistema per spiegare ciò che non è possibile dimostrare praticamente.
-Credere in queste entità richiede un'abiura più o meno marcata delle nostre capacità cognitive e, spesso, l'accettazione di condizioni più paradossali di quelle che si cercava di spiegare originariamente.
-Ma, come diceva sempre il Maestro Canaro: "la Verità è semplice".
-Qualunque spiegazione che richieda dei parametri correttivi, è inesatta.
-Una volta, poco prima di morire, il Maestro Canaro mi disse che, utilizzando i costrutti tipici del C'hi++, si poteva scrivere la dimostrazione dell'ultimo teorema di Fermat su una bustina di fiammiferi.
-
-*Chi*, in giapponese, vuol dire "respiro".
-L'Universo è scritto in C'hi++.
-L'Universo respira.
-Ciò che noi percepiamo come eternità altro non è che un singolo respiro dell'Universo, una delle innumerevoli eternità che si sono succedute dall'inizio dei tempi.
-Ogni respiro dell'Universo comporta una fase di espansione e una fase di contrazione.
-I punti terminali di ciascuna fase prevedono l'annichilimento di ogni forma di vita senziente.
-Al contrario, nei periodi intermedi nascono e muoiono innumerevoli mondi.
-Su ciascuno di questi innumerevoli mondi nascono e muoiono innumerevoli esseri
-Ciascuno di questi innumerevoli esseri, nel corso della sua vita, compie una serie di azioni che influenzano la sua esistenza e quella dei suoi simili.
-Le possibili permutazioni di queste innumerevoli azioni per questi innumerevoli esseri per questi innumerevoli mondi sono quasi illimitate.  
-Quasi.  
-
-Il tempo, al contrario, è illimitato, quindi può capitare che una determinata sequenza di eventi, già avvenuta in un precedente respiro dell'Universo, si ripeta, con condizioni simili, in un respiro successivo.
-Ciò vuol dire che, con buone probabilità, io e te abbiamo già avuto questa conversazione in una o in migliaia delle nostre esistenze precedenti.
-
-Ciò che le religioni non dicono è che non si può andare in Paradiso da soli: o ci andiamo tutti, o non ci va nessuno.
 
 <!--
 La filosofia é il *reverse engineering* dell'Universo.
