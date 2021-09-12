@@ -1,3 +1,6 @@
+## 0.30.0 (September 12, 2021)
+  - Chiusa prima stesura del capitolo sul debug
+  
 ## 0.29.2 (September 10, 2021)
   - Redazione del capitolo sul debug
   - Aggiunto testo Penetration
