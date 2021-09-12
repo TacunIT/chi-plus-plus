@@ -1,3 +1,98 @@
+## 0.30.0 (September 12, 2021)
+  - Revisione generale del testo
+  - Suddivisi gli appunti in NOTE.md fra capitoli e TODO
+  - Rivisto il testo dell'Universo in C++
+  - Rimossi dalla directory _var i testi obsoleti
+
+## 0.29.3 (September 12, 2021)
+  - Chiusa prima stesura del capitolo sul debug
+  
+## 0.29.2 (September 10, 2021)
+  - Redazione del capitolo sul debug
+  - Aggiunto testo Penetration
+  - Aggiunta nota su nascita del gioco degli Scacchi
+
+## 0.29.1 (September 08, 2021)
+  - Redazione del capitolo sul debug
+
+## 0.29.0 (September 05, 2021)
+  - Redazione del testo del capitolo sul debug. 
+  - Revisione delle note e delle citazioni.
+
+## 0.28.5 (September 02, 2021)
+  - Completata prima stesura del capitolo sugli stream
+
+## 0.28.4 (August 25, 2021)
+  - Redazione capitolo stream - precision, fill, width
+  - Redazione capitolo stream - Output esempio eccezioni
+
+## 0.28.3 (August 25, 2021)
+  - Redazione del capitolo sugli stream - gestione iostate
+
+## 0.28.2 (August 19, 2021)
+  - Redazione del capitolo sugli stream - iostate e eof
+
+## 0.28.1 (August 16, 2021)
+  - Modificato stile del testo in grassetto
+  - Redazione del capitolo sugli stream - funzioni di input
+  - Redazione del capitolo sugli stream - gestione eccezioni
+
+## 0.28.0 (August 15, 2021)
+  - Redazione del capitolo sugli stream - gestione eccezioni
+  - Redazione del capitolo sugli stream - iostate e openmode
+
+## 0.27.5 (August 14, 2021)
+  - Completata prima stesura della sezione tecnica del capitolo sul debug
+
+## 0.27.4 (August 12, 2021)
+  - Revisione delle citazioni nella pagina index
+
+## 0.27.3 (August 12, 2021)
+  - Revisione dell'index
+
+## 0.27.2 (August 12, 2021)
+  - Redazione del paragrafo sugli errori di analisi
+  - Redazione del capitolo sugli stream
+
+## 0.27.1 (July 17, 2021)
+  - Redazione del capitolo sul debug
+
+## 0.27.0 (July 16, 2021)
+  - Modificato il codice di esempio della gestione delle eccezioni nel capitolo sugli stream.
+
+## 0.26.6 (July 15, 2021)
+  - Redazione del testo del capitolo sul debug
+  - Aggiunto codice con errore
+
+## 0.26.5 (July 08, 2021)
+  - Redazione del testo del capitolo sul debug
+  - Corrette le ricorrenze della parola 'capitolo' nel testo: per il Maestro, sono lezioni, non capitoli :-)'
+
+## 0.26.4 (July 01, 2021)
+  - Redazione del paragrafo sugli errori di esecuzione
+  - Aggiunto output di esempio per errore stocastico
+  - Aggiunto post sulle scelte editoriali odierne
+
+## 0.26.3 (June 30, 2021)
+  - Aggiunta seconda citazione a Index
+  - Modificate le citazioni dei capitoli
+  - Aggiunto il capitolo sugli stream
+  - Iniziato esermpio per errore stocastico
+
+## 0.26.2 (June 28, 2021)
+  - Redazione del paragrafo sugli errori di esecuzione
+  - Corrette citazioni nel capitolo Funzioni
+
+## 0.26.1 (June 21, 2021)
+  - Aggiunti esempii per warning
+
+## 0.26.0 (June 18, 2021)
+  - Redazione del capitolo sul debug. 
+  - Aggiunto a opt il testo sul degrado del software.
+
+## 0.25.8 (June 18, 2021)
+  - Revisione del testo del capitolo sul polimorfismo
+
 ## 0.25.7 (June 17, 2021)
   - Completata prima stesura della sezione tecnica del capitolo sul Polimorfismo
   - Aggiunta nota su Git e versionamento

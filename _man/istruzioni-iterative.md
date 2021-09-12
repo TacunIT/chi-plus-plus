@@ -8,6 +8,7 @@ quote:      "Invero è cosa piuttosto strana a udirsi, ma il nome che noi almeno
 ---
 
 Le istruzioni di ciclo sono le componenti fondamentali della programmazione.  
+
 Ci sono tre tipi di istruzioni di ciclo: 
 
 - `for`
@@ -34,7 +35,6 @@ La prima espressione è valutata solo una volta all'inizio del ciclo e, solitame
 La seconda espressione è una condizione logica o relazionale che viene valutata all’inizio di ogni iterazione: se torna `0` o `false` l’esecuzione del ciclo termina, altrimenti posegue.  
 La terza espressione viene valutata al termine di ogni iterazione e, di solito, è costituita da un’espressione di incremento o decremento delle variabili utilizzate per il controllo del ciclo.
 Per fare ciò, si utilizzano degli operatori unarii (ovvero che operano su una singola variabile) detti: *operatori di incremento* e *operatori di decremento*, che possono svolgere la loro funzione o prima o dopo l’utilizzo della variabile, a seconda che vengano posti prima o dopo l’identificatore della variabile: 
-
 
 ```
 x++     // valuta x e poi la incrementa di un'unità
@@ -174,7 +174,7 @@ L'output sarà uguale a quello della funzione che utilizzava il ciclo `for`:
 9: Inserire un valore da: 1 a 9
 ```
 
-Il ciclo `do-while` è uguale al ciclo `while`con la sola differenza che la condizione `while` viene valutata alla fine dell’iterazione e quindi il corpo del ciclo viene eseguito almeno per una volta. 
+Il ciclo `do-while` è uguale al ciclo `while` con la sola differenza che la condizione `while` viene valutata alla fine dell’iterazione e quindi il corpo del ciclo viene eseguito almeno per una volta. 
 La forma generale del ciclo `do-while` è:
 
 ```
@@ -184,11 +184,13 @@ do
 } while(espressione)    // espressione di controllo
 ```
 
+<hr id="isolamento-funzionale">
+
 Non offenderò la tua intelligenza con un esempio; vorrei piuttosto farti notare una cosa grave: il codice di questi programmi è sgraziato.
-Il problema è che la funzione `mostraPianeta` fa troppe cose: non solo stabilisce il nome del Pianeta, ma lo stampa anche a video.
+Il problema è che la funzione mostraPianeta fa troppe cose: non solo stabilisce il nome del Pianeta, ma lo stampa anche a video.
 In conseguenza di ciò, nel nostro output abbiamo anche quella brutta stringa di errore relativa alla posizione numero nove.
 Nel primo esempio in cui l'abbiamo utilizzata, questo non era un problema, ma adesso che il nostro programma si sta sviluppando, dobbiamo rendere ciascuna funzione più specialistica, dividendo l'elaborazione dei dati (capire quale sia il pianeta) dall'interfaccia utente (la stampa a video del nome).
-Per fare ciò, utilizzermo una nuova funzione che aggiungeremo al file `pianeti.cpp`:
+Per fare ciò, utilizzeremo una nuova funzione che aggiungeremo al file `pianeti.cpp`:
 
 ```
 /**
@@ -273,7 +275,13 @@ Aristotele disse che:
  <a href="/man/note/#aristotele" class="nota"></a>
 
 In quest'ottica, il C'hi++ è una metafisica abbastanza rigorosa, perché richiede l'accettazione di due sole affermazioni non comprovabili e, di queste, solo una è strettamente necessaria alla coerenza interna della dottrina, l'altra è solo un auspicio.  
-Ai fedeli del C'hi++ è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (gli scienziati non sono infallibili: sono gli stessi che avevano visto dei canali su Marte) che ci sarà un momento in cui l'espansione dell'Universo terminerà e che tutto ciò che esiste tornerà a riunirsi nell'Uno primigenio:
+Ai fedeli del C'hi++ è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (gli scienziati non sono infallibili: sono gli stessi che avevano visto dei canali su Marte) 
+<!-- 
+@todo: valutare utilizzo di questo aneddoto (dopo averlo verificato..)
+Lemaitre fu il primo a formulare la teoria dell’espansione dell’universo, che nel 1949 Fred Hoyle, togato docente di Cambridge, sostenitore della teoria dello stato stazionario, con una punta di sarcasmo, chiamò teoria del Big Bang.
+Gregori, Claudio. Merckx, il Figlio del tuono (VITE INATTESE) (Italian Edition) (Kindle Locations 7169-7172). 66THAND2ND. Kindle Edition. 
+-->
+che ci sarà un momento in cui l'espansione dell'Universo terminerà e che tutto ciò che esiste tornerà a riunirsi nell'Uno primigenio:
 
 ```
 void eternita() 
@@ -401,5 +409,13 @@ Mi sembra un motivo più che sufficiente.
 @todo: 
 
 - introdurre l'idea delle "variazioni" della storia dell'Universo
+
+L'Esistenza potrebbe essere un sistema per smaltire l'energia dell'Universo (o di quello che ha intorno), così come le perturbazioni sono un sistema per smaltire l'energia dell'atmosfera?
+
+Eudosso scrive che gli Egiziani raccontano di Zeus questa storia. Il dio non poteva camminare, giacché le sue gambe erano sin dalla nascita saldate in un pezzo solo, e per la vergogna passava il suo tempo in solitudine. Fu Iside a tagliare e separare quella strana parte del suo corpo, mettendolo così in grado di camminare con le sue gambe. E il significato della storia è che la mente e la ragione del dio sono di per sé immobili nell’invisibile e nell’insensibile, e prendono la strada della creazione grazie a una spinta motrice.
+Plutarco, citato da Giorgio Santillana, Sirio, Adelphi. 
+Confrontare con le divinità con una sola gamba, come Houragan
+
+In Borges, *Finzioni*: lo scrittore che vuole riscrivere Don Chisciotte dice che potrebbe farcela, se solo fosse immortale (v. *Breve storia dell'Infinito*). La stessa cosa vale per l'Universo: avendo a disposizione un tempo infinito, la ripetizione è inevitabile.
 
 -->

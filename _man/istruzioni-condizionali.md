@@ -377,7 +377,7 @@ Anche alcune persone che inizialmente lo avevano appoggiato lo accusarono di cer
     
 Tutto questo a lui non importava: quando gliene parlai, mi disse che preferiva perdere un milione di seguaci che una vita.    
 
----
+<hr id="pentimento">
 
 Rispondere alla domanda sul condannato è più difficile.
 Lo scòpo delle tue azioni deve essere, come sempre, il miglioramento: chi sbaglia deve capire che ha fatto un errore e non ripeterlo in altri cicli di esistenza:
