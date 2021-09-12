@@ -380,9 +380,8 @@ quote:
     <h3>L'ereditarietà</h3>
     <ol>
         <li id="miti">
-            G. <span>de Santillana</span>, H. <span>von Dechend</span>, 
-            <i>Il mulino di Amleto</i>, 
-            Adelphi, Milano, 1983 <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+            {{ site.data.citazioni.mulino-amleto.fonte }}
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="fusto">
             <a href="https://gianlucafusto.com/"
@@ -445,6 +444,11 @@ quote:
             @todo: Spiegare cosa sia il firmware e la differenza con il software.
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>     
+        <li id="stoltezza">
+            {{ site.data.citazioni.mulino-amleto.stoltezza }}
+            {{ site.data.citazioni.mulino-amleto.fonte }}
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>        
     </ol>
 </section>
 <!--
