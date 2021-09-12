@@ -387,7 +387,7 @@ Se l’Universo fosse un computer, potremmo pensare a tutto ciò che esiste come
 Ogni volta che il computer viene spento, la memoria si svuota e tutto quello che conteneva si perde, mentre ciò che è scritto sul disco rigido rimane lì, in attesa della prossima “accensione”.
 Insomma, il dogma numero quattro è: *Lo sai, perché ci sei già passato*.
 
-l'auto-lesionismo delle scelte egoistiche:<br />
+l'autolesionismo delle scelte egoistiche:<br />
 
 > Se davvero siamo tutti degli epifenomeni, possiamo manifestarci ora qui ora lì, a seconda dei casi e se io oggi (ovvero: <i>in questo ciclo dell’Universo</i>) mi metto a spacciare droga fregandomene delle persone che ammazzo e delle famiglie che rovino, domani (ovvero: <i>in un altro ciclo di questa particolare specie di Universo</i>), potrei benissimo ritrovarmi in uno di quei drogati o di quei familiari e subirei le conseguenze delle mie stesse azioni.
 È quindi decisamente meglio che io mi comporti bene e che cerchi, per quanto mi è possibile, di convincere anche gli altri a comportarsi bene.
@@ -431,7 +431,7 @@ Ashvaghosha, nell'introduzione alla *Saundarananda*, afferma:
 
 >Questa composizione sul tema della liberazione è stata composta in forma poetica non per procurare piacere, ma per vincere nei lettori la propensione a distrarre la mente; e se ho trattato in esso temi diversi dalla liberazione è stato per renderla piacevole, così come una medicina amara si mescola con il miele per renderla bevibile.
 
-Fatte le debite proporzioni, questo vale anche per *C'hi++*: molte affermazioni del Maestro sono ironiche e lo stesso nome scelto per gli elementi costitutivi dell'Universo (gli _spazioni_) e per la cosmogonia che ne deriva (lo *Spazionismo*) ha chiaramente un intento auto/ironico.
+Fatte le debite proporzioni, questo vale anche per *C'hi++*: molte affermazioni del Maestro sono ironiche e lo stesso nome scelto per gli elementi costitutivi dell'Universo (gli *spazioni*) e per la cosmogonia che ne deriva (lo *Spazionismo*) ha chiaramente un intento auto/ironico.
 Anche i riferimenti alla disciplina estetica della disposizione dei panni sullo stendipanni, l'*Ikebarba*, hanno lo scòpo di stemperare la seriosità del testo, allegerendone la lettura.
 
 ### Mitopietica del C'hi++
@@ -464,7 +464,6 @@ Con il C'hi++ è la stessa cosa, solo che il Mondo lo crei davvero.
 
 ### L'Annosa Dicotomia
 Nel racconto all'inizio del libro comparirà anche quello che poi sarà uno dei temi ricorrenti del C'hi++, ovvero l'Annosa Dicotomia fra ciò che desideriamo e ciò di cui realmente abbiamo bisogno:
-<!-- @todo: completare revisione -->
 
 > Una volta di più, mi trovo a dover fronteggiare l’Annosa Dicotomia fra ciò che il cliente desidera e quello di cui realmente ha bisogno e, una volta di più, sarà ingrato compito dell’uomo informatico quello di venire apparentemente meno ai propri doveri al fine di produrre qualcosa di consono alle reali esigenze del committente.
 
@@ -504,7 +503,7 @@ Riporto di seguito alcuni esempi, anche si tratta ancora di appunti e non di un 
 #### Commenti al codice
 Affinità con i *Post-it* di cui parlavo prima, una sorta di memoria storica dell'Universo:
 
-> Esistono, dei commenti, nell'Universo? Qualcosa che ci permetta, da un'escuzione e l'altra, di tenere traccia di ciò che è successo nelle esecuzioni precedenti?
+> Esistono, dei commenti, nell'Universo? Qualcosa che ci permetta, da un'esecuzione e l'altra, di tenere traccia di ciò che è successo nelle esecuzioni precedenti?
 
 #### Sistemi di numerazione
 Indipendenza del concetto di _quantità_ dal numero con cui viene rappresentata:
@@ -518,12 +517,12 @@ I numeri, li abbiamo inventati noi; la quantità, no.
 Questo concetto tornerà utile più tardi, quando, a proposito delle classi, si parlerà della differenza fra il simbolo e ciò che rappresenta; o, se preferite, fra il *significato* e il *significante*.
 
 #### Linguaggi di programmazione
-Distinzione fra i linguaggi _compiliati_ (che producono software pronto all'elaborazione da parte del computer) e i linguaggi _interpretati_ (che necessitano di un sistema di conversione del proprio codice in linguaggio macchima).
+Distinzione fra i linguaggi *compilati* (che producono software pronto all'elaborazione da parte del computer) e i linguaggi *interpretati* (che necessitano di un sistema di conversione del proprio codice in linguaggio macchina).
 Parallelo con i differenti tipi di mediazione delle Chiese nella relazione con Dio; per esempio, Cattolici e Protestanti.
 
 #### Operatori
-Questo capitolo utilizzerà l'operatore *delete*, che elimina dalla memoria del sistema un dato non più necessario, per illustrare il rapporto del *C'hi++* con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon  funzonamento dell'Universo.
-Questo approccio si rirova anche nel precetto:
+Questo capitolo utilizzerà l'operatore *delete*, che elimina dalla memoria del sistema un dato non più necessario, per illustrare il rapporto del *C'hi++* con la morte, che non è più considerata un nemico da combattere, ma un fenomeno naturale necessario al buon  funzionamento dell'Universo.
+Questo approccio si ritrova anche nel precetto:
 
 > Amiamo ciò che ci ucciderà (se tutto va bene)
 
@@ -616,13 +615,13 @@ Non solo perché non ho alcun titolo per parlare di spazio e materia, ma perché
 <br />
 In informatica, questo rischio si previene adottando il metodo del *basso accoppiamento* o *low coupling*, un termine che non si riferisce alla generale difficoltà degli informatici a instaurare rapporti con persone di sesso opposto, ma alla separazione delle funzioni all'interno di un sistema.
 Se gli elementi interni di un sistema sono dipendenti gli uni dagli altri, la correzione o la modifica di uno di essi comporterà necessariamente anche la modifica del resto del codice.
-Al contrario, se gli elementi del sistema sono indipendenti gli uni dagli altri e ciasuno di essi svolge solo un compito ben preciso, le modifiche o le correzioni su uno di essi avranno un impatto molto basso o addirittura nullo sul resto del sistema.
+Al contrario, se gli elementi del sistema sono indipendenti gli uni dagli altri e ciascuno di essi svolge solo un compito ben preciso, le modifiche o le correzioni su uno di essi avranno un impatto molto basso o addirittura nullo sul resto del sistema.
 Sfortunatamente, quando ho pensato a tutto ciò, il nome Spazionismo era già stato assegnato e mi divertiva troppo per sostituirlo.
 
 ## Release 0.3: Git
 A Dicembre del 2016 divenne chiaro che anche se avessi potuto dedicare a questo progetto tutto il mio tempo (e non potevo), non sarei mai riuscito a portarlo a termine da solo.
 Trasformare il mio *studio matto e disparatissimo*<a href="#leopardi" class="nota" name="fn-18">18</a>
-in un progetto *open-source*, coinvlgendo nello “sviluppo” anche altre persone, mi sembrò la cosa migliore da fare, così cominciai a scrivere questo documento per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
+in un progetto *open-source*, coinvolgendo nello “sviluppo” anche altre persone, mi sembrò la cosa migliore da fare, così cominciai a scrivere questo documento per spiegare ai potenziali collaboratori quali fossero le mie intenzioni e creai un *repository* Git con tutti i documenti che avevo prodotto fino ad allora.
 
 ### Git
 *Git* è un sistema con cui si gestiscono le diverse versioni di un software, ma può essere utilizzato per tenere traccia delle modifiche di qualsiasi documento elettronico. Leggendo il registro degli eventi di Git possiamo vedere quali sono state le modifiche apportate al sistema:
@@ -782,7 +781,7 @@ sarà necessario definire una o più “interfacce utente” che facilitino la f
 Un ostacolo alla diffusione di massa che, al contrario, non penso sarà possibile rimuovere è che C'hi++, intenzionalmente, non dà delle risposte definitive, assolute, ma stimola a una ricerca continua.
 Per alcuni, questo può essere un lato positivo, ma si tratta di una minoranza; in questo momento, la maggior parte delle persone è alla ricerca di certezze, non di verità.
 D'altro canto, il Buddismo Zen utilizza un approccio simile da più di mille anni
-e anche la religone ebraica, se dobbiamo credere al Katz<a href="#katz" class="nota" name="fn-28">28</a>,
+e anche la religione ebraica, se dobbiamo credere al Katz<a href="#katz" class="nota" name="fn-28">28</a>,
 ha prodotto un gran numero di premii Nobel perché spinge i suoi fedeli a mettere
 in discussione le affermazioni dei testi sacri, rendendoli così più propensi a
 sviluppare idee originali, quindi preferisco aspettare un po', prima di
@@ -841,7 +840,7 @@ Un amico, a cui ne ho fatto leggere una prima bozza, sostiene che:
 
 È possibile, ma io credo piuttosto che non avverrà nulla; almeno, non nel breve periodo perché temo che, per la maggior parte dei potenziali lettori, accettare le idee del C'hi++ equivarrebbe a mettere in discussione la propia vita e le persone, in genere, non amano mettersi in discussione.
 Comunque, fino a che ne avrò la possibilità, io porterò avanti questo progetto.
-Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di un'unità la *major-version* del mio progettto e andrò avanti.
+Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di un'unità la *major-version* del mio progetto e andrò avanti.
 Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita, mia o altrui che sia, senza accettazioni per fede, ma basandomi solo su considerazioni di ordine logico.
 Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.
 Mi sembra un motivo più che sufficiente.
