@@ -122,10 +122,20 @@ CODE, PRE, P.code {
 LI CODE {
     font-size: initial;
 }
-EM, I {
+/*
+B, STRONG {
+    color: $colorGold;    
+}
+*/
+EM, I, B, STRONG  {
     color: $colorGold;
     font-size: inherit;
+    /** 
+    *   todo: capire perché c'è questo attributo settato
+    *   e possibilmente rimuoverlo, unendo B al gruppo
+    
     font-family: initial;
+    */
 }
 P {
     -webkit-hyphens: auto;
@@ -194,7 +204,7 @@ TABLE, TD, TR, TH {
     border-collapse: collapse;
     border: solid 1px $borderColor;
     padding: 0.25rem 0.5rem;
-    margin: 1rem 0;
+    margin: 1rem auto;
     font-size: 11pt;   
 }
 
@@ -511,11 +521,7 @@ IFRAME.pdf {
     height: 780px;
 }
 
-/** Tabelle nei capitoli */
-BODY.manuale.capitolo #testo TABLE {
-    margin: 1rem auto;
-}
-    
+/** Tabelle nel testo */    
 BODY.manuale.capitolo #testo TABLE.memoria TD {
     font-family: $codeFont;
     font-size: 10px;
@@ -543,6 +549,20 @@ BODY.manuale.capitolo #testo TABLE.rgb TD:nth-child(1) {
 }
 BODY.manuale.capitolo #testo TABLE.rgb TD:nth-child(2) {
     min-width: 10rem;
+}
+
+BODY.manuale.capitolo #testo BLOCKQUOTE.output {
+    text-align: justify;
+    background-color: #eee;
+    margin: 1rem auto;
+}
+BODY.manuale.capitolo #testo BLOCKQUOTE.output DIV[id^="banner"] {
+    display: block;
+    height: 100px;
+    width: 200px;
+    border: solid 1px #999;
+    margin: 1rem auto;
+    background-color: #aaa;
 }
 
 /* Equazione di Einstein  */
@@ -682,9 +702,7 @@ SECTION.citazione {
     font-size: 1rem;
     margin: 0 auto;
     padding-top: 5rem;
-    
-    
-    padding-left: 40%;
+    padding-left: 30%;
     padding-bottom: 5rem;
     text-align: right;
     page-break-after: always;

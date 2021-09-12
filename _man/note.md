@@ -380,9 +380,8 @@ quote:
     <h3>L'ereditarietà</h3>
     <ol>
         <li id="miti">
-            G. <span>de Santillana</span>, H. <span>von Dechend</span>, 
-            <i>Il mulino di Amleto</i>, 
-            Adelphi, Milano, 1983 <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+            {{ site.data.citazioni.mulino-amleto.fonte }}
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
         </li>
         <li id="fusto">
             <a href="https://gianlucafusto.com/"
@@ -407,7 +406,50 @@ quote:
             <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>            
         </li>
     </ol>
+    <h3>Il polimorfismo</h3>
+    <ol>
+        <li id="incapsulamento">
+            @todo: Spiegare cosa sia l'incapsulamento e valutare la possibilità di inserire la spiegazione nel capitolo dedicato al C++.
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>    
+    </ol>
+    <h3>Gli stream</h3>
+    <ol>
+        <li id="bitmask">
+            @todo: Spiegare cosa sia una bitmask.
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>    
+        <li id="scacchi">
+            {{ site.data.citazioni.scacchi.testo }}<br />            
+            {{ site.data.citazioni.scacchi.fonte }}
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>        
+    </ol>
 
+    <h3>Il debug</h3>
+    <ol>
+        <li id="bottom-down">
+            @todo: Spiegare la differenza fra approccio <i>bottom-up</i> e <i>bottom-down</i>.
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>    
+        <li id="croce">
+            {{ site.data.citazioni.croce.fonte }}
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>        
+        <li id="deen">
+            {{ site.data.citazioni.deen.fonte }}
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>        
+        <li id="firmware">
+            @todo: Spiegare cosa sia il firmware e la differenza con il software.
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>     
+        <li id="stoltezza">
+            {{ site.data.citazioni.mulino-amleto.stoltezza }}
+            {{ site.data.citazioni.mulino-amleto.fonte }}
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>        
+    </ol>
 </section>
 <!--
 <li id="cogito">
