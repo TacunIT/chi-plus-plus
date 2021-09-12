@@ -526,6 +526,16 @@ che corrisponde ai caratteri della stringa *PippoPluto* incrementati di un'unit�
 
 <hr id="dottrina">
 
+Il Maestro Canaro applicò alla sua dottrina lo stesso approccio che adottava quando doveva realizzare un software. 
+Ci sono due modi diversi di progettare un software: il primo consiste nell'analizzare tutti i sistemi che svolgono azioni simili, prendere il meglio di ciascuno e metterlo nel nuovo sistema; in alternativa, si può progettare il sistema da zero e solo quando se ne è definita per grandi linee la struttura, studiare le soluzioni adottate dagli altri, integrandole nel proprio programma, se lo si ritiene utile.  
+Il primo approccio è più rapido e sicuro, ma ripetitivo; il secondo approccio è più complesso, sia in termini di analisi che di implementazione, ma facilita l'innovazione perché l'immaginazione dell'analista non è condizionata da ciò che ha visto.  
+Il Maestro Canaro era un sostenitore del secondo metodo e lo applicò anche al C'hi++.  
+Partì da un presupposto semplice:
+
+> È possibile dare una spiegazione dell’esistenza sfruttando solo ciò di cui abbiamo esperienza diretta? 
+ 
+
+
 Fra il C'hi++ e le religioni canoniche c'è la stessa differenza che passa fra una mappa topografica e un'immagine da satellite.  
 Quel senza Dio di Dawkins, ha detto che: 
 
@@ -551,13 +561,15 @@ se ti sei perso in un bosco o in mezzo ai monti, una mappa topografica, proprio 
 Il C'hi++ non cerca di rubare fedeli alle religioni canoniche.
 Non avrebbe senso: sarebbe come cercare di convincere chi sia già sposato con l'amore della sua vita a fare un matrimonio di interesse: se tu hai la Fede non hai bisogno di conferme razionali; possono compiacerti, ma non ti sono necessarie. 
 Il C'hi++, però, può dare forza a quelle (tante) persone che *ancora credono in tutto ciò in cui più nessuno crede*, come li descrisse Longanesi; quella *Banda degli Onesti*<a href="/man/note#banda-onesti" class="nota"></a> che tutti i giorni fa il proprio dovere al meglio possibile anche se non gli conviene, anche tutto e tutti intorno a loro sembrano spingerli all'egoismo e all'indifferenza.
-
-
-<!--
-
 Può aiutarli a non arrendersi e può insegnare loro che non è importante vincere le partite, ma giocare sempre meglio.
 Riconoscere gli sbagli che si sono fatti, imparare da essi e cercare di non ripeterli più, partita dopo partita, in una ricerca continua del meglio.
 Se si comporteranno così, qualunque sarà il loro lavoro, fosse anche pulire i cessi, sarà comunque Arte.
+
+<!--
+
+Da migliaia di anni, gli uomini cercano di capire quale sia il significato dell'Esistenza.  
+Le risposte che si sono dati variano a seconda del periodo storico e del territorio in cui il profeta o il filosofo ha vissuto.
+
 
 Data una classe: `umano` si possono ridefinire gli operatori di relazione per capire se un oggetto sia piò o meno ricco o più o meno giovane di un altro, ma sarebbe estremamente complesso scrivere una funzione che permetta di capire se un oggetto sia più o meno amato da un altro.
 Nel caso di oggetti che hanno una linea genealogica comune, la funzione potrebbe basarsi, come dice Dawkins, sulla percentuale di DNA che i due oggetti condividono, moltiplicata per il tempo passato insieme, tenendo conto anche di com'è stato quel tempo, ma nel caso di due oggetti che appartengono a genealogie differenti, quale sarebbe l'algoritmo?
@@ -587,6 +599,11 @@ Il rispetto di queste follie, essendo in-naturale, richiede l'istituzione di un 
 Con il passare del tempo, molte di queste convenzioni nate in seguito a esigenze contingenti, finiscono inevitabilmente per contrastare con il senso comune di giustizia e devono essere o abolite o modificate, solo che ciascuna modifica o adattamento invece di renderle più "giuste", le allontana ulteriormente dal loro scòpo iniziale e le rende soggette a interpretazioni errate o addirittura opposte a quelle che era il loro fine primario.
 Sant'Agostino ha detto la stessa cosa, ma molto meglio di quanto stia facendo io adesso.
 Si vede che era sobrio.
+
+
+<!-- @todo: trovare il riferimento bibliografico per il prossimo paragrafo; so che esiste, ma non mi ricordo quale fosse --> 
+Le religioni nate in zone temperate, con abbondanza di acqua e di cibo, hanno un pantheon di divinità più o meno benevole, mentre quelle nate in zone aspre hanno un numero ristretto di Dei, più severi. 
+
 
 La specializzazione come un male.
 
