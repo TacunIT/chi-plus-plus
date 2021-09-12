@@ -410,4 +410,12 @@ Mi sembra un motivo più che sufficiente.
 
 - introdurre l'idea delle "variazioni" della storia dell'Universo
 
+L'Esistenza potrebbe essere un sistema per smaltire l'energia dell'Universo (o di quello che ha intorno), così come le perturbazioni sono un sistema per smaltire l'energia dell'atmosfera?
+
+Eudosso scrive che gli Egiziani raccontano di Zeus questa storia. Il dio non poteva camminare, giacché le sue gambe erano sin dalla nascita saldate in un pezzo solo, e per la vergogna passava il suo tempo in solitudine. Fu Iside a tagliare e separare quella strana parte del suo corpo, mettendolo così in grado di camminare con le sue gambe. E il significato della storia è che la mente e la ragione del dio sono di per sé immobili nell’invisibile e nell’insensibile, e prendono la strada della creazione grazie a una spinta motrice.
+Plutarco, citato da Giorgio Santillana, Sirio, Adelphi. 
+Confrontare con le divinità con una sola gamba, come Houragan
+
+In Borges, *Finzioni*: lo scrittore che vuole riscrivere Don Chisciotte dice che potrebbe farcela, se solo fosse immortale (v. *Breve storia dell'Infinito*). La stessa cosa vale per l'Universo: avendo a disposizione un tempo infinito, la ripetizione è inevitabile.
+
 -->
