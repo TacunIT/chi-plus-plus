@@ -526,6 +526,17 @@ che corrisponde ai caratteri della stringa *PippoPluto* incrementati di un'unit�
 
 <hr id="dottrina">
 
+Da migliaia di anni, gli uomini cercano di capire quale sia il significato dell'Esistenza.  
+Le risposte che si sono dati variano a seconda del periodo storico e del territorio in cui il profeta o il filosofo ha vissuto, ma hanno tutte una particolarità: richiedono ai loro seguaci l'accettazione di postulati non dimostrabili, come l'esistenza di una o più divinità o di stati di esistenza diversi da quello che conosciamo. 
+Anche la Scienza ha provato a dare delle risposte agli stessi interrogativi, ma la sua indagine si è limitata agli aspetti pratici del problema: ha prodotto delle interessanti teorie sulla genesi dell'Universo e sugli eventi che hanno portato alla nostra esistenza, ma non si è mai pronunciata su quello che potrebbe essere il nostro ruolo in tutto ciò. 
+Entrambe le possibilità erano insuficienti per il Maestro Canaro, che non riusciva ad accettare per fede i dogmi delle religioni tradizionali e, d'altro canto, non accettava lo scollamento fra uomo e Universo prodotto dalle ipotesi scientifiche.
+Si pose quindi una domanda:
+
+> È possibile dare una spiegazione dell’esistenza sfruttando solo ciò di cui abbiamo esperienza diretta? 
+
+La maggior parte delle religioni, per “funzionare”, richiede da una a tre dimensioni aggiuntive, oltre quelle note; la Scienza, per le sue superstringhe ha bisogno almeno di sette dimensioni aggiuntive, ovvero il doppio di quelle che servono per un Aldilà non spirituale. 
+Esisteva una spiegazione più semplice?
+ 
 Il Maestro Canaro applicò alla sua dottrina lo stesso approccio che adottava quando doveva realizzare un software. 
 Ci sono due modi diversi di progettare un software: il primo consiste nell'analizzare tutti i sistemi che svolgono azioni simili, prendere il meglio di ciascuno e metterlo nel nuovo sistema; in alternativa, si può progettare il sistema da zero e solo quando se ne è definita per grandi linee la struttura, studiare le soluzioni adottate dagli altri, integrandole nel proprio programma, se lo si ritiene utile.  
 Il primo approccio è più rapido e sicuro, ma ripetitivo; il secondo approccio è più complesso, sia in termini di analisi che di implementazione, ma facilita l'innovazione perché l'immaginazione dell'analista non è condizionata da ciò che ha visto.  

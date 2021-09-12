@@ -654,6 +654,10 @@ Il secondo fattore da considerare è la natura umana; ricorda:
 
 > {{ site.data.canaro.malizia }}
 
+O, per dirla con De Santillana:
+
+> {{ site.data.citazioni.santillana.stoltezza }}<a href="/man/note#stoltezza" class="nota"></a>
+
 Per derimere le questioni relative ai rapporti di coppia, invece, l'approccio più sicuro è quello antropologico.
 Come diceva il Maestro Canaro:
 
