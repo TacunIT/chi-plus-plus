@@ -12,6 +12,9 @@ Il debug potrà non essere il senso della vita, come recita il titolo del tuo li
 Nella tua carriera di programmatore potrai non utilizzare mai una classe *functor* o ridefinire l'operatore `->`, ma sicuramente farai degli errori e li dovrai correggere.
 Malgrado ciò, i manuali di programmazione non parlano mai del *debug*.
 Si sono scritte migliaia di pagine sui diversi linguaggi di programmazione; non c'è primavera che non veda fiorire un nuovo paradigma di programmazione &mdash; strutturata, *object-oriented*, *agile*, *fuzzy* &mdash; eppure, nessuno si è mai preoccupato di formalizzare il processo di correzione del codice.  
+
+> {{ site.data.canaro.decadenza-software }}
+
 Trascurare il debug è come affermare che non si faranno mai errori.
 Non importa quanto sia efficiente il linguaggio di programmazione; non importa quanto sia astuto e vigile il compilatore; non importa nemmeno quanto sia bravo il programmatore: o prima o poi, la distrazione, la stanchezza o un evento esterno permetteranno a un errore di intrufolarsi nel codice.
 Un puntatore utilizzato impropriamente, un ciclo in più o in meno in un'istruzione `for` o una virgola dimenticata fra i parametri di una `printf`: qualunque cosa sia, se il compilatore non sarà in grado di riconoscerla, finirà nel programma è resterà lì in attesa di produrre i suoi effetti dannosi.
@@ -674,6 +677,8 @@ Ricorda però: ciò che ti ho insegnato non è un punto di arrivo, ma un punto d
 La fine del cammino che abbiamo percorso insieme coincide con l'inizio del cammino che percorrerai da solo. 
 Da questo momento in poi tu hai il dovere di diffondere le idee che ti ho trasmesso e, allo stesso tempo, di metterle costantemente alla prova per emendarle dai molti errori che certamente avrò commesso, così come il Maestro Canaro prima di me.
 Scrivi il tuo libro, se lo desideri, ma che non sia un libro stupido; fa' in modo che lo si possa correggere facilmente, se necessario, in modo che ciò che afferma sia sempre il punto più vicino alla verità che tu possa raggiungere, perché l'oggetto dei tuoi sforzi dev'essere sempre la verità, non la tradizione.
+
+
 
 <!--
 
