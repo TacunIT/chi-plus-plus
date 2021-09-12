@@ -1,3 +1,9 @@
+## 0.30.0 (September 12, 2021)
+  - Revisione generale del testo
+  - Suddivisi gli appunti in NOTE.md fra capitoli e TODO
+  - Rivisto il testo dell'Universo in C++
+  - Rimossi dalla directory _var i testi obsoleti
+
 ## 0.29.3 (September 12, 2021)
   - Chiusa prima stesura del capitolo sul debug
   
