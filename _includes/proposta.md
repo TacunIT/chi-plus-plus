@@ -16,10 +16,10 @@ Quelli mi annoiano perché parlano sempre di Dio. <br/>
 
 ## Executive summary
 Il *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza.
-Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e princip&icirc; etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come quello riportato in copertina.
+Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e principii etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come quello riportato in copertina.
 Non ho titoli per scrivere di filosofia e religione, perché sono un Maestro d'Arte che dal 1990 si guadagna da vivere programmando e proteggendo computer, quindi approccerò questo testo e lo stesso C'hi++ come se fosse un progetto informatico: dopo questo *Executive Summary*, farò un'analisi della situazione esistente, evidenziando i difetti del sistema di valori attualmente in esercizio e proponendo come soluzione un recupero di spiritualità che non sfoci nell'esaltazione religiosa; successivamente, descriverò alcune vulnerabilità logiche delle religioni canoniche e definirò delle linee-guida atte a prevenirle; presenterò poi la “soluzione proposta”, ovvero il C'hi++, descrivendone le caratteristiche e l'evoluzione; infine, elencherò i passi successivi dello sviluppo del sistema.
 
-Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologie propr&icirc; dell'informatica e ne ho fornito una breve descrizione per coloro che non  abbiano familiarità con le attività di creazione del software; i tecnici mi perdonino le semplificazioni.
+Nel testo ho dovuto fare necessariamente dei riferimenti a concetti o metodologie proprii dell'informatica e ne ho fornito una breve descrizione per coloro che non  abbiano familiarità con le attività di creazione del software; i tecnici mi perdonino le semplificazioni.
 Ho dovuto anche, per brevità, fare delle affermazioni senza comprovarle; i logici mi perdonino l'apodissi.
 <p class="newpage"></p>
 
@@ -78,9 +78,9 @@ Come vedremo fra poco, la religione può aiutarvi a trovare una risposta
 a queste domande.
 Nulla vi assicura che sia la risposta giusta &mdash; nulla potrebbe farlo &mdash; ma almeno è una risposta.
 Finora, però, le religioni non hanno aiutato l'Umanità a vivere meglio, anzi: hanno avuto spesso l'effetto opposto perché sono state prese a pretesto per guerre, soprusi e contrasti più o meno violenti.
-Ciò dipende da due fattori: la natura umana e la mancanza di solidità logica dei loro princip&icirc;.
+Ciò dipende da due fattori: la natura umana e la mancanza di solidità logica dei loro principii.
 Infatti, dovendo interessarsi di argomenti che non possono essere sottoposti a un'analisi razionale, le religioni sono costrette a dedurre le regole della propria dottrina da una serie di dogmi non dimostrabili che i seguaci della religione, i quali non a caso sono detti: “fedeli” o: “credenti”, devono accettare per buoni senza metterli in discussione.
-I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato con ogni mezzo, anche a costo di abiurare quegli stessi princip&icirc; che si cerca di difendere.
+I dogmi sono i pilastri su cui si regge l'edificio della dottrina; se uno di essi si indebolisse o, peggio, se fosse rimosso, l'edificio rischierebbe di crollare, quindi ogni forma di eresia è vista dagli apparati ecclesiastici come un potenziale pericolo che va scongiurato con ogni mezzo, anche a costo di abiurare quegli stessi principii che si cerca di difendere.
 E qui, come direbbe Amleto, comincia il male, perché i dogmi non sono leggi comprovabili, ma opinioni o speranze e ogni tentativo di renderli più robusti ottiene l'effetto opposto perché si ampliano le dimensioni di una struttura che poggia su basi instabili.
 
 ### Caso d'uso: il Buonismo
@@ -129,7 +129,7 @@ Il fatto è che, con buona pace di John Lennon, in un Mondo senza religioni la s
 
 il buon giudice non avrebbe meno difficoltà del Buonista a trovare una risposta.
 La Legge gli impedirebbe di mandarvi al rogo, ma gli consentirebbe comunque di spedirvi in prigione, dove trovereste ad attendervi il simpatico soggetto della domanda *B*.
-Questo perché anche i princip&icirc; delle società laiche, al pari dei dogmi delle religioni, non sono verità comprovabili, ma opinioni o speranze.
+Questo perché anche i principii delle società laiche, al pari dei dogmi delle religioni, non sono verità comprovabili, ma opinioni o speranze.
 A differenza dei dogmi religiosi, però, i laici non possono rifarsi a valori di ordine superiore e, come abbiamo visto sopra, devono trovare i fondamenti delle loro affermazioni nella realtà contingente, cosa che non sempre è possibile, quindi le loro regole risultano ancora più inconsistenti di quelle religiose.  
 Prendete ad esempio i trenta articoli della <a href="http://www.un.org/en/universal-declaration-human-rights/" target="un" >Dichiarazione dei Diritti dell'Uomo</a> del 1948: voi e io troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.
 Per quale motivo un Signore della Guerra centro-africano dovrebbe rispettarle, dato che non sono un insieme di norme giuridiche a cui gli Stati e gli individui debbano attenersi, ma un elenco di quelli che *dovrebbero essere*<a href="#achievements" class="nota" name="fn-4">4</a> i diritti di ogni essere umano?
@@ -261,8 +261,8 @@ L'esempio riportato sopra ha evidenziato dei problemi che possiamo considerare c
 
 Oltre ai problemi tipici delle religioni, abbiamo rilevato alcuni problemi tipici degli esseri umani:
 
--   la tendenza a difendere i propri princip&icirc; anche con mezzi che
-    contrastano con i princip&icirc; stessi;
+-   la tendenza a difendere i propri principii anche con mezzi che
+    contrastano con i principii stessi;
 -   la tendenza a influenzare la propria obiettività con le proprie
     speranze.
 
@@ -305,6 +305,7 @@ La *major version zero* (_0.y.z_) è destinata allo sviluppo iniziale, quando il
 Il *versionamento semantico* ha anche altre regole, ma per quelli che sono i nostri scòpi possiamo fermarci qui.
 
 ### Versionamento delle religioni monoteistiche
+<!-- @todo: aggiungere versioni per lo Zoroastrismo -->
 Se volessimo sottoporre a versionamento le principali religioni monoteistiche, otterremmo una sequenza simile a quella della tabella seguente.
 
 | ver. | anno | descrizione | modifiche apportate |
@@ -475,7 +476,7 @@ Nell'estetica del C'hi++ a queste due forze se ne aggiunge una terza, intermedia
 Sono opere di Decorazione tutte quelle idee e quegli artefatti che soddisfano i sensi dell'uomo, ma che non hanno alcuna influenza diretta, positiva o negativa che sia, sulla sua crescita spirituale.
 
 #### L'Ikebarba
-Un'applicazione pratica di questi princip&icirc; si ha nella disciplina artistica dell'*Ikebarba*, che, come accennato prima, definisce i criter&icirc; etici ed estetici per la disposizione dei panni sullo stendipanni.
+Un'applicazione pratica di questi principii si ha nella disciplina artistica dell'*Ikebarba*, che, come accennato prima, definisce i criterii etici ed estetici per la disposizione dei panni sullo stendipanni.
 Il principio filosofico che sottende l'Ikebarba è che ogni nostra azione è importante e non esistono momenti di serie A, nei quali facciamo le cose che ci piacciono e momenti di serie B, nei quali facciamo ciò che è necessario fare.
 Anche la stenditura dei panni, se approcciata correttamente, può essere un passo verso il miglioramento di sé e del Mondo.
 Il primo precetto dell'Ikebarba è una perifrasi della frase di Gesù sullo Shabbat:
@@ -696,7 +697,7 @@ questo testo fammelo in color rosso pompeiano
 può funzionare solo su un computer a cui sia stato insegnato come generare quella
 specifica sfumatura di colore nota come: *rosso pompeiano*.<a href="#rosso-pompeiano" class="nota" name="fn-19">19</a>
 
-Traslando questo concetto in termini letterar&icirc;, possiamo dire che una vignetta di satira politica non è portabile, perché implica una conoscenza sia del soggetto della vignetta che dell'evento a cui si riferisce; al contrario, una (buona) poesia è portabile, perché si riferisce a concetti universali che chiunque è in grado di capire.
+Traslando questo concetto in termini letterarii, possiamo dire che una vignetta di satira politica non è portabile, perché implica una conoscenza sia del soggetto della vignetta che dell'evento a cui si riferisce; al contrario, una (buona) poesia è portabile, perché si riferisce a concetti universali che chiunque è in grado di capire.
 Nel nostro caso, possiamo dire che la portabilità è la possibilità di rendere accettabile un concetto per persone aventi culture o convinzioni religiose di tipo diverso.
 
 ### Portabilità del C'hi++
@@ -782,7 +783,7 @@ Un ostacolo alla diffusione di massa che, al contrario, non penso sarà possibil
 Per alcuni, questo può essere un lato positivo, ma si tratta di una minoranza; in questo momento, la maggior parte delle persone è alla ricerca di certezze, non di verità.
 D'altro canto, il Buddismo Zen utilizza un approccio simile da più di mille anni
 e anche la religone ebraica, se dobbiamo credere al Katz<a href="#katz" class="nota" name="fn-28">28</a>,
-ha prodotto un gran numero di prem&icirc; Nobel perché spinge i suoi fedeli a mettere
+ha prodotto un gran numero di premii Nobel perché spinge i suoi fedeli a mettere
 in discussione le affermazioni dei testi sacri, rendendoli così più propensi a
 sviluppare idee originali, quindi preferisco aspettare un po', prima di
 considerare un errore questa caratteristica.
@@ -821,12 +822,12 @@ mentre dal punto di vista dell'Ufficio Legale o della società assicurativa, il 
 L'auto non ha il tempo di valutare tutte queste variabili, quindi ha bisogno di una sua scala di valori che le permetta di *prendere delle decisioni in quei casi in cui il raziocinio o il semplice buon senso<a href="#book" class="nota" name="fn-32">32</a>
 non possono essere d'aiuto*; in altre parole, l'automobile ha bisogno di una Fede.
 Ovviamente non potrà essere una delle religioni canoniche, perché sarebbe limitante dal punto di vista delle vendite e apparentemente non sarà nemmeno una filosofia laica, perché se ce ne fosse una adatta, in vent'anni l'avrebbero trovata.
-Dovrà quindi essere qualcosa di intermedio, né religioso né laico, con princip&icirc; che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori.<a href="#barbelognostica" class="nota" name="fn-33">33</a>
+Dovrà quindi essere qualcosa di intermedio, né religioso né laico, con principii che siano condivisibili (e condivisi) dalla stragrande maggioranza dei cittadini e dei legislatori.<a href="#barbelognostica" class="nota" name="fn-33">33</a>
 Dovrà essere in condizione di adattarsi senza stravolgimenti al *mutare delle fogge e dei costumi* della Società e dovrà poter imparare dai suoi errori, correggendoli rapidamente.
 Dovrà essere *vendor-independent* e *open-source*, per facilitare la scoperta e la correzione di eventuali errori.
 Tanto meglio, poi, se potesse essere compresa e gestita facilmente dal software e dagli informatici.
 Il C'hi++ potrebbe essere tutto questo.
-I princip&icirc; del C'hi++, anche se ancora in embrione, permettono risolvere il dilemma bambino/notaio in maniera abbastanza semplice perché per C'hi++ non ha importanza chi dei due debba essere sacrificato, basta che la scelta sia preventiva e intenzionale, in modo che possa essere modificata nelle successive vite dell'Universo.
+I principii del C'hi++, anche se ancora in embrione, permettono risolvere il dilemma bambino/notaio in maniera abbastanza semplice perché per C'hi++ non ha importanza chi dei due debba essere sacrificato, basta che la scelta sia preventiva e intenzionale, in modo che possa essere modificata nelle successive vite dell'Universo.
 In pratica, l'utente della *smart-car*, prima di partire, dovrà decidere che tipo di comportamento dovrà adottare il sistema nel caso si presentasse il problema: "o lui o io"; una soluzione che risolve non solo i problemi del sistema di guida, ma anche quelli degli uffici marketing e legale, perché scarica la responsabilità della scelta sull'utente e non sulla casa automobilistica o sul produttore del software.
 In ottica C'hi++ il titolo sul giornale potrebbe essere:
 
