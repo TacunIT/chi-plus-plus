@@ -9,7 +9,6 @@
 Eudosso scrive che gli Egiziani raccontano di Zeus questa storia. Il dio non poteva camminare, giacché le sue gambe erano sin dalla nascita saldate in un pezzo solo, e per la vergogna passava il suo tempo in solitudine. Fu Iside a tagliare e separare quella strana parte del suo corpo, mettendolo così in grado di camminare con le sue gambe. E il significato della storia è che la mente e la ragione del dio sono di per sé immobili nell’invisibile e nell’insensibile, e prendono la strada della creazione grazie a una spinta motrice.
 Plutarco, citato da Giorgio Santillana, Sirio, Adelphi. 
 
-Gli interventi divini possono avvenire solo in fase di debug, poi il software deve essere in grado di funzionare autonomamente.
 
 La generazione dei numeri casuali è un'attività troppo importante per essere lasciata al Caso
 
@@ -18,16 +17,12 @@ O della stronza di Ipanema, che ha reso ricco Jobim
 Differenza con i manuali SW (in cui i termini utilizzati sono tutti definiti) e le le classi C++
 Nota 7 (S.Gregorio++)
 
-La negazione e il paradosso come metodo per comprendere ciò che non è di per sé evidente,
-
 <!--
     @todo - differenza fra verità epistemica e verità realista in Filosofia di House, pag. 100 e seguenti 
     @todo - le teorie di Wittgenstein., secondo cui la metafisica è un uso pervertito del linguaggio, tocca che me la studio
 -->
 
 \[cfr. *Breve storia dell'infinito*, pagg. 30-40\]
-
-Si può dire che esista qualcosa che non ha dimensioni?
 
 
 ESTETICA:
@@ -95,9 +90,6 @@ Chi pensa che io voglia fare il debug dell'Universo non sa nulla del *C'hi++*.
 
 Rispetto agli altri linguaggi di programmazione, ha una peculiarità: non consente errori di programmazione, ma solo di esecuzione.
 
-Ciascun ciclo di vita dell'Universo è una sessione di debug.
-
-Il codice è perfetto, siamo noi a fare gli errori.
 
 Paul Erdós sosteneva che Dio possedeva un libro transfinito (più grande dell'infinito) nel quale erano raccolte le migliori dimostrazioni di tutti i teoremi matematici, dimostrazioni eleganti e perfette.
 
@@ -111,22 +103,8 @@ Fintanto che il programma gira, quella stessa memoria sarà utilizzata più e pi
 
 Poco importa se saremo di nuovo noi, oppure altre entità, perché il programma continuerà a girare per sempre e anche se ci fosse solo una probabilità su un miliardo che tornino a verificarsi le condizioni che hanno portato alla nostra esistenza, prima o poi quelle stesse condizioni si verificheranno ancora, e noi saremo di nuovo qui a vivere la nostra vita.
 
-La questione a questo punto è: esiste un disco rigido dell'Universo, o gira tutto in memoria RAM?
-
 Coloro che si sforzano, in questa vita, di eseguire i precetti della loro religione perché pensano che gliene verrà reso merito dopo la morte, sbagliano due volte.
 
 Non esiste il Paradiso e non esiste nessuna vita eterna, ma solo un'eternità di vite.
-
-L'Universo *è* il Paradiso: siamo noi che lo utilizziamo impropriamente.
-
-Ci sono due forze, contrapposte. Come dice Poe, una è la gravità, che
-tende a riunire tutto nell'Uno; l'altra è l'entropia, che separa e
-disperde.
-
-Servono tutte e due: se ci fosse solo la gravità, ci sarebbe solo l'Uno, se ci fosse solo l'entropia, ci sarebbe la morte termica.
-
-Alla lunga (molto lunga), una condizione simile porterebbe a un Universo piuttosto noioso, quindi, devono esserci entrambe, in continua opposizione.
-
-È questo che permette l'esistenza.
 
 -->
