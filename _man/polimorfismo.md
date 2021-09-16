@@ -528,24 +528,25 @@ che corrisponde ai caratteri della stringa *PippoPluto* incrementati di un'unit�
 
 Da migliaia di anni, gli uomini cercano di capire quale sia il significato dell'Esistenza.  
 Le risposte che si sono dati variano a seconda del periodo storico e del territorio in cui il profeta o il filosofo ha vissuto, ma hanno tutte una particolarità: richiedono ai loro seguaci l'accettazione di postulati non dimostrabili, come l'esistenza di una o più divinità o di stati di esistenza diversi da quello che conosciamo. 
-Anche la Scienza ha provato a dare delle risposte agli stessi interrogativi, ma la sua indagine si è limitata agli aspetti pratici del problema: ha prodotto delle interessanti teorie sulla genesi dell'Universo e sugli eventi che hanno portato alla nostra esistenza, ma non si è mai pronunciata su quello che potrebbe essere il nostro ruolo in tutto ciò. 
-Entrambe le possibilità erano insufficienti per il Maestro Canaro, che non riusciva né ad accettare per fede i dogmi delle religioni tradizionali né lo scollamento fra uomo e Universo prodotto dalle ipotesi scientifiche.
-Si pose quindi una domanda:
+Anche la Scienza ha provato a dare delle risposte agli stessi interrogativi, ma la sua indagine si è limitata agli aspetti pratici del problema: ha prodotto delle interessanti teorie sulla genesi dell'Universo e sugli eventi che hanno portato alla nostra esistenza, ma non si è mai pronunciata su quello che potrebbe essere il nostro ruolo in tutto ciò.   
+Il Maestro Canaro, che non riusciva ad accettare né i dogmi delle religioni tradizionali né lo scollamento fra uomo e Universo prodotto dalle ipotesi scientifiche, si pose una domanda:
 
 > È possibile dare una spiegazione dell’esistenza sfruttando solo ciò di cui abbiamo esperienza diretta? 
 
 La maggior parte delle religioni, per “funzionare”, richiede da una a tre dimensioni aggiuntive, oltre quelle note; la Scienza, per le sue superstringhe ha bisogno almeno di sette dimensioni aggiuntive, ovvero il doppio di quelle che servono per un Aldilà non spirituale. 
-Esisteva una spiegazione più semplice?
- 
+Esisteva una spiegazione più semplice?  
+Dopo una decina di anni di studio, arrivò alla conclusione che non solo è possibile ipotizzare una cosmogonia quasi del tutto priva di elementi metafisici, ma che i precetti di questa dottrina erano compatibili con molti  principii delle religioni canoniche.  
 Il Maestro Canaro applicò alla sua dottrina lo stesso approccio che adottava quando doveva realizzare un software. 
-Ci sono due modi diversi di progettare un software: il primo consiste nell'analizzare tutti i sistemi che svolgono azioni simili, prendere il meglio di ciascuno e metterlo nel nuovo sistema; in alternativa, si può progettare il sistema da zero e solo quando se ne è definita per grandi linee la struttura, studiare le soluzioni adottate dagli altri, integrandole nel proprio programma, se lo si ritiene utile.  
+Ci sono due modi diversi di progettare un software: il primo consiste nell'analizzare tutti i sistemi che svolgono azioni simili, prendere il meglio di ciascuno e metterlo nel nuovo sistema; in alternativa, si può progettare il sistema da zero e solo quando se ne è definita per grandi linee la struttura, studiare le soluzioni adottate dagli altri, integrandole nel proprio programma, se lo si ritiene utile.
 Il primo approccio è più rapido e sicuro, ma ripetitivo; il secondo approccio è più complesso, sia in termini di analisi che di implementazione, ma facilita l'innovazione perché l'immaginazione dell'analista non è condizionata da ciò che ha visto.  
-Il Maestro Canaro era un sostenitore del secondo metodo e lo applicò anche al C'hi++.  
-<!--
+Il Maestro Canaro era un sostenitore del secondo metodo e lo applicò anche al C'hi++.
+Non essendo né un filosofo né un mistico, approcciò lo sviluppo della sua dottrina come se fosse stata un sistema software.
+Per prima cosa fece un'analisi del "sistema in esercizio", evidenziandone i principali difetti; poi identificò delle vulnerabilità logiche delle religioni canoniche e definì delle linee-guida atte a prevenirle; infine, descrisse le caratteristiche del C'hi++, spiegando come queste avrebbero potuto risolvere alcuni dei problemi evidenziati in precedenza. 
 
-Scoprì così che non solo era possibile ipotizzare una cosmogonia priva di elementi metafisici che però attribuisse un ruolo fattivo agli esseri umani, ma che i precetti di questa dottrina erano compatibili con molti dei principii delle religioni canoniche,
+> {{ site.data.canaro.terraferma }}
 
--->
+<hr id="igm">
+
 Fra il C'hi++ e le religioni canoniche c'è la stessa differenza che passa fra una mappa topografica e un'immagine da satellite.  
 Quel senza Dio di Dawkins, ha detto che: 
 
@@ -577,6 +578,9 @@ Se si comporteranno così, qualunque sarà il loro lavoro, fosse anche pulire i 
 
 <!--
 
+
+
+
 Le diverse religioni, possono essere delle forme derivate di una stessa mistica iniziale?
 Esistono dei "dati membro" e delle funzioni comuni, che siano state ridefinite con il passare del tempo, ma che facciano capo a un corpo di credenze (o di nozioni) iniziale?
 Anche solo in questa mappa, se ne trovano diverse (p.es. Empedocle -&gt; Poe).
@@ -595,19 +599,11 @@ Per i filosofi è `true` tutto ciò che può essere descritto con le parole; per
 
 v. Kant citato da Hertha von Dechend nella prefazione tedesca a Il Mulino di Amleto
 
-
 Quando il programmatore definisce un nuovo tipo di dato per mezzo di una o più classi, può allo stesso tempo istruire le funzioni e gli operatori del linguaggio ad utilizzarlo correttamente.
 
-Noi viviamo prevalentemente sulla terraferma e riteniamo perciò che la normalità sia questa. Se però si trascorre un lungo periodo di tempo su una nave o in un'isola, si ha modo di capire come la normalità sia l'acqua e la terra sia solo un'eccezione.
-Similmente, noi diamo grande importanza al ciclo di nascita, riproduzione e morte che chiamiamo "vita" e in essa vediamo il fine ultimo dell'Universo, dimenticandoci che la vita è solo un caso particolare di esistenza e che un universo di sassi sarebbe comunque prodigioso.
-Ciascuna forma di vita consociata, per poter sopravvivere, richiede la legittimazione di alcune follie biologiche.
-Il rispetto di queste follie, essendo in-naturale, richiede l'istituzione di un livello superiore di costrizione, ovvero un corpo di regole formali ancora più distante del precedente dal comportamento biologico degli esseri viventi.
-Con il passare del tempo, molte di queste convenzioni nate in seguito a esigenze contingenti, finiscono inevitabilmente per contrastare con il senso comune di giustizia e devono essere o abolite o modificate, solo che ciascuna modifica o adattamento invece di renderle più "giuste", le allontana ulteriormente dal loro scòpo iniziale e le rende soggette a interpretazioni errate o addirittura opposte a quelle che era il loro fine primario.
-Sant'Agostino ha detto la stessa cosa, ma molto meglio di quanto stia facendo io adesso.
-Si vede che era sobrio.
 
+@todo: trovare il riferimento bibliografico per il prossimo paragrafo; so che esiste, ma non mi ricordo quale fosse
 
-<!-- @todo: trovare il riferimento bibliografico per il prossimo paragrafo; so che esiste, ma non mi ricordo quale fosse --> 
 Le religioni nate in zone temperate, con abbondanza di acqua e di cibo, hanno un pantheon di divinità più o meno benevole, mentre quelle nate in zone aspre hanno un numero ristretto di Dei, più severi. 
 
 
