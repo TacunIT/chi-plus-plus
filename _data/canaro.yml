@@ -75,12 +75,19 @@ paranoici:
 ragione:
     "Quando ero un giovane *project-manager* e discutevo con i miei clienti, cercavo sempre di dimostrare loro che avevo ragione; ora cerco solo di far ciò che dev'essere fatto."
 
+religioni-oo:
+    "Le diverse religioni, possono essere delle forme derivate di una stessa mistica iniziale?
+    Esistono dei “dati membro” e delle funzioni comuni, che siano state ridefinite con il passare del tempo, ma che facciano capo a un corpo di credenze (o di nozioni) iniziale?
+    Anche solo in questa mappa, se ne trovano diverse (p.es. Empedocle -> Poe).
+    Così come le classi di un linguaggio Object-Oriented sono ridefinite per adattarsi a uno specifico contesto di utilizzo, così pure la Mistica iniziale potrebbe essere stata “overloaded” per adattarsi a uno specifico luogo o tempo.
+    Se fosse così, tanto più si va indietro nel tempo, e quindi nella gerarchia di classi, tanto più ci si dovrebbe avvicinare alle caratteristiche proprie della Mistica.
+    È possibile definire una gerarchia di classi figlie della classe astratta <code>Credo</code>?
+    Semplificando molto (visto che sono le 3 di notte): Budda e Zoroastro influenzano i Greci, che influenzano gli Ebrei, che a loro volta influenzano i Cristiani, che alla fine producono i Testimoni di Geova...
+    Allo stesso modo (sempre semplificando), dal C si è evoluto il C++ e dal C++, Java."
+
 ricompensa-oltre-morte:
     "Coloro che si sforzano, in questa vita, di eseguire i precetti della loro religione perché pensano che gliene verrà reso merito dopo la morte, sbagliano due volte."
 
-terraferma:
-    ""
-    
 universo-cpp:
     "<h3>Ultima pagina del diario del Maestro Canaro (8 Aprile)</h3> Sono in ufficio e sto lavorando quando squilla il telefono. La voce che mi risponde è piuttosto bassa e ha un'eco curiosa.
     Mi fa:
