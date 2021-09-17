@@ -535,15 +535,25 @@ Il Maestro Canaro, che non riusciva ad accettare né i dogmi delle religioni tra
 
 La maggior parte delle religioni, per “funzionare”, richiede da una a tre dimensioni aggiuntive, oltre quelle note; la Scienza, per le sue superstringhe ha bisogno almeno di sette dimensioni aggiuntive, ovvero il doppio di quelle che servono per un Aldilà non spirituale. 
 Esisteva una spiegazione più semplice?  
-Dopo una decina di anni di studio, arrivò alla conclusione che non solo è possibile ipotizzare una cosmogonia quasi del tutto priva di elementi metafisici, ma che i precetti di questa dottrina erano compatibili con molti  principii delle religioni canoniche.  
-Il Maestro Canaro applicò alla sua dottrina lo stesso approccio che adottava quando doveva realizzare un software. 
-Ci sono due modi diversi di progettare un software: il primo consiste nell'analizzare tutti i sistemi che svolgono azioni simili, prendere il meglio di ciascuno e metterlo nel nuovo sistema; in alternativa, si può progettare il sistema da zero e solo quando se ne è definita per grandi linee la struttura, studiare le soluzioni adottate dagli altri, integrandole nel proprio programma, se lo si ritiene utile.
-Il primo approccio è più rapido e sicuro, ma ripetitivo; il secondo approccio è più complesso, sia in termini di analisi che di implementazione, ma facilita l'innovazione perché l'immaginazione dell'analista non è condizionata da ciò che ha visto.  
-Il Maestro Canaro era un sostenitore del secondo metodo e lo applicò anche al C'hi++.
 Non essendo né un filosofo né un mistico, approcciò lo sviluppo della sua dottrina come se fosse stata un sistema software.
 Per prima cosa fece un'analisi del "sistema in esercizio", evidenziandone i principali difetti; poi identificò delle vulnerabilità logiche delle religioni canoniche e definì delle linee-guida atte a prevenirle; infine, descrisse le caratteristiche del C'hi++, spiegando come queste avrebbero potuto risolvere alcuni dei problemi evidenziati in precedenza. 
+Come scrisse nella <a href="/proposta#errori" class="xref">Proposta</a>, c'erano dei *bug* che si possono considerare comuni a tutte le metafisiche:
 
-> {{ site.data.canaro.terraferma }}
+> {{ site.data.canaro.errori-religioni }}
+
+ed altri, che si potevano considerare comuni agli esseri umani:
+
+> {{ site.data.canaro.errori-umani }}
+
+Per correggere o quanto meno mitigare questi problemi, la sua metafisica avrebbe dovuto:
+
+> {{ site.data.canaro.chi-requisiti }}
+
+
+Il Maestro Canaro applicò alla sua *metafisica-non-metafisica* lo stesso approccio che adottava quando doveva realizzare un software. 
+Ci sono due modi diversi di progettare un software: il primo consiste nell'analizzare tutti i sistemi che svolgono azioni simili, prendere il meglio di ciascuno e metterlo nel nuovo sistema; in alternativa, si può progettare il sistema da zero e solo quando se ne è definita per grandi linee la struttura, studiare le soluzioni adottate dagli altri, integrandole nel proprio programma, se lo si ritiene utile.
+Il primo approccio è più rapido e sicuro, ma ripetitivo; il secondo approccio è più complesso, sia in termini di analisi che di implementazione, ma facilita l'innovazione perché l'immaginazione dell'analista non è condizionata da ciò che ha visto.  
+Essendo un sostenitore del secondo metodo, il Maestro Canaro lo applicò anche al C'hi++ e, dopo una decina di anni di studio, arrivò alla conclusione che non solo è possibile ipotizzare una cosmogonia quasi del tutto priva di elementi metafisici, ma che i precetti di questa dottrina erano compatibili con molti  principii delle religioni canoniche.  
 
 <hr id="igm">
 
@@ -577,9 +587,6 @@ Riconoscere gli sbagli che si sono fatti, imparare da essi e cercare di non ripe
 Se si comporteranno così, qualunque sarà il loro lavoro, fosse anche pulire i cessi, sarà comunque Arte.
 
 <!--
-
-
-
 
 Le diverse religioni, possono essere delle forme derivate di una stessa mistica iniziale?
 Esistono dei "dati membro" e delle funzioni comuni, che siano state ridefinite con il passare del tempo, ma che facciano capo a un corpo di credenze (o di nozioni) iniziale?
