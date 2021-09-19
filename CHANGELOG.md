@@ -1,3 +1,8 @@
+## 0.30.3 (September 19, 2021)
+  - Aggiunti 10C rivisti da Maestro Canaro
+  - Rivisto testo dei Dicei Comandamenti
+  - Integrato testo finale del capitolo sul debug
+
 ## 0.30.2 (September 17, 2021)
   - Redazione del testo del capitolo sul Polimorfismo
   - Spostato testo su terraferma alla fine del capitolo sul debug
