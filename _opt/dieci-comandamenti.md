@@ -2,7 +2,7 @@
 layout:     pagina
 class:      articolo
 title:      I Dieci Comandamenti
-permalink:  /opt/i-dieci-comandamenti
+permalink:  /opt/dieci-comandamenti
 footer:     true
 ---
 
