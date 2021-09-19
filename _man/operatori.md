@@ -331,10 +331,24 @@ Noi oggi critichiamo sia loro sia chi li aiutò a farlo, ma forse i nostri nipot
 ---
 
 Scegliamo un ethos perché rende migliore la nostra vita, non perché ci sta simpatico l'autore.
-Il Maestro Canaro, per esempio, era convinto che il Libro dell'Esodo fosse il resoconto di un esperimento alieno su una popolazione isolata nel deserto per due generazioni (“capisci: la circoncisione serviva a identificare i maschi e l'appartenenza al gruppo era stabilita in base alla madre perché così era verificabile grazie ai mitocondri”); ciò non ostante, regolava la sua vita e le sue decisioni in base ai dieci Comandamenti di Mosé. 
+Il Maestro Canaro, per esempio, era convinto che il Libro dell'Esodo fosse il resoconto di un esperimento alieno su una popolazione isolata nel deserto per due generazioni (“capisci: la circoncisione serviva a identificare i maschi e l'appartenenza al gruppo era stabilita in base alla madre perché così era verificabile grazie ai mitocondri”); ciò non ostante, regolava la sua vita e le sue decisioni in base a una sua versione “laicizzata” dei dieci Comandamenti di Mosé:
+
+> 1. Il senso della vita è capire il senso della vita.
+2. Non cercare il senso della vita nelle cose terrene.
+3. Ciò che conta è come ti comporti, non quello che dici.
+4. Dedica parte del tuo tempo alla ricerca spirituale (v. punto 1). 
+5. Non giudicare i tuoi genitori finché non ti sarai trovato in situazioni simili alle loro.
+6. Non uccidere senza un valido motivo (per definire il concetto di “valido motivo” v. punti 1-10).
+7. Ci sono tante donne non sposate: tròmbati quelle.
+8. Non prendere ciò che non ti appartiene, di qualunque cosa si tratti.
+9. Non fare falsa testimonianza contro il tuo prossimo.
+10. Non desiderare ciò che appartiene ad altri; se riesci a non desiderare nulla è anche meglio.
+
 Quando gli chiesi perché avesse scelto proprio quelle regole, mi rispose: “Se li avessi seguiti anche da giovane, adesso avrei molti rimorsi in meno.” 
 
 <!--
+
+
 Per i filosofi è `true` tutto ciò che può essere descritto con le parole; per gli scienziati, tutto ciò che può essere descritto dalla matematica; per gli informatici è `true` tutto quello che può essere descritto dal codice. 
 
 v. Kant citato da Hertha von Dechend nella prefazione tedesca a Il Mulino di Amleto
