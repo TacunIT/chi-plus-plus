@@ -1,10 +1,3 @@
-paranoici:
-    "Una volta chiesi al Maestro Canaro: «Maestro, cosa facevano i paranoici prima che fosse inventata l'informatica?»
-    Il Maestro ci pensò un po' su, poi rispose: «Ormeggiavano le barche»."
-
-dio-buono:
-    "L’Uomo non può dire se Dio sia buono o meno, perché non si può classificare l’essenza del Creatore con gli attributi del creato. Sarebbe come se i byte di un computer si chiedessero se il Programmatore valga 1 o 0."
-
 arco-meglio:
     "Un giorno un discepolo chiese al maestro Canaro: «Maestro, con quale tipo di arco si tira meglio?».<br />
     Il maestro rispose: «Con quello che utilizzi tutti i giorni».<br />
@@ -14,11 +7,13 @@ arco-meglio:
     Canaro. Per un po', credetti che l'errore fosse quel “meglio” nella prima domanda e che il maestro avesse dato una risposta volutamente imprecisa allo scopo di portare alle estreme conclusioni un ragionamento male impostato, ma mi sbagliavo.<br />
     La verità era che il maestro Canaro, come mi confessò lui stesso, stava cercando di scaricare su qualcuno il suo turno di pulizia latrine e il giovane e impetuoso discepolo gliene aveva dato occasione.<br />"
 
-ricompensa-oltre-morte:
-    "Coloro che si sforzano, in questa vita, di eseguire i precetti della loro religione perché pensano che gliene verrà reso merito dopo la morte, sbagliano due volte."
-
-filosofia-reverse-engeneering:
-    "La filosofia è il <i>reverse engineering</i> dell'Universo. L'analisi del sistema può avvenire a più livelli, dall'interfaccia utente al codice binario. Analizzare a livelli bassi è più difficile e porta tutt'al più alla conoscenza delle meccaniche di funzionamento, non delle regole di business."
+chi-requisiti:
+        "<ul>
+        <li>limitare il numero dei dogmi;</li>
+        <li>limitare gli elementi metafisici e le accettazioni per fede;</li>
+        <li>non proporsi come Unica Verità Incontestabile, ma come un'approssimazione sicuramente incompleta e perfettibile della Verità;</li>
+        <li>riconoscere le contraddizioni della dottrina e analizzarle obiettivamente, anche se ciò porterà a modificare la dottrina stessa.</li>
+        </ul>"
 
 computer-zia:
     "Un giorno, la zia del Maestro Canaro lo chiamò e gli disse che il suo computer non funzionava più. <br /> 
@@ -41,6 +36,24 @@ computer-zia:
 decadenza-software:
     "La decadenza del software è iniziata quando le stampanti laser hanno soppiantato le vecchie stampanti ad aghi. Il codice non si può leggere su un foglio A4: a meno che non sia un programma banale, non c'entrerà né in altezza né in larghezza. Il modulo in continuo di una stampante ad aghi a 136 colonne, al contrario, ti permette di stampare tutto il tuo codice e di rileggerlo con calma; correggerlo, se necessario e migliorarlo se possibile. È così che si facevano le revisioni di codice, quando c'erano il tempo e i soldi per fare le revisioni di codice."
 
+dio-buono:
+    "L’Uomo non può dire se Dio sia buono o meno, perché non si può classificare l’essenza del Creatore con gli attributi del creato. Sarebbe come se i byte di un computer si chiedessero se il Programmatore valga 1 o 0."
+
+errori-religioni:
+    "<ul>
+    <li>i dogmi, che sono le fondamenta delle dottrine, sono facilmente attaccabili perché non possono essere dimostrati, ma solo accettati per fede;</li>
+    <li>una religione può avere delle difficoltà nel modificare la propria dottrina, anche quando è dimostrato che uno dei suoi dogmi non è corretto;</li>
+    <li>la contestazione di un dogma causa quasi inevitabilmente una separazione e le separazioni è probabile che sfocino in conflitti.</li></ul>"
+
+errori-umani:
+    "<ul><li>la tendenza a difendere i propri principii anche con mezzi che
+        contrastano con i principii stessi;</li>
+    <li>la tendenza a influenzare la propria obiettività con le proprie
+        speranze.</li></ul>"   
+
+filosofia-reverse-engeneering:
+    "La filosofia è il <i>reverse engineering</i> dell'Universo. L'analisi del sistema può avvenire a più livelli, dall'interfaccia utente al codice binario. Analizzare a livelli bassi è più difficile e porta tutt'al più alla conoscenza delle meccaniche di funzionamento, non delle regole di business."
+
 femminismo:
     "Cento anni di femminismo non possono battere centomila anni di evoluzione."
 
@@ -50,13 +63,30 @@ malizia:
 marinaio:
     "Il Buon Programmatore è come un marinajo che, prima di un lungo viaggio, verifica tutta la sua attrezzatura di coperta, smontando ogni singolo elemento e sostituendo tutto ciò che potrebbe rompersi, perché non sa cosa succederà una volta che sarà in mare."
 
-ragione:
-    "Quando ero un giovane *project-manager* e discutevo con i miei clienti, cercavo sempre di dimostrare loro che avevo ragione; ora cerco solo di far ciò che dev'essere fatto."
-
 ikebarba:
     ""
 lennon:
     "Io non credo alla storia della conversione. David Chapman ha ucciso John Lennon perché pensava che sopra di lui ci fosse “only sky” e che solo così, avrebbe potuto dare un senso alla sua esistenza." 
+
+paranoici:
+    "Una volta chiesi al Maestro Canaro: «Maestro, cosa facevano i paranoici prima che fosse inventata l'informatica?»
+    Il Maestro ci pensò un po' su, poi rispose: «Ormeggiavano le barche»."
+
+ragione:
+    "Quando ero un giovane *project-manager* e discutevo con i miei clienti, cercavo sempre di dimostrare loro che avevo ragione; ora cerco solo di far ciò che dev'essere fatto."
+
+religioni-oo:
+    "Le diverse religioni, possono essere delle forme derivate di una stessa mistica iniziale?
+    Esistono dei “dati membro” e delle funzioni comuni, che siano state ridefinite con il passare del tempo, ma che facciano capo a un corpo di credenze (o di nozioni) iniziale?
+    Anche solo in questa mappa, se ne trovano diverse (p.es. Empedocle -> Poe).
+    Così come le classi di un linguaggio Object-Oriented sono ridefinite per adattarsi a uno specifico contesto di utilizzo, così pure la Mistica iniziale potrebbe essere stata “overloaded” per adattarsi a uno specifico luogo o tempo.
+    Se fosse così, tanto più si va indietro nel tempo, e quindi nella gerarchia di classi, tanto più ci si dovrebbe avvicinare alle caratteristiche proprie della Mistica.
+    È possibile definire una gerarchia di classi figlie della classe astratta <code>Credo</code>?
+    Semplificando molto (visto che sono le 3 di notte): Budda e Zoroastro influenzano i Greci, che influenzano gli Ebrei, che a loro volta influenzano i Cristiani, che alla fine producono i Testimoni di Geova...
+    Allo stesso modo (sempre semplificando), dal C si è evoluto il C++ e dal C++, Java."
+
+ricompensa-oltre-morte:
+    "Coloro che si sforzano, in questa vita, di eseguire i precetti della loro religione perché pensano che gliene verrà reso merito dopo la morte, sbagliano due volte."
 
 universo-cpp:
     "<h3>Ultima pagina del diario del Maestro Canaro (8 Aprile)</h3> Sono in ufficio e sto lavorando quando squilla il telefono. La voce che mi risponde è piuttosto bassa e ha un'eco curiosa.

@@ -1,3 +1,14 @@
+## 0.30.2 (September 17, 2021)
+  - Redazione del testo del capitolo sul Polimorfismo
+  - Spostato testo su terraferma alla fine del capitolo sul debug
+
+## 0.30.1 (September 17, 2021)
+  - Redazione del capitolo sul polimorfismo
+  - Aggiunta citazione da Santillana a Debug
+  - Corretti errori di battitura nel testo della Proposta
+  - Corretti errori di battitura nel testo della pagina Index
+  - Aggiunte note a e-book
+
 ## 0.30.0 (September 12, 2021)
   - Revisione generale del testo
   - Suddivisi gli appunti in NOTE.md fra capitoli e TODO

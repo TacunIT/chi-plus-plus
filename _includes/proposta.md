@@ -239,7 +239,7 @@ Proiettare le proprie speranze o le proprie convinzioni nei dogmi di una religio
 
 Delle tre, la prima è la meno *conveniente*, eppure la maggior parte dei non-credenti preferisce negare l'esistenza di Dio piuttosto che mettere in discussione la sua presunta bontà.
 
-### Buonismo 2.0 <a name="buonismo"></a>
+<h3 id="buonismo">Buonismo 2.0</h3>
 La nostra attività di *debug* ha avuto successo: rimuovendo il secondo precetto, siamo riusciti a rendere coerente la dottrina Buonista, ma allo stesso tempo abbiamo rimosso la ragion d'essere del suo nome; se Dio non è buono, che senso ha, chiamarsi: *Buonisti*?
 Non è solo una questione di carta intestata: dalla presunta bontà di Dio, la dottrina buonista deriva l'obbligo per l'Uomo di essere altrettanto buono; mancando il precetto decadrebbe anche l'obbligo e si aprirebbero le porte all'anarchia.
 <br>
@@ -248,30 +248,18 @@ Se scegliamo la logica, però, saremo costretti a scinderci dai Buonisti; la nos
 I punti di attrito e gli scismi provocano sempre dei conflitti e, così, il nostro tentativo di rendere migliore la religione Buonista avrà ottenuto un risultato diametralmente opposto a quello che ci eravamo prefissi.  
 C'è un modo per evitarlo?
 
-### Imparare dagli errori
+<h3 id="errori">Imparare dagli errori</h3>
 L'esempio riportato sopra ha evidenziato dei problemi che possiamo considerare congeniti a tutte le religioni:
 
--   i dogmi, che sono le fondamenta delle dottrine, sono facilmente
-    attaccabili perché non possono essere dimostrati, ma solo accettati
-    per fede;
--   una religione può avere delle difficoltà nel modificare la propria
-    dottrina, anche quando è dimostrato che uno dei suoi dogmi non è corretto;
--   la contestazione di un dogma causa quasi inevitabilmente una
-    separazione e le separazioni è probabile che sfocino in conflitti.
+{{ site.data.canaro.errori-religioni }}
 
 Oltre ai problemi tipici delle religioni, abbiamo rilevato alcuni problemi tipici degli esseri umani:
 
--   la tendenza a difendere i propri principii anche con mezzi che
-    contrastano con i principii stessi;
--   la tendenza a influenzare la propria obiettività con le proprie
-    speranze.
+{{ site.data.canaro.errori-umani }}
 
 Per correggere o quanto meno mitigare questi problemi, una religione dovrebbe quindi:
 
-- limitare il numero dei dogmi;
-- limitare gli elementi metafisici e le accettazioni per fede;
-- non proporsi come Unica Verità Incontestabile, ma come un'approssimazione sicuramente incompleta e perfettibile della Verità;
-- riconoscere le contraddizioni della dottrina e analizzarle obiettivamente, anche se ciò porterà a modificare la dottrina stessa.
+{{ site.data.canaro.chi-requisiti }}
 
 Pur se complesso, tutto questo è possibile.
 
