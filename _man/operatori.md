@@ -274,6 +274,8 @@ Stringa globale
 <hr id="dottrina">
 
 La definizione dei concetti di *vero* e di *falso* è sempre frutto di un arbitrio. È inevitabile.
+Per i filosofi è *vero* tutto ciò che può essere descritto con le parole; per gli scienziati, tutto ciò che può essere descritto dalla matematica; per gli informatici è *vero* tutto quello che può essere descritto dal codice. 
+<!-- v. Kant citato da Hertha von Dechend nella prefazione tedesca a Il Mulino di Amleto -->
 Possiamo definire *falso* come il contrario di *vero*, ma non possiamo dedurre o inferire il concetto di *vero* perché, quale che sia la definizione prescelta, prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo ancora cosa sia, effettivamente, *vero*.    
 Bertrand Russell disse che la condizione di *vero* o di *falso* è uno stato dell'organismo, determinato da condizioni esterne all'organismo;<a href="/man/note#russell" class="nota"></a> è un'affermazione vera.. o, meglio, *valida* anche per i computer: i valori booleani *vero* e *falso* sono due stati possibili per un'istruzione e spesso dipendono da condizioni esterne all'istruzione stessa, come la presenza di un file o un'azione dell'utente.
 La cosa interessante è che, anche per i computer, i valori che vengono interpretati come *vero* e *falso* sono del tutto arbitrarii e spesso specifici per un dato sistema. 
@@ -347,12 +349,6 @@ Il Maestro Canaro, per esempio, era convinto che il Libro dell'Esodo fosse il re
 Quando gli chiesi perché avesse scelto proprio quelle regole, mi rispose: “Se li avessi seguiti anche da giovane, adesso avrei molti rimorsi in meno.” 
 
 <!--
-
-
-Per i filosofi è `true` tutto ciò che può essere descritto con le parole; per gli scienziati, tutto ciò che può essere descritto dalla matematica; per gli informatici è `true` tutto quello che può essere descritto dal codice. 
-
-v. Kant citato da Hertha von Dechend nella prefazione tedesca a Il Mulino di Amleto
-
 
 Il fine dichiarato di Kanāda nei Vaiśesika Sūtra, considerati da Dasgupta come pre-buddhisti, è di spiegare il Dharma (la Legge Eterna) come il fondamento, da un lato, della manifestazione (abhyudaya) e, dall’altro, del “Sommo Bene” (nihśreyasam), cioè della Liberazione: la validità dei Veda è stabilita dal fatto che questi sono i loro fini.
 
