@@ -1,3 +1,8 @@
+## 0.30.4 (September 25, 2021)
+  - Completata prima stesura del capitolo sul polimorfismo
+  - Modificato capitolo sulle classi
+  - Aggiunto paragrafo sul concetto di Vero per filosofi, scienziati e informatici
+
 ## 0.30.3 (September 19, 2021)
   - Aggiunti 10C rivisti da Maestro Canaro
   - Rivisto testo dei Dicei Comandamenti
