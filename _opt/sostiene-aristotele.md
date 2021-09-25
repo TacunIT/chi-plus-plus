@@ -112,9 +112,9 @@ Non sto dicendo che sia facile.
 La mia teoria ha un corollario metafisico, ma non ce la farei mai a farlo entrare tutto in queste poche pagine. È il libro che sto scrivendo.
 Ne faccio un breve riassunto:
 
-> L’Universo è il Paradiso: siamo noi, che lo utilizziamo male, trasformandolo nell'Inferno.
+> L’Universo *è* il Paradiso: siamo noi, che lo utilizziamo male, trasformandolo nell'Inferno.
 
-Questa visione ha il pregio di funzionare anche solo con le quattro dimensioni che conosciamo ed è perfettamente compatibile con tutte le principali religioni, oltre che con Imagine di John Lennon.
+Questa visione ha il pregio di funzionare anche solo con le quattro dimensioni che conosciamo ed è perfettamente compatibile con tutte le principali religioni, oltre che con *Imagine* di John Lennon.
 
 > Imagine there's no heaven  
 It's easy if you try  
