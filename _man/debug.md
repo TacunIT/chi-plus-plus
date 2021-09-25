@@ -638,7 +638,7 @@ Qualcuna genererà degli errori, altre solo dei *warning* e il tuo dovere è que
 Contrariamente a quello che avviene con il software, non sempre è possibile correggere i *bug* della nostra esistenza.
 Si può modificare un aspetto deteriore del nostro carattere, ma non è detto che sia possibile rimediare ai danni che questo ha causato a noi o a terzi.
 Per fare un paragone con il debug del software, i difetti caratteriali sono errori di compilazione, mentre gli effetti dei nostri sbagli sono errori di esecuzione; i primi li possiamo correggere, gli errori di esecuzione, no: ormai è andata. 
-Quello che possiamo e che dobbiamo fare, però, è di <a href="/man/istruzioni-condizionali#pentimento" class="xref">pentircene sinceramente</a>, ovvero riconoscerli come errori, in modo da evitare di ripeterli nei prossimi cicli di esistenza.  
+Quello che possiamo e che dobbiamo fare, però, è di <a id="pentimento" href="/man/istruzioni-condizionali#pentimento" class="xref">pentircene sinceramente</a>, ovvero riconoscerli come errori, in modo da evitare di ripeterli nei prossimi cicli di esistenza.  
 Anche se non possiamo cancellare gli effetti di un nostro errore, possiamo comunque chiedere perdòno a coloro i quali abbiamo arrecato danno.
 Non basterà chiedere scusa: si chiede scusa quando ciò che hai fatto non dipende da te, come quando qualcuno di urta e tu versi il tuo vino sul vestito del vicino; se invece il vino glielo hai tirato addosso intenzionalmente, dovrai chiedere *perdòno*, cercare per quanto possibile di riparare all'errore fatto e non commetterlo mai più, né con lui (o lei) né con altri.  
 Non sottovalutare il potere terapeutico del perdono, anche se ci saranno dei casi in cui non lo otterrai.

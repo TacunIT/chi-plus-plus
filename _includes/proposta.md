@@ -668,7 +668,7 @@ Il passaggio a Markdown non è stato un vezzo, ma un obbligo, perché solo in qu
 Un beneficio collaterale dell'adozione di Markdown è stato la *portabilità* del testo: mentre un testo in formato OpenDocument può essere letto e modificato solo con un programma di *desktop-publishing*, come *Word* o una delle sue alternative, un testo Markdown può essere letto e modificato con qualunque strumento permetta di aprire e modificare file di testo, da *Notepad* a *vi*.
 
 ### Portabilità
-In infomatica, il termine: *portabilità* indica la possibilità di eseguire uno stesso programma su computer con sistemi operativi di tipo differente.
+In informatica, il termine: *portabilità* indica la possibilità di eseguire uno stesso programma su computer con sistemi operativi di tipo differente.
 Per essere più precisi, la portabilità è la possibilità di creare copie di uno stesso programma che possano essere eseguite su piattaforme hardware/software differenti.
 Per poter essere eseguito su sistemi differenti, un software deve richiamare delle istruzioni che siano valide in tutti i sistemi hardware.
 Per esempio, un'istruzione che chieda in qualche modo:
