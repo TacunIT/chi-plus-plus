@@ -1,3 +1,6 @@
+## 0.30.5 (October 05, 2021)
+  - Revisione del capitolo sul Polimorfismo
+
 ## 0.30.4 (September 25, 2021)
   - Completata prima stesura del capitolo sul polimorfismo
   - Modificato capitolo sulle classi
