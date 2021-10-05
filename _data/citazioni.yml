@@ -9,8 +9,11 @@ deen:
     fonte:
         "M. <span>Deen</span>, <i>Per antiche strade</i>, Iperborea, Milano, 2020" 
 mantiq:
-    "O Creatore, tutto il male o il bene che feci,<br />in verità lo feci solo a me stesso."
-
+    male:
+        "O Creatore, tutto il male o il bene che feci,<br />in verità lo feci solo a me stesso."
+    tutto:
+        "Tutto è un'unica sostanza in molteplici forme, tutto è un unico discorso in diverse espressioni (...)
+        Egli sfugge a ogni spiegazione, a qualsiasi attributo. Di Lui soltanto una pallida idea ci è concessa, dare compiuta notizia di Lui è impossibile. Per quanto bene o male si parli di Lui, in realtà d’altri non si parla che di se stessi."
 croce:
     testo: 
         "Un sistema è una casa che, subito dopo costruita e adornata, ha bisogno (soggetta com'è all'azione corroditrice degli elementi) di un lavorio più o meno energico, ma assiduo, di manutenzione, e che a un certo momento non giova più restaurare e puntellare, e bisogna gettare a terra e ricostruire dalle fondamenta. Ma con siffatta differenza capitale: che, nell'opera del pensiero, la casa perpetuamente nuova e sostenuta perpetuamente dall'antica, la quale, quasi per opera magica, perdura in essa."
