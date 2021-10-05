@@ -483,6 +483,10 @@ BODY.manuale H1 {
     margin: 4rem 0 2rem 0;
     text-align: center;
 }
+/** Nasconde il link alla dottrina */
+BODY.manuale H1 A {
+    text-decoration: none;
+}
 BODY.manuale MAIN P.code,
 BODY.manuale MAIN PRE {
     display: block;

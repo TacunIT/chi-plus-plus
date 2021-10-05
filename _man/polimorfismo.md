@@ -556,10 +556,10 @@ Essendo un sostenitore del secondo metodo, il Maestro Canaro lo applicò anche a
 
 <hr id="portabilita">
 
-Il C'hi++ ereditò alcuni concetti proprii delle filosofie note al Maestro Canaro &mdash; come il dualismo Gravità/Elettricità elaborato da Poe in *Eureka*, che lo aveva affascinato per il modo in cui trasformava una forza cieca e inspiegabile come la Gravità nell'intenzione, cosciente, di tutto ciò che esiste di tornare a essere Uno.
+Il C'hi++ ereditò alcuni concetti proprii delle filosofie note al Maestro Canaro, come il dualismo Gravità/Elettricità elaborato da Poe in *Eureka*, che lo aveva affascinato per il modo in cui trasformava una forza cieca e inspiegabile come la Gravità nell'intenzione, cosciente, di tutto ciò che esiste di tornare a essere Uno.
 D'altro canto, la dottrina del Maestro Canaro rinnegò alcuni concetti comuni a molte religioni, come la possibilità di sottrarsi al ciclo delle rinascite o la presenza di punizioni o premii *ad-personam*.  
 Così come quando si analizza il funzionamento di un software non ci si cura delle singole variabili, ma si pensa al flusso complessivo del sistema, così il C'hi++ vede l'esistenza non in termini di interazioni fra individui, ma come l'evoluzione del flusso dell'Energia dell'Uno all'interno della matrice tridimensionale degli spazioni. 
-Per il C'hi++ non esistono né anime, né fiumi infernali e chi muore in mare non troverà ad accoglierlo Rán, nella sua birreria in fondo al mare, ma verrà semplicemente riciclato, come tutta l'energia del Cosmo.  
+Per il C'hi++ non esistono né anime, né fiumi infernali e chi muore in mare non troverà ad accoglierlo Rán, nella sua birreria in fondo al mare, ma verrà semplicemente riciclato, come le aree di memoria RAM all'interno di un computer.  
 Le nostre esistenze sono incidentali; pensare di punirle o di premiarle non avrebbe senso e contrasterebbe con il principio generale che tutto ciò che esiste è la manifestazione di un'unica Entità.
 Come ti ho detto all'inizio di queste lezioni, non è possibile andare in Paradiso o all'Inferno da soli: qualunque cosa avvenga, nell'Universo, ci riguarda tutti.  
 Questo però non vuol dire che il C'hi++ rifiuti *in toto* tutti concetti delle religioni che lo hanno preceduto; anzi.
@@ -583,14 +583,19 @@ O su quelli che io ho definito i *Post-It*:
 
 Puoi trovare delle analogie con i precetti del C'hi++ anche nel *Mantiq al-Tayr*:
 
-> Tutto è un'unica sostanza in molteplici forme, tutto è un unico discorso in diverse espressioni (...)
-Egli sfugge a ogni spiegazione, a qualsiasi attributo. Di Lui soltanto una pallida idea ci è concessa, dare compiuta notizia di Lui è impossibile. Per quanto bene o male si parli di Lui, in realtà d’altri non si parla che di se stessi.
-(...)
-O Creatore, tutto il male o il bene che feci, in verità lo feci solo a me stesso.
+> {{ site.data.citazioni.mantiq.tutto }}
+
+o anche: 
+
+> {{ site.data.citazioni.mantiq.male }}
 
 Per certi versi anche la stessa Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista: il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono l'Ente che ne causa la disgregazione, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte.  
 Il Maestro Canaro pensava che tutto questo fosse normale.
-In una nota della mappa mentale su cui basò lo sviluppo iniziale della dottrina, scrisse:
+Come scrisse nel <a href="https://github.com/chi-plus-plus/chi-plus-plus/blob/master/MANIFEST.md" target="github">MANIFEST</a> GitHub del C'hi++:  
+
+> {{ site.data.canaro.metafisiche }}
+
+In una nota della mappa mentale su cui basò lo sviluppo iniziale della dottrina, aggiunse:
 
 > {{ site.data.canaro.religioni-oo }}
 

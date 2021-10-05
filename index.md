@@ -85,9 +85,10 @@ Ma chi siamo, “noi”? Se la materia altro non è che la manifestazione di una
 
 > {{ site.data.citazioni.saadi }}
 
-Però, se davvero siamo tutti degli epifenomeni, il nostro io cosciente può manifestarsi ora qui ora lì, a seconda dei casi. E se io, in questo ciclo dell’Universo, mi metto a spacciare droga fregandomene delle persone che ammazzo, in un altro ciclo di questa particolare specie di Universo potrei ritrovarmi in uno di quei drogati subendo le conseguenze delle mie stesse azioni. È quindi preferibile che io mi comporti bene e che cerchi di convincere anche gli altri a comportarsi bene, perché, come recita il *Mantiq al-Tayr*:
+Però, se davvero siamo tutti degli epifenomeni, il nostro io cosciente può manifestarsi ora qui ora lì, a seconda dei casi. 
+E se io, in questo ciclo dell’Universo, mi metto a spacciare droga fregandomene delle persone che ammazzo, in un altro ciclo di questa particolare specie di Universo potrei ritrovarmi in uno di quei drogati subendo le conseguenze delle mie stesse azioni. È quindi preferibile che io mi comporti bene e che cerchi di convincere anche gli altri a comportarsi bene, perché, come recita il *Mantiq al-Tayr*:
 
-> {{ site.data.citazioni.mantiq }}
+> {{ site.data.citazioni.mantiq.male }}
 
 Il problema, come sempre, è capire *cosa* sia davvero “bene”.
 Per farlo, abbiamo bisogno di introdurre l'unico elemento realmente metafisico del C'hi++: una sorta di memoria persistente dell'Universo, simile all'*hard-disk* dei computer o al *Vāsanā* di Yoga e Buddhismo, nella quale rimane traccia delle scelte che abbiamo fatto durante le nostre esistenze e delle conseguenze che hanno generato.
