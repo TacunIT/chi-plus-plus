@@ -3,7 +3,7 @@
 BASE_DIR=~/Developer/Chi++ 
 MAN_DIR=${BASE_DIR}/docs/man
 MAN_FILE=${BASE_DIR}/bin/man-file.txt
-CSS_FILE=${MAN_DIR}/assets/css/pdf.cs
+CSS_FILE=/assets/css/pdf.css
 OUT_FILE=${MAN_DIR}/merged.html
 
 cd ${MAN_DIR}
