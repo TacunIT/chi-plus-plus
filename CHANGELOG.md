@@ -1,3 +1,13 @@
+## 0.30.6 (October 09, 2021)
+  - Aggiornato script bump_version
+  - Rivisto testo capitolo sulla memoria
+  - Modificato il foglio di stile per il PDF
+  - Corretto file per la generazione del PDF
+  - Aggiunto foglio di stile per PDF
+  - Rimossa la directory _opt; trasferiti i testi su canaro.net
+  - Iniziato script di conversione del testo in PDF
+  - Corretto script per purge della cache Cloudflare
+
 ## 0.30.5 (October 05, 2021)
   - Revisione del capitolo sul Polimorfismo
 
