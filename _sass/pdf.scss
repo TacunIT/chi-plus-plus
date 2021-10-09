@@ -25,3 +25,51 @@ $fontSizeH3:        1.4rem;
 $fontSizeH4:        1.2rem; 
 
 @import "stili";
+
+#testo P {
+    text-align: left
+}
+
+BLOCKQUOTE.motto {
+    text-align: right;
+    padding: 2rem 0 4rem 33%;
+    font-size: 0.9em;
+    color: #550;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+BLOCKQUOTE.incluso {
+    color: #543;
+    text-align: justify;
+    padding: 1rem;
+    background-color: #e8e8de;
+    margin: 1rem 0;
+}
+
+P.code, PRE {
+    display: block;
+    padding: 1rem;
+    margin: 1rem 0;
+    overflow: auto;
+}
+
+
+TABLE.rgb,
+TABLE.rgb TR {
+    border: none;
+}
+TABLE.rgb TD {
+    border: none;
+    font-family: $codeFont;
+    font-size: 10pt;
+    width: 30px;
+    height: 30px;    
+}
+
+TABLE.rgb TD:nth-child(1) {
+    border: solid 1px $borderColor;
+}
+TABLE.rgb TD:nth-child(2) {
+    min-width: 10rem;
+}
