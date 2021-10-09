@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Thanks goes to @pete-otaqui for the initial gist:
 # https://gist.github.com/pete-otaqui/4188238
 #
@@ -11,6 +12,14 @@
 # this script will display the current version, automatically
 # suggest a "minor" version update, and ask for input to use
 # the suggestion, or a newly entered value.
+
+# New revision modified by Nomane Oulali
+# - Add some reliability stuff like controlling that last commit is
+#   not already tagged
+# - Allow custom comment when you apply your tags
+# - Increment patch field instead of minor
+# Thanks to Marek Suscak for the original version
+# https://gist.github.com/mareksuscak/1f206fbc3bb9d97dec9c
 
 # once the new version number is determined, the script will
 # pull a list of changes from git history, prepend this to
@@ -37,7 +46,37 @@ NOTICE_FLAG="${CYAN}❯"
 ADJUSTMENTS_MSG="${QUESTION_FLAG} ${CYAN}Now you can make adjustments to ${WHITE}CHANGELOG.md${CYAN}. Then press enter to continue."
 PUSHING_MSG="${NOTICE_FLAG} Pushing new version to the ${WHITE}origin${CYAN}..."
 
+RELEASE_NOTE=""
+
+while true; do
+  case "$1" in
+    -m | --message ) RELEASE_NOTE=$2; shift; shift ;;
+    * ) break ;;
+  esac
+done
+
+# $1 : version
+# $2 : release note
+function tag {
+  if [ -z "$2" ]; then
+    # Default release note
+    git tag -a "v$1" -m "Tag version $1."
+  else
+    # Custom release note
+    git tag -a "v$1" -m "$2"
+  fi
+}
+
 if [ -f VERSION ]; then
+    # Check if your current source is not already tagged by using current hash
+    GIT_COMMIT=`git rev-parse HEAD`
+    NEEDS_TAG=`git describe --contains $GIT_COMMIT 2>/dev/null`
+    # Only tag if no tag already (would be better if the git describe command above could have a silent option)
+    if [ -n "$NEEDS_TAG" ]; then
+        echo -e "${WARNING_FLAG} Current code is already released."
+        exit 0
+    fi
+    # read current version from VERSION file
     BASE_STRING=`cat VERSION`
     BASE_LIST=(`echo $BASE_STRING | tr '.' ' '`)
     V_MAJOR=${BASE_LIST[0]}
@@ -45,8 +84,12 @@ if [ -f VERSION ]; then
     V_PATCH=${BASE_LIST[2]}
     echo -e "${NOTICE_FLAG} Current version: ${WHITE}$BASE_STRING"
     echo -e "${NOTICE_FLAG} Latest commit hash: ${WHITE}$LATEST_HASH"
-    V_MINOR=$((V_MINOR + 1))
-    V_PATCH=0
+    # show changes since last version to help decide the new version
+    echo -e "${NOTICE_FLAG} Changes since last version${RESET}"
+    git log --pretty=format:"  - %s" "v$BASE_STRING"...HEAD
+    echo ""
+    # suggest a bump in patch (most common)
+    V_PATCH=$((V_PATCH + 1))
     SUGGESTED_VERSION="$V_MAJOR.$V_MINOR.$V_PATCH"
     echo -ne "${QUESTION_FLAG} ${CYAN}Enter a version number [${WHITE}$SUGGESTED_VERSION${CYAN}]: "
     read INPUT_STRING
@@ -66,7 +109,7 @@ if [ -f VERSION ]; then
     echo -e "$PUSHING_MSG"
     git add CHANGELOG.md VERSION
     git commit -m "Bump version to ${INPUT_STRING}."
-    git tag -a -m "Tag version ${INPUT_STRING}." "v$INPUT_STRING"
+    tag "${INPUT_STRING}" "${RELEASE_NOTE}"
     git push origin --tags
 else
     echo -e "${WARNING_FLAG} Could not find a VERSION file."
@@ -88,9 +131,9 @@ else
         echo -e "$PUSHING_MSG"
         git add VERSION CHANGELOG.md
         git commit -m "Add VERSION and CHANGELOG.md files, Bump version to v0.1.0."
-        git tag -a -m "Tag version 0.1.0." "v0.1.0"
+        tag "0.1.0" ${RELEASE_NOTE}
         git push origin --tags
     fi
 fi
 
-echo -e "${NOTICE_FLAG} Finished."
+echo -e "${NOTICE_FLAG} Finished.${RESET}"
