@@ -692,11 +692,5 @@ Si vede che era sobrio.
 
 
 <!--
-
-
-Perfino l'esistenza della pirateria informatica, in ultima analisi, può essere ricondotta al fatto che le donne hanno un imene.
-<a href="/opt/penetration" class="xref"></a>
-
 importanza dell'impaginazione dei nomi: OPEN, CLOSE, READ / INPUT, DELETE, UPDATE
-
 -->
