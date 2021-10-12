@@ -429,3 +429,9 @@ L'avvento, alla fine del Secolo, del linguaggio con la "J", quello che ha bisogn
 Non a caso, Stroustrsup disse:
 
 > {{ site.data.citazioni.stroustroup.java }} <a href="/man/note/#cpp" class="nota"></a>
+
+<!--
+
+<hr id="dottrina">
+
+-->
