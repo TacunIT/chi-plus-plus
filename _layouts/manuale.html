@@ -2,11 +2,11 @@
 <html lang="{{ site.lang | default: "it-IT" }}">
 {%- include head.html -%}
 <body class="manuale {{ page.class }} ">
-    <div class="page">
+    <div class="page {{ page.class }}">
         <header>           
             {%- include man-menu.html -%}
         </header>
-        <main class="{{ page.status  }}">
+        <main class="corpo {{ page.status  }}">
         {% if page.class == "capitolo" %}
             <h1><a href="#dottrina">
                 {{ page.title }}</a>
