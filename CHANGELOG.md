@@ -1,3 +1,9 @@
+## 0.30.7 (October 12, 2021)
+  - Rinominato file unico in pdf.html
+  - Rivisti stili pagina per omogeneità com documento unico
+  - Sostituiti ID CSS con class per evitare conflitti nella generazione del PDF
+  - Rimossi documenti ridondanti perché già pubblicati su sito Canaro
+
 ## 0.30.6 (October 09, 2021)
   - Aggiornato script bump_version
   - Rivisto testo capitolo sulla memoria
