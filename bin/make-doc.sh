@@ -5,7 +5,7 @@ MAN_DIR=${BASE_DIR}/docs/man
 MAN_FILE=${BASE_DIR}/bin/man-file.txt
 CSS_FILE=/assets/css/pdf.css
 OUT_DIR=${BASE_DIR}/_man
-OUT_FILE=${OUT_DIR}/merged.html
+OUT_FILE=${OUT_DIR}/pdf.html
 
 cd ${MAN_DIR}
 
