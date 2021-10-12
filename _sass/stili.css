@@ -443,40 +443,40 @@ BODY.manuale.dedica MAIN P {
     max-width: 22rem;
     margin: auto
 }
-BODY.manuale.indice H1 {
+BODY.manuale SECTION.indice {
+ text-align: center;
+}
+BODY.manuale SECTION.indice H1 {
     margin: 3rem 0 2rem 0;
 }
-BODY.manuale.indice H3.bozza A {
+BODY.manuale SECTION.indice H3.bozza A {
     color: $bozzaAColor;
 }
-BODY.manuale.indice HR {
+BODY.manuale SECTION.indice HR {
     margin: 2rem 0
 }
-BODY.manuale.indice H3 {
+BODY.manuale SECTION.indice H3 {
     margin: 1rem 0;
     position: relative;
-    font-size: 1.3rem;
+/*    font-size: 1.3rem; */
 }
-BODY.manuale.indice H3.home {
+BODY.manuale SECTION.indice H3.home {
     margin-top: 4rem;
 }
-BODY.manuale.indice MAIN {
+BODY.manuale SECTION.indice MAIN {
  width: auto;
  text-align: center
 }
-BODY.manuale.indice IMG.logo {
+BODY.manuale SECTION.indice IMG.logo {
     width: 100px;
     margin: auto
 }
-BODY.manuale.indice IMG.badge
+BODY.manuale SECTION.indice IMG.badge
 {
     position: absolute;
     top: 0.5rem;
     margin-left: 1rem;
     font-size: 0.9rem;
-}
-BODY.manuale.indice SECTION.indice {
- text-align: center;
 }
 
 BODY.manuale H1 {
@@ -526,21 +526,21 @@ IFRAME.pdf {
 }
 
 /** Tabelle nel testo */    
-BODY.manuale.capitolo.testo TABLE.memoria TD {
+BODY.manuale.capitolo .testo TABLE.memoria TD {
     font-family: $codeFont;
     font-size: 10px;
     width: 24px;
     height: 24px;
 }
-BODY.manuale.capitolo.testo TABLE.memoria TD.area {
+BODY.manuale.capitolo .testo TABLE.memoria TD.area {
     background: $tdAreaBackground;
 }
 
-BODY.manuale.capitolo.testo TABLE.rgb,
-BODY.manuale.capitolo.testo TABLE.rgb TR {
+BODY.manuale.capitolo .testo TABLE.rgb,
+BODY.manuale.capitolo .testo TABLE.rgb TR {
     border: none;
 }
-BODY.manuale.capitolo.testo TABLE.rgb TD {
+BODY.manuale.capitolo .testo TABLE.rgb TD {
     border: none;
     font-family: $codeFont;
     font-size: 10pt;
@@ -548,19 +548,19 @@ BODY.manuale.capitolo.testo TABLE.rgb TD {
     height: 30px;    
 }
 
-BODY.manuale.capitolo.testo TABLE.rgb TD:nth-child(1) {
+BODY.manuale.capitolo .testo TABLE.rgb TD:nth-child(1) {
     border: solid 1px $borderColor;
 }
-BODY.manuale.capitolo.testo TABLE.rgb TD:nth-child(2) {
+BODY.manuale.capitolo .testo TABLE.rgb TD:nth-child(2) {
     min-width: 10rem;
 }
 
-BODY.manuale.capitolo.testo BLOCKQUOTE.output {
+BODY.manuale.capitolo .testo BLOCKQUOTE.output {
     text-align: justify;
     background-color: #eee;
     margin: 1rem auto;
 }
-BODY.manuale.capitolo.testo BLOCKQUOTE.output DIV[id^="banner"] {
+BODY.manuale.capitolo .testo BLOCKQUOTE.output DIV[id^="banner"] {
     display: block;
     height: 100px;
     width: 200px;

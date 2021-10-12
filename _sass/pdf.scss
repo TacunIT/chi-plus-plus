@@ -26,11 +26,28 @@ $fontSizeH4:        1.2rem;
 
 @import "stili";
 
-#testo P {
-    text-align: left
+DIV.page {
+    text-align: center;
+}
+DIV.page.dedica{
+    max-width: 22rem;
+    margin: auto
+}
+DIV.page.manuale{
 }
 
-BLOCKQUOTE.motto {
+IMG.logo {
+    width: 300px;
+}
+
+SECTION.testo P {
+    text-align: justify;
+    line-height: 1.5;
+}
+H1 {
+    text-align: center;
+}
+SECTION.corpo > BLOCKQUOTE {
     text-align: right;
     padding: 2rem 0 4rem 33%;
     font-size: 0.9em;
