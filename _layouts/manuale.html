@@ -1,49 +1,27 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "it-IT" }}">
-
 {%- include head.html -%}
-
 <body class="manuale {{ page.class }} ">
-
-    <div id="page">
-
-        <header>
-            
+    <div class="page">
+        <header>           
             {%- include man-menu.html -%}
-    
         </header>
-
         <main class="{{ page.status  }}">
-            
         {% if page.class == "capitolo" %}
-
             <h1><a href="#dottrina">
                 {{ page.title }}</a>
             </h1>
-
             <blockquote class="motto">{{ page.quote }}</blockquote>
-
-            <section id="testo">
-
+            <section class="testo">
                 {{ content}}
-
             </section>
-            
-        {% else %}
-            
+        {% else %}            
             {{ content}}
-            
         {% endif %}
-
-        
         </main>
-
         {% if page.class == 'capitolo'  %}
         {%- include man-footer.html -%}
         {% endif  %}
-
     </div>
-
   </body>
-
 </html>

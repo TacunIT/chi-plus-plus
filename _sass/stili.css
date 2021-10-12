@@ -228,7 +228,7 @@ BODY {
     counter-reset: note-pagina;  
 }
 
-DIV#page {
+DIV.page {
     padding: 1rem 1rem 5rem 1rem;
     position: relative;
     display: block;
@@ -404,7 +404,7 @@ BODY.pagina.index H1 {
  */
 BODY.manuale {
 }
-BODY.manuale DIV#page {
+BODY.manuale DIV.page {
     min-height: 100vh;
 }
 BODY.manuale HEADER titolo-2 {
@@ -526,21 +526,21 @@ IFRAME.pdf {
 }
 
 /** Tabelle nel testo */    
-BODY.manuale.capitolo #testo TABLE.memoria TD {
+BODY.manuale.capitolo.testo TABLE.memoria TD {
     font-family: $codeFont;
     font-size: 10px;
     width: 24px;
     height: 24px;
 }
-BODY.manuale.capitolo #testo TABLE.memoria TD.area {
+BODY.manuale.capitolo.testo TABLE.memoria TD.area {
     background: $tdAreaBackground;
 }
 
-BODY.manuale.capitolo #testo TABLE.rgb,
-BODY.manuale.capitolo #testo TABLE.rgb TR {
+BODY.manuale.capitolo.testo TABLE.rgb,
+BODY.manuale.capitolo.testo TABLE.rgb TR {
     border: none;
 }
-BODY.manuale.capitolo #testo TABLE.rgb TD {
+BODY.manuale.capitolo.testo TABLE.rgb TD {
     border: none;
     font-family: $codeFont;
     font-size: 10pt;
@@ -548,19 +548,19 @@ BODY.manuale.capitolo #testo TABLE.rgb TD {
     height: 30px;    
 }
 
-BODY.manuale.capitolo #testo TABLE.rgb TD:nth-child(1) {
+BODY.manuale.capitolo.testo TABLE.rgb TD:nth-child(1) {
     border: solid 1px $borderColor;
 }
-BODY.manuale.capitolo #testo TABLE.rgb TD:nth-child(2) {
+BODY.manuale.capitolo.testo TABLE.rgb TD:nth-child(2) {
     min-width: 10rem;
 }
 
-BODY.manuale.capitolo #testo BLOCKQUOTE.output {
+BODY.manuale.capitolo.testo BLOCKQUOTE.output {
     text-align: justify;
     background-color: #eee;
     margin: 1rem auto;
 }
-BODY.manuale.capitolo #testo BLOCKQUOTE.output DIV[id^="banner"] {
+BODY.manuale.capitolo.testo BLOCKQUOTE.output DIV[id^="banner"] {
     display: block;
     height: 100px;
     width: 200px;
