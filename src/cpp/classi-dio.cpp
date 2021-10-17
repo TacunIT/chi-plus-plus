@@ -4,6 +4,8 @@
  */
  
 #include <iostream>
+#include <list>
+
 
 using namespace std;
 
@@ -27,7 +29,7 @@ class Uomo   : public Creatura {
 class Donna  : public Creatura {};
 class Padre  : public Uomo     {};
 class Figlio : public Uomo     {};
-class Popolo : public Creatura {};
+class Popolo : public list<Creatura> {};
 
 class  {
 private:
