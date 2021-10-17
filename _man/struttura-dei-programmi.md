@@ -44,7 +44,8 @@ La prima linea di codice:
 ```
 
 non è un'istruzione, ma una direttiva per il preprocessore. 
-Il preprocessore è un programma che elabora il codice e lo prepara per la compilazione, ne parleremo [in seguito](/man/preprocessore).
+Il preprocessore è un programma che elabora il codice e lo prepara per la compilazione, ne parleremo 
+<a href="/man/preprocessore" class="xref">in seguito</a>.
 Per il momento, ti basta sapere che questa istruzione fa sì che nel codice venga incluso il file `iostream.h`, che contiene, fra le altre cose, la dichiarazione dello *stream* `cout`, utilizzato nell'unica istruzione del programma.  
 La seconda linea di codice:
 
@@ -120,7 +121,7 @@ tre
 
 Nessun programma degno di questo nome ha solo la funzione `main`, ma suddivide il suo lavoro in una serie di funzioni che svolgono compiti precisi e ben definiti.
 In un programma ben scritto, le funzioni presentano due caratteristiche, che gli anglosassoni e gli anglofili definiscono: *low coupling* e *high cohesion*.  
-Con il termine *accoppiamento* di due funzioni si intende la quantità di informazioni che la funzione *A* deve avere riguardo la funzione *B* per poterla utlizzare.
+Con il termine *accoppiamento* di due funzioni si intende la quantità di informazioni che la funzione *A* deve avere riguardo la funzione *B* per poterla utilizzare.
 Ciascuna funzione si aspetta di ricevere una serie ben definita di parametri: la funzione `raddoppiaStipendio`, che abbiamo visto prima, si aspetta di ricevere un solo parametro, di tipo `long`:
 
 ```
@@ -153,7 +154,7 @@ float facciQualcosa(long stipendio, int azione, float aliquota = 0)
 Per poter utilizzare questa funzione, non solo dobbiamo conoscere la sua interfaccia, ma dobbiamo anche sapere quali azioni corrispondono ai diversi valori del parametro `azione`.
 Questa è follia, *meshuggah*, perché, se un giorno l'autore la modificasse e decidesse che il valore `1` del parametro `azione` causa lo scorporo dell'IVA mentre il valore `2` causa il raddoppio dello stipendio, noi dovremmo modificare anche *tutte* le funzioni che l'hanno chiamata per adattarle alle nuove regole.
 Non solo perderemmo del tempo, ma se dimenticassimo di aggiornare una o più chiamate otterremmo un programma con un funzionamento errato.  
-Il *coupling* <!-- uso il termine inglese per evitare anfibologie con l'attività sessuale.. --> è come il colesterlolo: più è basso, meglio è; quindi, per evitare errori, dobbiamo ridurlo, creando un `enum` a cui assegnare i possibili valori del parametro `azione`:
+Il *coupling* <!-- uso il termine inglese per evitare anfibologie con l'attività sessuale.. --> è come il colesterolo: più è basso, meglio è; quindi, per evitare errori, dobbiamo ridurlo, creando un `enum` a cui assegnare i possibili valori del parametro `azione`:
 
 ```
 enum Azione { raddoppia, scorpora }; 
@@ -195,7 +196,7 @@ inline float scorporaIVA(long stipendio, float aliquota)
 ```
 
 Anche in un esempio così semplice, vedi bene che differenza ci sia, fra una funzione che può svolgere più azioni eterogenee e una funzione che svolge una singola azione, ben precisa.
-Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di dichiararla come <a href="/man/funzioni#inline" class="xref">inline</a>, aumentando la velocità di esecuzuione del programma.
+Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di dichiararla come <a href="/man/funzioni#inline" class="xref">inline</a>, aumentando la velocità di esecuzione del programma.
 
 <hr id="dottrina">
 
@@ -204,12 +205,13 @@ Così come l'atmosfera è agitata dallo scontro di masse di aria calda e fredda,
 Poe lo aveva capito. In: *Eureka*, usa il termine *Elettricità* invece di: *Entropia*, ma la contrapposizione che descrive è corretta.  
 Ciò che non è corretto (e non solo in Poe) è l'idea che l'espansione dell'Universo sia un evento unico.
 La vita dell'Universo è ciclica: quando è preponderante l'Entropia, l'Universo si espande, come in questo momento; quando "vince" la Gravità, l'Universo collassa su sé stesso e torna all'Uno.
-Ciò che evita la stasi in uno dei due punti estremi del ciclo &mdash; l'Uno e la morte termica &mdash; è una terza forza, che il Maestro Canaro chiamava:  [*l'annosa dicotomia fra ciò che desideriamo è ciò di cui abbiamo bisogno*](/man/mitopoietica#annosa-dicotomia).   
+Ciò che evita la stasi in uno dei due punti estremi del ciclo &mdash; l'Uno e la morte termica &mdash; è una terza forza, che il Maestro Canaro chiamava: 
+<a href="/man//mitopoietica#annosa-dicotomia" class="xref">*l'annosa dicotomia fra ciò che desideriamo è ciò di cui abbiamo bisogno*</a>.   
 Così come una scatola di mattoncini Lego contiene tutti gli edifici che hai costruito e che costruirai in futuro, nell'Uno primigenio è concentrata tutta l'Energia dell'Universo e quindi ogni essere animato o inanimato che sia mai esistito o che mai esisterà.
 La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo, che non può essere misurato perché non esistono eventi in base a cui farlo.<a class="nota" href="/man/note#non-tempo"></a> 
 Non ci sono né morte, né sofferenza, né malattia, né separazione; l'Uno è, di fatto, ciò che la maggior parte degli esseri senzienti descrive e auspica come un Universo perfetto.  
 L'Energia, inizialmente, è soddisfatta, ma a poco a poco l'appagamento per la raggiunta Unità scema e cresce invece il desiderio di qualcosa di diverso da quella cristallina perfezione.
-Così come di un vecchio amore si ricoda solo ciò che ci fa piacere ricordare, obliando ciò che non andava, l'Energia ripensa a quando l'Universo non era buio e vuoto, ma risplendeva della luce di innumerevoli stelle e si chiede se, in fondo, non sia quella, l'esistenza a cui ambisce, se non sia quello, in effetti, il Paradiso.  
+Così come di un vecchio amore si ricorda solo ciò che ci fa piacere ricordare, obliando ciò che non andava, l'Energia ripensa a quando l'Universo non era buio e vuoto, ma risplendeva della luce di innumerevoli stelle e si chiede se, in fondo, non sia quella, l'esistenza a cui ambisce, se non sia quello, in effetti, il Paradiso.  
 Ha una chiara memoria degli errori e dei dolori delle passate esistenze (è stata lei, incarnata negli spazioni ad averli commessi), ma, come uno scacchista che debba giocare nuovamente una determinata apertura, pensa che stavolta andrà meglio, che non ripeterà gli sbagli fatti in precedenza e questo desiderio di un riscatto genera il *Big Bang*.
 L'Energia disintegra l'enorme buco nero in cui si era rannicchiata e si espande di nuovo nell'Universo, dando massa agli spazioni e generando la materia.
 L'Era della Gravità finisce e comincia una nuova Era dell'Entropia; qualcosa di molto simile a quello che trovi descritto nella *Bhagavad-Gita*:

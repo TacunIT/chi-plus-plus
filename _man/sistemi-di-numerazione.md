@@ -30,7 +30,7 @@ Il disgraziato con un dito, che può considerare solo le due possibilità:
 *un dito/nessun dito*, sarebbe costretto a fare un calcolo più lungo:
 
 <pre>
-1x2<sup>3</sup> + 1x2<sup>2</sup> + 1x2<sup>2</sup> + 0x2<sup>0</sup> = 1100
+1x2<sup>3</sup> + 1x2<sup>2</sup> + 1x2<sup>1</sup> + 0x2<sup>0</sup> = 1100
 </pre>
 
 Questi tre risultati, per quanto differenti, non sono sbagliati, perché ciascuno dei tre conta le dodici uova in base al numero delle proprie dita e risponde di conseguenza. Le uova rimangono le stesse: cambia solo il sistema di numerazione.  
@@ -133,7 +133,7 @@ Il Maestro Canaro pensava che ciò fosse empio.
 
 Un esempio di tutto ciò di cui ti ho parlato oggi lo trovi nella codifica RGB dei colori delle pagine Web.
 Nella codifica RGB, ciascun colore è definito come una combinazione di rosso verde e blu – i colori *Red*, *Green* e *Blue* le cui iniziali costituiscono l'acronimo del sistema.  
-La quantità di ciascun colore è determinata da tre valori di 8 bit ciascuno e può quindi variare da 0 a 255 (2<sup>8</sup>).  
+La quantità di ciascun colore è determinata da un valore di 8 bit e può quindi variare da 0 a 255 (2<sup>8</sup>).  
 I possibili colori della codifica RGB possono essere calcolati o moltiplicando fra loro i tre valori di R, G e B: 
 
 ```
@@ -178,7 +178,7 @@ Se assegnamo un valore solo a uno dei tre byte, otterremo delle gradazioni di ro
 </table>
 
 Se attribuiamo dei valori a tutti e tre i byte, otterremo dei colori composti.
-Per esempio, il colore di sfondo dei brani di codice o il colore dei link di navigazione:
+Per esempio, il colore di sfondo dei brani di codice del tuo libro o il colore dei link di navigazione:
 
 <table class="rgb">
 <tr>

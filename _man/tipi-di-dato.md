@@ -38,7 +38,8 @@ Il tipo di dato `void` non ha né una dimensione né un valore e può essere ass
 Il tipo di dato `bool` è utilizzato per gestire i valori booleani.
 Può assumere solo due valori: `true` o `false`, quindi ha la dimensione minima possibile, ovvero un byte.  
 Il tipo `int` permette di gestire i numeri interi. 
-Di solito ha una dimensione di quattro byte, che può essere aumentata o diminuita per mezzo di parole-chiave dette: [modificatori](#modificatori).  
+Di solito ha una dimensione di quattro byte, che può essere aumentata o diminuita per mezzo di parole-chiave dette: 
+<a href="#modificatori" class="xref">modificatori</a>.  
 I tipi `float` e `double` si utilizzano per gestire i numeri decimali. 
 Hanno una lunghezza di quattro e otto byte rispettivamente e una precisione di sette e quindici cifre decimali.  
 I tre elementi che compaiono al di fuori della funzione `main` sono tipi di dato *aggregati* e permettono di definre dei tipi di dati non standard.  
@@ -46,7 +47,9 @@ Gli `enum` permettono di assegnare dei nomi a dei valori, rendendo più facile l
 Nell'esempio, l'*enum* `RGB`assegna un nome a tre valori della codifica RGB.
 Questo nuovo tipo di dato è utilizzato nella struttura `ColoreRGB`.  
 Le `struct` permettono di creare degli insiemi di dati eterogenei.
-La variabile `ColoreRGB` contiene due variabili differenti: un valore di tipo `RGB` e un [puntatore](#puntatori) a carattere.  
+La variabile `ColoreRGB` contiene due variabili differenti: un valore di tipo `RGB` e un 
+<a href="#puntatori" class="xref">puntatore</a>   
+a carattere.  
 Tutti i tipi di dati che abbiamo visto finora sono un retaggio del linguaggio *C*.
 La classe `Colore`, invece, è una delle novità introdotte dal C++ e contiene due elementi: una struttura di tipo `ColoreRGB` e una funzione che mostra il nome del colore.  
 Attenzione, però: nessuno di questi signori è in realtà ciò che afferma di essere.
@@ -107,7 +110,8 @@ unsigned short: 2 bytes, da:                    0  a:                65535
 
 <a id="funzioni"></a>
 L'ultima cosa di cui ti devo parlare, a proposito dei tipi di dato del C++ sono i cosiddetti *attributi intermediari*, ovvero: le *funzioni*, gli *array*, i *puntatori* e le *reference*.  
-Delle *funzioni* parleremo diffusamente [in seguito](/man/funzioni).
+Delle *funzioni* parleremo diffusamente 
+<a href="/man/funzioni" class="xref">in seguito</a>.
 Quello che ci interessa, qui e ora, è che ogni funzione ha un suo tipo di dato.
 La funzione `main`, che è la funzione principale di ogni programma, ha come tipo di dato `int` e infatti si chiude con l'istruzione:
 
@@ -351,7 +355,8 @@ valori iniziali: v=10, r=10
 valori finali:   v=20, r=20
 ```
 
-Approfondiremo i pro e i contro delle reference quando parleremo delle [funzioni](/man/funzioni).
+Approfondiremo i pro e i contro delle *reference* quando parleremo delle 
+<a href="/man/funzioni" class="xref">funzioni</a>.
 
 <hr id="casting">
 
