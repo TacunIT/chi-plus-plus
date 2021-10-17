@@ -1,3 +1,11 @@
+## 0.30.8 (October 17, 2021)
+  - Rivisto incipit e capitolo sui linuguaggi di programmazione
+  - Modificata dichiarazione classe Dio
+  - Corretti i link errati
+  - Rimossi link con formato Jekill
+  - Rvisione dello script per la generazione del file PDF unico
+  - Corretto errore nelle pagine di servizio
+
 ## 0.30.7 (October 12, 2021)
   - Rinominato file unico in pdf.html
   - Rivisti stili pagina per omogeneità com documento unico
