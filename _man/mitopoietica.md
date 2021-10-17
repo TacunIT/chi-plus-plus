@@ -44,3 +44,11 @@ Sebbene noi, che gli eravamo vicini fin dall'inizio della sua predicazione, sape
 Le procedure esistenti furono tutte riscritte; gli ordini monastici che insegnavano il C++ divennero sempre di meno e alla fine non ce ne furono più.  
 Fu solo allora che il maestro Canaro mi parlò per la prima volta del
 *C'hi++*.
+
+---
+
+Le nuvole che oscuravano il cielo questa mattina sono scomparse, il cielo della notte trabocca di stelle.
+Sono cose che si notano, a mano a mano che si invecchia.
+Io le noto da quando ero bambino.
+
+Quello che ti insegnerò non è illegale, ma è come se lo fosse.
