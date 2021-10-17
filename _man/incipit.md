@@ -25,13 +25,13 @@ Il Maestro Musashi, nel suo *Dokkodo*, scrisse:
 Tu proietti su questo linguaggio ormai morto delle aspettative personali, speri che possa far rivivere il tempo passato e ti illudi che il tempo passato sia meglio di quello presente.
 Ti sbagli.
 Il passato, mio giovane amico, è una vecchia amante che col suono della sua voce ci ricorda i piaceri vissuti insieme, ma che bada a restare alle nostre spalle per nasconderci il suo volto rugoso.  
+
+<hr id="dottrina">
+
 Io ti insegnerò il Chi++, non ti indicherò la Via.
 Quando qualcuno ti indica la Via, ricordati sempre che una via la si può percorrere in due direzioni: una direzione ci avvicina alla nostra méta; una direzione ce ne allontana.
 La direzione è importante, non la via.
 Se un uomo conosce la direzione, la via non ha più alcuna importanza.  
-
----
-
 Il C'hi++ è allo stesso tempo un linguaggio di programmazione, un atteggiamento mentale e un modo di vivere.
 Chi pratica il C'hi++ scrive codice come se stesse vivendo e vive come se stesse scrivendo del codice.  
 Vivere è come scendere in canoa lungo un fiume.
@@ -63,11 +63,3 @@ Le possibili permutazioni di queste innumerevoli azioni per questi innumerevoli 
 Quasi.
 Il tempo, al contrario, è illimitato, quindi può capitare che una determinata sequenza di eventi, già avvenuta in un precedente respiro dell'Universo, si ripeta, con condizioni simili, in un respiro successivo.
 Ciò vuol dire che, con buone probabilità, io e te abbiamo già avuto questa conversazione in una o in migliaia delle nostre esistenze precedenti.
-
----
-
-Le nuvole che oscuravano il cielo questa mattina sono scomparse, il cielo della notte trabocca di stelle.
-Sono cose che si notano, a mano a mano che si invecchia.
-Io le noto da quando ero bambino.
-
-Quello che ti insegnerò non è illegale, ma è come se lo fosse.

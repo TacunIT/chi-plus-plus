@@ -623,6 +623,5 @@ Ciò che siamo realmente, la nostra essenza, si manifesta in ciò che facciamo i
 
 @todo: aggiungere specifiche sull'ordine di inizalizzazione nel costruttore
 
-@todo: correggere la dichiarazione class Popolo : public Creatura {}; nel codice classi-dio.cpp, trasformandola in un array 
 
 -->
