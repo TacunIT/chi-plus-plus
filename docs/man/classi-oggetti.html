@@ -769,6 +769,8 @@ Quando il Maestro Canaro provò a fare il <em>porting</em> dell’<a href="/man/
  */
  
 #include &lt;iostream&gt;
+#include &lt;list&gt;
+
 
 using namespace std;
 
@@ -792,7 +794,7 @@ class Uomo   : public Creatura {
 class Donna  : public Creatura {};
 class Padre  : public Uomo     {};
 class Figlio : public Uomo     {};
-class Popolo : public Creatura {};
+class Popolo : public list&lt;Creatura&gt; {};
 
 class  {
 private:
@@ -1021,8 +1023,11 @@ Ciò che siamo realmente, la nostra essenza, si manifesta in ciò che facciamo i
 <!--
 
 @todo: aggiungere  le specifiche sulla visibilità delle classi 
+
 @todo: aggiungere specifiche sull'ordine di inizalizzazione nel costruttore
+
 @todo: correggere la dichiarazione class Popolo : public Creatura {}; nel codice classi-dio.cpp, trasformandola in un array 
+
 -->
 
             </section>

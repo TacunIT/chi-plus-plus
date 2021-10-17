@@ -37,7 +37,7 @@ Valore di C = 13
 
 C++, infatti, non era un nuovo linguaggio: era un C migliorato. 
 Tutto il codice e l'esperienza che erano state fatte fino ad allora sul C potevano essere applicate anche al C++.  
-Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l'Ebraismo: prese una religione spartana, adatta per un popolo in fuga nel deserto e la  migliorò, rendendola meno autoritaria.
+Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l'Ebraismo: così come il Nazareno prese una religione spartana, adatta per un popolo in fuga nel deserto e la  migliorò, rendendola meno autoritaria, il Danese trasformò un linguaggio pensato per gestire unicamente i computer, in un linguaggio che poteva gestire ogni cosa.
 
 ---
 
