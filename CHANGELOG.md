@@ -1,3 +1,7 @@
+## 0.30.9 (October 30, 2021)
+  - Revisione errori di battitura fino a capitolo Processore
+  - Aggiunta foto del cane Lele alla pagina dei ringraziamenti
+
 ## 0.30.8 (October 17, 2021)
   - Rivisto incipit e capitolo sui linuguaggi di programmazione
   - Modificata dichiarazione classe Dio
