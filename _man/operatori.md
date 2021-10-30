@@ -281,14 +281,14 @@ Bertrand Russell disse che la condizione di *vero* o di *falso* è uno stato del
 La cosa interessante è che, anche per i computer, i valori che vengono interpretati come *vero* e *falso* sono del tutto arbitrarii e spesso specifici per un dato sistema. 
 Prendi per esempio i programmi che gestiscono le basi di dati: per *Access*, il valore booleano *false* è `-1`; per le prime versioni di *MySQL* è `f`; per Postgres o Oracle, è `0`.  
 Il computer non ha *in sé* il concetto di *vero* o di *falso*, ma solo l'associazione dei valori booleani *true* e *false* a una determinata sequenza di bit. 
-*Vero* e di *falso*, quindi, sono dei valori simbolici che noi inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è proprio del nostro mondo; un riferimento esogeno che può generare delle apparenti conraddizioni come, per esempio, il fatto che tutti i valori digitali siano basati su grandezze analogiche (la carica magnetica di un nastro, un'infossatura nella superificie di un CD o la tensione all'interno di un circuito), o dei veri e proprii paradossi, come il fatto che, nelle schede perforate, il valore `1` sia associato al vuoto del foro, mentre il valore `0` sia associato alla presenza della carta; di fatto, una negazione logica della realtà.  
+*Vero* e di *falso*, quindi, sono dei valori simbolici che noi inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è proprio del nostro mondo; un riferimento esogeno che può generare delle apparenti contraddizioni come, per esempio, il fatto che tutti i valori digitali siano basati su grandezze analogiche (la carica magnetica di un nastro, un'infossatura nella superficie di un CD o la tensione all'interno di un circuito), o dei veri e proprii paradossi, come il fatto che, nelle schede perforate, il valore `1` sia associato al vuoto del foro, mentre il valore `0` sia associato alla presenza della carta; di fatto, una negazione logica della realtà.  
 Questi paradossi, apparenti o reali che siano, non causano alcun problema al sistema, a patto vengano condivisi da tutti gli attori al suo interno. 
 Il paradosso delle schede perforate (buco = 0, carta = 1) era condiviso sia dalle macchine Hollerith che dalle perforatrici delle schede, perciò, le elaborazioni che ne derivavano erano corrette, indipendentemente dal valore relativo attribuito ai concetti di *vero* e di *falso* all'interno del sistema.
 Da questo punto di vista, non possiamo che dare ragione a William James, quando dice che un'idea è *vera* fintanto che credere in essa è utile per le nostre vite. 
 
 <hr id="effimeri">
 
-Anche gli esseri umani, come i computer, devono riferire le proprie convinzioni a schemi di valori preesistenti perché buona parte dei principii e dei valori su cui modelliamo la nostra e l'altrui esistenza non hanno un riscontro oggettivo nei fatti: sono solo convizioni o convenzioni che abbiamo deciso di adottare, così come il fatto che `true` equivalga al valore binario `000000001` e `false` a `00000000`.  
+Anche gli esseri umani, come i computer, devono riferire le proprie convinzioni a schemi di valori preesistenti perché buona parte dei principii e dei valori su cui modelliamo la nostra e l'altrui esistenza non hanno un riscontro oggettivo nei fatti: sono solo convinzioni o convenzioni che abbiamo deciso di adottare, così come il fatto che `true` equivalga al valore binario `000000001` e `false` a `00000000`.  
 Prendi la ricchezza, per esempio: si dice che i soldi non danno la felicità ed è vero; nemmeno essere poveri rende felici, ma questo non lo dice nessuno.
 Comunque, una delle persone più ricche che ho conosciuto non poteva avere figli.
 Possedeva case in diversi Paesi, uno yacht e perfino un aereo personale, ma non poteva avere qualcosa che anche l'uomo più povero della Terra può facilmente ottenere.
@@ -296,10 +296,10 @@ Che senso aveva, la sua ricchezza? Era reale?
 Si definisce: *prestigio* qualcosa che sembra ciò che non è, come i giochi degli illusionisti, mentre *successo* non è che il participio passato del verbo *succedere*: tutto ciò che è avvenuto in passato è, per definizione, “successo”; malgrado ciò, molte persone, sotto l'influsso dell'Annosa Dicotomia, dedicano la propria vita alla ricerca o dell'uno o dell'altro o di entrambi.
 La *fama* è altrettanto aleatoria: quante persone sono state famose e ora sono dimenticate? 
 Gli inventori della ruota e del fuoco hanno cambiato per sempre la storia della nostra specie e del mondo con le loro scoperte, ma nessuno sa chi siano stati.
-In tempi più recenti, il pittore Giovanni Baglione fu molto famoso, alla fine del sediccesimo Secolo, ma se ci ricordiamo di lui oggi è solo per via dei suoi rapporti con Caravaggio e, comunque, la loro fama terminerà con la nostra specie, insieme a quella di Shakespeare, Leonardo o Einstein.  
+In tempi più recenti, il pittore Giovanni Baglione fu molto famoso, alla fine del sedicesimo Secolo, ma se ci ricordiamo di lui oggi è solo per via dei suoi rapporti con Caravaggio e, comunque, la loro fama terminerà con la nostra specie, insieme a quella di Shakespeare, Leonardo o Einstein.  
 Non sono inconsistenti solo i valori mondani, come fama successo o denaro, ma anche quelli che consideriamo usualmente “nobili”, come il rispetto della vita altrui.
 Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccidere è sbagliato perché tutto il male che fai, lo stai facendo a te stesso; penso che sia vero perché me lo ha insegnato il Maestro Canaro, che aveva visto il codice del programma dell'Universo.
-Se invece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosé; loro pensano che sia vero perché è scritto nella Bibbia, che è la Parola di Dio.
+Se invece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosè; loro pensano che sia vero perché è scritto nella Bibbia, che è la Parola di Dio.
 Se infine lo chiedi a un paladino del laicismo, ti risponderà che l'omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev'essere vero, perché le nostre Leggi applicano i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di libertà e uguaglianza della *Dichiarazione dei Diritti dell’Uomo e del Cittadino* francese, che a sua volta si rifaceva alla *Dichiarazione di Indipendenza* americana, che a sua volta riprendeva le idee di Locke e Montesquieu.  
 Nessuna di queste affermazioni è valida di per sé: sono tutte fondate su una qualche forma di fede &mdash; religiosa o laica che sia &mdash; in chi ha promulgato la Legge o il Principio.  
 È, applicato all'etica, lo stesso meccanismo che si utilizza per certificare un server Web. 
@@ -307,7 +307,7 @@ Quando tu accedi al sito Web della tua banca, sai che è davvero il server della
 Tu sai che l'ente certificatore è davvero chi dice di essere perché anche lui ha un suo certificato, firmato da un'altro ente certificatore, chiamato: *root CA*.
 La *root CA* garantisce per la CA intermedia che a sua volta garantisce per la tua banca.
 Sfortunatamente, però, né i legislatori né i loro certificatori ideologici sono sottoposti alle regole e ai controlli che deve rispettare una *Certification Authority* e spesso è accaduto che chi ha definito delle regole sia stato anche il primo a non tenerne conto.  
-Mosé, con il sesto Comandamento ancora fresco di stampa, chiese ai figli di Levi: 
+Mosè, con il sesto Comandamento ancora fresco di stampa, chiese ai figli di Levi: 
 
 > Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a href="/man/note#levi" class="nota"></a> 
 
@@ -333,7 +333,7 @@ Noi oggi critichiamo sia loro sia chi li aiutò a farlo, ma forse i nostri nipot
 <hr id="comandamenti">
 
 Scegliamo un ethos perché rende migliore la nostra vita, non perché ci sta simpatico l'autore.
-Il Maestro Canaro, per esempio, era convinto che il Libro dell'Esodo fosse il resoconto di un esperimento alieno su una popolazione isolata nel deserto per due generazioni (“capisci: la circoncisione serviva a identificare i maschi e l'appartenenza al gruppo era stabilita in base alla madre perché così era verificabile grazie ai mitocondri”); ciò non ostante, regolava la sua vita e le sue decisioni in base a una sua versione “laicizzata” dei dieci Comandamenti di Mosé:
+Il Maestro Canaro, per esempio, era convinto che il Libro dell'Esodo fosse il resoconto di un esperimento alieno su una popolazione isolata nel deserto per due generazioni (“capisci: la circoncisione serviva a identificare i maschi e l'appartenenza al gruppo era stabilita in base alla madre perché così era verificabile grazie ai mitocondri”); ciò non ostante, regolava la sua vita e le sue decisioni in base a una sua versione “laicizzata” dei dieci Comandamenti di Mosè:
 
 > 1. Il senso della vita è capire il senso della vita.
 2. Non cercare il senso della vita nelle cose terrene.

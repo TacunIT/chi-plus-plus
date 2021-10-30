@@ -63,7 +63,7 @@
 
 <p>Il C++ ha ereditato dal C una vasta gamma di tipi di dato.
 A seconda della loro natura, possiamo dividere questi tipi di dato in due gruppi: i dati <em>scalari</em> e i dati <em>aggregati</em>.<br />
-I tipi di dato <em>scalari</em> sono: <code>void</code>, <code>bool</code>, <code>char</code>, <code>wchar_t</code>, <code>int</code>, <code>float</code>, <code>double</code> e permettono di gestre gli elementi classici di un programma: i numeri interi, i numeri decimali, le lettere e i valori booleani.<br />
+I tipi di dato <em>scalari</em> sono: <code>void</code>, <code>bool</code>, <code>char</code>, <code>wchar_t</code>, <code>int</code>, <code>float</code>, <code>double</code> e permettono di gestire gli elementi classici di un programma: i numeri interi, i numeri decimali, le lettere e i valori booleani.<br />
 I tipi di dato <em>aggregati</em> sono gli <em>array</em>, le <em>unioni</em>, gli <em>emumerati</em>, le <em>strutture</em> e le <em>classi</em>. 
 Questi, come dice anche il loro nome, sono costituiti dall’aggregazione di più dati scalari dello stesso tipo o di tipi differenti.<br />
 Il prossimo brano di codice — fastidiosamente didascalico, nella sua sostanziale inutilità — mostra i principali tipi di dato del C++.
@@ -155,9 +155,9 @@ Di solito ha una dimensione di quattro byte, che può essere aumentata o diminui
 <a href="#modificatori" class="xref">modificatori</a>.<br />
 I tipi <code>float</code> e <code>double</code> si utilizzano per gestire i numeri decimali. 
 Hanno una lunghezza di quattro e otto byte rispettivamente e una precisione di sette e quindici cifre decimali.<br />
-I tre elementi che compaiono al di fuori della funzione <code>main</code> sono tipi di dato <em>aggregati</em> e permettono di definre dei tipi di dati non standard.<br />
+I tre elementi che compaiono al di fuori della funzione <code>main</code> sono tipi di dato <em>aggregati</em> e permettono di definire dei tipi di dati non standard.<br />
 Gli <code>enum</code> permettono di assegnare dei nomi a dei valori, rendendo più facile la programmazione.
-Nell’esempio, l’<em>enum</em> <code>RGB</code>assegna un nome a tre valori della codifica RGB.
+Nell’esempio, l’<em>enum</em> <code>RGB</code> assegna un nome a tre valori della codifica RGB.
 Questo nuovo tipo di dato è utilizzato nella struttura <code>ColoreRGB</code>.<br />
 Le <code>struct</code> permettono di creare degli insiemi di dati eterogenei.
 La variabile <code>ColoreRGB</code> contiene due variabili differenti: un valore di tipo <code>RGB</code> e un 
@@ -294,7 +294,7 @@ La funzione <code>main</code>, che è la funzione principale di ogni programma, 
 </code></pre>
 
 <p>La funzione <code>nome_colore</code>, all’interno della classe <code>Colore</code> è di tipo <code>void</code> e, come puoi vedere, non ha valore di ritorno.<br />
-Gli <em>array</em> sono degli insiemi di dati omogemei e si dichiarano aggiungendo al nome della variabile delle parentesi quadre.
+Gli <em>array</em> sono degli insiemi di dati omogenei e si dichiarano aggiungendo al nome della variabile delle parentesi quadre.
 La dimensione dell’array deve essere definita al momento della sua dichiarazione; questo può avvenire o in maniera esplicita, inserendo il numero di elementi fra le parentesi quadre:</p>
 
 <pre><code>char elementi[10];
@@ -310,7 +310,7 @@ Nel caso dell’array qui sopra, la lettera <code>a</code> avrà indice 0, la <c
 
 <hr id="puntatori" />
 
-<p>I <em>puntatori</em> sono come i pitbull: alla maggior parte delle persone fanno paura, ma chi li conosce sa che sono cani dolcissimi, se li sai trattare.
+<p>I <em>puntatori</em> sono come i pit-bull: alla maggior parte delle persone fanno paura, ma chi li conosce sa che sono cani dolcissimi, se li sai trattare.
 Quello che devi tenere sempre a mente è che il <em>C++</em> è solo un modo particolare di vedere la memoria del computer e nella memoria non ci sono caratteri, non ci sono classi, non ci sono immagini e non ci sono film porno, ma solo una lunga sequenza di 1 e di 0:</p>
 
 <pre><code>0100001100100111011010000110000101101110011011100110111100100000

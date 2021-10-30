@@ -224,7 +224,7 @@ Gli stessi valori possono essere espressi in notazione esadecimale:
 </tr>
 </table>
 
-L'unica diffferenza è che la numerazione esadecimale è più facile da utilizzare e da memorizzare, perché ciascuna lettera corrisponde a un byte.
+L'unica differenza è che la numerazione esadecimale è più facile da utilizzare e da memorizzare, perché ciascuna lettera corrisponde a un byte.
 Il valore binario e il colore visualizzato, rimangono gli stessi, indipendentemente dal modo in cui tu li vuoi misurare.
 
 <hr id="dottrina">

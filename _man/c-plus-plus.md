@@ -41,7 +41,7 @@ Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l'Ebrai
 
 ---
 
-Le principali novità aggiunte al C dal C++ sono: l'*astrazione dei dati*, la *programmazone a oggetti* e la *generic programming*.
+Le principali novità aggiunte al C dal C++ sono: l'*astrazione dei dati*, la *programmazione a oggetti* e la *generic programming*.
 Ora ti spiego cosa sono, ma tu non preoccuparti se non capisci: approfondiremo tutti questi concetti in seguito.  
 I tipi di dato del C sono:
 
@@ -234,7 +234,7 @@ Potremo creare degli oggetti di classe `Monta` con qualunque classe derivata:
 {% include_relative src/cplusplus-polimorfismo.cpp %}
 ```
 
-Compilando ed esegendo il programma, otterrai:
+Compilando ed eseguendo il programma, otterrai:
 
 ```
 % g++ cplusplus-polimorfismo.cpp -o ../out/esempio
@@ -298,7 +298,7 @@ void setEsito() {
 ```
 
 ma anche così dovremo comunque riscrivere quattro righe di codice per modificare l'output del programma: un approccio inaccettabile per i sistemi di produzione, dove le entità da gestire possono essere migliaia.
-Possiamo risolvere questo problema grazie al *generic programming* e al modo in cui viene implementato nel C++: le classi <i id="template">template</i>:
+Possiamo risolvere questo problema grazie alla *generic programming* e al modo in cui viene implementata nel C++: le classi <i id="template">template</i>:
 
 ```
 template < class T> class list;
@@ -334,7 +334,7 @@ monte.push_back(m3);
 monte.push_back(m4);
 ```
 
-Per visualizzare il contenuto della lista, indipendentemtente dal numero di elementi, basta l'istruzione:
+Per visualizzare il contenuto della lista, indipendentemente dal numero di elementi, basta l'istruzione:
 
 ```
 for (list<Monta>::iterator it=monte.begin(); it!=monte.end(); it++) {
@@ -396,7 +396,7 @@ Se per qualche motivo volessimo invertire l'ordine degli elementi nella lista, t
 monte.reverse();
 ```
 
-e l'output che otteremmo è:
+e l'output che otterremo è:
 
 ```
 % g++ cplusplus-template.cpp -o ../out/esempio
@@ -424,7 +424,7 @@ ESITO:   puledro
 ```
 
 Oltre alle classi template predefinite della *Standard Template Library*, il C++ permette di definire le proprie classi template, ma di questo parleremo <a href="/man/polimorfismo#template" class="xref">a tempo debito</a>.  
-Queste caratteristche, unite alla compatibilità con il codice scritto in C, fecero di C++ il linguaggio *object-oriented* più utilizzato degli anni '90.
+Queste caratteristiche, unite alla compatibilità con il codice scritto in C, fecero di C++ il linguaggio *object-oriented* più utilizzato degli anni '90.
 L'avvento, alla fine del Secolo, del linguaggio con la "J", quello che ha bisogno di un sistema di *garbage collecion* per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un'idea di quello che sarebbe stato il millennio che ci si presentava davanti.
 Non a caso, Stroustrsup disse:
 

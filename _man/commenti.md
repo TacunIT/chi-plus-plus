@@ -14,7 +14,7 @@ Un commento è un breve brano di testo che descrive in linguaggio comune il funz
 ```
 /**
  * Funzione per il raddoppio dello stipendio.
- * Richiede come paramentro il valore dello 
+ * Richiede come parametro il valore dello 
  * stipendio corrente e ne torna il valore 
  * duplicato.
  */
@@ -46,7 +46,7 @@ Importo raddoppiaStipendio(Importo stipendioCorrente)
 ```
 
 È lo stesso brano di codice che abbiamo visto prima, ma stavolta i commenti non servono, perché gli intenti della funzione sono espressi direttamente nel codice, rendendo espliciti il nome della funzione, del suo parametro e del suo valore di ritorno.
-L'istruzione `typedef`, che hai visto anche negli esempii precedenti, seve a  definire dei nuovi tipi di dato, come alias di tipi di dato esistenti.
+L'istruzione `typedef`, che hai visto anche negli esempii precedenti, serve a  definire dei nuovi tipi di dato, come alias di tipi di dato esistenti.
 L'istruzione:
 
 ```
