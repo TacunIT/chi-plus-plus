@@ -200,6 +200,17 @@ LI {
 IMG.badge {
     height: 1.2rem;
 }
+
+DIV#cane-lele{
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+}
+DIV#cane-lele IMG {
+    width: 300px;
+    padding: 0.5rem;
+    border: solid 1px $colorGold;
+}
 TABLE, TD, TR, TH {
     border-collapse: collapse;
     border: solid 1px $borderColor;

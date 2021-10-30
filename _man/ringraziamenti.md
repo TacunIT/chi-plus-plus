@@ -12,3 +12,7 @@ A Wayne, per avermi regalato il libro, dicendo: «Read it. It changed my life».
 A Claudio, per avermi insegnato a programmare i computer e per Coomarawsami.
 A Manuela, per Musashi. 
 Al Cane Lele, per avermi aiutato a capire.
+
+<div id="cane-lele" >
+    <img src="/assets/img/il-cane-lele.jpg" title="Il cane Lele" />
+</div>
