@@ -104,7 +104,7 @@ Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l’Ebr
 
 <hr />
 
-<p>Le principali novità aggiunte al C dal C++ sono: l’<em>astrazione dei dati</em>, la <em>programmazone a oggetti</em> e la <em>generic programming</em>.
+<p>Le principali novità aggiunte al C dal C++ sono: l’<em>astrazione dei dati</em>, la <em>programmazione a oggetti</em> e la <em>generic programming</em>.
 Ora ti spiego cosa sono, ma tu non preoccuparti se non capisci: approfondiremo tutti questi concetti in seguito.<br />
 I tipi di dato del C sono:</p>
 
@@ -394,7 +394,7 @@ int main()
 
 </code></pre>
 
-<p>Compilando ed esegendo il programma, otterrai:</p>
+<p>Compilando ed eseguendo il programma, otterrai:</p>
 
 <pre><code>% g++ cplusplus-polimorfismo.cpp -o ../out/esempio
 % ../out/esempio                                    
@@ -455,7 +455,7 @@ void setEsito() {
 </code></pre>
 
 <p>ma anche così dovremo comunque riscrivere quattro righe di codice per modificare l’output del programma: un approccio inaccettabile per i sistemi di produzione, dove le entità da gestire possono essere migliaia.
-Possiamo risolvere questo problema grazie al <em>generic programming</em> e al modo in cui viene implementato nel C++: le classi <i id="template">template</i>:</p>
+Possiamo risolvere questo problema grazie alla <em>generic programming</em> e al modo in cui viene implementata nel C++: le classi <i id="template">template</i>:</p>
 
 <pre><code>template &lt; class T&gt; class list;
 </code></pre>
@@ -487,7 +487,7 @@ monte.push_back(m3);
 monte.push_back(m4);
 </code></pre>
 
-<p>Per visualizzare il contenuto della lista, indipendentemtente dal numero di elementi, basta l’istruzione:</p>
+<p>Per visualizzare il contenuto della lista, indipendentemente dal numero di elementi, basta l’istruzione:</p>
 
 <pre><code>for (list&lt;Monta&gt;::iterator it=monte.begin(); it!=monte.end(); it++) {
     cout &lt;&lt; *it &lt;&lt; endl;
@@ -545,7 +545,7 @@ ESITO:   bardotto
 <pre><code>monte.reverse();
 </code></pre>
 
-<p>e l’output che otteremmo è:</p>
+<p>e l’output che otterremo è:</p>
 
 <pre><code>% g++ cplusplus-template.cpp -o ../out/esempio
 % ../out/esempio                                
@@ -572,7 +572,7 @@ ESITO:   puledro
 </code></pre>
 
 <p>Oltre alle classi template predefinite della <em>Standard Template Library</em>, il C++ permette di definire le proprie classi template, ma di questo parleremo <a href="/man/polimorfismo#template" class="xref">a tempo debito</a>.<br />
-Queste caratteristche, unite alla compatibilità con il codice scritto in C, fecero di C++ il linguaggio <em>object-oriented</em> più utilizzato degli anni ‘90.
+Queste caratteristiche, unite alla compatibilità con il codice scritto in C, fecero di C++ il linguaggio <em>object-oriented</em> più utilizzato degli anni ‘90.
 L’avvento, alla fine del Secolo, del linguaggio con la “J”, quello che ha bisogno di un sistema di <em>garbage collecion</em> per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un’idea di quello che sarebbe stato il millennio che ci si presentava davanti.
 Non a caso, Stroustrsup disse:</p>
 

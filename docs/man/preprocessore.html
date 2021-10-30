@@ -73,11 +73,11 @@
 
 <ul>
   <li>direttive di inclusione;</li>
-  <li>definizioni e macroistruzioni;</li>
+  <li>definizioni e macro-istruzioni;</li>
   <li>direttive condizionali.</li>
 </ul>
 
-<p>Le <a id="inclusione" onclick="history.back()" title="fare click per tornare alla pagina precedente">direttive di inclusione</a> sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macroistruzioni e dei simboli necessari per la corretta compilazione dei programmi.
+<p>Le <em>direttive di inclusione</em> sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macro-istruzioni e dei simboli necessari per la corretta compilazione dei programmi.
 Questi elementi, per comodità, sono isolati all’interno di alcuni file, detti <em>file di include</em>.
 Quando il preprocessore incontra una direttiva <code>include</code>, la sostituisce con il contenuto del file a cui fa riferimento.
 Per esempio, se più di un programma dovesse usare la Classe <code>Colore</code> o la struttura <code>ColoreRGB</code> che abbiamo utilizzato nel programma che visualizza la dimensione dei <a href="/man/tipi-di-dato#principali"> principali tipi di dato del C++</a>, questi dovrebbero essere isolati in un file separato con estensione <code>.h</code>, a indicare che si tratta di un <em>header file</em>:</p>
@@ -212,9 +212,8 @@ int main()
 
 <p>La prima forma serve a includere i file di sistema, come, appunto, <code>iostream</code>, che contiene le definizioni degli <em>stream</em> standard del C++; la seconda forma si utilizza per i file specifici dell’applicazione; nel nostro caso, <code>colore.h</code>.<br />
 I file di include possono includere a loro volta altri file; per esempio, <code>colore.h</code> include <code>iostream</code>, perché utilizza lo <em>stream</em> <code>cout</code>.
-Anche il nostro codice di esempio, però, include <code>iostream</code> e questo potrebbe causare un errore di compilazione se il precompilatore effettuasse due volte l’inclusione, perché sarebbbe come se dichiarassimo due volte la stessa funzione.
-Per questo motivo, all’inizio del nostro file di include (ma anche di <code>iostream</code>) troviamo un altro tipo di diretttive al preprocessore, le cosiddette: 
-<a id="condizionali" onclick="history.back()" title="fare click per tornare alla pagina precedente">direttive condizionali</a>:</p>
+Anche il nostro codice di esempio, però, include <code>iostream</code> e questo potrebbe causare un errore di compilazione se il precompilatore effettuasse due volte l’inclusione, perché sarebbe come se dichiarassimo due volte la stessa funzione.
+Per questo motivo, all’inizio del nostro file di include (ma anche di <code>iostream</code>) troviamo un altro tipo di direttive al preprocessore, le <i>direttive condizionali</i>:</p>
 
 <pre><code>#ifndef _CLASS_COLORE
 #define _CLASS_COLORE 1
@@ -272,7 +271,7 @@ Se invece <code>_CLASS_COLORE</code> ha già un valore associato perché è già
 #define  RGB_BLUE   0x0000FF
 </code></pre>
 
-<p>Le direttvive al preprocessore permettono di definire anche delle costranti stringa:</p>
+<p>Le direttive al preprocessore permettono di definire anche delle costanti stringa:</p>
 
 <pre><code>#define  STR_GREEN  "verde"
 </code></pre>
@@ -312,7 +311,7 @@ cout &lt;&lt; 6 &lt;&lt; STR_COME_SEI &lt;&lt; endl;
 
 </code></pre>
 
-<p>Unite alle direttive condizionali, le definizioni di costanti stringa ti permettono di avere un codice multilingua:</p>
+<p>Unite alle direttive condizionali, le definizioni di costanti stringa ti permettono di avere un codice multi-lingua:</p>
 
 <pre><code>#ifdef LANG_IT
     #define  STR_RGB    "colore RGB"
@@ -439,7 +438,7 @@ int main ()
 z
 </code></pre>
 
-<p>Le macro del precompilatore sono eseguite prima che il codice sia compilato, quindi possono essere sftuttate anche per creare delle funzioni ex-novo.</p>
+<p>Le macro del precompilatore sono eseguite prima che il codice sia compilato, quindi possono essere sfruttate anche per creare delle funzioni ex-novo.</p>
 
 <pre><code>/** 
  * @file src/preprocessore-hashtag.cpp
@@ -539,7 +538,7 @@ ha dimostrato come l’attaccamento che noi proviamo per i nostri parenti sia di
 Questa interpretazione ribonucleica dell’amore funziona molto bene per i rapporti di sangue (padre/figlio, nonno/nipote, zio/nipote ecc.), ma non spiega l’amore fra mamma e papà o fra nonno e nonna — almeno, nelle famiglie che non ritengono l’incesto una pratica accettabile.<br />
 L’<em>egoismo dei geni</em> non spiega nemmeno altre forme d’amore come l’amor di Patria, che spinge i giovani a sacrificare la propria vita in guerra,
 <!--
-La maggior parte dei soldati parte controvoglia perché costretta, ma la storia - e sfortunatamente anche i cimiteri -, sono pieni di esempii di giovani che si sono arrulati volontariamente. Boccioni ed Hemingway, per esempio, ma anche diversi ciclisti.
+La maggior parte dei soldati parte controvoglia perché costretta, ma la storia - e sfortunatamente anche i cimiteri -, sono pieni di esempii di giovani che si sono arruolati volontariamente. Boccioni ed Hemingway, per esempio, ma anche diversi ciclisti.
 -->
 l’amore per il prossimo, che porta il missionario a sacrificare la sua vita per aiutare i malati o l’amore per una forma di arte, uno sport o un lavoro. 
 La realtà è che l’amore è una <em>backdoor</em>, o, meglio: una bomba a tempo, che viene inserita di nascosto nel tuo software, per essere certi che farai la cosa giusta quando arriverà il momento.<br />

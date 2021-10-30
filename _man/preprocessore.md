@@ -21,12 +21,10 @@ Negli esempi precedenti abbiamo visto alcune istruzioni particolari, perché han
 Queste istruzioni sono delle *direttive al pre-processore* e possono essere di tre tipi:
 
 - direttive di inclusione;
-- definizioni e macroistruzioni;
+- definizioni e macro-istruzioni;
 - direttive condizionali.
 
-Le <a id="inclusione" 
-   onclick="history.back()" 
-   title="fare click per tornare alla pagina precedente">direttive di inclusione</a> sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macroistruzioni e dei simboli necessari per la corretta compilazione dei programmi.
+Le *direttive di inclusione* sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macro-istruzioni e dei simboli necessari per la corretta compilazione dei programmi.
 Questi elementi, per comodità, sono isolati all'interno di alcuni file, detti *file di include*.
 Quando il preprocessore incontra una direttiva `include`, la sostituisce con il contenuto del file a cui fa riferimento.
 Per esempio, se più di un programma dovesse usare la Classe `Colore` o la struttura `ColoreRGB` che abbiamo utilizzato nel programma che visualizza la dimensione dei <a href="/man/tipi-di-dato#principali"> principali tipi di dato del C++</a>, questi dovrebbero essere isolati in un file separato con estensione `.h`, a indicare che si tratta di un *header file*:
@@ -50,11 +48,8 @@ Questo esempio utilizza due forme distinte per la direttiva `include`:
 
 La prima forma serve a includere i file di sistema, come, appunto, `iostream`, che contiene le definizioni degli *stream* standard del C++; la seconda forma si utilizza per i file specifici dell'applicazione; nel nostro caso, `colore.h`.  
 I file di include possono includere a loro volta altri file; per esempio, `colore.h` include `iostream`, perché utilizza lo *stream* `cout`.
-Anche il nostro codice di esempio, però, include `iostream` e questo potrebbe causare un errore di compilazione se il precompilatore effettuasse due volte l'inclusione, perché sarebbbe come se dichiarassimo due volte la stessa funzione.
-Per questo motivo, all'inizio del nostro file di include (ma anche di `iostream`) troviamo un altro tipo di diretttive al preprocessore, le cosiddette: 
-<a id="condizionali"
-   onclick="history.back()" 
-   title="fare click per tornare alla pagina precedente">direttive condizionali</a>:
+Anche il nostro codice di esempio, però, include `iostream` e questo potrebbe causare un errore di compilazione se il precompilatore effettuasse due volte l'inclusione, perché sarebbe come se dichiarassimo due volte la stessa funzione.
+Per questo motivo, all'inizio del nostro file di include (ma anche di `iostream`) troviamo un altro tipo di direttive al preprocessore, le <i>direttive condizionali</i>:
    
 ```
 #ifndef _CLASS_COLORE
@@ -88,7 +83,7 @@ Le istruzioni seguenti definiscono delle costanti numeriche per i colori dell'`e
 #define  RGB_BLUE   0x0000FF
 ```
 
-Le direttvive al preprocessore permettono di definire anche delle costranti stringa:
+Le direttive al preprocessore permettono di definire anche delle costanti stringa:
 
 ```
 #define  STR_GREEN  "verde"
@@ -132,7 +127,7 @@ cout << 6 << STR_COME_SEI << endl;
 
 ```
 
-Unite alle direttive condizionali, le definizioni di costanti stringa ti permettono di avere un codice multilingua:
+Unite alle direttive condizionali, le definizioni di costanti stringa ti permettono di avere un codice multi-lingua:
 
 ```
 #ifdef LANG_IT
@@ -236,8 +231,7 @@ Se compili ed esegui questo codice, ottieni:
 z
 ```
 
-
-Le macro del precompilatore sono eseguite prima che il codice sia compilato, quindi possono essere sftuttate anche per creare delle funzioni ex-novo.
+Le macro del precompilatore sono eseguite prima che il codice sia compilato, quindi possono essere sfruttate anche per creare delle funzioni ex-novo.
 
 ```
 {% include_relative src/preprocessore-hashtag.cpp %}
@@ -292,7 +286,7 @@ ha dimostrato come l'attaccamento che noi proviamo per i nostri parenti sia dire
 Questa interpretazione ribonucleica dell'amore funziona molto bene per i rapporti di sangue (padre/figlio, nonno/nipote, zio/nipote ecc.), ma non spiega l'amore fra mamma e papà o fra nonno e nonna &mdash; almeno, nelle famiglie che non ritengono l'incesto una pratica accettabile.  
 L'*egoismo dei geni* non spiega nemmeno altre forme d'amore come l'amor di Patria, che spinge i giovani a sacrificare la propria vita in guerra,
 <!--
-La maggior parte dei soldati parte controvoglia perché costretta, ma la storia - e sfortunatamente anche i cimiteri -, sono pieni di esempii di giovani che si sono arrulati volontariamente. Boccioni ed Hemingway, per esempio, ma anche diversi ciclisti.
+La maggior parte dei soldati parte controvoglia perché costretta, ma la storia - e sfortunatamente anche i cimiteri -, sono pieni di esempii di giovani che si sono arruolati volontariamente. Boccioni ed Hemingway, per esempio, ma anche diversi ciclisti.
 -->
 l'amore per il prossimo, che porta il missionario a sacrificare la sua vita per aiutare i malati o l'amore per una forma di arte, uno sport o un lavoro. 
 La realtà è che l'amore è una *backdoor*, o, meglio: una bomba a tempo, che viene inserita di nascosto nel tuo software, per essere certi che farai la cosa giusta quando arriverà il momento.  

@@ -89,8 +89,8 @@ Come ti ho detto, il C++ è un linguaggio *compilato*, quindi il codice, per pot
 % g++ struttura-argc-argv.cpp -o src/out/esempio
 ```
 
-Il parametro `-o`permette di specificare il nome del file di output, in questo caso: `src/out/esempio`.
-Se non si defiisce questo valore, il compilatore genera un file di nome `a.out`.  
+Il parametro `-o` permette di specificare il nome del file di output, in questo caso: `src/out/esempio`.
+Se non si definisce questo valore, il compilatore genera un file di nome `a.out`.  
 Il comando *shell*:
 
 ```
@@ -98,7 +98,7 @@ Il comando *shell*:
 ```
 
 è composto di due istruzioni, separate dal carattere `;`.
-La prima sitruzione esegue il file compilato; la seconda stampa a video il suo valore di ritorno.
+La prima istruzione esegue il file compilato; la seconda stampa a video il suo valore di ritorno.
 Se eseguiamo il programma senza parametri, otteniamo un messaggio e il codice di errore `1`:
 
 ```
@@ -206,7 +206,7 @@ Poe lo aveva capito. In: *Eureka*, usa il termine *Elettricità* invece di: *Ent
 Ciò che non è corretto (e non solo in Poe) è l'idea che l'espansione dell'Universo sia un evento unico.
 La vita dell'Universo è ciclica: quando è preponderante l'Entropia, l'Universo si espande, come in questo momento; quando "vince" la Gravità, l'Universo collassa su sé stesso e torna all'Uno.
 Ciò che evita la stasi in uno dei due punti estremi del ciclo &mdash; l'Uno e la morte termica &mdash; è una terza forza, che il Maestro Canaro chiamava: 
-<a href="/man//mitopoietica#annosa-dicotomia" class="xref">*l'annosa dicotomia fra ciò che desideriamo è ciò di cui abbiamo bisogno*</a>.   
+<a href="/man/mitopoietica#annosa-dicotomia" class="xref">*l'annosa dicotomia fra ciò che desideriamo è ciò di cui abbiamo bisogno*</a>.   
 Così come una scatola di mattoncini Lego contiene tutti gli edifici che hai costruito e che costruirai in futuro, nell'Uno primigenio è concentrata tutta l'Energia dell'Universo e quindi ogni essere animato o inanimato che sia mai esistito o che mai esisterà.
 La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo, che non può essere misurato perché non esistono eventi in base a cui farlo.<a class="nota" href="/man/note#non-tempo"></a> 
 Non ci sono né morte, né sofferenza, né malattia, né separazione; l'Uno è, di fatto, ciò che la maggior parte degli esseri senzienti descrive e auspica come un Universo perfetto.  
