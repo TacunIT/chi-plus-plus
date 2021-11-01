@@ -537,7 +537,7 @@ Dato che l'oggetto di studio è lo stesso, è più che normale che, alle volte, 
 
 <!--
 
-aggiungere i 10C rivisti dal Maestro Canaro
+@todo: aggiungere i 10C rivisti dal Maestro Canaro
 specificare che quando aveva redatto la prima versione era un "angy young man", come direbbe Santillana, ma che poi aveva capito che le religioni sono come le opere teatrali e non le si può giudicare in base alle capacità degli attori.
 
 
