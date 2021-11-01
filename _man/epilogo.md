@@ -15,7 +15,7 @@ Mi alzai e mi vestii al buio, pensando a quanto sono astuti i Benedettini che do
 Appena ebbi qualcosa addosso, uscii di corsa e, a piedi nudi, scesi in infermeria.
 Indugiai prima di aprire la porta così come avevo indugiato davanti alla porta della sua cella la prima volta che ero andato a cercarlo. 
 Quando alla fine mi feci coraggio e l'aprii, lo vidi sdraiato su uno dei letti in fondo alla stanza.
-Era appena un'increspatura sul piano della coperta, ma la coperta &mdash; notai con un certo sollievo &mdash;, si muoveva leggermente, seguendo il flusso del suo riespiro.
+Era appena un'increspatura sul piano della coperta, ma la coperta &mdash; notai con un certo sollievo &mdash;, si muoveva leggermente, seguendo il flusso del suo respiro.
 Lui si accorse della mia presenza (o forse sapeva che sarei arrivato) e, con un filo di voce disse:  
 «Toh! guarda chi si vede: Nino lo studente..»  
 Stava morendo, probabilmente era l'ultima volta che ci vedevamo e mi salutava con una battuta di un film di Nino D'Angelo.
@@ -63,7 +63,7 @@ Questa è la poesia funeraria del Maestro.
 Una poesia funeraria “ready-made”, come la definiva lui, perché il testo è quello della poesia funeraria del monaco Zen Gesshu Soko.
 Il Maestro la tradusse in Tedesco quando scoprì che il verbo *zu Treffen* può significare sia: *incontrarsi* che: *fare centro*.
 
-<blockquote>
+<blockquote class="spalla-sx">
 Einatmen, Ausatmen,<br />
 Vorwärts gehen, Rückwärts gehen,<br />
 Leben, sterben, kommen, gehen.<br />

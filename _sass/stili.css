@@ -398,6 +398,10 @@ MAIN BLOCKQUOTE P {
     text-align: left;
     display: inline-block;
 }
+MAIN BLOCKQUOTE.spalla-sx {
+    padding-left: 2em;
+    text-align: left;
+}
 
 BODY.pagina H1 {
     margin: 1rem 0 3rem 0;
