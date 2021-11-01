@@ -1,7 +1,6 @@
 ---
 layout:   log
-title:    Il C'hi++ e l'Arte del tiro con l'arco
-category: log
+title:    "Il C'hi++ e l'Arte del tiro con l'arco"
 tags:     [Spazionismo, Buddismo, Ananda, ]
 ---
 

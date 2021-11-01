@@ -1,7 +1,6 @@
 ---
 layout:   log
-title:    Citazioni con nota
-category: log
+title:    "Citazioni con nota"
 tags:     [redazione, Jekyll]
 ---
 

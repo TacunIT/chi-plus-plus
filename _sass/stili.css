@@ -818,6 +818,37 @@ BODY.pagina.log  P.data {
     text-align: right; 
 } 
 
+NAV.post {
+    display: block;
+    margin-top: 3rem;
+    text-align:center;
+    overflow: auto;
+    border: none;
+}
+NAV.post A {
+    width: 30%;
+    min-height: 2rem;
+    border-top: dotted 1px $borderColor;
+    padding-top: 1rem;
+}
+NAV.post A.back {
+    display: inline-block;
+    text-transform: capitalize;
+}
+NAV.post A.prev {
+    float: left;
+    text-align: left;
+    border-left: dotted 1px $borderColor;
+    padding-left: 10px;
+}
+NAV.post A.next {
+    float: right;
+    text-align: right;
+    border-right: dotted 1px $borderColor;
+    padding-right: 10px;
+}
+
+
 /**
  *  Stili per mobile
  */
