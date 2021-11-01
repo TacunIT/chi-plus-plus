@@ -85,7 +85,7 @@ for(&lt;stato iniziale&gt; ; &lt;stato finale&gt; ; &lt;variazione&gt;)
 
 <p>Le tre condizioni all’interno delle parentesi sono utilizzate dall’istruzione <code>for</code> per controllare l’esecuzione delle istruzioni all’interno del corpo del ciclo.<br />
 La prima espressione è valutata solo una volta all’inizio del ciclo e, solitamente, serve a inizializzare le variabili utilizzate.<br />
-La seconda espressione è una condizione logica o relazionale che viene valutata all’inizio di ogni iterazione: se torna <code>0</code> o <code>false</code> l’esecuzione del ciclo termina, altrimenti posegue.<br />
+La seconda espressione è una condizione logica o relazionale che viene valutata all’inizio di ogni iterazione: se torna <code>0</code> o <code>false</code> l’esecuzione del ciclo termina, altrimenti prosegue.<br />
 La terza espressione viene valutata al termine di ogni iterazione e, di solito, è costituita da un’espressione di incremento o decremento delle variabili utilizzate per il controllo del ciclo.
 Per fare ciò, si utilizzano degli operatori unarii (ovvero che operano su una singola variabile) detti: <em>operatori di incremento</em> e <em>operatori di decremento</em>, che possono svolgere la loro funzione o prima o dopo l’utilizzo della variabile, a seconda che vengano posti prima o dopo l’identificatore della variabile:</p>
 
@@ -221,7 +221,7 @@ L’output di questo programma è:</p>
 </code></pre>
 
 <p>Un ciclo di questo tipo continuerà a ripetersi indefinitamente e, se non viene fermato in qualche maniera, causerà inevitabilmente dei problemi al computer che lo esegue.
-È necessario quindi porre un limite al numero di ripetizioni, utilizzando la stessa parola-chiave <code>break</code>che abbiamo usato con le istruzioni <code>switch</code>.
+È necessario quindi porre un limite al numero di ripetizioni, utilizzando la stessa parola-chiave <code>break</code> che abbiamo usato con le istruzioni <code>switch</code>.
 Stavolta, però, cominceremo a fare le cose come vanno fatte e separeremo le tre componenti del programma precedente in tre file distinti: <code>pianeti.h</code>, che conterrà le dichiarazioni delle costanti e della funzione <code>mostraPianeta</code>; <code>pianeti.cpp</code>, contenente la definizione della funzione <code>mostraPianeta</code> e <code>pianeti-main.cpp</code> per la funzione <code>main</code>:</p>
 
 <pre><code>/** 
@@ -610,7 +610,7 @@ che ci sarà un momento in cui l’espansione dell’Universo terminerà e che t
 }
 </code></pre>
 
-<p>Se non ci fosse questa ciclicità, ovvero senza un’alternanza fra Entropia e Gravità, fra <em>Prakṛti</em> e <em>Puruṣa</em>, lo Spazionismo e, di conseguenza,il C’hi++ non avrebbero più senso, così come la nostra esistenza.
+<p>Se non ci fosse questa ciclicità, ovvero senza un’alternanza fra Entropia e Gravità, fra <em>Prakṛti</em> e <em>Puruṣa</em>, lo Spazionismo e, di conseguenza, il C’hi++ non avrebbero più senso, così come la nostra esistenza.
 La Vita si rivelerebbe un epifenomeno destinato a esaurirsi nella morte termica dell’Universo e nessun ordine sociale sarebbe più possibile, perché ciascuno cercherebbe di ottenere il massimo possibile dai pochi anni che gli sono concessi, indifferente al costo che questo avrebbe per gli altri. 
 Qualcosa di simile al <em>Black Friday</em> in un centro commerciale americano, per intendersi.. <a href="/man/note/#blackfriday" class="nota"></a></p>
 

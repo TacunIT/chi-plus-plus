@@ -117,7 +117,7 @@ main:   Stringa globale
 ```
 
 Come vedi, la stringa definita globalmente è visibile sia nella funzione `main` che nella funzione `funz`; la variabile definita all'inizio della funzione `funz` è visibile all'interno della funzione stessa, ma non nel blocco di codice, dove è visibile la nuova variabile `stringa`.
-L' “aspettativa di vita” di ciascuna variabile dipende dal punto in cui è stata definita: la prima variabile esisterà per tutta la durata del programma; la seconda variabile viene creata quando si richiama la funzione `funz` e viene eliminata quando la funzone termina; la variabile all'interno del blocco di codice esiste solo per due istruzioni, poi il blocco di codice finisce e viene eliminata.  
+L' “aspettativa di vita” di ciascuna variabile dipende dal punto in cui è stata definita: la prima variabile esisterà per tutta la durata del programma; la seconda variabile viene creata quando si richiama la funzione `funz` e viene eliminata quando la funzione termina; la variabile all'interno del blocco di codice esiste solo per due istruzioni, poi il blocco di codice finisce e viene eliminata.  
 Al contrario, quando un'area di memoria è allocata dinamicamente, rimane occupata fino a che il programma (o, più precisamente: il programmatore) non la rilascia con un'istruzione `delete`.
 Se il programma fa una sola chiamata, come nel nostro esempio, il fatto che una cinquantina di byte non siano disponibili per qualche minuto non crea grossi problemi (lo so per certo perché, nella prima versione dell'esempio, avevo dimenticato di aggiungere l'istruzione `delete` alla fine e il computer ha continuato a funzionare lo stesso), se però quello stesso programma continuasse a girare sullo stesso computer per lungo tempo, a poco a poco esaurirebbe tutta la memoria disponibile, causandone il blocco.  
 Per questo motivo, il linguaggio con la "J" ha un sistema di *garbage collection* che, come le squadre di pulizia dei Servizi Segreti, provvede a eliminare le prove dell'incompetenza dei suoi programmatori prima che questa arrechi danno ai sistemi. 
@@ -126,7 +126,7 @@ Qualcuno ti dirà che non è vero, che i programmatori "J" sono dei professionis
 <hr id="dottrina">
  
 Come le variabili del C++, anche gi esseri umani sono chiamati a vivere, svolgono il loro compito e alla fine vengono rimossi dal sistema.
-Le risorse che occupiamo sono un insieme di spazioni, invece che delle sequenze di byte, ma ciò che comunemente definiamo: *noi* non è altro che un modo di vedere le trasizioni di energia all'interno del sistema.
+Le risorse che occupiamo sono un insieme di spazioni, invece che delle sequenze di byte, ma ciò che comunemente definiamo: *noi* non è altro che un modo di vedere le transizioni di energia all'interno del sistema.
 A differenza delle variabili del software, però, gli esseri umani sono capaci di valutare l'esito delle loro scelte o delle loro azioni e possono decidere se ripetere quella scelta o quell'azione in altri cicli di vita dell'Universo.
 Siamo, allo stesso tempo, una parte del programma, i *beta-tester* e gli sviluppatori e, se ci accorgiamo di un'istruzione errata, possiamo modificarla nelle successive "esecuzioni" del programma, così come un giocatore di scacchi evita di ripetere una mossa che si è rivelata perdente.
 In questo modo, genereremo a una nuova variante della storia che, come una variante scacchistica, potrà rivelarsi migliore o peggiore di quelle precedenti.  
@@ -146,7 +146,7 @@ Malgrado ciò, ne riconosceva l'importanza perché più prestiamo attenzione a t
 <hr id="delete">
 
 Un'altra differenza fra gli esseri umani e il codice C++ è il nostro rapporto con l'operatore `delete`.   
-Gli uomini hanno sempre avuto paura della morte e, da Gilgamesh in poi, hanno sempre cercato di sfuggirle o di annulare il suo operato.
+Gli uomini hanno sempre avuto paura della morte e, da Gilgamesh in poi, hanno sempre cercato di sfuggirle o di annullare il suo operato.
 Arte, religione, scienza: potremmo dire che tutto ciò che di buono abbiamo prodotto come specie nasce dal naturale rifiuto della transitorietà della nostra esistenza.
 La morte è stata la causa e, talvolta, il soggetto dei migliori frutti del nostro ingegno.
 Tutte queste creazioni, nel tempo, hanno creato un bozzolo culturale che, da un lato, ci ha protetto dalla paura e, dall'altro, ci ha dato degli ideali comuni per cui lottare, anche se non sempre a fin di bene.
@@ -188,7 +188,7 @@ Secondo lo *Yoga Sutra Bhāṣya*<a class="nota" href="/man/note#yoga"></a>:
 
 Così come tutti gli istanti sono importanti, per il Mondo, ciascun essere è importante per l'Universo, se svolge il compito che gli è stato assegnato; anche qualcuno o qualcosa che apparentemente è insignificante.
 È noto che il Maestro Canaro raggiunse il primo stato di Illuminazione quando vide un arbusto crescere su una parete di roccia a picco sul mare.
-Un arbusto apparentemente inutile: i suoi semi non avrebbero mai raggiunto una terra dove germogliare e i suoi rami erano troppo esili perché un uccello ci potesse costruire il suo nido; malgrado ciò, la caparbietà con cui quella pianta svolgeva il ruolo che gli era stato assegnato, permise al Maestro Canaro di capire ciò che molti libri non erano riusciti a spiegargli, posando la prima pietra di quello che sarebbe sato poi il suo insegnamento.  
+Un arbusto apparentemente inutile: i suoi semi non avrebbero mai raggiunto una terra dove germogliare e i suoi rami erano troppo esili perché un uccello ci potesse costruire il suo nido; malgrado ciò, la caparbietà con cui quella pianta svolgeva il ruolo che gli era stato assegnato, permise al Maestro Canaro di capire ciò che molti libri non erano riusciti a spiegargli, posando la prima pietra di quello che sarebbe stato poi il suo insegnamento.  
 Quello che noi percepiamo come il nostro “valore” è relativo. 
 Pensa alla variabile `a` che abbiamo visto all'inizio: 
 

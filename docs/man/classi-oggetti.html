@@ -453,7 +453,7 @@ private:
   </li>
 </ul>
 
-<p>Attenzione, però: se a uscire dal campo d’azione è un puntatore, il ditruttore della classe non viene richiamato automaticamente, perciò gli oggetti creati in maniera dinamica con l’operatore <code>new</code> dovranno sempre distrutti per mezzo dell’operatore <code>delete</code>.</p>
+<p>Attenzione, però: se a uscire dal campo d’azione è un puntatore, il distruttore della classe non viene richiamato automaticamente, perciò gli oggetti creati in maniera dinamica con l’operatore <code>new</code> dovranno sempre distrutti per mezzo dell’operatore <code>delete</code>.</p>
 
 <hr id="funzioni-di-interfaccia" />
 
@@ -595,7 +595,7 @@ int setS(int s) { return _s = (s % 60); }
 <pre><code>return _h = (h % 24);
 </code></pre>
 
-<p>L’utilizzo della lista di inzializzazione, all’interno del costruttore, ti permette di utilizzare dei parametri che abbiano lo stesso nome dei dati membro della classe:</p>
+<p>L’utilizzo della lista di inizializzazione, all’interno del costruttore, ti permette di utilizzare dei parametri che abbiano lo stesso nome dei dati membro della classe:</p>
 
 <pre><code>class Punto
 {
@@ -628,15 +628,15 @@ Così come abbiamo fatto per il costruttore della classe, potremmo unificare le 
 </code></pre>
 
 <p>Anche se meno evidente, è più comoda perché permette di tenere il codice su una sola riga e ti dà modo di fare un po’ di pratica con gli operatori.<br />
-Questo tipo di funzioni, però, ha due difetti: limita i valori che puoi assegnare all’attibuto e limita la granularità dei privilegi che puoi assegnare a chi utilizza la classe.
-Limita il numero di valori che puoi assegnare all’attibuto, perché esclude il valore del parametro di default — cosa che non crea problemi in questo caso, dato che non esiste un’ora <code>-1</code>, ma che potrebbe farlo nel caso di una stringa con parametro di default nullo.
+Questo tipo di funzioni, però, ha due difetti: limita i valori che puoi assegnare all’attributo e limita la granularità dei privilegi che puoi assegnare a chi utilizza la classe.
+Limita il numero di valori che puoi assegnare all’attributo, perché esclude il valore del parametro di default — cosa che non crea problemi in questo caso, dato che non esiste un’ora <code>-1</code>, ma che potrebbe farlo nel caso di una stringa con parametro di default nullo.
 Limita la granularità dei privilegi sulle funzioni, perché ti costringe a rendere pubbliche le funzioni di scrittura dei dati membro e questo, in certi casi potrebbe non essere saggio. 
 Ti consiglio perciò di scrivere sempre due funzioni di interfaccia distinte per la lettura e la scrittura: sul momento ti sembrerà uno spreco di tempo, ma, a meno che il tuo programma non sia particolarmente banale, o prima o poi ti accorgerai di aver fatto la scelta corretta.</p>
 
 <hr id="static" />
 
 <p>Ogni variabile di una determinata classe possiede delle copie dei dati membro, mentre le funzioni membro di una classe sono condivise da tutte le sue istanze.
-Per consentire al programma di sapere quale sia l’istanza che sta richiamando un determinato metodo, il compilatore aggiuge a ogni chiamata a funzione un parametro nascosto chiamato <code>this</code>, che punta all’istanza che ha richiesto la funzione.
+Per consentire al programma di sapere quale sia l’istanza che sta richiamando un determinato metodo, il compilatore aggiunge a ogni chiamata a funzione un parametro nascosto chiamato <code>this</code>, che punta all’istanza che ha richiesto la funzione.
 Il parametro <code>this</code>, anche se non dichiarato, può essere utilizzato nel corpo delle funzioni membro per riferirsi all’istanza corrente.
 Per esempio, il costruttore di copia della classe <code>Orario</code> (così come qualsiasi altra funzione membro della classe) potrebbe essere riscritto così:</p>
 
@@ -751,8 +751,8 @@ src/cpp/classi-static.cpp:26:16: error: invalid use of 'this'
 
 <hr id="classi-anonime" />
 
-<p>L’ultima cosa di cui dobbiamo parlare, sono le <em>classi anonime</em>, un tipo particolare di classe che, come dice il nome (perdonami il gioco di parole), non hanno nome e per ciò non possono avere né un construttore né un distruttore e non possono essere utilizzate né come parametri né come valori di ritorno delle funzioni.<br />
-L’unico modo per dichiarare un ogetto con classe anonima è di aggiungerlo alla dichiarazione della classe stessa:</p>
+<p>L’ultima cosa di cui dobbiamo parlare, sono le <em>classi anonime</em>, un tipo particolare di classe che, come dice il nome (perdonami il gioco di parole), non hanno nome e per ciò non possono avere né un costruttore né un distruttore e non possono essere utilizzate né come parametri né come valori di ritorno delle funzioni.<br />
+L’unico modo per dichiarare un oggetto con classe anonima è di aggiungerlo alla dichiarazione della classe stessa:</p>
 
 <pre><code>class 
 {
@@ -923,7 +923,7 @@ Di questo, parleremo nelle prossime lezioni; adesso dobbiamo tornare su una ques
 </blockquote>
 
 <p>Abbiamo visto che l’Amore è una forza allo stesso tempo gravitazionale ed entropica, perché unisce gli individui, ma allo stesso tempo li porta a riprodursi in forme differenti.<br />
-In un certo senso, possiamo considerare l’Amore come il “costruttrore” delle nostre istanze, perché genera le condizioni che spingono i nostri genitori a incontrarsi e ad accoppiarsi e soprattutto li spinge a restare insieme dopo l’accoppiamento.
+In un certo senso, possiamo considerare l’Amore come il “costruttore” delle nostre istanze, perché genera le condizioni che spingono i nostri genitori a incontrarsi e ad accoppiarsi e soprattutto li spinge a restare insieme dopo l’accoppiamento.
 La monogamia non è una costante, anzi, in natura esistono quattro modi differenti di gestire la prole e John Maynard Smith li ha catalogati in base alla specie animale che le adotta<a href="/man/note#maynard" class="nota"></a>:</p>
 
 <table>
@@ -999,11 +999,11 @@ Auspica che il nuovo ciclo di esistenza sia migliore dei precedenti, ma non desi
 
 <p>L’Uno si comporta in maniera simile: ligio al precetto del <em>Wu Wei</em><a href="/man/note#wu-wei" class="nota"></a> taoista, pone le condizioni necessarie per il ripetersi degli eventi che si sono rivelati benefici, ma non li impone.
 Scrive l’analisi del sistema, ma lascia che siano i programmatori a scrivere il codice, anche se sa che faranno certamente degli errori. 
-Definisce delle regole, ma lascia le sue istanze libere di trasgredirle, perché sa che l’evoluzione è sempre frutto di un errore venuto male, di qualcosa che non sarebbe dovuto esssere così e invece così è meglio. <br />
-Le regole non devono essere una rete che imprigiona e immoblizza, ma una rete che salva e sostiene, così come il “religare” delle religioni non deve essere un legame che impastoia, ma che sorregge.
+Definisce delle regole, ma lascia le sue istanze libere di trasgredirle, perché sa che l’evoluzione è sempre frutto di un errore venuto male, di qualcosa che non sarebbe dovuto essere così e invece così è meglio. <br />
+Le regole non devono essere una rete che imprigiona e immobilizza, ma una rete che salva e sostiene, così come il “religare” delle religioni non deve essere un legame che impastoia, ma che sorregge.
 Le regole che definiscono e quindi limitano la nostra esistenza sono come un edificio che abbia una struttura in cemento armato e dei muri in cartongesso. 
 I muri interni possono essere abbattuti o modificati, se necessario, ma i pilastri e le travi devono essere lasciati al loro posto.
-Similmente, la modifica delle regole può essere benefica, ma deve essere permessa solo a chi le conosce bene <!-- per esempio, Gesù --> perché un carpentiere maldestro portrebbe - per errore o per stupidità - rimuovere uno dei pilastri portanti mettendo in pericolo la solidità dell’edificio. <!-- per esempio, il Movimento del '68 --><br />
+Similmente, la modifica delle regole può essere benefica, ma deve essere permessa solo a chi le conosce bene <!-- per esempio, Gesù --> perché un carpentiere maldestro potrebbe - per errore o per stupidità - rimuovere uno dei pilastri portanti mettendo in pericolo la solidità dell’edificio. <!-- per esempio, il Movimento del '68 --><br />
 Per questi motivi, la modifica delle regole non può essere un’attività ammessa da chi le ha promulgate, anche se ne riconosce l’utilità, ma dev’essere un’attività apparentemente clandestina, svolta da elementi sacrificabili, che possano fungere da capri espiatorii se qualcosa va male.<br />
 Non fu per ingenuità, che l’Altissimo concesse a Iblīs una proroga alla sua punizione<a href="/man/note#iblis" class="nota"></a> e non fu un caso se il Maestro Canaro venne aggiunto al gruppo degli angeli caduti, dopo che, vittima dell’Annosa Dicotomia, cercò di contravvenire alle regole definite dall’Analista.
 Se rifiuti le dissonanze, tutt’al più, puoi suonare il Blues; con le dissonanze, hai il Jazz.</p>

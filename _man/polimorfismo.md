@@ -292,6 +292,7 @@ Puoi risparmiarti questa seccatura ridefinendo solo il com­portamento degli ope
 ```
 {% include_relative src/polimorfismo-cast.cpp %}
 ```
+
 <hr id="template">
 
 L'ultima cosa di cui ti devo parlare, a proposito del polimorfismo, sono i *template*.  
@@ -368,7 +369,7 @@ L'istruzione:
 cout << MAGGIORE('a', b) << endl; 
 ```
 
-compara un carattere con un double e, senza dare problemi in compilazione torna il valore `97`, corrispondente al codice ASCII della lettera `a`.
+compara un carattere con un double e, senza dare problemi in compilazione torna il valore `97`, corrispondente al codice ASCII della lettera `a`. 
 Al contrario, l'istruzione:
 
 ```

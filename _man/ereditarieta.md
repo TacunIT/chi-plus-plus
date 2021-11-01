@@ -428,7 +428,7 @@ cane.Mammifero::getSpecie();
 <hr id="dottrina">
 
 Buona parte degli esempii e delle cose che ti ho detto in questa lezione le ho prese dal manuale di programmazione in C++ che il Maestro Canaro scrisse nel Secolo scorso, modificandoli per adattarli a questo contesto.   
-L'esempio originale delle funzioni virtuali, per dire, era così:
+L'esempio originale delle funzioni virtuali, per esempio, era così:
 
 ```
 {% include_relative src/ereditarieta-codice-canaro.cpp %}
@@ -500,7 +500,7 @@ In <a href="https://canaro.net/amore-e-arte" target="canaro">un suo saggio giova
  
  > L'Arte è la traccia del cammino dell'Uomo verso Dio 
  
- specificando poi che, con il termine: "Dio" (altra parola interpretata in maniera differente da ciascuno di noi), intendeva il senso dell'Esistenza.
+ specificando poi che, con il termine: “Dio” (altra parola interpretata in maniera differente da ciascuno di noi), intendeva il senso dell'Esistenza.
 Alcuni anni dopo, però, guardando delle foto di crostate realizzate dallo chef Gianluca Fusto<a href="/man/note/#fusto" class="nota"></a>, capì che la sua definizione era imperfetta, perché non includeva, o quanto meno lasciava a margine, gli arte-fatti che non ricadevano nelle categorie artistiche canoniche. 
 Modificò per ciò la sua definizione di Arte in:
 
@@ -545,4 +545,4 @@ Indubbiamente, il fatto che la Regola del nostro Ordine ci imponga l'uso di cami
 
 > La pelliccia è fatta di peli
 
-e finché la nostra specie non imparerà a fare un uso più responsabile delle sue gonadi, non potremo far altro che compensare come possiamo i problemi legati alla sovrappolazione.
+e finché la nostra specie non imparerà a fare un uso più responsabile delle sue gonadi, non potremo far altro che compensare come possiamo i problemi legati alla sovrappopolazione.

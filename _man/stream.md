@@ -512,6 +512,4 @@ Il Maestro Canaro una volta mi disse:
 
 @todo: decidere se spiegare che gli esempii del testo sono studiati per essere progressivamente migliorati, per dimostrare come la scrittura di codice sia un'attività in continua evoluzione.
 
-
-
 -->
