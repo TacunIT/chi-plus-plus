@@ -1,3 +1,7 @@
+## 0.30.11 (November 01, 2021)
+  - Aggiunto Sostiene Aristotele come post e corretti i link nel testo
+  - Rinominata directory _var in _note. A
+
 ## 0.30.10 (November 01, 2021)
   - Aggiunti link di paginazione ai post.
   - Corretto foglio di stile
