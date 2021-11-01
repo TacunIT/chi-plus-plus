@@ -1,3 +1,8 @@
+## 0.30.10 (November 01, 2021)
+  - Aggiunti link di paginazione ai post.
+  - Corretto foglio di stile
+  - Terminata revisione errori di battitura
+
 ## 0.30.9 (October 30, 2021)
   - Revisione errori di battitura fino a capitolo Processore
   - Aggiunta foto del cane Lele alla pagina dei ringraziamenti
