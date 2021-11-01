@@ -1,7 +1,6 @@
 ---
 layout:   log
-title:    Log sui log
-category: log
+title:    "Log sui log"
 tags:     [log, ricorsione ]
 ---
 

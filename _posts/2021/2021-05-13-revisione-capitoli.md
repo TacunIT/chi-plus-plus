@@ -1,7 +1,6 @@
 ---
 layout:   log
-title:    Revisione dei capitoli
-category: log
+title:    "Revisione dei capitoli"
 tags:     [capitoli, redazione]
 ---
 

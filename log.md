@@ -6,7 +6,7 @@ permalink:  /log/
 ---
 
 <section class="elenco post">
-    {% for post in site.posts %}
+    {% for post in site.categories.log %}
         <div class="log">
             <a class="more" href="{{ post.url }}">
                 <h3>{{ post.title }}</h3>

@@ -1,11 +1,8 @@
 ---
-title:    Religione e Scienza
-category: log
-tags:     [note, religione, scienza]
 layout:   log
-class:    articolo
+title:    Religione e Scienza
+tags:     [note, religione, scienza]
 ---
-
 
 I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale.
 Rifiutano le accettazioni per fede e contestano la non comprovabilità scientifica dei precetti religiosi.
