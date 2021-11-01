@@ -51,9 +51,3 @@ collections:
             - debug.md
             - epilogo.md
             - ringraziamenti.md
-    opt:
-        output: true
-        order:
-            - binario.md
-            - sostiene-aristotele.md
-            - i-dieci-comandamenti.md 

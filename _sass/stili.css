@@ -408,6 +408,10 @@ BODY.pagina H1 {
     text-align: center;
 }
 
+BODY.pagina.log H1 {
+    margin: 3rem 0 3rem 0;
+}
+
 BODY.pagina.index H1 {
     display: none;
 }
