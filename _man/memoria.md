@@ -150,14 +150,14 @@ Gli uomini hanno sempre avuto paura della morte e, da Gilgamesh in poi, hanno se
 Arte, religione, scienza: potremmo dire che tutto ciò che di buono abbiamo prodotto come specie nasce dal naturale rifiuto della transitorietà della nostra esistenza.
 La morte è stata la causa e, talvolta, il soggetto dei migliori frutti del nostro ingegno.
 Tutte queste creazioni, nel tempo, hanno creato un bozzolo culturale che, da un lato, ci ha protetto dalla paura e, dall'altro, ci ha dato degli ideali comuni per cui lottare, anche se non sempre a fin di bene.
-Negli ultimi due secoli, però, la Scienza ha squarciato questo bozzolo, privando gli esseri umani delle loro bugie confortanti e sostituendole con delle certezze inquietanti, mentre il suo figlio scemo (il Movimento del '68) ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società senza darle nulla in cambio, tranne la minigonna.    
+Negli ultimi due secoli, però, la Scienza ha squarciato questo bozzolo, privando gli esseri umani delle loro bugie confortanti e sostituendole con delle certezze inquietanti, mentre il suo figlio scemo (il Movimento del '68) ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società, come la famiglia o la scuola, senza darle nulla in cambio, tranne la minigonna.    
 C'è un aneddoto apocrifo sul Maestro Canaro che parla proprio di questo:
 
 <blockquote class="incluso" id="zia">
 {{ site.data.canaro.computer-zia }}
 </blockquote>
 
-L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito come un paziente a cui sia diagnosticato un male incurabile, elaborando il suo dolore secondo le cinque fasi definite dalla dottoressa Kübler Ross<a class="nota" href="/man/note#kubler"></a>:    
+L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito come un paziente a cui sia diagnosticato un male incurabile ed ha elaborato il suo dolore secondo le cinque fasi definite dalla dottoressa Kübler Ross<a class="nota" href="/man/note#kubler"></a>:    
 
 <i>Negazione:</i> così come l'Epoca vittoriana aveva il tabù del sesso, la nostra “cultura” ha il tabù della morte: i nostri bis-nonni fingevano di non avere interessi carnali, noi fingiamo che la morte non esista.
 La neghiamo a parole, usando dei giri di parole per non nominarla: “Se n'è andato”, “Non c'è più”, “È scomparso”, neanche si stesse parlando di un evaso o di un illusionista. 
@@ -176,10 +176,10 @@ La religione è come gli antibiotici: non fa effetto se non prendi la dose inter
 <i>Depressione:</i> la sindrome depressiva è la seconda malattia più diffusa al Mondo, dopo i disturbi cardiaci, segno evidente che la fase di negoziazione non ha sortito gli effetti sperati.
 Fallito ogni tentativo di combattere la realtà, l'Uomo del terzo Millennio  ha cercato scampo nella fuga.
 Così come il Giappone dei Tokugawa, si è rinchiuso in sé stesso<a class="nota" href="/man/note#isolamento"></a>, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a class="nota" href="/man/note#sakoku"></a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
-La realtà è ovunque e anche isolandoci non possiamo sfuggirle; anzi: la solitudine genera un *feedback* che amplifica lo stato di malessere e rende ancora più difficile e improbabile il raggiungimento dello stadio successivo.
+La realtà è ovunque e anche isolandoci non possiamo sfuggirle; anzi: la solitudine genera un *feedback* che amplifica lo stato di malessere e rende ancora più difficile e improbabile il raggiungimento dello stadio successivo, ovvero, la..
 
 <i>Accettazione:</i> il solo modo per salvarsi è rinunciare agli insegnamenti dei cattivi maestri del passato e accettare il fatto di non essere delle gocce d'acqua uniche e insostituibili, ma di far parte del mare.
-Chi vuole, potrà credere che in quel mare ci sia Poseidone; gli altri saranno liberi di pensare che ci siano solo pesci, molluschi e alghe: non ha importanza; ciò che conta è sottrarsi all'influenza separatrice dell'Entropia e riacquistare un senso di appartenenza a qualcosa che va oltre le nostre brevi e limitate esistenze.
+Chi vuole, potrà credere che in quel mare ci sia Poseidone; gli altri saranno liberi di pensare che ci siano solo pesci, molluschi e alghe: non ha importanza; ciò che conta è sottrarsi all'influenza separatrice dell'Entropia e riacquistare un senso di appartenenza a qualcosa che va oltre le nostre brevi e limitate esistenze. <!-- @todo Verificare quello che dice De Santillana a proposito di Galileo: C'hi++ non si oppone al pensiero scientifico, che anzi adotta, ma all'intolleranza scientifica -->
 Solo così, potremo vincere la nostra battaglia contro l'Annosa Dicotomia.
 Solo così, potremo smettere di inseguire una fama transeunte e trovare forza nella consapevolezza del fatto che ciascuno di noi può modificare l'evoluzione dell'Mondo con le sue azioni.  
 Secondo lo *Yoga Sutra Bhāṣya*<a class="nota" href="/man/note#yoga"></a>:
@@ -198,7 +198,8 @@ Pensa alla variabile `a` che abbiamo visto all'inizio:
 
 Il bit iniziale vale `0`, che è un valore nullo, se lo consideri individualmente, ma se invece lo valuti in rapporto ai due byte a cui appartiene, diventa il valore da cui <a href="/man/tipi-di-dato#modificatori">dipende il segno della variabile</a>.
 Se per un caso il valore di quel bit diventasse `1`, il valore della variabile `a` diventerebbe negativo, con delle ripercussioni imprevedibili sul programma.
-Molte, troppe persone sono come quel bit e pensano di valere zero perché considerano il proprio valore solo in termini soggettivi.
+Molte, troppe persone sono 
+<a href="https://canaro.net/novelle/binario.html" target="canaro">come quel bit</a> e pensano di valere zero perché considerano il proprio valore solo in termini soggettivi.
 Mesmerizzati dall'Annosa Dicotomia, spendono tutte le loro energie cercando di valere `1` e si distraggono così da quello che sarebbe stato il loro destino, con conseguenze molto più gravi di un'alterazione di segno in una variabile.
 
 ---
@@ -206,7 +207,7 @@ Mesmerizzati dall'Annosa Dicotomia, spendono tutte le loro energie cercando di v
 Il buon programmatore deve sempre controllare che il suo codice non contenga dei difetti e ciò che ti ho appena detto ne ha uno, piuttosto grave: può essere utilizzato come pretesto per creare un sistema di caste che limiti le possibilità di crescita di coloro che effettivamente sono destinati ad aumentare il loro valore.
 La domanda quindi è: come può, un bit o un essere senziente, decidere quale sia il suo valore esatto?
 Sicuramente non può dirglielo un'Autorità costituita né tanto meno una consuetudine.
-La famiglia può dargli dei suggerimenti, ma non può decidere per lui: i genitori hanno sicuramente più esperienza dei figli, ma non sono infallibili.
+La famiglia o la scuola possono dargli dei suggerimenti, ma non possono decidere per lui: genitori e maestri hanno sicuramente più esperienza, ma non sono infallibili.
 La risposta è in una frase di Jacopone da Todi:
 
 > Prima devi sape' perché stai ar monno.   
@@ -228,7 +229,7 @@ Prendi Lech Walesa, per esempio (è l'unico Nobel per la Pace che mi viene in me
 Oppure, meglio, pensa a te stesso: se avessi voluto, a diciott'anni avresti potuto lasciare l'Ordine, tornare a casa e diventare un *vice-qualcosa* nell'azienda della tua famiglia, invece sei rimasto qui a scrivere il tuo libro.
 Sarà stata la scelta giusta? 
 Cosa si aspettava, l'Universo, da te? che, come monaco, rendessi il Mondo un luogo migliore con la tua Bibbia per smanettoni o che, come manager, migliorassi le condizioni di vita dei dipendenti della tua azienda?
-Lo scopriremo solo quando torneremo a essere Uno; fino ad allora, potremo solo fare delle supposizioni, oppure chiederci: quale è stato, il motivo della tua scelta?
+Lo scopriremo solo quando torneremo a essere Uno; fino ad allora, potremo solo fare delle supposizioni.<!--, oppure chiederci: quale è stato, il motivo della tua scelta?-->
 Se sei rimasto qui per pigrizia o perché avevi paura del Mondo o della tua famiglia, hai fatto un errore.
 Se sei rimasto perché non desideri il lusso o il potere, potresti aver fatto la scelta giusta. Forse.
 Se sei rimasto, anche se sarebbe stato più facile e comodo tornare in seno alla tua famiglia, perché pensavi che restando qui saresti stato più utile, o sei terribilmente ingenuo o hai fatto la cosa giusta.  
