@@ -496,7 +496,7 @@ L'arte è il motore del mito.
 Un motore che si auto-alimenta, come il Sole, perché si nutre di eventi epici e li genera a sua volta ispirando gli eroi a imprese degne di memoria.  
 La parola *arte*, così come: *amore*, del resto, è una di quelle parole che le gente utilizza spesso ma di cui non viene mai data una definizione precisa, perché le si ritiene dei concetti auto-esplicativi che non occorre definire. 
 È sbagliato: come abbiamo visto, tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente.
-In <a href="https://canaro.net/amore-e-arte" target="canaro">un suo saggio giovanile su Amore e Arte</a>, il Maestro Canaro scrisse che:
+In <a href="https://canaro.net/saggi/amore-e-arte.html" target="canaro">un suo saggio giovanile su Amore e Arte</a>, il Maestro Canaro scrisse che:
  
  > L'Arte è la traccia del cammino dell'Uomo verso Dio 
  
