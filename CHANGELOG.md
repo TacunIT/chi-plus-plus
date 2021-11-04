@@ -1,3 +1,7 @@
+## 0.30.12 (November 04, 2021)
+  - Revisione del capitolo sulla Memoria
+  - Cambiato il tempo verbale nell'Index :-)
+
 ## 0.30.11 (November 01, 2021)
   - Aggiunto Sostiene Aristotele come post e corretti i link nel testo
   - Rinominata directory _var in _note. A
