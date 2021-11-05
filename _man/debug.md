@@ -393,7 +393,8 @@ Il modo in cui è stato scritto il codice lo renderà più o meno facile da veri
 Immagina che il problema sia la variabile `x`: se tutto il tuo codice ha la possibilità di modificarne il valore, potresti dover esaminare ogni singola funzione per verificare che non ne faccia un uso improprio. 
 Al contrario, se la variabile `x` può essere modificata solo alcuni punti del codice, la tua sarà una ricerca più mirata e veloce. 
 È per questo motivo, che <a href="/man/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l'elaborazione dei dati dalla gestione dell'interfaccia utente: perché in questo modo, a seconda del tipo di errore che dovesse presentarsi &mdash; di calcolo o di output &mdash; sapremo quale funzione andare a guardare.  
-Alcune caratteristiche del C++, come la <a href="/man/note.html#tipizzazione" class="xref">tipizzazione forte</a> e l'<a href="/man/note.html#incapsulamento" class="xref">incapsulamento</a> potranno esserti di aiuto in questo senso, ma non sempre saranno sufficienti a identificare il punto esatto in cui il tuo codice fa qualcosa di errato.
+Alcune caratteristiche del C++, come la tipizzazione forte e 
+l'incapsulamento potranno esserti di aiuto in questo senso, ma non sempre saranno sufficienti a identificare il punto esatto in cui il tuo codice fa qualcosa di errato.
 In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare.
 Un modo rapido per farlo è di mettere a commento tutte le chiamate nella funzione `main` ripristinandole poi a una a una, fino a che non individuerai quella in cui è contenuto l'errore:
 
@@ -615,7 +616,7 @@ In questa fase è ammissibile che tu faccia delle prove inserendo dei valori dir
 
 <hr id="dottrina">
 
-> {{ site.data.citazioni.croce.testo }}<a href="/man/note#croce" class="nota"></a>
+> {{ site.data.citazioni.croce.testo }}<a class="nota" href="/man/note#croce" id="croce"></a>
 
 O prima o poi, la tua vita andrà in errore, come il software.  
 Non importa quanto tu sia stato prudente o quale sia il tuo *Karma*: a un certo punto la terra sotto i tuoi piedi comincerà a franare e tu cadrai giù, lungo la montagna che stavi scalando, ritrovandoti al punto di partenza. 
@@ -627,13 +628,13 @@ Allo stesso modo, se non ti fidi di te stesso, è difficile capire se le scelte 
 La paura o la prudenza potrebbero spingerti a non fare la scelta giusta, quindi, per prima cosa, dovrai fare il *debug* della tua vita per capire se e in quale misura devi biasimarti per ciò che è avvenuto; fatto ciò, dovrai identificare i tuoi errori e trovare un modo per non ripeterli.  
 L'approccio più comune è di guardarsi indietro e cercare di capire quali siano state le proprie colpe, considerando queste degli eventi isolati in un'esistenza fatta prevalentemente di scelte corrette. 
 Dato però che ciascuno di noi tende &mdash; più o meno inconsciamente &mdash;, a cercare cause esogene alle sue sventure inventandosi complotti o trasferendo le proprie responsabilità a terzi, la cosa migliore, in questi casi, è di adottare l'atteggiamento opposto e partire dal presupposto che *tutto* ciò che è successo di male nella tua vita sia una tua colpa, per poi individuare i casi in cui ciò che è successo, in effetti, non è dipeso da te.
-Questo approccio *bottom-down*<a href="/man/note#bottom-down" class="nota"></a> ha due pregi: il primo  è che, analizzando gli eventi passati potresti scoprire che alcune colpe che ti attribuivi non erano reali; il secondo è che sarà più difficile mentire a te stesso.
+Questo approccio *bottom-down*<a class="nota" href="/man/note#bottom-down" id="bottom-down"></a> ha due pregi: il primo  è che, analizzando gli eventi passati potresti scoprire che alcune colpe che ti attribuivi non erano reali; il secondo è che sarà più difficile mentire a te stesso.
 Ciascuno di noi ha una parte di responsabilità in ciò che gli succede, anche negli eventi che non genera direttamente.
 Assumersi a priori la colpa di tutto il male che ci è successo rende più difficile mentirci e ci permette di identificare tutte le nostre colpe, per piccole che siano.  
 Attenzione, però: non devi pensare alle tue colpe come se fossi un inquisitore del tredicesimo Secolo, ma come se fossero dei *bug* nel programma della tua vita. 
 Qualcuna genererà degli errori, altre solo dei *warning* e il tuo dovere è quello di identificarne il più possibile, per poi cercare di correggerle per migliorare il funzionamento del sistema.
 
-> {{ site.data.citazioni.deen.testo }}<a href="/man/note#deen" class="nota"></a>
+> {{ site.data.citazioni.deen.testo }}<a class="nota" href="/man/note#deen" id="deen"></a>
 
 Contrariamente a quello che avviene con il software, non sempre è possibile correggere i *bug* della nostra esistenza.
 Si può modificare un aspetto deteriore del nostro carattere, ma non è detto che sia possibile rimediare ai danni che questo ha causato a noi o a terzi.
@@ -656,7 +657,7 @@ Il secondo fattore da considerare è la natura umana; ricorda:
 
 O, per dirla con De Santillana:
 
-> {{ site.data.citazioni.santillana.stoltezza }}<a href="/man/note#stoltezza" class="nota"></a>
+> {{ site.data.citazioni.mulino-amleto.stoltezza }}<a class="nota" href="/man/note#stoltezza" id="stoltezza"></a>
 
 Per derimere le questioni relative ai rapporti di coppia, invece, l'approccio più sicuro è quello antropologico.
 Come diceva il Maestro Canaro:
@@ -670,7 +671,7 @@ Secondo lui, qualsiasi comportamento anomalo nell'ambito di una coppia può esse
 3. ogni eccesso nasconde un eccesso di natura opposta e pari entità.
 
 Parafrasando quel senza Dio di Dawkins, noi siamo l'*hard-disk* dei nostri geni, la memoria di massa che garantisce loro una persistenza.
-Il nostro software può variare, ma il <a href="/man/note#firmware" class="xref">firmware</a> che definisce il nostro comportamento a basso livello è immutato da migliaia di anni e ci spinge a fare ciò per cui siamo stati creati, ovvero riprodurci.  
+Il nostro software può variare, ma il firmware<a class="nota" href="/man/note#firmware" id="firmware"></a> che definisce il nostro comportamento a basso livello è immutato da migliaia di anni e ci spinge a fare ciò per cui siamo stati creati, ovvero riprodurci.  
 Né le sovrastrutture culturali che abbiamo inventato, né gli idoli ai cui piedi ci prostriamo e nemmeno l'Annosa Dicotomia possono modificare la nostra ROM.
 Ignorare o, peggio, ribellarsi a questo stato di fatto è il primo passo verso la rovina o l'infelicità o entrambe le cose.  
 
