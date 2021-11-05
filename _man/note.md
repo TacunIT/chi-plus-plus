@@ -15,7 +15,7 @@ quote:
             P. <span>Scarabelli</span>, M. <span>Vinti</span>,
             <i>Bhagavad Gita: Con un commento del testo basato sul Gītā Bhāṣya di Rāmānuja</i>.
             Mimesis Edizioni, Milano, 2017
-            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+            <a href="/man/programmatore#azione"><i class="fas fa-reply"></i></a>
         </li>
     </ol>
 <!--
