@@ -1,3 +1,8 @@
+## 0.30.13 (November 05, 2021)
+  - Aggiornati i link Indietro delle note
+  - Modificato lo stile del link Indietro delle note
+  - Aggiunta immagine per la testata della pagina Facebook
+
 ## 0.30.12 (November 04, 2021)
   - Revisione del capitolo sulla Memoria
   - Cambiato il tempo verbale nell'Index :-)
