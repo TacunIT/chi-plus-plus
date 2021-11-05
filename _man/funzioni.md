@@ -199,7 +199,7 @@ src/cpp/funzioni-limiti-main.cpp:23:25: error: expected '(' for function-style c
 ```
 
 Questo avviene perché i `template` non sono vere funzioni, ma solo degli schemi che il compilatore utilizza per generare la versione corretta del codice.
-La dichiarazione delle funzioni template, quindi deve comprendere anche la loro definizione, per dare modo al compilatore di gestire appropriatamente la chiamata<a class="nota" href="/man/note#template"></a>.
+La dichiarazione delle funzioni template, quindi deve comprendere anche la loro definizione, per dare modo al compilatore di gestire appropriatamente la chiamata<a class="nota" href="/man/note#template" id="template"></a>.
 
 <hr id="inline">
 
@@ -273,7 +273,7 @@ Per la cronaca: nel secondo caso, il programma fallisce perché l'utente non ha 
 
 L'esistenza di una funzione `inline` ricorda un po' un passo del <i>Samyutta Nikaya</i>:
 
- > Non esiste distinzione fra un essere, la sua funzione e il tempo della sua apparizione. Gli esseri appaiono dalla non-esistenza, esistono per un istante e poi cessano di esistere. La loro esistenza, attività e azione sono un'unica cosa. Passato e futuro sono meri nomi.<a class="nota" href="/man/note#samyutta"></a>
+ > Non esiste distinzione fra un essere, la sua funzione e il tempo della sua apparizione. Gli esseri appaiono dalla non-esistenza, esistono per un istante e poi cessano di esistere. La loro esistenza, attività e azione sono un'unica cosa. Passato e futuro sono meri nomi.<a class="nota" href="/man/note#samyutta" id="samyutta"></a>
 
 In generale, comunque, il ciclo di vita di una funzione prevede tre fasi distinte: la *dichiarazione*, la *definizione* e il suo successivo utilizzo:
 
@@ -469,7 +469,7 @@ Se compili ed esegui questo codice, ottieni:
 ```
 
 Attenzione, però: una funzione che richiama sé stessa, se non è scritta bene, può generare una ricorsione in[de]finita, come due specchi posti l'uno di fronte all'altro.
-Lo spazio prospettico all'interno degli specchi è inesauribile, ma la memoria dei computer, per quanto estesa, ha i suoi limiti e un numero eccessivo di ricorsioni potrebbe generare uno *stack overflow*.<a href="/man/note#stack" class="nota"></a> 
+Lo spazio prospettico all'interno degli specchi è inesauribile, ma la memoria dei computer, per quanto estesa, ha i suoi limiti e un numero eccessivo di ricorsioni potrebbe generare uno *stack overflow*.<a href="/man/note#stack" class="nota" id="stack"></a> 
 Per questo motivo, bisogna ricorrere alla ricorsione solo nei casi in cui è indispensabile, preferendole, quando possibile, le [istruzioni iterative](https://chiplusplus.org/man/istruzioni-iterative) e applicando sempre dei meccanismi di controllo della profondità di ricorsione che prevengano un sovraccarico dello stack.  
 Un altro tipo di ricorsione di cui diffidare è quella con cui si cerca, alle volte, di dare credibilità a una convinzione priva di fondamenti reali utilizzando un'altra convinzione simile.   
 
@@ -477,7 +477,7 @@ Un altro tipo di ricorsione di cui diffidare è quella con cui si cerca, alle vo
 
 In un romanzo sulla vita dello spadaccino giapponese Myamoto Musashi c'è una frase che è la logica conseguenza del suggerimento di Jacopone da Todi:
 
->Non bisogna interferire nel funzionamento dell’Universo, ma prima è necessario capire quale sia, il funzionamento dell’Universo<a href="/man/note/#musashi" class="nota"></a>
+>Non bisogna interferire nel funzionamento dell’Universo, ma prima è necessario capire quale sia, il funzionamento dell’Universo<a href="/man/note/#musashi" class="nota" id="musashi"></a>
 
 Il problema dei romanzi è che ti dicono spesso cosa fare, ma non ti spiegano quasi mai come farlo, o perché.  
 Diffida dei maestri che sanno solo insegnare, perché tutto ciò che ti raccontano l'hanno imparato dai libri.
@@ -500,7 +500,7 @@ Nel *Dokkodo*, scritto una settimana prima della sua morte, fu ancora più speci
 
 > {{ site.data.citazioni.musashi.dokkodo }}
 
-Queste regole, che hanno permesso a Musashi di arrivare alla venerabile età di sessant'anni<a href="/man/note/#eta" class="nota"></a>, dopo essere sopravvissuto vittorioso ad altrettanti combattimenti con tutti i migliori spadaccini del suo tempo, possono aiutarti a capire quale sia il funzionamento dell'Universo e cosa fare per non perturbarlo.  
+Queste regole, che hanno permesso a Musashi di arrivare alla venerabile età di sessant'anni<a href="/man/note/#eta" class="nota" id="eta"></a>, dopo essere sopravvissuto vittorioso ad altrettanti combattimenti con tutti i migliori spadaccini del suo tempo, possono aiutarti a capire quale sia il funzionamento dell'Universo e cosa fare per non perturbarlo.  
 La pratica delle arti, siano esse intellettuali o marziali, e la conoscenza dei mestieri, unite all'attenzione per tutto ciò che ti circonda, aumenteranno il tuo bagaglio di esperienza e ti permetteranno di distinguere i pro e i contro di ogni situazione.
 Questo ti libererà dal demone dell'invidia, perché imparerai che tutte le  condizioni, anche quelle apparentemente idilliache, hanno dei lati negativi.
 Il passo successivo sarà affrancarsi dal desiderio e dall'attaccamento alle cose: così come la funzione `log` ha bisogno di sapere quali siano i parametri fissi e quali siano quelli variabili, tu dovrai imparare a distinguere i tuoi desiderii dalle tue necessità, per sfuggire all'influsso dell'Annosa Dicotomia.  
@@ -525,7 +525,7 @@ Musashi dice di prestare attenzione anche alle cose insignificanti, Nan-in e Ten
 È per questo motivo, che Musashi prescrive di conoscere la Via degli altri mestieri: perché c'è sempre qualcosa da imparare, da chi fa bene il suo lavoro. 
 Questo, per esempio, è il parallelo che lui fa fra lo stratega e il carpentiere:
 
-> {{ site.data.citazioni.musashi.cinque-anelli.carpentiere }}<a href="/man/note/#5anelli" class="nota"></a>
+> {{ site.data.citazioni.musashi.cinque-anelli.carpentiere }}<a href="/man/note/#5anelli" class="nota" id="5anelli"></a>
  
 Ciò che è vero per il carpentiere, cambiando il punto di vista, è vero anche per lo stratega e potrà esserlo anche per te, se ti troverai ai gestire un progetto o un gruppo di lavoro.
 Anche come programmatore, comunque, dovrai tenerti costantemente aggiornato sulle tecniche e sui linguaggi di programmazione e dovrai conoscere il modo in cui lavora chi si occupa delle basi-dati o dei sistemi.

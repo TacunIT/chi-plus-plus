@@ -208,7 +208,7 @@ La vita dell'Universo è ciclica: quando è preponderante l'Entropia, l'Universo
 Ciò che evita la stasi in uno dei due punti estremi del ciclo &mdash; l'Uno e la morte termica &mdash; è una terza forza, che il Maestro Canaro chiamava: 
 <a href="/man/mitopoietica#annosa-dicotomia" class="xref">*l'annosa dicotomia fra ciò che desideriamo è ciò di cui abbiamo bisogno*</a>.   
 Così come una scatola di mattoncini Lego contiene tutti gli edifici che hai costruito e che costruirai in futuro, nell'Uno primigenio è concentrata tutta l'Energia dell'Universo e quindi ogni essere animato o inanimato che sia mai esistito o che mai esisterà.
-La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo, che non può essere misurato perché non esistono eventi in base a cui farlo.<a class="nota" href="/man/note#non-tempo"></a> 
+La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo, che non può essere misurato perché non esistono eventi in base a cui farlo.<a id="non-tempo" class="nota" href="/man/note#non-tempo"></a> 
 Non ci sono né morte, né sofferenza, né malattia, né separazione; l'Uno è, di fatto, ciò che la maggior parte degli esseri senzienti descrive e auspica come un Universo perfetto.  
 L'Energia, inizialmente, è soddisfatta, ma a poco a poco l'appagamento per la raggiunta Unità scema e cresce invece il desiderio di qualcosa di diverso da quella cristallina perfezione.
 Così come di un vecchio amore si ricorda solo ciò che ci fa piacere ricordare, obliando ciò che non andava, l'Energia ripensa a quando l'Universo non era buio e vuoto, ma risplendeva della luce di innumerevoli stelle e si chiede se, in fondo, non sia quella, l'esistenza a cui ambisce, se non sia quello, in effetti, il Paradiso.  
@@ -216,7 +216,7 @@ Ha una chiara memoria degli errori e dei dolori delle passate esistenze (è stat
 L'Energia disintegra l'enorme buco nero in cui si era rannicchiata e si espande di nuovo nell'Universo, dando massa agli spazioni e generando la materia.
 L'Era della Gravità finisce e comincia una nuova Era dell'Entropia; qualcosa di molto simile a quello che trovi descritto nella *Bhagavad-Gita*:
 
-> {{ site.data.citazioni.gita.cicli }}<a href="/man/note/#cicli" class="nota"></a>
+> {{ site.data.citazioni.gita.cicli }}<a class="nota" href="/man/note/#cicli" id="cicli"></a>
 
 Anche la Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista (o viceversa): il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono ciò che ne causa la disgregazione, generando un Universo imperfetto e doloroso, aiutati dal *διάβολος*, ovvero da colui che *separa* o *scaglia attraverso*, altrimenti noto come: *Luci-fero*.  
 In ottica spazionista, la domanda: 
@@ -239,7 +239,7 @@ La seconda ipotesi è che ogni *Big Bang* avviene in circostanze e con modalità
 Il Maestro Canaro disse che la prima ipotesi era possibile, ma poco probabile e che quindi avremmo dato per scontato che fosse la seconda, quella corretta: «Tanto, non cambia niente: se il tempo che abbiamo a disposizione per far esplodere e implodere l’Universo è infinito, per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali è  impossibile che la cosa o prima o poi non avvenga.
 Come dice quel senza-Dio di Dawkins: 
 
-> {{ site.data.citazioni.dawkins.tempo }}
+> {{ site.data.citazioni.dawkins.tempo }} <a class="nota" href="/man/note#dawkins-tempo" id="dawkins-tempo"></a>
 
 In base allo stesso principio, dando per scontato che o prima o poi questo Universo tornerà a manifestarsi, è del tutto lecito pensare &mdash; non per fede, ma in base a un banale calcolo probabilistico &mdash; che anche ciò che c’è in esso possa o prima o poi tornare a essere. 
 Noi compresi».
