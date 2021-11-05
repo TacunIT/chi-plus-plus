@@ -70,7 +70,7 @@ Gli operatori *di relazione* permettono di verificare il rapporto fra due variab
 Questi operatori tornano un valore booleano, vero o falso a seconda che la condizione sia verificata o no.  
 L'operatore `==` torna `true` se gli operandi sono uguali, come nel verso: 
 
-> {{ site.data.citazioni.attar }} <a href="/man/note#attar" class="nota"></a>
+> {{ site.data.citazioni.attar }} <a class="nota" href="/man/note#attar" id="attar"></a>
 
  
 L'operatore `!=` torna `true` se gli operandi non sono uguali; gli operatori `>` e `<` tornano `true`, rispettivamente, se l'operatore a sinistra è maggiore o minore dell'operando a destra; gli operatori `>=` e `<=` tornano `true` se l'operando a sinistra è maggiore o uguale oppure minore o uguale a quello a destra.  
@@ -277,7 +277,7 @@ La definizione dei concetti di *vero* e di *falso* è sempre frutto di un arbitr
 Per i filosofi è *vero* tutto ciò che può essere descritto con le parole; per gli scienziati, tutto ciò che può essere descritto dalla matematica; per gli informatici è *vero* tutto quello che può essere descritto dal codice. 
 <!-- v. Kant citato da Hertha von Dechend nella prefazione tedesca a Il Mulino di Amleto -->
 Possiamo definire *falso* come il contrario di *vero*, ma non possiamo dedurre o inferire il concetto di *vero* perché, quale che sia la definizione prescelta, prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo ancora cosa sia, effettivamente, *vero*.    
-Bertrand Russell disse che la condizione di *vero* o di *falso* è uno stato dell'organismo, determinato da condizioni esterne all'organismo;<a href="/man/note#russell" class="nota"></a> è un'affermazione vera.. o, meglio, *valida* anche per i computer: i valori booleani *vero* e *falso* sono due stati possibili per un'istruzione e spesso dipendono da condizioni esterne all'istruzione stessa, come la presenza di un file o un'azione dell'utente.
+Bertrand Russell disse che la condizione di *vero* o di *falso* è uno stato dell'organismo, determinato da condizioni esterne all'organismo;<a class="nota" href="/man/note#russell" id="russell"></a> è un'affermazione vera.. o, meglio, *valida* anche per i computer: i valori booleani *vero* e *falso* sono due stati possibili per un'istruzione e spesso dipendono da condizioni esterne all'istruzione stessa, come la presenza di un file o un'azione dell'utente.
 La cosa interessante è che, anche per i computer, i valori che vengono interpretati come *vero* e *falso* sono del tutto arbitrarii e spesso specifici per un dato sistema. 
 Prendi per esempio i programmi che gestiscono le basi di dati: per *Access*, il valore booleano *false* è `-1`; per le prime versioni di *MySQL* è `f`; per Postgres o Oracle, è `0`.  
 Il computer non ha *in sé* il concetto di *vero* o di *falso*, ma solo l'associazione dei valori booleani *true* e *false* a una determinata sequenza di bit. 
@@ -309,7 +309,7 @@ La *root CA* garantisce per la CA intermedia che a sua volta garantisce per la t
 Sfortunatamente, però, né i legislatori né i loro certificatori ideologici sono sottoposti alle regole e ai controlli che deve rispettare una *Certification Authority* e spesso è accaduto che chi ha definito delle regole sia stato anche il primo a non tenerne conto.  
 Mosè, con il sesto Comandamento ancora fresco di stampa, chiese ai figli di Levi: 
 
-> Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a href="/man/note#levi" class="nota"></a> 
+> Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a class="nota" href="/man/note#levi" id="levi"></a> 
 
 Gli Americani, che scrissero:
 
@@ -321,13 +321,14 @@ I Francesi, il cui motto era:
 > Liberté, Égalité, Fraternité
 
 hanno applicato questi principii a colpi di ghigliottina.
-L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a href="/man/note#armi" class="nota"></a> e che violano costantemente quelle stesse regole da loro promosse.  
-Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi, dalle convinzioni<a href="/man/note#self-evident" class="nota"></a> di un gruppo di credenti<a href="/man/note#credenti" class="nota"></a>, non vuol dire che siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva; possiamo solo accettarli per fede, così come i dogmi religiosi.
+L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a class="nota" href="/man/note#armi" id="armi"></a> e che violano costantemente quelle stesse regole da loro promosse.  
+Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi, dalle convinzioni<a class="nota" href="/man/note#self-evident" id="self-evident"></a> 
+di un gruppo di credenti<a class="nota" href="/man/note#credenti" id="credenti"></a>, non vuol dire che siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva; possiamo solo accettarli per fede, così come i dogmi religiosi.
 *Scegliamo* di credere in uno schema di valori, così come potremmo scegliere di credere negli UFO: non abbiamo convinzioni innate, se non l'egoismo.  
 Le persone per bene hanno una cosa in comune con i malandrini: pensano che il resto del Mondo sia come loro, ma si sbagliano.
 Noi troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.  
-Per gli autori della *Dichiarazione di Indipendenza* era *self-evident* che tutti gli uomini fossero stati creati uguali, ma sei Stati del Sud, nelle loro Costituzioni, precisarono che si stava parlando di uomini liberi, non degli schiavi<a href="/man/note#freemen" class="nota"></a>.  
-I nazisti utilizzarono le macchine Hollerith per censire e sterminare gli ebrei; furono anche aggiunte delle colonne alle schede perforate per poter gestire i dati relativi alla religione<a href="/man/note#black" class="nota"></a>.
+Per gli autori della *Dichiarazione di Indipendenza* era *self-evident* che tutti gli uomini fossero stati creati uguali, ma sei Stati del Sud, nelle loro Costituzioni, precisarono che si stava parlando di uomini liberi, non degli schiavi<a class="nota" href="/man/note#freemen" id="freemen"></a>.  
+I nazisti utilizzarono le macchine Hollerith per censire e sterminare gli ebrei; furono anche aggiunte delle colonne alle schede perforate per poter gestire i dati relativi alla religione<a class="nota" href="/man/note#black" id="black"></a>.
 Noi oggi critichiamo sia loro sia chi li aiutò a farlo, ma forse i nostri nipoti criticheranno noi per la tolleranza che abbiamo mostrato nei confronti di chi ci vende il petrolio per le nostre automobili; la stessa tolleranza che loro mostreranno a chi li rifornirà di materie prime per le batterie, o di acqua.
 
 <hr id="comandamenti">

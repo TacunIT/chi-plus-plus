@@ -605,7 +605,7 @@ In una nota della mappa mentale su cui basò lo sviluppo iniziale della dottrina
 Fra il C'hi++ e le religioni canoniche c'è la stessa differenza che passa fra una mappa topografica e un'immagine da satellite.  
 Quel senza Dio di Dawkins, ha detto che: 
 
-> {{ site.data.citazioni.dawkins.analogia }}
+> {{ site.data.citazioni.dawkins.analogia }}<a  class=\"nota\" href=\"/man/note#dawkins-analogia\" id="dawkins-analogia"></a>
 
 Una frase curiosa, da parte di un esponente di una setta che cerca di descrivere tutto ciò che esiste con analogie matematiche e nega l'esistenza di ciò che non riesce a convertire..  
 Entusiasmi a parte, le mappe e le immagini da satellite hanno diverse analogie con le discipline metafisiche.
