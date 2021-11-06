@@ -6,7 +6,7 @@ title:      La memoria
 og_image:   "/assets/img/og-img/memoria.jpg"
 permalink:  /man/memoria
 quote:      "cogito ∴ sum()"
-excerpt:    "Un altro modo per capire se si è nel giusto, è in base all’amore. L’amore è la droga perfetta: dà assuefazione come il crack e ti fa credere di saper volare, come l’LDS; è il miele con cui la Vita attira le formiche dei nostri pensieri, facendole andare dove vuole lei."
+excerpt:    "La gestione della memoria, il rapporto degli esseri umani con l'operatore delete, le Cinque Fasi di elaborazione del lutto della Società moderna e un precetto sull'amore."
 ---
 
 La gestione della memoria è la caratteristica principale del C++.
