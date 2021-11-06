@@ -7,7 +7,8 @@ highlighter: none
 
 og_desc:    "Chi++ - Proposta per una metafisica open-source"
 og_img:     "/assets/img/chi-plus-plus.png"
-og_img_h:   "260"
+og_img_w:   "1200"
+og_img_h:   "630"
 keyword:    "C'hi, C++, c plus plus, religione, open-source"    
 exclude: [
     'bin'

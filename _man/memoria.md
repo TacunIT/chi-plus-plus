@@ -3,8 +3,10 @@ status:     pubblicato
 layout:     manuale
 class:      capitolo
 title:      La memoria
+og_image:   "/assets/img/og-img/memoria.jpg"
 permalink:  /man/memoria
 quote:      "cogito ∴ sum()"
+excerpt:    ""
 ---
 
 La gestione della memoria è la caratteristica principale del C++.
