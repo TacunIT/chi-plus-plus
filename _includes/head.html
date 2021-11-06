@@ -13,7 +13,7 @@
     <title>{{ page.title }} | {% if page.class == 'index' %} {{ site.claim }} {% else  %} {{ site.title }}{% endif  %}
 </title>
     <meta charset="utf-8" />
-    <link      rel="canonical"          href="{{ site.url | absolute_url }}" />
+    <link      rel="canonical"          href="{{ page.url | absolute_url }}" />
     <link      rel=icon                 href="{{ "/assets/img/favicon.ico" | absolute_url }}" type=image/x-icon />
     <link      rel="stylesheet"         href="{{ "/assets/fa/css/all.css"  | absolute_url }}" /> 
     <link      rel="stylesheet"         href="{{ "/assets/css/screen.css"  | absolute_url }}" />        
@@ -21,11 +21,13 @@
     <meta     name="thumbnail"       content="{{ site.og_img | absolute_url }}" />
     <meta     name="keyword"         content="{{ site.keyword }}" />
     <meta     name="description"     content="{{ site.og_desc }}" />
+    <meta property="og:url"          content="{{ page.url | absolute_url }}" />    
     <meta property="og:type"         content="website" />    
     <meta property="og:title"        content="{{ page.title }}" />
     <meta property="og:description"  content="{{ og_desc }}" />
     <meta property="og:image:width"  content="{{ site.og_img_w }}" />
     <meta property="og:image:height" content="{{ site.og_img_h }}" />
     <meta property="og:image"        content="{{ og_image | absolute_url }}" />
+    <meta property="fb:app_id"       content="" />
     {%- include google-analytics.html -%}
 </head>
