@@ -74,6 +74,10 @@
 .right {
     float: right !important;
 }
+.centrato {
+    text-align: center !important;
+}
+
 
 /**
  *
