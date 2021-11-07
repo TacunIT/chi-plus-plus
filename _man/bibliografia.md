@@ -64,7 +64,7 @@ A Coomaraswamy devo anche la scoperta del *Mantiq al-Tayr*, di Attar.
 Due libri senza i quali *C'hi++* non sarebbe mai esistito o sarebbe stato molto diverso, sono: *Il Libro dei Cinque Anelli* di Musashi, che mi fu regalato da un'amica alla fine degli anni '90 ed *Eureka*, di Poe, che comprai dopo averlo trovato citato da Calvino nelle *Lezioni americane*, insieme a <a href="https://www.adelphi.it/libro/" target="adelphi">Breve storia dell'Infinito</a>.
 
 Un libro senza il quale *io stesso* sarei stato diverso è *Il Gene Egoista*.
-Dawkins sarà anche un *senza-dio*, come lo definisce il Maestro nel libro, ma è un uomo estremamente intelligente che ha cambiato il mio modo di vedere il Mondo o, almeno, parte di esso.
-La cosa che non capisco, di lui, è come mai, essendo così intelligente, non capisca che è un terribile errore di generalizzazione ritenere tutti i fedeli dei fanatici e dei bigotti.
+Dawkins sarà anche un *senza-dio*, come lo definisce il Maestro nel libro, ma è un uomo estremamente intelligente, che ha cambiato il mio modo di vedere il Mondo o, almeno, parte di esso.
+La cosa che mi stupisce, di lui, è come mai, essendo così intelligente, non capisca che è un terribile errore di generalizzazione ritenere tutti i fedeli dei fanatici e dei bigotti.
 
 La mia speranza è che *C'hi++* serva a chiarire questo malinteso.
