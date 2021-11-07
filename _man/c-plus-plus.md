@@ -4,8 +4,8 @@ layout:     manuale
 class:      capitolo
 title:      Il C++
 permalink:  /man/c-plus-plus
-quote:      "Non chiederti cosa può fare per te il sistema operativo;
-chiediti invece cosa puoi fare tu, per il sistema operativo"
+quote:      "Non chiederti cosa può fare per te il sistema operativo; chiediti invece cosa puoi fare tu, per il sistema operativo"
+
 ---
 
 In uno dei suoi libri, Bjarne Stroustrup definì il C++: 
