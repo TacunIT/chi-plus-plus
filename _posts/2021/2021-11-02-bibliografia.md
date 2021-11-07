@@ -1,6 +1,6 @@
 ---
 layout:     log
-title:      "Bibliografia non bibilografica"
+title:      "Bibliografia (non bibilografica)"
 tags:       [libri, Adelphi, Calasso]
 permalink:  /bibliografia.html
 og_img:     ""
@@ -12,9 +12,9 @@ Cinque anni fa, quando mandai a un mio amico i primi capitoli, lui mi rispose:
 
 > secondo me dovresti scrivere a Roberto Calasso di Adelphi; potrebbe diventare un caso letterario oppure potrebbe far lanciare una Fatwa nei tuoi confronti, o tutte e due le ipotesi insieme :D
 
-Era una buona idea, indipendentemente dalla possibilità di una pubblicazione: questo libro ha un grosso debito di riconoscenza, nei confronti della Adelphi e la dottrina del *C'hi++* prescrive che si ringrazi sempre chi ci fa del bene.
+Era una buona idea, indipendentemente dalla possibilità di una pubblicazione: *C'hi++* ha un grosso debito di riconoscenza, nei confronti della Adelphi e la sua dottrina prescrive che si ringrazi sempre chi ci fa del bene.
 
-Sfortunatamente, però, quando all'inizio di Ottobre io sono riuscito a terminare la mia storia, Calasso aveva già terminato la sua e così ora io mi trovo qui, in questa piovosa notte fra il 1 e il 2 Novembre, seduto sulla cuccetta della mia barca, alla fine del primo giro di bozze, e non posso far altro che mandargli un ringraziamento postumo.
+Sfortunatamente, però, quando all'inizio di Ottobre io sono riuscito a terminare la mia storia, Calasso aveva già terminato la sua e così ora io mi trovo qui, in questa piovosa notte fra il 1 e il 2 Novembre, alla fine del primo giro di bozze, e non posso far altro che mandargli un ringraziamento postumo.  
 Così com'è successo con lo Scirocco dei giorni scorsi, anche se Calasso non c'è più, le onde che ha generato viaggeranno ancora a lungo.
 
 ---
