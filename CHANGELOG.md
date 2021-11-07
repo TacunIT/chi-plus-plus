@@ -1,3 +1,9 @@
+## 0.30.15 (November 07, 2021)
+  - Spostata bibliografia nel manuale. 
+  - Aggiunto ringraziamento a Luciano
+  - Revisione del testo della bibliografia
+  - Completata prima stesura della bibilografia
+
 ## 0.30.14 (November 07, 2021)
   - Aggiunta og-image per Incipit
   - Corretto errore nell'HEAD
