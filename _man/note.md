@@ -174,7 +174,7 @@ quote:
             <a href="/man/memoria#aerobica"><i class="fas fa-reply"></i></a>
         </li>
         <li id="dollari">
-            L'equivalente di 160$ nel 2020.
+            L'equivalente di 160 Dollari, nel 2020.
             <a href="/man/memoria#dollari"><i class="fas fa-reply"></i></a>
         </li>
         <li id="isolamento">
