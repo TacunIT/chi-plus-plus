@@ -1,11 +1,13 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      Incipit
 h1:         In C pit
+layout:     manuale
 permalink:  /man/incipit
 quote:      "*.* è il migliore"
+status:     pubblicato
+title:      Incipit
+og_img:     "/assets/img/og-img/incipit.png"
+og_desc:    "Quello che stai facendo è inutile. Voglio che tu lo scriva all'inizio del tuo libro, così la gente non perderà tempo a leggerlo. Tutto ciò che si fa con uno scòpo è inutile.."
 ---
 
 Quello che stai facendo è inutile.  
