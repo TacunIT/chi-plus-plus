@@ -1,9 +1,10 @@
 ---
-layout: pagina
-title:  C'hi++
-h2:     Proposta per una metafisica open-source
-class:  index
-footer: true
+layout:     pagina
+title:      C'hi++
+h2:         Proposta per una metafisica open-source
+class:      index
+footer:     true
+excerpt:    "Il C'hi++ è un tentativo di spiegare il significato dell'Esistenza nei termini dell'informatica."
 ---
 
 <section class="citazione pagina">

@@ -4,7 +4,7 @@ layout:     manuale
 class:      indice
 title:      Indice
 h1:         Indice
-permalink:  /man/indice
+permalink:  "/man/indice"
 ---
 
 # {{ page.h1 }}

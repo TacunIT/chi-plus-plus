@@ -3,6 +3,7 @@ layout:     pagina
 class:      elenco
 title:      Diario di bordo
 permalink:  /log/
+excerpt:    ""
 ---
 
 <section class="elenco post">
