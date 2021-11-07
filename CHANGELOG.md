@@ -1,3 +1,10 @@
+## 0.30.14 (November 07, 2021)
+  - Aggiunta og-image per Incipit
+  - Corretto errore nell'HEAD
+  - Aggiunto excerpt a Memoria
+  - Aggiunta URL pagina nell'HEAD
+  - Rivista gestione HEAD
+
 ## 0.30.13 (November 05, 2021)
   - Aggiornati i link Indietro delle note
   - Modificato lo stile del link Indietro delle note
