@@ -4,6 +4,8 @@ layout:     manuale
 class:      capitolo
 title:      Mitopoietica del C'hi++
 permalink:  /man/mitopoietica
+og_img:     "/assets/img/og-img/mitopoietica.jpg"
+og_desc:    "Su di me ci sono due teorie: qualcuno pensa che io sia impazzito cercando di fare il debug dell'Universo, altri pensano invece che io abbia deciso di fare il debug dell'Universo perché sono pazzo."
 quote:      "Il settimo giorno, Dio fece il backup"
 ---
 

@@ -7,7 +7,7 @@
 <img src="./assets/img/chi-plus-plus.png" width="300px">
 </p>
 
-Il nome *C'hi++* è un gioco di parole fra il termine giapponese *C'hi* (氣, ovvero: soffio vitale)
+Il nome *C'hi++* è un gioco di parole fra il termine giapponese *C'hi* (氣, ovvero: *soffio vitale*)
 e il linguaggio di programmazione chiamato: *C++*. Non è un accostamento casuale: la mia intenzione
 è quella di gestire l'evoluzione della mia teoria così come si gestisce il software; in particolare, il software *open-source*.
 
