@@ -16,7 +16,7 @@ Cinque anni fa, quando feci leggere a un mio amico i primi capitoli, lui mi diss
 
 Era una buona idea, indipendentemente dalla possibilità di una pubblicazione: *C'hi++* ha un grosso debito di riconoscenza, nei confronti della Adelphi e la sua dottrina prescrive che si ringrazi sempre chi ci fa del bene.
 
-Sfortunatamente, però, quando all'inizio di Ottobre io sono riuscito a terminare la mia storia, Calasso aveva già terminato la sua e così ora io mi trovo qui, seduto nella cuccetta della mia barca in questa piovosa notte fra il 1 e il 2 Novembre, alla fine del primo giro di bozze e non posso far altro che mandargli un ringraziamento postumo.  
+Sfortunatamente, però, quando all'inizio di Ottobre io sono riuscito a terminare la mia storia, Calasso aveva già terminato la sua e così ora, alla fine del primo giro di bozze, io mi trovo qui, seduto nella cuccetta della barca che mi fa da casa in questa piovosa notte fra il 1 e il 2 Novembre e non posso far altro che mandargli un ringraziamento postumo.  
 Così com'è successo con lo Scirocco dei giorni scorsi, anche se Calasso non c'è più, le onde che ha generato viaggeranno ancora a lungo.
 
 ---
