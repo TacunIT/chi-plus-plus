@@ -6,7 +6,7 @@ title:      "Bi(bli)ografia"
 permalink:  /man/bibliografia
 og_img:     "/assets/img/og-img/bibliografia.jpg"
 og_desc:    "I libri senza i quali C'hi++ non sarebbe stato scritto. Decidete voi se sia un bene o un male."
-quote:      "Se ho visto più lontano, è perché stavo sulle palle di giganti"
+quote:      ""
 ---
 
 Questo libro è (anche) colpa di Roberto Calasso e di Adelphi.  
