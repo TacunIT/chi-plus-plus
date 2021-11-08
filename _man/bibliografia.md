@@ -5,7 +5,7 @@ class:      capitolo
 title:      "Bi(bli)ografia"
 permalink:  /man/bibliografia
 og_img:     "/assets/img/og-img/bibliografia.jpg"
-og_desc:    "I libri senza i quali C'hi++ non sarebbe stato scritto. Decidete voi se sia un bene o un male."
+og_desc:    "I libri senza i quali C'hi++ non sarebbe stato scritto. (Decidete voi se sarebbe stato un bene o un male.)"
 quote:      ""
 ---
 
