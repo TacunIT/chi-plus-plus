@@ -1,3 +1,10 @@
+## 0.30.16 (November 10, 2021)
+  - Riorganizzata la pagina dei post
+  - Corretto tempo verbale in Bibliografia
+  - Rimossa citazione dalla bibliografia
+  - Aggiute og-img a Mitopoietica e Bibliografia
+  - Corretto testo della Bibliografia
+
 ## 0.30.15 (November 07, 2021)
   - Spostata bibliografia nel manuale. 
   - Aggiunto ringraziamento a Luciano
