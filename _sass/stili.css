@@ -792,6 +792,7 @@ BODY.note SECTION.note OL {
  */
 SECTION.elenco.post DIV.log {
     padding-bottom: 2rem;
+    display: block;
 } 
 SECTION.elenco.post DIV.log P {
     margin-top: unset;
@@ -800,6 +801,7 @@ SECTION.elenco.post DIV.log P.data {
     color: $dataColor;
     font-size: 0.9rem;
 } 
+
 BODY.pagina.log MAIN P.category {
     text-align: center;
     font-variant-caps: petite-caps;
