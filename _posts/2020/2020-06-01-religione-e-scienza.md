@@ -6,8 +6,7 @@ og_img:   "/assets/img/og-img/religione-scienza.jpg"
 og_desc:  "I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale, ma non è che loro siano molto diversi.."
 ---
 
-I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale.
-Rifiutano le accettazioni per fede e contestano la non comprovabilità scientifica dei precetti religiosi.
+I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale; rifiutano le accettazioni per fede e contestano la non comprovabilità scientifica dei precetti religiosi.
 Fanno bene: dobbiamo sempre mettere in discussione i princip&icirc; sui quali basiamo le nostre convinzioni; purtroppo, però, le leggi che regolano la vita dei non credenti sono dogmatiche e incerte come quelle dei fedeli.
 
 ---
@@ -23,31 +22,31 @@ La maggior parte di queste similitudini sono applicabili anche alla Filosofia:
 
 - cercano risposte agli interrogativi sulla nostra esistenza;
 - non possiamo dare per certe alcune loro affermazioni;
-- postulano l'esistenza di dimensioni aggiuntive rispetto a quelle che conosciamo (Aldilà, 11 dimensioni delle superstringhe);
+- postulano l'esistenza di dimensioni aggiuntive rispetto a quelle che conosciamo (*Aldilà, 11 dimensioni delle superstringhe*);
 - hanno fatto del bene all'Umanità, ma anche del male;
-- sono amministrate da una casta (clero, accademici);
-- la casta ha un suo linguaggio iniziatico, che richiede anni di studio per essere compreso (Latino, matematica);
-- i ministri del Culto vivono in strutture a loro dedicate e organizzate in forma gerarchica (monasteri, Università);
+- sono amministrate da una casta (*clero, accademici*);
+- la casta ha un suo linguaggio iniziatico, che richiede anni di studio per essere compreso (*Latino, matematica*);
+- i ministri del Culto vivono in strutture a loro dedicate e organizzate in forma gerarchica (*monasteri, Università*);
 - dipendono per lo più da finanziamenti esterni;
 - fanno proselitismo fra i giovani;
 - i ministri del Culto talvolta si accoppiano con i loro discenti;
 - i ministri del Culto talvolta si accoppiano fra di loro;
-- i fedeli, alle volte, sono andati a braccetto con i potenti, altre volte sono stati martirizzati per le loro idee;
+- i fedeli, alle volte, sono andati a braccetto con i potenti; altre volte sono stati martirizzati per le loro idee;
 - si assume che chi le pratica ne faccia il centro della propria esistenza.
 
 Malgrado queste evidenti affinità, ciascun pittore è convinto che che il suo quadro sia migliore degli altri.
 
 Un cristiano e un non credente sono certamente d'accordo sul fatto che non si debbano uccidere gli altri esseri umani.
 Il cristiano pensa che sia sbagliato perché il sesto Comandamento vieta di uccidere; il non credente perché l'Articolo 3 della Dichiarazione dei Diritti Umani stabilisce che ogni individuo ha diritto alla vita.
-Il cristiano pensa di essere nel giusto perché esegue il volere di Dio, il non credente ritiene le sue motivazioni più solide perché non derivano da una leggenda.
+Il cristiano pensa di essere nel giusto perché esegue il volere di Dio; il non credente ritiene le sue motivazioni più solide perché non derivano da una leggenda.
 In realtà, però, le leggi laiche sono dogmatiche e opinabili come quelle religiose.
 
-I trenta Articoli della Dichiarazione dei Diritti dell'Uomo dell'ONU, per l'appunto, stabiliscono che:
+I trenta Articoli della *Dichiarazione dei Diritti dell'Uomo* dell'ONU, per l'appunto, stabiliscono che:
 
 > Ogni individuo ha diritto alla vita, alla libertà ed alla sicurezza della propria persona; nessun individuo potrà essere tenuto in stato di schiavitù o di servitù; nessun individuo potrà essere sottoposto a tortura o a trattamento o a punizione crudeli, inumani o degradanti.
 
-La Dichiarazione, però, non spiega su quali prove scientifiche si basino queste affermazioni. Sicuramente non su dati sperimentali.
-In altre parole, è un dogma.  
+La *Dichiarazione*, però, non spiega su quali prove scientifiche si basino queste affermazioni. Sicuramente non su dati sperimentali.
+In altre parole: è un dogma.  
 È priva di riscontri oggettivi anche la *Dichiarazione dei Diritti dell'Uomo e del Cittadino* del 1789.
 Stabilisce infatti che:
 
@@ -63,7 +62,7 @@ Andiamo ancora più indietro nel tempo, sperando che la *Dichiarazione di Indipe
 > Noi consideriamo le seguenti verità evidenti di per sé: che tutti gli uomini sono creati eguali; che essi sono stati dotati di alcuni diritti inalienabili dal loro Creatore; che tra questi diritti ci sono la vita, la libertà e il perseguimento della felicità.
 
 Definire un principio: *evidente di per sé* equivale a dichiarare un dogma: una convinzione che appartiene a chi scrive, ma non si applica necessariamente a tutti gli esseri viventi.
-L'unica versione scientificamente ammissibile di questa frase è:
+L'unica versione scientificamente ammissibile di questa frase è quella proposta da Yuval Harari:
 
 > Noi consideriamo le seguenti verità evidenti di per sé, che tutti gli uomini si sono evoluti in modo differente, che essi sono nati con certe caratteristiche mutevoli, e che tra queste ci sono la vita e il perseguimento del piacere.<a href="#harari" class="nota" name="fn-harari">1</a>
 
@@ -87,7 +86,7 @@ Il limite della Religione è l'impossibilità di mettersi in discussione o, più
 Il limite della Scienza, di contro, è l'impossibilità di accettare come vera qualsiasi affermazione non comprovabile sperimentalmente; un problema non da poco, se devi rappresentare un oggetto tidimensionale su una tela bidimensionale.  
 In compenso, però, credo che un'unione di Scienza e Spiritualità sia ciò di cui abbiamo bisogno per migliorare la nostra condizione attuale e il nostro futuro sul medio, sul lungo e sul lunghissimo periodo.
 
-*C'hi++* è precisamente questo: un'unione di mistica, informatica e prodotti della fermentazione dei cereali.  
+*C'hi++* è precisamente questo: un'unione di mistica, informatica e liquidi prodotti della fermentazione dei cereali.  
 I computer sono un ottimo paradigma dell'esistenza, perché generano una realtà illusoria utilizzando delle sequenze di valori binar&icirc; sulla base delle istruzioni ricevute dai programmatori.
 Il testo che state leggendo è una sequenza di 1 e di 0 che il processore trasforma in lettere in base alla codifica ASCII e poi invia allo schermo che, a sua volta, le trasforma in sequenze di pixel di colori diversi.
 La finestra del browser in cui appare il testo è anch'essa una sequenza di bit che il sistema trasforma in una sequenza di pixel. Quando la spostate, in realtà state solo variando l'insieme dei pixel attivi all'interno dello schermo.
@@ -101,7 +100,7 @@ Quando *Deep Blue*, il computer scacchistico dell'IBM, ha battuto Garry Kasparov
 Provo a chiarire meglio questo concetto con un altro brano della mia disputa epistolare.
 Vi prego di scusare il tono cameratesco, ma è funzionale all'esempio.
 
-<blockquote>
+<blockquote style="text-align:left;">
 Come la spieghi, a un computer, la frase: “23, bucio de culo”? <br />
 Il computer conosce il numero 23 (come: <code>00010111</code>) e potrebbe gestire le lettere della frase come i corrispondenti numeri della codifica ASCII:
 
@@ -114,8 +113,8 @@ Il computer conosce il numero 23 (come: <code>00010111</code>) e potrebbe gestir
 </code>
 </pre>
 
-ma non ha modo di capire l'associazione fra il numero e la frase.
-Non ha mai giocato a Tombola, non conosce la Smorfia, forse sa cosa sia un culo, ma molto probabilmente non conosce il termine gergale per “buco”.
+ma non ha modo di capire l'associazione fra il numero e la frase.<br />  
+Non ha mai giocato a Tombola e non conosce la Smorfia; forse sa cosa sia un culo, ma molto probabilmente non conosce il termine gergale per “buco”.
 Tutto quello che potrebbe imparare è l'associazione pavloviana:
 
 <pre>
@@ -128,16 +127,8 @@ che per lui, però, non avrebbe senso, perché, per il suo modo di vedere le cos
 Ecco: secondo me, gli scienziati sono dei computer che pensano di poter capire cosa significhi: <code>23, bucio di culo</code>.
 Per prima cosa, hanno riconosciuto il numero 23, che era la parte più facile.
 Poi hanno capito che la virgola separa due parti della frase e che l'una è legata all'altra.
-Oggi, dopo anni di studio, sono riusciti anche ad associare i valori dopo la stringa ai corrispondenti caratteri ASCII, ma tutte queste scoperte hanno solo aumentato il loro livello di incomprensione, perché quello che hanno capito &mdash; che è corretto &mdash; è qualcosa che loro non possono conoscere.<br />
-Non perché siano stupidi, ma perché le parti di un meccanismo non possono vederlo dal di fuori.<br />
-Per questo, nel libro dico:
-<blockquote>
-  Il Maestro Canaro sosteneva che i paradossi sono la crittografia di
-  Dio. Se fosse vero, la matematica sarebbe utile non perché quasi
-  sempre è coerente, ma perché, di quando in quando, produce dei
-  paradossi.
-</blockquote>
-perché se ci troviamo di fronte a un paradosso è molto probabile che stiamo muovendoci nella direzione giusta.
+Oggi, dopo anni di studio, sono riusciti anche ad associare i valori dopo la stringa ai corrispondenti caratteri ASCII, ma tutte queste scoperte hanno solo aumentato il loro livello di incomprensione, perché quello che hanno capito &mdash; che è corretto &mdash; è qualcosa che loro non possono conoscere. 
+Non perché siano stupidi, ma perché le parti di un meccanismo non possono vederlo dal di fuori.
 </blockquote>
 
 Per capire cosa significa la frase: “23, bucio de culo", il computer dovrebbe partecipare a una tombola natalizia italiana, cosa che non può fare fintanto che rimane un computer del tipo che noi conosciamo adesso.
