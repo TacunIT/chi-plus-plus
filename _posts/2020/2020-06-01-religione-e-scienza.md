@@ -1,7 +1,9 @@
 ---
-layout:   log
-title:    Religione e Scienza
-tags:     [note, religione, scienza]
+layout:   post
+tags:     [log, note, religione, scienza]
+title:    "Religione e Scienza"
+og_img:   "/assets/img/og-img/religione-scienza.jpg"
+og_desc:  "I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale, ma non è che loro siano molto diversi.."
 ---
 
 I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale.

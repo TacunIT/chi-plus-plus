@@ -1,7 +1,9 @@
 ---
-layout:   log
+layout:   post
 title:    "Citazioni con nota"
-tags:     [redazione, Jekyll]
+tags:     [log, redazione, Jekyll]
+og_img:   ""
+og_desc:  "Gestione delle citazioni con i file data."
 ---
 
 Ho trovato un modo astuto di inserire le citazioni all'interno del testo *insieme* al link per le note.

@@ -1,7 +1,9 @@
 ---
-layout:   log
+layout:   post
 title:    "Log sui log"
 tags:     [log, ricorsione ]
+og_img:   ""
+og_desc:  "Ho deciso di attivare la gestione dei post di Jekyll in modo da poter tenere una sorta di diario di bordo di questo sito."
 ---
 
 Ho deciso di attivare la gestione dei *post* di Jekyll in modo da poter tenere una sorta di diario di bordo di questo sito.

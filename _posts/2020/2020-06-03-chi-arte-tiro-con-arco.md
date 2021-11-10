@@ -1,7 +1,9 @@
 ---
-layout:   log
+layout:   post
 title:    "Il C'hi++ e l'Arte del tiro con l'arco"
-tags:     [Spazionismo, Buddismo, Ananda, ]
+tags:     [log, Spazionismo, Buddismo, Ananda, tiro con l'arco]
+og_img:   "/assets/img/og-img/chi-tiro-con-arco.jpg"
+og_desc:  "Identità fra freccia, bersaglio e arciere per il Buddismo e per il C'hi++"
 ---
 
 Riguardando il saggio sul Buddismo in *Tempo ed Eternità* di Ananda K., notavo che la distinzione fra ciò che è temporaneo e mortale e ciò che non lo è; fra chi è *illuminato* e chi non lo è, presuppone due stati diversi di esistenza, ma compenetrati.

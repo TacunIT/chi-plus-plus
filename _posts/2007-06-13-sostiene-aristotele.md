@@ -1,8 +1,10 @@
 ---
-layout:     log
+layout:     post
 title:      "Sostiene Aristotele"
-tags:       [testo, beta]
+tags:       [log, testo, beta]
 permalink:  /sostiene-aristotele.html
+og_img:     ""
+og_desc:    "La prima formalizzazione dei principii del C'hi++."
 ---
 
 Sostiene Aristotele (e per fortuna lo sostiene nella sesta pagina de: “La metafisica”, ché se l’avesse sostenuto, che so, a pagina quattrocentosettantadue, chissà se l’avrei mai saputo) che la ricerca della conoscenza, “deve in qualche modo portarci a uno stato contrario a quello nel quale si dà inizio alle ricerche”.
