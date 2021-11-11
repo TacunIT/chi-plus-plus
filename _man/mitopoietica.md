@@ -1,12 +1,12 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      Mitopoietica del C'hi++
-permalink:  /man/mitopoietica
-og_img:     "/assets/img/og-img/mitopoietica.jpg"
+layout:     manuale
 og_desc:    "Su di me ci sono due teorie: qualcuno pensa che io sia impazzito cercando di fare il debug dell'Universo, altri pensano invece che io abbia deciso di fare il debug dell'Universo perché sono pazzo."
+og_img:     "/assets/img/og-img/mitopoietica.jpg"
+permalink:  /man/mitopoietica
 quote:      "Il settimo giorno, Dio fece il backup"
+status:     pubblicato
+title:      Mitopoietica del C'hi++
 ---
 
 Su di me ci sono due teorie: qualcuno pensa che io sia impazzito cercando di fare il *debug* dell'Universo, altri pensano invece che io abbia deciso di fare il *debug* dell'Universo perché sono pazzo.

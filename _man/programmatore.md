@@ -1,10 +1,12 @@
 ---
-status:     pubblicato
-layout:     manuale
-title:      Il buon programmatore
 class:      capitolo
+layout:     manuale
+og_desc:    "Ricòrdati: il codice funziona come vuoi tu solo se non gli lasci altra scelta."
+og_img:     "/assets/img/og-img/programmatore.jpg"
 permalink:  /man/programmatore
 quote:      "È stata una giornata estenuante: questa mattina ho tolto una virgola dal mio codice e stasera ce l'ho rimessa"
+status:     pubblicato
+title:      Il buon programmatore
 ---
 
 Le principali discipline dell'informatica sono: la gestione del personale, la gestione dei progetti, la gestione dei sistemi e la programmazione.
@@ -23,9 +25,7 @@ Scrivere codice non è un mestiere, è una deformazione mentale.
 Il <span id="buon-programmatore">buon programmatore</span> è un disadattato che ha la fortuna di essere retribuito per dare sfogo ai lati peggiori della sua personalità.
 Mentre scrive il codice, la mente del buon programmatore lavora su tre livelli: il primo livello decide la sequenza delle istruzioni necessarie a far funzionare il programma; il secondo livello ne controlla costantemente la correttezza sintattica e semantica; il terzo livello verifica se ci sia un sistema più efficiente per fare la stessa cosa.
 I buoni programmatori sono paranoici ed è giusto che sia così.
-Le istruzioni di un programma sono eseguite milioni di volte nel corso
-della loro vita e anche una probabilità minima di errore è
-inammissibile.
+Le istruzioni di un programma sono eseguite milioni di volte nel corso della loro vita e anche una probabilità minima di errore è inammissibile.
 Ricòrdati: il codice funziona come vuoi tu solo se non gli lasci altra scelta.  
 Nei tempi andati ci fu chi sostenne una teoria bizzarra secondo la quale i programmi, per essere veramente efficaci, sarebbero dovuti essere rapidi, ridondanti e imprecisi.
 L'idea di fondo era che, essendo impossibile, sopra un certo livello di complessità, produrre del codice privo di errori, sarebbe stato meglio produrre molti programmi mediamente imprecisi e valutare l'insieme dei loro risultati.
