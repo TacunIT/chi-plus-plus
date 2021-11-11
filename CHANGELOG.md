@@ -1,3 +1,7 @@
+## 0.30.17 (November 11, 2021)
+  - Aggiunta og-image per capitolo Programmatore
+  - Rivisto il testo di Religione e Scienza
+
 ## 0.30.16 (November 10, 2021)
   - Riorganizzata la pagina dei post
   - Corretto tempo verbale in Bibliografia
