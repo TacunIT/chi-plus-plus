@@ -1,10 +1,12 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      I sistemi di numerazione
+layout:     manuale
+og_desc:    "Per dissuadere i pochi ostinati che sono arrivati a leggere fin qui, voglio parlarti dei sistemi di numerazione."
+og_img:     "/assets/img/og-img/sistemi-di-numerazione.jpg"
 permalink:  /man/sistemi-di-numerazione
 quote:      "Ci sono 10 tipi di persone: quelli che capiscono la numerazione binaria e quelli che non la capiscono"
+status:     pubblicato
+title:      "I sistemi di numerazione"
 ---
 
 Per dissuadere i pochi ostinati che sono arrivati a leggere fin qui, voglio parlarti dei sistemi di numerazione.
