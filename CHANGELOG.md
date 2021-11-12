@@ -1,3 +1,6 @@
+## 0.30.18 (November 12, 2021)
+  - Aggiunta immagine og a Sistemi di Numerazione
+
 ## 0.30.17 (November 11, 2021)
   - Aggiunta og-image per capitolo Programmatore
   - Rivisto il testo di Religione e Scienza
