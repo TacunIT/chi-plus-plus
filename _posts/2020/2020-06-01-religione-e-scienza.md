@@ -1,15 +1,14 @@
 ---
-layout:   post
-tags:     [log, note, religione, scienza]
-title:    "Religione e Scienza"
-og_img:   "/assets/img/og-img/religione-scienza.jpg"
-og_desc:  "I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale, ma non è che loro siano molto diversi.."
+class:      articolo
+layout:     post
+og_desc:    "Perché i computer possono essere ottimi giocatori di Scacchi, ma a Tombola non varrano mai granché."
+og_img:     "/assets/img/og-img/religione-scienza.jpg"
+tags:       [log, note, religione, scienza]
+status:     pubblicato
+title:      "Religione e Scienza"
 ---
 
-I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale; rifiutano le accettazioni per fede e contestano la non comprovabilità scientifica dei precetti religiosi.
-Fanno bene: dobbiamo sempre mettere in discussione i princip&icirc; sui quali basiamo le nostre convinzioni; purtroppo, però, le leggi che regolano la vita dei non credenti sono dogmatiche e incerte come quelle dei fedeli.
-
----
+I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale, ma le leggi che regolano la vita dei non credenti sono dogmatiche e incerte proprio come quelle dei fedeli.
 
 Religione, Scienza e Filosofia sono tre ritratti di una stessa modella: la nostra Esistenza.
 Ciascun pittore la ritrae da un diverso punto di vista e con il proprio stile pittorico, ma tutti e tre vedono la stessa immagine, con le stesse luci e le stesse ombre.
@@ -70,11 +69,11 @@ Mancando un riscontro oggettivo, l'unico modo per determinare l'affidabilità di
 
 - l'ONU, che ha emanato la Dichiarazione del 1948, è un'associazione internazionale con il compito di garantire la pace, ma ha al suo vertice Cina, Francia, Regno Unito, Russia e Stati Uniti, ovvero i cinque principali produttori di armi del Pianeta, tre dei quali compaiono anche negli elenchi degli Stati che utilizzano la tortura;
 
-- i rivoluzionar&icirc; francesi sono riusciti nel non facile intento di correlare fra loro quattro termini apparentemente inconciliabili: *liberté*, *égalité*, *fraternité* e: *guillotine*<a href="#vitt" class="nota" name="fn-vitt">2</a>, quindi non mi sembrano dei *testimonial* attendibili per ideali umanistici;
+- i rivoluzionar&icirc; francesi sono riusciti nel non facile intento di correlare fra loro quattro termini apparentemente inconciliabili: *liberté*, *égalité*, *fraternité* e: *guillotine*, quindi non mi sembrano dei *testimonial* attendibili per ideali umanistici;
 
 - la Costituzione americana è stata promulgata nel 1787, ma la schiavitù è stata abolita nel 1865, dopo una guerra civile; del diritto alla vita, alla libertà e al perseguimento della felicità dei nativi americani si sono perse le tracce.
 
-Considerazioni simili si potrebbero fare, oltre che per i liberali, anche per i comunisti, ma siccome non è educato parlar male dei morti le tralasceremo.
+Considerazioni simili si potrebbero fare, oltre che per i liberali, anche per i comunisti, ma siccome non è educato parlar male dei morti, le tralasceremo.
 
 ---
 
@@ -90,15 +89,15 @@ In compenso, però, credo che un'unione di Scienza e Spiritualità sia ciò di c
 I computer sono un ottimo paradigma dell'esistenza, perché generano una realtà illusoria utilizzando delle sequenze di valori binar&icirc; sulla base delle istruzioni ricevute dai programmatori.
 Il testo che state leggendo è una sequenza di 1 e di 0 che il processore trasforma in lettere in base alla codifica ASCII e poi invia allo schermo che, a sua volta, le trasforma in sequenze di pixel di colori diversi.
 La finestra del browser in cui appare il testo è anch'essa una sequenza di bit che il sistema trasforma in una sequenza di pixel. Quando la spostate, in realtà state solo variando l'insieme dei pixel attivi all'interno dello schermo.
-La gestione di tutte queste trasformazioni è regolata del sistema operativo e del software applicativo, che, tramite la CPU, ovvero l'elemento “pensante” all'interno del computer, convertono in sequenze di byte le istruzioni ricevute dal programmatore.  
-La CPU e il programmatore condividono la conoscenza di alcune entità come, appunto, il software, l'hardware o lo svolgimento di un ciclo di istruzioni, ma ciascuno dei due le vede in maniera diversa.
-Quello che per il programmatore è codice sorgente, file eseguibili, memoria RAM o file-system, per la CPU sono sequenze di byte in ingresso, in uscita, registri o indirizzi di memoria.  
+La gestione di tutte queste trasformazioni è regolata da processori chiamati *CPU* (*Central Processing Unit*) o *GPU* (*Graphical Processing Unit*) che convertono in sequenze di byte le istruzioni ricevute dal programmatore.  
+La CPU e il programmatore condividono la conoscenza di alcune entità come il software, l'hardware o lo svolgimento di un ciclo di istruzioni, ma ciascuno dei due le “vede” in maniera diversa.
+Quello che per il programmatore è codice sorgente, memoria RAM o file-system, per la CPU sono sequenze di byte in ingresso, in uscita o indirizzi di memoria.  
 
 I computer, oggi, sono in condizione di svolgere molti compiti che un tempo riuscivamo a svolgere solo noi.
 In futuro è possibile che riusciranno a fare tutto ciò che facciamo noi, ma finché resteranno dei computer, non potranno farlo *come* facciamo noi.
 Quando *Deep Blue*, il computer scacchistico dell'IBM, ha battuto Garry Kasparov nel 1997 non ha provato le stesse emozioni di Karpof, durante gli incontri del 1985. Non ha avuto paura e non è stato felice. Ha giocato la partita, ma non l'ha *vissuta*.    
 Provo a chiarire meglio questo concetto con un altro brano della mia disputa epistolare.
-Vi prego di scusare il tono cameratesco, ma è funzionale all'esempio.
+Vi prego di scusare il tono cameratesco (conversavo con mio fratello), ma è funzionale all'esempio.
 
 <blockquote style="text-align:left;">
 Come la spieghi, a un computer, la frase: “23, bucio de culo”? <br />
@@ -127,7 +126,7 @@ che per lui, però, non avrebbe senso, perché, per il suo modo di vedere le cos
 Ecco: secondo me, gli scienziati sono dei computer che pensano di poter capire cosa significhi: <code>23, bucio di culo</code>.
 Per prima cosa, hanno riconosciuto il numero 23, che era la parte più facile.
 Poi hanno capito che la virgola separa due parti della frase e che l'una è legata all'altra.
-Oggi, dopo anni di studio, sono riusciti anche ad associare i valori dopo la stringa ai corrispondenti caratteri ASCII, ma tutte queste scoperte hanno solo aumentato il loro livello di incomprensione, perché quello che hanno capito &mdash; che è corretto &mdash; è qualcosa che loro non possono conoscere. 
+Oggi, dopo anni di studio, sono riusciti anche ad associare i valori dopo la virgola ai corrispondenti caratteri ASCII, ma tutte queste scoperte hanno solo aumentato il loro livello di incomprensione, perché ciò che hanno capito &mdash; che è corretto &mdash; è qualcosa che loro non possono conoscere. 
 Non perché siano stupidi, ma perché le parti di un meccanismo non possono vederlo dal di fuori.
 </blockquote>
 
@@ -145,10 +144,6 @@ Nel frattempo, però, nulla ci vieta di preparare la base per il nostro primo ba
     <li>
         Harari, Yuval Noah. <i>Sapiens. Da animali a dèi: Breve storia dell'umanità</i>. Nuova edizione riveduta - Bompiani.
         <a href="#fn-harari" name="harari">&#8617;</a>
-    </li>
-    <li>
-O, come scrisse Jacovitti in una sua vignetta: <i>liberté, égalité, fraternité e décolleté</i>.
-        <a href="#fn-vitt" name="vitt">&#8617;</a>
     </li>
 </ol>
 </section>
