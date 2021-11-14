@@ -24,12 +24,12 @@ Così com'è successo con lo Scirocco dei giorni scorsi, anche se Calasso non c'
 Da un punto di vista letterario, la gestazione di *C'hi++* iniziò a metà degli anni '80, quando acquistai il 
 <a href="https://www.adelphi.it/libro/9788845907159" target="adelphi">Vijnanabhairava</a> e 
 <a href="https://www.adelphi.it/libro/9788845901775" target="adelphi">Lo Zen e il tiro con l'arco</a>.
-Non sapevo nulla di Zen, all'epoca, li comprai, quasi per scherzo, perché mi avevano incuriosito i titoli (è la regola n.7 dei miei <a target="canaro" href="https://canaro.net/saggi/opere-letterarie.html">Criterii snobistici per la selezione delle opere letterarie</a>).   
-Leggendo l'introduzione del primo, scoprii che, nel VII secolo, c'era stata una diàtriba fra due delegazioni di filosofi buddisti per derimere una controversia sulle modalità di raggiungimento dell'Illuminazione e che, al termine del convegno, gli sconfitti commisero suicidio rituale: 
+Non sapevo nulla di Zen, all'epoca, li comprai, quasi per scherzo, perché mi avevano incuriosito i titoli.   
+Leggendo l'introduzione del primo, scoprii che, nel VII secolo, c'era stata una diatriba fra due delegazioni di filosofi buddisti per derimere una controversia sulle modalità di raggiungimento dell'Illuminazione e che, al termine del convegno, gli sconfitti commisero suicidio rituale: 
 
 > chi tagliandosi a pezzi, chi recidendosi i genitali, chi bruciandosi
 
-Il testo, però, era troppo complicato, così: utilizzai il nome della località in cui si era svolto il convegno (*bSam-Yas*) in un <a target="canaro" href="https://canaro.net/concorso/la-poca-lisse.html">poemetto</a> e poi lo abbandonai.
+Il testo, però, era più complicato di qunto mi aspettasssi, così lo abbandonai.
 Il libro di Herrigel, al contrario, lo lessi tutto e mi piacque al punto che cominciai a tirare con l'arco.  
 
 All'inizio degli anni '90, il mio amico Wayne Martini mi regalò
@@ -42,7 +42,7 @@ Ci avrei messo poco più di dieci anni, a capirlo.
 
 <p class="centrato"><img src="/assets/img/nansen-taglia-il-gatto.jpg" alt="Nansen taglia il gatto" /></p>
 
-Nel frattempo, grazie al tiro con l'arco (olimpico, non quello tradizionale giapponese), ero diventato amico di Claudio Munisso, con cui, nel 1995, scrissi un manuale di programmazione in C e C++. 
+Nel frattempo, grazie al tiro con l'arco, ero diventato amico di Claudio Munisso, con cui, nel 1995, scrissi un manuale di programmazione in C e C++. 
 Lui scrisse la parte relativa al linguaggio C, io quella sul C++. 
 La struttura dei capitoli del manuale era mutuata da quella di 
 <a href="https://www.adelphi.it/libro/9788845907555" target="adelphi">“Gödel, Escher, Bach: un’Eterna Ghirlanda Brillante”</a>, di Douglas Hofstadter, con una premessa narrativa che introduceva il testo tecnico.  
