@@ -90,7 +90,7 @@ Il limite della Religione è l'impossibilità di mettersi in discussione o, più
 Il limite della Scienza, di contro, è l'impossibilità di accettare come vera qualsiasi affermazione non comprovabile sperimentalmente; un problema non da poco, se devi rappresentare un oggetto tidimensionale su una tela bidimensionale.  
 In compenso, però, credo che un'unione di Scienza e Spiritualità sia ciò di cui abbiamo bisogno per migliorare la nostra condizione attuale e il nostro futuro sul medio, sul lungo e sul lunghissimo periodo.
 
-<a href="/man/" target="chi" clas="xref">C'hi++</a> è precisamente questo: un'unione di mistica, informatica e liquidi prodotti della fermentazione dei cereali.  
+<a href="/" target="chi" clas="xref">C'hi++</a> è precisamente questo: un'unione di mistica, informatica e liquidi prodotti della fermentazione dei cereali.  
 I computer sono un ottimo paradigma dell'esistenza, perché generano una realtà illusoria utilizzando delle sequenze di valori binar&icirc; sulla base delle istruzioni ricevute dai programmatori.
 Il testo che state leggendo è una sequenza di 1 e di 0 che il processore trasforma in lettere in base alla codifica ASCII e poi invia allo schermo che, a sua volta, le trasforma in sequenze di pixel di colori diversi.
 La finestra del browser in cui appare il testo è anch'essa una sequenza di bit che il sistema trasforma in una sequenza di pixel. Quando la spostate, in realtà state solo variando l'insieme dei pixel attivi all'interno dello schermo.
