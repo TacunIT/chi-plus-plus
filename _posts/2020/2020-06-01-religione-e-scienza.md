@@ -8,10 +8,6 @@ status:     pubblicato
 title:      "Religione e Scienza"
 ---
 
-I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale, ma le leggi su cui regolano la loro vita sono dogmatiche e incerte proprio come quelle dei fedeli.
-
----
-
 Religione, Scienza e Filosofia sono tre ritratti di una stessa modella: la nostra Esistenza.
 Ciascun pittore la ritrae da un diverso punto di vista e con il proprio stile pittorico, ma tutti e tre vedono la stessa immagine, con le stesse luci e le stesse ombre.
 Tutti e tre cercano di intuire il corpo che *s'anca in curva callipìgia* dietro alle pieghe del drappeggio, ma a nessuno è dato di vederlo nella sua nuda bellezza.
@@ -43,17 +39,18 @@ L'elenco originale comprendeva anche le voci:
 
 Malgrado queste evidenti affinità, ciascun pittore è convinto che che il suo quadro sia migliore degli altri.
 
+---
+
+I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale, ma le leggi su cui regolano la loro vita sono dogmatiche e incerte proprio come quelle dei fedeli.  
 Un cristiano e un non credente sono certamente d'accordo sul fatto che non si debbano uccidere gli altri esseri umani.
 Il cristiano pensa che sia sbagliato perché il sesto Comandamento vieta di uccidere; il non credente perché l'Articolo 3 della Dichiarazione dei Diritti Umani stabilisce che ogni individuo ha diritto alla vita.
-Il cristiano pensa di essere nel giusto perché esegue il volere di Dio; il non credente ritiene le sue motivazioni più solide perché non derivano da una leggenda.
-In realtà, però, le leggi laiche sono dogmatiche e opinabili come quelle religiose.
-
-I trenta Articoli della *Dichiarazione dei Diritti dell'Uomo* dell'ONU, per l'appunto, stabiliscono che:
+Il cristiano pensa di essere nel giusto perché esegue il volere di Dio; il non credente pensa di essere nel giusto perché le sue motivazioni non derivano da una leggenda.      
+Si sbaglia.   
+I trenta Articoli della *Dichiarazione dei Diritti dell'Uomo* dell'ONU stabiliscono che:
 
 > Ogni individuo ha diritto alla vita, alla libertà ed alla sicurezza della propria persona; nessun individuo potrà essere tenuto in stato di schiavitù o di servitù; nessun individuo potrà essere sottoposto a tortura o a trattamento o a punizione crudeli, inumani o degradanti.
 
-La *Dichiarazione*, però, non spiega su quali prove scientifiche si basino queste affermazioni. Sicuramente non su dati sperimentali.
-In altre parole: è un dogma.  
+La *Dichiarazione*, però, non spiega su quali prove scientifiche si basino queste affermazioni. Sicuramente non su dati sperimentali.  
 È priva di riscontri oggettivi anche la *Dichiarazione dei Diritti dell'Uomo e del Cittadino* del 1789.
 Stabilisce infatti che:
 
@@ -63,7 +60,7 @@ e che questi diritti sono:
 
 > la libertà, la proprietà, la sicurezza e la resistenza all’oppressione.
 
-ma non spiega su quali dati oggettivi si basino queste affermazioni.  
+ma non spiega su quali fatti si basino queste affermazioni.  
 Andiamo ancora più indietro nel tempo, sperando che la *Dichiarazione di Indipendenza degli Stati Americani* possa finalmente darci dei riscontri oggettivi su questa presunta (e auspicata) uguaglianza fra gli esseri umani, ma la fortuna non ci assiste, perché alla fine del nostro viaggio a ritroso negli ideali laici, ci scontriamo con un'affermazione non solo dogmatica, ma creazionista:
 
 > Noi consideriamo le seguenti verità evidenti di per sé: che tutti gli uomini sono creati eguali; che essi sono stati dotati di alcuni diritti inalienabili dal loro Creatore; che tra questi diritti ci sono la vita, la libertà e il perseguimento della felicità.
@@ -93,7 +90,7 @@ Il limite della Religione è l'impossibilità di mettersi in discussione o, più
 Il limite della Scienza, di contro, è l'impossibilità di accettare come vera qualsiasi affermazione non comprovabile sperimentalmente; un problema non da poco, se devi rappresentare un oggetto tidimensionale su una tela bidimensionale.  
 In compenso, però, credo che un'unione di Scienza e Spiritualità sia ciò di cui abbiamo bisogno per migliorare la nostra condizione attuale e il nostro futuro sul medio, sul lungo e sul lunghissimo periodo.
 
-*C'hi++* è precisamente questo: un'unione di mistica, informatica e liquidi prodotti della fermentazione dei cereali.  
+<a href="/man/" target="chi" clas="xref">C'hi++</a> è precisamente questo: un'unione di mistica, informatica e liquidi prodotti della fermentazione dei cereali.  
 I computer sono un ottimo paradigma dell'esistenza, perché generano una realtà illusoria utilizzando delle sequenze di valori binar&icirc; sulla base delle istruzioni ricevute dai programmatori.
 Il testo che state leggendo è una sequenza di 1 e di 0 che il processore trasforma in lettere in base alla codifica ASCII e poi invia allo schermo che, a sua volta, le trasforma in sequenze di pixel di colori diversi.
 La finestra del browser in cui appare il testo è anch'essa una sequenza di bit che il sistema trasforma in una sequenza di pixel. Quando la spostate, in realtà state solo variando l'insieme dei pixel attivi all'interno dello schermo.
