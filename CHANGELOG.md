@@ -1,3 +1,7 @@
+## 0.30.19 (November 14, 2021)
+  - Corretto link mancante nell'HEAD
+  - Revisione dell'articolo su Religione e Scienza
+
 ## 0.30.18 (November 12, 2021)
   - Aggiunta immagine og a Sistemi di Numerazione
 
