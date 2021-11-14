@@ -1,3 +1,9 @@
+## 0.30.20 (November 14, 2021)
+  - Rivisto il testo del README
+  - Rivisto il testo del MANIFEST
+  - Rivisto il testo della Bibliografia
+  - Modificato link a C'hi nell'articolo su Religione e Scienza
+
 ## 0.30.19 (November 14, 2021)
   - Corretto link mancante nell'HEAD
   - Revisione dell'articolo su Religione e Scienza
