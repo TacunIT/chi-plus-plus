@@ -129,6 +129,7 @@ L'ho trasformato perciò in [un documento a sé stante](https://chiplusplus.org/
 Se volete sapere qualcosa di più sul *C'hi++*, vi suggerisco di leggere [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta/).
 
 Il testo del manuale è all'indirizzo: <a href="https://chiplusplus.org" target="chi" >chiplusplus.org</a>. 
+Se non avete o tempo o voglia di leggerlo tutto (probabile), leggete almeno <a href="https://chiplusplus.org/man/memoria#delete" target="chi" >questo brano del capitolo sulla mamoria</a>.
 
 Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di GitHub.
 
