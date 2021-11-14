@@ -2,13 +2,15 @@
 class:      articolo
 layout:     post
 og_desc:    "Perché i computer possono essere ottimi giocatori di Scacchi, ma a Tombola non varrano mai granché."
-og_img:     "/assets/img/og-img/religione-scienza.jpg"
-tags:       [log, note, religione, scienza]
+og_img:     "/assets/img/og-img/religione-e-scienza.jpg"
+tags:       [log, religione, scienza, scacchi]
 status:     pubblicato
 title:      "Religione e Scienza"
 ---
 
-I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale, ma le leggi che regolano la vita dei non credenti sono dogmatiche e incerte proprio come quelle dei fedeli.
+I non credenti trattano spesso i fedeli come fratelli minori che credono ancora a Babbo Natale, ma le leggi su cui regolano la loro vita sono dogmatiche e incerte proprio come quelle dei fedeli.
+
+---
 
 Religione, Scienza e Filosofia sono tre ritratti di una stessa modella: la nostra Esistenza.
 Ciascun pittore la ritrae da un diverso punto di vista e con il proprio stile pittorico, ma tutti e tre vedono la stessa immagine, con le stesse luci e le stesse ombre.
@@ -27,11 +29,17 @@ La maggior parte di queste similitudini sono applicabili anche alla Filosofia:
 - la casta ha un suo linguaggio iniziatico, che richiede anni di studio per essere compreso (*Latino, matematica*);
 - i ministri del Culto vivono in strutture a loro dedicate e organizzate in forma gerarchica (*monasteri, Università*);
 - dipendono per lo più da finanziamenti esterni;
-- fanno proselitismo fra i giovani;
-- i ministri del Culto talvolta si accoppiano con i loro discenti;
-- i ministri del Culto talvolta si accoppiano fra di loro;
+- fanno proselitismo fra i giovani; 
 - i fedeli, alle volte, sono andati a braccetto con i potenti; altre volte sono stati martirizzati per le loro idee;
 - si assume che chi le pratica ne faccia il centro della propria esistenza.
+
+<!--
+L'elenco originale comprendeva anche le voci:
+
+- i ministri del Culto talvolta si accoppiano con i loro discenti;
+- i ministri del Culto talvolta si accoppiano fra di loro; 
+
+-->
 
 Malgrado queste evidenti affinità, ciascun pittore è convinto che che il suo quadro sia migliore degli altri.
 
@@ -89,13 +97,13 @@ In compenso, però, credo che un'unione di Scienza e Spiritualità sia ciò di c
 I computer sono un ottimo paradigma dell'esistenza, perché generano una realtà illusoria utilizzando delle sequenze di valori binar&icirc; sulla base delle istruzioni ricevute dai programmatori.
 Il testo che state leggendo è una sequenza di 1 e di 0 che il processore trasforma in lettere in base alla codifica ASCII e poi invia allo schermo che, a sua volta, le trasforma in sequenze di pixel di colori diversi.
 La finestra del browser in cui appare il testo è anch'essa una sequenza di bit che il sistema trasforma in una sequenza di pixel. Quando la spostate, in realtà state solo variando l'insieme dei pixel attivi all'interno dello schermo.
-La gestione di tutte queste trasformazioni è regolata da processori chiamati *CPU* (*Central Processing Unit*) o *GPU* (*Graphical Processing Unit*) che convertono in sequenze di byte le istruzioni ricevute dal programmatore.  
-La CPU e il programmatore condividono la conoscenza di alcune entità come il software, l'hardware o lo svolgimento di un ciclo di istruzioni, ma ciascuno dei due le “vede” in maniera diversa.
+La gestione di tutte queste trasformazioni è regolata da processori chiamati *CPU* (*Central Processing Unit*) o *GPU* (*Graphical Processing Unit*) che ricevono le istruzioni del programmatore come sequenze di 1 e di 0.  
+La CPU e il programmatore condividono la conoscenza di alcune entità come il software, l'hardware o lo svolgimento di un ciclo di istruzioni, ma ciascuno dei due le “vede” in <a href="/man/linguaggi-di-programmazione" target="chi" class="xref">maniera diversa</a>.
 Quello che per il programmatore è codice sorgente, memoria RAM o file-system, per la CPU sono sequenze di byte in ingresso, in uscita o indirizzi di memoria.  
 
 I computer, oggi, sono in condizione di svolgere molti compiti che un tempo riuscivamo a svolgere solo noi.
-In futuro è possibile che riusciranno a fare tutto ciò che facciamo noi, ma finché resteranno dei computer, non potranno farlo *come* facciamo noi.
-Quando *Deep Blue*, il computer scacchistico dell'IBM, ha battuto Garry Kasparov nel 1997 non ha provato le stesse emozioni di Karpof, durante gli incontri del 1985. Non ha avuto paura e non è stato felice. Ha giocato la partita, ma non l'ha *vissuta*.    
+In futuro è possibile che riusciranno a fare tutto ciò che facciamo noi, ma finché resteranno dei computer, non potranno farlo *come* lo facciamo noi.
+Quando *Deep Blue*, il computer scacchistico dell'IBM, ha battuto Garry Kasparov nel 1997 non ha provato le stesse emozioni provate da Karpof durante gli incontri del 1985. Non ha avuto paura e non è stato felice. Ha giocato la partita, ma non l'ha *vissuta*.    
 Provo a chiarire meglio questo concetto con un altro brano della mia disputa epistolare.
 Vi prego di scusare il tono cameratesco (conversavo con mio fratello), ma è funzionale all'esempio.
 
@@ -134,7 +142,7 @@ Per capire cosa significa la frase: “23, bucio de culo", il computer dovrebbe 
 Allo stesso modo, noi non potremo capire davvero il significato della nostra esistenza finché resteremo gli esseri che siamo ora: intelligenti, stupefacenti sia nel bene che nel male, ma limitati.
 Anche se riuscissimo a fare un ritratto estremamente somigliante della nostra modella, sarà pur sempre un ritratto; la rappresentazione bidimensionale della parte del suo corpo che noi riusciamo a vedere.
 Per riuscire a raffigurarla completamente dovremo evolverci: diventare degli scultori e, così come abbiamo imparato a dipingere, imparare a modellare una grande statua con tanti piccoli pezzi di creta.  
-Quando questo avverrà, è probabile che si sarà persa memoria non solo del C'hi++, ma anche della stessa vita sul Pianeta Terra.
+Quando questo avverrà, è probabile che si sarà persa memoria non solo del C'hi++, ma anche della vita sul Pianeta Terra.
 Nel frattempo, però, nulla ci vieta di preparare la base per il nostro primo bassorilevo.
 
 

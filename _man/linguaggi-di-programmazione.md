@@ -35,7 +35,7 @@ I linguaggi di programmazione fanno precisamente questo: traducono le nostre ric
 
 Il linguaggi di programmazione possono essere di *alto livello* o di *basso livello*.
 I linguaggi di alto livello, come il *C* o il *C++* hanno dei costrutti simili al linguaggio naturale e non sono legati a una determinata architettura hardware.
-I linguaggi di basso livello, come l'*assembly* hanno dei costrutti simili al codice nativo della macchina e sono, per questo motivo, legati a una specifica architettura hardware.   
+I linguaggi di basso livello, come l'*assembly* hanno dei costrutti simili al codice nativo della macchina e sono, per questo motivo, legati a uno specifico tipo di hardware.   
 La funzione *raddoppia*, che abbiamo visto prima, tradotta in linguaggio *assembly*, diventa:
 
 ```
