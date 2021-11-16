@@ -1,3 +1,8 @@
+## 0.30.21 (November 16, 2021)
+  - Aggiunti dati og- al capitolo sui linguaggi di programmazione
+  - Aggiunta og-image a Proposta
+  - Rivista la descrizione del Manuale nel file README
+
 ## 0.30.20 (November 14, 2021)
   - Rivisto il testo del README
   - Rivisto il testo del MANIFEST
