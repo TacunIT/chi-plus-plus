@@ -1,11 +1,12 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      Il C++
+layout:     manuale
+og_desc:    "Non chiederti cosa può fare per te il sistema operativo; chiediti invece cosa puoi fare tu, per il sistema operativo."
+og_img:     "/assets/img/og-img/c-plus-plus.jpg"
 permalink:  /man/c-plus-plus
-quote:      "Non chiederti cosa può fare per te il sistema operativo; chiediti invece cosa puoi fare tu, per il sistema operativo"
-
+quote:      "Non chiederti cosa può fare per te il sistema operativo; chiediti invece cosa puoi fare tu, per il sistema operativo."
+status:     pubblicato
+title:      Il C++
 ---
 
 In uno dei suoi libri, Bjarne Stroustrup definì il C++: 
@@ -428,7 +429,7 @@ Queste caratteristiche, unite alla compatibilità con il codice scritto in C, fe
 L'avvento, alla fine del Secolo, del linguaggio con la "J", quello che ha bisogno di un sistema di *garbage collecion* per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un'idea di quello che sarebbe stato il millennio che ci si presentava davanti.
 Non a caso, Stroustrsup disse:
 
-> {{ site.data.citazioni.stroustrup.java }} <a id="stroustrup" href="/man/note/#cpp" class="nota"></a>
+> {{ site.data.citazioni.stroustrup.java }} <a id="stroustrup" href="/man/note#cpp" class="nota"></a>
 
 <!--
 
