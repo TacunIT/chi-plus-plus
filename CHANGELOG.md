@@ -1,3 +1,6 @@
+## 0.30.22 (November 17, 2021)
+  - Aggiunta immagine og a C++ e corretto errore nella nota finale
+
 ## 0.30.21 (November 16, 2021)
   - Aggiunti dati og- al capitolo sui linguaggi di programmazione
   - Aggiunta og-image a Proposta
