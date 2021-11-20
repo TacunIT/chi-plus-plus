@@ -1,3 +1,6 @@
+## 0.30.23 (November 20, 2021)
+  - Aggiunta immagine og al capitolo sui Commenti
+
 ## 0.30.22 (November 17, 2021)
   - Aggiunta immagine og a C++ e corretto errore nella nota finale
 
