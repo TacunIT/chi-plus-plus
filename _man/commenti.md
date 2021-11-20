@@ -1,10 +1,12 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      I commenti
+layout:     manuale
+og_desc:    "È importante commentare bene il proprio codice. Il buon codice produce programmi che durano nel tempo e, col tempo, si tende a dimenticare."
+og_img:     "/assets/img/og-img/commenti.jpg"
 permalink:  /man/commenti
 quote:      "Il Compilatore e il Linker non usano carità, tengono i diecimila oggetti per cani di paglia"
+status:     pubblicato
+title:      I commenti
 ---
 
 I commenti sono la cosa più importante, quando si programma.
