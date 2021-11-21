@@ -402,7 +402,7 @@ La stessa cosa avviene con gli spazioni, solo che invece di essere disposti su u
 <!--
 Più precisamente, hanno "un'esistenza perpetua e non causata", come gli atomi del Vājasaneyī Saṃhitā (IV,1), citato da Ananda in Tempo ed Eternità.
 -->
-Quando il *Big Bang* irradia la sua Energia nell'Universo, questa colpisce gli spazioni dando loro una massa e generando tutto ciò che esiste, dagli atomi di elio della nebulosa di *Wolf–Rayet* alla tua maestra delle Elementari.  
+Quando il *Big Bang* irradia la sua Energia nell'Universo, questa colpisce gli spazioni dando loro una massa e generando tutto ciò che esiste, dalle nebulose di *Wolf–Rayet* alla tua maestra delle Elementari.  
 Così come un `char`, `double` o `class` sono solo dei nomi convenzionali per degli insiemi di bit, anche `elio`, `tungsteno` o `cocomero` sono nomi convenzionali per delle quantità di energia.
 *Energia*, bada bene, non *spazioni*, perché gli spazioni sono fissi; quella che si muove è l'Energia.
 Quando tu sposti il braccio come hai fatto adesso, non stai realmente spostando il braccio, ma trasferendo l'energia che costituiva il tuo braccio da un gruppo di spazioni a un altro.
