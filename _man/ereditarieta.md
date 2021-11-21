@@ -501,7 +501,7 @@ In <a href="https://canaro.net/saggi/amore-e-arte.html" target="canaro">un suo s
  > L'Arte è la traccia del cammino dell'Uomo verso Dio 
  
  specificando poi che, con il termine: “Dio” (altra parola interpretata in maniera differente da ciascuno di noi), intendeva il senso dell'Esistenza.
-Alcuni anni dopo, però, guardando delle foto di crostate realizzate dallo chef Gianluca Fusto<a class="nota" href="/man/note/#fusto" id="fusto"></a>, capì che la sua definizione era imperfetta, perché non includeva, o quanto meno lasciava a margine, gli arte-fatti che non ricadevano nelle categorie artistiche canoniche. 
+Alcuni anni dopo, però, guardando delle foto di crostate realizzate dallo chef Gianluca Fusto<a class="nota" href="/man/note#fusto" id="fusto"></a>, capì che la sua definizione era imperfetta, perché non includeva, o quanto meno lasciava a margine, gli arte-fatti che non ricadevano nelle categorie artistiche canoniche. 
 Modificò per ciò la sua definizione di Arte in:
 
 > L'Arte è la traccia del cammino dell'Uomo verso la Perfezione
