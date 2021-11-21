@@ -5,7 +5,7 @@
     {% assign og_desc = site.og_desc %}
 {% endif %}
 
-{% if page.og_img  %}
+{% if page.og_img > "" %}
     {% assign og_img = page.og_img %}
 {% else %}
     {% assign og_img = site.og_img %}
