@@ -1,3 +1,12 @@
+## 0.30.24 (November 21, 2021)
+  - Corretti rimandi alle note
+  - Aggiunta immagine og a Sostiene Aristotele
+  - Rigenerati file con URL corretta
+  - Aggiunta immagine og a Tipi di Dato
+  - Corretto errore su nebulose WR
+  - Corretti errori nei salvataggi
+  - Modificata immagine og per capitolo Commenti
+
 ## 0.30.23 (November 20, 2021)
   - Aggiunta immagine og al capitolo sui Commenti
 
