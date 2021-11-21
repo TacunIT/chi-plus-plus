@@ -1,3 +1,7 @@
+## 0.30.25 (November 21, 2021)
+  - Merge branch 'capitolo/commenti' into redazione
+  - Esteso il testo della dottrina del capitolo sui Commenti
+
 ## 0.30.24 (November 21, 2021)
   - Corretti rimandi alle note
   - Aggiunta immagine og a Sostiene Aristotele
