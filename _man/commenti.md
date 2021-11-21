@@ -128,6 +128,14 @@ vera essenza del Linguaggio, è solo una questione di ritmo.
 
 <hr id="dottrina">
 
+I commenti sono un po' come la letteratura: se si scrive troppo poco è male; se si scrive troppo, dilungandosi in descrizioni inutili, è altrettanto sbagliato. 
+Il paragone vale anche all'inverso: i libri, le opere letterarie, sono i commenti al codice della vita. 
+Si scrive ciò che si desidera ricordare.  
+Il Maestro Canaro diceva che la cosa più complicata, dello scrivere un manuale, è che, alle volte, per spiegare un determinato concetto, hai bisogno di spiegare prima un altro concetto, che però non può essere compreso se non si capisce il primo. 
+Questo è uno di quei momenti.
+Il corrispettivo dei commenti, nel C'hi++ sono quelli che il Maestro Canaro chiamava i <i>Post-It</i>, ovvero una sorta di memoria di massa dell'Universo in cui è salvato il ricordo delle scelte fatte dagli esseri senzienti in ogni ciclo di esistenza. 
+Io, però, non posso parlarti adesso dei *Post-It*, perché prima dovrei prima spiegarti, se non altro, cosa sono i “cicli di esistenza” e, per il momento, è prematuro farlo.
+Rimando perciò la trattazione dei *Post-It* <a href="/man/istruzioni-iterative#post-it" class="xref">a un secondo momento</a> e ti racconto invece un aneddoto sul Maestro Canaro che riguarda proprio i commenti al codice.  
 Una volta, il maestro Canaro mostrò ai suoi allievi un brano di codice e gli chiese di spiegare che cosa facesse:
 
 ```
@@ -138,7 +146,4 @@ Gli allievi studiarono il codice e diedero le loro risposte, ma sbagliarono tutt
 
 
 <!--
-I commenti sono un po' come la letteratura: se si scrive troppo poco è male; se si scrive troppo, dilungandosi in descrizioni inutili, è altrettanto sbagliato.
-
-Il paragone vale anche all'inverso: i libri, le opere letterarie, sono i commenti al codice della vita. Si scrive ciò che si desidera ricordare.
 -->
