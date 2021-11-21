@@ -413,11 +413,11 @@ Né io né te siamo, adesso, costituiti dagli stessi spazioni che eravamo pochi 
 Siamo un'immagine in movimento, come il puntatore del mouse, o come le luci delle decorazioni natalizie.
 Come disse Sant'Agostino, siamo, allo stesso tempo, reali e illusorii:
 
-> {{ site.data.citazioni.agostino }} <a id="agostino" href="/man/note/#agostino" class="nota"></a>
+> {{ site.data.citazioni.agostino }} <a id="agostino" href="/man/note#agostino" class="nota"></a>
 
 Per i *Vedanta*, il Mondo ha la natura dell'Arte perché la realtà dell'arte-fatto è differente dalla realtà dell'arte-fice.
 Questa similitudine, oltre che per Platone, è valida anche per i linguaggi di programmazione: un oggetto all'interno di un programma esiste, ma non è realmente ciò che rappresenta, anche se a noi fa comodo ritenerlo tale.
-Come scrisse Ezra Pound<a id="pound" href="/man/note/#pound" class="nota"></a>, solo i sogni esistono realmente, perché la loro natura irreale rimane tale anche in una realtà illusoria.
+Come scrisse Ezra Pound<a id="pound" href="/man/note#pound" class="nota"></a>, solo i sogni esistono realmente, perché la loro natura irreale rimane tale anche in una realtà illusoria.
 
 ---
 

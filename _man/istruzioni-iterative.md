@@ -272,7 +272,7 @@ Questo, però, non fa che peggiorare le cose, perché i dogmi non sono leggi com
 Aristotele disse che:
  
 > le scienze che derivano da un numero minore di premesse sono più rigorose delle scienze che ne discendono per mezzo dell’aggiunta di nuove premesse
- <a class="nota" href="/man/note/#aristotele" id="aristotele"></a>
+ <a class="nota" href="/man/note#aristotele" id="aristotele"></a>
 
 In quest'ottica, il C'hi++ è una metafisica abbastanza rigorosa, perché richiede l'accettazione di due sole affermazioni non comprovabili e, di queste, solo una è strettamente necessaria alla coerenza interna della dottrina, l'altra è solo un auspicio.  
 Ai fedeli del C'hi++ è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (gli scienziati non sono infallibili: sono gli stessi che avevano visto dei canali su Marte) 
@@ -313,7 +313,7 @@ void eternita()
 
 Se non ci fosse questa ciclicità, ovvero senza un'alternanza fra Entropia e Gravità, fra *Prakṛti* e *Puruṣa*, lo Spazionismo e, di conseguenza, il C'hi++ non avrebbero più senso, così come la nostra esistenza.
 La Vita si rivelerebbe un epifenomeno destinato a esaurirsi nella morte termica dell'Universo e nessun ordine sociale sarebbe più possibile, perché ciascuno cercherebbe di ottenere il massimo possibile dai pochi anni che gli sono concessi, indifferente al costo che questo avrebbe per gli altri. 
-Qualcosa di simile al *Black Friday* in un centro commerciale americano, per intendersi.. <a class="nota" href="/man/note/#blackfriday" id="blackfriday"></a>
+Qualcosa di simile al *Black Friday* in un centro commerciale americano, per intendersi.. <a class="nota" href="/man/note#blackfriday" id="blackfriday"></a>
 
 ```
 typedef struct {
@@ -324,14 +324,14 @@ typedef struct {
 
 Il secondo dogma del C'hi++ è l'esistenza di una memoria persistente dell'Universo che mantiene traccia dell'esito delle scelte fatte in ciascun ciclo; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo:
 
-> {{ site.data.citazioni.gita.vasana }}<a class="nota" href="/man/note/#vasana" id="vasana"></a>
+> {{ site.data.citazioni.gita.vasana }}<a class="nota" href="/man/note#vasana" id="vasana"></a>
 
 I *Post-It*, come li chiamava il Maestro Canaro, non sono indispensabili per il C'hi++, sono solo un'auspicio, perché la loro esistenza dà un senso alla nostra vita.
 Ho detto: *dà* in vece di: *darebbe* perché, così come avviene per gli esopianeti, noi non li “vediamo”, ma possiamo inferire la loro esistenza dall'effetto che hanno su ciò che li circonda: istinto, premonizioni, *deja-vu*.  
-L'esistenza dei *Post-It* rende l'Universo *stateful*<a class="nota" href="/man/note/#stateful" id="stateful"></a> e quindi più appetibile per noi, ma anche in un Universo *stateless*<a class="nota" href="/man/note/#stateless" id="stateless"></a>, in cui ciascun ciclo di esistenza fa storia a sé, noi non avremmo né motivo né convenienza a comportarci in maniera egoistica.
+L'esistenza dei *Post-It* rende l'Universo *stateful*<a class="nota" href="/man/note#stateful" id="stateful"></a> e quindi più appetibile per noi, ma anche in un Universo *stateless*<a class="nota" href="/man/note#stateless" id="stateless"></a>, in cui ciascun ciclo di esistenza fa storia a sé, noi non avremmo né motivo né convenienza a comportarci in maniera egoistica.
 In primo luogo perché, come abbiamo già detto, essendo tutti la manifestazione di una stessa Energia, ciò che facciamo agli altri lo facciamo in realtà a noi stessi; in secondo luogo perché non è detto che in ciascun ciclo di esistenza il nostro io cosciente si manifesti nella stessa persona e quindi, se in un ciclo siamo *Jack the Ripper*, in un altro potremmo essere Mary Ann Nichols.  
 I *Post-It* furono sempre una spina nel fianco, per il Maestro Canaro, che spese gli ultimi anni della sua vita cercando un modo per ricondurli a qualcosa di reale o di eliminarli dalla dottrina, ma non riuscì a fare nessuna delle due cose. 
-Inizialmente pensò la cosa più ovvia, ovvero che i Post-It fossero nel cervello, che fossero una particolare mappatura delle sinapsi contenente le istruzioni per reagire a determinate condizioni future<a class="nota" href="/man/note/#openworm" id="openworm"></a>.
+Inizialmente pensò la cosa più ovvia, ovvero che i Post-It fossero nel cervello, che fossero una particolare mappatura delle sinapsi contenente le istruzioni per reagire a determinate condizioni future<a class="nota" href="/man/note#openworm" id="openworm"></a>.
 Ipotizzò anche che i sogni avessero la duplice funzione di prepararci a queste condizioni, anticipandocele e tenendo vive le connessioni cerebrali che avremmo dovuto sfruttare per affrontarle.
 Tutto questo, però, poteva essere solo una proiezione dei Post-It, una copia in memoria RAM di informazioni preservate altrove, perché, per poter essere persistenti, i Post-It devono trovarsi al di fuori dello *scope* della nostra esistenza, nella ROM o nell'*hard-disk* dell'Universo:
 
