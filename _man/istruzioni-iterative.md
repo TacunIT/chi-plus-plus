@@ -313,7 +313,7 @@ void eternita()
 
 Se non ci fosse questa ciclicità, ovvero senza un'alternanza fra Entropia e Gravità, fra *Prakṛti* e *Puruṣa*, lo Spazionismo e, di conseguenza, il C'hi++ non avrebbero più senso, così come la nostra esistenza.
 La Vita si rivelerebbe un epifenomeno destinato a esaurirsi nella morte termica dell'Universo e nessun ordine sociale sarebbe più possibile, perché ciascuno cercherebbe di ottenere il massimo possibile dai pochi anni che gli sono concessi, indifferente al costo che questo avrebbe per gli altri. 
-Qualcosa di simile al *Black Friday* in un centro commerciale americano, per intendersi.. <a class="nota" href="/man/note#blackfriday" id="blackfriday"></a>
+Qualcosa di simile al *Black Friday* in un centro commerciale americano, per intendersi..<a class="nota" href="/man/note#blackfriday" id="blackfriday"></a>
 
 ```
 typedef struct {
@@ -322,7 +322,7 @@ typedef struct {
 } PostIt ;
 ```
 
-Il secondo dogma del C'hi++ è l'esistenza di una memoria persistente dell'Universo che mantiene traccia dell'esito delle scelte fatte in ciascun ciclo; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo:
+<span id="post-it">Il secondo dogma del C'hi++</span> è l'esistenza di una memoria persistente dell'Universo che mantiene traccia dell'esito delle scelte fatte in ciascun ciclo; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo:
 
 > {{ site.data.citazioni.gita.vasana }}<a class="nota" href="/man/note#vasana" id="vasana"></a>
 
