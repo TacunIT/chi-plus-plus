@@ -1,10 +1,12 @@
 ---
-status:     pubblicato 
-layout:     manuale
 class:      capitolo
-title:      I tipi di dato
+layout:     manuale
+og_desc:    "Come i *Vedanta*, anche il C'hi++ ritiene simili il Mondo e l'Arte, perché il loro scòpo è lo stesso."
+og_img:     "/assets/img/og-img/tipi-di-dato.jpg"
 permalink:  /man/tipi-di-dato
 quote:      "Tutto è byte"
+status:     pubblicato 
+title:      "I tipi di dato"
 ---
 
 La varietà dei tipi di dato disponibili è la caratteristica principale del C++.
