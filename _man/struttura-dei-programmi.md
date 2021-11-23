@@ -1,10 +1,12 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      Struttura dei programmi C++
+layout:     manuale
+og_desc:    "Così come una scatola di mattoncini Lego contiene tutti gli edifici che hai costruito e che costruirai in futuro, nell’Uno primigenio è concentrata tutta l’Energia dell’Universo ."
+og_img:     "/assets/img/og-img/struttura-dei-programmi.jpg"
 permalink:  /man/struttura-dei-programmi
 quote:      "Wer den Computer will verstehen,<br />Muss in Computers Lande gehen"
+status:     pubblicato
+title:      "Struttura dei programmi C++"
 ---
 
 La libertà sintattica e la concisione dei costrutti sono la caratteristica principale del C++.
