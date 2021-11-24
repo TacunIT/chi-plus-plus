@@ -5,6 +5,8 @@ class:      capitolo
 title:      Gli operatori
 permalink:  /man/operatori
 quote:      "question = 2b | ( ! 2b );"
+og_desc:    "Le persone per bene hanno una cosa in comune con i malandrini: pensano che il resto del Mondo sia come loro, ma si sbagliano."
+og_img:     "/assets/img/og-img/operatori.jpg"
 ---
 
 La varietà e soprattutto l'adattabilità degli operatori sono la caratteristica principale del C++.  
@@ -293,7 +295,7 @@ Prendi la ricchezza, per esempio: si dice che i soldi non danno la felicità ed 
 Comunque, una delle persone più ricche che ho conosciuto non poteva avere figli.
 Possedeva case in diversi Paesi, uno yacht e perfino un aereo personale, ma non poteva avere qualcosa che anche l'uomo più povero della Terra può facilmente ottenere.
 Che senso aveva, la sua ricchezza? Era reale?  
-Si definisce: *prestigio* qualcosa che sembra ciò che non è, come i giochi degli illusionisti, mentre *successo* non è che il participio passato del verbo *succedere*: tutto ciò che è avvenuto in passato è, per definizione, “successo”; malgrado ciò, molte persone, sotto l'influsso dell'Annosa Dicotomia, dedicano la propria vita alla ricerca o dell'uno o dell'altro o di entrambi.
+Letteralmente, si definisce: *prestigio* qualcosa che sembra ciò che non è, come i giochi degli illusionisti, mentre *successo* non è che il participio passato del verbo *succedere*: tutto ciò che è avvenuto in passato è, per definizione, “successo”; malgrado ciò, molte persone, sotto l'influsso dell'Annosa Dicotomia, dedicano la propria vita alla ricerca o dell'uno o dell'altro o di entrambi.
 La *fama* è altrettanto aleatoria: quante persone sono state famose e ora sono dimenticate? 
 Gli inventori della ruota e del fuoco hanno cambiato per sempre la storia della nostra specie e del mondo con le loro scoperte, ma nessuno sa chi siano stati.
 In tempi più recenti, il pittore Giovanni Baglione fu molto famoso, alla fine del sedicesimo Secolo, ma se ci ricordiamo di lui oggi è solo per via dei suoi rapporti con Caravaggio e, comunque, la loro fama terminerà con la nostra specie, insieme a quella di Shakespeare, Leonardo o Einstein.  
