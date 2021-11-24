@@ -19,6 +19,7 @@ exclude: [
   , 'README.md'
   , 'TODO'
   , 'VERSION'
+  , 'assets/img/og-img/og-image.psd'
 ]
 
 sass:
