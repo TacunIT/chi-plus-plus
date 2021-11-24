@@ -1,10 +1,13 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      Il preprocessore
+layout:     manuale
+og_desc:    "Il Cielo non è interessato alla tua felicità, ma al miglioramento, che, come ogni forma di crescita, ha il suo prezzo."
+og_img:     "/assets/img/og-img/preprocessore.jpg"
 permalink:  /man/preprocessore
 quote:      "Tutte le potenze, tranne quella di 1, crescono"
+status:     pubblicato
+title:      "Il preprocessore"
+
 ---
 
 Le direttive al preprocessore sono la caratteristica principale del C++.  

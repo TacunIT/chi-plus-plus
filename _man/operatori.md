@@ -1,12 +1,12 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      Gli operatori
-permalink:  /man/operatori
-quote:      "question = 2b | ( ! 2b );"
+layout:     manuale
 og_desc:    "Le persone per bene hanno una cosa in comune con i malandrini: pensano che il resto del Mondo sia come loro, ma si sbagliano."
 og_img:     "/assets/img/og-img/operatori.jpg"
+permalink:  /man/operatori
+quote:      "question = 2b | ( ! 2b );"
+status:     pubblicato
+title:      Gli operatori
 ---
 
 La varietà e soprattutto l'adattabilità degli operatori sono la caratteristica principale del C++.  
