@@ -1,3 +1,7 @@
+## 0.30.26 (November 24, 2021)
+  - Aggiunti dati og- a capitolo sugli Operatori
+  - Aggiunta immagine og a Struttura dei Programmi
+
 ## 0.30.25 (November 21, 2021)
   - Merge branch 'capitolo/commenti' into redazione
   - Esteso il testo della dottrina del capitolo sui Commenti
