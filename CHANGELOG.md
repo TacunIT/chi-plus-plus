@@ -1,3 +1,6 @@
+## 0.30.27 (November 24, 2021)
+  - Aggiunta immagine og a capitolo Preprocessore
+
 ## 0.30.26 (November 24, 2021)
   - Aggiunti dati og- a capitolo sugli Operatori
   - Aggiunta immagine og a Struttura dei Programmi
