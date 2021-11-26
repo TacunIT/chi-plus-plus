@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale 
-og_desc:    "."
+og_desc:    "Arte, scienza, filosofia e religione sono tutti tentativi di dare una risposta alle stesse domande sulla nostra esistenza. Dato che l’oggetto di studio è lo stesso, è più che normale che, alle volte, le risposte si somiglino,."
 og_img:     "/assets/img/og-img/funzioni.jpg"
 permalink:  "/man/funzioni"
 quote:      "Call me: IsNull"
