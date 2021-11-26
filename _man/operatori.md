@@ -349,6 +349,9 @@ Il Maestro Canaro, per esempio, era convinto che il Libro dell'Esodo fosse il re
 9. Non fare falsa testimonianza contro il tuo prossimo.
 10. Non desiderare ciò che appartiene ad altri; se riesci a non desiderare nulla è anche meglio.
 
+<!--
+specificare che quando aveva redatto la prima versione era un "angy young man", come direbbe Santillana, ma che poi aveva capito che le religioni sono come le opere teatrali e non le si può giudicare in base alle capacità degli attori.
+-->
 Quando gli chiesi perché avesse scelto proprio quelle regole, mi rispose: “Se li avessi seguiti anche da giovane, adesso avrei molti rimorsi in meno.” 
 
 <!--
