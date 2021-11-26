@@ -1,12 +1,12 @@
 ---
 class:      capitolo
 layout:     manuale
-permalink:  /man/memoria
+og_desc:    "La gestione della memoria, il rapporto degli esseri umani con l'operatore delete, le Cinque Fasi di elaborazione del lutto della Società moderna e un precetto sull'amore."
+og_img:     "/assets/img/og-img/memoria.jpg"
+permalink:  "/man/memoria"
 quote:      "cogito ∴ sum()"
 status:     pubblicato
-title:      La memoria
-og_img:     "/assets/img/og-img/memoria.jpg"
-og_desc:    "La gestione della memoria, il rapporto degli esseri umani con l'operatore delete, le Cinque Fasi di elaborazione del lutto della Società moderna e un precetto sull'amore."
+title:      "La memoria"
 ---
 
 La gestione della memoria è la caratteristica principale del C++.
