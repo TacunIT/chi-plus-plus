@@ -4,8 +4,10 @@ layout:     manuale
 class:      capitolo
 title:      L'ereditarietà
 permalink:  /man/ereditarieta
-quote:      "We few, we happy few<br />We bunch of data"
+quote:      "Una classe ma può ripudiare una classe figlia, se è cattiva, ma una casse figlia non può ripudiare la sua classe padre perché gli deve più di quanto non sia in grado di pagargli e in particolare gli deve l'esistenza."
 ---
+
+<!-- Etica Nicomachea 1163b -->
 
 L'ereditariaretà, ovvero la possibilità di creare delle genealogie di classi, è la caratteristica principale del C++.
 
