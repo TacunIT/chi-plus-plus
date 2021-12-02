@@ -1,10 +1,12 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      Istruzioni iterative
+layout:     manuale
+og_desc:    "."
+og_img:     "/assets/img/og-img/istruzioni-iterative.jpg"
 permalink:  /man/istruzioni-iterative
 quote:      "Invero è cosa piuttosto strana a udirsi, ma il nome che noi almeno vi diamo – un nome a cui, per difetto di esperienza in materia, non penserebbe nessuno – è: Spazionismo"
+status:     pubblicato
+title:      "Istruzioni iterative"
 ---
 
 Le istruzioni di ciclo sono le componenti fondamentali della programmazione.  
