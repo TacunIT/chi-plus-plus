@@ -1,3 +1,11 @@
+## 0.30.28 (December 02, 2021)
+  - Modificata l'immagine per Istruzioni Condizionali
+  - Iniziata revisione delle note della mappa mentale
+  - Aggiunti dati og- a capitolo sulle istruzioni condizionali
+  - Aggiunti dati og a capitolo Funzioni
+  - Modificata immagine og per Memoria
+  - Modificata immagine og per Memoria
+
 ## 0.30.27 (November 24, 2021)
   - Aggiunta immagine og a capitolo Preprocessore
 
