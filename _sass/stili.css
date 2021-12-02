@@ -472,6 +472,17 @@ BODY.manuale SECTION.indice {
 BODY.manuale SECTION.indice H1 {
     margin: 3rem 0 2rem 0;
 }
+BODY.manuale SECTION.indice DIV.capitolo {
+    display: inline-block;
+    width: 420px;
+    margin: 1rem 0;
+}
+BODY.manuale SECTION.indice DIV.capitolo P {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+    text-align: left;
+}
 BODY.manuale SECTION.indice H3.bozza A {
     color: $bozzaAColor;
 }
@@ -479,7 +490,7 @@ BODY.manuale SECTION.indice HR {
     margin: 2rem 0
 }
 BODY.manuale SECTION.indice H3 {
-    margin: 1rem 0;
+    margin: 0 auto;
     position: relative;
 /*    font-size: 1.3rem; */
 }

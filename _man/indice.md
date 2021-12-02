@@ -12,14 +12,12 @@ permalink:  "/man/indice"
 <section class="indice">
     {% for capitolo in site.man %}
         {% if capitolo.class == 'capitolo' %}
-        <h3 {% if capitolo.status=='bozza' %}class="bozza"{% endif %} >
-            <a href="{{ capitolo.url }}">{{ capitolo.title }}</a>
-            {% if capitolo.status=='redazione' %}
-            <img src="https://img.shields.io/badge/stato-in_redazione-orange"  
-                 alt="redazione" 
-                 class="badge">
-            {% endif %}
-        </h3>
+        <div class="capitolo">
+            <h3 {% if capitolo.status=='bozza' %}class="bozza"{% endif %} >
+                <a href="{{ capitolo.url }}">{{ capitolo.title }}</a>
+            </h3>
+            <p>{{ capitolo.og_desc }}</p>
+        </div>
         {% endif %}
     {% endfor %}
 </section>
