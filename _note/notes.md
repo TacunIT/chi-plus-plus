@@ -17,7 +17,6 @@ Si tratta di un fenomeno nefasto, simile alla *Maya* dell'Induismo, che ci imped
 Così come l'illusorietà del mondo sensibile è il frutto dell'azione dei tre %sp;*gu&#x1e47;a*: Sattva, Rajas e Tamas, così l'Annosa Dicotomia nasce dallo scontro fra due forze contrapposte: l'Arte e il Marketing (v. Categorie estetiche).
 
 
-
 Se esiste una Vita Esatta dovrebbe esistere un fine cui tendere. cosa che è (o mi sembra adesso) in contraddizione con il Taoismo di Dio..
 
 
