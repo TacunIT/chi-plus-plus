@@ -1,3 +1,6 @@
+## 0.30.29 (December 02, 2021)
+  - Fatte correzioni varie. Aggiunta immagine og- a Istruzioni Iterative.
+
 ## 0.30.28 (December 02, 2021)
   - Modificata l'immagine per Istruzioni Condizionali
   - Iniziata revisione delle note della mappa mentale
