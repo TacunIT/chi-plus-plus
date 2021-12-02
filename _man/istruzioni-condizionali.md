@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Una Società che esalta l'individualismo, il successo e il denaro non può dirsi del tutto innocente se chi non ha i mezzi o la capacità di ottenerli in maniera lecita cerca di procurarseli in altro modo."
+og_desc:    "Come decidere cosa sia giusto e cosa no - L'importanza del pentimento - Perché Nansen potè tagliare in due il gatto"
 og_img:     "/assets/img/og-img/istruzioni-condizionali.jpg"
 permalink:  /man/istruzioni-condizionali
 quote:      "Fare qualcosa d’intenzionale implica capire che esistono delle alternative, e sceglierne una; e questi sono attributi dell’intelligenza artificiale"
