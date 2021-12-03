@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    ""
+og_desc:    "Affinità fra Platone e il C++ - Perché ciò che amiamo ci ucciderà (se tutto va bene) - Libero arbitrio e dissonanze nel Jazz - Cartesio non capiva nulla di serigrafia"
 og_img:     "/assets/img/og-img/classi-oggetti.jpg"
 permalink:  /man/classi-oggetti
 quote:      "Ceci n'est pas une |"
