@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Quello che stai facendo è inutile. Voglio che tu lo scriva all'inizio del tuo libro, così la gente non perderà tempo a leggerlo. Tutto ciò che si fa con uno scòpo è inutile.."
+og_desc:    "I libri sono stupidi - Differenza fra la via e la direzione - Consigli per la conduzione di una canoa - La vertià è semplice - Ciò che le religioni non dicono."
 og_img:     "/assets/img/og-img/incipit.png"
 permalink:  /man/incipit
 quote:      "*.* è il migliore"

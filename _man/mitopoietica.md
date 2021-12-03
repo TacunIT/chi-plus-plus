@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Su di me ci sono due teorie: qualcuno pensa che io sia impazzito cercando di fare il debug dell'Universo, altri pensano invece che io abbia deciso di fare il debug dell'Universo perché sono pazzo."
+og_desc:    "Il diario del Maestro Canaro - L'influenza dell'Annosa Dicotomia - La dottrina del maestro Canaro - La decadenza del C++."
 og_img:     "/assets/img/og-img/mitopoietica.jpg"
 permalink:  /man/mitopoietica
 quote:      "Il settimo giorno, Dio fece il backup"
@@ -12,7 +12,7 @@ title:      Mitopoietica del C'hi++
 Su di me ci sono due teorie: qualcuno pensa che io sia impazzito cercando di fare il *debug* dell'Universo, altri pensano invece che io abbia deciso di fare il *debug* dell'Universo perché sono pazzo.
 
 Anche il Maestro Canaro fu accusato di essere pazzo quando disse di essere stato incaricato da Dio di fare il *porting* dell'Universo dal COBOL al C++, ma non era pazzo.
-Ho conservato questi documenti: sono l'ultima pagina del suo diario e le relazioni che furono inviate alla società per cui lui lavorava mentre era distaccato dal "Cliente".
+Ho conservato questi documenti: sono l'ultima pagina del suo diario e le relazioni che furono inviate alla società per cui lui lavorava mentre era distaccato dal “Cliente”.
 Mettili all'inizio del tuo libro, così tutto ciò che diremo dopo non sarà che una ripetizione.
 
 <blockquote id="universo-in-cpp" class="incluso">

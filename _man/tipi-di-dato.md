@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Come i *Vedanta*, anche il C'hi++ ritiene simili il Mondo e l'Arte, perché il loro scòpo è lo stesso."
+og_desc:    "Come i Vedanta, anche il C'hi++ ritiene simili il Mondo e l'Arte, perché il loro scòpo è lo stesso."
 og_img:     "/assets/img/og-img/tipi-di-dato.jpg"
 permalink:  /man/tipi-di-dato
 quote:      "Tutto è byte"

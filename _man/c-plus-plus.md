@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Non chiederti cosa può fare per te il sistema operativo; chiediti invece cosa puoi fare tu, per il sistema operativo."
+og_desc:    "Essere come il C++ - L’astrazione dei dati, la programmazione a oggetti e la monta equina - Un buon programmatore non si accontenta - La differenza fra C e C++, secondo Stroustrsup."
 og_img:     "/assets/img/og-img/c-plus-plus.jpg"
 permalink:  /man/c-plus-plus
 quote:      "Non chiederti cosa può fare per te il sistema operativo; chiediti invece cosa puoi fare tu, per il sistema operativo."

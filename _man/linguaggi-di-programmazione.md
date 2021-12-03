@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Tutti i linguaggi hanno una sintassi, tutti i linguaggi hanno dei tipi di dato; pochissimi linguaggi hanno anche dei principii."
+og_desc:    "Cosa disse Brian Kernigan - Un computer è come una nave - Come tornare al tuo albergo in Cina - I paradossi sono la crittografia di Dio - PacMan non paga le tasse."
 og_img:     "/assets/img/og-img/linguaggi-di-programmazione.jpg"
 permalink:  /man/linguaggi-di-programmazione
 quote:      "Dio non programma in Assembler con l'Universo"
