@@ -1,12 +1,12 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      "Bi(bli)ografia"
-permalink:  /man/bibliografia
+layout:     manuale
+og_desc:    "I libri e gli editori senza i quali C'hi++ non sarebbe stato scritto. (v. sopra)"
 og_img:     "/assets/img/og-img/bibliografia.jpg"
-og_desc:    "I libri senza i quali C'hi++ non sarebbe stato scritto. (Decidete voi se sarebbe stato un bene o un male.)"
+permalink:  /man/bibliografia
 quote:      "We few, we happy few<br />We bunch of data"
+status:     pubblicato
+title:      "Bi(bli)ografia"
 ---
 
 Questo libro è (anche) colpa di Roberto Calasso e di Adelphi.  

@@ -1,11 +1,14 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      Classi e oggetti
+layout:     manuale
+og_desc:    "Affinità fra Platone e il C++ - Perché ciò che amiamo ci ucciderà (se tutto va bene) - Libero arbitrio e dissonanze nel Jazz - Cartesio non capiva nulla di serigrafia"
+og_img:     "/assets/img/og-img/classi-oggetti.jpg"
 permalink:  /man/classi-oggetti
 quote:      "Ceci n'est pas une |"
+status:     pubblicato
+title:      "Classi e oggetti"
 ---
+
 
 <!-- Quando ho cominciato a scrivere questo capitolo, si è rotto il tasto "o" del mio Mac. È Domenica e siamo in clausura da COVID, quindi non posso andare in un centro commerciale a comprarne una esterna, temporanea. Perdonate eventuali refusi -->
 
