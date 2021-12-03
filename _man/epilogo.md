@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    ""
+og_desc:    "La morte del Maestro, nella finzione e nella realtà"
 og_img:     "/assets/img/og-img/.jpg"
 permalink:  /man/epilogo
 quote:      "Dopo di me, il reboot"

@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    ""
+og_desc:    "Una metafisica non metafisica - Bug noti delle religioni e degli esseri umani - Affinità fra il C'hi++ e le filosofie canoniche - Mappe topografiche e immagini da satellite - La Banda degli Onesti."
 og_img:     "/assets/img/og-img/.jpg"
 permalink:  /man/polimorfismo
 quote:      "When Me they fly, I am the wings<br />I am the double and the int"

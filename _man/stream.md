@@ -2,7 +2,7 @@
 class:      capitolo
 layout:     manuale
 no-index:   true
-og_desc:    ""
+og_desc:    "Problemi esistenziali del codice di esempio - Un hard-disk meta-fisico - Mezzo secolo di fallimenti ideologici - Etica degli Scacchi - John Lennon se l'è cercata."
 og_img:     "/assets/img/og-img/stream.jpg"
 permalink:  /man/stream
 quote:      "Non puoi immergere i tuoi byte due volte nello stesso stream"
