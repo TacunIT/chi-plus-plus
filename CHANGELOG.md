@@ -1,3 +1,6 @@
+## 0.30.31 (December 03, 2021)
+  - Rivisti campi og-desc dei capitoli del Manuale
+
 ## 0.30.30 (December 03, 2021)
   - Revisione del campo og-desc dei capitoli del Manuale
 
