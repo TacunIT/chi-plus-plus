@@ -1,11 +1,13 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
+layout:     manuale
 no-index:   true
-title:      Il debug
+og_desc:    "Gli errori sono inevitabili - Come correggere i bug della nostra vita - Chiedere scusa e chiedere perdòno - I fattori che influenzano il nostro comportamento - Perché non si devono adorare le parole"
+og_img:     "/assets/img/og-img/debug.jpg"
 permalink:  /man/debug
 quote:      "Cento Mondi di peccato sono dissipati dalla luce di un solo ticket"
+status:     pubblicato
+title:      "Il debug"
 ---
 
 Il debug potrà non essere il senso della vita, come recita il titolo del tuo libro, ma è indubbiamente l'aspetto più importante della programmazione.  
@@ -642,7 +644,7 @@ Per fare un paragone con il debug del software, i difetti caratteriali sono erro
 Quello che possiamo e che dobbiamo fare, però, è di <a id="pentimento" href="/man/istruzioni-condizionali#pentimento" class="xref">pentircene sinceramente</a>, ovvero riconoscerli come errori, in modo da evitare di ripeterli nei prossimi cicli di esistenza.  
 Anche se non possiamo cancellare gli effetti di un nostro errore, possiamo comunque chiedere perdòno a coloro i quali abbiamo arrecato danno.
 Non basterà chiedere scusa: si chiede scusa quando ciò che hai fatto non dipende da te, come quando qualcuno di urta e tu versi il tuo vino sul vestito del vicino; se invece il vino glielo hai tirato addosso intenzionalmente, dovrai chiedere *perdòno*, cercare per quanto possibile di riparare all'errore fatto e non commetterlo mai più, né con lui (o lei) né con altri.  
-Non sottovalutare il potere terapeutico del perdono, anche se ci saranno dei casi in cui non lo otterrai.
+Non sottovalutare il potere terapeutico del perdòno, anche se ci saranno dei casi in cui non lo otterrai.
 Se è vero che non si può cambiare il passato per qualcuno che abbiamo ferito, è altrettanto vero che si può provare a compensare il danno fatto rendendogli migliore il presente o il futuro. 
 Le persone a cui facciamo del male sono spesso quelle a cui siamo più legati; far sapere loro che che non li abbiamo dimenticati e che ciò che è successo ci addolora, può servire a ricucire delle ferite; dall'una e dall'altra parte. 
 

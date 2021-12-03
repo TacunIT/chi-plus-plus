@@ -1,25 +1,24 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      indice
-title:      Indice
-h1:         Indice
+layout:     manuale
+og_desc:    ""
+og_img:     "/assets/img/og-img/indice.jpg"
 permalink:  "/man/indice"
+status:     pubblicato
+title:      Indice
 ---
 
-# {{ page.h1 }}
+# {{ page.title }}
 
 <section class="indice">
     {% for capitolo in site.man %}
         {% if capitolo.class == 'capitolo' %}
-        <h3 {% if capitolo.status=='bozza' %}class="bozza"{% endif %} >
-            <a href="{{ capitolo.url }}">{{ capitolo.title }}</a>
-            {% if capitolo.status=='redazione' %}
-            <img src="https://img.shields.io/badge/stato-in_redazione-orange"  
-                 alt="redazione" 
-                 class="badge">
-            {% endif %}
-        </h3>
+        <div class="capitolo">
+            <h3 {% if capitolo.status=='bozza' %}class="bozza"{% endif %} >
+                <a href="{{ capitolo.url }}">{{ capitolo.title }}</a>
+            </h3>
+            <p>{{ capitolo.og_desc }}</p>
+        </div>
         {% endif %}
     {% endfor %}
 </section>

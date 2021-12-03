@@ -368,6 +368,10 @@ quote:
             Citato da {{ site.data.citazioni.corano.fonte }}
             <a href="/man/classi-oggetti#iblis"><i class="fas fa-reply"></i></a>
         </li>
+        <li id="cogito">
+            @todo: aggiungere riferimento ad Ananda, nota 35 a capitolo sull'Induismo.
+            <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
+        </li>
     </ol>
     
     <h3>L'ereditarietà</h3>
@@ -444,7 +448,6 @@ quote:
     @todo: Spiegare cosa sia l'incapsulamento e valutare la possibilità di inserire la spiegazione nel capitolo dedicato al C++.
     <a href="/man/polimorfismo#incapsulamento"><i class="fas fa-reply"></i></a>
 </li>    
-
 <li id="cogito">
     @todo: aggiungere riferimento ad Ananda, nota 35 a capitolo sull'Induismo.
     <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
