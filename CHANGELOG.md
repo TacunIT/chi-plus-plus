@@ -1,4 +1,8 @@
-  - Fatte correzioni varie. 
+## 0.30.29 (December 03, 2021)
+  - Aggiunta spaziatura alla fine dei Ringraziamenti
+  - Aggiunte immagini og- temporanee per i capitoli del Manuale
+  - Aggiunto og-desc a tutti i capitoli del Manuale
+  - Aggiunto riassunto a voci indice
   - Aggiunta immagine og- a Istruzioni Iterative.
 
 ## 0.30.28 (December 02, 2021)
