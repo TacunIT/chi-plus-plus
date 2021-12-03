@@ -15,3 +15,6 @@ A Claudio, per avermi insegnato a programmare i computer e per Coomarawsami.<br 
 A Manuela, per Musashi.<br />
 A Luciano, per aver detto che il testo non si capiva.<br />
 Al Cane Lele, per avermi aiutato a capire.<br />
+<br />
+<br />
+<br />
