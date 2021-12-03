@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale 
-og_desc:    "Arte, scienza, filosofia e religione sono tutti tentativi di dare una risposta alle stesse domande sulla nostra esistenza. Dato che l’oggetto di studio è lo stesso, è più che normale che, alle volte, le risposte si somiglino,."
+og_desc:    "Un suggerimento di Jacopone da Todi - Il problema dei romanzi - Le regole di vita di Myamoto Musashi - La Verità è una modella - La Via del carpentiere."
 og_img:     "/assets/img/og-img/funzioni.jpg"
 permalink:  "/man/funzioni"
 quote:      "Call me: IsNull"

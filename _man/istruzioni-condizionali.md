@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Come decidere cosa sia giusto e cosa no - L'importanza del pentimento - Perché Nansen potè tagliare in due il gatto"
+og_desc:    "Come decidere cosa sia giusto e cosa no - I roghi, prima e dopo il 6 Giugno del 1945 - L'importanza del pentimento - Perché Nansen potè tagliare in due il gatto"
 og_img:     "/assets/img/og-img/istruzioni-condizionali.jpg"
 permalink:  /man/istruzioni-condizionali
 quote:      "Fare qualcosa d’intenzionale implica capire che esistono delle alternative, e sceglierne una; e questi sono attributi dell’intelligenza artificiale"
