@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Il Cielo non è interessato alla tua felicità, ma al miglioramento, che, come ogni forma di crescita, ha il suo prezzo."
+og_desc:    "Valori entropici e valori gravitazionali - La pornografia per il Giudice Potter Steward - L’amore è una backdoor - Il Cielo non è interessato alla tua felicità - L'obbligo di ringraziare."
 og_img:     "/assets/img/og-img/preprocessore.jpg"
 permalink:  /man/preprocessore
 quote:      "Tutte le potenze, tranne quella di 1, crescono"

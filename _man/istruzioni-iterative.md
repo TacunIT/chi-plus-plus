@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "I (pochi) dogmi del C'hi++: l'alternanza fra Gravità ed Entropia e i Post-It - Il versionamento del software e delle filosofie."
+og_desc:    "Scòpo delle religioni - I (pochi) dogmi del C'hi++: l'alternanza fra Gravità ed Entropia e i Post-It - Il versionamento del software e delle filosofie - Gli scienziati non sono infallibili."
 og_img:     "/assets/img/og-img/istruzioni-iterative.jpg"
 permalink:  /man/istruzioni-iterative
 quote:      "Invero è cosa piuttosto strana a udirsi, ma il nome che noi almeno vi diamo – un nome a cui, per difetto di esperienza in materia, non penserebbe nessuno – è: Spazionismo"

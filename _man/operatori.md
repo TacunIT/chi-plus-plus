@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Le persone per bene hanno una cosa in comune con i malandrini: pensano che il resto del Mondo sia come loro, ma si sbagliano."
+og_desc:    "I concetti di vero e di falso sono frutto di un arbitrio - William James ha ragione - Fama, successo e prestigio - Le certification authority etiche - Affinità fra le persone per bene e i malandrini."
 og_img:     "/assets/img/og-img/operatori.jpg"
 permalink:  /man/operatori
 quote:      "question = 2b | ( ! 2b );"
