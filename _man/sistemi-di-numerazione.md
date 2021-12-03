@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Per dissuadere i pochi ostinati che sono arrivati a leggere fin qui, voglio parlarti dei sistemi di numerazione."
+og_desc:    "Come contano gli alieni esadattili - Gli antichi Romani e lo zero - L'empietà del sistema ternario bilanciato - La codifica RGB - Quanti sono i fiammiferi."
 og_img:     "/assets/img/og-img/sistemi-di-numerazione.jpg"
 permalink:  /man/sistemi-di-numerazione
 quote:      "Ci sono 10 tipi di persone: quelli che capiscono la numerazione binaria e quelli che non la capiscono"

@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "La gestione della memoria, il rapporto degli esseri umani con l'operatore delete, le Cinque Fasi di elaborazione del lutto della Società moderna e un precetto sull'amore."
+og_desc:    "La gestione della memoria - Il rapporto degli esseri umani con l'operatore delete - Le Cinque Fasi di elaborazione del lutto della Società moderna - Un precetto sull'amore."
 og_img:     "/assets/img/og-img/memoria.jpg"
 permalink:  "/man/memoria"
 quote:      "cogito ∴ sum()"

@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Ricòrdati: il codice funziona come vuoi tu solo se non gli lasci altra scelta."
+og_desc:    "Le principali discipline dell’informatica - Come opera il buon programmatore - La differenza fra un sessuologo e un pornodivo - Cosa facevano i paranoici."
 og_img:     "/assets/img/og-img/programmatore.jpg"
 permalink:  /man/programmatore
 quote:      "È stata una giornata estenuante: questa mattina ho tolto una virgola dal mio codice e stasera ce l'ho rimessa"

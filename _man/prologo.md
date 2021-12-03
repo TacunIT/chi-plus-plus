@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Nacqui da famiglia ricca, ma troppo tardi"
+og_desc:    "Una breve auto-biogrfia - L'incontro con il Maestro - Il dovere del programmatore"
 og_img:     "/assets/img/og-img/prologo.jpg"
 permalink:  /man/prologo
 quote:      "In principio era il login"
