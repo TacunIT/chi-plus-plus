@@ -1,10 +1,12 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      L'ereditarietà
+layout:     manuale
+og_desc:    ""
+og_img:     "/assets/img/og-img/ereditarieta.jpg"
 permalink:  /man/ereditarieta
 quote:      "Una classe ma può ripudiare una classe figlia, se è cattiva, ma una casse figlia non può ripudiare la sua classe padre perché gli deve più di quanto non sia in grado di pagargli e in particolare gli deve l'esistenza."
+status:     pubblicato
+title:      L'ereditarietà
 ---
 
 <!-- Etica Nicomachea 1163b -->

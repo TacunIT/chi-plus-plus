@@ -1,10 +1,12 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      Il polimorfismo
+layout:     manuale
+og_desc:    ""
+og_img:     "/assets/img/og-img/.jpg"
 permalink:  /man/polimorfismo
 quote:      "When Me they fly, I am the wings<br />I am the double and the int"
+status:     pubblicato
+title:      Il polimorfismo
 ---
 
 Come avrai certamente intuito da tutto ciò che abbiamo detto finora, la caratteristica principale del C++ è il polimorfismo.  

@@ -1,11 +1,13 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
+layout:     manuale
 no-index:   true
-title:      Il debug
+og_desc:    ""
+og_img:     "/assets/img/og-img/debug.jpg"
 permalink:  /man/debug
 quote:      "Cento Mondi di peccato sono dissipati dalla luce di un solo ticket"
+status:     pubblicato
+title:      "Il debug"
 ---
 
 Il debug potrà non essere il senso della vita, come recita il titolo del tuo libro, ma è indubbiamente l'aspetto più importante della programmazione.  

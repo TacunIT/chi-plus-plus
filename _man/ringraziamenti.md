@@ -1,9 +1,11 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      Ringraziamenti
+layout:     manuale
+og_desc:    ""
+og_img:     "/assets/img/og-img/ringraziamenti.jpg"
 permalink:  /man/ringraziamenti
+status:     pubblicato
+title:      Ringraziamenti
 ---
 
 A mia madre, per la favola del Cavallo Fuggito e per aver piantato il seme da cui è nato tutto questo.
