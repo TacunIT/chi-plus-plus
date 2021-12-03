@@ -1,10 +1,12 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      Epilogo
+layout:     manuale
+og_desc:    ""
+og_img:     "/assets/img/og-img/.jpg"
 permalink:  /man/epilogo
 quote:      "Dopo di me, il reboot"
+status:     pubblicato
+title:      Epilogo
 ---
 
 Fu uno dei confratelli ad avvisarmi.

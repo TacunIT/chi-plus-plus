@@ -1,13 +1,14 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      indice
-title:      Indice
-h1:         Indice
+layout:     manuale
+og_desc:    ""
+og_img:     "/assets/img/og-img/indice.jpg"
 permalink:  "/man/indice"
+status:     pubblicato
+title:      Indice
 ---
 
-# {{ page.h1 }}
+# {{ page.title }}
 
 <section class="indice">
     {% for capitolo in site.man %}

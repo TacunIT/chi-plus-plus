@@ -1,11 +1,13 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
+layout:     manuale
 no-index:   true
-title:      Gli stream
+og_desc:    ""
+og_img:     "/assets/img/og-img/stream.jpg"
 permalink:  /man/stream
 quote:      "Non puoi immergere i tuoi byte due volte nello stesso stream"
+status:     pubblicato
+title:      Gli stream
 ---
 
 Oggi ti parlerò degli *stream* che, com'è noto, sono la componente più importante del C++.
