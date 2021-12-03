@@ -1,3 +1,6 @@
+## 0.30.30 (December 03, 2021)
+  - Revisione del campo og-desc dei capitoli del Manuale
+
 ## 0.30.29 (December 03, 2021)
   - Aggiunta spaziatura alla fine dei Ringraziamenti
   - Aggiunte immagini og- temporanee per i capitoli del Manuale
