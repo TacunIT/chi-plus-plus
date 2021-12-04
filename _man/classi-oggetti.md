@@ -617,7 +617,7 @@ Questo livello è assimilabile all'istanza di una classe, che mette in atto ciò
 La nostra entità ideale è unica e costante, mentre la nostra manifestazione fisica è mutevole: come sai, uno stesso oggetto può essere allocato in aree differenti di memoria, in successive esecuzioni di un programma, così come una stessa stampa può essere riprodotta su supporti diversi.
 In questo ciclo di esistenza, il Maestro Canaro e il cane Lele sono stati un umano e un cane che correvano sulle colline intorno al lago di Bracciano, ma in altre esistenze potrebbero essere &mdash; o essere stati &mdash; altre persone e altri animali, in altri luoghi o addirittura in altri pianeti. 
 Il nostro livello ideale, infatti, non stabilisce cosa dobbiamo essere, ma quale debba essere il nostro contributo all'economia dell'Universo; la forma che assumiamo o il luogo in cui ci manifestiamo sono del tutto incidentali. 
-Per il C'hi++, come per l'Induismo<a class="nota" href="/man/note#cogito" id="cogito"></a>, la frase: “Cogito ergo sum” di Cartesio è insensata, perché ciò che cogita è l'istanza.
+Per il C'hi++, come per l'Induismo<a class="nota" href="/man/note#cogito" id="cogito"></a>, la frase: “Cogito ergo sum” di Cartesio è insensata, perché ciò che cogita è l'istanza, che è transeunte.
 Ciò che siamo realmente, la nostra essenza, si manifesta in ciò che facciamo istintivamente.
 
 <!--
