@@ -2,7 +2,7 @@
 class:      capitolo
 layout:     manuale
 no-index:   true
-og_desc:    "Gli errori sono inevitabili - Come correggere i bug della nostra vita - Chiedere scusa e chiedere perdòno - I fattori che influenzano il nostro comportamento - Perché non si devono adorare le parole"
+og_desc:    "Gli errori sono inevitabili - Come correggere i bug della nostra vita - Chiedere scusa e chiedere perdòno - I fattori che influenzano il nostro comportamento - Non si devono adorare le parole"
 og_img:     "/assets/img/og-img/debug.jpg"
 permalink:  /man/debug
 quote:      "Cento Mondi di peccato sono dissipati dalla luce di un solo ticket"

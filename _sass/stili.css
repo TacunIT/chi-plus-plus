@@ -478,8 +478,8 @@ BODY.manuale SECTION.indice DIV.capitolo {
     margin: 1rem 0;
 }
 BODY.manuale SECTION.indice DIV.capitolo P {
-    font-size: 1rem;
-    color: #666;
+    font-size: 14pt;
+    color: #888;
     font-style: italic;
     text-align: left;
 }
@@ -916,6 +916,11 @@ NAV.post A.next {
     BODY.manuale.copertina HEADER img.logo {
         width: 200px;
         height: auto;
+    }
+    BODY.manuale SECTION.indice DIV.capitolo {
+        width: auto;
+    }
+    BODY.manuale SECTION.indice DIV.capitolo P {
     }
     BODY.pagina MAIN OL {
         text-align: left;
