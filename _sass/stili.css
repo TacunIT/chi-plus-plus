@@ -478,7 +478,7 @@ BODY.manuale SECTION.indice DIV.capitolo {
     margin: 1rem 0;
 }
 BODY.manuale SECTION.indice DIV.capitolo P {
-    font-size: 14pt;
+    font-size: 0.95em;
     color: #888;
     font-style: italic;
     text-align: left;
