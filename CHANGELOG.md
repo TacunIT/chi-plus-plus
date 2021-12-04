@@ -1,3 +1,6 @@
+## 0.30.32 (December 04, 2021)
+  - Rivisti stili dell'indice del Manuale
+
 ## 0.30.31 (December 03, 2021)
   - Rivisti campi og-desc dei capitoli del Manuale
 
