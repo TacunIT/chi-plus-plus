@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "I libri sono stupidi - Differenza fra la via e la direzione - Consigli per la conduzione di una canoa - La vertià è semplice - Ciò che le religioni non dicono."
+og_desc:    "I libri sono stupidi - Differenza fra la via e la direzione - Consigli per la conduzione di una canoa - La verità è semplice - Ciò che le religioni non dicono."
 og_img:     "/assets/img/og-img/incipit.png"
 permalink:  /man/incipit
 quote:      "*.* è il migliore"

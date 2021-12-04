@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "L'Universo è fatto di spazioni - Il Mondo ha la natura dell’Arte - René Guenon aveva ragione - Perché la velocità luce non può superare i trecento milioni di metri al secondo."
+og_desc:    "L'Universo è fatto di spazioni - Il Mondo ha la natura dell’Arte - René Guenon aveva ragione - Perché la luce non può andare più veloce."
 og_img:     "/assets/img/og-img/tipi-di-dato.jpg"
 permalink:  /man/tipi-di-dato
 quote:      "Tutto è byte"
