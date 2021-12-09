@@ -1,3 +1,10 @@
+## 0.30.33 (December 09, 2021)
+  - Aggiunta immagine og- a capitolo EPolimorfismo
+  - Aggiunta immagine og- a capitolo Ereditarietà
+  - Rimossi i link dalla Bibliografia
+  - Aggiornata immagine og- a capitolo Classi e Oggetti
+  - Corretta dimensione testo indice Manuale
+
 ## 0.30.32 (December 04, 2021)
   - Rivisti stili dell'indice del Manuale
 
