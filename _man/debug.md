@@ -14,8 +14,9 @@ Il debug potrà non essere il senso della vita, come recita il titolo del tuo li
 Nella tua carriera di programmatore potrai non utilizzare mai una classe *functor* o ridefinire l'operatore `->`, ma sicuramente farai degli errori e li dovrai correggere.
 Malgrado ciò, i manuali di programmazione non parlano mai del *debug*.
 Si sono scritte migliaia di pagine sui diversi linguaggi di programmazione; non c'è primavera che non veda fiorire un nuovo paradigma di programmazione &mdash; strutturata, *object-oriented*, *agile*, *fuzzy* &mdash; eppure, nessuno si è mai preoccupato di formalizzare il processo di correzione del codice.  
+Non a caso, la decadenza del software è iniziata quando le stampanti laser hanno soppiantato le vecchie stampanti ad aghi. Il codice non si può leggere su un foglio A4: a meno che non sia un programma banale, non c'entrerà né in altezza né in larghezza. Il modulo in continuo di una stampante ad aghi a 136 colonne, al contrario, ti permette di stampare tutto il tuo codice e di rileggerlo con calma; correggerlo, se necessario e migliorarlo se possibile. È così che si facevano le revisioni di codice, quando c'erano il tempo e i soldi per fare le revisioni di codice.
 
-> {{ site.data.canaro.decadenza-software }}
+---
 
 Trascurare il debug è come affermare che non si faranno mai errori.
 Non importa quanto sia efficiente il linguaggio di programmazione; non importa quanto sia astuto e vigile il compilatore; non importa nemmeno quanto sia bravo il programmatore: o prima o poi, la distrazione, la stanchezza o un evento esterno permetteranno a un errore di intrufolarsi nel codice.
