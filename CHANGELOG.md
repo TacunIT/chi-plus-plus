@@ -1,3 +1,7 @@
+## 0.30.34 (December 12, 2021)
+  - Aggiunta immagine og- a capitolo sul Debug
+  - Aggiunta immagine og- per Stream
+
 ## 0.30.33 (December 09, 2021)
   - Aggiunta immagine og- a capitolo EPolimorfismo
   - Aggiunta immagine og- a capitolo Ereditarietà
