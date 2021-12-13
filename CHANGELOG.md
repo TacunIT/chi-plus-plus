@@ -1,3 +1,6 @@
+## 0.30.35 (December 13, 2021)
+  - Aggiunta immagine og- a Epilogo
+
 ## 0.30.34 (December 12, 2021)
   - Aggiunta immagine og- a capitolo sul Debug
   - Aggiunta immagine og- per Stream
