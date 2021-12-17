@@ -452,7 +452,7 @@ La seconda istruzione, verifica che l'iteratore sia differente da `monte.end`, c
 La terza istruzione incrementa l'iteratore di una posizione e dimostra come la ridefinizione di un operatore per una classe renda il codice più facile da leggere: anche se tu non hai mai visto una classe template, capisci subito che quella istruzione incrementa il valore di `it` di un'unità.  
 Gli <i id="algoritmi-stl">algoritmi</i> della STL, definiti nell'header `<algorithm>` sono funzioni template che permettono di individuare, copiare, ordinare, unire o eliminare i dati all'interno di un container.
 
-<!-- @todo: aggiungere commenti -->
+
 ```
 {% include_relative src/polimorfismo-algoritmi.cpp %}
 ```
