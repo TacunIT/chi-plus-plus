@@ -1,3 +1,6 @@
+## 0.30.36 (December 17, 2021)
+  - Aggiunti commenti allo script polimorfismo-algoritmi.cpp
+
 ## 0.30.35 (December 13, 2021)
   - Aggiunta immagine og- a Epilogo
 
