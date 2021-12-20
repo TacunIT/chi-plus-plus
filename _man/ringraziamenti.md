@@ -10,11 +10,9 @@ title:      Ringraziamenti
 
 A mia madre, per la favola del Cavallo Fuggito e per aver piantato il seme da cui è nato tutto questo.<br />
 A mio padre, per avermi insegnato a distinguere uno scrittore onesto da uno disonesto, anche quando lo scrittore sono io.<br />
-A Wayne, per avermi regalato il libro, dicendo: «Read it. It changed my life».<br />
+A Wayne, per avermi regalato il libro.<br />
 A Claudio, per avermi insegnato a programmare i computer e per Coomarawsami.<br />
 A Manuela, per Musashi.<br />
 A Luciano, per aver detto che il testo non si capiva.<br />
 Al Cane Lele, per avermi aiutato a capire.<br />
-<br />
-<br />
 <br />

@@ -176,8 +176,7 @@ Sfortunatamente, però, gli pseudo-mistici non hanno mai capito che recitare il 
 La religione è come gli antibiotici: non fa effetto se non prendi la dose intera.
 
 <i>Depressione:</i> la sindrome depressiva è la seconda malattia più diffusa al Mondo, dopo i disturbi cardiaci, segno evidente che la fase di negoziazione non ha sortito gli effetti sperati.
-Fallito ogni tentativo di combattere la realtà, l'Uomo del terzo Millennio  ha cercato scampo nella fuga.
-Così come il Giappone dei Tokugawa, si è rinchiuso in sé stesso<a class="nota" href="/man/note#isolamento" id="isolamento"></a>, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a class="nota" href="/man/note#sakoku" id="sakoku"></a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
+Fallito ogni tentativo di combattere la realtà, l'Uomo del terzo Millennio  ha cercato scampo nella fuga e si è rinchiuso in sé stesso come il Giappone dei Tokugawa, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a class="nota" href="/man/note#sakoku" id="sakoku"></a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
 La realtà è ovunque e anche isolandoci non possiamo sfuggirle; anzi: la solitudine genera un *feedback* che amplifica lo stato di malessere e rende ancora più difficile e improbabile il raggiungimento dello stadio successivo, ovvero, la..
 
 <i>Accettazione:</i> il solo modo per salvarsi è rinunciare agli insegnamenti dei cattivi maestri del passato e accettare il fatto di non essere delle gocce d'acqua uniche e insostituibili, ma di far parte del mare.
