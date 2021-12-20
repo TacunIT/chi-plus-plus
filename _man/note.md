@@ -1,11 +1,16 @@
 ---
-status:     pubblicato
-layout:     manuale
 class:      capitolo
-title:      Note
+layout:     manuale
+og_desc:    "Le persone senza le quali C'hi++ non sarebbe stato scritto. (Decidete voi se sarebbe stato un bene o un male.)"
+og_img:     "/assets/img/og-img/note.jpg"
 permalink:  /man/note
 quote:      
+status:     pubblicato
+title:      Note
 ---
+
+Le note sono la parte più importante di un libro.
+
 
 <section class="note">
 
