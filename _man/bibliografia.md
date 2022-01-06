@@ -36,8 +36,7 @@ All'inizio degli anni '90, il mio amico Wayne Martini mi regalò
 *Lo Zen e l’arte della manutenzione della motocicletta* dicendo: “Read it. It changed my life”. 
 Io pensai: “Sempre esagerati, 'sti americani!”, ma, come spesso accade, mi sbagliavo: il libro di Pirsig &mdash; letto proprio nel momento in cui  cominciava la mia storia d'amore con i computer &mdash; cambiò anche la mia vita e mi spinse ad approfondire la conoscenza del Buddismo Zen.
 
-In *
-Non riuscivo a capire perché l'esponente di una religione che predica la benevolenza tagliasse a metà un gatto, a scopo puramnte didattico.
+In *101 Storie Zen*, scoprii che l'origine della favola del *Cavallo Fuggito*, riportata da Calvino nelle sue *Fiabe Italiane* era tutt'altro che italiana, mentre ne *La Porta Senza Porta* mi colpì il Koan *Nansen taglia a metà il gatto* perché non riuscivo a capire con che diritto l'esponente di una religione che predica la benevolenza tagliasse a metà un gatto, a scopo puramnte didattico.
 Ci avrei messo poco più di dieci anni, a capirlo. 
 
 <p class="centrato"><img src="/assets/img/nansen-taglia-il-gatto.jpg" alt="Nansen taglia il gatto" /></p>
