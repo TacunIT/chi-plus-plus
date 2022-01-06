@@ -1,3 +1,7 @@
+## 0.30.37 (January 06, 2022)
+  - Corretto errore nella Proposta
+  - Rivisti il testo della bibliografia e delle note
+
 ## 0.30.36 (December 17, 2021)
   - Aggiunti commenti allo script polimorfismo-algoritmi.cpp
 
