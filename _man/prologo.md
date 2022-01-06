@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Una breve auto-biogrfia - L'incontro con il Maestro - Il dovere del programmatore"
+og_desc:    "Una breve auto-biografia - L'incontro con il Maestro - Il dovere del programmatore"
 og_img:     "/assets/img/og-img/prologo.jpg"
 permalink:  /man/prologo
 quote:      "In principio era il login"
@@ -31,7 +31,7 @@ Cominciò a battere sulla tastiera del suo computer e io mi avvicinai incuriosit
 Quando arrivai a vedere l'immagine proiettata dallo schermo capii perché nessuno all'interno del convento sapesse intervenire sul suo programma.  
 «Sì, è C++,» disse il Maestro, intuendo la mia curiosità. «Un tempo si pensava che fosse il linguaggio del futuro. Come di tutti i linguaggi, del resto.»  
 Chiesi cosa volesse dire che il programma era stato istruito a dare errori.  
-«Questa è una domanda sciocca. D'altro canto, il fatto che stessi dicendo la verità è evidente, visto che non ti ho nemmeno chiesto che genere di difetto fosse stato rilevato. Bene, puoi andare a dire al tuo superiore che il vecchio pazzo ha corretto l'errore.»  
+«Questa è una domanda sciocca. D'altro canto, il fatto che stessi dicendo la verità è evidente, visto che non ti ho nemmeno chiesto che genere di difetto fosse stato rilevato. Comunque, puoi andare a dire al tuo superiore che il vecchio pazzo ha corretto l'errore.»  
 Non riuscivo a distogliere lo sguardo dallo schermo, ero come ipnotizzato da quello strano codice che potevo capire solo in parte.
 In quelle sequenze di istruzioni c'era qualcosa che non avevo mai visto prima: un ritmo, una sorta di indefinibile bellezza di cui mi ero innamorato a prima vista.  
 Chiesi al Maestro di insegnarmi il C++.  
