@@ -1,13 +1,18 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Le persone senza le quali C'hi++ non sarebbe stato scritto. (Decidete voi se sarebbe stato un bene o un male.)"
+og_desc:    "Note al testo e una nota sulle note."
 og_img:     "/assets/img/og-img/note.jpg"
 permalink:  /man/note
 quote:      
 status:     pubblicato
 title:      Note
 ---
+
+Le note sono la parte più importante di un libro.
+William Hazlitt, nel primo capitolo del suo libro *L'ignoranza delle persone colte*, sostiene che coloro i quali leggono troppi libri non hanno idee proprie e quindi sono costretti a chiedere in prestito la saggezza altrui; allo stesso tempo, con encomiabile coerenza, in circa otto pagine di testo, fa una dozzina di citazioni: dal Vangelo a Milton, da Shakespeare Wordsworth.  
+Chiediti perciò quale sia il motivo per cui hai riportato qui dei brani di opere altrui.
+
 
 <section class="note">
 
