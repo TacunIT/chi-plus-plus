@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Note al testo e una nota sulle note."
+og_desc:    "Note al testo e una nota (con nota) sulle note."
 og_img:     "/assets/img/og-img/note.jpg"
 permalink:  /man/note
 quote:      
@@ -10,16 +10,16 @@ title:      Note
 ---
 
 Le note sono la parte più importante di un libro.
-William Hazlitt, nel primo capitolo del suo libro *L'ignoranza delle persone colte*, sostiene che coloro i quali leggono troppi libri non hanno idee proprie e quindi sono costretti a chiedere in prestito la saggezza altrui; allo stesso tempo, con encomiabile coerenza, in circa otto pagine di testo, fa una dozzina di citazioni: dal Vangelo a Milton, da Shakespeare Wordsworth.  
+William Hazlitt, nel primo capitolo de: *L'ignoranza delle persone colte*, sostiene che coloro i quali leggono troppi libri non hanno idee proprie e quindi sono costretti a chiedere in prestito la saggezza altrui; allo stesso tempo, con encomiabile coerenza, in circa otto pagine di testo, fa una dozzina di citazioni: dal Vangelo a Milton, da Shakespeare Wordsworth.  
 Vorrei perciò che tu soffermassi la tua mente sul motivo che ti ha spinto a riportare qui dei brani di opere altrui. 
 Se è un modo di dire: “Vedi? Anche lui la pensava come me!”, è sbagliato; devi se mai affermare: “Vedi? anche io la penso come lui!”.
-Come ti ho detto <a href="/man/funzioni#verita" class="xref">in precedenza</a>, la Verità è una.
-Puoi ritrarla a olio, a tempera, a carboncino o al tratto, ma il soggetto della tua opera sarà sempre lo stesso; se non lo è, non è di Lei, che stai parlando.  
+Come ti ho detto <a href="/man/funzioni#verita" class="xref">in precedenza</a>, la Verità è una; puoi ritrarla a olio, a tempera, a carboncino o al tratto, ma il soggetto della tua opera sarà sempre lo stesso; se non lo è, non è di Lei, che stai parlando.  
 René Guénon disse:
 
 > {{ site.data.citazioni.guenon.filosofi.testo }}<a class="nota" href="/man/note#fn-verita" id="verita"></a>
 
-Questo *bisogno* di distinguersi, questa *agitazione* sono chiari sintomi di un asservimento all'Entropia, ammissibile per uno *kshatriya*, ma inaccettabile per un *brâhmana*<!-- @todo: verificare traslitterazione -->.
+Questo *bisogno* di distinguersi, questa *agitazione* sono chiari sintomi di un asservimento all'Entropia, ammissibile per uno *kshatriya*, ma inaccettabile per un *brâhmana*<!-- @todo: verificare traslitterazione -->.  
+Linux non appartiene a Linus Torvaldsen e nemmeno alle centinaia di migliaia di sviluppatori che costantemente lo fanno evolvere.
 
 <section class="note">
 
@@ -466,6 +466,10 @@ Questo *bisogno* di distinguersi, questa *agitazione* sono chiari sintomi di un 
     </ol>
 </section>
 <!--
+<li id="fn-knoll">
+    La prima versione di Photoshop fu sviluppata nel 1987 dai fratelli Thomas e John Knoll e da Mark Hamburg, i quali, nel 1988, ne vendettero i diritti di distribuzione alla Adobe.
+    <a href="#knoll"><i class="fas fa-reply"></i></a>
+</li>        
 <li id="incapsulamento">
     @todo: Spiegare cosa sia l'incapsulamento e valutare la possibilità di inserire la spiegazione nel capitolo dedicato al C++.
     <a href="/man/polimorfismo#incapsulamento"><i class="fas fa-reply"></i></a>
