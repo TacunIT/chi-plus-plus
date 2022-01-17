@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "Note al testo e una nota (con nota) sulle note."
+og_desc:    "Note al testo e una nota (con note) sulle note."
 og_img:     "/assets/img/og-img/note.jpg"
 permalink:  /man/note
 quote:      
@@ -19,7 +19,7 @@ René Guénon disse:
 > {{ site.data.citazioni.guenon.filosofi.testo }}<a class="nota" href="/man/note#fn-verita" id="verita"></a>
 
 Questo *bisogno* di distinguersi, questa *agitazione* sono chiari sintomi di un asservimento all'Entropia &mdash; ammissibile per uno *kshatriya*, ma inaccettabile per un *brâhmana*<!-- @todo: verificare traslitterazione -->.  
-Così come i boschi di Faulkner non erano né del Maggiore De Spain, né di Thomas Sutpen, da cui li aveva comprati, né del capo Chickasaw Ikkemotubbe che glieli aveva venduti, Linux non appartiene né ai suoi sviluppatori, né a Linus Torvalds e nemmeno ad Andrew Tanenbaum.
+Così come i boschi di Faulkner non erano né del Maggiore De Spain, né di Thomas Sutpen, da cui li aveva comprati, né del capo Chickasaw Ikkemotubbe<a class="nota" href="/man/note#fn-faulkner" id="faulkner"></a> che glieli aveva venduti, Linux non appartiene né ai suoi sviluppatori, né a Linus Torvalds<a class="nota" href="/man/note#fn-linus" id="linus"></a> e nemmeno ad Andrew Tanenbaum<a class="nota" href="/man/note#fn-tanenbaum" id="tanenbaum"></a>.
 Allo stesso modo, non si può dire che il C'hi++ sia tuo, perché lo hai descritto nel tuo libro, né mio, che te l'ho insegnato, né del Maestro Canaro che a sua volta lo insegnò a me. 
 Come avviene con la produzione del software, ciascuno di noi ha descritto a suo modo una stessa modella, aggiungendo qualcosa, correggendo qualcosa e, inevitabilmente, introducendo nuovi errori, che dovranno essere corretti da chi verrà dopo di noi. 
 Non c'è niente di male, in tutto ciò. 
@@ -467,6 +467,19 @@ Non è degli errori, che devi avere paura, ma della stasi.
             {{ site.data.citazioni.guenon.filosofi.fonte }}
             <a href="#verita"><i class="fas fa-reply"></i></a>
         </li>        
+        <li id="fn-faulkner">
+            Personaggi del racconto di William Faulkner <i>L'Orso</i>.
+            <a href="#verita"><i class="fas fa-reply"></i></a>
+        </li>        
+        <li id="fn-linus">
+            Creatore del sistema operativo Linux.
+            <a href="#linus"><i class="fas fa-reply"></i></a>
+        </li>        
+        <li id="fn-tanenbaum">
+            Creatore del sistema operativo Minix, a cui Torvalds si ispirò per creare Linux.
+            <a href="#tanenbaum"><i class="fas fa-reply"></i></a>
+        </li>        
+
     </ol>
 </section>
 <!--
