@@ -1,3 +1,6 @@
+## 0.30.39 (January 17, 2022)
+  - Redazione del testo delle note
+
 ## 0.30.38 (January 14, 2022)
   - Revisione del testo delle Note
   - Iniziato testo introduttivo delle Note
