@@ -18,8 +18,12 @@ René Guénon disse:
 
 > {{ site.data.citazioni.guenon.filosofi.testo }}<a class="nota" href="/man/note#fn-verita" id="verita"></a>
 
-Questo *bisogno* di distinguersi, questa *agitazione* sono chiari sintomi di un asservimento all'Entropia, ammissibile per uno *kshatriya*, ma inaccettabile per un *brâhmana*<!-- @todo: verificare traslitterazione -->.  
-Linux non appartiene a Linus Torvaldsen e nemmeno alle centinaia di migliaia di sviluppatori che costantemente lo fanno evolvere.
+Questo *bisogno* di distinguersi, questa *agitazione* sono chiari sintomi di un asservimento all'Entropia &mdash; ammissibile per uno *kshatriya*, ma inaccettabile per un *brâhmana*<!-- @todo: verificare traslitterazione -->.  
+Così come i boschi di Faulkner non erano né del Maggiore De Spain, né di Thomas Sutpen, da cui li aveva comprati, né del capo Chickasaw Ikkemotubbe che glieli aveva venduti, Linux non appartiene né ai suoi sviluppatori, né a Linus Torvalds e nemmeno ad Andrew Tanenbaum.
+Allo stesso modo, non si può dire che il C'hi++ sia tuo, perché lo hai descritto nel tuo libro, né mio, che te l'ho insegnato, né del Maestro Canaro che a sua volta lo insegnò a me. 
+Come avviene con la produzione del software, ciascuno di noi ha descritto a suo modo una stessa modella, aggiungendo qualcosa, correggendo qualcosa e, inevitabilmente, introducendo nuovi errori, che dovranno essere corretti da chi verrà dopo di noi. 
+Non c'è niente di male, in tutto ciò. 
+Non è degli errori, che devi avere paura, ma della stasi.  
 
 <section class="note">
 
