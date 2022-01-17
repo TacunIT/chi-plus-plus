@@ -1,3 +1,6 @@
+## 0.30.40 (January 17, 2022)
+  - Aggiunte note per nomi nel testo delle Note
+
 ## 0.30.39 (January 17, 2022)
   - Redazione del testo delle note
 
