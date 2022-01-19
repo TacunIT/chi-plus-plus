@@ -455,7 +455,7 @@ L'output di questo codice è:
 
 <!-- @todo: Aggiungere un paragrafo sui valori di default per i parametri -->
 
----
+<hr id="ricorsive">
 
 A questo punto, non mi resta che parlarti delle funzioni che richiamano sé stesse, ovvero, le *funzioni ricorsive*:
 
