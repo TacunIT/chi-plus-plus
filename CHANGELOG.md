@@ -1,3 +1,6 @@
+## 0.30.41 (January 19, 2022)
+  - Aggiunto id a HR funzioni ricorsive
+
 ## 0.30.40 (January 17, 2022)
   - Aggiunte note per nomi nel testo delle Note
 
