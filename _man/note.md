@@ -411,6 +411,10 @@ Non è degli errori, che devi avere paura, ma della stasi.
     
     <h3>Il polimorfismo</h3>
     <ol>
+        <li id="guenon-spirito">
+            {{ site.data.citazioni.guenon.spirito.fonte }}
+            <a href="/man/polimorfismo#guenon-spirito"><i class="fas fa-reply"></i></a>
+        </li>
         <li id="dawkins-analogia">
             R. <span>Dawkins</span>, 
             <i>L'Orologiaio Cieco</i>, 
