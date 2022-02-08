@@ -1,13 +1,29 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    ""
+og_desc:    "Note al testo e una nota (con note) sulle note."
 og_img:     "/assets/img/og-img/note.jpg"
 permalink:  /man/note
 quote:      
 status:     pubblicato
 title:      Note
 ---
+
+Le note sono la parte più importante di un libro.
+William Hazlitt, nel primo capitolo de: *L'ignoranza delle persone colte*, sostiene che coloro i quali leggono troppi libri non hanno idee proprie e quindi sono costretti a chiedere in prestito la saggezza altrui; allo stesso tempo, con encomiabile coerenza, in circa otto pagine di testo, fa una dozzina di citazioni: dal Vangelo a Milton, da Shakespeare Wordsworth.  
+Vorrei perciò che tu soffermassi la tua mente sul motivo che ti ha spinto a riportare qui dei brani di opere altrui. 
+Se è un modo di dire: “Vedi? Anche lui la pensava come me!”, è sbagliato; devi se mai affermare: “Vedi? anche io la penso come lui!”.
+Come ti ho detto <a href="/man/funzioni#verita" class="xref">in precedenza</a>, la Verità è una; puoi ritrarla a olio, a tempera, a carboncino o al tratto, ma il soggetto della tua opera sarà sempre lo stesso; se non lo è, non è di Lei, che stai parlando.  
+René Guénon disse:
+
+> {{ site.data.citazioni.guenon.filosofi.testo }}<a class="nota" href="/man/note#fn-verita" id="verita"></a>
+
+Questo *bisogno* di distinguersi, questa *agitazione* sono chiari sintomi di un asservimento all'Entropia &mdash; ammissibile per uno *kshatriya*, ma inaccettabile per un *brâhmana*<!-- @todo: verificare traslitterazione -->.  
+Così come i boschi di Faulkner non erano né del Maggiore De Spain, né di Thomas Sutpen, da cui li aveva comprati, né del capo Chickasaw Ikkemotubbe<a class="nota" href="/man/note#fn-faulkner" id="faulkner"></a> che glieli aveva venduti, Linux non appartiene né ai suoi sviluppatori, né a Linus Torvalds<a class="nota" href="/man/note#fn-linus" id="linus"></a> e nemmeno ad Andrew Tanenbaum<a class="nota" href="/man/note#fn-tanenbaum" id="tanenbaum"></a>.
+Allo stesso modo, non si può dire che il C'hi++ sia tuo, perché lo hai descritto nel tuo libro, né mio, che te l'ho insegnato, né del Maestro Canaro che a sua volta lo insegnò a me. 
+Come avviene con la produzione del software, ciascuno di noi ha descritto a suo modo una stessa modella, aggiungendo qualcosa, correggendo qualcosa e, inevitabilmente, introducendo nuovi errori, che dovranno essere corretti da chi verrà dopo di noi. 
+Non c'è niente di male, in tutto ciò. 
+Non è degli errori, che devi avere paura, ma della stasi.  
 
 <section class="note">
 
@@ -395,6 +411,10 @@ title:      Note
     
     <h3>Il polimorfismo</h3>
     <ol>
+        <li id="guenon-spirito">
+            {{ site.data.citazioni.guenon.spirito.fonte }}
+            <a href="/man/polimorfismo#guenon-spirito"><i class="fas fa-reply"></i></a>
+        </li>
         <li id="dawkins-analogia">
             R. <span>Dawkins</span>, 
             <i>L'Orologiaio Cieco</i>, 
@@ -444,24 +464,37 @@ title:      Note
             <a href="/man/debug#firmware"><i class="fas fa-reply"></i></a>
         </li>     
     </ol>
+
+    <h3>Note</h3>
+    <ol>
+        <li id="fn-verita">
+            {{ site.data.citazioni.guenon.filosofi.fonte }}
+            <a href="#verita"><i class="fas fa-reply"></i></a>
+        </li>        
+        <li id="fn-faulkner">
+            Personaggi del racconto di William Faulkner <i>L'Orso</i>.
+            <a href="#verita"><i class="fas fa-reply"></i></a>
+        </li>        
+        <li id="fn-linus">
+            Creatore del sistema operativo Linux.
+            <a href="#linus"><i class="fas fa-reply"></i></a>
+        </li>        
+        <li id="fn-tanenbaum">
+            Creatore del sistema operativo Minix, a cui Torvalds si ispirò per creare Linux.
+            <a href="#tanenbaum"><i class="fas fa-reply"></i></a>
+        </li>        
+
+    </ol>
 </section>
 <!--
+<li id="fn-knoll">
+    La prima versione di Photoshop fu sviluppata nel 1987 dai fratelli Thomas e John Knoll e da Mark Hamburg, i quali, nel 1988, ne vendettero i diritti di distribuzione alla Adobe.
+    <a href="#knoll"><i class="fas fa-reply"></i></a>
+</li>        
 <li id="incapsulamento">
     @todo: Spiegare cosa sia l'incapsulamento e valutare la possibilità di inserire la spiegazione nel capitolo dedicato al C++.
     <a href="/man/polimorfismo#incapsulamento"><i class="fas fa-reply"></i></a>
 </li>    
-<li id="cogito">
-    @todo: aggiungere riferimento ad Ananda, nota 35 a capitolo sull'Induismo.
-    <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
-</li>
-
-<li id="">
-    <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
-</li>
-<li id="corano">
-    Cfr. brano su Mosé e al-Khidr - Cor. XVIII, 65-82.
-    <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
-</li>
 <li id="vedanta">
     A. K. <span>Coomaraswami</span>, 
     <i>Tempo ed Eternità</i>,

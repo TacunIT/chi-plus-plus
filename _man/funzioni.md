@@ -455,7 +455,7 @@ L'output di questo codice è:
 
 <!-- @todo: Aggiungere un paragrafo sui valori di default per i parametri -->
 
----
+<hr id="ricorsive">
 
 A questo punto, non mi resta che parlarti delle funzioni che richiamano sé stesse, ovvero, le *funzioni ricorsive*:
 
@@ -512,7 +512,7 @@ Allo stesso modo, lungo la Via, troverai delle necessità, che ti instraderanno 
 Se tu agirai in base alle necessità, saprai sempre che ti stai muovendo nella direzione giusta, anche quando sarai costretto a rallentare o a percorrere strade che non gradisci.
 Se invece agirai in base ai desiderii andrai di qua e di là, come “un asino privo di briglie”<!-- @todo: cercare la citazione da Attar --> e quando alla fine tornerai sulla strada giusta, potresti non avere più il tempo per arrivare alla tua destinazione.
 
----
+<hr id="verita">
 
 Ti ho parlato delle regole di Musashi non perché siano le uniche disponibili, ma perché sono estremamente personali.
 Attingono ai principii di altre discipline, come il Buddismo, il Bushido o il Tao, ma sono *something else*, come direbbe Eddie Cochran.

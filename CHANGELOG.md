@@ -1,3 +1,21 @@
+## 0.30.42 (February 08, 2022)
+  - Aggiunta citazione da Guenon a capitolo su Polimorfismo
+
+## 0.30.41 (January 19, 2022)
+  - Aggiunto id a HR funzioni ricorsive
+
+## 0.30.40 (January 17, 2022)
+  - Aggiunte note per nomi nel testo delle Note
+
+## 0.30.39 (January 17, 2022)
+  - Redazione del testo delle note
+
+## 0.30.38 (January 14, 2022)
+  - Revisione del testo delle Note
+  - Iniziato testo introduttivo delle Note
+  - Aggiunta immagine og_ per Note
+  - Corretto errore di battitura nel riassunto del Prologo
+
 ## 0.30.37 (January 06, 2022)
   - Corretto errore nella Proposta
   - Rivisti il testo della bibliografia e delle note
