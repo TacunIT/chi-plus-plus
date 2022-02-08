@@ -1,3 +1,6 @@
+## 0.30.42 (February 08, 2022)
+  - Aggiunta citazione da Guenon a capitolo su Polimorfismo
+
 ## 0.30.41 (January 19, 2022)
   - Aggiunto id a HR funzioni ricorsive
 
