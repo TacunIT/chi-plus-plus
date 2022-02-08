@@ -553,7 +553,7 @@ Per correggere o quanto meno mitigare questi problemi, la sua metafisica avrebbe
 > {{ site.data.canaro.chi-requisiti }}
 
 Il Maestro Canaro applicò allo sviluppo della sua *metafisica-non-metafisica* lo stesso approccio che adottava quando doveva realizzare un software. 
-Ci sono due modi diversi di progettare un software: il primo consiste nell'analizzare tutti i sistemi che svolgono azioni simili, prendere il meglio di ciascuno e metterlo nel nuovo sistema; in alternativa, si può progettare il sistema da zero e solo quando se ne è definita per grandi linee la struttura, studiare le soluzioni adottate dagli altri, integrandole nel proprio programma, se lo si ritiene utile.
+Ci sono due modi diversi di progettare un software: il primo consiste nell'analizzare tutti i sistemi che svolgono azioni simili, prendere il meglio di ciascuno e metterlo nel nuovo sistema; in alternativa, si può progettare il sistema da zero e solo quando se ne è definita per grandi linee la struttura, studiare le soluzioni adottate dagli altri, integrandole nel proprio programma se lo si ritiene utile.
 Il primo approccio è più rapido e sicuro, ma tende a produrre risultati ripetitivi; il secondo approccio è più complesso, sia in termini di analisi che di implementazione, ma facilita l'innovazione perché l'immaginazione dell'analista non è condizionata da ciò che ha visto.  
 Essendo un sostenitore del secondo metodo, il Maestro Canaro lo applicò anche al C'hi++ e, dopo alcuni di anni di studio, arrivò alla conclusione che non solo è possibile ipotizzare una cosmogonia quasi del tutto priva di elementi metafisici (non del tutto priva, perché, come vedremo <a href="/man/stream#dottrina" class="xref">in seguito</a>, una dose minima di trascendenza è necessaria per garantire la buona funzionalità della dottrina), ma che i precetti di questa dottrina erano compatibili con molti  principii delle religioni canoniche.  
 
@@ -564,13 +564,13 @@ D'altro canto, la dottrina del Maestro Canaro rinnegò alcuni concetti comuni a 
 Così come quando si analizza il funzionamento di un software non ci si cura delle singole variabili, ma si pensa al flusso complessivo del sistema, così il C'hi++ vede l'esistenza non in termini di interazioni fra individui, ma come l'evoluzione del flusso dell'Energia dell'Uno all'interno della matrice tridimensionale degli spazioni. 
 Per il C'hi++ non esistono né anime, né fiumi infernali e chi muore in mare non troverà ad accoglierlo Rán, nella sua birreria in fondo al mare, ma verrà semplicemente riciclato, come le aree di memoria RAM all'interno di un computer.  
 Le nostre esistenze sono incidentali; pensare di punirle o di premiarle non avrebbe senso e contrasterebbe con il principio generale che tutto ciò che esiste è la manifestazione di un'unica Entità.
-Come ti ho detto all'inizio di queste lezioni, non è possibile andare in Paradiso o all'Inferno da soli: qualunque cosa avvenga, nell'Universo, ci riguarda tutti.  
-Questo però non vuol dire che il C'hi++ rifiuti *in toto* tutti concetti delle religioni che lo hanno preceduto; anzi.
+Come ti ho detto all'inizio di queste lezioni, non è possibile andare in Paradiso o all'Inferno da soli: qualunque cosa avvenga nell'Universo, ci riguarda tutti.  
+Questo però non vuol dire che il C'hi++ rifiuti tutti concetti delle religioni che lo hanno preceduto; anzi.
 Molti precetti del C'hi++ sono compatibili con precetti o idee appartenenti ad altre mistiche o filosofie e si tratta spesso di filosofie che il Maestro Canaro non conosceva, quando pose la basi della sua dottrina.
-Per esempio, il Maestro Canaro non lesse mai (con suo grande rammarico) la *Divina Commedia*; ciò non ostante, il C'hi++ ha un punto di contatto con la visione dantesca dell'Aldilà nell'importanza del pentimento.
+Per esempio, il Maestro Canaro non lesse mai (con suo grande rammarico) la *Divina Commedia*; ciò non ostante, il C'hi++ ha un punto di contatto con la visione dantesca dell'Aldilà come conseguenza del pentimento.
 Dante mette in Purgatorio i peccatori che hanno capito di aver sbagliato, mentre condanna all'Inferno quelli che, malgrado tutto, non riescono a prendere coscienza delle proprie colpe. 
 Come abbiamo detto <a href="/man/istruzioni-condizionali#pentimento" class="xref">in precedenza</a> e come vedremo durante la lezione sul <a href="/man/debug#pentimento" class="xref">debug</a>, il C'hi++ concorda con questa idea.  
-Similmente, ci sono diverse affinità fra i C'hi++ e la *Bhagavad-Gita*, anche se lui lesse mentre stava redigendo la *Proposta*, quando i punti nodali del suo Credo erano già stati definiti.  
+Similmente, ci sono diverse affinità fra i C'hi++ e la *Bhagavad-Gita*, anche se lui la lesse mentre stava redigendo la *Proposta*, quando i punti nodali del suo Credo erano già stati definiti.  
 Oltre alla citazione che ti ho fatto parlando del <a href="/man/programmatore#azione" class="xref">programmatore</a>, ci sono dei brani che ricordano molto le affermazioni contenute in *Sostiene Aristotele*; per esempio, sulla natura dell'Universo:
 
 > {{ site.data.citazioni.gita.caos }}
@@ -580,7 +580,7 @@ O sul dualismo Gravità/Entropia :
 
 > {{ site.data.citazioni.gita.dualismo }}
 
-O su quelli che io ho definito i *Post-It*:
+O su quelli che lui definiva: i *Post-It*:
 
 > {{ site.data.citazioni.gita.vasana }}
 
@@ -601,6 +601,10 @@ Come scrisse nel <a href="https://github.com/chi-plus-plus/chi-plus-plus/blob/ma
 In una nota della mappa mentale su cui basò lo sviluppo iniziale della dottrina, aggiunse:
 
 > {{ site.data.canaro.religioni-oo }}
+
+Solo alcuni anni dopo, annotò questa frase in un libro di Guenon:
+
+> {{ site.data.citazioni.guenon.spirito.testo }}<a class="nota" href="/man/note#guenon-spirito" id="guenon-spirito"></a>
 
 <hr id="igm">
 
