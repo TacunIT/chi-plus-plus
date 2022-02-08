@@ -43,6 +43,10 @@ guenon:
     verita:
         testo: "Una idea vera non può essere “nuova”, poiché la verità non è un prodotto dello spirito umano, essa esiste indipendentemente da noi, e noi abbiamo solo da conoscerla."
         fonte: "R. <span>Guénon</span>, <i>La crisi del mondo moderno</i>. Edizioni Mediterranee, Roma 2010."
+    spirito:
+        testo: "Il vero spirito tradizionale, quale si sia la forma da esso rivestita, è in fondo sempre e ovunque lo stesso; le forme diverse, specificamente adatte a queste o quelle condizioni mentali, a queste o quelle circostanze di tempo e di luogo, sono solo le espressioni di una unica e sola verità."
+        fonte: "R. <span>Guénon</span>, <i>La crisi del mondo moderno</i>. Edizioni Mediterranee, Roma 2010."
+        
 mantiq:
     male:
         "O Creatore, tutto il male o il bene che feci,<br />in verità lo feci solo a me stesso."
