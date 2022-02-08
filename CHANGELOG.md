@@ -1,3 +1,6 @@
+## 0.30.43 (February 08, 2022)
+  - Corretto errore nella generazione delle pagine
+
 ## 0.30.42 (February 08, 2022)
   - Aggiunta citazione da Guenon a capitolo su Polimorfismo
 
