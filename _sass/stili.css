@@ -797,7 +797,7 @@ SECTION.note OL LI:target A I {
 SECTION.note OL LI BLOCKQUOTE {
     font-size: 1rem;
 }
-SECTION.note OL LI SPAN {
+SECTION.note OL LI SPAN.autore {
     font-variant-caps: small-caps;
 }
 BODY.note SECTION.note OL {

@@ -2,17 +2,17 @@ agostino:
     "E considerai tutte le cose che sono al di sotto di te e vidi che non si può dire in modo assoluto né che esistono né che non esistono: a loro modo esistono, perché derivano da te, non esistono perché non sono ciò che sei tu: ed esiste veramente ciò che permane immutabile."
 asimov:
     "Eliminate tutte le cose meravigliose che l’immaginazione umana ha creato dal nulla , dobbiamo tirar fuori tutto il possibile dalla piatta realtà che sentiamo e vediamo.<br />
-    <span>Isaac Asimov</span> - Civiltà extraterrestri"
+    <span class=\"autore\">I. Asimov</span> - Civiltà extraterrestri"
 attar:
     "Io vidi il mio Signore con l'occhio del cuore.<br />Gli chiesi: Chi sei?<br />Rispose: Te!"
 corano:
     VII-14-18: "Disse [Iblīs]: «Lasciami attendere [la tua punizione] sino al giorno in cui gli uomini saranno resuscitati». Rispose il Signore: «Ebbene, ti sia concesso di attendere sino a quel giorno». E disse ancora Iblīs: «Poiché Tu mi hai fatto errare, io mi apposterò sulla Tua Via Diritta e apparirò loro davanti, di dietro, a destra e a sinistra! E non certo molti di loro troverai che Ti saranno grati». E disse Iddio: «Fuori di qui, esci di qui spregiato e rejetto! Di quei che t’avranno seguito, di voi tutti empirò la Geenna!»"
-    fonte: "C. <span>Saccone</span>, <i>Iblīs, il Satana del Terzo Testamento</i>, Centro Essad Bey, 2012"
+    fonte: "<span class=\"autore\">C. Saccone</span>, <i>Iblīs, il Satana del Terzo Testamento</i>, Centro Essad Bey, 2012"
 croce:
     testo: 
         "Un sistema è una casa che, subito dopo costruita e adornata, ha bisogno (soggetta com'è all'azione corroditrice degli elementi) di un lavorio più o meno energico, ma assiduo, di manutenzione, e che a un certo momento non giova più restaurare e puntellare, e bisogna gettare a terra e ricostruire dalle fondamenta. Ma con siffatta differenza capitale: che, nell'opera del pensiero, la casa perpetuamente nuova e sostenuta perpetuamente dall'antica, la quale, quasi per opera magica, perdura in essa."
     fonte: 
-        "B. <span>Croce</span>, <i>Breviario di estetica</i>, Laterza, Bari, 1928"
+        "<span class=\"autore\">B. Croce</span>, <i>Breviario di estetica</i>, Laterza, Bari, 1928"
 dawkins:
     tempo: "Dato un tempo infinito o un numero di opportunità infinite, è possibile qualsiasi cosa."
     analogia: "Uno dei caratteri di una folle stravaganza è un uso troppo entusiasta dell’analogia."
@@ -20,7 +20,7 @@ deen:
     testo:
         "Il cambiamento inizia quando si intraprende un nuovo sentiero , anche se questo sentiero non è che una traccia lasciata da una capra assetata che ha trovato una sorgente."
     fonte:
-        "M. <span>Deen</span>, <i>Per antiche strade</i>, Iperborea, Milano, 2020" 
+        "<span class=\"autore\">M. Deen</span>, <i>Per antiche strade</i>, Iperborea, Milano, 2020" 
 eckart:
     conoscenza: "Fintanto che l'anima non conoscerà tutto ciò che c'è da conoscere, essa non potrà raggiungere il bene."
 gita:
@@ -39,13 +39,13 @@ gita:
 guenon:
     filosofi: 
         testo: "Sembra perfino che ai filosofi importi assai più porre dei “problemi”, siano pur essi artificiali e illusori, che non risolverli: il che costituisce un aspetto del bisogno disordinato della ricerca per la ricerca, cioè dell’agitazione più vana, nell’ordine mentale non meno che nell’ordine corporeo. A questi stessi filosofi interessa altresì legare il loro nome ad un “sistema”, cioè ad un insieme di teorie strettamente delimitato, che sia il loro e non significhi altro che l’opera loro. Donde il desiderio di esser originali ad ogni costo, perfino se la verità dovesse venir sacrificata a siffatta originalità. Per la reputazione di un filosofo vale assai più inventare un errore nuovo che ripetere una verità già espressa da altri. Questa forma di individualismo, cui si devono tanti “sistemi” contradittori fra loro, se non pure in se stessi, si ritrova peraltro in egual misura fra gli scienziati e gli artisti moderni. Ma è forse tra i filosofi che l’anarchia intellettuale, che ne è la conseguenza inevitabile, spicca più nettamente."
-        fonte: "R. <span>Guénon</span>, <i>La crisi del mondo moderno</i>. Edizioni Mediterranee, Roma 2010."
+        fonte: "<span class=\"autore\">R. Guénon</span>, <i>La crisi del mondo moderno</i>. Edizioni Mediterranee, Roma 2010."
     verita:
         testo: "Una idea vera non può essere “nuova”, poiché la verità non è un prodotto dello spirito umano, essa esiste indipendentemente da noi, e noi abbiamo solo da conoscerla."
-        fonte: "R. <span>Guénon</span>, <i>La crisi del mondo moderno</i>. Edizioni Mediterranee, Roma 2010."
+        fonte: "<span class=\"autore\">R. Guénon</span>, <i>La crisi del mondo moderno</i>. Edizioni Mediterranee, Roma 2010."
     spirito:
         testo: "Il vero spirito tradizionale, quale si sia la forma da esso rivestita, è in fondo sempre e ovunque lo stesso; le forme diverse, specificamente adatte a queste o quelle condizioni mentali, a queste o quelle circostanze di tempo e di luogo, sono solo le espressioni di una unica e sola verità."
-        fonte: "R. <span>Guénon</span>, <i>La crisi del mondo moderno</i>. Edizioni Mediterranee, Roma 2010."
+        fonte: <span class=\"autore\">R. Guénon</span>, <i>La crisi del mondo moderno</i>. Edizioni Mediterranee, Roma 2010."
         
 mantiq:
     male:
@@ -57,10 +57,10 @@ mulino-amleto:
     mito-funzioni: "Le figure mitiche, è vero, nascono e trapassano, ma non proprio come noi mortali. Hanno bisogno di denominazioni caratteristiche, come quella di «Re nel Passato e nel Futuro». Sono esistite in passato? Allora sono esistite ancor prima, o esisteranno ancora, con altri nomi, sotto altri aspetti, proprio come il cielo ci riporta in eterno le sue configurazioni. Se si cercasse di definirle con precisione come persone e cose, sicuramente svanirebbero ai nostri occhi, quanto i frutti di una fantasia malata. Ma se si rispetta la loro vera natura, riveleranno questa natura come funzioni."
     una-sostanza: "Quando egli attribuisce sentimenti e pensieri a vasi di terraglia, non lo fa per usare un tropo letterario, bensì nella consapevolezza che tutte le cose transeunti sono prigioniere della medesima trasmutazione, che la sostanza è una e di essa son fatti vasi, uomini e sogni. Si potrebbe chiamarla una realtà vivente; essa differisce in modo singolare dalla realtà ordinaria o oggettiva. Quando il poeta immagina che questo stesso mattone possa essere l’argilla che un tempo fu Kay Khusraw, si ricollega alle meditazioni di Amleto nel cimitero: «A quali vili usi noi possiamo tornare, Orazio! Perché non potrebbe l’immaginazione seguire la nobile polvere di Alessandro, fino a trovarla a turare il buco di una botte?»."
     mulo:
-        "«Quando chiudo gli occhi vedo solo il deretano di un mulo, e quando non li chiudo, anche».<br />In un certo senso, è questa l’odierna visione della realtà.<br/><span>G. de Santillana, H. von Dechend</span> - Il mulino di Amleto"
+        "«Quando chiudo gli occhi vedo solo il deretano di un mulo, e quando non li chiudo, anche».<br />In un certo senso, è questa l’odierna visione della realtà.<br/><span class=\"autore\">G. de Santillana, H. von Dechend</span> - Il mulino di Amleto"
 mulino-amleto:
     fonte:
-        "G. <span>de Santillana</span>, H. <span>von Dechend</span>, <i>Il mulino di Amleto</i>, Adelphi, Milano, 1983"
+        "<span class=\"autore\">G. de Santillana, H. von Dechend</span>, <i>Il mulino di Amleto</i>, Adelphi, Milano, 1983"
     mito: 
         "Le figure mitiche, è vero, nascono e trapassano, ma non proprio come noi mortali. Hanno bisogno di denominazioni caratteristiche, come quella di «Re nel Passato e nel Futuro». Sono esistite in passato? Allora sono esistite ancor prima, o esisteranno ancora, con altri nomi, sotto altri aspetti, proprio come il cielo ci riporta in eterno le sue configurazioni. Se si cercasse di definirle con precisione come persone e cose, sicuramente svanirebbero ai nostri occhi, quanto i frutti di una fantasia malata. Ma se si rispetta la loro vera natura, riveleranno questa natura come funzioni."
     stoltezza:
@@ -126,10 +126,10 @@ scacchi:
     testo:
         "<i>Come nacque il gioco degli scacchi: due principi indiani, Gav e Talhend, si contendevano il regno, nonostante la loro madre li pregasse di condividerlo come bravi fratelli. I due non ci riuscirono e una loro lite si trasformò in una sanguinosa guerra, che venne infine vinta da Gav, e nella quale Talhend perse la vita. La madre, disperata, chiese al figlio superstite di raccontarle per filo e per segno come si fosse svolta la battaglia tra i due, e per spiegarle tutto quanto in modo dettagliato, Gav creò una scacchiera e fece intagliare nel legno le figurine di torri, cavalli e soldati, creando così le basi del gioco degli scacchi</i>"
     fonte:
-        "<span>M. Fois</span>, <i>Miti Persiani: Zoroastro e il Libro dei Re</i>"
+        "<span class=\"autore\">M. Fois</span>, <i>Miti Persiani: Zoroastro e il Libro dei Re</i>"
 vedanta:
     testo: "Il fine dichiarato di Kanāda nei Vaiśesika Sūtra, considerati da Dasgupta come pre-buddhisti, è di spiegare il Dharma (la Legge Eterna) come il fondamento, da un lato, della manifestazione (abhyudaya) e, dall’altro, del “Sommo Bene” (nihśreyasam), cioè della Liberazione: la validità dei Veda è stabilita dal fatto che questi sono i loro fini."
-    fonte: "A. K. <span>Coomaraswamy</span>, Tempo ed Eternità, Edizioni Mediterranee."
+    fonte: "<span class=\"autore\">A. K. Coomaraswamy</span>, Tempo ed Eternità, Edizioni Mediterranee."
 wittgenstein:
     diari:
         "Solo una cosa, è necessaria: essere capace di osservare tutto ciò che ti accade. Concentrarsi! Dio mi aiuti!"
