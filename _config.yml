@@ -11,8 +11,7 @@ title:       "C'hi++"
 url:         "https://chiplusplus.org" 
 
 exclude: [
-    'bin'
-  , 'src'
+    'src'
   , 'CHANGELOG'
   , 'CONTRIBUTING.md'
   , 'MANIFEST.md'

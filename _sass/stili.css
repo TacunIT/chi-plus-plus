@@ -447,16 +447,23 @@ BODY.manuale HEADER NAV.menu-top A.center {
 }
 BODY.manuale FOOTER {
 }
-BODY.manuale.copertina MAIN {
+BODY.manuale DIV.copertina MAIN {
     text-align: center;
     margin-top: 10vh;
 }
-BODY.manuale.copertina MAIN IMG.logo {
+BODY.manuale DIV.copertina IMG.logo {
     width: 260px;
     display: inline-block;
 }
-BODY.manuale.copertina MAIN H2 {
+BODY.manuale DIV.copertina H1 {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 3rem;
+    color:$colorGold;
+}
+BODY.manuale DIV.copertina H2 {
     padding: 0;
+    font-size: 1.4rem;
 }
 BODY.manuale.dedica MAIN {
     margin: 20vh auto;
@@ -472,12 +479,12 @@ BODY.manuale SECTION.indice {
 BODY.manuale SECTION.indice H1 {
     margin: 3rem 0 2rem 0;
 }
-BODY.manuale SECTION.indice DIV.capitolo {
+BODY.manuale SECTION.indice .capitolo {
     display: inline-block;
     width: 420px;
     margin: 1rem 0;
 }
-BODY.manuale SECTION.indice DIV.capitolo P {
+BODY.manuale SECTION.indice .capitolo P {
     font-size: 0.95em;
     color: #888;
     font-style: italic;
@@ -560,21 +567,21 @@ IFRAME.pdf {
 }
 
 /** Tabelle nel testo */    
-BODY.manuale.capitolo .testo TABLE.memoria TD {
+.capitolo .testo TABLE.memoria TD {
     font-family: $codeFont;
     font-size: 10px;
     width: 24px;
     height: 24px;
 }
-BODY.manuale.capitolo .testo TABLE.memoria TD.area {
+.capitolo .testo TABLE.memoria TD.area {
     background: $tdAreaBackground;
 }
 
-BODY.manuale.capitolo .testo TABLE.rgb,
-BODY.manuale.capitolo .testo TABLE.rgb TR {
+.capitolo .testo TABLE.rgb,
+.capitolo .testo TABLE.rgb TR {
     border: none;
 }
-BODY.manuale.capitolo .testo TABLE.rgb TD {
+.capitolo .testo TABLE.rgb TD {
     border: none;
     font-family: $codeFont;
     font-size: 10pt;
@@ -582,19 +589,19 @@ BODY.manuale.capitolo .testo TABLE.rgb TD {
     height: 30px;    
 }
 
-BODY.manuale.capitolo .testo TABLE.rgb TD:nth-child(1) {
+.capitolo .testo TABLE.rgb TD:nth-child(1) {
     border: solid 1px $borderColor;
 }
-BODY.manuale.capitolo .testo TABLE.rgb TD:nth-child(2) {
+.capitolo .testo TABLE.rgb TD:nth-child(2) {
     min-width: 10rem;
 }
 
-BODY.manuale.capitolo .testo BLOCKQUOTE.output {
+.capitolo .testo BLOCKQUOTE.output {
     text-align: justify;
     background-color: #eee;
     margin: 1rem auto;
 }
-BODY.manuale.capitolo .testo BLOCKQUOTE.output DIV[id^="banner"] {
+.capitolo .testo BLOCKQUOTE.output DIV[id^="banner"] {
     display: block;
     height: 100px;
     width: 200px;
@@ -695,7 +702,7 @@ OL.da-fare {
  *  Tutti gli elementi della testata sono visualizzati in maniera
  *  differente per web o stampa, vedi sotto @meda print
  */
-SECTION.copertina {
+BODY.proposta SECTION.copertina {
     margin:auto;
     padding: 6.6% 1rem 0 ;
     counter-reset: h2;
@@ -705,7 +712,7 @@ BODY.proposta SECTION.copertina H2  {
     font-size: 1.5rem;
     padding: 0;
 }
-SECTION.copertina H3  {
+BODY.proposta SECTION.copertina H3  {
     font-size: 1.2rem;
     padding: 0;
     color: $h3CopertinaColor;
@@ -790,7 +797,7 @@ SECTION.note OL LI:target A I {
 SECTION.note OL LI BLOCKQUOTE {
     font-size: 1rem;
 }
-SECTION.note OL LI SPAN {
+SECTION.note OL LI SPAN.autore {
     font-variant-caps: small-caps;
 }
 BODY.note SECTION.note OL {
