@@ -1,7 +1,7 @@
 ## 0.30.44 (February 13, 2022)
-  - Merge branch 'generazione-pdf' into redazione
   - Revisione dei nomi nelle note
   - Rivista la procedura di generazione del testo unificato
+  - rinominata la directory dir in _dir per comodità.
 
 ## 0.30.43 (February 08, 2022)
   - Corretto errore nella generazione delle pagine
