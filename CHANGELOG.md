@@ -1,3 +1,6 @@
+## 0.30.46 (March 10, 2022)
+  - Revisione del formato e degli stili dell'e-book
+
 ## 0.30.45 (March 09, 2022)
   - Aggiornate le pagine dell'e-book in base ai modelli di epub3
   - Modifcata controcopertina
