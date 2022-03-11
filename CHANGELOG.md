@@ -1,3 +1,6 @@
+## 0.30.47 (March 11, 2022)
+  - Aggiunti primi capitoli all'e-book
+
 ## 0.30.46 (March 10, 2022)
   - Revisione del formato e degli stili dell'e-book
 
