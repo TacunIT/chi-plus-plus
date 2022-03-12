@@ -431,6 +431,7 @@ Non a caso, Stroustrsup disse:
 
 > {{ site.data.citazioni.stroustrup.java }} <a id="stroustrup" href="/man/note#cpp" class="nota"></a>
 
+<!--
 <hr id="dottrina">
 
 La cattiva programmazione è un virus: si propaga e si rafforza con il passare del tempo.
@@ -461,3 +462,4 @@ Nella peggiore delle ipotesi, si tratta di codice fallato, che fa male il suo la
 Non importa a nessuno: l'unica cosa a cui si presta importanza è il rispetto dei tempi di consegna, senza tenere conto del fatto che, spesso, l'utilizzo maldestro di software maldestro allunga i tempi di sviluppo, test e correzione.  
 In pratica, la programmazione è diventata una sorta di roulette russa, in cui la fortuna gioca un ruolo decisivo: se ti dice culo, gli errori non escono durante il collaudo e se ne riparla in assistenza; se ti dice male, butti la tua vita cercando di far funzionare uno strumento difettoso, invece di spendere un po' di tempo per realizzarne uno sano.  
 La stessa cosa si può dire delle vite di queste persone.
+-->
