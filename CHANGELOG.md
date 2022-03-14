@@ -1,3 +1,6 @@
+## 0.30.49 (March 14, 2022)
+  - Aggiunto il testo di tutti i capitoli all'e-book
+
 ## 0.30.48 (March 12, 2022)
   - Aggiunti cinque capitoli all'e-book
   - Aggiunta prima bozza della sezione dottrina al capitolo sul C++ 
