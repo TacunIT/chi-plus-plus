@@ -1,3 +1,8 @@
+## 0.30.50 (March 16, 2022)
+  - Aggiornato foglio di stile dell'e-book
+  - Aggiornati i link alle note dell'e-book
+  - Aggiornato foglio di stile dell'e-book
+
 ## 0.30.49 (March 14, 2022)
   - Aggiunto il testo di tutti i capitoli all'e-book
 
