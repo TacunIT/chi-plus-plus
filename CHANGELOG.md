@@ -1,3 +1,6 @@
+## 0.30.51 (March 17, 2022)
+  - Corretti i link a foglio di stile nell'e-book
+
 ## 0.30.50 (March 16, 2022)
   - Aggiornato foglio di stile dell'e-book
   - Aggiornati i link alle note dell'e-book
