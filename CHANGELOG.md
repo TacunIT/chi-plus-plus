@@ -1,3 +1,6 @@
+## 0.30.52 (March 22, 2022)
+  - Aggiunto colophon a e-book
+
 ## 0.30.51 (March 17, 2022)
   - Corretti i link a foglio di stile nell'e-book
 
