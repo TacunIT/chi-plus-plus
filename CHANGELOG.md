@@ -25,7 +25,7 @@
 
 ## 0.30.45 (March 09, 2022)
   - Aggiornate le pagine dell'e-book in base ai modelli di epub3
-  - Modifcata controcopertina
+  - Modificata controcopertina
   - Rinominato create-doc in crea-ebook
   - Prima prova di generazione di un e-book
 
