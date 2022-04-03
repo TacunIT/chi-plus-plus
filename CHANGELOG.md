@@ -1,3 +1,6 @@
+## 0.30.54 (April 03, 2022)
+  - Aggiunta curatela Saccone alle note
+
 ## 0.30.53 (April 03, 2022)
   - Corrette la note in chiusura
 
