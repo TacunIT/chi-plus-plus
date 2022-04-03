@@ -1,3 +1,6 @@
+## 0.30.53 (April 03, 2022)
+  - Corrette la note in chiusura
+
 ## 0.30.52 (March 22, 2022)
   - Aggiunto colophon a e-book
 
