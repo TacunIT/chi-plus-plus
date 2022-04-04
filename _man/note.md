@@ -90,6 +90,7 @@ Non è degli errori, che devi avere paura, ma della stasi.
         <li id="attar">
             <span class="autore">F. Attar</span>, 
             <i>Il verbo degli uccelli (Mantiq al-Tayr)</i>, 
+            a cura di <span class="autore">C. Saccone</span>, 
             Centro Essad Bey, Bologna, 2013
             <a href="/man/operatori#attar"><i class="fas fa-reply"></i></a>
         </li>
@@ -264,9 +265,7 @@ Non è degli errori, che devi avere paura, ma della stasi.
             <a href="/man/istruzioni-condizionali#saadi"><i class="fas fa-reply"></i></a>
         </li>
         <li id="mantiq">
-            <span class="autore">F. Attar</span>, 
-            <i>Il verbo degli uccelli (Mantiq al-Tayr)</i>, 
-            Centro Essad Bey, Bologna, 2013
+            <span class="autore">F. Attar</span> - <i>op.cit.</i>
             <a href="/man/istruzioni-condizionali#mantiq"><i class="fas fa-reply"></i></a>
         </li>
         <li id="bokuju">

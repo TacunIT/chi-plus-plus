@@ -449,11 +449,17 @@ C'è gente che accende il navigatore satellitare anche quando torna a casa dall'
 > Si vuole tutto e lo si vuole subito: è questo il problema.  Io la chiamo anche “sindrome da telecomando”: spingi un bottone e puoi cambiare canale, spingi un bottone e puoi accendere il condizionatore, spingi un bottone e puoi diventare un creativo..
 
 Con il codice, è lo stesso: ci si affida a codice già scritto, senza curarsi di *come* sia stato scritto e con quali scòpi.
+<!-- 
+@todo: fare un parallelo fra i problemi di compatibilità delle librerie di Python e le religioni canoniche.
+Entrambi hanno la necessità di mantenere una compatibilità con il passato.
+Con i dogmi le religioni, con una determinata versione delle librerie, i programmi Python.
+Questo fà sì che sia molto complesso evolvere, perché non può evolvere solo una parte del sistema, ma tutto.
+Bello, se fosse possibile, ma non sempre lo è.
+-->
 Nella migliore delle ipotesi, si tratta di codice inefficiente, che esegue le azioni attese, ma richiede sempre più risorse di sistema e/o di tempo di esecuzione.
 Questo va bene a chi vende l'hardware, perché implica un continuo rinnovo del parco HW con sistemi più potenti.
 Nella peggiore delle ipotesi, si tratta di codice fallato, che fa male il suo lavoro (così come chi lo ha scritto) e complica la vita e la gestione del sistema.  
-Non importa a nessuno: l'unica cosa a cui si presta importanza è il rispetto dei tempi di consegna (per paura delle penali), senza tenere conto del fatto che, spesso, l'utilizzo maldestro di software maldestro allunga i tempi di sviluppo, test e correzione.
-In pratica, la programmazione è diventata una sorta di roulette russa, in cui la fortuna gioca un ruolo decisivo: se ti dice culo, gli errori non escono durante il collaudo e se ne riparla in assistenza (ma intanto hai incassato il SAL).
-Se ti dice male, butti la tua vita cercando di far funzionare uno strumento difettoso, invece di spendere un po' di tempo per realizzarne uno sano.
+Non importa a nessuno: l'unica cosa a cui si presta importanza è il rispetto dei tempi di consegna, senza tenere conto del fatto che, spesso, l'utilizzo maldestro di software maldestro allunga i tempi di sviluppo, test e correzione.  
+In pratica, la programmazione è diventata una sorta di roulette russa, in cui la fortuna gioca un ruolo decisivo: se ti dice culo, gli errori non escono durante il collaudo e se ne riparla in assistenza; se ti dice male, butti la tua vita cercando di far funzionare uno strumento difettoso, invece di spendere un po' di tempo per realizzarne uno sano.  
 La stessa cosa si può dire delle vite di queste persone.
 -->
