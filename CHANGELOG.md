@@ -1,7 +1,44 @@
+## 0.30.54 (April 03, 2022)
+  - Aggiunta curatela Saccone alle note
+
+## 0.30.53 (April 03, 2022)
+  - Corrette la note in chiusura
+
+## 0.30.52 (March 22, 2022)
+  - Aggiunto colophon a e-book
+
+## 0.30.51 (March 17, 2022)
+  - Corretti i link a foglio di stile nell'e-book
+
+## 0.30.50 (March 16, 2022)
+  - Aggiornato foglio di stile dell'e-book
+  - Aggiornati i link alle note dell'e-book
+  - Aggiornato foglio di stile dell'e-book
+
+## 0.30.49 (March 14, 2022)
+  - Aggiunto il testo di tutti i capitoli all'e-book
+
+## 0.30.48 (March 12, 2022)
+  - Aggiunti cinque capitoli all'e-book
+  - Aggiunta prima bozza della sezione dottrina al capitolo sul C++ 
+  - Aggiunto capitolo sul C++ all'e-book
+
+## 0.30.47 (March 11, 2022)
+  - Aggiunti primi capitoli all'e-book
+
+## 0.30.46 (March 10, 2022)
+  - Revisione del formato e degli stili dell'e-book
+
+## 0.30.45 (March 09, 2022)
+  - Aggiornate le pagine dell'e-book in base ai modelli di epub3
+  - Modificata controcopertina
+  - Rinominato create-doc in crea-ebook
+  - Prima prova di generazione di un e-book
+
 ## 0.30.44 (February 13, 2022)
-  - Merge branch 'generazione-pdf' into redazione
   - Revisione dei nomi nelle note
   - Rivista la procedura di generazione del testo unificato
+  - rinominata la directory dir in _dir per comodità.
 
 ## 0.30.43 (February 08, 2022)
   - Corretto errore nella generazione delle pagine

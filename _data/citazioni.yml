@@ -37,15 +37,15 @@ gita:
     azione:
         "Tu hai diritto solo all'azione, mai ai suoi frutti: che il tuo movente non sia il frutto dell'azione, né vi sia in te attaccamento all'inattività."
 guenon:
-    filosofi: 
-        testo: "Sembra perfino che ai filosofi importi assai più porre dei “problemi”, siano pur essi artificiali e illusori, che non risolverli: il che costituisce un aspetto del bisogno disordinato della ricerca per la ricerca, cioè dell’agitazione più vana, nell’ordine mentale non meno che nell’ordine corporeo. A questi stessi filosofi interessa altresì legare il loro nome ad un “sistema”, cioè ad un insieme di teorie strettamente delimitato, che sia il loro e non significhi altro che l’opera loro. Donde il desiderio di esser originali ad ogni costo, perfino se la verità dovesse venir sacrificata a siffatta originalità. Per la reputazione di un filosofo vale assai più inventare un errore nuovo che ripetere una verità già espressa da altri. Questa forma di individualismo, cui si devono tanti “sistemi” contradittori fra loro, se non pure in se stessi, si ritrova peraltro in egual misura fra gli scienziati e gli artisti moderni. Ma è forse tra i filosofi che l’anarchia intellettuale, che ne è la conseguenza inevitabile, spicca più nettamente."
-        fonte: "<span class=\"autore\">R. Guénon</span>, <i>La crisi del mondo moderno</i>. Edizioni Mediterranee, Roma 2010."
-    verita:
-        testo: "Una idea vera non può essere “nuova”, poiché la verità non è un prodotto dello spirito umano, essa esiste indipendentemente da noi, e noi abbiamo solo da conoscerla."
-        fonte: "<span class=\"autore\">R. Guénon</span>, <i>La crisi del mondo moderno</i>. Edizioni Mediterranee, Roma 2010."
     spirito:
         testo: "Il vero spirito tradizionale, quale si sia la forma da esso rivestita, è in fondo sempre e ovunque lo stesso; le forme diverse, specificamente adatte a queste o quelle condizioni mentali, a queste o quelle circostanze di tempo e di luogo, sono solo le espressioni di una unica e sola verità."
-        fonte: <span class=\"autore\">R. Guénon</span>, <i>La crisi del mondo moderno</i>. Edizioni Mediterranee, Roma 2010."
+        fonte: "<span class=\"autore\">R. Guénon</span>, <i>La crisi del mondo moderno</i>. Edizioni Mediterranee, Roma 2010."
+    filosofi: 
+        testo: "Sembra perfino che ai filosofi importi assai più porre dei “problemi”, siano pur essi artificiali e illusori, che non risolverli: il che costituisce un aspetto del bisogno disordinato della ricerca per la ricerca, cioè dell’agitazione più vana, nell’ordine mentale non meno che nell’ordine corporeo. A questi stessi filosofi interessa altresì legare il loro nome ad un “sistema”, cioè ad un insieme di teorie strettamente delimitato, che sia il loro e non significhi altro che l’opera loro. Donde il desiderio di esser originali ad ogni costo, perfino se la verità dovesse venir sacrificata a siffatta originalità. Per la reputazione di un filosofo vale assai più inventare un errore nuovo che ripetere una verità già espressa da altri. Questa forma di individualismo, cui si devono tanti “sistemi” contradittori fra loro, se non pure in se stessi, si ritrova peraltro in egual misura fra gli scienziati e gli artisti moderni. Ma è forse tra i filosofi che l’anarchia intellettuale, che ne è la conseguenza inevitabile, spicca più nettamente."
+        fonte: "<span class=\"autore\">R. Guénon</span>, <i>op.cit</i>."
+    verita:
+        testo: "Una idea vera non può essere “nuova”, poiché la verità non è un prodotto dello spirito umano, essa esiste indipendentemente da noi, e noi abbiamo solo da conoscerla."
+        fonte: "<span class=\"autore\">R. Guénon</span>, <i>op.cit</i>."
         
 mantiq:
     male:
