@@ -196,7 +196,7 @@ Non è degli errori, che devi avere paura, ma della stasi.
             <a href="/man/memoria#isolamento"><i class="fas fa-reply"></i></a>
         </li>    
         <li id="sakoku">
-            @todo: spiegare cosa sia stato il Sakoku.
+            Il termine <i>Sakoku</i>, che vuol dire: <i>Paese chiuso</i>, indica il periodo della storia del Giappone che va dal 1641 al 1853, durante il quale il Giappone si chiuse quasi totalmente ai rapporti con l'estero.
             <a href="/man/memoria#sakoku"><i class="fas fa-reply"></i></a>
         </li>    
         <li id="yoga">
