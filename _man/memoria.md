@@ -200,7 +200,7 @@ Pensa alla variabile `a` che abbiamo visto all'inizio:
 Il bit iniziale vale `0`, che è un valore nullo, se lo consideri individualmente, ma se invece lo valuti in rapporto ai due byte a cui appartiene, diventa il valore da cui <a href="/man/tipi-di-dato#modificatori">dipende il segno della variabile</a>.
 Se per un caso il valore di quel bit diventasse `1`, il valore della variabile `a` diventerebbe negativo, con delle ripercussioni imprevedibili sul programma.
 Molte, troppe persone sono 
-<a href="https://canaro.net/novelle/binario.html" target="canaro">come quel bit</a> e pensano di valere zero perché considerano il proprio valore solo in termini soggettivi.
+<a href="https://canaro.net/ide-monogatari/binario.html" target="canaro">come quel bit</a> e pensano di valere zero perché considerano il proprio valore solo in termini soggettivi.
 Mesmerizzati dall'Annosa Dicotomia, spendono tutte le loro energie cercando di valere `1` e si distraggono così da quello che sarebbe stato il loro destino, con conseguenze molto più gravi di un'alterazione di segno in una variabile.
 
 ---
