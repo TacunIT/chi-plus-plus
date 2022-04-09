@@ -510,7 +510,7 @@ La Via, con la "V" maiuscola è simile a una via con la "v" minuscola.
 Lungo la via, incontri dei cartelli stradali, che ti indicano la direzione in cui procedere o la velocità da tenere, e dei cartelloni pubblicitarii, che ti segnalano delle attrazioni nelle vicinanze e ti invitano a deviare dal tuo cammino per andarle a visitare.
 Allo stesso modo, lungo la Via, troverai delle necessità, che ti instraderanno verso la tua destinazione e dei desiderii, che ti dis-trarranno dal tuo percorso e ti at-trarranno verso destinazioni alternative.
 Se tu agirai in base alle necessità, saprai sempre che ti stai muovendo nella direzione giusta, anche quando sarai costretto a rallentare o a percorrere strade che non gradisci.
-Se invece agirai in base ai desiderii andrai di qua e di là, come “un asino privo di briglie”<!-- @todo: cercare la citazione da Attar --> e quando alla fine tornerai sulla strada giusta, potresti non avere più il tempo per arrivare alla tua destinazione.
+Se invece agirai in base ai desiderii andrai di qua e di là, come “un asino privo di briglie”<a href="/man/note#briglie" class="nota" id="briglie"></a> e quando alla fine tornerai sulla strada giusta, potresti non avere più il tempo per arrivare alla tua destinazione.
 
 <hr id="verita">
 

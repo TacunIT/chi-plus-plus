@@ -249,6 +249,12 @@ Non è degli errori, che devi avere paura, ma della stasi.
             @todo: verificare dato su età media nel Giappone del XVI  Secolo (40 anni)
             <a href="/man/funzioni#eta"><i class="fas fa-reply"></i></a>
         </li>
+        <li id="briglie">
+            <i>Se tu ancora non hai ammirato la bellezza dell'Amico, alzati,  non oziare, va alla ricerca dei Suoi segreti! Se ne sei ignaro devi cercare: fino a quando sa rai come un asino privo di briglie? 
+            </i><br />
+            <span class="autore">F. Attar</span> - <i>op.cit.</i>
+            <a href="/man/funzioni#briglie"><i class="fas fa-reply"></i></a>
+        </li>
         <li id="5anelli">
             <!-- @todo: bisogna invertire cognome e nome ? -->
             <span class="autore">M. Musashi</span>,
