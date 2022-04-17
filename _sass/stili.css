@@ -299,7 +299,7 @@ NAV A {
 
 HEADER NAV.menu-top A {
     padding: 0.5rem 1.2rem;
-    width:25%;
+    min-width: 5em;
     color: $colorGold;
 }
 
