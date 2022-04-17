@@ -1,15 +1,14 @@
 ---
 layout:   post
-title:    "Verità e consolazione"
-tags:     [log, verità, religione, consolazione]
+title:    "Guénon, sul concetto di Dio"
+tags:     [log, verità, religione, consolazione, Guénon, citazioni]
 og_img:   ""
-og_desc:  ""
+og_desc:  "Prima di parlare di <i>Dio</i>, è bene accertarsi di cosa si intenda con questa parola"
 ---
 
 <blockquote class="giustificato">
-La verità, in sé, non ha da essere consolante; se taluno la trova tale, tanto meglio per lui, ma la consolazione provata non proviene dalla dottrina bensì da lui stesso e dalle particolari disposizioni della sua sentimentalità. 
-Una dottrina che si adatti alle esigenze dell’essere sentimentale e che debba perciò essa stessa rivestirsi di una forma sentimentale non può più, con ciò stesso, identificarsi alla verità assoluta e totale(...). 
-È da questo, che ha origine la diversità fondamentale dei dogmi religiosi la quale non può fare a meno di coinvolgere la loro incompatibilità, perché mentre l’intelligenza è una e la verità, nella misura in cui viene compresa, non può esserlo che in un solo modo, la sentimentalità diversa e la religione che tende a soddisfarla deve cercare di adattarsi formalmente nel miglior modo possibile alle sue molteplici modalità, dissimili e variabili a seconda delle razze e delle epoche.
+Coloro che discutono su argomenti quali le ”prove dell’esistenza di Dio” dovrebbero prima assicurarsi che pronunciando la parola: “Dio”, vogliono esprimere un identico concetto.
+Spesso si accorgerebbero che le cose non vanno affatto cosi, talché essi non hanno più probabilità di trovarsi d’accordo di quante ne avrebbero se parlassero lingue differenti.
 </blockquote>
 
 <span class="autore">Guénon, René</span>,
