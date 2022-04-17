@@ -1,3 +1,10 @@
+## 0.30.57 (April 17, 2022)
+  - Aggiornata la libreria Font Awesome 
+  - Aggiunto link per log al menu 
+  - Modificata l'icona della Proposta
+  - Aggiunta classe 'post' a layout post
+  - Aggiunta citazione da Guenon
+
 ## 0.30.56 (April 09, 2022)
   - Aggiunta citazione da Attar
 
