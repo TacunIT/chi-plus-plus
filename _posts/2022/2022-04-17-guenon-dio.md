@@ -1,7 +1,7 @@
 ---
 layout:   post
 title:    "Guénon, sul concetto di Dio"
-tags:     [log, verità, religione, consolazione, Guénon, citazioni]
+tags:     [log, verità, Guénon, citazioni, Dio]
 og_img:   ""
 og_desc:  "Prima di parlare di <i>Dio</i>, è bene accertarsi di cosa si intenda con questa parola"
 ---
