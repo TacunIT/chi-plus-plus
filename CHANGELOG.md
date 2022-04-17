@@ -1,3 +1,6 @@
+## 0.30.58 (April 17, 2022)
+  - Aggiunte due pagine del log
+
 ## 0.30.57 (April 17, 2022)
   - Aggiornata la libreria Font Awesome 
   - Aggiunto link per log al menu 
