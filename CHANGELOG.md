@@ -1,3 +1,10 @@
+## 0.30.56 (April 09, 2022)
+  - Aggiunta citazione da Attar
+
+## 0.30.55 (April 08, 2022)
+  - - aggiunta nota sul Sakoku - corretto link a Binario su canaro.net
+  - Merge branch 'generazione-ebook' into redazione
+
 ## 0.30.54 (April 03, 2022)
   - Aggiunta curatela Saccone alle note
 

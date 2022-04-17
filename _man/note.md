@@ -196,7 +196,7 @@ Non è degli errori, che devi avere paura, ma della stasi.
             <a href="/man/memoria#isolamento"><i class="fas fa-reply"></i></a>
         </li>    
         <li id="sakoku">
-            @todo: spiegare cosa sia stato il Sakoku.
+            Il termine <i>Sakoku</i>, che vuol dire: <i>Paese chiuso</i>, indica il periodo della storia del Giappone che va dal 1641 al 1853, durante il quale il Giappone si chiuse quasi totalmente ai rapporti con l'estero.
             <a href="/man/memoria#sakoku"><i class="fas fa-reply"></i></a>
         </li>    
         <li id="yoga">
@@ -248,6 +248,12 @@ Non è degli errori, che devi avere paura, ma della stasi.
         <li id="eta">
             @todo: verificare dato su età media nel Giappone del XVI  Secolo (40 anni)
             <a href="/man/funzioni#eta"><i class="fas fa-reply"></i></a>
+        </li>
+        <li id="briglie">
+            <i>Se tu ancora non hai ammirato la bellezza dell'Amico, alzati,  non oziare, va alla ricerca dei Suoi segreti! Se ne sei ignaro devi cercare: fino a quando sa rai come un asino privo di briglie? 
+            </i><br />
+            <span class="autore">F. Attar</span> - <i>op.cit.</i>
+            <a href="/man/funzioni#briglie"><i class="fas fa-reply"></i></a>
         </li>
         <li id="5anelli">
             <!-- @todo: bisogna invertire cognome e nome ? -->
