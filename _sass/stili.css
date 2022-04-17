@@ -388,7 +388,8 @@ MAIN P.immagine IMG {
     max-width: 100%;
 }
 /** 
- * Le citazioni devono essere centrate. 
+ *  Le citazioni devono essere centrate, ma quelle estese
+ *  possono essere giustificate
  */
 MAIN BLOCKQUOTE {
     color: $blockquoteColor;
@@ -405,6 +406,9 @@ MAIN BLOCKQUOTE P {
 MAIN BLOCKQUOTE.spalla-sx {
     padding-left: 2em;
     text-align: left;
+}
+MAIN BLOCKQUOTE.giustificato {
+    text-align: justify;
 }
 
 BODY.pagina H1 {
