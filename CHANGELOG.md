@@ -1,3 +1,6 @@
+## 0.30.59 (April 17, 2022)
+  - Corretti errori nel titolo dei post
+
 ## 0.30.58 (April 17, 2022)
   - Aggiunte due pagine del log
 
