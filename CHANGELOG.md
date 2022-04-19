@@ -1,3 +1,6 @@
+## 0.30.60 (April 19, 2022)
+  - Aggiunta nota su età media Giappone e corretto nome Musashi nelle note
+
 ## 0.30.59 (April 17, 2022)
   - Corretti errori nel titolo dei post
 
