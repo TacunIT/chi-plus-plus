@@ -246,7 +246,10 @@ Non è degli errori, che devi avere paura, ma della stasi.
             <a href="/man/funzioni#musashi"><i class="fas fa-reply"></i></a>
         </li>
         <li id="eta">
-            @todo: verificare dato su età media nel Giappone del XVI  Secolo (40 anni)
+            Secondo <span class="autore">A. Maddison</span>, 
+            <i>The world economy: a millennial perspective</i>,
+            Development Centre of the Organisation for Economic Co-operation and Development, 
+            Paris, 2001, p.29, l'età media in Giappone fra il 1776 e il 1875 era di 32 anni; è ragionevole pensare che duecento anni prima fosse ancora più breve.
             <a href="/man/funzioni#eta"><i class="fas fa-reply"></i></a>
         </li>
         <li id="briglie">
@@ -256,8 +259,7 @@ Non è degli errori, che devi avere paura, ma della stasi.
             <a href="/man/funzioni#briglie"><i class="fas fa-reply"></i></a>
         </li>
         <li id="5anelli">
-            <!-- @todo: bisogna invertire cognome e nome ? -->
-            <span class="autore">M. Musashi</span>,
+            <span class="autore">M. Miyamoto</span>,
             <i>Il libro dei cinque anelli (Go rin no sho)</i>,
             <a href="/man/funzioni#5anelli"><i class="fas fa-reply"></i></a>
         </li>
