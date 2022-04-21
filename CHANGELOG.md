@@ -1,3 +1,6 @@
+## 0.30.61 (April 21, 2022)
+  - Aggiunta citazione Guenon/Greci
+
 ## 0.30.60 (April 19, 2022)
   - Aggiunta nota su età media Giappone e corretto nome Musashi nelle note
 
