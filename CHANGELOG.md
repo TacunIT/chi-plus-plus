@@ -1,3 +1,7 @@
+## 0.30.62 (April 27, 2022)
+  - Merge branch 'nomi-note' into redazione
+  - Aggiunti nomi estesi alle note e corrette citazioni da Attar
+
 ## 0.30.61 (April 21, 2022)
   - Aggiunta citazione Guenon/Greci
 
