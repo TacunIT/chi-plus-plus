@@ -802,7 +802,7 @@ SECTION.note OL LI BLOCKQUOTE {
     font-size: 1rem;
 }
 SECTION.note OL LI SPAN.autore {
-    font-variant-caps: small-caps;
+/*    font-variant-caps: small-caps; */
 }
 BODY.note SECTION.note OL {
      margin-bottom: 3rem;
