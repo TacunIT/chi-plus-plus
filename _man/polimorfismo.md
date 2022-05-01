@@ -604,7 +604,7 @@ In una nota della mappa mentale su cui basò lo sviluppo iniziale della dottrina
 
 Solo alcuni anni dopo, annotò questa frase in un libro di Guenon:
 
-> {{ site.data.citazioni.guenon.spirito.testo }}<a class="nota" href="/man/note#guenon-spirito" id="guenon-spirito"></a>
+> {{ site.data.citazioni.guenon.spirito }}<a class="nota" href="/man/note#guenon-spirito" id="guenon-spirito"></a>
 
 <hr id="igm">
 

@@ -16,7 +16,7 @@ Se è un modo di dire: “Vedi? Anche lui la pensava come me!”, è sbagliato; 
 Come ti ho detto <a href="/man/funzioni#verita" class="xref">in precedenza</a>, la Verità è una; puoi ritrarla a olio, a tempera, a carboncino o al tratto, ma il soggetto della tua opera sarà sempre lo stesso; se non lo è, non è di Lei, che stai parlando.  
 René Guénon disse:
 
-> {{ site.data.citazioni.guenon.filosofi.testo }}<a class="nota" href="/man/note#fn-verita" id="verita"></a>
+> {{ site.data.citazioni.guenon.filosofi }}<a class="nota" href="/man/note#fn-verita" id="verita"></a>
 
 Questo *bisogno* di distinguersi, questa *agitazione* sono chiari sintomi di un asservimento all'Entropia &mdash; ammissibile per uno *kshatriya*, ma inaccettabile per un *brâhmana*<!-- @todo: verificare traslitterazione -->.  
 Così come i boschi di Faulkner non erano né del Maggiore De Spain, né di Thomas Sutpen, da cui li aveva comprati, né del capo Chickasaw Ikkemotubbe<a class="nota" href="/man/note#fn-faulkner" id="faulkner"></a> che glieli aveva venduti, Linux non appartiene né ai suoi sviluppatori, né a Linus Torvalds<a class="nota" href="/man/note#fn-linus" id="linus"></a> e nemmeno ad Andrew Tanenbaum<a class="nota" href="/man/note#fn-tanenbaum" id="tanenbaum"></a>.
@@ -388,7 +388,10 @@ Non è degli errori, che devi avere paura, ma della stasi.
         </li>
         <li id="iblis">
             <i>{{ site.data.citazioni.corano.VII-14-18 }} </i> - Cor. VII 14-18<br />
-            Citato da {{ site.data.citazioni.corano.fonte }}
+            Citato da Carlo <span class="autore">Saccone</span>, 
+            <i>Iblīs, il Satana del Terzo Testamento. Letture coraniche II</i>, 
+            Centro Essad Bey-CreateSpace IPP, 
+            Charleston 2016 (seconda ed.)
             <a href="/man/classi-oggetti#iblis"><i class="fas fa-reply"></i></a>
         </li>
         <li id="cogito">
@@ -400,7 +403,9 @@ Non è degli errori, che devi avere paura, ma della stasi.
     <h3>L'ereditarietà</h3>
     <ol>
         <li id="miti">
-            {{ site.data.citazioni.mulino-amleto.fonte }}
+            Giorgio <span class="autore">de Santillana</span>, 
+            Hertha <span class="autore">von Dechend</span>, 
+            <i>Il mulino di Amleto</i>, Adelphi, Milano, 1983
             <a href="/man/ereditarieta#miti"><i class="fas fa-reply"></i></a>
         </li>
         <li id="fusto">
@@ -417,7 +422,11 @@ Non è degli errori, che devi avere paura, ma della stasi.
     <h3>Il polimorfismo</h3>
     <ol>
         <li id="guenon-spirito">
-            {{ site.data.citazioni.guenon.spirito.fonte }}
+            {{ site.data.citazioni.guenon.spirito }}
+            René <span class="autore">Guénon</span>, 
+            <i>La crisi del mondo moderno</i>. 
+            Edizioni Mediterranee, 
+            Roma 2010.
             <a href="/man/polimorfismo#guenon-spirito"><i class="fas fa-reply"></i></a>
         </li>
         <li id="dawkins-analogia">
@@ -439,8 +448,9 @@ Non è degli errori, che devi avere paura, ma della stasi.
             <a href="/man/stream#bitmask"><i class="fas fa-reply"></i></a>
         </li>    
         <li id="scacchi">
-            {{ site.data.citazioni.scacchi.testo }}<br />            
-            {{ site.data.citazioni.scacchi.fonte }}
+            <i>{{ site.data.citazioni.fois.scacchi }}</i><br />            
+            Milla <span class="autore">Fois</span>, 
+            <i>Miti Persiani: Zoroastro e il Libro dei Re</i>
             <a href="/man/stream#scacchi"><i class="fas fa-reply"></i></a>
         </li>        
     </ol>
@@ -448,7 +458,9 @@ Non è degli errori, che devi avere paura, ma della stasi.
     <h3>Il debug</h3>
     <ol>
         <li id="croce">
-            {{ site.data.citazioni.croce.fonte }}
+            Benedetto <span class="autore">Croce</span>, 
+            <i>Breviario di estetica</i>, 
+            Laterza, Bari, 1928
             <a href="/man/debug#croce"><i class="fas fa-reply"></i></a>
         </li>        
         <li id="bottom-down">
@@ -456,12 +468,15 @@ Non è degli errori, che devi avere paura, ma della stasi.
             <a href="/man/debug#bottom-down"><i class="fas fa-reply"></i></a>
         </li>    
         <li id="deen">
-            {{ site.data.citazioni.deen.fonte }}
+            Mathijs <span class="autore">Deen</span>, 
+            op. cit.
             <a href="/man/debug#deen"><i class="fas fa-reply"></i></a>
         </li>        
         <li id="stoltezza">
-            {{ site.data.citazioni.mulino-amleto.stoltezza }}
-            {{ site.data.citazioni.mulino-amleto.fonte }}
+            <i>{{ site.data.citazioni.mulino-amleto.stoltezza }}</i><br />
+            Giorgio <span class="autore">de Santillana</span>, 
+            Hertha <span class="autore">von Dechend</span>, 
+            op. cit.
             <a href="/man/debug#stoltezza"><i class="fas fa-reply"></i></a>
         </li>        
         <li id="firmware">
@@ -473,7 +488,8 @@ Non è degli errori, che devi avere paura, ma della stasi.
     <h3>Note</h3>
     <ol>
         <li id="fn-verita">
-            {{ site.data.citazioni.guenon.filosofi.fonte }}
+            René <span class="autore">Guénon</span>, 
+            op. cit.
             <a href="#verita"><i class="fas fa-reply"></i></a>
         </li>        
         <li id="fn-faulkner">
@@ -491,6 +507,7 @@ Non è degli errori, che devi avere paura, ma della stasi.
 
     </ol>
 </section>
+
 <!--
 <li id="fn-knoll">
     La prima versione di Photoshop fu sviluppata nel 1987 dai fratelli Thomas e John Knoll e da Mark Hamburg, i quali, nel 1988, ne vendettero i diritti di distribuzione alla Adobe.
@@ -501,8 +518,8 @@ Non è degli errori, che devi avere paura, ma della stasi.
     <a href="/man/polimorfismo#incapsulamento"><i class="fas fa-reply"></i></a>
 </li>    
 <li id="vedanta">
-    Ananda. K. <span>Coomaraswami</span>, 
-    <i>Tempo ed Eternità</i>,
+    Ananda <span class="autore">K. Coomaraswamy</span>, 
+    <i>Tempo ed Eternità</i>, 
     Luni, Milano, 2003
     <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
 </li>    </ol>
