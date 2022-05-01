@@ -10,9 +10,9 @@ title:      Note
 ---
 
 Le note sono la parte più importante di un libro.
-William Hazlitt, nel primo capitolo de: *L'ignoranza delle persone colte*, sostiene che coloro i quali leggono troppi libri non hanno idee proprie e quindi sono costretti a chiedere in prestito la saggezza altrui; allo stesso tempo, con encomiabile coerenza, in circa otto pagine di testo, fa una dozzina di citazioni: dal Vangelo a Milton, da Shakespeare Wordsworth.  
+William Hazlitt, nel primo capitolo de: *L'ignoranza delle persone colte*, sostiene che coloro i quali leggono troppi libri non hanno idee proprie e quindi sono costretti a chiedere in prestito la saggezza altrui; allo stesso tempo, con encomiabile coerenza, in circa otto pagine di testo, fa una dozzina di citazioni: dal Vangelo a Milton, da Shakespeare a Wordsworth.  
 Vorrei perciò che tu soffermassi la tua mente sul motivo che ti ha spinto a riportare qui dei brani di opere altrui. 
-Se è un modo di dire: “Vedi? Anche lui la pensava come me!”, è sbagliato; devi se mai affermare: “Vedi? anche io la penso come lui!”.
+Se è un modo di dire: “Vedi? Anche lui la pensava come me!”, è sbagliato; se mai, devi affermare: “Vedi? anche io la penso come lui!”.
 Come ti ho detto <a href="/man/funzioni#verita" class="xref">in precedenza</a>, la Verità è una; puoi ritrarla a olio, a tempera, a carboncino o al tratto, ma il soggetto della tua opera sarà sempre lo stesso; se non lo è, non è di Lei, che stai parlando.  
 René Guénon disse:
 
@@ -286,7 +286,7 @@ Non è degli errori, che devi avere paura, ma della stasi.
         </li>
         <li id="sapiens">
             <i>“Nell’universo non esistono dèi , non esistono nazioni né denaro né diritti umani né leggi , e non esiste alcuna giustizia che non sia nell’immaginazione comune degli esseri umani”</i><br />  
-            <span class="autore">Y .N. Harari</span>,
+            <span class="autore">Yuval N. Harari</span>,
             <i>Sapiens. Da animali a dèi: Breve storia dell'umanità. </i>  
             Bompiani, Milano, 2019
             <a href="/man/istruzioni-condizionali#sapiens"><i class="fas fa-reply"></i></a>
@@ -327,7 +327,9 @@ Non è degli errori, che devi avere paura, ma della stasi.
             <a href="/man/istruzioni-iterative#blackfriday"><i class="fas fa-reply"></i></a>
         </li>
         <li id="vasana">
-            <span class="autore">P. Scarabelli, M. Vinti</span> - <i>op.cit.</i>
+            Piera <span class="autore">Scarabelli</span>, 
+            Massimo <span class="autore">Vinti</span> 
+            - <i>op.cit.</i>
             <a href="/man/istruzioni-iterative#vasana"><i class="fas fa-reply"></i></a>
         </li>
         <li id="stateful">
@@ -419,7 +421,7 @@ Non è degli errori, che devi avere paura, ma della stasi.
             <a href="/man/polimorfismo#guenon-spirito"><i class="fas fa-reply"></i></a>
         </li>
         <li id="dawkins-analogia">
-            R. <span class="autore">Dawkins</span>, 
+            Richard <span class="autore">Dawkins</span>, 
             <i>L'Orologiaio Cieco</i>, 
             Mondadori, Milano, 2016 
             <a href="/man/polimorfismo#dawkins-analogia"><i class="fas fa-reply"></i></a>
@@ -499,7 +501,7 @@ Non è degli errori, che devi avere paura, ma della stasi.
     <a href="/man/polimorfismo#incapsulamento"><i class="fas fa-reply"></i></a>
 </li>    
 <li id="vedanta">
-    A. K. <span>Coomaraswami</span>, 
+    Ananda. K. <span>Coomaraswami</span>, 
     <i>Tempo ed Eternità</i>,
     Luni, Milano, 2003
     <a href="Javascript:history.back()"><i class="fas fa-reply"></i></a>
