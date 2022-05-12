@@ -1,9 +1,9 @@
 ---
 layout:   post
-title:    "Guénon, sul concetto di Dio"
-tags:     [log, verità, Guénon, citazioni, Greci]
+title:    "Guénon, sulla dialettica greca"
+tags:     [log, citazioni, Guénon, dialettica, Greci]
 og_img:   ""
-og_desc:  "Prima di parlare di <i>Dio</i>, è bene accertarsi di cosa si intenda con questa parola"
+og_desc:  ""
 ---
 
 <span class="autore">Guénon, René</span>,
