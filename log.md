@@ -14,8 +14,8 @@ excerpt:    ""
                 <h3>{{ post.title }}</h3>
             </a>
             <p class="data">{{ post.date | date_to_string }}</p>
+            <p class="desc">{{ post.og_desc }}</p>
             <p class="tag"><label>tag</label> {{ post.tags | sort | join: ", " }}</p>
-            {{ post.og_desc }}<br />
             <a class="more" href="{{ post.url | relative_url}}">leggi tutto</a>
         </div>
         {% endif %}
