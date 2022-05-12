@@ -1,3 +1,11 @@
+## 0.30.63 (May 12, 2022)
+  - Aggiunte due note da Guenon al log
+  - Revisione delle note dell'e-book
+  - Revisione degli stili dell'e-book per la visualizzazione Kindle
+  - Aggiornate le note nell'e-book
+  - Spostate le fonti delle citazioni dal file data alle note
+  - Correzioni minori alle Note
+
 ## 0.30.62 (April 27, 2022)
   - Merge branch 'nomi-note' into redazione
   - Aggiunti nomi estesi alle note e corrette citazioni da Attar
