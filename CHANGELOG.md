@@ -1,3 +1,8 @@
+## 0.30.64 (May 14, 2022)
+  - Aggiunto post sulla Trimurti
+  - Studio gestione note per e-book
+  - Correzioni alle pagine del log
+
 ## 0.30.63 (May 12, 2022)
   - Aggiunte due note da Guenon al log
   - Revisione delle note dell'e-book
