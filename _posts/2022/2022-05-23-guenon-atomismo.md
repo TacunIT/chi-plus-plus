@@ -1,6 +1,6 @@
 ---
 layout:   post
-title:    "Guénon, sull'atomismo'"
+title:    "Guénon, sull'atomismo"
 tags:     [log, citazioni, Guénon, atomismo, Spazionismo, spazioni]
 og_img:   ""
 og_desc:  "Guénon e Shankaracharya non crederebbero allo Spazionismo"

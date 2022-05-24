@@ -1,3 +1,6 @@
+## 0.30.65 (May 24, 2022)
+  - Aggiunti alcuni post su Guénon
+
 ## 0.30.64 (May 14, 2022)
   - Aggiunto post sulla Trimurti
   - Studio gestione note per e-book
