@@ -12,6 +12,7 @@ url:         "https://chiplusplus.org"
 
 exclude: [
     'src'
+  , 'bin' 
   , 'CHANGELOG'
   , 'CONTRIBUTING.md'
   , 'MANIFEST.md'
