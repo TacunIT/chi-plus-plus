@@ -1,3 +1,7 @@
+## 0.30.66 (May 25, 2022)
+  - Rinominata directory _bin in bin, per mia personale comodità
+  - Redazione post sugli elementi dell'Induismo
+
 ## 0.30.65 (May 24, 2022)
   - Aggiunti alcuni post su Guénon
 
