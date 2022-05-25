@@ -16,7 +16,7 @@ In verità nulla è più facile che mettere in evidenza le contraddizioni implic
 
 </blockquote>
 
-Guénon parte da un presupposto sbagliato: assumere che ciò che non ha parti non abbia esensione.  
+Guénon parte da un presupposto sbagliato: assumere che ciò che non ha parti non abbia estensione.  
 È un modo di ragionare che mi ricorda molto i Greci: fare un'affermazione scorretta e costruirci sopra una "dimostrazione".  
 Pensate ai pixel di uno schermo: possono essere o solo bianchi o di tre colori.
 Ciascun elemento del pixel è atomico, nel senso che non può essere scisso ulteriormente, ma ha una sua dimensione.  
