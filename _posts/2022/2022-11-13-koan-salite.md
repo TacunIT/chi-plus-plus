@@ -2,7 +2,7 @@
 layout:   post
 title:    "Il Maestro Canaro e le salite - Koan C'hi++"
 tags:     [log, ciclismo, salite, illuminazione, koan, Dio]
-og_img:   ""
+og_img:   "/assets/img/og-img/koan-salite.jpg"
 og_desc:  "Un dialogo fra Dio e il Maestro Canaro a proposito delle salite"
 ---
 
