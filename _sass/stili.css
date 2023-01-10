@@ -251,7 +251,9 @@ DIV.page {
     margin: auto;
 }
 
-HEADER {
+/** Messaggio per risoluzione bassa */
+HEADER P.gira {
+    display: none;
 }
 
 HEADER DIV.box.intestazione {
@@ -886,6 +888,12 @@ NAV.post A.next {
  *  Stili per mobile
  */
 @media only screen and (max-width: 540px) {
+
+    HEADER P.gira {
+        display: block;
+        color: #900;
+    }
+
 /*
     BODY.pagina HEADER NAV.menu-top A I ,
     BODY.proposta HEADER NAV.menu-top A I {
