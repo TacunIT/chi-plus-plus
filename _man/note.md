@@ -450,7 +450,8 @@ Non è degli errori, che devi avere paura, ma della stasi.
         <li id="scacchi">
             <i>{{ site.data.citazioni.fois.scacchi }}</i><br />            
             Milla <span class="autore">Fois</span>, 
-            <i>Miti Persiani: Zoroastro e il Libro dei Re</i>
+            <i>Miti Persiani: Zoroastro e il Libro dei Re</i><br />
+            Vedi anche il post: <a href="/2023/01/10/la-mossa-del-cavallo.html">La Mossa del Cavallo</a>.
             <a href="/man/stream#scacchi"><i class="fas fa-reply"></i></a>
         </li>        
     </ol>
