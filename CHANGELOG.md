@@ -1,3 +1,6 @@
+## 0.31.1 (January 10, 2023)
+  - Aggiunto messaggio per risoluzione bassa a HEADER
+
 ## 0.31.0 (January 10, 2023)
   - Aggiunto link a post sulla mossa del Cavallo nel capitolo sugli Stream
   - Modificati stili menu mobile Aggiunto post sul movimento del Cavallo degli Scacchi
