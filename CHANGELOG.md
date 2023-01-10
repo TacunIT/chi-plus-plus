@@ -1,3 +1,9 @@
+## 0.31.0 (January 10, 2023)
+  - Aggiunto link a post sulla mossa del Cavallo nel capitolo sugli Stream
+  - Modificati stili menu mobile Aggiunto post sul movimento del Cavallo degli Scacchi
+  - Aggiunta immagine OG a Koan salite
+  - Aggiunto Koan sul Maestro Canaro e le salite
+
 ## 0.30.66 (May 25, 2022)
   - Rinominata directory _bin in bin, per mia personale comodità
   - Redazione post sugli elementi dell'Induismo
