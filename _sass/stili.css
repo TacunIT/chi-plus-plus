@@ -622,6 +622,16 @@ IFRAME.pdf {
     font-size: 2rem;
 }
 
+BODY.proposta P.nota-bene {
+    font-size: 1.1rem;
+    color: #999;
+    text-align: center;
+    margin: 1rem;
+}
+BODY.proposta P.nota-bene B {
+    color: inherit;
+}
+
 /** Titoli numerati */
 BODY.proposta MAIN h1 {
     counter-reset: h2;
