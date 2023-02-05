@@ -7,9 +7,7 @@
 <img src="./assets/img/chi-plus-plus.png" width="300px">
 </p>
 
-Il nome *C'hi++* è un gioco di parole fra il termine giapponese *C'hi* (氣, ovvero: *soffio vitale*)
-e il linguaggio di programmazione chiamato: *C++*. Non è un accostamento casuale: la mia intenzione
-è quella di gestire l'evoluzione della mia teoria così come si gestisce il software; in particolare, il software *open-source*.
+Il nome *C'hi++* è un gioco di parole fra il termine giapponese *C'hi* (氣, ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato: *C++*. Non è un accostamento casuale: la mia intenzione è quella di gestire l'evoluzione della mia teoria così come si gestisce il software; in particolare, il software *open-source*.
 
 Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e princip&icirc; etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come questo:
 
@@ -40,7 +38,7 @@ Il testi di riferimento del *C'hi++* sono:
 
 - [**C'hi++**](https://chiplusplus.org/man/) Un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo o, se preferite, un libro di filosofia scritto come un manuale di programmazione. 
 Il testo riporta gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione dei computer. 
-Ciascun paragrafo utilizza uno degli aspettti della programmazione nel linguaggio C++ per introdurre dei precetti del *C'hi++*, il linguaggio con cui (sostiene il Maestro) è stata scritta l'applicazione che gestisce l'Universo.<br/><img src="https://img.shields.io/badge/stato-revisione%20bozze-orange" alt="Stato documento: revisione di bozze" height="20" style="padding-top:0.5rem">
+Ciascun paragrafo utilizza uno degli aspettti della programmazione nel linguaggio C++ per introdurre dei precetti del *C'hi++*, il linguaggio con cui (sostiene il Maestro) è stata scritta l'applicazione che gestisce l'Universo.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
 
 - [**Sostiene Aristotele**](https://chiplusplus.org/sostiene-aristotele.html): un documento che risale al Giugno del 2007 e che possiamo considerare una versione preliminare del *C'hi++*. In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
 
@@ -51,7 +49,7 @@ Ciascun paragrafo utilizza uno degli aspettti della programmazione nel linguaggi
 
 Esiste anche una mappa mentale nella quale sto riportando tutti i miei appunti e le mie idee per *C'hi++*.
 
-Chi volesse approfondire i concetti riportati in questa presentazione può leggere il [Manifesto](MANIFEST.md) e, successivamente, [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta/).
+Chi volesse approfondire i concetti riportati in questa presentazione può leggere il [Manifesto](MANIFEST.md) e, successivamente, [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta/), tenendo conto del fatto che la struttura del libro si è evoluta in maniera differente da quanto avevo previsto due anni prima.
 
 La risposta al quesito del notaio e del bambino è nel capitolo 9 della [**Proposta**](https://chiplusplus.org/proposta/).
 

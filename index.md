@@ -39,7 +39,7 @@ Anticamente, abbiamo attribuito una controparte divina al lampo che generava il 
 Più recentemente, Poe, in *Eureka*, ha ipotizzato che l'Universo sia il frutto dell'azione contrapposta della Gravità, che lui interpreta come la tendenza di tutta la materia a tornare all'Uno primigenio e dell'Elettricità, che al contrario, tende a dividere.
 All'inizio del Secolo scorso, infine, i Futuristi hanno mitizzato i simboli del progresso tecnologico &mdash; velocità, eliche, aeroplani, automobili &mdash;, rendendoli l'oggetto della loro arte.
 <!-- @todo: aggiungere nota sulla scienza -->
-Nulla di strano, quindi, che all'inizio di questo Millennio si tenti un paragone fra le regole note del software e le regole ignote dell'Universo in cui viviamo.
+Nulla di strano, quindi, che all'inizio di questo millennio si tenti un paragone fra le regole note del software e le regole ignote dell'Universo in cui viviamo.
 
 C'hi++ non si propone come una spiegazione assoluta e definitiva del Significato dell'Esistenza, ma come un modello incompleto e perfettibile.
 È per questo motivo che ha una versione, come il software: perché possa evolvere col tempo, così come avviene per il software.
