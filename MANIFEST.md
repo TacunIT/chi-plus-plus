@@ -117,19 +117,19 @@ Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, elimina
 
 Pur se complesso, tutto questo è possibile. Spogliate degli orpelli e ricondotte alle loro caratteristiche essenziali, le diverse ipotesi metafisiche hanno molti punti in comune perché sono tutte, in una maniera o nell'altra, la risposta a uno stesso bisogno: la ricerca di una giustificazione alla nostra esistenza.
 
-**C’hi++ – Il senso della vita è il debug** è precisamente questo: una metafisica a basso contenuto di elementi metafisici, sui cui principii è possibile basare un’etica *open-source* e “vendor-independent”.
+Posso dirlo con buona certezza, perché **C’hi++ – Il senso della vita è il debug** è precisamente questo: una metafisica a basso contenuto di elementi metafisici, sui cui principii è possibile basare un’etica *open-source* che è, allo stesso tempo, altamente compatibile con le principali religioni canoniche, ma allo stesso tempo, diversa da ciascuna di esse.
 
 <!--
 Posso dirlo con buona certezza, perché da più di dieci anni sto lavorando a un libro dal titolo: **C’hi++ – Il senso della vita è il debug**, nel quale definisco i principî di un’etica *vendor-independent* e *open-source*.
--->
 
 Ma, così come avvenne a Linus Torvaldsen con Linux, dopo qualche anno che lavoravo a questo progetto, capii che non era un compito che potevo svogere da solo, così misi tutti i documenti che avevo elaborato fino ad allora su GitHub e cominciai a scrivere un *Manifesto* per spiegare a dei potenziali collaboratori quali fossero le mie intenzioni.
+-->
 
 Preso atto della mia incapacità di produrre un documento accademico, ho redatto il Manifesto come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivo il problema che mi propongo di affrontare ed esamino le possibili soluzioni.
 Ne è derivato un testo di quaranta pagine: dettagliato, ma decisamente troppo lungo per poter fungere da manifesto del progetto.
-L'ho trasformato perciò in [un documento a sé stante](https://chiplusplus.org/proposta/) e ho cercato di condensare le principali informazioni che conteneva nel file [README](README.md) che compare all'apertura del progetto su GitHub e in questo MANIFEST.
+L'ho trasformato perciò in [un documento a sé stante](https://chiplusplus.org/proposta.html) e ho cercato di condensare le principali informazioni che conteneva nel file [README](README.md) che compare all'apertura del progetto su GitHub e in questo MANIFEST.
 
-Se volete sapere qualcosa di più sul *C'hi++*, vi suggerisco di leggere [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta/).
+Se volete sapere qualcosa di più sul *C'hi++*, vi suggerisco di leggere [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta.html).
 
 Il testo del manuale è all'indirizzo: <a href="https://chiplusplus.org" target="chi" >chiplusplus.org</a>. 
 Se non avete o tempo o voglia di leggerlo tutto (probabile), leggete almeno <a href="https://chiplusplus.org/man/memoria#delete" target="chi" >questo brano del capitolo sulla mamoria</a>.

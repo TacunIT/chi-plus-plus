@@ -18,7 +18,7 @@ Questa miscela di spiritualità e tecnologia è presente sia nel nome *C'hi++* &
 I precetti del C'hi++ sono illustrati in un libro dal titolo:
 [*C'hi++ - Il senso della vita è il debug*](/man/)
 e sono riassunti nel testo:
-[*C'hi++ - Proposta per una metafisica open-source*](/proposta/).
+[*C'hi++ - Proposta per una metafisica open-source*](/proposta.html).
 Tutti i testi, le immagini e i dati relativi al C'hi++ sono raccolti in un
 <a  title="Va' al progetto su GitHub"
     target="github"
