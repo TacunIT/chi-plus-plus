@@ -128,7 +128,7 @@ Ho cominciato a elaborare questa teoria nel 2005.
 Nel 2009 ho scritto il [Prologo](https://chiplusplus.org/man/prologo) e i primi due capitoli libro, ma una serie di spiacevoli eventi personali ne ha rallentato la redazione fino al 2018, quando misi tutti i documenti che avevo elaborato fino ad allora su GitHub e feci un primo tentativo di formalizzare la mia dottrina nella [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta.html).  
 Preso atto della mia incapacità di produrre un documento accademico, redassi la *Proposta* come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivevo il problema che mi proponevo di affrontare ed esaminavo le sue  possibili soluzioni.  
 
-Nel 2020, all'inizio del primo *lockdown*, decisi di mettere in atto quanto suggeriva su Facebook il professor Floridi e, come Newton, approfittai della reclusione coatta per dedicarmi al Manuale, che completai, nella sua prima stesura, a Settembre 2021:
+Nel 2020, all'inizio del primo *lockdown*, decisi di mettere in atto quanto suggeriva su Facebook il professor Floridi ed, epigone di Newton, approfittai della reclusione coatta per dedicarmi al Manuale, che completai, nella sua prima stesura, a Settembre 2021:
 
 ```
 * |   commit 3c959429331ef385cc3bc46df62229ba2aafac3b
@@ -146,8 +146,10 @@ Nel 2020, all'inizio del primo *lockdown*, decisi di mettere in atto quanto sugg
 | | 
 ```
 
-Se volete sapere qualcosa di più sul *C'hi++*, il testo del manuale è all'indirizzo: <a href="https://chiplusplus.org" target="chi" >chiplusplus.org</a>. 
-Se non avete o tempo o voglia di leggerlo tutto (probabile), leggete almeno <a href="https://chiplusplus.org/man/memoria#delete" target="chi" >questo brano del capitolo sulla memoria</a>.
+Se volete lggere il Manuale, lo trovate all'indirizzo: <a href="https://chiplusplus.org" target="chi" >chiplusplus.org</a>. 
+Se non avete o tempo o voglia di leggerlo tutto (probabile), potete trovare i concetti principali della dottrina nella [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta.html). 
+Se volete capire come si possano coniugare senso della vita e programmazione,
+leggete <a href="https://chiplusplus.org/man/memoria#delete" target="chi" >questo brano del capitolo sulla memoria</a>.
 
 Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di GitHub.
 
