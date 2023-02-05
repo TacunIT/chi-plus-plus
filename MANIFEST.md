@@ -146,12 +146,12 @@ Nel 2020, all'inizio del primo *lockdown*, decisi di mettere in atto quanto sugg
 | | 
 ```
 
-Se volete lggere il Manuale, lo trovate all'indirizzo: <a href="https://chiplusplus.org" target="chi" >chiplusplus.org</a>. 
-Se non avete o tempo o voglia di leggerlo tutto (probabile), potete trovare i concetti principali della dottrina nella [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta.html). 
+Se volete leggere il Manuale, lo trovate all'indirizzo: <a href="https://chiplusplus.org" target="chi" >chiplusplus.org</a>.  
+Se non avete o tempo o voglia di leggerlo tutto (probabile), potete trovare i concetti principali della dottrina nella [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta.html).  
 Se volete capire come si possano coniugare senso della vita e programmazione,
 leggete <a href="https://chiplusplus.org/man/memoria#delete" target="chi" >questo brano del capitolo sulla memoria</a>.
 
-Se volete collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di GitHub.
+Per collaborare o anche esporre delle critiche, potere farlo con gli strumenti canonici di GitHub.
 
 <section class="note">
     <h2>Note</h2>
