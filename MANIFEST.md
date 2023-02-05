@@ -120,23 +120,15 @@ Spogliate degli orpelli e ricondotte alle loro caratteristiche essenziali, le di
 
 Posso dirlo con buona certezza, perché **C’hi++ – Il senso della vita è il debug** è precisamente questo: una metafisica a basso contenuto di elementi metafisici, sui cui principii è possibile basare un’etica *open-source* che è, allo stesso tempo, altamente compatibile con le principali religioni canoniche, ma allo stesso tempo, indipendente da ciascuna di esse.
 
-Così come il nome *C'hi++* unisce il termine giapponese *C'hi* (l'ideogramma 氣, ovvero: *soffio vitale*) e l'operatore `++` del linguaggio di programmazione chiamato: *C++*, il libro è - allo stesso tempo - un manuale di programmazione in C++ e un libro di filosofia.
+Così come il nome *C'hi++* unisce il termine giapponese *C'hi* (氣, ovvero: *soffio vitale*) e l'operatore `++` tipico dei linguaggi di programmazione, il libro è, allo stesso tempo, un manuale di programmazione nel linguaggio *C++* e un libro di filosofia.
+Non è un accostamento così anomalo: così come le religioni definiscono i rapporto fra l'uomo e la (o *le*) divinità, i linguaggi di programmazione definiscono il modo in cui i programmi si rapportano al sistema operativo e molto spesso i principii che valgono in un àmbito possono essere utilizzati, quanto meno come esempio, anche nell'altro.  
+Il caricamento di dati e programmi nella memoria RAM del computer, per esempio, è la trasposizione informatica del Ciclo delle Rinascite delle religioni orientali, mentre i concetti aristotelici di *universale* e *sostanza* sono applicabili anche alle *classi* del C++.
 
-Non è un accostamento così anomalo: così come le religioni definiscono i rapporto fra l'uomo e la (o *le*) divinità, i linguaggi di programmazione definiscono il modo in cui i programmi si rapportano al sistema operativo.  
- 
+Ho cominciato a elaborare questa teoria nel 2005. 
+Nel 2009 ho scritto il [Prologo](https://chiplusplus.org/man/prologo) e i primi due capitoli libro, ma una serie di spiacevoli eventi personali ne ha rallentato la redazione fino al 2018, quando misi tutti i documenti che avevo elaborato fino ad allora su GitHub e feci un primo tentativo di formalizzare la mia dottrina nella [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta.html).  
+Preso atto della mia incapacità di produrre un documento accademico, ho redassi la *Proposta* come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivevo il problema che mi proponevo di affrontare ed esaminavo le sue  possibili soluzioni.  
 
-la mia intenzione è quella di gestire l'evoluzione della mia teoria così come si gestisce il software; in particolare, il software *open-source*.
 
-<!--
-Posso dirlo con buona certezza, perché da più di dieci anni sto lavorando a un libro dal titolo: **C’hi++ – Il senso della vita è il debug**, nel quale definisco i principî di un’etica *vendor-independent* e *open-source*.
-
-Ma, così come avvenne a Linus Torvaldsen con Linux, dopo qualche anno che lavoravo a questo progetto, capii che non era un compito che potevo svogere da solo, così misi tutti i documenti che avevo elaborato fino ad allora su GitHub e cominciai a scrivere un *Manifesto* per spiegare a dei potenziali collaboratori quali fossero le mie intenzioni.
-
-Preso atto della mia incapacità di produrre un documento accademico, ho redatto il Manifesto come se fosse un progetto informatico, con un *Executive Summary* e un' *Analisi del sistema attualmente in esercizio* nel quale descrivo il problema che mi propongo di affrontare ed esamino le possibili soluzioni.
-Ne è derivato un testo di quaranta pagine: dettagliato, ma decisamente troppo lungo per poter fungere da manifesto del progetto.
-L'ho trasformato perciò in [un documento a sé stante](https://chiplusplus.org/proposta.html) e ho cercato di condensare le principali informazioni che conteneva nel file [README](README.md) che compare all'apertura del progetto su GitHub e in questo MANIFEST.
-vi suggerisco di leggere [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta.html).
--->
 
 Se volete sapere qualcosa di più sul *C'hi++*, il testo del manuale è all'indirizzo: <a href="https://chiplusplus.org" target="chi" >chiplusplus.org</a>. 
 Se non avete o tempo o voglia di leggerlo tutto (probabile), leggete almeno <a href="https://chiplusplus.org/man/memoria#delete" target="chi" >questo brano del capitolo sulla mamoria</a>.
