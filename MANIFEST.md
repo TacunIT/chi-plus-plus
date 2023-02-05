@@ -58,7 +58,7 @@ Quale tipo conviene scegliere?
 
 **Le etiche religiose** hanno il difetto di basarsi su principî e affermazioni che non possono in acun modo essere dimostrati (p.es. esistono una o più Divinità; hanno determinate caratteristiche; esigono che ci comportiamo in una determinata maniera ecc.).
 Questi principî si suppongono universali e immutabili; quando qualcosa li modifica, si verificano delle divisioni fra i fedeli che causano scontri spesso cruenti (p.es. Cattolici vs. Valdesi, Sunniti vs. Sciiti, Mahāyāna vs. Kamalaśīla);
-Un altro problema da considerare, quando si valuta l'adozione di etiche religiose, è che chi le predica, talvolta, agisce in un modo che va contro gli ideali professati.
+Un altro problema da considerare, quando si valuta l'adozione di etiche religiose, è che chi le predica agisce talvolta in un modo che va contro gli ideali professati.
 
 **Le etiche non religiose**, di contro, hanno il difetto di basarsi su principî e affermazioni che non trovano riscontro nella realtà (p.es. *Liberté, Égalité, Fraternité* ecc.).
 Questi principî, che si suppongono universali e immutabili, variano solo in seguito a guerre o crisi sociali spesso cruente (p.es. Luigi XVI vs. Sanculotti, Lincoln vs. Davis, Segregazionisti vs. Mandela ecc.).
@@ -72,7 +72,7 @@ Se la partita è fine a sé stessa e l'unica cosa importante è vincere, non c'�
 Per alcuni, non c'è nemmeno ragione di continuare a giocare.
 
 ## La Banda degli Onesti
-Stabilito che abbiamo bisogno di nuovi valori etici che possano ricollegarsi a una qualche convinzione spirituale, ci restano da risolvere alcuni problemi.
+Stabilito che **abbiamo bisogno di nuovi valori etici che possano ricollegarsi a una qualche convinzione spirituale**, ci restano da risolvere alcuni problemi.
 
 Il primo è decidere a quale spiritualità fare riferimento.
 Ovviamente non potrà essere una delle religioni canoniche, perché così facendo allontaneremmo gli appartenenti alle altre Fedi.
@@ -85,8 +85,7 @@ La chiameremo perciò: *Metafisica* per non rischiare di allontanare..
 come li descrisse Longanesi; quella *Banda degli Onesti* che tutti i giorni fa il proprio dovere al meglio possibile anche quando non gli conviene.
 
 Per riprendere il paragone calcistico fatto prima, C'hi++ non cercherà calciatori negli altri campionati.
-Chi ha la Fede non ha bisogno di conferme razionali; possono compiacerlo, ma non gli sono necessarie.
-I precetti del suo Credo gli insegnano ciò che è giusto e ciò che non è giusto fare.
+Chi ha la Fede non ha bisogno di conferme razionali; possono compiacerlo, ma non gli sono necessarie, perché i precetti del suo Credo gli insegnano ciò che è giusto e ciò che non è giusto fare.
 
 C'hi++, però, può dare forza a quei calciatori che non si arrendono e continuano a giocare rispettando le regole anche se tutti intorno a loro - pubblico, arbitro, guardalinee e perfino i loro compagni - li istigano a compiere delle scorrettezze.
 Può aiutarli a non arrendersi e può insegnare loro che non è importante vincere le partite, ma giocare sempre meglio.
@@ -118,7 +117,11 @@ Per riuscirci, dobbiamo operare come i poeti o i disegnatori di fumetti, elimina
 
 Pur se complesso, tutto questo è possibile. Spogliate degli orpelli e ricondotte alle loro caratteristiche essenziali, le diverse ipotesi metafisiche hanno molti punti in comune perché sono tutte, in una maniera o nell'altra, la risposta a uno stesso bisogno: la ricerca di una giustificazione alla nostra esistenza.
 
-Posso dirlo con buona certezza, perché da più di dieci anni sto lavorando a un libro dal titolo: *C’hi++ – Il senso della vita è il debug*, nel quale definisco i principî di un’etica *vendor-independent* e *open-source*.
+**C’hi++ – Il senso della vita è il debug** è precisamente questo: una metafisica a basso contenuto di elementi metafisici, sui cui principii è possibile basare un’etica *open-source* e “vendor-independent”.
+
+<!--
+Posso dirlo con buona certezza, perché da più di dieci anni sto lavorando a un libro dal titolo: **C’hi++ – Il senso della vita è il debug**, nel quale definisco i principî di un’etica *vendor-independent* e *open-source*.
+-->
 
 Ma, così come avvenne a Linus Torvaldsen con Linux, dopo qualche anno che lavoravo a questo progetto, capii che non era un compito che potevo svogere da solo, così misi tutti i documenti che avevo elaborato fino ad allora su GitHub e cominciai a scrivere un *Manifesto* per spiegare a dei potenziali collaboratori quali fossero le mie intenzioni.
 
