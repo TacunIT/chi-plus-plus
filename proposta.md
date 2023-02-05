@@ -4,7 +4,6 @@ footer:     true
 layout:     proposta
 og_desc:    "Il *C'hi++* ed è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione siero/positivistica dell'esistenza."
 og_img:     "/assets/img/og-img/proposta.jpg"
-permalink:  /proposta/
 status:     pubblicato
 tags:       [religione, scienza, etica, metafisica, open-source, intelligenza artificiale]
 title:      "C'hi++ - Proposta per una metafisica open-source"
