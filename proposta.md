@@ -550,12 +550,12 @@ Il Maestro dirà:
 ed è vero: per parlare delle classi del C++ si può attingere a piene mani da Aristotele.
 Per esempio, il concetto di “essenza” può essere utilizzato per spiegare le *funzioni virtuali pure*; i concetti di “anima” e “corpo” possono illustrare la differenza fra *metodi* e *dati membro* di una classe; i concetti di “universale” e “sostanza” spiegano la differenza fra *dichiarazione* e *istanza* di una classe:
 
-> La differenza fra universale e sostanza, in Aristotele è la stessa che c'è fra classe e istanza in C++, ed è corretto dire che un termine universale non possa essere il nome di una sostanza, ma solo il nome della sua classe, perché l'istruzione:
+> La differenza fra universale e sostanza, in Aristotele è la stessa che c'è fra classe e istanza in C++, ed è corretto dire che un termine universale non possa essere il nome di una sostanza, ma solo il nome della sua classe, perché l'istruzione qui sotto dà errore.. :-)
+
 ```
 class Uomo {};
 Uomo Uomo;
 ```
-dà errore.. :-)
 
 Per l'ereditarietà delle classi i riferimenti saranno all'Etica Nicomachea:
 
