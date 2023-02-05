@@ -1,3 +1,10 @@
+## 1.0.0 (February 05, 2023)
+  - Completata revisione dei testi
+  - Redazione del MANIFEST
+  - Aggiunta nota alla Proposta
+  - Modificata URL della Proposta
+  - Rivisto il testo del README
+
 ## 0.31.1 (January 10, 2023)
   - Aggiunto messaggio per risoluzione bassa a HEADER
 
