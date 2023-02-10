@@ -1,8 +1,9 @@
 #!/bin/bash
 
 BASE_DIR=~/Developer/Chi++ 
+BIN_DIR=${BASE_DIR}/bin
 MAN_DIR=${BASE_DIR}/docs/man
-MAN_FILE=${BASE_DIR}/_bin/man-file.txt
+MAN_FILE=${BIN_DIR}/man-file.txt
 CSS_FILE=/assets/css/pdf.css
 OUT_DIR=${BASE_DIR}/_ebook
 OUT_FILE=${OUT_DIR}/chiplusplus.epub
@@ -14,4 +15,4 @@ cd ${MAN_DIR}
 #pandoc $(<${MAN_FILE}) -s -t pdf --toc -c ${CSS_FILE} -o ${OUT_FILE} --template=${TEMPLATE}
 
 echo "pandoc $(<${MAN_FILE}) -s -t html --toc -c ${CSS_FILE} -o ${OUT_FILE} "
-pandoc $(<${MAN_FILE}) -s -t pdf --toc -c ${CSS_FILE} -o ${OUT_FILE} 
+pandoc $(<${MAN_FILE}) -s -t pdf --toc  --extract-media="/Users/Carlo/Developer/Chi++" -c ${CSS_FILE} -o ${OUT_FILE}
