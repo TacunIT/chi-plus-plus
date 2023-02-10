@@ -1,3 +1,6 @@
+## 1.0.1 (February 10, 2023)
+  - Modificato script generazione e-book
+
 ## 1.0.0 (February 05, 2023)
   - Completata revisione dei testi
   - Redazione del MANIFEST
