@@ -1,3 +1,6 @@
+## 1.0.2 (February 21, 2023)
+  - Revisione dello script per la generazione del PDF
+
 ## 1.0.1 (February 10, 2023)
   - Modificato script generazione e-book
 
