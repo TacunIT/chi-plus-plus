@@ -79,7 +79,7 @@
 <hr />
 
 <p>C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983, quando lavorava ai Laboratori Bell della AT&amp;T.
-Dieci anni prima, il suo collega Dennis Ritchie aveva creato un linguaggio di programmazione chiamato <em>C</em>. 
+Dieci anni prima, il suo collega Dennis Ritchie aveva creato un linguaggio di programmazione chiamato <em>C</em>.
 Il C, come ti ho detto, era estremamente efficace se dovevi programmare i computer, ma — così come alcuni dei tuoi confratelli — non gestiva altrettanto bene le entità della vita reale.<br />
 Stroustrup, che ai tempi del suo dottorato aveva lavorato con un linguaggio a oggetti chiamato <em>Simula67</em>, pensò che se avesse potuto aggiungere alla velocità di esecuzione del C la possibilità di creare dei nuovi tipi di dato di Simula, avrebbe ottenuto il linguaggio perfetto.
 Aveva ragione.  <br />
@@ -107,7 +107,7 @@ Valore di C = 12
 Valore di C = 13
 </code></pre>
 
-<p>C++, infatti, non era un nuovo linguaggio: era un C migliorato. 
+<p>C++, infatti, non era un nuovo linguaggio: era un C migliorato.
 Tutto il codice e l’esperienza che erano state fatte fino ad allora sul C potevano essere applicate anche al C++.<br />
 Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l’Ebraismo: così come il Nazareno prese una religione spartana, adatta per un popolo in fuga nel deserto e la  migliorò, rendendola meno autoritaria, il Danese trasformò un linguaggio pensato per gestire unicamente i computer, in un linguaggio che poteva gestire ogni cosa.</p>
 
@@ -131,8 +131,8 @@ private:
     string _razza;
 public:
     const char* getSpecie() const {
-        return "cavallo"; 
-    } 
+        return "cavallo";
+    }
     const char getSesso() const {        
         return (char)_sesso;
     }
@@ -171,7 +171,7 @@ Gli <em>attributi</em> sono dei dati che descrivono le caratteristiche della cla
 I <em>metodi</em> sono delle funzioni che definiscono il modo in cui la classe può interagire con gli altri elementi del programma.
 Nelle classi dell’esempio gli <em>attributi</em> sono gli elementi che vedi nella sezione <code>private</code>, mentre i <em>metodi</em> sono le funzioni che vedi nella sezione <code>public</code>.
 La funzione che ha lo stesso nome della classe si chiama <em>costruttore</em> della classe, perché “spiega” al compilatore come debbano essere creati gli oggetti di questa classe.<br />
-Le classi, però, sono la ricetta, non sono la pietanza. 
+Le classi, però, sono la ricetta, non sono la pietanza.
 Per poter essere utilizzate, le classi devono essere <em>istanziate</em> negli oggetti:</p>
 
 <pre><code>int main()
@@ -188,7 +188,7 @@ Per poter essere utilizzate, le classi devono essere <em>istanziate</em> negli o
 I primi due sono istanze della classe <code>Cavallo</code>, il terzo è un’istanza della classe <code>Monta</code>.<br />
 Se aggiungi un po’ di codice alle classi che abbiamo visto prima e compili il programma, otterrai:</p>
 
-<pre><code>% g++ cplusplus-classe.cpp -o ../out/esempio 
+<pre><code>% g++ cplusplus-classe.cpp -o ../out/esempio
 % ../out/esempio                               
 DATA: Sun Apr  5 10:38:31 2020
 MASCHIO: Specie:cavallo, Sesso:m, Razza:lipizzano
@@ -196,7 +196,7 @@ FEMMINA: Specie:cavallo, Sesso:f, Razza:maremmano```
 </code></pre>
 
 <p>Perché un linguaggio di programmazione possa dirsi <em>orientato agli oggetti</em>, però, oltre alle classi deve poter gestire l’<em>ereditarietà</em> e il <em>polimorfismo</em>.
-L’<em>ereditarietà</em> permette di definire dei nuove classi come estensione di classi esistenti: 
+L’<em>ereditarietà</em> permette di definire dei nuove classi come estensione di classi esistenti:
 <a id="cast"></a></p>
 
 <pre><code>class Animale {
@@ -206,11 +206,11 @@ private:
     Sesso  _sesso;
 public:
     const char* getSpecie() const {
-        return _specie.c_str(); 
-    } 
+        return _specie.c_str();
+    }
     const char getSesso() const {        
         return (char)_sesso;
-    } 
+    }
     const char* getRazza() const {
         return _razza.c_str();
     }
@@ -226,7 +226,7 @@ class Cavallo : public Animale {
 public:
     Cavallo() {}
     Cavallo(const char* razza, const Sesso sesso )
-    : Animale("Cavallo", razza, sesso ) { 
+    : Animale("Cavallo", razza, sesso ) {
     }
 };
 </code></pre>
@@ -238,7 +238,7 @@ In questo modo, se oltre ai cavalli il nostro programma dovesse gestire anche al
 public:
     Asino() {}
     Asino(const char* razza, const Sesso sesso )
-    : Animale("Asino", razza, sesso ) { 
+    : Animale("Asino", razza, sesso ) {
     }
 };
 </code></pre>
@@ -442,7 +442,7 @@ cout &lt;&lt; "MULO\n"     &lt;&lt; mulo     &lt;&lt; endl;
 cout &lt;&lt; "BARDOTTO\n" &lt;&lt; bardotto &lt;&lt; endl;
 </code></pre>
 
-<p>non è il massimo dell’efficienza, sia perché potremmo sbagliarci ad accoppiare la specie dei genitori con il nome del figlio, sia perché le istruzioni devono essere ripetute per ciascun oggetto. 
+<p>non è il massimo dell’efficienza, sia perché potremmo sbagliarci ad accoppiare la specie dei genitori con il nome del figlio, sia perché le istruzioni devono essere ripetute per ciascun oggetto.
 Per risolvere il primo difetto possiamo aggiungere alla classe <code>Monta</code> un attributo e un metodo per definire autonomamente che tipo di genìa venga prodotta dalla copula:
 <a id="membro"></a></p>
 <pre><code>string   _esito;
@@ -452,13 +452,13 @@ void setEsito() {
             _esito = "asino";
         } else {
             _esito = "mulo";
-        } 
+        }
     } else {        
         if(strcmp(_femmina-&gt;getSpecie(),"Cavallo") == 0) {
             _esito = "puledro";
         } else {
             _esito = "bardotto";
-        } 
+        }
     }
 }
 </code></pre>
@@ -477,7 +477,7 @@ La sintassi per creare una lista di oggetti di classe <code>Monta</code> è:</p>
 
 <p>Fatto ciò, possiamo aggiungere elementi alla nostra lista con la funzione <code>push_back()</code>, alla quale passeremo direttamente il costruttore della classe:</p>
 
-<pre><code>monte.push_back(Monta(cavallo, giumenta)); 
+<pre><code>monte.push_back(Monta(cavallo, giumenta));
 monte.push_back(Monta(asino, asina));       
 monte.push_back(Monta(asino, giumenta));     
 monte.push_back(Monta(cavallo, asina));
@@ -485,7 +485,7 @@ monte.push_back(Monta(cavallo, asina));
 
 <p>Questo codice è una forma più efficiente di:</p>
 
-<pre><code>Monta m1(cavallo, giumenta); 
+<pre><code>Monta m1(cavallo, giumenta);
 Monta m2(asino, asina);       
 Monta m3(asino, giumenta);     
 Monta m4(cavallo, asina);
@@ -512,11 +512,11 @@ monte.push_back(m4);
     Animale* asino    = new Asino("amiatino", maschio);
     Animale* asina    = new Asino("sardo", femmina);
     list&lt;Monta&gt; monte;
-    monte.push_back(Monta(cavallo, giumenta)); 
+    monte.push_back(Monta(cavallo, giumenta));
     monte.push_back(Monta (asino, asina));       
     monte.push_back(Monta (asino, giumenta));     
     monte.push_back(Monta (cavallo, asina));
-    for (list&lt;Monta&gt;::iterator it=monte.begin(); 
+    for (list&lt;Monta&gt;::iterator it=monte.begin();
          it!=monte.end(); it++) {
         cout &lt;&lt; *it &lt;&lt; endl;
     }
@@ -590,10 +590,9 @@ Non a caso, Stroustrsup disse:</p>
 </blockquote>
 
 <!--
-<hr id="dottrina">
 
 La cattiva programmazione è un virus: si propaga e si rafforza con il passare del tempo.
-Le cause della cattiva programmazione sono: 
+Le cause della cattiva programmazione sono:
 
 - la fretta;
 - la retribuzione a *function-point*:
@@ -602,25 +601,24 @@ Le cause della cattiva programmazione sono:
 
 Più passa il tempo, più la gente si abitua a delegare ad agenti esterni delle azioni che fino a poco tempo prima avrebbe compiuto autonomamente.
 C'è gente che accende il navigatore satellitare anche quando torna a casa dall'ufficio e perfino sui miei calzini, ci sono due lettere: "D" per il destro, "S" per il sinistro.  
-È quello che il Maestro Canaro chiamava: “la sindrome da telecomando”: 
+È quello che il Maestro Canaro chiamava: “la sindrome da telecomando”:
 
 > Si vuole tutto e lo si vuole subito: è questo il problema.  Io la chiamo anche “sindrome da telecomando”: spingi un bottone e puoi cambiare canale, spingi un bottone e puoi accendere il condizionatore, spingi un bottone e puoi diventare un creativo..
 
 Con il codice, è lo stesso: ci si affida a codice già scritto, senza curarsi di *come* sia stato scritto e con quali scòpi.
-<!-- 
+<!--
 @todo: fare un parallelo fra i problemi di compatibilità delle librerie di Python e le religioni canoniche.
 Entrambi hanno la necessità di mantenere una compatibilità con il passato.
 Con i dogmi le religioni, con una determinata versione delle librerie, i programmi Python.
 Questo fà sì che sia molto complesso evolvere, perché non può evolvere solo una parte del sistema, ma tutto.
 Bello, se fosse possibile, ma non sempre lo è.
--->
-<p>Nella migliore delle ipotesi, si tratta di codice inefficiente, che esegue le azioni attese, ma richiede sempre più risorse di sistema e/o di tempo di esecuzione.
-Questo va bene a chi vende l’hardware, perché implica un continuo rinnovo del parco HW con sistemi più potenti.
-Nella peggiore delle ipotesi, si tratta di codice fallato, che fa male il suo lavoro (così come chi lo ha scritto) e complica la vita e la gestione del sistema.<br />
-Non importa a nessuno: l’unica cosa a cui si presta importanza è il rispetto dei tempi di consegna, senza tenere conto del fatto che, spesso, l’utilizzo maldestro di software maldestro allunga i tempi di sviluppo, test e correzione.<br />
-In pratica, la programmazione è diventata una sorta di roulette russa, in cui la fortuna gioca un ruolo decisivo: se ti dice culo, gli errori non escono durante il collaudo e se ne riparla in assistenza; se ti dice male, butti la tua vita cercando di far funzionare uno strumento difettoso, invece di spendere un po’ di tempo per realizzarne uno sano.<br />
+Nella migliore delle ipotesi, si tratta di codice inefficiente, che esegue le azioni attese, ma richiede sempre più risorse di sistema e/o di tempo di esecuzione.
+Questo va bene a chi vende l'hardware, perché implica un continuo rinnovo del parco HW con sistemi più potenti.
+Nella peggiore delle ipotesi, si tratta di codice fallato, che fa male il suo lavoro (così come chi lo ha scritto) e complica la vita e la gestione del sistema.  
+Non importa a nessuno: l'unica cosa a cui si presta importanza è il rispetto dei tempi di consegna, senza tenere conto del fatto che, spesso, l'utilizzo maldestro di software maldestro allunga i tempi di sviluppo, test e correzione.  
+In pratica, la programmazione è diventata una sorta di roulette russa, in cui la fortuna gioca un ruolo decisivo: se ti dice culo, gli errori non escono durante il collaudo e se ne riparla in assistenza; se ti dice male, butti la tua vita cercando di far funzionare uno strumento difettoso, invece di spendere un po' di tempo per realizzarne uno sano.  
 La stessa cosa si può dire delle vite di queste persone.
-–&gt;</p>
+-->
 
             </section>
         
