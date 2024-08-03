@@ -9,16 +9,16 @@ status:     pubblicato
 title:      Il C++
 ---
 
-In uno dei suoi libri, Bjarne Stroustrup definì il C++: 
+In uno dei suoi libri, Bjarne Stroustrup definì il C++:
 
 > {{ site.data.citazioni.stroustrup.cpp }}
 
-Fà che si possa dire la stessa cosa di te. 
+Fà che si possa dire la stessa cosa di te.
 
 ---
 
 C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983, quando lavorava ai Laboratori Bell della AT&T.
-Dieci anni prima, il suo collega Dennis Ritchie aveva creato un linguaggio di programmazione chiamato *C*. 
+Dieci anni prima, il suo collega Dennis Ritchie aveva creato un linguaggio di programmazione chiamato *C*.
 Il C, come ti ho detto, era estremamente efficace se dovevi programmare i computer, ma &mdash; così come alcuni dei tuoi confratelli &mdash; non gestiva altrettanto bene le entità della vita reale.  
 Stroustrup, che ai tempi del suo dottorato aveva lavorato con un linguaggio a oggetti chiamato *Simula67*, pensò che se avesse potuto aggiungere alla velocità di esecuzione del C la possibilità di creare dei nuovi tipi di dato di Simula, avrebbe ottenuto il linguaggio perfetto.
 Aveva ragione.    
@@ -36,7 +36,7 @@ Valore di C = 12
 Valore di C = 13
 ```
 
-C++, infatti, non era un nuovo linguaggio: era un C migliorato. 
+C++, infatti, non era un nuovo linguaggio: era un C migliorato.
 Tutto il codice e l'esperienza che erano state fatte fino ad allora sul C potevano essere applicate anche al C++.  
 Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l'Ebraismo: così come il Nazareno prese una religione spartana, adatta per un popolo in fuga nel deserto e la  migliorò, rendendola meno autoritaria, il Danese trasformò un linguaggio pensato per gestire unicamente i computer, in un linguaggio che poteva gestire ogni cosa.
 
@@ -60,8 +60,8 @@ private:
     string _razza;
 public:
     const char* getSpecie() const {
-        return "cavallo"; 
-    } 
+        return "cavallo";
+    }
     const char getSesso() const {        
         return (char)_sesso;
     }
@@ -78,7 +78,7 @@ public:
 
 o di un concetto:
 
-``` 
+```
 class Monta {
 private:
     Cavallo _maschio;
@@ -101,7 +101,7 @@ Gli *attributi* sono dei dati che descrivono le caratteristiche della classe, pe
 I *metodi* sono delle funzioni che definiscono il modo in cui la classe può interagire con gli altri elementi del programma.
 Nelle classi dell'esempio gli *attributi* sono gli elementi che vedi nella sezione `private`, mentre i *metodi* sono le funzioni che vedi nella sezione `public`.
 La funzione che ha lo stesso nome della classe si chiama *costruttore* della classe, perché “spiega” al compilatore come debbano essere creati gli oggetti di questa classe.  
-Le classi, però, sono la ricetta, non sono la pietanza. 
+Le classi, però, sono la ricetta, non sono la pietanza.
 Per poter essere utilizzate, le classi devono essere *istanziate* negli oggetti:
 
 ```
@@ -120,7 +120,7 @@ I primi due sono istanze della classe `Cavallo`, il terzo è un'istanza della cl
 Se aggiungi un po' di codice alle classi che abbiamo visto prima e compili il programma, otterrai:
 
 ```
-% g++ cplusplus-classe.cpp -o ../out/esempio 
+% g++ cplusplus-classe.cpp -o ../out/esempio
 % ../out/esempio                               
 DATA: Sun Apr  5 10:38:31 2020
 MASCHIO: Specie:cavallo, Sesso:m, Razza:lipizzano
@@ -128,7 +128,7 @@ FEMMINA: Specie:cavallo, Sesso:f, Razza:maremmano```
 ```
 
 Perché un linguaggio di programmazione possa dirsi *orientato agli oggetti*, però, oltre alle classi deve poter gestire l'*ereditarietà* e il *polimorfismo*.
-L'*ereditarietà* permette di definire dei nuove classi come estensione di classi esistenti: 
+L'*ereditarietà* permette di definire dei nuove classi come estensione di classi esistenti:
 <a id="cast"></a>
 
 ```
@@ -139,11 +139,11 @@ private:
     Sesso  _sesso;
 public:
     const char* getSpecie() const {
-        return _specie.c_str(); 
-    } 
+        return _specie.c_str();
+    }
     const char getSesso() const {        
         return (char)_sesso;
-    } 
+    }
     const char* getRazza() const {
         return _razza.c_str();
     }
@@ -159,7 +159,7 @@ class Cavallo : public Animale {
 public:
     Cavallo() {}
     Cavallo(const char* razza, const Sesso sesso )
-    : Animale("Cavallo", razza, sesso ) { 
+    : Animale("Cavallo", razza, sesso ) {
     }
 };
 ```
@@ -172,7 +172,7 @@ class Asino : public Animale {
 public:
     Asino() {}
     Asino(const char* razza, const Sesso sesso )
-    : Animale("Asino", razza, sesso ) { 
+    : Animale("Asino", razza, sesso ) {
     }
 };
 ```
@@ -276,7 +276,7 @@ cout << "MULO\n"     << mulo     << endl;
 cout << "BARDOTTO\n" << bardotto << endl;
 ```
 
-non è il massimo dell'efficienza, sia perché potremmo sbagliarci ad accoppiare la specie dei genitori con il nome del figlio, sia perché le istruzioni devono essere ripetute per ciascun oggetto. 
+non è il massimo dell'efficienza, sia perché potremmo sbagliarci ad accoppiare la specie dei genitori con il nome del figlio, sia perché le istruzioni devono essere ripetute per ciascun oggetto.
 Per risolvere il primo difetto possiamo aggiungere alla classe `Monta` un attributo e un metodo per definire autonomamente che tipo di genìa venga prodotta dalla copula:
 <a id="membro"></a>
 ```
@@ -287,13 +287,13 @@ void setEsito() {
             _esito = "asino";
         } else {
             _esito = "mulo";
-        } 
+        }
     } else {        
         if(strcmp(_femmina->getSpecie(),"Cavallo") == 0) {
             _esito = "puledro";
         } else {
             _esito = "bardotto";
-        } 
+        }
     }
 }
 ```
@@ -315,7 +315,7 @@ list<Monta> monte;
 Fatto ciò, possiamo aggiungere elementi alla nostra lista con la funzione `push_back()`, alla quale passeremo direttamente il costruttore della classe:
 
 ```
-monte.push_back(Monta(cavallo, giumenta)); 
+monte.push_back(Monta(cavallo, giumenta));
 monte.push_back(Monta(asino, asina));       
 monte.push_back(Monta(asino, giumenta));     
 monte.push_back(Monta(cavallo, asina));
@@ -324,7 +324,7 @@ monte.push_back(Monta(cavallo, asina));
 Questo codice è una forma più efficiente di:
 
 ```
-Monta m1(cavallo, giumenta); 
+Monta m1(cavallo, giumenta);
 Monta m2(asino, asina);       
 Monta m3(asino, giumenta);     
 Monta m4(cavallo, asina);
@@ -353,11 +353,11 @@ int main()
     Animale* asino    = new Asino("amiatino", maschio);
     Animale* asina    = new Asino("sardo", femmina);
     list<Monta> monte;
-    monte.push_back(Monta(cavallo, giumenta)); 
+    monte.push_back(Monta(cavallo, giumenta));
     monte.push_back(Monta (asino, asina));       
     monte.push_back(Monta (asino, giumenta));     
     monte.push_back(Monta (cavallo, asina));
-    for (list<Monta>::iterator it=monte.begin(); 
+    for (list<Monta>::iterator it=monte.begin();
          it!=monte.end(); it++) {
         cout << *it << endl;
     }
@@ -432,10 +432,9 @@ Non a caso, Stroustrsup disse:
 > {{ site.data.citazioni.stroustrup.java }} <a id="stroustrup" href="/man/note#cpp" class="nota"></a>
 
 <!--
-<hr id="dottrina">
 
 La cattiva programmazione è un virus: si propaga e si rafforza con il passare del tempo.
-Le cause della cattiva programmazione sono: 
+Le cause della cattiva programmazione sono:
 
 - la fretta;
 - la retribuzione a *function-point*:
@@ -444,18 +443,17 @@ Le cause della cattiva programmazione sono:
 
 Più passa il tempo, più la gente si abitua a delegare ad agenti esterni delle azioni che fino a poco tempo prima avrebbe compiuto autonomamente.
 C'è gente che accende il navigatore satellitare anche quando torna a casa dall'ufficio e perfino sui miei calzini, ci sono due lettere: "D" per il destro, "S" per il sinistro.  
-È quello che il Maestro Canaro chiamava: “la sindrome da telecomando”: 
+È quello che il Maestro Canaro chiamava: “la sindrome da telecomando”:
 
 > Si vuole tutto e lo si vuole subito: è questo il problema.  Io la chiamo anche “sindrome da telecomando”: spingi un bottone e puoi cambiare canale, spingi un bottone e puoi accendere il condizionatore, spingi un bottone e puoi diventare un creativo..
 
 Con il codice, è lo stesso: ci si affida a codice già scritto, senza curarsi di *come* sia stato scritto e con quali scòpi.
-<!-- 
+<!--
 @todo: fare un parallelo fra i problemi di compatibilità delle librerie di Python e le religioni canoniche.
 Entrambi hanno la necessità di mantenere una compatibilità con il passato.
 Con i dogmi le religioni, con una determinata versione delle librerie, i programmi Python.
 Questo fà sì che sia molto complesso evolvere, perché non può evolvere solo una parte del sistema, ma tutto.
 Bello, se fosse possibile, ma non sempre lo è.
--->
 Nella migliore delle ipotesi, si tratta di codice inefficiente, che esegue le azioni attese, ma richiede sempre più risorse di sistema e/o di tempo di esecuzione.
 Questo va bene a chi vende l'hardware, perché implica un continuo rinnovo del parco HW con sistemi più potenti.
 Nella peggiore delle ipotesi, si tratta di codice fallato, che fa male il suo lavoro (così come chi lo ha scritto) e complica la vita e la gestione del sistema.  
