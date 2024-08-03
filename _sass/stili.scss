@@ -128,16 +128,16 @@ LI CODE {
 }
 /*
 B, STRONG {
-    color: $colorGold;    
+    color: $colorGold;
 }
 */
 EM, I, B, STRONG  {
     color: $colorGold;
     font-size: inherit;
-    /** 
+    /**
     *   todo: capire perché c'è questo attributo settato
     *   e possibilmente rimuoverlo, unendo B al gruppo
-    
+
     font-family: initial;
     */
 }
@@ -170,12 +170,12 @@ A.nota {
     text-decoration: underline;
     vertical-align: super;
     display: inline-block;
-    margin-left: 2px; 
+    margin-left: 2px;
 }
 /** Numerazione automatica solo nel Manuale */
-BODY.manuale A.nota::after {   
-    counter-increment: note-pagina; 
-    content: counter(note-pagina);     
+BODY.manuale A.nota::after {
+    counter-increment: note-pagina;
+    content: counter(note-pagina);
 }
 A.more {
     font-weight: bold;
@@ -220,7 +220,7 @@ TABLE, TD, TR, TH {
     border: solid 1px $borderColor;
     padding: 0.25rem 0.5rem;
     margin: 1rem auto;
-    font-size: 11pt;   
+    font-size: 11pt;
 }
 
 TABLE TH {
@@ -240,7 +240,7 @@ BODY {
     font-family: $bodyFont;
     font-size: $bodyFontSize;
     text-align: center;
-    counter-reset: note-pagina;  
+    counter-reset: note-pagina;
 }
 
 DIV.page {
@@ -325,7 +325,7 @@ A.inattivo {
 }
 
 FOOTER NAV {
-    border: none;    
+    border: none;
 }
 
 /**
@@ -349,12 +349,12 @@ MAIN P+P {
 
 
 MAIN.redazione {
-    padding: 5rem 1rem;    
+    padding: 5rem 1rem;
     background-color: $bozzaRedazione;
 }
 MAIN.bozza {
     background-color: $bozzaBackground;
-    padding: 5rem 1rem;    
+    padding: 5rem 1rem;
 }
 
 MAIN.bozza::before ,
@@ -389,7 +389,7 @@ MAIN P.immagine IMG {
     text-align: center;
     max-width: 100%;
 }
-/** 
+/**
  *  Le citazioni devono essere centrate, ma quelle estese
  *  possono essere giustificate
  */
@@ -440,10 +440,10 @@ BODY.manuale HEADER titolo-2 {
     float: unset
 }
 BODY.manuale HEADER DIV.box.titoli {
-    width: 100%;    
+    width: 100%;
 }
 BODY.manuale HEADER NAV.menu-top {
-    border: none;    
+    border: none;
 }
 BODY.manuale HEADER NAV.menu-top A {
     padding: 0.5rem 0;
@@ -572,7 +572,7 @@ IFRAME.pdf {
     height: 780px;
 }
 
-/** Tabelle nel testo */    
+/** Tabelle nel testo */
 .capitolo .testo TABLE.memoria TD {
     font-family: $codeFont;
     font-size: 10px;
@@ -592,7 +592,7 @@ IFRAME.pdf {
     font-family: $codeFont;
     font-size: 10pt;
     width: 30px;
-    height: 30px;    
+    height: 30px;
 }
 
 .capitolo .testo TABLE.rgb TD:nth-child(1) {
@@ -678,10 +678,10 @@ BODY.index MAIN SECTION.citazione.pagina {
 }
 
 
-/** 
+/**
  * Stili per le domande.
  * Le domande sui dogmi sono OL, mentre quelle su Hitler sono UL.
- * Le OL hanno le lettere maiuscole come identificativi, 
+ * Le OL hanno le lettere maiuscole come identificativi,
  * le UL hanno lettere minuscole
  */
 OL.domande {
@@ -827,19 +827,19 @@ BODY.note SECTION.note OL {
 SECTION.elenco.post DIV.log {
     padding-bottom: 2rem;
     display: block;
-} 
+}
 SECTION.elenco.post DIV.log P {
     margin-top: unset;
-} 
+}
 SECTION.elenco.post DIV.log P.data {
     color: $dataColor;
     font-size: 0.9rem;
-} 
+}
 
 BODY.pagina.log MAIN P.category {
     text-align: center;
     font-variant-caps: petite-caps;
-} 
+}
 P.tag {
     font-size: 0.9rem;
     font-family: Inconsolata;
@@ -851,7 +851,7 @@ BODY.pagina.log MAIN PRE {
 }
 
 BODY.pagina.log MAIN P.tag {
-    margin: 3rem auto 2rem;    
+    margin: 3rem auto 2rem;
     width: 66%;
     text-align: center;
 }
@@ -859,9 +859,9 @@ BODY.pagina.log MAIN P.tag {
 BODY.pagina.log  P.data {
     color: $dataColor;
     font-size: 0.9rem;
-    padding-bottom: 2rem;           
-    text-align: right; 
-} 
+    padding-bottom: 2rem;
+    text-align: right;
+}
 
 NAV.post {
     display: block;
@@ -935,11 +935,11 @@ NAV.post A.next {
     BODY.pagina HEADER titolo-2 {
         font-size: 1rem;
     }
-    BODY.index HEADER DIV.box.titoli, 
+    BODY.index HEADER DIV.box.titoli,
     BODY.manuale.copertina HEADER DIV.box.titoli {
-        width: auto;    
+        width: auto;
     }
-    BODY.index HEADER titolo-1, 
+    BODY.index HEADER titolo-1,
     BODY.manuale.copertina HEADER titolo-1 {
         padding: 0;
     }
