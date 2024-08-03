@@ -432,23 +432,6 @@ Non a caso, Stroustrsup disse:
 > {{ site.data.citazioni.stroustrup.java }} <a id="stroustrup" href="/man/note#cpp" class="nota"></a>
 
 <!--
-
-La cattiva programmazione è un virus: si propaga e si rafforza con il passare del tempo.
-Le cause della cattiva programmazione sono:
-
-- la fretta;
-- la retribuzione a *function-point*:
-- il “time-to-market”;
-- la mancanza di test o l'incapacità di eseguire i test.
-
-Più passa il tempo, più la gente si abitua a delegare ad agenti esterni delle azioni che fino a poco tempo prima avrebbe compiuto autonomamente.
-C'è gente che accende il navigatore satellitare anche quando torna a casa dall'ufficio e perfino sui miei calzini, ci sono due lettere: "D" per il destro, "S" per il sinistro.  
-È quello che il Maestro Canaro chiamava: “la sindrome da telecomando”:
-
-> Si vuole tutto e lo si vuole subito: è questo il problema.  Io la chiamo anche “sindrome da telecomando”: spingi un bottone e puoi cambiare canale, spingi un bottone e puoi accendere il condizionatore, spingi un bottone e puoi diventare un creativo..
-
-Con il codice, è lo stesso: ci si affida a codice già scritto, senza curarsi di *come* sia stato scritto e con quali scòpi.
-<!--
 @todo: fare un parallelo fra i problemi di compatibilità delle librerie di Python e le religioni canoniche.
 Entrambi hanno la necessità di mantenere una compatibilità con il passato.
 Con i dogmi le religioni, con una determinata versione delle librerie, i programmi Python.
