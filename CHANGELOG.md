@@ -1,3 +1,9 @@
+## 1.0.3 (August 03, 2024)
+  - Creato file manoscritto
+  - Modifiche minori
+  - Corretto commento mancante nel file chi_plus_plus.md
+  - Rinominato in .scss il file stili.css
+
 ## 1.0.2 (February 21, 2023)
   - Revisione dello script per la generazione del PDF
 
@@ -57,8 +63,8 @@
   - Aggiunte due pagine del log
 
 ## 0.30.57 (April 17, 2022)
-  - Aggiornata la libreria Font Awesome 
-  - Aggiunto link per log al menu 
+  - Aggiornata la libreria Font Awesome
+  - Aggiunto link per log al menu
   - Modificata l'icona della Proposta
   - Aggiunta classe 'post' a layout post
   - Aggiunta citazione da Guenon
@@ -92,7 +98,7 @@
 
 ## 0.30.48 (March 12, 2022)
   - Aggiunti cinque capitoli all'e-book
-  - Aggiunta prima bozza della sezione dottrina al capitolo sul C++ 
+  - Aggiunta prima bozza della sezione dottrina al capitolo sul C++
   - Aggiunto capitolo sul C++ all'e-book
 
 ## 0.30.47 (March 11, 2022)
@@ -234,7 +240,7 @@
   - Corretto testo della Bibliografia
 
 ## 0.30.15 (November 07, 2021)
-  - Spostata bibliografia nel manuale. 
+  - Spostata bibliografia nel manuale.
   - Aggiunto ringraziamento a Luciano
   - Revisione del testo della bibliografia
   - Completata prima stesura della bibilografia
@@ -324,7 +330,7 @@
 
 ## 0.29.3 (September 12, 2021)
   - Chiusa prima stesura del capitolo sul debug
-  
+
 ## 0.29.2 (September 10, 2021)
   - Redazione del capitolo sul debug
   - Aggiunto testo Penetration
@@ -334,7 +340,7 @@
   - Redazione del capitolo sul debug
 
 ## 0.29.0 (September 05, 2021)
-  - Redazione del testo del capitolo sul debug. 
+  - Redazione del testo del capitolo sul debug.
   - Revisione delle note e delle citazioni.
 
 ## 0.28.5 (September 02, 2021)
@@ -405,7 +411,7 @@
   - Aggiunti esempii per warning
 
 ## 0.26.0 (June 18, 2021)
-  - Redazione del capitolo sul debug. 
+  - Redazione del capitolo sul debug.
   - Aggiunto a opt il testo sul degrado del software.
 
 ## 0.25.8 (June 18, 2021)
@@ -502,7 +508,7 @@
   - Codice di esempio per la classe Pesce
   - Iniziata redazione capitolo sull'ereditarietà
   - Configurata la directory _post per gestire il log del sistema
-  - Aggiunta pagina ringraziamenti a manuale. 
+  - Aggiunta pagina ringraziamenti a manuale.
   - Fatta pulizia di file obsoleti.
   - Invertiti i capitoli su ereditarietà e polimorfismo
 
@@ -599,7 +605,7 @@
 ## 0.20.1 (February 17, 2021)
   - Rinominato il capitolo Algebra Booleana in Operatori e spostato dopo la struttura dei programmi
   - Cambiato il titolo della Proposta, da Manifesto a Proposta
-  
+
 ## 0.20.0 (February 16, 2021)
   - Sostituiti i link al PDF della Proposta con link alla pagina Web
   - Iniziato capitolo su algebra booleana
@@ -728,12 +734,12 @@
 
 ## 0.16.5 (December 24, 2020)
   - Modificata grafica delle note
-  - Aggiunta pagina con note. 
-  - Corretto errore nella visualizzazione dei caratteri indiani. 
+  - Aggiunta pagina con note.
+  - Corretto errore nella visualizzazione dei caratteri indiani.
   - Aggiunto un nuovo file di include con il testo della Bhagavad-Gita
   - Modificato testo su aborto e aggiunto todo
   - Modificato ordine dei capitoli, spostando funzioni e preprocessore prima delle istruzioni condizionali.
-  
+
 ## 0.16.4 (December 08, 2020)
   - Terminata prima stesdura della parte tecnica del capitolo
   - Riorganizzata la struttura dei capitoli
@@ -922,7 +928,7 @@
 ## 0.8.22 (April 03, 2020)
   - Rivista struttura delle directory per includere direttamente gli script .cpp nel testo del Manuale
   - Aggiornato file TODO
-  - Aggiunta numerazione dei capitoli del Manuale. 
+  - Aggiunta numerazione dei capitoli del Manuale.
   - Aggiunta directory src/out per l'output delle compilazioni.
   - Aggiunta numerazione dei capitoli del Manuale
   - Riordinate le citazioni nel Manuale
@@ -934,7 +940,7 @@
   - Aggiunto link di ritorno all'indice nella pagina finale del manuale
 
 ## 0.8.20 (March 31, 2020)
-  - Aggiunto testo a poesia funeraria. 
+  - Aggiunto testo a poesia funeraria.
   - Rinominata "Premessa" in "Prologo".
 
 ## 0.8.19 (March 29, 2020)
