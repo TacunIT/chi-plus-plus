@@ -1,3 +1,8 @@
+## 1.0.4 (August 07, 2024)
+  - Aggiunta variabile per URL GitHub
+  - Aggiunto file .nojekyll
+  - Aggiunte modifiche ai file
+
 ## 1.0.3 (August 03, 2024)
   - Creato file manoscritto
   - Modifiche minori
