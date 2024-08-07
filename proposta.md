@@ -353,7 +353,7 @@ Questa modifica, per quanto radicale, non ha avuto nessuna ripercussione negativ
 Se avessimo applicato la stessa modifica al Cattolicesimo, riabilitando la figura del Diavolo, le cose non sarebbero andate altrettanto bene perché, se il Diavolo non fosse cattivo, non solo dovremmo mettere in discussione la veridicità di moltissimi passi della Bibbia (che non può essere messa in discussione perché è la Parola di Dio), ma priveremmo la Chiesa della sua funzione primaria che è quella di salvare le anime, appunto, dal Maligno.
 
 ## Release 0.1: Sostiene Aristotele
-A Giugno del 2007 scrissi un documento dal titolo: 
+A Giugno del 2007 scrissi un documento dal titolo:
 [Sostiene Aristotele](/sostiene-aristotele.html) che possiamo considerare la versione 0.1.1 del C'hi++.
 In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<a href="#soko" class="nota" name="fn-8">8</a>
 Nelle fasi di espansione, l'Uno esplodeva, generando l'Universo così come lo conosciamo; nelle fasi di contrazione, l'Universo collassava nell'Uno.
@@ -420,7 +420,7 @@ In sostanza: la definizione che Frazer dà del termine *religione*:
 > gli sforzi dell’uomo per propiziarsi o conciliarsi potenze superiori che si
 suppone dirigano e controllino il corso della natura e della vita umana.<a href="#frazer" class="nota" name="fn-">13</a>
 
-è valida anche per il C'hi++, solo che le “potenze superiori”, siamo noi stessi. 
+è valida anche per il C'hi++, solo che le “potenze superiori”, siamo noi stessi.
 
 ## Release 0.2: C'hi++
 Nel 2009 ho cominciato a scrivere *C'hi++*, un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo.
@@ -497,7 +497,7 @@ Le psicopatologie tipiche degli informatici, la loro incapacità di gestire, se 
 Al contrario, l’indottrinamento degli informatici, la loro segregazione in una casta con forti componenti mistico-religiose, li avrebbero tenuti lontani dalle lusinghe dei sindacati e avrebbero reso l’ipotesi di uno sciopero improbabile quanto l’ipotesi di uno sciopero dei sacerdoti.
 
 Nei capitoli seguenti, sarà descritto il linguaggio C++, facendo dei paralleli fra i suoi costrutti sintattici e alcuni concetti filosofici.
-Riporto di seguito alcuni esempi, anche si tratta ancora di appunti e non di un testo definitivo: 
+Riporto di seguito alcuni esempi, anche si tratta ancora di appunti e non di un testo definitivo:
 
 #### Commenti al codice
 Affinità con i *Post-it* di cui parlavo prima, una sorta di memoria storica dell'Universo:
@@ -652,7 +652,7 @@ Oltre a essere una versione informatica della Macchina del Tempo, Git permette d
 Se un domani qualcuno volesse collaborare a C'hi++ potrebbe ottenere una copia di tutto il codice e i testi finora elaborati semplicemente eseguendo il comando:
 
 ```
-git clone https://github.com/chi-plus-plus/chi-plus-plus.git
+git clone {{ site.url_github }}.git
 ```
 Mi sono dilungato su Git perché il prossimo paragrafo comincia con la frase..
 

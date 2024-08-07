@@ -255,19 +255,19 @@ ESITO:   bardotto
 </code></pre>
 
 <p>Prima di andare avanti, però, è necessario fare un po’ di chiarezza su tre termini legati al polimorfismo: <em>overload</em>, <em>override</em> e <em>ridefinizione</em>.<br />
-Con il termine: <b id="overload">overload</b> di una funzione si intende la una funzione che abbia lo stesso nome di un’altra, ma dei parametri differenti. 
+Con il termine: <b id="overload">overload</b> di una funzione si intende la una funzione che abbia lo stesso nome di un’altra, ma dei parametri differenti.
 Un tipico esempio di <em>function overload</em> sono le differenti versioni del costruttore di una classe:</p>
 
 <pre><code>Cavallo() {}
 Cavallo(const char* razza, const Sesso sesso )
-: Animale(razza, sesso ) { 
+: Animale(razza, sesso ) {
 }
 </code></pre>
 <p>Le due funzioni hanno lo stesso nome e il compilatore sceglierà l’una o l’altra in base ai parametri che vengono utilizzati.<br />
 Una funzione <b id="overridden">overridden</b> è una funzione che ha una definizione diversa da quella di una funzione virtuale di una sua classe-base:</p>
 
 <pre><code>const char* getSpecie() const {
-    return "Asino"; 
+    return "Asino";
 }     
 </code></pre>
 
@@ -303,18 +303,18 @@ ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animale&amp; animale) {
 
 /** Override della funzione virtuale pura */
 const char* getSpecie() const {
-    return "Cavallo"; 
+    return "Cavallo";
 }  
 
 /** Override della funzione virtuale pura */
 const char* getSpecie() const {
-    return "Asino"; 
+    return "Asino";
 }     
 
 /** Overload dell'operatore di output su stream */
 friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula) {
-    os &lt;&lt; "DATA:    " &lt;&lt; asctime(localtime(&amp;copula._giorno)) 
-       &lt;&lt; "MASCHIO: " &lt;&lt; *copula._maschio 
+    os &lt;&lt; "DATA:    " &lt;&lt; asctime(localtime(&amp;copula._giorno))
+       &lt;&lt; "MASCHIO: " &lt;&lt; *copula._maschio
        &lt;&lt; "FEMMINA: " &lt;&lt; *copula._femmina
        &lt;&lt; "ESITO:   " &lt;&lt; copula._esito
        &lt;&lt; endl;
@@ -351,7 +351,7 @@ Se riesci a trovare una qualunque ragione per usare la prima sintassi piuttosto 
 a = b + c ;
 </code></pre>
 
-<p>Il comportamento degli operatori è predefinito per tutti i tipi standard e può essere ridefinito per gestire anche dei tipi di dato aggregati come le strutture o le classi. 
+<p>Il comportamento degli operatori è predefinito per tutti i tipi standard e può essere ridefinito per gestire anche dei tipi di dato aggregati come le strutture o le classi.
 La classe <code>string</code>, della libreria standard del C++, per esempio, ridefinisce, fra le altre cose, il comportamento degli operatori di assegnazione <code>+=</code> e <code>+</code> e dell’operatore di output su stream <code>&lt;&lt;</code> in modo che si possano compiere delle operazioni sulle stringhe con la stessa sintassi che si utilizza per altri tipi di dato:</p>
 
 <pre><code>/** 
@@ -472,8 +472,8 @@ Nell’esempio iniziale sono applicate entrambe le possibilità: l’operatore d
 <p>mentre l’operatore di output per la classe <code>Monta</code> è dichiarato come <code>friend</code> della classe e quindi può accedere direttamente ai dati membro dell’istanza:</p>
 
 <pre><code>friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula) {
-    os &lt;&lt; "DATA: "    &lt;&lt; asctime(localtime(&amp;copula._giorno)) 
-       &lt;&lt; "MASCHIO: " &lt;&lt; *copula._maschio 
+    os &lt;&lt; "DATA: "    &lt;&lt; asctime(localtime(&amp;copula._giorno))
+       &lt;&lt; "MASCHIO: " &lt;&lt; *copula._maschio
        &lt;&lt; "FEMMINA: " &lt;&lt; *copula._femmina;
        return os;   
 };
@@ -540,9 +540,9 @@ double d = double(i) ;
 </code></pre>
 
 <p>Il compilatore del C++ ha la possibilità di convertire un qualunque tipo di dato primitivo in un altro, ma non può sapere come comportarsi con i tipi di dato definiti dall’utente; dobbiamo quindi istruirlo, così come abbiamo fatto con i costruttori e gli operatori, definendo dei cam­mini di coercizione dai tipi di dato primitivi e viceversa.
-Il primo caso, ovvero la trasformazione dal tipo primitivo a quello definito dall’utente, è il più semplice: di fatto si tratta di definire, laddove non ci sia già, un cos­truttore per la nuova classe che richieda dei parametri di tipo primitivo. 
+Il primo caso, ovvero la trasformazione dal tipo primitivo a quello definito dall’utente, è il più semplice: di fatto si tratta di definire, laddove non ci sia già, un cos­truttore per la nuova classe che richieda dei parametri di tipo primitivo.
 Quando invece non esiste un costruttore da estendere, ovvero quando la coercizione è dal tipo definito dall’utente a un tipo di dato primitivo o fornito in una libreria di cui non si possiede il codice sorgente, è necessario ridefinire l’operatore di conversione <code>()</code>.<br />
-Immagina di aver creato un nuovo tipo di dato <code>Frazione</code> per la gestione dei numeri razionali. 
+Immagina di aver creato un nuovo tipo di dato <code>Frazione</code> per la gestione dei numeri razionali.
 Per poterlo utilizzare in espressioni contenenti dati di tipo primi­tivo dovresti ridefinire ciascun operatore per fargli accettare dei dati di tipo misto, sia come primo che come secondo parametro:</p>
 
 <pre><code>Frazione operator + (int i, Frazione f) :
@@ -615,7 +615,7 @@ Se uno stesso compito può essere eseguito in maniera simile su parametri di tip
 float  somma(float  a, float  b) { return a + b; }
 double somma(double a, double b) { return a + b; }
 
-template &lt;class T&gt; 
+template &lt;class T&gt;
 somma(T a, T b) { return a + b; }
 </code></pre>
 
@@ -638,7 +638,7 @@ T maggiore (T x, T y) {
 }
 </code></pre>
 
-<p>In questo caso, l’identificativo del tipo è la lettera <code>T</code> che compare sia fra gli apici nella prima riga che fra parentesi nella seconda, ma può essere qualsiasi stringa. 
+<p>In questo caso, l’identificativo del tipo è la lettera <code>T</code> che compare sia fra gli apici nella prima riga che fra parentesi nella seconda, ma può essere qualsiasi stringa.
 I parametri possono essere più di uno:</p>
 
 <pre><code>template&lt;class C1, class C2&gt;
@@ -726,10 +726,10 @@ int main ()
 La grossa differenza fra questi due approcci<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> è che, mentre il tipo dei parametri del template è verificato dal compilatore, la macro è una banale sostituzione che non fa alcun controllo sulle variabili che utilizza.
 L’istruzione:</p>
 
-<pre><code>cout &lt;&lt; MAGGIORE('a', b) &lt;&lt; endl; 
+<pre><code>cout &lt;&lt; MAGGIORE('a', b) &lt;&lt; endl;
 </code></pre>
 
-<p>compara un carattere con un double e, senza dare problemi in compilazione torna il valore <code>97</code>, corrispondente al codice ASCII della lettera <code>a</code>. 
+<p>compara un carattere con un double e, senza dare problemi in compilazione torna il valore <code>97</code>, corrispondente al codice ASCII della lettera <code>a</code>.
 Al contrario, l’istruzione:</p>
 
 <pre><code>int   a = 10;
@@ -741,12 +741,12 @@ cout &lt;&lt; maggiore(a, b) &lt;&lt; endl;
 <p>causa un errore di compilazione perché i due parametri sono di tipo differente:</p>
 
 <pre><code>&gt; g++ src/cpp/polimorfismo-template.cpp -o src/out/esempio
-src/cpp/polimorfismo-template.cpp:52:13: 
+src/cpp/polimorfismo-template.cpp:52:13:
     error: no matching function for call to 'maggiore'
     cout &lt;&lt; maggiore(a, b) &lt;&lt; endl;    
             ^~~~~~~~
-src/cpp/polimorfismo-template.cpp:22:3: 
-    note: candidate template ignored: 
+src/cpp/polimorfismo-template.cpp:22:3:
+    note: candidate template ignored:
         deduced conflicting types for parameter 'T'
       ('int' vs. 'short')
 T maggiore (T x, T y) {
@@ -824,11 +824,11 @@ Le componenti della STL è sono:</p>
   <li>degli oggetti-funzioni, o: <strong>functors</strong>, che incapsulano una specifica funzione.</li>
 </ul>
 
-<p>La classe <code>list</code> è un esempio di container e rappresenta un elenco di elementi memorizzati in aree non contigue della memoria. 
+<p>La classe <code>list</code> è un esempio di container e rappresenta un elenco di elementi memorizzati in aree non contigue della memoria.
 Al contrario, la classe <code>vector</code> implementa un elenco di elementi memorizzati in un’unica area di memoria, così come avviene per gli array del C.<br />
 Tutti i vettori della STL posseggono delle funzioni membro che consentono di gestirne gli elementi; la funzione <code>push_back</code>, per esempio, aggiunge un elemento in coda alla lista:</p>
 
-<pre><code>monte.push_back(Monta(cavallo, giumenta)); 
+<pre><code>monte.push_back(Monta(cavallo, giumenta));
 monte.push_back(Monta (asino, asina));       
 monte.push_back(Monta (asino, giumenta));     
 monte.push_back(Monta (cavallo, asina));
@@ -909,9 +909,9 @@ int main()
 &gt; src/out/esempio                                          
 10
 70
-10 70 21 49 35 
-10 21 35 49 70 
-70 49 35 21 10 
+10 70 21 49 35
+10 21 35 49 70
+70 49 35 21 10
 </code></pre>
 
 <p>Le function-class o: <i id="functors-stl">functors</i> sono delle classi che ridefiniscono il comportamento dell’operatore <code>()</code> e che possono quindi agire come se fossero delle funzioni:</p>
@@ -1019,11 +1019,11 @@ CvccbCyhgb
 PippoPluto
 </code></pre>
 
-<p>Le funzioni ordinarie ti permettono di sfruttare l’algoritmo <code>transform</code> per cifrare un testo con un valore fisso, ma non puoi fare la stessa cosa utilizzando una chiave variabile, perché il quarto parametro non accetta funzioni con più di un parametro. 
+<p>Le funzioni ordinarie ti permettono di sfruttare l’algoritmo <code>transform</code> per cifrare un testo con un valore fisso, ma non puoi fare la stessa cosa utilizzando una chiave variabile, perché il quarto parametro non accetta funzioni con più di un parametro.
 Se provassi a utilizzarlo con qualcosa come:</p>
 
-<pre><code>unsigned char cifra(unsigned char c, int chiave) 
-{ 
+<pre><code>unsigned char cifra(unsigned char c, int chiave)
+{
     return c + chiave;
 }
 </code></pre>
@@ -1110,7 +1110,7 @@ QjqqpQmvup
 <hr id="dottrina" />
 
 <p>Da migliaia di anni, gli uomini cercano di capire quale sia il significato dell’Esistenza.<br />
-Le risposte che si sono dati variano a seconda del periodo storico e del territorio in cui il profeta o il filosofo ha vissuto, ma hanno tutte una particolarità: richiedono ai loro seguaci l’accettazione di postulati non dimostrabili, come l’esistenza di una o più divinità o di stati di esistenza diversi da quello che conosciamo. 
+Le risposte che si sono dati variano a seconda del periodo storico e del territorio in cui il profeta o il filosofo ha vissuto, ma hanno tutte una particolarità: richiedono ai loro seguaci l’accettazione di postulati non dimostrabili, come l’esistenza di una o più divinità o di stati di esistenza diversi da quello che conosciamo.
 Anche la Scienza ha provato a dare delle risposte agli stessi interrogativi, ma la sua indagine si è limitata agli aspetti pratici del problema: ha prodotto delle interessanti teorie sulla genesi dell’Universo e sugli eventi che hanno portato alla nostra esistenza, ma non si è mai pronunciata su quello che potrebbe essere il nostro ruolo in tutto ciò, con le conseguenze di cui abbiamo parlato durante <a href="/man/memoria#delete" class="xref">la lezione sulla memoria</a>.<br />
 Il Maestro Canaro, che non riusciva ad accettare né i dogmi delle religioni tradizionali né lo scollamento fra uomo e Universo prodotto dalle ipotesi scientifiche, si pose una domanda:</p>
 
@@ -1118,10 +1118,10 @@ Il Maestro Canaro, che non riusciva ad accettare né i dogmi delle religioni tra
   <p>È possibile dare una spiegazione dell’Esistenza sfruttando solo ciò di cui abbiamo esperienza diretta?</p>
 </blockquote>
 
-<p>La maggior parte delle religioni, per “funzionare”, richiede da una a tre dimensioni aggiuntive, oltre quelle note; la Scienza, per le sue <em>super-stringhe</em> ha bisogno almeno di sette dimensioni aggiuntive, ovvero il doppio di quelle che servono per un Aldilà non spirituale. 
+<p>La maggior parte delle religioni, per “funzionare”, richiede da una a tre dimensioni aggiuntive, oltre quelle note; la Scienza, per le sue <em>super-stringhe</em> ha bisogno almeno di sette dimensioni aggiuntive, ovvero il doppio di quelle che servono per un Aldilà non spirituale.
 Esiste una spiegazione più semplice?<br />
 Non essendo né un filosofo né un mistico, approcciò lo sviluppo della sua dottrina come se fosse stata un sistema software.
-Per prima cosa fece un’analisi del “sistema in esercizio”, evidenziandone i principali difetti; poi identificò delle vulnerabilità logiche delle religioni canoniche e definì delle linee-guida atte a prevenirle; infine, descrisse le caratteristiche del C’hi++, spiegando come queste avrebbero potuto risolvere alcuni dei problemi evidenziati in precedenza. 
+Per prima cosa fece un’analisi del “sistema in esercizio”, evidenziandone i principali difetti; poi identificò delle vulnerabilità logiche delle religioni canoniche e definì delle linee-guida atte a prevenirle; infine, descrisse le caratteristiche del C’hi++, spiegando come queste avrebbero potuto risolvere alcuni dei problemi evidenziati in precedenza.
 Come scrisse nella <a href="/proposta#errori" class="xref">Proposta</a>, ci sono dei “bug” che possiamo considerare comuni a tutte le metafisiche:</p>
 
 <blockquote>
@@ -1140,7 +1140,7 @@ Come scrisse nella <a href="/proposta#errori" class="xref">Proposta</a>, ci sono
   <ul> <li>limitare il numero dei dogmi;</li> <li>limitare gli elementi metafisici e le accettazioni per fede;</li> <li>non proporsi come Unica Verità Incontestabile, ma come un'approssimazione sicuramente incompleta e perfettibile della Verità;</li> <li>riconoscere le contraddizioni della dottrina e analizzarle obiettivamente, anche se ciò porterà a modificare la dottrina stessa.</li> </ul>
 </blockquote>
 
-<p>Il Maestro Canaro applicò allo sviluppo della sua <em>metafisica-non-metafisica</em> lo stesso approccio che adottava quando doveva realizzare un software. 
+<p>Il Maestro Canaro applicò allo sviluppo della sua <em>metafisica-non-metafisica</em> lo stesso approccio che adottava quando doveva realizzare un software.
 Ci sono due modi diversi di progettare un software: il primo consiste nell’analizzare tutti i sistemi che svolgono azioni simili, prendere il meglio di ciascuno e metterlo nel nuovo sistema; in alternativa, si può progettare il sistema da zero e solo quando se ne è definita per grandi linee la struttura, studiare le soluzioni adottate dagli altri, integrandole nel proprio programma se lo si ritiene utile.
 Il primo approccio è più rapido e sicuro, ma tende a produrre risultati ripetitivi; il secondo approccio è più complesso, sia in termini di analisi che di implementazione, ma facilita l’innovazione perché l’immaginazione dell’analista non è condizionata da ciò che ha visto.<br />
 Essendo un sostenitore del secondo metodo, il Maestro Canaro lo applicò anche al C’hi++ e, dopo alcuni di anni di studio, arrivò alla conclusione che non solo è possibile ipotizzare una cosmogonia quasi del tutto priva di elementi metafisici (non del tutto priva, perché, come vedremo <a href="/man/stream#dottrina" class="xref">in seguito</a>, una dose minima di trascendenza è necessaria per garantire la buona funzionalità della dottrina), ma che i precetti di questa dottrina erano compatibili con molti  principii delle religioni canoniche.</p>
@@ -1149,14 +1149,14 @@ Essendo un sostenitore del secondo metodo, il Maestro Canaro lo applicò anche a
 
 <p>Il C’hi++ ereditò alcuni concetti proprii delle filosofie note al Maestro Canaro, come il dualismo Gravità/Elettricità elaborato da Poe in <em>Eureka</em>, che lo aveva affascinato per il modo in cui trasformava una forza cieca e inspiegabile come la Gravità nell’intenzione, cosciente, di tutto ciò che esiste di tornare a essere Uno.
 D’altro canto, la dottrina del Maestro Canaro rinnegò alcuni concetti comuni a molte religioni, come la possibilità di sottrarsi al ciclo delle rinascite o la presenza di punizioni o premii <em>ad-personam</em>.<br />
-Così come quando si analizza il funzionamento di un software non ci si cura delle singole variabili, ma si pensa al flusso complessivo del sistema, così il C’hi++ vede l’esistenza non in termini di interazioni fra individui, ma come l’evoluzione del flusso dell’Energia dell’Uno all’interno della matrice tridimensionale degli spazioni. 
+Così come quando si analizza il funzionamento di un software non ci si cura delle singole variabili, ma si pensa al flusso complessivo del sistema, così il C’hi++ vede l’esistenza non in termini di interazioni fra individui, ma come l’evoluzione del flusso dell’Energia dell’Uno all’interno della matrice tridimensionale degli spazioni.
 Per il C’hi++ non esistono né anime, né fiumi infernali e chi muore in mare non troverà ad accoglierlo Rán, nella sua birreria in fondo al mare, ma verrà semplicemente riciclato, come le aree di memoria RAM all’interno di un computer.<br />
 Le nostre esistenze sono incidentali; pensare di punirle o di premiarle non avrebbe senso e contrasterebbe con il principio generale che tutto ciò che esiste è la manifestazione di un’unica Entità.
 Come ti ho detto all’inizio di queste lezioni, non è possibile andare in Paradiso o all’Inferno da soli: qualunque cosa avvenga nell’Universo, ci riguarda tutti.<br />
 Questo però non vuol dire che il C’hi++ rifiuti tutti concetti delle religioni che lo hanno preceduto; anzi.
 Molti precetti del C’hi++ sono compatibili con precetti o idee appartenenti ad altre mistiche o filosofie e si tratta spesso di filosofie che il Maestro Canaro non conosceva, quando pose la basi della sua dottrina.
 Per esempio, il Maestro Canaro non lesse mai (con suo grande rammarico) la <em>Divina Commedia</em>; ciò non ostante, il C’hi++ ha un punto di contatto con la visione dantesca dell’Aldilà come conseguenza del pentimento.
-Dante mette in Purgatorio i peccatori che hanno capito di aver sbagliato, mentre condanna all’Inferno quelli che, malgrado tutto, non riescono a prendere coscienza delle proprie colpe. 
+Dante mette in Purgatorio i peccatori che hanno capito di aver sbagliato, mentre condanna all’Inferno quelli che, malgrado tutto, non riescono a prendere coscienza delle proprie colpe.
 Come abbiamo detto <a href="/man/istruzioni-condizionali#pentimento" class="xref">in precedenza</a> e come vedremo durante la lezione sul <a href="/man/debug#pentimento" class="xref">debug</a>, il C’hi++ concorda con questa idea.<br />
 Similmente, ci sono diverse affinità fra i C’hi++ e la <em>Bhagavad-Gita</em>, anche se lui la lesse mentre stava redigendo la <em>Proposta</em>, quando i punti nodali del suo Credo erano già stati definiti.<br />
 Oltre alla citazione che ti ho fatto parlando del <a href="/man/programmatore#azione" class="xref">programmatore</a>, ci sono dei brani che ricordano molto le affermazioni contenute in <em>Sostiene Aristotele</em>; per esempio, sulla natura dell’Universo:</p>
@@ -1192,7 +1192,7 @@ I cicli cosmici sono periodi temporali chiamati Manvantara, suddivisi al proprio
 
 <p>Per certi versi anche la stessa Genesi biblica può essere considerata un’allegoria della cosmogonia spazionista: il Paradiso è l’Uno primigenio, mentre Adamo (<em>Puruṣa</em>) ed Eva (<em>Prakṛti</em>) sono l’Ente che ne causa la disgregazione, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte.<br />
 Il Maestro Canaro pensava che tutto questo fosse normale.
-Come scrisse nel <a href="https://github.com/chi-plus-plus/chi-plus-plus/blob/master/MANIFEST.md" target="github">MANIFEST</a> GitHub del C’hi++:</p>
+Come scrisse nel <a href="https://github.com/TacunIT/chi-plus-plus/blob/master/MANIFEST.md" target="github">MANIFEST</a> GitHub del C’hi++:</p>
 
 <blockquote>
   <p>Spogliate degli orpelli e ricondotte alle loro caratteristiche essenziali, le diverse ipotesi metafisiche hanno molti punti in comune perché sono tutte, in una maniera o nell’altra, la risposta a uno stesso bisogno: la ricerca di una giustificazione alla nostra esistenza.</p>
@@ -1225,19 +1225,19 @@ Anche le mappe e le immagini, come la metafisica, sono costrette a rappresentare
 Anche le mappe e le immagini, per questo motivo, devono rappresentare il loro soggetto per mezzo di analogie: le carte topografiche usano delle linee altimetriche e dei simboli; le immagini satellitari usano dei pixel o dei piccoli punti di colore.
 In nessuno dei due casi ciò che noi vediamo è davvero ciò che rappresenta; è il nostro cervello che decide di crederlo tale: nel caso della carta topografica, perché la legenda ci permette di definire una correlazione fra significato e significante; nel caso dell’immagine, perché il nostro occhio riconosce in quelle combinazioni di pixel o di punti di colore degli alberi, il mare o delle case.<br />
 Un’altra analogia, conseguenza dei due punti precedenti, è che è sbagliato confondere i simboli con ciò che rappresentano: i quadratini scuri delle mappe <em>non</em> sono case; i punti colorati delle immagini <em>non</em> sono un bosco.
-Mappe e immagini hanno senso solo a un certo livello di lettura; se lo oltrepassiamo, se cerchiamo di ottenere più informazioni o verosimiglianza avvicinando lo sguardo, otteniamo l’effetto opposto, perché i simboli si rivelano per quello che sono: punti colorati o linee su un foglio. 
+Mappe e immagini hanno senso solo a un certo livello di lettura; se lo oltrepassiamo, se cerchiamo di ottenere più informazioni o verosimiglianza avvicinando lo sguardo, otteniamo l’effetto opposto, perché i simboli si rivelano per quello che sono: punti colorati o linee su un foglio.
 Questo però non vuol dire che ciò che rappresentano sia falso, ma che noi non stiamo guardando con <em>il giusto paio di occhi</em>, come direbbe Hunter Thompson.<br />
-Il Maestro Canaro pensava che fosse per questo motivo che alcune religioni sono contrarie alla rappresentazione diretta della Divinità: perché è facile che poi si confonda il simbolo con ciò che rappresenta. 
-<!-- 
+Il Maestro Canaro pensava che fosse per questo motivo che alcune religioni sono contrarie alla rappresentazione diretta della Divinità: perché è facile che poi si confonda il simbolo con ciò che rappresenta.
+<!--
 Agli Ebrei è vietato dal secondo Comandamento e anche i Cristiani si attennero a questa regola fino al Concilio di Nicea del 787.
-@todo: verificare regole simili per l'Islam. 
---> 
+@todo: verificare regole simili per l'Islam.
+-->
 Tornando al paragone iniziale, le religioni tradizionali sono delle immagini da satellite, mentre il C’hi++ è una mappa topografica.<br />
 Mentre i Credi religiosi riescono a riprodurre — nei limiti imposti dalla nostra condizione — tutta la bellezza del Creato, il C’hi++ si limita a darne una descrizione schematica, più povera di contenuti e di poesia, ma più facile da accettare per chi non abbia la benedizione della Fede.
-Un’immagine da satellite ha un valore contemplativo: è bella da guardare sullo schermo del tuo computer o anche da appendere al muro, come un quadro, ma 
+Un’immagine da satellite ha un valore contemplativo: è bella da guardare sullo schermo del tuo computer o anche da appendere al muro, come un quadro, ma
 se ti sei perso in un bosco o in mezzo ai monti, una mappa topografica, proprio in virtù della sua schematicità, ti permetterà più facilmente di ritrovare la strada di casa.<br />
 Il C’hi++ non cerca di rubare fedeli alle religioni canoniche.
-Non avrebbe senso: sarebbe come cercare di convincere chi sia già sposato con l’amore della sua vita a fare un matrimonio di interesse: se tu hai la Fede non hai bisogno di conferme razionali; possono compiacerti, ma non ti sono necessarie. 
+Non avrebbe senso: sarebbe come cercare di convincere chi sia già sposato con l’amore della sua vita a fare un matrimonio di interesse: se tu hai la Fede non hai bisogno di conferme razionali; possono compiacerti, ma non ti sono necessarie.
 Il C’hi++, però, può dare forza a quelle (tante) persone che <em>ancora credono in tutto ciò in cui più nessuno crede</em>, come li descrisse Longanesi; quella <em>Banda degli Onesti</em><a class="nota" href="/man/note#banda-onesti" id="banda-onesti"></a> che tutti i giorni fa il proprio dovere al meglio possibile anche se non gli conviene, anche tutto e tutti intorno a loro sembrano spingerli all’egoismo e all’indifferenza.
 Può aiutarli a non arrendersi e può insegnare loro che non è importante vincere le partite, ma giocare sempre meglio.
 Riconoscere gli sbagli che si sono fatti, imparare da essi e cercare di non ripeterli più, partita dopo partita, in una ricerca continua del meglio.
@@ -1249,10 +1249,10 @@ Data una classe: `umano` si possono ridefinire gli operatori di relazione per ca
 Nel caso di oggetti che hanno una linea genealogica comune, la funzione potrebbe basarsi, come dice Dawkins, sulla percentuale di DNA che i due oggetti condividono, moltiplicata per il tempo passato insieme, tenendo conto anche di com'è stato quel tempo, ma nel caso di due oggetti che appartengono a genealogie differenti, quale sarebbe l'algoritmo?
 
 Riprendere la genealogia di classi dell'esempio classi-dio.cpp ed esaminare la funzione virtuale pura `isGood` nelle sue variazioni: nel caso della classe `Mare`, il risultato è già definito perché lo ha determinato Dio; per le altre classi, non è altrettanto certo.
-Ogni categoria ha una sua implementazione di questa funzione, uno specifico criterio di riscontro per determinare ciò che debba essere considerato ben fatto. 
+Ogni categoria ha una sua implementazione di questa funzione, uno specifico criterio di riscontro per determinare ciò che debba essere considerato ben fatto.
 Per alcuni è il pubblico: il droghiere ti chiede di assaggiare le olive, lo scrittore ti fa leggere ciò che ha scritto, l'attore aspetta la risata o l'applauso alla fine della scena.
 
-@todo: trovare il riferimento bibliografico per il prossimo paragrafo; so che esiste, ma non mi ricordo quale fosse - Le religioni nate in zone temperate, con abbondanza di acqua e di cibo, hanno un pantheon di divinità più o meno benevole, mentre quelle nate in zone aspre hanno un numero ristretto di Dei, più severi. 
+@todo: trovare il riferimento bibliografico per il prossimo paragrafo; so che esiste, ma non mi ricordo quale fosse - Le religioni nate in zone temperate, con abbondanza di acqua e di cibo, hanno un pantheon di divinità più o meno benevole, mentre quelle nate in zone aspre hanno un numero ristretto di Dei, più severi.
 
 La specializzazione come un male.
 "La specializzazione va bene per gli insetti" (dove l'ho letto?)
