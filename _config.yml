@@ -1,18 +1,19 @@
-baseurl:     "" 
-claim:       "Proposta per una metafisica open-source" 
+baseurl:     ""
+claim:       "Proposta per una metafisica open-source"
 destination: docs/
 highlighter: none
-keyword:    "C'hi, C++, c plus plus, religione, open-source"    
+keyword:    "C'hi, C++, c plus plus, religione, open-source"
 og_desc:    "Chi++ - Proposta per una metafisica open-source"
 og_img_h:   "630"
 og_img_w:   "1200"
 og_img:     "/assets/img/chi-plus-plus.jpg"
 title:       "C'hi++"
-url:         "https://chiplusplus.org" 
+url:         "https://chiplusplus.org"
+url_github:  "https://github.com/TacunIT/chi-plus-plus"
 
 exclude: [
     'src'
-  , 'bin' 
+  , 'bin'
   , 'CHANGELOG'
   , 'CONTRIBUTING.md'
   , 'MANIFEST.md'
