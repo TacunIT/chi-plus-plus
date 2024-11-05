@@ -746,7 +746,7 @@
   - Modificato ordine dei capitoli, spostando funzioni e preprocessore prima delle istruzioni condizionali.
 
 ## 0.16.4 (December 08, 2020)
-  - Terminata prima stesdura della parte tecnica del capitolo
+  - Terminata prima stesura della parte tecnica del capitolo
   - Riorganizzata la struttura dei capitoli
 
 ## 0.16.3 (December 08, 2020)
@@ -1112,7 +1112,7 @@
 
 ## 0.7.1 (February 08, 2020)
   - Completata prima stesura del MANIFEST
-  - Modifiche minori a README
+  - Modifiche minori a README  
   - Revisione del testo di Aristotele
   - Aggiunto PDF di Ipotesi per una metafisica open-source
   - Aggiunto paragrafo sulle convenzioni tipografiche al file README
@@ -1162,18 +1162,16 @@
   - Rivisto il paragrafo su Sostiene Aristotele
 
 ## 0.5.3 (March 01, 2019)
-  - Compltetata nuova versione della parte iniziale
+  - Completata nuova versione della parte iniziale
   - Chiusa revisione dell'introduzione
   - Aggiunto file PDF di Amore e Arte
 
 ## 0.5.2 (February 17, 2019)
   - Completato paragrafo sulla situazione corrente
-  - Completata prima bozza del paragrafo sull'iportanza delle regole
+  - Completata prima bozza del paragrafo sull'importanza delle regole
   - Prima stesura del paragrafo sull'importanza delle regole
   - Inizio della descrizione del problema
   - Iniziata revisione secondo paragrafo
-  - Bump version to 0.5.1.
-  - Bump version to 0.5.1.
 
 ## 0.5.1 (February 04, 2019)
   - Rivisto il testo dell'introduzione
@@ -1184,7 +1182,6 @@
 ## 0.5.0 (January 28, 2019)
   - Accorciata chiusura
   - Aggiunta citazione da Boll all'inizio
-  - Aggiunta citazione di Rovelli
   - Aggiunta nota su Ikebarba a mappa
   - Aggiunta nota su portabilità scientifica dei precetti
   - Aggiunta nota sulle qualità di Allah a mappa Vue
@@ -1242,7 +1239,7 @@
   - Iniziata redazione del Manifesto.
 
 ## 0.2.0 (giugno 6, 2009)
-  - Iniziate redazione del Manuale.
+  - Iniziata redazione del Manuale.
   - Creata mappa concettuale con Vue.
 
 ## 0.1.1 (giugno 12, 2007)

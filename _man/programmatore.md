@@ -14,9 +14,9 @@ Un buon maestro deve essere abile in tutte le discipline, ma può eccellere solo
 È fondamentale che il maestro conosca e pratichi tutte le discipline, perché solo conoscendo le problematiche connesse a ciascuna fase e a ciascuna disciplina, potrà raggiungere l'eccellenza in una di esse.
 La disciplina più alta é la programmazione, perché non ha a che fare con entità reali, ma solo con concetti astratti.  
 Non c'è differenza fra lo scrivere codice e il gestire un'azienda: è come osservare una medesima città su carte di diversa scala.
-Se il rapporto di scala è basso, si avrà una buona visione di insieme, ma pochi dettagli; se il rapporto di scala è alto, si avranno molti dettagli, ma una visione di insieme limitata. 
+Se il rapporto di scala è basso, si avrà una buona visione di insieme, ma pochi dettagli; se il rapporto di scala è alto, si avranno molti dettagli, ma una visione di insieme limitata.
 La città, però, sarà sempre la stessa.  
-Nella *Bhagavad Gita* si dice:
+Nella *Bhagavad-Gita* si dice:
 
 > {{ site.data.citazioni.gita.azione }}<a id="azione" href="/man/note#azione" class="nota"></a>
 
@@ -50,7 +50,7 @@ Fra questi individui e i veri programmatori c'è la stessa differenza che passa 
 
 <hr id="dottrina">
 
-{{ site.data.canaro.paranoici }} 
+{{ site.data.canaro.paranoici }}
 
 <!--
     @todo applicare le categorie caratteriali aristoteliche al SW.
