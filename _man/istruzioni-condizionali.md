@@ -9,8 +9,8 @@ status:     pubblicato
 title:      "Istruzioni condizionali"
 ---
 
-<!-- 
-La perifrasi è da: Asimov, Isaac. Civiltà extraterrestri (Italian Edition) . MONDADORI. Kindle Edition. 
+<!--
+La perifrasi è da: Asimov, Isaac. Civiltà extraterrestri (Italian Edition) . MONDADORI. Kindle Edition.
 -->
 
 Le istruzioni condizionali sono l'elemento più importante del codice.
@@ -45,7 +45,7 @@ typedef Importo unsigned long;
 Importo raddoppiaStipendio(Importo stipendioCorrente)
 {
     if ( stipendioCorrente > 0 ) {
-        stipendioCorrente *= 2; 
+        stipendioCorrente *= 2;
     }    
     return stipendioCorrente;   
 }
@@ -54,7 +54,7 @@ Importo raddoppiaStipendio(Importo stipendioCorrente)
 Allo stesso modo, le parentesi graffe possono essere omesse se il blocco istruzioni che racchiudono è costituito da una singola istruzione:
 
 ```
-if ( a > 8 ) 
+if ( a > 8 )
     cout << "maggiore" << endl;
 else
     cout << "minore" << endl;
@@ -64,7 +64,7 @@ Personalmente, trovo che questa forma sia inelegante e che renda il codice meno 
 La utilizzo solo nelle istruzioni di gestione degli errori, dove il flusso del programma si interrompe bruscamente, perché l'aspetto sgraziato dell'istruzione evidenzia l'eccezione, rendendo il codice più auto-esplicativo.
 
 ```
-if ( divisore == 0 ) 
+if ( divisore == 0 )
     throw std::runtime_error("errore");
 ```
 
@@ -74,12 +74,12 @@ Anche in questo caso, si può chiudere la sequenza con un'istruzione `else`, def
 ```
 if ( <prima condizione> ) {
     /*
-     * istruzioni da eseguire se 
+     * istruzioni da eseguire se
      * la prima condizione è vera
     */
 } else if ( <seconda condizione> ) {
     /*
-     * istruzioni da eseguire se 
+     * istruzioni da eseguire se
      * la prima condizione è vera
      */
 } else {
@@ -184,10 +184,10 @@ if ( <condizione 1> ) {
 }
 if ( <condizione 2> ) {
     return 2;
-} 
+}
 if ( <condizione 3> ) {
     return 3;
-} 
+}
 
 return 9
 ```
@@ -200,7 +200,7 @@ Pensa a una *stored-procedure* che debba controllare l'integrità referenziale d
 {% include_relative src/istruzioni-condizionali-stored-procedure.sql %}
 ```
 
-Se scrivi il codice in questa maniera, puoi inserire o rimuovere un parametro (e i relativi controlli) senza alterare il resto del codice, cosa che non avverrebbe se tu concatenassi le istruzioni `if`. 
+Se scrivi il codice in questa maniera, puoi inserire o rimuovere un parametro (e i relativi controlli) senza alterare il resto del codice, cosa che non avverrebbe se tu concatenassi le istruzioni `if`.
 Perderai un po' di velocità di esecuzione, ma il codice sarà molto più facile da scrivere o da modificare.  
 Attento, però: mettere in sequenza delle semplici istruzioni `if` è cosa
 ben diversa dal creare una catena di istruzioni `else-if` perché, se in caso di errore non blocchi l'elaborazione con un'istruzione `return`, il programma andrà avanti verificando le condizioni seguenti e l'errore nella prima condizione potrebbe ripercuotersi sul codice successivo:
@@ -259,9 +259,9 @@ In sostanza: con una `break` alla fine di ciascun caso, l'istruzione `switch` è
 
 ```
 if(piaeta == POS_ERRORE) {
-   cout << "Valore non valido"; 
+   cout << "Valore non valido";
 } else if(pianeta == POS_MERCURIO) {
-    cout << "Mercurio"; 
+    cout << "Mercurio";
 } else if(pianeta == POS_VENERE) {
     cout << "Venere";   
 } else if ..         
@@ -279,24 +279,24 @@ Un'ultima cosa: ricordati sempre che, per dichiarare delle variabili all'interno
 
 ```
 switch( x ) {
-    case 1: 
+    case 1:
         int y = 9;      /** errore di complilazione */
-        cout << x + y; 
+        cout << x + y;
         break;
     case 2: {
         int y = 2;      /** corretto */
-        cout << x + y ; 
+        cout << x + y ;
         break;
     }
     default:
-        cout << "default" << endl; 
+        cout << "default" << endl;
 }
 
 ```
 
 <hr id="dottrina">
 
-La vita ci chiede spesso di fare delle scelte condizionali. 
+La vita ci chiede spesso di fare delle scelte condizionali.
 Quando ciò avviene, hai due possibilità: o fai la scelta più conveniente per te o fai la scelta che ti sembra più conveniente per il maggior numero di persone per il più lungo periodo di tempo possibile.
 Nel primo caso sarai un vettore di Entropia, mentre nel secondo caso sarai un paladino della Gravità.  
 Come sai, per il C'hi++ la scelta esatta (inteso come participio passato del verbo *esigere*) è la seconda: tutta la materia non è che la manifestazione di una unica Energia, quindi ha poco senso distinguerci gli uni dagli altri;
@@ -310,7 +310,7 @@ per le altre membra non resterà riparo.<a class="nota" href="/man/note#saadi" i
 Cercare il proprio tornaconto personale a discapito degli altri è sbagliato.
 Bisogna comportarsi bene e cercare di convincere anche gli altri a fare altrettanto, perché, come recita il *Mantiq al-Tayr*:
 
-> tutto il male o il bene che feci, 
+> tutto il male o il bene che feci,
 in verità lo feci solo a me stesso<a class="nota" href="/man/note#mantiq" id="mantiq"></a>.
 
 Ma come si fa a capire cosa sia *bene*?
@@ -319,13 +319,13 @@ Ci sono casi in cui è facile dare la scelta giusta, come nel caso del maestro Z
 ```
 switch( stimolo ) {
     case fame:  
-        azione = mangio; 
+        azione = mangio;
         break;
-    case sonno: 
-        azione = dormo; 
+    case sonno:
+        azione = dormo;
         break;
     case sete:  
-        azione = bevo; 
+        azione = bevo;
         break;
 }
 ```
@@ -333,29 +333,29 @@ ma altre volte ci troviamo di fronte a scelte più complesse:
 
 > Una ragazza è rimasta incinta a séguito di una violenza: può decidere di abortire?
 
-oppure: 
+oppure:
 
 > Un uomo, condannato per omicidio, in carcere ha ucciso altri due carcerati e una guardia: va condannato a morte o no?
 
-Se queste domande le fai a un cattolico, lui &mdash; coerentemente con il suo Credo &mdash; ti risponderà che no, non è possibile né abortire né condannare a morte perché la vita è un dono di Dio e nessuno ce ne può privare. 
+Se queste domande le fai a un cattolico, lui &mdash; coerentemente con il suo Credo &mdash; ti risponderà che no, non è possibile né abortire né condannare a morte perché la vita è un dono di Dio e nessuno ce ne può privare.
 Se invece queste domande le poni a un Giudice, avrai risposte diverse a seconda della Nazione a cui appartiene, perché mentre sottrarre dei beni materiali è considerato un reato ovunque, esistono degli Stati in cui è permesso sottrarre a un individuo il bene più prezioso che ha.   
 Un tempo, i credenti mettevano al rogo gli scienziati, accusandoli di eresia; il 6 Giugno del 1945, però, la Scienza ha mostrato al Mondo il suo potere ed è diventata di fatto il nuovo Dio per milioni di persone; da allora, le parti si sono invertite e adesso sono gli scienziati a mettere al rogo ogni forma di spiritualità.
 Il problema è che se privi la giurisprudenza di una base spirituale, quello che otterrai sono Leggi *pret-a-porter*, rimedii temporanei a delle esigenze contingenti.
 Nella migliore delle ipotesi.  
 La teocrazia è un errore, ma anche la *a*-teocrazia dev'essere evitata.
 La Fede è stata la colla che ha tenuto unita la nostra società per quasi duemila anni.
-Forse quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, il denaro, i Diritti Umani, le Leggi<a class="nota" href="/man/note#sapiens" id="sapiens"></a>.
+Gran parte di quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, il denaro, i Diritti Umani, le Leggi<a class="nota" href="/man/note#sapiens" id="sapiens"></a>.
 Nessuno di questi concetti così importanti per la nostra Società esiste davvero, ma li utilizziamo lo stesso perché, come il linguaggio *C*, pur essendo solo delle convenzioni, sono utili al loro scòpo.  
 Ora che questa colla non c'è più, le scelte dei legislatori non sono più mosse dal perseguimento di un obiettivo comune (corretto o sbagliato che fosse), ma dalla ricerca dell'approvazione di un elettorato composto in buona parte da zombie culturali<a class="nota" href="/man/note#istat" id="istat"></a> e da egoisti che perseguono unicamente il proprio interesse momentaneo: il pascolo ideale per demagoghi con aspirazioni dittatoriali.
 La minoranza di idealisti e di persone colte, priva di valori trascendenti, non può che agire in base ai propri sentimenti o ai propri auspici e subisce inevitabilmente il malefico influsso dell'Annosa Dicotomia: fanno scelte che puntano al bene comune, ma si tratta di un bene comune molto spesso miope e temporaneo.
 Come scacchisti mediocri, vedono ciò che è bene qui e ora, ma non riescono a valutarne le conseguenze a lungo termine.  
-Pensa a quale potrebbe essere, secondo te, la soluzione giusta alle due domande che ti ho fatto e poi pensa al *motivo* quella soluzione ti appare giusta. 
+Pensa a quale potrebbe essere, secondo te, la soluzione giusta alle due domande che ti ho fatto e poi pensa al *motivo* quella soluzione ti appare giusta.
 Perché permettiamo la soppressione di un feto che non ha fatto del male a nessuno, mentre lasciamo in vita chi ne ha già fatto?
 Vogliamo fare la cosa giusta o vogliamo solo sentirci buoni?  
 Il Maestro Canaro si fece molti nemici con la sue idee sull'aborto.
 <!--
-@todo: valutare la possibilità di aggiungere i punti interessanti della conversazione con Massimo: 
-    a. non sono cattolico, ma ho studiato embriologia e so quando 
+@todo: valutare la possibilità di aggiungere i punti interessanti della conversazione con Massimo:
+    a. non sono cattolico, ma ho studiato embriologia e so quando
        qualcosa smette di essere un agglomerato di cellule e diventa
        altro
     b. quando, un programma diventa un programma?
@@ -375,7 +375,7 @@ Anche alcune persone che inizialmente lo avevano appoggiato lo accusarono di cer
 <i>bhavantu</i> possano essere  <br />
 <i>sukhitattà</i> felici nel loro cuore
 </p>
-    
+
 Tutto questo a lui non importava: quando gliene parlai, mi disse che preferiva perdere un milione di seguaci che una vita.    
 
 <hr id="pentimento">
@@ -414,7 +414,7 @@ Se non è utile al miglioramento, possiamo considerarlo alla stessa stregua del 
 Egli sollevò il gatto e disse: “Se mi direte una parola di Zen, salverò il gatto; se no, lo ucciderò”.  
 Nessuno seppe rispondere e Nansen tagliò il gatto in due<a class="nota" href="/man/note#nansen" id="nansen" ></a>.
 
-La morte del condannato, però, se mai dovesse rendersi necessaria, non deve essere considerata una vendetta di cui gioire, ma un evento tanto doloroso quanto inevitabile, di cui dolersi come di un'amputazione. 
+La morte del condannato, però, se mai dovesse rendersi necessaria, non deve essere considerata una vendetta di cui gioire, ma un evento tanto doloroso quanto inevitabile, di cui dolersi come di un'amputazione.
 Ciascuno, in quel giorno, dovrebbe chiedersi se, con *pensieri, parole, opere e omissioni*, non abbia contribuito in qualche modo a quella perdita.
 Una Società che esalta l'individualismo, il successo e il denaro non può dirsi del tutto innocente se chi non ha i mezzi o la capacità di ottenerli in maniera lecita cerca di procurarseli in altro modo.
 
@@ -446,9 +446,9 @@ Il Metta Sutra predica la benevolenza per tutti gli "esseri che respirano"
 
 allora, perché Nansen taglia in due il gatto? e perché i maestri Zen potevano uccidere i loro discepoli?
 Ho cercato la definizione di "senziente", ma non mi sembra che ci sia una risposta univoca.
-In attesa di accertare la questione (posto che sia possibile), 
+In attesa di accertare la questione (posto che sia possibile),
 
-Il Contrappasso: 
+Il Contrappasso:
 
 6. citare l'esempio del notaio in un'auto guidata da un sistema di IA e del sito che cerca di creare un'etica accumulando pareri (non fornire soluzione, per ora?);
 

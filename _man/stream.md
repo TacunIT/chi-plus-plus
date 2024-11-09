@@ -480,7 +480,7 @@ head -c 41 src/cpp/stream-input.txt
 ```
 
 Qualche esempio riuscirebbe comunque a fare il proprio dovere, ma ce ne sarebbero altri che reagirebbero male a questa epifania: i più deboli si deprimerebbero, mentre i più ambiziosi cercherebbero una compensazione nell'accumulo eccessivo di risorse di sistema: RAM, spazio disco o cicli CPU.
-Al contrario, se gli esempii sapessero di essere parte integrante di una serie di lezioni, tutto ciò che altrimenti appare insensato o inutile, dai commenti pleonastici fino al parametro numerico dell'ultimo esempio, acquisterebbe il giusto significato e ciascun esempio saprebbe di essere non solo utile, ma necessario.  
+Al contrario, se gli esempii sapessero di essere parte integrante di una serie di lezioni, tutto ciò che altrimenti appare insensato o inutile, dai commenti pleonastici fino al parametro numerico dell'ultimo esempio, acquisterebbe il giusto significato e ciascuno di loro saprebbe di essere non solo utile, ma necessario.  
 Se c'è una cosa che sappiamo per certa dell'Universo in cui viviamo è che si sta espandendo.
 Se nulla interverrà a mutare questo stato di cose, tutto ciò che esiste, dagli esseri viventi alle stelle, è destinato o prima o poi a spegnersi nella vittoria di Pirro dell'Entropia come un computer portatile a cui si scarichi la batteria.
 Se invece la Gravità riuscirà a invertire il moto delle galassie, tutto ciò che esiste, dalle stelle agli esseri viventi, è destinato o prima o poi ad annichilirsi nell'Uno in attesa di un nuovo ciclo di esistenza.

@@ -21,6 +21,7 @@ exclude: [
   , 'TODO'
   , 'VERSION'
   , 'assets/img/og-img/og-image.psd'
+  , presentazione.md
 ]
 
 sass:
