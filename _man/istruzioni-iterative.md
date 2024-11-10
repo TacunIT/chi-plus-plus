@@ -277,7 +277,7 @@ Aristotele disse che:
  <a class="nota" href="/man/note#aristotele" id="aristotele"></a>
 
 In quest'ottica, il C'hi++ è una metafisica abbastanza rigorosa, perché richiede l'accettazione di due sole affermazioni non comprovabili e, di queste, solo una è strettamente necessaria alla coerenza interna della dottrina, l'altra è solo un auspicio.  
-Ai fedeli del C'hi++ è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (gli scienziati non sono infallibili: sono gli stessi che dicevanodi vedere dei canali su Marte) 
+Ai fedeli del C'hi++ è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (gli scienziati non sono infallibili: sono gli stessi che dicevanodi vedere dei canali su Marte)
 <!--
 @todo: valutare utilizzo di questo aneddoto (dopo averlo verificato..)
 Lemaitre fu il primo a formulare la teoria dell’espansione dell’universo, che nel 1949 Fred Hoyle, togato docente di Cambridge, sostenitore della teoria dello stato stazionario, con una punta di sarcasmo, chiamò teoria del Big Bang.
@@ -401,7 +401,7 @@ Non è una maldicenza: è la verità; gli scienziati sono i primi ad ammetterlo 
 Il Maestro Canaro voleva che questo fosse possibile anche per il C'hi+.
 Come scrisse alla fine della sua <a href="/proposta" target="proposta">*Proposta per una metafisica open-source*</a>:
 
-> Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma *culturi* e fossi per ciò costretto a cambiare il nome della mia cosmogonia in *Culturismo*, io incrementerò di un'unità la *major-version* del mio progettto e andrò avanti.
+> Se anche un giorno dovessi scoprire che gli elementi costituivi dell'Universo non si chiamano *spazioni*, ma “culturi” e fossi per ciò costretto a cambiare il nome della mia cosmogonia in “Culturismo”, io incrementerò di un'unità la *major-version* del mio progettto e andrò avanti.
 Non per ostinazione, né per idealismo, ma perché questa *metafisica-non-metafisica*, come l'ho definita prima, funziona: mi aiuta a decidere quale sia la cosa giusta da fare quando non è facile capire quale sia la cosa giusta da fare e mi aiuta ad affrontare i momenti difficili della vita, mia o altrui che sia, senza accettazioni per fede, ma basandomi solo su considerazioni di ordine logico.
 Inoltre, è una storia che non è ancora stata scritta e, allo stesso tempo, la storia che la nostra razza scrive da sempre.
 Mi sembra un motivo più che sufficiente.
