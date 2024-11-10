@@ -1,9 +1,17 @@
+<!--
+
 _NOTA: mentre scrivevo questa lettera, mia moglie si è seduta vicino a me e gli effetti quantistici dovuti alla sua massa hanno alterato il normale fluire del tempo e della mia prosa. In questo momento si è alzata, ma tornerà, perciò non ho modo di rimettere tutto a posto, ma solo di numerare i paragrafi per facilitarne la lettura. Me ne scuso: come ripeto spesso, non è un caso se si utilizza lo stesso verbo (*contrarre*) per il matrimonio e la malaria._  
 <br />     
   
 Concludo con una domanda che non ha nulla a che vedere con il resto di questo messaggio: l'esempio del figlio che invia notizie al padre, che lei fa in "Buchi bianchi" è ispirato al racconto: "I sette cavalieri" di Buzzati?  
 
 <hr />      
+-->
+<br />  
+
+# C'hi++ - Il senso della vita è il *debug*
+## Presentazione
+<br />
 
 *C'hi++* è un eccellente manuale di programmazione, un maldestro libro di filosofia e un vergognoso libro di fisica.  
 
@@ -18,7 +26,8 @@ Mancando questa conoscenza, l'opinione dell'uno vale quella dell'altro e mai nes
 
 ## L'eccellente manuale di programmazione
 
-La suddetta sequenza di eventi, però, è precisamente ciò che accadde al Maestro Canaro, quando, alla fine del XX° Secolo,fu chiamato da Dio per riscrivere in C++ l'applicazione in COBOL che fa funzionare l'Universo: andò nell'Aldilà, si fece spiegare da Dio cosa gli occorreva e poi cominciò a realizzarlo. 
+La suddetta sequenza di eventi, però, è precisamente ciò che accadde al Maestro Canaro, quando, alla fine del XX° Secolo,fu chiamato da Dio per riscrivere in C++ l'applicazione in COBOL che fa funzionare l'Universo: andò nell'Aldilà, si fece spiegare da Dio cosa gli occorreva e poi cominciò a realizzarlo.
+(È un fatto accertato: lo provano il suo diario e alcune lettere che inviò alla  sua società quando era distaccato dal “Cliente”.) 
 Sfortunatamente, però, col tempo il Maestro Canaro abusò del potere che gli era stato concesso e Dio lo licenziò, rimandandolo sulla Terra, dove egli fondò un Ordine monastico dedito alla scrittura di programmi software.  
 
 I due personaggi del libro appartengono entrambi a quest'Ordine *informistico*, ma sono entrambi dei solitari, che mal si integrano con il resto dei confratelli.
@@ -36,126 +45,82 @@ Ciascuno di questi argomenti, descritto in detttaglio nella parte iniziale del c
 
 Per lo Spazionismo, l'Universo è costituito da una matrice tridimensionale di elementi infintesimali chiamati, appunto: *spazioni*.
 Siimili ai *pixel* di uno schermo, gli spazioni hanno ciò che il Maestro chiama: “esistenza potenziale", ovvero esistono solo se vengono irraggiati di energia, nel qual caso assumono massa ed esistenza.
-Qualcosa di simile ai sacchetti di plastica per fare il ghiaccio: vuoti sono piatti, praticamente bidimensionali, ma se li si riempie di acqua, diventano tridimensionali.  
-Facendo proprie alcune delle idee esposte da Poe in *Eureka*, lo Spazionismo.  immagina che tutto ciò che esiste nasca dello scontro di due Forze primordiali: la Gravità, ovvero la tendenza della materia a riunirsi a sé stessa, e l'Entropia[^poe] che, al contrario, tende a dividerla.
-In balia di queste due forze, l'Universo ha un'esistenza ciclica: quando “vince” la Gravità, tutta l'energia/materia è concentrata in un'area ristretta; quando invece l'Entropia prende il sopravvento, il “Big Bang” *lancia* l'energia *attraverso* la matrice di spazioni, *separando* l'Uno e generando stelle, pianeti e abitanti dei pianeti. 
+Qualcosa di simile ai sacchetti di plastica per fare il ghiaccio: vuoti sono piatti, praticamente bidimensionali, ma se li si riempie di acqua, diventano tridimensionali[^spazio].  
+Facendo proprie alcune delle idee esposte da Poe in *Eureka*, lo Spazionismo  immagina che tutto ciò che esiste nasca dello scontro di due Forze primordiali: la Gravità, ovvero la tendenza della materia a riunirsi a sé stessa, e l'Entropia[^poe] che, al contrario, tende a dividerla.
+In balìa di queste due forze, l'Universo ha un'esistenza ciclica: quando “vince” la Gravità, tutta l'energia/materia è concentrata in un'area ristretta; quando invece l'Entropia prende il sopravvento, il *Big Bang* *lancia* l'energia *attraverso* la matrice di spazioni, *separando* l'Uno e generando stelle, pianeti e abitanti dei pianeti. 
 L'espansione dell'Universo continua fino a che la Gravità non riprende il sopravvento, facendo sì che tutta la materia torni a riunirsi nell'Uno.  
+Questa è l'unica accettazione per fede imposta dalllo Spazionismo, perché, se l'esistenza non fosse ciclica:
+
+> nessun ordine sociale sarebbe più possibile e ciascuno cercherebbe di ottenere il massimo possibile dai pochi anni che gli sono concessi, indifferente al costo che questo avrebbe per gli altri. Qualcosa di simile al Black Friday in un centro commerciale americano, per intendersi..
 
 ## Il maldestro libro di filosofia
 
 L'ipotesi che ho appena descritto non è altro che il disperato tentativo di una mente finita di razionalizzare grandezze infinite come il tempo e lo spazio. 
 Non fornisce uno straccio di prova a sostegno delle sue ipotesi e non dà un senso alle nostre esistenze, che riduce a meri epifenomeni del tutto irrilevanti su scala cosmica.
 A causa di ciò, non ci spinge a comportarci “bene“ (nel senso che davano a questo termine i nostri nonni), ma ad arraffare tutto ciò che possiamo, come pirati all'arrembaggio.
-Se vogliamo trasformarla in una filosofia che spinga le persone a comportarsi correttamente, dobbiamo tenere conto di ciò che dice il Maestro nel capitolo dedicato agli *stream*: 
+Per trasformarla in una filosofia che spinga le persone a comportarsi correttamente, dobbiamo tenere conto di ciò che dice il Maestro nel capitolo dedicato agli *stream*: 
 
 > una filosofia, per spingere i suoi seguaci a comportarsi in maniera corretta, deve possedere due caratteristiche: trascendenza e permanenza.
 
-L'ipotenusa di un triangolo rettangolo accetta senza problemi il fatto di non poter valere - mai, in alcun modo - più della radice quadrata della somma del quadrato dei suoi due cateti; noi esseri umani, al contrario, mal ci adattiamo all'idea di non poter cambiare in meglio la nostra condizione corrente.  
 Nel capitolo dedicato alla memoria, il Maestro spiega al suo allievo come il comportamento dell'Umanità negli ultimi cinquant'anni, rispecchi le cinque fasi dell'accettazione del lutto, definite dalla dottoressa Kübler Ross.
 Il lutto, in questo caso, è la perdita della speranza, dovuta al diffondersi del pensiero positivistico:
 
 > Un tempo, i credenti mettevano al rogo gli scienziati, accusandoli di eresia; il 6 Giugno del 1945, però, la Scienza ha mostrato al Mondo il suo potere ed è diventata di fatto il nuovo Dio per milioni di persone; da allora, le parti si sono invertite e adesso sono gli scienziati a mettere al rogo ogni forma di spiritualità. 
 
-Come dimostra la storia recente, *il cielo stellato sopra di me, e la legge morale dentro di me* non possono garantire - da soli - il vivere civile, perché la morale dentro *Immanuel* Kant non è uguale a quella dentro *Eva* Kant, anche se hanno lo stesso cognome.
+<!--
+L'ipotenusa di un triangolo rettangolo accetta senza problemi il fatto di non poter valere - mai, in alcun modo - più della radice quadrata della somma del quadrato dei suoi due cateti; noi esseri umani, al contrario, mal ci adattiamo all'idea di non poter cambiare in meglio la nostra condizione corrente.  
+-->
+In altre parole, *il cielo stellato sopra di me, e la legge morale dentro di me* non possono garantire - da soli - il vivere civile, perché la morale dentro *Immanuel* Kant non è uguale a quella dentro *Eva* Kant, anche se hanno lo stesso cognome.
 Se vogliamo che i giovani, sui mezzi pubblici, si alzino per lasciare il posto alle donne incinte e agli anziani, abbiamo bisogno di regole etiche[^etica] condivise e condivisibili, anche se, per formularle, dovremo andare oltre “la piatta realtà che sentiamo e vediamo”, come la definisce Asimov, e lavorare di fantasia, assumendoci il rischio di affermare cose non vere:
 
-> La teocrazia è un errore, ma anche la a-teocrazia dev’essere evitata. La Fede è stata la colla che ha tenuto unita la nostra società per quasi duemila anni. Gran parte di quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, il denaro, i Diritti Umani, le Leggi. Nessuno di questi concetti così importanti per la nostra Società esiste davvero, ma li utilizziamo lo stesso perché, come il linguaggio C, pur essendo solo delle convenzioni, sono utili al loro scòpo.
-
-
-
-
+> La Fede è stata la colla che ha tenuto unita la nostra società per quasi duemila anni. Gran parte di quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, il denaro, i Diritti Umani, le Leggi. Nessuno di questi concetti così importanti per la nostra Società esiste davvero, ma li utilizziamo lo stesso perché, come il linguaggio C, pur essendo solo delle convenzioni, sono utili al loro scòpo.
 
 ## Lo strano libro di informistica
 
-<br />  
 Il linguaggio C++ è un'evoluzione del linguaggio C.
-I costrutti che il C++ eredita dal C gli permettono di gestire al meglio le componenti di un computer; i costrutti del paradigma a oggetti gli consentono di gestire qualsiasi elemento del mondo reale.
-Similmente, il C'hi++ è un'evoluzione dello Spazionismo, a cui aggiunge un numero ristretto di dogmi e di elementi metafisici, necessari per poter garantire quella trascendenza e quella permanenza cui si accennava sopra.
+Similmente, il *C'hi++* è un'evoluzione dello Spazionismo, a cui aggiunge un numero ristretto di dogmi e di elementi metafisici, necessari per poter garantire quella trascendenza e quella permanenza cui si accennava sopra.  
+I due dogmi del C'hi++ sono illustrati dal Maestro nel capitolo dedicato alle istruzioni iterative.
+Il primo, ereditato dallo Spazionismo e necessario per garantire coerenza interna alla dottrina, riguarda la ciclicità dell'Universo: 
 
-I due dogmi del C'hi++ sono illustrati dal Maestro nel capitolo dedicato alle istruzioni ricorsive.
-Il primo, ereditato dallo Spazionismo, è l'unico strettamente necessario per garantire coerenza interna alla dottrina:
-
-> Ai fedeli del C’hi++ è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (gli scienziati non sono infallibili: sono gli stessi che avevano visto dei canali su Marte) che ci sarà un momento in cui l’espansione dell’Universo terminerà e che tutto ciò che esiste tornerà a riunirsi nell’Uno primigenio
+> Ai fedeli è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (...) che ci sarà un momento in cui l’espansione dell’Universo terminerà e che tutto ciò che esiste tornerà a riunirsi nell’Uno primigenio
 
 Il secondo dogma del C’hi++ sono quelli che il Maestro chiama *I Post-It*, ovvero:
 
-> una memoria persistente dell’Universo che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espanzione/contrazione; qualcosa di simile all’inconscio collettivo di Jung o ai *Vāsanā* dell’Induismo
+> una memoria persistente dell’Universo che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione/contrazione; qualcosa di simile all’inconscio collettivo di Jung o ai *Vāsanā* dell’Induismo
+
+Così come la Comunità scacchistica mantiene memoria dell'esito delle partite giocate e, in base a quanto successo in passato, ipotizza nuove strategie per il futuro, l'Universo, grazie ai *Post-It*[^post-it] “ricorda” ciò che è successo nei precedenti cicli di esistenza e, in base a questa conoscenza, può ripetere scelte che si sono dimostrate positive o cambiare quelle che hanno dato esiti fallimentari[^umani].
+Dato che i *Post-It* sono per definizione *meta-fisici* (tutto ciò che è fisico verrà annichilito al termine di ogni ciclo di esistenza e rigenerato all'inizio del seguente), non se ne può dimostrare l'esistenza, ma solo imporli per fede.  
+Oltre questi due dogmi, gli altri due elementi meta-fisici del C'hi++ sono: l'*Annosa Dicotomia* e l'Amore.  
+<br />
+L'*Annosa Dicotomia* fra ciò che desideriamo e ciò di cui abbiamo bisogno[^annosa], sodale dell'Entropia, è la forza che spinge a compiere scelte in base a motivazioni contingenti, di cui quasi sempre ci si pente.
+È l'Annosa Dicotomia che causa la deflagrazione dell'Uno ed è sempre lei, nell'allegoria biblica del medesimo evento, il serpente che spinge Adamo ed Eva ad assaggiare i frutti dell'albero della conoscenza, con conseguente allontanamento dal *Pairidaēza*.  
+L'*Amore*[^amore], di contro, è la forza con cui l'Universo spinge gli esseri viventi ad assolvere al loro ruolo, quale che esso sia.  
+
+> l’amore è una una bomba a tempo che viene inserita di nascosto nel tuo software, per spingerti a fare la cosa giusta quando arriverà il tuo momento.
+
+L'Amore non causa solo l'inizio di nuove vite, ma anche la fine di altre.
+Per il C'hi++, ciascuno di noi è l’istanza di una classe che è stata chiamata a vivere per svolgere un determinato compito. 
+Quando il nostro compito sarà terminato, così come gli oggetti di un programma, dovremo essere rimossi dalla memoria per non occupare inutilmente delle risorse del sistema. 
+L’Amore può servire anche a questo: così come ha generato nei nostri genitori l’interesse necessario a causare la nostra nascita, molto spesso genera in noi un interesse che causa le condizioni necessarie alla nostra morte.
+Tutto ciò è riassunto nel precetto:
+
+> Amiamo ciò che ci ucciderà (se tutto va bene)
+
+## Versionamento e portabilità del codice
 
 
+
+[^spazio]: E, sia detto per inciso, si restringono, “curvando” lo spazio..
 
 [^poe]: *Elettricità*, per Poe, che scriveva dieci anni prima di Clausius.
 
-[^etica]: Qui e altrove attribuisco a *etica* e *morale* lo stesso rapporto che c'è fra *strategia* e *tattica* - o fra una *classe* e un *oggetto*.
+[^etica]: Qui e altrove attribuisco a *etica* e *morale* lo stesso rapporto che c'è fra *strategia* e *tattica*  o fra una *classe* e un *oggetto*: la prima è unica e invariante e serve da modello per la seconda, che è plurima e transeunte.
 
-<!-- 
+[^post-it]: Sto valutando l'ipotesi di cambiare il nome in *cookies* per renderli *vendor-independent*.  
 
-<br />   
-## Capitoli
-<br />   
-**Prologo**  
-*Una breve auto-biografia - L'incontro con il Maestro - Il dovere del programmatore.*
-<br />    
-**Incipit**  
-*I libri sono stupidi - Differenza fra la via e la direzione - Consigli per la conduzione di una canoa - La verità è semplice - Ciò che le religioni non dicono.*
-<br />     
-**Mitopoietica del C'hi++**  
-*Il diario del Maestro Canaro - L'influenza dell'Annosa Dicotomia - La dottrina del maestro Canaro - La decadenza del C++.*. 
-<br />     
-**Il buon programmatore**  
-*Le principali discipline dell’informatica - Come opera il buon programmatore - La differenza fra un sessuologo e un pornodivo - Cosa facevano i paranoici prima dell'informatica.*
-<br />     
-**I sistemi di numerazione**  
-*Come contano gli alieni esadattili - Gli antichi Romani e lo zero - L'empietà del sistema ternario bilanciato - La codifica RGB - Quanti sono i fiammiferi.*
-<br />   
-**I linguaggi di programmazione**  
-*Cosa disse Brian Kernigan - Un computer è come una nave - Come tornare al tuo albergo in Cina - I paradossi sono la crittografia di Dio - PacMan non paga le tasse.*
-<br />   
-**Il C++**   
-*Essere come il C++ - L’astrazione dei dati, la programmazione a oggetti e la monta equina - Un buon programmatore non si accontenta - La differenza fra C e C++, secondo Stroustrsup.*
-<br />   
-**I commenti**  
-*I commenti come la letteratura - Un anticipo sui Post-It.*
-<br />   
-**I tipi di dato**  
-*L'Universo è fatto di spazioni - Il Mondo ha la natura dell’Arte - René Guenon aveva ragione - Perché la luce non può andare più veloce.*
-<br />   
-**Struttura dei programmi C++**  
-*La funzione main del C’hi++ - Le forze che muovono l'Universo: Gravità, Entropia e Annosa Dicotomia - Chi creato l’Universo - Cosa dice quel senza-Dio di Dawkins.*
-<br />   
-**Gli operatori**  
-*I concetti di vero e di falso sono frutto di un arbitrio - William James ha ragione - Fama, successo e prestigio - Le certification authority etiche - Affinità fra le persone per bene e i malandrini.*
-<br />   
-**Il preprocessore**  
-*Valori entropici e valori gravitazionali - La pornografia per il Giudice Potter Steward - L’amore è una backdoor - Il Cielo non è interessato alla tua felicità - L'obbligo di ringraziare.*
-<br />   
-**La memoria**  
-*La gestione della memoria - Il rapporto degli esseri umani con l'operatore delete - Le Cinque Fasi di elaborazione del lutto della Società moderna - Un precetto sull'amore.*
-<br />   
-**Le funzioni**  
-*Un suggerimento di Jacopone da Todi - Il problema dei romanzi - Le regole di vita di Myamoto Musashi - La Verità è una modella - La Via del carpentiere.*
-<br />   
-**Istruzioni condizionali**  
-*Come decidere cosa è giusto e cosa no - I roghi, prima e dopo il 6 Giugno del 1945 - L'importanza del pentimento - Perché Nansen potè tagliare in due il gatto.*
-<br />   
-**Istruzioni iterative**  
-*Scòpo delle religioni - I due dogmi del C'hi++ - Il versionamento del software e delle filosofie - Gli scienziati non sono infallibili.*
-<br />   
-**Classi e oggetti**  
-*Affinità fra Platone e il C++ - Perché ciò che amiamo ci ucciderà (se tutto va bene) - Libero arbitrio e dissonanze nel Jazz - Cartesio non capiva nulla di serigrafia.*
-<br />   
-**L'ereditarietà**  
-*Il Karma delle funzioni virtuali - La Scienza è transeunte; il Mito è immortale - Perché 13 e 17 portano sfortuna - Cos'è l'Arte - Le regole dell'Ikebarba.*
-<br />   
-**Il polimorfismo**  
-*Una metafisica non metafisica - Bug noti delle religioni e degli esseri umani - Affinità fra il C'hi++ e le filosofie canoniche - Mappe topografiche e immagini da satellite - La Banda degli Onesti.*
-<br />   
-**Gli stream**  
-*Problemi esistenziali del codice di esempio - Un hard-disk meta-fisico - Mezzo secolo di fallimenti ideologici - Etica degli Scacchi - John Lennon se l'è cercata.*
-<br />   
-**Il debug**  
-*Gli errori sono inevitabili - Come correggere i bug della nostra vita - Chiedere scusa e chiedere perdòno - I fattori che influenzano il nostro comportamento - Non si devono adorare le parole.*
-<br />   
-**Epilogo**  
-*La morte del Maestro, nella finzione e nella realtà.*
+[^umani]: Gli attori, ovviamente, sono gli esseri viventi, non la materia inerte, anche se entrambi sono manifestazioni differenti di una stessa energia.
 
--->
+[^annosa]: Utilizzati per la prima volta questo concetto alla fine degli anni '90, nel racconto *L'Universo in C++*, che ho inserito nel capitolo *Mitopoietica del C++*.
+
+[^amore]: Inteso non come semplice infatuazione sensoriale, ma come uno stato più o meno persistente del nostro organismo in cui riteniamo che qualcuno o qualcosa sia più importante di noi stessi.
+

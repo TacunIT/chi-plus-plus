@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+
+
+
+
+<head>
+    <title>Struttura dei programmi C++ |  C'hi++
+</title>
+    <meta charset="utf-8" />
+    <link      rel="canonical"          href="https://chiplusplus.org/man/struttura-dei-programmi" />
+    <link      rel=icon                 href="https://chiplusplus.org/assets/img/favicon.ico" type=image/x-icon />
+    <link      rel="stylesheet"         href="https://chiplusplus.org/assets/fa/css/all.css" />
+    <link      rel="stylesheet"         href="https://chiplusplus.org/assets/css/styles.css" />        
+    <meta     name="viewport"        content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta     name="thumbnail"       content="https://chiplusplus.org/assets/img/chi-plus-plus.jpg" />
+    <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
+    <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:url"          content="https://chiplusplus.org/man/struttura-dei-programmi" />
+    <meta property="og:type"         content="website" />
+    <meta property="og:title"        content="Struttura dei programmi C++" />
+    <meta property="og:description"  content="La funzione main del C’hi++ - Le forze che muovono l'Universo: Gravità, Entropia e Annosa Dicotomia - Chi creato l’Universo - Cosa dice quel senza-Dio di Dawkins." />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image"        content="https://chiplusplus.org/assets/img/og-img/struttura-dei-programmi.jpg" />
+    <meta property="fb:app_id"       content="" /><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-159394431-1');
+</script></head>
+<body class="manuale capitolo ">
+    <div class="page capitolo">
+        <header><nav class="menu-top">
+    
+    <a title="Vai a: I tipi di dato" 
+        
+        href="/man/tipi-di-dato" 
+        class="left"
+        
+       >
+       <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+    
+    <a href="/" class="center" title="Torna alla home-page">
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a href="/man/indice" class="center" title="Torna all'indice del Manuale">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+
+    <a title="Vai a: Gli operatori" 
+        
+        href="/man/operatori" 
+        
+        class="right" 
+        >
+        <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+    </a>
+    
+</nav>
+</header>
+        <main class="corpo pubblicato">
+        
+            <h1><a href="#dottrina">
+                Struttura dei programmi C++</a>
+            </h1>
+            <blockquote class="motto">Wer den Computer will verstehen,<br />Muss in Computers Lande gehen</blockquote>
+            <section class="testo">
+                <p>La libertà sintattica e la concisione dei costrutti sono la caratteristica principale del C++.</p>
+
+<p>Il C++, come tutti i linguaggi, ha una sua sintassi che definisce gli elementi del codice e il loro utilizzo all’interno dei programmi.
+Negli esempii che abbiamo visto finora, ho utilizzato alcuni di questi elementi senza spiegarti precisamente quale sia il loro ruolo, perché volevo darti un quadro d’insieme delle caratteristiche del linguaggio.
+Un po’ come quando arrivi a una festa e ti presentano gli altri invitati uno dietro l’altro e alla fine l’unica cosa che ti ricordi è il decolleté delle signore.
+Adesso però, dobbiamo fare un passo indietro ed esaminare questi elementi a uno a uno, cominciando da quello che è l’elemento principale di ciascun programma C++, ovvero la funzione <code>main</code>.</p>
+
+<pre><code>int main(int argc, char** argv)
+{    
+    return 0;
+}
+</code></pre>
+
+<p>Quello qui sopra è il più piccolo programma in C++ che tu possa scrivere.
+È anche il più inutile, però, perché non fa nulla.<br />
+L’esempio qui sotto è altrettanto inutile, ma un po’ più complesso:</p>
+
+<pre><code>/** 
+ * @file src/struttura-hello-world.cpp
+ * Esempio minimo di programma C++.
+ */
+ 
+#include &lt;iostream&gt;
+
+int main(int argc, char** argv)
+{    
+    std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+    return 0;
+}
+
+</code></pre>
+
+<p>Il suo output, come forse avrai intuito, è:</p>
+
+<pre><code>% g++ struttura-hello-world.cpp -o ../out/esempio
+% ../out/esempio 
+Hello, World!
+</code></pre>
+
+<p>La prima linea di codice:</p>
+
+<pre><code>#include &lt;iostream&gt;
+</code></pre>
+
+<p>non è un’istruzione, ma una direttiva per il preprocessore. 
+Il preprocessore è un programma che elabora il codice e lo prepara per la compilazione, ne parleremo 
+<a href="/man/preprocessore" class="xref">in seguito</a>.
+Per il momento, ti basta sapere che questa istruzione fa sì che nel codice venga incluso il file <code>iostream.h</code>, che contiene, fra le altre cose, la dichiarazione dello <em>stream</em> <code>cout</code>, utilizzato nell’unica istruzione del programma.<br />
+La seconda linea di codice:</p>
+
+<pre><code>int main(int argc, char** argv)
+</code></pre>
+
+<p>definisce la funzione <code>main</code>, specificando che avrà come valore di ritorno un <code>int</code> e due parametri: un intero e un puntatore a puntatori a <code>char</code>.
+Questi valori servono a gestire i parametri passati da riga di comando: l’intero <code>argc</code> (crasi di: <em>argument count</em>), specifica il numero di parametri presenti nella chiamata, nome del programma compreso, mentre il parametro <code>argv</code> (<em>argument vector</em>) è un array di puntatori a tutte le stringhe presenti nella linea di comando.<br />
+Il corpo della funzione è racchiuso in una coppia di parentesi graffe <code>{}</code>.
+L’istruzione:</p>
+
+<pre><code>std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+</code></pre>
+
+<p>scrive la stringa <code>Hello World!</code> sullo <em>stream</em> <code>std::cout</code> (<em>standard character output</em>), che solitamente corrisponde allo schermo del computer.
+L’operatore <code>&lt;&lt;</code>, in questo caso, notifica al sistema di inviare in output quanto si trova alla sua destra e torna una <em>reference</em> allo stream di output, in modo da poter essere ripetuto su una st­essa linea di codice, che è una forma più efficiente ed elegante di:</p>
+
+<pre><code>std::cout &lt;&lt; "Hello, World!" ;
+std::cout &lt;&lt; std::endl;
+</code></pre>
+
+<p>Infine, l’istruzione:</p>
+
+<pre><code>return 0;
+</code></pre>
+
+<p>torna il valore <code>0</code> al programma chiamante (di solito, la <em>shell</em> del computer) per indicare l’assenza di errori nell’elaborazione.
+Il programma seguente mette in pratica i concetti visti finora:</p>
+
+<pre><code>#include &lt;iostream&gt;
+
+#define NO_ERRORI     0
+#define NO_PARAMETRI  1
+
+int main(int argc, char** argv)
+{    
+    int errore = NO_ERRORI;
+    
+    /** Se c'è solo il nome del programma, errore */
+    if(argc &lt; 2) {
+        std::cerr &lt;&lt; "Specificare un parametro!" &lt;&lt; std::endl;
+        return NO_PARAMETRI;
+    }
+
+    /** Stampa tutti i parametri ricevuti */
+    for(int p=0; p &lt; argc; p++) {
+        std::cout &lt;&lt; *argv++ &lt;&lt; std::endl;        
+    }
+
+    return 0;
+}
+
+</code></pre>
+
+<p>Come ti ho detto, il C++ è un linguaggio <em>compilato</em>, quindi il codice, per poter essere eseguito, deve essere elaborato dal complilatore con il comando della <em>shell</em>:</p>
+
+<pre><code>% g++ struttura-argc-argv.cpp -o src/out/esempio
+</code></pre>
+
+<p>Il parametro <code>-o</code> permette di specificare il nome del file di output, in questo caso: <code>src/out/esempio</code>.
+Se non si definisce questo valore, il compilatore genera un file di nome <code>a.out</code>.<br />
+Il comando <em>shell</em>:</p>
+
+<pre><code>% src/out/esempio; echo $?                                  
+</code></pre>
+
+<p>è composto di due istruzioni, separate dal carattere <code>;</code>.
+La prima istruzione esegue il file compilato; la seconda stampa a video il suo valore di ritorno.
+Se eseguiamo il programma senza parametri, otteniamo un messaggio e il codice di errore <code>1</code>:</p>
+
+<pre><code>Specificare un parametro!
+1
+</code></pre>
+
+<p>Se invece eseguiamo il programma passandogli dei parametri, otteniamo questo:</p>
+
+<pre><code>% src/out/esempio un due tre; echo $?
+src/out/esempio
+un
+due
+tre
+0
+</code></pre>
+
+<hr id="coupling" />
+
+<p>Nessun programma degno di questo nome ha solo la funzione <code>main</code>, ma suddivide il suo lavoro in una serie di funzioni che svolgono compiti precisi e ben definiti.
+In un programma ben scritto, le funzioni presentano due caratteristiche, che gli anglosassoni e gli anglofili definiscono: <em>low coupling</em> e <em>high cohesion</em>.<br />
+Con il termine <em>accoppiamento</em> di due funzioni si intende la quantità di informazioni che la funzione <em>A</em> deve avere riguardo la funzione <em>B</em> per poterla utilizzare.
+Ciascuna funzione si aspetta di ricevere una serie ben definita di parametri: la funzione <code>raddoppiaStipendio</code>, che abbiamo visto prima, si aspetta di ricevere un solo parametro, di tipo <code>long</code>:</p>
+
+<pre><code>long raddoppiaStipendio(long stipendio);
+</code></pre>
+
+<p>mentre un’ipotetica funzione <code>scorporaIVA</code> potrebbe richiederne due; l’importo dello stipendio e l’aliquota IVA:</p>
+
+<pre><code>float scorporaIVA(long stipendio, float aliquota);
+</code></pre>
+
+<p>In entrambi questi casi, tutto ciò di cui ha bisogno una terza funzione per richiamare <code>raddoppiaStipendio</code> o <code>scorporaIVA</code> è la la loro <em>interfaccia</em>, ovvero il numero, il tipo e l’ordine dei parametri da passare.
+Ora immagina che un programmatore maldestro abbia scritto la funzione <code>facciQualcosa</code> che può compiere più azioni distinte, in base ai parametri ricevuti:</p>
+
+<pre><code>float facciQualcosa(long stipendio, int azione, float aliquota = 0)
+{
+    float valore = 0;
+    /** Differenzia l'azione in base al valore di azione */
+    if(azione == 1) {
+        valore = stipendio * 2;
+    } else if(azione == 2) {
+        valore = stipendio / ((100 + aliquota) / 100);
+    }
+    return valore;
+}
+</code></pre>
+
+<p>Per poter utilizzare questa funzione, non solo dobbiamo conoscere la sua interfaccia, ma dobbiamo anche sapere quali azioni corrispondono ai diversi valori del parametro <code>azione</code>.
+Questa è follia, <em>meshuggah</em>, perché, se un giorno l’autore la modificasse e decidesse che il valore <code>1</code> del parametro <code>azione</code> causa lo scorporo dell’IVA mentre il valore <code>2</code> causa il raddoppio dello stipendio, noi dovremmo modificare anche <em>tutte</em> le funzioni che l’hanno chiamata per adattarle alle nuove regole.
+Non solo perderemmo del tempo, ma se dimenticassimo di aggiornare una o più chiamate otterremmo un programma con un funzionamento errato.<br />
+Il <em>coupling</em> <!-- uso il termine inglese per evitare anfibologie con l'attività sessuale.. --> è come il colesterolo: più è basso, meglio è; quindi, per evitare errori, dobbiamo ridurlo, creando un <code>enum</code> a cui assegnare i possibili valori del parametro <code>azione</code>:</p>
+
+<pre><code>enum Azione { raddoppia, scorpora }; 
+</code></pre>
+
+<p>Come spesso avviene, una singola riga di codice ben scritto ci permette di risparmiare tempo e di ottenere del codice più robusto, perché l’effetto del parametro <code>azione</code>, in questo modo, sarà del tutto indipendente dal suo valore numerico:</p>
+
+<!-- @todo: verificare il codice -->
+<pre><code>enum Azione { raddoppia, scorpora }; 
+
+float facciQualcosa(long stipendio, Azione azione, float aliquota = 0)
+{
+    float valore = 0;
+    /** Agisce in base all'etichetta, non al valore */
+    if(azione == raddoppia) {
+        valore = stipendio * 2;
+    } else if(azione == scorpora) {
+        valore = stipendio / ((100 + aliquota) / 100);
+    }    
+    return valore;
+}
+</code></pre>
+
+<p>La funzione <code>facciQualcosa</code> ha anche un altro difetto progettuale, oltre all’alto accoppiamento: manca di coesione interna.
+In un programma ben scritto, ciascuna funzione deve avere solo una.. funzione:</p>
+
+<!-- @todo: verificare il codice -->
+<pre><code>inline long raddoppiaStipendio(long stipendio)
+{
+    return stipendio * 2;
+}
+
+inline float scorporaIVA(long stipendio, float aliquota)
+{
+    return (stipendio / ((100 + aliquota) / 100);
+}
+</code></pre>
+
+<p>Anche in un esempio così semplice, vedi bene che differenza ci sia, fra una funzione che può svolgere più azioni eterogenee e una funzione che svolge una singola azione, ben precisa.
+Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di dichiararla come <a href="/man/funzioni#inline" class="xref">inline</a>, aumentando la velocità di esecuzione del programma.</p>
+
+<hr id="dottrina" />
+
+<p>La funzione <code>main</code> del C’hi++ è quello che gli scienziati chiamano: <em>Big Bang</em>.
+Così come l’atmosfera è agitata dallo scontro di masse di aria calda e fredda, l’Energia dell’Universo è costantemente sottoposta all’azione contrapposta di due forze: <em>Gravità</em>, che tende ad accorpare tutta la materia nell’Uno primgenio ed <em>Entropia</em>, che al contrario, tende a dividere.
+Poe lo aveva capito. In: <em>Eureka</em>, usa il termine <em>Elettricità</em> invece di: <em>Entropia</em>, ma la contrapposizione che descrive è corretta.<br />
+Ciò che non è corretto (e non solo in Poe) è l’idea che l’espansione dell’Universo sia un evento unico.
+La vita dell’Universo è ciclica: quando è preponderante l’Entropia, l’Universo si espande, come in questo momento; quando “vince” la Gravità, l’Universo collassa su sé stesso e torna all’Uno.
+Ciò che evita la stasi in uno dei due punti estremi del ciclo — l’Uno e la morte termica — è una terza forza, che il Maestro Canaro chiamava: 
+<a href="/man/mitopoietica#annosa-dicotomia" class="xref"><em>l’annosa dicotomia fra ciò che desideriamo è ciò di cui abbiamo bisogno</em></a>. <br />
+Così come una scatola di mattoncini Lego contiene tutti gli edifici che hai costruito e che costruirai in futuro, nell’Uno primigenio è concentrata tutta l’Energia dell’Universo e quindi ogni essere animato o inanimato che sia mai esistito o che mai esisterà.
+La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo, che non può essere misurato perché non esistono eventi in base a cui farlo.<a id="non-tempo" class="nota" href="/man/note#non-tempo"></a> 
+Non ci sono né morte, né sofferenza, né malattia, né separazione; l’Uno è, di fatto, ciò che la maggior parte degli esseri senzienti descrive e auspica come un Universo perfetto.<br />
+L’Energia, inizialmente, è soddisfatta, ma a poco a poco l’appagamento per la raggiunta Unità scema e cresce invece il desiderio di qualcosa di diverso da quella cristallina perfezione.
+Così come di un vecchio amore si ricorda solo ciò che ci fa piacere ricordare, obliandone i difetti, l’Energia ripensa a quando l’Universo non era buio e vuoto, ma risplendeva della luce di innumerevoli stelle e si chiede se, in fondo, non sia quella, l’esistenza a cui ambisce, se non sia quello, in effetti, il Paradiso.<br />
+Ha una chiara memoria degli errori e dei dolori delle passate esistenze (è stata lei, incarnata negli spazioni ad averli commessi), ma, come uno scacchista che debba giocare nuovamente una determinata apertura, pensa che stavolta andrà meglio, che non ripeterà gli sbagli fatti in precedenza e questo desiderio di un riscatto genera il <em>Big Bang</em>.
+L’Energia disintegra l’enorme buco nero in cui si era rannicchiata e si espande di nuovo nell’Universo, dando massa agli spazioni e generando la materia.
+L’Era della Gravità finisce e comincia una nuova Era dell’Entropia; qualcosa di molto simile a quello che trovi descritto nella <em>Bhagavad-Gita</em>:</p>
+
+<blockquote>
+  <p>I cicli cosmici sono periodi temporali chiamati Manvantara, suddivisi al proprio interno in quattro ere o Yuga, ciascuna caratterizzata da una particolare qualità dell’esistenza. Si tratta di un ritorno periodico a condizioni di vita non uguali ma analoghe, da un punto di vista qualitativo, a quelle dei cicli precedenti, una successione di quattro ere che ricorda, su scala ridotta, l’alternarsi delle quattro stagioni.<a class="nota" href="/man/note#cicli" id="cicli"></a></p>
+</blockquote>
+
+<p>Anche la Genesi biblica può essere considerata un’allegoria della cosmogonia spazionista (o viceversa): il Paradiso è l’Uno primigenio, mentre Adamo (<em>Puruṣa</em>) ed Eva (<em>Prakṛti</em>) sono ciò che ne causa la disgregazione, generando un Universo imperfetto e doloroso, aiutati dal <em>διάβολος</em>, ovvero da colui che <em>separa</em> o <em>scaglia attraverso</em>, altrimenti noto come: <em>Luci-fero</em>.<br />
+In ottica spazionista, la domanda:</p>
+
+<blockquote>
+  <p>Perché, se Dio è buono, nell’Universo che ha creato esistono il male e il dolore?</p>
+</blockquote>
+
+<p>non ha senso, perché non è Dio ad aver creato l’Universo, ma il Diavolo, così come sostenevano i Barbelognostici. 
+<!-- @todo - rivedere Cosmogonie gnostiche --></p>
+
+<hr />
+
+<p>Una volta, un discepolo chiese al Maestro Canaro come fosse possibile che l’Energia dell’universo avesse dei sentimenti o delle aspirazioni e se questa auto-coscienza non contrastava con l’idea che il C’hi++ sia una metafisica priva di elementi metafisici. 
+Il Maestro Canaro rispose che il discepolo aveva ragione (un modo ellittico per dire che era un idiota). 
+A lui piaceva credere che fosse così perché era un vecchio sentimentale, ma il discepolo era libero di pensare che fosse solo un artificio retorico, sfruttato per rendere più coinvolgente la narrazione. 
+Spiegò poi che l’unica cosa in cui era necessario credere, anche in assenza di prove, è che l’Universo, alla fine di questa fase di espansione, sarebbe tornato a collassare nell’Uno.<br />
+A quel punto, i casi sarebbero stati due: o sarebbe rimasto Uno per il resto del Tempo (ipotesi lecita, ma noiosa) oppure sarebbe esploso di nuovo, dando vita a un nuovo Universo.
+Anche in questo caso le ipotesi sarebbero state due.
+La prima è che un Big Bang possa avvenire solo in determinate condizioni e che quelle condizioni portino necessariamente a un Universo identico a quello come noi lo conosciamo adesso; quindi, se l’Uno esploderà di nuovo, ricomincerà tutto da capo. 
+La seconda ipotesi è che ogni <em>Big Bang</em> avviene in circostanze e con modalità specifiche e che quindi, se l’Uno esploderà di nuovo, nascerà un nuovo Universo, che potrà avere pochi o nessun punto di contatto con quello corrente.<br />
+Il Maestro Canaro disse che la prima ipotesi era possibile, ma poco probabile e che quindi avremmo dato per scontato che fosse la seconda, quella corretta: «Tanto, non cambia niente: se il tempo che abbiamo a disposizione per far esplodere e implodere l’Universo è infinito, per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali è  impossibile che la cosa o prima o poi non avvenga.
+Come dice quel senza-Dio di Dawkins:</p>
+
+<blockquote>
+  <p>Dato un tempo infinito o un numero di opportunità infinite, è possibile qualsiasi cosa. <a class="nota" href="/man/note#dawkins-tempo" id="dawkins-tempo"></a></p>
+</blockquote>
+
+<p>In base allo stesso principio, dando per scontato che o prima o poi questo Universo tornerà a manifestarsi, è del tutto lecito pensare — non per fede, ma in base a un banale calcolo probabilistico — che anche ciò che c’è in esso possa o prima o poi tornare a essere. 
+Noi compresi».</p>
+
+            </section>
+        
+        </main>
+        <footer>
+    <nav>
+        
+        
+        <a href="/man/tipi-di-dato" 
+           title="Vai a: I tipi di dato" 
+           class="left">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        
+        
+        <a href="#top" 
+           title="Torna all'inizio" >
+           <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        
+        <a href="/man/operatori" 
+           title="Vai a: Gli operatori" 
+           class="right" >
+                <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+                
+
+    </nav>
+
+</footer>
+
+    </div>
+  </body>
+</html>
