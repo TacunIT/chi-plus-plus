@@ -14,7 +14,7 @@ Le direttive al preprocessore sono la caratteristica principale del C++.
 
 Negli esempi precedenti abbiamo visto alcune istruzioni particolari, perché hanno un carattere `#` all'inizio e non hanno un carattere `;` alla fine:
 
-``` 
+```
 #include <iostream>
 
 #define NO_ERRORI    0
@@ -46,14 +46,14 @@ Questo esempio utilizza due forme distinte per la direttiva `include`:
 
 ```
 #include <iostream>
-#include "colore.h" 
+#include "colore.h"
 ```
 
 La prima forma serve a includere i file di sistema, come, appunto, `iostream`, che contiene le definizioni degli *stream* standard del C++; la seconda forma si utilizza per i file specifici dell'applicazione; nel nostro caso, `colore.h`.  
 I file di include possono includere a loro volta altri file; per esempio, `colore.h` include `iostream`, perché utilizza lo *stream* `cout`.
 Anche il nostro codice di esempio, però, include `iostream` e questo potrebbe causare un errore di compilazione se il precompilatore effettuasse due volte l'inclusione, perché sarebbe come se dichiarassimo due volte la stessa funzione.
 Per questo motivo, all'inizio del nostro file di include (ma anche di `iostream`) troviamo un altro tipo di direttive al preprocessore, le <i>direttive condizionali</i>:
-   
+
 ```
 #ifndef _CLASS_COLORE
 #define _CLASS_COLORE 1
@@ -138,7 +138,7 @@ Unite alle direttive condizionali, le definizioni di costanti stringa ti permett
     #define  STR_RED    "rosso"
     #define  STR_GREEN  "verde"
     #define  STR_BLUE   "blu"
-#else 
+#else
     #define  STR_RGB    "RGB color"
     #define  STR_RED    "red"
     #define  STR_GREEN  "green"
@@ -188,7 +188,7 @@ RGB color: green
     #define  STR_DEC    "decimale"
     #define  STR_ARRAY  "array"
     #define  STR_VERDE  "verde"
-#else 
+#else
     #define  STR_BOOL   "boolean"
     #define  STR_CHAR   "character"
     #define  STR_INT    "integer"
@@ -215,7 +215,7 @@ colore RGB: verde
 Il preprocessore può essere sfruttato anche per creare delle *macro-istruzioni* che possano essere utilizzate con tipi diversi di dati.
 
 ```
-#define MAGGIORE(a,b) ((a > b) ? a : b) 
+#define MAGGIORE(a,b) ((a > b) ? a : b)
 ```
 
 Quando il precompilatore trova una chiamata alla macro MAGGIORE, all'interno del codice, la sostituisce con l'istruzione corrispondente, rimpiazzando i parametri `a` e `b` con le variabili contenute nella chiamata.    
@@ -241,14 +241,14 @@ Le macro del precompilatore sono eseguite prima che il codice sia compilato, qui
 ```
 <!-- adattamento di: https://en.cppreference.com/w/cpp/preprocessor/replace -->
 
-Questo esempio fa uso di due operatori proprii del preprocessore: 
+Questo esempio fa uso di due operatori proprii del preprocessore:
 
-- l'operatore di *stringification* `#` (mi rifiuto di tradurre questo termine), che converte il parametro successivo in una stringa, aggiungendogli i doppi apici ed aggiungendo dei *backlslash* a eventuali doppi apici presenti nel parametro; 
+- l'operatore di *stringification* `#` (mi rifiuto di tradurre questo termine), che converte il parametro successivo in una stringa, aggiungendogli i doppi apici ed aggiungendo dei *backlslash* a eventuali doppi apici presenti nel parametro;
 - l'operatore di *concatenazione* `##`, che unisce in un'unica stringa il parametro precedente e successivo.  
 Se compili ed esegui questo codice, ottieni:
 
 ```
-> g++ src/cpp/preprocessore-hashtag.cpp -o src/out/esempio 
+> g++ src/cpp/preprocessore-hashtag.cpp -o src/out/esempio
 > src/out/esempio                                         
 12
 PippoPluto
@@ -259,20 +259,20 @@ Questo, come vedremo <a href="/man/polimorfismo#funzioni-template" class="xref">
 
 <hr id="dottrina">
 
-Le tre forze che regolano la vita dell'Universo &mdash; Gravità, Entropia e Annosa Dicotomia &mdash; non influenzano solo la fisica, ma anche l'etica. 
+Le tre forze che regolano la vita dell'Universo &mdash; Gravità, Entropia e Annosa Dicotomia &mdash; non influenzano solo la fisica, ma anche l'etica.
 Esistono valori che potremmo definire: “entropici” e valori “gravitazionali”.
 I valori legati all'Entropia sono quelli che tendono a disgiungere e a esaltare il singolo rispetto alla massa, come la libertà, la ricchezza, il successo o la fama; i valori legati alla Gravità sono quelli che, al contrario, uniscono gli individui, come l'*égalité* e la *fraternité* dei Francesi, ma senza la ghigliottina.  
 <a href="/man/operatori#effimeri" class="xref">Ieri</a> abbiamo visto come i valori legati all'Entropia siano effimeri &mdash;  non potrebbe essere altrimenti, per una forza che tende alla disgregazione &mdash; e di come chi li persegua sia spesso vittima dell'Annosa Dicotomia, ma questo non vuol dire che li si debba ripudiare.
 Non fare l'errore di pensare che ci sia una forza buona e una cattiva, come in *Star Wars*: sia la Gravità che l'Entropia sono necessarie per una corretta evoluzione dell'Universo.
 Il Maestro Canaro, che anche in tarda età amava molto andare in bicicletta, una volta mi disse che l'equilibrio dell'Universo è come l'equilibrio di un ciclista che percorra una strada sterrata in salita: non deve tenere il peso troppo in avanti, perché altrimenti la ruota posteriore perderebbe trazione e comincerebbe a slittare, ma non deve nemmeno tenere il peso troppo indietro, perché altrimenti la ruota anteriore si alleggerirebbe e non sarebbe più possibile sterzare.  
-Considerata la rispettabile quantità di cadute e contusioni collezionate dal Maestro Canaro nel corso delle sue escursioni in sella, ti consiglio di valutare solo il valore metaforico di questo insegnamento, ovvero che ci deve essere un bilanciamento fra Gravità ed Entropia, perché senza la Gravità, l'Universo è inutile, ma senza l'Entropia è noioso. 
+Considerata la rispettabile quantità di cadute e contusioni collezionate dal Maestro Canaro nel corso delle sue escursioni in sella, ti consiglio di valutare solo il valore metaforico di questo insegnamento, ovvero che ci deve essere un bilanciamento fra Gravità ed Entropia, perché senza la Gravità, l'Universo è inutile, ma senza l'Entropia è noioso.
 In questo momento, l'Universo è in fase di espansione sotto l'influsso dell'Entropia ed è quindi normale che ci sia una preponderanza di azioni tendenti alla separazione.
 Per mantenere l'equilibrio, quindi, bisogna incentivare le attività e i valori che tendono a riunire, come l'amore o l'arte.  
 Molte persone pensano che amore e arte siano dei concetti vaghi e aleatorii, ma solo perché ne fraintendono l'essenza, ritenendoli dei concetti auto-esplicativi, che non occorre definire; qualcosa di simile alla definizione di “*pornografia*” che diede il Giudice Potter Steward, a proposito del film *Les Amants* di Louis Malle:
 
 > I shall not today attempt further to define the kinds of material I understand to be embraced within that shorthand description; and perhaps I could never succeed in intelligibly doing so. But I know it when I see it, and the motion picture involved in this case is not that.<a class="nota" href="/man/note#steward" id="steward"></a>
 
-Questo approccio entropico/soggettivo, per quanto corretto nel caso di *Les Amants*, è chiaramente sbagliato in termini generali: tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente da chi le ascolta o le utilizza. 
+Questo approccio entropico/soggettivo, per quanto corretto nel caso di *Les Amants*, è chiaramente sbagliato in termini generali: tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente da chi le ascolta o le utilizza.
 Così come la parola: <i id="pesce">pesce</i>, per quanto banale, può non avere lo stesso valore per un biologo marino, un ecologista o per un pescatore, anche la parola *arte* può assumere significati diversi per un gallerista, per un artista o per un Papa.  
 È altrettanto sbagliata l'interpretazione entropico/romantica che comunemente si attribuisce alle parole: *amore* e *arte*.
 L'amore non è il sentimento vago che ha fatto la fortuna di poeti, musici e letterati, ma uno stato (più o meno persistente) del nostro organismo in cui riteniamo che qualcuno o qualcosa sia più importante di noi stessi.
@@ -281,18 +281,18 @@ Approfondiremo quest'ultimo concetto <a id="arte" href="/man/ereditarieta#arte" 
 
 <hr id="amore">
 
-Tutti noi agiamo in base a degli schemi di valori che determinano le nostre scelte. 
+Tutti noi agiamo in base a degli schemi di valori che determinano le nostre scelte.
 L'istinto di sopravvivenza, solitamente, ci spinge a porre la nostra persona al vertice di questa piramide, ma alle volte può capitarci di eleggere a nostro bene supremo qualcuno o qualcosa diverso da noi stessi.
 Quel senza Dio di Dawkins
-<!-- Utilizzo questo appellativo in maniera affettuosamente canzonatoria: Dawkins ha cambiato il mio modo di vedere il Mondo o, almeno, parte di esso. Credo solo che faccia un errore di generalizzazione, ritenendo tutti i fedeli dei fanatici e dei bigotti. --> 
+<!-- Utilizzo questo appellativo in maniera affettuosamente canzonatoria: Dawkins ha cambiato il mio modo di vedere il Mondo o, almeno, parte di esso. Credo solo che faccia un errore di generalizzazione, ritenendo tutti i fedeli dei fanatici e dei bigotti. -->
 ha dimostrato come l'attaccamento che noi proviamo per i nostri parenti sia direttamente proporzionale al numero di cromosomi che condividiamo con essi e che quindi può essere riconducibile al desiderio primordiale di perpetuare il nostro patrimonio genetico<a class="nota" href="/man/note#selfish" id="selfish"></a>.
 Questa interpretazione ribonucleica dell'amore funziona molto bene per i rapporti di sangue (padre/figlio, nonno/nipote, zio/nipote ecc.), ma non spiega l'amore fra mamma e papà o fra nonno e nonna &mdash; almeno, nelle famiglie che non ritengono l'incesto una pratica accettabile.  
 L'*egoismo dei geni* non spiega nemmeno altre forme d'amore come l'amor di Patria, che spinge i giovani a sacrificare la propria vita in guerra,
 <!--
 La maggior parte dei soldati parte controvoglia perché costretta, ma la storia - e sfortunatamente anche i cimiteri -, sono pieni di esempii di giovani che si sono arruolati volontariamente. Boccioni ed Hemingway, per esempio, ma anche diversi ciclisti.
 -->
-l'amore per il prossimo, che porta il missionario a sacrificare la sua vita per aiutare i malati o l'amore per una forma di arte, uno sport o un lavoro. 
-La realtà è che l'amore è una *backdoor*, o, meglio: una bomba a tempo, che viene inserita di nascosto nel tuo software, per essere certi che farai la cosa giusta quando arriverà il momento.  
+l'amore per il prossimo, che porta il missionario a sacrificare la sua vita per aiutare i malati o l'amore per una forma di arte, uno sport o un lavoro.
+La realtà è che l'amore è una *backdoor*, o, meglio: una bomba a tempo, che viene inserita di nascosto nel tuo software, per spingerti a fare la cosa giusta quando arriverà il tuo momento.    
 L'amore è l'unica forza allo stesso tempo gravitazionale ed entropica.
 Gravitazionale, perché unisce gli individui; entropica, perché li porta a riprodursi, replicando il loro DNA in qualcos'*altro*.
 Ti spinge a restare in casa, davanti a una tela, uno spartito o un foglio bianco o ti fa uscire, su una sella, una pista o con una macchina fotografica in mano.
@@ -308,7 +308,7 @@ Il Maestro Canaro una volta disse (ma non credo fosse farina del suo sacco):
 
 Questo è vero per tutti, uomini e donne.
 Il tuo DNA contiene i geni che hanno fatto nascere l'amore fra i tuoi genitori: occhi verdi, spalle larghe, un bel seno o magari un bel sedere<a class="nota" href="/man/note#orologiaio" id="orologiaio"></a>.
-Allo stesso modo, dentro di te potrebbe esserci qualcosa che ti spingerà a cercare e ad amare una persona in particolare, perché quella persona è importante per la tua vita. 
+Allo stesso modo, dentro di te potrebbe esserci qualcosa che ti spingerà a cercare e ad amare una persona in particolare, perché quella persona è importante per la tua vita.
 Quando (se) la incontrerai, avrai l'impressione di conoscerla da sempre e capirai che tutte le volte che ti sei innamorato, ti sei innamorato di lei, anche se non la conoscevi ancora.
 Sfortunatamente, questo non vuol dire che la vostra storia durerà o che vivrete per sempre felici e contenti, come nelle favole. Anzi.  
 Il Cielo non è interessato alla tua felicità, ma al miglioramento, che, come ogni forma di crescita, ha il suo prezzo.
