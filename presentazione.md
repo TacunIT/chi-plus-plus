@@ -19,17 +19,40 @@ G.Rodari, La Grammatica della fantasia
 
 *C'hi++* è un eccellente manuale di programmazione, un maldestro libro di filosofia e un vergognoso libro di fisica.  
 
-La struttura narrativa è quella del dialogo: all'interno di un monastero, un vecchio Maestro insegna a un giovane discepolo i principii della programmazione in C++ e lo inizia ai misteri una bizzarra metafisica chiamata *C'hi++*, che lui, a sua volta, ha appreso dal fondatore del loro Ordine: il Maestro Canaro.
+La struttura narrativa è quella del dialogo: all'interno di un monastero, un vecchio Maestro insegna a un giovane discepolo i principii della programmazione in C++ e parallelamente lo inizia ai misteri una bizzarra metafisica chiamata *C'hi++*, che lui, a sua volta, ha appreso dal fondatore del loro Ordine: il Maestro Canaro.
 <br />  
-Ho cominciato a elaborare questa teoria nell'estate del 2004: volevo vedere se fosse possibile dare una spiegazione dell'Universo e dell'esistenza senza tirare in ballo elementi metafisici.
+Ho cominciato a elaborare la teoria alla base di questo libro nell'estate del 2004: volevo vedere se fosse possibile dare una spiegazione dell'Universo e dell'esistenza senza tirare in ballo elementi metafisici.
 Era possibile: circa un anno dopo avevo una prima versione della mia teoria.
 Si trattava di un'ipotesi incompleta, perfettibile e altamente dilettantistica, ma, mi accorsi, era curiosamente compatibile con buona parte delle filosofie e delle religioni che conoscevo.  
 *Niente di strano*, pensai: *ho immaginato qualcosa di simile a ciò che conosco già*, ma per, sicurezza, decisi di verificare se le similitudini esistessero anche per le filosofie e le religioni che io ancora *non* conoscevo.
-Cominciai così uno studio *eclettico e confuso*, come direbbe Rodari, che mi permise di stabilire ulteriori similitudini con opere o teorie di cui, inizialmente, non avevo la minima cognizione.  
-Cominciai la stesura dei primi capitoli del manuale nel 2009, ma fu solo durante la Pandemia che riuscii a trovare il tempo per completare il lavoro che avevo iniziato.
-Il 25 Settembre del 2021 terminai la stesura dell'ultimo capitolo del libro; il 5 Febbraio del 2023 completai la prima revisione del testo, che lasciai lì a decantare per un po' di tempo per poterlo rileggere come se fosse stato scritto da un altro.
-<br />  
-La ragione per cui ho dedicato quasi vent'anni di vita a questo progetto è che 
+Cominciai così uno studio *eclettico e confuso*, come direbbe Rodari, che mi permise di stabilire ulteriori similitudini con opere o teorie di cui, inizialmente, non avevo la minima cognizione o che di cui conoscevo solo il nome.  
+Come Picasso, che vedeva il suo Cubismo nelle coperture mimetiche dei camion militari, trovavo 
+Questo era strano.
+Private degli orpelli e degli auspici non comprovabili (Paradiso, Nirvana e visioni ottimistiche in genere) tutte le metafisiche avevano un nocciolo di nozioni comuni, indipendentemente dal logo e dal periodo in cui erano state formulate.
+
+Iniziai la stesura dei primi capitoli del manuale nel 2009, ma fu solo durante la pandemia del 2020 che riuscii a trovare il tempo per completare il lavoro che avevo iniziato.
+Il 25 Settembre del 2021 terminai la stesura dell'ultimo capitolo del libro; il 5 Febbraio del 2023 completai la prima revisione del testo, che lasciai lì a decantare per un po' di tempo, in modo da poterlo rileggere come se fosse stato scritto da un altro.
+
+## Il movente
+ 
+Ci sono diverse ragioni che mi hanno spinto a dedicare quasi vent'anni di vita a questo progetto.
+Alcune di esse sono personali e sono disposto a confessarle solo davanti a una bottiglia di Amarone; quello che posso dire qui è che ho scritto *C'hi++* perché pensavo che andasse fatto e perché mi è servito a mettere ordine nel groviglio di idee e congetture che ho accumulato in questi anni. 
+Sono piuttosto soddisfatto del risultato che ho ottenuto, anche se è piuttosto diverso da quello che mi ero immaginato inizialmente. 
+Ovviamente vedo i limiti delle mie teorie e sono sicuro che ciò che ho scritto può essere migliorato. 
+Per questo motivo, ho deciso che *C'hi++* sarà una metafisica *open-source*, che chiunque potrà scaricare da un repository GitHub e modificare a suo piacimento:
+
+    https://github.com/TacunIT/chi-plus-plus
+
+Ciò che mi chiedo, qui e ora, è se il mio libro possa avere un pubblico.
+Trent'anni fa non avrei avuto dubbi al riguardo, perché la maggior parte degli informatici combinavano competenze tecniche con interessi umanistici, ma oggi le cose sono drasticamente cambiate: legge libri solo il 40% degli Italiani sopra i sei anni e, di questi, il 43% ne legge al massimo tre l'anno. 
+La lettura di libri è soprattutto prerogativa delle donne e dei giovani fra gli undici e i ventiquattro anni[^istat], che probabilmente leggono più per obblighi scolastici che per diletto.  
+Dato che gli informatici sono prevalentemente maschietti sopra i ventiquattro anni, che mercato può avere un libro di programmazione che parla anche del senso della vita?
+
+Di contro, il buon successo che ha avuto il Congresso mondiale di filosofia, tenutosi questa estate a Roma, ha riacceso le mie speranze
+
+
+
+
 
 ## L'eccellente manuale di programmazione
 
@@ -113,6 +136,11 @@ Tutto ciò è riassunto nel precetto:
 
 ## Conclusioni (era ora)
 
+<!--
+[^bio]: Mio padre era uno scrittore; io ho lavorato per un periodo non molto lungo, ma piacevole in una casa editrice romana; da qualche hanno ho unito due mie perversioni e scrivo di biciclette su alcune riviste on-line.
+-->
+
+[^istat]: Dati ISTAT. 
 
 [^poe]: *Elettricità*, per Poe, che scriveva dieci anni prima di Clausius.
 
