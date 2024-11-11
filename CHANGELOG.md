@@ -78,7 +78,7 @@
   - Aggiunta citazione da Attar
 
 ## 0.30.55 (April 08, 2022)
-  - - aggiunta nota sul Sakoku - corretto link a Binario su canaro.net
+  - aggiunta nota sul Sakoku - corretto link a Binario su canaro.net
   - Merge branch 'generazione-ebook' into redazione
 
 ## 0.30.54 (April 03, 2022)
@@ -846,7 +846,6 @@
 - Modificato il nome dei file sorgenti per capitolo struttura programmi
 - Corretto doppio apice nelle intestazioni della pagina
 - Aggiuto A per Pound
-
 
 ## 0.13.0 (July 12, 2020)
   - Completata la prima stesura dell'Epilogo
