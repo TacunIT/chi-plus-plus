@@ -21,9 +21,9 @@ G.Rodari, La Grammatica della fantasia
 *C'hi++* è un eccellente manuale di programmazione, un maldestro libro di filosofia e un vergognoso libro di fisica.  
 
 Il suo fine è di spiegare il significato dell'Esistenza nei termini dell'informatica, creando un parallelo fra le regole note del software e le regole ignote dell'Universo in cui viviamo.
-Questa miscela di spiritualità e tecnologia è presente sia nel nome “C'hi++”[^chi]  sia nel modo in cui verrà gestita l'evoluzione della disciplina: lo stesso che viene utilizzato per il software *open-source*.
+Questa miscela di spiritualità e tecnologia è presente sia nel nome “C'hi++”[^chi],  sia nel modo in cui verrà gestita l'evoluzione della disciplina: lo stesso che viene utilizzato per il software *open-source*.
 Contrariamente ad altre ipotesi sullo stesso argomento, infatti, *C'hi++* non si propone come una spiegazione assoluta e definitiva del senso della vita, ma come un modello incompleto e perfettibile.  
-La struttura narrativa è quella del dialogo: all'interno di un monastero, un vecchio Maestro insegna a un giovane discepolo i principii della programmazione in C++ e parallelamente lo inizia ai misteri una bizzarra metafisica chiamata: “C'hi++”, che lui, a sua volta, ha appreso dal fondatore del loro Ordine: il Maestro Canaro.
+La forma narrativa è quella del dialogo: all'interno di un monastero, un vecchio Maestro insegna a un giovane discepolo i principii della programmazione in C++ e parallelamente lo inizia ai misteri una bizzarra metafisica chiamata: “C'hi++”, che lui, a sua volta, ha appreso dal fondatore del loro Ordine: il Maestro Canaro.
 
 ## L'eccellente manuale di programmazione
 
@@ -54,7 +54,7 @@ C'è modo di correggere questo difetto?
 
 ## Il maldestro libro di filosofia
 
-La storia recente ci insegna che *Il cielo stellato sopra di me, e la legge morale dentro di me* non possono garantire - da soli - il vivere civile, dato che la morale dentro *Immanuel* Kant non è uguale a quella dentro *Eva* Kant, anche se hanno lo stesso cognome.
+Come spiega il Maestro nel capitolo dedicato agli *stream*, *Il cielo stellato sopra di me, e la legge morale dentro di me* non possono garantire - da soli - il vivere civile, dato che la morale dentro *Immanuel* Kant non è uguale a quella dentro *Eva* Kant, anche se hanno lo stesso cognome.
 Se vogliamo che i giovani, sui mezzi pubblici, si alzino per lasciare il posto alle donne incinte e agli anziani, abbiamo bisogno di regole etiche[^etica] condivise e condivisibili, anche se, per formularle, dovremo lavorare di fantasia, assumendoci il rischio di affermare cose non vere.  
 Così come il linguaggio C++ è un'evoluzione del linguaggio C, il C'hi++ è un'evoluzione dello Spazionismo, a cui aggiunge quel numero minimo di dogmi e di elementi metafisici necessari per dare un senso alla nostra esistenza.
 Il primo dogma del C'hi++, necessario per garantire coerenza interna alla dottrina, riguarda la ciclicità dell'Universo: 
@@ -89,14 +89,14 @@ Quella che elaborai era un'ipotesi incompleta, perfettibile e altamente dilettan
 Per sicurezza, però, decisi di verificare se le similitudini esistessero anche per le filosofie e le religioni che io ancora *non* conoscevo.
 Cominciai così uno studio eclettico e confuso che mi permise di stabilire numerose altre similitudini con opere o teorie di cui, inizialmente, non avevo la minima cognizione o che di cui conoscevo solo il nome.  
 Questo era strano.
-Apparentemente, private degli orpelli e degli auspici non comprovabili (Paradiso, Nirvana e visioni ottimistiche in genere) tutte le metafisiche avevano un nocciolo di nozioni comuni, indipendentemente dal logo e dal periodo in cui erano state formulate.
+Apparentemente, private degli orpelli e degli auspici non comprovabili (Paradiso, Nirvana e visioni ottimistiche in genere) tutte le metafisiche avevano un nocciolo di nozioni comuni, indipendentemente dal luogo e dal periodo in cui erano state formulate.
 Valeva la pena di approfondire la cosa, se non altro per mettere ordine nel groviglio di idee e congetture che avevo accumulato fino ad allora.  
 [perché un manuale]  
 Iniziai la stesura dei primi capitoli nel 2009, ma fu solo durante la pandemia del 2020 che riuscii a trovare il tempo per completare il lavoro che avevo iniziato.
 
 ## Conclusioni (era ora)
  
-Ho completato la prima revisione del testo il 5 Febbraio 2023, ma non ho ancora inviato *C'hi++* a nessun editore.
+Ho chiuso la prima revisione del testo il 5 Febbraio 2023, ma non ho ancora inviato *C'hi++* a nessun editore.
 Non per paura di un rifiuto[^pirsig], ma perché fino a qualche tempo fa ero convinto che un libro così non avesse un pubblico.  
 Trent'anni fa non mi sarei fatto un simile scrupolo, perché la maggior parte degli informatici combinava competenze tecniche con interessi umanistici, ma oggi le cose sono drasticamente cambiate: legge libri solo il 40% degli Italiani sopra i sei anni e, di questi - perlopiù donne e giovani fra gli undici e i ventiquattro anni - il 43% ne legge al massimo tre l'anno[^istat].  
 Dato che gli informatici sono prevalentemente maschietti sopra i ventiquattro anni, che mercato mi posso aspettare che abbia, un libro di programmazione che parla anche del senso della vita?  
