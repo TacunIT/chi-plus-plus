@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+
+
+
+
+<head>
+    <title>Il preprocessore |  C'hi++
+</title>
+    <meta charset="utf-8" />
+    <link      rel="canonical"          href="https://chiplusplus.org/man/preprocessore" />
+    <link      rel=icon                 href="https://chiplusplus.org/assets/img/favicon.ico" type=image/x-icon />
+    <link      rel="stylesheet"         href="https://chiplusplus.org/assets/fa/css/all.css" />
+    <link      rel="stylesheet"         href="https://chiplusplus.org/assets/css/styles.css" />        
+    <meta     name="viewport"        content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta     name="thumbnail"       content="https://chiplusplus.org/assets/img/chi-plus-plus.jpg" />
+    <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
+    <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:url"          content="https://chiplusplus.org/man/preprocessore" />
+    <meta property="og:type"         content="website" />
+    <meta property="og:title"        content="Il preprocessore" />
+    <meta property="og:description"  content="Valori entropici e valori gravitazionali - La pornografia per il Giudice Potter Steward - L’amore è una backdoor - Il Cielo non è interessato alla tua felicità - L'obbligo di ringraziare." />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image"        content="https://chiplusplus.org/assets/img/og-img/preprocessore.jpg" />
+    <meta property="fb:app_id"       content="" /><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-159394431-1');
+</script></head>
+<body class="manuale capitolo ">
+    <div class="page capitolo">
+        <header><nav class="menu-top">
+    
+    <a title="Vai a: Gli operatori" 
+        
+        href="/man/operatori" 
+        class="left"
+        
+       >
+       <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+    
+    <a href="/" class="center" title="Torna alla home-page">
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a href="/man/indice" class="center" title="Torna all'indice del Manuale">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+
+    <a title="Vai a: La memoria" 
+        
+        href="/man/memoria" 
+        
+        class="right" 
+        >
+        <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+    </a>
+    
+</nav>
+</header>
+        <main class="corpo pubblicato">
+        
+            <h1><a href="#dottrina">
+                Il preprocessore</a>
+            </h1>
+            <blockquote class="motto">Tutte le potenze, tranne quella di 1, crescono</blockquote>
+            <section class="testo">
+                <p>Le direttive al preprocessore sono la caratteristica principale del C++.</p>
+
+<p>Negli esempi precedenti abbiamo visto alcune istruzioni particolari, perché hanno un carattere <code>#</code> all’inizio e non hanno un carattere <code>;</code> alla fine:</p>
+
+<pre><code>#include &lt;iostream&gt;
+
+#define NO_ERRORI    0
+#define NO_PARAMETRI 1
+</code></pre>
+
+<p>Queste istruzioni sono delle <em>direttive al pre-processore</em> e possono essere di tre tipi:</p>
+
+<ul>
+  <li>direttive di inclusione;</li>
+  <li>definizioni e macro-istruzioni;</li>
+  <li>direttive condizionali.</li>
+</ul>
+
+<p>Le <em>direttive di inclusione</em> sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macro-istruzioni e dei simboli necessari per la corretta compilazione dei programmi.
+Questi elementi, per comodità, sono isolati all’interno di alcuni file, detti <em>file di include</em>.
+Quando il preprocessore incontra una direttiva <code>include</code>, la sostituisce con il contenuto del file a cui fa riferimento.
+Per esempio, se più di un programma dovesse usare la Classe <code>Colore</code> o la struttura <code>ColoreRGB</code> che abbiamo utilizzato nel programma che visualizza la dimensione dei <a href="/man/tipi-di-dato#principali"> principali tipi di dato del C++</a>, questi dovrebbero essere isolati in un file separato con estensione <code>.h</code>, a indicare che si tratta di un <em>header file</em>:</p>
+
+<pre><code>
+#ifndef _CLASS_COLORE
+#define _CLASS_COLORE 1
+
+#define  RGB_RED    0xFF0000
+#define  RGB_GREEN  0x00FF00
+#define  RGB_BLUE   0x0000FF
+
+#ifdef LANG_IT
+    #define  STR_RGB    "colore RGB"
+    #define  STR_RED    "rosso"
+    #define  STR_GREEN  "verde"
+    #define  STR_BLUE   "blu"
+#else 
+    #define  STR_RGB    "RGB color"
+    #define  STR_RED    "red"
+    #define  STR_GREEN  "green"
+    #define  STR_BLUE   "blue"
+#endif
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+/** Definisce un tipo di dato enumerato di nome RGB */
+enum RGB { red = RGB_RED, green = RGB_GREEN, blue = RGB_BLUE };
+
+/** Definisce una struttura che contiene un colore RGB e un nome */
+struct ColoreRGB {
+    RGB  valore;
+    const char* nome;        
+};
+
+/** 
+ * Definisce la classe Colore, che contiene una struct 
+ * coloreRGB e una funzione che ne mostra il nome.
+ */
+class Colore {
+public:
+    ColoreRGB coloreRgb;        
+    void nome_colore() {
+        cout &lt;&lt; STR_RGB &lt;&lt; ": ";
+        switch(coloreRgb.valore) {
+            case red  : cout &lt;&lt; STR_RED  ; break;
+            case green: cout &lt;&lt; STR_GREEN; break;
+            case blue : cout &lt;&lt; STR_BLUE ; break;
+        }
+        cout &lt;&lt; endl;
+    }        
+};
+
+#endif /* _CLASS_COLORE */
+
+</code></pre>
+
+<p>Il file verrebbe poi incluso nel codice dei programmi che ne fanno uso con una direttiva <code>include</code>:</p>
+
+<pre><code>/** 
+ * @file src/preprocessore-main.cpp
+ * Mostra i valori possibili per i principali tipi di dato del C++.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+
+#define LANG_IT
+#include "colore.h"
+#undef LANG_IT
+
+#ifdef LANG_IT
+    #define  STR_BOOL   "booleano"
+    #define  STR_CHAR   "carattere"
+    #define  STR_INT    "intero"
+    #define  STR_DEC    "decimale"
+    #define  STR_ARRAY  "array"
+    #define  STR_VERDE  "verde"
+#else 
+    #define  STR_BOOL   "boolean"
+    #define  STR_CHAR   "character"
+    #define  STR_INT    "integer"
+    #define  STR_DEC    "decimal"
+    #define  STR_ARRAY  "array"
+    #define  STR_VERDE  "green"
+#endif
+
+using namespace std;
+
+int main()
+{    
+    /** Dichiara una serie di variabili */
+    bool    booleano = false;
+    char    carattere = 'C';
+    int     intero = 1234567890;
+    float   decimale = 3.14;
+    char    array[] = "abcdefghilmnopqrstuvz";
+    RGB     enumerato = green;
+    
+    /** Crea un oggetto di tipo Colore */
+    Colore  colore;    
+    
+    /** 
+     * Assegna un valore ai dati della struttura coloreRgb 
+     * all'interno dell'oggetto di tipo Colore.
+     */
+    colore.coloreRgb.valore = enumerato;   
+    colore.coloreRgb.nome = STR_VERDE;     
+
+    /** Mostra il valore delle variabili */
+    cout &lt;&lt; setw(10) &lt;&lt; STR_BOOL  &lt;&lt; ": " &lt;&lt; booleano   &lt;&lt; endl;
+    cout &lt;&lt; setw(10) &lt;&lt; STR_CHAR  &lt;&lt; ": " &lt;&lt; carattere  &lt;&lt; endl;
+    cout &lt;&lt; setw(10) &lt;&lt; STR_INT   &lt;&lt; ": " &lt;&lt; intero     &lt;&lt; endl;
+    cout &lt;&lt; setw(10) &lt;&lt; STR_DEC   &lt;&lt; ": " &lt;&lt; decimale   &lt;&lt; endl;
+    cout &lt;&lt; setw(10) &lt;&lt; STR_ARRAY &lt;&lt; ": " &lt;&lt; array      &lt;&lt; endl;
+    
+    /** Mostra il nome del colore */
+    colore.nome_colore();
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Questo esempio utilizza due forme distinte per la direttiva <code>include</code>:</p>
+
+<pre><code>#include &lt;iostream&gt;
+#include "colore.h"
+</code></pre>
+
+<p>La prima forma serve a includere i file di sistema, come, appunto, <code>iostream</code>, che contiene le definizioni degli <em>stream</em> standard del C++; la seconda forma si utilizza per i file specifici dell’applicazione; nel nostro caso, <code>colore.h</code>.<br />
+I file di include possono includere a loro volta altri file; per esempio, <code>colore.h</code> include <code>iostream</code>, perché utilizza lo <em>stream</em> <code>cout</code>.
+Anche il nostro codice di esempio, però, include <code>iostream</code> e questo potrebbe causare un errore di compilazione se il precompilatore effettuasse due volte l’inclusione, perché sarebbe come se dichiarassimo due volte la stessa funzione.
+Per questo motivo, all’inizio del nostro file di include (ma anche di <code>iostream</code>) troviamo un altro tipo di direttive al preprocessore, le <i>direttive condizionali</i>:</p>
+
+<pre><code>#ifndef _CLASS_COLORE
+#define _CLASS_COLORE 1
+
+...
+
+#endif /* _CLASS_COLORE */
+</code></pre>
+
+<p>Le direttive condizionali sono:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>direttiva</th>
+      <th>valore</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>#if</code></td>
+      <td>se non zero</td>
+    </tr>
+    <tr>
+      <td><code>#ifdef</code></td>
+      <td>se definito</td>
+    </tr>
+    <tr>
+      <td><code>#ifndef</code></td>
+      <td>se non definito</td>
+    </tr>
+    <tr>
+      <td><code>#else</code></td>
+      <td>altrimenti</td>
+    </tr>
+    <tr>
+      <td><code>#elif</code></td>
+      <td>altrimenti se</td>
+    </tr>
+    <tr>
+      <td><code>#endif</code></td>
+      <td>fine del blocco condizionale</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Quando il preprocessore legge la prima direttiva nel file di include, verifica che sia definito un valore per <code>_CLASS_COLORE</code>.
+Se <code>_CLASS_COLORE</code> non ha un valore associato, il preprocessore esegue l’istruzione successiva, che gli assegna il valore 1, poi inserisce nel file chiamante tutto il codice fino all’istruzione <code>#endif</code>.
+Se invece <code>_CLASS_COLORE</code> ha già un valore associato perché è già stata inclusa da altri file, il preprocessore salta direttamente alla direttiva <code>#endif</code> senza riscrivere le tre dichiarazioni.</p>
+
+<p>Le istruzioni seguenti definiscono delle costanti numeriche per i colori dell’<code>enum RGB</code>:</p>
+
+<pre><code>#define  RGB_RED    0xFF0000
+#define  RGB_GREEN  0x00FF00
+#define  RGB_BLUE   0x0000FF
+</code></pre>
+
+<p>Le direttive al preprocessore permettono di definire anche delle costanti stringa:</p>
+
+<pre><code>#define  STR_GREEN  "verde"
+</code></pre>
+
+<p>Questa è una buona cosa, perché, come imparerai con l’esperienza, avere delle stringhe <em>hardcoded</em> all’interno dei programmi causa sempre dei problemi e soprattutto lega il tuo codice a un determinato linguaggio:</p>
+
+<pre><code>colore.coloreRgb.nome = "verde";     
+
+/** Mostra il valore delle variabili */
+cout &lt;&lt; "booleano:"    &lt;&lt; booleano   &lt;&lt; endl;
+cout &lt;&lt; "carattere:"   &lt;&lt; carattere  &lt;&lt; endl;
+cout &lt;&lt; "intero:"      &lt;&lt; intero     &lt;&lt; endl;
+cout &lt;&lt; "decimale:"    &lt;&lt; decimale   &lt;&lt; endl;
+cout &lt;&lt; "array:"       &lt;&lt; array      &lt;&lt; endl;
+</code></pre>
+
+<p>Questo può essere accettabile in un programma di esempio, ma è una scelta miope per un programma reale, specie se le stringhe si ripetono in contesti diversi:</p>
+
+<pre><code>char stringa[] = "ebete";
+
+...
+
+cout &lt;&lt; 6 &lt;&lt; "ebete" &lt;&lt; endl;
+
+</code></pre>
+
+<p>perché se la stringa dovesse variare (e stai pur certo che succederà), tu dovrai modificare tutte le righe di codice in cui compare.
+Al contrario, se definisci delle costanti per tutte le stringhe che utilizzi nel tuo codice, la correzione sarà unica:</p>
+
+<pre><code>#define STR_COME_SEI = "astuto";
+
+char stringa[] = STR_COME_SEI;
+
+...
+
+cout &lt;&lt; 6 &lt;&lt; STR_COME_SEI &lt;&lt; endl;
+
+</code></pre>
+
+<p>Unite alle direttive condizionali, le definizioni di costanti stringa ti permettono di avere un codice multi-lingua:</p>
+
+<pre><code>#ifdef LANG_IT
+    #define  STR_RGB    "colore RGB"
+    #define  STR_RED    "rosso"
+    #define  STR_GREEN  "verde"
+    #define  STR_BLUE   "blu"
+#else
+    #define  STR_RGB    "RGB color"
+    #define  STR_RED    "red"
+    #define  STR_GREEN  "green"
+    #define  STR_BLUE   "blue"
+#endif
+</code></pre>
+
+<p>La definizione della costante che determina la condizione (in questo caso, <code>LANG_IT</code>) può avvenire o nel codice del programma che include il file con definizioni:</p>
+
+<pre><code>#define LANG_IT
+#include "colore.h"
+</code></pre>
+
+<p>o direttamente da riga di comando, come parametro di compilazione:</p>
+
+<pre><code>% g++ ./cpp/preprocessore-main.cpp -D LANG_IT -o ./out/esempio
+% ./out/esempio                                               
+  booleano: 0
+ carattere: C
+    intero: 1234567890
+  decimale: 3.14
+     array: abcdefghilmnopqrstuvz
+colore RGB: verde
+% g++ ./cpp/preprocessore-main.cpp -D LANG_EN -o ./out/esempio
+% ./out/esempio                                               
+   boolean: 0
+ character: C
+   integer: 1234567890
+   decimal: 3.14
+     array: abcdefghilmnopqrstuvz
+RGB color: green
+</code></pre>
+
+<p>È possibile eliminare una <code>#define</code> precedentemente assegnata per mezzo della direttiva <code>#undef</code>:</p>
+
+<pre><code>#define LANG_IT
+#include "preprocessore-colore.h"
+#undef LANG_IT
+
+#ifdef LANG_IT
+    #define  STR_BOOL   "booleano"
+    #define  STR_CHAR   "carattere"
+    #define  STR_INT    "intero"
+    #define  STR_DEC    "decimale"
+    #define  STR_ARRAY  "array"
+    #define  STR_VERDE  "verde"
+#else
+    #define  STR_BOOL   "boolean"
+    #define  STR_CHAR   "character"
+    #define  STR_INT    "integer"
+    #define  STR_DEC    "decimal"
+    #define  STR_ARRAY  "array"
+    #define  STR_VERDE  "green"
+#endif
+</code></pre>
+
+<p>L’output di questo codice, sarà:</p>
+
+<pre><code>% g++ src/cpp/preprocessore-main.cpp -D LANG_EN -o src/out/esempio
+% ./src/out/esempio                                               
+   boolean: 0
+ character: C
+   integer: 1234567890
+   decimal: 3.14
+     array: abcdefghilmnopqrstuvz
+colore RGB: verde
+</code></pre>
+<hr id="macro-istruzioni" />
+
+<p>Il preprocessore può essere sfruttato anche per creare delle <em>macro-istruzioni</em> che possano essere utilizzate con tipi diversi di dati.</p>
+
+<pre><code>#define MAGGIORE(a,b) ((a &gt; b) ? a : b)
+</code></pre>
+
+<p>Quando il precompilatore trova una chiamata alla macro MAGGIORE, all’interno del codice, la sostituisce con l’istruzione corrispondente, rimpiazzando i parametri <code>a</code> e <code>b</code> con le variabili contenute nella chiamata.</p>
+
+<pre><code>/** 
+ * @file src/preprocessore-macro.cpp
+ * Esempio di macro-istruzione del precompilatore.
+ */
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+/**
+*  Definzione di una macro istruzione che
+*  torna il maggiore fra due parametri.
+*/
+#define MAGGIORE(a,b) ((a &gt; b) ? a : b) 
+
+int main ()
+{     
+    /** 
+     *  Il codice di queste istruzioni è sostituito
+     *  con quello associato alla macro:
+     *      
+     *      cout &lt;&lt; ((109 &gt; 122) ? 109 : 122) &lt;&lt; endl;    
+     *      cout &lt;&lt; ((0.4 &gt; 0.7) ? 0.4 : 0.7) &lt;&lt; endl;    
+     *      cout &lt;&lt; (('a' &gt; 'z') ? 'a' : 'z') &lt;&lt; endl;    
+    */
+    cout &lt;&lt; MAGGIORE(209, 122) &lt;&lt; endl;    
+    cout &lt;&lt; MAGGIORE(0.4, 0.7) &lt;&lt; endl;    
+    cout &lt;&lt; MAGGIORE('y', 'z') &lt;&lt; endl;    
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Se compili ed esegui questo codice, ottieni:</p>
+
+<pre><code>&gt; g++ src/cpp/preprocessore-macro.cpp -o src/out/esempio
+&gt; src/out/esempio                                         
+209
+0.7
+z
+</code></pre>
+
+<p>Le macro del precompilatore sono eseguite prima che il codice sia compilato, quindi possono essere sfruttate anche per creare delle funzioni ex-novo.</p>
+
+<pre><code>/** 
+ * @file src/preprocessore-hashtag.cpp
+ * Esempii di macro-istruzioni del precompilatore.
+ */
+
+#include &lt;iostream&gt;
+
+using namespace std;
+ 
+/** Definisce la macro-istruzione */
+#define FUNZIONE(nome, parametro) int fnz_##nome() { return parametro; }
+
+/** 
+*   Durante la precompilazone, questa macro 
+*   sarà sosituita dall'istruzione:
+*       
+*     int fnz_macro(12) { return 12; }
+*/
+FUNZIONE(macro, 12)
+ 
+/** 
+*   Definisce una macro che stampa un testo a video:
+*/
+#define OUTPUT(testo) cout &lt;&lt; testo &lt;&lt; endl;
+ 
+/** 
+*   Definisce una macro che unisce la stringa "Pippo"
+*   al parametro ricevuto in input:
+*/
+#define PIPPO "Pippo"
+#define APPENDI(nome) PIPPO # nome
+ 
+int main()
+{
+    /** 
+    *   La funzione fnz_macro ora non esiste, ma esisterà 
+    *   al termine della pre-compilazione del codice:
+    */
+    cout &lt;&lt; fnz_macro() &lt;&lt; endl;
+ 
+    /** Stampa una stringa a video usando le altre due macro */
+    OUTPUT(APPENDI(Pluto));               
+}
+
+</code></pre>
+<!-- adattamento di: https://en.cppreference.com/w/cpp/preprocessor/replace -->
+
+<p>Questo esempio fa uso di due operatori proprii del preprocessore:</p>
+
+<ul>
+  <li>l’operatore di <em>stringification</em> <code>#</code> (mi rifiuto di tradurre questo termine), che converte il parametro successivo in una stringa, aggiungendogli i doppi apici ed aggiungendo dei <em>backlslash</em> a eventuali doppi apici presenti nel parametro;</li>
+  <li>l’operatore di <em>concatenazione</em> <code>##</code>, che unisce in un’unica stringa il parametro precedente e successivo.<br />
+Se compili ed esegui questo codice, ottieni:</li>
+</ul>
+
+<pre><code>&gt; g++ src/cpp/preprocessore-hashtag.cpp -o src/out/esempio
+&gt; src/out/esempio                                         
+12
+PippoPluto
+</code></pre>
+
+<p>Le macro-istruzioni del precompilatore sono uno strumento molto potente, ma devono essere utilizzate con oculatezza perché, essendo generate <strong>prima</strong> che dell’avvio della compilazione, non sono sottoposte ad alcun controllo di congruenza per il tipo dei parametri utilizzati.
+Questo, come vedremo <a href="/man/polimorfismo#funzioni-template" class="xref">in seguito</a>, può generare degli errori molto subdoli e difficili da identificare.</p>
+
+<hr id="dottrina" />
+
+<p>Le tre forze che regolano la vita dell’Universo — Gravità, Entropia e Annosa Dicotomia — non influenzano solo la fisica, ma anche l’etica.
+Esistono valori che potremmo definire: “entropici” e valori “gravitazionali”.
+I valori legati all’Entropia sono quelli che tendono a disgiungere e a esaltare il singolo rispetto alla massa, come la libertà, la ricchezza, il successo o la fama; i valori legati alla Gravità sono quelli che, al contrario, uniscono gli individui, come l’<em>égalité</em> e la <em>fraternité</em> dei Francesi, ma senza la ghigliottina.<br />
+<a href="/man/operatori#effimeri" class="xref">Ieri</a> abbiamo visto come i valori legati all’Entropia siano effimeri —  non potrebbe essere altrimenti, per una forza che tende alla disgregazione — e di come chi li persegua sia spesso vittima dell’Annosa Dicotomia, ma questo non vuol dire che li si debba ripudiare.
+Non fare l’errore di pensare che ci sia una forza buona e una cattiva, come in <em>Star Wars</em>: sia la Gravità che l’Entropia sono necessarie per una corretta evoluzione dell’Universo.
+Il Maestro Canaro, che anche in tarda età amava molto andare in bicicletta, una volta mi disse che l’equilibrio dell’Universo è come l’equilibrio di un ciclista che percorra una strada sterrata in salita: non deve tenere il peso troppo in avanti, perché altrimenti la ruota posteriore perderebbe trazione e comincerebbe a slittare, ma non deve nemmeno tenere il peso troppo indietro, perché altrimenti la ruota anteriore si alleggerirebbe e non sarebbe più possibile sterzare.<br />
+Considerata la rispettabile quantità di cadute e contusioni collezionate dal Maestro Canaro nel corso delle sue escursioni in sella, ti consiglio di valutare solo il valore metaforico di questo insegnamento, ovvero che ci deve essere un bilanciamento fra Gravità ed Entropia, perché senza la Gravità, l’Universo è inutile, ma senza l’Entropia è noioso.
+In questo momento, l’Universo è in fase di espansione sotto l’influsso dell’Entropia ed è quindi normale che ci sia una preponderanza di azioni tendenti alla separazione.
+Per mantenere l’equilibrio, quindi, bisogna incentivare le attività e i valori che tendono a riunire, come l’amore o l’arte.<br />
+Molte persone pensano che amore e arte siano dei concetti vaghi e aleatorii, ma solo perché ne fraintendono l’essenza, ritenendoli dei concetti auto-esplicativi, che non occorre definire; qualcosa di simile alla definizione di “<em>pornografia</em>” che diede il Giudice Potter Steward, a proposito del film <em>Les Amants</em> di Louis Malle:</p>
+
+<blockquote>
+  <p>I shall not today attempt further to define the kinds of material I understand to be embraced within that shorthand description; and perhaps I could never succeed in intelligibly doing so. But I know it when I see it, and the motion picture involved in this case is not that.<a class="nota" href="/man/note#steward" id="steward"></a></p>
+</blockquote>
+
+<p>Questo approccio entropico/soggettivo, per quanto corretto nel caso di <em>Les Amants</em>, è chiaramente sbagliato in termini generali: tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente da chi le ascolta o le utilizza.
+Così come la parola: <i id="pesce">pesce</i>, per quanto banale, può non avere lo stesso valore per un biologo marino, un ecologista o per un pescatore, anche la parola <em>arte</em> può assumere significati diversi per un gallerista, per un artista o per un Papa.<br />
+È altrettanto sbagliata l’interpretazione entropico/romantica che comunemente si attribuisce alle parole: <em>amore</em> e <em>arte</em>.
+L’amore non è il sentimento vago che ha fatto la fortuna di poeti, musici e letterati, ma uno stato (più o meno persistente) del nostro organismo in cui riteniamo che qualcuno o qualcosa sia più importante di noi stessi.
+Di contro, l’Arte (ti prego di scrivere questo termine con l’iniziale maiuscola, nel tuo libro) non è l’esaltazione della personalità di un singolo, ma è — e dev’essere — la traccia del nostro cammino alla ricerca del Senso della Vita: Dio, per chi ci crede, o la Perfezione per i non credenti.
+Approfondiremo quest’ultimo concetto <a id="arte" href="/man/ereditarieta#arte" class="xref">in séguito</a>; qui e ora, come direbbe Céline Dion, <em>let’s talk about love</em>.</p>
+
+<hr id="amore" />
+
+<p>Tutti noi agiamo in base a degli schemi di valori che determinano le nostre scelte.
+L’istinto di sopravvivenza, solitamente, ci spinge a porre la nostra persona al vertice di questa piramide, ma alle volte può capitarci di eleggere a nostro bene supremo qualcuno o qualcosa diverso da noi stessi.
+Quel senza Dio di Dawkins
+<!-- Utilizzo questo appellativo in maniera affettuosamente canzonatoria: Dawkins ha cambiato il mio modo di vedere il Mondo o, almeno, parte di esso. Credo solo che faccia un errore di generalizzazione, ritenendo tutti i fedeli dei fanatici e dei bigotti. -->
+ha dimostrato come l’attaccamento che noi proviamo per i nostri parenti sia direttamente proporzionale al numero di cromosomi che condividiamo con essi e che quindi può essere riconducibile al desiderio primordiale di perpetuare il nostro patrimonio genetico<a class="nota" href="/man/note#selfish" id="selfish"></a>.
+Questa interpretazione ribonucleica dell’amore funziona molto bene per i rapporti di sangue (padre/figlio, nonno/nipote, zio/nipote ecc.), ma non spiega l’amore fra mamma e papà o fra nonno e nonna — almeno, nelle famiglie che non ritengono l’incesto una pratica accettabile.<br />
+L’<em>egoismo dei geni</em> non spiega nemmeno altre forme d’amore come l’amor di Patria, che spinge i giovani a sacrificare la propria vita in guerra,
+<!--
+La maggior parte dei soldati parte controvoglia perché costretta, ma la storia - e sfortunatamente anche i cimiteri -, sono pieni di esempii di giovani che si sono arruolati volontariamente. Boccioni ed Hemingway, per esempio, ma anche diversi ciclisti.
+-->
+l’amore per il prossimo, che porta il missionario a sacrificare la sua vita per aiutare i malati o l’amore per una forma di arte, uno sport o un lavoro.
+La realtà è che l’amore è una <em>backdoor</em>, o, meglio: una bomba a tempo, che viene inserita di nascosto nel tuo software, per spingerti a fare la cosa giusta quando arriverà il tuo momento.  <br />
+L’amore è l’unica forza allo stesso tempo gravitazionale ed entropica.
+Gravitazionale, perché unisce gli individui; entropica, perché li porta a riprodursi, replicando il loro DNA in qualcos’<em>altro</em>.
+Ti spinge a restare in casa, davanti a una tela, uno spartito o un foglio bianco o ti fa uscire, su una sella, una pista o con una macchina fotografica in mano.
+Ti porta in cima a una montagna o in una baraccopoli; al Polo o nel deserto; ti getta nel mare, ma non ti viene a salvare, come nella canzone; ti fa lasciare un lavoro sicuro perché non riconosci più la persona che vedi nello specchio la mattina o ti fa restare in un monastero, anche se.<br />
+E questa è la parte facile; poi c’è l’amore fra gli individui.<br />
+Ti sei mai innamorato?
+No? be’, succederà.
+Ci sono due modi, di innamorarsi: o conosci una persona e te ne innamori o conosci una persona e scopri che è lei (o lui) che hai sempre amato.
+Il primo è il caso più comune; il secondo caso, non è un caso.<br />
+Il Maestro Canaro una volta disse (ma non credo fosse farina del suo sacco):</p>
+
+<blockquote>
+  <p>Le donne cercano per tutta la vita il loro uomo ideale; nel frattempo, si sposano.</p>
+</blockquote>
+
+<p>Questo è vero per tutti, uomini e donne.
+Il tuo DNA contiene i geni che hanno fatto nascere l’amore fra i tuoi genitori: occhi verdi, spalle larghe, un bel seno o magari un bel sedere<a class="nota" href="/man/note#orologiaio" id="orologiaio"></a>.
+Allo stesso modo, dentro di te potrebbe esserci qualcosa che ti spingerà a cercare e ad amare una persona in particolare, perché quella persona è importante per la tua vita.
+Quando (se) la incontrerai, avrai l’impressione di conoscerla da sempre e capirai che tutte le volte che ti sei innamorato, ti sei innamorato di lei, anche se non la conoscevi ancora.
+Sfortunatamente, questo non vuol dire che la vostra storia durerà o che vivrete per sempre felici e contenti, come nelle favole. Anzi.<br />
+Il Cielo non è interessato alla tua felicità, ma al miglioramento, che, come ogni forma di crescita, ha il suo prezzo.
+Tutti sanno che il Maestro Canaro risolse il <em>Koan Mu</em> in una notte di profondo dolore dopo la morte di un cane di nome Lele.
+Molti, per ciò, ritengono il cane Lele un <em>Bodhisattva</em> che diede la vita per generare nel Maestro la prima scintilla dell’Illuminazione.
+Hanno ragione, ma solo in parte, perché la morte del cane Lele fu solo una delle cause dell’amarezza di quella notte.
+Il Maestro Canaro mi disse che buona parte del dolore era stato causato da una donna, che lui amava e dalla quale era stato ferito.
+Il motivo per cui me lo raccontò è lo stesso per cui io lo sto raccontando ora a te: anni dopo, quando il Maestro aveva già definito le basi del C’hi++, lui tornò da quella donna e la ringraziò per il torto che gli aveva fatto, perché lo aveva messo nella condizione d’animo necessaria a capire qualcosa a cui altrimenti avrebbe potuto non arrivare mai.
+<br id="ringraziare" />
+Ringraziare chi ci fa del bene con azioni gentili fa parte dell’educazione; ringraziare chi ci fa del bene attraverso il male non è facile, ma è necessario per far sì che quell’azione venga ripetuta anche nelle prossime esistenze.</p>
+
+            </section>
+        
+        </main>
+        <footer>
+    <nav>
+        
+        
+        <a href="/man/operatori" 
+           title="Vai a: Gli operatori" 
+           class="left">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        
+        
+        <a href="#top" 
+           title="Torna all'inizio" >
+           <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        
+        <a href="/man/memoria" 
+           title="Vai a: La memoria" 
+           class="right" >
+                <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+                
+
+    </nav>
+
+</footer>
+
+    </div>
+  </body>
+</html>
