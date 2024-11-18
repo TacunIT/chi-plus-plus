@@ -18,6 +18,8 @@ Concludo con una domanda che non ha nulla a che vedere con il resto di questo me
 G.Rodari, La Grammatica della fantasia
 
 
+## In breve
+
 *C'hi++* è un eccellente manuale di programmazione, un maldestro libro di filosofia e un vergognoso libro di fisica.  
 
 Il suo fine è di spiegare il significato dell'Esistenza nei termini dell'informatica, creando un parallelo fra le regole note del software e le regole ignote dell'Universo in cui viviamo.
@@ -29,11 +31,10 @@ La forma narrativa è quella del dialogo: all'interno di un monastero, un vecchi
 
 Mentre possiamo agevolmente dimostrare che la somma degli angoli interni di un triangolo è sempre di 180°, nessuno di noi può dimostrare  i concetti proprii della metafisica, perché, per farlo, dovrebbe: morire, incontrare un eventuale Ente Creatore, chiedergli quale sia lo scòpo della Sua creazione e poi tornare sulla Terra a riferirlo.
 Mancando questa conoscenza, l'opinione dell'uno vale quella dell'altro e mai nessuno potrà scrivere una singola frase definitiva sull'argomento, ma solo fare ipotesi.  
-La suddetta sequenza di eventi, però, è precisamente ciò che accadde al Maestro Canaro, quando, alla fine del XX° Secolo,fu chiamato da Dio per riscrivere in C++ l'applicazione in COBOL che fa funzionare l'Universo: andò nell'Aldilà, si fece spiegare da Dio cosa gli occorreva e poi cominciò a realizzarlo.
+La suddetta sequenza di eventi, però, è precisamente ciò che accadde al Maestro Canaro, quando, alla fine del XX° Secolo, fu chiamato da Dio per riscrivere in C++ l'applicazione in COBOL che fa funzionare l'Universo: andò nell'Aldilà, si fece spiegare da Dio cosa gli occorreva e poi cominciò a realizzarlo.
 Sfortunatamente, però, col tempo il Maestro Canaro abusò del potere che gli era stato concesso e Dio lo licenziò, rimandandolo sulla Terra, dove egli fondò un Ordine monastico dedito alla scrittura di programmi software. 
 I due personaggi del libro appartengono entrambi a quest'Ordine *informistico*.
-Quando si incontrano, il giovane rimane affascinato dal codice C++ che vede sullo schermo del PC del vecchio e gli chiede di insegnargli quel linguaggio, ormai quasi dimenticato. 
-Il vecchio, dopo qualche tentennamento, accetta.  
+Quando si incontrano, il giovane rimane affascinato dal codice C++ che vede sullo schermo del PC del vecchio e gli chiede di insegnargli quel linguaggio, ormai quasi dimenticato; il vecchio, dopo qualche tentennamento, accetta.  
 Il primo e l'ultimo capitolo del libro - il *Prologo* e l'*Epilogo* - sono narrati in prima persona dall'allievo; in tutti gli altri capitoli la voce narrante è quella del Maestro.
 In ciascun capitolo, il Maestro affronta uno degli aspetti della programmazione: tipi di dato, operatori, funzioni, classi, polimorfismo e perfino il versionamento e la correzione del codice, ovvero il *debug*.
 Ciascuno di questi argomenti, descritto in detttaglio nella parte iniziale del capitolo, viene utilizzato nella seconda parte per introdurre i principii del C'hi++ - la “metafisica-non metafisica” definita dal Maestro Canaro - e della sua cosmogonia: lo *Spazionismo*.
@@ -43,10 +44,10 @@ Ciascuno di questi argomenti, descritto in detttaglio nella parte iniziale del c
 Per lo Spazionismo, l'Universo è costituito da una matrice tridimensionale di elementi infintesimali chiamati, appunto: *spazioni*.
 Simili ai *pixel* di uno schermo, gli spazioni hanno ciò che il Maestro chiama: “esistenza potenziale", ovvero esistono solo se vengono irraggiati di energia, nel qual caso assumono massa ed esistenza.  
 Riprendendo alcune delle idee esposte da Poe in *Eureka*, lo Spazionismo  immagina che tutto ciò che esiste nasca dello scontro di due Forze primordiali: la Gravità, ovvero la tendenza della materia a riunirsi a sé stessa, e l'Entropia[^poe] che, al contrario, tende a dividerla.
-In balìa di queste due forze, l'Universo ha un'esistenza ciclica: quando “vince” la Gravità, tutta l'energia/materia è concentrata in un'area ristretta; quando invece l'Entropia prende il sopravvento, il *Big Bang* *lancia* l'energia *attraverso* la matrice di spazioni, *separando* l'Uno e generando stelle, pianeti e abitanti dei pianeti. 
+In balìa di queste due forze, l'Universo ha un'esistenza ciclica: quando “vince” la Gravità, tutta l'energia/materia è concentrata in un'area ristretta; quando invece prende il sopravvento l'Entropia, il *Big Bang* *lancia* l'energia *attraverso* la matrice di spazioni, *separando* l'Uno e generando stelle, pianeti e abitanti dei pianeti. 
 L'espansione dell'Universo continua fino a che la Gravità non riprende il sopravvento, facendo sì che tutta la materia torni a riunirsi nell'Uno.  
 
-L'ipotesi che ho appena descritto non è altro che il disperato tentativo di una mente finita di razionalizzare grandezze infinite come il tempo e lo spazio. 
+L'ipotesi che ho appena descritto altro non è che il disperato tentativo di una mente finita di razionalizzare grandezze infinite come il tempo e lo spazio. 
 Non fornisce uno straccio di prova a sostegno delle sue ipotesi e non dà un senso alle nostre esistenze, che riduce a meri epifenomeni del tutto irrilevanti su scala cosmica.
 Inoltre, negando alla nostra vita ogni forma di trascendenza, non ci spinge a comportarci “bene“ (nel senso che davano a questo termine i nostri nonni), ma ad arraffare tutto ciò che possiamo, finché possiamo, come pirati all'arrembaggio.  
 C'è modo di correggere questo difetto?
@@ -79,7 +80,6 @@ Tutto ciò è riassunto nel precetto:
 
 > Amiamo ciò che ci ucciderà (se tutto va bene)
 
-
 ## Lo strano libro di informistica
 
 Ho cominciato a elaborare la teoria alla base di questo libro nell'estate del 2004: volevo vedere se fosse possibile dare una spiegazione dell'Universo e dell'esistenza senza tirare in ballo elementi metafisici.
@@ -87,11 +87,15 @@ Era possibile.
 Quella che elaborai era un'ipotesi incompleta, perfettibile e altamente dilettantistica, ma, mi accorsi, era curiosamente compatibile con buona parte delle filosofie e delle religioni che conoscevo.  
 *Niente di strano*, pensai: *ho immaginato qualcosa di simile a ciò che conosco già*.
 Per sicurezza, però, decisi di verificare se le similitudini esistessero anche per le filosofie e le religioni che io ancora *non* conoscevo.
-Cominciai così uno studio eclettico e confuso che mi permise di stabilire numerose altre similitudini con opere o teorie di cui, inizialmente, non avevo la minima cognizione o che di cui conoscevo solo il nome.  
+Cominciai così uno studio *eclettico e confuso* che mi permise di stabilire numerose altre similitudini con opere o teorie di cui, inizialmente, non avevo la minima cognizione o che di cui conoscevo solo il nome.  
 Questo era strano.
 Apparentemente, private degli orpelli e degli auspici non comprovabili (Paradiso, Nirvana e visioni ottimistiche in genere) tutte le metafisiche avevano un nocciolo di nozioni comuni, indipendentemente dal luogo e dal periodo in cui erano state formulate.
 Valeva la pena di approfondire la cosa, se non altro per mettere ordine nel groviglio di idee e congetture che avevo accumulato fino ad allora.  
-[perché un manuale]  
+La scelta di includere le mie elucubrazioni in un manuale di programmazione ha diverse motivazioni.
+Per prima cosa, volevo fosse chiaro che il mio non era un invito ad abbandonare il progresso scientifico o tecnologico (sono un tecnocrate, non un luddista); in secondo luogo, era un modo di rendere omaggio a due opere nei confronti dei quali avevo un grosso debito di riconoscenza: *Il Libro dei Cinque Anelli* di Musashi e *Lo Zen e l'Arte della Manutenzione della Motocicletta*, di Robert Pirsig.
+ 
+ùnon sono né un filosofo né un fisico, ma un tecnocrate e, come tale, 
+
 Iniziai la stesura dei primi capitoli nel 2009, ma fu solo durante la pandemia del 2020 che riuscii a trovare il tempo per completare il lavoro che avevo iniziato.
 
 ## Conclusioni (era ora)
