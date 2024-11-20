@@ -22,7 +22,7 @@ G.Rodari, La Grammatica della fantasia
 
 *C'hi++* è un eccellente manuale di programmazione, un maldestro libro di filosofia e un vergognoso libro di fisica.  
 
-Il suo fine è di spiegare il significato dell'Esistenza nei termini dell'informatica, creando un parallelo fra le regole note del software e le regole ignote dell'Universo in cui viviamo.
+Il suo fine - o, più precisamente, la sua ambizione - è di definire una metafisica a basso contenuto di elementi metafisici che provi a spiegare il significato dell'esistenza nei termini dell'informatica, creando un parallelo fra le regole note del software e le regole ignote dell'Universo in cui viviamo.  
 Questa miscela di spiritualità e tecnologia è presente sia nel nome “C'hi++”[^chi],  sia nel modo in cui verrà gestita l'evoluzione della dottrina: lo stesso che viene utilizzato per il software *open-source*.
 Contrariamente ad altre ipotesi sullo stesso argomento, infatti, *C'hi++* non si propone come una spiegazione assoluta e definitiva del senso della vita, ma come un modello incompleto e perfettibile.  
 La forma narrativa è quella del dialogo: all'interno di un monastero, un vecchio Maestro insegna a un giovane discepolo i principii della programmazione in C++ e parallelamente lo inizia ai misteri una bizzarra metafisica chiamata: “C'hi++”, che lui, a sua volta, ha appreso dal fondatore del loro Ordine: il Maestro Canaro.
@@ -55,28 +55,19 @@ Se vogliamo che i giovani, sui mezzi pubblici, si alzino per lasciare il posto a
 
 ## Il maldestro libro di filosofia
 
-Così come il linguaggio C++ è un'evoluzione del linguaggio C, il C'hi++ è un'evoluzione dello Spazionismo, a cui aggiunge quel numero minimo di dogmi e di elementi metafisici necessari per dare un senso alla nostra esistenza.
+Così come il linguaggio C++ è un'evoluzione del linguaggio C, il C'hi++ è un'evoluzione dello Spazionismo, a cui aggiunge due dogmi e un numero minimo di elementi metafisici per dare un senso all'esistenza.
 Il primo dogma del C'hi++, necessario per garantire coerenza interna alla dottrina, riguarda la ciclicità dell'Universo: 
 
 > Ai fedeli è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (...) che ci sarà un momento in cui l’espansione dell’Universo terminerà e che tutto ciò che esiste tornerà a riunirsi nell’Uno primigenio
 
 La seconda accettazione per fede del C’hi++ è l'esistenza di quelli che il Maestro chiama *I Post-It*, ovvero:
 
-> una memoria persistente dell’Universo che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione/contrazione; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo:
+> una memoria persistente dell’Universo che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione e contrazione; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo:
 
 Grazie ai *Post-It*, l'Universo “ricorda” ciò che è successo nei precedenti cicli di esistenza e, in base a questa conoscenza, può ripetere scelte che si sono dimostrate positive o cambiare quelle che hanno dato esiti fallimentari[^umani], in un'eterna ricerca della perfezione.  
-Oltre questi due dogmi, gli altri due enti meta-fisici del C'hi++ sono: l'*Annosa Dicotomia* e l'Amore.  
-L'*Annosa Dicotomia* (fra ciò che desideriamo e ciò di cui abbiamo bisogno) è la forza che spinge a compiere scelte in base a motivazioni contingenti, di cui quasi sempre ci si pente. 
-Sodale dell'Entropia, è l'Annosa Dicotomia che causa la deflagrazione dell'Uno ed è sempre lei, nell'allegoria biblica del medesimo evento, il serpente che spinge Adamo ed Eva ad assaggiare i frutti dell'albero della conoscenza, con conseguente allontanamento dall'Eden.  
-L'*Amore*[^amore], di contro, è la forza con cui l'Universo spinge gli esseri viventi ad assolvere al loro ruolo; una sorta di una bomba a tempo inserita di nascosto nel nostro “software”, per spingerci a fare la cosa giusta quando arriverà il  momento.    
-Oltre a far nascere nuove vite, l'Amore le può anche spegnere.
-Per il C'hi++, ciascuno di noi è l’istanza di una classe che è stata chiamata a vivere per svolgere un determinato compito. 
-Quando il nostro compito sarà terminato, dovremo essere rimossi dalla memoria per non occupare inutilmente delle risorse del sistema. 
-L’Amore può servire anche a questo: così come ha generato nei nostri genitori l’interesse necessario a causare la nostra nascita, molto spesso genera in noi un interesse che causa le condizioni necessarie alla nostra morte.
-Tutto ciò è riassunto nel precetto:
-
-> Amiamo ciò che ci ucciderà (se tutto va bene)
-
+Oltre questi due dogmi, il C'hi++ definisce due enti meta-fisici: l'*Annosa Dicotomia* e l'Amore.  
+L'*Annosa Dicotomia* (fra ciò che desideriamo e ciò di cui abbiamo bisogno) è la forza che spinge a compiere scelte in base a motivazioni contingenti, di cui quasi sempre ci si pente[^annosa].  
+L'*Amore* - inteso come uno stato più o meno persistente del nostro organismo in cui riteniamo che qualcuno o qualcosa sia più importante di noi stessi - è la forza con cui l'Universo spinge gli esseri viventi ad assolvere al loro *dharma*; una sorta di una bomba a tempo inserita di nascosto nel nostro “firmware”, per spingerci a fare la cosa giusta quando arriverà il  momento.[^amore]    
 
 ## Lo strano libro di informistica
 
@@ -101,14 +92,6 @@ Dato che gli informatici sono prevalentemente maschietti sopra i ventiquattro an
 La ragione che mi ha spinto a tentare la via della pubblicazione è il buon successo che ha avuto il Congresso mondiale di filosofia, tenutosi questa estate a Roma.
 
 
-<!--
-Ovviamente vedo i limiti delle mie teorie e sono sicuro che ciò che ho scritto può essere migliorato. 
-Per questo motivo, ho deciso che C'hi++ sarà una metafisica *open-source*, che chiunque potrà scaricare da un repository GitHub e modificare a suo piacimento:
-
-    https://github.com/TacunIT/chi-plus-plus
-
-
--->
 
 [^chi]: Che è un gioco di parole fra il termine giapponese *C'hi* (*soffio vitale*) e il linguaggio di programmazione chiamato *C++* -
 
@@ -118,8 +101,9 @@ Per questo motivo, ho deciso che C'hi++ sarà una metafisica *open-source*, che 
 
 [^umani]: Gli attori, ovviamente, sono gli esseri viventi, non la materia inerte, anche se entrambi sono manifestazioni differenti di una stessa energia.
 
-[^amore]: Inteso non come semplice infatuazione sensoriale, ma come uno stato più o meno persistente del nostro organismo in cui riteniamo che qualcuno o qualcosa sia più importante di noi stessi.
+[^annosa]: Sodale dell'Entropia, è l'Annosa Dicotomia che causa la deflagrazione dell'Uno ed è sempre lei, nell'allegoria biblica del medesimo evento, il serpente che spinge Adamo ed Eva ad assaggiare i frutti dell'albero della conoscenza, con conseguente allontanamento dall'Eden.  
 
+[^amore]: Oltre a far nascere nuove vite, l'Amore le può anche spegnere. Per il C'hi++, ciascuno di noi è l’istanza di una classe che è stata chiamata a vivere per svolgere un determinato compito; fatto ciò, dovremo essere rimossi dalla memoria per non occupare inutilmente delle risorse del sistema.  L’Amore può servire anche a questo: così come ha generato nei nostri genitori l’interesse necessario a causare la nostra nascita, molto spesso genera in noi un interesse che causa le condizioni necessarie alla nostra morte.
 [^istat]: Dati ISTAT. 
 
 
