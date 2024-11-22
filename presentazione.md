@@ -7,12 +7,9 @@ Concludo con una domanda che non ha nulla a che vedere con il resto di questo me
 
 <hr />      
 -->
-<br />  
 
 # C'hi++ - Il senso della vita è il *debug*
 ## Presentazione
-<br />
-
 
 > Sono un lettore semplice, non un addetto ai lavori<br /> 
 G.Rodari, La Grammatica della fantasia
