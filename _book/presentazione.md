@@ -22,13 +22,10 @@ La forma narrativa è quella del dialogo: all'interno di un monastero, un vecchi
 
 Glielo sottopongo, perché spero possa dirmi se quanto ho scritto unicamente per me, come il diario di un vecchio marinaio, possa essere di qualche interesse anche per altre persone. 
 
-Sperando di poterle parlare a voce di questo progetto, sono venuto a sentirla allo Stadio Palatino, ad Agosto, ma anche millantando un inesistente accredito stampa[^menti] non sono riuscito a entrare perché i posti erano tutti esauriti. 
-Mi trovo costretto perciò a ripiegare su una forma di comunicazione indiretta, con tutti i problemi che questa comporta - prima fra tutti, la mia tendenza alla divagazione e alla prolissità.  
+Sperando di poterle parlare a voce di questo progetto, ero venuto a sentirla allo Stadio Palatino, ad Agosto, ma anche millantando un inesistente accredito stampa[^menti] non sono riuscito a entrare perché i posti erano tutti esauriti. 
+Mi trovo costretto perciò a ripiegare su una forma di comunicazione indiretta, con tutti i problemi che questa comporta, prima fra tutti, la mia tendenza alla divagazione e alla prolissità.  
 
-Per non rubarle troppo tempo, ho cercato di rendere il testo qui sotto il più conciso possibile.   
-Altre informazioni sono riportate nel [MANIFEST] (https://github.com/TacunIT/chi-plus-plus/blob/master/MANIFEST.md) del progetto GitHub e nel documento: [Proposta per una metafisica open-source](https://chiplusplus.org/proposta.html), in cui si ipotizza l'utilizzo dei principii del C'hi++ come base per un'etica “vendor independent” dell'AI.
-
-
+Per non rubarle troppo tempo, ho cercato di rendere il testo qui sotto il più conciso possibile. I concetti che riassumo qui sono riportati con maggior dettaglio nell'Introduzione del libro, nel [MANIFEST] (https://github.com/TacunIT/chi-plus-plus/blob/master/MANIFEST.md) del progetto GitHub e nel documento: [Proposta per una metafisica open-source](https://chiplusplus.org/proposta.html), in cui si ipotizza l'utilizzo dei principii del C'hi++ come base di un'etica “vendor independent” per l'AI.
 
 ## L'eccellente manuale di programmazione
 
@@ -85,10 +82,14 @@ Iniziai la stesura dei primi capitoli nel 2009, ma fu solo durante la pandemia d
 Ho chiuso la prima revisione del testo il 5 Febbraio 2023, ma non ho ancora inviato *C'hi++* a nessun editore perché ero convinto che un libro così non avesse un pubblico.
 Trent'anni fa non mi sarei fatto un simile scrupolo, perché la maggior parte degli informatici combinava competenze tecniche con interessi umanistici, ma oggi le cose sono drasticamente cambiate: legge libri solo il 40% degli Italiani sopra i sei anni e, di questi, quasi la metà non va oltre i tre libri l'anno. 
 Che mercato potevo aspettarmi che avesse, un libro di programmazione che parla anche del senso della vita?  
-La ragione che mi ha spinto a valutare la via della pubblicazione è il buon successo che ha avuto il Congresso Mondiale di Filosofia, tenutosi questa estate a Roma; in particolare, il fatto che uno dei relatori principali fosse anche il CEO di una delle nostre maggiori aziende informatiche: ho pensato che, se c'era qualcuno che poteva darmi un parere autorevole sul mio libro, era sicuramente lui.
-
----
-
+La ragione che mi ha spinto a valutare la via della pubblicazione è il buon successo che ha avuto il Congresso Mondiale di Filosofia, tenutosi questa estate a Roma; in particolare, il fatto che uno dei relatori principali fosse anche il CEO di una delle nostre maggiori aziende informatiche.
+Sto quindi rivedendo il testo, limando quello che mi era sfuggito durante il primo giro di bozze, e poi lo invierò ad alcuni editori italiani. 
+Il passo successivo sarà di tradurre il testo in Inglese e di tentare la pubblicazione su mercati esteri.   
+Grazie per aver letto fin qui.  
+<br />
+Carlo Simonelli  
+<br />
+Roma, autunno 2024
 
 [^chi]: Gioco di parole fra il termine giapponese *C'hi* (氣 - *soffio vitale*) e il linguaggio di programmazione chiamato *C++* -
 
@@ -102,23 +103,8 @@ La ragione che mi ha spinto a valutare la via della pubblicazione è il buon suc
 
 [^annosa]: Sodale dell'Entropia, è l'Annosa Dicotomia che causa la deflagrazione dell'Uno ed è sempre lei, nell'allegoria biblica del medesimo evento, il serpente che spinge Adamo ed Eva ad assaggiare i frutti dell'albero della conoscenza, con conseguente allontanamento dall'Eden.  
 
-[^funzioni]: Il Maestro spiega la causa di questa similitudine nel capitolo dedicato alle funzioni.
-
 [^amore]: Oltre a far nascere nuove vite, l'Amore le può anche spegnere. Per il C'hi++, ciascuno di noi è l’istanza di una classe che è stata chiamata a vivere per svolgere un determinato compito; fatto ciò, dovremo essere rimossi dalla memoria per non occupare inutilmente delle risorse del sistema.  L’Amore può servire anche a questo: così come ha generato nei nostri genitori l’interesse necessario a causare la nostra nascita, molto spesso genera in noi un interesse che causa le condizioni necessarie alla nostra morte.
 
+[^funzioni]: Il Maestro spiega la causa di questa similitudine nel capitolo dedicato alle funzioni.
 
-<!--
 
-
-[^kant]: Questo perché, come spiega il Maestro nel capitolo dedicato agli *stream*, *Il cielo stellato sopra di me, e la legge morale dentro di me* non possono garantire - da soli - il vivere civile, dato che la morale dentro *Immanuel* Kant non è uguale a quella dentro *Eva* Kant, che pure ha il suo stesso cognome.
-
-Mentre possiamo agevolmente dimostrare che la somma degli angoli interni di un triangolo è sempre di 180°, nessuno di noi può dimostrare  i concetti proprii della metafisica, perché, per farlo, dovrebbe: morire, incontrare un eventuale Ente Creatore, chiedergli quale sia lo scòpo della Sua creazione e poi tornare sulla Terra a riferirlo.
-Mancando questa conoscenza, l'opinione dell'uno vale quella dell'altro e mai nessuno potrà scrivere una singola frase definitiva sull'argomento, ma solo fare ipotesi.  
-La suddetta sequenza di eventi, d'altro canto, è precisamente ciò che accadde al Maestro Canaro: andò nell'Aldilà, si fece spiegare da Dio cosa gli occorreva e poi cominciò a realizzarlo.
-
-Il suo fine - o, più precisamente, la sua ambizione - è di definire una metafisica  che provi a spiegare il significato dell'esistenza nei termini dell'informatica, creando un parallelo fra le regole note del software e le regole ignote dell'Universo in cui viviamo.  
-
-Questa miscela di spiritualità e tecnologia è presente sia nel nome “C'hi++”[^chi],  sia nel modo in cui verrà gestita l'evoluzione della dottrina: lo stesso che viene utilizzato per il software *open-source*.
-
-Contrariamente ad altre ipotesi sullo stesso argomento, infatti, *C'hi++* non si propone come una spiegazione assoluta e definitiva del senso della vita, ma come un modello incompleto e perfettibile.  
--->
