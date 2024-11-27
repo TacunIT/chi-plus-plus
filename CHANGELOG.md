@@ -1,3 +1,9 @@
+## 1.1.0 (November 27, 2024)
+  - Spostate le note prima dei ringraziamenti
+  - Spostata presentazione nella directory _book
+  - Aggiunto documento di presentazione
+  - Modifiche ai capitoli sul polimorfismo e sugli stream durante la redazione della lettera per Rovelli
+
 ## 1.0.4 (August 07, 2024)
   - Aggiunta variabile per URL GitHub
   - Aggiunto file .nojekyll
