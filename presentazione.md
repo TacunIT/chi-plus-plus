@@ -22,6 +22,14 @@ La forma narrativa è quella del dialogo: all'interno di un monastero, un vecchi
 
 Glielo sottopongo, perché spero possa dirmi se quanto ho scritto unicamente per me, come il diario di un vecchio marinaio, possa essere di qualche interesse anche per altre persone. 
 
+Sperando di poterle parlare a voce di questo progetto, sono venuto a sentirla allo Stadio Palatino, ad Agosto, ma anche millantando un inesistente accredito stampa[^menti] non sono riuscito a entrare perché i posti erano tutti esauriti. 
+Mi trovo costretto perciò a ripiegare su una forma di comunicazione indiretta, con tutti i problemi che questa comporta - prima fra tutti, la mia tendenza alla divagazione e alla prolissità.  
+
+Per non rubarle troppo tempo, ho cercato di rendere il testo qui sotto il più conciso possibile.   
+Altre informazioni sono riportate nel [MANIFEST] (https://github.com/TacunIT/chi-plus-plus/blob/master/MANIFEST.md) del progetto GitHub e nel documento: [Proposta per una metafisica open-source](https://chiplusplus.org/proposta.html), in cui si ipotizza l'utilizzo dei principii del C'hi++ come base per un'etica “vendor independent” dell'AI.
+
+
+
 ## L'eccellente manuale di programmazione
 
 Le parti del testo che riguardano la programmazione in C++ sono la revisione - *vent'anni dopo*, come Dumas - di un manuale che pubblicai nel 1995 per la casa editrice Logica, di Roma.  
@@ -56,8 +64,8 @@ La seconda accettazione per fede richiesta dal C’hi++ è l'esistenza di quelli
 > una memoria persistente dell’Universo che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione e contrazione; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo:
 
 Grazie ai *Post-It*, l'Universo “ricorda” ciò che è successo nei precedenti cicli di esistenza e, in base a questa conoscenza, può ripetere scelte che si sono dimostrate positive o cambiare quelle che hanno dato esiti fallimentari[^umani], in un'eterna ricerca della perfezione.  
-Oltre questi due dogmi, il C'hi++ definisce due enti meta-fisici: l'*Annosa Dicotomia* e l'Amore.  
-L'*Annosa Dicotomia* (fra ciò che desideriamo e ciò di cui abbiamo bisogno) è la forza che spinge a compiere scelte in base a motivazioni contingenti, di cui quasi sempre ci si pente[^annosa].  
+Oltre questi due dogmi, il C'hi++ definisce due enti meta-fisici: l'*Annosa Dicotomia* e l'Amore.
+L'*Annosa Dicotomia* (fra ciò che desideriamo e ciò di cui abbiamo bisogno) è la forza che spinge a compiere scelte in base a motivazioni contingenti, di cui quasi sempre ci si pente[^annosa].
 L'*Amore* è la forza con cui l'Universo spinge gli esseri viventi ad assolvere al loro *dharma*; una sorta di una bomba a tempo inserita di nascosto nel nostro “firmware”, per spingerci a fare la cosa giusta quando arriverà il  momento.[^amore]    
 
 ## Cronogramma
@@ -81,13 +89,10 @@ La ragione che mi ha spinto a valutare la via della pubblicazione è il buon suc
 
 ---
 
-Sperando di poterle parlare a voce di questo progetto, sono venuto a sentirla allo Stadio Palatino, ad Agosto, ma anche millantando un inesistente accredito stampa[^menti] non sono riuscito a entrare perché i posti erano tutti esauriti. 
-Mi trovo costretto perciò a ripiegare su una forma di comunicazione indiretta, con tutti i problemi che questa comporta - prima fra tutti, la mia tendenza alla divagazione e alla prolissità.  
-Ho 
-[nel MANIFEST del progetto Git del C'hi++]
-(https://github.com/TacunIT/chi-plus-plus/blob/master/MANIFEST.md)
 
 [^chi]: Gioco di parole fra il termine giapponese *C'hi* (氣 - *soffio vitale*) e il linguaggio di programmazione chiamato *C++* -
+
+[^menti]: Sul cartellone c'era scritto: "Menti", ho mentito.
 
 [^poe]: *Elettricità*, per Poe, che scriveva dieci anni prima di Clausius.
 
@@ -101,7 +106,6 @@ Ho
 
 [^amore]: Oltre a far nascere nuove vite, l'Amore le può anche spegnere. Per il C'hi++, ciascuno di noi è l’istanza di una classe che è stata chiamata a vivere per svolgere un determinato compito; fatto ciò, dovremo essere rimossi dalla memoria per non occupare inutilmente delle risorse del sistema.  L’Amore può servire anche a questo: così come ha generato nei nostri genitori l’interesse necessario a causare la nostra nascita, molto spesso genera in noi un interesse che causa le condizioni necessarie alla nostra morte.
 
-[^menti]: Sul cartellone c'era scritto: "Menti", ho mentito.
 
 <!--
 
