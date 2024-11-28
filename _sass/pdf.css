@@ -1,0 +1,94 @@
+
+* {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0;
+    margin:0
+}
+
+.titolo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.box {
+    font-size: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+.centrato {
+    text-align: center !important;
+}
+
+BODY {
+	background: #fdfdfd;
+	color: #111;
+	font-family: Simonetta, Arial, sans-serif;
+	font-size: 13pt;
+	margin: 1cm 1cm 2cm 1cm;
+	text-align: justify;
+	line-height: 1.4;
+	background-color: white;
+}
+
+H1, H2, H3, H4 {
+		color: #000000;
+    margin: auto;
+}
+H1 {
+    font-size: 2rem;
+}
+H2 {
+    font-size: 1.6rem;
+    font-variant-caps: petite-caps;
+    margin-top: 1rem;
+}
+H3 {
+    font-size:  1.4rem;
+    margin-top: 1rem;
+}
+BLOCKQUOTE H3 {
+    font-size: 1.2rem;
+}
+H4 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+HR {
+    border: none;
+    text-align: center;
+    margin: 0.5rem auto;
+}
+HR:before {
+ content: '氣';
+}
+A {
+		color: #000;
+		text-decoration: none;
+}
+CODE, PRE, P.code {
+		background-color: #f0f0f0;
+		text-align: left;
+		font-size: 11pt;
+		font-family: Inconsolata, monospace;
+		line-height: 1.1;
+}
+
+BODY.manuale.dedica MAIN.p {
+		margin-top: 4rem;
+}
+
+@media print {
+  h1 {
+    page-break-before: always;
+  }
+}
