@@ -33,6 +33,7 @@ collections:
         order:
             - copertina.md
             - dedica.md
+            - introduzione.md
             - indice.md
             - prologo.md
             - incipit.md

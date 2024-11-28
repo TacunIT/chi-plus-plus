@@ -110,3 +110,4 @@ Roma, autunno 2024
 [^funzioni]: Il Maestro spiega la causa di questa similitudine nel capitolo dedicato alle funzioni.
 
 
+x

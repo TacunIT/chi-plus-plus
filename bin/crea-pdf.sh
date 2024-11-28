@@ -25,8 +25,8 @@ pandoc  --verbose                 						\
 				--pdf-engine-opt="--print-media-type" \
         --pdf-engine-opt="--header-left"      --pdf-engine-opt="C'hi++, il senso della vita è il debug"\
         --pdf-engine-opt="--header-right"     --pdf-engine-opt="[page] di [topage]" \
-        --pdf-engine-opt="--header-font-name" --pdf-engine-opt="Bookerly"           \
-        --pdf-engine-opt="--header-font-size" --pdf-engine-opt="11"                 \
+        --pdf-engine-opt="--header-font-name" --pdf-engine-opt="Simonetta"          \
+        --pdf-engine-opt="--header-font-size" --pdf-engine-opt="10"                 \
         --pdf-engine-opt="--header-spacing"   --pdf-engine-opt="10"                 \
         --pdf-engine-opt="--footer-left"      --pdf-engine-opt="Carlo Simonelli"    \
         --pdf-engine-opt="--footer-right"     --pdf-engine-opt="[date]"             \
@@ -38,6 +38,7 @@ pandoc  --verbose                 						\
         --pdf-engine-opt="--margin-bottom"    --pdf-engine-opt="3cm"                \
         --pdf-engine-opt="--margin-left"      --pdf-engine-opt="3cm"                \
 				--pdf-engine-opt="--page-size"        --pdf-engine-opt="A4"                 \
+				${OUT_DIR}/introduzione.md	\
         $(<${MAN_FILE})             \
 				${YML_FILE}									\
 				-o ${OUT_DIR}/$FILENAME.pdf

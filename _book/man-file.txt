@@ -24,4 +24,5 @@ stream.html
 debug.html
 epilogo.html
 ringraziamenti.html
+bibliografia.html
 note.html
