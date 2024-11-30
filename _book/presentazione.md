@@ -11,19 +11,13 @@ Concludo con una domanda che non ha nulla a che vedere con il resto di questo me
 # C'hi++ - Il senso della vita è il *debug*
 ## Presentazione
 
-> Sono un lettore semplice, non un addetto ai lavori<br /> 
-G.Rodari, La Grammatica della fantasia
-
 
 ## In breve
 
 *C'hi++* è un eccellente manuale di programmazione, un maldestro libro di filosofia e un vergognoso libro di fisica.  
 La forma narrativa è quella del dialogo: all'interno di un monastero, un vecchio maestro insegna a un giovane discepolo i principii della programmazione in C++ e parallelamente lo inizia ai misteri del *C'hi++*[^chi]: una bizzarra metafisica *open-source*, definita anni addietro dal fondatore del loro Ordine: il mitologico Maestro Canaro che, secondo la leggenda, alla fine del XX° Secolo fu incaricato da Dio di riscrivere in C++ l'applicazione COBOL che fa funzionare l'Universo.  
 
-Glielo sottopongo, perché spero possa dirmi se quanto ho scritto unicamente per me, come il diario di un vecchio marinaio, possa essere di qualche interesse anche per altre persone. 
-
----
-
+Glielo sottopongo, perché spero possa dirmi se quanto ho scritto unicamente per me, come il diario di un vecchio marinaio, possa essere di qualche interesse anche per altre persone.  
 Sperando di poterle parlare a voce di questo progetto, ero venuto a sentirla allo Stadio Palatino, ad Agosto, ma anche millantando un inesistente accredito stampa[^menti] non sono riuscito a entrare perché i posti erano tutti esauriti. 
 Mi trovo costretto perciò a ripiegare su una forma di comunicazione indiretta, con tutti i problemi che questa comporta, prima fra tutti, la mia tendenza alla divagazione e alla prolissità.  
 
@@ -31,7 +25,7 @@ Per non rubarle troppo tempo, ho cercato di rendere il testo qui sotto il più c
 
 ## L'eccellente manuale di programmazione
 
-Le parti del testo che riguardano la programmazione in C++ sono la revisione - *vent'anni dopo*, come Dumas - di un manuale che pubblicai nel 1995 per la casa editrice Logica, di Roma.  
+Le parti del testo che riguardano la programmazione in C++ sono la revisione di un manuale che pubblicai nel 1995 per la casa editrice Logica, di Roma.  
 Il primo e l'ultimo capitolo - il *Prologo* e l'*Epilogo* - sono narrati in prima persona dall'allievo; in tutti gli altri capitoli la voce narrante è quella del Maestro.  
 In ogni capitolo, il Maestro affronta uno degli aspetti della programmazione: operatori, funzioni, classi, polimorfismo e perfino il versionamento e la correzione del codice, ovvero il *debug*, che viene spesso trascurato nella letteratura tecnica, anche se è l’attività che i programmatori svolgono per la maggior parte del loro tempo.
 Ciascuno di questi argomenti, descritto in dettaglio nella parte iniziale del capitolo, viene poi utilizzato per introdurre i principii del C'hi++ e della sua cosmogonia: lo *Spazionismo*.  
@@ -65,7 +59,7 @@ La seconda accettazione per fede richiesta dal C’hi++ è l'esistenza di quelli
 Grazie ai *Post-It*, l'Universo “ricorda” ciò che è successo nei precedenti cicli di esistenza e, in base a questa conoscenza, può ripetere scelte che si sono dimostrate positive o cambiare quelle che hanno dato esiti fallimentari[^umani], in un'eterna ricerca della perfezione, che per il C'hi++ è il senso dell'Esistenza.    
 Oltre questi due dogmi, il C'hi++ definisce due enti meta-fisici: l'*Annosa Dicotomia* e l'Amore.
 L'*Annosa Dicotomia* (fra ciò che desideriamo e ciò di cui abbiamo bisogno) è la forza che spinge a compiere scelte in base a motivazioni contingenti, di cui quasi sempre ci si pente[^annosa].
-L'*Amore* è la forza con cui l'Universo spinge gli esseri viventi ad assolvere al loro *dharma*; una sorta di una bomba a tempo inserita di nascosto nel nostro “firmware”, per spingerci a fare la cosa giusta quando arriverà il  momento.[^amore]    
+L'*Amore* è la forza con cui l'Universo spinge gli esseri viventi ad assolvere al loro *dharma*; una sorta di una bomba a tempo inserita nel nostro “firmware”, per spingerci a fare la cosa giusta quando arriverà il  momento.[^amore]    
 
 ## Cronogramma
 
@@ -85,13 +79,17 @@ Ho chiuso la prima revisione del testo il 5 Febbraio 2023, ma non ho ancora invi
 Trent'anni fa non mi sarei fatto un simile scrupolo, perché la maggior parte degli informatici combinava competenze tecniche con interessi umanistici, ma oggi le cose sono drasticamente cambiate: legge libri solo il 40% degli Italiani sopra i sei anni e, di questi, quasi la metà non va oltre i tre libri l'anno. 
 Che mercato potevo aspettarmi che avesse, un libro di programmazione che parla anche del senso della vita?  
 La ragione che mi ha spinto a valutare la via della pubblicazione è il buon successo che ha avuto il Congresso Mondiale di Filosofia, tenutosi questa estate a Roma; in particolare, il fatto che uno dei relatori principali fosse anche il CEO di una delle nostre maggiori aziende informatiche.  
-Sto quindi rivedendo il testo, limando quello che mi era sfuggito durante il primo giro di bozze, e poi lo invierò ad alcuni editori italiani. 
+Sto quindi rivedendo il testo, limando quello che mi era sfuggito durante il primo giro di bozze, poi lo invierò ad alcuni editori italiani. 
 Il passo successivo sarà di tradurre il testo in Inglese e di tentare la pubblicazione su mercati esteri.   
 Grazie per aver letto fin qui.  
 <br />
 Carlo Simonelli  
 <br />
-Roma, autunno 2024
+Roma, autunno 2024. 
+<br />
+<br />
+<br />
+
 
 [^chi]: Gioco di parole fra il termine giapponese *C'hi* (氣 - *soffio vitale*) e il linguaggio di programmazione chiamato *C++* -
 
@@ -109,5 +107,3 @@ Roma, autunno 2024
 
 [^funzioni]: Il Maestro spiega la causa di questa similitudine nel capitolo dedicato alle funzioni.
 
-
-x

@@ -38,7 +38,6 @@ pandoc  --verbose                 						\
         --pdf-engine-opt="--margin-bottom"    --pdf-engine-opt="3cm"                \
         --pdf-engine-opt="--margin-left"      --pdf-engine-opt="3cm"                \
 				--pdf-engine-opt="--page-size"        --pdf-engine-opt="A4"                 \
-				${OUT_DIR}/introduzione.md	\
         $(<${MAN_FILE})             \
 				${YML_FILE}									\
 				-o ${OUT_DIR}/$FILENAME.pdf
