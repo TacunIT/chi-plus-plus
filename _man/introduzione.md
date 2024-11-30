@@ -43,5 +43,5 @@ La prima ipotesi è possibile, ma poco probabile, quindi il C’hi++ dà per sco
 Riassumendo, per il C’hi++, ciascun essere senziente è uno dei neuroni di un cervello (l’Universo) a cui contribuisce a dare forma grazie a ciò che impara nel corso delle sue esistenze. Se riconosciamo i nostri errori come tali, è possibile che non li ripeteremo in futuro; altrimenti, continueremo a commetterli, generando delle forme “dolorose” dell’Universo. Per questo motivo, secondo il C’hi++, “il senso della Vita è il debug”, perché solo analizzando e correggendo i nostri errori, così come si fa con il software, potremo migliorare la “forma” dell’Universo e, di conseguenza, le nostre esistenze.
 In altre parole, il Paradiso e l’Inferno non sono altrove: sono solo due stati possibili dell’Universo e siamo noi, con le nostre azioni e le nostre intenzioni, a decidere in quale dei due vivremo.
 Nel libro, lo spiego meglio.
-
+<br />  
 Roma, Inverno 2023.
