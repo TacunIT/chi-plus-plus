@@ -1,3 +1,6 @@
+## 1.1.2 (December 02, 2024)
+  - Cambiato il font del PDF
+
 ## 1.1.1 (December 02, 2024)
   - Raggiunto un livello accettabile nella creazione automatica del PDF, anche se rimangono alcune anomalie di formattazione
   - Importati i documenti Word del libro e della vecchia presentazione
