@@ -32,13 +32,12 @@
 BODY {
 	background: #fdfdfd;
 	color: #111;
-	font-family: Simonetta, Arial, sans-serif;
+	font-family: "Bookerly", Arial, sans-serif;
 	font-size: 13pt;
 	margin: 1cm 1cm 2cm 1cm;
 	text-align: justify;
 	line-height: 1.4;
 	background-color: white;
-	max-width: 210mm;
 	margin: auto;
 }
 
@@ -48,6 +47,13 @@ H1, H2, H3, H4 {
 }
 H1 {
     font-size: 2rem;
+}
+
+/**
+*	Corregge l'errore nella visualizzazion del titolo
+*/
+H1.title {
+	display: none;
 }
 H2 {
     font-size: 1.6rem;
@@ -142,9 +148,6 @@ SUP {
     vertical-align: super;
     line-height: 0;
 }
-DIV {
- display: inline-block;
-}
 UL {
     list-style-type: square;
     margin: 1rem 2rem;
@@ -183,59 +186,6 @@ TABLE TH {
     text-align: center !important;
 }
 
-/**
- *
- *  Stili per il manuale
- *
- */
-{
-}
-DIV.page {
-    min-height: 100vh;
-}
-HEADER titolo-2 {
-    float: unset
-}
-HEADER DIV.box.titoli {
-    width: 100%;
-}
-HEADER NAV.menu-top {
-    border: none;
-}
-HEADER NAV.menu-top A {
-    padding: 0.5rem 0;
-}
-HEADER NAV.menu-top A.center {
-    padding: 0.5rem 1rem;
-}
-FOOTER {
-}
-DIV.copertina {
-    text-align: center;
-    margin-top: 10vh;
-}
-DIV.copertina IMG.logo {
-    width: 260px;
-    display: inline-block;
-}
-DIV.copertina H1 {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    font-size: 3rem;
-    color:#550;
-}
-DIV.copertina H2 {
-    padding: 0;
-    font-size: 1.4rem;
-}
-BODY.manuale.dedica {
-    margin: 20vh auto;
-}
-BODY.manuale.dedica P {
-    text-align: center;
-    max-width: 22rem;
-    margin: auto
-}
 SECTION.indice {
  text-align: center;
 }
@@ -309,22 +259,14 @@ UL {
  */
 BLOCKQUOTE {
     color: #333;
-    font-size: 14pt;
     padding: 1em;
     font-style: italic;
     line-height: 1.5;
     text-align: center;
 }
+
 BLOCKQUOTE P {
-    text-align: left;
-    display: inline-block;
-}
-BLOCKQUOTE.spalla-sx {
-    padding-left: 2em;
-    text-align: left;
-}
-BLOCKQUOTE.giustificato {
-    text-align: justify;
+	font-style: italic;
 }
 
 /** Stile per le citazioni in testa */
@@ -376,13 +318,8 @@ TABLE.rgb TD:nth-child(1) {
 TABLE.rgb TD:nth-child(2) {
     min-width: 10rem;
 }
-/*
-BLOCKQUOTE.output {
-    text-align: justify;
-    background-color: #eee;
-    margin: 1rem auto;
-}
-BLOCKQUOTE.output DIV[id^="banner"] {
+
+DIV[id^="banner"] {
     display: block;
     height: 100px;
     width: 200px;
@@ -390,24 +327,15 @@ BLOCKQUOTE.output DIV[id^="banner"] {
     margin: 1rem auto;
     background-color: #aaa;
 }
-*/
 /**  Dedica e citazione in testa */
-SECTION.dedica {
+DIV.corpo BLOCKQUOTE P {
     font-style: italic;
     font-size: 1rem;
-    margin: 0 auto;
-    padding-top: 5rem;
-    padding-left: 30%;
-    padding-bottom: 5rem;
-    text-align: right;
-    page-break-after: always;
+		margin: 0;
+		padding-top: 5cm;
+    text-align: center;
+		white-space: nowrap;
 }
-
-SECTION.citazione SPAN {
-    font-style: normal
-}
-
-
 
 @media print {
   h1 {
@@ -415,7 +343,6 @@ SECTION.citazione SPAN {
   }
 
 	SECTION.dedica {
-			padding-top: 5rem;
 			page-break-before: always;
 	}
 }
