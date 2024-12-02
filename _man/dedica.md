@@ -4,7 +4,7 @@ layout:     manuale
 class:      dedica
 title:      Dedica
 h1:         Dedica
-h2:         
+h2:         ""
 permalink:  /man/dedica
 no-index:   true
 ---
