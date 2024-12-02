@@ -38,6 +38,8 @@ BODY {
 	text-align: justify;
 	line-height: 1.4;
 	background-color: white;
+	max-width: 210mm;
+	margin: auto;
 }
 
 H1, H2, H3, H4 {
@@ -55,9 +57,6 @@ H2 {
 H3 {
     font-size:  1.4rem;
     margin-top: 1rem;
-}
-BLOCKQUOTE H3 {
-    font-size: 1.2rem;
 }
 H4 {
     font-size: 1.2rem;
@@ -83,12 +82,340 @@ CODE, PRE, P.code {
 		line-height: 1.1;
 }
 
-BODY.manuale.dedica MAIN.p {
-		margin-top: 4rem;
+/* utilizzato per istruzioni iterative */
+LI CODE {
+    font-size: initial;
 }
+EM, I, B, STRONG  {
+    color: #550;
+    font-size: inherit;
+    /**
+    *   todo: capire perché c'è questo attributo settato
+    *   e possibilmente rimuoverlo, unendo B al gruppo
+
+    font-family: initial;
+    */
+}
+P {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+P.newpage {
+  page-break-after: always;
+}
+/** Stili per le citazion dal Metta Sutra */
+P.metta {
+    padding-left: 1rem;
+}
+P.metta I {
+    display: inline-block;
+    width: 6.5rem;
+}
+P CODE {
+    padding: 0 0.25rem;
+    font-size: 12pt;
+}
+A {
+    color: #444;
+}
+A.nota {
+    font-size: 0.8rem;
+    color: #990;
+    text-decoration: underline;
+    vertical-align: super;
+    display: inline-block;
+    margin-left: 2px;
+}
+/** Numerazione automatica solo nel Manuale */
+A.nota::after {
+    counter-increment: note-pagina;
+    content: counter(note-pagina);
+}
+A.more {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #550;
+}
+SUP {
+    font-size: 0.7em;
+    vertical-align: super;
+    line-height: 0;
+}
+DIV {
+ display: inline-block;
+}
+UL {
+    list-style-type: square;
+    margin: 1rem 2rem;
+}
+OL {
+    padding: 0 2rem;
+    margin: 1rem 0;
+}
+LI {
+    text-align: left;
+}
+IMG.badge {
+    height: 1.2rem;
+}
+
+DIV#cane-lele{
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+}
+DIV#cane-lele IMG {
+    width: 300px;
+    padding: 0.5rem;
+    border: solid 1px #550;
+}
+TABLE, TD, TR, TH {
+    border-collapse: collapse;
+    border: solid 1px #999;
+    padding: 0.25rem 0.5rem;
+    margin: 1rem auto;
+    font-size: 11pt;
+}
+
+TABLE TH {
+    font-weight: bold;
+    text-align: center !important;
+}
+
+/**
+ *
+ *  Stili per il manuale
+ *
+ */
+{
+}
+DIV.page {
+    min-height: 100vh;
+}
+HEADER titolo-2 {
+    float: unset
+}
+HEADER DIV.box.titoli {
+    width: 100%;
+}
+HEADER NAV.menu-top {
+    border: none;
+}
+HEADER NAV.menu-top A {
+    padding: 0.5rem 0;
+}
+HEADER NAV.menu-top A.center {
+    padding: 0.5rem 1rem;
+}
+FOOTER {
+}
+DIV.copertina {
+    text-align: center;
+    margin-top: 10vh;
+}
+DIV.copertina IMG.logo {
+    width: 260px;
+    display: inline-block;
+}
+DIV.copertina H1 {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 3rem;
+    color:#550;
+}
+DIV.copertina H2 {
+    padding: 0;
+    font-size: 1.4rem;
+}
+BODY.manuale.dedica {
+    margin: 20vh auto;
+}
+BODY.manuale.dedica P {
+    text-align: center;
+    max-width: 22rem;
+    margin: auto
+}
+SECTION.indice {
+ text-align: center;
+}
+SECTION.indice H1 {
+    margin: 3rem 0 2rem 0;
+}
+SECTION.indice .capitolo {
+    display: inline-block;
+    width: 420px;
+    margin: 1rem 0;
+}
+SECTION.indice .capitolo P {
+    font-size: 0.95em;
+    color: #888;
+    font-style: italic;
+    text-align: left;
+}
+SECTION.indice HR {
+    margin: 2rem 0
+}
+SECTION.indice H3 {
+    margin: 0 auto;
+    position: relative;
+/*    font-size: 1.3rem; */
+}
+SECTION.indice H3.home {
+    margin-top: 4rem;
+}
+SECTION.indice {
+ width: auto;
+ text-align: center
+}
+SECTION.indice IMG.logo {
+    width: 100px;
+    margin: auto
+}
+SECTION.indice IMG.badge
+{
+    position: absolute;
+    top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+H1 {
+    margin: 4rem 0 2rem 0;
+    text-align: center;
+}
+/** Nasconde il link alla dottrina */
+H1 A {
+    text-decoration: none;
+}
+P.code,
+PRE {
+    display: block;
+    padding: 1rem;
+    margin: 1rem 0;
+    overflow: auto;
+}
+P A {
+    color: #550;
+}
+UL {
+    margin: 1rem 0;
+    padding-left: 2.5rem;
+}
+
+/**
+ *  Le citazioni devono essere centrate, ma quelle estese
+ *  possono essere giustificate
+ */
+BLOCKQUOTE {
+    color: #333;
+    font-size: 14pt;
+    padding: 1em;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: center;
+}
+BLOCKQUOTE P {
+    text-align: left;
+    display: inline-block;
+}
+BLOCKQUOTE.spalla-sx {
+    padding-left: 2em;
+    text-align: left;
+}
+BLOCKQUOTE.giustificato {
+    text-align: justify;
+}
+
+/** Stile per le citazioni in testa */
+H1 + BLOCKQUOTE {
+    text-align: right;
+    padding: 2rem 0 4rem 33%;
+    font-size: 0.9em
+}
+
+SECTION.testo BLOCKQUOTE {
+    color: #543;
+    text-align: justify;
+    padding: 1rem 3rem;
+    margin: 1rem 0;
+		font-style: italic;
+		background-color: #f0f0f0;
+}
+
+BLOCKQUOTE H3 {
+    font-size: 1.2rem;
+}
+
+/** Tabelle nel testo */
+TABLE.memoria TD {
+    font-family: 'Inconsolata', monospace;
+    font-size: 10px;
+    width: 24px;
+    height: 24px;
+}
+TABLE.memoria TD.area {
+    background: #bbb;
+}
+
+TABLE.rgb,
+TABLE.rgb TR {
+    border: none;
+}
+TABLE.rgb TD {
+    border: none;
+    font-family: 'Inconsolata', monospace;
+    font-size: 10pt;
+    width: 30px;
+    height: 30px;
+}
+
+TABLE.rgb TD:nth-child(1) {
+    border: solid 1px #999;
+}
+TABLE.rgb TD:nth-child(2) {
+    min-width: 10rem;
+}
+/*
+BLOCKQUOTE.output {
+    text-align: justify;
+    background-color: #eee;
+    margin: 1rem auto;
+}
+BLOCKQUOTE.output DIV[id^="banner"] {
+    display: block;
+    height: 100px;
+    width: 200px;
+    border: solid 1px #999;
+    margin: 1rem auto;
+    background-color: #aaa;
+}
+*/
+/**  Dedica e citazione in testa */
+SECTION.dedica {
+    font-style: italic;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-left: 30%;
+    padding-bottom: 5rem;
+    text-align: right;
+    page-break-after: always;
+}
+
+SECTION.citazione SPAN {
+    font-style: normal
+}
+
+
 
 @media print {
   h1 {
     page-break-before: always;
   }
+
+	SECTION.dedica {
+			padding-top: 5rem;
+			page-break-before: always;
+	}
 }

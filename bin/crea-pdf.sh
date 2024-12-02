@@ -20,9 +20,9 @@ cd ${MAN_DIR}
 echo "Genero il file PDF completo"
 pandoc  --verbose                 						\
 				--css ${CSS_FILE}    				 					\
-				--title="C'hi++, il senso della vita" \
         --pdf-engine=wkhtmltopdf  					  \
 				--pdf-engine-opt="--print-media-type" \
+				--pdf-engine-opt="--title" 					  --pdf-engine-opt="C'hi++, il senso della vita" \
         --pdf-engine-opt="--header-left"      --pdf-engine-opt="C'hi++, il senso della vita è il debug"\
         --pdf-engine-opt="--header-right"     --pdf-engine-opt="[page] di [topage]" \
         --pdf-engine-opt="--header-font-name" --pdf-engine-opt="Simonetta"          \
@@ -38,8 +38,8 @@ pandoc  --verbose                 						\
         --pdf-engine-opt="--margin-bottom"    --pdf-engine-opt="3cm"                \
         --pdf-engine-opt="--margin-left"      --pdf-engine-opt="3cm"                \
 				--pdf-engine-opt="--page-size"        --pdf-engine-opt="A4"                 \
+				--pdf-engine-opt='cover'              --pdf-engine-opt="${OUT_DIR}/copertina.html" \
         $(<${MAN_FILE})             \
-				${YML_FILE}									\
 				-o ${OUT_DIR}/$FILENAME.pdf
 
 # rimuove i file .DS_Store"
