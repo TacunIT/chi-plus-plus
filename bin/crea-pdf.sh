@@ -25,12 +25,12 @@ pandoc  --verbose                 						\
 				--pdf-engine-opt="--title" 					  --pdf-engine-opt="C'hi++, il senso della vita" \
         --pdf-engine-opt="--header-left"      --pdf-engine-opt="C'hi++, il senso della vita è il debug"\
         --pdf-engine-opt="--header-right"     --pdf-engine-opt="[page] di [topage]" \
-        --pdf-engine-opt="--header-font-name" --pdf-engine-opt="Simonetta"          \
+        --pdf-engine-opt="--header-font-name" --pdf-engine-opt="Bookerly"          \
         --pdf-engine-opt="--header-font-size" --pdf-engine-opt="10"                 \
         --pdf-engine-opt="--header-spacing"   --pdf-engine-opt="10"                 \
         --pdf-engine-opt="--footer-left"      --pdf-engine-opt="Carlo Simonelli"    \
         --pdf-engine-opt="--footer-right"     --pdf-engine-opt="[date]"             \
-        --pdf-engine-opt="--footer-font-name" --pdf-engine-opt="Simonetta"          \
+        --pdf-engine-opt="--footer-font-name" --pdf-engine-opt="Bookerly"          \
         --pdf-engine-opt="--footer-font-size" --pdf-engine-opt="10"                 \
         --pdf-engine-opt="--footer-spacing"   --pdf-engine-opt="10"                 \
         --pdf-engine-opt="--margin-top"       --pdf-engine-opt="3cm"                \
