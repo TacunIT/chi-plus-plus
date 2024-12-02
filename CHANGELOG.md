@@ -1,3 +1,11 @@
+## 1.1.1 (December 02, 2024)
+  - Raggiunto un livello accettabile nella creazione automatica del PDF, anche se rimangono alcune anomalie di formattazione
+  - Importati i documenti Word del libro e della vecchia presentazione
+  - Rivisto il testo della Introduzione; aggiunta og-image
+  - Aggiunta introduzione
+  - Aggiunto script generazione pdf
+  - Completata prima stesura della presentazione per ENG
+
 ## 1.1.0 (November 27, 2024)
   - Spostate le note prima dei ringraziamenti
   - Spostata presentazione nella directory _book
