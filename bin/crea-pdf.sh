@@ -7,7 +7,7 @@ OUT_DIR=${BASE_DIR}/_book
 
 MAN_FILE=${OUT_DIR}/man-file.txt
 CSS_FILE=${BASE_DIR}/_sass/pdf.css
-YML_FILE=${BASE_DIR}/_data/pdf.yml
+YML_FILE=${OUT_DIR}/metadadata.yml
 
 FILENAME="chi-plus-plus"
 FILE_NEW=$FILENAME".md"
@@ -40,6 +40,7 @@ pandoc  --verbose                 						\
 				--pdf-engine-opt="--page-size"        --pdf-engine-opt="A4"                 \
 				--pdf-engine-opt='cover'              --pdf-engine-opt="${OUT_DIR}/copertina.html" \
         $(<${MAN_FILE})             \
+				${YML_FILE}									\
 				-o ${OUT_DIR}/$FILENAME.pdf
 
 # rimuove i file .DS_Store"
