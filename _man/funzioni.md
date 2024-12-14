@@ -1,6 +1,6 @@
 ---
 class:      capitolo
-layout:     manuale 
+layout:     manuale
 og_desc:    "Un suggerimento di Jacopone da Todi - Il problema dei romanzi - Le regole di vita di Myamoto Musashi - La Verità è una modella - La Via del carpentiere."
 og_img:     "/assets/img/og-img/funzioni.jpg"
 permalink:  "/man/funzioni"
@@ -31,17 +31,17 @@ Ogni volta che nel tuo codice ci sono delle istruzioni che si ripetono, valuta l
 Per esempio, nella funzione `main` del programma qui sopra ci sono delle funzioni di output ripetute, cosa che complica la lettura del codice, ne rende laboriosa la modifica e aumenta la probabilità di fare degli errori, perché sei tu che definisci la stringa con il nome del tipo di dato e devi fare attenzione a scrivere il valore giusto ogni volta:
 
 ```
-cout << setw(16) << "int: "; 
+cout << setw(16) << "int: ";
 ...
-cout << setw(16) << "unsigned int: "; 
+cout << setw(16) << "unsigned int: ";
 ...
-cout << setw(16) << "short int: "; 
+cout << setw(16) << "short int: ";
 ...
-cout << setw(16) << "unsigned short: "; 
+cout << setw(16) << "unsigned short: ";
 ...
-cout << setw(16) << "long int: "; 
+cout << setw(16) << "long int: ";
 ...
-cout << setw(16) << "unsigned long: "; 
+cout << setw(16) << "unsigned long: ";
 ```
 
 Nel caso specifico, si trattava di una scelta inevitabile perché, essendo uno dei primi esempii che ti ho fatto, non volevo complicarti troppo le idee, ma non è questo il modo corretto di scrivere codice.
@@ -52,9 +52,9 @@ Meglio lasciare che sia la funzione `dimensione` a gestire tutto l'output, mentr
 {% include_relative src/funzioni-limiti-modificato.cpp %}
 ```
 
-L'istruzione: 
+L'istruzione:
 
-``` 
+```
 abi::__cxa_demangle(typeid(T).name(), NULL, NULL, NULL);
 ```
 
@@ -92,7 +92,7 @@ float scorporaIVA(long stipendio, float aliquota)
 }
 ```
 
-Come ti ho detto quando abbiamo parlato dei <a href="/man/linguaggi-di-programmazione">linguaggi di programmazione</a>, la generazione di un file eseguibile avviene in due fasi: per prima cosa il compilatore converte il codice C++ in un *file oggetto*, poi il *linker* trasforma i file oggetto (potrebbero essere più d'uno) in un unico eseguibile. 
+Come ti ho detto quando abbiamo parlato dei <a href="/man/linguaggi-di-programmazione">linguaggi di programmazione</a>, la generazione di un file eseguibile avviene in due fasi: per prima cosa il compilatore converte il codice C++ in un *file oggetto*, poi il *linker* trasforma i file oggetto (potrebbero essere più d'uno) in un unico eseguibile.
 Perché questo processo possa funzionare, la *dichiarazione* di una funzione deve essere presente in tutti i brani di codice che la utilizzano, per consentire al compilatore di controllare che l'utilizzo che se ne fa sia corretto; la *definizione*, al contrario, deve comparire solo una volta.  
 
 ```
@@ -159,7 +159,7 @@ src/cpp/funzioni-stipendio-errore.cpp:13:18: error: use of undeclared identifier
 
 ```
 
-Quando si scrive un programma in un unico file sorgente, o si definiscono le diverse funzioni prima che vengano utilizzate, mettendo la funzione `main` in fondo, oppure le si deve dichiarare all'inizio del file. 
+Quando si scrive un programma in un unico file sorgente, o si definiscono le diverse funzioni prima che vengano utilizzate, mettendo la funzione `main` in fondo, oppure le si deve dichiarare all'inizio del file.
 (In realtà, non occorre metterle tutte all'inizio del file, basta che la dichiarazione preceda l'utilizzo, ma è più scomodo: mettile all'inizio.)  
 Avresti ottenuto un errore di compilazione anche se avessi provato a separare in due file distinti la funzione `main` e la funzione `dimensione` dell'esempio qui sopra, anche se avessi dichiarato `dimensione` prima del suo utilizzo nella funzione `main`:
 
@@ -201,7 +201,7 @@ src/cpp/funzioni-limiti-main.cpp:23:25: error: expected '(' for function-style c
 ```
 
 Questo avviene perché i `template` non sono vere funzioni, ma solo degli schemi che il compilatore utilizza per generare la versione corretta del codice.
-La dichiarazione delle funzioni template, quindi deve comprendere anche la loro definizione, per dare modo al compilatore di gestire appropriatamente la chiamata<a class="nota" href="/man/note#template" id="template"></a>.
+La dichiarazione delle funzioni template, quindi deve comprendere anche la loro definizione, per dare modo al compilatore di gestire appropriatamente la chiamata<a class="nota" href="/man/note#fn-template" id="template">1</a>.
 
 <hr id="inline">
 
@@ -223,7 +223,7 @@ Compilando ed eseguendo il codice qui sopra, ottieni:
 ```
 % g++ src/cpp/funzioni-inline-1.cpp -o src/out/esempio
 % ./src/out/esempio                                   
-ho aperto il file 
+ho aperto il file
 ho scritto sul file
 ho chiuso il file
 ```
@@ -246,7 +246,7 @@ inline void log(const char* messaggio)
 
  e compili nuovamente il programma, vedrai che la dimensione del file eseguibile è aumentata, perché il compilatore ha sostituito tutte le chiamate a funzione con una copia del codice della funzione stessa.
 <!-- @todo: specificare che il compilatore può decidere di non rendere inline la funzione -->
-Anche se le dimensioni dell'eseguibile sono aumentate, il codice è ancora facilmente leggibile e modificabile: 
+Anche se le dimensioni dell'eseguibile sono aumentate, il codice è ancora facilmente leggibile e modificabile:
 
 ```
 {% include_relative src/funzioni-inline-3.cpp %}
@@ -275,7 +275,7 @@ Per la cronaca: nel secondo caso, il programma fallisce perché l'utente non ha 
 
 L'esistenza di una funzione `inline` ricorda un po' un passo del <i>Samyutta Nikaya</i>:
 
- > Non esiste distinzione fra un essere, la sua funzione e il tempo della sua apparizione. Gli esseri appaiono dalla non-esistenza, esistono per un istante e poi cessano di esistere. La loro esistenza, attività e azione sono un'unica cosa. Passato e futuro sono meri nomi.<a class="nota" href="/man/note#samyutta" id="samyutta"></a>
+ > Non esiste distinzione fra un essere, la sua funzione e il tempo della sua apparizione. Gli esseri appaiono dalla non-esistenza, esistono per un istante e poi cessano di esistere. La loro esistenza, attività e azione sono un'unica cosa. Passato e futuro sono meri nomi.<a class="nota" href="/man/note#fn-samyutta" id="samyutta">2</a>
 
 In generale, comunque, il ciclo di vita di una funzione prevede tre fasi distinte: la *dichiarazione*, la *definizione* e il suo successivo utilizzo:
 
@@ -327,7 +327,7 @@ L'output di questo programma sarà:
 
 ```
 % g++ src/cpp/funzioni-parametri-default.cpp -o src/out/esempio
-% src/out/esempio 
+% src/out/esempio
 Valore: 123
 Valore: 0
 ```
@@ -348,7 +348,7 @@ Per esempio, se la funzione `log` che abbiamo visto nell'esempio precedente foss
 inline void log(const char* messaggio, int livello = LOG_AVVISO);
 ```
 
-rendendo la scrittura del codice più facile e veloce: 
+rendendo la scrittura del codice più facile e veloce:
 
 ```
 log("ho aperto il file");
@@ -362,20 +362,20 @@ log("ho chiuso il file");
 
 <hr id="parametri-variabili">
 
-In una delle nostre 
-<a href="/man/programmatore" class="xref">prime chiacchierate</a>, 
+In una delle nostre
+<a href="/man/programmatore" class="xref">prime chiacchierate</a>,
 ti ho detto che il Buon Programmatore, mentre scrive il codice, si chiede sempre se possa esistere sistema più efficiente di fare ciò che sta facendo.
-Oggi ne hai avuto una dimostrazione: abbiamo migliorato il primo esempio del paragrafo sulle funzioni `inline` unificando la gestione dei messaggi in un'unica funzione e poi l'abbiamo migliorato ancora rendendo quella funzione `inline`. 
+Oggi ne hai avuto una dimostrazione: abbiamo migliorato il primo esempio del paragrafo sulle funzioni `inline` unificando la gestione dei messaggi in un'unica funzione e poi l'abbiamo migliorato ancora rendendo quella funzione `inline`.
 C'è un problema, però: l'output del programma:
 
 ```
 % ./src/out/esempio                                   
-ho aperto il file 
+ho aperto il file
 ho scritto sul file
 ho chiuso il file
 ```
 
-va bene solo se il file da gestire è uno solo, come nel nostro caso. 
+va bene solo se il file da gestire è uno solo, come nel nostro caso.
 Se però ci fossero due (o più) file di input o di output, sarebbe utile sapere a *quale* file si riferisca il messaggio.
 Per risolvere il problema, potremmo aumentare il numero di parametri formali della funzione `log`:
 
@@ -409,7 +409,7 @@ int printf(const char *format, ...) ;
 /** Utilizzo */
 printf("stringa: %s; intero: %d", "codice errore", -1);
 
-``` 
+```
 
 Per indicare degli argomenti variabili, nella dichiarazione di una funzione, si utilizzano tre punti, dopo i parametri fissi:
 
@@ -444,7 +444,7 @@ L'output di questo codice è:
 % src/out/esempio                    
   errore | specificare il path del file
 
-% src/out/esempio /esempio.txt 
+% src/out/esempio /esempio.txt
   errore | impossibile aprire il file:/esempio.txt
 
 % src/out/esempio src/out/esempio.txt
@@ -471,7 +471,7 @@ Se compili ed esegui questo codice, ottieni:
 ```
 
 Attenzione, però: una funzione che richiama sé stessa, se non è scritta bene, può generare una ricorsione in[de]finita, come due specchi posti l'uno di fronte all'altro.
-Lo spazio prospettico all'interno degli specchi è inesauribile, ma la memoria dei computer, per quanto estesa, ha i suoi limiti e un numero eccessivo di ricorsioni potrebbe generare uno *stack overflow*.<a href="/man/note#stack" class="nota" id="stack"></a> 
+Lo spazio prospettico all'interno degli specchi è inesauribile, ma la memoria dei computer, per quanto estesa, ha i suoi limiti e un numero eccessivo di ricorsioni potrebbe generare uno *stack overflow*.<a href="/man/note#fn-stack" class="nota" id="stack">3</a>
 Per questo motivo, bisogna ricorrere alla ricorsione solo nei casi in cui è indispensabile, preferendole, quando possibile, le [istruzioni iterative](https://chiplusplus.org/man/istruzioni-iterative) e applicando sempre dei meccanismi di controllo della profondità di ricorsione che prevengano un sovraccarico dello stack.  
 Un altro tipo di ricorsione di cui diffidare è quella con cui si cerca, alle volte, di dare credibilità a una convinzione priva di fondamenti reali utilizzando un'altra convinzione simile.   
 
@@ -479,7 +479,7 @@ Un altro tipo di ricorsione di cui diffidare è quella con cui si cerca, alle vo
 
 In un romanzo sulla vita dello spadaccino giapponese Myamoto Musashi c'è una frase che è la logica conseguenza del suggerimento di Jacopone da Todi:
 
->Non bisogna interferire nel funzionamento dell’Universo, ma prima è necessario capire quale sia, il funzionamento dell’Universo<a href="/man/note#musashi" class="nota" id="musashi"></a>
+>Non bisogna interferire nel funzionamento dell’Universo, ma prima è necessario capire quale sia, il funzionamento dell’Universo<a href="/man/note#fn-musashi" class="nota" id="musashi">4</a>
 
 Il problema dei romanzi è che ti dicono spesso cosa fare, ma non ti spiegano quasi mai come farlo, o perché.  
 Diffida dei maestri che sanno solo insegnare, perché tutto ciò che ti raccontano l'hanno imparato dai libri.
@@ -487,12 +487,12 @@ Un buon maestro deve eccellere in qualcosa, che sia la scherma, il tiro con l'ar
 Può non essere *il* migliore, ma deve essere *fra i* migliori; solo così, saprai che le sue idee sono valide.
 Al contrario, i maestri che non sono mai usciti da una scuola, non hanno mai dovuto mettere le loro idee alla prova dei fatti.
 Ti insegnano ciò che pensano sia giusto, ma ciò che è giusto o vero in una scuola, non sempre è altrettanto vero o giusto nel mondo reale.  
-È facile essere dei santi, in un monastero, fra persone che hanno la tua stessa cultura<!-- qui, in senso letterale --> e i tuoi stessi principii; il difficile è restare dei santi anche fuori. 
+È facile essere dei santi, in un monastero, fra persone che hanno la tua stessa cultura<!-- qui, in senso letterale --> e i tuoi stessi principii; il difficile è restare dei santi anche fuori.
 Il Buddha Shakyamuni predicò la Benevolenza Universale perché visse in India, duemilaseicento anni fa, ma se fosse rimasto imbottigliato nel traffico di una città, dopo una giornata di lavoro, forse le sue idee sarebbero state più simili a quelle di Nietzsche.  
-Per fortuna, Musashi &mdash; quello vero, il Samurai &mdash;, fu sempre molto chiaro sia su ciò che è giusto fare che sul modo di ottenerlo. 
+Per fortuna, Musashi &mdash; quello vero, il Samurai &mdash;, fu sempre molto chiaro sia su ciò che è giusto fare che sul modo di ottenerlo.
 Nel *Libro dei Cinque Anelli*, diede ai suoi discepoli nove regole di vita:
-<!-- 
- @todo: verificare la traduzione di questi punti e dei successivi 
+<!--
+ @todo: verificare la traduzione di questi punti e dei successivi
  @nota: uso il nome (Musashi) in vece del cognome (Myamoto), così come direi "Raffaello" o "Michelangelo".
 -->
 
@@ -502,7 +502,7 @@ Nel *Dokkodo*, scritto una settimana prima della sua morte, fu ancora più speci
 
 > {{ site.data.citazioni.musashi.dokkodo }}
 
-Queste regole, che hanno permesso a Musashi di arrivare alla venerabile età di sessant'anni<a href="/man/note#eta" class="nota" id="eta"></a>, dopo essere sopravvissuto vittorioso ad altrettanti combattimenti con tutti i migliori spadaccini del suo tempo, possono aiutarti a capire quale sia il funzionamento dell'Universo e cosa fare per non perturbarlo.  
+Queste regole, che hanno permesso a Musashi di arrivare alla venerabile età di sessant'anni<a href="/man/note#fn-eta" class="nota" id="eta">5</a>, dopo essere sopravvissuto vittorioso ad altrettanti combattimenti con tutti i migliori spadaccini del suo tempo, possono aiutarti a capire quale sia il funzionamento dell'Universo e cosa fare per non perturbarlo.  
 La pratica delle arti, siano esse intellettuali o marziali, e la conoscenza dei mestieri, unite all'attenzione per tutto ciò che ti circonda, aumenteranno il tuo bagaglio di esperienza e ti permetteranno di distinguere i pro e i contro di ogni situazione.
 Questo ti libererà dal demone dell'invidia, perché imparerai che tutte le  condizioni, anche quelle apparentemente idilliache, hanno dei lati negativi.
 Il passo successivo sarà affrancarsi dal desiderio e dall'attaccamento alle cose: così come la funzione `log` ha bisogno di sapere quali siano i parametri fissi e quali siano quelli variabili, tu dovrai imparare a distinguere i tuoi desiderii dalle tue necessità, per sfuggire all'influsso dell'Annosa Dicotomia.  
@@ -510,28 +510,28 @@ La Via, con la "V" maiuscola è simile a una via con la "v" minuscola.
 Lungo la via, incontri dei cartelli stradali, che ti indicano la direzione in cui procedere o la velocità da tenere, e dei cartelloni pubblicitarii, che ti segnalano delle attrazioni nelle vicinanze e ti invitano a deviare dal tuo cammino per andarle a visitare.
 Allo stesso modo, lungo la Via, troverai delle necessità, che ti instraderanno verso la tua destinazione e dei desiderii, che ti dis-trarranno dal tuo percorso e ti at-trarranno verso destinazioni alternative.
 Se tu agirai in base alle necessità, saprai sempre che ti stai muovendo nella direzione giusta, anche quando sarai costretto a rallentare o a percorrere strade che non gradisci.
-Se invece agirai in base ai desiderii andrai di qua e di là, come “un asino privo di briglie”<a href="/man/note#briglie" class="nota" id="briglie"></a> e quando alla fine tornerai sulla strada giusta, potresti non avere più il tempo per arrivare alla tua destinazione.
+Se invece agirai in base ai desiderii andrai di qua e di là, come “un asino privo di briglie”<a href="/man/note#fn-briglie" class="nota" id="briglie">6</a> e quando alla fine tornerai sulla strada giusta, potresti non avere più il tempo per arrivare alla tua destinazione.
 
 <hr id="verita">
 
 Ti ho parlato delle regole di Musashi non perché siano le uniche disponibili, ma perché sono estremamente personali.
 Attingono ai principii di altre discipline, come il Buddismo, il Bushido o il Tao, ma sono *something else*, come direbbe Eddie Cochran.
 Tu dovrai fare altrettanto: imparare tutto ciò che puoi, tanto dai buoni quanto dai cattivi maestri, e poi definire le tue regole di vita, che potranno essere uguali, simili o del tutto differenti da quelle che ti sono state insegnate.   
-La Via, così come la Verità, è una modella, che ciascuno di noi ritrae dal suo punto di vista, cercando di intuire il corpo che si cela dietro alle pieghe del drappeggio. 
+La Via, così come la Verità, è una modella, che ciascuno di noi ritrae dal suo punto di vista, cercando di intuire il corpo che si cela dietro alle pieghe del drappeggio.
 Ritrarla nello stesso modo in cui l'ha fatto un altro sarebbe sbagliato, perché il tuo punto di vista non è uguale al suo, ma guardarla da più punti di vista può aiutarti a capire meglio la sua forma.
 Musashi dice di prestare attenzione anche alle cose insignificanti, Nan-in e Tenno sviluppano il loro *Zen di ogni istante*, Wittgenstein nei suoi *Diari*, scrive:
 
 > {{ site.data.citazioni.wittgenstein.diari }}
 
 È chiaro che stanno tutti dipingendo la stessa immagine, anche se ciascuno lo fa con il suo stile.
-È per questo motivo, che Musashi prescrive di conoscere la Via degli altri mestieri: perché c'è sempre qualcosa da imparare, da chi fa bene il suo lavoro. 
+È per questo motivo, che Musashi prescrive di conoscere la Via degli altri mestieri: perché c'è sempre qualcosa da imparare, da chi fa bene il suo lavoro.
 Questo, per esempio, è il parallelo che lui fa fra lo stratega e il carpentiere:
 
-> {{ site.data.citazioni.musashi.cinque-anelli.carpentiere }}<a href="/man/note#5anelli" class="nota" id="5anelli"></a>
- 
+> {{ site.data.citazioni.musashi.cinque-anelli.carpentiere }}<a href="/man/note#fn-5anelli" class="nota" id="5anelli">7</a>
+
 Ciò che è vero per il carpentiere, cambiando il punto di vista, è vero anche per lo stratega e potrà esserlo anche per te, se ti troverai ai gestire un progetto o un gruppo di lavoro.
 Anche come programmatore, comunque, dovrai tenerti costantemente aggiornato sulle tecniche e sui linguaggi di programmazione e dovrai conoscere il modo in cui lavora chi si occupa delle basi-dati o dei sistemi.
 Dovrai essere capace di identificare i malfunzionamenti anche se non hanno effetti sull'interfaccia grafica e potrai riuscirci solo se presterai attenzione anche al più piccolo dettaglio.
 Cambiano i nomi, perché sono passati quattro secoli, ma i problemi restano gli stessi, così come le soluzioni.  
-Del resto, arte, scienza, filosofia e religione sono tutti tentativi di dare una risposta alle stesse domande sulla nostra esistenza. 
+Del resto, arte, scienza, filosofia e religione sono tutti tentativi di dare una risposta alle stesse domande sulla nostra esistenza.
 Dato che l'oggetto di studio è lo stesso, è più che normale che, alle volte, le risposte si somiglino, allo stesso modo in cui l'algoritmo per il calcolo del fattoriale di un numero sarà più o meno lo stesso, indipendentemente dal linguaggio di programmazione.  

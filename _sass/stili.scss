@@ -87,6 +87,7 @@
 
 H1, H2, H3, H4 {
     margin: auto;
+		page-break-after: avoid;
 }
 H1 {
     font-size: $fontSizeH1;
@@ -172,11 +173,12 @@ A.nota {
     display: inline-block;
     margin-left: 2px;
 }
-/** Numerazione automatica solo nel Manuale */
+/** Numerazione automatica solo nel Manuale
 BODY.manuale A.nota::after {
     counter-increment: note-pagina;
     content: counter(note-pagina);
 }
+*/
 A.more {
     font-weight: bold;
     font-size: 0.9rem;
