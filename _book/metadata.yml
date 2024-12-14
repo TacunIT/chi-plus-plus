@@ -10,5 +10,7 @@ documentclass: book
 header-includes: |
   \usepackage{footnotebackref}
   \usepackage{chngcntr}
-  \counterwithout{footnote}{chapter}
+  \includepackage{endnotes}
+  \let\footnote=\endnote
+  \counterwithin*{footnote}{chapter}
 ---
