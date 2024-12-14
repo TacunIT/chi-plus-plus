@@ -305,16 +305,16 @@ Come sai, per il C'hi++ la scelta esatta (inteso come participio passato del ver
 > Son membra d’un corpo solo i figli di Adamo,
 da un’unica essenza quel giorno creati.
 E se uno tra essi a sventura conduca il destino,
-per le altre membra non resterà riparo.<a class="nota" href="/man/note#saadi" id="saadi"></a>
+per le altre membra non resterà riparo.<a class="nota" href="/man/note#fn-saadi" id="saadi">1</a>
 
 Cercare il proprio tornaconto personale a discapito degli altri è sbagliato.
 Bisogna comportarsi bene e cercare di convincere anche gli altri a fare altrettanto, perché, come recita il *Mantiq al-Tayr*:
 
 > tutto il male o il bene che feci,
-in verità lo feci solo a me stesso<a class="nota" href="/man/note#mantiq" id="mantiq"></a>.
+in verità lo feci solo a me stesso<a class="nota" href="/man/note#fn-mantiq" id="mantiq">2</a>.
 
 Ma come si fa a capire cosa sia *bene*?
-Ci sono casi in cui è facile dare la scelta giusta, come nel caso del maestro Zen Bokuju<a class="nota" href="/man/note#bokuju" id="bokuju"></a>:
+Ci sono casi in cui è facile dare la scelta giusta, come nel caso del maestro Zen Bokuju<a class="nota" href="/man/note#fn-bokuju" id="bokuju">3</a>:
 
 ```
 switch( stimolo ) {
@@ -344,9 +344,9 @@ Il problema è che se privi la giurisprudenza di una base spirituale, quello che
 Nella migliore delle ipotesi.  
 La teocrazia è un errore, ma anche la *a*-teocrazia dev'essere evitata.
 La Fede è stata la colla che ha tenuto unita la nostra società per quasi duemila anni.
-Gran parte di quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, il denaro, i Diritti Umani, le Leggi<a class="nota" href="/man/note#sapiens" id="sapiens"></a>.
+Gran parte di quella colla era solo una nostra invenzione, ma lo sono anche gli Stati, il denaro, i Diritti Umani, le Leggi<a class="nota" href="/man/note#fn-sapiens" id="sapiens">4</a>.
 Nessuno di questi concetti così importanti per la nostra Società esiste davvero, ma li utilizziamo lo stesso perché, come il linguaggio *C*, pur essendo solo delle convenzioni, sono utili al loro scòpo.  
-Ora che questa colla non c'è più, le scelte dei legislatori non sono più mosse dal perseguimento di un obiettivo comune (corretto o sbagliato che fosse), ma dalla ricerca dell'approvazione di un elettorato composto in buona parte da zombie culturali<a class="nota" href="/man/note#istat" id="istat"></a> e da egoisti che perseguono unicamente il proprio interesse momentaneo: il pascolo ideale per demagoghi con aspirazioni dittatoriali.
+Ora che questa colla non c'è più, le scelte dei legislatori non sono più mosse dal perseguimento di un obiettivo comune (corretto o sbagliato che fosse), ma dalla ricerca dell'approvazione di un elettorato composto in buona parte da zombie culturali<a class="nota" href="/man/note#fn-istat" id="istat">5</a> e da egoisti che perseguono unicamente il proprio interesse momentaneo: il pascolo ideale per demagoghi con aspirazioni dittatoriali.
 La minoranza di idealisti e di persone colte, priva di valori trascendenti, non può che agire in base ai propri sentimenti o ai propri auspici e subisce inevitabilmente il malefico influsso dell'Annosa Dicotomia: fanno scelte che puntano al bene comune, ma si tratta di un bene comune molto spesso miope e temporaneo.
 Come scacchisti mediocri, vedono ciò che è bene qui e ora, ma non riescono a valutarne le conseguenze a lungo termine.  
 Pensa a quale potrebbe essere, secondo te, la soluzione giusta alle due domande che ti ho fatto e poi pensa al *motivo* quella soluzione ti appare giusta.
@@ -363,7 +363,7 @@ Il Maestro Canaro si fece molti nemici con la sue idee sull'aborto.
        nella vita, è possibile, ma non tre volte l'anno. -->
 Anche alcune persone che inizialmente lo avevano appoggiato lo accusarono di cercare l'appoggio della Chiesa Cattolica, mentre stava solo applicando il precetto del *Metta Sutra* che predica la felicità non solo per tutti coloro che sono nati, ma anche per coloro che devono nascere:
 
-> bhåtà và sambhavesã và sabbe sattà bhavantu sukhitattà<a class="nota" href="/man/note#metta" id="metta" ></a>
+> bhåtà và sambhavesã và sabbe sattà bhavantu sukhitattà<a class="nota" href="/man/note#fn-metta" id="metta" >6</a>
 
 <p class="metta">
 <i>bhåtà</i> quelli che sono nati<br />  
@@ -399,7 +399,7 @@ int pentimento( azione ){
 ```
 Se il peccatore è davvero pentito, allora è giusto che sia assolto, perché, come dice Attar:
 
-> Cento Mondi di peccato sono dissipati dalla luce di un solo pentimento<a class="nota" href="/man/note#pentimento" id="pentimento"></a>.
+> Cento Mondi di peccato sono dissipati dalla luce di un solo pentimento<a class="nota" href="/man/note#fn-pentimento" id="pentimento">7</a>.
 
 Ma il pentimento dev'essere reale: il peccatore deve detestare il suo errore e scegliere di morire piuttosto che ripeterlo ancora.  
 Tagliare una mano a chi ruba, costringendolo a portare il cibo alla bocca con la stessa mano con cui si pulisce il sedere, è un metodo un po' drastico, ma efficace per costringere qualcuno a meditare sull'insensatezza delle sue azioni passate &mdash; specie in un luogo come il deserto, dove i bidet sono più rari che in Francia.
@@ -412,7 +412,7 @@ Se non è utile al miglioramento, possiamo considerarlo alla stessa stregua del 
 
 > Nansen un giorno vide i monaci delle sale Orientali e Occidentali che litigavano per un gatto.
 Egli sollevò il gatto e disse: “Se mi direte una parola di Zen, salverò il gatto; se no, lo ucciderò”.  
-Nessuno seppe rispondere e Nansen tagliò il gatto in due<a class="nota" href="/man/note#nansen" id="nansen" ></a>.
+Nessuno seppe rispondere e Nansen tagliò il gatto in due<a class="nota" href="/man/note#fn-nansen" id="nansen" >8</a>.
 
 La morte del condannato, però, se mai dovesse rendersi necessaria, non deve essere considerata una vendetta di cui gioire, ma un evento tanto doloroso quanto inevitabile, di cui dolersi come di un'amputazione.
 Ciascuno, in quel giorno, dovrebbe chiedersi se, con *pensieri, parole, opere e omissioni*, non abbia contribuito in qualche modo a quella perdita.

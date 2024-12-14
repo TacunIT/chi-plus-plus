@@ -11,13 +11,13 @@ title:      Gli operatori
 
 La varietà e soprattutto l'adattabilità degli operatori sono la caratteristica principale del C++.  
 
-Gli operatori sono degli elementi del linguaggio che permettono, appunto, di *operare* delle azioni sulle variabili o sui valori. 
+Gli operatori sono degli elementi del linguaggio che permettono, appunto, di *operare* delle azioni sulle variabili o sui valori.
 Li possiamo classificare o in base al numero di operandi su cui agiscono:
 
 - primarii
 - unarii
-- binarii 
-- ternarii 
+- binarii
+- ternarii
 
 o, in maniera più funzionale al tuo libro, in base al tipo di operazione che compiono:
 
@@ -28,11 +28,11 @@ o, in maniera più funzionale al tuo libro, in base al tipo di operazione che co
 - assegnazione
 
 Gli operatori *aritmetici* sono quelli che permettono di eseguire delle comuni operazioni di addizione, sottrazione, divisione o moltiplicazione sulle variabili:
- 
+
 | nome  | descrizione  | esempio   |
 |:-:|:-:|:-:|
-| +   | addizione       | x + y | 
-| -   | sottrazione     | x - y | 
+| +   | addizione       | x + y |
+| -   | sottrazione     | x - y |
 | \*  | moltiplicazione | x * y |  
 | \\  | divisione       | x / y |   
 | %   | modulo          | x % y |   
@@ -50,16 +50,16 @@ Quando questi operatori precedono la variabile, l'incremento o il decremento è 
 Se compili ed esegui questo codice, ottieni:
 
 ```
-> g++ src/cpp/operatori-pre-post.cpp -o src/out/esempio 
+> g++ src/cpp/operatori-pre-post.cpp -o src/out/esempio
 > src/out/esempio                                       
 pre-incremento: 6
 post-incremento:7
 pre-decremento: 5
 post-decremento:8
 ```
-  
+
 Gli operatori *di relazione* permettono di verificare il rapporto fra due variabili:
- 
+
 | nome  | descrizione  | esempio  |
 |:-:|:-:|:-:|
 | == | uguaglianza         | x == x |
@@ -70,14 +70,14 @@ Gli operatori *di relazione* permettono di verificare il rapporto fra due variab
 | <= | minore o uguale a   | x <= y |
 
 Questi operatori tornano un valore booleano, vero o falso a seconda che la condizione sia verificata o no.  
-L'operatore `==` torna `true` se gli operandi sono uguali, come nel verso: 
+L'operatore `==` torna `true` se gli operandi sono uguali, come nel verso:
 
-> {{ site.data.citazioni.attar }} <a class="nota" href="/man/note#attar" id="attar"></a>
+> {{ site.data.citazioni.attar }} <a class="nota" href="/man/note#fn-attar" id="attar">1</a>
 
- 
+
 L'operatore `!=` torna `true` se gli operandi non sono uguali; gli operatori `>` e `<` tornano `true`, rispettivamente, se l'operatore a sinistra è maggiore o minore dell'operando a destra; gli operatori `>=` e `<=` tornano `true` se l'operando a sinistra è maggiore o uguale oppure minore o uguale a quello a destra.  
 Gli operatori *logici* permettono di compiere delle operazioni di logica booleana sulle variabili:
- 
+
 | nome  | descrizione  | esempio  |
 |:-:|:-:|:-:|
 | &&   | AND logico    | x && y |
@@ -86,7 +86,7 @@ Gli operatori *logici* permettono di compiere delle operazioni di logica boolean
 
 L'operatore `&&` torna `true` se entrambe le variabili sono `true`; l'operatore `||` torna `true` se almeno una delle variabili è `true`; l'operatore `!` inverte il valore dell'operando: se è `true`, torna `false` e viceversa.  
 Gli operatori binarii, o: *bitwise* permettono di effettuare delle operazioni sui valori binarii delle variabili:
-  
+
 | nome  | descrizione  | esempio  |
 |:-:|:-:|:-:|
 | &  | AND              | x & y  |
@@ -96,14 +96,14 @@ Gli operatori binarii, o: *bitwise* permettono di effettuare delle operazioni su
 | >> | shift a destra   | x >> y |
 | << | shift a sinistra | x << y |
 
-L'operatore `&` imposta a 1 un bit nel risultato se quel bit è 1 in entrambi gli operandi. 
-L'operatore `|` imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi. 
-L'operatore `^` imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi, ma non nell'altro. 
+L'operatore `&` imposta a 1 un bit nel risultato se quel bit è 1 in entrambi gli operandi.
+L'operatore `|` imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi.
+L'operatore `^` imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi, ma non nell'altro.
 L'operatore `~` inverte i bit dell'operando.
 Gli operatori `<<` e `>>` spostano rispettivamente a sinistra e a destra i bit dell'operando di destra per il numero di bit specificato dall'operando di destra.  
 <!-- @todo: spiegare a cosa servano e perché siano utili per "rispettare" la memoria del computer -->
 Gli operatori *di assegnazione* eseguono le operazioni che abbiamo visto finora e, in più, assegnano il valore risultante all'operando di sinistra:
- 
+
 | nome  | descrizione  | esempio  |
 |:-:|:-:|:-:|
 | =   | uguaglianza      | x = x   |
@@ -192,7 +192,7 @@ L'operatore di *cast* `()` permette di modificare il tipo di una variabile e lo 
 ```
 const char getSesso() const {        
     return (char)_sesso;
-} 
+}
 ```
 
 L'operatore condizionale `()?:` è l'unico operatore ternario del C++ e permette di scegliere fra due espressioni a seconda dell'esito di una condizione.
@@ -218,7 +218,7 @@ if(a > b) {
 }
 ```
 
-L'operatore virgola `,` serve ad alterare il modo in cui vengono valutate le espressioni. 
+L'operatore virgola `,` serve ad alterare il modo in cui vengono valutate le espressioni.
 Quando due o più espressioni sono separate dall’operatore virgola, i risultati delle espressioni a sinistra sono ignorati e viene mantenuto solo il risultato dell'espressione più a destra.
 In questa espressione, per esempio, alle variabili `a` e `b` è prima assegnato il valore 1 e poi la variabile `b` è incrementata di 2:
 
@@ -232,7 +232,7 @@ il valore finale di `a` e `b` sarà quindi di 1 e 3, mentre nell'espressione qui
 a = b = 1, b = b + 2, b = b - 1;          
 ```
 
-Gli operatori `.` e `->` servono a identificare i membri di una classe o di un altro dato aggregato. 
+Gli operatori `.` e `->` servono a identificare i membri di una classe o di un altro dato aggregato.
 Se  ti ricordi (ne dubito), li abbiamo visti per la prima volta parlando del <a href="/man/c-plus-plus#membro">polimorfismo</a> e li utilizzeremo quando ci occuperemo delle classi.  
 Gli operatori `&` e `*`, infine, tornano, rispettivamente, l'indirizzo di memoria di una variabile e un puntatore a una variabile:
 
@@ -243,7 +243,7 @@ Gli operatori `&` e `*`, infine, tornano, rispettivamente, l'indirizzo di memori
 Se compili ed esegui questo codice, otterrai:
 
 ```
-> g++ src/cpp/operatori-altri.cpp -o src/out/esempio 
+> g++ src/cpp/operatori-altri.cpp -o src/out/esempio
 > src/out/esempio                                    
 &a: 0x7ffee65bba5c
 sa: 4
@@ -253,7 +253,7 @@ c : $
 ```
 <hr id="risoluzione">
 
-L'ultimo operatore di cui dobbiamo parlare è anche quella con il nome più lungo: l’operatore di *risoluzione del campo d’azione* `::`. 
+L'ultimo operatore di cui dobbiamo parlare è anche quella con il nome più lungo: l’operatore di *risoluzione del campo d’azione* `::`.
 Oltre ad altri utilizzi connessi con la gestione dei dati delle classi, di cui parleremo in seguito, questo operatore permette di riferirsi a delle variabili con visibilità globale anche nei casi in cui queste vengano oscurate dalla ridefinizione di variabili locali con lo stesso nome:
 
 ```
@@ -262,31 +262,31 @@ Oltre ad altri utilizzi connessi con la gestione dei dati delle classi, di cui p
 Compilando ed eseguendo questo codice, ottieni:
 
 ```
-> g++ src/cpp/operatori-risoluzione.cpp -o src/out/esempio 
+> g++ src/cpp/operatori-risoluzione.cpp -o src/out/esempio
 > ./src/out/esempio                                       
 Stringa locale
 Stringa globale
 ```
 
-<!-- 
-@todo: aggiungere nota su overload degli operatori 
+<!--
+@todo: aggiungere nota su overload degli operatori
 
 -->
 
 <hr id="dottrina">
 
 La definizione dei concetti di *vero* e di *falso* è sempre frutto di un arbitrio. È inevitabile.
-Per i filosofi è *vero* tutto ciò che può essere descritto con le parole; per gli scienziati, tutto ciò che può essere descritto dalla matematica; per gli informatici è *vero* tutto quello che può essere descritto dal codice. 
+Per i filosofi è *vero* tutto ciò che può essere descritto con le parole; per gli scienziati, tutto ciò che può essere descritto dalla matematica; per gli informatici è *vero* tutto quello che può essere descritto dal codice.
 <!-- v. Kant citato da Hertha von Dechend nella prefazione tedesca a Il Mulino di Amleto -->
 Possiamo definire *falso* come il contrario di *vero*, ma non possiamo dedurre o inferire il concetto di *vero* perché, quale che sia la definizione prescelta, prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo ancora cosa sia, effettivamente, *vero*.    
-Bertrand Russell disse che la condizione di *vero* o di *falso* è uno stato dell'organismo, determinato da condizioni esterne all'organismo;<a class="nota" href="/man/note#russell" id="russell"></a> è un'affermazione vera.. o, meglio, *valida* anche per i computer: i valori booleani *vero* e *falso* sono due stati possibili per un'istruzione e spesso dipendono da condizioni esterne all'istruzione stessa, come la presenza di un file o un'azione dell'utente.
-La cosa interessante è che, anche per i computer, i valori che vengono interpretati come *vero* e *falso* sono del tutto arbitrarii e spesso specifici per un dato sistema. 
+Bertrand Russell disse che la condizione di *vero* o di *falso* è uno stato dell'organismo, determinato da condizioni esterne all'organismo;<a class="nota" href="/man/note#fn-russell" id="russell">2</a> è un'affermazione vera.. o, meglio, *valida* anche per i computer: i valori booleani *vero* e *falso* sono due stati possibili per un'istruzione e spesso dipendono da condizioni esterne all'istruzione stessa, come la presenza di un file o un'azione dell'utente.
+La cosa interessante è che, anche per i computer, i valori che vengono interpretati come *vero* e *falso* sono del tutto arbitrarii e spesso specifici per un dato sistema.
 Prendi per esempio i programmi che gestiscono le basi di dati: per *Access*, il valore booleano *false* è `-1`; per le prime versioni di *MySQL* è `f`; per Postgres o Oracle, è `0`.  
-Il computer non ha *in sé* il concetto di *vero* o di *falso*, ma solo l'associazione dei valori booleani *true* e *false* a una determinata sequenza di bit. 
+Il computer non ha *in sé* il concetto di *vero* o di *falso*, ma solo l'associazione dei valori booleani *true* e *false* a una determinata sequenza di bit.
 *Vero* e di *falso*, quindi, sono dei valori simbolici che noi inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è proprio del nostro mondo; un riferimento esogeno che può generare delle apparenti contraddizioni come, per esempio, il fatto che tutti i valori digitali siano basati su grandezze analogiche (la carica magnetica di un nastro, un'infossatura nella superficie di un CD o la tensione all'interno di un circuito), o dei veri e proprii paradossi, come il fatto che, nelle schede perforate, il valore `1` sia associato al vuoto del foro, mentre il valore `0` sia associato alla presenza della carta; di fatto, una negazione logica della realtà.  
-Questi paradossi, apparenti o reali che siano, non causano alcun problema al sistema, a patto vengano condivisi da tutti gli attori al suo interno. 
+Questi paradossi, apparenti o reali che siano, non causano alcun problema al sistema, a patto vengano condivisi da tutti gli attori al suo interno.
 Il paradosso delle schede perforate (buco = 0, carta = 1) era condiviso sia dalle macchine Hollerith che dalle perforatrici delle schede, perciò, le elaborazioni che ne derivavano erano corrette, indipendentemente dal valore relativo attribuito ai concetti di *vero* e di *falso* all'interno del sistema.
-Da questo punto di vista, non possiamo che dare ragione a William James, quando dice che un'idea è *vera* fintanto che credere in essa è utile per le nostre vite. 
+Da questo punto di vista, non possiamo che dare ragione a William James, quando dice che un'idea è *vera* fintanto che credere in essa è utile per le nostre vite.
 
 <hr id="effimeri">
 
@@ -296,7 +296,7 @@ Comunque, una delle persone più ricche che ho conosciuto non poteva avere figli
 Possedeva case in diversi Paesi, uno yacht e perfino un aereo personale, ma non poteva avere qualcosa che anche l'uomo più povero della Terra può facilmente ottenere.
 Che senso aveva, la sua ricchezza? Era reale?  
 Letteralmente, si definisce: *prestigio* qualcosa che sembra ciò che non è, come i giochi degli illusionisti, mentre *successo* non è che il participio passato del verbo *succedere*: tutto ciò che è avvenuto in passato è, per definizione, “successo”; malgrado ciò, molte persone, sotto l'influsso dell'Annosa Dicotomia, dedicano la propria vita alla ricerca o dell'uno o dell'altro o di entrambi.
-La *fama* è altrettanto aleatoria: quante persone sono state famose e ora sono dimenticate? 
+La *fama* è altrettanto aleatoria: quante persone sono state famose e ora sono dimenticate?
 Gli inventori della ruota e del fuoco hanno cambiato per sempre la storia della nostra specie e del mondo con le loro scoperte, ma nessuno sa chi siano stati.
 In tempi più recenti, il pittore Giovanni Baglione fu molto famoso, alla fine del sedicesimo Secolo, ma se ci ricordiamo di lui oggi è solo per via dei suoi rapporti con Caravaggio e, comunque, la loro fama terminerà con la nostra specie, insieme a quella di Shakespeare, Leonardo o Einstein.  
 Non sono inconsistenti solo i valori mondani, come fama successo o denaro, ma anche quelli che consideriamo usualmente “nobili”, come il rispetto della vita altrui.
@@ -304,14 +304,14 @@ Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccide
 Se invece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosè; loro pensano che sia vero perché è scritto nella Bibbia, che è la Parola di Dio.
 Se infine lo chiedi a un paladino del laicismo, ti risponderà che l'omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev'essere vero, perché le nostre Leggi applicano i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di libertà e uguaglianza della *Dichiarazione dei Diritti dell’Uomo e del Cittadino* francese, che a sua volta si rifaceva alla *Dichiarazione di Indipendenza* americana, che a sua volta riprendeva le idee di Locke e Montesquieu.  
 Nessuna di queste affermazioni è valida di per sé: sono tutte fondate su una qualche forma di fede &mdash; religiosa o laica che sia &mdash; in chi ha promulgato la Legge o il Principio.  
-È, applicato all'etica, lo stesso meccanismo che si utilizza per certificare un server Web. 
+È, applicato all'etica, lo stesso meccanismo che si utilizza per certificare un server Web.
 Quando tu accedi al sito Web della tua banca, sai che è davvero il server della tua banca perché possiede un certificato digitale che attesta la sua identità, firmato digitalmente da un ente certificatore detto *Certification Authority* (o, più brevemente: *CA*).
 Tu sai che l'ente certificatore è davvero chi dice di essere perché anche lui ha un suo certificato, firmato da un'altro ente certificatore, chiamato: *root CA*.
 La *root CA* garantisce per la CA intermedia che a sua volta garantisce per la tua banca.
 Sfortunatamente, però, né i legislatori né i loro certificatori ideologici sono sottoposti alle regole e ai controlli che deve rispettare una *Certification Authority* e spesso è accaduto che chi ha definito delle regole sia stato anche il primo a non tenerne conto.  
-Mosè, con il sesto Comandamento ancora fresco di stampa, chiese ai figli di Levi: 
+Mosè, con il sesto Comandamento ancora fresco di stampa, chiese ai figli di Levi:
 
-> Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a class="nota" href="/man/note#levi" id="levi"></a> 
+> Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a class="nota" href="/man/note#fn-levi" id="levi">3</a>
 
 Gli Americani, che scrissero:
 
@@ -323,14 +323,14 @@ I Francesi, il cui motto era:
 > Liberté, Égalité, Fraternité
 
 hanno applicato questi principii a colpi di ghigliottina.
-L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a class="nota" href="/man/note#armi" id="armi"></a> e che violano costantemente quelle stesse regole da loro promosse.  
-Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi, dalle convinzioni<a class="nota" href="/man/note#self-evident" id="self-evident"></a> 
-di un gruppo di credenti<a class="nota" href="/man/note#credenti" id="credenti"></a>, non vuol dire che siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva; possiamo solo accettarli per fede, così come i dogmi religiosi.
+L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a class="nota" href="/man/note#fn-armi" id="armi">4</a> e che violano costantemente quelle stesse regole da loro promosse.  
+Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi, dalle convinzioni<a class="nota" href="/man/note#fn-self-evident" id="self-evident">5</a>
+di un gruppo di credenti<a class="nota" href="/man/note#fn-credenti" id="credenti">6</a>, non vuol dire che siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva; possiamo solo accettarli per fede, così come i dogmi religiosi.
 *Scegliamo* di credere in uno schema di valori, così come potremmo scegliere di credere negli UFO: non abbiamo convinzioni innate, se non l'egoismo.  
 Le persone per bene hanno una cosa in comune con i malandrini: pensano che il resto del Mondo sia come loro, ma si sbagliano.
 Noi troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.  
-Per gli autori della *Dichiarazione di Indipendenza* era *self-evident* che tutti gli uomini fossero stati creati uguali, ma sei Stati del Sud, nelle loro Costituzioni, precisarono che si stava parlando di uomini liberi, non degli schiavi<a class="nota" href="/man/note#freemen" id="freemen"></a>.  
-I nazisti utilizzarono le macchine Hollerith per censire e sterminare gli ebrei; furono anche aggiunte delle colonne alle schede perforate per poter gestire i dati relativi alla religione<a class="nota" href="/man/note#black" id="black"></a>.
+Per gli autori della *Dichiarazione di Indipendenza* era *self-evident* che tutti gli uomini fossero stati creati uguali, ma sei Stati del Sud, nelle loro Costituzioni, precisarono che si stava parlando di uomini liberi, non degli schiavi<a class="nota" href="/man/note#fn-freemen" id="freemen">7</a>.  
+I nazisti utilizzarono le macchine Hollerith per censire e sterminare gli ebrei; furono anche aggiunte delle colonne alle schede perforate per poter gestire i dati relativi alla religione<a class="nota" href="/man/note#fn-black" id="black">8</a>.
 Noi oggi critichiamo sia loro sia chi li aiutò a farlo, ma forse i nostri nipoti criticheranno noi per la tolleranza che abbiamo mostrato nei confronti di chi ci vende il petrolio per le nostre automobili; la stessa tolleranza che loro mostreranno a chi li rifornirà di materie prime per le batterie, o di acqua.
 
 <hr id="comandamenti">
@@ -341,7 +341,7 @@ Il Maestro Canaro, per esempio, era convinto che il Libro dell'Esodo fosse il re
 > 1. Il senso della vita è capire il senso della vita.
 2. Non cercare il senso della vita nelle cose terrene.
 3. Ciò che conta è come ti comporti, non quello che dici.
-4. Dedica parte del tuo tempo alla ricerca spirituale (v. punto 1). 
+4. Dedica parte del tuo tempo alla ricerca spirituale (v. punto 1).
 5. Non giudicare i tuoi genitori finché non ti sarai trovato in situazioni simili alle loro.
 6. Non uccidere senza un valido motivo (per definire il concetto di “valido motivo” v. punti 1-10).
 7. Ci sono tante donne non sposate: tròmbati quelle.
@@ -352,11 +352,11 @@ Il Maestro Canaro, per esempio, era convinto che il Libro dell'Esodo fosse il re
 <!--
 specificare che quando aveva redatto la prima versione era un "angy young man", come direbbe Santillana, ma che poi aveva capito che le religioni sono come le opere teatrali e non le si può giudicare in base alle capacità degli attori.
 -->
-Quando gli chiesi perché avesse scelto proprio quelle regole, mi rispose: “Se li avessi seguiti anche da giovane, adesso avrei molti rimorsi in meno.” 
+Quando gli chiesi perché avesse scelto proprio quelle regole, mi rispose: “Se li avessi seguiti anche da giovane, adesso avrei molti rimorsi in meno.”
 
 <!--
 
 Il fine dichiarato di Kanāda nei Vaiśesika Sūtra, considerati da Dasgupta come pre-buddhisti, è di spiegare il Dharma (la Legge Eterna) come il fondamento, da un lato, della manifestazione (abhyudaya) e, dall’altro, del “Sommo Bene” (nihśreyasam), cioè della Liberazione: la validità dei Veda è stabilita dal fatto che questi sono i loro fini.
 
-Coomaraswamy, Ananda K.. Tempo ed Eternità (Orizzonti dello spirito) (Italian Edition) (Kindle Locations 322-327). Edizioni Mediterranee. Kindle Edition. 
+Coomaraswamy, Ananda K.. Tempo ed Eternità (Orizzonti dello spirito) (Italian Edition) (Kindle Locations 322-327). Edizioni Mediterranee. Kindle Edition.
 -->

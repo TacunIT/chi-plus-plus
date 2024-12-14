@@ -28,7 +28,7 @@ struct PesceAlimentare {
     time_t _data_cattura;  
     int    _peso;
     bool   _commestibile;
-    char*  _area_pesca; 
+    char*  _area_pesca;
     ...
 };
 
@@ -97,20 +97,20 @@ Lo <a href="/man/classi-oggetti#specificatori-accesso" class="xref">specificator
 ```
 class B : public A
 {
-    // tutti i membri di A mantengono 
-    // in B la loro visibilità originale 
+    // tutti i membri di A mantengono
+    // in B la loro visibilità originale
 };
 
 class B : protected A
 {
-    // tutti i membri public di A diventano membri 
-    // protected di B; i membri protected e private 
+    // tutti i membri public di A diventano membri
+    // protected di B; i membri protected e private
     // mantengono la loro visibilità originale
 };
 
-class B : private A	
+class B : private A
 {
-    // tutti i membri di A, quale che sia la loro 
+    // tutti i membri di A, quale che sia la loro
     // visibilità, diventano membri private di B;
 };
 
@@ -126,24 +126,24 @@ Se compili questo codice, ottieni un messaggio di errore:
 
 ```
 > g++ src/cpp/ereditarieta-accesso.cpp -c -o src/out/esempio
-src/cpp/ereditarieta-accesso.cpp:25:5: error: cannot cast 'Figlio' 
+src/cpp/ereditarieta-accesso.cpp:25:5: error: cannot cast 'Figlio'
     to its private base class
       'Mamma'
     figlio.a++;    
     ^
-src/cpp/ereditarieta-accesso.cpp:17:16: note: implicitly declared 
+src/cpp/ereditarieta-accesso.cpp:17:16: note: implicitly declared
     private here
 class Figlio : Mamma {
                ^~~~~
-src/cpp/ereditarieta-accesso.cpp:25:12: error: 'a' is a private 
+src/cpp/ereditarieta-accesso.cpp:25:12: error: 'a' is a private
     member of 'Mamma'
     figlio.a++;    
            ^
-src/cpp/ereditarieta-accesso.cpp:17:16: note: constrained by 
+src/cpp/ereditarieta-accesso.cpp:17:16: note: constrained by
     implicitly private inheritance here
 class Figlio : Mamma {
                ^~~~~
-src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared 
+src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared
     here
     int a;
         ^
@@ -156,7 +156,7 @@ src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared
 Questa è la dichiarazione del costruttore della classe derivata `PesceAlimentare`:
 
 ```
-PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
+PesceAlimentare(Sesso sesso, float prezzo, const char* specie)
 : Pesce(sesso, prezzo, specie) {
     _commestibile = true;
 }
@@ -222,8 +222,8 @@ Un'altra cosa da notare, in questo codice, è che la funzione `getTipo` è prese
 Per questo motivo, quando si richiama `getTipo` da un'istanza delle due classi derivate, come in:
 
 ```
-cout <<  pesce1.getTipo() << ": " << pesce1.getSpecie() 
-cout <<  pesce2.getTipo() << ": " << pesce2.getSpecie() 
+cout <<  pesce1.getTipo() << ": " << pesce1.getSpecie()
+cout <<  pesce2.getTipo() << ": " << pesce2.getSpecie()
 ```
 
 il valore tornato è quello della funzione della classe figlia.
@@ -236,7 +236,7 @@ cout << "classe base: " << pesce1.Articolo::getTipo() << endl;
 <hr id="classi-virtuali">
 
 Complichiamo un po' le cose.
-Immagina che una classe `Figlio` derivi dalle classi `Madre` e `Padre`, a loro volta derivate dalla classe `Persona`. 
+Immagina che una classe `Figlio` derivi dalle classi `Madre` e `Padre`, a loro volta derivate dalla classe `Persona`.
 Se chiamassimo una funzione della classe `Persona` da un oggetto di classe `Figlio`, quale verrebbe chiamata, quella che ha ereditato da `Padre` o quella che ha ereditato da `Madre`?
 
 ```
@@ -246,14 +246,14 @@ Se chiamassimo una funzione della classe `Persona` da un oggetto di classe `Figl
 In realtà, nessuna delle due, perché questo codice genera un errore:
 
 ```
-src/cpp/ereditarieta-classi-base-virtuali.cpp:30:11: 
+src/cpp/ereditarieta-classi-base-virtuali.cpp:30:11:
 error: non-static member 'getClass' found in multiple base-class
       subobjects of type 'Persona':
     class Figlio -> class Padre -> class Persona
     class Figlio -> class Madre -> class Persona
     caino.getClass();
           ^
-src/cpp/ereditarieta-classi-base-virtuali.cpp:13:10: 
+src/cpp/ereditarieta-classi-base-virtuali.cpp:13:10:
 note: member found by ambiguous name lookup
     void getClass(){
          ^
@@ -273,7 +273,7 @@ In questo modo, la classe `Figlio` erediterà tutti i membri propri delle  class
 
 <hr id="classi-puntatori">
 
-Come ti ho detto, definire una nuova classe equivale a definire un nuovo tipo di dato, che sarà considerato dal compilatore alla stessa stregua dei dati primitivi del linguaggio. 
+Come ti ho detto, definire una nuova classe equivale a definire un nuovo tipo di dato, che sarà considerato dal compilatore alla stessa stregua dei dati primitivi del linguaggio.
 Questo vuol dire, per esempio, che se vogliamo possiamo creare un array di oggetti di classe `Pesce` così come creeremmo un array di `int` o di `char`:
 
 ```
@@ -287,7 +287,7 @@ Se decidessimo di creare un array di oggetti della classe `Punto` che abbiamo vi
 ```
 Punto spline[3] = { Punto(3,5), Punto(0,0), Punto(7,7) } ;
 ```
- 
+
 Possiamo aggiungere a un array di oggetti di una classe base anche degli oggetti appart­enenti alle sue classi derivate:
 
 ```
@@ -301,7 +301,7 @@ Figlio classe[4] = { Figlio(), Figlio(), Persona(), Figlio() } ;
 ```
 
 Così come, negli scacchi, la regina può muovere come una torre, ma una torre non può muoversi come una regina, un oggetto di tipo `Persona` non contiene tutta l’informazione relativa a un oggetto di tipo `Figlio` e quindi non può essere usato in sua sostituzione.  
-Lo stesso discorso fatto per gli array, vale anche per i puntatori. 
+Lo stesso discorso fatto per gli array, vale anche per i puntatori.
 A un puntatore a oggetti di tipo `Persona` può essere assegnato un oggetto di tipo `Figlio`, mentre l’operazione inversa causerà un errore di compilazione:
 
 ```
@@ -310,7 +310,7 @@ Figlio  *ptrF = new Persona();  // ERRORE!
 ```
 
 Il compilatore è in grado di capire la relazione che c’è fra una classe derivata e la sua classe base e può quindi stabilire un cammino di coercizione dal tipo dell’oggetto a quello del puntatore, ma non ha modo di accedere ai membri o alle funzioni di una classe derivata da un oggetto di classe base.   
-Abbiamo detto <a href="/man/tipi-di-dato#puntatori" class="xref">a suo tempo</a> che i puntatori sono come delle maschere che isolano determinate sequenze di bit, la cui dimensione varia a seconda del tipo del puntatore. 
+Abbiamo detto <a href="/man/tipi-di-dato#puntatori" class="xref">a suo tempo</a> che i puntatori sono come delle maschere che isolano determinate sequenze di bit, la cui dimensione varia a seconda del tipo del puntatore.
 Lo stesso discorso vale anche per le classi: un puntatore di classe base associato a un oggetto di classe derivata “vedrà” solo i dati e le funzioni della sua classe:
 
 ```
@@ -320,8 +320,8 @@ Lo stesso discorso vale anche per le classi: un puntatore di classe base associa
 Se compili ed esegui questo codice, ottieni:
 
 ```
-> g++ src/cpp/ereditarieta-puntatori.cpp -o src/out/esempio 
-> src/out/esempio 
+> g++ src/cpp/ereditarieta-puntatori.cpp -o src/out/esempio
+> src/out/esempio
 Madre
 Persona
 ```
@@ -333,7 +333,7 @@ Questo comportamento (corretto) del programma diventa particolarmente rischioso 
 {% include_relative src/ereditarieta-distruttori.cpp %}
 ```
 
-Nessun compilatore ti darà mai errore per questo codice, ma il distruttore chiamato, in tutti e tre i casi, sarà quello della classe base `Padre`, con conseguenze che spaziano dal problematico al disastroso. 
+Nessun compilatore ti darà mai errore per questo codice, ma il distruttore chiamato, in tutti e tre i casi, sarà quello della classe base `Padre`, con conseguenze che spaziano dal problematico al disastroso.
 
 <hr id="funzioni-virtuali">
 
@@ -352,7 +352,7 @@ Madre
 Madre
 ```
 
-Le *funzioni virtuali* sono delle funzioni che vengono richiamate in base alla classe dell’oggetto cui appartengono, indipendentemente dal tipo del riferimento o del puntatore che si utilizza. 
+Le *funzioni virtuali* sono delle funzioni che vengono richiamate in base alla classe dell’oggetto cui appartengono, indipendentemente dal tipo del riferimento o del puntatore che si utilizza.
 Ciò è reso possibile da un meccanismo chiamato *binding dinamico* o *late binding*, che consiste nel posticipare il *linking* delle funzioni al momento dell’esecuzione del programma, contrariamente a quanto avviene per le funzioni membro normali, che sono collegate al codice in fase di compilazione &mdash; il cosiddetto *early binding*.  
 In pratica, la cosa funziona così: gli indirizzi di tutte le  funzioni dichiarate come `virtual` vengono memorizzati in una tabella interna e solo quando una di queste funzioni viene richiamata dal programma, il sistema ne cerca l’indirizzo, effettuandone poi il *linking* in tempo reale.
 Capisci da te che l’utilizzo delle funzioni virtuali, oltre a comportare un leg­gero ritardo nel tempo di esecuzione del programma, visto che l’indirizzo della funzione va ben cercato, impegna anche parte delle risorse del sistema per la memorizzazione della tabella degli indirizzi, quindi, come per tutte le cose, è bene non abusarne.   
@@ -362,7 +362,7 @@ Le regole che riguardano l’utilizzo delle funzioni virtuali sono:
 
 - una funzione `virtual` non può essere anche `static`: il concetto stesso di funzione virtuale prevede un collegamento fra un oggetto e una funzi­o­ne; le funzioni statiche sono indipendenti dagli oggetti della loro classe, quindi le due cose sono incompatibili;
 
-- una funzione può essere dichiarata `virtual` solo nella classe base: non è possibile effettuare la dichiarazione in una classe derivata; 
+- una funzione può essere dichiarata `virtual` solo nella classe base: non è possibile effettuare la dichiarazione in una classe derivata;
 
 - si può ripetere la specifica `virtual` anche nelle classi derivate, ma non è necessario: lo vedi nell’esempio, dove la seconda versione della funzione `getClass()` non ha la parola chiave `virtual` davanti;
 
@@ -394,7 +394,7 @@ punt = (Mammifero*)ptr;  // né il tipo di una conversione.
 Mammifero pollo;         // né il tipo di un oggetto
 ```
 
-È possibile, però, dichiarare un puntatore o una *reference* a una classe astratta e utilizzarli per creare degli array o delle code che possano essere utilizzati con istanze di classi diverse: 
+È possibile, però, dichiarare un puntatore o una *reference* a una classe astratta e utilizzarli per creare degli array o delle code che possano essere utilizzati con istanze di classi diverse:
 
 ```
 {% include_relative src/ereditarieta-classi-astratte.cpp %}
@@ -412,18 +412,18 @@ cane
 femmina
 ```
 
-La classe base `Mammifero` definisce solo un’astrazione, lasciando alle sue classi derivate il compito di definire attributi e metodi specifici per ciascuna specie particolare. 
+La classe base `Mammifero` definisce solo un’astrazione, lasciando alle sue classi derivate il compito di definire attributi e metodi specifici per ciascuna specie particolare.
 Allo stesso modo, la funzione `getSpecie` definisce solo un concetto, non un algoritmo; saranno le singole classi deri­vate a ridefinire il comportamento della funzione, adattandolo alle proprie esigen­ze.  
 È possibile, comunque, definire un comporta­mento anche per le funzioni virtuali pure; per la classe `Mammifero` potrebbe essere qualcosa di simile:
 
 ```
-inline void Mammifero::getSpecie() 
+inline void Mammifero::getSpecie()
 {
     cout << "nessuna" << endl ;
 }
 ```
 
-Non potendo esistere oggetti di classe `Mammifero`, però, la versione base della funzione `getSpecie` potrebbe essere richiamata solo facendo uso dell’operatore `::` 
+Non potendo esistere oggetti di classe `Mammifero`, però, la versione base della funzione `getSpecie` potrebbe essere richiamata solo facendo uso dell’operatore `::`
 
 ```
 mioCane.Mammifero::getSpecie();
@@ -442,26 +442,26 @@ Essendo un codice scritto per l'ambiente Microsoft del 1995 <!-- con i nomi dei 
 
 ```
 > g++ src/cpp/ereditarieta-codice-canaro.cpp -o src/out/esempio
-src/cpp/ereditarieta-codice-canaro.cpp:8:10: 
+src/cpp/ereditarieta-codice-canaro.cpp:8:10:
 fatal error: 'iostream.h' file not found
 #include <iostream.h>
          ^~~~~~~~~~~~
-src/cpp/ereditarieta-codice-canaro.cpp:13:8: 
-error: use of undeclared identifier 'cout'; 
+src/cpp/ereditarieta-codice-canaro.cpp:13:8:
+error: use of undeclared identifier 'cout';
 did you mean 'std::cout'?
-        { cout << "Sono un oggetto di classe A \n" ; } 
+        { cout << "Sono un oggetto di classe A \n" ; }
           ^~~~
           std::cout
 /Library/Developer/CommandLineTools/usr/bin/
-../include/c++/v1/iostream:54:33: note: 
+../include/c++/v1/iostream:54:33: note:
 'std::cout' declared here
 extern _LIBCPP_FUNC_VIS ostream cout;
                                 ^
-src/cpp/ereditarieta-codice-canaro.cpp:21:8: 
+src/cpp/ereditarieta-codice-canaro.cpp:21:8:
 error: use of undeclared identifier 'cout'
 
 did you mean 'std::cout'?
-        { cout << "Sono un oggetto di classe B \n" ; } 
+        { cout << "Sono un oggetto di classe B \n" ; }
           ^~~~
           std::cout
 /Library/Developer/CommandLineTools/usr/bin/
@@ -469,7 +469,7 @@ did you mean 'std::cout'?
 std::cout' declared here
 extern _LIBCPP_FUNC_VIS ostream cout;
                                 ^
-src/cpp/ereditarieta-codice-canaro.cpp:24:1: 
+src/cpp/ereditarieta-codice-canaro.cpp:24:1:
 error: 'main' must return 'int'
 void main()
 ^~~~
@@ -487,7 +487,7 @@ Io, qui, ora, con il mio naso la mia bocca e i miei capelli, ti sto insegnando c
 Molto probabilmente abbiamo già avuto questa conversazione in passato e la faremo ancora in futuro.
 Forse non useremo le stesse parole; forse avremo nomi differenti, forse tu sarai il maestro e io l'allievo, ma la nostra amicizia sarà la stessa, perché quella fa parte della dichiarazione della nostra classe; non può e non deve mutare.
 
-> {{site.data.citazioni.mulino-amleto.mito}} <a class="nota" href="/man/note#miti" id="miti"></a>
+> {{site.data.citazioni.mulino-amleto.mito}} <a class="nota" href="/man/note#fn-miti" id="miti">1</a>
 
 Ogni epoca ha i suoi eroi e i suoi demoni; la memoria delle loro battaglie, genera il mito.  
 La Scienza è transeunte: abbiamo poche notizie riguardo le conoscenze scientifiche dei popoli del passato<!-- esempi? -->, mentre conosciamo bene i loro miti, perché il mito è immortale; la Scienza no, a meno che non sia assorbita dal mito e trasformata in leggenda o superstizione.
@@ -498,14 +498,14 @@ La paura dei numeri 13 e 17, secondo lui, era una conoscenza scientifica tramand
 
 L'arte è il motore del mito.
 Un motore che si auto-alimenta, come il Sole, perché si nutre di eventi epici e li genera a sua volta ispirando gli eroi a imprese degne di memoria.  
-La parola *arte*, così come: *amore*, del resto, è una di quelle parole che le gente utilizza spesso ma di cui non viene mai data una definizione precisa, perché le si ritiene dei concetti auto-esplicativi che non occorre definire. 
+La parola *arte*, così come: *amore*, del resto, è una di quelle parole che le gente utilizza spesso ma di cui non viene mai data una definizione precisa, perché le si ritiene dei concetti auto-esplicativi che non occorre definire.
 È sbagliato: come abbiamo visto, tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente.
 In <a href="https://canaro.net/saggi/amore-e-arte.html" target="canaro">un suo saggio giovanile su Amore e Arte</a>, il Maestro Canaro scrisse che:
- 
- > L'Arte è la traccia del cammino dell'Uomo verso Dio 
- 
+
+ > L'Arte è la traccia del cammino dell'Uomo verso Dio
+
  specificando poi che, con il termine: “Dio” (altra parola interpretata in maniera differente da ciascuno di noi), intendeva il senso dell'Esistenza.
-Alcuni anni dopo, però, guardando delle foto di crostate realizzate dallo chef Gianluca Fusto<a class="nota" href="/man/note#fusto" id="fusto"></a>, capì che la sua definizione era imperfetta, perché non includeva, o quanto meno lasciava a margine, gli arte-fatti che non ricadevano nelle categorie artistiche canoniche. 
+Alcuni anni dopo, però, guardando delle foto di crostate realizzate dallo chef Gianluca Fusto<a class="nota" href="/man/note#fn-fusto" id="fusto">2</a>, capì che la sua definizione era imperfetta, perché non includeva, o quanto meno lasciava a margine, gli arte-fatti che non ricadevano nelle categorie artistiche canoniche.
 Modificò per ciò la sua definizione di Arte in:
 
 > L'Arte è la traccia del cammino dell'Uomo verso la Perfezione
@@ -518,7 +518,7 @@ I principii dell'Ikebarba, così come li formulò il Maestro Canaro, sono:
 
 <blockquote>
 <p>
-<b>L'Ikebarba è fatta per l'uomo, non l'uomo per l'Ikebarba<a class="nota" href="/man/note#shabbat" id="shabbat"></a>.</b>  
+<b>L'Ikebarba è fatta per l'uomo, non l'uomo per l'Ikebarba<a class="nota" href="/man/note#fn-shabbat" id="shabbat">3</a>.</b>  
 L'Ikebarba non deve essere un peso per chi la pratica, ma un obbligo giojoso.
 I panni devono comunque essere messi ad asciugare; il tempo necessario a farlo in maniera sciatta o consapevole è pressocché lo stesso, ma un'Ikebarba ben fatta provvederà panni asciutti in minor tempo e renderà la vista dello stendipanni meno fastidiosa.
 </p>
@@ -545,7 +545,7 @@ A ogni modo, l'Ikebarba può davvero comportare dei benefici per chi la pratica.
 In primo luogo, modera l'effetto nefasto dell'Annosa Dicotomia e dei suoi servitori *Marketing* e *Moda*, che ci spingono ad acquistare indumenti che non ci occorrono e che sfrutteremo solo per breve tempo.
 Riducendo le variazioni cromatiche del bucato, poi, riduce anche il numero di lavaggi settimanali e con esso il fabbisogno di energia elettrica, acqua, prodotti detergenti e plastica.
 Anche il ripudio delle mollette ha una sua valenza funzionale: se i capi sono messi ad asciugare a cavallo dei fili, l'acqua nel tessuto tenderà a scendere da entrambi i lati, riducendo il tempo dell'asciugatura.  
-Indubbiamente, il fatto che la Regola del nostro Ordine ci imponga l'uso di camicie bianche non risolve il problema dell'inquinamento, ma, come diceva il Maestro Canaro: 
+Indubbiamente, il fatto che la Regola del nostro Ordine ci imponga l'uso di camicie bianche non risolve il problema dell'inquinamento, ma, come diceva il Maestro Canaro:
 
 > La pelliccia è fatta di peli
 

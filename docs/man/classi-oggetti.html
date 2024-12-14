@@ -61,7 +61,7 @@
     
 </nav>
 </header>
-        <main class="corpo pubblicato">
+        <main class="corpo pubblicato ">
         
             <h1><a href="#dottrina">
                 Classi e oggetti</a>
@@ -97,17 +97,17 @@ Immagina di definire una struttura per la gestione dell’orario, che contenga t
 <p>Questo è l’opposto del <em>low coupling</em> di cui abbiamo parlato <a href="/man/struttura-dei-programmi#coupling" class="xref">tempo fa</a>, perché lega indissolubilmente una funzione alla struttura del dato che deve gestire.
 Per capirsi: una funzione di aggiornamento dei minuti dovrà essere qualcosa di simile a:</p>
 
-<pre><code>void aggiornaMinuti(struct Orario &amp;o, int minuti) 
+<pre><code>void aggiornaMinuti(struct Orario &amp;o, int minuti)
 {
     /** Incrementa il numero dei minuti */
     o.m += minuti;
-    
+
     /** Se necessario, incrementa le ore */
     if(o.m &gt;= 60) {
 
         o.m -= 60;
         o.h += 1;
-        
+
         /** Se necessario, passa al giorno dopo */
         if(o.h &gt;= 24) {
             o.h -= 24;
@@ -118,7 +118,7 @@ Per capirsi: una funzione di aggiornamento dei minuti dovrà essere qualcosa di 
 <p>Se un giorno decidessimo di modificare la struttura <code>Orario</code>, dovremmo ricordarci di riscrivere anche questa funzione, adeguandola alle nuove caratteristiche della struttura, con dispendio di tempo e la possibilità di fare degli errori.
 Inoltre, nulla impedirebbe a un programmatore cialtrone di scrivere una funzione che non tiene minimamente conto del rapporto fra ore, minuti e secondi:</p>
 
-<pre><code>void incrementa_m(struct Orario &amp;o, int minuti) 
+<pre><code>void incrementa_m(struct Orario &amp;o, int minuti)
 {
     o.m += minuti;
 }
@@ -211,7 +211,7 @@ int main()
 
 <p>Compilando ed eseguendo questo codice, ottieni:</p>
 
-<pre><code>&gt; g++ src/cpp/classi-struttura-orario.cpp -o src/out/esempio 
+<pre><code>&gt; g++ src/cpp/classi-struttura-orario.cpp -o src/out/esempio
 &gt; ./src/out/esempio                                          
 23:45:00
 00:05:00
@@ -223,7 +223,7 @@ int main()
 
 <p>Le variabili all’interno di una classe, sono dette <em>dati membro</em> o <em>attributi</em> della classe; le funzioni, invece, sono dette <em>funzioni membro</em> o <em>metodi</em>.
 Quando si crea una variabile di classe <code>X</code>, si dice che si: <em>istanzia</em> un <em>oggetto</em> di classe <code>X</code> o che si crea una <em>istanza</em> della classe.
-I dati e le funzioni membro di una classe sono direttamente accessibili alle funzioni membro della classe, ma per utilizzarli all’interno di funzioni esterne alla classe, si devono utilizzare gli operatori di selezione <code>.</code> e <code>-&gt;</code>. 
+I dati e le funzioni membro di una classe sono direttamente accessibili alle funzioni membro della classe, ma per utilizzarli all’interno di funzioni esterne alla classe, si devono utilizzare gli operatori di selezione <code>.</code> e <code>-&gt;</code>.
 Il primo, detto <em>operatore di selezione diretta</em>, viene utilizzato con istanze della classe; il secondo, detto <em>operatore di selezi­one indiretta</em>, con puntatori ad esse:</p>
 
 <pre><code>/** 
@@ -276,10 +276,10 @@ int main(int argc, char** argv)
 <p>L’etichetta <code>public</code> che vedi all’inizio della dichiarazione della classe è un <i id="specificatori-accesso">specificatore di accesso</i> e serve a stabilire quali membri della classe siano accessibili a funzioni esterne e quali invece siano riservati in esclusiva alla classe stessa.</p>
 
 <blockquote>
-  <p>il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a class="nota" href="/man/note#selvaggio" id="selvaggio"></a>.</p>
+  <p>il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a class="nota" href="/man/note#fn-selvaggio" id="selvaggio">1</a>.</p>
 </blockquote>
 
-<p>Questa frase di Lucien Lévy-Bruhl si applica anche alle classi del C++. 
+<p>Questa frase di Lucien Lévy-Bruhl si applica anche alle classi del C++.
 Sia gli attributi che i metodi di una classe possono essere protetti da accessi o modifiche indebite grazie ai modificatori di accesso <code>private</code>, <code>protected</code> e <code>public</code>.
 I metodi o gli attributi dichiarati <code>private</code> sono accessibili solo alla classe stessa; quelli dichiarati come <code>protected</code> sono accessibili alla classe e a eventuali <a href="/man/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come <code>public</code> sono accessibili a qualunque elemento del programma.
 In mancanza di specifiche, tutti i dati e le funzioni di una classe verranno considerati:</p>
@@ -322,19 +322,19 @@ public:
 </code></pre>
 
 <p>La dichiarazione inizia con la parola-chiave <code>class</code>, seguìta dal nome della classe.
-Nel blocco di codice fra parentesi graffe che costituisce il corpo della classe, contiene i dati e le funzioni membro, accorpate per visibilità. 
+Nel blocco di codice fra parentesi graffe che costituisce il corpo della classe, contiene i dati e le funzioni membro, accorpate per visibilità.
 In questo caso abbiamo messo prima i dati membro privati e poi quelli pubblici, ma avremmo potuto fare anche il contrario.
 Gli attributi <code>_h</code>, <code>_m</code> e <code>_s</code> compaiono dopo la parola-chiave <code>private</code> e saranno quindi visibili solo alle funzioni della classe stessa.<br />
 La funzione <code>Orario</code> compare dopo l’etichetta <code>public</code> e sarà accessibile per ciò a qualsiasi parte del programma.
 Questa funzione, che ha lo stesso nome della classe, è detta <em>costruttore</em> e viene richiamata ogni volta che si crea una variabile di tipo <code>Orario</code>.
-Il suo scopo è di inizializzare le variabili all’interno della classe, in questo caso, impostando tutti e tre i valori a 0. 
+Il suo scopo è di inizializzare le variabili all’interno della classe, in questo caso, impostando tutti e tre i valori a 0.
 Ne parleremo fra poco.<br />
 L’ultima cosa che devi notare, nel codice qui sopra, è la presenza del carattere <code>;</code> alla fine del blocco di codice della classe, così come avviene per le <code>union</code> e le <code>struct</code>.</p>
 
 <hr id="costruttori" />
 
 <p>Quando dichiariamo una variabile di tipo primitivo come <code>int</code>, o <code>double</code>, il compilatore svolge automaticamente tutta una serie di operazioni atte ad allocare lo spazio di memoria necessario a contenerla e a inizializzarlo.
-Il compilatore, però, non sa come vada creata e inizializzata una variabile di tipo <code>Orario</code> ed è per questo che la classe dovrà definire delle <em>funzioni di gestione</em> che spieghino sia come creare una nuova variabile, che come distruggerla, se necessario. 
+Il compilatore, però, non sa come vada creata e inizializzata una variabile di tipo <code>Orario</code> ed è per questo che la classe dovrà definire delle <em>funzioni di gestione</em> che spieghino sia come creare una nuova variabile, che come distruggerla, se necessario.
 Le funzioni di gestione sono di due tipi: i <em>costruttori</em> e i <em>distruttori</em>.<br />
 I costruttori hanno alcune peculiarità che le distin­guono dalle altre funzioni membro:</p>
 
@@ -356,7 +356,7 @@ public:
         _m = 0;
         _s = 0;
     }
-    Orario(int h, int m, int s) 
+    Orario(int h, int m, int s)
     : _h(h % 24), _m(m % 60), _s(s % 60) {
     }
 };
@@ -364,7 +364,7 @@ public:
 
 <p>La riga:</p>
 
-<pre><code>: _h(h % 24), _m(m % 60), _s(s % 60) 
+<pre><code>: _h(h % 24), _m(m % 60), _s(s % 60)
 </code></pre>
 
 <p>si chiama: <em>lista di inizializzazione</em> e ed equivale a scrivere:</p>
@@ -378,19 +378,19 @@ _s = s % 60;
 Quando definisci un costruttore, puoi usare indifferentemente l’una o l’altra sintassi o anche mischiarle, a seconda dei casi.
 Un modo più succinto di ottenere lo stesso risultato con un unico costruttore è di utilizzare dei valori di default per i parametri:</p>
 
-<pre><code>Orario(int h = 0, int m = 0, int s = 0) 
+<pre><code>Orario(int h = 0, int m = 0, int s = 0)
 : _h(h % 24), _m(m % 60), _s(s % 60) {
 }
 </code></pre>
 
-<p>Alle volte, può essere utile definire un costruttore che crei delle nuove variabili della classe partendo da variabili esis­tenti, operando quindi una sorta di clonazione. 
+<p>Alle volte, può essere utile definire un costruttore che crei delle nuove variabili della classe partendo da variabili esis­tenti, operando quindi una sorta di clonazione.
 Questo tipo di funzioni si chiamano: <em>costruttori di copia</em> o: <em>costruttori di inizializ­zazione</em> e richiedono come argomento un riferimento a una variabile della stessa classe:</p>
 
-<pre><code>/** 
- * Dichiarazione del costruttore di copia 
- * all'interno della classe. 
- * Possiamo copiare il valore delle variabili 
- * così com'è perché è già stato verificato 
+<pre><code>/**
+ * Dichiarazione del costruttore di copia
+ * all'interno della classe.
+ * Possiamo copiare il valore delle variabili
+ * così com'è perché è già stato verificato
  * dal costruttore della variabile o1.  
  */
 Orario::Orario(const Orario&amp; )
@@ -405,9 +405,9 @@ Orario o2 = o1;
 
 <hr id="distruttori" />
 
-<p>Come è facile intuire, mentre il costruttore di una classe presiede alla creazione di nuove variabili, il distruttore si occupa della loro cancellazione. 
+<p>Come è facile intuire, mentre il costruttore di una classe presiede alla creazione di nuove variabili, il distruttore si occupa della loro cancellazione.
 Non sempre è necessario definire un distruttore per una classe.
-Una variabile di tipo <code>Orario</code>, che contiene solo tre interi, probabilmente non avrà bisogno di un distruttore, mentre una variabile che faccia uso di memoria dinamica quasi sicuramente sì. 
+Una variabile di tipo <code>Orario</code>, che contiene solo tre interi, probabilmente non avrà bisogno di un distruttore, mentre una variabile che faccia uso di memoria dinamica quasi sicuramente sì.
 Il perché risulta più chiaro se si esamina la cosa dal punto di vista del compilatore.
 Per creare una variabile di tipo <code>Orario</code> il compilatore deve allocare spazio per:</p>
 
@@ -422,7 +422,7 @@ private:
     char* _dati;
     int   _size;
  public:
-    Buffer(int size) 
+    Buffer(int size)
     : _size(size) {
         _dati = new char[_size];
     }
@@ -441,7 +441,7 @@ private:
     char* _dati;
     int   _size;
  public:
-    Buffer(int size) 
+    Buffer(int size)
     : _size(size) {
         _dati = new char[_size];
     }
@@ -466,7 +466,7 @@ private:
 
 <hr id="funzioni-di-interfaccia" />
 
-<p>Le funzioni membro devono essere dichiarate all’interno della dichiarazione della classe e possono essere definite sia dentro che fuori di essa. 
+<p>Le funzioni membro devono essere dichiarate all’interno della dichiarazione della classe e possono essere definite sia dentro che fuori di essa.
 Definirle all’interno della dichiarazione della classe equivale a dichiararle <a href="/man/funzioni#inline" class="xref">inline</a>
 Se invece le si definisce esternamente alla dichiarazione della classe, vanno identificate aggiungendo il nome della classe prima di quello della funzione, seguito dall’<a href="/man/operatori#risoluzione" class="xref">operatore di risoluzione</a>:</p>
 
@@ -515,13 +515,13 @@ int main()
 
 <pre><code class="language- ">&gt; g++ src/cpp/classi-classe-orario-1.cpp -o src/out/esempio
 src/cpp/classi-classe-orario-1.cpp:34:44: error: '_h' is a protected member of 'Orario'
-    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._h &lt;&lt; ":" 
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._h &lt;&lt; ":"
                                            ^
 src/cpp/classi-classe-orario-1.cpp:14:9: note: declared protected here
     int _h;
         ^
 src/cpp/classi-classe-orario-1.cpp:35:44: error: '_m' is a protected member of 'Orario'
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._m &lt;&lt; ":" 
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._m &lt;&lt; ":"
                                            ^
 src/cpp/classi-classe-orario-1.cpp:15:9: note: declared protected here
     int _m;
@@ -554,7 +554,7 @@ private:
     int _s;
 
 public:
-    
+
     /** Costruttore della classe */
     Orario(int h = 0, int m = 0, int s = 0) ;
 
@@ -584,7 +584,7 @@ public:
 
 <p>Come ho detto, questa soluzione è solo apparentemente più rapida, perché tutta la logica di gestione dei dati della classe <code>Orario</code> dovrà essere replicata sia nella funzione <code>aggiornaMinuti</code> che nella classe <code>Orologio</code>.
 Inoltre, se in seguito dovessi apportare delle modifiche alla classe <code>Orario</code>, le stesse modifiche andranno riportate anche nelle funzioni delle classi <code>friend</code> che la utilizzano.<br />
-Un metodo più sicuro e più efficiente di gestire gli attributi privati di una classe consiste nel definire delle funzioni membro pubbliche che consentano un accesso controllato ai dati che si vogliono proteggere. 
+Un metodo più sicuro e più efficiente di gestire gli attributi privati di una classe consiste nel definire delle funzioni membro pubbliche che consentano un accesso controllato ai dati che si vogliono proteggere.
 Nel caso della classe <code>Orario</code>, ne occorrono sei: una per la lettura e una per la scrittura di ciascuno dei tre dati membro:</p>
 
 <pre><code>/** Funzioni di lettura */
@@ -610,36 +610,36 @@ int setS(int s) { return _s = (s % 60); }
 {
     int x, y;
 public:             
-    Punto(int x, int y) 
+    Punto(int x, int y)
     : x(x), y(y) {
     }
 };
 </code></pre>
 <p>ma il fatto che qualcosa sia possibile non vuol dire che sia una buona scelta, come penso che tu abbia imparato, nel corso della tua vita.<br />
 Non sei nemmeno obbligato a dichiarare le funzioni di interfaccia come <code>inline</code>; l’ho fatto qui perché erano estremamente semplici, ma si dovrebbe evitare di aggiungere il codice delle funzioni all’interno della dichiarazione di una classe già di per sé complessa perché la rende più difficile da leggere.
-C’è anche chi pensa che ciò sia sbagliato perché, se da un lato rende le cose più facili a chi scrive il codice, complica la vita di chi lo legge perché mischia ciò che la classe fa con il modo in cui lo fa<a class="nota" href="/man/note#inline" id="inline"></a>.
+C’è anche chi pensa che ciò sia sbagliato perché, se da un lato rende le cose più facili a chi scrive il codice, complica la vita di chi lo legge perché mischia ciò che la classe fa con il modo in cui lo fa<a class="nota" href="/man/note#fn-inline" id="inline">2</a>.
 Io non sono del tutto d’accordo con questa affermazione perché alle volte è più comodo e rapido avere il codice delle funzioni all’interno della dichiarazione della classe, ma essendo un precetto che antepone il bene di tanti (i fruitori del codice) rispetto a quello del singolo (l’autore del codice), mi sono sentito in dovere di riferirtelo.<br />
 Così come abbiamo fatto per il costruttore della classe, potremmo unificare le funzioni di lettura e scrittura, utilizzando un parametro di default che determini il comportamento del programma:</p>
 
-<pre><code>int ore(int h = -1) { 
-    return _h = ((h != -1) ? _h = (h % 24) : h); 
+<pre><code>int ore(int h = -1) {
+    return _h = ((h != -1) ? _h = (h % 24) : h);
 }
 </code></pre>
 
 <p>Questa sintassi è l’equivalente di:</p>
 
-<pre><code>int ore(int h = -1) { 
+<pre><code>int ore(int h = -1) {
     if(h != -1) {
         _h = (h % 24);
     }
-    return _h; 
+    return _h;
 }
 </code></pre>
 
 <p>Anche se meno evidente, è più comoda perché permette di tenere il codice su una sola riga e ti dà modo di fare un po’ di pratica con gli operatori.<br />
 Questo tipo di funzioni, però, ha due difetti: limita i valori che puoi assegnare all’attributo e limita la granularità dei privilegi che puoi assegnare a chi utilizza la classe.
 Limita il numero di valori che puoi assegnare all’attributo, perché esclude il valore del parametro di default — cosa che non crea problemi in questo caso, dato che non esiste un’ora <code>-1</code>, ma che potrebbe farlo nel caso di una stringa con parametro di default nullo.
-Limita la granularità dei privilegi sulle funzioni, perché ti costringe a rendere pubbliche le funzioni di scrittura dei dati membro e questo, in certi casi potrebbe non essere saggio. 
+Limita la granularità dei privilegi sulle funzioni, perché ti costringe a rendere pubbliche le funzioni di scrittura dei dati membro e questo, in certi casi potrebbe non essere saggio.
 Ti consiglio perciò di scrivere sempre due funzioni di interfaccia distinte per la lettura e la scrittura: sul momento ti sembrerà uno spreco di tempo, ma, a meno che il tuo programma non sia particolarmente banale, o prima o poi ti accorgerai di aver fatto la scelta corretta.</p>
 
 <hr id="static" />
@@ -662,7 +662,7 @@ La particolarità di questi elementi è di non essere legati a una specifica var
 
 <ul>
   <li>
-    <p>per inizializzarli all’interno della dichiarazione, li si deve dichiarare come <code>inline static</code><a class="nota" href="/man/note#cpp17" id="cpp17"></a>, 
+    <p>per inizializzarli all’interno della dichiarazione, li si deve dichiarare come <code>inline static</code><a class="nota" href="/man/note#fn-cpp17" id="cpp17">3</a>,
 altrimenti, devono essere inizializzati altrove nel programma, come un qualsiasi oggetto a visibilità globale;</p>
   </li>
   <li>
@@ -748,8 +748,8 @@ Per questo motivo, se utilizzi il puntatore <code>this</code> all’interno di u
 
 <p>ottieni l’errore di compilazione:</p>
 
-<pre><code>&gt; g++ src/cpp/classi-static.cpp -o src/out/esempio 
-src/cpp/classi-static.cpp:26:16: error: invalid use of 'this' 
+<pre><code>&gt; g++ src/cpp/classi-static.cpp -o src/out/esempio
+src/cpp/classi-static.cpp:26:16: error: invalid use of 'this'
  outside of a non-static member function
         return this-&gt;_nIstanze;
                ^
@@ -763,7 +763,7 @@ src/cpp/classi-static.cpp:26:16: error: invalid use of 'this'
 <p>L’ultima cosa di cui dobbiamo parlare, sono le <em>classi anonime</em>, un tipo particolare di classe che, come dice il nome (perdonami il gioco di parole), non hanno nome e per ciò non possono avere né un costruttore né un distruttore e non possono essere utilizzate né come parametri né come valori di ritorno delle funzioni.<br />
 L’unico modo per dichiarare un oggetto con classe anonima è di aggiungerlo alla dichiarazione della classe stessa:</p>
 
-<pre><code>class 
+<pre><code>class
 {
 ...
 } obj;
@@ -933,7 +933,7 @@ Di questo, parleremo nelle prossime lezioni; adesso dobbiamo tornare su una ques
 
 <p>Abbiamo visto che l’Amore è una forza allo stesso tempo gravitazionale ed entropica, perché unisce gli individui, ma allo stesso tempo li porta a riprodursi in forme differenti.<br />
 In un certo senso, possiamo considerare l’Amore come il “costruttore” delle nostre istanze, perché genera le condizioni che spingono i nostri genitori a incontrarsi e ad accoppiarsi e soprattutto li spinge a restare insieme dopo l’accoppiamento.
-La monogamia non è una costante, anzi, in natura esistono quattro modi differenti di gestire la prole e John Maynard Smith li ha catalogati in base alla specie animale che le adotta<a class="nota" href="/man/note#maynard" id="maynard"></a>:</p>
+La monogamia non è una costante, anzi, in natura esistono quattro modi differenti di gestire la prole e John Maynard Smith li ha catalogati in base alla specie animale che le adotta<a class="nota" href="/man/note#fn-maynard" id="maynard">4</a>:</p>
 
 <table>
   <tbody>
@@ -971,10 +971,10 @@ Soprattutto, come possiamo evitare che questo precetto non diventi il pretesto p
 Ho scelto le tre “J” — Jim, Jimi e Janis — perché il Maestro Canaro pensava che, nel loro caso, la morte fosse ciò a cui erano destinati:</p>
 
 <blockquote>
-  <p>Capisci, avevano tutti ventisette anni e poi quella “J” che ricorre nel nome.. non credo fosse un caso. 
+  <p>Capisci, avevano tutti ventisette anni e poi quella “J” che ricorre nel nome.. non credo fosse un caso.
 “<em>Muß es sein? Es muß sein!</em>”, come direbbe Beethoven.
-So cosa stai pensando: che sto cercando di definire un dogma per giustificare una mia speranza, ma non è così. 
-La teoria del “27 Club”, anche se include Amy Winehouse e Robert Johnson, lascia dolorosamente fuori il Elvis e Andrea Pazienza<a class="nota" href="/man/note#pazienza" id="pazienza"></a>, che io ho amato molto di più.</p>
+So cosa stai pensando: che sto cercando di definire un dogma per giustificare una mia speranza, ma non è così.
+La teoria del “27 Club”, anche se include Amy Winehouse e Robert Johnson, lascia dolorosamente fuori il Elvis e Andrea Pazienza<a class="nota" href="/man/note#fn-pazienza" id="pazienza">5</a>, che io ho amato molto di più.</p>
 </blockquote>
 
 <hr id="libero-arbitrio" />
@@ -984,7 +984,7 @@ Questo perché il nostro agire è preordinato, ma non è obbligato: siamo progra
 Molti si sono chiesti se le nostre azioni siano predestinate o se esista il libero arbitrio; la risposta è: sì, ma in tempi diversi.
 Riprendendo il paragone con le classi, la predestinazione è nella dichiarazione, mentre il libero arbitrio è proprio delle istanze.
 L’insieme dei tuoi attributi e dei tuoi metodi è predefinito: puoi saltare, ma non puoi volare; puoi nuotare, ma non puoi restare a lungo in immersione; il tuo sangue ha un flusso ben definito e così pure il tuo cibo.
-D’altro canto, quello che deciderai di fare dipende da te: puoi decidere di attenerti ai limiti che ti sono stati imposti o cercare di sorpassarli, creandoti delle ali artificiali per volare o dei respiratori per andare sott’acqua. 
+D’altro canto, quello che deciderai di fare dipende da te: puoi decidere di attenerti ai limiti che ti sono stati imposti o cercare di sorpassarli, creandoti delle ali artificiali per volare o dei respiratori per andare sott’acqua.
 Attento, però: questo non farà di te né un uccello né un pesce. Puoi superare i limiti imposti dalla tua classe, ma non la puoi cambiare.<br />
 Non è difficile conciliare il libero arbitrio con l’onniscenza e l’onnipotenza di Dio; la risposta è ovvia, se non fai distinzione fra artefatto e artefice.
 Con buona pace di Einstein, Dio gioca davvero a dadi con l’Universo; lo sbaglio è pensare che il risultato di un tiro di dadi derivi da fattori casuali.
@@ -993,28 +993,28 @@ Le possibili combinazioni dei dadi sono facilmente prevedibili, noto il numero d
 La combinazione che verrà effettivamente prodotta da un certo lancio di dadi è altrettanto deterministica, ma dipende da fattori molto più complessi, come il tempo per cui li si è agitati, della loro posizione al momento del lancio o l’angolo di impatto con il piano.
 Così come è impossibile che un lancio di dadi nel Backgammon produca un valore superiore a dodici, è impossibile che un dado, lanciato con una certa energia in una certa direzione adotti una traiettoria diversa da quella che gli impongono le Leggi della fisica.
 Anche se non riusciamo a prevederla, non vuol dire che sia casuale.  <br />
-Allo stesso modo, quando l’Uno primigenio “lancia” la sua energia nell’Universo, 
-è <em>onniscente</em>, perché conosce tutte le scelte che in precedenza si sono rivelate corrette e quelle che invece hanno prodotto del dolore; 
+Allo stesso modo, quando l’Uno primigenio “lancia” la sua energia nell’Universo,
+è <em>onniscente</em>, perché conosce tutte le scelte che in precedenza si sono rivelate corrette e quelle che invece hanno prodotto del dolore;
 è <em>benevolo</em>, perché spera di ottenere il miglior risultato possibile, evitando di ripetere gli sbagli già fatti;
 è <em>onnipotente</em>, perché può potenzialmente produrre tutte le possibili permutazioni <!-- l'allitterazione è intenzionale :-) --> dell’esistenza dovute all’interazione energia/spazioni.
 Malgrado ciò, non sa quale di quelle permutazioni avrà luogo e non lo vuole nemmeno sapere.
 Auspica che il nuovo ciclo di esistenza sia migliore dei precedenti, ma non desidera che avvenga un certo evento o che non avvenga un altro,
  perché il desiderio lo renderebbe vulnerabile alle lusinghe dell’Annosa Dicotomia. <br />
- Un famoso velista<a class="nota" href="/man/note#straulino" id="straulino"></a>, una volta disse:</p>
+ Un famoso velista<a class="nota" href="/man/note#fn-straulino" id="straulino">6</a>, una volta disse:</p>
 
 <blockquote>
   <p>Quando sei in regata e non c’è vento, non lo andare a cercare.<br /> Metti la prua nella direzione giusta e aspetta: il vento arriverà.</p>
 </blockquote>
 
-<p>L’Uno si comporta in maniera simile: ligio al precetto del <em>Wu Wei</em><a class="nota" href="/man/note#wu-wei" id="wu-wei"></a> taoista, pone le condizioni necessarie per il ripetersi degli eventi che si sono rivelati benefici, ma non li impone.
-Scrive l’analisi del sistema, ma lascia che siano i programmatori a scrivere il codice, anche se sa che faranno certamente degli errori. 
+<p>L’Uno si comporta in maniera simile: ligio al precetto del <em>Wu Wei</em><a class="nota" href="/man/note#fn-wu-wei" id="wu-wei">7</a> taoista, pone le condizioni necessarie per il ripetersi degli eventi che si sono rivelati benefici, ma non li impone.
+Scrive l’analisi del sistema, ma lascia che siano i programmatori a scrivere il codice, anche se sa che faranno certamente degli errori.
 Definisce delle regole, ma lascia le sue istanze libere di trasgredirle, perché sa che l’evoluzione è sempre frutto di un errore venuto male, di qualcosa che non sarebbe dovuto essere così e invece così è meglio. <br />
 Le regole non devono essere una rete che imprigiona e immobilizza, ma una rete che salva e sostiene, così come il “religare” delle religioni non deve essere un legame che impastoia, ma che sorregge.
-Le regole che definiscono e quindi limitano la nostra esistenza sono come un edificio che abbia una struttura in cemento armato e dei muri in cartongesso. 
+Le regole che definiscono e quindi limitano la nostra esistenza sono come un edificio che abbia una struttura in cemento armato e dei muri in cartongesso.
 I muri interni possono essere abbattuti o modificati, se necessario, ma i pilastri e le travi devono essere lasciati al loro posto.
 Similmente, la modifica delle regole può essere benefica, ma deve essere permessa solo a chi le conosce bene <!-- per esempio, Gesù --> perché un carpentiere maldestro potrebbe - per errore o per stupidità - rimuovere uno dei pilastri portanti mettendo in pericolo la solidità dell’edificio. <!-- per esempio, il Movimento del '68 --><br />
 Per questi motivi, la modifica delle regole non può essere un’attività ammessa da chi le ha promulgate, anche se ne riconosce l’utilità, ma dev’essere un’attività apparentemente clandestina, svolta da elementi sacrificabili, che possano fungere da capri espiatorii se qualcosa va male.<br />
-Non fu per ingenuità, che l’Altissimo concesse a Iblīs una proroga alla sua punizione<a class="nota" href="/man/note#iblis" id="iblis"></a> e non fu un caso se il Maestro Canaro venne aggiunto al gruppo degli angeli caduti, dopo che, vittima dell’Annosa Dicotomia, cercò di contravvenire alle regole definite dall’Analista.
+Non fu per ingenuità, che l’Altissimo concesse a Iblīs una proroga alla sua punizione<a class="nota" href="/man/note#fn-iblis" id="iblis">8</a> e non fu un caso se il Maestro Canaro venne aggiunto al gruppo degli angeli caduti, dopo che, vittima dell’Annosa Dicotomia, cercò di contravvenire alle regole definite dall’Analista.
 Se rifiuti le dissonanze, tutt’al più, puoi suonare il Blues; con le dissonanze, hai il Jazz.</p>
 
 <hr id="livelli-esistenza" />
@@ -1024,14 +1024,14 @@ Uno è ideale, simile alla dichiarazione della classe e definisce quale sia il n
 L’altro livello è la nostra manifestazione reale, dovuta all’interazione dell’energia dell’Uno con gli spazioni.
 Questo livello è assimilabile all’istanza di una classe, che mette in atto ciò che nella dichiarazione era solo potenziale: <em>the hearts that break, the mess we make</em>, come dice la canzone<!-- Audition (The Fools Who Dream)</i> - dal film: La La Land -->.<br />
 La nostra entità ideale è unica e costante, mentre la nostra manifestazione fisica è mutevole: come sai, uno stesso oggetto può essere allocato in aree differenti di memoria, in successive esecuzioni di un programma, così come una stessa stampa può essere riprodotta su supporti diversi.
-In questo ciclo di esistenza, il Maestro Canaro e il cane Lele sono stati un umano e un cane che correvano sulle colline intorno al lago di Bracciano, ma in altre esistenze potrebbero essere — o essere stati — altre persone e altri animali, in altri luoghi o addirittura in altri pianeti. 
-Il nostro livello ideale, infatti, non stabilisce cosa dobbiamo essere, ma quale debba essere il nostro contributo all’economia dell’Universo; la forma che assumiamo o il luogo in cui ci manifestiamo sono del tutto incidentali. 
-Per il C’hi++, come per l’Induismo<a class="nota" href="/man/note#cogito" id="cogito"></a>, la frase: “Cogito ergo sum” di Cartesio è insensata, perché ciò che cogita è l’istanza, che è transeunte.
+In questo ciclo di esistenza, il Maestro Canaro e il cane Lele sono stati un umano e un cane che correvano sulle colline intorno al lago di Bracciano, ma in altre esistenze potrebbero essere — o essere stati — altre persone e altri animali, in altri luoghi o addirittura in altri pianeti.
+Il nostro livello ideale, infatti, non stabilisce cosa dobbiamo essere, ma quale debba essere il nostro contributo all’economia dell’Universo; la forma che assumiamo o il luogo in cui ci manifestiamo sono del tutto incidentali.
+Per il C’hi++, come per l’Induismo<a class="nota" href="/man/note#fn-cogito" id="cogito">9</a>, la frase: “Cogito ergo sum” di Cartesio è insensata, perché ciò che cogita è l’istanza, che è transeunte.
 Ciò che siamo realmente, la nostra essenza, si manifesta in ciò che facciamo istintivamente.</p>
 
 <!--
 
-@todo: aggiungere  le specifiche sulla visibilità delle classi 
+@todo: aggiungere  le specifiche sulla visibilità delle classi
 
 @todo: aggiungere specifiche sull'ordine di inizalizzazione nel costruttore
 

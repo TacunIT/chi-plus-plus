@@ -5,7 +5,7 @@ og_desc:    "L'Universo è fatto di spazioni - Il Mondo ha la natura dell’Arte
 og_img:     "/assets/img/og-img/tipi-di-dato.jpg"
 permalink:  /man/tipi-di-dato
 quote:      "Tutto è byte"
-status:     pubblicato 
+status:     pubblicato
 title:      "I tipi di dato"
 ---
 
@@ -14,7 +14,7 @@ La varietà dei tipi di dato disponibili è la caratteristica principale del C++
 Il C++ ha ereditato dal C una vasta gamma di tipi di dato.
 A seconda della loro natura, possiamo dividere questi tipi di dato in due gruppi: i dati *scalari* e i dati *aggregati*.  
 I tipi di dato *scalari* sono: `void`, `bool`, `char`, `wchar_t`, `int`, `float`, `double` e permettono di gestire gli elementi classici di un programma: i numeri interi, i numeri decimali, le lettere e i valori booleani.  
-I tipi di dato *aggregati* sono gli *array*, le *unioni*, gli *emumerati*, le *strutture* e le *classi*. 
+I tipi di dato *aggregati* sono gli *array*, le *unioni*, gli *emumerati*, le *strutture* e le *classi*.
 Questi, come dice anche il loro nome, sono costituiti dall'aggregazione di più dati scalari dello stesso tipo o di tipi differenti.  
 Il prossimo brano di codice &mdash; fastidiosamente didascalico, nella sua sostanziale inutilità &mdash; mostra i principali tipi di dato del C++.
 Contiene molti elementi di cui ancora non ti ho parlato, quindi non preoccuparti se non capisci del tutto ciò che fa.
@@ -27,7 +27,7 @@ Compilando ed eseguendo questo codice, otterrai:
 
 ```
 % g++ src/cpp/tipi-di-dato-principali.cpp -o src/out/esempio
-% src/out/esempio 
+% src/out/esempio
 booleano:0
 carattere:C
 intero:1234567890
@@ -39,17 +39,17 @@ coloreRGB:green
 Il tipo di dato `void` non ha né una dimensione né un valore e può essere assegnato solo a un puntatore o a una funzione che non torna alcun tipo di valore, come la funzione `nome_colore` della classe `Colore`.  
 Il tipo di dato `bool` è utilizzato per gestire i valori booleani.
 Può assumere solo due valori: `true` o `false`, quindi ha la dimensione minima possibile, ovvero un byte.  
-Il tipo `int` permette di gestire i numeri interi. 
-Di solito ha una dimensione di quattro byte, che può essere aumentata o diminuita per mezzo di parole-chiave dette: 
+Il tipo `int` permette di gestire i numeri interi.
+Di solito ha una dimensione di quattro byte, che può essere aumentata o diminuita per mezzo di parole-chiave dette:
 <a href="#modificatori" class="xref">modificatori</a>.  
-I tipi `float` e `double` si utilizzano per gestire i numeri decimali. 
+I tipi `float` e `double` si utilizzano per gestire i numeri decimali.
 Hanno una lunghezza di quattro e otto byte rispettivamente e una precisione di sette e quindici cifre decimali.  
 I tre elementi che compaiono al di fuori della funzione `main` sono tipi di dato *aggregati* e permettono di definire dei tipi di dati non standard.  
 Gli `enum` permettono di assegnare dei nomi a dei valori, rendendo più facile la programmazione.
 Nell'esempio, l'*enum* `RGB` assegna un nome a tre valori della codifica RGB.
 Questo nuovo tipo di dato è utilizzato nella struttura `ColoreRGB`.  
 Le `struct` permettono di creare degli insiemi di dati eterogenei.
-La variabile `ColoreRGB` contiene due variabili differenti: un valore di tipo `RGB` e un 
+La variabile `ColoreRGB` contiene due variabili differenti: un valore di tipo `RGB` e un
 <a href="#puntatori" class="xref">puntatore</a>   
 a carattere.  
 Tutti i tipi di dati che abbiamo visto finora sono un retaggio del linguaggio *C*.
@@ -58,7 +58,7 @@ Attenzione, però: nessuno di questi signori è in realtà ciò che afferma di e
 Nella variabile `booleano` non c'è il valore `true` o `false`, ma un valore binario che il sistema considera tale.
 Allo stesso modo, nella variabile `carattere`, non c'è la lettera `C`, ma il valore binario corrispondente alla codifica ASCII della lettera `C`.
 Ogni tipo di dato non è altro che il nome di una quantità di memoria.
-Ricordatelo, perché questo è la chiave di tutto. 
+Ricordatelo, perché questo è la chiave di tutto.
 
 ---
 
@@ -112,7 +112,7 @@ unsigned short: 2 bytes, da:                    0  a:                65535
 
 <a id="funzioni"></a>
 L'ultima cosa di cui ti devo parlare, a proposito dei tipi di dato del C++ sono i cosiddetti *attributi intermediari*, ovvero: le *funzioni*, gli *array*, i *puntatori* e le *reference*.  
-Delle *funzioni* parleremo diffusamente 
+Delle *funzioni* parleremo diffusamente
 <a href="/man/funzioni" class="xref">in seguito</a>.
 Quello che ci interessa, qui e ora, è che ogni funzione ha un suo tipo di dato.
 La funzione `main`, che è la funzione principale di ogni programma, ha come tipo di dato `int` e infatti si chiude con l'istruzione:
@@ -120,7 +120,7 @@ La funzione `main`, che è la funzione principale di ogni programma, ha come tip
 ```
 return 0;
 ```
-    
+
 La funzione `nome_colore`, all'interno della classe `Colore` è di tipo `void` e, come puoi vedere, non ha valore di ritorno.  
 Gli *array* sono degli insiemi di dati omogenei e si dichiarano aggiungendo al nome della variabile delle parentesi quadre.
 La dimensione dell'array deve essere definita al momento della sua dichiarazione; questo può avvenire o in maniera esplicita, inserendo il numero di elementi fra le parentesi quadre:
@@ -157,21 +157,21 @@ Quello che devi tenere sempre a mente è che il *C++* è solo un modo particolar
 ```
 
 L'unico modo per dare un senso a questa catena di valori binarii è di suddividerli in blocchi e assegnare un tipo di dato a ciascun blocco.
-Per esempio, se suddividi la sequenza binaria qui sopra in blocchi di otto bit: 
+Per esempio, se suddividi la sequenza binaria qui sopra in blocchi di otto bit:
 
 ```
-01000011 00100111 01101000 01100001 01101110 01101110 01101111 
-00100000 01100110 01101111 01110010 01110011 01100101 00100000 
-01110100 01110101 01110100 01110100 01100101 00100000 01100101 
-00100000 01100100 01110101 01100101 00100000 01101100 01100001 
-00100000 01110011 01110100 01100101 01110011 01110011 01100001 
-00100000 01100101 01110100 11100000 00100000 00001010 01001010 
-01100101 00100000 01100110 01101001 01101111 01110010 01101001 
-01110011 01100011 01100101 00100000 01100100 01100101 01101110 
-01110100 01110010 01101111 00100000 01100001 01110010 00100000 
-01100011 01101111 01110010 01100101 00100000 00100111 01101110 
-00100000 01101001 01101100 01101100 01110101 01110011 01101001 
-01101111 01101110 01100101 
+01000011 00100111 01101000 01100001 01101110 01101110 01101111
+00100000 01100110 01101111 01110010 01110011 01100101 00100000
+01110100 01110101 01110100 01110100 01100101 00100000 01100101
+00100000 01100100 01110101 01100101 00100000 01101100 01100001
+00100000 01110011 01110100 01100101 01110011 01110011 01100001
+00100000 01100101 01110100 11100000 00100000 00001010 01001010
+01100101 00100000 01100110 01101001 01101111 01110010 01101001
+01110011 01100011 01100101 00100000 01100100 01100101 01101110
+01110100 01110010 01101111 00100000 01100001 01110010 00100000
+01100011 01101111 01110010 01100101 00100000 00100111 01101110
+00100000 01101001 01101100 01101100 01110101 01110011 01101001
+01101111 01101110 01100101
 ```
 
 e converti ciascun valore nel corrispondente carattere del set ASCII, scopri che una sequenza apparentemente insensata di 1 e di 0 è in realtà l'inizio di una famosa canzone popolare:
@@ -184,7 +184,7 @@ e converti ciascun valore nel corrispondente carattere del set ASCII, scopri che
 01101110 = 110 = n
 01101110 = 110 = n
 01101111 = 111 = o
-00100000 =  32 = 
+00100000 =  32 =
 ```
 
 Per identificare i valori all'interno della sequenza di bit, hai bisogno di due informazioni: il tipo di dato che stai puntando e il suo indirizzo in memoria.
@@ -194,12 +194,12 @@ I puntatori ti permettono di ottenere queste informazioni: il loro valore defini
 unsigned char * ptr = valori;
 ```
 
-Molti pensano ai puntatori come a delle bandierine che ti permettono di identificare un punto specifico della memoria, ma questo è vero solo per i puntatori `void`, che non hanno un tipo di dato associato. 
+Molti pensano ai puntatori come a delle bandierine che ti permettono di identificare un punto specifico della memoria, ma questo è vero solo per i puntatori `void`, che non hanno un tipo di dato associato.
 Gli altri puntatori, più che una bandierina, sono una sorta di maschera che può scorrere sulla sequenza di bit, isolando ed evidenziando i singoli valori che la compongono:
 
-<pre><code style="color:#999;line-height:1.5">01000011 00100111 01101000 01100001 01101110 01101110 01101111 
-00100000 01100110<span style="padding:2px;border:solid 1px;color:#000;margin:0 3px;">01101111</span>01110010 01110011 01100101 00100000 
-01110100 01110101 01110100 01110100 01100101 00100000 01100101 
+<pre><code style="color:#999;line-height:1.5">01000011 00100111 01101000 01100001 01101110 01101110 01101111
+00100000 01100110<span style="padding:2px;border:solid 1px;color:#000;margin:0 3px;">01101111</span>01110010 01110011 01100101 00100000
+01110100 01110101 01110100 01110100 01100101 00100000 01100101
 00100000 01100100 01110101
 </code></pre>
 
@@ -209,7 +209,7 @@ Questo programma mostra come la dimensione di un puntatore modifichi il risultat
 {% include_relative src/tipi-di-dato-puntatori.cpp %}
 ```
 
-Questo è l'output del programma; voglio proprio vedere come farai a farlo entrare nel tuo libro: 
+Questo è l'output del programma; voglio proprio vedere come farai a farlo entrare nel tuo libro:
 
 ```
  0          01000011    67   C
@@ -338,7 +338,7 @@ Questo è l'output del programma; voglio proprio vedere come farai a farlo entra
 Come vedi, i bit sono gli stessi, ma cambiando il tipo di dato associato al puntatore e quindi la sua dimensione, il valore dei dati diventa un altro e la conversione dei numeri in lettere perde di significato.  
 Le istruzioni: `p1++` e `p2++` incrementano di un'unità il puntatore, ovvero lo spostano in avanti nella memoria del numero di byte corrispondenti alla dimensione del tipo di dato a cui è associato.
 Il puntatore `p1` è un `unsigned char`, quindi si sposta di otto bit; il puntatore `p12` è uno `short int`, quindi si sposta di sedici bit.
-È questo il motivo per cui il secondo ciclo di lettura dura la metà del primo: perché la quantità di bit letta per ogni iterazione è doppia. 
+È questo il motivo per cui il secondo ciclo di lettura dura la metà del primo: perché la quantità di bit letta per ogni iterazione è doppia.
 Se mi fossi distratto e avessi copiato il codice del primo ciclo di lettura così com'è, senza dividere per due il numero di cicli, il puntatore avrebbe continuato a “camminare” in avanti nella memoria, oltre i confini dell'array e questo, come vedremo in seguito, non è assolutamente bene.  
 Le *reference* sono degli alias delle variabili a cui sono associati.
 Come per i gibboni o i cigni, il legame fra una *reference* e la sua variabile dura tutta la vita.
@@ -357,7 +357,7 @@ valori iniziali: v=10, r=10
 valori finali:   v=20, r=20
 ```
 
-Approfondiremo i pro e i contro delle *reference* quando parleremo delle 
+Approfondiremo i pro e i contro delle *reference* quando parleremo delle
 <a href="/man/funzioni" class="xref">funzioni</a>.
 
 <hr id="casting">
@@ -373,14 +373,14 @@ char c = i;
 
 In questo caso, assegnamo a una variabile di tipo `char` il valore di una variabile di tipo `int` e il compilatore ce lo lascia fare perché il valore dell'intero può essere salvato senza problemi anche nel singolo byte del `char`.
 Se volessimo rendere esplicita questa conversione, dovremmo utilizzare la sintassi:
- 
+
 ```
 int  i = 0;
 char c = (char) i;
 char c = char (i);
 ```
-Le due forme sono equivalenti. 
-La prima è quella che il C++ ha ereditato dal C; la seconda è chiamata *notazione funzionale*. 
+Le due forme sono equivalenti.
+La prima è quella che il C++ ha ereditato dal C; la seconda è chiamata *notazione funzionale*.
 Nell'esempio precedente, la variabile `valori` è un puntatore a `unsigned char`, ma abbiamo detto al sistema di considerarla un puntatore a `short int` con l'istruzione:
 
 ```
@@ -397,7 +397,7 @@ Puoi pensare all'Universo come a una versione tridimensionale di uno schermo di 
 Le immagini che vedi su questo schermo sono costituite da minuscoli puntini colorati, detti *pixel*.
 Quando lo schermo è spento, i pixel sono neri e non mostrano alcuna immagine; quando lo accendi, l'energia del catodo colpisce i pixel e li rende visibili.
 Tutto ciò che vedi, all'interno dello schermo, però, è illusorio.
-O meglio: esiste, ma non è ciò che sembra. 
+O meglio: esiste, ma non è ciò che sembra.
 Gli elementi delle finestre non sono tridimensionali, anche se hanno delle ombre e quando vedi il puntatore del mouse spostarsi da una finestra all'altra in realtà stai vedendo i pixel dello schermo che cambiano di colore
 È un'illusione auto-indotta e volontaria: il tuo cervello vede qualcosa, ma finge che sia altro, perché è più comodo così.  
 La stessa cosa avviene con gli spazioni, solo che invece di essere disposti su una superficie piana, come i pixel dello schermo, gli spazioni sono una matrice tridimensionale e hanno quella che il Maestro Canaro definiva: “esistenza potenziale”; se sono irradiati di energia, acquisiscono massa e quindi esistenza, altrimenti non esistono.
@@ -413,11 +413,11 @@ Né io né te siamo, adesso, costituiti dagli stessi spazioni che eravamo pochi 
 Siamo un'immagine in movimento, come il puntatore del mouse, o come le luci delle decorazioni natalizie.
 Come disse Sant'Agostino, siamo, allo stesso tempo, reali e illusorii:
 
-> {{ site.data.citazioni.agostino }} <a id="agostino" href="/man/note#agostino" class="nota"></a>
+> {{ site.data.citazioni.agostino }} <a id="agostino" href="/man/note#fn-agostino" class="nota">1</a>
 
 Per i *Vedanta*, il Mondo ha la natura dell'Arte perché la realtà dell'arte-fatto è differente dalla realtà dell'arte-fice.
 Questa similitudine, oltre che per Platone, è valida anche per i linguaggi di programmazione: un oggetto all'interno di un programma esiste, ma non è realmente ciò che rappresenta, anche se a noi fa comodo ritenerlo tale.
-Come scrisse Ezra Pound<a id="pound" href="/man/note#pound" class="nota"></a>, solo i sogni esistono realmente, perché la loro natura irreale rimane tale anche in una realtà illusoria.
+Come scrisse Ezra Pound<a id="pound" href="/man/note#fn-pound" class="nota">2</a>, solo i sogni esistono realmente, perché la loro natura irreale rimane tale anche in una realtà illusoria.
 
 ---
 
