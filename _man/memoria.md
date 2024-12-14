@@ -12,7 +12,7 @@ title:      "La memoria"
 La gestione della memoria è la caratteristica principale del C++.
 
 Come ti ho detto, tutti i linguaggi di programmazione sono un modo di vedere la memoria del computer.
-Quando tu *dichiari* una variabile con un'istruzione come: 
+Quando tu *dichiari* una variabile con un'istruzione come:
 
 ```
 signed int a = 1;
@@ -23,10 +23,10 @@ in realtà, stai dicendo al compilatore di prendere un'area di memoria di 32 bit
  ```
  00000000 00000000 00000000 00000001
  ```
- 
+
  Come puoi vedere, la maggior parte della variabile è inutilizzata, quindi, se hai a che fare con valori minori di 65.535, è meglio usare degli `short int`, che occupano solo due byte.  
  Allo stesso modo, se dichiari la stringa:
- 
+
  ```
  const char* motto = "Cogito ergo sum";
  ```
@@ -34,7 +34,7 @@ in realtà, stai dicendo al compilatore di prendere un'area di memoria di 32 bit
 stai chiedendo al compilatore di prendere un'area di memoria di 16 byte, salvarne l'indirizzo iniziale nella variabile `motto` e poi scriverci dentro i 15 caratteri della frase più un ultimo carattere, con valore `0`, che indica la fine della stringa.  
 Puoi usare questo metodo se sai in anticipo quanto saranno grandi le variabili con cui avrai a che fare, ma se invece devi gestire dei valori di grandezza variabile (per esempio, l'input di un utente), hai due possibilità: o riservi preventivamente una quantità abbondante di spazio, o la allochi sul momento, in base alle tue necessità.
 Il primo caso va bene se devi gestire pochi dati di dimensioni ridotte, ma se devi gestire molte variabili di grandi dimensioni, l'allocazione dinamica, anche se più complessa da gestire, è più efficiente.  
-Il codice seguente è un esempio di gestione statica della memoria: 
+Il codice seguente è un esempio di gestione statica della memoria:
 
 ```
 {% include_relative src/memoria-statica.cpp %}
@@ -73,7 +73,7 @@ Stringa uno Stringa due più lunga
 % src/out/esempio "Stringa uno" ""                     
 0x7fcf8f405910
 13
-Stringa uno 
+Stringa uno
 ```
 
 La parola-chiave `new` permette di allocare una determinata quantità di memoria e torna un puntatore al primo indirizzo dell'area allocata:
@@ -82,14 +82,14 @@ La parola-chiave `new` permette di allocare una determinata quantità di memoria
 char* stringa = new char[lunghezza];
 ```
 
-Il puntatore `stringa`, adesso, contiene l'indirizzo dell'area di memoria allocata dall'istruzione `new`. 
+Il puntatore `stringa`, adesso, contiene l'indirizzo dell'area di memoria allocata dall'istruzione `new`.
 Se lo passiamo come parametro all'operatore `<<`, dato che si tratta di un puntatore a `char`, verrà visualizzato come una stringa:
 
 ```
 cout << stringa << endl;
 ```
 
-Per conoscere il suo valore effettivo, dobbiamo convertirlo in un puntatore `void` con un'operazione di <a href="/man/tipi-di-dato#casting">casting</a>: 
+Per conoscere il suo valore effettivo, dobbiamo convertirlo in un puntatore `void` con un'operazione di <a href="/man/tipi-di-dato#casting">casting</a>:
 
 ```
 cout << (void*)stringa << endl;
@@ -122,11 +122,11 @@ Come vedi, la stringa definita globalmente è visibile sia nella funzione `main`
 L' “aspettativa di vita” di ciascuna variabile dipende dal punto in cui è stata definita: la prima variabile esisterà per tutta la durata del programma; la seconda variabile viene creata quando si richiama la funzione `funz` e viene eliminata quando la funzione termina; la variabile all'interno del blocco di codice esiste solo per due istruzioni, poi il blocco di codice finisce e viene eliminata.  
 Al contrario, quando un'area di memoria è allocata dinamicamente, rimane occupata fino a che il programma (o, più precisamente: il programmatore) non la rilascia con un'istruzione `delete`.
 Se il programma fa una sola chiamata, come nel nostro esempio, il fatto che una cinquantina di byte non siano disponibili per qualche minuto non crea grossi problemi (lo so per certo perché, nella prima versione dell'esempio, avevo dimenticato di aggiungere l'istruzione `delete` alla fine e il computer ha continuato a funzionare lo stesso), se però quello stesso programma continuasse a girare sullo stesso computer per lungo tempo, a poco a poco esaurirebbe tutta la memoria disponibile, causandone il blocco.  
-Per questo motivo, il linguaggio con la "J" ha un sistema di *garbage collection* che, come le squadre di pulizia dei Servizi Segreti, provvede a eliminare le prove dell'incompetenza dei suoi programmatori prima che questa arrechi danno ai sistemi. 
+Per questo motivo, il linguaggio con la "J" ha un sistema di *garbage collection* che, come le squadre di pulizia dei Servizi Segreti, provvede a eliminare le prove dell'incompetenza dei suoi programmatori prima che questa arrechi danno ai sistemi.
 Qualcuno ti dirà che non è vero, che i programmatori "J" sono dei professionisti competenti, ma ragiona: se esiste un sistema di raccolta dei rifiuti, ci dovrà pur essere qualcuno che li produce, no?
 
 <hr id="dottrina">
- 
+
 Come le variabili del C++, anche gi esseri umani sono chiamati a vivere, svolgono il loro compito e alla fine vengono rimossi dal sistema.
 Le risorse che occupiamo sono un insieme di spazioni, invece che delle sequenze di byte, ma ciò che comunemente definiamo: *noi* non è altro che un modo di vedere le transizioni di energia all'interno del sistema.
 A differenza delle variabili del software, però, gli esseri umani sono capaci di valutare l'esito delle loro scelte o delle loro azioni e possono decidere se ripetere quella scelta o quell'azione in altri cicli di vita dell'Universo.
@@ -135,11 +135,11 @@ In questo modo, genereremo a una nuova variante della storia che, come una varia
 Un *Koan* molto famoso parla dello <i id="istante">Zen di ogni istante</i>:
 
 > Gli studenti di Zen stanno con i loro maestri almeno dieci anni prima di presumere di poter insegnare a loro volta. Nan-in ricevette la visita di Tenno, che, dopo aver fatto il consueto tirocinio era diventato insegnante.
-Era un giorno piovoso, perciò Tenno portava zoccoli di legno e aveva con sé l’ombrello. 
+Era un giorno piovoso, perciò Tenno portava zoccoli di legno e aveva con sé l’ombrello.
 Dopo averlo salutato, Nan-in disse: “Immagino che tu abbia lasciato gli zoccoli nell’anticamera. Vorrei sapere se hai messo l’ombrello alla destra o alla
 sinistra degli zoccoli”.
-Tenno, sconcertato, non seppe rispondere subito. Si rese conto che non sapeva portare il suo Zen in ogni istante. 
-Diventò allievo di Nan-in e studiò ancora sei anni per perfezionare il suo Zen di ogni istante.<a class="nota" href="/man/note#zen" id="zen"></a>
+Tenno, sconcertato, non seppe rispondere subito. Si rese conto che non sapeva portare il suo Zen in ogni istante.
+Diventò allievo di Nan-in e studiò ancora sei anni per perfezionare il suo Zen di ogni istante.<a class="nota" href="/man/note#fn-zen" id="zen">1</a>
 
 Il Maestro Canaro detestava questo *Koan* perché era molto distratto.
 Se Nan-in l'avesse fatta a lui, la domanda, probabilmente l'avrebbe guardato con aria infastidita e gli avrebbe chiesto: “Quali zoccoli?”.
@@ -159,39 +159,39 @@ C'è un aneddoto apocrifo sul Maestro Canaro che parla proprio di questo:
 {{ site.data.canaro.computer-zia }}
 </blockquote>
 
-L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito come un paziente a cui sia diagnosticato un male incurabile ed ha elaborato il suo dolore secondo le cinque fasi definite dalla dottoressa Kübler Ross<a class="nota" href="/man/note#kubler" id="kubler"></a>:    
+L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito come un paziente a cui sia diagnosticato un male incurabile ed ha elaborato il suo dolore secondo le cinque fasi definite dalla dottoressa Kübler Ross<a class="nota" href="/man/note#fn-kubler" id="kubler">2</a>:    
 
 <i>Negazione:</i> così come l'Epoca vittoriana aveva il tabù del sesso, la nostra “cultura” ha il tabù della morte: i nostri bis-nonni fingevano di non avere interessi carnali, noi fingiamo che la morte non esista.
-La neghiamo a parole, usando dei giri di parole per non nominarla: “Se n'è andato”, “Non c'è più”, “È scomparso”, neanche si stesse parlando di un evaso o di un illusionista. 
+La neghiamo a parole, usando dei giri di parole per non nominarla: “Se n'è andato”, “Non c'è più”, “È scomparso”, neanche si stesse parlando di un evaso o di un illusionista.
 La neghiamo nei fatti, isolando i moribondi nelle corsie d'ospedale, lontani dalle loro case e dai loro cari.
-La neghiamo nei nostri pensieri e nelle nostre azioni, perché altrimenti l'insensatezza delle nostre vite, spese inseguendo il miraggio effimero del successo<a class="nota" href="/man/note#successo" id="successo"></a> diventerebbe evidente e innegabile.  
+La neghiamo nei nostri pensieri e nelle nostre azioni, perché altrimenti l'insensatezza delle nostre vite, spese inseguendo il miraggio effimero del successo<a class="nota" href="/man/note#fn-successo" id="successo">3</a> diventerebbe evidente e innegabile.  
 
 <i>Rabbia:</i> anche se rabbia e aggressività sono sempre state presenti nella nostra storia, dalla metà del Secolo scorso, oltre che dall'oppressione e dal disagio, hanno cominciato a fiorire rigogliose anche dal benessere.
 Gli scontri fra *Mods* e *Rockers* negli anni '60, le lotte armate degli anni '70, il *Punk* e, in tempi più recenti, i *foreign fighters* e l'aggressività nei *social-network*: nessuno di questi fenomeni nasce nei ghetti o da uno stato di bisogno, sono tutti degli *hobby* del Ceto medio.  
 
-<i>Negoziazione:</i> nel 1982 Jane Fonda pubblicò una videocassetta nella quale insegnava a fare ginnastica aerobica<a class="nota" href="/man/note#aerobica" id="aerobica"></a> nel salotto di casa a chiunque potesse permettersi di spendere sessanta Dollari<a class="nota" href="/man/note#dollari" id="dollari"></a> per un VHS. 
+<i>Negoziazione:</i> nel 1982 Jane Fonda pubblicò una videocassetta nella quale insegnava a fare ginnastica aerobica<a class="nota" href="/man/note#fn-aerobica" id="aerobica">4</a> nel salotto di casa a chiunque potesse permettersi di spendere sessanta Dollari<a class="nota" href="/man/note#fn-dollari" id="dollari">5</a> per un VHS.
 Fu una delle videocassette più vendute di tutti i tempi e diede il via a una moda che divenne uno stile di vita per milioni di persone.
 La mania del *fitness*, insieme al rifiorire della spiritualità *New Age*, sono stati il modo in cui i popoli civilizzati hanno cercato di venire a patti con la nuova, terrificante realtà presentata loro dalla Scienza, prendendo atto dei proprii errori e cercando di porvi rimedio cambiando stile di vita.
 Sfortunatamente, però, gli pseudo-mistici non hanno mai capito che recitare il *Sutra del Loto* perché credi che possa aiutarti a realizzare i tuoi desiderii è una contraddizione in termini.
 La religione è come gli antibiotici: non fa effetto se non prendi la dose intera.
 
 <i>Depressione:</i> la sindrome depressiva è la seconda malattia più diffusa al Mondo, dopo i disturbi cardiaci, segno evidente che la fase di negoziazione non ha sortito gli effetti sperati.
-Fallito ogni tentativo di combattere la realtà, l'Uomo del terzo Millennio  ha cercato scampo nella fuga e si è rinchiuso in sé stesso come il Giappone dei Tokugawa, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a class="nota" href="/man/note#sakoku" id="sakoku"></a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
+Fallito ogni tentativo di combattere la realtà, l'Uomo del terzo Millennio  ha cercato scampo nella fuga e si è rinchiuso in sé stesso come il Giappone dei Tokugawa, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a class="nota" href="/man/note#fn-sakoku" id="sakoku">6</a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
 La realtà è ovunque e anche isolandoci non possiamo sfuggirle; anzi: la solitudine genera un *feedback* che amplifica lo stato di malessere e rende ancora più difficile e improbabile il raggiungimento dello stadio successivo, ovvero, la..
 
 <i>Accettazione:</i> il solo modo per salvarsi è rinunciare agli insegnamenti dei cattivi maestri del passato e accettare il fatto di non essere delle gocce d'acqua uniche e insostituibili, ma di far parte del mare.
 Chi vuole, potrà credere che in quel mare ci sia Poseidone; gli altri saranno liberi di pensare che ci siano solo pesci, molluschi e alghe: non ha importanza; ciò che conta è sottrarsi all'influenza separatrice dell'Entropia e riacquistare un senso di appartenenza a qualcosa che va oltre le nostre brevi e limitate esistenze. <!-- @todo Verificare quello che dice De Santillana a proposito di Galileo: C'hi++ non si oppone al pensiero scientifico, che anzi adotta, ma all'intolleranza scientifica -->
 Solo così, potremo vincere la nostra battaglia contro l'Annosa Dicotomia.
 Solo così, potremo smettere di inseguire una fama transeunte e trovare forza nella consapevolezza del fatto che ciascuno di noi può modificare l'evoluzione dell'Mondo con le sue azioni.  
-Secondo lo *Yoga Sutra Bhāṣya*<a class="nota" href="/man/note#yoga" id="yoga"></a>:
+Secondo lo *Yoga Sutra Bhāṣya*<a class="nota" href="/man/note#fn-yoga" id="yoga">7</a>:
 
 > Il Mondo intero subisce una mutazione a ogni istante; così, tutte le qualità esteriori del Mondo dipendono da questo istante presente.
 
 Così come tutti gli istanti sono importanti, per il Mondo, ciascun essere è importante per l'Universo, se svolge il compito che gli è stato assegnato; anche qualcuno o qualcosa che apparentemente è insignificante.
 È noto che il Maestro Canaro raggiunse il primo stato di Illuminazione quando vide un arbusto crescere su una parete di roccia a picco sul mare.
 Un arbusto apparentemente inutile: i suoi semi non avrebbero mai raggiunto una terra dove germogliare e i suoi rami erano troppo esili perché un uccello ci potesse costruire il suo nido; malgrado ciò, la caparbietà con cui quella pianta svolgeva il ruolo che gli era stato assegnato, permise al Maestro Canaro di capire ciò che molti libri non erano riusciti a spiegargli, posando la prima pietra di quello che sarebbe stato poi il suo insegnamento.  
-Quello che noi percepiamo come il nostro “valore” è relativo. 
-Pensa alla variabile `a` che abbiamo visto all'inizio: 
+Quello che noi percepiamo come il nostro “valore” è relativo.
+Pensa alla variabile `a` che abbiamo visto all'inizio:
 
 ```
 00000000 00000000 00000000 00000001
@@ -199,7 +199,7 @@ Pensa alla variabile `a` che abbiamo visto all'inizio:
 
 Il bit iniziale vale `0`, che è un valore nullo, se lo consideri individualmente, ma se invece lo valuti in rapporto ai due byte a cui appartiene, diventa il valore da cui <a href="/man/tipi-di-dato#modificatori">dipende il segno della variabile</a>.
 Se per un caso il valore di quel bit diventasse `1`, il valore della variabile `a` diventerebbe negativo, con delle ripercussioni imprevedibili sul programma.
-Molte, troppe persone sono 
+Molte, troppe persone sono
 <a href="https://canaro.net/ide-monogatari/binario.html" target="canaro">come quel bit</a> e pensano di valere zero perché considerano il proprio valore solo in termini soggettivi.
 Mesmerizzati dall'Annosa Dicotomia, spendono tutte le loro energie cercando di valere `1` e si distraggono così da quello che sarebbe stato il loro destino, con conseguenze molto più gravi di un'alterazione di segno in una variabile.
 
@@ -215,7 +215,7 @@ La risposta è in una frase di Jacopone da Todi:
  Quanno sai er perché, te devi impara' a stacce .
 
 In queste due frasi è racchiuso il senso della Vita: capire quale sia il proprio ruolo e svolgerlo al meglio delle proprie possibilità, senza farsi influenzare dalle mode e soprattutto senza cadere vittima dell'Annosa Dicotomia.  
-Il C++ è un linguaggio a tipizzazione forte<a class="nota" href="/man/note#tipizzazione" id="tipizzazione"></a>, perciò, quando si dichiara una variabile, le si deve sempre assegnare un tipo di dato:
+Il C++ è un linguaggio a tipizzazione forte<a class="nota" href="/man/note#fn-tipizzazione" id="tipizzazione">8</a>, perciò, quando si dichiara una variabile, le si deve sempre assegnare un tipo di dato:
 
 ```
 bool    booleano  = false;
@@ -226,9 +226,9 @@ char    array[]   = "abcdefghilmnopqrstuvz";
 ```
 Allo stesso modo, tutto ciò che esiste ha delle capacità che sono funzionali al suo ruolo nell'Universo.
 Suonare, scrivere, recitare, insegnare, convincere, guidare, amare: a ciascuno di noi, l'Universo dà uno strumento e un banco di lavoro, anche se il ruolo che ci verrà assegnato non sempre è evidente fin dalla nascita.
-Prendi Lech Walesa, per esempio (è l'unico Nobel per la Pace che mi viene in mente che non fosse laureato): lui cominciò a lavorare come elettricista navale, ma le sue capacità lo trasformarono in un leader politico<a class="nota" href="/man/note#walesa" id="walesa"></a>.
+Prendi Lech Walesa, per esempio (è l'unico Nobel per la Pace che mi viene in mente che non fosse laureato): lui cominciò a lavorare come elettricista navale, ma le sue capacità lo trasformarono in un leader politico<a class="nota" href="/man/note#fn-walesa" id="walesa">9</a>.
 Oppure, meglio, pensa a te stesso: se avessi voluto, a diciott'anni avresti potuto lasciare l'Ordine, tornare a casa e diventare un *vice-qualcosa* nell'azienda della tua famiglia, invece sei rimasto qui a scrivere il tuo libro.
-Sarà stata la scelta giusta? 
+Sarà stata la scelta giusta?
 Cosa si aspettava, l'Universo, da te? che, come monaco, rendessi il Mondo un luogo migliore con la tua Bibbia per smanettoni o che, come manager, migliorassi le condizioni di vita dei dipendenti della tua azienda?
 Lo scopriremo solo quando torneremo a essere Uno; fino ad allora, potremo solo fare delle supposizioni.<!--, oppure chiederci: quale è stato, il motivo della tua scelta?-->
 Se sei rimasto qui per pigrizia o perché avevi paura del Mondo o della tua famiglia, hai fatto un errore.
@@ -244,7 +244,7 @@ L'amore è la droga perfetta: dà assuefazione come il *crack* e ti fa credere d
 Quindi, se quello che ti spinge ad agire è una qualche forma di amore &mdash; e non solo amore per qualcuno, ma anche per qualcosa, che sia il mare, la montagna, uno sport, una forma di arte o un lavoro &mdash; è molto probabile che tu stia facendo ciò che devi.  
 Nell'ottica della gestione della memoria, l'amore ha anche un altro utilizzo, riassunto nel precetto:
 
-> Amiamo ciò che ci ucciderà (se tutto va bene) 
+> Amiamo ciò che ci ucciderà (se tutto va bene)
 
 Adesso, però, è tardi e questa lezione è stata fin troppo lunga; ne parleremo un'altra volta.
 
@@ -252,6 +252,6 @@ Adesso, però, è tardi e questa lezione è stata fin troppo lunga; ne parleremo
 
 @todo: decidere se mettere un riferimento incrociato alla lezione sulle classi.
 
-@todo: classi di memorizzazione: extern, static, auto 
+@todo: classi di memorizzazione: extern, static, auto
 
 -->

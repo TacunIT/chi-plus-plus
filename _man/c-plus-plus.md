@@ -429,7 +429,7 @@ Queste caratteristiche, unite alla compatibilità con il codice scritto in C, fe
 L'avvento, alla fine del Secolo, del linguaggio con la "J", quello che ha bisogno di un sistema di *garbage collecion* per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un'idea di quello che sarebbe stato il millennio che ci si presentava davanti.
 Non a caso, Stroustrsup disse:
 
-> {{ site.data.citazioni.stroustrup.java }} <a id="stroustrup" href="/man/note#cpp" class="nota"></a>
+> {{ site.data.citazioni.stroustrup.java }} <a id="stroustrup" href="/man/note#fn-cpp" class="nota">1</a>
 
 <!--
 @todo: fare un parallelo fra i problemi di compatibilità delle librerie di Python e le religioni canoniche.

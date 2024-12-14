@@ -51,16 +51,6 @@
     font-size: 1.2rem;
     font-weight: bold;
 }
-/*
-.titolo-1 {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-.titolo-2 {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-*/
 .box {
     font-size: 0;
     position: relative;
@@ -87,6 +77,7 @@
 
 H1, H2, H3, H4 {
     margin: auto;
+		page-break-after: avoid;
 }
 H1 {
     font-size: $fontSizeH1;
@@ -172,11 +163,12 @@ A.nota {
     display: inline-block;
     margin-left: 2px;
 }
-/** Numerazione automatica solo nel Manuale */
+/** Numerazione automatica solo nel Manuale
 BODY.manuale A.nota::after {
     counter-increment: note-pagina;
     content: counter(note-pagina);
 }
+*/
 A.more {
     font-weight: bold;
     font-size: 0.9rem;
@@ -798,8 +790,10 @@ SECTION.bibliografia LI {
 SECTION.note OL LI A {
     word-break: break-all;
 }
-SECTION.note OL LI A I {
-    color: #999;
+SECTION.note OL LI A {
+    color: #550;
+		font-weight: bold;
+		text-decoration: none;
 }
 SECTION.note OL LI:target {
     padding: 1rem 0.5rem;

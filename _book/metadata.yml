@@ -1,0 +1,16 @@
+---
+title:       "C'hi++"
+subtitle:    "Il senso della vita è il debug"
+author:      "Carlo Simonelli"
+cover-image: "copertina.jpg"
+lang:        "IT-it"
+date:        2024-12-11
+tags:        [C++, metafisica]
+documentclass: book
+header-includes: |
+  \usepackage{footnotebackref}
+  \usepackage{chngcntr}
+  \includepackage{endnotes}
+  \let\footnote=\endnote
+  \counterwithin*{footnote}{chapter}
+---

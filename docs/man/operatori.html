@@ -61,7 +61,7 @@
     
 </nav>
 </header>
-        <main class="corpo pubblicato">
+        <main class="corpo pubblicato ">
         
             <h1><a href="#dottrina">
                 Gli operatori</a>
@@ -70,7 +70,7 @@
             <section class="testo">
                 <p>La varietà e soprattutto l’adattabilità degli operatori sono la caratteristica principale del C++.</p>
 
-<p>Gli operatori sono degli elementi del linguaggio che permettono, appunto, di <em>operare</em> delle azioni sulle variabili o sui valori. 
+<p>Gli operatori sono degli elementi del linguaggio che permettono, appunto, di <em>operare</em> delle azioni sulle variabili o sui valori.
 Li possiamo classificare o in base al numero di operandi su cui agiscono:</p>
 
 <ul>
@@ -172,7 +172,7 @@ int main(int argc, char** argv)
 
 <p>Se compili ed esegui questo codice, ottieni:</p>
 
-<pre><code>&gt; g++ src/cpp/operatori-pre-post.cpp -o src/out/esempio 
+<pre><code>&gt; g++ src/cpp/operatori-pre-post.cpp -o src/out/esempio
 &gt; src/out/esempio                                       
 pre-incremento: 6
 post-incremento:7
@@ -228,7 +228,7 @@ post-decremento:8
 L’operatore <code>==</code> torna <code>true</code> se gli operandi sono uguali, come nel verso:</p>
 
 <blockquote>
-  <p>Io vidi il mio Signore con l’occhio del cuore.<br />Gli chiesi: Chi sei?<br />Rispose: Te! <a class="nota" href="/man/note#attar" id="attar"></a></p>
+  <p>Io vidi il mio Signore con l’occhio del cuore.<br />Gli chiesi: Chi sei?<br />Rispose: Te! <a class="nota" href="/man/note#fn-attar" id="attar">1</a></p>
 </blockquote>
 
 <p>L’operatore <code>!=</code> torna <code>true</code> se gli operandi non sono uguali; gli operatori <code>&gt;</code> e <code>&lt;</code> tornano <code>true</code>, rispettivamente, se l’operatore a sinistra è maggiore o minore dell’operando a destra; gli operatori <code>&gt;=</code> e <code>&lt;=</code> tornano <code>true</code> se l’operando a sinistra è maggiore o uguale oppure minore o uguale a quello a destra.<br />
@@ -306,9 +306,9 @@ Gli operatori binarii, o: <em>bitwise</em> permettono di effettuare delle operaz
   </tbody>
 </table>
 
-<p>L’operatore <code>&amp;</code> imposta a 1 un bit nel risultato se quel bit è 1 in entrambi gli operandi. 
-L’operatore <code>|</code> imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi. 
-L’operatore <code>^</code> imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi, ma non nell’altro. 
+<p>L’operatore <code>&amp;</code> imposta a 1 un bit nel risultato se quel bit è 1 in entrambi gli operandi.
+L’operatore <code>|</code> imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi.
+L’operatore <code>^</code> imposta a 1 un bit nel risultato se quel bit è 1 in uno dei due operandi, ma non nell’altro.
 L’operatore <code>~</code> inverte i bit dell’operando.
 Gli operatori <code>&lt;&lt;</code> e <code>&gt;&gt;</code> spostano rispettivamente a sinistra e a destra i bit dell’operando di destra per il numero di bit specificato dall’operando di destra.<br />
 <!-- @todo: spiegare a cosa servano e perché siano utili per "rispettare" la memoria del computer -->
@@ -512,7 +512,7 @@ L’operatore di <em>cast</em> <code>()</code> permette di modificare il tipo di
 
 <pre><code>const char getSesso() const {        
     return (char)_sesso;
-} 
+}
 </code></pre>
 
 <p>L’operatore condizionale <code>()?:</code> è l’unico operatore ternario del C++ e permette di scegliere fra due espressioni a seconda dell’esito di una condizione.
@@ -535,7 +535,7 @@ La sua sintassi è:</p>
 }
 </code></pre>
 
-<p>L’operatore virgola <code>,</code> serve ad alterare il modo in cui vengono valutate le espressioni. 
+<p>L’operatore virgola <code>,</code> serve ad alterare il modo in cui vengono valutate le espressioni.
 Quando due o più espressioni sono separate dall’operatore virgola, i risultati delle espressioni a sinistra sono ignorati e viene mantenuto solo il risultato dell’espressione più a destra.
 In questa espressione, per esempio, alle variabili <code>a</code> e <code>b</code> è prima assegnato il valore 1 e poi la variabile <code>b</code> è incrementata di 2:</p>
 
@@ -547,7 +547,7 @@ In questa espressione, per esempio, alle variabili <code>a</code> e <code>b</cod
 <pre><code>a = b = 1, b = b + 2, b = b - 1;          
 </code></pre>
 
-<p>Gli operatori <code>.</code> e <code>-&gt;</code> servono a identificare i membri di una classe o di un altro dato aggregato. 
+<p>Gli operatori <code>.</code> e <code>-&gt;</code> servono a identificare i membri di una classe o di un altro dato aggregato.
 Se  ti ricordi (ne dubito), li abbiamo visti per la prima volta parlando del <a href="/man/c-plus-plus#membro">polimorfismo</a> e li utilizzeremo quando ci occuperemo delle classi.<br />
 Gli operatori <code>&amp;</code> e <code>*</code>, infine, tornano, rispettivamente, l’indirizzo di memoria di una variabile e un puntatore a una variabile:</p>
 
@@ -602,7 +602,7 @@ int main(int argc, char** argv)
 
 <p>Se compili ed esegui questo codice, otterrai:</p>
 
-<pre><code>&gt; g++ src/cpp/operatori-altri.cpp -o src/out/esempio 
+<pre><code>&gt; g++ src/cpp/operatori-altri.cpp -o src/out/esempio
 &gt; src/out/esempio                                    
 &amp;a: 0x7ffee65bba5c
 sa: 4
@@ -612,7 +612,7 @@ c : $
 </code></pre>
 <hr id="risoluzione" />
 
-<p>L’ultimo operatore di cui dobbiamo parlare è anche quella con il nome più lungo: l’operatore di <em>risoluzione del campo d’azione</em> <code>::</code>. 
+<p>L’ultimo operatore di cui dobbiamo parlare è anche quella con il nome più lungo: l’operatore di <em>risoluzione del campo d’azione</em> <code>::</code>.
 Oltre ad altri utilizzi connessi con la gestione dei dati delle classi, di cui parleremo in seguito, questo operatore permette di riferirsi a delle variabili con visibilità globale anche nei casi in cui queste vengano oscurate dalla ridefinizione di variabili locali con lo stesso nome:</p>
 
 <pre><code>/** 
@@ -642,29 +642,29 @@ int main(int argc, char** argv)
 </code></pre>
 <p>Compilando ed eseguendo questo codice, ottieni:</p>
 
-<pre><code>&gt; g++ src/cpp/operatori-risoluzione.cpp -o src/out/esempio 
+<pre><code>&gt; g++ src/cpp/operatori-risoluzione.cpp -o src/out/esempio
 &gt; ./src/out/esempio                                       
 Stringa locale
 Stringa globale
 </code></pre>
 
-<!-- 
-@todo: aggiungere nota su overload degli operatori 
+<!--
+@todo: aggiungere nota su overload degli operatori
 
 -->
 
 <hr id="dottrina" />
 
 <p>La definizione dei concetti di <em>vero</em> e di <em>falso</em> è sempre frutto di un arbitrio. È inevitabile.
-Per i filosofi è <em>vero</em> tutto ciò che può essere descritto con le parole; per gli scienziati, tutto ciò che può essere descritto dalla matematica; per gli informatici è <em>vero</em> tutto quello che può essere descritto dal codice. 
+Per i filosofi è <em>vero</em> tutto ciò che può essere descritto con le parole; per gli scienziati, tutto ciò che può essere descritto dalla matematica; per gli informatici è <em>vero</em> tutto quello che può essere descritto dal codice.
 <!-- v. Kant citato da Hertha von Dechend nella prefazione tedesca a Il Mulino di Amleto -->
 Possiamo definire <em>falso</em> come il contrario di <em>vero</em>, ma non possiamo dedurre o inferire il concetto di <em>vero</em> perché, quale che sia la definizione prescelta, prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo ancora cosa sia, effettivamente, <em>vero</em>.  <br />
-Bertrand Russell disse che la condizione di <em>vero</em> o di <em>falso</em> è uno stato dell’organismo, determinato da condizioni esterne all’organismo;<a class="nota" href="/man/note#russell" id="russell"></a> è un’affermazione vera.. o, meglio, <em>valida</em> anche per i computer: i valori booleani <em>vero</em> e <em>falso</em> sono due stati possibili per un’istruzione e spesso dipendono da condizioni esterne all’istruzione stessa, come la presenza di un file o un’azione dell’utente.
-La cosa interessante è che, anche per i computer, i valori che vengono interpretati come <em>vero</em> e <em>falso</em> sono del tutto arbitrarii e spesso specifici per un dato sistema. 
+Bertrand Russell disse che la condizione di <em>vero</em> o di <em>falso</em> è uno stato dell’organismo, determinato da condizioni esterne all’organismo;<a class="nota" href="/man/note#fn-russell" id="russell">2</a> è un’affermazione vera.. o, meglio, <em>valida</em> anche per i computer: i valori booleani <em>vero</em> e <em>falso</em> sono due stati possibili per un’istruzione e spesso dipendono da condizioni esterne all’istruzione stessa, come la presenza di un file o un’azione dell’utente.
+La cosa interessante è che, anche per i computer, i valori che vengono interpretati come <em>vero</em> e <em>falso</em> sono del tutto arbitrarii e spesso specifici per un dato sistema.
 Prendi per esempio i programmi che gestiscono le basi di dati: per <em>Access</em>, il valore booleano <em>false</em> è <code>-1</code>; per le prime versioni di <em>MySQL</em> è <code>f</code>; per Postgres o Oracle, è <code>0</code>.<br />
-Il computer non ha <em>in sé</em> il concetto di <em>vero</em> o di <em>falso</em>, ma solo l’associazione dei valori booleani <em>true</em> e <em>false</em> a una determinata sequenza di bit. 
+Il computer non ha <em>in sé</em> il concetto di <em>vero</em> o di <em>falso</em>, ma solo l’associazione dei valori booleani <em>true</em> e <em>false</em> a una determinata sequenza di bit.
 <em>Vero</em> e di <em>falso</em>, quindi, sono dei valori simbolici che noi inseriamo nella logica del computer, traducendo nel suo linguaggio un concetto che è proprio del nostro mondo; un riferimento esogeno che può generare delle apparenti contraddizioni come, per esempio, il fatto che tutti i valori digitali siano basati su grandezze analogiche (la carica magnetica di un nastro, un’infossatura nella superficie di un CD o la tensione all’interno di un circuito), o dei veri e proprii paradossi, come il fatto che, nelle schede perforate, il valore <code>1</code> sia associato al vuoto del foro, mentre il valore <code>0</code> sia associato alla presenza della carta; di fatto, una negazione logica della realtà.<br />
-Questi paradossi, apparenti o reali che siano, non causano alcun problema al sistema, a patto vengano condivisi da tutti gli attori al suo interno. 
+Questi paradossi, apparenti o reali che siano, non causano alcun problema al sistema, a patto vengano condivisi da tutti gli attori al suo interno.
 Il paradosso delle schede perforate (buco = 0, carta = 1) era condiviso sia dalle macchine Hollerith che dalle perforatrici delle schede, perciò, le elaborazioni che ne derivavano erano corrette, indipendentemente dal valore relativo attribuito ai concetti di <em>vero</em> e di <em>falso</em> all’interno del sistema.
 Da questo punto di vista, non possiamo che dare ragione a William James, quando dice che un’idea è <em>vera</em> fintanto che credere in essa è utile per le nostre vite.</p>
 
@@ -676,7 +676,7 @@ Comunque, una delle persone più ricche che ho conosciuto non poteva avere figli
 Possedeva case in diversi Paesi, uno yacht e perfino un aereo personale, ma non poteva avere qualcosa che anche l’uomo più povero della Terra può facilmente ottenere.
 Che senso aveva, la sua ricchezza? Era reale?<br />
 Letteralmente, si definisce: <em>prestigio</em> qualcosa che sembra ciò che non è, come i giochi degli illusionisti, mentre <em>successo</em> non è che il participio passato del verbo <em>succedere</em>: tutto ciò che è avvenuto in passato è, per definizione, “successo”; malgrado ciò, molte persone, sotto l’influsso dell’Annosa Dicotomia, dedicano la propria vita alla ricerca o dell’uno o dell’altro o di entrambi.
-La <em>fama</em> è altrettanto aleatoria: quante persone sono state famose e ora sono dimenticate? 
+La <em>fama</em> è altrettanto aleatoria: quante persone sono state famose e ora sono dimenticate?
 Gli inventori della ruota e del fuoco hanno cambiato per sempre la storia della nostra specie e del mondo con le loro scoperte, ma nessuno sa chi siano stati.
 In tempi più recenti, il pittore Giovanni Baglione fu molto famoso, alla fine del sedicesimo Secolo, ma se ci ricordiamo di lui oggi è solo per via dei suoi rapporti con Caravaggio e, comunque, la loro fama terminerà con la nostra specie, insieme a quella di Shakespeare, Leonardo o Einstein.<br />
 Non sono inconsistenti solo i valori mondani, come fama successo o denaro, ma anche quelli che consideriamo usualmente “nobili”, come il rispetto della vita altrui.
@@ -684,7 +684,7 @@ Se tu mi chiedi perché non si debba uccidere un uomo, ti risponderò che uccide
 Se invece lo chiedi a un cristiano o a un ebreo, lui ti risponderà che è vietato dai Dieci Comandamenti che Dio ha dato a Mosè; loro pensano che sia vero perché è scritto nella Bibbia, che è la Parola di Dio.
 Se infine lo chiedi a un paladino del laicismo, ti risponderà che l’omicidio, per il nostro ordinamento giuridico, è un reato; ciò dev’essere vero, perché le nostre Leggi applicano i concetti espressi nella nostra Costituzione la quale, a sua volta, si rifà ai principii di libertà e uguaglianza della <em>Dichiarazione dei Diritti dell’Uomo e del Cittadino</em> francese, che a sua volta si rifaceva alla <em>Dichiarazione di Indipendenza</em> americana, che a sua volta riprendeva le idee di Locke e Montesquieu.<br />
 Nessuna di queste affermazioni è valida di per sé: sono tutte fondate su una qualche forma di fede — religiosa o laica che sia — in chi ha promulgato la Legge o il Principio.<br />
-È, applicato all’etica, lo stesso meccanismo che si utilizza per certificare un server Web. 
+È, applicato all’etica, lo stesso meccanismo che si utilizza per certificare un server Web.
 Quando tu accedi al sito Web della tua banca, sai che è davvero il server della tua banca perché possiede un certificato digitale che attesta la sua identità, firmato digitalmente da un ente certificatore detto <em>Certification Authority</em> (o, più brevemente: <em>CA</em>).
 Tu sai che l’ente certificatore è davvero chi dice di essere perché anche lui ha un suo certificato, firmato da un’altro ente certificatore, chiamato: <em>root CA</em>.
 La <em>root CA</em> garantisce per la CA intermedia che a sua volta garantisce per la tua banca.
@@ -692,7 +692,7 @@ Sfortunatamente, però, né i legislatori né i loro certificatori ideologici so
 Mosè, con il sesto Comandamento ancora fresco di stampa, chiese ai figli di Levi:</p>
 
 <blockquote>
-  <p>Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a class="nota" href="/man/note#levi" id="levi"></a></p>
+  <p>Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a class="nota" href="/man/note#fn-levi" id="levi">3</a></p>
 </blockquote>
 
 <p>Gli Americani, che scrissero:</p>
@@ -709,14 +709,14 @@ I Francesi, il cui motto era:</p>
 </blockquote>
 
 <p>hanno applicato questi principii a colpi di ghigliottina.
-L’ONU, che nel 1948 ha pubblicato la <em>Dichiarazione Universale dei Diritti Umani</em> ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a class="nota" href="/man/note#armi" id="armi"></a> e che violano costantemente quelle stesse regole da loro promosse.<br />
-Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi, dalle convinzioni<a class="nota" href="/man/note#self-evident" id="self-evident"></a> 
-di un gruppo di credenti<a class="nota" href="/man/note#credenti" id="credenti"></a>, non vuol dire che siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva; possiamo solo accettarli per fede, così come i dogmi religiosi.
+L’ONU, che nel 1948 ha pubblicato la <em>Dichiarazione Universale dei Diritti Umani</em> ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a class="nota" href="/man/note#fn-armi" id="armi">4</a> e che violano costantemente quelle stesse regole da loro promosse.<br />
+Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi, dalle convinzioni<a class="nota" href="/man/note#fn-self-evident" id="self-evident">5</a>
+di un gruppo di credenti<a class="nota" href="/man/note#fn-credenti" id="credenti">6</a>, non vuol dire che siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva; possiamo solo accettarli per fede, così come i dogmi religiosi.
 <em>Scegliamo</em> di credere in uno schema di valori, così come potremmo scegliere di credere negli UFO: non abbiamo convinzioni innate, se non l’egoismo.<br />
 Le persone per bene hanno una cosa in comune con i malandrini: pensano che il resto del Mondo sia come loro, ma si sbagliano.
 Noi troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti <em>in sé</em>.<br />
-Per gli autori della <em>Dichiarazione di Indipendenza</em> era <em>self-evident</em> che tutti gli uomini fossero stati creati uguali, ma sei Stati del Sud, nelle loro Costituzioni, precisarono che si stava parlando di uomini liberi, non degli schiavi<a class="nota" href="/man/note#freemen" id="freemen"></a>.<br />
-I nazisti utilizzarono le macchine Hollerith per censire e sterminare gli ebrei; furono anche aggiunte delle colonne alle schede perforate per poter gestire i dati relativi alla religione<a class="nota" href="/man/note#black" id="black"></a>.
+Per gli autori della <em>Dichiarazione di Indipendenza</em> era <em>self-evident</em> che tutti gli uomini fossero stati creati uguali, ma sei Stati del Sud, nelle loro Costituzioni, precisarono che si stava parlando di uomini liberi, non degli schiavi<a class="nota" href="/man/note#fn-freemen" id="freemen">7</a>.<br />
+I nazisti utilizzarono le macchine Hollerith per censire e sterminare gli ebrei; furono anche aggiunte delle colonne alle schede perforate per poter gestire i dati relativi alla religione<a class="nota" href="/man/note#fn-black" id="black">8</a>.
 Noi oggi critichiamo sia loro sia chi li aiutò a farlo, ma forse i nostri nipoti criticheranno noi per la tolleranza che abbiamo mostrato nei confronti di chi ci vende il petrolio per le nostre automobili; la stessa tolleranza che loro mostreranno a chi li rifornirà di materie prime per le batterie, o di acqua.</p>
 
 <hr id="comandamenti" />
@@ -748,7 +748,7 @@ specificare che quando aveva redatto la prima versione era un "angy young man", 
 
 Il fine dichiarato di Kanāda nei Vaiśesika Sūtra, considerati da Dasgupta come pre-buddhisti, è di spiegare il Dharma (la Legge Eterna) come il fondamento, da un lato, della manifestazione (abhyudaya) e, dall’altro, del “Sommo Bene” (nihśreyasam), cioè della Liberazione: la validità dei Veda è stabilita dal fatto che questi sono i loro fini.
 
-Coomaraswamy, Ananda K.. Tempo ed Eternità (Orizzonti dello spirito) (Italian Edition) (Kindle Locations 322-327). Edizioni Mediterranee. Kindle Edition. 
+Coomaraswamy, Ananda K.. Tempo ed Eternità (Orizzonti dello spirito) (Italian Edition) (Kindle Locations 322-327). Edizioni Mediterranee. Kindle Edition.
 -->
 
             </section>
