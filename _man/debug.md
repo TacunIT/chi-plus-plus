@@ -37,13 +37,13 @@ Il Buon Programmatore non può farne a meno, perché è nella sua natura; è que
 
 <hr id="tipi-errore">
 
-Gli errori del software possono essere di tre tipi: 
+Gli errori del software possono essere di tre tipi:
 
 - gli errori che si manifestano durante la fase di compilazione;
 - gli errori che si manifestano durante l'esecuzione del programma;
 - gli errori di analisi.  
 
-Gli <b id="errori-compilazione">errori di compilazione</b> sono causati da costrutti incorretti, che bloccano il processo di creazione del programma. 
+Gli <b id="errori-compilazione">errori di compilazione</b> sono causati da costrutti incorretti, che bloccano il processo di creazione del programma.
 Un errore che farai spesso è di dimenticare il punto e virgola alla fine della dichiarazione di una classe:
 
 ```
@@ -64,7 +64,7 @@ public:
 una banale distrazione che causerà immancabilmente il messaggio:
 
 ```
-> g++ src/cpp/debug-errori.cpp  -c -o src/out/esempio 
+> g++ src/cpp/debug-errori.cpp  -c -o src/out/esempio
 src/cpp/debug-errori.cpp:28:2: error: expected ';' after class
 }
  ^
@@ -119,19 +119,19 @@ Dato che i parametri per attivare i diversi tipi di *warning* sono davvero tanti
 -Wformat-truncation  
 -Wint-in-bool-context  
 -Winit-self  
--Wlogical-not-parentheses 
--Wmaybe-uninitialized 
--Wmemset-elt-size 
--Wmemset-transposed-args 
--Wmisleading-indentation 
--Wmismatched-dealloc 
--Wmismatched-new-delete 
--Wmissing-attributes 
+-Wlogical-not-parentheses
+-Wmaybe-uninitialized
+-Wmemset-elt-size
+-Wmemset-transposed-args
+-Wmisleading-indentation
+-Wmismatched-dealloc
+-Wmismatched-new-delete
+-Wmissing-attributes
 -Wmultistatement-macros  
 -Wnarrowing   
 -Wnonnull  
 -Wnonnull-compare  
--Wopenmp-simd 
+-Wopenmp-simd
 -Wparentheses  
 -Wpessimizing-move   
 -Wpointer-sign  
@@ -141,9 +141,9 @@ Dato che i parametri per attivare i diversi tipi di *warning* sono davvero tanti
 -Wreturn-type  
 -Wsequence-point  
 -Wsign-compare   
--Wsizeof-array-div 
--Wsizeof-pointer-div 
--Wsizeof-pointer-memaccess 
+-Wsizeof-array-div
+-Wsizeof-pointer-div
+-Wsizeof-pointer-memaccess
 -Wstrict-aliasing  
 -Wstrict-overflow=1  
 -Wswitch  
@@ -169,15 +169,15 @@ Se compili questo codice senza attivare i *warning*, il compilatore non ti segna
 
 ```
 > g++ src/cpp/debug-errori-warning.cpp -c -o src/out/esempio
-> 
+>
 ```
 
 Se però aggiungi il parametro `-Wall` alla riga di comando, scopri che il parametro `_area` della classe `C` non viene utilizzato:
 
 ```
 > g++ src/cpp/debug-errori-warning.cpp -Wall -c -o src/out/esempio
-src/cpp/debug-errori-warning.cpp:19:11: 
-    warning: private field '_area' is not used 
+src/cpp/debug-errori-warning.cpp:19:11:
+    warning: private field '_area' is not used
         [-Wunused-private-field]
     float _area;
           ^
@@ -189,46 +189,46 @@ Aggiungendo il parametro `-Wextra`, ottieni un *warning* aggiuntivo perché i pa
 
 ```
 > g++ src/cpp/debug-errori-warning.cpp -Wall -Wextra -o src/out/esempio
-src/cpp/debug-errori-warning.cpp:29:14: 
-    warning: unused parameter 'argc' 
+src/cpp/debug-errori-warning.cpp:29:14:
+    warning: unused parameter 'argc'
         [-Wunused-parameter]
-int main(int argc, char** argv) 
+int main(int argc, char** argv)
              ^
-src/cpp/debug-errori-warning.cpp:29:27: 
-    warning: unused parameter 'argv' 
+src/cpp/debug-errori-warning.cpp:29:27:
+    warning: unused parameter 'argv'
         [-Wunused-parameter]
-int main(int argc, char** argv) 
+int main(int argc, char** argv)
                           ^
-src/cpp/debug-errori-warning.cpp:19:11: 
-    warning: private field '_area' is not used 
+src/cpp/debug-errori-warning.cpp:19:11:
+    warning: private field '_area' is not used
         [-Wunused-private-field]
     float _area;
           ^
 3 warnings generated.
 ```
 
-Oltre a quelli definiti dai parametri `-Wall` e `-Wextra`, il compilatore prevede una lunga lista di *warning* che possono essere definiti individualmente, a seconda delle esigenze del programma. 
+Oltre a quelli definiti dai parametri `-Wall` e `-Wextra`, il compilatore prevede una lunga lista di *warning* che possono essere definiti individualmente, a seconda delle esigenze del programma.
 Per esempio, il parametro `-Wdouble-promotion` segnala quando una variabile di tipo `float` è promossa implicitamente a `double`:
 
 ```
 > g++ src/cpp/debug-errori-warning.cpp -Wall -Wextra \
     -Wdouble-promotion -c -o src/out/esempio
-src/cpp/debug-errori-warning.cpp:25:27: 
-    warning: implicit conversion increases 
+src/cpp/debug-errori-warning.cpp:25:27:
+    warning: implicit conversion increases
         floating-point precision: 'float' to
       'double' [-Wdouble-promotion]
        return 3.14159 * q(_raggio);
                         ~ ^~~~~~~
-src/cpp/debug-errori-warning.cpp:29:14: 
+src/cpp/debug-errori-warning.cpp:29:14:
     warning: unused parameter 'argc' [-Wunused-parameter]
-int main(int argc, char** argv) 
+int main(int argc, char** argv)
              ^
-src/cpp/debug-errori-warning.cpp:29:27: 
+src/cpp/debug-errori-warning.cpp:29:27:
     warning: unused parameter 'argv' [-Wunused-parameter]
-int main(int argc, char** argv) 
+int main(int argc, char** argv)
                           ^
-src/cpp/debug-errori-warning.cpp:19:11: 
-    warning: private field '_area' is not used 
+src/cpp/debug-errori-warning.cpp:19:11:
+    warning: private field '_area' is not used
         [-Wunused-private-field]
     float _area;
           ^
@@ -332,13 +332,13 @@ Per esempio, un errore nella valutazione di una data in coincidenza con gli anni
 La correzione dell'errore della funzione `banner_testo`, se fatta per tempo, richiederebbe solo l'aggiunta di una condizione all'istruzione `if`, per verificare che il punto si trovi prima di un a capo:
 
 ```
-if(c == PUNTO 
-&& letti >= N_CHAR_MIN 
+if(c == PUNTO
+&& letti >= N_CHAR_MIN
 && n_banner <= N_BANNER_MAX
-&& testo.peek() == A_CAPO) { 
-    cout << endl 
+&& testo.peek() == A_CAPO) {
+    cout << endl
          << "<div id=\"banner-" << n_banner << "\">"
-         << "</div>" 
+         << "</div>"
          << endl;
     n_banner++;
     letti = 0;
@@ -360,8 +360,8 @@ La stessa correzione, fatta dopo che il programma è andato in esercizio, potreb
 
 Al costo di queste attività vanno ovviamente aggiunti i possibili danni derivanti dal mancato funzionamento del sistema, che potrebbero facilmente essere pari a un mese se non a un anno di stipendio del programmatore.  
 Devi pensare a tutto questo, quando scrivi codice, perché hai una responsabilità sia nei confronti del tuo datore di lavoro che degli utenti del sistema, che potrebbero essere anche i tuoi amici o i tuoi parenti.  
-Se lavori male per la Coca-Cola, puoi sempre pensare: “Chi se ne frega, io bevo Pepsi”; non è etico, ma almeno non è auto-lesionista. 
-Se però lavori male per lo Stato, stai peggiorando la tua vita e di tutte le persone che conosci e questo, oltre a non essere etico, è anche stupido. 
+Se lavori male per la Coca-Cola, puoi sempre pensare: “Chi se ne frega, io bevo Pepsi”; non è etico, ma almeno non è auto-lesionista.
+Se però lavori male per lo Stato, stai peggiorando la tua vita e di tutte le persone che conosci e questo, oltre a non essere etico, è anche stupido.
 
 ---
 
@@ -371,9 +371,9 @@ Un cliente che espone le sue esigenze è come un bambino che dice alla madre cos
 Lo stimolo è reale &mdash; appetito o fame che sia &mdash;, ma il modo in cui lui vorrebbe placarlo non è necessariamente il più corretto; anzi: di solito è un desiderio indotto dal callido servitore dell'Entropia: il Marketing.  
 Il cliente ha diritto di comportarsi in questo modo: ciascuno di noi fa la stessa cosa quando entra in un negozio; come analista, però, non devi permettere che i tuoi giudizi siano influenzati dai desiderii del tuo cliente.
 In questo, l'Analisi è assimilabile a una disciplina mistica: così come il Buddha dà a ciascuna persona con cui viene in contatto ciò di cui ha bisogno,
-<!-- @todo: trovare citazione da Buddismo Tientai --> tu devi annullare te stesso e *diventare* l'altro, pensare come lui, sentire le sue necessità. 
+<!-- @todo: trovare citazione da Buddismo Tientai --> tu devi annullare te stesso e *diventare* l'altro, pensare come lui, sentire le sue necessità.
 Da quello che dice e da come lo dice, devi riuscire a distinguere i suoi bisogni dai suoi desiderii, evitando che l'ottenimento di questi ultimi intralci il buon successo del progetto.  
-Ovviamente, dovrai anche evitare che i *tuoi* desiderii intralcino o rallentino il progetto. 
+Ovviamente, dovrai anche evitare che i *tuoi* desiderii intralcino o rallentino il progetto.
 Così come influenza le opinioni del tuo cliente, il Marketing può influire su di te, spingendoti a scegliere una tecnologia di moda, ma inadatta allo scòpo che devi raggiungere.
 Fà attenzione che ciò non accada.
 Sorveglia costantemente le tue scelte; così come il Buon Programmatore, pensa sempre su più livelli e confrontati con altri colleghi o con il tuo superiore per essere certo di aver fatto le scelte giuste.
@@ -384,7 +384,7 @@ Quando ciò accadrà, dovrai per prima cosa cercare di convincerlo dell'errore, 
 Se non ci riesci, ripeti la tua opposizione, perché sia chiaro che la tua non è un'ipotesi, ma una certezza, però non insistere oltre: sia perché questo potrebbe creare degli attriti con il tuo interlocutore, sia perché alla lunga potresti scoprire che è lui ad avere ragione.    
 Se non riuscirai a convincere il cliente di un suo errore, dovrai portare a termine ciò che ti chiede, ma al contempo dovrai fare in modo che le conseguenze di quella scelta non possano essere attribuite a te in futuro.
 Dato che le conseguenze nefaste di un errore architetturale potrebbero manifestarsi dopo mesi o anche anni dalla fase di analisi, non limitarti a *dire* al cliente che si sbaglia, ma scrivilo, in modo che resti traccia della tua opposizione.  
-Il tuo peggior nemico, in questi casi, sarà il tuo orgoglio. 
+Il tuo peggior nemico, in questi casi, sarà il tuo orgoglio.
 Una volta, il Maestro Canaro mi disse:
 
 > {{ site.data.canaro.ragione }}
@@ -393,10 +393,10 @@ Una volta, il Maestro Canaro mi disse:
 
 Parafrasando Iacopone da Todi, un programma per il debug può aiutarti a identificare il punto del tuo codice che genera un errore, ma devi prima capire quale sia la funzione da esaminare, perché fare il debug di tutto il codice di un programma, nei casi in cui questo sia possibile, sarebbe lungo ed estremamente frustrante.  
 Il modo in cui è stato scritto il codice lo renderà più o meno facile da verificare.
-Immagina che il problema sia la variabile `x`: se tutto il tuo codice ha la possibilità di modificarne il valore, potresti dover esaminare ogni singola funzione per verificare che non ne faccia un uso improprio. 
-Al contrario, se la variabile `x` può essere modificata solo alcuni punti del codice, la tua sarà una ricerca più mirata e veloce. 
+Immagina che il problema sia la variabile `x`: se tutto il tuo codice ha la possibilità di modificarne il valore, potresti dover esaminare ogni singola funzione per verificare che non ne faccia un uso improprio.
+Al contrario, se la variabile `x` può essere modificata solo alcuni punti del codice, la tua sarà una ricerca più mirata e veloce.
 È per questo motivo, che <a href="/man/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l'elaborazione dei dati dalla gestione dell'interfaccia utente: perché in questo modo, a seconda del tipo di errore che dovesse presentarsi &mdash; di calcolo o di output &mdash; sapremo quale funzione andare a guardare.  
-Alcune caratteristiche del C++, come la tipizzazione forte e 
+Alcune caratteristiche del C++, come la tipizzazione forte e
 l'incapsulamento potranno esserti di aiuto in questo senso, ma non sempre saranno sufficienti a identificare il punto esatto in cui il tuo codice fa qualcosa di errato.
 In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare.
 Un modo rapido per farlo è di mettere a commento tutte le chiamate nella funzione `main` ripristinandole poi a una a una, fino a che non individuerai quella in cui è contenuto l'errore:
@@ -405,7 +405,7 @@ Un modo rapido per farlo è di mettere a commento tutte le chiamate nella funzio
 int main(int argc, char** argv)
 {    
     ifstream testo;        
-        
+
     verifica_parametri(argc, argv);
     apri_file(testo, argv[2]);            
 /*
@@ -428,7 +428,7 @@ int apri_file(ifstream& testo, const char* path)
 
     testo.open(path);
     return ERR_NONE;
-} 
+}
 ```
 
 La funzione `log` è quella che abbiamo visto nella <a href="/man/funzioni.html#parametri-variabili" class="xref">lezione sulle funzioni con parametri variabili</a> e ci permette di conoscere il nome del file che viene aperto durante l'esecuzione del programma.  
@@ -454,7 +454,7 @@ Fare la stessa operazione con parti di codice distinte è sbagliato; sia perché
 È sbagliato anche riscrivere delle funzioni che già esistono: D. J. Bernstein lo fece, con le funzioni di I/O di <a href="http://cr.yp.to/djb.html" target="qmail">qmail</a>, ma la sua fu una precisa scelta architetturale perché voleva delle funzioni che fossero migliori e più sicure delle funzioni della libreria standard.  
 <!--- e comunque, fare l'analisi del codice di qmail è un delirio.. -->
 A questi due errori di programmazione &mdash; inammissibili, in un sito che gestisca transazioni economiche &mdash; si aggiunge una profonda sciatteria della fase di debug del codice, perché la corretta gestione dei casi particolari, come gli anni bisestili, va sempre verificata.
-Quando verifichi il funzionamento di un programma, non puoi limitarti a controllare che faccia ciò che deve fare, ma devi anche assicurarti che non faccia ciò che non deve fare. 
+Quando verifichi il funzionamento di un programma, non puoi limitarti a controllare che faccia ciò che deve fare, ma devi anche assicurarti che non faccia ciò che non deve fare.
 In particolare, devi verificare che si comporti correttamente se:
 
 - gli fornisci i dati di input corretti;
@@ -462,7 +462,7 @@ In particolare, devi verificare che si comporti correttamente se:
 - gli fornisci dati errati;
 - gli fornisci dati in eccesso.
 
-Quindi, se l'input è una data, dovrai verificare che il tuo sistema gestisca correttamente sia il valore `29-02-1964` che il valore `29-02-1965`; se l'input è una stringa di testo, dovrai accertarti che il sistema gestisca correttamente anche il caso in cui riceva più caratteri del previsto e che elimini eventuali caratteri di spazio all'inizio o alla fine del testo, a meno che questo non sia un requisito funzionale. 
+Quindi, se l'input è una data, dovrai verificare che il tuo sistema gestisca correttamente sia il valore `29-02-1964` che il valore `29-02-1965`; se l'input è una stringa di testo, dovrai accertarti che il sistema gestisca correttamente anche il caso in cui riceva più caratteri del previsto e che elimini eventuali caratteri di spazio all'inizio o alla fine del testo, a meno che questo non sia un requisito funzionale.
 
 ---
 
@@ -476,13 +476,13 @@ In ossequio a quanto abbiamo detto poco fa, per verificare il funzionamento di  
 
 ```
 # dati corretti
-src/out/esempio src/cpp/debug-testo-1.txt 
+src/out/esempio src/cpp/debug-testo-1.txt
 
 # nessun dato
-src/out/esempio 
+src/out/esempio
 
 # dati errati
-src/out/esempio src/cpp/file-inesistente 
+src/out/esempio src/cpp/file-inesistente
 
 # dati in eccesso
 src/out/esempio src/cpp/debug-testo-1.txt abcdefghilmenopqrstuvz  
@@ -500,7 +500,7 @@ Nel nostro caso, gli errori previsti sono:
 I primi due errori sono verificati dalle prove standard; il terzo caso lo possiamo verificare passando al programma un file vuoto:
 
 ```
-src/out/esempio src/cpp/debug-vuoto.txt 
+src/out/esempio src/cpp/debug-vuoto.txt
 ```
 
 Sfortunatamente, però, se compili ed esegui questo codice con i dati corretti, ottieni un errore, anche se il file esiste:
@@ -509,7 +509,7 @@ Sfortunatamente, però, se compili ed esegui questo codice con i dati corretti, 
 > g++ src/cpp/debug-gestione-errori.cpp -o src/out/esempio
 > src/out/esempio src/cpp/debug-testo-1.txt               
 -20: Impossibile aprire il file di input
-> ls src/cpp/debug-testo-1.txt 
+> ls src/cpp/debug-testo-1.txt
 src/cpp/debug-testo-1.txt
 ```
 
@@ -524,7 +524,7 @@ Se ri-compili il programma definendo la macro `__LOG__` per verificare quale sia
 quando esegui i programma, ottieni un nuovo errore:
 
 ```
-> g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio 
+> g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio
 > src/out/esempio src/cpp/debug-testo-1.txt                           
 [DEBUG] Apro il file: zsh: segmentation fault  src/out/esempio src/cpp/debug-testo-1.txt
 ```
@@ -578,7 +578,7 @@ esito = apri_file(testo, argv[PARAM_PATH]);
 ```
 
 ma, sul lungo periodo, è controproducente perché rende il codice più complesso da leggere e da modificare.  
-*Più complesso da leggere* perché le costanti aiutano a capire cosa faccia il codice. 
+*Più complesso da leggere* perché le costanti aiutano a capire cosa faccia il codice.
 Se leggi l'istruzione:  
 
 ```
@@ -596,7 +596,7 @@ per capire cosa faccia dovrai andare a leggere la documentazione del programma, 
 *Più complesso da modificare* perché l'utilizzo di costanti al posto di valori *hard-coded* permette di cambiare il valore di una costante agendo in un solo punto:
 
 ```
-#define ERR_NONE  1 
+#define ERR_NONE  1
 ```
 
 Se non avessimo usato una costante, per ottenere lo stesso risultato avremmo dovuto modificare tre istruzioni distinte:
@@ -614,45 +614,45 @@ int esito = ERR_NONE;
 ```
 
 In un programma più complesso del nostro esempio, le modifiche sarebbero state sicuramente di più e più difficili da identificare; inoltre, se ce ne fossimo dimenticata una (probabile), avremmo introdotto un errore nel sistema.  
-Le costanti *hard-coded* possono essere utilizzate solo nella prima fase dello sviluppo del programma, quando non sei ancora sicuro che la strada che hai scelto sia quella giusta. 
+Le costanti *hard-coded* possono essere utilizzate solo nella prima fase dello sviluppo del programma, quando non sei ancora sicuro che la strada che hai scelto sia quella giusta.
 In questa fase è ammissibile che tu faccia delle prove inserendo dei valori direttamente nel codice, ma quando l'algoritmo sarà ragionevolmente stabile, dovrai convertire tutti i valori in costanti.
 
 <hr id="dottrina">
 
-> {{ site.data.citazioni.croce.testo }}<a class="nota" href="/man/note#croce" id="croce"></a>
+> {{ site.data.citazioni.croce.testo }}<a class="nota" href="/man/note#fn-croce" id="croce">1</a>
 
 O prima o poi, la tua vita andrà in errore, come il software.  
-Non importa quanto tu sia stato prudente o quale sia il tuo *Karma*: a un certo punto la terra sotto i tuoi piedi comincerà a franare e tu cadrai giù, lungo la montagna che stavi scalando, ritrovandoti al punto di partenza. 
+Non importa quanto tu sia stato prudente o quale sia il tuo *Karma*: a un certo punto la terra sotto i tuoi piedi comincerà a franare e tu cadrai giù, lungo la montagna che stavi scalando, ritrovandoti al punto di partenza.
 Quello che farai in quel momento deciderà del resto della tua vita e ti farà capire che tipo di uomo sei &mdash; o che donna, visto che queste cose non succedono solo ai maschietti.  
 Comincia a prepararti da adesso a quel momento, perché, quando avverrà (*quando*, non: *se*), probabilmente sarai solo e prendere delle decisioni sarà molto difficile perché avrai perso ogni fiducia in te stesso.
 Se ti rompi una gamba, o un braccio, il tuo cervello ti può dire se stanno guarendo o peggiorando, ma se batti la testa non è facile capire come stai, perché l'organo in esame e l'organo esaminatore coincidono.
 <!-- @todo - decidere se aggiungere aneddoto su Maestro Canaro e solitario -->
-Allo stesso modo, se non ti fidi di te stesso, è difficile capire se le scelte che fai sono corrette. 
+Allo stesso modo, se non ti fidi di te stesso, è difficile capire se le scelte che fai sono corrette.
 La paura o la prudenza potrebbero spingerti a non fare la scelta giusta, quindi, per prima cosa, dovrai fare il *debug* della tua vita per capire se e in quale misura devi biasimarti per ciò che è avvenuto; fatto ciò, dovrai identificare i tuoi errori e trovare un modo per non ripeterli.  
-L'approccio più comune è di guardarsi indietro e cercare di capire quali siano state le proprie colpe, considerando queste degli eventi isolati in un'esistenza fatta prevalentemente di scelte corrette. 
+L'approccio più comune è di guardarsi indietro e cercare di capire quali siano state le proprie colpe, considerando queste degli eventi isolati in un'esistenza fatta prevalentemente di scelte corrette.
 Dato però che ciascuno di noi tende &mdash; più o meno inconsciamente &mdash;, a cercare cause esogene alle sue sventure inventandosi complotti o trasferendo le proprie responsabilità a terzi, la cosa migliore, in questi casi, è di adottare l'atteggiamento opposto e partire dal presupposto che *tutto* ciò che è successo di male nella tua vita sia una tua colpa, per poi individuare i casi in cui ciò che è successo, in effetti, non è dipeso da te.
-Questo approccio *bottom-down*<a class="nota" href="/man/note#bottom-down" id="bottom-down"></a> ha due pregi: il primo  è che, analizzando gli eventi passati potresti scoprire che alcune colpe che ti attribuivi non erano reali; il secondo è che sarà più difficile mentire a te stesso.
+Questo approccio *bottom-down*<a class="nota" href="/man/note#fn-bottom-down" id="bottom-down">2</a> ha due pregi: il primo  è che, analizzando gli eventi passati potresti scoprire che alcune colpe che ti attribuivi non erano reali; il secondo è che sarà più difficile mentire a te stesso.
 Ciascuno di noi ha una parte di responsabilità in ciò che gli succede, anche negli eventi che non genera direttamente.
 Assumersi a priori la colpa di tutto il male che ci è successo rende più difficile mentirci e ci permette di identificare tutte le nostre colpe, per piccole che siano.  
-Attenzione, però: non devi pensare alle tue colpe come se fossi un inquisitore del tredicesimo Secolo, ma come se fossero dei *bug* nel programma della tua vita. 
+Attenzione, però: non devi pensare alle tue colpe come se fossi un inquisitore del tredicesimo Secolo, ma come se fossero dei *bug* nel programma della tua vita.
 Qualcuna genererà degli errori, altre solo dei *warning* e il tuo dovere è quello di identificarne il più possibile, per poi cercare di correggerle per migliorare il funzionamento del sistema.
 
-> {{ site.data.citazioni.deen.testo }}<a class="nota" href="/man/note#deen" id="deen"></a>
+> {{ site.data.citazioni.deen.testo }}<a class="nota" href="/man/note#fn-deen" id="deen">3</a>
 
 Contrariamente a quello che avviene con il software, non sempre è possibile correggere i *bug* della nostra esistenza.
 Si può modificare un aspetto deteriore del nostro carattere, ma non è detto che sia possibile rimediare ai danni che questo ha causato a noi o a terzi.
-Per fare un paragone con il debug del software, i difetti caratteriali sono errori di compilazione, mentre gli effetti dei nostri sbagli sono errori di esecuzione; i primi li possiamo correggere, gli errori di esecuzione, no: ormai è andata. 
+Per fare un paragone con il debug del software, i difetti caratteriali sono errori di compilazione, mentre gli effetti dei nostri sbagli sono errori di esecuzione; i primi li possiamo correggere, gli errori di esecuzione, no: ormai è andata.
 Quello che possiamo e che dobbiamo fare, però, è di <a id="pentimento" href="/man/istruzioni-condizionali#pentimento" class="xref">pentircene sinceramente</a>, ovvero riconoscerli come errori, in modo da evitare di ripeterli nei prossimi cicli di esistenza.  
 Anche se non possiamo cancellare gli effetti di un nostro errore, possiamo comunque chiedere perdòno a coloro i quali abbiamo arrecato danno.
 Non basterà chiedere scusa: si chiede scusa quando ciò che hai fatto non dipende da te, come quando qualcuno di urta e tu versi il tuo vino sul vestito del vicino; se invece il vino glielo hai tirato addosso intenzionalmente, dovrai chiedere *perdòno*, cercare per quanto possibile di riparare all'errore fatto e non commetterlo mai più, né con lui (o lei) né con altri.  
 Non sottovalutare il potere terapeutico del perdòno, anche se ci saranno dei casi in cui non lo otterrai.
-Se è vero che non si può cambiare il passato per qualcuno che abbiamo ferito, è altrettanto vero che si può provare a compensare il danno fatto rendendogli migliore il presente o il futuro. 
-Le persone a cui facciamo del male sono spesso quelle a cui siamo più legati; far sapere loro che che non li abbiamo dimenticati e che ciò che è successo ci addolora, può servire a ricucire delle ferite; dall'una e dall'altra parte. 
+Se è vero che non si può cambiare il passato per qualcuno che abbiamo ferito, è altrettanto vero che si può provare a compensare il danno fatto rendendogli migliore il presente o il futuro.
+Le persone a cui facciamo del male sono spesso quelle a cui siamo più legati; far sapere loro che che non li abbiamo dimenticati e che ciò che è successo ci addolora, può servire a ricucire delle ferite; dall'una e dall'altra parte.
 
 <hr id="come-capire">
 
 Quando ripenserai a ciò che ti è avvenuto in passato, come un buon analista, dovrai cercare di immedesimarti nelle persone con cui hai avuto a che fare, capire le loro ragioni al di là di eventuali rancori o recriminazioni.
-Per fare ciò, dovrai tenere a mente alcuni fattori che influenzano il comportamento di tutti noi. 
+Per fare ciò, dovrai tenere a mente alcuni fattori che influenzano il comportamento di tutti noi.
 Il primo, ovviamente, è l'influenza dell'Annosa Dicotomia, che, per mano del suo lacché il Marketing, spinge le persone a soddisfare i proprii desiderii invece che i proprii bisogni, creando degli schemi di valori fallaci e spingendoli a dimenticare che esistono per tutti la vecchiaia e la morte.   
 Il secondo fattore da considerare è la natura umana; ricorda:
 
@@ -660,7 +660,7 @@ Il secondo fattore da considerare è la natura umana; ricorda:
 
 O, per dirla con De Santillana:
 
-> {{ site.data.citazioni.mulino-amleto.stoltezza }}<a class="nota" href="/man/note#stoltezza" id="stoltezza"></a>
+> {{ site.data.citazioni.mulino-amleto.stoltezza }}<a class="nota" href="/man/note#fn-stoltezza" id="stoltezza">4</a>
 
 Per derimere le questioni relative ai rapporti di coppia, invece, l'approccio più sicuro è quello antropologico.
 Come diceva il Maestro Canaro:
@@ -674,15 +674,15 @@ Secondo lui, qualsiasi comportamento anomalo nell'ambito di una coppia può esse
 3. ogni eccesso nasconde un eccesso di natura opposta e pari entità.
 
 Parafrasando quel senza Dio di Dawkins, noi siamo l'*hard-disk* dei nostri geni, la memoria di massa che garantisce loro una persistenza.
-Il nostro software può variare, ma il firmware<a class="nota" href="/man/note#firmware" id="firmware"></a> che definisce il nostro comportamento a basso livello è immutato da migliaia di anni e ci spinge a fare ciò per cui siamo stati creati, ovvero riprodurci.  
+Il nostro software può variare, ma il firmware<a class="nota" href="/man/note#fn-firmware" id="firmware">5</a> che definisce il nostro comportamento a basso livello è immutato da migliaia di anni e ci spinge a fare ciò per cui siamo stati creati, ovvero riprodurci.  
 Né le sovrastrutture culturali che abbiamo inventato, né gli idoli ai cui piedi ci prostriamo e nemmeno l'Annosa Dicotomia possono modificare la nostra ROM.
 Ignorare o, peggio, ribellarsi a questo stato di fatto è il primo passo verso la rovina o l'infelicità o entrambe le cose.  
 
 <hr id="fine">
 
-Ecco: questo è tutto. 
+Ecco: questo è tutto.
 Ricorda però: ciò che ti ho insegnato non è un punto di arrivo, ma un punto di partenza.
-La fine del cammino che abbiamo percorso insieme coincide con l'inizio del cammino che percorrerai da solo. 
+La fine del cammino che abbiamo percorso insieme coincide con l'inizio del cammino che percorrerai da solo.
 Da questo momento in poi tu hai il dovere di diffondere le idee che ti ho trasmesso e, allo stesso tempo, di metterle costantemente alla prova per emendarle dai molti errori che certamente avrò commesso, così come il Maestro Canaro prima di me.
 Così come agli antichi Cristiani era vietato adorare gli idoli, io ti vieto di adorare le parole.
 Scrivi il tuo libro, se lo desideri, ma che non sia un libro stupido; fa' in modo che lo si possa correggere facilmente, se necessario, in modo che ciò che afferma sia sempre il punto più vicino alla verità che tu possa raggiungere, perché l'oggetto dei tuoi sforzi dev'essere sempre la verità, non la tradizione.  
