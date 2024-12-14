@@ -1,3 +1,8 @@
+## 1.1.3 (December 14, 2024)
+  - Modificato CSS per PDF
+  - Aggiunta numerazione alle note
+  - Spostati il file con i metadati nella directory _book
+
 ## 1.1.2 (December 02, 2024)
   - Cambiato il font del PDF
 
