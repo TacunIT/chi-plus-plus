@@ -798,8 +798,10 @@ SECTION.bibliografia LI {
 SECTION.note OL LI A {
     word-break: break-all;
 }
-SECTION.note OL LI A I {
-    color: #999;
+SECTION.note OL LI A {
+    color: #550;
+		font-weight: bold;
+		text-decoration: none;
 }
 SECTION.note OL LI:target {
     padding: 1rem 0.5rem;
