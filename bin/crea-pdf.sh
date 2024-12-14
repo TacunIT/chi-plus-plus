@@ -7,7 +7,7 @@ OUT_DIR=${BASE_DIR}/_book
 
 MAN_FILE=${OUT_DIR}/man-file.txt
 CSS_FILE=${BASE_DIR}/_sass/pdf.css
-YML_FILE=${OUT_DIR}/metadadata.yml
+YML_FILE=${OUT_DIR}/metadata.yml
 
 FILENAME="chi-plus-plus"
 FILE_NEW=$FILENAME".md"
