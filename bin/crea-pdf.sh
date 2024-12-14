@@ -22,7 +22,7 @@ pandoc  --verbose                 						\
 				--css ${CSS_FILE}    				 					\
         --pdf-engine=wkhtmltopdf  					  \
 				--pdf-engine-opt="--print-media-type" \
-				--pdf-engine-opt="--title" 					  --pdf-engine-opt="C'hi++, il senso della vita" \
+				--pdf-engine-opt="--title" 					  --pdf-engine-opt="C'hi++, il senso della vita è il debug" \
         --pdf-engine-opt="--header-left"      --pdf-engine-opt="C'hi++, il senso della vita è il debug"\
         --pdf-engine-opt="--header-right"     --pdf-engine-opt="[page] di [topage]" \
         --pdf-engine-opt="--header-font-name" --pdf-engine-opt="Bookerly"          \
