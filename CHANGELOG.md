@@ -1,3 +1,6 @@
+## 1.1.4 (January 16, 2025)
+  - Aggiornato pdf
+
 ## 1.1.3 (December 14, 2024)
   - Modificato CSS per PDF
   - Aggiunta numerazione alle note
