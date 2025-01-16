@@ -23,6 +23,6 @@ polimorfismo.html
 stream.html
 debug.html
 epilogo.html
+note.html
 ringraziamenti.html
 bibliografia.html
-note.html
