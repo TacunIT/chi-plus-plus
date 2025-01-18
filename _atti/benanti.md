@@ -51,14 +51,15 @@ che sul mio Kindle ho evidenziato con la nota:
 
 Quando prima ho detto che gli uomini non erano pronti a un radicale cambiamento del Mondo, non ho detto del tutto la verità, perché in effetti gli Ebrei non hanno avuto alcun problema ad adattarsi al nuovo paradigma, tanto è vero che, pur rappresentando solo il due per mille della popolazione mondiale, si sono aggiudicati il 20% dei Premi Nobel.
 Secondo alcuni[^katz], questa sperequazione è dovuta al fatto che agli Ebrei non solo è permesso discutere i testi sacri, ma sono anche esortati a farlo, cosa che influisce sul loro modo di pensare, rendendoli capaci di formulare con più facilità delle idee innovative.  
-Perché la Chiesa Cattolica non può fare altrettanto? 
-All'indomani dell'attacco al Bataclan, Gianluca Nicoletti di *Radio 24* disse a una sua ascoltatrice:
+Sarebbe bello se la Chiesa Cattolica potesse fare altrettanto.
+All'indomani dell'attacco al *Bataclan*, Gianluca Nicoletti di *Radio 24* disse a una sua ascoltatrice:
 
 > Come potrei convincere lei che in Cielo non ci sono gli angeli, gli arcangeli, i Troni e le Dominazioni? Contro un atto di fede non c'è nulla da fare.
 
 I limiti di questa afffermazione sono evidenti, ma rimane il fatto che - a causa di convinzioni anacronistiche, quasi mai funzionali alla coerenza interna del Credo - i fedeli sono spesso trattati come cugini ingenui che credono ancora a Babbo Natale anche da chi condivide, in maniera più o meno consapevole, i valori fondanti delle loro religioni.
 
 ## Lo Spazionismo
+
 
 Ho scritto *C'hi++* per rispondere a una domanda che mi feci a Settembre del 2005: 
 
