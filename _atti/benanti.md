@@ -64,34 +64,29 @@ Ero in bagno; lo specifico per evitare che quanto segue sia preso troppo sul ser
 Avevo appena finito di leggere un saggio di Ananda Coomaraswamy su tempo ed eternità[^bagno] e mi chiesi cosa ci fosse ai limiti dell'Universo, oltre l'orbita dell'ultimo satellite dell'ultimo pianeta dell'ultima stella dell'ultima galassia. 
 Per poter gestire con la mia mente finita una grandezza infinita come quella dello spazio, ideai un artificio lessicale: immaginai che lo spazio, come tale, fosse costituito da elementi infinitesimali, dotati di “esistenza potenziale”.
 In pratica, così come i pixel di uno schermo a raggi catodici sono spenti a meno che non siano colpiti dal fascio di elettroni del pennello elettronico, cosi gli *spazioni*[^spazioni] del mio modello esistevano solo se venivano irraggiati di energia, altrimenti erano nulla.   
-Era un'idea troppo stupida per non elaborarla ulteriormente.
-Usucapii nella mia cosmogonia un'idea che Poe aveva descritto nel suo saggio *Eureka*, ovvero che l'Universo sia generato dalla contrapposizione di due forze opposte: la Gravità, ovvero dalla tendenza di tutto ciò che esiste a tornare all'Uno primigenio; e dall'Elettricità, che al contrario, tende a dividere; cambiai solo il nome della forza separatrice in *Entropia*, che rendeva meglio l'idea.  
-Nel mio immaginario colllettivo, quindi, la vita dell'Universo aveva un andamento ciclico in tre fasi: 
+Era un'idea troppo stupida per non elaborarla ulteriormente, così, usucapii nella mia cosmogonia un'idea che Poe aveva descritto nel suo saggio *Eureka*, ovvero che l'Universo sia generato dalla contrapposizione di due forze opposte: la Gravità, ovvero dalla tendenza di tutto ciò che esiste a tornare all'Uno primigenio; e dall'Elettricità, che al contrario, tende a dividere; cambiai solo il nome della forza separatrice in *Entropia*, che rendeva meglio l'idea.  
+Nel mio immaginario collettivo, quindi, la vita dell'Universo aveva un andamento ciclico in tre fasi: 
 
 1. all'inizio di ciascun ciclo, l'energia era concentrata in solo punto, tenuta insieme dalla Gravità; 
 2. l'Entropia causava la digregazione dell'Uno, scagliandone l'energia nello spazio, irraggiandone gli spazioni e generando l'universo così come lo conosciamo;
 3. l'universo si espandeva per un po', poi la Gravità aveva la meglio sull'Entropia e tutta la materia/energia tornava a contrarsi nell'Uno.
 
-Come scoprii, questa visione delle cose era compatibile con numerose religioni o filosofie canoniche, cosa che mi portò a pensare che l'esistenza potesse essre come una modella che ciascuna disciplina metafisica ritraeva dal suo specifico punto di vista.
-Ogni rappresentazione è inevitabilmente diversa dalle altre, ma a parità di doti pittoriche, tutte le immagini hanno qualcosa in comune, perché si riferiscono allo stesso soggetto.
-
-Purtroppo, se lo Spazionismo rispondeva al requisito di dare una spiegazione dell’esistenza sfruttando solo ciò di cui si avesse un'esperienza diretta, aveva un problema: era socialmente inappetibile, perché non prevedeva alcun elemento metafisico.  
-Dico questo perché, dopo venti anni di studio *eclettico e confuso* (come direbbe Rodari) sono arrivato alla conclusione che una disciplina filosofica non può dare speranza ai suoi adepti se non prevede una quota anche minima di trascendenza e persistenza.  
-
-Anche assumendo che il ripetersi infinito dei cicli di *Big-Bang* e *Big-Crunch* possa portare, talvolta[^infinito], alla ripetizione di alcune linee temporali e quindi alle nostre esistenze, queste non avranno alcuna relazione le une con le altre perché ogni memoria di noi e delle nostre azioni verrà annichilita, insieme a stelle, pianeti e nebulose, al termine di ciascuna fase di contrazione.
+Purtroppo, anche se questa visione delle cose rispondeva al requisito di dare una spiegazione dell’esistenza sfruttando solo ciò di cui abbiamo un'esperienza diretta, aveva un problema: era socialmente inappetibile.
+Infatti, anche assumendo che il ripetersi infinito dei cicli di *Big-Bang* e *Big-Crunch* possa portare, talvolta[^infinito], alla ripetizione di alcune linee temporali e quindi alle nostre esistenze, queste non avranno alcuna relazione le une con le altre perché ogni memoria di noi e delle nostre azioni verrà annichilita al termine di ciascuna fase di contrazione.
 Se le cose stessero così, perché dovremmo comportarci "bene" (nel senso che davano a questo termine i nostri nonni)? 
-Annichiliti per annichiliti, tanto vale goderdsi la vita finché possibile, freganosene delle conseguenze che potranno avere le nostre azioni sugli altri esseri viventi. 
+Annichiliti per annichiliti, tanto vale godersi la vita finché possibile, freganosene delle conseguenze che potranno avere le nostre azioni sugli altri esseri viventi. 
 
-
-
+## C'hi++
 
 
 <!--
+, perché non prevedeva alcun elemento metafisico.  
+Dico questo perché, dopo venti anni di studio *eclettico e confuso* (come direbbe Rodari) sono arrivato alla conclusione che una disciplina filosofica non può dare speranza ai suoi adepti se non prevede una quota anche minima di trascendenza e persistenza.  
+
+Come scoprii, questa visione delle cose era compatibile con numerose religioni o filosofie canoniche, cosa che mi portò a pensare che l'esistenza potesse essre come una modella che ciascuna disciplina metafisica ritraeva dal suo specifico punto di vista.
+Ogni rappresentazione è inevitabilmente diversa dalle altre, ma a parità di doti pittoriche, tutte le immagini hanno qualcosa in comune, perché si riferiscono allo stesso soggetto.
+
 e, per poter “funzionare”, aveva bisogno di un solo dogma, ovvero che l'espansione dell'Universo, o prima o poi, si sarebbe invertita.  
-
-
-*spazioni*[^spazioni]
-Ho scritto *C'hi++* per rispondere a una domanda che mi feci a Settembre del 2005: 
 
 > È possibile dare una spiegazione dell’esistenza sfruttando solo ciò di cui abbiamo esperienza diretta? 
 
@@ -101,12 +96,6 @@ Circa un anno dopo, avevo scoperto due cose importanti:
 - eliminando dalle diverse dottrine gli orpelli e gli auspici non comprovabili inutili era possibile identificare un *minimo comune multiplo esistenziale*, dei principii o dei concetti comuni a dottrine anche molto distanti nel tempo e nello spazio.
 
 
-## C'hi++
-
-
-
-D'altro canto, la vita è una modella che ciascuna disciplina metafisica ritrae dal suo punto di vista, cercando di intuire il corpo che si cela dietro alle pieghe del drappeggio.
-Ogni rappresentazione sarà inevitabilmente diversa dalle altre, ma a parità di doti pittoriche, le immagini avranno sempre qualcosa in comune, perché dopo tutto, si riferiscono allo stesso soggetto.
 
 Il quadro che si ottiene ricorda *Les Damoiselles d'Avignon*, perché ricostruisce la realtà in base a un processo analitico, che non si cura della plausibilità morfologica dele figure rappresentate, ma cerca di rappresentare lo spazio tridimensionale della spiritualità con i mezzi limitati di un mondo bidimensionale e materiale.  
 
@@ -143,7 +132,7 @@ Questo elemento chiamato *I Post-It*, ovvero una memoria persistente dell'Univer
 
 [^bagno]: C'è un motivo per cui, in bagno, leggessi un saggio di Coomaraswami, ma spiegarlo allungherebbe ancor di più questo testo già prolisso di suo.
 
-[^spazioni]: Scelsi questo nome per farmi dare dell'idiota da mia moglie quando glielo avrei raccontato. 
+[^spazioni]: Chiamai così i miei quanti di spazio e *Spazionismo* la mia teoria, per riderne con mia moglie quando glielo avrei raccontato. 
 
 [^infinito]: Come ammette anche Richard Dawkins: *Dato un tempo infinito o un numero di opportunità infinite, è possibile qualsiasi cosa*.
   
