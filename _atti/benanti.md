@@ -60,83 +60,44 @@ I limiti di questa afffermazione sono evidenti, ma rimane il fatto che - a causa
 
 ## Lo Spazionismo
 
-Ero in bagno; lo specifico per evitare che quanto segue sia preso troppo sul serio.
-Avevo appena finito di leggere un saggio di Ananda Coomaraswamy su tempo ed eternità[^bagno] e mi chiesi cosa ci fosse ai limiti dell'Universo, oltre l'orbita dell'ultimo satellite dell'ultimo pianeta dell'ultima stella dell'ultima galassia. 
+Estate 2005; ero in bagno e avevo appena finito di leggere un saggio di Ananda Coomaraswamy su tempo ed eternità[^bagno]. 
+Mi chiesi cosa ci fosse ai limiti dell'Universo, oltre l'orbita dell'ultimo satellite dell'ultimo pianeta dell'ultima stella dell'ultima galassia. 
 Per poter gestire con la mia mente finita una grandezza infinita come quella dello spazio, ideai un artificio lessicale: immaginai che lo spazio, come tale, fosse costituito da elementi infinitesimali, dotati di “esistenza potenziale”.
 In pratica, così come i pixel di uno schermo a raggi catodici sono spenti a meno che non siano colpiti dal fascio di elettroni del pennello elettronico, cosi gli *spazioni*[^spazioni] del mio modello esistevano solo se venivano irraggiati di energia, altrimenti erano nulla.   
 Era un'idea troppo stupida per non elaborarla ulteriormente, così, usucapii nella mia cosmogonia un'idea che Poe aveva descritto nel suo saggio *Eureka*, ovvero che l'Universo sia generato dalla contrapposizione di due forze opposte: la Gravità, ovvero dalla tendenza di tutto ciò che esiste a tornare all'Uno primigenio; e dall'Elettricità, che al contrario, tende a dividere; cambiai solo il nome della forza separatrice in *Entropia*, che rendeva meglio l'idea.  
-Nel mio immaginario collettivo, quindi, la vita dell'Universo aveva un andamento ciclico in tre fasi: 
+Nel mio immaginario collettivo, quindi, la vita dell'Universo veniva ad assumere un andamento ciclico in tre fasi: 
 
-1. all'inizio di ciascun ciclo, l'energia era concentrata in solo punto, tenuta insieme dalla Gravità; 
-2. l'Entropia causava la digregazione dell'Uno, scagliandone l'energia nello spazio, irraggiandone gli spazioni e generando l'universo così come lo conosciamo;
-3. l'universo si espandeva per un po', poi la Gravità aveva la meglio sull'Entropia e tutta la materia/energia tornava a contrarsi nell'Uno.
+1. all'inizio di ciascun ciclo, l'energia è concentrata in solo punto, tenuta insieme dalla Gravità; 
+2. l'Entropia causa la digregazione dell'Uno, scagliandone l'energia nello spazio, irraggiandone gli spazioni e generando l'universo così come lo conosciamo;
+3. l'universo si espande per un po', poi la Gravità ha la meglio sull'Entropia e tutta la materia/energia torna a contrarsi nell'Uno.
 
 Purtroppo, anche se questa visione delle cose rispondeva al requisito di dare una spiegazione dell’esistenza sfruttando solo ciò di cui abbiamo un'esperienza diretta, aveva un problema: era socialmente inappetibile.
-Infatti, anche assumendo che il ripetersi infinito dei cicli di *Big-Bang* e *Big-Crunch* possa portare, talvolta[^infinito], alla ripetizione di alcune linee temporali e quindi alle nostre esistenze, queste non avranno alcuna relazione le une con le altre perché ogni memoria di noi e delle nostre azioni verrà annichilita al termine di ciascuna fase di contrazione.
-Se le cose stessero così, perché dovremmo comportarci "bene" (nel senso che davano a questo termine i nostri nonni)? 
+Infatti, anche assumendo che il ripetersi infinito dei cicli di *Big-Bang* e *Big-Crunch* potesse portare, statisticamente[^infinito], alla ripetizione di alcune linee temporali e quindi alle nostre esistenze, queste non avrebbero avuto alcuna relazione le une con le altre perché ogni memoria delle nostre scelte e delle nostre azioni sarebbe stata annichilita al termine di ciascuna fase di contrazione.
+Stando così le cose, perché dovremmo comportarci "bene" (nel senso che davano a questo termine i nostri nonni)? 
 Annichiliti per annichiliti, tanto vale godersi la vita finché possibile, freganosene delle conseguenze che potranno avere le nostre azioni sugli altri esseri viventi. 
 
 ## C'hi++
 
-
-<!--
-, perché non prevedeva alcun elemento metafisico.  
-Dico questo perché, dopo venti anni di studio *eclettico e confuso* (come direbbe Rodari) sono arrivato alla conclusione che una disciplina filosofica non può dare speranza ai suoi adepti se non prevede una quota anche minima di trascendenza e persistenza.  
-
-Come scoprii, questa visione delle cose era compatibile con numerose religioni o filosofie canoniche, cosa che mi portò a pensare che l'esistenza potesse essre come una modella che ciascuna disciplina metafisica ritraeva dal suo specifico punto di vista.
-Ogni rappresentazione è inevitabilmente diversa dalle altre, ma a parità di doti pittoriche, tutte le immagini hanno qualcosa in comune, perché si riferiscono allo stesso soggetto.
-
-e, per poter “funzionare”, aveva bisogno di un solo dogma, ovvero che l'espansione dell'Universo, o prima o poi, si sarebbe invertita.  
-
-> È possibile dare una spiegazione dell’esistenza sfruttando solo ciò di cui abbiamo esperienza diretta? 
-
-Circa un anno dopo, avevo scoperto due cose importanti: 
-
-- sì: era possibile farlo;
-- eliminando dalle diverse dottrine gli orpelli e gli auspici non comprovabili inutili era possibile identificare un *minimo comune multiplo esistenziale*, dei principii o dei concetti comuni a dottrine anche molto distanti nel tempo e nello spazio.
-
-
-
-Il quadro che si ottiene ricorda *Les Damoiselles d'Avignon*, perché ricostruisce la realtà in base a un processo analitico, che non si cura della plausibilità morfologica dele figure rappresentate, ma cerca di rappresentare lo spazio tridimensionale della spiritualità con i mezzi limitati di un mondo bidimensionale e materiale.  
-
-Avevo scoperto, anni prima, che se nei Comandamenti dell'Esodo si sostituisce la parola "Dio" con: "senso della vita", si ottiene un elenco di *Consigli*, che, come faccio dire al personaggio del Maestro, nel libro:
-
-> Se li avessi seguiti anche da giovane, adesso avrei molti rimorsi in meno.
-
-Io penso invece che si debba procedere come quando si progetta una base di dati: per prima cosa si *normalizza* l'insieme di informazioni che devono essere gestite, eliminando tutte le ripetizioni; quando l'universo dei dati è ridotto all'osso, se ne reintegra qualcuno per rendere più efficiente il funzionamento del DB.  
-
-Prima di andare avanti, però, credo sia necessario definire le mie idee in fatto di religione.
-In termini pratici, seguo ormai da anni una mia versione laica dei Comandamenti dell'Esodo[^dieci] e nei bar, dopo il secondo bicchiere di vino, dico che il mio sogno è di diventare Papa con il nome di Cristiano I° (*ma non subito*, come la castità per Agostino).
-Semplificando, come il mio solito, potrei dire che sono un cattolico che non crede nei dogmi, ma questo, purtroppo, mi rende un non-cattolico ed è un peccato, perché penso che la Chiesa Cattolica sia l'unica forza che ha la possibilità di arginare il decadimento della società attuale[^guenon].    
-Detto ciò e premesso che, se mi sbagliassi, sarei ben felice di prenderne atto (come tutti i pessimisti, preferisco avere torto che ragione), 
-
-Ogni volta che partecipa a una Messa, si chiede quante, delle persone che ha intorno, sappiano la genesi della frase: "generato, non creato, della stessa sostanza del Padre".
+Ho deciso di scrivere *C'hi++* per mettere ordine nello *gnommero* di idee prodotto in me da anni di studio *eclettico e confuso* (come direbbe Rodari) e ho scelto di inserire le mie teorie in un manuale di programmazione perché pensavo che questo - essendo la programmazione e la metafisica due modi di descrivere realtà diverse da quelle che percepiamo con i sensi - avrebbe reso più facile la spiegazione di alcuni concetti[^ssl].  
+Così come il linguaggio C++ è una evoluzione del linguaggio chiamato C, a cui aggiunge le funzioni proprie della programmazione a oggetti, il *C'hi++* è un'evoluzione dello Spazionismo a cui aggiunge un elemento metafisico chiamato *I Post-It*[^post-it], ovvero una memoria persistente dell'Universo - simile, ho scoperto, all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo - che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione e contrazione.
+L'introdouzione di questo elemento rende *stateful* le diverse permutazioni *stateless* dello Spazionismo e permette di ipotizzare, in linea con il sotto-titolo del libro, che l'esistenza sia una continua ricerca della perfezione.
+Grazie ai *Post-It*, infatti, l'Universo può ricordare sia le scelte che hanno prodotto esiti fausti che quelle che hanno condotto a situazioni infauste e ripeterle o evitarle nei cicli successivi[^goedel].  
+Chiaramente, così come la modifica di una mossa nell'apertura di una partita di Scacchi genera una nuova partita rispetto a quella cui si fa riferimento, modifiche anche minimali a una linea temprale possono stravolgere gli eventi successivi, perciò il valore buono/cattivo dei *Post-It* non è assoluto, ma relativo.  
  
-In uno dei suoi saggi sull'arte, Ananda Coomaraswamy spiega che la parola Pali *Sam̧vega* indica lo shock esetico che si può provare davanti un'opera d'arte e che ci riscuote dal nostro torpore come il rumore della frusta fa con il cavallo.
-Ho provato qualcosa di simile q
 
-
-
-
-Questo elemento chiamato *I Post-It*, ovvero una memoria persistente dell'Universo - simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo - che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione e contrazione.
-
--->
 
 [^laici]: https://canaro.net/saggi/bergoglio-e-pregiudizio.html.
 
-[^dieci]: https://canaro.net/saggi/i-dieci-comandamenti.html
-
-[^guenon]: Lo pensava anche Guénon, ma in un altro periodo storico e per altri motivi.
-
 [^katz]: Eran Katz, *Jerome diventa un genio. Il segreto dell'intelligenza* - Barbera, Firenze 2006.
 
-[^bagno]: C'è un motivo per cui, in bagno, leggessi un saggio di Coomaraswami, ma spiegarlo allungherebbe ancor di più questo testo già prolisso di suo.
+[^bagno]: Specifico il luogo perché è vero e perché, come si può facilmente verificare, senza questa premessa, il periodo suonava borioso. Nel caso se lo stesse chiedendo, c'è un motivo per cui, in bagno, leggessi un saggio di Coomaraswami, ma spiegarlo allungherebbe ancor di più questo testo già prolisso di suo.
 
 [^spazioni]: Chiamai così i miei quanti di spazio e *Spazionismo* la mia teoria, per riderne con mia moglie quando glielo avrei raccontato. 
 
 [^infinito]: Come ammette anche Richard Dawkins: *Dato un tempo infinito o un numero di opportunità infinite, è possibile qualsiasi cosa*.
   
+[^ssl]: Per esempio, la questione della giustificazione di un giudizio morale in base a una teoria preesistente, di cui ho letto sul vostro libro nei giorni scorsi, è assimilabile all'emissione dei certificati SSL da parte delle *Certification Authority*.  https://chiplusplus.org/man/operatori#dottrina
 
+[^post-it]: Ma sto pensando di rinomniarlo *I Cookies* 
 
-
-
+[^goedel]: Questo è l'equivalente per il *C'hi++* del *Teorema di Incompletezza* di Goedel, perché potrebbe permettere la giustificazione della Shoah in base al presupposto che i nazisti hanno sterminato gli Ebrei perché, in altre linee temporali, uno di loro aveva causato danni all'Umanità. Sto cercando un modo per evitarlo, ma non so come.
