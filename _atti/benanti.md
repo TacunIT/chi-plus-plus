@@ -1,7 +1,32 @@
-## Premessa
-Io c'ero, a via della Conciliazione, il 28 Febbraio.  
+<section class="cover" style="margin-bottom:3rem;text-align:center">
+<header>
+	<h1>C'hi++ - Il senso della Vita è il *debug*</h1>
+	<h2>Presentazione prolissa</h2>
+<header>
+<img style="margin:2rem auto" src="../assets/img/quiz.png"></section>
+
+<
+
+<p style="text-align:center;padding:2rem;break-after: always;">
+
+</p>
+
+## In breve
+
+*C'hi++* è un eccellente manuale di programmazione, un maldestro libro di filosofia e un vergognoso libro di fisica.  
+La forma narrativa è quella del dialogo: all'interno di un monastero, un vecchio maestro insegna a un giovane discepolo i principii della programmazione in C++ e parallelamente lo inizia ai misteri del *C'hi++*: una bizzarra metafisica *open-source*, definita anni addietro dal fondatore del loro Ordine: il mitologico Maestro Canaro che, secondo la leggenda, alla fine del XX° Secolo fu incaricato da Dio di riscrivere in C++ l'applicazione COBOL che fa funzionare l'Universo.  
+Il primo e l'ultimo capitolo - il *Prologo* e l'*Epilogo* - sono narrati in prima persona dall'allievo; in tutti gli altri capitoli la voce narrante è quella del Maestro. 
+In ogni capitolo, il Maestro affronta uno degli aspetti della programmazione: operatori, funzioni, classi, polimorfismo e perfino il versionamento e la correzione del codice.
+Ciascuno di questi argomenti, descritto in dettaglio nella parte iniziale del capitolo, viene poi utilizzato per introdurre i principii del C'hi++ e della sua cosmogonia: lo *Spazionismo*.
+
+Il *C'hi++* è un'etica *open-source* perché ciascuno, se ritene di farlo, la possa modificare senza per questo generare degli scismi e delle guerre di religione.
+In quanto tale, ha un suo *repository* su GitHub[^git], che contiene anche i testi preliminari che hanno condotto alla stesura del manuale.  
+Dato che i principii di base del *C'hi++* sono compatibili con le principali religioni canoniche, dal Mazdeismo in poi, con un po' di buona volontà, lo si potrebbe utilizzare come base per un'etica *vendor-independent* per l'Intelligenza Artificiale.
+
+## Via della Conciliazione, 28 Febbraio 202
+Io c'ero.  
 Avevo una clavicola rotta e c'era il rischio del contagio, ma non volevo mancare. 
-Non avevo fatto in tempo a farmi fare un accredito dal giornale per cui lavoravo, quindi ero piuttosto lontano dal palco, seduto a fianco a una suora che, instancabilmente, pubblicava immagini dell'evento su almeno due piattaforme social.  
+Non avevo fatto in tempo a farmi fare un accredito dal giornale per cui lavoravo, quindi ero piuttosto lontano dal palco, seduto a fianco a una suora che pubblicava immagini dell'evento su almeno due piattaforme *social*.  
 Mi ricordo piuttosto bene di lei, che andava su e giù per il palco, poco prima dell'inizio; non so a cosa stesse pensando, in quel momento; io - forse ingenuamente - avevo l'impressione di assistere a un evento sorico, una versione *full-HD* di Nicea o di Trento.
 Ricordavo ancora come, nel Novembre del 2015, all'indomani degli attacchi *jihadisti*, alcuni commentatori avessero ostentato il loro laicismo, come se il solo fatto di avere una fede rendesse complici di quelle morti[^laici]. 
 Era bello vedere, cinque anni dopo, come i fatti dimostrassero il loro errore e come la Chiesa, senza rinnegare i proprii principii - e, anzi, proprio in virtù di essi - riuscisse a indirizzare la “bleeding-edge” della tencologia prima e meglio di quanto riuscissero a fare gli Stati laici.  
@@ -78,13 +103,34 @@ Annichiliti per annichiliti, tanto vale godersi la vita finché possibile, frega
 
 ## C'hi++
 
-Ho deciso di scrivere *C'hi++* per mettere ordine nello *gnommero* di idee prodotto in me da anni di studio *eclettico e confuso* (come direbbe Rodari) e ho scelto di inserire le mie teorie in un manuale di programmazione perché pensavo che questo - essendo la programmazione e la metafisica due modi di descrivere realtà diverse da quelle che percepiamo con i sensi - avrebbe reso più facile la spiegazione di alcuni concetti[^ssl].  
-Così come il linguaggio C++ è una evoluzione del linguaggio chiamato C, a cui aggiunge le funzioni proprie della programmazione a oggetti, il *C'hi++* è un'evoluzione dello Spazionismo a cui aggiunge un elemento metafisico chiamato *I Post-It*[^post-it], ovvero una memoria persistente dell'Universo - simile, ho scoperto, all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo - che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione e contrazione.
+Ho deciso di scrivere *C'hi++* per mettere ordine nello *gnommero* di idee prodotto in me da anni di studio *eclettico e confuso* (come direbbe Rodari); ho scelto di inserire le mie teorie in un manuale di programmazione perché pensavo che questo - essendo la programmazione e la metafisica due modi di descrivere realtà diverse da quelle che percepiamo con i sensi - avrebbe reso più facile la spiegazione di alcuni concetti[^ssl].  
+Così come il linguaggio C++ è una evoluzione del linguaggio chiamato C, a cui aggiunge le funzioni proprie della programmazione a oggetti, il *C'hi++* è un'evoluzione dello Spazionismo, a cui aggiunge un elemento metafisico chiamato *I Post-It*[^post-it], ovvero una memoria persistente dell'Universo che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione e contrazione.
 L'introdouzione di questo elemento rende *stateful* le diverse permutazioni *stateless* dello Spazionismo e permette di ipotizzare, in linea con il sotto-titolo del libro, che l'esistenza sia una continua ricerca della perfezione.
-Grazie ai *Post-It*, infatti, l'Universo può ricordare sia le scelte che hanno prodotto esiti fausti che quelle che hanno condotto a situazioni infauste e ripeterle o evitarle nei cicli successivi[^goedel].  
-Chiaramente, così come la modifica di una mossa nell'apertura di una partita di Scacchi genera una nuova partita rispetto a quella cui si fa riferimento, modifiche anche minimali a una linea temprale possono stravolgere gli eventi successivi, perciò il valore buono/cattivo dei *Post-It* non è assoluto, ma relativo.  
- 
+Grazie ai *Post-It*, infatti, l'Universo può ricordare ciò che è successo nei precedenti cicli di esistenza e, in base a questa conoscenza, può ripetere scelte che si sono dimostrate positive o modificare quelle che hanno dato esiti fallimentari[^goedel].   
+Oltre questi due dogmi, il C'hi++ definisce due enti meta-fisici: l'*Annosa Dicotomia* e l'Amore.
+L'*Annosa Dicotomia* (fra ciò che desideriamo e ciò di cui abbiamo bisogno) è la forza che spinge a compiere scelte in base a motivazioni contingenti, di cui quasi sempre ci si pente[^annosa].
+L'*Amore* è la forza con cui l'Universo spinge gli esseri viventi ad assolvere al loro *dharma*; una sorta di una bomba a tempo inserita nel nostro “firmware”, per spingerci a fare la cosa giusta quando arriverà il momento.[^amore]    
 
+## Conclusioni
+ 
+Ho chiuso la prima revisione del testo il 5 Febbraio 2023, ma non ho ancora inviato *C'hi++* a nessun editore perché ero convinto che un libro così non avesse un pubblico.
+Trent'anni fa non mi sarei fatto un simile scrupolo, perché la maggior parte degli informatici combinava competenze tecniche con interessi umanistici, ma oggi le cose sono drasticamente cambiate: legge libri solo il 40% degli Italiani sopra i sei anni e, di questi, quasi la metà non va oltre i tre libri l'anno. 
+Che mercato potevo aspettarmi che avesse, un libro di programmazione che parla anche del senso della vita?  
+Il buon successo che ha avuto il Congresso Mondiale di Filosofia di Roma[^ceo], però, mi ha spinto a valutare la via della pubblicazione.
+Sto quindi rivedendo il testo, limando quello che mi era sfuggito durante il primo giro di bozze, poi lo invierò ad alcuni editori italiani. 
+Il passo successivo sarà di tradurre il testo in Inglese e di tentare la pubblicazione su mercati esteri.   
+Grazie per aver letto fin qui.  
+<br />
+<br />
+Carlo Simonelli  
+<br />
+<br />
+Roma, nell'inverno 2024/2025. 
+<br />
+<br />
+<br /> 
+
+[^git]: https://github.com/TacunIT/chi-plus-plus
 
 [^laici]: https://canaro.net/saggi/bergoglio-e-pregiudizio.html.
 
@@ -98,6 +144,13 @@ Chiaramente, così come la modifica di una mossa nell'apertura di una partita di
   
 [^ssl]: Per esempio, la questione della giustificazione di un giudizio morale in base a una teoria preesistente, di cui ho letto sul vostro libro nei giorni scorsi, è assimilabile all'emissione dei certificati SSL da parte delle *Certification Authority*.  https://chiplusplus.org/man/operatori#dottrina
 
-[^post-it]: Ma sto pensando di rinomniarlo *I Cookies* 
+[^post-it]: Ma sto pensando di rinomniarlo *I Cookies*, che è più appropriato.
 
-[^goedel]: Questo è l'equivalente per il *C'hi++* del *Teorema di Incompletezza* di Goedel, perché potrebbe permettere la giustificazione della Shoah in base al presupposto che i nazisti hanno sterminato gli Ebrei perché, in altre linee temporali, uno di loro aveva causato danni all'Umanità. Sto cercando un modo per evitarlo, ma non so come.
+[^goedel]: Ho sempre pensato che questo sia l'equivalente per il *C'hi++* del *Teorema di Incompletezza* di Goedel, perché potrebbe permettere la giustificazione della Shoah in base al presupposto che i nazisti hanno sterminato gli Ebrei perché, in altre linee temporali, uno di loro aveva causato danni all'Umanità. Sto cercando un modo per evitarlo, ma a oggi non so come.
+
+[^annosa]: Sodale dell'Entropia, è l'Annosa Dicotomia che causa la deflagrazione dell'Uno ed è sempre lei, nell'allegoria biblica del medesimo evento, il serpente che spinge Adamo ed Eva ad assaggiare i frutti dell'albero della conoscenza, con conseguente allontanamento dall'Eden.  
+
+[^amore]: Oltre a far nascere nuove vite, l'Amore le può anche spegnere. Per il C'hi++, ciascuno di noi è l’istanza di una classe che è stata chiamata a vivere per svolgere un determinato compito; fatto ciò, dovremo essere rimossi dalla memoria per non occupare inutilmente delle risorse del sistema.  L’Amore può servire anche a questo: così come ha generato nei nostri genitori l’interesse necessario a causare la nostra nascita, molto spesso genera in noi un interesse che causa le condizioni necessarie alla nostra morte.
+
+[^ceo]: Oltre al fatto che uno dei relatori principali fosse anche il CEO di una delle nostre maggiori aziende informatiche.  
+
