@@ -44,4 +44,4 @@ Riassumendo, per il C’hi++, ciascun essere senziente è uno dei neuroni di un 
 In altre parole, il Paradiso e l’Inferno non sono altrove: sono solo due stati possibili dell’Universo e siamo noi, con le nostre azioni e le nostre intenzioni, a decidere in quale dei due vivremo.
 Nel libro, lo spiego meglio.
 <br />  
-Roma, Inverno 2023.
+Roma, Inverno 2024.
