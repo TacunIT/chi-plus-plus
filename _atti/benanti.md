@@ -19,7 +19,7 @@ Il primo e l'ultimo capitolo - il *Prologo* e l'*Epilogo* - sono narrati in prim
 In ogni capitolo, il Maestro affronta uno degli aspetti della programmazione: operatori, funzioni, classi, polimorfismo e perfino il versionamento e la correzione del codice.
 Ciascuno di questi argomenti, descritto in dettaglio nella parte iniziale del capitolo, viene poi utilizzato per introdurre i principii del C'hi++ e della sua cosmogonia: lo *Spazionismo*.
 
-Il *C'hi++* è un'etica *open-source* perché ciascuno, se ritene di farlo, la possa modificare senza per questo generare degli scismi e delle guerre di religione.
+Il *C'hi++* è un'etica *open-source* perché ciascuno, se ritene di farlo, la possa modificare senza per questo generare degli scismi.
 In quanto tale, ha un suo *repository* su GitHub[^git], che contiene anche i testi preliminari che hanno condotto alla stesura del manuale.  
 Dato che i principii di base del *C'hi++* sono compatibili con le principali religioni canoniche, dal Mazdeismo in poi, con un po' di buona volontà, lo si potrebbe utilizzare come base per un'etica *vendor-independent* per l'Intelligenza Artificiale.
 
@@ -89,7 +89,7 @@ Estate 2005; ero in bagno e avevo appena finito di leggere un saggio di Ananda C
 Mi chiesi cosa ci fosse ai limiti dell'Universo, oltre l'orbita dell'ultimo satellite dell'ultimo pianeta dell'ultima stella dell'ultima galassia. 
 Per poter gestire con la mia mente finita una grandezza infinita come quella dello spazio, ideai un artificio lessicale: immaginai che lo spazio, come tale, fosse costituito da elementi infinitesimali, dotati di “esistenza potenziale”.
 In pratica, così come i pixel di uno schermo a raggi catodici sono spenti a meno che non siano colpiti dal fascio di elettroni del pennello elettronico, cosi gli *spazioni*[^spazioni] del mio modello esistevano solo se venivano irraggiati di energia, altrimenti erano nulla.   
-Era un'idea troppo stupida per non elaborarla ulteriormente, così, usucapii nella mia cosmogonia un'idea che Poe aveva descritto nel suo saggio *Eureka*, ovvero che l'Universo sia generato dalla contrapposizione di due forze opposte: la Gravità, ovvero dalla tendenza di tutto ciò che esiste a tornare all'Uno primigenio; e dall'Elettricità, che al contrario, tende a dividere; cambiai solo il nome della forza separatrice in *Entropia*, che rendeva meglio l'idea.  
+Era un'idea troppo stupida per non elaborarla ulteriormente, così, introdussi nella mia cosmogonia un'idea che Poe aveva descritto nel suo saggio *Eureka*, ovvero che l'Universo sia generato dalla contrapposizione di due forze opposte: la Gravità, ovvero la tendenza di tutto ciò che esiste a tornare all'Uno primigenio; e l'Elettricità, che al contrario, tende a dividere; cambiai solo il nome della forza separatrice in *Entropia*, che rendeva meglio l'idea.  
 Nel mio immaginario collettivo, quindi, la vita dell'Universo veniva ad assumere un andamento ciclico in tre fasi: 
 
 1. all'inizio di ciascun ciclo, l'energia è concentrata in solo punto, tenuta insieme dalla Gravità; 
