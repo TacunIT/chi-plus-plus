@@ -406,15 +406,17 @@ Tagliare una mano a chi ruba, costringendolo a portare il cibo alla bocca con la
 La *Lex Talionis* può funzionare per reati minori, perché chi la subisce ha il tempo di riflettere sui suoi errori, ma nel caso di un omicidio non solo è contraria all'obbligo di benevolenza che abbiamo nei confronti degli altri esseri senzienti, ma potrebbe anche essere controproducente, perché se il condannato non capisce il suo errore prima di morire è possibile che le sue azioni delittuose vengano ripetute in altri cicli dell'Universo.  
 D'altro canto, abbiamo un obbligo di benevolenza anche nei confronti degli altri carcerati e delle guardie carcerarie, quindi non possiamo lasciare che il condannato li uccida.
 La soluzione ideale sarebbe quella di metterlo in condizione di non nuocere a terzi, lasciandolo poi meditare sui suoi errori, ma se questo non fosse possibile, come ci dovremmo comportare?
-Se un individuo ripete più volte lo stesso atto delittuoso evidentemente non capisce o non vuole capire il suo errore.
-Se non capisce non è *senziente*, nel senso di *sensibilità*, quindi non può concorrere al miglioramento dell'Universo.
+Se un individuo riconosce i proprii errori e impara da essi, contribuisce al miglioramento dell'Universo; se invece ripete più volte lo stesso atto delittuoso evidentemente non capisce o non vuole capire il suo errore.
+Se non capisce, non è *senziente*, quindi non può concorrere al miglioramento dell'Universo.
 Se non è utile al miglioramento, possiamo considerarlo alla stessa stregua del gatto di Nansen:
 
 > Nansen un giorno vide i monaci delle sale Orientali e Occidentali che litigavano per un gatto.
 Egli sollevò il gatto e disse: “Se mi direte una parola di Zen, salverò il gatto; se no, lo ucciderò”.  
 Nessuno seppe rispondere e Nansen tagliò il gatto in due<a class="nota" href="/man/note#fn-nansen" id="nansen" >8</a>.
 
-La morte del condannato, però, se mai dovesse rendersi necessaria, non deve essere considerata una vendetta di cui gioire, ma un evento tanto doloroso quanto inevitabile, di cui dolersi come di un'amputazione.
+Per lungo tempo, il Maestro Canaro si chiese perché Nansen potesse tagliare in due l'incolpevole gatto.
+La spiegazione che si diede fu che il gatto non essendo un essere senziente, e quindi incapace di contribuire con la propria esperienza alla crescita dell'Universo, fosse sacrificabile, se ciò poteva portare in qualche all'Illuminazione dei monaci.  
+Attenzione, però: la morte del condannato, se mai dovesse rendersi necessaria, non deve essere considerata una vendetta di cui gioire, ma un evento tanto doloroso quanto inevitabile, di cui dolersi come di un'amputazione.
 Ciascuno, in quel giorno, dovrebbe chiedersi se, con *pensieri, parole, opere e omissioni*, non abbia contribuito in qualche modo a quella perdita.
 Una Società che esalta l'individualismo, il successo e il denaro non può dirsi del tutto innocente se chi non ha i mezzi o la capacità di ottenerli in maniera lecita cerca di procurarseli in altro modo.
 
@@ -431,7 +433,6 @@ Così si inchinò, ringraziò il Maestro Canaro per avergli fatto capire quella 
 
 @todo
 
-
 Il Metta Sutra predica la benevolenza per tutti gli "esseri che respirano"
 
 > Ye keci pàõa-bhåt' atthi
@@ -442,7 +443,6 @@ Il Metta Sutra predica la benevolenza per tutti gli "esseri che respirano"
 <i>bhåt'</i>   essere<br />
 <i>atthi</i>   che esiste<br />
 </p>
-
 
 allora, perché Nansen taglia in due il gatto? e perché i maestri Zen potevano uccidere i loro discepoli?
 Ho cercato la definizione di "senziente", ma non mi sembra che ci sia una risposta univoca.
