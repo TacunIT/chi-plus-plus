@@ -1,3 +1,13 @@
+## 1.2.0 (May 17, 2025)
+  - Modificato testo dell'introduzione
+  - Aggiunte informazioni per navigazione nel manuale
+  - Modificati link dell'index
+  - Modificata la dimensione del font base
+  - Ridotto testo index.html
+  - Revisione del capitolo sulle istruzioni condizionali
+  - Redazione della lettera a Benanti
+  - Aggiunta directory per gli  "atti" (modesto come sempre)
+
 ## 1.1.4 (January 16, 2025)
   - Aggiornato pdf
 
