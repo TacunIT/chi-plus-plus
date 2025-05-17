@@ -17,8 +17,6 @@ excerpt:    "Il C'hi++ è un tentativo di spiegare il significato dell'Esistenza
 Questa miscela di spiritualità e tecnologia è presente sia nel nome *C'hi++* &mdash; che è un gioco di parole fra il termine giapponese *C'hi* e il linguaggio di programmazione chiamato *C++* &mdash;, sia nel modo in cui verrà gestita l'evoluzione della disciplina: lo stesso che viene utilizzato per il software *open-source*.
 I precetti del C'hi++ sono illustrati in un libro dal titolo:
 [*C'hi++ - Il senso della vita è il debug*](/man/)
-e sono riassunti nel testo:
-[*C'hi++ - Proposta per una metafisica open-source*](/proposta.html).
 Tutti i testi, le immagini e i dati relativi al C'hi++ sono raccolti in un
 <a  title="Va' al progetto su GitHub"
     target="github"
@@ -28,10 +26,11 @@ Tutti i testi, le immagini e i dati relativi al C'hi++ sono raccolti in un
 <a href="https://github.com/TacunIT/chi-plus-plus/blob/master/MANIFEST.md" target="github">MANIFEST</a>.
 
 ---
-
+<!--
 Tutto nasce da una domanda: *È possibile dare una spiegazione dell'esistenza sfruttando solo ciò di cui abbiamo esperienza diretta?*
 Le religioni, per “funzionare”, richiedono da una a tre dimensioni aggiuntive, oltre quelle note; la Scienza, per le sue *superstringhe* ha bisogno almeno di sette dimensioni aggiuntive, ovvero il doppio di quelle che servono per un Aldilà non spirituale. Esiste una spiegazione più semplice?
 Dopo averci ragionato su per una quarantina di anni, posso dire che sì: una spiegazione più semplice esiste ed è anche compatibile con molti dei principii delle religioni canoniche, alle quali C'hi++ non vuole sostituirsi, ma affiancarsi.
+-->
 
 C'hi++ non è né scienza né religione, anche se ogni tanto finge di essere o l'una o l'altra.
 C'hi++ è mito e la mitologia ha spesso mescolato il soprannaturale con il livello più alto dello sviluppo scientifico o tecnologico.
@@ -41,16 +40,19 @@ All'inizio del Secolo scorso, infine, i Futuristi hanno mitizzato i simboli del 
 <!-- @todo: aggiungere nota sulla scienza -->
 Nulla di strano, quindi, che all'inizio di questo millennio si tenti un paragone fra le regole note del software e le regole ignote dell'Universo in cui viviamo.
 
+---
+
 C'hi++ non si propone come una spiegazione assoluta e definitiva del Significato dell'Esistenza, ma come un modello incompleto e perfettibile.
 È per questo motivo che ha una versione, come il software: perché possa evolvere col tempo, così come avviene per il software.
 Questa è la prima versione del programma Photoshop, nel 1990:
 <p class="immagine"><img src="assets/img/photoshop-v1.jpg"></p>
-e questo è Photoshop oggi, trent'anni dopo:
+e questo è Photoshop, trent'anni dopo:
 <p class="immagine"><img src="assets/img/photoshop-2020.png"></p>
-Così come i modelli matematici usati per la meteorologia non rendono tutta la complessità dei movimenti delle masse d'aria dell'atmosfera, ma forniscono comunque delle previsioni attendibili, così il C'hi++ non fornisce una descrizione completa e accurata di ciò che è, è stato e sarà, ma può fornire una risposta non dogmatica ad alcune domande riguardanti la nostra vita.
+Così come i modelli matematici usati per la meteorologia non rendono tutta la complessità dei movimenti delle masse d'aria dell'atmosfera, ma forniscono comunque delle previsioni attendibili, così il C'hi++ non fornisce una descrizione completa e accurata di ciò che è, è stato e sarà, ma può fornire una risposta **non dogmatica** ad alcune domande riguardanti la nostra vita.
 
 ---
 
+<!--
 I principii del C'hi++ si basano su una cosmogonia che riprende alcune idee di Poe, come il contrasto fra contrazione ed espansione, a cui aggiunge un maggior livello di dettaglio, definendo gli ipotetici elementi che costituiscono l'Universo ovvero, gli: *spazioni*, da cui il nome: *Spazionismo* (lo so che non è un nome serio, ma quando ho cominciato a formulare questa teoria non avrei mai immaginato di renderla pubblica e comunque è sempre bene non prendersi troppo sul serio).
 
 Per lo Spazionismo, l'Universo è costituito da elementi infinitesimali dotati di “esistenza potenziale”.
@@ -73,7 +75,6 @@ Di questo, a oggi, non c'è prova scientifica, ma nella *Bhagavad-Gita* si affer
 Una volta che l’Universo collassato esploderà nuovamente, i casi possibili saranno due:
 
 <b>Caso 1.</b> Potrebbe essere che un *Big Bang* avvenga solo in determinate condizioni e che quelle condizioni portino necessariamente a un Universo identico a quello come noi lo conosciamo adesso; quindi, se l’Uno esploderà di nuovo, ricomincerà tutto da capo.  
-<!-- todo: aggiungere nota su processo 68 -->
 
 <b>Caso 2.</b> Se ogni *Big Bang* avviene in circostanze e con modalità specifiche, quando l'Uno esploderà di nuovo, nascerà un nuovo Universo, che potrà avere pochi o nessun punto di contatto con quello corrente.
 
@@ -95,6 +96,7 @@ Il problema, come sempre, è capire *cosa* sia davvero “bene”.
 Per farlo, abbiamo bisogno di introdurre l'unico elemento realmente metafisico del C'hi++: una sorta di memoria persistente dell'Universo, simile all'*hard-disk* dei computer o al *Vāsanā* di Yoga e Buddhismo, nella quale rimane traccia delle scelte che abbiamo fatto durante le nostre esistenze e delle conseguenze che hanno generato.
 Se capiamo che una nostra azione ha avuto delle conseguenze negative, quell'azione verrà “memorizzata” fra gli errori, nella speranza che non venga ripetuta in altre occasioni.
 Al contrario, le azioni che hanno degli esiti positivi verranno “ricordate” come buone, affinché le si ripeta in altri cicli di vita dell'Universo.
+-->
 
 Per il C'hi++, ciascun essere senziente è uno dei neuroni di un cervello (l'Universo) a cui contribuisce a dare forma grazie a ciò che impara nel corso delle sue esistenze.
 Se riconosciamo i nostri errori come tali, è possibile che non li ripeteremo in futuro; altrimenti continueremo a commetterli, generando delle forme “dolorose” dell'Universo.

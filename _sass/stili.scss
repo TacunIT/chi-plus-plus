@@ -230,7 +230,7 @@ BODY {
     background-color: $bodyBackground;
     color: $bodyColor;
     font-family: $bodyFont;
-    font-size: $bodyFontSize;
+    font-size: $fontSizeBody;
     text-align: center;
     counter-reset: note-pagina;
 }
@@ -286,7 +286,7 @@ NAV {
 }
 NAV A {
     font-variant-caps: petite-caps;
-    font-size: 13pt;
+    font-size: $fontSizeMenu;
     font-weight: bold;
     display: inline-block;
 }
@@ -752,10 +752,10 @@ LABEL:after {
 SECTION.dedica,
 SECTION.citazione {
     font-style: italic;
-    font-size: 1rem;
+    font-size: 0.9em;
     margin: 0 auto;
     padding-top: 5rem;
-    padding-left: 30%;
+    padding-left: 25%;
     padding-bottom: 5rem;
     text-align: right;
     page-break-after: always;
