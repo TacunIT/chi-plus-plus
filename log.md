@@ -10,7 +10,7 @@ excerpt:    ""
     {% for post in site.posts %}
         {% if post.tags contains "log" %}
         <div class="log">
-            <a class="more" href="{{ post.url }}">
+            <a class="title" href="{{ post.url }}">
                 <h3>{{ post.title }}</h3>
             </a>
             <p class="data">{{ post.date | date_to_string }}</p>

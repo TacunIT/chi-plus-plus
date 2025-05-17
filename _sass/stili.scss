@@ -77,7 +77,8 @@
 
 H1, H2, H3, H4 {
     margin: auto;
-		page-break-after: avoid;
+	page-break-after: avoid;
+    color: $colorHeaders;
 }
 H1 {
     font-size: $fontSizeH1;
@@ -826,9 +827,11 @@ BODY.note SECTION.note OL {
  *  Stili per log
  *
  */
-SECTION.elenco.post DIV.log {
-    padding-bottom: 2rem;
-    display: block;
+ SECTION.elenco.post DIV.log {
+     padding-bottom: 2rem;
+     display: block;
+ }
+SECTION.elenco.post DIV.log A {
 }
 SECTION.elenco.post DIV.log P {
     margin-top: unset;
