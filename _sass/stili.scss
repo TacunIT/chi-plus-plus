@@ -447,7 +447,7 @@ BODY.manuale HEADER NAV.menu-top A.center {
 }
 BODY.manuale FOOTER {
 }
-BODY.manuale DIV.copertina MAIN {
+BODY.manuale.copertina MAIN {
     text-align: center;
     margin-top: 10vh;
 }
@@ -455,15 +455,21 @@ BODY.manuale DIV.copertina IMG.logo {
     width: 260px;
     display: inline-block;
 }
-BODY.manuale DIV.copertina H1 {
+BODY.manuale.copertina H1 {
     margin-top: 2rem;
     margin-bottom: 0;
     font-size: 3rem;
     color:$colorGold;
 }
-BODY.manuale DIV.copertina H2 {
+BODY.manuale.copertina H2 {
     padding: 0;
     font-size: 1.4rem;
+}
+BODY.manuale.copertina SECTION#info {
+    margin-top: 5rem;
+}
+BODY.manuale.copertina SECTION#info H2 {
+    font-size: 12pt;
 }
 BODY.manuale.dedica MAIN {
     margin: 20vh auto;
