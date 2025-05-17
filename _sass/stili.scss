@@ -293,7 +293,6 @@ NAV A {
 
 HEADER NAV.menu-top A {
     padding: 0.5rem 1.2rem;
-    /* min-width: 5em; */
     color: $colorGold;
 }
 
@@ -416,6 +415,9 @@ BODY.pagina.log H1 {
 
 BODY.pagina.index H1 {
     display: none;
+}
+BODY.pagina.index A {
+    font-weight: bold;
 }
 
 /**
