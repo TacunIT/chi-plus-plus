@@ -1,7 +1,7 @@
 ---
 class:      capitolo
 layout:     manuale
-og_desc:    "I commenti come la letteratura - Un anticipo sui Post-It."
+og_desc:    "I commenti come la letteratura - Un anticipo sui Cookie."
 og_img:     "/assets/img/og-img/commenti.jpg"
 permalink:  /man/commenti
 quote:      "Il Compilatore e il Linker non usano carità, tengono i diecimila oggetti per cani di paglia"
@@ -16,21 +16,21 @@ Un commento è un breve brano di testo che descrive in linguaggio comune il funz
 ```
 /**
  * Funzione per il raddoppio dello stipendio.
- * Richiede come parametro il valore dello 
- * stipendio corrente e ne torna il valore 
+ * Richiede come parametro il valore dello
+ * stipendio corrente e ne torna il valore
  * duplicato.
  */
 long raddoppia(long stipendio)
 {
-    return stipendio * 2;   //  raddoppia il valore 
+    return stipendio * 2;   //  raddoppia il valore
 }
 ```
 
-Pur essendo all'interno del codice, il commento viene ignorato in fase di compilazione, perché è un'aggiunta utile solo al programmatore. 
+Pur essendo all'interno del codice, il commento viene ignorato in fase di compilazione, perché è un'aggiunta utile solo al programmatore.
 Al processore non interessa sapere a cosa serve il codice che sta eseguendo: lo esegue e basta, senza farsi distrarre da implicazioni funzionali &mdash; o, peggio, etiche &mdash; che allungherebbero i tempi di risposta.  
 È importante commentare bene il proprio codice.
 Il buon codice produce programmi che durano nel tempo e, col tempo, si tende a dimenticare.
-Anche se si ha la fortuna di possedere una buona memoria, bisogna considerare la possibilità che il proprio codice sia utilizzato da un collega. 
+Anche se si ha la fortuna di possedere una buona memoria, bisogna considerare la possibilità che il proprio codice sia utilizzato da un collega.
 Non solo non è educato costringerlo ad analizzare ogni singola riga di codice per capirne il funzionamento, ma è anche improduttivo.  
 Così come la penuria, anche l'eccesso di commenti è un errore da evitare.
 Il programmatore inesperto non commenta il proprio codice perché pensa che sia una perdita di tempo. È davvero un atteggiamento poco responsabile.
@@ -69,7 +69,7 @@ Questo tipo di dato può essere utilizzato per uno stipendio che non abbia cifre
 ```
 float raddoppia(float stipendio)
 {
-    return stipendio * 2;   //  raddoppia il valore 
+    return stipendio * 2;   //  raddoppia il valore
 }
 ```  
 Se invece abbiamo definito un nostro tipo di dato dobbiamo modificare solo l'istruzione `typedef`, lasciando tutto il resto invariato:
@@ -90,7 +90,7 @@ scambiarsi una battuta mentre si lavora, ma anche in questo non si deve
 esagerare.
 
 ```
-    case STATE_CR:  // Got CR: look for LF 
+    case STATE_CR:  // Got CR: look for LF
         state = STATE_NORMAL;
         if( ch == LF) {
             continue;
@@ -112,7 +112,7 @@ le due sequenze di caratteri.
 
 ````
 /**
- * Questa sintassi è più comoda per i commenti 
+ * Questa sintassi è più comoda per i commenti
  * che si estendono su più di una riga
  */
 for (int i = 0; i < 10; i++) {
@@ -128,14 +128,14 @@ vera essenza del Linguaggio, è solo una questione di ritmo.
 
 <hr id="dottrina">
 
-I commenti sono un po' come la letteratura: se si scrive troppo poco è male; se si scrive troppo, dilungandosi in descrizioni inutili, è altrettanto sbagliato. 
-Il paragone vale anche all'inverso: i libri, le opere letterarie, sono i commenti al codice della vita. 
+I commenti sono un po' come la letteratura: se si scrive troppo poco è male; se si scrive troppo, dilungandosi in descrizioni inutili, è altrettanto sbagliato.
+Il paragone vale anche all'inverso: i libri, le opere letterarie, sono i commenti al codice della vita.
 Si scrive ciò che si desidera ricordare.  
-Il Maestro Canaro diceva che la cosa più complicata, dello scrivere un manuale, è che, alle volte, per spiegare un determinato concetto, hai bisogno di spiegare prima un altro concetto, che però non può essere compreso se non si capisce il primo. 
+Il Maestro Canaro diceva che la cosa più complicata, dello scrivere un manuale, è che, alle volte, per spiegare un determinato concetto, hai bisogno di spiegare prima un altro concetto, che però non può essere compreso se non si capisce il primo.
 Questo è uno di quei momenti.
-Il corrispettivo dei commenti, nel C'hi++ sono quelli che il Maestro Canaro chiamava i <i>Post-It</i>, ovvero una sorta di memoria di massa dell'Universo in cui è salvato il ricordo delle scelte fatte dagli esseri senzienti in ogni ciclo di esistenza. 
-Io, però, non posso parlarti adesso dei *Post-It*, perché prima dovrei prima spiegarti, se non altro, cosa sono i “cicli di esistenza” e, per il momento, è prematuro farlo.
-Rimando perciò la trattazione dei *Post-It* a <a href="/man/istruzioni-iterative#post-it" class="xref">un secondo momento</a> e ti racconto invece un aneddoto sul Maestro Canaro che riguarda proprio i commenti al codice.  
+Il corrispettivo dei commenti, nel C'hi++ sono quelli che il Maestro Canaro chiamava i <i>Cookie</i>, ovvero una sorta di memoria di massa dell'Universo in cui è salvato il ricordo delle scelte fatte dagli esseri senzienti in ogni ciclo di esistenza.
+Io, però, non posso parlarti adesso dei *Cookie*, perché prima dovrei prima spiegarti, se non altro, cosa sono i “cicli di esistenza” e, per il momento, è prematuro farlo.
+Rimando perciò la trattazione dei *Cookie* a <a href="/man/istruzioni-iterative#cookie" class="xref">un secondo momento</a> e ti racconto invece un aneddoto sul Maestro Canaro che riguarda proprio i commenti al codice.  
 Una volta, il maestro Canaro mostrò ai suoi allievi un brano di codice e gli chiese di spiegare che cosa facesse:
 
 ```
