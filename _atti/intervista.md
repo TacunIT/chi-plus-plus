@@ -1,12 +1,35 @@
-
+<script>
+H1 { color: red }
+</script>
 
 # C'hi++ - Il senso della vita è il *debug*
 
 ## Presentazione
 
-AT - Buongiorno e benvenuti all'ascolto di *A livello cultura*, la rubrica di informazione libraria di Radio Coscialunga. Io sono Aldo Torrido e l'ospite di oggi è Carlo Simonelli, autore del libro: *Chi++, il senso della vita è il debug*. Buongiorno, Carlo.
+<label>Aldo Torrido</label> 
+*Buongiorno e benvenuti all'ascolto di: “A livello cultura”, la rubrica di informazione libraria di Radio Coscialunga. Io sono Aldo Torrido e l'ospite di oggi è Carlo Simonelli, autore del libro: “Chi++, il senso della vita è il debug”. Buongiorno, Carlo.*
 
-CS - B
+<label>Carlo Simonelli</label> 
+Buongiorno, Aldo e grazie di avermi invitato. Il titolo del libro, però, è: *C'hi++*, con la "C" morbida. È un gioco di parole fra il termine giapponese *C'hi*, che vuol dire: *soffio vitale* e il nome del linguaggio di programmazione chiamato *C++*.
+
+<label>AT</label> 
+*Capisco. E di cosa parla, il suo libro?*
+
+<label>CS</label> 
+È un manuale di programmazione, ma allo stesso tempo anche un libro di filosofia che cerca di spiegare il senso della Vita.
+
+<label>AT</label> 
+*Non le nascondo che sono stupito: come mai, questo accostamento, diciamo così.. inusuale?*
+
+<label>CS</label> 
+In effetti non è poi così inusuale: i linguaggi di programmazione sono il modo in cui noi esseri umani colloquiamo con i computer, mentre la metafisica è il modo in cui ci mettiamo in relazione con la divinità e molto spesso i principii che valgono in un àmbito possono essere utilizzati anche nell’altro.
+Per esempio, il caricamento dei programmi nella memoria del computer può essere paragonato al Ciclo delle Rinascite delle religioni orientali, mentre le classi del C++ rispecchiano i concetti aristotelici di *universale* e *sostanza*.  
+
+<label>AT</label> 
+
+
+<label>CS</label> 
+
 
 <!--
 
