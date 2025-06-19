@@ -324,51 +324,33 @@ Che mercato potevo aspettarmi che avesse, un libro di programmazione che parla a
 *Almeno su una cosa, siamo d'accordo.*
 
 <label>CS</label>
-La ragione che mi ha spinto a valutare la via della pubblicazione è l'incredibile successo che ha avuto il Congresso Mondiale di Filosofia che si è tenuto la scorsa estate a Roma; e, in particolare, il fatto che uno dei relatori principali fosse anche il CEO di una delle nostre maggiori aziende informatiche.  
+La ragione che mi ha spinto a valutare la via della pubblicazione è l'incredibile successo che ha avuto il Congresso Mondiale di Filosofia che si è tenuto la scorsa estate qui a Roma; e, in particolare, il fatto che uno dei relatori principali fosse anche il CEO di una delle nostre maggiori aziende informatiche.  
 Quindi ho rivisto il testo, limando quello che mi era sfuggito durante il primo giro di bozze e intendo inviarlo ad alcuni editori italiani.
+Il grosso problema, in questa fase, è stato redigere una presentazione del testo.
 
+<label>AT</label>
+*Perché*
+
+<label>CS</label>
+Lo ha detto lei poco fa: un Maestro d'Arte che scrive un libro di programmazione nel quale si parla di filosofia e di fisica è quanto meno sospetto. 
+Ho scritto almeno quattro presentazioni diverse e nessuna mi convinceva, perché erano troppo serie.
+*C'hi++* non è un libro “serio”, che ne so, come i *Prolegomeni* di Kant: è la storia di un'idea nata per gioco e che, incredibilmente, funziona molto bene. 
+Dovevo trovare un modo per far capire questa caratteristica del testo e ho pensato che un'intervista potesse essere la soluzione adatta.
+
+<label>AT</label>
+*Così, ha corrotto la mia redattrice..*
+
+<label>CS</label>
+Precisamente.
+*For the grater good*.
+
+<label>AT</label>
+*Va bene, la nostra trasmissione termina qui. Vi ringraziamo per averci seguiti e vi diamo appuntamento alla prossima settimana con il libro: “Ha da veni', Baffone! - Storia di una concubina di Stalin”, di Rose Selavy. A risentirci.*
+
+### Fuori onda
 
 <label>AT</label>
 **
 
 <label>CS</label>
 
-<label>AT</label>
-**
-
-<label>CS</label>
-
-<label>AT</label>
-**
-
-<label>CS</label>
-
-<label>AT</label>
-**
-
-<label>CS</label>
-
-
-<!--
- Iniziai la stesura dei primi capitoli nel 2009, ma fu solo durante la pandemia del 2020 che riuscii a trovare il tempo per completare il lavoro che avevo iniziato.
-
-## Conclusioni
-
-Trent'anni fa non mi sarei fatto un simile scrupolo, perché la maggior parte degli informatici combinava competenze tecniche con interessi umanistici, ma oggi le cose sono drasticamente cambiate: legge libri solo il 40% degli Italiani sopra i sei anni e, di questi, quasi la metà non va oltre i tre libri l'anno.
-Che mercato potevo aspettarmi che avesse, un libro di programmazione che parla anche del senso della vita?  
-La ragione che mi ha spinto a valutare la via della pubblicazione è il buon successo che ha avuto il Congresso Mondiale di Filosofia, tenutosi questa estate a Roma; in particolare, il fatto che uno dei relatori principali fosse anche il CEO di una delle nostre maggiori aziende informatiche.  
-Sto quindi rivedendo il testo, limando quello che mi era sfuggito durante il primo giro di bozze, poi lo invierò ad alcuni editori italiani.
-Il passo successivo sarà di tradurre il testo in Inglese e di tentare la pubblicazione su mercati esteri.   
-Grazie per aver letto fin qui.  
-
-## Conclusioni
-
-Ho chiuso la prima revisione del testo il 5 Febbraio 2023, ma non ho ancora inviato *C'hi++* a nessun editore perché ero convinto che un libro così non avesse un pubblico.
-Trent'anni fa non mi sarei fatto un simile scrupolo, perché la maggior parte degli informatici combinava competenze tecniche con interessi umanistici, ma oggi le cose sono drasticamente cambiate: legge libri solo il 40% degli Italiani sopra i sei anni e, di questi, quasi la metà non va oltre i tre libri l'anno.
-Che mercato potevo aspettarmi che avesse, un libro di programmazione che parla anche del senso della vita?  
-La ragione che mi ha spinto a valutare la via della pubblicazione è il buon successo che ha avuto il Congresso Mondiale di Filosofia, tenutosi questa estate a Roma; in particolare, il fatto che uno dei relatori principali fosse anche il CEO di una delle nostre maggiori aziende informatiche.  
-Sto quindi rivedendo il testo, limando quello che mi era sfuggito durante il primo giro di bozze, poi lo invierò ad alcuni editori italiani.
-Il passo successivo sarà di tradurre il testo in Inglese e di tentare la pubblicazione su mercati esteri.   
-Grazie per aver letto fin qui.  
-
--->
