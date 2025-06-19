@@ -21,6 +21,7 @@ Sfortunatamente, però, quando all'inizio di Ottobre sono riuscito a terminare l
 Così com'è successo con lo Scirocco dei giorni scorsi, anche se Calasso non c'è più, le onde che ha generato viaggeranno ancora a lungo.
 
 ---
+
 -->
 
 Da un punto di vista letterario, la gestazione di *C'hi++* iniziò a metà degli anni '80, quando acquistai il
