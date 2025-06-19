@@ -9,6 +9,7 @@ status:     pubblicato
 title:      "Bi(bli)ografia"
 ---
 
+<!--
 Questo libro è (anche) colpa di Roberto Calasso e di Adelphi.  
 Cinque anni fa, quando feci leggere a un mio amico i primi capitoli, lui mi disse:
 
@@ -20,12 +21,13 @@ Sfortunatamente, però, quando all'inizio di Ottobre sono riuscito a terminare l
 Così com'è successo con lo Scirocco dei giorni scorsi, anche se Calasso non c'è più, le onde che ha generato viaggeranno ancora a lungo.
 
 ---
+-->
 
-Da un punto di vista letterario, la gestazione di *C'hi++* iniziò a metà degli anni '80, quando acquistai il 
-*Vijnanabhairava* e 
+Da un punto di vista letterario, la gestazione di *C'hi++* iniziò a metà degli anni '80, quando acquistai il
+*Vijnanabhairava* e
 *Lo Zen e il tiro con l'arco*.
 Non sapevo nulla di Zen, all'epoca, li comprai, quasi per scherzo, perché mi avevano incuriosito i titoli.   
-Leggendo l'introduzione del primo, scoprii che, nel VII secolo, c'era stata una diatriba fra due delegazioni di filosofi buddisti per derimere una controversia sulle modalità di raggiungimento dell'Illuminazione e che, al termine del convegno, gli sconfitti commisero suicidio rituale: 
+Leggendo l'introduzione del primo, scoprii che, nel VII secolo, c'era stata una diatriba fra due delegazioni di filosofi buddisti per derimere una controversia sulle modalità di raggiungimento dell'Illuminazione e che, al termine del convegno, gli sconfitti commisero suicidio rituale:
 
 > chi tagliandosi a pezzi, chi recidendosi i genitali, chi bruciandosi
 
@@ -33,22 +35,22 @@ Il testo, però, era più complicato di qunto mi aspettassi, così lo abbandonai
 Il libro di Herrigel, al contrario, lo lessi tutto e mi piacque al punto che cominciai a tirare con l'arco.  
 
 All'inizio degli anni '90, il mio amico Wayne Martini mi regalò
-*Lo Zen e l’arte della manutenzione della motocicletta* dicendo: “Read it. It changed my life”. 
+*Lo Zen e l’arte della manutenzione della motocicletta* dicendo: “Read it. It changed my life”.
 Io pensai: “Sempre esagerati, 'sti americani!”, ma, come spesso accade, mi sbagliavo: il libro di Pirsig &mdash; letto proprio nel momento in cui  cominciava la mia storia d'amore con i computer &mdash; cambiò anche la mia vita e mi spinse ad approfondire la conoscenza del Buddismo Zen.
 
 In *101 Storie Zen*, scoprii che l'origine della favola del *Cavallo Fuggito*, riportata da Calvino nelle sue *Fiabe Italiane* era tutt'altro che italiana, mentre ne *La Porta Senza Porta* mi colpì il Koan *Nansen taglia a metà il gatto* perché non riuscivo a capire con che diritto l'esponente di una religione che predica la benevolenza tagliasse a metà un gatto, a scopo puramnte didattico.
-Ci avrei messo poco più di dieci anni, a capirlo. 
+Ci avrei messo poco più di dieci anni, a capirlo.
 
 <p class="centrato"><img src="/assets/img/nansen-taglia-il-gatto.jpg" alt="Nansen taglia il gatto" /></p>
 
-Nel frattempo, grazie al tiro con l'arco, ero diventato amico di Claudio Munisso, con cui, nel 1995, scrissi un manuale di programmazione in C e C++. 
-Lui scrisse la parte relativa al linguaggio C, io quella sul C++. 
-La struttura dei capitoli del manuale era mutuata da quella di 
+Nel frattempo, grazie al tiro con l'arco, ero diventato amico di Claudio Munisso, con cui, nel 1995, scrissi un manuale di programmazione in C e C++.
+Lui scrisse la parte relativa al linguaggio C, io quella sul C++.
+La struttura dei capitoli del manuale era mutuata da quella di
 *“Gödel, Escher, Bach: un’Eterna Ghirlanda Brillante”*, di Douglas Hofstadter, con una premessa narrativa che introduceva il testo tecnico.  
 
 > Un giorno il Professore entrò nel bar ed io, come sempre, mi recai al suo tavolo per prenderne l’ordinazione, ma prima ancora che potessi parlare, lui mi disse di essere in attesa di due amici, il signor C. ed il signor D., e che per ordinare avrebbe atteso il lo­ro arrivo. Questi suoi amici, mi spiegò poi, dovevano arrivare in auto dall’altra parte della città. Entrambi sapevano guidare ed entrambi avevano uno stradario, ma C. aveva un piccolo problema: non riusciva ad elaborare dei percorsi stradali se non nei termini propri della guida di un’automobile.  
 
-All'inizio di ogni capitolo c'era una citazione; quelle dei capitoli che scrissi io, non me le ricordo, mentre ricordo molto bene due frasi scelte da Claudio, perché mi spinsero a leggere i due autori citati. 
+All'inizio di ogni capitolo c'era una citazione; quelle dei capitoli che scrissi io, non me le ricordo, mentre ricordo molto bene due frasi scelte da Claudio, perché mi spinsero a leggere i due autori citati.
 Una era di *Meister Eckhart*:
 
 > Sottrai la mente e l’occhio resterà aperto senza scopo
