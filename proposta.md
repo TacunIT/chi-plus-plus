@@ -379,7 +379,7 @@ la memoria degli eventi passati:<br />
 
 > Il quarto dogma si discosta dai tre dogmi principali perché è l’unico che richiede una certa dose di fede. (...)
 In parole povere: cos’è quello che comunemente chiamiamo: “istinto” e che Jung, se non ho capito male (probabile) definisce: “inconscio collettivo”?
-Non ho una risposta certa a questa domanda, ma solo un’ipotesi: Post-it.
+Non ho una risposta certa a questa domanda, ma solo un’ipotesi: Cookie.
 Promemoria che noi, nel corso delle nostre precedenti esistenze, abbiamo appiccicato da qualche parte, per ricordarci di fare o di non fare qualcosa.
 Una sorta di memoria persistente, esterna, o comunque non soggetta ai cicli di rinascita dell’Universo.
 Se l’Universo fosse un computer, potremmo pensare a tutto ciò che esiste come a un programma che “gira” in memoria e all’istinto (o all’immaginario collettivo) come a qualcosa scritto invece sul disco rigido.
@@ -500,7 +500,7 @@ Nei capitoli seguenti, sarà descritto il linguaggio C++, facendo dei paralleli 
 Riporto di seguito alcuni esempi, anche si tratta ancora di appunti e non di un testo definitivo:
 
 #### Commenti al codice
-Affinità con i *Post-it* di cui parlavo prima, una sorta di memoria storica dell'Universo:
+Affinità con i *Cookie* di cui parlavo prima, una sorta di memoria storica dell'Universo:
 
 > Esistono, dei commenti, nell'Universo? Qualcosa che ci permetta, da un'esecuzione e l'altra, di tenere traccia di ciò che è successo nelle esecuzioni precedenti?
 
@@ -602,7 +602,7 @@ La sequenza vista sopra, riletta in chiave spazionista, diventa:
 
 1. l'Uno Primigenio esplode a causa<a href="#causa" class="nota" name="fn-15">15</a> di una Forza che ne disperde l'Energia nello spazio;
 2. l'Energia si spande per l'Universo e, conferendo massa/esistenza agli spazioni con cui viene a contatto, costituisce gli elementi gassosi, liquidi e solidi che noi conosciamo, dalle nebulose di *Wolf–Rayet* alla nostra maestra delle Elementari;
-4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante<a href="#variante" class="nota" name="fn-16">16</a> della Storia, che a sua volta genererà nuove esperienze e nuovi *Post-It*;
+4. sulla base delle esperienze precedenti, si ripetono le scelte che hanno dato esito positivo e si evitano le scelte che hanno dato esito negativo, generando una nuova variante<a href="#variante" class="nota" name="fn-16">16</a> della Storia, che a sua volta genererà nuove esperienze e nuovi *Cookie*;
 4. l'Energia, però, in ossequio a Poe e al terzo dogma del C'hi++, tende naturalmente a ricompattarsi nell'Uno e quindi a un certo punto il movimento si inverte e l'Universo comincia a contrarsi fino a ricostituire l'Uno;
 5. tutto ricomincia daccapo.
 
@@ -715,7 +715,7 @@ sul dualismo Gravità/Entropia :
 
 > {{ site.data.citazioni.gita.dualismo }}
 
-su quelli che io ho definito i *Post-It*:
+su quelli che io ho definito i *Cookie*:
 
 > {{ site.data.citazioni.gita.vasana }}
 
@@ -898,7 +898,7 @@ Mi sembra un motivo più che sufficiente.
             <a href="#fn-10" name="mumon">&#8617;</a>
         </li>
         <li>
-           Grazie a un “imprintig karmico” che io qui chiamo <i>Post-it</i> e che Yoga e Buddismo chiamano <i>Vāsanā</i>.
+           Grazie a un “imprintig karmico” che io qui chiamo <i>Cookie</i> e che Yoga e Buddismo chiamano <i>Vāsanā</i>.
             <a href="#fn-11" name="vasana">&#8617;</a>
         </li>
         <li>
