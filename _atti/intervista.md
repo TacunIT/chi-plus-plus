@@ -8,14 +8,19 @@ H1 { color: red }
 
 <blockquote class="esergo">
 Per primo nacque il Caos. Poi la Terra dall’ampio seno, sede di tutti gli dèi che hanno in possesso le cime nevose d’Olimpo. Poi, nei baratri della vasta Terra, il buio Tàrtaro; e Amore, ch’è il più bello fra i Celesti, che dissipa ogni cura degli uomini e degli dèi, doma ogni volontà e ogni accorto consiglio.<br />
-<span>Esiodo</span>, Teogonia (citato da <span>C. Rovelli </span>, Che cos'è la scienza: La rivoluzione di Anassimandro)
+<span>Esiodo</span>, Teogonia (citato da <span>Carlo Rovelli </span>, Che cos'è la scienza: La rivoluzione di Anassimandro)
+</blockquote>
+
+<blockquote class="esergo">
+Why so serious?
+<span>The Joker</span> (citato da <span>Peter Sagan </span> in un tatuaggio sul suo fianco destro)
 </blockquote>
 
 <label>Aldo Torrido</label>
 *Buongiorno e benvenuti all'ascolto di: “A livello cultura”, la rubrica di informazione libraria di Radio Coscialunga. Io sono Aldo Torrido e l'ospite di oggi è Carlo Simonelli, autore del libro: “Chi++, il senso della vita è il debug”. Buongiorno, Carlo.*
 
 <label>Carlo Simonelli</label>
-Buongiorno, Aldo e grazie di avermi invitato. Il titolo del libro, però, è: *C'hi++*, con la "C" morbida. È un gioco di parole fra il termine giapponese *C'hi*, che vuol dire: *soffio vitale* e il nome del linguaggio di programmazione chiamato *C++*.
+Buongiorno, Aldo e grazie di avermi invitato. Il titolo del libro, però, è: *C'hi++*, con la "C" morbida. È un gioco di parole fra il termine cinese *C'hi*, che vuol dire: “soffio vitale” e il nome del linguaggio di programmazione chiamato *C++*.
 
 <label>AT</label>
 *Capisco. E di cosa parla, il suo libro?*
@@ -35,7 +40,7 @@ Per esempio, il caricamento dei programmi nella memoria del computer può essere
 *E come concilia, questi due aspetti narrativi? da un lato tecnocrate, dall'altro mistico?*
 
 <label>CS</label>
-Il libro si ispira al “Libro dei Cinque Anelli”, di Miyamoto Musashi e ha la forma del dialogo: all'interno di un monastero, un vecchio maestro insegna a un giovane discepolo i principii della programmazione in C++ e - parallelamente - lo inizia ai misteri del *C'hi++*, una metafisica definita anni addietro dal fondatore del loro Ordine, il mitologico Maestro Canaro, che era stato incaricato da Dio di riscrivere in C++ l'applicazione che fa funzionare l'Universo.  
+Il testo si ispira al “Libro dei Cinque Anelli”, di Miyamoto Musashi e ha la forma del dialogo: all'interno di un monastero, un vecchio maestro insegna a un giovane discepolo i principii della programmazione in C++ e - parallelamente - lo inizia ai misteri del *C'hi++*, una metafisica definita anni addietro dal fondatore del loro Ordine, il mitologico Maestro Canaro, che era stato incaricato da Dio di riscrivere in C++ l'applicazione che fa funzionare l'Universo.  
 
 <label>AT</label>
 *Mi perdoni, ma a questo punto la domanda sorge spontanea: chi ha corrotto, della mia redazione, per essere invitato qui oggi?*
@@ -142,10 +147,10 @@ Ero in bagno, la mattina, e avevo appena finito di leggere un saggio di Ananda C
 Sì.
 
 <label>AT</label>
-*Lei, al bagno, legge saggi su Tempo ed Eternità.*
+*Lei, al bagno, legge saggi su Tempo ed Eternità?*
 
 <label>CS</label>
-Sì: di solito, la mattina leggo i libri di saggistica, a mente fresca e di sera leggo i libri di narrativa.
+Sì: di solito, la mattina, a mente fresca, leggo i libri di saggistica, menrte di sera leggo i libri di narrativa.
 Per esempio, in questi giorni sto leggendo un libro di Carlo Rovelli su Anassimandro.
 
 <label>AT</label>
@@ -194,12 +199,12 @@ Comunque: ci ragionai su per un po' di tempo e dopo alcuni anni di studio “ecl
 
 <label>CS</label>
 Per risponderle, devo prima spiegarle cosa sostiene lo Spazionismo.
-L'idea è che l'Universo abbia un'esistenza ciclica, fatta di espansioni e contrazioni: quando - come in questo momento - è preponderante l’Entropia, l’Universo si espande; quando “vince” la Gravità, l’Universo collassa su sé stesso e torna all’Uno.
+L'idea è che l'Universo abbia un'esistenza ciclica, fatta di espansioni e contrazioni.
 All'inizio di ogni ciclo, l'Energia è contenuta tutta in uno stesso punto dalla Gravità.
 A un certo punto però, sotto la spinta dell'Entropia, un nuovo *Big Bang* la disperde per l'Universo irradiando gli spazioni e generando una nuova “versione” dell'Universo.
 
 <label>AT</label>
-*Uguale alla precedente o diversa?*
+*Le diverse.. “versioni” - come le chiama lei - dell'Universo, sono tutte uguali?*
 
 <label>CS</label>
 È irrilevante: dato un tempo infinito, per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali, è impossibile che la cosa o prima o poi non avvenga.
@@ -209,7 +214,7 @@ Dopo il *Big Bang*, l'Universo si espande fino a che la Gravità non riacquista 
 *E questo, come sarebbe compatibile con le religioni canoniche?*
 
 <label>CS</label>
-Be', per esempio, l'Induismo prevede sia dei cicli cosmici, i *Manvantara*, che due principii, chiamati *Prakṛti* e *Puruṣa*, che interagendo fra loro manifestano tutto l'Universo con gli esseri che lo popolano.
+Be', per esempio, l'Induismo prevede sia dei cicli cosmici - i *Manvantara* - sia due principii, chiamati *Prakṛti* e *Puruṣa*, che interagendo fra loro manifestano tutto l'Universo con gli esseri che lo popolano.
 Anche la Genesi biblica può essere considerata un’allegoria della cosmogonia spazionista: il Paradiso è l’Uno primigenio, Adamo è la Gravità mentre Eva è l'Energia.
 Il Diavolo - che deriva da Greco *διάβολος*, ovvero: *colui che separa* - è l'Entropia, che causa la disgregazione dell'Uno, generando un Universo imperfetto e doloroso.
 
@@ -225,7 +230,7 @@ Non secondo la setta dei Barbelognostici e comunque questo precetto è quello ch
 
 <label>CS</label>
 Sì, perché per lo Spazionismo non c'è una forza buona e una cattiva, ma entrambe sono ugualmente necessarie per il corretto funzionamento dell'Universo, così come le masse di aria calda e fredda nella circolazione atmosferica.
-C'è solo un problema: che se non introduciamo alcun elemento metafisico, l'Universo è *stateless*.
+C'è solo un problema: che se non introduciamo nella dottrina alcun elemento metafisico, l'Universo è *stateless*.
 
 <label>AT</label>
 *Prego?*
@@ -270,7 +275,7 @@ Come ho scritto nell'Introduzione del testo, se vogliamo che i giovani, sui mezz
 <label>CS</label>
 Precisamente.
 Così come il linguaggio `C++` è un'evoluzione del linguaggio `C`, il C'hi++ è un'evoluzione dello Spazionismo, a cui aggiunge due dogmi e un numero minimo di elementi metafisici per dare un senso all'Esistenza.
-Il primo dogma, riguarda ovviamente la ciclicità dell'Universo: Uno, *Big-Bang*, espansione, contrazione, *Big-Crunch*.
+Il primo dogma, riguarda ovviamente la ciclicità dell'Universo..
 
 <label>AT</label>
 *Ovviamente..*
@@ -278,7 +283,7 @@ Il primo dogma, riguarda ovviamente la ciclicità dell'Universo: Uno, *Big-Bang*
 <label>CS</label>
 Il secondo dogma è l'esistenza di una memoria persistente dell’Universo che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione e contrazione; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo.
 Oltre questi due dogmi, il C'hi++ definisce due Enti meta-fisici: l'*Annosa Dicotomia* e l'Amore.
-L'*Annosa Dicotomia* (fra ciò che desideriamo e ciò di cui abbiamo bisogno) è la forza che spinge a compiere scelte in base a motivazioni contingenti, di cui quasi sempre ci si pente.
+L'*Annosa Dicotomia* (fra ciò che desideriamo e ciò di cui abbiamo bisogno) è la forza che spinge a compiere scelte in base a motivazioni personali e contingenti, di cui quasi sempre ci si pente.
 L'*Amore* è la forza con cui l'Universo spinge gli esseri viventi ad assolvere al loro *Dharma*; una sorta di una bomba a tempo inserita nel nostro “firmware”, per farci fare la cosa giusta quando arriverà il  momento.    
 
 <label>AT</label>
@@ -316,7 +321,7 @@ Ho iniziato la stesura dei primi capitoli nel 2009, ma è stato solo durante la 
 
 <label>CS</label>
 Sì; anche qui, malgrado il suo sarcasmo.
-Ho completato la prima revisione del testo a Febbraio del 2023, ma non ho ancora inviato *C'hi++* a nessun editore perché non sapevo dire che pubblico potesse avere un libro come questo.
+Ho completato la prima revisione del testo a Febbraio del 2023, ma non avevo ancora inviato *C'hi++* a nessun editore perché non sapevo che pubblico potesse avere avere un libro come questo.
 Trent'anni fa, non mi sarei fatto un simile scrupolo, perché la maggior parte degli informatici combinava competenze tecniche con interessi umanistici, ma oggi le cose sono drasticamente cambiate: legge libri solo il 40% degli Italiani sopra i sei anni e, di questi, quasi la metà non va oltre i tre libri l'anno.
 Che mercato potevo aspettarmi che avesse, un libro di programmazione che parla anche del senso della vita?  
 
@@ -329,12 +334,12 @@ Quindi ho rivisto il testo, limando quello che mi era sfuggito durante il primo 
 Il grosso problema, in questa fase, è stato redigere una presentazione del testo.
 
 <label>AT</label>
-*Perché*
+*Perché?*
 
 <label>CS</label>
 Lo ha detto lei poco fa: un Maestro d'Arte che scrive un libro di programmazione nel quale si parla di filosofia e di fisica è quanto meno sospetto. 
 Ho scritto almeno quattro presentazioni diverse e nessuna mi convinceva, perché erano troppo serie.
-*C'hi++* non è un libro “serio”, che ne so, come i *Prolegomeni* di Kant: è la storia di un'idea nata per gioco e che, incredibilmente, funziona molto bene. 
+*C'hi++* non è un libro “serio” - che so - come i *Prolegomeni* di Kant: è la storia di un'idea nata per gioco e che, incredibilmente, funziona molto bene. 
 Dovevo trovare un modo per far capire questa caratteristica del testo e ho pensato che un'intervista potesse essere la soluzione adatta.
 
 <label>AT</label>
@@ -345,12 +350,5 @@ Precisamente.
 *For the grater good*.
 
 <label>AT</label>
-*Va bene, la nostra trasmissione termina qui. Vi ringraziamo per averci seguiti e vi diamo appuntamento alla prossima settimana con il libro: “Ha da veni', Baffone! - Storia di una concubina di Stalin”, di Rose Selavy. A risentirci.*
-
-### Fuori onda
-
-<label>AT</label>
-**
-
-<label>CS</label>
+*Va bene, la nostra trasmissione termina qui. Vi ringraziamo per averci seguiti e vi diamo appuntamento alla prossima settimana con il libro: “Ha da veni', Baffone! - Memorie di una concubina di Stalin”, di Valechka Istomina. A risentirci.*
 
