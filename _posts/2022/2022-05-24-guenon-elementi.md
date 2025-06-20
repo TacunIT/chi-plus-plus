@@ -34,7 +34,7 @@ Induismo | Spazionismo
 --|--  |  
  Prakriti |  Energia dell'Universo
  Purusha  |  Spazioni
- Buddhi   |  Memoria di massa dell'Universo, dove si registrano i Post-it
+ Buddhi   |  Memoria di massa dell'Universo, dove si registrano i Cookie
  Sattwa   |  Gravità
  Rajas    |  Entropia
  Tamas    |  Annosa Dicotomia (?)
