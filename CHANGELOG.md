@@ -1,3 +1,7 @@
+## 1.2.1 (June 20, 2025)
+  - Completata prima stesura dell'intervista
+  - Commentato paragrafo su Calasso nella Bibliografia; sembra una sviolinata interessata
+
 ## 1.2.0 (May 17, 2025)
   - Modificato testo dell'introduzione
   - Aggiunte informazioni per navigazione nel manuale
