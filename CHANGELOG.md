@@ -1,3 +1,7 @@
+## 1.3.0 (June 20, 2025)
+  - Corretto refuso in un post
+  - Rinominati i Post-it in Cookie nei testi non proto-chiplusplus
+
 ## 1.2.1 (June 20, 2025)
   - Completata prima stesura dell'intervista
   - Commentato paragrafo su Calasso nella Bibliografia; sembra una sviolinata interessata
