@@ -584,7 +584,7 @@ O sul dualismo Gravità/Entropia :
 
 > {{ site.data.citazioni.gita.dualismo }}
 
-O su quelli che lui definiva: i *Post-It*:
+O su quelli che lui definiva: i *Cookie*:
 
 > {{ site.data.citazioni.gita.vasana }}
 

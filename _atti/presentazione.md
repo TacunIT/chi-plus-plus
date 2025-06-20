@@ -52,11 +52,11 @@ Il primo dogma del C'hi++, necessario per garantire coerenza interna alla dottri
 
 > Ai fedeli è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (...) che ci sarà un momento in cui l’espansione dell’Universo terminerà e che tutto ciò che esiste tornerà a riunirsi nell’Uno primigenio
 
-La seconda accettazione per fede richiesta dal C’hi++ è l'esistenza di quelli che il Maestro chiama *I Post-It*, ovvero:
+La seconda accettazione per fede richiesta dal C’hi++ è l'esistenza di quelli che il Maestro chiama *I Cookie*, ovvero:
 
 > una memoria persistente dell’Universo che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione e contrazione; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo:
 
-Grazie ai *Post-It*, l'Universo “ricorda” ciò che è successo nei precedenti cicli di esistenza e, in base a questa conoscenza, può ripetere scelte che si sono dimostrate positive o cambiare quelle che hanno dato esiti fallimentari[^umani], in un'eterna ricerca della perfezione, che per il C'hi++ è il senso dell'Esistenza.    
+Grazie ai *Cookie*, l'Universo “ricorda” ciò che è successo nei precedenti cicli di esistenza e, in base a questa conoscenza, può ripetere scelte che si sono dimostrate positive o cambiare quelle che hanno dato esiti fallimentari[^umani], in un'eterna ricerca della perfezione, che per il C'hi++ è il senso dell'Esistenza.    
 Oltre questi due dogmi, il C'hi++ definisce due enti meta-fisici: l'*Annosa Dicotomia* e l'Amore.
 L'*Annosa Dicotomia* (fra ciò che desideriamo e ciò di cui abbiamo bisogno) è la forza che spinge a compiere scelte in base a motivazioni contingenti, di cui quasi sempre ci si pente[^annosa].
 L'*Amore* è la forza con cui l'Universo spinge gli esseri viventi ad assolvere al loro *dharma*; una sorta di una bomba a tempo inserita nel nostro “firmware”, per spingerci a fare la cosa giusta quando arriverà il  momento.[^amore]    

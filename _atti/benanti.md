@@ -48,9 +48,9 @@ Annichiliti per annichiliti, tanto valeva godersi la vita finché possibile, fre
 ## Il maldestro libro di filosofia
 
 Ho deciso di scrivere *C'hi++* per mettere ordine nello *gnommero* di idee prodotto in me da anni di studio *eclettico e confuso* (come direbbe Rodari); ho scelto di inserire le mie teorie in un manuale di programmazione perché pensavo che questo - essendo la programmazione e la metafisica due modi di descrivere realtà diverse da quelle che percepiamo con i sensi - avrebbe reso più facile la spiegazione di alcuni concetti[^ssl].  
-Così come il linguaggio `C++` è una evoluzione del linguaggio chiamato `C`, a cui aggiunge le funzioni proprie della programmazione a oggetti, il *C'hi++* è un'evoluzione dello Spazionismo, a cui aggiunge un elemento metafisico chiamato *I Post-It*[^post-it], ovvero una memoria persistente dell'Universo che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione e contrazione.
+Così come il linguaggio `C++` è una evoluzione del linguaggio chiamato `C`, a cui aggiunge le funzioni proprie della programmazione a oggetti, il *C'hi++* è un'evoluzione dello Spazionismo, a cui aggiunge un elemento metafisico chiamato *I Cookie*[^Cookie], ovvero una memoria persistente dell'Universo che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione e contrazione.
 L'introduzione di questo elemento rende *stateful* le diverse permutazioni *stateless* dello Spazionismo e permette di ipotizzare, in linea con il sotto-titolo del libro, che l'esistenza sia una continua ricerca della perfezione.
-Grazie ai *Post-It*, infatti, gli esseri senzienti possono ricordare ciò che è successo nei precedenti cicli di esistenza e, in base a questa conoscenza, possono ripetere scelte che si sono dimostrate positive o modificare quelle che hanno dato esiti fallimentari[^goedel].   
+Grazie ai *Cookie*, infatti, gli esseri senzienti possono ricordare ciò che è successo nei precedenti cicli di esistenza e, in base a questa conoscenza, possono ripetere scelte che si sono dimostrate positive o modificare quelle che hanno dato esiti fallimentari[^goedel].   
 
 
 ## Conclusioni
@@ -101,7 +101,7 @@ Roma, Gennaio 2025.
   
 [^ssl]: Per esempio, la questione della giustificazione di un giudizio morale in base a una teoria preesistente, di cui ho letto sul vostro libro nei giorni scorsi, è assimilabile all'emissione dei certificati SSL da parte delle *Certification Authority*.  https://chiplusplus.org/man/operatori#dottrina
 
-[^post-it]: Ma sto pensando di rinominarlo *I Cookies*, che è più appropriato.
+[^Cookie]: Ma sto pensando di rinominarlo *I Cookies*, che è più appropriato.
 
 [^goedel]: Ho sempre pensato che questo sia l'equivalente, per il *C'hi++*, del *Teorema di Incompletezza* di Goedel, dato che potrebbe permettere la giustificazione della Shoah in base al presupposto che i nazisti hanno sterminato gli Ebrei perché, in altre linee temporali, uno di loro aveva causato danni all'Umanità. Sto cercando un modo per evitarlo, ma a oggi non so come.
 
