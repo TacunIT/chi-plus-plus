@@ -324,18 +324,18 @@ typedef struct {
 } PostIt ;
 ```
 
-<span id="post-it">Il secondo dogma del C'hi++</span> è l'esistenza di una memoria persistente dell'Universo che mantiene traccia dell'esito delle scelte fatte in ciascun ciclo; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo:
+<span id="cookie">Il secondo dogma del C'hi++</span> è l'esistenza di una memoria persistente dell'Universo che mantiene traccia dell'esito delle scelte fatte in ciascun ciclo; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo:
 
 > {{ site.data.citazioni.gita.vasana }}<a class="nota" href="/man/note#fn-vasana" id="vasana">3</a>
 
-I *Post-It*, come li chiamava il Maestro Canaro, non sono indispensabili per il C'hi++, sono solo un'auspicio, perché la loro esistenza dà un senso alla nostra vita.
+I *Cookie*, come li chiamava il Maestro Canaro, non sono indispensabili per il C'hi++, sono solo un'auspicio, perché la loro esistenza dà un senso alla nostra vita.
 Ho detto: *dà* in vece di: *darebbe* perché, così come avviene per gli esopianeti, noi non li “vediamo”, ma possiamo inferire la loro esistenza dall'effetto che hanno su ciò che li circonda: istinto, premonizioni, *deja-vu*.  
-L'esistenza dei *Post-It* rende l'Universo *stateful*<a class="nota" href="/man/note#fn-stateful" id="stateful">4</a> e quindi più appetibile per noi, ma anche in un Universo *stateless*<a class="nota" href="/man/note#fn-stateless" id="stateless">5</a>, in cui ciascun ciclo di esistenza fa storia a sé, noi non avremmo né motivo né convenienza a comportarci in maniera egoistica.
+L'esistenza dei *Cookie* rende l'Universo *stateful*<a class="nota" href="/man/note#fn-stateful" id="stateful">4</a> e quindi più appetibile per noi, ma anche in un Universo *stateless*<a class="nota" href="/man/note#fn-stateless" id="stateless">5</a>, in cui ciascun ciclo di esistenza fa storia a sé, noi non avremmo né motivo né convenienza a comportarci in maniera egoistica.
 In primo luogo perché, come abbiamo già detto, essendo tutti la manifestazione di una stessa Energia, ciò che facciamo agli altri lo facciamo in realtà a noi stessi; in secondo luogo perché non è detto che in ciascun ciclo di esistenza il nostro io cosciente si manifesti nella stessa persona e quindi, se in un ciclo siamo *Jack the Ripper*, in un altro potremmo essere Mary Ann Nichols.  
-I *Post-It* furono sempre una spina nel fianco, per il Maestro Canaro, che spese gli ultimi anni della sua vita cercando un modo per ricondurli a qualcosa di reale o di eliminarli dalla dottrina, ma non riuscì a fare nessuna delle due cose.
-Inizialmente pensò la cosa più ovvia, ovvero che i Post-It fossero nel cervello, che fossero una particolare mappatura delle sinapsi contenente le istruzioni per reagire a determinate condizioni future<a class="nota" href="/man/note#fn-openworm" id="openworm">6</a>.
+I *Cookie* furono sempre una spina nel fianco, per il Maestro Canaro, che spese gli ultimi anni della sua vita cercando un modo per ricondurli a qualcosa di reale o di eliminarli dalla dottrina, ma non riuscì a fare nessuna delle due cose.
+Inizialmente pensò la cosa più ovvia, ovvero che i *Cookie* fossero nel cervello, che fossero una particolare mappatura delle sinapsi contenente le istruzioni per reagire a determinate condizioni future<a class="nota" href="/man/note#fn-openworm" id="openworm">6</a>.
 Ipotizzò anche che i sogni avessero la duplice funzione di prepararci a queste condizioni, anticipandocele e tenendo vive le connessioni cerebrali che avremmo dovuto sfruttare per affrontarle.
-Tutto questo, però, poteva essere solo una proiezione dei Post-It, una copia in memoria RAM di informazioni preservate altrove, perché, per poter essere persistenti, i Post-It devono trovarsi al di fuori dello *scope* della nostra esistenza, nella ROM o nell'*hard-disk* dell'Universo:
+Tutto questo, però, poteva essere solo una proiezione dei *Cookie*, una copia in memoria RAM di informazioni preservate altrove, perché, per poter essere persistenti, i *Cookie* devono trovarsi al di fuori dello *scope* della nostra esistenza, nella ROM o nell'*hard-disk* dell'Universo:
 
 ```
 
@@ -375,10 +375,10 @@ void eternita()
 }
 ```
 
-I Post-It, quindi, sono per definizione metafisici (o, nel caso del codice qui sopra, *meta-ciclici*) perché tutto ciò che è fisico verrà annichilito al termine di un ciclo di esistenza e rigenerato all'inizio del seguente.
+I *Cookie*, quindi, sono per definizione metafisici (o, nel caso del codice qui sopra, *meta-ciclici*) perché tutto ciò che è fisico verrà annichilito al termine di un ciclo di esistenza e rigenerato all'inizio del seguente.
 Possiamo credere nella loro esistenza, ma dobbiamo farlo per fede, in maniera dogmatica.  
 Il Maestro Canaro rifuggiva i dogmi; diceva che se tu imponi una verità, poi sei legato a essa e non puoi più cambiare idea, anche se ti accorgi di avere sbagliato.
-Prendi il tuo libro, per esempio; quel sottotitolo che hai scelto: *Lo scopo della vita è il debug* ti impone di credere nei Post-It.
+Prendi il tuo libro, per esempio; quel sottotitolo che hai scelto: *Lo scopo della vita è il debug* ti impone di credere nei *Cookie*.
 Se il giorno dopo che l'hai pubblicato si scoprisse che non esistono, saresti costretto a ristamparlo o ad accettare il fatto che dice una cosa non vera.
 Il Maestro Canaro non voleva che questo avvenisse al C'hi++; per questo motivo, stabilì che dovesse avere un versionamento, come il software: perché potesse evolversi.  
 
