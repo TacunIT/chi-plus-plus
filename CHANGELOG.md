@@ -1,3 +1,6 @@
+## 1.3.1 (June 21, 2025)
+  - Aggiunta intervista a log e modificato leggermente CSS
+
 ## 1.3.0 (June 20, 2025)
   - Corretto refuso in un post
   - Rinominati i Post-it in Cookie nei testi non proto-chiplusplus
