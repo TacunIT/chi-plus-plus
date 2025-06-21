@@ -530,7 +530,7 @@ BODY.manuale SECTION.indice IMG.badge
 BODY.manuale H1 {
     margin: 4rem 0 2rem 0;
     text-align: center;
-}
+}f
 /** Nasconde il link alla dottrina */
 BODY.manuale H1 A {
     text-decoration: none;
@@ -898,6 +898,20 @@ NAV.post A.next {
     padding-right: 10px;
 }
 
+BODY.pagina.log BLOCKQUOTE {
+    padding: 2em;
+}
+
+BODY.pagina.log BLOCKQUOTE.esergo {
+    margin:4rem 0 3rem auto;
+    width:61%;
+    font-size:0.9rem;
+    text-align: left;
+}
+BODY.pagina.log BLOCKQUOTE SPAN {
+    font-style: normal;
+   font-variant: small-caps;
+}
 
 /**
  *  Stili per mobile
