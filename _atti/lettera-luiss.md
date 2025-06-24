@@ -7,18 +7,31 @@
 Buongiorno.
 
 Mi chiamo Carlo Simonelli, ho sessant'anni e dal 1989 mi guadagno da vivere con i computer.
+<<<<<<< HEAD
 Sono il "genitore B" della Posta Elettronica Certificata, di cui scrissi il prototipo nel 2002 e dal 2008 mi occupo a tempo pieno di sicurezza informatica.
 Nel tempo libero, scrivo articoli sulla sicurezza o sulle biciclette d'epoca su pubblicazioni on-line.
+=======
+Sono il "genitore B" della Posta Elettronica Certificata, di cui scrissi il prototipo nel 2002 e dal 2008 mi occupo a tempo pieno di sicurezza informatica per Enti istituzionali.
+Nel tempo libero, scrivo articoli sulla sicurezza o sulle biciclette d'epoca su pubblicazioni *on-line*.
+>>>>>>> atti/presentazione
 A Settembre pubblicherò con Ediciclo un romanzo poliziesco ambientato durante una corsa di biciclette a Montalcino.
 Il morto, sono io.
 
 Vi scrivo per chiedervi un parere su uno strano manuale di programmazione che ho scritto durante il *lockdown*.   
 La forma narrativa è quella del dialogo: all'interno di un monastero, un vecchio maestro insegna a un giovane discepolo la programmazione in C++ e ne utilizza i principii (tipi di dato, classi, struttura dei programmi ecc.) per per introdurre i misteri del *C'hi++*: una bizzarra metafisica definita anni addietro dal fondatore del loro Ordine: il mitologico Maestro Canaro che, secondo la leggenda, alla fine del XX° Secolo era stato incaricato da Dio di riscrivere l'applicazione COBOL che fa funzionare l'Universo.  
 
+<<<<<<< HEAD
 Non proverò a dettagliare ulteriormente il contenuto del libro per non correre il rischio di venir scambiato per l'ennesimo terrapiattista/rettiliano che propone al mondo una verità pseudo-scientifica ignota a tutti fuorché a lui (è un rischio reale: ho scritto almeno quattro presentazioni diverse e, rileggendole, tutte mi davano la stessa impressione).
 Per evitare ciò, ho deciso di utilizzare come introduzione al testo una mia finta intervista in una radio privata di terz'ordine (che vi allego), nella quale spiego sia il contenuto che la genesi del libro, dando all'intervistatore il compito di sottolinearne in maniera ironica o sarcastica le evidenti anomalie.
 
 Vi sottopongo il mio libro perché spero possiate dirmi se quanto ho scritto unicamente per me possa essere di qualche interesse anche per altre persone o se sono *davvero* un terrapiattista/rettiliano pur senza saperlo.
+=======
+Non proverò a dettagliare ulteriormente il contenuto del libro per non correre il rischio di venir scambiato per l'ennesimo terrapiattista/rettiliano che propone al mondo una verità pseudo-scientifica ignota a tutti fuorché a lui.
+È un rischio reale: ho scritto almeno quattro presentazioni diverse e, rileggendole, tutte mi davano la stessa impressione.
+Per evitare ciò, ho deciso di utilizzare come introduzione al testo una mia finta intervista in una radio privata di terz'ordine (che vi allego), nella quale spiego sia il contenuto che la genesi del libro, dando all'intervistatore il compito di sottolinearne in maniera ironica o sarcastica le evidenti anomalie.
+
+Vi sottopongo il mio libro perché spero possa dirmi se quanto ho scritto unicamente per me possa essere di qualche interesse anche per altre persone o se sono *davvero* un terrapiattista/rettiliano pur senza saperlo.
+>>>>>>> atti/presentazione
 
 Il manuale lo trovate qui:
 
