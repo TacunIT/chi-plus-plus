@@ -292,7 +292,6 @@ Non è degli errori, che devi avere paura, ma della stasi.
         </li>
         <li id="fn-metta">
             <a href="https://web.archive.org/web/20100115063601/http://www.ancient-buddhist-texts.net/Texts-and-Translations/Short-Pieces/Mettasuttam.htm" target="note">www.ancient-buddhist-texts.net</a><br />
-            @todo: verificare la traduzione del testo.
             <a href="/man/istruzioni-condizionali#metta"><i class="fas fa-reply"></i></a>
         </li>
         <li id="fn-pentimento">
