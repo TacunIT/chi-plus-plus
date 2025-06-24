@@ -67,6 +67,6 @@ Due libri senza i quali *C'hi++* non sarebbe mai esistito o sarebbe stato molto 
 
 Un libro senza il quale *io stesso* sarei stato diverso è *Il Gene Egoista*.
 Dawkins sarà anche un *senza-dio*, come lo definisce il Maestro nel libro, ma è un uomo estremamente intelligente, che ha cambiato il mio modo di vedere il Mondo o, quanto meno, parte di esso.
-La cosa che mi stupisce, di lui, è come mai, essendo così intelligente, non capisca che è un terribile errore di generalizzazione ritenere tutti i fedeli dei fanatici e dei bigotti.
+La cosa che mi stupisce di lui, è come sia possibile che una persona così intelligente non capisca che è un terribile errore di generalizzazione ritenere che chiunque non sia ateo sia necessariamente o un fanatico o un bigotto.
 
 La mia speranza è che *C'hi++* serva a chiarire questo malinteso.
