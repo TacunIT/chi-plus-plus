@@ -324,12 +324,10 @@ Non è degli errori, che devi avere paura, ma della stasi.
             - <i>op.cit.</i>
             <a href="/man/istruzioni-iterative#vasana"><i class="fas fa-reply"></i></a>
         </li>
-        <li id="fn-stateful">
-            @todo: aggiungere definizione di connessione stateful
-            <a href="/man/istruzioni-iterative#stateful"><i class="fas fa-reply"></i></a>
-        </li>
         <li id="fn-stateless">
-            @todo: aggiungere definizione di connessione stateless
+            Il termine: *stateless* indica una connessione che non tiene conto di ciò che successo nel passato
+            Il termine: *stateful*, al contrario, indica una connessione che “ricorda” le scelte che sono state fatte nel passato.
+            I *cookie*, che ci viene chiesto di accettare quando apriamo un nuovo sito Web, servono a questo: registrano le scelte fatte dall'utente per tenere conto nel corso delle visite successive.
             <a href="/man/istruzioni-iterative#stateless"><i class="fas fa-reply"></i></a>
         </li>
         <li id="fn-openworm">
