@@ -433,7 +433,9 @@ Non è degli errori, che devi avere paura, ma della stasi.
     <h3>Gli stream</h3>
     <ol>
         <li id="fn-bitmask">
-            @todo: Spiegare cosa sia una bitmask.
+            Una *bitmask* è un insieme di bit (di solito un numero intero) in cui ogni bit rappresenta un'opzione o una condizione specifica. Impostando a 1 un bit nella maschera, si abilita l'opzione corrispondente, mentre impostandolo a 0 si disabilita.
+            Si utilizzavano quando lo spazio disco o la memoria RAM avevano costi molto alti e i programmatori sapevano programmare.
+            Adesso si utilizzano poco perché spazio disco e RAM sono più a buon mercato e i programmatori pure.
             <a href="/man/stream#bitmask"><i class="fas fa-reply"></i></a>
         </li>    
         <li id="fn-scacchi">
