@@ -1,3 +1,11 @@
+## 1.3.2 (June 24, 2025)
+  - Lettere per Ibarra e Massarenti
+  - Redazione della lettera a LUP
+  - Aggiunta definizione di bitmask alle note
+  - Rimosso todo per verifica della traduzione Metta Sutra: Mukesh dice che va bene..
+  - Aggiunta definizione dei termini stateless e stateful
+  - Terminata prima stesura lettera a Ibarra
+
 ## 1.3.1 (June 21, 2025)
   - Aggiunta intervista a log e modificato leggermente CSS
 
