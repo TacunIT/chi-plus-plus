@@ -27,3 +27,16 @@ $inclusoColor:      #543;
 $tdAreaBackground:  #bbb ;
 
 @import "stili";
+
+/**
+*  Modifica la visualizzazione per la stampa
+*  delle pagine e dei post
+*/
+@media print {
+    HEADER, FOOTER, NAV.post {
+        display: none;
+    }
+    BODY {
+        font-size: 12pt;
+    }
+}
