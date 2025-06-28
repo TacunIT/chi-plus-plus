@@ -6,6 +6,7 @@ og_img:   "/assets/img/og-img/intervista-radio.jpg"
 og_desc:  "Un'intervista immaginaria in cui l'autore cerca di spiegare di cosa parla questo libro."
 ---
 
+
 <blockquote class="esergo">
 Per primo nacque il Caos. Poi la Terra dall’ampio seno, sede di tutti gli dèi che hanno in possesso le cime nevose d’Olimpo. Poi, nei baratri della vasta Terra, il buio Tàrtaro; e Amore, ch’è il più bello fra i Celesti, che dissipa ogni cura degli uomini e degli dèi, doma ogni volontà e ogni accorto consiglio.<br />
 <span>Esiodo</span>, Teogonia (citato da <span>Carlo Rovelli </span>, Che cos'è la scienza: La rivoluzione di Anassimandro)
