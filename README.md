@@ -36,8 +36,8 @@ Le principali caratteristiche del C'hi++ sono:
 
 Il testi di riferimento del *C'hi++* sono:
 
-- [**C'hi++**](https://chiplusplus.org/man/) Un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo o, se preferite, un libro di filosofia scritto come un manuale di programmazione. 
-Il testo riporta gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione dei computer. 
+- [**C'hi++**](https://chiplusplus.org/man/) Un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo o, se preferite, un libro di filosofia scritto come un manuale di programmazione.
+Il testo riporta gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione dei computer.
 Ciascun paragrafo utilizza uno degli aspettti della programmazione nel linguaggio C++ per introdurre dei precetti del *C'hi++*, il linguaggio con cui (sostiene il Maestro) è stata scritta l'applicazione che gestisce l'Universo.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
 
 - [**Sostiene Aristotele**](https://chiplusplus.org/sostiene-aristotele.html): un documento che risale al Giugno del 2007 e che possiamo considerare una versione preliminare del *C'hi++*. In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
@@ -79,7 +79,7 @@ I file del progetto sono suddivisi nelle seguenti directory:
 |**_note**    | Note estratte dagli e-book Kindle, mappa mentale VUE.
 |**_posts**   | Note sulla redazione del manuale e testi su temi specifici.
 |**_sass**    | Directory per i fogli di stile di Jekyll.
-|**src**      | File .cpp e .sql degli esempii del Manuale 
+|**src**      | File .cpp e .sql degli esempii del Manuale
 
 
 I file [CHANGELOG](CHANGELOG.md) e VERSION sono utilizzati per il controllo di versione con Git.
@@ -87,6 +87,6 @@ I file [CHANGELOG](CHANGELOG.md) e VERSION sono utilizzati per il controllo di v
 Il file README.md è quello che state leggendo e contiene una breve descrizione degli scopi e delle caratteristiche del progetto.
 
 ## Convenzioni tipografiche
-Utilizzo intenzionalmente l'apostrofo quando scrivo ”qual'è” perché credo che l'apocope vocalica si debba applicare solo a frasi come: “Si è comportato da birbante qual è”; riduco i punti di sospensione da tre a due perché il terzo è ridondante e uso sempre l'accento con il pronome *sé*.
-Devo decidere quale forma utilizzare per il plurale delle parole che terminano in “io” se l'accento circonflesso (*principî*) o il raddoppio della “i” (*dominii*) e se applicarla sempre o solo nei casi in cui ci sia il rischio di anfibologie. 
+Utilizzo intenzionalmente l'apostrofo quando scrivo: ”qual'è?” perché credo che l'apocope vocalica si debba applicare solo a frasi come: “Si è comportato da birbante qual è”; riduco i punti di sospensione da tre a due perché il terzo è ridondante e uso sempre l'accento con il pronome *sé*.
+Devo decidere quale forma utilizzare per il plurale delle parole che terminano in “io” se l'accento circonflesso (*principî*) o il raddoppio della “i” (*dominii*) e se applicarla sempre o solo nei casi in cui ci sia il rischio di anfibologie.
 Tutte le altre variazioni della grammatica o della consuetudine sono da considerarsi errori.
