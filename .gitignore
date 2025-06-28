@@ -3,4 +3,5 @@
 .~*
 .jekyll-cache/
 bin/purge-cache.sh
-src/out/*  
+src/out/*
+*.key
