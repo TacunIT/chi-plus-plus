@@ -67,20 +67,22 @@ Sfortunatamente, lo sviluppo di VUE è fermo dal 20 Giugno del 2017, ma il codic
 ## Struttura delle directory
 I file del progetto sono suddivisi nelle seguenti directory:
 
-| Nome  | Contenuto
-|---|---|
-|**assets**   | Directory per i contenuti statici di Jekyll.
-|**bin**      | Script di gestione della cache o per il versionamento di Git.
-|**_data**    | Directory dati standard di Jekyll. Conteiene i file yml inclusi nel testo.
-|**docs**     | Directory di output del Manuale.
-|**_includes**| Directory di include standard di Jekyll.
-|**_layouts** | Directory per i layout di Jekyll.
-|**_man**     | Testi in formato Markdown del Manuale.
-|**_note**    | Note estratte dagli e-book Kindle, mappa mentale VUE.
-|**_posts**   | Note sulla redazione del manuale e testi su temi specifici.
-|**_sass**    | Directory per i fogli di stile di Jekyll.
-|**src**      | File .cpp e .sql degli esempii del Manuale
-
+| Nome         | Contenuto
+|:-------------|:---------------------------------------------------------------------------|
+| **_atti**    | Documenti per la promozione del libro
+| **_data**    | Directory standard di Jekyll. Contiene i file yml inclusi nel testo.
+| **_drafts**  | Directory standard di Jekyll. Conteiene le bozze dei post e dei testi.
+| **_includes**| Directory di include standard di Jekyll.
+| **_layouts** | Directory per i layout di Jekyll.
+| **_man**     | Testi in formato Markdown del Manuale.
+| **_note**    | Note estratte dagli e-book Kindle, mappa mentale VUE.
+| **_pdf**     | Script di gestione della cache o per il versionamento di Git.
+| **_posts**   | Note sulla redazione del manuale e testi su temi specifici.
+| **_sass**    | Directory per i fogli di stile di Jekyll.
+| **assets**   | Directory per i contenuti statici di Jekyll.
+| **bin**      | Script di gestione della cache o per il versionamento di Git.
+| **docs**     | Directory di output del Manuale.
+| **src**      | File .cpp e .sql degli esempii del Manuale
 
 I file [CHANGELOG](CHANGELOG.md) e VERSION sono utilizzati per il controllo di versione con Git.
 
