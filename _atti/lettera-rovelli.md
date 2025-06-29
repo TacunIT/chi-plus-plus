@@ -1,5 +1,5 @@
 
-<img src="../assets/img/chi-enso.png" style="width:30%;margin: 0 auto 1em">
+<img src="../assets/img/chi-enso.png" style="height:2cm;margin: 0 auto 1em">
 
 
 # C'hi++ - Il senso della vita è il *debug*
@@ -16,18 +16,12 @@ Non servono a nulla. <br/>
 
 Io le devo un favore, anzi: due; uno esistenziale (diciamo così) e uno editoriale.  
 Il favore esistenziale a che fare con un'architetto tedesca di nome Eva, perciò comincio da quello.  
-
----
-
 Ero in auto e stavo tornando a casa a Gaeta.
 Erano forse le tre di notte e la Pontina era vuota, a parte i camion.
 Circa un'ora prima, sdraiato sul divano della teutonica, dove mi ero auto-esiliato dopo una discussione, avevo dovuto prendere atto che la nostra storia non poteva andare avanti, il che mi rendeva molto triste perché non solo lei era alta, bionda e con gli occhi azzurri, ma anche perché mi raccontava delle storie incredibili sulla Berlino *pre-89*, tipo che in uno stesso negozio una volta trovavi le fragole, un'altra volta i chiodi, a seconda di quello che era disponibile, o che quando era nata lei, i suoi genitori avevano chiesto un'auto allo Stato e lo Stato gliel'aveva concessa, ma tempo che l'auto arriva era nato suo fratello e allora avevano dovuto chiedere un'auto diversa, che non gli era mai stata consegnata perché nel frattempo era caduto il Comunismo[^barze]..  
 Insomma ero piuttosto triste e mi tenevo sveglio cambiando compulsivamente le stazioni della radio.
 Fu così che approdai a una sua intervista, non ricordo su quale rete RAI.
-Lei parlava delle sue ricerche e io, di colpo, dimenticai tutti i miei dolori da (non più) giovane Werther, perché ciò di cui lei parlava somigliava molto a qualcosa su cui stavo ragionando da tempo..
-
----
-
+Lei parlava delle sue ricerche e io, di colpo, dimenticai tutti i miei dolori da (non più) giovane Werther, perché ciò di cui lei parlava somigliava molto a qualcosa su cui stavo ragionando da tempo..  
 Il favore editoriale, di contro, è stato di rivelarmi il mio peccato di *hỳbris*.
 Eh già: perché sulla teoria cosmogonica che avevo iniziato a elaborare nel 2005, io ci stavo scrivendo un libro e, fino a quel momento, (il Cielo mi perdoni) ero convinto di aver avuto un'intuizione geniale che avrebbe rivoluzionato il nostro modo di vedere l'Universo e la vita.
 Io, che da anni criticavo la cialtronaggine e il dilettantismo, mi stavo trsasformando in un tuttologo da TV locale. 
@@ -60,8 +54,22 @@ Ma come dice il poeta (sempre Califano):
 
 Se volevo *trovare gli argomenti che mostrino che esse «sono migliori» di quelle correnti*, dovevo provare a metterle in pratica, cosa che ho fatto con il *C'hi++*, che presenta tutte le caratteristiche riportate sopra:
 
-- **ha un solo dogma:** ai fedeli viene chiesto 
+- **ha un solo dogma:** ai fedeli viene chiesto C'hi++ è richiesto di credere che ci sarà un momento in cui l’espansione dell’Universo terminerà e che tutto ciò che esiste tornerà a collassare su sé stesso per poi dare vita a un nuovo *Big Bang*;
 
+- **ha un solo elemento metafisico:** una memoria persistente dell'Universo che mantiene traccia dell'esito delle scelte fatte in ciascun ciclo; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo:
+
+- **si considera esplicitamente un'approssimazione sicuramente incompleta e perfettibile della Verità:** non a caso tutti i documenti relativi al *C'hi++*, compresa questa lettera, sono pubblicati si un *repository* GitHub, una delle piattaforme utilizzate per la gestione del software *open-source*.
+
+La cosa affascinante di questa dottrina è che risulta compatibile con la maggior parte delle religioni canoniche, dal Mazdeismo in poi[^polimorfismo], il che la renderebbe un ottimo punto di partenza per la definizione di un ethos condiviso per l'Intelligenza artificiale.<br />  
+*C'hi++* è compatibile anche con alcune affermazioni che ho trovato nel suo libro su Anassimandro:
+
+- **propone un sistema di spiegazione dei fatti del mondo in termini delle cose del mondo:** la cosmogonia del *C'hi++* è intenzionalmente priva di elementi metafisici ed è del tutto indipendente dalla presenza o dall'assenza di una Divinità. 
+
+- è **un’intera immagine del mondo nuova e coerente:** il *C'hi++* permette di dare una risposta coerente e logica a domande come: *Se Dio è buono, perché ha creato il Male?*; 
+
+## Nella cassa
+
+Concludo con una domanda che non ha nulla a che vedere con il resto di questo messaggio: l'esempio del figlio che invia notizie al padre, che lei fa in "Buchi bianchi" è ispirato al racconto: "I sette cavalieri" di Buzzati?  
 
 
 [^barze]: Reagan raccontava una barzelletta simile:<br /> https://www.youtube.com/watch?v=_wxAA-Wm-og
@@ -70,49 +78,8 @@ Se volevo *trovare gli argomenti che mostrino che esse «sono migliori» di quel
 
 [^ebrei]: Non è nulla di nuovo: oltre agli scienziati, anche gli Ebrei lo fanno da sempre e ,guarda caso, pur essendo circa il 2 per mille della popolazione mondiale, hanno vinto il 20% dei premii Nobel degli ultimi centoventi anni. 
 
-<!-- 
+[^polimorfismo]: Ne parlo nel capitolo dedicato al polimorfismo:<br /> https://chiplusplus.org/man/polimorfismo#dottrina
 
 
-Glielo sottopongo, perché spero possa dirmi se quanto ho scritto unicamente per me, come il diario di un vecchio marinaio, possa essere di qualche interesse anche per altre persone.  
 
-## Conclusioni
-
-Ho chiuso la prima revisione del testo il 5 Febbraio 2023, ma non ho ancora inviato *C'hi++* a nessun editore perché ero convinto che un libro così non avesse un pubblico.
-Trent'anni fa non mi sarei fatto un simile scrupolo, perché la maggior parte degli informatici combinava competenze tecniche con interessi umanistici, ma oggi le cose sono drasticamente cambiate: legge libri solo il 40% degli Italiani sopra i sei anni e, di questi, quasi la metà non va oltre i tre libri l'anno.
-Che mercato potevo aspettarmi che avesse, un libro di programmazione che parla anche del senso della vita?  
-La ragione che mi ha spinto a valutare la via della pubblicazione è il buon successo che ha avuto il Congresso Mondiale di Filosofia, tenutosi questa estate a Roma; in particolare, il fatto che uno dei relatori principali fosse anche il CEO di una delle nostre maggiori aziende informatiche.  
-Sto quindi rivedendo il testo, limando quello che mi era sfuggito durante il primo giro di bozze, poi lo invierò ad alcuni editori italiani.
-Il passo successivo sarà di tradurre il testo in Inglese e di tentare la pubblicazione su mercati esteri.   
-Grazie per aver letto fin qui.  
-<br />
-Carlo Simonelli  
-<br />
-Roma, autunno 2024.
-<br />
-<br />
-<br />
-
-
-[^chi]: Gioco di parole fra il termine giapponese *C'hi* (氣 - *soffio vitale*) e il linguaggio di programmazione chiamato *C++* -
-
-
-[^etica]: Qui e altrove attribuisco a *etica* e *morale* lo stesso rapporto che c'è fra *strategia* e *tattica*  o fra una *classe* e un *oggetto*: la prima è unica e invariante e serve da modello per la seconda, che è plurima e transeunte.
-
-[^umani]: Gli attori, ovviamente, sono gli esseri viventi, non la materia inerte, anche se entrambi sono manifestazioni differenti di una stessa energia.
-
-[^annosa]: Sodale dell'Entropia, è l'Annosa Dicotomia che causa la deflagrazione dell'Uno ed è sempre lei, nell'allegoria biblica del medesimo evento, il serpente che spinge Adamo ed Eva ad assaggiare i frutti dell'albero della conoscenza, con conseguente allontanamento dall'Eden.  
-
-[^amore]: Oltre a far nascere nuove vite, l'Amore le può anche spegnere. Per il C'hi++, ciascuno di noi è l’istanza di una classe che è stata chiamata a vivere per svolgere un determinato compito; fatto ciò, dovremo essere rimossi dalla memoria per non occupare inutilmente delle risorse del sistema.  L’Amore può servire anche a questo: così come ha generato nei nostri genitori l’interesse necessario a causare la nostra nascita, molto spesso genera in noi un interesse che causa le condizioni necessarie alla nostra morte.
-
-[^funzioni]: Il Maestro spiega la causa di questa similitudine nel capitolo dedicato alle funzioni.
-
-<!--
-
-_NOTA: mentre scrivevo questa lettera, mia moglie si è seduta vicino a me e gli effetti quantistici dovuti alla sua massa hanno alterato il normale fluire del tempo e della mia prosa. In questo momento si è alzata, ma tornerà, perciò non ho modo di rimettere tutto a posto, ma solo di numerare i paragrafi per facilitarne la lettura. Me ne scuso: come ripeto spesso, non è un caso se si utilizza lo stesso verbo (*contrarre*) per il matrimonio e la malaria._  
-<br />     
-
-Concludo con una domanda che non ha nulla a che vedere con il resto di questo messaggio: l'esempio del figlio che invia notizie al padre, che lei fa in "Buchi bianchi" è ispirato al racconto: "I sette cavalieri" di Buzzati?  
-
-<hr />      
--->
 
