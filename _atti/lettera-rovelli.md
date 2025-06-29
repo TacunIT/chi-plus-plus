@@ -6,7 +6,8 @@
 ## Presentazione
 
 <blockquote class="citazione">
-Come molti scienziati, ho casse piene di lettere e cartelle piene di mail di persone che mi scrivono con idee scientifiche nuove, le più originali e le più ardite. Non servono a nulla.(...) Avere idee è facile. Il difficile è riconoscere le idee buone e trovare gli argomenti che mostrino che esse «sono migliori» di quelle correnti. <br/>
+Come molti scienziati, ho casse piene di lettere e cartelle piene di mail di persone che mi scrivono con idee scientifiche nuove, le più originali e le più ardite.   
+Non servono a nulla. <br/>
 </blockquote>
 
 
@@ -14,76 +15,57 @@ Come molti scienziati, ho casse piene di lettere e cartelle piene di mail di per
 ## Grazie
 
 Io le devo un favore, anzi: due; uno esistenziale (diciamo così) e uno editoriale.  
-Il favore esistenziale a che fare con un'affascinante architetto tedesca di nome Eva, quindi comincio da quello.  
-Ero in auto e stavo tornando a casa a Gaeta.
-Erano forse le tre di notte e la Pontina era vuota, a parte i camion.
-Circa un'ora prima, sdraiato sul divano del suo soggiorno, dove mi ero auto-esiliato, avevo dovuto prendere atto che la mia storia con Eva non poteva andare avanti, il che mi rendeva molto triste perché non solo lei era alta, bionda e con gli occhi azzurri, ma mi raccontava delle storie incredibili sulla Berlino ancora divisa, tipo che nei negozi una volta trovavi le fragole, un'altra volta i chiodi, o che quando era nata lei, i suoi genitori avevano chiesto un'auto allo Stato e lo Stato gliel'aveva concessa, ma tempo che l'auto arriva era nato suo fratello e allora avevano dovuto chiedere un'auto diversa, che non gli era mai stata consegnata perché nel frattempo era caduto il Comunismo..  
-Cambiando compulsivamente le stazioni della radio per tenermi sveglio approdai a una sua intervista, non ricordo su quale rete.  
-Lei parlava delle sue ricerche e io, di colpo, ho dimenticato tutti i miei dolori da non più giovane Werther, perché ciò di cui lei parlava somigliava molto a qualcosa su cui stavo ragionando da diversi anni.  
-Il favore editoriale è stato di rivelarmi il mio peccato di *hỳbris*. 
- 
-
-
-
-<!-- 
-*C'hi++* è un eccellente manuale di programmazione, un maldestro libro di filosofia e un vergognoso libro di fisica.  
-La forma narrativa è quella del dialogo: all'interno di un monastero, un vecchio maestro insegna a un giovane discepolo i principii della programmazione in C++ e parallelamente lo inizia ai misteri del *C'hi++*[^chi]: una bizzarra metafisica *open-source*, definita anni addietro dal fondatore del loro Ordine: il mitologico Maestro Canaro che, secondo la leggenda, alla fine del XX° Secolo fu incaricato da Dio di riscrivere in C++ l'applicazione COBOL che fa funzionare l'Universo.  
-
-Glielo sottopongo, perché spero possa dirmi se quanto ho scritto unicamente per me, come il diario di un vecchio marinaio, possa essere di qualche interesse anche per altre persone.  
-Sperando di poterle parlare a voce di questo progetto, ero venuto a sentirla allo Stadio Palatino, ad Agosto, ma anche millantando un inesistente accredito stampa[^menti] non sono riuscito a entrare perché i posti erano tutti esauriti.
-Mi trovo costretto perciò a ripiegare su una forma di comunicazione indiretta, con tutti i problemi che questa comporta, prima fra tutti, la mia tendenza alla divagazione e alla prolissità.  
-
-Per non rubarle troppo tempo, ho cercato di rendere il testo qui sotto il più conciso possibile. I concetti che riassumo qui, sono riportati con maggior dettaglio nell'Introduzione del libro, nel [MANIFEST] (https://github.com/TacunIT/chi-plus-plus/blob/master/MANIFEST.md) del progetto GitHub e nel documento: [_Proposta per una metafisica open-source_](https://chiplusplus.org/proposta.html), in cui si ipotizza l'utilizzo dei principii del C'hi++ come base di un'etica “vendor independent” per l'AI.
-
-## L'eccellente manuale di programmazione
-
-Le parti del testo che riguardano la programmazione in C++ sono la revisione di un manuale che pubblicai nel 1995 per la casa editrice Logica, di Roma.  
-Il primo e l'ultimo capitolo - il *Prologo* e l'*Epilogo* - sono narrati in prima persona dall'allievo; in tutti gli altri capitoli la voce narrante è quella del Maestro.  
-In ogni capitolo, il Maestro affronta uno degli aspetti della programmazione: operatori, funzioni, classi, polimorfismo e perfino il versionamento e la correzione del codice, ovvero il *debug*, che viene spesso trascurato nella letteratura tecnica, anche se è l’attività che i programmatori svolgono per la maggior parte del loro tempo.
-Ciascuno di questi argomenti, descritto in dettaglio nella parte iniziale del capitolo, viene poi utilizzato per introdurre i principii del C'hi++ e della sua cosmogonia: lo *Spazionismo*.  
-
-## Il vergognoso libro di fisica
-
-Per lo Spazionismo, l'Universo è costituito da una matrice tridimensionale di elementi infintesimali chiamati, appunto: *spazioni*.
-Simili ai *pixel* di uno schermo, gli spazioni hanno ciò che il Maestro chiama: “esistenza potenziale", ovvero esistono solo se vengono irraggiati di energia, nel qual caso assumono massa ed esistenza.  
-Riprendendo alcune delle idee esposte da Poe in *Eureka*, lo Spazionismo  immagina che tutto ciò che esiste nasca dello scontro di due Forze primordiali: la Gravità, ovvero la tendenza della materia a riunirsi a sé stessa, e l'Entropia[^poe] che, al contrario, tende a dividerla.
-In balìa di queste due forze, l'Universo ha un'esistenza ciclica: quando “vince” la Gravità, tutta l'energia/materia è concentrata in un'area ristretta; quando invece prende il sopravvento l'Entropia, il *Big Bang* *lancia* l'energia attraverso la matrice di spazioni, separando l'Uno e generando stelle, pianeti e abitanti dei pianeti.
-L'espansione dell'Universo continua fino a che la Gravità non si impone sulla sua antagonista, facendo sì che tutta la materia torni a riunirsi nell'Uno.  
-
-## Il maldestro libro di filosofia
-
-L'ipotesi che ho appena descritto altro non è che il disperato tentativo di una mente finita di razionalizzare grandezze infinite come il tempo e lo spazio.
-Non fornisce uno straccio di prova a sostegno delle sue ipotesi e non dà un senso alle nostre esistenze, che riduce a meri epifenomeni del tutto irrilevanti su scala cosmica.
-Inoltre, negando alla nostra vita ogni forma di trascendenza, non ci spinge a comportarci “bene“ (nel senso che davano a questo termine i nostri nonni), ma ad arraffare tutto ciò che possiamo, finché possiamo, come pirati all'arrembaggio.   
-Se vogliamo che i giovani, sui mezzi pubblici, si alzino per lasciare il posto alle donne incinte e agli anziani, abbiamo bisogno di regole etiche[^etica] condivise e condivisibili, anche se, per formularle, dovremo lavorare un po' di fantasia, assumendoci il rischio di affermare cose non vere.  
+Il favore esistenziale a che fare con un'architetto tedesca di nome Eva, perciò comincio da quello.  
 
 ---
 
-Così come il linguaggio C++ è un'evoluzione del linguaggio C, il C'hi++ è un'evoluzione dello Spazionismo, a cui aggiunge due dogmi e un numero minimo di elementi metafisici per dare un senso all'esistenza.
-Il primo dogma del C'hi++, necessario per garantire coerenza interna alla dottrina, riguarda la ciclicità dell'Universo:
+Ero in auto e stavo tornando a casa a Gaeta.
+Erano forse le tre di notte e la Pontina era vuota, a parte i camion.
+Circa un'ora prima, sdraiato sul divano della teutonica, dove mi ero auto-esiliato dopo una discussione, avevo dovuto prendere atto che la nostra storia non poteva andare avanti, il che mi rendeva molto triste perché non solo lei era alta, bionda e con gli occhi azzurri, ma anche perché mi raccontava delle storie incredibili sulla Berlino *pre-89*, tipo che in uno stesso negozio una volta trovavi le fragole, un'altra volta i chiodi, a seconda di quello che era disponibile, o che quando era nata lei, i suoi genitori avevano chiesto un'auto allo Stato e lo Stato gliel'aveva concessa, ma tempo che l'auto arriva era nato suo fratello e allora avevano dovuto chiedere un'auto diversa, che non gli era mai stata consegnata perché nel frattempo era caduto il Comunismo..  
+Insomma ero piuttosto triste e mi tenevo sveglio cambiando compulsivamente le stazioni della radio.
+Fu così che approdai a una sua intervista, non ricordo su quale rete RAI.
+Lei parlava delle sue ricerche e io, di colpo, dimenticai tutti i miei dolori da (non più) giovane Werther, perché ciò di cui lei parlava somigliava molto a qualcosa su cui stavo ragionando da tempo..
 
-> Ai fedeli è richiesto di credere, anche in assenza di prove o in presenza di prove contrarie (...) che ci sarà un momento in cui l’espansione dell’Universo terminerà e che tutto ciò che esiste tornerà a riunirsi nell’Uno primigenio
+---
 
-La seconda accettazione per fede richiesta dal C’hi++ è l'esistenza di quelli che il Maestro chiama *I Cookie*, ovvero:
+Il favore editoriale, di contro, è stato di rivelarmi il mio peccato di *hỳbris*.
+Eh già: perché sulla teoria cosmogonica che avevo iniziato a elaborare nel 2005, io ci stavo scrivendo un libro e, fino a quel momento, (il Cielo mi perdoni) ero convinto di aver avuto un'intuizione geniale che avrebbe rivoluzionato il nostro modo di vedere l'Universo e la vita.
+Io, che da anni criticavo la cialtronaggine e il dilettantismo, mi stavo trsasformando in un tuttologo da TV locale. 
+Come dice Califano:
 
-> una memoria persistente dell’Universo che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione e contrazione; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo:
+> Me vergognai parecchio</br> 
+> E cominciai a fa' i conti co' lo specchio
 
-Grazie ai *Cookie*, l'Universo “ricorda” ciò che è successo nei precedenti cicli di esistenza e, in base a questa conoscenza, può ripetere scelte che si sono dimostrate positive o cambiare quelle che hanno dato esiti fallimentari[^umani], in un'eterna ricerca della perfezione, che per il C'hi++ è il senso dell'Esistenza.    
-Oltre questi due dogmi, il C'hi++ definisce due enti meta-fisici: l'*Annosa Dicotomia* e l'Amore.
-L'*Annosa Dicotomia* (fra ciò che desideriamo e ciò di cui abbiamo bisogno) è la forza che spinge a compiere scelte in base a motivazioni contingenti, di cui quasi sempre ci si pente[^annosa].
-L'*Amore* è la forza con cui l'Universo spinge gli esseri viventi ad assolvere al loro *dharma*; una sorta di una bomba a tempo inserita nel nostro “firmware”, per spingerci a fare la cosa giusta quando arriverà il  momento.[^amore]    
+Paradossalmente, però, quell'epifania rese tutto più semplice: abbandonata la speranza di vincere **insieme** il Nobel per la Letteratura **e** per la Fisica, la stesura del libro divenne di colpo più facile e, grazie anche all'isolamento dovuto alla pandemia, tre anni più tardiu terminavo la prima stesura di *C'hi++ - Il senso della Vita è il debug*, un libro indubbiamente anomalo, ma non peccaminoso.
 
-## Cronogramma
+## Il libro 
 
-Ho cominciato a elaborare la teoria alla base di questo libro nell'estate del 2004: volevo vedere se fosse possibile dare una spiegazione dell'Universo e dell'esistenza senza tirare in ballo elementi metafisici.
-Era possibile.
-Quella che elaborai era un'ipotesi incompleta, perfettibile e altamente dilettantistica, ma curiosamente compatibile con buona parte delle filosofie e delle religioni che conoscevo.  
-*Niente di strano*, pensai: *ho immaginato qualcosa di simile a ciò che conosco già*.  
-Per sicurezza, però, decisi di verificare se le similitudini esistessero anche per le filosofie e le religioni che io ancora non conoscevo.
-Cominciai così uno studio eclettico e confuso, ma appassinante, che mi permise di stabilire numerose altre similitudini con opere o teorie di cui, inizialmente, non avevo la minima cognizione o che di cui conoscevo solo il nome.  
-Questo era strano: private degli orpelli e degli auspici non comprovabili (Paradiso, Nirvana e auspici ottimistici in genere) tutte le metafisiche sembravano avere un nocciolo di nozioni comuni, indipendentementi dal luogo e dal periodo in cui erano state formulate.[^funzioni]
-Valeva la pena di approfondire la cosa, se non altro per mettere ordine nel groviglio di idee e congetture che avevo accumulato fino ad allora.  
-Iniziai la stesura dei primi capitoli nel 2009, ma fu solo durante la pandemia del 2020 che riuscii a trovare il tempo per completare il lavoro che avevo iniziato.
+Come ho scritto nella prefazione del libro, *C'hi++* è un eccellente manuale di programmazione, un maldestro libro di filosofia e un vergognoso libro di fisica.  
+La forma narrativa è quella del dialogo: all'interno di un monastero, un vecchio maestro insegna a un giovane discepolo la programmazione in C++ e ne utilizza i principii (tipi di dato, classi, struttura dei programmi ecc.) per per iniziarlo ai misteri del *C'hi++*, una bizzarra metafisica definita anni addietro dal fondatore del loro Ordine: il mitologico Maestro Canaro che, secondo la leggenda, alla fine del XX° Secolo era stato incaricato da Dio di riscrivere l'applicazione COBOL che fa funzionare l'Universo.
+
+Non proverò a dettagliare ulteriormente il contenuto del testo per non correre il rischio di venir scambiato per l'ennesimo terrapiattista rettiliano che propone al mondo una verità pseudo-scientifica ignota a tutti fuorché a lui.
+È un rischio reale: ho scritto almeno quattro presentazioni diverse e, rileggendole, tutte mi davano la stessa impressione. 
+Per evitare ciò, ho deciso di utilizzare come introduzione al testo una mia **finta** intervista in una radio privata di terz'ordine, nella quale spiego sia il contenuto che la genesi del libro, dando all'intervistatore il compito di sottolinearne in maniera ironica o sarcastica le evidenti anomalie.
+
+---
+
+I principii espressi in *C'hi++* sono la *proof-of-concept* di un'ipotesi che avevo formulato nel 2018, ovvero l'applicazione alle attività filosofico/speculative dei metodi con cui si gestisce il software cosiddetto *open-source*.  
+In particolare, nel testo evidenziavo dei problemi congeniti a tutte le religioni e sostenevo che questi problemi si sarebbero potuti mitigare con le seguenti accortezze:
+
+- limitare il numero dei dogmi;
+- limitare gli elementi metafisici e le accettazioni per fede;
+- non proporsi come Unica Verità Incontestabile, ma come un'approssimazione sicuramente incompleta e perfettibile della Verità;
+- riconoscere le contraddizioni della dottrina e analizzarle obiettivamente, anche se ciò porterà a modificare la dottrina stessa.
+
+Tanto i sostenitori che i seguaci di un Credo siffatto, sarebbero stati quindi incentivati a modificarne le regole per renderlo sempre più aderente alla realtà ultima, in un processo di miglioramento continuo tanto della disciplina che dei suoi adepti.  
+Non è nulla di nuovo: oltre agli scienziati, anche gli Ebrei lo fanno da sempe e - guarda caso - pur essendo circa il 2 per mille della popolazione mondiale, hanno vinto il 20% dei premii Nobel degli ultimi centoventi anni.
+ 
+
+
+<!-- 
+
+
+Glielo sottopongo, perché spero possa dirmi se quanto ho scritto unicamente per me, come il diario di un vecchio marinaio, possa essere di qualche interesse anche per altre persone.  
 
 ## Conclusioni
 
