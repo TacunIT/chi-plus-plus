@@ -15,14 +15,14 @@ Non servono a nulla. <br/>
 ## Grazie
 
 Io le devo un favore, anzi: due; uno esistenziale (diciamo così) e uno editoriale.  
-Il favore esistenziale a che fare con un'architetto tedesca di nome Eva, perciò comincio da quello.  
+**Il favore esistenziale** a che fare con un'architetto tedesca di nome Eva, perciò comincio da quello.  
 Ero in auto e stavo tornando a casa a Gaeta.
 Erano forse le tre di notte e la Pontina era vuota, a parte i camion.
 Circa un'ora prima, sdraiato sul divano della teutonica, dove mi ero auto-esiliato dopo una discussione, avevo dovuto prendere atto che la nostra storia non poteva andare avanti, il che mi rendeva molto triste perché non solo lei era alta, bionda e con gli occhi azzurri, ma anche perché mi raccontava delle storie incredibili sulla Berlino *pre-89*, tipo che in uno stesso negozio una volta trovavi le fragole, un'altra volta i chiodi, a seconda di quello che era disponibile, o che quando era nata lei, i suoi genitori avevano chiesto un'auto allo Stato e lo Stato gliel'aveva concessa, ma tempo che l'auto arriva era nato suo fratello e allora avevano dovuto chiedere un'auto diversa, che non gli era mai stata consegnata perché nel frattempo era caduto il Comunismo[^barze]..  
 Insomma ero piuttosto triste e mi tenevo sveglio cambiando compulsivamente le stazioni della radio.
 Fu così che approdai a una sua intervista, non ricordo su quale rete RAI.
 Lei parlava delle sue ricerche e io, di colpo, dimenticai tutti i miei dolori da (non più) giovane Werther, perché ciò di cui lei parlava somigliava molto a qualcosa su cui stavo ragionando da tempo..  
-Il favore editoriale, di contro, è stato di rivelarmi il mio peccato di *hỳbris*.
+**Il favore editoriale**, di contro, è stato di rivelarmi il mio peccato di *hỳbris*.
 Eh già: perché sulla teoria cosmogonica che avevo iniziato a elaborare nel 2005, io ci stavo scrivendo un libro e, fino a quel momento, (il Cielo mi perdoni) ero convinto di aver avuto un'intuizione geniale che avrebbe rivoluzionato il nostro modo di vedere l'Universo e la vita.
 Io, che da anni criticavo la cialtronaggine e il dilettantismo, mi stavo trsasformando in un tuttologo da TV locale. 
 Come dice il poeta (Califano):
