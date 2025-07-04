@@ -151,7 +151,7 @@ Sì.
 *Lei, al bagno, legge saggi su Tempo ed Eternità?*
 
 <label>CS</label>
-Sì: di solito, la mattina, a mente fresca, leggo i libri di saggistica, menrte di sera leggo i libri di narrativa.
+Sì: di solito, la mattina, a mente fresca, leggo i libri di saggistica, mentre di sera leggo i libri di narrativa.
 Per esempio, in questi giorni sto leggendo un libro di Carlo Rovelli su Anassimandro.
 
 <label>AT</label>
@@ -209,7 +209,7 @@ A un certo punto però, sotto la spinta dell'Entropia, un nuovo *Big Bang* la di
 
 <label>CS</label>
 È irrilevante: dato un tempo infinito, per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali, è impossibile che la cosa o prima o poi non avvenga.
-Dopo il *Big Bang*, l'Universo si espande fino a che la Gravità non riacquista il controllo e riporta tutto all'Uno, dove il ciclo ricomincia.
+Dopo il *Big Bang*, l'Universo si espande sotto la spinta dell'Entropia, fino a che la Gravità non riacquista il controllo e riporta tutto all'Uno, dove il ciclo ricomincia.
 
 <label>AT</label>
 *E questo, come sarebbe compatibile con le religioni canoniche?*
@@ -225,6 +225,7 @@ Il Diavolo - che deriva da Greco *διάβολος*, ovvero: *colui che separa* 
 
 <label>CS</label>
 Non secondo la setta dei Barbelognostici e comunque questo precetto è quello che nel tempo ha creato i più grossi problemi logici alle dottrine abramitiche, perché non è chiaro come mai un Dio buono e onnipotente debba aver creato un Universo in cui regna il dolore.
+Al contrario, se il creatore è il Diavolo, tutto torna.
 
 <label>AT</label>
 *E invece il suo Spazionismo è immune da queste contraddizioni?*
@@ -245,7 +246,7 @@ Ecco: se lei non accetta i *cookie* la sua connessione è *stateless* e ogni vol
 *E questo, cosa c'entra con l'Universo?*
 
 <label>CS</label>
-Se lei esclude *qualunque* elemento metafisico da una cosmogonia, tutto ciò che è successo nel corso di un ciclo di vita si perderà al termine di esso, come in un un PC che abbia solo la memoria RAM.
+Se lei esclude *qualunque* elemento metafisico da una cosmogonia, tutto ciò che è successo nel corso di un ciclo di vita dell'Universo si perderà al termine di esso, come in un un PC che abbia solo la memoria RAM.
 Al contrario, se si ammette l'esistenza di un “hard-disk” dell'Universo, capace di sopravvivere al *Big Crunch*, sarà possibile memorizzare delle informazioni e trasmetterle da un ciclo all'altro.
 
 <label>AT</label>
@@ -275,16 +276,16 @@ Come ho scritto nell'Introduzione del testo, se vogliamo che i giovani, sui mezz
 
 <label>CS</label>
 Precisamente.
-Così come il linguaggio `C++` è un'evoluzione del linguaggio `C`, il C'hi++ è un'evoluzione dello Spazionismo, a cui aggiunge due dogmi e un numero minimo di elementi metafisici per dare un senso all'Esistenza.
-Il primo dogma, riguarda ovviamente la ciclicità dell'Universo..
+Così come il linguaggio `C++` è un'evoluzione del linguaggio `C`, il C'hi++ è un'evoluzione dello Spazionismo, a cui aggiunge un dogma e un numero minimo di elementi metafisici per dare un senso all'Esistenza.
+Il dogma, riguarda ovviamente la ciclicità dell'Universo..
 
 <label>AT</label>
 *Ovviamente..*
 
 <label>CS</label>
-Il secondo dogma è l'esistenza di una memoria persistente dell’Universo che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione e contrazione; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo.
-Oltre questi due dogmi, il C'hi++ definisce due Enti meta-fisici: l'*Annosa Dicotomia* e l'Amore.
-L'*Annosa Dicotomia* (fra ciò che desideriamo e ciò di cui abbiamo bisogno) è la forza che spinge a compiere scelte in base a motivazioni personali e contingenti, di cui quasi sempre ci si pente.
+Oltre a questo, il *C'hi++* postula l'esistenza di una memoria persistente dell’Universo che mantiene traccia dell’esito delle scelte fatte in ciascun ciclo di espansione e contrazione; qualcosa di simile all'inconscio collettivo di Jung o ai *vāsanā* dell'Induismo.
+Inoltre, definisce due Enti meta-fisici: l'*Annosa Dicotomia* e l'Amore.
+L'*Annosa Dicotomia* (fra ciò che desideriamo e ciò di cui abbiamo bisogno) è la forza che ci spinge a compiere scelte in base a motivazioni personali e contingenti.
 L'*Amore* è la forza con cui l'Universo spinge gli esseri viventi ad assolvere al loro *Dharma*; una sorta di una bomba a tempo inserita nel nostro “firmware”, per farci fare la cosa giusta quando arriverà il  momento.    
 
 <label>AT</label>
