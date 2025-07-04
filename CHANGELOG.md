@@ -1,3 +1,12 @@
+## 1.3.3 (July 04, 2025)
+  - Revisione dell'intervista
+  - Redazione presentazione
+  - Redazione lettera Rovelli
+  - Revisione del CSS
+  - Aggiornato file README
+  - Rinominata directory _book in _pdf
+  - Corretta chiusura della Bibliografia
+
 ## 1.3.2 (June 24, 2025)
   - Lettere per Ibarra e Massarenti
   - Redazione della lettera a LUP
