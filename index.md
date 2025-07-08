@@ -28,7 +28,7 @@ se volete altre informazioni su questo progetto, potete trovarle lì, nei file:
 C'hi++ non è né scienza né religione, anche se ogni tanto finge di essere o l'una o l'altra.
 C'hi++ è mito e la mitologia ha spesso mescolato il soprannaturale con il livello più alto dello sviluppo scientifico o tecnologico.
 Anticamente, abbiamo attribuito una controparte divina al lampo che generava il fuoco, al moto degli astri, alla meteorologia.
-Più recentemente, Poe, in *Eureka*, ha ipotizzato che l'Universo sia il frutto dell'azione contrapposta della Gravità, che lui interpreta come la tendenza di tutta la materia a tornare all'Uno primigenio e dell'Elettricità, che al contrario, tende a dividere.
+Più recentemente, Poe, in *Eureka*, ha ipotizzato che l'Universo sia il frutto dell'azione contrapposta della Gravità e dell'Elettricità.
 All'inizio del Secolo scorso, infine, i Futuristi hanno mitizzato i simboli del progresso tecnologico &mdash; velocità, eliche, aeroplani, automobili &mdash;, rendendoli l'oggetto della loro arte.
 Nulla di strano, quindi, che all'inizio di questo millennio si tenti un paragone fra le regole note del software e le regole ignote dell'Universo in cui viviamo.
 
