@@ -129,17 +129,18 @@ L'elemento metafisico con cui ho contaminato la purezza nichilista dello Spazion
 Così come le scelte fatte dall'utente di un computer vengono preservate copiandole dalla memoria RAM all'*hard-disk*, così, per il *C'hi++*,  ciò che impariamo durante la nostra esistenza - le scelte giuste e quelle sbagliate - sono memorizzate nei *Cookie* per essere riutilizzate in futuro. 
 
 Anche se conferma quanto ho detto riguardo sopra riguardo i difetti degli umani, questa piccola concessione all'auspicio a decremento dell'obiettività  mi ha permesso di affermare che: *il senso della vita è il debug*, perché - se effettivamente esistono i *Cookie* possiamo immaginare l'esistenza di tutti gli esseri senzienti come un cammino continuo ed eterno verso la perfezione.
-
 In altre parole, *C'hi++* applica all'intero Universo le regole che lei applica alla Scienza e io alla scrittura di software, con la differenza che il *C'hi++* indica queste regole non come *una* delle molte scelte possibili, ma come il senso stesso dell'esistenza.
 Per il *C'hi++*, la frase di Francesca Vidotto che ho letto ieri mattina sul suo libro si traslittera in:
 
-> La scienza di cui voglio parlare rinasce eternamente nel numero infinito di istanti in cui l'Annosa Dicotomia[^eden] spinge l'Uno a disgregarsi in un nuovo Universo: è la ricerca della perfezione, che è connaturata in tutte le cose.
+> La scienza di cui voglio parlare rinasce eternamente nel numero infinito di istanti in cui l'Annosa Dicotomia spinge l'Uno a disgregarsi in un nuovo Universo: è la ricerca della perfezione, che è connaturata in tutte le cose.
 
 A differenza dell'allegoria biblica, però, *C'hi++* non ha bisogno né di un aldilà né di un ipotetico Creatore che prima si incazza con te perché gli hai rubato una mela e poi fa pace dopo che gli hai ucciso il Figlio, ma colloca il *Pairidaeza* in questo stesso continuum spazio-temporale.
 
 La frase di Anassimandro è un po' più complessa da tradurre:
 
 > Tutte le cose hanno origine l’una dall’altra nel *Big Bang* e periscono l’una nell’altra nel *Big Crunch*, secondo la necessità dell'Universo di rigenerarsi, evitando i due estremi della morte termica filo-entropica e della staticità dell'Uno filo-gravitazionale. Esse si rendono l’un l’altra giustizia, e si ricompensano per l’ingiustizia, in conformità con l’ordine del tempo, tenendo traccia nei *Cookie* di ciò che stato fatto (per il) bene e ciò che è stato fatto (per il) male*
+
+Infine, una differenza rilevante fra il *C'hi++* e alcune religioni canoniche, è che se uno scienziato ne mette in discussione i precetti, non lo manda al rogo, ma lo ringrazia e, male che vada, lo assilla con sette pagine di affermazioni deliranti.
 
 ## Sul bordo della cassa
 
@@ -149,9 +150,17 @@ Come dice il poeta (Max Gazzé, stavolta):
 > quello che dovevo dirti, io te l'ho detto
 
 Spero di non averla annoiata o infastidita.
-Ci tenevo a ringraziarla e mi faceva piacere raccontarle
-
+Ci tenevo a ringraziarla e mi faceva piacere raccontarle della mia strana teoria.
+Le allego il testo del libro, ma è un mammarone di 268 pagine e suppongo lei abbia di meglio da fare e da leggere (l'intervista, però è breve e racconta la genesi dello spazionismo in maniera molto più divertente di quanto avre potuto fare qui..).  
 Concludo con una domanda che non ha nulla a che vedere con il resto di questo messaggio: l'esempio del figlio che invia notizie al padre, che lei fa in "Buchi bianchi" è ispirato al racconto: "I sette cavalieri" di Buzzati?  
+
+Grazie,
+<br />
+<br />
+Carlo Simonelli
+<br />
+<br />
+Roma, Luglio 2025
 
 
 [^barze]: Reagan raccontava una barzelletta simile:<br /> https://www.youtube.com/watch?v=_wxAA-Wm-og
@@ -160,7 +169,5 @@ Concludo con una domanda che non ha nulla a che vedere con il resto di questo me
 
 [^bool]: Il concetto di “mossa buona“, negli Scacchi, non è intrinseco né alla scacchiera né ai pezzi, ma si riferisce a delle regole definite a livello superiore a quelle del semplice movimento dei pezzi; allo stesso modo, nei computer, il concetto di `true` e `false` è frutto di un arbitrio e funziona solo perché è condiviso al di fuori delle regole specifiche del linguaggio. Un esempio lampante di questo concetto sono le schede perforate, dove *true* è il vuoto, mentre *false* è la materia. 
 
-[^ad]: Nel mio pantheon personale, impersonifico questa tendenza in una Forza chiamata l'*Annosa Dicotomia fra ciò che desideriamo e ciò di cui abbiamo bisogno*, in contrapposizione alla Forza *Amore* (differente dall'accezione usuale di questo termine) che ci spinge a fare il nostro dovere.
-
-[^eden]: L'Annosa Dicotomia è sodale dell'Entropia; l'Amore è alleato della Gravità. 
+[^ad]: Nel mio pantheon personale, impersonifico questa tendenza in una Forza sodale dell'Entropia e chiamata l'*Annosa Dicotomia fra ciò che desideriamo e ciò di cui abbiamo bisogno*, in contrapposizione alla Forza *Amore* (differente dall'accezione usuale di questo termine), alleata della Gravità, che ci spinge a fare il nostro dovere.
 
