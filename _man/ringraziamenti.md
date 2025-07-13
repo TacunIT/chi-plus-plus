@@ -12,7 +12,7 @@ A mia madre, per la favola del Cavallo Fuggito e per aver piantato il seme da cu
 A mio padre, per avermi insegnato a distinguere uno scrittore onesto da uno disonesto, anche quando lo scrittore sono io.<br />
 A Wayne, per avermi regalato il libro.<br />
 A Claudio, per avermi insegnato a programmare i computer e per Coomaraswamy.<br />
-A Manuela, per Musashi.<br />s
+A Manuela, per Musashi.<br />
 A Luciano, per aver detto che il testo non si capiva.<br />
 A Carlo, per avermi mostrato il mio errore.<br />
 Al Cane Lele, per avermi aiutato a capire.<br />
