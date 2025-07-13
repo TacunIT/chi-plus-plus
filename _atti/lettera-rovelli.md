@@ -148,8 +148,8 @@ Come dice il poeta (Max Gazzé, stavolta):
 > Ora ti saluto, è tardi, vado a letto<br />
 > quello che dovevo dirti, io te l'ho detto
 
-
-https://chiplusplus.org/man/memoria#dottrina
+Spero di non averla annoiata o infastidita.
+Ci tenevo a ringraziarla e mi faceva piacere raccontarle
 
 Concludo con una domanda che non ha nulla a che vedere con il resto di questo messaggio: l'esempio del figlio che invia notizie al padre, che lei fa in "Buchi bianchi" è ispirato al racconto: "I sette cavalieri" di Buzzati?  
 
