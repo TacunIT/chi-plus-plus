@@ -1,3 +1,10 @@
+## 1.3.4 (July 13, 2025)
+  - Corretto errore nei Ringraziamenti
+  - Redazione lettera Rovelli
+  - Modifiche minori all'index
+  - Rimossa Inroduzione per revisione
+  - Redazione lettera per la LUISS
+
 ## 1.3.3 (July 04, 2025)
   - Revisione dell'intervista
   - Redazione presentazione
