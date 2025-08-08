@@ -4,6 +4,7 @@ title:      C'hi++
 h2:         Proposta per una metafisica open-source
 class:      index
 footer:     true
+og_img:     "/assets/img/og-img/indice.jpg"
 excerpt:    "Il C'hi++ è un tentativo di spiegare il significato dell'Esistenza nei termini dell'informatica."
 ---
 
