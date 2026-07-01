@@ -1,0 +1,188 @@
+better-bow:
+    "One day a disciple asked Master Canaro: “Master, which kind of bow shoots best?”<br />
+    The master answered: “The one you use every day.”<br />
+    The disciple then asked: “Master, does this mean one could use an unsuitable programming language, as long as the goal is reached?”<br />
+    The master smiled benevolently and said: “Please, go meditate on the senselessness of your questions while you clean the common latrines.”<br />
+    For a long time I couldn't understand Master Canaro's behavior. For a while, I believed the error lay in that “best” in the first question, and that the master had deliberately given an imprecise answer in order to carry a poorly framed line of reasoning to its extreme conclusions, but I was wrong.<br />
+    The truth was that Master Canaro, as he himself confessed to me, was trying to offload his turn at cleaning the latrines onto someone else, and the young and impetuous disciple had given him the opportunity.<br />"
+
+chi-requirements:
+        "<ul>
+        <li>limit the number of dogmas;</li>
+        <li>limit metaphysical elements and matters accepted on faith;</li>
+        <li>do not present itself as the One Unquestionable Truth, but as a certainly incomplete and perfectible approximation of the Truth;</li>
+        <li>recognize the contradictions of the doctrine and analyze them objectively, even if this leads to modifying the doctrine itself.</li>
+        </ul>"
+
+computer-aunt:
+    "One day, Master Canaro's aunt called him and told him her computer had stopped working.<br />
+    “It turns on, but it won't connect to the Internet and it can't send email. Please, come and fix it.”<br />
+    So Master Canaro went to his aunt's house and asked her to show him the computer that wasn't working.
+    His aunt led him into her study and turned on the laptop sitting on the desk.
+    As expected, the computer started up normally, but when Master Canaro tried to open the browser, an error message appeared.
+    The Master then tried to open the email program, but once again an error message appeared.<br />
+    Under his aunt's increasingly anguished gaze, Master Canaro examined the network settings, checked that the modem was working, and updated the system files, but the problem remained; so, the Master picked up the computer and threw it out the window.<br />
+    “What have you done?!” his aunt exclaimed, aghast.<br />
+    “It wasn't working, so I threw it out,” the Master answered.<br />
+    “But couldn't it have been fixed?” his aunt asked, still unable to grasp what had happened.<br />
+    “Maybe, but it would have taken a lot of time: better to throw it away.”<br />
+    “And how am I supposed to work now, without a computer?” his aunt asked, stunned. Master Canaro shrugged.<br />
+    “No idea, but you couldn't have worked with that one either, since it was broken.”<br />
+    “I know it was broken!” his aunt exclaimed. “But when something necessary is broken, you fix it, you don't throw it away!”<br />
+    Far from looking contrite, Master Canaro stood up and, staring his aunt in the eye, exclaimed:<br />
+    “And what about you people, back in '68?!”"
+
+god-good:
+    "Man cannot say whether God is good or not, because one cannot classify the essence of the Creator with the attributes of the created. It would be as if the bytes of a computer wondered whether the Programmer were worth 1 or 0."
+
+religion-errors:
+    "<ul>
+    <li>dogmas, which are the foundations of doctrines, are easily attacked because they cannot be proven, only accepted on faith;</li>
+    <li>a religion may have difficulty modifying its own doctrine, even when it's evident that one of its dogmas is wrong;</li>
+    <li>challenging a dogma almost inevitably causes a split, and splits are likely to lead to conflicts.</li></ul>"
+
+human-errors:
+    "<ul><li>the tendency to defend one's own principles even by means that
+        contradict those very principles;</li>
+    <li>the tendency to let one's hopes influence
+        one's objectivity.</li></ul>"
+
+philosophy-reverse-engineering:
+    "Philosophy is the <i>reverse engineering</i> of the Universe. System analysis can happen at several levels, from the user interface down to binary code. Analyzing at low levels is harder and leads, at best, to knowledge of the operating mechanics, not of the business rules."
+
+feminism:
+    "A hundred years of feminism cannot beat a hundred thousand years of evolution."
+
+malice:
+    "Never attribute to malice what can be explained by stupidity."
+
+sailor:
+    "The Good Programmer is like a sailor who, before a long voyage, checks all of his deck equipment, taking apart every single item and replacing anything that might break, because he doesn't know what will happen once he's out at sea."
+
+metaphysics:
+    "Stripped of their trappings and reduced to their essential features, the various metaphysical hypotheses have much in common, because they are all, in one way or another, the answer to the same need: the search for a justification for our existence."
+
+ikebarba:
+    ""
+lennon:
+    "I don't believe the conversion story. David Chapman killed John Lennon because he thought there was “only sky” above him, and that only in this way could he give meaning to his existence."
+
+paranoids:
+    "I once asked Master Canaro: “Master, what did paranoid people do before computer science was invented?”
+    The Master thought about it for a while, then answered: “They moored boats.”"
+
+reason:
+    "When I was a young <i>project manager</i> and argued with my clients, I always tried to prove to them that I was right; now I just try to do what needs to be done."
+
+oo-religions:
+    "Could the various religions be derived forms of one and the same original mysticism?
+    Do there exist common “member data” and functions, redefined over time, but tracing back to an initial body of beliefs (or notions)?
+    Even just on this map, several can be found (e.g. Empedocles -> Poe).
+    Just as the classes of an Object-Oriented language are redefined to fit a specific context of use, so too the original Mysticism may have been “overloaded” to fit a specific place or time.
+    If that were the case, the further back you go in time — and thus in the class hierarchy — the closer you should get to the true characteristics of the Mysticism.
+    Is it possible to define a hierarchy of classes descending from the abstract class <code>Creed</code>?
+    Simplifying a great deal (since it's 3 a.m.): Buddha and Zoroaster influence the Greeks, who influence the Jews, who in turn influence the Christians, who eventually produce the Jehovah's Witnesses...
+    Likewise (again simplifying), C++ evolved from C, and Java from C++."
+
+reward-after-death:
+    "Those who strive, in this life, to follow the precepts of their religion because they think they will be rewarded for it after death, are wrong twice over."
+
+universe-cpp:
+    "<h3>Last page of Master Canaro's diary (April 8)</h3> I'm at the office, working, when the phone rings. The voice that answers is rather deep and has a curious echo.
+    It says:
+    <br />-&nbsp;Canaro, it's God, I need you.
+    <br />-&nbsp;Marco, I'm busy, talk later.
+    <br />I hang up. A moment later the phone rings again. This time I pay attention to the type of ring and deduce it's an outside call.
+    <br />-&nbsp;Canaro, I'm not your colleague, I really am God. I need you to help me port the universe to C++.
+    <br />I can't help but smile.
+    <br />-&nbsp;Cute. And the voice synthesizer seems to work pretty well too. Look, let me finish this report and I'll buy you a coffee, but let me work for now.
+    <br />I hang up again, and again the wretched thing makes its voice heard. It's an outside line, I can't risk it: it could be a client, but I already know that..
+    <br />-&nbsp;Canaro, listen to me once and for all: I really am God and I need you to solve a problem for me.
+    <br />I'm about to say something I'll regret, but the voice goes on:
+    <br />-&nbsp;If you don't believe me, unplug the phone.
+    <br />-&nbsp;Oh, come on..
+    <br />-&nbsp;Unplug it!
+    <br /> More out of curiosity than anything else, I decide to call the bluff. I unplug it.
+    <br />-&nbsp;Do you believe me now?
+    <br /> I have to admit that for a moment my skepticism wavers. I look for a possible explanation.
+    <br />-&nbsp;You put a receiver in the handset.
+    <br />-&nbsp;Stubborn, eh? All right: pick a random object.
+    <br />-&nbsp;To do what?
+    <br />-&nbsp;To use as a handset, one your colleague couldn't have tampered with.
+    <br />-&nbsp;Marco, please..
+    <br />-&nbsp;Come on, what does it cost you? Since you're so sure..
+    <br />-&nbsp;Is my pipe okay?
+    <br />-&nbsp;Whatever you like: hold it up to your ear.
+    <br />Let's see where he's going with this: I take my pipe out of its leather case and hold the bowl up to my ear.
+    <br />-&nbsp;Done, -&nbsp;I say, and meanwhile I look around, waiting for the prank.
+    <br />-&nbsp;I know, -&nbsp;the voice is in the briar bowl. -&nbsp;Now, if we could please get back to our phone conversation.. I wouldn't want someone to walk in and see you talking to a pipe.
+    <br />
+    <br />-&nbsp;Let me start by saying I don't understand anything about these computer things, -&nbsp; he tells me as soon as I've plugged the phone back in.
+    <br />-&nbsp;My son, on the other hand, knows how to use computers, and he told me it would be better to port the universe to an object-oriented language, suggesting this C++. Now, you see, I'm strong in the natural sciences, not in computer science, and all these technical terms are a mystery to me: what does it mean to port something? And what are object-oriented languages?
+    <br />
+    “Good question,” I thought. Years earlier I had written a C++ manual, and the object-oriented paradigm was the subject of the first chapter. If only he had read it..
+    <br />-&nbsp;I also skimmed through your book, but I didn't understand a thing: you write terribly, let me tell you. And then, I thought, who knows how many things have changed in the meantime, so I decided to call you.
+    <br />-&nbsp;First of all, thank you for the compliments, and then, to answer your question, porting something means rewriting an application in a programming language different from the one it was originally written in.
+    <br />-&nbsp;And what's the purpose of that?
+    <br />-&nbsp;Usually to take advantage of the new language's capabilities, or to be able to use the application on a system where the old language isn't supported.
+    <br />-&nbsp;Like translating the ten commandments from Hebrew into Latin?
+    <br />-&nbsp;Something like that.
+    <br />-&nbsp;And this “C++”? What does “object-oriented language” mean?
+    <br />-&nbsp;That instead of abstract data types like numbers and characters, it lets you use data types more similar to real things.
+    <br />-&nbsp;I don't understand.
+    <br />-&nbsp;Old programming languages forced the programmer to use only predefined data types: numbers, letters, dates. That's fine for a certain kind of application, but it makes it hard to write more complex applications where it can help to have a language capable of handling new, user-defined data types as well. In C++, the language your son recommended to you, this is achieved by means of classes.
+    <br />-&nbsp;Like in zoology?
+    <br />-&nbsp;Sort of. By class we mean a non-standard data type, for which you can define the behavior.
+    <br />-&nbsp;Give me an example, I don't get it. And also, enough with this formal “you”, let's switch to the informal one, it's simpler.
+    <br />-&nbsp;Let's say you have two strings..
+    <br />-&nbsp;I don't wear shoes with strings, I wear Birkenstock sandals.
+    <br />-&nbsp;I meant sequences of characters. Now, in the way a computer normally handles data, it makes no sense to add two strings together, since it's not a numeric data type, but you can define a “String” class that, if subjected to addition, does something sensible.
+    <br />-&nbsp;Like what?
+    <br />-&nbsp;Suppose you have any string A.
+    <br />-&nbsp;Is “Foo” okay?
+    <br />-&nbsp;Original. And suppose you want to join it to another string B.
+    <br />-&nbsp;“Bar”.
+    <br />-&nbsp;Also quite original. Anyway, you would write the instruction: C = A + B, and string C would contain: “FooBar”.
+    <br />-&nbsp;I'll keep that in mind the next time I need to write “FooBar”.
+    <br />-&nbsp;It was an example.
+    <br />-&nbsp;I still don't get why they're called “object-oriented languages”.
+    <br />-&nbsp;Because they don't handle raw data, but objects with a well-defined behavior of their own.
+    <br />-&nbsp;I need to see it in practice. Anyway, what would be the advantages of this translation?
+    <br />-&nbsp;In the case of C++, easier analysis.
+    <br />-&nbsp;But the analysis of the application already exists.
+    <br />-&nbsp;And easier debugging.
+    <br />-&nbsp;Sorry?
+    <br />-&nbsp;Fixing errors.
+    <br />-&nbsp;The current application has been running forever and has never given any problems.
+    <br />-&nbsp;It also increases the chances of reusing the code in other applications.
+    <br />-&nbsp;That sounds about as useful as the string “FooBar”.
+    <br />-&nbsp;Does the production process have a quality certification?
+    <br />-&nbsp;I saw that it was good: I'd say that's enough.
+    <br />-&nbsp;Well, then I don't see any need to rewrite it.
+    <br />-&nbsp;That's exactly what I told my son, but he started
+    talking about this C++ and that other thing, the one named after an island, what's it called..
+    <br />-&nbsp;Java? It's not named after an island, but after a type of coffee blend.
+    <br />-&nbsp;Whatever it is. The point is: what's the need to rewrite everything?
+    <br />-&nbsp;As far as I can tell, I'd say none..
+    <br />-&nbsp;Good, thank you.
+    <br />
+    He hangs up (or whatever it is), but after a while he calls back.
+    <br />-&nbsp;Canaro, I talked to my son and he says I'm old-fashioned, that the current application is obsolete, that users are complaining, and that this port is necessary. I don't understand anything anymore, what should I do?
+    <br />
+    I'm about to answer “God only knows”, but fortunately I hold back and resort to the standard answer for these cases:
+    <br />-&nbsp;We could do a feasibility study and then decide..
+    <br />-&nbsp;Sounds like a good idea. When can you start?
+    <br />-&nbsp;I don't know, I have to ask my manager.
+    <br />-&nbsp;All right: ask him and let me know.
+    <br />
+    He hangs up without telling me how I'm supposed to “let him know”, but that's the least of my problems. The first one, right now, is how to tell my boss about this without being taken for a madman.
+    <br />
+    <br />-&nbsp;If you're hoping to get some sick leave for a nervous breakdown, forget it. You've said (and above all done) far stranger things.
+    <br />-&nbsp;I know it's crazy, but it's true: God called me and asked me to rewrite the Universe in C++.
+    <br />-&nbsp;Canaro, cut it out and go finish the analysis, we have to bring it to the client this afternoon.
+    <br />-&nbsp;And if he calls me again, what should I tell him?
+    <br />-&nbsp;Tell him how badly you got the estimates wrong on the last project, so he'll go to someone else.
+    <br />
+    Defeated, I go back to my cubbyhole, where I get my second pipe of the day ready ahead of time. As I'm fiddling with the tobacco, the phone rings for the umpteenth time, but it's not who I expect, it's my boss calling me into his office.
+
+    “A summons from the king rarely bodes well..”, I think, but when I get to the well-known room with its unmistakable smell of Tuscan cigar, I find myself facing a man in a very different mood from the one who dismissed me a little while ago. His voice is calm, his manner kind, and he shows the utmost

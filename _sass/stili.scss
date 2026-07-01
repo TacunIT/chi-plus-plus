@@ -1,50 +1,48 @@
-
 @font-face {
-  font-family: Inconsolata;
-  src: url(/assets/fonts/Inconsolata-Regular.ttf);
+    font-family: Inconsolata;
+    src: url(/assets/fonts/Inconsolata-Regular.ttf);
 }
 @font-face {
-  font-family: Inconsolata;
-  src: url(/assets/fonts/Inconsolata-Bold.ttf);
-  font-weight: bold;
+    font-family: Inconsolata;
+    src: url(/assets/fonts/Inconsolata-Bold.ttf);
+    font-weight: bold;
 }
 @font-face {
-  font-family: Simonetta;
-  src: url(/assets/fonts/Simonetta-Regular.ttf);
+    font-family: Simonetta;
+    src: url(/assets/fonts/Simonetta-Regular.ttf);
 }
 @font-face {
-  font-family: Simonetta;
-  src: url(/assets/fonts/Simonetta-Italic.ttf);
-  font-style: italic, oblique;
+    font-family: Simonetta;
+    src: url(/assets/fonts/Simonetta-Italic.ttf);
+    font-style: italic, oblique;
 }
 @font-face {
-  font-family: Simonetta;
-  src: url(/assets/fonts/Simonetta-Black.ttf);
-  font-weight: bold;
+    font-family: Simonetta;
+    src: url(/assets/fonts/Simonetta-Black.ttf);
+    font-weight: bold;
 }
 @font-face {
-  font-family: Simonetta;
-  src: url(/assets/fonts/Simonetta-BlackItalic.ttf);
-  font-style: italic, oblique;
-  font-weight: bold;
+    font-family: Simonetta;
+    src: url(/assets/fonts/Simonetta-BlackItalic.ttf);
+    font-style: italic, oblique;
+    font-weight: bold;
 }
 @font-face {
-  font-family: Garamond;
-  src: url(/assets/fonts/EBGaramond-Regular.ttf);
+    font-family: Garamond;
+    src: url(/assets/fonts/EBGaramond-Regular.ttf);
 }
 @font-face {
-  font-family: Garamond;
-  src: url(/assets/fonts/EBGaramond-Italic.ttf);
-  font-style: italic, oblique;
+    font-family: Garamond;
+    src: url(/assets/fonts/EBGaramond-Italic.ttf);
+    font-style: italic, oblique;
 }
-
 
 * {
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    padding:0;
-    margin:0
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 .titolo {
@@ -68,16 +66,18 @@
     text-align: center !important;
 }
 
-
 /**
  *
  *  Stili di base.
  *
  */
 
-H1, H2, H3, H4 {
+H1,
+H2,
+H3,
+H4 {
     margin: auto;
-	page-break-after: avoid;
+    page-break-after: avoid;
     color: $colorHeaders;
 }
 H1 {
@@ -89,7 +89,7 @@ H2 {
     margin-top: 1rem;
 }
 H3 {
-    font-size:  $fontSizeH3;
+    font-size: $fontSizeH3;
     margin-top: 1rem;
 }
 BLOCKQUOTE H3 {
@@ -105,9 +105,11 @@ HR {
     margin: 0.5rem auto;
 }
 HR:before {
- content: '氣';
+    content: "氣";
 }
-CODE, PRE, P.code {
+CODE,
+PRE,
+P.code {
     background-color: $codeBackground;
     text-align: left;
     font-size: 11pt;
@@ -123,7 +125,10 @@ B, STRONG {
     color: $colorGold;
 }
 */
-EM, I, B, STRONG  {
+EM,
+I,
+B,
+STRONG {
     color: $colorGold;
     font-size: inherit;
     /**
@@ -139,7 +144,7 @@ P {
     hyphens: auto;
 }
 P.newpage {
-  page-break-after: always;
+    page-break-after: always;
 }
 /** Stili per le citazion dal Metta Sutra */
 P.metta {
@@ -181,7 +186,7 @@ SUP {
     line-height: 0;
 }
 DIV {
- display: inline-block;
+    display: inline-block;
 }
 UL {
     list-style-type: square;
@@ -198,7 +203,7 @@ IMG.badge {
     height: 1.2rem;
 }
 
-DIV#cane-lele{
+DIV#cane-lele {
     display: block;
     text-align: center;
     margin-top: 3rem;
@@ -208,7 +213,10 @@ DIV#cane-lele IMG {
     padding: 0.5rem;
     border: solid 1px $colorGold;
 }
-TABLE, TD, TR, TH {
+TABLE,
+TD,
+TR,
+TH {
     border-collapse: collapse;
     border: solid 1px $borderColor;
     padding: 0.25rem 0.5rem;
@@ -220,7 +228,6 @@ TABLE TH {
     font-weight: bold;
     text-align: center !important;
 }
-
 
 /**
  *
@@ -270,20 +277,19 @@ FOOTER {
     padding: 3rem 0 0 0;
 }
 
-
 /**
  *
  *  Stili dei menu
  *
  */
 NAV {
-     border-top: solid 1px;
-     display: inline-block;
-     border-bottom: solid 1px;
-     border-color: $colorGold;
-     width: 100%;
-     font-size: 0;
-     margin: 1rem 0;
+    border-top: solid 1px;
+    display: inline-block;
+    border-bottom: solid 1px;
+    border-color: $colorGold;
+    width: 100%;
+    font-size: 0;
+    margin: 1rem 0;
 }
 NAV A {
     font-variant-caps: petite-caps;
@@ -300,7 +306,7 @@ HEADER NAV.menu-top A {
 /**
  *  Nasconde le icone nel menu delle pagine
  */
-BODY.pagina HEADER NAV.menu-top A I ,
+BODY.pagina HEADER NAV.menu-top A I,
 BODY.proposta HEADER NAV.menu-top A I {
     display: none;
 }
@@ -335,10 +341,9 @@ MAIN {
     line-height: 1.5;
 }
 
-MAIN P+P {
+MAIN P + P {
     margin-top: 1rem;
 }
-
 
 MAIN.redazione {
     padding: 5rem 1rem;
@@ -349,7 +354,7 @@ MAIN.bozza {
     padding: 5rem 1rem;
 }
 
-MAIN.bozza::before ,
+MAIN.bozza::before,
 MAIN.redazione::before {
     font-size: 1rem;
     font-weight: bold;
@@ -366,10 +371,9 @@ MAIN.redazione::before {
     content: "REDAZIONE";
 }
 
-
 MAIN P.immagine {
     margin: 1rem auto;
-    text-align: center
+    text-align: center;
 }
 
 MAIN P.immagine.chi {
@@ -432,7 +436,7 @@ BODY.manuale DIV.page {
     min-height: 100vh;
 }
 BODY.manuale HEADER titolo-2 {
-    float: unset
+    float: unset;
 }
 BODY.manuale HEADER DIV.box.titoli {
     width: 100%;
@@ -460,17 +464,23 @@ BODY.manuale.copertina H1 {
     margin-top: 2rem;
     margin-bottom: 0;
     font-size: 3rem;
-    color:$colorGold;
+    color: $colorGold;
 }
 BODY.manuale.copertina H2 {
     padding: 0;
     font-size: 1.4rem;
 }
 BODY.manuale.copertina SECTION#info {
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 BODY.manuale.copertina SECTION#info H2 {
     font-size: 12pt;
+}
+BODY.manuale.copertina SECTION#info TABLE,
+BODY.manuale.copertina SECTION#info TABLE TR,
+BODY.manuale.copertina SECTION#info TABLE TH,
+BODY.manuale.copertina SECTION#info TABLE TD {
+    border: none;
 }
 BODY.manuale.dedica MAIN {
     margin: 20vh auto;
@@ -478,10 +488,10 @@ BODY.manuale.dedica MAIN {
 BODY.manuale.dedica MAIN P {
     text-align: center;
     max-width: 22rem;
-    margin: auto
+    margin: auto;
 }
 BODY.manuale SECTION.indice {
- text-align: center;
+    text-align: center;
 }
 BODY.manuale SECTION.indice H1 {
     margin: 3rem 0 2rem 0;
@@ -501,26 +511,25 @@ BODY.manuale SECTION.indice H3.bozza A {
     color: $bozzaAColor;
 }
 BODY.manuale SECTION.indice HR {
-    margin: 2rem 0
+    margin: 2rem 0;
 }
 BODY.manuale SECTION.indice H3 {
     margin: 0 auto;
     position: relative;
-/*    font-size: 1.3rem; */
+    /*    font-size: 1.3rem; */
 }
 BODY.manuale SECTION.indice H3.home {
     margin-top: 4rem;
 }
 BODY.manuale SECTION.indice MAIN {
- width: auto;
- text-align: center
+    width: auto;
+    text-align: center;
 }
 BODY.manuale SECTION.indice IMG.logo {
     width: 100px;
-    margin: auto
+    margin: auto;
 }
-BODY.manuale SECTION.indice IMG.badge
-{
+BODY.manuale SECTION.indice IMG.badge {
     position: absolute;
     top: 0.5rem;
     margin-left: 1rem;
@@ -530,7 +539,8 @@ BODY.manuale SECTION.indice IMG.badge
 BODY.manuale H1 {
     margin: 4rem 0 2rem 0;
     text-align: center;
-}f
+}
+f
 /** Nasconde il link alla dottrina */
 BODY.manuale H1 A {
     text-decoration: none;
@@ -565,7 +575,7 @@ BODY.manuale BLOCKQUOTE.incluso {
 BLOCKQUOTE.motto {
     text-align: right;
     padding: 2rem 0 4rem 33%;
-    font-size: 0.9em
+    font-size: 0.9em;
 }
 
 IFRAME.pdf {
@@ -649,15 +659,15 @@ BODY.proposta MAIN h4 {
 }
 BODY.proposta MAIN h2:before {
     counter-increment: h2;
-    content: counter(h2) ". "
+    content: counter(h2) ". ";
 }
 BODY.proposta MAIN h3:before {
     counter-increment: h3;
-    content: counter(h2) "." counter(h3) ". "
+    content: counter(h2) "." counter(h3) ". ";
 }
 BODY.proposta MAIN h4:before {
     counter-increment: h4;
-    content: counter(h2) "." counter(h3) "." counter(h4) ". "
+    content: counter(h2) "." counter(h3) "." counter(h4) ". ";
 }
 BODY.proposta MAIN IMG {
     max-width: 100%;
@@ -678,7 +688,6 @@ BODY.index MAIN SECTION.citazione.pagina {
     padding-top: 3rem;
 }
 
-
 /**
  * Stili per le domande.
  * Le domande sui dogmi sono OL, mentre quelle su Hitler sono UL.
@@ -696,7 +705,7 @@ UL.domande {
 }
 .domande LI {
     font-style: italic;
-    padding-bottom: 0.5rem
+    padding-bottom: 0.5rem;
 }
 
 /** Sili per i dogmi */
@@ -704,7 +713,7 @@ OL.dogmi {
     color: $dogmiColor;
 }
 OL.dogmi LI {
-    font-variant: small-caps
+    font-variant: small-caps;
 }
 
 /** Numeri romani per le cose da fare */
@@ -720,22 +729,22 @@ OL.da-fare {
  *  differente per web o stampa, vedi sotto @meda print
  */
 BODY.proposta SECTION.copertina {
-    margin:auto;
-    padding: 6.6% 1rem 0 ;
+    margin: auto;
+    padding: 6.6% 1rem 0;
     counter-reset: h2;
-    text-align:center;
+    text-align: center;
 }
-BODY.proposta SECTION.copertina H2  {
+BODY.proposta SECTION.copertina H2 {
     font-size: 1.5rem;
     padding: 0;
 }
-BODY.proposta SECTION.copertina H3  {
+BODY.proposta SECTION.copertina H3 {
     font-size: 1.2rem;
     padding: 0;
     color: $h3CopertinaColor;
     margin-bottom: 2rem;
 }
-BODY.proposta SECTION.copertina H2:before ,
+BODY.proposta SECTION.copertina H2:before,
 BODY.proposta SECTION.copertina H3:before {
     content: none;
 }
@@ -754,7 +763,7 @@ LABEL {
 }
 
 LABEL:after {
-    content: ':';
+    content: ":";
 }
 
 /**  Dedica e citazione in testa */
@@ -771,7 +780,7 @@ SECTION.citazione {
 }
 
 SECTION.citazione SPAN {
-    font-style: normal
+    font-style: normal;
 }
 
 /**
@@ -783,7 +792,7 @@ SECTION.note {
     page-break-before: always;
     padding: 3rem 0;
 }
-SECTION.note OL ,
+SECTION.note OL,
 SECTION.bibliografia UL {
     font-size: 1rem;
     margin-left: 0;
@@ -792,7 +801,7 @@ SECTION.bibliografia UL {
 SECTION.note OL {
     margin-bottom: 3rem;
 }
-SECTION.note LI ,
+SECTION.note LI,
 SECTION.bibliografia LI {
     margin-bottom: 0.5rem;
 }
@@ -801,8 +810,8 @@ SECTION.note OL LI A {
 }
 SECTION.note OL LI A {
     color: #550;
-		font-weight: bold;
-		text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
 }
 SECTION.note OL LI:target {
     padding: 1rem 0.5rem;
@@ -817,20 +826,20 @@ SECTION.note OL LI BLOCKQUOTE {
     font-size: 1rem;
 }
 SECTION.note OL LI SPAN.autore {
-/*    font-variant-caps: small-caps; */
+    /*    font-variant-caps: small-caps; */
 }
 BODY.note SECTION.note OL {
-     margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 /**
  *
  *  Stili per log
  *
  */
- SECTION.elenco.post DIV.log {
-     padding-bottom: 2rem;
-     display: block;
- }
+SECTION.elenco.post DIV.log {
+    padding-bottom: 2rem;
+    display: block;
+}
 SECTION.elenco.post DIV.log A {
 }
 SECTION.elenco.post DIV.log P {
@@ -861,7 +870,7 @@ BODY.pagina.log MAIN P.tag {
     text-align: center;
 }
 
-BODY.pagina.log  P.data {
+BODY.pagina.log P.data {
     color: $dataColor;
     font-size: 0.9rem;
     padding-bottom: 2rem;
@@ -871,7 +880,7 @@ BODY.pagina.log  P.data {
 NAV.post {
     display: block;
     margin-top: 3rem;
-    text-align:center;
+    text-align: center;
     overflow: auto;
     border: none;
 }
@@ -903,27 +912,26 @@ BODY.pagina.log BLOCKQUOTE {
 }
 
 BODY.pagina.log BLOCKQUOTE.esergo {
-    margin:0rem 0 0rem auto;
-    width:61%;
-    font-size:0.9rem;
+    margin: 0rem 0 0rem auto;
+    width: 61%;
+    font-size: 0.9rem;
     text-align: left;
 }
 BODY.pagina.log BLOCKQUOTE SPAN {
     font-style: normal;
-   font-variant: small-caps;
+    font-variant: small-caps;
 }
 
 /**
  *  Stili per mobile
  */
 @media only screen and (max-width: 540px) {
-
     HEADER P.gira {
         display: block;
         color: #900;
     }
 
-/*
+    /*
     BODY.pagina HEADER NAV.menu-top A I ,
     BODY.proposta HEADER NAV.menu-top A I {
         display: initial;
@@ -936,16 +944,16 @@ BODY.pagina.log BLOCKQUOTE SPAN {
 }
 
 @media only screen and (max-width: 420px) {
-
     BODY {
     }
     H1 {
         font-size: 1.75rem;
     }
     H2 {
-        font-size: 1.2rem
+        font-size: 1.2rem;
     }
-    UL, OL {
+    UL,
+    OL {
         padding: 0 1rem 0 1.5rem;
     }
     BODY.pagina HEADER titolo-1 {
@@ -975,7 +983,6 @@ BODY.pagina.log BLOCKQUOTE SPAN {
         text-align: left;
     }
     DIV.testo P {
-        text-align: left
+        text-align: left;
     }
-
 }

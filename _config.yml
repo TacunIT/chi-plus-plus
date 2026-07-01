@@ -41,11 +41,11 @@ collections:
       - 03.indice.md
       - 04.introduzione.md
       - 05.prologo.md
-      - incipit.md
-      - mitopoietica.md
-      - programmatore.md
-      - sistemi-di-numerazione.md
-      - linguaggi-di-programmazione.md
+      - 06.incipit.md
+      - 07.mitopoietica.md
+      - 08.programmatore.md
+      - 09.sistemi-di-numerazione.md
+      - 10.linguaggi-di-programmazione.md
       - c-plus-plus.md
       - commenti.md
       - tipi-di-dato.md
@@ -73,11 +73,11 @@ collections:
       - 03.indice.md
       - 04.introduzione.md
       - 05.prologo.md
-      - incipit.md
-      - mitopoietica.md
-      - programmatore.md
-      - sistemi-di-numerazione.md
-      - linguaggi-di-programmazione.md
+      - 06.incipit.md
+      - 07.mitopoietica.md
+      - 08.programmatore.md
+      - 09.sistemi-di-numerazione.md
+      - 10.linguaggi-di-programmazione.md
       - c-plus-plus.md
       - commenti.md
       - tipi-di-dato.md
