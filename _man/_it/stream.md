@@ -510,7 +510,7 @@ Le persone di successo che si privano della vita sono pedoni che, arrivati alla 
 
 Il Maestro Canaro una volta mi disse:
 
-> {{ site.data.canaro.lennon }}
+> {{ site.data.canaro-it.lennon }}
 
 <!--
 

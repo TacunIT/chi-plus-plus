@@ -33,7 +33,7 @@ Non salvare mai un file se non sei certo che funzionerà come deve e cerca sempr
 Come di ho detto <a href="/it/programmatore#buon-programmatore" class="xref">in una delle nostre prime chiacchierate</a>, il Buon Programmatore non si accontenta della strada più rapida, ma cerca sempre quella più efficiente e sicura, perché sa che scrivere del buon codice costa meno che riparare del codice fatto male.
 Il Maestro Canaro, una volta disse:
 
-> {{ site.data.canaro.marinaio }}
+> {{ site.data.canaro-it.marinaio }}
 
 Il Buon Programmatore non può farne a meno, perché è nella sua natura; è questa, la differenza fra chi *fa* il programmatore e chi *è* un programmatore.  
 
@@ -389,7 +389,7 @@ Dato che le conseguenze nefaste di un errore architetturale potrebbero manifesta
 Il tuo peggior nemico, in questi casi, sarà il tuo orgoglio.
 Una volta, il Maestro Canaro mi disse:
 
-> {{ site.data.canaro.ragione }}
+> {{ site.data.canaro-it.ragione }}
 
 ---
 
@@ -658,7 +658,7 @@ Per fare ciò, dovrai tenere a mente alcuni fattori che influenzano il comportam
 Il primo, ovviamente, è l'influenza dell'Annosa Dicotomia, che, per mano del suo lacché il Marketing, spinge le persone a soddisfare i proprii desiderii invece che i proprii bisogni, creando degli schemi di valori fallaci e spingendoli a dimenticare che esistono per tutti la vecchiaia e la morte.   
 Il secondo fattore da considerare è la natura umana; ricorda:
 
-> {{ site.data.canaro.malizia }}
+> {{ site.data.canaro-it.malizia }}
 
 O, per dirla con De Santillana:
 
@@ -667,7 +667,7 @@ O, per dirla con De Santillana:
 Per derimere le questioni relative ai rapporti di coppia, invece, l'approccio più sicuro è quello antropologico.
 Come diceva il Maestro Canaro:
 
-> {{ site.data.canaro.femminismo }}
+> {{ site.data.canaro-it.femminismo }}
 
 Secondo lui, qualsiasi comportamento anomalo nell'ambito di una coppia può essere spiegato tenendo a mente tre principii:
 

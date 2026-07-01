@@ -158,7 +158,7 @@ Negli ultimi due secoli, però, la Scienza ha squarciato questo bozzolo, privand
 C'è un aneddoto apocrifo sul Maestro Canaro che parla proprio di questo:
 
 <blockquote class="incluso" id="zia">
-{{ site.data.canaro.computer-zia }}
+{{ site.data.canaro-it.computer-zia }}
 </blockquote>
 
 L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito come un paziente a cui sia diagnosticato un male incurabile ed ha elaborato il suo dolore secondo le cinque fasi definite dalla dottoressa Kübler Ross<a class="nota" href="/it/note#fn-kubler" id="kubler">2</a>:    

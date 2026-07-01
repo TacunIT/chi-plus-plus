@@ -544,15 +544,15 @@ Non essendo né un filosofo né un mistico, approcciò lo sviluppo della sua dot
 Per prima cosa fece un'analisi del "sistema in esercizio", evidenziandone i principali difetti; poi identificò delle vulnerabilità logiche delle religioni canoniche e definì delle linee-guida atte a prevenirle; infine, descrisse le caratteristiche del C'hi++, spiegando come queste avrebbero potuto risolvere alcuni dei problemi evidenziati in precedenza.
 Come scrisse nella <a href="/proposta#errori" class="xref">Proposta</a>, ci sono dei “bug” che possiamo considerare comuni a tutte le metafisiche:
 
-> {{ site.data.canaro.errori-religioni }}
+> {{ site.data.canaro-it.errori-religioni }}
 
 ed altri, che possiamo considerare comuni agli esseri umani:
 
-> {{ site.data.canaro.errori-umani }}
+> {{ site.data.canaro-it.errori-umani }}
 
 Per correggere o quanto meno mitigare questi problemi, la sua metafisica avrebbe dovuto:
 
-> {{ site.data.canaro.chi-requisiti }}
+> {{ site.data.canaro-it.chi-requisiti }}
 
 Il Maestro Canaro applicò allo sviluppo della sua *metafisica-non-metafisica* lo stesso approccio che adottava quando doveva realizzare un software.
 Ci sono due modi diversi di progettare un software: il primo consiste nell'analizzare tutti i sistemi che svolgono azioni simili, prendere il meglio di ciascuno e metterlo nel nuovo sistema; in alternativa, si può progettare il sistema da zero e solo quando se ne è definita per grandi linee la struttura, studiare le soluzioni adottate dagli altri, integrandole nel proprio programma se lo si ritiene utile.
@@ -602,11 +602,11 @@ Per certi versi anche la stessa Genesi biblica può essere considerata un'allego
 Il Maestro Canaro pensava che tutto questo fosse normale.
 Come scrisse nel <a href="{{ site.url_github }}/blob/master/MANIFEST.md" target="github">MANIFEST</a> GitHub del C'hi++:  
 
-> {{ site.data.canaro.metafisiche }}
+> {{ site.data.canaro-it.metafisiche }}
 
 In una nota della mappa mentale su cui basò lo sviluppo iniziale della dottrina, aggiunse:
 
-> {{ site.data.canaro.religioni-oo }}
+> {{ site.data.canaro-it.religioni-oo }}
 
 Solo alcuni anni dopo, annotò questa frase in un libro di Guenon:
 
