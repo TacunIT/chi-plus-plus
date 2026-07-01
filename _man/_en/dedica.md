@@ -3,13 +3,13 @@ status:     pubblicato
 layout:     manuale
 class:      dedica
 lang:       en
-translation_reference: dedica
-title:      Dedica
-h1:         Dedica
+title:      Dedication
+h1:         Dedication
 h2:         ""
 permalink:  /en/dedica
 no-index:   true
+translation_reference: dedica
 ---
 
-> Questo libro è dedicato ai miei nipoti.<br />
-> I tre che vivono in Francia e i tre miliardi che vivono anche altrove.
+> This book is dedicated to my nephews and nieces.<br />
+> The three who live in France, and the three billion who live everywhere else.

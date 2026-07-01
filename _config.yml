@@ -38,7 +38,7 @@ collections:
     order:
       - 01.copertina.md
       - 02.dedica.md
-      - indice.md
+      - 03.indice.md
       - introduzione.md
       - prologo.md
       - incipit.md
@@ -68,9 +68,9 @@ collections:
   en:
     output: true
     order:
-      - copertina.md
-      - dedica.md
-      - indice.md
+      - 01.copertina.md
+      - 02.dedica.md
+      - 03.indice.md
       - introduzione.md
       - prologo.md
       - incipit.md
