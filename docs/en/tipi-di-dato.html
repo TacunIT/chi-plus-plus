@@ -6,7 +6,7 @@
 
 
 <head>
-    <title>I tipi di dato |  C'hi++
+    <title>Data types |  C'hi++
 </title>
     <meta charset="utf-8" />
     <link      rel="canonical"          href="https://chiplusplus.org/en/tipi-di-dato" />
@@ -19,8 +19,8 @@
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
     <meta property="og:url"          content="https://chiplusplus.org/en/tipi-di-dato" />
     <meta property="og:type"         content="website" />
-    <meta property="og:title"        content="I tipi di dato" />
-    <meta property="og:description"  content="L'Universo è fatto di spazioni - Il Mondo ha la natura dell’Arte - René Guenon aveva ragione - Perché la luce non può andare più veloce." />
+    <meta property="og:title"        content="Data types" />
+    <meta property="og:description"  content="The Universe is made of spazioni - The World has the nature of Art - René Guénon was right - Why light can't go any faster." />
     <meta property="og:image:width"  content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image"        content="https://chiplusplus.org/assets/img/og-img/tipi-di-dato.jpg" />
@@ -60,9 +60,9 @@
     </a>
 
     <a
-        title="Go to: Bi(bli)ografia"
+        title="Go to: Struttura dei programmi C++"
         
-        href="/en/bibliografia"
+        href="/en/struttura-dei-programmi"
         
         class="right"
     >
@@ -73,19 +73,19 @@
         <main class="corpo pubblicato ">
         
             <h1><a href="#dottrina">
-                I tipi di dato</a>
+                Data types</a>
             </h1>
-            <blockquote class="motto">Tutto è byte</blockquote>
+            <blockquote class="motto">Everything is a byte</blockquote>
             <section class="testo">
-                <p>La varietà dei tipi di dato disponibili è la caratteristica principale del C++.</p>
+                <p>The variety of available data types is C++’s main distinguishing feature.</p>
 
-<p>Il C++ ha ereditato dal C una vasta gamma di tipi di dato.
-A seconda della loro natura, possiamo dividere questi tipi di dato in due gruppi: i dati <em>scalari</em> e i dati <em>aggregati</em>.<br />
-I tipi di dato <em>scalari</em> sono: <code>void</code>, <code>bool</code>, <code>char</code>, <code>wchar_t</code>, <code>int</code>, <code>float</code>, <code>double</code> e permettono di gestire gli elementi classici di un programma: i numeri interi, i numeri decimali, le lettere e i valori booleani.<br />
-I tipi di dato <em>aggregati</em> sono gli <em>array</em>, le <em>unioni</em>, gli <em>emumerati</em>, le <em>strutture</em> e le <em>classi</em>.
-Questi, come dice anche il loro nome, sono costituiti dall’aggregazione di più dati scalari dello stesso tipo o di tipi differenti.<br />
-Il prossimo brano di codice — fastidiosamente didascalico, nella sua sostanziale inutilità — mostra i principali tipi di dato del C++.
-Contiene molti elementi di cui ancora non ti ho parlato, quindi non preoccuparti se non capisci del tutto ciò che fa.</p>
+<p>C++ inherited a wide range of data types from C.
+Depending on their nature, we can divide these data types into two groups: <em>scalar</em> data and <em>aggregate</em> data.
+The <em>scalar</em> data types are: <code>void</code>, <code>bool</code>, <code>char</code>, <code>wchar_t</code>, <code>int</code>, <code>float</code>, <code>double</code>, and they let you handle a program’s classic elements: integers, decimal numbers, letters, and boolean values.
+The <em>aggregate</em> data types are <em>arrays</em>, <em>unions</em>, <em>enums</em>, <em>structs</em>, and <em>classes</em>.
+These, as their name suggests, are made up of the aggregation of several scalar data items of the same type or of different types.
+The next piece of code — annoyingly didactic, in its essential uselessness — shows the main data types of C++.
+It contains many elements I haven’t told you about yet, so don’t worry if you don’t fully understand what it does.</p>
 
 <pre><code>#include &lt;iostream&gt;
 
@@ -153,7 +153,7 @@ int main()
 
 </code></pre>
 
-<p>Compilando ed eseguendo questo codice, otterrai:</p>
+<p>Compiling and running this code, you’ll get:</p>
 
 <pre><code>% g++ src/cpp/tipi-di-dato-principali.cpp -o src/out/esempio
 % src/out/esempio
@@ -165,34 +165,34 @@ array:abcdefghilmnopqrstuvz
 coloreRGB:green
 </code></pre>
 
-<p>Il tipo di dato <code>void</code> non ha né una dimensione né un valore e può essere assegnato solo a un puntatore o a una funzione che non torna alcun tipo di valore, come la funzione <code>nome_colore</code> della classe <code>Colore</code>.<br />
-Il tipo di dato <code>bool</code> è utilizzato per gestire i valori booleani.
-Può assumere solo due valori: <code>true</code> o <code>false</code>, quindi ha la dimensione minima possibile, ovvero un byte.<br />
-Il tipo <code>int</code> permette di gestire i numeri interi.
-Di solito ha una dimensione di quattro byte, che può essere aumentata o diminuita per mezzo di parole-chiave dette:
-<a href="#modificatori" class="xref">modificatori</a>.<br />
-I tipi <code>float</code> e <code>double</code> si utilizzano per gestire i numeri decimali.
-Hanno una lunghezza di quattro e otto byte rispettivamente e una precisione di sette e quindici cifre decimali.<br />
-I tre elementi che compaiono al di fuori della funzione <code>main</code> sono tipi di dato <em>aggregati</em> e permettono di definire dei tipi di dati non standard.<br />
-Gli <code>enum</code> permettono di assegnare dei nomi a dei valori, rendendo più facile la programmazione.
-Nell’esempio, l’<em>enum</em> <code>RGB</code> assegna un nome a tre valori della codifica RGB.
-Questo nuovo tipo di dato è utilizzato nella struttura <code>ColoreRGB</code>.<br />
-Le <code>struct</code> permettono di creare degli insiemi di dati eterogenei.
-La variabile <code>ColoreRGB</code> contiene due variabili differenti: un valore di tipo <code>RGB</code> e un
-<a href="#puntatori" class="xref">puntatore</a> <br />
-a carattere.<br />
-Tutti i tipi di dati che abbiamo visto finora sono un retaggio del linguaggio <em>C</em>.
-La classe <code>Colore</code>, invece, è una delle novità introdotte dal C++ e contiene due elementi: una struttura di tipo <code>ColoreRGB</code> e una funzione che mostra il nome del colore.<br />
-Attenzione, però: nessuno di questi signori è in realtà ciò che afferma di essere.
-Nella variabile <code>booleano</code> non c’è il valore <code>true</code> o <code>false</code>, ma un valore binario che il sistema considera tale.
-Allo stesso modo, nella variabile <code>carattere</code>, non c’è la lettera <code>C</code>, ma il valore binario corrispondente alla codifica ASCII della lettera <code>C</code>.
-Ogni tipo di dato non è altro che il nome di una quantità di memoria.
-Ricordatelo, perché questo è la chiave di tutto.</p>
+<p>The <code>void</code> data type has neither a size nor a value, and can only be assigned to a pointer or to a function that returns no value at all, like the <code>nome_colore</code> function of the <code>Colore</code> class.
+The <code>bool</code> data type is used to handle boolean values.
+It can only take two values, <code>true</code> or <code>false</code>, so it has the smallest possible size, namely one byte.
+The <code>int</code> type lets you handle integers.
+It’s usually four bytes in size, which can be increased or decreased by means of keywords called
+<a href="#modificatori" class="xref">modifiers</a>.
+The <code>float</code> and <code>double</code> types are used to handle decimal numbers.
+They are four and eight bytes long respectively, with a precision of seven and fifteen decimal digits.
+The three elements that appear outside the <code>main</code> function are <em>aggregate</em> data types, and let you define non-standard data types.
+<code>enum</code>s let you assign names to values, making programming easier.
+In the example, the <code>RGB</code> <em>enum</em> assigns a name to three values of the RGB encoding.
+This new data type is used in the <code>ColoreRGB</code> struct.
+<code>struct</code>s let you create sets of heterogeneous data.
+The <code>ColoreRGB</code> variable contains two different variables: a value of type <code>RGB</code> and a
+<a href="#puntatori" class="xref">pointer</a>
+to a character.
+All the data types we’ve seen so far are a legacy of the <em>C</em> language.
+The <code>Colore</code> class, on the other hand, is one of the innovations introduced by C++, and contains two elements: a struct of type <code>ColoreRGB</code> and a function that displays the color’s name.
+Be careful, though: none of these fellows is really what it claims to be.
+The <code>booleano</code> variable doesn’t actually contain the value <code>true</code> or <code>false</code>, but a binary value that the system treats as such.
+Likewise, the <code>carattere</code> variable doesn’t contain the letter <code>C</code>, but the binary value corresponding to the ASCII encoding of the letter <code>C</code>.
+Every data type is nothing more than the name of a quantity of memory.
+Remember this, because it’s the key to everything.</p>
 
 <hr />
 
-<p>La dimensione di memoria associata a ciascun tipo di dato non è fissa, ma può variare a seconda del sistema in cui stai lavorando.
-Il codice qui sotto ti permette di conoscere la dimensione in byte dei tipi di dato scalari:<a id="sizeof"></a></p>
+<p>The amount of memory associated with each data type isn’t fixed, but can vary depending on the system you’re working on.
+The code below lets you find out the size, in bytes, of the scalar data types:<a id="sizeof"></a></p>
 
 <pre><code>/** 
  * @file tipi-di-dato-dimensione.cpp
@@ -219,7 +219,7 @@ int main()
 
 </code></pre>
 
-<p>Compilando ed eseguendo questo codice, otterrai:</p>
+<p>Compiling and running this code, you’ll get:</p>
 
 <pre><code>% g++ tipi-di-dato-dimensione.cpp -o ../out/esempio
 % ../out/esempio                                   
@@ -230,16 +230,16 @@ int main()
     double: 8
 </code></pre>
 
-<p>Dalla dimensione del tipo di dato dipende la quantità di valori che può assumere.
-Un <code>char</code> è composto da otto bit e può assumere per ciò 2<sup>8</sup> valori, quindi: da 0 a 255.
-Un <code>int</code> è composto da trentadue bit e può assumere 2<sup>32</sup> valori, ovvero: da 0 a 4.294.967.295.
-Un <code>float</code> ha 8 bit per l’esponente e 23 per la mantissa, quindi può assumere valori da 1.175494e-38 a 3.402823e+38 e così via.<br />
+<p>The number of possible values a data type can hold depends on its size.
+A <code>char</code> is made up of eight bits, and can therefore take 2<sup>8</sup> values, that is: from 0 to 255.
+An <code>int</code> is made up of thirty-two bits, and can take 2<sup>32</sup> values, that is: from 0 to 4,294,967,295.
+A <code>float</code> has 8 bits for the exponent and 23 for the mantissa, so it can take values from 1.175494e-38 to 3.402823e+38, and so on.
 <a id="modificatori"></a>
-Oltre ai tipi di dato, il C++ ha ereditato dal C anche i cosiddetti <em>modificatori</em>, ovvero delle parole-chiave che, se aggiunte al nome di un tipo di dato, ne modificano le caratteristiche.<br />
-I modificatori <code>short</code> e <code>long</code> alterano la dimensione del dato, riducendolo o aumentandolo. <br />
-I modificatori <code>signed</code> e <code>unsigned</code> fanno sì che il primo bit del dato sia considerato il suo segno: positivo se il valore è 0; negativo se il valore è 1.
-Il segno, però, “ruba” un bit alla variabile <em>signed</em> che quindi potrà assumere un numero minore di valori rispetto alla stessa variabile <em>unsigned</em>.<br />
-Questo programma mostra come la dimensione e i valori minimi e massimi del tipo di dato <code>int</code> possano variare con l’utilizzo dei modificatori:</p>
+Besides data types, C++ has also inherited from C the so-called <em>modifiers</em>, keywords which, when added to the name of a data type, change its characteristics.
+The <code>short</code> and <code>long</code> modifiers change the size of the data, shrinking or growing it.
+The <code>signed</code> and <code>unsigned</code> modifiers determine whether the first bit of the data is treated as its sign: positive if the value is 0, negative if the value is 1.
+The sign, however, “steals” a bit from the <em>signed</em> variable, which can therefore hold fewer values than the same <em>unsigned</em> variable.
+This program shows how the size and the minimum and maximum values of the <code>int</code> data type can change depending on which modifiers are used:</p>
 
 <pre><code>/** 
  * @file tipi-di-dato-limiti.cpp
@@ -288,8 +288,8 @@ int main()
 
 </code></pre>
 
-<p>Se esamini con attenzione il codice scoprirai un’altra caratteristica dei modificatori del C++: se sono riferiti a un dato di tipo intero, è possibile accorciare la dichiarazione omettendo la parola-chiave <code>int</code>.<br />
-L’output di questo programma, sul mio computer è:</p>
+<p>If you look closely at the code, you’ll discover another feature of C++’s modifiers: when applied to an integer data type, you can shorten the declaration by omitting the <code>int</code> keyword.
+The output of this program, on my computer, is:</p>
 
 <pre><code>% g++ tipi-di-dato-limiti.cpp -o ../out/esempio
 % ../out/esempio                               
@@ -302,34 +302,34 @@ unsigned short: 2 bytes, da:                    0  a:                65535
 </code></pre>
 
 <p><a id="funzioni"></a>
-L’ultima cosa di cui ti devo parlare, a proposito dei tipi di dato del C++ sono i cosiddetti <em>attributi intermediari</em>, ovvero: le <em>funzioni</em>, gli <em>array</em>, i <em>puntatori</em> e le <em>reference</em>.<br />
-Delle <em>funzioni</em> parleremo diffusamente
-<a href="/en/funzioni" class="xref">in seguito</a>.
-Quello che ci interessa, qui e ora, è che ogni funzione ha un suo tipo di dato.
-La funzione <code>main</code>, che è la funzione principale di ogni programma, ha come tipo di dato <code>int</code> e infatti si chiude con l’istruzione:</p>
+The last thing I need to tell you, about C++’s data types, are the so-called <em>intermediary attributes</em>: <em>functions</em>, <em>arrays</em>, <em>pointers</em>, and <em>references</em>.
+We’ll talk about <em>functions</em> at length
+<a href="/en/funzioni" class="xref">later on</a>.
+What matters to us here and now is that every function has its own data type.
+The <code>main</code> function, which is the main function of every program, has data type <code>int</code>, and indeed it ends with the instruction:</p>
 
 <pre><code>return 0;
 </code></pre>
 
-<p>La funzione <code>nome_colore</code>, all’interno della classe <code>Colore</code> è di tipo <code>void</code> e, come puoi vedere, non ha valore di ritorno.<br />
-Gli <em>array</em> sono degli insiemi di dati omogenei e si dichiarano aggiungendo al nome della variabile delle parentesi quadre.
-La dimensione dell’array deve essere definita al momento della sua dichiarazione; questo può avvenire o in maniera esplicita, inserendo il numero di elementi fra le parentesi quadre:</p>
+<p>The <code>nome_colore</code> function, inside the <code>Colore</code> class, is of type <code>void</code> and, as you can see, has no return value.
+<em>Arrays</em> are sets of homogeneous data, and are declared by adding square brackets to the variable’s name.
+An array’s size must be defined at the moment it’s declared; this can happen either explicitly, by putting the number of elements inside the square brackets:</p>
 
 <pre><code>char elementi[10];
 </code></pre>
 
-<p>o assegnando all’array un valore che ne determinerà la dimensione massima, così come abbiamo visto nel primo esempio:</p>
+<p>or by assigning the array a value that will determine its maximum size, as we saw in the first example:</p>
 
 <pre><code>char array[] = "abcdefghilmnopqrstuvz";
 </code></pre>
 
-<p>Ogni elemento dell’array è identificato da un indice che va 0 al numero di elementi dell’array meno uno.
-Nel caso dell’array qui sopra, la lettera <code>a</code> avrà indice 0, la <code>b</code> avrà indice 2 e così via, fino alla <code>z</code>, che avrà indice 20.</p>
+<p>Each element of the array is identified by an index ranging from 0 to the number of elements in the array minus one.
+In the case of the array above, the letter <code>a</code> will have index 0, <code>b</code> will have index 2, and so on, up to <code>z</code>, which will have index 20.</p>
 
 <hr id="puntatori" />
 
-<p>I <em>puntatori</em> sono come i pit-bull: alla maggior parte delle persone fanno paura, ma chi li conosce sa che sono cani dolcissimi, se li sai trattare.
-Quello che devi tenere sempre a mente è che il <em>C++</em> è solo un modo particolare di vedere la memoria del computer e nella memoria non ci sono caratteri, non ci sono classi, non ci sono immagini e non ci sono film porno, ma solo una lunga sequenza di 1 e di 0:</p>
+<p><em>Pointers</em> are like pit bulls: most people are scared of them, but whoever knows them knows they’re the sweetest dogs, if you know how to handle them.
+What you always need to keep in mind is that <em>C++</em> is just a particular way of looking at a computer’s memory, and in memory there are no characters, no classes, no images, and no porn films — just one long sequence of 1s and 0s:</p>
 
 <pre><code>0100001100100111011010000110000101101110011011100110111100100000
 0110011001101111011100100111001101100101001000000111010001110101
@@ -343,8 +343,8 @@ Quello che devi tenere sempre a mente è che il <em>C++</em> è solo un modo par
 0110110001101100011101010111001101101001011011110110111001100101
 </code></pre>
 
-<p>L’unico modo per dare un senso a questa catena di valori binarii è di suddividerli in blocchi e assegnare un tipo di dato a ciascun blocco.
-Per esempio, se suddividi la sequenza binaria qui sopra in blocchi di otto bit:</p>
+<p>The only way to make sense of this string of values is to split it into blocks and assign a data type to each block.
+For example, if you split the binary sequence above into eight-bit blocks:</p>
 
 <pre><code>01000011 00100111 01101000 01100001 01101110 01101110 01101111
 00100000 01100110 01101111 01110010 01110011 01100101 00100000
@@ -360,7 +360,7 @@ Per esempio, se suddividi la sequenza binaria qui sopra in blocchi di otto bit:<
 01101111 01101110 01100101
 </code></pre>
 
-<p>e converti ciascun valore nel corrispondente carattere del set ASCII, scopri che una sequenza apparentemente insensata di 1 e di 0 è in realtà l’inizio di una famosa canzone popolare:</p>
+<p>and convert each value into the corresponding character in the ASCII set, you discover that a seemingly meaningless sequence of 1s and 0s is actually the beginning of a well-known folk song:</p>
 
 <pre><code>01000011 =  67 = C
 00100111 =  39 = '
@@ -372,14 +372,14 @@ Per esempio, se suddividi la sequenza binaria qui sopra in blocchi di otto bit:<
 00100000 =  32 =
 </code></pre>
 
-<p>Per identificare i valori all’interno della sequenza di bit, hai bisogno di due informazioni: il tipo di dato che stai puntando e il suo indirizzo in memoria.
-I puntatori ti permettono di ottenere queste informazioni: il loro valore definisce l’indirizzo di memoria da cui leggere; il loro tipo definisce la dimensione del valore puntato.</p>
+<p>To identify the values within the bit sequence, you need two pieces of information: the data type you’re pointing at, and its address in memory.
+Pointers let you obtain exactly this information: their value defines the memory address to read from; their type defines the size of the value being pointed at.</p>
 
 <pre><code>unsigned char * ptr = valori;
 </code></pre>
 
-<p>Molti pensano ai puntatori come a delle bandierine che ti permettono di identificare un punto specifico della memoria, ma questo è vero solo per i puntatori <code>void</code>, che non hanno un tipo di dato associato.
-Gli altri puntatori, più che una bandierina, sono una sorta di maschera che può scorrere sulla sequenza di bit, isolando ed evidenziando i singoli valori che la compongono:</p>
+<p>Many people think of pointers as little flags letting you mark a specific spot in memory, but this is only true of <code>void</code> pointers, which have no associated data type.
+Other pointers are less like a flag and more like a kind of mask that can slide along the bit sequence, isolating and highlighting the individual values that make it up:</p>
 
 <pre><code style="color:#999;line-height:1.5">01000011 00100111 01101000 01100001 01101110 01101110 01101111
 00100000 01100110<span style="padding:2px;border:solid 1px;color:#000;margin:0 3px;">01101111</span>01110010 01110011 01100101 00100000
@@ -387,7 +387,7 @@ Gli altri puntatori, più che una bandierina, sono una sorta di maschera che pu�
 00100000 01100100 01110101
 </code></pre>
 
-<p>Questo programma mostra come la dimensione di un puntatore modifichi il risultato della lettura dei dati:</p>
+<p>This program shows how a pointer’s size affects the outcome of reading the data:</p>
 
 <pre><code>#include &lt;iostream&gt;
 #include &lt;bitset&gt;
@@ -476,7 +476,7 @@ int main()
 
 </code></pre>
 
-<p>Questo è l’output del programma; voglio proprio vedere come farai a farlo entrare nel tuo libro:</p>
+<p>Here’s the program’s output; I’d love to see how you’re going to fit this into your book:</p>
 
 <pre><code> 0          01000011    67   C
  1          00100111    39   '
@@ -601,14 +601,14 @@ int main()
 39  0110010101101110 25966   n
 </code></pre>
 
-<p>Come vedi, i bit sono gli stessi, ma cambiando il tipo di dato associato al puntatore e quindi la sua dimensione, il valore dei dati diventa un altro e la conversione dei numeri in lettere perde di significato.<br />
-Le istruzioni: <code>p1++</code> e <code>p2++</code> incrementano di un’unità il puntatore, ovvero lo spostano in avanti nella memoria del numero di byte corrispondenti alla dimensione del tipo di dato a cui è associato.
-Il puntatore <code>p1</code> è un <code>unsigned char</code>, quindi si sposta di otto bit; il puntatore <code>p12</code> è uno <code>short int</code>, quindi si sposta di sedici bit.
-È questo il motivo per cui il secondo ciclo di lettura dura la metà del primo: perché la quantità di bit letta per ogni iterazione è doppia.
-Se mi fossi distratto e avessi copiato il codice del primo ciclo di lettura così com’è, senza dividere per due il numero di cicli, il puntatore avrebbe continuato a “camminare” in avanti nella memoria, oltre i confini dell’array e questo, come vedremo in seguito, non è assolutamente bene.<br />
-Le <em>reference</em> sono degli alias delle variabili a cui sono associati.
-Come per i gibboni o i cigni, il legame fra una <em>reference</em> e la sua variabile dura tutta la vita.
-Mentre i puntatori possono avere un valore <code>NULL</code> e possono essere associati a variabili differenti nel corso dell’elaborazione, le <em>reference</em> devono sempre essere associate a una variabile e quell’associazione non può essere modificata successivamente.</p>
+<p>As you can see, the bits are the same, but by changing the data type associated with the pointer, and therefore its size, the value of the data becomes something else, and the conversion of numbers into letters loses its meaning.
+The <code>p1++</code> and <code>p2++</code> instructions increment the pointer by one, that is, they move it forward in memory by a number of bytes equal to the size of the data type it’s associated with.
+The <code>p1</code> pointer is an <code>unsigned char</code>, so it moves by eight bits; the <code>p2</code> pointer is a <code>short int</code>, so it moves by sixteen bits.
+This is why the second reading loop takes half as long as the first: because the amount of bits read per iteration is doubled.
+If I’d been careless and copied the first reading loop’s code as-is, without dividing the number of iterations by two, the pointer would have kept “walking” forward in memory, past the boundaries of the array, and this, as we’ll see later, is definitely not good.
+<em>References</em> are aliases for the variables they’re associated with.
+As with gibbons or swans, the bond between a <em>reference</em> and its variable lasts a lifetime.
+While pointers can have a <code>NULL</code> value and can be associated with different variables over the course of processing, <em>references</em> must always be associated with a variable, and that association can never be changed afterward.</p>
 
 <pre><code>/** 
  * @file tipi-di-dato-reference.cpp
@@ -642,7 +642,7 @@ int main()
 
 </code></pre>
 
-<p>Compilando ed eseguendo il codice, otterrai:</p>
+<p>Compiling and running the code, you’ll get:</p>
 
 <pre><code>% g++ src/cpp/tipi-di-dato-reference.cpp -o src/out/esempio
 % src/out/esempio                                          
@@ -650,86 +650,86 @@ valori iniziali: v=10, r=10
 valori finali:   v=20, r=20
 </code></pre>
 
-<p>Approfondiremo i pro e i contro delle <em>reference</em> quando parleremo delle
-<a href="/en/funzioni" class="xref">funzioni</a>.</p>
+<p>We’ll go deeper into the pros and cons of <em>references</em> when we talk about
+<a href="/en/funzioni" class="xref">functions</a>.</p>
 
 <hr id="casting" />
 
-<p>Dato che ciascun tipo di dato non è altro che un modo per vedere la memoria, è possibile fare delle conversioni da un tipo all’altro.
-Le conversioni possono essere <em>implicite</em> o <em>esplicite</em>.
-Le conversioni <em>implicite</em> sono quelle che avvengono quando un valore è copiato fra variabili di tipo compatibile:</p>
+<p>Since each data type is nothing more than a way of looking at memory, it’s possible to convert from one type to another.
+Conversions can be <em>implicit</em> or <em>explicit</em>.
+<em>Implicit</em> conversions are the ones that happen when a value is copied between variables of compatible type:</p>
 
 <pre><code>int  i = 0;
 char c = i;
 </code></pre>
 
-<p>In questo caso, assegnamo a una variabile di tipo <code>char</code> il valore di una variabile di tipo <code>int</code> e il compilatore ce lo lascia fare perché il valore dell’intero può essere salvato senza problemi anche nel singolo byte del <code>char</code>.
-Se volessimo rendere esplicita questa conversione, dovremmo utilizzare la sintassi:</p>
+<p>In this case, we assign to a variable of type <code>char</code> the value of a variable of type <code>int</code>, and the compiler lets us do it, because the value of the integer can be stored without any trouble in the single byte of the <code>char</code>.
+If we wanted to make this conversion explicit, we would have to use the syntax:</p>
 
 <pre><code>int  i = 0;
 char c = (char) i;
 char c = char (i);
 </code></pre>
-<p>Le due forme sono equivalenti.
-La prima è quella che il C++ ha ereditato dal C; la seconda è chiamata <em>notazione funzionale</em>.
-Nell’esempio precedente, la variabile <code>valori</code> è un puntatore a <code>unsigned char</code>, ma abbiamo detto al sistema di considerarla un puntatore a <code>short int</code> con l’istruzione:</p>
+<p>The two forms are equivalent.
+The first is the one C++ inherited from C; the second is called <em>functional notation</em>.
+In the earlier example, the <code>valori</code> variable is a pointer to <code>unsigned char</code>, but we told the system to treat it as a pointer to <code>short int</code> with the instruction:</p>
 
 <pre><code>duebyte * p2 = (duebyte*)valori;
 </code></pre>
 
-<p>Il C++ ha anche altri modi per convertire un tipo di dato in un altro, ma siccome si applicano principalmente alle classi, li vedremo in seguito.</p>
+<p>C++ has other ways of converting one data type into another too, but since they apply mainly to classes, we’ll see them later on.</p>
 
 <hr id="dottrina" />
 
-<p>Quello che ti ho appena detto del C++ vale anche per il C’hi++.
-Così come la “realtà” all’interno di un computer altro non è che una sequenza di valori binari che, aggregati fra di loro, costituiscono le entità gestite dal sistema, la realtà in cui noi viviamo altro non è che una manifestazione dell’azione dell’energia dell’Universo sulle particelle che costituiscono tutto ciò che esiste, ovvero gli <em>spazioni</em>.<br />
-Puoi pensare all’Universo come a una versione tridimensionale di uno schermo di PC.
-Le immagini che vedi su questo schermo sono costituite da minuscoli puntini colorati, detti <em>pixel</em>.
-Quando lo schermo è spento, i pixel sono neri e non mostrano alcuna immagine; quando lo accendi, l’energia del catodo colpisce i pixel e li rende visibili.
-Tutto ciò che vedi, all’interno dello schermo, però, è illusorio.
-O meglio: esiste, ma non è ciò che sembra.
-Gli elementi delle finestre non sono tridimensionali, anche se hanno delle ombre e quando vedi il puntatore del mouse spostarsi da una finestra all’altra in realtà stai vedendo i pixel dello schermo che cambiano di colore
-È un’illusione auto-indotta e volontaria: il tuo cervello vede qualcosa, ma finge che sia altro, perché è più comodo così.<br />
-La stessa cosa avviene con gli spazioni, solo che invece di essere disposti su una superficie piana, come i pixel dello schermo, gli spazioni sono una matrice tridimensionale e hanno quella che il Maestro Canaro definiva: “esistenza potenziale”; se sono irradiati di energia, acquisiscono massa e quindi esistenza, altrimenti non esistono.
+<p>What I just told you about C++ also holds for C’hi++.
+Just as “reality” inside a computer is nothing but a sequence of binary values which, aggregated together, make up the entities the system manages, the reality we live in is nothing but a manifestation of the Universe’s energy acting on the particles that make up everything that exists, namely the <em>spazioni</em>.
+You can think of the Universe as a three-dimensional version of a PC screen.
+The images you see on this screen are made up of tiny colored dots called <em>pixels</em>.
+When the screen is off, the pixels are black and show no image; when you turn it on, the energy from the cathode strikes the pixels and makes them visible.
+Everything you see on the screen, though, is illusory.
+Or rather: it exists, but it isn’t what it seems.
+The elements of the windows aren’t three-dimensional, even though they have shadows, and when you see the mouse pointer move from one window to another, what you’re actually seeing is the screen’s pixels changing color.
+It’s a self-induced, voluntary illusion: your brain sees one thing, but pretends it’s something else, because that’s more convenient.
+The same thing happens with spazioni, except that instead of being arranged on a flat surface, like the screen’s pixels, spazioni form a three-dimensional matrix, and have what Master Canaro called “potential existence”: if they’re irradiated with energy, they gain mass and therefore existence; otherwise they don’t exist.
 <!--
-Più precisamente, hanno "un'esistenza perpetua e non causata", come gli atomi del Vājasaneyī Saṃhitā (IV,1), citato da Ananda in Tempo ed Eternità.
+More precisely, they have "a perpetual and uncaused existence," like the atoms of the Vājasaneyī Saṃhitā (IV,1), cited by Ananda in Time and Eternity.
 -->
-Quando il <em>Big Bang</em> irradia la sua Energia nell’Universo, questa colpisce gli spazioni dando loro una massa e generando tutto ciò che esiste, dalle nebulose di <em>Wolf–Rayet</em> alla tua maestra delle Elementari.<br />
-Così come un <code>char</code>, <code>double</code> o <code>class</code> sono solo dei nomi convenzionali per degli insiemi di bit, anche <code>elio</code>, <code>tungsteno</code> o <code>cocomero</code> sono nomi convenzionali per delle quantità di energia.
-<em>Energia</em>, bada bene, non <em>spazioni</em>, perché gli spazioni sono fissi; quella che si muove è l’Energia.
-Quando tu sposti il braccio come hai fatto adesso, non stai realmente spostando il braccio, ma trasferendo l’energia che costituiva il tuo braccio da un gruppo di spazioni a un altro.
-E anche se restiamo immobili, qui, in questa stanza, l’energia di cui siamo costituiti continua a trasferirsi nella matrice degli spazioni perché il Pianeta in cui viviamo ruota intorno al suo asse e intorno al Sole; il Sole ruota intorno alla Via Lattea e la Via Lattea si muove a sua volta rispetto alle altre galassie.
-Né io né te siamo, adesso, costituiti dagli stessi spazioni che eravamo pochi secondi fa.
-Siamo un’immagine in movimento, come il puntatore del mouse, o come le luci delle decorazioni natalizie.
-Come disse Sant’Agostino, siamo, allo stesso tempo, reali e illusorii:</p>
+When the <em>Big Bang</em> radiates its Energy into the Universe, it strikes the spazioni, giving them mass and generating everything that exists, from <em>Wolf–Rayet</em> nebulae to your elementary-school teacher.
+Just as <code>char</code>, <code>double</code>, or <code>class</code> are just conventional names for sets of bits, so too <code>helium</code>, <code>tungsten</code>, or <code>watermelon</code> are conventional names for quantities of energy.
+<em>Energy</em>, mind you, not <em>spazioni</em>, because spazioni are fixed; what moves is Energy.
+When you move your arm, as you just did, you’re not really moving your arm, you’re transferring the energy that made up your arm from one group of spazioni to another.
+And even if we stay perfectly still, here, in this room, the energy we’re made of keeps transferring across the matrix of spazioni, because the Planet we live on rotates on its axis and around the Sun; the Sun revolves around the Milky Way, and the Milky Way in turn moves relative to the other galaxies.
+Neither you nor I, right now, are made of the same spazioni we were made of a few seconds ago.
+We are a moving image, like the mouse pointer, or like Christmas lights.
+As Saint Augustine said, we are, at the same time, real and illusory:</p>
 
 <blockquote>
-  <p>E considerai tutte le cose che sono al di sotto di te e vidi che non si può dire in modo assoluto né che esistono né che non esistono: a loro modo esistono, perché derivano da te, non esistono perché non sono ciò che sei tu: ed esiste veramente ciò che permane immutabile. <a id="agostino" href="/en/note#fn-agostino" class="nota">1</a></p>
+  <p>And I considered all the things that are beneath you, and I saw that one cannot say, absolutely, either that they exist or that they do not: in their own way they exist, because they come from you; they do not exist, because they are not what you are: and what truly exists is that which remains unchanging. <a id="agostino" href="/en/note#fn-agostino" class="nota">1</a></p>
 </blockquote>
 
-<p>Per i <em>Vedanta</em>, il Mondo ha la natura dell’Arte perché la realtà dell’arte-fatto è differente dalla realtà dell’arte-fice.
-Questa similitudine, oltre che per Platone, è valida anche per i linguaggi di programmazione: un oggetto all’interno di un programma esiste, ma non è realmente ciò che rappresenta, anche se a noi fa comodo ritenerlo tale.
-Come scrisse Ezra Pound<a id="pound" href="/en/note#fn-pound" class="nota">2</a>, solo i sogni esistono realmente, perché la loro natura irreale rimane tale anche in una realtà illusoria.</p>
+<p>For the <em>Vedanta</em>, the World has the nature of Art, because the reality of the art-object is different from the reality of the art-maker.
+This analogy, besides holding for Plato, also holds for programming languages: an object inside a program exists, but isn’t really what it represents, even though it’s convenient for us to treat it as if it were.
+As Ezra Pound wrote<a id="pound" href="/en/note#fn-pound" class="nota">2</a>, only dreams truly exist, because their unreal nature remains such even within an illusory reality.</p>
 
 <hr />
 
-<p>Gli spazioni definiscono anche i limiti delle nostre grandezze e delle nostre unità di misura.
-Pensa a una retta: teoricamente, è un insieme infinito di punti che si estende in due direzioni.
-I punti, però, sono privi di dimensione, quindi, per fare anche solo un piccolo tratto di retta, ne serve un numero infinito.
-In sostanza, secondo i matematici, in ciascuna retta coesistono due forme di infinito: quello sincategorematico della lunghezza e quello categoriematico della sequenza di punti.
-(O forse il contrario: non mi ricordo mai qual’è l’infinito in atto e quale quello potenziale.)
-Capisci bene che questa è una panzana: l’idea che se moltiplichi all’infinito il nulla tu possa ottenere qualcosa è solo un tentativo dei matematici di giustificare la loro vita sessuale.<br />
-La retta è la rappresentazione ideale di un insieme finito di spazioni contigui.
-È molto, molto sottile, ma una dimensione ce l’ha.
-Anche il piano, con buona pace di René Guenon, è costituito da un insieme finito di spazioni contigui e per un singolo punto non passano infinite rette, ma un numero finito, per quanto alto, perché la granularità degli spazioni limita il numero delle possibili angolazioni.
-Stesso discorso vale per i numeri naturali: non li si può estendere all’infinito, ma solo fino al numero totale di spazioni attivi nell’Universo, perché qualsiasi numero superiore indicherebbe una quantità che non esiste e sarebbe quindi insensato.<br />
-Gli spazioni definiscono anche l’unità minima di tempo, quella che il Maestro Canaro definiva scherzosamente lo “spazione-tempo”, ovvero l’intervallo di tempo necessario a uno spazione per acquisire tutta l’energia di uno degli  spazioni con cui è a contatto.
-È questo il motivo per cui la velocità luce non può superare i trecento milioni di metri al secondo: perché è limitata dal tempo di trasferimento dell’energia fra gli spazioni.</p>
+<p>Spazioni also define the limits of our quantities and units of measure.
+Think of a line: theoretically, it’s an infinite set of points extending in two directions.
+Points, however, have no dimension, so producing even a small segment of a line requires an infinite number of them.
+In essence, according to mathematicians, two forms of infinity coexist within every line: the syncategorematic infinity of length, and the categorematic infinity of the sequence of points.
+(Or maybe it’s the other way around: I can never remember which is the actual infinite and which the potential one.)
+You can plainly see that this is nonsense: the idea that multiplying nothing by infinity can get you something is just an attempt by mathematicians to justify their sex lives.
+The line is the ideal representation of a finite set of contiguous spazioni.
+It’s very, very thin, but it does have a dimension.
+Even the plane, with all due respect to René Guénon, is made up of a finite set of contiguous spazioni, and through a single point there don’t pass infinite lines, but a finite number, however high, because the granularity of the spazioni limits the number of possible angles.
+The same holds for the natural numbers: they can’t be extended to infinity, only up to the total number of active spazioni in the Universe, because any number beyond that would indicate a quantity that doesn’t exist, and would therefore be meaningless.
+Spazioni also define the smallest unit of time, what Master Canaro jokingly called “spazione-time”: the interval of time a spazione needs to acquire all the energy of one of the spazioni it’s in contact with.
+This is why the speed of light cannot exceed three hundred million meters per second: because it’s limited by the time it takes for energy to transfer between spazioni.</p>
 
 <hr />
 
-<p>Anche il C’hi++ ritiene simili il Mondo e l’Arte, ma non solo per la loro natura.
-Il Mondo e l’Arte sono simili perché il loro scòpo è lo stesso.</p>
+<p>C’hi++ also holds the World and Art to be alike, but not only because of their nature.
+The World and Art are alike because their purpose is the same.</p>
 
             </section>
         
@@ -751,8 +751,8 @@ Il Mondo e l’Arte sono simili perché il loro scòpo è lo stesso.</p>
         </a>
 
         
-        <a href="/en/bibliografia" 
-           title="Go to: Bi(bli)ografia" 
+        <a href="/en/struttura-dei-programmi" 
+           title="Go to: Struttura dei programmi C++" 
            class="right" >
                 <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
         </a>
