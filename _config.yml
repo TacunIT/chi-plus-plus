@@ -39,8 +39,8 @@ collections:
       - 01.copertina.md
       - 02.dedica.md
       - 03.indice.md
-      - introduzione.md
-      - prologo.md
+      - 04.introduzione.md
+      - 05.prologo.md
       - incipit.md
       - mitopoietica.md
       - programmatore.md
@@ -71,8 +71,8 @@ collections:
       - 01.copertina.md
       - 02.dedica.md
       - 03.indice.md
-      - introduzione.md
-      - prologo.md
+      - 04.introduzione.md
+      - 05.prologo.md
       - incipit.md
       - mitopoietica.md
       - programmatore.md

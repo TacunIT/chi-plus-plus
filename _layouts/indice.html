@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "it-IT" }}">
+{%- include head.html -%}
+<body class="manuale {{ page.class }} ">
+    <div class="page {{ page.class }}">
+        <header>
+            {%- include man-menu.html -%}
+        </header>
+        <main class="corpo {{ page.status }} ">
+            <h1>{{ page.title }}</h1>
+            <section class="indice">
+                {% for pagina in site[page.lang] %}
+                {% if pagina.class == 'capitolo' %}
+                <div class="capitolo">
+                    <h3>
+                        <a href="{{ pagina.url }}">{{ pagina.title }}</a>
+                    </h3>
+                    <p>{{ pagina.og_desc }}</p>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </section>
+        </main>
+    </div>
+  </body>
+</html>
