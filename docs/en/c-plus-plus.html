@@ -6,7 +6,7 @@
 
 
 <head>
-    <title>Il C++ |  C'hi++
+    <title>C++ |  C'hi++
 </title>
     <meta charset="utf-8" />
     <link      rel="canonical"          href="https://chiplusplus.org/en/c-plus-plus" />
@@ -19,8 +19,8 @@
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
     <meta property="og:url"          content="https://chiplusplus.org/en/c-plus-plus" />
     <meta property="og:type"         content="website" />
-    <meta property="og:title"        content="Il C++" />
-    <meta property="og:description"  content="Essere come il C++ - L’astrazione dei dati, la programmazione a oggetti e la monta equina - Un buon programmatore non si accontenta - La differenza fra C e C++, secondo Stroustrsup." />
+    <meta property="og:title"        content="C++" />
+    <meta property="og:description"  content="Being like C++ - Data abstraction, object-oriented programming, and horse breeding - A good programmer is never satisfied - The difference between C and C++, according to Stroustrup." />
     <meta property="og:image:width"  content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image"        content="https://chiplusplus.org/assets/img/og-img/c-plus-plus.jpg" />
@@ -60,9 +60,9 @@
     </a>
 
     <a
-        title="Go to: I commenti"
+        title="Go to: Bi(bli)ografia"
         
-        href="/en/commenti"
+        href="/en/bibliografia"
         
         class="right"
     >
@@ -73,26 +73,26 @@
         <main class="corpo pubblicato ">
         
             <h1><a href="#dottrina">
-                Il C++</a>
+                C++</a>
             </h1>
-            <blockquote class="motto">Non chiederti cosa può fare per te il sistema operativo; chiediti invece cosa puoi fare tu, per il sistema operativo.</blockquote>
+            <blockquote class="motto">Ask not what the operating system can do for you; ask what you can do for the operating system.</blockquote>
             <section class="testo">
-                <p>In uno dei suoi libri, Bjarne Stroustrup definì il C++:</p>
+                <p>In one of his books, Bjarne Stroustrup defined C++:</p>
 
 <blockquote>
-  <p>Un linguaggio di programmazione per svolgere compiti non banali.</p>
+  <p>A programming language for doing non-trivial tasks.</p>
 </blockquote>
 
-<p>Fà che si possa dire la stessa cosa di te.</p>
+<p>Let the same be said of you.</p>
 
 <hr />
 
-<p>C++ è un linguaggio di programmazione creato da Bjarne Stroustrup nel 1983, quando lavorava ai Laboratori Bell della AT&amp;T.
-Dieci anni prima, il suo collega Dennis Ritchie aveva creato un linguaggio di programmazione chiamato <em>C</em>.
-Il C, come ti ho detto, era estremamente efficace se dovevi programmare i computer, ma — così come alcuni dei tuoi confratelli — non gestiva altrettanto bene le entità della vita reale.<br />
-Stroustrup, che ai tempi del suo dottorato aveva lavorato con un linguaggio a oggetti chiamato <em>Simula67</em>, pensò che se avesse potuto aggiungere alla velocità di esecuzione del C la possibilità di creare dei nuovi tipi di dato di Simula, avrebbe ottenuto il linguaggio perfetto.
-Aveva ragione.  <br />
-Il nome <em>C++</em> si riferisce all’operatore <code>++</code>, che serve a incrementare di un’unità il valore di una variabile:</p>
+<p>C++ is a programming language created by Bjarne Stroustrup in 1983, while he was working at AT&amp;T Bell Labs.
+Ten years earlier, his colleague Dennis Ritchie had created a programming language called <em>C</em>.
+C, as I’ve told you, was extremely effective if you had to program computers, but — like some of your fellow brothers — it didn’t handle real-life entities nearly as well.
+Stroustrup, who during his doctorate had worked with an object-oriented language called <em>Simula67</em>, thought that if he could add to the execution speed of C the ability to create new data types like Simula’s, he would get the perfect language.
+He was right.
+The name <em>C++</em> refers to the <code>++</code> operator, used to increment the value of a variable by one:</p>
 
 <pre><code>#include &lt;iostream&gt;
 
@@ -108,7 +108,7 @@ int main(int argc, char** argv)
 } 
 
 </code></pre>
-<p>Se compili ed eseguti questo codice, otterrai:</p>
+<p>If you compile and run this code, you’ll get:</p>
 
 <pre><code>&gt; g++ cplusplus-incremento.cpp -o ../out/esempio
 &gt; ../out/esempio
@@ -116,23 +116,23 @@ Valore di C = 12
 Valore di C = 13
 </code></pre>
 
-<p>C++, infatti, non era un nuovo linguaggio: era un C migliorato.
-Tutto il codice e l’esperienza che erano state fatte fino ad allora sul C potevano essere applicate anche al C++.<br />
-Parafrasando Neruda, Stroustrsup fece con il C quello che Gesù fece con l’Ebraismo: così come il Nazareno prese una religione spartana, adatta per un popolo in fuga nel deserto e la  migliorò, rendendola meno autoritaria, il Danese trasformò un linguaggio pensato per gestire unicamente i computer, in un linguaggio che poteva gestire ogni cosa.</p>
+<p>C++, in fact, wasn’t a new language: it was an improved C.
+All the code and experience that had been built up around C until then could also be applied to C++.
+Paraphrasing Neruda, Stroustrup did to C what Jesus did to Judaism: just as the Nazarene took a stern religion, suited to a people fleeing through the desert, and improved it, making it less authoritarian, the Dane transformed a language conceived solely for managing computers into a language that could manage anything.</p>
 
 <hr />
 
-<p>Le principali novità aggiunte al C dal C++ sono: l’<em>astrazione dei dati</em>, la <em>programmazione a oggetti</em> e la <em>generic programming</em>.
-Ora ti spiego cosa sono, ma tu non preoccuparti se non capisci: approfondiremo tutti questi concetti in seguito.<br />
-I tipi di dato del C sono:</p>
+<p>The main additions C++ brought to C are: <em>data abstraction</em>, <em>object-oriented programming</em>, and <em>generic programming</em>.
+Let me explain what these are now, but don’t worry if you don’t fully understand: we’ll go deeper into all these concepts later.
+C’s data types are:</p>
 
 <pre><code>char, int, float, double, array, enum, struct, union
 </code></pre>
 
-<p>Più che sufficienti per scrivere il <em>kernel</em> di Unix, ma decisamente inadeguati per scrivere un programma che gestisca delle linee telefoniche.
-Perché un linguaggio di programmazione possa gestire con la stessa facilità un flusso di dati, un utente, una linea telefonica o anche un allevamento di cavalli, è necessario che oltre ai tipi di dato predefiniti, possa gestire anche delle nuove entità definite dal programmatore.
-Questa è ciò che si chiama <em>data abstraction</em> e il C++ la ottiene per mezzo delle <em>classi</em>.
-Le classi sono la rappresentazione, all’interno del codice, di un’entità:</p>
+<p>More than enough to write the Unix <em>kernel</em>, but decidedly inadequate for writing a program to manage phone lines.
+For a programming language to handle a data stream, a user, a phone line, or even a horse-breeding farm with equal ease, it needs to be able to manage, in addition to its predefined data types, new entities defined by the programmer.
+This is what’s called <em>data abstraction</em>, and C++ achieves it by means of <em>classes</em>.
+Classes are the in-code representation of an entity:</p>
 
 <pre><code>class Cavallo {
 private:
@@ -156,7 +156,7 @@ public:
 };
 </code></pre>
 
-<p>o di un concetto:</p>
+<p>or of a concept:</p>
 
 <pre><code>class Monta {
 private:
@@ -172,16 +172,14 @@ public:
 };
 </code></pre>
 
-<p>Grazie alle classi, il programmatore può creare dei nuovi tipi di dato e
-utilizzarli all’interno del suo programma nello stesso modo in cui
-utilizzerebbe i tipi di dato primitivi del linguaggio.<br />
-Ciascuna classe ha degli <em>attributi</em> e dei <em>metodi</em>.
-Gli <em>attributi</em> sono dei dati che descrivono le caratteristiche della classe, per esempio, la razza o il sesso di un cavallo.
-I <em>metodi</em> sono delle funzioni che definiscono il modo in cui la classe può interagire con gli altri elementi del programma.
-Nelle classi dell’esempio gli <em>attributi</em> sono gli elementi che vedi nella sezione <code>private</code>, mentre i <em>metodi</em> sono le funzioni che vedi nella sezione <code>public</code>.
-La funzione che ha lo stesso nome della classe si chiama <em>costruttore</em> della classe, perché “spiega” al compilatore come debbano essere creati gli oggetti di questa classe.<br />
-Le classi, però, sono la ricetta, non sono la pietanza.
-Per poter essere utilizzate, le classi devono essere <em>istanziate</em> negli oggetti:</p>
+<p>Thanks to classes, the programmer can create new data types and use them within their program the same way they would use the language’s primitive data types.
+Each class has <em>attributes</em> and <em>methods</em>.
+<em>Attributes</em> are data that describe the characteristics of the class, for example, a horse’s breed or sex.
+<em>Methods</em> are functions that define how the class can interact with the other elements of the program.
+In the classes in the example, the <em>attributes</em> are the elements you see in the <code>private</code> section, while the <em>methods</em> are the functions you see in the <code>public</code> section.
+The function with the same name as the class is called the <em>constructor</em> of the class, because it “explains” to the compiler how objects of this class should be created.
+Classes, however, are the recipe, not the dish.
+To be used, classes must be <em>instantiated</em> into objects:</p>
 
 <pre><code>int main()
 {
@@ -193,9 +191,9 @@ Per poter essere utilizzate, le classi devono essere <em>istanziate</em> negli o
 }
 </code></pre>
 
-<p><code>stallone</code>, <code>giumenta</code> e <code>monta</code> sono tre oggetti.
-I primi due sono istanze della classe <code>Cavallo</code>, il terzo è un’istanza della classe <code>Monta</code>.<br />
-Se aggiungi un po’ di codice alle classi che abbiamo visto prima e compili il programma, otterrai:</p>
+<p><code>stallone</code>, <code>giumenta</code>, and <code>monta</code> are three objects.
+The first two are instances of the <code>Cavallo</code> class, the third is an instance of the <code>Monta</code> class.
+If you add a bit of code to the classes we saw earlier and compile the program, you’ll get:</p>
 
 <pre><code>% g++ cplusplus-classe.cpp -o ../out/esempio
 % ../out/esempio                               
@@ -204,8 +202,8 @@ MASCHIO: Specie:cavallo, Sesso:m, Razza:lipizzano
 FEMMINA: Specie:cavallo, Sesso:f, Razza:maremmano```
 </code></pre>
 
-<p>Perché un linguaggio di programmazione possa dirsi <em>orientato agli oggetti</em>, però, oltre alle classi deve poter gestire l’<em>ereditarietà</em> e il <em>polimorfismo</em>.
-L’<em>ereditarietà</em> permette di definire dei nuove classi come estensione di classi esistenti:
+<p>For a programming language to call itself <em>object-oriented</em>, though, besides classes it must also be able to handle <em>inheritance</em> and <em>polymorphism</em>.
+<em>Inheritance</em> allows you to define new classes as an extension of existing classes:
 <a id="cast"></a></p>
 
 <pre><code>class Animale {
@@ -240,8 +238,8 @@ public:
 };
 </code></pre>
 
-<p>Nell’esempio qui sopra, abbiamo prima definito una classe <code>Animale</code>, che ha tre attributi: la <code>specie </code>, la <code>razza </code> e il <code>sesso </code>; poi abbiamo definito una classe <code>Cavallo</code>, derivandola dalla classe <code>Animale</code>.
-In questo modo, se oltre ai cavalli il nostro programma dovesse gestire anche altri ungulati, non dovremmo ripetere in ciascuna classe le stesse istruzioni, ma potremmo utilizzare quelle della classe base:</p>
+<p>In the example above, we first defined an <code>Animale</code> class, which has three attributes: <code>specie</code>, <code>razza</code>, and <code>sesso</code>; then we defined a <code>Cavallo</code> class, deriving it from the <code>Animale</code> class.
+This way, if besides horses our program also had to handle other hoofed animals, we wouldn’t have to repeat the same instructions in each class, but could reuse those of the base class:</p>
 
 <pre><code>class Asino : public Animale {
 public:
@@ -252,8 +250,8 @@ public:
 };
 </code></pre>
 
-<p>A questo punto, la tua sagacia dovrebbe averti fatto rilevare un possibile problema (posto che tu sia sveglio, cosa di cui non sono del tutto certo): la classe <code>Monta</code> può gestire solo oggetti di tipo <code>Cavallo</code>.<br />
-Un linguaggio che non gestisca il polimorfismo ci costringerebbe a scrivere due nuove classi: una per i muli e una per i bardotti:</p>
+<p>At this point, your sharp mind should have caught a possible problem (assuming you’re paying attention, which I’m not entirely convinced of): the <code>Monta</code> class can only handle objects of type <code>Cavallo</code>.
+A language without polymorphism would force us to write two new classes: one for mules and one for hinnies:</p>
 
 <pre><code>class MontaMulo {
 private:
@@ -282,10 +280,10 @@ public:
 };
 </code></pre>
 
-<p>Il problema è che più codice scrivi, più è probabile che farai degli errori e meno facile sarà correggerli.
-Al contrario, i programmi con meno righe di codice sono più affidabili e più facili da correggere o da modificare. <br />
-Il C++ ci aiuta in questo senso perché permette il <i id="polimorfismo">polimorfismo</i>, ovvero la capacità di una funzione o di un operatore di svolgere il proprio compito indipendentemente dal tipo di dato che deve gestire.
-Se riscriviamo la classe <code>Monta</code> usando, al posto dei parametri di tipo <code>Cavallo</code>, dei parametri che hanno il tipo della classe base <code>Animale</code>:</p>
+<p>The problem is that the more code you write, the more likely you are to make mistakes, and the harder they’ll be to fix.
+By contrast, programs with fewer lines of code are more reliable and easier to fix or modify.
+C++ helps here because it allows for <i id="polimorfismo">polymorphism</i>, that is, the ability of a function or operator to carry out its task independently of the data type it has to handle.
+If we rewrite the <code>Monta</code> class using, instead of parameters of type <code>Cavallo</code>, parameters of the base class type <code>Animale</code>:</p>
 
 <pre><code>class Monta {
 private:
@@ -302,7 +300,7 @@ public:
 
 </code></pre>
 
-<p>Potremo creare degli oggetti di classe <code>Monta</code> con qualunque classe derivata:</p>
+<p>We can create objects of class <code>Monta</code> with any derived class whatsoever:</p>
 
 <pre><code>/** 
  * @file src/cplusplus-polimorfismo.cpp
@@ -412,7 +410,7 @@ int main()
 
 </code></pre>
 
-<p>Compilando ed eseguendo il programma, otterrai:</p>
+<p>Compiling and running the program, you’ll get:</p>
 
 <pre><code>% g++ cplusplus-polimorfismo.cpp -o ../out/esempio
 % ../out/esempio                                    
@@ -437,8 +435,8 @@ MASCHIO: Specie:Asino	Razza:sardo	    Sesso:f
 FEMMINA: Specie:Cavallo	Razza:lipizzano	Sesso:m
 </code></pre>
 
-<p>Come ti ho detto, però, un buon programmatore non si accontenta di essere riuscito a produrre il risultato atteso, ma si chiede sempre se ci sia un modo più efficiente per ottenerlo.
-Nel nostro caso, il codice che abbiamo utilizzato per mostrare il risultato degli accoppiamenti:</p>
+<p>As I’ve told you, though, a good programmer isn’t satisfied just because they’ve managed to produce the expected result — they always ask whether there’s a more efficient way to get there.
+In our case, the code we used to display the results of the matings:</p>
 
 <pre><code>Monta puledro(cavallo, giumenta);
 Monta ciuco(asino, asina);
@@ -451,8 +449,8 @@ cout &lt;&lt; "MULO\n"     &lt;&lt; mulo     &lt;&lt; endl;
 cout &lt;&lt; "BARDOTTO\n" &lt;&lt; bardotto &lt;&lt; endl;
 </code></pre>
 
-<p>non è il massimo dell’efficienza, sia perché potremmo sbagliarci ad accoppiare la specie dei genitori con il nome del figlio, sia perché le istruzioni devono essere ripetute per ciascun oggetto.
-Per risolvere il primo difetto possiamo aggiungere alla classe <code>Monta</code> un attributo e un metodo per definire autonomamente che tipo di genìa venga prodotta dalla copula:
+<p>isn’t the most efficient, both because we could get the parents’ species mismatched with the offspring’s name, and because the instructions have to be repeated for each object.
+To fix the first flaw, we can add to the <code>Monta</code> class an attribute and a method to independently determine what kind of offspring results from the mating:
 <a id="membro"></a></p>
 <pre><code>string   _esito;
 void setEsito() {
@@ -463,7 +461,7 @@ void setEsito() {
             _esito = "mulo";
         }
     } else {        
-        if(strcmp(_femmina-&gt;getSpecie(),"Cavallo") == 0) {
+        if(strcmp(_femmina-&gt;getSpecie(),"Cavallo") == 0) {
             _esito = "puledro";
         } else {
             _esito = "bardotto";
@@ -472,19 +470,19 @@ void setEsito() {
 }
 </code></pre>
 
-<p>ma anche così dovremo comunque riscrivere quattro righe di codice per modificare l’output del programma: un approccio inaccettabile per i sistemi di produzione, dove le entità da gestire possono essere migliaia.
-Possiamo risolvere questo problema grazie alla <em>generic programming</em> e al modo in cui viene implementata nel C++: le classi <i id="template">template</i>:</p>
+<p>but even so, we’d still have to rewrite four lines of code to change the program’s output: an unacceptable approach for production systems, where the entities being handled can number in the thousands.
+We can solve this problem thanks to <em>generic programming</em> and the way it’s implemented in C++: <em>template</em> classes:</p>
 
 <pre><code>template &lt; class T&gt; class list;
 </code></pre>
 
-<p>La classe <code>list</code> è una delle classi <em>template</em> del C++ e permette di inserire, rimuovere, spostare, unire, ordinare ed elencare una lista di oggetti di una stessa classe.
-La sintassi per creare una lista di oggetti di classe <code>Monta</code> è:</p>
+<p>The <code>list</code> class is one of C++’s <em>template</em> classes, and lets you insert, remove, move, merge, sort, and list a collection of objects of the same class.
+The syntax for creating a list of <code>Monta</code>-class objects is:</p>
 
 <pre><code>list&lt;Monta&gt; monte;
 </code></pre>
 
-<p>Fatto ciò, possiamo aggiungere elementi alla nostra lista con la funzione <code>push_back()</code>, alla quale passeremo direttamente il costruttore della classe:</p>
+<p>Once that’s done, we can add elements to our list with the <code>push_back()</code> function, passing it the class constructor directly:</p>
 
 <pre><code>monte.push_back(Monta(cavallo, giumenta));
 monte.push_back(Monta(asino, asina));       
@@ -492,7 +490,7 @@ monte.push_back(Monta(asino, giumenta));
 monte.push_back(Monta(cavallo, asina));
 </code></pre>
 
-<p>Questo codice è una forma più efficiente di:</p>
+<p>This code is a more efficient form of:</p>
 
 <pre><code>Monta m1(cavallo, giumenta);
 Monta m2(asino, asina);       
@@ -505,14 +503,14 @@ monte.push_back(m3);
 monte.push_back(m4);
 </code></pre>
 
-<p>Per visualizzare il contenuto della lista, indipendentemente dal numero di elementi, basta l’istruzione:</p>
+<p>To display the contents of the list, regardless of the number of elements, all it takes is the instruction:</p>
 
 <pre><code>for (list&lt;Monta&gt;::iterator it=monte.begin(); it!=monte.end(); it++) {
     cout &lt;&lt; *it &lt;&lt; endl;
 }
 </code></pre>
 
-<p>La funzione <code>main()</code> del nostro programma sarà quindi:</p>
+<p>Our program’s <code>main()</code> function will therefore be:</p>
 
 <pre><code>int main()
 {
@@ -533,7 +531,7 @@ monte.push_back(m4);
 }
 </code></pre>
 
-<p>e l’output che otterremo è:</p>
+<p>and the output we’ll get is:</p>
 
 <pre><code>$ g++ cplusplus-template.cpp -o ../out/esempio
 % ../out/esempio                                
@@ -558,12 +556,12 @@ FEMMINA: Specie:Asino	Razza:sardo     Sesso:f
 ESITO:   bardotto
 </code></pre>
 
-<p>Se per qualche motivo volessimo invertire l’ordine degli elementi nella lista, tutto quello che dovremmo fare è di aggiungere prima del ciclo <code>for</code> l’istruzione:</p>
+<p>If for some reason we wanted to reverse the order of the elements in the list, all we’d have to do is add, before the <code>for</code> loop, the instruction:</p>
 
 <pre><code>monte.reverse();
 </code></pre>
 
-<p>e l’output che otterremo è:</p>
+<p>and the output we’ll get is:</p>
 
 <pre><code>% g++ cplusplus-template.cpp -o ../out/esempio
 % ../out/esempio                                
@@ -589,27 +587,27 @@ ESITO:   puledro
 
 </code></pre>
 
-<p>Oltre alle classi template predefinite della <em>Standard Template Library</em>, il C++ permette di definire le proprie classi template, ma di questo parleremo <a href="/en/polimorfismo#template" class="xref">a tempo debito</a>.<br />
-Queste caratteristiche, unite alla compatibilità con il codice scritto in C, fecero di C++ il linguaggio <em>object-oriented</em> più utilizzato degli anni ‘90.
-L’avvento, alla fine del Secolo, del linguaggio con la “J”, quello che ha bisogno di un sistema di <em>garbage collecion</em> per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un’idea di quello che sarebbe stato il millennio che ci si presentava davanti.
-Non a caso, Stroustrsup disse:</p>
+<p>Besides the predefined template classes of the <em>Standard Template Library</em>, C++ lets you define your own template classes, but we’ll get to that <a href="/en/polimorfismo#template" class="xref">in due course</a>.
+These features, combined with compatibility with existing C code, made C++ the most widely used <em>object-oriented</em> language of the 1990s.
+The arrival, at the end of the Century, of the language with the “J” — the one that needs a <em>garbage collection</em> system to make up for the shortcomings of its programmers — should have given us an idea of what the coming millennium would be like.
+Not by chance, Stroustrup said:</p>
 
 <blockquote>
   <p>I suspect that the root of many of the differences between C/C++ and Java is that AT&amp;T is primarily a user (a consumer) of computers, languages, and tools, whereas Sun is primarily a vendor of such things. <a id="stroustrup" href="/en/note#fn-cpp" class="nota">1</a></p>
 </blockquote>
 
 <!--
-@todo: fare un parallelo fra i problemi di compatibilità delle librerie di Python e le religioni canoniche.
-Entrambi hanno la necessità di mantenere una compatibilità con il passato.
-Con i dogmi le religioni, con una determinata versione delle librerie, i programmi Python.
-Questo fà sì che sia molto complesso evolvere, perché non può evolvere solo una parte del sistema, ma tutto.
-Bello, se fosse possibile, ma non sempre lo è.
-Nella migliore delle ipotesi, si tratta di codice inefficiente, che esegue le azioni attese, ma richiede sempre più risorse di sistema e/o di tempo di esecuzione.
-Questo va bene a chi vende l'hardware, perché implica un continuo rinnovo del parco HW con sistemi più potenti.
-Nella peggiore delle ipotesi, si tratta di codice fallato, che fa male il suo lavoro (così come chi lo ha scritto) e complica la vita e la gestione del sistema.  
-Non importa a nessuno: l'unica cosa a cui si presta importanza è il rispetto dei tempi di consegna, senza tenere conto del fatto che, spesso, l'utilizzo maldestro di software maldestro allunga i tempi di sviluppo, test e correzione.  
-In pratica, la programmazione è diventata una sorta di roulette russa, in cui la fortuna gioca un ruolo decisivo: se ti dice culo, gli errori non escono durante il collaudo e se ne riparla in assistenza; se ti dice male, butti la tua vita cercando di far funzionare uno strumento difettoso, invece di spendere un po' di tempo per realizzarne uno sano.  
-La stessa cosa si può dire delle vite di queste persone.
+@todo: draw a parallel between the compatibility problems of Python libraries and canonical religions.
+Both need to maintain compatibility with the past.
+Religions with dogmas, Python programs with a given version of their libraries.
+This makes it very hard to evolve, because it's not possible for just one part of the system to evolve, everything has to.
+Nice, if it were possible, but it isn't always.
+At best, this means inefficient code, which does what's expected but requires ever more system resources and/or execution time.
+This suits hardware vendors just fine, since it implies a constant renewal of the hardware fleet with more powerful systems.
+At worst, it means flawed code, which does its job badly (just like whoever wrote it) and complicates the life and management of the system.
+Nobody cares: the only thing anyone pays attention to is meeting deadlines, without accounting for the fact that clumsy use of clumsy software often lengthens development, testing, and bug-fixing time.
+In practice, programming has become a sort of Russian roulette, where luck plays a decisive role: if you're lucky, the bugs don't show up during testing and get dealt with later in support; if you're unlucky, you waste your life trying to make a broken tool work, instead of spending a bit of time building a sound one.
+The same could be said of these people's lives.
 -->
 
             </section>
@@ -632,8 +630,8 @@ La stessa cosa si può dire delle vite di queste persone.
         </a>
 
         
-        <a href="/en/commenti" 
-           title="Go to: I commenti" 
+        <a href="/en/bibliografia" 
+           title="Go to: Bi(bli)ografia" 
            class="right" >
                 <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
         </a>

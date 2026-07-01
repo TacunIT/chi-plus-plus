@@ -46,25 +46,25 @@ collections:
       - 08.programmatore.md
       - 09.sistemi-di-numerazione.md
       - 10.linguaggi-di-programmazione.md
-      - c-plus-plus.md
-      - commenti.md
-      - tipi-di-dato.md
-      - struttura-dei-programmi.md
-      - operatori.md
-      - preprocessore.md
-      - memoria.md
-      - funzioni.md
-      - istruzioni-condizionali.md
-      - istruzioni-iterative.md
-      - classi-oggetti.md
-      - ereditarieta.md
-      - polimorfismo.md
-      - stream.md
-      - debug.md
-      - epilogo.md
-      - note.md
-      - ringraziamenti.md
-      - bibliografia.md
+      - 11.c-plus-plus.md
+      - 12.commenti.md
+      - 13.tipi-di-dato.md
+      - 14.struttura-dei-programmi.md
+      - 15.operatori.md
+      - 16.preprocessore.md
+      - 17.memoria.md
+      - 18.funzioni.md
+      - 19.istruzioni-condizionali.md
+      - 20.istruzioni-iterative.md
+      - 21.classi-oggetti.md
+      - 22.ereditarieta.md
+      - 23.polimorfismo.md
+      - 24.stream.md
+      - 25.debug.md
+      - 26.epilogo.md
+      - 27.note.md
+      - 28.ringraziamenti.md
+      - 29.bibliografia.md
   en:
     output: true
     order:
@@ -78,22 +78,22 @@ collections:
       - 08.programmatore.md
       - 09.sistemi-di-numerazione.md
       - 10.linguaggi-di-programmazione.md
-      - c-plus-plus.md
-      - commenti.md
-      - tipi-di-dato.md
-      - struttura-dei-programmi.md
-      - operatori.md
-      - preprocessore.md
-      - memoria.md
-      - funzioni.md
-      - istruzioni-condizionali.md
-      - istruzioni-iterative.md
-      - classi-oggetti.md
-      - ereditarieta.md
-      - polimorfismo.md
-      - stream.md
-      - debug.md
-      - epilogo.md
-      - note.md
-      - ringraziamenti.md
-      - bibliografia.md
+      - 11.c-plus-plus.md
+      - 12.commenti.md
+      - 13.tipi-di-dato.md
+      - 14.struttura-dei-programmi.md
+      - 15.operatori.md
+      - 16.preprocessore.md
+      - 17.memoria.md
+      - 18.funzioni.md
+      - 19.istruzioni-condizionali.md
+      - 20.istruzioni-iterative.md
+      - 21.classi-oggetti.md
+      - 22.ereditarieta.md
+      - 23.polimorfismo.md
+      - 24.stream.md
+      - 25.debug.md
+      - 26.epilogo.md
+      - 27.note.md
+      - 28.ringraziamenti.md
+      - 29.bibliografia.md
