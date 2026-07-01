@@ -1,4 +1,4 @@
-better-bow:
+arco-meglio:
   "One day a disciple asked Master Canaro: “Master, which kind of bow shoots best?”<br />
   The master answered: “The one you use every day.”<br />
   The disciple then asked: “Master, does this mean one could use an unsuitable programming language, as long as the goal is reached?”<br />
@@ -6,14 +6,14 @@ better-bow:
   For a long time I couldn't understand Master Canaro's behavior. For a while, I believed the error lay in that “best” in the first question, and that the master had deliberately given an imprecise answer in order to carry a poorly framed line of reasoning to its extreme conclusions, but I was wrong.<br />
   The truth was that Master Canaro, as he himself confessed to me, was trying to offload his turn at cleaning the latrines onto someone else, and the young and impetuous disciple had given him the opportunity.<br />"
 
-chi-requirements: "<ul>
+chi-requisiti: "<ul>
   <li>limit the number of dogmas;</li>
   <li>limit metaphysical elements and matters accepted on faith;</li>
   <li>do not present itself as the One Unquestionable Truth, but as a certainly incomplete and perfectible approximation of the Truth;</li>
   <li>recognize the contradictions of the doctrine and analyze them objectively, even if this leads to modifying the doctrine itself.</li>
   </ul>"
 
-computer-aunt:
+computer-zia:
   "One day, Master Canaro's aunt called him and told him her computer had stopped working.<br />
   “It turns on, but it won't connect to the Internet and it can't send email. Please, come and fix it.”<br />
   So Master Canaro went to his aunt's house and asked her to show him the computer that wasn't working.
@@ -31,39 +31,39 @@ computer-aunt:
   Far from looking contrite, Master Canaro stood up and, staring his aunt in the eye, exclaimed:<br />
   “And what about you people, back in '68?!”"
 
-god-good: "Man cannot say whether God is good or not, because one cannot classify the essence of the Creator with the attributes of the created. It would be as if the bytes of a computer wondered whether the Programmer were worth 1 or 0."
+dio-buono: "Man cannot say whether God is good or not, because one cannot classify the essence of the Creator with the attributes of the created. It would be as if the bytes of a computer wondered whether the Programmer were worth 1 or 0."
 
-religion-errors: "<ul>
+errori-religioni: "<ul>
   <li>dogmas, which are the foundations of doctrines, are easily attacked because they cannot be proven, only accepted on faith;</li>
   <li>a religion may have difficulty modifying its own doctrine, even when it's evident that one of its dogmas is wrong;</li>
   <li>challenging a dogma almost inevitably causes a split, and splits are likely to lead to conflicts.</li></ul>"
 
-human-errors:
+errori-umani:
   "<ul><li>the tendency to defend one's own principles even by means that
   contradict those very principles;</li>
   <li>the tendency to let one's hopes influence
   one's objectivity.</li></ul>"
 
-philosophy-reverse-engineering: "Philosophy is the <i>reverse engineering</i> of the Universe. System analysis can happen at several levels, from the user interface down to binary code. Analyzing at low levels is harder and leads, at best, to knowledge of the operating mechanics, not of the business rules."
+filosofia-reverse-engeneering: "Philosophy is the <i>reverse engineering</i> of the Universe. System analysis can happen at several levels, from the user interface down to binary code. Analyzing at low levels is harder and leads, at best, to knowledge of the operating mechanics, not of the business rules."
 
-feminism: "A hundred years of feminism cannot beat a hundred thousand years of evolution."
+femminismo: "A hundred years of feminism cannot beat a hundred thousand years of evolution."
 
-malice: "Never attribute to malice what can be explained by stupidity."
+malizia: "Never attribute to malice what can be explained by stupidity."
 
-sailor: "The Good Programmer is like a sailor who, before a long voyage, checks all of his deck equipment, taking apart every single item and replacing anything that might break, because he doesn't know what will happen once he's out at sea."
+marinaio: "The Good Programmer is like a sailor who, before a long voyage, checks all of his deck equipment, taking apart every single item and replacing anything that might break, because he doesn't know what will happen once he's out at sea."
 
-metaphysics: "Stripped of their trappings and reduced to their essential features, the various metaphysical hypotheses have much in common, because they are all, in one way or another, the answer to the same need: the search for a justification for our existence."
+metafisiche: "Stripped of their trappings and reduced to their essential features, the various metaphysical hypotheses have much in common, because they are all, in one way or another, the answer to the same need: the search for a justification for our existence."
 
 ikebarba: ""
 lennon: "I don't believe the conversion story. David Chapman killed John Lennon because he thought there was “only sky” above him, and that only in this way could he give meaning to his existence."
 
-paranoids:
+paranoici:
   "I once asked Master Canaro: “Master, what did paranoid people do before computer science was invented?”
   The Master thought about it for a while, then answered: “They moored boats.”"
 
-reason: "When I was a young <i>project manager</i> and argued with my clients, I always tried to prove to them that I was right; now I just try to do what needs to be done."
+ragione: "When I was a young <i>project manager</i> and argued with my clients, I always tried to prove to them that I was right; now I just try to do what needs to be done."
 
-oo-religions:
+religioni-oo:
   "Could the various religions be derived forms of one and the same original mysticism?
   Do there exist common “member data” and functions, redefined over time, but tracing back to an initial body of beliefs (or notions)?
   Even just on this map, several can be found (e.g. Empedocles -> Poe).
@@ -73,9 +73,9 @@ oo-religions:
   Simplifying a great deal (since it's 3 a.m.): Buddha and Zoroaster influence the Greeks, who influence the Jews, who in turn influence the Christians, who eventually produce the Jehovah's Witnesses...
   Likewise (again simplifying), C++ evolved from C, and Java from C++."
 
-reward-after-death: "Those who strive, in this life, to follow the precepts of their religion because they think they will be rewarded for it after death, are wrong twice over."
+ricompensa-oltre-morte: "Those who strive, in this life, to follow the precepts of their religion because they think they will be rewarded for it after death, are wrong twice over."
 
-universe-cpp:
+universo-cpp:
   '<h3>Last page of Master Canaro''s diary (April 8)</h3> I''m at the office, working, when the phone rings. The voice that answers is rather deep and has a curious echo.
   It says:
   <br />-&nbsp;Canaro, it''s God, I need you.
@@ -252,7 +252,7 @@ universe-cpp:
   I even got Schopenhauer and Bergson to lend a hand, since they were here anyway and had nothing else to do, but it was no use. He answered me, annoyed, to do my job and not meddle in matters beyond my understanding (only to then coax me into helping him with backups after he''d accidentally deleted two galaxies).
   In the afternoon I went back on the attack, convinced as I was that the considerable quantities of vin santo he''d downed after lunch would have made him more receptive, but I was wrong: he repeated what he''d already said in the morning and, on top of that, gave me a vaguely Taoist-flavored lecture, whose declared purpose was to enlighten me on the subjectivity of the concepts of good and evil.
   In one last, desperate attempt, I pointed out that the presence of Evil in Creation is one of the favorite arguments of those who try to prove that God doesn''t exist, but it backfired: he confessed to me that it was precisely he who had planted such thoughts in the minds of his detractors, in the frustrated hope that people would find someone else to curse instead.
-  Once again, I find myself facing the <a id="age-old-dichotomy">age-old dichotomy between what the client wants and what he actually needs</a>, and once again it will be the thankless task of the computer scientist to appear to fall short of his own duties in order to produce something suited to the client''s real needs.
+  Once again, I find myself facing the <a id="annosa-dicotomia"> age-old dichotomy between what the client wants and what he actually needs</a>, and once again it will be the thankless task of the computer scientist to appear to fall short of his own duties in order to produce something suited to the client''s real needs.
 
   <h3>Client''s fax (May 19)</h3>
   This is to inform you of our decision to discontinue the porting of our management system to the C++ language; a painful but irrevocable decision, which we have reached having found that the main flaws of the previous application had not been remedied in this new version.
