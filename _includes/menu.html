@@ -1,27 +1,56 @@
 <nav class="menu-top">
-        <a id="home"
-            title="{{ site.data.strings[page.lang | default: 'it'].menu_home_title }}"
-            href="/">
-            <span>{{ site.data.strings[page.lang | default: 'it'].menu_home }}</span>
-            <i class="fa fa-home fa-2x"></i>
-        </a>
-        <a id="man"
-            title="{{ site.data.strings[page.lang | default: 'it'].menu_manuale_title }}"
-            href="/{{ page.lang | default: "it" }}/">
-            <span>{{ site.data.strings[page.lang | default: 'it'].menu_manuale }}</span>
-            <i class="fas fa-book fa-2x"></i>
-        </a>
-        <a id="github"
-            title="{{ site.data.strings[page.lang | default: 'it'].menu_github_title }}"
-            target="github"
-            href="{{ site.url_github }}">
-            <span>GitHub</span>
-            <i class="fab fa-github fa-2x"></i>
-        </a>
-        <a id="log"
-            title="{{ site.data.strings[page.lang | default: 'it'].menu_log_title }}"
-            href="/log/">
-            <span>{{ site.data.strings[page.lang | default: 'it'].menu_log }}</span>
-            <i class="fas fa-file-signature fa-2x"></i>
-        </a>
+    <a
+        title="{{ site.data.strings[page.lang].vai_a }}: {{page.previous.title}}"
+        {%
+        if
+        page.previous
+        %}
+        href="{{page.previous.url}}"
+        class="left"
+        {%
+        else
+        %}
+        href="Javascript:void(0);"
+        class="left inattivo"
+        {%
+        endif
+        %}
+    >
+        <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+
+    <a
+        href="/"
+        class="center"
+        title="{{ site.data.strings[page.lang].torna_home }}"
+    >
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="{{ site.url_github }}"
+        target="github"
+        class="center"
+        title="{{ site.data.strings[page.lang].vai_a_github }}"
+    >
+        <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+    </a>
+
+    <a
+        title="{{ site.data.strings[page.lang].vai_a }}: {{page.next.title}}"
+        {%
+        if
+        page.next
+        %}
+        href="{{page.next.url}}"
+        {%
+        else
+        %}
+        href="/{{ page.lang }}/"
+        {%
+        endif
+        %}
+        class="right"
+    >
+        <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+    </a>
 </nav>

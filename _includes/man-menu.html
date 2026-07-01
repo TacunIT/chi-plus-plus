@@ -1,33 +1,56 @@
 <nav class="menu-top">
-    
-    <a title="{{ site.data.strings[page.lang].vai_a }}: {{page.previous.title}}" 
-        {% if page.previous %}
-        href="{{page.previous.url}}" 
+    <a
+        title="{{ site.data.strings[page.lang].vai_a }}: {{page.previous.title}}"
+        {%
+        if
+        page.previous
+        %}
+        href="{{page.previous.url}}"
         class="left"
-        {% else %}
-        href="Javascript:void(0);" 
+        {%
+        else
+        %}
+        href="Javascript:void(0);"
         class="left inattivo"
-        {% endif %}
-       >
-       <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
-    </a>
-    
-    <a href="/" class="center" title="{{ site.data.strings[page.lang].torna_home }}">
-        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-    </a>
-    <a href="/{{ page.lang }}/indice" class="center" title="{{ site.data.strings[page.lang].torna_indice }}">
-        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        {%
+        endif
+        %}
+    >
+        <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
     </a>
 
-    <a title="{{ site.data.strings[page.lang].vai_a }}: {{page.next.title}}" 
-        {% if page.next %}
-        href="{{page.next.url}}" 
-        {% else %}
-        href="/{{ page.lang }}/" 
-        {% endif %}
-        class="right" 
-        >
-        <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+    <a
+        href="/"
+        class="center"
+        title="{{ site.data.strings[page.lang].torna_home }}"
+    >
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
     </a>
-    
+    <a
+        href="{{ site.url_github }}"
+        target="github"
+        class="center"
+        title="{{ site.data.strings[page.lang].vai_a_github }}"
+    >
+        <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+    </a>
+
+    <a
+        title="{{ site.data.strings[page.lang].vai_a }}: {{page.next.title}}"
+        {%
+        if
+        page.next
+        %}
+        href="{{page.next.url}}"
+        {%
+        else
+        %}
+        href="/{{ page.lang }}/"
+        {%
+        endif
+        %}
+        class="right"
+    >
+        <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+    </a>
 </nav>
