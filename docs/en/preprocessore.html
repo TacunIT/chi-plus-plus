@@ -6,7 +6,7 @@
 
 
 <head>
-    <title>Il preprocessore |  C'hi++
+    <title>The Preprocessor |  C'hi++
 </title>
     <meta charset="utf-8" />
     <link      rel="canonical"          href="https://chiplusplus.org/en/preprocessore" />
@@ -19,8 +19,8 @@
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
     <meta property="og:url"          content="https://chiplusplus.org/en/preprocessore" />
     <meta property="og:type"         content="website" />
-    <meta property="og:title"        content="Il preprocessore" />
-    <meta property="og:description"  content="Valori entropici e valori gravitazionali - La pornografia per il Giudice Potter Steward - L’amore è una backdoor - Il Cielo non è interessato alla tua felicità - L'obbligo di ringraziare." />
+    <meta property="og:title"        content="The Preprocessor" />
+    <meta property="og:description"  content="Entropic values and gravitational values - Pornography according to Justice Potter Stewart - Love is a backdoor - Heaven isn't interested in your happiness - The duty to give thanks." />
     <meta property="og:image:width"  content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image"        content="https://chiplusplus.org/assets/img/og-img/preprocessore.jpg" />
@@ -34,7 +34,7 @@
     <div class="page capitolo">
         <header><nav class="menu-top">
     <a
-        title="Go to: Gli operatori"
+        title="Go to: Operators"
         
         href="/en/operatori"
         class="left"
@@ -73,13 +73,13 @@
         <main class="corpo pubblicato ">
         
             <h1><a href="#dottrina">
-                Il preprocessore</a>
+                The Preprocessor</a>
             </h1>
-            <blockquote class="motto">Tutte le potenze, tranne quella di 1, crescono</blockquote>
+            <blockquote class="motto">All powers grow, except that of 1</blockquote>
             <section class="testo">
-                <p>Le direttive al preprocessore sono la caratteristica principale del C++.</p>
+                <p>Preprocessor directives are C++’s main distinguishing feature.</p>
 
-<p>Negli esempi precedenti abbiamo visto alcune istruzioni particolari, perché hanno un carattere <code>#</code> all’inizio e non hanno un carattere <code>;</code> alla fine:</p>
+<p>In the previous examples we saw some peculiar instructions, because they have a <code>#</code> character at the start and no <code>;</code> character at the end:</p>
 
 <pre><code>#include &lt;iostream&gt;
 
@@ -87,18 +87,18 @@
 #define NO_PARAMETRI 1
 </code></pre>
 
-<p>Queste istruzioni sono delle <em>direttive al pre-processore</em> e possono essere di tre tipi:</p>
+<p>These instructions are <em>preprocessor directives</em>, and they come in three kinds:</p>
 
 <ul>
-  <li>direttive di inclusione;</li>
-  <li>definizioni e macro-istruzioni;</li>
-  <li>direttive condizionali.</li>
+  <li>inclusion directives;</li>
+  <li>definitions and macros;</li>
+  <li>conditional directives.</li>
 </ul>
 
-<p>Le <em>direttive di inclusione</em> sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macro-istruzioni e dei simboli necessari per la corretta compilazione dei programmi.
-Questi elementi, per comodità, sono isolati all’interno di alcuni file, detti <em>file di include</em>.
-Quando il preprocessore incontra una direttiva <code>include</code>, la sostituisce con il contenuto del file a cui fa riferimento.
-Per esempio, se più di un programma dovesse usare la Classe <code>Colore</code> o la struttura <code>ColoreRGB</code> che abbiamo utilizzato nel programma che visualizza la dimensione dei <a href="/en/tipi-di-dato#principali"> principali tipi di dato del C++</a>, questi dovrebbero essere isolati in un file separato con estensione <code>.h</code>, a indicare che si tratta di un <em>header file</em>:</p>
+<p><em>Inclusion directives</em> are the most commonly used, and they’re used to import into the code the definitions of library functions, macros, and symbols needed for programs to compile correctly.
+For convenience, these elements are kept isolated inside certain files, called <em>include files</em>.
+When the preprocessor encounters an <code>include</code> directive, it replaces it with the contents of the file it refers to.
+For example, if more than one program needed to use the <code>Colore</code> class or the <code>ColoreRGB</code> struct we used in the program that displays the size of the <a href="/en/tipi-di-dato#principali">main C++ data types</a>, these would need to be isolated in a separate file with a <code>.h</code> extension, to indicate that it’s a <em>header file</em>:</p>
 
 <pre><code>
 #ifndef _CLASS_COLORE
@@ -155,7 +155,7 @@ public:
 
 </code></pre>
 
-<p>Il file verrebbe poi incluso nel codice dei programmi che ne fanno uso con una direttiva <code>include</code>:</p>
+<p>The file would then be included in the code of the programs that use it with an <code>include</code> directive:</p>
 
 <pre><code>/** 
  * @file src/preprocessore-main.cpp
@@ -222,16 +222,16 @@ int main()
 
 </code></pre>
 
-<p>Questo esempio utilizza due forme distinte per la direttiva <code>include</code>:</p>
+<p>This example uses two distinct forms of the <code>include</code> directive:</p>
 
 <pre><code>#include &lt;iostream&gt;
 #include "colore.h"
 </code></pre>
 
-<p>La prima forma serve a includere i file di sistema, come, appunto, <code>iostream</code>, che contiene le definizioni degli <em>stream</em> standard del C++; la seconda forma si utilizza per i file specifici dell’applicazione; nel nostro caso, <code>colore.h</code>.<br />
-I file di include possono includere a loro volta altri file; per esempio, <code>colore.h</code> include <code>iostream</code>, perché utilizza lo <em>stream</em> <code>cout</code>.
-Anche il nostro codice di esempio, però, include <code>iostream</code> e questo potrebbe causare un errore di compilazione se il precompilatore effettuasse due volte l’inclusione, perché sarebbe come se dichiarassimo due volte la stessa funzione.
-Per questo motivo, all’inizio del nostro file di include (ma anche di <code>iostream</code>) troviamo un altro tipo di direttive al preprocessore, le <i>direttive condizionali</i>:</p>
+<p>The first form is used to include system files, like <code>iostream</code> itself, which contains the definitions of C++’s standard <em>streams</em>; the second form is used for application-specific files, in our case, <code>colore.h</code>.
+Include files can themselves include other files; for example, <code>colore.h</code> includes <code>iostream</code>, because it uses the <code>cout</code> <em>stream</em>.
+Our example code, however, also includes <code>iostream</code>, and this could cause a compile error if the precompiler performed the inclusion twice, since it would be as if we declared the same function twice.
+For this reason, at the top of our include file (and of <code>iostream</code> too) we find another type of preprocessor directive, the <i>conditional directives</i>:</p>
 
 <pre><code>#ifndef _CLASS_COLORE
 #define _CLASS_COLORE 1
@@ -241,60 +241,60 @@ Per questo motivo, all’inizio del nostro file di include (ma anche di <code>io
 #endif /* _CLASS_COLORE */
 </code></pre>
 
-<p>Le direttive condizionali sono:</p>
+<p>The conditional directives are:</p>
 
 <table>
   <thead>
     <tr>
-      <th>direttiva</th>
-      <th>valore</th>
+      <th>directive</th>
+      <th>meaning</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><code>#if</code></td>
-      <td>se non zero</td>
+      <td>if non-zero</td>
     </tr>
     <tr>
       <td><code>#ifdef</code></td>
-      <td>se definito</td>
+      <td>if defined</td>
     </tr>
     <tr>
       <td><code>#ifndef</code></td>
-      <td>se non definito</td>
+      <td>if not defined</td>
     </tr>
     <tr>
       <td><code>#else</code></td>
-      <td>altrimenti</td>
+      <td>otherwise</td>
     </tr>
     <tr>
       <td><code>#elif</code></td>
-      <td>altrimenti se</td>
+      <td>otherwise if</td>
     </tr>
     <tr>
       <td><code>#endif</code></td>
-      <td>fine del blocco condizionale</td>
+      <td>end of the conditional block</td>
     </tr>
   </tbody>
 </table>
 
-<p>Quando il preprocessore legge la prima direttiva nel file di include, verifica che sia definito un valore per <code>_CLASS_COLORE</code>.
-Se <code>_CLASS_COLORE</code> non ha un valore associato, il preprocessore esegue l’istruzione successiva, che gli assegna il valore 1, poi inserisce nel file chiamante tutto il codice fino all’istruzione <code>#endif</code>.
-Se invece <code>_CLASS_COLORE</code> ha già un valore associato perché è già stata inclusa da altri file, il preprocessore salta direttamente alla direttiva <code>#endif</code> senza riscrivere le tre dichiarazioni.</p>
+<p>When the preprocessor reads the first directive in the include file, it checks whether a value is defined for <code>_CLASS_COLORE</code>.
+If <code>_CLASS_COLORE</code> has no associated value, the preprocessor runs the next instruction, which assigns it the value 1, then inserts into the calling file all the code up to the <code>#endif</code> instruction.
+If instead <code>_CLASS_COLORE</code> already has an associated value because it was already included by another file, the preprocessor jumps straight to the <code>#endif</code> directive without rewriting the three declarations.</p>
 
-<p>Le istruzioni seguenti definiscono delle costanti numeriche per i colori dell’<code>enum RGB</code>:</p>
+<p>The following instructions define numeric constants for the colors of the <code>RGB</code> <code>enum</code>:</p>
 
 <pre><code>#define  RGB_RED    0xFF0000
 #define  RGB_GREEN  0x00FF00
 #define  RGB_BLUE   0x0000FF
 </code></pre>
 
-<p>Le direttive al preprocessore permettono di definire anche delle costanti stringa:</p>
+<p>Preprocessor directives also let you define string constants:</p>
 
 <pre><code>#define  STR_GREEN  "verde"
 </code></pre>
 
-<p>Questa è una buona cosa, perché, come imparerai con l’esperienza, avere delle stringhe <em>hardcoded</em> all’interno dei programmi causa sempre dei problemi e soprattutto lega il tuo codice a un determinato linguaggio:</p>
+<p>This is a good thing, because, as you’ll learn from experience, having <em>hardcoded</em> strings inside your programs always causes problems, and above all ties your code to a specific language:</p>
 
 <pre><code>colore.coloreRgb.nome = "verde";     
 
@@ -306,7 +306,7 @@ cout &lt;&lt; "decimale:"    &lt;&lt; decimale   &lt;&lt; endl;
 cout &lt;&lt; "array:"       &lt;&lt; array      &lt;&lt; endl;
 </code></pre>
 
-<p>Questo può essere accettabile in un programma di esempio, ma è una scelta miope per un programma reale, specie se le stringhe si ripetono in contesti diversi:</p>
+<p>This may be acceptable in a sample program, but it’s a shortsighted choice for a real program, especially if the strings recur in different contexts:</p>
 
 <pre><code>char stringa[] = "ebete";
 
@@ -316,10 +316,10 @@ cout &lt;&lt; 6 &lt;&lt; "ebete" &lt;&lt; endl;
 
 </code></pre>
 
-<p>perché se la stringa dovesse variare (e stai pur certo che succederà), tu dovrai modificare tutte le righe di codice in cui compare.
-Al contrario, se definisci delle costanti per tutte le stringhe che utilizzi nel tuo codice, la correzione sarà unica:</p>
+<p>because if the string ever needs to change (and rest assured, it will), you’ll have to modify every line of code where it appears.
+By contrast, if you define constants for every string you use in your code, the fix only needs to happen in one place:</p>
 
-<pre><code>#define STR_COME_SEI = "astuto";
+<pre><code>#define STR_COME_SEI "astuto"
 
 char stringa[] = STR_COME_SEI;
 
@@ -329,7 +329,7 @@ cout &lt;&lt; 6 &lt;&lt; STR_COME_SEI &lt;&lt; endl;
 
 </code></pre>
 
-<p>Unite alle direttive condizionali, le definizioni di costanti stringa ti permettono di avere un codice multi-lingua:</p>
+<p>Combined with conditional directives, string constant definitions let you have multi-language code:</p>
 
 <pre><code>#ifdef LANG_IT
     #define  STR_RGB    "colore RGB"
@@ -344,13 +344,13 @@ cout &lt;&lt; 6 &lt;&lt; STR_COME_SEI &lt;&lt; endl;
 #endif
 </code></pre>
 
-<p>La definizione della costante che determina la condizione (in questo caso, <code>LANG_IT</code>) può avvenire o nel codice del programma che include il file con definizioni:</p>
+<p>The definition of the constant that determines the condition (in this case, <code>LANG_IT</code>) can happen either in the code of the program that includes the file with the definitions:</p>
 
 <pre><code>#define LANG_IT
 #include "colore.h"
 </code></pre>
 
-<p>o direttamente da riga di comando, come parametro di compilazione:</p>
+<p>or directly from the command line, as a compilation parameter:</p>
 
 <pre><code>% g++ ./cpp/preprocessore-main.cpp -D LANG_IT -o ./out/esempio
 % ./out/esempio                                               
@@ -370,7 +370,7 @@ colore RGB: verde
 RGB color: green
 </code></pre>
 
-<p>È possibile eliminare una <code>#define</code> precedentemente assegnata per mezzo della direttiva <code>#undef</code>:</p>
+<p>You can remove a previously assigned <code>#define</code> by means of the <code>#undef</code> directive:</p>
 
 <pre><code>#define LANG_IT
 #include "preprocessore-colore.h"
@@ -393,7 +393,7 @@ RGB color: green
 #endif
 </code></pre>
 
-<p>L’output di questo codice, sarà:</p>
+<p>The output of this code will be:</p>
 
 <pre><code>% g++ src/cpp/preprocessore-main.cpp -D LANG_EN -o src/out/esempio
 % ./src/out/esempio                                               
@@ -406,12 +406,12 @@ colore RGB: verde
 </code></pre>
 <hr id="macro-istruzioni" />
 
-<p>Il preprocessore può essere sfruttato anche per creare delle <em>macro-istruzioni</em> che possano essere utilizzate con tipi diversi di dati.</p>
+<p>The preprocessor can also be used to create <em>macros</em> that can be used with different data types.</p>
 
 <pre><code>#define MAGGIORE(a,b) ((a &gt; b) ? a : b)
 </code></pre>
 
-<p>Quando il precompilatore trova una chiamata alla macro MAGGIORE, all’interno del codice, la sostituisce con l’istruzione corrispondente, rimpiazzando i parametri <code>a</code> e <code>b</code> con le variabili contenute nella chiamata.</p>
+<p>When the precompiler finds a call to the MAGGIORE macro inside the code, it replaces it with the corresponding instruction, swapping the parameters <code>a</code> and <code>b</code> for the variables used in the call.</p>
 
 <pre><code>/** 
  * @file src/preprocessore-macro.cpp
@@ -447,7 +447,7 @@ int main ()
 
 </code></pre>
 
-<p>Se compili ed esegui questo codice, ottieni:</p>
+<p>If you compile and run this code, you get:</p>
 
 <pre><code>&gt; g++ src/cpp/preprocessore-macro.cpp -o src/out/esempio
 &gt; src/out/esempio                                         
@@ -456,7 +456,7 @@ int main ()
 z
 </code></pre>
 
-<p>Le macro del precompilatore sono eseguite prima che il codice sia compilato, quindi possono essere sfruttate anche per creare delle funzioni ex-novo.</p>
+<p>Precompiler macros run before the code is compiled, so they can also be used to create functions out of thin air.</p>
 
 <pre><code>/** 
  * @file src/preprocessore-hashtag.cpp
@@ -505,12 +505,12 @@ int main()
 </code></pre>
 <!-- adattamento di: https://en.cppreference.com/w/cpp/preprocessor/replace -->
 
-<p>Questo esempio fa uso di due operatori proprii del preprocessore:</p>
+<p>This example makes use of two operators specific to the preprocessor:</p>
 
 <ul>
-  <li>l’operatore di <em>stringification</em> <code>#</code> (mi rifiuto di tradurre questo termine), che converte il parametro successivo in una stringa, aggiungendogli i doppi apici ed aggiungendo dei <em>backlslash</em> a eventuali doppi apici presenti nel parametro;</li>
-  <li>l’operatore di <em>concatenazione</em> <code>##</code>, che unisce in un’unica stringa il parametro precedente e successivo.<br />
-Se compili ed esegui questo codice, ottieni:</li>
+  <li>the <em>stringification</em> operator <code>#</code> (I refuse to translate this term), which converts the following parameter into a string, adding double quotes around it and adding <em>backslashes</em> before any double quotes already present in the parameter;</li>
+  <li>the <em>concatenation</em> operator <code>##</code>, which merges the preceding and following parameter into a single string.
+If you compile and run this code, you get:</li>
 </ul>
 
 <pre><code>&gt; g++ src/cpp/preprocessore-hashtag.cpp -o src/out/esempio
@@ -519,75 +519,75 @@ Se compili ed esegui questo codice, ottieni:</li>
 PippoPluto
 </code></pre>
 
-<p>Le macro-istruzioni del precompilatore sono uno strumento molto potente, ma devono essere utilizzate con oculatezza perché, essendo generate <strong>prima</strong> che dell’avvio della compilazione, non sono sottoposte ad alcun controllo di congruenza per il tipo dei parametri utilizzati.
-Questo, come vedremo <a href="/en/polimorfismo#funzioni-template" class="xref">in seguito</a>, può generare degli errori molto subdoli e difficili da identificare.</p>
+<p>Precompiler macros are a very powerful tool, but they must be used with care, because, being generated <strong>before</strong> compilation even starts, they aren’t subject to any consistency check on the type of the parameters used.
+This, as we’ll see <a href="/en/polimorfismo#funzioni-template" class="xref">later on</a>, can produce very subtle and hard-to-find bugs.</p>
 
 <hr id="dottrina" />
 
-<p>Le tre forze che regolano la vita dell’Universo — Gravità, Entropia e Annosa Dicotomia — non influenzano solo la fisica, ma anche l’etica.
-Esistono valori che potremmo definire: “entropici” e valori “gravitazionali”.
-I valori legati all’Entropia sono quelli che tendono a disgiungere e a esaltare il singolo rispetto alla massa, come la libertà, la ricchezza, il successo o la fama; i valori legati alla Gravità sono quelli che, al contrario, uniscono gli individui, come l’<em>égalité</em> e la <em>fraternité</em> dei Francesi, ma senza la ghigliottina.<br />
-<a href="/en/operatori#effimeri" class="xref">Ieri</a> abbiamo visto come i valori legati all’Entropia siano effimeri —  non potrebbe essere altrimenti, per una forza che tende alla disgregazione — e di come chi li persegua sia spesso vittima dell’Annosa Dicotomia, ma questo non vuol dire che li si debba ripudiare.
-Non fare l’errore di pensare che ci sia una forza buona e una cattiva, come in <em>Star Wars</em>: sia la Gravità che l’Entropia sono necessarie per una corretta evoluzione dell’Universo.
-Il Maestro Canaro, che anche in tarda età amava molto andare in bicicletta, una volta mi disse che l’equilibrio dell’Universo è come l’equilibrio di un ciclista che percorra una strada sterrata in salita: non deve tenere il peso troppo in avanti, perché altrimenti la ruota posteriore perderebbe trazione e comincerebbe a slittare, ma non deve nemmeno tenere il peso troppo indietro, perché altrimenti la ruota anteriore si alleggerirebbe e non sarebbe più possibile sterzare.<br />
-Considerata la rispettabile quantità di cadute e contusioni collezionate dal Maestro Canaro nel corso delle sue escursioni in sella, ti consiglio di valutare solo il valore metaforico di questo insegnamento, ovvero che ci deve essere un bilanciamento fra Gravità ed Entropia, perché senza la Gravità, l’Universo è inutile, ma senza l’Entropia è noioso.
-In questo momento, l’Universo è in fase di espansione sotto l’influsso dell’Entropia ed è quindi normale che ci sia una preponderanza di azioni tendenti alla separazione.
-Per mantenere l’equilibrio, quindi, bisogna incentivare le attività e i valori che tendono a riunire, come l’amore o l’arte.<br />
-Molte persone pensano che amore e arte siano dei concetti vaghi e aleatorii, ma solo perché ne fraintendono l’essenza, ritenendoli dei concetti auto-esplicativi, che non occorre definire; qualcosa di simile alla definizione di “<em>pornografia</em>” che diede il Giudice Potter Steward, a proposito del film <em>Les Amants</em> di Louis Malle:</p>
+<p>The three forces that govern the life of the Universe — Gravity, Entropy, and the Age-Old Dichotomy — don’t just affect physics, they affect ethics too.
+There are values we might call “entropic” and “gravitational” values.
+Values tied to Entropy are the ones that tend to separate and to exalt the individual over the mass, like freedom, wealth, success, or fame; values tied to Gravity are the ones that, by contrast, unite individuals, like the French <em>égalité</em> and <em>fraternité</em> — but without the guillotine.
+<a href="/en/operatori#effimeri" class="xref">Yesterday</a> we saw how values tied to Entropy are ephemeral — it couldn’t be otherwise, for a force that tends toward disintegration —, and how whoever pursues them often falls victim to the Age-Old Dichotomy, but that doesn’t mean we should reject them.
+Don’t make the mistake of thinking there’s a good force and a bad one, like in <em>Star Wars</em>: both Gravity and Entropy are necessary for the Universe to evolve properly.
+Master Canaro, who loved cycling well into old age, once told me that the balance of the Universe is like the balance of a cyclist riding an uphill dirt road: he mustn’t lean his weight too far forward, because then the rear wheel would lose traction and start to slip, but he mustn’t lean too far back either, because then the front wheel would lift and steering would become impossible.
+Given the respectable number of falls and bruises Master Canaro collected over the course of his rides, I’d recommend taking only the metaphorical value of this teaching, namely that there has to be a balance between Gravity and Entropy, because without Gravity the Universe is pointless, but without Entropy it’s boring.
+Right now, the Universe is in an expansion phase under the influence of Entropy, so it’s normal for there to be a preponderance of actions tending toward separation.
+To maintain balance, then, we need to encourage the activities and values that tend to bring things together, like love or art.
+Many people think love and art are vague, fickle concepts, but only because they misunderstand their essence, treating them as self-explanatory concepts that need no definition; something similar to the definition of “<em>pornography</em>” given by Justice Potter Stewart, regarding Louis Malle’s film <em>Les Amants</em>:</p>
 
 <blockquote>
   <p>I shall not today attempt further to define the kinds of material I understand to be embraced within that shorthand description; and perhaps I could never succeed in intelligibly doing so. But I know it when I see it, and the motion picture involved in this case is not that.<a class="nota" href="/en/note#fn-steward" id="steward">1</a></p>
 </blockquote>
 
-<p>Questo approccio entropico/soggettivo, per quanto corretto nel caso di <em>Les Amants</em>, è chiaramente sbagliato in termini generali: tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente da chi le ascolta o le utilizza.
-Così come la parola: <i id="pesce">pesce</i>, per quanto banale, può non avere lo stesso valore per un biologo marino, un ecologista o per un pescatore, anche la parola <em>arte</em> può assumere significati diversi per un gallerista, per un artista o per un Papa.<br />
-È altrettanto sbagliata l’interpretazione entropico/romantica che comunemente si attribuisce alle parole: <em>amore</em> e <em>arte</em>.
-L’amore non è il sentimento vago che ha fatto la fortuna di poeti, musici e letterati, ma uno stato (più o meno persistente) del nostro organismo in cui riteniamo che qualcuno o qualcosa sia più importante di noi stessi.
-Di contro, l’Arte (ti prego di scrivere questo termine con l’iniziale maiuscola, nel tuo libro) non è l’esaltazione della personalità di un singolo, ma è — e dev’essere — la traccia del nostro cammino alla ricerca del Senso della Vita: Dio, per chi ci crede, o la Perfezione per i non credenti.
-Approfondiremo quest’ultimo concetto <a id="arte" href="/en/ereditarieta#arte" class="xref">in séguito</a>; qui e ora, come direbbe Céline Dion, <em>let’s talk about love</em>.</p>
+<p>This entropic/subjective approach, however correct in the case of <em>Les Amants</em>, is clearly wrong in general terms: all words, even the most common ones, can be interpreted differently by whoever hears or uses them.
+Just as the word <i id="pesce">fish</i>, however plain, may not mean the same thing to a marine biologist, an environmentalist, or a fisherman, so too the word <em>art</em> can take on different meanings for a gallery owner, an artist, or a Pope.
+The entropic/romantic interpretation commonly attributed to the words <em>love</em> and <em>art</em> is just as wrong.
+Love is not the vague feeling that has made the fortune of poets, musicians, and writers, but a (more or less lasting) state of our organism in which we consider someone or something more important than ourselves.
+Art (please, capitalize this term in your book), on the other hand, is not the exaltation of a single personality, but is — and must be — the trace of our journey in search of the Meaning of Life: God, for those who believe in Him, or Perfection, for non-believers.
+We’ll go deeper into this last concept <a id="arte" href="/en/ereditarieta#arte" class="xref">later on</a>; here and now, as Céline Dion would say, <em>let’s talk about love</em>.</p>
 
 <hr id="amore" />
 
-<p>Tutti noi agiamo in base a degli schemi di valori che determinano le nostre scelte.
-L’istinto di sopravvivenza, solitamente, ci spinge a porre la nostra persona al vertice di questa piramide, ma alle volte può capitarci di eleggere a nostro bene supremo qualcuno o qualcosa diverso da noi stessi.
-Quel senza Dio di Dawkins
+<p>We all act according to frameworks of values that determine our choices.
+The survival instinct usually pushes us to place ourselves at the top of this pyramid, but sometimes we may end up choosing, as our supreme good, someone or something other than ourselves.
+That godless Dawkins
 <!-- Utilizzo questo appellativo in maniera affettuosamente canzonatoria: Dawkins ha cambiato il mio modo di vedere il Mondo o, almeno, parte di esso. Credo solo che faccia un errore di generalizzazione, ritenendo tutti i fedeli dei fanatici e dei bigotti. -->
-ha dimostrato come l’attaccamento che noi proviamo per i nostri parenti sia direttamente proporzionale al numero di cromosomi che condividiamo con essi e che quindi può essere riconducibile al desiderio primordiale di perpetuare il nostro patrimonio genetico<a class="nota" href="/en/note#fn-selfish" id="selfish">2</a>.
-Questa interpretazione ribonucleica dell’amore funziona molto bene per i rapporti di sangue (padre/figlio, nonno/nipote, zio/nipote ecc.), ma non spiega l’amore fra mamma e papà o fra nonno e nonna — almeno, nelle famiglie che non ritengono l’incesto una pratica accettabile.<br />
-L’<em>egoismo dei geni</em> non spiega nemmeno altre forme d’amore come l’amor di Patria, che spinge i giovani a sacrificare la propria vita in guerra,
+showed how the attachment we feel toward our relatives is directly proportional to the number of chromosomes we share with them, and can therefore be traced back to the primordial desire to perpetuate our genetic heritage.<a class="nota" href="/en/note#fn-selfish" id="selfish">2</a>
+This ribonucleic interpretation of love works very well for blood relationships (parent/child, grandparent/grandchild, uncle or aunt/nephew or niece, etc.), but it doesn’t explain the love between a mother and a father, or between grandmother and grandfather — at least, in families that don’t consider incest an acceptable practice.
+The <em>selfish gene</em> doesn’t explain other forms of love either, like love of country, which drives young people to sacrifice their lives in war,
 <!--
 La maggior parte dei soldati parte controvoglia perché costretta, ma la storia - e sfortunatamente anche i cimiteri -, sono pieni di esempii di giovani che si sono arruolati volontariamente. Boccioni ed Hemingway, per esempio, ma anche diversi ciclisti.
 -->
-l’amore per il prossimo, che porta il missionario a sacrificare la sua vita per aiutare i malati o l’amore per una forma di arte, uno sport o un lavoro.
-La realtà è che l’amore è una <em>backdoor</em>, o, meglio: una bomba a tempo, che viene inserita di nascosto nel tuo software, per spingerti a fare la cosa giusta quando arriverà il tuo momento.  <br />
-L’amore è l’unica forza allo stesso tempo gravitazionale ed entropica.
-Gravitazionale, perché unisce gli individui; entropica, perché li porta a riprodursi, replicando il loro DNA in qualcos’<em>altro</em>.
-Ti spinge a restare in casa, davanti a una tela, uno spartito o un foglio bianco o ti fa uscire, su una sella, una pista o con una macchina fotografica in mano.
-Ti porta in cima a una montagna o in una baraccopoli; al Polo o nel deserto; ti getta nel mare, ma non ti viene a salvare, come nella canzone; ti fa lasciare un lavoro sicuro perché non riconosci più la persona che vedi nello specchio la mattina o ti fa restare in un monastero, anche se.<br />
-E questa è la parte facile; poi c’è l’amore fra gli individui.<br />
-Ti sei mai innamorato?
-No? be’, succederà.
-Ci sono due modi, di innamorarsi: o conosci una persona e te ne innamori o conosci una persona e scopri che è lei (o lui) che hai sempre amato.
-Il primo è il caso più comune; il secondo caso, non è un caso.<br />
-Il Maestro Canaro una volta disse (ma non credo fosse farina del suo sacco):</p>
+love for one’s fellow man, which leads a missionary to sacrifice their life to help the sick, or love for a form of art, a sport, or a job.
+The truth is that love is a <em>backdoor</em>, or, better: a time bomb, secretly planted in your software, to push you to do the right thing when your moment comes.
+Love is the only force that is at once gravitational and entropic.
+Gravitational, because it unites individuals; entropic, because it drives them to reproduce, replicating their DNA into something <em>else</em>.
+It pushes you to stay home, in front of a canvas, a music score, or a blank page, or it makes you go out, on a saddle, a track, or with a camera in hand.
+It takes you to a mountaintop or a slum; to the Pole or the desert; it throws you into the sea, but doesn’t come to save you, unlike in the song; it makes you leave a secure job because you no longer recognize the person you see in the mirror in the morning, or it makes you stay in a monastery, even though.
+And that’s the easy part; then there’s love between individuals.
+Have you ever fallen in love?
+No? Well, it’ll happen.
+There are two ways to fall in love: either you meet someone and fall in love with them, or you meet someone and discover it’s them (or him, or her) that you’ve always loved.
+The first is the more common case; the second case is no coincidence.
+Master Canaro once said (though I don’t believe it was originally his):</p>
 
 <blockquote>
-  <p>Le donne cercano per tutta la vita il loro uomo ideale; nel frattempo, si sposano.</p>
+  <p>Women spend their whole lives looking for their ideal man; in the meantime, they get married.</p>
 </blockquote>
 
-<p>Questo è vero per tutti, uomini e donne.
-Il tuo DNA contiene i geni che hanno fatto nascere l’amore fra i tuoi genitori: occhi verdi, spalle larghe, un bel seno o magari un bel sedere<a class="nota" href="/en/note#fn-orologiaio" id="orologiaio">3</a>.
-Allo stesso modo, dentro di te potrebbe esserci qualcosa che ti spingerà a cercare e ad amare una persona in particolare, perché quella persona è importante per la tua vita.
-Quando (se) la incontrerai, avrai l’impressione di conoscerla da sempre e capirai che tutte le volte che ti sei innamorato, ti sei innamorato di lei, anche se non la conoscevi ancora.
-Sfortunatamente, questo non vuol dire che la vostra storia durerà o che vivrete per sempre felici e contenti, come nelle favole. Anzi.<br />
-Il Cielo non è interessato alla tua felicità, ma al miglioramento, che, come ogni forma di crescita, ha il suo prezzo.
-Tutti sanno che il Maestro Canaro risolse il <em>Koan Mu</em> in una notte di profondo dolore dopo la morte di un cane di nome Lele.
-Molti, per ciò, ritengono il cane Lele un <em>Bodhisattva</em> che diede la vita per generare nel Maestro la prima scintilla dell’Illuminazione.
-Hanno ragione, ma solo in parte, perché la morte del cane Lele fu solo una delle cause dell’amarezza di quella notte.
-Il Maestro Canaro mi disse che buona parte del dolore era stato causato da una donna, che lui amava e dalla quale era stato ferito.
-Il motivo per cui me lo raccontò è lo stesso per cui io lo sto raccontando ora a te: anni dopo, quando il Maestro aveva già definito le basi del C’hi++, lui tornò da quella donna e la ringraziò per il torto che gli aveva fatto, perché lo aveva messo nella condizione d’animo necessaria a capire qualcosa a cui altrimenti avrebbe potuto non arrivare mai.
+<p>This holds true for everyone, men and women alike.
+Your DNA contains the genes that gave rise to the love between your parents: green eyes, broad shoulders, a nice chest, or maybe a nice backside.<a class="nota" href="/en/note#fn-orologiaio" id="orologiaio">3</a>
+In the same way, there could be something inside you that will drive you to seek out and love one particular person, because that person matters to your life.
+When (if) you meet them, you’ll feel as though you’ve known them forever, and you’ll understand that every time you’ve ever fallen in love, you were falling in love with them, even though you didn’t know them yet.
+Unfortunately, this doesn’t mean your story will last, or that you’ll live happily ever after, like in fairy tales. Quite the opposite, in fact.
+Heaven isn’t interested in your happiness, but in your improvement, which, like any form of growth, comes at a price.
+Everyone knows Master Canaro solved the <em>Mu Koan</em> in one night of deep grief, after the death of a dog named Lele.
+Many, for this reason, consider the dog Lele a <em>Bodhisattva</em> who gave his life to spark in the Master the first flicker of Enlightenment.
+They’re right, but only partly, because the death of the dog Lele was only one of the causes of that night’s bitterness.
+Master Canaro told me that a good part of the pain had been caused by a woman he loved, and by whom he had been hurt.
+The reason he told me this is the same reason I’m telling you now: years later, when the Master had already laid the foundations of C’hi++, he went back to that woman and thanked her for the wrong she had done him, because it had put him in the state of mind he needed to understand something he might otherwise never have grasped.
 <br id="ringraziare" />
-Ringraziare chi ci fa del bene con azioni gentili fa parte dell’educazione; ringraziare chi ci fa del bene attraverso il male non è facile, ma è necessario per far sì che quell’azione venga ripetuta anche nelle prossime esistenze.</p>
+Thanking those who do us good through kind actions is basic manners; thanking those who do us good through pain isn’t easy, but it’s necessary, so that the same action will be repeated in our future existences as well.</p>
 
             </section>
         
@@ -597,7 +597,7 @@ Ringraziare chi ci fa del bene con azioni gentili fa parte dell’educazione; ri
         
         
         <a href="/en/operatori" 
-           title="Go to: Gli operatori" 
+           title="Go to: Operators" 
            class="left">
             <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
         </a>

@@ -1,5 +1,15 @@
 # TODO
 
+## Traduzione
+
+@todo: verificare il claim su MySQL/Postgres nel capitolo Operatori — "per le prime versioni di MySQL è f; per Postgres o Oracle, è 0" sembra invertito (è Postgres a usare storicamente t/f come booleani letterali, non MySQL)
+
+@todo: verificare se il refuso p12->p2 (capitolo Tipi di dato, sezione sui puntatori) è stato corretto anche nella versione italiana, non solo in quella tradotta
+
+@todo: verificare se i bug di formattazione trovati nella traduzione (backtick disallineati in Linguaggi di programmazione e in Commenti; ancora #fn-fn-non-tempo in Struttura dei programmi; tabelle operatori ~ e >>=/<<= in Operatori) sono stati corretti anche nei file italiani originali, non solo nelle versioni inglesi
+
+@todo: decidere una fonte per la citazione biblica di Mosè ai figli di Levi (Esodo 32:27) nel capitolo Operatori — al momento è una resa in stile KJV, non una citazione da un'edizione specifica
+
 ## Redazione
 
 @todo: Va verificata l'ammissibilità delle "Leggi" dello Spazionismo. Non è stettamente necessario, perché hanno un valore prevalentemente simbolico, ma visto che sono la base di tutta questa filosofia, se fossero smaccatamente false è meglio saperlo prima che le utilizzi nel testo.  
