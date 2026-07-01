@@ -4,7 +4,7 @@ lang:       it
 layout:     manuale
 og_desc:    "Affinità fra Platone e il C++ - Perché ciò che amiamo ci ucciderà (se tutto va bene) - Libero arbitrio e dissonanze nel Jazz - Cartesio non capiva nulla di serigrafia"
 og_img:     "/assets/img/og-img/classi-oggetti.jpg"
-permalink:  /man/it/classi-oggetti
+permalink:  /it/classi-oggetti
 quote:      "Ceci n'est pas une |"
 status:     pubblicato
 title:      "Classi e oggetti"
@@ -36,7 +36,7 @@ Per utilizzare questa struttura è necessario conoscerne il contenuto e il rappo
 - che se `s` supera il valore di 59, `m` va incrementato di 1;
 - che se `m` supera il valore di 59, `h` va incrementato di 1;
 
-Questo è l'opposto del *low coupling* di cui abbiamo parlato <a href="/man/it/struttura-dei-programmi#coupling" class="xref">tempo fa</a>, perché lega indissolubilmente una funzione alla struttura del dato che deve gestire.
+Questo è l'opposto del *low coupling* di cui abbiamo parlato <a href="/it/struttura-dei-programmi#coupling" class="xref">tempo fa</a>, perché lega indissolubilmente una funzione alla struttura del dato che deve gestire.
 Per capirsi: una funzione di aggiornamento dei minuti dovrà essere qualcosa di simile a:
 
 ```
@@ -98,11 +98,11 @@ Il primo, detto *operatore di selezione diretta*, viene utilizzato con istanze d
 
 L'etichetta `public` che vedi all'inizio della dichiarazione della classe è un <i id="specificatori-accesso">specificatore di accesso</i> e serve a stabilire quali membri della classe siano accessibili a funzioni esterne e quali invece siano riservati in esclusiva alla classe stessa.
 
-> il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a class="nota" href="/man/it/note#fn-selvaggio" id="selvaggio">1</a>.
+> il selvaggio non ama dire il suo nome o farsi fotografare, perché per mezzo del suo nome o del ritratto egli è accessibile, e può quindi ricevere danno da chi con questi mezzi è in grado di raggiungerlo<a class="nota" href="/it/note#fn-selvaggio" id="selvaggio">1</a>.
 
 Questa frase di Lucien Lévy-Bruhl si applica anche alle classi del C++.
 Sia gli attributi che i metodi di una classe possono essere protetti da accessi o modifiche indebite grazie ai modificatori di accesso `private`, `protected` e `public`.
-I metodi o gli attributi dichiarati `private` sono accessibili solo alla classe stessa; quelli dichiarati come `protected` sono accessibili alla classe e a eventuali <a href="/man/it/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come `public` sono accessibili a qualunque elemento del programma.
+I metodi o gli attributi dichiarati `private` sono accessibili solo alla classe stessa; quelli dichiarati come `protected` sono accessibili alla classe e a eventuali <a href="/it/ereditarieta" class="xref">classi derivate</a>; quelli dichiarati come `public` sono accessibili a qualunque elemento del programma.
 In mancanza di specifiche, tutti i dati e le funzioni di una classe verranno considerati:
 
 -	*privati*, nel caso di una classe;
@@ -290,8 +290,8 @@ Attenzione, però: se a uscire dal campo d’azione è un puntatore, il distrutt
 <hr id="funzioni-di-interfaccia">
 
 Le funzioni membro devono essere dichiarate all'interno della dichiarazione della classe e possono essere definite sia dentro che fuori di essa.
-Definirle all'interno della dichiarazione della classe equivale a dichiararle <a href="/man/it/funzioni#inline" class="xref">inline</a>
-Se invece le si definisce esternamente alla dichiarazione della classe, vanno identificate aggiungendo il nome della classe prima di quello della funzione, seguito dall'<a href="/man/it/operatori#risoluzione" class="xref">operatore di risoluzione</a>:
+Definirle all'interno della dichiarazione della classe equivale a dichiararle <a href="/it/funzioni#inline" class="xref">inline</a>
+Se invece le si definisce esternamente alla dichiarazione della classe, vanno identificate aggiungendo il nome della classe prima di quello della funzione, seguito dall'<a href="/it/operatori#risoluzione" class="xref">operatore di risoluzione</a>:
 
 ```
 {% include_relative src/classi-classe-orario.cpp %}
@@ -406,7 +406,7 @@ public:
 ```
 ma il fatto che qualcosa sia possibile non vuol dire che sia una buona scelta, come penso che tu abbia imparato, nel corso della tua vita.  
 Non sei nemmeno obbligato a dichiarare le funzioni di interfaccia come `inline`; l'ho fatto qui perché erano estremamente semplici, ma si dovrebbe evitare di aggiungere il codice delle funzioni all'interno della dichiarazione di una classe già di per sé complessa perché la rende più difficile da leggere.
-C'è anche chi pensa che ciò sia sbagliato perché, se da un lato rende le cose più facili a chi scrive il codice, complica la vita di chi lo legge perché mischia ciò che la classe fa con il modo in cui lo fa<a class="nota" href="/man/it/note#fn-inline" id="inline">2</a>.
+C'è anche chi pensa che ciò sia sbagliato perché, se da un lato rende le cose più facili a chi scrive il codice, complica la vita di chi lo legge perché mischia ciò che la classe fa con il modo in cui lo fa<a class="nota" href="/it/note#fn-inline" id="inline">2</a>.
 Io non sono del tutto d'accordo con questa affermazione perché alle volte è più comodo e rapido avere il codice delle funzioni all'interno della dichiarazione della classe, ma essendo un precetto che antepone il bene di tanti (i fruitori del codice) rispetto a quello del singolo (l'autore del codice), mi sono sentito in dovere di riferirtelo.  
 Così come abbiamo fatto per il costruttore della classe, potremmo unificare le funzioni di lettura e scrittura, utilizzando un parametro di default che determini il comportamento del programma:
 
@@ -452,7 +452,7 @@ Le uniche funzioni membro che non possono fare uso del puntatore `this` sono que
 Una classe può avere sia attributi che funzioni membro statiche.
 La particolarità di questi elementi è di non essere legati a una specifica variabile, ma di essere condivisi da tutte le istanze della classe; questo fa sì che abbiano un comportamento leggermente diverso da quello dei membri non statici:
 
-- per inizializzarli all’interno della dichiarazione, li si deve dichiarare come `inline static`<a class="nota" href="/man/it/note#fn-cpp17" id="cpp17">3</a>,
+- per inizializzarli all’interno della dichiarazione, li si deve dichiarare come `inline static`<a class="nota" href="/it/note#fn-cpp17" id="cpp17">3</a>,
 altrimenti, devono essere inizializzati altrove nel programma, come un qualsiasi oggetto a visibilità globale;
 
 - si può accedere ad essi, oltre che con i normali operatori di selezione, facendo riferimento alla classe stessa.
@@ -509,7 +509,7 @@ class
 ```
 
 Questo codice dichiara allo stesso tempo la classe e la sua unica istanza, la variabile globale `obj`.  
-Quando il Maestro Canaro provò a fare il *porting* dell'<a href="/man/it/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a>, avrebbe voluto utilizzare una classe anonima per la variabile `Dio`, perché, priva di un costruttore e istanziata dalla sua stessa classe, quella variabile sarebbe stata visibile in tutto il codice, ma nessuna parte del programma ne avrebbe potuta generare un'altra:
+Quando il Maestro Canaro provò a fare il *porting* dell'<a href="/it/mitopoietica#universo-in-cpp" class="xref">Universo in C++</a>, avrebbe voluto utilizzare una classe anonima per la variabile `Dio`, perché, priva di un costruttore e istanziata dalla sua stessa classe, quella variabile sarebbe stata visibile in tutto il codice, ma nessuna parte del programma ne avrebbe potuta generare un'altra:
 
 ```
 {% include_relative src/classi-dio.cpp %}
@@ -535,7 +535,7 @@ In questo codice, possiamo considerare la dichiarazione della classe come l'*ide
 {% include_relative src/classi-pesce.cpp %}
 ```
 
-Come abbiamo detto parlando del <a href="/man/it/preprocessore#pesce" class="xref">preprocessore</a>, però, la parola *pesce* può avere diversi valori, a seconda di chi la utilizza, quindi, la dichiarazione/idea della classe `Pesce` varierà a seconda dell'utilizzo che se ne deve fare.
+Come abbiamo detto parlando del <a href="/it/preprocessore#pesce" class="xref">preprocessore</a>, però, la parola *pesce* può avere diversi valori, a seconda di chi la utilizza, quindi, la dichiarazione/idea della classe `Pesce` varierà a seconda dell'utilizzo che se ne deve fare.
 Per esempio, sapere se un pesce sia commestibile o no è determinante per un pescatore o per un ecologista, ma potrebbe non esserlo per un biologo marino.
 Al contrario, il tipo di scheletro o il sistema di respirazione, rilevanti per un biologo, sono del tutto irrilevanti per un pescivendolo, a cui invece interesseranno sicuramente il prezzo al chilo, la data di cattura e il tipo di conservazione applicato.
 Di questo, parleremo nelle prossime lezioni; adesso dobbiamo tornare su una questione che avevamo lasciato in sospeso, ovvero il precetto:
@@ -544,7 +544,7 @@ Di questo, parleremo nelle prossime lezioni; adesso dobbiamo tornare su una ques
 
 Abbiamo visto che l'Amore è una forza allo stesso tempo gravitazionale ed entropica, perché unisce gli individui, ma allo stesso tempo li porta a riprodursi in forme differenti.  
 In un certo senso, possiamo considerare l'Amore come il “costruttore” delle nostre istanze, perché genera le condizioni che spingono i nostri genitori a incontrarsi e ad accoppiarsi e soprattutto li spinge a restare insieme dopo l'accoppiamento.
-La monogamia non è una costante, anzi, in natura esistono quattro modi differenti di gestire la prole e John Maynard Smith li ha catalogati in base alla specie animale che le adotta<a class="nota" href="/man/it/note#fn-maynard" id="maynard">4</a>:
+La monogamia non è una costante, anzi, in natura esistono quattro modi differenti di gestire la prole e John Maynard Smith li ha catalogati in base alla specie animale che le adotta<a class="nota" href="/it/note#fn-maynard" id="maynard">4</a>:
 
 |:--:|:--|
 | **Anitra**    | il maschio abbandona, la femmina alleva
@@ -569,7 +569,7 @@ Ho scelto le tre "J" &mdash; Jim, Jimi e Janis &mdash; perché il Maestro Canaro
 > Capisci, avevano tutti ventisette anni e poi quella "J" che ricorre nel nome.. non credo fosse un caso.
 “*Muß es sein? Es muß sein!*”, come direbbe Beethoven.
 So cosa stai pensando: che sto cercando di definire un dogma per giustificare una mia speranza, ma non è così.
-La teoria del “27 Club”, anche se include Amy Winehouse e Robert Johnson, lascia dolorosamente fuori il Elvis e Andrea Pazienza<a class="nota" href="/man/it/note#fn-pazienza" id="pazienza">5</a>, che io ho amato molto di più.
+La teoria del “27 Club”, anche se include Amy Winehouse e Robert Johnson, lascia dolorosamente fuori il Elvis e Andrea Pazienza<a class="nota" href="/it/note#fn-pazienza" id="pazienza">5</a>, che io ho amato molto di più.
 
 <hr id="libero-arbitrio">
 
@@ -594,11 +594,11 @@ Allo stesso modo, quando l'Uno primigenio “lancia” la sua energia nell'Unive
 Malgrado ciò, non sa quale di quelle permutazioni avrà luogo e non lo vuole nemmeno sapere.
 Auspica che il nuovo ciclo di esistenza sia migliore dei precedenti, ma non desidera che avvenga un certo evento o che non avvenga un altro,
  perché il desiderio lo renderebbe vulnerabile alle lusinghe dell'Annosa Dicotomia.   
- Un famoso velista<a class="nota" href="/man/it/note#fn-straulino" id="straulino">6</a>, una volta disse:
+ Un famoso velista<a class="nota" href="/it/note#fn-straulino" id="straulino">6</a>, una volta disse:
 
  > {{ site.data.citazioni.straulino.testo }}
 
- L'Uno si comporta in maniera simile: ligio al precetto del *Wu Wei*<a class="nota" href="/man/it/note#fn-wu-wei" id="wu-wei">7</a> taoista, pone le condizioni necessarie per il ripetersi degli eventi che si sono rivelati benefici, ma non li impone.
+ L'Uno si comporta in maniera simile: ligio al precetto del *Wu Wei*<a class="nota" href="/it/note#fn-wu-wei" id="wu-wei">7</a> taoista, pone le condizioni necessarie per il ripetersi degli eventi che si sono rivelati benefici, ma non li impone.
 Scrive l'analisi del sistema, ma lascia che siano i programmatori a scrivere il codice, anche se sa che faranno certamente degli errori.
 Definisce delle regole, ma lascia le sue istanze libere di trasgredirle, perché sa che l'evoluzione è sempre frutto di un errore venuto male, di qualcosa che non sarebbe dovuto essere così e invece così è meglio.   
 Le regole non devono essere una rete che imprigiona e immobilizza, ma una rete che salva e sostiene, così come il “religare” delle religioni non deve essere un legame che impastoia, ma che sorregge.
@@ -606,7 +606,7 @@ Le regole che definiscono e quindi limitano la nostra esistenza sono come un edi
 I muri interni possono essere abbattuti o modificati, se necessario, ma i pilastri e le travi devono essere lasciati al loro posto.
 Similmente, la modifica delle regole può essere benefica, ma deve essere permessa solo a chi le conosce bene <!-- per esempio, Gesù --> perché un carpentiere maldestro potrebbe - per errore o per stupidità - rimuovere uno dei pilastri portanti mettendo in pericolo la solidità dell'edificio. <!-- per esempio, il Movimento del '68 -->  
 Per questi motivi, la modifica delle regole non può essere un'attività ammessa da chi le ha promulgate, anche se ne riconosce l'utilità, ma dev'essere un'attività apparentemente clandestina, svolta da elementi sacrificabili, che possano fungere da capri espiatorii se qualcosa va male.  
-Non fu per ingenuità, che l'Altissimo concesse a Iblīs una proroga alla sua punizione<a class="nota" href="/man/it/note#fn-iblis" id="iblis">8</a> e non fu un caso se il Maestro Canaro venne aggiunto al gruppo degli angeli caduti, dopo che, vittima dell'Annosa Dicotomia, cercò di contravvenire alle regole definite dall'Analista.
+Non fu per ingenuità, che l'Altissimo concesse a Iblīs una proroga alla sua punizione<a class="nota" href="/it/note#fn-iblis" id="iblis">8</a> e non fu un caso se il Maestro Canaro venne aggiunto al gruppo degli angeli caduti, dopo che, vittima dell'Annosa Dicotomia, cercò di contravvenire alle regole definite dall'Analista.
 Se rifiuti le dissonanze, tutt'al più, puoi suonare il Blues; con le dissonanze, hai il Jazz.
 
 <hr id="livelli-esistenza">
@@ -618,7 +618,7 @@ Questo livello è assimilabile all'istanza di una classe, che mette in atto ciò
 La nostra entità ideale è unica e costante, mentre la nostra manifestazione fisica è mutevole: come sai, uno stesso oggetto può essere allocato in aree differenti di memoria, in successive esecuzioni di un programma, così come una stessa stampa può essere riprodotta su supporti diversi.
 In questo ciclo di esistenza, il Maestro Canaro e il cane Lele sono stati un umano e un cane che correvano sulle colline intorno al lago di Bracciano, ma in altre esistenze potrebbero essere &mdash; o essere stati &mdash; altre persone e altri animali, in altri luoghi o addirittura in altri pianeti.
 Il nostro livello ideale, infatti, non stabilisce cosa dobbiamo essere, ma quale debba essere il nostro contributo all'economia dell'Universo; la forma che assumiamo o il luogo in cui ci manifestiamo sono del tutto incidentali.
-Per il C'hi++, come per l'Induismo<a class="nota" href="/man/it/note#fn-cogito" id="cogito">9</a>, la frase: “Cogito ergo sum” di Cartesio è insensata, perché ciò che cogita è l'istanza, che è transeunte.
+Per il C'hi++, come per l'Induismo<a class="nota" href="/it/note#fn-cogito" id="cogito">9</a>, la frase: “Cogito ergo sum” di Cartesio è insensata, perché ciò che cogita è l'istanza, che è transeunte.
 Ciò che siamo realmente, la nostra essenza, si manifesta in ciò che facciamo istintivamente.
 
 <!--

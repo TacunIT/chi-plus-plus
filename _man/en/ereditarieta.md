@@ -4,7 +4,7 @@ lang:       en
 layout:     manuale
 og_desc:    "Il Karma delle funzioni virtuali - La Scienza è transeunte; il Mito è immortale - Perché 13 e 17 portano sfortuna - Cos'è l'Arte - Le regole dell'Ikebarba"
 og_img:     "/assets/img/og-img/ereditarieta.jpg"
-permalink:  /man/en/ereditarieta
+permalink:  /en/ereditarieta
 quote:      "Una classe ma può ripudiare una classe figlia, se è cattiva, ma una casse figlia non può ripudiare la sua classe padre perché gli deve più di quanto non sia in grado di pagargli e in particolare gli deve l'esistenza."
 status:     pubblicato
 title:      L'ereditarietà
@@ -14,7 +14,7 @@ title:      L'ereditarietà
 
 L'ereditariaretà, ovvero la possibilità di creare delle genealogie di classi, è la caratteristica principale del C++.
 
-Come abbiamo visto nella <a href="/man/en/classi-oggetti#dottrina" class="xref">lezione precedente</a>, una ipotetica classe `Pesce` dovrà avere attributi differenti a seconda dell'utilizzo che se ne deve fare.
+Come abbiamo visto nella <a href="/en/classi-oggetti#dottrina" class="xref">lezione precedente</a>, una ipotetica classe `Pesce` dovrà avere attributi differenti a seconda dell'utilizzo che se ne deve fare.
 In un linguaggio come il *C*, che non permette l'ereditariaretà, quindi, si dovranno prevedere due strutture di dati differenti per ciascun caso:
 
 ```
@@ -93,7 +93,7 @@ class PesceAlimentare : public Pesce {
 };
 ```
 dichiara la classe `PesceAlimentare` come classe derivata dalla classe `Pesce`.
-Lo <a href="/man/en/classi-oggetti#specificatori-accesso" class="xref">specificatore di accesso</a> fra i nomi delle due classi definisce la visibilità dei dati della classe base all'interno della classe figlia:
+Lo <a href="/en/classi-oggetti#specificatori-accesso" class="xref">specificatore di accesso</a> fra i nomi delle due classi definisce la visibilità dei dati della classe base all'interno della classe figlia:
 
 ```
 class B : public A
@@ -166,7 +166,7 @@ PesceAlimentare(Sesso sesso, float prezzo, const char* specie)
 La seconda linea è la <i id="lista-inizializzazione">lista di inizializzazione</i> della classe e contiene i costruttori delle classi base.
 Quando si instanzia un oggetto di classe derivata, il sistema richiama per prima cosa i costruttori delle classi base e poi quello della classe figlia.
 In questo modo, il costruttore della classe derivata ha la certezza di lavorare su dei dati membro correttamente inizializzati.  
-L'utilizzo del costruttore delle classi base per l'inizializzazione dei dati comuni è necessario per due motivi: il primo è che parte dei dati delle classe base potrebbero essere `private` e quindi inaccessibili alla classe derivata; il secondo motivo è che in questo modo si ottiene un <a href="/man/en/struttura-dei-programmi#coupling" class="xref">low coupling</a> fra classe base e classe derivata e, se  si dovesse modificare l’implementazione interna del costruttore della classe base (mantenendo invariata l'interfaccia), non ci sarebbe bisogno di dover modificare il codice delle sue classi de­rivate.  
+L'utilizzo del costruttore delle classi base per l'inizializzazione dei dati comuni è necessario per due motivi: il primo è che parte dei dati delle classe base potrebbero essere `private` e quindi inaccessibili alla classe derivata; il secondo motivo è che in questo modo si ottiene un <a href="/en/struttura-dei-programmi#coupling" class="xref">low coupling</a> fra classe base e classe derivata e, se  si dovesse modificare l’implementazione interna del costruttore della classe base (mantenendo invariata l'interfaccia), non ci sarebbe bisogno di dover modificare il codice delle sue classi de­rivate.  
 L'ordine in cui i costruttori delle classi base sono chiamati durante l'inizializzazione dell'oggetto dipende dall'ordine in cui compaiono nel costruttore della classe figlia.
 Lo vediamo con un altro esempio, un po' più complesso del precedente, che mostra anche il funzionamento dei dati e delle funzioni membro statiche:
 
@@ -283,7 +283,7 @@ Pesce acquario[10];
 ```
 
 C'è solo una limitazione: siccome tutti gli elementi di un array devono essere inizializzati al momento della sua creazione, la classe deve avere un costrut­tore di default.
-Se decidessimo di creare un array di oggetti della classe `Punto` che abbiamo visto <a href="/man/en/classi-oggetti#attributi-metodi" class="xref">nella scorsa lezione</a>, gli elementi dell'array dovranno essere inizializzati esplicitamente:
+Se decidessimo di creare un array di oggetti della classe `Punto` che abbiamo visto <a href="/en/classi-oggetti#attributi-metodi" class="xref">nella scorsa lezione</a>, gli elementi dell'array dovranno essere inizializzati esplicitamente:
 
 ```
 Punto spline[3] = { Punto(3,5), Punto(0,0), Punto(7,7) } ;
@@ -311,7 +311,7 @@ Figlio  *ptrF = new Persona();  // ERRORE!
 ```
 
 Il compilatore è in grado di capire la relazione che c’è fra una classe derivata e la sua classe base e può quindi stabilire un cammino di coercizione dal tipo dell’oggetto a quello del puntatore, ma non ha modo di accedere ai membri o alle funzioni di una classe derivata da un oggetto di classe base.   
-Abbiamo detto <a href="/man/en/tipi-di-dato#puntatori" class="xref">a suo tempo</a> che i puntatori sono come delle maschere che isolano determinate sequenze di bit, la cui dimensione varia a seconda del tipo del puntatore.
+Abbiamo detto <a href="/en/tipi-di-dato#puntatori" class="xref">a suo tempo</a> che i puntatori sono come delle maschere che isolano determinate sequenze di bit, la cui dimensione varia a seconda del tipo del puntatore.
 Lo stesso discorso vale anche per le classi: un puntatore di classe base associato a un oggetto di classe derivata “vedrà” solo i dati e le funzioni della sua classe:
 
 ```
@@ -488,7 +488,7 @@ Io, qui, ora, con il mio naso la mia bocca e i miei capelli, ti sto insegnando c
 Molto probabilmente abbiamo già avuto questa conversazione in passato e la faremo ancora in futuro.
 Forse non useremo le stesse parole; forse avremo nomi differenti, forse tu sarai il maestro e io l'allievo, ma la nostra amicizia sarà la stessa, perché quella fa parte della dichiarazione della nostra classe; non può e non deve mutare.
 
-> {{site.data.citazioni.mulino-amleto.mito}} <a class="nota" href="/man/en/note#fn-miti" id="miti">1</a>
+> {{site.data.citazioni.mulino-amleto.mito}} <a class="nota" href="/en/note#fn-miti" id="miti">1</a>
 
 Ogni epoca ha i suoi eroi e i suoi demoni; la memoria delle loro battaglie, genera il mito.  
 La Scienza è transeunte: abbiamo poche notizie riguardo le conoscenze scientifiche dei popoli del passato<!-- esempi? -->, mentre conosciamo bene i loro miti, perché il mito è immortale; la Scienza no, a meno che non sia assorbita dal mito e trasformata in leggenda o superstizione.
@@ -506,7 +506,7 @@ In <a href="https://canaro.net/saggi/amore-e-arte.html" target="canaro">un suo s
  > L'Arte è la traccia del cammino dell'Uomo verso Dio
 
  specificando poi che, con il termine: “Dio” (altra parola interpretata in maniera differente da ciascuno di noi), intendeva il senso dell'Esistenza.
-Alcuni anni dopo, però, guardando delle foto di crostate realizzate dallo chef Gianluca Fusto<a class="nota" href="/man/en/note#fn-fusto" id="fusto">2</a>, capì che la sua definizione era imperfetta, perché non includeva, o quanto meno lasciava a margine, gli arte-fatti che non ricadevano nelle categorie artistiche canoniche.
+Alcuni anni dopo, però, guardando delle foto di crostate realizzate dallo chef Gianluca Fusto<a class="nota" href="/en/note#fn-fusto" id="fusto">2</a>, capì che la sua definizione era imperfetta, perché non includeva, o quanto meno lasciava a margine, gli arte-fatti che non ricadevano nelle categorie artistiche canoniche.
 Modificò per ciò la sua definizione di Arte in:
 
 > L'Arte è la traccia del cammino dell'Uomo verso la Perfezione
@@ -519,7 +519,7 @@ I principii dell'Ikebarba, così come li formulò il Maestro Canaro, sono:
 
 <blockquote>
 <p>
-<b>L'Ikebarba è fatta per l'uomo, non l'uomo per l'Ikebarba<a class="nota" href="/man/en/note#fn-shabbat" id="shabbat">3</a>.</b>  
+<b>L'Ikebarba è fatta per l'uomo, non l'uomo per l'Ikebarba<a class="nota" href="/en/note#fn-shabbat" id="shabbat">3</a>.</b>  
 L'Ikebarba non deve essere un peso per chi la pratica, ma un obbligo giojoso.
 I panni devono comunque essere messi ad asciugare; il tempo necessario a farlo in maniera sciatta o consapevole è pressocché lo stesso, ma un'Ikebarba ben fatta provvederà panni asciutti in minor tempo e renderà la vista dello stendipanni meno fastidiosa.
 </p>

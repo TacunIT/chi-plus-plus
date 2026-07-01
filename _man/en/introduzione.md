@@ -4,7 +4,7 @@ lang:       en
 layout:     manuale
 og_desc:    "Cos'è il C'hi++ - Mito, scienza e religione - Un modello incompleto e perfettibile - Il senso della Vita è il debug."
 og_img:     "/assets/img/og-img/introduzione.jpg"
-permalink:  /man/en/introduzione
+permalink:  /en/introduzione
 quote:      ""
 status:     pubblicato
 title:      Introduzione

@@ -14,8 +14,8 @@ permalink:  /
 <body>
     <noscript>
         <p>
-            <a href="/man/it/">Italiano</a> &middot;
-            <a href="/man/en/">English</a>
+            <a href="/it/">Italiano</a> &middot;
+            <a href="/en/">English</a>
         </p>
     </noscript>
     <script>
@@ -29,7 +29,7 @@ permalink:  /
                 lang = browserLang.indexOf('it') === 0 ? 'it' : 'en';
             }
 
-            window.location.replace(lang === 'it' ? '/man/it/' : '/man/en/');
+            window.location.replace(lang === 'it' ? '/it/' : '/en/');
         })();
     </script>
 </body>

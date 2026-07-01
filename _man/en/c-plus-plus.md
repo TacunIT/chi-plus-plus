@@ -4,7 +4,7 @@ lang:       en
 layout:     manuale
 og_desc:    "Essere come il C++ - L’astrazione dei dati, la programmazione a oggetti e la monta equina - Un buon programmatore non si accontenta - La differenza fra C e C++, secondo Stroustrsup."
 og_img:     "/assets/img/og-img/c-plus-plus.jpg"
-permalink:  /man/en/c-plus-plus
+permalink:  /en/c-plus-plus
 quote:      "Non chiederti cosa può fare per te il sistema operativo; chiediti invece cosa puoi fare tu, per il sistema operativo."
 status:     pubblicato
 title:      Il C++
@@ -425,12 +425,12 @@ ESITO:   puledro
 
 ```
 
-Oltre alle classi template predefinite della *Standard Template Library*, il C++ permette di definire le proprie classi template, ma di questo parleremo <a href="/man/en/polimorfismo#template" class="xref">a tempo debito</a>.  
+Oltre alle classi template predefinite della *Standard Template Library*, il C++ permette di definire le proprie classi template, ma di questo parleremo <a href="/en/polimorfismo#template" class="xref">a tempo debito</a>.  
 Queste caratteristiche, unite alla compatibilità con il codice scritto in C, fecero di C++ il linguaggio *object-oriented* più utilizzato degli anni '90.
 L'avvento, alla fine del Secolo, del linguaggio con la "J", quello che ha bisogno di un sistema di *garbage collecion* per sopperire alla pochezza dei suoi programmatori, avrebbe dovuto darci un'idea di quello che sarebbe stato il millennio che ci si presentava davanti.
 Non a caso, Stroustrsup disse:
 
-> {{ site.data.citazioni.stroustrup.java }} <a id="stroustrup" href="/man/en/note#fn-cpp" class="nota">1</a>
+> {{ site.data.citazioni.stroustrup.java }} <a id="stroustrup" href="/en/note#fn-cpp" class="nota">1</a>
 
 <!--
 @todo: fare un parallelo fra i problemi di compatibilità delle librerie di Python e le religioni canoniche.

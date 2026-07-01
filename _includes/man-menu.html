@@ -15,7 +15,7 @@
     <a href="/" class="center" title="{{ site.data.strings[page.lang].torna_home }}">
         <i class="fa fa-home fa-2x" aria-hidden="true"></i>
     </a>
-    <a href="/man/{{ page.lang }}/indice" class="center" title="{{ site.data.strings[page.lang].torna_indice }}">
+    <a href="/{{ page.lang }}/indice" class="center" title="{{ site.data.strings[page.lang].torna_indice }}">
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
     </a>
 
@@ -23,7 +23,7 @@
         {% if page.next %}
         href="{{page.next.url}}" 
         {% else %}
-        href="/man/{{ page.lang }}/" 
+        href="/{{ page.lang }}/" 
         {% endif %}
         class="right" 
         >

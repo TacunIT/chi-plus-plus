@@ -4,7 +4,7 @@ lang:       it
 layout:     manuale
 og_desc:    "La funzione main del C’hi++ - Le forze che muovono l'Universo: Gravità, Entropia e Annosa Dicotomia - Chi creato l’Universo - Cosa dice quel senza-Dio di Dawkins."
 og_img:     "/assets/img/og-img/struttura-dei-programmi.jpg"
-permalink:  /man/it/struttura-dei-programmi
+permalink:  /it/struttura-dei-programmi
 quote:      "Wer den Computer will verstehen,<br />Muss in Computers Lande gehen"
 status:     pubblicato
 title:      "Struttura dei programmi C++"
@@ -48,7 +48,7 @@ La prima linea di codice:
 
 non è un'istruzione, ma una direttiva per il preprocessore.
 Il preprocessore è un programma che elabora il codice e lo prepara per la compilazione, ne parleremo
-<a href="/man/it/preprocessore" class="xref">in seguito</a>.
+<a href="/it/preprocessore" class="xref">in seguito</a>.
 Per il momento, ti basta sapere che questa istruzione fa sì che nel codice venga incluso il file `iostream.h`, che contiene, fra le altre cose, la dichiarazione dello *stream* `cout`, utilizzato nell'unica istruzione del programma.  
 La seconda linea di codice:
 
@@ -199,7 +199,7 @@ inline float scorporaIVA(long stipendio, float aliquota)
 ```
 
 Anche in un esempio così semplice, vedi bene che differenza ci sia, fra una funzione che può svolgere più azioni eterogenee e una funzione che svolge una singola azione, ben precisa.
-Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di dichiararla come <a href="/man/it/funzioni#inline" class="xref">inline</a>, aumentando la velocità di esecuzione del programma.
+Riducendo la complessità della funzione, inoltre, abbiamo la possibilità di dichiararla come <a href="/it/funzioni#inline" class="xref">inline</a>, aumentando la velocità di esecuzione del programma.
 
 <hr id="dottrina">
 
@@ -209,9 +209,9 @@ Poe lo aveva capito. In: *Eureka*, usa il termine *Elettricità* invece di: *Ent
 Ciò che non è corretto (e non solo in Poe) è l'idea che l'espansione dell'Universo sia un evento unico.
 La vita dell'Universo è ciclica: quando è preponderante l'Entropia, l'Universo si espande, come in questo momento; quando "vince" la Gravità, l'Universo collassa su sé stesso e torna all'Uno.
 Ciò che evita la stasi in uno dei due punti estremi del ciclo &mdash; l'Uno e la morte termica &mdash; è una terza forza, che il Maestro Canaro chiamava:
-<a href="/man/it/mitopoietica#annosa-dicotomia" class="xref">*l'annosa dicotomia fra ciò che desideriamo è ciò di cui abbiamo bisogno*</a>.   
+<a href="/it/mitopoietica#annosa-dicotomia" class="xref">*l'annosa dicotomia fra ciò che desideriamo è ciò di cui abbiamo bisogno*</a>.   
 Così come una scatola di mattoncini Lego contiene tutti gli edifici che hai costruito e che costruirai in futuro, nell'Uno primigenio è concentrata tutta l'Energia dell'Universo e quindi ogni essere animato o inanimato che sia mai esistito o che mai esisterà.
-La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo, che non può essere misurato perché non esistono eventi in base a cui farlo.<a id="non-tempo" class="nota" href="/man/it/note#fn-fn-non-tempo">1</a>
+La Gravità è al suo punto estremo e una non-esistenza scorre in un non-tempo, che non può essere misurato perché non esistono eventi in base a cui farlo.<a id="non-tempo" class="nota" href="/it/note#fn-fn-non-tempo">1</a>
 Non ci sono né morte, né sofferenza, né malattia, né separazione; l'Uno è, di fatto, ciò che la maggior parte degli esseri senzienti descrive e auspica come un Universo perfetto.  
 L'Energia, inizialmente, è soddisfatta, ma a poco a poco l'appagamento per la raggiunta Unità scema e cresce invece il desiderio di qualcosa di diverso da quella cristallina perfezione.
 Così come di un vecchio amore si ricorda solo ciò che ci fa piacere ricordare, obliandone i difetti, l'Energia ripensa a quando l'Universo non era buio e vuoto, ma risplendeva della luce di innumerevoli stelle e si chiede se, in fondo, non sia quella, l'esistenza a cui ambisce, se non sia quello, in effetti, il Paradiso.  
@@ -219,7 +219,7 @@ Ha una chiara memoria degli errori e dei dolori delle passate esistenze (è stat
 L'Energia disintegra l'enorme buco nero in cui si era rannicchiata e si espande di nuovo nell'Universo, dando massa agli spazioni e generando la materia.
 L'Era della Gravità finisce e comincia una nuova Era dell'Entropia; qualcosa di molto simile a quello che trovi descritto nella *Bhagavad-Gita*:
 
-> {{ site.data.citazioni.gita.cicli }}<a class="nota" href="/man/it/note#fn-cicli" id="cicli">2</a>
+> {{ site.data.citazioni.gita.cicli }}<a class="nota" href="/it/note#fn-cicli" id="cicli">2</a>
 
 Anche la Genesi biblica può essere considerata un'allegoria della cosmogonia spazionista (o viceversa): il Paradiso è l'Uno primigenio, mentre Adamo (*Puruṣa*) ed Eva (*Prakṛti*) sono ciò che ne causa la disgregazione, generando un Universo imperfetto e doloroso, aiutati dal *διάβολος*, ovvero da colui che *separa* o *scaglia attraverso*, altrimenti noto come: *Luci-fero*.  
 In ottica spazionista, la domanda:
@@ -242,7 +242,7 @@ La seconda ipotesi è che ogni *Big Bang* avviene in circostanze e con modalità
 Il Maestro Canaro disse che la prima ipotesi era possibile, ma poco probabile e che quindi avremmo dato per scontato che fosse la seconda, quella corretta: «Tanto, non cambia niente: se il tempo che abbiamo a disposizione per far esplodere e implodere l’Universo è infinito, per quanto bassa possa essere la probabilità che si verifichino due esplosioni uguali è  impossibile che la cosa o prima o poi non avvenga.
 Come dice quel senza-Dio di Dawkins:
 
-> {{ site.data.citazioni.dawkins.tempo }} <a class="nota" href="/man/it/note#fn-dawkins-tempo" id="dawkins-tempo">3</a>
+> {{ site.data.citazioni.dawkins.tempo }} <a class="nota" href="/it/note#fn-dawkins-tempo" id="dawkins-tempo">3</a>
 
 In base allo stesso principio, dando per scontato che o prima o poi questo Universo tornerà a manifestarsi, è del tutto lecito pensare &mdash; non per fede, ma in base a un banale calcolo probabilistico &mdash; che anche ciò che c’è in esso possa o prima o poi tornare a essere.
 Noi compresi».

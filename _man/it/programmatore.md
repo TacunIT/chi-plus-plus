@@ -4,7 +4,7 @@ lang:       it
 layout:     manuale
 og_desc:    "Le principali discipline dell’informatica - Come opera il buon programmatore - La differenza fra un sessuologo e un pornodivo - Cosa facevano i paranoici prima dell'informatica."
 og_img:     "/assets/img/og-img/programmatore.jpg"
-permalink:  /man/it/programmatore
+permalink:  /it/programmatore
 quote:      "È stata una giornata estenuante: questa mattina ho tolto una virgola dal mio codice e stasera ce l'ho rimessa"
 status:     pubblicato
 title:      Il buon programmatore
@@ -19,7 +19,7 @@ Se il rapporto di scala è basso, si avrà una buona visione di insieme, ma poch
 La città, però, sarà sempre la stessa.  
 Nella *Bhagavad-Gita* si dice:
 
-> {{ site.data.citazioni.gita.azione }}<a href="/man/it/note#fn-azione" class="nota" id="azione">1</a>
+> {{ site.data.citazioni.gita.azione }}<a href="/it/note#fn-azione" class="nota" id="azione">1</a>
 
 È così che opera il buon programmatore: scrive del buon codice, anche se non beneficerà mai dei suoi effetti. Scrive del buon codice perché non può farne a meno.  
 Scrivere codice non è un mestiere, è una deformazione mentale.

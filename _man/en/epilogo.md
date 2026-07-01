@@ -4,7 +4,7 @@ lang:       en
 layout:     manuale
 og_desc:    "La morte del Maestro, nella finzione e nella realtà"
 og_img:     "/assets/img/og-img/epilogo.jpg"
-permalink:  /man/en/epilogo
+permalink:  /en/epilogo
 quote:      "Dopo di me, il reboot"
 status:     pubblicato
 title:      Epilogo

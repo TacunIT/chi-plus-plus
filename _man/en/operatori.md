@@ -4,7 +4,7 @@ lang:       en
 layout:     manuale
 og_desc:    "I concetti di vero e di falso sono frutto di un arbitrio - William James ha ragione - Fama, successo e prestigio - Le certification authority etiche - Affinità fra le persone per bene e i malandrini."
 og_img:     "/assets/img/og-img/operatori.jpg"
-permalink:  /man/en/operatori
+permalink:  /en/operatori
 quote:      "question = 2b | ( ! 2b );"
 status:     pubblicato
 title:      Gli operatori
@@ -73,7 +73,7 @@ Gli operatori *di relazione* permettono di verificare il rapporto fra due variab
 Questi operatori tornano un valore booleano, vero o falso a seconda che la condizione sia verificata o no.  
 L'operatore `==` torna `true` se gli operandi sono uguali, come nel verso:
 
-> {{ site.data.citazioni.attar }} <a class="nota" href="/man/en/note#fn-attar" id="attar">1</a>
+> {{ site.data.citazioni.attar }} <a class="nota" href="/en/note#fn-attar" id="attar">1</a>
 
 
 L'operatore `!=` torna `true` se gli operandi non sono uguali; gli operatori `>` e `<` tornano `true`, rispettivamente, se l'operatore a sinistra è maggiore o minore dell'operando a destra; gli operatori `>=` e `<=` tornano `true` se l'operando a sinistra è maggiore o uguale oppure minore o uguale a quello a destra.  
@@ -187,8 +187,8 @@ Adesso dimmi: quanto valgono, le variabili `x` e `y`, alla fine del programma?
 ---
 
 Sono degli operatori anche i simboli: `sizeof`,  `,`,  `.`,  `->`,  `&`,  `*`,  `()` e `()?:`.
-L'operatore `sizeof` lo abbiamo già visto parlando della <a href="/man/en/tipi-di-dato#sizeof">dimensione dei tipi di dato</a>, perché torna, appunto, la dimensione, in byte, della variabile o del tipo di dato che riceve come parametro.  
-L'operatore di *cast* `()` permette di modificare il tipo di una variabile e lo abbiamo già utilizzato nella classe `Animale`, quando abbiamo parlato del <a href="/man/en/c-plus-plus#cast">polimorfismo</a>:
+L'operatore `sizeof` lo abbiamo già visto parlando della <a href="/en/tipi-di-dato#sizeof">dimensione dei tipi di dato</a>, perché torna, appunto, la dimensione, in byte, della variabile o del tipo di dato che riceve come parametro.  
+L'operatore di *cast* `()` permette di modificare il tipo di una variabile e lo abbiamo già utilizzato nella classe `Animale`, quando abbiamo parlato del <a href="/en/c-plus-plus#cast">polimorfismo</a>:
 
 ```
 const char getSesso() const {        
@@ -234,7 +234,7 @@ a = b = 1, b = b + 2, b = b - 1;
 ```
 
 Gli operatori `.` e `->` servono a identificare i membri di una classe o di un altro dato aggregato.
-Se  ti ricordi (ne dubito), li abbiamo visti per la prima volta parlando del <a href="/man/en/c-plus-plus#membro">polimorfismo</a> e li utilizzeremo quando ci occuperemo delle classi.  
+Se  ti ricordi (ne dubito), li abbiamo visti per la prima volta parlando del <a href="/en/c-plus-plus#membro">polimorfismo</a> e li utilizzeremo quando ci occuperemo delle classi.  
 Gli operatori `&` e `*`, infine, tornano, rispettivamente, l'indirizzo di memoria di una variabile e un puntatore a una variabile:
 
 ```
@@ -280,7 +280,7 @@ La definizione dei concetti di *vero* e di *falso* è sempre frutto di un arbitr
 Per i filosofi è *vero* tutto ciò che può essere descritto con le parole; per gli scienziati, tutto ciò che può essere descritto dalla matematica; per gli informatici è *vero* tutto quello che può essere descritto dal codice.
 <!-- v. Kant citato da Hertha von Dechend nella prefazione tedesca a Il Mulino di Amleto -->
 Possiamo definire *falso* come il contrario di *vero*, ma non possiamo dedurre o inferire il concetto di *vero* perché, quale che sia la definizione prescelta, prima di poterla prendere per buona dovremo poterla considerare vera, ma ciò è impossibile perché non sappiamo ancora cosa sia, effettivamente, *vero*.    
-Bertrand Russell disse che la condizione di *vero* o di *falso* è uno stato dell'organismo, determinato da condizioni esterne all'organismo;<a class="nota" href="/man/en/note#fn-russell" id="russell">2</a> è un'affermazione vera.. o, meglio, *valida* anche per i computer: i valori booleani *vero* e *falso* sono due stati possibili per un'istruzione e spesso dipendono da condizioni esterne all'istruzione stessa, come la presenza di un file o un'azione dell'utente.
+Bertrand Russell disse che la condizione di *vero* o di *falso* è uno stato dell'organismo, determinato da condizioni esterne all'organismo;<a class="nota" href="/en/note#fn-russell" id="russell">2</a> è un'affermazione vera.. o, meglio, *valida* anche per i computer: i valori booleani *vero* e *falso* sono due stati possibili per un'istruzione e spesso dipendono da condizioni esterne all'istruzione stessa, come la presenza di un file o un'azione dell'utente.
 La cosa interessante è che, anche per i computer, i valori che vengono interpretati come *vero* e *falso* sono del tutto arbitrarii e spesso specifici per un dato sistema.
 Prendi per esempio i programmi che gestiscono le basi di dati: per *Access*, il valore booleano *false* è `-1`; per le prime versioni di *MySQL* è `f`; per Postgres o Oracle, è `0`.  
 Il computer non ha *in sé* il concetto di *vero* o di *falso*, ma solo l'associazione dei valori booleani *true* e *false* a una determinata sequenza di bit.
@@ -312,7 +312,7 @@ La *root CA* garantisce per la CA intermedia che a sua volta garantisce per la t
 Sfortunatamente, però, né i legislatori né i loro certificatori ideologici sono sottoposti alle regole e ai controlli che deve rispettare una *Certification Authority* e spesso è accaduto che chi ha definito delle regole sia stato anche il primo a non tenerne conto.  
 Mosè, con il sesto Comandamento ancora fresco di stampa, chiese ai figli di Levi:
 
-> Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a class="nota" href="/man/en/note#fn-levi" id="levi">3</a>
+> Ognuno di voi si metta la spada al fianco; percorrete l’accampamento da una porta all’altra di esso, e ciascuno uccida il fratello, ciascuno l’amico, ciascuno il vicino!<a class="nota" href="/en/note#fn-levi" id="levi">3</a>
 
 Gli Americani, che scrissero:
 
@@ -324,14 +324,14 @@ I Francesi, il cui motto era:
 > Liberté, Égalité, Fraternité
 
 hanno applicato questi principii a colpi di ghigliottina.
-L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a class="nota" href="/man/en/note#fn-armi" id="armi">4</a> e che violano costantemente quelle stesse regole da loro promosse.  
-Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi, dalle convinzioni<a class="nota" href="/man/en/note#fn-self-evident" id="self-evident">5</a>
-di un gruppo di credenti<a class="nota" href="/man/en/note#fn-credenti" id="credenti">6</a>, non vuol dire che siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva; possiamo solo accettarli per fede, così come i dogmi religiosi.
+L'ONU, che nel 1948 ha pubblicato la *Dichiarazione Universale dei Diritti Umani* ha al suo vertice dei Paesi che sono i principali produttori di armi del Mondo<a class="nota" href="/en/note#fn-armi" id="armi">4</a> e che violano costantemente quelle stesse regole da loro promosse.  
+Attenzione, però: il fatto che i principii laici di pace, uguaglianza e libertà derivino, in ultima analisi, dalle convinzioni<a class="nota" href="/en/note#fn-self-evident" id="self-evident">5</a>
+di un gruppo di credenti<a class="nota" href="/en/note#fn-credenti" id="credenti">6</a>, non vuol dire che siano sbagliati, ma che non gli si può attribuire nessuna veridicità oggettiva; possiamo solo accettarli per fede, così come i dogmi religiosi.
 *Scegliamo* di credere in uno schema di valori, così come potremmo scegliere di credere negli UFO: non abbiamo convinzioni innate, se non l'egoismo.  
 Le persone per bene hanno una cosa in comune con i malandrini: pensano che il resto del Mondo sia come loro, ma si sbagliano.
 Noi troviamo condivisibile, quasi pleonastico, che ciascun essere umano abbia diritto alla vita, alla libertà e a una giustizia imparziale, perché siamo stati educati con questi valori, ma qualcuno con un differente livello culturale potrebbe non ritenere queste affermazioni altrettanto evidenti *in sé*.  
-Per gli autori della *Dichiarazione di Indipendenza* era *self-evident* che tutti gli uomini fossero stati creati uguali, ma sei Stati del Sud, nelle loro Costituzioni, precisarono che si stava parlando di uomini liberi, non degli schiavi<a class="nota" href="/man/en/note#fn-freemen" id="freemen">7</a>.  
-I nazisti utilizzarono le macchine Hollerith per censire e sterminare gli ebrei; furono anche aggiunte delle colonne alle schede perforate per poter gestire i dati relativi alla religione<a class="nota" href="/man/en/note#fn-black" id="black">8</a>.
+Per gli autori della *Dichiarazione di Indipendenza* era *self-evident* che tutti gli uomini fossero stati creati uguali, ma sei Stati del Sud, nelle loro Costituzioni, precisarono che si stava parlando di uomini liberi, non degli schiavi<a class="nota" href="/en/note#fn-freemen" id="freemen">7</a>.  
+I nazisti utilizzarono le macchine Hollerith per censire e sterminare gli ebrei; furono anche aggiunte delle colonne alle schede perforate per poter gestire i dati relativi alla religione<a class="nota" href="/en/note#fn-black" id="black">8</a>.
 Noi oggi critichiamo sia loro sia chi li aiutò a farlo, ma forse i nostri nipoti criticheranno noi per la tolleranza che abbiamo mostrato nei confronti di chi ci vende il petrolio per le nostre automobili; la stessa tolleranza che loro mostreranno a chi li rifornirà di materie prime per le batterie, o di acqua.
 
 <hr id="comandamenti">

@@ -4,7 +4,7 @@ lang:       it
 layout:     manuale
 og_desc:    "Una metafisica non metafisica - Bug noti delle religioni e degli esseri umani - Affinità fra il C'hi++ e le filosofie canoniche - Mappe topografiche e immagini da satellite - La Banda degli Onesti."
 og_img:     "/assets/img/og-img/polimorfismo.jpg"
-permalink:  /man/it/polimorfismo
+permalink:  /it/polimorfismo
 quote:      "When Me they fly, I am the wings<br />I am the double and the int"
 status:     pubblicato
 title:      "Il polimorfismo"
@@ -12,7 +12,7 @@ title:      "Il polimorfismo"
 
 Come avrai certamente intuito da tutto ciò che abbiamo detto finora, la caratteristica principale del C++ è il polimorfismo.  
 
-Avevamo iniziato a parlarne durante la <a href="/man/it/c-plus-plus#polimorfismo" class="xref">lezione introduttiva sul C++</a> e l'avevamo illustrato con un esempio che, a questo punto, non dovrebbe più avere segreti, per te:
+Avevamo iniziato a parlarne durante la <a href="/it/c-plus-plus#polimorfismo" class="xref">lezione introduttiva sul C++</a> e l'avevamo illustrato con un esempio che, a questo punto, non dovrebbe più avere segreti, per te:
 
 ```
 {% include_relative src/cplusplus-template.cpp %}
@@ -311,7 +311,7 @@ template <class T>
 somma(T a, T b) { return a + b; }
 ```
 
-Quando il compilatore trova nel codice un template, sia esso la dichiarazione di una classe o una chiamata a funzione, la sostituisce con il codice corrispondente, così come avviene per le <a href="/man/it/preprocessore#macro" class="xref">macro-istruzioni del precompilatore</a>, ma, a differenza di quello che avviene per le macro, il tipo dei parametri del template è sottoposto a uno stretto controllo, così come il resto del codice.  
+Quando il compilatore trova nel codice un template, sia esso la dichiarazione di una classe o una chiamata a funzione, la sostituisce con il codice corrispondente, così come avviene per le <a href="/it/preprocessore#macro" class="xref">macro-istruzioni del precompilatore</a>, ma, a differenza di quello che avviene per le macro, il tipo dei parametri del template è sottoposto a uno stretto controllo, così come il resto del codice.  
 Il formato per la dichiarazione di una <i id="funzioni-template">funzione template</i> è:
 
 <p class="code">
@@ -532,7 +532,7 @@ che corrisponde ai caratteri della stringa *PippoPluto* incrementati di un'unit�
 
 Da migliaia di anni, gli uomini cercano di capire quale sia il significato dell'Esistenza.  
 Le risposte che si sono dati variano a seconda del periodo storico e del territorio in cui il profeta o il filosofo ha vissuto, ma hanno tutte una particolarità: richiedono ai loro seguaci l'accettazione di postulati non dimostrabili, come l'esistenza di una o più divinità o di stati di esistenza diversi da quello che conosciamo.
-Anche la Scienza ha provato a dare delle risposte agli stessi interrogativi, ma la sua indagine si è limitata agli aspetti pratici del problema: ha prodotto delle interessanti teorie sulla genesi dell'Universo e sugli eventi che hanno portato alla nostra esistenza, ma non si è mai pronunciata su quello che potrebbe essere il nostro ruolo in tutto ciò, con le conseguenze di cui abbiamo parlato durante <a href="/man/it/memoria#delete" class="xref">la lezione sulla memoria</a>.  
+Anche la Scienza ha provato a dare delle risposte agli stessi interrogativi, ma la sua indagine si è limitata agli aspetti pratici del problema: ha prodotto delle interessanti teorie sulla genesi dell'Universo e sugli eventi che hanno portato alla nostra esistenza, ma non si è mai pronunciata su quello che potrebbe essere il nostro ruolo in tutto ciò, con le conseguenze di cui abbiamo parlato durante <a href="/it/memoria#delete" class="xref">la lezione sulla memoria</a>.  
 Il Maestro Canaro, che non riusciva ad accettare né i dogmi delle religioni tradizionali né lo scollamento fra uomo e Universo prodotto dalle ipotesi scientifiche, si pose una domanda:
 
 > È possibile dare una spiegazione dell’Esistenza sfruttando solo ciò di cui abbiamo esperienza diretta?
@@ -556,7 +556,7 @@ Per correggere o quanto meno mitigare questi problemi, la sua metafisica avrebbe
 Il Maestro Canaro applicò allo sviluppo della sua *metafisica-non-metafisica* lo stesso approccio che adottava quando doveva realizzare un software.
 Ci sono due modi diversi di progettare un software: il primo consiste nell'analizzare tutti i sistemi che svolgono azioni simili, prendere il meglio di ciascuno e metterlo nel nuovo sistema; in alternativa, si può progettare il sistema da zero e solo quando se ne è definita per grandi linee la struttura, studiare le soluzioni adottate dagli altri, integrandole nel proprio programma se lo si ritiene utile.
 Il primo approccio è più rapido e sicuro, ma tende a produrre risultati ripetitivi; il secondo approccio è più complesso, sia in termini di analisi che di implementazione, ma facilita l'innovazione perché l'immaginazione dell'analista non è condizionata da ciò che ha visto.  
-Essendo un sostenitore del secondo metodo, il Maestro Canaro lo applicò anche al C'hi++ e, dopo alcuni di anni di studio, arrivò alla conclusione che non solo è possibile ipotizzare una cosmogonia quasi del tutto priva di elementi metafisici (non del tutto priva, perché, come vedremo <a href="/man/it/stream#dottrina" class="xref">in seguito</a>, una dose minima di trascendenza è necessaria per garantire la buona funzionalità della dottrina), ma che i precetti di questa dottrina erano compatibili con molti  principii delle religioni canoniche.  
+Essendo un sostenitore del secondo metodo, il Maestro Canaro lo applicò anche al C'hi++ e, dopo alcuni di anni di studio, arrivò alla conclusione che non solo è possibile ipotizzare una cosmogonia quasi del tutto priva di elementi metafisici (non del tutto priva, perché, come vedremo <a href="/it/stream#dottrina" class="xref">in seguito</a>, una dose minima di trascendenza è necessaria per garantire la buona funzionalità della dottrina), ma che i precetti di questa dottrina erano compatibili con molti  principii delle religioni canoniche.  
 
 <hr id="portabilita">
 
@@ -572,11 +572,11 @@ Molti precetti del C'hi++ sono compatibili con precetti o idee appartenenti ad a
 @todo: valutare se inserire questo brano; al momento, non mi convince.
 Per esempio, il Maestro Canaro non lesse mai (con suo grande rammarico) la *Divina Commedia*; ciò non ostante, il C'hi++ ha un punto di contatto con la visione dantesca dell'Aldilà come conseguenza del pentimento.
 Dante mette in Purgatorio i peccatori che hanno capito di aver sbagliato, mentre condanna all'Inferno quelli che, malgrado tutto, non riescono a prendere coscienza delle proprie colpe.
-Come abbiamo detto <a href="/man/it/istruzioni-condizionali#pentimento" class="xref">in precedenza</a> e come vedremo durante la lezione sul <a href="/man/it/debug#pentimento" class="xref">debug</a>, il C'hi++ concorda con questa idea.  
+Come abbiamo detto <a href="/it/istruzioni-condizionali#pentimento" class="xref">in precedenza</a> e come vedremo durante la lezione sul <a href="/it/debug#pentimento" class="xref">debug</a>, il C'hi++ concorda con questa idea.  
 Similmente, ci
 -->
 Per esempio, ci sono diverse affinità fra il C'hi++ e la *Bhagavad-Gita*, anche se il Maestro Canaro la lesse mentre stava redigendo la *Proposta*, quando i punti nodali del suo Credo erano già stati definiti da una decina d'anni.
-Oltre alla citazione che ti ho fatto parlando del <a href="/man/it/programmatore#azione" class="xref">programmatore</a>, nella *Gita* è possibie trovare alcuni brani che ricordano molto le affermazioni contenute in *Sostiene Aristotele*; per esempio, quelle sulla natura dell'Universo:
+Oltre alla citazione che ti ho fatto parlando del <a href="/it/programmatore#azione" class="xref">programmatore</a>, nella *Gita* è possibie trovare alcuni brani che ricordano molto le affermazioni contenute in *Sostiene Aristotele*; per esempio, quelle sulla natura dell'Universo:
 
 > {{ site.data.citazioni.gita.caos }}
 > {{ site.data.citazioni.gita.cicli }}
@@ -609,14 +609,14 @@ In una nota della mappa mentale su cui basò lo sviluppo iniziale della dottrina
 
 Solo alcuni anni dopo, annotò questa frase in un libro di Guenon:
 
-> {{ site.data.citazioni.guenon.spirito }}<a class="nota" href="/man/it/note#fn-guenon-spirito" id="guenon-spirito">1</a>
+> {{ site.data.citazioni.guenon.spirito }}<a class="nota" href="/it/note#fn-guenon-spirito" id="guenon-spirito">1</a>
 
 <hr id="igm">
 
 Fra il C'hi++ e le religioni canoniche c'è la stessa differenza che passa fra una mappa topografica e un'immagine da satellite.  
 Quel senza Dio di Dawkins, ha detto che:
 
-> {{ site.data.citazioni.dawkins.analogia }}<a class="nota" href="/man/it/note#fn-dawkins-analogia" id="dawkins-analogia">2</a>
+> {{ site.data.citazioni.dawkins.analogia }}<a class="nota" href="/it/note#fn-dawkins-analogia" id="dawkins-analogia">2</a>
 
 Una frase curiosa, da parte di un esponente di una setta che cerca di descrivere tutto ciò che esiste con analogie matematiche e nega l'esistenza di ciò che non riesce a convertire..  
 Entusiasmi a parte, le mappe e le immagini da satellite hanno diverse analogie con le discipline metafisiche.
@@ -637,7 +637,7 @@ Un'immagine da satellite ha un valore contemplativo: è bella da guardare sullo 
 se ti sei perso in un bosco o in mezzo ai monti, una mappa topografica, proprio in virtù della sua schematicità, ti permetterà più facilmente di ritrovare la strada di casa.  
 Il C'hi++ non cerca di rubare fedeli alle religioni canoniche.
 Non avrebbe senso: sarebbe come cercare di convincere chi sia già sposato con l'amore della sua vita a fare un matrimonio di interesse: se tu hai la Fede non hai bisogno di conferme razionali; possono compiacerti, ma non ti sono necessarie.
-Il C'hi++, però, può dare forza a quelle (tante) persone che *ancora credono in tutto ciò in cui più nessuno crede*, come li descrisse Longanesi; quella *Banda degli Onesti*<a class="nota" href="/man/it/note#fn-banda-onesti" id="banda-onesti">3</a> che tutti i giorni fa il proprio dovere al meglio possibile anche se non gli conviene, anche tutto e tutti intorno a loro sembrano spingerli all'egoismo e all'indifferenza.
+Il C'hi++, però, può dare forza a quelle (tante) persone che *ancora credono in tutto ciò in cui più nessuno crede*, come li descrisse Longanesi; quella *Banda degli Onesti*<a class="nota" href="/it/note#fn-banda-onesti" id="banda-onesti">3</a> che tutti i giorni fa il proprio dovere al meglio possibile anche se non gli conviene, anche tutto e tutti intorno a loro sembrano spingerli all'egoismo e all'indifferenza.
 Può aiutarli a non arrendersi e può insegnare loro che non è importante vincere le partite, ma giocare sempre meglio.
 Riconoscere gli sbagli che si sono fatti, imparare da essi e cercare di non ripeterli più, partita dopo partita, in una ricerca continua del meglio.
 Se si comporteranno così, qualunque sarà il loro lavoro, fosse anche pulire i cessi, sarà comunque Arte.

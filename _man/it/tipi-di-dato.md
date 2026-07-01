@@ -4,7 +4,7 @@ lang:       it
 layout:     manuale
 og_desc:    "L'Universo è fatto di spazioni - Il Mondo ha la natura dell’Arte - René Guenon aveva ragione - Perché la luce non può andare più veloce."
 og_img:     "/assets/img/og-img/tipi-di-dato.jpg"
-permalink:  /man/it/tipi-di-dato
+permalink:  /it/tipi-di-dato
 quote:      "Tutto è byte"
 status:     pubblicato
 title:      "I tipi di dato"
@@ -114,7 +114,7 @@ unsigned short: 2 bytes, da:                    0  a:                65535
 <a id="funzioni"></a>
 L'ultima cosa di cui ti devo parlare, a proposito dei tipi di dato del C++ sono i cosiddetti *attributi intermediari*, ovvero: le *funzioni*, gli *array*, i *puntatori* e le *reference*.  
 Delle *funzioni* parleremo diffusamente
-<a href="/man/it/funzioni" class="xref">in seguito</a>.
+<a href="/it/funzioni" class="xref">in seguito</a>.
 Quello che ci interessa, qui e ora, è che ogni funzione ha un suo tipo di dato.
 La funzione `main`, che è la funzione principale di ogni programma, ha come tipo di dato `int` e infatti si chiude con l'istruzione:
 
@@ -359,7 +359,7 @@ valori finali:   v=20, r=20
 ```
 
 Approfondiremo i pro e i contro delle *reference* quando parleremo delle
-<a href="/man/it/funzioni" class="xref">funzioni</a>.
+<a href="/it/funzioni" class="xref">funzioni</a>.
 
 <hr id="casting">
 
@@ -414,11 +414,11 @@ Né io né te siamo, adesso, costituiti dagli stessi spazioni che eravamo pochi 
 Siamo un'immagine in movimento, come il puntatore del mouse, o come le luci delle decorazioni natalizie.
 Come disse Sant'Agostino, siamo, allo stesso tempo, reali e illusorii:
 
-> {{ site.data.citazioni.agostino }} <a id="agostino" href="/man/it/note#fn-agostino" class="nota">1</a>
+> {{ site.data.citazioni.agostino }} <a id="agostino" href="/it/note#fn-agostino" class="nota">1</a>
 
 Per i *Vedanta*, il Mondo ha la natura dell'Arte perché la realtà dell'arte-fatto è differente dalla realtà dell'arte-fice.
 Questa similitudine, oltre che per Platone, è valida anche per i linguaggi di programmazione: un oggetto all'interno di un programma esiste, ma non è realmente ciò che rappresenta, anche se a noi fa comodo ritenerlo tale.
-Come scrisse Ezra Pound<a id="pound" href="/man/it/note#fn-pound" class="nota">2</a>, solo i sogni esistono realmente, perché la loro natura irreale rimane tale anche in una realtà illusoria.
+Come scrisse Ezra Pound<a id="pound" href="/it/note#fn-pound" class="nota">2</a>, solo i sogni esistono realmente, perché la loro natura irreale rimane tale anche in una realtà illusoria.
 
 ---
 

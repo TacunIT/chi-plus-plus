@@ -4,7 +4,7 @@ lang:       en
 layout:     manuale
 og_desc:    "Il diario del Maestro Canaro - L'influenza dell'Annosa Dicotomia - La dottrina del maestro Canaro - La decadenza del C++."
 og_img:     "/assets/img/og-img/mitopoietica.jpg"
-permalink:  /man/en/mitopoietica
+permalink:  /en/mitopoietica
 quote:      "Il settimo giorno, Dio fece il backup"
 status:     pubblicato
 title:      Mitopoietica del C'hi++

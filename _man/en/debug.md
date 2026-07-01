@@ -5,7 +5,7 @@ layout:     manuale
 no-index:   true
 og_desc:    "Gli errori sono inevitabili - Come correggere i bug della nostra vita - Chiedere scusa e chiedere perdòno - I fattori che influenzano il nostro comportamento - Non si devono adorare le parole"
 og_img:     "/assets/img/og-img/debug.jpg"
-permalink:  /man/en/debug
+permalink:  /en/debug
 quote:      "Cento Mondi di peccato sono dissipati dalla luce di un solo ticket"
 status:     pubblicato
 title:      "Il debug"
@@ -29,7 +29,7 @@ Così come *l'Ikebarba inizia nel negozio*, il debug comincia nel momento in cui
 Il modo migliore per evitare che il codice contenga degli errori è scrivere del buon codice.
 Scrivere del buon codice vuol dire fare sempre il meglio che ti è possibile.
 Non salvare mai un file se non sei certo che funzionerà come deve e cerca sempre di pensare a cos'altro potrebbe fare il tuo codice, oltre a quello che vuoi tu.
-Come di ho detto <a href="/man/en/programmatore#buon-programmatore" class="xref">in una delle nostre prime chiacchierate</a>, il Buon Programmatore non si accontenta della strada più rapida, ma cerca sempre quella più efficiente e sicura, perché sa che scrivere del buon codice costa meno che riparare del codice fatto male.
+Come di ho detto <a href="/en/programmatore#buon-programmatore" class="xref">in una delle nostre prime chiacchierate</a>, il Buon Programmatore non si accontenta della strada più rapida, ma cerca sempre quella più efficiente e sicura, perché sa che scrivere del buon codice costa meno che riparare del codice fatto male.
 Il Maestro Canaro, una volta disse:
 
 > {{ site.data.canaro.marinaio }}
@@ -396,7 +396,7 @@ Parafrasando Iacopone da Todi, un programma per il debug può aiutarti a identif
 Il modo in cui è stato scritto il codice lo renderà più o meno facile da verificare.
 Immagina che il problema sia la variabile `x`: se tutto il tuo codice ha la possibilità di modificarne il valore, potresti dover esaminare ogni singola funzione per verificare che non ne faccia un uso improprio.
 Al contrario, se la variabile `x` può essere modificata solo alcuni punti del codice, la tua sarà una ricerca più mirata e veloce.
-È per questo motivo, che <a href="/man/en/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l'elaborazione dei dati dalla gestione dell'interfaccia utente: perché in questo modo, a seconda del tipo di errore che dovesse presentarsi &mdash; di calcolo o di output &mdash; sapremo quale funzione andare a guardare.  
+È per questo motivo, che <a href="/en/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l'elaborazione dei dati dalla gestione dell'interfaccia utente: perché in questo modo, a seconda del tipo di errore che dovesse presentarsi &mdash; di calcolo o di output &mdash; sapremo quale funzione andare a guardare.  
 Alcune caratteristiche del C++, come la tipizzazione forte e
 l'incapsulamento potranno esserti di aiuto in questo senso, ma non sempre saranno sufficienti a identificare il punto esatto in cui il tuo codice fa qualcosa di errato.
 In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare.
@@ -432,7 +432,7 @@ int apri_file(ifstream& testo, const char* path)
 }
 ```
 
-La funzione `log` è quella che abbiamo visto nella <a href="/man/en/funzioni.html#parametri-variabili" class="xref">lezione sulle funzioni con parametri variabili</a> e ci permette di conoscere il nome del file che viene aperto durante l'esecuzione del programma.  
+La funzione `log` è quella che abbiamo visto nella <a href="/en/funzioni.html#parametri-variabili" class="xref">lezione sulle funzioni con parametri variabili</a> e ci permette di conoscere il nome del file che viene aperto durante l'esecuzione del programma.  
 Queste funzioni di tracciatura sono utili nella fase di debug, ma rallentano l'esecuzione del programma perché richiedono l'accesso a un dispositivo esterno, sia esso lo schermo del computer o un file sul disco rigido.
 Per questo motivo, è bene avere la possibilità di disabilitarle nella versione definitiva del programma.
 In questo caso, l'abbiamo fatto inserendo la chiamata in una direttiva `ifdef` del precompilatore, in modo che venga inserita nel codice solo se è definita la costante `__LOG__`.
@@ -539,7 +539,7 @@ esito = apri_file(testo, argv[2]);
 ```
 
 Il *bug* è l'indice `2` nell'array `argv`.
-Come certamente avrai notato, il codice di questo programma è una rielaborazione del codice della <a href="/man/en/stream.html" class="xref">lezione sugli stream</a>, che doveva gestire tre parametri da riga di comando.
+Come certamente avrai notato, il codice di questo programma è una rielaborazione del codice della <a href="/en/stream.html" class="xref">lezione sugli stream</a>, che doveva gestire tre parametri da riga di comando.
 Stavolta, però, la stringa di chiamata del programma ha solo due valori: il path del programma e il nome del file di input:
 
 ```
@@ -620,7 +620,7 @@ In questa fase è ammissibile che tu faccia delle prove inserendo dei valori dir
 
 <hr id="dottrina">
 
-> {{ site.data.citazioni.croce.testo }}<a class="nota" href="/man/en/note#fn-croce" id="croce">1</a>
+> {{ site.data.citazioni.croce.testo }}<a class="nota" href="/en/note#fn-croce" id="croce">1</a>
 
 O prima o poi, la tua vita andrà in errore, come il software.  
 Non importa quanto tu sia stato prudente o quale sia il tuo *Karma*: a un certo punto la terra sotto i tuoi piedi comincerà a franare e tu cadrai giù, lungo la montagna che stavi scalando, ritrovandoti al punto di partenza.
@@ -632,18 +632,18 @@ Allo stesso modo, se non ti fidi di te stesso, è difficile capire se le scelte 
 La paura o la prudenza potrebbero spingerti a non fare la scelta giusta, quindi, per prima cosa, dovrai fare il *debug* della tua vita per capire se e in quale misura devi biasimarti per ciò che è avvenuto; fatto ciò, dovrai identificare i tuoi errori e trovare un modo per non ripeterli.  
 L'approccio più comune è di guardarsi indietro e cercare di capire quali siano state le proprie colpe, considerando queste degli eventi isolati in un'esistenza fatta prevalentemente di scelte corrette.
 Dato però che ciascuno di noi tende &mdash; più o meno inconsciamente &mdash;, a cercare cause esogene alle sue sventure inventandosi complotti o trasferendo le proprie responsabilità a terzi, la cosa migliore, in questi casi, è di adottare l'atteggiamento opposto e partire dal presupposto che *tutto* ciò che è successo di male nella tua vita sia una tua colpa, per poi individuare i casi in cui ciò che è successo, in effetti, non è dipeso da te.
-Questo approccio *bottom-down*<a class="nota" href="/man/en/note#fn-bottom-down" id="bottom-down">2</a> ha due pregi: il primo  è che, analizzando gli eventi passati potresti scoprire che alcune colpe che ti attribuivi non erano reali; il secondo è che sarà più difficile mentire a te stesso.
+Questo approccio *bottom-down*<a class="nota" href="/en/note#fn-bottom-down" id="bottom-down">2</a> ha due pregi: il primo  è che, analizzando gli eventi passati potresti scoprire che alcune colpe che ti attribuivi non erano reali; il secondo è che sarà più difficile mentire a te stesso.
 Ciascuno di noi ha una parte di responsabilità in ciò che gli succede, anche negli eventi che non genera direttamente.
 Assumersi a priori la colpa di tutto il male che ci è successo rende più difficile mentirci e ci permette di identificare tutte le nostre colpe, per piccole che siano.  
 Attenzione, però: non devi pensare alle tue colpe come se fossi un inquisitore del tredicesimo Secolo, ma come se fossero dei *bug* nel programma della tua vita.
 Qualcuna genererà degli errori, altre solo dei *warning* e il tuo dovere è quello di identificarne il più possibile, per poi cercare di correggerle per migliorare il funzionamento del sistema.
 
-> {{ site.data.citazioni.deen.testo }}<a class="nota" href="/man/en/note#fn-deen" id="deen">3</a>
+> {{ site.data.citazioni.deen.testo }}<a class="nota" href="/en/note#fn-deen" id="deen">3</a>
 
 Contrariamente a quello che avviene con il software, non sempre è possibile correggere i *bug* della nostra esistenza.
 Si può modificare un aspetto deteriore del nostro carattere, ma non è detto che sia possibile rimediare ai danni che questo ha causato a noi o a terzi.
 Per fare un paragone con il debug del software, i difetti caratteriali sono errori di compilazione, mentre gli effetti dei nostri sbagli sono errori di esecuzione; i primi li possiamo correggere, gli errori di esecuzione, no: ormai è andata.
-Quello che possiamo e che dobbiamo fare, però, è di <a id="pentimento" href="/man/en/istruzioni-condizionali#pentimento" class="xref">pentircene sinceramente</a>, ovvero riconoscerli come errori, in modo da evitare di ripeterli nei prossimi cicli di esistenza.  
+Quello che possiamo e che dobbiamo fare, però, è di <a id="pentimento" href="/en/istruzioni-condizionali#pentimento" class="xref">pentircene sinceramente</a>, ovvero riconoscerli come errori, in modo da evitare di ripeterli nei prossimi cicli di esistenza.  
 Anche se non possiamo cancellare gli effetti di un nostro errore, possiamo comunque chiedere perdòno a coloro i quali abbiamo arrecato danno.
 Non basterà chiedere scusa: si chiede scusa quando ciò che hai fatto non dipende da te, come quando qualcuno di urta e tu versi il tuo vino sul vestito del vicino; se invece il vino glielo hai tirato addosso intenzionalmente, dovrai chiedere *perdòno*, cercare per quanto possibile di riparare all'errore fatto e non commetterlo mai più, né con lui (o lei) né con altri.  
 Non sottovalutare il potere terapeutico del perdòno, anche se ci saranno dei casi in cui non lo otterrai.
@@ -661,7 +661,7 @@ Il secondo fattore da considerare è la natura umana; ricorda:
 
 O, per dirla con De Santillana:
 
-> {{ site.data.citazioni.mulino-amleto.stoltezza }}<a class="nota" href="/man/en/note#fn-stoltezza" id="stoltezza">4</a>
+> {{ site.data.citazioni.mulino-amleto.stoltezza }}<a class="nota" href="/en/note#fn-stoltezza" id="stoltezza">4</a>
 
 Per derimere le questioni relative ai rapporti di coppia, invece, l'approccio più sicuro è quello antropologico.
 Come diceva il Maestro Canaro:
@@ -675,7 +675,7 @@ Secondo lui, qualsiasi comportamento anomalo nell'ambito di una coppia può esse
 3. ogni eccesso nasconde un eccesso di natura opposta e pari entità.
 
 Parafrasando quel senza Dio di Dawkins, noi siamo l'*hard-disk* dei nostri geni, la memoria di massa che garantisce loro una persistenza.
-Il nostro software può variare, ma il firmware<a class="nota" href="/man/en/note#fn-firmware" id="firmware">5</a> che definisce il nostro comportamento a basso livello è immutato da migliaia di anni e ci spinge a fare ciò per cui siamo stati creati, ovvero riprodurci.  
+Il nostro software può variare, ma il firmware<a class="nota" href="/en/note#fn-firmware" id="firmware">5</a> che definisce il nostro comportamento a basso livello è immutato da migliaia di anni e ci spinge a fare ciò per cui siamo stati creati, ovvero riprodurci.  
 Né le sovrastrutture culturali che abbiamo inventato, né gli idoli ai cui piedi ci prostriamo e nemmeno l'Annosa Dicotomia possono modificare la nostra ROM.
 Ignorare o, peggio, ribellarsi a questo stato di fatto è il primo passo verso la rovina o l'infelicità o entrambe le cose.  
 

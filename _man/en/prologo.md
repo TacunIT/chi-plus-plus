@@ -4,7 +4,7 @@ lang:       en
 layout:     manuale
 og_desc:    "Una breve auto-biografia - L'incontro con il Maestro - Il dovere del programmatore"
 og_img:     "/assets/img/og-img/prologo.jpg"
-permalink:  /man/en/prologo
+permalink:  /en/prologo
 quote:      "In principio era il login"
 status:     pubblicato
 title:      "Prologo" 

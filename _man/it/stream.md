@@ -5,7 +5,7 @@ layout:     manuale
 no-index:   true
 og_desc:    "Problemi esistenziali del codice di esempio - Un hard-disk meta-fisico - Mezzo secolo di fallimenti ideologici - Etica degli Scacchi - John Lennon se l'è cercata."
 og_img:     "/assets/img/og-img/stream.jpg"
-permalink:  /man/it/stream
+permalink:  /it/stream
 quote:      "Non puoi immergere i tuoi byte due volte nello stesso stream"
 status:     pubblicato
 title:      Gli stream
@@ -17,7 +17,7 @@ Il C++ eredita dal C l’assenza di parole chiave per la gestione dell’I/O.
 Al posto di istruzioni come la `print` del BASIC, utilizza delle librerie di classi e funzioni che permettono di convertire in testo stampabile gli oggetti gestiti dal programma o di convertire degli elementi testuali in oggetti.
 Non potrebbe essere altrimenti: il C++ non deve gestire solo stringhe e numeri, come il BASIC, ma anche numeri in virgola mobile, puntatori e soprattutto i tipi di dato definiti dall’utente, per i quali non sarebbe possibile definire un comportamento standard e che quindi dovrebbero essere trattati in maniera differente dai dati primitivi, con tanti saluti alla coerenza del linguaggio.  
 Oltre a poter sfruttare le librerie di funzioni del *C*, il C++ ha una propria libreria di I/O, ba­sata sulla gerarchia delle classi `stream`, che permette di gestire anche i tipi di dato definiti dall'utente.
-Abbiamo visto degli esempii di questa caratteristica quando abbiamo parlato di <a href="/man/it/c-plus-plus#polimorfismo" class="xref">polimorfismo</a> e di <a href="/man/it/polimorfismo#overload-operatori" class="xref">overload degli operatori</a>:
+Abbiamo visto degli esempii di questa caratteristica quando abbiamo parlato di <a href="/it/c-plus-plus#polimorfismo" class="xref">polimorfismo</a> e di <a href="/it/polimorfismo#overload-operatori" class="xref">overload degli operatori</a>:
 
 
 ```
@@ -157,7 +157,7 @@ Il dato membro `iostate`, che utilizzeremo in uno dei prossimi esempii, contiene
 |*badbit*   | L'ultima operazione di I/O non era valida.
 |*hardfail* | Si è verificato un errore irrecuperabile.
 
-Entrambi questi dati membro sono delle bitmask<a class="nota" href="/man/it/note#fn-bitmask" id="bitmask">1</a>, quindi possono contenere più di un valore.
+Entrambi questi dati membro sono delle bitmask<a class="nota" href="/it/note#fn-bitmask" id="bitmask">1</a>, quindi possono contenere più di un valore.
 L'istruzione seguente, per esempio, apre uno stream su file combinando in `OR` tre possibili valori per `openmode`:
 
 ```
@@ -501,7 +501,7 @@ Si può fare, ma è sbagliato e limitativo.
 È sbagliato, perché le regole che si definiscono sono sempre una conseguenza di esigenze contingenti (guerre, sopraffazioni, disparità sociali), venendo a mancare le quali lo schema logico del sistema perde di significato e si disgrega.
 È limitativo, perché restringe il numero dei possibili obiettivi da perseguire a un insieme finito di azioni o traguardi, raggiunti i quali non esiste più possibilità di migliorare.  
 Pensa al gioco degli Scacchi: non esiste nessun motivo, all’interno della scacchiera, che costringa ciascun pezzo a muoversi solo in una specifica maniera.
-Le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a “L” in ossequio a delle regole definite al di fuori della scacchiera<a class="nota" href="/man/it/note#fn-scacchi" id="scacchi">2</a>, ma è proprio da queste limitazioni che deriva il fascino del gioco.
+Le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a “L” in ossequio a delle regole definite al di fuori della scacchiera<a class="nota" href="/it/note#fn-scacchi" id="scacchi">2</a>, ma è proprio da queste limitazioni che deriva il fascino del gioco.
 Al contrario, la Società moderna è una scacchiera in cui ciascun pezzo si muove nella maniera che preferisce perché, in ossequio a un malinteso senso di libertà, sono state eliminate tutte le regole.
 Le persone di successo che si privano della vita sono pedoni che, arrivati alla fine della scacchiera grazie alla loro abilità, hanno scoperto che non esiste alcuna forma di promozione, perché insieme alle regole sono stati aboliti anche i giocatori.
 

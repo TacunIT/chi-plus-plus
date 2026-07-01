@@ -4,7 +4,7 @@ lang:       en
 layout:     manuale
 og_desc:    "La gestione della memoria - Il rapporto degli esseri umani con l'operatore delete - Le Cinque Fasi di elaborazione del lutto della Società moderna - Un precetto sull'amore."
 og_img:     "/assets/img/og-img/memoria.jpg"
-permalink:  "/man/en/memoria"
+permalink:  "/en/memoria"
 quote:      "cogito ∴ sum()"
 status:     pubblicato
 title:      "La memoria"
@@ -90,7 +90,7 @@ Se lo passiamo come parametro all'operatore `<<`, dato che si tratta di un punta
 cout << stringa << endl;
 ```
 
-Per conoscere il suo valore effettivo, dobbiamo convertirlo in un puntatore `void` con un'operazione di <a href="/man/en/tipi-di-dato#casting">casting</a>:
+Per conoscere il suo valore effettivo, dobbiamo convertirlo in un puntatore `void` con un'operazione di <a href="/en/tipi-di-dato#casting">casting</a>:
 
 ```
 cout << (void*)stringa << endl;
@@ -140,7 +140,7 @@ Era un giorno piovoso, perciò Tenno portava zoccoli di legno e aveva con sé l�
 Dopo averlo salutato, Nan-in disse: “Immagino che tu abbia lasciato gli zoccoli nell’anticamera. Vorrei sapere se hai messo l’ombrello alla destra o alla
 sinistra degli zoccoli”.
 Tenno, sconcertato, non seppe rispondere subito. Si rese conto che non sapeva portare il suo Zen in ogni istante.
-Diventò allievo di Nan-in e studiò ancora sei anni per perfezionare il suo Zen di ogni istante.<a class="nota" href="/man/en/note#fn-zen" id="zen">1</a>
+Diventò allievo di Nan-in e studiò ancora sei anni per perfezionare il suo Zen di ogni istante.<a class="nota" href="/en/note#fn-zen" id="zen">1</a>
 
 Il Maestro Canaro detestava questo *Koan* perché era molto distratto.
 Se Nan-in l'avesse fatta a lui, la domanda, probabilmente l'avrebbe guardato con aria infastidita e gli avrebbe chiesto: “Quali zoccoli?”.
@@ -160,31 +160,31 @@ C'è un aneddoto apocrifo sul Maestro Canaro che parla proprio di questo:
 {{ site.data.canaro.computer-zia }}
 </blockquote>
 
-L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito come un paziente a cui sia diagnosticato un male incurabile ed ha elaborato il suo dolore secondo le cinque fasi definite dalla dottoressa Kübler Ross<a class="nota" href="/man/en/note#fn-kubler" id="kubler">2</a>:    
+L'Umanità, messa di fronte all'ineluttabilità della fine e, allo stesso tempo, privata del conforto della religione e del sostegno della famiglia, ha reagito come un paziente a cui sia diagnosticato un male incurabile ed ha elaborato il suo dolore secondo le cinque fasi definite dalla dottoressa Kübler Ross<a class="nota" href="/en/note#fn-kubler" id="kubler">2</a>:    
 
 <i>Negazione:</i> così come l'Epoca vittoriana aveva il tabù del sesso, la nostra “cultura” ha il tabù della morte: i nostri bis-nonni fingevano di non avere interessi carnali, noi fingiamo che la morte non esista.
 La neghiamo a parole, usando dei giri di parole per non nominarla: “Se n'è andato”, “Non c'è più”, “È scomparso”, neanche si stesse parlando di un evaso o di un illusionista.
 La neghiamo nei fatti, isolando i moribondi nelle corsie d'ospedale, lontani dalle loro case e dai loro cari.
-La neghiamo nei nostri pensieri e nelle nostre azioni, perché altrimenti l'insensatezza delle nostre vite, spese inseguendo il miraggio effimero del successo<a class="nota" href="/man/en/note#fn-successo" id="successo">3</a> diventerebbe evidente e innegabile.  
+La neghiamo nei nostri pensieri e nelle nostre azioni, perché altrimenti l'insensatezza delle nostre vite, spese inseguendo il miraggio effimero del successo<a class="nota" href="/en/note#fn-successo" id="successo">3</a> diventerebbe evidente e innegabile.  
 
 <i>Rabbia:</i> anche se rabbia e aggressività sono sempre state presenti nella nostra storia, dalla metà del Secolo scorso, oltre che dall'oppressione e dal disagio, hanno cominciato a fiorire rigogliose anche dal benessere.
 Gli scontri fra *Mods* e *Rockers* negli anni '60, le lotte armate degli anni '70, il *Punk* e, in tempi più recenti, i *foreign fighters* e l'aggressività nei *social-network*: nessuno di questi fenomeni nasce nei ghetti o da uno stato di bisogno, sono tutti degli *hobby* del Ceto medio.  
 
-<i>Negoziazione:</i> nel 1982 Jane Fonda pubblicò una videocassetta nella quale insegnava a fare ginnastica aerobica<a class="nota" href="/man/en/note#fn-aerobica" id="aerobica">4</a> nel salotto di casa a chiunque potesse permettersi di spendere sessanta Dollari<a class="nota" href="/man/en/note#fn-dollari" id="dollari">5</a> per un VHS.
+<i>Negoziazione:</i> nel 1982 Jane Fonda pubblicò una videocassetta nella quale insegnava a fare ginnastica aerobica<a class="nota" href="/en/note#fn-aerobica" id="aerobica">4</a> nel salotto di casa a chiunque potesse permettersi di spendere sessanta Dollari<a class="nota" href="/en/note#fn-dollari" id="dollari">5</a> per un VHS.
 Fu una delle videocassette più vendute di tutti i tempi e diede il via a una moda che divenne uno stile di vita per milioni di persone.
 La mania del *fitness*, insieme al rifiorire della spiritualità *New Age*, sono stati il modo in cui i popoli civilizzati hanno cercato di venire a patti con la nuova, terrificante realtà presentata loro dalla Scienza, prendendo atto dei proprii errori e cercando di porvi rimedio cambiando stile di vita.
 Sfortunatamente, però, gli pseudo-mistici non hanno mai capito che recitare il *Sutra del Loto* perché credi che possa aiutarti a realizzare i tuoi desiderii è una contraddizione in termini.
 La religione è come gli antibiotici: non fa effetto se non prendi la dose intera.
 
 <i>Depressione:</i> la sindrome depressiva è la seconda malattia più diffusa al Mondo, dopo i disturbi cardiaci, segno evidente che la fase di negoziazione non ha sortito gli effetti sperati.
-Fallito ogni tentativo di combattere la realtà, l'Uomo del terzo Millennio  ha cercato scampo nella fuga e si è rinchiuso in sé stesso come il Giappone dei Tokugawa, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a class="nota" href="/man/en/note#fn-sakoku" id="sakoku">6</a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
+Fallito ogni tentativo di combattere la realtà, l'Uomo del terzo Millennio  ha cercato scampo nella fuga e si è rinchiuso in sé stesso come il Giappone dei Tokugawa, ma senza il rifiorire delle arti che si accompagnò al *Sakoku*<a class="nota" href="/en/note#fn-sakoku" id="sakoku">6</a>, perché la Realtà non è un predatore, che possiamo sperare di seminare.
 La realtà è ovunque e anche isolandoci non possiamo sfuggirle; anzi: la solitudine genera un *feedback* che amplifica lo stato di malessere e rende ancora più difficile e improbabile il raggiungimento dello stadio successivo, ovvero, la..
 
 <i>Accettazione:</i> il solo modo per salvarsi è rinunciare agli insegnamenti dei cattivi maestri del passato e accettare il fatto di non essere delle gocce d'acqua uniche e insostituibili, ma di far parte del mare.
 Chi vuole, potrà credere che in quel mare ci sia Poseidone; gli altri saranno liberi di pensare che ci siano solo pesci, molluschi e alghe: non ha importanza; ciò che conta è sottrarsi all'influenza separatrice dell'Entropia e riacquistare un senso di appartenenza a qualcosa che va oltre le nostre brevi e limitate esistenze. <!-- @todo Verificare quello che dice De Santillana a proposito di Galileo: C'hi++ non si oppone al pensiero scientifico, che anzi adotta, ma all'intolleranza scientifica -->
 Solo così, potremo vincere la nostra battaglia contro l'Annosa Dicotomia.
 Solo così, potremo smettere di inseguire una fama transeunte e trovare forza nella consapevolezza del fatto che ciascuno di noi può modificare l'evoluzione dell'Mondo con le sue azioni.  
-Secondo lo *Yoga Sutra Bhāṣya*<a class="nota" href="/man/en/note#fn-yoga" id="yoga">7</a>:
+Secondo lo *Yoga Sutra Bhāṣya*<a class="nota" href="/en/note#fn-yoga" id="yoga">7</a>:
 
 > Il Mondo intero subisce una mutazione a ogni istante; così, tutte le qualità esteriori del Mondo dipendono da questo istante presente.
 
@@ -198,7 +198,7 @@ Pensa alla variabile `a` che abbiamo visto all'inizio:
 00000000 00000000 00000000 00000001
 ```
 
-Il bit iniziale vale `0`, che è un valore nullo, se lo consideri individualmente, ma se invece lo valuti in rapporto ai due byte a cui appartiene, diventa il valore da cui <a href="/man/en/tipi-di-dato#modificatori">dipende il segno della variabile</a>.
+Il bit iniziale vale `0`, che è un valore nullo, se lo consideri individualmente, ma se invece lo valuti in rapporto ai due byte a cui appartiene, diventa il valore da cui <a href="/en/tipi-di-dato#modificatori">dipende il segno della variabile</a>.
 Se per un caso il valore di quel bit diventasse `1`, il valore della variabile `a` diventerebbe negativo, con delle ripercussioni imprevedibili sul programma.
 Molte, troppe persone sono
 <a href="https://canaro.net/ide-monogatari/binario.html" target="canaro">come quel bit</a> e pensano di valere zero perché considerano il proprio valore solo in termini soggettivi.
@@ -216,7 +216,7 @@ La risposta è in una frase di Jacopone da Todi:
  Quanno sai er perché, te devi impara' a stacce .
 
 In queste due frasi è racchiuso il senso della Vita: capire quale sia il proprio ruolo e svolgerlo al meglio delle proprie possibilità, senza farsi influenzare dalle mode e soprattutto senza cadere vittima dell'Annosa Dicotomia.  
-Il C++ è un linguaggio a tipizzazione forte<a class="nota" href="/man/en/note#fn-tipizzazione" id="tipizzazione">8</a>, perciò, quando si dichiara una variabile, le si deve sempre assegnare un tipo di dato:
+Il C++ è un linguaggio a tipizzazione forte<a class="nota" href="/en/note#fn-tipizzazione" id="tipizzazione">8</a>, perciò, quando si dichiara una variabile, le si deve sempre assegnare un tipo di dato:
 
 ```
 bool    booleano  = false;
@@ -227,7 +227,7 @@ char    array[]   = "abcdefghilmnopqrstuvz";
 ```
 Allo stesso modo, tutto ciò che esiste ha delle capacità che sono funzionali al suo ruolo nell'Universo.
 Suonare, scrivere, recitare, insegnare, convincere, guidare, amare: a ciascuno di noi, l'Universo dà uno strumento e un banco di lavoro, anche se il ruolo che ci verrà assegnato non sempre è evidente fin dalla nascita.
-Prendi Lech Walesa, per esempio (è l'unico Nobel per la Pace che mi viene in mente che non fosse laureato): lui cominciò a lavorare come elettricista navale, ma le sue capacità lo trasformarono in un leader politico<a class="nota" href="/man/en/note#fn-walesa" id="walesa">9</a>.
+Prendi Lech Walesa, per esempio (è l'unico Nobel per la Pace che mi viene in mente che non fosse laureato): lui cominciò a lavorare come elettricista navale, ma le sue capacità lo trasformarono in un leader politico<a class="nota" href="/en/note#fn-walesa" id="walesa">9</a>.
 Oppure, meglio, pensa a te stesso: se avessi voluto, a diciott'anni avresti potuto lasciare l'Ordine, tornare a casa e diventare un *vice-qualcosa* nell'azienda della tua famiglia, invece sei rimasto qui a scrivere il tuo libro.
 Sarà stata la scelta giusta?
 Cosa si aspettava, l'Universo, da te? che, come monaco, rendessi il Mondo un luogo migliore con la tua Bibbia per smanettoni o che, come manager, migliorassi le condizioni di vita dei dipendenti della tua azienda?

@@ -4,7 +4,7 @@ lang:       it
 layout:     manuale
 og_desc:    "I libri e gli editori senza i quali C'hi++ non sarebbe stato scritto. (v. sopra)"
 og_img:     "/assets/img/og-img/bibliografia.jpg"
-permalink:  /man/it/bibliografia
+permalink:  /it/bibliografia
 quote:      "We few, we happy few<br />We bunch of data"
 status:     pubblicato
 title:      "Bi(bli)ografia"

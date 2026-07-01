@@ -4,7 +4,7 @@ lang:       en
 layout:     manuale
 og_desc:    "Le persone senza le quali C'hi++ non sarebbe stato scritto. (Decidete voi se sarebbe stato un bene o un male.)"
 og_img:     "/assets/img/og-img/ringraziamenti.jpg"
-permalink:  /man/en/ringraziamenti
+permalink:  /en/ringraziamenti
 status:     pubblicato
 title:      Ringraziamenti
 ---

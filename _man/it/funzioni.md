@@ -4,7 +4,7 @@ lang:       it
 layout:     manuale
 og_desc:    "Un suggerimento di Jacopone da Todi - Il problema dei romanzi - Le regole di vita di Myamoto Musashi - La Verità è una modella - La Via del carpentiere."
 og_img:     "/assets/img/og-img/funzioni.jpg"
-permalink:  "/man/it/funzioni"
+permalink:  "/it/funzioni"
 quote:      "Call me: IsNull"
 status:     pubblicato
 title:      "Le funzioni"
@@ -20,7 +20,7 @@ Il flusso di un programma *non banale*, come direbbe Stroutsup, sarà sempre sud
 {% include_relative src/tipi-di-dato-dimensione.cpp %}
 ```
 
-Questo è il codice di un esempio che abbiamo visto nella lezione sui <a href="/man/it/tipi-di-dato">tipi di dato</a>.
+Questo è il codice di un esempio che abbiamo visto nella lezione sui <a href="/it/tipi-di-dato">tipi di dato</a>.
 Se decidessimo di modificare il modo in cui il programma mostra i dati all'utente, dovremmo intervenire su tutte le righe del programma, cosa che sarebbe noiosa e potrebbe generare degli errori.
 Al contrario, se isoliamo la funzione di visualizzazione, le eventuali modifiche o correzioni dovranno essere applicate solo in un punto.
 Il codice dell'esempio successivo è un esempio, perfettibile, di questo approccio:
@@ -75,7 +75,7 @@ unsigned short: 2 bytes, da:                    0  a:                65535
 
 ---
 
-Le funzioni sono uno dei <a href="/man/it/tipi-di-dato#funzioni">tipi di dato</a> del C++ e, come tutti i tipi di dato, possono essere *dichiarate* e *definite*.  
+Le funzioni sono uno dei <a href="/it/tipi-di-dato#funzioni">tipi di dato</a> del C++ e, come tutti i tipi di dato, possono essere *dichiarate* e *definite*.  
 La <a id="dichiarazione">dichiarazione</a> di una funzione stabilisce il suo tipo di ritorno e i parametri richiesti in input:
 
 ```
@@ -93,7 +93,7 @@ float scorporaIVA(long stipendio, float aliquota)
 }
 ```
 
-Come ti ho detto quando abbiamo parlato dei <a href="/man/it/linguaggi-di-programmazione">linguaggi di programmazione</a>, la generazione di un file eseguibile avviene in due fasi: per prima cosa il compilatore converte il codice C++ in un *file oggetto*, poi il *linker* trasforma i file oggetto (potrebbero essere più d'uno) in un unico eseguibile.
+Come ti ho detto quando abbiamo parlato dei <a href="/it/linguaggi-di-programmazione">linguaggi di programmazione</a>, la generazione di un file eseguibile avviene in due fasi: per prima cosa il compilatore converte il codice C++ in un *file oggetto*, poi il *linker* trasforma i file oggetto (potrebbero essere più d'uno) in un unico eseguibile.
 Perché questo processo possa funzionare, la *dichiarazione* di una funzione deve essere presente in tutti i brani di codice che la utilizzano, per consentire al compilatore di controllare che l'utilizzo che se ne fa sia corretto; la *definizione*, al contrario, deve comparire solo una volta.  
 
 ```
@@ -202,7 +202,7 @@ src/cpp/funzioni-limiti-main.cpp:23:25: error: expected '(' for function-style c
 ```
 
 Questo avviene perché i `template` non sono vere funzioni, ma solo degli schemi che il compilatore utilizza per generare la versione corretta del codice.
-La dichiarazione delle funzioni template, quindi deve comprendere anche la loro definizione, per dare modo al compilatore di gestire appropriatamente la chiamata<a class="nota" href="/man/it/note#fn-template" id="template">1</a>.
+La dichiarazione delle funzioni template, quindi deve comprendere anche la loro definizione, per dare modo al compilatore di gestire appropriatamente la chiamata<a class="nota" href="/it/note#fn-template" id="template">1</a>.
 
 <hr id="inline">
 
@@ -276,7 +276,7 @@ Per la cronaca: nel secondo caso, il programma fallisce perché l'utente non ha 
 
 L'esistenza di una funzione `inline` ricorda un po' un passo del <i>Samyutta Nikaya</i>:
 
- > Non esiste distinzione fra un essere, la sua funzione e il tempo della sua apparizione. Gli esseri appaiono dalla non-esistenza, esistono per un istante e poi cessano di esistere. La loro esistenza, attività e azione sono un'unica cosa. Passato e futuro sono meri nomi.<a class="nota" href="/man/it/note#fn-samyutta" id="samyutta">2</a>
+ > Non esiste distinzione fra un essere, la sua funzione e il tempo della sua apparizione. Gli esseri appaiono dalla non-esistenza, esistono per un istante e poi cessano di esistere. La loro esistenza, attività e azione sono un'unica cosa. Passato e futuro sono meri nomi.<a class="nota" href="/it/note#fn-samyutta" id="samyutta">2</a>
 
 In generale, comunque, il ciclo di vita di una funzione prevede tre fasi distinte: la *dichiarazione*, la *definizione* e il suo successivo utilizzo:
 
@@ -364,7 +364,7 @@ log("ho chiuso il file");
 <hr id="parametri-variabili">
 
 In una delle nostre
-<a href="/man/it/programmatore" class="xref">prime chiacchierate</a>,
+<a href="/it/programmatore" class="xref">prime chiacchierate</a>,
 ti ho detto che il Buon Programmatore, mentre scrive il codice, si chiede sempre se possa esistere sistema più efficiente di fare ciò che sta facendo.
 Oggi ne hai avuto una dimostrazione: abbiamo migliorato il primo esempio del paragrafo sulle funzioni `inline` unificando la gestione dei messaggi in un'unica funzione e poi l'abbiamo migliorato ancora rendendo quella funzione `inline`.
 C'è un problema, però: l'output del programma:
@@ -472,15 +472,15 @@ Se compili ed esegui questo codice, ottieni:
 ```
 
 Attenzione, però: una funzione che richiama sé stessa, se non è scritta bene, può generare una ricorsione in[de]finita, come due specchi posti l'uno di fronte all'altro.
-Lo spazio prospettico all'interno degli specchi è inesauribile, ma la memoria dei computer, per quanto estesa, ha i suoi limiti e un numero eccessivo di ricorsioni potrebbe generare uno *stack overflow*.<a href="/man/it/note#fn-stack" class="nota" id="stack">3</a>
-Per questo motivo, bisogna ricorrere alla ricorsione solo nei casi in cui è indispensabile, preferendole, quando possibile, le [istruzioni iterative](https://chiplusplus.org/man/it/istruzioni-iterative) e applicando sempre dei meccanismi di controllo della profondità di ricorsione che prevengano un sovraccarico dello stack.  
+Lo spazio prospettico all'interno degli specchi è inesauribile, ma la memoria dei computer, per quanto estesa, ha i suoi limiti e un numero eccessivo di ricorsioni potrebbe generare uno *stack overflow*.<a href="/it/note#fn-stack" class="nota" id="stack">3</a>
+Per questo motivo, bisogna ricorrere alla ricorsione solo nei casi in cui è indispensabile, preferendole, quando possibile, le [istruzioni iterative](https://chiplusplus.org/it/istruzioni-iterative) e applicando sempre dei meccanismi di controllo della profondità di ricorsione che prevengano un sovraccarico dello stack.  
 Un altro tipo di ricorsione di cui diffidare è quella con cui si cerca, alle volte, di dare credibilità a una convinzione priva di fondamenti reali utilizzando un'altra convinzione simile.   
 
 <hr id="dottrina">
 
 In un romanzo sulla vita dello spadaccino giapponese Myamoto Musashi c'è una frase che è la logica conseguenza del suggerimento di Jacopone da Todi:
 
->Non bisogna interferire nel funzionamento dell’Universo, ma prima è necessario capire quale sia, il funzionamento dell’Universo<a href="/man/it/note#fn-musashi" class="nota" id="musashi">4</a>
+>Non bisogna interferire nel funzionamento dell’Universo, ma prima è necessario capire quale sia, il funzionamento dell’Universo<a href="/it/note#fn-musashi" class="nota" id="musashi">4</a>
 
 Il problema dei romanzi è che ti dicono spesso cosa fare, ma non ti spiegano quasi mai come farlo, o perché.  
 Diffida dei maestri che sanno solo insegnare, perché tutto ciò che ti raccontano l'hanno imparato dai libri.
@@ -503,7 +503,7 @@ Nel *Dokkodo*, scritto una settimana prima della sua morte, fu ancora più speci
 
 > {{ site.data.citazioni.musashi.dokkodo }}
 
-Queste regole, che hanno permesso a Musashi di arrivare alla venerabile età di sessant'anni<a href="/man/it/note#fn-eta" class="nota" id="eta">5</a>, dopo essere sopravvissuto vittorioso ad altrettanti combattimenti con tutti i migliori spadaccini del suo tempo, possono aiutarti a capire quale sia il funzionamento dell'Universo e cosa fare per non perturbarlo.  
+Queste regole, che hanno permesso a Musashi di arrivare alla venerabile età di sessant'anni<a href="/it/note#fn-eta" class="nota" id="eta">5</a>, dopo essere sopravvissuto vittorioso ad altrettanti combattimenti con tutti i migliori spadaccini del suo tempo, possono aiutarti a capire quale sia il funzionamento dell'Universo e cosa fare per non perturbarlo.  
 La pratica delle arti, siano esse intellettuali o marziali, e la conoscenza dei mestieri, unite all'attenzione per tutto ciò che ti circonda, aumenteranno il tuo bagaglio di esperienza e ti permetteranno di distinguere i pro e i contro di ogni situazione.
 Questo ti libererà dal demone dell'invidia, perché imparerai che tutte le  condizioni, anche quelle apparentemente idilliache, hanno dei lati negativi.
 Il passo successivo sarà affrancarsi dal desiderio e dall'attaccamento alle cose: così come la funzione `log` ha bisogno di sapere quali siano i parametri fissi e quali siano quelli variabili, tu dovrai imparare a distinguere i tuoi desiderii dalle tue necessità, per sfuggire all'influsso dell'Annosa Dicotomia.  
@@ -511,7 +511,7 @@ La Via, con la "V" maiuscola è simile a una via con la "v" minuscola.
 Lungo la via, incontri dei cartelli stradali, che ti indicano la direzione in cui procedere o la velocità da tenere, e dei cartelloni pubblicitarii, che ti segnalano delle attrazioni nelle vicinanze e ti invitano a deviare dal tuo cammino per andarle a visitare.
 Allo stesso modo, lungo la Via, troverai delle necessità, che ti instraderanno verso la tua destinazione e dei desiderii, che ti dis-trarranno dal tuo percorso e ti at-trarranno verso destinazioni alternative.
 Se tu agirai in base alle necessità, saprai sempre che ti stai muovendo nella direzione giusta, anche quando sarai costretto a rallentare o a percorrere strade che non gradisci.
-Se invece agirai in base ai desiderii andrai di qua e di là, come “un asino privo di briglie”<a href="/man/it/note#fn-briglie" class="nota" id="briglie">6</a> e quando alla fine tornerai sulla strada giusta, potresti non avere più il tempo per arrivare alla tua destinazione.
+Se invece agirai in base ai desiderii andrai di qua e di là, come “un asino privo di briglie”<a href="/it/note#fn-briglie" class="nota" id="briglie">6</a> e quando alla fine tornerai sulla strada giusta, potresti non avere più il tempo per arrivare alla tua destinazione.
 
 <hr id="verita">
 
@@ -528,7 +528,7 @@ Musashi dice di prestare attenzione anche alle cose insignificanti, Nan-in e Ten
 È per questo motivo, che Musashi prescrive di conoscere la Via degli altri mestieri: perché c'è sempre qualcosa da imparare, da chi fa bene il suo lavoro.
 Questo, per esempio, è il parallelo che lui fa fra lo stratega e il carpentiere:
 
-> {{ site.data.citazioni.musashi.cinque-anelli.carpentiere }}<a href="/man/it/note#fn-5anelli" class="nota" id="5anelli">7</a>
+> {{ site.data.citazioni.musashi.cinque-anelli.carpentiere }}<a href="/it/note#fn-5anelli" class="nota" id="5anelli">7</a>
 
 Ciò che è vero per il carpentiere, cambiando il punto di vista, è vero anche per lo stratega e potrà esserlo anche per te, se ti troverai ai gestire un progetto o un gruppo di lavoro.
 Anche come programmatore, comunque, dovrai tenerti costantemente aggiornato sulle tecniche e sui linguaggi di programmazione e dovrai conoscere il modo in cui lavora chi si occupa delle basi-dati o dei sistemi.

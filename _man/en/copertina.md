@@ -6,7 +6,7 @@ lang:       en
 title:      Copertina
 h1:         "C'hi++"
 h2 :        "Il senso della Vita è il debug"
-permalink:  /man/en/
+permalink:  /en/
 ---
 
 <img class="logo"

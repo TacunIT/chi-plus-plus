@@ -4,7 +4,7 @@ lang:       en
 layout:     manuale
 og_desc:    "Valori entropici e valori gravitazionali - La pornografia per il Giudice Potter Steward - L’amore è una backdoor - Il Cielo non è interessato alla tua felicità - L'obbligo di ringraziare."
 og_img:     "/assets/img/og-img/preprocessore.jpg"
-permalink:  /man/en/preprocessore
+permalink:  /en/preprocessore
 quote:      "Tutte le potenze, tranne quella di 1, crescono"
 status:     pubblicato
 title:      "Il preprocessore"
@@ -31,7 +31,7 @@ Queste istruzioni sono delle *direttive al pre-processore* e possono essere di t
 Le *direttive di inclusione* sono quelle che si utilizzano più comunemente e servono a importare nel codice le definizioni delle funzioni di libreria, delle macro-istruzioni e dei simboli necessari per la corretta compilazione dei programmi.
 Questi elementi, per comodità, sono isolati all'interno di alcuni file, detti *file di include*.
 Quando il preprocessore incontra una direttiva `include`, la sostituisce con il contenuto del file a cui fa riferimento.
-Per esempio, se più di un programma dovesse usare la Classe `Colore` o la struttura `ColoreRGB` che abbiamo utilizzato nel programma che visualizza la dimensione dei <a href="/man/en/tipi-di-dato#principali"> principali tipi di dato del C++</a>, questi dovrebbero essere isolati in un file separato con estensione `.h`, a indicare che si tratta di un *header file*:
+Per esempio, se più di un programma dovesse usare la Classe `Colore` o la struttura `ColoreRGB` che abbiamo utilizzato nel programma che visualizza la dimensione dei <a href="/en/tipi-di-dato#principali"> principali tipi di dato del C++</a>, questi dovrebbero essere isolati in un file separato con estensione `.h`, a indicare che si tratta di un *header file*:
 
 ```
 {% include_relative src/preprocessore-colore.h %}
@@ -256,14 +256,14 @@ PippoPluto
 ```
 
 Le macro-istruzioni del precompilatore sono uno strumento molto potente, ma devono essere utilizzate con oculatezza perché, essendo generate **prima** che dell'avvio della compilazione, non sono sottoposte ad alcun controllo di congruenza per il tipo dei parametri utilizzati.
-Questo, come vedremo <a href="/man/en/polimorfismo#funzioni-template" class="xref">in seguito</a>, può generare degli errori molto subdoli e difficili da identificare.
+Questo, come vedremo <a href="/en/polimorfismo#funzioni-template" class="xref">in seguito</a>, può generare degli errori molto subdoli e difficili da identificare.
 
 <hr id="dottrina">
 
 Le tre forze che regolano la vita dell'Universo &mdash; Gravità, Entropia e Annosa Dicotomia &mdash; non influenzano solo la fisica, ma anche l'etica.
 Esistono valori che potremmo definire: “entropici” e valori “gravitazionali”.
 I valori legati all'Entropia sono quelli che tendono a disgiungere e a esaltare il singolo rispetto alla massa, come la libertà, la ricchezza, il successo o la fama; i valori legati alla Gravità sono quelli che, al contrario, uniscono gli individui, come l'*égalité* e la *fraternité* dei Francesi, ma senza la ghigliottina.  
-<a href="/man/en/operatori#effimeri" class="xref">Ieri</a> abbiamo visto come i valori legati all'Entropia siano effimeri &mdash;  non potrebbe essere altrimenti, per una forza che tende alla disgregazione &mdash; e di come chi li persegua sia spesso vittima dell'Annosa Dicotomia, ma questo non vuol dire che li si debba ripudiare.
+<a href="/en/operatori#effimeri" class="xref">Ieri</a> abbiamo visto come i valori legati all'Entropia siano effimeri &mdash;  non potrebbe essere altrimenti, per una forza che tende alla disgregazione &mdash; e di come chi li persegua sia spesso vittima dell'Annosa Dicotomia, ma questo non vuol dire che li si debba ripudiare.
 Non fare l'errore di pensare che ci sia una forza buona e una cattiva, come in *Star Wars*: sia la Gravità che l'Entropia sono necessarie per una corretta evoluzione dell'Universo.
 Il Maestro Canaro, che anche in tarda età amava molto andare in bicicletta, una volta mi disse che l'equilibrio dell'Universo è come l'equilibrio di un ciclista che percorra una strada sterrata in salita: non deve tenere il peso troppo in avanti, perché altrimenti la ruota posteriore perderebbe trazione e comincerebbe a slittare, ma non deve nemmeno tenere il peso troppo indietro, perché altrimenti la ruota anteriore si alleggerirebbe e non sarebbe più possibile sterzare.  
 Considerata la rispettabile quantità di cadute e contusioni collezionate dal Maestro Canaro nel corso delle sue escursioni in sella, ti consiglio di valutare solo il valore metaforico di questo insegnamento, ovvero che ci deve essere un bilanciamento fra Gravità ed Entropia, perché senza la Gravità, l'Universo è inutile, ma senza l'Entropia è noioso.
@@ -271,14 +271,14 @@ In questo momento, l'Universo è in fase di espansione sotto l'influsso dell'Ent
 Per mantenere l'equilibrio, quindi, bisogna incentivare le attività e i valori che tendono a riunire, come l'amore o l'arte.  
 Molte persone pensano che amore e arte siano dei concetti vaghi e aleatorii, ma solo perché ne fraintendono l'essenza, ritenendoli dei concetti auto-esplicativi, che non occorre definire; qualcosa di simile alla definizione di “*pornografia*” che diede il Giudice Potter Steward, a proposito del film *Les Amants* di Louis Malle:
 
-> I shall not today attempt further to define the kinds of material I understand to be embraced within that shorthand description; and perhaps I could never succeed in intelligibly doing so. But I know it when I see it, and the motion picture involved in this case is not that.<a class="nota" href="/man/en/note#fn-steward" id="steward">1</a>
+> I shall not today attempt further to define the kinds of material I understand to be embraced within that shorthand description; and perhaps I could never succeed in intelligibly doing so. But I know it when I see it, and the motion picture involved in this case is not that.<a class="nota" href="/en/note#fn-steward" id="steward">1</a>
 
 Questo approccio entropico/soggettivo, per quanto corretto nel caso di *Les Amants*, è chiaramente sbagliato in termini generali: tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente da chi le ascolta o le utilizza.
 Così come la parola: <i id="pesce">pesce</i>, per quanto banale, può non avere lo stesso valore per un biologo marino, un ecologista o per un pescatore, anche la parola *arte* può assumere significati diversi per un gallerista, per un artista o per un Papa.  
 È altrettanto sbagliata l'interpretazione entropico/romantica che comunemente si attribuisce alle parole: *amore* e *arte*.
 L'amore non è il sentimento vago che ha fatto la fortuna di poeti, musici e letterati, ma uno stato (più o meno persistente) del nostro organismo in cui riteniamo che qualcuno o qualcosa sia più importante di noi stessi.
 Di contro, l'Arte (ti prego di scrivere questo termine con l'iniziale maiuscola, nel tuo libro) non è l'esaltazione della personalità di un singolo, ma è &mdash; e dev'essere &mdash; la traccia del nostro cammino alla ricerca del Senso della Vita: Dio, per chi ci crede, o la Perfezione per i non credenti.
-Approfondiremo quest'ultimo concetto <a id="arte" href="/man/en/ereditarieta#arte" class="xref">in séguito</a>; qui e ora, come direbbe Céline Dion, *let's talk about love*.
+Approfondiremo quest'ultimo concetto <a id="arte" href="/en/ereditarieta#arte" class="xref">in séguito</a>; qui e ora, come direbbe Céline Dion, *let's talk about love*.
 
 <hr id="amore">
 
@@ -286,7 +286,7 @@ Tutti noi agiamo in base a degli schemi di valori che determinano le nostre scel
 L'istinto di sopravvivenza, solitamente, ci spinge a porre la nostra persona al vertice di questa piramide, ma alle volte può capitarci di eleggere a nostro bene supremo qualcuno o qualcosa diverso da noi stessi.
 Quel senza Dio di Dawkins
 <!-- Utilizzo questo appellativo in maniera affettuosamente canzonatoria: Dawkins ha cambiato il mio modo di vedere il Mondo o, almeno, parte di esso. Credo solo che faccia un errore di generalizzazione, ritenendo tutti i fedeli dei fanatici e dei bigotti. -->
-ha dimostrato come l'attaccamento che noi proviamo per i nostri parenti sia direttamente proporzionale al numero di cromosomi che condividiamo con essi e che quindi può essere riconducibile al desiderio primordiale di perpetuare il nostro patrimonio genetico<a class="nota" href="/man/en/note#fn-selfish" id="selfish">2</a>.
+ha dimostrato come l'attaccamento che noi proviamo per i nostri parenti sia direttamente proporzionale al numero di cromosomi che condividiamo con essi e che quindi può essere riconducibile al desiderio primordiale di perpetuare il nostro patrimonio genetico<a class="nota" href="/en/note#fn-selfish" id="selfish">2</a>.
 Questa interpretazione ribonucleica dell'amore funziona molto bene per i rapporti di sangue (padre/figlio, nonno/nipote, zio/nipote ecc.), ma non spiega l'amore fra mamma e papà o fra nonno e nonna &mdash; almeno, nelle famiglie che non ritengono l'incesto una pratica accettabile.  
 L'*egoismo dei geni* non spiega nemmeno altre forme d'amore come l'amor di Patria, che spinge i giovani a sacrificare la propria vita in guerra,
 <!--
@@ -308,7 +308,7 @@ Il Maestro Canaro una volta disse (ma non credo fosse farina del suo sacco):
 > Le donne cercano per tutta la vita il loro uomo ideale; nel frattempo, si sposano.
 
 Questo è vero per tutti, uomini e donne.
-Il tuo DNA contiene i geni che hanno fatto nascere l'amore fra i tuoi genitori: occhi verdi, spalle larghe, un bel seno o magari un bel sedere<a class="nota" href="/man/en/note#fn-orologiaio" id="orologiaio">3</a>.
+Il tuo DNA contiene i geni che hanno fatto nascere l'amore fra i tuoi genitori: occhi verdi, spalle larghe, un bel seno o magari un bel sedere<a class="nota" href="/en/note#fn-orologiaio" id="orologiaio">3</a>.
 Allo stesso modo, dentro di te potrebbe esserci qualcosa che ti spingerà a cercare e ad amare una persona in particolare, perché quella persona è importante per la tua vita.
 Quando (se) la incontrerai, avrai l'impressione di conoscerla da sempre e capirai che tutte le volte che ti sei innamorato, ti sei innamorato di lei, anche se non la conoscevi ancora.
 Sfortunatamente, questo non vuol dire che la vostra storia durerà o che vivrete per sempre felici e contenti, come nelle favole. Anzi.  

@@ -4,7 +4,7 @@ lang:       en
 layout:     manuale
 og_desc:    "I commenti come la letteratura - Un anticipo sui Cookie."
 og_img:     "/assets/img/og-img/commenti.jpg"
-permalink:  /man/en/commenti
+permalink:  /en/commenti
 quote:      "Il Compilatore e il Linker non usano carità, tengono i diecimila oggetti per cani di paglia"
 status:     pubblicato
 title:      I commenti
@@ -136,7 +136,7 @@ Il Maestro Canaro diceva che la cosa più complicata, dello scrivere un manuale,
 Questo è uno di quei momenti.
 Il corrispettivo dei commenti, nel C'hi++ sono quelli che il Maestro Canaro chiamava i <i>Cookie</i>, ovvero una sorta di memoria di massa dell'Universo in cui è salvato il ricordo delle scelte fatte dagli esseri senzienti in ogni ciclo di esistenza.
 Io, però, non posso parlarti adesso dei *Cookie*, perché prima dovrei prima spiegarti, se non altro, cosa sono i “cicli di esistenza” e, per il momento, è prematuro farlo.
-Rimando perciò la trattazione dei *Cookie* a <a href="/man/en/istruzioni-iterative#cookie" class="xref">un secondo momento</a> e ti racconto invece un aneddoto sul Maestro Canaro che riguarda proprio i commenti al codice.  
+Rimando perciò la trattazione dei *Cookie* a <a href="/en/istruzioni-iterative#cookie" class="xref">un secondo momento</a> e ti racconto invece un aneddoto sul Maestro Canaro che riguarda proprio i commenti al codice.  
 Una volta, il maestro Canaro mostrò ai suoi allievi un brano di codice e gli chiese di spiegare che cosa facesse:
 
 ```

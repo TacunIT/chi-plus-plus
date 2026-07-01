@@ -4,7 +4,7 @@ lang:       en
 layout:     manuale
 og_desc:    ""
 og_img:     "/assets/img/og-img/indice.jpg"
-permalink:  "/man/en/indice"
+permalink:  "/en/indice"
 status:     pubblicato
 title:      Indice
 ---

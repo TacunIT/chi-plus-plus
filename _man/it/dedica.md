@@ -6,7 +6,7 @@ lang:       it
 title:      Dedica
 h1:         Dedica
 h2:         ""
-permalink:  /man/it/dedica
+permalink:  /it/dedica
 no-index:   true
 ---
 

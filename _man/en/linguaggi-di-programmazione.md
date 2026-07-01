@@ -4,7 +4,7 @@ lang:       en
 layout:     manuale
 og_desc:    "Cosa disse Brian Kernigan - Un computer è come una nave - Come tornare al tuo albergo in Cina - I paradossi sono la crittografia di Dio - PacMan non paga le tasse."
 og_img:     "/assets/img/og-img/linguaggi-di-programmazione.jpg"
-permalink:  /man/en/linguaggi-di-programmazione
+permalink:  /en/linguaggi-di-programmazione
 quote:      "Dio non programma in Assembler con l'Universo"
 status:     pubblicato
 title:      I linguaggi di programmazione
@@ -99,9 +99,9 @@ Invertendo questi concetti, una volta il Maestro Canaro disse:
 Noi percepiamo il mondo reale come un insieme di eventi che coinvolgono una o più entità.
 Ciascuna entità è identificabile per le sue caratteristiche fisiche e ha un suo modo particolare di reagire agli stimoli esterni.
 Per descrivere le entità, i linguaggi di programmazione hanno i
-<a href="/man/en/tipi-di-dato" class="xref">tipi di dato</a>;
+<a href="/en/tipi-di-dato" class="xref">tipi di dato</a>;
 per descrivere gli eventi,
-<a href="/man/en/operatori" class="xref">istruzioni e operatori</a>
+<a href="/en/operatori" class="xref">istruzioni e operatori</a>
 Un linguaggio di programmazione è tanto più efficace quanto più i suoi tipi di dato e i suoi costrutti sintattici riescono a rappresentare le entità che il programma dovrà gestire.
 Ci sono molti linguaggi di programmazione.
 Ciascun linguaggio sa spiegare bene certe cose e meno bene certe altre.
@@ -262,7 +262,7 @@ Il C è un linguaggio che non va oltre l'ambito per cui è stato creato.
 Se domani smettessimo di utilizzare i computer, il C non esisterebbe più, perché tutti i suoi costrutti sono legati al funzionamento degli apparati informatici.
 Al contrario, il C++ e tutti i linguaggi che si basano sul paradigma a oggetti hanno una componente filosofica che trascende l'ambito informatico.
 Se domani smettessimo di utilizzare i computer, i costrutti che il C++ ha ereditato dal C non avrebbero più senso, ma i concetti di
-<a href="/man/en/classi-oggetti" class="xref">classe e di oggetto</a>
+<a href="/en/classi-oggetti" class="xref">classe e di oggetto</a>
 resterebbero ancora validi.  
 Molti pensano che avere dei principii sia limitativo, ma non è vero.
 Il C non ha principi e i suoi costrutti sono limitati ai tipi di dato previsti.

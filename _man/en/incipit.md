@@ -4,7 +4,7 @@ lang:       en
 layout:     manuale
 og_desc:    "I libri sono stupidi - Differenza fra la via e la direzione - Consigli per la conduzione di una canoa - La verità è semplice - Ciò che le religioni non dicono."
 og_img:     "/assets/img/og-img/incipit.png"
-permalink:  /man/en/incipit
+permalink:  /en/incipit
 quote:      "*.* è il migliore"
 status:     pubblicato
 title:      Incipit
