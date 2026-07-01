@@ -10,6 +10,9 @@
 
 @todo: decidere una fonte per la citazione biblica di Mosè ai figli di Levi (Esodo 32:27) nel capitolo Operatori — al momento è una resa in stile KJV, non una citazione da un'edizione specifica
 
+@todo: correggere "Potter Steward" -> "Potter Stewart" (nome del giudice) nel capitolo Preprocessore, versione italiana
+@todo: correggere #define STR_COME_SEI = "astuto"; -> togliere il segno = (sintassi errata, causerebbe un errore di compilazione) nel capitolo Preprocessore, versione italiana
+
 ## Redazione
 
 @todo: Va verificata l'ammissibilità delle "Leggi" dello Spazionismo. Non è stettamente necessario, perché hanno un valore prevalentemente simbolico, ma visto che sono la base di tutta questa filosofia, se fossero smaccatamente false è meglio saperlo prima che le utilizzi nel testo.  
