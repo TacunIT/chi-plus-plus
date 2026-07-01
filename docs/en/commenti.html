@@ -6,7 +6,7 @@
 
 
 <head>
-    <title>I commenti |  C'hi++
+    <title>Comments |  C'hi++
 </title>
     <meta charset="utf-8" />
     <link      rel="canonical"          href="https://chiplusplus.org/en/commenti" />
@@ -19,8 +19,8 @@
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
     <meta property="og:url"          content="https://chiplusplus.org/en/commenti" />
     <meta property="og:type"         content="website" />
-    <meta property="og:title"        content="I commenti" />
-    <meta property="og:description"  content="I commenti come la letteratura - Un anticipo sui Cookie." />
+    <meta property="og:title"        content="Comments" />
+    <meta property="og:description"  content="Comments as literature - A preview of the Cookies." />
     <meta property="og:image:width"  content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image"        content="https://chiplusplus.org/assets/img/og-img/commenti.jpg" />
@@ -34,9 +34,9 @@
     <div class="page capitolo">
         <header><nav class="menu-top">
     <a
-        title="Go to: Classi e oggetti"
+        title="Go to: C++"
         
-        href="/en/classi-oggetti"
+        href="/en/c-plus-plus"
         class="left"
         
     >
@@ -60,9 +60,9 @@
     </a>
 
     <a
-        title="Go to: Il debug"
+        title="Go to: I tipi di dato"
         
-        href="/en/debug"
+        href="/en/tipi-di-dato"
         
         class="right"
     >
@@ -73,13 +73,13 @@
         <main class="corpo pubblicato ">
         
             <h1><a href="#dottrina">
-                I commenti</a>
+                Comments</a>
             </h1>
-            <blockquote class="motto">Il Compilatore e il Linker non usano carità, tengono i diecimila oggetti per cani di paglia</blockquote>
+            <blockquote class="motto">The Compiler and the Linker show no mercy; they treat the ten thousand objects as straw dogs</blockquote>
             <section class="testo">
-                <p>I commenti sono la cosa più importante, quando si programma.</p>
+                <p>Comments are the single most important thing when programming.</p>
 
-<p>Un commento è un breve brano di testo che descrive in linguaggio comune il funzionamento o lo scòpo del codice a cui è riferito:</p>
+<p>A comment is a short piece of text that describes, in plain language, the workings or purpose of the code it refers to:</p>
 
 <pre><code>/**
  * Funzione per il raddoppio dello stipendio.
@@ -93,17 +93,17 @@ long raddoppia(long stipendio)
 }
 </code></pre>
 
-<p>Pur essendo all’interno del codice, il commento viene ignorato in fase di compilazione, perché è un’aggiunta utile solo al programmatore.
-Al processore non interessa sapere a cosa serve il codice che sta eseguendo: lo esegue e basta, senza farsi distrarre da implicazioni funzionali — o, peggio, etiche — che allungherebbero i tempi di risposta.<br />
-È importante commentare bene il proprio codice.
-Il buon codice produce programmi che durano nel tempo e, col tempo, si tende a dimenticare.
-Anche se si ha la fortuna di possedere una buona memoria, bisogna considerare la possibilità che il proprio codice sia utilizzato da un collega.
-Non solo non è educato costringerlo ad analizzare ogni singola riga di codice per capirne il funzionamento, ma è anche improduttivo.<br />
-Così come la penuria, anche l’eccesso di commenti è un errore da evitare.
-Il programmatore inesperto non commenta il proprio codice perché pensa che sia una perdita di tempo. È davvero un atteggiamento poco responsabile.
-Il neofita zelante riempie il proprio codice di commenti, o perché ritiene che chi lo andrà a leggere sarà meno esperto di lui o perché vuole in questo modo esaltare le sue poche conoscenze.
-Il programmatore esperto commenta solo ciò che non è di per sé evidente e indica i possibili punti deboli del suo programma in modo che chi si trova a riutilizzarlo o a correggerlo vi presti la dovuta attenzione.
-Il programmatore perfetto non commenta il suo codice, perché il suo codice è auto-esplicativo:</p>
+<p>Even though it sits inside the code, a comment is ignored at compile time, because it’s an addition useful only to the programmer.
+The processor doesn’t care to know what the code it’s executing is for: it just executes it, without getting distracted by functional — or, worse, ethical — implications that would slow down its response time.
+It’s important to comment your code well.
+Good code produces programs that last over time, and, over time, one tends to forget.
+Even if you’re lucky enough to have a good memory, you have to consider the possibility that your code will be used by a colleague.
+Not only is it rude to force them to analyze every single line of code to understand how it works, it’s also unproductive.
+Just like a shortage, an excess of comments is also a mistake to avoid.
+The inexperienced programmer doesn’t comment their code because they think it’s a waste of time. This is truly an irresponsible attitude.
+The overzealous novice fills their code with comments, either because they assume whoever reads it will be less experienced than they are, or because they want to show off their limited knowledge.
+The experienced programmer only comments what isn’t self-evident, and points out the possible weak spots of their program so that whoever ends up reusing or fixing it pays due attention to them.
+The perfect programmer doesn’t comment their code at all, because their code is self-explanatory:</p>
 
 <pre><code>typedef Importo unsigned long;
 
@@ -113,29 +113,29 @@ Importo raddoppiaStipendio(Importo stipendioCorrente)
 }
 </code></pre>
 
-<p>È lo stesso brano di codice che abbiamo visto prima, ma stavolta i commenti non servono, perché gli intenti della funzione sono espressi direttamente nel codice, rendendo espliciti il nome della funzione, del suo parametro e del suo valore di ritorno.
-L’istruzione <code>typedef</code>, che hai visto anche negli esempii precedenti, serve a  definire dei nuovi tipi di dato, come alias di tipi di dato esistenti.
-L’istruzione:</p>
+<p>This is the same piece of code we saw before, but this time comments aren’t needed, because the function’s intent is expressed directly in the code, by making explicit the name of the function, of its parameter, and of its return value.
+The <code>typedef</code> instruction, which you’ve also seen in previous examples, is used to define new data types as aliases for existing data types.
+The instruction:</p>
 
 <pre><code>typedef time_t Data;
 </code></pre>
 
-<p>definisce il tipo di dato <code>Data</code> come alias del tipo di dato standard <code>time_t</code>, mentre l’istruzione:</p>
+<p>defines the data type <code>Data</code> as an alias for the standard data type <code>time_t</code>, while the instruction:</p>
 
 <pre><code>typedef Importo unsigned long;
 </code></pre>
 
-<p>definisce il tipo di dato <code>Importo</code> come alias del tipo di dato standard <code>unsigned long</code>.<br />
-La definizione dei proprii tipi di dato non solo rende il codice più leggibile, ma lo rende anche più facile da modificare.
-La funzione originale utilizza dei valori di tipo <code>unsigned long</code>, ovvero delle sequenze di 4 byte che permettono di memorizzare numeri interi da 0 a 4.294.967.295 (2<sup>32</sup>).
-Questo tipo di dato può essere utilizzato per uno stipendio che non abbia cifre decimali, come quello del Maestro Canaro nel secolo scorso, ma se dovessimo raddoppiare uno stipendio con delle cifre decimali, dovremmo utilizzare dei tipi di dato come i <code>float</code> o i <code>double</code> e, senza una <code>typedef</code>, saremmo costretti a modificare sia il valore di ritorno che il tipo di parametro della funzione:</p>
+<p>defines the data type <code>Importo</code> as an alias for the standard data type <code>unsigned long</code>.
+Defining your own data types not only makes the code more readable, it also makes it easier to modify.
+The original function uses values of type <code>unsigned long</code>, that is, 4-byte sequences that allow storing integers from 0 to 4,294,967,295 (2<sup>32</sup>).
+This data type can be used for a salary with no decimal digits, like Master Canaro’s back in the last century, but if we had to double a salary with decimal digits, we’d have to use data types like <code>float</code> or <code>double</code> and, without a <code>typedef</code>, we’d be forced to change both the return value and the parameter type of the function:</p>
 
 <pre><code>float raddoppia(float stipendio)
 {
     return stipendio * 2;   //  raddoppia il valore
 }
 </code></pre>
-<p>Se invece abbiamo definito un nostro tipo di dato dobbiamo modificare solo l’istruzione <code>typedef</code>, lasciando tutto il resto invariato:</p>
+<p>Whereas if we’ve defined our own data type, we only need to modify the <code>typedef</code> instruction, leaving everything else unchanged:</p>
 
 <pre><code>typedef Importo float;
 
@@ -145,10 +145,7 @@ Importo raddoppiaStipendio(Importo stipendioCorrente)
 }
 </code></pre>
 
-<p>È ammissibile che i commenti abbiano una sfumatura umoristica, può
-essere utile per scaricare un po’ della tensione in chi legge, così come
-scambiarsi una battuta mentre si lavora, ma anche in questo non si deve
-esagerare.</p>
+<p>It’s acceptable for comments to have a touch of humor — it can help release some of the tension for the reader, the same way cracking a joke while working does, but even here you shouldn’t overdo it.</p>
 
 <pre><code>    case STATE_CR:  // Got CR: look for LF
         state = STATE_NORMAL;
@@ -163,39 +160,31 @@ esagerare.</p>
 }
 </code></pre>
 
-<p>Il C++ prevede due modi distinti per commentare il codice: due caratteri
-<code>//</code> affiancati o la sequenza <code>/*  */</code>, che il Linguaggio ha mutuato dal
-suo predecessore, il C.
-Nel primo caso, il compilatore ignora i caratteri dal simbolo fino alla
-fine della riga; nel secondo caso, ignora tutto ciò che è compreso fra
-le due sequenze di caratteri.</p>
+<p>C++ provides two distinct ways to comment code: two adjacent <code>//</code> characters, or the <code>/*  */</code> sequence, which the Language borrowed from its predecessor, C.
+In the first case, the compiler ignores everything from that symbol to the end of the line; in the second case, it ignores everything between the two character sequences.</p>
 
-<pre><code class="language-`">/**
+<pre><code>/**
  * Questa sintassi è più comoda per i commenti
  * che si estendono su più di una riga
  */
 for (int i = 0; i &lt; 10; i++) {
     cout &lt;&lt; i &lt;&lt; endl; // questa, per i commenti su una riga
 }
-
 </code></pre>
 
-<p>Entrambe le soluzioni hanno dei pro e dei contro che con l’esperienza
-risultano evidenti. Scegliere l’uno o l’altro è spesso una questione
-di convenienza, altre volte una questione di stile, ma se si capisce la
-vera essenza del Linguaggio, è solo una questione di ritmo.</p>
+<p>Both solutions have pros and cons that become clear with experience. Choosing one over the other is often a matter of convenience, other times a matter of style, but if you understand the true essence of the Language, it’s just a matter of rhythm.</p>
 
 <hr id="dottrina" />
 
-<p>I commenti sono un po’ come la letteratura: se si scrive troppo poco è male; se si scrive troppo, dilungandosi in descrizioni inutili, è altrettanto sbagliato.
-Il paragone vale anche all’inverso: i libri, le opere letterarie, sono i commenti al codice della vita.
-Si scrive ciò che si desidera ricordare.<br />
-Il Maestro Canaro diceva che la cosa più complicata, dello scrivere un manuale, è che, alle volte, per spiegare un determinato concetto, hai bisogno di spiegare prima un altro concetto, che però non può essere compreso se non si capisce il primo.
-Questo è uno di quei momenti.
-Il corrispettivo dei commenti, nel C’hi++ sono quelli che il Maestro Canaro chiamava i <i>Cookie</i>, ovvero una sorta di memoria di massa dell’Universo in cui è salvato il ricordo delle scelte fatte dagli esseri senzienti in ogni ciclo di esistenza.
-Io, però, non posso parlarti adesso dei <em>Cookie</em>, perché prima dovrei prima spiegarti, se non altro, cosa sono i “cicli di esistenza” e, per il momento, è prematuro farlo.
-Rimando perciò la trattazione dei <em>Cookie</em> a <a href="/en/istruzioni-iterative#cookie" class="xref">un secondo momento</a> e ti racconto invece un aneddoto sul Maestro Canaro che riguarda proprio i commenti al codice.<br />
-Una volta, il maestro Canaro mostrò ai suoi allievi un brano di codice e gli chiese di spiegare che cosa facesse:</p>
+<p>Comments are a bit like literature: writing too little is bad; writing too much, dwelling on needless descriptions, is just as wrong.
+The comparison also holds in reverse: books, works of literature, are the comments on the code of life.
+You write down what you wish to remember.
+Master Canaro used to say that the hardest thing about writing a manual is that, sometimes, to explain a certain concept, you first need to explain another concept, which in turn can’t be understood unless you understand the first.
+This is one of those moments.
+The equivalent of comments, in C’hi++, is what Master Canaro called <i>Cookies</i>: a kind of mass storage of the Universe, in which is saved the memory of the choices made by sentient beings in each cycle of existence.
+I can’t tell you about the <em>Cookies</em> right now, though, because first I would need to explain, at the very least, what “cycles of existence” are, and for the moment it’s premature to do so.
+I’ll therefore put off discussing the <em>Cookies</em> until <a href="/en/istruzioni-iterative#cookie" class="xref">a later point</a>, and instead tell you an anecdote about Master Canaro that has to do precisely with code comments.
+Once, Master Canaro showed his students a piece of code and asked them to explain what it did:</p>
 
 <pre><code>/**********************************************************
  
@@ -232,10 +221,7 @@ int main(int argc, char * argv[])
 
 </code></pre>
 
-<p>Gli allievi studiarono il codice e diedero le loro risposte, ma sbagliarono tutti, perché tutte le istruzioni erano comprese fra un <code>/*</code> e un <code>*/</code> e non venivano compilate.</p>
-
-<!--
--->
+<p>The students studied the code and gave their answers, but they were all wrong, because every instruction was enclosed between a <code>/*</code> and a <code>*/</code> and was never compiled.</p>
 
             </section>
         
@@ -244,8 +230,8 @@ int main(int argc, char * argv[])
     <nav>
         
         
-        <a href="/en/classi-oggetti" 
-           title="Go to: Classi e oggetti" 
+        <a href="/en/c-plus-plus" 
+           title="Go to: C++" 
            class="left">
             <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
         </a>
@@ -257,8 +243,8 @@ int main(int argc, char * argv[])
         </a>
 
         
-        <a href="/en/debug" 
-           title="Go to: Il debug" 
+        <a href="/en/tipi-di-dato" 
+           title="Go to: I tipi di dato" 
            class="right" >
                 <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
         </a>
