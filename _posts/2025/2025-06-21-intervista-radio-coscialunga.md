@@ -1,12 +1,3 @@
----
-layout:   post
-title:    "Intervista a Radio Coscialunga"
-tags:     [log, atti, intervista, presentazione]
-og_img:   "/assets/img/og-img/intervista-radio.jpg"
-og_desc:  "Un'intervista immaginaria in cui l'autore cerca di spiegare di cosa parla questo libro."
----
-
-
 <blockquote class="esergo">
 Per primo nacque il Caos. Poi la Terra dall’ampio seno, sede di tutti gli dèi che hanno in possesso le cime nevose d’Olimpo. Poi, nei baratri della vasta Terra, il buio Tàrtaro; e Amore, ch’è il più bello fra i Celesti, che dissipa ogni cura degli uomini e degli dèi, doma ogni volontà e ogni accorto consiglio.<br />
 <span>Esiodo</span>, Teogonia (citato da <span>Carlo Rovelli </span>, Che cos'è la scienza: La rivoluzione di Anassimandro)
@@ -217,7 +208,7 @@ Dopo il *Big Bang*, l'Universo si espande sotto la spinta dell'Entropia, fino a 
 <label>CS</label>
 Be', per esempio, l'Induismo prevede sia dei cicli cosmici - i *Manvantara* - sia due principii, chiamati *Prakṛti* e *Puruṣa*, che interagendo fra loro manifestano tutto l'Universo con gli esseri che lo popolano.
 Anche la Genesi biblica può essere considerata un’allegoria della cosmogonia spazionista: il Paradiso è l’Uno primigenio, Adamo è la Gravità mentre Eva è l'Energia.
-Il Diavolo - che deriva da Greco *διάβολος*, ovvero: *colui che separa* - è l'Entropia, che causa la disgregazione dell'Uno, generando un Universo imperfetto e doloroso.
+Il Diavolo - che deriva dal Greco *διάβολος*, ovvero: *colui che separa* - è l'Entropia, che causa la disgregazione dell'Uno, generando un Universo imperfetto e doloroso.
 
 <label>AT</label>
 *Non vedo dove sia l'affinità.
