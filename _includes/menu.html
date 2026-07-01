@@ -1,27 +1,27 @@
 <nav class="menu-top">
         <a id="home"
-            title="Va' alla pagina iniziale"
+            title="{{ site.data.strings[page.lang | default: 'it'].menu_home_title }}"
             href="/">
-            <span>Home</span>
+            <span>{{ site.data.strings[page.lang | default: 'it'].menu_home }}</span>
             <i class="fa fa-home fa-2x"></i>
         </a>
         <a id="man"
-            title="Leggi il libro"
-            href="/man/">
-            <span>Manuale</span>
+            title="{{ site.data.strings[page.lang | default: 'it'].menu_manuale_title }}"
+            href="/man/{{ page.lang | default: 'it' }}/">
+            <span>{{ site.data.strings[page.lang | default: 'it'].menu_manuale }}</span>
             <i class="fas fa-book fa-2x"></i>
         </a>
         <a id="github"
-            title="Va' al progetto su GitHub"
+            title="{{ site.data.strings[page.lang | default: 'it'].menu_github_title }}"
             target="github"
             href="{{ site.url_github }}">
             <span>GitHub</span>
             <i class="fab fa-github fa-2x"></i>
         </a>
-        <a id="man"
-            title="Leggi il diario di bordo"
+        <a id="log"
+            title="{{ site.data.strings[page.lang | default: 'it'].menu_log_title }}"
             href="/log/">
-            <span>Log</span>
+            <span>{{ site.data.strings[page.lang | default: 'it'].menu_log }}</span>
             <i class="fas fa-file-signature fa-2x"></i>
         </a>
 </nav>

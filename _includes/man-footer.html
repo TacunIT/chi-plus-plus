@@ -3,20 +3,20 @@
         
         {% if page.previous %}
         <a href="{{page.previous.url}}" 
-           title="Vai a: {{page.previous.title}}" 
+           title="{{ site.data.strings[page.lang].vai_a }}: {{page.previous.title}}" 
            class="left">
             <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
         </a>
         {% endif %}
         
         <a href="#top" 
-           title="Torna all'inizio" >
+           title="{{ site.data.strings[page.lang].torna_inizio }}" >
            <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
         </a>
 
         {% if page.next %}
         <a href="{{page.next.url}}" 
-           title="Vai a: {{page.next.title}}" 
+           title="{{ site.data.strings[page.lang].vai_a }}: {{page.next.title}}" 
            class="right" >
                 <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
         </a>
