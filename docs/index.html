@@ -1,0 +1,30 @@
+<p>&lt;!DOCTYPE html&gt;</p>
+<html lang="it-IT">
+<head>
+    <meta charset="utf-8" />
+    <title>C'hi++</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <noscript>
+        <p>
+            <a href="/it/">Italiano</a> &middot;
+            <a href="/en/">English</a>
+        </p>
+    </noscript>
+    <script>
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('chiplusplus_lang'); } catch (e) {}
+
+            var lang = saved;
+            if (!lang) {
+                var browserLang = (navigator.language || navigator.userLanguage || 'it').toLowerCase();
+                lang = browserLang.indexOf('it') === 0 ? 'it' : 'en';
+            }
+
+            window.location.replace(lang === 'it' ? '/it/' : '/en/');
+        })();
+    </script>
+</body>
+</html>
