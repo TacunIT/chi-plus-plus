@@ -75,7 +75,7 @@
             <h1><a href="#dottrina">
                 L'ereditarietà</a>
             </h1>
-            <blockquote class="motto">Una classe ma può ripudiare una classe figlia, se è cattiva, ma una casse figlia non può ripudiare la sua classe padre perché gli deve più di quanto non sia in grado di pagargli e in particolare gli deve l'esistenza.</blockquote>
+            <blockquote class="motto">Una classe padre può ripudiare una classe figlia, se è cattiva, ma una casse figlia non può ripudiare la sua classe padre perché gli deve più di quanto non sia in grado di pagargli e in particolare gli deve l'esistenza.</blockquote>
             <section class="testo">
                 <!-- Etica Nicomachea 1163b -->
 
@@ -112,7 +112,7 @@ struct  PesceAcquario {
 <p>e funzioni differenti per la gestione dei dati:</p>
 
 <pre><code>void gestisciPesceAlimentare(struct PesceAlimentare&amp; pesce);
-void gestisciPesceAcquario(struct PesceEcologista&amp; pesce);
+void gestisciPesceAcquario(struct PesceAcquario&amp; pesce);
 </code></pre>
 
 <p>Questo vuol dire che se hai già scritto (e verificato, corretto e collaudato) un programma di gestione per un pescivendolo, per poterlo trasformare in un programma di gestione per la vendita di pesci da acquario, dovrai riscrivere (e ri-verificare, ri-correggere e collaudare) tutto il codice, anche se parte dei dati da considerare sono gli stessi.<br />

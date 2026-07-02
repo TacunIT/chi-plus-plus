@@ -402,7 +402,7 @@ Questo tipo di funzioni si chiamano: <em>costruttori di copia</em> o: <em>costru
  * così com'è perché è già stato verificato
  * dal costruttore della variabile o1.  
  */
-Orario::Orario(const Orario&amp; )
+Orario::Orario(const Orario&amp; o)
 : _h(o._h), _m(o._m), _s(o._s) {
 }
 
@@ -586,8 +586,8 @@ public:
 
     /** Dichiarazione di una funzione friend */
     friend int aggiornaMinuti(Orario&amp; o, int m);
-    friend class Orologio(); 	
-
+    friend class Orologio; 	
+    
 };
 </code></pre>
 
@@ -631,7 +631,7 @@ Io non sono del tutto d’accordo con questa affermazione perché alle volte è 
 Così come abbiamo fatto per il costruttore della classe, potremmo unificare le funzioni di lettura e scrittura, utilizzando un parametro di default che determini il comportamento del programma:</p>
 
 <pre><code>int ore(int h = -1) {
-    return _h = ((h != -1) ? _h = (h % 24) : h);
+    return (h != -1) ? (_h = (h % 24)) : _h;
 }
 </code></pre>
 
@@ -983,7 +983,7 @@ Ho scelto le tre “J” — Jim, Jimi e Janis — perché il Maestro Canaro pen
   <p>Capisci, avevano tutti ventisette anni e poi quella “J” che ricorre nel nome.. non credo fosse un caso.
 “<em>Muß es sein? Es muß sein!</em>”, come direbbe Beethoven.
 So cosa stai pensando: che sto cercando di definire un dogma per giustificare una mia speranza, ma non è così.
-La teoria del “27 Club”, anche se include Amy Winehouse e Robert Johnson, lascia dolorosamente fuori il Elvis e Andrea Pazienza<a class="nota" href="/it/note#fn-pazienza" id="pazienza">5</a>, che io ho amato molto di più.</p>
+La teoria del “27 Club”, anche se include Amy Winehouse e Robert Johnson, lascia dolorosamente fuori Elvis e Andrea Pazienza<a class="nota" href="/it/note#fn-pazienza" id="pazienza">5</a>, che io ho amato molto di più.</p>
 </blockquote>
 
 <hr id="libero-arbitrio" />

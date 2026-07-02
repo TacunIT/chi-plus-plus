@@ -6,7 +6,7 @@
 
 
 <head>
-    <title>L'ereditarietà |  C'hi++
+    <title>Inheritance |  C'hi++
 </title>
     <meta charset="utf-8" />
     <link      rel="canonical"          href="https://chiplusplus.org/en/ereditarieta" />
@@ -19,8 +19,8 @@
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
     <meta property="og:url"          content="https://chiplusplus.org/en/ereditarieta" />
     <meta property="og:type"         content="website" />
-    <meta property="og:title"        content="L'ereditarietà" />
-    <meta property="og:description"  content="Il Karma delle funzioni virtuali - La Scienza è transeunte; il Mito è immortale - Perché 13 e 17 portano sfortuna - Cos'è l'Arte - Le regole dell'Ikebarba" />
+    <meta property="og:title"        content="Inheritance" />
+    <meta property="og:description"  content="The Karma of virtual functions - Science is fleeting; Myth is immortal - Why 13 and 17 are unlucky numbers - What Art is - The rules of Ikebarba" />
     <meta property="og:image:width"  content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image"        content="https://chiplusplus.org/assets/img/og-img/ereditarieta.jpg" />
@@ -34,7 +34,7 @@
     <div class="page capitolo">
         <header><nav class="menu-top">
     <a
-        title="Go to: Classi e oggetti"
+        title="Go to: Classes and objects"
         
         href="/en/classi-oggetti"
         class="left"
@@ -73,16 +73,16 @@
         <main class="corpo pubblicato ">
         
             <h1><a href="#dottrina">
-                L'ereditarietà</a>
+                Inheritance</a>
             </h1>
-            <blockquote class="motto">Una classe ma può ripudiare una classe figlia, se è cattiva, ma una casse figlia non può ripudiare la sua classe padre perché gli deve più di quanto non sia in grado di pagargli e in particolare gli deve l'esistenza.</blockquote>
+            <blockquote class="motto">A parent class can disown a child class, if it turns out bad, but a child class cannot disown its parent class, because it owes it more than it could ever repay — and, in particular, owes it its own existence.</blockquote>
             <section class="testo">
                 <!-- Etica Nicomachea 1163b -->
 
-<p>L’ereditariaretà, ovvero la possibilità di creare delle genealogie di classi, è la caratteristica principale del C++.</p>
+<p>Inheritance, that is, the ability to create genealogies of classes, is C++’s main distinguishing feature.</p>
 
-<p>Come abbiamo visto nella <a href="/en/classi-oggetti#dottrina" class="xref">lezione precedente</a>, una ipotetica classe <code>Pesce</code> dovrà avere attributi differenti a seconda dell’utilizzo che se ne deve fare.
-In un linguaggio come il <em>C</em>, che non permette l’ereditariaretà, quindi, si dovranno prevedere due strutture di dati differenti per ciascun caso:</p>
+<p>As we saw in the <a href="/en/classi-oggetti#dottrina" class="xref">previous lesson</a>, a hypothetical <code>Pesce</code> (Fish) class would need different attributes depending on what it’s being used for.
+In a language like <em>C</em>, which doesn’t allow inheritance, you’d therefore have to set up two different data structures for each case:</p>
 
 <pre><code>enum Acqua  { dolce, salata };
 enum Sesso  { maschio, femmina };
@@ -109,14 +109,14 @@ struct  PesceAcquario {
     ...
 };
 </code></pre>
-<p>e funzioni differenti per la gestione dei dati:</p>
+<p>and different functions to manage the data:</p>
 
 <pre><code>void gestisciPesceAlimentare(struct PesceAlimentare&amp; pesce);
-void gestisciPesceAcquario(struct PesceEcologista&amp; pesce);
+void gestisciPesceAcquario(struct PesceAcquario&amp; pesce);
 </code></pre>
 
-<p>Questo vuol dire che se hai già scritto (e verificato, corretto e collaudato) un programma di gestione per un pescivendolo, per poterlo trasformare in un programma di gestione per la vendita di pesci da acquario, dovrai riscrivere (e ri-verificare, ri-correggere e collaudare) tutto il codice, anche se parte dei dati da considerare sono gli stessi.<br />
-L’ereditariaretà, al contrario, ti permette di isolare in una classe le caratteristiche comuni a tutti e due i contesti e di <em>derivare</em> da questa classe di base due classi specializzate:</p>
+<p>This means that if you’ve already written (and verified, fixed, and tested) a management program for a fishmonger, to turn it into a management program for selling aquarium fish, you’d have to rewrite (and re-verify, re-fix, and re-test) all the code, even though part of the data involved is the same.
+Inheritance, by contrast, lets you isolate the characteristics common to both contexts into a single class, and <em>derive</em> from this base class two specialized classes:</p>
 
 <pre><code>/** 
  * @file ereditarieta-singola.cpp
@@ -219,11 +219,11 @@ public:
 
 </code></pre>
 
-<p>Questo approccio ha due lati positivi: il primo è che non sarà necessario ripetere le fasi di test, debug e collaudo per le funzioni comuni ai due sistemi, perché saranno state già verificate durante lo sviluppo del primo sistema; il secondo è che, riutilizzando parte del codice, sarà possibile identificare e correggere eventuali errori sfuggiti alla prima fase di test o migliorare il comportamento delle funzioni comuni, con benefici per entrambi i sistemi.</p>
+<p>This approach has two upsides: the first is that you won’t need to repeat the testing, debugging, and validation phases for the functions common to both systems, since they’ll already have been verified during the development of the first system; the second is that, by reusing part of the code, you’ll be able to spot and fix any bugs that slipped through the first round of testing, or improve the behavior of the shared functions, benefiting both systems.</p>
 
 <hr id="tipi" />
 
-<p>L’ereditarietà, nel C++, può essere o <em>singola</em> o <em>multipla</em>, a seconda che la nuova classe erediti le caratteristiche da una o più classi preesistenti:</p>
+<p>In C++, inheritance can be either <em>single</em> or <em>multiple</em>, depending on whether the new class inherits its characteristics from one or more pre-existing classes:</p>
 
 <pre><code>class Figlio : public Mamma
 {
@@ -236,7 +236,7 @@ class Figlio : public Mamma, private Papa
 };
 </code></pre>
 
-<p>Al contrario, non è permesso (né sensato) che una classe erediti due volte dalla stessa classe base:</p>
+<p>By contrast, it’s not allowed (nor would it make sense) for a class to inherit twice from the same base class:</p>
 
 <pre><code>class Errore : public Mamma, public Mamma
 {
@@ -244,15 +244,15 @@ class Figlio : public Mamma, private Papa
 };
 </code></pre>
 
-<p>Le classi <code>Mamma</code> e <code>Papa</code> possono essere definite: <em>classi base</em> o <em>sottoclassi</em> o <em>classi fondamentali</em> o <em>sotto-tipi</em>; la classe <code>Figlio</code> può essere chiamata o <em>classe derivata</em> o <em>superclasse</em> o <em>supertipo</em>.<br />
-L’istruzione:</p>
+<p>The <code>Mamma</code> and <code>Papa</code> classes can be called <em>base classes</em>, <em>subclasses</em>, <em>fundamental classes</em>, or <em>subtypes</em>; the <code>Figlio</code> class can be called either the <em>derived class</em>, the <em>superclass</em>, or the <em>supertype</em>.
+The instruction:</p>
 
 <pre><code>class PesceAlimentare : public Pesce {
     ...
 };
 </code></pre>
-<p>dichiara la classe <code>PesceAlimentare</code> come classe derivata dalla classe <code>Pesce</code>.
-Lo <a href="/en/classi-oggetti#specificatori-accesso" class="xref">specificatore di accesso</a> fra i nomi delle due classi definisce la visibilità dei dati della classe base all’interno della classe figlia:</p>
+<p>declares the <code>PesceAlimentare</code> class as derived from the <code>Pesce</code> class.
+The <a href="/en/classi-oggetti#specificatori-accesso" class="xref">access specifier</a> between the two class names defines the visibility of the base class’s data inside the child class:</p>
 
 <pre><code>class B : public A
 {
@@ -275,7 +275,7 @@ class B : private A
 
 </code></pre>
 
-<p>In mancanza di un qualificatore di accesso, il compilatore considera privati tutti i dati di una classe dichiarata con la parola chiave <code>class</code> e pubblici tutti i dati di una classe dichiarata con la parola chiave <code>struct</code>:</p>
+<p>In the absence of an access qualifier, the compiler treats all the data of a class declared with the <code>class</code> keyword as private, and all the data of a class declared with the <code>struct</code> keyword as public:</p>
 
 <pre><code>/** 
  * @file ereditarieta-accesso.cpp
@@ -306,7 +306,7 @@ void funz(Figlia&amp; figlia, Figlio&amp; figlio)
 
 </code></pre>
 
-<p>Se compili questo codice, ottieni un messaggio di errore:</p>
+<p>If you compile this code, you get an error message:</p>
 
 <pre><code>&gt; g++ src/cpp/ereditarieta-accesso.cpp -c -o src/out/esempio
 src/cpp/ereditarieta-accesso.cpp:25:5: error: cannot cast 'Figlio'
@@ -335,7 +335,7 @@ src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared
 
 <hr id="costruttore" />
 
-<p>Questa è la dichiarazione del costruttore della classe derivata <code>PesceAlimentare</code>:</p>
+<p>This is the declaration of the derived class <code>PesceAlimentare</code>’s constructor:</p>
 
 <pre><code>PesceAlimentare(Sesso sesso, float prezzo, const char* specie)
 : Pesce(sesso, prezzo, specie) {
@@ -343,12 +343,12 @@ src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared
 }
 </code></pre>
 
-<p>La seconda linea è la <i id="lista-inizializzazione">lista di inizializzazione</i> della classe e contiene i costruttori delle classi base.
-Quando si instanzia un oggetto di classe derivata, il sistema richiama per prima cosa i costruttori delle classi base e poi quello della classe figlia.
-In questo modo, il costruttore della classe derivata ha la certezza di lavorare su dei dati membro correttamente inizializzati.<br />
-L’utilizzo del costruttore delle classi base per l’inizializzazione dei dati comuni è necessario per due motivi: il primo è che parte dei dati delle classe base potrebbero essere <code>private</code> e quindi inaccessibili alla classe derivata; il secondo motivo è che in questo modo si ottiene un <a href="/en/struttura-dei-programmi#coupling" class="xref">low coupling</a> fra classe base e classe derivata e, se  si dovesse modificare l’implementazione interna del costruttore della classe base (mantenendo invariata l’interfaccia), non ci sarebbe bisogno di dover modificare il codice delle sue classi de­rivate.<br />
-L’ordine in cui i costruttori delle classi base sono chiamati durante l’inizializzazione dell’oggetto dipende dall’ordine in cui compaiono nel costruttore della classe figlia.
-Lo vediamo con un altro esempio, un po’ più complesso del precedente, che mostra anche il funzionamento dei dati e delle funzioni membro statiche:</p>
+<p>The second line is the class’s <i id="lista-inizializzazione">initialization list</i>, and contains the constructors of the base classes.
+When you instantiate an object of a derived class, the system first calls the base classes’ constructors, then the child class’s own constructor.
+This way, the derived class’s constructor is guaranteed to be working on correctly initialized member data.
+Using the base class’s constructor to initialize shared data is necessary for two reasons: the first is that some of the base class’s data might be <code>private</code>, and therefore inaccessible to the derived class; the second is that this achieves <a href="/en/struttura-dei-programmi#coupling" class="xref">low coupling</a> between the base class and the derived class, so that if the internal implementation of the base class’s constructor ever needed to change (while keeping the interface unchanged), the code of its derived classes wouldn’t need to change too.
+The order in which the base classes’ constructors are called during the object’s initialization depends on the order in which they appear in the child class’s constructor.
+Let’s look at another example, a bit more complex than the previous one, which also shows how static member data and functions work:</p>
 
 <pre><code>/** 
  * @file ereditarieta-multipla.cpp
@@ -548,8 +548,8 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>La differenza con il codice precedente è che in questo caso abbiamo isolato i dati relativi al costo del pesce in una classe separata e che le classi derivate ereditano non più da una classe base, ma da due.<br />
-Se compili ed esegui questo codice, ottieni:</p>
+<p>The difference from the previous code is that in this case we’ve isolated the data related to the fish’s cost into a separate class, and the derived classes now inherit not from one base class, but from two.
+If you compile and run this code, you get:</p>
 
 <pre><code>&gt; g++ src/cpp/ereditarieta-multipla.cpp -o src/out/esempio
 &gt; src/out/esempio                                         
@@ -572,8 +572,8 @@ distruttore Articolo
 distruttore Pesce
 </code></pre>
 
-<p>Come vedi, l’ordine di chiamata dei costruttori delle classi base rispecchia quello in cui sono elencate nella lista di inizializzazione, mentre quello dei distruttori è invertito.
-Se il costruttore della classe derivata non specifica un ordine di chiamata per i costruttori delle classi base, l’ordine di chiamata è dato dall’ordine in cui le classi base compaiono nella dichiarazione della classe figlio:</p>
+<p>As you can see, the order in which the base classes’ constructors are called mirrors the order in which they’re listed in the initialization list, while the order of the destructors is reversed.
+If the derived class’s constructor doesn’t specify an order for calling the base classes’ constructors, the calling order is given by the order in which the base classes appear in the child class’s declaration:</p>
 
 <pre><code>/** 
  * @file ereditarieta-ordine-costruttori.cpp
@@ -627,7 +627,7 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>Se compili ed esegui questo codice, ottieni:</p>
+<p>If you compile and run this code, you get:</p>
 
 <pre><code>&gt; g++ src/cpp/ereditarieta-ordine-costruttori.cpp -o src/out/esempio
 &gt; src/out/esempio                                                   
@@ -639,24 +639,24 @@ costruttore Padre
 costruttore Figlia
 </code></pre>
 
-<p>Un’altra cosa da notare, in questo codice, è che la funzione <code>getTipo</code> è presente sia nella classe base <code>Articolo</code> che nelle due classi derivate <code>PesceAlimentare</code> e <code>PesceAcquario</code>.
-Per questo motivo, quando si richiama <code>getTipo</code> da un’istanza delle due classi derivate, come in:</p>
+<p>Another thing to notice, in this code, is that the <code>getTipo</code> function is present both in the <code>Articolo</code> base class and in the two derived classes <code>PesceAlimentare</code> and <code>PesceAcquario</code>.
+For this reason, when you call <code>getTipo</code> from an instance of either derived class, as in:</p>
 
 <pre><code>cout &lt;&lt;  pesce1.getTipo() &lt;&lt; ": " &lt;&lt; pesce1.getSpecie()
 cout &lt;&lt;  pesce2.getTipo() &lt;&lt; ": " &lt;&lt; pesce2.getSpecie()
 </code></pre>
 
-<p>il valore tornato è quello della funzione della classe figlia.
-Per ottenere il valore della classe base, dobbiamo specificarne il nome nell’istruzione, come in:</p>
+<p>the value returned is that of the child class’s function.
+To get the base class’s value, we have to specify its name in the instruction, as in:</p>
 
 <pre><code>cout &lt;&lt; "classe base: " &lt;&lt; pesce1.Articolo::getTipo() &lt;&lt; endl;
 </code></pre>
 
 <hr id="classi-virtuali" />
 
-<p>Complichiamo un po’ le cose.
-Immagina che una classe <code>Figlio</code> derivi dalle classi <code>Madre</code> e <code>Padre</code>, a loro volta derivate dalla classe <code>Persona</code>.
-Se chiamassimo una funzione della classe <code>Persona</code> da un oggetto di classe <code>Figlio</code>, quale verrebbe chiamata, quella che ha ereditato da <code>Padre</code> o quella che ha ereditato da <code>Madre</code>?</p>
+<p>Let’s complicate things a bit.
+Imagine a <code>Figlio</code> class deriving from the <code>Madre</code> and <code>Padre</code> classes, which in turn derive from the <code>Persona</code> class.
+If we called a function of the <code>Persona</code> class from an object of class <code>Figlio</code>, which one would get called — the one inherited from <code>Padre</code>, or the one inherited from <code>Madre</code>?</p>
 
 <pre><code>/** 
  * @file ereditarieta-classi-base-virtuali.cpp
@@ -693,7 +693,7 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>In realtà, nessuna delle due, perché questo codice genera un errore:</p>
+<p>Actually, neither, because this code produces an error:</p>
 
 <pre><code>src/cpp/ereditarieta-classi-base-virtuali.cpp:30:11:
 error: non-static member 'getClass' found in multiple base-class
@@ -708,7 +708,7 @@ note: member found by ambiguous name lookup
          ^
 1 error generated.
 </code></pre>
-<p>Puoi evitare questo genere di problemi dichiarando la classe <code>Persona</code> come classe base <em>virtuale</em> delle classi <code>Madre</code> e <code>Padre</code>:</p>
+<p>You can avoid this kind of problem by declaring the <code>Persona</code> class as a <em>virtual</em> base class of both <code>Madre</code> and <code>Padre</code>:</p>
 
 <pre><code>class Padre : public virtual Persona {
 };
@@ -717,44 +717,44 @@ class Madre : virtual public Persona {
 };
 </code></pre>
 
-<p>In questo modo, la classe <code>Figlio</code> erediterà tutti i membri propri delle  classi <code>Madre</code> e <code>Padre</code>, ma solo una copia dei metodi e degli attributi della classe virtuale <code>Persona</code> che entrambi contengono.</p>
+<p>This way, the <code>Figlio</code> class will inherit all the members specific to the <code>Madre</code> and <code>Padre</code> classes, but only a single copy of the methods and attributes of the virtual <code>Persona</code> class that both of them contain.</p>
 
 <hr id="classi-puntatori" />
 
-<p>Come ti ho detto, definire una nuova classe equivale a definire un nuovo tipo di dato, che sarà considerato dal compilatore alla stessa stregua dei dati primitivi del linguaggio.
-Questo vuol dire, per esempio, che se vogliamo possiamo creare un array di oggetti di classe <code>Pesce</code> così come creeremmo un array di <code>int</code> o di <code>char</code>:</p>
+<p>As I’ve told you, defining a new class is equivalent to defining a new data type, which the compiler will treat the same way as the language’s primitive data types.
+This means, for example, that if we want, we can create an array of objects of class <code>Pesce</code> the same way we’d create an array of <code>int</code> or <code>char</code>:</p>
 
 <pre><code>/** Array di oggetti di classe Pesce */
 Pesce acquario[10];
 </code></pre>
 
-<p>C’è solo una limitazione: siccome tutti gli elementi di un array devono essere inizializzati al momento della sua creazione, la classe deve avere un costrut­tore di default.
-Se decidessimo di creare un array di oggetti della classe <code>Punto</code> che abbiamo visto <a href="/en/classi-oggetti#attributi-metodi" class="xref">nella scorsa lezione</a>, gli elementi dell’array dovranno essere inizializzati esplicitamente:</p>
+<p>There’s only one limitation: since every element of an array must be initialized when it’s created, the class must have a default constructor.
+If we decided to create an array of objects of the <code>Punto</code> class we saw <a href="/en/classi-oggetti#attributi-metodi" class="xref">in the last lesson</a>, the array’s elements would have to be initialized explicitly:</p>
 
 <pre><code>Punto spline[3] = { Punto(3,5), Punto(0,0), Punto(7,7) } ;
 </code></pre>
 
-<p>Possiamo aggiungere a un array di oggetti di una classe base anche degli oggetti appart­enenti alle sue classi derivate:</p>
+<p>We can also add objects belonging to a base class’s derived classes into an array of objects of that base class:</p>
 
 <pre><code>Persona famiglia[3] = { Padre(), Madre(), Figlio() } ;
 </code></pre>
 
-<p>Al contrario, gli oggetti della classe base non possono comparire in array di oggetti della classe derivata e un’istruzione come quella qui sotto darà errore:</p>
+<p>Conversely, base class objects cannot appear in an array of objects of a derived class, and an instruction like the one below will produce an error:</p>
 
 <pre><code>Figlio classe[4] = { Figlio(), Figlio(), Persona(), Figlio() } ;
 </code></pre>
 
-<p>Così come, negli scacchi, la regina può muovere come una torre, ma una torre non può muoversi come una regina, un oggetto di tipo <code>Persona</code> non contiene tutta l’informazione relativa a un oggetto di tipo <code>Figlio</code> e quindi non può essere usato in sua sostituzione.<br />
-Lo stesso discorso fatto per gli array, vale anche per i puntatori.
-A un puntatore a oggetti di tipo <code>Persona</code> può essere assegnato un oggetto di tipo <code>Figlio</code>, mentre l’operazione inversa causerà un errore di compilazione:</p>
+<p>Just as, in chess, the queen can move like a rook, but a rook cannot move like a queen, an object of type <code>Persona</code> doesn’t contain all the information of an object of type <code>Figlio</code>, and so cannot be used in its place.
+The same reasoning that applies to arrays also applies to pointers.
+A pointer to objects of type <code>Persona</code> can be assigned an object of type <code>Figlio</code>, while the reverse operation will cause a compile error:</p>
 
 <pre><code>Persona *ptrP = new Figlio() ;  // OK
 Figlio  *ptrF = new Persona();  // ERRORE!
 </code></pre>
 
-<p>Il compilatore è in grado di capire la relazione che c’è fra una classe derivata e la sua classe base e può quindi stabilire un cammino di coercizione dal tipo dell’oggetto a quello del puntatore, ma non ha modo di accedere ai membri o alle funzioni di una classe derivata da un oggetto di classe base. <br />
-Abbiamo detto <a href="/en/tipi-di-dato#puntatori" class="xref">a suo tempo</a> che i puntatori sono come delle maschere che isolano determinate sequenze di bit, la cui dimensione varia a seconda del tipo del puntatore.
-Lo stesso discorso vale anche per le classi: un puntatore di classe base associato a un oggetto di classe derivata “vedrà” solo i dati e le funzioni della sua classe:</p>
+<p>The compiler is able to understand the relationship between a derived class and its base class, and can therefore establish a coercion path from the object’s type to the pointer’s type, but it has no way of accessing the members or functions of a derived class from a base class object.
+We said <a href="/en/tipi-di-dato#puntatori" class="xref">earlier on</a> that pointers are like masks that isolate certain sequences of bits, whose size varies depending on the pointer’s type.
+The same reasoning applies to classes too: a base-class pointer associated with a derived-class object will only “see” the data and functions of its own class:</p>
 
 <pre><code>/** 
  * @file ereditarieta-puntatori.cpp
@@ -791,7 +791,7 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>Se compili ed esegui questo codice, ottieni:</p>
+<p>If you compile and run this code, you get:</p>
 
 <pre><code>&gt; g++ src/cpp/ereditarieta-puntatori.cpp -o src/out/esempio
 &gt; src/out/esempio
@@ -799,8 +799,8 @@ Madre
 Persona
 </code></pre>
 
-<p>Non c’è nessun errore: la funzione <code>getClass()</code> che interviene nella seconda istruzione di output non è, come ci si aspettava, quella della classe <code>Madre</code>, a cui l’oggetto appartiene, bensì quella della classe base, che è l’unica a cui il programma può accedere tramite un puntatore a oggetti di tipo <code>Persona</code>.<br />
-Questo comportamento (corretto) del programma diventa particolarmente rischioso se la classe ha un distruttore:</p>
+<p>There’s no error: the <code>getClass()</code> function invoked in the second output instruction isn’t, as you might expect, that of the <code>Madre</code> class, to which the object belongs, but that of the base class, which is the only one the program can access through a pointer to objects of type <code>Persona</code>.
+This (correct) behavior of the program becomes particularly risky if the class has a destructor:</p>
 
 <pre><code>/** 
  * @file ereditarieta-distruttori.cpp
@@ -849,11 +849,11 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>Nessun compilatore ti darà mai errore per questo codice, ma il distruttore chiamato, in tutti e tre i casi, sarà quello della classe base <code>Padre</code>, con conseguenze che spaziano dal problematico al disastroso.</p>
+<p>No compiler will ever give you an error for this code, but the destructor called, in all three cases, will be that of the base class <code>Padre</code>, with consequences ranging from problematic to disastrous.</p>
 
 <hr id="funzioni-virtuali" />
 
-<p>Per far sì che una funzione membro di una classe derivata possa essere richiamata anche da puntatori a classi base, la si deve dichiarare come <code>virtual</code>.</p>
+<p>For a member function of a derived class to be callable even through pointers to base classes, it must be declared <code>virtual</code>.</p>
 
 <pre><code>/** 
  * @file ereditarieta-funzioni-virtuali.cpp
@@ -888,7 +888,7 @@ int main(int argc, char** argv)
 }
 
 </code></pre>
-<p>L’output di questo codice è:</p>
+<p>The output of this code is:</p>
 
 <pre><code>&gt; g++ src/cpp/ereditarieta-funzioni-virtuali.cpp \                 
     -o src/out/esempio
@@ -897,49 +897,49 @@ Madre
 Madre
 </code></pre>
 
-<p>Le <em>funzioni virtuali</em> sono delle funzioni che vengono richiamate in base alla classe dell’oggetto cui appartengono, indipendentemente dal tipo del riferimento o del puntatore che si utilizza.
-Ciò è reso possibile da un meccanismo chiamato <em>binding dinamico</em> o <em>late binding</em>, che consiste nel posticipare il <em>linking</em> delle funzioni al momento dell’esecuzione del programma, contrariamente a quanto avviene per le funzioni membro normali, che sono collegate al codice in fase di compilazione — il cosiddetto <em>early binding</em>.<br />
-In pratica, la cosa funziona così: gli indirizzi di tutte le  funzioni dichiarate come <code>virtual</code> vengono memorizzati in una tabella interna e solo quando una di queste funzioni viene richiamata dal programma, il sistema ne cerca l’indirizzo, effettuandone poi il <em>linking</em> in tempo reale.
-Capisci da te che l’utilizzo delle funzioni virtuali, oltre a comportare un leg­gero ritardo nel tempo di esecuzione del programma, visto che l’indirizzo della funzione va ben cercato, impegna anche parte delle risorse del sistema per la memorizzazione della tabella degli indirizzi, quindi, come per tutte le cose, è bene non abusarne. <br />
-Le regole che riguardano l’utilizzo delle funzioni virtuali sono:</p>
+<p><em>Virtual functions</em> are functions that get called based on the class of the object they belong to, regardless of the type of the reference or pointer being used.
+This is made possible by a mechanism called <em>dynamic binding</em> or <em>late binding</em>, which consists of postponing the <em>linking</em> of functions until the program actually runs, unlike what happens with normal member functions, which are linked to the code at compile time — so-called <em>early binding</em>.
+In practice, it works like this: the addresses of all functions declared <code>virtual</code> are stored in an internal table, and only when one of these functions is called by the program does the system look up its address, performing the <em>linking</em> in real time.
+You can see for yourself that using virtual functions, besides causing a slight delay in the program’s execution time, since the function’s address has to be looked up, also uses up some of the system’s resources to store the address table — so, as with everything, it’s best not to overdo it.
+The rules governing the use of virtual functions are:</p>
 
 <ul>
   <li>
-    <p>le versioni delle funzioni delle classi derivate debbono avere il medesi­mo tipo di ritorno e gli stessi parametri della versione della classe base: se non è così, il compilatore considera differenti le due funzioni e l’effetto “virtuale” si perde;</p>
+    <p>the versions of the functions in derived classes must have the same return type and the same parameters as the base class’s version: if not, the compiler treats the two functions as different, and the “virtual” effect is lost;</p>
   </li>
   <li>
-    <p>una funzione <code>virtual</code> non può essere anche <code>static</code>: il concetto stesso di funzione virtuale prevede un collegamento fra un oggetto e una funzi­o­ne; le funzioni statiche sono indipendenti dagli oggetti della loro classe, quindi le due cose sono incompatibili;</p>
+    <p>a <code>virtual</code> function cannot also be <code>static</code>: the very concept of a virtual function requires a link between an object and a function; static functions are independent of the objects of their class, so the two are incompatible;</p>
   </li>
   <li>
-    <p>una funzione può essere dichiarata <code>virtual</code> solo nella classe base: non è possibile effettuare la dichiarazione in una classe derivata;</p>
+    <p>a function can only be declared <code>virtual</code> in the base class: it’s not possible to make that declaration in a derived class;</p>
   </li>
   <li>
-    <p>si può ripetere la specifica <code>virtual</code> anche nelle classi derivate, ma non è necessario: lo vedi nell’esempio, dove la seconda versione della funzione <code>getClass()</code> non ha la parola chiave <code>virtual</code> davanti;</p>
+    <p>you can repeat the <code>virtual</code> specifier in derived classes too, but it isn’t necessary: you can see this in the example, where the second version of the <code>getClass()</code> function doesn’t have the <code>virtual</code> keyword in front of it;</p>
   </li>
   <li>
-    <p>l’utilizzo dell’operatore di risoluzione della portata annulla inevitabilmente l’effetto delle funzioni virtuali.</p>
+    <p>using the scope resolution operator inevitably cancels out the effect of virtual functions.</p>
   </li>
 </ul>
 
 <hr id="classi-astratte" />
 
-<p>È possibile dichiarare una funzione virtuale nella classe base senza definirne il comportamento, se si utilizza la sintassi:</p>
+<p>It’s possible to declare a virtual function in the base class without defining its behavior, using the syntax:</p>
 
 <pre><code>virtual &lt;tipo&gt; nomefunzione([argomenti]) = 0 ;
 </code></pre>
 
-<p>Questo tipo di funzioni si chiamano <i id="funzioni-virtuali-pure">funzioni virtuali pure</i> e rendono la classe a cui appartengono una <em>classe astratta</em>.<br />
-Le classi astratte sono delle classi generiche che possono essere utilizzate come capostipiti per una discendenza di classi specializzate, ma che non possono essere utiliz­zate direttamente.
-Le regole che si applicano alle classi astratte sono:</p>
+<p>This kind of function is called a <i id="funzioni-virtuali-pure">pure virtual function</i>, and it makes the class it belongs to an <em>abstract class</em>.
+Abstract classes are generic classes that can be used as ancestors for a lineage of specialized classes, but that cannot be used directly.
+The rules that apply to abstract classes are:</p>
 
 <ul>
-  <li>viene considerata astratta qualunque classe che abbia almeno una funzi­one virtuale pura;</li>
-  <li>le funzioni virtuali pure sono ereditate come dalle classi derivate come funzioni virtuali pure, quindi, se una classe derivata non ridefinisce una funzione virtuale pura della sua classe base sarà considerata dal compilatore come una classe as­tratta;</li>
-  <li>non si possono utilizzare classi astratte come argomenti o come tipi di ritorno di funzioni;</li>
-  <li>le classi astratte non possono essere il tipo di un oggetto o di una con­versione esplicita.</li>
+  <li>any class with at least one pure virtual function is considered abstract;</li>
+  <li>pure virtual functions are inherited by derived classes as pure virtual functions, so, if a derived class doesn’t redefine a pure virtual function of its base class, the compiler will treat it as an abstract class too;</li>
+  <li>abstract classes cannot be used as function arguments or return types;</li>
+  <li>abstract classes cannot be the type of an object or of an explicit conversion.</li>
 </ul>
 
-<p>Data una classe astratta <code>Mammifero</code>, le istruzioni seguenti causerebbero degli errori di compilazione:</p>
+<p>Given an abstract class <code>Mammifero</code>, the following instructions would cause compile errors:</p>
 
 <pre><code>void funz(Mammifero m);  // non possono essere argomenti..
 Mammifero funz();        // né valori di ritorno..
@@ -947,7 +947,7 @@ punt = (Mammifero*)ptr;  // né il tipo di una conversione.
 Mammifero pollo;         // né il tipo di un oggetto
 </code></pre>
 
-<p>È possibile, però, dichiarare un puntatore o una <em>reference</em> a una classe astratta e utilizzarli per creare degli array o delle code che possano essere utilizzati con istanze di classi diverse:</p>
+<p>It’s possible, though, to declare a pointer or a <em>reference</em> to an abstract class, and use them to create arrays or queues that can be used with instances of different classes:</p>
 
 <pre><code>/** 
  * @file ereditarieta-classi-astratte.cpp
@@ -1029,7 +1029,7 @@ int main()
 
 </code></pre>
 
-<p>Se compili ed esegui questo codice, otterrai:</p>
+<p>If you compile and run this code, you’ll get:</p>
 
 <pre><code>&gt; g++ src/cpp/ereditarieta-classi-astratte.cpp -o src/out/esempio
 &gt; src/out/esempio                                                
@@ -1040,9 +1040,9 @@ cane
 femmina
 </code></pre>
 
-<p>La classe base <code>Mammifero</code> definisce solo un’astrazione, lasciando alle sue classi derivate il compito di definire attributi e metodi specifici per ciascuna specie particolare.
-Allo stesso modo, la funzione <code>getSpecie</code> definisce solo un concetto, non un algoritmo; saranno le singole classi deri­vate a ridefinire il comportamento della funzione, adattandolo alle proprie esigen­ze.<br />
-È possibile, comunque, definire un comporta­mento anche per le funzioni virtuali pure; per la classe <code>Mammifero</code> potrebbe essere qualcosa di simile:</p>
+<p>The <code>Mammifero</code> base class defines only an abstraction, leaving it to its derived classes to define attributes and methods specific to each particular species.
+In the same way, the <code>getSpecie</code> function defines only a concept, not an algorithm; it’s up to the individual derived classes to redefine the function’s behavior, adapting it to their own needs.
+It is possible, however, to also define a behavior for pure virtual functions; for the <code>Mammifero</code> class it might look something like this:</p>
 
 <pre><code>inline void Mammifero::getSpecie()
 {
@@ -1050,15 +1050,15 @@ Allo stesso modo, la funzione <code>getSpecie</code> definisce solo un concetto,
 }
 </code></pre>
 
-<p>Non potendo esistere oggetti di classe <code>Mammifero</code>, però, la versione base della funzione <code>getSpecie</code> potrebbe essere richiamata solo facendo uso dell’operatore <code>::</code></p>
+<p>Since objects of class <code>Mammifero</code> cannot exist, though, the base version of the <code>getSpecie</code> function could only be called by making use of the <code>::</code> operator:</p>
 
 <pre><code>mioCane.Mammifero::getSpecie();
 cane.Mammifero::getSpecie();
 </code></pre>
 <hr id="dottrina" />
 
-<p>Buona parte degli esempii e delle cose che ti ho detto in questa lezione le ho prese dal manuale di programmazione in C++ che il Maestro Canaro scrisse nel Secolo scorso, modificandoli per adattarli a questo contesto. <br />
-L’esempio originale delle funzioni virtuali, per esempio, era così:</p>
+<p>Most of the examples and things I’ve told you in this lesson I took from the C++ programming manual Master Canaro wrote in the last Century, adapting them to this context.
+The original example of virtual functions, for instance, looked like this:</p>
 
 <pre><code>/////////////////////////////////////////////////////////////
 //
@@ -1095,7 +1095,7 @@ void main()
 
 </code></pre>
 
-<p>Essendo un codice scritto per l’ambiente Microsoft del 1995 <!-- con i nomi dei file di otto caratteri al massimo: sembra di parlare della preistoria.. -->, se provassi a compilarlo adesso, con il compilatore GNU, otterresti una lunga serie di errori:</p>
+<p>Being code written for the Microsoft environment of 1995<!-- con i nomi dei file di otto caratteri al massimo: sembra di parlare della preistoria.. -->, if you tried to compile it now, with the GNU compiler, you’d get a long series of errors:</p>
 
 <pre><code>&gt; g++ src/cpp/ereditarieta-codice-canaro.cpp -o src/out/esempio
 src/cpp/ereditarieta-codice-canaro.cpp:8:10:
@@ -1131,89 +1131,88 @@ void main()
 ^~~~
 </code></pre>
 
-<p>Il valore didattico di questo codice, però, è immutato.
-Il <em>Karma</em> dei due oggetti è determinato dalla dichiarazione delle loro classi, che non gli lascia altra possibilità che fare ciò per cui sono stati creati.
-L’output delle funzioni, lo stile dei commenti o il fatto che in un caso le classi si chiamino <code>A</code> e <code>B</code>, mentre nell’altro si chiamano <code>Persona</code> e <code>Madre</code>, sono solo differenze formali che non influiscono sul <em>Dharma</em> dell’esempio, che è quello di illustrare il comportamento delle funzioni virtuali.
-Se in vece del nuovo codice io avessi usato quello originale del Maestro Canaro, tu avresti capito ugualmente; forse anche meglio, perché il nuovo codice sembra migliore a me, ma non è detto che lo sia anche per te.<br />
-Lo stesso principio vale anche per l’Universo.
-Così come gli oggetti all’interno di uno stesso programma occupano posizioni diverse in memoria, a seconda del momento in cui il programma viene eseguito, gli esseri senzienti possono manifestarsi in luoghi e tempi differenti nei diversi cicli di esistenza.<br />
-Ciascuno di noi è un orchestrale a cui è stata assegnata una partitura.
-Possiamo suonarla più o meno bene o non suonarla affatto, nascondendoci nel pieno d’orchestra, ma il nostro valore è solo — permettimi il gioco di parole — strumentale, perché ciò che conta non siamo noi: è la musica; e questa, non è né la prima né l’ultima volta che la suoniamo.  <br />
-Io, qui, ora, con il mio naso la mia bocca e i miei capelli, ti sto insegnando ciò che so del C’hi++ e tu, che hai il tuo naso la tua bocca e i tuoi capelli, lo stai scrivendo nel tuo libro, ma la stessa informazione che stiamo trasmettendo e perpetuando la potrebbero trasmettere e perpetuare anche persone diverse in un altro tempo o in un altro Pianeta in un altro ciclo dell’Universo.
-Molto probabilmente abbiamo già avuto questa conversazione in passato e la faremo ancora in futuro.
-Forse non useremo le stesse parole; forse avremo nomi differenti, forse tu sarai il maestro e io l’allievo, ma la nostra amicizia sarà la stessa, perché quella fa parte della dichiarazione della nostra classe; non può e non deve mutare.</p>
+<p>The teaching value of this code, though, is unchanged.
+The <em>Karma</em> of the two objects is determined by their classes’ declaration, which leaves them no choice but to do what they were created to do.
+The output of the functions, the style of the comments, or the fact that in one case the classes are called <code>A</code> and <code>B</code>, while in the other they’re called <code>Persona</code> and <code>Madre</code>, are just formal differences that don’t affect the example’s <em>Dharma</em>, which is to illustrate the behavior of virtual functions.
+If, instead of the new code, I had used Master Canaro’s original, you would have understood it just as well; maybe even better, because the new code seems better to me, but that doesn’t mean it is to you too.
+The same principle also applies to the Universe.
+Just as objects within the same program occupy different positions in memory depending on when the program is run, sentient beings can manifest in different places and times across different cycles of existence.
+Each of us is an orchestra player who has been handed a score.
+We can play it more or less well, or not play it at all, hiding within the swell of the orchestra, but our worth is only — forgive the pun — instrumental, because what matters isn’t us: it’s the music; and this isn’t the first, nor will it be the last, time we play it.
+I, here, now, with my nose, my mouth, and my hair, am teaching you what I know about C’hi++, and you, with your own nose, your own mouth, and your own hair, are writing it down in your book, but the very same information we’re passing on and perpetuating could be passed on and perpetuated by entirely different people, at another time, or on another Planet, in another cycle of the Universe.
+In all likelihood we’ve already had this exact conversation in the past, and we’ll have it again in the future.
+Perhaps we won’t use the same words; perhaps we’ll have different names, perhaps you’ll be the master and I the disciple, but our friendship will be the same, because that’s part of our class’s declaration; it cannot, and must not, change.</p>
 
 <blockquote>
-  <p>Le figure mitiche, è vero, nascono e trapassano, ma non proprio come noi mortali. Hanno bisogno di denominazioni caratteristiche, come quella di «Re nel Passato e nel Futuro». Sono esistite in passato? Allora sono esistite ancor prima, o esisteranno ancora, con altri nomi, sotto altri aspetti, proprio come il cielo ci riporta in eterno le sue configurazioni. Se si cercasse di definirle con precisione come persone e cose, sicuramente svanirebbero ai nostri occhi, quanto i frutti di una fantasia malata. Ma se si rispetta la loro vera natura, riveleranno questa natura come funzioni. <a class="nota" href="/en/note#fn-miti" id="miti">1</a></p>
+  <p>Mythical figures, it is true, are born and pass away, but not quite as we mortals do. They need characteristic names, like that of “The Once and Future King”. Did they exist in the past? Then they existed even earlier, or will exist again, under other names, in other guises, just as the sky brings back its configurations to us eternally. If one tried to define them precisely as persons and things, they would surely vanish before our eyes, like the fruits of a sick fancy. But if their true nature is respected, they will reveal that nature as functions. <a class="nota" href="/en/note#fn-miti" id="miti">1</a></p>
 </blockquote>
 
-<p>Ogni epoca ha i suoi eroi e i suoi demoni; la memoria delle loro battaglie, genera il mito.<br />
-La Scienza è transeunte: abbiamo poche notizie riguardo le conoscenze scientifiche dei popoli del passato<!-- esempi? -->, mentre conosciamo bene i loro miti, perché il mito è immortale; la Scienza no, a meno che non sia assorbita dal mito e trasformata in leggenda o superstizione.
-Il Maestro Canaro, per esempio, era convinto che la superstizione relativa ai numeri 13 e 17 fosse nata dall’osservazione del comportamento delle locuste, <!-- il nome corretto, dice Dawkins, è: “cicale periodiche”, ma, per chiarezza, preferisco utilizzare quello più noto --> che, a seconda della specie, passano o tredici o diciassette anni sotto terra in uno stadio larvale <!-- anche qui, Ricky precisa che il termine tecnico è: “ninfe” -->, poi escono fuori tutte insieme e spendono la loro breve vita devastando le coltivazioni.
-La paura dei numeri 13 e 17, secondo lui, era una conoscenza scientifica tramandata nel tempo e nello spazio come superstizione, dalle culture contadine che, ciclicamente, vedevano devastati loro raccolti.</p>
+<p>Every age has its heroes and its demons; the memory of their battles gives rise to myth.
+Science is fleeting: we know little about the scientific knowledge of past peoples<!-- esempi? -->, while we know their myths well, because myth is immortal; Science isn’t, unless it’s absorbed by myth and turned into legend or superstition.
+Master Canaro, for instance, was convinced that the superstition around the numbers 13 and 17 arose from observing the behavior of locusts,<!-- il nome corretto, dice Dawkins, è: “cicale periodiche”, ma, per chiarezza, preferisco utilizzare quello più noto --> which, depending on the species, spend either thirteen or seventeen years underground in a larval stage<!-- anche qui, Ricky precisa che il termine tecnico è: “ninfe” -->, then all emerge together and spend their short lives devastating crops.
+The fear of the numbers 13 and 17, in his view, was scientific knowledge handed down across time and space as superstition, by farming cultures that periodically watched their harvests get destroyed.</p>
 
 <hr id="arte" />
 
-<p>L’arte è il motore del mito.
-Un motore che si auto-alimenta, come il Sole, perché si nutre di eventi epici e li genera a sua volta ispirando gli eroi a imprese degne di memoria.<br />
-La parola <em>arte</em>, così come: <em>amore</em>, del resto, è una di quelle parole che le gente utilizza spesso ma di cui non viene mai data una definizione precisa, perché le si ritiene dei concetti auto-esplicativi che non occorre definire.
-È sbagliato: come abbiamo visto, tutte le parole, anche quelle più comuni, possono essere interpretate in maniera differente.
-In <a href="https://canaro.net/saggi/amore-e-arte.html" target="canaro">un suo saggio giovanile su Amore e Arte</a>, il Maestro Canaro scrisse che:</p>
+<p>Art is the engine of myth.
+A self-fueling engine, like the Sun, because it feeds on epic events and in turn generates them, inspiring heroes to deeds worth remembering.
+The word <em>art</em>, like <em>love</em> for that matter, is one of those words people use often but never precisely define, because they’re considered self-explanatory concepts that need no defining.
+That’s wrong: as we’ve seen, all words, even the most common ones, can be interpreted in different ways.
+In <a href="https://canaro.net/saggi/amore-e-arte.html" target="canaro">an essay he wrote in his youth, on Love and Art</a>, Master Canaro wrote that:</p>
 
 <blockquote>
-  <p>L’Arte è la traccia del cammino dell’Uomo verso Dio</p>
+  <p>Art is the trace of Man’s journey toward God</p>
 </blockquote>
 
-<p>specificando poi che, con il termine: “Dio” (altra parola interpretata in maniera differente da ciascuno di noi), intendeva il senso dell’Esistenza.
-Alcuni anni dopo, però, guardando delle foto di crostate realizzate dallo chef Gianluca Fusto<a class="nota" href="/en/note#fn-fusto" id="fusto">2</a>, capì che la sua definizione era imperfetta, perché non includeva, o quanto meno lasciava a margine, gli arte-fatti che non ricadevano nelle categorie artistiche canoniche.
-Modificò per ciò la sua definizione di Arte in:</p>
+<p>later specifying that, by the term “God” (another word each of us interprets differently), he meant the meaning of Existence.
+Some years later, though, looking at photos of tarts made by chef Gianluca Fusto,<a class="nota" href="/en/note#fn-fusto" id="fusto">2</a> he realized his definition was imperfect, because it didn’t include, or at least left on the margins, those art-objects that didn’t fall within the canonical artistic categories.
+He therefore changed his definition of Art to:</p>
 
 <blockquote>
-  <p>L’Arte è la traccia del cammino dell’Uomo verso la Perfezione</p>
+  <p>Art is the trace of Man’s journey toward Perfection</p>
 </blockquote>
 
-<p>Non si trattò di una contraddizione, ma di una precisazione, dato che per lui — così come per noi del resto — la ricerca della perfezione era, effettivamente, il senso dell’Esistenza e, quindi, Dio.<br />
-Questo episodio della vita del Maestro Canaro ha la peculiarità di dimostrare i principii stessi che afferma: il primo è che non dobbiamo avere paura di mettere in discussione le nostre idee, se ci accorgiamo che sono sbagliate o incomplete; il secondo è che, se affrontiamo la vita nel modo giusto, tutto ciò che facciamo sarà Arte, non solo la disposizione dei fiori o la cerimonia del Té.<br />
-Nella vita non esistono momenti di serie <em>A</em>, in cui facciamo le cose che ci piacciono e momenti di serie <em>B</em>, in cui facciamo ciò che è necessario fare: ogni istante è importante.
-Per sottolineare questo precetto, il Maestro Canaro definì un’estetica per la disposizione del bucato sullo stendi-panni e, per non correre il rischio di essere preso troppo sul serio, la chiamò <i id="ikebarba">Ikebarba</i>.<br />
-I principii dell’Ikebarba, così come li formulò il Maestro Canaro, sono:</p>
+<p>This wasn’t a contradiction, but a clarification, since for him — as for us, for that matter — the pursuit of perfection was, in fact, the meaning of Existence, and therefore, God.
+This episode from Master Canaro’s life has the peculiarity of demonstrating the very principles it states: the first is that we shouldn’t be afraid to question our own ideas, if we realize they’re wrong or incomplete; the second is that, if we approach life the right way, everything we do will be Art, not just flower arranging or the Tea ceremony.
+In life there are no first-class moments, when we do the things we enjoy, and second-class moments, when we do what needs to be done: every instant matters.
+To underscore this precept, Master Canaro defined an aesthetic for hanging laundry on a drying rack, and, so as not to risk being taken too seriously, called it <i id="ikebarba">Ikebarba</i>.
+The principles of Ikebarba, as Master Canaro formulated them, are:</p>
 
 <blockquote>
 <p>
-<b>L'Ikebarba è fatta per l'uomo, non l'uomo per l'Ikebarba<a class="nota" href="/en/note#fn-shabbat" id="shabbat">3</a>.</b>  
-L'Ikebarba non deve essere un peso per chi la pratica, ma un obbligo giojoso.
-I panni devono comunque essere messi ad asciugare; il tempo necessario a farlo in maniera sciatta o consapevole è pressocché lo stesso, ma un'Ikebarba ben fatta provvederà panni asciutti in minor tempo e renderà la vista dello stendipanni meno fastidiosa.
+<b>Ikebarba is made for man, not man for Ikebarba.<a class="nota" href="/en/note#fn-shabbat" id="shabbat">3</a></b>  
+Ikebarba should not be a burden for whoever practices it, but a joyful duty.
+The laundry has to be hung out to dry regardless; the time it takes to do so sloppily or mindfully is more or less the same, but a well-made Ikebarba will produce dry laundry in less time, and will make the sight of the drying rack less annoying.
 </p>
 <p>
-<b>L'Ikebarba comincia nel negozio.</b><br />
-Gli indumenti di colore diverso o con colori sgargianti sono difficili da accostare cromaticamente; è preferibile quindi acquistare abiti dalle tinte sobrie e possibilmente intonati gli uni agli altri, in modo da renderne più facile e più elegante la composizione sullo stendi-panni.
-Attenzione, però: un guardaroba di tipo militare o maoista, con indumenti identici e dello stesso colore è un eccesso da rifuggire, perché renderebbe
-monotona la composizione (e non solo quella).
+<b>Ikebarba begins in the shop.</b><br />
+Garments of different colors, or in loud colors, are hard to match chromatically; it's therefore best to buy clothes in muted tones, ideally matching one another, to make composing them on the drying rack easier and more elegant.
+Be careful, though: a military- or Maoist-style wardrobe, with identical garments all the same color, is an excess to avoid, because it would make the composition (and not only that) monotonous.
 </p>
 <p>
-<b>L'Ikebarba rifugge le mollette.</b>
-Le mollette sono utili come la psicanalisi: è l'equilibrio che deve tenere i panni sui fili, non una forza di coercizione esterna.
-I diversi capi devono essere posti sul filo in modo che il peso di una parte bilanci quello dell'altra.</p>
+<b>Ikebarba shuns clothespins.</b>
+Clothespins are as useful as psychoanalysis: it's balance that should keep the laundry on the line, not an external coercive force.
+The various garments should be arranged on the line so that the weight on one side balances the weight on the other.</p>
 <p style="display:block">
-Esistono tre tipi di Ikebarba:
+There are three kinds of Ikebarba:
 <ul style="padding:1rem 1rem 0">
-<li><b>cromatica:</b> quando i panni vengono posizionati sullo stendino in base al loro colore;</li>
-<li><b>funzionale:</b> quando gli indumenti sono posizionati in funzione dei rispettivi tempi di asciugatura, ponendo i capi pesanti all'esterno, dove ricevono più aria, e quelli più leggeri o sintetici all'interno;</li>
-<li><b>perfetta:</b> quando gli aspetti estetici e funzionali si fondono in un tutt'uno armonico.</li></ul></p></blockquote>
-<p>Come puoi facilmente intuire, gli intenti del Maestro Canaro erano per buona parte ironici (mi confessò che la prima formulazione della disciplina era nata come un tentativo di dissimulare la sua ossessione per l’ordine) e per lungo tempo fu indeciso se includerla o meno nel corpo della Dottrina.
-Si decise a farlo quando capì che le sue perplessità nascevano proprio da quelle forme di prevenzione che l’Ikebarba doveva contrastare.
-Come ci insegnano Banzan e Paul Simon, la Verità è ovunque, se la sappiamo cercare, anche sui muri delle metropolitane o nelle botteghe dei mercati.<br />
-A ogni modo, l’Ikebarba può davvero comportare dei benefici per chi la pratica.
-In primo luogo, modera l’effetto nefasto dell’Annosa Dicotomia e dei suoi servitori <em>Marketing</em> e <em>Moda</em>, che ci spingono ad acquistare indumenti che non ci occorrono e che sfrutteremo solo per breve tempo.
-Riducendo le variazioni cromatiche del bucato, poi, riduce anche il numero di lavaggi settimanali e con esso il fabbisogno di energia elettrica, acqua, prodotti detergenti e plastica.
-Anche il ripudio delle mollette ha una sua valenza funzionale: se i capi sono messi ad asciugare a cavallo dei fili, l’acqua nel tessuto tenderà a scendere da entrambi i lati, riducendo il tempo dell’asciugatura.<br />
-Indubbiamente, il fatto che la Regola del nostro Ordine ci imponga l’uso di camicie bianche non risolve il problema dell’inquinamento, ma, come diceva il Maestro Canaro:</p>
+<li><b>chromatic:</b> when the laundry is arranged on the rack by color;</li>
+<li><b>functional:</b> when the garments are arranged according to their respective drying times, placing heavy items on the outside, where they get more air, and lighter or synthetic ones on the inside;</li>
+<li><b>perfect:</b> when the aesthetic and functional aspects merge into a harmonious whole.</li></ul></p></blockquote>
+<p>As you can probably guess, Master Canaro’s intentions were largely ironic (he confessed to me that the discipline’s first formulation was born as an attempt to disguise his obsession with tidiness), and for a long time he was unsure whether to include it in the body of the Doctrine.
+He decided to do so once he realized his own reservations stemmed from exactly the kind of prejudice Ikebarba was meant to counter.
+As Banzan and Paul Simon teach us, Truth is everywhere, if we know how to look for it, even on subway walls or in market stalls.
+In any case, Ikebarba can genuinely benefit those who practice it.
+First of all, it tempers the harmful effect of the Age-Old Dichotomy and its servants <em>Marketing</em> and <em>Fashion</em>, which push us to buy clothes we don’t need and will only use for a short time.
+By reducing the chromatic variation of the laundry, it also reduces the number of weekly washes, and with it the need for electricity, water, detergents, and plastic.
+Even the rejection of clothespins has a functional value of its own: if garments are hung draped over the lines, the water in the fabric will tend to run down both sides, reducing drying time.
+Admittedly, the fact that our Order’s Rule requires us to wear white shirts doesn’t solve the pollution problem, but, as Master Canaro used to say:</p>
 
 <blockquote>
-  <p>La pelliccia è fatta di peli</p>
+  <p>Fur is made of hair</p>
 </blockquote>
 
-<p>e finché la nostra specie non imparerà a fare un uso più responsabile delle sue gonadi, non potremo far altro che compensare come possiamo i problemi legati alla sovrappopolazione.</p>
+<p>and until our species learns to make more responsible use of its gonads, all we can do is compensate as best we can for the problems tied to overpopulation.</p>
 
             </section>
         
@@ -1223,7 +1222,7 @@ Indubbiamente, il fatto che la Regola del nostro Ordine ci imponga l’uso di ca
         
         
         <a href="/en/classi-oggetti" 
-           title="Go to: Classi e oggetti" 
+           title="Go to: Classes and objects" 
            class="left">
             <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
         </a>
