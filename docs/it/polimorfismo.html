@@ -264,7 +264,7 @@ ESITO:   bardotto
 </code></pre>
 
 <p>Prima di andare avanti, però, è necessario fare un po’ di chiarezza su tre termini legati al polimorfismo: <em>overload</em>, <em>override</em> e <em>ridefinizione</em>.<br />
-Con il termine: <b id="overload">overload</b> di una funzione si intende la una funzione che abbia lo stesso nome di un’altra, ma dei parametri differenti.
+Con il termine: <b id="overload">overload</b> di una funzione si intende una funzione che abbia lo stesso nome di un’altra, ma dei parametri differenti.
 Un tipico esempio di <em>function overload</em> sono le differenti versioni del costruttore di una classe:</p>
 
 <pre><code>Cavallo() {}
@@ -554,15 +554,15 @@ Quando invece non esiste un costruttore da estendere, ovvero quando la coercizio
 Immagina di aver creato un nuovo tipo di dato <code>Frazione</code> per la gestione dei numeri razionali.
 Per poterlo utilizzare in espressioni contenenti dati di tipo primi­tivo dovresti ridefinire ciascun operatore per fargli accettare dei dati di tipo misto, sia come primo che come secondo parametro:</p>
 
-<pre><code>Frazione operator + (int i, Frazione f) :
-Frazione operator - (int i, Frazione f) :
-Frazione operator + (double i, Frazione f) :
-Frazione operator - (double i, Frazione f) :
+<pre><code>Frazione operator + (int i, Frazione f) ;
+Frazione operator - (int i, Frazione f) ;
+Frazione operator + (double i, Frazione f) ;
+Frazione operator - (double i, Frazione f) ;
 ...
-Frazione operator + (Frazione f, int i) :
-Frazione operator - (Frazione f, int i) :
-Frazione operator + (Frazione f, double i) :
-Frazione operator - (Frazione f, double i) :
+Frazione operator + (Frazione f, int i) ;
+Frazione operator - (Frazione f, int i) ;
+Frazione operator + (Frazione f, double i) ;
+Frazione operator - (Frazione f, double i) ;
 
 </code></pre>
 
@@ -625,7 +625,7 @@ float  somma(float  a, float  b) { return a + b; }
 double somma(double a, double b) { return a + b; }
 
 template &lt;class T&gt;
-somma(T a, T b) { return a + b; }
+T somma(T a, T b) { return a + b; }
 </code></pre>
 
 <p>Quando il compilatore trova nel codice un template, sia esso la dichiarazione di una classe o una chiamata a funzione, la sostituisce con il codice corrispondente, così come avviene per le <a href="/it/preprocessore#macro" class="xref">macro-istruzioni del precompilatore</a>, ma, a differenza di quello che avviene per le macro, il tipo dei parametri del template è sottoposto a uno stretto controllo, così come il resto del codice.<br />
@@ -824,7 +824,7 @@ int main ()
 </code></pre>
 
 <p>La classe <code>list</code> è una delle classi della <em>Standard Template Library</em> del C++, una libreria di classi e di funzioni che permettono di risolvere dei problemi comuni della programmazione, come la memorizzazione, l’ordinamento o la ricerca di una serie di dati.
-Le componenti della STL è sono:</p>
+Le componenti della STL sono:</p>
 
 <ul>
   <li>una libreria di <strong>container</strong> che permettono di immagazzinare oggetti e dati;</li>

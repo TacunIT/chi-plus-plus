@@ -6,7 +6,7 @@
 
 
 <head>
-    <title>Il polimorfismo |  C'hi++
+    <title>Polymorphism |  C'hi++
 </title>
     <meta charset="utf-8" />
     <link      rel="canonical"          href="https://chiplusplus.org/en/polimorfismo" />
@@ -19,8 +19,8 @@
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
     <meta property="og:url"          content="https://chiplusplus.org/en/polimorfismo" />
     <meta property="og:type"         content="website" />
-    <meta property="og:title"        content="Il polimorfismo" />
-    <meta property="og:description"  content="Una metafisica non metafisica - Bug noti delle religioni e degli esseri umani - Affinità fra il C'hi++ e le filosofie canoniche - Mappe topografiche e immagini da satellite - La Banda degli Onesti." />
+    <meta property="og:title"        content="Polymorphism" />
+    <meta property="og:description"  content="A non-metaphysical metaphysics - Known bugs in religions and in human beings - Affinities between C'hi++ and canonical philosophies - Topographic maps and satellite images - The Band of Honest Men." />
     <meta property="og:image:width"  content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image"        content="https://chiplusplus.org/assets/img/og-img/polimorfismo.jpg" />
@@ -73,13 +73,13 @@
         <main class="corpo pubblicato ">
         
             <h1><a href="#dottrina">
-                Il polimorfismo</a>
+                Polymorphism</a>
             </h1>
             <blockquote class="motto">When Me they fly, I am the wings<br />I am the double and the int</blockquote>
             <section class="testo">
-                <p>Come avrai certamente intuito da tutto ciò che abbiamo detto finora, la caratteristica principale del C++ è il polimorfismo.</p>
+                <p>As you’ve probably already guessed from everything we’ve said so far, C++’s main distinguishing feature is polymorphism.</p>
 
-<p>Avevamo iniziato a parlarne durante la <a href="/en/c-plus-plus#polimorfismo" class="xref">lezione introduttiva sul C++</a> e l’avevamo illustrato con un esempio che, a questo punto, non dovrebbe più avere segreti, per te:</p>
+<p>We started talking about it during the <a href="/en/c-plus-plus#polimorfismo" class="xref">introductory lesson on C++</a>, and illustrated it with an example that, by this point, should hold no more secrets for you:</p>
 
 <pre><code>/** 
  *  @file src/cplusplus-template.cpp
@@ -238,7 +238,7 @@ int main()
 
 </code></pre>
 
-<p>L’output di questo codice, nel caso l’avessi scordato, è:</p>
+<p>The output of this code, in case you’ve forgotten, is:</p>
 
 <pre><code>&gt; g++ src/cpp/cplusplus-template.cpp -o src/out/esempio
 &gt; src/out/esempio
@@ -263,25 +263,25 @@ FEMMINA: Specie:Asino   Razza:sardo     Sesso:f
 ESITO:   bardotto
 </code></pre>
 
-<p>Prima di andare avanti, però, è necessario fare un po’ di chiarezza su tre termini legati al polimorfismo: <em>overload</em>, <em>override</em> e <em>ridefinizione</em>.<br />
-Con il termine: <b id="overload">overload</b> di una funzione si intende la una funzione che abbia lo stesso nome di un’altra, ma dei parametri differenti.
-Un tipico esempio di <em>function overload</em> sono le differenti versioni del costruttore di una classe:</p>
+<p>Before going on, though, we need to clear up three terms related to polymorphism: <em>overload</em>, <em>override</em>, and <em>redefinition</em>.
+By the term <b id="overload">overload</b> of a function, we mean a function that has the same name as another one, but different parameters.
+A typical example of <em>function overload</em> is the different versions of a class’s constructor:</p>
 
 <pre><code>Cavallo() {}
 Cavallo(const char* razza, const Sesso sesso )
 : Animale(razza, sesso ) {
 }
 </code></pre>
-<p>Le due funzioni hanno lo stesso nome e il compilatore sceglierà l’una o l’altra in base ai parametri che vengono utilizzati.<br />
-Una funzione <b id="overridden">overridden</b> è una funzione che ha una definizione diversa da quella di una funzione virtuale di una sua classe-base:</p>
+<p>The two functions have the same name, and the compiler will pick one or the other depending on the parameters used.
+An <b id="overridden">overridden</b> function is a function with a different definition from that of a virtual function in one of its base classes:</p>
 
 <pre><code>const char* getSpecie() const {
     return "Asino";
 }     
 </code></pre>
 
-<p>Come abbiamo visto, il compilatore sceglie l’una o l’altra in base al tipo di oggetto utilizzato per la chiamata.<br />
-Se la funzione della classe base non fosse stata virtuale, questa sarebbe stata una semplice <strong>ridefinizione</strong>:</p>
+<p>As we’ve seen, the compiler picks one or the other depending on the type of the object used in the call.
+If the base class’s function hadn’t been virtual, this would have simply been a <strong>redefinition</strong>:</p>
 
 <pre><code>class Persona {
 public:
@@ -291,7 +291,7 @@ public:
 };
 </code></pre>
 
-<p>Quando gestisce queste funzioni, il compilatore non fa un controllo di tipo dinamico, basato sul tipo dell’oggetto al momento dell’esecuzione, ma sceglie la funzione da chiamare in base al tipo di puntatore o riferimento utilizzato, cosa che, come sai, può creare dei problemi:</p>
+<p>When it handles these functions, the compiler doesn’t perform a dynamic type check based on the object’s type at runtime, but picks the function to call based on the type of the pointer or reference used, which, as you know, can cause problems:</p>
 
 <pre><code>Madre   * ptrM = new Madre;
 Persona * ptrP = ptrM ;
@@ -299,7 +299,7 @@ ptrM-&gt;getClass() ;
 ptrP-&gt;getClass() ;  // chiama la funzione di Persona - ERRORE
 </code></pre>
 
-<p>Alla luce di tutto ciò, possiamo correggere i commenti del codice di esempio:</p>
+<p>In light of all this, we can now correct the comments in the sample code:</p>
 
 <pre><code>/** Overload dell'operatore di output su stream  */
 ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animale&amp; animale) {
@@ -333,35 +333,35 @@ friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula)
 
 <hr id="overload-operatori" />
 
-<p>Nel C++, a ogni operatore corrisponde una funzione.
-Quella dell’operatore binario <code>+=</code>, per esempio, è:</p>
+<p>In C++, every operator corresponds to a function.
+The one for the <code>+=</code> binary operator, for example, is:</p>
 
 <pre><code>&lt;tipo&gt;&amp; operator +=  (&lt;tipo&gt;&amp; a, &lt;tipo&gt;&amp; b) ;
 </code></pre>
 
-<p>laddove <code>a</code> e <code>b</code> sono i due oggetti che intervengono nell’operazione e <code>&lt;tipo&gt;</code> è il tipo delle variabili che intervengono nell’operazione.</p>
+<p>where <code>a</code> and <code>b</code> are the two objects involved in the operation, and <code>&lt;tipo&gt;</code> is the type of the variables involved in the operation.</p>
 
 <pre><code>int&amp;    operator +=  (int&amp;    a, int&amp;    b) ;
 float&amp;  operator +=  (float&amp;  a, float&amp;  b) ;
 double&amp; operator +=  (double&amp; a, double&amp; b) ;
 </code></pre>
 
-<p>Dato che gli operatori unari possono essere prefissi o postfissi, per consentire al compilatore di distinguere le funzione corretta da utilizzare, alla funzione dell’operatore postfisso si aggiunge un secondo parametro, non utilizzato:</p>
+<p>Since unary operators can be prefix or postfix, to let the compiler tell which is the correct function to use, the postfix operator’s function gets an extra, unused, second parameter:</p>
 
 <pre><code>void operator ++ (&lt;tipo&gt; a) ;           // versione prefissa
 void operator ++ (&lt;tipo&gt; a, &lt;tipo&gt;) ;   // versione postfissa
 </code></pre>
 
-<p>Le funzioni degli operatori <em>overloaded</em> possono essere richiamate in maniera diretta.
-Le due istruzioni qui sotto, una volta compilate, producono il medesimo codice e lo stesso risultato.
-Se riesci a trovare una qualunque ragione per usare la prima sintassi piuttosto che la seconda, fallo pure:</p>
+<p><em>Overloaded</em> operator functions can be called directly.
+The two instructions below, once compiled, produce the same code and the same result.
+If you can find any reason to use the first syntax instead of the second, go right ahead:</p>
 
 <pre><code>a = b.operator + (c) ;  
 a = b + c ;
 </code></pre>
 
-<p>Il comportamento degli operatori è predefinito per tutti i tipi standard e può essere ridefinito per gestire anche dei tipi di dato aggregati come le strutture o le classi.
-La classe <code>string</code>, della libreria standard del C++, per esempio, ridefinisce, fra le altre cose, il comportamento degli operatori di assegnazione <code>+=</code> e <code>+</code> e dell’operatore di output su stream <code>&lt;&lt;</code> in modo che si possano compiere delle operazioni sulle stringhe con la stessa sintassi che si utilizza per altri tipi di dato:</p>
+<p>The behavior of operators is predefined for all standard types, and can be redefined to also handle aggregate data types like structs or classes.
+C++’s standard library <code>string</code> class, for example, redefines, among other things, the behavior of the assignment operators <code>+=</code> and <code>+</code> and of the stream output operator <code>&lt;&lt;</code>, so that operations on strings can use the same syntax used for other data types:</p>
 
 <pre><code>/** 
  * @file src/polimorfismo-operatori.cpp
@@ -397,32 +397,32 @@ int main ()
 
 </code></pre>
 
-<p>L’output di questo codice è ben noto:</p>
+<p>The output of this code is well known to you by now:</p>
 
 <pre><code>&gt; g++ src/cpp/polimorfismo-operatori.cpp -o src/out/esempio
 &gt; src/out/esempio                                          
 PippoPluto
 </code></pre>
 
-<p>Lo stesso risultato si può ottenere anche con la funzione <code>append</code>:</p>
+<p>You could get the same result with the <code>append</code> function:</p>
 
 <pre><code>string&amp; append (const string&amp; str)
 </code></pre>
 
-<p>ma utilizzare un operatore standard rende il codice più facile da leggere e da scrivere, se non altro perché non ti devi ricordare come si chiama la funzione per unire due stringhe.<br />
-Gli unici operatori che non possono essere ridefiniti da una classe sono:</p>
+<p>but using a standard operator makes the code easier to read and to write, if only because you don’t have to remember what the function for joining two strings is called.
+The only operators that cannot be redefined by a class are:</p>
 
 <ul>
-  <li>l’operatore di selezione <code>.</code>;</li>
-  <li>l’operatore di risoluzione di indirizzamento dei puntatori a membri della classe <code>.*</code>;</li>
-  <li>l’operatore di risoluzione del campo d’azione <code>::</code>;</li>
-  <li>l’operatore condizionale <code>? :</code>;</li>
-  <li>i simboli <code># </code> e <code>##</code>, che vengono utilizzati dal preprocessore.</li>
+  <li>the selection operator <code>.</code>;</li>
+  <li>the pointer-to-member resolution operator <code>.*</code>;</li>
+  <li>the scope resolution operator <code>::</code>;</li>
+  <li>the conditional operator <code>? :</code>;</li>
+  <li>the symbols <code>#</code> and <code>##</code>, used by the preprocessor.</li>
 </ul>
 
 <hr id="operatori-classi" />
 
-<p>Tranne alcune eccezioni che vedremo fra poco, tutti gli operatori del C++ possono essere ridefiniti o come funzione membro di una classe o come funzione globale:</p>
+<p>Except for a few exceptions we’ll see shortly, every C++ operator can be redefined either as a class’s member function or as a global function:</p>
 
 <pre><code>/** 
  * @file src/polimorfismo-in-out.cpp
@@ -465,9 +465,9 @@ int main ()
 
 </code></pre>
 
-<p>Quando si ridefinisce il comportamento di un operatore per una classe, bisogna tenere conto della visibilità dei dati membro che deve utilizzare.
-Se l’operatore, com’è probabile, deve gestire dei dati privati o protetti, le possibilità sono due: o sfruttare le funzioni di interfaccia della classe o  dichiarare l’operatore <code>friend</code> della classe.
-Nell’esempio iniziale sono applicate entrambe le possibilità: l’operatore di output su stream per la classe <code>Animale</code> utilizza le funzioni di interfaccia della classe:</p>
+<p>When you redefine an operator’s behavior for a class, you need to take into account the visibility of the member data it has to use.
+If the operator, as is likely, needs to handle private or protected data, there are two options: either make use of the class’s interface functions, or declare the operator a <code>friend</code> of the class.
+In the initial example, both options are used: the stream output operator for the <code>Animale</code> class uses the class’s interface functions:</p>
 
 <pre><code>ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animale&amp; animale) {
     os  &lt;&lt; "Specie:" &lt;&lt; animale.getSpecie() &lt;&lt; "\t"
@@ -478,7 +478,7 @@ Nell’esempio iniziale sono applicate entrambe le possibilità: l’operatore d
 }
 </code></pre>
 
-<p>mentre l’operatore di output per la classe <code>Monta</code> è dichiarato come <code>friend</code> della classe e quindi può accedere direttamente ai dati membro dell’istanza:</p>
+<p>while the output operator for the <code>Monta</code> class is declared a <code>friend</code> of the class, and can therefore access the instance’s member data directly:</p>
 
 <pre><code>friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula) {
     os &lt;&lt; "DATA: "    &lt;&lt; asctime(localtime(&amp;copula._giorno))
@@ -488,85 +488,85 @@ Nell’esempio iniziale sono applicate entrambe le possibilità: l’operatore d
 };
 </code></pre>
 
-<p>La scelta fra l’una o l’altra possibilità dipende dal tipo di programma che devi scrivere: se punti alla velocità, scegli la seconda, che è più diretta, altrimenti scegli la prima, che sarà probabilmente più lenta in esecuzione, ma non necessiterà di riscritture in caso di modifiche alla struttura della classe.
-Non è possibile, però, ridefinire come funzione membro di una classe una funzione operatore che abbia come primo parametro una classe di cui non si ha il controllo (come, per esempio, la funzione operatore <code>&lt;&lt;</code>  che ha come primo parametro un riferimento a <code>ostream</code>) perché nella funzione membro questo parametro sarebbe sostituito dal parametro implicito <code>this</code>, che ha un altro tipo di dato, causando un errore di compilazione.<br />
-Gli operatori <code>=</code>, <code>()</code>, <code>[]</code> e <code>-&gt;</code> non possono essere ridefiniti come funzioni globali, ma devono sempre essere implementati come funzione membro non statica di una classe
-Le altre regole da ricordare, in questi casi, sono:</p>
+<p>The choice between the two options depends on the kind of program you need to write: if you’re after speed, choose the second one, which is more direct; otherwise choose the first, which will probably run slower, but won’t need rewriting if the class’s structure changes.
+It isn’t possible, though, to redefine as a class’s member function an operator function whose first parameter is a class you don’t control (such as, for example, the <code>&lt;&lt;</code> operator function, whose first parameter is a reference to <code>ostream</code>), because in a member function this parameter would be replaced by the implicit <code>this</code> parameter, which has a different data type, causing a compile error.
+The operators <code>=</code>, <code>()</code>, <code>[]</code>, and <code>-&gt;</code> cannot be redefined as global functions, and must always be implemented as a class’s non-static member function.
+The other rules to remember, in these cases, are:</p>
 
 <ul>
   <li>
-    <p>l’operatore unario di assegnamento <code>=</code> è l’unico caso di funzione membro che non viene eredi­tata da eventuali classi figlie; se non viene ridefinito, prevede l’assegnamento membro a membro degli attributi e ha la sintassi:</p>
+    <p>the unary assignment operator <code>=</code> is the only case of a member function that isn’t inherited by any child classes; if it isn’t redefined, it performs a member-by-member assignment of the attributes, and has the syntax:</p>
 
     <pre><code>  C&amp; C::operator = (const C&amp; origine) ;
 </code></pre>
   </li>
   <li>
-    <p>l’operatore binario <code>[]</code> permette di implementare vettori di tipo particolare, mantenendo una sintassi standard e ha la forma:</p>
+    <p>the binary operator <code>[]</code> lets you implement vectors of a particular kind while keeping a standard syntax, and has the form:</p>
 
     <pre><code>  c.operator [] (n) ;
 </code></pre>
 
-    <p>dove <code>c</code> è un oggetto di classe <code>C</code> e l’indice n può essere un qualsiasi tipo di dato ;</p>
+    <p>where <code>c</code> is an object of class <code>C</code> and the index <code>n</code> can be of any data type;</p>
   </li>
   <li>
-    <p>per ridefinire l’operatore binario di chiamata a funzione <code>()</code>, va utilizzata la sintassi:</p>
+    <p>to redefine the binary function-call operator <code>()</code>, you use the syntax:</p>
 
     <pre><code>  c.operator()(p) ;
 </code></pre>
 
-    <p>dove <code>c</code> è sempre un oggetto di classe <code>C</code> e <code>p</code> è un elenco anche vuoto, di parametri;</p>
+    <p>where <code>c</code> is again an object of class <code>C</code>, and <code>p</code> is a list, possibly empty, of parameters;</p>
   </li>
   <li>
-    <p>l’operatore unario di accesso ai membri della classe <code>-&gt;</code> viene interpre­tato come:</p>
+    <p>the unary class-member access operator <code>-&gt;</code> is interpreted as:</p>
 
     <pre><code>  (C.operator -&gt; ())-&gt;m ;
 </code></pre>
 
-    <p>e ritorna o un oggetto o un puntatore a un oggetto di classe <code>C</code>.</p>
+    <p>and returns either an object or a pointer to an object of class <code>C</code>.</p>
   </li>
 </ul>
 
-<p>Ridefinire gli operatori <code>new</code> e <code>delete</code>, il cui comportamento è strettamente le­gato all’hardware, potrebbe non essere una scelta astuta dal punto di vista della port­abilità del codice; detto ciò, se una classe ha bisogno di gestire la memoria in modo particolare, lo può fare, ma deve rispettare due regole:</p>
+<p>Redefining the <code>new</code> and <code>delete</code> operators, whose behavior is closely tied to the hardware, might not be a clever choice from the point of view of code portability; that said, if a class needs to manage memory in a particular way, it can do so, but must follow two rules:</p>
 
 <ul>
-  <li>l’operatore <code>new</code> deve avere il primo argomento di tipo <code>size_t</code> e resti­tuire un puntatore a <code>void</code>;</li>
-  <li>l’operatore <code>delete</code> deve essere una funzione di tipo <code>void</code> che abbia un primo argomento di tipo <code>void*</code> e un secondo argomento, facoltativo, di tipo <code>size_t</code>.</li>
+  <li>the <code>new</code> operator must have its first argument of type <code>size_t</code>, and return a pointer to <code>void</code>;</li>
+  <li>the <code>delete</code> operator must be a <code>void</code> function with a first argument of type <code>void*</code>, and a second, optional, argument of type <code>size_t</code>.</li>
 </ul>
 
 <hr id="cast" />
 
 <!-- @todo: verificare queste affermazioni per il post-C++11 -->
-<p>In C, per trasformare un <code>int</code> in un <code>double</code> si utilizzano gli operatori di cast:</p>
+<p>In C, to convert an <code>int</code> into a <code>double</code>, you use the cast operators:</p>
 
 <pre><code>long int i = 5 ;
 double d = (double) i ;
 </code></pre>
 
-<p>Il C++ accetta questa sintassi, così come accetta che si usi <code>malloc</code> al posto di <code>new</code>, ma la sua sintassi standard, che ricorda vagamente i costruttori delle classi, prevede che il dato da convertire sia passato come parametro a una funzione con lo stesso nome del tipo in cui si vuole che avvenga la conversione :</p>
+<p>C++ accepts this syntax, just as it accepts using <code>malloc</code> instead of <code>new</code>, but its standard syntax, which vaguely resembles class constructors, requires the data to be converted to be passed as a parameter to a function with the same name as the type you want it converted into:</p>
 
 <pre><code>long int i = 5 ;
 double d = double(i) ;
 </code></pre>
 
-<p>Il compilatore del C++ ha la possibilità di convertire un qualunque tipo di dato primitivo in un altro, ma non può sapere come comportarsi con i tipi di dato definiti dall’utente; dobbiamo quindi istruirlo, così come abbiamo fatto con i costruttori e gli operatori, definendo dei cam­mini di coercizione dai tipi di dato primitivi e viceversa.
-Il primo caso, ovvero la trasformazione dal tipo primitivo a quello definito dall’utente, è il più semplice: di fatto si tratta di definire, laddove non ci sia già, un cos­truttore per la nuova classe che richieda dei parametri di tipo primitivo.
-Quando invece non esiste un costruttore da estendere, ovvero quando la coercizione è dal tipo definito dall’utente a un tipo di dato primitivo o fornito in una libreria di cui non si possiede il codice sorgente, è necessario ridefinire l’operatore di conversione <code>()</code>.<br />
-Immagina di aver creato un nuovo tipo di dato <code>Frazione</code> per la gestione dei numeri razionali.
-Per poterlo utilizzare in espressioni contenenti dati di tipo primi­tivo dovresti ridefinire ciascun operatore per fargli accettare dei dati di tipo misto, sia come primo che come secondo parametro:</p>
+<p>The C++ compiler is able to convert any primitive data type into another, but it has no way of knowing how to handle user-defined data types; we therefore have to instruct it, just as we did with constructors and operators, by defining coercion paths from and to primitive data types.
+The first case, that is, converting from a primitive type to a user-defined one, is the simplest: it essentially means defining, where one doesn’t already exist, a constructor for the new class that takes parameters of primitive type.
+When instead there’s no constructor to extend — that is, when the coercion goes from a user-defined type to a primitive data type, or one provided by a library whose source code you don’t have — you need to redefine the <code>()</code> conversion operator.
+Imagine you’ve created a new data type, <code>Frazione</code>, to handle rational numbers.
+To be able to use it in expressions containing primitive-type data, you would have to redefine every operator to accept mixed-type data, both as the first and as the second parameter:</p>
 
-<pre><code>Frazione operator + (int i, Frazione f) :
-Frazione operator - (int i, Frazione f) :
-Frazione operator + (double i, Frazione f) :
-Frazione operator - (double i, Frazione f) :
+<pre><code>Frazione operator + (int i, Frazione f) ;
+Frazione operator - (int i, Frazione f) ;
+Frazione operator + (double i, Frazione f) ;
+Frazione operator - (double i, Frazione f) ;
 ...
-Frazione operator + (Frazione f, int i) :
-Frazione operator - (Frazione f, int i) :
-Frazione operator + (Frazione f, double i) :
-Frazione operator - (Frazione f, double i) :
+Frazione operator + (Frazione f, int i) ;
+Frazione operator - (Frazione f, int i) ;
+Frazione operator + (Frazione f, double i) ;
+Frazione operator - (Frazione f, double i) ;
 
 </code></pre>
 
-<p>Puoi risparmiarti questa seccatura ridefinendo solo il com­portamento degli operatori per la nuova classe e fornendo al compilatore dei cammini di conversione dai tipi primitivi al nuovo tipo di dato, in modo che possa trasformare i dati nel tipo appropriato, nel caso di espressioni miste:</p>
+<p>You can save yourself this hassle by only redefining the operators’ behavior for the new class, and giving the compiler conversion paths from primitive types to the new data type, so that it can convert the data to the right type in the case of mixed expressions:</p>
 
 <pre><code>/** 
  * @file src/polimorfismo-cast.cpp
@@ -616,20 +616,20 @@ public:
 
 <hr id="template" />
 
-<p>L’ultima cosa di cui ti devo parlare, a proposito del polimorfismo, sono i <em>template</em>.<br />
-I template, nel C++, sono dei modelli che si utilizzano per definire delle funzioni o delle classi polivalenti.
-Se uno stesso compito può essere eseguito in maniera simile su parametri di tipo differente, invece di scrivere delle funzioni o delle classi identiche per ciascun tipo di parametro, si può scrivere una funzione o una classe template e richiamarla ogni volta con il tipo di parametro appropriato:</p>
+<p>The last thing I need to tell you about, regarding polymorphism, is <em>templates</em>.
+In C++, templates are blueprints used to define multi-purpose functions or classes.
+If the same task can be carried out in a similar way on parameters of different types, instead of writing identical functions or classes for each parameter type, you can write a single template function or class and call it each time with the appropriate parameter type:</p>
 
 <pre><code>int    somma(int    a, int    b) { return a + b; }
 float  somma(float  a, float  b) { return a + b; }
 double somma(double a, double b) { return a + b; }
 
 template &lt;class T&gt;
-somma(T a, T b) { return a + b; }
+T somma(T a, T b) { return a + b; }
 </code></pre>
 
-<p>Quando il compilatore trova nel codice un template, sia esso la dichiarazione di una classe o una chiamata a funzione, la sostituisce con il codice corrispondente, così come avviene per le <a href="/en/preprocessore#macro" class="xref">macro-istruzioni del precompilatore</a>, ma, a differenza di quello che avviene per le macro, il tipo dei parametri del template è sottoposto a uno stretto controllo, così come il resto del codice.<br />
-Il formato per la dichiarazione di una <i id="funzioni-template">funzione template</i> è:</p>
+<p>When the compiler finds a template in the code, whether it’s a class declaration or a function call, it replaces it with the corresponding code, the same way it does for <a href="/en/preprocessore#macro" class="xref">precompiler macros</a>, but, unlike what happens with macros, the type of the template’s parameters is subject to strict checking, just like the rest of the code.
+The format for declaring a <i id="funzioni-template">template function</i> is:</p>
 
 <p class="code">
 <b>template &lt;class</b> <i>identificatore</i><b>&gt;</b> <i>dichiarazione</i>;
@@ -637,9 +637,9 @@ Il formato per la dichiarazione di una <i id="funzioni-template">funzione templa
 <b>template &lt;typename</b> <i>identificatore</i><b>&gt;</b> <i>dichiarazione</i>;
 </p>
 
-<p>Non c’è nessuna differenza fra la prima e la seconda forma: sia <code>class</code> che <code>typename</code> producono lo stesso effetto.<br />
-<em>identificatore</em> è un simbolo che identifica un determinato tipo di dato o una classe definita dall’utente.
-Per esempio, la sintassi di una funzione template che torna il maggiore di due parametri sarà qualcosa di simile:</p>
+<p>There’s no difference between the first and second form: both <code>class</code> and <code>typename</code> produce the same effect.
+<em>identificatore</em> is a symbol identifying a given data type, or a user-defined class.
+For example, the syntax for a template function that returns the greater of two parameters would look something like this:</p>
 
 <pre><code>template&lt;class T&gt;
 T maggiore (T x, T y) {
@@ -647,8 +647,8 @@ T maggiore (T x, T y) {
 }
 </code></pre>
 
-<p>In questo caso, l’identificativo del tipo è la lettera <code>T</code> che compare sia fra gli apici nella prima riga che fra parentesi nella seconda, ma può essere qualsiasi stringa.
-I parametri possono essere più di uno:</p>
+<p>In this case, the type identifier is the letter <code>T</code>, which appears both between the angle brackets on the first line and in the parentheses on the second, but it can be any string.
+There can be more than one parameter:</p>
 
 <pre><code>template&lt;class C1, class C2&gt;
 T funz (C1 x, C2 y) {
@@ -656,7 +656,7 @@ T funz (C1 x, C2 y) {
 }
 </code></pre>
 
-<p>e possono avere un valore di default:</p>
+<p>and they can have a default value:</p>
 
 <pre><code>template&lt;class N = int&gt;
 T funz (N n) {
@@ -664,14 +664,14 @@ T funz (N n) {
 }
 </code></pre>
 
-<p>La chiamata delle funzioni template è simile a quella delle funzioni ordinarie, con l’aggiunta del tipo dei parametri che devono essere gestiti:</p>
+<p>Calling template functions is similar to calling ordinary functions, with the addition of the type of the parameters to be handled:</p>
 
 <pre><code>cout &lt;&lt; maggiore&lt;int&gt;   (  9,  12) &lt;&lt; endl;    
 cout &lt;&lt; maggiore&lt;double&gt;(0.4, 1.2) &lt;&lt; endl;    
 cout &lt;&lt; maggiore&lt;char&gt;  ('a', 'z') &lt;&lt; endl;    
 </code></pre>
 <!-- @todo: verificare i casi in cui non c'è specifica del tipo di dato -->
-<p>Il prossimo esempio mostra la differenza fra una macro del precompilatore e una funzione template:
+<p>The next example shows the difference between a precompiler macro and a template function:
 <!-- NOTA: se si cambia o si rimuove la macro nel codice, va aggiornato il testo del capitolo sul preprocessore --></p>
 <pre><code>/** 
  * @file src/polimorfismo-macro-template.cpp
@@ -731,15 +731,15 @@ int main ()
 
 </code></pre>
 
-<p>La macro <code>MAGGIORE</code> e la funzione template <code>maggiore</code> eseguono la stessa operazione: confrontano i due parametri che hanno ricevuto in input e tornano il maggiore dei due.
-La grossa differenza fra questi due approcci<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> è che, mentre il tipo dei parametri del template è verificato dal compilatore, la macro è una banale sostituzione che non fa alcun controllo sulle variabili che utilizza.
-L’istruzione:</p>
+<p>The <code>MAGGIORE</code> macro and the <code>maggiore</code> template function perform the same operation: they compare the two parameters they receive as input, and return the greater of the two.
+The big difference between these two approaches<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> is that, while the type of the template’s parameters is checked by the compiler, the macro is a plain substitution that performs no checks at all on the variables it uses.
+The instruction:</p>
 
 <pre><code>cout &lt;&lt; MAGGIORE('a', b) &lt;&lt; endl;
 </code></pre>
 
-<p>compara un carattere con un double e, senza dare problemi in compilazione torna il valore <code>97</code>, corrispondente al codice ASCII della lettera <code>a</code>.
-Al contrario, l’istruzione:</p>
+<p>compares a character with a double and, without causing any compile problems, returns the value <code>97</code>, corresponding to the ASCII code of the letter <code>a</code>.
+By contrast, the instruction:</p>
 
 <pre><code>int   a = 10;
 short b = 0;
@@ -747,7 +747,7 @@ cout &lt;&lt; maggiore(a, b) &lt;&lt; endl;
 </code></pre>
 
 <!-- @todo: correggere questo codice, sia qui che nello script: l'errore si manifesta solo se si omette lo specificatore del tipo per il template -->
-<p>causa un errore di compilazione perché i due parametri sono di tipo differente:</p>
+<p>causes a compile error, because the two parameters are of different types:</p>
 
 <pre><code>&gt; g++ src/cpp/polimorfismo-template.cpp -o src/out/esempio
 src/cpp/polimorfismo-template.cpp:52:13:
@@ -762,14 +762,14 @@ T maggiore (T x, T y) {
   ^
 </code></pre>
 
-<p>La dichiarazione di una <i id="classi-template">classe template</i> ha la forma:</p>
+<p>The declaration of a <i id="classi-template">template class</i> has the form:</p>
 
 <p class="code">
 <b>template &lt;class</b> <i>identificatore</i><b>&gt;</b> <i>dichiarazione</i>;
 </p>
 
-<p>La lista dei parametri fra i simboli <code>&lt;&gt;</code> può contenere uno o più simboli per i tipi dato gestiti dalla classe.
-L’utilizzo di queste classi è simile a quello delle funzioni template:</p>
+<p>The list of parameters between the <code>&lt;&gt;</code> symbols can contain one or more symbols for the data types the class handles.
+Using these classes is similar to using template functions:</p>
 
 <pre><code>/** 
  * @file src/polimorfismo-classe-template.cpp
@@ -818,24 +818,24 @@ int main ()
 
 <hr id="stl" />
 
-<p>Il codice che ti ho mostrato all’inizio di questa lezione utilizza una classe template:</p>
+<p>The code I showed you at the start of this lesson uses a template class:</p>
 
 <pre><code>list&lt;Monta&gt; monte;
 </code></pre>
 
-<p>La classe <code>list</code> è una delle classi della <em>Standard Template Library</em> del C++, una libreria di classi e di funzioni che permettono di risolvere dei problemi comuni della programmazione, come la memorizzazione, l’ordinamento o la ricerca di una serie di dati.
-Le componenti della STL è sono:</p>
+<p>The <code>list</code> class is one of the classes of C++’s <em>Standard Template Library</em>, a library of classes and functions that let you solve common programming problems, such as storing, sorting, or searching a set of data.
+The components of the STL are:</p>
 
 <ul>
-  <li>una libreria di <strong>container</strong> che permettono di immagazzinare oggetti e dati;</li>
-  <li>degli <strong>iteratori</strong> che consentono di scorrere il contenuto dei container;</li>
-  <li>una collezione di <strong>algoritmi</strong> che permettono di eseguire delle operazioni di ordinamento e ricerca su insiemi di dati;</li>
-  <li>degli oggetti-funzioni, o: <strong>functors</strong>, che incapsulano una specifica funzione.</li>
+  <li>a library of <strong>containers</strong>, which let you store objects and data;</li>
+  <li><strong>iterators</strong>, which let you move through a container’s contents;</li>
+  <li>a collection of <strong>algorithms</strong>, which let you perform sorting and searching operations on sets of data;</li>
+  <li>function-objects, or <strong>functors</strong>, which encapsulate a specific function.</li>
 </ul>
 
-<p>La classe <code>list</code> è un esempio di container e rappresenta un elenco di elementi memorizzati in aree non contigue della memoria.
-Al contrario, la classe <code>vector</code> implementa un elenco di elementi memorizzati in un’unica area di memoria, così come avviene per gli array del C.<br />
-Tutti i vettori della STL posseggono delle funzioni membro che consentono di gestirne gli elementi; la funzione <code>push_back</code>, per esempio, aggiunge un elemento in coda alla lista:</p>
+<p>The <code>list</code> class is an example of a container, and represents a list of elements stored in non-contiguous areas of memory.
+By contrast, the <code>vector</code> class implements a list of elements stored in a single area of memory, the same way C arrays work.
+All STL vectors have member functions that let you manage their elements; the <code>push_back</code> function, for example, adds an element to the end of the list:</p>
 
 <pre><code>monte.push_back(Monta(cavallo, giumenta));
 monte.push_back(Monta (asino, asina));       
@@ -843,8 +843,8 @@ monte.push_back(Monta (asino, giumenta));
 monte.push_back(Monta (cavallo, asina));
 </code></pre>
 
-<p>Gli <i id="iteratori-stl">iteratori</i> sono dei costrutti che permettono di scorrere il contenuto di un container, individuandone gli elementi.
-Ne abbiamo utilizzato uno nell’istruzione:</p>
+<p><i id="iteratori-stl">Iterators</i> are constructs that let you move through a container’s contents, picking out its elements.
+We used one in the instruction:</p>
 
 <pre><code>list&lt;Monta&gt;::iterator it;
 for (it=monte.begin(); it!=monte.end(); it++) {
@@ -852,10 +852,10 @@ for (it=monte.begin(); it!=monte.end(); it++) {
 }
 </code></pre>
 
-<p>La prima istruzione del ciclo <code>for</code> assegna all’iteratore <code>it</code> il primo elemento della lista, tornato dalla funzione membro <code>monte.begin</code>.
-La seconda istruzione, verifica che l’iteratore sia differente da <code>monte.end</code>, che punta alla fine della lista.
-La terza istruzione incrementa l’iteratore di una posizione e dimostra come la ridefinizione di un operatore per una classe renda il codice più facile da leggere: anche se tu non hai mai visto una classe template, capisci subito che quella istruzione incrementa il valore di <code>it</code> di un’unità.<br />
-Gli <i id="algoritmi-stl">algoritmi</i> della STL, definiti nell’header <code>&lt;algorithm&gt;</code> sono funzioni template che permettono di individuare, copiare, ordinare, unire o eliminare i dati all’interno di un container.</p>
+<p>The first instruction in the <code>for</code> loop assigns to the iterator <code>it</code> the first element of the list, returned by the member function <code>monte.begin</code>.
+The second instruction checks that the iterator is different from <code>monte.end</code>, which points to the end of the list.
+The third instruction increments the iterator by one position, and shows how redefining an operator for a class makes the code easier to read: even if you’ve never seen a template class before, you can immediately tell that instruction increments the value of <code>it</code> by one.
+The <i id="algoritmi-stl">algorithms</i> of the STL, defined in the <code>&lt;algorithm&gt;</code> header, are template functions that let you locate, copy, sort, merge, or remove data within a container.</p>
 
 <pre><code>/** 
  * @file src/polimorfismo-algoritmi.cpp
@@ -912,7 +912,7 @@ int main()
 
 </code></pre>
 
-<p>Se compili ed esegui questo codice, ottieni:</p>
+<p>If you compile and run this code, you get:</p>
 
 <pre><code>&gt; g++ src/cpp/polimorfismo-algoritmi.cpp -o src/out/esempio
 &gt; src/out/esempio                                          
@@ -923,7 +923,7 @@ int main()
 70 49 35 21 10
 </code></pre>
 
-<p>Le function-class o: <i id="functors-stl">functors</i> sono delle classi che ridefiniscono il comportamento dell’operatore <code>()</code> e che possono quindi agire come se fossero delle funzioni:</p>
+<p>Function-classes, or <i id="functors-stl">functors</i>, are classes that redefine the behavior of the <code>()</code> operator, and can therefore act as if they were functions:</p>
 
 <pre><code>/** 
  * @file src/polimorfismo-functor-stl.cpp
@@ -961,7 +961,7 @@ int main ()
 }
 
 </code></pre>
-<p>Utilizzati così, i <em>functor</em> hanno poco senso, ma possono essere (e sono) molto utili quando si utilizzano quelle funzioni della STl che elaborano tutti gli elementi di un container, come per esempio la funzione <code>transform</code>:</p>
+<p>Used this way, <em>functors</em> don’t make much sense, but they can be (and are) very useful when using those STL functions that process every element of a container, such as the <code>transform</code> function:</p>
 
 <pre><code>/** 
  * @file src/polimorfismo-rot13.cpp
@@ -1020,7 +1020,7 @@ int main ()
 }
 
 </code></pre>
-<p>Se compili ed esegui questo programma, otterrai :</p>
+<p>If you compile and run this program, you’ll get:</p>
 
 <pre><code>&gt; g++ src/cpp/polimorfismo-rot13.cpp -o src/out/esempio     
 &gt; ./src/out/esempio
@@ -1028,8 +1028,8 @@ CvccbCyhgb
 PippoPluto
 </code></pre>
 
-<p>Le funzioni ordinarie ti permettono di sfruttare l’algoritmo <code>transform</code> per cifrare un testo con un valore fisso, ma non puoi fare la stessa cosa utilizzando una chiave variabile, perché il quarto parametro non accetta funzioni con più di un parametro.
-Se provassi a utilizzarlo con qualcosa come:</p>
+<p>Ordinary functions let you use the <code>transform</code> algorithm to encrypt a text with a fixed value, but you can’t do the same thing using a variable key, because the fourth parameter doesn’t accept functions with more than one parameter.
+If you tried to use it with something like:</p>
 
 <pre><code>unsigned char cifra(unsigned char c, int chiave)
 {
@@ -1037,7 +1037,7 @@ Se provassi a utilizzarlo con qualcosa come:</p>
 }
 </code></pre>
 
-<p>otterresti l’errore:</p>
+<p>you would get the error:</p>
 
 <pre><code>/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/algorithm:1855:34: error: too few arguments to
       function call, expected 2, have 1
@@ -1050,7 +1050,7 @@ src/cpp/polimorfismo-transform-chiave.cpp:25:5: note: in instantiation of functi
     ^
 </code></pre>
 
-<p>È in questi casi che tornano utili i <em>functor</em>, perché possono essere inizializzati con uno o più valori specifici e poi essere utilizzati come funzioni unarie:</p>
+<p>This is exactly where <em>functors</em> come in handy, because they can be initialized with one or more specific values and then used as unary functions:</p>
 
 <pre><code>/** 
  * @file src/polimorfismo-functor.cpp
@@ -1108,62 +1108,62 @@ int main ()
 
 </code></pre>
 
-<p>Compilando ed eseguendo questo programma, ottieni :</p>
+<p>Compiling and running this program, you get:</p>
 
 <pre><code>&gt; g++ src/cpp/polimorfismo-functor.cpp -o src/out/esempio
 &gt; ./src/out/esempio
 QjqqpQmvup
 </code></pre>
-<p>che corrisponde ai caratteri della stringa <em>PippoPluto</em> incrementati di un’unità.</p>
+<p>which corresponds to the characters of the string <em>PippoPluto</em> each incremented by one.</p>
 
 <hr id="dottrina" />
 
-<p>Da migliaia di anni, gli uomini cercano di capire quale sia il significato dell’Esistenza.<br />
-Le risposte che si sono dati variano a seconda del periodo storico e del territorio in cui il profeta o il filosofo ha vissuto, ma hanno tutte una particolarità: richiedono ai loro seguaci l’accettazione di postulati non dimostrabili, come l’esistenza di una o più divinità o di stati di esistenza diversi da quello che conosciamo.
-Anche la Scienza ha provato a dare delle risposte agli stessi interrogativi, ma la sua indagine si è limitata agli aspetti pratici del problema: ha prodotto delle interessanti teorie sulla genesi dell’Universo e sugli eventi che hanno portato alla nostra esistenza, ma non si è mai pronunciata su quello che potrebbe essere il nostro ruolo in tutto ciò, con le conseguenze di cui abbiamo parlato durante <a href="/en/memoria#delete" class="xref">la lezione sulla memoria</a>.<br />
-Il Maestro Canaro, che non riusciva ad accettare né i dogmi delle religioni tradizionali né lo scollamento fra uomo e Universo prodotto dalle ipotesi scientifiche, si pose una domanda:</p>
+<p>For thousands of years, humans have tried to understand what the meaning of Existence is.
+The answers they’ve come up with vary depending on the historical period and the region where the prophet or philosopher lived, but they all share one peculiarity: they require their followers to accept unprovable postulates, such as the existence of one or more divinities, or of states of existence different from the one we know.
+Science too has tried to answer these same questions, but its inquiry has been limited to the practical aspects of the problem: it has produced interesting theories about the origin of the Universe and the events that led to our existence, but it has never taken a position on what our role in all this might be, with the consequences we discussed during <a href="/en/memoria#delete" class="xref">the lesson on memory</a>.
+Master Canaro, who couldn’t accept either the dogmas of traditional religions or the disconnect between man and the Universe produced by scientific hypotheses, asked himself a question:</p>
 
 <blockquote>
-  <p>È possibile dare una spiegazione dell’Esistenza sfruttando solo ciò di cui abbiamo esperienza diretta?</p>
+  <p>Is it possible to explain Existence using only what we have direct experience of?</p>
 </blockquote>
 
-<p>La maggior parte delle religioni, per “funzionare”, richiede da una a tre dimensioni aggiuntive, oltre quelle note; la Scienza, per le sue <em>super-stringhe</em> ha bisogno almeno di sette dimensioni aggiuntive, ovvero il doppio di quelle che servono per un Aldilà non spirituale.
-Esiste una spiegazione più semplice?<br />
-Non essendo né un filosofo né un mistico, approcciò lo sviluppo della sua dottrina come se fosse stata un sistema software.
-Per prima cosa fece un’analisi del “sistema in esercizio”, evidenziandone i principali difetti; poi identificò delle vulnerabilità logiche delle religioni canoniche e definì delle linee-guida atte a prevenirle; infine, descrisse le caratteristiche del C’hi++, spiegando come queste avrebbero potuto risolvere alcuni dei problemi evidenziati in precedenza.
-Come scrisse nella <a href="/proposta#errori" class="xref">Proposta</a>, ci sono dei “bug” che possiamo considerare comuni a tutte le metafisiche:</p>
+<p>Most religions, to “work”, require between one and three additional dimensions, beyond the known ones; Science, for its <em>superstrings</em>, needs at least seven additional dimensions — twice as many as are needed for a non-spiritual Afterlife.
+Is there a simpler explanation?
+Being neither a philosopher nor a mystic, he approached the development of his doctrine as if it were a piece of software.
+First he analyzed the “system in production”, highlighting its main flaws; then he identified logical vulnerabilities in canonical religions and defined guidelines meant to prevent them; finally, he described the features of C’hi++, explaining how they could solve some of the problems he’d identified earlier.
+As he wrote in the <a href="/proposta#errori" class="xref">Proposal</a>, there are “bugs” we can consider common to all metaphysical systems:</p>
 
 <blockquote>
-
+  <ul> <li>dogmas, which are the foundations of doctrines, are easily attacked because they cannot be proven, only accepted on faith;</li> <li>a religion may have difficulty modifying its own doctrine, even when it's evident that one of its dogmas is wrong;</li> <li>challenging a dogma almost inevitably causes a split, and splits are likely to lead to conflicts.</li></ul>
 </blockquote>
 
-<p>ed altri, che possiamo considerare comuni agli esseri umani:</p>
+<p>and others, which we can consider common to human beings:</p>
 
 <blockquote>
-
+  <ul><li>the tendency to defend one's own principles even by means that contradict those very principles;</li> <li>the tendency to let one's hopes influence one's objectivity.</li></ul>
 </blockquote>
 
-<p>Per correggere o quanto meno mitigare questi problemi, la sua metafisica avrebbe dovuto:</p>
+<p>To fix, or at least mitigate, these problems, his metaphysics needed to:</p>
 
 <blockquote>
-
+  <ul> <li>limit the number of dogmas;</li> <li>limit metaphysical elements and matters accepted on faith;</li> <li>do not present itself as the One Unquestionable Truth, but as a certainly incomplete and perfectible approximation of the Truth;</li> <li>recognize the contradictions of the doctrine and analyze them objectively, even if this leads to modifying the doctrine itself.</li> </ul>
 </blockquote>
 
-<p>Il Maestro Canaro applicò allo sviluppo della sua <em>metafisica-non-metafisica</em> lo stesso approccio che adottava quando doveva realizzare un software.
-Ci sono due modi diversi di progettare un software: il primo consiste nell’analizzare tutti i sistemi che svolgono azioni simili, prendere il meglio di ciascuno e metterlo nel nuovo sistema; in alternativa, si può progettare il sistema da zero e solo quando se ne è definita per grandi linee la struttura, studiare le soluzioni adottate dagli altri, integrandole nel proprio programma se lo si ritiene utile.
-Il primo approccio è più rapido e sicuro, ma tende a produrre risultati ripetitivi; il secondo approccio è più complesso, sia in termini di analisi che di implementazione, ma facilita l’innovazione perché l’immaginazione dell’analista non è condizionata da ciò che ha visto.<br />
-Essendo un sostenitore del secondo metodo, il Maestro Canaro lo applicò anche al C’hi++ e, dopo alcuni di anni di studio, arrivò alla conclusione che non solo è possibile ipotizzare una cosmogonia quasi del tutto priva di elementi metafisici (non del tutto priva, perché, come vedremo <a href="/en/stream#dottrina" class="xref">in seguito</a>, una dose minima di trascendenza è necessaria per garantire la buona funzionalità della dottrina), ma che i precetti di questa dottrina erano compatibili con molti  principii delle religioni canoniche.</p>
+<p>Master Canaro applied to the development of his <em>non-metaphysical metaphysics</em> the same approach he used when he had to build a piece of software.
+There are two different ways to design software: the first is to analyze every system that carries out similar tasks, take the best of each, and put it into the new system; alternatively, you can design the system from scratch, and only once its overall structure is defined, study the solutions adopted by others, folding them into your own program if you think they’re useful.
+The first approach is faster and safer, but tends to produce derivative results; the second approach is more complex, both in terms of analysis and implementation, but makes innovation easier, because the analyst’s imagination isn’t constrained by what they’ve already seen.
+Being a proponent of the second method, Master Canaro applied it to C’hi++ too, and, after some years of study, concluded not only that it’s possible to hypothesize a cosmogony that’s almost entirely free of metaphysical elements (not entirely free, because, as we’ll see <a href="/en/stream#dottrina" class="xref">later on</a>, a minimal dose of transcendence is needed to guarantee the doctrine works properly), but that the precepts of this doctrine were compatible with many principles of canonical religions.</p>
 
 <hr id="portabilita" />
 
-<p>Il C’hi++ ereditò alcuni concetti proprii delle filosofie note al Maestro Canaro, come il dualismo Gravità/Elettricità elaborato da Poe in <em>Eureka</em>, che lo aveva affascinato per il modo in cui trasformava una forza cieca e inspiegabile come la Gravità nell’intenzione, cosciente, di tutto ciò che esiste di tornare a essere Uno.
-D’altro canto, la dottrina del Maestro Canaro rinnegò alcuni concetti comuni a molte religioni, come la possibilità di sottrarsi al ciclo delle rinascite o la presenza di punizioni o premii <em>ad-personam</em>.<br />
-Così come quando si analizza il funzionamento di un software non ci si cura delle singole variabili, ma si pensa al flusso complessivo del sistema, così il C’hi++ vede l’esistenza non in termini di interazioni fra individui, ma come l’evoluzione del flusso dell’Energia dell’Uno all’interno della matrice tridimensionale degli spazioni.
-Per il C’hi++ non esistono né anime, né fiumi infernali e chi muore in mare non troverà ad accoglierlo Rán, nella sua birreria in fondo al mare, ma verrà semplicemente riciclato, come le aree di memoria RAM all’interno di un computer.<br />
-Le nostre esistenze sono incidentali; pensare di punirle o di premiarle non avrebbe senso e contrasterebbe con il principio generale che tutto ciò che esiste è la manifestazione di un’unica Entità.
-Come ti ho detto all’inizio di queste lezioni, non è possibile andare in Paradiso o all’Inferno da soli: qualunque cosa avvenga nell’Universo, ci riguarda tutti.<br />
-Questo però non vuol dire che il C’hi++ rifiuti tutti concetti delle religioni che lo hanno preceduto; anzi.
-Molti precetti del C’hi++ sono compatibili con precetti o idee appartenenti ad altre mistiche o filosofie e si tratta spesso di filosofie che il Maestro Canaro non conosceva, quando pose la basi della sua dottrina.
+<p>C’hi++ inherited some concepts from philosophies Master Canaro already knew, like the Gravity/Electricity dualism developed by Poe in <em>Eureka</em>, which had fascinated him for the way it turned a blind and inexplicable force like Gravity into the conscious intention, shared by everything that exists, to become One again.
+On the other hand, Master Canaro’s doctrine rejected some concepts common to many religions, such as the possibility of escaping the cycle of rebirth, or the presence of <em>ad-personam</em> punishments or rewards.
+Just as when you analyze how a piece of software works you don’t concern yourself with individual variables, but think about the overall flow of the system, so C’hi++ sees existence not in terms of interactions between individuals, but as the evolution of the flow of the One’s Energy within the three-dimensional matrix of the spazioni.
+For C’hi++ there are no souls, no infernal rivers, and whoever dies at sea won’t be welcomed by Rán, in her tavern at the bottom of the sea, but will simply be recycled, like RAM memory areas inside a computer.
+Our existences are incidental; the idea of punishing or rewarding them would make no sense, and would clash with the general principle that everything that exists is the manifestation of a single Entity.
+As I told you at the beginning of these lessons, it isn’t possible to go to Heaven or Hell alone: whatever happens in the Universe concerns all of us.
+This, however, doesn’t mean C’hi++ rejects every concept from the religions that came before it; quite the opposite.
+Many precepts of C’hi++ are compatible with precepts or ideas belonging to other mystical traditions or philosophies, and these are often philosophies Master Canaro didn’t know when he laid the foundations of his doctrine.
 <!--
 @todo: valutare se inserire questo brano; al momento, non mi convince.
 Per esempio, il Maestro Canaro non lesse mai (con suo grande rammarico) la *Divina Commedia*; ciò non ostante, il C'hi++ ha un punto di contatto con la visione dantesca dell'Aldilà come conseguenza del pentimento.
@@ -1171,90 +1171,89 @@ Dante mette in Purgatorio i peccatori che hanno capito di aver sbagliato, mentre
 Come abbiamo detto <a href="/en/istruzioni-condizionali#pentimento" class="xref">in precedenza</a> e come vedremo durante la lezione sul <a href="/en/debug#pentimento" class="xref">debug</a>, il C'hi++ concorda con questa idea.  
 Similmente, ci
 -->
-Per esempio, ci sono diverse affinità fra il C’hi++ e la <em>Bhagavad-Gita</em>, anche se il Maestro Canaro la lesse mentre stava redigendo la <em>Proposta</em>, quando i punti nodali del suo Credo erano già stati definiti da una decina d’anni.
-Oltre alla citazione che ti ho fatto parlando del <a href="/en/programmatore#azione" class="xref">programmatore</a>, nella <em>Gita</em> è possibie trovare alcuni brani che ricordano molto le affermazioni contenute in <em>Sostiene Aristotele</em>; per esempio, quelle sulla natura dell’Universo:</p>
+For example, there are several affinities between C’hi++ and the <em>Bhagavad-Gita</em>, even though Master Canaro only read it while drafting the <em>Proposal</em>, when the key points of his Creed had already been settled for about ten years.
+Besides the citation I gave you when talking about the <a href="/en/programmatore#azione" class="xref">programmer</a>, in the <em>Gita</em> you can find several passages strongly reminiscent of the statements found in <em>Sostiene Aristotele</em>; for example, those about the nature of the Universe:</p>
 
 <blockquote>
-  <p>Alla fine del proprio ciclo d’esistenza, un mondo collassa su se stesso, riassorbendo in una massa tenebrosa ogni forma di manifestazione: esseri viventi e oggetti inanimati giacciono allo stato latente in una condizione caotica.
-I cicli cosmici sono periodi temporali chiamati Manvantara, suddivisi al proprio interno in quattro ere o Yuga, ciascuna caratterizzata da una particolare qualità dell’esistenza. Si tratta di un ritorno periodico a condizioni di vita non uguali ma analoghe, da un punto di vista qualitativo, a quelle dei cicli precedenti, una successione di quattro ere che ricorda, su scala ridotta, l’alternarsi delle quattro stagioni.</p>
+  <p>At the end of its own cycle of existence, a world collapses in on itself, reabsorbing every form of manifestation — living beings and inanimate objects alike — into a dark mass, where they lie latent in a chaotic condition.
+The cosmic cycles are time-periods called Manvantara, each subdivided internally into four eras or Yugas, each characterized by a particular quality of existence. It is a periodic return to conditions of life that are not identical but analogous, from a qualitative point of view, to those of the preceding cycles — a succession of four eras that echoes, on a smaller scale, the alternation of the four seasons.</p>
 </blockquote>
 
-<p>O sul dualismo Gravità/Entropia :</p>
+<p>Or about the Gravity/Entropy dualism:</p>
 
 <blockquote>
-  <p>Il Sāṁkhya, la dottrina su cui si fonda lo Yoga, parla di due princìpi che, interagendo tra loro, manifestano l’intero universo con tutti gli esseri viventi e gli oggetti inanimati che lo popolano: Prakṛti, il polo materiale e femminile, e Puruṣa, quello spirituale e maschile; nell’essere umano Prakṛti costituisce il corpo e la mente, che diventano la dimora dell’anima individuale (puruṣa).</p>
+  <p>Sāṃkhya, the doctrine on which Yoga is founded, speaks of two principles which, interacting with one another, manifest the entire universe along with all the living beings and inanimate objects that populate it: Prakṛti, the material and feminine pole, and Puruṣa, the spiritual and masculine one; in the human being, Prakṛti constitutes the body and mind, which become the dwelling place of the individual soul (puruṣa).</p>
 </blockquote>
 
-<p>O su quelli che lui definiva: i <em>Cookie</em>:</p>
+<p>Or about what he called the <em>Cookies</em>:</p>
 
 <blockquote>
-  <p>Ci sono due categorie di saṁskāra; la prima consiste nelle vāsanā, che sono impressioni lasciate nella mente dagli avvenimenti passati, tracce qui conservate allo stato latente ma pronte a manifestarsi in presenza delle condizioni adatte, cioè di situazioni analoghe a quelle che le hanno generate, e che le attiverebbero a causa della loro affinità. Sulla spinta delle vāsanā, una volta che siano attivate, e degli stati d’animo che queste manifestano, l’individuo presenta una tendenza inconscia ad agire in un determinato modo, e più in generale ad avere un certo tipo di comportamento, di sensibilità, di carattere; si tratta di una predisposizione innata che lo induce, nel bene come nel male, ad un comportamento analogo a quello che ha tenuto in passato, creando un circolo vizioso (o virtuoso) che si autoalimenta.</p>
+  <p>There are two categories of saṃskāra; the first consists of the vāsanā, impressions left in the mind by past events, traces kept here in a latent state but ready to manifest in the presence of suitable conditions — that is, of situations similar to those that generated them, which would activate them because of their affinity. Driven by the vāsanā, once activated, and by the states of mind these manifest, the individual displays an unconscious tendency to act in a certain way, and more generally to have a certain kind of behavior, sensitivity, character; it is an innate predisposition that leads them, for better or worse, toward behavior similar to what they exhibited in the past, creating a vicious (or virtuous) circle that feeds on itself.</p>
 </blockquote>
 
-<p>Puoi trovare delle analogie con i precetti del C’hi++ anche nel <em>Mantiq al-Tayr</em>:</p>
+<p>You can also find analogies with C’hi++’s precepts in the <em>Mantiq al-Tayr</em>:</p>
 
 <blockquote>
-  <p>Tutto è un’unica sostanza in molteplici forme, tutto è un unico discorso in diverse espressioni (…) Egli sfugge a ogni spiegazione, a qualsiasi attributo. Di Lui soltanto una pallida idea ci è concessa, dare compiuta notizia di Lui è impossibile. Per quanto bene o male si parli di Lui, in realtà d’altri non si parla che di se stessi.</p>
+  <p>Everything is a single substance in countless forms, everything is a single discourse in different expressions (…) He escapes all explanation, any attribute. Of Him only a pale idea is granted us; to give a full account of Him is impossible. However well or ill one speaks of Him, in reality one speaks of nothing but oneself.</p>
 </blockquote>
 
-<p>o anche:</p>
+<p>or also:</p>
 
 <blockquote>
-  <p>O Creatore, tutto il male o il bene che feci,<br />in verità lo feci solo a me stesso.</p>
+  <p>O Creator, whatever evil or good I did,<br />in truth I did it only to myself.</p>
 </blockquote>
 
-<p>Per certi versi anche la stessa Genesi biblica può essere considerata un’allegoria della cosmogonia spazionista: il Paradiso è l’Uno primigenio, mentre Adamo (<em>Puruṣa</em>) ed Eva (<em>Prakṛti</em>) sono l’Ente che ne causa la disgregazione, generando un Universo dove si partorisce nel dolore e dove ci si deve guadagnare il pane con il sudore della fronte.<br />
-Il Maestro Canaro pensava che tutto questo fosse normale.
-Come scrisse nel <a href="https://github.com/TacunIT/chi-plus-plus/blob/master/MANIFEST.md" target="github">MANIFEST</a> GitHub del C’hi++:</p>
+<p>In some ways, even the biblical Genesis itself can be read as an allegory of spazionist cosmogony: Paradise is the primordial One, while Adam (<em>Puruṣa</em>) and Eve (<em>Prakṛti</em>) are the Entity that causes its disintegration, giving rise to a Universe where one gives birth in pain and must earn one’s bread by the sweat of one’s brow.
+Master Canaro thought all of this was perfectly normal.
+As he wrote in C’hi++’s GitHub <a href="https://github.com/TacunIT/chi-plus-plus/blob/master/MANIFEST.md" target="github">MANIFEST</a>:</p>
 
 <blockquote>
-
+  <p>Stripped of their trappings and reduced to their essential features, the various metaphysical hypotheses have much in common, because they are all, in one way or another, the answer to the same need: the search for a justification for our existence.</p>
 </blockquote>
 
-<p>In una nota della mappa mentale su cui basò lo sviluppo iniziale della dottrina, aggiunse:</p>
+<p>In a note on the mind map on which he based the initial development of the doctrine, he added:</p>
 
 <blockquote>
-
+  <p>Could the various religions be derived forms of one and the same original mysticism? Do there exist common “member data” and functions, redefined over time, but tracing back to an initial body of beliefs (or notions)? Even just on this map, several can be found (e.g. Empedocles -&gt; Poe). Just as the classes of an Object-Oriented language are redefined to fit a specific context of use, so too the original Mysticism may have been “overloaded” to fit a specific place or time. If that were the case, the further back you go in time — and thus in the class hierarchy — the closer you should get to the true characteristics of the Mysticism. Is it possible to define a hierarchy of classes descending from the abstract class <code>Creed</code>? Simplifying a great deal (since it’s 3 a.m.): Buddha and Zoroaster influence the Greeks, who influence the Jews, who in turn influence the Christians, who eventually produce the Jehovah’s Witnesses… Likewise (again simplifying), C++ evolved from C, and Java from C++.</p>
 </blockquote>
 
-<p>Solo alcuni anni dopo, annotò questa frase in un libro di Guenon:</p>
+<p>Only a few years later, he wrote this line in the margin of a book by Guénon:</p>
 
 <blockquote>
-  <p>Il vero spirito tradizionale, quale si sia la forma da esso rivestita, è in fondo sempre e ovunque lo stesso; le forme diverse, specificamente adatte a queste o quelle condizioni mentali, a queste o quelle circostanze di tempo e di luogo, sono solo le espressioni di una unica e sola verità.<a class="nota" href="/en/note#fn-guenon-spirito" id="guenon-spirito">1</a></p>
+  <p>The true traditional spirit, whatever the form it takes, is at bottom always and everywhere the same; the different forms, specifically adapted to these or those mental conditions, to these or those circumstances of time and place, are only the expressions of one and the same truth.<a class="nota" href="/en/note#fn-guenon-spirito" id="guenon-spirito">1</a></p>
 </blockquote>
 
 <hr id="igm" />
 
-<p>Fra il C’hi++ e le religioni canoniche c’è la stessa differenza che passa fra una mappa topografica e un’immagine da satellite.<br />
-Quel senza Dio di Dawkins, ha detto che:</p>
+<p>Between C’hi++ and canonical religions there’s the same difference as between a topographic map and a satellite image.
+That godless Dawkins once said:</p>
 
 <blockquote>
-  <p>Uno dei caratteri di una folle stravaganza è un uso troppo entusiasta dell’analogia.<a class="nota" href="/en/note#fn-dawkins-analogia" id="dawkins-analogia">2</a></p>
+  <p>One of the marks of foolish extravagance is an overly enthusiastic use of analogy.<a class="nota" href="/en/note#fn-dawkins-analogia" id="dawkins-analogia">2</a></p>
 </blockquote>
 
-<p>Una frase curiosa, da parte di un esponente di una setta che cerca di descrivere tutto ciò che esiste con analogie matematiche e nega l’esistenza di ciò che non riesce a convertire..<br />
-Entusiasmi a parte, le mappe e le immagini da satellite hanno diverse analogie con le discipline metafisiche.
-Anche le mappe e le immagini, come la metafisica, sono costrette a rappresentare il loro soggetto a un rapporto di scala ridotto e con due sole dimensioni in vece di tre (o di quattro se, oltre alla profondità, vuoi considerare anche il tempo).
-Anche le mappe e le immagini, per questo motivo, devono rappresentare il loro soggetto per mezzo di analogie: le carte topografiche usano delle linee altimetriche e dei simboli; le immagini satellitari usano dei pixel o dei piccoli punti di colore.
-In nessuno dei due casi ciò che noi vediamo è davvero ciò che rappresenta; è il nostro cervello che decide di crederlo tale: nel caso della carta topografica, perché la legenda ci permette di definire una correlazione fra significato e significante; nel caso dell’immagine, perché il nostro occhio riconosce in quelle combinazioni di pixel o di punti di colore degli alberi, il mare o delle case.<br />
-Un’altra analogia, conseguenza dei due punti precedenti, è che è sbagliato confondere i simboli con ciò che rappresentano: i quadratini scuri delle mappe <em>non</em> sono case; i punti colorati delle immagini <em>non</em> sono un bosco.
-Mappe e immagini hanno senso solo a un certo livello di lettura; se lo oltrepassiamo, se cerchiamo di ottenere più informazioni o verosimiglianza avvicinando lo sguardo, otteniamo l’effetto opposto, perché i simboli si rivelano per quello che sono: punti colorati o linee su un foglio.
-Questo però non vuol dire che ciò che rappresentano sia falso, ma che noi non stiamo guardando con <em>il giusto paio di occhi</em>, come direbbe Hunter Thompson.<br />
-Il Maestro Canaro pensava che fosse per questo motivo che alcune religioni sono contrarie alla rappresentazione diretta della Divinità: perché è facile che poi si confonda il simbolo con ciò che rappresenta.
+<p>A curious statement, coming from a member of a sect that tries to describe everything that exists through mathematical analogies, and denies the existence of whatever it can’t convert..
+Enthusiasm aside, maps and satellite images have several things in common with metaphysical disciplines.
+Maps and images too, like metaphysics, are forced to represent their subject at a reduced scale, and with only two dimensions instead of three (or four, if, besides depth, you also want to factor in time).
+For this reason, maps and images too have to represent their subject by means of analogies: topographic maps use contour lines and symbols; satellite images use pixels or tiny colored dots.
+In neither case is what we see actually what it represents; it’s our brain that decides to believe it is: in the case of the topographic map, because the legend lets us establish a correlation between meaning and symbol; in the case of the image, because our eye recognizes trees, the sea, or houses in those combinations of pixels or colored dots.
+Another analogy, a consequence of the two points above, is that it’s a mistake to confuse symbols with what they represent: the little dark squares on maps are <em>not</em> houses; the colored dots in the images are <em>not</em> a forest.
+Maps and images only make sense at a certain level of reading; if we go beyond it, if we try to get more information or more realism by looking closer, we get the opposite effect, because the symbols reveal themselves for what they are: colored dots or lines on a sheet of paper.
+This doesn’t mean that what they represent is false, though, only that we aren’t looking with <em>the right pair of eyes</em>, as Hunter Thompson would say.
+Master Canaro thought this was the reason some religions oppose the direct depiction of the Divinity: because it’s easy to end up confusing the symbol with what it represents.
 <!--
 Agli Ebrei è vietato dal secondo Comandamento e anche i Cristiani si attennero a questa regola fino al Concilio di Nicea del 787.
 @todo: verificare regole simili per l'Islam.
 -->
-Tornando al paragone iniziale, le religioni tradizionali sono delle immagini da satellite, mentre il C’hi++ è una mappa topografica.<br />
-Mentre i Credi religiosi riescono a riprodurre — nei limiti imposti dalla nostra condizione — tutta la bellezza del Creato, il C’hi++ si limita a darne una descrizione schematica, più povera di contenuti e di poesia, ma più facile da accettare per chi non abbia la benedizione della Fede.
-Un’immagine da satellite ha un valore contemplativo: è bella da guardare sullo schermo del tuo computer o anche da appendere al muro, come un quadro, ma
-se ti sei perso in un bosco o in mezzo ai monti, una mappa topografica, proprio in virtù della sua schematicità, ti permetterà più facilmente di ritrovare la strada di casa.<br />
-Il C’hi++ non cerca di rubare fedeli alle religioni canoniche.
-Non avrebbe senso: sarebbe come cercare di convincere chi sia già sposato con l’amore della sua vita a fare un matrimonio di interesse: se tu hai la Fede non hai bisogno di conferme razionali; possono compiacerti, ma non ti sono necessarie.
-Il C’hi++, però, può dare forza a quelle (tante) persone che <em>ancora credono in tutto ciò in cui più nessuno crede</em>, come li descrisse Longanesi; quella <em>Banda degli Onesti</em><a class="nota" href="/en/note#fn-banda-onesti" id="banda-onesti">3</a> che tutti i giorni fa il proprio dovere al meglio possibile anche se non gli conviene, anche tutto e tutti intorno a loro sembrano spingerli all’egoismo e all’indifferenza.
-Può aiutarli a non arrendersi e può insegnare loro che non è importante vincere le partite, ma giocare sempre meglio.
-Riconoscere gli sbagli che si sono fatti, imparare da essi e cercare di non ripeterli più, partita dopo partita, in una ricerca continua del meglio.
-Se si comporteranno così, qualunque sarà il loro lavoro, fosse anche pulire i cessi, sarà comunque Arte.</p>
+Going back to our original comparison, traditional religions are satellite images, while C’hi++ is a topographic map.
+While religious Creeds manage to reproduce — within the limits imposed by our condition — all the beauty of Creation, C’hi++ limits itself to giving a schematic description of it, poorer in content and in poetry, but easier to accept for those who don’t have the blessing of Faith.
+A satellite image has contemplative value: it’s beautiful to look at on your computer screen, or even to hang on a wall, like a painting, but if you’ve gotten lost in a forest or in the middle of the mountains, a topographic map, precisely because of its schematic nature, will more easily let you find your way home.
+C’hi++ doesn’t try to steal followers away from canonical religions.
+That would make no sense: it would be like trying to convince someone already married to the love of their life to enter a marriage of convenience instead — if you have Faith, you don’t need rational confirmations; they might please you, but you don’t need them.
+What C’hi++ can do, though, is give strength to those (many) people who <em>still believe in everything no one believes in anymore</em>, as Longanesi described them; that <em>Band of Honest Men</em><a class="nota" href="/en/note#fn-banda-onesti" id="banda-onesti">3</a> who, every day, do their duty as best they can even when it doesn’t pay off, even when everything and everyone around them seems to push them toward selfishness and indifference.
+It can help them not to give up, and can teach them that winning isn’t what matters — playing ever better is.
+Recognizing the mistakes you’ve made, learning from them, and trying not to repeat them, game after game, in a continuous search for the best you can do.
+If they behave this way, whatever their job is, even if it’s cleaning toilets, it will still be Art.</p>
 
 <!--
 
