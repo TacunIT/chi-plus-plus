@@ -1,3 +1,8 @@
+## 2.0.2 (July 02, 2026)
+  - Aggiornato file CSS
+  - Corretto allineamento legenda copertina
+  - Corretti stili degli elementi del menu
+
 ## 2.0.1 (July 02, 2026)
   - Correzioni minori al menu
   - Rimosso avviso per telefono verticale
