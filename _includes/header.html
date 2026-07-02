@@ -1,8 +1,11 @@
 <header>
-    <a href="/"><img class="logo" alt="C'hi++" title="C'hi plus plus" src="/assets/img/chi-plus-plus.png"></a>
+    <a href="/"
+        ><img
+            class="logo"
+            alt="C'hi++"
+            title="C'hi plus plus"
+            src="/assets/img/chi-plus-plus.png"
+    /></a>
     <p class="titolo">{{ site.title }} - {{ site.claim }}</p>
-    {% if page.class != "copertina" %}
-    {%- include menu.html -%}
-    {% endif %}
-    <p class="gira">{{ site.data.strings[page.lang].gira_telefono }}</p>
+    {% if page.class != "copertina" %} {%- include menu.html -%} {% endif %}
 </header>
