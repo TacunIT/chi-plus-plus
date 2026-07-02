@@ -477,6 +477,9 @@ BODY.manuale.copertina SECTION#info TABLE TH,
 BODY.manuale.copertina SECTION#info TABLE TD {
     border: none;
 }
+SECTION#info TABLE TD:nth-child(2) {
+    text-align: left;
+}
 BODY.manuale.dedica MAIN {
     margin: 20vh auto;
 }
