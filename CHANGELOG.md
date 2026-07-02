@@ -1,3 +1,14 @@
+## 2.0.0 (July 02, 2026)
+  - Completata la traduzione in Inglese dei capitoli
+  - Revisione del menu
+  - Corretti valori front matter per IT
+  - Correzione refusi
+  - Aggiunto layout senza motto per introduzione
+  - Unificato layout copertina
+  - Corretto il file _config.yml
+  - Aggiornamento del sito
+  - Aggiornata l'immagine OG di default
+
 ## 1.3.4 (July 13, 2025)
   - Corretto errore nei Ringraziamenti
   - Redazione lettera Rovelli
