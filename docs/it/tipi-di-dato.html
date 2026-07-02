@@ -603,7 +603,7 @@ int main()
 
 <p>Come vedi, i bit sono gli stessi, ma cambiando il tipo di dato associato al puntatore e quindi la sua dimensione, il valore dei dati diventa un altro e la conversione dei numeri in lettere perde di significato.<br />
 Le istruzioni: <code>p1++</code> e <code>p2++</code> incrementano di un’unità il puntatore, ovvero lo spostano in avanti nella memoria del numero di byte corrispondenti alla dimensione del tipo di dato a cui è associato.
-Il puntatore <code>p1</code> è un <code>unsigned char</code>, quindi si sposta di otto bit; il puntatore <code>p12</code> è uno <code>short int</code>, quindi si sposta di sedici bit.
+Il puntatore <code>p1</code> è un <code>unsigned char</code>, quindi si sposta di otto bit; il puntatore <code>p2</code> è uno <code>short int</code>, quindi si sposta di sedici bit.
 È questo il motivo per cui il secondo ciclo di lettura dura la metà del primo: perché la quantità di bit letta per ogni iterazione è doppia.
 Se mi fossi distratto e avessi copiato il codice del primo ciclo di lettura così com’è, senza dividere per due il numero di cicli, il puntatore avrebbe continuato a “camminare” in avanti nella memoria, oltre i confini dell’array e questo, come vedremo in seguito, non è assolutamente bene.<br />
 Le <em>reference</em> sono degli alias delle variabili a cui sono associati.

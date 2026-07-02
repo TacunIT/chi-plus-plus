@@ -20,7 +20,7 @@
     <meta property="og:url"          content="https://chiplusplus.org/it/funzioni" />
     <meta property="og:type"         content="website" />
     <meta property="og:title"        content="Le funzioni" />
-    <meta property="og:description"  content="Un suggerimento di Jacopone da Todi - Il problema dei romanzi - Le regole di vita di Myamoto Musashi - La Verità è una modella - La Via del carpentiere." />
+    <meta property="og:description"  content="Il problema dei romanzi - Le regole di vita di Miyamoto Musashi - La Verità è una modella - La Via del carpentiere." />
     <meta property="og:image:width"  content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image"        content="https://chiplusplus.org/assets/img/og-img/funzioni.jpg" />
@@ -81,7 +81,7 @@
 
 <p>Lo scopo delle funzioni è di migliorare la gestione del codice.
 È possibile scrivere un programma che abbia solo la funzione <code>main</code>, ma questo ha un senso solo per programmi molto semplici, come alcuni degli esempii che abbiamo visto finora.
-Il flusso di un programma <em>non banale</em>, come direbbe Stroutsup, sarà sempre suddiviso in più funzioni perché in questo modo il codice sarà più facile da leggere, da correggere e da modificare.</p>
+Il flusso di un programma <em>non banale</em>, come direbbe Stroustrup, sarà sempre suddiviso in più funzioni perché in questo modo il codice sarà più facile da leggere, da correggere e da modificare.</p>
 
 <pre><code>/** 
  * @file tipi-di-dato-dimensione.cpp
@@ -369,7 +369,7 @@ float raddoppiaStipendio(float stipendio)
 
 </code></pre>
 
-<pre><code>g++ -c src/cpp/funzioni-stipendio errore.cpp                                                    
+<pre><code>g++ -c src/cpp/funzioni-stipendio-errore.cpp                                                    
 
 src/cpp/funzioni-stipendio-errore.cpp:13:18: error: use of undeclared identifier 'raddoppiaStipendio'
     std::cout &lt;&lt; raddoppiaStipendio(1500) &lt;&lt; std::endl;    
@@ -878,7 +878,7 @@ printf("stringa: %s; intero: %d", "codice errore", -1);
 <pre><code>void log(int livello, int n_parametri, ...);
 </code></pre>
 
-<p>Nella definizione della funzione, per gestire i parametri, è necessario creare un ciclo di lettura utilizzando tre marco definite nel file <code>stdarg.h</code>:</p>
+<p>Nella definizione della funzione, per gestire i parametri, è necessario creare un ciclo di lettura utilizzando tre macro definite nel file <code>stdarg.h</code>:</p>
 
 <pre><code>void va_start(va_list ap, lastfix);
 type va_arg(va_list ap, type);
@@ -1065,7 +1065,7 @@ Un altro tipo di ricorsione di cui diffidare è quella con cui si cerca, alle vo
 
 <hr id="dottrina" />
 
-<p>In un romanzo sulla vita dello spadaccino giapponese Myamoto Musashi c’è una frase che è la logica conseguenza del suggerimento di Jacopone da Todi:</p>
+<p>In un romanzo sulla vita dello spadaccino giapponese Miyamoto Musashi c’è una frase che è la logica conseguenza del suggerimento romanesco di cui ti ho parlato ieri:</p>
 
 <blockquote>
   <p>Non bisogna interferire nel funzionamento dell’Universo, ma prima è necessario capire quale sia, il funzionamento dell’Universo<a href="/it/note#fn-musashi" class="nota" id="musashi">4</a></p>
@@ -1083,7 +1083,7 @@ Per fortuna, Musashi — quello vero, il Samurai —, fu sempre molto chiaro sia
 Nel <em>Libro dei Cinque Anelli</em>, diede ai suoi discepoli nove regole di vita:
 <!--
  @todo: verificare la traduzione di questi punti e dei successivi
- @nota: uso il nome (Musashi) in vece del cognome (Myamoto), così come direi "Raffaello" o "Michelangelo".
+ @nota: uso il nome (Musashi) in vece del cognome (Miyamoto), così come direi "Raffaello" o "Michelangelo".
 --></p>
 
 <blockquote>
