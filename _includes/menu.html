@@ -1,3 +1,4 @@
+{% if page.class == "capitolo" %}
 <nav class="menu-top">
     <a
         title="{{ site.data.strings[page.lang].vai_a }}: {{page.previous.title}}"
@@ -27,6 +28,13 @@
         <i class="fa fa-home fa-2x" aria-hidden="true"></i>
     </a>
     <a
+        href="/{{ page.lang }}/indice"
+        class="center"
+        title="{{ site.data.strings[page.lang].torna_indice }}"
+    >
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
         href="{{ site.url_github }}"
         target="github"
         class="center"
@@ -34,6 +42,19 @@
     >
         <i class="fab fa-github fa-2x" aria-hidden="true"></i>
     </a>
+
+    {% assign altra_lingua = "en" %} {% if page.lang == "en" %}{% assign
+    altra_lingua = "it" %}{% endif %} {% assign pagina_gemella =
+    site[altra_lingua] | where: "translation_reference",
+    page.translation_reference | first %} {% if pagina_gemella %}
+    <a
+        href="{{ pagina_gemella.url }}"
+        class="center"
+        title="{{ site.data.strings[page.lang].leggi_altra_lingua }}"
+    >
+        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+    </a>
+    {% endif %}
 
     <a
         title="{{ site.data.strings[page.lang].vai_a }}: {{page.next.title}}"
@@ -54,3 +75,56 @@
         <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
     </a>
 </nav>
+{% else %}
+<nav class="menu-top">
+    <a
+        id="home"
+        title="{{ site.data.strings[page.lang | default: 'it'].menu_home_title }}"
+        href="/"
+    >
+        <span
+            >{{ site.data.strings[page.lang | default: 'it'].menu_home }}</span
+        >
+        <i class="fa fa-home fa-2x"></i>
+    </a>
+    <a
+        id="man"
+        title="{{ site.data.strings[page.lang | default: 'it'].menu_manuale_title }}"
+        href="/{{ page.lang | default: 'it' }}/"
+    >
+        <span
+            >{{ site.data.strings[page.lang | default: 'it'].menu_manuale
+            }}</span
+        >
+        <i class="fas fa-book fa-2x"></i>
+    </a>
+    <a
+        id="indice"
+        title="{{ site.data.strings[page.lang | default: 'it'].menu_indice_title }}"
+        href="/{{ page.lang | default: 'it' }}/indice"
+    >
+        <span
+            >{{ site.data.strings[page.lang | default: 'it'].menu_indice
+            }}</span
+        >
+        <i class="fa fa-bars fa-2x"></i>
+    </a>
+    <a
+        id="github"
+        title="{{ site.data.strings[page.lang | default: 'it'].menu_github_title }}"
+        target="github"
+        href="{{ site.url_github }}"
+    >
+        <span>GitHub</span>
+        <i class="fab fa-github fa-2x"></i>
+    </a>
+    <a
+        id="log"
+        title="{{ site.data.strings[page.lang | default: 'it'].menu_log_title }}"
+        href="/log/"
+    >
+        <span>{{ site.data.strings[page.lang | default: 'it'].menu_log }}</span>
+        <i class="fas fa-file-signature fa-2x"></i>
+    </a>
+</nav>
+{% endif %}
