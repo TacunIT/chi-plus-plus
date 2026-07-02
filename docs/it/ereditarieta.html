@@ -75,14 +75,14 @@
             <h1><a href="#dottrina">
                 L'ereditarietà</a>
             </h1>
-            <blockquote class="motto">Una classe padre può ripudiare una classe figlia, se è cattiva, ma una casse figlia non può ripudiare la sua classe padre perché gli deve più di quanto non sia in grado di pagargli e in particolare gli deve l'esistenza.</blockquote>
+            <blockquote class="motto">Una classe padre può ripudiare una classe figlia, se è cattiva, ma una classe figlia non può ripudiare la sua classe padre perché gli deve più di quanto non sia in grado di pagargli e in particolare gli deve l'esistenza.</blockquote>
             <section class="testo">
                 <!-- Etica Nicomachea 1163b -->
 
-<p>L’ereditariaretà, ovvero la possibilità di creare delle genealogie di classi, è la caratteristica principale del C++.</p>
+<p>L’ereditarietà, ovvero la possibilità di creare delle genealogie di classi, è la caratteristica principale del C++.</p>
 
 <p>Come abbiamo visto nella <a href="/it/classi-oggetti#dottrina" class="xref">lezione precedente</a>, una ipotetica classe <code>Pesce</code> dovrà avere attributi differenti a seconda dell’utilizzo che se ne deve fare.
-In un linguaggio come il <em>C</em>, che non permette l’ereditariaretà, quindi, si dovranno prevedere due strutture di dati differenti per ciascun caso:</p>
+In un linguaggio come il <em>C</em>, che non permette l’ereditarietà, quindi, si dovranno prevedere due strutture di dati differenti per ciascun caso:</p>
 
 <pre><code>enum Acqua  { dolce, salata };
 enum Sesso  { maschio, femmina };
@@ -116,7 +116,7 @@ void gestisciPesceAcquario(struct PesceAcquario&amp; pesce);
 </code></pre>
 
 <p>Questo vuol dire che se hai già scritto (e verificato, corretto e collaudato) un programma di gestione per un pescivendolo, per poterlo trasformare in un programma di gestione per la vendita di pesci da acquario, dovrai riscrivere (e ri-verificare, ri-correggere e collaudare) tutto il codice, anche se parte dei dati da considerare sono gli stessi.<br />
-L’ereditariaretà, al contrario, ti permette di isolare in una classe le caratteristiche comuni a tutti e due i contesti e di <em>derivare</em> da questa classe di base due classi specializzate:</p>
+L’ereditarietà, al contrario, ti permette di isolare in una classe le caratteristiche comuni a tutti e due i contesti e di <em>derivare</em> da questa classe di base due classi specializzate:</p>
 
 <pre><code>/** 
  * @file ereditarieta-singola.cpp
