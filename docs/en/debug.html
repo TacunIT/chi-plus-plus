@@ -6,7 +6,7 @@
 
 
 <head>
-    <title>Il debug |  C'hi++
+    <title>Debugging |  C'hi++
 </title>
     <meta charset="utf-8" />
     <link      rel="canonical"          href="https://chiplusplus.org/en/debug" />
@@ -19,8 +19,8 @@
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
     <meta property="og:url"          content="https://chiplusplus.org/en/debug" />
     <meta property="og:type"         content="website" />
-    <meta property="og:title"        content="Il debug" />
-    <meta property="og:description"  content="Gli errori sono inevitabili - Come correggere i bug della nostra vita - Chiedere scusa e chiedere perdòno - I fattori che influenzano il nostro comportamento - Non si devono adorare le parole" />
+    <meta property="og:title"        content="Debugging" />
+    <meta property="og:description"  content="Mistakes are unavoidable - How to fix the bugs in our life - Saying sorry versus asking forgiveness - The factors that shape our behavior - Words are not to be worshipped" />
     <meta property="og:image:width"  content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image"        content="https://chiplusplus.org/assets/img/og-img/debug.jpg" />
@@ -79,49 +79,49 @@
         <main class="corpo pubblicato ">
         
             <h1><a href="#dottrina">
-                Il debug</a>
+                Debugging</a>
             </h1>
-            <blockquote class="motto">Cento Mondi di peccato sono dissipati dalla luce di un solo ticket</blockquote>
+            <blockquote class="motto">A hundred Worlds of sin are dissolved by the light of a single ticket</blockquote>
             <section class="testo">
-                <p>Il debug potrà non essere il senso della vita, come recita il titolo del tuo libro, ma è indubbiamente l’aspetto più importante della programmazione.<br />
-Nella tua carriera di programmatore potrai non utilizzare mai una classe <em>functor</em> o ridefinire l’operatore <code>-&gt;</code>, ma sicuramente farai degli errori e li dovrai correggere.
-Malgrado ciò, i manuali di programmazione non parlano mai del <em>debug</em>.
-Si sono scritte migliaia di pagine sui diversi linguaggi di programmazione; non c’è primavera che non veda fiorire un nuovo paradigma di programmazione — strutturata, <em>object-oriented</em>, <em>agile</em>, <em>fuzzy</em> — eppure, nessuno si è mai preoccupato di formalizzare il processo di correzione del codice.<br />
-Non a caso, la decadenza del software è iniziata quando le stampanti laser hanno soppiantato le vecchie stampanti ad aghi. Il codice non si può leggere su un foglio A4: a meno che non sia un programma banale, non c’entrerà né in altezza né in larghezza. Il modulo in continuo di una stampante ad aghi a 136 colonne, al contrario, ti permette di stampare tutto il tuo codice e di rileggerlo con calma; correggerlo, se necessario e migliorarlo se possibile. È così che si facevano le revisioni di codice, quando c’erano il tempo e i soldi per fare le revisioni di codice.</p>
+                <p>Debugging may not be the meaning of life, as your book’s title claims, but it’s without question the most important aspect of programming.
+In your career as a programmer you may never use a <em>functor</em> class or redefine the <code>-&gt;</code> operator, but you will certainly make mistakes, and you’ll have to fix them.
+And yet, programming manuals never talk about <em>debugging</em>.
+Thousands of pages have been written about the various programming languages; not a spring goes by without some new programming paradigm blossoming — structured, <em>object-oriented</em>, <em>agile</em>, <em>fuzzy</em> — and yet, no one has ever bothered to formalize the process of fixing code.
+It’s no coincidence that the decline of software began when laser printers replaced the old dot-matrix ones. Code can’t be read on an A4 sheet: unless it’s a trivial program, it won’t fit, either in height or width. The continuous-feed paper of a 136-column dot-matrix printer, by contrast, lets you print your entire code and read through it calmly; fix it, if needed, and improve it if possible. That’s how code reviews used to be done, back when there was the time and the money to do code reviews.</p>
 
 <hr />
 
-<p>Trascurare il debug è come affermare che non si faranno mai errori.
-Non importa quanto sia efficiente il linguaggio di programmazione; non importa quanto sia astuto e vigile il compilatore; non importa nemmeno quanto sia bravo il programmatore: o prima o poi, la distrazione, la stanchezza o un evento esterno permetteranno a un errore di intrufolarsi nel codice.
-Un puntatore utilizzato impropriamente, un ciclo in più o in meno in un’istruzione <code>for</code> o una virgola dimenticata fra i parametri di una <code>printf</code>: qualunque cosa sia, se il compilatore non sarà in grado di riconoscerla, finirà nel programma è resterà lì in attesa di produrre i suoi effetti dannosi.
-Il programma potrà funzionare correttamente per anni, ma poi, un bel giorno, qualcosa non andrà come sarebbe dovuto andare e a quel punto bisognerà analizzare il codice per trovare l’errore.<br />
-Fare degli errori è inevitabile, ed è importante sapere come porvi rimedio.
-Ancora più importante, però, è sapersi accorgere degli errori.
-Così come <em>l’Ikebarba inizia nel negozio</em>, il debug comincia nel momento in cui si scrive il codice.
-Il modo migliore per evitare che il codice contenga degli errori è scrivere del buon codice.
-Scrivere del buon codice vuol dire fare sempre il meglio che ti è possibile.
-Non salvare mai un file se non sei certo che funzionerà come deve e cerca sempre di pensare a cos’altro potrebbe fare il tuo codice, oltre a quello che vuoi tu.
-Come di ho detto <a href="/en/programmatore#buon-programmatore" class="xref">in una delle nostre prime chiacchierate</a>, il Buon Programmatore non si accontenta della strada più rapida, ma cerca sempre quella più efficiente e sicura, perché sa che scrivere del buon codice costa meno che riparare del codice fatto male.
-Il Maestro Canaro, una volta disse:</p>
+<p>Neglecting to debug is like claiming you’ll never make a mistake.
+It doesn’t matter how efficient the programming language is; it doesn’t matter how sharp and vigilant the compiler is; it doesn’t even matter how good the programmer is: sooner or later, distraction, tiredness, or some external event will let a bug slip into the code.
+A pointer used improperly, one loop too many or too few in a <code>for</code> instruction, a forgotten comma between the parameters of a <code>printf</code>: whatever it is, if the compiler can’t catch it, it will end up in the program and stay there, waiting to produce its harmful effects.
+The program might work correctly for years, but then, one day, something won’t go the way it should, and at that point you’ll have to comb through the code to find the bug.
+Making mistakes is unavoidable, and it’s important to know how to fix them.
+Even more important, though, is being able to notice them.
+Just as <em>Ikebarba begins in the shop</em>, debugging begins the moment you write the code.
+The best way to keep your code free of bugs is to write good code.
+Writing good code means always doing the best you possibly can.
+Never save a file unless you’re sure it will work the way it should, and always try to think about what else your code might do, besides what you want it to.
+As I told you <a href="/en/programmatore#buon-programmatore" class="xref">in one of our first conversations</a>, the Good Programmer isn’t satisfied with the quickest path, but always looks for the most efficient and reliable one, because he knows writing good code costs less than fixing badly written code.
+Master Canaro once said:</p>
 
 <blockquote>
-
+  <p>The Good Programmer is like a sailor who, before a long voyage, checks all of his deck equipment, taking apart every single item and replacing anything that might break, because he doesn’t know what will happen once he’s out at sea.</p>
 </blockquote>
 
-<p>Il Buon Programmatore non può farne a meno, perché è nella sua natura; è questa, la differenza fra chi <em>fa</em> il programmatore e chi <em>è</em> un programmatore.</p>
+<p>The Good Programmer cannot help it, because it’s in his nature; that’s the difference between someone who <em>works as</em> a programmer and someone who <em>is</em> a programmer.</p>
 
 <hr id="tipi-errore" />
 
-<p>Gli errori del software possono essere di tre tipi:</p>
+<p>Software bugs can be of three kinds:</p>
 
 <ul>
-  <li>gli errori che si manifestano durante la fase di compilazione;</li>
-  <li>gli errori che si manifestano durante l’esecuzione del programma;</li>
-  <li>gli errori di analisi.</li>
+  <li>bugs that show up during compilation;</li>
+  <li>bugs that show up while the program is running;</li>
+  <li>analysis bugs.</li>
 </ul>
 
-<p>Gli <b id="errori-compilazione">errori di compilazione</b> sono causati da costrutti incorretti, che bloccano il processo di creazione del programma.
-Un errore che farai spesso è di dimenticare il punto e virgola alla fine della dichiarazione di una classe:</p>
+<p><b id="errori-compilazione">Compile errors</b> are caused by malformed constructs, which block the process of building the program.
+A mistake you’ll make often is forgetting the semicolon at the end of a class declaration:</p>
 
 <pre><code>class C {
 private:
@@ -137,7 +137,7 @@ public:
 }
 </code></pre>
 
-<p>una banale distrazione che causerà immancabilmente il messaggio:</p>
+<p>a trivial slip that will unfailingly cause the message:</p>
 
 <pre><code>&gt; g++ src/cpp/debug-errori.cpp  -c -o src/out/esempio
 src/cpp/debug-errori.cpp:28:2: error: expected ';' after class
@@ -147,8 +147,8 @@ src/cpp/debug-errori.cpp:28:2: error: expected ';' after class
 1 error generated.
 </code></pre>
 
-<p>Gli errori di compilazione sono i più facili da gestire, perché è il compilatore stesso a dirti quale sia il problema e in quale punto del codice si trovi.
-L’unica difficoltà che potresti avere, specie se stai lavorando con la <code>STL</code>, è decifrare i messaggi del compilatore:</p>
+<p>Compile errors are the easiest to handle, because it’s the compiler itself that tells you what the problem is and exactly where in the code it lies.
+The only difficulty you might run into, especially if you’re working with the <code>STL</code>, is deciphering the compiler’s messages:</p>
 
 <pre><code>In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/iostream:38:
 In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/ios:216:
@@ -178,9 +178,9 @@ src/cpp/debug-errori.cpp:43:12: note: in instantiation of function template spec
 </code></pre>
 <!-- Grazie, John Berryman https://bit.ly/3vIU4hN -->
 
-<p>Se un costrutto è formalmente corretto, ma <em>potrebbe</em> essere un errore, il compilatore può segnalarlo con un <b id="warning">warning</b>, un messaggio di avviso che non blocca la compilazione, ma richiama l’attenzione del programmatore sull’anomalia.<br />
-Ho usato il condizionale (<em>può segnalarlo</em>) perché la notifica dei <em>warning</em> è un’opzione che deve essere attivata dal programmatore, specificando, fra i parametri di compilazione, quali avvisi vuole ricevere.
-Dato che i parametri per attivare i diversi tipi di <em>warning</em> sono davvero tanti:</p>
+<p>If a construct is formally correct, but <em>might</em> be a mistake, the compiler can flag it with a <b id="warning">warning</b>, a notice that doesn’t stop compilation, but draws the programmer’s attention to the anomaly.
+I used the conditional (<em>can flag it</em>) because warning notifications are an option the programmer has to enable, specifying, among the compilation parameters, which warnings they want to receive.
+Since there are truly a lot of parameters for enabling the various kinds of <em>warnings</em>:</p>
 
 <pre><code>-Waddress   
 -Wbool-compare  
@@ -232,7 +232,7 @@ Dato che i parametri per attivare i diversi tipi di <em>warning</em> sono davver
 -Wzero-length-bounds
 </code></pre>
 
-<p>e che possono essere tutti rilevanti nel processo di creazione del codice, la cosa migliore che puoi fare è di attivarli globalmente, con il parametro: <code>-Wall</code></p>
+<p>and since they can all be relevant to the process of building code, the best thing you can do is enable them all at once, with the <code>-Wall</code> parameter:</p>
 
 <pre><code>/** 
  * @file src/debug-errori-warning.cpp
@@ -271,13 +271,13 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>Se compili questo codice senza attivare i <em>warning</em>, il compilatore non ti segnala nulla di anomalo:</p>
+<p>If you compile this code without enabling <em>warnings</em>, the compiler doesn’t flag anything unusual:</p>
 
 <pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -c -o src/out/esempio
 &gt;
 </code></pre>
 
-<p>Se però aggiungi il parametro <code>-Wall</code> alla riga di comando, scopri che il parametro <code>_area</code> della classe <code>C</code> non viene utilizzato:</p>
+<p>But if you add the <code>-Wall</code> parameter to the command line, you discover that the <code>_area</code> parameter of class <code>C</code> is never used:</p>
 
 <pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -Wall -c -o src/out/esempio
 src/cpp/debug-errori-warning.cpp:19:11:
@@ -288,8 +288,8 @@ src/cpp/debug-errori-warning.cpp:19:11:
 1 warning generated.
 </code></pre>
 
-<p>Il codice è stato compilato, perché questa potrebbe essere una scelta intenzionale, ma il sistema ti notifica comunque l’anomalia, in modo che tu possa decidere se mantenerla o eliminarla.<br />
-Aggiungendo il parametro <code>-Wextra</code>, ottieni un <em>warning</em> aggiuntivo perché i parametri della funzione <code>main</code> non sono utilizzati:</p>
+<p>The code compiles, because this might be an intentional choice, but the system still notifies you of the anomaly, so you can decide whether to keep it or remove it.
+Adding the <code>-Wextra</code> parameter, you get an additional <em>warning</em> because the parameters of the <code>main</code> function are unused:</p>
 
 <pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -Wall -Wextra -o src/out/esempio
 src/cpp/debug-errori-warning.cpp:29:14:
@@ -310,8 +310,8 @@ src/cpp/debug-errori-warning.cpp:19:11:
 3 warnings generated.
 </code></pre>
 
-<p>Oltre a quelli definiti dai parametri <code>-Wall</code> e <code>-Wextra</code>, il compilatore prevede una lunga lista di <em>warning</em> che possono essere definiti individualmente, a seconda delle esigenze del programma.
-Per esempio, il parametro <code>-Wdouble-promotion</code> segnala quando una variabile di tipo <code>float</code> è promossa implicitamente a <code>double</code>:</p>
+<p>Besides the ones defined by the <code>-Wall</code> and <code>-Wextra</code> parameters, the compiler offers a long list of <em>warnings</em> that can be enabled individually, depending on the program’s needs.
+For example, the <code>-Wdouble-promotion</code> parameter flags when a <code>float</code> variable is implicitly promoted to <code>double</code>:</p>
 
 <pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -Wall -Wextra \
     -Wdouble-promotion -c -o src/out/esempio
@@ -337,18 +337,16 @@ src/cpp/debug-errori-warning.cpp:19:11:
 4 warnings generated.
 </code></pre>
 
-<p>Molti programmatori ignorano i <em>warning</em>, pensano che se il programma può essere compilato non ci sia nient’altro di cui preoccuparsi.
-Tu non fare questo errore: nessun avviso deve essere ignorato.</p>
+<p>Many programmers ignore <em>warnings</em>, thinking that if the program compiles, there’s nothing left to worry about.
+Don’t make this mistake: no warning should ever be ignored.</p>
 
 <hr id="errori-esecuzione" />
 
-<p>Solo un programma formalmente ineccepibile può dare luogo a <strong>errori di esecuzione</strong>.
-Se non fosse formalmente ineccepibile, infatti, non sarebbe stato compilato e non potrebbe essere eseguito.<br />
-Gli errori di esecuzione sono tanto più pericolosi quanto più i loro
-effetti sono lievi.
-Un errore che causi il blocco del sistema sarà certamente rilevato e corretto; al contrario, un leggero errore di calcolo potrebbe passare inosservato e
-quindi causare grandi problemi.<br />
-Se dimentichi l’operatore di incremento all’interno di un ciclo <code>while</code> produrrai un ciclo infinito, che certamente attirerà la tua attenzione:</p>
+<p>Only a formally flawless program can produce <strong>runtime errors</strong>.
+If it weren’t formally flawless, in fact, it wouldn’t have compiled, and couldn’t have run at all.
+Runtime errors are more dangerous the milder their effects are.
+A bug that crashes the system will certainly be noticed and fixed; a small calculation error, by contrast, might go unnoticed and therefore cause serious problems.
+If you forget the increment operator inside a <code>while</code> loop, you’ll produce an infinite loop, which will certainly catch your attention:</p>
 
 <pre><code>/** 
  * @file pianeti-while-errore.cpp
@@ -392,7 +390,7 @@ Mercurio
 ...
 </code></pre>
 
-<p>Se invece incrementi la variabile nel modo sbagliato:</p>
+<p>If instead you increment the variable the wrong way:</p>
 
 <pre><code>/** 
  * @file pianeti-while-errore.cpp
@@ -417,7 +415,7 @@ int main(int argc, char** argv)
 }
 
 </code></pre>
-<p>causerai un errore che, in questo caso, è evidente, perché all’elenco manca Mercurio, ma che in un programma più complesso potrebbe essere difficile da individuare:</p>
+<p>you’ll cause a bug that, in this case, is obvious, since Mercury is missing from the list, but that in a more complex program could be hard to spot:</p>
 
 <pre><code>&gt; g++ src/cpp/pianeti-while-errore-2.cpp \
       src/cpp/pianeti-2.0.cpp \
@@ -433,11 +431,9 @@ Nettuno
 Plutone
 </code></pre>
 
-<p>Gli errori di esecuzione possono essere di due tipi: quelli che si
-manifestano in maniera deterministica e quelli che si manifestano in
-maniera casuale.
-L’errore nell’elenco dei pianeti si manifesterà a ogni esecuzione del programma e sarà quindi (relativamente) facile da individuare.
-Al contrario, questo codice produrrà un errore solo in determinate condizioni:</p>
+<p>Runtime errors can be of two kinds: those that show up deterministically, and those that show up randomly.
+The bug in the list of planets will show up every time the program runs, and will therefore be (relatively) easy to spot.
+By contrast, this code will only produce a bug under certain conditions:</p>
 
 <pre><code>/** 
  * @file debug-errore-stocastico.cpp
@@ -537,9 +533,9 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>La funzione <code>banner_testo</code> inserisce il <em>tag</em> HTML di un banner all’interno del testo di una pagina Web.
-I banner devono essere posizionati dopo un punto fermo, a distanza di almeno <code>N_CHAR_MIN</code> caratteri l’uno dall’altro.<br />
-Questo codice funziona correttamente con alcuni tipi di testo:</p>
+<p>The <code>banner_testo</code> function inserts an HTML banner <em>tag</em> into the text of a Web page.
+Banners must be placed after a period, at least <code>N_CHAR_MIN</code> characters apart from one another.
+This code works correctly with some kinds of text:</p>
 
 <blockquote class="output">
 Essere un ossessivo-compulsivo con una leggera tendenza alla paranoia, se ti guadagni da vivere facendo l’esperto di sicurezza, è un bene; le medesime peculiarità caratteriali, al contrario, sono decisamente un male quando alle 21:55 la tua donna di servizio ti scrive: "Ho fatto un molecolare e sono risultata positiva.
@@ -549,7 +545,7 @@ Cerchi di distrarti guardando la televisione, ma l’ennesimo thriller con Jason
 <div id="banner-2"></div>
  </blockquote>
 
-<p>Il codice della funzione <code>banner_testo</code>, però, è troppo ottimistico e delle piccole variazioni nel file di input, come l’aggiunta di punti di sospensione o di una URL, <em>potrebbero</em> causare degli errori nel posizionamento dei banner:</p>
+<p>The code of the <code>banner_testo</code> function, though, is too optimistic, and small variations in the input file, like adding an ellipsis or a URL, <em>could</em> cause bugs in how the banners are placed:</p>
 
 <blockquote class="output">
 Essere un ossessivo-compulsivo con una leggera tendenza alla paranoia, se ti guadagni da vivere facendo l’esperto di sicurezza, è un bene; le medesime peculiarità caratteriali, al contrario, sono decisamente un male quando alle 21:55 la tua donna di servizio ti scrive: "Ho fatto un molecolare e sono risultata positiva".
@@ -561,9 +557,9 @@ Cerchi di distrarti guardando la televisione, ma l’ennesimo thriller con Jason
 org"&gt;leggi un po’&lt;/a&gt; e poi cerchi di dormire.
 </blockquote>
 
-<p>Questo tipo di errori possono aspettare anni, prima di venire alla luce.
-Per esempio, un errore nella valutazione di una data in coincidenza con gli anni bisestili potrebbe aspettare quattro anni prima di manifestarsi; nel frattempo, il codice sarà stato distribuito agli utenti e chi lo ha scritto ne avrà perso memoria o potrebbe addirittura aver cambiato lavoro.<br />
-La correzione dell’errore della funzione <code>banner_testo</code>, se fatta per tempo, richiederebbe solo l’aggiunta di una condizione all’istruzione <code>if</code>, per verificare che il punto si trovi prima di un a capo:</p>
+<p>This kind of bug can lie dormant for years before coming to light.
+For example, a bug in evaluating a date around leap years could wait four years before showing up; by then, the code will have already been shipped to users, and whoever wrote it will have forgotten about it, or may even have changed jobs.
+Fixing the bug in the <code>banner_testo</code> function, if caught early, would only require adding a condition to the <code>if</code> instruction, to check whether the period comes right before a line break:</p>
 
 <pre><code>if(c == PUNTO
 &amp;&amp; letti &gt;= N_CHAR_MIN
@@ -578,95 +574,94 @@ La correzione dell’errore della funzione <code>banner_testo</code>, se fatta p
 }
 </code></pre>
 
-<p>La stessa correzione, fatta dopo che il programma è andato in esercizio, potrebbe richiedere giorni, se non settimane, perché dovrà essere ripetuto tutto il processo di rilascio del sistema:</p>
+<p>The same fix, made after the program has gone into production, could take days, if not weeks, because the entire release process would have to be repeated:</p>
 
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">attività</th>
-      <th style="text-align: center">ore/uomo</th>
+      <th style="text-align: left">task</th>
+      <th style="text-align: center">person-hours</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left">creazione di un ambiente di test</td>
+      <td style="text-align: left">setting up a test environment</td>
       <td style="text-align: center">8</td>
     </tr>
     <tr>
-      <td style="text-align: left">debug</td>
+      <td style="text-align: left">debugging</td>
       <td style="text-align: center">2</td>
     </tr>
     <tr>
-      <td style="text-align: left">correzione dell’errore</td>
+      <td style="text-align: left">fixing the bug</td>
       <td style="text-align: center">1</td>
     </tr>
     <tr>
-      <td style="text-align: left">test funzionale</td>
+      <td style="text-align: left">functional testing</td>
       <td style="text-align: center">4</td>
     </tr>
     <tr>
-      <td style="text-align: left">test di carico</td>
+      <td style="text-align: left">load testing</td>
       <td style="text-align: center">8</td>
     </tr>
     <tr>
-      <td style="text-align: left">test di sicurezza</td>
+      <td style="text-align: left">security testing</td>
       <td style="text-align: center">8</td>
     </tr>
     <tr>
-      <td style="text-align: left">collaudo</td>
+      <td style="text-align: left">acceptance testing</td>
       <td style="text-align: center">4</td>
     </tr>
     <tr>
-      <td style="text-align: left">rilascio/distribuzione</td>
+      <td style="text-align: left">release/deployment</td>
       <td style="text-align: center">1</td>
     </tr>
   </tbody>
 </table>
 
-<p>Al costo di queste attività vanno ovviamente aggiunti i possibili danni derivanti dal mancato funzionamento del sistema, che potrebbero facilmente essere pari a un mese se non a un anno di stipendio del programmatore.<br />
-Devi pensare a tutto questo, quando scrivi codice, perché hai una responsabilità sia nei confronti del tuo datore di lavoro che degli utenti del sistema, che potrebbero essere anche i tuoi amici o i tuoi parenti.<br />
-Se lavori male per la Coca-Cola, puoi sempre pensare: “Chi se ne frega, io bevo Pepsi”; non è etico, ma almeno non è auto-lesionista.
-Se però lavori male per lo Stato, stai peggiorando la tua vita e di tutte le persone che conosci e questo, oltre a non essere etico, è anche stupido.</p>
+<p>On top of the cost of these tasks, you obviously have to add the potential damage from the system not working, which could easily amount to a month, if not a year, of the programmer’s salary.
+You need to think about all this when you write code, because you have a responsibility both to your employer and to the users of the system, who might well be your friends or your relatives.
+If you do a poor job for Coca-Cola, you can always think: “Who cares, I drink Pepsi”; not ethical, but at least not self-destructive.
+But if you do a poor job for the State, you’re making life worse for yourself and for everyone you know, and that, besides being unethical, is also stupid.</p>
 
 <hr />
 
-<p>Gli <b id="errori-analisi">errori di analisi</b> sono una conseguenza dell’Annosa Dicotomia — e dell’inesperienza dell’analista, ovviamente.<br />
-Come tutti gli esseri senzienti, anche i clienti possono essere vittime dell’Annosa Dicotomia fra ciò che desiderano e ciò di cui realmente hanno bisogno.
-Un cliente che espone le sue esigenze è come un bambino che dice alla madre cosa vuole mangiare.
-Lo stimolo è reale — appetito o fame che sia —, ma il modo in cui lui vorrebbe placarlo non è necessariamente il più corretto; anzi: di solito è un desiderio indotto dal callido servitore dell’Entropia: il Marketing.<br />
-Il cliente ha diritto di comportarsi in questo modo: ciascuno di noi fa la stessa cosa quando entra in un negozio; come analista, però, non devi permettere che i tuoi giudizi siano influenzati dai desiderii del tuo cliente.
-In questo, l’Analisi è assimilabile a una disciplina mistica: così come il Buddha dà a ciascuna persona con cui viene in contatto ciò di cui ha bisogno,
-<!-- @todo: trovare citazione da Buddismo Tientai --> tu devi annullare te stesso e <em>diventare</em> l’altro, pensare come lui, sentire le sue necessità.
-Da quello che dice e da come lo dice, devi riuscire a distinguere i suoi bisogni dai suoi desiderii, evitando che l’ottenimento di questi ultimi intralci il buon successo del progetto.<br />
-Ovviamente, dovrai anche evitare che i <em>tuoi</em> desiderii intralcino o rallentino il progetto.
-Così come influenza le opinioni del tuo cliente, il Marketing può influire su di te, spingendoti a scegliere una tecnologia di moda, ma inadatta allo scòpo che devi raggiungere.
-Fà attenzione che ciò non accada.
-Sorveglia costantemente le tue scelte; così come il Buon Programmatore, pensa sempre su più livelli e confrontati con altri colleghi o con il tuo superiore per essere certo di aver fatto le scelte giuste.
-Non vergognarti dei tuoi errori: sono i mattoni su cui edificherai la tua esperienza.<br />
-Sii anche preparato a dover fare degli errori.
-O prima o poi, capiterà che un cliente ti chieda di fare una scelta che tu ritieni sbagliata.
-Quando ciò accadrà, dovrai per prima cosa cercare di convincerlo dell’errore, spiegandogli perché la sua richiesta non sia corretta.
-Se non ci riesci, ripeti la tua opposizione, perché sia chiaro che la tua non è un’ipotesi, ma una certezza, però non insistere oltre: sia perché questo potrebbe creare degli attriti con il tuo interlocutore, sia perché alla lunga potresti scoprire che è lui ad avere ragione.  <br />
-Se non riuscirai a convincere il cliente di un suo errore, dovrai portare a termine ciò che ti chiede, ma al contempo dovrai fare in modo che le conseguenze di quella scelta non possano essere attribuite a te in futuro.
-Dato che le conseguenze nefaste di un errore architetturale potrebbero manifestarsi dopo mesi o anche anni dalla fase di analisi, non limitarti a <em>dire</em> al cliente che si sbaglia, ma scrivilo, in modo che resti traccia della tua opposizione.<br />
-Il tuo peggior nemico, in questi casi, sarà il tuo orgoglio.
-Una volta, il Maestro Canaro mi disse:</p>
+<p><b id="errori-analisi">Analysis bugs</b> are a consequence of the Age-Old Dichotomy — and of the analyst’s inexperience, of course.
+Like all sentient beings, clients too can fall victim to the Age-Old Dichotomy between what they want and what they actually need.
+A client stating their requirements is like a child telling their mother what they want to eat.
+The impulse is real — appetite or hunger, whatever it may be —, but the way they’d like to satisfy it isn’t necessarily the most correct one; in fact, it’s usually a desire induced by Entropy’s cunning servant: Marketing.
+The client has every right to behave this way: each of us does the same thing when we walk into a shop; as an analyst, though, you must not let your judgment be swayed by your client’s desires.
+In this, Analysis is comparable to a mystical discipline: just as the Buddha gives each person he meets what they need,
+<!-- @todo: trovare citazione da Buddismo Tientai --> you must set yourself aside and <em>become</em> the other person, think as they think, feel their needs.
+From what they say, and how they say it, you must be able to tell their needs apart from their desires, making sure the pursuit of the latter doesn’t get in the way of the project’s success.
+Obviously, you’ll also have to make sure <em>your own</em> desires don’t get in the way of, or slow down, the project.
+Just as it influences your client’s opinions, Marketing can influence you too, pushing you to pick a fashionable technology unsuited to the goal you need to reach.
+Be careful that this doesn’t happen.
+Constantly keep an eye on your choices; like the Good Programmer, always think on multiple levels, and check in with other colleagues or your supervisor to make sure you’ve made the right choices.
+Don’t be ashamed of your mistakes: they’re the bricks you’ll build your experience on.
+Also be prepared to have to make mistakes.
+Sooner or later, a client will ask you to make a choice you believe is wrong.
+When that happens, you must first try to convince them of the mistake, explaining why their request isn’t correct.
+If you can’t, repeat your objection, so it’s clear that yours isn’t a guess, but a certainty — but don’t push further than that: both because it could create friction with the person you’re dealing with, and because, in the long run, you might discover it was actually them who was right.
+If you fail to convince the client of their mistake, you’ll have to carry out what they asked, but at the same time you’ll need to make sure the consequences of that choice can’t be attributed to you down the road.
+Since the harmful consequences of an architectural mistake might not surface until months or even years after the analysis phase, don’t just <em>tell</em> the client they’re wrong — write it down, so there’s a record of your objection.
+Your worst enemy, in these cases, will be your own pride.
+Once, Master Canaro told me:</p>
 
 <blockquote>
-
+  <p>When I was a young <i>project manager</i> and argued with my clients, I always tried to prove to them that I was right; now I just try to do what needs to be done.</p>
 </blockquote>
 
 <hr />
 
-<p>Parafrasando Iacopone da Todi, un programma per il debug può aiutarti a identificare il punto del tuo codice che genera un errore, ma devi prima capire quale sia la funzione da esaminare, perché fare il debug di tutto il codice di un programma, nei casi in cui questo sia possibile, sarebbe lungo ed estremamente frustrante.<br />
-Il modo in cui è stato scritto il codice lo renderà più o meno facile da verificare.
-Immagina che il problema sia la variabile <code>x</code>: se tutto il tuo codice ha la possibilità di modificarne il valore, potresti dover esaminare ogni singola funzione per verificare che non ne faccia un uso improprio.
-Al contrario, se la variabile <code>x</code> può essere modificata solo alcuni punti del codice, la tua sarà una ricerca più mirata e veloce.
-È per questo motivo, che <a href="/en/istruzioni-iterative#isolamento-funzionale" class="xref">nella lezione sulle funzioni iterative</a> abbiamo diviso l’elaborazione dei dati dalla gestione dell’interfaccia utente: perché in questo modo, a seconda del tipo di errore che dovesse presentarsi — di calcolo o di output — sapremo quale funzione andare a guardare.<br />
-Alcune caratteristiche del C++, come la tipizzazione forte e
-l’incapsulamento potranno esserti di aiuto in questo senso, ma non sempre saranno sufficienti a identificare il punto esatto in cui il tuo codice fa qualcosa di errato.
-In questi casi, dovrai procedere per tentativi, scomponendo il tuo programma in parti sempre più piccole, in modo da ridurre il numero di righe di codice da verificare.
-Un modo rapido per farlo è di mettere a commento tutte le chiamate nella funzione <code>main</code> ripristinandole poi a una a una, fino a che non individuerai quella in cui è contenuto l’errore:</p>
+<p>Paraphrasing Iacopone da Todi, a debugger can help you pinpoint the part of your code generating a bug, but you first have to figure out which function to examine, because debugging an entire program’s code, in the cases where that’s even possible, would be long and extremely frustrating.
+The way the code was written will make it more or less easy to check.
+Imagine the problem is the variable <code>x</code>: if your entire codebase has the ability to change its value, you might have to examine every single function to check it isn’t misusing it.
+By contrast, if the variable <code>x</code> can only be modified in a few places in the code, your search will be more targeted and quicker.
+This is why <a href="/en/istruzioni-iterative#isolamento-funzionale" class="xref">in the lesson on iterative functions</a> we separated data processing from user-interface handling: because this way, depending on the kind of bug that shows up — a calculation bug or an output bug —, we’ll know which function to go look at.
+Some features of C++, like strong typing and encapsulation, can help you in this regard, but they won’t always be enough to pinpoint exactly where your code is doing something wrong.
+In these cases, you’ll have to proceed by trial and error, breaking your program down into smaller and smaller pieces, so as to reduce the number of lines of code you need to check.
+A quick way to do this is to comment out all the calls in the <code>main</code> function, then restore them one at a time, until you find the one that contains the bug:</p>
 
 <pre><code>int main(int argc, char** argv)
 {    
@@ -682,8 +677,8 @@ Un modo rapido per farlo è di mettere a commento tutte le chiamate nella funzio
 }
 </code></pre>
 
-<p>Se la <em>funzione che non funziona</em> è troppo complessa per farne un debug diretto, ripeterai il processo, mettendo a commento le sue chiamate fino a che la quantità di codice da esaminare sarà ragionevolmente poca.<br />
-Un altro modo in cui puoi semplificare la ricerca degli errori nel codice è l’aggiunta di messaggi che ti permettano di sapere quale operazione sta compiendo il programma:</p>
+<p>If the <em>function that isn’t working</em> is too complex to debug directly, you’ll repeat the process, commenting out its own calls until the amount of code left to examine is reasonably small.
+Another way you can make it easier to track down bugs in your code is to add messages that let you know what operation the program is performing:</p>
 
 <pre><code>int apri_file(ifstream&amp; testo, const char* path)
 {
@@ -696,43 +691,43 @@ Un altro modo in cui puoi semplificare la ricerca degli errori nel codice è l�
 }
 </code></pre>
 
-<p>La funzione <code>log</code> è quella che abbiamo visto nella <a href="/en/funzioni.html#parametri-variabili" class="xref">lezione sulle funzioni con parametri variabili</a> e ci permette di conoscere il nome del file che viene aperto durante l’esecuzione del programma.<br />
-Queste funzioni di tracciatura sono utili nella fase di debug, ma rallentano l’esecuzione del programma perché richiedono l’accesso a un dispositivo esterno, sia esso lo schermo del computer o un file sul disco rigido.
-Per questo motivo, è bene avere la possibilità di disabilitarle nella versione definitiva del programma.
-In questo caso, l’abbiamo fatto inserendo la chiamata in una direttiva <code>ifdef</code> del precompilatore, in modo che venga inserita nel codice solo se è definita la costante <code>__LOG__</code>.
-Dato che si tratta di una costante che non viene utilizzata dal codice, ma che serve solo per modificare il modo in cui è compilato il programma, possiamo definire <code>__LOG__</code> direttamente nella linea di comando del compilatore:</p>
+<p>The <code>log</code> function is the one we saw in the <a href="/en/funzioni.html#parametri-variabili" class="xref">lesson on functions with variable parameters</a>, and it lets us know the name of the file being opened while the program runs.
+These tracing functions are useful during debugging, but they slow down the program’s execution, because they require access to an external device, whether that’s the computer screen or a file on the hard drive.
+For this reason, it’s good practice to be able to disable them in the final version of the program.
+In this case, we did so by wrapping the call in a precompiler <code>ifdef</code> directive, so that it’s only included in the code if the <code>__LOG__</code> constant is defined.
+Since this is a constant that’s never used by the code itself, but only serves to change how the program is compiled, we can define <code>__LOG__</code> directly on the compiler’s command line:</p>
 
 <pre><code>&gt; g++ sorgente.cpp -D __LOG__ -o eseguibile
 </code></pre>
 
 <hr />
 
-<p>Quando l’errore si manifesterà — di solito pochi minuti prima che tu debba smettere di lavorare per uscire o fare qualcos’altro — e tu dovrai identificarne la causa, il primo problema che avrai sarà di riuscire a riprodurre le condizioni in cui si manifesta.
-Come abbiamo visto poco fa, se l’errore dipende dai dati in input, per identificare il problema, dovrai capire quali sono i dati che lo generano; qualche volta sarà facile, ma in altri casi potrà rivelarsi estremamente complesso.<br />
-Diversi anni or sono, il Maestro Canaro dovette registrarsi su un sito Web che gli chiese anche la sua data di nascita — che, come sai, fu il 29 Febbraio del 1964        .
+<p>When the bug shows up — usually a few minutes before you have to stop working to go out or do something else —, and you have to identify its cause, the first problem you’ll face is being able to reproduce the conditions under which it occurs.
+As we saw a moment ago, if the bug depends on the input data, to identify the problem, you’ll need to figure out which data triggers it; sometimes it’ll be easy, but in other cases it can turn out to be extremely complex.
+Several years ago, Master Canaro had to register on a website that also asked for his date of birth — which, as you know, was February 29, 1964.
 <!-- Si trattava di Paypal e questo non è il solo errore che ho rilevato -->
-La maschera di inserimento nuovo utente non gli diede problemi, ma la maschera di modifica dati, evidentemente scritta da un programmatore meno esperto, non gli permise di aggiornarli perché, a suo dire, la data di nascita era sbagliata.
-Ciò vuol dire che il sistema utilizzava due funzioni distinte per il controllo della data di nascita, una nella funzione di inserimento e un’altra nella funzione di modifica, e che almeno la funzione utilizzata in modifica non era una funzione standard, ma codice scritto <em>ad-hoc</em>.<br />
-Entrambe queste scelte sono errori: a una determinata azione sui dati deve corrispondere una singola funzione.
-Fare la stessa operazione con parti di codice distinte è sbagliato; sia perché aumenta la probabilità di commettere degli errori, sia perché rallenta i tempi di identificazione dell’errore in fase di debug.
-È sbagliato anche riscrivere delle funzioni che già esistono: D. J. Bernstein lo fece, con le funzioni di I/O di <a href="http://cr.yp.to/djb.html" target="qmail">qmail</a>, ma la sua fu una precisa scelta architetturale perché voleva delle funzioni che fossero migliori e più sicure delle funzioni della libreria standard.<br />
+The new-user registration form gave him no trouble, but the edit-profile form, evidently written by a less experienced programmer, wouldn’t let him update his details, because, according to it, his date of birth was invalid.
+This means the system used two separate functions to validate the date of birth, one in the registration function and another in the edit function, and that at least the one used in the edit function wasn’t a standard function, but <em>ad-hoc</em> code.
+Both of these choices are mistakes: a single given action on the data should always correspond to a single function.
+Performing the same operation with separate pieces of code is wrong; both because it increases the odds of making a mistake, and because it slows down how quickly a bug can be identified during debugging.
+It’s also wrong to rewrite functions that already exist: D. J. Bernstein did it, with the I/O functions of <a href="http://cr.yp.to/djb.html" target="qmail">qmail</a>, but that was a deliberate architectural choice, because he wanted functions that were better and safer than the standard library’s.
 <!--- e comunque, fare l'analisi del codice di qmail è un delirio.. -->
-A questi due errori di programmazione — inammissibili, in un sito che gestisca transazioni economiche — si aggiunge una profonda sciatteria della fase di debug del codice, perché la corretta gestione dei casi particolari, come gli anni bisestili, va sempre verificata.
-Quando verifichi il funzionamento di un programma, non puoi limitarti a controllare che faccia ciò che deve fare, ma devi anche assicurarti che non faccia ciò che non deve fare.
-In particolare, devi verificare che si comporti correttamente se:</p>
+On top of these two programming mistakes — unacceptable, on a site that handles financial transactions —, there’s a deep carelessness in the code’s debugging phase, because the correct handling of edge cases, like leap years, must always be checked.
+When you test how a program works, you can’t just check that it does what it’s supposed to do — you also have to make sure it doesn’t do what it’s not supposed to do.
+In particular, you need to check that it behaves correctly if:</p>
 
 <ul>
-  <li>gli fornisci i dati di input corretti;</li>
-  <li>non gli fornisci alcun dato;</li>
-  <li>gli fornisci dati errati;</li>
-  <li>gli fornisci dati in eccesso.</li>
+  <li>you give it correct input data;</li>
+  <li>you give it no data at all;</li>
+  <li>you give it incorrect data;</li>
+  <li>you give it excess data.</li>
 </ul>
 
-<p>Quindi, se l’input è una data, dovrai verificare che il tuo sistema gestisca correttamente sia il valore <code>29-02-1964</code> che il valore <code>29-02-1965</code>; se l’input è una stringa di testo, dovrai accertarti che il sistema gestisca correttamente anche il caso in cui riceva più caratteri del previsto e che elimini eventuali caratteri di spazio all’inizio o alla fine del testo, a meno che questo non sia un requisito funzionale.</p>
+<p>So, if the input is a date, you’ll need to check that your system correctly handles both the value <code>29-02-1964</code> and the value <code>29-02-1965</code>; if the input is a text string, you’ll need to make sure the system correctly handles the case where it receives more characters than expected, and that it strips any leading or trailing whitespace, unless that’s an actual functional requirement.</p>
 
 <hr />
 
-<p>In questo programma, una piccola cosa non è stata fatta come si dovrebbe e ne è derivato un errore:</p>
+<p>In this program, one small thing wasn’t done the way it should have been, and a bug resulted from it:</p>
 
 <pre><code>/** 
  * @file src/debug-gestione-errori.cpp
@@ -940,7 +935,7 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>In ossequio a quanto abbiamo detto poco fa, per verificare il funzionamento di  questo programma dovremo fare almeno quattro prove:</p>
+<p>In keeping with what we said a moment ago, to check this program’s behavior we’ll need to run at least four tests:</p>
 
 <pre><code># dati corretti
 src/out/esempio src/cpp/debug-testo-1.txt
@@ -952,23 +947,23 @@ src/out/esempio
 src/out/esempio src/cpp/file-inesistente
 
 # dati in eccesso
-src/out/esempio src/cpp/debug-testo-1.txt abcdefghilmenopqrstuvz  
+src/out/esempio src/cpp/debug-testo-1.txt abcdefghilmnopqrstuvz  
 </code></pre>
 
-<p>Dobbiamo poi verificare che tutte le condizioni di errore siano gestite correttamente.
-Nel nostro caso, gli errori previsti sono:</p>
+<p>We then need to check that every error condition is handled correctly.
+In our case, the expected errors are:</p>
 
 <pre><code>#define ERR_FILE_NONE   -10
 #define ERR_FILE_OPEN   -20
 #define ERR_FILE_READ   -30
 </code></pre>
 
-<p>I primi due errori sono verificati dalle prove standard; il terzo caso lo possiamo verificare passando al programma un file vuoto:</p>
+<p>The first two errors are checked by the standard tests; the third case we can check by passing the program an empty file:</p>
 
 <pre><code>src/out/esempio src/cpp/debug-vuoto.txt
 </code></pre>
 
-<p>Sfortunatamente, però, se compili ed esegui questo codice con i dati corretti, ottieni un errore, anche se il file esiste:</p>
+<p>Unfortunately, though, if you compile and run this code with correct data, you get an error, even though the file exists:</p>
 
 <pre><code>&gt; g++ src/cpp/debug-gestione-errori.cpp -o src/out/esempio
 &gt; src/out/esempio src/cpp/debug-testo-1.txt               
@@ -977,36 +972,36 @@ Nel nostro caso, gli errori previsti sono:</p>
 src/cpp/debug-testo-1.txt
 </code></pre>
 
-<p>Se ri-compili il programma definendo la macro <code>__LOG__</code> per verificare quale sia il file che il programma sta aprendo:</p>
+<p>If you recompile the program, defining the <code>__LOG__</code> macro to check which file the program is opening:</p>
 
 <pre><code>#ifdef __LOG__    
     log(LOG_DEBUG, 2, "Apro il file: ",  path);
 #endif
 </code></pre>
 
-<p>quando esegui i programma, ottieni un nuovo errore:</p>
+<p>when you run the program, you get a new error:</p>
 
 <pre><code>&gt; g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio
 &gt; src/out/esempio src/cpp/debug-testo-1.txt                           
 [DEBUG] Apro il file: zsh: segmentation fault  src/out/esempio src/cpp/debug-testo-1.txt
 </code></pre>
 
-<p>Questo non è il comportamento atteso dalla funzione, ma ci permette comunque di capire quale possa essere il problema.
-L’errore: <code>segmentation fault</code> vuol dire che il programma sta cercando di accedere a un’area di memoria che non gli appartiene.
-L’area di memoria in questione è quella associata al parametro <code>path</code>, che a sua volta è stato inizializzato con il valore della variabile <code>argv[2]</code>:</p>
+<p>This isn’t the behavior the function was meant to have, but it still lets us understand what the problem might be.
+The <code>segmentation fault</code> error means the program is trying to access an area of memory that doesn’t belong to it.
+The memory area in question is the one associated with the <code>path</code> parameter, which was in turn initialized with the value of the variable <code>argv[2]</code>:</p>
 
 <pre><code>esito = apri_file(testo, argv[2]);
 </code></pre>
 
-<p>Il <em>bug</em> è l’indice <code>2</code> nell’array <code>argv</code>.
-Come certamente avrai notato, il codice di questo programma è una rielaborazione del codice della <a href="/en/stream.html" class="xref">lezione sugli stream</a>, che doveva gestire tre parametri da riga di comando.
-Stavolta, però, la stringa di chiamata del programma ha solo due valori: il path del programma e il nome del file di input:</p>
+<p>The <em>bug</em> is the index <code>2</code> in the <code>argv</code> array.
+As you’ve probably noticed, the code of this program is a reworking of the code from the <a href="/en/stream.html" class="xref">lesson on streams</a>, which had to handle three command-line parameters.
+This time, though, the program’s call string only has two values: the program’s own path, and the input file’s name:</p>
 
 <pre><code>&gt; src/out/esempio src/cpp/debug-testo-1.txt
 </code></pre>
 
-<p>Riutilizzare il codice è una cosa buona; scordarsi di modificare il valore dell’indice dell’array <code>argv</code> è una cosa sbagliata, perché l’indirizzo di memoria puntato da <code>argv[2]</code>, adesso, non appartiene al programma: non possiamo utilizzarlo come path per una funzione <code>open</code> e non possiamo stamparlo a video.<br />
-Se correggiamo l’indice, il programma gestisce correttamente tutte le condizioni d’uso:</p>
+<p>Reusing code is a good thing; forgetting to update the value of the <code>argv</code> array’s index is a bad thing, because the memory address pointed to by <code>argv[2]</code> no longer belongs to the program: we can’t use it as a path for an <code>open</code> function, and we can’t print it to the screen.
+If we fix the index, the program handles every usage condition correctly:</p>
 
 <pre><code>&gt; g++ src/cpp/debug-gestione-errori.cpp \
     -D __LOG__ \
@@ -1027,34 +1022,34 @@ Se correggiamo l’indice, il programma gestisce correttamente tutte le condizio
 Essere un ossessivo-compulsivo con una leggera tendenza ...
 </code></pre>
 
-<p>Questo errore di distrazione è stato facilitato dall’utilizzo di una costante numerica per la definizione dell’indice dell’array.
-Scrivere direttamente un numero o una stringa nel codice è sicuramente più rapido e allettante che definire delle costanti per il precompilatore:</p>
+<p>This careless mistake was made easier by using a hardcoded number to define the array’s index.
+Writing a number or a string directly into the code is certainly quicker and more tempting than defining constants for the precompiler:</p>
 
 <pre><code>#define PARAM_PATH 1
 ...
 esito = apri_file(testo, argv[PARAM_PATH]);
 </code></pre>
 
-<p>ma, sul lungo periodo, è controproducente perché rende il codice più complesso da leggere e da modificare.<br />
-<em>Più complesso da leggere</em> perché le costanti aiutano a capire cosa faccia il codice.
-Se leggi l’istruzione:</p>
+<p>but, in the long run, it’s counterproductive, because it makes the code harder to read and to modify.
+<em>Harder to read</em>, because constants help you understand what the code does.
+If you read the instruction:</p>
 
 <pre><code>return (argc &lt; 2) ? ERR_FILE_NONE : ERR_NONE;
 </code></pre>
 
-<p>puoi capire cosa faccia anche se non conosci il codice.
-Se invece leggi la stessa istruzione, ma senza le costanti:</p>
+<p>you can understand what it does even without knowing the code.
+If instead you read the same instruction, but without the constants:</p>
 
 <pre><code>return (argc &lt; 2) ? -10 : 0;
 </code></pre>
 
-<p>per capire cosa faccia dovrai andare a leggere la documentazione del programma, posto che ce ne sia una.<br />
-<em>Più complesso da modificare</em> perché l’utilizzo di costanti al posto di valori <em>hard-coded</em> permette di cambiare il valore di una costante agendo in un solo punto:</p>
+<p>to understand what it does you’ll have to go read the program’s documentation, assuming one exists.
+<em>Harder to modify</em>, because using constants instead of <em>hardcoded</em> values lets you change a constant’s value by editing a single spot:</p>
 
 <pre><code>#define ERR_NONE  1
 </code></pre>
 
-<p>Se non avessimo usato una costante, per ottenere lo stesso risultato avremmo dovuto modificare tre istruzioni distinte:</p>
+<p>If we hadn’t used a constant, to get the same result we would have had to change three separate instructions:</p>
 
 <pre><code>return (argc &lt; 2) ? ERR_FILE_NONE : ERR_NONE;
 
@@ -1067,98 +1062,98 @@ return ERR_NONE;
 int esito = ERR_NONE;
 </code></pre>
 
-<p>In un programma più complesso del nostro esempio, le modifiche sarebbero state sicuramente di più e più difficili da identificare; inoltre, se ce ne fossimo dimenticata una (probabile), avremmo introdotto un errore nel sistema.<br />
-Le costanti <em>hard-coded</em> possono essere utilizzate solo nella prima fase dello sviluppo del programma, quando non sei ancora sicuro che la strada che hai scelto sia quella giusta.
-In questa fase è ammissibile che tu faccia delle prove inserendo dei valori direttamente nel codice, ma quando l’algoritmo sarà ragionevolmente stabile, dovrai convertire tutti i valori in costanti.</p>
+<p>In a program more complex than our example, there would certainly have been more changes, and they’d have been harder to identify; moreover, if we forgot even one of them (likely), we would have introduced a bug into the system.
+<em>Hardcoded</em> constants can only be used in the first phase of a program’s development, when you’re not yet sure the path you’ve chosen is the right one.
+At this stage it’s acceptable to run tests by putting values directly into the code, but once the algorithm is reasonably stable, you’ll need to convert every value into a constant.</p>
 
 <hr id="dottrina" />
 
 <blockquote>
-  <p>Un sistema è una casa che, subito dopo costruita e adornata, ha bisogno (soggetta com’è all’azione corroditrice degli elementi) di un lavorio più o meno energico, ma assiduo, di manutenzione, e che a un certo momento non giova più restaurare e puntellare, e bisogna gettare a terra e ricostruire dalle fondamenta. Ma con siffatta differenza capitale: che, nell’opera del pensiero, la casa perpetuamente nuova e sostenuta perpetuamente dall’antica, la quale, quasi per opera magica, perdura in essa.<a class="nota" href="/en/note#fn-croce" id="croce">1</a></p>
+  <p>A system is a house that, as soon as it is built and furnished, needs (subject as it is to the corroding action of the elements) a more or less vigorous but constant work of maintenance, and that at a certain point it is no longer worth restoring and propping up, and it must be torn down and rebuilt from the foundations. But with this crucial difference: that, in the work of thought, the house is perpetually new and perpetually sustained by the old one, which, as if by magic, endures within it.<a class="nota" href="/en/note#fn-croce" id="croce">1</a></p>
 </blockquote>
 
-<p>O prima o poi, la tua vita andrà in errore, come il software.<br />
-Non importa quanto tu sia stato prudente o quale sia il tuo <em>Karma</em>: a un certo punto la terra sotto i tuoi piedi comincerà a franare e tu cadrai giù, lungo la montagna che stavi scalando, ritrovandoti al punto di partenza.
-Quello che farai in quel momento deciderà del resto della tua vita e ti farà capire che tipo di uomo sei — o che donna, visto che queste cose non succedono solo ai maschietti.<br />
-Comincia a prepararti da adesso a quel momento, perché, quando avverrà (<em>quando</em>, non: <em>se</em>), probabilmente sarai solo e prendere delle decisioni sarà molto difficile perché avrai perso ogni fiducia in te stesso.
-Se ti rompi una gamba, o un braccio, il tuo cervello ti può dire se stanno guarendo o peggiorando, ma se batti la testa non è facile capire come stai, perché l’organo in esame e l’organo esaminatore coincidono.
+<p>Sooner or later, your life will crash, just like software.
+It doesn’t matter how careful you’ve been, or what your <em>Karma</em> is: at some point the ground under your feet will start to give way, and you’ll fall down the mountain you were climbing, finding yourself right back at the starting point.
+What you do in that moment will decide the rest of your life, and will show you what kind of man you are — or woman, since these things don’t only happen to men.
+Start preparing for that moment now, because, when it comes (<em>when</em>, not <em>if</em>), you’ll probably be alone, and making decisions will be very hard, because you’ll have lost all faith in yourself.
+If you break a leg, or an arm, your brain can tell you whether it’s healing or getting worse, but if you hit your head, it isn’t easy to tell how you’re doing, because the organ being examined and the organ doing the examining are one and the same.
 <!-- @todo - decidere se aggiungere aneddoto su Maestro Canaro e solitario -->
-Allo stesso modo, se non ti fidi di te stesso, è difficile capire se le scelte che fai sono corrette.
-La paura o la prudenza potrebbero spingerti a non fare la scelta giusta, quindi, per prima cosa, dovrai fare il <em>debug</em> della tua vita per capire se e in quale misura devi biasimarti per ciò che è avvenuto; fatto ciò, dovrai identificare i tuoi errori e trovare un modo per non ripeterli.<br />
-L’approccio più comune è di guardarsi indietro e cercare di capire quali siano state le proprie colpe, considerando queste degli eventi isolati in un’esistenza fatta prevalentemente di scelte corrette.
-Dato però che ciascuno di noi tende — più o meno inconsciamente —, a cercare cause esogene alle sue sventure inventandosi complotti o trasferendo le proprie responsabilità a terzi, la cosa migliore, in questi casi, è di adottare l’atteggiamento opposto e partire dal presupposto che <em>tutto</em> ciò che è successo di male nella tua vita sia una tua colpa, per poi individuare i casi in cui ciò che è successo, in effetti, non è dipeso da te.
-Questo approccio <em>bottom-down</em><a class="nota" href="/en/note#fn-bottom-down" id="bottom-down">2</a> ha due pregi: il primo  è che, analizzando gli eventi passati potresti scoprire che alcune colpe che ti attribuivi non erano reali; il secondo è che sarà più difficile mentire a te stesso.
-Ciascuno di noi ha una parte di responsabilità in ciò che gli succede, anche negli eventi che non genera direttamente.
-Assumersi a priori la colpa di tutto il male che ci è successo rende più difficile mentirci e ci permette di identificare tutte le nostre colpe, per piccole che siano.<br />
-Attenzione, però: non devi pensare alle tue colpe come se fossi un inquisitore del tredicesimo Secolo, ma come se fossero dei <em>bug</em> nel programma della tua vita.
-Qualcuna genererà degli errori, altre solo dei <em>warning</em> e il tuo dovere è quello di identificarne il più possibile, per poi cercare di correggerle per migliorare il funzionamento del sistema.</p>
+In the same way, if you don’t trust yourself, it’s hard to tell whether the choices you’re making are the right ones.
+Fear or caution might push you away from the right choice, so, first of all, you’ll need to <em>debug</em> your own life, to understand whether, and to what extent, you should blame yourself for what happened; once you’ve done that, you’ll need to identify your mistakes and find a way not to repeat them.
+The most common approach is to look back and try to figure out what your own faults have been, treating them as isolated events within an existence made up mostly of correct choices.
+But since each of us tends — more or less unconsciously — to look for causes outside ourselves for our own misfortunes, inventing conspiracies or shifting our own responsibilities onto others, the best thing to do, in these cases, is to adopt the opposite attitude, and start from the assumption that <em>everything</em> bad that has happened in your life is your own fault, and only then identify the cases where what happened, in fact, didn’t depend on you.
+This <em>bottom-down</em><a class="nota" href="/en/note#fn-bottom-down" id="bottom-down">2</a> approach has two merits: the first is that, by analyzing past events, you might discover that some of the blame you’d assigned yourself wasn’t real; the second is that it will be harder to lie to yourself.
+Each of us bears some share of responsibility for what happens to us, even for events we didn’t directly cause.
+Assuming, from the outset, the blame for all the bad that has happened to us makes it harder to lie to ourselves, and lets us identify all our faults, however small.
+Be careful, though: you shouldn’t think of your faults the way a thirteenth-century inquisitor would, but as <em>bugs</em> in the program of your life.
+Some will generate errors, others only <em>warnings</em>, and your duty is to identify as many of them as possible, and then try to fix them, to improve how the system runs.</p>
 
 <blockquote>
-  <p>Il cambiamento inizia quando si intraprende un nuovo sentiero , anche se questo sentiero non è che una traccia lasciata da una capra assetata che ha trovato una sorgente.<a class="nota" href="/en/note#fn-deen" id="deen">3</a></p>
+  <p>Change begins when you set out on a new path, even if that path is nothing more than a track left by a thirsty goat that found a spring.<a class="nota" href="/en/note#fn-deen" id="deen">3</a></p>
 </blockquote>
 
-<p>Contrariamente a quello che avviene con il software, non sempre è possibile correggere i <em>bug</em> della nostra esistenza.
-Si può modificare un aspetto deteriore del nostro carattere, ma non è detto che sia possibile rimediare ai danni che questo ha causato a noi o a terzi.
-Per fare un paragone con il debug del software, i difetti caratteriali sono errori di compilazione, mentre gli effetti dei nostri sbagli sono errori di esecuzione; i primi li possiamo correggere, gli errori di esecuzione, no: ormai è andata.
-Quello che possiamo e che dobbiamo fare, però, è di <a id="pentimento" href="/en/istruzioni-condizionali#pentimento" class="xref">pentircene sinceramente</a>, ovvero riconoscerli come errori, in modo da evitare di ripeterli nei prossimi cicli di esistenza.<br />
-Anche se non possiamo cancellare gli effetti di un nostro errore, possiamo comunque chiedere perdòno a coloro i quali abbiamo arrecato danno.
-Non basterà chiedere scusa: si chiede scusa quando ciò che hai fatto non dipende da te, come quando qualcuno di urta e tu versi il tuo vino sul vestito del vicino; se invece il vino glielo hai tirato addosso intenzionalmente, dovrai chiedere <em>perdòno</em>, cercare per quanto possibile di riparare all’errore fatto e non commetterlo mai più, né con lui (o lei) né con altri.<br />
-Non sottovalutare il potere terapeutico del perdòno, anche se ci saranno dei casi in cui non lo otterrai.
-Se è vero che non si può cambiare il passato per qualcuno che abbiamo ferito, è altrettanto vero che si può provare a compensare il danno fatto rendendogli migliore il presente o il futuro.
-Le persone a cui facciamo del male sono spesso quelle a cui siamo più legati; far sapere loro che che non li abbiamo dimenticati e che ciò che è successo ci addolora, può servire a ricucire delle ferite; dall’una e dall’altra parte.</p>
+<p>Unlike with software, it isn’t always possible to fix the <em>bugs</em> of our existence.
+You can change a flawed aspect of your character, but that doesn’t mean it’s possible to undo the damage it caused to yourself or to others.
+To draw a parallel with software debugging, character flaws are compile errors, while the effects of our mistakes are runtime errors; the former we can fix, the latter, no: what’s done is done.
+What we can and must do, though, is <a id="pentimento" href="/en/istruzioni-condizionali#pentimento" class="xref">sincerely repent them</a>, that is, acknowledge them as mistakes, so as to avoid repeating them in future cycles of existence.
+Even if we can’t undo the effects of a mistake, we can still ask forgiveness from those we’ve harmed.
+Saying sorry won’t be enough: you say sorry when what you did wasn’t up to you, like when someone bumps into you and you spill your wine on your neighbor’s clothes; but if you threw the wine at them on purpose, you’ll need to ask <em>forgiveness</em>, try as much as possible to make up for what you did, and never do it again, either to them or to anyone else.
+Don’t underestimate the healing power of forgiveness, even though there will be cases where you won’t get it.
+While it’s true that you can’t change the past for someone you’ve hurt, it’s just as true that you can try to make up for the harm done by making their present or future better.
+The people we hurt are often the ones we’re closest to; letting them know we haven’t forgotten them, and that what happened pains us, can help mend wounds — on both sides.</p>
 
 <hr id="come-capire" />
 
-<p>Quando ripenserai a ciò che ti è avvenuto in passato, come un buon analista, dovrai cercare di immedesimarti nelle persone con cui hai avuto a che fare, capire le loro ragioni al di là di eventuali rancori o recriminazioni.
-Per fare ciò, dovrai tenere a mente alcuni fattori che influenzano il comportamento di tutti noi.
-Il primo, ovviamente, è l’influenza dell’Annosa Dicotomia, che, per mano del suo lacché il Marketing, spinge le persone a soddisfare i proprii desiderii invece che i proprii bisogni, creando degli schemi di valori fallaci e spingendoli a dimenticare che esistono per tutti la vecchiaia e la morte. <br />
-Il secondo fattore da considerare è la natura umana; ricorda:</p>
+<p>When you look back on what’s happened to you in the past, like a good analyst, you’ll need to try to put yourself in the shoes of the people you dealt with, and understand their reasons, beyond any grudges or grievances.
+To do this, you’ll need to keep in mind a few factors that shape all of our behavior.
+The first, obviously, is the influence of the Age-Old Dichotomy, which, through its lackey Marketing, pushes people to satisfy their desires instead of their needs, creating flawed frameworks of values and leading them to forget that old age and death await everyone.
+The second factor to consider is human nature; remember:</p>
 
 <blockquote>
-
+  <p>Never attribute to malice what can be explained by stupidity.</p>
 </blockquote>
 
-<p>O, per dirla con De Santillana:</p>
+<p>Or, as De Santillana put it:</p>
 
 <blockquote>
-  <p>C’è una buona regola per gli storici che ho sempre tenuto presente quando lavoravo al mio <i>Galileo</i>: mai sottovalutare il potere della stoltezza e dell’insensatezza nelle vicende umane.<a class="nota" href="/en/note#fn-stoltezza" id="stoltezza">4</a></p>
+  <p>There is a good rule for historians that I have always kept in mind while working on my <i>Galileo</i>: never underestimate the power of foolishness and senselessness in human affairs.<a class="nota" href="/en/note#fn-stoltezza" id="stoltezza">4</a></p>
 </blockquote>
 
-<p>Per derimere le questioni relative ai rapporti di coppia, invece, l’approccio più sicuro è quello antropologico.
-Come diceva il Maestro Canaro:</p>
+<p>To settle matters concerning relationships between couples, though, the safest approach is the anthropological one.
+As Master Canaro used to say:</p>
 
 <blockquote>
-
+  <p>A hundred years of feminism cannot beat a hundred thousand years of evolution.</p>
 </blockquote>
 
-<p>Secondo lui, qualsiasi comportamento anomalo nell’ambito di una coppia può essere spiegato tenendo a mente tre principii:</p>
+<p>According to him, any anomalous behavior within a couple can be explained by keeping three principles in mind:</p>
 
 <ol>
-  <li>le donne sono incubatrici parlanti;<br /></li>
-  <li>gli uomini sono dispenser di sperma;<br /></li>
-  <li>ogni eccesso nasconde un eccesso di natura opposta e pari entità.</li>
+  <li>women are talking incubators;<br /></li>
+  <li>men are sperm dispensers;<br /></li>
+  <li>every excess conceals an excess of the opposite kind, of equal size.</li>
 </ol>
 
-<p>Parafrasando quel senza Dio di Dawkins, noi siamo l’<em>hard-disk</em> dei nostri geni, la memoria di massa che garantisce loro una persistenza.
-Il nostro software può variare, ma il firmware<a class="nota" href="/en/note#fn-firmware" id="firmware">5</a> che definisce il nostro comportamento a basso livello è immutato da migliaia di anni e ci spinge a fare ciò per cui siamo stati creati, ovvero riprodurci.<br />
-Né le sovrastrutture culturali che abbiamo inventato, né gli idoli ai cui piedi ci prostriamo e nemmeno l’Annosa Dicotomia possono modificare la nostra ROM.
-Ignorare o, peggio, ribellarsi a questo stato di fatto è il primo passo verso la rovina o l’infelicità o entrambe le cose.</p>
+<p>Paraphrasing that godless Dawkins, we are the <em>hard drive</em> of our genes, the mass storage that guarantees their persistence.
+Our software can vary, but the firmware<a class="nota" href="/en/note#fn-firmware" id="firmware">5</a> that defines our low-level behavior has stayed unchanged for thousands of years, and drives us to do what we were created for, that is, to reproduce.
+Neither the cultural superstructures we’ve invented, nor the idols we prostrate ourselves before, nor even the Age-Old Dichotomy, can modify our ROM.
+Ignoring, or worse, rebelling against this state of affairs is the first step toward ruin, unhappiness, or both.</p>
 
 <hr id="fine" />
 
-<p>Ecco: questo è tutto.
-Ricorda però: ciò che ti ho insegnato non è un punto di arrivo, ma un punto di partenza.
-La fine del cammino che abbiamo percorso insieme coincide con l’inizio del cammino che percorrerai da solo.
-Da questo momento in poi tu hai il dovere di diffondere le idee che ti ho trasmesso e, allo stesso tempo, di metterle costantemente alla prova per emendarle dai molti errori che certamente avrò commesso, così come il Maestro Canaro prima di me.
-Così come agli antichi Cristiani era vietato adorare gli idoli, io ti vieto di adorare le parole.
-Scrivi il tuo libro, se lo desideri, ma che non sia un libro stupido; fa’ in modo che lo si possa correggere facilmente, se necessario, in modo che ciò che afferma sia sempre il punto più vicino alla verità che tu possa raggiungere, perché l’oggetto dei tuoi sforzi dev’essere sempre la verità, non la tradizione.<br />
-Noi viviamo prevalentemente sulla terraferma e riteniamo perciò che la normalità sia questa. Se però si trascorre un lungo periodo di tempo su una nave o in un’isola, si ha modo di capire come la normalità sia l’acqua e la terra sia solo un’eccezione.
-Similmente, noi diamo grande importanza al ciclo di nascita, riproduzione e morte che chiamiamo “vita” e in essa vediamo il fine ultimo dell’Universo, dimenticandoci che la vita è solo un caso particolare di esistenza e che un universo di sassi sarebbe comunque prodigioso.<br />
-Ciascuna forma di vita consociata, per poter sopravvivere, richiede la legittimazione di alcune follie biologiche.
-Il rispetto di queste follie, essendo in-naturale, richiede l’istituzione di un livello superiore di costrizione, ovvero un corpo di regole formali ancora più distante del precedente dal comportamento biologico degli esseri viventi.
-Con il passare del tempo, molte di queste convenzioni nate in seguito a esigenze contingenti, finiscono inevitabilmente per contrastare con il senso comune di giustizia e devono essere o abolite o modificate, solo che ciascuna modifica o adattamento invece di renderle più “giuste”, le allontana ulteriormente dal loro scòpo iniziale e le rende soggette a interpretazioni errate o addirittura opposte a quelle che era il loro fine primario.<br />
-Sant’Agostino ha detto la stessa cosa, ma molto meglio di quanto stia facendo io adesso.<br />
-Si vede che era sobrio.</p>
+<p>There: that’s everything.
+Remember, though: what I’ve taught you is not a destination, but a starting point.
+The end of the path we’ve walked together coincides with the beginning of the path you’ll walk on your own.
+From this moment on, it’s your duty to spread the ideas I’ve passed on to you, and, at the same time, to constantly put them to the test, so as to amend the many mistakes I’ve surely made, just as Master Canaro did before me.
+Just as the ancient Christians were forbidden from worshipping idols, I forbid you from worshipping words.
+Write your book, if you wish to, but don’t let it be a foolish book; make it so it can easily be corrected, if needed, so that what it states is always the closest to the truth you can reach, because the object of your efforts must always be the truth, not tradition.
+We live mostly on dry land, and so we consider that to be normal. But if you spend a long stretch of time on a ship, or on an island, you come to understand that normality is water, and that land is only an exception.
+In the same way, we place great importance on the cycle of birth, reproduction, and death that we call “life”, and see in it the ultimate purpose of the Universe, forgetting that life is just a particular case of existence, and that a universe made of rocks would still be a marvel.
+Every form of communal life, in order to survive, requires the legitimization of certain biological follies.
+Respecting these follies, being unnatural, requires setting up a higher level of constraint, that is, a body of formal rules even further removed from the biological behavior of living beings than the follies themselves.
+Over time, many of these conventions, born out of contingent needs, inevitably end up clashing with the common sense of justice, and have to be either abolished or amended — only every amendment or adjustment, instead of making them more “just”, pushes them further away from their original purpose, and leaves them open to mistaken interpretations, or even ones opposite to what their original aim was.
+Saint Augustine said the same thing, but much better than I’m doing now.
+Clearly, he was sober.</p>
 
 <!--
 importanza dell'impaginazione dei nomi: OPEN, CLOSE, READ / INPUT, DELETE, UPDATE
