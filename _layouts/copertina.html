@@ -4,7 +4,7 @@
 <body class="manuale {{ page.class }} ">
     <div class="page {{ page.class }}">
         <header>
-            {%- include man-menu.html -%}
+            {%- include menu.html -%}
         </header>
         <main class="corpo {{ page.status }} ">
 
@@ -22,6 +22,10 @@
                     <tr>
                         <td><i class="fa fa-home" aria-hidden="true"></i></td>
                         <td>{{ site.data.strings[page.lang].legenda_home }}</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-bars" aria-hidden="true"></i></td>
+                        <td>{{ site.data.strings[page.lang].legenda_index }}</td>
                     </tr>
                     <tr>
                         <td><i class="fab fa-github fa-2x" aria-hidden="true"></i></td>
