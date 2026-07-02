@@ -6,7 +6,7 @@
 
 
 <head>
-    <title>Gli stream |  C'hi++
+    <title>Streams |  C'hi++
 </title>
     <meta charset="utf-8" />
     <link      rel="canonical"          href="https://chiplusplus.org/en/stream" />
@@ -19,8 +19,8 @@
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
     <meta property="og:url"          content="https://chiplusplus.org/en/stream" />
     <meta property="og:type"         content="website" />
-    <meta property="og:title"        content="Gli stream" />
-    <meta property="og:description"  content="Problemi esistenziali del codice di esempio - Un hard-disk meta-fisico - Mezzo secolo di fallimenti ideologici - Etica degli Scacchi - John Lennon se l'è cercata." />
+    <meta property="og:title"        content="Streams" />
+    <meta property="og:description"  content="Existential problems of sample code - A metaphysical hard drive - Half a century of ideological failures - The ethics of Chess - John Lennon had it coming." />
     <meta property="og:image:width"  content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image"        content="https://chiplusplus.org/assets/img/og-img/stream.jpg" />
@@ -79,17 +79,17 @@
         <main class="corpo pubblicato ">
         
             <h1><a href="#dottrina">
-                Gli stream</a>
+                Streams</a>
             </h1>
-            <blockquote class="motto">Non puoi immergere i tuoi byte due volte nello stesso stream</blockquote>
+            <blockquote class="motto">You can never dip your bytes in the same stream twice</blockquote>
             <section class="testo">
-                <p>Oggi ti parlerò degli <em>stream</em> che, com’è noto, sono la componente più importante del C++.</p>
+                <p>Today I’ll tell you about <em>streams</em>, which, as is well known, are C++’s most important component.</p>
 
-<p>Il C++ eredita dal C l’assenza di parole chiave per la gestione dell’I/O.
-Al posto di istruzioni come la <code>print</code> del BASIC, utilizza delle librerie di classi e funzioni che permettono di convertire in testo stampabile gli oggetti gestiti dal programma o di convertire degli elementi testuali in oggetti.
-Non potrebbe essere altrimenti: il C++ non deve gestire solo stringhe e numeri, come il BASIC, ma anche numeri in virgola mobile, puntatori e soprattutto i tipi di dato definiti dall’utente, per i quali non sarebbe possibile definire un comportamento standard e che quindi dovrebbero essere trattati in maniera differente dai dati primitivi, con tanti saluti alla coerenza del linguaggio.<br />
-Oltre a poter sfruttare le librerie di funzioni del <em>C</em>, il C++ ha una propria libreria di I/O, ba­sata sulla gerarchia delle classi <code>stream</code>, che permette di gestire anche i tipi di dato definiti dall’utente.
-Abbiamo visto degli esempii di questa caratteristica quando abbiamo parlato di <a href="/en/c-plus-plus#polimorfismo" class="xref">polimorfismo</a> e di <a href="/en/polimorfismo#overload-operatori" class="xref">overload degli operatori</a>:</p>
+<p>C++ inherits from C the lack of dedicated keywords for I/O management.
+Instead of instructions like BASIC’s <code>print</code>, it uses libraries of classes and functions that let you convert the objects a program manages into printable text, or convert text elements into objects.
+It couldn’t be otherwise: C++ doesn’t just have to handle strings and numbers, like BASIC, but also floating-point numbers, pointers, and above all user-defined data types, for which it wouldn’t be possible to define a standard behavior, and which would therefore need to be handled differently from primitive data — so much for the consistency of the language.
+Besides being able to make use of C’s function libraries, C++ has its own I/O library, based on the <code>stream</code> class hierarchy, which lets you handle user-defined data types too.
+We’ve already seen examples of this feature when we talked about <a href="/en/c-plus-plus#polimorfismo" class="xref">polymorphism</a> and <a href="/en/polimorfismo#overload-operatori" class="xref">operator overloading</a>:</p>
 
 <pre><code>ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animale&amp; animale) {
     os  &lt;&lt; "Specie:" &lt;&lt; animale.getSpecie() &lt;&lt; "\t"
@@ -100,21 +100,21 @@ Abbiamo visto degli esempii di questa caratteristica quando abbiamo parlato di <
 }
 </code></pre>
 
-<p>Questo codice “insegna” all’operatore <code>&lt;&lt;</code> come comportarsi per visualizzare un oggetto di classe <code>Animale</code>.
-Lo stesso si può fare (e lo abbiamo fatto) per qualsiasi altro tipo definito dall’utente.
-È la sintassi del linguaggio che si adatta alle esigenze del programmatore, e non viceversa.<br />
-Alcuni concetti chiave per la comprensione degli stream sono:</p>
+<p>This code “teaches” the <code>&lt;&lt;</code> operator how to behave when displaying an object of class <code>Animale</code>.
+The same can be done (and we did it) for any other user-defined type.
+It’s the language’s syntax that adapts to the programmer’s needs, not the other way around.
+A few key concepts for understanding streams are:</p>
 
 <ul>
-  <li>uno <em>stream</em> è un’astrazione che rappresenta la sorgente o la destinazione di un insieme di dati di lunghezza variabile: l’input da tastiera, l’output su schermo, i buffer di memoria, le stringhe, i file;</li>
-  <li>l’output su stream verso una qualsiasi destinazione, viene definito <em>scrit­tura</em> o <em>inserimento</em> e si effettua per mezzo dell’operatore <code>&lt;&lt;</code>;</li>
-  <li>con i termini <em>lettura</em> o <em>estrazione</em>, invece, si intende l’operazione di acquisizione da una sorgente, effettuata dall’operatore <code>&gt;&gt;</code>.</li>
+  <li>a <em>stream</em> is an abstraction representing the source or destination of a set of data of variable length: keyboard input, screen output, memory buffers, strings, files;</li>
+  <li>output to a stream, toward any destination, is called <em>writing</em> or <em>insertion</em>, and is performed by means of the <code>&lt;&lt;</code> operator;</li>
+  <li>the terms <em>reading</em> or <em>extraction</em>, instead, refer to the operation of acquiring data from a source, performed by the <code>&gt;&gt;</code> operator.</li>
 </ul>
 
-<p>La libreria <code>iostream</code> del C++ permette di gestire le operazioni di I/O su stream per mezzo di classi derivate da due classi base: <code>streambuf</code> e <code>iosbase</code>.
-La libreria ha due diverse “linee genealogiche”: una destinata alla gestione dei caratteri di un byte e una destinata ai caratteri multi-byte.
-Le classi della libreria multi-byte hanno lo stesso nome delle classi ordinarie, con l’aggiunta del prefisso: “w”.<br />
-Questo è lo schema di ereditarietà delle classi della libreria <code>iostream</code>:</p>
+<p>C++’s <code>iostream</code> library lets you handle stream I/O operations by means of classes derived from two base classes: <code>streambuf</code> and <code>iosbase</code>.
+The library has two different “family lines”: one meant for handling single-byte characters, and one meant for multi-byte characters.
+The classes of the multi-byte library have the same name as the ordinary classes, with the prefix “w” added.
+This is the inheritance layout of the <code>iostream</code> library’s classes:</p>
 
 <pre><code>                              ios_base
                                  |
@@ -142,18 +142,18 @@ basic_istringstream |            |   basic_ostringstream    |
 
 </code></pre>
 
-<p>A parte <code>ios_base</code>, queste sono tutte classi template che sono poi istanziate con parametri differenti per gestire la gestione dei tipi di carattere <code>char</code> and <code>wchar_t</code>.
-Per esempio, la classe <code>ostream</code> è una specializzazione della classe <code>basic_ostream</code>:</p>
+<p>Except for <code>ios_base</code>, these are all template classes, later instantiated with different parameters to handle the character types <code>char</code> and <code>wchar_t</code>.
+For example, the <code>ostream</code> class is a specialization of the <code>basic_ostream</code> class:</p>
 
 <pre><code>typedef basic_ostream&lt;char&gt; ostream;
 </code></pre>
 
-<p>Il suo corrispettivo multi-byte è la classe <code>wostream</code>:</p>
+<p>Its multi-byte counterpart is the <code>wostream</code> class:</p>
 
 <pre><code>typedef basic_ostream&lt;wchar_t&gt; wostream;
 </code></pre>
 
-<p>La classe template <code>basic_ostream</code>, a sua volta, deriva da <code>basic_ios</code>:</p>
+<p>The <code>basic_ostream</code> template class, in turn, derives from <code>basic_ios</code>:</p>
 
 <pre><code>template&lt;
     class CharT,
@@ -161,7 +161,7 @@ Per esempio, la classe <code>ostream</code> è una specializzazione della classe
 &gt; class basic_ostream
 : virtual public std::basic_ios&lt;CharT, Traits&gt;
 </code></pre>
-<p>che, a sua volta, deriva da <code>ios_base</code>:</p>
+<p>which, in turn, derives from <code>ios_base</code>:</p>
 
 <pre><code>template&lt;
     class CharT,
@@ -170,8 +170,8 @@ Per esempio, la classe <code>ostream</code> è una specializzazione della classe
 : public std::ios_base
 </code></pre>
 
-<p>In sostanza: se davanti al nome c’è il prefisso <code>basic_</code>, si tratta della classe template; se c’è c’è la lettera “w”, si tratta della versione multi-byte, altrimenti è la classe ordinaria.<br />
-Oltre alle classi derivate da <code>iosbase</code>, la libreria comprende anche delle classi per la gestione dei buffer di dati:</p>
+<p>In short: if the name is prefixed with <code>basic_</code>, it’s the template class; if it has a “w” in it, it’s the multi-byte version; otherwise it’s the ordinary class.
+Besides the classes derived from <code>iosbase</code>, the library also includes classes for managing data buffers:</p>
 
 <pre><code>                       basic_streambuf
                       ________|________
@@ -179,9 +179,9 @@ Oltre alle classi derivate da <code>iosbase</code>, la libreria comprende anche 
                basic_stringbuf     basic_filebuf
 </code></pre>
 
-<p>La classe template virtuale <code>basic_streambuf</code>, che fa parte della libreria, ma non della discendenza da <code>ios_base</code>, contiene i dati e le funzioni necessarie alla gestione di un buffer di caratteri.
-Le sue classi derivate <code>basic_stringbuf</code> e <code>basic_filebuf</code> sono invece specializzate, rispettivamente, nella gestione di buffer in memoria e su file.
-Anche in questo caso, la libreria comprende due versioni di ciascuna classe, specializzate per la gestione di <code>char</code> and <code>wchar_t</code>.</p>
+<p>The virtual template class <code>basic_streambuf</code>, which is part of the library but not of the <code>ios_base</code> lineage, holds the data and functions needed to manage a character buffer.
+Its derived classes <code>basic_stringbuf</code> and <code>basic_filebuf</code> are instead specialized in handling in-memory and on-file buffers, respectively.
+Here too, the library includes two versions of each class, specialized for handling <code>char</code> and <code>wchar_t</code>.</p>
 
 <pre><code>typedef streambuf  basic_streambuf&lt;char&gt;
 typedef wstreambuf basic_streambuf&lt;wchar_t&gt;
@@ -189,86 +189,86 @@ typedef filebuf    basic_filebuf&lt;char&gt;
 typedef wfilebuf   basic_filebuf&lt;wchar_t&gt;
 </code></pre>
 
-<p>Come forse avrai intuito, esaminare le singole classi della libreria <code>iostream</code> è un’attività che rivaleggia, in quanto a tedio, con l’epigrafia classica, ma ci permetterà di vedere applicati tutta una serie di principii di cui abbiamo parlato nelle lezioni precedenti, perciò, facciamoci forza e andiamo a incominciare.</p>
+<p>As you’ve probably guessed, going through the individual classes of the <code>iostream</code> library is an activity that rivals classical epigraphy for sheer tedium, but it’ll let us see a whole series of principles we discussed in previous lessons put into practice, so, let’s brace ourselves and get started.</p>
 
 <hr />
 
-<p>La classe <code id="ios-base">ios_base</code> e la sua prima discendente <code id="basic-ios">basic_ios</code> sono classi generiche che forniscono le funzioni di base per la gestione degli stream, indipendentemente dal fatto che si tratti di stream di input o di output.<br />
-Una peculiarità di <code>ios_base</code> è che non possiede un costruttore pubblico, quindi non è possibile utilizzarla per creare oggetti, ma solo come base per delle classi derivate.<br />
-Le istanze specializzate di <code>basic_ios</code> sono:</p>
+<p>The <code id="ios-base">ios_base</code> class and its first descendant, <code id="basic-ios">basic_ios</code>, are generic classes that provide the basic functions for managing streams, regardless of whether they’re input or output streams.
+A peculiarity of <code>ios_base</code> is that it has no public constructor, so it cannot be used to create objects — only as a base for derived classes.
+The specialized instances of <code>basic_ios</code> are:</p>
 
 <pre><code>typedef basic_ios&lt;char&gt;    ios;
 typedef basic_ios&lt;wchar_t&gt; wios;
 </code></pre>
 
-<p>Tramite i metodi di queste classi è possibile verificare o modificare lo stato interno dello stream, la sua formattazione o definire delle funzioni callback per la gestione dei dati.<br />
-Il dato membro <code>openmode</code>, per esempio, definisce il modo in cui debba essere aperto lo stream:</p>
+<p>Through the methods of these classes, you can check or change a stream’s internal state, its formatting, or define callback functions for handling data.
+The <code>openmode</code> member data, for example, defines how the stream should be opened:</p>
 
 <table>
   <tbody>
     <tr>
       <td><em>app</em></td>
-      <td>Fa sì che ogni operazione di output avvenga alla fine dello stream.</td>
+      <td>Makes every output operation happen at the end of the stream.</td>
     </tr>
     <tr>
       <td><em>ate</em></td>
-      <td>In apertura dello stream, sposta il punto di inserimento al termine  (<em><strong>at e</strong>nd</em>) del buffer di I/O.</td>
+      <td>On opening the stream, moves the insertion point to the end (<em><strong>at e</strong>nd</em>) of the I/O buffer.</td>
     </tr>
     <tr>
       <td><em>binary</em></td>
-      <td>Gestisce il contenuto dello stream come un flusso di dati binario.</td>
+      <td>Treats the stream’s content as a binary data stream.</td>
     </tr>
     <tr>
       <td><em>in</em></td>
-      <td>Permette operazioni di input.</td>
+      <td>Allows input operations.</td>
     </tr>
     <tr>
       <td><em>out</em></td>
-      <td>Permette operazioni di output.</td>
+      <td>Allows output operations.</td>
     </tr>
     <tr>
       <td><em>trunc</em></td>
-      <td>Azzera il contenuto dello stream all’apertura.</td>
+      <td>Clears the stream’s content when opened.</td>
     </tr>
   </tbody>
 </table>
 
-<p>Il dato membro <code>iostate</code>, che utilizzeremo in uno dei prossimi esempii, contiene le informazioni sullo stato corrente dello stream:</p>
+<p>The <code>iostate</code> member data, which we’ll use in one of the next examples, holds information about the stream’s current state:</p>
 
 <table>
   <tbody>
     <tr>
       <td><em>goodbit</em></td>
-      <td>Nessun errore</td>
+      <td>No error</td>
     </tr>
     <tr>
       <td><em>eofbit</em></td>
-      <td>È stata raggiunta la fine dello stream.</td>
+      <td>The end of the stream has been reached.</td>
     </tr>
     <tr>
       <td><em>failbit</em></td>
-      <td>L’ultima operazione di I/O è fallita.</td>
+      <td>The last I/O operation failed.</td>
     </tr>
     <tr>
       <td><em>badbit</em></td>
-      <td>L’ultima operazione di I/O non era valida.</td>
+      <td>The last I/O operation was invalid.</td>
     </tr>
     <tr>
       <td><em>hardfail</em></td>
-      <td>Si è verificato un errore irrecuperabile.</td>
+      <td>An unrecoverable error occurred.</td>
     </tr>
   </tbody>
 </table>
 
-<p>Entrambi questi dati membro sono delle bitmask<a class="nota" href="/en/note#fn-bitmask" id="bitmask">1</a>, quindi possono contenere più di un valore.
-L’istruzione seguente, per esempio, apre uno stream su file combinando in <code>OR</code> tre possibili valori per <code>openmode</code>:</p>
+<p>Both of these member data items are bitmasks,<a class="nota" href="/en/note#fn-bitmask" id="bitmask">1</a> so they can hold more than one value at once.
+The following instruction, for example, opens a file stream by OR-combining three possible <code>openmode</code> values:</p>
 
 <pre><code>fstream file_io("io.txt"
                , ios_base::in | ios_base::out | ios_base::app);
 </code></pre>
 
-<p>Dopo <code>basic_ios</code>, le classi della libreria si specializzano nell’input o nell’output: da un lato <code>basic_istream</code>, da cui derivano i due stream standard di input <code>cin</code> e <code>wcin</code>; dall’altro <code>basic_ostream</code>, da cui derivano gli stream standard di output <code>cout</code>, <code>cerr</code>, <code>clog</code> e le loro controparti “wide”: <code>wcout</code>, <code>wcerr</code>, <code>wclog</code>.<br />
-Da queste due classi generiche derivano delle classi template specializzate nell’input o nell’output su file o in memoria:</p>
+<p>After <code>basic_ios</code>, the library’s classes specialize into input or output: on one side, <code>basic_istream</code>, from which the two standard input streams <code>cin</code> and <code>wcin</code> derive; on the other, <code>basic_ostream</code>, from which the standard output streams <code>cout</code>, <code>cerr</code>, <code>clog</code>, and their “wide” counterparts <code>wcout</code>, <code>wcerr</code>, <code>wclog</code>, derive.
+From these two generic classes derive template classes specialized in input or output to file or memory:</p>
 
 <pre><code>template
 &lt;class Elem, class Tr = char_traits&lt;Elem&gt;&gt;
@@ -291,7 +291,7 @@ class basic_ostringstream
 : public basic_ostream&lt;Elem, Tr&gt;
 </code></pre>
 
-<p>e una classe capace di gestire entrambe le operazioni:</p>
+<p>and a class able to handle both operations:</p>
 
 <pre><code>template
 &lt;class Elem, class Tr = char_traits&lt;Elem&gt;&gt;
@@ -300,7 +300,7 @@ class basic_iostream
 , public basic_ostream&lt;Elem, Tr&gt;
 </code></pre>
 
-<p>anche questa, con due specializzazioni per la gestione di file e memoria:</p>
+<p>this one too, with two specializations for handling files and memory:</p>
 
 <pre><code>template
 &lt;class Elem, class Tr = char_traits&lt;Elem&gt;, class Alloc = allocator&lt;Elem&gt;&gt;
@@ -313,8 +313,8 @@ class basic_fstream
 : public basic_iostream&lt;Elem, Tr&gt;
 </code></pre>
 
-<p>Prima che ci assalga un attacco di narcolessia, vorrei mettere in atto tutto questo con qualche esempio.<br />
-Abbiamo già visto diversi esempii di output su stream:</p>
+<p>Before a narcolepsy attack sets in, let me put all this into practice with a few examples.
+We’ve already seen several examples of stream output:</p>
 
 <pre><code>cout &lt;&lt; "Hello World!"  // stringhe
      &lt;&lt; 12              // interi
@@ -323,7 +323,7 @@ Abbiamo già visto diversi esempii di output su stream:</p>
      &lt;&lt; endl;               
 </code></pre>
 
-<p>Non abbiamo ancora parlato dell’input da stream, che però ha un funzionamento piuttosto simile:</p>
+<p>We haven’t yet talked about stream input, though it works in a fairly similar way:</p>
 
 <pre><code>/** 
  * @file src/stream-input.cpp
@@ -352,7 +352,7 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>Questo codice legge una stringa dallo standard input e la scrive sullo schermo, ma ci mostra una peculiarità dell’input da stream:</p>
+<p>This code reads a string from standard input and writes it to the screen, but it shows us a peculiarity of stream input:</p>
 
 <pre><code>&gt; g++ src/cpp/stream-input-1.cpp -o src/out/esempio
 &gt; src/out/esempio                                
@@ -360,7 +360,7 @@ Inserire una stringa: Penso, quindi sono.
 Penso,
 </code></pre>
 
-<p>Come vedi, le operazioni di lettura con l’operatore » si arrestano al primo carattere di spaziatura; perciò, se vogliamo leggere tutta la stringa, dobbiamo modificare il codice:</p>
+<p>As you can see, read operations with the <code>&gt;&gt;</code> operator stop at the first whitespace character; so, if we want to read the whole string, we need to change the code:</p>
 
 <pre><code>/** 
  * @file src/stream-input-2.cpp
@@ -406,39 +406,39 @@ Inserire una stringa: Cogito ergo sum.
 Cogito ergo sum.
 </code></pre>
 
-<p>Un’altra caratteristica degli operatori <code>&lt;&lt;</code> e <code>&gt;&gt;</code> è che la loro precedenza è minore di quasi tutti gli altri operatori, il che vi consente di scrivere delle istruzioni come questa:</p>
+<p>Another feature of the <code>&lt;&lt;</code> and <code>&gt;&gt;</code> operators is that their precedence is lower than almost all other operators, which lets you write instructions like this one:</p>
 
 <pre><code>cout &lt;&lt; "Due più due fa: " &lt;&lt; 2 + 2 &lt;&lt; '\n' ;
 </code></pre>
 
-<p>Gli operatori logici di AND <code>|</code>, di OR inclusivo <code>&amp;</code> e di XOR esclusivo <code>^</code>, hanno una precedenza minore degli operatori <code>&lt;&lt;</code> e <code>&gt;&gt;</code>  e, se non vengono isolate tra parentesi, le operazioni che li coinvolgono possono essere causa di errori.
-Per esempio, in un’istruzione come la seguente, l’operatore <code>&amp;</code> verrebbe interpretato come un riferimento a un oggetto, con conseguenze diverse da quelle attese:</p>
+<p>The logical AND operator <code>|</code>, the inclusive OR operator <code>&amp;</code>, and the exclusive XOR operator <code>^</code> have lower precedence than the <code>&lt;&lt;</code> and <code>&gt;&gt;</code> operators, and, if not enclosed in parentheses, operations involving them can cause bugs.
+For example, in an instruction like the following, the <code>&amp;</code> operator would be interpreted as a reference to an object, with consequences different from those expected:</p>
 
 <pre><code>cout &lt;&lt; "Il valore è: " &lt;&lt; 2 &amp; 2 &lt;&lt; '\n' ;	// ERRORE!
 </code></pre>
 
-<p>la sintassi corretta è, invece:</p>
+<p>the correct syntax, instead, is:</p>
 
 <pre><code>cout &lt;&lt; "Il valore è: " &lt;&lt; (2 &amp; 2) &lt;&lt; '\n' ;	// OK
 </code></pre>
 
-<p>Il comportamento di default degli operatori di input da stream prevede anche delle convenzioni di for­mattazione: <!-- @todo:verificare --></p>
+<p>The default behavior of stream input operators also includes some formatting conventions: <!-- @todo:verificare --></p>
 <ul>
-  <li><strong>il formato di conversione della base è decimale</strong>;</li>
-  <li><strong>il carattere di riempimento è lo spazio</strong>;</li>
-  <li><strong>la precisione delle cifre a virgola mobile è la stessa utilizzata da print­f()</strong>, con arrotondamento della sesta cifra decimale;</li>
-  <li><strong>la larghezza del campo ha valore di default 0</strong>, il che significa che lo stream di output utilizzerà tutti i caratteri necessari alla visualizzazione dell’intero valore o stringa.</li>
+  <li><strong>the base conversion format is decimal</strong>;</li>
+  <li><strong>the fill character is a space</strong>;</li>
+  <li><strong>the precision of floating-point digits is the same used by <code>printf()</code></strong>, rounding at the sixth decimal digit;</li>
+  <li><strong>the default field width is 0</strong>, which means the output stream will use as many characters as needed to display the entire value or string.</li>
 </ul>
 
-<p>Le prime tre modifiche sono per­manenti: una volta impostati, i nuovi valori saranno validi fino a che un’altra istruzione non torni a modificarli; le modifiche alla larghezza del campo di input, invece, valgono solo per l’istruzione che le richiede.<br />
-In alcuni esempii precedenti abbiamo visto che è possibile modificare il formato di output di default di uno stream tramite dei <em>maipolatori</em>:</p>
+<p>The first three changes are permanent: once set, the new values remain in effect until another instruction changes them again; changes to the input field width, on the other hand, only apply to the instruction that requests them.
+In some earlier examples we saw that it’s possible to change a stream’s default output format by means of <em>manipulators</em>:</p>
 
 <pre><code>cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._h &lt;&lt; ":"
      &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._m &lt;&lt; ":"
      &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._s &lt;&lt; endl;
 </code></pre>
 
-<p>Lo stesso risultato si può ottenere per mezzo di apposite funzioni delle classi <code>ios_base</code> e <code>basic_ios</code>, che permettono di alterare il carattere di riempimento, la precisione delle cifre decimali e la larghezza del campo:</p>
+<p>The same result can be achieved by means of dedicated functions of the <code>ios_base</code> and <code>basic_ios</code> classes, which let you change the fill character, the precision of decimal digits, and the field width:</p>
 
 <pre><code>/** 
  * @file src/stream-format.cpp
@@ -485,7 +485,7 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>Se compili ed esegui questo codice, ottieni:</p>
+<p>If you compile and run this code, you get:</p>
 
 <pre><code>&gt; src/out/esempio                                 
 
@@ -507,36 +507,36 @@ Valori correnti
 
 <hr id="iostate" />
 
-<p>Quando un’operazione di lettura o scrittura su stream fallisce, il valore del dato membro <code>iostate</code> assume un valore differente da zero.
-La classe basic_ios ha delle funzioni membro booleane che tornano <code>true</code> o <code>false</code> se il valore <code>iostate</code> indica un determinato evento e la funzione <code>rdstate</code> che torna il valore assoluto di <code>iostate</code>:</p>
+<p>When a stream read or write operation fails, the value of the <code>iostate</code> member data becomes non-zero.
+The <code>basic_ios</code> class has boolean member functions that return <code>true</code> or <code>false</code> depending on whether the <code>iostate</code> value indicates a given event, and the <code>rdstate</code> function, which returns <code>iostate</code>’s absolute value.</p>
 
 <table>
   <tbody>
     <tr>
       <td>good</td>
-      <td>nessun errore: il valore di <code>iostate</code> è 0</td>
+      <td>no error: the value of <code>iostate</code> is 0</td>
     </tr>
     <tr>
       <td>eof</td>
-      <td>è stata raggiunta la fine del file</td>
+      <td>the end of the file has been reached</td>
     </tr>
     <tr>
       <td>fail</td>
-      <td>c’è stato un errore di I/O non bloccante</td>
+      <td>a non-blocking I/O error occurred</td>
     </tr>
     <tr>
       <td>bad</td>
-      <td>c’è stato un errore di I/O bloccante</td>
+      <td>a blocking I/O error occurred</td>
     </tr>
     <tr>
       <td>rdstate</td>
-      <td>torna il valore corrente di <code>iostate</code></td>
+      <td>returns the current value of <code>iostate</code></td>
     </tr>
   </tbody>
 </table>
 
-<p>Queste funzioni permettono di interrompere la lettura o la scrittura di uno stream quando si verifica un errore o se si è raggiunta la fine del file.
-Una cosa che non devi fare mai, però, è di utilizzare la funzione <code>eof</code> all’interno di un ciclo <code>while</code> per la lettura di un file:</p>
+<p>These functions let you stop reading or writing a stream when an error occurs, or when the end of the file has been reached.
+One thing you should never do, though, is use the <code>eof</code> function inside a <code>while</code> loop to read a file:</p>
 
 <pre><code>/** 
  * @file src/stream-eof.cpp
@@ -580,7 +580,7 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>Se fai leggere a questo programma un file che contenga i numeri: 10, 20 e 30, otterrai questo output:</p>
+<p>If you have this program read a file containing the numbers 10, 20, and 30, you’ll get this output:</p>
 
 <pre><code>&gt; g++ src/cpp/stream-eof.cpp -o src/out/esempio
 &gt; src/out/esempio src/cpp/stream-eof.txt       
@@ -590,8 +590,8 @@ int main(int argc, char** argv)
 30
 </code></pre>
 
-<p>L’errore si verifica perché il controllo della funzione <code>eof</code> avviene prima della quarta operazione di lettura, quando lo stream è ancora in stato <code>good</code>.
-Un modo migliore di gestire questi casi è di utilizzare la funzione <code>good</code>, che ci permette di verificare anche la corretta apertura del file:</p>
+<p>The bug happens because the <code>eof</code> check runs before the fourth read operation, when the stream is still in the <code>good</code> state.
+A better way to handle these cases is to use the <code>good</code> function, which also lets you check that the file was opened correctly:</p>
 
 <pre><code>/** 
  * @file src/stream-good.cpp
@@ -635,7 +635,7 @@ int main(int argc, char** argv)
 }
 
 </code></pre>
-<p>Se compili ed esegui questo programma, ottieni il risultato corretto:</p>
+<p>If you compile and run this program, you get the correct result:</p>
 
 <pre><code>&gt; g++ src/cpp/stream-good.cpp -o src/out/esempio
 &gt; src/out/esempio src/cpp/stream-eof.txt        
@@ -646,9 +646,9 @@ int main(int argc, char** argv)
 
 <hr id="eccezioni" />
 
-<p>Le <em>eccezioni</em> permettono di gestire gli errori che avvengono durante l’esecuzione del programma.
-Quando succede qualcosa di anormale, il sistema <em>lancia</em> un’eccezione, ovvero trasferisce il controllo del processo dalla funzione corrente a blocchi di istruzioni specifici, chiamati <em>exception handler</em>.
-Perché tutto questo avvenga, il codice che genera l’errore deve essere racchiuso in un blocco <code>try</code>/<code>catch</code>:</p>
+<p><em>Exceptions</em> let you handle errors that occur while the program is running.
+When something abnormal happens, the system <em>throws</em> an exception, that is, it transfers control of the process from the current function to specific blocks of instructions called <em>exception handlers</em>.
+For this to happen, the code that generates the error must be enclosed in a <code>try</code>/<code>catch</code> block:</p>
 
 <pre><code>try {
 
@@ -660,7 +660,7 @@ Perché tutto questo avvenga, il codice che genera l’errore deve essere racchi
 }
 </code></pre>
 
-<p>Le eccezioni possono essere lanciate e gestite sia da codice specifico all’interno del programma, sia dai meccanismi automatici del C++:</p>
+<p>Exceptions can be thrown and handled either by specific code within the program, or by C++’s automatic mechanisms:</p>
 
 <pre><code>/** 
  * @file src/stream-eccezioni-1.cpp
@@ -692,7 +692,7 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>Se compili ed esegui questo codice, causerai un errore che, non essendo gestito dal programma, è gestito dalla funzione standard del C++:</p>
+<p>If you compile and run this code, you’ll trigger an error which, not being handled by the program, is handled by C++’s standard function:</p>
 
 <pre><code>&gt; g++ src/cpp/stream-eccezioni-1.cpp -o src/out/esempio
 &gt; src/out/esempio
@@ -702,7 +702,7 @@ std::__1::ios_base::failure: ios_base::clear
 zsh: abort      src/out/esempio
 </code></pre>
 
-<p>Se però inseriamo il codice che apre il file in un blocco <code>try</code>/<code>catch</code> e definiamo un <em>handler</em> per la gestione degli errori in apertura dei file, il risultato sarà più controllato:</p>
+<p>If instead we put the code that opens the file inside a <code>try</code>/<code>catch</code> block, and define a <em>handler</em> for file-opening errors, the result will be more controlled:</p>
 
 <pre><code>/** 
  * @file src/stream-eccezioni-2.cpp
@@ -741,7 +741,7 @@ int main(int argc, char** argv)
 Errore in esecuzione
 </code></pre>
 
-<p>Possiamo addirittura prevenire gli errori in apertura del file facendo sì che sia lo stesso programma a lanciare un’eccezione se si accorge che manca il nome del file nei parametri di avvio:</p>
+<p>We can even prevent file-opening errors altogether, by having the program itself throw an exception if it notices the filename is missing from the startup parameters:</p>
 
 <pre><code>/** 
  * @file src/stream-eccezioni-3.cpp
@@ -782,7 +782,7 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>In questo modo, il programma è in condizione di gestire tutti i possibili errori di esecuzione:</p>
+<p>This way, the program is able to handle every possible runtime error:</p>
 
 <pre><code>&gt; g++ src/cpp/stream-eccezioni-3.cpp -o src/out/esempio
 &gt; src/out/esempio                                      
@@ -791,7 +791,7 @@ Nome file mancante
 Errore in esecuzione
 </code></pre>
 
-<p>La libreria standard del C++ ha una classe specifica per la gestione delle eccezioni:</p>
+<p>The C++ standard library has a dedicated class for handling exceptions:</p>
 
 <pre><code>class exception {
 public:
@@ -800,11 +800,11 @@ public:
     exception&amp; operator= (const exception&amp;) throw();
     virtual ~exception() throw();
     virtual const char* what() const throw();
-}
+};
 </code></pre>
 
-<p>Definendo una classe derivata da <code>exception</code> con altri dati membro e una funzione <code>what</code> specializzate, è possibile gestire in maniera più strutturata le segnalazioni di errore.
-È quello che faremo nel prossimo esempio.</p>
+<p>By defining a class derived from <code>exception</code>, with additional member data and a specialized <code>what</code> function, you can handle error reporting in a more structured way.
+That’s what we’ll do in the next example.</p>
 
 <pre><code>/** 
  * @file src/stream-eccezioni-4.cpp
@@ -939,7 +939,7 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<p>Se compili ed esegui questo codice, otterrai il seguente output, a seconda dei parametri forniti:</p>
+<p>If you compile and run this code, you’ll get the following output, depending on the parameters provided:</p>
 
 <pre><code>&gt; g++ src/cpp/stream-eccezioni-4.cpp -o src/out/esempio
 &gt; src/out/esempio                                      
@@ -966,44 +966,44 @@ Conobbi il Maestro quattro anni dopo.
 
 <hr id="dottrina" />
 
-<p>Il Maestro Canaro diceva che una filosofia, per spingere i suoi seguaci a comportarsi in maniera corretta, deve possedere due caratteristiche: <em>trascendenza</em> e <em>permanenza</em>.<br />
-Se, per un caso o per volere del Cielo, gli esempii che ti ho fatto finora prendessero coscienza di sé, senza però sapere di far parte di una serie di lezioni, probabilmente si sentirebbero inutili e sciocchi.
-Perfino l’ultimo esempio che abbiamo visto, che è il più complesso di tutti, non potrebbe fare a meno di chiedersi quale sia il senso della sua esistenza, dato che lo stesso risultato si può ottenere con una semplice istruzione da riga di comando:</p>
+<p>Master Canaro used to say that a philosophy, to push its followers to behave correctly, must have two characteristics: <em>transcendence</em> and <em>permanence</em>.
+If, by some chance or by the will of Heaven, the examples I’ve shown you so far became self-aware, without knowing they were part of a series of lessons, they would probably feel useless and foolish.
+Even the last example we saw, which is the most complex of them all, couldn’t help but wonder what the meaning of its existence was, given that the same result can be obtained with a simple command-line instruction:</p>
 
 <pre><code>head -c 41 src/cpp/stream-input.txt
 </code></pre>
 
-<p>Qualche esempio riuscirebbe comunque a fare il proprio dovere, ma ce ne sarebbero altri che reagirebbero male a questa epifania: i più deboli si deprimerebbero, mentre i più ambiziosi cercherebbero una compensazione nell’accumulo eccessivo di risorse di sistema: RAM, spazio disco o cicli CPU.
-Al contrario, se gli esempii sapessero di essere parte integrante di una serie di lezioni, tutto ciò che altrimenti appare insensato o inutile, dai commenti pleonastici fino al parametro numerico dell’ultimo esempio, acquisterebbe il giusto significato e ciascuno di loro saprebbe di essere non solo utile, ma necessario.<br />
-Se c’è una cosa che sappiamo per certa dell’Universo in cui viviamo è che si sta espandendo.
-Se nulla interverrà a mutare questo stato di cose, tutto ciò che esiste, dagli esseri viventi alle stelle, è destinato o prima o poi a spegnersi nella vittoria di Pirro dell’Entropia come un computer portatile a cui si scarichi la batteria.
-Se invece la Gravità riuscirà a invertire il moto delle galassie, tutto ciò che esiste, dalle stelle agli esseri viventi, è destinato o prima o poi ad annichilirsi nell’Uno in attesa di un nuovo ciclo di esistenza.
-Questo, però, non basterà da solo a dare un senso alle nostre esistenze, perché, senza persistenza, le nostre azioni saranno come degli oggetti di classe <code>streambuf</code>: una volta spento il computer, non esisteranno più e tutto ciò che abbiamo fatto, giusto o sbagliato che sia, non avrà alcuna influenza su ciò che accadrà successivamente.
-L’unica cosa che può salvarci dall’oblio e dall’insensatezza sono i <em>Cookie</em>, la persistenza.<br />
-Per dare un senso alla nostra esistenza abbiamo bisogno di un <em>hard-disk</em> su cui salvare gli stream delle nostre vite, in modo che ogni ciclo di esistenza possa fare tesoro delle esperienze passate.
-Senza di esso, Hitler varrà quanto Ghandi e Albert Schweitzer quanto Ted Bundy.
-Dovrà essere però un <em>hard-disk</em> meta-fisico, per sfuggire al <em>Big Crunch</em>, e questo ci riporta all’importanza della trascendenza.<br />
-Se mi guardo indietro, per il mezzo secolo su cui ho visibilità diretta, vedo una lunga serie di fallimenti ideologici.
-Il Sessantotto ha spazzato via delle parti sicuramente rivedibili, ma fondamentali della nostra Società senza darci nulla in cambio, tranne la minigonna.
-La lotta armata degli anni settanta ha sparato alle persone sbagliate, mentre la <em>reaganomics</em> è crollata alla fine degli anni ‘80 insieme al muro di Berlino.
-Le speranze degli anni ‘90 si sono schiantate l’11 Settembre 2001 sulle Torri Gemelle e anche Internet, che nelle intenzioni iniziali sarebbe dovuta essere un mezzo per dare a tutti la possibilità di esprimere le proprie idee si è trasformata, nel tempo, in un sistema di controllo e di dis-informazione di massa.
-Quel poco che restava dei nostri valori e delle nostre idee è stato annichilito dagli <em>smart-phone</em> e dai <em>social-network</em>.<br />
-Esiste un fattore comune alle ideologie degli ultimi cinquant’anni che ne ha accelerato l’obsolescenza e le ha rese incapaci di sopravvivere alla prima sconfitta: il rifiuto più o meno accanito di ogni forma non strumentale di spiritualità.
-Se si definisce uno schema di valori negando allo stesso tempo qualsiasi forma di trascendenza, si è costretti a ricercare i valori e le motivazioni della propria etica all’interno dello schema stesso.
-Si può fare, ma è sbagliato e limitativo.
-È sbagliato, perché le regole che si definiscono sono sempre una conseguenza di esigenze contingenti (guerre, sopraffazioni, disparità sociali), venendo a mancare le quali lo schema logico del sistema perde di significato e si disgrega.
-È limitativo, perché restringe il numero dei possibili obiettivi da perseguire a un insieme finito di azioni o traguardi, raggiunti i quali non esiste più possibilità di migliorare.<br />
-Pensa al gioco degli Scacchi: non esiste nessun motivo, all’interno della scacchiera, che costringa ciascun pezzo a muoversi solo in una specifica maniera.
-Le torri si muovono in orizzontale, gli alfieri in diagonale e il cavallo salta con una traiettoria a “L” in ossequio a delle regole definite al di fuori della scacchiera<a class="nota" href="/en/note#fn-scacchi" id="scacchi">2</a>, ma è proprio da queste limitazioni che deriva il fascino del gioco.
-Al contrario, la Società moderna è una scacchiera in cui ciascun pezzo si muove nella maniera che preferisce perché, in ossequio a un malinteso senso di libertà, sono state eliminate tutte le regole.
-Le persone di successo che si privano della vita sono pedoni che, arrivati alla fine della scacchiera grazie alla loro abilità, hanno scoperto che non esiste alcuna forma di promozione, perché insieme alle regole sono stati aboliti anche i giocatori.</p>
+<p>Some examples would still manage to do their duty regardless, but there would be others that would react badly to this epiphany: the weaker ones would grow depressed, while the more ambitious ones would seek compensation in the excessive hoarding of system resources: RAM, disk space, or CPU cycles.
+By contrast, if the examples knew they were an integral part of a series of lessons, everything that would otherwise seem senseless or useless, from the redundant comments down to the numeric parameter of the last example, would take on its rightful meaning, and each of them would know it was not just useful, but necessary.
+If there’s one thing we know for certain about the Universe we live in, it’s that it’s expanding.
+If nothing intervenes to change this state of affairs, everything that exists, from living beings to stars, is destined, sooner or later, to fade out in Entropy’s Pyrrhic victory, like a laptop whose battery runs out.
+If instead Gravity manages to reverse the motion of the galaxies, everything that exists, from stars to living beings, is destined, sooner or later, to be annihilated into the One, awaiting a new cycle of existence.
+This alone, though, won’t be enough to give meaning to our existences, because, without persistence, our actions will be like objects of class <code>streambuf</code>: once the computer is turned off, they will no longer exist, and everything we’ve done, right or wrong, will have no influence on what happens next.
+The only thing that can save us from oblivion and meaninglessness is the <em>Cookies</em>, persistence.
+To give meaning to our existence, we need a <em>hard drive</em> on which to save the streams of our lives, so that each cycle of existence can draw on the treasure of past experiences.
+Without it, Hitler would be worth as much as Gandhi, and Albert Schweitzer as much as Ted Bundy.
+It has to be a <em>metaphysical</em> hard drive, though, to escape the <em>Big Crunch</em>, and this brings us back to the importance of transcendence.
+Looking back, over the half-century I have direct visibility into, I see a long series of ideological failures.
+The ‘68 movement swept away parts of our Society that were certainly in need of revision, but fundamental all the same, without giving us anything back in return, except the miniskirt.
+The armed struggles of the seventies shot the wrong people, while <em>Reaganomics</em> collapsed at the end of the ’80s along with the Berlin Wall.
+The hopes of the ’90s crashed into the Twin Towers on September 11, 2001, and even the Internet, which was originally meant to be a means of giving everyone a chance to express their ideas, gradually turned into a system of mass control and disinformation.
+What little was left of our values and our ideas was annihilated by <em>smartphones</em> and <em>social media</em>.
+There’s a common factor among the ideologies of the last fifty years that accelerated their obsolescence, and made them unable to survive their first defeat: their more or less fierce rejection of any non-instrumental form of spirituality.
+If you define a framework of values while at the same time denying any form of transcendence, you’re forced to look for the values and motivations of your own ethics within that same framework.
+You can do it, but it’s wrong, and limiting.
+It’s wrong, because the rules you define are always a consequence of contingent needs (wars, oppression, social inequality), and once those are gone, the system’s logical framework loses its meaning and falls apart.
+It’s limiting, because it narrows down the number of possible goals to pursue to a finite set of actions or milestones, beyond which there’s no longer any possibility of improvement.
+Think of the game of Chess: there’s no reason, within the chessboard itself, that forces each piece to move only in one specific way.
+Rooks move horizontally, bishops move diagonally, and the knight jumps in an “L”-shaped path, in accordance with rules defined outside the chessboard,<a class="nota" href="/en/note#fn-scacchi" id="scacchi">2</a> but it’s precisely these limitations that give the game its charm.
+Modern Society, by contrast, is a chessboard where every piece moves however it likes, because, in the name of a misguided sense of freedom, every rule has been done away with.
+Successful people who take their own lives are pawns who, having reached the far end of the board through their own skill, discovered there’s no such thing as promotion anymore, because along with the rules, the players themselves have been abolished too.</p>
 
 <hr id="canaro" />
 
-<p>Il Maestro Canaro una volta mi disse:</p>
+<p>Master Canaro once told me:</p>
 
 <blockquote>
-
+  <p>I don’t believe the conversion story. David Chapman killed John Lennon because he thought there was “only sky” above him, and that only in this way could he give meaning to his existence.</p>
 </blockquote>
 
 <!--

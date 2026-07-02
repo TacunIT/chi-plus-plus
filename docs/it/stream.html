@@ -800,7 +800,7 @@ public:
     exception&amp; operator= (const exception&amp;) throw();
     virtual ~exception() throw();
     virtual const char* what() const throw();
-}
+};
 </code></pre>
 
 <p>Definendo una classe derivata da <code>exception</code> con altri dati membro e una funzione <code>what</code> specializzate, è possibile gestire in maniera più strutturata le segnalazioni di errore.
