@@ -308,6 +308,7 @@ BODY.proposta HEADER NAV.menu-top A I {
 
 BODY.manuale HEADER NAV.menu-top A {
     width: auto;
+    min-width: 4rem;
 }
 
 /** Freccia a sinistra menu manuale */
@@ -921,16 +922,6 @@ BODY.pagina.log BLOCKQUOTE SPAN {
  *  Stili per mobile
  */
 @media only screen and (max-width: 540px) {
-    /*
-    BODY.pagina HEADER NAV.menu-top A I ,
-    BODY.proposta HEADER NAV.menu-top A I {
-        display: initial;
-    }
-    BODY.pagina HEADER NAV.menu-top A SPAN ,
-    BODY.proposta HEADER NAV.menu-top A SPAN {
-        display: none;
-    }
-*/
 }
 
 @media only screen and (max-width: 420px) {
