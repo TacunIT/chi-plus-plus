@@ -1,3 +1,8 @@
+## 2.0.1 (July 02, 2026)
+  - Correzioni minori al menu
+  - Rimosso avviso per telefono verticale
+  - Aggiunto selettore lingua al menu
+
 ## 2.0.0 (July 02, 2026)
   - Completata la traduzione in Inglese dei capitoli
   - Revisione del menu
