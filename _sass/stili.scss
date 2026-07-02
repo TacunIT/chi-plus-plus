@@ -294,8 +294,12 @@ NAV A {
 }
 
 HEADER NAV.menu-top A {
-    padding: 0.5rem 1.2rem;
+    /*    padding: 0.5rem 1.2rem; */
+    width: 60px;
     color: $colorGold;
+}
+HEADER NAV.menu-top A.freccia {
+    width: auto;
 }
 
 /**
@@ -304,11 +308,6 @@ HEADER NAV.menu-top A {
 BODY.pagina HEADER NAV.menu-top A I,
 BODY.proposta HEADER NAV.menu-top A I {
     display: none;
-}
-
-BODY.manuale HEADER NAV.menu-top A {
-    width: auto;
-    min-width: 4rem;
 }
 
 /** Freccia a sinistra menu manuale */
@@ -441,10 +440,10 @@ BODY.manuale HEADER NAV.menu-top {
     border: none;
 }
 BODY.manuale HEADER NAV.menu-top A {
-    padding: 0.5rem 0;
+    /*    padding: 0.5rem 0; */
 }
 BODY.manuale HEADER NAV.menu-top A.center {
-    padding: 0.5rem 1rem;
+    /*    padding: 0.5rem 1rem;*/
 }
 BODY.manuale FOOTER {
 }
