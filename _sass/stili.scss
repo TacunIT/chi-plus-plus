@@ -251,11 +251,6 @@ DIV.page {
     margin: auto;
 }
 
-/** Messaggio per risoluzione bassa */
-HEADER P.gira {
-    display: none;
-}
-
 HEADER DIV.box.intestazione {
     width: 100%;
     text-align: left;
@@ -926,11 +921,6 @@ BODY.pagina.log BLOCKQUOTE SPAN {
  *  Stili per mobile
  */
 @media only screen and (max-width: 540px) {
-    HEADER P.gira {
-        display: block;
-        color: #900;
-    }
-
     /*
     BODY.pagina HEADER NAV.menu-top A I ,
     BODY.proposta HEADER NAV.menu-top A I {
