@@ -32,6 +32,30 @@
     >
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
     </a>
+
+    {% assign lang_corrente = page.lang | default: 'it' %} {% assign
+    altra_lingua = "en" %} {% if lang_corrente == "en" %}{% assign altra_lingua
+    = "it" %}{% endif %} {% assign pagina_gemella = site[altra_lingua] | where:
+    "translation_reference", page.translation_reference | first %}
+    <a
+        {%
+        if
+        pagina_gemella
+        %}
+        href="{{ pagina_gemella.url }}"
+        {%
+        else
+        %}
+        href="/{{ altra_lingua }}/"
+        {%
+        endif
+        %}
+        class="center"
+        title="{{ site.data.strings[lang_corrente].leggi_altra_lingua }}"
+    >
+        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+    </a>
+
     <a
         href="{{ site.url_github }}"
         target="github"
