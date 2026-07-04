@@ -67,31 +67,31 @@ collections:
   en:
     output: true
     order:
-      - 01.copertina.md
-      - 02.dedica.md
-      - 03.indice.md
-      - 05.prologo.md
+      - 01.cover.md
+      - 02.dedication.md
+      - 03.index.md
+      - 05.prologue.md
       - 06.incipit.md
-      - 07.mitopoietica.md
-      - 08.programmatore.md
-      - 09.sistemi-di-numerazione.md
-      - 10.linguaggi-di-programmazione.md
+      - 07.mythopoetics.md
+      - 08.programmer.md
+      - 09.numeral-systems.md
+      - 10.programming-languages.md
       - 11.c-plus-plus.md
-      - 12.commenti.md
-      - 13.tipi-di-dato.md
-      - 14.struttura-dei-programmi.md
-      - 15.operatori.md
+      - 12.comments.md
+      - 13.data-types.md
+      - 14.program-structure.md
+      - 15.operators.md
       - 16.preprocessore.md
-      - 17.memoria.md
-      - 18.funzioni.md
-      - 19.istruzioni-condizionali.md
-      - 20.istruzioni-iterative.md
-      - 21.classi-oggetti.md
-      - 22.ereditarieta.md
-      - 23.polimorfismo.md
+      - 17.memory.md
+      - 18.functions.md
+      - 19.conditional-instructions.md
+      - 20.iterative-instructions.md
+      - 21.classes-objects.md
+      - 22.inheritance.md
+      - 23.polymorphism.md
       - 24.stream.md
       - 25.debug.md
-      - 26.epilogo.md
-      - 27.note.md
-      - 28.ringraziamenti.md
-      - 29.bibliografia.md
+      - 26.epilogue.md
+      - 27.notes.md
+      - 28.acknowledgments.md
+      - 29.bibliography.md

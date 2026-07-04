@@ -171,15 +171,15 @@ int main()
 
 <pre><code>% g++ src/cpp/tipi-di-dato-principali.cpp -o src/out/esempio
 % src/out/esempio
-booleano:0
-carattere:C
-intero:1234567890
-decimale:3.14
+boolean:0
+character:C
+integer:1234567890
+decimal:3.14
 array:abcdefghilmnopqrstuvz
-coloreRGB:green
+colorRGB:green
 </code></pre>
 
-<p>The <code>void</code> data type has neither a size nor a value, and can only be assigned to a pointer or to a function that returns no value at all, like the <code>nome_colore</code> function of the <code>Colore</code> class.
+<p>The <code>void</code> data type has neither a size nor a value, and can only be assigned to a pointer or to a function that returns no value at all, like the <code>colorName</code> function of the <code>Color</code> class.
 The <code>bool</code> data type is used to handle boolean values.
 It can only take two values, <code>true</code> or <code>false</code>, so it has the smallest possible size, namely one byte.
 The <code>int</code> type lets you handle integers.
@@ -190,16 +190,16 @@ They are four and eight bytes long respectively, with a precision of seven and f
 The three elements that appear outside the <code>main</code> function are <em>aggregate</em> data types, and let you define non-standard data types.
 <code>enum</code>s let you assign names to values, making programming easier.
 In the example, the <code>RGB</code> <em>enum</em> assigns a name to three values of the RGB encoding.
-This new data type is used in the <code>ColoreRGB</code> struct.
+This new data type is used in the <code>ColorRGB</code> struct.
 <code>struct</code>s let you create sets of heterogeneous data.
-The <code>ColoreRGB</code> variable contains two different variables: a value of type <code>RGB</code> and a
+The <code>ColorRGB</code> variable contains two different variables: a value of type <code>RGB</code> and a
 <a href="#puntatori" class="xref">pointer</a>
 to a character.
 All the data types we’ve seen so far are a legacy of the <em>C</em> language.
-The <code>Colore</code> class, on the other hand, is one of the innovations introduced by C++, and contains two elements: a struct of type <code>ColoreRGB</code> and a function that displays the color’s name.
+The <code>Color</code> class, on the other hand, is one of the innovations introduced by C++, and contains two elements: a struct of type <code>ColorRGB</code> and a function that displays the color’s name.
 Be careful, though: none of these fellows is really what it claims to be.
-The <code>booleano</code> variable doesn’t actually contain the value <code>true</code> or <code>false</code>, but a binary value that the system treats as such.
-Likewise, the <code>carattere</code> variable doesn’t contain the letter <code>C</code>, but the binary value corresponding to the ASCII encoding of the letter <code>C</code>.
+The <code>boolean</code> variable doesn’t actually contain the value <code>true</code> or <code>false</code>, but a binary value that the system treats as such.
+Likewise, the <code>character</code> variable doesn’t contain the letter <code>C</code>, but the binary value corresponding to the ASCII encoding of the letter <code>C</code>.
 Every data type is nothing more than the name of a quantity of memory.
 Remember this, because it’s the key to everything.</p>
 
@@ -235,8 +235,8 @@ int main()
 
 <p>Compiling and running this code, you’ll get:</p>
 
-<pre><code>% g++ tipi-di-dato-dimensione.cpp -o ../out/esempio
-% ../out/esempio                                   
+<pre><code>% g++ data-types-size.cpp -o ../out/example
+% ../out/example                                   
       bool: 1
       char: 1
        int: 4
