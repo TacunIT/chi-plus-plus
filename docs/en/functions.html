@@ -260,7 +260,7 @@ unsigned short: 2 bytes, da:                    0  a:                65535
 
 <hr />
 
-<p>Functions are one of C++’s <a href="/en/tipi-di-dato#funzioni">data types</a>, and like all data types, they can be <em>declared</em> and <em>defined</em>.
+<p>Functions are one of C++’s <a href="/en/data-types#funzioni">data types</a>, and like all data types, they can be <em>declared</em> and <em>defined</em>.
 The <a id="dichiarazione">declaration</a> of a function establishes its return type and the parameters it requires as input:</p>
 
 <pre><code>float scorporaIVA(long stipendio, float aliquota);
@@ -276,7 +276,7 @@ The <a id="dichiarazione">declaration</a> of a function establishes its return t
 }
 </code></pre>
 
-<p>As I told you when we talked about <a href="/en/linguaggi-di-programmazione">programming languages</a>, generating an executable file happens in two stages: first the compiler converts the C++ code into an <em>object file</em>, then the <em>linker</em> turns the object files (there could be more than one) into a single executable.
+<p>As I told you when we talked about <a href="/en/programming-languages">programming languages</a>, generating an executable file happens in two stages: first the compiler converts the C++ code into an <em>object file</em>, then the <em>linker</em> turns the object files (there could be more than one) into a single executable.
 For this process to work, a function’s <em>declaration</em> must be present in every piece of code that uses it, so the compiler can check that it’s being used correctly; the <em>definition</em>, by contrast, must appear only once.</p>
 
 <pre><code>/** 
@@ -433,7 +433,7 @@ src/cpp/funzioni-limiti-main.cpp:23:25: error: expected '(' for function-style c
 </code></pre>
 
 <p>This happens because <code>template</code>s aren’t real functions, just blueprints the compiler uses to generate the correct version of the code.
-The declaration of template functions, therefore, must also include their definition, so the compiler can properly handle the call.<a class="nota" href="/en/note#fn-template" id="template">1</a></p>
+The declaration of template functions, therefore, must also include their definition, so the compiler can properly handle the call.<a class="nota" href="/en/notes#fn-template" id="template">1</a></p>
 
 <hr id="inline" />
 
@@ -653,7 +653,7 @@ int main(int argc, char** argv)
 <p>The existence of an <code>inline</code> function is somewhat reminiscent of a passage from the <i>Samyutta Nikaya</i>:</p>
 
 <blockquote>
-  <p>There is no distinction between a being, its function, and the time of its appearance. Beings appear out of non-existence, exist for an instant, and then cease to exist. Their existence, activity, and action are one and the same thing. Past and future are mere names.<a class="nota" href="/en/note#fn-samyutta" id="samyutta">2</a></p>
+  <p>There is no distinction between a being, its function, and the time of its appearance. Beings appear out of non-existence, exist for an instant, and then cease to exist. Their existence, activity, and action are one and the same thing. Past and future are mere names.<a class="nota" href="/en/notes#fn-samyutta" id="samyutta">2</a></p>
 </blockquote>
 
 <p>In general, though, the lifecycle of a function involves three distinct phases: <em>declaration</em>, <em>definition</em>, and its subsequent use:</p>
@@ -844,7 +844,7 @@ log("ho chiuso il file");
 <hr id="parametri-variabili" />
 
 <p>In one of our
-<a href="/en/programmatore" class="xref">earliest conversations</a>,
+<a href="/en/programmer" class="xref">earliest conversations</a>,
 I told you that the Good Programmer, while writing code, always asks whether there’s a more efficient way of doing what he’s doing.
 Today you’ve seen proof of that: we improved the first example in the section on <code>inline</code> functions by unifying message handling into a single function, and then improved it again by making that function <code>inline</code>.
 There’s a problem, though: the program’s output:</p>
@@ -1073,7 +1073,7 @@ long fattoriale(int n)
 </code></pre>
 
 <p>Be careful, though: a function that calls itself, if not written well, can generate an in[de]finite recursion, like two mirrors facing each other.
-The perspective space inside the mirrors is inexhaustible, but a computer’s memory, however large, has its limits, and too many recursions can cause a <em>stack overflow</em>.<a href="/en/note#fn-stack" class="nota" id="stack">3</a>
+The perspective space inside the mirrors is inexhaustible, but a computer’s memory, however large, has its limits, and too many recursions can cause a <em>stack overflow</em>.<a href="/en/notes#fn-stack" class="nota" id="stack">3</a>
 For this reason, you should resort to recursion only when it’s truly necessary, preferring, whenever possible, <a href="https://chiplusplus.org/en/istruzioni-iterative">iterative instructions</a> and always applying mechanisms to control recursion depth, to prevent a stack overload.
 Another kind of recursion to be wary of is the kind sometimes used to lend credibility to a belief with no real foundation, by citing another, similar belief.</p>
 
@@ -1082,7 +1082,7 @@ Another kind of recursion to be wary of is the kind sometimes used to lend credi
 <p>In a novel about the life of the Japanese swordsman Miyamoto Musashi, there’s a line that follows logically from the Roman proverb I told you about yesterday:</p>
 
 <blockquote>
-  <p>Non bisogna interferire nel funzionamento dell’Universo, ma prima è necessario capire quale sia, il funzionamento dell’Universo<a href="/en/note#fn-musashi" class="nota" id="musashi">4</a></p>
+  <p>Non bisogna interferire nel funzionamento dell’Universo, ma prima è necessario capire quale sia, il funzionamento dell’Universo<a href="/en/notes#fn-musashi" class="nota" id="musashi">4</a></p>
 </blockquote>
 
 <p>The problem with novels is that they often tell you what to do, but almost never explain how, or why.
@@ -1110,7 +1110,7 @@ In the <em>Book of Five Rings</em>, he gave his disciples nine rules for life:
 
 </blockquote>
 
-<p>These rules, which let Musashi reach the venerable age of sixty,<a href="/en/note#fn-eta" class="nota" id="eta">5</a> after emerging victorious from just as many duels against all the finest swordsmen of his time, can help you understand how the Universe works, and what to do so as not to disturb it.
+<p>These rules, which let Musashi reach the venerable age of sixty,<a href="/en/notes#fn-eta" class="nota" id="eta">5</a> after emerging victorious from just as many duels against all the finest swordsmen of his time, can help you understand how the Universe works, and what to do so as not to disturb it.
 The practice of the arts, whether intellectual or martial, and the knowledge of trades, combined with attention to everything around you, will broaden your store of experience and let you tell the pros and cons of any situation apart.
 This will free you from the demon of envy, because you’ll learn that every condition, even the seemingly idyllic ones, has its downsides.
 The next step will be to free yourself from desire and attachment to things: just as the <code>log</code> function needs to know which are its fixed parameters and which are variable, you’ll have to learn to tell your desires apart from your needs, in order to escape the influence of the Age-Old Dichotomy.
@@ -1118,7 +1118,7 @@ The Way, with a capital “W”, is a lot like a way with a lowercase “w”.
 Along a way, you come across road signs, which show you which direction to go or what speed to keep, and billboards, which point out nearby attractions and invite you to stray from your path to go visit them.
 In the same way, along the Way, you’ll find needs, which will guide you toward your destination, and desires, which will dis-tract you from your path and at-tract you toward alternative destinations.
 If you act according to your needs, you’ll always know you’re moving in the right direction, even when you’re forced to slow down or take roads you don’t enjoy.
-If instead you act according to your desires, you’ll wander here and there, like “a donkey without reins”,<a href="/en/note#fn-briglie" class="nota" id="briglie">6</a> and by the time you finally get back on the right road, you might no longer have time to reach your destination.</p>
+If instead you act according to your desires, you’ll wander here and there, like “a donkey without reins”,<a href="/en/notes#fn-briglie" class="nota" id="briglie">6</a> and by the time you finally get back on the right road, you might no longer have time to reach your destination.</p>
 
 <hr id="verita" />
 
@@ -1138,7 +1138,7 @@ This is why Musashi prescribes knowing the Way of other trades: because there’
 This, for example, is the parallel he draws between the strategist and the carpenter:</p>
 
 <blockquote>
-  <p><a href="/en/note#fn-5anelli" class="nota" id="5anelli">7</a></p>
+  <p><a href="/en/notes#fn-5anelli" class="nota" id="5anelli">7</a></p>
 </blockquote>
 
 <p>What’s true for the carpenter, with a shift in perspective, is also true for the strategist, and could be true for you too, if you ever find yourself managing a project or a team.
