@@ -9,21 +9,21 @@
     <title>C++ |  C'hi++
 </title>
     <meta charset="utf-8" />
-    <link      rel="canonical"          href="http://localhost:4000/en/c-plus-plus" />
-    <link      rel=icon                 href="http://localhost:4000/assets/img/favicon.ico" type=image/x-icon />
-    <link      rel="stylesheet"         href="http://localhost:4000/assets/fa/css/all.css" />
-    <link      rel="stylesheet"         href="http://localhost:4000/assets/css/styles.css" />        
+    <link      rel="canonical"          href="https://chiplusplus.org/en/c-plus-plus" />
+    <link      rel=icon                 href="https://chiplusplus.org/assets/img/favicon.ico" type=image/x-icon />
+    <link      rel="stylesheet"         href="https://chiplusplus.org/assets/fa/css/all.css" />
+    <link      rel="stylesheet"         href="https://chiplusplus.org/assets/css/styles.css" />        
     <meta     name="viewport"        content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/og-img/indice.jpg" />
+    <meta     name="thumbnail"       content="https://chiplusplus.org/assets/img/og-img/indice.jpg" />
     <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
-    <meta property="og:url"          content="http://localhost:4000/en/c-plus-plus" />
+    <meta property="og:url"          content="https://chiplusplus.org/en/c-plus-plus" />
     <meta property="og:type"         content="website" />
     <meta property="og:title"        content="C++" />
     <meta property="og:description"  content="Being like C++ - Data abstraction, object-oriented programming, and horse breeding - A good programmer is never satisfied - The difference between C and C++, according to Stroustrup." />
     <meta property="og:image:width"  content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image"        content="http://localhost:4000/assets/img/og-img/c-plus-plus.jpg" />
+    <meta property="og:image"        content="https://chiplusplus.org/assets/img/og-img/c-plus-plus.jpg" />
     <meta property="fb:app_id"       content="" /><script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -114,20 +114,20 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-    int C = 12;                  
-    cout &lt;&lt; "Valore di C = " &lt;&lt; C &lt;&lt; endl;  
-    C++;                         
-    cout &lt;&lt; "Valore di C = " &lt;&lt; C &lt;&lt; endl; 
-    return 0;               
-} 
+    int C = 12;
+    cout &lt;&lt; "C value = " &lt;&lt; C &lt;&lt; endl;
+    C++;
+    cout &lt;&lt; "C value = " &lt;&lt; C &lt;&lt; endl;
+    return 0;
+}
 
 </code></pre>
 <p>If you compile and run this code, you’ll get:</p>
 
 <pre><code>&gt; g++ cplusplus-incremento.cpp -o ../out/esempio
 &gt; ../out/esempio
-Valore di C = 12
-Valore di C = 13
+C value = 12
+C value = 13
 </code></pre>
 
 <p>C++, in fact, wasn’t a new language: it was an improved C.
@@ -148,40 +148,40 @@ For a programming language to handle a data stream, a user, a phone line, or eve
 This is what’s called <em>data abstraction</em>, and C++ achieves it by means of <em>classes</em>.
 Classes are the in-code representation of an entity:</p>
 
-<pre><code>class Cavallo {
+<pre><code>class Horse {
 private:
-    Sesso  _sesso;
-    string _razza;
+    Sex    _sex;
+    string _breed;
 public:
-    const char* getSpecie() const {
-        return "cavallo";
+    const char* getSpecies() const {
+        return "horse";
     }
-    const char getSesso() const {        
-        return (char)_sesso;
+    const char getSex() const {        
+        return (char)_sex;
     }
-    const char* getRazza() const {
-        return _razza.c_str();
+    const char* getBreed() const {
+        return _breed.c_str();
     }
-    Cavallo() {}
-    Cavallo(const char* razza, Sesso sesso ) {
-        _razza  = razza;
-        _sesso  = sesso;
+    Horse() {}
+    Horse(const char* breed, Sex sex ) {
+        _breed = breed;
+        _sex   = sex;
     }
 };
 </code></pre>
 
 <p>or of a concept:</p>
 
-<pre><code>class Monta {
+<pre><code>class Mating {
 private:
-    Cavallo _maschio;
-    Cavallo _femmina;
-    Data     _giorno;
+    Horse _male;
+    Horse _female;
+    Date  _day;
 public:
-    Monta(Cavallo&amp; maschio, Cavallo&amp; femmina) {
-        _maschio = maschio;
-        _femmina = femmina;
-        time(&amp;_giorno);
+    Mating(Horse&amp; male, Horse&amp; female) {
+        _male   = male;
+        _female = female;
+        time(&amp;_day);
     }
 };
 </code></pre>
@@ -197,69 +197,68 @@ To be used, classes must be <em>instantiated</em> into objects:</p>
 
 <pre><code>int main()
 {
-    Cavallo stallone("lipizzano", maschio);    
-    Cavallo giumenta("maremmano", femmina);
-    Monta   monta(stallone, giumenta);
-    cout &lt;&lt; monta &lt;&lt; endl;
+    Horse   stallion("Lipizzaner", male);    
+    Horse   mare("Maremmano", female);
+    Mating  mating(stallion, mare);
+    cout &lt;&lt; mating &lt;&lt; endl;
     return 0;               
 }
 </code></pre>
 
-<p><code>stallone</code>, <code>giumenta</code>, and <code>monta</code> are three objects.
-The first two are instances of the <code>Cavallo</code> class, the third is an instance of the <code>Monta</code> class.
+<p><code>stallion</code>, <code>mare</code>, and <code>mating</code> are three objects.
+The first two are instances of the <code>Horse</code> class, the third is an instance of the <code>Mating</code> class.
 If you add a bit of code to the classes we saw earlier and compile the program, you’ll get:</p>
 
 <pre><code>% g++ cplusplus-classe.cpp -o ../out/esempio
 % ../out/esempio                               
-DATA: Sun Apr  5 10:38:31 2020
-MASCHIO: Specie:cavallo, Sesso:m, Razza:lipizzano
-FEMMINA: Specie:cavallo, Sesso:f, Razza:maremmano```
+DATE: Sun Apr  5 10:38:31 2020
+MALE: Species:horse, Sex:m, Breed:Lipizzaner
+FEMALE: Species:horse, Sex:f, Breed:Maremmano```
 </code></pre>
 
 <p>For a programming language to call itself <em>object-oriented</em>, though, besides classes it must also be able to handle <em>inheritance</em> and <em>polymorphism</em>.
 <em>Inheritance</em> allows you to define new classes as an extension of existing classes:
 <a id="cast"></a></p>
 
-<pre><code>class Animale {
+<pre><code>class Animal {
 private:
-    string _specie;
-    string _razza;
-    Sesso  _sesso;
+    string _species;
+    string _breed;
+    Sex    _sex;
 public:
-    const char* getSpecie() const {
-        return _specie.c_str();
+    const char* getSpecies() const {
+        return _species.c_str();
     }
-    const char getSesso() const {        
-        return (char)_sesso;
+    const char getSex() const {        
+        return (char)_sex;
     }
-    const char* getRazza() const {
-        return _razza.c_str();
+    const char* getBreed() const {
+        return _breed.c_str();
     }
-    Animale() {}
-    Animale(const char* specie, const char* razza, const Sesso sesso ) {
-        _specie = specie;
-        _razza  = razza;
-        _sesso  = sesso;
+    Animal() {}
+    Animal(const char* species, const char* breed, const Sex sex ) {
+        _species = species;
+        _breed   = breed;
+        _sex     = sex;
     }
 };
-
-class Cavallo : public Animale {
+class Horse : public Animal {
 public:
-    Cavallo() {}
-    Cavallo(const char* razza, const Sesso sesso )
-    : Animale("Cavallo", razza, sesso ) {
+    Horse() {}
+    Horse(const char* breed, const Sex sex )
+    : Animal("Horse", breed, sex ) {
     }
 };
 </code></pre>
 
-<p>In the example above, we first defined an <code>Animale</code> class, which has three attributes: <code>specie</code>, <code>razza</code>, and <code>sesso</code>; then we defined a <code>Cavallo</code> class, deriving it from the <code>Animale</code> class.
+<p>In the example above, we first defined an <code>Animal</code> class, which has three attributes: <code>species</code>, <code>breed</code>, and <code>sex</code>; then we defined a <code>Horse</code> class, deriving it from the <code>Animal</code> class.
 This way, if besides horses our program also had to handle other hoofed animals, we wouldn’t have to repeat the same instructions in each class, but could reuse those of the base class:</p>
 
-<pre><code>class Asino : public Animale {
+<pre><code>class Donkey : public Animal {
 public:
-    Asino() {}
-    Asino(const char* razza, const Sesso sesso )
-    : Animale("Asino", razza, sesso ) {
+    Donkey() {}
+    Donkey(const char* breed, const Sex sex )
+    : Animal("Donkey", breed, sex ) {
     }
 };
 </code></pre>
@@ -267,29 +266,28 @@ public:
 <p>At this point, your sharp mind should have caught a possible problem (assuming you’re paying attention, which I’m not entirely convinced of): the <code>Monta</code> class can only handle objects of type <code>Cavallo</code>.
 A language without polymorphism would force us to write two new classes: one for mules and one for hinnies:</p>
 
-<pre><code>class MontaMulo {
+<pre><code>class MatingMule {
 private:
-    Asino   _maschio;
-    Cavallo _femmina;
-    Data     _giorno;
+    Donkey _male;
+    Horse  _female;
+    Date   _day;
 public:
-    MontaMulo(Asino&amp; maschio, Cavallo&amp; femmina) {
-        _maschio = maschio;
-        _femmina = femmina;
-        time(&amp;_giorno);
+    MatingMule(Donkey&amp; male, Horse&amp; female) {
+        _male   = male;
+        _female = female;
+        time(&amp;_day);
     }
 };
-
-class MontaBardotto {
+class MatingHinny {
 private:
-    Cavallo _maschio;
-    Asino   _femmina;
-    Data     _giorno;
+    Horse  _male;
+    Donkey _female;
+    Date   _day;
 public:
-    Monta(const Cavallo&amp; maschio, const Asino&amp; femmina) {
-        _maschio = maschio;
-        _femmina = femmina;
-        time(&amp;_giorno);
+    Mating(const Horse&amp; male, const Donkey&amp; female) {
+        _male   = male;
+        _female = female;
+        time(&amp;_day);
     }
 };
 </code></pre>
@@ -297,24 +295,23 @@ public:
 <p>The problem is that the more code you write, the more likely you are to make mistakes, and the harder they’ll be to fix.
 By contrast, programs with fewer lines of code are more reliable and easier to fix or modify.
 C++ helps here because it allows for <i id="polimorfismo">polymorphism</i>, that is, the ability of a function or operator to carry out its task independently of the data type it has to handle.
-If we rewrite the <code>Monta</code> class using, instead of parameters of type <code>Cavallo</code>, parameters of the base class type <code>Animale</code>:</p>
+If we rewrite the <code>Mating</code> class using, instead of parameters of type <code>Horse</code>, parameters of the base class type <code>Animal</code>:</p>
 
-<pre><code>class Monta {
+<pre><code>class Mating {
 private:
-    Animale* _maschio;
-    Animale* _femmina;
-    Data     _giorno;
+    Animal* _male;
+    Animal* _female;
+    Date    _day;
 public:
-    Monta(Animale* maschio, Animale* femmina) {
-        _maschio = maschio;
-        _femmina = femmina;
-        time(&amp;_giorno);
+    Mating(Animal* male, Animal* female) {
+        _male   = male;
+        _female = female;
+        time(&amp;_day);
     }
 };
-
 </code></pre>
 
-<p>We can create objects of class <code>Monta</code> with any derived class whatsoever:</p>
+<p>We can create objects of class <code>Mating</code> with any derived class whatsoever:</p>
 
 <pre><code>/** 
  * @file src/cplusplus-polimorfismo.cpp
@@ -428,57 +425,55 @@ int main()
 
 <pre><code>% g++ cplusplus-polimorfismo.cpp -o ../out/esempio
 % ../out/esempio                                    
-PULEDRO
-DATA: Sun Apr  5 12:33:45 2020
-MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
-FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
-
-CIUCO
-DATA: Sun Apr  5 12:33:45 2020
-MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
-FEMMINA: Specie:Asino	Razza:sardo	    Sesso:f
-
-MULO
-DATA: Sun Apr  5 12:33:45 2020
-MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
-FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
-
-BARDOTTO
-DATA: Sun Apr  5 12:33:45 2020
-MASCHIO: Specie:Asino	Razza:sardo	    Sesso:f
-FEMMINA: Specie:Cavallo	Razza:lipizzano	Sesso:m
+FOAL
+DATE: Sun Apr  5 12:33:45 2020
+MALE: Species:Horse	Breed:Lipizzaner	Sex:m
+FEMALE: Species:Horse	Breed:Maremmano	Sex:f
+JACK
+DATE: Sun Apr  5 12:33:45 2020
+MALE: Species:Donkey	Breed:Amiata	Sex:m
+FEMALE: Species:Donkey	Breed:Sardinian	    Sex:f
+MULE
+DATE: Sun Apr  5 12:33:45 2020
+MALE: Species:Donkey	Breed:Amiata	Sex:m
+FEMALE: Species:Horse	Breed:Maremmano	Sex:f
+HINNY
+DATE: Sun Apr  5 12:33:45 2020
+MALE: Species:Donkey	Breed:Sardinian	    Sex:f
+FEMALE: Species:Horse	Breed:Lipizzaner	Sex:m
 </code></pre>
 
 <p>As I’ve told you, though, a good programmer isn’t satisfied just because they’ve managed to produce the expected result — they always ask whether there’s a more efficient way to get there.
 In our case, the code we used to display the results of the matings:</p>
 
-<pre><code>Monta puledro(cavallo, giumenta);
-Monta ciuco(asino, asina);
-Monta mulo(asino, giumenta);
-Monta bardotto(asina, cavallo);
+<pre><code>Mating foal(horse, mare);
+Mating jack(donkey, jenny);
+Mating mule(donkey, mare);
+Mating hinny(jenny, horse);
 
-cout &lt;&lt; "PULEDRO\n"  &lt;&lt; puledro  &lt;&lt; endl;
-cout &lt;&lt; "CIUCO\n"    &lt;&lt; ciuco    &lt;&lt; endl;
-cout &lt;&lt; "MULO\n"     &lt;&lt; mulo     &lt;&lt; endl;
-cout &lt;&lt; "BARDOTTO\n" &lt;&lt; bardotto &lt;&lt; endl;
+cout &lt;&lt; "FOAL\n"  &lt;&lt; foal  &lt;&lt; endl;
+cout &lt;&lt; "JACK\n"  &lt;&lt; jack  &lt;&lt; endl;
+cout &lt;&lt; "MULE\n"  &lt;&lt; mule  &lt;&lt; endl;
+cout &lt;&lt; "HINNY\n" &lt;&lt; hinny &lt;&lt; endl;
 </code></pre>
 
 <p>isn’t the most efficient, both because we could get the parents’ species mismatched with the offspring’s name, and because the instructions have to be repeated for each object.
-To fix the first flaw, we can add to the <code>Monta</code> class an attribute and a method to independently determine what kind of offspring results from the mating:
+To fix the first flaw, we can add to the <code>Mating</code> class an attribute and a method to independently determine what kind of offspring results from the mating:
 <a id="membro"></a></p>
-<pre><code>string   _esito;
-void setEsito() {
-    if(strcmp(_maschio-&gt;getSpecie(),"Asino") == 0) {
-        if(strcmp(_femmina-&gt;getSpecie(),"Asino") == 0){
-            _esito = "asino";
+
+<pre><code>string   _outcome;
+void setOutcome() {
+    if(strcmp(_male-&gt;getSpecies(),"Donkey") == 0) {
+        if(strcmp(_female-&gt;getSpecies(),"Donkey") == 0){
+            _outcome = "donkey";
         } else {
-            _esito = "mulo";
+            _outcome = "mule";
         }
     } else {        
-        if(strcmp(_femmina-&gt;getSpecie(),"Cavallo") == 0) {
-            _esito = "puledro";
+        if(strcmp(_female-&gt;getSpecies(),"Horse") == 0) {
+            _outcome = "foal";
         } else {
-            _esito = "bardotto";
+            _outcome = "hinny";
         }
     }
 }
@@ -491,35 +486,35 @@ We can solve this problem thanks to <em>generic programming</em> and the way it�
 </code></pre>
 
 <p>The <code>list</code> class is one of C++’s <em>template</em> classes, and lets you insert, remove, move, merge, sort, and list a collection of objects of the same class.
-The syntax for creating a list of <code>Monta</code>-class objects is:</p>
+The syntax for creating a list of <code>Mating</code>-class objects is:</p>
 
-<pre><code>list&lt;Monta&gt; monte;
+<pre><code>list&lt;Mating&gt; matings;
 </code></pre>
 
 <p>Once that’s done, we can add elements to our list with the <code>push_back()</code> function, passing it the class constructor directly:</p>
 
-<pre><code>monte.push_back(Monta(cavallo, giumenta));
-monte.push_back(Monta(asino, asina));       
-monte.push_back(Monta(asino, giumenta));     
-monte.push_back(Monta(cavallo, asina));
+<pre><code>matings.push_back(Mating(horse, mare));
+matings.push_back(Mating(donkey, jenny));       
+matings.push_back(Mating(donkey, mare));     
+matings.push_back(Mating(horse, jenny));
 </code></pre>
 
 <p>This code is a more efficient form of:</p>
 
-<pre><code>Monta m1(cavallo, giumenta);
-Monta m2(asino, asina);       
-Monta m3(asino, giumenta);     
-Monta m4(cavallo, asina);
+<pre><code>Mating m1(horse, mare);
+Mating m2(donkey, jenny);       
+Mating m3(donkey, mare);     
+Mating m4(horse, jenny);
 
-monte.push_back(m1);  
-monte.push_back(m2);  
-monte.push_back(m3);
-monte.push_back(m4);
+matings.push_back(m1);  
+matings.push_back(m2);  
+matings.push_back(m3);
+matings.push_back(m4);
 </code></pre>
 
 <p>To display the contents of the list, regardless of the number of elements, all it takes is the instruction:</p>
 
-<pre><code>for (list&lt;Monta&gt;::iterator it=monte.begin(); it!=monte.end(); it++) {
+<pre><code>for (list&lt;Mating&gt;::iterator it=matings.begin(); it!=matings.end(); it++) {
     cout &lt;&lt; *it &lt;&lt; endl;
 }
 </code></pre>
@@ -528,17 +523,17 @@ monte.push_back(m4);
 
 <pre><code>int main()
 {
-    Animale* cavallo  = new Cavallo("lipizzano", maschio);    
-    Animale* giumenta = new Cavallo("maremmano", femmina);    
-    Animale* asino    = new Asino("amiatino", maschio);
-    Animale* asina    = new Asino("sardo", femmina);
-    list&lt;Monta&gt; monte;
-    monte.push_back(Monta(cavallo, giumenta));
-    monte.push_back(Monta (asino, asina));       
-    monte.push_back(Monta (asino, giumenta));     
-    monte.push_back(Monta (cavallo, asina));
-    for (list&lt;Monta&gt;::iterator it=monte.begin();
-         it!=monte.end(); it++) {
+    Animal* horse  = new Horse("Lipizzaner", male);    
+    Animal* mare   = new Horse("Maremmano", female);    
+    Animal* donkey = new Donkey("Amiata", male);
+    Animal* jenny  = new Donkey("Sardinian", female);
+    list&lt;Mating&gt; matings;
+    matings.push_back(Mating(horse, mare));
+    matings.push_back(Mating (donkey, jenny));       
+    matings.push_back(Mating (donkey, mare));     
+    matings.push_back(Mating (horse, jenny));
+    for (list&lt;Mating&gt;::iterator it=matings.begin();
+         it!=matings.end(); it++) {
         cout &lt;&lt; *it &lt;&lt; endl;
     }
     return 0;               
@@ -549,56 +544,55 @@ monte.push_back(m4);
 
 <pre><code>$ g++ cplusplus-template.cpp -o ../out/esempio
 % ../out/esempio                                
-DATA:    Sun Apr  5 16:19:24 2020
-MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
-FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
-ESITO:   puledro
+DATE:    Sun Apr  5 16:19:24 2020
+MALE:    Species:Horse	Breed:Lipizzaner	Sex:m
+FEMALE:  Species:Horse	Breed:Maremmano	Sex:f
+OUTCOME: foal
 
-DATA:    Sun Apr  5 16:19:24 2020
-MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
-FEMMINA: Specie:Asino	Razza:sardo	    Sesso:f
-ESITO:   asino
+DATE:    Sun Apr  5 16:19:24 2020
+MALE:    Species:Donkey	Breed:Amiata	Sex:m
+FEMALE:  Species:Donkey	Breed:Sardinian	    Sex:f
+OUTCOME: donkey
 
-DATA:    Sun Apr  5 16:19:24 2020
-MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
-FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
-ESITO:   mulo
+DATE:    Sun Apr  5 16:19:24 2020
+MALE:    Species:Donkey	Breed:Amiata	Sex:m
+FEMALE:  Species:Horse	Breed:Maremmano	Sex:f
+OUTCOME: mule
 
-DATA:    Sun Apr  5 16:19:24 2020
-MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
-FEMMINA: Specie:Asino	Razza:sardo     Sesso:f
-ESITO:   bardotto
+DATE:    Sun Apr  5 16:19:24 2020
+MALE:    Species:Horse	Breed:Lipizzaner	Sex:m
+FEMALE:  Species:Donkey	Breed:Sardinian     Sex:f
+OUTCOME: hinny
 </code></pre>
 
 <p>If for some reason we wanted to reverse the order of the elements in the list, all we’d have to do is add, before the <code>for</code> loop, the instruction:</p>
 
-<pre><code>monte.reverse();
+<pre><code>matings.reverse();
 </code></pre>
 
 <p>and the output we’ll get is:</p>
 
 <pre><code>% g++ cplusplus-template.cpp -o ../out/esempio
 % ../out/esempio                                
-DATA:    Sun Apr  5 17:08:27 2020
-MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
-FEMMINA: Specie:Asino	Razza:sardo	Sesso:f
-ESITO:   bardotto
+DATE:    Sun Apr  5 17:08:27 2020
+MALE:    Species:Horse	Breed:Lipizzaner	Sex:m
+FEMALE:  Species:Donkey	Breed:Sardinian	Sex:f
+OUTCOME: hinny
 
-DATA:    Sun Apr  5 17:08:27 2020
-MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
-FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
-ESITO:   mulo
+DATE:    Sun Apr  5 17:08:27 2020
+MALE:    Species:Donkey	Breed:Amiata	Sex:m
+FEMALE:  Species:Horse	Breed:Maremmano	Sex:f
+OUTCOME: mule
 
-DATA:    Sun Apr  5 17:08:27 2020
-MASCHIO: Specie:Asino	Razza:amiatino	Sesso:m
-FEMMINA: Specie:Asino	Razza:sardo     Sesso:f
-ESITO:   asino
+DATE:    Sun Apr  5 17:08:27 2020
+MALE:    Species:Donkey	Breed:Amiata	Sex:m
+FEMALE:  Species:Donkey	Breed:Sardinian     Sex:f
+OUTCOME: donkey
 
-DATA:    Sun Apr  5 17:08:27 2020
-MASCHIO: Specie:Cavallo	Razza:lipizzano	Sesso:m
-FEMMINA: Specie:Cavallo	Razza:maremmano	Sesso:f
-ESITO:   puledro
-
+DATE:    Sun Apr  5 17:08:27 2020
+MALE:    Species:Horse	Breed:Lipizzaner	Sex:m
+FEMALE:  Species:Horse	Breed:Maremmano	Sex:f
+OUTCOME: foal
 </code></pre>
 
 <p>Besides the predefined template classes of the <em>Standard Template Library</em>, C++ lets you define your own template classes, but we’ll get to that <a href="/en/polimorfismo#template" class="xref">in due course</a>.
@@ -609,20 +603,6 @@ Not by chance, Stroustrup said:</p>
 <blockquote>
   <p>I suspect that the root of many of the differences between C/C++ and Java is that AT&amp;T is primarily a user (a consumer) of computers, languages, and tools, whereas Sun is primarily a vendor of such things. <a id="stroustrup" href="/en/note#fn-cpp" class="nota">1</a></p>
 </blockquote>
-
-<!--
-@todo: draw a parallel between the compatibility problems of Python libraries and canonical religions.
-Both need to maintain compatibility with the past.
-Religions with dogmas, Python programs with a given version of their libraries.
-This makes it very hard to evolve, because it's not possible for just one part of the system to evolve, everything has to.
-Nice, if it were possible, but it isn't always.
-At best, this means inefficient code, which does what's expected but requires ever more system resources and/or execution time.
-This suits hardware vendors just fine, since it implies a constant renewal of the hardware fleet with more powerful systems.
-At worst, it means flawed code, which does its job badly (just like whoever wrote it) and complicates the life and management of the system.
-Nobody cares: the only thing anyone pays attention to is meeting deadlines, without accounting for the fact that clumsy use of clumsy software often lengthens development, testing, and bug-fixing time.
-In practice, programming has become a sort of Russian roulette, where luck plays a decisive role: if you're lucky, the bugs don't show up during testing and get dealt with later in support; if you're unlucky, you waste your life trying to make a broken tool work, instead of spending a bit of time building a sound one.
-The same could be said of these people's lives.
--->
 
             </section>
         
