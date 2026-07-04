@@ -109,7 +109,7 @@ Just as <em>Ikebarba begins in the shop</em>, debugging begins the moment you wr
 The best way to keep your code free of bugs is to write good code.
 Writing good code means always doing the best you possibly can.
 Never save a file unless you’re sure it will work the way it should, and always try to think about what else your code might do, besides what you want it to.
-As I told you <a href="/en/programmatore#buon-programmatore" class="xref">in one of our first conversations</a>, the Good Programmer isn’t satisfied with the quickest path, but always looks for the most efficient and reliable one, because he knows writing good code costs less than fixing badly written code.
+As I told you <a href="/en/programmer#buon-programmatore" class="xref">in one of our first conversations</a>, the Good Programmer isn’t satisfied with the quickest path, but always looks for the most efficient and reliable one, because he knows writing good code costs less than fixing badly written code.
 Master Canaro once said:</p>
 
 <blockquote>
@@ -699,7 +699,7 @@ Another way you can make it easier to track down bugs in your code is to add mes
 }
 </code></pre>
 
-<p>The <code>log</code> function is the one we saw in the <a href="/en/funzioni.html#parametri-variabili" class="xref">lesson on functions with variable parameters</a>, and it lets us know the name of the file being opened while the program runs.
+<p>The <code>log</code> function is the one we saw in the <a href="/en/functions#parametri-variabili" class="xref">lesson on functions with variable parameters</a>, and it lets us know the name of the file being opened while the program runs.
 These tracing functions are useful during debugging, but they slow down the program’s execution, because they require access to an external device, whether that’s the computer screen or a file on the hard drive.
 For this reason, it’s good practice to be able to disable them in the final version of the program.
 In this case, we did so by wrapping the call in a precompiler <code>ifdef</code> directive, so that it’s only included in the code if the <code>__LOG__</code> constant is defined.
