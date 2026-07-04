@@ -96,14 +96,14 @@
 <p>A comment is a short piece of text that describes, in plain language, the workings or purpose of the code it refers to:</p>
 
 <pre><code>/**
- * Funzione per il raddoppio dello stipendio.
- * Richiede come parametro il valore dello
- * stipendio corrente e ne torna il valore
- * duplicato.
+ * Function to double a salary.
+ * Takes as parameter the value of the
+ * current salary and returns the
+ * doubled value.
  */
-long raddoppia(long stipendio)
+long double_it(long salary)
 {
-    return stipendio * 2;   //  raddoppia il valore
+    return salary * 2;   //  doubles the value
 }
 </code></pre>
 
@@ -119,11 +119,11 @@ The overzealous novice fills their code with comments, either because they assum
 The experienced programmer only comments what isn’t self-evident, and points out the possible weak spots of their program so that whoever ends up reusing or fixing it pays due attention to them.
 The perfect programmer doesn’t comment their code at all, because their code is self-explanatory:</p>
 
-<pre><code>typedef Importo unsigned long;
+<pre><code>typedef Amount unsigned long;
 
-Importo raddoppiaStipendio(Importo stipendioCorrente)
+Amount doubleSalary(Amount currentSalary)
 {
-    return stipendioCorrente * 2;   
+    return currentSalary * 2;   
 }
 </code></pre>
 
@@ -131,31 +131,31 @@ Importo raddoppiaStipendio(Importo stipendioCorrente)
 The <code>typedef</code> instruction, which you’ve also seen in previous examples, is used to define new data types as aliases for existing data types.
 The instruction:</p>
 
-<pre><code>typedef time_t Data;
+<pre><code>typedef time_t Date;
 </code></pre>
 
-<p>defines the data type <code>Data</code> as an alias for the standard data type <code>time_t</code>, while the instruction:</p>
+<p>defines the data type <code>Date</code> as an alias for the standard data type <code>time_t</code>, while the instruction:</p>
 
-<pre><code>typedef Importo unsigned long;
+<pre><code>typedef Amount unsigned long;
 </code></pre>
 
-<p>defines the data type <code>Importo</code> as an alias for the standard data type <code>unsigned long</code>.
+<p>defines the data type <code>Amount</code> as an alias for the standard data type <code>unsigned long</code>.
 Defining your own data types not only makes the code more readable, it also makes it easier to modify.
 The original function uses values of type <code>unsigned long</code>, that is, 4-byte sequences that allow storing integers from 0 to 4,294,967,295 (2<sup>32</sup>).
 This data type can be used for a salary with no decimal digits, like Master Canaro’s back in the last century, but if we had to double a salary with decimal digits, we’d have to use data types like <code>float</code> or <code>double</code> and, without a <code>typedef</code>, we’d be forced to change both the return value and the parameter type of the function:</p>
 
-<pre><code>float raddoppia(float stipendio)
+<pre><code>float double_it(float salary)
 {
-    return stipendio * 2;   //  raddoppia il valore
+    return salary * 2;   //  doubles the value
 }
 </code></pre>
 <p>Whereas if we’ve defined our own data type, we only need to modify the <code>typedef</code> instruction, leaving everything else unchanged:</p>
 
-<pre><code>typedef Importo float;
+<pre><code>typedef Amount float;
 
-Importo raddoppiaStipendio(Importo stipendioCorrente)
+Amount doubleSalary(Amount currentSalary)
 {
-    return stipendioCorrente * 2;   
+    return currentSalary * 2;   
 }
 </code></pre>
 
@@ -178,11 +178,11 @@ Importo raddoppiaStipendio(Importo stipendioCorrente)
 In the first case, the compiler ignores everything from that symbol to the end of the line; in the second case, it ignores everything between the two character sequences.</p>
 
 <pre><code>/**
- * Questa sintassi è più comoda per i commenti
- * che si estendono su più di una riga
+ * This syntax is more convenient for comments
+ * that span more than one line
  */
 for (int i = 0; i &lt; 10; i++) {
-    cout &lt;&lt; i &lt;&lt; endl; // questa, per i commenti su una riga
+    cout &lt;&lt; i &lt;&lt; endl; // this one, for single-line comments
 }
 </code></pre>
 
@@ -201,34 +201,34 @@ I’ll therefore put off discussing the <em>Cookies</em> until <a href="/en/istr
 Once, Master Canaro showed his students a piece of code and asked them to explain what it did:</p>
 
 <pre><code>/**********************************************************
- 
+
 #include &lt;iostream.h&gt;
 
 #define ERR_NOFILE 1
 
-int errore( int errore );
-void leggi_file( char * nomefile );
-void crea_matrice(void);
-int inizializza(void);
-void imposta_probabilita(void);
-void attrattore(void);
-int chiudi(void);
+int error( int error );
+void read_file( char * filename );
+void create_matrix(void);
+int initialize(void);
+void set_probability(void);
+void attractor(void);
+int close(void);
 
 int main(int argc, char * argv[])
 {
-    int esito = 0 ;
+    int outcome = 0 ;
     if(argc &lt; 2) {
-        esito = errore(ERR_NOFILE);
+        outcome = error(ERR_NOFILE);
     } else {
-        leggi_file(argv[1]);
-        crea_matrice();
-        if(inizializza()) {
-            const char * valore = imposta_probabilita();
-            attrattore(valore);
-            esito = chiudi();
+        read_file(argv[1]);
+        create_matrix();
+        if(initialize()) {
+            const char * value = set_probability();
+            attractor(value);
+            outcome = close();
         }
     }
-    return esito ;
+    return outcome ;
 }
 
 ***********************************************************/
