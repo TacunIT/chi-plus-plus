@@ -299,7 +299,7 @@ int main(int argc, char** argv)
 <p>The <code>public</code> label you see at the start of the class declaration is an <i id="specificatori-accesso">access specifier</i>, used to establish which members of the class are accessible to outside functions and which are reserved exclusively for the class itself.</p>
 
 <blockquote>
-  <p>the savage does not like to say his own name, or to be photographed, because through his name or his portrait he becomes accessible, and can therefore be harmed by anyone able to reach him through these means.<a class="nota" href="/en/note#fn-selvaggio" id="selvaggio">1</a></p>
+  <p>the savage does not like to say his own name, or to be photographed, because through his name or his portrait he becomes accessible, and can therefore be harmed by anyone able to reach him through these means.<a class="nota" href="/en/notes#fn-selvaggio" id="selvaggio">1</a></p>
 </blockquote>
 
 <p>This line of Lucien Lévy-Bruhl’s applies to C++ classes too.
@@ -640,7 +640,7 @@ public:
 </code></pre>
 <p>but the fact that something is possible doesn’t mean it’s a good choice, as I imagine you’ve learned over the course of your life.
 You aren’t obligated to declare interface functions as <code>inline</code> either; I did so here because they were extremely simple, but you should generally avoid adding function code inside the declaration of an already complex class, because it makes it harder to read.
-There are also those who think this is a mistake, because, while it makes life easier for whoever writes the code, it complicates things for whoever reads it, since it mixes what the class does with how it does it.<a class="nota" href="/en/note#fn-inline" id="inline">2</a>
+There are also those who think this is a mistake, because, while it makes life easier for whoever writes the code, it complicates things for whoever reads it, since it mixes what the class does with how it does it.<a class="nota" href="/en/notes#fn-inline" id="inline">2</a>
 I don’t entirely agree with this claim, because sometimes it’s more convenient and quicker to have the function code inside the class declaration, but since it’s a principle that puts the good of the many (those who use the code) ahead of the good of the one (the code’s author), I felt obliged to pass it on to you.
 Just as we did for the class’s constructor, we could unify the read and write functions, using a default parameter to determine the program’s behavior:</p>
 
@@ -685,7 +685,7 @@ The peculiarity of these elements is that they aren’t tied to a specific varia
 
 <ul>
   <li>
-    <p>to initialize them inside the declaration, they must be declared <code>inline static</code>,<a class="nota" href="/en/note#fn-cpp17" id="cpp17">3</a>
+    <p>to initialize them inside the declaration, they must be declared <code>inline static</code>,<a class="nota" href="/en/notes#fn-cpp17" id="cpp17">3</a>
 otherwise, they must be initialized elsewhere in the program, like any object with global visibility;</p>
   </li>
   <li>
@@ -956,7 +956,7 @@ We’ll talk about this in the coming lessons; for now we need to return to a qu
 
 <p>We saw that Love is a force that is at once gravitational and entropic, because it unites individuals, but at the same time drives them to reproduce in different forms.
 In a sense, we can think of Love as the “constructor” of our instances, because it generates the conditions that push our parents to meet and mate, and above all pushes them to stay together after mating.
-Monogamy isn’t a constant — in fact, there are four different ways nature handles offspring-rearing, and John Maynard Smith catalogued them by the animal species that adopts each one:<a class="nota" href="/en/note#fn-maynard" id="maynard">4</a></p>
+Monogamy isn’t a constant — in fact, there are four different ways nature handles offspring-rearing, and John Maynard Smith catalogued them by the animal species that adopts each one:<a class="nota" href="/en/notes#fn-maynard" id="maynard">4</a></p>
 
 <table>
   <tbody>
@@ -997,7 +997,7 @@ I chose the three “J”s — Jim, Jimi, and Janis — because Master Canaro th
   <p>You see, they were all twenty-seven, and then that “J” that keeps recurring in the name.. I don’t think it was a coincidence.
 “<em>Muß es sein? Es muß sein!</em>”, as Beethoven would say.
 I know what you’re thinking: that I’m trying to define a dogma to justify some hope of mine, but that’s not it.
-The “27 Club” theory, even though it includes Amy Winehouse and Robert Johnson, painfully leaves out Elvis and Andrea Pazienza,<a class="nota" href="/en/note#fn-pazienza" id="pazienza">5</a> whom I loved far more.</p>
+The “27 Club” theory, even though it includes Amy Winehouse and Robert Johnson, painfully leaves out Elvis and Andrea Pazienza,<a class="nota" href="/en/notes#fn-pazienza" id="pazienza">5</a> whom I loved far more.</p>
 </blockquote>
 
 <hr id="libero-arbitrio" />
@@ -1023,13 +1023,13 @@ it is <em>omnipotent</em>, because it can potentially produce every possible per
 And yet, it doesn’t know which of those permutations will actually occur, and it doesn’t even want to know.
 It hopes the new cycle of existence will be better than the previous ones, but it doesn’t wish for one particular event to happen or another not to happen,
  because wishing would make it vulnerable to the temptations of the Age-Old Dichotomy.
- A famous sailor<a class="nota" href="/en/note#fn-straulino" id="straulino">6</a> once said:</p>
+ A famous sailor<a class="nota" href="/en/notes#fn-straulino" id="straulino">6</a> once said:</p>
 
 <blockquote>
   <p>When you’re racing and there’s no wind, don’t go looking for it.<br /> Point the bow in the right direction and wait: the wind will come.</p>
 </blockquote>
 
-<p>The One behaves in a similar way: faithful to the Taoist precept of <em>Wu Wei</em>,<a class="nota" href="/en/note#fn-wu-wei" id="wu-wei">7</a> it sets the conditions necessary for events that have proven beneficial to happen again, but doesn’t force them to.
+<p>The One behaves in a similar way: faithful to the Taoist precept of <em>Wu Wei</em>,<a class="nota" href="/en/notes#fn-wu-wei" id="wu-wei">7</a> it sets the conditions necessary for events that have proven beneficial to happen again, but doesn’t force them to.
 It writes the system’s analysis, but leaves the programmers to write the code, even though it knows they will certainly make mistakes.
 It defines rules, but leaves its instances free to break them, because it knows that evolution is always the fruit of a mistake gone right, of something that shouldn’t have happened this way, and yet turned out better for it.
 Rules shouldn’t be a net that traps and immobilizes, but a net that catches and holds you up, just as the “binding” at the root of the word “religion” shouldn’t be a bond that shackles, but one that supports.
@@ -1037,7 +1037,7 @@ The rules that define, and therefore limit, our existence are like a building wi
 The interior walls can be knocked down or altered, if needed, but the pillars and beams must stay where they are.
 Similarly, changing the rules can be beneficial, but it must only be allowed to those who know them well<!-- per esempio, Gesù --> because a clumsy carpenter might, through error or stupidity, remove one of the load-bearing pillars, putting the soundness of the whole building at risk.<!-- per esempio, il Movimento del '68 -->
 For these reasons, changing the rules cannot be an activity sanctioned by those who promulgated them, even if they recognize its usefulness, but must be an apparently clandestine activity, carried out by expendable elements who can serve as scapegoats if something goes wrong.
-It was not out of naivety that the Most High granted Iblīs a stay of his punishment,<a class="nota" href="/en/note#fn-iblis" id="iblis">8</a> and it was no accident that Master Canaro was added to the ranks of the fallen angels, after, a victim of the Age-Old Dichotomy, he tried to break the rules set by the Analyst.
+It was not out of naivety that the Most High granted Iblīs a stay of his punishment,<a class="nota" href="/en/notes#fn-iblis" id="iblis">8</a> and it was no accident that Master Canaro was added to the ranks of the fallen angels, after, a victim of the Age-Old Dichotomy, he tried to break the rules set by the Analyst.
 If you reject dissonance, at best, you can play the Blues; with dissonance, you have Jazz.</p>
 
 <hr id="livelli-esistenza" />
@@ -1049,7 +1049,7 @@ This level is comparable to an instance of a class, which enacts what was only p
 Our ideal entity is single and constant, while our physical manifestation is changeable: as you know, the same object can be allocated in different areas of memory across successive runs of a program, just as the same print can be reproduced on different media.
 In this cycle of existence, Master Canaro and the dog Lele were a human and a dog running through the hills around Lake Bracciano, but in other existences they may be — or may have been — other people and other animals, in other places, or even on other planets.
 Our ideal level, in fact, doesn’t establish what we must be, but what our contribution to the economy of the Universe must be; the form we take, or the place where we manifest, are entirely incidental.
-For C’hi++, as for Hinduism,<a class="nota" href="/en/note#fn-cogito" id="cogito">9</a> Descartes’s phrase “Cogito ergo sum” is meaningless, because what does the thinking is the instance, which is transient.
+For C’hi++, as for Hinduism,<a class="nota" href="/en/notes#fn-cogito" id="cogito">9</a> Descartes’s phrase “Cogito ergo sum” is meaningless, because what does the thinking is the instance, which is transient.
 What we really are, our essence, shows itself in what we do instinctively.</p>
 
 <!--
