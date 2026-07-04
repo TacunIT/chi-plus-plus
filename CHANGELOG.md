@@ -1,3 +1,12 @@
+## 2.0.3 (July 04, 2026)
+  - Tolto commento da polymorphism
+  - Correzione dei link nel testo
+  - Rinominati i permalink dei capitoli in Inglese
+  - Rinominati i file md dei capitoli in Inglese
+  - Tradotto capitolo Commenti
+  - Tradotto codice per capitolo cplusplus
+  - Modificato indice
+
 ## 2.0.2 (July 02, 2026)
   - Aggiornato file CSS
   - Corretto allineamento legenda copertina
