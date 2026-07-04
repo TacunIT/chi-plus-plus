@@ -294,7 +294,7 @@ public:
 
 <p>The problem is that the more code you write, the more likely you are to make mistakes, and the harder they’ll be to fix.
 By contrast, programs with fewer lines of code are more reliable and easier to fix or modify.
-C++ helps here because it allows for <i id="polimorfismo">polymorphism</i>, that is, the ability of a function or operator to carry out its task independently of the data type it has to handle.
+C++ helps here because it allows for <i id="polymorphism">polymorphism</i>, that is, the ability of a function or operator to carry out its task independently of the data type it has to handle.
 If we rewrite the <code>Mating</code> class using, instead of parameters of type <code>Horse</code>, parameters of the base class type <code>Animal</code>:</p>
 
 <pre><code>class Mating {
@@ -423,7 +423,7 @@ int main()
 
 <p>Compiling and running the program, you’ll get:</p>
 
-<pre><code>% g++ cplusplus-polimorfismo.cpp -o ../out/esempio
+<pre><code>% g++ cplusplus-polymorphism.cpp -o ../out/esempio
 % ../out/esempio                                    
 FOAL
 DATE: Sun Apr  5 12:33:45 2020
@@ -595,13 +595,13 @@ FEMALE:  Species:Horse	Breed:Maremmano	Sex:f
 OUTCOME: foal
 </code></pre>
 
-<p>Besides the predefined template classes of the <em>Standard Template Library</em>, C++ lets you define your own template classes, but we’ll get to that <a href="/en/polimorfismo#template" class="xref">in due course</a>.
+<p>Besides the predefined template classes of the <em>Standard Template Library</em>, C++ lets you define your own template classes, but we’ll get to that <a href="/en/polymorphism#template" class="xref">in due course</a>.
 These features, combined with compatibility with existing C code, made C++ the most widely used <em>object-oriented</em> language of the 1990s.
 The arrival, at the end of the Century, of the language with the “J” — the one that needs a <em>garbage collection</em> system to make up for the shortcomings of its programmers — should have given us an idea of what the coming millennium would be like.
 Not by chance, Stroustrup said:</p>
 
 <blockquote>
-  <p>I suspect that the root of many of the differences between C/C++ and Java is that AT&amp;T is primarily a user (a consumer) of computers, languages, and tools, whereas Sun is primarily a vendor of such things. <a id="stroustrup" href="/en/note#fn-cpp" class="nota">1</a></p>
+  <p>I suspect that the root of many of the differences between C/C++ and Java is that AT&amp;T is primarily a user (a consumer) of computers, languages, and tools, whereas Sun is primarily a vendor of such things. <a id="stroustrup" href="/en/notes#fn-cpp" class="nota">1</a></p>
 </blockquote>
 
             </section>
