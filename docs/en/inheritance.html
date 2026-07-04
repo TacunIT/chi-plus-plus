@@ -95,7 +95,7 @@
 
 <p>Inheritance, that is, the ability to create genealogies of classes, is C++’s main distinguishing feature.</p>
 
-<p>As we saw in the <a href="/en/classi-oggetti#dottrina" class="xref">previous lesson</a>, a hypothetical <code>Pesce</code> (Fish) class would need different attributes depending on what it’s being used for.
+<p>As we saw in the <a href="/en/classes-objects#dottrina" class="xref">previous lesson</a>, a hypothetical <code>Pesce</code> (Fish) class would need different attributes depending on what it’s being used for.
 In a language like <em>C</em>, which doesn’t allow inheritance, you’d therefore have to set up two different data structures for each case:</p>
 
 <pre><code>enum Acqua  { dolce, salata };
@@ -266,7 +266,7 @@ The instruction:</p>
 };
 </code></pre>
 <p>declares the <code>PesceAlimentare</code> class as derived from the <code>Pesce</code> class.
-The <a href="/en/classi-oggetti#specificatori-accesso" class="xref">access specifier</a> between the two class names defines the visibility of the base class’s data inside the child class:</p>
+The <a href="/en/classes-objects#specificatori-accesso" class="xref">access specifier</a> between the two class names defines the visibility of the base class’s data inside the child class:</p>
 
 <pre><code>class B : public A
 {
@@ -743,7 +743,7 @@ Pesce acquario[10];
 </code></pre>
 
 <p>There’s only one limitation: since every element of an array must be initialized when it’s created, the class must have a default constructor.
-If we decided to create an array of objects of the <code>Punto</code> class we saw <a href="/en/classi-oggetti#attributi-metodi" class="xref">in the last lesson</a>, the array’s elements would have to be initialized explicitly:</p>
+If we decided to create an array of objects of the <code>Punto</code> class we saw <a href="/en/classes-objects#attributi-metodi" class="xref">in the last lesson</a>, the array’s elements would have to be initialized explicitly:</p>
 
 <pre><code>Punto spline[3] = { Punto(3,5), Punto(0,0), Punto(7,7) } ;
 </code></pre>
@@ -767,7 +767,7 @@ Figlio  *ptrF = new Persona();  // ERRORE!
 </code></pre>
 
 <p>The compiler is able to understand the relationship between a derived class and its base class, and can therefore establish a coercion path from the object’s type to the pointer’s type, but it has no way of accessing the members or functions of a derived class from a base class object.
-We said <a href="/en/tipi-di-dato#puntatori" class="xref">earlier on</a> that pointers are like masks that isolate certain sequences of bits, whose size varies depending on the pointer’s type.
+We said <a href="/en//data-types#puntatori" class="xref">earlier on</a> that pointers are like masks that isolate certain sequences of bits, whose size varies depending on the pointer’s type.
 The same reasoning applies to classes too: a base-class pointer associated with a derived-class object will only “see” the data and functions of its own class:</p>
 
 <pre><code>/** 
