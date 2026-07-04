@@ -666,7 +666,7 @@ Once, Master Canaro told me:</p>
 The way the code was written will make it more or less easy to check.
 Imagine the problem is the variable <code>x</code>: if your entire codebase has the ability to change its value, you might have to examine every single function to check it isn’t misusing it.
 By contrast, if the variable <code>x</code> can only be modified in a few places in the code, your search will be more targeted and quicker.
-This is why <a href="/en/istruzioni-iterative#isolamento-funzionale" class="xref">in the lesson on iterative functions</a> we separated data processing from user-interface handling: because this way, depending on the kind of bug that shows up — a calculation bug or an output bug —, we’ll know which function to go look at.
+This is why <a href="/en/iterative-instructions#isolamento-funzionale" class="xref">in the lesson on iterative functions</a> we separated data processing from user-interface handling: because this way, depending on the kind of bug that shows up — a calculation bug or an output bug —, we’ll know which function to go look at.
 Some features of C++, like strong typing and encapsulation, can help you in this regard, but they won’t always be enough to pinpoint exactly where your code is doing something wrong.
 In these cases, you’ll have to proceed by trial and error, breaking your program down into smaller and smaller pieces, so as to reduce the number of lines of code you need to check.
 A quick way to do this is to comment out all the calls in the <code>main</code> function, then restore them one at a time, until you find the one that contains the bug:</p>
@@ -1103,7 +1103,7 @@ Some will generate errors, others only <em>warnings</em>, and your duty is to id
 <p>Unlike with software, it isn’t always possible to fix the <em>bugs</em> of our existence.
 You can change a flawed aspect of your character, but that doesn’t mean it’s possible to undo the damage it caused to yourself or to others.
 To draw a parallel with software debugging, character flaws are compile errors, while the effects of our mistakes are runtime errors; the former we can fix, the latter, no: what’s done is done.
-What we can and must do, though, is <a id="pentimento" href="/en/istruzioni-condizionali#pentimento" class="xref">sincerely repent them</a>, that is, acknowledge them as mistakes, so as to avoid repeating them in future cycles of existence.
+What we can and must do, though, is <a id="pentimento" href="/en/conditional-instructions#pentimento" class="xref">sincerely repent them</a>, that is, acknowledge them as mistakes, so as to avoid repeating them in future cycles of existence.
 Even if we can’t undo the effects of a mistake, we can still ask forgiveness from those we’ve harmed.
 Saying sorry won’t be enough: you say sorry when what you did wasn’t up to you, like when someone bumps into you and you spill your wine on your neighbor’s clothes; but if you threw the wine at them on purpose, you’ll need to ask <em>forgiveness</em>, try as much as possible to make up for what you did, and never do it again, either to them or to anyone else.
 Don’t underestimate the healing power of forgiveness, even though there will be cases where you won’t get it.

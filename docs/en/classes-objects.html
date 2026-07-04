@@ -117,7 +117,7 @@ Imagine defining a struct to manage the time of day, containing three integers, 
   <li>that if <code>m</code> exceeds 59, <code>h</code> must be incremented by 1;</li>
 </ul>
 
-<p>This is the opposite of the <em>low coupling</em> we talked about <a href="/en/struttura-dei-programmi#coupling" class="xref">a while back</a>, because it inextricably ties a function to the structure of the data it has to handle.
+<p>This is the opposite of the <em>low coupling</em> we talked about <a href="/en/program-structure#coupling" class="xref">a while back</a>, because it inextricably ties a function to the structure of the data it has to handle.
 To put it plainly: a function that updates the minutes would have to look something like:</p>
 
 <pre><code>void aggiornaMinuti(struct Orario &amp;o, int minuti)
