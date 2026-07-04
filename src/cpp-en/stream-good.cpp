@@ -1,0 +1,1 @@
+../cpp-it/stream-good.cpp

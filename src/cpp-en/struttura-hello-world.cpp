@@ -1,0 +1,1 @@
+../cpp-it/struttura-hello-world.cpp

@@ -1,0 +1,1 @@
+../cpp-it/funzioni-stipendio-funz.cpp

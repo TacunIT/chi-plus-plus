@@ -1,0 +1,1 @@
+../cpp-it/ereditarieta-distruttori.cpp

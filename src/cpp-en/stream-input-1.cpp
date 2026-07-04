@@ -1,0 +1,1 @@
+../cpp-it/stream-input-1.cpp

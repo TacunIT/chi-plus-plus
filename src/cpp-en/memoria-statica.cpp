@@ -1,0 +1,1 @@
+../cpp-it/memoria-statica.cpp
