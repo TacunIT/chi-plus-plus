@@ -9,21 +9,21 @@
     <title>Data types |  C'hi++
 </title>
     <meta charset="utf-8" />
-    <link      rel="canonical"          href="http://localhost:4000/en/data-types" />
-    <link      rel=icon                 href="http://localhost:4000/assets/img/favicon.ico" type=image/x-icon />
-    <link      rel="stylesheet"         href="http://localhost:4000/assets/fa/css/all.css" />
-    <link      rel="stylesheet"         href="http://localhost:4000/assets/css/styles.css" />        
+    <link      rel="canonical"          href="https://chiplusplus.org/en/data-types" />
+    <link      rel=icon                 href="https://chiplusplus.org/assets/img/favicon.ico" type=image/x-icon />
+    <link      rel="stylesheet"         href="https://chiplusplus.org/assets/fa/css/all.css" />
+    <link      rel="stylesheet"         href="https://chiplusplus.org/assets/css/styles.css" />        
     <meta     name="viewport"        content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/og-img/indice.jpg" />
+    <meta     name="thumbnail"       content="https://chiplusplus.org/assets/img/og-img/indice.jpg" />
     <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
-    <meta property="og:url"          content="http://localhost:4000/en/data-types" />
+    <meta property="og:url"          content="https://chiplusplus.org/en/data-types" />
     <meta property="og:type"         content="website" />
     <meta property="og:title"        content="Data types" />
     <meta property="og:description"  content="The Universe is made of spazioni - The World has the nature of Art - René Guénon was right - Why light can't go any faster." />
     <meta property="og:image:width"  content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image"        content="http://localhost:4000/assets/img/og-img/tipi-di-dato.jpg" />
+    <meta property="og:image"        content="https://chiplusplus.org/assets/img/og-img/tipi-di-dato.jpg" />
     <meta property="fb:app_id"       content="" /><script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -202,7 +202,27 @@ Remember this, because it’s the key to everything.</p>
 <p>The amount of memory associated with each data type isn’t fixed, but can vary depending on the system you’re working on.
 The code below lets you find out the size, in bytes, of the scalar data types:<a id="sizeof"></a></p>
 
-<pre><code>
+<pre><code>/**
+ * @file data-types-size.cpp
+ * Shows the size of C++'s main data types.
+ */
+
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+using namespace std;
+int main()
+{
+    int w = 12;
+
+    cout &lt;&lt; setw(w) &lt;&lt; "bool: "   &lt;&lt; sizeof(bool)   &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "char: "   &lt;&lt; sizeof(char)   &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "int: "    &lt;&lt; sizeof(int)    &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "float: "  &lt;&lt; sizeof(float)  &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "double: " &lt;&lt; sizeof(double) &lt;&lt; endl;
+
+    return 0;
+}
+
 </code></pre>
 
 <p>Compiling and running this code, you’ll get:</p>
@@ -227,7 +247,47 @@ The <code>signed</code> and <code>unsigned</code> modifiers determine whether th
 The sign, however, “steals” a bit from the <em>signed</em> variable, which can therefore hold fewer values than the same <em>unsigned</em> variable.
 This program shows how the size and the minimum and maximum values of the <code>int</code> data type can change depending on which modifiers are used:</p>
 
-<pre><code>
+<pre><code>/**
+ * @file data-types-limits.cpp
+ * Shows the possible values for C++'s main data types.
+ */
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+#include &lt;limits&gt;
+using namespace std;
+/**
+ * Template function that shows the size and the
+ * minimum and maximum values for a data type.
+ */
+template&lt;typename T&gt;
+void limits()
+{
+    cout &lt;&lt; sizeof(T) &lt;&lt; " bytes,"
+         &lt;&lt; setw(4)   &lt;&lt; "da:"
+         &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::min()
+         &lt;&lt; setw(4)   &lt;&lt; "a:"
+         &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::max()
+         &lt;&lt; endl;
+}
+int main()
+{
+    /** Variation of the size and values of the int type */
+    cout &lt;&lt; setw(16) &lt;&lt; "int: ";
+    limits&lt;int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned int: ";
+    limits&lt;unsigned int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "short int: ";
+    limits&lt;short int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned short: ";
+    limits&lt;unsigned short&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "long int: ";
+    limits&lt;long int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned long: ";
+    limits&lt;unsigned long&gt;();
+
+    return 0;
+}
+
 </code></pre>
 
 <p>If you look closely at the code, you’ll discover another feature of C++’s modifiers: when applied to an integer data type, you can shorten the declaration by omitting the <code>int</code> keyword.
@@ -331,7 +391,86 @@ Other pointers are less like a flag and more like a kind of mask that can slide 
 
 <p>This program shows how a pointer’s size affects the outcome of reading the data:</p>
 
-<pre><code>
+<pre><code>#include &lt;iostream&gt;
+#include &lt;bitset&gt;
+#include &lt;iomanip&gt;
+using namespace std;
+/**
+ * Defines two data types: one byte long
+ * and one two bytes long
+ */
+typedef unsigned char byte;
+typedef short int twobyte;
+int main()
+{
+    /** Creates an array of 80 binary values */
+    byte values[] = {
+          0b01000011, 0b00100111, 0b01101000, 0b01100001
+        , 0b01101110, 0b01101110, 0b01101111, 0b00100000
+        , 0b01100110, 0b01101111, 0b01110010, 0b01110011
+        , 0b01100101, 0b00100000, 0b01110100, 0b01110101
+        , 0b01110100, 0b01110100, 0b01100101, 0b00100000
+        , 0b01100101, 0b00100000, 0b01100100, 0b01110101
+        , 0b01100101, 0b00100000, 0b01101100, 0b01100001
+        , 0b00100000, 0b01110011, 0b01110100, 0b01100101
+        , 0b01110011, 0b01110011, 0b01100001, 0b00100000
+        , 0b01100101, 0b01110100, 0b11100000, 0b00100000
+        , 0b00001010, 0b01001010, 0b01100101, 0b00100000
+        , 0b01100110, 0b01101001, 0b01101111, 0b01110010
+        , 0b01101001, 0b01110011, 0b01100011, 0b01100101
+        , 0b00100000, 0b01100100, 0b01100101, 0b01101110
+        , 0b01110100, 0b01110010, 0b01101111, 0b00100000
+        , 0b01100001, 0b01110010, 0b00100000, 0b01100011
+        , 0b01101111, 0b01110010, 0b01100101, 0b00100000
+        , 0b00100111, 0b01101110, 0b00100000, 0b01101001
+        , 0b01101100, 0b01101100, 0b01110101, 0b01110011
+        , 0b01101001, 0b01101111, 0b01101110, 0b01100101
+    };
+    /**
+     * Creates a pointer with a size of eight bits and
+     * assigns it the address of the start of the array.
+     */
+    byte * p1 = values;
+
+    /**
+     * Moves the pointer across the whole length of the array,
+     * showing for each byte its binary value, its
+     * value converted to decimal, and the letter of the
+     * ASCII set corresponding to that value.
+     */
+    for(int i = 0; i &lt; sizeof(values); i++) {
+        cout &lt;&lt; setw(4)  &lt;&lt; i
+             &lt;&lt; setw(18) &lt;&lt; bitset&lt;8&gt;(*p1)
+             &lt;&lt; setw(6)  &lt;&lt; (int)*p1
+             &lt;&lt; setw(4)  &lt;&lt; (char) *p1 &lt;&lt; endl;
+
+        /** Moves the pointer to the next byte. */
+        p1++;
+    }
+
+    cout &lt;&lt; endl;
+
+    /**
+     * Creates a new pointer, this time with a
+     * size of sixteen bits.
+     */
+    twobyte * p2 = (twobyte*)values;
+
+    /**
+     * Reads the array's values again,
+     */
+    for(int i = 0; i &lt; sizeof(values) / 2; i++) {
+        cout &lt;&lt; setw(4)  &lt;&lt; i
+             &lt;&lt; setw(18) &lt;&lt; bitset&lt;16&gt;(*p2)
+             &lt;&lt; setw(6)  &lt;&lt; (short)*p2
+             &lt;&lt; setw(4)  &lt;&lt; (char) *p2 &lt;&lt; endl;
+
+        /** Moves the pointer by two bytes. */
+        p2++;
+    }
+    return 0;
+}
+
 </code></pre>
 
 <p>Here’s the program’s output; I’d love to see how you’re going to fit this into your book:</p>
@@ -468,7 +607,30 @@ If I’d been careless and copied the first reading loop’s code as-is, without
 As with gibbons or swans, the bond between a <em>reference</em> and its variable lasts a lifetime.
 While pointers can have a <code>NULL</code> value and can be associated with different variables over the course of processing, <em>references</em> must always be associated with a variable, and that association can never be changed afterward.</p>
 
-<pre><code>
+<pre><code>/**
+ * @file data-types-references.cpp
+ * Using references.
+ */
+
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+using namespace std;
+int main()
+{
+    /** Defines a variable of type int */
+    int  v = 10;
+    /** Defines a reference to the variable v */
+    int&amp; r = v;
+    /** The values of v and r are identical because r is an alias of v */
+    cout &lt;&lt; "initial values: v=" &lt;&lt; v &lt;&lt; ", r=" &lt;&lt; r &lt;&lt; endl;
+    /** Modifies the value of the variable r */
+    r = 20;
+    /** The value of v will change accordingly */
+    cout &lt;&lt; "final values:   v=" &lt;&lt; v &lt;&lt; ", r=" &lt;&lt; r &lt;&lt; endl;
+
+    return 0;
+}
+
 </code></pre>
 
 <p>Compiling and running the code, you’ll get:</p>

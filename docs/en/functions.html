@@ -9,21 +9,21 @@
     <title>Functions |  C'hi++
 </title>
     <meta charset="utf-8" />
-    <link      rel="canonical"          href="http://localhost:4000/en/functions" />
-    <link      rel=icon                 href="http://localhost:4000/assets/img/favicon.ico" type=image/x-icon />
-    <link      rel="stylesheet"         href="http://localhost:4000/assets/fa/css/all.css" />
-    <link      rel="stylesheet"         href="http://localhost:4000/assets/css/styles.css" />        
+    <link      rel="canonical"          href="https://chiplusplus.org/en/functions" />
+    <link      rel=icon                 href="https://chiplusplus.org/assets/img/favicon.ico" type=image/x-icon />
+    <link      rel="stylesheet"         href="https://chiplusplus.org/assets/fa/css/all.css" />
+    <link      rel="stylesheet"         href="https://chiplusplus.org/assets/css/styles.css" />        
     <meta     name="viewport"        content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/og-img/indice.jpg" />
+    <meta     name="thumbnail"       content="https://chiplusplus.org/assets/img/og-img/indice.jpg" />
     <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
     <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
-    <meta property="og:url"          content="http://localhost:4000/en/functions" />
+    <meta property="og:url"          content="https://chiplusplus.org/en/functions" />
     <meta property="og:type"         content="website" />
     <meta property="og:title"        content="Functions" />
     <meta property="og:description"  content="The problem with novels - Miyamoto Musashi's rules for life - Truth is a model - The Way of the carpenter." />
     <meta property="og:image:width"  content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image"        content="http://localhost:4000/assets/img/og-img/funzioni.jpg" />
+    <meta property="og:image"        content="https://chiplusplus.org/assets/img/og-img/funzioni.jpg" />
     <meta property="fb:app_id"       content="" /><script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -97,7 +97,27 @@
 It’s possible to write a program that only has the <code>main</code> function, but this only makes sense for very simple programs, like some of the examples we’ve seen so far.
 The flow of a <em>non-trivial</em> program, as Stroustrup would say, will always be split across several functions, because this makes the code easier to read, to fix, and to modify.</p>
 
-<pre><code>
+<pre><code>/**
+ * @file data-types-size.cpp
+ * Shows the size of C++'s main data types.
+ */
+
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+using namespace std;
+int main()
+{
+    int w = 12;
+
+    cout &lt;&lt; setw(w) &lt;&lt; "bool: "   &lt;&lt; sizeof(bool)   &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "char: "   &lt;&lt; sizeof(char)   &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "int: "    &lt;&lt; sizeof(int)    &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "float: "  &lt;&lt; sizeof(float)  &lt;&lt; endl;
+    cout &lt;&lt; setw(w) &lt;&lt; "double: " &lt;&lt; sizeof(double) &lt;&lt; endl;
+
+    return 0;
+}
+
 </code></pre>
 
 <p>This is the code of an example we saw in the lesson on <a href="/en/data-types">data types</a>.
@@ -105,7 +125,47 @@ If we decided to change how the program displays data to the user, we’d have t
 By contrast, if we isolate the display function, any changes or fixes only need to be applied in one place.
 The code of the following example is a perfectible illustration of this approach:</p>
 
-<pre><code>
+<pre><code>/**
+ * @file data-types-limits.cpp
+ * Shows the possible values for C++'s main data types.
+ */
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+#include &lt;limits&gt;
+using namespace std;
+/**
+ * Template function that shows the size and the
+ * minimum and maximum values for a data type.
+ */
+template&lt;typename T&gt;
+void limits()
+{
+    cout &lt;&lt; sizeof(T) &lt;&lt; " bytes,"
+         &lt;&lt; setw(4)   &lt;&lt; "da:"
+         &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::min()
+         &lt;&lt; setw(4)   &lt;&lt; "a:"
+         &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::max()
+         &lt;&lt; endl;
+}
+int main()
+{
+    /** Variation of the size and values of the int type */
+    cout &lt;&lt; setw(16) &lt;&lt; "int: ";
+    limits&lt;int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned int: ";
+    limits&lt;unsigned int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "short int: ";
+    limits&lt;short int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned short: ";
+    limits&lt;unsigned short&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "long int: ";
+    limits&lt;long int&gt;();
+    cout &lt;&lt; setw(16) &lt;&lt; "unsigned long: ";
+    limits&lt;unsigned long&gt;();
+
+    return 0;
+}
+
 </code></pre>
 <p>Whenever there are instructions in your code that repeat, consider the possibility of isolating them into a function.
 For example, in the <code>main</code> function of the program above there are repeated output functions, which makes the code harder to read, more laborious to modify, and increases the chance of mistakes, because you’re the one defining the string with the data type’s name, and you have to be careful to write the right value every time:</p>
