@@ -108,15 +108,15 @@ Now, though, we need to take a step back and examine these elements one by one, 
 It’s also the most useless one, though, because it doesn’t do anything.
 The example below is just as useless, but a bit more complex:</p>
 
-<pre><code>/** 
- * @file src/struttura-hello-world.cpp
- * Esempio minimo di programma C++.
+<pre><code>/**
+ * @file src/program-structure-hello-world.cpp
+ * Minimal example of a C++ program.
  */
- 
+
 #include &lt;iostream&gt;
 
 int main(int argc, char** argv)
-{    
+{
     std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
     return 0;
 }
@@ -125,8 +125,8 @@ int main(int argc, char** argv)
 
 <p>Its output, as you’ve probably guessed, is:</p>
 
-<pre><code>% g++ struttura-hello-world.cpp -o ../out/esempio
-% ../out/esempio
+<pre><code>% g++ program-structure-hello-world.cpp -o ../out/example
+% ../out/example
 Hello, World!
 </code></pre>
 
@@ -169,22 +169,22 @@ The following program puts into practice the concepts we’ve seen so far:</p>
 
 <pre><code>#include &lt;iostream&gt;
 
-#define NO_ERRORI     0
-#define NO_PARAMETRI  1
+#define NO_ERRORS     0
+#define NO_PARAMETERS 1
 
 int main(int argc, char** argv)
-{    
-    int errore = NO_ERRORI;
-    
-    /** Se c'è solo il nome del programma, errore */
+{
+    int error = NO_ERRORS;
+
+    /** If there's only the program's name, error */
     if(argc &lt; 2) {
-        std::cerr &lt;&lt; "Specificare un parametro!" &lt;&lt; std::endl;
-        return NO_PARAMETRI;
+        std::cerr &lt;&lt; "Specify a parameter!" &lt;&lt; std::endl;
+        return NO_PARAMETERS;
     }
 
-    /** Stampa tutti i parametri ricevuti */
+    /** Print all the parameters received */
     for(int p=0; p &lt; argc; p++) {
-        std::cout &lt;&lt; *argv++ &lt;&lt; std::endl;        
+        std::cout &lt;&lt; *argv++ &lt;&lt; std::endl;
     }
 
     return 0;
@@ -194,31 +194,31 @@ int main(int argc, char** argv)
 
 <p>As I’ve told you, C++ is a <em>compiled</em> language, so the code, in order to be run, must be processed by the compiler with the <em>shell</em> command:</p>
 
-<pre><code>% g++ struttura-argc-argv.cpp -o src/out/esempio
+<pre><code>% g++ program-structure-argc-argv.cpp -o src/out/example
 </code></pre>
 
-<p>The <code>-o</code> parameter lets you specify the name of the output file, in this case: <code>src/out/esempio</code>.
+<p>The <code>-o</code> parameter lets you specify the name of the output file, in this case: <code>src/out/example</code>.
 If you don’t set this value, the compiler generates a file named <code>a.out</code>.
 The <em>shell</em> command:</p>
 
-<pre><code>% src/out/esempio; echo $?                                  
+<pre><code>% src/out/example; echo $?                                  
 </code></pre>
 
 <p>is made up of two instructions, separated by the <code>;</code> character.
 The first instruction runs the compiled file; the second prints its return value to the screen.
 If we run the program with no parameters, we get a message and error code <code>1</code>:</p>
 
-<pre><code>Specificare un parametro!
+<pre><code>Specify a parameter!
 1
 </code></pre>
 
 <p>If instead we run the program passing it some parameters, we get this:</p>
 
-<pre><code>% src/out/esempio un due tre; echo $?
-src/out/esempio
-un
-due
-tre
+<pre><code>% src/out/example one two three; echo $?
+src/out/example
+one
+two
+three
 0
 </code></pre>
 
@@ -227,70 +227,70 @@ tre
 <p>No program worthy of the name has only the <code>main</code> function; it splits its work across a series of functions, each carrying out a precise, well-defined task.
 In a well-written program, functions display two characteristics, which English speakers and Anglophiles call: <em>low coupling</em> and <em>high cohesion</em>.
 By the <em>coupling</em> of two functions, we mean the amount of information function <em>A</em> needs to have about function <em>B</em> in order to use it.
-Each function expects to receive a well-defined set of parameters: the <code>raddoppiaStipendio</code> function, which we saw earlier, expects to receive a single parameter, of type <code>long</code>:</p>
+Each function expects to receive a well-defined set of parameters: the <code>doubleSalary</code> function, which we saw earlier, expects to receive a single parameter, of type <code>long</code>:</p>
 
-<pre><code>long raddoppiaStipendio(long stipendio);
+<pre><code>long doubleSalary(long salary);
 </code></pre>
 
-<p>while a hypothetical <code>scorporaIVA</code> function might require two: the salary amount and the VAT rate:</p>
+<p>while a hypothetical <code>deductVat</code> function might require two: the salary amount and the VAT rate:</p>
 
-<pre><code>float scorporaIVA(long stipendio, float aliquota);
+<pre><code>float deductVat(long salary, float rate);
 </code></pre>
 
-<p>In both of these cases, all a third function needs, to be able to call <code>raddoppiaStipendio</code> or <code>scorporaIVA</code>, is their <em>interface</em>, that is, the number, type, and order of the parameters to pass.
-Now imagine that a clumsy programmer has written the function <code>facciQualcosa</code>, which can carry out several distinct actions depending on the parameters it receives:</p>
+<p>In both of these cases, all a third function needs, to be able to call <code>doubleSalary</code> or <code>deductVat</code>, is their <em>interface</em>, that is, the number, type, and order of the parameters to pass.
+Now imagine that a clumsy programmer has written the function <code>doSomething</code>, which can carry out several distinct actions depending on the parameters it receives:</p>
 
-<pre><code>float facciQualcosa(long stipendio, int azione, float aliquota = 0)
+<pre><code>float doSomething(long salary, int action, float rate = 0)
 {
-    float valore = 0;
-    /** Differenzia l'azione in base al valore di azione */
-    if(azione == 1) {
-        valore = stipendio * 2;
-    } else if(azione == 2) {
-        valore = stipendio / ((100 + aliquota) / 100);
+    float value = 0;
+    /** Differentiates the action based on the value of action */
+    if(action == 1) {
+        value = salary * 2;
+    } else if(action == 2) {
+        value = salary / ((100 + rate) / 100);
     }
-    return valore;
+    return value;
 }
 </code></pre>
 
-<p>To use this function, we not only have to know its interface, we also have to know which actions correspond to the various values of the <code>azione</code> parameter.
-This is madness, <em>meshuggah</em>, because if one day the author modified it and decided that the value <code>1</code> of the <code>azione</code> parameter now triggers VAT deduction while the value <code>2</code> triggers doubling the salary, we would also have to modify <em>every</em> function that called it, to adapt them to the new rules.
+<p>To use this function, we not only have to know its interface, we also have to know which actions correspond to the various values of the <code>action</code> parameter.
+This is madness, <em>meshuggah</em>, because if one day the author modified it and decided that the value <code>1</code> of the <code>action</code> parameter now triggers VAT deduction while the value <code>2</code> triggers doubling the salary, we would also have to modify <em>every</em> function that called it, to adapt them to the new rules.
 Not only would we waste time, but if we forgot to update one or more calls we would end up with a program that behaves incorrectly.
-<em>Coupling</em> <!-- uso il termine inglese per evitare anfibologie con l'attività sessuale.. --> is like cholesterol: the lower, the better; so, to avoid mistakes, we need to reduce it by creating an <code>enum</code> to hold the possible values of the <code>azione</code> parameter:</p>
+<em>Coupling</em> <!-- uso il termine inglese per evitare anfibologie con l'attività sessuale.. --> is like cholesterol: the lower, the better; so, to avoid mistakes, we need to reduce it by creating an <code>enum</code> to hold the possible values of the <code>action</code> parameter:</p>
 
-<pre><code>enum Azione { raddoppia, scorpora };
+<pre><code>enum Action { doubleIt, deductVat };
 </code></pre>
 
-<p>As often happens, a single line of well-written code lets us save time and get more robust code, because the effect of the <code>azione</code> parameter, this way, will be entirely independent of its numeric value:</p>
+<p>As often happens, a single line of well-written code lets us save time and get more robust code, because the effect of the <code>action</code> parameter, this way, will be entirely independent of its numeric value:</p>
 
 <!-- @todo: verificare il codice -->
-<pre><code>enum Azione { raddoppia, scorpora };
+<pre><code>enum Action { doubleIt, deductVat };
 
-float facciQualcosa(long stipendio, Azione azione, float aliquota = 0)
+float doSomething(long salary, Action action, float rate = 0)
 {
-    float valore = 0;
-    /** Agisce in base all'etichetta, non al valore */
-    if(azione == raddoppia) {
-        valore = stipendio * 2;
-    } else if(azione == scorpora) {
-        valore = stipendio / ((100 + aliquota) / 100);
+    float value = 0;
+    /** Acts based on the label, not the value */
+    if(action == doubleIt) {
+        value = salary * 2;
+    } else if(action == deductVat) {
+        value = salary / ((100 + rate) / 100);
     }    
-    return valore;
+    return value;
 }
 </code></pre>
 
-<p>The <code>facciQualcosa</code> function has another design flaw too, besides high coupling: it lacks internal cohesion.
+<p>The <code>doSomething</code> function has another design flaw too, besides high coupling: it lacks internal cohesion.
 In a well-written program, each function should have only one… function:</p>
 
 <!-- @todo: verificare il codice -->
-<pre><code>inline long raddoppiaStipendio(long stipendio)
+<pre><code>inline long doubleSalary(long salary)
 {
-    return stipendio * 2;
+    return salary * 2;
 }
 
-inline float scorporaIVA(long stipendio, float aliquota)
+inline float deductVat(long salary, float rate)
 {
-    return (stipendio / ((100 + aliquota) / 100);
+    return (salary / ((100 + rate) / 100);
 }
 </code></pre>
 
