@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+
+
+
+
+<head>
+    <title>Operators |  C'hi++
+</title>
+    <meta charset="utf-8" />
+    <link      rel="canonical"          href="http://localhost:4000/en/operators" />
+    <link      rel=icon                 href="http://localhost:4000/assets/img/favicon.ico" type=image/x-icon />
+    <link      rel="stylesheet"         href="http://localhost:4000/assets/fa/css/all.css" />
+    <link      rel="stylesheet"         href="http://localhost:4000/assets/css/styles.css" />        
+    <meta     name="viewport"        content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/og-img/indice.jpg" />
+    <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
+    <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:url"          content="http://localhost:4000/en/operators" />
+    <meta property="og:type"         content="website" />
+    <meta property="og:title"        content="Operators" />
+    <meta property="og:description"  content="The concepts of true and false are a matter of convention - William James is right - Fame, success, and prestige - Ethical certification authorities - Affinities between decent people and scoundrels." />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image"        content="http://localhost:4000/assets/img/og-img/operatori.jpg" />
+    <meta property="fb:app_id"       content="" /><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-159394431-1');
+</script></head>
+<body class="manuale capitolo ">
+    <div class="page capitolo">
+        <header><nav class="menu-top">
+    <a
+        title="Go to: C++ program structure"
+        
+        href="/en/program-structure"
+        class="left freccia"
+        
+    >
+        <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="/"
+        class="center"
+        title="Back to homepage"
+    >
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        title="Go to the table of contents"
+        href="/en/indice"
+    >
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+       
+    <a
+        
+        href="/it/operatori"
+        
+        class="center"
+        title="Leggi in italiano"
+    >
+        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="https://github.com/TacunIT/chi-plus-plus"
+        target="github"
+        class="center"
+        title="Go to the GitHub project"
+    >
+        <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        title="Go to: Memory"
+        
+        href="/en/memory"
+        
+        class="right freccia"
+    >
+        <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+    </a>
+</nav>
+</header>
+        <main class="corpo pubblicato ">
+        
+            <h1><a href="#dottrina">
+                Operators</a>
+            </h1>
+            <blockquote class="motto">question = 2b | ( ! 2b );</blockquote>
+            <section class="testo">
+                <p>The variety, and above all the adaptability, of its operators are C++’s main distinguishing feature.</p>
+
+<p>Operators are the elements of the language that let you, precisely, <em>operate</em> on variables or values.
+We can classify them either by the number of operands they act on:</p>
+
+<ul>
+  <li>primary</li>
+  <li>unary</li>
+  <li>binary</li>
+  <li>ternary</li>
+</ul>
+
+<p>or, in a way more useful for your book, by the type of operation they perform:</p>
+
+<ul>
+  <li>arithmetic</li>
+  <li>logical</li>
+  <li>relational</li>
+  <li>bitwise</li>
+  <li>assignment</li>
+</ul>
+
+<p><em>Arithmetic</em> operators are the ones that let you perform common addition, subtraction, division, or multiplication operations on variables:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">name</th>
+      <th style="text-align: center">description</th>
+      <th style="text-align: center">example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">+</td>
+      <td style="text-align: center">addition</td>
+      <td style="text-align: center">x + y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">subtraction</td>
+      <td style="text-align: center">x - y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">*</td>
+      <td style="text-align: center">multiplication</td>
+      <td style="text-align: center">x * y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">\</td>
+      <td style="text-align: center">division</td>
+      <td style="text-align: center">x / y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">%</td>
+      <td style="text-align: center">modulo</td>
+      <td style="text-align: center">x % y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">++</td>
+      <td style="text-align: center">increment</td>
+      <td style="text-align: center">x++</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">–</td>
+      <td style="text-align: center">decrement</td>
+      <td style="text-align: center">y–</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The modulo operator <code>%</code> lets you calculate the remainder of dividing two integers (for example: <code>15 % 4 = 3</code>), and cannot be used with floating-point numbers.
+The increment <code>++</code> and decrement <code>--</code> operators let you increase or decrease the value of a variable by one.
+When these operators come before the variable, the increment or decrement is calculated immediately; if instead they come after the variable, the increment or decrement operation happens after it’s used:</p>
+
+<pre><code>/** 
+ * @file _man/src/operatori-pre-post.cpp
+ * Utilizzo degli operatori di incremento e decremento.
+ */
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main(int argc, char** argv)
+{   
+    /** Definizione delle due variabili */
+    int pre  = 5, post = 7; 
+
+    /** Operatore di incremento, prima e dopo la variabile */
+    cout &lt;&lt; "pre-incremento: " &lt;&lt; ++pre  &lt;&lt; endl;
+    cout &lt;&lt; "post-incremento:" &lt;&lt; post++ &lt;&lt; endl;
+
+    /** Operatore di decremento, prima e dopo la variabile */
+    cout &lt;&lt; "pre-decremento: " &lt;&lt; --pre  &lt;&lt; endl;
+    cout &lt;&lt; "post-decremento:" &lt;&lt; post-- &lt;&lt; endl;
+
+    return 0;
+}
+
+</code></pre>
+
+<p>If you compile and run this code, you get:</p>
+
+<pre><code>&gt; g++ src/cpp/operatori-pre-post.cpp -o src/out/esempio
+&gt; src/out/esempio                                       
+pre-incremento: 6
+post-incremento:7
+pre-decremento: 5
+post-decremento:8
+</code></pre>
+
+<p><em>Relational</em> operators let you check the relationship between two variables:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">name</th>
+      <th style="text-align: center">description</th>
+      <th style="text-align: center">example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">==</td>
+      <td style="text-align: center">equal to</td>
+      <td style="text-align: center">x == x</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">!=</td>
+      <td style="text-align: center">not equal to</td>
+      <td style="text-align: center">x != y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">&gt;</td>
+      <td style="text-align: center">greater than</td>
+      <td style="text-align: center">x &gt; y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">&lt;</td>
+      <td style="text-align: center">less than</td>
+      <td style="text-align: center">x &lt; y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">&gt;=</td>
+      <td style="text-align: center">greater or equal to</td>
+      <td style="text-align: center">x &gt;= y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">&lt;=</td>
+      <td style="text-align: center">less or equal to</td>
+      <td style="text-align: center">x &lt;= y</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>These operators return a boolean value, true or false, depending on whether the condition is met or not.
+The <code>==</code> operator returns <code>true</code> if the operands are equal, as in the verse:</p>
+
+<blockquote>
+  <p>I saw my Lord with the eye of the heart.<br />I asked him: Who are you?<br />He answered: You! <a class="nota" href="/en/notes#fn-attar" id="attar">1</a></p>
+</blockquote>
+
+<p>The <code>!=</code> operator returns <code>true</code> if the operands are not equal; the <code>&gt;</code> and <code>&lt;</code> operators return <code>true</code>, respectively, if the operand on the left is greater or less than the operand on the right; the <code>&gt;=</code> and <code>&lt;=</code> operators return <code>true</code> if the operand on the left is greater than or equal to, or less than or equal to, the one on the right.
+<em>Logical</em> operators let you perform boolean logic operations on variables:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">name</th>
+      <th style="text-align: center">description</th>
+      <th style="text-align: center">example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">&amp;&amp;</td>
+      <td style="text-align: center">logical AND</td>
+      <td style="text-align: center">x &amp;&amp; y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">||</td>
+      <td style="text-align: center">logical OR</td>
+      <td style="text-align: center">x || y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">!</td>
+      <td style="text-align: center">logical NOT</td>
+      <td style="text-align: center">!(x &amp;&amp; y)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <code>&amp;&amp;</code> operator returns <code>true</code> if both variables are <code>true</code>; the <code>||</code> operator returns <code>true</code> if at least one of the variables is <code>true</code>; the <code>!</code> operator flips the value of its operand: if it’s <code>true</code>, it returns <code>false</code>, and vice versa.
+Binary, or <em>bitwise</em>, operators let you perform operations on the binary values of variables:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">name</th>
+      <th style="text-align: center">description</th>
+      <th style="text-align: center">example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">&amp;</td>
+      <td style="text-align: center">AND</td>
+      <td style="text-align: center">x &amp; y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">|</td>
+      <td style="text-align: center">OR (inclusive)</td>
+      <td style="text-align: center">x | y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">^</td>
+      <td style="text-align: center">XOR (exclusive)</td>
+      <td style="text-align: center">x ^ y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">~</td>
+      <td style="text-align: center">NOT</td>
+      <td style="text-align: center">~x</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">»</td>
+      <td style="text-align: center">shift right</td>
+      <td style="text-align: center">x » y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">«</td>
+      <td style="text-align: center">shift left</td>
+      <td style="text-align: center">x « y</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <code>&amp;</code> operator sets a bit to 1 in the result if that bit is 1 in both operands.
+The <code>|</code> operator sets a bit to 1 in the result if that bit is 1 in either operand.
+The <code>^</code> operator sets a bit to 1 in the result if that bit is 1 in one operand, but not in the other.
+The <code>~</code> operator flips the bits of its operand.
+The <code>&lt;&lt;</code> and <code>&gt;&gt;</code> operators shift, respectively, the bits of the left-hand operand to the left and to the right, by the number of bits specified by the right-hand operand.
+<!-- @todo: spiegare a cosa servano e perché siano utili per "rispettare" la memoria del computer -->
+<em>Assignment</em> operators perform the operations we’ve seen so far and, in addition, assign the resulting value to the left-hand operand:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">name</th>
+      <th style="text-align: center">description</th>
+      <th style="text-align: center">example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">=</td>
+      <td style="text-align: center">assignment</td>
+      <td style="text-align: center">x = x</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">+=</td>
+      <td style="text-align: center">sum</td>
+      <td style="text-align: center">x += y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-=</td>
+      <td style="text-align: center">difference</td>
+      <td style="text-align: center">x -= y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">*=</td>
+      <td style="text-align: center">multiplication</td>
+      <td style="text-align: center">x *= y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">/=</td>
+      <td style="text-align: center">division</td>
+      <td style="text-align: center">x /= y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">%=</td>
+      <td style="text-align: center">modulo</td>
+      <td style="text-align: center">x %= y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">&amp;=</td>
+      <td style="text-align: center">AND</td>
+      <td style="text-align: center">x &amp;= y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">|=</td>
+      <td style="text-align: center">inclusive OR</td>
+      <td style="text-align: center">x |= y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">^=</td>
+      <td style="text-align: center">exclusive OR</td>
+      <td style="text-align: center">x ^= y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">»=</td>
+      <td style="text-align: center">shift right</td>
+      <td style="text-align: center">x »= y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">«=</td>
+      <td style="text-align: center">shift left</td>
+      <td style="text-align: center">x «= y</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For example, the expression:</p>
+
+<pre><code>x *= y
+</code></pre>
+
+<p>is equivalent to:</p>
+
+<pre><code>x = (x * y);
+</code></pre>
+
+<p>The next example shows the use and the result of each operator:</p>
+
+<pre><code>/** 
+ * @file operatori-utilizzo.cpp
+ * Esempio di utilizzo degli operatori.
+ */
+
+#include &lt;iostream&gt;
+#include &lt;iomanip&gt; 
+#include &lt;bitset&gt; 
+
+using namespace std;
+
+int main(int argc, char** argv)
+{        
+    int x = 12;
+    int y = 4;
+
+    cout &lt;&lt; "Operatori aritmetici" &lt;&lt; endl;
+    cout &lt;&lt; "x + y = " &lt;&lt; x + y &lt;&lt; endl;
+    cout &lt;&lt; "x - y = " &lt;&lt; x - y &lt;&lt; endl;
+    cout &lt;&lt; "x * y = " &lt;&lt; x * y &lt;&lt; endl;
+    cout &lt;&lt; "x / y = " &lt;&lt; x / y &lt;&lt; endl;
+    cout &lt;&lt; "x % y = " &lt;&lt; x % y &lt;&lt; endl;
+    cout &lt;&lt; "x++   = " &lt;&lt; x++ &lt;&lt; endl;
+    cout &lt;&lt; "x--   = " &lt;&lt; x-- &lt;&lt; endl;
+    cout &lt;&lt; endl;
+    
+    cout &lt;&lt; "Operatori logici" &lt;&lt; endl;
+    cout &lt;&lt; "x &amp;&amp; y    = " &lt;&lt; (x &amp;&amp; y)  &lt;&lt; endl;
+    cout &lt;&lt; "x || y    = " &lt;&lt; (x || y)  &lt;&lt; endl;
+    cout &lt;&lt; "!(x &amp;&amp; y) = " &lt;&lt; !(x &amp;&amp; y) &lt;&lt; endl;
+    cout &lt;&lt; endl;
+
+    cout &lt;&lt; "Operatori di relazione"  &lt;&lt; endl;
+    cout &lt;&lt; "x == y = " &lt;&lt; (x == y)  &lt;&lt; endl;
+    cout &lt;&lt; "x != y = " &lt;&lt; (x != y)  &lt;&lt; endl;
+    cout &lt;&lt; "x &gt; y  = " &lt;&lt; (x  &gt; y)  &lt;&lt; endl;
+    cout &lt;&lt; "x &lt; y  = " &lt;&lt; (x  &lt; y)  &lt;&lt; endl;
+    cout &lt;&lt; "x &gt;= y = " &lt;&lt; (x &gt;= y)  &lt;&lt; endl;
+    cout &lt;&lt; "x &lt;= y = " &lt;&lt; (x &lt;= y)  &lt;&lt; endl;
+    cout &lt;&lt; endl;
+
+    cout &lt;&lt; "Operatori bitwise"  &lt;&lt; endl;
+    cout &lt;&lt; "bit x  = " &lt;&lt; bitset&lt;8&gt;(x) &lt;&lt; endl;
+    cout &lt;&lt; "bit y  = " &lt;&lt; bitset&lt;8&gt;(y) &lt;&lt; endl;
+    cout &lt;&lt; "x &amp; y  = " &lt;&lt; bitset&lt;8&gt;(x &amp; y)  &lt;&lt; endl;
+    cout &lt;&lt; "x | y  = " &lt;&lt; bitset&lt;8&gt;(x | y)  &lt;&lt; endl;
+    cout &lt;&lt; "x ^ y  = " &lt;&lt; bitset&lt;8&gt;(x ^ y)  &lt;&lt; endl;
+    cout &lt;&lt; "x ~ y  = " &lt;&lt; bitset&lt;8&gt;(~ y)    &lt;&lt; endl;
+    cout &lt;&lt; "x &gt;&gt; y = " &lt;&lt; bitset&lt;8&gt;(x &gt;&gt; y) &lt;&lt; endl;
+    cout &lt;&lt; "x &lt;&lt; y = " &lt;&lt; bitset&lt;8&gt;(x &lt;&lt; y) &lt;&lt; endl;
+    cout &lt;&lt; endl;
+
+    cout &lt;&lt; "Operatori di assegnazione"  &lt;&lt; endl;
+    cout &lt;&lt; "x += y = " &lt;&lt; (x += y) &lt;&lt; endl;
+    cout &lt;&lt; "x -= y = " &lt;&lt; (x -= y) &lt;&lt; endl;
+    cout &lt;&lt; "x *= y = " &lt;&lt; (x *= y) &lt;&lt; endl;
+    cout &lt;&lt; "x /= y = " &lt;&lt; (x /= y) &lt;&lt; endl;
+    cout &lt;&lt; "x %= y = " &lt;&lt; (x %= y) &lt;&lt; endl;
+    cout &lt;&lt; endl;
+
+    return 0;
+}
+
+</code></pre>
+
+<p>If you compile and run this code, you get:</p>
+
+<pre><code>&gt; g++ src/cpp/operatori-utilizzo.cpp -o src/out/esempio
+&gt; src/out/esempio                                      
+Operatori aritmetici
+x + y = 16
+x - y = 8
+x * y = 48
+x / y = 3
+x % y = 0
+x++   = 12
+x--   = 13
+
+Operatori logici
+x &amp;&amp; y    = 1
+x || y    = 1
+!(x &amp;&amp; y) = 0
+
+Operatori di relazione
+x == y = 0
+x != y = 1
+x &gt; y  = 1
+x &lt; y  = 0
+x &gt;= y = 1
+x &lt;= y = 0
+
+Operatori bitwise
+bit x  = 00001100
+bit y  = 00000100
+x &amp; y  = 00000100
+x | y  = 00001100
+x ^ y  = 00001000
+x ~ y  = 11111011
+x &gt;&gt; y = 00000000
+x &lt;&lt; y = 11000000
+
+Operatori di assegnazione
+x += y = 16
+x -= y = 12
+x *= y = 48
+x /= y = 12
+x %= y = 0
+
+</code></pre>
+<p>Now tell me: what are the final values of the variables <code>x</code> and <code>y</code> at the end of the program?</p>
+
+<hr />
+
+<p>The symbols <code>sizeof</code>, <code>,</code>, <code>.</code>, <code>-&gt;</code>, <code>&amp;</code>, <code>*</code>, <code>()</code>, and <code>()?:</code> are operators too.
+We’ve already seen the <code>sizeof</code> operator when talking about <a href="/en/data-types#sizeof">the size of data types</a>, because it returns, precisely, the size, in bytes, of the variable or data type it receives as a parameter.
+The <em>cast</em> operator <code>()</code> lets you change the type of a variable, and we already used it in the <code>Animale</code> class, when we talked about <a href="/en/c-plus-plus#cast">polymorphism</a>:</p>
+
+<pre><code>const char getSesso() const {        
+    return (char)_sesso;
+}
+</code></pre>
+
+<p>The conditional operator <code>()?:</code> is C++’s only ternary operator, and lets you choose between two expressions depending on the outcome of a condition.
+Its syntax is:</p>
+
+<pre><code>(&lt;condition&gt;) ? &lt;instruction if true&gt; : &lt;instruction if false&gt;
+</code></pre>
+
+<p>Writing:</p>
+
+<pre><code>x = (a &gt; b) ? 4 : 5;
+</code></pre>
+
+<p>is an elegant way of writing:</p>
+
+<pre><code>if(a &gt; b) {
+    x = 4;
+} else {
+    x = 5;
+}
+</code></pre>
+
+<p>The comma operator <code>,</code> is used to alter how expressions are evaluated.
+When two or more expressions are separated by the comma operator, the results of the expressions on the left are discarded, and only the result of the rightmost expression is kept.
+In this expression, for example, the variables <code>a</code> and <code>b</code> are first assigned the value 1, and then the variable <code>b</code> is incremented by 2:</p>
+
+<pre><code>a = b = 1, b = b + 2;                      
+</code></pre>
+
+<p>the final value of <code>a</code> and <code>b</code> will therefore be 1 and 3, while in the expression below it will be 1 and 2:</p>
+
+<pre><code>a = b = 1, b = b + 2, b = b - 1;          
+</code></pre>
+
+<p>The <code>.</code> and <code>-&gt;</code> operators are used to identify the members of a class or of another aggregate data type.
+If you remember (I doubt it), we first saw them when talking about <a href="/en/c-plus-plus#membro">polymorphism</a>, and we’ll use them when we cover classes.
+Finally, the <code>&amp;</code> and <code>*</code> operators return, respectively, the memory address of a variable and a pointer to a variable:</p>
+
+<pre><code>/** 
+ * @file operatori-altri.cpp
+ * Altri operatori del C++.
+ */
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main(int argc, char** argv)
+{        
+    int     a = 9;
+    int     b = 4;
+
+    /** Converte un valore intero in char */
+    char    c = char(a * b);
+
+    /** Assegna a t il valore più alto fra a e b */
+    int     t = (a &gt; b) ? a : b;
+
+    /** Salva nel puntatore p l'indirizzo di memoria di a */
+    int*    p = &amp;a;    
+
+    /** Calcola la dimensione di un intero */
+    size_t sa = sizeof(a);
+
+    /** Calcola la dimensione di un puntatore a intero */
+    size_t sp = sizeof(p);
+
+    /** Mostra l'indirizzo della variabile a */
+    cout &lt;&lt; "&amp;a: " &lt;&lt; p  &lt;&lt; endl;
+
+    /** Mostra la dimensione delle variabili a e p */
+    cout &lt;&lt; "sa: " &lt;&lt; sa &lt;&lt; endl;
+    cout &lt;&lt; "sp: " &lt;&lt; sp &lt;&lt; endl;
+
+    /** Mostra il risultato dell'operazione ternaria */
+    cout &lt;&lt; "t : " &lt;&lt; t  &lt;&lt; endl;
+
+    /** Il codice ASCII 36 corrisponde alla lettera $x\ */
+    cout &lt;&lt; "c : " &lt;&lt; c  &lt;&lt; endl;
+    
+    cout &lt;&lt; endl;
+
+    return 0;
+}
+
+</code></pre>
+
+<p>If you compile and run this code, you’ll get:</p>
+
+<pre><code>&gt; g++ src/cpp/operatori-altri.cpp -o src/out/esempio
+&gt; src/out/esempio                                    
+&amp;a: 0x7ffee65bba5c
+sa: 4
+sp: 8
+t : 9
+c : $
+</code></pre>
+<hr id="risoluzione" />
+
+<p>The last operator we need to talk about also has the longest name: the <em>scope resolution</em> operator <code>::</code>.
+Besides other uses connected with managing class data, which we’ll cover later, this operator lets you refer to global-visibility variables even in cases where they’re shadowed by the redefinition of local variables with the same name:</p>
+
+<pre><code>/** 
+ * @file _man/src/operatori-risoluzione.cpp
+ * Utilizzo dell'operatore di risoluzione.
+ */
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+const char * Stringa = "Stringa globale" ;
+
+int main(int argc, char** argv)
+{   
+    const char * Stringa = "Stringa locale" ;
+
+    /** Stampa la stringa locale */
+    cout &lt;&lt; Stringa   &lt;&lt; endl ;
+    
+    /** Utilizza l'operatore per riferirsi alla variabile globale */
+    cout &lt;&lt; ::Stringa &lt;&lt; endl ;
+
+    return 0;
+}
+
+</code></pre>
+<p>Compiling and running this code, you get:</p>
+
+<pre><code>&gt; g++ src/cpp/operatori-risoluzione.cpp -o src/out/esempio
+&gt; ./src/out/esempio                                       
+Stringa locale
+Stringa globale
+</code></pre>
+
+<!--
+@todo: aggiungere nota su overload degli operatori
+
+-->
+
+<hr id="dottrina" />
+
+<p>Defining the concepts of <em>true</em> and <em>false</em> is always, inevitably, a matter of convention.
+For philosophers, <em>true</em> is everything that can be described in words; for scientists, everything that can be described by mathematics; for computer scientists, <em>true</em> is everything that can be described by code.
+<!-- v. Kant citato da Hertha von Dechend nella prefazione tedesca a Il Mulino di Amleto -->
+We can define <em>false</em> as the opposite of <em>true</em>, but we cannot deduce or infer the concept of <em>true</em>, because, whatever definition we choose, before we can accept it we would have to be able to consider it true — but that’s impossible, since we don’t yet know what <em>true</em> actually is.
+Bertrand Russell said that the condition of <em>true</em> or <em>false</em> is a state of the organism, determined by conditions external to the organism;<a class="nota" href="/en/notes#fn-russell" id="russell">2</a> this is a true statement.. or rather, a <em>valid</em> one, even for computers: the boolean values <em>true</em> and <em>false</em> are two possible states for an instruction, and they often depend on conditions external to the instruction itself, such as the presence of a file or a user action.
+The interesting thing is that, even for computers, the values interpreted as <em>true</em> and <em>false</em> are entirely arbitrary, and often specific to a given system.
+Take, for example, database programs: for <em>Access</em>, the boolean value <em>false</em> is <code>-1</code>; for early versions of <em>Postgres</em> it’s <code>f</code>; for MySQL or Oracle, it’s <code>0</code>.
+The computer doesn’t have the concept of <em>true</em> or <em>false</em> <em>in itself</em>, only the association of the boolean values <em>true</em> and <em>false</em> with a given sequence of bits.
+<em>True</em> and <em>false</em>, then, are symbolic values that we insert into the computer’s logic, translating into its language a concept that belongs to our own world; an exogenous reference that can generate apparent contradictions such as, for example, the fact that all digital values are based on analog quantities (the magnetic charge of a tape, a pit on the surface of a CD, or the voltage inside a circuit), or genuine paradoxes, such as the fact that, on punched cards, the value <code>1</code> was associated with the absence of a hole, while the value <code>0</code> was associated with the presence of paper; in effect, a logical negation of reality.
+These paradoxes, whether apparent or real, cause the system no problem, as long as they’re shared by every actor within it.
+The paradox of punched cards (hole = 0, paper = 1) was shared both by Hollerith machines and by the machines that punched the cards, so the processing that resulted from it was correct, regardless of the relative value assigned to the concepts of <em>true</em> and <em>false</em> within the system.
+From this point of view, we can only agree with William James, when he says that an idea is <em>true</em> for as long as believing in it is useful to our lives.</p>
+
+<hr id="effimeri" />
+
+<p>Human beings, too, like computers, have to relate their own beliefs to pre-existing frameworks of values, because a good part of the principles and values on which we model our own and other people’s existence have no objective basis in fact: they’re just beliefs or conventions we’ve decided to adopt, in the same way that <code>true</code> corresponds to the binary value <code>000000001</code> and <code>false</code> to <code>00000000</code>.
+Take wealth, for example: they say money doesn’t buy happiness, and it’s true; being poor doesn’t make you happy either, but nobody says that.
+Anyway, one of the richest people I’ve ever known couldn’t have children.
+He owned houses in several countries, a yacht, and even a private plane, but he couldn’t have something even the poorest man on Earth can easily get.
+What was the point of his wealth? Was it real?
+Literally, the word <em>prestige</em> refers to something that appears to be what it is not, like a magician’s tricks, while <em>success</em> is nothing but the past participle of the verb “to succeed”: everything that has happened in the past has, by definition, “succeeded”; and yet, many people, under the influence of the Age-Old Dichotomy, spend their whole lives chasing one, the other, or both.
+<em>Fame</em> is just as fickle: how many people were once famous and are now forgotten?
+Whoever invented the wheel and fire changed the history of our species and of the world forever with their discoveries, but no one knows who they were.
+In more recent times, the painter Giovanni Baglione was very famous, at the end of the sixteenth century, but if we remember him today it’s only because of his dealings with Caravaggio, and in any case their fame will end along with our species, together with that of Shakespeare, Leonardo, or Einstein.
+It’s not only worldly values, like fame, success, or money, that are inconsistent — so are the ones we usually consider “noble”, like respect for other people’s lives.
+If you ask me why one shouldn’t kill a man, I’ll tell you that killing is wrong because all the evil you do, you’re doing to yourself; I believe this is true because Master Canaro taught it to me, and he had seen the source code of the Universe’s program.
+If instead you ask a Christian or a Jew, they’ll tell you it’s forbidden by the Ten Commandments God gave to Moses; they believe it’s true because it’s written in the Bible, which is the Word of God.
+If, finally, you ask a champion of secularism, they’ll tell you that murder, under our legal system, is a crime; that must be true, because our Laws apply the concepts set out in our Constitution, which in turn draws on the principles of liberty and equality of the French <em>Declaration of the Rights of Man and of the Citizen</em>, which in turn drew on the American <em>Declaration of Independence</em>, which in turn borrowed the ideas of Locke and Montesquieu.
+None of these statements is valid on its own: they’re all grounded in some form of faith — religious or secular as it may be — in whoever promulgated the Law or the Principle.
+Applied to ethics, this is the same mechanism used to certify a Web server.
+When you access your bank’s website, you know it’s really your bank’s server because it holds a digital certificate attesting to its identity, digitally signed by a certifying authority called a <em>Certification Authority</em> (or, more briefly, a <em>CA</em>).
+You know the certifying authority really is who it claims to be because it too has its own certificate, signed by another certifying authority, called the <em>root CA</em>.
+The <em>root CA</em> vouches for the intermediate CA, which in turn vouches for your bank.
+Unfortunately, though, neither lawmakers nor their ideological certifiers are subject to the rules and checks a <em>Certification Authority</em> has to follow, and it has often happened that whoever set the rules was also the first not to abide by them.
+Moses, with the sixth Commandment still fresh off the press, told the sons of Levi:</p>
+
+<blockquote>
+  <p>Put every man his sword by his side, and go in and out from gate to gate throughout the camp, and slay every man his brother, and every man his companion, and every man his neighbour.<a class="nota" href="/en/notes#fn-levi" id="levi">3</a></p>
+</blockquote>
+
+<p>The Americans, who wrote:</p>
+
+<blockquote>
+  <p>We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.</p>
+</blockquote>
+
+<p>traded in slaves and exterminated Native Americans to steal their land.
+The French, whose motto was:</p>
+
+<blockquote>
+  <p>Liberté, Égalité, Fraternité</p>
+</blockquote>
+
+<p>put these principles into practice by way of the guillotine.
+The UN, which in 1948 published the <em>Universal Declaration of Human Rights</em>, has at its top table countries that are the world’s leading arms producers<a class="nota" href="/en/notes#fn-armi" id="armi">4</a> and that constantly violate the very rules they themselves promoted.
+Be careful, though: the fact that secular principles of peace, equality, and freedom ultimately derive from the convictions<a class="nota" href="/en/notes#fn-self-evident" id="self-evident">5</a>
+of a group of believers<a class="nota" href="/en/notes#fn-credenti" id="credenti">6</a> doesn’t mean they’re wrong, only that no objective truth can be attributed to them; we can only accept them on faith, the same way we accept religious dogma.
+We <em>choose</em> to believe in a framework of values, the same way we might choose to believe in UFOs: we have no innate convictions, other than selfishness.
+Decent people have one thing in common with scoundrels: they think the rest of the World is like them, but they’re wrong.
+We find it agreeable, almost redundant, to say that every human being has a right to life, liberty, and impartial justice, because we were raised with these values, but someone with a different cultural background might not find these statements just as self-evident <em>in themselves</em>.
+To the authors of the <em>Declaration of Independence</em> it was <em>self-evident</em> that all men were created equal, but six Southern States, in their Constitutions, specified that they were talking about free men, not slaves.<a class="nota" href="/en/notes#fn-freemen" id="freemen">7</a>
+The Nazis used Hollerith machines to census and exterminate the Jews; columns were even added to the punch cards so they could handle data about religion.<a class="nota" href="/en/notes#fn-black" id="black">8</a>
+Today we criticize both them and those who helped them do it, but perhaps our grandchildren will criticize us for the tolerance we’ve shown toward those who sell us the oil for our cars; the same tolerance they will show toward those who supply them with raw materials for batteries, or with water.</p>
+
+<hr id="comandamenti" />
+
+<p>We choose an ethos because it makes our life better, not because we happen to like its author.
+Master Canaro, for instance, was convinced that the Book of Exodus was the record of an alien experiment on a population isolated in the desert for two generations (“you see: circumcision was used to identify the males, and membership in the group was established through the mother, because that way it could be verified through mitochondria”); nevertheless, he governed his life and his decisions according to his own “secularized” version of the Ten Commandments of Moses:</p>
+
+<blockquote>
+  <ol>
+    <li>The meaning of life is understanding the meaning of life.</li>
+    <li>Do not seek the meaning of life in earthly things.</li>
+    <li>What matters is how you behave, not what you say.</li>
+    <li>Devote part of your time to spiritual pursuit (see point 1).</li>
+    <li>Do not judge your parents until you have found yourself in situations similar to theirs.</li>
+    <li>Do not kill without a valid reason (to define the concept of “valid reason”, see points 1-10).</li>
+    <li>There are plenty of unmarried women out there: go fuck them.</li>
+    <li>Do not take what does not belong to you, whatever it may be.</li>
+    <li>Do not bear false witness against your neighbor.</li>
+    <li>Do not covet what belongs to others; if you manage to covet nothing at all, even better.</li>
+  </ol>
+</blockquote>
+
+<!--
+specificare che quando aveva redatto la prima versione era un "angy young man", come direbbe Santillana, ma che poi aveva capito che le religioni sono come le opere teatrali e non le si può giudicare in base alle capacità degli attori.
+-->
+<p>When I asked him why he had chosen exactly those rules, he answered: “If I had followed them when I was young too, I’d have a lot fewer regrets now.”</p>
+
+<!--
+
+Il fine dichiarato di Kanāda nei Vaiśesika Sūtra, considerati da Dasgupta come pre-buddhisti, è di spiegare il Dharma (la Legge Eterna) come il fondamento, da un lato, della manifestazione (abhyudaya) e, dall’altro, del “Sommo Bene” (nihśreyasam), cioè della Liberazione: la validità dei Veda è stabilita dal fatto che questi sono i loro fini.
+
+Coomaraswamy, Ananda K.. Tempo ed Eternità (Orizzonti dello spirito) (Italian Edition) (Kindle Locations 322-327). Edizioni Mediterranee. Kindle Edition.
+-->
+
+            </section>
+        
+        </main>
+        <footer>
+    <nav>
+        
+        
+        <a href="/en/program-structure" 
+           title="Go to: C++ program structure" 
+           class="left">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        
+        
+        <a href="#top" 
+           title="Back to top" >
+           <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        
+        <a href="/en/memory" 
+           title="Go to: Memory" 
+           class="right" >
+                <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+                
+
+    </nav>
+
+</footer>
+
+    </div>
+  </body>
+</html>

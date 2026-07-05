@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+
+
+
+
+<head>
+    <title>Programming languages |  C'hi++
+</title>
+    <meta charset="utf-8" />
+    <link      rel="canonical"          href="http://localhost:4000/en/programming-languages" />
+    <link      rel=icon                 href="http://localhost:4000/assets/img/favicon.ico" type=image/x-icon />
+    <link      rel="stylesheet"         href="http://localhost:4000/assets/fa/css/all.css" />
+    <link      rel="stylesheet"         href="http://localhost:4000/assets/css/styles.css" />        
+    <meta     name="viewport"        content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/og-img/indice.jpg" />
+    <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
+    <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:url"          content="http://localhost:4000/en/programming-languages" />
+    <meta property="og:type"         content="website" />
+    <meta property="og:title"        content="Programming languages" />
+    <meta property="og:description"  content="What Brian Kernighan said - A computer is like a ship - How to get back to your hotel in China - Paradoxes are God's cryptography - PacMan doesn't pay VAT." />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image"        content="http://localhost:4000/assets/img/og-img/linguaggi-di-programmazione.jpg" />
+    <meta property="fb:app_id"       content="" /><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-159394431-1');
+</script></head>
+<body class="manuale capitolo ">
+    <div class="page capitolo">
+        <header><nav class="menu-top">
+    <a
+        title="Go to: Numeral systems"
+        
+        href="/en/numeral-systems"
+        class="left freccia"
+        
+    >
+        <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="/"
+        class="center"
+        title="Back to homepage"
+    >
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        title="Go to the table of contents"
+        href="/en/indice"
+    >
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+       
+    <a
+        
+        href="/it/linguaggi-di-programmazione"
+        
+        class="center"
+        title="Leggi in italiano"
+    >
+        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="https://github.com/TacunIT/chi-plus-plus"
+        target="github"
+        class="center"
+        title="Go to the GitHub project"
+    >
+        <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        title="Go to: C++"
+        
+        href="/en/c-plus-plus"
+        
+        class="right freccia"
+    >
+        <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+    </a>
+</nav>
+</header>
+        <main class="corpo pubblicato ">
+        
+            <h1><a href="#dottrina">
+                Programming languages</a>
+            </h1>
+            <blockquote class="motto">God does not program the Universe in Assembly</blockquote>
+            <section class="testo">
+                <p>Brian Kernighan said:</p>
+
+<blockquote>
+  <p>The only way to learn a new programming language is by writing programs in it.</p>
+</blockquote>
+
+<p>Master Canaro maintained that writing the manual for a programming language is also a good way to learn it.</p>
+
+<hr />
+
+<p>Programming languages exist to ask the computer to carry out certain operations.
+For the computer to obey us, it must “understand” what kind of entities it has to manage and what kind of operations it must perform on them.
+For example, if we asked the computer to double our salary, the computer would need to know at least how much our salary is and how multiplying by two works.</p>
+
+<pre><code>long double_it(long salary)
+{
+    return salary * 2;
+}
+</code></pre>
+
+<p>Since the only thing the computer knows are sequences of 1s and 0s — whether on a disk, in memory, or on the communication port of the keyboard or the screen — we have to find a way to “explain” the concepts of <em>salary</em> and <em>multiplication</em> to it in binary form.
+Programming languages do exactly this: they translate our requests into a language the computer can understand.</p>
+
+<hr />
+
+<p>Programming languages can be <em>high-level</em> or <em>low-level</em>.
+High-level languages, like <em>C</em> or <em>C++</em>, have constructs similar to natural language and are not tied to any specific hardware architecture.
+Low-level languages, like <em>assembly</em>, have constructs similar to the machine’s native code and are, for this reason, tied to a specific type of hardware.
+The <em>double_it</em> function we saw earlier, translated into <em>assembly</em> language, becomes:</p>
+
+<pre><code>double_it(long):
+        push    rbp
+        mov     rbp, rsp
+        mov     QWORD PTR [rbp-8], rdi
+        mov     rax, QWORD PTR [rbp-8]
+        add     rax, rax
+        pop     rbp
+        ret
+</code></pre>
+
+<p>Programs written in high-level languages, as you can see, are easier to write and to fix, but slower to run, because the code has to be “translated” into a form the CPU can understand.
+Programs written in low-level languages are more complex to write or fix, but much faster to run, because they contain only the instructions strictly necessary to carry out the desired task.</p>
+
+<hr />
+
+<p>A computer is like a ship.
+The hardware is down below, like the engine room, and the CPU is the chief engineer: he doesn’t see the sea, doesn’t see the sky, doesn’t even know whether the ship is heading North or South; he receives his instructions over the intercom and only cares about speed and fuel consumption.
+The operating system is the crew: it’s in an intermediate position, neither at the bottom nor at the top, and it looks after the ship and the cargo; it can talk to the Captain and to the chief engineer, but it never talks to the shipowners.
+The user interface, on the other hand, is the bridge: it’s the highest point of the ship, from which everything can be seen; it’s in direct contact with the shipowners, from whom it receives directives on what it should or shouldn’t do, and with the crew, who inform it of the ship’s status.
+Each level of the computer has its own language.
+This computer’s CPU “thinks” in what is called <em>machine language</em>, that is, a long series of decimal values indicating both the operations to perform and the quantities involved.
+The operating system is written in C, because it’s the language best suited to managing a computer.
+The user interface, finally, makes use of object-oriented languages like C++ to create the graphical elements that let it interact with the user.
+The languages and constructs that apply at one level don’t work if applied at the other levels, because each level conceives of and manages the elements of a program differently.
+The user interface knows many things about the programmer: it sees his face in the webcam, hears his voice in the microphone, sometimes reads his fingerprints on the scanner.
+The operating system can’t see or hear him, but it knows his personal details and knows everything he writes to his friends.
+The CPU knows nothing about him: it processes his data, but doesn’t know what it is.
+It can process the sequence of bytes:</p>
+
+<pre><code>01000011
+01100001
+01101110
+01100001
+01110010
+01101111
+</code></pre>
+
+<p>but it doesn’t know that it’s the name: <em>Canaro</em>.
+In fact, it doesn’t even know what the word <em>name</em> is.
+To it, it’s just the sequence of bytes:</p>
+
+<pre><code>01101110
+01101111
+01101101
+01100101
+</code></pre>
+
+<p>Turning these concepts around, Master Canaro once said:</p>
+
+<blockquote>
+  <p>Man cannot say whether God is good or not, because one cannot classify the essence of the Creator with the attributes of the created. It would be as if the bytes of a computer wondered whether the Programmer were worth 1 or 0.</p>
+</blockquote>
+
+<hr />
+
+<p>We perceive the real world as a set of events involving one or more entities.
+Each entity can be identified by its physical characteristics and has its own particular way of reacting to external stimuli.
+To describe entities, programming languages have
+<a href="/en/data-types" class="xref">data types</a>;
+to describe events,
+<a href="/en/operators" class="xref">instructions and operators</a>.
+A programming language is more effective the better its data types and syntactic constructs manage to represent the entities the program will have to handle.
+There are many programming languages.
+Each language is good at explaining certain things well, and less good at others.
+There are languages that describe banking transactions well but are unsuited to managing air traffic; others that work very well for creating Web pages, but with which it would be masochistic to write an operating system.
+A programmer who deeply knows a certain programming language can use it effectively to write any program, but at what cost?
+If the programming language is unsuited to describing the events the program will need to deal with, the programmer will have to worry about bending either the events or the language, or both, to get the expected result.
+Choosing instead a language whose data types and constructs are closer to the reality being described saves time and effort and produces more reliable code.
+Programming languages can be of two types: <em>interpreted</em> or <em>compiled</em>.
+I can explain the difference this way: imagine you’re in China and have to get back to your hotel by taxi.
+If you don’t speak Chinese, you have two options: either bring along an interpreter to explain to the driver where you need to go, or have the hotel give you a piece of paper with the address and show it to the taxi driver.
+Both options have upsides and downsides.
+If you choose to bring an interpreter you’ll have extra costs, but you’ll be free to go wherever you want: to the hotel, to a restaurant, or to a nightclub.
+If instead you opt for the piece of paper with the address, you’ll save the interpreter’s fee, but once you’re in the taxi, you’ll only be able to go back to the hotel.
+The same thing happens with programming languages.
+The code of interpreted languages is read by a program called an <em>interpreter</em>, which first translates the instructions into the computer’s language and then executes them.
+The code of compiled languages, on the other hand, is read by a program called a <em>compiler</em>, which converts it into instructions the computer can understand, writes these instructions into a new file called an <em>object file</em>, and passes it to another program called a <em>linker</em>, which turns it into an <em>executable</em> file.
+Here too, each method has upsides and downsides.
+Interpreted languages are slower, because the read/convert/execute step is repeated every time the code is processed; they also require extra system resources dedicated to the interpreter.
+On the other hand, every change to the source code is immediately reflected in the running program.
+Compiled languages are faster and require fewer system resources, because compilation happens only once, after which the program can run on its own; but if the source code is modified, the program has to be recompiled to work correctly.
+Religion too, in a way, is a programming language, because it lets humans converse with God.
+The code, in this case, is prayer, which the faithful compose and send to the Divinity in the hope that it will execute it.
+Religions too, like programming languages, can be either compiled or interpreted, depending on whether communication between the faithful and God is direct or mediated by a priestly Order.</p>
+
+<hr />
+
+<p>All languages have a syntax, all languages have data types; very few languages also have principles.
+Principles are important, because they give a language robustness.
+The C language, from which C++ is derived, has no principles: it is only a way of describing events inside a computer.
+The instruction:</p>
+
+<pre><code>char b = 23;
+</code></pre>
+
+<p>is a way of telling the computer:</p>
+
+<ol>
+  <li>find a free area of memory 1 byte wide;</li>
+  <li>assign the address of that area to the variable <em>b</em>;</li>
+  <li>put the value <em>23</em> into that area of memory.</li>
+</ol>
+
+<p>Imagine you are C.
+The kitchen wall is the computer’s memory, and each tile is a <em>bit</em>.
+The first seventeen tiles are occupied, but from the eighteenth to the twenty-fifth there are eight free tiles, so you take a marker and, without letting the cook see you, write onto the eight free tiles the binary equivalent of the number 23:</p>
+
+<table class="memoria">
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+	<tr>
+    <td></td>
+    <td class="area prima">0</td>
+    <td class="area">0</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+</table>
+
+<p>The variable <em>b</em>, at this point, will have an <em>address</em>, that is, the number of the first tile you wrote on (18), and a <em>value</em>, that is, the binary number stored in the eight tiles (23).
+<!--
+@todo - go deeper into the concepts of rvalue, lvalue and the new categories in C++11
+-->
+If the next instruction were:</p>
+
+<pre><code>char c = b * 2;
+</code></pre>
+
+<p>all you’d have to do is look for another set of eight free tiles in which to write the value of the variable <em>b</em> shifted one tile to the left:</p>
+
+<table class="memoria">
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+	<tr>
+    <td></td>
+    <td class="area prima">0</td>
+    <td class="area">0</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td>
+    <td class="area prima">0</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">0</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">1</td>
+    <td class="area">0</td>
+    <td></td><td></td><td></td><td></td><td></td>
+  </tr>
+</table>
+
+<p>I can see you’re puzzled, but think about it: multiplying by two, in binary, is the equivalent of multiplying by ten in decimal notation.
+If you have to multiply a decimal number by the base of the numeral system — which is ten, precisely —, you shift it one place to the left and add a zero on the right:</p>
+
+<pre><code>1234 * 10 = 12340
+</code></pre>
+
+<p>If you have to multiply a binary value by the base of the system, which in this case is two, you do the same thing:</p>
+
+<pre><code>00010111 * 00000010 = 00101110
+</code></pre>
+
+<p>The value <code>00101110</code> equals 46, which is double 23.</p>
+
+<hr />
+
+<p>C is an extremely efficient language for handling all the entities you can find in a computer — numbers, strings, data streams — but its strength is at the same time its limit, because it doesn’t work as well when you’re dealing with more complex objects.
+Even handling text strings, in C, is rudimentary: if you tried to perform the addition Master Canaro talks about in his diary:</p>
+
+<pre><code>#include &lt;stdio.h&gt;
+
+int main (int argc, char** argv)
+{
+    char* a = "pippo";
+    char* b = "pluto";
+    printf("\npippo+pluto=%s\n", a+b);
+    return 0;
+}
+
+</code></pre>
+
+<p>the C compiler would warn you that it can’t add two variables of type char.</p>
+
+<pre><code>% gcc programming-languages-foo-bar.c -o ../out/example;
+programming-languages-foo-bar.c:7:35:
+error: invalid operands to binary expression
+('char *' and 'char *')
+    printf("\nfoo+bar=%s\n", a+b);
+                                 ~^~
+1 error generated.
+</code></pre>
+
+<p>C is a language that doesn’t go beyond the scope it was created for.
+It’s a convention.
+If tomorrow we stopped using computers, C would no longer exist, because all of its constructs are tied to the workings of computing hardware.
+By contrast, C++ and all languages based on the object-oriented paradigm have a philosophical component that transcends the field of computing.
+If tomorrow we stopped using computers, the constructs C++ inherited from C would no longer make sense, but the concepts of
+<a href="/en/classes-objects" class="xref">class and object</a>
+would still remain valid.
+Many think that having principles is limiting, but that’s not true.
+C has no principles, and its constructs are limited to the data types it provides for.
+C++, thanks to its principles, has greater flexibility and can evolve, adapting its constructs to any context.
+Master Canaro thought that Science was like C: a perfect tool for describing what surrounds us, but unsuited to describing what transcends our direct knowledge.
+The problem, in his view, was mathematics.
+Paraphrasing Karl Kraus, he used to say that mathematics is a disease of which it believes itself to be the cure.
+I don’t know if you know André Weil’s line: “God exists because mathematics is consistent; the Devil exists because we cannot prove it.”
+The opposite is true.
+Paradoxes are God’s cryptography, and mathematics is useful not because it’s almost always consistent, but because, every now and then, it produces paradoxes.
+Western philosophies try to escape paradox; Zen, on the contrary, seeks it out relentlessly.
+Could it be that paradox is the key to reaching the Truth?
+Or even: could it be that the Truth cannot be reached unless paradox is accepted?
+After all: why shouldn’t God’s world, His view of things, be paradoxical to us?
+If we showed the two-dimensional character of a computer game our three-dimensional world, wouldn’t it find it paradoxical?
+And if we explained to <em>PacMan</em> that we have to pay VAT, wouldn’t he find it paradoxical?
+Another hypothesis is that paradox marks the boundary point between our system and a higher-order system.
+It could be, that is, that within our system there are “border” elements that mark the boundary between our system and another, and that because of this ambivalence they cannot be fully explained with the elements available to us.
+Time cannot be defined without a tautology; defining Truth involves a recursion..
+Is it our rope, still too short, or is it rather the well that has no bottom, at least in this Universe?</p>
+
+<hr id="dottrina" />
+
+<p>One day a disciple asked Master Canaro: “Master, which kind of bow shoots best?”<br /> The master answered: “The one you use every day.”<br /> The disciple then asked: “Master, does this mean one could use an unsuitable programming language, as long as the goal is reached?”<br /> The master smiled benevolently and said: “Please, go meditate on the senselessness of your questions while you clean the common latrines.”<br /> For a long time I couldn’t understand Master Canaro’s behavior. For a while, I believed the error lay in that “best” in the first question, and that the master had deliberately given an imprecise answer in order to carry a poorly framed line of reasoning to its extreme conclusions, but I was wrong.<br /> The truth was that Master Canaro, as he himself confessed to me, was trying to offload his turn at cleaning the latrines onto someone else, and the young and impetuous disciple had given him the opportunity.<br /></p>
+
+            </section>
+        
+        </main>
+        <footer>
+    <nav>
+        
+        
+        <a href="/en/numeral-systems" 
+           title="Go to: Numeral systems" 
+           class="left">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        
+        
+        <a href="#top" 
+           title="Back to top" >
+           <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        
+        <a href="/en/c-plus-plus" 
+           title="Go to: C++" 
+           class="right" >
+                <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+                
+
+    </nav>
+
+</footer>
+
+    </div>
+  </body>
+</html>

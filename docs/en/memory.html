@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+
+
+
+
+<head>
+    <title>Memory |  C'hi++
+</title>
+    <meta charset="utf-8" />
+    <link      rel="canonical"          href="http://localhost:4000/en/memory" />
+    <link      rel=icon                 href="http://localhost:4000/assets/img/favicon.ico" type=image/x-icon />
+    <link      rel="stylesheet"         href="http://localhost:4000/assets/fa/css/all.css" />
+    <link      rel="stylesheet"         href="http://localhost:4000/assets/css/styles.css" />        
+    <meta     name="viewport"        content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/og-img/indice.jpg" />
+    <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
+    <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:url"          content="http://localhost:4000/en/memory" />
+    <meta property="og:type"         content="website" />
+    <meta property="og:title"        content="Memory" />
+    <meta property="og:description"  content="Memory management - How human beings relate to the delete operator - The Five Stages of grief of modern Society - A precept about love." />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image"        content="http://localhost:4000/assets/img/og-img/memoria.jpg" />
+    <meta property="fb:app_id"       content="" /><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-159394431-1');
+</script></head>
+<body class="manuale capitolo ">
+    <div class="page capitolo">
+        <header><nav class="menu-top">
+    <a
+        title="Go to: Operators"
+        
+        href="/en/operators"
+        class="left freccia"
+        
+    >
+        <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="/"
+        class="center"
+        title="Back to homepage"
+    >
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        title="Go to the table of contents"
+        href="/en/indice"
+    >
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+       
+    <a
+        
+        href="/it/memoria"
+        
+        class="center"
+        title="Leggi in italiano"
+    >
+        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="https://github.com/TacunIT/chi-plus-plus"
+        target="github"
+        class="center"
+        title="Go to the GitHub project"
+    >
+        <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        title="Go to: Functions"
+        
+        href="/en/functions"
+        
+        class="right freccia"
+    >
+        <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+    </a>
+</nav>
+</header>
+        <main class="corpo pubblicato ">
+        
+            <h1><a href="#dottrina">
+                Memory</a>
+            </h1>
+            <blockquote class="motto">cogito ∴ sum()</blockquote>
+            <section class="testo">
+                <p>Memory management is C++’s main distinguishing feature.</p>
+
+<p>As I’ve told you, every programming language is a way of looking at a computer’s memory.
+When you <em>declare</em> a variable with an instruction like:</p>
+
+<pre><code>signed int a = 1;
+</code></pre>
+
+<p>what you’re really doing is telling the compiler to take a 32-bit area of memory (an <code>int</code> is 4 bytes, remember?), associate it with the name <code>a</code>, and write the binary value into it:</p>
+
+<pre><code> 00000000 00000000 00000000 00000001
+</code></pre>
+
+<p>As you can see, most of the variable goes unused, so if you’re dealing with values below 65,535, it’s better to use <code>short int</code>, which only takes up two bytes.
+ In the same way, if you declare the string:</p>
+
+<pre><code> const char* motto = "Cogito ergo sum";
+</code></pre>
+
+<p>you’re asking the compiler to take a 16-byte area of memory, save its starting address in the variable <code>motto</code>, and then write into it the 15 characters of the phrase, plus one final character, with value <code>0</code>, marking the end of the string.
+You can use this method if you know in advance how big the variables you’ll be dealing with will be, but if instead you have to handle values of variable size (for example, user input), you have two options: either you reserve a generous amount of space in advance, or you allocate it on the spot, based on your actual needs.
+The first case works fine if you have to handle a few small pieces of data, but if you have to handle many large variables, dynamic allocation, even though it’s more complex to manage, is more efficient.
+The following code is an example of static memory management:</p>
+
+<pre><code>/** 
+ * @file memoria-statica.cpp
+ * Gestione statica della memoria.
+ */
+ 
+#include &lt;iostream&gt;
+
+/** Definisce la dimensione della stringa */
+#define DIM_STRINGA 200
+
+using namespace std;
+
+int main(int argc, char** argv)
+{    
+    /** Riserva uno spazio di 200 caratteri */
+    char stringa[DIM_STRINGA];
+
+    /** 
+    * Qui dovrebbe controllare che le stringhe ci siano 
+    * e che, sommate, siano più corte di 200 caratteri.. 
+    */
+    
+    /** Copia le stringhe nell'area di memoria */
+    sprintf(stringa, "%s %s", argv[1], argv[2]);
+
+    /** Stampa la stringa a video */
+    cout &lt;&lt; stringa &lt;&lt; endl;
+        
+    return 0;
+}
+       
+
+</code></pre>
+
+<p>If you compile and run it, passing two strings as parameters, you get this output:</p>
+
+<pre><code>% g++ src/cpp/memoria-statica.cpp -o src/out/esempio                
+% src/out/esempio "Stringa uno" "Stringa due"
+Stringa uno Stringa due
+</code></pre>
+
+<p>This code works if you only have to handle two strings that, added together, come to fewer than 200 characters: a fairly restrictive condition.
+You could increase the number of strings and the size of the memory space, but you’d end up with a program that’s either over- or under-sized.
+That’s not good programming.
+A good programmer must not waste resources; for him, the proverbial glass is neither half full nor half empty: it’s twice as big as it needs to be.</p>
+
+<pre><code>/** 
+ * @file memoria-dinamica.cpp
+ * Gestione dinamica della memoria.
+ */
+ 
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main(int argc, char** argv)
+{    
+    /** 
+    * Qui dovrebbe controllare che le stringhe ci siano.. 
+    */
+   
+    /** Legge la lunghezza delle due stringhe */        
+    size_t len1 = strlen(argv[1]);
+    size_t len2 = strlen(argv[2]);
+
+    /** 
+     * Alloca un'area di memoria grande quanto le due
+     * stringhe più un carattere di spazio e un
+     * carattere terminatore.
+     */   
+    size_t lunghezza = len1 + len2 + 2; 
+    char* stringa = new char[lunghezza];
+
+    /** Copia le stringhe nell'area di memoria */
+    sprintf(stringa, "%s %s", argv[1], argv[2]);
+
+    /**
+     * Mostra l'indirizzo dell'area di memoria,
+     * la sua dimensione e il suo contenuto
+     */
+    cout &lt;&lt; (void*)stringa &lt;&lt; endl;
+    cout &lt;&lt; lunghezza      &lt;&lt; endl; 
+    cout &lt;&lt; stringa        &lt;&lt; endl;
+    
+    /** Libera la memoria allocata */
+    delete[] stringa;
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>The output of this program, far more frugal than its static counterpart, is as follows:</p>
+
+<pre><code>% src/out/esempio "Stringa uno" "Stringa due"        
+0x7fead1405910
+24
+Stringa uno Stringa due
+
+% src/out/esempio "Stringa uno" "Stringa due più lunga"
+0x7fbb6e405910
+35
+Stringa uno Stringa due più lunga
+
+% src/out/esempio "Stringa uno" ""                     
+0x7fcf8f405910
+13
+Stringa uno
+</code></pre>
+
+<p>The <code>new</code> keyword lets you allocate a given amount of memory, and returns a pointer to the first address of the allocated area:</p>
+
+<pre><code>char* stringa = new char[lunghezza];
+</code></pre>
+
+<p>The <code>stringa</code> pointer now holds the address of the memory area allocated by the <code>new</code> instruction.
+If we pass it as a parameter to the <code>&lt;&lt;</code> operator, since it’s a pointer to <code>char</code>, it will be displayed as a string:</p>
+
+<pre><code>cout &lt;&lt; stringa &lt;&lt; endl;
+</code></pre>
+
+<p>To find out its actual value, we need to convert it into a <code>void</code> pointer with a <a href="/en/data-types#casting">casting</a> operation:</p>
+
+<pre><code>cout &lt;&lt; (void*)stringa &lt;&lt; endl;
+</code></pre>
+
+<p>The downside of dynamic memory allocation is that, while a static buffer “lives” only as long as the block of instructions in which it was created, dynamically allocated memory stays occupied until it’s freed with a <code>delete</code> instruction:</p>
+
+<pre><code>delete[] stringa;
+</code></pre>
+
+<p>The next example should help you understand how variable visibility works in C++:</p>
+
+<pre><code>/** 
+ * @file memoria-visibilita.cpp
+ * Visibilità delle variabili.
+ */
+ 
+#include &lt;iostream&gt;
+
+using namespace std;
+
+/** 
+ * Le variabili definite all'esterno delle funzioni
+ * si chiamano "variabili globali" e sono visibili
+ * in tutto il codice. 
+ */
+const char* stringa = "Stringa globale";
+
+void funz() 
+{    
+    /** 
+     * Le variabili definite all'interno di una 
+     * funzione sono visibili solo all'interno
+     * della funzione stessa. 
+     */
+    const char* stringa = "Stringa esterna";
+    
+    /** Blocco di codice generico */
+    {
+        /** 
+         * Le variabili definite all'interno di un 
+         * blocco di codice sono visibili solo 
+         * all'interno del blocco di codice. 
+         */
+        const char* stringa = "Stringa interna";
+        
+        /** Mostra la variabile interna */
+        cout &lt;&lt; "blocco: " &lt;&lt; stringa &lt;&lt; endl;
+    }
+
+    /** 
+     * Qui è visibile la variabile esterna. 
+     */
+    cout &lt;&lt; "funz:   " &lt;&lt; stringa &lt;&lt; endl;
+
+    /** 
+     * L'operatore :: permette di accedere alla 
+     * variabile globale. 
+     */
+    cout &lt;&lt; "funz:   " &lt;&lt; ::stringa &lt;&lt; endl;
+    
+}
+
+int main(int argc, char** argv)
+{    
+    /** Richiama la funzione esterna */
+    funz();
+
+    /** 
+     * La funzione main non definisce una variabile
+     * "stringa", quindi mostra la variabile globale. 
+     */
+    cout &lt;&lt; "main:   " &lt;&lt; stringa &lt;&lt; endl;
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>If you compile and run this code, you’ll get:</p>
+
+<pre><code>% g++ src/cpp/memoria-visibilita.cpp -o src/out/esempio
+% src/out/esempio                                      
+blocco: Stringa interna
+funz:   Stringa esterna
+funz:   Stringa globale
+main:   Stringa globale
+</code></pre>
+
+<p>As you can see, the globally-defined string is visible both in the <code>main</code> function and in the <code>funz</code> function; the variable defined at the start of the <code>funz</code> function is visible within the function itself, but not in the code block, where the new <code>stringa</code> variable is visible instead.
+Each variable’s “life expectancy” depends on where it was defined: the first variable will exist for the entire duration of the program; the second variable is created when the <code>funz</code> function is called, and is destroyed when the function ends; the variable inside the code block only exists for two instructions, then the code block ends and it’s destroyed.
+By contrast, when a memory area is allocated dynamically, it stays occupied until the program (or, more precisely: the programmer) releases it with a <code>delete</code> instruction.
+If the program makes only a single call, as in our example, the fact that a few dozen bytes aren’t available for a few minutes doesn’t cause much of a problem (I know this for a fact, because, in the first version of the example, I forgot to add the <code>delete</code> instruction at the end, and the computer kept working just fine anyway); but if that same program kept running on the same computer for a long time, it would gradually use up all the available memory, causing it to freeze.
+This is why the language with the “J” has a <em>garbage collection</em> system that, like Secret Service cleanup crews, takes care of erasing the evidence of its programmers’ incompetence before it can do any damage to the systems.
+Someone will tell you that’s not true, that “J” programmers are competent professionals, but think about it: if there’s a garbage collection system, there has to be someone producing the garbage, doesn’t there?</p>
+
+<hr id="dottrina" />
+
+<p>Like C++ variables, human beings too are called upon to live, carry out their task, and are eventually removed from the system.
+The resources we occupy are a set of spazioni, rather than sequences of bytes, but what we commonly call “ourselves” is nothing more than a way of looking at the transitions of energy within the system.
+Unlike software variables, though, human beings are able to evaluate the outcome of their choices or actions, and can decide whether to repeat that choice or action in other cycles of the Universe’s life.
+We are, at the same time, part of the program, its <em>beta testers</em>, and its developers, and if we notice a faulty instruction, we can fix it in subsequent “runs” of the program, the same way a chess player avoids repeating a move that has proven to be a loser.
+This way, we generate a new variant of history which, like a chess variation, may turn out better or worse than the previous ones.
+A very famous <em>Koan</em> speaks of <i id="istante">Zen in every instant</i>:</p>
+
+<blockquote>
+  <p>Zen students are with their masters at least ten years before they presume to teach others. Nan-in was visited by Tenno, who, having passed his apprenticeship, had become a teacher.
+It happened to be a rainy day, so Tenno wore wooden clogs and carried an umbrella.
+After greeting him, Nan-in said: “I suppose you left your wooden clogs in the vestibule. I want to know if you put your umbrella to the right or left of the clogs.”
+Tenno, confused, did not know the answer, and realized that he was unable to carry Zen every minute.
+He became Nan-in’s pupil, and he studied six more years to accomplish his every-minute Zen.<a class="nota" href="/en/notes#fn-zen" id="zen">1</a></p>
+</blockquote>
+
+<p>Master Canaro hated this <em>Koan</em>, because he was extremely absent-minded.
+If Nan-in had asked him that question, he would probably have shot him an annoyed look and asked: “What clogs?”
+Even so, he recognized its importance, because the more attention we pay to everything we do, the more mistakes we’re able to identify and, hopefully, correct.</p>
+
+<hr id="delete" />
+
+<p>Another difference between human beings and C++ code is our relationship with the <code>delete</code> operator.
+Mankind has always been afraid of death, and, ever since Gilgamesh, has always tried to escape it or undo its work.
+Art, religion, science: we could say that everything good we have produced as a species stems from a natural refusal to accept the transience of our existence.
+Death has been the cause, and at times the subject, of the finest fruits of our ingenuity.
+Over time, all these creations have built a cultural cocoon that, on the one hand, has protected us from fear, and on the other, has given us shared ideals to fight for, even if not always for good ends.
+In the last two centuries, though, Science has torn through this cocoon, stripping human beings of their comforting lies and replacing them with unsettling certainties, while its dim-witted child (the ‘68 Movement) swept away parts of our Society that were certainly in need of revision, but fundamental all the same, like the family or the school, without giving anything back in return, except the miniskirt.
+There’s an apocryphal anecdote about Master Canaro that speaks to exactly this:</p>
+
+<blockquote class="incluso" id="zia">
+One day, Master Canaro's aunt called him and told him her computer had stopped working.<br /> “It turns on, but it won't connect to the Internet and it can't send email. Please, come and fix it.”<br /> So Master Canaro went to his aunt's house and asked her to show him the computer that wasn't working. His aunt led him into her study and turned on the laptop sitting on the desk. As expected, the computer started up normally, but when Master Canaro tried to open the browser, an error message appeared. The Master then tried to open the email program, but once again an error message appeared.<br /> Under his aunt's increasingly anguished gaze, Master Canaro examined the network settings, checked that the modem was working, and updated the system files, but the problem remained; so, the Master picked up the computer and threw it out the window.<br /> “What have you done?!” his aunt exclaimed, aghast.<br /> “It wasn't working, so I threw it out,” the Master answered.<br /> “But couldn't it have been fixed?” his aunt asked, still unable to grasp what had happened.<br /> “Maybe, but it would have taken a lot of time: better to throw it away.”<br /> “And how am I supposed to work now, without a computer?” his aunt asked, stunned. Master Canaro shrugged.<br /> “No idea, but you couldn't have worked with that one either, since it was broken.”<br /> “I know it was broken!” his aunt exclaimed. “But when something necessary is broken, you fix it, you don't throw it away!”<br /> Far from looking contrite, Master Canaro stood up and, staring his aunt in the eye, exclaimed:<br /> “And what about you people, back in '68?!”
+</blockquote>
+
+<p>Humanity, faced with the inescapability of the end and, at the same time, stripped of the comfort of religion and the support of family, has reacted like a patient diagnosed with an incurable illness, and has processed its grief according to the five stages defined by Dr. Kübler-Ross:<a class="nota" href="/en/notes#fn-kubler" id="kubler">2</a></p>
+
+<p><i>Denial:</i> just as the Victorian Age had its taboo around sex, our “culture” has its taboo around death: our great-grandparents pretended to have no carnal interests, we pretend death doesn’t exist.
+We deny it in words, using euphemisms to avoid naming it: “He’s gone”, “He’s no longer with us”, “He’s passed away”, as if we were talking about an escaped convict or a magician.
+We deny it in practice, isolating the dying in hospital wards, far from their homes and their loved ones.
+We deny it in our thoughts and our actions, because otherwise the senselessness of our lives, spent chasing the fleeting mirage of success,<a class="nota" href="/en/notes#fn-successo" id="successo">3</a> would become obvious and undeniable.</p>
+
+<p><i>Anger:</i> although anger and aggression have always been present throughout our history, since the middle of the last century they have begun to flourish not only from oppression and hardship, but from prosperity as well.
+The clashes between <em>Mods</em> and <em>Rockers</em> in the ’60s, the armed struggles of the ’70s, <em>Punk</em>, and, more recently, <em>foreign fighters</em> and aggression on <em>social media</em>: none of these phenomena arise from ghettos or from a state of need; they are all hobbies of the Middle Class.</p>
+
+<p><i>Bargaining:</i> in 1982 Jane Fonda released a videotape<a class="nota" href="/en/notes#fn-aerobica" id="aerobica">4</a> teaching aerobics in your own living room to anyone who could afford to spend sixty Dollars<a class="nota" href="/en/notes#fn-dollari" id="dollari">5</a> on a VHS.
+It became one of the best-selling videotapes of all time, and kicked off a trend that turned into a lifestyle for millions of people.
+The fitness craze, together with the resurgence of <em>New Age</em> spirituality, was how civilized peoples tried to come to terms with the terrifying new reality Science had presented them with, acknowledging their own mistakes and trying to remedy them by changing their lifestyle.
+Unfortunately, though, the pseudo-mystics never understood that reciting the <em>Lotus Sutra</em> because you believe it can help you fulfill your desires is a contradiction in terms.
+Religion is like antibiotics: it doesn’t work if you don’t take the full course.</p>
+
+<p><i>Depression:</i> depressive disorder is the second most common illness in the World, after heart disease — clear evidence that the bargaining phase hasn’t produced the hoped-for effects.
+Having failed every attempt to fight reality, the Man of the third Millennium sought refuge in flight, and shut himself away like Tokugawa-era Japan, but without the flourishing of the arts that accompanied <em>Sakoku</em>,<a class="nota" href="/en/notes#fn-sakoku" id="sakoku">6</a> because Reality is not a predator we can hope to shake off.
+Reality is everywhere, and even by isolating ourselves we cannot escape it; if anything, solitude generates a <em>feedback loop</em> that amplifies the state of distress and makes reaching the next stage even harder and less likely — namely, the..</p>
+
+<p><i>Acceptance:</i> the only way to save yourself is to give up the teachings of the false teachers of the past, and accept the fact that we are not unique, irreplaceable drops of water, but part of the sea.
+Whoever wants to may believe that Poseidon lives in that sea; others are free to think there are only fish, mollusks, and algae in it: it doesn’t matter; what matters is breaking free of Entropy’s separating influence, and regaining a sense of belonging to something that goes beyond our brief, limited existences. <!-- @todo Verificare quello che dice De Santillana a proposito di Galileo: C'hi++ non si oppone al pensiero scientifico, che anzi adotta, ma all'intolleranza scientifica -->
+Only this way can we win our battle against the Age-Old Dichotomy.
+Only this way can we stop chasing a fleeting fame and find strength in the awareness that each of us can, through our actions, change the course of the World.
+According to the <em>Yoga Sutra Bhāṣya</em>:<a class="nota" href="/en/notes#fn-yoga" id="yoga">7</a></p>
+
+<blockquote>
+  <p>The whole World undergoes a change at every single moment; thus, all the external qualities of the World depend on this present moment.</p>
+</blockquote>
+
+<p>Just as every instant matters to the World, every being matters to the Universe, so long as it carries out the task assigned to it — even someone or something that seems insignificant.
+It’s well known that Master Canaro reached his first state of Enlightenment when he saw a shrub growing on a rock face overlooking the sea.
+A seemingly useless shrub: its seeds would never reach soil where they could sprout, and its branches were too thin for a bird to build a nest in them; and yet, the sheer stubbornness with which that plant carried out the role assigned to it let Master Canaro understand something many books had failed to explain to him, laying the first stone of what would later become his teaching.
+What we perceive as our “worth” is relative.
+Think of the variable <code>a</code> we saw at the beginning:</p>
+
+<pre><code>00000000 00000000 00000000 00000001
+</code></pre>
+
+<p>The first bit is worth <code>0</code>, a null value, if you consider it on its own, but if instead you evaluate it in relation to the two bytes it belongs to, it becomes the value <a href="/en/data-types#modificatori">the variable’s sign depends on</a>.
+If, by some chance, the value of that bit became <code>1</code>, the value of the variable <code>a</code> would become negative, with unpredictable consequences for the program.
+Many, too many people are
+<a href="https://canaro.net/ide-monogatari/binario.html" target="canaro">like that bit</a>, and think they’re worth zero because they measure their own worth only in subjective terms.
+Mesmerized by the Age-Old Dichotomy, they spend all their energy trying to be worth <code>1</code>, and in doing so lose sight of what would have been their destiny — with consequences far more serious than a sign flip in a variable.</p>
+
+<hr />
+
+<p>A good programmer must always check that his code has no flaws, and what I’ve just told you has one, quite a serious one: it can be used as an excuse to create a caste system that limits the growth potential of those who are genuinely destined to increase their worth.
+The question, then, is: how can a bit, or a sentient being, decide what its exact worth is?
+Certainly no established Authority can tell it, and neither can custom.
+Family or school can offer suggestions, but they can’t decide for it: parents and teachers surely have more experience, but they aren’t infallible.
+The answer lies in a Roman dialect proverb:</p>
+
+<blockquote>
+  <p>First you gotta know why you’re in this world.
+Once you know why, you gotta learn how to be in it.</p>
+</blockquote>
+
+<p>These two lines hold the meaning of Life within them: understanding what your role is, and carrying it out to the best of your ability, without letting yourself be swayed by fashions, and above all without falling victim to the Age-Old Dichotomy.
+C++ is a strongly-typed language,<a class="nota" href="/en/notes#fn-tipizzazione" id="tipizzazione">8</a> so, when you declare a variable, you always have to give it a data type:</p>
+
+<pre><code>bool    booleano  = false;
+char    carattere = 'C';
+int     intero    = 1234567890;
+float   decimale  = 3.14;
+char    array[]   = "abcdefghilmnopqrstuvz";
+</code></pre>
+<p>In the same way, everything that exists has abilities suited to its role in the Universe.
+Playing music, writing, acting, teaching, persuading, leading, loving: to each of us, the Universe gives a tool and a workbench, even if the role we’ve been assigned isn’t always obvious from birth.
+Take Lech Wałęsa, for example (he’s the only Nobel Peace laureate I can think of who didn’t have a degree): he started out working as a ship’s electrician, but his abilities turned him into a political leader.<a class="nota" href="/en/notes#fn-walesa" id="walesa">9</a>
+Or, better yet, think of yourself: at eighteen, if you’d wanted to, you could have left the Order, gone home, and become some kind of <em>deputy-something</em> at your family’s company, but instead you stayed here writing your book.
+Was that the right choice?
+What did the Universe expect of you? That, as a monk, you’d make the World a better place with your Bible for geeks, or that, as a manager, you’d improve the living conditions of your company’s employees?
+We’ll only find out once we go back to being One; until then, we can only speculate.<!--, oppure chiederci: quale è stato, il motivo della tua scelta?-->
+If you stayed here out of laziness, or because you were afraid of the World or of your family, you made a mistake.
+If you stayed because you don’t desire luxury or power, you may have made the right choice. Maybe.
+If you stayed, even though it would have been easier and more comfortable to return to the bosom of your family, because you thought you’d be more useful here, then you’re either terribly naive or you did the right thing.
+Either way, you should always do your own job well, whatever it is, because we never know how or when we’ll be called upon to be useful.
+Once, a friend of Master Canaro’s, just back from Japan, told him:</p>
+
+<blockquote>
+  <p>The difference between us and the Japanese is that if you put someone here to clean toilets, he feels looked down on and does a poor job, while a Japanese person tries to become the best toilet cleaner in the whole Country.</p>
+</blockquote>
+
+<p>Another way to tell whether you’re on the right path is through love.
+Love is the perfect drug: it’s as addictive as <em>crack</em> and makes you believe you can fly, like LSD; it’s the honey with which Life lures the ants of our thoughts, making them go wherever it wants.
+So, if what drives you to act is some form of love — and not just love for someone, but also for something, whether it’s the sea, the mountains, a sport, a form of art, or a job — it’s very likely that you’re doing what you’re meant to do.
+From the standpoint of memory management, love has another use too, summed up in this precept:</p>
+
+<blockquote>
+  <p>We love what will kill us (if all goes well)</p>
+</blockquote>
+
+<p>It’s late now, though, and this lesson has run on far too long; we’ll talk about it another time.</p>
+
+<!--
+
+@todo: decidere se mettere un riferimento incrociato alla lezione sulle classi.
+
+@todo: classi di memorizzazione: extern, static, auto
+
+-->
+
+            </section>
+        
+        </main>
+        <footer>
+    <nav>
+        
+        
+        <a href="/en/operators" 
+           title="Go to: Operators" 
+           class="left">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        
+        
+        <a href="#top" 
+           title="Back to top" >
+           <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        
+        <a href="/en/functions" 
+           title="Go to: Functions" 
+           class="right" >
+                <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+                
+
+    </nav>
+
+</footer>
+
+    </div>
+  </body>
+</html>

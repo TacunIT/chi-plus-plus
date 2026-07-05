@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+
+
+
+
+<head>
+    <title>Conditional instructions |  C'hi++
+</title>
+    <meta charset="utf-8" />
+    <link      rel="canonical"          href="http://localhost:4000/en/conditional-instructions" />
+    <link      rel=icon                 href="http://localhost:4000/assets/img/favicon.ico" type=image/x-icon />
+    <link      rel="stylesheet"         href="http://localhost:4000/assets/fa/css/all.css" />
+    <link      rel="stylesheet"         href="http://localhost:4000/assets/css/styles.css" />        
+    <meta     name="viewport"        content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/og-img/indice.jpg" />
+    <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
+    <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:url"          content="http://localhost:4000/en/conditional-instructions" />
+    <meta property="og:type"         content="website" />
+    <meta property="og:title"        content="Conditional instructions" />
+    <meta property="og:description"  content="How to decide what's right and what isn't - The stakes, before and after August 6, 1945 - The importance of repentance - Why Nansen was able to cut the cat in two" />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image"        content="http://localhost:4000/assets/img/og-img/istruzioni-condizionali.jpg" />
+    <meta property="fb:app_id"       content="" /><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-159394431-1');
+</script></head>
+<body class="manuale capitolo ">
+    <div class="page capitolo">
+        <header><nav class="menu-top">
+    <a
+        title="Go to: Functions"
+        
+        href="/en/functions"
+        class="left freccia"
+        
+    >
+        <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="/"
+        class="center"
+        title="Back to homepage"
+    >
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        title="Go to the table of contents"
+        href="/en/indice"
+    >
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+       
+    <a
+        
+        href="/it/istruzioni-condizionali"
+        
+        class="center"
+        title="Leggi in italiano"
+    >
+        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="https://github.com/TacunIT/chi-plus-plus"
+        target="github"
+        class="center"
+        title="Go to the GitHub project"
+    >
+        <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        title="Go to: Iterative instructions"
+        
+        href="/en/iterative-instructions"
+        
+        class="right freccia"
+    >
+        <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+    </a>
+</nav>
+</header>
+        <main class="corpo pubblicato ">
+        
+            <h1><a href="#dottrina">
+                Conditional instructions</a>
+            </h1>
+            <blockquote class="motto">Doing something intentional implies understanding that alternatives exist, and choosing one; and these are attributes of artificial intelligence</blockquote>
+            <section class="testo">
+                <!--
+La perifrasi è da: Asimov, Isaac. Civiltà extraterrestri (Italian Edition) . MONDADORI. Kindle Edition.
+-->
+
+<p>Conditional instructions are the most important element of code.</p>
+
+<p>Every program has to know how to react correctly as the conditions it’s used under change; to do this, we use so-called <em>conditional instructions</em>, which let you define how the system behaves depending on whether a given condition turns out to be true or false.
+C++ has two kinds of conditional instruction: <code>if-else</code> sequences and the <code>switch</code> instruction.
+The general form of <code>if-else</code> instructions is as follows:</p>
+
+<pre><code>if ( &lt;condizione&gt; ) {
+    // istruzioni da eseguire se la condizione è vera
+} else {
+    // istruzioni da eseguire se la condizione è falsa
+}
+</code></pre>
+
+<p>If the conditional expression at the start of the code is true, the program will run the first block of instructions; if not, it will run the second block of instructions.</p>
+
+<pre><code>if ( a &gt; 8 ) {
+    cout &lt;&lt; "maggiore" &lt;&lt; endl;
+} else {
+    cout &lt;&lt; "minore" &lt;&lt; endl;
+}
+</code></pre>
+
+<p>If the false condition requires no specific action, the second block of instructions can be omitted:</p>
+
+<pre><code>typedef Importo unsigned long;
+
+Importo raddoppiaStipendio(Importo stipendioCorrente)
+{
+    if ( stipendioCorrente &gt; 0 ) {
+        stipendioCorrente *= 2;
+    }    
+    return stipendioCorrente;   
+}
+</code></pre>
+
+<p>In the same way, curly braces can be omitted if the block of instructions they enclose consists of a single instruction:</p>
+
+<pre><code>if ( a &gt; 8 )
+    cout &lt;&lt; "maggiore" &lt;&lt; endl;
+else
+    cout &lt;&lt; "minore" &lt;&lt; endl;
+</code></pre>
+
+<p>Personally, I find this form inelegant, and think it makes the code less clear, which invites mistakes.
+I only use it in error-handling instructions, where the program’s flow breaks off abruptly, because the ungainly look of the instruction highlights the exception, making the code more self-explanatory.</p>
+
+<pre><code>if ( divisore == 0 )
+    throw std::runtime_error("errore");
+</code></pre>
+
+<p>If there are more than two conditions to evaluate, you can chain several conditional instructions using the <code>else if</code> instruction, which lets you define an alternative condition to the first one and associate a block of code with it.
+Here too, you can close the sequence with an <code>else</code> instruction, defining a block of instructions to run if none of the expected conditions is met.</p>
+
+<pre><code>if ( &lt;prima condizione&gt; ) {
+    /*
+     * istruzioni da eseguire se
+     * la prima condizione è vera
+    */
+} else if ( &lt;seconda condizione&gt; ) {
+    /*
+     * istruzioni da eseguire se
+     * la prima condizione è vera
+     */
+} else {
+    /*
+     * istruzioni da eseguire se nessuna
+     * delle due condizioni è vera
+     */
+}
+</code></pre>
+
+<p><code>if-else</code> instructions affect the readability of the code; it’s something a good programmer must always keep in mind.
+C++ is a formatting-independent language, so the same instruction can be written in many different ways:</p>
+
+<pre><code>if ( &lt;condizione&gt; )
+{
+    ...
+}
+else
+{
+    ...
+}
+</code></pre>
+
+<p>or, equally:</p>
+
+<pre><code>if ( &lt;condizione&gt; ) {
+    ...
+} else {
+    ...
+}
+</code></pre>
+
+<p>or even:</p>
+
+<pre><code>if ( &lt;condizione&gt; ) { ...} else { ... }
+</code></pre>
+
+<p>If the instructions are few and simple, one form is as good as another (matters of style aside, of course), but if the program’s flow is, as it usually is, more complex, you need to make sure the form of the instruction makes the code easier to write, read, and, if needed, fix.
+Imagine a piece of code that has to run a check at the start of processing and, depending on the outcome, either run a sequence of instructions or send an error message:</p>
+
+<pre><code>if ( &lt;condizione&gt; ){
+    /*
+     * righe di codice da
+     * eseguire in caso la
+     * condizione sia vera
+     */
+} else {
+    /* gestione dell'errore */
+}
+</code></pre>
+
+<p>If the instructions to run when the check succeeds are few and simple, this sequence won’t cause any problems, but if instead the instructions were numerous and complex, while reading the code you might reach the <code>else</code> instruction and no longer remember which condition it was tied to.
+In these cases, I prefer the form:</p>
+
+<pre><code>if ( &lt;errore&gt; ) {
+    /* gestione dell'errore */
+} else {
+    /*
+     * righe di codice da
+     * eseguire in caso la
+     * condizione sia vera
+     */
+}
+</code></pre>
+
+<p>Since error handling will never require more than a few lines of code, you’ll be able to grasp the whole flow of the program at a glance, regardless of how long the second block of instructions is.
+None of this, of course, is meant as either an invitation or a justification for writing complex instructions.
+Unless you need to limit function calls to guarantee high execution speed, it’s always better to break the program’s flow down into a series of distinct, specialized functions.
+You’ll make your program a bit slower (or, rather: a bit less fast), but the code will be much easier to read or modify.
+<!-- @todo parlare del "codice spaghetti". -->
+Now imagine a piece of code that requires many chained <code>if</code> conditions:</p>
+
+<pre><code>esito = 0;
+
+if ( &lt;condizione 1&gt; ) {
+    esito = 1;
+} else if ( &lt;condizione 2&gt; ) {
+    esito = 2;
+} else if ( &lt;condizione 3&gt; ) {
+    esito = 3;
+} else {
+    esito = 9;
+}
+
+return esito
+</code></pre>
+
+<p>This form, however correct and formally impeccable, could turn out to be hard to manage if the conditions to consider were very complex or numerous.
+The good programmer, in that case, may decide to break the (correct) rule that says not to put <code>return</code> instructions inside the code, and write the sequence like this:</p>
+
+<pre><code>esito = 0;
+
+if ( &lt;condizione 1&gt; ) {
+    return 1;
+}
+if ( &lt;condizione 2&gt; ) {
+    return 2;
+}
+if ( &lt;condizione 3&gt; ) {
+    return 3;
+}
+
+return 9
+</code></pre>
+
+<p>I’m not telling you this is the right way to write it, and you can see for yourself that the code is crude and inelegant, but there could be cases where this is the preferable form.
+For example, for a system that generates code automatically, it’s much simpler to handle isolated <code>if</code> instructions than chained <code>if-else</code> conditions.
+Think of a <em>stored procedure</em> that has to check the referential integrity of the parameters it receives:</p>
+
+<pre><code>CREATE FUNCTION utente_insert (
+  _id_classe INTEGER
+, _id_gruppo INTEGER
+, _username  VARCHAR(255)
+, _cognome   VARCHAR(80)
+, _nome      VARCHAR(80)
+)
+RETURNS INTEGER DETERMINISTIC
+BEGIN
+    DECLARE _id    INTEGER DEFAULT -1;
+    DECLARE _count INTEGER DEFAULT 0;
+
+    SELECT count(*) INTO _count FROM classe WHERE (id = _id_classe);
+    IF _count = 0 THEN
+        RETURN -2;
+    END IF;
+
+    SELECT count(*) INTO _count FROM gruppo WHERE (id = _id_gruppo);
+    IF _count = 0 THEN
+        RETURN -3;
+    END IF;
+
+    IF (_username IS NULL) OR (_username = '') THEN
+        RETURN -4;
+    END IF;
+    
+    IF (_cognome IS NULL) OR (_cognome = '') THEN
+        RETURN -5;
+    END IF;
+
+    IF (_nome IS NULL) OR (_nome = '') THEN
+        RETURN -6;
+    END IF;
+
+    ...
+
+</code></pre>
+
+<p>If you write the code this way, you can add or remove a parameter (and its related checks) without altering the rest of the code, which wouldn’t be the case if you chained the <code>if</code> instructions together.
+You’ll lose a bit of execution speed, but the code will be much easier to write or modify.
+Be careful, though: putting simple <code>if</code> instructions in sequence is quite different from building a chain of <code>else-if</code> instructions, because, if you don’t halt processing with a <code>return</code> instruction in case of an error, the program will keep going, checking the following conditions, and the error in the first condition could have knock-on effects on the code that follows:</p>
+
+<pre><code>/** Qui comincia il male.. **/
+if ( divisore == 0 ) {
+    cout &lt;&lt; "Errore: divisione per zero" &lt;&lt; endl;
+}
+
+/** ..e il peggio lo segue **/
+if ( (dividendo / divisore) &gt; 1 ) {
+    ...
+}
+</code></pre>
+
+<p>Since there’s no <code>return</code> instruction, the code of the first check won’t stop the function from running, and it will fail when it tries to perform a division by zero.</p>
+
+<hr />
+
+<p>The <code>switch</code> instruction lets you handle multiple cases, based on the evaluation of an expression:</p>
+
+<pre><code>switch(&lt;espressione&gt;)
+{
+    case &lt;costante&gt; : istruzioni... [break];
+    case &lt;costante&gt; : istruzioni... [break];
+    ...
+    default: istruzioni...
+}
+</code></pre>
+
+<p>The <code>case</code> and <code>default</code> keywords identify the values handled by the <code>switch</code> instruction.
+There can (and it’s useful for there to) be more than one <code>case</code>, but the constants associated with each of them must have different values.
+The <code>default</code> condition, by contrast, must be unique.
+Execution of the instruction begins at the <code>case</code> whose constant matches the value of the <code>switch</code> expression, and ends at the <code>break</code> keyword.
+If the expression has a value not covered by any <code>case</code>, the instruction runs the code associated with the <code>default</code> label:</p>
+
+<pre><code>#include &lt;iostream&gt;
+#include &lt;cstdlib&gt;
+
+#define POS_NESSUNO -1
+#define POS_ERRORE   0
+#define POS_MERCURIO 1
+#define POS_VENERE   2
+#define POS_TERRA    3
+#define POS_MARTE    4
+#define POS_GIOVE    5
+#define POS_SATURNO  6
+#define POS_URANO    7
+#define POS_NETTUNO  8
+#define POS_PLUTONE  9
+
+using namespace std;
+
+int main(int argc, char** argv)
+{    
+    int pianeta;
+    
+    /** 
+     * Legge i parametri di input.
+     * Se ce ne sono, prova a convertire il primo parametro 
+     * in un intero. Se il parametro non è un intero, la 
+     * funzione atoi torna 0. 
+     */
+    if(argc &gt; 1) {
+        pianeta = atoi(argv[1]);
+    } else {
+        pianeta = POS_NESSUNO;
+    }
+    
+    /** Gestisce i casi possibili */
+    switch( pianeta ) {
+        case POS_ERRORE:   cout &lt;&lt; "Valore non valido"; 
+            break;
+        case POS_MERCURIO: cout &lt;&lt; "Mercurio";          
+            break;
+        case POS_VENERE:   cout &lt;&lt; "Venere";            
+            break;
+        case POS_TERRA:    cout &lt;&lt; "Terra";             
+            break;
+        case POS_MARTE:    cout &lt;&lt; "Marte";             
+            break;
+        case POS_GIOVE:    cout &lt;&lt; "Giove";             
+            break;
+        case POS_SATURNO:  cout &lt;&lt; "Saturno";           
+            break;
+        case POS_URANO:    cout &lt;&lt; "Urano";             
+            break;          
+        case POS_NETTUNO:  cout &lt;&lt; "Nettuno";           
+            break;          
+        case POS_PLUTONE:  cout &lt;&lt; "Plutone";           
+            break;
+        default:
+            cout &lt;&lt; "Inserire un valore da: " 
+                 &lt;&lt; POS_MERCURIO 
+                 &lt;&lt; " a " 
+                 &lt;&lt; POS_PLUTONE;                    
+    }
+    
+    cout &lt;&lt; endl;
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>Compiling and running this code, you’ll get:</p>
+
+<pre><code>% g++ src/cpp/istruzioni-condizionali-switch.cpp -o src/out/esempio
+% src/out/esempio                                                  
+Inserire un valore da: 1 a 9
+% src/out/esempio 4
+Marte
+% src/out/esempio terra
+Valore non valido
+</code></pre>
+
+<p>In essence: with a <code>break</code> at the end of each case, the <code>switch</code> instruction is a more elegant (and efficient) form of the <code>if - else if</code> instruction:</p>
+
+<pre><code>if(pianeta == POS_ERRORE) {
+   cout &lt;&lt; "Valore non valido";
+} else if(pianeta == POS_MERCURIO) {
+    cout &lt;&lt; "Mercurio";
+} else if(pianeta == POS_VENERE) {
+    cout &lt;&lt; "Venere";   
+} else if ..         
+</code></pre>
+
+<p>If you removed the <code>break</code>s at the end of each case, the program’s output would be:</p>
+
+<pre><code>% src/out/esempio 4    
+MarteGioveSaturnoUranoNettunoPlutoneInserire un valore da: 1 a 9
+</code></pre>
+
+<p>which makes no sense in this particular case, but which can be the right choice when two possible cases need to be handled the same way.
+One last thing: always remember that, to declare variables inside a <code>case</code>, you need to add curly braces; otherwise, you’ll get a compile error:</p>
+
+<pre><code>switch( x ) {
+    case 1:
+        int y = 9;      /** errore di compilazione */
+        cout &lt;&lt; x + y;
+        break;
+    case 2: {
+        int y = 2;      /** corretto */
+        cout &lt;&lt; x + y ;
+        break;
+    }
+    default:
+        cout &lt;&lt; "default" &lt;&lt; endl;
+}
+
+</code></pre>
+
+<hr id="dottrina" />
+
+<p>Life often asks us to make conditional choices.
+When that happens, you have two options: either you make the choice that’s most convenient for you, or you make the choice that seems most beneficial to the greatest number of people for the longest possible time.
+In the first case you’ll be a vector of Entropy, while in the second you’ll be a champion of Gravity.
+As you know, for C’hi++ the exact choice (understood as the past participle of the verb “to exact”) is the second: all matter is nothing but the manifestation of a single Energy, so it makes little sense to distinguish ourselves from one another; instead, we must reason like Saʿdi of Shiraz, when he says:</p>
+
+<blockquote>
+  <p>Human beings are members of a whole,
+in creation of one essence and soul.
+If one member is afflicted with pain,
+other members uneasy will remain.<a class="nota" href="/en/notes#fn-saadi" id="saadi">1</a></p>
+</blockquote>
+
+<p>Seeking your own personal gain at others’ expense is wrong.
+You must behave well, and try to convince others to do the same, because, as the <em>Mantiq al-Tayr</em> puts it:</p>
+
+<blockquote>
+  <p>whatever evil or good I did,
+in truth I did it only to myself.<a class="nota" href="/en/notes#fn-mantiq" id="mantiq">2</a></p>
+</blockquote>
+
+<p>But how do you know what’s <em>good</em>?
+There are cases where it’s easy to make the right choice, as with Zen master Bokuju:<a class="nota" href="/en/notes#fn-bokuju" id="bokuju">3</a></p>
+
+<pre><code>switch( stimolo ) {
+    case fame:  
+        azione = mangio;
+        break;
+    case sonno:
+        azione = dormo;
+        break;
+    case sete:  
+        azione = bevo;
+        break;
+}
+</code></pre>
+<p>but other times we’re faced with more complex choices:</p>
+
+<blockquote>
+  <p>A girl became pregnant as the result of an assault: can she choose to have an abortion?</p>
+</blockquote>
+
+<p>or:</p>
+
+<blockquote>
+  <p>A man convicted of murder killed two other inmates and a guard while in prison: should he be sentenced to death or not?</p>
+</blockquote>
+
+<p>If you ask a Catholic these questions, he will — consistently with his Creed — tell you that no, neither abortion nor the death penalty is acceptable, because life is a gift from God and no one can take it away.
+If instead you ask a Judge, you’ll get different answers depending on which Nation they belong to, because while taking material goods is considered a crime everywhere, there are States where it’s permitted to take from an individual the most precious good they have.
+There was a time when believers burned scientists at the stake, accusing them of heresy; on August 6, 1945, though, Science showed the World its power, and effectively became the new God for millions of people; since then, the roles have reversed, and now it’s scientists who burn every form of spirituality at the stake.
+The problem is that if you strip jurisprudence of a spiritual foundation, what you get is off-the-shelf Laws, temporary fixes for contingent needs.
+At best.
+Theocracy is a mistake, but so-called <em>a</em>-theocracy must be avoided too.
+Faith was the glue that held our society together for nearly two thousand years.
+Much of that glue was just something we invented, but so are States, money, Human Rights, Laws.<a class="nota" href="/en/notes#fn-sapiens" id="sapiens">4</a>
+None of these concepts, so important to our Society, actually exists, but we use them anyway because, like the <em>C</em> language, even though they’re just conventions, they’re useful for their purpose.
+Now that this glue is gone, lawmakers’ choices are no longer driven by the pursuit of a common goal (whether right or wrong), but by the pursuit of approval from an electorate made up in large part of cultural zombies<a class="nota" href="/en/notes#fn-istat" id="istat">5</a> and of egoists pursuing only their own momentary interest: the ideal pasture for demagogues with dictatorial ambitions.
+The minority of idealists and cultured people, lacking transcendent values, can only act according to their own feelings or hopes, and inevitably falls under the malicious influence of the Age-Old Dichotomy: they make choices aimed at the common good, but it’s a common good that’s very often shortsighted and temporary.
+Like mediocre chess players, they see what’s good here and now, but fail to weigh its long-term consequences.
+Think about what you believe the right answer to the two questions I asked you might be, and then think about <em>why</em> that solution seems right to you.
+Why do we allow the termination of a fetus that has harmed no one, while we let live someone who already has?
+Do we want to do the right thing, or do we just want to feel good about ourselves?
+Master Canaro made many enemies with his views on abortion.
+<!--
+@todo: valutare la possibilità di aggiungere i punti interessanti della conversazione con Massimo:
+    a. non sono cattolico, ma ho studiato embriologia e so quando
+       qualcosa smette di essere un agglomerato di cellule e diventa
+       altro
+    b. quando, un programma diventa un programma?
+    c. l'aborto non può essere un metodo contraccettivo: una volta
+       nella vita, è possibile, ma non tre volte l'anno. -->
+Even some people who had initially supported him accused him of currying favor with the Catholic Church, when he was only applying the precept of the <em>Metta Sutta</em>, which preaches happiness not only for all those who have been born, but also for those yet to be born:</p>
+
+<blockquote>
+  <p>bhåtà và sambhavesã và sabbe sattà bhavantu sukhitattà<a class="nota" href="/en/notes#fn-metta" id="metta">6</a></p>
+</blockquote>
+
+<p class="metta">
+<i>bhåtà</i> those who have been born<br />  
+<i>và</i>  or  <br />
+<i>sambhavesã</i> those seeking birth  <br />
+<i>và</i> or  <br />
+<i>sabbe</i> all  <br />
+<i>sattà</i> beings   <br />
+<i>bhavantu</i> may they be  <br />
+<i>sukhitattà</i> happy at heart
+</p>
+
+<p>None of this mattered to him: when I brought it up with him, he told me he’d rather lose a million followers than a single life.</p>
+
+<hr id="pentimento" />
+
+<p>Answering the question about the convicted man is harder.
+The purpose of your actions must always be improvement: whoever makes a mistake must understand that they’ve made an error, and not repeat it in other cycles of existence:</p>
+
+<pre><code>int pentimento( azione ){
+
+    bool ripetere;
+
+    if ( azione == errore ) {
+        ripetere = false;
+    } else {
+        ripetere = true;
+    }
+
+    return ripetere;
+}
+</code></pre>
+<p>If the sinner truly repents, then it’s right that they be absolved, because, as Attar says:</p>
+
+<blockquote>
+  <p>A hundred Worlds of sin are dissolved by the light of a single repentance.<a class="nota" href="/en/notes#fn-pentimento" id="pentimento">7</a></p>
+</blockquote>
+
+<p>But the repentance must be real: the sinner must despise their mistake, and choose to die rather than repeat it.
+Cutting off the hand of a thief, forcing them to bring food to their mouth with the same hand they use to clean themselves, is a rather drastic method, but an effective one for forcing someone to meditate on the senselessness of their past actions — especially in a place like the desert, where bidets are rarer than in France.
+The <em>Lex Talionis</em> can work for lesser crimes, because whoever suffers it has time to reflect on their mistakes, but in the case of a murder it’s not only contrary to the duty of benevolence we owe other sentient beings, it could also be counterproductive, because if the condemned doesn’t understand their mistake before dying, their criminal actions might be repeated in other cycles of the Universe.
+On the other hand, we also have a duty of benevolence toward the other inmates and prison guards, so we cannot allow the condemned to kill them.
+The ideal solution would be to put them in a position where they can’t harm others, and then let them meditate on their mistakes, but if that isn’t possible, how should we behave?
+If an individual acknowledges their own mistakes and learns from them, they contribute to the improvement of the Universe; if instead they repeat the same criminal act over and over, they clearly don’t understand, or don’t want to understand, their mistake.
+If they don’t understand, they aren’t <em>sentient</em>, and therefore cannot contribute to the improvement of the Universe.
+If they’re of no use to that improvement, we can treat them the same way as Nansen’s cat:</p>
+
+<blockquote>
+  <p>Nansen found the monks of the eastern and western halls arguing over a cat. He seized the cat and said: “If you can say a word of Zen, I will spare the cat; if not, I will kill it.”
+No one could answer, and Nansen cut the cat in two.<a class="nota" href="/en/notes#fn-nansen" id="nansen">8</a></p>
+</blockquote>
+
+<p>For a long time, Master Canaro wondered why Nansen was able to cut the innocent cat in two.
+The explanation he settled on was that the cat, not being a sentient being, and therefore incapable of contributing its own experience to the growth of the Universe, was expendable, if that could somehow lead the monks to Enlightenment.
+Be careful, though: the death of the condemned, should it ever prove necessary, must not be seen as a revenge to be celebrated, but as an event as painful as it is unavoidable, to be mourned like an amputation.
+Everyone, on that day, should ask themselves whether, through <em>thoughts, words, deeds, and omissions</em>, they too contributed in some way to that loss.
+A Society that glorifies individualism, success, and money cannot call itself entirely innocent if someone who lacks the means or the ability to obtain them lawfully tries to get them some other way.</p>
+
+<hr />
+
+<p>A Buddhist teacher, having heard that Master Canaro, in his writings, claimed there was no way to escape the cycle of rebirth, went to see him and, determined to prove him wrong, challenged him to a <em>Dharma Combat</em> to settle their respective positions.
+Master Canaro replied that he didn’t know what a <em>Dharma Combat</em> was; at which the Buddhist teacher explained that it was a dialectical exchange, meant to demonstrate one’s knowledge of the doctrine.
+Master Canaro then nodded and said:
+“All right, but before we begin, tell me whether you want to win or lose this exchange, so that I can oblige you.”
+Hearing those words, the Buddhist teacher realized his intentions were not pure: he didn’t want that challenge to arrive at the truth, only for the pleasure of winning.
+So he bowed, thanked Master Canaro for making him see that weakness in himself, and from that moment on became his disciple.</p>
+
+<!--
+
+@todo
+
+Il Metta Sutra predica la benevolenza per tutti gli "esseri che respirano"
+
+> Ye keci pàõa-bhåt' atthi
+
+<p class="metta">
+<i>Ye keci</i> Ciascun<br />
+<i>pàõa-</i>   respirante<br />
+<i>bhåt'</i>   essere<br />
+<i>atthi</i>   che esiste<br />
+</p>
+
+allora, perché Nansen taglia in due il gatto? e perché i maestri Zen potevano uccidere i loro discepoli?
+Ho cercato la definizione di "senziente", ma non mi sembra che ci sia una risposta univoca.
+In attesa di accertare la questione (posto che sia possibile),
+
+Il Contrappasso:
+
+6. citare l'esempio del notaio in un'auto guidata da un sistema di IA e del sito che cerca di creare un'etica accumulando pareri (non fornire soluzione, per ora?);
+
+-->
+
+            </section>
+        
+        </main>
+        <footer>
+    <nav>
+        
+        
+        <a href="/en/functions" 
+           title="Go to: Functions" 
+           class="left">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        
+        
+        <a href="#top" 
+           title="Back to top" >
+           <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        
+        <a href="/en/iterative-instructions" 
+           title="Go to: Iterative instructions" 
+           class="right" >
+                <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+                
+
+    </nav>
+
+</footer>
+
+    </div>
+  </body>
+</html>

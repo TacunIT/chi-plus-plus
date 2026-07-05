@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+
+
+
+
+<head>
+    <title>Debugging |  C'hi++
+</title>
+    <meta charset="utf-8" />
+    <link      rel="canonical"          href="http://localhost:4000/en/debug" />
+    <link      rel=icon                 href="http://localhost:4000/assets/img/favicon.ico" type=image/x-icon />
+    <link      rel="stylesheet"         href="http://localhost:4000/assets/fa/css/all.css" />
+    <link      rel="stylesheet"         href="http://localhost:4000/assets/css/styles.css" />        
+    <meta     name="viewport"        content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/og-img/indice.jpg" />
+    <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
+    <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:url"          content="http://localhost:4000/en/debug" />
+    <meta property="og:type"         content="website" />
+    <meta property="og:title"        content="Debugging" />
+    <meta property="og:description"  content="Mistakes are unavoidable - How to fix the bugs in our life - Saying sorry versus asking forgiveness - The factors that shape our behavior - Words are not to be worshipped" />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image"        content="http://localhost:4000/assets/img/og-img/debug.jpg" />
+    <meta property="fb:app_id"       content="" /><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-159394431-1');
+</script></head>
+<body class="manuale capitolo ">
+    <div class="page capitolo">
+        <header><nav class="menu-top">
+    <a
+        title="Go to: Streams"
+        
+        href="/en/stream"
+        class="left freccia"
+        
+    >
+        <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="/"
+        class="center"
+        title="Back to homepage"
+    >
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        title="Go to the table of contents"
+        href="/en/indice"
+    >
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+       
+    <a
+        
+        href="/it/debug"
+        
+        class="center"
+        title="Leggi in italiano"
+    >
+        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="https://github.com/TacunIT/chi-plus-plus"
+        target="github"
+        class="center"
+        title="Go to the GitHub project"
+    >
+        <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        title="Go to: Epilogue"
+        
+        href="/en/epilogue"
+        
+        class="right freccia"
+    >
+        <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+    </a>
+</nav>
+</header>
+        <main class="corpo pubblicato ">
+        
+            <h1><a href="#dottrina">
+                Debugging</a>
+            </h1>
+            <blockquote class="motto">A hundred Worlds of sin are dissolved by the light of a single ticket</blockquote>
+            <section class="testo">
+                <p>Debugging may not be the meaning of life, as your book’s title claims, but it’s without question the most important aspect of programming.
+In your career as a programmer you may never use a <em>functor</em> class or redefine the <code>-&gt;</code> operator, but you will certainly make mistakes, and you’ll have to fix them.
+And yet, programming manuals never talk about <em>debugging</em>.
+Thousands of pages have been written about the various programming languages; not a spring goes by without some new programming paradigm blossoming — structured, <em>object-oriented</em>, <em>agile</em>, <em>fuzzy</em> — and yet, no one has ever bothered to formalize the process of fixing code.
+It’s no coincidence that the decline of software began when laser printers replaced the old dot-matrix ones. Code can’t be read on an A4 sheet: unless it’s a trivial program, it won’t fit, either in height or width. The continuous-feed paper of a 136-column dot-matrix printer, by contrast, lets you print your entire code and read through it calmly; fix it, if needed, and improve it if possible. That’s how code reviews used to be done, back when there was the time and the money to do code reviews.</p>
+
+<hr />
+
+<p>Neglecting to debug is like claiming you’ll never make a mistake.
+It doesn’t matter how efficient the programming language is; it doesn’t matter how sharp and vigilant the compiler is; it doesn’t even matter how good the programmer is: sooner or later, distraction, tiredness, or some external event will let a bug slip into the code.
+A pointer used improperly, one loop too many or too few in a <code>for</code> instruction, a forgotten comma between the parameters of a <code>printf</code>: whatever it is, if the compiler can’t catch it, it will end up in the program and stay there, waiting to produce its harmful effects.
+The program might work correctly for years, but then, one day, something won’t go the way it should, and at that point you’ll have to comb through the code to find the bug.
+Making mistakes is unavoidable, and it’s important to know how to fix them.
+Even more important, though, is being able to notice them.
+Just as <em>Ikebarba begins in the shop</em>, debugging begins the moment you write the code.
+The best way to keep your code free of bugs is to write good code.
+Writing good code means always doing the best you possibly can.
+Never save a file unless you’re sure it will work the way it should, and always try to think about what else your code might do, besides what you want it to.
+As I told you <a href="/en/programmer#buon-programmatore" class="xref">in one of our first conversations</a>, the Good Programmer isn’t satisfied with the quickest path, but always looks for the most efficient and reliable one, because he knows writing good code costs less than fixing badly written code.
+Master Canaro once said:</p>
+
+<blockquote>
+  <p>The Good Programmer is like a sailor who, before a long voyage, checks all of his deck equipment, taking apart every single item and replacing anything that might break, because he doesn’t know what will happen once he’s out at sea.</p>
+</blockquote>
+
+<p>The Good Programmer cannot help it, because it’s in his nature; that’s the difference between someone who <em>works as</em> a programmer and someone who <em>is</em> a programmer.</p>
+
+<hr id="tipi-errore" />
+
+<p>Software bugs can be of three kinds:</p>
+
+<ul>
+  <li>bugs that show up during compilation;</li>
+  <li>bugs that show up while the program is running;</li>
+  <li>analysis bugs.</li>
+</ul>
+
+<p><b id="errori-compilazione">Compile errors</b> are caused by malformed constructs, which block the process of building the program.
+A mistake you’ll make often is forgetting the semicolon at the end of a class declaration:</p>
+
+<pre><code>class C {
+private:
+    float _raggio;
+    float _area;
+public:
+    C (int m) : _raggio(m) {}
+    float getRaggio() { return _raggio; }
+    float area() {
+       Quadrato q;
+       return 3.14159 * q(_raggio);
+    }
+}
+</code></pre>
+
+<p>a trivial slip that will unfailingly cause the message:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-errori.cpp  -c -o src/out/esempio
+src/cpp/debug-errori.cpp:28:2: error: expected ';' after class
+}
+ ^
+ ;
+1 error generated.
+</code></pre>
+
+<p>Compile errors are the easiest to handle, because it’s the compiler itself that tells you what the problem is and exactly where in the code it lies.
+The only difficulty you might run into, especially if you’re working with the <code>STL</code>, is deciphering the compiler’s messages:</p>
+
+<pre><code>In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/iostream:38:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/ios:216:
+In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__locale:15:
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string:2027:19: error: no viable conversion from
+      'const std::__1::basic_string&lt;char&gt;' to 'std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;,
+      std::__1::allocator&lt;char&gt; &gt;::value_type' (aka 'char')
+        push_back(*__first);
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string:2075:5: note: in instantiation of function
+      template specialization 'std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;
+      &gt;::__init&lt;std::__1::istream_iterator&lt;std::__1::basic_string&lt;char&gt;, char, std::__1::char_traits&lt;char&gt;, long&gt; &gt;'
+      requested here
+    __init(__first, __last);
+    ^
+src/cpp/debug-errori.cpp:43:12: note: in instantiation of function template specialization
+      'std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;
+      &gt;::basic_string&lt;std::__1::istream_iterator&lt;std::__1::basic_string&lt;char&gt;, char, std::__1::char_traits&lt;char&gt;,
+      long&gt; &gt;' requested here
+    string s(begin,end);
+           ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string:876:5: note: candidate function
+    operator __self_view() const _NOEXCEPT { return __self_view(data(), size()); }
+    ^
+/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/string:1055:31: note: passing argument to parameter
+      '__c' here
+    void push_back(value_type __c);
+</code></pre>
+<!-- Grazie, John Berryman https://bit.ly/3vIU4hN -->
+
+<p>If a construct is formally correct, but <em>might</em> be a mistake, the compiler can flag it with a <b id="warning">warning</b>, a notice that doesn’t stop compilation, but draws the programmer’s attention to the anomaly.
+I used the conditional (<em>can flag it</em>) because warning notifications are an option the programmer has to enable, specifying, among the compilation parameters, which warnings they want to receive.
+Since there are truly a lot of parameters for enabling the various kinds of <em>warnings</em>:</p>
+
+<pre><code>-Waddress   
+-Wbool-compare  
+-Wbool-operation  
+-Wchar-subscripts  
+-Wcomment  
+-Wformat   
+-Wformat-overflow  
+-Wformat-truncation  
+-Wint-in-bool-context  
+-Winit-self  
+-Wlogical-not-parentheses
+-Wmaybe-uninitialized
+-Wmemset-elt-size
+-Wmemset-transposed-args
+-Wmisleading-indentation
+-Wmismatched-dealloc
+-Wmismatched-new-delete
+-Wmissing-attributes
+-Wmultistatement-macros  
+-Wnarrowing   
+-Wnonnull  
+-Wnonnull-compare  
+-Wopenmp-simd
+-Wparentheses  
+-Wpessimizing-move   
+-Wpointer-sign  
+-Wrange-loop-construct   
+-Wreorder   
+-Wrestrict   
+-Wreturn-type  
+-Wsequence-point  
+-Wsign-compare   
+-Wsizeof-array-div
+-Wsizeof-pointer-div
+-Wsizeof-pointer-memaccess
+-Wstrict-aliasing  
+-Wstrict-overflow=1  
+-Wswitch  
+-Wtautological-compare  
+-Wtrigraphs  
+-Wuninitialized  
+-Wunknown-pragmas  
+-Wunused-function  
+-Wunused-label     
+-Wunused-value     
+-Wunused-variable  
+-Wvolatile-register-var  
+-Wzero-length-bounds
+</code></pre>
+
+<p>and since they can all be relevant to the process of building code, the best thing you can do is enable them all at once, with the <code>-Wall</code> parameter:</p>
+
+<pre><code>/** 
+ * @file src/debug-errori-warning.cpp
+ * Tipi di errore e di warning.
+ */
+
+#include &lt;iostream&gt;
+
+using namespace std;
+
+class Quadrato
+{
+public:
+    double operator()(double x) { return x * x; }
+};
+
+class C {
+private:
+    float _raggio;
+    float _area;
+public:
+    C (int m) : _raggio(m) {}
+    float getRaggio() { return _raggio; }
+    float area() {
+       Quadrato q;
+       return 3.14159 * q(_raggio);
+    }
+};
+
+int main(int argc, char** argv) 
+{
+    C c(10);    
+    cout &lt;&lt; c.area() &lt;&lt; endl;
+    return 0;
+}
+
+</code></pre>
+
+<p>If you compile this code without enabling <em>warnings</em>, the compiler doesn’t flag anything unusual:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -c -o src/out/esempio
+&gt;
+</code></pre>
+
+<p>But if you add the <code>-Wall</code> parameter to the command line, you discover that the <code>_area</code> parameter of class <code>C</code> is never used:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -Wall -c -o src/out/esempio
+src/cpp/debug-errori-warning.cpp:19:11:
+    warning: private field '_area' is not used
+        [-Wunused-private-field]
+    float _area;
+          ^
+1 warning generated.
+</code></pre>
+
+<p>The code compiles, because this might be an intentional choice, but the system still notifies you of the anomaly, so you can decide whether to keep it or remove it.
+Adding the <code>-Wextra</code> parameter, you get an additional <em>warning</em> because the parameters of the <code>main</code> function are unused:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -Wall -Wextra -o src/out/esempio
+src/cpp/debug-errori-warning.cpp:29:14:
+    warning: unused parameter 'argc'
+        [-Wunused-parameter]
+int main(int argc, char** argv)
+             ^
+src/cpp/debug-errori-warning.cpp:29:27:
+    warning: unused parameter 'argv'
+        [-Wunused-parameter]
+int main(int argc, char** argv)
+                          ^
+src/cpp/debug-errori-warning.cpp:19:11:
+    warning: private field '_area' is not used
+        [-Wunused-private-field]
+    float _area;
+          ^
+3 warnings generated.
+</code></pre>
+
+<p>Besides the ones defined by the <code>-Wall</code> and <code>-Wextra</code> parameters, the compiler offers a long list of <em>warnings</em> that can be enabled individually, depending on the program’s needs.
+For example, the <code>-Wdouble-promotion</code> parameter flags when a <code>float</code> variable is implicitly promoted to <code>double</code>:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -Wall -Wextra \
+    -Wdouble-promotion -c -o src/out/esempio
+src/cpp/debug-errori-warning.cpp:25:27:
+    warning: implicit conversion increases
+        floating-point precision: 'float' to
+      'double' [-Wdouble-promotion]
+       return 3.14159 * q(_raggio);
+                        ~ ^~~~~~~
+src/cpp/debug-errori-warning.cpp:29:14:
+    warning: unused parameter 'argc' [-Wunused-parameter]
+int main(int argc, char** argv)
+             ^
+src/cpp/debug-errori-warning.cpp:29:27:
+    warning: unused parameter 'argv' [-Wunused-parameter]
+int main(int argc, char** argv)
+                          ^
+src/cpp/debug-errori-warning.cpp:19:11:
+    warning: private field '_area' is not used
+        [-Wunused-private-field]
+    float _area;
+          ^
+4 warnings generated.
+</code></pre>
+
+<p>Many programmers ignore <em>warnings</em>, thinking that if the program compiles, there’s nothing left to worry about.
+Don’t make this mistake: no warning should ever be ignored.</p>
+
+<hr id="errori-esecuzione" />
+
+<p>Only a formally flawless program can produce <strong>runtime errors</strong>.
+If it weren’t formally flawless, in fact, it wouldn’t have compiled, and couldn’t have run at all.
+Runtime errors are more dangerous the milder their effects are.
+A bug that crashes the system will certainly be noticed and fixed; a small calculation error, by contrast, might go unnoticed and therefore cause serious problems.
+If you forget the increment operator inside a <code>while</code> loop, you’ll produce an infinite loop, which will certainly catch your attention:</p>
+
+<pre><code>/** 
+ * @file pianeti-while-errore.cpp
+ * Gestione dei Pianeti con errore evidente.
+ */
+ 
+#include &lt;iostream&gt;
+#include "pianeti.h"
+
+using namespace std;
+
+int main(int argc, char** argv)
+{    
+    int    p  = POS_MERCURIO;
+    string nome;
+
+    while (!(nome = nomePianeta(p)).empty()) {
+        cout &lt;&lt; nome &lt;&lt; endl;
+    }
+        
+    return 0;
+}
+
+</code></pre>
+
+<pre><code>&gt; g++ src/cpp/pianeti-while-errore-1.cpp \
+      src/cpp/pianeti-2.0.cpp \
+   -o src/out/esempio
+&gt; src/out/esempio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+Mercurio
+...
+</code></pre>
+
+<p>If instead you increment the variable the wrong way:</p>
+
+<pre><code>/** 
+ * @file pianeti-while-errore.cpp
+ * Gestione dei Pianeti con errore nel ciclo while
+ */
+ 
+#include &lt;iostream&gt;
+#include "pianeti.h"
+
+using namespace std;
+
+int main(int argc, char** argv)
+{    
+    int    p  = POS_MERCURIO;
+    string nome;
+
+    while (!(nome = nomePianeta(++p)).empty()) {
+        cout &lt;&lt; nome &lt;&lt; endl;
+    }
+        
+    return 0;
+}
+
+</code></pre>
+<p>you’ll cause a bug that, in this case, is obvious, since Mercury is missing from the list, but that in a more complex program could be hard to spot:</p>
+
+<pre><code>&gt; g++ src/cpp/pianeti-while-errore-2.cpp \
+      src/cpp/pianeti-2.0.cpp \
+   -o src/out/esempio
+&gt; src/out/esempio
+Venere
+Terra
+Marte
+Giove
+Saturno
+Urano
+Nettuno
+Plutone
+</code></pre>
+
+<p>Runtime errors can be of two kinds: those that show up deterministically, and those that show up randomly.
+The bug in the list of planets will show up every time the program runs, and will therefore be (relatively) easy to spot.
+By contrast, this code will only produce a bug under certain conditions:</p>
+
+<pre><code>/** 
+ * @file debug-errore-stocastico.cpp
+ * Errore che si verifica solo in deterinate circostanze.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+
+using namespace std;
+
+#define ERR_FILE_NONE       -10
+#define ERR_FILE_OPEN       -20
+#define S_ERR_FILE_NONE     "Definire un file di input"
+#define S_ERR_FILE_OPEN     "Impossibile aprire il file di input"
+#define N_CHAR_MIN          300
+#define N_BANNER_MAX        3
+#define PUNTO               '.'
+
+/**
+*   Aggiunge un banner dopo ogni punto, 
+*   ogni N_CHAR_MIN caratteri.
+*/
+int banner_testo(ifstream&amp; testo)
+{
+    int  n_banner = 1;
+    int  letti = 0;
+    char c = 0;
+ 
+    /** 
+    *  Legge tutto il contenuto del file di input
+    */
+    while(testo.good()) {
+        
+        /** 
+        *   Legge il cotenuto del file, 
+        *   carattere per carattere 
+        */
+        if((c = testo.get()) != EOF) {            
+
+            /** Incrementa il numero di caratteri letti */
+            letti++;
+
+            /** Scrive il carattere letto */
+            cout &lt;&lt; c;            
+
+            /** 
+            *   Se il carattere corrente è un punto
+            *   e ha letto almeno N_CHAR_MIN caratteri
+            *   e ha ancora banner da aggiungere, 
+            *   inserisce il codice del banner nel testo. 
+            */
+            if(c == PUNTO 
+            &amp;&amp; letti &gt;= N_CHAR_MIN 
+            &amp;&amp; n_banner &lt;= N_BANNER_MAX) {                
+                cout &lt;&lt; endl 
+                     &lt;&lt; "&lt;div id=\"banner-" 
+                     &lt;&lt; n_banner 
+                     &lt;&lt; "\"&gt;&lt;/div&gt;" 
+                     &lt;&lt; endl;
+                n_banner++;
+                letti = 0;
+            }
+        }       
+    } 
+    
+    cout &lt;&lt; endl;
+    
+    return n_banner;
+} 
+ 
+int main(int argc, char** argv)
+{    
+    ifstream testo;
+    
+    /** Verifica che ci sia il nome del file di input */
+    if(argc &lt; 2) {
+        cerr &lt;&lt; S_ERR_FILE_NONE &lt;&lt; endl;
+        exit(ERR_FILE_NONE);
+    }
+    
+    /** Apre il file in lettura */
+    testo.open(argv[1]);
+    if(!testo.good()) {
+        cerr &lt;&lt; S_ERR_FILE_OPEN &lt;&lt; endl;
+        exit(ERR_FILE_OPEN);
+    }
+
+    /** Elabora il testo */
+    banner_testo(testo);
+    
+    /** Chiude il file */
+    testo.close();
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>The <code>banner_testo</code> function inserts an HTML banner <em>tag</em> into the text of a Web page.
+Banners must be placed after a period, at least <code>N_CHAR_MIN</code> characters apart from one another.
+This code works correctly with some kinds of text:</p>
+
+<blockquote class="output">
+Essere un ossessivo-compulsivo con una leggera tendenza alla paranoia, se ti guadagni da vivere facendo l’esperto di sicurezza, è un bene; le medesime peculiarità caratteriali, al contrario, sono decisamente un male quando alle 21:55 la tua donna di servizio ti scrive: "Ho fatto un molecolare e sono risultata positiva.
+<div id="banner-1"></div>
+Non potrai farti un tampone prima delle 8:00 dell’indomani quindi sai che ti aspettano almeno dieci ore di panico controllato; qualcuna di meno, se riesci ad addormentarti.
+Cerchi di distrarti guardando la televisione, ma l’ennesimo thriller con Jason Statham, intervallato da pubblicità di ansiolitici (un conflitto di interessi che ti riprometti di studiare con più attenzione, se sopravvivi), non fa che aumentare la tua agitazione; così, spegni il televisore, ti prepari una tisana relax, leggi un po’ e poi cerchi di dormire.
+<div id="banner-2"></div>
+ </blockquote>
+
+<p>The code of the <code>banner_testo</code> function, though, is too optimistic, and small variations in the input file, like adding an ellipsis or a URL, <em>could</em> cause bugs in how the banners are placed:</p>
+
+<blockquote class="output">
+Essere un ossessivo-compulsivo con una leggera tendenza alla paranoia, se ti guadagni da vivere facendo l’esperto di sicurezza, è un bene; le medesime peculiarità caratteriali, al contrario, sono decisamente un male quando alle 21:55 la tua donna di servizio ti scrive: "Ho fatto un molecolare e sono risultata positiva".
+<div id="banner-1"></div>
+..
+Non potrai farti un tampone prima delle 8:00 dell’indomani quindi sai che ti aspettano almeno dieci ore di panico controllato. Qualcuna di meno, se riesci ad addormentarti.
+Cerchi di distrarti guardando la televisione, ma l’ennesimo thriller con Jason Statham, intervallato da pubblicità di ansiolitici (un conflitto di interessi che ti riprometti di studiare con più attenzione, se sopravvivi), non fa che aumentare la tua agitazione; così, spegni il televisore, ti prepari una tisana relax, &lt;a href="http://chiplusplus.
+<div id="banner-2"></div>
+org"&gt;leggi un po’&lt;/a&gt; e poi cerchi di dormire.
+</blockquote>
+
+<p>This kind of bug can lie dormant for years before coming to light.
+For example, a bug in evaluating a date around leap years could wait four years before showing up; by then, the code will have already been shipped to users, and whoever wrote it will have forgotten about it, or may even have changed jobs.
+Fixing the bug in the <code>banner_testo</code> function, if caught early, would only require adding a condition to the <code>if</code> instruction, to check whether the period comes right before a line break:</p>
+
+<pre><code>if(c == PUNTO
+&amp;&amp; letti &gt;= N_CHAR_MIN
+&amp;&amp; n_banner &lt;= N_BANNER_MAX
+&amp;&amp; testo.peek() == A_CAPO) {
+    cout &lt;&lt; endl
+         &lt;&lt; "&lt;div id=\"banner-" &lt;&lt; n_banner &lt;&lt; "\"&gt;"
+         &lt;&lt; "&lt;/div&gt;"
+         &lt;&lt; endl;
+    n_banner++;
+    letti = 0;
+}
+</code></pre>
+
+<p>The same fix, made after the program has gone into production, could take days, if not weeks, because the entire release process would have to be repeated:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">task</th>
+      <th style="text-align: center">person-hours</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">setting up a test environment</td>
+      <td style="text-align: center">8</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">debugging</td>
+      <td style="text-align: center">2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">fixing the bug</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">functional testing</td>
+      <td style="text-align: center">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">load testing</td>
+      <td style="text-align: center">8</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">security testing</td>
+      <td style="text-align: center">8</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">acceptance testing</td>
+      <td style="text-align: center">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">release/deployment</td>
+      <td style="text-align: center">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>On top of the cost of these tasks, you obviously have to add the potential damage from the system not working, which could easily amount to a month, if not a year, of the programmer’s salary.
+You need to think about all this when you write code, because you have a responsibility both to your employer and to the users of the system, who might well be your friends or your relatives.
+If you do a poor job for Coca-Cola, you can always think: “Who cares, I drink Pepsi”; not ethical, but at least not self-destructive.
+But if you do a poor job for the State, you’re making life worse for yourself and for everyone you know, and that, besides being unethical, is also stupid.</p>
+
+<hr />
+
+<p><b id="errori-analisi">Analysis bugs</b> are a consequence of the Age-Old Dichotomy — and of the analyst’s inexperience, of course.
+Like all sentient beings, clients too can fall victim to the Age-Old Dichotomy between what they want and what they actually need.
+A client stating their requirements is like a child telling their mother what they want to eat.
+The impulse is real — appetite or hunger, whatever it may be —, but the way they’d like to satisfy it isn’t necessarily the most correct one; in fact, it’s usually a desire induced by Entropy’s cunning servant: Marketing.
+The client has every right to behave this way: each of us does the same thing when we walk into a shop; as an analyst, though, you must not let your judgment be swayed by your client’s desires.
+In this, Analysis is comparable to a mystical discipline: just as the Buddha gives each person he meets what they need,
+<!-- @todo: trovare citazione da Buddismo Tientai --> you must set yourself aside and <em>become</em> the other person, think as they think, feel their needs.
+From what they say, and how they say it, you must be able to tell their needs apart from their desires, making sure the pursuit of the latter doesn’t get in the way of the project’s success.
+Obviously, you’ll also have to make sure <em>your own</em> desires don’t get in the way of, or slow down, the project.
+Just as it influences your client’s opinions, Marketing can influence you too, pushing you to pick a fashionable technology unsuited to the goal you need to reach.
+Be careful that this doesn’t happen.
+Constantly keep an eye on your choices; like the Good Programmer, always think on multiple levels, and check in with other colleagues or your supervisor to make sure you’ve made the right choices.
+Don’t be ashamed of your mistakes: they’re the bricks you’ll build your experience on.
+Also be prepared to have to make mistakes.
+Sooner or later, a client will ask you to make a choice you believe is wrong.
+When that happens, you must first try to convince them of the mistake, explaining why their request isn’t correct.
+If you can’t, repeat your objection, so it’s clear that yours isn’t a guess, but a certainty — but don’t push further than that: both because it could create friction with the person you’re dealing with, and because, in the long run, you might discover it was actually them who was right.
+If you fail to convince the client of their mistake, you’ll have to carry out what they asked, but at the same time you’ll need to make sure the consequences of that choice can’t be attributed to you down the road.
+Since the harmful consequences of an architectural mistake might not surface until months or even years after the analysis phase, don’t just <em>tell</em> the client they’re wrong — write it down, so there’s a record of your objection.
+Your worst enemy, in these cases, will be your own pride.
+Once, Master Canaro told me:</p>
+
+<blockquote>
+  <p>When I was a young <i>project manager</i> and argued with my clients, I always tried to prove to them that I was right; now I just try to do what needs to be done.</p>
+</blockquote>
+
+<hr />
+
+<p>Paraphrasing Iacopone da Todi, a debugger can help you pinpoint the part of your code generating a bug, but you first have to figure out which function to examine, because debugging an entire program’s code, in the cases where that’s even possible, would be long and extremely frustrating.
+The way the code was written will make it more or less easy to check.
+Imagine the problem is the variable <code>x</code>: if your entire codebase has the ability to change its value, you might have to examine every single function to check it isn’t misusing it.
+By contrast, if the variable <code>x</code> can only be modified in a few places in the code, your search will be more targeted and quicker.
+This is why <a href="/en/iterative-instructions#isolamento-funzionale" class="xref">in the lesson on iterative functions</a> we separated data processing from user-interface handling: because this way, depending on the kind of bug that shows up — a calculation bug or an output bug —, we’ll know which function to go look at.
+Some features of C++, like strong typing and encapsulation, can help you in this regard, but they won’t always be enough to pinpoint exactly where your code is doing something wrong.
+In these cases, you’ll have to proceed by trial and error, breaking your program down into smaller and smaller pieces, so as to reduce the number of lines of code you need to check.
+A quick way to do this is to comment out all the calls in the <code>main</code> function, then restore them one at a time, until you find the one that contains the bug:</p>
+
+<pre><code>int main(int argc, char** argv)
+{    
+    ifstream testo;        
+
+    verifica_parametri(argc, argv);
+    apri_file(testo, argv[2]);            
+/*
+    elabora_file(testo);
+    chiudi_file(testo);
+*/    
+    return 0;
+}
+</code></pre>
+
+<p>If the <em>function that isn’t working</em> is too complex to debug directly, you’ll repeat the process, commenting out its own calls until the amount of code left to examine is reasonably small.
+Another way you can make it easier to track down bugs in your code is to add messages that let you know what operation the program is performing:</p>
+
+<pre><code>int apri_file(ifstream&amp; testo, const char* path)
+{
+#ifdef __LOG__    
+    log(LOG_DEBUG, 2, "Apro il file: ",  path);
+#endif
+
+    testo.open(path);
+    return ERR_NONE;
+}
+</code></pre>
+
+<p>The <code>log</code> function is the one we saw in the <a href="/en/functions#parametri-variabili" class="xref">lesson on functions with variable parameters</a>, and it lets us know the name of the file being opened while the program runs.
+These tracing functions are useful during debugging, but they slow down the program’s execution, because they require access to an external device, whether that’s the computer screen or a file on the hard drive.
+For this reason, it’s good practice to be able to disable them in the final version of the program.
+In this case, we did so by wrapping the call in a precompiler <code>ifdef</code> directive, so that it’s only included in the code if the <code>__LOG__</code> constant is defined.
+Since this is a constant that’s never used by the code itself, but only serves to change how the program is compiled, we can define <code>__LOG__</code> directly on the compiler’s command line:</p>
+
+<pre><code>&gt; g++ sorgente.cpp -D __LOG__ -o eseguibile
+</code></pre>
+
+<hr />
+
+<p>When the bug shows up — usually a few minutes before you have to stop working to go out or do something else —, and you have to identify its cause, the first problem you’ll face is being able to reproduce the conditions under which it occurs.
+As we saw a moment ago, if the bug depends on the input data, to identify the problem, you’ll need to figure out which data triggers it; sometimes it’ll be easy, but in other cases it can turn out to be extremely complex.
+Several years ago, Master Canaro had to register on a website that also asked for his date of birth — which, as you know, was February 29, 1964.
+<!-- Si trattava di Paypal e questo non è il solo errore che ho rilevato -->
+The new-user registration form gave him no trouble, but the edit-profile form, evidently written by a less experienced programmer, wouldn’t let him update his details, because, according to it, his date of birth was invalid.
+This means the system used two separate functions to validate the date of birth, one in the registration function and another in the edit function, and that at least the one used in the edit function wasn’t a standard function, but <em>ad-hoc</em> code.
+Both of these choices are mistakes: a single given action on the data should always correspond to a single function.
+Performing the same operation with separate pieces of code is wrong; both because it increases the odds of making a mistake, and because it slows down how quickly a bug can be identified during debugging.
+It’s also wrong to rewrite functions that already exist: D. J. Bernstein did it, with the I/O functions of <a href="http://cr.yp.to/djb.html" target="qmail">qmail</a>, but that was a deliberate architectural choice, because he wanted functions that were better and safer than the standard library’s.
+<!--- e comunque, fare l'analisi del codice di qmail è un delirio.. -->
+On top of these two programming mistakes — unacceptable, on a site that handles financial transactions —, there’s a deep carelessness in the code’s debugging phase, because the correct handling of edge cases, like leap years, must always be checked.
+When you test how a program works, you can’t just check that it does what it’s supposed to do — you also have to make sure it doesn’t do what it’s not supposed to do.
+In particular, you need to check that it behaves correctly if:</p>
+
+<ul>
+  <li>you give it correct input data;</li>
+  <li>you give it no data at all;</li>
+  <li>you give it incorrect data;</li>
+  <li>you give it excess data.</li>
+</ul>
+
+<p>So, if the input is a date, you’ll need to check that your system correctly handles both the value <code>29-02-1964</code> and the value <code>29-02-1965</code>; if the input is a text string, you’ll need to make sure the system correctly handles the case where it receives more characters than expected, and that it strips any leading or trailing whitespace, unless that’s an actual functional requirement.</p>
+
+<hr />
+
+<p>In this program, one small thing wasn’t done the way it should have been, and a bug resulted from it:</p>
+
+<pre><code>/** 
+ * @file src/debug-gestione-errori.cpp
+ * Modalità di gestione degli errori.
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;exception&gt;
+
+using namespace std;
+
+/** Codici e stringhe di errrore */
+#define LOG_DEBUG         1
+#define LOG_AVVISO        2
+#define LOG_ERRORE        3
+#define ERR_NONE          0
+#define ERR_FILE_NONE   -10
+#define ERR_FILE_OPEN   -20
+#define ERR_FILE_READ   -30
+#define S_DEBUG         "DEBUG"
+#define S_AVVISO        "AVVISO"
+#define S_ERRORE        "ERRORE"
+#define S_ERR_FILE_NONE "Definire un file di input"
+#define S_ERR_FILE_OPEN "Impossibile aprire il file di input"
+#define S_ERR_FILE_READ "Impossibile leggere il file di input"
+
+/**
+*   Definisce una classe derivata da exception
+*   per la gestione degli errori.
+*/
+class Eccezione: public exception
+{
+private:
+    int         _codice;
+    const char* _errore;
+public:
+
+    /** Costruttore */
+    Eccezione(int codice, const char* errore) 
+    : _codice(codice), _errore(errore) {        
+    }
+    
+    /** Funzione virtuale pura: va ridefinita */
+    virtual const char* what() const throw() {
+        return _errore;
+    }
+
+    /** Funzioni di interfaccia */
+    int getCodice() { return _codice; }
+    const char* getErrore() { return _errore; }
+
+    /** Ridefinizione dell'operatore di output */
+    friend ostream&amp; operator&lt;&lt; (ostream&amp; os, Eccezione e){
+        os &lt;&lt; e._codice &lt;&lt; ": " &lt;&lt; e._errore &lt;&lt; endl;
+        return os;
+    }
+};
+
+/** Funzione di gestione degli errori */
+void errore(int codice, bool exit = true)
+{
+    const char* errore = NULL;
+
+    /** 
+    *   Identifica la stringa di errore corrispondente 
+    *   al codice di errore ricevuto.
+    */
+    switch(codice) {
+        case ERR_FILE_NONE: errore = S_ERR_FILE_NONE; break;
+        case ERR_FILE_OPEN: errore = S_ERR_FILE_OPEN; break;
+        case ERR_FILE_READ: errore = S_ERR_FILE_READ; break;
+    }
+
+    /** Se ne trova una, lancia un'eccezione */
+    if(errore != NULL){
+        Eccezione e(codice, errore);
+        throw e;
+    }
+}
+
+/** 
+*   Questa è la funzione di log che abbiamo visto 
+*   nella lezione sulle funzioni.
+*/
+void log(int livello, int n_parametri, ...)
+{        
+    /** Definisce il livello del messaggio */
+    const char* s_livello; 
+    switch(livello) {
+        case LOG_DEBUG:  s_livello = S_DEBUG ; break;
+        case LOG_AVVISO: s_livello = S_AVVISO; break;
+        default:         s_livello = S_ERRORE; break;
+    }
+    
+    /** Scrive il testo del messaggio */
+    cerr &lt;&lt; '[' &lt;&lt; s_livello &lt;&lt; "] ";
+
+    /** Scrive i parametri della lista */
+    va_list lista_parametri;
+    va_start(lista_parametri, n_parametri);
+    for(int p = 1; p &lt;= n_parametri; p++) {        
+        cerr &lt;&lt; va_arg(lista_parametri, char*) ;        
+    }    
+    va_end(lista_parametri);
+
+    cerr &lt;&lt; endl;
+}
+
+/** Verifica la presenza dei parametri di avvio */
+int verifica_parametri(int argc, char** argv)
+{
+    return (argc &lt; 2) ? ERR_FILE_NONE : ERR_NONE;
+} 
+
+/** Apre il file in lettura */
+int apri_file(ifstream&amp; testo, const char* path)
+{
+/**
+*   Questo codice viene compilato solo se
+*   è definita la macro __LOG__
+*/    
+#ifdef __LOG__    
+    log(LOG_DEBUG, 2, "Apro il file: ",  path);
+#endif
+
+    testo.open(path);
+    return ERR_NONE;
+} 
+
+/** Legge il file di input e lo scrive a video */
+int elabora_file(ifstream&amp; testo)
+{
+    int  letti = 0;
+    char c = 0;
+    while ((c = testo.get()) != EOF) {            
+        letti++;
+        cout &lt;&lt; c;            
+    } 
+    return letti;
+} 
+
+/** Chiude il file di input */
+void chiudi_file(ifstream&amp; testo)
+{
+    testo.close();
+} 
+ 
+int main(int argc, char** argv)
+{    
+    ifstream testo;
+    
+    try {
+        
+        int esito = ERR_NONE;
+        
+        /** 
+        *   Verifica che ci sia il nome del file di input 
+        *   e gestisce eventuali errori.
+        */
+        esito = verifica_parametri(argc, argv);
+        errore(esito);
+        
+        /** 
+        *   Imposta la exception mask dello stream per fare
+        *   sì che un errore di I/O generi un'eccezione,
+        *   poi apre il file in lettura.
+        *   Usa un blocco try/catch per intercettare una
+        *   eventuale eccezione e gestirla in maniera
+        *   omogenea al resto del codice.
+        *   Non può aggiungere una catch in fondo perché
+        *   l'eccezione non dà informazioni sulla causa 
+        *   dell'errore che l'ha generata.
+        */
+        try {
+            testo.exceptions ( std::ifstream::badbit 
+                             | std::ifstream::failbit );
+            esito = apri_file(testo, argv[2]);            
+        } catch(ifstream::failure e) {
+            errore(ERR_FILE_OPEN);            
+        }
+        
+        /** 
+        *   Elabora il testo e gestisce eventuali errori.
+        *   Dato che la funzione torna il numero di 
+        *   caratteri letti, deve chiamare errore solo
+        *   se non ce ne sono.
+        */
+        testo.exceptions ( std::ifstream::goodbit);
+        if(elabora_file(testo) == 0) {
+            errore(ERR_FILE_READ);            
+        }
+        
+        
+        /** Chiude il file di input */
+        chiudi_file(testo);
+    
+    } catch (Eccezione e) {
+        cerr &lt;&lt; e;
+        exit(e.getCodice());
+    }
+    
+    return 0;
+}
+
+</code></pre>
+
+<p>In keeping with what we said a moment ago, to check this program’s behavior we’ll need to run at least four tests:</p>
+
+<pre><code># dati corretti
+src/out/esempio src/cpp/debug-testo-1.txt
+
+# nessun dato
+src/out/esempio
+
+# dati errati
+src/out/esempio src/cpp/file-inesistente
+
+# dati in eccesso
+src/out/esempio src/cpp/debug-testo-1.txt abcdefghilmnopqrstuvz  
+</code></pre>
+
+<p>We then need to check that every error condition is handled correctly.
+In our case, the expected errors are:</p>
+
+<pre><code>#define ERR_FILE_NONE   -10
+#define ERR_FILE_OPEN   -20
+#define ERR_FILE_READ   -30
+</code></pre>
+
+<p>The first two errors are checked by the standard tests; the third case we can check by passing the program an empty file:</p>
+
+<pre><code>src/out/esempio src/cpp/debug-vuoto.txt
+</code></pre>
+
+<p>Unfortunately, though, if you compile and run this code with correct data, you get an error, even though the file exists:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-gestione-errori.cpp -o src/out/esempio
+&gt; src/out/esempio src/cpp/debug-testo-1.txt               
+-20: Impossibile aprire il file di input
+&gt; ls src/cpp/debug-testo-1.txt
+src/cpp/debug-testo-1.txt
+</code></pre>
+
+<p>If you recompile the program, defining the <code>__LOG__</code> macro to check which file the program is opening:</p>
+
+<pre><code>#ifdef __LOG__    
+    log(LOG_DEBUG, 2, "Apro il file: ",  path);
+#endif
+</code></pre>
+
+<p>when you run the program, you get a new error:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio
+&gt; src/out/esempio src/cpp/debug-testo-1.txt                           
+[DEBUG] Apro il file: zsh: segmentation fault  src/out/esempio src/cpp/debug-testo-1.txt
+</code></pre>
+
+<p>This isn’t the behavior the function was meant to have, but it still lets us understand what the problem might be.
+The <code>segmentation fault</code> error means the program is trying to access an area of memory that doesn’t belong to it.
+The memory area in question is the one associated with the <code>path</code> parameter, which was in turn initialized with the value of the variable <code>argv[2]</code>:</p>
+
+<pre><code>esito = apri_file(testo, argv[2]);
+</code></pre>
+
+<p>The <em>bug</em> is the index <code>2</code> in the <code>argv</code> array.
+As you’ve probably noticed, the code of this program is a reworking of the code from the <a href="/en/stream.html" class="xref">lesson on streams</a>, which had to handle three command-line parameters.
+This time, though, the program’s call string only has two values: the program’s own path, and the input file’s name:</p>
+
+<pre><code>&gt; src/out/esempio src/cpp/debug-testo-1.txt
+</code></pre>
+
+<p>Reusing code is a good thing; forgetting to update the value of the <code>argv</code> array’s index is a bad thing, because the memory address pointed to by <code>argv[2]</code> no longer belongs to the program: we can’t use it as a path for an <code>open</code> function, and we can’t print it to the screen.
+If we fix the index, the program handles every usage condition correctly:</p>
+
+<pre><code>&gt; g++ src/cpp/debug-gestione-errori.cpp \
+    -D __LOG__ \
+    -o src/out/esempio
+&gt; src/out/esempio
+-10: Definire un file di input
+
+&gt; src/out/esempio src/cpp/file-inesistente
+[DEBUG] Apro il file: src/cpp/file-inesistente
+-20: Impossibile aprire il file di input
+
+&gt; src/out/esempio src/cpp/debug-vuoto.txt
+[DEBUG] Apro il file: src/cpp/debug-vuoto.txt
+-30: Impossibile leggere il file di input
+
+&gt; src/out/esempio src/cpp/debug-testo-1.txt
+[DEBUG] Apro il file: src/cpp/debug-testo-1.txt
+Essere un ossessivo-compulsivo con una leggera tendenza ...
+</code></pre>
+
+<p>This careless mistake was made easier by using a hardcoded number to define the array’s index.
+Writing a number or a string directly into the code is certainly quicker and more tempting than defining constants for the precompiler:</p>
+
+<pre><code>#define PARAM_PATH 1
+...
+esito = apri_file(testo, argv[PARAM_PATH]);
+</code></pre>
+
+<p>but, in the long run, it’s counterproductive, because it makes the code harder to read and to modify.
+<em>Harder to read</em>, because constants help you understand what the code does.
+If you read the instruction:</p>
+
+<pre><code>return (argc &lt; 2) ? ERR_FILE_NONE : ERR_NONE;
+</code></pre>
+
+<p>you can understand what it does even without knowing the code.
+If instead you read the same instruction, but without the constants:</p>
+
+<pre><code>return (argc &lt; 2) ? -10 : 0;
+</code></pre>
+
+<p>to understand what it does you’ll have to go read the program’s documentation, assuming one exists.
+<em>Harder to modify</em>, because using constants instead of <em>hardcoded</em> values lets you change a constant’s value by editing a single spot:</p>
+
+<pre><code>#define ERR_NONE  1
+</code></pre>
+
+<p>If we hadn’t used a constant, to get the same result we would have had to change three separate instructions:</p>
+
+<pre><code>return (argc &lt; 2) ? ERR_FILE_NONE : ERR_NONE;
+
+...
+
+return ERR_NONE;
+
+...
+
+int esito = ERR_NONE;
+</code></pre>
+
+<p>In a program more complex than our example, there would certainly have been more changes, and they’d have been harder to identify; moreover, if we forgot even one of them (likely), we would have introduced a bug into the system.
+<em>Hardcoded</em> constants can only be used in the first phase of a program’s development, when you’re not yet sure the path you’ve chosen is the right one.
+At this stage it’s acceptable to run tests by putting values directly into the code, but once the algorithm is reasonably stable, you’ll need to convert every value into a constant.</p>
+
+<hr id="dottrina" />
+
+<blockquote>
+  <p>A system is a house that, as soon as it is built and furnished, needs (subject as it is to the corroding action of the elements) a more or less vigorous but constant work of maintenance, and that at a certain point it is no longer worth restoring and propping up, and it must be torn down and rebuilt from the foundations. But with this crucial difference: that, in the work of thought, the house is perpetually new and perpetually sustained by the old one, which, as if by magic, endures within it.<a class="nota" href="/en/notes#fn-croce" id="croce">1</a></p>
+</blockquote>
+
+<p>Sooner or later, your life will crash, just like software.
+It doesn’t matter how careful you’ve been, or what your <em>Karma</em> is: at some point the ground under your feet will start to give way, and you’ll fall down the mountain you were climbing, finding yourself right back at the starting point.
+What you do in that moment will decide the rest of your life, and will show you what kind of man you are — or woman, since these things don’t only happen to men.
+Start preparing for that moment now, because, when it comes (<em>when</em>, not <em>if</em>), you’ll probably be alone, and making decisions will be very hard, because you’ll have lost all faith in yourself.
+If you break a leg, or an arm, your brain can tell you whether it’s healing or getting worse, but if you hit your head, it isn’t easy to tell how you’re doing, because the organ being examined and the organ doing the examining are one and the same.
+<!-- @todo - decidere se aggiungere aneddoto su Maestro Canaro e solitario -->
+In the same way, if you don’t trust yourself, it’s hard to tell whether the choices you’re making are the right ones.
+Fear or caution might push you away from the right choice, so, first of all, you’ll need to <em>debug</em> your own life, to understand whether, and to what extent, you should blame yourself for what happened; once you’ve done that, you’ll need to identify your mistakes and find a way not to repeat them.
+The most common approach is to look back and try to figure out what your own faults have been, treating them as isolated events within an existence made up mostly of correct choices.
+But since each of us tends — more or less unconsciously — to look for causes outside ourselves for our own misfortunes, inventing conspiracies or shifting our own responsibilities onto others, the best thing to do, in these cases, is to adopt the opposite attitude, and start from the assumption that <em>everything</em> bad that has happened in your life is your own fault, and only then identify the cases where what happened, in fact, didn’t depend on you.
+This <em>bottom-down</em><a class="nota" href="/en/notes#fn-bottom-down" id="bottom-down">2</a> approach has two merits: the first is that, by analyzing past events, you might discover that some of the blame you’d assigned yourself wasn’t real; the second is that it will be harder to lie to yourself.
+Each of us bears some share of responsibility for what happens to us, even for events we didn’t directly cause.
+Assuming, from the outset, the blame for all the bad that has happened to us makes it harder to lie to ourselves, and lets us identify all our faults, however small.
+Be careful, though: you shouldn’t think of your faults the way a thirteenth-century inquisitor would, but as <em>bugs</em> in the program of your life.
+Some will generate errors, others only <em>warnings</em>, and your duty is to identify as many of them as possible, and then try to fix them, to improve how the system runs.</p>
+
+<blockquote>
+  <p>Change begins when you set out on a new path, even if that path is nothing more than a track left by a thirsty goat that found a spring.<a class="nota" href="/en/notes#fn-deen" id="deen">3</a></p>
+</blockquote>
+
+<p>Unlike with software, it isn’t always possible to fix the <em>bugs</em> of our existence.
+You can change a flawed aspect of your character, but that doesn’t mean it’s possible to undo the damage it caused to yourself or to others.
+To draw a parallel with software debugging, character flaws are compile errors, while the effects of our mistakes are runtime errors; the former we can fix, the latter, no: what’s done is done.
+What we can and must do, though, is <a id="pentimento" href="/en/conditional-instructions#pentimento" class="xref">sincerely repent them</a>, that is, acknowledge them as mistakes, so as to avoid repeating them in future cycles of existence.
+Even if we can’t undo the effects of a mistake, we can still ask forgiveness from those we’ve harmed.
+Saying sorry won’t be enough: you say sorry when what you did wasn’t up to you, like when someone bumps into you and you spill your wine on your neighbor’s clothes; but if you threw the wine at them on purpose, you’ll need to ask <em>forgiveness</em>, try as much as possible to make up for what you did, and never do it again, either to them or to anyone else.
+Don’t underestimate the healing power of forgiveness, even though there will be cases where you won’t get it.
+While it’s true that you can’t change the past for someone you’ve hurt, it’s just as true that you can try to make up for the harm done by making their present or future better.
+The people we hurt are often the ones we’re closest to; letting them know we haven’t forgotten them, and that what happened pains us, can help mend wounds — on both sides.</p>
+
+<hr id="come-capire" />
+
+<p>When you look back on what’s happened to you in the past, like a good analyst, you’ll need to try to put yourself in the shoes of the people you dealt with, and understand their reasons, beyond any grudges or grievances.
+To do this, you’ll need to keep in mind a few factors that shape all of our behavior.
+The first, obviously, is the influence of the Age-Old Dichotomy, which, through its lackey Marketing, pushes people to satisfy their desires instead of their needs, creating flawed frameworks of values and leading them to forget that old age and death await everyone.
+The second factor to consider is human nature; remember:</p>
+
+<blockquote>
+  <p>Never attribute to malice what can be explained by stupidity.</p>
+</blockquote>
+
+<p>Or, as De Santillana put it:</p>
+
+<blockquote>
+  <p>There is a good rule for historians that I have always kept in mind while working on my <i>Galileo</i>: never underestimate the power of foolishness and senselessness in human affairs.<a class="nota" href="/en/notes#fn-stoltezza" id="stoltezza">4</a></p>
+</blockquote>
+
+<p>To settle matters concerning relationships between couples, though, the safest approach is the anthropological one.
+As Master Canaro used to say:</p>
+
+<blockquote>
+  <p>A hundred years of feminism cannot beat a hundred thousand years of evolution.</p>
+</blockquote>
+
+<p>According to him, any anomalous behavior within a couple can be explained by keeping three principles in mind:</p>
+
+<ol>
+  <li>women are talking incubators;<br /></li>
+  <li>men are sperm dispensers;<br /></li>
+  <li>every excess conceals an excess of the opposite kind, of equal size.</li>
+</ol>
+
+<p>Paraphrasing that godless Dawkins, we are the <em>hard drive</em> of our genes, the mass storage that guarantees their persistence.
+Our software can vary, but the firmware<a class="nota" href="/en/notes#fn-firmware" id="firmware">5</a> that defines our low-level behavior has stayed unchanged for thousands of years, and drives us to do what we were created for, that is, to reproduce.
+Neither the cultural superstructures we’ve invented, nor the idols we prostrate ourselves before, nor even the Age-Old Dichotomy, can modify our ROM.
+Ignoring, or worse, rebelling against this state of affairs is the first step toward ruin, unhappiness, or both.</p>
+
+<hr id="fine" />
+
+<p>There: that’s everything.
+Remember, though: what I’ve taught you is not a destination, but a starting point.
+The end of the path we’ve walked together coincides with the beginning of the path you’ll walk on your own.
+From this moment on, it’s your duty to spread the ideas I’ve passed on to you, and, at the same time, to constantly put them to the test, so as to amend the many mistakes I’ve surely made, just as Master Canaro did before me.
+Just as the ancient Christians were forbidden from worshipping idols, I forbid you from worshipping words.
+Write your book, if you wish to, but don’t let it be a foolish book; make it so it can easily be corrected, if needed, so that what it states is always the closest to the truth you can reach, because the object of your efforts must always be the truth, not tradition.
+We live mostly on dry land, and so we consider that to be normal. But if you spend a long stretch of time on a ship, or on an island, you come to understand that normality is water, and that land is only an exception.
+In the same way, we place great importance on the cycle of birth, reproduction, and death that we call “life”, and see in it the ultimate purpose of the Universe, forgetting that life is just a particular case of existence, and that a universe made of rocks would still be a marvel.
+Every form of communal life, in order to survive, requires the legitimization of certain biological follies.
+Respecting these follies, being unnatural, requires setting up a higher level of constraint, that is, a body of formal rules even further removed from the biological behavior of living beings than the follies themselves.
+Over time, many of these conventions, born out of contingent needs, inevitably end up clashing with the common sense of justice, and have to be either abolished or amended — only every amendment or adjustment, instead of making them more “just”, pushes them further away from their original purpose, and leaves them open to mistaken interpretations, or even ones opposite to what their original aim was.
+Saint Augustine said the same thing, but much better than I’m doing now.
+Clearly, he was sober.</p>
+
+<!--
+importanza dell'impaginazione dei nomi: OPEN, CLOSE, READ / INPUT, DELETE, UPDATE
+-->
+
+            </section>
+        
+        </main>
+        <footer>
+    <nav>
+        
+        
+        <a href="/en/stream" 
+           title="Go to: Streams" 
+           class="left">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        
+        
+        <a href="#top" 
+           title="Back to top" >
+           <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        
+        <a href="/en/epilogue" 
+           title="Go to: Epilogue" 
+           class="right" >
+                <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+                
+
+    </nav>
+
+</footer>
+
+    </div>
+  </body>
+</html>

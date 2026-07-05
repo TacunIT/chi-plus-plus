@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+
+
+
+
+<head>
+    <title>C++ program structure |  C'hi++
+</title>
+    <meta charset="utf-8" />
+    <link      rel="canonical"          href="http://localhost:4000/en/program-structure" />
+    <link      rel=icon                 href="http://localhost:4000/assets/img/favicon.ico" type=image/x-icon />
+    <link      rel="stylesheet"         href="http://localhost:4000/assets/fa/css/all.css" />
+    <link      rel="stylesheet"         href="http://localhost:4000/assets/css/styles.css" />        
+    <meta     name="viewport"        content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/og-img/indice.jpg" />
+    <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
+    <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:url"          content="http://localhost:4000/en/program-structure" />
+    <meta property="og:type"         content="website" />
+    <meta property="og:title"        content="C++ program structure" />
+    <meta property="og:description"  content="The main function of C'hi++ - The forces that move the Universe: Gravity, Entropy, and the Age-Old Dichotomy - Who created the Universe - What that godless Dawkins has to say." />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image"        content="http://localhost:4000/assets/img/og-img/struttura-dei-programmi.jpg" />
+    <meta property="fb:app_id"       content="" /><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-159394431-1');
+</script></head>
+<body class="manuale capitolo ">
+    <div class="page capitolo">
+        <header><nav class="menu-top">
+    <a
+        title="Go to: Data types"
+        
+        href="/en/data-types"
+        class="left freccia"
+        
+    >
+        <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="/"
+        class="center"
+        title="Back to homepage"
+    >
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        title="Go to the table of contents"
+        href="/en/indice"
+    >
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+       
+    <a
+        
+        href="/it/struttura-dei-programmi"
+        
+        class="center"
+        title="Leggi in italiano"
+    >
+        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="https://github.com/TacunIT/chi-plus-plus"
+        target="github"
+        class="center"
+        title="Go to the GitHub project"
+    >
+        <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        title="Go to: Operators"
+        
+        href="/en/operators"
+        
+        class="right freccia"
+    >
+        <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+    </a>
+</nav>
+</header>
+        <main class="corpo pubblicato ">
+        
+            <h1><a href="#dottrina">
+                C++ program structure</a>
+            </h1>
+            <blockquote class="motto">Wer den Computer will verstehen,<br />Muss in Computers Lande gehen</blockquote>
+            <section class="testo">
+                <p>Syntactic freedom and the conciseness of its constructs are C++’s main distinguishing feature.</p>
+
+<p>C++, like all languages, has its own syntax, which defines the elements of the code and how they’re used within programs.
+In the examples we’ve seen so far, I’ve used some of these elements without explaining precisely what their role is, because I wanted to give you an overall picture of the language’s features.
+A bit like when you arrive at a party and get introduced to the other guests one after another, and by the end the only thing you remember is the ladies’ necklines.
+Now, though, we need to take a step back and examine these elements one by one, starting with what is the main element of every C++ program: the <code>main</code> function.</p>
+
+<pre><code>int main(int argc, char** argv)
+{    
+    return 0;
+}
+</code></pre>
+
+<p>The one above is the smallest C++ program you can write.
+It’s also the most useless one, though, because it doesn’t do anything.
+The example below is just as useless, but a bit more complex:</p>
+
+<pre><code>/** 
+ * @file src/struttura-hello-world.cpp
+ * Esempio minimo di programma C++.
+ */
+ 
+#include &lt;iostream&gt;
+
+int main(int argc, char** argv)
+{    
+    std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+    return 0;
+}
+
+</code></pre>
+
+<p>Its output, as you’ve probably guessed, is:</p>
+
+<pre><code>% g++ struttura-hello-world.cpp -o ../out/esempio
+% ../out/esempio
+Hello, World!
+</code></pre>
+
+<p>The first line of code:</p>
+
+<pre><code>#include &lt;iostream&gt;
+</code></pre>
+
+<p>isn’t an instruction, but a directive for the preprocessor.
+The preprocessor is a program that processes the code and prepares it for compilation; we’ll talk about it
+<a href="/en/preprocessor" class="xref">later on</a>.
+For now, all you need to know is that this instruction causes the file <code>iostream.h</code> to be included in the code, which contains, among other things, the declaration of the <code>cout</code> <em>stream</em>, used in the program’s only instruction.
+The second line of code:</p>
+
+<pre><code>int main(int argc, char** argv)
+</code></pre>
+
+<p>defines the <code>main</code> function, specifying that it will have <code>int</code> as its return value and two parameters: an integer and a pointer to pointers to <code>char</code>.
+These values are used to handle the parameters passed on the command line: the integer <code>argc</code> (short for <em>argument count</em>) specifies the number of parameters present in the call, including the program’s own name, while the parameter <code>argv</code> (<em>argument vector</em>) is an array of pointers to all the strings present on the command line.
+The body of the function is enclosed in a pair of curly braces <code>{}</code>.
+The instruction:</p>
+
+<pre><code>std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+</code></pre>
+
+<p>writes the string <code>Hello World!</code> to the <code>std::cout</code> <em>stream</em> (<em>standard character output</em>), which usually corresponds to the computer’s screen.
+The <code>&lt;&lt;</code> operator, in this case, tells the system to send whatever is on its right to output, and returns a <em>reference</em> to the output stream, so that it can be chained on the same line of code, which is a more efficient and elegant form of:</p>
+
+<pre><code>std::cout &lt;&lt; "Hello, World!" ;
+std::cout &lt;&lt; std::endl;
+</code></pre>
+
+<p>Finally, the instruction:</p>
+
+<pre><code>return 0;
+</code></pre>
+
+<p>returns the value <code>0</code> to the calling program (usually, the computer’s <em>shell</em>) to indicate that no errors occurred during processing.
+The following program puts into practice the concepts we’ve seen so far:</p>
+
+<pre><code>#include &lt;iostream&gt;
+
+#define NO_ERRORI     0
+#define NO_PARAMETRI  1
+
+int main(int argc, char** argv)
+{    
+    int errore = NO_ERRORI;
+    
+    /** Se c'è solo il nome del programma, errore */
+    if(argc &lt; 2) {
+        std::cerr &lt;&lt; "Specificare un parametro!" &lt;&lt; std::endl;
+        return NO_PARAMETRI;
+    }
+
+    /** Stampa tutti i parametri ricevuti */
+    for(int p=0; p &lt; argc; p++) {
+        std::cout &lt;&lt; *argv++ &lt;&lt; std::endl;        
+    }
+
+    return 0;
+}
+
+</code></pre>
+
+<p>As I’ve told you, C++ is a <em>compiled</em> language, so the code, in order to be run, must be processed by the compiler with the <em>shell</em> command:</p>
+
+<pre><code>% g++ struttura-argc-argv.cpp -o src/out/esempio
+</code></pre>
+
+<p>The <code>-o</code> parameter lets you specify the name of the output file, in this case: <code>src/out/esempio</code>.
+If you don’t set this value, the compiler generates a file named <code>a.out</code>.
+The <em>shell</em> command:</p>
+
+<pre><code>% src/out/esempio; echo $?                                  
+</code></pre>
+
+<p>is made up of two instructions, separated by the <code>;</code> character.
+The first instruction runs the compiled file; the second prints its return value to the screen.
+If we run the program with no parameters, we get a message and error code <code>1</code>:</p>
+
+<pre><code>Specificare un parametro!
+1
+</code></pre>
+
+<p>If instead we run the program passing it some parameters, we get this:</p>
+
+<pre><code>% src/out/esempio un due tre; echo $?
+src/out/esempio
+un
+due
+tre
+0
+</code></pre>
+
+<hr id="coupling" />
+
+<p>No program worthy of the name has only the <code>main</code> function; it splits its work across a series of functions, each carrying out a precise, well-defined task.
+In a well-written program, functions display two characteristics, which English speakers and Anglophiles call: <em>low coupling</em> and <em>high cohesion</em>.
+By the <em>coupling</em> of two functions, we mean the amount of information function <em>A</em> needs to have about function <em>B</em> in order to use it.
+Each function expects to receive a well-defined set of parameters: the <code>raddoppiaStipendio</code> function, which we saw earlier, expects to receive a single parameter, of type <code>long</code>:</p>
+
+<pre><code>long raddoppiaStipendio(long stipendio);
+</code></pre>
+
+<p>while a hypothetical <code>scorporaIVA</code> function might require two: the salary amount and the VAT rate:</p>
+
+<pre><code>float scorporaIVA(long stipendio, float aliquota);
+</code></pre>
+
+<p>In both of these cases, all a third function needs, to be able to call <code>raddoppiaStipendio</code> or <code>scorporaIVA</code>, is their <em>interface</em>, that is, the number, type, and order of the parameters to pass.
+Now imagine that a clumsy programmer has written the function <code>facciQualcosa</code>, which can carry out several distinct actions depending on the parameters it receives:</p>
+
+<pre><code>float facciQualcosa(long stipendio, int azione, float aliquota = 0)
+{
+    float valore = 0;
+    /** Differenzia l'azione in base al valore di azione */
+    if(azione == 1) {
+        valore = stipendio * 2;
+    } else if(azione == 2) {
+        valore = stipendio / ((100 + aliquota) / 100);
+    }
+    return valore;
+}
+</code></pre>
+
+<p>To use this function, we not only have to know its interface, we also have to know which actions correspond to the various values of the <code>azione</code> parameter.
+This is madness, <em>meshuggah</em>, because if one day the author modified it and decided that the value <code>1</code> of the <code>azione</code> parameter now triggers VAT deduction while the value <code>2</code> triggers doubling the salary, we would also have to modify <em>every</em> function that called it, to adapt them to the new rules.
+Not only would we waste time, but if we forgot to update one or more calls we would end up with a program that behaves incorrectly.
+<em>Coupling</em> <!-- uso il termine inglese per evitare anfibologie con l'attività sessuale.. --> is like cholesterol: the lower, the better; so, to avoid mistakes, we need to reduce it by creating an <code>enum</code> to hold the possible values of the <code>azione</code> parameter:</p>
+
+<pre><code>enum Azione { raddoppia, scorpora };
+</code></pre>
+
+<p>As often happens, a single line of well-written code lets us save time and get more robust code, because the effect of the <code>azione</code> parameter, this way, will be entirely independent of its numeric value:</p>
+
+<!-- @todo: verificare il codice -->
+<pre><code>enum Azione { raddoppia, scorpora };
+
+float facciQualcosa(long stipendio, Azione azione, float aliquota = 0)
+{
+    float valore = 0;
+    /** Agisce in base all'etichetta, non al valore */
+    if(azione == raddoppia) {
+        valore = stipendio * 2;
+    } else if(azione == scorpora) {
+        valore = stipendio / ((100 + aliquota) / 100);
+    }    
+    return valore;
+}
+</code></pre>
+
+<p>The <code>facciQualcosa</code> function has another design flaw too, besides high coupling: it lacks internal cohesion.
+In a well-written program, each function should have only one… function:</p>
+
+<!-- @todo: verificare il codice -->
+<pre><code>inline long raddoppiaStipendio(long stipendio)
+{
+    return stipendio * 2;
+}
+
+inline float scorporaIVA(long stipendio, float aliquota)
+{
+    return (stipendio / ((100 + aliquota) / 100);
+}
+</code></pre>
+
+<p>Even in such a simple example, you can clearly see the difference between a function that can carry out several unrelated actions and a function that carries out a single, well-defined action.
+By reducing the complexity of the function, moreover, we’re able to declare it as <a href="/en/functions#inline" class="xref">inline</a>, increasing the program’s execution speed.</p>
+
+<hr id="dottrina" />
+
+<p>The <code>main</code> function of C’hi++ is what scientists call the <em>Big Bang</em>.
+Just as the atmosphere is stirred up by the clash of masses of hot and cold air, the Energy of the Universe is constantly subject to the opposing action of two forces: <em>Gravity</em>, which tends to gather all matter back into the primordial One, and <em>Entropy</em>, which by contrast tends to divide it.
+Poe understood this. In <em>Eureka</em>, he uses the term <em>Electricity</em> instead of <em>Entropy</em>, but the opposition he describes is correct.
+What isn’t correct (and not only in Poe) is the idea that the expansion of the Universe is a one-off event.
+The life of the Universe is cyclical: when Entropy prevails, the Universe expands, as it is doing right now; when Gravity “wins”, the Universe collapses in on itself and returns to the One.
+What keeps it from getting stuck at either of the cycle’s two extreme points — the One and heat death — is a third force, which Master Canaro called:
+<a href="/en/mythopoetics#annosa-dicotomia" class="xref"><em>the age-old dichotomy between what we want and what we need</em></a>.
+Just as a box of Lego bricks contains every building you have ever built and will ever build, the primordial One holds concentrated within it all the Energy of the Universe, and therefore every animate or inanimate being that has ever existed or will ever exist.
+Gravity is at its most extreme point, and a non-existence flows through a non-time, which cannot be measured because there are no events by which to measure it.<a id="non-tempo" class="nota" href="/en/notes#fn-non-tempo">1</a>
+There is no death, no suffering, no illness, no separation; the One is, in effect, what most sentient beings describe and long for as a perfect Universe.
+Energy, at first, is satisfied, but little by little the contentment of having reached Unity fades, and instead a longing grows for something different from that crystalline perfection.
+Just as with an old love, we remember only what pleases us to remember, forgetting its flaws, Energy thinks back to when the Universe was not dark and empty, but shone with the light of countless stars, and wonders whether that, after all, isn’t the existence it truly longs for — whether that, in fact, isn’t Paradise.
+It has a clear memory of the mistakes and sorrows of past existences (it was Energy itself, embodied in the spazioni, that committed them), but, like a chess player about to replay a certain opening, it thinks that this time it will go better, that it won’t repeat its past mistakes, and this desire for redemption generates the <em>Big Bang</em>.
+Energy disintegrates the enormous black hole in which it had curled up, and expands once more into the Universe, giving mass to the spazioni and generating matter.
+The Age of Gravity ends, and a new Age of Entropy begins; something very similar to what you find described in the <em>Bhagavad-Gita</em>:</p>
+
+<blockquote>
+  <p>The cosmic cycles are time-periods called Manvantara, each subdivided internally into four eras or Yugas, each characterized by a particular quality of existence. It is a periodic return to conditions of life that are not identical but analogous, from a qualitative point of view, to those of the preceding cycles — a succession of four eras that echoes, on a smaller scale, the alternation of the four seasons.<a class="nota" href="/en/notes#fn-cicli" id="cicli">2</a></p>
+</blockquote>
+
+<p>The biblical Genesis, too, can be seen as an allegory of spazionist cosmogony (or vice versa): Paradise is the primordial One, while Adam (<em>Puruṣa</em>) and Eve (<em>Prakṛti</em>) are what causes its disintegration, generating an imperfect, sorrowful Universe, aided by the <em>διάβολος</em>, that is, by the one who <em>separates</em> or <em>hurls across</em>, otherwise known as: <em>Luci-fer</em>.
+From a spazionist perspective, the question:</p>
+
+<blockquote>
+  <p>If God is good, why do evil and suffering exist in the Universe he created?</p>
+</blockquote>
+
+<p>makes no sense, because it wasn’t God who created the Universe, but the Devil — just as the Barbelo Gnostics maintained.
+<!-- @todo - rivedere Cosmogonie gnostiche --></p>
+
+<hr />
+
+<p>Once, a disciple asked Master Canaro how it was possible for the Energy of the universe to have feelings or aspirations, and whether this self-awareness didn’t clash with the idea that C’hi++ is a metaphysics free of metaphysical elements.
+Master Canaro answered that the disciple was right (an elliptical way of saying he was an idiot).
+He himself liked to believe it was so, because he was a sentimental old man, but the disciple was free to think it was just a rhetorical device, used to make the story more engaging.
+He then explained that the only thing one needed to believe, even in the absence of proof, was that the Universe, at the end of this phase of expansion, would go back to collapsing into the One.
+At that point, there would be two possibilities: either it would remain One for the rest of Time (a legitimate hypothesis, but a boring one), or it would explode again, giving rise to a new Universe.
+Here too, there would be two hypotheses.
+The first is that a Big Bang can only happen under certain conditions, and that those conditions necessarily lead to a Universe identical to the one we know now; so, if the One explodes again, everything starts over from scratch.
+The second hypothesis is that every <em>Big Bang</em> happens under its own specific circumstances and in its own specific way, and that therefore, if the One explodes again, a new Universe will be born, one that may have few or no points of contact with the current one.
+Master Canaro said the first hypothesis was possible, but unlikely, and that we should therefore assume the second one was correct: “It doesn’t change anything, anyway: if the time available to us for the Universe to explode and implode is infinite, then however low the probability of two identical explosions occurring might be, it’s impossible for it not to happen, sooner or later.
+As that godless Dawkins puts it:</p>
+
+<blockquote>
+  <p>Given infinite time, or an infinite number of opportunities, anything is possible. <a class="nota" href="/en/notes#fn-dawkins-tempo" id="dawkins-tempo">3</a></p>
+</blockquote>
+
+<p>By that same principle, taking for granted that sooner or later this Universe will come to exist again, it’s entirely reasonable to think — not out of faith, but on the basis of a simple probabilistic calculation — that whatever is in it, too, may sooner or later come to exist again.
+Ourselves included.”</p>
+
+            </section>
+        
+        </main>
+        <footer>
+    <nav>
+        
+        
+        <a href="/en/data-types" 
+           title="Go to: Data types" 
+           class="left">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        
+        
+        <a href="#top" 
+           title="Back to top" >
+           <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        
+        <a href="/en/operators" 
+           title="Go to: Operators" 
+           class="right" >
+                <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+                
+
+    </nav>
+
+</footer>
+
+    </div>
+  </body>
+</html>

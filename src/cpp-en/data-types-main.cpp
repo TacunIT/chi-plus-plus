@@ -1,63 +1,57 @@
 #include <iostream>
-
 using namespace std;
-
-/** Definisce un tipo di dato enumerato di nome RGB */
+/** Defines an enumerated data type named RGB */
 enum RGB { red = 0xFF0000, green = 0x00ff00, blue = 0x0000ff };
-
-/** Definisce una struttura che contiene un colore RGB e un nome */
-struct ColoreRGB {
-    RGB  valore;
-    const char* nome;        
+/** Defines a struct that holds an RGB color and a name */
+struct RGBColor {
+    RGB  value;
+    const char* name;
 };
-
-/** 
- * Definisce la classe Colore, che contiene un coloreRGB 
- * e una funzione che ne mostra il nome.
+/**
+ * Defines the Color class, which holds an rgbColor
+ * and a function that displays its name.
  */
-class Colore {
+class Color {
 public:
-    ColoreRGB coloreRgb;        
-    void nome_colore() {
-        cout << "coloreRGB:";
-        switch(coloreRgb.valore) {
+    RGBColor rgbColor;
+    void color_name() {
+        cout << "colorRGB:";
+        switch(rgbColor.value) {
             case red  : cout << "red"  ; break;
             case green: cout << "green"; break;
             case blue : cout << "blue" ; break;
         }
         cout << endl;
-    }        
+    }
 };
-
 int main()
-{    
-    /** Dichiara una serie di variabili */
-    bool    booleano  = false;
-    char    carattere = 'C';
-    int     intero    = 1234567890;
-    float   decimale  = 3.14;
+{
+    /** Declares a series of variables */
+    bool    boolean   = false;
+    char    character = 'C';
+    int     integer   = 1234567890;
+    float   decimal   = 3.14;
     char    array[]   = "abcdefghilmnopqrstuvz";
-    RGB     enumerato = green;
-    
-    /** Crea un oggetto di tipo Colore */
-    Colore  colore;    
-    
-    /** 
-     * Assegna un valore ai dati della struttura coloreRgb 
-     * all'interno dell'oggetto di tipo Colore.
-     */
-    colore.coloreRgb.valore = enumerato;   
-    colore.coloreRgb.nome = "verde";     
+    RGB     enumValue = green;
 
-    /** Mostra il valore delle variabili */
-    cout << "booleano:"    << booleano   << endl;
-    cout << "carattere:"   << carattere  << endl;
-    cout << "intero:"      << intero     << endl;
-    cout << "decimale:"    << decimale   << endl;
-    cout << "array:"       << array      << endl;
-    
-    /** Mostra il nome del colore */
-    colore.nome_colore();
-    
+    /** Creates an object of type Color */
+    Color   color;
+
+    /**
+     * Assigns a value to the data of the rgbColor struct
+     * inside the object of type Color.
+     */
+    color.rgbColor.value = enumValue;
+    color.rgbColor.name = "green";
+    /** Displays the value of the variables */
+    cout << "boolean:"   << boolean   << endl;
+    cout << "character:" << character << endl;
+    cout << "integer:"   << integer   << endl;
+    cout << "decimal:"   << decimal   << endl;
+    cout << "array:"     << array     << endl;
+
+    /** Displays the color's name */
+    color.color_name();
+
     return 0;
 }

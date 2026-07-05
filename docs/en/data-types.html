@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+
+
+
+
+<head>
+    <title>Data types |  C'hi++
+</title>
+    <meta charset="utf-8" />
+    <link      rel="canonical"          href="http://localhost:4000/en/data-types" />
+    <link      rel=icon                 href="http://localhost:4000/assets/img/favicon.ico" type=image/x-icon />
+    <link      rel="stylesheet"         href="http://localhost:4000/assets/fa/css/all.css" />
+    <link      rel="stylesheet"         href="http://localhost:4000/assets/css/styles.css" />        
+    <meta     name="viewport"        content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta     name="thumbnail"       content="http://localhost:4000/assets/img/og-img/indice.jpg" />
+    <meta     name="keyword"         content="C'hi, C++, c plus plus, religione, open-source" />
+    <meta     name="description"     content="Chi++ - Proposta per una metafisica open-source" />
+    <meta property="og:url"          content="http://localhost:4000/en/data-types" />
+    <meta property="og:type"         content="website" />
+    <meta property="og:title"        content="Data types" />
+    <meta property="og:description"  content="The Universe is made of spazioni - The World has the nature of Art - René Guénon was right - Why light can't go any faster." />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image"        content="http://localhost:4000/assets/img/og-img/tipi-di-dato.jpg" />
+    <meta property="fb:app_id"       content="" /><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-159394431-1');
+</script></head>
+<body class="manuale capitolo ">
+    <div class="page capitolo">
+        <header><nav class="menu-top">
+    <a
+        title="Go to: Comments"
+        
+        href="/en/comments"
+        class="left freccia"
+        
+    >
+        <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="/"
+        class="center"
+        title="Back to homepage"
+    >
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        title="Go to the table of contents"
+        href="/en/indice"
+    >
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </a>
+       
+    <a
+        
+        href="/it/tipi-di-dato"
+        
+        class="center"
+        title="Leggi in italiano"
+    >
+        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        href="https://github.com/TacunIT/chi-plus-plus"
+        target="github"
+        class="center"
+        title="Go to the GitHub project"
+    >
+        <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+    </a>
+    <a
+        title="Go to: C++ program structure"
+        
+        href="/en/program-structure"
+        
+        class="right freccia"
+    >
+        <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+    </a>
+</nav>
+</header>
+        <main class="corpo pubblicato ">
+        
+            <h1><a href="#dottrina">
+                Data types</a>
+            </h1>
+            <blockquote class="motto">Everything is a byte</blockquote>
+            <section class="testo">
+                <p>The variety of available data types is C++’s main distinguishing feature.</p>
+
+<p>C++ inherited a wide range of data types from C.
+Depending on their nature, we can divide these data types into two groups: <em>scalar</em> data and <em>aggregate</em> data.
+The <em>scalar</em> data types are: <code>void</code>, <code>bool</code>, <code>char</code>, <code>wchar_t</code>, <code>int</code>, <code>float</code>, <code>double</code>, and they let you handle a program’s classic elements: integers, decimal numbers, letters, and boolean values.
+The <em>aggregate</em> data types are <em>arrays</em>, <em>unions</em>, <em>enums</em>, <em>structs</em>, and <em>classes</em>.
+These, as their name suggests, are made up of the aggregation of several scalar data items of the same type or of different types.
+The next piece of code — annoyingly didactic, in its essential uselessness — shows the main data types of C++.
+It contains many elements I haven’t told you about yet, so don’t worry if you don’t fully understand what it does.</p>
+
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+/** Defines an enumerated data type named RGB */
+enum RGB { red = 0xFF0000, green = 0x00ff00, blue = 0x0000ff };
+/** Defines a struct that holds an RGB color and a name */
+struct RGBColor {
+    RGB  value;
+    const char* name;
+};
+/**
+ * Defines the Color class, which holds an rgbColor
+ * and a function that displays its name.
+ */
+class Color {
+public:
+    RGBColor rgbColor;
+    void color_name() {
+        cout &lt;&lt; "colorRGB:";
+        switch(rgbColor.value) {
+            case red  : cout &lt;&lt; "red"  ; break;
+            case green: cout &lt;&lt; "green"; break;
+            case blue : cout &lt;&lt; "blue" ; break;
+        }
+        cout &lt;&lt; endl;
+    }
+};
+int main()
+{
+    /** Declares a series of variables */
+    bool    boolean   = false;
+    char    character = 'C';
+    int     integer   = 1234567890;
+    float   decimal   = 3.14;
+    char    array[]   = "abcdefghilmnopqrstuvz";
+    RGB     enumValue = green;
+
+    /** Creates an object of type Color */
+    Color   color;
+
+    /**
+     * Assigns a value to the data of the rgbColor struct
+     * inside the object of type Color.
+     */
+    color.rgbColor.value = enumValue;
+    color.rgbColor.name = "green";
+    /** Displays the value of the variables */
+    cout &lt;&lt; "boolean:"   &lt;&lt; boolean   &lt;&lt; endl;
+    cout &lt;&lt; "character:" &lt;&lt; character &lt;&lt; endl;
+    cout &lt;&lt; "integer:"   &lt;&lt; integer   &lt;&lt; endl;
+    cout &lt;&lt; "decimal:"   &lt;&lt; decimal   &lt;&lt; endl;
+    cout &lt;&lt; "array:"     &lt;&lt; array     &lt;&lt; endl;
+
+    /** Displays the color's name */
+    color.color_name();
+
+    return 0;
+}
+
+</code></pre>
+
+<p>Compiling and running this code, you’ll get:</p>
+
+<pre><code>% g++ src/cpp/data-types-main.cpp -o src/out/esempio
+% src/out/esempio
+boolean:0
+character:C
+integer:1234567890
+decimal:3.14
+array:abcdefghilmnopqrstuvz
+colorRGB:green
+</code></pre>
+
+<p>The <code>void</code> data type has neither a size nor a value, and can only be assigned to a pointer or to a function that returns no value at all, like the <code>colorName</code> function of the <code>Color</code> class.
+The <code>bool</code> data type is used to handle boolean values.
+It can only take two values, <code>true</code> or <code>false</code>, so it has the smallest possible size, namely one byte.
+The <code>int</code> type lets you handle integers.
+It’s usually four bytes in size, which can be increased or decreased by means of keywords called
+<a href="#modificatori" class="xref">modifiers</a>.
+The <code>float</code> and <code>double</code> types are used to handle decimal numbers.
+They are four and eight bytes long respectively, with a precision of seven and fifteen decimal digits.
+The three elements that appear outside the <code>main</code> function are <em>aggregate</em> data types, and let you define non-standard data types.
+<code>enum</code>s let you assign names to values, making programming easier.
+In the example, the <code>RGB</code> <em>enum</em> assigns a name to three values of the RGB encoding.
+This new data type is used in the <code>ColorRGB</code> struct.
+<code>struct</code>s let you create sets of heterogeneous data.
+The <code>ColorRGB</code> variable contains two different variables: a value of type <code>RGB</code> and a
+<a href="#puntatori" class="xref">pointer</a>
+to a character.
+All the data types we’ve seen so far are a legacy of the <em>C</em> language.
+The <code>Color</code> class, on the other hand, is one of the innovations introduced by C++, and contains two elements: a struct of type <code>ColorRGB</code> and a function that displays the color’s name.
+Be careful, though: none of these fellows is really what it claims to be.
+The <code>boolean</code> variable doesn’t actually contain the value <code>true</code> or <code>false</code>, but a binary value that the system treats as such.
+Likewise, the <code>character</code> variable doesn’t contain the letter <code>C</code>, but the binary value corresponding to the ASCII encoding of the letter <code>C</code>.
+Every data type is nothing more than the name of a quantity of memory.
+Remember this, because it’s the key to everything.</p>
+
+<hr />
+
+<p>The amount of memory associated with each data type isn’t fixed, but can vary depending on the system you’re working on.
+The code below lets you find out the size, in bytes, of the scalar data types:<a id="sizeof"></a></p>
+
+<pre><code>
+</code></pre>
+
+<p>Compiling and running this code, you’ll get:</p>
+
+<pre><code>% g++ data-types-size.cpp -o ../out/example
+% ../out/example                                   
+      bool: 1
+      char: 1
+       int: 4
+     float: 4
+    double: 8
+</code></pre>
+
+<p>The number of possible values a data type can hold depends on its size.
+A <code>char</code> is made up of eight bits, and can therefore take 2<sup>8</sup> values, that is: from 0 to 255.
+An <code>int</code> is made up of thirty-two bits, and can take 2<sup>32</sup> values, that is: from 0 to 4,294,967,295.
+A <code>float</code> has 8 bits for the exponent and 23 for the mantissa, so it can take values from 1.175494e-38 to 3.402823e+38, and so on.
+<a id="modificatori"></a>
+Besides data types, C++ has also inherited from C the so-called <em>modifiers</em>, keywords which, when added to the name of a data type, change its characteristics.
+The <code>short</code> and <code>long</code> modifiers change the size of the data, shrinking or growing it.
+The <code>signed</code> and <code>unsigned</code> modifiers determine whether the first bit of the data is treated as its sign: positive if the value is 0, negative if the value is 1.
+The sign, however, “steals” a bit from the <em>signed</em> variable, which can therefore hold fewer values than the same <em>unsigned</em> variable.
+This program shows how the size and the minimum and maximum values of the <code>int</code> data type can change depending on which modifiers are used:</p>
+
+<pre><code>
+</code></pre>
+
+<p>If you look closely at the code, you’ll discover another feature of C++’s modifiers: when applied to an integer data type, you can shorten the declaration by omitting the <code>int</code> keyword.
+The output of this program, on my computer, is:</p>
+
+<pre><code>% g++ data-types-limits.cpp -o ../out/esempio
+% ../out/esempio                               
+           int: 4 bytes, da:          -2147483648  a:           2147483647
+  unsigned int: 4 bytes, da:                    0  a:           4294967295
+     short int: 2 bytes, da:               -32768  a:                32767
+unsigned short: 2 bytes, da:                    0  a:                65535
+      long int: 8 bytes, da: -9223372036854775808  a:  9223372036854775807
+ unsigned long: 8 bytes, da:                    0  a: 18446744073709551615
+</code></pre>
+
+<p><a id="funzioni"></a>
+The last thing I need to tell you, about C++’s data types, are the so-called <em>intermediary attributes</em>: <em>functions</em>, <em>arrays</em>, <em>pointers</em>, and <em>references</em>.
+We’ll talk about <em>functions</em> at length
+<a href="/en/functions" class="xref">later on</a>.
+What matters to us here and now is that every function has its own data type.
+The <code>main</code> function, which is the main function of every program, has data type <code>int</code>, and indeed it ends with the instruction:</p>
+
+<pre><code>return 0;
+</code></pre>
+
+<p>The <code>nome_colore</code> function, inside the <code>Colore</code> class, is of type <code>void</code> and, as you can see, has no return value.
+<em>Arrays</em> are sets of homogeneous data, and are declared by adding square brackets to the variable’s name.
+An array’s size must be defined at the moment it’s declared; this can happen either explicitly, by putting the number of elements inside the square brackets:</p>
+
+<pre><code>char elementi[10];
+</code></pre>
+
+<p>or by assigning the array a value that will determine its maximum size, as we saw in the first example:</p>
+
+<pre><code>char array[] = "abcdefghilmnopqrstuvz";
+</code></pre>
+
+<p>Each element of the array is identified by an index ranging from 0 to the number of elements in the array minus one.
+In the case of the array above, the letter <code>a</code> will have index 0, <code>b</code> will have index 2, and so on, up to <code>z</code>, which will have index 20.</p>
+
+<hr id="puntatori" />
+
+<p><em>Pointers</em> are like pit bulls: most people are scared of them, but whoever knows them knows they’re the sweetest dogs, if you know how to handle them.
+What you always need to keep in mind is that <em>C++</em> is just a particular way of looking at a computer’s memory, and in memory there are no characters, no classes, no images, and no porn films — just one long sequence of 1s and 0s:</p>
+
+<pre><code>0100001100100111011010000110000101101110011011100110111100100000
+0110011001101111011100100111001101100101001000000111010001110101
+0111010001110100011001010010000001100101001000000110010001110101
+0110010100100000011011000110000100100000011100110111010001100101
+0111001101110011011000010010000001100101011101001110000000100000
+0000101001001010011001010010000001100110011010010110111101110010
+0110100101110011011000110110010100100000011001000110010101101110
+0111010001110010011011110010000001100001011011000010000001100011
+0110111101110010011001010010000000100111011011100010000001101001
+0110110001101100011101010111001101101001011011110110111001100101
+</code></pre>
+
+<p>The only way to make sense of this string of values is to split it into blocks and assign a data type to each block.
+For example, if you split the binary sequence above into eight-bit blocks:</p>
+
+<pre><code>01000011 00100111 01101000 01100001 01101110 01101110 01101111
+00100000 01100110 01101111 01110010 01110011 01100101 00100000
+01110100 01110101 01110100 01110100 01100101 00100000 01100101
+00100000 01100100 01110101 01100101 00100000 01101100 01100001
+00100000 01110011 01110100 01100101 01110011 01110011 01100001
+00100000 01100101 01110100 11100000 00100000 00001010 01001010
+01100101 00100000 01100110 01101001 01101111 01110010 01101001
+01110011 01100011 01100101 00100000 01100100 01100101 01101110
+01110100 01110010 01101111 00100000 01100001 01110010 00100000
+01100011 01101111 01110010 01100101 00100000 00100111 01101110
+00100000 01101001 01101100 01101100 01110101 01110011 01101001
+01101111 01101110 01100101
+</code></pre>
+
+<p>and convert each value into the corresponding character in the ASCII set, you discover that a seemingly meaningless sequence of 1s and 0s is actually the beginning of a well-known folk song:</p>
+
+<pre><code>01000011 =  67 = C
+00100111 =  39 = '
+01101000 = 104 = h
+01100001 =  97 = a
+01101110 = 110 = n
+01101110 = 110 = n
+01101111 = 111 = o
+00100000 =  32 =
+</code></pre>
+
+<p>To identify the values within the bit sequence, you need two pieces of information: the data type you’re pointing at, and its address in memory.
+Pointers let you obtain exactly this information: their value defines the memory address to read from; their type defines the size of the value being pointed at.</p>
+
+<pre><code>unsigned char * ptr = valori;
+</code></pre>
+
+<p>Many people think of pointers as little flags letting you mark a specific spot in memory, but this is only true of <code>void</code> pointers, which have no associated data type.
+Other pointers are less like a flag and more like a kind of mask that can slide along the bit sequence, isolating and highlighting the individual values that make it up:</p>
+
+<pre><code style="color:#999;line-height:1.5">01000011 00100111 01101000 01100001 01101110 01101110 01101111
+00100000 01100110<span style="padding:2px;border:solid 1px;color:#000;margin:0 3px;">01101111</span>01110010 01110011 01100101 00100000
+01110100 01110101 01110100 01110100 01100101 00100000 01100101
+00100000 01100100 01110101
+</code></pre>
+
+<p>This program shows how a pointer’s size affects the outcome of reading the data:</p>
+
+<pre><code>
+</code></pre>
+
+<p>Here’s the program’s output; I’d love to see how you’re going to fit this into your book:</p>
+
+<pre><code> 0          01000011    67   C
+ 1          00100111    39   '
+ 2          01101000   104   h
+ 3          01100001    97   a
+ 4          01101110   110   n
+ 5          01101110   110   n
+ 6          01101111   111   o
+ 7          00100000    32    
+ 8          01100110   102   f
+ 9          01101111   111   o
+10          01110010   114   r
+11          01110011   115   s
+12          01100101   101   e
+13          00100000    32    
+14          01110100   116   t
+15          01110101   117   u
+16          01110100   116   t
+17          01110100   116   t
+18          01100101   101   e
+19          00100000    32    
+20          01100101   101   e
+21          00100000    32    
+22          01100100   100   d
+23          01110101   117   u
+24          01100101   101   e
+25          00100000    32    
+26          01101100   108   l
+27          01100001    97   a
+28          00100000    32    
+29          01110011   115   s
+30          01110100   116   t
+31          01100101   101   e
+32          01110011   115   s
+33          01110011   115   s
+34          01100001    97   a
+35          00100000    32    
+36          01100101   101   e
+37          01110100   116   t
+38          11100000   224   ?
+39          00100000    32    
+40          00001010    10   
+41          01001010    74   J
+42          01100101   101   e
+43          00100000    32    
+44          01100110   102   f
+45          01101001   105   i
+46          01101111   111   o
+47          01110010   114   r
+48          01101001   105   i
+49          01110011   115   s
+50          01100011    99   c
+51          01100101   101   e
+52          00100000    32    
+53          01100100   100   d
+54          01100101   101   e
+55          01101110   110   n
+56          01110100   116   t
+57          01110010   114   r
+58          01101111   111   o
+59          00100000    32    
+60          01100001    97   a
+61          01110010   114   r
+62          00100000    32    
+63          01100011    99   c
+64          01101111   111   o
+65          01110010   114   r
+66          01100101   101   e
+67          00100000    32    
+68          00100111    39   '
+69          01101110   110   n
+70          00100000    32    
+71          01101001   105   i
+72          01101100   108   l
+73          01101100   108   l
+74          01110101   117   u
+75          01110011   115   s
+76          01101001   105   i
+77          01101111   111   o
+78          01101110   110   n
+79          01100101   101   e
+
+ 0  0010011101000011 10051   C
+ 1  0110000101101000 24936   h
+ 2  0110111001101110 28270   n
+ 3  0010000001101111  8303   o
+ 4  0110111101100110 28518   f
+ 5  0111001101110010 29554   r
+ 6  0010000001100101  8293   e
+ 7  0111010101110100 30068   t
+ 8  0111010001110100 29812   t
+ 9  0010000001100101  8293   e
+10  0010000001100101  8293   e
+11  0111010101100100 30052   d
+12  0010000001100101  8293   e
+13  0110000101101100 24940   l
+14  0111001100100000 29472    
+15  0110010101110100 25972   t
+16  0111001101110011 29555   s
+17  0010000001100001  8289   a
+18  0111010001100101 29797   e
+19  0010000011100000  8416   ?
+20  0100101000001010 18954   
+21  0010000001100101  8293   e
+22  0110100101100110 26982   f
+23  0111001001101111 29295   o
+24  0111001101101001 29545   i
+25  0110010101100011 25955   c
+26  0110010000100000 25632    
+27  0110111001100101 28261   e
+28  0111001001110100 29300   t
+29  0010000001101111  8303   o
+30  0111001001100001 29281   a
+31  0110001100100000 25376    
+32  0111001001101111 29295   o
+33  0010000001100101  8293   e
+34  0110111000100111 28199   '
+35  0110100100100000 26912    
+36  0110110001101100 27756   l
+37  0111001101110101 29557   u
+38  0110111101101001 28521   i
+39  0110010101101110 25966   n
+</code></pre>
+
+<p>As you can see, the bits are the same, but by changing the data type associated with the pointer, and therefore its size, the value of the data becomes something else, and the conversion of numbers into letters loses its meaning.
+The <code>p1++</code> and <code>p2++</code> instructions increment the pointer by one, that is, they move it forward in memory by a number of bytes equal to the size of the data type it’s associated with.
+The <code>p1</code> pointer is an <code>unsigned char</code>, so it moves by eight bits; the <code>p2</code> pointer is a <code>short int</code>, so it moves by sixteen bits.
+This is why the second reading loop takes half as long as the first: because the amount of bits read per iteration is doubled.
+If I’d been careless and copied the first reading loop’s code as-is, without dividing the number of iterations by two, the pointer would have kept “walking” forward in memory, past the boundaries of the array, and this, as we’ll see later, is definitely not good.
+<em>References</em> are aliases for the variables they’re associated with.
+As with gibbons or swans, the bond between a <em>reference</em> and its variable lasts a lifetime.
+While pointers can have a <code>NULL</code> value and can be associated with different variables over the course of processing, <em>references</em> must always be associated with a variable, and that association can never be changed afterward.</p>
+
+<pre><code>
+</code></pre>
+
+<p>Compiling and running the code, you’ll get:</p>
+
+<pre><code>% g++ src/cpp/data-types-references.cpp -o src/out/esempio
+% src/out/esempio                                          
+valori iniziali: v=10, r=10
+valori finali:   v=20, r=20
+</code></pre>
+
+<p>We’ll go deeper into the pros and cons of <em>references</em> when we talk about
+<a href="/en/functions" class="xref">functions</a>.</p>
+
+<hr id="casting" />
+
+<p>Since each data type is nothing more than a way of looking at memory, it’s possible to convert from one type to another.
+Conversions can be <em>implicit</em> or <em>explicit</em>.
+<em>Implicit</em> conversions are the ones that happen when a value is copied between variables of compatible type:</p>
+
+<pre><code>int  i = 0;
+char c = i;
+</code></pre>
+
+<p>In this case, we assign to a variable of type <code>char</code> the value of a variable of type <code>int</code>, and the compiler lets us do it, because the value of the integer can be stored without any trouble in the single byte of the <code>char</code>.
+If we wanted to make this conversion explicit, we would have to use the syntax:</p>
+
+<pre><code>int  i = 0;
+char c = (char) i;
+char c = char (i);
+</code></pre>
+<p>The two forms are equivalent.
+The first is the one C++ inherited from C; the second is called <em>functional notation</em>.
+In the earlier example, the <code>valori</code> variable is a pointer to <code>unsigned char</code>, but we told the system to treat it as a pointer to <code>short int</code> with the instruction:</p>
+
+<pre><code>duebyte * p2 = (duebyte*)valori;
+</code></pre>
+
+<p>C++ has other ways of converting one data type into another too, but since they apply mainly to classes, we’ll see them later on.</p>
+
+<hr id="dottrina" />
+
+<p>What I just told you about C++ also holds for C’hi++.
+Just as “reality” inside a computer is nothing but a sequence of binary values which, aggregated together, make up the entities the system manages, the reality we live in is nothing but a manifestation of the Universe’s energy acting on the particles that make up everything that exists, namely the <em>spazioni</em>.
+You can think of the Universe as a three-dimensional version of a PC screen.
+The images you see on this screen are made up of tiny colored dots called <em>pixels</em>.
+When the screen is off, the pixels are black and show no image; when you turn it on, the energy from the cathode strikes the pixels and makes them visible.
+Everything you see on the screen, though, is illusory.
+Or rather: it exists, but it isn’t what it seems.
+The elements of the windows aren’t three-dimensional, even though they have shadows, and when you see the mouse pointer move from one window to another, what you’re actually seeing is the screen’s pixels changing color.
+It’s a self-induced, voluntary illusion: your brain sees one thing, but pretends it’s something else, because that’s more convenient.
+The same thing happens with spazioni, except that instead of being arranged on a flat surface, like the screen’s pixels, spazioni form a three-dimensional matrix, and have what Master Canaro called “potential existence”: if they’re irradiated with energy, they gain mass and therefore existence; otherwise they don’t exist.
+<!--
+More precisely, they have "a perpetual and uncaused existence," like the atoms of the Vājasaneyī Saṃhitā (IV,1), cited by Ananda in Time and Eternity.
+-->
+When the <em>Big Bang</em> radiates its Energy into the Universe, it strikes the spazioni, giving them mass and generating everything that exists, from <em>Wolf–Rayet</em> nebulae to your elementary-school teacher.
+Just as <code>char</code>, <code>double</code>, or <code>class</code> are just conventional names for sets of bits, so too <code>helium</code>, <code>tungsten</code>, or <code>watermelon</code> are conventional names for quantities of energy.
+<em>Energy</em>, mind you, not <em>spazioni</em>, because spazioni are fixed; what moves is Energy.
+When you move your arm, as you just did, you’re not really moving your arm, you’re transferring the energy that made up your arm from one group of spazioni to another.
+And even if we stay perfectly still, here, in this room, the energy we’re made of keeps transferring across the matrix of spazioni, because the Planet we live on rotates on its axis and around the Sun; the Sun revolves around the Milky Way, and the Milky Way in turn moves relative to the other galaxies.
+Neither you nor I, right now, are made of the same spazioni we were made of a few seconds ago.
+We are a moving image, like the mouse pointer, or like Christmas lights.
+As Saint Augustine said, we are, at the same time, real and illusory:</p>
+
+<blockquote>
+  <p>And I considered all the things that are beneath you, and I saw that one cannot say, absolutely, either that they exist or that they do not: in their own way they exist, because they come from you; they do not exist, because they are not what you are: and what truly exists is that which remains unchanging. <a id="agostino" href="/en/notes#fn-agostino" class="nota">1</a></p>
+</blockquote>
+
+<p>For the <em>Vedanta</em>, the World has the nature of Art, because the reality of the art-object is different from the reality of the art-maker.
+This analogy, besides holding for Plato, also holds for programming languages: an object inside a program exists, but isn’t really what it represents, even though it’s convenient for us to treat it as if it were.
+As Ezra Pound wrote<a id="pound" href="/en/notes#fn-pound" class="nota">2</a>, only dreams truly exist, because their unreal nature remains such even within an illusory reality.</p>
+
+<hr />
+
+<p>Spazioni also define the limits of our quantities and units of measure.
+Think of a line: theoretically, it’s an infinite set of points extending in two directions.
+Points, however, have no dimension, so producing even a small segment of a line requires an infinite number of them.
+In essence, according to mathematicians, two forms of infinity coexist within every line: the syncategorematic infinity of length, and the categorematic infinity of the sequence of points.
+(Or maybe it’s the other way around: I can never remember which is the actual infinite and which the potential one.)
+You can plainly see that this is nonsense: the idea that multiplying nothing by infinity can get you something is just an attempt by mathematicians to justify their sex lives.
+The line is the ideal representation of a finite set of contiguous spazioni.
+It’s very, very thin, but it does have a dimension.
+Even the plane, with all due respect to René Guénon, is made up of a finite set of contiguous spazioni, and through a single point there don’t pass infinite lines, but a finite number, however high, because the granularity of the spazioni limits the number of possible angles.
+The same holds for the natural numbers: they can’t be extended to infinity, only up to the total number of active spazioni in the Universe, because any number beyond that would indicate a quantity that doesn’t exist, and would therefore be meaningless.
+Spazioni also define the smallest unit of time, what Master Canaro jokingly called “spazione-time”: the interval of time a spazione needs to acquire all the energy of one of the spazioni it’s in contact with.
+This is why the speed of light cannot exceed three hundred million meters per second: because it’s limited by the time it takes for energy to transfer between spazioni.</p>
+
+<hr />
+
+<p>C’hi++ also holds the World and Art to be alike, but not only because of their nature.
+The World and Art are alike because their purpose is the same.</p>
+
+            </section>
+        
+        </main>
+        <footer>
+    <nav>
+        
+        
+        <a href="/en/comments" 
+           title="Go to: Comments" 
+           class="left">
+            <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+        </a>
+        
+        
+        <a href="#top" 
+           title="Back to top" >
+           <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        
+        <a href="/en/program-structure" 
+           title="Go to: C++ program structure" 
+           class="right" >
+                <i class="fa fa-chevron-right  fa-2x" aria-hidden="true"></i>
+        </a>
+                
+
+    </nav>
+
+</footer>
+
+    </div>
+  </body>
+</html>
