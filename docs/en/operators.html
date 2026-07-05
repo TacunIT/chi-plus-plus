@@ -166,9 +166,9 @@ We can classify them either by the number of operands they act on:</p>
 The increment <code>++</code> and decrement <code>--</code> operators let you increase or decrease the value of a variable by one.
 When these operators come before the variable, the increment or decrement is calculated immediately; if instead they come after the variable, the increment or decrement operation happens after it’s used:</p>
 
-<pre><code>/** 
- * @file _man/src/operatori-pre-post.cpp
- * Utilizzo degli operatori di incremento e decremento.
+<pre><code>/**
+ * @file _man/src/operators-pre-post.cpp
+ * Use of the increment and decrement operators.
  */
 
 #include &lt;iostream&gt;
@@ -176,17 +176,17 @@ When these operators come before the variable, the increment or decrement is cal
 using namespace std;
 
 int main(int argc, char** argv)
-{   
-    /** Definizione delle due variabili */
-    int pre  = 5, post = 7; 
+{
+    /** Defines the two variables */
+    int pre  = 5, post = 7;
 
-    /** Operatore di incremento, prima e dopo la variabile */
-    cout &lt;&lt; "pre-incremento: " &lt;&lt; ++pre  &lt;&lt; endl;
-    cout &lt;&lt; "post-incremento:" &lt;&lt; post++ &lt;&lt; endl;
+    /** Increment operator, before and after the variable */
+    cout &lt;&lt; "pre-increment: "  &lt;&lt; ++pre  &lt;&lt; endl;
+    cout &lt;&lt; "post-increment:" &lt;&lt; post++ &lt;&lt; endl;
 
-    /** Operatore di decremento, prima e dopo la variabile */
-    cout &lt;&lt; "pre-decremento: " &lt;&lt; --pre  &lt;&lt; endl;
-    cout &lt;&lt; "post-decremento:" &lt;&lt; post-- &lt;&lt; endl;
+    /** Decrement operator, before and after the variable */
+    cout &lt;&lt; "pre-decrement: "  &lt;&lt; --pre  &lt;&lt; endl;
+    cout &lt;&lt; "post-decrement:" &lt;&lt; post-- &lt;&lt; endl;
 
     return 0;
 }
@@ -195,7 +195,7 @@ int main(int argc, char** argv)
 
 <p>If you compile and run this code, you get:</p>
 
-<pre><code>&gt; g++ src/cpp/operatori-pre-post.cpp -o src/out/example
+<pre><code>&gt; g++ src/cpp/operators-pre-post.cpp -o src/out/example
 &gt; src/out/example                                       
 pre-incremento: 6
 post-incremento:7
@@ -416,23 +416,23 @@ The <code>&lt;&lt;</code> and <code>&gt;&gt;</code> operators shift, respectivel
 
 <p>The next example shows the use and the result of each operator:</p>
 
-<pre><code>/** 
- * @file operatori-utilizzo.cpp
- * Esempio di utilizzo degli operatori.
+<pre><code>/**
+ * @file operators-usage.cpp
+ * Example of operator usage.
  */
 
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
-#include &lt;bitset&gt; 
+#include &lt;iomanip&gt;
+#include &lt;bitset&gt;
 
 using namespace std;
 
 int main(int argc, char** argv)
-{        
+{
     int x = 12;
     int y = 4;
 
-    cout &lt;&lt; "Operatori aritmetici" &lt;&lt; endl;
+    cout &lt;&lt; "Arithmetic operators" &lt;&lt; endl;
     cout &lt;&lt; "x + y = " &lt;&lt; x + y &lt;&lt; endl;
     cout &lt;&lt; "x - y = " &lt;&lt; x - y &lt;&lt; endl;
     cout &lt;&lt; "x * y = " &lt;&lt; x * y &lt;&lt; endl;
@@ -441,14 +441,14 @@ int main(int argc, char** argv)
     cout &lt;&lt; "x++   = " &lt;&lt; x++ &lt;&lt; endl;
     cout &lt;&lt; "x--   = " &lt;&lt; x-- &lt;&lt; endl;
     cout &lt;&lt; endl;
-    
-    cout &lt;&lt; "Operatori logici" &lt;&lt; endl;
+
+    cout &lt;&lt; "Logical operators" &lt;&lt; endl;
     cout &lt;&lt; "x &amp;&amp; y    = " &lt;&lt; (x &amp;&amp; y)  &lt;&lt; endl;
     cout &lt;&lt; "x || y    = " &lt;&lt; (x || y)  &lt;&lt; endl;
     cout &lt;&lt; "!(x &amp;&amp; y) = " &lt;&lt; !(x &amp;&amp; y) &lt;&lt; endl;
     cout &lt;&lt; endl;
 
-    cout &lt;&lt; "Operatori di relazione"  &lt;&lt; endl;
+    cout &lt;&lt; "Relational operators"  &lt;&lt; endl;
     cout &lt;&lt; "x == y = " &lt;&lt; (x == y)  &lt;&lt; endl;
     cout &lt;&lt; "x != y = " &lt;&lt; (x != y)  &lt;&lt; endl;
     cout &lt;&lt; "x &gt; y  = " &lt;&lt; (x  &gt; y)  &lt;&lt; endl;
@@ -457,7 +457,7 @@ int main(int argc, char** argv)
     cout &lt;&lt; "x &lt;= y = " &lt;&lt; (x &lt;= y)  &lt;&lt; endl;
     cout &lt;&lt; endl;
 
-    cout &lt;&lt; "Operatori bitwise"  &lt;&lt; endl;
+    cout &lt;&lt; "Bitwise operators"  &lt;&lt; endl;
     cout &lt;&lt; "bit x  = " &lt;&lt; bitset&lt;8&gt;(x) &lt;&lt; endl;
     cout &lt;&lt; "bit y  = " &lt;&lt; bitset&lt;8&gt;(y) &lt;&lt; endl;
     cout &lt;&lt; "x &amp; y  = " &lt;&lt; bitset&lt;8&gt;(x &amp; y)  &lt;&lt; endl;
@@ -468,7 +468,7 @@ int main(int argc, char** argv)
     cout &lt;&lt; "x &lt;&lt; y = " &lt;&lt; bitset&lt;8&gt;(x &lt;&lt; y) &lt;&lt; endl;
     cout &lt;&lt; endl;
 
-    cout &lt;&lt; "Operatori di assegnazione"  &lt;&lt; endl;
+    cout &lt;&lt; "Assignment operators"  &lt;&lt; endl;
     cout &lt;&lt; "x += y = " &lt;&lt; (x += y) &lt;&lt; endl;
     cout &lt;&lt; "x -= y = " &lt;&lt; (x -= y) &lt;&lt; endl;
     cout &lt;&lt; "x *= y = " &lt;&lt; (x *= y) &lt;&lt; endl;
@@ -483,7 +483,7 @@ int main(int argc, char** argv)
 
 <p>If you compile and run this code, you get:</p>
 
-<pre><code>&gt; g++ src/cpp/operatori-utilizzo.cpp -o src/out/example
+<pre><code>&gt; g++ src/cpp/operators-usage.cpp -o src/out/example
 &gt; src/out/example                                      
 Operatori aritmetici
 x + y = 16
@@ -574,9 +574,9 @@ In this expression, for example, the variables <code>a</code> and <code>b</code>
 If you remember (I doubt it), we first saw them when talking about <a href="/en/c-plus-plus#membro">polymorphism</a>, and we’ll use them when we cover classes.
 Finally, the <code>&amp;</code> and <code>*</code> operators return, respectively, the memory address of a variable and a pointer to a variable:</p>
 
-<pre><code>/** 
- * @file operatori-altri.cpp
- * Altri operatori del C++.
+<pre><code>/**
+ * @file operators-others.cpp
+ * Other C++ operators.
  */
 
 #include &lt;iostream&gt;
@@ -584,38 +584,38 @@ Finally, the <code>&amp;</code> and <code>*</code> operators return, respectivel
 using namespace std;
 
 int main(int argc, char** argv)
-{        
+{
     int     a = 9;
     int     b = 4;
 
-    /** Converte un valore intero in char */
+    /** Converts an integer value to char */
     char    c = char(a * b);
 
-    /** Assegna a t il valore più alto fra a e b */
+    /** Assigns to t the higher of the two values a and b */
     int     t = (a &gt; b) ? a : b;
 
-    /** Salva nel puntatore p l'indirizzo di memoria di a */
-    int*    p = &amp;a;    
+    /** Saves the memory address of a into the pointer p */
+    int*    p = &amp;a;
 
-    /** Calcola la dimensione di un intero */
+    /** Calculates the size of an integer */
     size_t sa = sizeof(a);
 
-    /** Calcola la dimensione di un puntatore a intero */
+    /** Calculates the size of a pointer to an integer */
     size_t sp = sizeof(p);
 
-    /** Mostra l'indirizzo della variabile a */
+    /** Shows the address of the variable a */
     cout &lt;&lt; "&amp;a: " &lt;&lt; p  &lt;&lt; endl;
 
-    /** Mostra la dimensione delle variabili a e p */
+    /** Shows the size of the variables a and p */
     cout &lt;&lt; "sa: " &lt;&lt; sa &lt;&lt; endl;
     cout &lt;&lt; "sp: " &lt;&lt; sp &lt;&lt; endl;
 
-    /** Mostra il risultato dell'operazione ternaria */
+    /** Shows the result of the ternary operation */
     cout &lt;&lt; "t : " &lt;&lt; t  &lt;&lt; endl;
 
-    /** Il codice ASCII 36 corrisponde alla lettera $x\ */
+    /** ASCII code 36 corresponds to the letter $ */
     cout &lt;&lt; "c : " &lt;&lt; c  &lt;&lt; endl;
-    
+
     cout &lt;&lt; endl;
 
     return 0;
@@ -625,7 +625,7 @@ int main(int argc, char** argv)
 
 <p>If you compile and run this code, you’ll get:</p>
 
-<pre><code>&gt; g++ src/cpp/operatori-altri.cpp -o src/out/example
+<pre><code>&gt; g++ src/cpp/operators-others.cpp -o src/out/example
 &gt; src/out/example                                    
 &amp;a: 0x7ffee65bba5c
 sa: 4
@@ -638,26 +638,26 @@ c : $
 <p>The last operator we need to talk about also has the longest name: the <em>scope resolution</em> operator <code>::</code>.
 Besides other uses connected with managing class data, which we’ll cover later, this operator lets you refer to global-visibility variables even in cases where they’re shadowed by the redefinition of local variables with the same name:</p>
 
-<pre><code>/** 
- * @file _man/src/operatori-risoluzione.cpp
- * Utilizzo dell'operatore di risoluzione.
+<pre><code>/**
+ * @file _man/src/operators-resolution.cpp
+ * Use of the scope resolution operator.
  */
 
 #include &lt;iostream&gt;
 
 using namespace std;
 
-const char * Stringa = "Stringa globale" ;
+const char * String = "Global string" ;
 
 int main(int argc, char** argv)
-{   
-    const char * Stringa = "Stringa locale" ;
+{
+    const char * String = "Local string" ;
 
-    /** Stampa la stringa locale */
-    cout &lt;&lt; Stringa   &lt;&lt; endl ;
-    
-    /** Utilizza l'operatore per riferirsi alla variabile globale */
-    cout &lt;&lt; ::Stringa &lt;&lt; endl ;
+    /** Prints the local string */
+    cout &lt;&lt; String   &lt;&lt; endl ;
+
+    /** Uses the operator to refer to the global variable */
+    cout &lt;&lt; ::String &lt;&lt; endl ;
 
     return 0;
 }
@@ -665,7 +665,7 @@ int main(int argc, char** argv)
 </code></pre>
 <p>Compiling and running this code, you get:</p>
 
-<pre><code>&gt; g++ src/cpp/operatori-risoluzione.cpp -o src/out/example
+<pre><code>&gt; g++ src/cpp/operators-resolution.cpp -o src/out/example
 &gt; ./src/out/example                                       
 Stringa locale
 Stringa globale
