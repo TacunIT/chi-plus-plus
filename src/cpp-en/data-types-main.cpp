@@ -1,5 +1,7 @@
 #include <iostream>
+
 using namespace std;
+
 /** Defines an enumerated data type named RGB */
 enum RGB { red = 0xFF0000, green = 0x00ff00, blue = 0x0000ff };
 /** Defines a struct that holds an RGB color and a name */
@@ -7,6 +9,7 @@ struct RGBColor {
     RGB  value;
     const char* name;
 };
+
 /**
  * Defines the Color class, which holds an rgbColor
  * and a function that displays its name.
@@ -24,6 +27,7 @@ public:
         cout << endl;
     }
 };
+
 int main()
 {
     /** Declares a series of variables */

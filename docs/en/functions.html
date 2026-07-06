@@ -51,7 +51,7 @@
     </a>
     <a
         title="Go to the table of contents"
-        href="/en/indice"
+        href="/en/toc"
     >
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
     </a>
@@ -185,50 +185,50 @@ cout &lt;&lt; setw(16) &lt;&lt; "unsigned long: ";
 
 <p>In this particular case, it was an unavoidable choice, because, being one of the first examples I gave you, I didn’t want to complicate things too much for you, but this isn’t the right way to write code.
 It’s wrong (or, at the very least, risky) to mix data processing with interface functions, especially in a case like this, where part of the output is already delegated to a specific function.
-Better to let the <code>dimensione</code> function handle all the output, while the <code>main</code> function limits itself to defining the flow of processing, calling the output function for the data types we’re interested in:</p>
+Better to let the <code>dimension</code> function handle all the output, while the <code>main</code> function limits itself to defining the flow of processing, calling the output function for the data types we’re interested in:</p>
 
-<pre><code>/** 
- * @file funzioni-limiti-modificato.cpp
- * Esempio sui limiti del C++ con output in un'unica funzione.
+<pre><code>/**
+ * @file functions-limits-modified.cpp
+ * Example on C++ limits with output in a single function.
  */
 
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
+#include &lt;iomanip&gt;
 #include &lt;limits&gt;
 #include &lt;typeinfo&gt;
 #include &lt;cxxabi.h&gt;
 
 using namespace std;
 
-/** 
- * Mostra il nome, la dimensione e i valori minimi 
- * e massimi per il tipo di dato corrente.
+/**
+ * Displays the name, the size, and the minimum and
+ * maximum values for the current data type.
  */
 template&lt;typename T&gt;
-void dimensione()
+void dimension()
 {
-    cout &lt;&lt; setw(14)  
-         &lt;&lt; abi::__cxa_demangle(typeid(T).name(), NULL, NULL, NULL) 
+    cout &lt;&lt; setw(14)
+         &lt;&lt; abi::__cxa_demangle(typeid(T).name(), NULL, NULL, NULL)
          &lt;&lt; ": "
          &lt;&lt; sizeof(T) &lt;&lt; " bytes,"
-         &lt;&lt; setw(4)   &lt;&lt; "da:"   
+         &lt;&lt; setw(6)   &lt;&lt; "from:"
          &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::min()
-         &lt;&lt; setw(4)   &lt;&lt; "a:"    
-         &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::max() 
+         &lt;&lt; setw(4)   &lt;&lt; "to:"
+         &lt;&lt; setw(21)  &lt;&lt; numeric_limits&lt;T&gt;::max()
          &lt;&lt; endl;
 }
 
-/** 
- * Il nuovo codice della funzione main:  più compatto 
- * e più facile da leggere o modificare.
+/**
+ * The new code of the main function: more compact
+ * and easier to read or modify.
  */
 int main(int argc, char** argv)
-{    
-    dimensione&lt;int&gt;();
-    dimensione&lt;short int&gt;();
-    dimensione&lt;unsigned short&gt;();
-    dimensione&lt;long int&gt;();
-    dimensione&lt;unsigned long&gt;();
+{
+    dimension&lt;int&gt;();
+    dimension&lt;short int&gt;();
+    dimension&lt;unsigned short&gt;();
+    dimension&lt;long int&gt;();
+    dimension&lt;unsigned long&gt;();
     return 0;
 }
 
@@ -243,13 +243,13 @@ int main(int argc, char** argv)
 For now, just accept it on faith; I’ll explain how the <code>::</code> operator behaves when we talk about classes.
 The output of this code is identical to that of the previous example; if anything, it’s a bit better, because I reduced the width of the first column from 16 to 14 characters, and did so by modifying a single <code>setw(14)</code> instruction, instead of the six in the previous code:</p>
 
-<pre><code>% g++ src/cpp/funzioni-limiti-modificato.cpp -o src/out/esempio
-% src/out/esempio                                              
-           int: 4 bytes, da:          -2147483648  a:           2147483647
-         short: 2 bytes, da:               -32768  a:                32767
-unsigned short: 2 bytes, da:                    0  a:                65535
-          long: 8 bytes, da: -9223372036854775808  a:  9223372036854775807
- unsigned long: 8 bytes, da:                    0  a: 18446744073709551615
+<pre><code>% g++ src/cpp/functions-limits-modified.cpp -o src/out/example
+% src/out/example                                              
+           int: 4 bytes, from:          -2147483648 to:           2147483647
+         short: 2 bytes, from:               -32768 to:                32767
+unsigned short: 2 bytes, from:                    0 to:                65535
+          long: 8 bytes, from: -9223372036854775808 to:  9223372036854775807
+ unsigned long: 8 bytes, from:                    0 to: 18446744073709551615
 </code></pre>
 
 <hr />
@@ -257,130 +257,130 @@ unsigned short: 2 bytes, da:                    0  a:                65535
 <p>Functions are one of C++’s <a href="/en/data-types#funzioni">data types</a>, and like all data types, they can be <em>declared</em> and <em>defined</em>.
 The <a id="dichiarazione">declaration</a> of a function establishes its return type and the parameters it requires as input:</p>
 
-<pre><code>float scorporaIVA(long stipendio, float aliquota);
+<pre><code>float removeTax(long salary, float rate);
 </code></pre>
 
 <p>The <a id="definizione">definition</a> of a function establishes its behavior:</p>
 
-<pre><code>float scorporaIVA(long stipendio, float aliquota)
+<pre><code>float removeTax(long salary, float rate)
 {
-    float valore;
-    valore = stipendio / ((100 + aliquota) / 100);
-    return valore;
+    float value;
+    value = salary / ((100 + rate) / 100);
+    return value;
 }
 </code></pre>
 
 <p>As I told you when we talked about <a href="/en/programming-languages">programming languages</a>, generating an executable file happens in two stages: first the compiler converts the C++ code into an <em>object file</em>, then the <em>linker</em> turns the object files (there could be more than one) into a single executable.
 For this process to work, a function’s <em>declaration</em> must be present in every piece of code that uses it, so the compiler can check that it’s being used correctly; the <em>definition</em>, by contrast, must appear only once.</p>
 
-<pre><code>/** 
- * @file funzioni-stipendio-main.cpp
- * Funzione main del programma con file oggetto separati.
+<pre><code>/**
+ * @file functions-salary-main.cpp
+ * Main function of the program with separate object files.
  */
-#include &lt;iostream&gt; 
-
-/** 
- * Dichiarazione della funzione raddoppiaStipendio. 
- * L'ho messa qui per semplicità: di solito, le dichiarazioni
- * si trovano in un file di include separato.
- */
-float raddoppiaStipendio(float stipendio);
+#include &lt;iostream&gt;
 
 /**
- * La funzione main richiama la funzione raddoppiaStipendio,
- * che è definita in un altro file sorgente.
+ * Declaration of the doubleSalary function.
+ * I put it here for simplicity: usually, declarations
+ * live in a separate include file.
+ */
+float doubleSalary(float salary);
+
+/**
+ * The main function calls the doubleSalary function,
+ * which is defined in another source file.
  */
 int main(int argc, char** argv)
-{        
-    std::cout &lt;&lt; raddoppiaStipendio(1500) &lt;&lt; std::endl;    
+{
+    std::cout &lt;&lt; doubleSalary(1500) &lt;&lt; std::endl;
     return 0;
 }
 
 </code></pre>
 
-<pre><code>/** 
- * @file funzioni-stipendio-funz.cpp
- * Funzione del programma con file oggetto separati.
+<pre><code>/**
+ * @file functions-salary-func.cpp
+ * Function of the program with separate object files.
  */
 
-/** 
- * Definizione della funzione raddoppiaStipendio. 
+/**
+ * Definition of the doubleSalary function.
  */
-float raddoppiaStipendio(float stipendio)
+float doubleSalary(float salary)
 {
-    return stipendio * 2;
+    return salary * 2;
 }
 
 </code></pre>
 <p>If we compile the two files above separately, adding the <code>-c</code> parameter, which tells the compiler to generate only the object file without invoking the linker to produce an executable:</p>
 
-<pre><code>% g++ -c src/cpp/funzioni-stipendio-main.cpp -o src/out/main.o
-% g++ -c src/cpp/funzioni-stipendio-funz.cpp -o src/out/funz.o
+<pre><code>% g++ -c src/cpp/functions-salary-main.cpp -o src/out/main.o
+% g++ -c src/cpp/functions-salary-func.cpp -o src/out/func.o
 </code></pre>
 <p>and then generate an executable file using the two object files:</p>
 
-<pre><code>% g++ -o src/out/esempio src/out/main.o src/out/funz.o        
+<pre><code>% g++ -o src/out/example src/out/main.o src/out/func.o        
 </code></pre>
-<p>we’ll get three files, two <em>object files</em> and the executable file <code>esempio</code>, which will give the expected result:</p>
+<p>we’ll get three files, two <em>object files</em> and the executable file <code>example</code>, which will give the expected result:</p>
 
 <pre><code>% ls -1 src/out                                               
-esempio
-funz.o
+example
+func.o
 main.o
 
-% src/out/esempio                                             
+% src/out/example                                             
 3000
 </code></pre>
 
 <p>But since I’m lazy, in the examples I’ll give you, I’ll always use a single command for compiling and <em>linking</em> the programs:</p>
 
-<pre><code>g++ src/cpp/funzioni-stipendio-funz.cpp  \                                                       
-    src/cpp/funzioni-stipendio-main.cpp  \
-    -o src/out/esempio
-% src/out/esempio                                                                                 
+<pre><code>g++ src/cpp/functions-salary-func.cpp  \                                                       
+    src/cpp/functions-salary-main.cpp  \
+    -o src/out/example
+% src/out/example                                                                                 
 3000
 </code></pre>
 
-<p>If we didn’t declare the <code>raddoppiaStipendio</code> function in the file that contains the <code>main</code> function, the compiler would give us the error:</p>
+<p>If we didn’t declare the <code>doubleSalary</code> function in the file that contains the <code>main</code> function, the compiler would give us the error:</p>
 
-<pre><code>src/cpp/funzioni-stipendio-main.cpp:19:18: error: use of undeclared identifier 'raddoppiaStipendio'
-    std::cout &lt;&lt; raddoppiaStipendio(1500) &lt;&lt; std::endl;                     ^
+<pre><code>src/cpp/functions-salary-main.cpp:19:18: error: use of undeclared identifier 'doubleSalary'
+    std::cout &lt;&lt; doubleSalary(1500) &lt;&lt; std::endl;                     ^
 1 error generated.
 </code></pre>
 
 <p>We would get the same error if we defined a function after another part of the program had already called it:</p>
 
-<pre><code>/** 
- * @file funzioni-stipendio-errore.cpp
- * Funzione che genera un errore di compilazione.
+<pre><code>/**
+ * @file functions-salary-error.cpp
+ * Function that generates a compile error.
  */
-#include &lt;iostream&gt; 
+#include &lt;iostream&gt;
 
 /**
- * La funzione main richiama la funzione raddoppiaStipendio,
- * ma il compilatore ancora non sa che esiste: errore.
+ * The main function calls the doubleSalary function,
+ * but the compiler doesn't know it exists yet: error.
  */
 int main(int argc, char** argv)
-{        
-    std::cout &lt;&lt; raddoppiaStipendio(1500) &lt;&lt; std::endl;    
+{
+    std::cout &lt;&lt; doubleSalary(1500) &lt;&lt; std::endl;
     return 0;
 }
 
-/** 
- * Definizione della funzione raddoppiaStipendio DOPO
- * il suo utilizzo da parte della funzione main. 
+/**
+ * Definition of the doubleSalary function AFTER
+ * its use by the main function.
  */
-float raddoppiaStipendio(float stipendio)
+float doubleSalary(float salary)
 {
-    return stipendio * 2;
+    return salary * 2;
 }
 
 </code></pre>
 
-<pre><code>g++ -c src/cpp/funzioni-stipendio-errore.cpp                                                    
+<pre><code>g++ -c src/cpp/functions-salary-error.cpp                                                    
 
-src/cpp/funzioni-stipendio-errore.cpp:13:18: error: use of undeclared identifier 'raddoppiaStipendio'
-    std::cout &lt;&lt; raddoppiaStipendio(1500) &lt;&lt; std::endl;    
+src/cpp/functions-salary-error.cpp:13:18: error: use of undeclared identifier 'doubleSalary'
+    std::cout &lt;&lt; doubleSalary(1500) &lt;&lt; std::endl;    
                  ^
 1 error generated.
 
@@ -388,41 +388,41 @@ src/cpp/funzioni-stipendio-errore.cpp:13:18: error: use of undeclared identifier
 
 <p>When writing a program in a single source file, you must either define the various functions before they’re used, putting the <code>main</code> function at the end, or declare them at the top of the file.
 (You don’t actually have to put them all at the top of the file, the declaration just has to come before the first use, but that’s more awkward: put them at the top.)
-You would get a compile error even if you tried to split the <code>main</code> function and the <code>dimensione</code> function of the example above into two separate files, even if you declared <code>dimensione</code> before its use in the <code>main</code> function:</p>
+You would get a compile error even if you tried to split the <code>main</code> function and the <code>dimension</code> function of the example above into two separate files, even if you declared <code>dimension</code> before its use in the <code>main</code> function:</p>
 
-<pre><code>% g++ src/cpp/funzioni-limiti-main.cpp -c -o src/out/main.o         
-src/cpp/funzioni-limiti-main.cpp:19:5: error: use of undeclared identifier 'dimensione'
-    dimensione&lt;int&gt;();
+<pre><code>% g++ src/cpp/functions-limits-main.cpp -c -o src/out/main.o         
+src/cpp/functions-limits-main.cpp:19:5: error: use of undeclared identifier 'dimension'
+    dimension&lt;int&gt;();
     ^
-src/cpp/funzioni-limiti-main.cpp:19:19: error: expected '(' for function-style cast or type construction
-    dimensione&lt;int&gt;();
+src/cpp/functions-limits-main.cpp:19:19: error: expected '(' for function-style cast or type construction
+    dimension&lt;int&gt;();
                ~~~^
-src/cpp/funzioni-limiti-main.cpp:19:21: error: expected expression
-    dimensione&lt;int&gt;();
+src/cpp/functions-limits-main.cpp:19:21: error: expected expression
+    dimension&lt;int&gt;();
                     ^
-src/cpp/funzioni-limiti-main.cpp:20:5: error: use of undeclared identifier 'dimensione'
-    dimensione&lt;short int&gt;();
+src/cpp/functions-limits-main.cpp:20:5: error: use of undeclared identifier 'dimension'
+    dimension&lt;short int&gt;();
     ^
-src/cpp/funzioni-limiti-main.cpp:20:22: error: expected '(' for function-style cast or type construction
-    dimensione&lt;short int&gt;();
+src/cpp/functions-limits-main.cpp:20:22: error: expected '(' for function-style cast or type construction
+    dimension&lt;short int&gt;();
                ~~~~~ ^
-src/cpp/funzioni-limiti-main.cpp:21:5: error: use of undeclared identifier 'dimensione'
-    dimensione&lt;unsigned short&gt;();
+src/cpp/functions-limits-main.cpp:21:5: error: use of undeclared identifier 'dimension'
+    dimension&lt;unsigned short&gt;();
     ^
-src/cpp/funzioni-limiti-main.cpp:21:25: error: expected '(' for function-style cast or type construction
-    dimensione&lt;unsigned short&gt;();
+src/cpp/functions-limits-main.cpp:21:25: error: expected '(' for function-style cast or type construction
+    dimension&lt;unsigned short&gt;();
                ~~~~~~~~ ^
-src/cpp/funzioni-limiti-main.cpp:22:5: error: use of undeclared identifier 'dimensione'
-    dimensione&lt;long int&gt;();
+src/cpp/functions-limits-main.cpp:22:5: error: use of undeclared identifier 'dimension'
+    dimension&lt;long int&gt;();
     ^
-src/cpp/funzioni-limiti-main.cpp:22:21: error: expected '(' for function-style cast or type construction
-    dimensione&lt;long int&gt;();
+src/cpp/functions-limits-main.cpp:22:21: error: expected '(' for function-style cast or type construction
+    dimension&lt;long int&gt;();
                ~~~~ ^
-src/cpp/funzioni-limiti-main.cpp:23:5: error: use of undeclared identifier 'dimensione'
-    dimensione&lt;unsigned long&gt;();
+src/cpp/functions-limits-main.cpp:23:5: error: use of undeclared identifier 'dimension'
+    dimension&lt;unsigned long&gt;();
     ^
-src/cpp/funzioni-limiti-main.cpp:23:25: error: expected '(' for function-style cast or type construction
-    dimensione&lt;unsigned long&gt;();
+src/cpp/functions-limits-main.cpp:23:25: error: expected '(' for function-style cast or type construction
+    dimension&lt;unsigned long&gt;();
                ~~~~~~~~ ^
 </code></pre>
 
@@ -440,37 +440,37 @@ For example, if you had to write extremely fast software, it might be better to 
 But if you duplicate instructions, you not only increase the size of the program, you also make it harder to read and modify, which is bad.
 In these cases, some increase in code size is unavoidable, but <em>inline functions</em> let you keep the code readable and modifiable:</p>
 
-<pre><code>/** 
- * @file funzioni-inline-1.cpp
- * Esempio di codice con istruzioni ripetute.
+<pre><code>/**
+ * @file functions-inline-1.cpp
+ * Example of code with repeated instructions.
  */
 
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
+#include &lt;iomanip&gt;
 #include &lt;fstream&gt;
 
-#define S_FILENAME  "src/out/esempio.txt"
+#define S_FILENAME  "src/out/example.txt"
 
 using namespace std;
 
 int main(int argc, char** argv)
-{        
-    /** 
-     * Crea una variabile di classe ofstraeam 
-     * per gestire il file di output  */
+{
+    /**
+     * Creates a variable of the ofstream class
+     * to handle the output file  */
     ofstream doc;
 
-    /** Apre il file di output */
+    /** Opens the output file */
     doc.open (S_FILENAME);
-    cout &lt;&lt; "ho aperto il file " &lt;&lt; endl;
+    cout &lt;&lt; "opened the file " &lt;&lt; endl;
 
-    /** Scrive sul file di output */
-    doc &lt;&lt; "Testo del documento.\n";
-    cout &lt;&lt; "ho scritto sul file" &lt;&lt; endl;
+    /** Writes to the output file */
+    doc &lt;&lt; "Document text.\n";
+    cout &lt;&lt; "wrote to the file" &lt;&lt; endl;
 
-    /** Chiude il file di output */
+    /** Closes the output file */
     doc.close();
-    cout &lt;&lt; "ho chiuso il file" &lt;&lt; endl;
+    cout &lt;&lt; "closed the file" &lt;&lt; endl;
 
     return 0;
 }
@@ -479,51 +479,50 @@ int main(int argc, char** argv)
 <!-- @todo: spiegare cosa sia la classe ofstream  -->
 <p>Compiling and running the code above, you get:</p>
 
-<pre><code>% g++ src/cpp/funzioni-inline-1.cpp -o src/out/esempio
-% ./src/out/esempio                                   
-ho aperto il file
-ho scritto sul file
-ho chiuso il file
+<pre><code>% g++ src/cpp/functions-inline-1.cpp -o src/out/example
+% ./src/out/example                                   
+opened the file
+wrote to the file
+closed the file
 </code></pre>
 
 <p>The output instructions in the example differ only in the text to display, and could easily be isolated into a standalone function.</p>
 
-<pre><code>/** 
- * @file funzioni-inline-2.cpp
- * Esempio di codice con funzione di output unica.
+<pre><code>/**
+ * @file functions-inline-2.cpp
+ * Example of code with a single output function.
  */
 
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
-#include &lt;fstream&gt; 
+#include &lt;fstream&gt;
 
-#define S_FILENAME  "src/out/esempio.txt"
+#define S_FILENAME  "src/out/example.txt"
 
 using namespace std;
 
-/** Funzione di output unica */
-void log(const char* messaggio)
+/** Single output function */
+void log(const char* message)
 {
-    /** Mostra il messaggio a video */
-    cout &lt;&lt; messaggio &lt;&lt; endl;
+    /** Displays the message on screen */
+    cout &lt;&lt; message &lt;&lt; endl;
 }
 
 int main(int argc, char** argv)
-{        
-    /** Crea una variabile per gestire il file di output */
+{
+    /** Creates a variable to handle the output file */
     ofstream doc;
 
-    /** Apre il file di output */
+    /** Opens the output file */
     doc.open (S_FILENAME);
-    log("ho aperto il file");
+    log("opened the file");
 
-    /** Scrive sul file di output */
-    doc &lt;&lt; "Testo del documento.\n";
-    log("ho scritto sul file");
+    /** Writes to the output file */
+    doc &lt;&lt; "Document text.\n";
+    log("wrote to the file");
 
-    /** Chiude il file di output */
+    /** Closes the output file */
     doc.close();
-    log("ho scritto il file");
+    log("closed the file");
 
     return 0;
 }
@@ -532,10 +531,10 @@ int main(int argc, char** argv)
 
 <p>The output of this program is identical to that of the previous example, but if you add the <code>inline</code> keyword before the return type of the <code>log</code> function:</p>
 
-<pre><code>inline void log(const char* messaggio)
+<pre><code>inline void log(const char* message)
 {
-    /** Mostra il messaggio a video */
-    cout &lt;&lt; messaggio &lt;&lt; endl;
+    /** Displays the message on screen */
+    cout &lt;&lt; message &lt;&lt; endl;
 }
 </code></pre>
 
@@ -543,81 +542,81 @@ int main(int argc, char** argv)
 <!-- @todo: specificare che il compilatore può decidere di non rendere inline la funzione -->
 Even though the executable’s size has grown, the code is still easy to read and modify:</p>
 
-<pre><code>/** 
- * @file funzioni-inline-3.cpp
- * Esempio di funzione inline.
+<pre><code>/**
+ * @file functions-inline-3.cpp
+ * Example of an inline function.
  */
 
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
-#include &lt;fstream&gt; 
+#include &lt;iomanip&gt;
+#include &lt;fstream&gt;
 
-#define LOG_DEBUG   1
-#define LOG_AVVISO  2
-#define LOG_ERRORE  3
+#define LOG_DEBUG    1
+#define LOG_WARNING  2
+#define LOG_ERROR    3
 
-#define S_DEBUG     "debug"
-#define S_AVVISO    "avviso"
-#define S_ERRORE    "errore"
+#define S_DEBUG      "debug"
+#define S_WARNING    "warning"
+#define S_ERROR      "error"
 
 #define ERR_NO_FILE_NAME  -1
 #define ERR_NO_FILE_OPEN  -2
 
 using namespace std;
 
-/** Funzione di output inline */
-inline void log(const char* messaggio, int livello)
+/** Inline output function */
+inline void log(const char* message, int level)
 {
-    /** Definisce la spaziatura del primo campo */
-    cerr &lt;&lt; setw(7);  
-    
-    /** Scrive il livello del messaggio */
-    switch(livello) {
-        case LOG_DEBUG:  cerr &lt;&lt; S_DEBUG ; break;
-        case LOG_AVVISO: cerr &lt;&lt; S_AVVISO; break;
-        default:         cerr &lt;&lt; S_ERRORE; break;
+    /** Sets the width of the first field */
+    cerr &lt;&lt; setw(8);
+
+    /** Writes the message level */
+    switch(level) {
+        case LOG_DEBUG:   cerr &lt;&lt; S_DEBUG  ; break;
+        case LOG_WARNING: cerr &lt;&lt; S_WARNING; break;
+        default:          cerr &lt;&lt; S_ERROR  ; break;
     }
-    
-    /** Scrive il testo del messaggio */
-    cerr &lt;&lt; ": " &lt;&lt; messaggio &lt;&lt; endl;
+
+    /** Writes the message text */
+    cerr &lt;&lt; ": " &lt;&lt; message &lt;&lt; endl;
 }
 
 int main(int argc, char** argv)
-{        
-    /** Crea una variabile per gestire il file di output */
+{
+    /** Creates a variable to handle the output file */
     ofstream doc;
 
-    /** Puntatore per il nome del file di output */
+    /** Pointer for the output file name */
     const char* filename = NULL;
 
-    /** Se manca il nome del file di output, errore */
+    /** If the output file name is missing, error */
     if(argc &lt; 2) {
-        log("specificare il path del file", LOG_ERRORE);
+        log("specify the file path", LOG_ERROR);
         return ERR_NO_FILE_NAME;
     }
-    
-    /** Legge il nome del file di output */
+
+    /** Reads the output file name */
     filename = argv[1];
-    
-    /** Prova ad aprire il file di output */    
+
+    /** Tries to open the output file */
     doc.open (argv[1]);
-    
-    /** Se c'è stato un errore, lo segnala ed esce */
+
+    /** If there was an error, reports it and exits */
     if(!doc.is_open()) {
-        log("impossibile aprire il file", LOG_ERRORE);    
-        return ERR_NO_FILE_OPEN;    
+        log("cannot open the file", LOG_ERROR);
+        return ERR_NO_FILE_OPEN;
     }
-    
-    /** OK, il file è pronto */
-    log("ho aperto il file", LOG_AVVISO);
 
-    /** Scrive sul file di output */
-    doc &lt;&lt; "Testo del documento.\n";
-    log("ho scritto sul file", LOG_DEBUG);
+    /** OK, the file is ready */
+    log("opened the file", LOG_WARNING);
 
-    /** Chiude il file di output */
+    /** Writes to the output file */
+    doc &lt;&lt; "Document text.\n";
+    log("wrote to the file", LOG_DEBUG);
+
+    /** Closes the output file */
     doc.close();
-    log("ho chiuso il file", LOG_AVVISO);
+    log("closed the file", LOG_WARNING);
 
     return 0;
 }
@@ -626,18 +625,18 @@ int main(int argc, char** argv)
 
 <p>If you compile the code and run it, you get:</p>
 
-<pre><code>% g++ src/cpp/funzioni-inline-3.cpp -o src/out/esempio
+<pre><code>% g++ src/cpp/functions-inline-3.cpp -o src/out/example
 
-% src/out/esempio                                     
- errore: specificare il path del file
+% src/out/example                                     
+  error: specify the file path
 
-% src/out/esempio /esempio.txt                        
- errore: impossibile aprire il file
+% src/out/example /example.txt                        
+  error: cannot open the file
 
-% src/out/esempio src/out/esempio.txt                 
- avviso: ho aperto il file
-  debug: ho scritto sul file
- avviso: ho chiuso il file
+% src/out/example src/out/example.txt                 
+warning: opened the file
+  debug: wrote to the file
+warning: closed the file
 </code></pre>
 
 <p>For the record: in the second case, the program fails because the user doesn’t have write privileges in the <em>root directory</em>.</p>
@@ -652,44 +651,44 @@ int main(int argc, char** argv)
 
 <p>In general, though, the lifecycle of a function involves three distinct phases: <em>declaration</em>, <em>definition</em>, and its subsequent use:</p>
 
-<pre><code>/** Dichiarazione */
-float raddoppiaStipendio(float stipendio);
+<pre><code>/** Declaration */
+float doubleSalary(float salary);
 
-/** Definizione */
-float raddoppiaStipendio(float stipendio)
+/** Definition */
+float doubleSalary(float salary)
 {
-    return stipendio * 2;
+    return salary * 2;
 }
 
-/** Chiamata */
-float importo = raddoppiaStipendio(1500);
+/** Call */
+float amount = doubleSalary(1500);
 
 </code></pre>
 
 <p>Only the <code>main</code> function is exempt from this rule, because it requires no declaration and is never called by other functions.
 <!-- Qui si potrebbe fare un parallelo con gli elementi costitutivi dell'Universo, secondo lo Spazionismo, ma preferisco separare la dottrina dal manuale C++ vero e proprio -->
-The variable <code>float stipendio</code>, which appears in parentheses both in the declaration and in the definition of the function, is called the function’s <em>parameter</em>.
+The variable <code>float salary</code>, which appears in parentheses both in the declaration and in the definition of the function, is called the function’s <em>parameter</em>.
 The value <code>1500</code>, assigned to the parameter in the function call, is called the <em>argument</em>.
 These variables are also called <em>formal parameters</em>, in the case of the declaration and the definition, and <em>actual parameters</em>, in the case of the call.
 When you call a function, you can pass it arguments in three ways: by <em>value</em>, by <em>reference</em>, by <em>pointer</em>:</p>
 
-<pre><code>/** 
- * @file funzioni-argomenti.cpp
- * Esempio di gestione degli argomenti di una funzione.
+<pre><code>/**
+ * @file functions-arguments.cpp
+ * Example of how function arguments are handled.
  */
 
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
-#include &lt;fstream&gt; 
+#include &lt;iomanip&gt;
+#include &lt;fstream&gt;
 
 using namespace std;
 
 /**
-*   Chiamata per valore: tutto quello che succede qui
-*   alle variabili a e b non influenza le variabili 
-*   x e y della funzione chiamante.
+*   Call by value: whatever happens here to the
+*   variables a and b has no effect on the x and y
+*   variables of the calling function.
 */
-void perValore(int a, int b)
+void byValue(int a, int b)
 {
     int tmp = a;
     a = b;
@@ -698,11 +697,11 @@ void perValore(int a, int b)
 }
 
 /**
-*   Chiamata per reference: tutto quello che succede qui
-*   alle variabili a e b è come se fosse fatto alle variabili
-*   x e y della funzione chiamante.
+*   Call by reference: whatever happens here to the
+*   variables a and b is as if it were done to the
+*   x and y variables of the calling function.
 */
-void perRiferimento(int &amp;a, int &amp;b)
+void byReference(int &amp;a, int &amp;b)
 {
     int tmp = a;
     a = b;
@@ -711,11 +710,12 @@ void perRiferimento(int &amp;a, int &amp;b)
 }
 
 /**
-*   Chiamata per puntatore: anche qui, quello che succede 
-*   alle variabili a e b avviene anche alle variabili x e y 
-*   della funzione chiamante, ma il codice è meno chiaro.
+*   Call by pointer: here too, whatever happens to
+*   the variables a and b also happens to the x and y
+*   variables of the calling function, but the code
+*   is less clear.
 */
-void perPuntatore(int *a, int *b)
+void byPointer(int *a, int *b)
 {
     int tmp = *a;
     *a = *b;
@@ -724,37 +724,37 @@ void perPuntatore(int *a, int *b)
 }
 
 int main(int argc, char** argv)
-{        
-    int  x = 11; int  y = 22;    
-    cout &lt;&lt; setw(20) &lt;&lt; "Valore iniziale: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
-    
+{
+    int  x = 11; int  y = 22;
+    cout &lt;&lt; setw(20) &lt;&lt; "Initial value: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
+
     int* p = &amp;x;
     int&amp; r = x;
-    
+
     cout &lt;&lt; "p:" &lt;&lt; p &lt;&lt; ",r=" &lt;&lt; r &lt;&lt; endl;
 
     /**
-    *   Passaggio per valore: l'argomento della chiamata
-    *   a funzione è il valore delle variabili x e y:
+    *   Passing by value: the argument of the function
+    *   call is the value of the variables x and y:
     */
-    perValore(x,y);
-    cout &lt;&lt; setw(20) &lt;&lt; "perValore: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
+    byValue(x,y);
+    cout &lt;&lt; setw(20) &lt;&lt; "byValue: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
 
     /**
-    *   Passaggio per reference: l'argomento della chiamata
-    *   a funzione sono le variabili x e y, ma la funzione 
-    *   utilizzerà dei loro alias, non il loro valore:
+    *   Passing by reference: the arguments of the function
+    *   call are the variables x and y, but the function
+    *   will use aliases of them, not their value:
     */
-    perRiferimento(x,y);
-    cout &lt;&lt; setw(20) &lt;&lt; "perRiferimento: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
+    byReference(x,y);
+    cout &lt;&lt; setw(20) &lt;&lt; "byReference: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
 
     /**
-    *   Passaggio per puntatore: l'argomento della chiamata
-    *   è esplicitamente l'indirizzo delle variabili x e y:
+    *   Passing by pointer: the argument of the call
+    *   is explicitly the address of the variables x and y:
     */
-    perPuntatore(&amp;x,&amp;y);
-    cout &lt;&lt; setw(20) &lt;&lt; "perPuntatore: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
-    
+    byPointer(&amp;x,&amp;y);
+    cout &lt;&lt; setw(20) &lt;&lt; "byPointer: x=" &lt;&lt; x &lt;&lt; ", y=" &lt;&lt; y &lt;&lt; endl;
+
     return 0;
 }
 
@@ -762,41 +762,41 @@ int main(int argc, char** argv)
 
 <p>The output of this program is:</p>
 
-<pre><code>% g++ src/cpp/funzioni-argomenti.cpp -o src/out/esempio
-% src/out/esempio                                      
-Valore iniziale: x=11, y=22
-      perValore: x=11, y=22
- perRiferimento: x=22, y=11
-   perPuntatore: x=11, y=22
+<pre><code>% g++ src/cpp/functions-arguments.cpp -o src/out/example
+% src/out/example                                      
+   Initial value: x=11, y=22
+         byValue: x=11, y=22
+    byReference: x=22, y=11
+      byPointer: x=11, y=22
 </code></pre>
 
 <p>Passing a <em>reference</em> to a variable as a function argument is equivalent to passing the variable itself.
 This can be useful for functions that require large objects as input, or that need to directly modify the value of the variables passed to them as parameters, but it should be avoided in any other case, because it lets the program modify the value of a variable in a sneaky way, which can be very hard to spot when debugging.
 Another thing worth knowing, about function parameters, is that they can have default values:</p>
 
-<pre><code>/** 
- * @file _man/src/funzioni-parametri-default.cpp
- * Esempio di funzione con parametri di default.
+<pre><code>/**
+ * @file _man/src/functions-default-parameters.cpp
+ * Example of a function with default parameters.
  */
 
 #include &lt;iostream&gt;
 
 using namespace std;
 
-/** Funzione con parametri di default  */
-void stampaValore(int valore = 0)
+/** Function with default parameters  */
+void printValue(int value = 0)
 {
-    /** Stampa a video il valore del parametro */
-    cout &lt;&lt; "Valore: " &lt;&lt; valore &lt;&lt; endl;
+    /** Prints the parameter's value on screen */
+    cout &lt;&lt; "Value: " &lt;&lt; value &lt;&lt; endl;
 }
 
 int main(int argc, char** argv)
-{        
-    /** Richiama la funzione con un argomento */
-    stampaValore(123);
+{
+    /** Calls the function with an argument */
+    printValue(123);
 
-    /** Richiama la funzione senza argomenti */
-    stampaValore();
+    /** Calls the function without arguments */
+    printValue();
 
     return 0;
 }
@@ -804,35 +804,35 @@ int main(int argc, char** argv)
 </code></pre>
 <p>The output of this program will be:</p>
 
-<pre><code>% g++ src/cpp/funzioni-parametri-default.cpp -o src/out/esempio
-% src/out/esempio
-Valore: 123
-Valore: 0
+<pre><code>% g++ src/cpp/functions-default-parameters.cpp -o src/out/example
+% src/out/example
+Value: 123
+Value: 0
 </code></pre>
 
 <p>A parameter’s default value must be specified in the function’s declaration.
 Remember, though, that when you assign a default value to one of a function’s parameters, you must do the same for every parameter that follows it, if there are any:</p>
 
-<pre><code>void funz1(float f, void * ptr = NULL);        // OK
-void funz2(double d, int b = 2, char c = 'c'); // OK
-void funz3(int i = 3, int n );                 // ERRORE!
+<pre><code>void func1(float f, void * ptr = NULL);        // OK
+void func2(double d, int b = 2, char c = 'c'); // OK
+void func3(int i = 3, int n );                 // ERROR!
 </code></pre>
 
 <p>Default values are used when one or more of a function’s parameters is often assigned the same value.
-For example, if the <code>log</code> function we saw in the previous example were mostly called with the same value for the <code>livello</code> parameter, we could assign it as a default:</p>
+For example, if the <code>log</code> function we saw in the previous example were mostly called with the same value for the <code>level</code> parameter, we could assign it as a default:</p>
 
-<pre><code>inline void log(const char* messaggio, int livello = LOG_AVVISO);
+<pre><code>inline void log(const char* message, int level = LOG_WARNING);
 </code></pre>
 
 <p>making the code faster and easier to write:</p>
 
-<pre><code>log("ho aperto il file");
+<pre><code>log("opened the file");
 
-doc &lt;&lt; "Testo del documento.\n";
-log("ho scritto sul file", LOG_DEBUG);
+doc &lt;&lt; "Document text.\n";
+log("wrote to the file", LOG_DEBUG);
 
 doc.close();
-log("ho chiuso il file");
+log("closed the file");
 </code></pre>
 
 <hr id="parametri-variabili" />
@@ -843,47 +843,47 @@ I told you that the Good Programmer, while writing code, always asks whether the
 Today you’ve seen proof of that: we improved the first example in the section on <code>inline</code> functions by unifying message handling into a single function, and then improved it again by making that function <code>inline</code>.
 There’s a problem, though: the program’s output:</p>
 
-<pre><code>% ./src/out/esempio                                   
-ho aperto il file
-ho scritto sul file
-ho chiuso il file
+<pre><code>% ./src/out/example                                   
+opened the file
+wrote to the file
+closed the file
 </code></pre>
 
 <p>only works if there’s a single file to handle, as in our case.
 But if there were two (or more) input or output files, it would be useful to know <em>which</em> file the message refers to.
 To solve the problem, we could increase the number of formal parameters of the <code>log</code> function:</p>
 
-<pre><code>void log(int livello, const char* messaggio, const char* file);
+<pre><code>void log(int level, const char* message, const char* file);
 </code></pre>
 
 <p>but the new parameter would be useless for calls like:</p>
 
-<pre><code>log(LOG_ERRORE, "specificare il path del file");
+<pre><code>log(LOG_ERROR, "specify the file path");
 </code></pre>
 
 <p>Alternatively, we could build the message inside the calling function:</p>
 
-<pre><code>string s1 = "ho chiuso il file: ";
+<pre><code>string s1 = "closed the file: ";
 string s2 = filename;
 string s3 = s1 + s2;
-log(LOG_AVVISO, s3.c_str());
+log(LOG_WARNING, s3.c_str());
 </code></pre>
 
 <p>but this would make the code heavier, more complicated, and slower; it would also shift back into the calling functions part of the output functionality we had happily isolated into the <code>log</code> function.
 The correct solution to this kind of problem is <em>functions with variable parameters</em>.
 A typical example of this kind of function is the C language’s <code>printf</code> function, whose first argument is used to determine the type and number of the arguments that follow it:</p>
 
-<pre><code>/** Dichiarazione, nel file stdio.h */
+<pre><code>/** Declaration, in stdio.h */
 int printf(const char *format, ...) ;
 
-/** Utilizzo */
-printf("stringa: %s; intero: %d", "codice errore", -1);
+/** Usage */
+printf("string: %s; integer: %d", "error code", -1);
 
 </code></pre>
 
 <p>To indicate variable arguments, in a function’s declaration, three dots are used after the fixed parameters:</p>
 
-<pre><code>void log(int livello, int n_parametri, ...);
+<pre><code>void log(int level, int n_params, ...);
 </code></pre>
 
 <p>In the function’s definition, to handle the parameters, you need to create a reading loop using three macros defined in the <code>stdarg.h</code> file:</p>
@@ -899,106 +899,107 @@ void va_end(va_list ap);
 
 <p><code>va_end</code> ends the processing of the parameters, and must always be called before the function returns.</p>
 
-<pre><code>/** 
- * @file funzioni-variabili.cpp
- * Esempio di funzione con parametri variabili.
+<pre><code>/**
+ * @file functions-variables.cpp
+ * Example of a function with variable parameters.
  */
 
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
-#include &lt;fstream&gt; 
+#include &lt;iomanip&gt;
+#include &lt;fstream&gt;
+#include &lt;cstdarg&gt;
 
-#define LOG_DEBUG   1
-#define LOG_AVVISO  2
-#define LOG_ERRORE  3
+#define LOG_DEBUG    1
+#define LOG_WARNING  2
+#define LOG_ERROR    3
 
-#define S_DEBUG     "debug"
-#define S_AVVISO    "avviso"
-#define S_ERRORE    "errore"
+#define S_DEBUG      "debug"
+#define S_WARNING    "warning"
+#define S_ERROR      "error"
 
 #define ERR_NO_FILE_NAME  -1
 #define ERR_NO_FILE_OPEN  -2
 
-#define S_ERR_NO_FILE_NAME  "specificare il path del file"
-#define S_ERR_NO_FILE_OPEN  "impossibile aprire il file:"
+#define S_ERR_NO_FILE_NAME  "specify the file path"
+#define S_ERR_NO_FILE_OPEN  "cannot open the file:"
 
 using namespace std;
 
-/** Funzione di output con parametri variabili */
-void log(int livello, int n_parametri, ...)
+/** Output function with variable parameters */
+void log(int level, int n_params, ...)
 {
 
-    /** Definisce la spaziatura del primo campo */
-    cerr &lt;&lt; setw(8);  
-    
-    /** Scrive il livello del messaggio */
-    switch(livello) {
-        case LOG_DEBUG:  cerr &lt;&lt; S_DEBUG ; break;
-        case LOG_AVVISO: cerr &lt;&lt; S_AVVISO; break;
-        default:         cerr &lt;&lt; S_ERRORE; break;
+    /** Sets the width of the first field */
+    cerr &lt;&lt; setw(8);
+
+    /** Writes the message level */
+    switch(level) {
+        case LOG_DEBUG:   cerr &lt;&lt; S_DEBUG  ; break;
+        case LOG_WARNING: cerr &lt;&lt; S_WARNING; break;
+        default:          cerr &lt;&lt; S_ERROR  ; break;
     }
 
-    /** Scrive il carattere di separazione */
+    /** Writes the separator character */
     cerr &lt;&lt; " | ";
 
-    /** Dichiara la variabile per la lista dei parametri */    
-    va_list lista_parametri;
-    
-    /** 
-     * Inizializza la lista dei parametri e considera
-     * tutti gli argomenti dopo n_parametri come variabili.
+    /** Declares the variable for the parameter list */
+    va_list param_list;
+
+    /**
+     * Initializes the parameter list and treats
+     * every argument after n_params as variable.
      */
-    va_start(lista_parametri, n_parametri);
+    va_start(param_list, n_params);
 
-    /** Legge tutti i parametri nella lista e li scrive a video */
-    for(int p = 1; p &lt;= n_parametri; p++) {        
-        cerr &lt;&lt; va_arg(lista_parametri, char*) ;        
-    }    
+    /** Reads all the parameters in the list and prints them on screen */
+    for(int p = 1; p &lt;= n_params; p++) {
+        cerr &lt;&lt; va_arg(param_list, char*) ;
+    }
 
-    /** Chiude la lista dei parametri */        
-    va_end(lista_parametri);
-    
-    /** Scrive il testo del messaggio */
+    /** Closes the parameter list */
+    va_end(param_list);
+
+    /** Writes the message text */
     cerr &lt;&lt; endl;
 
 }
 
 int main(int argc, char** argv)
-{        
-    /** Crea una variabile per gestire il file di output */
+{
+    /** Creates a variable to handle the output file */
     ofstream doc;
 
-    /** Puntatore per il nome del file di output */
+    /** Pointer for the output file name */
     const char* filename = NULL;
 
-    /** Se manca il nome del file di output, errore */
+    /** If the output file name is missing, error */
     if(argc &lt; 2) {
-        log(LOG_ERRORE, 1, S_ERR_NO_FILE_NAME);
+        log(LOG_ERROR, 1, S_ERR_NO_FILE_NAME);
         return ERR_NO_FILE_NAME;
     }
-    
-    /** Legge il nome del file di output */
+
+    /** Reads the output file name */
     filename = argv[1];
-    
-    /** Prova ad aprire il file di output */    
+
+    /** Tries to open the output file */
     doc.open (argv[1]);
-    
-    /** Se c'è stato un errore, lo segnala ed esce */
+
+    /** If there was an error, reports it and exits */
     if(!doc.is_open()) {
-        log(LOG_ERRORE, 2, S_ERR_NO_FILE_OPEN, filename);    
-        return ERR_NO_FILE_OPEN;    
+        log(LOG_ERROR, 2, S_ERR_NO_FILE_OPEN, filename);
+        return ERR_NO_FILE_OPEN;
     }
-    
-    /** OK, il file è pronto */
-    log(LOG_AVVISO, 2, "ho aperto il file: ", filename);
 
-    /** Scrive sul file di output */
-    doc &lt;&lt; "Testo del documento.\n";
-    log(LOG_DEBUG, 2, "ho scritto sul file: ", filename);
+    /** OK, the file is ready */
+    log(LOG_WARNING, 2, "opened the file: ", filename);
 
-    /** Chiude il file di output */
+    /** Writes to the output file */
+    doc &lt;&lt; "Document text.\n";
+    log(LOG_DEBUG, 2, "wrote to the file: ", filename);
+
+    /** Closes the output file */
     doc.close();
-    log(LOG_AVVISO, 2,  "ho chiuso il file: ", filename);
+    log(LOG_WARNING, 2,  "closed the file: ", filename);
 
     return 0;
 }
@@ -1007,18 +1008,18 @@ int main(int argc, char** argv)
 
 <p>The output of this code is:</p>
 
-<pre><code>% g++ src/cpp/funzioni-variabili.cpp -o src/out/esempio
+<pre><code>% g++ src/cpp/functions-variables.cpp -o src/out/example
 
-% src/out/esempio                    
-  errore | specificare il path del file
+% src/out/example                    
+  error | specify the file path
 
-% src/out/esempio /esempio.txt
-  errore | impossibile aprire il file:/esempio.txt
+% src/out/example /example.txt
+  error | cannot open the file:/example.txt
 
-% src/out/esempio src/out/esempio.txt
-  avviso | ho aperto il file: src/out/esempio.txt
-   debug | ho scritto sul file: src/out/esempio.txt
-  avviso | ho chiuso il file: src/out/esempio.txt
+% src/out/example src/out/example.txt
+ warning | opened the file: src/out/example.txt
+   debug | wrote to the file: src/out/example.txt
+ warning | closed the file: src/out/example.txt
 </code></pre>
 
 <!-- @todo: Aggiungere un paragrafo sui valori di default per i parametri -->
@@ -1027,43 +1028,43 @@ int main(int argc, char** argv)
 
 <p>At this point, all that’s left is to tell you about functions that call themselves, that is, <em>recursive functions</em>:</p>
 
-<pre><code>/** 
- * @file /src/funzioni-ricorsiva.cpp
- * Esempio di funzione ricorsiva.
+<pre><code>/**
+ * @file /src/functions-recursive.cpp
+ * Example of a recursive function.
  */
 
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
+#include &lt;iomanip&gt;
 
 using namespace std;
 
-/** Dichiarazione della funzione ricorsiva */
-long fattoriale(int n);
+/** Declaration of the recursive function */
+long factorial(int n);
 
-/** Funzione main prima della definizione */
+/** Main function before the definition */
 int main(int argc, char** argv)
-{   
+{
     int n = 9;
-    cout &lt;&lt; n &lt;&lt; "! = " &lt;&lt; fattoriale(n) &lt;&lt; endl;
+    cout &lt;&lt; n &lt;&lt; "! = " &lt;&lt; factorial(n) &lt;&lt; endl;
     return 0;
 }
 
-/** Definizione della funzione ricorsiva */
-long fattoriale(int n)
+/** Definition of the recursive function */
+long factorial(int n)
 {
-    long fatt = 1;
+    long fact = 1;
     if(n &gt; 1) {
-        fatt = n * fattoriale(n-1);
+        fact = n * factorial(n-1);
     }
-    return fatt;
+    return fact;
 }
 
 </code></pre>
 <p>If you compile and run this code, you get:</p>
 
-<pre><code>&gt; g++ src/cpp/funzioni-ricorsiva.cpp -o src/out/esempio
-&gt; src/out/esempio                                      
- 1 2 3 4 5 6 7 8 9
+<pre><code>&gt; g++ src/cpp/functions-recursive.cpp -o src/out/example
+&gt; src/out/example                                      
+9! = 362880
 </code></pre>
 
 <p>Be careful, though: a function that calls itself, if not written well, can generate an in[de]finite recursion, like two mirrors facing each other.
@@ -1076,7 +1077,7 @@ Another kind of recursion to be wary of is the kind sometimes used to lend credi
 <p>In a novel about the life of the Japanese swordsman Miyamoto Musashi, there’s a line that follows logically from the Roman proverb I told you about yesterday:</p>
 
 <blockquote>
-  <p>Non bisogna interferire nel funzionamento dell’Universo, ma prima è necessario capire quale sia, il funzionamento dell’Universo<a href="/en/notes#fn-musashi" class="nota" id="musashi">4</a></p>
+  <p>One must not interfere with the workings of the Universe, but first one must understand what the workings of the Universe are<a href="/en/notes#fn-musashi" class="nota" id="musashi">4</a></p>
 </blockquote>
 
 <p>The problem with novels is that they often tell you what to do, but almost never explain how, or why.
@@ -1095,13 +1096,15 @@ In the <em>Book of Five Rings</em>, he gave his disciples nine rules for life:
 --></p>
 
 <blockquote>
-
+  <ul> <li>Do not think dishonestly. <li>The Way is in training. <li>Become acquainted with every art. <li>Know the Ways of all professions. <li>Distinguish between gain and loss in worldly matters. <li>Develop intuitive judgment and understanding for everything. <li>Perceive those things which cannot be seen. <li>Pay attention even to trifles. <li>Do not do anything useless.
+</li></li></li></li></li></li></li></li></li></ul>
 </blockquote>
 
 <p>In the <em>Dokkodo</em>, written a week before his death, he was even more specific:</p>
 
 <blockquote>
-
+  <ul> <li>Accept everything just the way it is. <li>Do not seek pleasure for its own sake. <li>Do not, under any circumstances, depend on a partial feeling. <li>Think lightly of yourself and deeply of the world. <li>Be detached from desire your whole life long. <li>Do not regret what you have done. <li>Never be jealous. <li>Never let yourself be saddened by a separation. <li>Resentment and complaint are appropriate neither for oneself nor others. <li>Do not let yourself be guided by the feeling of lust or love. <li>In all things have no preferences. <li>Be indifferent to where you live. <li>Do not pursue the taste of good food. <li>Do not hold on to possessions you no longer need. <li>Do not act following customary beliefs. <li>Do not collect weapons or practice with weapons beyond what is useful. <li>Do not fear death. <li>Do not seek to possess either goods or fiefs for your old age. <li>Respect Buddha and the Gods without counting on their help. <li>You may abandon your own body but you must preserve your honour. <li>Never stray from the Way.
+</li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></ul>
 </blockquote>
 
 <p>These rules, which let Musashi reach the venerable age of sixty,<a href="/en/notes#fn-eta" class="nota" id="eta">5</a> after emerging victorious from just as many duels against all the finest swordsmen of his time, can help you understand how the Universe works, and what to do so as not to disturb it.
@@ -1132,7 +1135,7 @@ This is why Musashi prescribes knowing the Way of other trades: because there’
 This, for example, is the parallel he draws between the strategist and the carpenter:</p>
 
 <blockquote>
-  <p><a href="/en/notes#fn-5anelli" class="nota" id="5anelli">7</a></p>
+  <p>To build a house, materials must be carefully selected. For the outer pillars, straight and knot-free timber should be chosen, while for the inner ones, straight timber with minor defects may be used. For thresholds, lintels, fittings, and sliding doors, the finest-looking wood should be used, even if not too sturdy, and so on. For structural parts, visual appearance matters less than robustness. Lower-grade timber with many knots is used instead for scaffolding and, in the end, is burned.<a href="/en/notes#fn-5anelli" class="nota" id="5anelli">7</a></p>
 </blockquote>
 
 <p>What’s true for the carpenter, with a shift in perspective, is also true for the strategist, and could be true for you too, if you ever find yourself managing a project or a team.

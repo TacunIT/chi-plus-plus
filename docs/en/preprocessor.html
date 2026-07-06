@@ -51,7 +51,7 @@
     </a>
     <a
         title="Go to the table of contents"
-        href="/en/indice"
+        href="/en/toc"
     >
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
     </a>
@@ -114,9 +114,8 @@ For convenience, these elements are kept isolated inside certain files, called <
 When the preprocessor encounters an <code>include</code> directive, it replaces it with the contents of the file it refers to.
 For example, if more than one program needed to use the <code>Colore</code> class or the <code>ColoreRGB</code> struct we used in the program that displays the size of the <a href="/en/data-types#principali">main C++ data types</a>, these would need to be isolated in a separate file with a <code>.h</code> extension, to indicate that it’s a <em>header file</em>:</p>
 
-<pre><code>
-#ifndef _CLASS_COLORE
-#define _CLASS_COLORE 1
+<pre><code>#ifndef _CLASS_COLOR
+#define _CLASS_COLOR 1
 
 #define  RGB_RED    0xFF0000
 #define  RGB_GREEN  0x00FF00
@@ -127,7 +126,7 @@ For example, if more than one program needed to use the <code>Colore</code> clas
     #define  STR_RED    "rosso"
     #define  STR_GREEN  "verde"
     #define  STR_BLUE   "blu"
-#else 
+#else
     #define  STR_RGB    "RGB color"
     #define  STR_RED    "red"
     #define  STR_GREEN  "green"
@@ -138,49 +137,49 @@ For example, if more than one program needed to use the <code>Colore</code> clas
 
 using namespace std;
 
-/** Definisce un tipo di dato enumerato di nome RGB */
+/** Defines an enumerated data type named RGB */
 enum RGB { red = RGB_RED, green = RGB_GREEN, blue = RGB_BLUE };
 
-/** Definisce una struttura che contiene un colore RGB e un nome */
-struct ColoreRGB {
-    RGB  valore;
-    const char* nome;        
+/** Defines a struct that holds an RGB color and a name */
+struct RGBColor {
+    RGB  value;
+    const char* name;
 };
 
-/** 
- * Definisce la classe Colore, che contiene una struct 
- * coloreRGB e una funzione che ne mostra il nome.
+/**
+ * Defines the Color class, which holds an
+ * rgbColor struct and a function that displays its name.
  */
-class Colore {
+class Color {
 public:
-    ColoreRGB coloreRgb;        
-    void nome_colore() {
+    RGBColor rgbColor;
+    void color_name() {
         cout &lt;&lt; STR_RGB &lt;&lt; ": ";
-        switch(coloreRgb.valore) {
+        switch(rgbColor.value) {
             case red  : cout &lt;&lt; STR_RED  ; break;
             case green: cout &lt;&lt; STR_GREEN; break;
             case blue : cout &lt;&lt; STR_BLUE ; break;
         }
         cout &lt;&lt; endl;
-    }        
+    }
 };
 
-#endif /* _CLASS_COLORE */
+#endif /* _CLASS_COLOR */
 
 </code></pre>
 
 <p>The file would then be included in the code of the programs that use it with an <code>include</code> directive:</p>
 
-<pre><code>/** 
- * @file src/preprocessore-main.cpp
- * Mostra i valori possibili per i principali tipi di dato del C++.
+<pre><code>/**
+ * @file src/preprocessor-main.cpp
+ * Shows the possible values for C++'s main data types.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;iomanip&gt;
 
 #define LANG_IT
-#include "colore.h"
+#include "preprocessor-color.h"
 #undef LANG_IT
 
 #ifdef LANG_IT
@@ -190,7 +189,7 @@ public:
     #define  STR_DEC    "decimale"
     #define  STR_ARRAY  "array"
     #define  STR_VERDE  "verde"
-#else 
+#else
     #define  STR_BOOL   "boolean"
     #define  STR_CHAR   "character"
     #define  STR_INT    "integer"
@@ -202,35 +201,35 @@ public:
 using namespace std;
 
 int main()
-{    
-    /** Dichiara una serie di variabili */
-    bool    booleano = false;
-    char    carattere = 'C';
-    int     intero = 1234567890;
-    float   decimale = 3.14;
+{
+    /** Declares a series of variables */
+    bool    boolean = false;
+    char    character = 'C';
+    int     integer = 1234567890;
+    float   decimal = 3.14;
     char    array[] = "abcdefghilmnopqrstuvz";
-    RGB     enumerato = green;
-    
-    /** Crea un oggetto di tipo Colore */
-    Colore  colore;    
-    
-    /** 
-     * Assegna un valore ai dati della struttura coloreRgb 
-     * all'interno dell'oggetto di tipo Colore.
-     */
-    colore.coloreRgb.valore = enumerato;   
-    colore.coloreRgb.nome = STR_VERDE;     
+    RGB     enumValue = green;
 
-    /** Mostra il valore delle variabili */
-    cout &lt;&lt; setw(10) &lt;&lt; STR_BOOL  &lt;&lt; ": " &lt;&lt; booleano   &lt;&lt; endl;
-    cout &lt;&lt; setw(10) &lt;&lt; STR_CHAR  &lt;&lt; ": " &lt;&lt; carattere  &lt;&lt; endl;
-    cout &lt;&lt; setw(10) &lt;&lt; STR_INT   &lt;&lt; ": " &lt;&lt; intero     &lt;&lt; endl;
-    cout &lt;&lt; setw(10) &lt;&lt; STR_DEC   &lt;&lt; ": " &lt;&lt; decimale   &lt;&lt; endl;
-    cout &lt;&lt; setw(10) &lt;&lt; STR_ARRAY &lt;&lt; ": " &lt;&lt; array      &lt;&lt; endl;
-    
-    /** Mostra il nome del colore */
-    colore.nome_colore();
-    
+    /** Creates an object of type Color */
+    Color   color;
+
+    /**
+     * Assigns a value to the data of the rgbColor struct
+     * inside the object of type Color.
+     */
+    color.rgbColor.value = enumValue;
+    color.rgbColor.name = STR_VERDE;
+
+    /** Displays the value of the variables */
+    cout &lt;&lt; setw(10) &lt;&lt; STR_BOOL  &lt;&lt; ": " &lt;&lt; boolean   &lt;&lt; endl;
+    cout &lt;&lt; setw(10) &lt;&lt; STR_CHAR  &lt;&lt; ": " &lt;&lt; character &lt;&lt; endl;
+    cout &lt;&lt; setw(10) &lt;&lt; STR_INT   &lt;&lt; ": " &lt;&lt; integer   &lt;&lt; endl;
+    cout &lt;&lt; setw(10) &lt;&lt; STR_DEC   &lt;&lt; ": " &lt;&lt; decimal   &lt;&lt; endl;
+    cout &lt;&lt; setw(10) &lt;&lt; STR_ARRAY &lt;&lt; ": " &lt;&lt; array     &lt;&lt; endl;
+
+    /** Displays the color's name */
+    color.color_name();
+
     return 0;
 }
 
@@ -366,7 +365,7 @@ cout &lt;&lt; 6 &lt;&lt; STR_COME_SEI &lt;&lt; endl;
 
 <p>or directly from the command line, as a compilation parameter:</p>
 
-<pre><code>% g++ ./cpp/preprocessore-main.cpp -D LANG_IT -o ./out/esempio
+<pre><code>% g++ ./cpp/preprocessor-main.cpp -D LANG_IT -o ./out/esempio
 % ./out/esempio                                               
   booleano: 0
  carattere: C
@@ -374,7 +373,7 @@ cout &lt;&lt; 6 &lt;&lt; STR_COME_SEI &lt;&lt; endl;
   decimale: 3.14
      array: abcdefghilmnopqrstuvz
 colore RGB: verde
-% g++ ./cpp/preprocessore-main.cpp -D LANG_EN -o ./out/esempio
+% g++ ./cpp/preprocessor-main.cpp -D LANG_EN -o ./out/esempio
 % ./out/esempio                                               
    boolean: 0
  character: C
@@ -387,7 +386,7 @@ RGB color: green
 <p>You can remove a previously assigned <code>#define</code> by means of the <code>#undef</code> directive:</p>
 
 <pre><code>#define LANG_IT
-#include "preprocessore-colore.h"
+#include "preprocessore-color.h"
 #undef LANG_IT
 
 #ifdef LANG_IT
@@ -409,7 +408,7 @@ RGB color: green
 
 <p>The output of this code will be:</p>
 
-<pre><code>% g++ src/cpp/preprocessore-main.cpp -D LANG_EN -o src/out/esempio
+<pre><code>% g++ src/cpp/preprocessor-main.cpp -D LANG_EN -o src/out/esempio
 % ./src/out/esempio                                               
    boolean: 0
  character: C
@@ -427,9 +426,9 @@ colore RGB: verde
 
 <p>When the precompiler finds a call to the MAGGIORE macro inside the code, it replaces it with the corresponding instruction, swapping the parameters <code>a</code> and <code>b</code> for the variables used in the call.</p>
 
-<pre><code>/** 
- * @file src/preprocessore-macro.cpp
- * Esempio di macro-istruzione del precompilatore.
+<pre><code>/**
+ * @file src/preprocessor-macro.cpp
+ * Example of a precompiler macro instruction.
  */
 
 #include &lt;iostream&gt;
@@ -437,25 +436,25 @@ colore RGB: verde
 using namespace std;
 
 /**
-*  Definzione di una macro istruzione che
-*  torna il maggiore fra due parametri.
+*  Definition of a macro instruction that
+*  returns the greater of two parameters.
 */
-#define MAGGIORE(a,b) ((a &gt; b) ? a : b) 
+#define GREATER(a,b) ((a &gt; b) ? a : b)
 
 int main ()
-{     
-    /** 
-     *  Il codice di queste istruzioni è sostituito
-     *  con quello associato alla macro:
-     *      
-     *      cout &lt;&lt; ((109 &gt; 122) ? 109 : 122) &lt;&lt; endl;    
-     *      cout &lt;&lt; ((0.4 &gt; 0.7) ? 0.4 : 0.7) &lt;&lt; endl;    
-     *      cout &lt;&lt; (('a' &gt; 'z') ? 'a' : 'z') &lt;&lt; endl;    
+{
+    /**
+     *  The code of these instructions is replaced
+     *  with the one associated with the macro:
+     *
+     *      cout &lt;&lt; ((109 &gt; 122) ? 109 : 122) &lt;&lt; endl;
+     *      cout &lt;&lt; ((0.4 &gt; 0.7) ? 0.4 : 0.7) &lt;&lt; endl;
+     *      cout &lt;&lt; (('a' &gt; 'z') ? 'a' : 'z') &lt;&lt; endl;
     */
-    cout &lt;&lt; MAGGIORE(209, 122) &lt;&lt; endl;    
-    cout &lt;&lt; MAGGIORE(0.4, 0.7) &lt;&lt; endl;    
-    cout &lt;&lt; MAGGIORE('y', 'z') &lt;&lt; endl;    
-    
+    cout &lt;&lt; GREATER(209, 122) &lt;&lt; endl;
+    cout &lt;&lt; GREATER(0.4, 0.7) &lt;&lt; endl;
+    cout &lt;&lt; GREATER('y', 'z') &lt;&lt; endl;
+
     return 0;
 }
 
@@ -463,7 +462,7 @@ int main ()
 
 <p>If you compile and run this code, you get:</p>
 
-<pre><code>&gt; g++ src/cpp/preprocessore-macro.cpp -o src/out/esempio
+<pre><code>&gt; g++ src/cpp/preprocessor-macro.cpp -o src/out/esempio
 &gt; src/out/esempio                                         
 209
 0.7
@@ -472,48 +471,48 @@ z
 
 <p>Precompiler macros run before the code is compiled, so they can also be used to create functions out of thin air.</p>
 
-<pre><code>/** 
- * @file src/preprocessore-hashtag.cpp
- * Esempii di macro-istruzioni del precompilatore.
+<pre><code>/**
+ * @file src/preprocessor-hashtag.cpp
+ * Examples of precompiler macro instructions.
  */
 
 #include &lt;iostream&gt;
 
 using namespace std;
- 
-/** Definisce la macro-istruzione */
-#define FUNZIONE(nome, parametro) int fnz_##nome() { return parametro; }
 
-/** 
-*   Durante la precompilazone, questa macro 
-*   sarà sosituita dall'istruzione:
-*       
-*     int fnz_macro(12) { return 12; }
+/** Defines the macro instruction */
+#define FUNCTION(name, parameter) int fn_##name() { return parameter; }
+
+/**
+*   During precompilation, this macro
+*   will be replaced by the instruction:
+*
+*     int fn_macro(12) { return 12; }
 */
-FUNZIONE(macro, 12)
- 
-/** 
-*   Definisce una macro che stampa un testo a video:
+FUNCTION(macro, 12)
+
+/**
+*   Defines a macro that prints text to the screen:
 */
-#define OUTPUT(testo) cout &lt;&lt; testo &lt;&lt; endl;
- 
-/** 
-*   Definisce una macro che unisce la stringa "Pippo"
-*   al parametro ricevuto in input:
+#define OUTPUT(text) cout &lt;&lt; text &lt;&lt; endl;
+
+/**
+*   Defines a macro that joins the string "Foo"
+*   to the parameter it receives as input:
 */
-#define PIPPO "Pippo"
-#define APPENDI(nome) PIPPO # nome
- 
+#define FOO "Foo"
+#define APPEND(name) FOO # name
+
 int main()
 {
-    /** 
-    *   La funzione fnz_macro ora non esiste, ma esisterà 
-    *   al termine della pre-compilazione del codice:
+    /**
+    *   The fn_macro function doesn't exist right now, but it will
+    *   exist once the code's precompilation is done:
     */
-    cout &lt;&lt; fnz_macro() &lt;&lt; endl;
- 
-    /** Stampa una stringa a video usando le altre due macro */
-    OUTPUT(APPENDI(Pluto));               
+    cout &lt;&lt; fn_macro() &lt;&lt; endl;
+
+    /** Prints a string to the screen using the other two macros */
+    OUTPUT(APPEND(Bar));
 }
 
 </code></pre>
@@ -527,7 +526,7 @@ int main()
 If you compile and run this code, you get:</li>
 </ul>
 
-<pre><code>&gt; g++ src/cpp/preprocessore-hashtag.cpp -o src/out/esempio
+<pre><code>&gt; g++ src/cpp/preprocessor-hashtag.cpp -o src/out/esempio
 &gt; src/out/esempio                                         
 12
 PippoPluto

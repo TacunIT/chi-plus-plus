@@ -51,7 +51,7 @@
     </a>
     <a
         title="Go to the table of contents"
-        href="/en/indice"
+        href="/en/toc"
     >
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
     </a>
@@ -102,7 +102,9 @@ The next piece of code — annoyingly didactic, in its essential uselessness —
 It contains many elements I haven’t told you about yet, so don’t worry if you don’t fully understand what it does.</p>
 
 <pre><code>#include &lt;iostream&gt;
+
 using namespace std;
+
 /** Defines an enumerated data type named RGB */
 enum RGB { red = 0xFF0000, green = 0x00ff00, blue = 0x0000ff };
 /** Defines a struct that holds an RGB color and a name */
@@ -110,6 +112,7 @@ struct RGBColor {
     RGB  value;
     const char* name;
 };
+
 /**
  * Defines the Color class, which holds an rgbColor
  * and a function that displays its name.
@@ -127,6 +130,7 @@ public:
         cout &lt;&lt; endl;
     }
 };
+
 int main()
 {
     /** Declares a series of variables */
@@ -163,8 +167,8 @@ int main()
 
 <p>Compiling and running this code, you’ll get:</p>
 
-<pre><code>% g++ src/cpp/data-types-main.cpp -o src/out/esempio
-% src/out/esempio
+<pre><code>% g++ src/cpp/data-types-main.cpp -o src/out/example
+% src/out/example
 boolean:0
 character:C
 integer:1234567890
@@ -293,8 +297,8 @@ int main()
 <p>If you look closely at the code, you’ll discover another feature of C++’s modifiers: when applied to an integer data type, you can shorten the declaration by omitting the <code>int</code> keyword.
 The output of this program, on my computer, is:</p>
 
-<pre><code>% g++ data-types-limits.cpp -o ../out/esempio
-% ../out/esempio                               
+<pre><code>% g++ data-types-limits.cpp -o ../out/example
+% ../out/example                               
            int: 4 bytes, da:          -2147483648  a:           2147483647
   unsigned int: 4 bytes, da:                    0  a:           4294967295
      short int: 2 bytes, da:               -32768  a:                32767
@@ -395,12 +399,14 @@ Other pointers are less like a flag and more like a kind of mask that can slide 
 #include &lt;bitset&gt;
 #include &lt;iomanip&gt;
 using namespace std;
+
 /**
  * Defines two data types: one byte long
  * and one two bytes long
  */
 typedef unsigned char byte;
 typedef short int twobyte;
+
 int main()
 {
     /** Creates an array of 80 binary values */
@@ -635,8 +641,8 @@ int main()
 
 <p>Compiling and running the code, you’ll get:</p>
 
-<pre><code>% g++ src/cpp/data-types-references.cpp -o src/out/esempio
-% src/out/esempio                                          
+<pre><code>% g++ src/cpp/data-types-references.cpp -o src/out/example
+% src/out/example                                          
 valori iniziali: v=10, r=10
 valori finali:   v=20, r=20
 </code></pre>

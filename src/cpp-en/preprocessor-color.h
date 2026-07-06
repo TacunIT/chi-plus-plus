@@ -1,6 +1,5 @@
-
-#ifndef _CLASS_COLORE
-#define _CLASS_COLORE 1
+#ifndef _CLASS_COLOR
+#define _CLASS_COLOR 1
 
 #define  RGB_RED    0xFF0000
 #define  RGB_GREEN  0x00FF00
@@ -11,7 +10,7 @@
     #define  STR_RED    "rosso"
     #define  STR_GREEN  "verde"
     #define  STR_BLUE   "blu"
-#else 
+#else
     #define  STR_RGB    "RGB color"
     #define  STR_RED    "red"
     #define  STR_GREEN  "green"
@@ -22,31 +21,31 @@
 
 using namespace std;
 
-/** Definisce un tipo di dato enumerato di nome RGB */
+/** Defines an enumerated data type named RGB */
 enum RGB { red = RGB_RED, green = RGB_GREEN, blue = RGB_BLUE };
 
-/** Definisce una struttura che contiene un colore RGB e un nome */
-struct ColoreRGB {
-    RGB  valore;
-    const char* nome;        
+/** Defines a struct that holds an RGB color and a name */
+struct RGBColor {
+    RGB  value;
+    const char* name;
 };
 
-/** 
- * Definisce la classe Colore, che contiene una struct 
- * coloreRGB e una funzione che ne mostra il nome.
+/**
+ * Defines the Color class, which holds an
+ * rgbColor struct and a function that displays its name.
  */
-class Colore {
+class Color {
 public:
-    ColoreRGB coloreRgb;        
-    void nome_colore() {
+    RGBColor rgbColor;
+    void color_name() {
         cout << STR_RGB << ": ";
-        switch(coloreRgb.valore) {
+        switch(rgbColor.value) {
             case red  : cout << STR_RED  ; break;
             case green: cout << STR_GREEN; break;
             case blue : cout << STR_BLUE ; break;
         }
         cout << endl;
-    }        
+    }
 };
 
-#endif /* _CLASS_COLORE */
+#endif /* _CLASS_COLOR */

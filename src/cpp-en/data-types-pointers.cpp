@@ -2,12 +2,14 @@
 #include <bitset>
 #include <iomanip>
 using namespace std;
+
 /**
  * Defines two data types: one byte long
  * and one two bytes long
  */
 typedef unsigned char byte;
 typedef short int twobyte;
+
 int main()
 {
     /** Creates an array of 80 binary values */
