@@ -1,3 +1,23 @@
+## 2.0.4 (July 06, 2026)
+  - Tradotto capitolo 21
+  - Rinominati i file cpp per le classi
+  - Tradotto capitolo 20
+  - Rinominati i file pianeti-*
+  - Tradotto capitolo 19
+  - Merge branch 'traduzione' into redazione
+  - Corretto script CPP
+  - Tradotto il capitolo 18
+  - Aggiornato capitolo 17
+  - Tradotto codice nel capitolo 17
+  - Tradotto codice nel capitolo 16
+  - Tradotti testi in italiano residui nel capitolo 15
+  - Tradotti nomi dei file cpp nel capitolo 15
+  - Tradotto codice nel capitolo 14
+  - Corretto errore nel menu
+  - Tradotti sorgenti CPP per tipi di dato
+  - Ripristinati file cpp per tipi di dato
+  - Rimossi i symlink residtui ai file cpp
+
 ## 2.0.3 (July 04, 2026)
   - Tolto commento da polymorphism
   - Correzione dei link nel testo

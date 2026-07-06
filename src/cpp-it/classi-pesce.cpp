@@ -1,10 +1,9 @@
-/** 
+/**
  * @file classi-pesce.cpp
  * Definizione della classe Pesce.
  */
- 
+
 #include <iostream>
-#include <iomanip> 
 
 using namespace std;
 
@@ -17,15 +16,15 @@ private:
     /** Dati membro privati */
     string _specie;
     bool   _commestibile;
-    
+
 public:
-    
+
     /** Costruttore della classe inline */
-    Pesce(const char* specie, bool commestibile) 
+    Pesce(const char* specie, bool commestibile)
     : _specie(specie), _commestibile(commestibile)
     {
     }
-    
+
     /** Costruttore di copia inline */
     Pesce(const Pesce& p) {
         this->_specie       = p._specie;
@@ -33,7 +32,7 @@ public:
     }
 
     /** Distruttore inline */
-    ~Pesce() { 
+    ~Pesce() {
     }
 
     /** Funzioni di interfaccia */
@@ -47,12 +46,12 @@ public:
  *  Istanza della classe: forma
  */
 int main()
-{             
+{
     Pesce pesce("spigola", true);
-    
+
     cout << pesce.getSpecie() << ": "
          << (pesce.isCommestibile() ? "sì" : "no")
          << endl;
-     
+
     return 0;
 }
