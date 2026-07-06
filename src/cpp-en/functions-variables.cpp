@@ -1,103 +1,104 @@
-/** 
- * @file funzioni-variabili.cpp
- * Esempio di funzione con parametri variabili.
+/**
+ * @file functions-variables.cpp
+ * Example of a function with variable parameters.
  */
 
 #include <iostream>
-#include <iomanip> 
-#include <fstream> 
+#include <iomanip>
+#include <fstream>
+#include <cstdarg>
 
-#define LOG_DEBUG   1
-#define LOG_AVVISO  2
-#define LOG_ERRORE  3
+#define LOG_DEBUG    1
+#define LOG_WARNING  2
+#define LOG_ERROR    3
 
-#define S_DEBUG     "debug"
-#define S_AVVISO    "avviso"
-#define S_ERRORE    "errore"
+#define S_DEBUG      "debug"
+#define S_WARNING    "warning"
+#define S_ERROR      "error"
 
 #define ERR_NO_FILE_NAME  -1
 #define ERR_NO_FILE_OPEN  -2
 
-#define S_ERR_NO_FILE_NAME  "specificare il path del file"
-#define S_ERR_NO_FILE_OPEN  "impossibile aprire il file:"
+#define S_ERR_NO_FILE_NAME  "specify the file path"
+#define S_ERR_NO_FILE_OPEN  "cannot open the file:"
 
 using namespace std;
 
-/** Funzione di output con parametri variabili */
-void log(int livello, int n_parametri, ...)
+/** Output function with variable parameters */
+void log(int level, int n_params, ...)
 {
 
-    /** Definisce la spaziatura del primo campo */
-    cerr << setw(8);  
-    
-    /** Scrive il livello del messaggio */
-    switch(livello) {
-        case LOG_DEBUG:  cerr << S_DEBUG ; break;
-        case LOG_AVVISO: cerr << S_AVVISO; break;
-        default:         cerr << S_ERRORE; break;
+    /** Sets the width of the first field */
+    cerr << setw(8);
+
+    /** Writes the message level */
+    switch(level) {
+        case LOG_DEBUG:   cerr << S_DEBUG  ; break;
+        case LOG_WARNING: cerr << S_WARNING; break;
+        default:          cerr << S_ERROR  ; break;
     }
 
-    /** Scrive il carattere di separazione */
+    /** Writes the separator character */
     cerr << " | ";
 
-    /** Dichiara la variabile per la lista dei parametri */    
-    va_list lista_parametri;
-    
-    /** 
-     * Inizializza la lista dei parametri e considera
-     * tutti gli argomenti dopo n_parametri come variabili.
+    /** Declares the variable for the parameter list */
+    va_list param_list;
+
+    /**
+     * Initializes the parameter list and treats
+     * every argument after n_params as variable.
      */
-    va_start(lista_parametri, n_parametri);
+    va_start(param_list, n_params);
 
-    /** Legge tutti i parametri nella lista e li scrive a video */
-    for(int p = 1; p <= n_parametri; p++) {        
-        cerr << va_arg(lista_parametri, char*) ;        
-    }    
+    /** Reads all the parameters in the list and prints them on screen */
+    for(int p = 1; p <= n_params; p++) {
+        cerr << va_arg(param_list, char*) ;
+    }
 
-    /** Chiude la lista dei parametri */        
-    va_end(lista_parametri);
-    
-    /** Scrive il testo del messaggio */
+    /** Closes the parameter list */
+    va_end(param_list);
+
+    /** Writes the message text */
     cerr << endl;
 
 }
 
 int main(int argc, char** argv)
-{        
-    /** Crea una variabile per gestire il file di output */
+{
+    /** Creates a variable to handle the output file */
     ofstream doc;
 
-    /** Puntatore per il nome del file di output */
+    /** Pointer for the output file name */
     const char* filename = NULL;
 
-    /** Se manca il nome del file di output, errore */
+    /** If the output file name is missing, error */
     if(argc < 2) {
-        log(LOG_ERRORE, 1, S_ERR_NO_FILE_NAME);
+        log(LOG_ERROR, 1, S_ERR_NO_FILE_NAME);
         return ERR_NO_FILE_NAME;
     }
-    
-    /** Legge il nome del file di output */
+
+    /** Reads the output file name */
     filename = argv[1];
-    
-    /** Prova ad aprire il file di output */    
+
+    /** Tries to open the output file */
     doc.open (argv[1]);
-    
-    /** Se c'è stato un errore, lo segnala ed esce */
+
+    /** If there was an error, reports it and exits */
     if(!doc.is_open()) {
-        log(LOG_ERRORE, 2, S_ERR_NO_FILE_OPEN, filename);    
-        return ERR_NO_FILE_OPEN;    
+        log(LOG_ERROR, 2, S_ERR_NO_FILE_OPEN, filename);
+        return ERR_NO_FILE_OPEN;
     }
-    
-    /** OK, il file è pronto */
-    log(LOG_AVVISO, 2, "ho aperto il file: ", filename);
 
-    /** Scrive sul file di output */
-    doc << "Testo del documento.\n";
-    log(LOG_DEBUG, 2, "ho scritto sul file: ", filename);
+    /** OK, the file is ready */
+    log(LOG_WARNING, 2, "opened the file: ", filename);
 
-    /** Chiude il file di output */
+    /** Writes to the output file */
+    doc << "Document text.\n";
+    log(LOG_DEBUG, 2, "wrote to the file: ", filename);
+
+    /** Closes the output file */
     doc.close();
-    log(LOG_AVVISO, 2,  "ho chiuso il file: ", filename);
+    log(LOG_WARNING, 2,  "closed the file: ", filename);
 
     return 0;
 }

@@ -1,39 +1,38 @@
-/** 
- * @file funzioni-inline-2.cpp
- * Esempio di codice con funzione di output unica.
+/**
+ * @file functions-inline-2.cpp
+ * Example of code with a single output function.
  */
 
 #include <iostream>
-#include <iomanip> 
-#include <fstream> 
+#include <fstream>
 
-#define S_FILENAME  "src/out/esempio.txt"
+#define S_FILENAME  "src/out/example.txt"
 
 using namespace std;
 
-/** Funzione di output unica */
-void log(const char* messaggio)
+/** Single output function */
+void log(const char* message)
 {
-    /** Mostra il messaggio a video */
-    cout << messaggio << endl;
+    /** Displays the message on screen */
+    cout << message << endl;
 }
 
 int main(int argc, char** argv)
-{        
-    /** Crea una variabile per gestire il file di output */
+{
+    /** Creates a variable to handle the output file */
     ofstream doc;
 
-    /** Apre il file di output */
+    /** Opens the output file */
     doc.open (S_FILENAME);
-    log("ho aperto il file");
+    log("opened the file");
 
-    /** Scrive sul file di output */
-    doc << "Testo del documento.\n";
-    log("ho scritto sul file");
+    /** Writes to the output file */
+    doc << "Document text.\n";
+    log("wrote to the file");
 
-    /** Chiude il file di output */
+    /** Closes the output file */
     doc.close();
-    log("ho scritto il file");
+    log("closed the file");
 
     return 0;
 }

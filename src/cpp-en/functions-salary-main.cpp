@@ -1,22 +1,22 @@
-/** 
- * @file funzioni-stipendio-main.cpp
- * Funzione main del programma con file oggetto separati.
+/**
+ * @file functions-salary-main.cpp
+ * Main function of the program with separate object files.
  */
-#include <iostream> 
-
-/** 
- * Dichiarazione della funzione raddoppiaStipendio. 
- * L'ho messa qui per semplicità: di solito, le dichiarazioni
- * si trovano in un file di include separato.
- */
-float raddoppiaStipendio(float stipendio);
+#include <iostream>
 
 /**
- * La funzione main richiama la funzione raddoppiaStipendio,
- * che è definita in un altro file sorgente.
+ * Declaration of the doubleSalary function.
+ * I put it here for simplicity: usually, declarations
+ * live in a separate include file.
+ */
+float doubleSalary(float salary);
+
+/**
+ * The main function calls the doubleSalary function,
+ * which is defined in another source file.
  */
 int main(int argc, char** argv)
-{        
-    std::cout << raddoppiaStipendio(1500) << std::endl;    
+{
+    std::cout << doubleSalary(1500) << std::endl;
     return 0;
 }

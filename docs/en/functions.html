@@ -273,26 +273,26 @@ The <a id="dichiarazione">declaration</a> of a function establishes its return t
 <p>As I told you when we talked about <a href="/en/programming-languages">programming languages</a>, generating an executable file happens in two stages: first the compiler converts the C++ code into an <em>object file</em>, then the <em>linker</em> turns the object files (there could be more than one) into a single executable.
 For this process to work, a function’s <em>declaration</em> must be present in every piece of code that uses it, so the compiler can check that it’s being used correctly; the <em>definition</em>, by contrast, must appear only once.</p>
 
-<pre><code>/** 
- * @file funzioni-stipendio-main.cpp
- * Funzione main del programma con file oggetto separati.
+<pre><code>/**
+ * @file functions-salary-main.cpp
+ * Main function of the program with separate object files.
  */
-#include &lt;iostream&gt; 
-
-/** 
- * Dichiarazione della funzione raddoppiaStipendio. 
- * L'ho messa qui per semplicità: di solito, le dichiarazioni
- * si trovano in un file di include separato.
- */
-float raddoppiaStipendio(float stipendio);
+#include &lt;iostream&gt;
 
 /**
- * La funzione main richiama la funzione raddoppiaStipendio,
- * che è definita in un altro file sorgente.
+ * Declaration of the doubleSalary function.
+ * I put it here for simplicity: usually, declarations
+ * live in a separate include file.
+ */
+float doubleSalary(float salary);
+
+/**
+ * The main function calls the doubleSalary function,
+ * which is defined in another source file.
  */
 int main(int argc, char** argv)
-{        
-    std::cout &lt;&lt; raddoppiaStipendio(1500) &lt;&lt; std::endl;    
+{
+    std::cout &lt;&lt; doubleSalary(1500) &lt;&lt; std::endl;
     return 0;
 }
 
@@ -488,42 +488,41 @@ closed the file
 
 <p>The output instructions in the example differ only in the text to display, and could easily be isolated into a standalone function.</p>
 
-<pre><code>/** 
- * @file funzioni-inline-2.cpp
- * Esempio di codice con funzione di output unica.
+<pre><code>/**
+ * @file functions-inline-2.cpp
+ * Example of code with a single output function.
  */
 
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
-#include &lt;fstream&gt; 
+#include &lt;fstream&gt;
 
-#define S_FILENAME  "src/out/esempio.txt"
+#define S_FILENAME  "src/out/example.txt"
 
 using namespace std;
 
-/** Funzione di output unica */
-void log(const char* messaggio)
+/** Single output function */
+void log(const char* message)
 {
-    /** Mostra il messaggio a video */
-    cout &lt;&lt; messaggio &lt;&lt; endl;
+    /** Displays the message on screen */
+    cout &lt;&lt; message &lt;&lt; endl;
 }
 
 int main(int argc, char** argv)
-{        
-    /** Crea una variabile per gestire il file di output */
+{
+    /** Creates a variable to handle the output file */
     ofstream doc;
 
-    /** Apre il file di output */
+    /** Opens the output file */
     doc.open (S_FILENAME);
-    log("ho aperto il file");
+    log("opened the file");
 
-    /** Scrive sul file di output */
-    doc &lt;&lt; "Testo del documento.\n";
-    log("ho scritto sul file");
+    /** Writes to the output file */
+    doc &lt;&lt; "Document text.\n";
+    log("wrote to the file");
 
-    /** Chiude il file di output */
+    /** Closes the output file */
     doc.close();
-    log("ho scritto il file");
+    log("closed the file");
 
     return 0;
 }
@@ -900,106 +899,107 @@ void va_end(va_list ap);
 
 <p><code>va_end</code> ends the processing of the parameters, and must always be called before the function returns.</p>
 
-<pre><code>/** 
- * @file funzioni-variabili.cpp
- * Esempio di funzione con parametri variabili.
+<pre><code>/**
+ * @file functions-variables.cpp
+ * Example of a function with variable parameters.
  */
 
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
-#include &lt;fstream&gt; 
+#include &lt;iomanip&gt;
+#include &lt;fstream&gt;
+#include &lt;cstdarg&gt;
 
-#define LOG_DEBUG   1
-#define LOG_AVVISO  2
-#define LOG_ERRORE  3
+#define LOG_DEBUG    1
+#define LOG_WARNING  2
+#define LOG_ERROR    3
 
-#define S_DEBUG     "debug"
-#define S_AVVISO    "avviso"
-#define S_ERRORE    "errore"
+#define S_DEBUG      "debug"
+#define S_WARNING    "warning"
+#define S_ERROR      "error"
 
 #define ERR_NO_FILE_NAME  -1
 #define ERR_NO_FILE_OPEN  -2
 
-#define S_ERR_NO_FILE_NAME  "specificare il path del file"
-#define S_ERR_NO_FILE_OPEN  "impossibile aprire il file:"
+#define S_ERR_NO_FILE_NAME  "specify the file path"
+#define S_ERR_NO_FILE_OPEN  "cannot open the file:"
 
 using namespace std;
 
-/** Funzione di output con parametri variabili */
-void log(int livello, int n_parametri, ...)
+/** Output function with variable parameters */
+void log(int level, int n_params, ...)
 {
 
-    /** Definisce la spaziatura del primo campo */
-    cerr &lt;&lt; setw(8);  
-    
-    /** Scrive il livello del messaggio */
-    switch(livello) {
-        case LOG_DEBUG:  cerr &lt;&lt; S_DEBUG ; break;
-        case LOG_AVVISO: cerr &lt;&lt; S_AVVISO; break;
-        default:         cerr &lt;&lt; S_ERRORE; break;
+    /** Sets the width of the first field */
+    cerr &lt;&lt; setw(8);
+
+    /** Writes the message level */
+    switch(level) {
+        case LOG_DEBUG:   cerr &lt;&lt; S_DEBUG  ; break;
+        case LOG_WARNING: cerr &lt;&lt; S_WARNING; break;
+        default:          cerr &lt;&lt; S_ERROR  ; break;
     }
 
-    /** Scrive il carattere di separazione */
+    /** Writes the separator character */
     cerr &lt;&lt; " | ";
 
-    /** Dichiara la variabile per la lista dei parametri */    
-    va_list lista_parametri;
-    
-    /** 
-     * Inizializza la lista dei parametri e considera
-     * tutti gli argomenti dopo n_parametri come variabili.
+    /** Declares the variable for the parameter list */
+    va_list param_list;
+
+    /**
+     * Initializes the parameter list and treats
+     * every argument after n_params as variable.
      */
-    va_start(lista_parametri, n_parametri);
+    va_start(param_list, n_params);
 
-    /** Legge tutti i parametri nella lista e li scrive a video */
-    for(int p = 1; p &lt;= n_parametri; p++) {        
-        cerr &lt;&lt; va_arg(lista_parametri, char*) ;        
-    }    
+    /** Reads all the parameters in the list and prints them on screen */
+    for(int p = 1; p &lt;= n_params; p++) {
+        cerr &lt;&lt; va_arg(param_list, char*) ;
+    }
 
-    /** Chiude la lista dei parametri */        
-    va_end(lista_parametri);
-    
-    /** Scrive il testo del messaggio */
+    /** Closes the parameter list */
+    va_end(param_list);
+
+    /** Writes the message text */
     cerr &lt;&lt; endl;
 
 }
 
 int main(int argc, char** argv)
-{        
-    /** Crea una variabile per gestire il file di output */
+{
+    /** Creates a variable to handle the output file */
     ofstream doc;
 
-    /** Puntatore per il nome del file di output */
+    /** Pointer for the output file name */
     const char* filename = NULL;
 
-    /** Se manca il nome del file di output, errore */
+    /** If the output file name is missing, error */
     if(argc &lt; 2) {
-        log(LOG_ERRORE, 1, S_ERR_NO_FILE_NAME);
+        log(LOG_ERROR, 1, S_ERR_NO_FILE_NAME);
         return ERR_NO_FILE_NAME;
     }
-    
-    /** Legge il nome del file di output */
+
+    /** Reads the output file name */
     filename = argv[1];
-    
-    /** Prova ad aprire il file di output */    
+
+    /** Tries to open the output file */
     doc.open (argv[1]);
-    
-    /** Se c'è stato un errore, lo segnala ed esce */
+
+    /** If there was an error, reports it and exits */
     if(!doc.is_open()) {
-        log(LOG_ERRORE, 2, S_ERR_NO_FILE_OPEN, filename);    
-        return ERR_NO_FILE_OPEN;    
+        log(LOG_ERROR, 2, S_ERR_NO_FILE_OPEN, filename);
+        return ERR_NO_FILE_OPEN;
     }
-    
-    /** OK, il file è pronto */
-    log(LOG_AVVISO, 2, "ho aperto il file: ", filename);
 
-    /** Scrive sul file di output */
-    doc &lt;&lt; "Testo del documento.\n";
-    log(LOG_DEBUG, 2, "ho scritto sul file: ", filename);
+    /** OK, the file is ready */
+    log(LOG_WARNING, 2, "opened the file: ", filename);
 
-    /** Chiude il file di output */
+    /** Writes to the output file */
+    doc &lt;&lt; "Document text.\n";
+    log(LOG_DEBUG, 2, "wrote to the file: ", filename);
+
+    /** Closes the output file */
     doc.close();
-    log(LOG_AVVISO, 2,  "ho chiuso il file: ", filename);
+    log(LOG_WARNING, 2,  "closed the file: ", filename);
 
     return 0;
 }
