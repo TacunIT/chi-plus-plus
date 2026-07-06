@@ -91,16 +91,14 @@
             </h1>
             <blockquote class="motto">Ceci n'est pas une |</blockquote>
             <section class="testo">
-                <!-- Quando ho cominciato a scrivere questo capitolo, si è rotto il tasto "o" del mio Mac. È Domenica e siamo in clausura da COVID, quindi non posso andare in un centro commerciale a comprarne una esterna, temporanea. Perdonate eventuali refusi -->
-
-<p>The ability to define new data types by means of classes is C++’s main distinguishing feature.</p>
+                <p>The ability to define new data types by means of classes is C++’s main distinguishing feature.</p>
 
 <p>“Traditional” programming languages, like Cobol, Fortran, or Pascal, have a limited set of data types: integers, floating-point numbers, booleans, characters, and strings.. just what you need to manage a personal record or a bank account.
 C and Pascal also let you group this data into structs, enums, or arrays, but these are just containers, with no internal logic.
 Moreover, as you’ve seen, the data inside a <code>struct</code> is accessible to any component of the program, so if you change it, the code that uses it has to change too.
 Imagine defining a struct to manage the time of day, containing three integers, one for hours, one for minutes, and one for seconds:</p>
 
-<pre><code>struct Orario {
+<pre><code>struct Time {
     int h;
     int m;
     int s;
@@ -120,113 +118,113 @@ Imagine defining a struct to manage the time of day, containing three integers, 
 <p>This is the opposite of the <em>low coupling</em> we talked about <a href="/en/program-structure#coupling" class="xref">a while back</a>, because it inextricably ties a function to the structure of the data it has to handle.
 To put it plainly: a function that updates the minutes would have to look something like:</p>
 
-<pre><code>void aggiornaMinuti(struct Orario &amp;o, int minuti)
+<pre><code>void updateMinutes(struct Time &amp;t, int minutes)
 {
-    /** Incrementa il numero dei minuti */
-    o.m += minuti;
+    /** Increments the number of minutes */
+    t.m += minutes;
 
-    /** Se necessario, incrementa le ore */
-    if(o.m &gt;= 60) {
+    /** If needed, increments the hours */
+    if(t.m &gt;= 60) {
 
-        o.m -= 60;
-        o.h += 1;
+        t.m -= 60;
+        t.h += 1;
 
-        /** Se necessario, passa al giorno dopo */
-        if(o.h &gt;= 24) {
-            o.h -= 24;
+        /** If needed, moves on to the next day */
+        if(t.h &gt;= 24) {
+            t.h -= 24;
         }
     }
 }
 </code></pre>
-<p>If we ever decided to change the <code>Orario</code> struct, we’d have to remember to rewrite this function too, adapting it to the struct’s new features, at the cost of time and the risk of mistakes.
+<p>If we ever decided to change the <code>Time</code> struct, we’d have to remember to rewrite this function too, adapting it to the struct’s new features, at the cost of time and the risk of mistakes.
 Moreover, nothing would stop a careless programmer from writing a function that ignores the relationship between hours, minutes, and seconds entirely:</p>
 
-<pre><code>void incrementa_m(struct Orario &amp;o, int minuti)
+<pre><code>void increment_m(struct Time &amp;t, int minutes)
 {
-    o.m += minuti;
+    t.m += minutes;
 }
 </code></pre>
 
 <p>If we put these two functions into a program, we get:</p>
 
-<pre><code>/** 
- * @file classi-struttura-orario.cpp
- * Gestione dei dati membro di una struct.
+<pre><code>/**
+ * @file classes-time-struct.cpp
+ * Handling the member data of a struct.
  */
- 
+
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
+#include &lt;iomanip&gt;
 
 using namespace std;
 
-/** Dichiarazione di una struttura per gestire un orario */
-struct Orario {
+/** Declaration of a structure to handle a time */
+struct Time {
     int h;
     int m;
     int s;
 };
 
-/** Funzione per l'incremento dei minuti */
-void aggiornaMinuti(struct Orario &amp;o, int minuti) 
+/** Function to increment the minutes */
+void updateMinutes(struct Time &amp;t, int minutes)
 {
-    /** Incrementa il numero dei minuti */
-    o.m += minuti;
-    
-    /** Se necessario, incrementa le ore */
-    if(o.m &gt;= 60) {
+    /** Increments the number of minutes */
+    t.m += minutes;
 
-        o.m -= 60;
-        o.h += 1;
-        
-        /** Se necessario, passa al giorno dopo */
-        if(o.h &gt;= 24) {
-            o.h -= 24;
+    /** If needed, increments the hours */
+    if(t.m &gt;= 60) {
+
+        t.m -= 60;
+        t.h += 1;
+
+        /** If needed, moves on to the next day */
+        if(t.h &gt;= 24) {
+            t.h -= 24;
         }
     }
 }
 
-/*  Funzione cialtrona per l'incremento dei minuti */
-void incrementa_m(struct Orario &amp;o, int minuti) 
+/*  Sloppy function to increment the minutes */
+void increment_m(struct Time &amp;t, int minutes)
 {
-    o.m += minuti;
+    t.m += minutes;
 }
 
 int main()
-{    
-    struct Orario ora;
+{
+    struct Time now;
 
-    /** Definisce dei valori iniziali prossimi al cambio di data */
-    ora.h = 23;
-    ora.m = 45;
-    ora.s = 00;
+    /** Sets initial values close to the date change */
+    now.h = 23;
+    now.m = 45;
+    now.s = 00;
 
-    /** Visualizza i valri iniziali */
-    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":" 
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":" 
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.s &lt;&lt; endl;
+    /** Displays the initial values */
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now.h &lt;&lt; ":"
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now.m &lt;&lt; ":"
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now.s &lt;&lt; endl;
 
-    /** Richiama la funzione di aggiornamento */
-    aggiornaMinuti(ora, 20);
-    
-    /** Visualizza i valori dopo l'aggiornamento */
-    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":" 
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":" 
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.s &lt;&lt; endl;
+    /** Calls the update function */
+    updateMinutes(now, 20);
 
-    /** Reimposta i valori iniziali */
-    ora.h = 23;
-    ora.m = 45;
-    ora.s = 00;
+    /** Displays the values after the update */
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now.h &lt;&lt; ":"
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now.m &lt;&lt; ":"
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now.s &lt;&lt; endl;
 
-    /** Richiama la funzione cialtrona */
-    incrementa_m(ora, 20);
-    
-    /** Visualizza i valori dopo l'aggiornamento */
-    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":" 
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":" 
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.s &lt;&lt; endl;
+    /** Resets the initial values */
+    now.h = 23;
+    now.m = 45;
+    now.s = 00;
 
-    
+    /** Calls the sloppy function */
+    increment_m(now, 20);
+
+    /** Displays the values after the update */
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now.h &lt;&lt; ":"
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now.m &lt;&lt; ":"
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now.s &lt;&lt; endl;
+
+
     return 0;
 }
 
@@ -234,8 +232,8 @@ int main()
 
 <p>Compiling and running this code, you get:</p>
 
-<pre><code>&gt; g++ src/cpp/classi-struttura-orario.cpp -o src/out/esempio
-&gt; ./src/out/esempio                                          
+<pre><code>&gt; g++ src/cpp/classes-time-struct.cpp -o src/out/example
+&gt; ./src/out/example                                          
 23:45:00
 00:05:00
 23:65:00
@@ -249,48 +247,45 @@ When you create a variable of class <code>X</code>, we say you’re <em>instanti
 A class’s member data and functions are directly accessible to the class’s own member functions, but to use them from functions outside the class, you have to use the selection operators <code>.</code> and <code>-&gt;</code>.
 The first, called the <em>direct selection operator</em>, is used with instances of the class; the second, called the <em>indirect selection operator</em>, with pointers to them:</p>
 
-<pre><code>/** 
- * @file classi-punto.cpp
- * Accesso ai dati membro della classe.
+<pre><code>/**
+ * @file classes-point.cpp
+ * Access to the class's member data.
  */
- 
-#include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
 
 using namespace std;
 
-class Punto
+class Point
 {
-public:             
-    
-    /** Dichiara i dati membro della classe */
+public:
+
+    /** Declares the class's member data */
     int _x, _y;
 
-    /** 
-     *  Le funzioni interne alla classe accedono ai
-     *  dati membro con la sintassi ordinaria.
-     */  
-    Punto(int x, int y) {
+    /**
+     *  Functions internal to the class access
+     *  member data with ordinary syntax.
+     */
+    Point(int x, int y) {
         _x = x;
         _y = y;
     }
 } ;
 
-int main(int argc, char** argv) 
+int main(int argc, char** argv)
 {
-    /** Crea un oggetto di classe Punto */
-    Punto p(5,6);       
+    /** Creates an object of class Point */
+    Point p(5,6);
 
-    /** Assegna l'istanza della classe al puntatore ptr */
-    Punto *ptr = &amp;p ;   
-    
-    /** 
-     *  Le funzioni esterne alla classe accedono ai
-     *  dati membro tramite gli operatori di selezione.
-     */  
-    p._x    = 3 ;       // assegna un valore tramite l'oggetto
-    ptr-&gt;_y = 2 ;       // assegna un valore tramite il puntatore
-    
+    /** Assigns the class instance to the pointer ptr */
+    Point *ptr = &amp;p ;
+
+    /**
+     *  Functions external to the class access
+     *  member data through selection operators.
+     */
+    p._x    = 3 ;       // assigns a value through the object
+    ptr-&gt;_y = 2 ;       // assigns a value through the pointer
+
     //...
 }
 
@@ -316,7 +311,7 @@ In the absence of specifiers, all of a class’s data and functions are consider
 C++ lets you split a class’s declaration into as many sections as you like, in whatever order of <code>private</code>, <code>public</code>, <code>protected</code> you prefer, but code written this way is certainly harder to read than code where all the private members sit on one side and all the public ones on another.
 So, unless you have good reasons to do otherwise (and there could be some, in the case of particularly complex classes), try to group all the functions and member data with the same access attributes into just three sections: <code>private</code>, <code>protected</code>, and <code>public</code>:</p>
 
-<pre><code>class Persona
+<pre><code>class Person
 {
  private:
     ...
@@ -328,15 +323,15 @@ So, unless you have good reasons to do otherwise (and there could be some, in th
 </code></pre>
 
 <p>This kind of ordering in the declaration, besides giving you more readable code, lets you, if you want, omit the initial <code>private</code> access specifier (it’s the default, remember?).
-Let’s put all this into practice by converting the <code>Orario</code> struct into a class:</p>
+Let’s put all this into practice by converting the <code>Time</code> struct into a class:</p>
 
-<pre><code>class Orario {
+<pre><code>class Time {
 private:
     int _h;
     int _m;
     int _s;
 public:
-    Orario() {
+    Time() {
         _h = 0;
         _m = 0;
         _s = 0;
@@ -348,8 +343,8 @@ public:
 The block of code in curly braces that makes up the body of the class contains the member data and functions, grouped by visibility.
 In this case we put the private member data first and the public ones after, but we could just as well have done the opposite.
 The <code>_h</code>, <code>_m</code>, and <code>_s</code> attributes appear after the <code>private</code> keyword, and will therefore be visible only to the class’s own functions.
-The <code>Orario</code> function appears after the <code>public</code> label, and will therefore be accessible from any part of the program.
-This function, which has the same name as the class, is called the <em>constructor</em>, and is called every time a variable of type <code>Orario</code> is created.
+The <code>Time</code> function appears after the <code>public</code> label, and will therefore be accessible from any part of the program.
+This function, which has the same name as the class, is called the <em>constructor</em>, and is called every time a variable of type <code>Time</code> is created.
 Its purpose is to initialize the variables inside the class, in this case, setting all three values to 0.
 We’ll talk about it shortly.
 The last thing you need to notice, in the code above, is the presence of the <code>;</code> character at the end of the class’s code block, just as with <code>union</code>s and <code>struct</code>s.</p>
@@ -357,7 +352,7 @@ The last thing you need to notice, in the code above, is the presence of the <co
 <hr id="costruttori" />
 
 <p>When we declare a variable of a primitive type like <code>int</code> or <code>double</code>, the compiler automatically carries out a whole series of operations to allocate the memory space needed to hold it, and to initialize it.
-The compiler, however, doesn’t know how a variable of type <code>Orario</code> should be created and initialized, which is why the class has to define <em>management functions</em> explaining both how to create a new variable and how to destroy it, if needed.
+The compiler, however, doesn’t know how a variable of type <code>Time</code> should be created and initialized, which is why the class has to define <em>management functions</em> explaining both how to create a new variable and how to destroy it, if needed.
 Management functions are of two kinds: <em>constructors</em> and <em>destructors</em>.
 Constructors have a few peculiarities that set them apart from other member functions:</p>
 
@@ -366,20 +361,20 @@ Constructors have a few peculiarities that set them apart from other member func
   <li>they have no return type, because it’s implicit that they return a variable of the class they belong to.</li>
 </ul>
 
-<p>A single class can have more than one constructor; the <code>Orario</code> class, for example, could have a constructor with no parameters, which initializes hours, minutes, and seconds to zero, and a constructor that instead lets you assign specific values to each attribute:</p>
+<p>A single class can have more than one constructor; the <code>Time</code> class, for example, could have a constructor with no parameters, which initializes hours, minutes, and seconds to zero, and a constructor that instead lets you assign specific values to each attribute:</p>
 
-<pre><code>class Orario {
+<pre><code>class Time {
 protected:
     int _h;
     int _m;
     int _s;
 public:
-    Orario() {
+    Time() {
         _h = 0;
         _m = 0;
         _s = 0;
     }
-    Orario(int h, int m, int s)
+    Time(int h, int m, int s)
     : _h(h % 24), _m(m % 60), _s(s % 60) {
     }
 };
@@ -401,7 +396,7 @@ _s = s % 60;
 When you define a constructor, you can use either syntax, or even mix them, depending on the case.
 A more concise way of getting the same result with a single constructor is to use default values for the parameters:</p>
 
-<pre><code>Orario(int h = 0, int m = 0, int s = 0)
+<pre><code>Time(int h = 0, int m = 0, int s = 0)
 : _h(h % 24), _m(m % 60), _s(s % 60) {
 }
 </code></pre>
@@ -410,18 +405,18 @@ A more concise way of getting the same result with a single constructor is to us
 This kind of function is called a <em>copy constructor</em> or <em>initialization constructor</em>, and requires, as an argument, a reference to a variable of the same class:</p>
 
 <pre><code>/**
- * Dichiarazione del costruttore di copia
- * all'interno della classe.
- * Possiamo copiare il valore delle variabili
- * così com'è perché è già stato verificato
- * dal costruttore della variabile o1.  
+ * Declaration of the copy constructor
+ * inside the class.
+ * We can copy the value of the variables
+ * as-is because it has already been verified
+ * by variable t1's constructor.  
  */
-Orario::Orario(const Orario&amp; o)
-: _h(o._h), _m(o._m), _s(o._s) {
+Time::Time(const Time&amp; t)
+: _h(t._h), _m(t._m), _s(t._s) {
 }
 
-/** Utilizzo */
-Orario o2 = o1;
+/** Usage */
+Time t2 = t1;
 </code></pre>
 
 <p>The copy constructor is a very important kind of constructor, since it presides over most of the initialization activity for objects of the class it belongs to; for this reason, if it isn’t defined by the user, it’s automatically generated by the compiler.</p>
@@ -430,9 +425,9 @@ Orario o2 = o1;
 
 <p>As you can probably guess, while a class’s constructor presides over the creation of new variables, the destructor handles their removal.
 It isn’t always necessary to define a destructor for a class.
-A variable of type <code>Orario</code>, which only holds three integers, probably won’t need a destructor, while a variable that makes use of dynamic memory almost certainly will.
+A variable of type <code>Time</code>, which only holds three integers, probably won’t need a destructor, while a variable that makes use of dynamic memory almost certainly will.
 The reason becomes clearer if you look at it from the compiler’s point of view.
-To create a variable of type <code>Orario</code>, the compiler has to allocate space for:</p>
+To create a variable of type <code>Time</code>, the compiler has to allocate space for:</p>
 
 <pre><code>3 * sizeof(int);
 </code></pre>
@@ -442,18 +437,18 @@ To create a variable of type <code>Orario</code>, the compiler has to allocate s
 <pre><code>class Buffer
 {
 private:
-    char* _dati;
+    char* _data;
     int   _size;
  public:
     Buffer(int size)
     : _size(size) {
-        _dati = new char[_size];
+        _data = new char[_size];
     }
     ...
 };
 </code></pre>
 
-<p>In the absence of specific instructions, to destroy a variable of type <code>Buffer</code>, the compiler will free <code>sizeof(char*) + sizeof(int)</code> bytes after its memory address, but in doing so, it will only destroy the <code>_size</code> integer and the <code>_dati</code> char pointer, without freeing the memory area that pointer was pointing to.
+<p>In the absence of specific instructions, to destroy a variable of type <code>Buffer</code>, the compiler will free <code>sizeof(char*) + sizeof(int)</code> bytes after its memory address, but in doing so, it will only destroy the <code>_size</code> integer and the <code>_data</code> char pointer, without freeing the memory area that pointer was pointing to.
 This, as you know, is a serious mistake, so the class needs a function that instructs the compiler otherwise.
 Like the constructor, a class’s destructor has no return type, but while a class can have several constructors, its destructor is always unique.
 It never has formal parameters, and its name is the same as the class it belongs to, preceded by a tilde <code>~</code>:</p>
@@ -461,15 +456,15 @@ It never has formal parameters, and its name is the same as the class it belongs
 <pre><code>class Buffer
 {
 private:
-    char* _dati;
+    char* _data;
     int   _size;
  public:
     Buffer(int size)
     : _size(size) {
-        _dati = new char[_size];
+        _data = new char[_size];
     }
     ~Buffer() {
-        delete [] _dati
+        delete [] _data
     }
 };
 </code></pre>
@@ -493,66 +488,66 @@ private:
 Defining them inside the class declaration is equivalent to declaring them <a href="/en/functions#inline" class="xref">inline</a>.
 If instead you define them outside the class declaration, they need to be identified by adding the class name before the function name, followed by the <a href="/en/operators#risoluzione" class="xref">resolution operator</a>:</p>
 
-<pre><code>/** 
- * @file classi-classe-orario.cpp
- * Gestione dei dati membro di una classe.
+<pre><code>/**
+ * @file classes-time-class.cpp
+ * Handling the member data of a class.
  */
- 
+
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
+#include &lt;iomanip&gt;
 
 using namespace std;
 
-/** Dichiarazione della classe */
-class Orario {
+/** Declaration of the class */
+class Time {
 private:
     int _h;
     int _m;
     int _s;
 public:
-    Orario(int h = 0, int m = 0, int s = 0);
+    Time(int h = 0, int m = 0, int s = 0);
 };
 
-/** Definizione del costruttore della classe */
-Orario::Orario(int h, int m, int s) 
-: _h(h % 24), _m(m % 60), _s(s % 60) 
+/** Definition of the class's constructor */
+Time::Time(int h, int m, int s)
+: _h(h % 24), _m(m % 60), _s(s % 60)
 {
 }
-    
-/** La funzione main non fa parte della classe */
-int main()
-{    
-    Orario ora;
 
-    /** Questo codice darà errore */
-    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._h &lt;&lt; ":" 
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._m &lt;&lt; ":" 
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._s &lt;&lt; endl;
-    
+/** The main function is not part of the class */
+int main()
+{
+    Time now;
+
+    /** This code will give an error */
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now._h &lt;&lt; ":"
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now._m &lt;&lt; ":"
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now._s &lt;&lt; endl;
+
     return 0;
 }
 
 </code></pre>
 
-<p>If you compile this code, though, you get an error: the <code>main</code> function can use the <code>Orario</code> class’s constructor, because it’s declared <code>public</code>, but it can neither read nor modify the attributes defined as <code>private</code>:</p>
+<p>If you compile this code, though, you get an error: the <code>main</code> function can use the <code>Time</code> class’s constructor, because it’s declared <code>public</code>, but it can neither read nor modify the attributes defined as <code>private</code>:</p>
 
-<pre><code>&gt; g++ src/cpp/classi-classe-orario-1.cpp -o src/out/esempio
-src/cpp/classi-classe-orario-1.cpp:34:44: error: '_h' is a protected member of 'Orario'
-    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._h &lt;&lt; ":"
+<pre><code>&gt; g++ src/cpp/classes-time-class-1.cpp -o src/out/example
+src/cpp/classes-time-class-1.cpp:34:44: error: '_h' is a protected member of 'Time'
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now._h &lt;&lt; ":"
                                            ^
-src/cpp/classi-classe-orario-1.cpp:14:9: note: declared protected here
+src/cpp/classes-time-class-1.cpp:14:9: note: declared protected here
     int _h;
         ^
-src/cpp/classi-classe-orario-1.cpp:35:44: error: '_m' is a protected member of 'Orario'
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._m &lt;&lt; ":"
+src/cpp/classes-time-class-1.cpp:35:44: error: '_m' is a protected member of 'Time'
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now._m &lt;&lt; ":"
                                            ^
-src/cpp/classi-classe-orario-1.cpp:15:9: note: declared protected here
+src/cpp/classes-time-class-1.cpp:15:9: note: declared protected here
     int _m;
         ^
-src/cpp/classi-classe-orario-1.cpp:36:44: error: '_s' is a protected member of 'Orario'
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._s &lt;&lt; endl;
+src/cpp/classes-time-class-1.cpp:36:44: error: '_s' is a protected member of 'Time'
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now._s &lt;&lt; endl;
                                            ^
-src/cpp/classi-classe-orario-1.cpp:16:9: note: declared protected here
+src/cpp/classes-time-class-1.cpp:16:9: note: declared protected here
     int _s;
         ^
 3 errors generated.
@@ -568,54 +563,54 @@ src/cpp/classi-classe-orario-1.cpp:16:9: note: declared protected here
 <p>The seemingly quicker way to access a class’s private data through an outside function or class is to declare them as <code>friend</code>.
 This grants the function or class full visibility over the protected data:</p>
 
-<pre><code>class Orario {
+<pre><code>class Time {
 private:
 
-    /** Dati membro privati */
+    /** Private member data */
     int _h;
     int _m;
     int _s;
 
 public:
 
-    /** Costruttore della classe */
-    Orario(int h = 0, int m = 0, int s = 0) ;
+    /** Class constructor */
+    Time(int h = 0, int m = 0, int s = 0) ;
 
-    /** Costruttore di copia inline */
-    Orario(const Orario&amp; o) {
-        _h = o._h;
-        _m = o._m;
-        _s = o._s;
+    /** Inline copy constructor */
+    Time(const Time&amp; t) {
+        _h = t._h;
+        _m = t._m;
+        _s = t._s;
     }
 
-    /** Funzioni di lettura  */
+    /** Read functions  */
     int getH() { return _h; }
     int getM() { return _m; }
     int getS() { return _s; }
 
-    /** Funzioni di scrittura */
+    /** Write functions */
     int setH(int h) { return _h = (h % 24); }
     int setM(int m) { return _m = (m % 60); }
     int setS(int s) { return _s = (s % 60); }
 
-    /** Dichiarazione di una funzione friend */
-    friend int aggiornaMinuti(Orario&amp; o, int m);
-    friend class Orologio; 	
+    /** Declaration of a friend function */
+    friend int updateMinutes(Time&amp; t, int m);
+    friend class Clock; 	
 
 };
 </code></pre>
 
-<p>As I said, this solution is only seemingly quicker, because all the logic for managing the <code>Orario</code> class’s data would have to be replicated both in the <code>aggiornaMinuti</code> function and in the <code>Orologio</code> class.
-Moreover, if you later needed to make changes to the <code>Orario</code> class, the same changes would have to be carried over into the functions of the <code>friend</code> classes that use it.
+<p>As I said, this solution is only seemingly quicker, because all the logic for managing the <code>Time</code> class’s data would have to be replicated both in the <code>updateMinutes</code> function and in the <code>Clock</code> class.
+Moreover, if you later needed to make changes to the <code>Time</code> class, the same changes would have to be carried over into the functions of the <code>friend</code> classes that use it.
 A safer and more efficient way of managing a class’s private attributes is to define public member functions that allow controlled access to the data you want to protect.
-In the case of the <code>Orario</code> class, you need six: one for reading and one for writing each of the three member data items:</p>
+In the case of the <code>Time</code> class, you need six: one for reading and one for writing each of the three member data items:</p>
 
-<pre><code>/** Funzioni di lettura */
+<pre><code>/** Read functions */
 int getH() { return _h; }
 int getM() { return _m; }
 int getS() { return _s; }
 
-/** Funzioni di scrittura */
+/** Write functions */
 int setH(int h) { return _h = (h % 24); }
 int setM(int m) { return _m = (m % 60); }
 int setS(int s) { return _s = (s % 60); }
@@ -629,11 +624,11 @@ It’s the same reason I add an <em>underscore</em> character before the name of
 
 <p>Using the initialization list, inside the constructor, lets you use parameters with the same name as the class’s member data:</p>
 
-<pre><code>class Punto
+<pre><code>class Point
 {
     int x, y;
 public:             
-    Punto(int x, int y)
+    Point(int x, int y)
     : x(x), y(y) {
     }
 };
@@ -644,14 +639,14 @@ There are also those who think this is a mistake, because, while it makes life e
 I don’t entirely agree with this claim, because sometimes it’s more convenient and quicker to have the function code inside the class declaration, but since it’s a principle that puts the good of the many (those who use the code) ahead of the good of the one (the code’s author), I felt obliged to pass it on to you.
 Just as we did for the class’s constructor, we could unify the read and write functions, using a default parameter to determine the program’s behavior:</p>
 
-<pre><code>int ore(int h = -1) {
+<pre><code>int hours(int h = -1) {
     return (h != -1) ? (_h = (h % 24)) : _h;
 }
 </code></pre>
 
 <p>This syntax is the equivalent of:</p>
 
-<pre><code>int ore(int h = -1) {
+<pre><code>int hours(int h = -1) {
     if(h != -1) {
         _h = (h % 24);
     }
@@ -670,12 +665,12 @@ I’d therefore recommend always writing two separate interface functions for re
 <p>Every variable of a given class holds its own copies of the member data, while a class’s member functions are shared by all of its instances.
 To let the program know which instance is calling a given method, the compiler adds a hidden parameter, called <code>this</code>, to every function call, pointing to the instance that requested the function.
 The <code>this</code> parameter, even though it’s never declared, can be used inside the body of member functions to refer to the current instance.
-For example, the <code>Orario</code> class’s copy constructor (like any other member function of the class) could be rewritten like this:</p>
+For example, the <code>Time</code> class’s copy constructor (like any other member function of the class) could be rewritten like this:</p>
 
-<pre><code>Orario(const Orario&amp; o) {
-    this-&gt;_h = o._h;
-    this-&gt;_m = o._m;
-    this-&gt;_s = o._s;
+<pre><code>Time(const Time&amp; t) {
+    this-&gt;_h = t._h;
+    this-&gt;_m = t._m;
+    this-&gt;_s = t._s;
 }
 </code></pre>
 
@@ -695,57 +690,57 @@ otherwise, they must be initialized elsewhere in the program, like any object wi
 
 <p>Let me try to clarify things a bit with an example:</p>
 
-<pre><code>/** 
- * @file classi-static.cpp
- * Funzioni e dati membro statici di una classe.
+<pre><code>/**
+ * @file classes-static.cpp
+ * Static functions and member data of a class.
  */
- 
+
 #include &lt;iostream&gt;
 
 using namespace std;
 
-/** Classe generica con membri statici */
-class Contatore {
+/** Generic class with static members */
+class Counter {
 private:
 
-    /** Definisce il dato statico */
-    static int _nIstanze;     
+    /** Defines the static data */
+    static int _nInstances;
 
 public:
-    
-    /** Il costruttore incrementa il numero di istanze */
-    Contatore() {
-        _nIstanze++;
+
+    /** The constructor increments the number of instances */
+    Counter() {
+        _nInstances++;
     }
-    
-    /** Funzione di interfaccia statica */
-    static int nIstanze() {  
-        return _nIstanze;
+
+    /** Static interface function */
+    static int nInstances() {
+        return _nInstances;
     }
 };
 
-/** Inizializza il membro statico  */ 
-int Contatore::_nIstanze = 0;
+/** Initializes the static member  */
+int Counter::_nInstances = 0;
 
 int main()
-{    
-    /** Crea la prima istanza della classe */
-    Contatore c1;
+{
+    /** Creates the first instance of the class */
+    Counter c1;
 
-    /** Richiama la funzione statica dall'oggetto */
-    cout &lt;&lt; "Da istanza c1: " &lt;&lt; c1.nIstanze() &lt;&lt; endl;
+    /** Calls the static function from the object */
+    cout &lt;&lt; "From instance c1: " &lt;&lt; c1.nInstances() &lt;&lt; endl;
 
-    /** Crea altre due istanze della classe */
-    Contatore c2, c3;
-   
-    /** 
-     * Richiama la funzione statica dagli oggetti 
-     * e direttamente dalla classe
+    /** Creates two more instances of the class */
+    Counter c2, c3;
+
+    /**
+     * Calls the static function from the objects
+     * and directly from the class
      */
-    cout &lt;&lt; "Da istanza c2: "&lt;&lt; c2.nIstanze()         &lt;&lt; endl;
-    cout &lt;&lt; "Da istanza c3: "&lt;&lt; c3.nIstanze()         &lt;&lt; endl;
-    cout &lt;&lt; "Dalla classe : "&lt;&lt; Contatore::nIstanze() &lt;&lt; endl;
-    
+    cout &lt;&lt; "From instance c2: "&lt;&lt; c2.nInstances()         &lt;&lt; endl;
+    cout &lt;&lt; "From instance c3: "&lt;&lt; c3.nInstances()         &lt;&lt; endl;
+    cout &lt;&lt; "From the class : "&lt;&lt; Counter::nInstances() &lt;&lt; endl;
+
     return 0;
 }
 
@@ -753,28 +748,28 @@ int main()
 
 <p>If you compile and run this code, you’ll get:</p>
 
-<pre><code>&gt; g++ src/cpp/classi-static.cpp -o src/out/esempio
-&gt; src/out/esempio                                 
-Da istanza c1: 1
-Da istanza c2: 3
-Da istanza c3: 3
-Dalla classe : 3
+<pre><code>&gt; g++ src/cpp/classes-static.cpp -o src/out/example
+&gt; src/out/example                                 
+From instance c1: 1
+From instance c2: 3
+From instance c3: 3
+From the class : 3
 </code></pre>
 
-<p>As you can see, every instance of the class shares the same value for the <code>nIstanze</code> member data, and the interface function, declared <code>static</code>, can be called even without referring to an instance.
+<p>As you can see, every instance of the class shares the same value for the <code>nInstances</code> member data, and the interface function, declared <code>static</code>, can be called even without referring to an instance.
 For this reason, if you use the <code>this</code> pointer inside a static class:</p>
 
-<pre><code>static int nIstanze() {  
-    return this-&gt;_nIstanze;
+<pre><code>static int nInstances() {  
+    return this-&gt;_nInstances;
 }
 </code></pre>
 
 <p>you get the compile error:</p>
 
-<pre><code>&gt; g++ src/cpp/classi-static.cpp -o src/out/esempio
-src/cpp/classi-static.cpp:26:16: error: invalid use of 'this'
+<pre><code>&gt; g++ src/cpp/classes-static.cpp -o src/out/example
+src/cpp/classes-static.cpp:26:16: error: invalid use of 'this'
  outside of a non-static member function
-        return this-&gt;_nIstanze;
+        return this-&gt;_nInstances;
                ^
 1 error generated.
 </code></pre>
@@ -795,77 +790,77 @@ The only way to declare an object with an anonymous class is to add it to the cl
 <p>This code declares both the class and its one and only instance, the global variable <code>obj</code>, at the same time.
 When Master Canaro tried to <em>port</em> the <a href="/en/mythopoetics#universo-in-cpp" class="xref">Universe to C++</a>, he wanted to use an anonymous class for the <code>Dio</code> (God) variable, because, lacking a constructor and instantiated by its own class, that variable would have been visible throughout the code, but no part of the program could have generated another one:</p>
 
-<pre><code>/** 
- * @file classi-dio.cpp
- * Dichiarazione della classe Dio.
+<pre><code>/**
+ * @file classes-god.cpp
+ * Declaration of the God class.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;list&gt;
 
 
 using namespace std;
 
-// Classe astratta da utilizzare come base
-// per tutti gli elementi del Creato.
-class Creatura {
+// Abstract class to be used as a base
+// for all the elements of Creation.
+class Creature {
 public:
-   // Funzione virtuale pura di verifica.
+   // Pure virtual verification function.
    virtual bool isGood() = 0;
-   
+
 };
 
-// Classi derivate per la gestione degli 
-// elementi del Creato.
-class Mare   : public Creatura {
-    bool isGood() { return true; }; 
+// Derived classes for handling the
+// elements of Creation.
+class Sea    : public Creature {
+    bool isGood() { return true; };
 };
-class Uomo   : public Creatura { 
-    bool isGood(); 
+class Man    : public Creature {
+    bool isGood();
 };
-class Donna  : public Creatura {};
-class Padre  : public Uomo     {};
-class Figlio : public Uomo     {};
-class Popolo : public list&lt;Creatura&gt; {};
+class Woman  : public Creature {};
+class Father : public Man      {};
+class Son    : public Man      {};
+class People : public list&lt;Creature&gt; {};
 
 class  {
 private:
 
-    // Funzioni membro per la generazione degli elementi 
-    // del Creato, accessibili solo alla classe. 
-    Creatura* creaLuce();
-    Creatura* creaStelle();
-    Creatura* creaAcquaTerra();
-    Creatura* creaPiante();
-    Creatura* creaSoleLuna();
-    Creatura* creaAnimali();
+    // Member functions for generating the elements
+    // of Creation, accessible only to the class.
+    Creature* createLight();
+    Creature* createStars();
+    Creature* createWaterEarth();
+    Creature* createPlants();
+    Creature* createSunMoon();
+    Creature* createAnimals();
 
-    // Funzioni per la generazione degli umani.
-    Uomo&amp;  creaUomo();
-    Donna&amp; creaDonna(Uomo&amp; adamo);
+    // Functions for generating humans.
+    Man&amp;   createMan();
+    Woman&amp; createWoman(Man&amp; adam);
 
-    // Interruzione per il settimo giorno.
-    void shabat();
-    
-    // Funzioni di interfaccia con gli umani.
-    bool popEden(Uomo&amp; adamp, Donna&amp; eva);
-    bool printComandamenti(ostream&amp; tavole);
-    bool checkFede(Padre&amp; abramo, Figlio&amp; isacco);
-    bool splitAcque(Mare&amp; marRosso, Popolo&amp; ebrei);
+    // Break for the seventh day.
+    void shabbat();
+
+    // Interface functions with humans.
+    bool populateEden(Man&amp; adam, Woman&amp; eve);
+    bool printCommandments(ostream&amp; tablets);
+    bool checkFaith(Father&amp; abraham, Son&amp; isaac);
+    bool splitWaters(Sea&amp; redSea, People&amp; hebrews);
 
 protected:
-    
-    // Funzione membro accessibile anche alle 
-    // classi figlio.
-    bool donaVita(Uomo&amp; lazzaro);
-    
+
+    // Member function also accessible to
+    // child classes.
+    bool giveLife(Man&amp; lazarus);
+
 public:
 
-     // Funzione membro pubblica.
-     // Torna il numero di preghiere da recitare.
-    int rimettiPeccati(Creatura* fedele);
-                   
-} Dio;
+     // Public member function.
+     // Returns the number of prayers to be recited.
+    int forgiveSins(Creature* believer);
+
+} God;
 
 </code></pre>
 
@@ -873,7 +868,7 @@ public:
 God, after all, has <em>every</em> imaginable attribute, and each of them has an infinite value.
 Likewise, being omnipotent, he must have member functions capable of carrying out <em>every</em> possible action, and, using an anonymous class, the code for these functions would have had to be defined inside the class declaration, because, lacking a name, it couldn’t be defined externally:</p>
 
-<pre><code>bool ...::checkFede(Padre&amp; abramo, Figlio&amp; isacco)
+<pre><code>bool ...::checkFaith(Father&amp; abraham, Son&amp; isaac)
 {
 
 }
@@ -884,68 +879,67 @@ Likewise, being omnipotent, he must have member functions capable of carrying ou
 <p>It’s a shame Plato didn’t live two thousand four hundred and eleven years, because he would surely have appreciated the affinity between C++ classes and his theories about <em>ideas</em> and <em>forms</em>.
 In this code, we can think of the class declaration as the <em>idea</em> of the fish, while the instance is its <em>form</em>:</p>
 
-<pre><code>/** 
- * @file classi-pesce.cpp
- * Definizione della classe Pesce.
+<pre><code>/**
+ * @file classes-fish.cpp
+ * Definition of the Fish class.
  */
- 
+
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
 
 using namespace std;
 
 /**
- *  Dichiarazione della classe: idea
+ *  Declaration of the class: idea
  */
-class Pesce {
+class Fish {
 private:
 
-    /** Dati membro privati */
-    string _specie;
-    bool   _commestibile;
-    
+    /** Private member data */
+    string _species;
+    bool   _edible;
+
 public:
-    
-    /** Costruttore della classe inline */
-    Pesce(const char* specie, bool commestibile) 
-    : _specie(specie), _commestibile(commestibile)
+
+    /** Inline class constructor */
+    Fish(const char* species, bool edible)
+    : _species(species), _edible(edible)
     {
     }
-    
-    /** Costruttore di copia inline */
-    Pesce(const Pesce&amp; p) {
-        this-&gt;_specie       = p._specie;
-        this-&gt;_commestibile = p._commestibile;
+
+    /** Inline copy constructor */
+    Fish(const Fish&amp; f) {
+        this-&gt;_species = f._species;
+        this-&gt;_edible  = f._edible;
     }
 
-    /** Distruttore inline */
-    ~Pesce() { 
+    /** Inline destructor */
+    ~Fish() {
     }
 
-    /** Funzioni di interfaccia */
-    const char* getSpecie() { return _specie.c_str(); }
-    bool isCommestibile()   { return _commestibile;   }
+    /** Interface functions */
+    const char* getSpecies() { return _species.c_str(); }
+    bool isEdible()          { return _edible;           }
 
 };
 
 
 /**
- *  Istanza della classe: forma
+ *  Instance of the class: form
  */
 int main()
-{             
-    Pesce pesce("spigola", true);
-    
-    cout &lt;&lt; pesce.getSpecie() &lt;&lt; ": "
-         &lt;&lt; (pesce.isCommestibile() ? "sì" : "no")
+{
+    Fish fish("seabass", true);
+
+    cout &lt;&lt; fish.getSpecies() &lt;&lt; ": "
+         &lt;&lt; (fish.isEdible() ? "yes" : "no")
          &lt;&lt; endl;
-     
+
     return 0;
 }
 
 </code></pre>
 
-<p>As we said when talking about the <a href="/en/preprocessor#pesce" class="xref">preprocessor</a>, though, the word <em>fish</em> can mean different things depending on who’s using it, so the declaration/idea of the <code>Pesce</code> class will vary depending on what it needs to be used for.
+<p>As we said when talking about the <a href="/en/preprocessor#pesce" class="xref">preprocessor</a>, though, the word <em>fish</em> can mean different things depending on who’s using it, so the declaration/idea of the <code>Fish</code> class will vary depending on what it needs to be used for.
 For example, knowing whether a fish is edible or not is crucial for a fisherman or an environmentalist, but might not matter to a marine biologist.
 Conversely, the type of skeleton or the respiratory system, relevant to a biologist, are entirely irrelevant to a fishmonger, who instead will certainly care about the price per kilo, the catch date, and how it’s been preserved.
 We’ll talk about this in the coming lessons; for now we need to return to a question we left open, namely the precept:</p>

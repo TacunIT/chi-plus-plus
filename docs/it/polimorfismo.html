@@ -977,7 +977,7 @@ int main ()
 </code></pre>
 <p>Utilizzati così, i <em>functor</em> hanno poco senso, ma possono essere (e sono) molto utili quando si utilizzano quelle funzioni della STl che elaborano tutti gli elementi di un container, come per esempio la funzione <code>transform</code>:</p>
 
-<pre><code>/** 
+<pre><code>/**
  * @file src/polimorfismo-rot13.cpp
  * Trasformazione di una stringa con una funzione.
  */
@@ -985,30 +985,30 @@ int main ()
 #include &lt;string&gt;
 #include &lt;cctype&gt;
 #include &lt;iostream&gt;
-#include &lt;functional&gt;
+#include &lt;algorithm&gt;
 
 using namespace std;
 
-/** 
-*   Funzione che converte i caratteri di una stringa in rot13  
-*   Il ROT13 è un algoritmo di cifratura piuttosto banale, 
-*   perché incrementa di 13 il valore di ciascun carattere. 
-*   Non è un algoritmo realmente sicuro, però, perché per 
-*   decifrare il testo crittografato basta crittografarlo 
-*   di nuovo.  
+/**
+*   Funzione che converte i caratteri di una stringa in rot13
+*   Il ROT13 è un algoritmo di cifratura piuttosto banale,
+*   perché incrementa di 13 il valore di ciascun carattere.
+*   Non è un algoritmo realmente sicuro, però, perché per
+*   decifrare il testo crittografato basta crittografarlo
+*   di nuovo.
 */
-unsigned char rot13(unsigned char c) 
-{ 
+unsigned char rot13(unsigned char c)
+{
     unsigned char rot = c;
     if (isalpha(c)) {
-        rot = ((tolower(c) - 'a') &lt; 14) ? c + 13 : c - 13;
+        rot = ((tolower(c) - 'a') &lt; 13) ? c + 13 : c - 13;
     }
     return rot;
 }
 
 int main ()
 {
-    string pp("PippoPluto"); 
+    string pp("PippoPluto");
 
     /** Elabora la stringa con la funzione transform */
     transform(
@@ -1018,18 +1018,18 @@ int main ()
              , rot13        // funzione da applicare
              );
 
-    cout &lt;&lt; pp &lt;&lt; endl; 
+    cout &lt;&lt; pp &lt;&lt; endl;
 
     /** Ripetendo l'operazione, il testo torna normale. */
     transform(
-               pp.begin()   
-             , pp.end()     
-             , pp.begin()   
-             , rot13        
+               pp.begin()
+             , pp.end()
+             , pp.begin()
+             , rot13
              );
 
-    cout &lt;&lt; pp &lt;&lt; endl; 
-    
+    cout &lt;&lt; pp &lt;&lt; endl;
+
     return 0;
 }
 

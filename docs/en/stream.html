@@ -99,16 +99,16 @@ It couldn’t be otherwise: C++ doesn’t just have to handle strings and number
 Besides being able to make use of C’s function libraries, C++ has its own I/O library, based on the <code>stream</code> class hierarchy, which lets you handle user-defined data types too.
 We’ve already seen examples of this feature when we talked about <a href="/en/c-plus-plus#polymorphism" class="xref">polymorphism</a> and <a href="/en/polymorphism#overload-operatori" class="xref">operator overloading</a>:</p>
 
-<pre><code>ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animale&amp; animale) {
-    os  &lt;&lt; "Specie:" &lt;&lt; animale.getSpecie() &lt;&lt; "\t"
-        &lt;&lt; "Razza:"  &lt;&lt; animale.getRazza()  &lt;&lt; "\t"
-        &lt;&lt; "Sesso:"  &lt;&lt; animale.getSesso()  
+<pre><code>ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animal&amp; animal) {
+    os  &lt;&lt; "Species:" &lt;&lt; animal.getSpecies() &lt;&lt; "\t"
+        &lt;&lt; "Breed:"  &lt;&lt; animal.getBreed()  &lt;&lt; "\t"
+        &lt;&lt; "Sex:"  &lt;&lt; animal.getSex()  
         &lt;&lt; endl;
     return os;   
 }
 </code></pre>
 
-<p>This code “teaches” the <code>&lt;&lt;</code> operator how to behave when displaying an object of class <code>Animale</code>.
+<p>This code “teaches” the <code>&lt;&lt;</code> operator how to behave when displaying an object of class <code>Animal</code>.
 The same can be done (and we did it) for any other user-defined type.
 It’s the language’s syntax that adapts to the programmer’s needs, not the other way around.
 A few key concepts for understanding streams are:</p>
@@ -324,36 +324,36 @@ class basic_fstream
 <p>Before a narcolepsy attack sets in, let me put all this into practice with a few examples.
 We’ve already seen several examples of stream output:</p>
 
-<pre><code>cout &lt;&lt; "Hello World!"  // stringhe
-     &lt;&lt; 12              // interi
-     &lt;&lt; 0.35            // float
-     &lt;&lt; argv[1]         // puntatori
+<pre><code>cout &lt;&lt; "Hello World!"  // strings
+     &lt;&lt; 12              // integers
+     &lt;&lt; 0.35            // floats
+     &lt;&lt; argv[1]         // pointers
      &lt;&lt; endl;               
 </code></pre>
 
 <p>We haven’t yet talked about stream input, though it works in a fairly similar way:</p>
 
-<pre><code>/** 
- * @file src/stream-input.cpp
- * Programma di esempio per la gestione dell'input da stream.
+<pre><code>/**
+ * @file src/stream-input-1.cpp
+ * Example program for handling stream input.
  */
- 
+
 #include &lt;iostream&gt;
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    string stringa;
-    
-    /** Scrive un messaggio sullo schermo */
-    cout &lt;&lt; "Inserire una stringa: ";
-    
-    /** Legge una stringa da tastiera */
-    cin &gt;&gt; stringa;
+{
+    string str;
 
-    /** La scrive sullo schermo */
-    cout &lt;&lt; stringa &lt;&lt; endl;
+    /** Writes a message to the screen */
+    cout &lt;&lt; "Enter a string: ";
+
+    /** Reads a string from the keyboard */
+    cin &gt;&gt; str;
+
+    /** Writes it to the screen */
+    cout &lt;&lt; str &lt;&lt; endl;
 
     return 0;
 }
@@ -362,72 +362,72 @@ int main(int argc, char** argv)
 
 <p>This code reads a string from standard input and writes it to the screen, but it shows us a peculiarity of stream input:</p>
 
-<pre><code>&gt; g++ src/cpp/stream-input-1.cpp -o src/out/esempio
-&gt; src/out/esempio                                
-Inserire una stringa: Penso, quindi sono.
-Penso,
+<pre><code>&gt; g++ src/cpp/stream-input-1.cpp -o src/out/example
+&gt; src/out/example                                
+Enter a string: I think, therefore I am.
+I
 </code></pre>
 
 <p>As you can see, read operations with the <code>&gt;&gt;</code> operator stop at the first whitespace character; so, if we want to read the whole string, we need to change the code:</p>
 
-<pre><code>/** 
+<pre><code>/**
  * @file src/stream-input-2.cpp
- * Programma di esempio per la gestione dell'input da stream.
+ * Example program for handling stream input.
  */
- 
+
 #include &lt;iostream&gt;
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
+{
     char   buffer[256];
-    string stringa;
-    
-    /** 
-    *   Legge una stringa da tastiera tramite
-    *   la funzione membro della classe istream.
+    string str;
+
+    /**
+    *   Reads a string from the keyboard using
+    *   the istream class's member function.
     */
-    cout &lt;&lt; "Inserire una stringa: ";
+    cout &lt;&lt; "Enter a string: ";
     cin.getline(buffer, 256);
     cout &lt;&lt; buffer &lt;&lt; endl;
 
 
-    /** 
-    *   Legge una stringa da tastiera tramite
-    *   la funzione globale getline.
+    /**
+    *   Reads a string from the keyboard using
+    *   the global getline function.
     */
-    cout &lt;&lt; "Inserire una stringa: ";
-    getline(cin, stringa);
-    cout &lt;&lt; stringa &lt;&lt; endl;
+    cout &lt;&lt; "Enter a string: ";
+    getline(cin, str);
+    cout &lt;&lt; str &lt;&lt; endl;
 
     return 0;
 }
 
 </code></pre>
 
-<pre><code>&gt; g++ src/cpp/stream-input-2.cpp -o src/out/esempio
-&gt; src/out/esempio                                  
-Inserire una stringa: Penso, quindi sono.
-Penso, quindi sono.
-Inserire una stringa: Cogito ergo sum.
+<pre><code>&gt; g++ src/cpp/stream-input-2.cpp -o src/out/example
+&gt; src/out/example                                  
+Enter a string: I think, therefore I am.
+I think, therefore I am.
+Enter a string: Cogito ergo sum.
 Cogito ergo sum.
 </code></pre>
 
 <p>Another feature of the <code>&lt;&lt;</code> and <code>&gt;&gt;</code> operators is that their precedence is lower than almost all other operators, which lets you write instructions like this one:</p>
 
-<pre><code>cout &lt;&lt; "Due più due fa: " &lt;&lt; 2 + 2 &lt;&lt; '\n' ;
+<pre><code>cout &lt;&lt; "Two plus two makes: " &lt;&lt; 2 + 2 &lt;&lt; '\n' ;
 </code></pre>
 
 <p>The logical AND operator <code>|</code>, the inclusive OR operator <code>&amp;</code>, and the exclusive XOR operator <code>^</code> have lower precedence than the <code>&lt;&lt;</code> and <code>&gt;&gt;</code> operators, and, if not enclosed in parentheses, operations involving them can cause bugs.
 For example, in an instruction like the following, the <code>&amp;</code> operator would be interpreted as a reference to an object, with consequences different from those expected:</p>
 
-<pre><code>cout &lt;&lt; "Il valore è: " &lt;&lt; 2 &amp; 2 &lt;&lt; '\n' ;	// ERRORE!
+<pre><code>cout &lt;&lt; "The value is: " &lt;&lt; 2 &amp; 2 &lt;&lt; '\n' ;	// ERROR!
 </code></pre>
 
 <p>the correct syntax, instead, is:</p>
 
-<pre><code>cout &lt;&lt; "Il valore è: " &lt;&lt; (2 &amp; 2) &lt;&lt; '\n' ;	// OK
+<pre><code>cout &lt;&lt; "The value is: " &lt;&lt; (2 &amp; 2) &lt;&lt; '\n' ;	// OK
 </code></pre>
 
 <p>The default behavior of stream input operators also includes some formatting conventions: <!-- @todo:verificare --></p>
@@ -441,51 +441,50 @@ For example, in an instruction like the following, the <code>&amp;</code> operat
 <p>The first three changes are permanent: once set, the new values remain in effect until another instruction changes them again; changes to the input field width, on the other hand, only apply to the instruction that requests them.
 In some earlier examples we saw that it’s possible to change a stream’s default output format by means of <em>manipulators</em>:</p>
 
-<pre><code>cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._h &lt;&lt; ":"
-     &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._m &lt;&lt; ":"
-     &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora._s &lt;&lt; endl;
+<pre><code>cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now._h &lt;&lt; ":"
+     &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now._m &lt;&lt; ":"
+     &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; now._s &lt;&lt; endl;
 </code></pre>
 
 <p>The same result can be achieved by means of dedicated functions of the <code>ios_base</code> and <code>basic_ios</code> classes, which let you change the fill character, the precision of decimal digits, and the field width:</p>
 
-<pre><code>/** 
+<pre><code>/**
  * @file src/stream-format.cpp
- * Formattazione dell'I/O con gli stream.
+ * Formatting I/O with streams.
  */
- 
+
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt;
 
 using namespace std;
 
 
 int main(int argc, char** argv)
-{    
+{
     double d = 123.456789 ;
 
-    /** Mostra i valori di default */
+    /** Shows the default values */
     cout &lt;&lt; endl;
-    cout &lt;&lt; "Valori di default" &lt;&lt; endl;
+    cout &lt;&lt; "Default values" &lt;&lt; endl;
     cout &lt;&lt; "  width:     "  &lt;&lt; cout.width()        &lt;&lt; endl;
-    cout &lt;&lt; "  precision: "  &lt;&lt; cout.precision()    &lt;&lt; endl; 	
-    cout &lt;&lt; "  fill:      '" &lt;&lt; cout.fill()  &lt;&lt; "'" &lt;&lt; endl;	
+    cout &lt;&lt; "  precision: "  &lt;&lt; cout.precision()    &lt;&lt; endl;
+    cout &lt;&lt; "  fill:      '" &lt;&lt; cout.fill()  &lt;&lt; "'" &lt;&lt; endl;
     cout &lt;&lt; "  output:    "  &lt;&lt; d                   &lt;&lt; endl;
 
-    /** Modifica il formato e mostra il nuovo output */
+    /** Changes the format and shows the new output */
     cout &lt;&lt; endl;
-    cout &lt;&lt; "Modifica formato" &lt;&lt; endl;
+    cout &lt;&lt; "Changed format" &lt;&lt; endl;
     cout &lt;&lt; "  output:    "  ;
     cout.precision(4) ;
     cout.fill('#') ;
     cout.width(10) ;
     cout &lt;&lt; d &lt;&lt; endl;
-    
-    /** Mostra la persistenza dei valori */
+
+    /** Shows the persistence of the values */
     cout &lt;&lt; endl;
-    cout &lt;&lt; "Valori correnti" &lt;&lt; endl;
+    cout &lt;&lt; "Current values" &lt;&lt; endl;
     cout &lt;&lt; "  width:     "  &lt;&lt; cout.width()        &lt;&lt; endl;
-    cout &lt;&lt; "  precision: "  &lt;&lt; cout.precision()    &lt;&lt; endl; 	
-    cout &lt;&lt; "  fill:      '" &lt;&lt; cout.fill()  &lt;&lt; "'" &lt;&lt; endl;	
+    cout &lt;&lt; "  precision: "  &lt;&lt; cout.precision()    &lt;&lt; endl;
+    cout &lt;&lt; "  fill:      '" &lt;&lt; cout.fill()  &lt;&lt; "'" &lt;&lt; endl;
     cout &lt;&lt; "  output:    "  &lt;&lt; d                   &lt;&lt; endl;
 
     return 0;
@@ -495,18 +494,18 @@ int main(int argc, char** argv)
 
 <p>If you compile and run this code, you get:</p>
 
-<pre><code>&gt; src/out/esempio                                 
+<pre><code>&gt; src/out/example                                 
 
-Valori di default
+Default values
   precision: 6
   fill:      ' '
   width:     0
   output:    123.457
 
-Valori modificati
+Changed format
   output:    #####123.5
 
-Valori correnti
+Current values
   precision: 4
   fill:      '#'
   width:     0
@@ -546,11 +545,11 @@ The <code>basic_ios</code> class has boolean member functions that return <code>
 <p>These functions let you stop reading or writing a stream when an error occurs, or when the end of the file has been reached.
 One thing you should never do, though, is use the <code>eof</code> function inside a <code>while</code> loop to read a file:</p>
 
-<pre><code>/** 
+<pre><code>/**
  * @file src/stream-eof.cpp
- * Gestione dell'I/O su file con gli stream.
+ * Handling file I/O with streams.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 
@@ -558,31 +557,31 @@ using namespace std;
 
 
 int main(int argc, char** argv)
-{    
-    ifstream testo;
+{
+    ifstream text;
     int      n;
-    
-    /** apre il file in lettura */
-    testo.open(argv[1]);
-    
-    /** Verifica che il file sia aperto */
-    if(testo.is_open()) {
-        
-        /** Utilizza eof per gestire il ciclo */
-        while(!testo.eof()) {
 
-            /** Legge un numero dal file */
-            testo &gt;&gt; n;
+    /** opens the file for reading */
+    text.open(argv[1]);
 
-            /** Lo scrive a video */
+    /** Checks that the file is open */
+    if(text.is_open()) {
+
+        /** Uses eof to control the loop */
+        while(!text.eof()) {
+
+            /** Reads a number from the file */
+            text &gt;&gt; n;
+
+            /** Writes it to the screen */
             cout &lt;&lt; n &lt;&lt; endl;
         }
-        
+
     }
-        
-    /** Chiude il file di input */
-    testo.close();
-    
+
+    /** Closes the input file */
+    text.close();
+
     return 0;
 }
 
@@ -590,8 +589,8 @@ int main(int argc, char** argv)
 
 <p>If you have this program read a file containing the numbers 10, 20, and 30, you’ll get this output:</p>
 
-<pre><code>&gt; g++ src/cpp/stream-eof.cpp -o src/out/esempio
-&gt; src/out/esempio src/cpp/stream-eof.txt       
+<pre><code>&gt; g++ src/cpp/stream-eof.cpp -o src/out/example
+&gt; src/out/example src/cpp/stream-eof.txt       
 10
 20
 30
@@ -601,11 +600,11 @@ int main(int argc, char** argv)
 <p>The bug happens because the <code>eof</code> check runs before the fourth read operation, when the stream is still in the <code>good</code> state.
 A better way to handle these cases is to use the <code>good</code> function, which also lets you check that the file was opened correctly:</p>
 
-<pre><code>/** 
+<pre><code>/**
  * @file src/stream-good.cpp
- * Gestione dell'I/O su file con gli stream.
+ * Handling file I/O with streams.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 
@@ -613,40 +612,40 @@ using namespace std;
 
 
 int main(int argc, char** argv)
-{    
-    ifstream testo;
+{
+    ifstream text;
     int      n;
-    
-    /** apre il file in lettura */
-    testo.open(argv[1]);
-    
-    /** 
-    *   Il ciclo si ripete fino a che non 
-    *   si verifica un errore
+
+    /** opens the file for reading */
+    text.open(argv[1]);
+
+    /**
+    *   The loop repeats until
+    *   an error occurs
     */
-    while(testo.good()) {
+    while(text.good()) {
 
-        /** Legge un numero dal file */
-        testo &gt;&gt; n;
+        /** Reads a number from the file */
+        text &gt;&gt; n;
 
-        /** Si interrompe se il file è finito */
-        if(testo.eof()) break;
-        
-        /** Altrimenti, scrive il numero */
+        /** Stops if the file has ended */
+        if(text.eof()) break;
+
+        /** Otherwise, writes the number */
         cout &lt;&lt; n &lt;&lt; endl;
     }
-                
-    /** Chiude il file di input */
-    testo.close();
-    
+
+    /** Closes the input file */
+    text.close();
+
     return 0;
 }
 
 </code></pre>
 <p>If you compile and run this program, you get the correct result:</p>
 
-<pre><code>&gt; g++ src/cpp/stream-good.cpp -o src/out/esempio
-&gt; src/out/esempio src/cpp/stream-eof.txt        
+<pre><code>&gt; g++ src/cpp/stream-good.cpp -o src/out/example
+&gt; src/out/example src/cpp/stream-eof.txt        
 10
 20
 30
@@ -660,41 +659,41 @@ For this to happen, the code that generates the error must be enclosed in a <cod
 
 <pre><code>try {
 
-    // codice che potrebbe dare errore
+    // code that might cause an error
 
 } catch (...) {
 
-    //  istruzioni per la gestione dell'errore
+    //  instructions for handling the error
 }
 </code></pre>
 
 <p>Exceptions can be thrown and handled either by specific code within the program, or by C++’s automatic mechanisms:</p>
 
-<pre><code>/** 
- * @file src/stream-eccezioni-1.cpp
- * Programma di esempio per la gestione delle eccezioni.
+<pre><code>/**
+ * @file src/stream-exceptions-1.cpp
+ * Example program for handling exceptions.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    ifstream testo;
+{
+    ifstream text;
 
-    /** 
-    *   Fa sì che, se sia generata un'eccezione 
-    *   in caso di errore nella gestione del file.
+    /**
+    *   Makes it so an exception is thrown
+    *   if there's an error handling the file.
     */
-    testo.exceptions ( ios_base::failbit );
+    text.exceptions ( ios_base::failbit );
 
-    /** Questa istruzione genererà un'eccezione */
-    testo.open("fileinesistente.txt");
-    
-    testo.close();
-    
+    /** This instruction will throw an exception */
+    text.open("nonexistentfile.txt");
+
+    text.close();
+
     return 0;
 }
 
@@ -702,21 +701,21 @@ int main(int argc, char** argv)
 
 <p>If you compile and run this code, you’ll trigger an error which, not being handled by the program, is handled by C++’s standard function:</p>
 
-<pre><code>&gt; g++ src/cpp/stream-eccezioni-1.cpp -o src/out/esempio
-&gt; src/out/esempio
+<pre><code>&gt; g++ src/cpp/stream-exceptions-1.cpp -o src/out/example
+&gt; src/out/example
 libc++abi: terminating with uncaught exception of type
 std::__1::ios_base::failure: ios_base::clear
 : unspecified iostream_category error
-zsh: abort      src/out/esempio
+zsh: abort      src/out/example
 </code></pre>
 
 <p>If instead we put the code that opens the file inside a <code>try</code>/<code>catch</code> block, and define a <em>handler</em> for file-opening errors, the result will be more controlled:</p>
 
-<pre><code>/** 
- * @file src/stream-eccezioni-2.cpp
- * Programma di esempio per la gestione delle eccezioni.
+<pre><code>/**
+ * @file src/stream-exceptions-2.cpp
+ * Example program for handling exceptions.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 
@@ -724,38 +723,38 @@ using namespace std;
 
 
 int main(int argc, char** argv)
-{    
-    ifstream testo;
+{
+    ifstream text;
 
     try {
-        
-        testo.exceptions ( ios_base::failbit );
-        testo.open("fileinesistente.txt");        
-        testo.close();
-        
+
+        text.exceptions ( ios_base::failbit );
+        text.open("nonexistentfile.txt");
+        text.close();
+
     } catch(ios_base::failure e) {
-     
-        cerr &lt;&lt; "Errore in esecuzione" &lt;&lt; endl;      
-   
-    }    
-   
+
+        cerr &lt;&lt; "Runtime error" &lt;&lt; endl;
+
+    }
+
     return 0;
 }
 
 </code></pre>
 
-<pre><code>&gt; g++ src/cpp/stream-eccezioni-2.cpp -o src/out/esempio
-&gt; src/out/esempio                                      
-Errore in esecuzione
+<pre><code>&gt; g++ src/cpp/stream-exceptions-2.cpp -o src/out/example
+&gt; src/out/example                                      
+Runtime error
 </code></pre>
 
 <p>We can even prevent file-opening errors altogether, by having the program itself throw an exception if it notices the filename is missing from the startup parameters:</p>
 
-<pre><code>/** 
- * @file src/stream-eccezioni-3.cpp
- * Programma di esempio per la gestione delle eccezioni.
+<pre><code>/**
+ * @file src/stream-exceptions-3.cpp
+ * Example program for handling exceptions.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 
@@ -763,28 +762,28 @@ using namespace std;
 
 
 int main(int argc, char** argv)
-{    
-    ifstream testo;
+{
+    ifstream text;
 
     try {
-        
-        /** Verifica che esista il nome del file da aprire */
+
+        /** Checks that the name of the file to open exists */
         if(argc &lt; 2)
-            throw "Nome file mancante";
-            
-        testo.exceptions ( ios_base::failbit );
-        testo.open(argv[1]);        
-        testo.close();
-        
+            throw "Missing file name";
+
+        text.exceptions ( ios_base::failbit );
+        text.open(argv[1]);
+        text.close();
+
     } catch(ios_base::failure e) {
-     
-        cerr &lt;&lt; "Errore in esecuzione" &lt;&lt; endl;      
-   
+
+        cerr &lt;&lt; "Runtime error" &lt;&lt; endl;
+
     } catch(char const* msg) {
-        
+
         cerr &lt;&lt; msg &lt;&lt; endl;
     }
-   
+
     return 0;
 }
 
@@ -792,11 +791,11 @@ int main(int argc, char** argv)
 
 <p>This way, the program is able to handle every possible runtime error:</p>
 
-<pre><code>&gt; g++ src/cpp/stream-eccezioni-3.cpp -o src/out/esempio
-&gt; src/out/esempio                                      
-Nome file mancante
-&gt; src/out/esempio nomefile.txt
-Errore in esecuzione
+<pre><code>&gt; g++ src/cpp/stream-exceptions-3.cpp -o src/out/example
+&gt; src/out/example                                      
+Missing file name
+&gt; src/out/example filename.txt
+Runtime error
 </code></pre>
 
 <p>The C++ standard library has a dedicated class for handling exceptions:</p>
@@ -814,134 +813,134 @@ public:
 <p>By defining a class derived from <code>exception</code>, with additional member data and a specialized <code>what</code> function, you can handle error reporting in a more structured way.
 That’s what we’ll do in the next example.</p>
 
-<pre><code>/** 
- * @file src/stream-eccezioni-4.cpp
- * Programma di esempio per la gestione delle eccezioni.
- * Richiede, in input, il numero di caratteri da leggere 
- * e il path del file di input:
+<pre><code>/**
+ * @file src/stream-exceptions-4.cpp
+ * Example program for handling exceptions.
+ * Requires, as input, the number of characters to read
+ * and the path of the input file:
  *
- *    src/out/esempio &lt;n caratteri da leggere&gt; &lt;file di input&gt;
+ *    src/out/example &lt;n characters to read&gt; &lt;input file&gt;
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 #include &lt;exception&gt;
 
 using namespace std;
 
-/** Codici e stringhe di errore */
+/** Error codes and strings */
 #define ERR_NONE          0
-#define ERR_PARAMETRI   -10
+#define ERR_PARAMETERS  -10
 #define ERR_FILE_OPEN   -20
-#define S_SINTASSI      "USO: esempio &lt;n caratteri&gt; &lt;path file&gt;"
-#define S_ERR_PARAMETRI "Errore nei parametri di input."
-#define S_ERR_FILE_OPEN "Impossibile aprire il file di input"
+#define S_SYNTAX        "USAGE: example &lt;n characters&gt; &lt;file path&gt;"
+#define S_ERR_PARAMETERS "Error in the input parameters."
+#define S_ERR_FILE_OPEN "Unable to open the input file"
 
 /**
-*   Definisce una classe derivata da exception
-*   per la gestione degli errori.
+*   Defines a class derived from exception
+*   for error handling.
 */
-class Eccezione: public exception
+class Exception: public exception
 {
 private:
-    int         _codice;
-    const char* _errore;
+    int         _code;
+    const char* _error;
 public:
 
-    /** Costruttore */
-    Eccezione(int codice, const char* errore) 
-    : _codice(codice), _errore(errore) {        
+    /** Constructor */
+    Exception(int code, const char* error)
+    : _code(code), _error(error) {
     }
-    
-    /** Funzione virtuale pura: va ridefinita */
+
+    /** Pure virtual function: must be redefined */
     virtual const char* what() const throw() {
-        return _errore;
+        return _error;
     }
 
-    /** Funzioni di interfaccia */
-    int getCodice() { return _codice; }
-    const char* getErrore() { return _errore; }
+    /** Interface functions */
+    int getCode() { return _code; }
+    const char* getError() { return _error; }
 
-    /** Ridefinizione dell'operatore di output */
-    friend ostream&amp; operator&lt;&lt; (ostream&amp; os, Eccezione e){
-        os &lt;&lt; e._codice &lt;&lt; ": " &lt;&lt; e._errore &lt;&lt; endl;
+    /** Redefinition of the output operator */
+    friend ostream&amp; operator&lt;&lt; (ostream&amp; os, Exception e){
+        os &lt;&lt; e._code &lt;&lt; ": " &lt;&lt; e._error &lt;&lt; endl;
         return os;
     }
 };
 
 int main(int argc, char** argv)
-{    
-    ifstream testo;
-    testo.exceptions ( ios_base::badbit );
+{
+    ifstream text;
+    text.exceptions ( ios_base::badbit );
 
     try {
 
         char c     = 0;
-        int  letti = 0;
-                    
-        /** 
-        *   Verifica che ci siano sia il nome del file di input 
-        *   che il numero di caratteri da leggere.
+        int  read  = 0;
+
+        /**
+        *   Checks that both the input file name
+        *   and the number of characters to read are present.
         */
-        if (argc &lt; 3) 
-            throw Eccezione(ERR_PARAMETRI, S_ERR_PARAMETRI);
-            
-        /** Definisce il numero di caratteri da leggere */
-        int da_leggere = atoi(argv[1]);
-        
-        /** 
-        *   Imposta la exception mask dello stream per fare
-        *   sì che un errore di I/O generi un'eccezione,
-        *   poi apre il file in lettura.
-        *   Usa un blocco try/catch per intercettare una
-        *   eventuale eccezione e gestirla in maniera
-        *   omogenea al resto del codice.
+        if (argc &lt; 3)
+            throw Exception(ERR_PARAMETERS, S_ERR_PARAMETERS);
+
+        /** Defines the number of characters to read */
+        int to_read = atoi(argv[1]);
+
+        /**
+        *   Sets the stream's exception mask so that
+        *   an I/O error throws an exception,
+        *   then opens the file for reading.
+        *   Uses a try/catch block to intercept any
+        *   exception and handle it in a way
+        *   consistent with the rest of the code.
         */
         try {
-            testo.exceptions ( ios_base::badbit 
+            text.exceptions ( ios_base::badbit
                              | ios_base::failbit );
-            testo.open(argv[2]);            
+            text.open(argv[2]);
         } catch(ifstream::failure e) {
-            throw Eccezione(ERR_FILE_OPEN, S_ERR_FILE_OPEN);      
+            throw Exception(ERR_FILE_OPEN, S_ERR_FILE_OPEN);
         }
 
         /**
-        *   Re-imposta la exception mask per evitare
-        *   eccezioni a fine file.
+        *   Resets the exception mask to avoid
+        *   exceptions at end of file.
         */
-        testo.exceptions ( ios_base::goodbit);
+        text.exceptions ( ios_base::goodbit);
 
-        /** 
-        *   Legge il testo e lo stampa a video 
-        *   Se è stato definito un numero massimo di 
-        *   caratteri, si ferma lì.
+        /**
+        *   Reads the text and prints it to the screen.
+        *   If a maximum number of characters was defined,
+        *   it stops there.
         */
-        while(testo.good()) {
-            if((c = testo.get()) != EOF) {     
-                letti++;
+        while(text.good()) {
+            if((c = text.get()) != EOF) {
+                read++;
                 cout &lt;&lt; c;
-            } 
-            if((da_leggere != 0) &amp;&amp; (letti &gt;= da_leggere)) {
+            }
+            if((to_read != 0) &amp;&amp; (read &gt;= to_read)) {
                 cout &lt;&lt; endl;
                 break;
             }
-        } 
-                
-        /** Chiude il file di input */
-        testo.close();
-            
-    } catch (Eccezione e) {
+        }
 
-        /** Stampa a video l'eccezione */
+        /** Closes the input file */
+        text.close();
+
+    } catch (Exception e) {
+
+        /** Prints the exception to the screen */
         cerr &lt;&lt; e &lt;&lt; endl;
 
-        /** Mostra la sintassi di chiamata **/
-        cerr &lt;&lt; S_SINTASSI &lt;&lt; endl;
-        
-        /** Esce con un codice di errore */
-        exit(e.getCodice());
+        /** Shows the calling syntax **/
+        cerr &lt;&lt; S_SYNTAX &lt;&lt; endl;
+
+        /** Exits with an error code */
+        exit(e.getCode());
     }
-    
+
     return 0;
 }
 
@@ -949,27 +948,23 @@ int main(int argc, char** argv)
 
 <p>If you compile and run this code, you’ll get the following output, depending on the parameters provided:</p>
 
-<pre><code>&gt; g++ src/cpp/stream-eccezioni-4.cpp -o src/out/esempio
-&gt; src/out/esempio                                      
--10: Errore nei parametri di input.
-USO: esempio &lt;n caratteri&gt; &lt;path file&gt;
+<pre><code>&gt; g++ src/cpp/stream-exceptions-4.cpp -o src/out/example
+&gt; src/out/example                                      
+-10: Error in the input parameters.
+USAGE: example &lt;n characters&gt; &lt;file path&gt;
 
-&gt; src/out/esempio 41                                   
--10: Errore nei parametri di input.
-USO: esempio &lt;n caratteri&gt; &lt;path file&gt;
+&gt; src/out/example 41                                   
+-10: Error in the input parameters.
+USAGE: example &lt;n characters&gt; &lt;file path&gt;
 
-&gt; src/out/esempio 41 src/cpp/stream-input.txt          
-Nacqui da famiglia ricca, ma troppo tardi
+&gt; src/out/example 41 src/cpp/stream-input.txt          
+I was born into a wealthy family, but too late.
 
-&gt; src/out/esempio 0 src/cpp/stream-input.txt
-Nacqui da famiglia ricca, ma troppo tardi.  
-Secondogenito, vidi la florida impresa paterna andare in dote  
-per diritto di nascita, ma anche per naturale inclinazione
-ai miei monozigotici fratelli maggiori e, com'è consuetudine
-per i figli cadetti, fui avviato alla vita monastica.
-Entrai in seminario all'età di nove anni e presi i voti il
-giorno del mio diciottesimo compleanno.
-Conobbi il Maestro quattro anni dopo.  
+&gt; src/out/example 0 src/cpp/stream-input.txt
+I was born into a wealthy family, but too late.  
+As the second son, I watched my father's thriving business pass &amp;mdash; by birthright, but also by natural inclination &amp;mdash; to my identical twin older brothers, and, as is customary for younger sons, I was sent into monastic life.
+I entered the seminary at the age of nine and took my vows on the day of my eighteenth birthday.
+I met the Master four years later.  
 </code></pre>
 
 <hr id="dottrina" />

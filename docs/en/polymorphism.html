@@ -95,9 +95,9 @@
 
 <p>We started talking about it during the <a href="/en/c-plus-plus#polymorphism" class="xref">introductory lesson on C++</a>, and illustrated it with an example that, by this point, should hold no more secrets for you:</p>
 
-<pre><code>/** 
+<pre><code>/**
  *  @file src/cplusplus-template.cpp
- *  Esempio utlizzo dei template di classi.
+ *  Example use of class templates.
  */
 
 #include &lt;iostream&gt;
@@ -107,239 +107,239 @@
 
 using namespace std;
 
-/** Definisce due nuovi tipi di dato */
-typedef time_t Data;
-typedef enum _sesso {
-    maschio = 'm',
-    femmina = 'f'
-} Sesso;
+/** Defines two new data types */
+typedef time_t Date;
+typedef enum _sex {
+    male = 'm',
+    female = 'f'
+} Sex;
 
-/** Definisce una classe base per la gestione degli animali */
-class Animale {
+/** Defines a base class for handling animals */
+class Animal {
 private:
-    string _razza;
-    Sesso  _sesso;
+    string _breed;
+    Sex    _sex;
 public:
-    /** Costruttori di copia e parametrico */
-    Animale() {}
-    Animale(const char* razza, const Sesso sesso ) {
-        _razza  = razza;
-        _sesso  = sesso;
+    /** Copy and parametric constructors */
+    Animal() {}
+    Animal(const char* breed, const Sex sex ) {
+        _breed  = breed;
+        _sex  = sex;
     }
-    /** Funzione virtuale pura: rende la classe "astratta" */
-    virtual const char* getSpecie() const {
-        return ""; 
-    } 
-    /** Funzioni di interfaccia */
-    const char getSesso() const {        
-        return (char)_sesso;
-    } 
-    const char* getRazza() const {
-        return _razza.c_str();
+    /** Pure virtual function: makes the class "abstract" */
+    virtual const char* getSpecies() const {
+        return "";
+    }
+    /** Interface functions */
+    const char getSex() const {
+        return (char)_sex;
+    }
+    const char* getBreed() const {
+        return _breed.c_str();
     }
 };
 
-/** Operatore di output su stream per la classe Animale */
-ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animale&amp; animale) {
-    os  &lt;&lt; "Specie:" &lt;&lt; animale.getSpecie() &lt;&lt; "\t"
-        &lt;&lt; "Razza:"  &lt;&lt; animale.getRazza()  &lt;&lt; "\t"
-        &lt;&lt; "Sesso:"  &lt;&lt; animale.getSesso()  
+/** Stream output operator for the Animal class */
+ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animal&amp; animal) {
+    os  &lt;&lt; "Species:" &lt;&lt; animal.getSpecies() &lt;&lt; "\t"
+        &lt;&lt; "Breed:"  &lt;&lt; animal.getBreed()  &lt;&lt; "\t"
+        &lt;&lt; "Sex:"  &lt;&lt; animal.getSex()
         &lt;&lt; endl;
-    return os;   
+    return os;
 }
 
-/** Definizione della classe derivata Cavallo */
-class Cavallo : public Animale {
+/** Definition of the derived class Horse */
+class Horse : public Animal {
 public:
-    /** Definizione dei costruttori della classe */
-    Cavallo() {}
-    Cavallo(const char* razza, const Sesso sesso )
-    : Animale(razza, sesso ) { 
+    /** Definition of the class's constructors */
+    Horse() {}
+    Horse(const char* breed, const Sex sex )
+    : Animal(breed, sex ) {
     }
-    /** Ridefinizione della funzione virtuale pura */
-    const char* getSpecie() const {
-        return "Cavallo"; 
-    }     
+    /** Redefinition of the pure virtual function */
+    const char* getSpecies() const {
+        return "Horse";
+    }
 };
 
-/** Definizione della classe derivata Cavallo */
-class Asino : public Animale {
+/** Definition of the derived class Donkey */
+class Donkey : public Animal {
 public:
-    /** Definizione del costruttore della classe */
-    Asino() {}
-    Asino(const char* razza, const Sesso sesso )
-    : Animale(razza, sesso ) { 
+    /** Definition of the class's constructor */
+    Donkey() {}
+    Donkey(const char* breed, const Sex sex )
+    : Animal(breed, sex ) {
     }
-    /** Ridefinizione della funzione virtuale pura */
-    const char* getSpecie() const {
-        return "Asino"; 
-    }     
+    /** Redefinition of the pure virtual function */
+    const char* getSpecies() const {
+        return "Donkey";
+    }
 };
 
-/** Definizione della classe Monta */
-class Monta {
+/** Definition of the Mating class */
+class Mating {
 private:
-    Animale* _maschio;
-    Animale* _femmina;
-    Data     _giorno;
-    string   _esito;
-    /** 
-    *   Funzione privata per la definizione 
-    *   dell'esito della monta 
+    Animal*  _male;
+    Animal*  _female;
+    Date     _day;
+    string   _outcome;
+    /**
+    *   Private function for determining
+    *   the outcome of the mating
     */
-    void setEsito() {
-        if(strcmp(_maschio-&gt;getSpecie(),"Asino") == 0) {
-            if(strcmp(_femmina-&gt;getSpecie(),"Asino") == 0) {
-                _esito = "asino";
+    void setOutcome() {
+        if(strcmp(_male-&gt;getSpecies(),"Donkey") == 0) {
+            if(strcmp(_female-&gt;getSpecies(),"Donkey") == 0) {
+                _outcome = "donkey";
             } else {
-                _esito = "mulo";
-            } 
-        } else {        
-            if(strcmp(_femmina-&gt;getSpecie(),"Cavallo") == 0) {
-                _esito = "puledro";
+                _outcome = "mule";
+            }
+        } else {
+            if(strcmp(_female-&gt;getSpecies(),"Horse") == 0) {
+                _outcome = "foal";
             } else {
-                _esito = "bardotto";
-            } 
+                _outcome = "hinny";
+            }
         }
     }
 public:
-    /** Costruttore della classe */
-    Monta(Animale* maschio, Animale* femmina) {
-        _maschio = maschio;
-        _femmina = femmina;
-        time(&amp;_giorno);
-        setEsito();
+    /** Class constructor */
+    Mating(Animal* male, Animal* female) {
+        _male = male;
+        _female = female;
+        time(&amp;_day);
+        setOutcome();
     }
-    /** Operatore di output, "friend" della classe Monta */
-    friend ostream&amp; operator&lt;&lt;(ostream&amp; os, const Monta&amp; copula) {
-        os &lt;&lt; "DATA:    " &lt;&lt; asctime(localtime(&amp;copula._giorno)) 
-           &lt;&lt; "MASCHIO: " &lt;&lt; *copula._maschio 
-           &lt;&lt; "FEMMINA: " &lt;&lt; *copula._femmina
-           &lt;&lt; "ESITO:   " &lt;&lt; copula._esito
+    /** Output operator, "friend" of the Mating class */
+    friend ostream&amp; operator&lt;&lt;(ostream&amp; os, const Mating&amp; mating) {
+        os &lt;&lt; "DATE:    " &lt;&lt; asctime(localtime(&amp;mating._day))
+           &lt;&lt; "MALE: " &lt;&lt; *mating._male
+           &lt;&lt; "FEMALE: " &lt;&lt; *mating._female
+           &lt;&lt; "OUTCOME:   " &lt;&lt; mating._outcome
            &lt;&lt; endl;
-           return os;   
+           return os;
      };
 };
 
 int main()
 {
-    /** 
-     *  Crea gli oggetti di classe derivata  
-     *  e li assegna a puntatori della classe base.
+    /**
+     *  Creates the derived class objects
+     *  and assigns them to base class pointers.
      */
-    Animale* cavallo  = new Cavallo("lipizzano", maschio);    
-    Animale* giumenta = new Cavallo("maremmano", femmina);    
-    Animale* asino    = new Asino("amiatino", maschio);
-    Animale* asina    = new Asino("sardo", femmina);
+    Animal* horse  = new Horse("Lipizzaner", male);
+    Animal* mare = new Horse("Maremmano", female);
+    Animal* donkey    = new Donkey("Amiata", male);
+    Animal* jenny    = new Donkey("Sardinian", female);
 
-    /** Crea una lista con una classe template */
-    list&lt;Monta&gt; monte;
+    /** Creates a list using a template class */
+    list&lt;Mating&gt; matings;
 
-    /** Associa alla lista degli oggetti di classe Monta */
-    monte.push_back(Monta(cavallo, giumenta)); 
-    monte.push_back(Monta (asino, asina));       
-    monte.push_back(Monta (asino, giumenta));     
-    monte.push_back(Monta (cavallo, asina));
+    /** Adds Mating class objects to the list */
+    matings.push_back(Mating(horse, mare));
+    matings.push_back(Mating (donkey, jenny));
+    matings.push_back(Mating (donkey, mare));
+    matings.push_back(Mating (horse, jenny));
 
-    /** Mostra il contenuto della lista */
-    list&lt;Monta&gt;::iterator it;
-    for (it=monte.begin(); it!=monte.end(); it++) {
+    /** Displays the contents of the list */
+    list&lt;Mating&gt;::iterator it;
+    for (it=matings.begin(); it!=matings.end(); it++) {
         cout &lt;&lt; *it &lt;&lt; endl;
     }
 
-    return 0;               
+    return 0;
 }
 
 </code></pre>
 
 <p>The output of this code, in case you’ve forgotten, is:</p>
 
-<pre><code>&gt; g++ src/cpp/cplusplus-template.cpp -o src/out/esempio
-&gt; src/out/esempio
-DATA:    Sun May 23 14:42:51 2021
-MASCHIO: Specie:Cavallo Razza:lipizzano Sesso:m
-FEMMINA: Specie:Cavallo Razza:maremmano Sesso:f
-ESITO:   puledro
+<pre><code>&gt; g++ src/cpp/cplusplus-template.cpp -o src/out/example
+&gt; src/out/example
+DATE:    Sun May 23 14:42:51 2021
+MALE: Species:Horse Breed:Lipizzaner Sex:m
+FEMALE: Species:Horse Breed:Maremmano Sex:f
+OUTCOME:   foal
 
-DATA:    Sun May 23 14:42:51 2021
-MASCHIO: Specie:Asino   Razza:amiatino  Sesso:m
-FEMMINA: Specie:Asino   Razza:sardo     Sesso:f
-ESITO:   asino
+DATE:    Sun May 23 14:42:51 2021
+MALE: Species:Donkey   Breed:Amiata  Sex:m
+FEMALE: Species:Donkey   Breed:Sardinian     Sex:f
+OUTCOME:   donkey
 
-DATA:    Sun May 23 14:42:51 2021
-MASCHIO: Specie:Asino   Razza:amiatino  Sesso:m
-FEMMINA: Specie:Cavallo Razza:maremmano Sesso:f
-ESITO:   mulo
+DATE:    Sun May 23 14:42:51 2021
+MALE: Species:Donkey   Breed:Amiata  Sex:m
+FEMALE: Species:Horse Breed:Maremmano Sex:f
+OUTCOME:   mule
 
-DATA:    Sun May 23 14:42:51 2021
-MASCHIO: Specie:Cavallo Razza:lipizzano Sesso:m
-FEMMINA: Specie:Asino   Razza:sardo     Sesso:f
-ESITO:   bardotto
+DATE:    Sun May 23 14:42:51 2021
+MALE: Species:Horse Breed:Lipizzaner Sex:m
+FEMALE: Species:Donkey   Breed:Sardinian     Sex:f
+OUTCOME:   hinny
 </code></pre>
 
 <p>Before going on, though, we need to clear up three terms related to polymorphism: <em>overload</em>, <em>override</em>, and <em>redefinition</em>.
 By the term <b id="overload">overload</b> of a function, we mean a function that has the same name as another one, but different parameters.
 A typical example of <em>function overload</em> is the different versions of a class’s constructor:</p>
 
-<pre><code>Cavallo() {}
-Cavallo(const char* razza, const Sesso sesso )
-: Animale(razza, sesso ) {
+<pre><code>Horse() {}
+Horse(const char* breed, const Sex sex )
+: Animal(breed, sex ) {
 }
 </code></pre>
 <p>The two functions have the same name, and the compiler will pick one or the other depending on the parameters used.
 An <b id="overridden">overridden</b> function is a function with a different definition from that of a virtual function in one of its base classes:</p>
 
-<pre><code>const char* getSpecie() const {
-    return "Asino";
+<pre><code>const char* getSpecies() const {
+    return "Donkey";
 }     
 </code></pre>
 
 <p>As we’ve seen, the compiler picks one or the other depending on the type of the object used in the call.
 If the base class’s function hadn’t been virtual, this would have simply been a <strong>redefinition</strong>:</p>
 
-<pre><code>class Persona {
+<pre><code>class Person {
 public:
     void getClass(){
-        cout &lt;&lt; "Persona" &lt;&lt; endl;
+        cout &lt;&lt; "Person" &lt;&lt; endl;
     }
 };
 </code></pre>
 
 <p>When it handles these functions, the compiler doesn’t perform a dynamic type check based on the object’s type at runtime, but picks the function to call based on the type of the pointer or reference used, which, as you know, can cause problems:</p>
 
-<pre><code>Madre   * ptrM = new Madre;
-Persona * ptrP = ptrM ;
+<pre><code>Mom     * ptrM = new Mom;
+Person  * ptrP = ptrM ;
 ptrM-&gt;getClass() ;
-ptrP-&gt;getClass() ;  // chiama la funzione di Persona - ERRORE
+ptrP-&gt;getClass() ;  // calls Person's function - ERROR
 </code></pre>
 
 <p>In light of all this, we can now correct the comments in the sample code:</p>
 
-<pre><code>/** Overload dell'operatore di output su stream  */
-ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animale&amp; animale) {
-    os  &lt;&lt; "Specie:" &lt;&lt; animale.getSpecie() &lt;&lt; "\t"
-        &lt;&lt; "Razza:"  &lt;&lt; animale.getRazza()  &lt;&lt; "\t"
-        &lt;&lt; "Sesso:"  &lt;&lt; animale.getSesso()  
+<pre><code>/** Overload of the stream output operator  */
+ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animal&amp; animal) {
+    os  &lt;&lt; "Species:" &lt;&lt; animal.getSpecies() &lt;&lt; "\t"
+        &lt;&lt; "Breed:"  &lt;&lt; animal.getBreed()  &lt;&lt; "\t"
+        &lt;&lt; "Sex:"  &lt;&lt; animal.getSex()  
         &lt;&lt; endl;
     return os;   
 }
 
-/** Override della funzione virtuale pura */
-const char* getSpecie() const {
-    return "Cavallo";
+/** Override of the pure virtual function */
+const char* getSpecies() const {
+    return "Horse";
 }  
 
-/** Override della funzione virtuale pura */
-const char* getSpecie() const {
-    return "Asino";
+/** Override of the pure virtual function */
+const char* getSpecies() const {
+    return "Donkey";
 }     
 
-/** Overload dell'operatore di output su stream */
-friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula) {
-    os &lt;&lt; "DATA:    " &lt;&lt; asctime(localtime(&amp;copula._giorno))
-       &lt;&lt; "MASCHIO: " &lt;&lt; *copula._maschio
-       &lt;&lt; "FEMMINA: " &lt;&lt; *copula._femmina
-       &lt;&lt; "ESITO:   " &lt;&lt; copula._esito
+/** Overload of the stream output operator */
+friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Mating&amp; mating) {
+    os &lt;&lt; "DATE:    " &lt;&lt; asctime(localtime(&amp;mating._day))
+       &lt;&lt; "MALE: " &lt;&lt; *mating._male
+       &lt;&lt; "FEMALE: " &lt;&lt; *mating._female
+       &lt;&lt; "OUTCOME:   " &lt;&lt; mating._outcome
        &lt;&lt; endl;
        return os;   
  };
@@ -350,10 +350,10 @@ friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula)
 <p>In C++, every operator corresponds to a function.
 The one for the <code>+=</code> binary operator, for example, is:</p>
 
-<pre><code>&lt;tipo&gt;&amp; operator +=  (&lt;tipo&gt;&amp; a, &lt;tipo&gt;&amp; b) ;
+<pre><code>&lt;type&gt;&amp; operator +=  (&lt;type&gt;&amp; a, &lt;type&gt;&amp; b) ;
 </code></pre>
 
-<p>where <code>a</code> and <code>b</code> are the two objects involved in the operation, and <code>&lt;tipo&gt;</code> is the type of the variables involved in the operation.</p>
+<p>where <code>a</code> and <code>b</code> are the two objects involved in the operation, and <code>&lt;type&gt;</code> is the type of the variables involved in the operation.</p>
 
 <pre><code>int&amp;    operator +=  (int&amp;    a, int&amp;    b) ;
 float&amp;  operator +=  (float&amp;  a, float&amp;  b) ;
@@ -362,8 +362,8 @@ double&amp; operator +=  (double&amp; a, double&amp; b) ;
 
 <p>Since unary operators can be prefix or postfix, to let the compiler tell which is the correct function to use, the postfix operator’s function gets an extra, unused, second parameter:</p>
 
-<pre><code>void operator ++ (&lt;tipo&gt; a) ;           // versione prefissa
-void operator ++ (&lt;tipo&gt; a, &lt;tipo&gt;) ;   // versione postfissa
+<pre><code>void operator ++ (&lt;type&gt; a) ;           // prefix version
+void operator ++ (&lt;type&gt; a, &lt;type&gt;) ;   // postfix version
 </code></pre>
 
 <p><em>Overloaded</em> operator functions can be called directly.
@@ -377,9 +377,9 @@ a = b + c ;
 <p>The behavior of operators is predefined for all standard types, and can be redefined to also handle aggregate data types like structs or classes.
 C++’s standard library <code>string</code> class, for example, redefines, among other things, the behavior of the assignment operators <code>+=</code> and <code>+</code> and of the stream output operator <code>&lt;&lt;</code>, so that operations on strings can use the same syntax used for other data types:</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-operatori.cpp
- * Esempio di overload di un operatore.
+<pre><code>/**
+ * @file src/polymorphism-operators.cpp
+ * Example of operator overloading.
  */
 
 #include &lt;iostream&gt;
@@ -389,13 +389,13 @@ using namespace std;
 
 int main ()
 {
-    string s1 ("Pip");
-    string s2 ("po");
-    const char* s3 = "Plut";
+    string s1 ("Foo");
+    string s2 ("ba");
+    const char* s3 = "r";
 
-    /** 
-     *  La classe string definisce tre overload 
-     *  per l'operatore += .
+    /**
+     *  The string class defines three overloads
+     *  for the += operator.
      *
      *  string&amp; operator+= (const string&amp; str);
      *  string&amp; operator+= (const char* s);
@@ -404,7 +404,7 @@ int main ()
     s1 += s2;
     s1 += s3;
 
-    cout &lt;&lt; (s1 + 'o') &lt;&lt; endl;
+    cout &lt;&lt; (s1 + '!') &lt;&lt; endl;
 
     return 0;
 }
@@ -413,9 +413,9 @@ int main ()
 
 <p>The output of this code is well known to you by now:</p>
 
-<pre><code>&gt; g++ src/cpp/polimorfismo-operatori.cpp -o src/out/esempio
-&gt; src/out/esempio                                          
-PippoPluto
+<pre><code>&gt; g++ src/cpp/polymorphism-operators.cpp -o src/out/example
+&gt; src/out/example                                          
+Foobar!
 </code></pre>
 
 <p>You could get the same result with the <code>append</code> function:</p>
@@ -438,13 +438,12 @@ The only operators that cannot be redefined by a class are:</p>
 
 <p>Except for a few exceptions we’ll see shortly, every C++ operator can be redefined either as a class’s member function or as a global function:</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-in-out.cpp
- * Operatori come funzioni membro o globali.
+<pre><code>/**
+ * @file src/polymorphism-in-out.cpp
+ * Operators as member or global functions.
  */
 
 #include &lt;iostream&gt;
-#include &lt;string&gt;
 
 using namespace std;
 
@@ -457,21 +456,21 @@ struct A
 struct B
 {
     int _b;
-    B(int b) : _b(b) {};   
-    /** Overload come funzione membro */
+    B(int b) : _b(b) {};
+    /** Overload as a member function */
     int operator + (const A&amp; a) {
         return _b + a._a;
     }
 };
 
-/** Overload come funzione globale */
+/** Overload as a global function */
 int operator + (const A&amp; a, const B&amp; b) { return a._a + b._b; }
 
 int main ()
 {
     struct A a(3);
     struct B b(5);
-    
+
     cout &lt;&lt; (a + (b + a)) &lt;&lt; endl;
 
     return 0;
@@ -481,23 +480,23 @@ int main ()
 
 <p>When you redefine an operator’s behavior for a class, you need to take into account the visibility of the member data it has to use.
 If the operator, as is likely, needs to handle private or protected data, there are two options: either make use of the class’s interface functions, or declare the operator a <code>friend</code> of the class.
-In the initial example, both options are used: the stream output operator for the <code>Animale</code> class uses the class’s interface functions:</p>
+In the initial example, both options are used: the stream output operator for the <code>Animal</code> class uses the class’s interface functions:</p>
 
-<pre><code>ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animale&amp; animale) {
-    os  &lt;&lt; "Specie:" &lt;&lt; animale.getSpecie() &lt;&lt; "\t"
-        &lt;&lt; "Razza:"  &lt;&lt; animale.getRazza()  &lt;&lt; "\t"
-        &lt;&lt; "Sesso:"  &lt;&lt; animale.getSesso()  
+<pre><code>ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animal&amp; animal) {
+    os  &lt;&lt; "Species:" &lt;&lt; animal.getSpecies() &lt;&lt; "\t"
+        &lt;&lt; "Breed:"  &lt;&lt; animal.getBreed()  &lt;&lt; "\t"
+        &lt;&lt; "Sex:"  &lt;&lt; animal.getSex()  
         &lt;&lt; endl;
     return os;   
 }
 </code></pre>
 
-<p>while the output operator for the <code>Monta</code> class is declared a <code>friend</code> of the class, and can therefore access the instance’s member data directly:</p>
+<p>while the output operator for the <code>Mating</code> class is declared a <code>friend</code> of the class, and can therefore access the instance’s member data directly:</p>
 
-<pre><code>friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula) {
-    os &lt;&lt; "DATA: "    &lt;&lt; asctime(localtime(&amp;copula._giorno))
-       &lt;&lt; "MASCHIO: " &lt;&lt; *copula._maschio
-       &lt;&lt; "FEMMINA: " &lt;&lt; *copula._femmina;
+<pre><code>friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Mating&amp; mating) {
+    os &lt;&lt; "DATE: "    &lt;&lt; asctime(localtime(&amp;mating._day))
+       &lt;&lt; "MALE: " &lt;&lt; *mating._male
+       &lt;&lt; "FEMALE: " &lt;&lt; *mating._female;
        return os;   
 };
 </code></pre>
@@ -511,7 +510,7 @@ The other rules to remember, in these cases, are:</p>
   <li>
     <p>the unary assignment operator <code>=</code> is the only case of a member function that isn’t inherited by any child classes; if it isn’t redefined, it performs a member-by-member assignment of the attributes, and has the syntax:</p>
 
-    <pre><code>  C&amp; C::operator = (const C&amp; origine) ;
+    <pre><code>  C&amp; C::operator = (const C&amp; source) ;
 </code></pre>
   </li>
   <li>
@@ -565,64 +564,62 @@ double d = double(i) ;
 <p>The C++ compiler is able to convert any primitive data type into another, but it has no way of knowing how to handle user-defined data types; we therefore have to instruct it, just as we did with constructors and operators, by defining coercion paths from and to primitive data types.
 The first case, that is, converting from a primitive type to a user-defined one, is the simplest: it essentially means defining, where one doesn’t already exist, a constructor for the new class that takes parameters of primitive type.
 When instead there’s no constructor to extend — that is, when the coercion goes from a user-defined type to a primitive data type, or one provided by a library whose source code you don’t have — you need to redefine the <code>()</code> conversion operator.
-Imagine you’ve created a new data type, <code>Frazione</code>, to handle rational numbers.
+Imagine you’ve created a new data type, <code>Fraction</code>, to handle rational numbers.
 To be able to use it in expressions containing primitive-type data, you would have to redefine every operator to accept mixed-type data, both as the first and as the second parameter:</p>
 
-<pre><code>Frazione operator + (int i, Frazione f) ;
-Frazione operator - (int i, Frazione f) ;
-Frazione operator + (double i, Frazione f) ;
-Frazione operator - (double i, Frazione f) ;
+<pre><code>Fraction operator + (int i, Fraction f) ;
+Fraction operator - (int i, Fraction f) ;
+Fraction operator + (double i, Fraction f) ;
+Fraction operator - (double i, Fraction f) ;
 ...
-Frazione operator + (Frazione f, int i) ;
-Frazione operator - (Frazione f, int i) ;
-Frazione operator + (Frazione f, double i) ;
-Frazione operator - (Frazione f, double i) ;
+Fraction operator + (Fraction f, int i) ;
+Fraction operator - (Fraction f, int i) ;
+Fraction operator + (Fraction f, double i) ;
+Fraction operator - (Fraction f, double i) ;
 
 </code></pre>
 
 <p>You can save yourself this hassle by only redefining the operators’ behavior for the new class, and giving the compiler conversion paths from primitive types to the new data type, so that it can convert the data to the right type in the case of mixed expressions:</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-cast.cpp
- * Gestione della conversione esplicita.
+<pre><code>/**
+ * @file src/polymorphism-cast.cpp
+ * Handling explicit conversion.
  */
-
-#include &lt;iostream&gt;
 
 using namespace std;
 
-class Frazione
+class Fraction
 {
 private:
-    
+
     int _num ;
     int _den ;
 
 public:
-    
-    /** Costruttore con parametri interi */
-    Frazione(int n, int d = 1) 
-    : _num(n), _den(d) {} 
-    
-    /** 
-     * Costruttore con parametro a virgola mobile.
-     * La definizione è piuttosto complessa, te la risparmio.  
+
+    /** Constructor with integer parameters */
+    Fraction(int n, int d = 1)
+    : _num(n), _den(d) {}
+
+    /**
+     * Constructor with a floating-point parameter.
+     * The definition is fairly complex, I'll spare you the details.
      */
-    Frazione(double d) ;
+    Fraction(double d) ;
 
-    /** Overload dell'operatore di cast a intero */
-    operator int () { 
-        return _num / _den ; 
+    /** Overload of the cast-to-int operator */
+    operator int () {
+        return _num / _den ;
     }
 
-    /** Overload dell'operatore di cast a double */
-    operator double() { 
-        return (double) _num / (double) _den ; 
+    /** Overload of the cast-to-double operator */
+    operator double() {
+        return (double) _num / (double) _den ;
     }
 
-    /** Overload degli operatori di somma e sottrazione */
-    friend Frazione operator+ (Frazione f1, Frazione f2); 
-    friend Frazione operator- (Frazione f1, Frazione f2); 
+    /** Overload of the addition and subtraction operators */
+    friend Fraction operator+ (Fraction f1, Fraction f2);
+    friend Fraction operator- (Fraction f1, Fraction f2);
 
 };
 
@@ -634,29 +631,29 @@ public:
 In C++, templates are blueprints used to define multi-purpose functions or classes.
 If the same task can be carried out in a similar way on parameters of different types, instead of writing identical functions or classes for each parameter type, you can write a single template function or class and call it each time with the appropriate parameter type:</p>
 
-<pre><code>int    somma(int    a, int    b) { return a + b; }
-float  somma(float  a, float  b) { return a + b; }
-double somma(double a, double b) { return a + b; }
+<pre><code>int    sum(int    a, int    b) { return a + b; }
+float  sum(float  a, float  b) { return a + b; }
+double sum(double a, double b) { return a + b; }
 
 template &lt;class T&gt;
-T somma(T a, T b) { return a + b; }
+T sum(T a, T b) { return a + b; }
 </code></pre>
 
 <p>When the compiler finds a template in the code, whether it’s a class declaration or a function call, it replaces it with the corresponding code, the same way it does for <a href="/en/preprocessor#macro" class="xref">precompiler macros</a>, but, unlike what happens with macros, the type of the template’s parameters is subject to strict checking, just like the rest of the code.
 The format for declaring a <i id="funzioni-template">template function</i> is:</p>
 
 <p class="code">
-<b>template &lt;class</b> <i>identificatore</i><b>&gt;</b> <i>dichiarazione</i>;
+<b>template &lt;class</b> <i>identifier</i><b>&gt;</b> <i>declaration</i>;
 <br />  
-<b>template &lt;typename</b> <i>identificatore</i><b>&gt;</b> <i>dichiarazione</i>;
+<b>template &lt;typename</b> <i>identifier</i><b>&gt;</b> <i>declaration</i>;
 </p>
 
 <p>There’s no difference between the first and second form: both <code>class</code> and <code>typename</code> produce the same effect.
-<em>identificatore</em> is a symbol identifying a given data type, or a user-defined class.
+<em>identifier</em> is a symbol identifying a given data type, or a user-defined class.
 For example, the syntax for a template function that returns the greater of two parameters would look something like this:</p>
 
 <pre><code>template&lt;class T&gt;
-T maggiore (T x, T y) {
+T greater (T x, T y) {
     return (x &gt; y) ? x : y;
 }
 </code></pre>
@@ -665,7 +662,7 @@ T maggiore (T x, T y) {
 There can be more than one parameter:</p>
 
 <pre><code>template&lt;class C1, class C2&gt;
-T funz (C1 x, C2 y) {
+T func (C1 x, C2 y) {
 ...
 }
 </code></pre>
@@ -673,83 +670,82 @@ T funz (C1 x, C2 y) {
 <p>and they can have a default value:</p>
 
 <pre><code>template&lt;class N = int&gt;
-T funz (N n) {
+T func (N n) {
 ...
 }
 </code></pre>
 
 <p>Calling template functions is similar to calling ordinary functions, with the addition of the type of the parameters to be handled:</p>
 
-<pre><code>cout &lt;&lt; maggiore&lt;int&gt;   (  9,  12) &lt;&lt; endl;    
-cout &lt;&lt; maggiore&lt;double&gt;(0.4, 1.2) &lt;&lt; endl;    
-cout &lt;&lt; maggiore&lt;char&gt;  ('a', 'z') &lt;&lt; endl;    
+<pre><code>cout &lt;&lt; greater&lt;int&gt;   (  9,  12) &lt;&lt; endl;    
+cout &lt;&lt; greater&lt;double&gt;(0.4, 1.2) &lt;&lt; endl;    
+cout &lt;&lt; greater&lt;char&gt;  ('a', 'z') &lt;&lt; endl;    
 </code></pre>
 <!-- @todo: verificare i casi in cui non c'è specifica del tipo di dato -->
 <p>The next example shows the difference between a precompiler macro and a template function:
 <!-- NOTA: se si cambia o si rimuove la macro nel codice, va aggiornato il testo del capitolo sul preprocessore --></p>
-<pre><code>/** 
- * @file src/polimorfismo-macro-template.cpp
- * Funzioni template e macro precompilatore.
+<pre><code>/**
+ * @file src/polymorphism-macro-template.cpp
+ * Template functions and precompiler macros.
  */
 
 #include &lt;iostream&gt;
-#include &lt;functional&gt;
 
 using namespace std;
 
 /**
-*  Definzione di una macro istruzione per il 
-*  precompilatore: nessun controllo di tipo.
+*  Definition of a precompiler macro
+*  instruction: no type checking.
 */
-#define MAGGIORE(a,b) ((a &gt; b) ? a : b) 
+#define GREATER(a,b) ((a &gt; b) ? a : b)
 
 /**
-*  Definzione di una funzione template
-*  che torna il maggiore fra due parametri.
+*  Definition of a template function
+*  that returns the greater of two parameters.
 */
 template&lt;class T&gt;
-T maggiore (T x, T y) {
+T greater (T x, T y) {
     return (x &gt; y) ? x : y;
 }
 
 int main ()
-{     
+{
     int    a = 10;
-    short  b = 0;   
+    short  b = 0;
     double d = 3.123456789;
-    
-    /** Utilizzo della macro */
-    cout &lt;&lt; MAGGIORE(9,12)     &lt;&lt; endl;    
-    cout &lt;&lt; MAGGIORE(0.4, 0.7) &lt;&lt; endl;    
-    cout &lt;&lt; MAGGIORE('a', 'z') &lt;&lt; endl;    
 
-    /** 
-    *  La stessa funzione si può utilizzare 
-    *  con tipi di dato diversi:
-    */
-    cout &lt;&lt; maggiore&lt;int&gt;   (  9,  12) &lt;&lt; endl;    
-    cout &lt;&lt; maggiore&lt;double&gt;(0.4, 1.2) &lt;&lt; endl;    
-    cout &lt;&lt; maggiore&lt;char&gt;  ('a', 'z') &lt;&lt; endl;    
-   
-    /** Errore: confronta un carattere con un double */
-    cout &lt;&lt; MAGGIORE('a', d) &lt;&lt; endl;    
+    /** Using the macro */
+    cout &lt;&lt; GREATER(9,12)     &lt;&lt; endl;
+    cout &lt;&lt; GREATER(0.4, 0.7) &lt;&lt; endl;
+    cout &lt;&lt; GREATER('a', 'z') &lt;&lt; endl;
 
     /**
-    *   Errore: il compilatore non sa quale
-    *   dei due tipi di dato utilizzare.
+    *  The same function can be used
+    *  with different data types:
     */
-    cout &lt;&lt; maggiore(a, b) &lt;&lt; endl;    
-    
+    cout &lt;&lt; greater&lt;int&gt;   (  9,  12) &lt;&lt; endl;
+    cout &lt;&lt; greater&lt;double&gt;(0.4, 1.2) &lt;&lt; endl;
+    cout &lt;&lt; greater&lt;char&gt;  ('a', 'z') &lt;&lt; endl;
+
+    /** Error: compares a character with a double */
+    cout &lt;&lt; GREATER('a', d) &lt;&lt; endl;
+
+    /**
+    *   Error: the compiler doesn't know which
+    *   of the two data types to use.
+    */
+    cout &lt;&lt; greater(a, b) &lt;&lt; endl;
+
     return 0;
 }
 
 </code></pre>
 
-<p>The <code>MAGGIORE</code> macro and the <code>maggiore</code> template function perform the same operation: they compare the two parameters they receive as input, and return the greater of the two.
+<p>The <code>GREATER</code> macro and the <code>greater</code> template function perform the same operation: they compare the two parameters they receive as input, and return the greater of the two.
 The big difference between these two approaches<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> is that, while the type of the template’s parameters is checked by the compiler, the macro is a plain substitution that performs no checks at all on the variables it uses.
 The instruction:</p>
 
-<pre><code>cout &lt;&lt; MAGGIORE('a', b) &lt;&lt; endl;
+<pre><code>cout &lt;&lt; GREATER('a', b) &lt;&lt; endl;
 </code></pre>
 
 <p>compares a character with a double and, without causing any compile problems, returns the value <code>97</code>, corresponding to the ASCII code of the letter <code>a</code>.
@@ -757,37 +753,37 @@ By contrast, the instruction:</p>
 
 <pre><code>int   a = 10;
 short b = 0;
-cout &lt;&lt; maggiore(a, b) &lt;&lt; endl;  
+cout &lt;&lt; greater(a, b) &lt;&lt; endl;  
 </code></pre>
 
 <!-- @todo: correggere questo codice, sia qui che nello script: l'errore si manifesta solo se si omette lo specificatore del tipo per il template -->
 <p>causes a compile error, because the two parameters are of different types:</p>
 
-<pre><code>&gt; g++ src/cpp/polimorfismo-template.cpp -o src/out/esempio
-src/cpp/polimorfismo-template.cpp:52:13:
-    error: no matching function for call to 'maggiore'
-    cout &lt;&lt; maggiore(a, b) &lt;&lt; endl;    
+<pre><code>&gt; g++ src/cpp/polymorphism-template.cpp -o src/out/example
+src/cpp/polymorphism-template.cpp:52:13:
+    error: no matching function for call to 'greater'
+    cout &lt;&lt; greater(a, b) &lt;&lt; endl;    
             ^~~~~~~~
-src/cpp/polimorfismo-template.cpp:22:3:
+src/cpp/polymorphism-template.cpp:22:3:
     note: candidate template ignored:
         deduced conflicting types for parameter 'T'
       ('int' vs. 'short')
-T maggiore (T x, T y) {
+T greater (T x, T y) {
   ^
 </code></pre>
 
 <p>The declaration of a <i id="classi-template">template class</i> has the form:</p>
 
 <p class="code">
-<b>template &lt;class</b> <i>identificatore</i><b>&gt;</b> <i>dichiarazione</i>;
+<b>template &lt;class</b> <i>identifier</i><b>&gt;</b> <i>declaration</i>;
 </p>
 
 <p>The list of parameters between the <code>&lt;&gt;</code> symbols can contain one or more symbols for the data types the class handles.
 Using these classes is similar to using template functions:</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-classe-template.cpp
- * Esempio di classe template.
+<pre><code>/**
+ * @file src/polymorphism-class-template.cpp
+ * Example of a class template.
  */
 
 #include &lt;iostream&gt;
@@ -795,18 +791,18 @@ Using these classes is similar to using template functions:</p>
 using namespace std;
 
 /**
-*   Definisce una classe che gestisce coppie 
-*   di coordinate.
+*   Defines a class that handles pairs
+*   of coordinates.
 */
 template&lt;class T&gt;
 class Coord {
 private:
-    /** Dati membro con tipo variabile */
-    T _x, _y; 
+    /** Member data with variable type */
+    T _x, _y;
 public:
-    /** Costruttore con tipo di parametri variabile */
-    Coord(const T x, const T y) 
-    : _x(x), _y(y) {        
+    /** Constructor with variable parameter type */
+    Coord(const T x, const T y)
+    : _x(x), _y(y) {
     }
     friend ostream&amp; operator &lt;&lt; (ostream&amp; o, const Coord&amp; c) {
         o &lt;&lt; c._x &lt;&lt; ',' &lt;&lt; c._y ;
@@ -815,16 +811,16 @@ public:
 };
 
 int main ()
-{         
-    /** Istanza con coordinate geografiche */
-    Coord&lt;double&gt; obelisco(41.903219, 12.458157);
-    
-    /** Istanza con coordinate schermo */
+{
+    /** Instance with geographic coordinates */
+    Coord&lt;double&gt; obelisk(41.903219, 12.458157);
+
+    /** Instance with screen coordinates */
     Coord&lt;int&gt;    pixel(821, 134);
-    
-    cout &lt;&lt; "Obelisco:" &lt;&lt; obelisco &lt;&lt; endl;    
-    cout &lt;&lt; "Pixel:   " &lt;&lt; pixel    &lt;&lt; endl;    
-    
+
+    cout &lt;&lt; "Obelisk:" &lt;&lt; obelisk &lt;&lt; endl;
+    cout &lt;&lt; "Pixel:   " &lt;&lt; pixel    &lt;&lt; endl;
+
     return 0;
 }
 
@@ -834,7 +830,7 @@ int main ()
 
 <p>The code I showed you at the start of this lesson uses a template class:</p>
 
-<pre><code>list&lt;Monta&gt; monte;
+<pre><code>list&lt;Mating&gt; matings;
 </code></pre>
 
 <p>The <code>list</code> class is one of the classes of C++’s <em>Standard Template Library</em>, a library of classes and functions that let you solve common programming problems, such as storing, sorting, or searching a set of data.
@@ -851,29 +847,29 @@ The components of the STL are:</p>
 By contrast, the <code>vector</code> class implements a list of elements stored in a single area of memory, the same way C arrays work.
 All STL vectors have member functions that let you manage their elements; the <code>push_back</code> function, for example, adds an element to the end of the list:</p>
 
-<pre><code>monte.push_back(Monta(cavallo, giumenta));
-monte.push_back(Monta (asino, asina));       
-monte.push_back(Monta (asino, giumenta));     
-monte.push_back(Monta (cavallo, asina));
+<pre><code>matings.push_back(Mating(horse, mare));
+matings.push_back(Mating (donkey, jenny));       
+matings.push_back(Mating (donkey, mare));     
+matings.push_back(Mating (horse, jenny));
 </code></pre>
 
 <p><i id="iteratori-stl">Iterators</i> are constructs that let you move through a container’s contents, picking out its elements.
 We used one in the instruction:</p>
 
-<pre><code>list&lt;Monta&gt;::iterator it;
-for (it=monte.begin(); it!=monte.end(); it++) {
+<pre><code>list&lt;Mating&gt;::iterator it;
+for (it=matings.begin(); it!=matings.end(); it++) {
     cout &lt;&lt; *it &lt;&lt; endl;
 }
 </code></pre>
 
-<p>The first instruction in the <code>for</code> loop assigns to the iterator <code>it</code> the first element of the list, returned by the member function <code>monte.begin</code>.
-The second instruction checks that the iterator is different from <code>monte.end</code>, which points to the end of the list.
+<p>The first instruction in the <code>for</code> loop assigns to the iterator <code>it</code> the first element of the list, returned by the member function <code>matings.begin</code>.
+The second instruction checks that the iterator is different from <code>matings.end</code>, which points to the end of the list.
 The third instruction increments the iterator by one position, and shows how redefining an operator for a class makes the code easier to read: even if you’ve never seen a template class before, you can immediately tell that instruction increments the value of <code>it</code> by one.
 The <i id="algoritmi-stl">algorithms</i> of the STL, defined in the <code>&lt;algorithm&gt;</code> header, are template functions that let you locate, copy, sort, merge, or remove data within a container.</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-algoritmi.cpp
- * Esempio di utilizzo degli algoritmi della STL.
+<pre><code>/**
+ * @file src/polymorphism-algorithms.cpp
+ * Example use of STL algorithms.
  */
 
 #include &lt;iostream&gt;
@@ -884,43 +880,43 @@ using namespace std;
 
 int main()
 {
-    /** Crea il vettore */
+    /** Creates the vector */
     vector&lt;int&gt; vect;
 
-    /** Aggiunge dei valori al vettore */
+    /** Adds values to the vector */
     vect.push_back(10);
     vect.push_back(70);
     vect.push_back(21);
     vect.push_back(49);
     vect.push_back(35);
 
-    /** Mostra il valore più alto e il più basso */
+    /** Shows the highest and lowest values */
     cout &lt;&lt; *min_element(vect.begin(), vect.end()) &lt;&lt; endl;
     cout &lt;&lt; *max_element(vect.begin(), vect.end()) &lt;&lt; endl;
-    
-    /** Mostra i valori nell'ordine in cui sono stati inseriti */
+
+    /** Shows the values in the order they were inserted */
     vector&lt;int&gt;::iterator i;
     for(i = vect.begin(); i != vect.end(); i++) {
         cout &lt;&lt; *i &lt;&lt; " ";
     }
     cout &lt;&lt; endl;
 
-    /** Ordina i valori dal più basso al più alto e li visualizza */
+    /** Sorts the values from lowest to highest and displays them */
     int n = vect.size();
     sort(vect.begin(), vect.end());
     for (int i=0; i&lt;n; i++) {
-        cout &lt;&lt; vect[i] &lt;&lt; " ";       
+        cout &lt;&lt; vect[i] &lt;&lt; " ";
     }
     cout &lt;&lt; endl;
 
-    /** Ordina i valori dal più alto al più basso e li visualizza */
+    /** Sorts the values from highest to lowest and displays them */
     reverse(vect.begin(), vect.end());
     for (int i=0; i&lt;n; i++) {
-        cout &lt;&lt; vect[i] &lt;&lt; " ";       
+        cout &lt;&lt; vect[i] &lt;&lt; " ";
     }
     cout &lt;&lt; endl;
 
- 
+
     return 0;
 }
 
@@ -928,8 +924,8 @@ int main()
 
 <p>If you compile and run this code, you get:</p>
 
-<pre><code>&gt; g++ src/cpp/polimorfismo-algoritmi.cpp -o src/out/esempio
-&gt; src/out/esempio                                          
+<pre><code>&gt; g++ src/cpp/polymorphism-algorithms.cpp -o src/out/example
+&gt; src/out/example                                          
 10
 70
 10 70 21 49 35
@@ -939,9 +935,9 @@ int main()
 
 <p>Function-classes, or <i id="functors-stl">functors</i>, are classes that redefine the behavior of the <code>()</code> operator, and can therefore act as if they were functions:</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-functor-stl.cpp
- * Esempio di function objects della STL.
+<pre><code>/**
+ * @file src/polymorphism-functor-stl.cpp
+ * Example of STL function objects.
  */
 
 #include &lt;iostream&gt;
@@ -954,21 +950,21 @@ int main ()
     int a = 12;
     int b = 4;
 
-    /** Dichiarazione di oggetti functor */
+    /** Declaration of functor objects */
     plus&lt;int&gt;       p;
     minus&lt;int&gt;      m;
     multiplies&lt;int&gt; x;
     divides&lt;int&gt;    d;
     modulus&lt;int&gt;    o;
 
-    /** Utilizzo degli oggetti come fossero delle funzioni */
+    /** Using the objects as if they were functions */
     cout &lt;&lt; "plus: "       &lt;&lt; p(a,b) &lt;&lt; endl;
     cout &lt;&lt; "minus: "      &lt;&lt; m(a,b) &lt;&lt; endl;
     cout &lt;&lt; "multiplies: " &lt;&lt; x(a,b) &lt;&lt; endl;
     cout &lt;&lt; "divides: "    &lt;&lt; d(a,b) &lt;&lt; endl;
-    cout &lt;&lt; "modulus: "    &lt;&lt; o(a,b) &lt;&lt; endl;
+    cout &lt;&lt; "modulus: "    &lt;&lt; o(a,5) &lt;&lt; endl;
 
-    /** "esegue"" l'oggetto o con nuovi parametri */
+    /** "runs" the object o with new parameters */
     cout &lt;&lt; "modulus: "    &lt;&lt; o(a,5) &lt;&lt; endl;
 
     return 0;
@@ -977,77 +973,77 @@ int main ()
 </code></pre>
 <p>Used this way, <em>functors</em> don’t make much sense, but they can be (and are) very useful when using those STL functions that process every element of a container, such as the <code>transform</code> function:</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-rot13.cpp
- * Trasformazione di una stringa con una funzione.
+<pre><code>/**
+ * @file src/polymorphism-rot13.cpp
+ * Transforming a string with a function.
  */
 
 #include &lt;string&gt;
 #include &lt;cctype&gt;
 #include &lt;iostream&gt;
-#include &lt;functional&gt;
+#include &lt;algorithm&gt;
 
 using namespace std;
 
-/** 
-*   Funzione che converte i caratteri di una stringa in rot13  
-*   Il ROT13 è un algoritmo di cifratura piuttosto banale, 
-*   perché incrementa di 13 il valore di ciascun carattere. 
-*   Non è un algoritmo realmente sicuro, però, perché per 
-*   decifrare il testo crittografato basta crittografarlo 
-*   di nuovo.  
+/**
+*   Function that converts the characters of a string to rot13
+*   ROT13 is a fairly trivial cipher algorithm,
+*   because it shifts the value of each character by 13.
+*   It isn't a truly secure algorithm, though, because to
+*   decrypt the encrypted text all you need to do is encrypt
+*   it again.
 */
-unsigned char rot13(unsigned char c) 
-{ 
+unsigned char rot13(unsigned char c)
+{
     unsigned char rot = c;
     if (isalpha(c)) {
-        rot = ((tolower(c) - 'a') &lt; 14) ? c + 13 : c - 13;
+        rot = ((tolower(c) - 'a') &lt; 13) ? c + 13 : c - 13;
     }
     return rot;
 }
 
 int main ()
 {
-    string pp("PippoPluto"); 
+    string fb("Foobar");
 
-    /** Elabora la stringa con la funzione transform */
+    /** Processes the string with the transform function */
     transform(
-               pp.begin()   // inizio del container da modificare
-             , pp.end()     // fine del container da modificare
-             , pp.begin()   // container di output
-             , rot13        // funzione da applicare
+               fb.begin()   // start of the container to modify
+             , fb.end()     // end of the container to modify
+             , fb.begin()   // output container
+             , rot13        // function to apply
              );
 
-    cout &lt;&lt; pp &lt;&lt; endl; 
+    cout &lt;&lt; fb &lt;&lt; endl;
 
-    /** Ripetendo l'operazione, il testo torna normale. */
+    /** Repeating the operation restores the original text. */
     transform(
-               pp.begin()   
-             , pp.end()     
-             , pp.begin()   
-             , rot13        
+               fb.begin()
+             , fb.end()
+             , fb.begin()
+             , rot13
              );
 
-    cout &lt;&lt; pp &lt;&lt; endl; 
-    
+    cout &lt;&lt; fb &lt;&lt; endl;
+
     return 0;
 }
 
 </code></pre>
 <p>If you compile and run this program, you’ll get:</p>
 
-<pre><code>&gt; g++ src/cpp/polimorfismo-rot13.cpp -o src/out/esempio     
-&gt; ./src/out/esempio
-CvccbCyhgb
-PippoPluto
+<pre><code>&gt; g++ src/cpp/polymorphism-rot13.cpp -o src/out/example     
+&gt; ./src/out/example
+Sbbone
+Foobar
 </code></pre>
 
 <p>Ordinary functions let you use the <code>transform</code> algorithm to encrypt a text with a fixed value, but you can’t do the same thing using a variable key, because the fourth parameter doesn’t accept functions with more than one parameter.
 If you tried to use it with something like:</p>
 
-<pre><code>unsigned char cifra(unsigned char c, int chiave)
+<pre><code>unsigned char cipher(unsigned char c, int key)
 {
-    return c + chiave;
+    return c + key;
 }
 </code></pre>
 
@@ -1057,7 +1053,7 @@ If you tried to use it with something like:</p>
       function call, expected 2, have 1
         *__result = __op(*__first);
                     ~~~~         ^
-src/cpp/polimorfismo-transform-chiave.cpp:25:5: note: in instantiation of function template specialization
+src/cpp/polymorphism-transform-key.cpp:25:5: note: in instantiation of function template specialization
       'std::__1::transform&lt;std::__1::__wrap_iter&lt;char *&gt;, std::__1::__wrap_iter&lt;char *&gt;, unsigned char
       (*)(unsigned char, int)&gt;' requested here
     transform(
@@ -1066,9 +1062,9 @@ src/cpp/polimorfismo-transform-chiave.cpp:25:5: note: in instantiation of functi
 
 <p>This is exactly where <em>functors</em> come in handy, because they can be initialized with one or more specific values and then used as unary functions:</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-functor.cpp
- * Creazione di una classe functor.
+<pre><code>/**
+ * @file src/polymorphism-functor.cpp
+ * Creating a functor class.
  */
 
 #include &lt;string&gt;
@@ -1078,45 +1074,45 @@ src/cpp/polimorfismo-transform-chiave.cpp:25:5: note: in instantiation of functi
 
 using namespace std;
 
-/** Dichiarazione della classe functor */
-class Cifra
+/** Declaration of the functor class */
+class Cipher
 {
 private:
 
-    int _chiave;
+    int _key;
 
 public:
-    
-    /** 
-    *   Il costruttore della classe ha come parametro
-    *   il valore della chiave di cifratura
+
+    /**
+    *   The class's constructor takes as a parameter
+    *   the value of the encryption key
     */
-    Cifra(int chiave) : _chiave(chiave) {  }
-  
-    /** Ridefinizione dell'operatore () */
+    Cipher(int key) : _key(key) {  }
+
+    /** Redefinition of the () operator */
     unsigned char operator () (unsigned char c) const {
-        return c + _chiave;
+        return c + _key;
     }
 };
 
 int main ()
 {
-    string pp("PippoPluto"); 
+    string fb("Foobar");
 
-    /** 
-    *   Richiama transform passando come parametro
-    *   un'istanza del functor, inizializzata con 
-    *   la chiave di cifratura.
+    /**
+    *   Calls transform passing as a parameter
+    *   an instance of the functor, initialized with
+    *   the encryption key.
     */
     transform(
-               pp.begin()   
-             , pp.end()     
-             , pp.begin()   
-             , Cifra(1)        
+               fb.begin()
+             , fb.end()
+             , fb.begin()
+             , Cipher(1)
              );
 
-    cout &lt;&lt; pp &lt;&lt; endl; 
-    
+    cout &lt;&lt; fb &lt;&lt; endl;
+
     return 0;
 }
 
@@ -1124,11 +1120,11 @@ int main ()
 
 <p>Compiling and running this program, you get:</p>
 
-<pre><code>&gt; g++ src/cpp/polimorfismo-functor.cpp -o src/out/esempio
-&gt; ./src/out/esempio
-QjqqpQmvup
+<pre><code>&gt; g++ src/cpp/polymorphism-functor.cpp -o src/out/example
+&gt; ./src/out/example
+Gppcbs
 </code></pre>
-<p>which corresponds to the characters of the string <em>PippoPluto</em> each incremented by one.</p>
+<p>which corresponds to the characters of the string <em>Foobar</em> each incremented by one.</p>
 
 <hr id="dottrina" />
 

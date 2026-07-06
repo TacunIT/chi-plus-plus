@@ -1,8 +1,8 @@
-/** 
+/**
  * @file src/stream-good.cpp
- * Gestione dell'I/O su file con gli stream.
+ * Handling file I/O with streams.
  */
- 
+
 #include <iostream>
 #include <fstream>
 
@@ -10,31 +10,31 @@ using namespace std;
 
 
 int main(int argc, char** argv)
-{    
-    ifstream testo;
+{
+    ifstream text;
     int      n;
-    
-    /** apre il file in lettura */
-    testo.open(argv[1]);
-    
-    /** 
-    *   Il ciclo si ripete fino a che non 
-    *   si verifica un errore
+
+    /** opens the file for reading */
+    text.open(argv[1]);
+
+    /**
+    *   The loop repeats until
+    *   an error occurs
     */
-    while(testo.good()) {
+    while(text.good()) {
 
-        /** Legge un numero dal file */
-        testo >> n;
+        /** Reads a number from the file */
+        text >> n;
 
-        /** Si interrompe se il file è finito */
-        if(testo.eof()) break;
-        
-        /** Altrimenti, scrive il numero */
+        /** Stops if the file has ended */
+        if(text.eof()) break;
+
+        /** Otherwise, writes the number */
         cout << n << endl;
     }
-                
-    /** Chiude il file di input */
-    testo.close();
-    
+
+    /** Closes the input file */
+    text.close();
+
     return 0;
 }

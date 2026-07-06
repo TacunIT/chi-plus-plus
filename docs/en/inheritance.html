@@ -95,139 +95,139 @@
 
 <p>Inheritance, that is, the ability to create genealogies of classes, is C++’s main distinguishing feature.</p>
 
-<p>As we saw in the <a href="/en/classes-objects#dottrina" class="xref">previous lesson</a>, a hypothetical <code>Pesce</code> (Fish) class would need different attributes depending on what it’s being used for.
+<p>As we saw in the <a href="/en/classes-objects#dottrina" class="xref">previous lesson</a>, a hypothetical <code>Fish</code> class would need different attributes depending on what it’s being used for.
 In a language like <em>C</em>, which doesn’t allow inheritance, you’d therefore have to set up two different data structures for each case:</p>
 
-<pre><code>enum Acqua  { dolce, salata };
-enum Sesso  { maschio, femmina };
-enum Colore { rosso, blu, verde, argento };
+<pre><code>enum Water  { freshwater, saltwater };
+enum Sex    { male, female };
+enum Color  { red, blue, green, silver };
 
-struct PesceAlimentare {
-    Sesso  _sesso;
-    char*  _specie;
-    float  _prezzo;
-    time_t _data_cattura;  
-    int    _peso;
-    bool   _commestibile;
-    char*  _area_pesca;
+struct FoodFish {
+    Sex    _sex;
+    char*  _species;
+    float  _price;
+    time_t _catch_date;  
+    int    _weight;
+    bool   _edible;
+    char*  _fishing_area;
     ...
 };
 
-struct  PesceAcquario {
-    Sesso  _sesso;
-    char*  _specie;
-    float  _prezzo;
-    time_t _data_acquisto;  
-    Colore _colore;
-    Acqua  _acqua;
+struct  AquariumFish {
+    Sex    _sex;
+    char*  _species;
+    float  _price;
+    time_t _purchase_date;  
+    Color  _color;
+    Water  _water;
     ...
 };
 </code></pre>
 <p>and different functions to manage the data:</p>
 
-<pre><code>void gestisciPesceAlimentare(struct PesceAlimentare&amp; pesce);
-void gestisciPesceAcquario(struct PesceAcquario&amp; pesce);
+<pre><code>void manageFoodFish(struct FoodFish&amp; fish);
+void manageAquariumFish(struct AquariumFish&amp; fish);
 </code></pre>
 
 <p>This means that if you’ve already written (and verified, fixed, and tested) a management program for a fishmonger, to turn it into a management program for selling aquarium fish, you’d have to rewrite (and re-verify, re-fix, and re-test) all the code, even though part of the data involved is the same.
 Inheritance, by contrast, lets you isolate the characteristics common to both contexts into a single class, and <em>derive</em> from this base class two specialized classes:</p>
 
-<pre><code>/** 
- * @file ereditarieta-singola.cpp
- * Esempio di ereditarietà singola.
+<pre><code>/**
+ * @file inheritance-single.cpp
+ * Example of single inheritance.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;string&gt;
-#include &lt;ctime&gt; 
+#include &lt;ctime&gt;
 
 using namespace std;
 
-enum Acqua  { dolce, salata };
-enum Sesso  { maschio, femmina };
-enum Colore { rosso, blu, verde, argento };
+enum Water  { freshwater, saltwater };
+enum Sex    { male, female };
+enum Color  { red, blue, green, silver };
 
-class Pesce {
+class Fish {
 private:
-            
-    static int _n_pesci;
-                        
+
+    static int _n_fish;
+
 protected:
-    
-    /** Dati membro privati */
-    Sesso  _sesso;
-    float  _prezzo;
-    string _specie;
-    bool   _commestibile;
+
+    /** Private member data */
+    Sex    _sex;
+    float  _price;
+    string _species;
+    bool   _edible;
 
 public:
 
-    /** Costruttore della classe inline */
-    Pesce(Sesso sesso, float prezzo, const char* specie) 
-    : _sesso(sesso), _prezzo(prezzo), _specie(specie)
+    /** Inline class constructor */
+    Fish(Sex sex, float price, const char* species)
+    : _sex(sex), _price(price), _species(species)
     {
-        _n_pesci++;
-    }
-    
-    /** Distruttore inline */
-    ~Pesce() { 
-        _n_pesci--;
+        _n_fish++;
     }
 
-    /** Funzioni di interfaccia */
-    void setSesso(Sesso sesso);
-    void setPrezzo(float prezzo);
-    void setSpecie(const char* specie);
+    /** Inline destructor */
+    ~Fish() {
+        _n_fish--;
+    }
 
-    /** Funzioni di interfaccia inline */
-    string getSpecie() { return _specie.c_str(); }
-    float  getPrezzo() { return _prezzo;  }
-    Sesso  getSesso()  { return _sesso; }
-    bool   getCommestibile() { return _commestibile; }
-    void   setCommestibile(bool commestibile) { 
-        _commestibile = commestibile; 
+    /** Interface functions */
+    void setSex(Sex sex);
+    void setPrice(float price);
+    void setSpecies(const char* species);
+
+    /** Inline interface functions */
+    string getSpecies() { return _species.c_str(); }
+    float  getPrice() { return _price;  }
+    Sex    getSex()  { return _sex; }
+    bool   getEdible() { return _edible; }
+    void   setEdible(bool edible) {
+        _edible = edible;
     }
 
 };
 
-int Pesce::_n_pesci = 0 ;
+int Fish::_n_fish = 0 ;
 
-class PesceAlimentare : public Pesce {
+class FoodFish : public Fish {
 private:
-    
-    /** Dati privati della classe */
-    time_t _data_cattura;  
-    string _area_pesca; 
+
+    /** Private data of the class */
+    time_t _catch_date;
+    string _fishing_area;
 
 public:
 
-    /** Costruttore della classe inline */
-    PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
-    : Pesce(sesso, prezzo, specie)
+    /** Inline class constructor */
+    FoodFish(Sex sex, float price, const char* species)
+    : Fish(sex, price, species)
     {
-        /** Auspicabilmente.. */
-        _commestibile = true;
+        /** Hopefully.. */
+        _edible = true;
     }
 
     //...
 };
 
-class PesceAcqario : public Pesce {
+class AquariumFish : public Fish {
 private:
-    
-    /** Dati privati della classe */
-    time_t _data_acquisto;  
-    Colore _colore;
-    Acqua  _acqua;
+
+    /** Private data of the class */
+    time_t _purchase_date;
+    Color  _color;
+    Water  _water;
 
 public:
-    
-    /** Costruttore della classe inline */
-    PesceAcqario(Sesso sesso, float prezzo, const char* specie) 
-    : Pesce(sesso, prezzo, specie)
+
+    /** Inline class constructor */
+    AquariumFish(Sex sex, float price, const char* species)
+    : Fish(sex, price, species)
     {
-    } 
-    
+    }
+
     //...
 };
 
@@ -239,108 +239,108 @@ public:
 
 <p>In C++, inheritance can be either <em>single</em> or <em>multiple</em>, depending on whether the new class inherits its characteristics from one or more pre-existing classes:</p>
 
-<pre><code>class Figlio : public Mamma
+<pre><code>class Son : public Mom
 {
-    /** Ereditarietà singola */
+    /** Single inheritance */
 };
 
-class Figlio : public Mamma, private Papa
+class Son : public Mom, private Dad
 {
-    /** Ereditarietà singola */
+    /** Single inheritance */
 };
 </code></pre>
 
 <p>By contrast, it’s not allowed (nor would it make sense) for a class to inherit twice from the same base class:</p>
 
-<pre><code>class Errore : public Mamma, public Mamma
+<pre><code>class Error : public Mom, public Mom
 {
 	...
 };
 </code></pre>
 
-<p>The <code>Mamma</code> and <code>Papa</code> classes can be called <em>base classes</em>, <em>subclasses</em>, <em>fundamental classes</em>, or <em>subtypes</em>; the <code>Figlio</code> class can be called either the <em>derived class</em>, the <em>superclass</em>, or the <em>supertype</em>.
+<p>The <code>Mom</code> and <code>Dad</code> classes can be called <em>base classes</em>, <em>subclasses</em>, <em>fundamental classes</em>, or <em>subtypes</em>; the <code>Son</code> class can be called either the <em>derived class</em>, the <em>superclass</em>, or the <em>supertype</em>.
 The instruction:</p>
 
-<pre><code>class PesceAlimentare : public Pesce {
+<pre><code>class FoodFish : public Fish {
     ...
 };
 </code></pre>
-<p>declares the <code>PesceAlimentare</code> class as derived from the <code>Pesce</code> class.
+<p>declares the <code>FoodFish</code> class as derived from the <code>Fish</code> class.
 The <a href="/en/classes-objects#specificatori-accesso" class="xref">access specifier</a> between the two class names defines the visibility of the base class’s data inside the child class:</p>
 
 <pre><code>class B : public A
 {
-    // tutti i membri di A mantengono
-    // in B la loro visibilità originale
+    // all of A's members keep
+    // their original visibility in B
 };
 
 class B : protected A
 {
-    // tutti i membri public di A diventano membri
-    // protected di B; i membri protected e private
-    // mantengono la loro visibilità originale
+    // all of A's public members become
+    // protected members of B; protected and private
+    // members keep their original visibility
 };
 
 class B : private A
 {
-    // tutti i membri di A, quale che sia la loro
-    // visibilità, diventano membri private di B;
+    // all of A's members, whatever their
+    // visibility, become private members of B;
 };
 
 </code></pre>
 
 <p>In the absence of an access qualifier, the compiler treats all the data of a class declared with the <code>class</code> keyword as private, and all the data of a class declared with the <code>struct</code> keyword as public:</p>
 
-<pre><code>/** 
- * @file ereditarieta-accesso.cpp
- * Accesso ai membri della classe base dalle classi derivate.
+<pre><code>/**
+ * @file inheritance-access.cpp
+ * Access to base class members from derived classes.
  */
- 
-/** Classe base, dati membro pubblici */ 
-struct Mamma { 
+
+/** Base class, public member data */
+struct Mom {
     int a;
 };
 
-/** Classe derivata come struct: dati per default pubblici */
-struct Figlia : Mamma {
+/** Derived class as struct: data public by default */
+struct Daughter : Mom {
     int b;
 };
 
-/** Classe derivata come class: dati per default privati */
-class Figlio : Mamma {
+/** Derived class as class: data private by default */
+class Son : Mom {
     int c;
 };
 
-/** Funzione generica, non friend delle classi */
-void funz(Figlia&amp; figlia, Figlio&amp; figlio)
+/** Generic function, not a friend of the classes */
+void func(Daughter&amp; daughter, Son&amp; son)
 {
-    figlia.a++;
-    figlio.a++;    
+    daughter.a++;
+    son.a++;
 }
 
 </code></pre>
 
 <p>If you compile this code, you get an error message:</p>
 
-<pre><code>&gt; g++ src/cpp/ereditarieta-accesso.cpp -c -o src/out/esempio
-src/cpp/ereditarieta-accesso.cpp:25:5: error: cannot cast 'Figlio'
+<pre><code>&gt; g++ src/cpp/inheritance-access.cpp -c -o src/out/example
+src/cpp/inheritance-access.cpp:25:5: error: cannot cast 'Son'
     to its private base class
-      'Mamma'
-    figlio.a++;    
+      'Mom'
+    son.a++;    
     ^
-src/cpp/ereditarieta-accesso.cpp:17:16: note: implicitly declared
+src/cpp/inheritance-access.cpp:17:16: note: implicitly declared
     private here
-class Figlio : Mamma {
+class Son : Mom {
                ^~~~~
-src/cpp/ereditarieta-accesso.cpp:25:12: error: 'a' is a private
-    member of 'Mamma'
-    figlio.a++;    
+src/cpp/inheritance-access.cpp:25:12: error: 'a' is a private
+    member of 'Mom'
+    son.a++;    
            ^
-src/cpp/ereditarieta-accesso.cpp:17:16: note: constrained by
+src/cpp/inheritance-access.cpp:17:16: note: constrained by
     implicitly private inheritance here
-class Figlio : Mamma {
+class Son : Mom {
                ^~~~~
-src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared
+src/cpp/inheritance-access.cpp:8:9: note: member is declared
     here
     int a;
         ^
@@ -349,11 +349,11 @@ src/cpp/ereditarieta-accesso.cpp:8:9: note: member is declared
 
 <hr id="costruttore" />
 
-<p>This is the declaration of the derived class <code>PesceAlimentare</code>’s constructor:</p>
+<p>This is the declaration of the derived class <code>FoodFish</code>’s constructor:</p>
 
-<pre><code>PesceAlimentare(Sesso sesso, float prezzo, const char* specie)
-: Pesce(sesso, prezzo, specie) {
-    _commestibile = true;
+<pre><code>FoodFish(Sex sex, float price, const char* species)
+: Fish(sex, price, species) {
+    _edible = true;
 }
 </code></pre>
 
@@ -364,199 +364,199 @@ Using the base class’s constructor to initialize shared data is necessary for 
 The order in which the base classes’ constructors are called during the object’s initialization depends on the order in which they appear in the child class’s constructor.
 Let’s look at another example, a bit more complex than the previous one, which also shows how static member data and functions work:</p>
 
-<pre><code>/** 
- * @file ereditarieta-multipla.cpp
- * Esempio di ereditarierà multipla.
+<pre><code>/**
+ * @file inheritance-multiple.cpp
+ * Example of multiple inheritance.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;string&gt;
-#include &lt;ctime&gt; 
+#include &lt;ctime&gt;
 
 using namespace std;
 
-enum Acqua  { dolce, salata };
-enum Sesso  { maschio, femmina, boh};
-enum Colore { rosso, blu, verde, argento };
+enum Water  { freshwater, saltwater };
+enum Sex    { male, female, unknown};
+enum Color  { red, blue, green, silver };
 
-/** 
- * Dichiarazione della classe Articolo 
+/**
+ * Declaration of the Item class
  */
-class Articolo {
+class Item {
 private:
 
-    static int _n_articoli;
-                        
+    static int _n_items;
+
 protected:
-    
-    /** Dati membro privati */
-    float  _prezzo;
+
+    /** Private member data */
+    float  _price;
 
 public:
 
-    /** Costruttore della classe inline */
-    Articolo(float prezzo = 0.0) 
-    : _prezzo(prezzo)
+    /** Inline class constructor */
+    Item(float price = 0.0)
+    : _price(price)
     {
-        _n_articoli++;
-        cout &lt;&lt; "costruttore Articolo" &lt;&lt; endl;
-    }
-    
-    /** Distruttore inline */
-    ~Articolo() { 
-        _n_articoli--;
-        cout &lt;&lt; "distruttore Articolo" &lt;&lt; endl;       
+        _n_items++;
+        cout &lt;&lt; "Item constructor" &lt;&lt; endl;
     }
 
-    /** Funzioni di interfaccia */
-    void setPrezzo(float prezzo);
+    /** Inline destructor */
+    ~Item() {
+        _n_items--;
+        cout &lt;&lt; "Item destructor" &lt;&lt; endl;
+    }
 
-    /** Funzione di interfaccia statica */
-    static int getIstanze() { return _n_articoli; }
+    /** Interface functions */
+    void setPrice(float price);
 
-    /** Funzioni di interfaccia inline */
-    float getPrezzo()     { return _prezzo;     }
-    const char* getTipo() { return "articolo";  }
+    /** Static interface function */
+    static int getInstances() { return _n_items; }
+
+    /** Inline interface functions */
+    float getPrice()     { return _price;     }
+    const char* getType() { return "item";  }
 };
 
-/** Inizializza il dato membro statico */            
-int Articolo::_n_articoli = 0 ;
+/** Initializes the static member data */
+int Item::_n_items = 0 ;
 
-/** 
- * Dichiarazione della classe Pesce 
+/**
+ * Declaration of the Fish class
  */
-class Pesce {
+class Fish {
 private:
-            
-    static int _n_pesci;
-                        
+
+    static int _n_fish;
+
 protected:
-    
-    /** Dati membro privati */
-    Sesso  _sesso;
-    string _specie;
-    bool   _commestibile;
+
+    /** Private member data */
+    Sex    _sex;
+    string _species;
+    bool   _edible;
 
 public:
 
-    /** Costruttore della classe inline */
-    Pesce(Sesso sesso = boh, const char* specie = "ignota") 
-    : _sesso(sesso), _specie(specie)
+    /** Inline class constructor */
+    Fish(Sex sex = unknown, const char* species = "unknown")
+    : _sex(sex), _species(species)
     {
-        _n_pesci++;        
-        cout &lt;&lt; "costruttore Pesce" &lt;&lt; endl;
-    }
-    
-    /** Distruttore inline */
-    ~Pesce() { 
-        _n_pesci--;
-        cout &lt;&lt; "distruttore Pesce" &lt;&lt; endl;
+        _n_fish++;
+        cout &lt;&lt; "Fish constructor" &lt;&lt; endl;
     }
 
-    /** Funzioni di interfaccia */
-    void setSesso(Sesso sesso);
-    void setSpecie(const char* specie);
+    /** Inline destructor */
+    ~Fish() {
+        _n_fish--;
+        cout &lt;&lt; "Fish destructor" &lt;&lt; endl;
+    }
 
-    /** Funzione di interfaccia statica */
-    static int getIstanze()      { return _n_pesci; }
+    /** Interface functions */
+    void setSex(Sex sex);
+    void setSpecies(const char* species);
 
-    /** Funzioni di interfaccia inline */
-    string getSpecie()       { return _specie.c_str(); }
-    Sesso  getSesso()        { return _sesso; }
-    bool   getCommestibile() { return _commestibile; }
-    void   setCommestibile(bool commestibile) { 
-        _commestibile = commestibile; 
+    /** Static interface function */
+    static int getInstances()      { return _n_fish; }
+
+    /** Inline interface functions */
+    string getSpecies()       { return _species.c_str(); }
+    Sex    getSex()        { return _sex; }
+    bool   getEdible() { return _edible; }
+    void   setEdible(bool edible) {
+        _edible = edible;
     }
 };
 
-/** Inizializza il dato membro statico */            
-int Pesce::_n_pesci = 0 ;
+/** Initializes the static member data */
+int Fish::_n_fish = 0 ;
 
-/** 
- * Dichiarazione della classe PesceAlimentare 
+/**
+ * Declaration of the FoodFish class
  */
-class PesceAlimentare 
-: public Pesce, public Articolo {
+class FoodFish
+: public Fish, public Item {
 private:
-    
-    /** Dati privati della classe */
-    time_t _data_cattura;  
-    string _area_pesca; 
+
+    /** Private data of the class */
+    time_t _catch_date;
+    string _fishing_area;
 
 public:
 
-    /** Costruttore della classe inline */
-    PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
-    : Articolo(prezzo)
-    , Pesce(sesso, specie)
+    /** Inline class constructor */
+    FoodFish(Sex sex, float price, const char* species)
+    : Item(price)
+    , Fish(sex, species)
     {
-        /** Auspicabilmente.. */
-        _commestibile = true;
-        cout &lt;&lt; "costruttore PesceAlimentare" &lt;&lt; endl;
+        /** Hopefully.. */
+        _edible = true;
+        cout &lt;&lt; "FoodFish constructor" &lt;&lt; endl;
     }
 
-    /** Distruttore inline */
-    ~PesceAlimentare() { 
-        cout &lt;&lt; "distruttore PesceAlimentare" &lt;&lt; endl;
+    /** Inline destructor */
+    ~FoodFish() {
+        cout &lt;&lt; "FoodFish destructor" &lt;&lt; endl;
     }
 
-    /** Ridefinizione della funzione della classe base */
-    const char* getTipo() { return "pesce alimentare"; }
+    /** Override of the base class function */
+    const char* getType() { return "food fish"; }
 
     //...
 };
 
-class PesceAcquario 
-: public Articolo, public Pesce {
+class AquariumFish
+: public Item, public Fish {
 private:
-    
-    /** Dati privati della classe */
-    time_t _data_acquisto;  
-    Colore _colore;
-    Acqua  _acqua;
+
+    /** Private data of the class */
+    time_t _purchase_date;
+    Color  _color;
+    Water  _water;
 
 public:
-    
-    /** Costruttore della classe inline */
-    PesceAcquario(Sesso sesso, float prezzo, const char* specie) 
-    : Pesce(sesso, specie)
-    , Articolo(prezzo)
-    {
-        cout &lt;&lt; "costruttore PesceAcquario" &lt;&lt; endl;
-    } 
 
-    /** Distruttore inline */
-    ~PesceAcquario() { 
-        cout &lt;&lt; "distruttore PesceAcquario" &lt;&lt; endl;
+    /** Inline class constructor */
+    AquariumFish(Sex sex, float price, const char* species)
+    : Fish(sex, species)
+    , Item(price)
+    {
+        cout &lt;&lt; "AquariumFish constructor" &lt;&lt; endl;
     }
 
-    /** Ridefinizione della funzione della classe base */
-    const char* getTipo() { return "pesce acquario"; }
-    
+    /** Inline destructor */
+    ~AquariumFish() {
+        cout &lt;&lt; "AquariumFish destructor" &lt;&lt; endl;
+    }
+
+    /** Override of the base class function */
+    const char* getType() { return "aquarium fish"; }
+
     //...
 };
- 
-int main(int argc, char** argv) 
+
+int main(int argc, char** argv)
 {
-    /** Crea le due istanze delle classi */
-    PesceAcquario pesce1(maschio, 2.5, "Paracheiredon");
-    PesceAlimentare pesce2(femmina, 25.4, "Dicentrarchus labrax");
-    
-    /** Richiama le funzioni di interfaccia */
-    cout &lt;&lt;  pesce1.getTipo() &lt;&lt; ": " &lt;&lt; pesce1.getSpecie() 
+    /** Creates the two instances of the classes */
+    AquariumFish fish1(male, 2.5, "Paracheirodon");
+    FoodFish fish2(female, 25.4, "Dicentrarchus labrax");
+
+    /** Calls the interface functions */
+    cout &lt;&lt;  fish1.getType() &lt;&lt; ": " &lt;&lt; fish1.getSpecies()
          &lt;&lt; endl;
-    cout &lt;&lt;  pesce2.getTipo() &lt;&lt; ": " &lt;&lt; pesce2.getSpecie() 
+    cout &lt;&lt;  fish2.getType() &lt;&lt; ": " &lt;&lt; fish2.getSpecies()
          &lt;&lt; endl;
 
-    /** Richiama la funzione della classe base */
-    cout &lt;&lt; "classe base: " &lt;&lt; pesce1.Articolo::getTipo() &lt;&lt; endl;
+    /** Calls the base class function */
+    cout &lt;&lt; "base class: " &lt;&lt; fish1.Item::getType() &lt;&lt; endl;
 
-    /** Richiama le funzioni di interfaccia statiche */
-    cout &lt;&lt;  "articoli creati: " &lt;&lt; Articolo::getIstanze() 
+    /** Calls the static interface functions */
+    cout &lt;&lt;  "items created: " &lt;&lt; Item::getInstances()
          &lt;&lt; endl;
-    cout &lt;&lt;  "pesci creati:    " &lt;&lt; Pesce::getIstanze() 
+    cout &lt;&lt;  "fish created:  " &lt;&lt; Fish::getInstances()
          &lt;&lt; endl;
-    
+
     return 0;
 }
 
@@ -565,76 +565,76 @@ int main(int argc, char** argv)
 <p>The difference from the previous code is that in this case we’ve isolated the data related to the fish’s cost into a separate class, and the derived classes now inherit not from one base class, but from two.
 If you compile and run this code, you get:</p>
 
-<pre><code>&gt; g++ src/cpp/ereditarieta-multipla.cpp -o src/out/esempio
-&gt; src/out/esempio                                         
-costruttore Pesce
-costruttore Articolo
-costruttore PesceAlimentare
-costruttore Articolo
-costruttore Pesce
-costruttore PesceAcquario
-pesce acquario: Paracheiredon
-pesce alimentare: Dicentrarchus labrax
-classe base: articolo
-articoli creati: 2
-pesci creati:    2
-distruttore PesceAcquario
-distruttore Pesce
-distruttore Articolo
-distruttore PesceAlimentare
-distruttore Articolo
-distruttore Pesce
+<pre><code>&gt; g++ src/cpp/inheritance-multiple.cpp -o src/out/example
+&gt; src/out/example                                         
+Fish constructor
+Item constructor
+FoodFish constructor
+Item constructor
+Fish constructor
+AquariumFish constructor
+aquarium fish: Paracheirodon
+food fish: Dicentrarchus labrax
+base class: item
+items created: 2
+fish created:    2
+AquariumFish destructor
+Fish destructor
+Item destructor
+FoodFish destructor
+Item destructor
+Fish destructor
 </code></pre>
 
 <p>As you can see, the order in which the base classes’ constructors are called mirrors the order in which they’re listed in the initialization list, while the order of the destructors is reversed.
 If the derived class’s constructor doesn’t specify an order for calling the base classes’ constructors, the calling order is given by the order in which the base classes appear in the child class’s declaration:</p>
 
-<pre><code>/** 
- * @file ereditarieta-ordine-costruttori.cpp
- * Ordine di chiamata dei costruttori nell'ereditarierà multipla.
+<pre><code>/**
+ * @file inheritance-constructor-order.cpp
+ * Order of constructor calls in multiple inheritance.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;string&gt;
-#include &lt;ctime&gt; 
+#include &lt;ctime&gt;
 
 using namespace std;
 
-class Mamma {
+class Mom {
 public:
-    Mamma() {
-        cout &lt;&lt; "costruttore Mamma" &lt;&lt; endl;
+    Mom() {
+        cout &lt;&lt; "Mom constructor" &lt;&lt; endl;
     }
 };
 
-class Padre {
+class Dad {
 public:
-    Padre() {
-        cout &lt;&lt; "costruttore Padre" &lt;&lt; endl;
-    }
-};
- 
-class Figlio
-: public Padre, public Mamma {
-public:
-    Figlio() {
-        cout &lt;&lt; "costruttore Figlio" &lt;&lt; endl;
+    Dad() {
+        cout &lt;&lt; "Dad constructor" &lt;&lt; endl;
     }
 };
 
-class Figlia
-: public Mamma, public Padre {
+class Son
+: public Dad, public Mom {
 public:
-    Figlia() {
-        cout &lt;&lt; "costruttore Figlia" &lt;&lt; endl;
+    Son() {
+        cout &lt;&lt; "Son constructor" &lt;&lt; endl;
     }
 };
 
- 
-int main(int argc, char** argv) 
+class Daughter
+: public Mom, public Dad {
+public:
+    Daughter() {
+        cout &lt;&lt; "Daughter constructor" &lt;&lt; endl;
+    }
+};
+
+
+int main(int argc, char** argv)
 {
-    Figlio Hansel;
-    Figlia Gretel;
+    Son Hansel;
+    Daughter Gretel;
 
     return 0;
 }
@@ -643,65 +643,65 @@ int main(int argc, char** argv)
 
 <p>If you compile and run this code, you get:</p>
 
-<pre><code>&gt; g++ src/cpp/ereditarieta-ordine-costruttori.cpp -o src/out/esempio
-&gt; src/out/esempio                                                   
-costruttore Padre
-costruttore Mamma
-costruttore Figlio
-costruttore Mamma
-costruttore Padre
-costruttore Figlia
+<pre><code>&gt; g++ src/cpp/inheritance-constructor-order.cpp -o src/out/example
+&gt; src/out/example                                                   
+Dad constructor
+Mom constructor
+Son constructor
+Mom constructor
+Dad constructor
+Daughter constructor
 </code></pre>
 
-<p>Another thing to notice, in this code, is that the <code>getTipo</code> function is present both in the <code>Articolo</code> base class and in the two derived classes <code>PesceAlimentare</code> and <code>PesceAcquario</code>.
-For this reason, when you call <code>getTipo</code> from an instance of either derived class, as in:</p>
+<p>Another thing to notice, in this code, is that the <code>getType</code> function is present both in the <code>Item</code> base class and in the two derived classes <code>FoodFish</code> and <code>AquariumFish</code>.
+For this reason, when you call <code>getType</code> from an instance of either derived class, as in:</p>
 
-<pre><code>cout &lt;&lt;  pesce1.getTipo() &lt;&lt; ": " &lt;&lt; pesce1.getSpecie()
-cout &lt;&lt;  pesce2.getTipo() &lt;&lt; ": " &lt;&lt; pesce2.getSpecie()
+<pre><code>cout &lt;&lt;  fish1.getType() &lt;&lt; ": " &lt;&lt; fish1.getSpecies()
+cout &lt;&lt;  fish2.getType() &lt;&lt; ": " &lt;&lt; fish2.getSpecies()
 </code></pre>
 
 <p>the value returned is that of the child class’s function.
 To get the base class’s value, we have to specify its name in the instruction, as in:</p>
 
-<pre><code>cout &lt;&lt; "classe base: " &lt;&lt; pesce1.Articolo::getTipo() &lt;&lt; endl;
+<pre><code>cout &lt;&lt; "base class: " &lt;&lt; fish1.Item::getType() &lt;&lt; endl;
 </code></pre>
 
 <hr id="classi-virtuali" />
 
 <p>Let’s complicate things a bit.
-Imagine a <code>Figlio</code> class deriving from the <code>Madre</code> and <code>Padre</code> classes, which in turn derive from the <code>Persona</code> class.
-If we called a function of the <code>Persona</code> class from an object of class <code>Figlio</code>, which one would get called — the one inherited from <code>Padre</code>, or the one inherited from <code>Madre</code>?</p>
+Imagine a <code>Son</code> class deriving from the <code>Mom</code> and <code>Dad</code> classes, which in turn derive from the <code>Person</code> class.
+If we called a function of the <code>Person</code> class from an object of class <code>Son</code>, which one would get called — the one inherited from <code>Dad</code>, or the one inherited from <code>Mom</code>?</p>
 
-<pre><code>/** 
- * @file ereditarieta-classi-base-virtuali.cpp
- * Gestione delle classi base virtuali.
+<pre><code>/**
+ * @file inheritance-virtual-base-classes.cpp
+ * Handling virtual base classes.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;string&gt;
 
 using namespace std;
 
-class Persona {
+class Person {
 public:
     void getClass(){
-        cout &lt;&lt; "Persona" &lt;&lt; endl;
+        cout &lt;&lt; "Person" &lt;&lt; endl;
     }
 };
 
-class Padre : public virtual Persona {
+class Dad : public virtual Person {
 };
 
-class Madre : virtual public Persona {
+class Mom : virtual public Person {
 };
- 
-class Figlio : public Padre, public Madre {
+
+class Son : public Dad, public Mom {
 };
- 
-int main(int argc, char** argv) 
+
+int main(int argc, char** argv)
 {
-    Figlio caino;
-    caino.getClass();
+    Son cain;
+    cain.getClass();
     return 0;
 }
 
@@ -709,95 +709,95 @@ int main(int argc, char** argv)
 
 <p>Actually, neither, because this code produces an error:</p>
 
-<pre><code>src/cpp/ereditarieta-classi-base-virtuali.cpp:30:11:
+<pre><code>src/cpp/inheritance-virtual-base-classes.cpp:30:11:
 error: non-static member 'getClass' found in multiple base-class
-      subobjects of type 'Persona':
-    class Figlio -&gt; class Padre -&gt; class Persona
-    class Figlio -&gt; class Madre -&gt; class Persona
-    caino.getClass();
+      subobjects of type 'Person':
+    class Son -&gt; class Dad -&gt; class Person
+    class Son -&gt; class Mom -&gt; class Person
+    cain.getClass();
           ^
-src/cpp/ereditarieta-classi-base-virtuali.cpp:13:10:
+src/cpp/inheritance-virtual-base-classes.cpp:13:10:
 note: member found by ambiguous name lookup
     void getClass(){
          ^
 1 error generated.
 </code></pre>
-<p>You can avoid this kind of problem by declaring the <code>Persona</code> class as a <em>virtual</em> base class of both <code>Madre</code> and <code>Padre</code>:</p>
+<p>You can avoid this kind of problem by declaring the <code>Person</code> class as a <em>virtual</em> base class of both <code>Mom</code> and <code>Dad</code>:</p>
 
-<pre><code>class Padre : public virtual Persona {
+<pre><code>class Dad : public virtual Person {
 };
 
-class Madre : virtual public Persona {
+class Mom : virtual public Person {
 };
 </code></pre>
 
-<p>This way, the <code>Figlio</code> class will inherit all the members specific to the <code>Madre</code> and <code>Padre</code> classes, but only a single copy of the methods and attributes of the virtual <code>Persona</code> class that both of them contain.</p>
+<p>This way, the <code>Son</code> class will inherit all the members specific to the <code>Mom</code> and <code>Dad</code> classes, but only a single copy of the methods and attributes of the virtual <code>Person</code> class that both of them contain.</p>
 
 <hr id="classi-puntatori" />
 
 <p>As I’ve told you, defining a new class is equivalent to defining a new data type, which the compiler will treat the same way as the language’s primitive data types.
-This means, for example, that if we want, we can create an array of objects of class <code>Pesce</code> the same way we’d create an array of <code>int</code> or <code>char</code>:</p>
+This means, for example, that if we want, we can create an array of objects of class <code>Fish</code> the same way we’d create an array of <code>int</code> or <code>char</code>:</p>
 
-<pre><code>/** Array di oggetti di classe Pesce */
-Pesce acquario[10];
+<pre><code>/** Array of objects of class Fish */
+Fish aquarium[10];
 </code></pre>
 
 <p>There’s only one limitation: since every element of an array must be initialized when it’s created, the class must have a default constructor.
-If we decided to create an array of objects of the <code>Punto</code> class we saw <a href="/en/classes-objects#attributi-metodi" class="xref">in the last lesson</a>, the array’s elements would have to be initialized explicitly:</p>
+If we decided to create an array of objects of the <code>Point</code> class we saw <a href="/en/classes-objects#attributi-metodi" class="xref">in the last lesson</a>, the array’s elements would have to be initialized explicitly:</p>
 
-<pre><code>Punto spline[3] = { Punto(3,5), Punto(0,0), Punto(7,7) } ;
+<pre><code>Point spline[3] = { Point(3,5), Point(0,0), Point(7,7) } ;
 </code></pre>
 
 <p>We can also add objects belonging to a base class’s derived classes into an array of objects of that base class:</p>
 
-<pre><code>Persona famiglia[3] = { Padre(), Madre(), Figlio() } ;
+<pre><code>Person family[3] = { Dad(), Mom(), Son() } ;
 </code></pre>
 
 <p>Conversely, base class objects cannot appear in an array of objects of a derived class, and an instruction like the one below will produce an error:</p>
 
-<pre><code>Figlio classe[4] = { Figlio(), Figlio(), Persona(), Figlio() } ;
+<pre><code>Son class[4] = { Son(), Son(), Person(), Son() } ;
 </code></pre>
 
-<p>Just as, in chess, the queen can move like a rook, but a rook cannot move like a queen, an object of type <code>Persona</code> doesn’t contain all the information of an object of type <code>Figlio</code>, and so cannot be used in its place.
+<p>Just as, in chess, the queen can move like a rook, but a rook cannot move like a queen, an object of type <code>Person</code> doesn’t contain all the information of an object of type <code>Son</code>, and so cannot be used in its place.
 The same reasoning that applies to arrays also applies to pointers.
-A pointer to objects of type <code>Persona</code> can be assigned an object of type <code>Figlio</code>, while the reverse operation will cause a compile error:</p>
+A pointer to objects of type <code>Person</code> can be assigned an object of type <code>Son</code>, while the reverse operation will cause a compile error:</p>
 
-<pre><code>Persona *ptrP = new Figlio() ;  // OK
-Figlio  *ptrF = new Persona();  // ERRORE!
+<pre><code>Person *ptrP = new Son() ;  // OK
+Son    *ptrF = new Person();  // ERROR!
 </code></pre>
 
 <p>The compiler is able to understand the relationship between a derived class and its base class, and can therefore establish a coercion path from the object’s type to the pointer’s type, but it has no way of accessing the members or functions of a derived class from a base class object.
 We said <a href="/en//data-types#puntatori" class="xref">earlier on</a> that pointers are like masks that isolate certain sequences of bits, whose size varies depending on the pointer’s type.
 The same reasoning applies to classes too: a base-class pointer associated with a derived-class object will only “see” the data and functions of its own class:</p>
 
-<pre><code>/** 
- * @file ereditarieta-puntatori.cpp
- * Gestione dei puntatori a classi derivate.
+<pre><code>/**
+ * @file inheritance-pointers.cpp
+ * Handling pointers to derived classes.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;string&gt;
 
 using namespace std;
 
-class Persona {
+class Person {
 public:
     void getClass(){
-        cout &lt;&lt; "Persona" &lt;&lt; endl;
+        cout &lt;&lt; "Person" &lt;&lt; endl;
     }
 };
 
-class Madre : virtual public Persona {
+class Mom : virtual public Person {
 public:
     void getClass(){
-        cout &lt;&lt; "Madre" &lt;&lt; endl;
+        cout &lt;&lt; "Mom" &lt;&lt; endl;
     }
 };
- 
-int main(int argc, char** argv) 
+
+int main(int argc, char** argv)
 {
-    Madre   * ptrM = new Madre;
-    Persona * ptrP = ptrM ;
+    Mom    * ptrM = new Mom;
+    Person * ptrP = ptrM ;
     ptrM-&gt;getClass() ;
     ptrP-&gt;getClass() ;
     return 0;
@@ -807,95 +807,95 @@ int main(int argc, char** argv)
 
 <p>If you compile and run this code, you get:</p>
 
-<pre><code>&gt; g++ src/cpp/ereditarieta-puntatori.cpp -o src/out/esempio
-&gt; src/out/esempio
-Madre
-Persona
+<pre><code>&gt; g++ src/cpp/inheritance-pointers.cpp -o src/out/example
+&gt; src/out/example
+Mom
+Person
 </code></pre>
 
-<p>There’s no error: the <code>getClass()</code> function invoked in the second output instruction isn’t, as you might expect, that of the <code>Madre</code> class, to which the object belongs, but that of the base class, which is the only one the program can access through a pointer to objects of type <code>Persona</code>.
+<p>There’s no error: the <code>getClass()</code> function invoked in the second output instruction isn’t, as you might expect, that of the <code>Mom</code> class, to which the object belongs, but that of the base class, which is the only one the program can access through a pointer to objects of type <code>Person</code>.
 This (correct) behavior of the program becomes particularly risky if the class has a destructor:</p>
 
-<pre><code>/** 
- * @file ereditarieta-distruttori.cpp
- * Gestione dei distruttori nelle classi derivate.
+<pre><code>/**
+ * @file inheritance-destructors.cpp
+ * Handling destructors in derived classes.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;string&gt;
 
 using namespace std;
 
-/** Definiamo una classe base */
-class Padre {
+/** Let's define a base class */
+class Dad {
 public:
-    ~Padre() ;
+    ~Dad() ;
 } ;
 
-/** Definiamo delle classi derivate. */
-class Figlio : public Padre {
+/** Let's define some derived classes. */
+class Son : public Dad {
 public:
-    ~Figlio() ;
+    ~Son() ;
 };
 
-class Nipote : public Figlio {
+class Grandson : public Son {
 public:
-    ~Nipote() ;
+    ~Grandson() ;
 };
 
-int main(int argc, char** argv) 
+int main(int argc, char** argv)
 {
-    /** Creiamo un array di puntatori di classe base. */
-    Padre * dinastia[3] ;     
+    /** Let's create an array of base class pointers. */
+    Dad * dynasty[3] ;
 
-    /** Assegnamo delle istanze delle tre classi ai puntatori */
-    dinastia[0]= new Padre  ; 
-    dinastia[1]= new Figlio ;
-    dinastia[2]= new Nipote ;
+    /** Let's assign instances of the three classes to the pointers */
+    dynasty[0]= new Dad  ;
+    dynasty[1]= new Son ;
+    dynasty[2]= new Grandson ;
 
-    /** Facciamo qualcosa con i nostri oggetti.. */
+    /** Let's do something with our objects.. */
 
-    /** ..e poi li eliminiamo */
-    delete dinastia[0] ; 
-    delete dinastia[1] ;  
-    delete dinastia[2] ;  
+    /** ..and then delete them */
+    delete dynasty[0] ;
+    delete dynasty[1] ;
+    delete dynasty[2] ;
 }
 
 </code></pre>
 
-<p>No compiler will ever give you an error for this code, but the destructor called, in all three cases, will be that of the base class <code>Padre</code>, with consequences ranging from problematic to disastrous.</p>
+<p>No compiler will ever give you an error for this code, but the destructor called, in all three cases, will be that of the base class <code>Dad</code>, with consequences ranging from problematic to disastrous.</p>
 
 <hr id="funzioni-virtuali" />
 
 <p>For a member function of a derived class to be callable even through pointers to base classes, it must be declared <code>virtual</code>.</p>
 
-<pre><code>/** 
- * @file ereditarieta-funzioni-virtuali.cpp
- * Gestione delle funzioni virtuali.
+<pre><code>/**
+ * @file inheritance-virtual-functions.cpp
+ * Handling virtual functions.
  */
- 
+
 #include &lt;iostream&gt;
 
 using namespace std;
 
-class Persona {
+class Person {
 public:
     virtual void getClass(){
-        cout &lt;&lt; "Persona" &lt;&lt; endl;
+        cout &lt;&lt; "Person" &lt;&lt; endl;
     }
 };
 
-class Madre : virtual public Persona {
+class Mom : virtual public Person {
 public:
     void getClass(){
-        cout &lt;&lt; "Madre" &lt;&lt; endl;
+        cout &lt;&lt; "Mom" &lt;&lt; endl;
     }
 };
- 
-int main(int argc, char** argv) 
+
+int main(int argc, char** argv)
 {
-    Madre   * ptrM = new Madre;
-    Persona * ptrP = ptrM ;
+    Mom    * ptrM = new Mom;
+    Person * ptrP = ptrM ;
     ptrM-&gt;getClass() ;
     ptrP-&gt;getClass() ;
     return 0;
@@ -904,11 +904,11 @@ int main(int argc, char** argv)
 </code></pre>
 <p>The output of this code is:</p>
 
-<pre><code>&gt; g++ src/cpp/ereditarieta-funzioni-virtuali.cpp \                 
-    -o src/out/esempio
-&gt; src/out/esempio                                 
-Madre
-Madre
+<pre><code>&gt; g++ src/cpp/inheritance-virtual-functions.cpp \                 
+    -o src/out/example
+&gt; src/out/example                                 
+Mom
+Mom
 </code></pre>
 
 <p><em>Virtual functions</em> are functions that get called based on the class of the object they belong to, regardless of the type of the reference or pointer being used.
@@ -939,7 +939,7 @@ The rules governing the use of virtual functions are:</p>
 
 <p>It’s possible to declare a virtual function in the base class without defining its behavior, using the syntax:</p>
 
-<pre><code>virtual &lt;tipo&gt; nomefunzione([argomenti]) = 0 ;
+<pre><code>virtual &lt;type&gt; functionName([arguments]) = 0 ;
 </code></pre>
 
 <p>This kind of function is called a <i id="funzioni-virtuali-pure">pure virtual function</i>, and it makes the class it belongs to an <em>abstract class</em>.
@@ -953,91 +953,91 @@ The rules that apply to abstract classes are:</p>
   <li>abstract classes cannot be the type of an object or of an explicit conversion.</li>
 </ul>
 
-<p>Given an abstract class <code>Mammifero</code>, the following instructions would cause compile errors:</p>
+<p>Given an abstract class <code>Mammal</code>, the following instructions would cause compile errors:</p>
 
-<pre><code>void funz(Mammifero m);  // non possono essere argomenti..
-Mammifero funz();        // né valori di ritorno..
-punt = (Mammifero*)ptr;  // né il tipo di una conversione.
-Mammifero pollo;         // né il tipo di un oggetto
+<pre><code>void func(Mammal m);   // cannot be arguments..
+Mammal func();         // nor return values..
+ptr = (Mammal*)ptr2;   // nor the type of a conversion.
+Mammal chicken;        // nor the type of an object
 </code></pre>
 
 <p>It’s possible, though, to declare a pointer or a <em>reference</em> to an abstract class, and use them to create arrays or queues that can be used with instances of different classes:</p>
 
-<pre><code>/** 
- * @file ereditarieta-classi-astratte.cpp
- * Gestione delle classi astratte.
+<pre><code>/**
+ * @file inheritance-abstract-classes.cpp
+ * Handling abstract classes.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;string&gt;
 
 using namespace std;
 
-enum Sesso { maschio, femmina, boh};
-const char* Sessi[] = {"maschio", "femmina", "boh" };
+enum Sex { male, female, unknown};
+const char* Sexes[] = {"male", "female", "unknown" };
 
-class Mammifero
+class Mammal
 {
 private:
 
-    Sesso _sesso;
+    Sex _sex;
 
 public:
 
-    Mammifero(Sesso sesso = boh) 
-    : _sesso(sesso) {
+    Mammal(Sex sex = unknown)
+    : _sex(sex) {
     }
 
-    virtual void getSesso() {
-        cout &lt;&lt; Sessi[_sesso] &lt;&lt; endl ;
-    }    
+    virtual void getSex() {
+        cout &lt;&lt; Sexes[_sex] &lt;&lt; endl ;
+    }
 
-    /** Funzione virtuale pura */
-    virtual void getSpecie() = 0;
+    /** Pure virtual function */
+    virtual void getSpecies() = 0;
 } ;
 
-class Cane : public Mammifero
-{ 
+class Dog : public Mammal
+{
 private:
 
-    string _nome;
+    string _name;
 
 public:
 
-    Cane(const char * nome, Sesso sesso) 
-    : Mammifero(sesso), _nome(nome){
+    Dog(const char * name, Sex sex)
+    : Mammal(sex), _name(name){
     }
 
-    void getNome() {
-        cout &lt;&lt; _nome &lt;&lt; endl ;
+    void getName() {
+        cout &lt;&lt; _name &lt;&lt; endl ;
     }
 
-    /** Definizione della funzione virtuale */
-    virtual void getSpecie() {
-        cout &lt;&lt; "cane" &lt;&lt; endl ;
-    }    
+    /** Definition of the virtual function */
+    virtual void getSpecies() {
+        cout &lt;&lt; "dog" &lt;&lt; endl ;
+    }
 };
 
 int main()
 {
-    Cane mioCane("Scylla", femmina) ;
-    Mammifero&amp; cane = mioCane; 
+    Dog myDog("Scylla", female) ;
+    Mammal&amp; dog = myDog;
 
-    /** 
-     * Accede alle funzioni della classe Cane
-     * dall'istanza della classe.
+    /**
+     * Accesses the Dog class's functions
+     * from the class instance.
      */
-    mioCane.getSpecie();
-    mioCane.getSesso();
-    mioCane.getNome();
-    
-    /** 
-     * Accede alle funzioni della classe Cane
-     * dal puntatore alla classe Mammifero.
+    myDog.getSpecies();
+    myDog.getSex();
+    myDog.getName();
+
+    /**
+     * Accesses the Dog class's functions
+     * from the pointer to the Mammal class.
      */
-    cane.getSpecie();
-    cane.getSesso();
-    
+    dog.getSpecies();
+    dog.getSex();
+
     return 0;
 }
 
@@ -1045,29 +1045,29 @@ int main()
 
 <p>If you compile and run this code, you’ll get:</p>
 
-<pre><code>&gt; g++ src/cpp/ereditarieta-classi-astratte.cpp -o src/out/esempio
-&gt; src/out/esempio                                                
-cane
-femmina
+<pre><code>&gt; g++ src/cpp/inheritance-abstract-classes.cpp -o src/out/example
+&gt; src/out/example                                                
+dog
+female
 Scylla
-cane
-femmina
+dog
+female
 </code></pre>
 
-<p>The <code>Mammifero</code> base class defines only an abstraction, leaving it to its derived classes to define attributes and methods specific to each particular species.
-In the same way, the <code>getSpecie</code> function defines only a concept, not an algorithm; it’s up to the individual derived classes to redefine the function’s behavior, adapting it to their own needs.
-It is possible, however, to also define a behavior for pure virtual functions; for the <code>Mammifero</code> class it might look something like this:</p>
+<p>The <code>Mammal</code> base class defines only an abstraction, leaving it to its derived classes to define attributes and methods specific to each particular species.
+In the same way, the <code>getSpecies</code> function defines only a concept, not an algorithm; it’s up to the individual derived classes to redefine the function’s behavior, adapting it to their own needs.
+It is possible, however, to also define a behavior for pure virtual functions; for the <code>Mammal</code> class it might look something like this:</p>
 
-<pre><code>inline void Mammifero::getSpecie()
+<pre><code>inline void Mammal::getSpecies()
 {
-    cout &lt;&lt; "nessuna" &lt;&lt; endl ;
+    cout &lt;&lt; "none" &lt;&lt; endl ;
 }
 </code></pre>
 
-<p>Since objects of class <code>Mammifero</code> cannot exist, though, the base version of the <code>getSpecie</code> function could only be called by making use of the <code>::</code> operator:</p>
+<p>Since objects of class <code>Mammal</code> cannot exist, though, the base version of the <code>getSpecies</code> function could only be called by making use of the <code>::</code> operator:</p>
 
-<pre><code>mioCane.Mammifero::getSpecie();
-cane.Mammifero::getSpecie();
+<pre><code>myDog.Mammal::getSpecies();
+dog.Mammal::getSpecies();
 </code></pre>
 <hr id="dottrina" />
 
@@ -1076,7 +1076,7 @@ The original example of virtual functions, for instance, looked like this:</p>
 
 <pre><code>/////////////////////////////////////////////////////////////
 //
-//   CHISONOV.CPP - Utilizzo delle funzioni virtuali
+//   WHOAMI.CPP - Use of virtual functions
 //
 /////////////////////////////////////////////////////////////
 #include &lt;iostream.h&gt;
@@ -1085,25 +1085,25 @@ class A
 {
  public:
     A() {} ;
-    virtual void ChiSono()        	
-    	{ cout &lt;&lt; "Sono un oggetto di classe A \n" ; } 
+    virtual void WhoAmI()
+    	{ cout &lt;&lt; "I am an object of class A \n" ; }
 } ;
 /////////////////////////////////////////////////////////////
 class B :public A
 {
  public:
     B() : A() {} ;
-    void ChiSono() 
-    	{ cout &lt;&lt; "Sono un oggetto di classe B \n" ; } 
+    void WhoAmI()
+    	{ cout &lt;&lt; "I am an object of class B \n" ; }
 } ;
 /////////////////////////////////////////////////////////////
 void main()
 {
- B * ptrB = new B ;            	
- A * ptrA = ptrB ;            	
-        	
-	ptrB-&gt;ChiSono() ;            	
-	ptrA-&gt;ChiSono() ;            	
+ B * ptrB = new B ;
+ A * ptrA = ptrB ;
+
+	ptrB-&gt;WhoAmI() ;
+	ptrA-&gt;WhoAmI() ;
 } ;
 /////////////////////////////////////////////////////////////
 
@@ -1111,15 +1111,15 @@ void main()
 
 <p>Being code written for the Microsoft environment of 1995<!-- con i nomi dei file di otto caratteri al massimo: sembra di parlare della preistoria.. -->, if you tried to compile it now, with the GNU compiler, you’d get a long series of errors:</p>
 
-<pre><code>&gt; g++ src/cpp/ereditarieta-codice-canaro.cpp -o src/out/esempio
-src/cpp/ereditarieta-codice-canaro.cpp:8:10:
+<pre><code>&gt; g++ src/cpp/inheritance-canaro-code.cpp -o src/out/example
+src/cpp/inheritance-canaro-code.cpp:8:10:
 fatal error: 'iostream.h' file not found
 #include &lt;iostream.h&gt;
          ^~~~~~~~~~~~
-src/cpp/ereditarieta-codice-canaro.cpp:13:8:
+src/cpp/inheritance-canaro-code.cpp:13:8:
 error: use of undeclared identifier 'cout';
 did you mean 'std::cout'?
-        { cout &lt;&lt; "Sono un oggetto di classe A \n" ; }
+        { cout &lt;&lt; "I am an object of class A \n" ; }
           ^~~~
           std::cout
 /Library/Developer/CommandLineTools/usr/bin/
@@ -1127,11 +1127,11 @@ did you mean 'std::cout'?
 'std::cout' declared here
 extern _LIBCPP_FUNC_VIS ostream cout;
                                 ^
-src/cpp/ereditarieta-codice-canaro.cpp:21:8:
+src/cpp/inheritance-canaro-code.cpp:21:8:
 error: use of undeclared identifier 'cout'
 
 did you mean 'std::cout'?
-        { cout &lt;&lt; "Sono un oggetto di classe B \n" ; }
+        { cout &lt;&lt; "I am an object of class B \n" ; }
           ^~~~
           std::cout
 /Library/Developer/CommandLineTools/usr/bin/
@@ -1139,7 +1139,7 @@ did you mean 'std::cout'?
 std::cout' declared here
 extern _LIBCPP_FUNC_VIS ostream cout;
                                 ^
-src/cpp/ereditarieta-codice-canaro.cpp:24:1:
+src/cpp/inheritance-canaro-code.cpp:24:1:
 error: 'main' must return 'int'
 void main()
 ^~~~
@@ -1147,7 +1147,7 @@ void main()
 
 <p>The teaching value of this code, though, is unchanged.
 The <em>Karma</em> of the two objects is determined by their classes’ declaration, which leaves them no choice but to do what they were created to do.
-The output of the functions, the style of the comments, or the fact that in one case the classes are called <code>A</code> and <code>B</code>, while in the other they’re called <code>Persona</code> and <code>Madre</code>, are just formal differences that don’t affect the example’s <em>Dharma</em>, which is to illustrate the behavior of virtual functions.
+The output of the functions, the style of the comments, or the fact that in one case the classes are called <code>A</code> and <code>B</code>, while in the other they’re called <code>Person</code> and <code>Mom</code>, are just formal differences that don’t affect the example’s <em>Dharma</em>, which is to illustrate the behavior of virtual functions.
 If, instead of the new code, I had used Master Canaro’s original, you would have understood it just as well; maybe even better, because the new code seems better to me, but that doesn’t mean it is to you too.
 The same principle also applies to the Universe.
 Just as objects within the same program occupy different positions in memory depending on when the program is run, sentient beings can manifest in different places and times across different cycles of existence.

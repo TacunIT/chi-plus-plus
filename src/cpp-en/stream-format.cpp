@@ -1,41 +1,40 @@
-/** 
+/**
  * @file src/stream-format.cpp
- * Formattazione dell'I/O con gli stream.
+ * Formatting I/O with streams.
  */
- 
+
 #include <iostream>
-#include <iomanip>
 
 using namespace std;
 
 
 int main(int argc, char** argv)
-{    
+{
     double d = 123.456789 ;
 
-    /** Mostra i valori di default */
+    /** Shows the default values */
     cout << endl;
-    cout << "Valori di default" << endl;
+    cout << "Default values" << endl;
     cout << "  width:     "  << cout.width()        << endl;
-    cout << "  precision: "  << cout.precision()    << endl; 	
-    cout << "  fill:      '" << cout.fill()  << "'" << endl;	
+    cout << "  precision: "  << cout.precision()    << endl;
+    cout << "  fill:      '" << cout.fill()  << "'" << endl;
     cout << "  output:    "  << d                   << endl;
 
-    /** Modifica il formato e mostra il nuovo output */
+    /** Changes the format and shows the new output */
     cout << endl;
-    cout << "Modifica formato" << endl;
+    cout << "Changed format" << endl;
     cout << "  output:    "  ;
     cout.precision(4) ;
     cout.fill('#') ;
     cout.width(10) ;
     cout << d << endl;
-    
-    /** Mostra la persistenza dei valori */
+
+    /** Shows the persistence of the values */
     cout << endl;
-    cout << "Valori correnti" << endl;
+    cout << "Current values" << endl;
     cout << "  width:     "  << cout.width()        << endl;
-    cout << "  precision: "  << cout.precision()    << endl; 	
-    cout << "  fill:      '" << cout.fill()  << "'" << endl;	
+    cout << "  precision: "  << cout.precision()    << endl;
+    cout << "  fill:      '" << cout.fill()  << "'" << endl;
     cout << "  output:    "  << d                   << endl;
 
     return 0;

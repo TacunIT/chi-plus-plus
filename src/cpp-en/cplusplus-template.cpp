@@ -1,6 +1,6 @@
-/** 
+/**
  *  @file src/cplusplus-template.cpp
- *  Esempio utlizzo dei template di classi.
+ *  Example use of class templates.
  */
 
 #include <iostream>
@@ -10,145 +10,145 @@
 
 using namespace std;
 
-/** Definisce due nuovi tipi di dato */
-typedef time_t Data;
-typedef enum _sesso {
-    maschio = 'm',
-    femmina = 'f'
-} Sesso;
+/** Defines two new data types */
+typedef time_t Date;
+typedef enum _sex {
+    male = 'm',
+    female = 'f'
+} Sex;
 
-/** Definisce una classe base per la gestione degli animali */
-class Animale {
+/** Defines a base class for handling animals */
+class Animal {
 private:
-    string _razza;
-    Sesso  _sesso;
+    string _breed;
+    Sex    _sex;
 public:
-    /** Costruttori di copia e parametrico */
-    Animale() {}
-    Animale(const char* razza, const Sesso sesso ) {
-        _razza  = razza;
-        _sesso  = sesso;
+    /** Copy and parametric constructors */
+    Animal() {}
+    Animal(const char* breed, const Sex sex ) {
+        _breed  = breed;
+        _sex  = sex;
     }
-    /** Funzione virtuale pura: rende la classe "astratta" */
-    virtual const char* getSpecie() const {
-        return ""; 
-    } 
-    /** Funzioni di interfaccia */
-    const char getSesso() const {        
-        return (char)_sesso;
-    } 
-    const char* getRazza() const {
-        return _razza.c_str();
+    /** Pure virtual function: makes the class "abstract" */
+    virtual const char* getSpecies() const {
+        return "";
+    }
+    /** Interface functions */
+    const char getSex() const {
+        return (char)_sex;
+    }
+    const char* getBreed() const {
+        return _breed.c_str();
     }
 };
 
-/** Operatore di output su stream per la classe Animale */
-ostream& operator << (ostream& os, const Animale& animale) {
-    os  << "Specie:" << animale.getSpecie() << "\t"
-        << "Razza:"  << animale.getRazza()  << "\t"
-        << "Sesso:"  << animale.getSesso()  
+/** Stream output operator for the Animal class */
+ostream& operator << (ostream& os, const Animal& animal) {
+    os  << "Species:" << animal.getSpecies() << "\t"
+        << "Breed:"  << animal.getBreed()  << "\t"
+        << "Sex:"  << animal.getSex()
         << endl;
-    return os;   
+    return os;
 }
 
-/** Definizione della classe derivata Cavallo */
-class Cavallo : public Animale {
+/** Definition of the derived class Horse */
+class Horse : public Animal {
 public:
-    /** Definizione dei costruttori della classe */
-    Cavallo() {}
-    Cavallo(const char* razza, const Sesso sesso )
-    : Animale(razza, sesso ) { 
+    /** Definition of the class's constructors */
+    Horse() {}
+    Horse(const char* breed, const Sex sex )
+    : Animal(breed, sex ) {
     }
-    /** Ridefinizione della funzione virtuale pura */
-    const char* getSpecie() const {
-        return "Cavallo"; 
-    }     
+    /** Redefinition of the pure virtual function */
+    const char* getSpecies() const {
+        return "Horse";
+    }
 };
 
-/** Definizione della classe derivata Cavallo */
-class Asino : public Animale {
+/** Definition of the derived class Donkey */
+class Donkey : public Animal {
 public:
-    /** Definizione del costruttore della classe */
-    Asino() {}
-    Asino(const char* razza, const Sesso sesso )
-    : Animale(razza, sesso ) { 
+    /** Definition of the class's constructor */
+    Donkey() {}
+    Donkey(const char* breed, const Sex sex )
+    : Animal(breed, sex ) {
     }
-    /** Ridefinizione della funzione virtuale pura */
-    const char* getSpecie() const {
-        return "Asino"; 
-    }     
+    /** Redefinition of the pure virtual function */
+    const char* getSpecies() const {
+        return "Donkey";
+    }
 };
 
-/** Definizione della classe Monta */
-class Monta {
+/** Definition of the Mating class */
+class Mating {
 private:
-    Animale* _maschio;
-    Animale* _femmina;
-    Data     _giorno;
-    string   _esito;
-    /** 
-    *   Funzione privata per la definizione 
-    *   dell'esito della monta 
+    Animal*  _male;
+    Animal*  _female;
+    Date     _day;
+    string   _outcome;
+    /**
+    *   Private function for determining
+    *   the outcome of the mating
     */
-    void setEsito() {
-        if(strcmp(_maschio->getSpecie(),"Asino") == 0) {
-            if(strcmp(_femmina->getSpecie(),"Asino") == 0) {
-                _esito = "asino";
+    void setOutcome() {
+        if(strcmp(_male->getSpecies(),"Donkey") == 0) {
+            if(strcmp(_female->getSpecies(),"Donkey") == 0) {
+                _outcome = "donkey";
             } else {
-                _esito = "mulo";
-            } 
-        } else {        
-            if(strcmp(_femmina->getSpecie(),"Cavallo") == 0) {
-                _esito = "puledro";
+                _outcome = "mule";
+            }
+        } else {
+            if(strcmp(_female->getSpecies(),"Horse") == 0) {
+                _outcome = "foal";
             } else {
-                _esito = "bardotto";
-            } 
+                _outcome = "hinny";
+            }
         }
     }
 public:
-    /** Costruttore della classe */
-    Monta(Animale* maschio, Animale* femmina) {
-        _maschio = maschio;
-        _femmina = femmina;
-        time(&_giorno);
-        setEsito();
+    /** Class constructor */
+    Mating(Animal* male, Animal* female) {
+        _male = male;
+        _female = female;
+        time(&_day);
+        setOutcome();
     }
-    /** Operatore di output, "friend" della classe Monta */
-    friend ostream& operator<<(ostream& os, const Monta& copula) {
-        os << "DATA:    " << asctime(localtime(&copula._giorno)) 
-           << "MASCHIO: " << *copula._maschio 
-           << "FEMMINA: " << *copula._femmina
-           << "ESITO:   " << copula._esito
+    /** Output operator, "friend" of the Mating class */
+    friend ostream& operator<<(ostream& os, const Mating& mating) {
+        os << "DATE:    " << asctime(localtime(&mating._day))
+           << "MALE: " << *mating._male
+           << "FEMALE: " << *mating._female
+           << "OUTCOME:   " << mating._outcome
            << endl;
-           return os;   
+           return os;
      };
 };
 
 int main()
 {
-    /** 
-     *  Crea gli oggetti di classe derivata  
-     *  e li assegna a puntatori della classe base.
+    /**
+     *  Creates the derived class objects
+     *  and assigns them to base class pointers.
      */
-    Animale* cavallo  = new Cavallo("lipizzano", maschio);    
-    Animale* giumenta = new Cavallo("maremmano", femmina);    
-    Animale* asino    = new Asino("amiatino", maschio);
-    Animale* asina    = new Asino("sardo", femmina);
+    Animal* horse  = new Horse("Lipizzaner", male);
+    Animal* mare = new Horse("Maremmano", female);
+    Animal* donkey    = new Donkey("Amiata", male);
+    Animal* jenny    = new Donkey("Sardinian", female);
 
-    /** Crea una lista con una classe template */
-    list<Monta> monte;
+    /** Creates a list using a template class */
+    list<Mating> matings;
 
-    /** Associa alla lista degli oggetti di classe Monta */
-    monte.push_back(Monta(cavallo, giumenta)); 
-    monte.push_back(Monta (asino, asina));       
-    monte.push_back(Monta (asino, giumenta));     
-    monte.push_back(Monta (cavallo, asina));
+    /** Adds Mating class objects to the list */
+    matings.push_back(Mating(horse, mare));
+    matings.push_back(Mating (donkey, jenny));
+    matings.push_back(Mating (donkey, mare));
+    matings.push_back(Mating (horse, jenny));
 
-    /** Mostra il contenuto della lista */
-    list<Monta>::iterator it;
-    for (it=monte.begin(); it!=monte.end(); it++) {
+    /** Displays the contents of the list */
+    list<Mating>::iterator it;
+    for (it=matings.begin(); it!=matings.end(); it++) {
         cout << *it << endl;
     }
 
-    return 0;               
+    return 0;
 }

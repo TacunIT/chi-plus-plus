@@ -16,72 +16,72 @@
 using namespace std;
 
 /**
- *  mostraPianeta 
+ *  mostraPianeta
  *  Visualizza il nome di un pianeta, data la sua posizione.
  *  @param  int  pianeta Posizione del pianeta.
  *  @return bool esiste  true se il pianeta esiste.
  */
 bool mostraPianeta(int pianeta )
-{    
+{
     bool esiste = true;
-    
+
     switch( pianeta ) {
-        case POS_ERRORE:   
-            cout << "Valore non valido"; 
+        case POS_ERRORE:
+            cout << "Valore non valido";
             break;
-        case POS_MERCURIO: 
-            cout << "Mercurio";          
+        case POS_MERCURIO:
+            cout << "Mercurio";
             break;
-        case POS_VENERE:   
-            cout << "Venere";            
+        case POS_VENERE:
+            cout << "Venere";
             break;
-        case POS_TERRA:    
-            cout << "Terra";             
+        case POS_TERRA:
+            cout << "Terra";
             break;
-        case POS_MARTE:    
-            cout << "Marte";             
+        case POS_MARTE:
+            cout << "Marte";
             break;
-        case POS_GIOVE:    
-            cout << "Giove";             
+        case POS_GIOVE:
+            cout << "Giove";
             break;
-        case POS_SATURNO:  
-            cout << "Saturno";           
+        case POS_SATURNO:
+            cout << "Saturno";
             break;
-        case POS_URANO:    
-            cout << "Urano";             
-            break;          
-        case POS_NETTUNO:  
-            cout << "Nettuno";           
-            break;          
-        case POS_PLUTONE:  
-            cout << "Plutone";           
+        case POS_URANO:
+            cout << "Urano";
+            break;
+        case POS_NETTUNO:
+            cout << "Nettuno";
+            break;
+        case POS_PLUTONE:
+            cout << "Plutone";
             break;
         default:
             esiste = false;
-            cout << "Inserire un valore da: " 
-                 << POS_MERCURIO 
-                 << " a " 
-                 << POS_PLUTONE;                    
-    } 
-    
+            cout << "Inserire un valore da: "
+                 << POS_MERCURIO
+                 << " a "
+                 << POS_PLUTONE;
+    }
+
     return esiste;
 }
 
 /**
  *  main
  *  Funzione principale del programma, richiama la funzione
- *  mostraPianeti passandole i valori da 1 a 9.
+ *  mostraPianeta passandole i valori da 1 a 9.
  */
 int main(int argc, char** argv)
-{    
+{
     int p = POS_NESSUNO;
 
     /** Elenca tutti i Pianeti del Sistema Solare */
     for ( p = POS_MERCURIO; p <= POS_PLUTONE; p++ ) {
-        cout << p << ": "; 
-        mostraPianeta( p ); 
+        cout << p << ": ";
+        mostraPianeta( p );
         cout << endl;
     }
-        
+
     return 0;
 }

@@ -149,13 +149,13 @@ Inoltre, nulla impedirebbe a un programmatore cialtrone di scrivere una funzione
 
 <p>Se inseriamo queste due funzioni in un programma, otteniamo:</p>
 
-<pre><code>/** 
+<pre><code>/**
  * @file classi-struttura-orario.cpp
  * Gestione dei dati membro di una struct.
  */
- 
+
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
+#include &lt;iomanip&gt;
 
 using namespace std;
 
@@ -167,17 +167,17 @@ struct Orario {
 };
 
 /** Funzione per l'incremento dei minuti */
-void aggiornaMinuti(struct Orario &amp;o, int minuti) 
+void aggiornaMinuti(struct Orario &amp;o, int minuti)
 {
     /** Incrementa il numero dei minuti */
     o.m += minuti;
-    
+
     /** Se necessario, incrementa le ore */
     if(o.m &gt;= 60) {
 
         o.m -= 60;
         o.h += 1;
-        
+
         /** Se necessario, passa al giorno dopo */
         if(o.h &gt;= 24) {
             o.h -= 24;
@@ -186,13 +186,13 @@ void aggiornaMinuti(struct Orario &amp;o, int minuti)
 }
 
 /*  Funzione cialtrona per l'incremento dei minuti */
-void incrementa_m(struct Orario &amp;o, int minuti) 
+void incrementa_m(struct Orario &amp;o, int minuti)
 {
     o.m += minuti;
 }
 
 int main()
-{    
+{
     struct Orario ora;
 
     /** Definisce dei valori iniziali prossimi al cambio di data */
@@ -200,17 +200,17 @@ int main()
     ora.m = 45;
     ora.s = 00;
 
-    /** Visualizza i valri iniziali */
-    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":" 
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":" 
+    /** Visualizza i valori iniziali */
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":"
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":"
          &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.s &lt;&lt; endl;
 
     /** Richiama la funzione di aggiornamento */
     aggiornaMinuti(ora, 20);
-    
+
     /** Visualizza i valori dopo l'aggiornamento */
-    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":" 
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":" 
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":"
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":"
          &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.s &lt;&lt; endl;
 
     /** Reimposta i valori iniziali */
@@ -220,13 +220,13 @@ int main()
 
     /** Richiama la funzione cialtrona */
     incrementa_m(ora, 20);
-    
+
     /** Visualizza i valori dopo l'aggiornamento */
-    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":" 
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":" 
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":"
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":"
          &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.s &lt;&lt; endl;
 
-    
+
     return 0;
 }
 
@@ -249,48 +249,45 @@ Quando si crea una variabile di classe <code>X</code>, si dice che si: <em>istan
 I dati e le funzioni membro di una classe sono direttamente accessibili alle funzioni membro della classe, ma per utilizzarli all’interno di funzioni esterne alla classe, si devono utilizzare gli operatori di selezione <code>.</code> e <code>-&gt;</code>.
 Il primo, detto <em>operatore di selezione diretta</em>, viene utilizzato con istanze della classe; il secondo, detto <em>operatore di selezi­one indiretta</em>, con puntatori ad esse:</p>
 
-<pre><code>/** 
+<pre><code>/**
  * @file classi-punto.cpp
  * Accesso ai dati membro della classe.
  */
- 
-#include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
 
 using namespace std;
 
 class Punto
 {
-public:             
-    
+public:
+
     /** Dichiara i dati membro della classe */
     int _x, _y;
 
-    /** 
+    /**
      *  Le funzioni interne alla classe accedono ai
      *  dati membro con la sintassi ordinaria.
-     */  
+     */
     Punto(int x, int y) {
         _x = x;
         _y = y;
     }
 } ;
 
-int main(int argc, char** argv) 
+int main(int argc, char** argv)
 {
     /** Crea un oggetto di classe Punto */
-    Punto p(5,6);       
+    Punto p(5,6);
 
     /** Assegna l'istanza della classe al puntatore ptr */
-    Punto *ptr = &amp;p ;   
-    
-    /** 
+    Punto *ptr = &amp;p ;
+
+    /**
      *  Le funzioni esterne alla classe accedono ai
      *  dati membro tramite gli operatori di selezione.
-     */  
+     */
     p._x    = 3 ;       // assegna un valore tramite l'oggetto
     ptr-&gt;_y = 2 ;       // assegna un valore tramite il puntatore
-    
+
     //...
 }
 
@@ -884,13 +881,12 @@ Allo stesso modo, essendo onnipotente, deve avere delle funzioni membro per port
 <p>È un peccato che Platone non sia vissuto duemilaquattrocentoundici anni, perché avrebbe certamente apprezzato l’affinità delle classi del C++ con le sue teorizzazioni riguardo le <em>idee</em> e le <em>forme</em>.
 In questo codice, possiamo considerare la dichiarazione della classe come l’<em>idea</em> del pesce, mentre l’istanza ne è la <em>forma</em>:</p>
 
-<pre><code>/** 
+<pre><code>/**
  * @file classi-pesce.cpp
  * Definizione della classe Pesce.
  */
- 
+
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
 
 using namespace std;
 
@@ -903,15 +899,15 @@ private:
     /** Dati membro privati */
     string _specie;
     bool   _commestibile;
-    
+
 public:
-    
+
     /** Costruttore della classe inline */
-    Pesce(const char* specie, bool commestibile) 
+    Pesce(const char* specie, bool commestibile)
     : _specie(specie), _commestibile(commestibile)
     {
     }
-    
+
     /** Costruttore di copia inline */
     Pesce(const Pesce&amp; p) {
         this-&gt;_specie       = p._specie;
@@ -919,7 +915,7 @@ public:
     }
 
     /** Distruttore inline */
-    ~Pesce() { 
+    ~Pesce() {
     }
 
     /** Funzioni di interfaccia */
@@ -933,13 +929,13 @@ public:
  *  Istanza della classe: forma
  */
 int main()
-{             
+{
     Pesce pesce("spigola", true);
-    
+
     cout &lt;&lt; pesce.getSpecie() &lt;&lt; ": "
          &lt;&lt; (pesce.isCommestibile() ? "sì" : "no")
          &lt;&lt; endl;
-     
+
     return 0;
 }
 

@@ -1,3 +1,8 @@
+## 2.0.4 (July 06, 2026)
+  - Tradotti capitoli 14-21
+  - Corretto errore nel menu
+  - Rimossi i symlink residtui ai file cpp
+
 ## 2.0.3 (July 04, 2026)
   - Tolto commento da polymorphism
   - Correzione dei link nel testo

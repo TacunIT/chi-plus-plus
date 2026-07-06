@@ -107,11 +107,11 @@ The repetition can go on either for a set number of times, or until a given cond
 <p>The <code>for</code> loop is used when we want to run the loop a fixed number of times.
 Its general form is as follows:</p>
 
-<pre><code>// controllo del ciclo
-for(&lt;stato iniziale&gt; ; &lt;stato finale&gt; ; &lt;variazione&gt;)
+<pre><code>// loop control
+for(&lt;initial state&gt; ; &lt;final state&gt; ; &lt;change&gt;)
 {
-    // corpo del ciclo
-    &lt;istruzioni&gt;
+    // loop body
+    &lt;instructions&gt;
 }
 </code></pre>
 
@@ -121,17 +121,17 @@ The second expression is a logical or relational condition evaluated at the star
 The third expression is evaluated at the end of every iteration, and usually consists of an expression that increments or decrements the variables used to control the loop.
 To do this, we use unary operators (that is, operators that act on a single variable) called <em>increment operators</em> and <em>decrement operators</em>, which can carry out their function either before or after the variable is used, depending on whether they’re placed before or after the variable’s identifier:</p>
 
-<pre><code>x++     // valuta x e poi la incrementa di un'unità
-++x     // incrementa x di un'unità e poi la valuta
-x--     // valuta x e poi la riduce di un'unità
---x     // riduce x di un'unità e poi la valuta
+<pre><code>x++     // evaluates x, then increments it by one
+++x     // increments x by one, then evaluates it
+x--     // evaluates x, then decreases it by one
+--x     // decreases x by one, then evaluates it
 </code></pre>
 
 <p>If <code>x</code> is a variable of integer or floating-point type, the increment is by one arithmetic unit; if instead <code>x</code> is a pointer, the increment equals the size of the variable the pointer refers to, as I showed you when we talked about data types.
 <!-- @todo: rimando a esempio nei tipi di dato -->
 In this case, the variable <code>p</code> is an integer, so the instruction:</p>
 
-<pre><code>for ( p = POS_MERCURIO; p &lt;= POS_PLUTONE; p++ ) {
+<pre><code>for ( p = POS_MERCURY; p &lt;= POS_PLUTO; p++ ) {
 </code></pre>
 
 <p>will increment the variable <code>p</code> by 1.</p>
@@ -139,108 +139,108 @@ In this case, the variable <code>p</code> is an integer, so the instruction:</p>
 <pre><code>#include &lt;iostream&gt;
 #include &lt;cstdlib&gt;
 
-#define POS_NESSUNO -1
-#define POS_ERRORE   0
-#define POS_MERCURIO 1
-#define POS_VENERE   2
-#define POS_TERRA    3
-#define POS_MARTE    4
-#define POS_GIOVE    5
-#define POS_SATURNO  6
-#define POS_URANO    7
-#define POS_NETTUNO  8
-#define POS_PLUTONE  9
+#define POS_NONE     -1
+#define POS_ERROR     0
+#define POS_MERCURY   1
+#define POS_VENUS     2
+#define POS_EARTH     3
+#define POS_MARS      4
+#define POS_JUPITER   5
+#define POS_SATURN    6
+#define POS_URANUS    7
+#define POS_NEPTUNE   8
+#define POS_PLUTO     9
 
 using namespace std;
 
 /**
- *  mostraPianeta 
- *  Visualizza il nome di un pianeta, data la sua posizione.
- *  @param  int  pianeta Posizione del pianeta.
- *  @return bool esiste  true se il pianeta esiste.
+ *  showPlanet
+ *  Displays the name of a planet, given its position.
+ *  @param  int  planet Position of the planet.
+ *  @return bool exists  true if the planet exists.
  */
-bool mostraPianeta(int pianeta )
-{    
-    bool esiste = true;
-    
-    switch( pianeta ) {
-        case POS_ERRORE:   
-            cout &lt;&lt; "Valore non valido"; 
+bool showPlanet(int planet )
+{
+    bool exists = true;
+
+    switch( planet ) {
+        case POS_ERROR:
+            cout &lt;&lt; "Invalid value";
             break;
-        case POS_MERCURIO: 
-            cout &lt;&lt; "Mercurio";          
+        case POS_MERCURY:
+            cout &lt;&lt; "Mercury";
             break;
-        case POS_VENERE:   
-            cout &lt;&lt; "Venere";            
+        case POS_VENUS:
+            cout &lt;&lt; "Venus";
             break;
-        case POS_TERRA:    
-            cout &lt;&lt; "Terra";             
+        case POS_EARTH:
+            cout &lt;&lt; "Earth";
             break;
-        case POS_MARTE:    
-            cout &lt;&lt; "Marte";             
+        case POS_MARS:
+            cout &lt;&lt; "Mars";
             break;
-        case POS_GIOVE:    
-            cout &lt;&lt; "Giove";             
+        case POS_JUPITER:
+            cout &lt;&lt; "Jupiter";
             break;
-        case POS_SATURNO:  
-            cout &lt;&lt; "Saturno";           
+        case POS_SATURN:
+            cout &lt;&lt; "Saturn";
             break;
-        case POS_URANO:    
-            cout &lt;&lt; "Urano";             
-            break;          
-        case POS_NETTUNO:  
-            cout &lt;&lt; "Nettuno";           
-            break;          
-        case POS_PLUTONE:  
-            cout &lt;&lt; "Plutone";           
+        case POS_URANUS:
+            cout &lt;&lt; "Uranus";
+            break;
+        case POS_NEPTUNE:
+            cout &lt;&lt; "Neptune";
+            break;
+        case POS_PLUTO:
+            cout &lt;&lt; "Pluto";
             break;
         default:
-            esiste = false;
-            cout &lt;&lt; "Inserire un valore da: " 
-                 &lt;&lt; POS_MERCURIO 
-                 &lt;&lt; " a " 
-                 &lt;&lt; POS_PLUTONE;                    
-    } 
-    
-    return esiste;
+            exists = false;
+            cout &lt;&lt; "Enter a value from: "
+                 &lt;&lt; POS_MERCURY
+                 &lt;&lt; " to "
+                 &lt;&lt; POS_PLUTO;
+    }
+
+    return exists;
 }
 
 /**
  *  main
- *  Funzione principale del programma, richiama la funzione
- *  mostraPianeti passandole i valori da 1 a 9.
+ *  Main function of the program, calls the
+ *  showPlanet function passing it values from 1 to 9.
  */
 int main(int argc, char** argv)
-{    
-    int p = POS_NESSUNO;
+{
+    int p = POS_NONE;
 
-    /** Elenca tutti i Pianeti del Sistema Solare */
-    for ( p = POS_MERCURIO; p &lt;= POS_PLUTONE; p++ ) {
-        cout &lt;&lt; p &lt;&lt; ": "; 
-        mostraPianeta( p ); 
+    /** Lists all the Planets of the Solar System */
+    for ( p = POS_MERCURY; p &lt;= POS_PLUTO; p++ ) {
+        cout &lt;&lt; p &lt;&lt; ": ";
+        showPlanet( p );
         cout &lt;&lt; endl;
     }
-        
+
     return 0;
 }
 
 </code></pre>
 
-<p>The first instruction sets the value of <code>p</code> to <code>1</code> (the value of the constant <code>POS_MERCURIO</code>), and continues, in increments of 1, until the value of <code>p</code> is less than or equal to <code>9</code> (the value of the constant <code>POS_PLUTONE</code>).
-On each repetition the program displays the value of the variable <code>p</code>, calls the <code>mostraPianeta</code> function, passing it the current value of <code>p</code>, then adds a line break.
+<p>The first instruction sets the value of <code>p</code> to <code>1</code> (the value of the constant <code>POS_MERCURY</code>), and continues, in increments of 1, until the value of <code>p</code> is less than or equal to <code>9</code> (the value of the constant <code>POS_PLUTO</code>).
+On each repetition the program displays the value of the variable <code>p</code>, calls the <code>showPlanet</code> function, passing it the current value of <code>p</code>, then adds a line break.
 The output of this program is:</p>
 
-<pre><code>% g++ src/cpp/istruzioni-iterative-for.cpp -o src/out/esempio
-% src/out/esempio                                            
-1: Mercurio
-2: Venere
-3: Terra
-4: Marte
-5: Giove
-6: Saturno
-7: Urano
-8: Nettuno
-9: Plutone
+<pre><code>% g++ src/cpp/iterative-instructions-for.cpp -o src/out/example
+% src/out/example                                            
+1: Mercury
+2: Venus
+3: Earth
+4: Mars
+5: Jupiter
+6: Saturn
+7: Uranus
+8: Neptune
+9: Pluto
 
 </code></pre>
 
@@ -248,130 +248,130 @@ The output of this program is:</p>
 
 <pre><code>for( ; ; )
 {
-    // istruzioni
+    // instructions
 }
 </code></pre>
 
 <p>A loop like this will keep repeating indefinitely, and, if it isn’t stopped somehow, will inevitably cause problems for the computer running it.
 You therefore need to set a limit on the number of repetitions, using the same <code>break</code> keyword we used with <code>switch</code> instructions.
-This time, though, we’ll start doing things the right way, and split the three components of the previous program into three separate files: <code>pianeti.h</code>, which will hold the declarations of the constants and of the <code>mostraPianeta</code> function; <code>pianeti.cpp</code>, containing the definition of the <code>mostraPianeta</code> function; and <code>pianeti-main.cpp</code> for the <code>main</code> function:</p>
+This time, though, we’ll start doing things the right way, and split the three components of the previous program into three separate files: <code>planets.h</code>, which will hold the declarations of the constants and of the <code>showPlanet</code> function; <code>planets.cpp</code>, containing the definition of the <code>showPlanet</code> function; and <code>planets-main.cpp</code> for the <code>main</code> function:</p>
 
-<pre><code>/** 
- * @file pianeti.h
- * Costanti e funzione per la gestione dei Pianeti.
+<pre><code>/**
+ * @file planets.h
+ * Constants and function for handling Planets.
  */
 
-#ifndef _PIANETI
-#define _PIANETI 1
- 
+#ifndef _PLANETS
+#define _PLANETS 1
+
 using namespace std;
 
-/** Dichiarazione delle costanti */
-#define POS_NESSUNO -1
-#define POS_ERRORE   0
-#define POS_MERCURIO 1
-#define POS_VENERE   2
-#define POS_TERRA    3
-#define POS_MARTE    4
-#define POS_GIOVE    5
-#define POS_SATURNO  6
-#define POS_URANO    7
-#define POS_NETTUNO  8
-#define POS_PLUTONE  9
+/** Declaration of constants */
+#define POS_NONE     -1
+#define POS_ERROR     0
+#define POS_MERCURY   1
+#define POS_VENUS     2
+#define POS_EARTH     3
+#define POS_MARS      4
+#define POS_JUPITER   5
+#define POS_SATURN    6
+#define POS_URANUS    7
+#define POS_NEPTUNE   8
+#define POS_PLUTO     9
 
-/** Dichiarazione delle funzioni */
-bool mostraPianeta(int pianeta);
-string nomePianeta(int posizione);
+/** Declaration of functions */
+bool showPlanet(int planet);
+string planetName(int position);
 
-#endif /* _PIANETI */
+#endif /* _PLANETS */
 
 </code></pre>
 
-<pre><code>/** 
- * @file pianeti.cpp
+<pre><code>/**
+ * @file planets.cpp
  * @version 1.0
- * Funzione per la gestione dei Pianeti.
+ * Function for handling Planets.
  */
 
 #include &lt;iostream&gt;
-#include "pianeti.h"
+#include "planets.h"
 
 /**
- *  mostraPianeta 
- *  Visualizza il nome di un pianeta, data la sua posizione.
- *  @param  int  pianeta Posizione del pianeta.
- *  @return bool esiste  true se il pianeta esiste.
+ *  showPlanet
+ *  Displays the name of a planet, given its position.
+ *  @param  int  planet Position of the planet.
+ *  @return bool exists  true if the planet exists.
  */
-bool mostraPianeta(int pianeta)
-{    
-    bool esiste = true;
-    
-    switch( pianeta ) {
-        case POS_ERRORE:   
-            cout &lt;&lt; "Valore non valido"; 
+bool showPlanet(int planet)
+{
+    bool exists = true;
+
+    switch( planet ) {
+        case POS_ERROR:
+            cout &lt;&lt; "Invalid value";
             break;
-        case POS_MERCURIO: 
-            cout &lt;&lt; "Mercurio";          
+        case POS_MERCURY:
+            cout &lt;&lt; "Mercury";
             break;
-        case POS_VENERE:   
-            cout &lt;&lt; "Venere";            
+        case POS_VENUS:
+            cout &lt;&lt; "Venus";
             break;
-        case POS_TERRA:    
-            cout &lt;&lt; "Terra";             
+        case POS_EARTH:
+            cout &lt;&lt; "Earth";
             break;
-        case POS_MARTE:    
-            cout &lt;&lt; "Marte";             
+        case POS_MARS:
+            cout &lt;&lt; "Mars";
             break;
-        case POS_GIOVE:    
-            cout &lt;&lt; "Giove";             
+        case POS_JUPITER:
+            cout &lt;&lt; "Jupiter";
             break;
-        case POS_SATURNO:  
-            cout &lt;&lt; "Saturno";           
+        case POS_SATURN:
+            cout &lt;&lt; "Saturn";
             break;
-        case POS_URANO:    
-            cout &lt;&lt; "Urano";             
-            break;          
-        case POS_NETTUNO:  
-            cout &lt;&lt; "Nettuno";           
-            break;          
-        case POS_PLUTONE:  
-            cout &lt;&lt; "Plutone";           
+        case POS_URANUS:
+            cout &lt;&lt; "Uranus";
+            break;
+        case POS_NEPTUNE:
+            cout &lt;&lt; "Neptune";
+            break;
+        case POS_PLUTO:
+            cout &lt;&lt; "Pluto";
             break;
         default:
-            esiste = false;
-            cout &lt;&lt; "Inserire un valore da: " 
-                 &lt;&lt; POS_MERCURIO 
-                 &lt;&lt; " a " 
-                 &lt;&lt; POS_PLUTONE;                    
-    } 
-    
-    return esiste;
+            exists = false;
+            cout &lt;&lt; "Enter a value from: "
+                 &lt;&lt; POS_MERCURY
+                 &lt;&lt; " to "
+                 &lt;&lt; POS_PLUTO;
+    }
+
+    return exists;
 }
 
 </code></pre>
 
-<pre><code>/** 
- * @file pianeti-main.cpp
- * Funzione principale per il programma di gestione dei Pianeti.
+<pre><code>/**
+ * @file planets-main.cpp
+ * Main function for the Planet management program.
  */
- 
+
 #include &lt;iostream&gt;
-#include "pianeti.h"
+#include "planets.h"
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    int p = POS_MERCURIO;
+{
+    int p = POS_MERCURY;
 
-    /** Elenca tutti i Pianeti del Sistema Solare */
+    /** Lists all the Planets of the Solar System */
     for ( ; ; ) {
-        cout &lt;&lt; p &lt;&lt; ": "; 
-        /** Se incontra un errore, si ferma */
-        if(!mostraPianeta( ++p )) break; 
+        cout &lt;&lt; p &lt;&lt; ": ";
+        /** If it encounters an error, it stops */
+        if(!showPlanet( ++p )) break;
         cout &lt;&lt; endl;
     }
-        
+
     cout &lt;&lt; endl;
 
     return 0;
@@ -381,7 +381,7 @@ int main(int argc, char** argv)
 
 <p>The increment of the variable <code>p</code>, in this case, happens inside the instruction:</p>
 
-<pre><code>if(!mostraPianeta( p++ )) break;
+<pre><code>if(!showPlanet( p++ )) break;
 </code></pre>
 
 <p>The <code>break</code> keyword is one of the three <em>interruption instructions</em> C++ inherited from C; the other two are the <code>continue</code> instruction, which sends processing back to the start of the loop, and the <code>return</code> instruction, which ends the function, returning any return value to the calling function.
@@ -389,76 +389,76 @@ int main(int argc, char** argv)
 
 <p>To generate the program, this time, we’ll need to pass both <em>.cpp</em> files to the compiler:</p>
 
-<pre><code>% g++ src/cpp/pianeti-main.cpp \
-      src/cpp/pianeti.cpp \
-   -o src/out/esempio
-% src/out/esempio
-1: Mercurio
-2: Venere
-3: Terra
-4: Marte
-5: Giove
-6: Saturno
-7: Urano
-8: Nettuno
-9: Plutone
-10: Inserire un valore da: 1 a 9
+<pre><code>% g++ src/cpp/planets-main.cpp \
+      src/cpp/planets.cpp \
+   -o src/out/example
+% src/out/example
+1: Mercury
+2: Venus
+3: Earth
+4: Mars
+5: Jupiter
+6: Saturn
+7: Uranus
+8: Neptune
+9: Pluto
+10: Enter a value from: 1 to 9
 </code></pre>
 <p>If instead we had written:</p>
 
-<pre><code>if(!mostraPianeta( ++p )) break;
+<pre><code>if(!showPlanet( ++p )) break;
 </code></pre>
 
 <p>the value of <code>p</code> in every instruction would have been one higher than the correct value, and the program would have “skipped” Mercury, because the value of the variable <code>p</code> would have been incremented before being used by the function:</p>
 
-<pre><code>% src/out/esempio                                            
-1: Venere
-2: Terra
-3: Marte
-4: Giove
-5: Saturno
-6: Urano
-7: Nettuno
-8: Plutone
-9: Inserire un valore da: 1 a 9
+<pre><code>% src/out/example                                            
+1: Venus
+2: Earth
+3: Mars
+4: Jupiter
+5: Saturn
+6: Uranus
+7: Neptune
+8: Pluto
+9: Enter a value from: 1 to 9
 </code></pre>
 
 <p>You can use a <code>for</code> loop this way, but it doesn’t make much sense.
 Better, instead, to use the <code>while</code> flow instruction:</p>
 
-<pre><code>/** 
- * @file pianeti-while-bool.cpp
- * Gestione dei Pianeti con istruzione while.
+<pre><code>/**
+ * @file planets-while-bool.cpp
+ * Handling Planets with a while instruction.
  */
- 
+
 #include &lt;iostream&gt;
-#include "pianeti.h"
+#include "planets.h"
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    int  p  = POS_MERCURIO;
+{
+    int  p  = POS_MERCURY;
 
-    /** Assegna un valore alla variabile di controllo */
+    /** Assigns a value to the control variable */
     bool ok = true;
 
-    /** Ripete l'azione finché la variabile è uguale a true */
+    /** Repeats the action as long as the variable equals true */
     while (ok) {
 
-        /** Mostra il valore di p e lo incrementa */
-        cout &lt;&lt; p++ &lt;&lt; ": "; 
+        /** Shows the value of p and increments it */
+        cout &lt;&lt; p++ &lt;&lt; ": ";
 
-        /** 
-         * Mostra il nome sel pianeta e salva l'esito della 
-         * funzione nella variabile ok 
+        /**
+         * Shows the name of the planet and saves the outcome of the
+         * function in the ok variable
          */
-        ok = mostraPianeta(p);
+        ok = showPlanet(p);
 
-        /** Aggiunge il solito a capo */
+        /** Adds the usual line break */
         cout &lt;&lt; endl;
     }
-        
+
     return 0;
 }
 
@@ -466,19 +466,19 @@ int main(int argc, char** argv)
 
 <p>The output will be the same as that of the function that used the <code>for</code> loop:</p>
 
-<pre><code>% g++ src/cpp/pianeti-while-bool.cpp \
-      src/cpp/pianeti.cpp \
-   -o src/out/esempio
-% src/out/esempio                     
-1: Venere
-2: Terra
-3: Marte
-4: Giove
-5: Saturno
-6: Urano
-7: Nettuno
-8: Plutone
-9: Inserire un valore da: 1 a 9
+<pre><code>% g++ src/cpp/planets-while-bool.cpp \
+      src/cpp/planets.cpp \
+   -o src/out/example
+% src/out/example                     
+1: Venus
+2: Earth
+3: Mars
+4: Jupiter
+5: Saturn
+6: Uranus
+7: Neptune
+8: Pluto
+9: Enter a value from: 1 to 9
 </code></pre>
 
 <p>The <code>do-while</code> loop is the same as the <code>while</code> loop, with the only difference that the <code>while</code> condition is evaluated at the end of the iteration, so the loop body is run at least once.
@@ -486,91 +486,91 @@ The general form of the <code>do-while</code> loop is:</p>
 
 <pre><code>do
 {
-    &lt;istruzioni&gt;        // corpo del ciclo
-} while(espressione)    // espressione di controllo
+    &lt;instructions&gt;       // loop body
+} while(expression)      // control expression
 </code></pre>
 
 <hr id="isolamento-funzionale" />
 
 <p>I won’t insult your intelligence with an example; I’d rather point out something more serious: the code of these programs is clumsy.
-The problem is that the <code>mostraPianeta</code> function does too many things: it not only figures out the Planet’s name, it also prints it to the screen.
+The problem is that the <code>showPlanet</code> function does too many things: it not only figures out the Planet’s name, it also prints it to the screen.
 As a result, our output also includes that ugly error string about position number nine.
 In the first example where we used it, this wasn’t a problem, but now that our program is growing, we need to make each function more specialized, separating data processing (figuring out which planet it is) from the user interface (printing the name to the screen).
-To do this, we’ll use a new function, which we’ll add to the <code>pianeti.cpp</code> file:</p>
+To do this, we’ll use a new function, which we’ll add to the <code>planets.cpp</code> file:</p>
 
 <pre><code>/**
- *  nomePianeta
- *  Torna il nome di un pianeta, data la sua posizione.
- *  @param  int    posizione Posizione del pianeta.
- *  @return string nome      Nome del pianeta o null, se errore.
+ *  planetName
+ *  Returns the name of a planet, given its position.
+ *  @param  int    position Position of the planet.
+ *  @return string name     Name of the planet, or null on error.
  */
-string nomePianeta(int posizione)
+string planetName(int position)
 {    
-    string nome;
+    string name;
 
     /**
-     * Questa funzione gestisce solo i casi esistenti
-     * e lascia che sia la funzione chiamate a gestire
-     * eventuali errori.
+     * This function only handles the existing cases
+     * and lets the calling function handle any
+     * errors.
      */
-    switch( posizione ) {
-        case POS_MERCURIO:
-            nome = "Mercurio";          
+    switch( position ) {
+        case POS_MERCURY:
+            name = "Mercury";          
             break;
-        case POS_VENERE:   
-            nome = "Venere";            
+        case POS_VENUS:   
+            name = "Venus";            
             break;
-        case POS_TERRA:    
-            nome = "Terra";             
+        case POS_EARTH:    
+            name = "Earth";             
             break;
-        case POS_MARTE:    
-            nome = "Marte";             
+        case POS_MARS:    
+            name = "Mars";             
             break;
-        case POS_GIOVE:    
-            nome = "Giove";             
+        case POS_JUPITER:    
+            name = "Jupiter";             
             break;
-        case POS_SATURNO:  
-            nome = "Saturno";           
+        case POS_SATURN:  
+            name = "Saturn";           
             break;
-        case POS_URANO:    
-            nome = "Urano";             
+        case POS_URANUS:    
+            name = "Uranus";             
             break;          
-        case POS_NETTUNO:  
-            nome = "Nettuno";           
+        case POS_NEPTUNE:  
+            name = "Neptune";           
             break;          
-        case POS_PLUTONE:  
-            nome = "Plutone";           
+        case POS_PLUTO:  
+            name = "Pluto";           
             break;
     }
 
-    return nome;
+    return name;
 }
 </code></pre>
 <p>The new <code>main</code> function will be:</p>
 
-<pre><code>/** 
- * @file pianeti-while-string.cpp
- * Gestione dei Pianeti con valori stringa.
+<pre><code>/**
+ * @file planets-while-string.cpp
+ * Handling Planets with string values.
  */
- 
+
 #include &lt;iostream&gt;
-#include "pianeti.h"
+#include "planets.h"
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    int    p  = POS_MERCURIO;
-    string nome;
+{
+    int    p  = POS_MERCURY;
+    string name;
 
-    /** 
-     * Scinde l'elaborazione del dato dalla sua
-     * eventuale visualizzazione
+    /**
+     * Separates data processing from its
+     * possible display
      */
-    while (!(nome = nomePianeta(p)).empty()) {
-        cout &lt;&lt; p++ &lt;&lt; ": " &lt;&lt; nome &lt;&lt; endl;
+    while (!(name = planetName(p)).empty()) {
+        cout &lt;&lt; p++ &lt;&lt; ": " &lt;&lt; name &lt;&lt; endl;
     }
-        
+
     return 0;
 }
 
@@ -578,13 +578,13 @@ int main(int argc, char** argv)
 
 <p>The code is syntactically more complex, but once you understand that the instruction:</p>
 
-<pre><code>while(!(nome = nomePianeta(p)).empty())
+<pre><code>while(!(name = planetName(p)).empty())
 </code></pre>
 
 <p>means:</p>
 
 <blockquote>
-  <p>run the <code>nomePianeta</code> function, passing it the variable <code>p</code> as a parameter, until it returns an empty string to you</p>
+  <p>run the <code>planetName</code> function, passing it the variable <code>p</code> as a parameter, until it returns an empty string to you</p>
 </blockquote>
 
 <p>the flow of the program becomes clearer than it was in the previous cases.
@@ -615,27 +615,27 @@ Gregori, Claudio. Merckx, il Figlio del tuono (VITE INATTESE) (Italian Edition) 
 -->
 that there will come a moment when the expansion of the Universe will end, and everything that exists will come back together into the primordial One:</p>
 
-<pre><code>void eternita()
+<pre><code>void eternity()
 {
     /**
-     * La condizione è sempre vera, quindi il ciclo si ripete
-     * indefinitamente
+     * The condition is always true, so the loop repeats
+     * indefinitely
      */
     while(1) {
 
-        unoPrimigenio();
+        primordialOne();
 
         bigBang();
 
-        espansione();
+        expansion();
 
-        contrazione();
+        contraction();
 
         bigCrunch();
 
         /**
-         * Il fatto che questa istruzione sia a commento è
-         * una delle differenze fra C'hi++ e Buddismo.
+         * The fact that this instruction is commented out is
+         * one of the differences between C'hi++ and Buddhism.
          * if(satori()) break;     
          */  
     }
@@ -647,8 +647,8 @@ Life would turn out to be an epiphenomenon destined to be extinguished in the he
 Something similar to <em>Black Friday</em> at an American shopping mall, to give you an idea..<a class="nota" href="/en/notes#fn-blackfriday" id="blackfriday">2</a></p>
 
 <pre><code>typedef struct {
-    string evento;
-    bool   esito;
+    string event;
+    bool   outcome;
 } PostIt ;
 </code></pre>
 
@@ -668,36 +668,36 @@ He also hypothesized that dreams served the double purpose of preparing us for t
 All of this, however, could only be a projection of the <em>Cookies</em>, a copy in RAM memory of information preserved elsewhere, because, in order to be persistent, the <em>Cookies</em> must exist outside the <em>scope</em> of our existence, in the Universe’s ROM or <em>hard drive</em>:</p>
 
 <pre><code>
-/** Dichiarazione della struttura PostIt */
+/** Declaration of the PostIt structure */
 typedef struct {
-    string evento;
-    bool   esito;
+    string event;
+    bool   outcome;
 } PostIt ;
 
-void eternita()
+void eternity()
 {
-    /** Array di puntatori a PostIt */
+    /** Array of pointers to PostIt */
     PostIt** vasana;
 
     while(1) {
 
-        /** Inizio di un nuovo ciclo */
-        unoPrimigenio();        
+        /** Start of a new cycle */
+        primordialOne();        
         bigBang();
 
         /**
-         *  L'array di eventi viene passato alle fasi
-         *  espansione e di contrazione, che lo incrementano
-         *  in funzione delle esperienze fatte dagli
-         *  esseri senzienti
+         *  The array of events is passed to the expansion
+         *  and contraction phases, which increment it
+         *  according to the experiences had by
+         *  sentient beings
          */
-        espansione(vasana);        
-        contrazione(vasana);
+        expansion(vasana);        
+        contraction(vasana);
 
         /**
-         *  Qui gli esseri senzienti sono annichiliti,
-         *  ma l'informazione non si perde, perché è
-         *  salvata altrove
+         *  Here sentient beings are annihilated,
+         *  but the information isn't lost, because it's
+         *  saved elsewhere
          */
         bigCrunch();
     }
@@ -736,22 +736,6 @@ Not out of stubbornness, nor out of idealism, but because this <em>non-metaphysi
 Besides, it’s a story that hasn’t been written yet, and, at the same time, the story our species has always been writing.
 That seems reason enough to me.</p>
 </blockquote>
-
-<!--
-
-@todo:
-
-- introdurre l'idea delle "variazioni" della storia dell'Universo
-
-L'Esistenza potrebbe essere un sistema per smaltire l'energia dell'Universo (o di quello che ha intorno), così come le perturbazioni sono un sistema per smaltire l'energia dell'atmosfera?
-
-Eudosso scrive che gli Egiziani raccontano di Zeus questa storia. Il dio non poteva camminare, giacché le sue gambe erano sin dalla nascita saldate in un pezzo solo, e per la vergogna passava il suo tempo in solitudine. Fu Iside a tagliare e separare quella strana parte del suo corpo, mettendolo così in grado di camminare con le sue gambe. E il significato della storia è che la mente e la ragione del dio sono di per sé immobili nell’invisibile e nell’insensibile, e prendono la strada della creazione grazie a una spinta motrice.
-Plutarco, citato da Giorgio Santillana, Sirio, Adelphi.
-Confrontare con le divinità con una sola gamba, come Houragan
-
-In Borges, *Finzioni*: lo scrittore che vuole riscrivere Don Chisciotte dice che potrebbe farcela, se solo fosse immortale (v. *Breve storia dell'Infinito*). La stessa cosa vale per l'Universo: avendo a disposizione un tempo infinito, la ripetizione è inevitabile.
-
--->
 
             </section>
         
