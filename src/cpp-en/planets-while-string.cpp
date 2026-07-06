@@ -1,25 +1,25 @@
-/** 
- * @file pianeti-while-string.cpp
- * Gestione dei Pianeti con valori stringa.
+/**
+ * @file planets-while-string.cpp
+ * Handling Planets with string values.
  */
- 
+
 #include <iostream>
-#include "pianeti.h"
+#include "planets.h"
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    int    p  = POS_MERCURIO;
-    string nome;
+{
+    int    p  = POS_MERCURY;
+    string name;
 
-    /** 
-     * Scinde l'elaborazione del dato dalla sua
-     * eventuale visualizzazione
+    /**
+     * Separates data processing from its
+     * possible display
      */
-    while (!(nome = nomePianeta(p)).empty()) {
-        cout << p++ << ": " << nome << endl;
+    while (!(name = planetName(p)).empty()) {
+        cout << p++ << ": " << name << endl;
     }
-        
+
     return 0;
 }

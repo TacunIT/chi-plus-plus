@@ -1,25 +1,25 @@
-/** 
- * @file pianeti-main.cpp
- * Funzione principale per il programma di gestione dei Pianeti.
+/**
+ * @file planets-main.cpp
+ * Main function for the Planet management program.
  */
- 
+
 #include <iostream>
-#include "pianeti.h"
+#include "planets.h"
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    int p = POS_MERCURIO;
+{
+    int p = POS_MERCURY;
 
-    /** Elenca tutti i Pianeti del Sistema Solare */
+    /** Lists all the Planets of the Solar System */
     for ( ; ; ) {
-        cout << p << ": "; 
-        /** Se incontra un errore, si ferma */
-        if(!mostraPianeta( ++p )) break; 
+        cout << p << ": ";
+        /** If it encounters an error, it stops */
+        if(!showPlanet( ++p )) break;
         cout << endl;
     }
-        
+
     cout << endl;
 
     return 0;

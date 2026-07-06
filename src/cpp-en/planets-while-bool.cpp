@@ -1,35 +1,35 @@
-/** 
- * @file pianeti-while-bool.cpp
- * Gestione dei Pianeti con istruzione while.
+/**
+ * @file planets-while-bool.cpp
+ * Handling Planets with a while instruction.
  */
- 
+
 #include <iostream>
-#include "pianeti.h"
+#include "planets.h"
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    int  p  = POS_MERCURIO;
+{
+    int  p  = POS_MERCURY;
 
-    /** Assegna un valore alla variabile di controllo */
+    /** Assigns a value to the control variable */
     bool ok = true;
 
-    /** Ripete l'azione finché la variabile è uguale a true */
+    /** Repeats the action as long as the variable equals true */
     while (ok) {
 
-        /** Mostra il valore di p e lo incrementa */
-        cout << p++ << ": "; 
+        /** Shows the value of p and increments it */
+        cout << p++ << ": ";
 
-        /** 
-         * Mostra il nome sel pianeta e salva l'esito della 
-         * funzione nella variabile ok 
+        /**
+         * Shows the name of the planet and saves the outcome of the
+         * function in the ok variable
          */
-        ok = mostraPianeta(p);
+        ok = showPlanet(p);
 
-        /** Aggiunge il solito a capo */
+        /** Adds the usual line break */
         cout << endl;
     }
-        
+
     return 0;
 }
