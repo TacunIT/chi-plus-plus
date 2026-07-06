@@ -124,7 +124,7 @@ int main(int argc, char** argv)
 </code></pre>
 <p>If you compile and run this code, you’ll get:</p>
 
-<pre><code>&gt; g++ cplusplus-incremento.cpp -o ../out/esempio
+<pre><code>&gt; g++ cplusplus-increment.cpp -o ../out/esempio
 &gt; ../out/esempio
 C value = 12
 C value = 13
@@ -209,7 +209,7 @@ To be used, classes must be <em>instantiated</em> into objects:</p>
 The first two are instances of the <code>Horse</code> class, the third is an instance of the <code>Mating</code> class.
 If you add a bit of code to the classes we saw earlier and compile the program, you’ll get:</p>
 
-<pre><code>% g++ cplusplus-classe.cpp -o ../out/esempio
+<pre><code>% g++ cplusplus-class.cpp -o ../out/esempio
 % ../out/esempio                               
 DATE: Sun Apr  5 10:38:31 2020
 MALE: Species:horse, Sex:m, Breed:Lipizzaner
@@ -313,9 +313,9 @@ public:
 
 <p>We can create objects of class <code>Mating</code> with any derived class whatsoever:</p>
 
-<pre><code>/** 
- * @file src/cplusplus-polimorfismo.cpp
- * Esempio di polimorfismo delle classi.
+<pre><code>/**
+ * @file src/cplusplus-polymorphism.cpp
+ * Example of class polymorphism.
  */
 
 #include &lt;iostream&gt;
@@ -323,100 +323,100 @@ public:
 
 using namespace std;
 
-typedef time_t Data;
+typedef time_t Date;
 
-typedef enum _sesso {
-    maschio = 'm',
-    femmina = 'f'
-} Sesso;
+typedef enum _sex {
+    male = 'm',
+    female = 'f'
+} Sex;
 
-class Animale {
+class Animal {
 private:
-    string _razza;
-    Sesso  _sesso;
+    string _breed;
+    Sex    _sex;
 public:
-    virtual const char* getSpecie() const {
-        return ""; 
-    } 
-    const char getSesso() const {        
-        return (char)_sesso;
-    } 
-    const char* getRazza() const {
-        return _razza.c_str();
+    virtual const char* getSpecies() const {
+        return "";
     }
-    Animale() {}
-    Animale(const char* razza, const Sesso sesso ) {
-        _razza  = razza;
-        _sesso  = sesso;
+    const char getSex() const {
+        return (char)_sex;
+    }
+    const char* getBreed() const {
+        return _breed.c_str();
+    }
+    Animal() {}
+    Animal(const char* breed, const Sex sex ) {
+        _breed  = breed;
+        _sex  = sex;
     }
 };
 
-ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animale&amp; animale) {
-    os  &lt;&lt; "Specie:" &lt;&lt; animale.getSpecie() &lt;&lt; "\t"
-        &lt;&lt; "Razza:"  &lt;&lt; animale.getRazza()  &lt;&lt; "\t"
-        &lt;&lt; "Sesso:"  &lt;&lt; animale.getSesso()  &lt;&lt; endl;
-    return os;   
+ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animal&amp; animal) {
+    os  &lt;&lt; "Species:" &lt;&lt; animal.getSpecies() &lt;&lt; "\t"
+        &lt;&lt; "Breed:"  &lt;&lt; animal.getBreed()  &lt;&lt; "\t"
+        &lt;&lt; "Sex:"  &lt;&lt; animal.getSex()  &lt;&lt; endl;
+    return os;
 }
 
-class Cavallo : public Animale {
+class Horse : public Animal {
 public:
-    const char* getSpecie() const {
-        return "Cavallo"; 
-    }     
-    Cavallo() {}
-    Cavallo(const char* razza, const Sesso sesso )
-    : Animale(razza, sesso ) { 
+    const char* getSpecies() const {
+        return "Horse";
+    }
+    Horse() {}
+    Horse(const char* breed, const Sex sex )
+    : Animal(breed, sex ) {
     }
 };
 
-class Asino : public Animale {
+class Donkey : public Animal {
 public:
-    const char* getSpecie() const {
-        return "Asino"; 
-    }     
-    Asino() {}
-    Asino(const char* razza, const Sesso sesso )
-    : Animale(razza, sesso ) { 
+    const char* getSpecies() const {
+        return "Donkey";
+    }
+    Donkey() {}
+    Donkey(const char* breed, const Sex sex )
+    : Animal(breed, sex ) {
     }
 };
 
-class Monta {
+class Mating {
 private:
-    Animale* _maschio;
-    Animale* _femmina;
-    Data     _giorno;
+    Animal* _male;
+    Animal* _female;
+    Date    _day;
 public:
-    Monta(Animale* maschio, Animale* femmina) {
-        _maschio = maschio;
-        _femmina = femmina;
-        time(&amp;_giorno);
+    Mating(Animal* male, Animal* female) {
+        _male = male;
+        _female = female;
+        time(&amp;_day);
     }
-    friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula) {
-        os &lt;&lt; "DATA: "    &lt;&lt; asctime(localtime(&amp;copula._giorno)) 
-           &lt;&lt; "MASCHIO: " &lt;&lt; *copula._maschio 
-           &lt;&lt; "FEMMINA: " &lt;&lt; *copula._femmina;
-           return os;   
+    friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Mating&amp; mating) {
+        os &lt;&lt; "DATE: "    &lt;&lt; asctime(localtime(&amp;mating._day))
+           &lt;&lt; "MALE: " &lt;&lt; *mating._male
+           &lt;&lt; "FEMALE: " &lt;&lt; *mating._female;
+           return os;
      };
 };
 
 int main()
 {
-    Animale* cavallo  = new Cavallo("lipizzano", maschio);    
-    Animale* giumenta = new Cavallo("maremmano", femmina);    
-    Animale* asino    = new Asino("amiatino", maschio);
-    Animale* asina    = new Asino("sardo", femmina);
+    Animal* horse  = new Horse("Lipizzaner", male);
+    Animal* mare   = new Horse("Maremmano", female);
+    Animal* donkey = new Donkey("Amiata", male);
+    Animal* jenny  = new Donkey("Sardinian", female);
 
-    Monta puledro(cavallo, giumenta);
-    Monta ciuco(asino, asina);
-    Monta mulo(asino, giumenta);
-    Monta bardotto(asina, cavallo);
+    Mating foal(horse, mare);
+    Mating jack(donkey, jenny);
+    Mating mule(donkey, mare);
+    Mating hinny(jenny, horse);
 
-    cout &lt;&lt; "PULEDRO\n"  &lt;&lt; puledro  &lt;&lt; endl;
-    cout &lt;&lt; "CIUCO\n"    &lt;&lt; ciuco    &lt;&lt; endl;
-    cout &lt;&lt; "MULO\n"     &lt;&lt; mulo     &lt;&lt; endl;
-    cout &lt;&lt; "BARDOTTO\n" &lt;&lt; bardotto &lt;&lt; endl;
+    cout &lt;&lt; "FOAL\n"  &lt;&lt; foal  &lt;&lt; endl;
+    cout &lt;&lt; "JACK\n"    &lt;&lt; jack    &lt;&lt; endl;
+    cout &lt;&lt; "MULE\n"     &lt;&lt; mule     &lt;&lt; endl;
+    cout &lt;&lt; "HINNY\n" &lt;&lt; hinny &lt;&lt; endl;
 
-    return 0;               
+    return 0;
 }
 
 </code></pre>
