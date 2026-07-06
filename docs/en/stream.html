@@ -333,27 +333,27 @@ We’ve already seen several examples of stream output:</p>
 
 <p>We haven’t yet talked about stream input, though it works in a fairly similar way:</p>
 
-<pre><code>/** 
- * @file src/stream-input.cpp
- * Programma di esempio per la gestione dell'input da stream.
+<pre><code>/**
+ * @file src/stream-input-1.cpp
+ * Example program for handling stream input.
  */
- 
+
 #include &lt;iostream&gt;
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    string stringa;
-    
-    /** Scrive un messaggio sullo schermo */
-    cout &lt;&lt; "Inserire una stringa: ";
-    
-    /** Legge una stringa da tastiera */
-    cin &gt;&gt; stringa;
+{
+    string str;
 
-    /** La scrive sullo schermo */
-    cout &lt;&lt; stringa &lt;&lt; endl;
+    /** Writes a message to the screen */
+    cout &lt;&lt; "Enter a string: ";
+
+    /** Reads a string from the keyboard */
+    cin &gt;&gt; str;
+
+    /** Writes it to the screen */
+    cout &lt;&lt; str &lt;&lt; endl;
 
     return 0;
 }
@@ -370,36 +370,36 @@ Penso,
 
 <p>As you can see, read operations with the <code>&gt;&gt;</code> operator stop at the first whitespace character; so, if we want to read the whole string, we need to change the code:</p>
 
-<pre><code>/** 
+<pre><code>/**
  * @file src/stream-input-2.cpp
- * Programma di esempio per la gestione dell'input da stream.
+ * Example program for handling stream input.
  */
- 
+
 #include &lt;iostream&gt;
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
+{
     char   buffer[256];
-    string stringa;
-    
-    /** 
-    *   Legge una stringa da tastiera tramite
-    *   la funzione membro della classe istream.
+    string str;
+
+    /**
+    *   Reads a string from the keyboard using
+    *   the istream class's member function.
     */
-    cout &lt;&lt; "Inserire una stringa: ";
+    cout &lt;&lt; "Enter a string: ";
     cin.getline(buffer, 256);
     cout &lt;&lt; buffer &lt;&lt; endl;
 
 
-    /** 
-    *   Legge una stringa da tastiera tramite
-    *   la funzione globale getline.
+    /**
+    *   Reads a string from the keyboard using
+    *   the global getline function.
     */
-    cout &lt;&lt; "Inserire una stringa: ";
-    getline(cin, stringa);
-    cout &lt;&lt; stringa &lt;&lt; endl;
+    cout &lt;&lt; "Enter a string: ";
+    getline(cin, str);
+    cout &lt;&lt; str &lt;&lt; endl;
 
     return 0;
 }
@@ -448,44 +448,43 @@ In some earlier examples we saw that it’s possible to change a stream’s defa
 
 <p>The same result can be achieved by means of dedicated functions of the <code>ios_base</code> and <code>basic_ios</code> classes, which let you change the fill character, the precision of decimal digits, and the field width:</p>
 
-<pre><code>/** 
+<pre><code>/**
  * @file src/stream-format.cpp
- * Formattazione dell'I/O con gli stream.
+ * Formatting I/O with streams.
  */
- 
+
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt;
 
 using namespace std;
 
 
 int main(int argc, char** argv)
-{    
+{
     double d = 123.456789 ;
 
-    /** Mostra i valori di default */
+    /** Shows the default values */
     cout &lt;&lt; endl;
-    cout &lt;&lt; "Valori di default" &lt;&lt; endl;
+    cout &lt;&lt; "Default values" &lt;&lt; endl;
     cout &lt;&lt; "  width:     "  &lt;&lt; cout.width()        &lt;&lt; endl;
-    cout &lt;&lt; "  precision: "  &lt;&lt; cout.precision()    &lt;&lt; endl; 	
-    cout &lt;&lt; "  fill:      '" &lt;&lt; cout.fill()  &lt;&lt; "'" &lt;&lt; endl;	
+    cout &lt;&lt; "  precision: "  &lt;&lt; cout.precision()    &lt;&lt; endl;
+    cout &lt;&lt; "  fill:      '" &lt;&lt; cout.fill()  &lt;&lt; "'" &lt;&lt; endl;
     cout &lt;&lt; "  output:    "  &lt;&lt; d                   &lt;&lt; endl;
 
-    /** Modifica il formato e mostra il nuovo output */
+    /** Changes the format and shows the new output */
     cout &lt;&lt; endl;
-    cout &lt;&lt; "Modifica formato" &lt;&lt; endl;
+    cout &lt;&lt; "Changed format" &lt;&lt; endl;
     cout &lt;&lt; "  output:    "  ;
     cout.precision(4) ;
     cout.fill('#') ;
     cout.width(10) ;
     cout &lt;&lt; d &lt;&lt; endl;
-    
-    /** Mostra la persistenza dei valori */
+
+    /** Shows the persistence of the values */
     cout &lt;&lt; endl;
-    cout &lt;&lt; "Valori correnti" &lt;&lt; endl;
+    cout &lt;&lt; "Current values" &lt;&lt; endl;
     cout &lt;&lt; "  width:     "  &lt;&lt; cout.width()        &lt;&lt; endl;
-    cout &lt;&lt; "  precision: "  &lt;&lt; cout.precision()    &lt;&lt; endl; 	
-    cout &lt;&lt; "  fill:      '" &lt;&lt; cout.fill()  &lt;&lt; "'" &lt;&lt; endl;	
+    cout &lt;&lt; "  precision: "  &lt;&lt; cout.precision()    &lt;&lt; endl;
+    cout &lt;&lt; "  fill:      '" &lt;&lt; cout.fill()  &lt;&lt; "'" &lt;&lt; endl;
     cout &lt;&lt; "  output:    "  &lt;&lt; d                   &lt;&lt; endl;
 
     return 0;
@@ -546,11 +545,11 @@ The <code>basic_ios</code> class has boolean member functions that return <code>
 <p>These functions let you stop reading or writing a stream when an error occurs, or when the end of the file has been reached.
 One thing you should never do, though, is use the <code>eof</code> function inside a <code>while</code> loop to read a file:</p>
 
-<pre><code>/** 
+<pre><code>/**
  * @file src/stream-eof.cpp
- * Gestione dell'I/O su file con gli stream.
+ * Handling file I/O with streams.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 
@@ -558,31 +557,31 @@ using namespace std;
 
 
 int main(int argc, char** argv)
-{    
-    ifstream testo;
+{
+    ifstream text;
     int      n;
-    
-    /** apre il file in lettura */
-    testo.open(argv[1]);
-    
-    /** Verifica che il file sia aperto */
-    if(testo.is_open()) {
-        
-        /** Utilizza eof per gestire il ciclo */
-        while(!testo.eof()) {
 
-            /** Legge un numero dal file */
-            testo &gt;&gt; n;
+    /** opens the file for reading */
+    text.open(argv[1]);
 
-            /** Lo scrive a video */
+    /** Checks that the file is open */
+    if(text.is_open()) {
+
+        /** Uses eof to control the loop */
+        while(!text.eof()) {
+
+            /** Reads a number from the file */
+            text &gt;&gt; n;
+
+            /** Writes it to the screen */
             cout &lt;&lt; n &lt;&lt; endl;
         }
-        
+
     }
-        
-    /** Chiude il file di input */
-    testo.close();
-    
+
+    /** Closes the input file */
+    text.close();
+
     return 0;
 }
 
@@ -601,11 +600,11 @@ int main(int argc, char** argv)
 <p>The bug happens because the <code>eof</code> check runs before the fourth read operation, when the stream is still in the <code>good</code> state.
 A better way to handle these cases is to use the <code>good</code> function, which also lets you check that the file was opened correctly:</p>
 
-<pre><code>/** 
+<pre><code>/**
  * @file src/stream-good.cpp
- * Gestione dell'I/O su file con gli stream.
+ * Handling file I/O with streams.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 
@@ -613,32 +612,32 @@ using namespace std;
 
 
 int main(int argc, char** argv)
-{    
-    ifstream testo;
+{
+    ifstream text;
     int      n;
-    
-    /** apre il file in lettura */
-    testo.open(argv[1]);
-    
-    /** 
-    *   Il ciclo si ripete fino a che non 
-    *   si verifica un errore
+
+    /** opens the file for reading */
+    text.open(argv[1]);
+
+    /**
+    *   The loop repeats until
+    *   an error occurs
     */
-    while(testo.good()) {
+    while(text.good()) {
 
-        /** Legge un numero dal file */
-        testo &gt;&gt; n;
+        /** Reads a number from the file */
+        text &gt;&gt; n;
 
-        /** Si interrompe se il file è finito */
-        if(testo.eof()) break;
-        
-        /** Altrimenti, scrive il numero */
+        /** Stops if the file has ended */
+        if(text.eof()) break;
+
+        /** Otherwise, writes the number */
         cout &lt;&lt; n &lt;&lt; endl;
     }
-                
-    /** Chiude il file di input */
-    testo.close();
-    
+
+    /** Closes the input file */
+    text.close();
+
     return 0;
 }
 

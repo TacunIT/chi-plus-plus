@@ -1,33 +1,33 @@
-/** 
+/**
  * @file src/stream-input-2.cpp
- * Programma di esempio per la gestione dell'input da stream.
+ * Example program for handling stream input.
  */
- 
+
 #include <iostream>
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
+{
     char   buffer[256];
-    string stringa;
-    
-    /** 
-    *   Legge una stringa da tastiera tramite
-    *   la funzione membro della classe istream.
+    string str;
+
+    /**
+    *   Reads a string from the keyboard using
+    *   the istream class's member function.
     */
-    cout << "Inserire una stringa: ";
+    cout << "Enter a string: ";
     cin.getline(buffer, 256);
     cout << buffer << endl;
 
 
-    /** 
-    *   Legge una stringa da tastiera tramite
-    *   la funzione globale getline.
+    /**
+    *   Reads a string from the keyboard using
+    *   the global getline function.
     */
-    cout << "Inserire una stringa: ";
-    getline(cin, stringa);
-    cout << stringa << endl;
+    cout << "Enter a string: ";
+    getline(cin, str);
+    cout << str << endl;
 
     return 0;
 }

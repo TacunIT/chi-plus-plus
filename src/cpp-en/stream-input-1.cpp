@@ -1,24 +1,24 @@
-/** 
- * @file src/stream-input.cpp
- * Programma di esempio per la gestione dell'input da stream.
+/**
+ * @file src/stream-input-1.cpp
+ * Example program for handling stream input.
  */
- 
+
 #include <iostream>
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    string stringa;
-    
-    /** Scrive un messaggio sullo schermo */
-    cout << "Inserire una stringa: ";
-    
-    /** Legge una stringa da tastiera */
-    cin >> stringa;
+{
+    string str;
 
-    /** La scrive sullo schermo */
-    cout << stringa << endl;
+    /** Writes a message to the screen */
+    cout << "Enter a string: ";
+
+    /** Reads a string from the keyboard */
+    cin >> str;
+
+    /** Writes it to the screen */
+    cout << str << endl;
 
     return 0;
 }

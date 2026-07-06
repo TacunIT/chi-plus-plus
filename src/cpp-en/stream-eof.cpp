@@ -1,8 +1,8 @@
-/** 
+/**
  * @file src/stream-eof.cpp
- * Gestione dell'I/O su file con gli stream.
+ * Handling file I/O with streams.
  */
- 
+
 #include <iostream>
 #include <fstream>
 
@@ -10,30 +10,30 @@ using namespace std;
 
 
 int main(int argc, char** argv)
-{    
-    ifstream testo;
+{
+    ifstream text;
     int      n;
-    
-    /** apre il file in lettura */
-    testo.open(argv[1]);
-    
-    /** Verifica che il file sia aperto */
-    if(testo.is_open()) {
-        
-        /** Utilizza eof per gestire il ciclo */
-        while(!testo.eof()) {
 
-            /** Legge un numero dal file */
-            testo >> n;
+    /** opens the file for reading */
+    text.open(argv[1]);
 
-            /** Lo scrive a video */
+    /** Checks that the file is open */
+    if(text.is_open()) {
+
+        /** Uses eof to control the loop */
+        while(!text.eof()) {
+
+            /** Reads a number from the file */
+            text >> n;
+
+            /** Writes it to the screen */
             cout << n << endl;
         }
-        
+
     }
-        
-    /** Chiude il file di input */
-    testo.close();
-    
+
+    /** Closes the input file */
+    text.close();
+
     return 0;
 }
