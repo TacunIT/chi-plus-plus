@@ -1,130 +1,130 @@
-/** 
- * @file src/stream-eccezioni-4.cpp
- * Programma di esempio per la gestione delle eccezioni.
- * Richiede, in input, il numero di caratteri da leggere 
- * e il path del file di input:
+/**
+ * @file src/stream-exceptions-4.cpp
+ * Example program for handling exceptions.
+ * Requires, as input, the number of characters to read
+ * and the path of the input file:
  *
- *    src/out/esempio <n caratteri da leggere> <file di input>
+ *    src/out/example <n characters to read> <input file>
  */
- 
+
 #include <iostream>
 #include <fstream>
 #include <exception>
 
 using namespace std;
 
-/** Codici e stringhe di errore */
+/** Error codes and strings */
 #define ERR_NONE          0
-#define ERR_PARAMETRI   -10
+#define ERR_PARAMETERS  -10
 #define ERR_FILE_OPEN   -20
-#define S_SINTASSI      "USO: esempio <n caratteri> <path file>"
-#define S_ERR_PARAMETRI "Errore nei parametri di input."
-#define S_ERR_FILE_OPEN "Impossibile aprire il file di input"
+#define S_SYNTAX        "USAGE: example <n characters> <file path>"
+#define S_ERR_PARAMETERS "Error in the input parameters."
+#define S_ERR_FILE_OPEN "Unable to open the input file"
 
 /**
-*   Definisce una classe derivata da exception
-*   per la gestione degli errori.
+*   Defines a class derived from exception
+*   for error handling.
 */
-class Eccezione: public exception
+class Exception: public exception
 {
 private:
-    int         _codice;
-    const char* _errore;
+    int         _code;
+    const char* _error;
 public:
 
-    /** Costruttore */
-    Eccezione(int codice, const char* errore) 
-    : _codice(codice), _errore(errore) {        
+    /** Constructor */
+    Exception(int code, const char* error)
+    : _code(code), _error(error) {
     }
-    
-    /** Funzione virtuale pura: va ridefinita */
+
+    /** Pure virtual function: must be redefined */
     virtual const char* what() const throw() {
-        return _errore;
+        return _error;
     }
 
-    /** Funzioni di interfaccia */
-    int getCodice() { return _codice; }
-    const char* getErrore() { return _errore; }
+    /** Interface functions */
+    int getCode() { return _code; }
+    const char* getError() { return _error; }
 
-    /** Ridefinizione dell'operatore di output */
-    friend ostream& operator<< (ostream& os, Eccezione e){
-        os << e._codice << ": " << e._errore << endl;
+    /** Redefinition of the output operator */
+    friend ostream& operator<< (ostream& os, Exception e){
+        os << e._code << ": " << e._error << endl;
         return os;
     }
 };
 
 int main(int argc, char** argv)
-{    
-    ifstream testo;
-    testo.exceptions ( ios_base::badbit );
+{
+    ifstream text;
+    text.exceptions ( ios_base::badbit );
 
     try {
 
         char c     = 0;
-        int  letti = 0;
-                    
-        /** 
-        *   Verifica che ci siano sia il nome del file di input 
-        *   che il numero di caratteri da leggere.
+        int  read  = 0;
+
+        /**
+        *   Checks that both the input file name
+        *   and the number of characters to read are present.
         */
-        if (argc < 3) 
-            throw Eccezione(ERR_PARAMETRI, S_ERR_PARAMETRI);
-            
-        /** Definisce il numero di caratteri da leggere */
-        int da_leggere = atoi(argv[1]);
-        
-        /** 
-        *   Imposta la exception mask dello stream per fare
-        *   sì che un errore di I/O generi un'eccezione,
-        *   poi apre il file in lettura.
-        *   Usa un blocco try/catch per intercettare una
-        *   eventuale eccezione e gestirla in maniera
-        *   omogenea al resto del codice.
+        if (argc < 3)
+            throw Exception(ERR_PARAMETERS, S_ERR_PARAMETERS);
+
+        /** Defines the number of characters to read */
+        int to_read = atoi(argv[1]);
+
+        /**
+        *   Sets the stream's exception mask so that
+        *   an I/O error throws an exception,
+        *   then opens the file for reading.
+        *   Uses a try/catch block to intercept any
+        *   exception and handle it in a way
+        *   consistent with the rest of the code.
         */
         try {
-            testo.exceptions ( ios_base::badbit 
+            text.exceptions ( ios_base::badbit
                              | ios_base::failbit );
-            testo.open(argv[2]);            
+            text.open(argv[2]);
         } catch(ifstream::failure e) {
-            throw Eccezione(ERR_FILE_OPEN, S_ERR_FILE_OPEN);      
+            throw Exception(ERR_FILE_OPEN, S_ERR_FILE_OPEN);
         }
 
         /**
-        *   Re-imposta la exception mask per evitare
-        *   eccezioni a fine file.
+        *   Resets the exception mask to avoid
+        *   exceptions at end of file.
         */
-        testo.exceptions ( ios_base::goodbit);
+        text.exceptions ( ios_base::goodbit);
 
-        /** 
-        *   Legge il testo e lo stampa a video 
-        *   Se è stato definito un numero massimo di 
-        *   caratteri, si ferma lì.
+        /**
+        *   Reads the text and prints it to the screen.
+        *   If a maximum number of characters was defined,
+        *   it stops there.
         */
-        while(testo.good()) {
-            if((c = testo.get()) != EOF) {     
-                letti++;
+        while(text.good()) {
+            if((c = text.get()) != EOF) {
+                read++;
                 cout << c;
-            } 
-            if((da_leggere != 0) && (letti >= da_leggere)) {
+            }
+            if((to_read != 0) && (read >= to_read)) {
                 cout << endl;
                 break;
             }
-        } 
-                
-        /** Chiude il file di input */
-        testo.close();
-            
-    } catch (Eccezione e) {
+        }
 
-        /** Stampa a video l'eccezione */
+        /** Closes the input file */
+        text.close();
+
+    } catch (Exception e) {
+
+        /** Prints the exception to the screen */
         cerr << e << endl;
 
-        /** Mostra la sintassi di chiamata **/
-        cerr << S_SINTASSI << endl;
-        
-        /** Esce con un codice di errore */
-        exit(e.getCodice());
+        /** Shows the calling syntax **/
+        cerr << S_SYNTAX << endl;
+
+        /** Exits with an error code */
+        exit(e.getCode());
     }
-    
+
     return 0;
 }

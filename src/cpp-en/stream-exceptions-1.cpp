@@ -1,27 +1,27 @@
-/** 
- * @file src/stream-eccezioni-1.cpp
- * Programma di esempio per la gestione delle eccezioni.
+/**
+ * @file src/stream-exceptions-1.cpp
+ * Example program for handling exceptions.
  */
- 
+
 #include <iostream>
 #include <fstream>
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    ifstream testo;
+{
+    ifstream text;
 
-    /** 
-    *   Fa sì che, se sia generata un'eccezione 
-    *   in caso di errore nella gestione del file.
+    /**
+    *   Makes it so an exception is thrown
+    *   if there's an error handling the file.
     */
-    testo.exceptions ( ios_base::failbit );
+    text.exceptions ( ios_base::failbit );
 
-    /** Questa istruzione genererà un'eccezione */
-    testo.open("fileinesistente.txt");
-    
-    testo.close();
-    
+    /** This instruction will throw an exception */
+    text.open("nonexistentfile.txt");
+
+    text.close();
+
     return 0;
 }

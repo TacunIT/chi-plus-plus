@@ -1,8 +1,8 @@
-/** 
- * @file src/stream-eccezioni-3.cpp
- * Programma di esempio per la gestione delle eccezioni.
+/**
+ * @file src/stream-exceptions-3.cpp
+ * Example program for handling exceptions.
  */
- 
+
 #include <iostream>
 #include <fstream>
 
@@ -10,27 +10,27 @@ using namespace std;
 
 
 int main(int argc, char** argv)
-{    
-    ifstream testo;
+{
+    ifstream text;
 
     try {
-        
-        /** Verifica che esista il nome del file da aprire */
+
+        /** Checks that the name of the file to open exists */
         if(argc < 2)
-            throw "Nome file mancante";
-            
-        testo.exceptions ( ios_base::failbit );
-        testo.open(argv[1]);        
-        testo.close();
-        
+            throw "Missing file name";
+
+        text.exceptions ( ios_base::failbit );
+        text.open(argv[1]);
+        text.close();
+
     } catch(ios_base::failure e) {
-     
-        cerr << "Errore in esecuzione" << endl;      
-   
+
+        cerr << "Runtime error" << endl;
+
     } catch(char const* msg) {
-        
+
         cerr << msg << endl;
     }
-   
+
     return 0;
 }
