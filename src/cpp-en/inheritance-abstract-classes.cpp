@@ -1,77 +1,77 @@
-/** 
- * @file ereditarieta-classi-astratte.cpp
- * Gestione delle classi astratte.
+/**
+ * @file inheritance-abstract-classes.cpp
+ * Handling abstract classes.
  */
- 
+
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-enum Sesso { maschio, femmina, boh};
-const char* Sessi[] = {"maschio", "femmina", "boh" };
+enum Sex { male, female, unknown};
+const char* Sexes[] = {"male", "female", "unknown" };
 
-class Mammifero
+class Mammal
 {
 private:
 
-    Sesso _sesso;
+    Sex _sex;
 
 public:
 
-    Mammifero(Sesso sesso = boh) 
-    : _sesso(sesso) {
+    Mammal(Sex sex = unknown)
+    : _sex(sex) {
     }
 
-    virtual void getSesso() {
-        cout << Sessi[_sesso] << endl ;
-    }    
+    virtual void getSex() {
+        cout << Sexes[_sex] << endl ;
+    }
 
-    /** Funzione virtuale pura */
-    virtual void getSpecie() = 0;
+    /** Pure virtual function */
+    virtual void getSpecies() = 0;
 } ;
 
-class Cane : public Mammifero
-{ 
+class Dog : public Mammal
+{
 private:
 
-    string _nome;
+    string _name;
 
 public:
 
-    Cane(const char * nome, Sesso sesso) 
-    : Mammifero(sesso), _nome(nome){
+    Dog(const char * name, Sex sex)
+    : Mammal(sex), _name(name){
     }
 
-    void getNome() {
-        cout << _nome << endl ;
+    void getName() {
+        cout << _name << endl ;
     }
 
-    /** Definizione della funzione virtuale */
-    virtual void getSpecie() {
-        cout << "cane" << endl ;
-    }    
+    /** Definition of the virtual function */
+    virtual void getSpecies() {
+        cout << "dog" << endl ;
+    }
 };
 
 int main()
 {
-    Cane mioCane("Scylla", femmina) ;
-    Mammifero& cane = mioCane; 
+    Dog myDog("Scylla", female) ;
+    Mammal& dog = myDog;
 
-    /** 
-     * Accede alle funzioni della classe Cane
-     * dall'istanza della classe.
+    /**
+     * Accesses the Dog class's functions
+     * from the class instance.
      */
-    mioCane.getSpecie();
-    mioCane.getSesso();
-    mioCane.getNome();
-    
-    /** 
-     * Accede alle funzioni della classe Cane
-     * dal puntatore alla classe Mammifero.
+    myDog.getSpecies();
+    myDog.getSex();
+    myDog.getName();
+
+    /**
+     * Accesses the Dog class's functions
+     * from the pointer to the Mammal class.
      */
-    cane.getSpecie();
-    cane.getSesso();
-    
+    dog.getSpecies();
+    dog.getSex();
+
     return 0;
 }

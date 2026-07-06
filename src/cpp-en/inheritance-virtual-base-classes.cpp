@@ -1,32 +1,32 @@
-/** 
- * @file ereditarieta-classi-base-virtuali.cpp
- * Gestione delle classi base virtuali.
+/**
+ * @file inheritance-virtual-base-classes.cpp
+ * Handling virtual base classes.
  */
- 
+
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-class Persona {
+class Person {
 public:
     void getClass(){
-        cout << "Persona" << endl;
+        cout << "Person" << endl;
     }
 };
 
-class Padre : public virtual Persona {
+class Dad : public virtual Person {
 };
 
-class Madre : virtual public Persona {
+class Mom : virtual public Person {
 };
- 
-class Figlio : public Padre, public Madre {
+
+class Son : public Dad, public Mom {
 };
- 
-int main(int argc, char** argv) 
+
+int main(int argc, char** argv)
 {
-    Figlio caino;
-    caino.getClass();
+    Son cain;
+    cain.getClass();
     return 0;
 }

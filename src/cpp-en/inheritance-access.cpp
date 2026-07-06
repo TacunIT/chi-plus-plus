@@ -1,26 +1,26 @@
-/** 
- * @file ereditarieta-accesso.cpp
- * Accesso ai membri della classe base dalle classi derivate.
+/**
+ * @file inheritance-access.cpp
+ * Access to base class members from derived classes.
  */
- 
-/** Classe base, dati membro pubblici */ 
-struct Mamma { 
+
+/** Base class, public member data */
+struct Mom {
     int a;
 };
 
-/** Classe derivata come struct: dati per default pubblici */
-struct Figlia : Mamma {
+/** Derived class as struct: data public by default */
+struct Daughter : Mom {
     int b;
 };
 
-/** Classe derivata come class: dati per default privati */
-class Figlio : Mamma {
+/** Derived class as class: data private by default */
+class Son : Mom {
     int c;
 };
 
-/** Funzione generica, non friend delle classi */
-void funz(Figlia& figlia, Figlio& figlio)
+/** Generic function, not a friend of the classes */
+void func(Daughter& daughter, Son& son)
 {
-    figlia.a++;
-    figlio.a++;    
+    daughter.a++;
+    son.a++;
 }

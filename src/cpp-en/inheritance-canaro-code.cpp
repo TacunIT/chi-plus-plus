@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////
 //
-//   CHISONOV.CPP - Utilizzo delle funzioni virtuali
+//   WHOAMI.CPP - Use of virtual functions
 //
 /////////////////////////////////////////////////////////////
 #include <iostream.h>
@@ -9,24 +9,24 @@ class A
 {
  public:
     A() {} ;
-    virtual void ChiSono()        	
-    	{ cout << "Sono un oggetto di classe A \n" ; } 
+    virtual void WhoAmI()
+    	{ cout << "I am an object of class A \n" ; }
 } ;
 /////////////////////////////////////////////////////////////
 class B :public A
 {
  public:
     B() : A() {} ;
-    void ChiSono() 
-    	{ cout << "Sono un oggetto di classe B \n" ; } 
+    void WhoAmI()
+    	{ cout << "I am an object of class B \n" ; }
 } ;
 /////////////////////////////////////////////////////////////
 void main()
 {
- B * ptrB = new B ;            	
- A * ptrA = ptrB ;            	
-        	
-	ptrB->ChiSono() ;            	
-	ptrA->ChiSono() ;            	
+ B * ptrB = new B ;
+ A * ptrA = ptrB ;
+
+	ptrB->WhoAmI() ;
+	ptrA->WhoAmI() ;
 } ;
 /////////////////////////////////////////////////////////////

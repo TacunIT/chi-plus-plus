@@ -1,44 +1,44 @@
-/** 
- * @file ereditarieta-distruttori.cpp
- * Gestione dei distruttori nelle classi derivate.
+/**
+ * @file inheritance-destructors.cpp
+ * Handling destructors in derived classes.
  */
- 
+
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-/** Definiamo una classe base */
-class Padre {
+/** Let's define a base class */
+class Dad {
 public:
-    ~Padre() ;
+    ~Dad() ;
 } ;
 
-/** Definiamo delle classi derivate. */
-class Figlio : public Padre {
+/** Let's define some derived classes. */
+class Son : public Dad {
 public:
-    ~Figlio() ;
+    ~Son() ;
 };
 
-class Nipote : public Figlio {
+class Grandson : public Son {
 public:
-    ~Nipote() ;
+    ~Grandson() ;
 };
 
-int main(int argc, char** argv) 
+int main(int argc, char** argv)
 {
-    /** Creiamo un array di puntatori di classe base. */
-    Padre * dinastia[3] ;     
+    /** Let's create an array of base class pointers. */
+    Dad * dynasty[3] ;
 
-    /** Assegnamo delle istanze delle tre classi ai puntatori */
-    dinastia[0]= new Padre  ; 
-    dinastia[1]= new Figlio ;
-    dinastia[2]= new Nipote ;
+    /** Let's assign instances of the three classes to the pointers */
+    dynasty[0]= new Dad  ;
+    dynasty[1]= new Son ;
+    dynasty[2]= new Grandson ;
 
-    /** Facciamo qualcosa con i nostri oggetti.. */
+    /** Let's do something with our objects.. */
 
-    /** ..e poi li eliminiamo */
-    delete dinastia[0] ; 
-    delete dinastia[1] ;  
-    delete dinastia[2] ;  
+    /** ..and then delete them */
+    delete dynasty[0] ;
+    delete dynasty[1] ;
+    delete dynasty[2] ;
 }

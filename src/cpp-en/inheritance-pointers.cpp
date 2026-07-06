@@ -1,31 +1,31 @@
-/** 
- * @file ereditarieta-puntatori.cpp
- * Gestione dei puntatori a classi derivate.
+/**
+ * @file inheritance-pointers.cpp
+ * Handling pointers to derived classes.
  */
- 
+
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-class Persona {
+class Person {
 public:
     void getClass(){
-        cout << "Persona" << endl;
+        cout << "Person" << endl;
     }
 };
 
-class Madre : virtual public Persona {
+class Mom : virtual public Person {
 public:
     void getClass(){
-        cout << "Madre" << endl;
+        cout << "Mom" << endl;
     }
 };
- 
-int main(int argc, char** argv) 
+
+int main(int argc, char** argv)
 {
-    Madre   * ptrM = new Madre;
-    Persona * ptrP = ptrM ;
+    Mom    * ptrM = new Mom;
+    Person * ptrP = ptrM ;
     ptrM->getClass() ;
     ptrP->getClass() ;
     return 0;

@@ -1,195 +1,195 @@
-/** 
- * @file ereditarieta-multipla.cpp
- * Esempio di ereditarierà multipla.
+/**
+ * @file inheritance-multiple.cpp
+ * Example of multiple inheritance.
  */
- 
+
 #include <iostream>
 #include <string>
-#include <ctime> 
+#include <ctime>
 
 using namespace std;
 
-enum Acqua  { dolce, salata };
-enum Sesso  { maschio, femmina, boh};
-enum Colore { rosso, blu, verde, argento };
+enum Water  { freshwater, saltwater };
+enum Sex    { male, female, unknown};
+enum Color  { red, blue, green, silver };
 
-/** 
- * Dichiarazione della classe Articolo 
+/**
+ * Declaration of the Item class
  */
-class Articolo {
+class Item {
 private:
 
-    static int _n_articoli;
-                        
+    static int _n_items;
+
 protected:
-    
-    /** Dati membro privati */
-    float  _prezzo;
+
+    /** Private member data */
+    float  _price;
 
 public:
 
-    /** Costruttore della classe inline */
-    Articolo(float prezzo = 0.0) 
-    : _prezzo(prezzo)
+    /** Inline class constructor */
+    Item(float price = 0.0)
+    : _price(price)
     {
-        _n_articoli++;
-        cout << "costruttore Articolo" << endl;
-    }
-    
-    /** Distruttore inline */
-    ~Articolo() { 
-        _n_articoli--;
-        cout << "distruttore Articolo" << endl;       
+        _n_items++;
+        cout << "Item constructor" << endl;
     }
 
-    /** Funzioni di interfaccia */
-    void setPrezzo(float prezzo);
+    /** Inline destructor */
+    ~Item() {
+        _n_items--;
+        cout << "Item destructor" << endl;
+    }
 
-    /** Funzione di interfaccia statica */
-    static int getIstanze() { return _n_articoli; }
+    /** Interface functions */
+    void setPrice(float price);
 
-    /** Funzioni di interfaccia inline */
-    float getPrezzo()     { return _prezzo;     }
-    const char* getTipo() { return "articolo";  }
+    /** Static interface function */
+    static int getInstances() { return _n_items; }
+
+    /** Inline interface functions */
+    float getPrice()     { return _price;     }
+    const char* getType() { return "item";  }
 };
 
-/** Inizializza il dato membro statico */            
-int Articolo::_n_articoli = 0 ;
+/** Initializes the static member data */
+int Item::_n_items = 0 ;
 
-/** 
- * Dichiarazione della classe Pesce 
+/**
+ * Declaration of the Fish class
  */
-class Pesce {
+class Fish {
 private:
-            
-    static int _n_pesci;
-                        
+
+    static int _n_fish;
+
 protected:
-    
-    /** Dati membro privati */
-    Sesso  _sesso;
-    string _specie;
-    bool   _commestibile;
+
+    /** Private member data */
+    Sex    _sex;
+    string _species;
+    bool   _edible;
 
 public:
 
-    /** Costruttore della classe inline */
-    Pesce(Sesso sesso = boh, const char* specie = "ignota") 
-    : _sesso(sesso), _specie(specie)
+    /** Inline class constructor */
+    Fish(Sex sex = unknown, const char* species = "unknown")
+    : _sex(sex), _species(species)
     {
-        _n_pesci++;        
-        cout << "costruttore Pesce" << endl;
-    }
-    
-    /** Distruttore inline */
-    ~Pesce() { 
-        _n_pesci--;
-        cout << "distruttore Pesce" << endl;
+        _n_fish++;
+        cout << "Fish constructor" << endl;
     }
 
-    /** Funzioni di interfaccia */
-    void setSesso(Sesso sesso);
-    void setSpecie(const char* specie);
+    /** Inline destructor */
+    ~Fish() {
+        _n_fish--;
+        cout << "Fish destructor" << endl;
+    }
 
-    /** Funzione di interfaccia statica */
-    static int getIstanze()      { return _n_pesci; }
+    /** Interface functions */
+    void setSex(Sex sex);
+    void setSpecies(const char* species);
 
-    /** Funzioni di interfaccia inline */
-    string getSpecie()       { return _specie.c_str(); }
-    Sesso  getSesso()        { return _sesso; }
-    bool   getCommestibile() { return _commestibile; }
-    void   setCommestibile(bool commestibile) { 
-        _commestibile = commestibile; 
+    /** Static interface function */
+    static int getInstances()      { return _n_fish; }
+
+    /** Inline interface functions */
+    string getSpecies()       { return _species.c_str(); }
+    Sex    getSex()        { return _sex; }
+    bool   getEdible() { return _edible; }
+    void   setEdible(bool edible) {
+        _edible = edible;
     }
 };
 
-/** Inizializza il dato membro statico */            
-int Pesce::_n_pesci = 0 ;
+/** Initializes the static member data */
+int Fish::_n_fish = 0 ;
 
-/** 
- * Dichiarazione della classe PesceAlimentare 
+/**
+ * Declaration of the FoodFish class
  */
-class PesceAlimentare 
-: public Pesce, public Articolo {
+class FoodFish
+: public Fish, public Item {
 private:
-    
-    /** Dati privati della classe */
-    time_t _data_cattura;  
-    string _area_pesca; 
+
+    /** Private data of the class */
+    time_t _catch_date;
+    string _fishing_area;
 
 public:
 
-    /** Costruttore della classe inline */
-    PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
-    : Articolo(prezzo)
-    , Pesce(sesso, specie)
+    /** Inline class constructor */
+    FoodFish(Sex sex, float price, const char* species)
+    : Item(price)
+    , Fish(sex, species)
     {
-        /** Auspicabilmente.. */
-        _commestibile = true;
-        cout << "costruttore PesceAlimentare" << endl;
+        /** Hopefully.. */
+        _edible = true;
+        cout << "FoodFish constructor" << endl;
     }
 
-    /** Distruttore inline */
-    ~PesceAlimentare() { 
-        cout << "distruttore PesceAlimentare" << endl;
+    /** Inline destructor */
+    ~FoodFish() {
+        cout << "FoodFish destructor" << endl;
     }
 
-    /** Ridefinizione della funzione della classe base */
-    const char* getTipo() { return "pesce alimentare"; }
+    /** Override of the base class function */
+    const char* getType() { return "food fish"; }
 
     //...
 };
 
-class PesceAcquario 
-: public Articolo, public Pesce {
+class AquariumFish
+: public Item, public Fish {
 private:
-    
-    /** Dati privati della classe */
-    time_t _data_acquisto;  
-    Colore _colore;
-    Acqua  _acqua;
+
+    /** Private data of the class */
+    time_t _purchase_date;
+    Color  _color;
+    Water  _water;
 
 public:
-    
-    /** Costruttore della classe inline */
-    PesceAcquario(Sesso sesso, float prezzo, const char* specie) 
-    : Pesce(sesso, specie)
-    , Articolo(prezzo)
-    {
-        cout << "costruttore PesceAcquario" << endl;
-    } 
 
-    /** Distruttore inline */
-    ~PesceAcquario() { 
-        cout << "distruttore PesceAcquario" << endl;
+    /** Inline class constructor */
+    AquariumFish(Sex sex, float price, const char* species)
+    : Fish(sex, species)
+    , Item(price)
+    {
+        cout << "AquariumFish constructor" << endl;
     }
 
-    /** Ridefinizione della funzione della classe base */
-    const char* getTipo() { return "pesce acquario"; }
-    
+    /** Inline destructor */
+    ~AquariumFish() {
+        cout << "AquariumFish destructor" << endl;
+    }
+
+    /** Override of the base class function */
+    const char* getType() { return "aquarium fish"; }
+
     //...
 };
- 
-int main(int argc, char** argv) 
+
+int main(int argc, char** argv)
 {
-    /** Crea le due istanze delle classi */
-    PesceAcquario pesce1(maschio, 2.5, "Paracheiredon");
-    PesceAlimentare pesce2(femmina, 25.4, "Dicentrarchus labrax");
-    
-    /** Richiama le funzioni di interfaccia */
-    cout <<  pesce1.getTipo() << ": " << pesce1.getSpecie() 
+    /** Creates the two instances of the classes */
+    AquariumFish fish1(male, 2.5, "Paracheirodon");
+    FoodFish fish2(female, 25.4, "Dicentrarchus labrax");
+
+    /** Calls the interface functions */
+    cout <<  fish1.getType() << ": " << fish1.getSpecies()
          << endl;
-    cout <<  pesce2.getTipo() << ": " << pesce2.getSpecie() 
+    cout <<  fish2.getType() << ": " << fish2.getSpecies()
          << endl;
 
-    /** Richiama la funzione della classe base */
-    cout << "classe base: " << pesce1.Articolo::getTipo() << endl;
+    /** Calls the base class function */
+    cout << "base class: " << fish1.Item::getType() << endl;
 
-    /** Richiama le funzioni di interfaccia statiche */
-    cout <<  "articoli creati: " << Articolo::getIstanze() 
+    /** Calls the static interface functions */
+    cout <<  "items created: " << Item::getInstances()
          << endl;
-    cout <<  "pesci creati:    " << Pesce::getIstanze() 
+    cout <<  "fish created:  " << Fish::getInstances()
          << endl;
-    
+
     return 0;
 }

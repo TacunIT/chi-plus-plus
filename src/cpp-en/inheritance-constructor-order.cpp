@@ -1,49 +1,49 @@
-/** 
- * @file ereditarieta-ordine-costruttori.cpp
- * Ordine di chiamata dei costruttori nell'ereditarierà multipla.
+/**
+ * @file inheritance-constructor-order.cpp
+ * Order of constructor calls in multiple inheritance.
  */
- 
+
 #include <iostream>
 #include <string>
-#include <ctime> 
+#include <ctime>
 
 using namespace std;
 
-class Mamma {
+class Mom {
 public:
-    Mamma() {
-        cout << "costruttore Mamma" << endl;
+    Mom() {
+        cout << "Mom constructor" << endl;
     }
 };
 
-class Padre {
+class Dad {
 public:
-    Padre() {
-        cout << "costruttore Padre" << endl;
-    }
-};
- 
-class Figlio
-: public Padre, public Mamma {
-public:
-    Figlio() {
-        cout << "costruttore Figlio" << endl;
+    Dad() {
+        cout << "Dad constructor" << endl;
     }
 };
 
-class Figlia
-: public Mamma, public Padre {
+class Son
+: public Dad, public Mom {
 public:
-    Figlia() {
-        cout << "costruttore Figlia" << endl;
+    Son() {
+        cout << "Son constructor" << endl;
     }
 };
 
- 
-int main(int argc, char** argv) 
+class Daughter
+: public Mom, public Dad {
+public:
+    Daughter() {
+        cout << "Daughter constructor" << endl;
+    }
+};
+
+
+int main(int argc, char** argv)
 {
-    Figlio Hansel;
-    Figlia Gretel;
+    Son Hansel;
+    Daughter Gretel;
 
     return 0;
 }

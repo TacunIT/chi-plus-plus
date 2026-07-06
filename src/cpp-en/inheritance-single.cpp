@@ -1,98 +1,98 @@
-/** 
- * @file ereditarieta-singola.cpp
- * Esempio di ereditarietà singola.
+/**
+ * @file inheritance-single.cpp
+ * Example of single inheritance.
  */
- 
+
 #include <iostream>
 #include <string>
-#include <ctime> 
+#include <ctime>
 
 using namespace std;
 
-enum Acqua  { dolce, salata };
-enum Sesso  { maschio, femmina };
-enum Colore { rosso, blu, verde, argento };
+enum Water  { freshwater, saltwater };
+enum Sex    { male, female };
+enum Color  { red, blue, green, silver };
 
-class Pesce {
+class Fish {
 private:
-            
-    static int _n_pesci;
-                        
+
+    static int _n_fish;
+
 protected:
-    
-    /** Dati membro privati */
-    Sesso  _sesso;
-    float  _prezzo;
-    string _specie;
-    bool   _commestibile;
+
+    /** Private member data */
+    Sex    _sex;
+    float  _price;
+    string _species;
+    bool   _edible;
 
 public:
 
-    /** Costruttore della classe inline */
-    Pesce(Sesso sesso, float prezzo, const char* specie) 
-    : _sesso(sesso), _prezzo(prezzo), _specie(specie)
+    /** Inline class constructor */
+    Fish(Sex sex, float price, const char* species)
+    : _sex(sex), _price(price), _species(species)
     {
-        _n_pesci++;
-    }
-    
-    /** Distruttore inline */
-    ~Pesce() { 
-        _n_pesci--;
+        _n_fish++;
     }
 
-    /** Funzioni di interfaccia */
-    void setSesso(Sesso sesso);
-    void setPrezzo(float prezzo);
-    void setSpecie(const char* specie);
+    /** Inline destructor */
+    ~Fish() {
+        _n_fish--;
+    }
 
-    /** Funzioni di interfaccia inline */
-    string getSpecie() { return _specie.c_str(); }
-    float  getPrezzo() { return _prezzo;  }
-    Sesso  getSesso()  { return _sesso; }
-    bool   getCommestibile() { return _commestibile; }
-    void   setCommestibile(bool commestibile) { 
-        _commestibile = commestibile; 
+    /** Interface functions */
+    void setSex(Sex sex);
+    void setPrice(float price);
+    void setSpecies(const char* species);
+
+    /** Inline interface functions */
+    string getSpecies() { return _species.c_str(); }
+    float  getPrice() { return _price;  }
+    Sex    getSex()  { return _sex; }
+    bool   getEdible() { return _edible; }
+    void   setEdible(bool edible) {
+        _edible = edible;
     }
 
 };
 
-int Pesce::_n_pesci = 0 ;
+int Fish::_n_fish = 0 ;
 
-class PesceAlimentare : public Pesce {
+class FoodFish : public Fish {
 private:
-    
-    /** Dati privati della classe */
-    time_t _data_cattura;  
-    string _area_pesca; 
+
+    /** Private data of the class */
+    time_t _catch_date;
+    string _fishing_area;
 
 public:
 
-    /** Costruttore della classe inline */
-    PesceAlimentare(Sesso sesso, float prezzo, const char* specie) 
-    : Pesce(sesso, prezzo, specie)
+    /** Inline class constructor */
+    FoodFish(Sex sex, float price, const char* species)
+    : Fish(sex, price, species)
     {
-        /** Auspicabilmente.. */
-        _commestibile = true;
+        /** Hopefully.. */
+        _edible = true;
     }
 
     //...
 };
 
-class PesceAcqario : public Pesce {
+class AquariumFish : public Fish {
 private:
-    
-    /** Dati privati della classe */
-    time_t _data_acquisto;  
-    Colore _colore;
-    Acqua  _acqua;
+
+    /** Private data of the class */
+    time_t _purchase_date;
+    Color  _color;
+    Water  _water;
 
 public:
-    
-    /** Costruttore della classe inline */
-    PesceAcqario(Sesso sesso, float prezzo, const char* specie) 
-    : Pesce(sesso, prezzo, specie)
+
+    /** Inline class constructor */
+    AquariumFish(Sex sex, float price, const char* species)
+    : Fish(sex, price, species)
     {
-    } 
-    
+    }
+
     //...
 };
