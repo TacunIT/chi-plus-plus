@@ -254,92 +254,92 @@ int main()
 
 <p>The output of this code, in case you’ve forgotten, is:</p>
 
-<pre><code>&gt; g++ src/cpp/cplusplus-template.cpp -o src/out/esempio
-&gt; src/out/esempio
-DATA:    Sun May 23 14:42:51 2021
-MASCHIO: Specie:Cavallo Razza:lipizzano Sesso:m
-FEMMINA: Specie:Cavallo Razza:maremmano Sesso:f
-ESITO:   puledro
+<pre><code>&gt; g++ src/cpp/cplusplus-template.cpp -o src/out/example
+&gt; src/out/example
+DATE:    Sun May 23 14:42:51 2021
+MALE: Species:Horse Breed:Lipizzaner Sex:m
+FEMALE: Species:Horse Breed:Maremmano Sex:f
+OUTCOME:   foal
 
-DATA:    Sun May 23 14:42:51 2021
-MASCHIO: Specie:Asino   Razza:amiatino  Sesso:m
-FEMMINA: Specie:Asino   Razza:sardo     Sesso:f
-ESITO:   asino
+DATE:    Sun May 23 14:42:51 2021
+MALE: Species:Donkey   Breed:Amiata  Sex:m
+FEMALE: Species:Donkey   Breed:Sardinian     Sex:f
+OUTCOME:   donkey
 
-DATA:    Sun May 23 14:42:51 2021
-MASCHIO: Specie:Asino   Razza:amiatino  Sesso:m
-FEMMINA: Specie:Cavallo Razza:maremmano Sesso:f
-ESITO:   mulo
+DATE:    Sun May 23 14:42:51 2021
+MALE: Species:Donkey   Breed:Amiata  Sex:m
+FEMALE: Species:Horse Breed:Maremmano Sex:f
+OUTCOME:   mule
 
-DATA:    Sun May 23 14:42:51 2021
-MASCHIO: Specie:Cavallo Razza:lipizzano Sesso:m
-FEMMINA: Specie:Asino   Razza:sardo     Sesso:f
-ESITO:   bardotto
+DATE:    Sun May 23 14:42:51 2021
+MALE: Species:Horse Breed:Lipizzaner Sex:m
+FEMALE: Species:Donkey   Breed:Sardinian     Sex:f
+OUTCOME:   hinny
 </code></pre>
 
 <p>Before going on, though, we need to clear up three terms related to polymorphism: <em>overload</em>, <em>override</em>, and <em>redefinition</em>.
 By the term <b id="overload">overload</b> of a function, we mean a function that has the same name as another one, but different parameters.
 A typical example of <em>function overload</em> is the different versions of a class’s constructor:</p>
 
-<pre><code>Cavallo() {}
-Cavallo(const char* razza, const Sesso sesso )
-: Animale(razza, sesso ) {
+<pre><code>Horse() {}
+Horse(const char* breed, const Sex sex )
+: Animal(breed, sex ) {
 }
 </code></pre>
 <p>The two functions have the same name, and the compiler will pick one or the other depending on the parameters used.
 An <b id="overridden">overridden</b> function is a function with a different definition from that of a virtual function in one of its base classes:</p>
 
-<pre><code>const char* getSpecie() const {
-    return "Asino";
+<pre><code>const char* getSpecies() const {
+    return "Donkey";
 }     
 </code></pre>
 
 <p>As we’ve seen, the compiler picks one or the other depending on the type of the object used in the call.
 If the base class’s function hadn’t been virtual, this would have simply been a <strong>redefinition</strong>:</p>
 
-<pre><code>class Persona {
+<pre><code>class Person {
 public:
     void getClass(){
-        cout &lt;&lt; "Persona" &lt;&lt; endl;
+        cout &lt;&lt; "Person" &lt;&lt; endl;
     }
 };
 </code></pre>
 
 <p>When it handles these functions, the compiler doesn’t perform a dynamic type check based on the object’s type at runtime, but picks the function to call based on the type of the pointer or reference used, which, as you know, can cause problems:</p>
 
-<pre><code>Madre   * ptrM = new Madre;
-Persona * ptrP = ptrM ;
+<pre><code>Mom     * ptrM = new Mom;
+Person  * ptrP = ptrM ;
 ptrM-&gt;getClass() ;
-ptrP-&gt;getClass() ;  // chiama la funzione di Persona - ERRORE
+ptrP-&gt;getClass() ;  // calls Person's function - ERROR
 </code></pre>
 
 <p>In light of all this, we can now correct the comments in the sample code:</p>
 
-<pre><code>/** Overload dell'operatore di output su stream  */
-ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animale&amp; animale) {
-    os  &lt;&lt; "Specie:" &lt;&lt; animale.getSpecie() &lt;&lt; "\t"
-        &lt;&lt; "Razza:"  &lt;&lt; animale.getRazza()  &lt;&lt; "\t"
-        &lt;&lt; "Sesso:"  &lt;&lt; animale.getSesso()  
+<pre><code>/** Overload of the stream output operator  */
+ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animal&amp; animal) {
+    os  &lt;&lt; "Species:" &lt;&lt; animal.getSpecies() &lt;&lt; "\t"
+        &lt;&lt; "Breed:"  &lt;&lt; animal.getBreed()  &lt;&lt; "\t"
+        &lt;&lt; "Sex:"  &lt;&lt; animal.getSex()  
         &lt;&lt; endl;
     return os;   
 }
 
-/** Override della funzione virtuale pura */
-const char* getSpecie() const {
-    return "Cavallo";
+/** Override of the pure virtual function */
+const char* getSpecies() const {
+    return "Horse";
 }  
 
-/** Override della funzione virtuale pura */
-const char* getSpecie() const {
-    return "Asino";
+/** Override of the pure virtual function */
+const char* getSpecies() const {
+    return "Donkey";
 }     
 
-/** Overload dell'operatore di output su stream */
-friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula) {
-    os &lt;&lt; "DATA:    " &lt;&lt; asctime(localtime(&amp;copula._giorno))
-       &lt;&lt; "MASCHIO: " &lt;&lt; *copula._maschio
-       &lt;&lt; "FEMMINA: " &lt;&lt; *copula._femmina
-       &lt;&lt; "ESITO:   " &lt;&lt; copula._esito
+/** Overload of the stream output operator */
+friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Mating&amp; mating) {
+    os &lt;&lt; "DATE:    " &lt;&lt; asctime(localtime(&amp;mating._day))
+       &lt;&lt; "MALE: " &lt;&lt; *mating._male
+       &lt;&lt; "FEMALE: " &lt;&lt; *mating._female
+       &lt;&lt; "OUTCOME:   " &lt;&lt; mating._outcome
        &lt;&lt; endl;
        return os;   
  };
@@ -350,10 +350,10 @@ friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula)
 <p>In C++, every operator corresponds to a function.
 The one for the <code>+=</code> binary operator, for example, is:</p>
 
-<pre><code>&lt;tipo&gt;&amp; operator +=  (&lt;tipo&gt;&amp; a, &lt;tipo&gt;&amp; b) ;
+<pre><code>&lt;type&gt;&amp; operator +=  (&lt;type&gt;&amp; a, &lt;type&gt;&amp; b) ;
 </code></pre>
 
-<p>where <code>a</code> and <code>b</code> are the two objects involved in the operation, and <code>&lt;tipo&gt;</code> is the type of the variables involved in the operation.</p>
+<p>where <code>a</code> and <code>b</code> are the two objects involved in the operation, and <code>&lt;type&gt;</code> is the type of the variables involved in the operation.</p>
 
 <pre><code>int&amp;    operator +=  (int&amp;    a, int&amp;    b) ;
 float&amp;  operator +=  (float&amp;  a, float&amp;  b) ;
@@ -362,8 +362,8 @@ double&amp; operator +=  (double&amp; a, double&amp; b) ;
 
 <p>Since unary operators can be prefix or postfix, to let the compiler tell which is the correct function to use, the postfix operator’s function gets an extra, unused, second parameter:</p>
 
-<pre><code>void operator ++ (&lt;tipo&gt; a) ;           // versione prefissa
-void operator ++ (&lt;tipo&gt; a, &lt;tipo&gt;) ;   // versione postfissa
+<pre><code>void operator ++ (&lt;type&gt; a) ;           // prefix version
+void operator ++ (&lt;type&gt; a, &lt;type&gt;) ;   // postfix version
 </code></pre>
 
 <p><em>Overloaded</em> operator functions can be called directly.
@@ -413,9 +413,9 @@ int main ()
 
 <p>The output of this code is well known to you by now:</p>
 
-<pre><code>&gt; g++ src/cpp/polymorphism-operators.cpp -o src/out/esempio
-&gt; src/out/esempio                                          
-PippoPluto
+<pre><code>&gt; g++ src/cpp/polymorphism-operators.cpp -o src/out/example
+&gt; src/out/example                                          
+Foobar!
 </code></pre>
 
 <p>You could get the same result with the <code>append</code> function:</p>
@@ -480,23 +480,23 @@ int main ()
 
 <p>When you redefine an operator’s behavior for a class, you need to take into account the visibility of the member data it has to use.
 If the operator, as is likely, needs to handle private or protected data, there are two options: either make use of the class’s interface functions, or declare the operator a <code>friend</code> of the class.
-In the initial example, both options are used: the stream output operator for the <code>Animale</code> class uses the class’s interface functions:</p>
+In the initial example, both options are used: the stream output operator for the <code>Animal</code> class uses the class’s interface functions:</p>
 
-<pre><code>ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animale&amp; animale) {
-    os  &lt;&lt; "Specie:" &lt;&lt; animale.getSpecie() &lt;&lt; "\t"
-        &lt;&lt; "Razza:"  &lt;&lt; animale.getRazza()  &lt;&lt; "\t"
-        &lt;&lt; "Sesso:"  &lt;&lt; animale.getSesso()  
+<pre><code>ostream&amp; operator &lt;&lt; (ostream&amp; os, const Animal&amp; animal) {
+    os  &lt;&lt; "Species:" &lt;&lt; animal.getSpecies() &lt;&lt; "\t"
+        &lt;&lt; "Breed:"  &lt;&lt; animal.getBreed()  &lt;&lt; "\t"
+        &lt;&lt; "Sex:"  &lt;&lt; animal.getSex()  
         &lt;&lt; endl;
     return os;   
 }
 </code></pre>
 
-<p>while the output operator for the <code>Monta</code> class is declared a <code>friend</code> of the class, and can therefore access the instance’s member data directly:</p>
+<p>while the output operator for the <code>Mating</code> class is declared a <code>friend</code> of the class, and can therefore access the instance’s member data directly:</p>
 
-<pre><code>friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Monta&amp; copula) {
-    os &lt;&lt; "DATA: "    &lt;&lt; asctime(localtime(&amp;copula._giorno))
-       &lt;&lt; "MASCHIO: " &lt;&lt; *copula._maschio
-       &lt;&lt; "FEMMINA: " &lt;&lt; *copula._femmina;
+<pre><code>friend ostream&amp; operator &lt;&lt; (ostream&amp; os, const Mating&amp; mating) {
+    os &lt;&lt; "DATE: "    &lt;&lt; asctime(localtime(&amp;mating._day))
+       &lt;&lt; "MALE: " &lt;&lt; *mating._male
+       &lt;&lt; "FEMALE: " &lt;&lt; *mating._female;
        return os;   
 };
 </code></pre>
@@ -510,7 +510,7 @@ The other rules to remember, in these cases, are:</p>
   <li>
     <p>the unary assignment operator <code>=</code> is the only case of a member function that isn’t inherited by any child classes; if it isn’t redefined, it performs a member-by-member assignment of the attributes, and has the syntax:</p>
 
-    <pre><code>  C&amp; C::operator = (const C&amp; origine) ;
+    <pre><code>  C&amp; C::operator = (const C&amp; source) ;
 </code></pre>
   </li>
   <li>
@@ -564,18 +564,18 @@ double d = double(i) ;
 <p>The C++ compiler is able to convert any primitive data type into another, but it has no way of knowing how to handle user-defined data types; we therefore have to instruct it, just as we did with constructors and operators, by defining coercion paths from and to primitive data types.
 The first case, that is, converting from a primitive type to a user-defined one, is the simplest: it essentially means defining, where one doesn’t already exist, a constructor for the new class that takes parameters of primitive type.
 When instead there’s no constructor to extend — that is, when the coercion goes from a user-defined type to a primitive data type, or one provided by a library whose source code you don’t have — you need to redefine the <code>()</code> conversion operator.
-Imagine you’ve created a new data type, <code>Frazione</code>, to handle rational numbers.
+Imagine you’ve created a new data type, <code>Fraction</code>, to handle rational numbers.
 To be able to use it in expressions containing primitive-type data, you would have to redefine every operator to accept mixed-type data, both as the first and as the second parameter:</p>
 
-<pre><code>Frazione operator + (int i, Frazione f) ;
-Frazione operator - (int i, Frazione f) ;
-Frazione operator + (double i, Frazione f) ;
-Frazione operator - (double i, Frazione f) ;
+<pre><code>Fraction operator + (int i, Fraction f) ;
+Fraction operator - (int i, Fraction f) ;
+Fraction operator + (double i, Fraction f) ;
+Fraction operator - (double i, Fraction f) ;
 ...
-Frazione operator + (Frazione f, int i) ;
-Frazione operator - (Frazione f, int i) ;
-Frazione operator + (Frazione f, double i) ;
-Frazione operator - (Frazione f, double i) ;
+Fraction operator + (Fraction f, int i) ;
+Fraction operator - (Fraction f, int i) ;
+Fraction operator + (Fraction f, double i) ;
+Fraction operator - (Fraction f, double i) ;
 
 </code></pre>
 
@@ -631,29 +631,29 @@ public:
 In C++, templates are blueprints used to define multi-purpose functions or classes.
 If the same task can be carried out in a similar way on parameters of different types, instead of writing identical functions or classes for each parameter type, you can write a single template function or class and call it each time with the appropriate parameter type:</p>
 
-<pre><code>int    somma(int    a, int    b) { return a + b; }
-float  somma(float  a, float  b) { return a + b; }
-double somma(double a, double b) { return a + b; }
+<pre><code>int    sum(int    a, int    b) { return a + b; }
+float  sum(float  a, float  b) { return a + b; }
+double sum(double a, double b) { return a + b; }
 
 template &lt;class T&gt;
-T somma(T a, T b) { return a + b; }
+T sum(T a, T b) { return a + b; }
 </code></pre>
 
 <p>When the compiler finds a template in the code, whether it’s a class declaration or a function call, it replaces it with the corresponding code, the same way it does for <a href="/en/preprocessor#macro" class="xref">precompiler macros</a>, but, unlike what happens with macros, the type of the template’s parameters is subject to strict checking, just like the rest of the code.
 The format for declaring a <i id="funzioni-template">template function</i> is:</p>
 
 <p class="code">
-<b>template &lt;class</b> <i>identificatore</i><b>&gt;</b> <i>dichiarazione</i>;
+<b>template &lt;class</b> <i>identifier</i><b>&gt;</b> <i>declaration</i>;
 <br />  
-<b>template &lt;typename</b> <i>identificatore</i><b>&gt;</b> <i>dichiarazione</i>;
+<b>template &lt;typename</b> <i>identifier</i><b>&gt;</b> <i>declaration</i>;
 </p>
 
 <p>There’s no difference between the first and second form: both <code>class</code> and <code>typename</code> produce the same effect.
-<em>identificatore</em> is a symbol identifying a given data type, or a user-defined class.
+<em>identifier</em> is a symbol identifying a given data type, or a user-defined class.
 For example, the syntax for a template function that returns the greater of two parameters would look something like this:</p>
 
 <pre><code>template&lt;class T&gt;
-T maggiore (T x, T y) {
+T greater (T x, T y) {
     return (x &gt; y) ? x : y;
 }
 </code></pre>
@@ -662,7 +662,7 @@ T maggiore (T x, T y) {
 There can be more than one parameter:</p>
 
 <pre><code>template&lt;class C1, class C2&gt;
-T funz (C1 x, C2 y) {
+T func (C1 x, C2 y) {
 ...
 }
 </code></pre>
@@ -670,16 +670,16 @@ T funz (C1 x, C2 y) {
 <p>and they can have a default value:</p>
 
 <pre><code>template&lt;class N = int&gt;
-T funz (N n) {
+T func (N n) {
 ...
 }
 </code></pre>
 
 <p>Calling template functions is similar to calling ordinary functions, with the addition of the type of the parameters to be handled:</p>
 
-<pre><code>cout &lt;&lt; maggiore&lt;int&gt;   (  9,  12) &lt;&lt; endl;    
-cout &lt;&lt; maggiore&lt;double&gt;(0.4, 1.2) &lt;&lt; endl;    
-cout &lt;&lt; maggiore&lt;char&gt;  ('a', 'z') &lt;&lt; endl;    
+<pre><code>cout &lt;&lt; greater&lt;int&gt;   (  9,  12) &lt;&lt; endl;    
+cout &lt;&lt; greater&lt;double&gt;(0.4, 1.2) &lt;&lt; endl;    
+cout &lt;&lt; greater&lt;char&gt;  ('a', 'z') &lt;&lt; endl;    
 </code></pre>
 <!-- @todo: verificare i casi in cui non c'è specifica del tipo di dato -->
 <p>The next example shows the difference between a precompiler macro and a template function:
@@ -741,11 +741,11 @@ int main ()
 
 </code></pre>
 
-<p>The <code>MAGGIORE</code> macro and the <code>maggiore</code> template function perform the same operation: they compare the two parameters they receive as input, and return the greater of the two.
+<p>The <code>GREATER</code> macro and the <code>greater</code> template function perform the same operation: they compare the two parameters they receive as input, and return the greater of the two.
 The big difference between these two approaches<!-- ce ne sono anche altre, ma sono legate al tipo di compilatore e preferisco tralasciarle --> is that, while the type of the template’s parameters is checked by the compiler, the macro is a plain substitution that performs no checks at all on the variables it uses.
 The instruction:</p>
 
-<pre><code>cout &lt;&lt; MAGGIORE('a', b) &lt;&lt; endl;
+<pre><code>cout &lt;&lt; GREATER('a', b) &lt;&lt; endl;
 </code></pre>
 
 <p>compares a character with a double and, without causing any compile problems, returns the value <code>97</code>, corresponding to the ASCII code of the letter <code>a</code>.
@@ -753,29 +753,29 @@ By contrast, the instruction:</p>
 
 <pre><code>int   a = 10;
 short b = 0;
-cout &lt;&lt; maggiore(a, b) &lt;&lt; endl;  
+cout &lt;&lt; greater(a, b) &lt;&lt; endl;  
 </code></pre>
 
 <!-- @todo: correggere questo codice, sia qui che nello script: l'errore si manifesta solo se si omette lo specificatore del tipo per il template -->
 <p>causes a compile error, because the two parameters are of different types:</p>
 
-<pre><code>&gt; g++ src/cpp/polimorfismo-template.cpp -o src/out/esempio
-src/cpp/polimorfismo-template.cpp:52:13:
-    error: no matching function for call to 'maggiore'
-    cout &lt;&lt; maggiore(a, b) &lt;&lt; endl;    
+<pre><code>&gt; g++ src/cpp/polymorphism-template.cpp -o src/out/example
+src/cpp/polymorphism-template.cpp:52:13:
+    error: no matching function for call to 'greater'
+    cout &lt;&lt; greater(a, b) &lt;&lt; endl;    
             ^~~~~~~~
-src/cpp/polimorfismo-template.cpp:22:3:
+src/cpp/polymorphism-template.cpp:22:3:
     note: candidate template ignored:
         deduced conflicting types for parameter 'T'
       ('int' vs. 'short')
-T maggiore (T x, T y) {
+T greater (T x, T y) {
   ^
 </code></pre>
 
 <p>The declaration of a <i id="classi-template">template class</i> has the form:</p>
 
 <p class="code">
-<b>template &lt;class</b> <i>identificatore</i><b>&gt;</b> <i>dichiarazione</i>;
+<b>template &lt;class</b> <i>identifier</i><b>&gt;</b> <i>declaration</i>;
 </p>
 
 <p>The list of parameters between the <code>&lt;&gt;</code> symbols can contain one or more symbols for the data types the class handles.
@@ -830,7 +830,7 @@ int main ()
 
 <p>The code I showed you at the start of this lesson uses a template class:</p>
 
-<pre><code>list&lt;Monta&gt; monte;
+<pre><code>list&lt;Mating&gt; matings;
 </code></pre>
 
 <p>The <code>list</code> class is one of the classes of C++’s <em>Standard Template Library</em>, a library of classes and functions that let you solve common programming problems, such as storing, sorting, or searching a set of data.
@@ -847,23 +847,23 @@ The components of the STL are:</p>
 By contrast, the <code>vector</code> class implements a list of elements stored in a single area of memory, the same way C arrays work.
 All STL vectors have member functions that let you manage their elements; the <code>push_back</code> function, for example, adds an element to the end of the list:</p>
 
-<pre><code>monte.push_back(Monta(cavallo, giumenta));
-monte.push_back(Monta (asino, asina));       
-monte.push_back(Monta (asino, giumenta));     
-monte.push_back(Monta (cavallo, asina));
+<pre><code>matings.push_back(Mating(horse, mare));
+matings.push_back(Mating (donkey, jenny));       
+matings.push_back(Mating (donkey, mare));     
+matings.push_back(Mating (horse, jenny));
 </code></pre>
 
 <p><i id="iteratori-stl">Iterators</i> are constructs that let you move through a container’s contents, picking out its elements.
 We used one in the instruction:</p>
 
-<pre><code>list&lt;Monta&gt;::iterator it;
-for (it=monte.begin(); it!=monte.end(); it++) {
+<pre><code>list&lt;Mating&gt;::iterator it;
+for (it=matings.begin(); it!=matings.end(); it++) {
     cout &lt;&lt; *it &lt;&lt; endl;
 }
 </code></pre>
 
-<p>The first instruction in the <code>for</code> loop assigns to the iterator <code>it</code> the first element of the list, returned by the member function <code>monte.begin</code>.
-The second instruction checks that the iterator is different from <code>monte.end</code>, which points to the end of the list.
+<p>The first instruction in the <code>for</code> loop assigns to the iterator <code>it</code> the first element of the list, returned by the member function <code>matings.begin</code>.
+The second instruction checks that the iterator is different from <code>matings.end</code>, which points to the end of the list.
 The third instruction increments the iterator by one position, and shows how redefining an operator for a class makes the code easier to read: even if you’ve never seen a template class before, you can immediately tell that instruction increments the value of <code>it</code> by one.
 The <i id="algoritmi-stl">algorithms</i> of the STL, defined in the <code>&lt;algorithm&gt;</code> header, are template functions that let you locate, copy, sort, merge, or remove data within a container.</p>
 
@@ -924,8 +924,8 @@ int main()
 
 <p>If you compile and run this code, you get:</p>
 
-<pre><code>&gt; g++ src/cpp/polymorphism-algorithms.cpp -o src/out/esempio
-&gt; src/out/esempio                                          
+<pre><code>&gt; g++ src/cpp/polymorphism-algorithms.cpp -o src/out/example
+&gt; src/out/example                                          
 10
 70
 10 70 21 49 35
@@ -1031,18 +1031,18 @@ int main ()
 </code></pre>
 <p>If you compile and run this program, you’ll get:</p>
 
-<pre><code>&gt; g++ src/cpp/polymorphism-rot13.cpp -o src/out/esempio     
-&gt; ./src/out/esempio
-CvccbCyhgb
-PippoPluto
+<pre><code>&gt; g++ src/cpp/polymorphism-rot13.cpp -o src/out/example     
+&gt; ./src/out/example
+Sbbone
+Foobar
 </code></pre>
 
 <p>Ordinary functions let you use the <code>transform</code> algorithm to encrypt a text with a fixed value, but you can’t do the same thing using a variable key, because the fourth parameter doesn’t accept functions with more than one parameter.
 If you tried to use it with something like:</p>
 
-<pre><code>unsigned char cifra(unsigned char c, int chiave)
+<pre><code>unsigned char cipher(unsigned char c, int key)
 {
-    return c + chiave;
+    return c + key;
 }
 </code></pre>
 
@@ -1052,7 +1052,7 @@ If you tried to use it with something like:</p>
       function call, expected 2, have 1
         *__result = __op(*__first);
                     ~~~~         ^
-src/cpp/polimorfismo-transform-chiave.cpp:25:5: note: in instantiation of function template specialization
+src/cpp/polymorphism-transform-key.cpp:25:5: note: in instantiation of function template specialization
       'std::__1::transform&lt;std::__1::__wrap_iter&lt;char *&gt;, std::__1::__wrap_iter&lt;char *&gt;, unsigned char
       (*)(unsigned char, int)&gt;' requested here
     transform(
@@ -1119,11 +1119,11 @@ int main ()
 
 <p>Compiling and running this program, you get:</p>
 
-<pre><code>&gt; g++ src/cpp/polymorphism-functor.cpp -o src/out/esempio
-&gt; ./src/out/esempio
-QjqqpQmvup
+<pre><code>&gt; g++ src/cpp/polymorphism-functor.cpp -o src/out/example
+&gt; ./src/out/example
+Gppcbs
 </code></pre>
-<p>which corresponds to the characters of the string <em>PippoPluto</em> each incremented by one.</p>
+<p>which corresponds to the characters of the string <em>Foobar</em> each incremented by one.</p>
 
 <hr id="dottrina" />
 
