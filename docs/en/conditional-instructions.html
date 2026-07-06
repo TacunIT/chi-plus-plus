@@ -101,67 +101,67 @@ La perifrasi è da: Asimov, Isaac. Civiltà extraterrestri (Italian Edition) . M
 C++ has two kinds of conditional instruction: <code>if-else</code> sequences and the <code>switch</code> instruction.
 The general form of <code>if-else</code> instructions is as follows:</p>
 
-<pre><code>if ( &lt;condizione&gt; ) {
-    // istruzioni da eseguire se la condizione è vera
+<pre><code>if ( &lt;condition&gt; ) {
+    // instructions to run if the condition is true
 } else {
-    // istruzioni da eseguire se la condizione è falsa
+    // instructions to run if the condition is false
 }
 </code></pre>
 
 <p>If the conditional expression at the start of the code is true, the program will run the first block of instructions; if not, it will run the second block of instructions.</p>
 
 <pre><code>if ( a &gt; 8 ) {
-    cout &lt;&lt; "maggiore" &lt;&lt; endl;
+    cout &lt;&lt; "greater" &lt;&lt; endl;
 } else {
-    cout &lt;&lt; "minore" &lt;&lt; endl;
+    cout &lt;&lt; "less" &lt;&lt; endl;
 }
 </code></pre>
 
 <p>If the false condition requires no specific action, the second block of instructions can be omitted:</p>
 
-<pre><code>typedef Importo unsigned long;
+<pre><code>typedef Amount unsigned long;
 
-Importo raddoppiaStipendio(Importo stipendioCorrente)
+Amount doubleSalary(Amount currentSalary)
 {
-    if ( stipendioCorrente &gt; 0 ) {
-        stipendioCorrente *= 2;
+    if ( currentSalary &gt; 0 ) {
+        currentSalary *= 2;
     }    
-    return stipendioCorrente;   
+    return currentSalary;   
 }
 </code></pre>
 
 <p>In the same way, curly braces can be omitted if the block of instructions they enclose consists of a single instruction:</p>
 
 <pre><code>if ( a &gt; 8 )
-    cout &lt;&lt; "maggiore" &lt;&lt; endl;
+    cout &lt;&lt; "greater" &lt;&lt; endl;
 else
-    cout &lt;&lt; "minore" &lt;&lt; endl;
+    cout &lt;&lt; "less" &lt;&lt; endl;
 </code></pre>
 
 <p>Personally, I find this form inelegant, and think it makes the code less clear, which invites mistakes.
 I only use it in error-handling instructions, where the program’s flow breaks off abruptly, because the ungainly look of the instruction highlights the exception, making the code more self-explanatory.</p>
 
-<pre><code>if ( divisore == 0 )
-    throw std::runtime_error("errore");
+<pre><code>if ( divisor == 0 )
+    throw std::runtime_error("error");
 </code></pre>
 
 <p>If there are more than two conditions to evaluate, you can chain several conditional instructions using the <code>else if</code> instruction, which lets you define an alternative condition to the first one and associate a block of code with it.
 Here too, you can close the sequence with an <code>else</code> instruction, defining a block of instructions to run if none of the expected conditions is met.</p>
 
-<pre><code>if ( &lt;prima condizione&gt; ) {
+<pre><code>if ( &lt;first condition&gt; ) {
     /*
-     * istruzioni da eseguire se
-     * la prima condizione è vera
+     * instructions to run if
+     * the first condition is true
     */
-} else if ( &lt;seconda condizione&gt; ) {
+} else if ( &lt;second condition&gt; ) {
     /*
-     * istruzioni da eseguire se
-     * la prima condizione è vera
+     * instructions to run if
+     * the first condition is true
      */
 } else {
     /*
-     * istruzioni da eseguire se nessuna
-     * delle due condizioni è vera
+     * instructions to run if neither
+     * of the two conditions is true
      */
 }
 </code></pre>
@@ -169,7 +169,7 @@ Here too, you can close the sequence with an <code>else</code> instruction, defi
 <p><code>if-else</code> instructions affect the readability of the code; it’s something a good programmer must always keep in mind.
 C++ is a formatting-independent language, so the same instruction can be written in many different ways:</p>
 
-<pre><code>if ( &lt;condizione&gt; )
+<pre><code>if ( &lt;condition&gt; )
 {
     ...
 }
@@ -181,7 +181,7 @@ else
 
 <p>or, equally:</p>
 
-<pre><code>if ( &lt;condizione&gt; ) {
+<pre><code>if ( &lt;condition&gt; ) {
     ...
 } else {
     ...
@@ -190,33 +190,33 @@ else
 
 <p>or even:</p>
 
-<pre><code>if ( &lt;condizione&gt; ) { ...} else { ... }
+<pre><code>if ( &lt;condition&gt; ) { ...} else { ... }
 </code></pre>
 
 <p>If the instructions are few and simple, one form is as good as another (matters of style aside, of course), but if the program’s flow is, as it usually is, more complex, you need to make sure the form of the instruction makes the code easier to write, read, and, if needed, fix.
 Imagine a piece of code that has to run a check at the start of processing and, depending on the outcome, either run a sequence of instructions or send an error message:</p>
 
-<pre><code>if ( &lt;condizione&gt; ){
+<pre><code>if ( &lt;condition&gt; ){
     /*
-     * righe di codice da
-     * eseguire in caso la
-     * condizione sia vera
+     * lines of code to
+     * run if the
+     * condition is true
      */
 } else {
-    /* gestione dell'errore */
+    /* error handling */
 }
 </code></pre>
 
 <p>If the instructions to run when the check succeeds are few and simple, this sequence won’t cause any problems, but if instead the instructions were numerous and complex, while reading the code you might reach the <code>else</code> instruction and no longer remember which condition it was tied to.
 In these cases, I prefer the form:</p>
 
-<pre><code>if ( &lt;errore&gt; ) {
-    /* gestione dell'errore */
+<pre><code>if ( &lt;error&gt; ) {
+    /* error handling */
 } else {
     /*
-     * righe di codice da
-     * eseguire in caso la
-     * condizione sia vera
+     * lines of code to
+     * run if the
+     * condition is true
      */
 }
 </code></pre>
@@ -228,33 +228,33 @@ You’ll make your program a bit slower (or, rather: a bit less fast), but the c
 <!-- @todo parlare del "codice spaghetti". -->
 Now imagine a piece of code that requires many chained <code>if</code> conditions:</p>
 
-<pre><code>esito = 0;
+<pre><code>outcome = 0;
 
-if ( &lt;condizione 1&gt; ) {
-    esito = 1;
-} else if ( &lt;condizione 2&gt; ) {
-    esito = 2;
-} else if ( &lt;condizione 3&gt; ) {
-    esito = 3;
+if ( &lt;condition 1&gt; ) {
+    outcome = 1;
+} else if ( &lt;condition 2&gt; ) {
+    outcome = 2;
+} else if ( &lt;condition 3&gt; ) {
+    outcome = 3;
 } else {
-    esito = 9;
+    outcome = 9;
 }
 
-return esito
+return outcome
 </code></pre>
 
 <p>This form, however correct and formally impeccable, could turn out to be hard to manage if the conditions to consider were very complex or numerous.
 The good programmer, in that case, may decide to break the (correct) rule that says not to put <code>return</code> instructions inside the code, and write the sequence like this:</p>
 
-<pre><code>esito = 0;
+<pre><code>outcome = 0;
 
-if ( &lt;condizione 1&gt; ) {
+if ( &lt;condition 1&gt; ) {
     return 1;
 }
-if ( &lt;condizione 2&gt; ) {
+if ( &lt;condition 2&gt; ) {
     return 2;
 }
-if ( &lt;condizione 3&gt; ) {
+if ( &lt;condition 3&gt; ) {
     return 3;
 }
 
@@ -265,24 +265,24 @@ return 9
 For example, for a system that generates code automatically, it’s much simpler to handle isolated <code>if</code> instructions than chained <code>if-else</code> conditions.
 Think of a <em>stored procedure</em> that has to check the referential integrity of the parameters it receives:</p>
 
-<pre><code>CREATE FUNCTION utente_insert (
-  _id_classe INTEGER
-, _id_gruppo INTEGER
+<pre><code>CREATE FUNCTION user_insert (
+  _class_id  INTEGER
+, _group_id  INTEGER
 , _username  VARCHAR(255)
-, _cognome   VARCHAR(80)
-, _nome      VARCHAR(80)
+, _lastname  VARCHAR(80)
+, _firstname VARCHAR(80)
 )
 RETURNS INTEGER DETERMINISTIC
 BEGIN
     DECLARE _id    INTEGER DEFAULT -1;
     DECLARE _count INTEGER DEFAULT 0;
 
-    SELECT count(*) INTO _count FROM classe WHERE (id = _id_classe);
+    SELECT count(*) INTO _count FROM class WHERE (id = _class_id);
     IF _count = 0 THEN
         RETURN -2;
     END IF;
 
-    SELECT count(*) INTO _count FROM gruppo WHERE (id = _id_gruppo);
+    SELECT count(*) INTO _count FROM user_group WHERE (id = _group_id);
     IF _count = 0 THEN
         RETURN -3;
     END IF;
@@ -290,12 +290,12 @@ BEGIN
     IF (_username IS NULL) OR (_username = '') THEN
         RETURN -4;
     END IF;
-    
-    IF (_cognome IS NULL) OR (_cognome = '') THEN
+
+    IF (_lastname IS NULL) OR (_lastname = '') THEN
         RETURN -5;
     END IF;
 
-    IF (_nome IS NULL) OR (_nome = '') THEN
+    IF (_firstname IS NULL) OR (_firstname = '') THEN
         RETURN -6;
     END IF;
 
@@ -307,13 +307,13 @@ BEGIN
 You’ll lose a bit of execution speed, but the code will be much easier to write or modify.
 Be careful, though: putting simple <code>if</code> instructions in sequence is quite different from building a chain of <code>else-if</code> instructions, because, if you don’t halt processing with a <code>return</code> instruction in case of an error, the program will keep going, checking the following conditions, and the error in the first condition could have knock-on effects on the code that follows:</p>
 
-<pre><code>/** Qui comincia il male.. **/
-if ( divisore == 0 ) {
-    cout &lt;&lt; "Errore: divisione per zero" &lt;&lt; endl;
+<pre><code>/** Here's where trouble begins.. **/
+if ( divisor == 0 ) {
+    cout &lt;&lt; "Error: division by zero" &lt;&lt; endl;
 }
 
-/** ..e il peggio lo segue **/
-if ( (dividendo / divisore) &gt; 1 ) {
+/** ..and worse follows **/
+if ( (dividend / divisor) &gt; 1 ) {
     ...
 }
 </code></pre>
@@ -324,12 +324,12 @@ if ( (dividendo / divisore) &gt; 1 ) {
 
 <p>The <code>switch</code> instruction lets you handle multiple cases, based on the evaluation of an expression:</p>
 
-<pre><code>switch(&lt;espressione&gt;)
+<pre><code>switch(&lt;expression&gt;)
 {
-    case &lt;costante&gt; : istruzioni... [break];
-    case &lt;costante&gt; : istruzioni... [break];
+    case &lt;constant&gt; : instructions... [break];
+    case &lt;constant&gt; : instructions... [break];
     ...
-    default: istruzioni...
+    default: instructions...
 }
 </code></pre>
 
@@ -342,67 +342,67 @@ If the expression has a value not covered by any <code>case</code>, the instruct
 <pre><code>#include &lt;iostream&gt;
 #include &lt;cstdlib&gt;
 
-#define POS_NESSUNO -1
-#define POS_ERRORE   0
-#define POS_MERCURIO 1
-#define POS_VENERE   2
-#define POS_TERRA    3
-#define POS_MARTE    4
-#define POS_GIOVE    5
-#define POS_SATURNO  6
-#define POS_URANO    7
-#define POS_NETTUNO  8
-#define POS_PLUTONE  9
+#define POS_NONE     -1
+#define POS_ERROR     0
+#define POS_MERCURY   1
+#define POS_VENUS     2
+#define POS_EARTH     3
+#define POS_MARS      4
+#define POS_JUPITER   5
+#define POS_SATURN    6
+#define POS_URANUS    7
+#define POS_NEPTUNE   8
+#define POS_PLUTO     9
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    int pianeta;
-    
-    /** 
-     * Legge i parametri di input.
-     * Se ce ne sono, prova a convertire il primo parametro 
-     * in un intero. Se il parametro non è un intero, la 
-     * funzione atoi torna 0. 
+{
+    int planet;
+
+    /**
+     * Reads the input parameters.
+     * If there are any, tries to convert the first parameter
+     * into an integer. If the parameter isn't an integer, the
+     * atoi function returns 0.
      */
     if(argc &gt; 1) {
-        pianeta = atoi(argv[1]);
+        planet = atoi(argv[1]);
     } else {
-        pianeta = POS_NESSUNO;
+        planet = POS_NONE;
     }
-    
-    /** Gestisce i casi possibili */
-    switch( pianeta ) {
-        case POS_ERRORE:   cout &lt;&lt; "Valore non valido"; 
+
+    /** Handles the possible cases */
+    switch( planet ) {
+        case POS_ERROR:   cout &lt;&lt; "Invalid value";
             break;
-        case POS_MERCURIO: cout &lt;&lt; "Mercurio";          
+        case POS_MERCURY: cout &lt;&lt; "Mercury";
             break;
-        case POS_VENERE:   cout &lt;&lt; "Venere";            
+        case POS_VENUS:   cout &lt;&lt; "Venus";
             break;
-        case POS_TERRA:    cout &lt;&lt; "Terra";             
+        case POS_EARTH:   cout &lt;&lt; "Earth";
             break;
-        case POS_MARTE:    cout &lt;&lt; "Marte";             
+        case POS_MARS:    cout &lt;&lt; "Mars";
             break;
-        case POS_GIOVE:    cout &lt;&lt; "Giove";             
+        case POS_JUPITER: cout &lt;&lt; "Jupiter";
             break;
-        case POS_SATURNO:  cout &lt;&lt; "Saturno";           
+        case POS_SATURN:  cout &lt;&lt; "Saturn";
             break;
-        case POS_URANO:    cout &lt;&lt; "Urano";             
-            break;          
-        case POS_NETTUNO:  cout &lt;&lt; "Nettuno";           
-            break;          
-        case POS_PLUTONE:  cout &lt;&lt; "Plutone";           
+        case POS_URANUS:  cout &lt;&lt; "Uranus";
+            break;
+        case POS_NEPTUNE: cout &lt;&lt; "Neptune";
+            break;
+        case POS_PLUTO:   cout &lt;&lt; "Pluto";
             break;
         default:
-            cout &lt;&lt; "Inserire un valore da: " 
-                 &lt;&lt; POS_MERCURIO 
-                 &lt;&lt; " a " 
-                 &lt;&lt; POS_PLUTONE;                    
+            cout &lt;&lt; "Enter a value from: "
+                 &lt;&lt; POS_MERCURY
+                 &lt;&lt; " to "
+                 &lt;&lt; POS_PLUTO;
     }
-    
+
     cout &lt;&lt; endl;
-    
+
     return 0;
 }
 
@@ -410,30 +410,30 @@ int main(int argc, char** argv)
 
 <p>Compiling and running this code, you’ll get:</p>
 
-<pre><code>% g++ src/cpp/istruzioni-condizionali-switch.cpp -o src/out/esempio
-% src/out/esempio                                                  
-Inserire un valore da: 1 a 9
-% src/out/esempio 4
-Marte
-% src/out/esempio terra
-Valore non valido
+<pre><code>% g++ src/cpp/conditional-instructions-switch.cpp -o src/out/example
+% src/out/example                                                  
+Enter a value from: 1 to 9
+% src/out/example 4
+Mars
+% src/out/example earth
+Invalid value
 </code></pre>
 
 <p>In essence: with a <code>break</code> at the end of each case, the <code>switch</code> instruction is a more elegant (and efficient) form of the <code>if - else if</code> instruction:</p>
 
-<pre><code>if(pianeta == POS_ERRORE) {
-   cout &lt;&lt; "Valore non valido";
-} else if(pianeta == POS_MERCURIO) {
-    cout &lt;&lt; "Mercurio";
-} else if(pianeta == POS_VENERE) {
-    cout &lt;&lt; "Venere";   
+<pre><code>if(planet == POS_ERROR) {
+   cout &lt;&lt; "Invalid value";
+} else if(planet == POS_MERCURY) {
+    cout &lt;&lt; "Mercury";
+} else if(planet == POS_VENUS) {
+    cout &lt;&lt; "Venus";   
 } else if ..         
 </code></pre>
 
 <p>If you removed the <code>break</code>s at the end of each case, the program’s output would be:</p>
 
-<pre><code>% src/out/esempio 4    
-MarteGioveSaturnoUranoNettunoPlutoneInserire un valore da: 1 a 9
+<pre><code>% src/out/example 4    
+MarsJupiterSaturnUranusNeptunePlutoEnter a value from: 1 to 9
 </code></pre>
 
 <p>which makes no sense in this particular case, but which can be the right choice when two possible cases need to be handled the same way.
@@ -441,11 +441,11 @@ One last thing: always remember that, to declare variables inside a <code>case</
 
 <pre><code>switch( x ) {
     case 1:
-        int y = 9;      /** errore di compilazione */
+        int y = 9;      /** compile error */
         cout &lt;&lt; x + y;
         break;
     case 2: {
-        int y = 2;      /** corretto */
+        int y = 2;      /** correct */
         cout &lt;&lt; x + y ;
         break;
     }
@@ -480,15 +480,15 @@ in truth I did it only to myself.<a class="nota" href="/en/notes#fn-mantiq" id="
 <p>But how do you know what’s <em>good</em>?
 There are cases where it’s easy to make the right choice, as with Zen master Bokuju:<a class="nota" href="/en/notes#fn-bokuju" id="bokuju">3</a></p>
 
-<pre><code>switch( stimolo ) {
-    case fame:  
-        azione = mangio;
+<pre><code>switch( stimulus ) {
+    case hunger:  
+        action = eat;
         break;
-    case sonno:
-        azione = dormo;
+    case sleepiness:
+        action = sleep;
         break;
-    case sete:  
-        azione = bevo;
+    case thirst:  
+        action = drink;
         break;
 }
 </code></pre>
@@ -552,17 +552,17 @@ Even some people who had initially supported him accused him of currying favor w
 <p>Answering the question about the convicted man is harder.
 The purpose of your actions must always be improvement: whoever makes a mistake must understand that they’ve made an error, and not repeat it in other cycles of existence:</p>
 
-<pre><code>int pentimento( azione ){
+<pre><code>int repentance( action ){
 
-    bool ripetere;
+    bool repeat;
 
-    if ( azione == errore ) {
-        ripetere = false;
+    if ( action == mistake ) {
+        repeat = false;
     } else {
-        ripetere = true;
+        repeat = true;
     }
 
-    return ripetere;
+    return repeat;
 }
 </code></pre>
 <p>If the sinner truly repents, then it’s right that they be absolved, because, as Attar says:</p>
@@ -599,31 +599,6 @@ Master Canaro then nodded and said:
 “All right, but before we begin, tell me whether you want to win or lose this exchange, so that I can oblige you.”
 Hearing those words, the Buddhist teacher realized his intentions were not pure: he didn’t want that challenge to arrive at the truth, only for the pleasure of winning.
 So he bowed, thanked Master Canaro for making him see that weakness in himself, and from that moment on became his disciple.</p>
-
-<!--
-
-@todo
-
-Il Metta Sutra predica la benevolenza per tutti gli "esseri che respirano"
-
-> Ye keci pàõa-bhåt' atthi
-
-<p class="metta">
-<i>Ye keci</i> Ciascun<br />
-<i>pàõa-</i>   respirante<br />
-<i>bhåt'</i>   essere<br />
-<i>atthi</i>   che esiste<br />
-</p>
-
-allora, perché Nansen taglia in due il gatto? e perché i maestri Zen potevano uccidere i loro discepoli?
-Ho cercato la definizione di "senziente", ma non mi sembra che ci sia una risposta univoca.
-In attesa di accertare la questione (posto che sia possibile),
-
-Il Contrappasso:
-
-6. citare l'esempio del notaio in un'auto guidata da un sistema di IA e del sito che cerca di creare un'etica accumulando pareri (non fornire soluzione, per ora?);
-
--->
 
             </section>
         
