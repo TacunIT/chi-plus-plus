@@ -1,80 +1,80 @@
-/** 
- * @file classi-struttura-orario.cpp
- * Gestione dei dati membro di una struct.
+/**
+ * @file classes-time-struct.cpp
+ * Handling the member data of a struct.
  */
- 
+
 #include <iostream>
-#include <iomanip> 
+#include <iomanip>
 
 using namespace std;
 
-/** Dichiarazione di una struttura per gestire un orario */
-struct Orario {
+/** Declaration of a structure to handle a time */
+struct Time {
     int h;
     int m;
     int s;
 };
 
-/** Funzione per l'incremento dei minuti */
-void aggiornaMinuti(struct Orario &o, int minuti) 
+/** Function to increment the minutes */
+void updateMinutes(struct Time &t, int minutes)
 {
-    /** Incrementa il numero dei minuti */
-    o.m += minuti;
-    
-    /** Se necessario, incrementa le ore */
-    if(o.m >= 60) {
+    /** Increments the number of minutes */
+    t.m += minutes;
 
-        o.m -= 60;
-        o.h += 1;
-        
-        /** Se necessario, passa al giorno dopo */
-        if(o.h >= 24) {
-            o.h -= 24;
+    /** If needed, increments the hours */
+    if(t.m >= 60) {
+
+        t.m -= 60;
+        t.h += 1;
+
+        /** If needed, moves on to the next day */
+        if(t.h >= 24) {
+            t.h -= 24;
         }
     }
 }
 
-/*  Funzione cialtrona per l'incremento dei minuti */
-void incrementa_m(struct Orario &o, int minuti) 
+/*  Sloppy function to increment the minutes */
+void increment_m(struct Time &t, int minutes)
 {
-    o.m += minuti;
+    t.m += minutes;
 }
 
 int main()
-{    
-    struct Orario ora;
+{
+    struct Time now;
 
-    /** Definisce dei valori iniziali prossimi al cambio di data */
-    ora.h = 23;
-    ora.m = 45;
-    ora.s = 00;
+    /** Sets initial values close to the date change */
+    now.h = 23;
+    now.m = 45;
+    now.s = 00;
 
-    /** Visualizza i valri iniziali */
-    cout << setfill('0') << setw(2) << ora.h << ":" 
-         << setfill('0') << setw(2) << ora.m << ":" 
-         << setfill('0') << setw(2) << ora.s << endl;
+    /** Displays the initial values */
+    cout << setfill('0') << setw(2) << now.h << ":"
+         << setfill('0') << setw(2) << now.m << ":"
+         << setfill('0') << setw(2) << now.s << endl;
 
-    /** Richiama la funzione di aggiornamento */
-    aggiornaMinuti(ora, 20);
-    
-    /** Visualizza i valori dopo l'aggiornamento */
-    cout << setfill('0') << setw(2) << ora.h << ":" 
-         << setfill('0') << setw(2) << ora.m << ":" 
-         << setfill('0') << setw(2) << ora.s << endl;
+    /** Calls the update function */
+    updateMinutes(now, 20);
 
-    /** Reimposta i valori iniziali */
-    ora.h = 23;
-    ora.m = 45;
-    ora.s = 00;
+    /** Displays the values after the update */
+    cout << setfill('0') << setw(2) << now.h << ":"
+         << setfill('0') << setw(2) << now.m << ":"
+         << setfill('0') << setw(2) << now.s << endl;
 
-    /** Richiama la funzione cialtrona */
-    incrementa_m(ora, 20);
-    
-    /** Visualizza i valori dopo l'aggiornamento */
-    cout << setfill('0') << setw(2) << ora.h << ":" 
-         << setfill('0') << setw(2) << ora.m << ":" 
-         << setfill('0') << setw(2) << ora.s << endl;
+    /** Resets the initial values */
+    now.h = 23;
+    now.m = 45;
+    now.s = 00;
 
-    
+    /** Calls the sloppy function */
+    increment_m(now, 20);
+
+    /** Displays the values after the update */
+    cout << setfill('0') << setw(2) << now.h << ":"
+         << setfill('0') << setw(2) << now.m << ":"
+         << setfill('0') << setw(2) << now.s << endl;
+
+
     return 0;
 }

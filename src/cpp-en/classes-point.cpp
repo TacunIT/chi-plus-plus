@@ -1,44 +1,41 @@
-/** 
- * @file classi-punto.cpp
- * Accesso ai dati membro della classe.
+/**
+ * @file classes-point.cpp
+ * Access to the class's member data.
  */
- 
-#include <iostream>
-#include <iomanip> 
 
 using namespace std;
 
-class Punto
+class Point
 {
-public:             
-    
-    /** Dichiara i dati membro della classe */
+public:
+
+    /** Declares the class's member data */
     int _x, _y;
 
-    /** 
-     *  Le funzioni interne alla classe accedono ai
-     *  dati membro con la sintassi ordinaria.
-     */  
-    Punto(int x, int y) {
+    /**
+     *  Functions internal to the class access
+     *  member data with ordinary syntax.
+     */
+    Point(int x, int y) {
         _x = x;
         _y = y;
     }
 } ;
 
-int main(int argc, char** argv) 
+int main(int argc, char** argv)
 {
-    /** Crea un oggetto di classe Punto */
-    Punto p(5,6);       
+    /** Creates an object of class Point */
+    Point p(5,6);
 
-    /** Assegna l'istanza della classe al puntatore ptr */
-    Punto *ptr = &p ;   
-    
-    /** 
-     *  Le funzioni esterne alla classe accedono ai
-     *  dati membro tramite gli operatori di selezione.
-     */  
-    p._x    = 3 ;       // assegna un valore tramite l'oggetto
-    ptr->_y = 2 ;       // assegna un valore tramite il puntatore
-    
+    /** Assigns the class instance to the pointer ptr */
+    Point *ptr = &p ;
+
+    /**
+     *  Functions external to the class access
+     *  member data through selection operators.
+     */
+    p._x    = 3 ;       // assigns a value through the object
+    ptr->_y = 2 ;       // assigns a value through the pointer
+
     //...
 }

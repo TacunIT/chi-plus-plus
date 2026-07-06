@@ -1,58 +1,57 @@
-/** 
- * @file classi-pesce.cpp
- * Definizione della classe Pesce.
+/**
+ * @file classes-fish.cpp
+ * Definition of the Fish class.
  */
- 
+
 #include <iostream>
-#include <iomanip> 
 
 using namespace std;
 
 /**
- *  Dichiarazione della classe: idea
+ *  Declaration of the class: idea
  */
-class Pesce {
+class Fish {
 private:
 
-    /** Dati membro privati */
-    string _specie;
-    bool   _commestibile;
-    
+    /** Private member data */
+    string _species;
+    bool   _edible;
+
 public:
-    
-    /** Costruttore della classe inline */
-    Pesce(const char* specie, bool commestibile) 
-    : _specie(specie), _commestibile(commestibile)
+
+    /** Inline class constructor */
+    Fish(const char* species, bool edible)
+    : _species(species), _edible(edible)
     {
     }
-    
-    /** Costruttore di copia inline */
-    Pesce(const Pesce& p) {
-        this->_specie       = p._specie;
-        this->_commestibile = p._commestibile;
+
+    /** Inline copy constructor */
+    Fish(const Fish& f) {
+        this->_species = f._species;
+        this->_edible  = f._edible;
     }
 
-    /** Distruttore inline */
-    ~Pesce() { 
+    /** Inline destructor */
+    ~Fish() {
     }
 
-    /** Funzioni di interfaccia */
-    const char* getSpecie() { return _specie.c_str(); }
-    bool isCommestibile()   { return _commestibile;   }
+    /** Interface functions */
+    const char* getSpecies() { return _species.c_str(); }
+    bool isEdible()          { return _edible;           }
 
 };
 
 
 /**
- *  Istanza della classe: forma
+ *  Instance of the class: form
  */
 int main()
-{             
-    Pesce pesce("spigola", true);
-    
-    cout << pesce.getSpecie() << ": "
-         << (pesce.isCommestibile() ? "sì" : "no")
+{
+    Fish fish("seabass", true);
+
+    cout << fish.getSpecies() << ": "
+         << (fish.isEdible() ? "yes" : "no")
          << endl;
-     
+
     return 0;
 }

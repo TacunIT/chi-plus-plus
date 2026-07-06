@@ -1,53 +1,53 @@
-/** 
- * @file classi-static.cpp
- * Funzioni e dati membro statici di una classe.
+/**
+ * @file classes-static.cpp
+ * Static functions and member data of a class.
  */
- 
+
 #include <iostream>
 
 using namespace std;
 
-/** Classe generica con membri statici */
-class Contatore {
+/** Generic class with static members */
+class Counter {
 private:
 
-    /** Definisce il dato statico */
-    static int _nIstanze;     
+    /** Defines the static data */
+    static int _nInstances;
 
 public:
-    
-    /** Il costruttore incrementa il numero di istanze */
-    Contatore() {
-        _nIstanze++;
+
+    /** The constructor increments the number of instances */
+    Counter() {
+        _nInstances++;
     }
-    
-    /** Funzione di interfaccia statica */
-    static int nIstanze() {  
-        return _nIstanze;
+
+    /** Static interface function */
+    static int nInstances() {
+        return _nInstances;
     }
 };
 
-/** Inizializza il membro statico  */ 
-int Contatore::_nIstanze = 0;
+/** Initializes the static member  */
+int Counter::_nInstances = 0;
 
 int main()
-{    
-    /** Crea la prima istanza della classe */
-    Contatore c1;
+{
+    /** Creates the first instance of the class */
+    Counter c1;
 
-    /** Richiama la funzione statica dall'oggetto */
-    cout << "Da istanza c1: " << c1.nIstanze() << endl;
+    /** Calls the static function from the object */
+    cout << "From instance c1: " << c1.nInstances() << endl;
 
-    /** Crea altre due istanze della classe */
-    Contatore c2, c3;
-   
-    /** 
-     * Richiama la funzione statica dagli oggetti 
-     * e direttamente dalla classe
+    /** Creates two more instances of the class */
+    Counter c2, c3;
+
+    /**
+     * Calls the static function from the objects
+     * and directly from the class
      */
-    cout << "Da istanza c2: "<< c2.nIstanze()         << endl;
-    cout << "Da istanza c3: "<< c3.nIstanze()         << endl;
-    cout << "Dalla classe : "<< Contatore::nIstanze() << endl;
-    
+    cout << "From instance c2: "<< c2.nInstances()         << endl;
+    cout << "From instance c3: "<< c3.nInstances()         << endl;
+    cout << "From the class : "<< Counter::nInstances() << endl;
+
     return 0;
 }

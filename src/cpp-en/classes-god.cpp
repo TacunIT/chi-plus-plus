@@ -1,71 +1,71 @@
-/** 
- * @file classi-dio.cpp
- * Dichiarazione della classe Dio.
+/**
+ * @file classes-god.cpp
+ * Declaration of the God class.
  */
- 
+
 #include <iostream>
 #include <list>
 
 
 using namespace std;
 
-// Classe astratta da utilizzare come base
-// per tutti gli elementi del Creato.
-class Creatura {
+// Abstract class to be used as a base
+// for all the elements of Creation.
+class Creature {
 public:
-   // Funzione virtuale pura di verifica.
+   // Pure virtual verification function.
    virtual bool isGood() = 0;
-   
+
 };
 
-// Classi derivate per la gestione degli 
-// elementi del Creato.
-class Mare   : public Creatura {
-    bool isGood() { return true; }; 
+// Derived classes for handling the
+// elements of Creation.
+class Sea    : public Creature {
+    bool isGood() { return true; };
 };
-class Uomo   : public Creatura { 
-    bool isGood(); 
+class Man    : public Creature {
+    bool isGood();
 };
-class Donna  : public Creatura {};
-class Padre  : public Uomo     {};
-class Figlio : public Uomo     {};
-class Popolo : public list<Creatura> {};
+class Woman  : public Creature {};
+class Father : public Man      {};
+class Son    : public Man      {};
+class People : public list<Creature> {};
 
 class  {
 private:
 
-    // Funzioni membro per la generazione degli elementi 
-    // del Creato, accessibili solo alla classe. 
-    Creatura* creaLuce();
-    Creatura* creaStelle();
-    Creatura* creaAcquaTerra();
-    Creatura* creaPiante();
-    Creatura* creaSoleLuna();
-    Creatura* creaAnimali();
+    // Member functions for generating the elements
+    // of Creation, accessible only to the class.
+    Creature* createLight();
+    Creature* createStars();
+    Creature* createWaterEarth();
+    Creature* createPlants();
+    Creature* createSunMoon();
+    Creature* createAnimals();
 
-    // Funzioni per la generazione degli umani.
-    Uomo&  creaUomo();
-    Donna& creaDonna(Uomo& adamo);
+    // Functions for generating humans.
+    Man&   createMan();
+    Woman& createWoman(Man& adam);
 
-    // Interruzione per il settimo giorno.
-    void shabat();
-    
-    // Funzioni di interfaccia con gli umani.
-    bool popEden(Uomo& adamp, Donna& eva);
-    bool printComandamenti(ostream& tavole);
-    bool checkFede(Padre& abramo, Figlio& isacco);
-    bool splitAcque(Mare& marRosso, Popolo& ebrei);
+    // Break for the seventh day.
+    void shabbat();
+
+    // Interface functions with humans.
+    bool populateEden(Man& adam, Woman& eve);
+    bool printCommandments(ostream& tablets);
+    bool checkFaith(Father& abraham, Son& isaac);
+    bool splitWaters(Sea& redSea, People& hebrews);
 
 protected:
-    
-    // Funzione membro accessibile anche alle 
-    // classi figlio.
-    bool donaVita(Uomo& lazzaro);
-    
+
+    // Member function also accessible to
+    // child classes.
+    bool giveLife(Man& lazarus);
+
 public:
 
-     // Funzione membro pubblica.
-     // Torna il numero di preghiere da recitare.
-    int rimettiPeccati(Creatura* fedele);
-                   
-} Dio;
+     // Public member function.
+     // Returns the number of prayers to be recited.
+    int forgiveSins(Creature* believer);
+
+} God;
