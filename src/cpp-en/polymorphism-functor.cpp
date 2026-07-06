@@ -1,6 +1,6 @@
-/** 
- * @file src/polimorfismo-functor.cpp
- * Creazione di una classe functor.
+/**
+ * @file src/polymorphism-functor.cpp
+ * Creating a functor class.
  */
 
 #include <string>
@@ -10,44 +10,44 @@
 
 using namespace std;
 
-/** Dichiarazione della classe functor */
-class Cifra
+/** Declaration of the functor class */
+class Cipher
 {
 private:
 
-    int _chiave;
+    int _key;
 
 public:
-    
-    /** 
-    *   Il costruttore della classe ha come parametro
-    *   il valore della chiave di cifratura
+
+    /**
+    *   The class's constructor takes as a parameter
+    *   the value of the encryption key
     */
-    Cifra(int chiave) : _chiave(chiave) {  }
-  
-    /** Ridefinizione dell'operatore () */
+    Cipher(int key) : _key(key) {  }
+
+    /** Redefinition of the () operator */
     unsigned char operator () (unsigned char c) const {
-        return c + _chiave;
+        return c + _key;
     }
 };
 
 int main ()
 {
-    string pp("PippoPluto"); 
+    string fb("Foobar");
 
-    /** 
-    *   Richiama transform passando come parametro
-    *   un'istanza del functor, inizializzata con 
-    *   la chiave di cifratura.
+    /**
+    *   Calls transform passing as a parameter
+    *   an instance of the functor, initialized with
+    *   the encryption key.
     */
     transform(
-               pp.begin()   
-             , pp.end()     
-             , pp.begin()   
-             , Cifra(1)        
+               fb.begin()
+             , fb.end()
+             , fb.begin()
+             , Cipher(1)
              );
 
-    cout << pp << endl; 
-    
+    cout << fb << endl;
+
     return 0;
 }

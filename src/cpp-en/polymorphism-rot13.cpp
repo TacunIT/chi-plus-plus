@@ -1,25 +1,24 @@
-/** 
- * @file src/polimorfismo-rot13.cpp
- * Trasformazione di una stringa con una funzione.
+/**
+ * @file src/polymorphism-rot13.cpp
+ * Transforming a string with a function.
  */
 
 #include <string>
 #include <cctype>
 #include <iostream>
-#include <functional>
 
 using namespace std;
 
-/** 
-*   Funzione che converte i caratteri di una stringa in rot13  
-*   Il ROT13 è un algoritmo di cifratura piuttosto banale, 
-*   perché incrementa di 13 il valore di ciascun carattere. 
-*   Non è un algoritmo realmente sicuro, però, perché per 
-*   decifrare il testo crittografato basta crittografarlo 
-*   di nuovo.  
+/**
+*   Function that converts the characters of a string to rot13
+*   ROT13 is a fairly trivial cipher algorithm,
+*   because it shifts the value of each character by 13.
+*   It isn't a truly secure algorithm, though, because to
+*   decrypt the encrypted text all you need to do is encrypt
+*   it again.
 */
-unsigned char rot13(unsigned char c) 
-{ 
+unsigned char rot13(unsigned char c)
+{
     unsigned char rot = c;
     if (isalpha(c)) {
         rot = ((tolower(c) - 'a') < 14) ? c + 13 : c - 13;
@@ -29,27 +28,27 @@ unsigned char rot13(unsigned char c)
 
 int main ()
 {
-    string pp("PippoPluto"); 
+    string fb("Foobar");
 
-    /** Elabora la stringa con la funzione transform */
+    /** Processes the string with the transform function */
     transform(
-               pp.begin()   // inizio del container da modificare
-             , pp.end()     // fine del container da modificare
-             , pp.begin()   // container di output
-             , rot13        // funzione da applicare
+               fb.begin()   // start of the container to modify
+             , fb.end()     // end of the container to modify
+             , fb.begin()   // output container
+             , rot13        // function to apply
              );
 
-    cout << pp << endl; 
+    cout << fb << endl;
 
-    /** Ripetendo l'operazione, il testo torna normale. */
+    /** Repeating the operation restores the original text. */
     transform(
-               pp.begin()   
-             , pp.end()     
-             , pp.begin()   
-             , rot13        
+               fb.begin()
+             , fb.end()
+             , fb.begin()
+             , rot13
              );
 
-    cout << pp << endl; 
-    
+    cout << fb << endl;
+
     return 0;
 }

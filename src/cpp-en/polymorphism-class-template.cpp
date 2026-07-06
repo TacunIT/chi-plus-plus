@@ -1,6 +1,6 @@
-/** 
- * @file src/polimorfismo-classe-template.cpp
- * Esempio di classe template.
+/**
+ * @file src/polymorphism-class-template.cpp
+ * Example of a class template.
  */
 
 #include <iostream>
@@ -8,18 +8,18 @@
 using namespace std;
 
 /**
-*   Definisce una classe che gestisce coppie 
-*   di coordinate.
+*   Defines a class that handles pairs
+*   of coordinates.
 */
 template<class T>
 class Coord {
 private:
-    /** Dati membro con tipo variabile */
-    T _x, _y; 
+    /** Member data with variable type */
+    T _x, _y;
 public:
-    /** Costruttore con tipo di parametri variabile */
-    Coord(const T x, const T y) 
-    : _x(x), _y(y) {        
+    /** Constructor with variable parameter type */
+    Coord(const T x, const T y)
+    : _x(x), _y(y) {
     }
     friend ostream& operator << (ostream& o, const Coord& c) {
         o << c._x << ',' << c._y ;
@@ -28,15 +28,15 @@ public:
 };
 
 int main ()
-{         
-    /** Istanza con coordinate geografiche */
-    Coord<double> obelisco(41.903219, 12.458157);
-    
-    /** Istanza con coordinate schermo */
+{
+    /** Instance with geographic coordinates */
+    Coord<double> obelisk(41.903219, 12.458157);
+
+    /** Instance with screen coordinates */
     Coord<int>    pixel(821, 134);
-    
-    cout << "Obelisco:" << obelisco << endl;    
-    cout << "Pixel:   " << pixel    << endl;    
-    
+
+    cout << "Obelisk:" << obelisk << endl;
+    cout << "Pixel:   " << pixel    << endl;
+
     return 0;
 }

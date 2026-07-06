@@ -1,6 +1,6 @@
-/** 
- * @file src/polimorfismo-algoritmi.cpp
- * Esempio di utilizzo degli algoritmi della STL.
+/**
+ * @file src/polymorphism-algorithms.cpp
+ * Example use of STL algorithms.
  */
 
 #include <iostream>
@@ -11,42 +11,42 @@ using namespace std;
 
 int main()
 {
-    /** Crea il vettore */
+    /** Creates the vector */
     vector<int> vect;
 
-    /** Aggiunge dei valori al vettore */
+    /** Adds values to the vector */
     vect.push_back(10);
     vect.push_back(70);
     vect.push_back(21);
     vect.push_back(49);
     vect.push_back(35);
 
-    /** Mostra il valore più alto e il più basso */
+    /** Shows the highest and lowest values */
     cout << *min_element(vect.begin(), vect.end()) << endl;
     cout << *max_element(vect.begin(), vect.end()) << endl;
-    
-    /** Mostra i valori nell'ordine in cui sono stati inseriti */
+
+    /** Shows the values in the order they were inserted */
     vector<int>::iterator i;
     for(i = vect.begin(); i != vect.end(); i++) {
         cout << *i << " ";
     }
     cout << endl;
 
-    /** Ordina i valori dal più basso al più alto e li visualizza */
+    /** Sorts the values from lowest to highest and displays them */
     int n = vect.size();
     sort(vect.begin(), vect.end());
     for (int i=0; i<n; i++) {
-        cout << vect[i] << " ";       
+        cout << vect[i] << " ";
     }
     cout << endl;
 
-    /** Ordina i valori dal più alto al più basso e li visualizza */
+    /** Sorts the values from highest to lowest and displays them */
     reverse(vect.begin(), vect.end());
     for (int i=0; i<n; i++) {
-        cout << vect[i] << " ";       
+        cout << vect[i] << " ";
     }
     cout << endl;
 
- 
+
     return 0;
 }

@@ -1,6 +1,6 @@
-/** 
- * @file src/polimorfismo-operatori.cpp
- * Esempio di overload di un operatore.
+/**
+ * @file src/polymorphism-operators.cpp
+ * Example of operator overloading.
  */
 
 #include <iostream>
@@ -10,13 +10,13 @@ using namespace std;
 
 int main ()
 {
-    string s1 ("Pip");
-    string s2 ("po");
-    const char* s3 = "Plut";
+    string s1 ("Foo");
+    string s2 ("ba");
+    const char* s3 = "r";
 
-    /** 
-     *  La classe string definisce tre overload 
-     *  per l'operatore += .
+    /**
+     *  The string class defines three overloads
+     *  for the += operator.
      *
      *  string& operator+= (const string& str);
      *  string& operator+= (const char* s);
@@ -25,7 +25,7 @@ int main ()
     s1 += s2;
     s1 += s3;
 
-    cout << (s1 + 'o') << endl;
+    cout << (s1 + '!') << endl;
 
     return 0;
 }

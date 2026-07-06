@@ -377,9 +377,9 @@ a = b + c ;
 <p>The behavior of operators is predefined for all standard types, and can be redefined to also handle aggregate data types like structs or classes.
 C++’s standard library <code>string</code> class, for example, redefines, among other things, the behavior of the assignment operators <code>+=</code> and <code>+</code> and of the stream output operator <code>&lt;&lt;</code>, so that operations on strings can use the same syntax used for other data types:</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-operatori.cpp
- * Esempio di overload di un operatore.
+<pre><code>/**
+ * @file src/polymorphism-operators.cpp
+ * Example of operator overloading.
  */
 
 #include &lt;iostream&gt;
@@ -389,13 +389,13 @@ using namespace std;
 
 int main ()
 {
-    string s1 ("Pip");
-    string s2 ("po");
-    const char* s3 = "Plut";
+    string s1 ("Foo");
+    string s2 ("ba");
+    const char* s3 = "r";
 
-    /** 
-     *  La classe string definisce tre overload 
-     *  per l'operatore += .
+    /**
+     *  The string class defines three overloads
+     *  for the += operator.
      *
      *  string&amp; operator+= (const string&amp; str);
      *  string&amp; operator+= (const char* s);
@@ -404,7 +404,7 @@ int main ()
     s1 += s2;
     s1 += s3;
 
-    cout &lt;&lt; (s1 + 'o') &lt;&lt; endl;
+    cout &lt;&lt; (s1 + '!') &lt;&lt; endl;
 
     return 0;
 }
@@ -438,13 +438,12 @@ The only operators that cannot be redefined by a class are:</p>
 
 <p>Except for a few exceptions we’ll see shortly, every C++ operator can be redefined either as a class’s member function or as a global function:</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-in-out.cpp
- * Operatori come funzioni membro o globali.
+<pre><code>/**
+ * @file src/polymorphism-in-out.cpp
+ * Operators as member or global functions.
  */
 
 #include &lt;iostream&gt;
-#include &lt;string&gt;
 
 using namespace std;
 
@@ -457,21 +456,21 @@ struct A
 struct B
 {
     int _b;
-    B(int b) : _b(b) {};   
-    /** Overload come funzione membro */
+    B(int b) : _b(b) {};
+    /** Overload as a member function */
     int operator + (const A&amp; a) {
         return _b + a._a;
     }
 };
 
-/** Overload come funzione globale */
+/** Overload as a global function */
 int operator + (const A&amp; a, const B&amp; b) { return a._a + b._b; }
 
 int main ()
 {
     struct A a(3);
     struct B b(5);
-    
+
     cout &lt;&lt; (a + (b + a)) &lt;&lt; endl;
 
     return 0;
@@ -582,47 +581,45 @@ Frazione operator - (Frazione f, double i) ;
 
 <p>You can save yourself this hassle by only redefining the operators’ behavior for the new class, and giving the compiler conversion paths from primitive types to the new data type, so that it can convert the data to the right type in the case of mixed expressions:</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-cast.cpp
- * Gestione della conversione esplicita.
+<pre><code>/**
+ * @file src/polymorphism-cast.cpp
+ * Handling explicit conversion.
  */
-
-#include &lt;iostream&gt;
 
 using namespace std;
 
-class Frazione
+class Fraction
 {
 private:
-    
+
     int _num ;
     int _den ;
 
 public:
-    
-    /** Costruttore con parametri interi */
-    Frazione(int n, int d = 1) 
-    : _num(n), _den(d) {} 
-    
-    /** 
-     * Costruttore con parametro a virgola mobile.
-     * La definizione è piuttosto complessa, te la risparmio.  
+
+    /** Constructor with integer parameters */
+    Fraction(int n, int d = 1)
+    : _num(n), _den(d) {}
+
+    /**
+     * Constructor with a floating-point parameter.
+     * The definition is fairly complex, I'll spare you the details.
      */
-    Frazione(double d) ;
+    Fraction(double d) ;
 
-    /** Overload dell'operatore di cast a intero */
-    operator int () { 
-        return _num / _den ; 
+    /** Overload of the cast-to-int operator */
+    operator int () {
+        return _num / _den ;
     }
 
-    /** Overload dell'operatore di cast a double */
-    operator double() { 
-        return (double) _num / (double) _den ; 
+    /** Overload of the cast-to-double operator */
+    operator double() {
+        return (double) _num / (double) _den ;
     }
 
-    /** Overload degli operatori di somma e sottrazione */
-    friend Frazione operator+ (Frazione f1, Frazione f2); 
-    friend Frazione operator- (Frazione f1, Frazione f2); 
+    /** Overload of the addition and subtraction operators */
+    friend Fraction operator+ (Fraction f1, Fraction f2);
+    friend Fraction operator- (Fraction f1, Fraction f2);
 
 };
 
@@ -687,59 +684,58 @@ cout &lt;&lt; maggiore&lt;char&gt;  ('a', 'z') &lt;&lt; endl;
 <!-- @todo: verificare i casi in cui non c'è specifica del tipo di dato -->
 <p>The next example shows the difference between a precompiler macro and a template function:
 <!-- NOTA: se si cambia o si rimuove la macro nel codice, va aggiornato il testo del capitolo sul preprocessore --></p>
-<pre><code>/** 
- * @file src/polimorfismo-macro-template.cpp
- * Funzioni template e macro precompilatore.
+<pre><code>/**
+ * @file src/polymorphism-macro-template.cpp
+ * Template functions and precompiler macros.
  */
 
 #include &lt;iostream&gt;
-#include &lt;functional&gt;
 
 using namespace std;
 
 /**
-*  Definzione di una macro istruzione per il 
-*  precompilatore: nessun controllo di tipo.
+*  Definition of a precompiler macro
+*  instruction: no type checking.
 */
-#define MAGGIORE(a,b) ((a &gt; b) ? a : b) 
+#define GREATER(a,b) ((a &gt; b) ? a : b)
 
 /**
-*  Definzione di una funzione template
-*  che torna il maggiore fra due parametri.
+*  Definition of a template function
+*  that returns the greater of two parameters.
 */
 template&lt;class T&gt;
-T maggiore (T x, T y) {
+T greater (T x, T y) {
     return (x &gt; y) ? x : y;
 }
 
 int main ()
-{     
+{
     int    a = 10;
-    short  b = 0;   
+    short  b = 0;
     double d = 3.123456789;
-    
-    /** Utilizzo della macro */
-    cout &lt;&lt; MAGGIORE(9,12)     &lt;&lt; endl;    
-    cout &lt;&lt; MAGGIORE(0.4, 0.7) &lt;&lt; endl;    
-    cout &lt;&lt; MAGGIORE('a', 'z') &lt;&lt; endl;    
 
-    /** 
-    *  La stessa funzione si può utilizzare 
-    *  con tipi di dato diversi:
-    */
-    cout &lt;&lt; maggiore&lt;int&gt;   (  9,  12) &lt;&lt; endl;    
-    cout &lt;&lt; maggiore&lt;double&gt;(0.4, 1.2) &lt;&lt; endl;    
-    cout &lt;&lt; maggiore&lt;char&gt;  ('a', 'z') &lt;&lt; endl;    
-   
-    /** Errore: confronta un carattere con un double */
-    cout &lt;&lt; MAGGIORE('a', d) &lt;&lt; endl;    
+    /** Using the macro */
+    cout &lt;&lt; GREATER(9,12)     &lt;&lt; endl;
+    cout &lt;&lt; GREATER(0.4, 0.7) &lt;&lt; endl;
+    cout &lt;&lt; GREATER('a', 'z') &lt;&lt; endl;
 
     /**
-    *   Errore: il compilatore non sa quale
-    *   dei due tipi di dato utilizzare.
+    *  The same function can be used
+    *  with different data types:
     */
-    cout &lt;&lt; maggiore(a, b) &lt;&lt; endl;    
-    
+    cout &lt;&lt; greater&lt;int&gt;   (  9,  12) &lt;&lt; endl;
+    cout &lt;&lt; greater&lt;double&gt;(0.4, 1.2) &lt;&lt; endl;
+    cout &lt;&lt; greater&lt;char&gt;  ('a', 'z') &lt;&lt; endl;
+
+    /** Error: compares a character with a double */
+    cout &lt;&lt; GREATER('a', d) &lt;&lt; endl;
+
+    /**
+    *   Error: the compiler doesn't know which
+    *   of the two data types to use.
+    */
+    cout &lt;&lt; greater(a, b) &lt;&lt; endl;
+
     return 0;
 }
 
@@ -785,9 +781,9 @@ T maggiore (T x, T y) {
 <p>The list of parameters between the <code>&lt;&gt;</code> symbols can contain one or more symbols for the data types the class handles.
 Using these classes is similar to using template functions:</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-classe-template.cpp
- * Esempio di classe template.
+<pre><code>/**
+ * @file src/polymorphism-class-template.cpp
+ * Example of a class template.
  */
 
 #include &lt;iostream&gt;
@@ -795,18 +791,18 @@ Using these classes is similar to using template functions:</p>
 using namespace std;
 
 /**
-*   Definisce una classe che gestisce coppie 
-*   di coordinate.
+*   Defines a class that handles pairs
+*   of coordinates.
 */
 template&lt;class T&gt;
 class Coord {
 private:
-    /** Dati membro con tipo variabile */
-    T _x, _y; 
+    /** Member data with variable type */
+    T _x, _y;
 public:
-    /** Costruttore con tipo di parametri variabile */
-    Coord(const T x, const T y) 
-    : _x(x), _y(y) {        
+    /** Constructor with variable parameter type */
+    Coord(const T x, const T y)
+    : _x(x), _y(y) {
     }
     friend ostream&amp; operator &lt;&lt; (ostream&amp; o, const Coord&amp; c) {
         o &lt;&lt; c._x &lt;&lt; ',' &lt;&lt; c._y ;
@@ -815,16 +811,16 @@ public:
 };
 
 int main ()
-{         
-    /** Istanza con coordinate geografiche */
-    Coord&lt;double&gt; obelisco(41.903219, 12.458157);
-    
-    /** Istanza con coordinate schermo */
+{
+    /** Instance with geographic coordinates */
+    Coord&lt;double&gt; obelisk(41.903219, 12.458157);
+
+    /** Instance with screen coordinates */
     Coord&lt;int&gt;    pixel(821, 134);
-    
-    cout &lt;&lt; "Obelisco:" &lt;&lt; obelisco &lt;&lt; endl;    
-    cout &lt;&lt; "Pixel:   " &lt;&lt; pixel    &lt;&lt; endl;    
-    
+
+    cout &lt;&lt; "Obelisk:" &lt;&lt; obelisk &lt;&lt; endl;
+    cout &lt;&lt; "Pixel:   " &lt;&lt; pixel    &lt;&lt; endl;
+
     return 0;
 }
 
@@ -871,9 +867,9 @@ The second instruction checks that the iterator is different from <code>monte.en
 The third instruction increments the iterator by one position, and shows how redefining an operator for a class makes the code easier to read: even if you’ve never seen a template class before, you can immediately tell that instruction increments the value of <code>it</code> by one.
 The <i id="algoritmi-stl">algorithms</i> of the STL, defined in the <code>&lt;algorithm&gt;</code> header, are template functions that let you locate, copy, sort, merge, or remove data within a container.</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-algoritmi.cpp
- * Esempio di utilizzo degli algoritmi della STL.
+<pre><code>/**
+ * @file src/polymorphism-algorithms.cpp
+ * Example use of STL algorithms.
  */
 
 #include &lt;iostream&gt;
@@ -884,43 +880,43 @@ using namespace std;
 
 int main()
 {
-    /** Crea il vettore */
+    /** Creates the vector */
     vector&lt;int&gt; vect;
 
-    /** Aggiunge dei valori al vettore */
+    /** Adds values to the vector */
     vect.push_back(10);
     vect.push_back(70);
     vect.push_back(21);
     vect.push_back(49);
     vect.push_back(35);
 
-    /** Mostra il valore più alto e il più basso */
+    /** Shows the highest and lowest values */
     cout &lt;&lt; *min_element(vect.begin(), vect.end()) &lt;&lt; endl;
     cout &lt;&lt; *max_element(vect.begin(), vect.end()) &lt;&lt; endl;
-    
-    /** Mostra i valori nell'ordine in cui sono stati inseriti */
+
+    /** Shows the values in the order they were inserted */
     vector&lt;int&gt;::iterator i;
     for(i = vect.begin(); i != vect.end(); i++) {
         cout &lt;&lt; *i &lt;&lt; " ";
     }
     cout &lt;&lt; endl;
 
-    /** Ordina i valori dal più basso al più alto e li visualizza */
+    /** Sorts the values from lowest to highest and displays them */
     int n = vect.size();
     sort(vect.begin(), vect.end());
     for (int i=0; i&lt;n; i++) {
-        cout &lt;&lt; vect[i] &lt;&lt; " ";       
+        cout &lt;&lt; vect[i] &lt;&lt; " ";
     }
     cout &lt;&lt; endl;
 
-    /** Ordina i valori dal più alto al più basso e li visualizza */
+    /** Sorts the values from highest to lowest and displays them */
     reverse(vect.begin(), vect.end());
     for (int i=0; i&lt;n; i++) {
-        cout &lt;&lt; vect[i] &lt;&lt; " ";       
+        cout &lt;&lt; vect[i] &lt;&lt; " ";
     }
     cout &lt;&lt; endl;
 
- 
+
     return 0;
 }
 
@@ -939,9 +935,9 @@ int main()
 
 <p>Function-classes, or <i id="functors-stl">functors</i>, are classes that redefine the behavior of the <code>()</code> operator, and can therefore act as if they were functions:</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-functor-stl.cpp
- * Esempio di function objects della STL.
+<pre><code>/**
+ * @file src/polymorphism-functor-stl.cpp
+ * Example of STL function objects.
  */
 
 #include &lt;iostream&gt;
@@ -954,21 +950,21 @@ int main ()
     int a = 12;
     int b = 4;
 
-    /** Dichiarazione di oggetti functor */
+    /** Declaration of functor objects */
     plus&lt;int&gt;       p;
     minus&lt;int&gt;      m;
     multiplies&lt;int&gt; x;
     divides&lt;int&gt;    d;
     modulus&lt;int&gt;    o;
 
-    /** Utilizzo degli oggetti come fossero delle funzioni */
+    /** Using the objects as if they were functions */
     cout &lt;&lt; "plus: "       &lt;&lt; p(a,b) &lt;&lt; endl;
     cout &lt;&lt; "minus: "      &lt;&lt; m(a,b) &lt;&lt; endl;
     cout &lt;&lt; "multiplies: " &lt;&lt; x(a,b) &lt;&lt; endl;
     cout &lt;&lt; "divides: "    &lt;&lt; d(a,b) &lt;&lt; endl;
-    cout &lt;&lt; "modulus: "    &lt;&lt; o(a,b) &lt;&lt; endl;
+    cout &lt;&lt; "modulus: "    &lt;&lt; o(a,5) &lt;&lt; endl;
 
-    /** "esegue"" l'oggetto o con nuovi parametri */
+    /** "runs" the object o with new parameters */
     cout &lt;&lt; "modulus: "    &lt;&lt; o(a,5) &lt;&lt; endl;
 
     return 0;
@@ -977,28 +973,27 @@ int main ()
 </code></pre>
 <p>Used this way, <em>functors</em> don’t make much sense, but they can be (and are) very useful when using those STL functions that process every element of a container, such as the <code>transform</code> function:</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-rot13.cpp
- * Trasformazione di una stringa con una funzione.
+<pre><code>/**
+ * @file src/polymorphism-rot13.cpp
+ * Transforming a string with a function.
  */
 
 #include &lt;string&gt;
 #include &lt;cctype&gt;
 #include &lt;iostream&gt;
-#include &lt;functional&gt;
 
 using namespace std;
 
-/** 
-*   Funzione che converte i caratteri di una stringa in rot13  
-*   Il ROT13 è un algoritmo di cifratura piuttosto banale, 
-*   perché incrementa di 13 il valore di ciascun carattere. 
-*   Non è un algoritmo realmente sicuro, però, perché per 
-*   decifrare il testo crittografato basta crittografarlo 
-*   di nuovo.  
+/**
+*   Function that converts the characters of a string to rot13
+*   ROT13 is a fairly trivial cipher algorithm,
+*   because it shifts the value of each character by 13.
+*   It isn't a truly secure algorithm, though, because to
+*   decrypt the encrypted text all you need to do is encrypt
+*   it again.
 */
-unsigned char rot13(unsigned char c) 
-{ 
+unsigned char rot13(unsigned char c)
+{
     unsigned char rot = c;
     if (isalpha(c)) {
         rot = ((tolower(c) - 'a') &lt; 14) ? c + 13 : c - 13;
@@ -1008,28 +1003,28 @@ unsigned char rot13(unsigned char c)
 
 int main ()
 {
-    string pp("PippoPluto"); 
+    string fb("Foobar");
 
-    /** Elabora la stringa con la funzione transform */
+    /** Processes the string with the transform function */
     transform(
-               pp.begin()   // inizio del container da modificare
-             , pp.end()     // fine del container da modificare
-             , pp.begin()   // container di output
-             , rot13        // funzione da applicare
+               fb.begin()   // start of the container to modify
+             , fb.end()     // end of the container to modify
+             , fb.begin()   // output container
+             , rot13        // function to apply
              );
 
-    cout &lt;&lt; pp &lt;&lt; endl; 
+    cout &lt;&lt; fb &lt;&lt; endl;
 
-    /** Ripetendo l'operazione, il testo torna normale. */
+    /** Repeating the operation restores the original text. */
     transform(
-               pp.begin()   
-             , pp.end()     
-             , pp.begin()   
-             , rot13        
+               fb.begin()
+             , fb.end()
+             , fb.begin()
+             , rot13
              );
 
-    cout &lt;&lt; pp &lt;&lt; endl; 
-    
+    cout &lt;&lt; fb &lt;&lt; endl;
+
     return 0;
 }
 
@@ -1066,9 +1061,9 @@ src/cpp/polimorfismo-transform-chiave.cpp:25:5: note: in instantiation of functi
 
 <p>This is exactly where <em>functors</em> come in handy, because they can be initialized with one or more specific values and then used as unary functions:</p>
 
-<pre><code>/** 
- * @file src/polimorfismo-functor.cpp
- * Creazione di una classe functor.
+<pre><code>/**
+ * @file src/polymorphism-functor.cpp
+ * Creating a functor class.
  */
 
 #include &lt;string&gt;
@@ -1078,45 +1073,45 @@ src/cpp/polimorfismo-transform-chiave.cpp:25:5: note: in instantiation of functi
 
 using namespace std;
 
-/** Dichiarazione della classe functor */
-class Cifra
+/** Declaration of the functor class */
+class Cipher
 {
 private:
 
-    int _chiave;
+    int _key;
 
 public:
-    
-    /** 
-    *   Il costruttore della classe ha come parametro
-    *   il valore della chiave di cifratura
+
+    /**
+    *   The class's constructor takes as a parameter
+    *   the value of the encryption key
     */
-    Cifra(int chiave) : _chiave(chiave) {  }
-  
-    /** Ridefinizione dell'operatore () */
+    Cipher(int key) : _key(key) {  }
+
+    /** Redefinition of the () operator */
     unsigned char operator () (unsigned char c) const {
-        return c + _chiave;
+        return c + _key;
     }
 };
 
 int main ()
 {
-    string pp("PippoPluto"); 
+    string fb("Foobar");
 
-    /** 
-    *   Richiama transform passando come parametro
-    *   un'istanza del functor, inizializzata con 
-    *   la chiave di cifratura.
+    /**
+    *   Calls transform passing as a parameter
+    *   an instance of the functor, initialized with
+    *   the encryption key.
     */
     transform(
-               pp.begin()   
-             , pp.end()     
-             , pp.begin()   
-             , Cifra(1)        
+               fb.begin()
+             , fb.end()
+             , fb.begin()
+             , Cipher(1)
              );
 
-    cout &lt;&lt; pp &lt;&lt; endl; 
-    
+    cout &lt;&lt; fb &lt;&lt; endl;
+
     return 0;
 }
 

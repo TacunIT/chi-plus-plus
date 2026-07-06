@@ -1,43 +1,41 @@
-/** 
- * @file src/polimorfismo-cast.cpp
- * Gestione della conversione esplicita.
+/**
+ * @file src/polymorphism-cast.cpp
+ * Handling explicit conversion.
  */
-
-#include <iostream>
 
 using namespace std;
 
-class Frazione
+class Fraction
 {
 private:
-    
+
     int _num ;
     int _den ;
 
 public:
-    
-    /** Costruttore con parametri interi */
-    Frazione(int n, int d = 1) 
-    : _num(n), _den(d) {} 
-    
-    /** 
-     * Costruttore con parametro a virgola mobile.
-     * La definizione è piuttosto complessa, te la risparmio.  
+
+    /** Constructor with integer parameters */
+    Fraction(int n, int d = 1)
+    : _num(n), _den(d) {}
+
+    /**
+     * Constructor with a floating-point parameter.
+     * The definition is fairly complex, I'll spare you the details.
      */
-    Frazione(double d) ;
+    Fraction(double d) ;
 
-    /** Overload dell'operatore di cast a intero */
-    operator int () { 
-        return _num / _den ; 
+    /** Overload of the cast-to-int operator */
+    operator int () {
+        return _num / _den ;
     }
 
-    /** Overload dell'operatore di cast a double */
-    operator double() { 
-        return (double) _num / (double) _den ; 
+    /** Overload of the cast-to-double operator */
+    operator double() {
+        return (double) _num / (double) _den ;
     }
 
-    /** Overload degli operatori di somma e sottrazione */
-    friend Frazione operator+ (Frazione f1, Frazione f2); 
-    friend Frazione operator- (Frazione f1, Frazione f2); 
+    /** Overload of the addition and subtraction operators */
+    friend Fraction operator+ (Fraction f1, Fraction f2);
+    friend Fraction operator- (Fraction f1, Fraction f2);
 
 };
