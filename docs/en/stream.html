@@ -702,7 +702,7 @@ int main(int argc, char** argv)
 
 <p>If you compile and run this code, you’ll trigger an error which, not being handled by the program, is handled by C++’s standard function:</p>
 
-<pre><code>&gt; g++ src/cpp/stream-eccezioni-1.cpp -o src/out/esempio
+<pre><code>&gt; g++ src/cpp/stream-exceptions-1.cpp -o src/out/esempio
 &gt; src/out/esempio
 libc++abi: terminating with uncaught exception of type
 std::__1::ios_base::failure: ios_base::clear
@@ -744,7 +744,7 @@ int main(int argc, char** argv)
 
 </code></pre>
 
-<pre><code>&gt; g++ src/cpp/stream-eccezioni-2.cpp -o src/out/esempio
+<pre><code>&gt; g++ src/cpp/stream-exceptions-2.cpp -o src/out/esempio
 &gt; src/out/esempio                                      
 Errore in esecuzione
 </code></pre>
@@ -792,7 +792,7 @@ int main(int argc, char** argv)
 
 <p>This way, the program is able to handle every possible runtime error:</p>
 
-<pre><code>&gt; g++ src/cpp/stream-eccezioni-3.cpp -o src/out/esempio
+<pre><code>&gt; g++ src/cpp/stream-exceptions-3.cpp -o src/out/esempio
 &gt; src/out/esempio                                      
 Nome file mancante
 &gt; src/out/esempio nomefile.txt
@@ -949,7 +949,7 @@ int main(int argc, char** argv)
 
 <p>If you compile and run this code, you’ll get the following output, depending on the parameters provided:</p>
 
-<pre><code>&gt; g++ src/cpp/stream-eccezioni-4.cpp -o src/out/esempio
+<pre><code>&gt; g++ src/cpp/stream-exceptions-4.cpp -o src/out/esempio
 &gt; src/out/esempio                                      
 -10: Errore nei parametri di input.
 USO: esempio &lt;n caratteri&gt; &lt;path file&gt;
