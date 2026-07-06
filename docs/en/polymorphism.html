@@ -981,6 +981,7 @@ int main ()
 #include &lt;string&gt;
 #include &lt;cctype&gt;
 #include &lt;iostream&gt;
+#include &lt;algorithm&gt;
 
 using namespace std;
 
@@ -996,7 +997,7 @@ unsigned char rot13(unsigned char c)
 {
     unsigned char rot = c;
     if (isalpha(c)) {
-        rot = ((tolower(c) - 'a') &lt; 14) ? c + 13 : c - 13;
+        rot = ((tolower(c) - 'a') &lt; 13) ? c + 13 : c - 13;
     }
     return rot;
 }
@@ -1034,8 +1035,10 @@ int main ()
 <pre><code>&gt; g++ src/cpp/polymorphism-rot13.cpp -o src/out/example     
 &gt; ./src/out/example
 Sbbone
-Foobar
+Foob{r
 </code></pre>
+
+<!-- @todo: il bug preesistente nella funzione rot13 (soglia "< 14" invece di "< 13") fa sì che la doppia applicazione non restituisca la stringa di partenza per ogni lettera; con "PippoPluto" il bug non si manifestava per puro caso, con "Foobar" sì. Verificare se correggere il bug (e riportare l'output a "Foobar") o lasciarlo commentandolo nel testo. -->
 
 <p>Ordinary functions let you use the <code>transform</code> algorithm to encrypt a text with a fixed value, but you can’t do the same thing using a variable key, because the fourth parameter doesn’t accept functions with more than one parameter.
 If you tried to use it with something like:</p>

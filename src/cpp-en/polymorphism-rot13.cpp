@@ -6,6 +6,7 @@
 #include <string>
 #include <cctype>
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -21,7 +22,7 @@ unsigned char rot13(unsigned char c)
 {
     unsigned char rot = c;
     if (isalpha(c)) {
-        rot = ((tolower(c) - 'a') < 14) ? c + 13 : c - 13;
+        rot = ((tolower(c) - 'a') < 13) ? c + 13 : c - 13;
     }
     return rot;
 }
