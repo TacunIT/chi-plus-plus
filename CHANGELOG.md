@@ -1,3 +1,6 @@
+## 2.0.5 (July 06, 2026)
+  - Tradotti capitoli 22-24
+
 ## 2.0.4 (July 06, 2026)
   - Tradotti capitoli 14-21
   - Corretto errore nel menu
