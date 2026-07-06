@@ -139,88 +139,88 @@ In this case, the variable <code>p</code> is an integer, so the instruction:</p>
 <pre><code>#include &lt;iostream&gt;
 #include &lt;cstdlib&gt;
 
-#define POS_NESSUNO -1
-#define POS_ERRORE   0
-#define POS_MERCURIO 1
-#define POS_VENERE   2
-#define POS_TERRA    3
-#define POS_MARTE    4
-#define POS_GIOVE    5
-#define POS_SATURNO  6
-#define POS_URANO    7
-#define POS_NETTUNO  8
-#define POS_PLUTONE  9
+#define POS_NONE     -1
+#define POS_ERROR     0
+#define POS_MERCURY   1
+#define POS_VENUS     2
+#define POS_EARTH     3
+#define POS_MARS      4
+#define POS_JUPITER   5
+#define POS_SATURN    6
+#define POS_URANUS    7
+#define POS_NEPTUNE   8
+#define POS_PLUTO     9
 
 using namespace std;
 
 /**
- *  mostraPianeta 
- *  Visualizza il nome di un pianeta, data la sua posizione.
- *  @param  int  pianeta Posizione del pianeta.
- *  @return bool esiste  true se il pianeta esiste.
+ *  showPlanet
+ *  Displays the name of a planet, given its position.
+ *  @param  int  planet Position of the planet.
+ *  @return bool exists  true if the planet exists.
  */
-bool mostraPianeta(int pianeta )
-{    
-    bool esiste = true;
-    
-    switch( pianeta ) {
-        case POS_ERRORE:   
-            cout &lt;&lt; "Valore non valido"; 
+bool showPlanet(int planet )
+{
+    bool exists = true;
+
+    switch( planet ) {
+        case POS_ERROR:
+            cout &lt;&lt; "Invalid value";
             break;
-        case POS_MERCURIO: 
-            cout &lt;&lt; "Mercurio";          
+        case POS_MERCURY:
+            cout &lt;&lt; "Mercury";
             break;
-        case POS_VENERE:   
-            cout &lt;&lt; "Venere";            
+        case POS_VENUS:
+            cout &lt;&lt; "Venus";
             break;
-        case POS_TERRA:    
-            cout &lt;&lt; "Terra";             
+        case POS_EARTH:
+            cout &lt;&lt; "Earth";
             break;
-        case POS_MARTE:    
-            cout &lt;&lt; "Marte";             
+        case POS_MARS:
+            cout &lt;&lt; "Mars";
             break;
-        case POS_GIOVE:    
-            cout &lt;&lt; "Giove";             
+        case POS_JUPITER:
+            cout &lt;&lt; "Jupiter";
             break;
-        case POS_SATURNO:  
-            cout &lt;&lt; "Saturno";           
+        case POS_SATURN:
+            cout &lt;&lt; "Saturn";
             break;
-        case POS_URANO:    
-            cout &lt;&lt; "Urano";             
-            break;          
-        case POS_NETTUNO:  
-            cout &lt;&lt; "Nettuno";           
-            break;          
-        case POS_PLUTONE:  
-            cout &lt;&lt; "Plutone";           
+        case POS_URANUS:
+            cout &lt;&lt; "Uranus";
+            break;
+        case POS_NEPTUNE:
+            cout &lt;&lt; "Neptune";
+            break;
+        case POS_PLUTO:
+            cout &lt;&lt; "Pluto";
             break;
         default:
-            esiste = false;
-            cout &lt;&lt; "Inserire un valore da: " 
-                 &lt;&lt; POS_MERCURIO 
-                 &lt;&lt; " a " 
-                 &lt;&lt; POS_PLUTONE;                    
-    } 
-    
-    return esiste;
+            exists = false;
+            cout &lt;&lt; "Enter a value from: "
+                 &lt;&lt; POS_MERCURY
+                 &lt;&lt; " to "
+                 &lt;&lt; POS_PLUTO;
+    }
+
+    return exists;
 }
 
 /**
  *  main
- *  Funzione principale del programma, richiama la funzione
- *  mostraPianeti passandole i valori da 1 a 9.
+ *  Main function of the program, calls the
+ *  showPlanet function passing it values from 1 to 9.
  */
 int main(int argc, char** argv)
-{    
-    int p = POS_NESSUNO;
+{
+    int p = POS_NONE;
 
-    /** Elenca tutti i Pianeti del Sistema Solare */
-    for ( p = POS_MERCURIO; p &lt;= POS_PLUTONE; p++ ) {
-        cout &lt;&lt; p &lt;&lt; ": "; 
-        mostraPianeta( p ); 
+    /** Lists all the Planets of the Solar System */
+    for ( p = POS_MERCURY; p &lt;= POS_PLUTO; p++ ) {
+        cout &lt;&lt; p &lt;&lt; ": ";
+        showPlanet( p );
         cout &lt;&lt; endl;
     }
-        
+
     return 0;
 }
 
@@ -230,7 +230,7 @@ int main(int argc, char** argv)
 On each repetition the program displays the value of the variable <code>p</code>, calls the <code>mostraPianeta</code> function, passing it the current value of <code>p</code>, then adds a line break.
 The output of this program is:</p>
 
-<pre><code>% g++ src/cpp/istruzioni-iterative-for.cpp -o src/out/esempio
+<pre><code>% g++ src/cpp/iterative-instructions-for.cpp -o src/out/esempio
 % src/out/esempio                                            
 1: Mercurio
 2: Venere
@@ -254,7 +254,7 @@ The output of this program is:</p>
 
 <p>A loop like this will keep repeating indefinitely, and, if it isn’t stopped somehow, will inevitably cause problems for the computer running it.
 You therefore need to set a limit on the number of repetitions, using the same <code>break</code> keyword we used with <code>switch</code> instructions.
-This time, though, we’ll start doing things the right way, and split the three components of the previous program into three separate files: <code>pianeti.h</code>, which will hold the declarations of the constants and of the <code>mostraPianeta</code> function; <code>pianeti.cpp</code>, containing the definition of the <code>mostraPianeta</code> function; and <code>pianeti-main.cpp</code> for the <code>main</code> function:</p>
+This time, though, we’ll start doing things the right way, and split the three components of the previous program into three separate files: <code>planets.h</code>, which will hold the declarations of the constants and of the <code>mostraPianeta</code> function; <code>pianeti.cpp</code>, containing the definition of the <code>mostraPianeta</code> function; and <code>planets-main.cpp</code> for the <code>main</code> function:</p>
 
 <pre><code>/** 
  * @file pianeti.h
@@ -389,7 +389,7 @@ int main(int argc, char** argv)
 
 <p>To generate the program, this time, we’ll need to pass both <em>.cpp</em> files to the compiler:</p>
 
-<pre><code>% g++ src/cpp/pianeti-main.cpp \
+<pre><code>% g++ src/cpp/planets-main.cpp \
       src/cpp/pianeti.cpp \
    -o src/out/esempio
 % src/out/esempio
@@ -466,7 +466,7 @@ int main(int argc, char** argv)
 
 <p>The output will be the same as that of the function that used the <code>for</code> loop:</p>
 
-<pre><code>% g++ src/cpp/pianeti-while-bool.cpp \
+<pre><code>% g++ src/cpp/planets-while-bool.cpp \
       src/cpp/pianeti.cpp \
    -o src/out/esempio
 % src/out/esempio                     
