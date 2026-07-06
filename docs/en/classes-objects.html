@@ -234,7 +234,7 @@ int main()
 
 <p>Compiling and running this code, you get:</p>
 
-<pre><code>&gt; g++ src/cpp/classi-struttura-orario.cpp -o src/out/esempio
+<pre><code>&gt; g++ src/cpp/classes-time-struct.cpp -o src/out/esempio
 &gt; ./src/out/esempio                                          
 23:45:00
 00:05:00
@@ -753,7 +753,7 @@ int main()
 
 <p>If you compile and run this code, you’ll get:</p>
 
-<pre><code>&gt; g++ src/cpp/classi-static.cpp -o src/out/esempio
+<pre><code>&gt; g++ src/cpp/classes-static.cpp -o src/out/esempio
 &gt; src/out/esempio                                 
 Da istanza c1: 1
 Da istanza c2: 3
@@ -771,8 +771,8 @@ For this reason, if you use the <code>this</code> pointer inside a static class:
 
 <p>you get the compile error:</p>
 
-<pre><code>&gt; g++ src/cpp/classi-static.cpp -o src/out/esempio
-src/cpp/classi-static.cpp:26:16: error: invalid use of 'this'
+<pre><code>&gt; g++ src/cpp/classes-static.cpp -o src/out/esempio
+src/cpp/classes-static.cpp:26:16: error: invalid use of 'this'
  outside of a non-static member function
         return this-&gt;_nIstanze;
                ^
