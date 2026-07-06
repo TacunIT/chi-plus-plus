@@ -149,13 +149,13 @@ Inoltre, nulla impedirebbe a un programmatore cialtrone di scrivere una funzione
 
 <p>Se inseriamo queste due funzioni in un programma, otteniamo:</p>
 
-<pre><code>/** 
+<pre><code>/**
  * @file classi-struttura-orario.cpp
  * Gestione dei dati membro di una struct.
  */
- 
+
 #include &lt;iostream&gt;
-#include &lt;iomanip&gt; 
+#include &lt;iomanip&gt;
 
 using namespace std;
 
@@ -167,17 +167,17 @@ struct Orario {
 };
 
 /** Funzione per l'incremento dei minuti */
-void aggiornaMinuti(struct Orario &amp;o, int minuti) 
+void aggiornaMinuti(struct Orario &amp;o, int minuti)
 {
     /** Incrementa il numero dei minuti */
     o.m += minuti;
-    
+
     /** Se necessario, incrementa le ore */
     if(o.m &gt;= 60) {
 
         o.m -= 60;
         o.h += 1;
-        
+
         /** Se necessario, passa al giorno dopo */
         if(o.h &gt;= 24) {
             o.h -= 24;
@@ -186,13 +186,13 @@ void aggiornaMinuti(struct Orario &amp;o, int minuti)
 }
 
 /*  Funzione cialtrona per l'incremento dei minuti */
-void incrementa_m(struct Orario &amp;o, int minuti) 
+void incrementa_m(struct Orario &amp;o, int minuti)
 {
     o.m += minuti;
 }
 
 int main()
-{    
+{
     struct Orario ora;
 
     /** Definisce dei valori iniziali prossimi al cambio di data */
@@ -200,17 +200,17 @@ int main()
     ora.m = 45;
     ora.s = 00;
 
-    /** Visualizza i valri iniziali */
-    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":" 
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":" 
+    /** Visualizza i valori iniziali */
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":"
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":"
          &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.s &lt;&lt; endl;
 
     /** Richiama la funzione di aggiornamento */
     aggiornaMinuti(ora, 20);
-    
+
     /** Visualizza i valori dopo l'aggiornamento */
-    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":" 
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":" 
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":"
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":"
          &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.s &lt;&lt; endl;
 
     /** Reimposta i valori iniziali */
@@ -220,13 +220,13 @@ int main()
 
     /** Richiama la funzione cialtrona */
     incrementa_m(ora, 20);
-    
+
     /** Visualizza i valori dopo l'aggiornamento */
-    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":" 
-         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":" 
+    cout &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.h &lt;&lt; ":"
+         &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.m &lt;&lt; ":"
          &lt;&lt; setfill('0') &lt;&lt; setw(2) &lt;&lt; ora.s &lt;&lt; endl;
 
-    
+
     return 0;
 }
 
