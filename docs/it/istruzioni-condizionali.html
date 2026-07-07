@@ -340,7 +340,12 @@ La condizione <code>default</code>, al contrario, deve essere unica. <br />
 L’esecuzione dell’istruzione inizia al <code>case</code> la cui costante è uguale al valore dell’espressione di <code>switch</code> e termina alla parola chiave <code>break</code>.
 Se l’espressione ha un valore non previsto dai <code>case</code>, l’istruzione esegue il codice associato all’etichetta <code>default</code>:</p>
 
-<pre><code>#include &lt;iostream&gt;
+<pre><code>/**
+ * @file src/istruzioni-condizionali-switch.cpp
+ * Gestione dei Pianeti con un'istruzione switch.
+ */
+
+#include &lt;iostream&gt;
 #include &lt;cstdlib&gt;
 
 #define POS_NESSUNO -1
@@ -358,52 +363,52 @@ Se l’espressione ha un valore non previsto dai <code>case</code>, l’istruzio
 using namespace std;
 
 int main(int argc, char** argv)
-{    
+{
     int pianeta;
-    
-    /** 
+
+    /**
      * Legge i parametri di input.
-     * Se ce ne sono, prova a convertire il primo parametro 
-     * in un intero. Se il parametro non è un intero, la 
-     * funzione atoi torna 0. 
+     * Se ce ne sono, prova a convertire il primo parametro
+     * in un intero. Se il parametro non è un intero, la
+     * funzione atoi torna 0.
      */
     if(argc &gt; 1) {
         pianeta = atoi(argv[1]);
     } else {
         pianeta = POS_NESSUNO;
     }
-    
+
     /** Gestisce i casi possibili */
     switch( pianeta ) {
-        case POS_ERRORE:   cout &lt;&lt; "Valore non valido"; 
+        case POS_ERRORE:   cout &lt;&lt; "Valore non valido";
             break;
-        case POS_MERCURIO: cout &lt;&lt; "Mercurio";          
+        case POS_MERCURIO: cout &lt;&lt; "Mercurio";
             break;
-        case POS_VENERE:   cout &lt;&lt; "Venere";            
+        case POS_VENERE:   cout &lt;&lt; "Venere";
             break;
-        case POS_TERRA:    cout &lt;&lt; "Terra";             
+        case POS_TERRA:    cout &lt;&lt; "Terra";
             break;
-        case POS_MARTE:    cout &lt;&lt; "Marte";             
+        case POS_MARTE:    cout &lt;&lt; "Marte";
             break;
-        case POS_GIOVE:    cout &lt;&lt; "Giove";             
+        case POS_GIOVE:    cout &lt;&lt; "Giove";
             break;
-        case POS_SATURNO:  cout &lt;&lt; "Saturno";           
+        case POS_SATURNO:  cout &lt;&lt; "Saturno";
             break;
-        case POS_URANO:    cout &lt;&lt; "Urano";             
-            break;          
-        case POS_NETTUNO:  cout &lt;&lt; "Nettuno";           
-            break;          
-        case POS_PLUTONE:  cout &lt;&lt; "Plutone";           
+        case POS_URANO:    cout &lt;&lt; "Urano";
+            break;
+        case POS_NETTUNO:  cout &lt;&lt; "Nettuno";
+            break;
+        case POS_PLUTONE:  cout &lt;&lt; "Plutone";
             break;
         default:
-            cout &lt;&lt; "Inserire un valore da: " 
-                 &lt;&lt; POS_MERCURIO 
-                 &lt;&lt; " a " 
-                 &lt;&lt; POS_PLUTONE;                    
+            cout &lt;&lt; "Inserire un valore da: "
+                 &lt;&lt; POS_MERCURIO
+                 &lt;&lt; " a "
+                 &lt;&lt; POS_PLUTONE;
     }
-    
+
     cout &lt;&lt; endl;
-    
+
     return 0;
 }
 

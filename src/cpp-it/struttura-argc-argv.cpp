@@ -1,12 +1,17 @@
+/**
+ * @file src/struttura-argc-argv.cpp
+ * Gestione dei parametri da riga di comando con argc e argv.
+ */
+
 #include <iostream>
 
 #define NO_ERRORI     0
 #define NO_PARAMETRI  1
 
 int main(int argc, char** argv)
-{    
+{
     int errore = NO_ERRORI;
-    
+
     /** Se c'è solo il nome del programma, errore */
     if(argc < 2) {
         std::cerr << "Specificare un parametro!" << std::endl;
@@ -15,7 +20,7 @@ int main(int argc, char** argv)
 
     /** Stampa tutti i parametri ricevuti */
     for(int p=0; p < argc; p++) {
-        std::cout << *argv++ << std::endl;        
+        std::cout << *argv++ << std::endl;
     }
 
     return 0;

@@ -1,3 +1,8 @@
+/**
+ * @file src/istruzioni-iterative-for.cpp
+ * Esempio di utilizzo di un ciclo for.
+ */
+
 #include <iostream>
 #include <cstdlib>
 

@@ -1,3 +1,8 @@
+/**
+ * @file src/cplusplus-classe.cpp
+ * Esempio di utilizzo di una classe.
+ */
+
 #include <iostream>
 #include <ctime>
 
@@ -16,9 +21,9 @@ private:
     string _razza;
 public:
     const char* getSpecie() const {
-        return "cavallo"; 
-    } 
-    const char getSesso() const {        
+        return "cavallo";
+    }
+    const char getSesso() const {
         return (char)_sesso;
     }
     const char* getRazza() const {
@@ -35,7 +40,7 @@ ostream& operator << (ostream& os, const Cavallo& Cavallo) {
     os  << "Specie:" << Cavallo.getSpecie() << ", "
         << "Sesso:"  << Cavallo.getSesso()  << ", "
         << "Razza:"  << Cavallo.getRazza()  << endl;
-    return os;   
+    return os;
 }
 
 
@@ -51,19 +56,19 @@ public:
         time(&_giorno);
     }
     friend ostream& operator << (ostream& os, const Monta& copula) {
-        os << "DATA: "    << asctime(localtime(&copula._giorno)) 
-           << "MASCHIO: " << copula._maschio 
-           << "FEMMINA: " << copula._femmina 
+        os << "DATA: "    << asctime(localtime(&copula._giorno))
+           << "MASCHIO: " << copula._maschio
+           << "FEMMINA: " << copula._femmina
            << endl;
-           return os;   
+           return os;
      };
 };
 
 int main()
 {
-    Cavallo stallone("lipizzano", maschio);    
+    Cavallo stallone("lipizzano", maschio);
     Cavallo giumenta("maremmano", femmina);
     Monta monta(stallone, giumenta);
     cout << monta << endl;
-    return 0;               
+    return 0;
 }

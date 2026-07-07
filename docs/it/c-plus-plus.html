@@ -108,18 +108,23 @@ Stroustrup, che ai tempi del suo dottorato aveva lavorato con un linguaggio a og
 Aveva ragione.  <br />
 Il nome <em>C++</em> si riferisce all’operatore <code>++</code>, che serve a incrementare di un’unità il valore di una variabile:</p>
 
-<pre><code>#include &lt;iostream&gt;
+<pre><code>/**
+ * @file src/cplusplus-incremento.cpp
+ * Esempio di utilizzo dell'operatore di incremento.
+ */
+
+#include &lt;iostream&gt;
 
 using namespace std;
 
 int main(int argc, char** argv)
 {
-    int C = 12;                  
-    cout &lt;&lt; "Valore di C = " &lt;&lt; C &lt;&lt; endl;  
-    C++;                         
-    cout &lt;&lt; "Valore di C = " &lt;&lt; C &lt;&lt; endl; 
-    return 0;               
-} 
+    int C = 12;
+    cout &lt;&lt; "Valore di C = " &lt;&lt; C &lt;&lt; endl;
+    C++;
+    cout &lt;&lt; "Valore di C = " &lt;&lt; C &lt;&lt; endl;
+    return 0;
+}
 
 </code></pre>
 <p>Se compili ed eseguti questo codice, otterrai:</p>
