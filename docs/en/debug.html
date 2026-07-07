@@ -946,7 +946,7 @@ int main(int argc, char** argv)
 <p>In keeping with what we said a moment ago, to check this program’s behavior we’ll need to run at least four tests:</p>
 
 <pre><code># dati corretti
-src/out/esempio src/cpp/debug-testo-1.txt
+src/out/esempio src/cpp/debug-text-1.txt
 
 # nessun dato
 src/out/esempio
@@ -955,7 +955,7 @@ src/out/esempio
 src/out/esempio src/cpp/file-inesistente
 
 # dati in eccesso
-src/out/esempio src/cpp/debug-testo-1.txt abcdefghilmnopqrstuvz  
+src/out/esempio src/cpp/debug-text-1.txt abcdefghilmnopqrstuvz  
 </code></pre>
 
 <p>We then need to check that every error condition is handled correctly.
@@ -974,10 +974,10 @@ In our case, the expected errors are:</p>
 <p>Unfortunately, though, if you compile and run this code with correct data, you get an error, even though the file exists:</p>
 
 <pre><code>&gt; g++ src/cpp/debug-error-handling.cpp -o src/out/esempio
-&gt; src/out/esempio src/cpp/debug-testo-1.txt               
+&gt; src/out/esempio src/cpp/debug-text-1.txt               
 -20: Impossibile aprire il file di input
-&gt; ls src/cpp/debug-testo-1.txt
-src/cpp/debug-testo-1.txt
+&gt; ls src/cpp/debug-text-1.txt
+src/cpp/debug-text-1.txt
 </code></pre>
 
 <p>If you recompile the program, defining the <code>__LOG__</code> macro to check which file the program is opening:</p>
@@ -990,8 +990,8 @@ src/cpp/debug-testo-1.txt
 <p>when you run the program, you get a new error:</p>
 
 <pre><code>&gt; g++ src/cpp/debug-error-handling.cpp -D __LOG__ -o src/out/esempio
-&gt; src/out/esempio src/cpp/debug-testo-1.txt                           
-[DEBUG] Apro il file: zsh: segmentation fault  src/out/esempio src/cpp/debug-testo-1.txt
+&gt; src/out/esempio src/cpp/debug-text-1.txt                           
+[DEBUG] Apro il file: zsh: segmentation fault  src/out/esempio src/cpp/debug-text-1.txt
 </code></pre>
 
 <p>This isn’t the behavior the function was meant to have, but it still lets us understand what the problem might be.
@@ -1005,7 +1005,7 @@ The memory area in question is the one associated with the <code>path</code> par
 As you’ve probably noticed, the code of this program is a reworking of the code from the <a href="/en/stream.html" class="xref">lesson on streams</a>, which had to handle three command-line parameters.
 This time, though, the program’s call string only has two values: the program’s own path, and the input file’s name:</p>
 
-<pre><code>&gt; src/out/esempio src/cpp/debug-testo-1.txt
+<pre><code>&gt; src/out/esempio src/cpp/debug-text-1.txt
 </code></pre>
 
 <p>Reusing code is a good thing; forgetting to update the value of the <code>argv</code> array’s index is a bad thing, because the memory address pointed to by <code>argv[2]</code> no longer belongs to the program: we can’t use it as a path for an <code>open</code> function, and we can’t print it to the screen.
@@ -1025,8 +1025,8 @@ If we fix the index, the program handles every usage condition correctly:</p>
 [DEBUG] Apro il file: src/cpp/debug-vuoto.txt
 -30: Impossibile leggere il file di input
 
-&gt; src/out/esempio src/cpp/debug-testo-1.txt
-[DEBUG] Apro il file: src/cpp/debug-testo-1.txt
+&gt; src/out/esempio src/cpp/debug-text-1.txt
+[DEBUG] Apro il file: src/cpp/debug-text-1.txt
 Essere un ossessivo-compulsivo con una leggera tendenza ...
 </code></pre>
 
