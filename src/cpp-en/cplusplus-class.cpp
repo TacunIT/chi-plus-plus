@@ -1,3 +1,8 @@
+/**
+ * @file src/cplusplus-class.cpp
+ * Example use of a class.
+ */
+
 #include <iostream>
 #include <ctime>
 

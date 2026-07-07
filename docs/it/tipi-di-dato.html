@@ -101,7 +101,12 @@ Questi, come dice anche il loro nome, sono costituiti dall’aggregazione di pi�
 Il prossimo brano di codice — fastidiosamente didascalico, nella sua sostanziale inutilità — mostra i principali tipi di dato del C++.
 Contiene molti elementi di cui ancora non ti ho parlato, quindi non preoccuparti se non capisci del tutto ciò che fa.</p>
 
-<pre><code>#include &lt;iostream&gt;
+<pre><code>/**
+ * @file src/tipi-di-dato-principali.cpp
+ * Esempio di utilizzo di tipi di dato enumerati e struct.
+ */
+
+#include &lt;iostream&gt;
 
 using namespace std;
 
@@ -111,16 +116,16 @@ enum RGB { red = 0xFF0000, green = 0x00ff00, blue = 0x0000ff };
 /** Definisce una struttura che contiene un colore RGB e un nome */
 struct ColoreRGB {
     RGB  valore;
-    const char* nome;        
+    const char* nome;
 };
 
-/** 
- * Definisce la classe Colore, che contiene un coloreRGB 
+/**
+ * Definisce la classe Colore, che contiene un coloreRGB
  * e una funzione che ne mostra il nome.
  */
 class Colore {
 public:
-    ColoreRGB coloreRgb;        
+    ColoreRGB coloreRgb;
     void nome_colore() {
         cout &lt;&lt; "coloreRGB:";
         switch(coloreRgb.valore) {
@@ -129,11 +134,11 @@ public:
             case blue : cout &lt;&lt; "blue" ; break;
         }
         cout &lt;&lt; endl;
-    }        
+    }
 };
 
 int main()
-{    
+{
     /** Dichiara una serie di variabili */
     bool    booleano  = false;
     char    carattere = 'C';
@@ -141,16 +146,16 @@ int main()
     float   decimale  = 3.14;
     char    array[]   = "abcdefghilmnopqrstuvz";
     RGB     enumerato = green;
-    
+
     /** Crea un oggetto di tipo Colore */
-    Colore  colore;    
-    
-    /** 
-     * Assegna un valore ai dati della struttura coloreRgb 
+    Colore  colore;
+
+    /**
+     * Assegna un valore ai dati della struttura coloreRgb
      * all'interno dell'oggetto di tipo Colore.
      */
-    colore.coloreRgb.valore = enumerato;   
-    colore.coloreRgb.nome = "verde";     
+    colore.coloreRgb.valore = enumerato;
+    colore.coloreRgb.nome = "verde";
 
     /** Mostra il valore delle variabili */
     cout &lt;&lt; "booleano:"    &lt;&lt; booleano   &lt;&lt; endl;
@@ -158,10 +163,10 @@ int main()
     cout &lt;&lt; "intero:"      &lt;&lt; intero     &lt;&lt; endl;
     cout &lt;&lt; "decimale:"    &lt;&lt; decimale   &lt;&lt; endl;
     cout &lt;&lt; "array:"       &lt;&lt; array      &lt;&lt; endl;
-    
+
     /** Mostra il nome del colore */
     colore.nome_colore();
-    
+
     return 0;
 }
 
@@ -403,25 +408,30 @@ Gli altri puntatori, più che una bandierina, sono una sorta di maschera che pu�
 
 <p>Questo programma mostra come la dimensione di un puntatore modifichi il risultato della lettura dei dati:</p>
 
-<pre><code>#include &lt;iostream&gt;
+<pre><code>/**
+ * @file src/tipi-di-dato-puntatori.cpp
+ * Gestione di puntatori e dati binari.
+ */
+
+#include &lt;iostream&gt;
 #include &lt;bitset&gt;
-#include &lt;iomanip&gt; 
+#include &lt;iomanip&gt;
 
 using namespace std;
 
-/** 
- * Definisce due tipi di dato: uno lungo un byte 
- * e uno lungo due byte 
+/**
+ * Definisce due tipi di dato: uno lungo un byte
+ * e uno lungo due byte
  */
 typedef unsigned char byte;
 typedef short int duebyte;
 
 int main()
-{    
+{
     /** Crea un array di 80 valori binarii */
-    byte valori[] = { 
+    byte valori[] = {
           0b01000011, 0b00100111, 0b01101000, 0b01100001
-        , 0b01101110, 0b01101110, 0b01101111, 0b00100000 
+        , 0b01101110, 0b01101110, 0b01101111, 0b00100000
         , 0b01100110, 0b01101111, 0b01110010, 0b01110011
         , 0b01100101, 0b00100000, 0b01110100, 0b01110101
         , 0b01110100, 0b01110100, 0b01100101, 0b00100000
@@ -439,48 +449,48 @@ int main()
         , 0b01101111, 0b01110010, 0b01100101, 0b00100000
         , 0b00100111, 0b01101110, 0b00100000, 0b01101001
         , 0b01101100, 0b01101100, 0b01110101, 0b01110011
-        , 0b01101001, 0b01101111, 0b01101110, 0b01100101 
+        , 0b01101001, 0b01101111, 0b01101110, 0b01100101
     };
 
-    /** 
+    /**
      * Crea un puntatore con una dimensione di otto bit e gli
-     * assegna come valore l'indirizzo dell'inizio dell'array. 
+     * assegna come valore l'indirizzo dell'inizio dell'array.
      */
     byte * p1 = valori;
-    
-    /** 
+
+    /**
      * Sposta il puntatore per tutta la lunghezza dell'array,
      * mostrando per ciascun byte il suo valore binario, il
-     * suo valore convertito in decimale e la lettera del      
+     * suo valore convertito in decimale e la lettera del
      * set ASCII corrispondente a quel valore.
      */
     for(int i = 0; i &lt; sizeof(valori); i++) {
         cout &lt;&lt; setw(4)  &lt;&lt; i
-             &lt;&lt; setw(18) &lt;&lt; bitset&lt;8&gt;(*p1) 
-             &lt;&lt; setw(6)  &lt;&lt; (int)*p1 
+             &lt;&lt; setw(18) &lt;&lt; bitset&lt;8&gt;(*p1)
+             &lt;&lt; setw(6)  &lt;&lt; (int)*p1
              &lt;&lt; setw(4)  &lt;&lt; (char) *p1 &lt;&lt; endl;
-             
+
         /** Sposta il puntatore al byte successivo. */
         p1++;
     }
-    
+
     cout &lt;&lt; endl;
-    
+
     /**
      * Crea un nuovo puntatore, stavolta con una
      * dimensione di sedici bit.
      */
     duebyte * p2 = (duebyte*)valori;
-    
-    /** 
+
+    /**
      * Legge di nuovo i valori dell'array,
      */
     for(int i = 0; i &lt; sizeof(valori) / 2; i++) {
         cout &lt;&lt; setw(4)  &lt;&lt; i
-             &lt;&lt; setw(18) &lt;&lt; bitset&lt;16&gt;(*p2) 
-             &lt;&lt; setw(6)  &lt;&lt; (short)*p2 
+             &lt;&lt; setw(18) &lt;&lt; bitset&lt;16&gt;(*p2)
+             &lt;&lt; setw(6)  &lt;&lt; (short)*p2
              &lt;&lt; setw(4)  &lt;&lt; (char) *p2 &lt;&lt; endl;
-         
+
         /** Sposta il puntatore di due byte. */
         p2++;
     }

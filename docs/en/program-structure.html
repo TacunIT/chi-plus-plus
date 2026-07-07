@@ -167,7 +167,12 @@ std::cout &lt;&lt; std::endl;
 <p>returns the value <code>0</code> to the calling program (usually, the computer’s <em>shell</em>) to indicate that no errors occurred during processing.
 The following program puts into practice the concepts we’ve seen so far:</p>
 
-<pre><code>#include &lt;iostream&gt;
+<pre><code>/**
+ * @file src/program-structure-argc-argv.cpp
+ * Handling command-line parameters with argc and argv.
+ */
+
+#include &lt;iostream&gt;
 
 #define NO_ERRORS     0
 #define NO_PARAMETERS 1

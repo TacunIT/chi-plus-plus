@@ -1,11 +1,12 @@
-/** 
+/**
  * @file src/debug-gestione-errori.cpp
  * Modalità di gestione degli errori.
  */
- 
+
 #include <iostream>
 #include <fstream>
 #include <exception>
+#include <cstdarg>
 
 using namespace std;
 
@@ -36,10 +37,10 @@ private:
 public:
 
     /** Costruttore */
-    Eccezione(int codice, const char* errore) 
-    : _codice(codice), _errore(errore) {        
+    Eccezione(int codice, const char* errore)
+    : _codice(codice), _errore(errore) {
     }
-    
+
     /** Funzione virtuale pura: va ridefinita */
     virtual const char* what() const throw() {
         return _errore;
@@ -61,8 +62,8 @@ void errore(int codice, bool exit = true)
 {
     const char* errore = NULL;
 
-    /** 
-    *   Identifica la stringa di errore corrispondente 
+    /**
+    *   Identifica la stringa di errore corrispondente
     *   al codice di errore ricevuto.
     */
     switch(codice) {
@@ -78,29 +79,29 @@ void errore(int codice, bool exit = true)
     }
 }
 
-/** 
-*   Questa è la funzione di log che abbiamo visto 
+/**
+*   Questa è la funzione di log che abbiamo visto
 *   nella lezione sulle funzioni.
 */
 void log(int livello, int n_parametri, ...)
-{        
+{
     /** Definisce il livello del messaggio */
-    const char* s_livello; 
+    const char* s_livello;
     switch(livello) {
         case LOG_DEBUG:  s_livello = S_DEBUG ; break;
         case LOG_AVVISO: s_livello = S_AVVISO; break;
         default:         s_livello = S_ERRORE; break;
     }
-    
+
     /** Scrive il testo del messaggio */
     cerr << '[' << s_livello << "] ";
 
     /** Scrive i parametri della lista */
     va_list lista_parametri;
     va_start(lista_parametri, n_parametri);
-    for(int p = 1; p <= n_parametri; p++) {        
-        cerr << va_arg(lista_parametri, char*) ;        
-    }    
+    for(int p = 1; p <= n_parametri; p++) {
+        cerr << va_arg(lista_parametri, char*) ;
+    }
     va_end(lista_parametri);
 
     cerr << endl;
@@ -110,7 +111,7 @@ void log(int livello, int n_parametri, ...)
 int verifica_parametri(int argc, char** argv)
 {
     return (argc < 2) ? ERR_FILE_NONE : ERR_NONE;
-} 
+}
 
 /** Apre il file in lettura */
 int apri_file(ifstream& testo, const char* path)
@@ -118,49 +119,49 @@ int apri_file(ifstream& testo, const char* path)
 /**
 *   Questo codice viene compilato solo se
 *   è definita la macro __LOG__
-*/    
-#ifdef __LOG__    
+*/
+#ifdef __LOG__
     log(LOG_DEBUG, 2, "Apro il file: ",  path);
 #endif
 
     testo.open(path);
     return ERR_NONE;
-} 
+}
 
 /** Legge il file di input e lo scrive a video */
 int elabora_file(ifstream& testo)
 {
     int  letti = 0;
     char c = 0;
-    while ((c = testo.get()) != EOF) {            
+    while ((c = testo.get()) != EOF) {
         letti++;
-        cout << c;            
-    } 
+        cout << c;
+    }
     return letti;
-} 
+}
 
 /** Chiude il file di input */
 void chiudi_file(ifstream& testo)
 {
     testo.close();
-} 
- 
+}
+
 int main(int argc, char** argv)
-{    
+{
     ifstream testo;
-    
+
     try {
-        
+
         int esito = ERR_NONE;
-        
-        /** 
-        *   Verifica che ci sia il nome del file di input 
+
+        /**
+        *   Verifica che ci sia il nome del file di input
         *   e gestisce eventuali errori.
         */
         esito = verifica_parametri(argc, argv);
         errore(esito);
-        
-        /** 
+
+        /**
         *   Imposta la exception mask dello stream per fare
         *   sì che un errore di I/O generi un'eccezione,
         *   poi apre il file in lettura.
@@ -168,36 +169,36 @@ int main(int argc, char** argv)
         *   eventuale eccezione e gestirla in maniera
         *   omogenea al resto del codice.
         *   Non può aggiungere una catch in fondo perché
-        *   l'eccezione non dà informazioni sulla causa 
+        *   l'eccezione non dà informazioni sulla causa
         *   dell'errore che l'ha generata.
         */
         try {
-            testo.exceptions ( std::ifstream::badbit 
+            testo.exceptions ( std::ifstream::badbit
                              | std::ifstream::failbit );
-            esito = apri_file(testo, argv[2]);            
+            esito = apri_file(testo, argv[2]);
         } catch(ifstream::failure e) {
-            errore(ERR_FILE_OPEN);            
+            errore(ERR_FILE_OPEN);
         }
-        
-        /** 
+
+        /**
         *   Elabora il testo e gestisce eventuali errori.
-        *   Dato che la funzione torna il numero di 
+        *   Dato che la funzione torna il numero di
         *   caratteri letti, deve chiamare errore solo
         *   se non ce ne sono.
         */
         testo.exceptions ( std::ifstream::goodbit);
         if(elabora_file(testo) == 0) {
-            errore(ERR_FILE_READ);            
+            errore(ERR_FILE_READ);
         }
-        
-        
+
+
         /** Chiude il file di input */
         chiudi_file(testo);
-    
+
     } catch (Eccezione e) {
         cerr << e;
         exit(e.getCodice());
     }
-    
+
     return 0;
 }

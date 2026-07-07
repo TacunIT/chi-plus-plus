@@ -1,3 +1,8 @@
+/**
+ * @file src/conditional-instructions-switch.cpp
+ * Handling Planets with a switch instruction.
+ */
+
 #include <iostream>
 #include <cstdlib>
 

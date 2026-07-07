@@ -339,7 +339,12 @@ The <code>default</code> condition, by contrast, must be unique.
 Execution of the instruction begins at the <code>case</code> whose constant matches the value of the <code>switch</code> expression, and ends at the <code>break</code> keyword.
 If the expression has a value not covered by any <code>case</code>, the instruction runs the code associated with the <code>default</code> label:</p>
 
-<pre><code>#include &lt;iostream&gt;
+<pre><code>/**
+ * @file src/conditional-instructions-switch.cpp
+ * Handling Planets with a switch instruction.
+ */
+
+#include &lt;iostream&gt;
 #include &lt;cstdlib&gt;
 
 #define POS_NONE     -1

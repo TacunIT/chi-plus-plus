@@ -1,3 +1,8 @@
+/**
+ * @file src/program-structure-argc-argv.cpp
+ * Handling command-line parameters with argc and argv.
+ */
+
 #include <iostream>
 
 #define NO_ERRORS     0

@@ -131,24 +131,24 @@ Master Canaro once said:</p>
 <p><b id="errori-compilazione">Compile errors</b> are caused by malformed constructs, which block the process of building the program.
 A mistake you’ll make often is forgetting the semicolon at the end of a class declaration:</p>
 
-<pre><code>class C {
+<pre><code>class Circle {
 private:
-    float _raggio;
+    float _radius;
     float _area;
 public:
-    C (int m) : _raggio(m) {}
-    float getRaggio() { return _raggio; }
+    Circle (int m) : _radius(m) {}
+    float getRadius() { return _radius; }
     float area() {
-       Quadrato q;
-       return 3.14159 * q(_raggio);
+       Square s;
+       return 3.14159 * s(_radius);
     }
 }
 </code></pre>
 
 <p>a trivial slip that will unfailingly cause the message:</p>
 
-<pre><code>&gt; g++ src/cpp/debug-errori.cpp  -c -o src/out/esempio
-src/cpp/debug-errori.cpp:28:2: error: expected ';' after class
+<pre><code>&gt; g++ src/cpp/debug-errors.cpp  -c -o src/out/example
+src/cpp/debug-errors.cpp:28:2: error: expected ';' after class
 }
  ^
  ;
@@ -171,7 +171,7 @@ In file included from /Library/Developer/CommandLineTools/usr/bin/../include/c++
       requested here
     __init(__first, __last);
     ^
-src/cpp/debug-errori.cpp:43:12: note: in instantiation of function template specialization
+src/cpp/debug-errors.cpp:43:12: note: in instantiation of function template specialization
       'std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;
       &gt;::basic_string&lt;std::__1::istream_iterator&lt;std::__1::basic_string&lt;char&gt;, char, std::__1::char_traits&lt;char&gt;,
       long&gt; &gt;' requested here
@@ -242,37 +242,37 @@ Since there are truly a lot of parameters for enabling the various kinds of <em>
 
 <p>and since they can all be relevant to the process of building code, the best thing you can do is enable them all at once, with the <code>-Wall</code> parameter:</p>
 
-<pre><code>/** 
- * @file src/debug-errori-warning.cpp
- * Tipi di errore e di warning.
+<pre><code>/**
+ * @file src/debug-errors-warnings.cpp
+ * Types of errors and warnings.
  */
 
 #include &lt;iostream&gt;
 
 using namespace std;
 
-class Quadrato
+class Square
 {
 public:
     double operator()(double x) { return x * x; }
 };
 
-class C {
+class Circle {
 private:
-    float _raggio;
+    float _radius;
     float _area;
 public:
-    C (int m) : _raggio(m) {}
-    float getRaggio() { return _raggio; }
+    Circle (int m) : _radius(m) {}
+    float getRadius() { return _radius; }
     float area() {
-       Quadrato q;
-       return 3.14159 * q(_raggio);
+       Square s;
+       return 3.14159 * s(_radius);
     }
 };
 
-int main(int argc, char** argv) 
+int main(int argc, char** argv)
 {
-    C c(10);    
+    Circle c(10);
     cout &lt;&lt; c.area() &lt;&lt; endl;
     return 0;
 }
@@ -281,14 +281,14 @@ int main(int argc, char** argv)
 
 <p>If you compile this code without enabling <em>warnings</em>, the compiler doesn’t flag anything unusual:</p>
 
-<pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -c -o src/out/esempio
+<pre><code>&gt; g++ src/cpp/debug-errors-warnings.cpp -c -o src/out/example
 &gt;
 </code></pre>
 
-<p>But if you add the <code>-Wall</code> parameter to the command line, you discover that the <code>_area</code> parameter of class <code>C</code> is never used:</p>
+<p>But if you add the <code>-Wall</code> parameter to the command line, you discover that the <code>_area</code> parameter of class <code>Circle</code> is never used:</p>
 
-<pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -Wall -c -o src/out/esempio
-src/cpp/debug-errori-warning.cpp:19:11:
+<pre><code>&gt; g++ src/cpp/debug-errors-warnings.cpp -Wall -c -o src/out/example
+src/cpp/debug-errors-warnings.cpp:19:11:
     warning: private field '_area' is not used
         [-Wunused-private-field]
     float _area;
@@ -299,18 +299,18 @@ src/cpp/debug-errori-warning.cpp:19:11:
 <p>The code compiles, because this might be an intentional choice, but the system still notifies you of the anomaly, so you can decide whether to keep it or remove it.
 Adding the <code>-Wextra</code> parameter, you get an additional <em>warning</em> because the parameters of the <code>main</code> function are unused:</p>
 
-<pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -Wall -Wextra -o src/out/esempio
-src/cpp/debug-errori-warning.cpp:29:14:
+<pre><code>&gt; g++ src/cpp/debug-errors-warnings.cpp -Wall -Wextra -o src/out/example
+src/cpp/debug-errors-warnings.cpp:29:14:
     warning: unused parameter 'argc'
         [-Wunused-parameter]
 int main(int argc, char** argv)
              ^
-src/cpp/debug-errori-warning.cpp:29:27:
+src/cpp/debug-errors-warnings.cpp:29:27:
     warning: unused parameter 'argv'
         [-Wunused-parameter]
 int main(int argc, char** argv)
                           ^
-src/cpp/debug-errori-warning.cpp:19:11:
+src/cpp/debug-errors-warnings.cpp:19:11:
     warning: private field '_area' is not used
         [-Wunused-private-field]
     float _area;
@@ -321,23 +321,23 @@ src/cpp/debug-errori-warning.cpp:19:11:
 <p>Besides the ones defined by the <code>-Wall</code> and <code>-Wextra</code> parameters, the compiler offers a long list of <em>warnings</em> that can be enabled individually, depending on the program’s needs.
 For example, the <code>-Wdouble-promotion</code> parameter flags when a <code>float</code> variable is implicitly promoted to <code>double</code>:</p>
 
-<pre><code>&gt; g++ src/cpp/debug-errori-warning.cpp -Wall -Wextra \
-    -Wdouble-promotion -c -o src/out/esempio
-src/cpp/debug-errori-warning.cpp:25:27:
+<pre><code>&gt; g++ src/cpp/debug-errors-warnings.cpp -Wall -Wextra \
+    -Wdouble-promotion -c -o src/out/example
+src/cpp/debug-errors-warnings.cpp:25:27:
     warning: implicit conversion increases
         floating-point precision: 'float' to
       'double' [-Wdouble-promotion]
-       return 3.14159 * q(_raggio);
+       return 3.14159 * s(_radius);
                         ~ ^~~~~~~
-src/cpp/debug-errori-warning.cpp:29:14:
+src/cpp/debug-errors-warnings.cpp:29:14:
     warning: unused parameter 'argc' [-Wunused-parameter]
 int main(int argc, char** argv)
              ^
-src/cpp/debug-errori-warning.cpp:29:27:
+src/cpp/debug-errors-warnings.cpp:29:27:
     warning: unused parameter 'argv' [-Wunused-parameter]
 int main(int argc, char** argv)
                           ^
-src/cpp/debug-errori-warning.cpp:19:11:
+src/cpp/debug-errors-warnings.cpp:19:11:
     warning: private field '_area' is not used
         [-Wunused-private-field]
     float _area;
@@ -356,98 +356,98 @@ Runtime errors are more dangerous the milder their effects are.
 A bug that crashes the system will certainly be noticed and fixed; a small calculation error, by contrast, might go unnoticed and therefore cause serious problems.
 If you forget the increment operator inside a <code>while</code> loop, you’ll produce an infinite loop, which will certainly catch your attention:</p>
 
-<pre><code>/** 
- * @file pianeti-while-errore.cpp
- * Gestione dei Pianeti con errore evidente.
+<pre><code>/**
+ * @file planets-while-error-1.cpp
+ * Handling Planets with an obvious error.
  */
- 
+
 #include &lt;iostream&gt;
-#include "pianeti.h"
+#include "planets.h"
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    int    p  = POS_MERCURIO;
-    string nome;
+{
+    int    p  = POS_MERCURY;
+    string name;
 
-    while (!(nome = nomePianeta(p)).empty()) {
-        cout &lt;&lt; nome &lt;&lt; endl;
+    while (!(name = planetName(p)).empty()) {
+        cout &lt;&lt; name &lt;&lt; endl;
     }
-        
+
     return 0;
 }
 
 </code></pre>
 
-<pre><code>&gt; g++ src/cpp/pianeti-while-errore-1.cpp \
-      src/cpp/pianeti-2.0.cpp \
-   -o src/out/esempio
-&gt; src/out/esempio
-Mercurio
-Mercurio
-Mercurio
-Mercurio
-Mercurio
-Mercurio
-Mercurio
-Mercurio
-Mercurio
-Mercurio
-Mercurio
+<pre><code>&gt; g++ src/cpp/planets-while-error-1.cpp \
+      src/cpp/planets-2.0.cpp \
+   -o src/out/example
+&gt; src/out/example
+Mercury
+Mercury
+Mercury
+Mercury
+Mercury
+Mercury
+Mercury
+Mercury
+Mercury
+Mercury
+Mercury
 ...
 </code></pre>
 
 <p>If instead you increment the variable the wrong way:</p>
 
-<pre><code>/** 
- * @file pianeti-while-errore.cpp
- * Gestione dei Pianeti con errore nel ciclo while
+<pre><code>/**
+ * @file planets-while-error-2.cpp
+ * Handling Planets with an error in the while loop
  */
- 
+
 #include &lt;iostream&gt;
-#include "pianeti.h"
+#include "planets.h"
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    int    p  = POS_MERCURIO;
-    string nome;
+{
+    int    p  = POS_MERCURY;
+    string name;
 
-    while (!(nome = nomePianeta(++p)).empty()) {
-        cout &lt;&lt; nome &lt;&lt; endl;
+    while (!(name = planetName(++p)).empty()) {
+        cout &lt;&lt; name &lt;&lt; endl;
     }
-        
+
     return 0;
 }
 
 </code></pre>
 <p>you’ll cause a bug that, in this case, is obvious, since Mercury is missing from the list, but that in a more complex program could be hard to spot:</p>
 
-<pre><code>&gt; g++ src/cpp/pianeti-while-errore-2.cpp \
-      src/cpp/pianeti-2.0.cpp \
-   -o src/out/esempio
-&gt; src/out/esempio
-Venere
-Terra
-Marte
-Giove
-Saturno
-Urano
-Nettuno
-Plutone
+<pre><code>&gt; g++ src/cpp/planets-while-error-2.cpp \
+      src/cpp/planets-2.0.cpp \
+   -o src/out/example
+&gt; src/out/example
+Venus
+Earth
+Mars
+Jupiter
+Saturn
+Uranus
+Neptune
+Pluto
 </code></pre>
 
 <p>Runtime errors can be of two kinds: those that show up deterministically, and those that show up randomly.
 The bug in the list of planets will show up every time the program runs, and will therefore be (relatively) easy to spot.
 By contrast, this code will only produce a bug under certain conditions:</p>
 
-<pre><code>/** 
- * @file debug-errore-stocastico.cpp
- * Errore che si verifica solo in deterinate circostanze.
+<pre><code>/**
+ * @file debug-stochastic-error.cpp
+ * Error that only occurs under certain circumstances.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 
@@ -455,130 +455,130 @@ using namespace std;
 
 #define ERR_FILE_NONE       -10
 #define ERR_FILE_OPEN       -20
-#define S_ERR_FILE_NONE     "Definire un file di input"
-#define S_ERR_FILE_OPEN     "Impossibile aprire il file di input"
+#define S_ERR_FILE_NONE     "Please specify an input file"
+#define S_ERR_FILE_OPEN     "Unable to open the input file"
 #define N_CHAR_MIN          300
 #define N_BANNER_MAX        3
-#define PUNTO               '.'
+#define DOT                 '.'
 
 /**
-*   Aggiunge un banner dopo ogni punto, 
-*   ogni N_CHAR_MIN caratteri.
+*   Adds a banner after every dot,
+*   every N_CHAR_MIN characters.
 */
-int banner_testo(ifstream&amp; testo)
+int banner_text(ifstream&amp; text)
 {
     int  n_banner = 1;
-    int  letti = 0;
+    int  read = 0;
     char c = 0;
- 
-    /** 
-    *  Legge tutto il contenuto del file di input
+
+    /**
+    *  Reads the entire content of the input file
     */
-    while(testo.good()) {
-        
-        /** 
-        *   Legge il cotenuto del file, 
-        *   carattere per carattere 
+    while(text.good()) {
+
+        /**
+        *   Reads the content of the file,
+        *   character by character
         */
-        if((c = testo.get()) != EOF) {            
+        if((c = text.get()) != EOF) {
 
-            /** Incrementa il numero di caratteri letti */
-            letti++;
+            /** Increments the number of characters read */
+            read++;
 
-            /** Scrive il carattere letto */
-            cout &lt;&lt; c;            
+            /** Writes the character read */
+            cout &lt;&lt; c;
 
-            /** 
-            *   Se il carattere corrente è un punto
-            *   e ha letto almeno N_CHAR_MIN caratteri
-            *   e ha ancora banner da aggiungere, 
-            *   inserisce il codice del banner nel testo. 
+            /**
+            *   If the current character is a dot
+            *   and it has read at least N_CHAR_MIN characters
+            *   and there are still banners left to add,
+            *   inserts the banner code into the text.
             */
-            if(c == PUNTO 
-            &amp;&amp; letti &gt;= N_CHAR_MIN 
-            &amp;&amp; n_banner &lt;= N_BANNER_MAX) {                
-                cout &lt;&lt; endl 
-                     &lt;&lt; "&lt;div id=\"banner-" 
-                     &lt;&lt; n_banner 
-                     &lt;&lt; "\"&gt;&lt;/div&gt;" 
+            if(c == DOT
+            &amp;&amp; read &gt;= N_CHAR_MIN
+            &amp;&amp; n_banner &lt;= N_BANNER_MAX) {
+                cout &lt;&lt; endl
+                     &lt;&lt; "&lt;div id=\"banner-"
+                     &lt;&lt; n_banner
+                     &lt;&lt; "\"&gt;&lt;/div&gt;"
                      &lt;&lt; endl;
                 n_banner++;
-                letti = 0;
+                read = 0;
             }
-        }       
-    } 
-    
+        }
+    }
+
     cout &lt;&lt; endl;
-    
+
     return n_banner;
-} 
- 
+}
+
 int main(int argc, char** argv)
-{    
-    ifstream testo;
-    
-    /** Verifica che ci sia il nome del file di input */
+{
+    ifstream text;
+
+    /** Checks that the input file name is present */
     if(argc &lt; 2) {
         cerr &lt;&lt; S_ERR_FILE_NONE &lt;&lt; endl;
         exit(ERR_FILE_NONE);
     }
-    
-    /** Apre il file in lettura */
-    testo.open(argv[1]);
-    if(!testo.good()) {
+
+    /** Opens the file for reading */
+    text.open(argv[1]);
+    if(!text.good()) {
         cerr &lt;&lt; S_ERR_FILE_OPEN &lt;&lt; endl;
         exit(ERR_FILE_OPEN);
     }
 
-    /** Elabora il testo */
-    banner_testo(testo);
-    
-    /** Chiude il file */
-    testo.close();
-    
+    /** Processes the text */
+    banner_text(text);
+
+    /** Closes the file */
+    text.close();
+
     return 0;
 }
 
 </code></pre>
 
-<p>The <code>banner_testo</code> function inserts an HTML banner <em>tag</em> into the text of a Web page.
+<p>The <code>banner_text</code> function inserts an HTML banner <em>tag</em> into the text of a Web page.
 Banners must be placed after a period, at least <code>N_CHAR_MIN</code> characters apart from one another.
 This code works correctly with some kinds of text:</p>
 
 <blockquote class="output">
-Essere un ossessivo-compulsivo con una leggera tendenza alla paranoia, se ti guadagni da vivere facendo l’esperto di sicurezza, è un bene; le medesime peculiarità caratteriali, al contrario, sono decisamente un male quando alle 21:55 la tua donna di servizio ti scrive: "Ho fatto un molecolare e sono risultata positiva.
+Being obsessive-compulsive with a slight tendency toward paranoia, if you make a living as a security expert, is a good thing; the same personality traits, on the other hand, are decidedly a bad thing when, at 9:55 PM, your housekeeper texts you: "I took a rapid test and it came back positive.
 <div id="banner-1"></div>
-Non potrai farti un tampone prima delle 8:00 dell’indomani quindi sai che ti aspettano almeno dieci ore di panico controllato; qualcuna di meno, se riesci ad addormentarti.
-Cerchi di distrarti guardando la televisione, ma l’ennesimo thriller con Jason Statham, intervallato da pubblicità di ansiolitici (un conflitto di interessi che ti riprometti di studiare con più attenzione, se sopravvivi), non fa che aumentare la tua agitazione; così, spegni il televisore, ti prepari una tisana relax, leggi un po’ e poi cerchi di dormire.
+You won't be able to get a swab test done before 8:00 AM the next day, so you know at least ten hours of controlled panic await you; a few less, if you manage to fall asleep.
+You try to distract yourself by watching TV, but yet another Jason Statham thriller, interspersed with ads for anti-anxiety medication (a conflict of interest you promise yourself to look into more closely, if you survive), only adds to your agitation; so, you turn off the TV, make yourself a calming tea, read a bit, and then try to sleep.
 <div id="banner-2"></div>
  </blockquote>
 
-<p>The code of the <code>banner_testo</code> function, though, is too optimistic, and small variations in the input file, like adding an ellipsis or a URL, <em>could</em> cause bugs in how the banners are placed:</p>
+<p>The code of the <code>banner_text</code> function, though, is too optimistic, and small variations in the input file, like adding an ellipsis or a URL, <em>could</em> cause bugs in how the banners are placed:</p>
 
 <blockquote class="output">
-Essere un ossessivo-compulsivo con una leggera tendenza alla paranoia, se ti guadagni da vivere facendo l’esperto di sicurezza, è un bene; le medesime peculiarità caratteriali, al contrario, sono decisamente un male quando alle 21:55 la tua donna di servizio ti scrive: "Ho fatto un molecolare e sono risultata positiva".
+Being obsessive-compulsive with a slight tendency toward paranoia, if you make a living as a security expert, is a good thing; the same personality traits, on the other hand, are decidedly a bad thing when, at 9:55 PM, your housekeeper texts you: "I took a rapid test and it came back positive".
 <div id="banner-1"></div>
 ..
-Non potrai farti un tampone prima delle 8:00 dell’indomani quindi sai che ti aspettano almeno dieci ore di panico controllato. Qualcuna di meno, se riesci ad addormentarti.
-Cerchi di distrarti guardando la televisione, ma l’ennesimo thriller con Jason Statham, intervallato da pubblicità di ansiolitici (un conflitto di interessi che ti riprometti di studiare con più attenzione, se sopravvivi), non fa che aumentare la tua agitazione; così, spegni il televisore, ti prepari una tisana relax, &lt;a href="http://chiplusplus.
+You won't be able to get a swab test done before 8:00 AM the next day, so you know at least ten hours of controlled panic await you. A few less, if you manage to fall asleep.
+You try to distract yourself by watching TV, but yet another Jason Statham thriller, interspersed with ads for anti-anxiety medication (a conflict of interest you promise yourself to look into more closely, if you survive), only adds to your agitation; so, you turn off the TV, make yourself a calming tea, &lt;a href="http://chiplusplus.
 <div id="banner-2"></div>
-org"&gt;leggi un po’&lt;/a&gt; e poi cerchi di dormire.
+org"&gt;read a bit&lt;/a&gt;, and then try to sleep.
 </blockquote>
 
 <p>This kind of bug can lie dormant for years before coming to light.
 For example, a bug in evaluating a date around leap years could wait four years before showing up; by then, the code will have already been shipped to users, and whoever wrote it will have forgotten about it, or may even have changed jobs.
-Fixing the bug in the <code>banner_testo</code> function, if caught early, would only require adding a condition to the <code>if</code> instruction, to check whether the period comes right before a line break:</p>
+Fixing the bug in the <code>banner_text</code> function, if caught early, would only require adding a condition to the <code>if</code> instruction, to check whether the period comes right before a line break:</p>
 
-<pre><code>if(c == PUNTO
-&amp;&amp; letti &gt;= N_CHAR_MIN
+<pre><code>if(c == DOT
+&amp;&amp; read &gt;= N_CHAR_MIN
 &amp;&amp; n_banner &lt;= N_BANNER_MAX
-&amp;&amp; testo.peek() == A_CAPO) {
+&amp;&amp; text.peek() == NEWLINE) {
     cout &lt;&lt; endl
          &lt;&lt; "&lt;div id=\"banner-" &lt;&lt; n_banner &lt;&lt; "\"&gt;"
          &lt;&lt; "&lt;/div&gt;"
          &lt;&lt; endl;
     n_banner++;
-    letti = 0;
+    read = 0;
 }
 </code></pre>
 
@@ -673,13 +673,13 @@ A quick way to do this is to comment out all the calls in the <code>main</code> 
 
 <pre><code>int main(int argc, char** argv)
 {    
-    ifstream testo;        
+    ifstream text;        
 
-    verifica_parametri(argc, argv);
-    apri_file(testo, argv[2]);            
+    check_params(argc, argv);
+    open_file(text, argv[2]);            
 /*
-    elabora_file(testo);
-    chiudi_file(testo);
+    process_file(text);
+    close_file(text);
 */    
     return 0;
 }
@@ -688,13 +688,13 @@ A quick way to do this is to comment out all the calls in the <code>main</code> 
 <p>If the <em>function that isn’t working</em> is too complex to debug directly, you’ll repeat the process, commenting out its own calls until the amount of code left to examine is reasonably small.
 Another way you can make it easier to track down bugs in your code is to add messages that let you know what operation the program is performing:</p>
 
-<pre><code>int apri_file(ifstream&amp; testo, const char* path)
+<pre><code>int open_file(ifstream&amp; text, const char* path)
 {
 #ifdef __LOG__    
-    log(LOG_DEBUG, 2, "Apro il file: ",  path);
+    log(LOG_DEBUG, 2, "Opening file: ",  path);
 #endif
 
-    testo.open(path);
+    text.open(path);
     return ERR_NONE;
 }
 </code></pre>
@@ -705,7 +705,7 @@ For this reason, it’s good practice to be able to disable them in the final ve
 In this case, we did so by wrapping the call in a precompiler <code>ifdef</code> directive, so that it’s only included in the code if the <code>__LOG__</code> constant is defined.
 Since this is a constant that’s never used by the code itself, but only serves to change how the program is compiled, we can define <code>__LOG__</code> directly on the compiler’s command line:</p>
 
-<pre><code>&gt; g++ sorgente.cpp -D __LOG__ -o eseguibile
+<pre><code>&gt; g++ source.cpp -D __LOG__ -o executable
 </code></pre>
 
 <hr />
@@ -737,207 +737,208 @@ In particular, you need to check that it behaves correctly if:</p>
 
 <p>In this program, one small thing wasn’t done the way it should have been, and a bug resulted from it:</p>
 
-<pre><code>/** 
- * @file src/debug-gestione-errori.cpp
- * Modalità di gestione degli errori.
+<pre><code>/**
+ * @file src/debug-error-handling.cpp
+ * Ways of handling errors.
  */
- 
+
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 #include &lt;exception&gt;
+#include &lt;cstdarg&gt;
 
 using namespace std;
 
-/** Codici e stringhe di errrore */
+/** Error codes and strings */
 #define LOG_DEBUG         1
-#define LOG_AVVISO        2
-#define LOG_ERRORE        3
+#define LOG_WARNING       2
+#define LOG_ERROR         3
 #define ERR_NONE          0
 #define ERR_FILE_NONE   -10
 #define ERR_FILE_OPEN   -20
 #define ERR_FILE_READ   -30
 #define S_DEBUG         "DEBUG"
-#define S_AVVISO        "AVVISO"
-#define S_ERRORE        "ERRORE"
-#define S_ERR_FILE_NONE "Definire un file di input"
-#define S_ERR_FILE_OPEN "Impossibile aprire il file di input"
-#define S_ERR_FILE_READ "Impossibile leggere il file di input"
+#define S_WARNING       "WARNING"
+#define S_ERROR         "ERROR"
+#define S_ERR_FILE_NONE "Please specify an input file"
+#define S_ERR_FILE_OPEN "Unable to open the input file"
+#define S_ERR_FILE_READ "Unable to read the input file"
 
 /**
-*   Definisce una classe derivata da exception
-*   per la gestione degli errori.
+*   Defines a class derived from exception
+*   for error handling.
 */
-class Eccezione: public exception
+class Exception: public exception
 {
 private:
-    int         _codice;
-    const char* _errore;
+    int         _code;
+    const char* _error;
 public:
 
-    /** Costruttore */
-    Eccezione(int codice, const char* errore) 
-    : _codice(codice), _errore(errore) {        
+    /** Constructor */
+    Exception(int code, const char* error)
+    : _code(code), _error(error) {
     }
-    
-    /** Funzione virtuale pura: va ridefinita */
+
+    /** Pure virtual function: must be redefined */
     virtual const char* what() const throw() {
-        return _errore;
+        return _error;
     }
 
-    /** Funzioni di interfaccia */
-    int getCodice() { return _codice; }
-    const char* getErrore() { return _errore; }
+    /** Interface functions */
+    int getCode() { return _code; }
+    const char* getError() { return _error; }
 
-    /** Ridefinizione dell'operatore di output */
-    friend ostream&amp; operator&lt;&lt; (ostream&amp; os, Eccezione e){
-        os &lt;&lt; e._codice &lt;&lt; ": " &lt;&lt; e._errore &lt;&lt; endl;
+    /** Redefinition of the output operator */
+    friend ostream&amp; operator&lt;&lt; (ostream&amp; os, Exception e){
+        os &lt;&lt; e._code &lt;&lt; ": " &lt;&lt; e._error &lt;&lt; endl;
         return os;
     }
 };
 
-/** Funzione di gestione degli errori */
-void errore(int codice, bool exit = true)
+/** Error-handling function */
+void error(int code, bool exit = true)
 {
-    const char* errore = NULL;
+    const char* error = NULL;
 
-    /** 
-    *   Identifica la stringa di errore corrispondente 
-    *   al codice di errore ricevuto.
+    /**
+    *   Identifies the error string corresponding
+    *   to the received error code.
     */
-    switch(codice) {
-        case ERR_FILE_NONE: errore = S_ERR_FILE_NONE; break;
-        case ERR_FILE_OPEN: errore = S_ERR_FILE_OPEN; break;
-        case ERR_FILE_READ: errore = S_ERR_FILE_READ; break;
+    switch(code) {
+        case ERR_FILE_NONE: error = S_ERR_FILE_NONE; break;
+        case ERR_FILE_OPEN: error = S_ERR_FILE_OPEN; break;
+        case ERR_FILE_READ: error = S_ERR_FILE_READ; break;
     }
 
-    /** Se ne trova una, lancia un'eccezione */
-    if(errore != NULL){
-        Eccezione e(codice, errore);
+    /** If one is found, throws an exception */
+    if(error != NULL){
+        Exception e(code, error);
         throw e;
     }
 }
 
-/** 
-*   Questa è la funzione di log che abbiamo visto 
-*   nella lezione sulle funzioni.
+/**
+*   This is the log function we saw
+*   in the lesson on functions.
 */
-void log(int livello, int n_parametri, ...)
-{        
-    /** Definisce il livello del messaggio */
-    const char* s_livello; 
-    switch(livello) {
-        case LOG_DEBUG:  s_livello = S_DEBUG ; break;
-        case LOG_AVVISO: s_livello = S_AVVISO; break;
-        default:         s_livello = S_ERRORE; break;
+void log(int level, int n_params, ...)
+{
+    /** Defines the message level */
+    const char* s_level;
+    switch(level) {
+        case LOG_DEBUG:   s_level = S_DEBUG  ; break;
+        case LOG_WARNING: s_level = S_WARNING; break;
+        default:          s_level = S_ERROR  ; break;
     }
-    
-    /** Scrive il testo del messaggio */
-    cerr &lt;&lt; '[' &lt;&lt; s_livello &lt;&lt; "] ";
 
-    /** Scrive i parametri della lista */
-    va_list lista_parametri;
-    va_start(lista_parametri, n_parametri);
-    for(int p = 1; p &lt;= n_parametri; p++) {        
-        cerr &lt;&lt; va_arg(lista_parametri, char*) ;        
-    }    
-    va_end(lista_parametri);
+    /** Writes the message text */
+    cerr &lt;&lt; '[' &lt;&lt; s_level &lt;&lt; "] ";
+
+    /** Writes the parameters of the list */
+    va_list param_list;
+    va_start(param_list, n_params);
+    for(int p = 1; p &lt;= n_params; p++) {
+        cerr &lt;&lt; va_arg(param_list, char*) ;
+    }
+    va_end(param_list);
 
     cerr &lt;&lt; endl;
 }
 
-/** Verifica la presenza dei parametri di avvio */
-int verifica_parametri(int argc, char** argv)
+/** Checks that the startup parameters are present */
+int check_params(int argc, char** argv)
 {
     return (argc &lt; 2) ? ERR_FILE_NONE : ERR_NONE;
-} 
+}
 
-/** Apre il file in lettura */
-int apri_file(ifstream&amp; testo, const char* path)
+/** Opens the file for reading */
+int open_file(ifstream&amp; text, const char* path)
 {
 /**
-*   Questo codice viene compilato solo se
-*   è definita la macro __LOG__
-*/    
-#ifdef __LOG__    
-    log(LOG_DEBUG, 2, "Apro il file: ",  path);
+*   This code is only compiled if
+*   the __LOG__ macro is defined
+*/
+#ifdef __LOG__
+    log(LOG_DEBUG, 2, "Opening file: ",  path);
 #endif
 
-    testo.open(path);
+    text.open(path);
     return ERR_NONE;
-} 
+}
 
-/** Legge il file di input e lo scrive a video */
-int elabora_file(ifstream&amp; testo)
+/** Reads the input file and writes it to the screen */
+int process_file(ifstream&amp; text)
 {
-    int  letti = 0;
+    int  read = 0;
     char c = 0;
-    while ((c = testo.get()) != EOF) {            
-        letti++;
-        cout &lt;&lt; c;            
-    } 
-    return letti;
-} 
+    while ((c = text.get()) != EOF) {
+        read++;
+        cout &lt;&lt; c;
+    }
+    return read;
+}
 
-/** Chiude il file di input */
-void chiudi_file(ifstream&amp; testo)
+/** Closes the input file */
+void close_file(ifstream&amp; text)
 {
-    testo.close();
-} 
- 
+    text.close();
+}
+
 int main(int argc, char** argv)
-{    
-    ifstream testo;
-    
+{
+    ifstream text;
+
     try {
-        
-        int esito = ERR_NONE;
-        
-        /** 
-        *   Verifica che ci sia il nome del file di input 
-        *   e gestisce eventuali errori.
+
+        int outcome = ERR_NONE;
+
+        /**
+        *   Checks that the input file name is present
+        *   and handles any errors.
         */
-        esito = verifica_parametri(argc, argv);
-        errore(esito);
-        
-        /** 
-        *   Imposta la exception mask dello stream per fare
-        *   sì che un errore di I/O generi un'eccezione,
-        *   poi apre il file in lettura.
-        *   Usa un blocco try/catch per intercettare una
-        *   eventuale eccezione e gestirla in maniera
-        *   omogenea al resto del codice.
-        *   Non può aggiungere una catch in fondo perché
-        *   l'eccezione non dà informazioni sulla causa 
-        *   dell'errore che l'ha generata.
+        outcome = check_params(argc, argv);
+        error(outcome);
+
+        /**
+        *   Sets the stream's exception mask so that
+        *   an I/O error throws an exception,
+        *   then opens the file for reading.
+        *   Uses a try/catch block to intercept any
+        *   exception and handle it in a way
+        *   consistent with the rest of the code.
+        *   It can't add a catch at the end, because
+        *   the exception gives no information about the cause
+        *   of the error that triggered it.
         */
         try {
-            testo.exceptions ( std::ifstream::badbit 
+            text.exceptions ( std::ifstream::badbit
                              | std::ifstream::failbit );
-            esito = apri_file(testo, argv[2]);            
+            outcome = open_file(text, argv[2]);
         } catch(ifstream::failure e) {
-            errore(ERR_FILE_OPEN);            
+            error(ERR_FILE_OPEN);
         }
-        
-        /** 
-        *   Elabora il testo e gestisce eventuali errori.
-        *   Dato che la funzione torna il numero di 
-        *   caratteri letti, deve chiamare errore solo
-        *   se non ce ne sono.
+
+        /**
+        *   Processes the text and handles any errors.
+        *   Since the function returns the number of
+        *   characters read, it must call error only
+        *   if there are none.
         */
-        testo.exceptions ( std::ifstream::goodbit);
-        if(elabora_file(testo) == 0) {
-            errore(ERR_FILE_READ);            
+        text.exceptions ( std::ifstream::goodbit);
+        if(process_file(text) == 0) {
+            error(ERR_FILE_READ);
         }
-        
-        
-        /** Chiude il file di input */
-        chiudi_file(testo);
-    
-    } catch (Eccezione e) {
+
+
+        /** Closes the input file */
+        close_file(text);
+
+    } catch (Exception e) {
         cerr &lt;&lt; e;
-        exit(e.getCodice());
+        exit(e.getCode());
     }
-    
+
     return 0;
 }
 
@@ -945,17 +946,17 @@ int main(int argc, char** argv)
 
 <p>In keeping with what we said a moment ago, to check this program’s behavior we’ll need to run at least four tests:</p>
 
-<pre><code># dati corretti
-src/out/esempio src/cpp/debug-testo-1.txt
+<pre><code># correct data
+src/out/example src/cpp/debug-text-1.txt
 
-# nessun dato
-src/out/esempio
+# no data
+src/out/example
 
-# dati errati
-src/out/esempio src/cpp/file-inesistente
+# incorrect data
+src/out/example src/cpp/nonexistent-file
 
-# dati in eccesso
-src/out/esempio src/cpp/debug-testo-1.txt abcdefghilmnopqrstuvz  
+# excess data
+src/out/example src/cpp/debug-text-1.txt abcdefghilmnopqrstuvz  
 </code></pre>
 
 <p>We then need to check that every error condition is handled correctly.
@@ -968,66 +969,66 @@ In our case, the expected errors are:</p>
 
 <p>The first two errors are checked by the standard tests; the third case we can check by passing the program an empty file:</p>
 
-<pre><code>src/out/esempio src/cpp/debug-vuoto.txt
+<pre><code>src/out/example src/cpp/debug-empty.txt
 </code></pre>
 
 <p>Unfortunately, though, if you compile and run this code with correct data, you get an error, even though the file exists:</p>
 
-<pre><code>&gt; g++ src/cpp/debug-gestione-errori.cpp -o src/out/esempio
-&gt; src/out/esempio src/cpp/debug-testo-1.txt               
--20: Impossibile aprire il file di input
-&gt; ls src/cpp/debug-testo-1.txt
-src/cpp/debug-testo-1.txt
+<pre><code>&gt; g++ src/cpp/debug-error-handling.cpp -o src/out/example
+&gt; src/out/example src/cpp/debug-text-1.txt               
+-20: Unable to open the input file
+&gt; ls src/cpp/debug-text-1.txt
+src/cpp/debug-text-1.txt
 </code></pre>
 
 <p>If you recompile the program, defining the <code>__LOG__</code> macro to check which file the program is opening:</p>
 
 <pre><code>#ifdef __LOG__    
-    log(LOG_DEBUG, 2, "Apro il file: ",  path);
+    log(LOG_DEBUG, 2, "Opening file: ",  path);
 #endif
 </code></pre>
 
 <p>when you run the program, you get a new error:</p>
 
-<pre><code>&gt; g++ src/cpp/debug-gestione-errori.cpp -D __LOG__ -o src/out/esempio
-&gt; src/out/esempio src/cpp/debug-testo-1.txt                           
-[DEBUG] Apro il file: zsh: segmentation fault  src/out/esempio src/cpp/debug-testo-1.txt
+<pre><code>&gt; g++ src/cpp/debug-error-handling.cpp -D __LOG__ -o src/out/example
+&gt; src/out/example src/cpp/debug-text-1.txt                           
+[DEBUG] Opening file: zsh: segmentation fault  src/out/example src/cpp/debug-text-1.txt
 </code></pre>
 
 <p>This isn’t the behavior the function was meant to have, but it still lets us understand what the problem might be.
 The <code>segmentation fault</code> error means the program is trying to access an area of memory that doesn’t belong to it.
 The memory area in question is the one associated with the <code>path</code> parameter, which was in turn initialized with the value of the variable <code>argv[2]</code>:</p>
 
-<pre><code>esito = apri_file(testo, argv[2]);
+<pre><code>outcome = open_file(text, argv[2]);
 </code></pre>
 
 <p>The <em>bug</em> is the index <code>2</code> in the <code>argv</code> array.
 As you’ve probably noticed, the code of this program is a reworking of the code from the <a href="/en/stream.html" class="xref">lesson on streams</a>, which had to handle three command-line parameters.
 This time, though, the program’s call string only has two values: the program’s own path, and the input file’s name:</p>
 
-<pre><code>&gt; src/out/esempio src/cpp/debug-testo-1.txt
+<pre><code>&gt; src/out/example src/cpp/debug-text-1.txt
 </code></pre>
 
 <p>Reusing code is a good thing; forgetting to update the value of the <code>argv</code> array’s index is a bad thing, because the memory address pointed to by <code>argv[2]</code> no longer belongs to the program: we can’t use it as a path for an <code>open</code> function, and we can’t print it to the screen.
 If we fix the index, the program handles every usage condition correctly:</p>
 
-<pre><code>&gt; g++ src/cpp/debug-gestione-errori.cpp \
+<pre><code>&gt; g++ src/cpp/debug-error-handling.cpp \
     -D __LOG__ \
-    -o src/out/esempio
-&gt; src/out/esempio
--10: Definire un file di input
+    -o src/out/example
+&gt; src/out/example
+-10: Please specify an input file
 
-&gt; src/out/esempio src/cpp/file-inesistente
-[DEBUG] Apro il file: src/cpp/file-inesistente
--20: Impossibile aprire il file di input
+&gt; src/out/example src/cpp/nonexistent-file
+[DEBUG] Opening file: src/cpp/nonexistent-file
+-20: Unable to open the input file
 
-&gt; src/out/esempio src/cpp/debug-vuoto.txt
-[DEBUG] Apro il file: src/cpp/debug-vuoto.txt
--30: Impossibile leggere il file di input
+&gt; src/out/example src/cpp/debug-empty.txt
+[DEBUG] Opening file: src/cpp/debug-empty.txt
+-30: Unable to read the input file
 
-&gt; src/out/esempio src/cpp/debug-testo-1.txt
-[DEBUG] Apro il file: src/cpp/debug-testo-1.txt
-Essere un ossessivo-compulsivo con una leggera tendenza ...
+&gt; src/out/example src/cpp/debug-text-1.txt
+[DEBUG] Opening file: src/cpp/debug-text-1.txt
+Being obsessive-compulsive with a slight tendency ...
 </code></pre>
 
 <p>This careless mistake was made easier by using a hardcoded number to define the array’s index.
@@ -1035,7 +1036,7 @@ Writing a number or a string directly into the code is certainly quicker and mor
 
 <pre><code>#define PARAM_PATH 1
 ...
-esito = apri_file(testo, argv[PARAM_PATH]);
+outcome = open_file(text, argv[PARAM_PATH]);
 </code></pre>
 
 <p>but, in the long run, it’s counterproductive, because it makes the code harder to read and to modify.
@@ -1067,7 +1068,7 @@ return ERR_NONE;
 
 ...
 
-int esito = ERR_NONE;
+int outcome = ERR_NONE;
 </code></pre>
 
 <p>In a program more complex than our example, there would certainly have been more changes, and they’d have been harder to identify; moreover, if we forgot even one of them (likely), we would have introduced a bug into the system.

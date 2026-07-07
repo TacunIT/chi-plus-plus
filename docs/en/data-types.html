@@ -101,7 +101,12 @@ These, as their name suggests, are made up of the aggregation of several scalar 
 The next piece of code — annoyingly didactic, in its essential uselessness — shows the main data types of C++.
 It contains many elements I haven’t told you about yet, so don’t worry if you don’t fully understand what it does.</p>
 
-<pre><code>#include &lt;iostream&gt;
+<pre><code>/**
+ * @file src/data-types-main.cpp
+ * Example use of enumerated and struct data types.
+ */
+
+#include &lt;iostream&gt;
 
 using namespace std;
 
@@ -395,7 +400,12 @@ Other pointers are less like a flag and more like a kind of mask that can slide 
 
 <p>This program shows how a pointer’s size affects the outcome of reading the data:</p>
 
-<pre><code>#include &lt;iostream&gt;
+<pre><code>/**
+ * @file src/data-types-pointers.cpp
+ * Handling pointers and binary data.
+ */
+
+#include &lt;iostream&gt;
 #include &lt;bitset&gt;
 #include &lt;iomanip&gt;
 using namespace std;

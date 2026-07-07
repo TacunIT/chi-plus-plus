@@ -1,3 +1,8 @@
+/**
+ * @file src/istruzioni-condizionali-switch.cpp
+ * Gestione dei Pianeti con un'istruzione switch.
+ */
+
 #include <iostream>
 #include <cstdlib>
 
@@ -16,51 +21,51 @@
 using namespace std;
 
 int main(int argc, char** argv)
-{    
+{
     int pianeta;
-    
-    /** 
+
+    /**
      * Legge i parametri di input.
-     * Se ce ne sono, prova a convertire il primo parametro 
-     * in un intero. Se il parametro non è un intero, la 
-     * funzione atoi torna 0. 
+     * Se ce ne sono, prova a convertire il primo parametro
+     * in un intero. Se il parametro non è un intero, la
+     * funzione atoi torna 0.
      */
     if(argc > 1) {
         pianeta = atoi(argv[1]);
     } else {
         pianeta = POS_NESSUNO;
     }
-    
+
     /** Gestisce i casi possibili */
     switch( pianeta ) {
-        case POS_ERRORE:   cout << "Valore non valido"; 
+        case POS_ERRORE:   cout << "Valore non valido";
             break;
-        case POS_MERCURIO: cout << "Mercurio";          
+        case POS_MERCURIO: cout << "Mercurio";
             break;
-        case POS_VENERE:   cout << "Venere";            
+        case POS_VENERE:   cout << "Venere";
             break;
-        case POS_TERRA:    cout << "Terra";             
+        case POS_TERRA:    cout << "Terra";
             break;
-        case POS_MARTE:    cout << "Marte";             
+        case POS_MARTE:    cout << "Marte";
             break;
-        case POS_GIOVE:    cout << "Giove";             
+        case POS_GIOVE:    cout << "Giove";
             break;
-        case POS_SATURNO:  cout << "Saturno";           
+        case POS_SATURNO:  cout << "Saturno";
             break;
-        case POS_URANO:    cout << "Urano";             
-            break;          
-        case POS_NETTUNO:  cout << "Nettuno";           
-            break;          
-        case POS_PLUTONE:  cout << "Plutone";           
+        case POS_URANO:    cout << "Urano";
+            break;
+        case POS_NETTUNO:  cout << "Nettuno";
+            break;
+        case POS_PLUTONE:  cout << "Plutone";
             break;
         default:
-            cout << "Inserire un valore da: " 
-                 << POS_MERCURIO 
-                 << " a " 
-                 << POS_PLUTONE;                    
+            cout << "Inserire un valore da: "
+                 << POS_MERCURIO
+                 << " a "
+                 << POS_PLUTONE;
     }
-    
+
     cout << endl;
-    
+
     return 0;
 }

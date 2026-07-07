@@ -167,15 +167,20 @@ std::cout &lt;&lt; std::endl;
 <p>torna il valore <code>0</code> al programma chiamante (di solito, la <em>shell</em> del computer) per indicare l’assenza di errori nell’elaborazione.
 Il programma seguente mette in pratica i concetti visti finora:</p>
 
-<pre><code>#include &lt;iostream&gt;
+<pre><code>/**
+ * @file src/struttura-argc-argv.cpp
+ * Gestione dei parametri da riga di comando con argc e argv.
+ */
+
+#include &lt;iostream&gt;
 
 #define NO_ERRORI     0
 #define NO_PARAMETRI  1
 
 int main(int argc, char** argv)
-{    
+{
     int errore = NO_ERRORI;
-    
+
     /** Se c'è solo il nome del programma, errore */
     if(argc &lt; 2) {
         std::cerr &lt;&lt; "Specificare un parametro!" &lt;&lt; std::endl;
@@ -184,7 +189,7 @@ int main(int argc, char** argv)
 
     /** Stampa tutti i parametri ricevuti */
     for(int p=0; p &lt; argc; p++) {
-        std::cout &lt;&lt; *argv++ &lt;&lt; std::endl;        
+        std::cout &lt;&lt; *argv++ &lt;&lt; std::endl;
     }
 
     return 0;

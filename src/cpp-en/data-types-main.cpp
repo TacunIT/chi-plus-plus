@@ -1,3 +1,8 @@
+/**
+ * @file src/data-types-main.cpp
+ * Example use of enumerated and struct data types.
+ */
+
 #include <iostream>
 
 using namespace std;
