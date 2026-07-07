@@ -1,4 +1,8 @@
-#include <iostream>
+/**
+ * @file src/iterative-instructions-for.cpp
+ * Example use of a for loop.
+ */
+
 #include <cstdlib>
 
 #define POS_NONE     -1
