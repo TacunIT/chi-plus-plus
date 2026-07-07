@@ -381,7 +381,7 @@ int main(int argc, char** argv)
 </code></pre>
 
 <pre><code>&gt; g++ src/cpp/planets-while-error-1.cpp \
-      src/cpp/pianeti-2.0.cpp \
+      src/cpp/planets-2.0.cpp \
    -o src/out/esempio
 &gt; src/out/esempio
 Mercurio
@@ -426,7 +426,7 @@ int main(int argc, char** argv)
 <p>you’ll cause a bug that, in this case, is obvious, since Mercury is missing from the list, but that in a more complex program could be hard to spot:</p>
 
 <pre><code>&gt; g++ src/cpp/planets-while-error-2.cpp \
-      src/cpp/pianeti-2.0.cpp \
+      src/cpp/planets-2.0.cpp \
    -o src/out/esempio
 &gt; src/out/esempio
 Venere
@@ -968,7 +968,7 @@ In our case, the expected errors are:</p>
 
 <p>The first two errors are checked by the standard tests; the third case we can check by passing the program an empty file:</p>
 
-<pre><code>src/out/esempio src/cpp/debug-vuoto.txt
+<pre><code>src/out/esempio src/cpp/debug-empty.txt
 </code></pre>
 
 <p>Unfortunately, though, if you compile and run this code with correct data, you get an error, even though the file exists:</p>
@@ -1021,8 +1021,8 @@ If we fix the index, the program handles every usage condition correctly:</p>
 [DEBUG] Apro il file: src/cpp/file-inesistente
 -20: Impossibile aprire il file di input
 
-&gt; src/out/esempio src/cpp/debug-vuoto.txt
-[DEBUG] Apro il file: src/cpp/debug-vuoto.txt
+&gt; src/out/esempio src/cpp/debug-empty.txt
+[DEBUG] Apro il file: src/cpp/debug-empty.txt
 -30: Impossibile leggere il file di input
 
 &gt; src/out/esempio src/cpp/debug-text-1.txt
