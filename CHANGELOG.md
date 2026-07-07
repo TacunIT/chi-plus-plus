@@ -1,3 +1,13 @@
+## 2.0.6 (July 07, 2026)
+  - Aggiunti header a file cpp in italiano
+  - Aggiunti header a file cpp che ne erano privi
+  - Correzioni miniori
+  - Completata traduzione del capitolo 25
+  - Eliminato il file debug-text-2.txt, non utilizzato
+  - Eliminato il file debug-errore-eof.php, non utilizzato
+  - Aggiornato TODO
+  - Verifica dei capitoli 26-29
+
 ## 2.0.5 (July 06, 2026)
   - Tradotti capitoli 22-24
 
