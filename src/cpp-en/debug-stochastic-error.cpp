@@ -1,8 +1,8 @@
-/** 
- * @file debug-errore-stocastico.cpp
- * Errore che si verifica solo in deterinate circostanze.
+/**
+ * @file debug-stochastic-error.cpp
+ * Error that only occurs under certain circumstances.
  */
- 
+
 #include <iostream>
 #include <fstream>
 
@@ -10,86 +10,86 @@ using namespace std;
 
 #define ERR_FILE_NONE       -10
 #define ERR_FILE_OPEN       -20
-#define S_ERR_FILE_NONE     "Definire un file di input"
-#define S_ERR_FILE_OPEN     "Impossibile aprire il file di input"
+#define S_ERR_FILE_NONE     "Please specify an input file"
+#define S_ERR_FILE_OPEN     "Unable to open the input file"
 #define N_CHAR_MIN          300
 #define N_BANNER_MAX        3
-#define PUNTO               '.'
+#define DOT                 '.'
 
 /**
-*   Aggiunge un banner dopo ogni punto, 
-*   ogni N_CHAR_MIN caratteri.
+*   Adds a banner after every dot,
+*   every N_CHAR_MIN characters.
 */
-int banner_testo(ifstream& testo)
+int banner_text(ifstream& text)
 {
     int  n_banner = 1;
-    int  letti = 0;
+    int  read = 0;
     char c = 0;
- 
-    /** 
-    *  Legge tutto il contenuto del file di input
+
+    /**
+    *  Reads the entire content of the input file
     */
-    while(testo.good()) {
-        
-        /** 
-        *   Legge il cotenuto del file, 
-        *   carattere per carattere 
+    while(text.good()) {
+
+        /**
+        *   Reads the content of the file,
+        *   character by character
         */
-        if((c = testo.get()) != EOF) {            
+        if((c = text.get()) != EOF) {
 
-            /** Incrementa il numero di caratteri letti */
-            letti++;
+            /** Increments the number of characters read */
+            read++;
 
-            /** Scrive il carattere letto */
-            cout << c;            
+            /** Writes the character read */
+            cout << c;
 
-            /** 
-            *   Se il carattere corrente è un punto
-            *   e ha letto almeno N_CHAR_MIN caratteri
-            *   e ha ancora banner da aggiungere, 
-            *   inserisce il codice del banner nel testo. 
+            /**
+            *   If the current character is a dot
+            *   and it has read at least N_CHAR_MIN characters
+            *   and there are still banners left to add,
+            *   inserts the banner code into the text.
             */
-            if(c == PUNTO 
-            && letti >= N_CHAR_MIN 
-            && n_banner <= N_BANNER_MAX) {                
-                cout << endl 
-                     << "<div id=\"banner-" 
-                     << n_banner 
-                     << "\"></div>" 
+            if(c == DOT
+            && read >= N_CHAR_MIN
+            && n_banner <= N_BANNER_MAX) {
+                cout << endl
+                     << "<div id=\"banner-"
+                     << n_banner
+                     << "\"></div>"
                      << endl;
                 n_banner++;
-                letti = 0;
+                read = 0;
             }
-        }       
-    } 
-    
+        }
+    }
+
     cout << endl;
-    
+
     return n_banner;
-} 
- 
+}
+
 int main(int argc, char** argv)
-{    
-    ifstream testo;
-    
-    /** Verifica che ci sia il nome del file di input */
+{
+    ifstream text;
+
+    /** Checks that the input file name is present */
     if(argc < 2) {
         cerr << S_ERR_FILE_NONE << endl;
         exit(ERR_FILE_NONE);
     }
-    
-    /** Apre il file in lettura */
-    testo.open(argv[1]);
-    if(!testo.good()) {
+
+    /** Opens the file for reading */
+    text.open(argv[1]);
+    if(!text.good()) {
         cerr << S_ERR_FILE_OPEN << endl;
         exit(ERR_FILE_OPEN);
     }
 
-    /** Elabora il testo */
-    banner_testo(testo);
-    
-    /** Chiude il file */
-    testo.close();
-    
+    /** Processes the text */
+    banner_text(text);
+
+    /** Closes the file */
+    text.close();
+
     return 0;
 }

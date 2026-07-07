@@ -1,21 +1,21 @@
-/** 
- * @file pianeti-while-errore.cpp
- * Gestione dei Pianeti con errore evidente.
+/**
+ * @file planets-while-error-1.cpp
+ * Handling Planets with an obvious error.
  */
- 
+
 #include <iostream>
-#include "pianeti.h"
+#include "planets.h"
 
 using namespace std;
 
 int main(int argc, char** argv)
-{    
-    int    p  = POS_MERCURIO;
-    string nome;
+{
+    int    p  = POS_MERCURY;
+    string name;
 
-    while (!(nome = nomePianeta(p)).empty()) {
-        cout << nome << endl;
+    while (!(name = planetName(p)).empty()) {
+        cout << name << endl;
     }
-        
+
     return 0;
 }

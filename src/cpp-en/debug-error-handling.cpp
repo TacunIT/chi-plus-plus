@@ -1,203 +1,203 @@
-/** 
- * @file src/debug-gestione-errori.cpp
- * Modalità di gestione degli errori.
+/**
+ * @file src/debug-error-handling.cpp
+ * Ways of handling errors.
  */
- 
+
 #include <iostream>
 #include <fstream>
 #include <exception>
 
 using namespace std;
 
-/** Codici e stringhe di errrore */
+/** Error codes and strings */
 #define LOG_DEBUG         1
-#define LOG_AVVISO        2
-#define LOG_ERRORE        3
+#define LOG_WARNING       2
+#define LOG_ERROR         3
 #define ERR_NONE          0
 #define ERR_FILE_NONE   -10
 #define ERR_FILE_OPEN   -20
 #define ERR_FILE_READ   -30
 #define S_DEBUG         "DEBUG"
-#define S_AVVISO        "AVVISO"
-#define S_ERRORE        "ERRORE"
-#define S_ERR_FILE_NONE "Definire un file di input"
-#define S_ERR_FILE_OPEN "Impossibile aprire il file di input"
-#define S_ERR_FILE_READ "Impossibile leggere il file di input"
+#define S_WARNING       "WARNING"
+#define S_ERROR         "ERROR"
+#define S_ERR_FILE_NONE "Please specify an input file"
+#define S_ERR_FILE_OPEN "Unable to open the input file"
+#define S_ERR_FILE_READ "Unable to read the input file"
 
 /**
-*   Definisce una classe derivata da exception
-*   per la gestione degli errori.
+*   Defines a class derived from exception
+*   for error handling.
 */
-class Eccezione: public exception
+class Exception: public exception
 {
 private:
-    int         _codice;
-    const char* _errore;
+    int         _code;
+    const char* _error;
 public:
 
-    /** Costruttore */
-    Eccezione(int codice, const char* errore) 
-    : _codice(codice), _errore(errore) {        
+    /** Constructor */
+    Exception(int code, const char* error)
+    : _code(code), _error(error) {
     }
-    
-    /** Funzione virtuale pura: va ridefinita */
+
+    /** Pure virtual function: must be redefined */
     virtual const char* what() const throw() {
-        return _errore;
+        return _error;
     }
 
-    /** Funzioni di interfaccia */
-    int getCodice() { return _codice; }
-    const char* getErrore() { return _errore; }
+    /** Interface functions */
+    int getCode() { return _code; }
+    const char* getError() { return _error; }
 
-    /** Ridefinizione dell'operatore di output */
-    friend ostream& operator<< (ostream& os, Eccezione e){
-        os << e._codice << ": " << e._errore << endl;
+    /** Redefinition of the output operator */
+    friend ostream& operator<< (ostream& os, Exception e){
+        os << e._code << ": " << e._error << endl;
         return os;
     }
 };
 
-/** Funzione di gestione degli errori */
-void errore(int codice, bool exit = true)
+/** Error-handling function */
+void error(int code, bool exit = true)
 {
-    const char* errore = NULL;
+    const char* error = NULL;
 
-    /** 
-    *   Identifica la stringa di errore corrispondente 
-    *   al codice di errore ricevuto.
+    /**
+    *   Identifies the error string corresponding
+    *   to the received error code.
     */
-    switch(codice) {
-        case ERR_FILE_NONE: errore = S_ERR_FILE_NONE; break;
-        case ERR_FILE_OPEN: errore = S_ERR_FILE_OPEN; break;
-        case ERR_FILE_READ: errore = S_ERR_FILE_READ; break;
+    switch(code) {
+        case ERR_FILE_NONE: error = S_ERR_FILE_NONE; break;
+        case ERR_FILE_OPEN: error = S_ERR_FILE_OPEN; break;
+        case ERR_FILE_READ: error = S_ERR_FILE_READ; break;
     }
 
-    /** Se ne trova una, lancia un'eccezione */
-    if(errore != NULL){
-        Eccezione e(codice, errore);
+    /** If one is found, throws an exception */
+    if(error != NULL){
+        Exception e(code, error);
         throw e;
     }
 }
 
-/** 
-*   Questa è la funzione di log che abbiamo visto 
-*   nella lezione sulle funzioni.
+/**
+*   This is the log function we saw
+*   in the lesson on functions.
 */
-void log(int livello, int n_parametri, ...)
-{        
-    /** Definisce il livello del messaggio */
-    const char* s_livello; 
-    switch(livello) {
-        case LOG_DEBUG:  s_livello = S_DEBUG ; break;
-        case LOG_AVVISO: s_livello = S_AVVISO; break;
-        default:         s_livello = S_ERRORE; break;
+void log(int level, int n_params, ...)
+{
+    /** Defines the message level */
+    const char* s_level;
+    switch(level) {
+        case LOG_DEBUG:   s_level = S_DEBUG  ; break;
+        case LOG_WARNING: s_level = S_WARNING; break;
+        default:          s_level = S_ERROR  ; break;
     }
-    
-    /** Scrive il testo del messaggio */
-    cerr << '[' << s_livello << "] ";
 
-    /** Scrive i parametri della lista */
-    va_list lista_parametri;
-    va_start(lista_parametri, n_parametri);
-    for(int p = 1; p <= n_parametri; p++) {        
-        cerr << va_arg(lista_parametri, char*) ;        
-    }    
-    va_end(lista_parametri);
+    /** Writes the message text */
+    cerr << '[' << s_level << "] ";
+
+    /** Writes the parameters of the list */
+    va_list param_list;
+    va_start(param_list, n_params);
+    for(int p = 1; p <= n_params; p++) {
+        cerr << va_arg(param_list, char*) ;
+    }
+    va_end(param_list);
 
     cerr << endl;
 }
 
-/** Verifica la presenza dei parametri di avvio */
-int verifica_parametri(int argc, char** argv)
+/** Checks that the startup parameters are present */
+int check_params(int argc, char** argv)
 {
     return (argc < 2) ? ERR_FILE_NONE : ERR_NONE;
-} 
+}
 
-/** Apre il file in lettura */
-int apri_file(ifstream& testo, const char* path)
+/** Opens the file for reading */
+int open_file(ifstream& text, const char* path)
 {
 /**
-*   Questo codice viene compilato solo se
-*   è definita la macro __LOG__
-*/    
-#ifdef __LOG__    
-    log(LOG_DEBUG, 2, "Apro il file: ",  path);
+*   This code is only compiled if
+*   the __LOG__ macro is defined
+*/
+#ifdef __LOG__
+    log(LOG_DEBUG, 2, "Opening file: ",  path);
 #endif
 
-    testo.open(path);
+    text.open(path);
     return ERR_NONE;
-} 
+}
 
-/** Legge il file di input e lo scrive a video */
-int elabora_file(ifstream& testo)
+/** Reads the input file and writes it to the screen */
+int process_file(ifstream& text)
 {
-    int  letti = 0;
+    int  read = 0;
     char c = 0;
-    while ((c = testo.get()) != EOF) {            
-        letti++;
-        cout << c;            
-    } 
-    return letti;
-} 
+    while ((c = text.get()) != EOF) {
+        read++;
+        cout << c;
+    }
+    return read;
+}
 
-/** Chiude il file di input */
-void chiudi_file(ifstream& testo)
+/** Closes the input file */
+void close_file(ifstream& text)
 {
-    testo.close();
-} 
- 
+    text.close();
+}
+
 int main(int argc, char** argv)
-{    
-    ifstream testo;
-    
+{
+    ifstream text;
+
     try {
-        
-        int esito = ERR_NONE;
-        
-        /** 
-        *   Verifica che ci sia il nome del file di input 
-        *   e gestisce eventuali errori.
+
+        int outcome = ERR_NONE;
+
+        /**
+        *   Checks that the input file name is present
+        *   and handles any errors.
         */
-        esito = verifica_parametri(argc, argv);
-        errore(esito);
-        
-        /** 
-        *   Imposta la exception mask dello stream per fare
-        *   sì che un errore di I/O generi un'eccezione,
-        *   poi apre il file in lettura.
-        *   Usa un blocco try/catch per intercettare una
-        *   eventuale eccezione e gestirla in maniera
-        *   omogenea al resto del codice.
-        *   Non può aggiungere una catch in fondo perché
-        *   l'eccezione non dà informazioni sulla causa 
-        *   dell'errore che l'ha generata.
+        outcome = check_params(argc, argv);
+        error(outcome);
+
+        /**
+        *   Sets the stream's exception mask so that
+        *   an I/O error throws an exception,
+        *   then opens the file for reading.
+        *   Uses a try/catch block to intercept any
+        *   exception and handle it in a way
+        *   consistent with the rest of the code.
+        *   It can't add a catch at the end, because
+        *   the exception gives no information about the cause
+        *   of the error that triggered it.
         */
         try {
-            testo.exceptions ( std::ifstream::badbit 
+            text.exceptions ( std::ifstream::badbit
                              | std::ifstream::failbit );
-            esito = apri_file(testo, argv[2]);            
+            outcome = open_file(text, argv[2]);
         } catch(ifstream::failure e) {
-            errore(ERR_FILE_OPEN);            
+            error(ERR_FILE_OPEN);
         }
-        
-        /** 
-        *   Elabora il testo e gestisce eventuali errori.
-        *   Dato che la funzione torna il numero di 
-        *   caratteri letti, deve chiamare errore solo
-        *   se non ce ne sono.
+
+        /**
+        *   Processes the text and handles any errors.
+        *   Since the function returns the number of
+        *   characters read, it must call error only
+        *   if there are none.
         */
-        testo.exceptions ( std::ifstream::goodbit);
-        if(elabora_file(testo) == 0) {
-            errore(ERR_FILE_READ);            
+        text.exceptions ( std::ifstream::goodbit);
+        if(process_file(text) == 0) {
+            error(ERR_FILE_READ);
         }
-        
-        
-        /** Chiude il file di input */
-        chiudi_file(testo);
-    
-    } catch (Eccezione e) {
+
+
+        /** Closes the input file */
+        close_file(text);
+
+    } catch (Exception e) {
         cerr << e;
-        exit(e.getCodice());
+        exit(e.getCode());
     }
-    
+
     return 0;
 }

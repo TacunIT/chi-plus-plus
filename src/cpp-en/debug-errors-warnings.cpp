@@ -1,34 +1,34 @@
-/** 
- * @file src/debug-errori-warning.cpp
- * Tipi di errore e di warning.
+/**
+ * @file src/debug-errors-warnings.cpp
+ * Types of errors and warnings.
  */
 
 #include <iostream>
 
 using namespace std;
 
-class Quadrato
+class Square
 {
 public:
     double operator()(double x) { return x * x; }
 };
 
-class C {
+class Circle {
 private:
-    float _raggio;
+    float _radius;
     float _area;
 public:
-    C (int m) : _raggio(m) {}
-    float getRaggio() { return _raggio; }
+    Circle (int m) : _radius(m) {}
+    float getRadius() { return _radius; }
     float area() {
-       Quadrato q;
-       return 3.14159 * q(_raggio);
+       Square s;
+       return 3.14159 * s(_radius);
     }
 };
 
-int main(int argc, char** argv) 
+int main(int argc, char** argv)
 {
-    C c(10);    
+    Circle c(10);
     cout << c.area() << endl;
     return 0;
 }
