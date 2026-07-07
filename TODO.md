@@ -19,8 +19,7 @@
 @todo: verificare refuso nel commento della funzione mostraPianeta (capitolo Istruzioni iterative, file istruzioni-iterative-for.cpp / iterative-instructions-for.cpp) — il commento della funzione main dice "richiama la funzione mostraPianeti" (plurale), ma la funzione si chiama mostraPianeta (singolare)
 @todo: verificare refuso "sel pianeta" invece di "del pianeta" nel commento di pianeti-while-bool.cpp (capitolo Istruzioni iterative)
 @todo: verificare refuso "valri iniziali" invece di "valori iniziali" nel commento di classi-struttura-orario.cpp (capitolo Classi e oggetti)
+
 @todo: verificare #include <iomanip> superfluo (nessun uso di setw/setfill/setprecision) in classi-punto.cpp e classi-pesce.cpp (capitolo Classi e oggetti) — presente anche negli originali italiani, non introdotto dalla traduzione
-@todo: verificare refuso "PesceAcqario" invece di "PesceAcquario" (manca la "u") in ereditarieta-singola.cpp (capitolo Ereditarietà)
-@todo: verificare refuso "ereditarierà" invece di "ereditarietà" nel commento header di ereditarieta-multipla.cpp (capitolo Ereditarietà)
+
 @todo: aggiungere il commento di intestazione /** @file ... */ mancante negli otto file .cpp seguenti (src/cpp-en/): conditional-instructions-switch.cpp, cplusplus-class.cpp, cplusplus-increment.cpp, data-types-main.cpp, data-types-pointers.cpp, iterative-instructions-for.cpp, program-structure-argc-argv.cpp, test.cpp — verificare anche i corrispondenti file italiani in src/cpp-it/
-@todo: nel capitolo 27 (Note/Notes), alla fine del file, restano tre note scritte ma commentate e non collegate a nessun punto del testo (fn-knoll, fn-incapsulamento, fn-vedanta) — decidere se agganciarle a un riferimento nel testo o rimuoverle definitivamente

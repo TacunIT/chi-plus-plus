@@ -6,6 +6,7 @@
 #include <iostream>
 #include <fstream>
 #include <exception>
+#include <cstdarg>
 
 using namespace std;
 
