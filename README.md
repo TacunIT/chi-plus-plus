@@ -1,94 +1,77 @@
-# README
+# C'hi++
 
-*C'hi++* è una metafisica priva, o quasi, di elementi metafisici; una *theologia naturalis* per coloro che non riescono ad accettare per fede le affermazioni o le contraddizioni delle religioni canoniche, ma allo stesso tempo trovano insoddisfacente una visione [siero]positivistica dell'esistenza.
+![Version](https://img.shields.io/badge/version-2.0.6-blue)
 
+**[Read the manual on chiplusplus.org →](https://chiplusplus.org/en/man/)**
+
+*C'hi++* is an excellent programming manual, a clumsy philosophy book, and a disgraceful physics book.  
 
 <p align=center>
 <img src="./assets/img/chi-plus-plus.png" width="300px">
 </p>
 
-Il nome *C'hi++* è un gioco di parole fra il termine giapponese *C'hi* (氣, ovvero: *soffio vitale*) e il linguaggio di programmazione chiamato: *C++*. Non è un accostamento casuale: la mia intenzione è quella di gestire l'evoluzione della mia teoria così come si gestisce il software; in particolare, il software *open-source*.
+The purpose of this manual is to define a metaphysics that is free, or almost, of metaphysical elements; a *theologia naturalis* for those who can't bring themselves to accept on faith the claims or contradictions of canonical religions, but who at the same time find a view of existence stripped of spiritual elements unsatisfying.
 
-Un beneficio collaterale di questa metafisica è che può costituire una base “vendor independent” per la definizione di valori e princip&icirc; etici che permettano alle macchine basate su Intelligenza Artificiale di risolvere problemi come questo:
+The name *C'hi++* is a play on words between the Japanese term *C'hi* (氣, meaning: *vital breath*) and the programming language called: *C++*. 
+It isn't a casual pairing: my intention is to manage the evolution of my theory the same way software is managed; *open-source* software, in particular.
+For this reason, all the material for the book is published on GitHub.
+
+A side benefit of this metaphysics is that it can serve as a "vendor independent" basis for defining the ethical values and principles that would let AI-based machines solve problems like this one:
 
 <p align=center>
 <img src="./assets/img/quiz.png">
 </p>
 
-## Caratteristiche
+## Features
 
-Le principali caratteristiche del C'hi++ sono:
+The main features of C'hi++ are:
 
-- __è un'etica [RISC](http://www.treccani.it/enciclopedia/risc/)__, con un numero ristretto di dogmi;
+- __it's a [RISC](http://www.treccani.it/enciclopedia/risc/) ethics__, with a restricted number of dogmas;
 
-- **è _open-source_** perché ciascuno possa modificarla per adattarla alle sue esigenze.
+- **it's _open-source_**, so that anyone can modify it to suit their own needs.
 
-- **è portabile**: i precetti del *C'hi++* sono compatibili con precetti o idee appartenenti ad altre mistiche o filosofie;
+- **it's portable**: the precepts of *C'hi++* are compatible with precepts or ideas belonging to other mystical traditions or philosophies;
 
-- **è sottoposta a versionamento**, così come avviene con il software, per poter gestire l'evoluzione dei principii;
+- **it's subject to versioning**, the same way software is, so that the evolution of its principles can be managed;
 
-- **non si propone come Unica Verità Incontestabile**, ma come un'approssimazione sicuramente incompleta e perfettibile della verità;
+- **it does not present itself as the One Undisputed Truth**, but as an approximation of the truth that is certainly incomplete and open to improvement;
 
-- **ha una sua cosmogonia**, del tutto indipendente dalla presenza o dall'assenza di una Divinità.
+- **it has its own cosmogony**, entirely independent of the presence or absence of a Divinity.
 
+## Directory structure
+The project's files are organized into the following directories:
 
-## Documentazione
-
-Il testi di riferimento del *C'hi++* sono:
-
-- [**C'hi++**](https://chiplusplus.org/man/) Un manuale di programmazione scritto nello stile dei libri di filosofia giapponesi del XVII secolo o, se preferite, un libro di filosofia scritto come un manuale di programmazione.
-Il testo riporta gli insegnamenti che un vecchio maestro tramanda al suo giovane allievo sulla programmazione dei computer.
-Ciascun paragrafo utilizza uno degli aspettti della programmazione nel linguaggio C++ per introdurre dei precetti del *C'hi++*, il linguaggio con cui (sostiene il Maestro) è stata scritta l'applicazione che gestisce l'Universo.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
-
-- [**Sostiene Aristotele**](https://chiplusplus.org/sostiene-aristotele.html): un documento che risale al Giugno del 2007 e che possiamo considerare una versione preliminare del *C'hi++*. In questo documento, che risentiva della recente lettura di *Eureka* di Poe, ipotizzavo una vita dell'Universo ciclica, costituita da fasi di espansione e fasi di contrazione.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
-
-- [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta.html): nato inzialmente come Manifesto del progetto, questo testo si è espanso per più di quaranta pagine e ho deciso per ciò di considerarlo un documento a sé stante.
-<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
-
-- [**Il Manifesto del C'hi++**](MANIFEST.md): versione “zippata” del Manifesto originale, è il file MANIFEST.md che vedete nell'elenco qui sopra.<br/><img src="https://img.shields.io/badge/stato-completato-green" alt="Stato documento: completato" height="20" style="padding-top:0.5rem">
-
-Esiste anche una mappa mentale nella quale sto riportando tutti i miei appunti e le mie idee per *C'hi++*.
-
-Chi volesse approfondire i concetti riportati in questa presentazione può leggere il [Manifesto](MANIFEST.md) e, successivamente, [**Proposta per una metafisica open-source**](https://chiplusplus.org/proposta.html), tenendo conto del fatto che la struttura del libro si è evoluta in maniera differente da quanto avevo previsto due anni prima.
-
-La risposta al quesito del notaio e del bambino è nel capitolo 9 della [**Proposta**](https://chiplusplus.org/proposta.html).
-
-## Strumenti
-Tutti i formati utilizzati per i file sono standard pubblici che possono essere creati e letti con strumenti gratuiti:
-
-- **Markdown** per i sorgenti dei testi;
-- **PDF** per i file di output come articoli o saggi;
-- **C++** per il codice;
-
-Fa eccezione solo la mappa mentale per *C'hi++*, che è stata realizzata con il programma [VUE](https://vue.tufts.edu/) della Tufts University, ma si tratta comunque di un file in formato XML, facilmente leggibile anche nei *diff* di Git.
-Sfortunatamente, lo sviluppo di VUE è fermo dal 20 Giugno del 2017, ma il codice è comunque [disponibile su GitHub](https://github.com/VUE/VUE).
-
-
-## Struttura delle directory
-I file del progetto sono suddivisi nelle seguenti directory:
-
-| Nome         | Contenuto
+| Name         | Content
 |:-------------|:---------------------------------------------------------------------------|
-| **_atti**    | Documenti per la promozione del libro
-| **_data**    | Directory standard di Jekyll. Contiene i file yml inclusi nel testo.
-| **_drafts**  | Directory standard di Jekyll. Conteiene le bozze dei post e dei testi.
-| **_includes**| Directory di include standard di Jekyll.
-| **_layouts** | Directory per i layout di Jekyll.
-| **_man**     | Testi in formato Markdown del Manuale.
-| **_note**    | Note estratte dagli e-book Kindle, mappa mentale VUE.
-| **_pdf**     | Script di gestione della cache o per il versionamento di Git.
-| **_posts**   | Note sulla redazione del manuale e testi su temi specifici.
-| **_sass**    | Directory per i fogli di stile di Jekyll.
-| **assets**   | Directory per i contenuti statici di Jekyll.
-| **bin**      | Script di gestione della cache o per il versionamento di Git.
-| **docs**     | Directory di output del Manuale.
-| **src**      | File .cpp e .sql degli esempii del Manuale
+| **_atti**    | Documents for promoting the book
+| **_data**    | Standard Jekyll directory. Contains the yml files included in the text.
+| **_drafts**  | Standard Jekyll directory. Contains drafts of posts and texts.
+| **_includes**| Standard Jekyll include directory.
+| **_layouts** | Directory for Jekyll layouts.
+| **_man**     | Markdown-format texts of the Manual.
+| **_note**    | Notes extracted from Kindle e-books, VUE mind map.
+| **_pdf**     | Cache-management or Git-versioning scripts.
+| **_posts**   | Notes on drafting the manual and texts on specific topics.
+| **_sass**    | Directory for Jekyll's stylesheets.
+| **assets**   | Directory for Jekyll's static content.
+| **bin**      | Cache-management or Git-versioning scripts.
+| **docs**     | Output directory for the Manual.
+| **src**      | .cpp and .sql files for the Manual's examples
 
-I file [CHANGELOG](CHANGELOG.md) e VERSION sono utilizzati per il controllo di versione con Git.
+The [CHANGELOG](CHANGELOG.md) and VERSION files are used for version control with Git.
 
-Il file README.md è quello che state leggendo e contiene una breve descrizione degli scopi e delle caratteristiche del progetto.
+The README.md file is the one you're reading, and contains a short description of the project's purposes and features.
 
-## Convenzioni tipografiche
-Utilizzo intenzionalmente l'apostrofo quando scrivo: ”qual'è?” perché credo che l'apocope vocalica si debba applicare solo a frasi come: “Si è comportato da birbante qual è”; riduco i punti di sospensione da tre a due perché il terzo è ridondante e uso sempre l'accento con il pronome *sé*.
-Devo decidere quale forma utilizzare per il plurale delle parole che terminano in “io” se l'accento circonflesso (*principî*) o il raddoppio della “i” (*dominii*) e se applicarla sempre o solo nei casi in cui ci sia il rischio di anfibologie.
-Tutte le altre variazioni della grammatica o della consuetudine sono da considerarsi errori.
+## Tools
+All the file formats used are public standards that can be created and read with free tools:
+
+- **Markdown** for the source texts;
+- **PDF** for output files such as articles or essays;
+- **C++** for the code;
+
+The only exception is the mind map for *C'hi++*, which I've kept as documentation and which was created with the [VUE](https://vue.tufts.edu/) program from Tufts University.
+It is, in any case, an XML-format file, easily readable even in Git *diffs*. 
+Unfortunately, development of VUE has been stalled since June 20, 2017, but the code is still [available on GitHub](https://github.com/VUE/VUE).
+
+## Typographical conventions
+This section describes the typographical conventions used in the Italian text of the manual &mdash; apostrophe usage, ellipsis length, accented pronouns, and plural forms of words ending in "io" &mdash; and therefore does not apply to the English translation.

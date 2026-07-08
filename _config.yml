@@ -39,6 +39,7 @@ collections:
       - 01.copertina.md
       - 02.dedica.md
       - 03.indice.md
+      - 04.introduzione.md
       - 05.prologo.md
       - 06.incipit.md
       - 07.mitopoietica.md
@@ -70,6 +71,7 @@ collections:
       - 01.cover.md
       - 02.dedication.md
       - 03.index.md
+      - 04.introduction.md
       - 05.prologue.md
       - 06.incipit.md
       - 07.mythopoetics.md
