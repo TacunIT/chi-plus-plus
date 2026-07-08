@@ -5,3 +5,4 @@
 bin/purge-cache.sh
 src/out/*
 *.key
+_atti/
