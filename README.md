@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/version-2.0.6-blue)
 
-**[Read the manual on chiplusplus.org →](https://chiplusplus.org/en/man/)**
+**[Read the manual on chiplusplus.org →](https://chiplusplus.org/en/)**
 
 *C'hi++* is an excellent programming manual, a clumsy philosophy book, and a disgraceful physics book.  
 

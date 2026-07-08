@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/badge/version-2.0.6-blue)
 
-**[Leggi il manuale su chiplusplus.org →](https://chiplusplus.org/man/)**
+**[Leggi il manuale su chiplusplus.org →](https://chiplusplus.org/it/)**
 
 *C'hi++* è un eccellente manuale di programmazione, un maldestro libro di filosofia e un vergognoso libro di fisica.  
 
